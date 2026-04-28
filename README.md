@@ -6,3 +6,5 @@ Data repo of the [Minutes of the Austrian Cabinet Council 1919–1920](https://d
 > Work in progress
 
 Editors copy base XMLs from [`data/staging/`](https://github.com/krp-project/krp-working-data/tree/main/data/staging) in the `krp-working-data` repo; paste them into `data/editions`; and rename them according to the pattern `krp-\d{3}\.xml`.
+
+The schema documents the project-specific TEI customization, which narrows down the options available in TEI-All. The RNG file has been compiled from the ODD using Roma v1.3.2.
