@@ -28,7 +28,7 @@
     <body>
       <head>KRP-Schema</head>
       <p>
-      <!-- to be added -->
+        Dieses Schema dokumentiert die TEI-Customization für das Projekt „Die Protokolle des österreichischen Kabinettsrates 1919–1920“. <!-- to be added -->
       </p>
       <schemaSpec ident="tei_krp" start="TEI teiCorpus" prefix="tei_krp" targetLang="de" docLang="de">
         
@@ -38,6 +38,8 @@
         <moduleRef n="02" key="header"/>
         <moduleRef n="03" key="core"/>
         <moduleRef n="04" key="textstructure"/>
+        <moduleRef n="05" key="analysis"/>
+        <moduleRef n="07" key="drama"/>
         <moduleRef n="08" key="spoken"/>
         <moduleRef n="11" key="msdescription"/>
         <moduleRef n="12" key="transcr"/>
@@ -52,8 +54,8 @@
         <elementSpec ident="change" mode="change">
           <attList>
             <attDef ident="who" usage="req" mode="change">
-              <desc>Die Autor:innen von in "change"-Elementen erfassten Änderungen sind durch Verweise auf ihre XML-ID ausgewiesen.</desc>
-              <datatype>
+              <desc>Die Autor:innen von in &lt;change&gt;-Elementen erfassten Änderungen sind durch Verweise auf ihre XML-ID ausgewiesen.</desc>
+              <datatype minOccurs="1" maxOccurs="unbounded">
                 <dataRef key="teidata.enumerated"/>
               </datatype>
               <valList type="closed" mode="replace">
@@ -65,12 +67,23 @@
               </valList>
             </attDef>
             <attDef ident="when-iso" usage="req" mode="change">
-              <desc>Die Zeitpunkte von in "change"-Elementen erfassten Änderungen entsprechen dem ISO-Format.</desc>
+              <desc>Die Zeitpunkte von in &lt;change&gt;-Elementen erfassten Änderungen entsprechen dem ISO-Format.</desc>
               <datatype>
                 <dataRef key="teidata.temporal.iso"/>
               </datatype>
             </attDef>
           </attList>
+        </elementSpec>
+        
+        <elementSpec ident="div" mode="change">
+          <constraintSpec ident="body-div" scheme="schematron" mode="change">
+            <constraint>
+              <sch:rule context="tei:TEI/tei:text/tei:body/tei:div">
+                <sch:assert test="count(tei:head) = 1">Das äußerste &lt;div&gt;-Element enthält genau einen &lt;head&gt;.</sch:assert>
+                <sch:assert test="tei:head[@type='dokument']">Der im äußersten &lt;div&gt;-Element enthaltene &lt;head&gt; trägt das Attribut type="dokument".</sch:assert>
+              </sch:rule>
+            </constraint>
+          </constraintSpec>
         </elementSpec>
         
       </schemaSpec>

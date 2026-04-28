@@ -5,7 +5,7 @@
          xmlns:xlink="http://www.w3.org/1999/xlink"
          datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
          ns="http://www.tei-c.org/ns/1.0"><!--
-Schema generated from ODD source 2026-04-28T09:00:14Z. . 
+Schema generated from ODD source 2026-04-28T11:48:04Z. . 
 TEI Edition: P5 Version 4.11.0. Last updated on 18th February 2026, revision 358d2e48e 
 TEI Edition Location: https://www.tei-c.org/Vault/P5/4.11.0/ 
   
@@ -753,6 +753,46 @@ Suggested values include: 1] internal; 2] external; 3] conjecture</a:documentati
          </attribute>
       </optional>
    </define>
+   <define name="tei_krpatt.interpLike.attributes">
+      <ref name="tei_krpatt.interpLike.attribute.type"/>
+      <ref name="tei_krpatt.interpLike.attribute.subtype"/>
+      <ref name="tei_krpatt.interpLike.attribute.inst"/>
+   </define>
+   <define name="tei_krpatt.interpLike.attribute.type">
+      <optional>
+         <attribute name="type">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">indicates what kind of phenomenon is being noted in the passage.
+Sample values include: 1] image; 2] character; 3] theme; 4] allusion</a:documentation>
+            <data type="token">
+               <param name="pattern">[^\p{C}\p{Z}]+</param>
+            </data>
+         </attribute>
+      </optional>
+   </define>
+   <define name="tei_krpatt.interpLike.attribute.subtype">
+      <optional>
+         <attribute name="subtype">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(subtype) provides a sub-categorization of the phenomenon is being noted in the passage, if needed.</a:documentation>
+            <data type="token">
+               <param name="pattern">[^\p{C}\p{Z}]+</param>
+            </data>
+         </attribute>
+      </optional>
+   </define>
+   <define name="tei_krpatt.interpLike.attribute.inst">
+      <optional>
+         <attribute name="inst">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(instances) points to instances of the analysis or interpretation represented by the current element.</a:documentation>
+            <list>
+               <oneOrMore>
+                  <data type="anyURI">
+                     <param name="pattern">\S+</param>
+                  </data>
+               </oneOrMore>
+            </list>
+         </attribute>
+      </optional>
+   </define>
    <define name="tei_krpatt.measurement.attributes">
       <ref name="tei_krpatt.measurement.attribute.unit"/>
       <ref name="tei_krpatt.measurement.attribute.unitRef"/>
@@ -1400,6 +1440,7 @@ Sample values include: 1] all; 2] most; 3] range</a:documentation>
       </optional>
    </define>
    <define name="tei_krpatt.global.attributes">
+      <ref name="tei_krpatt.global.analytic.attributes"/>
       <ref name="tei_krpatt.global.change.attributes"/>
       <ref name="tei_krpatt.global.facs.attributes"/>
       <ref name="tei_krpatt.global.linking.attributes"/>
@@ -1847,28 +1888,112 @@ Sample values include: 1] rubbing; 2] mildew; 3] smoke</a:documentation>
    </define>
    <define name="tei_krpmodel.segLike">
       <choice>
+         <ref name="tei_krps"/>
+         <ref name="tei_krpcl"/>
+         <ref name="tei_krpphr"/>
+         <ref name="tei_krpw"/>
+         <ref name="tei_krpm"/>
+         <ref name="tei_krpc"/>
+         <ref name="tei_krppc"/>
          <ref name="tei_krpseg"/>
       </choice>
    </define>
    <define name="tei_krpmodel.segLike_alternation">
       <choice>
+         <ref name="tei_krps"/>
+         <ref name="tei_krpcl"/>
+         <ref name="tei_krpphr"/>
+         <ref name="tei_krpw"/>
+         <ref name="tei_krpm"/>
+         <ref name="tei_krpc"/>
+         <ref name="tei_krppc"/>
          <ref name="tei_krpseg"/>
       </choice>
    </define>
    <define name="tei_krpmodel.segLike_sequence">
+      <ref name="tei_krps"/>
+      <ref name="tei_krpcl"/>
+      <ref name="tei_krpphr"/>
+      <ref name="tei_krpw"/>
+      <ref name="tei_krpm"/>
+      <ref name="tei_krpc"/>
+      <ref name="tei_krppc"/>
       <ref name="tei_krpseg"/>
    </define>
    <define name="tei_krpmodel.segLike_sequenceOptional">
+      <optional>
+         <ref name="tei_krps"/>
+      </optional>
+      <optional>
+         <ref name="tei_krpcl"/>
+      </optional>
+      <optional>
+         <ref name="tei_krpphr"/>
+      </optional>
+      <optional>
+         <ref name="tei_krpw"/>
+      </optional>
+      <optional>
+         <ref name="tei_krpm"/>
+      </optional>
+      <optional>
+         <ref name="tei_krpc"/>
+      </optional>
+      <optional>
+         <ref name="tei_krppc"/>
+      </optional>
       <optional>
          <ref name="tei_krpseg"/>
       </optional>
    </define>
    <define name="tei_krpmodel.segLike_sequenceOptionalRepeatable">
       <zeroOrMore>
+         <ref name="tei_krps"/>
+      </zeroOrMore>
+      <zeroOrMore>
+         <ref name="tei_krpcl"/>
+      </zeroOrMore>
+      <zeroOrMore>
+         <ref name="tei_krpphr"/>
+      </zeroOrMore>
+      <zeroOrMore>
+         <ref name="tei_krpw"/>
+      </zeroOrMore>
+      <zeroOrMore>
+         <ref name="tei_krpm"/>
+      </zeroOrMore>
+      <zeroOrMore>
+         <ref name="tei_krpc"/>
+      </zeroOrMore>
+      <zeroOrMore>
+         <ref name="tei_krppc"/>
+      </zeroOrMore>
+      <zeroOrMore>
          <ref name="tei_krpseg"/>
       </zeroOrMore>
    </define>
    <define name="tei_krpmodel.segLike_sequenceRepeatable">
+      <oneOrMore>
+         <ref name="tei_krps"/>
+      </oneOrMore>
+      <oneOrMore>
+         <ref name="tei_krpcl"/>
+      </oneOrMore>
+      <oneOrMore>
+         <ref name="tei_krpphr"/>
+      </oneOrMore>
+      <oneOrMore>
+         <ref name="tei_krpw"/>
+      </oneOrMore>
+      <oneOrMore>
+         <ref name="tei_krpm"/>
+      </oneOrMore>
+      <oneOrMore>
+         <ref name="tei_krpc"/>
+      </oneOrMore>
+      <oneOrMore>
+         <ref name="tei_krppc"/>
+      </oneOrMore>
       <oneOrMore>
          <ref name="tei_krpseg"/>
       </oneOrMore>
@@ -2885,6 +3010,9 @@ Sample values include: 1] rubbing; 2] mildew; 3] smoke</a:documentation>
          <ref name="tei_krpadd"/>
          <ref name="tei_krpdel"/>
          <ref name="tei_krpunclear"/>
+         <ref name="tei_krpw"/>
+         <ref name="tei_krpc"/>
+         <ref name="tei_krppc"/>
          <ref name="tei_krpzone"/>
          <ref name="tei_krppath"/>
          <ref name="tei_krpdamage"/>
@@ -2959,6 +3087,10 @@ Sample values include: 1] rubbing; 2] mildew; 3] smoke</a:documentation>
    <define name="tei_krpmodel.global.meta">
       <choice>
          <ref name="tei_krpindex"/>
+         <ref name="tei_krpspan"/>
+         <ref name="tei_krpspanGrp"/>
+         <ref name="tei_krpinterp"/>
+         <ref name="tei_krpinterpGrp"/>
          <ref name="tei_krpsubstJoin"/>
          <ref name="tei_krplistTranspose"/>
          <ref name="tei_krplink"/>
@@ -2976,6 +3108,10 @@ Sample values include: 1] rubbing; 2] mildew; 3] smoke</a:documentation>
    <define name="tei_krpmodel.global.meta_alternation">
       <choice>
          <ref name="tei_krpindex"/>
+         <ref name="tei_krpspan"/>
+         <ref name="tei_krpspanGrp"/>
+         <ref name="tei_krpinterp"/>
+         <ref name="tei_krpinterpGrp"/>
          <ref name="tei_krpsubstJoin"/>
          <ref name="tei_krplistTranspose"/>
          <ref name="tei_krplink"/>
@@ -2992,6 +3128,10 @@ Sample values include: 1] rubbing; 2] mildew; 3] smoke</a:documentation>
    </define>
    <define name="tei_krpmodel.global.meta_sequence">
       <ref name="tei_krpindex"/>
+      <ref name="tei_krpspan"/>
+      <ref name="tei_krpspanGrp"/>
+      <ref name="tei_krpinterp"/>
+      <ref name="tei_krpinterpGrp"/>
       <ref name="tei_krpsubstJoin"/>
       <ref name="tei_krplistTranspose"/>
       <ref name="tei_krplink"/>
@@ -3008,6 +3148,18 @@ Sample values include: 1] rubbing; 2] mildew; 3] smoke</a:documentation>
    <define name="tei_krpmodel.global.meta_sequenceOptional">
       <optional>
          <ref name="tei_krpindex"/>
+      </optional>
+      <optional>
+         <ref name="tei_krpspan"/>
+      </optional>
+      <optional>
+         <ref name="tei_krpspanGrp"/>
+      </optional>
+      <optional>
+         <ref name="tei_krpinterp"/>
+      </optional>
+      <optional>
+         <ref name="tei_krpinterpGrp"/>
       </optional>
       <optional>
          <ref name="tei_krpsubstJoin"/>
@@ -3051,6 +3203,18 @@ Sample values include: 1] rubbing; 2] mildew; 3] smoke</a:documentation>
          <ref name="tei_krpindex"/>
       </zeroOrMore>
       <zeroOrMore>
+         <ref name="tei_krpspan"/>
+      </zeroOrMore>
+      <zeroOrMore>
+         <ref name="tei_krpspanGrp"/>
+      </zeroOrMore>
+      <zeroOrMore>
+         <ref name="tei_krpinterp"/>
+      </zeroOrMore>
+      <zeroOrMore>
+         <ref name="tei_krpinterpGrp"/>
+      </zeroOrMore>
+      <zeroOrMore>
          <ref name="tei_krpsubstJoin"/>
       </zeroOrMore>
       <zeroOrMore>
@@ -3090,6 +3254,18 @@ Sample values include: 1] rubbing; 2] mildew; 3] smoke</a:documentation>
    <define name="tei_krpmodel.global.meta_sequenceRepeatable">
       <oneOrMore>
          <ref name="tei_krpindex"/>
+      </oneOrMore>
+      <oneOrMore>
+         <ref name="tei_krpspan"/>
+      </oneOrMore>
+      <oneOrMore>
+         <ref name="tei_krpspanGrp"/>
+      </oneOrMore>
+      <oneOrMore>
+         <ref name="tei_krpinterp"/>
+      </oneOrMore>
+      <oneOrMore>
+         <ref name="tei_krpinterpGrp"/>
       </oneOrMore>
       <oneOrMore>
          <ref name="tei_krpsubstJoin"/>
@@ -3688,29 +3864,101 @@ Sample values include: 1] rubbing; 2] mildew; 3] smoke</a:documentation>
    <define name="tei_krpmodel.stageLike">
       <choice>
          <ref name="tei_krpstage"/>
+         <ref name="tei_krpmove"/>
+         <ref name="tei_krpview"/>
+         <ref name="tei_krpcamera"/>
+         <ref name="tei_krpsound"/>
+         <ref name="tei_krpcaption"/>
+         <ref name="tei_krptech"/>
       </choice>
    </define>
    <define name="tei_krpmodel.stageLike_alternation">
       <choice>
          <ref name="tei_krpstage"/>
+         <ref name="tei_krpmove"/>
+         <ref name="tei_krpview"/>
+         <ref name="tei_krpcamera"/>
+         <ref name="tei_krpsound"/>
+         <ref name="tei_krpcaption"/>
+         <ref name="tei_krptech"/>
       </choice>
    </define>
    <define name="tei_krpmodel.stageLike_sequence">
       <ref name="tei_krpstage"/>
+      <ref name="tei_krpmove"/>
+      <ref name="tei_krpview"/>
+      <ref name="tei_krpcamera"/>
+      <ref name="tei_krpsound"/>
+      <ref name="tei_krpcaption"/>
+      <ref name="tei_krptech"/>
    </define>
    <define name="tei_krpmodel.stageLike_sequenceOptional">
       <optional>
          <ref name="tei_krpstage"/>
+      </optional>
+      <optional>
+         <ref name="tei_krpmove"/>
+      </optional>
+      <optional>
+         <ref name="tei_krpview"/>
+      </optional>
+      <optional>
+         <ref name="tei_krpcamera"/>
+      </optional>
+      <optional>
+         <ref name="tei_krpsound"/>
+      </optional>
+      <optional>
+         <ref name="tei_krpcaption"/>
+      </optional>
+      <optional>
+         <ref name="tei_krptech"/>
       </optional>
    </define>
    <define name="tei_krpmodel.stageLike_sequenceOptionalRepeatable">
       <zeroOrMore>
          <ref name="tei_krpstage"/>
       </zeroOrMore>
+      <zeroOrMore>
+         <ref name="tei_krpmove"/>
+      </zeroOrMore>
+      <zeroOrMore>
+         <ref name="tei_krpview"/>
+      </zeroOrMore>
+      <zeroOrMore>
+         <ref name="tei_krpcamera"/>
+      </zeroOrMore>
+      <zeroOrMore>
+         <ref name="tei_krpsound"/>
+      </zeroOrMore>
+      <zeroOrMore>
+         <ref name="tei_krpcaption"/>
+      </zeroOrMore>
+      <zeroOrMore>
+         <ref name="tei_krptech"/>
+      </zeroOrMore>
    </define>
    <define name="tei_krpmodel.stageLike_sequenceRepeatable">
       <oneOrMore>
          <ref name="tei_krpstage"/>
+      </oneOrMore>
+      <oneOrMore>
+         <ref name="tei_krpmove"/>
+      </oneOrMore>
+      <oneOrMore>
+         <ref name="tei_krpview"/>
+      </oneOrMore>
+      <oneOrMore>
+         <ref name="tei_krpcamera"/>
+      </oneOrMore>
+      <oneOrMore>
+         <ref name="tei_krpsound"/>
+      </oneOrMore>
+      <oneOrMore>
+         <ref name="tei_krpcaption"/>
+      </oneOrMore>
+      <oneOrMore>
+         <ref name="tei_krptech"/>
       </oneOrMore>
    </define>
    <define name="tei_krpmodel.entryPart">
@@ -3840,6 +4088,7 @@ Sample values include: 1] rubbing; 2] mildew; 3] smoke</a:documentation>
          <ref name="tei_krpmodel.pLike"/>
          <ref name="tei_krplg"/>
          <ref name="tei_krpsp"/>
+         <ref name="tei_krpspGrp"/>
          <ref name="tei_krpmodel.divPart.spoken"/>
       </choice>
    </define>
@@ -4254,7 +4503,13 @@ Sample values include: 1] rubbing; 2] mildew; 3] smoke</a:documentation>
       </choice>
    </define>
    <define name="tei_krpmodel.frontPart.drama">
-      <notAllowed/>
+      <choice>
+         <ref name="tei_krpset"/>
+         <ref name="tei_krpprologue"/>
+         <ref name="tei_krpepilogue"/>
+         <ref name="tei_krpperformance"/>
+         <ref name="tei_krpcastList"/>
+      </choice>
    </define>
    <define name="tei_krpmodel.pLike.front">
       <choice>
@@ -4351,6 +4606,13 @@ Sample values include: 1] rubbing; 2] mildew; 3] smoke</a:documentation>
    </define>
    <define name="tei_krpmodel.catDescPart">
       <notAllowed/>
+   </define>
+   <define name="tei_krpmodel.castItemPart">
+      <choice>
+         <ref name="tei_krprole"/>
+         <ref name="tei_krproleDesc"/>
+         <ref name="tei_krpactor"/>
+      </choice>
    </define>
    <define name="tei_krpmodel.addressLike">
       <choice>
@@ -4639,6 +4901,7 @@ Sample values include: 1] rubbing; 2] mildew; 3] smoke</a:documentation>
          <ref name="tei_krpmodel.listLike"/>
          <ref name="tei_krpmodel.stageLike"/>
          <ref name="tei_krpmodel.attributable"/>
+         <ref name="tei_krpcastList"/>
       </choice>
    </define>
    <define name="tei_krpmodel.cmc">
@@ -4815,6 +5078,7 @@ Sample values include: 1] rubbing; 2] mildew; 3] smoke</a:documentation>
          <ref name="tei_krpmodel.annotationLike"/>
          <ref name="tei_krpxenoData"/>
          <ref name="tei_krplistChange"/>
+         <ref name="tei_krpcastList"/>
          <ref name="tei_krpu"/>
          <ref name="tei_krpzone"/>
          <ref name="tei_krpseg"/>
@@ -5217,6 +5481,7 @@ Suggested values include: 1] spoken (spoken); 2] thought (thought); 3] written (
                <ref name="tei_krpmodel.graphicLike"/>
                <ref name="tei_krpmodel.ptrLike"/>
                <ref name="tei_krpmodel.attributable"/>
+               <ref name="tei_krppc"/>
                <ref name="tei_krpq"/>
             </choice>
          </oneOrMore>
@@ -8403,22 +8668,26 @@ Suggested values include: 1] sent; 2] received; 3] transmitted; 4] redirected; 5
          <ref name="tei_krpatt.docStatus.attributes"/>
          <ref name="tei_krpatt.typed.attributes"/>
          <attribute name="who">
-            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Die Autor:innen von in "change"-Elementen erfassten Änderungen sind durch Verweise auf ihre XML-ID ausgewiesen.</a:documentation>
-            <choice>
-               <value>#rlein</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-               <value>#aholzer</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-               <value>#dsoelkner</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-               <value>#ischotzko</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-               <value>#tfruehwirth</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-            </choice>
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Die Autor:innen von in &lt;change&gt;-Elementen erfassten Änderungen sind durch Verweise auf ihre XML-ID ausgewiesen.</a:documentation>
+            <list>
+               <oneOrMore>
+                  <choice>
+                     <value>#rlein</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                     <value>#aholzer</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                     <value>#dsoelkner</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                     <value>#ischotzko</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                     <value>#tfruehwirth</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  </choice>
+               </oneOrMore>
+            </list>
          </attribute>
          <attribute name="when-iso">
-            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Die Zeitpunkte von in "change"-Elementen erfassten Änderungen entsprechen dem ISO-Format.</a:documentation>
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Die Zeitpunkte von in &lt;change&gt;-Elementen erfassten Änderungen entsprechen dem ISO-Format.</a:documentation>
             <choice>
                <data type="date"/>
                <data type="gYear"/>
@@ -8773,7 +9042,17 @@ Suggested values include: 1] sent; 2] received; 3] transmitted; 4] redirected; 5
          </group>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_krp-div-abstractModel-structure-div-in-l-constraint-rule-27">
+                  id="tei_krp-div-body-div-constraint-rule-27">
+            <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                      xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                      context="tei:TEI/tei:text/tei:body/tei:div">
+               <sch:assert test="count(tei:head) = 1">Das äußerste &lt;div&gt;-Element enthält genau einen &lt;head&gt;.</sch:assert>
+               <sch:assert test="tei:head[@type='dokument']">Der im äußersten &lt;div&gt;-Element enthaltene &lt;head&gt; trägt das Attribut type="dokument".</sch:assert>
+            </sch:rule>
+         </pattern>
+         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+                  xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                  id="tei_krp-div-abstractModel-structure-div-in-l-constraint-rule-28">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       context="tei:l//tei:div">
@@ -8784,7 +9063,7 @@ Suggested values include: 1] sent; 2] received; 3] transmitted; 4] redirected; 5
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_krp-div-abstractModel-structure-div-in-ab-or-p-constraint-rule-28">
+                  id="tei_krp-div-abstractModel-structure-div-in-ab-or-p-constraint-rule-29">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       context="tei:div">
@@ -9601,6 +9880,838 @@ Suggested values include: 1] main (main); 2] sub (subordinate); 3] alt (alternat
          <empty/>
       </element>
    </define>
+   <define name="tei_krpatt.lexicographic.normalized.attributes">
+      <ref name="tei_krpatt.lexicographic.normalized.attribute.norm"/>
+      <ref name="tei_krpatt.lexicographic.normalized.attribute.orig"/>
+   </define>
+   <define name="tei_krpatt.lexicographic.normalized.attribute.norm">
+      <optional>
+         <attribute name="norm">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(normalized) provides the normalized/standardized form of information present in the source text in a non-normalized form.</a:documentation>
+            <data type="string"/>
+         </attribute>
+      </optional>
+   </define>
+   <define name="tei_krpatt.lexicographic.normalized.attribute.orig">
+      <optional>
+         <attribute name="orig">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(original) gives the original string or is the empty string when the element does not appear in the source text.</a:documentation>
+            <data type="string"/>
+         </attribute>
+      </optional>
+   </define>
+   <define name="tei_krpatt.linguistic.attributes">
+      <ref name="tei_krpatt.lexicographic.normalized.attributes"/>
+      <ref name="tei_krpatt.linguistic.attribute.lemma"/>
+      <ref name="tei_krpatt.linguistic.attribute.lemmaRef"/>
+      <ref name="tei_krpatt.linguistic.attribute.pos"/>
+      <ref name="tei_krpatt.linguistic.attribute.msd"/>
+      <ref name="tei_krpatt.linguistic.attribute.join"/>
+   </define>
+   <define name="tei_krpatt.linguistic.attribute.lemma">
+      <optional>
+         <attribute name="lemma">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">provides a lemma (base form) for the word, typically uninflected and serving both as an identifier (e.g. in dictionary contexts, as a headword), and as a basis for potential inflections.</a:documentation>
+            <data type="string"/>
+         </attribute>
+      </optional>
+   </define>
+   <define name="tei_krpatt.linguistic.attribute.lemmaRef">
+      <optional>
+         <attribute name="lemmaRef">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">provides a pointer to a definition of the lemma for the word, for example in an online lexicon.</a:documentation>
+            <data type="anyURI">
+               <param name="pattern">\S+</param>
+            </data>
+         </attribute>
+      </optional>
+   </define>
+   <define name="tei_krpatt.linguistic.attribute.pos">
+      <optional>
+         <attribute name="pos">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(part of speech) indicates the part of speech assigned to a token (i.e. information on whether it is a noun, adjective, or verb), usually according to some official reference vocabulary (e.g. for German: STTS, for English: CLAWS, for Polish: NKJP, etc.).</a:documentation>
+            <data type="string"/>
+         </attribute>
+      </optional>
+   </define>
+   <define name="tei_krpatt.linguistic.attribute.msd">
+      <optional>
+         <attribute name="msd">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(morphosyntactic description) supplies morphosyntactic information for a token, usually according to some official reference vocabulary (e.g. for German: <a xmlns="http://www.w3.org/1999/xhtml"
+                  xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                  href="http://www.ims.uni-stuttgart.de/forschung/ressourcen/lexika/TagSets/stts-1999.pdf">STTS-large tagset</a>; for a feature description system designed as (pragmatically) universal, see <a xmlns="http://www.w3.org/1999/xhtml"
+                  xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                  href="http://universaldependencies.org/u/feat/index.html">Universal Features</a>).</a:documentation>
+            <data type="string"/>
+         </attribute>
+      </optional>
+   </define>
+   <define name="tei_krpatt.linguistic.attribute.join">
+      <optional>
+         <attribute name="join">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">when present, provides information on whether the token in question is adjacent to another, and if so, on which side.</a:documentation>
+            <choice>
+               <value>no</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">the token is not adjacent to another</a:documentation>
+               <value>left</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">there is no whitespace on the left side of the token</a:documentation>
+               <value>right</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">there is no whitespace on the right side of the token</a:documentation>
+               <value>both</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">there is no whitespace on either side of the token</a:documentation>
+               <value>overlap</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">the token overlaps with another; other devices (specifying the extent and the area of overlap) are needed to more precisely locate this token in the character stream</a:documentation>
+            </choice>
+         </attribute>
+      </optional>
+   </define>
+   <define name="tei_krpatt.global.analytic.attributes">
+      <ref name="tei_krpatt.global.analytic.attribute.ana"/>
+   </define>
+   <define name="tei_krpatt.global.analytic.attribute.ana">
+      <optional>
+         <attribute name="ana">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(analysis) indicates one or more elements containing interpretations of the element on which the <code xmlns="http://www.w3.org/1999/xhtml"
+                     xmlns:rng="http://relaxng.org/ns/structure/1.0">@ana</code> attribute appears.</a:documentation>
+            <list>
+               <oneOrMore>
+                  <data type="anyURI">
+                     <param name="pattern">\S+</param>
+                  </data>
+               </oneOrMore>
+            </list>
+         </attribute>
+      </optional>
+   </define>
+   <define name="tei_krps">
+      <element name="s">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Satzeinheit) enthält einen satzähnlichen Textabschnitt. [18.1. Linguistic Segment Categories 8.4.1. Segmentation]</a:documentation>
+         <ref name="tei_krpmacro.phraseSeq"/>
+         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+                  xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                  id="tei_krp-s-noNestedS-constraint-rule-30">
+            <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                      xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                      context="tei:s">
+               <sch:report test="tei:s">You may not nest one s element within another: use seg instead</sch:report>
+            </sch:rule>
+         </pattern>
+         <ref name="tei_krpatt.global.attributes"/>
+         <ref name="tei_krpatt.cmc.attributes"/>
+         <ref name="tei_krpatt.notated.attributes"/>
+         <ref name="tei_krpatt.segLike.attributes"/>
+         <ref name="tei_krpatt.typed.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="tei_krpcl">
+      <element name="cl">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(clause) represents a grammatical clause. [18.1. Linguistic Segment Categories]</a:documentation>
+         <ref name="tei_krpmacro.phraseSeq"/>
+         <ref name="tei_krpatt.global.attributes"/>
+         <ref name="tei_krpatt.cmc.attributes"/>
+         <ref name="tei_krpatt.notated.attributes"/>
+         <ref name="tei_krpatt.segLike.attributes"/>
+         <ref name="tei_krpatt.typed.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="tei_krpphr">
+      <element name="phr">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(phrase) represents a grammatical phrase. [18.1. Linguistic Segment Categories]</a:documentation>
+         <ref name="tei_krpmacro.phraseSeq"/>
+         <ref name="tei_krpatt.global.attributes"/>
+         <ref name="tei_krpatt.cmc.attributes"/>
+         <ref name="tei_krpatt.notated.attributes"/>
+         <ref name="tei_krpatt.segLike.attributes"/>
+         <ref name="tei_krpatt.typed.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="tei_krpw">
+      <element name="w">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Wort) repräsentiert ein grammatisches (nicht unbedingt orthografisches) Wort. [18.1. Linguistic Segment Categories 18.4.2. Lightweight Linguistic Annotation]</a:documentation>
+         <zeroOrMore>
+            <choice>
+               <text/>
+               <ref name="tei_krpmodel.gLike"/>
+               <ref name="tei_krpseg"/>
+               <ref name="tei_krpw"/>
+               <ref name="tei_krpm"/>
+               <ref name="tei_krpc"/>
+               <ref name="tei_krppc"/>
+               <ref name="tei_krpmodel.global"/>
+               <ref name="tei_krpmodel.lPart"/>
+               <ref name="tei_krpmodel.hiLike"/>
+               <ref name="tei_krpmodel.pPart.edit"/>
+            </choice>
+         </zeroOrMore>
+         <ref name="tei_krpatt.global.attributes"/>
+         <ref name="tei_krpatt.cmc.attributes"/>
+         <ref name="tei_krpatt.linguistic.attributes"/>
+         <ref name="tei_krpatt.notated.attributes"/>
+         <ref name="tei_krpatt.segLike.attributes"/>
+         <ref name="tei_krpatt.typed.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="tei_krpm">
+      <element name="m">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(morpheme) represents a grammatical morpheme. [18.1. Linguistic Segment Categories]</a:documentation>
+         <zeroOrMore>
+            <choice>
+               <text/>
+               <ref name="tei_krpmodel.gLike"/>
+               <ref name="tei_krpmodel.hiLike"/>
+               <ref name="tei_krpseg"/>
+               <ref name="tei_krpm"/>
+               <ref name="tei_krpc"/>
+               <ref name="tei_krpmodel.global"/>
+            </choice>
+         </zeroOrMore>
+         <ref name="tei_krpatt.global.attributes"/>
+         <ref name="tei_krpatt.cmc.attributes"/>
+         <ref name="tei_krpatt.notated.attributes"/>
+         <ref name="tei_krpatt.segLike.attributes"/>
+         <ref name="tei_krpatt.typed.attributes"/>
+         <optional>
+            <attribute name="baseForm">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">supplies the morpheme's base form.</a:documentation>
+               <data type="token">
+                  <param name="pattern">[^\p{C}\p{Z}]+</param>
+               </data>
+            </attribute>
+         </optional>
+         <empty/>
+      </element>
+   </define>
+   <define name="tei_krpc">
+      <element name="c">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(character) represents a character. [18.1. Linguistic Segment Categories]</a:documentation>
+         <ref name="tei_krpmacro.xtext"/>
+         <ref name="tei_krpatt.global.attributes"/>
+         <ref name="tei_krpatt.cmc.attributes"/>
+         <ref name="tei_krpatt.notated.attributes"/>
+         <ref name="tei_krpatt.segLike.attributes"/>
+         <ref name="tei_krpatt.typed.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="tei_krppc">
+      <element name="pc">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Interpunktionszeichen) enthält ein Zeichen oder eine Zeichenkette, die ein einzelnes Interpunktionszeichen repräsentiert. [18.1.2. Below the Word Level 18.4.2. Lightweight Linguistic Annotation]</a:documentation>
+         <zeroOrMore>
+            <choice>
+               <text/>
+               <ref name="tei_krpmodel.gLike"/>
+               <ref name="tei_krpc"/>
+               <ref name="tei_krpmodel.pPart.edit"/>
+            </choice>
+         </zeroOrMore>
+         <ref name="tei_krpatt.global.attributes"/>
+         <ref name="tei_krpatt.cmc.attributes"/>
+         <ref name="tei_krpatt.linguistic.attributes"/>
+         <ref name="tei_krpatt.segLike.attributes"/>
+         <ref name="tei_krpatt.typed.attributes"/>
+         <optional>
+            <attribute name="force">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">gibt an, in welchem Maß das betreffende Interpunktionszeichen Wörter oder Phrasen gewöhnlich voneinander trennt.</a:documentation>
+               <choice>
+                  <value>strong</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">das Interpunktionszeichen ist ein Wortbegrenzungszeichen.</a:documentation>
+                  <value>weak</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">das Interpunktionszeichen ist kein Wortbegrenzungszeichen.</a:documentation>
+                  <value>inter</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">das Interpunktionszeichen kann oder kann nicht als Wortbegrenzungszeichen fungieren.</a:documentation>
+               </choice>
+            </attribute>
+         </optional>
+         <optional>
+            <attribute name="unit">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">gibt die Art der Einheit an, die durch das Interpunktionszeichen begrenzt wird.</a:documentation>
+               <data type="token">
+                  <param name="pattern">[^\p{C}\p{Z}]+</param>
+               </data>
+            </attribute>
+         </optional>
+         <optional>
+            <attribute name="pre">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">gibt an, ob das Interpunktionszeichen der Einheit, die es begrenzt, vorangeht oder folgt.</a:documentation>
+               <data type="boolean"/>
+            </attribute>
+         </optional>
+         <empty/>
+      </element>
+   </define>
+   <define name="tei_krpspan">
+      <element name="span">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">associates an interpretative annotation directly with a span of text. [18.3. Spans and Interpretations]</a:documentation>
+         <ref name="tei_krpmacro.phraseSeq.limited"/>
+         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+                  xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                  id="tei_krp-span-target-from-constraint-rule-31">
+            <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                      xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                      context="tei:span">
+               <sch:report test="@from and @target">
+          Only one of the attributes @target and @from may be supplied on <sch:name/>
+               </sch:report>
+            </sch:rule>
+         </pattern>
+         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+                  xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                  id="tei_krp-span-targetto-constraint-rule-32">
+            <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                      xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                      context="tei:span">
+               <sch:report test="@to and @target">
+          Only one of the attributes @target and @to may be supplied on <sch:name/>
+               </sch:report>
+            </sch:rule>
+         </pattern>
+         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+                  xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                  id="tei_krp-span-tonotfrom-constraint-rule-33">
+            <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                      xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                      context="tei:span">
+               <sch:report test="@to and not(@from)">
+          If @to is supplied on <sch:name/>, @from must be supplied as well
+        </sch:report>
+            </sch:rule>
+         </pattern>
+         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+                  xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                  id="tei_krp-span-tofrom-constraint-rule-34">
+            <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                      xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                      context="tei:span">
+               <sch:report test="contains(normalize-space(@to),' ') or contains(normalize-space(@from),' ')">
+          The attributes @to and @from on <sch:name/> may each contain only a single value
+        </sch:report>
+            </sch:rule>
+         </pattern>
+         <ref name="tei_krpatt.global.attributes"/>
+         <ref name="tei_krpatt.cmc.attributes"/>
+         <ref name="tei_krpatt.interpLike.attributes"/>
+         <ref name="tei_krpatt.pointing.attributes"/>
+         <optional>
+            <attribute name="from">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">gives the identifier of the node which is the starting point of the span of text being annotated; if not accompanied by a <code xmlns="http://www.w3.org/1999/xhtml"
+                        xmlns:rng="http://relaxng.org/ns/structure/1.0">@to</code> attribute, gives the identifier of the node of the entire span of text being annotated.</a:documentation>
+               <data type="anyURI">
+                  <param name="pattern">\S+</param>
+               </data>
+            </attribute>
+         </optional>
+         <optional>
+            <attribute name="to">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">gives the identifier of the node which is the end-point of the span of text being annotated.</a:documentation>
+               <data type="anyURI">
+                  <param name="pattern">\S+</param>
+               </data>
+            </attribute>
+         </optional>
+         <empty/>
+      </element>
+   </define>
+   <define name="tei_krpspanGrp">
+      <element name="spanGrp">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(span group) collects together span tags. [18.3. Spans and Interpretations]</a:documentation>
+         <group>
+            <zeroOrMore>
+               <ref name="tei_krpmodel.descLike"/>
+            </zeroOrMore>
+            <zeroOrMore>
+               <ref name="tei_krpspan"/>
+            </zeroOrMore>
+         </group>
+         <ref name="tei_krpatt.global.attributes"/>
+         <ref name="tei_krpatt.cmc.attributes"/>
+         <ref name="tei_krpatt.interpLike.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="tei_krpinterp">
+      <element name="interp">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(interpretation) summarizes a specific interpretative annotation which can be linked to a span of text. [18.3. Spans and Interpretations]</a:documentation>
+         <zeroOrMore>
+            <choice>
+               <text/>
+               <ref name="tei_krpmodel.gLike"/>
+               <ref name="tei_krpmodel.descLike"/>
+               <ref name="tei_krpmodel.certLike"/>
+            </choice>
+         </zeroOrMore>
+         <ref name="tei_krpatt.global.attributes"/>
+         <ref name="tei_krpatt.cmc.attributes"/>
+         <ref name="tei_krpatt.interpLike.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="tei_krpinterpGrp">
+      <element name="interpGrp">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(interpretation group) collects together a set of related interpretations which share responsibility or type. [18.3. Spans and Interpretations]</a:documentation>
+         <group>
+            <zeroOrMore>
+               <ref name="tei_krpmodel.descLike"/>
+            </zeroOrMore>
+            <oneOrMore>
+               <ref name="tei_krpinterp"/>
+            </oneOrMore>
+         </group>
+         <ref name="tei_krpatt.global.attributes"/>
+         <ref name="tei_krpatt.cmc.attributes"/>
+         <ref name="tei_krpatt.interpLike.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="tei_krpset">
+      <element name="set">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(setting) contains a description of the setting, time, locale, appearance, etc., of the action of a play, typically found in the front matter of a printed performance text (not a stage direction). [7.1. Front and Back Matter
+ ]</a:documentation>
+         <group>
+            <zeroOrMore>
+               <choice>
+                  <ref name="tei_krpmodel.headLike"/>
+                  <ref name="tei_krpmodel.global"/>
+               </choice>
+            </zeroOrMore>
+            <zeroOrMore>
+               <ref name="tei_krpmodel.common"/>
+               <zeroOrMore>
+                  <ref name="tei_krpmodel.global"/>
+               </zeroOrMore>
+            </zeroOrMore>
+         </group>
+         <ref name="tei_krpatt.global.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="tei_krpprologue">
+      <element name="prologue">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Prolog) contains the prologue to a drama, typically spoken by an actor out of character, possibly in association with a particular performance or venue. [7.1.2. Prologues and Epilogues 7.1. Front and Back Matter
+ ]</a:documentation>
+         <group>
+            <zeroOrMore>
+               <choice>
+                  <ref name="tei_krpmodel.divTop"/>
+                  <ref name="tei_krpmodel.global"/>
+               </choice>
+            </zeroOrMore>
+            <oneOrMore>
+               <ref name="tei_krpmodel.common"/>
+               <zeroOrMore>
+                  <ref name="tei_krpmodel.global"/>
+               </zeroOrMore>
+            </oneOrMore>
+            <zeroOrMore>
+               <ref name="tei_krpmodel.divBottom"/>
+               <zeroOrMore>
+                  <ref name="tei_krpmodel.global"/>
+               </zeroOrMore>
+            </zeroOrMore>
+         </group>
+         <ref name="tei_krpatt.global.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="tei_krpepilogue">
+      <element name="epilogue">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(epilogue) contains the epilogue to a drama, typically spoken by an actor out of character, possibly in association with a particular performance or venue. [7.1.2. Prologues and Epilogues 7.1. Front and Back Matter
+ ]</a:documentation>
+         <group>
+            <zeroOrMore>
+               <choice>
+                  <ref name="tei_krpmodel.divTop"/>
+                  <ref name="tei_krpmodel.global"/>
+               </choice>
+            </zeroOrMore>
+            <oneOrMore>
+               <ref name="tei_krpmodel.common"/>
+               <zeroOrMore>
+                  <ref name="tei_krpmodel.global"/>
+               </zeroOrMore>
+            </oneOrMore>
+            <zeroOrMore>
+               <ref name="tei_krpmodel.divBottom"/>
+               <zeroOrMore>
+                  <ref name="tei_krpmodel.global"/>
+               </zeroOrMore>
+            </zeroOrMore>
+         </group>
+         <ref name="tei_krpatt.global.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="tei_krpperformance">
+      <element name="performance">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(performance) contains a section of front or back matter describing how a dramatic piece is to be performed in general or how it was performed on some specific occasion. [7.1.3. Records of Performances 7.1. Front and Back Matter
+ ]</a:documentation>
+         <group>
+            <zeroOrMore>
+               <choice>
+                  <ref name="tei_krpmodel.divTop"/>
+                  <ref name="tei_krpmodel.global"/>
+               </choice>
+            </zeroOrMore>
+            <oneOrMore>
+               <ref name="tei_krpmodel.common"/>
+               <zeroOrMore>
+                  <ref name="tei_krpmodel.global"/>
+               </zeroOrMore>
+            </oneOrMore>
+            <zeroOrMore>
+               <ref name="tei_krpmodel.divBottom"/>
+               <zeroOrMore>
+                  <ref name="tei_krpmodel.global"/>
+               </zeroOrMore>
+            </zeroOrMore>
+         </group>
+         <ref name="tei_krpatt.global.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="tei_krpcastList">
+      <element name="castList">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Besetzungsliste) contains a single cast list or dramatis personae. [7.1.4. Cast Lists 7.1. Front and Back Matter
+ ]</a:documentation>
+         <group>
+            <zeroOrMore>
+               <choice>
+                  <ref name="tei_krpmodel.divTop"/>
+                  <ref name="tei_krpmodel.global"/>
+               </choice>
+            </zeroOrMore>
+            <zeroOrMore>
+               <ref name="tei_krpmodel.common"/>
+               <zeroOrMore>
+                  <ref name="tei_krpmodel.global"/>
+               </zeroOrMore>
+            </zeroOrMore>
+            <oneOrMore>
+               <choice>
+                  <ref name="tei_krpcastItem"/>
+                  <ref name="tei_krpcastGroup"/>
+               </choice>
+               <zeroOrMore>
+                  <ref name="tei_krpmodel.global"/>
+               </zeroOrMore>
+            </oneOrMore>
+            <zeroOrMore>
+               <ref name="tei_krpmodel.common"/>
+               <zeroOrMore>
+                  <ref name="tei_krpmodel.global"/>
+               </zeroOrMore>
+            </zeroOrMore>
+         </group>
+         <ref name="tei_krpatt.global.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="tei_krpcastGroup">
+      <element name="castGroup">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(cast list grouping) groups one or more individual <code xmlns="http://www.w3.org/1999/xhtml"
+                  xmlns:rng="http://relaxng.org/ns/structure/1.0">&lt;castItem&gt;</code> elements within a cast list. [7.1.4. Cast Lists]</a:documentation>
+         <group>
+            <zeroOrMore>
+               <choice>
+                  <ref name="tei_krpmodel.global"/>
+                  <ref name="tei_krpmodel.headLike"/>
+               </choice>
+            </zeroOrMore>
+            <oneOrMore>
+               <choice>
+                  <ref name="tei_krpcastItem"/>
+                  <ref name="tei_krpcastGroup"/>
+                  <ref name="tei_krproleDesc"/>
+               </choice>
+               <zeroOrMore>
+                  <ref name="tei_krpmodel.global"/>
+               </zeroOrMore>
+            </oneOrMore>
+            <rng:optional xmlns:rng="http://relaxng.org/ns/structure/1.0">
+               <rng:group>
+                  <rng:ref name="tei_krptrailer"/>
+                  <rng:zeroOrMore>
+                     <rng:ref name="tei_krpmodel.global"/>
+                  </rng:zeroOrMore>
+               </rng:group>
+            </rng:optional>
+         </group>
+         <ref name="tei_krpatt.global.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="tei_krpcastItem">
+      <element name="castItem">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(cast list item) contains a single entry within a cast list, describing either a single role or a list of non-speaking roles. [7.1.4. Cast Lists]</a:documentation>
+         <zeroOrMore>
+            <choice>
+               <text/>
+               <ref name="tei_krpmodel.gLike"/>
+               <ref name="tei_krpmodel.castItemPart"/>
+               <ref name="tei_krpmodel.phrase"/>
+               <ref name="tei_krpmodel.global"/>
+            </choice>
+         </zeroOrMore>
+         <ref name="tei_krpatt.global.attributes"/>
+         <ref name="tei_krpatt.typed.attribute.subtype"/>
+         <optional>
+            <attribute xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
+                       name="type"
+                       a:defaultValue="role">
+               <a:documentation>characterizes the cast item.</a:documentation>
+               <choice>
+                  <value>role</value>
+                  <a:documentation>the item describes a single role.</a:documentation>
+                  <value>list</value>
+                  <a:documentation>the item describes a list of non-speaking roles.</a:documentation>
+               </choice>
+            </attribute>
+         </optional>
+         <empty/>
+      </element>
+   </define>
+   <define name="tei_krprole">
+      <element name="role">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(role) contains the name of a dramatic role, as given in a cast list. [7.1.4. Cast Lists]</a:documentation>
+         <ref name="tei_krpmacro.phraseSeq"/>
+         <ref name="tei_krpatt.global.attributes"/>
+         <optional>
+            <attribute name="gender">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">specifies the gender of the role.</a:documentation>
+               <list>
+                  <oneOrMore>
+                     <data type="token">
+                        <param name="pattern">[^\p{C}\p{Z}]+</param>
+                     </data>
+                  </oneOrMore>
+               </list>
+            </attribute>
+         </optional>
+         <empty/>
+      </element>
+   </define>
+   <define name="tei_krproleDesc">
+      <element name="roleDesc">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(role description) describes a character's role in a drama. [7.1.4. Cast Lists]</a:documentation>
+         <ref name="tei_krpmacro.phraseSeq"/>
+         <ref name="tei_krpatt.global.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="tei_krpactor">
+      <element name="actor">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contains the name of an actor appearing within a cast list. [7.1.4. Cast Lists]</a:documentation>
+         <ref name="tei_krpmacro.phraseSeq"/>
+         <ref name="tei_krpatt.global.attributes"/>
+         <ref name="tei_krpatt.canonical.attributes"/>
+         <optional>
+            <attribute name="sex">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">specifies the sex of the actor.</a:documentation>
+               <list>
+                  <oneOrMore>
+                     <data type="token">
+                        <param name="pattern">[^\p{C}\p{Z}]+</param>
+                     </data>
+                  </oneOrMore>
+               </list>
+            </attribute>
+         </optional>
+         <optional>
+            <attribute name="gender">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">specifies the gender of the actor.</a:documentation>
+               <list>
+                  <oneOrMore>
+                     <data type="token">
+                        <param name="pattern">[^\p{C}\p{Z}]+</param>
+                     </data>
+                  </oneOrMore>
+               </list>
+            </attribute>
+         </optional>
+         <empty/>
+      </element>
+   </define>
+   <define name="tei_krpspGrp">
+      <element name="spGrp">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(speech group) contains a group of speeches, speech groups, or songs in a performance text presented in a source as constituting a single unit or number. [7.2.3. Grouped Speeches]</a:documentation>
+         <group>
+            <zeroOrMore>
+               <ref name="tei_krpmodel.headLike"/>
+            </zeroOrMore>
+            <oneOrMore>
+               <choice>
+                  <ref name="tei_krpmodel.global"/>
+                  <ref name="tei_krpsp"/>
+                  <ref name="tei_krpspGrp"/>
+                  <ref name="tei_krpmodel.stageLike"/>
+               </choice>
+            </oneOrMore>
+         </group>
+         <ref name="tei_krpatt.global.attributes"/>
+         <ref name="tei_krpatt.ascribed.directed.attributes"/>
+         <ref name="tei_krpatt.divLike.attributes"/>
+         <ref name="tei_krpatt.typed.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="tei_krpmove">
+      <element name="move">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(movement) marks the actual movement of one or more characters. [7.2.5. Stage Directions]</a:documentation>
+         <empty/>
+         <ref name="tei_krpatt.global.attributes"/>
+         <ref name="tei_krpatt.ascribed.directed.attributes"/>
+         <ref name="tei_krpatt.typed.attribute.subtype"/>
+         <optional>
+            <attribute name="type">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">characterizes the movement, for example as an entrance or exit.
+Suggested values include: 1] entrance; 2] exit; 3] onStage</a:documentation>
+               <choice>
+                  <value>entrance</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">character is entering the stage.</a:documentation>
+                  <value>exit</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">character is exiting the stage.</a:documentation>
+                  <value>onStage</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">character moves on stage</a:documentation>
+                  <data type="token">
+                     <param name="pattern">[^\p{C}\p{Z}]+</param>
+                  </data>
+               </choice>
+            </attribute>
+         </optional>
+         <optional>
+            <attribute name="where">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">specifies the direction of a stage movement.
+Sample values include: 1] L (left); 2] R (right); 3] C (center)</a:documentation>
+               <list>
+                  <oneOrMore>
+                     <choice>
+                        <data type="token">
+                           <param name="pattern">[^\p{C}\p{Z}]+</param>
+                        </data>
+                        <data type="anyURI">
+                           <param name="pattern">\S+</param>
+                        </data>
+                     </choice>
+                  </oneOrMore>
+               </list>
+            </attribute>
+         </optional>
+         <optional>
+            <attribute name="perf">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(performance) identifies the performance or performances in which this movement occurred as specified by pointing to one or more <code xmlns="http://www.w3.org/1999/xhtml"
+                        xmlns:rng="http://relaxng.org/ns/structure/1.0">&lt;performance&gt;</code> elements.</a:documentation>
+               <list>
+                  <oneOrMore>
+                     <data type="anyURI">
+                        <param name="pattern">\S+</param>
+                     </data>
+                  </oneOrMore>
+               </list>
+            </attribute>
+         </optional>
+         <empty/>
+      </element>
+   </define>
+   <define name="tei_krpview">
+      <element name="view">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(view) describes the visual context of some part of a screen play in terms of what the spectator sees, generally independent of any dialogue. [7.3.1. Technical Information 7.3. Other Types of Performance Text]</a:documentation>
+         <ref name="tei_krpmacro.specialPara"/>
+         <ref name="tei_krpatt.global.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="tei_krpcamera">
+      <element name="camera">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(camera) describes a particular camera angle or viewpoint in a screen play. [7.3.1. Technical Information 7.3. Other Types of Performance Text]</a:documentation>
+         <ref name="tei_krpmacro.paraContent"/>
+         <ref name="tei_krpatt.global.attributes"/>
+         <ref name="tei_krpatt.typed.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="tei_krpsound">
+      <element name="sound">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(sound) describes a sound effect or musical sequence specified within a screen play or radio script. [7.3.1. Technical Information 7.3. Other Types of Performance Text]</a:documentation>
+         <ref name="tei_krpmacro.paraContent"/>
+         <ref name="tei_krpatt.global.attributes"/>
+         <ref name="tei_krpatt.typed.attribute.subtype"/>
+         <optional>
+            <attribute name="type">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">categorizes the sound in some respect, e.g. as music, special effect, etc.</a:documentation>
+               <data type="token">
+                  <param name="pattern">[^\p{C}\p{Z}]+</param>
+               </data>
+            </attribute>
+         </optional>
+         <optional>
+            <attribute name="discrete">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">indicates whether the sound overlaps the surrounding speeches or interrupts them.</a:documentation>
+               <choice>
+                  <data type="boolean"/>
+                  <choice>
+                     <value>unknown</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                     <value>inapplicable</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  </choice>
+               </choice>
+            </attribute>
+         </optional>
+         <empty/>
+      </element>
+   </define>
+   <define name="tei_krpcaption">
+      <element name="caption">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Beschriftung) contains the text of a caption or other text displayed as part of a film script or screenplay. [7.3.1. Technical Information 7.3. Other Types of Performance Text]</a:documentation>
+         <ref name="tei_krpmacro.paraContent"/>
+         <ref name="tei_krpatt.global.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="tei_krptech">
+      <element name="tech">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(technical stage direction) describes a special-purpose stage direction that is not meant for the actors. [7.3.1. Technical Information]</a:documentation>
+         <ref name="tei_krpmacro.paraContent"/>
+         <ref name="tei_krpatt.global.attributes"/>
+         <ref name="tei_krpatt.typed.attribute.subtype"/>
+         <optional>
+            <attribute name="type">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">categorizes the technical stage direction.
+Suggested values include: 1] light; 2] sound; 3] prop; 4] block</a:documentation>
+               <choice>
+                  <value>light</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">a lighting cue</a:documentation>
+                  <value>sound</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">a sound cue</a:documentation>
+                  <value>prop</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">a prop cue</a:documentation>
+                  <value>block</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">a blocking instruction</a:documentation>
+                  <data type="token">
+                     <param name="pattern">[^\p{C}\p{Z}]+</param>
+                  </data>
+               </choice>
+            </attribute>
+         </optional>
+         <optional>
+            <attribute name="perf">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(performance) points to one or more <code xmlns="http://www.w3.org/1999/xhtml"
+                        xmlns:rng="http://relaxng.org/ns/structure/1.0">&lt;performance&gt;</code> elements documenting the performance or performances to which this technical direction applies.</a:documentation>
+               <list>
+                  <oneOrMore>
+                     <data type="anyURI">
+                        <param name="pattern">\S+</param>
+                     </data>
+                  </oneOrMore>
+               </list>
+            </attribute>
+         </optional>
+         <empty/>
+      </element>
+   </define>
    <define name="tei_krpatt.duration.attributes">
       <ref name="tei_krpatt.duration.iso.attributes"/>
       <ref name="tei_krpatt.duration.w3c.attributes"/>
@@ -9999,7 +11110,7 @@ Suggested values include: 1] main (main); 2] sub (subordinate); 3] alt (alternat
          <empty/>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_krp-shift-shiftNew-constraint-rule-29">
+                  id="tei_krp-shift-shiftNew-constraint-rule-35">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       context="tei:shift">
@@ -10055,6 +11166,7 @@ Suggested values include: 1] tempo; 2] loud; 3] pitch; 4] tension; 5] rhythm; 6]
          <zeroOrMore>
             <choice>
                <ref name="tei_krpu"/>
+               <ref name="tei_krpspanGrp"/>
                <ref name="tei_krpmodel.global.spoken"/>
             </choice>
          </zeroOrMore>
@@ -10126,7 +11238,7 @@ Suggested values include: 1] tempo; 2] loud; 3] pitch; 4] tension; 5] rhythm; 6]
          </group>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_krp-msDesc-one_ms_singleton_max-constraint-rule-30">
+                  id="tei_krp-msDesc-one_ms_singleton_max-constraint-rule-36">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:xi="http://www.w3.org/2001/XInclude"
@@ -10151,7 +11263,7 @@ Suggested values include: 1] tempo; 2] loud; 3] pitch; 4] tension; 5] rhythm; 6]
          <ref name="tei_krpmacro.phraseSeq"/>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_krp-catchwords-catchword_in_msDesc-constraint-rule-31">
+                  id="tei_krp-catchwords-catchword_in_msDesc-constraint-rule-37">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:xi="http://www.w3.org/2001/XInclude"
@@ -10174,7 +11286,7 @@ Suggested values include: 1] tempo; 2] loud; 3] pitch; 4] tension; 5] rhythm; 6]
          </zeroOrMore>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_krp-dimensions-duplicateDim-constraint-rule-32">
+                  id="tei_krp-dimensions-duplicateDim-constraint-rule-38">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:xi="http://www.w3.org/2001/XInclude"
@@ -10390,7 +11502,7 @@ Sample values include: 1] binding; 2] endband; 3] slipcase; 4] support; 5] tie</
          <ref name="tei_krpmacro.phraseSeq"/>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_krp-secFol-secFol_in_msDesc-constraint-rule-33">
+                  id="tei_krp-secFol-secFol_in_msDesc-constraint-rule-39">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:xi="http://www.w3.org/2001/XInclude"
@@ -10408,7 +11520,7 @@ Sample values include: 1] binding; 2] endband; 3] slipcase; 4] support; 5] tie</
          <ref name="tei_krpmacro.specialPara"/>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_krp-signatures-signatures_in_msDesc-constraint-rule-34">
+                  id="tei_krp-signatures-signatures_in_msDesc-constraint-rule-40">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:xi="http://www.w3.org/2001/XInclude"
@@ -10487,7 +11599,7 @@ Sample values include: 1] binding; 2] endband; 3] slipcase; 4] support; 5] tie</
          </group>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_krp-msIdentifier-msId_minimal-constraint-rule-35">
+                  id="tei_krp-msIdentifier-msId_minimal-constraint-rule-41">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:xi="http://www.w3.org/2001/XInclude"
@@ -11612,7 +12724,7 @@ Suggested values include: 1] paper; 2] parch (parchment); 3] mixed</a:documentat
          </group>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_krp-facsimile-no_facsimile_text_nodes-constraint-rule-36">
+                  id="tei_krp-facsimile-no_facsimile_text_nodes-constraint-rule-42">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:xi="http://www.w3.org/2001/XInclude"
@@ -11752,7 +12864,7 @@ Sample values include: 1] glued; 2] pinned; 3] sewn</a:documentation>
          <empty/>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_krp-path-pathmustnotbeclosed-constraint-rule-37">
+                  id="tei_krp-path-pathmustnotbeclosed-constraint-rule-43">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:xi="http://www.w3.org/2001/XInclude"
@@ -11805,7 +12917,7 @@ Sample values include: 1] glued; 2] pinned; 3] sewn</a:documentation>
          <empty/>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_krp-addSpan-addSpan-requires-spanTo-constraint-rule-38">
+                  id="tei_krp-addSpan-addSpan-requires-spanTo-constraint-rule-44">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:xi="http://www.w3.org/2001/XInclude"
@@ -11815,7 +12927,7 @@ Sample values include: 1] glued; 2] pinned; 3] sewn</a:documentation>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_krp-addSpan-addSpan-requires-spanTo-fr-constraint-rule-39">
+                  id="tei_krp-addSpan-addSpan-requires-spanTo-fr-constraint-rule-45">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:xi="http://www.w3.org/2001/XInclude"
@@ -11847,7 +12959,7 @@ Sample values include: 1] glued; 2] pinned; 3] sewn</a:documentation>
          <empty/>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_krp-damageSpan-damageSpan-requires-spanTo-constraint-rule-40">
+                  id="tei_krp-damageSpan-damageSpan-requires-spanTo-constraint-rule-46">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:xi="http://www.w3.org/2001/XInclude"
@@ -11857,7 +12969,7 @@ Sample values include: 1] glued; 2] pinned; 3] sewn</a:documentation>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_krp-damageSpan-damageSpan-requires-spanTo-fr-constraint-rule-41">
+                  id="tei_krp-damageSpan-damageSpan-requires-spanTo-fr-constraint-rule-47">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:xi="http://www.w3.org/2001/XInclude"
@@ -11878,7 +12990,7 @@ Sample values include: 1] glued; 2] pinned; 3] sewn</a:documentation>
          <empty/>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_krp-delSpan-delSpan-requires-spanTo-constraint-rule-42">
+                  id="tei_krp-delSpan-delSpan-requires-spanTo-constraint-rule-48">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:xi="http://www.w3.org/2001/XInclude"
@@ -11888,7 +13000,7 @@ Sample values include: 1] glued; 2] pinned; 3] sewn</a:documentation>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_krp-delSpan-delSpan-requires-spanTo-fr-constraint-rule-43">
+                  id="tei_krp-delSpan-delSpan-requires-spanTo-fr-constraint-rule-49">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:xi="http://www.w3.org/2001/XInclude"
@@ -12004,6 +13116,7 @@ Sample values include: 1] header; 2] footer; 3] pageNum (page number); 4] lineNu
          <ref name="tei_krpatt.global.attribute.xmllang"/>
          <ref name="tei_krpatt.global.attribute.xmlbase"/>
          <ref name="tei_krpatt.global.attribute.xmlspace"/>
+         <ref name="tei_krpatt.global.analytic.attribute.ana"/>
          <ref name="tei_krpatt.global.change.attribute.change"/>
          <ref name="tei_krpatt.global.facs.attribute.facs"/>
          <ref name="tei_krpatt.global.linking.attribute.corresp"/>
@@ -12060,7 +13173,7 @@ Sample values include: 1] header; 2] footer; 3] pageNum (page number); 4] lineNu
          </oneOrMore>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_krp-subst-substContents1-constraint-rule-44">
+                  id="tei_krp-subst-substContents1-constraint-rule-50">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:xi="http://www.w3.org/2001/XInclude"
@@ -12505,6 +13618,10 @@ Sample values include: 1] homeoteleuton; 2] homeoarchy; 3] paleographicConfusion
                <ref name="tei_krpimprimatur"/>
                <ref name="tei_krpspeaker"/>
                <ref name="tei_krptitlePart"/>
+               <ref name="tei_krpepilogue"/>
+               <ref name="tei_krpperformance"/>
+               <ref name="tei_krpprologue"/>
+               <ref name="tei_krpset"/>
                <ref name="tei_krpmodel.gLike"/>
                <ref name="tei_krpmodel.phrase"/>
                <ref name="tei_krpmodel.inter"/>
@@ -12537,6 +13654,10 @@ Sample values include: 1] homeoteleuton; 2] homeoarchy; 3] paleographicConfusion
                <ref name="tei_krpepigraph"/>
                <ref name="tei_krpimprimatur"/>
                <ref name="tei_krptitlePart"/>
+               <ref name="tei_krpepilogue"/>
+               <ref name="tei_krpperformance"/>
+               <ref name="tei_krpprologue"/>
+               <ref name="tei_krpset"/>
                <ref name="tei_krpmodel.gLike"/>
                <ref name="tei_krpmodel.phrase"/>
                <ref name="tei_krpmodel.inter"/>
@@ -12569,7 +13690,7 @@ Sample values include: 1] homeoteleuton; 2] homeoarchy; 3] paleographicConfusion
          </group>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_krp-rdgGrp-only1lem-constraint-rule-45">
+                  id="tei_krp-rdgGrp-only1lem-constraint-rule-51">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       context="tei:rdgGrp">
@@ -12729,7 +13850,7 @@ Sample values include: 1] homeoteleuton; 2] homeoarchy; 3] paleographicConfusion
          </attribute>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_krp-variantEncoding-location-variantEncodingLocation-constraint-rule-46">
+                  id="tei_krp-variantEncoding-location-variantEncodingLocation-constraint-rule-52">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       context="tei:variantEncoding">
@@ -14273,7 +15394,7 @@ Sample values include: 1] e (e); 2] he (he); 3] she (she); 4] they (they)</a:doc
          </optional>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_krp-relation-ref-or-key-or-name-constraint-rule-47">
+                  id="tei_krp-relation-ref-or-key-or-name-constraint-rule-53">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:xi="http://www.w3.org/2001/XInclude"
@@ -14283,7 +15404,7 @@ Sample values include: 1] e (e); 2] he (he); 3] she (she); 4] they (they)</a:doc
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_krp-relation-active-mutual-constraint-rule-48">
+                  id="tei_krp-relation-active-mutual-constraint-rule-54">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:xi="http://www.w3.org/2001/XInclude"
@@ -14293,7 +15414,7 @@ Sample values include: 1] e (e); 2] he (he); 3] she (she); 4] they (they)</a:doc
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_krp-relation-active-passive-constraint-rule-49">
+                  id="tei_krp-relation-active-passive-constraint-rule-55">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:xi="http://www.w3.org/2001/XInclude"
@@ -15040,7 +16161,7 @@ Suggested values include: 1] label; 2] data</a:documentation>
          <empty/>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_krp-link-linkTargets3-constraint-rule-50">
+                  id="tei_krp-link-linkTargets3-constraint-rule-56">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:xi="http://www.w3.org/2001/XInclude"
@@ -15082,7 +16203,7 @@ Suggested values include: 1] label; 2] data</a:documentation>
          <ref name="tei_krpmacro.abContent"/>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_krp-ab-abstractModel-structure-ab-in-l-constraint-rule-51">
+                  id="tei_krp-ab-abstractModel-structure-ab-in-l-constraint-rule-57">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:xi="http://www.w3.org/2001/XInclude"
@@ -15263,7 +16384,7 @@ Suggested values include: 1] d (days); 2] h (hours); 3] min (minutes); 4] s (sec
          </zeroOrMore>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_krp-join-joinTargets3-constraint-rule-52">
+                  id="tei_krp-join-joinTargets3-constraint-rule-58">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:xi="http://www.w3.org/2001/XInclude"
@@ -15494,6 +16615,7 @@ Suggested values include: 1] d (days); 2] h (hours); 3] min (minutes); 4] s (sec
          <ref name="tei_krpatt.global.attribute.xmllang"/>
          <ref name="tei_krpatt.global.attribute.xmlbase"/>
          <ref name="tei_krpatt.global.attribute.xmlspace"/>
+         <ref name="tei_krpatt.global.analytic.attribute.ana"/>
          <ref name="tei_krpatt.global.change.attribute.change"/>
          <ref name="tei_krpatt.global.facs.attribute.facs"/>
          <ref name="tei_krpatt.global.linking.attribute.corresp"/>
@@ -15624,6 +16746,7 @@ Suggested values include: 1] d (days); 2] h (hours); 3] min (minutes); 4] s (sec
          <ref name="tei_krpatt.global.attribute.xmllang"/>
          <ref name="tei_krpatt.global.attribute.xmlbase"/>
          <ref name="tei_krpatt.global.attribute.xmlspace"/>
+         <ref name="tei_krpatt.global.analytic.attribute.ana"/>
          <ref name="tei_krpatt.global.change.attribute.change"/>
          <ref name="tei_krpatt.global.facs.attribute.facs"/>
          <ref name="tei_krpatt.global.linking.attribute.corresp"/>
