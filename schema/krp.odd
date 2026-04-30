@@ -111,6 +111,37 @@
             </constraint>
           </constraintSpec>
         </elementSpec>
+        
+        <elementSpec ident="rs" mode="change">
+          <attList>
+            <attDef ident="type" usage="req" mode="change">
+              <valList type="closed" mode="replace">
+                <valItem ident="person"/>
+                <valItem ident="place"/>
+                <valItem ident="work"/>
+                <valItem ident="organization"/>
+                <valItem ident="event"/>
+              </valList>
+              <remarks>
+                <p>Im KRP-Schema deklarieren @type-Attribute in &lt;rs&gt; die Kategorie referenzierter Entitäten.</p>
+              </remarks>
+            </attDef>
+            <attDef ident="ref" usage="req" mode="change">
+              <remarks>
+                <p>Im KRP-Schema verweisen @ref-Attribute in &lt;rs&gt; auf die @xml:id-Werte der referenzierten Entitäten.</p>
+              </remarks>
+            </attDef>
+          </attList>
+          <constraintSpec ident="rs-ref-pattern" scheme="schematron" mode="add">
+            <constraint>
+              <sch:rule context="tei:rs">
+                <sch:assert test="every $r in tokenize(@ref, '\s+') satisfies matches($r, concat('^#krp_', @type, '_id__\d+$'))"
+                  >In &lt;rs&gt;-Elementen entspricht jeder @ref-Wert dem Muster "#krp_{type}_id__{n}" und stimmt mit @type überein.</sch:assert>
+              </sch:rule>
+            </constraint>
+          </constraintSpec>
+
+        </elementSpec>
 
       </schemaSpec>
     </body>

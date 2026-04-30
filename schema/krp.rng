@@ -5,7 +5,7 @@
          xmlns:xlink="http://www.w3.org/1999/xlink"
          datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
          ns="http://www.tei-c.org/ns/1.0"><!--
-Schema generated from ODD source 2026-04-29T13:17:59Z. . 
+Schema generated from ODD source 2026-04-30T08:34:10Z. . 
 TEI Edition: P5 Version 4.11.0. Last updated on 18th February 2026, revision 358d2e48e 
 TEI Edition Location: https://www.tei-c.org/Vault/P5/4.11.0/ 
   
@@ -5881,10 +5881,46 @@ Sample values include: 1] rubbing; 2] mildew; 3] smoke</a:documentation>
       <element name="rs">
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(verweisende Zeichenkette) enthält eine allgemeine Benennung oder eine verweisende Zeichenkette. [14.2.1. Personal Names 3.6.1. Referring Strings]</a:documentation>
          <ref name="tei_krpmacro.phraseSeq"/>
+         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+                  xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                  id="tei_krp-rs-rs-ref-pattern-constraint-rule-17">
+            <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                      xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                      context="tei:rs">
+               <sch:assert test="every $r in tokenize(@ref, '\s+') satisfies matches($r, concat('^#krp_', @type, '_id__\d+$'))">In &lt;rs&gt;-Elementen entspricht jeder @ref-Wert dem Muster "#krp_{type}_id__{n}" und stimmt mit @type überein.</sch:assert>
+            </sch:rule>
+         </pattern>
          <ref name="tei_krpatt.global.attributes"/>
          <ref name="tei_krpatt.cmc.attributes"/>
-         <ref name="tei_krpatt.naming.attributes"/>
-         <ref name="tei_krpatt.typed.attributes"/>
+         <ref name="tei_krpatt.naming.attribute.role"/>
+         <ref name="tei_krpatt.naming.attribute.nymRef"/>
+         <ref name="tei_krpatt.canonical.attribute.key"/>
+         <ref name="tei_krpatt.typed.attribute.subtype"/>
+         <attribute name="ref">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(reference) provides an explicit means of locating a full definition or identity for the entity being named by means of one or more URIs.</a:documentation>
+            <list>
+               <oneOrMore>
+                  <data type="anyURI">
+                     <param name="pattern">\S+</param>
+                  </data>
+               </oneOrMore>
+            </list>
+         </attribute>
+         <attribute name="type">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">characterizes the element in some sense, using any convenient classification scheme or typology.</a:documentation>
+            <choice>
+               <value>person</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>place</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>work</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>organization</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>event</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+            </choice>
+         </attribute>
          <empty/>
       </element>
    </define>
@@ -6158,7 +6194,7 @@ Sample values include: 1] suspension (suspension); 2] contraction (contraction);
          <empty/>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_krp-ptr-ptrAtts-constraint-rule-17">
+                  id="tei_krp-ptr-ptrAtts-constraint-rule-18">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       context="tei:ptr">
@@ -6181,7 +6217,7 @@ Sample values include: 1] suspension (suspension); 2] contraction (contraction);
          <ref name="tei_krpmacro.paraContent"/>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_krp-ref-refAtts-constraint-rule-18">
+                  id="tei_krp-ref-refAtts-constraint-rule-19">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       context="tei:ref">
@@ -6246,7 +6282,7 @@ Sample values include: 1] suspension (suspension); 2] contraction (contraction);
          </group>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_krp-list-gloss-list-must-have-labels-constraint-rule-19">
+                  id="tei_krp-list-gloss-list-must-have-labels-constraint-rule-20">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       context="tei:list[@type='gloss']">
@@ -6955,7 +6991,7 @@ Sample values include: 1] main; 2] sub (subordinate); 3] alt (alternate); 4] sho
          </optional>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_krp-relatedItem-targetorcontent1-constraint-rule-20">
+                  id="tei_krp-relatedItem-targetorcontent1-constraint-rule-21">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       context="tei:relatedItem">
@@ -6990,7 +7026,7 @@ Sample values include: 1] main; 2] sub (subordinate); 3] alt (alternate); 4] sho
          </zeroOrMore>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_krp-l-abstractModel-structure-l-in-l-constraint-rule-21">
+                  id="tei_krp-l-abstractModel-structure-l-in-l-constraint-rule-22">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       context="tei:l">
@@ -7039,7 +7075,7 @@ Sample values include: 1] main; 2] sub (subordinate); 3] alt (alternate); 4] sho
          </group>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_krp-lg-atleast1oflggapl-constraint-rule-22">
+                  id="tei_krp-lg-atleast1oflggapl-constraint-rule-23">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       context="tei:lg">
@@ -7048,7 +7084,7 @@ Sample values include: 1] main; 2] sub (subordinate); 3] alt (alternate); 4] sho
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_krp-lg-abstractModel-structure-lg-in-l-constraint-rule-23">
+                  id="tei_krp-lg-abstractModel-structure-lg-in-l-constraint-rule-24">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       context="tei:lg">
@@ -7734,7 +7770,7 @@ Suggested values include: 1] ISBN; 2] ISSN; 3] DOI; 4] URI; 5] VIAF; 6] ESTC; 7]
          </zeroOrMore>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_krp-quotation-quotationContents-constraint-rule-24">
+                  id="tei_krp-quotation-quotationContents-constraint-rule-25">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:xi="http://www.w3.org/2001/XInclude"
@@ -8019,7 +8055,7 @@ Sample values include: 1] first-line; 2] first-letter; 3] before; 4] after</a:do
          </attribute>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_krp-citeStructure-match-citestructure-outer-match-constraint-rule-25">
+                  id="tei_krp-citeStructure-match-citestructure-outer-match-constraint-rule-26">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:xi="http://www.w3.org/2001/XInclude"
@@ -8029,7 +8065,7 @@ Sample values include: 1] first-line; 2] first-letter; 3] before; 4] after</a:do
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_krp-citeStructure-match-citestructure-inner-match-constraint-rule-26">
+                  id="tei_krp-citeStructure-match-citestructure-inner-match-constraint-rule-27">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:xi="http://www.w3.org/2001/XInclude"
@@ -8649,7 +8685,7 @@ Suggested values include: 1] sent; 2] received; 3] transmitted; 4] redirected; 5
          <ref name="tei_krpmacro.specialPara"/>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_krp-change-change-who-resolves-constraint-rule-27">
+                  id="tei_krp-change-change-who-resolves-constraint-rule-28">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:xi="http://www.w3.org/2001/XInclude"
@@ -9052,17 +9088,17 @@ Suggested values include: 1] sent; 2] received; 3] transmitted; 4] redirected; 5
          </group>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_krp-div-body-div-constraint-rule-28">
+                  id="tei_krp-div-body-div-constraint-rule-29">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       context="tei:TEI/tei:text/tei:body/tei:div">
-               <sch:assert test="count(tei:head) = 1 and tei:head[@type='dokument']">Das äußerste &lt;div&gt;-Element enthält genau einen &lt;head&gt;; dieser hat @type="dokument".</sch:assert>
+               <sch:assert test="count(tei:head) = 1 and tei:head[@type='dokument']">Das äußerste &lt;div&gt;-Element enthält genau einen &lt;head&gt;; dieser hat den @type-Wert "dokument".</sch:assert>
                <sch:assert test="                               count(tei:div) = 5 and                               tei:div[1]/@type = 'dokumentkopf' and                               tei:div[2]/@type = 'komponenten' and                               tei:div[3]/@type = 'beilagen' and                               tei:div[4]/@type = 'protokoll' and                               tei:div[5]/@type = 'stenogramm'">Das äußerste &lt;div&gt; enthält genau fünf &lt;div&gt;-Elemente mit den @type-Werten (in dieser Reihenfolge) "dokumentkopf", "komponenten", "beilagen", "protokoll", "stenogramm".</sch:assert>
             </sch:rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_krp-div-abstractModel-structure-div-in-l-constraint-rule-29">
+                  id="tei_krp-div-abstractModel-structure-div-in-l-constraint-rule-30">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       context="tei:l//tei:div">
@@ -9073,7 +9109,7 @@ Suggested values include: 1] sent; 2] received; 3] transmitted; 4] redirected; 5
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_krp-div-abstractModel-structure-div-in-ab-or-p-constraint-rule-30">
+                  id="tei_krp-div-abstractModel-structure-div-in-ab-or-p-constraint-rule-31">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       context="tei:div">
@@ -10734,7 +10770,7 @@ Suggested values include: 1] light; 2] sound; 3] prop; 4] block</a:documentation
          <empty/>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_krp-shift-shiftNew-constraint-rule-31">
+                  id="tei_krp-shift-shiftNew-constraint-rule-32">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       context="tei:shift">
@@ -10909,7 +10945,7 @@ Suggested values include: 1] tempo; 2] loud; 3] pitch; 4] tension; 5] rhythm; 6]
          <ref name="tei_krpmacro.phraseSeq"/>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_krp-s-noNestedS-constraint-rule-32">
+                  id="tei_krp-s-noNestedS-constraint-rule-33">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       context="tei:s">
@@ -11069,7 +11105,7 @@ Suggested values include: 1] tempo; 2] loud; 3] pitch; 4] tension; 5] rhythm; 6]
          <ref name="tei_krpmacro.phraseSeq.limited"/>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_krp-span-target-from-constraint-rule-33">
+                  id="tei_krp-span-target-from-constraint-rule-34">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       context="tei:span">
@@ -11080,7 +11116,7 @@ Suggested values include: 1] tempo; 2] loud; 3] pitch; 4] tension; 5] rhythm; 6]
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_krp-span-targetto-constraint-rule-34">
+                  id="tei_krp-span-targetto-constraint-rule-35">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       context="tei:span">
@@ -11091,7 +11127,7 @@ Suggested values include: 1] tempo; 2] loud; 3] pitch; 4] tension; 5] rhythm; 6]
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_krp-span-tonotfrom-constraint-rule-35">
+                  id="tei_krp-span-tonotfrom-constraint-rule-36">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       context="tei:span">
@@ -11102,7 +11138,7 @@ Suggested values include: 1] tempo; 2] loud; 3] pitch; 4] tension; 5] rhythm; 6]
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_krp-span-tofrom-constraint-rule-36">
+                  id="tei_krp-span-tofrom-constraint-rule-37">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       context="tei:span">
@@ -11248,7 +11284,7 @@ Suggested values include: 1] tempo; 2] loud; 3] pitch; 4] tension; 5] rhythm; 6]
          </group>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_krp-msDesc-one_ms_singleton_max-constraint-rule-37">
+                  id="tei_krp-msDesc-one_ms_singleton_max-constraint-rule-38">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:xi="http://www.w3.org/2001/XInclude"
@@ -11273,7 +11309,7 @@ Suggested values include: 1] tempo; 2] loud; 3] pitch; 4] tension; 5] rhythm; 6]
          <ref name="tei_krpmacro.phraseSeq"/>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_krp-catchwords-catchword_in_msDesc-constraint-rule-38">
+                  id="tei_krp-catchwords-catchword_in_msDesc-constraint-rule-39">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:xi="http://www.w3.org/2001/XInclude"
@@ -11296,7 +11332,7 @@ Suggested values include: 1] tempo; 2] loud; 3] pitch; 4] tension; 5] rhythm; 6]
          </zeroOrMore>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_krp-dimensions-duplicateDim-constraint-rule-39">
+                  id="tei_krp-dimensions-duplicateDim-constraint-rule-40">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:xi="http://www.w3.org/2001/XInclude"
@@ -11512,7 +11548,7 @@ Sample values include: 1] binding; 2] endband; 3] slipcase; 4] support; 5] tie</
          <ref name="tei_krpmacro.phraseSeq"/>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_krp-secFol-secFol_in_msDesc-constraint-rule-40">
+                  id="tei_krp-secFol-secFol_in_msDesc-constraint-rule-41">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:xi="http://www.w3.org/2001/XInclude"
@@ -11530,7 +11566,7 @@ Sample values include: 1] binding; 2] endband; 3] slipcase; 4] support; 5] tie</
          <ref name="tei_krpmacro.specialPara"/>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_krp-signatures-signatures_in_msDesc-constraint-rule-41">
+                  id="tei_krp-signatures-signatures_in_msDesc-constraint-rule-42">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:xi="http://www.w3.org/2001/XInclude"
@@ -11609,7 +11645,7 @@ Sample values include: 1] binding; 2] endband; 3] slipcase; 4] support; 5] tie</
          </group>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_krp-msIdentifier-msId_minimal-constraint-rule-42">
+                  id="tei_krp-msIdentifier-msId_minimal-constraint-rule-43">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:xi="http://www.w3.org/2001/XInclude"
@@ -12734,7 +12770,7 @@ Suggested values include: 1] paper; 2] parch (parchment); 3] mixed</a:documentat
          </group>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_krp-facsimile-no_facsimile_text_nodes-constraint-rule-43">
+                  id="tei_krp-facsimile-no_facsimile_text_nodes-constraint-rule-44">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:xi="http://www.w3.org/2001/XInclude"
@@ -12874,7 +12910,7 @@ Sample values include: 1] glued; 2] pinned; 3] sewn</a:documentation>
          <empty/>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_krp-path-pathmustnotbeclosed-constraint-rule-44">
+                  id="tei_krp-path-pathmustnotbeclosed-constraint-rule-45">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:xi="http://www.w3.org/2001/XInclude"
@@ -12927,7 +12963,7 @@ Sample values include: 1] glued; 2] pinned; 3] sewn</a:documentation>
          <empty/>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_krp-addSpan-addSpan-requires-spanTo-constraint-rule-45">
+                  id="tei_krp-addSpan-addSpan-requires-spanTo-constraint-rule-46">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:xi="http://www.w3.org/2001/XInclude"
@@ -12937,7 +12973,7 @@ Sample values include: 1] glued; 2] pinned; 3] sewn</a:documentation>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_krp-addSpan-addSpan-requires-spanTo-fr-constraint-rule-46">
+                  id="tei_krp-addSpan-addSpan-requires-spanTo-fr-constraint-rule-47">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:xi="http://www.w3.org/2001/XInclude"
@@ -12969,7 +13005,7 @@ Sample values include: 1] glued; 2] pinned; 3] sewn</a:documentation>
          <empty/>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_krp-damageSpan-damageSpan-requires-spanTo-constraint-rule-47">
+                  id="tei_krp-damageSpan-damageSpan-requires-spanTo-constraint-rule-48">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:xi="http://www.w3.org/2001/XInclude"
@@ -12979,7 +13015,7 @@ Sample values include: 1] glued; 2] pinned; 3] sewn</a:documentation>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_krp-damageSpan-damageSpan-requires-spanTo-fr-constraint-rule-48">
+                  id="tei_krp-damageSpan-damageSpan-requires-spanTo-fr-constraint-rule-49">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:xi="http://www.w3.org/2001/XInclude"
@@ -13000,7 +13036,7 @@ Sample values include: 1] glued; 2] pinned; 3] sewn</a:documentation>
          <empty/>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_krp-delSpan-delSpan-requires-spanTo-constraint-rule-49">
+                  id="tei_krp-delSpan-delSpan-requires-spanTo-constraint-rule-50">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:xi="http://www.w3.org/2001/XInclude"
@@ -13010,7 +13046,7 @@ Sample values include: 1] glued; 2] pinned; 3] sewn</a:documentation>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_krp-delSpan-delSpan-requires-spanTo-fr-constraint-rule-50">
+                  id="tei_krp-delSpan-delSpan-requires-spanTo-fr-constraint-rule-51">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:xi="http://www.w3.org/2001/XInclude"
@@ -13183,7 +13219,7 @@ Sample values include: 1] header; 2] footer; 3] pageNum (page number); 4] lineNu
          </oneOrMore>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_krp-subst-substContents1-constraint-rule-51">
+                  id="tei_krp-subst-substContents1-constraint-rule-52">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:xi="http://www.w3.org/2001/XInclude"
@@ -13700,7 +13736,7 @@ Sample values include: 1] homeoteleuton; 2] homeoarchy; 3] paleographicConfusion
          </group>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_krp-rdgGrp-only1lem-constraint-rule-52">
+                  id="tei_krp-rdgGrp-only1lem-constraint-rule-53">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       context="tei:rdgGrp">
@@ -13860,7 +13896,7 @@ Sample values include: 1] homeoteleuton; 2] homeoarchy; 3] paleographicConfusion
          </attribute>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_krp-variantEncoding-location-variantEncodingLocation-constraint-rule-53">
+                  id="tei_krp-variantEncoding-location-variantEncodingLocation-constraint-rule-54">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       context="tei:variantEncoding">
@@ -15404,7 +15440,7 @@ Sample values include: 1] e (e); 2] he (he); 3] she (she); 4] they (they)</a:doc
          </optional>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_krp-relation-ref-or-key-or-name-constraint-rule-54">
+                  id="tei_krp-relation-ref-or-key-or-name-constraint-rule-55">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:xi="http://www.w3.org/2001/XInclude"
@@ -15414,7 +15450,7 @@ Sample values include: 1] e (e); 2] he (he); 3] she (she); 4] they (they)</a:doc
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_krp-relation-active-mutual-constraint-rule-55">
+                  id="tei_krp-relation-active-mutual-constraint-rule-56">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:xi="http://www.w3.org/2001/XInclude"
@@ -15424,7 +15460,7 @@ Sample values include: 1] e (e); 2] he (he); 3] she (she); 4] they (they)</a:doc
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_krp-relation-active-passive-constraint-rule-56">
+                  id="tei_krp-relation-active-passive-constraint-rule-57">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:xi="http://www.w3.org/2001/XInclude"
@@ -16171,7 +16207,7 @@ Suggested values include: 1] label; 2] data</a:documentation>
          <empty/>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_krp-link-linkTargets3-constraint-rule-57">
+                  id="tei_krp-link-linkTargets3-constraint-rule-58">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:xi="http://www.w3.org/2001/XInclude"
@@ -16213,7 +16249,7 @@ Suggested values include: 1] label; 2] data</a:documentation>
          <ref name="tei_krpmacro.abContent"/>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_krp-ab-abstractModel-structure-ab-in-l-constraint-rule-58">
+                  id="tei_krp-ab-abstractModel-structure-ab-in-l-constraint-rule-59">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:xi="http://www.w3.org/2001/XInclude"
@@ -16394,7 +16430,7 @@ Suggested values include: 1] d (days); 2] h (hours); 3] min (minutes); 4] s (sec
          </zeroOrMore>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_krp-join-joinTargets3-constraint-rule-59">
+                  id="tei_krp-join-joinTargets3-constraint-rule-60">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:xi="http://www.w3.org/2001/XInclude"
