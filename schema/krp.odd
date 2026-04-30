@@ -65,6 +65,13 @@
         <!-- element specification -->
         
         <elementSpec ident="change" mode="change">
+          <constraintSpec ident="change-who-resolves" scheme="schematron" mode="add">
+            <constraint>
+              <sch:rule context="tei:change">
+                <sch:assert test="every $w in tokenize(@who, '\s+') satisfies //tei:persName[@xml:id = substring-after($w, '#')]">Jeder Wert von @who in &lt;change&gt; verweist auf einen durch @xml:id spezifizierten &lt;persName&gt; im Dokument.</sch:assert>
+              </sch:rule>
+            </constraint>
+          </constraintSpec>
           <attList>
             <attDef ident="who" usage="req" mode="change">
               <!-- <datatype minOccurs="1" maxOccurs="unbounded">
@@ -90,13 +97,6 @@
               </remarks>
             </attDef>
           </attList>
-          <constraintSpec ident="change-who-resolves" scheme="schematron" mode="add">
-            <constraint>
-              <sch:rule context="tei:change">
-                <sch:assert test="every $w in tokenize(@who, '\s+') satisfies //tei:persName[@xml:id = substring-after($w, '#')]">Jeder Wert von @who in &lt;change&gt; verweist auf einen durch @xml:id spezifizierten &lt;persName&gt; im Dokument.</sch:assert>
-              </sch:rule>
-            </constraint>
-          </constraintSpec>
         </elementSpec>
         
         <elementSpec ident="div" mode="change">
@@ -118,6 +118,14 @@
         </elementSpec>
         
         <elementSpec ident="rs" mode="change">
+          <constraintSpec ident="rs-ref-pattern" scheme="schematron" mode="add">
+            <constraint>
+              <sch:rule context="tei:rs">
+                <sch:assert test="every $r in tokenize(@ref, '\s+') satisfies matches($r, concat('^#krp_', @type, '_id__\d+$'))"
+                  >In &lt;rs&gt;-Elementen entspricht jeder @ref-Wert dem Muster "#krp_{type}_id__{n}" und stimmt mit @type überein.</sch:assert>
+              </sch:rule>
+            </constraint>
+          </constraintSpec>
           <attList>
             <attDef ident="type" usage="req" mode="change">
               <valList type="closed" mode="replace">
@@ -137,14 +145,6 @@
               </remarks>
             </attDef>
           </attList>
-          <constraintSpec ident="rs-ref-pattern" scheme="schematron" mode="add">
-            <constraint>
-              <sch:rule context="tei:rs">
-                <sch:assert test="every $r in tokenize(@ref, '\s+') satisfies matches($r, concat('^#krp_', @type, '_id__\d+$'))"
-                  >In &lt;rs&gt;-Elementen entspricht jeder @ref-Wert dem Muster "#krp_{type}_id__{n}" und stimmt mit @type überein.</sch:assert>
-              </sch:rule>
-            </constraint>
-          </constraintSpec>
 
         </elementSpec>
 
