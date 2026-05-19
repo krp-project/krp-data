@@ -64,6 +64,8 @@
         
         <!-- element specification -->
         
+        <!-- TEI header -->
+        
         <elementSpec ident="change" mode="change">
           <constraintSpec ident="change-who-resolves" scheme="schematron" mode="add">
             <constraint>
@@ -99,6 +101,10 @@
           </attList>
         </elementSpec>
         
+        <!-- TEI body -->
+        
+        <!-- high-level div structure -->
+        
         <elementSpec ident="div" mode="change">
           <constraintSpec ident="body-div" scheme="schematron" mode="add">
             <constraint>
@@ -116,6 +122,8 @@
             </constraint>
           </constraintSpec>
         </elementSpec>
+        
+        <!-- references -->
         
         <elementSpec ident="rs" mode="change">
           <constraintSpec ident="rs-ref-pattern" scheme="schematron" mode="add">
@@ -145,7 +153,17 @@
               </remarks>
             </attDef>
           </attList>
+        </elementSpec>
+        
+        <!-- tables -->
 
+        <elementSpec ident="table" mode="change">
+          <content>
+            <elementRef key="row" minOccurs="1" maxOccurs="unbounded"/>
+          </content>
+          <remarks>
+            <p>Im KRP-Schema enthalten &lt;table&gt;-Elemente ausschließlich &lt;row&gt;-Elemente.</p>
+          </remarks>
         </elementSpec>
 
       </schemaSpec>
