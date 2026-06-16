@@ -111,13 +111,15 @@
               <sch:rule context="tei:TEI/tei:text/tei:body/tei:div">
                 <sch:assert test="count(tei:head) = 1 and tei:head[@type='dokument']">Das äußerste &lt;div&gt;-Element enthält genau einen &lt;head&gt;; dieser hat den @type-Wert "dokument".</sch:assert>
                 <sch:assert test="
-                              count(tei:div) = 5 and
+                              (count(tei:div) = 5 or (count(tei:div) = 6 and tei:div[6]/@type = 'anhänge')) and
                               tei:div[1]/@type = 'dokumentkopf' and
                               tei:div[2]/@type = 'komponenten' and
                               tei:div[3]/@type = 'beilagen' and
                               tei:div[4]/@type = 'protokoll' and
-                              tei:div[5]/@type = 'stenogramm'"
-                  >Das äußerste &lt;div&gt; enthält genau fünf &lt;div&gt;-Elemente mit den @type-Werten (in dieser Reihenfolge) "dokumentkopf", "komponenten", "beilagen", "protokoll", "stenogramm".</sch:assert>
+                              tei:div[5]/@type = 'stenogramme'">
+                  Das äußerste &lt;div&gt; enthält genau fünf &lt;div&gt;-Elemente mit den @type-Werten (in dieser Reihenfolge) "dokumentkopf", "komponenten", "beilagen", "protokoll", "stenogramm". 
+                  Optional kann es darüber hinaus ein &lt;div type="anhänge"&gt; enthalten.
+                </sch:assert>
               </sch:rule>
             </constraint>
           </constraintSpec>
@@ -150,6 +152,25 @@
             <attDef ident="ref" usage="req" mode="change">
               <remarks>
                 <p>Im KRP-Schema verweisen @ref-Attribute in &lt;rs&gt; auf die @xml:id-Werte der referenzierten Entitäten.</p>
+              </remarks>
+            </attDef>
+          </attList>
+        </elementSpec>
+        
+        <!-- highlighting -->
+        
+        <elementSpec ident="hi" mode="change">
+          <attList>
+            <attDef ident="rend" usage="req" mode="change">
+              <valList type="closed" mode="replace">
+                <valItem ident="#b"/>
+                <valItem ident="#s"/>
+                <valItem ident="#u"/>
+                <valItem ident="#letterspaced"/>
+                <valItem ident="#i"/>
+              </valList>
+              <remarks>
+                <p>Im KRP-Schema verweisen die Werte der @rend-Attribute in &lt;hi&gt; auf die XML-IDs der &lt;rendition&gt;-Elemente im TEI-Header.</p>
               </remarks>
             </attDef>
           </attList>
