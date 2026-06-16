@@ -1,0 +1,642 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href='http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:acdh="https://vocabs.acdh.oeaw.ac.at/schema#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xml:lang="de">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="a" type="main" n="0169">Kabinettsprotokoll Nr. 169 vom 9. April 1920</title>
+            <title level="m" type="main" n="01">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <title level="m" type="sub" n="">Renner III (17. Oktober 1919 – 7. Juli 1920)</title>
+            <meeting>
+               <placeName key="https://d-nb.info/gnd/4066009-6">Wien</placeName>
+               <orgName key="https://d-nb.info/gnd/5162749-8">Kabinettsrat</orgName>
+               <date when-iso="1920-04-09"/>
+            </meeting>
+            <editor>
+               <persName key="https://d-nb.info/gnd/122481836"
+                         role="hasCreator"
+                         xml:id="hwohnout">
+                  <forename>Helmut</forename>
+                  <surname>Wohnout</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</affiliation>
+               <idno type="ORCID">0000-0002-3864-9839</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/120789825"
+                         role="hasCreator"
+                         xml:id="tolechowski">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0003-3291-6876</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/131679384"
+                         role="hasCreator"
+                         xml:id="rlein">
+                  <forename>Richard</forename>
+                  <surname>Lein</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0002-7502-0503</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="aholzer">
+                  <forename>Anna</forename>
+                  <surname>Holzer</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0005-3560-3500</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="dsoelkner">
+                  <forename>Dominik</forename>
+                  <surname>Sölkner</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-9895-7212</idno>
+            </editor>
+            <editor>
+               <persName role="hasContributor" xml:id="ischotzko">
+                  <forename>Ina</forename>
+                  <surname>Schotzko</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-5210-3713</idno>
+            </editor>
+            <funder n="1">
+               <orgName key="https://d-nb.info/gnd/2054142-9" role="hasFunder">Österreichischer Wissenschaftsfonds FWF</orgName>
+               <idno type="project">PAT1495024</idno>
+               <title type="project">Die Protokolle des österreichischen Kabinettsrates 1919–1920</title>
+            </funder>
+            <respStmt>
+               <resp>Projektverantwortung</resp>
+               <orgName key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Projektleitung</resp>
+               <persName key="https://d-nb.info/gnd/120789825" role="hasPrincipalInvestigator">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+                  <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+                  <idno type="ORCID">0000-0003-3291-6876</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Nationaler Forschungspartner</resp>
+               <orgName key="https://d-nb.info/gnd/1123037736" role="hasEnabler">Austrian Centre for Digital Humanities</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Digitalisierung der gedruckten Quellen</resp>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>TEI-Datenmodellierung</resp>
+               <persName role="hasContributor" xml:id="tfruehwirth">
+                  <forename>Timo</forename>
+                  <surname>Frühwirth</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-3997-5193</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technische Supervision</resp>
+               <persName key="https://d-nb.info/gnd/1043833846"
+                         role="hasContributor"
+                         xml:id="pandorfer">
+                  <forename>Peter</forename>
+                  <surname>Andorfer</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-9575-9372</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technisches Consulting und Vorbereitung der Druckausgabe</resp>
+               <persName key="https://d-nb.info/gnd/13281899X"
+                         role="hasContributor"
+                         xml:id="skurz">
+                  <forename>Stephan</forename>
+                  <surname>Kurz</surname>
+                  <affiliation key="https://d-nb.info/gnd/1202798799">Institut für die Erforschung der Habsburgermonarchie und des Balkanraumes</affiliation>
+                  <idno type="ORCID">0000-0003-2546-2570</idno>
+               </persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher key="https://d-nb.info/gnd/1001454-8">Österreichische Akademie der Wissenschaften</publisher>
+            <date when="2028"/>
+            <availability status="free">
+               <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">Lizenziert unter CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/deed.de)</licence>
+            </availability>
+            <idno type="ISBN_Print"/>
+            <idno type="ISBN_Part_epub"/>
+            <idno type="ISBN_Digital"/>
+            <idno type="DOI"/>
+            <idno type="DOI_zenodo"/>
+            <idno type="ebook_ID"/>
+         </publicationStmt>
+         <seriesStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="m" type="main">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <respStmt>
+               <resp>Bearbeitung und Herausgeberschaft</resp>
+               <orgName key="https://d-nb.info/gnd/2024703-5">Universität Wien</orgName>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+         </seriesStmt>
+         <notesStmt>
+            <note>Diese TEI-XML-Datei ist Grundlage für eine Druckausgabe der Edition.</note>
+            <relatedItem>
+               <biblStruct>
+                  <monogr>
+                     <imprint>
+                        <pubPlace key="https://d-nb.info/gnd/4066009-6">Wien</pubPlace>
+                        <publisher key="https://d-nb.info/gnd/2068748-5">Verlag der Österreichischen Akademie der Wissenschaften</publisher>
+                        <date when="2029"/>
+                     </imprint>
+                     <extent/>
+                  </monogr>
+                  <note>
+                     <idno/>
+                     <ptr/>
+                  </note>
+                  <citedRange/>
+               </biblStruct>
+            </relatedItem>
+         </notesStmt>
+         <sourceDesc>
+            <bibl>Quellbestand: AT-OeStA/AdR MRang MR 1Rep KRP Kabinettsratsprotokolle, 1918-1920 (Teilbestand)<ref target="https://www.archivinformationssystem.at/detail.aspx?id=5465">https://www.archivinformationssystem.at/detail.aspx?id=5465</ref>
+            </bibl>
+            <msDesc>
+               <msIdentifier>
+                  <institution key="https://d-nb.info/gnd/37748-X" role="hasOwner">AT-OeStA Österreichisches Staatsarchiv (Archiv (ÖStA))</institution>
+                  <repository key="https://d-nb.info/gnd/1601181-8">AT-OeStA/AdR Archiv der Republik, 1918- (Abteilung)</repository>
+                  <collection>AT-OeStA/AdR MRang MR 1Rep Ministerrat 1. Republik, 1918 - 1938 (Bestand)</collection>
+                  <idno>AT-OeStA_AdR-MRang-MR-1.-Rep.-KRP-169</idno>
+               </msIdentifier>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <abstract>
+            <p>
+          <!--to be generated-->
+        </p>
+         </abstract>
+      </profileDesc>
+      <encodingDesc>
+         <styleDefDecl scheme="css"/>
+         <tagsDecl>
+            <rendition xml:id="b" scheme="css">font-weight:bold;</rendition>
+            <rendition xml:id="su" scheme="css">vertical-align:super;font-size:.7em;</rendition>
+            <rendition xml:id="s" scheme="css">text-decoration:line-through;</rendition>
+            <rendition xml:id="u" scheme="css">text-decoration:underline;</rendition>
+            <rendition xml:id="ow" scheme="css">text-decoration:line-through;text-decoration-style:double;</rendition>
+            <rendition xml:id="r" scheme="css">display:block;text-align:right;</rendition>
+            <rendition xml:id="letterspaced" scheme="css">letter-spacing:0.15em;</rendition>
+            <rendition xml:id="i" scheme="css">font-style:italic;</rendition>
+         </tagsDecl>
+         <editorialDecl>
+            <hyphenation>
+               <p>
+            <!--to be added-->
+          </p>
+            </hyphenation>
+            <correction>
+               <p>
+            <!--to be added-->
+          </p>
+            </correction>
+            <normalization>
+               <p>
+            <!--to be added-->
+          </p>
+            </normalization>
+            <punctuation>
+               <p>
+            <!--to be added-->
+          </p>
+            </punctuation>
+            <stdVals>
+               <p>
+            <!--to be added-->
+          </p>
+            </stdVals>
+            <p>
+          <!--to be added-->
+        </p>
+         </editorialDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#tfruehwirth" when-iso="2026-06-16">TEIGarage output upconverted with upconvert.xsl</change>
+         <change who="#tfruehwirth" when-iso="2026-06-16">TEI header populated with generate_tei_templates.py</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div xml:id="doc-krp-0169.xml">
+            <head type="dokument">
+               <title type="num">169.<note type="footnote" n="1" target="#fn_krp-0169_1">Das Protokoll trägt den Vermerk <hi rend="#i">Vertraulich!</hi>
+                  </note>
+               </title>
+               <title type="desc">[Freitag] 1920-04-09</title>
+            </head>
+            <pb facs="krp-0169_r-0001"/>
+            <pb facs="krp-0169_r-0002"/>
+            <pb facs="krp-0169_r-0003"/>
+            <div type="dokumentkopf">
+               <div type="vorsitz">
+                  <head>Vorsitz:</head>
+                  <p>Fink</p>
+               </div>
+               <div type="anwesend">
+                  <head>Anwesend:</head>
+                  <p>Deutsch, Eisler, Eldersch, Glöckel, Hanusch, Mayr, Miklas, Ramek, Reisch, Resch, Stöckler, Tandler, Zerdik, Waiss</p>
+               </div>
+               <div type="zugezogen">
+                  <head>Zugezogen:</head>
+                  <p>Beck, Fischer, Zedtwitz</p>
+               </div>
+               <div type="dauer">
+                  <head>Dauer:</head>
+                  <p>15.00–17.00 Uhr</p>
+               </div>
+            </div>
+            <div type="komponenten">
+               <p>Reinschrift, Beilagen, streng vertraulicher Anhang, Konzept, stenographische Mitschrift, Entwurf der Tagesordnung, diverse Zusätze</p>
+            </div>
+            <div type="beilagen">
+               <head>Beilagen:</head>
+               <list>
+                  <item>
+                     <ref target="#krp-0169_top02">Zu TOP 2</ref>: <ref target="#krp-0169_b01">zu Zl. 61/18 St.K./1920 über das Gesetz zur Aberkennung der Staatsbürgerschaft von Personen, die in fremden Armeen Dienst versehen</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0169_top05">Zu TOP 5</ref>: <ref target="#krp-0169_b02">Gesetz zur Aufhebung der Fideikommisse mit Begründung</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0169_top05">Zu TOP 5</ref>: <ref target="#krp-0169_b03">Information für den Staatssekretär für Land- und Forstwirtschaft betreffend die Aufhebung der Fideikommisse</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0169_top06">Zu TOP 6</ref>: <ref target="#krp-0169_b04">Entwurf des Krankenversicherungsgesetzes mit Begründung</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0169_top08">Zu TOP 8</ref>: <ref target="#krp-0169_b05">Vortrag und Entwurf der Vollzugsanweisung über die Durchführung des Pensionistengesetzes</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0169_top08">Zu TOP 8</ref>: <ref target="#krp-0169_b06">Vollzugsanweisung zur Hinterbliebenenversorgungsnovelle</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0169_top09">Zu TOP 9</ref>: <ref target="#krp-0169_b07">Vorlage des Staatsamt für Land- und Forstwirtschaft zu Zl. 7290/1920 über mehrere Gesetzesbeschlüsse des Niederösterreichischen Landtages zur Regulierung mehrerer Wasserläufe</ref>
+                  </item>
+               </list>
+            </div>
+            <div type="protokoll">
+               <div type="top" xml:id="krp-0169_top01">
+                  <head>
+                     <label>
+                        <num n="1">1.</num>
+                        <seg>Streik der Gerichtskanzleibeamten.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Ramek</hi> berichtet über den Fortgang des Streiks der Gerichtskanzleibeamten. In der Situation sei insoferne eine Änderung eingetreten, als sich nunmehr der Zentralverband der österreichischen Staatsbeamtenvereine der Angelegenheit angenommen und die Forderung gestellt habe, dass seitens des Staatsamtes für Justiz mit den Angestellten in Verhandlungen getreten werde. Der sprechende Staatssekretär habe seine Stellungnahme zu diesem Petit bis zur Entscheidung des Kabinettsrates vorbehalten. Dieser Entscheidung sei nun – offenbar infolge eines Missverständnisses – dadurch etwas präjudiziert worden, dass inzwischen über dringende Bitte des Präsidenten der Richtervereinigung von einem leitenden Funktionär des Justizamtes unverbindliche Besprechungen mit einer Deputation der Streikenden geführt wurden, sodass unter diesen Umständen wohl nichts anderes erübrigen dürfte, als die formellen Verhandlungen mit den Angestellten aufzunehmen. Dazu komme noch, dass bei der gegenwärtigen Sachlage ein Übergreifen des Streiks auf andere Ressorts immerhin im Bereich der Möglichkeit liege.</p>
+                  <p>
+                     <pb facs="krp-0169_r-0004"/>Nach einer längeren Debatte, an welcher sich die Staatssekretäre <hi rend="#letterspaced">Hanusch</hi>, <hi rend="#letterspaced">Eldersch</hi> und Unterstaatssekretär <hi rend="#letterspaced">Miklas</hi> beteiligten, ermächtigt der Kabinettsrat den Staatssekretär für Justiz, in dem ihm geeignet erscheinenden Zeitpunkt unter Bezugnahme auf die Fürbitte der Richtervereinigung in Verhandlungen mit den streikenden Angestellten einzutreten. Bei diesen Verhandlungen wird jedoch daran festzuhalten sein, dass für andere Ressorts irgendwie präjudizierliche und die Staatsfinanzen im größeren Umfang belastende Zugeständnisse nicht gemacht werden dürfen</p>
+               </div>
+               <div type="top" xml:id="krp-0169_top02">
+                  <head>
+                     <label>
+                        <num n="2">2.</num>
+                        <seg>Gesetzentwurf über die Aberkennung der Staatsbürgerschaft von Personen, die in der Wehrmacht eines fremden Staates militärische Dienste genommen haben, im Hinblick auf Art. 158 1. Abs. des Staatsvertrages von St. Germain.</seg>
+                     </label>
+                  </head>
+                  <p>Vizekanzler <hi rend="#letterspaced">Fink</hi> unterbreitet dem Kabinettsrat den Entwurf eines Gesetzes über die Aberkennung der Staatsbürgerschaft von Personen, die in der Wehrmacht eines fremden Staates militärische Dienste genommen haben, im Hinblick auf Art. 158 1. Abs. des Staatsvertrages von St. Germain.</p>
+                  <p>In dem zitierten Artikel habe sich unser Staat unter anderem ver<pb facs="krp-0169_r-0005"/>pflichten müssen, durch geeignete Maßnahmen zu verhindern, dass österreichische Staatsangehörige das Gebiet Österreichs verlassen, um in das Heer, die Flotte oder den Luftdienst irgendeiner fremden Macht einzutreten oder in ein Zugehörigkeitsverhältnis zu ihr zu treten zu dem Zwecke, die Ausbildung zu fördern oder überhaupt in einem fremden Heer beim Unterricht im Heer-, Marine- oder Luftwesen mitzuwirken. Es sei nun begreiflicherweise für uns schwer, Maßnahmen dieser Art zu treffen, welche die Erreichung des angestrebten Zieles verbürgen würden. Man könne wohl auf administrativem Wege – eine gesetzliche Maßnahme hiezu wäre nicht nötig – das Verlassen des Staatsgebietes durch Personen verbieten, bei welchen die Absicht des Eintrittes in die Wehrmacht eines fremden Staates feststeht. In den meisten Fällen werde aber diese Absicht den staatlichen Organen Österreichs nicht bekannt sein, und habe einmal die betreffende Person unser Staatsgebiet verlassen, so sei uns die Behinderung am Eintritte in eine fremde Macht mangels der Gebietshoheit nicht mehr möglich. Auch eine Strafbestimmung würde nur in den Fällen wirksam sein, <pb facs="krp-0169_r-0006"/>in welchen der Betreffende in unseren Staat zurückkehrt. Viel eher könne man sich dagegen eine abschreckende Wirkung davon versprechen, wenn auf den Eintritt in die Wehrmacht fremder Staaten der Verlust der Staatsbürgerschaft gesetzt werde. Durch eine solche Maßnahme werde jedes Band zwischen dem von dieser Maßnahme Betroffenen und seiner Heimat zerrissen: eine Konsequenz, die doch jedem sehr ernst erscheinen müsse, den irgendwelche Fäden, seien es tatsächliche, seien es gefühlsmäßige, mit seinem Heimatlande verbinden.</p>
+                  <p>Der vorliegende Gesetzentwurf habe daher diesen Weg betreten. Für die Beantragung einer solchen Maßnahme sprechen aber auch innerpolitische, namentlich staatsfinanzielle Gründe mehrfacher Art. Nach Art. 64 des Staatsvertrages von St. Germain werden wir verpflichtet sein, im Zeitpunkte des Inkrafttretens des Staatsvertrages alle jene ehemaligen österreichischen Staatsbürger als unsere Staatsbürger anzuerkennen, welche das Heimatrecht in einer der uns zugesprochenen Gemeinden in diesem Zeitpunkte besitzen. Da nach den österreichischen Versorgungsgesetzen und sonstigen karitativen Gesetzen Ansprüche auf <pb facs="krp-0169_r-0007"/>Versorgungsgenüsse und sonstige staatliche Zuwendungen von der Staatsbürgerschaft abhängen, erscheine es als ein Gebot staatsfinanzieller Vorsorge, von vornherein die Ansprüche solcher Personen aus der Welt zu schaffen, die anderen Staaten ihre Dienste gewidmet haben.</p>
+                  <p>Redner bitte um die Ermächtigung, den Gesetzentwurf in der Nationalversammlung einbringen zu dürfen.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Ramek</hi> erbittet sich eine Aufklärung darüber, welche politischen Gründe für die Einbringung dieses Gesetzentwurfes maßgebend seien. Hievon abgesehen ergeben sich jedoch nach seiner Anschauung nachstehende, gewichtige Bedenken gegen den vorliegenden Entwurf:</p>
+                  <list>
+                     <item n="1">
+                        <label>1.)</label>  Nach der völkerrechtlichen Übung habe der Staat, dem ein Staatenloser zuletzt angehört hat, nicht das Recht, die Übernahme zu verweigern, wenn der Betreffende von einem anderen Staat abgeschoben wird. Das Zurückströmen unerwünschter Elemente würde daher durch das Gesetz nicht verhindert werden.</item>
+                     <item n="2">
+                        <label>2.)</label> Der Staatsvertrag von St. Germain stehe auf dem Standpunkt, dass bis zu seinem Inkrafttreten die Staatsbür<pb facs="krp-0169_r-0008"/>gerschaft des alten Österreich weiter dauere und die altösterreichischen Staatsangehörigen erst in diesem Zeitpunkt nach ihrer Heimatgemeinde den einzelnen Sukzessionsstaaten zugewiesen werden (Art. 70). Dabei müsse die Republik Österreich alle ehemals österreichischen Staatsangehörigen als ihre Angehörigen anerkennen, die nicht Angehörige eines anderen Nationalstaates sind (Art. 64). Im Zweifel werde sogar die Staatsangehörigkeit in der Republik Österreich durch die bloße Tatsache der Geburt auf österreichischem Boden erworben (Art. 65).</item>
+                  </list>
+                  <p>Bis zum Inkrafttreten des Staatsvertrages von St. Germain sei daher eine selbständige Verfügung über die Staatsbürgerschaft kaum möglich und das in Rede stehende Gesetz müsste seine Wirksamkeit mit dem Inkrafttreten des Vertrages verlieren.</p>
+                  <list>
+                     <item n="1">
+                        <label>3.)</label> Eine Berufung auf Art. 158 des Staatsvertrages sei schon deshalb ungerechtfertigt, weil</item>
+                     <item n="2">
+                        <label>a)</label> das Gesetz sofort in Kraft treten soll, Art. 158 aber die Verpflichtung der Republik Österreich, gegen fremde Militärdienste seiner Staatsangehörigen einzuschreiten, erst <pb facs="krp-0169_r-0009"/>mit dem Inkrafttreten des Vertrages beginnen lasse und keine Rückwirkung vorsehe, sowie</item>
+                     <item n="3">
+                        <label>b)</label> weil Art. 158 vorbeugende Maßnahmen vorschreibe, die den Eintritt österreichischer Staatsangehöriger in eine fremde Wehrmacht verhindern sollen, während dem Entwurf zufolge der Verlust der Staatsbürgerschaft an die Tatsache des geleisteten Militärdienstes geknüpft werde.</item>
+                     <item n="4">
+                        <label>4.)</label> Die Fassung des Gesetzentwurfes lasse den Verlust der österreichischen Staatsbürgerschaft als Strafe erscheinen und widerspreche daher dem allgemein geltenden Grundsatz, dass Strafgesetze nicht zurückwirken und nur solche Handlungen bestraft werden dürfen, die bereits zur Zeit der Tat mit Strafe bedroht waren. Zahlreiche Offiziere machten noch gegenwärtig bei der deutschen Armee Dienst, wobei sie sich bei dem Eintritte auf die gesetzliche Bestimmung über den Anschluss Österreichs an das Deutsche Reich stützten, also in der zukünftigen gemeinsamen Wehrmacht Dienste zu leisten hofften.</item>
+                     <item n="5">
+                        <label>5.)</label> Der Zeitpunkt, in dem die nationalen Armeen entstanden, sei schwer genau zu bestimmen und nicht einheitlich. Es sei vorgekommen, dass Offiziere öster<pb facs="krp-0169_r-0010"/>reichischer Staatsangehörigkeit nach dem Umsturz durch einige Zeit bei ihren in Ungarn oder der Tschechoslowakei gelegenen Kaders weiter dienten, um die Unordnung nicht zu vermehren, nicht aber in der Absicht, in die Nationalarmeen einzutreten. Sie hiefür mit dem Verlust der österreichischen Staatsbürgerschaft zu bestrafen, wäre zu hart. Für die Rückwirkung einen späteren Zeitpunkt als das Entstehen der österreichischen Republik festzusetzen, sei aber politisch bedenklich, da dies möglicherweise im Verhältnis zu Ungarn als eine verschiedenartige Parteinahme gegenüber der „roten“ und „weißen“ Armee gedeutet werden könnte.</item>
+                     <item n="6">
+                        <label>6.)</label> Der Gesetzentwurf bringe die Gefahr mit sich, dass die anderen Nationalstaaten ihn nachahmen, und die Offiziere, die nach dem Umsturz während der ersten Übergangszeit hier Dienst gemacht haben und in Deutschböhmen usw. zuständig sind oder die Staatsbürgerschaftserklärung abgegeben haben, uns zuschieben, so dass wir schließlich mehr Offiziere übernehmen müssten, als durch das Gesetz abgestoßen würden.</item>
+                  </list>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Deutsch</hi> erklärt, der gegenwärtige Zustand, dass <pb facs="krp-0169_r-0011"/>Offiziere österreichischer Staatsbürgerschaft in den Armeen Ungarns, Rumäniens, Polens oder Deutschlands kämpfen, sei politisch völlig unhaltbar. Aber auch moralische Gründe ließen die beantragte Maßnahme als unabweisbar erscheinen. Übrigens würden dadurch nur diejenigen getroffen, die sich bewusst einer fremden Regierung zur Verfügung gestellt haben.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Reisch</hi> verweist darauf, dass der vorliegende Entwurf bei Gesetzwerdung zweifellos Repressivmaßregeln bei den Sukzessionsstaaten auslösen würde, was aus staatsfinanziellen Gründen zu großen Bedenken Anlass gebe. Er beantrage, die Angelegenheit behufs Klarstellung der Konsequenzen zu vertagen.</p>
+                  <p>Nachdem noch Unterstaatssekretär Dr. <hi rend="#letterspaced">Resch</hi> den Ausführungen der Staatssekretäre Dr. Ramek und Dr. Reisch beigepflichtet hatte, beschließt der Kabinettsrat über Vorschlag des <hi rend="#letterspaced">Vorsitzenden</hi>, den Gesetzentwurf einer Vorberatung durch eine aus dem Vizekanzler und den Staatssekretären für Justiz, für Finanzen, für Inneres und Unterricht und für Heereswesen bestehende Kabinettskonferenz unterziehen zu lassen.</p>
+                  <p>
+                     <pb facs="krp-0169_r-0012"/>
+                  </p>
+               </div>
+               <div type="top" xml:id="krp-0169_top03">
+                  <head>
+                     <label>
+                        <num n="3">3.</num>
+                        <seg>Ausgestaltung der Redoutensäle für Zwecke der beiden Staatstheater.</seg>
+                     </label>
+                  </head>
+                  <p>Über Einladung des Vorsitzenden berichtet der Oberste Verwalter des Hofärars Sektionschef Dr. <hi rend="#letterspaced">Beck</hi>, dass die aufgrund des Kabinettsratsbeschlusses vom 18. April 1919 eingesetzte Kommission in Verfolgung der Frage, auf welche Weise eine Sanierung der hofärarischen Theater erzielt werden könnte, erkannt habe, dass als einer der aussichtsreichsten Vorschläge zum Abbau des Defizits der vormaligen Hoftheater die von Hofrat Prof. Roller vorgeschlagene Ausgestaltung der Redoutensäle für Zwecke der beiden Staatstheater in Betracht käme. Dieses Projekt sei nach eingehender Überprüfung und nach kommissioneller Besichtigung der Redoutensäle mit Zustimmung zur Kenntnis genommen worden. Hiebei wurde ein Gutachten der hofärarischen Bauabteilung und eine annähernde Rentabilitätsberechnung vorgelegt, die eindringlich für eine Durchführung des Vorschlages Prof. Rollers sprachen, indem bei nur 100 Vorstellungen im Jahre mit einer Einnahme von etwa 1.400.000 K zu rechnen wäre, der nur 367.000 K an jährlichen Ausgaben gegenüberstünden. Wenn sich somit schon aufgrund dieser Be<pb facs="krp-0169_r-0013"/>rechnung ein jährlicher Reingewinn von etwa 1.000.000 K ergäbe, dürfe wohl erwartet werden, dass sich die Einnahmen in späteren Jahren durch Vermehrung der Vorstellungen noch wesentlich erhöhen ließen. Auch werde es möglich sein, die Redoutensäle an freien Abenden und Nachmittagen an künstlerisch hochwertige Unternehmungen (Konzerte u. dgl.) zu vermieten und dadurch einen weiteren bedeutenden Erlös zu erzielen. Sollte ferner die Anregung, im Anschlusse an den Theaterbetrieb ein Restaurant einzurichten, sich – wie es den Anschein habe – durchführen lassen, werde sich noch eine Pachtsumme von mindestens 100.000 K im Jahre erlösen lassen.</p>
+                  <p>Die Aufwendungen für die Adaptierung der Säle seien mit 1.400.000 K veranschlagt worden.</p>
+                  <p>Die Unterrichtsverwaltung, welche Anspruch auf die Redoutensäle für Zwecke der Hofbibliothek erhoben hatte, habe dieses Verlangen mit Rücksicht auf die aus Gründen der Denkmalpflege unbedingt notwendige Erhaltung der Redoutensäle in ihrer heutigen Gestalt unter der Voraussetzung zurückgezogen, dass für die Hofbibliothek andere Räume in der neuen Burg zur Verfügung gestellt werden.</p>
+                  <p>Die bei diesem Anlasse neuerdings <pb facs="krp-0169_r-0014"/>erhobene Forderung des Unterrichtsamtes, die Staatstheater in Hinkunft in weiterem Maß als bisher der Volksbildung dienstbar zu machen, werde bei Durchführung des vorliegenden Vorschlages und infolge des damit verbundenen Abbaues des Defizites der Staatstheater der Verwirklichung sehr wesentlich näher gerückt werden.</p>
+                  <p>Im Einvernehmen mit den Staatsämtern für Finanzen und für Inneres und Unterricht werde sohin beantragt, die Staatsregierung wolle dem Obersten Verwalter des Hofärars im Einvernehmen mit den beteiligten Stellen die Ermächtigung zur Durchführung des Projektes der Ausgestaltung der Redoutensäle für Zwecke der beiden Staatstheater, und zwar im Rahmen des vom Staatsamte für Finanzen vorgesehenen Höchstaufwandes von 1.500.000 K erteilen.</p>
+                  <p>Der Kabinettsrat erteilt die erbetene Ermächtigung.</p>
+               </div>
+               <div type="top" xml:id="krp-0169_top04">
+                  <head>
+                     <label>
+                        <num n="4">4.</num>
+                        <seg>Wahlstatistik.</seg>
+                     </label>
+                  </head>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> teilt mit, dass die Nationalversammlung die Regierung aufgefordert hatte, die Statistik über die Wahlen zur Nationalversammlung vom 16. Februar 1919 und über die nachher <pb facs="krp-0169_r-0015"/>erfolgten Landtagswahlen in den Ländern mit tunlichster Beschleunigung herausgeben zu lassen, und zwar in einer ersten Tabelle die Wahlergebnisse vom Februar nach autonomen Städten, Gerichtsbezirken und Wahlkreisen geordnet, in einer zweiten Tabelle in gleicher Weise die Landtagswahlen, endlich in einer dritten Tabelle eine Gegenüberstellung der Ergebnisse der Wahlen zur Nationalversammlung und jener zum betreffenden Landtag nach Gemeinden und Gerichtsbezirken.</p>
+                  <p>Der von der Statistischen Zentralkommission eingeholte Bericht verweise zunächst darauf, dass die vorläufigen Ergebnisse der Nationalratswahlen nach Wahlkreisen bereits im Sommer 1919 veröffentlicht worden sei und dass ein zweites Heft mit den Ergebnissen nach Städten mit eigenem Statut, nach Gerichts- und politischen Bezirken sowie nach Größengruppen der Gemeinden unter namentlicher Anführung der Gemeinden mit mehr als 5.000 Einwohner sich im Drucke befinde. Dieses Heft sei inzwischen erschienen.</p>
+                  <p>Die Ergebnisse der Landtagswahlen 1919 würden in gleicher Weise gegliedert, demnächst veröffentlicht werden, die Arbeiten hiezu seien im vollen Gang. Eine <pb facs="krp-0169_r-0016"/>Tabelle zur Vergleichung der beiden Daten sei von Haus aus geplant gewesen.</p>
+                  <p>Die Gegenüberstellung der beiden Ergebnisse nach Gemeinden durchgeführt, bezeichne die Statistische Zentralkommission zwar als bisher nicht üblich, weil fachlich nicht empfehlenswert und ungemein kostspielig. Um aber dem ausdrücklichen Wunsche der Nationalversammlung Rechnung zu tragen, sei, da das Staatsamt für Inneres und Unterricht nunmehr erklärt habe, die Druckkosten für diese Veröffentlichung auf sein Budget übernehmen zu wollen, auch diese Arbeit in Angriff genommen worden.</p>
+                  <p>Die Staatskanzlei beabsichtige, in diesem Sinne das Präsidium der Nationalversammlung in Kenntnis zu setzen.</p>
+                  <p>Der Kabinettsrat nimmt diese Mitteilungen zustimmend zur Kenntnis.</p>
+               </div>
+               <div type="top" xml:id="krp-0169_top05">
+                  <head>
+                     <label>
+                        <num n="5">5.</num>
+                        <seg>Gesetzentwurf, betreffend die Aufhebung der Fideikommisse.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Ramek</hi> erbittet unter eingehender Begründung vom Kabinettsrate die Ermächtigung, den Entwurf eines Gesetzes, betreffend die Aufhebung der Fideikommisse, in der Nationalversammlung einbringen zu dürfen.</p>
+                  <p>Staatssekretär <hi rend="#letterspaced">Stöckler</hi> anerkennt, dass die Institution der Fidei<pb facs="krp-0169_r-0017"/>kommisse zeitwidrig und daher jedenfalls aufzuheben sei. Zu den Fideikommissen gehöre aber großer Grundbesitz, an dessen sachgemäßer Bewirtschaftung der Staat lebhaft interessiert sei. Der bisher freie Grundbesitz sei meist im Lauf der Zeit zu einer wirtschaftlichen Einheit geworden, während die vielfach zerstreut liegenden Fideikommissgrundstücke vornehmlich nur durch die Bindung zusammengehalten werden. Es bestehe nun die Gefahr, dass derartige Grundstücke insbesonders an Ausländer verkauft werden, die, wie die Erfahrung in der Tschechoslowakei, in Jugoslawien und Ungarn lehre, große Waldbestände aufkaufen, abrasieren und liegen lassen. Dieser Gefahr müsste vorgebeugt werden, etwa in der Form, dass das Fideikomissband bezüglich der land- und forstwirtschaftlichen Grundstücke bis zur Durchführung der Bodenreform aufrechterhalten werde. Sollte dies nicht tunlich erscheinen, so wäre ein Belastungs- und Veräußerungsverbot für eine beschränkte Anzahl von Jahren einzuführen, wovon jedoch Veräußerungen an einen Anwärter auszunehmen wären.</p>
+                  <p>Was die Detailbestimmungen des Entwurfes anbelange, so glaube der sprechende Staatssekretär, dass der im § 8 gewählte <pb facs="krp-0169_r-0018"/>Ausdruck „reiner Wert" nicht hinlänglich klar sei und noch einer näheren Definierung bedürfe.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Deutsch</hi> hielte es nicht für zweckmäßig, einerseits das fideikommissarische Band aufzuheben und andererseits gleichzeitig durch die Einführung eines Belastungs- und Veräußerungsverbotes ein neues Band zu schaffen. Er glaube jedoch, dass die Angelegenheit vor endgiltiger Schlussfassung des Kabinettsrates noch einer neuerlichen Prüfung durch die beteiligten Ressorts unterzogen werden solle.</p>
+                  <p>Unterstaatssekretär Dr. <hi rend="#letterspaced">Eis1er</hi> pflichtet dieser Auffassung bei und gibt der Anschauung Ausdruck, dass den Bedenken des Staatssekretärs Stöckler etwa durch eine Ergänzung und Verschärfung des Grundverkehrsgesetzes Rechnung getragen werden könnte.</p>
+                  <p>Unterstaatssekretär <hi rend="#letterspaced">Miklas</hi> beantragt, behufs Aufrechterhaltung insbesondere der Patronatsverpflichtungen im § 3 Abs. 1 des Entwurfes nach dem Worte „gemeinnützige“ die Worte „oder öffentlichrechtliche“ einzuschalten. Der Ausdruck „reiner Wert“ im § 8 wäre entsprechend der Umschreibung dieses Begriffes im Gesetz über die große Vermögensabgabe zu ändern.</p>
+                  <p>
+                     <pb facs="krp-0169_r-0019"/>Über Vorschlag des Vizekanzlers <hi rend="#letterspaced">Fink</hi> beschließt der Kabinettsrat die Einsetzung einer aus den Staatssekretären für Justiz, für Land- und Forstwirtschaft und für Finanzen bestehenden Kabinettskonferenz, welche unter Beiziehung eines Vertreters der Staatskanzlei den Entwurf durchzuberaten und binnen längstens 14 Tagen dem Kabinettsrat Bericht zu erstatten haben wird. Die Führung in dieser Angelegenheit obliegt dem Staatssekretär für Justiz.</p>
+               </div>
+               <div type="top" xml:id="krp-0169_top06">
+                  <head>
+                     <label>
+                        <num n="6">6.</num>
+                        <seg>Gesetzentwurf über die Ausdehnung der Krankenversicherung (5. Novelle zum Krankenversicherungsgesetz).</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Hanusch</hi> unterbreitet dem Kabinettsrate den Entwurf eines Gesetzes über die Ausdehnung der Krankenversicherung (5. Novelle zum Krankenversicherungsgesetz) und bittet um die Ermächtigung, diese Vorlage, durch welche die Krankenversicherungspflicht auf alle unselbständig Erwerb[s]tätigen (u. a. die land- und forstwirtschaftlichen Arbeiter) ohne Rücksicht auf die rechtliche Stellung der Dienstgeber und auf einige dieser Maßnahme besonders bedürftige Gruppen von Halbselbstständigen ausgedehnt werden soll, in der Nationalversammlung einbringen zu dürfen.</p>
+                  <p>
+                     <pb facs="krp-0169_r-0020"/>Der Kabinettsrat erteilt die erbetene Ermächtigung.</p>
+               </div>
+               <div type="top" xml:id="krp-0169_top07">
+                  <head>
+                     <label>
+                        <num n="7">7.</num>
+                        <seg>Gesetzesbeschluss des Niederösterreichischen Landtages, betreffend die Einhebung einer Gemeindeabgabe von Spielen und Belustigungen für Zwecke der sozialen Fürsorge in Wiener Neustadt.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Hanusch teilt mit, dass der Niederösterreichische Landtag in seiner Sitzung am 11. März d. J. einen Gesetzesbeschluss, betreffend die Einhebung einer Gemeindeabgabe von Spielen und Belustigungen für Zwecke der sozialen Fürsorge in Wiener Neustadt, gefasst habe.</p>
+                  <p>Gegen diesen Beschluss bestehe das Bedenken, dass bereits in der Nationalversammlung eine Regierungsvorlage (Spielabgabengesetz) in Verhandlung stehe, worin für eine Reihe von gleichen Veranstaltungen eine ganz analoge Abgabe für besonders dringende Zwecke der sozialen Fürsorge, und zwar für Kriegsbeschädigte, Kriegerwitwen und Kriegerwaisen in Aussicht genommen sei.</p>
+                  <p>Da nun die Fürsorge für diese Personen nach der bestehenden Verfassung in die staatliche Kompetenz falle, würde durch den vom Niederösterreichischen Landtag beschlossenen Gesetzentwurf eines Spielabgabengesetzes für Wiener Neustadt, soweit er mit der vorerwähnten Regierungsvorlage kollidiere, in den Bereich der staatli<pb facs="krp-0169_r-0021"/>chen Fürsorge sicherlich eingegriffen und das zweckmäßige Zustandekommen des staatlichen Spielabgabengesetzes beeinträchtigt werden, zumal auch allgemeine Zweckmäßigkeitserwägungen dagegen sprechen müssen, derartige Abgabengesetze für einzelne Orte zu erlassen und damit die Abgabenquelle gegen das Interesse der beteiligten Kreise und zum Nachteile einer gleichmäßigen Heranziehung der Bevölkerung zu diesen Lasten zu zersplittern.</p>
+                  <p>Es werde daher, vorbehaltlich der späteren genaueren Präzisierung dieser Bedenken vorläufig um die Ermächtigung gebeten, im Sinne des Art. 14 des Gesetzes vom 14. März 1919 über die Volksvertretung, StGBl. Nr. 179, gegen den in Rede stehenden Beschluss des Landtages namens der Staatsregierung Vorstellung zu erheben.</p>
+                  <p>Der Kabinettsrat erteilt die erbetene Ermächtigung.</p>
+               </div>
+               <div type="top" xml:id="krp-0169_top08">
+                  <head>
+                     <label>
+                        <num n="8">8.</num>
+                        <seg>Vollzugsanweisungen der Staatsregierung zur Durchführung des Pensionistengesetzes und der Hinterbliebenenversorgungsnovelle.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Reisch</hi> erbittet und erhält vom Kabinettsrat die Ermächtigung zur Erlassung einer Vollzugsanweisung der Staatsregierung zur Durchführung der die Ruhe-(Versorgungs-)genüsse der <pb facs="krp-0169_r-0022"/>Zivilstaatsangestellten und die Teuerungsmaßnahmen für diese Personen betreffenden Bestimmungen des Gesetzes vom 18. März 1920, StGBl. Nr. 132 (Pensionistengesetz), I., II. und VII. Hauptstück, sowie zur Erlassung einer Vollzugsanweisung der Staatsregierung, betreffend die Durchführung des Gesetzes vom 18. März 1920, StGBl. Nr. 131 (Hinterbliebenenversorgungsnovelle).</p>
+                  <p>Gleichzeitig ermächtigt der Kabinettsrat den Staatssekretär für Finanzen, nach seinem Antrage zur Hinausgabe eines Erlasses an die Finanzlandesdirektionen, worin die gemäß § 39 des Pensionistengesetzes bis zur Anweisung der Pensionserhöhungen von der Finanzlandesbehörde flüssig zu machenden Vorschüsse auf die Erhöhungen festgesetzt werden.</p>
+               </div>
+               <div type="top" xml:id="krp-0169_top09">
+                  <head>
+                     <label>
+                        <num n="9">9.</num>
+                        <seg>Gesetzesbeschlüsse des Niederösterreichischen Landtages, betreffend die Regulierung mehrerer Wasserläufe.</seg>
+                     </label>
+                  </head>
+                  <p>Nach dem Antrag des Staatssekretärs <hi rend="#letterspaced">Stöckler</hi> beschließt der Kabinettsrat, dass von der Erhebung einer Vorstellung gegen die Gesetzesbeschlüsse des Niederösterreichischen Landtages vom 9. März 1920, betreffend die Regulierung des Moosbaches in den Katastralgemeinden Diesendorf und Asperhofen (Ortsgemeinde Asperhofen) und betreffend die Regulierung des Pielach<pb facs="krp-0169_r-0023"/>flusses in den Katastralgemeinden Loipersdorf und Völlerndorf (Ortsgemeinde Gerersdorf), abgesehen und der sofortigen Kundmachung dieser Gesetzesbeschlüsse unter Gegenzeichnung des Staatssekretärs für Land- und Forstwirtschaft zugestimmt werde.</p>
+                  <p>Schluss der Sitzung: 5 Uhr nachmittags.</p>
+                  <p/>
+               </div>
+            </div>
+            <div type="stenogramme">
+               <div n="1">
+                  <head>[KRP 169, 9. April 1920, Stenogramm Fenz]</head>
+                  <p n="1">
+                     <pb facs="krp-0169_s01-0001"/>169., 9. /IV. '20.</p>
+                  <p n="2">[Zugezogen]: Zedtwitz, </p>
+                  <p n="3">Fischer, </p>
+                  <p n="4">Beck.</p>
+                  <p n="5">Ramek:</p>
+                  <p n="6">Bericht über den Fortgang [des Streiks] der Kanzleibeamten der Justiz.</p>
+                  <p n="7">Entsprechend den Weisungen des Kabinettsrates habe ich mich in Verhandlungen bisher nicht eingelassen. Die Folge davon war, dass die Leute nervös </p>
+                  <p n="8">geworden sind. Sie haben den Versuch gemacht, Verhandlungen einzuleiten. Die Folge der Zurückhaltung des Staatsamtes war, dass einzelne Abbröckelungen erfolgt sind, zum Beispiel Salzburg.</p>
+                  <p n="9">Nun hat sich die Gewerkschaft der Staatsbeamten der Sache angenommen. Sie hat gefürchtet, dass es dem Prestige der Beamten abträglich ist, wenn dieser </p>
+                  <p n="10">Streik zusammenbricht. <hi rend="#s">Sie hat gestern</hi> - Heute ist eine Abordnung der Gewerkschaft mit Sch[...] an der Spitze bei mir erschienen. Sie haben </p>
+                  <p n="11">sich für desinteressiert bezüglich einzelner Forderungen erklärt und insbesondere die Forderung von der Übersetzung aus der Gruppe E in C für ungerechtfertigt erklärt. </p>
+                  <p n="12">Zu tun war ihnen um die formelle Behandlung des Streiks. Sie wollten, dass nicht der Streik in sich zusammenbricht, sondern dass vorher Verhandlungen </p>
+                  <p n="13">zwischen den Streikenden und dem Staatsamt stattfinden. Ich habe den Vorschlag gemacht, dass ich bereit wäre, gewisse Forderungen als gerechtfertigt zu vertreten, soweit ich sie </p>
+                  <p n="14">in meinem Ressort erledigen kann. Dann habe ich gesagt, dass ich wegen gewisser Forderungen an das Staatsamt für Finanzen herantreten werde, ohne Präjudiz, wie sich </p>
+                  <p n="15">die Regierung zu diesen Forderungen stellen wird. Sie haben gesagt, das ist ihnen zu wenig, sondern es müssen Verhandlungen eingeleitet werden.</p>
+                  <p n="16">Ich habe den Vorschlag gemacht, man sollte die Verhandlungen durch eine Mittelsperson führen lassen, etwa durch die Richtervereinigung oder die Gewerkschaft. Das haben sie </p>
+                  <p n="17">auch abgelehnt. Für sie steht die Frage so, dass sie auf dem Standpunkt stehen, es muss verhandelt werden zwischen Ressort, also der Regierung und der </p>
+                  <p n="18">Beamtenschaft selbst. Ich habe ihnen keine Entscheidung bekannt gegeben und gesagt, dass ich das Kabinett fragen muss.</p>
+                  <p n="19">Ich erkläre, dass ich es für sehr gefährlich halten würde, wenn es uns nicht gelingt, diesen Streik zu lokalisieren und wenn er auch auf andere </p>
+                  <p n="20">Ressorts hinüber greift. Wir müssten dann, vielleicht nicht nur im Justizressort, Zugeständnisse machen, die uns sehr schwer belasten würden. </p>
+                  <p n="21">Vielleicht [käme es zu einer] Kraftprobe zwischen der Regierung und der ganzen Beamtenschaft.</p>
+                  <p n="22">Während ich mit dieser Zentralgewerkschaft verhandelt habe, hat der Präsident der Richtervereinigung im Verein mit [...] ?Klag eine </p>
+                  <p n="23">Deputation der Streikenden und Diener, Unterbeamten, Gefangenenaufseher zu Paltauf geführt und dringendst ersucht, man möchte sie anhören. </p>
+                  <p n="24">Palt[auf] war vorher bei mir und hat mir mitgeteilt, dass [...] und ?Klag da seien, und ich habe ihn ersucht, er möge mit den Leuten </p>
+                  <p n="25">erst sprechen, wenn ich mit der Gewerkschaft gesprochen habe. Der hat das missverstanden. Wie ich die Gewerkschaft entlassen habe, habe ich ihn mitten in </p>
+                  <p n="26">Verhandlungen gefunden. Mir ist nun nichts anderes übriggeblieben, als die nachträgliche Genehmigung zu dieser Verhandlung zu erteilen.</p>
+                  <p n="27">Was das Meritorische anbelangt, so stehe ich auf dem Standpunkt, dass einer generellen Übernahme aller Kanzleibeamten aus E in C </p>
+                  <p n="28">nicht die Zustimmung erteilt werden könne. Doch stelle ich mich auf dem Standpunkt, einzelnen, ausnahmsweise besonders qualifizierten, Kanzleibeamten insoweit eine Nachsicht der Studien zuzubilligen, dass sie in besonderen Fällen zur zweiten Kanzleiprüfung zugelassen werden. Diese Prüfung ist heute nur zugänglich </p>
+                  <p n="29">den Absolventen einer Mittelschule. Vom finanziellen Standpunkt hat das weiter keine Konsequenzen. Denn besonders qualifizierte Kanzleikräfte, </p>
+                  <p n="30">
+                     <pb facs="krp-0169_s01-0002"/>die keine Mittelschule haben, werden schon heute Kanzleileiter. Sie sind [...]-Off., kommen ad pens in die VIII. </p>
+                  <p n="31">und erhalten den Titel Kanzleidirektor, ohne dass sie es sind. Man hat faktisch den Unterschied zwischen E und C auf Umwegen in </p>
+                  <p n="32">individuellen Fällen zu umgehen gesucht. Dieser Zustand soll aufrechterhalten werden und nur [dadurch] ergänzt werden, dass man diese Leute auch zur 2. Prüfung </p>
+                  <p n="33">zulässt und dass sie nicht nur den Titel bekommen, sondern auch wirklich Kanzleidirektoren werden und faktisch dann in der Gruppe C sind. </p>
+                  <p n="34">Damit wären die Kanzleibeamten einverstanden.</p>
+                  <p n="35">2. Forderung. Anrechnung der Vordienstzeit. Hier wäre die Zustimmung des Staatsamtes für Finanzen notwendig. </p>
+                  <p n="36">Hier haben wir schon ein schwerwiegendes Präjudiz in der Behandlung der Gendarmen, Polizisten und der Gefangenenaufseher. </p>
+                  <p n="37">In letzter Richtung hat die Nationalversammlung selbst entgegen der Vorlage der Staatsregierung die Vordienstzeit angerechnet und die anderen Kanzleibeamten dadurch </p>
+                  <p n="38">in die Hinterhand gebracht.</p>
+                  <p n="39">Ich habe erklärt, dass ich bereit wäre, diesen Wunsch dem Staatsamt für Finanzen mitzuteilen ohne jedes Präjudiz, ob es gemacht wird oder nicht.</p>
+                  <p n="40">3.) Definitive Anstellung der Aushilfskräfte. </p>
+                  <p n="41">Ich habe mich immer auf den Standpunkt gestellt, dass Aushilfskräfte nach einer entsprechenden Anzahl von Dienstjahren definitiv </p>
+                  <p n="42">angestellt werden sollen, wenn sie befähigt sind und wenn man sie braucht. Wir brauchen diese Leute. Wir kommen bei der zunehmenden </p>
+                  <p n="43">Anzahl der Prozesse, bei der Steigung der [...] Angelegenheiten und infolge der Zunahme der Kriminalität trotz </p>
+                  <p n="44">Entlastungsgesetz aus der Überbürdung nicht hinaus und sind außer Stande abzubauen.</p>
+                  <p n="45">4.) Die Diener wollen, dass sämtliche Diener zu Beamten ernannt werden. Ich gehe über den Rahmen des Gesetzes nicht hinaus. Wenn die Leute </p>
+                  <p n="46">befähigt sind, so hätte ich innerhalb des Ressorts nichts dagegen, wenn solche Leute zur Prüfung zugelassen werden.</p>
+                  <p n="47">5.) Entlohnung der Überstunden. Ich habe darauf hingewiesen, dass das nicht eine Sache des Justizressorts ist, <hi rend="#s">sondern darauf</hi> - sondern gesagt, </p>
+                  <p n="48">dass das generell geregelt wird.</p>
+                  <p n="49">Hanusch: Ich habe den Eindruck, dass es [sich] um ein Rückzugsgefecht handelt. Das Einschreiten der Organisationen [erfolgte], </p>
+                  <p n="50">damit der Streik nicht ins Wasser fällt.</p>
+                  <p n="51">Es fragt sich, ob nicht gewisse Zugeständnisse gemacht werden [sollten] ohne finanzielle Belastung und - [um] dadurch den Streik [zu] beenden. </p>
+                  <p n="52">Es müsste der Beschluss von Mittwoch dahin abgeändert werden, dass Ramek ermächtigt wird, mit dem Streikkomitee zu </p>
+                  <p n="53">verhandeln und dadurch die Sache [zu] beendigen. Sonst könnte ein Sympathiestreik der übrigen Beamtenschaft eintreten.</p>
+                  <p n="54">Eldersch: Ich möchte es Ramek überlassen, zu beurteilen, ob die Situation so ist, dass man Verhandlungen aufnimmt. </p>
+                  <p n="55">Es darf nichts geschehen, was die anderen Staatsämter präjudiziert und was [eine] größere Belastung bedingen würde.</p>
+                  <p n="56">
+                     <pb facs="krp-0169_s01-0003"/>Miklas: Ramek kann sich auf die Fürbitte der Richtervereinigung berufen.</p>
+                  <p n="57">Beschluss im Sinne Eldersch [...].</p>
+                  <p n="58">Deutsch: <hi rend="#s">Das Arsenal hat zwei</hi> -. Die Italiener haben zwei B[...], die uns gehören und zwei Lafetten im Arsenal aufgeladen </p>
+                  <p n="59">und wollen sie wegführen. </p>
+                  <p n="60">Ich habe gesagt, es soll ein Protokoll aufgenommen werden und das Staatsamt für Äußeres soll energisch protestieren.</p>
+                  <p n="61">Fink: Es soll heute noch dem Kanzler mitgeteilt werden.</p>
+                  <p n="62">2. a) Fink: Staatsbürgerschaftsaberkennung.</p>
+                  <p n="63">Ramek: Ich möchte eine Aufklärung haben, welches der politische Zweck dieses Gesetzes ist. </p>
+                  <p n="64">Wenn man von politischen Erwägungen absieht, so ergeben sich schwerwiegende rechtliche Bedenken. &lt; &gt;.</p>
+                  <p n="65">Deutsch: Die juristischen Details können wir der Staatskanzlei überlassen. Ich glaube, dass man auch nach dem Friedensvertrag ein solches Gesetz </p>
+                  <p n="66">erlassen könne. Man muss sich da wohl auf die Fachleute verlassen.</p>
+                  <p n="67">Was aber die tatsächlichen Verhältnisse anbelangt: Deutschland ist für uns weder pro noch contra ein Argument. </p>
+                  <p n="68">Sind dort Offiziere von uns, so werden sie nichts dagegen haben, dort Staatsbürger zu werden. Es ist [aber] eine Unmöglichkeit, dass unsere Staatsbürger </p>
+                  <p n="69">in Ungarn, Rumänien, Polen oder Deutschland kämpfen. In Ungarn sind sowohl in der roten wie in der weißen Armee unsere Offiziere </p>
+                  <p n="70">gewesen. Wir haben gar keinen Grund, [dass] Leute, die in einer fremden Armee kämpfen, bei uns Staatsbürger sind. </p>
+                  <p n="71">Nur derjenige wird dadurch getroffen, der bewusst sich einer fremden Regierung zur Verfügung gestellt hat.</p>
+                  <p n="72">Ich habe stets darauf abgewiesen - [hingewiesen], dass ich das Abbaugesetz so rasch brauche, weil 100(e) und 1.000(e) Offiziere gar keinen Dienst </p>
+                  <p n="73">machen, sondern in Wahrheit schon im bürgerlichen Leben stehen und nur am 1. ihre Bezüge holen. Nun hat sich das bestätigt. Wir haben </p>
+                  <p n="74">4-5.000 Offiziere eingetragen gehabt, die wir gezahlt haben. Zur neuen Wehrmacht haben sich nur 1.500 Offiziere und Beamte gemeldet. </p>
+                  <p n="75">Das alles ist nur möglich durch unser langes Zögern und bei der Unklarheit, die wir in allen diesen Sachen lassen. Ich meine daher, dass wir </p>
+                  <p n="76">eine Klarheit schaffen [sollten] und bin daher aus den angeführten politischen und moralischen Gründen dafür, dass wir das Gesetz erlassen.</p>
+                  <p n="77">Reisch: Ich habe eben gesehen, dass in der Begründung auch auf die staatsfinanziellen Momente hingewiesen wird pro, während meine </p>
+                  <p n="78">Referenten kontra aus staatsfinanziellen Gründen sind - weil die Sukzessionsstaaten gewiss Repressionsgesetze machen werden und uns [dann] </p>
+                  <p n="79">
+                     <pb facs="krp-0169_s01-0004"/>Offiziere aus diesen Staaten, die schon abgewandert sind, zufallen werden. Wir müssen dann gewärtigen, dass von den 2.500 Offizieren, die in fremde Nationalstaaten </p>
+                  <p n="80">zuständig sind, [eine Anzahl] wieder zu uns abgeschoben werden können.</p>
+                  <p n="81">[Ich] beantrage die Vertagung.</p>
+                  <p n="82">Resch: Es ist ein politisches Ausnahmsgesetz. Ich stimme den Ausführungen Rameks und Reischs zu. </p>
+                  <p n="83">Ich glaube, dass [die Staatsämter für] Justiz und Finanzen an der Abänderung mitwirken [sollten]. Ich könnte dem Gesetz in dieser Fassung nicht zustimmen.</p>
+                  <p n="84">Fink: Es soll eine Kabinettskonferenz sich mit der Sache befassen.</p>
+                  <p n="85">Reisch - Finanzen, Ramek - Justiz, Eldersch - Inneres, Deutsch - Heerwesen, Staatskanzler.</p>
+                  <p n="86">[Sie wird] einberufen von der Staatskanzlei.</p>
+                  <p n="87">2. b) Beck: Redoutensäle.</p>
+                  <p n="88">Angenommen.</p>
+                  <p n="89">2. c) Fink: Landtagswahlen in Kärnten.</p>
+                  <p n="90">Zur Kenntnis genommen.</p>
+                  <p n="91">2. d) [Fink]: Wahlstatistik.</p>
+                  <p n="92">Angenommen.</p>
+                  <p n="93">
+                     <pb facs="krp-0169_s01-0005"/>3. Ramek: Fideikommisse.</p>
+                  <p n="94">Die politische Notwendigkeit ergibt sich aus der Notwendigkeit - Tatsache, dass die Instit[ution] der Fideikommisse in engem Zusammenhang </p>
+                  <p n="95">steht mit dem Adelsinstitut. Nachdem wir den Adel abgeschafft haben, so müsste das auch mit den Fideikommissen geschehen. </p>
+                  <p n="96">[Es ist] eine ganz veraltete Institution, die auch vom volkswirtschaftlichen Standpunkt nicht mehr erwünscht ist.</p>
+                  <p n="97">Gegen diesen Gesetzentwurf hat das Staatsamt für Land- und Forstwirtschaft aus wirtschaftlichen Gründen Bedenken erhoben.</p>
+                  <p n="98">Stöckler: Es fällt uns nicht ein, das Institut der Fideikommisse aufrecht zu erhalten. </p>
+                  <p n="99">Es handelt sich um etwas anderes. Der bisherige freie Grundbesitz hat sich zu einer Einheit gebildet. Die Fideikommisse sind oft </p>
+                  <p n="100">zerstreut, die nur durch das [Fideikommiss]-Band gebunden sind. Es besteht die Gefahr, dass jetzt [ein] rascher Abverkauf an Ausländer erfolgen [wird]. Es muss Vorsorge getroffen werden, dass das </p>
+                  <p n="101">nicht geschieht. Eine Form wäre, dass bis zur Durchführung der Bodenreform für landwirtschaftliche Grundstücke das Band aufrechterhalten wird. </p>
+                  <p n="102">[Es] wird schwer gehen, speziell für die landwirtschaftlichen Güter das Band aufrecht zu erhalten und für andere nicht. Vielleicht könnte man das machen </p>
+                  <p n="103">durch [ein] Veräußerungs- und Belastungsverbot. Eine mögliche Form wäre die, dass man auf eine gewisse Reihe von Jahren ein </p>
+                  <p n="104">Veräußerungs- und Belastungsverbot erlässt, um der Gefahr von Massenabverkäufen zu wehren.</p>
+                  <p n="105">Ferner ist im § 8 der reine Wert angenommen zur Bemessung der Gebühr. Dieser Ausdruck ist zu wenig verständlich. </p>
+                  <p n="106">Es wäre wünschenswert, wenn man diesen "reinen Wert" etwas definieren würde.</p>
+                  <p n="107">Deutsch: Nach den Einwendungen wird es nicht möglich sein, dass - [werden] wir diesen Gesetzentwurf heute nicht erledigen können. </p>
+                  <p n="108">Ich glaube, dass [ein] Veräußerungs- und Belastungsverbot nicht zum Ziel führen wird. Es wäre nicht logisch, einerseits das Band aufzuheben und </p>
+                  <p n="109">andererseits ein neues Band zu statuieren. Vielleicht [ginge ein] Verbot, dass Nicht-Deutschösterreicher diese Grundstücke nicht erwerben dürfen - wenn das – </p>
+                  <p n="110">
+                     <hi rend="#s">man müsste die Frage erwägen</hi> - nicht mit dem Friedensvertrag im Widerspruch steht. Aber man muss die Sache noch einmal studieren.</p>
+                  <p n="111">Eisler: [Ich] bin einverstanden, die Sache noch einmal dem Studium zu unterziehen, aber nicht auf zu lange. Denn es wäre eine Unterlassung der </p>
+                  <p n="112">Nationalversammlung, wenn sie sich dieser Aufgabe nicht unterzöge. Ich glaube, dass man eine Abhilfe gegen die Bedenken Stöcklers im </p>
+                  <p n="113">Grundverkehrsgesetz finden könnte, welches vielleicht entsprechend ergänzt oder verschärft würde. Der Vorschlag Deutschs (Verbot des Erwerbs durch Ausländer) </p>
+                  <p n="114">ist nach dem Friedensvertrag nicht gangbar. [Ich] beantrage [eine] befristete Zurückstellung der Vorlage.</p>
+                  <p n="115">Miklas: Zu § 3 1. Abs.: [Man sollte] nach 'gemeinnützige' [einschalten] "oder öffentlich-rechtliche", </p>
+                  <p n="116">um die in Betracht kommenden Gemeinden und Kirchen zu berücksichtigen.</p>
+                  <p n="117">
+                     <pb facs="krp-0169_s01-0006"/>Ad § 8: "reiner Wert" [wäre] so umzustilisieren wie [es] im Vermögensabgabegesetz zwischen den beiden Parteien vereinbart wurde.</p>
+                  <p n="118">Fink: Ich weiß nicht, ob eine Verschärfung des Grundverkehrsgesetzes notwendig ist. Vielleicht ginge es durch eine </p>
+                  <p n="119">Instruktion an die Bezirks- und Landeskommissionen.</p>
+                  <p n="120">[Beschluss]: Kabinettskonferenz, Justiz - leitet, Landwirtschaft, Staatskanzlei, Staatsamt für Finanzen, </p>
+                  <p n="121">innerhalb 14 Tagen.</p>
+                  <p n="122">4. Hanusch: 5. Krankenversicherungsnovelle, </p>
+                  <p n="123">Einbeziehung der land- und forstwirtschaftlichen Arbeiter in den Versicherungszwang.</p>
+                  <p n="124">
+                     <hi rend="#s">Reisch: Bezüglich der Staatsbeamten ist ein Gesetzentwurf in Vorbereitung. Die Staatsbeamten werden im § 2 als </hi>
+                  </p>
+                  <p n="125">
+                     <hi rend="#s">versicherungsfrei -.</hi>
+                  </p>
+                  <p n="126">Deutsch: Wenn das Gesetz für die Staatsbediensteten gemacht wird, so gehören selbstverständlich die Militärpersonen auch </p>
+                  <p n="127">dazu. Es müssen bei diesem Gesetz die aktiven und die pensionierten Militärpersonen einbezogen werden, mit der Einschränkung, dass das Gesetz </p>
+                  <p n="128">vom Jahr 1875, welches bisher [besondere] Vorsorgen getroffen hat, außer Kraft gesetzt wird.</p>
+                  <p n="129">Stöckler: -.</p>
+                  <p n="130">Angenommen.</p>
+                  <p n="131">Hanusch: </p>
+                  <p n="132">Der Niederösterreichische Landtag hat eine Spiel- und Belustigungssteuer für Wr. Neustadt beschlossen. </p>
+                  <p n="133">Vorstellung.</p>
+                  <p n="134">Angenommen.</p>
+                  <p n="135">
+                     <pb facs="krp-0169_s01-0007"/>5. Reisch: </p>
+                  <p n="136">Vollzugsanweisung zur Durchführung des Pensionsgesetzes.</p>
+                  <p n="137">Erlass betreffend die Vorschussfragen.</p>
+                  <p n="138">Resch: -.</p>
+                  <p n="139">Miklas: Ich habe gehört, dass das Pensionsgesetz wegen der Überlastung der liquidierenden Stellen eigentlich erst wirksam - praktisch wirksam wird mit 1. Mai. </p>
+                  <p n="140">Könnte den Pensionisten nicht ein entsprechender Vorschuss gegeben werden?</p>
+                  <p n="141">Reisch: [Dies] wird berücksichtigt durch den hinauszugebenden Erlass.</p>
+                  <p n="142">Angenommen.</p>
+                  <p n="143">6. Stöckler: Flussregulierungen.</p>
+                  <p n="144">Angenommen.</p>
+                  <p n="145">5 Uhr.</p>
+                  <p n="146">Nächste Sitzung, Dienstag, ½ 4 Uhr, </p>
+                  <p n="147">Parlament.</p>
+                  <p n="148"/>
+               </div>
+            </div>
+            <div type="anhänge">
+               <p>
+                  <pb facs="krp-0169_a01-0001"/>Streng vertraulicher Anhang zum Kabinettsprotokoll Nr. 169 von 9. April 1920.</p>
+               <div n="1">
+                  <head>Landtagswahlen in Kärnten.</head>
+                  <div type="a01_protokoll">
+                     <p>Der <hi rend="#letterspaced">Vorsitzende</hi> erstattet dem Kabinettsrat den beiliegenden vertraulichen Bericht, betreffend die Landtagswahlen in Kärnten. Der Kabinettsrat nimmt diesen Bericht zur Kenntnis.</p>
+                     <p>
+                        <pb facs="krp-0169_a01-0002"/>
+                     </p>
+                     <div type="a01_überschrift">
+                        <p>Mündlicher Vortrag für den Kabinettsrat.</p>
+                     </div>
+                     <div type="a01_vortrag">
+                        <p>Laut einer der Staatskanzlei zugekommenen Zuschrift des Staatsamtes für Äußeres meldete der österreichische Vertreter in Paris unter dem 28. März, der Präsident der Friedenskonferenz habe ihm in einer Note mitgeteilt, dass Österreich zu den Landtagswahlen in Kärnten angeblich auch die Bewohner der Abstimmungszone II heranziehen wolle, die laut Art. 50 des Friedensvertrages von St. Germain von Österreich besetzt und verwaltet wird. Die alliierten und assoziierten Mächte seien der Ansicht, dass vor der Durchführung der Volksabstimmung die Wähler der vorerwähnten Abstimmungszone unmöglich ihre Delegierten in einen österreichischen Vertretungskörper entsenden können; er erkläre daher namens aller Mächte, dass derartige Wahlen nicht zugelassen werden würden.</p>
+                        <p>Im Übrigen anerkennen die Mächte das Interesse Österreichs an einer raschen Regelung des Schicksals des Klagenfurter Beckens, dessen schwierige Situation ihnen aus unseren wiederholten Klagen und Protesten bekannt ist, und haben daher beschlossen, ohne das Inkrafttreten des Friedensvertrages abzuwarten, die Mitglieder der Plebiszitkommission zu ernennen und dieselben anzuweisen, sich ehebaldigst nach Klagenfurt zu begeben.</p>
+                        <p>Der österreichische Vertreter in Paris wird unter einem verständigt, dass aus außenpolitischen Gründen derzeit von der Vornahme der Landtagswahlen abgesehen wurde.</p>
+                        <p>Der Landesverweser von Kärnten wird unter einem in analogem Sinne verständigt. Am 16. März ist die nachstehende Zuschrift des Herrn Landesverwesers von Kärnten an den Herrn Staatskanzler gelangt:</p>
+                        <p>„Mit dem Gesetze vom 21. März 1919, LGBl. Nr. 20, wurde die Einberufung des verfassunggebenden Landtages von Kärnten angeordnet <pb facs="krp-0169_a01-0003"/>und mit dem Art. IV dieses Gesetzes die Durchführung der Wahl innerhalb zweier Monate vom Tage der Kundmachung angesetzt. Die nach dem Zustandekommen dieses Gesetzes erfolgte Besetzung eines großen Teiles von Kärnten und sogar der Landeshauptstadt durch die Jugoslawen machte die Durchführung der Wahl in der oben festgesetzten Frist nicht möglich. Aber auch nach erfolgter Räumung von Klagenfurt durch die Jugoslawen und nach dem Abschlusse des Friedens von St. Germain erschien es notwendig, mit der Ausschreibung der Wahl bis zur Beendigung der Volksabstimmung und der durch diese gegebenen endgiltigen Entscheidung über das Schicksal und die geographischen Grenzen des Landes Kärnten zuzuwarten.</p>
+                        <p>Maßgebend war hiebei vor allem die Erwägung, dass das eingangs erwähnte Gesetz einen anderen Gebietsumfang Kärntens vorgesehen hatte und daher nicht nur eine Abänderung dieses Gesetzes überhaupt erfolgen muss, sondern auch für eine sofort vorzunehmende Wahl eine einstweilige gesetzliche Regelung erfolgen musste. Man hoffte damals auch allgemein, dass der Friedensvertrag von St. Germain in absehbarer Zeit von drei Großmächten ratifiziert und innerhalb dreier Monate nach Ratifizierung die Durchführung der Volksabstimmung erfolgen werde.</p>
+                        <p>Da sich diese Erwartung bisher nicht verwirklichte, wenn auch heute aller Voraussicht nach die Ratifikation des Friedensvertrages nicht mehr allzu lange auf sich warten lassen dürfte, wurde bereits mehrfach der Wunsch laut, nunmehr ohne Rücksicht auf den Zeitpunkt der Volksabstimmung sobald als möglich die Ausschreibung der Landtagswahlen zu veranlassen, um auch in Kärnten die Einberufung eines verfassunggebenden Landtages endlich zu ermöglichen.</p>
+                        <p>Bevor ich diese Angelegenheit den Kärntner Landesrate zur Schlussfassung vorlege, wäre es mir von großem Werte, Ihre Stellungnahme, sehr geehrter Herr Staatskanzler, namentlich auch in Ihrer Eigenschaft als Staatssekretär für Äußeres kennen zu lernen, wobei <pb facs="krp-0169_a01-0004"/>ich jedoch meinen Bedenken insbesondere dahin Ausdruck geben möchte. dass seitens der Abstimmungskommission im Klagenfurter Becken, welche nach den neuesten Mitteilungen <hi rend="#u">in den allernächsten Tagen eintreffen dürfte</hi>, wohl kaum die Zustimmung zur Durchführung der Wahl in der Zone II des Abstimmungsgebietes zu erlangen sein wird, da über die Zugehörigkeit dieses Gebietes zu Österreich, bzw. zu Kärnten eben erst durch die Abstimmung entschieden werden soll.</p>
+                        <p>Über offiziöse Intervention der bisherigen interalliierten Mission tagt ja auch die Provisorische Landesversammlung nicht in Klagenfurt, sondern außerhalb des Abstimmungsgebietes in St. Veit [an der Glan]. Auf jeden Fall könnte ein Landtag, welcher unter Ausschaltung des ganzen Klagenfurter Gebietes oder auch nur der Zone I dieses Gebietes gewählt worden wäre, nur ein Rumpfparlament darstellen und könnte dessen Berechtigung, für das ganze Land bindende Entschlüsse zu fassen, mit Recht in Zweifel gezogen werden. </p>
+                        <p>Nach meiner persönlichen Meinung müsste daher in Berücksichtigung der außergewöhnlichen Verhältnisse in Kärnten mit der Durchführung der Wahlen unbedingt bis zur Beendigung der Volksabstimmung zugewartet werden müssen.</p>
+                        <p>Ich wäre Ihnen, sehr geehrter Herr Staatskanzler, für die baldige Bekanntgabe Ihres Standpunktes in dieser Angelegenheit sehr verbunden.“</p>
+                        <p>Der Herr Staatskanzler hat diese Zuschrift des Herrn Landesverwesers von Kärnten mit einem Schreiben vom 24. März 1920 zur Kenntnis genommen. Die Staatskanzlei glaubt, diesen Sachverhalt dem Kabinettsrate zur vertraulichen Kenntnis bringen zu sollen.</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>
