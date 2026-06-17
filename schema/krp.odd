@@ -176,6 +176,19 @@
           </attList>
         </elementSpec>
         
+        <!-- footnotes -->
+        
+        <elementSpec ident="note" mode="change">
+          <constraintSpec ident="footnote-attrib" scheme="schematron" mode="add">
+            <constraint>
+              <sch:rule context="tei:note[@type='footnote']">
+                <sch:assert test="matches(normalize-space(@n), '^\d+$')"
+                  >&lt;note&gt;-Elemente vom Typ "footnote" tragen @n-Attribute mit numerischen Werten.</sch:assert>
+              </sch:rule>
+            </constraint>
+          </constraintSpec>
+        </elementSpec>
+        
         <!-- tables -->
 
         <elementSpec ident="table" mode="change">
