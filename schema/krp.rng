@@ -5,9 +5,9 @@
          xmlns:xlink="http://www.w3.org/1999/xlink"
          datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
          ns="http://www.tei-c.org/ns/1.0"><!--
-Schema generated from ODD source 2026-06-17T12:36:52Z. . 
-TEI Edition: P5 Version 4.10.2. Last updated on 4th September 2025, revision bcfa98f42 
-TEI Edition Location: https://www.tei-c.org/Vault/P5/4.10.2/ 
+Schema generated from ODD source 2026-08-20T11:36:50Z. . 
+TEI Edition: P5 Version 4.12.0. Last updated on 28th July 2026, revision 113e933e2 
+TEI Edition Location: https://www.tei-c.org/Vault/P5/4.12.0/ 
   
 --><!--[https://creativecommons.org/licenses/by/4.0/deed.de] Lizenziert unter CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/deed.de)-->
    <define name="tei_krpmacro.abContent">
@@ -652,7 +652,7 @@ Suggested values include: 1] internal; 2] external; 3] conjecture</a:documentati
    <define name="tei_krpatt.global.rendition.attribute.rendition">
       <optional>
          <attribute name="rendition">
-            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">points to a description of the rendering or presentation used for this element in the source text.</a:documentation>
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Darstellungsverweis) verweist auf eine Beschreibung der Darstellung oder Präsentation, die für dieses Element im Quelltext verwendet wurde.</a:documentation>
             <list>
                <oneOrMore>
                   <data type="anyURI">
@@ -731,7 +731,7 @@ Suggested values include: 1] internal; 2] external; 3] conjecture</a:documentati
          <sch:let name="srcs" value="tokenize( normalize-space(@source),' ')"/>
          <sch:report test="(   self::tei:classRef                                 | self::tei:dataRef                                 | self::tei:elementRef                                 | self::tei:macroRef                                 | self::tei:moduleRef                                 | self::tei:schemaSpec )                                   and                                   $srcs[2]">
               When used on a schema description element (like
-              <sch:value-of select="name(.)"/>), the @source attribute
+              &lt;<sch:value-of select="name(.)"/>&gt;), the @source attribute
               should have only 1 value. (This one has <sch:value-of select="count($srcs)"/>.)
             </sch:report>
       </sch:rule>
@@ -802,47 +802,47 @@ Sample values include: 1] image; 2] character; 3] theme; 4] allusion</a:document
    <define name="tei_krpatt.measurement.attribute.unit">
       <optional>
          <attribute name="unit">
-            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(unit) indicates the units used for the measurement, usually using the standard symbol for the desired units.
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Einheit) gibt die verwendeten Einheiten an, in der Regel das jeweilige Standardsymbol der gewünschten Messeinheiten.
 Suggested values include: 1] m (metre); 2] kg (kilogram); 3] s (second); 4] Hz (hertz); 5] Pa (pascal); 6] Ω (ohm); 7] L (litre); 8] t (tonne); 9] ha (hectare); 10] Å (ångström); 11] mL (millilitre); 12] cm (centimetre); 13] dB (decibel); 14] kbit (kilobit); 15] Kibit (kibibit); 16] kB (kilobyte); 17] KiB (kibibyte); 18] MB (megabyte); 19] MiB (mebibyte)</a:documentation>
             <choice>
                <value>m</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(metre) SI base unit of length</a:documentation>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Meter) SI-Basiseinheit der Länge</a:documentation>
                <value>kg</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(kilogram) SI base unit of mass</a:documentation>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Kilogramm) SI-Basiseinheit der Masse</a:documentation>
                <value>s</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(second) SI base unit of time</a:documentation>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Sekunde) SI-Basiseinheit der Zeit</a:documentation>
                <value>Hz</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(hertz) SI unit of frequency</a:documentation>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Hertz) SI-Einheit der Frequenz</a:documentation>
                <value>Pa</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(pascal) SI unit of pressure or stress</a:documentation>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Pascal) SI-Basiseinheit des Drucks</a:documentation>
                <value>Ω</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(ohm) SI unit of electric resistance</a:documentation>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Ohm) SI-Einheit des Widerstands</a:documentation>
                <value>L</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(litre) 1 dm³</a:documentation>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Liter) 1 dm³</a:documentation>
                <value>t</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(tonne) 10³ kg</a:documentation>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Tonne) 10³ kg</a:documentation>
                <value>ha</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(hectare) 1 hm²</a:documentation>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Hektar) 1 hm²</a:documentation>
                <value>Å</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(ångström) 10⁻¹⁰ m</a:documentation>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Angström) 10⁻¹⁰ m</a:documentation>
                <value>mL</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(millilitre) </a:documentation>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Milliliter) </a:documentation>
                <value>cm</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(centimetre) </a:documentation>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Zentimeter) </a:documentation>
                <value>dB</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(decibel) see remarks, below</a:documentation>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Dezibel) siehe Anmerkungen unten</a:documentation>
                <value>kbit</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(kilobit) 10³ or 1000 bits</a:documentation>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Kilobit) 10³ oder 1000 Bits</a:documentation>
                <value>Kibit</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(kibibit) 2¹⁰ or 1024 bits</a:documentation>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Kibibit) 2¹⁰ oder 1024 Bits</a:documentation>
                <value>kB</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(kilobyte) 10³ or 1000 bytes</a:documentation>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Kilobyte) 10³ oder 1000 Bytes</a:documentation>
                <value>KiB</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(kibibyte) 2¹⁰ or 1024 bytes</a:documentation>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Kibibyte) 2¹⁰ oder 1024 Bytes</a:documentation>
                <value>MB</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(megabyte) 10⁶ or 1 000 000 bytes</a:documentation>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Megabyte) 10⁶ oder 1 000 000 Bytes</a:documentation>
                <value>MiB</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(mebibyte) 2²⁰ or 1 048 576 bytes</a:documentation>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Mebibyte) 2²⁰ oder 1 048 576 Bytes</a:documentation>
                <data type="token">
                   <param name="pattern">[^\p{C}\p{Z}]+</param>
                </data>
@@ -890,16 +890,6 @@ Suggested values include: 1] m (metre); 2] kg (kilogram); 3] s (second); 4] Hz (
          </attribute>
       </optional>
    </define>
-   <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-            id="tei_krp-att.measurement-att-measurement-unitRef-constraint-rule-6">
-      <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
-                xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                xmlns:xi="http://www.w3.org/2001/XInclude"
-                context="tei:*[@unitRef]">
-         <sch:report role="info" test="@unit">The @unit attribute may be unnecessary when @unitRef is present.</sch:report>
-      </sch:rule>
-   </pattern>
    <define name="tei_krpatt.notated.attributes">
       <ref name="tei_krpatt.notated.attribute.notation"/>
    </define>
@@ -980,13 +970,13 @@ Suggested values include: 1] top; 2] bottom; 3] margin; 4] opposite; 5] overleaf
       </optional>
    </define>
    <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-            id="tei_krp-att.pointing-targetLang-targetLang-constraint-rule-7">
+            id="tei_krp-att.pointing-targetLang-targetLang-constraint-rule-6">
       <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                 xmlns:rng="http://relaxng.org/ns/structure/1.0"
                 xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                 xmlns:xi="http://www.w3.org/2001/XInclude"
                 context="tei:*[not(self::tei:schemaSpec)][@targetLang]">
-         <sch:assert test="@target">@targetLang should only be used on <sch:name/> if @target is specified.</sch:assert>
+         <sch:assert test="@target">@targetLang should only be used on &lt;<sch:name/>&gt; if @target is specified.</sch:assert>
       </sch:rule>
    </pattern>
    <define name="tei_krpatt.pointing.attribute.target">
@@ -1181,14 +1171,14 @@ Suggested values include: 1] sole; 2] major; 3] minor</a:documentation>
       </optional>
    </define>
    <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-            id="tei_krp-att.spanning-spanTo-spanTo-points-to-following-constraint-rule-8">
+            id="tei_krp-att.spanning-spanTo-spanTo-points-to-following-constraint-rule-7">
       <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                 xmlns:rng="http://relaxng.org/ns/structure/1.0"
                 xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                 xmlns:xi="http://www.w3.org/2001/XInclude"
                 context="tei:*[ starts-with( @spanTo, '#') ]">
          <sch:assert test="id( substring( @spanTo, 2 ) ) &gt;&gt; .">
-	      The element indicated by @spanTo (<sch:value-of select="@spanTo"/>) must follow the current <sch:name/> element 
+              The element indicated by @spanTo (<sch:value-of select="@spanTo"/>) must follow the current &lt;<sch:name/>&gt; element.
             </sch:assert>
       </sch:rule>
    </pattern>
@@ -1225,13 +1215,13 @@ Suggested values include: 1] sole; 2] major; 3] minor</a:documentation>
       </optional>
    </define>
    <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-            id="tei_krp-att.styleDef-schemeVersion-schemeVersionRequiresScheme-constraint-rule-9">
+            id="tei_krp-att.styleDef-schemeVersion-schemeVersionRequiresScheme-constraint-rule-8">
       <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                 xmlns:rng="http://relaxng.org/ns/structure/1.0"
                 xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                 xmlns:xi="http://www.w3.org/2001/XInclude"
                 context="tei:*[@schemeVersion]">
-         <sch:assert test="@scheme and not(@scheme = 'free')">
+         <sch:assert test="@scheme and not(@scheme eq 'free')">
               @schemeVersion can only be used if @scheme is specified.
             </sch:assert>
       </sch:rule>
@@ -1261,13 +1251,15 @@ Suggested values include: 1] sole; 2] major; 3] minor</a:documentation>
       </optional>
    </define>
    <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-            id="tei_krp-att.typed-subtypeTyped-constraint-rule-10">
+            id="tei_krp-att.typed-subtypeTyped-constraint-rule-9">
       <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                 xmlns:rng="http://relaxng.org/ns/structure/1.0"
                 xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                 xmlns:xi="http://www.w3.org/2001/XInclude"
                 context="tei:*[@subtype]">
-         <sch:assert test="@type">The <sch:name/> element should not be categorized in detail with @subtype unless also categorized in general with @type</sch:assert>
+         <sch:assert test="@type">
+          The &lt;<sch:name/>&gt; element should not be categorized in detail with @subtype unless also categorized in general with @type.
+        </sch:assert>
       </sch:rule>
    </pattern>
    <define name="tei_krpatt.written.attributes">
@@ -1336,19 +1328,19 @@ Suggested values include: 1] sole; 2] major; 3] minor</a:documentation>
    <define name="tei_krpatt.dimensions.attribute.unit">
       <optional>
          <attribute name="unit">
-            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">names the unit used for the measurement
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">benennt die verwendeten Einheiten für die Messung
 Suggested values include: 1] cm (centimetres); 2] mm (millimetres); 3] in (inches); 4] line; 5] char (characters)</a:documentation>
             <choice>
                <value>cm</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(centimetres) </a:documentation>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Zentimeter) </a:documentation>
                <value>mm</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(millimetres) </a:documentation>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Millimeter) </a:documentation>
                <value>in</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(inches) </a:documentation>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Zoll) </a:documentation>
                <value>line</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">lines of text</a:documentation>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Textzeilen</a:documentation>
                <value>char</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(characters) characters of text</a:documentation>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Zeichen) Textzeichen</a:documentation>
                <data type="token">
                   <param name="pattern">[^\p{C}\p{Z}]+</param>
                </data>
@@ -1420,6 +1412,8 @@ Sample values include: 1] all; 2] most; 3] range</a:documentation>
             <choice>
                <value>composite</value>
                <a:documentation>no claim is made about the sequence in which the immediate contents of this division are to be processed, or their inter-relationships.</a:documentation>
+               <value>parallel</value>
+               <a:documentation>the contents of this element are intended to represent simultaneous or side-by-side delivery.</a:documentation>
                <value>uniform</value>
                <a:documentation>the immediate contents of this element are regarded as forming a logical unit, to be processed in sequence.</a:documentation>
             </choice>
@@ -4499,6 +4493,7 @@ Sample values include: 1] rubbing; 2] mildew; 3] smoke</a:documentation>
    <define name="tei_krpmodel.divTopPart">
       <choice>
          <ref name="tei_krpmodel.headLike"/>
+         <ref name="tei_krpaddress"/>
          <ref name="tei_krpopener"/>
          <ref name="tei_krpsigned"/>
       </choice>
@@ -4535,6 +4530,7 @@ Sample values include: 1] rubbing; 2] mildew; 3] smoke</a:documentation>
    </define>
    <define name="tei_krpmodel.divBottomPart">
       <choice>
+         <ref name="tei_krpaddress"/>
          <ref name="tei_krptrailer"/>
          <ref name="tei_krpcloser"/>
          <ref name="tei_krpsigned"/>
@@ -5219,7 +5215,7 @@ Sample values include: 1] rubbing; 2] mildew; 3] smoke</a:documentation>
       </optional>
    </define>
    <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-            id="tei_krp-att.calendarSystem-calendar-calendar_attr_on_empty_element-constraint-rule-11">
+            id="tei_krp-att.calendarSystem-calendar-calendar_attr_on_empty_element-constraint-rule-10">
       <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                 xmlns:rng="http://relaxng.org/ns/structure/1.0"
                 xmlns:sch="http://purl.oclc.org/dsdl/schematron"
@@ -5227,7 +5223,7 @@ Sample values include: 1] rubbing; 2] mildew; 3] smoke</a:documentation>
                 context="tei:*[@calendar]">
          <sch:assert test="string-length( normalize-space(.) ) gt 0"> @calendar indicates one or more
               systems or calendars to which the date represented by the content of this element belongs,
-              but this <sch:name/> element has no textual content.</sch:assert>
+              but this &lt;<sch:name/>&gt; element has no textual content.</sch:assert>
       </sch:rule>
    </pattern>
    <define name="tei_krpatt.duration.iso.attributes">
@@ -5287,27 +5283,27 @@ Suggested values include: 1] page; 2] column; 3] line; 4] book; 5] poem; 6] cant
    </define>
    <define name="tei_krpp">
       <element name="p">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Absatz) markiert einen Absatz in einem Prosatext. [3.1. Paragraphs 7.2.5. Speech Contents]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Absatz) markiert einen Absatz in einem Prosatext. [3.1. Paragraphs 7.2.6. Speech Contents]</a:documentation>
          <ref name="tei_krpmacro.paraContent"/>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_krp-p-abstractModel-structure-p-in-ab-or-p-constraint-rule-12">
+                  id="tei_krp-p-abstractModel-structure-p-in-ab-or-p-constraint-rule-11">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       context="tei:p">
                <sch:report test="(ancestor::tei:ab or ancestor::tei:p) and                        not( ancestor::tei:floatingText                           | parent::tei:exemplum                           | parent::tei:item                           | parent::tei:note                           | parent::tei:q                           | parent::tei:quote                           | parent::tei:remarks                           | parent::tei:said                           | parent::tei:sp                           | parent::tei:stage                           | parent::tei:cell                           | parent::tei:figure )">
-          Abstract model violation: Paragraphs may not occur inside other paragraphs or ab elements.
+          Abstract model violation: Paragraphs may not occur inside other paragraphs or &lt;ab&gt; elements.
         </sch:report>
             </sch:rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_krp-p-abstractModel-structure-p-in-l-constraint-rule-13">
+                  id="tei_krp-p-abstractModel-structure-p-in-l-constraint-rule-12">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       context="tei:l//tei:p">
                <sch:assert test="ancestor::tei:floatingText | parent::tei:figure | parent::tei:note">
-          Abstract model violation: Metrical lines may not contain higher-level structural elements such as div, p, or ab, unless p is a child of figure or note, or is a descendant of floatingText.
+          Abstract model violation: Metrical lines (&lt;l&gt; elements) may not contain higher-level structural elements such as &lt;div&gt;, &lt;p&gt;, or &lt;ab&gt;, unless &lt;p&gt; is a child of &lt;figure&gt; or &lt;note&gt;, or is a descendant of &lt;floatingText&gt;.
         </sch:assert>
             </sch:rule>
          </pattern>
@@ -5482,6 +5478,7 @@ Suggested values include: 1] page; 2] column; 3] line; 4] book; 5] poem; 6] cant
          <ref name="tei_krpatt.global.attributes"/>
          <ref name="tei_krpatt.ascribed.directed.attributes"/>
          <ref name="tei_krpatt.cmc.attributes"/>
+         <ref name="tei_krpatt.typed.attribute.subtype"/>
          <optional>
             <attribute name="type">
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Typ) kann verwendet werden, um anzuzeigen, ob die abgesetzte Textpassage gesprochen oder gedacht wird, oder um sie auf andere Weise detaillierter zu beschreiben.
@@ -5547,7 +5544,7 @@ Suggested values include: 1] spoken (spoken); 2] thought (thought); 3] written (
    </define>
    <define name="tei_krpsoCalled">
       <element name="soCalled">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(so called) contains a word or phrase for which the author or narrator indicates a disclaiming of responsibility, for example by the use of scare quotes or italics. [3.3.3. Quotation]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(sogenannt) enthält ein Wort oder eine Phrase, für die der Autor oder Erzähler einen Haftungsausschluss anzeigt, zum Beispiel durch den Einsatz von Anführungszeichen oder Kursivschrift. [3.3.3. Quotation]</a:documentation>
          <ref name="tei_krpmacro.phraseSeq"/>
          <ref name="tei_krpatt.global.attributes"/>
          <ref name="tei_krpatt.cmc.attributes"/>
@@ -5560,7 +5557,7 @@ Suggested values include: 1] spoken (spoken); 2] thought (thought); 3] written (
          <ref name="tei_krpmacro.limitedContent"/>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_krp-desc-deprecationInfo-only-in-deprecated-constraint-rule-14">
+                  id="tei_krp-desc-deprecationInfo-only-in-deprecated-constraint-rule-13">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       context="tei:desc[ @type eq 'deprecationInfo']">
@@ -5598,6 +5595,7 @@ Suggested values include: 1] deprecationInfo (deprecation information)</a:docume
          <ref name="tei_krpatt.cReferencing.attributes"/>
          <ref name="tei_krpatt.cmc.attributes"/>
          <ref name="tei_krpatt.declaring.attributes"/>
+         <ref name="tei_krpatt.placement.attributes"/>
          <ref name="tei_krpatt.pointing.attributes"/>
          <ref name="tei_krpatt.typed.attributes"/>
          <empty/>
@@ -5659,11 +5657,11 @@ Suggested values include: 1] deprecationInfo (deprecation information)</a:docume
          </optional>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_krp-rt-target-rt-target-not-span-constraint-rule-15">
+                  id="tei_krp-rt-target-rt-target-not-span-constraint-rule-14">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       context="tei:rt/@target">
-               <sch:report test="../@from | ../@to">When target= is present, neither from= nor to= should be.</sch:report>
+               <sch:report test="../@from | ../@to">When @target is present, neither @from nor @to should be.</sch:report>
             </sch:rule>
          </pattern>
          <optional>
@@ -5676,11 +5674,11 @@ Suggested values include: 1] deprecationInfo (deprecation information)</a:docume
          </optional>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_krp-rt-from-rt-from-constraint-rule-16">
+                  id="tei_krp-rt-from-rt-from-constraint-rule-15">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       context="tei:rt/@from">
-               <sch:assert test="../@to">When from= is present, the to= attribute of <sch:name/> is required.</sch:assert>
+               <sch:assert test="../@to">When @from is present, the @to attribute of &lt;<sch:name/>&gt; is required.</sch:assert>
             </sch:rule>
          </pattern>
          <optional>
@@ -5693,11 +5691,11 @@ Suggested values include: 1] deprecationInfo (deprecation information)</a:docume
          </optional>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_krp-rt-to-rt-to-constraint-rule-17">
+                  id="tei_krp-rt-to-rt-to-constraint-rule-16">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       context="tei:rt/@to">
-               <sch:assert test="../@from">When to= is present, the from= attribute of <sch:name/> is required.</sch:assert>
+               <sch:assert test="../@from">When @to is present, the @from attribute of &lt;<sch:name/>&gt; is required.</sch:assert>
             </sch:rule>
          </pattern>
          <empty/>
@@ -5928,11 +5926,22 @@ Sample values include: 1] rubbing; 2] mildew; 3] smoke</a:documentation>
          <ref name="tei_krpmacro.phraseSeq"/>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_krp-rs-rs-ref-pattern-constraint-rule-18">
+                  id="tei_krp-rs-rs-ref-pattern-constraint-rule-17">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       context="tei:rs">
                <sch:assert test="every $r in tokenize(@ref, '\s+') satisfies matches($r, concat('^#krp_', @type, '_id__\d+$'))">In &lt;rs&gt;-Elementen entspricht jeder @ref-Wert dem Muster "#krp_{type}_id__{n}" und stimmt mit @type überein.</sch:assert>
+            </sch:rule>
+         </pattern>
+         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+                  xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                  id="tei_krp-rs-rs-subtype-constraint-rule-18">
+            <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                      xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                      context="tei:rs[@subtype]">
+               <sch:assert test="@type = 'person'">
+                  @subtype-Attribute können ausschließlich &lt;rs&gt;-Elemente vom @type "person" genauer spezifizieren.
+                </sch:assert>
             </sch:rule>
          </pattern>
          <ref name="tei_krpatt.global.attributes"/>
@@ -5940,7 +5949,6 @@ Sample values include: 1] rubbing; 2] mildew; 3] smoke</a:documentation>
          <ref name="tei_krpatt.naming.attribute.role"/>
          <ref name="tei_krpatt.naming.attribute.nymRef"/>
          <ref name="tei_krpatt.canonical.attribute.key"/>
-         <ref name="tei_krpatt.typed.attribute.subtype"/>
          <attribute name="ref">
             <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(reference) provides an explicit means of locating a full definition or identity for the entity being named by means of one or more URIs.</a:documentation>
             <list>
@@ -5960,12 +5968,21 @@ Sample values include: 1] rubbing; 2] mildew; 3] smoke</a:documentation>
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
                <value>work</value>
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-               <value>organization</value>
+               <value>org</value>
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
                <value>event</value>
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
             </choice>
          </attribute>
+         <optional>
+            <attribute name="subtype">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(subtype) provides a sub-categorization of the element, if needed.</a:documentation>
+               <choice>
+                  <value>talking-minister</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               </choice>
+            </attribute>
+         </optional>
          <empty/>
       </element>
    </define>
@@ -5993,7 +6010,43 @@ Sample values include: 1] rubbing; 2] mildew; 3] smoke</a:documentation>
             </oneOrMore>
          </group>
          <ref name="tei_krpatt.global.attributes"/>
+         <ref name="tei_krpatt.canonical.attributes"/>
          <ref name="tei_krpatt.cmc.attributes"/>
+         <ref name="tei_krpatt.typed.attribute.subtype"/>
+         <optional>
+            <attribute name="type">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">characterizes the address in some sense, using any convenient classification scheme or typology.
+Suggested values include: 1] billing; 2] delivery; 3] mailing; 4] military; 5] physical</a:documentation>
+               <choice>
+                  <value>billing</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">the address to which a bill for goods or services should be sent.</a:documentation>
+                  <value>delivery</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">the address to which packages should be sent via a private delivery service.</a:documentation>
+                  <value>mailing</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">the address to which mail should be sent via a public postal service.</a:documentation>
+                  <value>military</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">the address to which mail to deployed military personnel should be sent.</a:documentation>
+                  <value>physical</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">the address of a building irrespective of where mail to its occupants should be sent (for example, for the fire department).</a:documentation>
+                  <data type="token">
+                     <param name="pattern">[^\p{C}\p{Z}]+</param>
+                  </data>
+               </choice>
+            </attribute>
+         </optional>
+         <optional>
+            <attribute name="role">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">specifies further information about the purpose of the address.
+Sample values include: 1] sender; 2] return; 3] recipient ; 4] work; 5] home; 6] start; 7] finish; 8] pickup; 9] dropOff</a:documentation>
+               <list>
+                  <oneOrMore>
+                     <data type="token">
+                        <param name="pattern">[^\p{C}\p{Z}]+</param>
+                     </data>
+                  </oneOrMore>
+               </list>
+            </attribute>
+         </optional>
          <empty/>
       </element>
    </define>
@@ -6207,7 +6260,7 @@ Sample values include: 1] suspension (suspension); 2] contraction (contraction);
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       context="tei:ptr">
-               <sch:report test="@target and @cRef">Only one of the attributes @target and @cRef may be supplied on <sch:name/>.</sch:report>
+               <sch:report test="@target and @cRef">Only one of the attributes @target and @cRef may be supplied on &lt;<sch:name/>&gt;.</sch:report>
             </sch:rule>
          </pattern>
          <ref name="tei_krpatt.global.attributes"/>
@@ -6230,7 +6283,7 @@ Sample values include: 1] suspension (suspension); 2] contraction (contraction);
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       context="tei:ref">
-               <sch:report test="@target and @cRef">Only one of the attributes @target and @cRef may be supplied on <sch:name/>.</sch:report>
+               <sch:report test="@target and @cRef">Only one of the attributes @target and @cRef may be supplied on &lt;<sch:name/>&gt;.</sch:report>
             </sch:rule>
          </pattern>
          <ref name="tei_krpatt.global.attributes"/>
@@ -6295,7 +6348,11 @@ Sample values include: 1] suspension (suspension); 2] contraction (contraction);
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       context="tei:list[@type='gloss']">
-               <sch:assert test="tei:label">The content of a "gloss" list should include a sequence of one or more pairs of a label element followed by an item element</sch:assert>
+               <sch:assert test="tei:label">
+          The content of a "gloss" list should include a sequence of
+          one or more pairs of a &lt;label&gt; element followed by an
+          &lt;item&gt; element.
+        </sch:assert>
             </sch:rule>
          </pattern>
          <ref name="tei_krpatt.global.attributes"/>
@@ -6397,6 +6454,7 @@ Suggested values include: 1] gloss (gloss); 2] index (index); 3] instructions (i
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       context="tei:note[@type='footnote']">
                <sch:assert test="matches(normalize-space(@n), '^\d+$')">&lt;note&gt;-Elemente vom Typ "footnote" tragen @n-Attribute mit numerischen Werten.</sch:assert>
+               <sch:assert test="@target = concat('#fn_krp-', /tei:TEI/tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:title[@level='a'][@type='main']/@n, '_', normalize-space(@n))">&lt;note&gt;-Elemente vom Typ "footnote" tragen @target-Attribute, deren Werte dem Muster "#fn_krp-{@n in &lt;title level="a" type="main"&gt;}_{@n des &lt;note&gt;-Elements}" entsprechen.</sch:assert>
             </sch:rule>
          </pattern>
          <ref name="tei_krpatt.global.attributes"/>
@@ -6569,7 +6627,7 @@ Elements]</a:documentation>
    <define name="tei_krplb">
       <element name="lb">
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Zeilenanfang) markiert den Anfang einer neuen typographischen Zeile in einer bestimmten Auflage oder Version eines Textes. [3.11.3. Milestone
-Elements 7.2.5. Speech Contents]</a:documentation>
+Elements 7.2.6. Speech Contents]</a:documentation>
          <empty/>
          <ref name="tei_krpatt.global.attributes"/>
          <ref name="tei_krpatt.breaking.attributes"/>
@@ -7013,8 +7071,8 @@ Sample values include: 1] main; 2] sub (subordinate); 3] alt (alternate); 4] sho
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       context="tei:relatedItem">
-               <sch:report test="@target and count( child::* ) &gt; 0">If the @target attribute on <sch:name/> is used, the relatedItem element must be empty</sch:report>
-               <sch:assert test="@target or child::*">A relatedItem element should have either a @target attribute or a child element to indicate the related bibliographic item</sch:assert>
+               <sch:report test="@target and count( child::* ) &gt; 0">If the @target attribute on <sch:name/> is used, the relatedItem element must be empty.</sch:report>
+               <sch:assert test="@target or child::*">A relatedItem element should have either a @target attribute or a child element to indicate the related bibliographic item.</sch:assert>
             </sch:rule>
          </pattern>
          <ref name="tei_krpatt.global.attributes"/>
@@ -7032,7 +7090,7 @@ Sample values include: 1] main; 2] sub (subordinate); 3] alt (alternate); 4] sho
    </define>
    <define name="tei_krpl">
       <element name="l">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Vers(zeile)) enthält eine einzelne, möglicherweise unvollständige, Verszeile. [3.13.1. Core Tags for Verse 3.13. Passages of Verse or Drama 7.2.5. Speech Contents]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Vers(zeile)) enthält eine einzelne, möglicherweise unvollständige, Verszeile. [3.13.1. Core Tags for Verse 3.13. Passages of Verse or Drama 7.2.6. Speech Contents]</a:documentation>
          <zeroOrMore>
             <choice>
                <text/>
@@ -7048,7 +7106,7 @@ Sample values include: 1] main; 2] sub (subordinate); 3] alt (alternate); 4] sho
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       context="tei:l">
-               <sch:report test="ancestor::tei:l[not(.//tei:note//tei:l[. = current()])]">Abstract model violation: Lines may not contain lines or lg elements.</sch:report>
+               <sch:report test="ancestor::tei:l[not(.//tei:note//tei:l[. = current()])]">Abstract model violation: Metrical lines (&lt;l&gt; elements) may not contain &lt;l&gt; or &lt;lg&gt; elements.</sch:report>
             </sch:rule>
          </pattern>
          <ref name="tei_krpatt.global.attributes"/>
@@ -7059,7 +7117,7 @@ Sample values include: 1] main; 2] sub (subordinate); 3] alt (alternate); 4] sho
    </define>
    <define name="tei_krplg">
       <element name="lg">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Gruppe von Vers(zeil)en) enthält eine oder mehrere Verse bzw. Verszeilen, die zusammen eine formale Einheit (z. B. Strophe, Refrain) bilden. [3.13.1. Core Tags for Verse 3.13. Passages of Verse or Drama 7.2.5. Speech Contents]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Gruppe von Vers(zeil)en) enthält eine oder mehrere Verse bzw. Verszeilen, die zusammen eine formale Einheit (z. B. Strophe, Refrain) bilden. [3.13.1. Core Tags for Verse 3.13. Passages of Verse or Drama 7.2.6. Speech Contents]</a:documentation>
          <group>
             <zeroOrMore>
                <choice>
@@ -7097,7 +7155,7 @@ Sample values include: 1] main; 2] sub (subordinate); 3] alt (alternate); 4] sho
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       context="tei:lg">
-               <sch:assert test="count(descendant::tei:lg|descendant::tei:l|descendant::tei:gap) &gt; 0">An lg element must contain at least one child l, lg, or gap element.</sch:assert>
+               <sch:assert test="count(descendant::tei:lg|descendant::tei:l|descendant::tei:gap) &gt; 0">An &lt;lg&gt; element must contain at least one child &lt;l&gt;, &lt;lg&gt;, or &lt;gap&gt; element.</sch:assert>
             </sch:rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
@@ -7120,68 +7178,19 @@ Sample values include: 1] main; 2] sub (subordinate); 3] alt (alternate); 4] sho
    <define name="tei_krpsp">
       <element name="sp">
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Figurenrede) enthält eine einzelne Figurenrede in einem Dramentext oder eine entsprechende Passage in einem Prosatext oder lyrischen Text. [3.13.2. Core Tags for Drama 3.13. Passages of Verse or Drama 7.2.2. Speeches and Speakers]</a:documentation>
-         <group>
-            <zeroOrMore>
-               <ref name="tei_krpmodel.global"/>
-            </zeroOrMore>
-            <zeroOrMore>
-               <ref name="tei_krpmodel.stageLike"/>
-               <zeroOrMore>
-                  <ref name="tei_krpmodel.global"/>
-               </zeroOrMore>
-            </zeroOrMore>
+         <zeroOrMore>
             <choice>
-               <group>
-                  <group>
-                     <ref name="tei_krpspeaker"/>
-                     <zeroOrMore>
-                        <ref name="tei_krpmodel.global"/>
-                     </zeroOrMore>
-                  </group>
-                  <group>
-                     <choice>
-                        <ref name="tei_krplg"/>
-                        <ref name="tei_krpmodel.lLike"/>
-                        <ref name="tei_krpmodel.pLike"/>
-                        <ref name="tei_krpmodel.listLike"/>
-                        <ref name="tei_krpmodel.attributable"/>
-                        <ref name="tei_krpq"/>
-                        <ref name="tei_krpmodel.stageLike"/>
-                     </choice>
-                     <zeroOrMore>
-                        <ref name="tei_krpmodel.global"/>
-                     </zeroOrMore>
-                  </group>
-               </group>
-               <group>
-                  <choice>
-                     <ref name="tei_krplg"/>
-                     <ref name="tei_krpmodel.lLike"/>
-                     <ref name="tei_krpmodel.pLike"/>
-                     <ref name="tei_krpmodel.listLike"/>
-                     <ref name="tei_krpmodel.attributable"/>
-                     <ref name="tei_krpq"/>
-                  </choice>
-                  <zeroOrMore>
-                     <ref name="tei_krpmodel.global"/>
-                  </zeroOrMore>
-               </group>
+               <ref name="tei_krpmodel.stageLike"/>
+               <ref name="tei_krpmodel.global"/>
+               <ref name="tei_krpmodel.lLike"/>
+               <ref name="tei_krpmodel.pLike"/>
+               <ref name="tei_krpmodel.listLike"/>
+               <ref name="tei_krpmodel.attributable"/>
+               <ref name="tei_krpspeaker"/>
+               <ref name="tei_krplg"/>
+               <ref name="tei_krpq"/>
             </choice>
-            <zeroOrMore>
-               <choice>
-                  <ref name="tei_krplg"/>
-                  <ref name="tei_krpmodel.lLike"/>
-                  <ref name="tei_krpmodel.pLike"/>
-                  <ref name="tei_krpmodel.listLike"/>
-                  <ref name="tei_krpmodel.attributable"/>
-                  <ref name="tei_krpq"/>
-                  <ref name="tei_krpmodel.stageLike"/>
-               </choice>
-               <zeroOrMore>
-                  <ref name="tei_krpmodel.global"/>
-               </zeroOrMore>
-            </zeroOrMore>
-         </group>
+         </zeroOrMore>
          <ref name="tei_krpatt.global.attributes"/>
          <ref name="tei_krpatt.ascribed.directed.attributes"/>
          <ref name="tei_krpatt.placement.attributes"/>
@@ -7201,11 +7210,12 @@ Sample values include: 1] main; 2] sub (subordinate); 3] alt (alternate); 4] sho
    </define>
    <define name="tei_krpstage">
       <element name="stage">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Regieanweisung) enthält jegliche Regieanweisung in einem Dramentext oder -fragment. [3.13.2. Core Tags for Drama 3.13. Passages of Verse or Drama 7.2.4. Stage Directions]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Regieanweisung) enthält jegliche Regieanweisung in einem Dramentext oder -fragment. [3.13.2. Core Tags for Drama 3.13. Passages of Verse or Drama 7.2.5. Stage Directions]</a:documentation>
          <ref name="tei_krpmacro.specialPara"/>
          <ref name="tei_krpatt.global.attributes"/>
          <ref name="tei_krpatt.ascribed.directed.attributes"/>
          <ref name="tei_krpatt.cmc.attributes"/>
+         <ref name="tei_krpatt.performed.attributes"/>
          <ref name="tei_krpatt.placement.attributes"/>
          <ref name="tei_krpatt.written.attributes"/>
          <optional>
@@ -7213,7 +7223,7 @@ Sample values include: 1] main; 2] sub (subordinate); 3] alt (alternate); 4] sho
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">beschreibt die Art der Regieanweisung.
 Suggested values include: 1] setting; 2] entrance; 3] exit; 4] business; 5] novelistic; 6] delivery; 7] modifier; 8] location; 9] mixed</a:documentation>
                <list>
-                  <zeroOrMore>
+                  <oneOrMore>
                      <choice>
                         <value>setting</value>
                         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">beschreibt die Szenerie.</a:documentation>
@@ -7237,7 +7247,7 @@ Suggested values include: 1] setting; 2] entrance; 3] exit; 4] business; 5] nove
                            <param name="pattern">[^\p{C}\p{Z}]+</param>
                         </data>
                      </choice>
-                  </zeroOrMore>
+                  </oneOrMore>
                </list>
             </attribute>
          </optional>
@@ -7843,7 +7853,7 @@ Suggested values include: 1] ISBN; 2] ISSN; 3] DOI; 4] URI; 5] VIAF; 6] ESTC; 7]
                       xmlns:xi="http://www.w3.org/2001/XInclude"
                       context="tei:quotation">
                <sch:report test="not( @marks )  and  not( tei:p )">
-          On <sch:name/>, either the @marks attribute should be used, or a paragraph of description provided
+          On &lt;<sch:name/>&gt;, either the @marks attribute should be used, or a paragraph of description provided.
         </sch:report>
             </sch:rule>
          </pattern>
@@ -8127,7 +8137,7 @@ Sample values include: 1] first-line; 2] first-letter; 3] before; 4] after</a:do
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:xi="http://www.w3.org/2001/XInclude"
                       context="tei:citeStructure[not(parent::tei:citeStructure)]">
-               <sch:assert test="starts-with(@match,'/')">An XPath in @match on the outer <sch:name/> must start with '/'.</sch:assert>
+               <sch:assert test="starts-with(@match,'/')">An XPath in @match on the outer &lt;<sch:name/>&gt; must start with '/'.</sch:assert>
             </sch:rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
@@ -8137,7 +8147,7 @@ Sample values include: 1] first-line; 2] first-letter; 3] before; 4] after</a:do
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:xi="http://www.w3.org/2001/XInclude"
                       context="tei:citeStructure[parent::tei:citeStructure]">
-               <sch:assert test="not(starts-with(@match,'/'))">An XPath in @match must not start with '/' except on the outer <sch:name/>.</sch:assert>
+               <sch:assert test="not(starts-with(@match,'/'))">An XPath in @match must not start with '/' except on the outer &lt;<sch:name/>&gt;.</sch:assert>
             </sch:rule>
          </pattern>
          <optional>
@@ -9173,7 +9183,7 @@ Suggested values include: 1] sent; 2] received; 3] transmitted; 4] redirected; 5
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       context="tei:l//tei:div">
                <sch:assert test="ancestor::tei:floatingText">
-          Abstract model violation: Metrical lines may not contain higher-level structural elements such as div, unless div is a descendant of floatingText.
+          Abstract model violation: Metrical lines (&lt;l&gt; elements) may not contain higher-level structural elements such as &lt;div&gt;, unless &lt;div&gt; is a descendant of &lt;floatingText&gt;.
         </sch:assert>
             </sch:rule>
          </pattern>
@@ -9184,7 +9194,7 @@ Suggested values include: 1] sent; 2] received; 3] transmitted; 4] redirected; 5
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       context="tei:div">
                <sch:report test="(ancestor::tei:p or ancestor::tei:ab) and not(ancestor::tei:floatingText)">
-          Abstract model violation: p and ab may not contain higher-level structural elements such as div, unless div is a descendant of floatingText.
+          Abstract model violation: &lt;p&gt; and &lt;ab&gt; may not contain higher-level structural elements such as &lt;div&gt;, unless &lt;div&gt; is a descendant of &lt;floatingText&gt;.
         </sch:report>
             </sch:rule>
          </pattern>
@@ -9996,6 +10006,23 @@ Suggested values include: 1] main (main); 2] sub (subordinate); 3] alt (alternat
          <empty/>
       </element>
    </define>
+   <define name="tei_krpatt.performed.attributes">
+      <ref name="tei_krpatt.performed.attribute.perf"/>
+   </define>
+   <define name="tei_krpatt.performed.attribute.perf">
+      <optional>
+         <attribute name="perf">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(performance) identifies the performance or performances in which this element occurred.</a:documentation>
+            <list>
+               <oneOrMore>
+                  <data type="anyURI">
+                     <param name="pattern">\S+</param>
+                  </data>
+               </oneOrMore>
+            </list>
+         </attribute>
+      </optional>
+   </define>
    <define name="tei_krpset">
       <element name="set">
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(setting) contains a description of the setting, time, locale, appearance, etc., of the action of a play, typically found in the front matter of a printed performance text (not a stage direction). [7.1. Front and Back Matter
@@ -10136,6 +10163,7 @@ Suggested values include: 1] main (main); 2] sub (subordinate); 3] alt (alternat
             </zeroOrMore>
          </group>
          <ref name="tei_krpatt.global.attributes"/>
+         <ref name="tei_krpatt.performed.attributes"/>
          <empty/>
       </element>
    </define>
@@ -10170,6 +10198,7 @@ Suggested values include: 1] main (main); 2] sub (subordinate); 3] alt (alternat
             </rng:optional>
          </group>
          <ref name="tei_krpatt.global.attributes"/>
+         <ref name="tei_krpatt.performed.attributes"/>
          <empty/>
       </element>
    </define>
@@ -10186,6 +10215,7 @@ Suggested values include: 1] main (main); 2] sub (subordinate); 3] alt (alternat
             </choice>
          </zeroOrMore>
          <ref name="tei_krpatt.global.attributes"/>
+         <ref name="tei_krpatt.performed.attributes"/>
          <ref name="tei_krpatt.typed.attribute.subtype"/>
          <optional>
             <attribute xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
@@ -10208,6 +10238,7 @@ Suggested values include: 1] main (main); 2] sub (subordinate); 3] alt (alternat
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(role) contains the name of a dramatic role, as given in a cast list. [7.1.4. Cast Lists]</a:documentation>
          <ref name="tei_krpmacro.phraseSeq"/>
          <ref name="tei_krpatt.global.attributes"/>
+         <ref name="tei_krpatt.performed.attributes"/>
          <optional>
             <attribute name="gender">
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">specifies the gender of the role.</a:documentation>
@@ -10237,6 +10268,7 @@ Suggested values include: 1] main (main); 2] sub (subordinate); 3] alt (alternat
          <ref name="tei_krpmacro.phraseSeq"/>
          <ref name="tei_krpatt.global.attributes"/>
          <ref name="tei_krpatt.canonical.attributes"/>
+         <ref name="tei_krpatt.performed.attributes"/>
          <optional>
             <attribute name="sex">
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">specifies the sex of the actor.</a:documentation>
@@ -10266,7 +10298,7 @@ Suggested values include: 1] main (main); 2] sub (subordinate); 3] alt (alternat
    </define>
    <define name="tei_krpspGrp">
       <element name="spGrp">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(speech group) contains a group of speeches or songs in a performance text presented in a source as constituting a single unit or number. [7.2.3. Grouped Speeches]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(speech group) contains a group of speeches, speech groups, or songs in a performance text presented in a source as constituting a single unit or number. [7.2.3. Grouped Speeches]</a:documentation>
          <group>
             <zeroOrMore>
                <ref name="tei_krpmodel.headLike"/>
@@ -10275,22 +10307,25 @@ Suggested values include: 1] main (main); 2] sub (subordinate); 3] alt (alternat
                <choice>
                   <ref name="tei_krpmodel.global"/>
                   <ref name="tei_krpsp"/>
+                  <ref name="tei_krpspGrp"/>
                   <ref name="tei_krpmodel.stageLike"/>
                </choice>
             </oneOrMore>
          </group>
          <ref name="tei_krpatt.global.attributes"/>
          <ref name="tei_krpatt.ascribed.directed.attributes"/>
+         <ref name="tei_krpatt.divLike.attributes"/>
          <ref name="tei_krpatt.typed.attributes"/>
          <empty/>
       </element>
    </define>
    <define name="tei_krpmove">
       <element name="move">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(movement) marks the actual movement of one or more characters. [7.2.4. Stage Directions]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(movement) marks the actual movement of one or more characters. [7.2.5. Stage Directions]</a:documentation>
          <empty/>
          <ref name="tei_krpatt.global.attributes"/>
          <ref name="tei_krpatt.ascribed.directed.attributes"/>
+         <ref name="tei_krpatt.performed.attributes"/>
          <ref name="tei_krpatt.typed.attribute.subtype"/>
          <optional>
             <attribute name="type">
@@ -10327,19 +10362,6 @@ Sample values include: 1] L (left); 2] R (right); 3] C (center)</a:documentation
                </list>
             </attribute>
          </optional>
-         <optional>
-            <attribute name="perf">
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(performance) identifies the performance or performances in which this movement occurred as specified by pointing to one or more <code xmlns="http://www.w3.org/1999/xhtml"
-                        xmlns:rng="http://relaxng.org/ns/structure/1.0">&lt;performance&gt;</code> elements.</a:documentation>
-               <list>
-                  <oneOrMore>
-                     <data type="anyURI">
-                        <param name="pattern">\S+</param>
-                     </data>
-                  </oneOrMore>
-               </list>
-            </attribute>
-         </optional>
          <empty/>
       </element>
    </define>
@@ -10348,6 +10370,7 @@ Sample values include: 1] L (left); 2] R (right); 3] C (center)</a:documentation
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(view) describes the visual context of some part of a screen play in terms of what the spectator sees, generally independent of any dialogue. [7.3.1. Technical Information 7.3. Other Types of Performance Text]</a:documentation>
          <ref name="tei_krpmacro.specialPara"/>
          <ref name="tei_krpatt.global.attributes"/>
+         <ref name="tei_krpatt.performed.attributes"/>
          <empty/>
       </element>
    </define>
@@ -10356,6 +10379,7 @@ Sample values include: 1] L (left); 2] R (right); 3] C (center)</a:documentation
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(camera) describes a particular camera angle or viewpoint in a screen play. [7.3.1. Technical Information 7.3. Other Types of Performance Text]</a:documentation>
          <ref name="tei_krpmacro.paraContent"/>
          <ref name="tei_krpatt.global.attributes"/>
+         <ref name="tei_krpatt.performed.attributes"/>
          <ref name="tei_krpatt.typed.attributes"/>
          <empty/>
       </element>
@@ -10365,6 +10389,7 @@ Sample values include: 1] L (left); 2] R (right); 3] C (center)</a:documentation
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(sound) describes a sound effect or musical sequence specified within a screen play or radio script. [7.3.1. Technical Information 7.3. Other Types of Performance Text]</a:documentation>
          <ref name="tei_krpmacro.paraContent"/>
          <ref name="tei_krpatt.global.attributes"/>
+         <ref name="tei_krpatt.performed.attributes"/>
          <ref name="tei_krpatt.typed.attribute.subtype"/>
          <optional>
             <attribute name="type">
@@ -10396,6 +10421,7 @@ Sample values include: 1] L (left); 2] R (right); 3] C (center)</a:documentation
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Beschriftung) contains the text of a caption or other text displayed as part of a film script or screenplay. [7.3.1. Technical Information 7.3. Other Types of Performance Text]</a:documentation>
          <ref name="tei_krpmacro.paraContent"/>
          <ref name="tei_krpatt.global.attributes"/>
+         <ref name="tei_krpatt.performed.attributes"/>
          <empty/>
       </element>
    </define>
@@ -10404,6 +10430,7 @@ Sample values include: 1] L (left); 2] R (right); 3] C (center)</a:documentation
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(technical stage direction) describes a special-purpose stage direction that is not meant for the actors. [7.3.1. Technical Information]</a:documentation>
          <ref name="tei_krpmacro.paraContent"/>
          <ref name="tei_krpatt.global.attributes"/>
+         <ref name="tei_krpatt.performed.attributes"/>
          <ref name="tei_krpatt.typed.attribute.subtype"/>
          <optional>
             <attribute name="type">
@@ -10422,19 +10449,6 @@ Suggested values include: 1] light; 2] sound; 3] prop; 4] block</a:documentation
                      <param name="pattern">[^\p{C}\p{Z}]+</param>
                   </data>
                </choice>
-            </attribute>
-         </optional>
-         <optional>
-            <attribute name="perf">
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(performance) points to one or more <code xmlns="http://www.w3.org/1999/xhtml"
-                        xmlns:rng="http://relaxng.org/ns/structure/1.0">&lt;performance&gt;</code> elements documenting the performance or performances to which this technical direction applies.</a:documentation>
-               <list>
-                  <oneOrMore>
-                     <data type="anyURI">
-                        <param name="pattern">\S+</param>
-                     </data>
-                  </oneOrMore>
-               </list>
             </attribute>
          </optional>
          <empty/>
@@ -11017,7 +11031,7 @@ Suggested values include: 1] tempo; 2] loud; 3] pitch; 4] tension; 5] rhythm; 6]
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       context="tei:s">
-               <sch:report test="tei:s">You may not nest one s element within another: use seg instead</sch:report>
+               <sch:report test="tei:s">You may not nest one &lt;s&gt; element within another: use &lt;seg&gt; instead.</sch:report>
             </sch:rule>
          </pattern>
          <ref name="tei_krpatt.global.attributes"/>
@@ -11178,8 +11192,8 @@ Suggested values include: 1] tempo; 2] loud; 3] pitch; 4] tension; 5] rhythm; 6]
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       context="tei:span">
                <sch:report test="@from and @target">
-          Only one of the attributes @target and @from may be supplied on <sch:name/>
-               </sch:report>
+          Only one of the attributes @target and @from may be supplied on &lt;<sch:name/>&gt;.
+        </sch:report>
             </sch:rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
@@ -11189,8 +11203,8 @@ Suggested values include: 1] tempo; 2] loud; 3] pitch; 4] tension; 5] rhythm; 6]
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       context="tei:span">
                <sch:report test="@to and @target">
-          Only one of the attributes @target and @to may be supplied on <sch:name/>
-               </sch:report>
+          Only one of the attributes @target and @to may be supplied on &lt;<sch:name/>&gt;.
+        </sch:report>
             </sch:rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
@@ -11200,7 +11214,7 @@ Suggested values include: 1] tempo; 2] loud; 3] pitch; 4] tension; 5] rhythm; 6]
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       context="tei:span">
                <sch:report test="@to and not(@from)">
-          If @to is supplied on <sch:name/>, @from must be supplied as well
+          If @to is supplied on &lt;<sch:name/>&gt;, @from must be supplied as well.
         </sch:report>
             </sch:rule>
          </pattern>
@@ -11211,7 +11225,7 @@ Suggested values include: 1] tempo; 2] loud; 3] pitch; 4] tension; 5] rhythm; 6]
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       context="tei:span">
                <sch:report test="contains(normalize-space(@to),' ') or contains(normalize-space(@from),' ')">
-          The attributes @to and @from on <sch:name/> may each contain only a single value
+          The attributes @to and @from on &lt;<sch:name/>&gt; may each contain only a single value.
         </sch:report>
             </sch:rule>
          </pattern>
@@ -11359,7 +11373,7 @@ Suggested values include: 1] tempo; 2] loud; 3] pitch; 4] tension; 5] rhythm; 6]
                       context="tei:msContents|tei:physDesc|tei:history|tei:additional">
                <sch:let name="gi" value="name(.)"/>
                <sch:report test="preceding-sibling::*[ name(.) eq $gi ]                           and                           not( following-sibling::*[ name(.) eq $gi ] )">
-          Only one <sch:name/> is allowed as a child of <sch:value-of select="name(..)"/>.
+          Only one &lt;<sch:name/>&gt; is allowed as a child of &lt;<sch:value-of select="name(..)"/>&gt;.
         </sch:report>
             </sch:rule>
          </pattern>
@@ -11382,7 +11396,7 @@ Suggested values include: 1] tempo; 2] loud; 3] pitch; 4] tension; 5] rhythm; 6]
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:xi="http://www.w3.org/2001/XInclude"
                       context="tei:catchwords">
-               <sch:assert test="ancestor::tei:msDesc or ancestor::tei:egXML">The <sch:name/> element should not be used outside of msDesc.</sch:assert>
+               <sch:assert test="ancestor::tei:msDesc or ancestor::tei:egXML">The &lt;<sch:name/>&gt; element should not be used outside of &lt;msDesc&gt;.</sch:assert>
             </sch:rule>
          </pattern>
          <ref name="tei_krpatt.global.attributes"/>
@@ -11406,13 +11420,13 @@ Suggested values include: 1] tempo; 2] loud; 3] pitch; 4] tension; 5] rhythm; 6]
                       xmlns:xi="http://www.w3.org/2001/XInclude"
                       context="tei:dimensions">
                <sch:report test="count(tei:width) gt 1">
-          The element <sch:name/> may appear once only
+          The element &lt;<sch:name/>&gt; may appear once only.
         </sch:report>
                <sch:report test="count(tei:height) gt 1">
-          The element <sch:name/> may appear once only
+          The element &lt;<sch:name/>&gt; may appear once only.
         </sch:report>
                <sch:report test="count(tei:depth) gt 1">
-          The element <sch:name/> may appear once only
+          The element &lt;<sch:name/>&gt; may appear once only.
         </sch:report>
             </sch:rule>
          </pattern>
@@ -11621,7 +11635,7 @@ Sample values include: 1] binding; 2] endband; 3] slipcase; 4] support; 5] tie</
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:xi="http://www.w3.org/2001/XInclude"
                       context="tei:secFol">
-               <sch:assert test="ancestor::tei:msDesc or ancestor::tei:egXML">The <sch:name/> element should not be used outside of msDesc.</sch:assert>
+               <sch:assert test="ancestor::tei:msDesc or ancestor::tei:egXML">The &lt;<sch:name/>&gt; element should not be used outside of &lt;msDesc&gt;.</sch:assert>
             </sch:rule>
          </pattern>
          <ref name="tei_krpatt.global.attributes"/>
@@ -11639,7 +11653,7 @@ Sample values include: 1] binding; 2] endband; 3] slipcase; 4] support; 5] tie</
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:xi="http://www.w3.org/2001/XInclude"
                       context="tei:signatures">
-               <sch:assert test="ancestor::tei:msDesc or ancestor::tei:egXML">The <sch:name/> element should not be used outside of msDesc.</sch:assert>
+               <sch:assert test="ancestor::tei:msDesc or ancestor::tei:egXML">The &lt;<sch:name/>&gt; element should not be used outside of &lt;msDesc&gt;.</sch:assert>
             </sch:rule>
          </pattern>
          <ref name="tei_krpatt.global.attributes"/>
@@ -11718,7 +11732,7 @@ Sample values include: 1] binding; 2] endband; 3] slipcase; 4] support; 5] tie</
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:xi="http://www.w3.org/2001/XInclude"
                       context="tei:msIdentifier">
-               <sch:report test="not( parent::tei:msPart )                           and                           ( child::*[1]/self::idno  or  child::*[1]/self::altIdentifier  or  normalize-space(.) eq '')">An msIdentifier must contain either a repository or location.</sch:report>
+               <sch:report test="not( parent::tei:msPart )                           and                           ( child::*[1]/self::idno  or  child::*[1]/self::altIdentifier  or  normalize-space(.) eq '')">An &lt;msIdentifier&gt; must contain either a &lt;repository&gt; or &lt;location&gt;.</sch:report>
             </sch:rule>
          </pattern>
          <ref name="tei_krpatt.global.attributes"/>
@@ -12793,20 +12807,20 @@ Suggested values include: 1] paper; 2] parch (parchment); 3] mixed</a:documentat
    <define name="tei_krpatt.coordinated.attribute.points">
       <optional>
          <attribute name="points">
-            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">identifies a two dimensional area by means of a series of pairs of numbers, each of which gives the x,y coordinates of a point on a line enclosing the area.</a:documentation>
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">identifies a two or three dimensional area by means of a series of pairs of numbers, each of which gives the x,y, or z coordinates of a point on a line enclosing the area.</a:documentation>
             <list>
                <data type="token">
-                  <param name="pattern">(-?[0-9]+(\.[0-9]+)?,-?[0-9]+(\.[0-9]+)?)</param>
+                  <param name="pattern">(-?[0-9]+(\.[0-9]+)?,-?[0-9]+(\.[0-9]+)?(,-?[0-9]+(\.[0-9]+)?)?)</param>
                </data>
                <data type="token">
-                  <param name="pattern">(-?[0-9]+(\.[0-9]+)?,-?[0-9]+(\.[0-9]+)?)</param>
+                  <param name="pattern">(-?[0-9]+(\.[0-9]+)?,-?[0-9]+(\.[0-9]+)?(,-?[0-9]+(\.[0-9]+)?)?)</param>
                </data>
                <data type="token">
-                  <param name="pattern">(-?[0-9]+(\.[0-9]+)?,-?[0-9]+(\.[0-9]+)?)</param>
+                  <param name="pattern">(-?[0-9]+(\.[0-9]+)?,-?[0-9]+(\.[0-9]+)?(,-?[0-9]+(\.[0-9]+)?)?)</param>
                </data>
                <zeroOrMore>
                   <data type="token">
-                     <param name="pattern">(-?[0-9]+(\.[0-9]+)?,-?[0-9]+(\.[0-9]+)?)</param>
+                     <param name="pattern">(-?[0-9]+(\.[0-9]+)?,-?[0-9]+(\.[0-9]+)?(,-?[0-9]+(\.[0-9]+)?)?)</param>
                   </data>
                </zeroOrMore>
             </list>
@@ -12844,7 +12858,7 @@ Suggested values include: 1] paper; 2] parch (parchment); 3] mixed</a:documentat
                       xmlns:xi="http://www.w3.org/2001/XInclude"
                       context="tei:facsimile//tei:line | tei:facsimile//tei:zone">
                <sch:report test="child::text()[ normalize-space(.) ne '']">
-          A facsimile element represents a text with images, thus
+          A &lt;facsimile&gt; element represents a text with images, thus
           transcribed text should not be present within it.
         </sch:report>
             </sch:rule>
@@ -12872,7 +12886,7 @@ Suggested values include: 1] paper; 2] parch (parchment); 3] mixed</a:documentat
    </define>
    <define name="tei_krpsurface">
       <element name="surface">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">defines a written surface as a two-dimensional coordinate space, optionally grouping one or more graphic representations of that space, zones of interest within that space, and, when using an embedded transcription approach, transcriptions of the writing within them. [12.1. Digital Facsimiles 12.2.2. Embedded Transcription]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">defines a written surface as a two-dimensional or three-dimensional coordinate space, optionally grouping one or more graphic representations of that space, zones of interest within that space, and, when using an embedded transcription approach, transcriptions of the writing within them. [12.1. Digital Facsimiles 12.2.2. Embedded Transcription]</a:documentation>
          <group>
             <zeroOrMore>
                <choice>
@@ -12992,7 +13006,7 @@ Sample values include: 1] glued; 2] pinned; 3] sewn</a:documentation>
                <sch:let name="lastY" value="xs:float( substring-after( $lastPair, ',') )"/>
                <sch:report test="$firstX eq $lastX and $firstY eq $lastY">The first and
           last elements of this path are the same. To specify a closed polygon, use
-          the zone element rather than the path element. </sch:report>
+          the &lt;zone&gt; element rather than the &lt;path&gt; element. </sch:report>
             </sch:rule>
          </pattern>
          <ref name="tei_krpatt.global.attributes"/>
@@ -13008,14 +13022,14 @@ Sample values include: 1] glued; 2] pinned; 3] sewn</a:documentation>
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">beschreibt eine Linie innerhalb eines Begrenzungsrahmens, der durch das Elternelement definiert ist, über eine Reihe von zwei oder mehr Zahlenpaaren, die jeweils die X- und Y-Koordinaten eines Punktes dieser Linie angeben.</a:documentation>
                <list>
                   <data type="token">
-                     <param name="pattern">(-?[0-9]+(\.[0-9]+)?,-?[0-9]+(\.[0-9]+)?)</param>
+                     <param name="pattern">(-?[0-9]+(\.[0-9]+)?,-?[0-9]+(\.[0-9]+)?(,-?[0-9]+(\.[0-9]+)?)?)</param>
                   </data>
                   <data type="token">
-                     <param name="pattern">(-?[0-9]+(\.[0-9]+)?,-?[0-9]+(\.[0-9]+)?)</param>
+                     <param name="pattern">(-?[0-9]+(\.[0-9]+)?,-?[0-9]+(\.[0-9]+)?(,-?[0-9]+(\.[0-9]+)?)?)</param>
                   </data>
                   <zeroOrMore>
                      <data type="token">
-                        <param name="pattern">(-?[0-9]+(\.[0-9]+)?,-?[0-9]+(\.[0-9]+)?)</param>
+                        <param name="pattern">(-?[0-9]+(\.[0-9]+)?,-?[0-9]+(\.[0-9]+)?(,-?[0-9]+(\.[0-9]+)?)?)</param>
                      </data>
                   </zeroOrMore>
                </list>
@@ -13036,7 +13050,7 @@ Sample values include: 1] glued; 2] pinned; 3] sewn</a:documentation>
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:xi="http://www.w3.org/2001/XInclude"
                       context="tei:addSpan">
-               <sch:assert test="@spanTo">The @spanTo attribute of <sch:name/> is required.</sch:assert>
+               <sch:assert test="@spanTo">The @spanTo attribute of &lt;<sch:name/>&gt; is required.</sch:assert>
             </sch:rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
@@ -13078,7 +13092,7 @@ Sample values include: 1] glued; 2] pinned; 3] sewn</a:documentation>
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:xi="http://www.w3.org/2001/XInclude"
                       context="tei:damageSpan">
-               <sch:assert test="@spanTo">The @spanTo attribute of <sch:name/> is required.</sch:assert>
+               <sch:assert test="@spanTo">The @spanTo attribute of &lt;<sch:name/>&gt; is required.</sch:assert>
             </sch:rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
@@ -13109,7 +13123,7 @@ Sample values include: 1] glued; 2] pinned; 3] sewn</a:documentation>
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:xi="http://www.w3.org/2001/XInclude"
                       context="tei:delSpan">
-               <sch:assert test="@spanTo">The @spanTo attribute of <sch:name/> is required.</sch:assert>
+               <sch:assert test="@spanTo">The @spanTo attribute of &lt;<sch:name/>&gt; is required.</sch:assert>
             </sch:rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
@@ -13293,7 +13307,7 @@ Sample values include: 1] header; 2] footer; 3] pageNum (page number); 4] lineNu
                       xmlns:xi="http://www.w3.org/2001/XInclude"
                       context="tei:subst">
                <sch:assert test="child::tei:add and (child::tei:del or child::tei:surplus)">
-                  <sch:name/> must have at least one child add and at least one child del or surplus</sch:assert>
+        &lt;<sch:name/>&gt; must have at least one child &lt;add&gt; and at least one child &lt;del&gt; or &lt;surplus&gt;.</sch:assert>
             </sch:rule>
          </pattern>
          <ref name="tei_krpatt.global.attributes"/>
@@ -13364,7 +13378,7 @@ Sample values include: 1] header; 2] footer; 3] pageNum (page number); 4] lineNu
    </define>
    <define name="tei_krpsecl">
       <element name="secl">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(secluded text) Secluded. Marks text present in the source which the editor believes to be genuine but out of its original place (which is unknown). [12.3.1.7. Text Omitted from or Supplied in the Transcription]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(secluded text) marks text present in the source which the editor believes to be genuine but out of its original place (which is unknown). [12.3.1.7. Text Omitted from or Supplied in the Transcription]</a:documentation>
          <ref name="tei_krpmacro.paraContent"/>
          <ref name="tei_krpatt.global.attributes"/>
          <ref name="tei_krpatt.dimensions.attributes"/>
@@ -13730,6 +13744,7 @@ Sample values include: 1] homeoteleuton; 2] homeoarchy; 3] paleographicConfusion
                <ref name="tei_krpdocTitle"/>
                <ref name="tei_krpepigraph"/>
                <ref name="tei_krpimprimatur"/>
+               <ref name="tei_krpspeaker"/>
                <ref name="tei_krptitlePart"/>
                <ref name="tei_krpepilogue"/>
                <ref name="tei_krpperformance"/>
@@ -13807,7 +13822,7 @@ Sample values include: 1] homeoteleuton; 2] homeoarchy; 3] paleographicConfusion
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       context="tei:rdgGrp">
-               <sch:assert test="count(tei:lem) lt 2">Only one &lt;lem&gt; element may appear within a &lt;rdgGrp&gt;</sch:assert>
+               <sch:assert test="count(tei:lem) lt 2">Only one &lt;lem&gt; element may appear within a &lt;rdgGrp&gt;.</sch:assert>
             </sch:rule>
          </pattern>
          <ref name="tei_krpatt.global.attributes"/>
@@ -14556,6 +14571,7 @@ Sample values include: 1] western; 2] sui; 3] subjective; 4] objective; 5] inWor
          <ref name="tei_krpatt.datable.attributes"/>
          <ref name="tei_krpatt.dimensions.attributes"/>
          <ref name="tei_krpatt.editLike.attributes"/>
+         <ref name="tei_krpatt.locatable.attributes"/>
          <ref name="tei_krpatt.naming.attributes"/>
          <ref name="tei_krpatt.typed.attribute.subtype"/>
          <optional>
@@ -14615,6 +14631,7 @@ Sample values include: 1] caesarean (caesarean section); 2] vaginal (vaginal del
          <ref name="tei_krpatt.datable.attributes"/>
          <ref name="tei_krpatt.dimensions.attributes"/>
          <ref name="tei_krpatt.editLike.attributes"/>
+         <ref name="tei_krpatt.locatable.attributes"/>
          <ref name="tei_krpatt.naming.attributes"/>
          <ref name="tei_krpatt.typed.attribute.subtype"/>
          <optional>
@@ -15154,6 +15171,7 @@ Sample values include: 1] primary; 2] other; 3] paid; 4] unpaid</a:documentation
             </zeroOrMore>
          </group>
          <ref name="tei_krpatt.global.attributes"/>
+         <ref name="tei_krpatt.datable.attributes"/>
          <ref name="tei_krpatt.editLike.attributes"/>
          <ref name="tei_krpatt.sortable.attributes"/>
          <ref name="tei_krpatt.typed.attributes"/>
@@ -15188,6 +15206,7 @@ Sample values include: 1] primary; 2] other; 3] paid; 4] unpaid</a:documentation
             </zeroOrMore>
          </choice>
          <ref name="tei_krpatt.global.attributes"/>
+         <ref name="tei_krpatt.datable.attributes"/>
          <ref name="tei_krpatt.editLike.attributes"/>
          <ref name="tei_krpatt.sortable.attributes"/>
          <optional>
@@ -15320,9 +15339,13 @@ Sample values include: 1] primary; 2] other; 3] paid; 4] unpaid</a:documentation
          <optional>
             <attribute name="role">
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">specifies the role of this group of participants in the interaction.</a:documentation>
-               <data type="token">
-                  <param name="pattern">[^\p{C}\p{Z}]+</param>
-               </data>
+               <list>
+                  <oneOrMore>
+                     <data type="token">
+                        <param name="pattern">[^\p{C}\p{Z}]+</param>
+                     </data>
+                  </oneOrMore>
+               </list>
             </attribute>
          </optional>
          <optional>
@@ -15451,6 +15474,7 @@ Sample values include: 1] e (e); 2] he (he); 3] she (she); 4] they (they)</a:doc
             </zeroOrMore>
          </group>
          <ref name="tei_krpatt.global.attributes"/>
+         <ref name="tei_krpatt.datable.attributes"/>
          <ref name="tei_krpatt.editLike.attributes"/>
          <ref name="tei_krpatt.sortable.attributes"/>
          <ref name="tei_krpatt.typed.attributes"/>
@@ -15512,7 +15536,7 @@ Sample values include: 1] e (e); 2] he (he); 3] she (she); 4] they (they)</a:doc
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:xi="http://www.w3.org/2001/XInclude"
                       context="tei:relation">
-               <sch:assert test="@ref or @key or @name">One of the attributes @name, @ref or @key must be supplied</sch:assert>
+               <sch:assert test="@ref or @key or @name">One of the attributes @name, @ref or @key must be supplied.</sch:assert>
             </sch:rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
@@ -15522,7 +15546,7 @@ Sample values include: 1] e (e); 2] he (he); 3] she (she); 4] they (they)</a:doc
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:xi="http://www.w3.org/2001/XInclude"
                       context="tei:relation">
-               <sch:report test="@active and @mutual">Only one of the attributes @active and @mutual may be supplied</sch:report>
+               <sch:report test="@active and @mutual">Only one of the attributes @active and @mutual may be supplied.</sch:report>
             </sch:rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
@@ -15532,7 +15556,7 @@ Sample values include: 1] e (e); 2] he (he); 3] she (she); 4] they (they)</a:doc
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:xi="http://www.w3.org/2001/XInclude"
                       context="tei:relation">
-               <sch:report test="@passive and not(@active)">the attribute @passive may be supplied only if the attribute @active is supplied</sch:report>
+               <sch:report test="@passive and not(@active)">the attribute @passive may be supplied only if the attribute @active is supplied.</sch:report>
             </sch:rule>
          </pattern>
          <ref name="tei_krpatt.global.attributes"/>
@@ -16254,8 +16278,7 @@ Suggested values include: 1] label; 2] data</a:documentation>
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:xi="http://www.w3.org/2001/XInclude"
                       context="tei:link">
-               <sch:assert test="contains(normalize-space(@target),' ')">You must supply at least two values for @target or  on <sch:name/>
-               </sch:assert>
+               <sch:assert test="contains(normalize-space(@target),' ')">You must supply at least two values for @target on &lt;<sch:name/>&gt;.</sch:assert>
             </sch:rule>
          </pattern>
          <ref name="tei_krpatt.global.attributes"/>
@@ -16297,7 +16320,7 @@ Suggested values include: 1] label; 2] data</a:documentation>
                       xmlns:xi="http://www.w3.org/2001/XInclude"
                       context="tei:l//tei:ab">
                <sch:assert test="ancestor::tei:floatingText | parent::tei:figure | parent::tei:note">
-          Abstract model violation: Metrical lines may not contain higher-level divisions such as p or ab, unless ab is a child of figure or note, or is a descendant of floatingText.
+          Abstract model violation: Metrical lines (&lt;l&gt; elements) may not contain higher-level divisions such as &lt;p&gt; or &lt;ab&gt;, unless &lt;ab&gt; is a child of &lt;figure&gt; or &lt;note&gt;, or is a descendant of &lt;floatingText&gt;.
         </sch:assert>
             </sch:rule>
          </pattern>
@@ -16322,7 +16345,7 @@ Suggested values include: 1] label; 2] data</a:documentation>
    </define>
    <define name="tei_krpseg">
       <element name="seg">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(arbiträres Segment) beschreibt Segmente eines Texts unterhalb des Chunk-Level. [17.3. Blocks, Segments, and Anchors 6.2. Components of the Verse Line 7.2.5. Speech Contents]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(arbiträres Segment) beschreibt Segmente eines Texts unterhalb des Chunk-Level. [17.3. Blocks, Segments, and Anchors 6.2. Components of the Verse Line 7.2.6. Speech Contents]</a:documentation>
          <ref name="tei_krpmacro.paraContent"/>
          <ref name="tei_krpatt.global.attributes"/>
          <ref name="tei_krpatt.cmc.attributes"/>
@@ -16478,8 +16501,8 @@ Suggested values include: 1] d (days); 2] h (hours); 3] min (minutes); 4] s (sec
                       xmlns:xi="http://www.w3.org/2001/XInclude"
                       context="tei:join">
                <sch:assert test="contains( normalize-space( @target ),' ')">
-          You must supply at least two values for @target on <sch:name/>
-               </sch:assert>
+          You must supply at least two values for @target on &lt;<sch:name/>&gt;.
+        </sch:assert>
             </sch:rule>
          </pattern>
          <ref name="tei_krpatt.global.attributes"/>
@@ -16642,23 +16665,10 @@ Suggested values include: 1] d (days); 2] h (hours); 3] min (minutes); 4] s (sec
    </define>
    <define name="tei_krpstandOff">
       <element name="standOff">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Functions as a container element for linked data, contextual information, and stand-off annotations embedded in a TEI document. [17.10. The standOff Container]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">functions as a container element for linked data, contextual information, and stand-off annotations embedded in a TEI document. [17.10. The standOff Container]</a:documentation>
          <oneOrMore>
             <ref name="tei_krpmodel.standOffPart"/>
          </oneOrMore>
-         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_krp-standOff-nested_standOff_should_be_typed-constraint-rule-63">
-            <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
-                      xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                      xmlns:xi="http://www.w3.org/2001/XInclude"
-                      context="tei:standOff">
-               <sch:assert test="@type or not(ancestor::tei:standOff)">This
-        <sch:name/> element must have a @type attribute, since it is
-        nested inside a <sch:name/>
-               </sch:assert>
-            </sch:rule>
-         </pattern>
          <ref name="tei_krpatt.global.attributes"/>
          <ref name="tei_krpatt.declaring.attributes"/>
          <ref name="tei_krpatt.typed.attributes"/>
