@@ -1,0 +1,7 @@
+# Normalise all text files to LF in the repository and in the working tree,
+# so that every clone holds identical bytes regardless of operating system.
+* text=auto eol=lf
+
+# XML is the critical case: the edition files are edited on Windows and Linux
+# alike, and mixed line endings would turn one-word changes into whole-file diffs.
+*.xml text eol=lf
