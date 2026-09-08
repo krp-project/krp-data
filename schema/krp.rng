@@ -5,7 +5,7 @@
          xmlns:xlink="http://www.w3.org/1999/xlink"
          datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
          ns="http://www.tei-c.org/ns/1.0"><!--
-Schema generated from ODD source 2026-08-20T11:36:50Z. . 
+Schema generated from ODD source 2026-09-08T13:01:48Z. . 
 TEI Edition: P5 Version 4.12.0. Last updated on 28th July 2026, revision 113e933e2 
 TEI Edition Location: https://www.tei-c.org/Vault/P5/4.12.0/ 
   
@@ -6449,12 +6449,16 @@ Suggested values include: 1] gloss (gloss); 2] index (index); 3] instructions (i
          <ref name="tei_krpmacro.specialPara"/>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_krp-note-footnote-attrib-constraint-rule-22">
+                  id="tei_krp-note-note-type-constraint-rule-22">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                      context="tei:note[@type='footnote']">
-               <sch:assert test="matches(normalize-space(@n), '^\d+$')">&lt;note&gt;-Elemente vom Typ "footnote" tragen @n-Attribute mit numerischen Werten.</sch:assert>
-               <sch:assert test="@target = concat('#fn_krp-', /tei:TEI/tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:title[@level='a'][@type='main']/@n, '_', normalize-space(@n))">&lt;note&gt;-Elemente vom Typ "footnote" tragen @target-Attribute, deren Werte dem Muster "#fn_krp-{@n in &lt;title level="a" type="main"&gt;}_{@n des &lt;note&gt;-Elements}" entsprechen.</sch:assert>
+                      context="tei:text//tei:note">
+               <sch:assert test="@type = 'footnote'">
+                  Innerhalb von &lt;text&gt; sind &lt;note&gt;-Elemente durch den @type "footnote" spezifiziert.
+                </sch:assert>
+               <sch:assert test="empty(@* except (@type, @subtype, @anchored))">
+                  Innerhalb von &lt;text&gt; sind &lt;note&gt;-Elemente ausschließlich durch @type- und (optional) @subtype-Attribute spezifiziert.
+                </sch:assert>
             </sch:rule>
          </pattern>
          <ref name="tei_krpatt.global.attributes"/>
@@ -6462,8 +6466,24 @@ Suggested values include: 1] gloss (gloss); 2] index (index); 3] instructions (i
          <ref name="tei_krpatt.cmc.attributes"/>
          <ref name="tei_krpatt.placement.attributes"/>
          <ref name="tei_krpatt.pointing.attributes"/>
-         <ref name="tei_krpatt.typed.attributes"/>
          <ref name="tei_krpatt.written.attributes"/>
+         <optional>
+            <attribute name="type">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">characterizes the element in some sense, using any convenient classification scheme or typology.</a:documentation>
+               <choice>
+                  <value>footnote</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               </choice>
+            </attribute>
+         </optional>
+         <optional>
+            <attribute name="subtype">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(subtype) provides a sub-categorization of the element, if needed.</a:documentation>
+               <data type="token">
+                  <param name="pattern">[^\p{C}\p{Z}]+</param>
+               </data>
+            </attribute>
+         </optional>
          <empty/>
       </element>
    </define>

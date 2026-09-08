@@ -136,7 +136,7 @@
               </sch:rule>
             </constraint>
           </constraintSpec>
-          <constraintSpec ident="rs-subtype" scheme="schematron" mode="add">
+          <constraintSpec ident="rs-subtype" scheme="schematron" mode="add"><!-- TODO: may be subject to change -->
             <constraint>
               <sch:rule context="tei:rs[@subtype]">
                 <sch:assert test="@type = 'person'">
@@ -158,7 +158,7 @@
                 <p>Im KRP-Schema deklarieren @type-Attribute in &lt;rs&gt; die Kategorie referenzierter Entitäten.</p>
               </remarks>
             </attDef>
-            <attDef ident="subtype" usage="opt" mode="change">
+            <attDef ident="subtype" usage="opt" mode="change"><!-- TODO: may be subject to change -->
               <valList type="closed" mode="replace">
                 <valItem ident="talking-minister"/>
               </valList>
@@ -196,16 +196,34 @@
         <!-- footnotes -->
         
         <elementSpec ident="note" mode="change">
-          <constraintSpec ident="footnote-attrib" scheme="schematron" mode="add">
+          <constraintSpec ident="note-type" scheme="schematron" mode="add">
             <constraint>
-              <sch:rule context="tei:note[@type='footnote']">
-                <sch:assert test="matches(normalize-space(@n), '^\d+$')"
-                  >&lt;note&gt;-Elemente vom Typ "footnote" tragen @n-Attribute mit numerischen Werten.</sch:assert>
-                <sch:assert test="@target = concat('#fn_krp-', /tei:TEI/tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:title[@level='a'][@type='main']/@n, '_', normalize-space(@n))"
-                  >&lt;note&gt;-Elemente vom Typ "footnote" tragen @target-Attribute, deren Werte dem Muster "#fn_krp-{@n in &lt;title level="a" type="main"&gt;}_{@n des &lt;note&gt;-Elements}" entsprechen.</sch:assert>
+              <sch:rule context="tei:text//tei:note">
+                <sch:assert test="@type = 'footnote'">
+                  Innerhalb von &lt;text&gt; sind &lt;note&gt;-Elemente durch den @type "footnote" spezifiziert.
+                </sch:assert>
+                <sch:assert test="empty(@* except (@type, @subtype, @anchored))"><!-- @anchored has RELAX NG default value and is injected by validator -->
+                  Innerhalb von &lt;text&gt; sind &lt;note&gt;-Elemente ausschließlich durch @type- und (optional) @subtype-Attribute spezifiziert.
+                </sch:assert>
               </sch:rule>
             </constraint>
           </constraintSpec>
+          <attList>
+            <attDef ident="type" usage="opt" mode="change">
+              <valList type="closed" mode="replace">
+                <valItem ident="footnote"/>
+              </valList>
+              <remarks>
+                <p>Im KRP-Schema werden editorische Kommentare in &lt;note&gt;-Elementen vom @type "footnote" erfasst.</p>
+              </remarks>
+            </attDef>
+            <attDef ident="subtype" usage="opt" mode="change">
+              <!-- TODO: add valList -->
+              <remarks>
+                <p>Im KRP-Schema kann der Wert des @subtype-Attributs die Kategorie des im &lt;note&gt;-Element vom @type "footnote" erfassten Kommentars spezifizieren.</p>
+              </remarks>
+            </attDef>
+          </attList>
         </elementSpec>
         
         <!-- tables -->
