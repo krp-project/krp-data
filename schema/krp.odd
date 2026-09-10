@@ -110,15 +110,8 @@
             <constraint>
               <sch:rule context="tei:TEI/tei:text/tei:body/tei:div">
                 <sch:assert test="count(tei:head) = 1 and tei:head[@type='dokument']">Das äußerste &lt;div&gt;-Element enthält genau einen &lt;head&gt;; dieser hat den @type-Wert "dokument".</sch:assert>
-                <sch:assert test="
-                              (count(tei:div) = 5 or (count(tei:div) = 6 and tei:div[6]/@type = 'anhaenge')) and
-                              tei:div[1]/@type = 'dokumentkopf' and
-                              tei:div[2]/@type = 'komponenten' and
-                              tei:div[3]/@type = 'beilagen' and
-                              tei:div[4]/@type = 'protokoll' and
-                              tei:div[5]/@type = 'stenogramme'">
-                  Das äußerste &lt;div&gt; enthält genau fünf &lt;div&gt;-Elemente mit den @type-Werten (in dieser Reihenfolge) "dokumentkopf", "komponenten", "beilagen", "protokoll", "stenogramme". 
-                  Optional kann es darüber hinaus ein &lt;div type="anhaenge"&gt; enthalten.
+                <sch:assert test="matches(string-join(tei:div/string(@type), ' '), '^dokumentkopf komponenten beilagen protokoll( stenogramme)?( anhaenge)?$')">
+                  Das äußerste &lt;div&gt; enthält &lt;div&gt;-Elemente mit den @type-Werten (in dieser Reihenfolge) "dokumentkopf", "komponenten", "beilagen", "protokoll"; optional folgen ein &lt;div type="stenogramme"&gt; und/oder ein &lt;div type="anhaenge"&gt;.
                 </sch:assert>
               </sch:rule>
             </constraint>
