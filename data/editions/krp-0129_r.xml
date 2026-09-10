@@ -1,0 +1,627 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href='http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:acdh="https://vocabs.acdh.oeaw.ac.at/schema#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xml:lang="de">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="a" type="main" n="0129">Kabinettsprotokoll Nr. 129 vom 12. Dezember 1919</title>
+            <title level="m" type="main" n="01">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <title level="m" type="sub" n="">Renner III (17. Oktober 1919 – 7. Juli 1920)</title>
+            <meeting>
+               <placeName key="https://d-nb.info/gnd/4066009-6">Wien</placeName>
+               <orgName key="https://d-nb.info/gnd/5162749-8">Kabinettsrat</orgName>
+               <date when-iso="1919-12-12"/>
+            </meeting>
+            <editor>
+               <persName key="https://d-nb.info/gnd/122481836"
+                         role="hasCreator"
+                         xml:id="hwohnout">
+                  <forename>Helmut</forename>
+                  <surname>Wohnout</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</affiliation>
+               <idno type="ORCID">0000-0002-3864-9839</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/120789825"
+                         role="hasCreator"
+                         xml:id="tolechowski">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0003-3291-6876</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/131679384"
+                         role="hasCreator"
+                         xml:id="rlein">
+                  <forename>Richard</forename>
+                  <surname>Lein</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0002-7502-0503</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="aholzer">
+                  <forename>Anna</forename>
+                  <surname>Holzer</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0005-3560-3500</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="dsoelkner">
+                  <forename>Dominik</forename>
+                  <surname>Sölkner</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-9895-7212</idno>
+            </editor>
+            <editor>
+               <persName role="hasContributor" xml:id="ischotzko">
+                  <forename>Ina</forename>
+                  <surname>Schotzko</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-5210-3713</idno>
+            </editor>
+            <funder n="1">
+               <orgName key="https://d-nb.info/gnd/2054142-9" role="hasFunder">Österreichischer Wissenschaftsfonds FWF</orgName>
+               <idno type="project">PAT1495024</idno>
+               <title type="project">Die Protokolle des österreichischen Kabinettsrates 1919–1920</title>
+            </funder>
+            <respStmt>
+               <resp>Projektverantwortung</resp>
+               <orgName key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Projektleitung</resp>
+               <persName key="https://d-nb.info/gnd/120789825" role="hasPrincipalInvestigator">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+                  <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+                  <idno type="ORCID">0000-0003-3291-6876</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Nationaler Forschungspartner</resp>
+               <orgName key="https://d-nb.info/gnd/1123037736" role="hasEnabler">Austrian Centre for Digital Humanities</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Digitalisierung der gedruckten Quellen</resp>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>TEI-Datenmodellierung</resp>
+               <persName role="hasContributor" xml:id="tfruehwirth">
+                  <forename>Timo</forename>
+                  <surname>Frühwirth</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-3997-5193</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technische Supervision</resp>
+               <persName key="https://d-nb.info/gnd/1043833846"
+                         role="hasContributor"
+                         xml:id="pandorfer">
+                  <forename>Peter</forename>
+                  <surname>Andorfer</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-9575-9372</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technisches Consulting und Vorbereitung der Druckausgabe</resp>
+               <persName key="https://d-nb.info/gnd/13281899X"
+                         role="hasContributor"
+                         xml:id="skurz">
+                  <forename>Stephan</forename>
+                  <surname>Kurz</surname>
+                  <affiliation key="https://d-nb.info/gnd/1202798799">Institut für die Erforschung der Habsburgermonarchie und des Balkanraumes</affiliation>
+                  <idno type="ORCID">0000-0003-2546-2570</idno>
+               </persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher key="https://d-nb.info/gnd/1001454-8">Österreichische Akademie der Wissenschaften</publisher>
+            <date when="2028"/>
+            <availability status="free">
+               <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">Lizenziert unter CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/deed.de)</licence>
+            </availability>
+            <idno type="ISBN_Print"/>
+            <idno type="ISBN_Part_epub"/>
+            <idno type="ISBN_Digital"/>
+            <idno type="DOI"/>
+            <idno type="DOI_zenodo"/>
+            <idno type="ebook_ID"/>
+         </publicationStmt>
+         <seriesStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="m" type="main">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <respStmt>
+               <resp>Bearbeitung und Herausgeberschaft</resp>
+               <orgName key="https://d-nb.info/gnd/2024703-5">Universität Wien</orgName>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+         </seriesStmt>
+         <notesStmt>
+            <note>Diese TEI-XML-Datei ist Grundlage für eine Druckausgabe der Edition.</note>
+            <relatedItem>
+               <biblStruct>
+                  <monogr>
+                     <imprint>
+                        <pubPlace key="https://d-nb.info/gnd/4066009-6">Wien</pubPlace>
+                        <publisher key="https://d-nb.info/gnd/2068748-5">Verlag der Österreichischen Akademie der Wissenschaften</publisher>
+                        <date when="2029"/>
+                     </imprint>
+                     <extent/>
+                  </monogr>
+                  <note>
+                     <idno/>
+                     <ptr/>
+                  </note>
+                  <citedRange/>
+               </biblStruct>
+            </relatedItem>
+         </notesStmt>
+         <sourceDesc>
+            <bibl>Quellbestand: AT-OeStA/AdR MRang MR 1Rep KRP Kabinettsratsprotokolle, 1918-1920 (Teilbestand)<ref target="https://www.archivinformationssystem.at/detail.aspx?id=5465">https://www.archivinformationssystem.at/detail.aspx?id=5465</ref>
+            </bibl>
+            <msDesc>
+               <msIdentifier>
+                  <institution key="https://d-nb.info/gnd/37748-X" role="hasOwner">AT-OeStA Österreichisches Staatsarchiv (Archiv (ÖStA))</institution>
+                  <repository key="https://d-nb.info/gnd/1601181-8">AT-OeStA/AdR Archiv der Republik, 1918- (Abteilung)</repository>
+                  <collection>AT-OeStA/AdR MRang MR 1Rep Ministerrat 1. Republik, 1918 - 1938 (Bestand)</collection>
+                  <idno>AT-OeStA_AdR-MRang-MR-1.-Rep.-KRP-129</idno>
+               </msIdentifier>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <abstract>
+            <p>
+          <!--to be generated-->
+        </p>
+         </abstract>
+      </profileDesc>
+      <encodingDesc>
+         <styleDefDecl scheme="css"/>
+         <tagsDecl>
+            <rendition xml:id="b" scheme="css">font-weight:bold;</rendition>
+            <rendition xml:id="su" scheme="css">vertical-align:super;font-size:.7em;</rendition>
+            <rendition xml:id="s" scheme="css">text-decoration:line-through;</rendition>
+            <rendition xml:id="u" scheme="css">text-decoration:underline;</rendition>
+            <rendition xml:id="ow" scheme="css">text-decoration:line-through;text-decoration-style:double;</rendition>
+            <rendition xml:id="r" scheme="css">display:block;text-align:right;</rendition>
+            <rendition xml:id="letterspaced" scheme="css">letter-spacing:0.15em;</rendition>
+            <rendition xml:id="i" scheme="css">font-style:italic;</rendition>
+         </tagsDecl>
+         <editorialDecl>
+            <hyphenation>
+               <p>
+            <!--to be added-->
+          </p>
+            </hyphenation>
+            <correction>
+               <p>
+            <!--to be added-->
+          </p>
+            </correction>
+            <normalization>
+               <p>
+            <!--to be added-->
+          </p>
+            </normalization>
+            <punctuation>
+               <p>
+            <!--to be added-->
+          </p>
+            </punctuation>
+            <stdVals>
+               <p>
+            <!--to be added-->
+          </p>
+            </stdVals>
+            <p>
+          <!--to be added-->
+        </p>
+         </editorialDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#tfruehwirth" when-iso="2026-09-10">TEIGarage output upconverted with upconvert.xsl</change>
+         <change who="#tfruehwirth" when-iso="2026-09-10">TEI header populated with generate_tei_templates.py</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface/>
+   </facsimile>
+   <text>
+      <body>
+         <div xml:id="doc-krp-0129.xml">
+            <head type="dokument">
+               <title type="num">129.<note type="footnote">Das Protokoll trägt den Vermerk <hi rend="#i">Vertraulich!</hi>
+                  </note>
+               </title>
+               <title type="desc">
+                  <pb facs="krp-0129_r-0001"/>
+                  <pb facs="krp-0129_r-0002"/>
+                  <pb facs="krp-0129_r-0003"/>[Freitag] 1919-12-12</title>
+            </head>
+            <div type="dokumentkopf">
+               <div type="vorsitz">
+                  <head>Vorsitz:</head>
+                  <p>Fink</p>
+               </div>
+               <div type="anwesend">
+                  <head>Anwesend:</head>
+                  <p>Deutsch, Eisler, Eldersch, Ellenbogen, Glöckel, Hanusch, Mayr, Miklas, Ramek, Resch, Stöckler, Tandler, Waiss</p>
+               </div>
+               <div type="zugezogen">
+                  <head>Zugezogen:</head>
+                  <p>Beck, Boschan, Fischer, Froehlich, Grimm, Harpner, Ippen, Lanzendörfer, Schwarzwald, Stockhammer, Wilfling, Zedtwitz, Ziller</p>
+               </div>
+               <div type="schriftfuehrer">
+                  <head>Schriftführer:</head>
+                  <p>unbekannt</p>
+               </div>
+               <div type="dauer">
+                  <head>Dauer:</head>
+                  <p>15.00–19.45 Uhr</p>
+               </div>
+            </div>
+            <div type="komponenten">
+               <p>Reinschrift, Beilagen</p>
+            </div>
+            <div type="beilagen">
+               <head>Beilagen:</head>
+               <list>
+                  <item>
+                     <ref target="#krp-0129_top03">Zu TOP 3</ref>: <ref target="#krp-0129_b01">Gesetzesentwurf der Staatskanzlei über den Kriegsgeschädigtenfonds mit erläuternden Bemerkungen</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0129_top04">Zu TOP 4</ref>: <ref target="#krp-0129_b02">Erläuterungen der Staatskanzlei zur Regierungsvorlage über den Entwurf eines Gesetzes, womit Bestimmungen bezüglich der Auseinandersetzung mit den Nachfolgestaaten, geändert werden</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0129_top07">Zu TOP 7</ref>: <ref target="#krp-0129_b03">Entwurf der 2. Verfassungsgerichtshofnovelle mit erläuternden Bemerkungen</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0129_top09">Zu TOP 9</ref>: <ref target="#krp-0129_b04">Vortrag des Staatsamtes für Justiz über die Bestimmung des Titels Oberdirektor für die zu Beamten der VII. Rangklasse zu ernennenden Kanzlei- (Grundbuchs-) Direktoren</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0129_top10">Zu TOP 10</ref>: <ref target="#krp-0129_b05">Vortrag über den Gesetzesentwurf hinsichtlich der Verwendung von Teilen der Gebarungsüberschüsse der gemeinschaftlichen Waisenkasse samt Gesetzesentwurf</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0129_top11">Zu TOP 11</ref>: <ref target="#krp-0129_b06">Entwurf des Militärbesoldungsübergangsgesetzes mit Begründung</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0129_top12">Zu TOP 12</ref>: <ref target="#krp-0129_b07">Vortrag des St</ref>
+                     <ref target="#krp-0129_b07">aatsamtes</ref>
+                     <ref target="#krp-0129_b07">für Inneres und Unterricht</ref>
+                     <ref target="#krp-0129_b07"/>
+                     <ref target="#krp-0129_b07">Zl</ref>
+                     <ref target="#krp-0129_b07">.</ref>
+                     <ref target="#krp-0129_b07"> </ref>
+                     <ref target="#krp-0129_b07">44.623 über Beschlüsse des Landesausschusses bzw. Landesrates Kärntens in autonomen Finanzangelegenheiten</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0129_top13">Zu TOP 13</ref>: <ref target="#krp-0129_b08">Gesetzesentwurf über die Ermächtigung der Staatsregierung zu vorläufigen Verfügungen auf dem Gebiete des Notenbankenwesens mit Begründung</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0129_top14">Zu TOP 14</ref>: <ref target="#krp-0129_b09">Vortrag des Staatsamtes für Finanzen über den Gesetzesentwurf für die Eisenbahnverkehrssteuern</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0129_top14">Zu TOP 14</ref>: <ref target="#krp-0129_b10">Gesetzesentwurf über die Eisenbahnverkehrssteuern mit Begründung</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0129_top15">Zu TOP 15</ref>: <ref target="#krp-0129_b11">Vortrag des Staatsamtes für Finanzen über die Erwerbung eines Grundstückes für Zwecke der Tabakfabrik in Linz</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0129_top16">Zu TOP 16</ref>: <ref target="#krp-0129_b12">Vortrag des Staatsamtes für Finanzen über die Erhöhung der Tabaklizenzgebühr</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0129_top16">Zu TOP 16</ref>: <ref target="#krp-0129_b13">Gesetzesentwurf für die Festsetzung der bei der Einfuhr von Tabak und Tabakfabrikaten zu entrichtenden Lizenzgebühr mit Bemerkungen</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0129_top17">Zu TOP 17</ref>: <ref target="#krp-0129_b14">Gesetzesentwurf über die Pensionsanstalt für Angestellte und über die Liquidierung ehemals gemeinsamer Sozialversicherungseinrichtungen mit Begründung</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0129_top18">Zu TOP 18</ref>: <ref target="#krp-0129_b15">Gesetzesentwurf über die vorläufige Erhöhung der Minimaleinkommen und Ruhegenüsse katholischer Seelsorger, Dignitäre und Kanoniker</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0129_top21">Zu TOP 21</ref>: <ref target="#krp-0129_b16">Vortrag des Unterrichtsamtes zu Zl. 26.005-Abt. 14 über die Entlohnung des Religionsunterrichts an den öffentlichen Volksschulen Kärntens</ref>
+                  </item>
+               </list>
+            </div>
+            <div type="protokoll">
+               <pb facs="krp-0129_r-0004"/>
+               <div type="top" xml:id="krp-0129_top01">
+                  <head>
+                     <label>
+                        <num n="1">1.</num>
+                        <seg>Forderungen des Eherechtsreformvereines in Wien.</seg>
+                     </label>
+                  </head>
+                  <p>Nach einer Mitteilung des <hi rend="#letterspaced">Vorsitzenden</hi> hat sich der Eherechtsreformverein in Wien an die Staatsregierung mit der Bitte gewendet, im Anschlusse an eine am 14. d. M. stattfindende Versammlung eine Vereinsabordnung im Parlamente zu empfangen, um die beschlossenen Forderungen vorbringen zu können.</p>
+                  <p>Über Vorschlag des Vorsitzenden ladet der Kabinettsrat den Staatssekretär Eldersch ein, die Wünsche der Abordnung entgegenzunehmen.</p>
+               </div>
+               <div type="top" xml:id="krp-0129_top02">
+                  <head>
+                     <label>
+                        <num n="2">2.</num>
+                        <seg>Besoldungsübergangsgesetz.</seg>
+                     </label>
+                  </head>
+                  <p>Sektionschef Dr. <hi rend="#letterspaced">Grimm</hi> erstattet einen Bericht über die im Finanz- und Budgetausschusse über das Besoldungsübergangsgesetz bisher abgeführten Verhandlungen. </p>
+                  <p>
+                     <pb facs="krp-0129_r-0005"/>Zunächst habe der Zentralverband der Staatsangestellten Österreichs darüber Beschwerde geführt, dass regierungsseitig mit den Organisationen über diese Gesetzesvorlage nicht ausreichend verhandelt worden sei; hiebei wäre gleichzeitig eine Reihe von Mehrforderungen gestellt worden. Dieser Umstand habe den Finanzausschuss zur Einsetzung eines Subkomitees veranlasst, welches die einschlägigen Wünsche der Staatsangestelltenorganisationen einer Vorberatung zu unterziehen haben wird. Da nun die in Rede stehende Vorlage vom Kabinettsrat bereits genehmigt worden sei und die neu aufgestellten Forderungen einen Mehraufwand von 300–400 Millionen K erfordern würden, erbitte sich Redner die Stellungnahme des Kabinettsrates in der Richtung, ob angesichts dieser Tatsachen in weitere Verhandlungen überhaupt noch eingegangen werden solle und bejahendenfalls, ob es dem Finanzamte überlassen würde, unter Umständen mit entsprechenden Zugeständnissen selbständig vorzugehen. Bereits jetzt müsse jedoch Redner darauf aufmerksam machen, dass die verlangte Änderung der Ortszuschläge und die höhere Do<pb facs="krp-0129_r-0006"/>tierung von Gehaltssätzen vom staatsfinanziellen Standpunkte aus nicht vertretbar wäre.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Ramek</hi> ersucht im Hinblick auf die besonderen personellen Verhältnisse bei den Gerichtsbehörden, dass für die richterlichen Beamten eine Ausnahme von der Bestimmung des § 16 der Gesetzesvorlage statuiert werde, wonach das in Verhandlung stehende Gesetz auf Zivilstaatsangestellte, die unter die Bestimmung des § 2 des Pensionsbegünstigungsgesetzes fallen, keine Anwendung zu finden habe.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Mayr</hi> verweist auf die Bedenklichkeit der Differenzierung der Ortszuschläge und hielte dafür, dass ein gewisser Ausgleich zwischen Stadt und Land platzgreifen sollte. Ein Ausweg ließe sich vielleicht in der Weise finden, dass innerhalb des präliminierten Kredites der gewünschte Ausgleich in den Ortszuschlägen herbeigeführt würde.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Deutsch</hi> vermeint, dass die vom Staatssekretär Dr. Ramek beantragte Ausnahmsstellung der richterlichen Beamten nicht angängig wäre, da dies zweifellos zu bedenklichen Beispielsfolgerungen Anlass bieten würde.</p>
+                  <p>
+                     <pb facs="krp-0129_r-0007"/>Ministerialrat Dr. <hi rend="#letterspaced">Wilfling</hi> kommt auf die Einwürfe bzw. Anregungen der Vorredner im Einzelnen zu sprechen und schlägt sodann folgende Formulierung des § 16 des Entwurfes vor:</p>
+                  <p>„Auf Zivilstaatsangestellte, die unter die Bestimmung des § 2 des Pensionsbegünstigungsgesetzes fallen, finden die Bestimmungen dieses Gesetzes Anwendung, insoferne sie nicht nach den Bestimmungen des Besoldungsübergangsgesetzes günstiger behandelt würden. Diese Angestellten sind drei Monate nach Erlangung des Anspruches auf den vollen Ruhegenuss in den Ruhestand zu versetzen. Ausgenommen hievon sind solche Angestellte, die von der Staatsregierung aus zwingenden dienstlichen Rücksichten in der Aktivität weiterbelassen werden.“</p>
+                  <p>Unterstaatssekretär <hi rend="#letterspaced">Glöckel</hi> gibt seiner Anschauung dahin Ausdruck, dass sich das Kabinett darüber klar werden müsse, ob die Staatsregierung einer so wesentlichen Erhöhung des Aufwandes für die Besoldungsreform zuzustimmen vermöge oder nicht. Seines Erachtens könne eine Erhöhung in dem von den Angestelltenorganisationen geforderten Maße nicht zugestanden <pb facs="krp-0129_r-0008"/>werden, und sollte sich der Kabinettsrat rücksichtlich der von den Organisationen verlangten weitgehenden Änderungen der Vorlage nur auf die hiefür bereits in Aussicht genommenen Kredite beschränken, über diesen Rahmen also keinesfalls hinausgehen.</p>
+                  <p>Unterstaatssekretär <hi rend="#letterspaced">Mik1as</hi> spricht sich ebenso dafür aus, dass an der präliminierten Gesamtsumme von 1,5 Milliarden K festgehalten, dass jedoch die Vornahme von Abänderungen innerhalb dieses Betrages zugestanden werden solle. Voraussetzung sei jedoch, dass die Staatsregierung in dieser Frage die erforderliche Einheitlichkeit und Geschlossenheit erkennen lasse.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Deutsch</hi> fasst schließlich die Ergebnisse der Debatte in nachstehenden Beschlussantrag zusammen:</p>
+                  <p>„Nach Anhörung des Berichtes des Sektionschefs Dr. Grimm über die heute stattgefundenen Verhandlungen mit den Staatsbeamtenorganisationen erklärt der Kabinettsrat, dass er in der geforderten Änderung der Ortszuschläge und der höheren Dotierung von Gehaltssätzen eine so schwere Belastung des Staatsschatzes er<pb facs="krp-0129_r-0009"/>blickt, dass er nicht in der Lage ist, die Verantwortung für die Bewilligung dieser Forderungen zu übernehmen.</p>
+                  <p>Sollte bei den weiteren Verhandlungen sich trotzdem die Notwendigkeit ergeben, in diesen beiden oder in anderen Belangen den Wünschen der Staatsangestellten entgegenzukommen, so könnte dies nur derart geschehen, dass über die vom Kabinettsrat bereits bewilligten Kredite nicht wesentlich hinausgegangen werde.“</p>
+                  <p>Der Kabinettsrat erhebt diesen sowie den vom Ministerialrat Dr. Wilfling formulierten Abänderungsantrag des Staatsamtes für Finanzen über den Wortlaut des § 16 zum Beschluss.</p>
+               </div>
+               <div type="top" xml:id="krp-0129_top03">
+                  <head>
+                     <label>
+                        <num n="3">3.</num>
+                        <seg>Gesetzentwurf über den Kriegsgeschädigtenfonds.</seg>
+                     </label>
+                  </head>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> erinnert daran, dass seit dem Inkrafttreten des Habsburgergesetzes das hofärarische Vermögen einerseits und das für das früher regierende Haus oder eine Zweiglinie desselben gebundene Vermögen andererseits getrennt verwaltet worden seien, da aus mehrfachen Gründen, insbesondere auch wegen der notwendigen Klarstellung verschiedener Rechtsfragen eine gemeinsame Verwaltung ebenso untunlich gewesen sei, wie die soforti<pb facs="krp-0129_r-0010"/>ge Verwendung der Reinerträgnisse für den im § 7 des erwähnten Gesetzes angeführten Zweck. Erst jetzt, da die verschiedenen Rechtsfragen gelöst erscheinen und auch andere Gründe zum großen Teile entfallen seien, welche bisher die getrennte Verwaltung notwendig machten, sei der Zeitpunkt gekommen, das Vermögen, welches nach § 7 des Gesetzes vom 3. April 1919, StGBl. Nr. 209, von vorneherein als Zweckvermögen gedacht war, auch als solches zu konstituieren. Die Staatskanzlei sei daher beauftragt worden, im Einvernehmen mit dem Rechtsanwalte Dr. Har[p]ner und dem Obersten Verwalter des Hofärars einen darauf bezüglichen Gesetzentwurf auszuarbeiten, welcher nunmehr dem Kabinettsrate vorliege.</p>
+                  <p>Über Einladung des Vorsitzenden erörtert sodann Rechtsanwalt Dr. <hi rend="#letterspaced">Harpner</hi> die einzelnen Bestimmungen des Gesetzes, worauf Sektionschef Dr. <hi rend="#letterspaced">Beck</hi> zu der Vorlage vom Standpunkte der Obersten Verwaltung des Hofärars Aufklärungen gibt. In diesem Zusammenhange teilt der Genannte mit, dass der Unterausschuss der Reparationskommission unter Berufung auf einen in der ersten Sitzung dieser Kom<pb facs="krp-0129_r-0011"/>mission zustande gekommenen Beschluss die Forderung nach Inventarisierung aller Kunstgegenstände durch ein unterinteralliiertes Komitee aufgestellt habe. Diese Tatsache begründe die umso größere Dringlichkeit der ehesten Verabschiedung der in Verhandlung stehenden Gesetzesvorlage.</p>
+                  <p>Sektionschef Dr. <hi rend="#letterspaced">Grimm</hi> bemerkt, dass dem Staatsamte für Finanzen bisher keine Gelegenheit gegeben worden sei, zu dem vorliegenden Gesetzentwurfe Stellung zu nehmen, weshalb er vorschlage, die Vorlage einer Kabinettskonferenz zur Vorberatung zu überweisen.</p>
+                  <p>Nach einer hierauf folgenden kurzen Debatte, an welcher sich außer dem Staatssekretär <hi rend="#letterspaced">Hanusch</hi>, den Unterstaatssekretären <hi rend="#letterspaced">Glöcke1</hi>, Dr. <hi rend="#letterspaced">Eisler</hi> und <hi rend="#letterspaced">Mik1as</hi> noch Sektionschef Dr. <hi rend="#letterspaced">Beck</hi> und Rechtsanwalt Dr. <hi rend="#letterspaced">Harpner</hi> beteiligten, beschließt der Kabinettsrat über Antrag des Unterstaatssekretärs <hi rend="#letterspaced">Miklas</hi>, die Vorlage einer Kabinettskonferenz, bestehend aus den Staatssekretären für Finanzen, für soziale Verwaltung und für Justiz unter Beiziehung eines Referenten der Staats<pb facs="krp-0129_r-0012"/>kanzlei sowie des Sektionschefs Dr. Beck und des Rechtsanwaltes Dr. Harpner zur Durchberatung zu überweisen. Dieses Komitee erhält gleichzeitig die Ermächtigung, den Gesetzentwurf nach Bereinigung aller etwaigen Differenzpunkte im Wege der Staatskanzlei in der Nationalversammlung einzubringen.</p>
+               </div>
+               <div type="top" xml:id="krp-0129_top04">
+                  <head>
+                     <label>
+                        <num n="4">4.</num>
+                        <seg>Gesetzentwurf, betreffend die Auseinandersetzung mit den Nachfolgestaaten über die Austrifizierung der Liquidierung.</seg>
+                     </label>
+                  </head>
+                  <p>Über Einladung des Vorsitzenden erstattet Sektionsrat Dr. <hi rend="#letterspaced">Froehlich</hi> ein Referat über den von der Staatskanzlei im Einvernehmen mit den beteiligten Stellen ausgearbeiteten Entwurf eines „Gesetzes, womit in Abänderung des Art. 4 des Gesetzes vom 12. November 1918, StGBl. Nr. 5, über die Staats- und Regierungsform Bestimmungen bezüglich der Auseinandersetzung mit den Staaten, zu welchen Gebietsteile der ehemaligen österreichisch-ungarischen Monarchie gehören, getroffen werden.“</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Deutsch</hi> beantragt hiezu eine Reihe von Abänderungen, denen zufolge der Gesetzentwurf nachstehende Fassung zu erhalten hätte:</p>
+                  <p>
+                     <pb facs="krp-0129_r-0013"/>„§ 1.</p>
+                  <p>Jedes Anordnungs- und Verwaltungsrecht der zwischenstaatlichen Liquidierungsorganisationen wird im Hinblick auf den Staatsvertrag von St. Germain als erloschen erklärt.</p>
+                  <p>§ 2.</p>
+                  <list>
+                     <item n="1">
+                        <label>1.)</label> Die bisher zwischenstaatlich besorgte Liquidierung ist eine innere österreichische Angelegenheit.</item>
+                     <item n="2">
+                        <label>2.)</label> Die Staatsregierung wird in geeigneter Weise vorsorgen, dass jedem Staatsamte seinem Wirkungskreis nächstverwandte Geschäfte übertragen und die Geschäfte der liquidierenden militärischen Stellen, soweit sie hienach nicht an andere Staatsämter übergehen, dem Staatsamte für Finanzen unterstellt werden.</item>
+                     <item n="3">
+                        <label>3.)</label> Die Nationalversammlung übt eine angemessene parlamentarische Kontrolle der gesamten Liquidierung durch zwei durch Wahl bestimmte Mitglieder aus.</item>
+                  </list>
+                  <p>§ 3.</p>
+                  <p>Abmachungen mit einzelnen Staaten, zu denen Gebietsteile der ehemaligen österreichisch- ungarischen Monarchie <pb facs="krp-0129_r-0014"/>gehören, oder mit der Gesamtheit dieser Staaten über Auseinandersetzungen im Sinne des Staatsvertrages von St. Germain sind zulässig, falls sie mit §§ 1 und 2 nicht in Widerspruch stehen.</p>
+                  <p>§ 4.</p>
+                  <list>
+                     <item n="1">
+                        <label>1.)</label> Dieses Gesetz tritt am Tage seiner Kundmachung in Kraft; es gilt unbeschadet der Bestimmungen des Staatsvertrages von St. Germain und unbeschadet der Befugnisse der in ihm vorgesehenen Wiedergutmachungskommission.</item>
+                     <item n="2">
+                        <label>2.)</label> Mit dem Vollzuge dieses Gesetzes ist die Staatsregierung beauftragt.“</item>
+                  </list>
+                  <p>Nach einer kurzen Debatte pflichtet der Kabinettsrat dem Antrage des Staatssekretärs Dr. Deutsch bei und beauftragt die Staatskanzlei zur Einbringung dieser Gesetzesvorlage in der vom vorgenannten Staatssekretär abgeänderten Fassung in der Nationalversammlung.</p>
+                  <p>Einem Antrage des Sektionschefs Dr. <hi rend="#letterspaced">Grimm</hi> willfahrend, weist der Kabinettsrat die Staatskanzlei schließlich an, die Frage des Personalabbaues in dem Motivenberichte zu diesem Gesetzentwurfe entsprechend darzulegen. <pb facs="krp-0129_r-0015"/>
+                  </p>
+               </div>
+               <div type="top" xml:id="krp-0129_top05">
+                  <head>
+                     <label>
+                        <num n="5">5.</num>
+                        <seg>Bericht des mit Kabinettsratsbeschluss vom 24. Oktober l. J. zur Beratung der Reform des liquidierenden Kriegsministeriums eingesetzten Komitees.</seg>
+                     </label>
+                  </head>
+                  <p>Über Einladung des Vorsitzenden erstattet Ministerialrat Dr. <hi rend="#letterspaced">Boschan</hi> einen eingehenden Bericht über die Ergebnisse der Verhandlungen des mit Kabinettsratsbeschluss vom 24. Oktober 1919 eingesetzten Komitees zur Beratung der Reform des liquidierenden Kriegsministeriums.</p>
+                  <p>Anschließend hieran gibt Oberst <hi rend="#letterspaced">Ziller</hi> eine Darstellung des Standpunktes, den das Staatsamt für Heer[es]wesen in dieser seine Interessen besonders berührenden Angelegenheit eingenommen hat.</p>
+                  <p>Über Antrag des Staatssekretärs <hi rend="#letterspaced">Eldersch</hi> beschließt der Kabinettsrat, die Austragung dieser Fragen einer Kabinettskonferenz zu überantworten, der unter Leitung des Staatssekretärs für Finanzen alle zuständigen Staatssekretäre beizuziehen sind.</p>
+               </div>
+               <div type="top" xml:id="krp-0129_top06">
+                  <head>
+                     <label>
+                        <num n="6">6.</num>
+                        <seg>Beitritt der Staatsregierung zu mehreren Gesetzesbeschlüssen der Nationalversammlung.</seg>
+                     </label>
+                  </head>
+                  <p>Über Vorschlag des Vorsitzenden erhebt der Kabinettsrat gegen die von der Nationalversammlung beschlossenen Gesetze</p>
+                  <list>
+                     <item n="1">
+                        <label>1.)</label> betreffend den Ruhegenuss des gewesenen Staatssekretärs für Finanzen Dr. Otto Steinwender, </item>
+                  </list>
+                  <p>
+                     <pb facs="krp-0129_r-0016"/>
+                  </p>
+                  <list>
+                     <item n="1">
+                        <label>2.)</label> betreffend die Abänderung einiger Bestimmungen des Volkspflegestättengesetzes,</item>
+                     <item n="2">
+                        <label>3.)</label> betreffend das Dienstverhältnis der Hochschulassistenten und</item>
+                     <item n="3">
+                        <label>4.)</label> betreffend den Vorspann und die Einquartierung</item>
+                  </list>
+                  <p>keine Vorstellung.</p>
+                  <p>Die erwähnten Gesetze sind demgemäß nach Gegenzeichnung durch den Staatskanzler und die zuständigen Staatssekretäre dem Präsidenten der Nationalversammlung zur Fertigung vorzulegen.</p>
+               </div>
+               <div type="top" xml:id="krp-0129_top07">
+                  <head>
+                     <label>
+                        <num n="7">7.</num>
+                        <seg>Gesetzentwurf, womit das Gesetz vom 3. April 1919, StGB1. Nr. 212, abgeändert wird (2. Verfassungsgerichtshofnovelle).</seg>
+                     </label>
+                  </head>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> erbittet und erhält die Zustimmung des Kabinettsrates, den Entwurf eines Gesetzes, womit das Gesetz vom 3. April 1919, StGB1. Nr. 212, abgeändert wird (2. Verfassungsgerichtshofnovelle), in der Nationalversammlung einbringen zu dürfen.</p>
+               </div>
+               <div type="top" xml:id="krp-0129_top08">
+                  <head>
+                     <label>
+                        <num n="8">8.</num>
+                        <seg>Gesetzentwurf über die Einführung von Schöffengerichten für strafbare Handlungen gegen die Kaiserliche Verordnung vom 24. März 1917, RGB1. Nr. 131.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Ramek</hi> erbittet nach einer eingehenden Darstellung der Sachlage die Ermächtigung, in der Nationalversammlung den Ent<pb facs="krp-0129_r-0017"/>wurf eines Gesetzes über die Einführung von Schöffengerichten für strafbare Handlungen gegen die Kaiserliche Verordnung vom 24. März 1917, RGB1. Nr. 131, einbringen zu dürfen.</p>
+                  <p>Der Kabinettsrat erteilt dem sprechenden Staatssekretär die erbetene Ermächtigung mit der Maßgabe, dass der Abs. 1 des § 24 der Vorlage, betreffend die Verpflichtung der Steuerbehörden, über die Erwerbs-, Vermögens- und Einkommensverhältnisse des Beschuldigten den Gerichten jede gewünschte Auskunft zu erteilen, zu entfallen habe.</p>
+               </div>
+               <div type="top" xml:id="krp-0129_top09">
+                  <head>
+                     <label>
+                        <num n="9">9.</num>
+                        <seg>Bestimmung des Titels „Oberdirektor“ für die zu Beamten der VII. Rangsklasse zu ernennenden Kanzlei- (Grundbuchs-)Direktoren.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. Ramek teilt mit, dass das Staatsamt für Justiz in Aussicht nehme, sich vom Präsidenten der Nationalversammlung die Ermächtigung zu erbitten, den zu Beamten der VII. Rangsklasse zu ernennenden Kanzleidirektoren (Vollstreckungs- und Grundbuchsdirektoren) den Titel eines Kanzleioberdirektors (Vollstreckungs- oder Grundbuchsoberdirektors) zu verleihen.</p>
+                  <p>Der Kabinettsrat erteilt hiezu die erbetene Genehmigung.</p>
+                  <p>
+                     <pb facs="krp-0129_r-0018"/>
+                  </p>
+               </div>
+               <div type="top" xml:id="krp-0129_top10">
+                  <head>
+                     <label>
+                        <num n="10">10.</num>
+                        <seg>Gesetzentwurf über die Verwendung von Teilen der Gebahrungsüberschüsse der gemeinschaftlichen Waisenkassen.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. Ramek erbittet und erhält vom Kabinettsrate die Ermächtigung, den Entwurf eines Gesetzes über die Verwendung von Teilen der Gebarungsüberschüsse der gemeinschaftlichen Waisenkassen in der Nationalversammlung einbringen zu dürfen.</p>
+               </div>
+               <div type="top" xml:id="krp-0129_top11">
+                  <head>
+                     <label>
+                        <num n="11">11.</num>
+                        <seg>Gesetzentwurf zur vorläufigen Regelung der Besoldung der Personen des militärischen Berufsstandes (Militärbesoldungsübergangsgesetz).</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Deutsch</hi> legt dem Kabinettsrate den Entwurf eines Gesetzes zur vorläufigen Regelung der Besoldung der Personen des militärischen Berufstandes (Militärbesoldungsübergangsgesetz) zur Genehmigung vor und führt aus, dass diese Vorlage sich im Wesentlichen an die Bestimmungen des Besoldungsübergangsgesetzes für die Zivilstaatsangestellten anschließe. Da es nicht ausgeschlossen sei, dass Letzteres im Zuge der gegenwärtig noch obschwebenden Verhandlungen Abänderungen erfahre, stelle er den Antrag, der Kabinettsrat wolle sich dermalen bloß dahin aussprechen, dass die in dem Besoldungsübergangsgesetz für Zivilstaatsangestellte etwa vorgenommenen Änderungen sinngemäß <pb facs="krp-0129_r-0019"/>auch in den vorliegenden Gesetzentwurf zu übernehmen sein werden.</p>
+                  <p>Nachdem Sektionschef Dr. <hi rend="#letterspaced">Grimm</hi> mitgeteilt hatte, dass sich das Finanzamt mit dem Staatsamte für Heer[es]wesen in der vorliegenden Frage in grundsätzlicher Übereinstimmung befinde, spricht sich der Kabinettsrat im Sinne des Begehrens des Staatssekretärs für Heer[es]wesen aus und ermächtigt den Letzteren zur allfälligen Vornahme aller hiernach etwa erforderlicher Abänderungen des Entwurfes im Einvernehmen mit dem Staatsamte für Finanzen sowie zur Einbringung der Gesetzesvorlage in der Nationalversammlung.</p>
+               </div>
+               <div type="top" xml:id="krp-0129_top12">
+                  <head>
+                     <label>
+                        <num n="12">12.</num>
+                        <seg>Beschlüsse der Landesversammlung, bzw. des Landesausschusses und Landesrates in Kärnten, sowie des Salzburger und des Niederösterreichischen Landtages in autonomen Finanzangelegenheiten.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Eldersch</hi> teilt mit, dass die Kärntnerische Landesregierung die Erwirkung der Genehmigung der Staatsregierung für den Beschluss der Provisorischen Landesversammlung vom 26. Mai 1919, betreffend die Aufnahme eines Darlehens von 500.000 K durch die Stadtgemeinde Klagenfurt sowie für die Beschlüsse des Kärntnerischen Landesausschusses vom 2. und 26. April, 7. Mai und 19. Juli, bzw. des Kärntnerischen Landesrates vom 30. Juli, 7. und 21. <pb facs="krp-0129_r-0020"/>August 1919, betreffend die Einhebung von Bier- und Branntweinauflagen und von 200 % übersteigenden Umlagen in den Gemeinden Wölch, Ferlach, Griffen, Afritz, Fresach, Tainach, Tröpolach, Reichenfels, Hohenturm, Penk, Kraig, Ponfeld, Rennweg und Metnitz beantragt habe.</p>
+                  <p>Weiters sei die Erwirkung der Genehmigung der Staatsregierung von den zuständigen Landesregierungen für den Beschluss des Salzburger Landtages vom 26. Juni l. J., betreffend die Forteinhebung der Landesumlagen, für den Beschluss des Niederösterreichischen Landtages vom 1. Oktober l. J., betreffend die Einhebung einer Beerdigungsgebühr in der Gemeinde Herzogenburg und für den Beschluss des Steiermärkischen Landtages vom 17. Oktober l. J., betreffend die Einhebung einer Getränkeauslage in der Stadt Graz, beantragt worden.</p>
+                  <p>Über Vorschlag des sprechenden Staatssekretärs genehmigt der Kabinettsrat die vorangeführten Beschlüsse, den Beschluss des Salzburger Landtages jedoch mit der Einschränkung des für Fleisch, Wein, Wein- und Obstmost vorgesehenen 10%igen Verzehrungssteuerzuschlages auf Fleisch, <pb facs="krp-0129_r-0021"/>sowie den Beschluss des Steiermärkischen Landtages mit der Einschränkung, dass die Abgabe auf Obstmost nur 4 K betragen und die Einhebung der Auflage erst vom Tage der Kundmachung des genehmigten Beschlusses im Landesgesetzblatte erfolgen dürfe.</p>
+               </div>
+               <div type="top" xml:id="krp-0129_top13">
+                  <head>
+                     <label>
+                        <num n="13">13.</num>
+                        <seg>Gesetzentwurf über die Ermächtigung der Staatsregierung zu vorläufigen Verfügungen auf dem Gebiete des Notenbankwesens.</seg>
+                     </label>
+                  </head>
+                  <p>Über Antrag des Sektionschefs Dr. <hi rend="#letterspaced">Grimm</hi> stimmt der Kabinettsrat der Absicht des Staatssekretärs für Finanzen, in der Nationalversammlung den Entwurf eines Gesetzes über die Ermächtigung der Staatsregierung zu vorläufigen Verfügungen auf dem Gebiete des Notenbankwesens einzubringen, zu.</p>
+               </div>
+               <div type="top" xml:id="krp-0129_top14">
+                  <head>
+                     <label>
+                        <num n="14">14.</num>
+                        <seg>Gesetzentwurf über die Eisenbahnverkehrssteuern.</seg>
+                     </label>
+                  </head>
+                  <p>Sektionschef Dr. Grimm erbittet namens des Staatssekretärs für Finanzen vom Kabinettsrate die Ermächtigung, in der Nationalversammlung den Entwurf eines Gesetzes über die Eisenbahnverkehrssteuern einbringen zu dürfen.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Ramek</hi> beantragt nach einer kurzen Darlegung sei<pb facs="krp-0129_r-0022"/>nes Standpunktes, dem Abs. 2 des § 6 der Vorlage die Formulierung des korrespondierenden § 6 des Fahrkartensteuergesetzes aus dem Jahre 1902 zu geben. Demnach hätte dieser Absatz zu lauten: „Ist eine Verkürzung der Abgabe eingetreten, so ist die verkürzte Abgabe ohne Einleitung eines Strafverfahrens lediglich aufgrund der den Betrag derselben konstatierenden amtlichen Erhebungen im zweifachen Betrage vorzuschreiben und nebst Verzugszinsen einzuheben.“</p>
+                  <p>Namens des Staatsamtes für Verkehrswesen beantragt Ministerialrat Dr <hi rend="#letterspaced">Stockhammer</hi> einige Abänderungen des vorliegenden Textes stilistischer Natur.</p>
+                  <p>Nachdem Sektionschef Dr. <hi rend="#letterspaced">Grimm</hi> dem Abänderungsantrage des Staatssekretärs für Justiz sowie den vom Vertreter des Staatsamtes für Verkehrswesen vorgeschlagenen textlichen Abänderungen zugestimmt hatte, erteilt der Kabinettsrat die erbetene Ermächtigung zur Einbringung dieser Gesetzesvorlage in der Nationalversammlung.</p>
+               </div>
+               <div type="top" xml:id="krp-0129_top15">
+                  <head>
+                     <label>
+                        <num n="15">15.</num>
+                        <seg>Erwerbung eines Grundstückes für Zwecke der Tabakfabrik in Linz.</seg>
+                     </label>
+                  </head>
+                  <p>Sektionschef Dr. Grimm erbittet und erhält vom Kabinettsrate die <pb facs="krp-0129_r-0023"/>Zustimmung zu einem von der Finanzverwaltung beabsichtigten Grundankaufe für Zwecke der Erweiterung der Tabakfabrik in Linz.</p>
+               </div>
+               <div type="top" xml:id="krp-0129_top16">
+                  <head>
+                     <label>
+                        <num n="16">16.</num>
+                        <seg>Gesetzentwurf, betreffend die Festsetzung der bei der Einfuhr von Tabak und Tabakfabrikaten zu entrichtenden Lizenzgebühr.</seg>
+                     </label>
+                  </head>
+                  <p>Sektionschef Dr. Grimm erbittet vom Kabinettsrate die Ermächtigung, in der Nationalversammlung eine Gesetzesvorlage einbringen zu dürfen, derzufolge der Staatssekretär für Finanzen ermächtigt werden soll, die bei der Einfuhr von Tabak und Tabakfabrikaten über die Zolllinie nebst dem Zolle zu entrichtende Lizenzgebühr unter Bedachtnahme auf die in den Tarifpreisen der Tabakfabrikate der österreichischen Tabakregie enthaltene Verbrauchsabgabe festzusetzen.</p>
+                  <p>Der Kabinettsrat erteilt die erbetene Ermächtigung.</p>
+               </div>
+               <div type="top" xml:id="krp-0129_top17">
+                  <head>
+                     <label>
+                        <num n="17">17.</num>
+                        <seg>Gesetzentwurf über die Pensionsanstalt für Angestellte und über die Liquidierung ehemals gemeinsamer Sozialversicherungseinrichtungen.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Hanusch</hi> erbittet und erhält vom Kabinettsrate die Ermächtigung, in der Nationalversammlung den Entwurf eines Gesetzes über die Pensionsanstalt für Angestellte und über die Liquidierung ehemals gemeinsamer Sozialversicherungseinrichtungen einbringen zu dürfen. <pb facs="krp-0129_r-0024"/>
+                  </p>
+               </div>
+               <div type="top" xml:id="krp-0129_top18">
+                  <head>
+                     <label>
+                        <num n="18">18.</num>
+                        <seg>Gesetzentwurf, mit welchem vorläufige Erhöhungen des Minimaleinkommens und der Ruhegenüsse der katholischen Seelsorger sowie des Minimaleinkommens der Dignitäre und Kanoniker bei den Metropolitan- und Kathedralkapiteln der katholischen Kirche festgestellt werden; Gesetzentwurf, betreffend die Bezüge des systemisierten Lehrpersonales an den katholischen theologischen Diözesanlehranstalten; Erhöhung des Staatsunterstützungspauschales für die evangelische Kirche.</seg>
+                     </label>
+                  </head>
+                  <p>Unterstaatssekretär <hi rend="#letterspaced">Miklas</hi> erbittet vom Kabinettsrate die Ermächtigung, in der Nationalversammlung den Entwurf eines Gesetzes, mit welchem vorläufige Erhöhungen des Minimaleinkommens und der Ruhegenüsse der katholischen Seelsorger sowie des Minimaleinkommens der Dignitäre und Kanoniker bei den Metropolitan- und Kathedralkapiteln der katholischen Kirche festgestellt werden, einbringen zu dürfen. Redner verweist darauf, dass mit diesem Gesetzentwurfe beabsichtigt werde, den katholischen Geistlichen Aufbesserungen zuzuwenden, ähnlich, wie sie den Staatsangestellten zufolge der neuen Gesetzesvorlage gegenüber ihren bisherigen Bezügen zuteilwerden sollen. Der mit dieser Kongruanovelle verbundene Mehraufwand werde sich auf rund 8,8 Millionen K belaufen. Sollte das Besoldungsübergangsgesetz für die Zivilstaatsangestellten im Zuge der gegenwärtig noch obschwebenden Verhandlungen Abänderungen erfahren, so wären diese sinngemäß auch in den vorliegenden Gesetzentwurf zu übernehmen.</p>
+                  <p>Behufs genereller Regelung der Bezugsbehandlung des systemisierten <pb facs="krp-0129_r-0025"/>Lehrpersonales an den katholischen theologischen Diözesanlehranstalten beabsichtigt der sprechende Unterstaatssekretär der Nationalversammlung weiters einen Gesetzentwurf zu übermitteln, wodurch die Bezüge dieses Lehrpersonals auf eine den gegenwärtigen Teuerungsverhältnissen entsprechende Grundlage gebracht werden sollen.</p>
+                  <p>Schließlich erbittet sich Redner vom Kabinettsrate die Zustimmung zu einer entsprechenden Erhöhung des Staatsunterstützungspauschales für die evangelische Kirche um 350.000 K zum Zwecke einer Aufbesserung der evangelischen Seelsorger und der im Dienste der evangelischen Gemeinden stehenden Lehrpersonen.</p>
+                  <p>Der Kabinettsrat erteilt dem sprechenden Unterstaatssekretär die erbetene Ermächtigung zur Einbringung dieser – allenfalls noch an das Besoldungsübergangsgesetz für Zivilangestellte anzugleichenden – Gesetzesvorlagen mit der Maßgabe, dass diese Einbringung nur gemeinsam mit der Regierungsvorlage, betreffend die vorläufige Regelung der Besoldung der Lehrerschaft an mittleren und unteren Unterrichts<pb facs="krp-0129_r-0026"/>anstalten, zu erfolgen hat; gleichzeitig bewilligt der Kabinettsrat die angesprochene Erhöhung des Staatsunterstützungspauschales.</p>
+               </div>
+               <div type="top" xml:id="krp-0129_top19">
+                  <head>
+                     <label>
+                        <num n="19">19.</num>
+                        <seg>Landeskulturratswahlen für Kärnten.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Stöckler erbittet und erhält die Ermächtigung des Kabinettsrates, dem Präsidenten der Nationalversammlung die Bestätigung der Wahlen der Gutsbesitzer Anton Wernisch und Hermann Gruber zu Vizepräsidenten des Landeskulturrates für Kärnten vorschlagen zu dürfen.</p>
+               </div>
+               <div type="top" xml:id="krp-0129_top20">
+                  <head>
+                     <label>
+                        <num n="20">20.</num>
+                        <seg>Neuregelung der Bezüge der Volksbeauftragten.</seg>
+                     </label>
+                  </head>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> teilt mit, es sei aus Abgeordnetenkreisen darauf hingewiesen worden, dass bei Inkrafttreten des neuen Besoldungsübergangsgesetzes für die Zivilstaatsangestellten die Bezüge eines Beamten der IV., ja selbst der V. Rangsklasse die Bezüge der Staats- bzw. Unterstaatssekretäre übersteigen werden. Dieser Umstand dürfte zum Anlasse eines Initiativantrages aus dem Schoße der Nationalversammlung genommen werden, um die Bezüge der Volksbeauftragten in <pb facs="krp-0129_r-0027"/>einer den geänderten Verhältnissen entsprechenden Art neu zu regeln. Redner erbitte sich die Stellungnahme des Kabinettes zu dieser Frage.</p>
+                  <p>Nach einer hierüber abgeführten kurzen Debatte ladet der Vorsitzende den Vorstand des Gesetzgebungsdienstes in der Staatskanzlei, Sektionsrat Dr. <hi rend="#letterspaced">Froehlich</hi>, ein, sich über die hiebei allenfalls in Betracht kommenden Grundsätze zu äußern.</p>
+                  <p>Nach Erstattung des einschlägigen Referates genehmigt der Kabinettsrat die vom Sektionsrate Dr. Froehlich entwickelten Richtlinien und beauftragt die Staatskanzlei, diese Leitsätze zu formulieren und dem Kabinettsrate ehestens vorzulegen.</p>
+               </div>
+               <div type="top" xml:id="krp-0129_top21">
+                  <head>
+                     <label>
+                        <num n="21">21.</num>
+                        <seg>Gesetzesbeschluss der Kärntner Landesversammlung, betreffend die Entlohnung des Religionsunterrichtes an den öffentlichen Volksschulen in Kärnten.</seg>
+                     </label>
+                  </head>
+                  <p>Unterstaatssekretär <hi rend="#letterspaced">Glöckel</hi>
+                     <note type="footnote">Handschriftlich korrigiert aus „Stöckler“.</note> teilt mit, dass die Provisorische Landesversammlung in Kärnten am 30. Oktober d. J. einen Gesetzesbeschluss, betreffend die Entlohnung des Religionsunterrichtes an den öffentlichen Volksschulen in Kärnten gefasst habe. Nach Art. I dieses Gesetzesbeschlusses sollen die §§ 7, 8 und 9 des Gesetzes vom 2. Februar 1890, LG. u. VBl. Nr. 9, <pb facs="krp-0129_r-0028"/>mit welchem aufgrund des Gesetzes vom 17. Juni 1888, RGBl. Nr. 99, Bestimmungen über die Entlohnung des Religionsunterrichtes an den öffentlichen Volksschulen getroffen werden, abgeändert werden.</p>
+                  <p>Hienach erhielte § 7 folgenden Wortlaut: „Wo die Erteilung des Religionsunterrichtes an den allgemeinen Volks- und Bürgerschulen nicht durch eigene Religionslehrer (§ 14 des Gesetzes vom 21. Februar 1919, LG. u. VBl. Nr. 36) erfolgt, wird den mit der Erteilung des Religionsunterrichtes betrauten Seelsorgern für jede über das Ausmaß von zwei Stunden wöchentlich hinaus erteilte Unterrichtsstunde eine Entlohnung (Remuneration) von 3 K gewährt.“</p>
+                  <p>Es regle also § 7 in der neuen Fassung lediglich die Entlohnung für Seelsorger, rücksichtlich der eigenen Religionslehrer verweise dieser § auf § 14 des Gesetzes vom 21. Februar 1919, LG. u. VBl. Nr. 36, betreffend die Regelung der Bezüge der Volks- und Bürgerschullehrkräfte des Landes Kärnten; diese letztere gesetzliche Bestimmung setze aber nur die Bezüge für die dauernd angestellten Religionslehrer fest, sodass bezüglich der proviso<pb facs="krp-0129_r-0029"/>risch angestellten eigenen Religionslehrer eine Lücke bestehe, die zu Bedenken Anlass gebe, da hiedurch in der Praxis leicht die Auffassung entstehen könnte, dass diesen Lehrkräften auf keinen Fall eine Remuneration gebührt, was mit dem § 3 des Gesetzes vom 17. Juni 1888, RGB1. Nr. 99, im Widerspruch stünde.</p>
+                  <p>Für die Seelsorger sei nun einerseits durch die neue Fassung eine wesentliche Verbesserung geschaffen worden, indem nunmehr auch für den Unterricht in den unteren Klassen der mehr als dreiklassigen Volksschulen und an den Volksschulen mit drei und weniger Klassen für jede über das Ausmaß von zwei Stunden wöchentlich erteilte Unterrichtsstunde eine Remuneration gewährt werde.</p>
+                  <p>Andererseits könne aber durch diesen § 7 der neuen Fassung eine vom Gesetzgeber vermutlich nicht beabsichtigte Benachteiligung der Religionslehrer bewirkt werden; während nämlich bisher sowohl gemäß § 3 des Gesetzes vom 17. Juni 1888, RGBl. Nr. 99, als auch nach § 7 des Gesetzes vom 2. Februar 1890, LGBl. Nr. 9, jede an der vierten oder den höheren Klassen der mehr als dreiklassigen allgemeinen Volksschulen <pb facs="krp-0129_r-0030"/>und an Bürgerschulen erteilte Religionsstunde zu remunerieren sei, wäre nach § 7 der neuen Fassung nur jede über das Ausmaß von zwei Stunden wöchentlich erteilte Unterrichtsstunde zu entlohnen und es könnte sohin ein Religionslehrer, der nur an der vierten und den höheren Klassen der mehr als dreiklassigen Volksschulen und an Bürgerschulen Unterricht erteilt, benachteiligt werden.</p>
+                  <p>Hiedurch sei ein weiteres Bedenken vom Standpunkte der Staatsgesetzgebung gegeben.</p>
+                  <p>Sowohl der dieses Bedenken begründende Mangel als auch die oberwähnte Lücke im Gesetze seien wesentlicher Natur und ließen sich wohl nicht durch geringfügige Änderungen beseitigen.</p>
+                  <p>Der sprechende Unterstaatssekretär stelle daher den Antrag, der Kabinettsrat wolle ihn ermächtigen, aus den dargelegten Gründen gegen den in Rede stehenden Gesetzesbeschluss bei der Landesversammlung im Wege der Landesregierung Vorstellung zu erheben.</p>
+                  <p>Der Kabinettsrat erteilt die erbetene Ermächtigung.</p>
+               </div>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

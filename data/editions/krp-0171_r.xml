@@ -1,0 +1,567 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href='http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:acdh="https://vocabs.acdh.oeaw.ac.at/schema#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xml:lang="de">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="a" type="main" n="0171">Kabinettsprotokoll Nr. 171 vom 16. April 1920</title>
+            <title level="m" type="main" n="01">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <title level="m" type="sub" n="">Renner III (17. Oktober 1919 – 7. Juli 1920)</title>
+            <meeting>
+               <placeName key="https://d-nb.info/gnd/4066009-6">Wien</placeName>
+               <orgName key="https://d-nb.info/gnd/5162749-8">Kabinettsrat</orgName>
+               <date when-iso="1920-04-16"/>
+            </meeting>
+            <editor>
+               <persName key="https://d-nb.info/gnd/122481836"
+                         role="hasCreator"
+                         xml:id="hwohnout">
+                  <forename>Helmut</forename>
+                  <surname>Wohnout</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</affiliation>
+               <idno type="ORCID">0000-0002-3864-9839</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/120789825"
+                         role="hasCreator"
+                         xml:id="tolechowski">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0003-3291-6876</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/131679384"
+                         role="hasCreator"
+                         xml:id="rlein">
+                  <forename>Richard</forename>
+                  <surname>Lein</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0002-7502-0503</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="aholzer">
+                  <forename>Anna</forename>
+                  <surname>Holzer</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0005-3560-3500</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="dsoelkner">
+                  <forename>Dominik</forename>
+                  <surname>Sölkner</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-9895-7212</idno>
+            </editor>
+            <editor>
+               <persName role="hasContributor" xml:id="ischotzko">
+                  <forename>Ina</forename>
+                  <surname>Schotzko</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-5210-3713</idno>
+            </editor>
+            <funder n="1">
+               <orgName key="https://d-nb.info/gnd/2054142-9" role="hasFunder">Österreichischer Wissenschaftsfonds FWF</orgName>
+               <idno type="project">PAT1495024</idno>
+               <title type="project">Die Protokolle des österreichischen Kabinettsrates 1919–1920</title>
+            </funder>
+            <respStmt>
+               <resp>Projektverantwortung</resp>
+               <orgName key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Projektleitung</resp>
+               <persName key="https://d-nb.info/gnd/120789825" role="hasPrincipalInvestigator">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+                  <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+                  <idno type="ORCID">0000-0003-3291-6876</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Nationaler Forschungspartner</resp>
+               <orgName key="https://d-nb.info/gnd/1123037736" role="hasEnabler">Austrian Centre for Digital Humanities</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Digitalisierung der gedruckten Quellen</resp>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>TEI-Datenmodellierung</resp>
+               <persName role="hasContributor" xml:id="tfruehwirth">
+                  <forename>Timo</forename>
+                  <surname>Frühwirth</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-3997-5193</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technische Supervision</resp>
+               <persName key="https://d-nb.info/gnd/1043833846"
+                         role="hasContributor"
+                         xml:id="pandorfer">
+                  <forename>Peter</forename>
+                  <surname>Andorfer</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-9575-9372</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technisches Consulting und Vorbereitung der Druckausgabe</resp>
+               <persName key="https://d-nb.info/gnd/13281899X"
+                         role="hasContributor"
+                         xml:id="skurz">
+                  <forename>Stephan</forename>
+                  <surname>Kurz</surname>
+                  <affiliation key="https://d-nb.info/gnd/1202798799">Institut für die Erforschung der Habsburgermonarchie und des Balkanraumes</affiliation>
+                  <idno type="ORCID">0000-0003-2546-2570</idno>
+               </persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher key="https://d-nb.info/gnd/1001454-8">Österreichische Akademie der Wissenschaften</publisher>
+            <date when="2028"/>
+            <availability status="free">
+               <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">Lizenziert unter CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/deed.de)</licence>
+            </availability>
+            <idno type="ISBN_Print"/>
+            <idno type="ISBN_Part_epub"/>
+            <idno type="ISBN_Digital"/>
+            <idno type="DOI"/>
+            <idno type="DOI_zenodo"/>
+            <idno type="ebook_ID"/>
+         </publicationStmt>
+         <seriesStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="m" type="main">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <respStmt>
+               <resp>Bearbeitung und Herausgeberschaft</resp>
+               <orgName key="https://d-nb.info/gnd/2024703-5">Universität Wien</orgName>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+         </seriesStmt>
+         <notesStmt>
+            <note>Diese TEI-XML-Datei ist Grundlage für eine Druckausgabe der Edition.</note>
+            <relatedItem>
+               <biblStruct>
+                  <monogr>
+                     <imprint>
+                        <pubPlace key="https://d-nb.info/gnd/4066009-6">Wien</pubPlace>
+                        <publisher key="https://d-nb.info/gnd/2068748-5">Verlag der Österreichischen Akademie der Wissenschaften</publisher>
+                        <date when="2029"/>
+                     </imprint>
+                     <extent/>
+                  </monogr>
+                  <note>
+                     <idno/>
+                     <ptr/>
+                  </note>
+                  <citedRange/>
+               </biblStruct>
+            </relatedItem>
+         </notesStmt>
+         <sourceDesc>
+            <bibl>Quellbestand: AT-OeStA/AdR MRang MR 1Rep KRP Kabinettsratsprotokolle, 1918-1920 (Teilbestand)<ref target="https://www.archivinformationssystem.at/detail.aspx?id=5465">https://www.archivinformationssystem.at/detail.aspx?id=5465</ref>
+            </bibl>
+            <msDesc>
+               <msIdentifier>
+                  <institution key="https://d-nb.info/gnd/37748-X" role="hasOwner">AT-OeStA Österreichisches Staatsarchiv (Archiv (ÖStA))</institution>
+                  <repository key="https://d-nb.info/gnd/1601181-8">AT-OeStA/AdR Archiv der Republik, 1918- (Abteilung)</repository>
+                  <collection>AT-OeStA/AdR MRang MR 1Rep Ministerrat 1. Republik, 1918 - 1938 (Bestand)</collection>
+                  <idno>AT-OeStA_AdR-MRang-MR-1.-Rep.-KRP-171</idno>
+               </msIdentifier>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <abstract>
+            <p>
+          <!--to be generated-->
+        </p>
+         </abstract>
+      </profileDesc>
+      <encodingDesc>
+         <styleDefDecl scheme="css"/>
+         <tagsDecl>
+            <rendition xml:id="b" scheme="css">font-weight:bold;</rendition>
+            <rendition xml:id="su" scheme="css">vertical-align:super;font-size:.7em;</rendition>
+            <rendition xml:id="s" scheme="css">text-decoration:line-through;</rendition>
+            <rendition xml:id="u" scheme="css">text-decoration:underline;</rendition>
+            <rendition xml:id="ow" scheme="css">text-decoration:line-through;text-decoration-style:double;</rendition>
+            <rendition xml:id="r" scheme="css">display:block;text-align:right;</rendition>
+            <rendition xml:id="letterspaced" scheme="css">letter-spacing:0.15em;</rendition>
+            <rendition xml:id="i" scheme="css">font-style:italic;</rendition>
+         </tagsDecl>
+         <editorialDecl>
+            <hyphenation>
+               <p>
+            <!--to be added-->
+          </p>
+            </hyphenation>
+            <correction>
+               <p>
+            <!--to be added-->
+          </p>
+            </correction>
+            <normalization>
+               <p>
+            <!--to be added-->
+          </p>
+            </normalization>
+            <punctuation>
+               <p>
+            <!--to be added-->
+          </p>
+            </punctuation>
+            <stdVals>
+               <p>
+            <!--to be added-->
+          </p>
+            </stdVals>
+            <p>
+          <!--to be added-->
+        </p>
+         </editorialDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#tfruehwirth" when-iso="2026-09-10">TEIGarage output upconverted with upconvert.xsl</change>
+         <change who="#tfruehwirth" when-iso="2026-09-10">TEI header populated with generate_tei_templates.py</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface/>
+   </facsimile>
+   <text>
+      <body>
+         <div xml:id="doc-krp-0171.xml">
+            <head type="dokument">
+               <title type="num">171.</title>
+               <title type="desc">
+                  <pb facs="krp-0171_r-0001"/>
+                  <pb facs="krp-0171_r-0002"/>[Freitag] 1920-04-16</title>
+            </head>
+            <div type="dokumentkopf">
+               <div type="vorsitz">
+                  <head>Vorsitz:</head>
+                  <p>Renner, teilweise Fink</p>
+               </div>
+               <div type="anwesend">
+                  <head>Anwesend:</head>
+                  <p>Deutsch, Eisler, Eldersch, Ellenbogen, Glöckel, Hanusch, Loewenfeld-Russ, Mayr, Miklas, Paul, Ramek, Reisch, Resch, Stöckler, Waiss, Zerdik</p>
+               </div>
+               <div type="zugezogen">
+                  <head>Zugezogen:</head>
+                  <p>Wilfling</p>
+               </div>
+               <div type="schriftfuehrer">
+                  <head>Schriftführer:</head>
+                  <p>unbekannt</p>
+               </div>
+               <div type="dauer">
+                  <head>Dauer:</head>
+                  <p>15.00–20.00 Uhr</p>
+               </div>
+            </div>
+            <div type="komponenten">
+               <p>Reinschrift, Beilagen</p>
+            </div>
+            <div type="beilagen">
+               <head>Beilagen:</head>
+               <list>
+                  <item>
+                     <ref target="#krp-0171_top03">Zu TOP 3</ref>: <ref target="#krp-0171_b01">Heeresgebührengesetz mit Begründung</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0171_top07">Zu TOP 7</ref>: <ref target="#krp-0171_b02">Vortrag des Staatsamtes für Inneres und Unterricht zu Zl. 6804- Abt. 9 über den Beschluss der Steiermärkischen Landesversammlung zur Abänderung des Gesetzes über das Diensteinkommen der Volks- und Bürgerschullehrer, ihre Ruhestandsversetzung und die Hinterbliebenenversorgung</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0171_top08">Zu TOP 8</ref>: <ref target="#krp-0171_b03">Vortrag des Staatsamtes für Inneres und Unterricht zu Zl. 6489- Abt. 9 über den Beschluss der Salzburger Landesversammlung zur Abänderung des Gesetzes über die Errichtung, Erhaltung und den Besuch der Volksschulen</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0171_top09">Zu TOP 9</ref>: <ref target="#krp-0171_b04">Vortrag des Unterrichtsamtes zu Zl. 24.767/1919 über die Einführung von Titeln für verdiente Lehrkräfte der Volks-, Bürger- und Mittelschulen</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0171_top11">Zu TOP 11</ref>: <ref target="#krp-0171_b05">Vortrag des Staatsamtes für Finanzen über die Erlassung von Zahlungs- und Ausnahmeverboten mit Gesetz und Vollzugsanweisung</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0171_top12">Zu TOP 12</ref>: <ref target="#krp-0171_b06">Vortrag des Staatsamtes für soziale Verwaltung über die Bewilligung eines Kredits von 3 Millionen K zur Fortführung der Aktion zur Bekämpfung der Wohnungsnot</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0171_top14">Zu TOP 14</ref>: <ref target="#krp-0171_b07">Beilage betreffend Vortrag des Staatsamtes für Inneres und Unterricht über die Anpassung der Amtstitel der im Bereich der ehem. Statthaltereien in Verwendung stehenden juridisch administrativen Beamten wegen der Übernahme der Staatsgewalt in den Ländern</ref>
+                  </item>
+               </list>
+            </div>
+            <div type="protokoll">
+               <pb facs="krp-0171_r-0003"/>
+               <div type="top" xml:id="krp-0171_top01">
+                  <head>
+                     <label>
+                        <num n="1">1.</num>
+                        <seg>Verhandlungen mit der italienischen Regierung in Rom.</seg>
+                     </label>
+                  </head>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> erstattet dem Kabinettsrate Bericht über seine im Verein mit den Staatssekretären Dr. Loewenfeld-Russ, Paul und Ing. Zerdik sowie dem Unterstaatssekretär Dr. Ellenbogen geführten Verhandlungen mit der italienischen Regierung in Rom. Redner erinnert daran, dass er bereits vor einiger Zeit dem Kabinettsrate von der Verhandlungsbereitschaft der italienischen Regierung Mitteilung gemacht und die Staatssekretäre ersucht habe, das Material für eine in der Zeit um Pfingsten in Aussicht genommenen Zusammenkunft in Rom, deren Programm noch näher vereinbart werden sollte, vorzubereiten. Stattdessen sei ihm nunmehr aber während seines Aufenthaltes in Gloggnitz vom italienischen Gesandten ganz unvermittelt eine Einladung des Ministerpräsidenten Nitti nach Rom für einen derart kurz angesetzten Termin über<pb facs="krp-0171_r-0004"/>bracht worden, dass keine Möglichkeit mehr bestand, vorher noch mit dem Kabinett oder den politischen Parteien über die Verhandlungsgegenstände und die Art der Durchführung der Reise Fühlung zu nehmen. Andererseits sei es nicht angegangen, der Einladung nicht oder erst in einem späteren Zeitraum Folge zu geben. Redner habe sich daher darauf beschränken müssen, den Obmann und den Obmannstellvertreter des Ausschusses für Äußeres über den Sachverhalt im telefonischen Wege zu informieren, im Übrigen aber die weiteren Einleitungen wegen Teilnahme der Staatssekretäre der wirtschaftlichen Ressorts an der Reise in seiner Eigenschaft als Kabinettschef und Leiter des Staatsamtes für Äußeres selbständig zu treffen. Den Teilnehmerkreis habe Redner derart gezogen, dass die Verhandlungen sich gleich jenen mit der tschechoslowakischen Regierung in Prag als eine Auseinandersetzung mit Italien über die Durchführung des Friedensvertrages und die Wiederanknüpfung wirtschaftlicher Beziehungen darstellen.</p>
+                  <p>Bezüglich des Ergebnisses der Verhandlungen und der anknüpfend daran zu unternehmenden Schritte der einzelnen Ressorts zur Bereinigung der zwischen <pb facs="krp-0171_r-0005"/>Österreich und Italien schwebenden Fragen nimmt der Vorsitzende auf den allen Kabinettsmitgliedern zugehenden schriftlichen Bericht Bezug.</p>
+                  <p>Der Vorsitzende bemerkt weiters, dass er die Anwesenheit in Rom auch zu einem Höflichkeitsbesuch beim Vatikan benützt habe. Meritorische Verhandlungen mit der Kurie haben jedoch nicht stattgefunden, es sei nur das gegenseitige Einverständnis festgestellt worden, mit möglichster Raschheit die normalen diplomatischen Vertretungsbehörden wiederaufzurichten, unter deren Vermittlung die verschiedenen, der Lösung harrenden staatskirchenrechtlichen Fragen auszutragen sein werden. Redner richtet hiebei an Unterstaatssekretär Miklas die Einladung, durch Fühlungnahme mit den kirchlichen Kreisen des Inlandes die Unterlagen für die Verhandlungen zu schaffen und entsprechende Anträge für die Beschlussfassung im Kabinettsrate vorzubereiten.</p>
+                  <p>Am Schlusse seiner Ausführungen bittet der Vorsitzende, der Kabinettsrat wolle den Bericht zur Kenntnis nehmen und die nachträgliche Indemnität dafür erteilen, dass die Reise ohne vorherigen formellen Beschluss der Regierung unternommen wurde.</p>
+                  <p>
+                     <pb facs="krp-0171_r-0006"/>Vizekanzler <hi rend="#letterspaced">Fink</hi> gibt namens seiner Parteigenossen folgende Erklärung zu Protokoll:</p>
+                  <p>„Die christlichsozialen Mitglieder des Kabinetts stellen mit Befremden fest, dass über die Beschickung der Reise des Staatskanzlers und einiger Staatssekretäre nach Rom sowie über die Auswahl der Teilnehmer an dieser Reise weder mit ihnen noch mit der Leitung ihrer parlamentarischen Vereinigung noch im Wege des Exekutivkomitees der Koalition verhandelt worden ist.</p>
+                  <p>Diese bedauerliche Tatsache macht es den christlichsozialen Kabinettsmitgliedern unmöglich, die volle Mitverantwortung für die Begleitumstände dieser Reise und ihre Auswirkungen zu tragen. Sie müssen daher darauf bestehen, dass in Hinkunft vor ähnlichen Schritten der Staatskanzler mit ihnen und ihrer Partei ein solches Einvernehmen pflege, dass sie vor Überraschungen in Inhalt und Form der mit auswärtigen Mächten zu führenden Verhandlungen gesichert erscheinen.“</p>
+                  <p>Staatssekretär <hi rend="#letterspaced">Eldersch</hi> stellt zur Vermeidung von Missverständnissen fest, dass von dem Bevorstehen der Reise nach Rom auch die sozialdemokratischen Mitglieder des Kabinettes wie die Partei als solche nicht verstän<pb facs="krp-0171_r-0007"/>digt worden seien. Eine Ungleichheit in der Behandlung der beiden Koalitionsparteien liege also nicht vor.</p>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> begründet sein Vorgehen neuerdings aus der Zwangslage, in welche er durch die kurz befristete Einladung der italienischen Regierung einerseits und die Unmöglichkeit, die zum größten Teil auf Osterurlaub befindlichen Kabinettsmitglieder noch rechtzeitig zu einer Sitzung einzuberufen, andererseits versetzt war. Für die Hinkunft erklärt er es als selbstverständlich, dass keinerlei Verhandlungen mit fremden Staaten erfolgen werden, bevor nicht die Gesamtregierung und die beiden koalierten Parteien darüber Beschluss gefasst haben.</p>
+                  <p>Der Kabinettsrat nimmt schließlich den Bericht des Vorsitzenden zur Kenntnis und erteilt die von ihm erbetene Indemnität.</p>
+               </div>
+               <div type="top" xml:id="krp-0171_top02">
+                  <head>
+                     <label>
+                        <num n="2">2.</num>
+                        <seg>Bewegung unter den Eisenbahnbediensteten.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Paul</hi> teilt mit, dass in einzelnen Bereichen der Staatsbahnen sowie an der Südbahnstrecke zwischen Wien und Bruck an der Mur eine Bewegung im Gange sei.</p>
+                  <p>Die Staatsbahnbediensteten führen <pb facs="krp-0171_r-0008"/>Beschwerde darüber, dass ihnen am 1. April l. J. gelegentlich der Flüssigmachung der neuen Zuwendungen auf das künftige Besoldungssystem die gesamten bisherigen Vorschüsse abgezogen wurden, sodass ihnen für den Lebensunterhalt nur ganz unzureichende Beträge verblieben. Diese Beschwerde treffe jedoch nicht zu, da der sprechende Staatssekretär noch am 1. April die Rückerstattung der Abzüge angeordnet habe, welche auch tatsächlich in der Zeit bis zum 4. April durchgeführt worden sei, sodass die Angestellten in der Lebensführung keine Einbuße erlitten. Weiters haben die Eisenbahnbediensteten die Auszahlung der gleitenden Zulage schon am 15. April statt wie vorgesehen mit Monatsende verlangt. Auch diesem Wunsche sei dadurch Rechnung getragen worden, dass die Erteilung von Vorschüssen im Betrage von 120 K pro Kopf auf die für den Monat April mit 122 K festgesetzte gleitende Zulage angeordnet wurde. Außerdem begehren die Angestellten noch eine einmalige Zuwendung. Eine solche konnte vom Staatsamt für Finanzen ohne Zustimmung des Kabinettsrates nicht zugestanden werden. Doch habe Redner ohne formelle Einwilligung der Finanzverwaltung die <pb facs="krp-0171_r-0009"/>Auszahlung eines Vorschusses im Betrage eines Monatsgehaltes, im Maximum aber von 400 K bei definitiven Angestellten und 300 K bei Arbeitern angeordnet. Mit diesem Betrage erscheine nunmehr alles gedeckt, was die Angestellten an Nachträgen auf die künftige Lohnregulierung zu erwarten hätten. Schließlich sei noch die Verfügung ergangen, dass bei der Auszahlung am 1. Mai keine Abzüge auf geleistete Vorschüsse gemacht werden dürfen, sondern die verschiedenen Abzugsposten im Laufe des Monates Mai zusammenzustellen und erst in der Folgezeit nach einem noch festzusetzenden Schlüssel hereinzubringen sind.</p>
+                  <p>Die betreffenden Weisungen seien noch am 15. April abends als Diensttelegramm an alle Stationen hinausgegeben worden. Auch der gerade in Wien versammelte Zentralausschuss der Eisenbahnbediensteten sei davon verständigt worden. Der Zentralausschuss habe die getroffenen Verfügungen zur Kenntnis genommen, dazu aber eine folgende Resolution beschlossen, deren wesentlicher Absatz besagt:</p>
+                  <p>„Der Zentralausschuss fordert daher den dringenden Ausbau der als einzige Lösung bereits anerkannten gleitenden <pb facs="krp-0171_r-0010"/>Zulage. Mit Rücksicht auf die verzögerte Auszahlung des auf den Nachtrag zum Besoldungsübergangsgesetz sich ergebenden Mehrbetrages wäre, sämtlichen Bediensteten einschließlich der Arbeiter zur Aufrechterhaltung ihrer Lebensmöglichkeit bis zum 1. Mai noch im Laufe dieses Monates ein für alle Bediensteten gleicher Betrag im Ausmaße von 400 K als einmalige, nicht rückzahlbare Zuwendung flüssig zu machen. Bis zur Erledigung der sich aus dieser Forderung notwendigerweise ergebenden Verhandlungen mit der Regierung stimmt der Zentralausschuss vorläufig der Auszahlung von Gehalts- und Lohnvorschüssen, wie sie vom Staatsamte für Verkehrswesen in Aussicht genommen sind, als Kontozahlung auf die oben geforderten Zuwendungen zu.“</p>
+                  <p>Zwischen dem Standpunkte des Zentralausschusses und jenem des Staatsamtes erübrige also nur in der allerdings wesentlichen Frage eine Differenz, ob die Vorschüsse als rückzahlbar aufzufassen sind oder nicht. Auch die Resolution des Zentralausschusses sei noch in den gestrigen Abendstunden als Diensttelegramm an alle Vertrauensmännerausschüsse in den Stationen hinausgegeben worden und scheine auf den Staatsbahnen soweit ihre Wirkungen getan zu haben, dass außer <pb facs="krp-0171_r-0011"/>von St. Pölten bisher keine Streikmeldungen vorliegen. Nach der geschilderten Sachlage liege auch gar kein Anlass für einen Streik vor, da die Forderungen der Bediensteten im Wesen ja befriedigt wurden und die offen gebliebene Frage über die Rückzahlbarkeit des Vorschusses von 400 bzw. 300 K doch auch ohne Streik verhandelt werden könne.</p>
+                  <p>Dagegen seien die Bediensteten der Südbahn in der Strecke Wien – Bruck an der Mur in Gefolgschaft an einen Beschluss des Personales von Wiener Neustadt in den heutigen Morgenstunden in Streik getreten, ohne dass jedoch bisher die Südbahndirektion verständigt worden wäre, welche Forderungen erhoben werden. Die telegrafischen Verfügungen des Staatsamtes für Verkehrswesen über die Gewährung von Vorschüssen seien auch an die Südbahn ergangen, doch habe sich dort deren Weiterleitung an die Stationen durch die Abwesenheit der leitenden Funktionäre der Direktion und den Umstand, dass die Gesellschaft sich erst mit dem Staatsamt für Finanzen über die Bereitstellung der Mittel für die Vorschusszahlungen in Verbindung setzte, bis heute mittags verzögert. Es bleibe <pb facs="krp-0171_r-0012"/>nun abzuwarten, wie sich die Südbahnbediensteten nunmehr nach der durch das Telegramm geschaffenen Sachlage weiter verhalten werden.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Loewenfeld-Russ</hi> bespricht die Rückwirkungen der Eisenbahnerbewegung auf die Lebensmittelversorgung. Da durch den Streik auf der Südbahn bei uns sowohl wie in Jugoslawien die bei der italienischen Regierung erwirkte Lebensmittelaushilfe von 20.000 t nicht herangebracht werden könne, werde sich, wenn der Ausstand einige Tage anhalten oder gar auf die übrigen Linien übergreifen sollte, die Ernährungslage katastrophal gestalten. Nach dem derzeitigen Versorgungsstand sei für die nächste Woche nicht einmal die Brotquote gesichert, Mehl werde voraussichtlich überhaupt nicht ausgegeben werden können. Der sprechende Staatssekretär müsse jede Verantwortung für den drohenden Zusammenbruch des Ernährungswesens ablehnen und gedenke in einem Kommuniqué darzustellen, welche Rückwirkungen der Eisenbahnerstreik in dieser Hinsicht übt.</p>
+                  <p>Über die Mitteilung des Vorsitzenden, dass Vertreter der Südbahnbediensteten aus Wiener Neustadt vorzusprechen wünschen, ladet der Kabinettsrat den Vor<pb facs="krp-0171_r-0013"/>sitzenden ein, gemeinsam mit den Staatssekretären Hanusch, Dr. Loewenfeld-Russ und Paul die Abordnung anzuhören, um zu trachten, dass auf Grundlage der den Staatsbahnbediensteten gemachten Zugeständnisse auch auf der Südbahn der Verkehr oder mindestens die Lebensmitteltransporte wieder aufgenommen werden. Die Verhandlung des Gegenstandes wird für die Dauer dieser Besprechung ausgesetzt und inzwischen unter Vorsitz des Vizekanzlers Fink an die Erledigung der folgenden Punkte geschritten.</p>
+                  <p>Nach Rückkehr in die Sitzung teilt der <hi rend="#letterspaced">Vorsitzende</hi> mit, der Ausstand in Wiener Neustadt sei dadurch ausgelöst worden, dass infolge der unzweckmäßigen Verrechnungsmodalitäten der Südbahn bei der letzten Auszahlung nach dem Vorgange bei den Staatsbahnen zwar der Abzug aller Vorschüsse, die Berechnung der Bezüge jedoch noch nach den alten Ansätzen erfolgte, sodass das Personal geringere Beträge als vordem erhielt. Bei der Besprechung hätten sich schließlich die Vertreter der Angestellten bereit erklärt, ihren Auftraggebern gegen nachstehende Zusicherungen die Wiederaufnahme des Betriebes zu empfehlen:</p>
+                  <p>
+                     <pb facs="krp-0171_r-0014"/>Sämtliche Eisenbahnbedienstete erhalten ohne Rücksicht auf die Höhe ihres Monatsbezuges einen Vorschuss von 400 K, wobei die Frage der Rückzahlung einer späteren Regelung vorbehalten wird. Das Verrechnungswesen der Südbahn wird im Verein mit dem Staatsamt für Verkehrswesen und der Gesellschaft durch sachkundige Personen sogleich einer Überprüfung unterzogen, um eine möglichst rasche Durchrechnung der neuen Gebühren zu bewirken. Die Durchrechnung hat in Wiener Neustadt zu beginnen und ist derart zu beschleunigen, dass die Nachzahlungen noch vor dem 1. Mai erfolgen können.</p>
+                  <p>Nach dem Antrage des Vorsitzenden erteilt der Kabinettsrat dem Staatssekretär für Verkehrswesen die Ermächtigung, die nach dem Ergebnisse der Besprechungen notwendigen weiteren Maßnahmen zu treffen.</p>
+               </div>
+               <div type="top" xml:id="krp-0171_top03">
+                  <head>
+                     <label>
+                        <num n="3">3.</num>
+                        <seg>Gesetzentwurf, betreffend die Gebühren der österreichischen Wehrmacht (Heeresgebührengesetz).</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Deutsch</hi> berichtet anknüpfend an die Verhandlungen des Kabinettsrates in der Sitzung vom 13. April l. J., dass die vom Staatssekretär Dr. Reisch gestellten <pb facs="krp-0171_r-0015"/>Abänderungsanträge zum Gesetzentwurf, betreffend die Gebühren der österreichischen Wehrmacht (Heeresgebührengesetz) in folgender Fassung in die Vorlage aufgenommen wurden:</p>
+                  <list>
+                     <item n="1">
+                        <label>1.)</label> § 2 Abs. 4)</item>
+                  </list>
+                  <p>„Die Teuerungszulage (§ 5) und die gleitende Zulage (§ 6) dienen in erster Linie zur etwa erforderlichen Ergänzung des Kostgeldes.</p>
+                  <p>Ersparungen an Kostgeld in der Naturalwirtschaft sind Eigentum der an der Naturalverköstigung teilnehmenden Wehrmänner.“</p>
+                  <list>
+                     <item n="1">
+                        <label>2.)</label> § 11 a und § 13 Abs. 2:</item>
+                  </list>
+                  <p>„Sonstige besondere Gebühren, dann Gebühren aus besonderen Anlässen, usw., die sich aus der Eigentümlichkeit des Militärdienstes ergeben, sind erstmalig durch Gesetz zu regeln. Änderungen in den Gebührensätzen sind der Staatsregierung vorzubehalten.“</p>
+                  <list>
+                     <item n="1">
+                        <label>3.)</label> Der § 14:</item>
+                  </list>
+                  <p>„Die Bestimmungen über die den Wehrmännern nach den §§ 1–5 zukommenden Gebühren sind bei Änderungen in den Gesamtbezügen der Zivilstaatsdienerschaft durch die Staatsregierung in entsprechender Weise zu ändern.“</p>
+                  <p>Redner bemerkt, dass nach seiner Meinung der ursprüngliche Wortlaut des <pb facs="krp-0171_r-0016"/>§ 14 die Rückwirkung einer künftigen Neuregelung der Bezüge der Staatsdienerschaft auf die Gebühren der Wehrmänner klarer umschreibe, als die vom Staatsamte für Finanzen vorgeschlagene Fassung und daher von einer Änderung dieses Paragrafen abgesehen werden sollte.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Reisch</hi> erklärt, dass der Abänderungsantrag der Finanzverwaltung zu § 14 die Absicht verfolge, zum Ausdruck zu bringen, dass bei Vergleichung der Gebühren der Wehrmänner mit jenen der Staatsdiener auch die Beistellung der Montur bzw. der Dienstkleidung mit in Anschlag zu bringen sei.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Deutsch</hi> erwidert, der vom Vorredner bezeichnete Zweck lasse sich auch bei Festhalten an dem ursprünglichen Wortlaut des § 14 durch die Anführung der §§ 1–5 nach den Worten „Gebühren der Wehrmänner“ erreichen.</p>
+                  <p>Der Kabinettsrat erteilt sohin die Ermächtigung zur Einbringung des Gesetzentwurfes in der Nationalversammlung mit der Maßgabe, dass die § 2 Abs. 4, § 11 a und § 13 Abs. 2, die oben wiedergegebene neue Fassung erhalten, der <pb facs="krp-0171_r-0017"/>§ 14 dagegen in seinem ursprünglichen Wortlaute verbleibt und nur nach den Worten „Gebühren der Wehrmänner“ durch die Einschaltung „(§§ 1–5)“ ergänzt wird.</p>
+               </div>
+               <div type="top" xml:id="krp-0171_top04">
+                  <head>
+                     <label>
+                        <num n="4">4.</num>
+                        <seg>Erteilung von Vorschüssen an die in die neue Wehrmacht übergetretenen Volkswehrmänner aus den ihnen gutgeschriebenen Abfertigungsbeträgen.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. Deutsch erbittet die Entscheidung des Kabinettsrates über das Verlangen der in die neue Wehrmacht eintretenden Volkswehrmänner, den auf ihre Volkswehrdienstzeit entfallenden Teilbetrag der Abfertigung von monatlich 40 K nach § 7 des im vorangehenden Punkte behandelten Heeresgebührengesetzes statt der Gutschreibung für später schon jetzt ausgezahlt zu bekommen. Für die Erfüllung dieses besonders in Oberösterreich laut gewordenen Begehrens habe sich auch Landeshauptmann Hauser eingesetzt. Redner schlage vor, dem Wunsche durch Gewährung von Vorschüssen auf die Abfertigungssumme Rechnung zu tragen, dabei jedoch die Einschränkung zu machen, dass der Vorschuss 75 % des für die Volkswehrdienstzeit gutgeschriebenen Betrages nicht übersteigen darf und nur über individuelles Einschreiten jedes einzelnen An<pb facs="krp-0171_r-0018"/>spruchsberechtigten flüssig gemacht wird.</p>
+                  <p>Der Kabinettsrat stimmt der vom sprechenden Staatssekretär beantragten Vorgangsweise zu.</p>
+               </div>
+               <div type="top" xml:id="krp-0171_top05">
+                  <head>
+                     <label>
+                        <num n="5">5.</num>
+                        <seg>Gewährung einer staatlichen Ehrengabe an den Oberlehrer d. R. Direktor Josef Stark in Weizberg.</seg>
+                     </label>
+                  </head>
+                  <p>Unterstaatssekretär <hi rend="#letterspaced">Glöckel</hi> bringt für den im Alter von 83 Jahren stehenden und 64 Jahre hindurch im öffentlichen Schuldienst tätig gewesenen Oberlehrer des Ruhestandes Direktor Josef Stark in Weizberg die Gewährung einer staatlichen Ehrengabe im einmaligen Betrage von 2.000 K in Antrag.</p>
+                  <p>Der Kabinettsrat ermächtigt den sprechenden Unterstaatssekretär zur Gewährung der beantragten Ehrengabe und ladet das Staatsamt für Finanzen ein, die Bedeckung dieses Aufwandes vorzusorgen.</p>
+               </div>
+               <div type="top" xml:id="krp-0171_top06">
+                  <head>
+                     <label>
+                        <num n="6">6.</num>
+                        <seg>Vollzugsanweisung, betreffend den Schutz der Kunst- und Kulturdenkmale sowie der wissenschaftlichen Sammlungen bei Inanspruchnahme von Gebäuden für Volkspflegestätten.</seg>
+                     </label>
+                  </head>
+                  <p>Unterstaatssekretär Glöckel unterbreitet dem Kabinettsrat den im Einvernehmen mit den Staatsämtern für soziale Verwaltung, für Finanzen, Justiz, Land- und Forstwirtschaft, Handel und Gewerbe, Industrie und Bauten sowie mit <pb facs="krp-0171_r-0019"/>der Abteilung für Inneres des Staatsamtes für Inneres und Unterricht ausgearbeiteten Entwurf einer Vollzugsanweisung zur Durchführung der im § 6 Abs. 2 des Gesetzes vom 30. Mai 1919, StGBl. Nr. 309, über die Errichtung und Unterbringung von Volkspflegestätten vorgesehenen Ausnahme von der Inanspruchnahme solcher Schlösser, Paläste und Luxuswohngebäude, deren unveränderte Erhaltung wegen ihres hohen Wertes als Bauwerk oder wegen ihrer künstlerischen Innenausstattung im allgemeinen öffentlichen Interesse gelegen ist. Redner gibt eine Darstellung über die wesentlichsten Bestimmungen der Vollzugsanweisung und erbittet die Ermächtigung zu deren Erlassung.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Ramek</hi> empfiehlt, in § 6 Abs. 1 eine Umstilisierung vorzunehmen, um außer Zweifel zu stellen, dass die Kosten der gesicherten Unterbringung und Wegschaffung von Kunst- oder wissenschaftlichen Sammlungen aus dem angeforderten Gebäude zunächst dem Eigentümer und nach diesem das Rechtssubjekt, zu dessen Gunsten die Anforderung erfolgte, treffen, der Staat dagegen bloß in besonders berücksichtigungswürdigen Ausnahmsfällen nach <pb facs="krp-0171_r-0020"/>eigenem Ermessen einzutreten habe.</p>
+                  <p>Der Kabinettsrat stimmt der Erlassung der Vollzugsanweisung mit der von Staatssekretär Dr. Ramek angeregten Änderung zu, wobei die Festsetzung der neuen Fassung des § 6 Abs. 1 dem Unterrichtsamt im Einvernehmen mit dem Staatsamt für Justiz überlassen wird.</p>
+               </div>
+               <div type="top" xml:id="krp-0171_top07">
+                  <head>
+                     <label>
+                        <num n="7">7.</num>
+                        <seg>Gesetzesbeschluss der Steiermärkischen Landesversammlung, womit § 19 Pkt. 2 des Gesetzes vom 4. Juli 1919, LGBl. Nr. 115, betreffend das Diensteinkommen der Volks- und Bürgerschullehrerschaft, ihre Versetzung in den Ruhestand und die Versorgung ihrer Hinterbliebenen abgeändert wird.</seg>
+                     </label>
+                  </head>
+                  <p>Unterstaatssekretär <hi rend="#letterspaced">Glöckel</hi> erbittet und erhält vom Kabinettsrat die Ermächtigung, der Landesregierung in Steiermark mitteilen zu dürfen, dass gegen den Gesetzesbeschluss der Steiermärkischen Landesversammlung vom 26. Februar 1920, womit § 19 Pkt. 2 des Gesetzes vom 4. Juli 1919, LGBl. Nr. 115, betreffend das Diensteinkommen der Volks- und Bürgerschullehrerschaft, ihre Versetzung in den Ruhestand und die Versorgung ihrer Hinterbliebenen abgeändert wird, seitens der Staatsregierung keine Vorstellung erhoben und dessen sofortigen Kundmachung zugestimmt wird.</p>
+               </div>
+               <div type="top" xml:id="krp-0171_top08">
+                  <head>
+                     <label>
+                        <num n="8">8.</num>
+                        <seg>Gesetzesbeschluss der Landesversammlung in Salzburg, betreffend Abänderung der §§ 25 und 29 des Gesetzes vom 10. Jänner 1870, LGBl. Nr. 11, über die Errichtung, die Erhaltung und den Besuch der Volksschulen.</seg>
+                     </label>
+                  </head>
+                  <p>Unterstaatssekretär Glöckel berichtet über einen Gesetzesbeschluss der Landesversammlung in Salzburg vom <pb facs="krp-0171_r-0021"/>14. Februar 1920, durch welchen in Abänderung der §§ 25 und 29 des Gesetzes vom 10. Jänner 1870, LGBl. Nr. 11 über die Errichtung, die Erhaltung und den Besuch der Volksschulen die Strafbestimmungen gegen Eltern wegen Unterlassung der Einschreibung ihrer Kinder in die Schule und Vernachlässigung deren Schulbesuches verschärft werden.</p>
+                  <p>Nach dem Antrage des sprechenden Unterstaatssekretärs beschließt der Kabinettsrat, von der Erhebung einer Vorstellung gegen den Gesetzesbeschluss abzusehen und dessen Kundmachung nach Richtigstellung eines im Text unterlaufenen Redaktionsfehlers zuzustimmen.</p>
+               </div>
+               <div type="top" xml:id="krp-0171_top09">
+                  <head>
+                     <label>
+                        <num n="9">9.</num>
+                        <seg>Einführung von Titeln für verdiente Lehrkräfte der Volks- und Bürgerschulen.</seg>
+                     </label>
+                  </head>
+                  <p>Unterstaatssekretär Glöckel stellt unter eingehender Begründung den Antrag, der Kabinettsrat wolle als Auszeichnung für verdiente Lehrkräfte an Volks- und Bürgerschulen die Einführung folgender Titel beschließen:</p>
+                  <list>
+                     <item n="1">
+                        <label>1.)</label> des Titels „Oberlehrer“ an verdiente Lehrkräfte an mehrklassigen Volksschulen während der Aktivität und anlässlich ihrer Pensionierung;</item>
+                     <item n="2">
+                        <label>2.)</label> des Titels „Bürgerschuldirektor“ an verdiente Bürgerschullehrkräfte wäh<pb facs="krp-0171_r-0022"/>rend der Aktivität und anlässlich ihrer Pensionierung;</item>
+                     <item n="3">
+                        <label>3.)</label> des Titels „Oberlehrer“ an verdiente Leiter einklassiger Schulen während der Aktivität und anlässlich ihrer Pensionierung;</item>
+                     <item n="4">
+                        <label>4.)</label> des Titels „Schulrat“ an verdiente Leiter von Bürgerschulen anlässlich ihrer Pensionierung.</item>
+                  </list>
+                  <p>Das Recht zur Verleihung dieser Titel soll durch Einholung einer generellen Ermächtigung beim Präsidenten der Nationalversammlung für den Staatssekretär für Inneres und Unterricht erbeten werden.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Reisch</hi> besorgt, dass die Verleihung des Titels eines Bürgerschuldirektors den damit bekleideten Lehrkräften Anlass bieten könnte, den Anspruch auf die einem Bürgerschuldirektor zukommenden Bezüge abzuleiten.</p>
+                  <p>Unterstaatssekretär <hi rend="#letterspaced">Miklas</hi> macht geltend, dass die gleichen Rücksichten, welche für die Einführung von Titeln als Auszeichnung für die Lehrkräfte an Volks- und Bürgerschulen bestehen, in gleicher Weise bezüglich der Lehrkräfte an den Mittelschulen vorwalten, und ersucht, auch für diese eine entsprechende Regelung zu treffen.</p>
+                  <p>
+                     <pb facs="krp-0171_r-0023"/>Unterstaatssekretär <hi rend="#letterspaced">Glöckel</hi> erklärt, um den Bedenken des Staatssekretärs Dr. Reisch Rechnung zu tragen, in jedes Verleihungsdekret den ausdrücklichen Vorbehalt aufnehmen zu wollen, dass mit der Verleihung des Titels keinerlei Anspruch auf Änderung in den Bezügen verbunden sei.</p>
+                  <p>Zu den Ausführungen des Unterstaatssekretärs Miklas bemerkt Redner, dass die Frage der Neuregelung der Titel für verdiente Mittel- und Hochschullehrer bereits in Behandlung stehe und darüber dem Kabinettsrate in der nächsten Zeit ein Antrag zugehen werde.</p>
+                  <p>Der Kabinettsrat beschließt sohin im Sinne des von Unterstaatssekretär Glöckel gestellten Antrages.</p>
+               </div>
+               <div type="top" xml:id="krp-0171_top10">
+                  <head>
+                     <label>
+                        <num n="10">10.</num>
+                        <seg>Gesetzesbeschluss des Salzburger Landtages, betreffend die Verbauung der Hinterseer Alm in Wiestal.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Stöckler</hi> unterbreitet dem Kabinettsrat den Gesetzesbeschluss des Salzburger Landtages vom 13. Februar 1920, betreffend die Verbauung der Hinterseer Alm in Wiestal und erbittet die Ermächtigung zur Vornahme der Gegenzeichnung sowie zur Verständigung an die Landesregierung in Salzburg, dass der sofortigen Kundmachung zuge<pb facs="krp-0171_r-0024"/>stimmt wird.</p>
+                  <p>Der Kabinettsrat erteilt die erbetene Ermächtigung.</p>
+               </div>
+               <div type="top" xml:id="krp-0171_top11">
+                  <head>
+                     <label>
+                        <num n="11">11.</num>
+                        <seg>Erlassung von Zahlungs- und Annahmeverboten.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Reisch</hi> erinnert daran, dass nach dem Staatsvertrag von St. Germain (Art. 248 und Anlage) die alliierten und assoziierten Staaten berechtigt sind, zu verlangen, dass gewisse Schulden zwischen ihren und österreichischen Staatsangehörigen durch Ausgleichsämter geregelt werden. Zur Sicherung dieses Zahlungsausgleiches sei die Erlassung von Zahlungs- und Annahmeverboten vorgesehen, die nach dem – freilich nicht ganz klaren – Wortlaute des Art. 248 (lit. a) des Friedensvertrages am Tage seines Inkrafttretens in Wirksamkeit treten sollen. Die beteiligten Staaten haben ferner die Verpflichtung, Verletzungen dieser Verbote mit den in ihrer Gesetzgebung gegenwärtig für den Handel mit dem Feinde vorgesehenen Strafen zu belegen.</p>
+                  <p>Diesen Bestimmungen des Friedensvertrages solle nun durch die dem Kabinettsrate vorliegenden Entwurfe eines Gesetzes und einer Vollzugsanweisung über die <pb facs="krp-0171_r-0025"/>Erlassung von Zahlungs- und Annahmeverboten Rechnung getragen werden. In der Absicht, dabei nach Möglichkeit auch die Interessen sowohl der Staatswirtschaft als auch der Volkswirtschaft zu schützen, gehen die Entwürfe stellenweise über die Forderungen im Friedensvertrage hinaus, und suchen dem Vertrag eine Auslegung zu geben, welche den Interessen der österreichischen Wirtschaft am wenigsten schädlich ist.</p>
+                  <p>In gesetzestechnischer Hinsicht sei der Weg gewählt worden, die Regierung durch ein Gesetz zu ermächtigen, die notwendigen Verfügungen durch Vollzugsanweisungen zu erlassen. Eine gesetzliche Ermächtigung erscheine notwendig, weil der Friedensvertrag selbst kein Zahlungsverbot aufstellt, sondern nur die Verpflichtung der vertragschließenden Teile statuiert, Zahlungsverbote zu erlassen. Auch könnte aufgrund eines nur im Verordnungswege erlassenen Zahlungsverbotes eine gerichtliche Verurteilung des Zuwiderhandelnden nicht erfolgen.</p>
+                  <p>In der Strafsanktion geht das Gesetz mit der angedrohten Geldstrafe von 200.000 K über die bisher für den Handel mit dem Feinde vorgesehene Strafe von 50.000 K (Kaiserliche Verord<pb facs="krp-0171_r-0026"/>nung vom 16. Oktober 1914, RGBl. Nr. 289) nicht nur in Berücksichtigung des seither stark gesunkenen Geldwertes, sondern auch in Anbetracht des Umstandes hinaus, dass es sich bei Zuwiderhandlungen gegen das Zahlungsverbot in der Regel um sehr bedeutende Summen handeln wird.</p>
+                  <p>Im Rahmen des Gesetzes hätte sodann der Staatssekretär für Finanzen im Einvernehmen mit den beteiligten Staatsämtern knapp vor dem Zeitpunkte des Inkrafttretens des Friedensvertrages eine Vollzugsanweisung über das Zahlungs- und Annahmeverbot zu erlassen.</p>
+                  <p>Redner erbittet vom Kabinettsrate die Ermächtigung, den Gesetzentwurf in der Nationalversammlung einbringen und nach dessen Verabschiedung die vorbereitete Vollzugsanweisung erlassen zu dürfen.</p>
+                  <p>Der Kabinettsrat erteilt die erbetene Ermächtigung</p>
+               </div>
+               <div type="top" xml:id="krp-0171_top12">
+                  <head>
+                     <label>
+                        <num n="12">12.</num>
+                        <seg>Bewilligung eines Kredites von 3 Millionen K zur Fortführung der Aktion zur Bekämpfung der Wohnungsnot.</seg>
+                     </label>
+                  </head>
+                  <p>In Vertretung des Staatssekretärs Hanusch berichtet Unterstaatssekretär Dr. <hi rend="#letterspaced">Resch</hi> dem Kabinettsrate, dass der mit Kabinettsbeschluss vom 14. Oktober 1919 bewilligte weitere Kredit von 3 Millionen K zur Linderung <pb facs="krp-0171_r-0027"/>der Wohnungsnot nahezu zur Gänze aufgebraucht sei. Die im Verlaufe der Aktion gemachten Zuwendungen belaufen sich auf 12.938.500 K, wovon etwas über 7 Millionen K auf Niederösterreich, je rund 2 Millionen K auf Oberösterreich und Steiermark, der Rest auf die übrigen Länder entfallen.</p>
+                  <p>Das Staatsamt für soziale Verwaltung halte bei den Bewilligungen an dem schon früher eingeführten Grundsatz, dass aus dem Notwohnungskredite Beiträge nur jenen Gemeinden bewilligt werden, welche einen Teil der Kosten der Notwohnungsaktionen aus Eigenem tragen, von ganz besonderen Ausnahmsfällen abgesehen, streng fest und werde auch weiter darnach vorgehen.</p>
+                  <p>Die noch ungeschwächt andauernde Wohnungsnot habe aber zur Folge, dass immer wieder neue Ansuchen um Bewilligung von Staatsbeiträgen aus dem Notwohnungskredite einlangen. Insbesonders haben sich in vielen Fällen Überschreitungen der Kosten für die Notwohnungsaktionen, zu welchen staatliche Beitragsleistungen bewilligt wurden, ergeben. Von diesen Überschreitungen müsse wenigstens ein Teil aus dem Notwohnungskredite gedeckt werden, da die Gemeinden ganz <pb facs="krp-0171_r-0028"/>außerstande seien, den infolge des ständigen Steigens der Arbeitslöhne und Materialpreise eingetretenen Mehraufwand zur Gänze auf sich zu nehmen. Nur für die allerdringendsten derartigen Fälle habe bereits ein Betrag von über 1.400.000 K vorgemerkt werden müssen.</p>
+                  <p>Das Staatsamt für soziale Verwaltung benötige daher einen neuen außerordentlichen Kredit in der Höhe von 3 Millionen K, dessen Bewilligung Redner nach gepflogenem Einvernehmen mit dem Staatsamt für Finanzen vom Kabinettsrate erbitte.</p>
+                  <p>Der Kabinettsrat beschließt, den angeforderten Betrag zu bewilligen.</p>
+               </div>
+               <div type="top" xml:id="krp-0171_top13">
+                  <head>
+                     <label>
+                        <num n="13">13.</num>
+                        <seg>Erhöhung von Bezirksstraßenumlagen in Niederösterreich für das Jahr 1919.</seg>
+                     </label>
+                  </head>
+                  <p>Nach dem Antrage des Staatssekretärs Ing. <hi rend="#letterspaced">Zerdik</hi> genehmigt der Kabinettsrat die Beschlüsse des Niederösterreichischen Landtages vom 4. und vom 17. Dezember 1919, durch welche 58 bzw. 8 Bezirksstraßenausschüssen die Einhebung von 30 % der Gesamtsumme der direkten Steuern ihres Bezirkes übersteigenden Bezirksstraßenumlagen für das Jahr 1919 bewilligt wurde.</p>
+                  <p>
+                     <pb facs="krp-0171_r-0029"/>
+                  </p>
+               </div>
+               <div type="top" xml:id="krp-0171_top14">
+                  <head>
+                     <label>
+                        <num n="14">14.</num>
+                        <seg>Anpassung der Amtstitel der im Bereiche der ehemaligen Statthaltereien in Verwendung stehenden juridisch-administrativen Beamten an die Bestimmung des § 10 des Gesetzes vom 14. November 1918, StGBl. Nr. 24, betreffend die Übernahme der Staatsgewalt in den Ländern.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretäre <hi rend="#letterspaced">Eldersch</hi> führt aus, dass nach dem Gesetze vom 14. November 1918, StGBl. Nr. 24, betreffend die Übernahme der Staatsgewalt in den Ländern die Beamten der ehemaligen Statthaltereien und Landesregierungen die Bezeichnung „Beamte der Landesregierung“ zu führen haben und demgemäß auch ihre Amtstitel, soweit sie mit dem Beisatze „Statthalterei“ gebildet sind, eine entsprechende Abänderung zu erfahren haben. In Übereinstimmung mit der geänderten Bezeichnung der Landesstelle als Landesregierung wären also auch für die juridisch-administrativen Beamten der Statthaltereien die Amtstitel „Landesregierungsrat“, „Landesregierungssekretär“, „Landesregierungskonzipist“ und „Landesregierungskonzeptspraktikant“ festzusetzen. Für die Beamten der IV. Rangsklasse bei den Landesstellen werde bis zur generellen Regelung der Titelfrage die Bezeichnung „Vizepräsident der Landesregierung" in Vorschlag gebracht, wiewohl Redner selbst zugestehen müsse, dass diese Bezeichnung nicht ganz entsprechend sei und vielleicht auch den Widerspruch einzelner Landeshauptmänner auslösen dürfte.</p>
+                  <p>Über die letztere Frage entspinnt <pb facs="krp-0171_r-0030"/>sich eine längere Debatte, gelegentlich welcher Staatssekretär Dr. <hi rend="#letterspaced">Mayr</hi> für die Beamten der IV. Rangsklasse den Titel „Sektionschef“, Unterstaatssekretär <hi rend="#letterspaced">Miklas</hi> den Titel „Vizepräsident bei der Landesregierung“ und Staatssekretär Dr. <hi rend="#letterspaced">Reisch</hi> den Titel „Vizepräsident“ ohne Zusatz vorschlagen.</p>
+                  <p>Der Kabinettsrat stimmt schließlich der Einführung der Amtstitel „Landesregierungsrat“, „Landesregierungssekretär“, „Landesregierungskonzipist“ und „Landesregierungskonzeptspraktikant“ zu, behält jedoch die Entscheidung bezüglich des Titels für die Beamten der IV. Rangsklasse einer Rundfrage vor, die der Staatssekretär für Inneres und Unterricht an die Landeshauptmänner darüber zu richten hätte, für welche von den vorgeschlagenen Bezeichnungen sie sich aussprechen.</p>
+               </div>
+               <div type="top" xml:id="krp-0171_top15">
+                  <head>
+                     <label>
+                        <num n="15">15.</num>
+                        <seg>Konferenz der Länder über die Verfassungsreform in Linz.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Mayr</hi> gibt dem Kabinettsrate bekannt, dass am 21. April in Linz eine Fortsetzung der am 15. Februar 1920 in Salzburg abgehaltenen Konferenz der Länder über die Verfassungsreform stattfinde und an ihn eine Einladung zur Teilnahme ergangen <pb facs="krp-0171_r-0031"/>sei. Redner habe die Absicht, dieser Einladung Folge zu leisten und sein Verhalten bei der Konferenz den ihm in der Sitzung des Kabinettes vom 10. Februar l. J. erteilten Richtlinien anzupassen.</p>
+                  <p>Der Kabinettsrat nimmt diese Mitteilungen zur Kenntnis und billigt das von Staatssekretär Dr. Mayr beabsichtigte Vorgehen. </p>
+               </div>
+               <div type="top" xml:id="krp-0171_top16">
+                  <head>
+                     <label>
+                        <num n="16">16.</num>
+                        <seg>Neubesetzung der Stellen zweier Ersatzmänner beim Verfassungsgerichtshof.</seg>
+                     </label>
+                  </head>
+                  <p>Über Vorschlag des <hi rend="#letterspaced">Vorsitzenden</hi> beschließt der Kabinettsrat zur Ernennung als Ersatzmänner beim Verfassungsgerichtshof an Stelle des Senatspräsidenten i. R. Stefan Falser und des Rechtsanwaltes Dr. Eduard Erler dem Präsidenten der Nationalversammlung den Oberlandesgerichtsrat Dr. Matthias Bernegger in Wien und den Rechtsanwalt Dr. Ernst Jäger in Linz vorzuschlagen. </p>
+               </div>
+               <div type="top" xml:id="krp-0171_top17">
+                  <head>
+                     <label>
+                        <num n="17">17.</num>
+                        <seg>Zurückziehung der Anfechtungsklage gegen den Gesetzesbeschluss des Landtages in Salzburg, betreffend die Anforderung von Holzvorräten.</seg>
+                     </label>
+                  </head>
+                  <p>Der Vorsitzende bringt dem Kabinettsrate zur Kenntnis, dass in Angelegenheit des Gesetzesbeschlusses des Landtages in Salzburg vom 14. Februar 1920, betreffend die Anforderung <pb facs="krp-0171_r-0032"/>von Holzvorräten, gegen den in der Kabinettssitzung vom 19. März l. J. die Einbringung der Anfechtungsklage beim Verfassungsgerichtshof und gleichzeitig die Erhebung der Vorstellung beschlossen worden war, Vergleichsverhandlungen zwischen Vertretern der Staatsregierung und der Salzburger Landesregierung stattgefunden haben. Bei diesen stellte sich heraus, dass dem mit dem angefochtenen Gesetzesbeschluss vom Landtage verfolgten Zweck ohne Schädigung der Staatsinteressen durch eine Ergänzung des Gesetzes vom 4. April 1919 über die Einrichtung von Einigungsämtern für Streitigkeiten aus bestimmten Lieferungsverträgen, StGBl. Nr. 220, Rechnung getragen werden könne. Nach den Erklärungen des Landeshauptmannstellvertreters Dr. Rehrl handelte es sich nämlich dem Lande mit dem Gesetzesbeschlusse darum, wirtschaftlich besonders schwache Waldbesitzer und kleine Holzhändler vor den Konsequenzen jener bisher noch nicht effektuierten Holzlieferungs- und Holzabstockungsverträge zu schützen, die sie in den ersten Kriegsjahren mit Holzspekulanten unter Bedingungen abgeschlossen haben, die sich bei der folgenden Gestaltung der wirtschaftlichen Lage dermalen als geradezu ruinös darstellen.</p>
+                  <p>
+                     <pb facs="krp-0171_r-0033"/>Die Vertreter der beteiligten Staatsämter hätten, um diesem Wunsche der Vertreter des Landes entgegenzukommen, die Erlassung einer auf das wirtschaftliche Ermächtigungsgesetz zu basierenden Vollzugsanweisung in Aussicht gestellt, durch welche die Bestimmungen des vorzitierten Gesetzes in folgenden Punkten ausgestaltet werden: Die Kompetenz des Einigungsamtes gemäß § 1 des Gesetzes solle nicht bloß bei Streitigkeiten aus Lieferungsverträgen im engeren Sinne, sondern auch bei Streitigkeiten aus Holzabstockungsverträgen begründet werden. In die zur Entscheidung über die fraglichen Holzgeschäfte berufenen Einigungsämter solle in Ergänzung des § 5 des Gesetzes ein auf Vorschlag der landwirtschaftlichen Hauptkorporationen des Landes vom Staatssekretär für Land- und Forstwirtschaft im Einvernehmen mit dem Staatssekretär für Justiz zu bestellender Beisitzer berufen werden. Ein derartiges Einigungsamt soll unverzüglich in Salzburg ins Leben gerufen werden.</p>
+                  <p>Die Vertreter des Landes Salzburg verpflichteten sich, unter der Voraussetzung der Erlassung einer solchen Vollzugsanweisung durch die Staatsregierung beim Landtage die Stattgebung der Vor<pb facs="krp-0171_r-0034"/>stellung und den Widerruf des angefochtenen Gesetzesbeschlusses zu beantragen. Dagegen verpflichteten sich die Vertreter der Staatsregierung, die Anfechtung beim Verfassungsgerichtshofe zurückzuziehen.</p>
+                  <p>Aufgrund der vom Kabinettsrate am 19. März 1920 bedingungsweise erteilten Ermächtigung habe die Staatskanzlei sohin beim Verfassungsgerichtshofe die Anfechtungsklage zurückgezogen.</p>
+                  <p>Nach dem Antrage Redners nimmt der Kabinettsrat den mit den Vertretern des Landes Salzburg geschlossenen Ausgleich zur Kenntnis und erteilt zu der erfolgten Zurückziehung der Anfechtungsklage beim Verfassungsgerichtshof nachträglich die Genehmigung.</p>
+               </div>
+               <div type="top" xml:id="krp-0171_top18">
+                  <head>
+                     <label>
+                        <num n="18">18.</num>
+                        <seg>Streik der Gerichtskanzleibeamten.</seg>
+                     </label>
+                  </head>
+                  <p>In Vertretung des Staatssekretärs Dr. Ramek berichtet Unterstaatssekretär Dr. <hi rend="#letterspaced">Eisler</hi>, dass die bereits in der Kabinettssitzung vom 9. April mitgeteilte Vermittlung der Richtervereinigung im Streik der Gerichtskanzleibeamten ohne Zutun des Staatssekretärs für Justiz zur Aufnahme von Verhandlungen mit den Streikenden geführt habe, <pb facs="krp-0171_r-0035"/>infolge deren die Beamten unter Aufrechterhaltung ihrer Forderungen zum Dienst zurückgekehrt seien.</p>
+                  <p>Redner zählt sodann die einzelnen Forderungen der Angestellten auf und bezeichnet daraus jene Punkte, bezüglich welcher der Staatssekretär für Justiz im Sinne der durch die Kabinettsbeschlüsse vom 7. und 9. April erhaltenen Ermächtigung die Berücksichtigung in Aussicht gestellt habe, sowie jene weitergehenden Wünsche, hinsichtlich welcher die Entscheidung des Kabinettsrates erforderlich ist.</p>
+                  <p>Abschließend teilt der sprechende Unterstaatssekretär mit, dass den Angestellten die Abstandnahme von Disziplinarmitteln wegen des Streikes zugesagt worden sei.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Reisch</hi> äußert sein Bedauern, über die Art, wie der Streik beendet wurde und bemängelt, dass die Verhandlungen ohne Beiziehung eines Vertreters des Staatsamtes für Finanzen erfolgten. Dies habe dazu geführt, dass Zugeständnisse gemacht wurden, die auch in andere Ressorts übergreifen und die Staatsfinanzen empfindlich belasten. Redner müsse daher verlangen, dass sich der Kabinettsrat die <pb facs="krp-0171_r-0036"/>Prüfung der den Angestellten gegebenen Zusicherungen vorbehalte und dem Staatsamte für Finanzen bei der weiteren Behandlung der Angelegenheiten ein maßgebender Einfluss eingeräumt werde.</p>
+                  <p>Im Zusammenhange damit teilt der sprechende Staatssekretär dem Kabinettsrate mit, dass – veranlasst durch den Erfolg des Streikes der Gerichtskanzleibeamten – sich für den 17. April Abordnungen der Rechnungsbeamten und der Kanzleibeamten der anderen Ressorts bei ihm angekündigt haben, von denen die ersteren die Überstellung aus der Gruppe C in die Gruppe B des Zeitbeförderungsschemas, die letzteren die Einräumung aller den Gerichtskanzleibeamten gewährten Begünstigungen verlangen.</p>
+                  <p>Staatssekretär <hi rend="#letterspaced">Eldersch</hi> erachtet gleichfalls eine Überprüfung der Zugeständnisse an die Gerichtskanzleibeamten hinsichtlich ihrer Rückwirkungen auf die übrigen Ressorts für unerlässlich und wünscht, dass zu diesem Behufe das gesamte Verhandlungsmaterial dem Kabinettsrat schriftlich vorgelegt werde.</p>
+                  <p>Der Kabinettsrat ladet sohin den Staatssekretär für Justiz ein, über die Wünsche der Gerichtskanzleibeamten zu<pb facs="krp-0171_r-0037"/>nächst mit dem Staatsamt für Finanzen eine Verständigung zu suchen und im Einvernehmen mit diesem über das mögliche Ausmaß der Zugeständnisse schriftliche Anträge auszuarbeiten; hierauf erst wird der Kabinettsrat die Angelegenheit in einer der nächsten Sitzungen in Behandlung nehmen.</p>
+                  <p>Von diesem Sachverhalt wird Staatssekretär Dr. Reisch die bei ihm erscheinenden Abordnungen der Rechnungs- und Kanzleibeamten zu verständigen und ihnen zu bedeuten haben, dass mangels einer Entscheidung über die Regelung des Dienstverhältnisses der Gerichtskanzleibeamten eine Stellungnahme zu ihren Wünschen derzeit erübrigt.</p>
+                  <p/>
+               </div>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

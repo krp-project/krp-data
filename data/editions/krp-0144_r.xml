@@ -1,0 +1,547 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href='http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:acdh="https://vocabs.acdh.oeaw.ac.at/schema#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xml:lang="de">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="a" type="main" n="0144">Kabinettsprotokoll Nr. 144 vom 4. Februar 1920</title>
+            <title level="m" type="main" n="01">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <title level="m" type="sub" n="">Renner III (17. Oktober 1919 – 7. Juli 1920)</title>
+            <meeting>
+               <placeName key="https://d-nb.info/gnd/4066009-6">Wien</placeName>
+               <orgName key="https://d-nb.info/gnd/5162749-8">Kabinettsrat</orgName>
+               <date when-iso="1920-02-04"/>
+            </meeting>
+            <editor>
+               <persName key="https://d-nb.info/gnd/122481836"
+                         role="hasCreator"
+                         xml:id="hwohnout">
+                  <forename>Helmut</forename>
+                  <surname>Wohnout</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</affiliation>
+               <idno type="ORCID">0000-0002-3864-9839</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/120789825"
+                         role="hasCreator"
+                         xml:id="tolechowski">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0003-3291-6876</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/131679384"
+                         role="hasCreator"
+                         xml:id="rlein">
+                  <forename>Richard</forename>
+                  <surname>Lein</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0002-7502-0503</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="aholzer">
+                  <forename>Anna</forename>
+                  <surname>Holzer</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0005-3560-3500</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="dsoelkner">
+                  <forename>Dominik</forename>
+                  <surname>Sölkner</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-9895-7212</idno>
+            </editor>
+            <editor>
+               <persName role="hasContributor" xml:id="ischotzko">
+                  <forename>Ina</forename>
+                  <surname>Schotzko</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-5210-3713</idno>
+            </editor>
+            <funder n="1">
+               <orgName key="https://d-nb.info/gnd/2054142-9" role="hasFunder">Österreichischer Wissenschaftsfonds FWF</orgName>
+               <idno type="project">PAT1495024</idno>
+               <title type="project">Die Protokolle des österreichischen Kabinettsrates 1919–1920</title>
+            </funder>
+            <respStmt>
+               <resp>Projektverantwortung</resp>
+               <orgName key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Projektleitung</resp>
+               <persName key="https://d-nb.info/gnd/120789825" role="hasPrincipalInvestigator">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+                  <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+                  <idno type="ORCID">0000-0003-3291-6876</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Nationaler Forschungspartner</resp>
+               <orgName key="https://d-nb.info/gnd/1123037736" role="hasEnabler">Austrian Centre for Digital Humanities</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Digitalisierung der gedruckten Quellen</resp>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>TEI-Datenmodellierung</resp>
+               <persName role="hasContributor" xml:id="tfruehwirth">
+                  <forename>Timo</forename>
+                  <surname>Frühwirth</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-3997-5193</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technische Supervision</resp>
+               <persName key="https://d-nb.info/gnd/1043833846"
+                         role="hasContributor"
+                         xml:id="pandorfer">
+                  <forename>Peter</forename>
+                  <surname>Andorfer</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-9575-9372</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technisches Consulting und Vorbereitung der Druckausgabe</resp>
+               <persName key="https://d-nb.info/gnd/13281899X"
+                         role="hasContributor"
+                         xml:id="skurz">
+                  <forename>Stephan</forename>
+                  <surname>Kurz</surname>
+                  <affiliation key="https://d-nb.info/gnd/1202798799">Institut für die Erforschung der Habsburgermonarchie und des Balkanraumes</affiliation>
+                  <idno type="ORCID">0000-0003-2546-2570</idno>
+               </persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher key="https://d-nb.info/gnd/1001454-8">Österreichische Akademie der Wissenschaften</publisher>
+            <date when="2028"/>
+            <availability status="free">
+               <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">Lizenziert unter CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/deed.de)</licence>
+            </availability>
+            <idno type="ISBN_Print"/>
+            <idno type="ISBN_Part_epub"/>
+            <idno type="ISBN_Digital"/>
+            <idno type="DOI"/>
+            <idno type="DOI_zenodo"/>
+            <idno type="ebook_ID"/>
+         </publicationStmt>
+         <seriesStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="m" type="main">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <respStmt>
+               <resp>Bearbeitung und Herausgeberschaft</resp>
+               <orgName key="https://d-nb.info/gnd/2024703-5">Universität Wien</orgName>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+         </seriesStmt>
+         <notesStmt>
+            <note>Diese TEI-XML-Datei ist Grundlage für eine Druckausgabe der Edition.</note>
+            <relatedItem>
+               <biblStruct>
+                  <monogr>
+                     <imprint>
+                        <pubPlace key="https://d-nb.info/gnd/4066009-6">Wien</pubPlace>
+                        <publisher key="https://d-nb.info/gnd/2068748-5">Verlag der Österreichischen Akademie der Wissenschaften</publisher>
+                        <date when="2029"/>
+                     </imprint>
+                     <extent/>
+                  </monogr>
+                  <note>
+                     <idno/>
+                     <ptr/>
+                  </note>
+                  <citedRange/>
+               </biblStruct>
+            </relatedItem>
+         </notesStmt>
+         <sourceDesc>
+            <bibl>Quellbestand: AT-OeStA/AdR MRang MR 1Rep KRP Kabinettsratsprotokolle, 1918-1920 (Teilbestand)<ref target="https://www.archivinformationssystem.at/detail.aspx?id=5465">https://www.archivinformationssystem.at/detail.aspx?id=5465</ref>
+            </bibl>
+            <msDesc>
+               <msIdentifier>
+                  <institution key="https://d-nb.info/gnd/37748-X" role="hasOwner">AT-OeStA Österreichisches Staatsarchiv (Archiv (ÖStA))</institution>
+                  <repository key="https://d-nb.info/gnd/1601181-8">AT-OeStA/AdR Archiv der Republik, 1918- (Abteilung)</repository>
+                  <collection>AT-OeStA/AdR MRang MR 1Rep Ministerrat 1. Republik, 1918 - 1938 (Bestand)</collection>
+                  <idno>AT-OeStA_AdR-MRang-MR-1.-Rep.-KRP-144</idno>
+               </msIdentifier>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <abstract>
+            <p>
+          <!--to be generated-->
+        </p>
+         </abstract>
+      </profileDesc>
+      <encodingDesc>
+         <styleDefDecl scheme="css"/>
+         <tagsDecl>
+            <rendition xml:id="b" scheme="css">font-weight:bold;</rendition>
+            <rendition xml:id="su" scheme="css">vertical-align:super;font-size:.7em;</rendition>
+            <rendition xml:id="s" scheme="css">text-decoration:line-through;</rendition>
+            <rendition xml:id="u" scheme="css">text-decoration:underline;</rendition>
+            <rendition xml:id="ow" scheme="css">text-decoration:line-through;text-decoration-style:double;</rendition>
+            <rendition xml:id="r" scheme="css">display:block;text-align:right;</rendition>
+            <rendition xml:id="letterspaced" scheme="css">letter-spacing:0.15em;</rendition>
+            <rendition xml:id="i" scheme="css">font-style:italic;</rendition>
+         </tagsDecl>
+         <editorialDecl>
+            <hyphenation>
+               <p>
+            <!--to be added-->
+          </p>
+            </hyphenation>
+            <correction>
+               <p>
+            <!--to be added-->
+          </p>
+            </correction>
+            <normalization>
+               <p>
+            <!--to be added-->
+          </p>
+            </normalization>
+            <punctuation>
+               <p>
+            <!--to be added-->
+          </p>
+            </punctuation>
+            <stdVals>
+               <p>
+            <!--to be added-->
+          </p>
+            </stdVals>
+            <p>
+          <!--to be added-->
+        </p>
+         </editorialDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#tfruehwirth" when-iso="2026-09-10">TEIGarage output upconverted with upconvert.xsl</change>
+         <change who="#tfruehwirth" when-iso="2026-09-10">TEI header populated with generate_tei_templates.py</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface/>
+   </facsimile>
+   <text>
+      <body>
+         <div xml:id="doc-krp-0144.xml">
+            <head type="dokument">
+               <title type="num">144.<note type="footnote">Das Protokoll trägt den Vermerk <hi rend="#i">Vertraulich!</hi>
+                  </note>
+               </title>
+               <title type="desc">
+                  <pb facs="krp-0144_r-0001"/>
+                  <pb facs="krp-0144_r-0002"/>[Mittwoch] 1920-02-04</title>
+            </head>
+            <div type="dokumentkopf">
+               <div type="vorsitz">
+                  <head>Vorsitz:</head>
+                  <p>Renner</p>
+               </div>
+               <div type="anwesend">
+                  <head>Anwesend:</head>
+                  <p>Deutsch, Eisler, Eldersch, Ellenbogen, Fink, Glöckel, Hanusch, Mayr, Miklas, Paul, Resch, Stöckler, Tandler, Waiss, Zerdik</p>
+               </div>
+               <div type="zugezogen">
+                  <head>Zugezogen:</head>
+                  <p>Ehrenfeld-Pop, Grimm, Kunze, Rücker, Seitz, Zedtwitz</p>
+               </div>
+               <div type="schriftfuehrer">
+                  <head>Schriftführer:</head>
+                  <p>unbekannt</p>
+               </div>
+               <div type="dauer">
+                  <head>Dauer:</head>
+                  <p>20.00–00.45 Uhr</p>
+               </div>
+            </div>
+            <div type="komponenten">
+               <p>Reinschrift, Beilagen, Entwurf der Tagesordnung</p>
+            </div>
+            <div type="beilagen">
+               <head>Beilagen:</head>
+               <list>
+                  <item>
+                     <ref target="#krp-0144_top01">Zu TOP 1</ref>: <ref target="#krp-0144_b01">Vortrag des Staatsamtes für Heereswesen Abt. 20 a, Zl. 274/1920 über die Erhöhung der Bezüge für Kriegswitwen mit einem Telegramm des oberösterreichischen Landeshauptmannes Hauser</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0144_top02">Zu TOP 2</ref>: <ref target="#krp-0144_b02">Referat des Staatsamtes für soziale Verwaltung über die Erhöhung des Krankengeldes nach § 17 des Invalidenentschädigungsgesetzes</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0144_top04">Zu TOP 4</ref>: <ref target="#krp-0144_b03">Antrag des Staatsamtes für Äußeres Zl. 6259/8 wegen der Unterbringung der militärischen Überwachungskommission</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0144_top05">Zu TOP 5</ref>: <ref target="#krp-0144_b04">Vortrag des Staatsamtes für Verkehrswesen über die Neuregelung der inländischen Zeitungspostgebühren</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0144_top10">Zu TOP 10</ref>: <ref target="#krp-0144_b05">Antrag des Staatsamtes für Handel und Gewerbe, Industrie und Bauten auf Abstandnahme des staatlichen Ankaufs des Gewerbelagers in Brunn am Gebirge</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0144_top13">Zu TOP 13</ref>: <ref target="#krp-0144_b06">Vollzugsanweisung des Staatsamtes für Finanzen über Privatverkehrspreise für Effekten</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0144_top14">Zu TOP 14</ref>: <ref target="#krp-0144_b07">Vortrag des Staatsamtes für Inneres und Unterricht Zl. 3602 über den Gesetzesbeschluss des Niederösterreichischen Landtages auf Einhebung von Beerdigungsgebühren in einigen Gemeinden Niederösterreichs</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0144_top15">Zu TOP 15</ref>: <ref target="#krp-0144_b08">Antrag des Unterrichtsamtes für die Regelung des Dienstverhältnisses der Professoren und sonstigen Angestellten der Czernowitzer Universität</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0144_top16">Zu TOP 16</ref>: <ref target="#krp-0144_b09">Vortrag des Unterrichtsamt über den Gesetzesbeschluss des Tiroler Landtages zur Aufbringung von Teuerungszulagen für die Lehrkräfte an den öffentlichen allgemeinen Volks- und Bürgerschulen in Tirol</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0144_top16">Zu TOP 16</ref>: <ref target="#krp-0144_b10">Vortrag des Unterrichtsamtes über den Gesetzesbeschluss des Steiermärkischen Landtages zur Änderung des Gesetzes über die Schulaufsicht</ref>
+                  </item>
+               </list>
+            </div>
+            <div type="protokoll">
+               <pb facs="krp-0144_r-0003"/>
+               <div type="top" xml:id="krp-0144_top01">
+                  <head>
+                     <label>
+                        <num n="1">1.</num>
+                        <seg>Erhöhung der Bezüge der Kriegerwitwen.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Deutsch</hi> teilt mit, dass in Angelegenheit der Erhöhung der Unterhaltsbeiträge für Kriegerwitwen am gestrigen Tage eine zwischenstaatsamtliche Besprechung stattgefunden habe, bei welcher die Staatsämter für soziale Verwaltung, für Finanzen und für Heer[es]wesen vertreten waren. Bei dieser Besprechung sei auch ein Telegramm des Landeshauptmannes Hauser in Linz vorgelegen, das eine sofortige monatliche Aushilfe von 100 K pro Witwe, im Übrigen eine 100%ige Erhöhung der staatlichen Versorgungsgebühren verlange.</p>
+                  <p>Das Staatsamt für soziale Verwaltung habe bei der Besprechung ebenso wie das Staatsamt für Finanzen den wiederholt betonten ablehnenden Standpunkt gegenüber einer Erhöhung der derzeitigen Bezüge der Kriegswitwen eingenommen und auf die seinerzeit geltend gemachten Gründe, die gegen, jedwede Erhöhung sprechen, verwiesen. Namentlich sei dabei abermals ins Treffen geführt worden, dass die unter das Invalidenentschädigungsgesetz fallenden, gegenwärtig noch im Genusse eines Unterhaltsbeitrages nach § 62 des Invalidenentschädigungsgesetzes stehenden Personen schon bei Berücksichtigung der Einheitssätze des Unterhaltsbeitragsgesetzes vom Jahre 1917 durch Bemessung der ihnen nach dem Invalidenentschädigungsgesetz gebührenden Hinterbliebenenrente in gewissen Fällen eine Einbuße gegenüber dem bishe<pb facs="krp-0144_r-0004"/>rigen Bezuge an Unterhaltsbeitrag erleiden würden. Im Falle der Gewährung einer monatlichen Aushilfe von 100 K pro Witwe würde sich das Verhältnis zwischen dem Unterhaltsbeitragsbezuge und der nach dem Invalidenentschädigungsgesetze zu gewärtigenden Rente hinsichtlich der Spannung im einzelnen Falle noch ungünstiger gestalten. Die Folge der Gewährung dieser Aushilfe wäre, dass die Parteien das größte Interesse an einer Verzögerung in der Bemessung der Renten nach dem Invalidenentschädigungsgesetze hätten, sodass mit gutem Grunde Widerstände gegen die Durchführung dieses Gesetzes zu erwarten seien. Eine Änderung des Invalidenentschädigunsgesetzes, das erst im Anfange seiner Durchführung stehe, wäre aber von unabsehbaren staatsfinanziellen Folgen begleitet.</p>
+                  <p>In Ergänzung dieser Sachlage sei von dem Vertreter des Staatsamtes für soziale Verwaltung weiters mitgeteilt worden, dass nach seiner Ansicht eine Entspannung der Situation eintreten werde, wenn die Absicht dieses Staatsamtes, von dem aus dem Kaiser-Karl-Fonds für Kriegsfürsorgezwecke bestimmten 3 Millionen [K]-Vorschusse speziell für Kriegswitwen und -waisen einem Betrag von 1 Million K zu widmen, realisiert sein werde. Im Übrigen sei das Staatsamt für soziale Verwaltung der Anschauung, dass die Durchführung des In<pb facs="krp-0144_r-0005"/>validenentschädigungsgesetzes, also auch die Zuerkennung der Witwenrenten, innerhalb eines halben Jahres beendet sein werden.</p>
+                  <p>Für das vom sprechenden Staatssekretär vertretene Ressort erübrige sich eine Stellungnahme, da es bei der geschilderten Sachlage in der Angelegenheit nicht zuständig sei und einen anderen Antrag zu stellen nicht vermöge.</p>
+                  <p>Staatssekretär <hi rend="#letterspaced">Hanusch</hi> erklärt, dass es möglich sein werde, aus dem Kaiser-Karl-Fonds etwa 100.000 K für die Unterstützung von bedürftigen Kriegerwitwen in Oberösterreich zu verwenden, und er erhoffe sich aus dieser Zuwendung eine Beruhigung der interessierten Kreise.</p>
+                  <p>Unterstaatssekretär Dr. <hi rend="#letterspaced">Eisler</hi> regt an, dass den Angehörigen fremdzuständiger Kriegsgefangener, wenn die ersteren die österreichische Staatsbürgerschaft mittlerweile erworben haben, im Falle der Bedürftigkeit vom Staatsamte für soziale Verwaltung Unterstützungen zugewendet werden.</p>
+                  <p>Sektionschef Dr. <hi rend="#letterspaced">Grimm</hi> stellt fest, dass in diesen Fällen mangels der gesetzlichen Voraussetzungen nicht Unterhaltsbeiträge, sondern höchstens Aushilfen gewährt werden könnten.</p>
+                  <p>Der Kabinettsrat nimmt die Berichte der Staatssekretäre für Heer[es]wesen und für soziale Verwaltung zustimmend zur Kenntnis <pb facs="krp-0144_r-0006"/>und beschließt gleichzeitig über Antrag des Staatssekretärs Dr. <hi rend="#letterspaced">Deutsch</hi>, dass die Agenden der Unterhaltsbeiträge für Kriegerwitwen und -waisen aus dem Wirkungskreis des Staatsamtes für Heer[es]wesen in jenen des Staatsamtes für soziale Verwaltung übertragen werden. Ferner weist der Kabinettsrat im Sinne des Antrages des Unterstaatssekretärs Dr. Eisler das Staatsamt für soziale Verwaltung an, den Angehörigen fremdzuständiger Kriegsgefangener, wenn die ersteren mittlerweile die österreichische Staatsbürgerschaft erworben haben, im Falle nachgewiesener Bedürftigkeit Unterstützungen im Höchstausmaß des Unterhaltsbeitrages zu gewähren.</p>
+               </div>
+               <div type="top" xml:id="krp-0144_top02">
+                  <head>
+                     <label>
+                        <num n="2">2.</num>
+                        <seg>Erhöhung des Krankengeldes nach § 17 des Invalidenentschädigungsgesetzes.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Hanusch</hi> verweist darauf, dass nach § 17 Abs. 2 des Invalidenentschädigungsgesetzes das Krankengeld oder die an Stelle des Krankengeldes tretende Rente, so lange der Geschädigte in einer mit voller Verpflegung verbundenen Heilbehandlung stehe, bis auf den Betrag von 2 K täglich einzustellen sei. Ebenso beziehen Kriegsbeschädigte, die während der beruflichen Ausbildung aus Staatsmitteln freie Unterkunft und Verpflegung genießen, sowie Kriegsbeschädigte, die in Invalidenheimen deshalb untergebracht und verpflegt werden, weil sie ständiger Wartung und Pflege bedürfen, gegenwärtig ein Taggeld von 2 K. Aus diesem Betrage sollen die kleinen Lebensbedürfnisse, wie Rauchen, <pb facs="krp-0144_r-0007"/>Korrespondenz, Rasieren usw. bestritten werden.</p>
+                  <p>Von mehrfachen Seiten sei nun im Staatsamt für soziale Verwaltung die Klage vorgebracht worden, dass mit diesem Betrage das Auslangen nicht gefunden werden könne. Tatsächlich hätten sich auch die wirtschaftlichen Verhältnisse seit Kundmachung des Gesetzes dermaßen verschlechtert, und seien die Preise, welche für die Befriedigung der erwähnten Lebensbedürfnisse bezahlt werden müssen, in einem solchen Maße gestiegen, dass den vorgebrachten Klagen die Berechtigung nicht abgesprochen werden könne. Im Verhältnisse zur eingetretenen Preissteigerung dürfte es angemessen erscheinen, wenn dem Geschädigten in Wien ein Betrag von 5 K, in der Provinz ein Betrag von 4 K täglich zur freien Verfügung bliebe.</p>
+                  <p>Der sprechende Staatssekretär stelle daher den Antrag, der Kabinettsrat wolle beschließen:</p>
+                  <list>
+                     <item n="1">
+                        <label>1.)</label> Das gesetzlich festgelegte Krankengeld von 2 K ist für die Spitäler in Wien auf 5 K durch eine Teuerungszulage von 3 K, für die Spitäler außer Wien durch eine Teuerungszulage von 2 K auf 4 K für alle jene Kriegsbeschädigten zu erhöhen, welche spitalsbedürftig sind. Die Spitalsbedürftigkeit ist durch eigens zu diesem Zwecke eingesetzte Kommissionen festzustellen.</item>
+                     <item n="2">
+                        <label>2.)</label>
+                        <pb facs="krp-0144_r-0008"/>Desgleichen ist Kriegsbeschädigten, die während der beruflichen Ausbildung aus Staatsmitteln freie Unterkunft und Verpflegung genießen, sowie Kriegsbeschädigte, die in Invalidenheimen deshalb untergebracht und verpflegt werden, weil sie ständiger Wartung und Pflege bedürfen, zu dem derzeitigen Taggeld von 2 K eine Teuerungszulage zu bewilligen, die in Wien 3 K und außerhalb Wiens 2 K zu betragen hat.</item>
+                     <item n="3">
+                        <label>3.)</label> Die Gewährung der Teuerungszulagen in den unter 1.) und 2.) bezeichneten Fällen hat mit 15. Februar 1920 zu beginnen und ist für drei Monate bis 15. Mai d. J. vorgesehen.</item>
+                  </list>
+                  <p>Sektionschef Dr. <hi rend="#letterspaced">Grimm</hi> stellt zur Erwägung, ob nicht mit einer 100%igen statt mit einer 150%igen Erhöhung des Krankengeldes in Wien das Auslangen gefunden werden könnte.</p>
+                  <p>Unterstaatssekretär Dr. <hi rend="#letterspaced">Tandler</hi> tritt unter Hinweis auf die verhältnismäßig geringe Anzahl der in Betracht kommenden Invaliden für die Gewährung der Teuerungszulage im vollen beantragten Ausmaße ein und vermeint, dass die in Aussicht genommene kommissionelle Feststellung der Spitalsbedürftigkeit zu einem wesentlichen Abbau der Zahl der Spitalsinvaliden beitragen werde.</p>
+                  <p>Vizekanzler <hi rend="#letterspaced">Fink</hi> glaubt, ohne sich gegen die gestellten Anträge aussprechen zu wollen, dass eine gesetzliche Neu<pb facs="krp-0144_r-0009"/>regelung der Bezüge der Invaliden in absehbarer Zeit nicht zu umgehen und insbesondere eine ungleichmäßige Behandlung der Invaliden in den Ländern und in Wien auf die Dauer nicht aufrecht zu erhalten sein werde.</p>
+                  <p>Staatssekretär <hi rend="#letterspaced">Hanusch</hi> verweist darauf, dass entsprechend einer bei Verabschiedung des Invalidenentschädigungsgesetzes von der Nationalversammlung angenommenen Resolution ohnedies eine gesetzliche Neuregelung dieser Frage nach Ablauf eines Jahres ins Auge gefasst sei.</p>
+                  <p>Der Kabinettsrat erhebt sohin die gestellten Anträge zum Beschluss.</p>
+               </div>
+               <div type="top" xml:id="krp-0144_top03">
+                  <head>
+                     <label>
+                        <num n="3">3.</num>
+                        <seg>Bekleidung der in Anstalten untergebrachten Kriegsbeschädigten.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Hanusch erinnert an den vom Kabinettsrate in seiner Sitzung am 30. Dezember 1919 gefassten Beschluss, wonach die gegenwärtig noch in den Heilanstalten für Kriegsbeschädigte befindlichen Kriegsbeschädigten gleichwie die aus der Kriegsgefangenschaft oder Zivilinternierung heimkehrenden mittellosen Österreicher nach der Vollzugsanweisung des Staatsamtes für Heer[es]wesen vom 22. Juli 1919, StGBl. Nr. 414, mit Zivilkleidern zu beteilen sind.</p>
+                  <p>Gleich den in Heilbehandlung stehenden Kriegsbeschädigten seien auch jene, <pb facs="krp-0144_r-0010"/>welche in beruflicher Ausbildung stehen und an Stelle der Rente freie Verpflegung aus Staatsmitteln erhalten, endlich diejenigen Schwerinvaliden, welche nach abgeschlossener Heilbehandlung gegen Einstellung ihrer Rente in einem Invalidenheime untergebracht sind, nach den Bestimmungen der §§ 7 und 12 der IV. Vollzugsanweisung zum Invalidenentschädigungsgesetze (StGBl. Nr. 472 von 1919) auf den Bezug des Betrages von 2 K täglich angewiesen, welcher, falls der Beschädigte für Angehörige zu sorgen hat, nach § 7 Abs. 2 dieser Vollzugsanweisung erhöht werde, in keinem Falle aber für größere Anschaffungen, wie die Beschaffung von Bekleidung, in Betracht kommen könne.</p>
+                  <p>Einer besonderen Berücksichtigung seien endlich auch jene Kriegsbeschädigten bedürftig, die wegen Arbeits- und Obdachlosigkeit gegen Einstellung jedes anderweitigen Bezuges aus öffentlichen Mitteln in einer Invalidenunterkunftsstätte untergebracht sind, eine tägliche Unterstützung von (früher 1 K jetzt) 2 K erhalten und von diesem Betrage die über die Verpflegung hinausgehenden täglichen Bedürfnisse bestreiten sollen.</p>
+                  <p>Er beantrage daher, der Kabinettsrat wolle beschließen, dass die in der Sitzung vom 30. Dezember 1919 für die in Heilanstalten befindlichen Kriegsbeschädigten hin<pb facs="krp-0144_r-0011"/>sichtlich der Bekleidung gewährte Begünstigung auch auf die eben angeführten Kategorien der in anderen Anstalten untergebrachten Kriegsbeschädigten auszudehnen sei.</p>
+                  <p>Sektionschef Dr. <hi rend="#letterspaced">Grimm</hi> ersucht unter Hinweis auf die unzulänglichen Kleiderbestände für die Heimkehrerbekleidungsaktion um die Schaffung entsprechender Kautelen, damit eine Doppelbeteilung unbedingt hintangehalten werde.</p>
+                  <p>Nachdem Staatssekretär <hi rend="#letterspaced">Hanusch</hi> die entsprechenden Zusicherungen gemacht hatte, beschließt der Kabinettsrat im Sinne des gestellten Antrages.</p>
+               </div>
+               <div type="top" xml:id="krp-0144_top04">
+                  <head>
+                     <label>
+                        <num n="4">4.</num>
+                        <seg>Frage der Unterbringung der nach Wien zu delegierenden fremden militärischen und sonstigen Kommissionen.</seg>
+                     </label>
+                  </head>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> teilt mit, dass die Frage der Unterbringung der im Sinne des Staatsvertrages von St. Germain nach Wien zu delegierenden militärischen und sonstigen Kommissionen einer Regelung bedürfe. Grundsätzlich müsse daran festgehalten werden, dass die Anforderung der Räume im Falle der Unterbringung diplomatischer Organe vom Staatsamte für Äußeres, bei militärischen Kommissionen vom Staatsamte für Heer[es]wesen zu erfolgen habe. Die faktische Unterbringung sei Sache der Staatsgebäudeverwaltung.</p>
+                  <p>Der Kabinettsrat beschließt über Antrag des Staatssekretärs <hi rend="#letterspaced">Eldersch</hi> zur Regelung dieser Angelegenheit die Ein<pb facs="krp-0144_r-0012"/>setzung einer aus den Ressortchefs der Staatsämter für Äußeres, für Heer[es]wesen und für Handel und Gewerbe, Industrie und Bauten bestehenden Kabinettskonferenz. Die Führung hat Staatssekretär Ing. Zerdik zu übernehmen.</p>
+                  <p>Bei diesem Anlasse beauftragt der Kabinettsrat die Staatskanzlei, alle Staatsämter dahin zu verständigen, dass Verhandlungen mit den in Wien amtierenden fremden Missionen und Kommissionen über deren Anforderungen wegen Beistellung sachlicher Erfordernisse (Amtsräume, Automobile, etc.) grundsätzlich nur im Wege des Staatsamtes für Äußeres zu führen sind, wohin auch gegebenenfalls die unmittelbar an die einzelnen Staatsämter herantretenden Stellen zu verweisen wären.</p>
+               </div>
+               <div type="top" xml:id="krp-0144_top05">
+                  <head>
+                     <label>
+                        <num n="5">5.</num>
+                        <seg>Neuregelung der inländischen Zeitungspostgebühren.</seg>
+                     </label>
+                  </head>
+                  <p>Über Antrag des Staatssekretärs Dr. <hi rend="#letterspaced">Deutsch</hi> wird das Staatsamt für Verkehrswesen beauftragt, den Entwurf eines lediglich auf dem Gewichte der Zeitungen aufgebauten Zeitungspostgebührentarifes auszuarbeiten und zunächst einer aus den Staatssekretären Paul, Eldersch und Ing. Zerdik bestehenden Kabinettskonferenz, welcher auch der Generaldirektor für das Postwesen Sektionschef Hoheisel zuzuziehen ist, zur Vorberatung vorzulegen.</p>
+                  <p>
+                     <pb facs="krp-0144_r-0013"/>
+                  </p>
+               </div>
+               <div type="top" xml:id="krp-0144_top06">
+                  <head>
+                     <label>
+                        <num n="6">6.</num>
+                        <seg>Regelung der Zeitungspapierverteilung.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Ing. <hi rend="#letterspaced">Zerdik</hi> teilt mit, es hätten sich in der von ihm kürzlich abgehaltenen Sitzung des Zeitungsbeirates sämtliche Mitglieder einschließlich der Gewerkschaftsvertreter dahin ausgesprochen, dass die Quotenbestimmungen für die Zeitungen nicht nach politischen, sondern nach rein wirtschaftlichen Gesichtspunkten zu erfolgen hätten. Eine Kürzung der Papierquote bei ihrem dermaligen Ausmaß erscheine ohnehin nicht möglich, wenn überhaupt der Bestand der Zeitungen aufrechterhalten werden soll. Es empfehle sich daher, bei einer Verbesserung der Situation auf dem Papiermarkt zunächst die Zeitungen im Allgemeinen bei der Quote zu belassen, die sie derzeit haben und nur die politischen Zeitungen, welche den Koalitionsparteien nahestehen, aus dem sich ergebenden Überschuss via facti besser zu beliefern. Neugründungen von Zeitungen werden hinsichtlich der Papierbelieferung mit besonderer Vorsicht zu behandeln sein. Es gehe nicht an, neue Blätter, für deren Bestehen oft keinerlei Bedürfnis gegeben ist, mit Papier auszustatten, wenn die bestehenden Zeitungen, insbesondere jene der in der Regierung vertretenen politischen Parteien, unter einer derartigen Knappheit an Rotationsdruckpapier leiden.</p>
+                  <p>
+                     <pb facs="krp-0144_r-0014"/>Eine zweite Frage, die in der Sitzung des Zeitungsbeirates angeschnitten worden sei, beziehe sich auf die Festsetzung des Preises des Rotationsdruckpapieres. Es habe bekanntermaßen in der letzten Zeit die Übung bestanden, dass zwischen der Presse und den Papierfabriken provisorische Preise vereinbart wurden. Im Laufe des Monates sei dann der definitive Papierpreis bekanntgegeben worden, der mitunter beträchtlich höher war, als der provisorische und immer auf den Ersten des betreffenden Monates rückwirkte. Hiedurch seien die Zeitungen nicht in der Lage gewesen, den Verkaufspreis für die einzelnen Blätter und den Abonnementspreis aufgrund des definitiven Preises rechtzeitig zu kalkulieren bzw. den definitiven Preis auf die Abnehmer der Zeitungen zu überwälzen. Redner habe, sobald er von diesem Vorgang Kenntnis erhielt, verfügt, dass provisorische Papierpreise nicht mehr festgesetzt werden dürfen. Der Papierpreis im Dezember betrug 3,65  K. Die Papierindustrie habe der Zeitungsindustrie nunmehr durch den Direktor Vielgut vorschlagen lassen, dass der Papierpreis pro Jänner 5,75 K, pro Februar 7 K und pro März 7,50 K betragen solle. Die vom Staatsamt für Handel und Gewerbe, Industrie und Bauten angestellte Berechnung habe ergeben, dass sich ohne Gewinn der Papierpreis derzeit auf 7,76 K stelle. Redner habe daher der Zei<pb facs="krp-0144_r-0015"/>tungsindustrie angeraten, von ihrer ursprünglichen ablehnenden Haltung gegenüber den obigen für Jänner, Februar und März vorgeschlagenen Preisen Abstand zu nehmen, weil die Gefahr bestehe, dass die Papierindustrie sich an diese Preise nicht mehr gebunden erachte und die Zeitungen dann in eine weit unangenehmere Lage kämen. Beziehe man die Preise pro Jänner und Februar auf den Dezemberpreis, so ergebe sich eine Differenz von 7 ½ Millionen [K], bilde man nur die Differenz zwischen dem Dezemberpreis von 3,65 K und dem Jännerpreis von 5,75 K und andererseits vom Jännerpreis 5,75 K und dem Februarpreis pro 7 K so ergebe sich eine Differenz von 4.020.000 K. Die Zeitungen stellen nun die Bitte, ihnen in Form eines Notstandskredites den Betrag von 7 ½ Millionen K zu gewähren. Redner meine, dass staatliche Hilfe werde einsetzen müssen, doch glaube er, dass sie in der Form zu erfolgen hätte, dass der erbetene Betrag einen Staatsvorschuss darstelle, der durch Rückerstattungen aus Eingängen der Papierindustrie bei dem Export von Rotationsdruckpapier gedeckt werden müsse. Wolle man diesen Vorgang wählen, so bedürfe es einer Rekonstruktion des Wirtschaftsverbandes der Papierindustrie. Er habe die Absicht, diesen Verband, der infolge der passiven Resistenz seiner Mitglieder nicht mehr richtig funktioniere, auszulösen und die gesamte staatliche Bewirtschaftung <pb facs="krp-0144_r-0016"/>des Papieres unmittelbar durch den Papierdienst des Handelsamtes ausüben zu lassen. Zu diesem Behufe erscheine eine eingehende Kontrolle der Papierfabriken unerlässlich und er habe sich diesbezüglich bereits der Mithilfe eines Wachmannes versichert.</p>
+                  <p>Staatssekretär Ing. Zerdik bittet den Kabinettsrat zu seinen Ausführungen Stellung zu nehmen.</p>
+                  <p>In der abgeführten eingehenden Debatte, an welcher sich die Staatssekretäre Dr. <hi rend="#letterspaced">Ellenbogen</hi>, Dr. <hi rend="#letterspaced">Deutsch</hi>, <hi rend="#letterspaced">Hanusch</hi> und <hi rend="#letterspaced">Eldersch</hi> sowie Unterstaatssekretär Dr. <hi rend="#letterspaced">Eisler</hi> beteiligten, wurde der ganze Fragenkomplex, insbesondere die Frage der allfälligen Reduktion der Papierzuweisungen an die Zeitungen und ihre Rückwirkung auf die Arbeitsverhältnisse in der Zeitungsindustrie, ferner die Möglichkeiten, unter denen eine staatliche Unterstützung dieser Industrie platzgreifen könnte und schließlich die Frage der staatlichen Papierbewirtschaftung ausführlich erörtert.</p>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> fasst das Ergebnis der Debatte dahin zusammen, dass die ganze Aktion den Charakter einer volkswirtschaftlichen Maßregel tragen müsse. Es sei erforderlich, eine beträchtliche Papierquote für den Export zu reservieren, einerseits um fremde Zahlungsmittel zu erwerben, andererseits um die Preise für das Zeitungspapier im Inlande niedriger stellen zu können. Auf<pb facs="krp-0144_r-0017"/>gabe einer neu zu errichtenden Papierverteilungsstelle werde es sein, über das Ausmaß der Auslandsquote sowie über die Grundsätze der Verteilung des restlichen Papierquantums an das Handelsamt Anträge zu stellen. Diese Papierverteilungsstelle hätte aus fünf von der Nationalversammlung gewählten Mitgliedern, ferner aus Vertretern der Gemeinde Wien, Steiermark und Oberösterreichs und aus Vertretern der Zeitungs- und Papierindustrie zu bestehen. Um die staatliche Bewirtschaftung des Papiers wirksam zu gestalten, werde mittels der bezüglichen Vollzugsanweisung eine strenge Kontrolle der Papierfabriken eingerichtet werden müssen. In dieser Vollzugsanweisung werde das Handelsamt auch die Ermächtigung erhalten müssen, im Falle auftauchender Schwierigkeiten infolge passiver Resistenz der Fabriken die Verwaltung eines Betriebes selbst zu übernehmen. Was die Festsetzung der Papierpreise anbelange, so hätte es für Jänner und Februar beim Dezemberpreis von 3,65 K zu verbleiben. Die sohin für die Papierfabriken eingetretenen Verluste müssten durch die höheren Eingänge aus dem Exportgeschäfte eingewirtschaftet werden. Sollten einzelne Unternehmungen nicht hinlänglich leistungsfähig sein, um diese Verluste vorläufig zu tragen, so würden ihnen aus einem zu eröffnenden Notstandskredite staatliche Vorschüsse über Verlangen gewährt werden.<pb facs="krp-0144_r-0018"/>Der Kabinettsrat pflichtet den Ausführungen des Vorsitzenden bei und ladet den Staatssekretär für Handel und Gewerbe, Industrie und Bauten ein, unter Bedachtnahme auf die in der Debatte zutage getretenen Gesichtspunkte den Entwurf einer Vollzugsanweisung, betreffend die Übernahme der Papierbewirtschaftung durch den Staat, dem Kabinettsrate in seiner Sitzung am 10. Februar d. J. vorzulegen.</p>
+               </div>
+               <div type="top" xml:id="krp-0144_top07">
+                  <head>
+                     <label>
+                        <num n="7">7.</num>
+                        <seg>Prager Verhandlungen.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Paul</hi> erstattet einen Bericht über die mit der tschechoslowakischen Regierung schwebenden Kompensationsverhandlungen und teilt insbesonders mit, dass es gelungen sei, die bisher noch strittige Frage der Kompensationsfreiheit der Bahnkohle im günstigen Sinne zu lösen.</p>
+                  <p>Der Kabinettsrat nimmt diesen Bericht zur Kenntnis.</p>
+               </div>
+               <div type="top" xml:id="krp-0144_top08">
+                  <head>
+                     <label>
+                        <num n="8">8.</num>
+                        <seg>Forderungen der Honorardozenten.</seg>
+                     </label>
+                  </head>
+                  <p>Unterstaatssekretär <hi rend="#letterspaced">Glöcke1</hi> teilt mit, dass die Honorardozenten an der Hochschule für Bodenkultur, welche bisher für die wöchentliche Unterrichts<pb facs="krp-0144_r-0019"/>stunde ein Jahreshonorar von 300 K bezogen haben, mit Rücksicht auf die inzwischen eingetretene Regulierung der Hochschullehrerbezüge eine Erhöhung ihres Honorars auf 600 K, rückwirkend vom Beginn des Wintersemesters, verlangen. Dieser Forderung hätten sich auch die Honorardozenten der übrigen Hochschulen angeschlossen und es bestehe die unmittelbare Gefahr eines Streiks dieser Lehrkräfte. Das Staatsamt für Finanzen, mit welchem das Unterrichtsamt das Einvernehmen gepflogen habe, sei geneigt, einer Erhöhung des Bezuges auf 500 K, jedoch ohne Rückwirkung zuzustimmen. Der sprechende Unterstaatssekretär beantrage, dem berechtigten Verlangen der Honorardozenten hinsichtlich des Ausmaßes der Erhöhung Folge zu geben, die Rückwirkung jedoch zunächst abzulehnen und ihn zu ermächtigen, äußersten Falles für das vergangene Wintersemester mit der Zuerkennung entsprechender Remunerationen vorgehen zu dürfen.</p>
+                  <p>Nach einer kurzen Debatte, in deren Zuge der <hi rend="#letterspaced">Vorsitzende</hi> den von Sektionschef Dr. <hi rend="#letterspaced">Grimm</hi> vertretenen Standpunkt, wonach Bezugserhöhungen mit rückwirkender Kraft aus prinzipiellen Gründen auszuschließen seien, billigt, beschließt der Kabinettsrat im <pb facs="krp-0144_r-0020"/>Sinne des vom Unterstaatssekretär Glöckel gestellten Antrages.</p>
+               </div>
+               <div type="top" xml:id="krp-0144_top09">
+                  <head>
+                     <label>
+                        <num n="9">9.</num>
+                        <seg>Forderungen der klinischen Assistenz- und Hilfsärzte.</seg>
+                     </label>
+                  </head>
+                  <p>Unterstaatssekretär <hi rend="#letterspaced">Glöckel</hi> berichtet über die Verhandlungen, welche er mit den klinischen Assistenz- und Hilfsärzten über deren Gehaltsforderungen geführt habe. Im Zuge dieser Verhandlungen sei es zu einer vorläufigen Einigung auf folgender Grundlage gekommen:</p>
+                  <p>Zunächst werde festgestellt werden, wie viele Assistenten besoldet und wie viele unbesoldet bleiben sollen. Zu diesem Zwecke hätten vor allem die klinischen Vorstände eine Aufstellung darüber zu liefern, wie viele Assistentenstellen zu systemisieren seien. Sodann würden mit dem Staatsamte für Finanzen Verhandlungen geführt werden, deren Ergebnis den Assistenzärzten bis längstens 1. März l. J. mitgeteilt werden soll. Um jene Assistenzärzte, welche nicht übernommen werden, teilweise zu entschädigen, glaube er, dass man diesen für eine Übergangszeit von sechs Monaten Aushilfen in der Höhe der halben Bezüge der Assistenzärzte werde zuerkennen müssen. Bis zum 1. März d. J. werde auch die Forderung der Hilfsärzte nach Adjutierung einer <pb facs="krp-0144_r-0021"/>Entscheidung zugeführt werden. Der sprechende Unterstaatssekretär erbittet sich die Genehmigung des Kabinettsrates für diese Vorgangsweise.</p>
+                  <p>Unterstaatssekretär Dr. <hi rend="#letterspaced">Tandler</hi> tritt dafür ein, dass die ganze Frage der Assistenzärzte endlich in der Weise geordnet werde, dass die Stellen systemisiert werden und deren Besetzung durch das Unterrichtsamt erfolge. Bei diesem Anlasse wäre auch die Frage der Berechtigung der Assistenzärzte zur Ausübung der Privatpraxis im negativen Sinne zu entscheiden, wodurch die Gewähr für einen wissenschaftlich höherstehenden akademischen Nachwuchs geschaffen würde.</p>
+                  <p>Präsident <hi rend="#letterspaced">Seitz</hi> verweist darauf, dass die ganze Angelegenheit in der Presse in einem ganz falschen Lichte dargestellt worden sei; das Missverhältnis zwischen der Tätigkeit der Hochschullehrkräfte und ihrer Entlohnung habe schon in der alten Monarchie bestanden und dürfe keineswegs dem gegenwärtigen Regime zur Last gelegt werden. Er halte es für unbedingt notwendig, dass das Unterrichtsamt etwa im Wege einer Interpellationsbeantwortung die Öffentlichkeit über den wahren Sachverhalt aufkläre.</p>
+                  <p>Der Kabinettsrat beauftragt das Staatsamt für Finanzen, ferner das Unterrichtsamt und Volksgesundheitsamt vor <pb facs="krp-0144_r-0022"/>Ende Februar d. J. Vorschläge wegen Regelung der Frage der Assistenz- und Hilfsärzte dem Kabinettsrate zu erstatten.</p>
+               </div>
+               <div type="top" xml:id="krp-0144_top10">
+                  <head>
+                     <label>
+                        <num n="10">10.</num>
+                        <seg>Abstandnahme von der Erwerbung des Gewerbelagers in Brunn am Gebirge durch den Staat.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Ing. <hi rend="#letterspaced">Zerdik</hi> erinnert daran, dass der Kabinettsrat in seiner Sitzung am 4. Juli 1919 folgende Beschlüsse gefasst habe:</p>
+                  <p>„</p>
+                  <list>
+                     <item n="1">
+                        <label>1.)</label> Der Erwerbung des Brunner Gewerbelagers durch den Staat gegen einen angemessenen Preis wird zugestimmt;</item>
+                     <item n="2">
+                        <label>2.)</label> das Staatsamt für Handel und Gewerbe, Industrie und Bauten hat im Einvernehmen mit dem Staatsamt für soziale Verwaltung und der Sozialisierungskommission festzustellen, welches staatliche Amt mit der Durchführung der Lagerübernahme, der Verwaltung und Besiedelung zu betrauen ist. Über das Ergebnis der Verhandlungen ist dem Kabinettsrat ehestens Bericht zu erstatten.“</item>
+                  </list>
+                  <p>Durch die von den beteiligten Stellen seither vorgenommene Prüfung der Angelegenheit sei nun festgestellt worden, dass die Erwerbung des Lagers für die Erfüllung der Aufgaben der technisch-wirtschaftlichen Gewerbeförderung ohne Belang sei und dass sie auch, abgesehen hievon, infolge des Zustandes der Baulichkeiten <pb facs="krp-0144_r-0023"/>und der Lagereinrichtungen, der Höhe der Verwaltungskosten, der Ungelöstheit der Arbeiterwohnungsfrage und aus einer Reihe anderer Gründe eine unrationelle und die Staatsfinanzen schwer belastende Maßnahme wäre.</p>
+                  <p>Das Staatsamt für Handel [und Gewerbe, Industrie] und Bauten könne daher hinsichtlich der Lagererwerbung und der Verwaltung des Lagers durch den Staat selbst keinen anderen als einen ablehnenden Standpunkt einnehmen. Auch das Staatsamt für soziale Fürsorge und die Sozialisierungskommission haben sich für ihren Wirkungsbereich hinsichtlich der Lagererwerbung durch den Staat desinteressiert erklärt.</p>
+                  <p>Der sprechende Staatssekretär unterbreite sonach dem Kabinettsrat folgenden Antrag:</p>
+                  <list>
+                     <item n="1">
+                        <label>1.)</label> Der Kabinettsratsbeschluss vom 4. Juli 1919, mit dem der Erwerbung des Brunner Gewerbelagers durch den Staat gegen einen angemessenen Preis zugestimmt wurde, wird aufgehoben.</item>
+                     <item n="2">
+                        <label>2.)</label> Die Hauptanstalt für Sachdemobilisierung ist in Kenntnis zu setzen, dass die Staatsverwaltung von der Erwerbung des Brunner Gewerbelagers Abstand nimmt.</item>
+                  </list>
+                  <p>Bezüglich der Verwertung des Lagers hat die Hauptanstalt tunlichst im <pb facs="krp-0144_r-0024"/>Einvernehmen mit einem von ihr aus den verschiedenen sich um das Lager bewerbenden Gruppen, insbesondere auch aus Vertretern gewerblicher Vereinigungen zu bildenden Ausschusse vorzugehen.</p>
+                  <p>Wenn eine Vereinbarung wegen Übernahme des Lagers durch eine oder mehrere dieser Interessentengruppen nicht erzielt wird, ist das Lager so zu verwerten, dass bestehende wirtschaftliche und Erwerbsinteressen nach Möglichkeit geschont werden.</p>
+                  <p>Im Interesse der Erhaltung vorhandener Werte ist möglichst darauf Bedacht zu nehmen, dass jene Betriebsstätten, die schon in ihrer Anlage für bestimmte Betriebszwecke eingerichtet sind, den gleichen oder ähnlichen Zwecken weiterhin gewidmet bleiben.</p>
+                  <p>Falls gewerbliche Vereinigungen, die sich bereits vor Errichtung der Republik im Lager befanden, infolge des Verkaufes gezwungen sein sollten, das Lager zu verlassen, hat die Hauptanstalt für Sachdemobilisierung dafür Sorge zu tragen, dass diese Vereinigungen für die sich nachweisbar ergebenden materiellen Nachteile von dem Ersteher (den Erstehern) des Lagers angemessen entschädigt werden.</p>
+                  <p>Nach einer längeren Debatte, an <pb facs="krp-0144_r-0025"/>welcher sich Unterstaatssekretär Dr. <hi rend="#letterspaced">Eisler</hi>, Staatssekretär Ing. <hi rend="#letterspaced">Zerdik</hi>, Sektionschef Dr. <hi rend="#letterspaced">Grimm</hi> und der <hi rend="#letterspaced">Vorsitzende</hi> beteiligten und wobei Ministerialrat Dr. <hi rend="#letterspaced">Rücker</hi> noch nähere Aufklärungen erteilte, erhebt der Kabinettsrat den gestellten Antrag zum Beschluss.</p>
+               </div>
+               <div type="top" xml:id="krp-0144_top11">
+                  <head>
+                     <label>
+                        <num n="11">11.</num>
+                        <seg>Kundmachung des Gesetzes über die Verwertung des Tabakmonopols als Sicherstellung zur Beschaffung ausländischer Zahlungsmittel.</seg>
+                     </label>
+                  </head>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> teilt mit, dass er die Kundmachung des von der Nationalversammlung beschlossenen Gesetzes über die Verwertung des Tabakmonopols als Sicherstellung zur Beschaffung ausländischer Zahlungsmittel im Staatsgesetzblatte dringlichkeitshalber ohne vorherige Lesung durch das Kabinett veranlasst habe.</p>
+                  <p>Da gegen diesen Gesetzesbeschluss keine Vorstellung zu erheben sein dürfte, erbitte er nunmehr die nachträgliche Genehmigung dieser seiner Verfügung.</p>
+                  <p>Der Kabinettsrat erteilt die erbetene Genehmigung. </p>
+               </div>
+               <div type="top" xml:id="krp-0144_top12">
+                  <head>
+                     <label>
+                        <num n="12">12.</num>
+                        <seg>Beitritt der Staatsregierung zum Gesetzesbeschluss der Nationalversammlung über die Pensionsanstalt für Angestellte und über die Liquidierung ehemals gemeinsamer Sozialversicherungseinrichtungen.</seg>
+                     </label>
+                  </head>
+                  <p>Über Antrag des Vorsitzenden findet der Kabinettsrat gegen das <pb facs="krp-0144_r-0026"/>von der Nationalversammlung beschlossene Gesetz über die Pensionsanstalt für Angestellte und über die Liquidierung ehemals gemeinsamer Sozialversicherungseinrichtungen keine Vorstellung zu erheben. Der Gesetzesbeschluss ist daher vom Staatskanzler und vom Staatssekretär für soziale Verwaltung gegenzuzeichnen und dem Präsidenten der Nationalversammlung zur Fertigung vorzulegen.</p>
+               </div>
+               <div type="top" xml:id="krp-0144_top13">
+                  <head>
+                     <label>
+                        <num n="13">13.</num>
+                        <seg>Vollzugsanweisung des Staatsamtes für Finanzen über Privatverkehrspreise für Effekten.</seg>
+                     </label>
+                  </head>
+                  <p>Sektionschef Dr. <hi rend="#letterspaced">Grimm</hi> erbittet und erhält vom Kabinettsrate die Ermächtigung zur Erlassung einer Vollzugsanweisung des Staatsamtes für Finanzen über Privatverkehrspreise für Effekten.</p>
+               </div>
+               <div type="top" xml:id="krp-0144_top14">
+                  <head>
+                     <label>
+                        <num n="14">14.</num>
+                        <seg>Gesetzesbeschluss des Niederösterreichischen Landtages, betreffend die Einhebung von Beerdigungsgebühren in einigen Gemeinden Niederösterreichs.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Eldersch</hi> erbittet und erhält vom Kabinettsrate die Ermächtigung, dass von der Erhebung einer Vorstellung gegen die vom Niederösterreichischen Landtag gefassten Gesetzesbeschlüsse, betreffend die Einhebung von Beerdigungsgebühren in den Gemeinden Ravelsbach, Spitz an der Donau, Mank, Mödling, Waidhofen an der Ybbs, Scheibbs und Neunkirchen, keine Vorstellung erhoben werde.</p>
+                  <p>
+                     <pb facs="krp-0144_r-0027"/>
+                  </p>
+               </div>
+               <div type="top" xml:id="krp-0144_top15">
+                  <head>
+                     <label>
+                        <num n="15">15.</num>
+                        <seg>Regelung des Dienstverhältnisses der Professoren und sonstigen Angestellten der Czernowitzer Universität.</seg>
+                     </label>
+                  </head>
+                  <p>Unterstaatssekretär <hi rend="#letterspaced">Glöckel</hi> verweist darauf, dass der Kabinettsrat mit Beschluss vom 17. Juni 1919 der Unterrichtsverwaltung die Ermächtigung erteilt habe, jenen der deutschen Nationalität angehörenden Professoren, Hilfskräften und Beamten der Czernowitzer Universität, welche von der rumänischen Regierung mit Ende September 1919 ihres Dienstes enthoben werden, die ihnen zukommenden Dienstesbezüge einstweilen in der Form einer Beihilfe weiterzuzahlen, ferner jene Professoren dieser Universität, welche von Seite der betreffenden Professorenkollegien an anderen deutschösterreichischen Hochschulen für eine einstweilige Verwendung in Vorschlag gebracht werden, als Professoren dieser Hochschulen extra statum mit ihren bisherigen Bezügen und unter Erteilung eines entsprechenden Lehrauftrages gegen Einhaltung noch näher festzusetzender Modalitäten in den deutschösterreichischen Staatsdienst zu übernehmen. Ein ähnlicher Vorgang habe nach diesem Kabinettsratsbeschlusse auch bezüglich der Adjunkten, Assistenten und Beamten der Czernowitzer Universität Platz zu greifen.</p>
+                  <p>
+                     <pb facs="krp-0144_r-0028"/>Die rumänische Regierung habe nun alle Lehrkräfte und sonstigen Angestellten der Czernowitzer Universität, welche erklärt haben, den durch die Rumänisierung der Universität und der Institute bedingten neuen Dienstesanforderungen nicht entsprechen zu können, mit 30. September 1919 von ihrer Wirksamkeit an der genannten Universität enthoben.</p>
+                  <p>Bei Fassung des oberwähnten Beschlusses sei der Kabinettsrat von der Voraussetzung ausgegangen, dass die zu gewärtigenden Anträge der Professorenkollegien der Unterrichtsverwaltung die Möglichkeit geben werden, die überwiegende Mehrzahl dieser Personen extra statum an Hochschulen in ein solches dauerndes Dienstverhältnis zum deutschösterreichischen Staate zu bringen und dass auch für den übrig bleibenden Rest dieser Czernowitzer Angestellten sich baldigst ein entsprechendes Arbeitsgebiet finden werde. Diese Voraussetzung sei jedoch nicht zugetroffen. Die Zahl der vorläufig ohne Dienstesverwendung Bleibenden sei eine solche, dass auch für diese schon jetzt Vorsorge im Sinne einer Sicherstellung ihres Verhältnisses zum deutschösterreichischen Staate geboten erscheine, wenn anders nicht in allen diesen von einem schweren Schicksale betroffenen deutschen<pb facs="krp-0144_r-0029"/>Staatsangestellten das Gefühl erweckt werden soll, dass die vom Staatsrate gegebene Zusicherung nicht voll und ganz eingehalten werde.</p>
+                  <p>Der sprechende Unterstaatssekretär sehe sich daher genötigt, seinen seinerzeitigen Antrag dahin zu modifizieren, dass der Kabinettsrat der Unterrichtsverwaltung nunmehr in teilweiser<hi rend="smallcaps" xml:space="preserve"> A</hi>bänderung des Beschlusses vom 17. Juni 1919 die Ermächtigung erteilen wolle, jene der deutschen Nationalität angehörenden Professoren, wissenschaftlichen Hilfskräfte, Beamten und Diener der Czernowitzer Universität, bzw. Universitätsbibliothek, welche von der rumänischen Regierung ihres Dienstes enthoben wurden, insgesamt, ohne Rücksicht darauf, ob sie eine Dienstesverwendung der obbezeichneten Art finden oder nicht, ohne ausdrückliche Bezeichnung ihrer Zugehörigkeit zu einer deutschösterreichischen Hochschule, Anstalt oder Behörde in ihrer bisherigen Stellung und mit ihren bisherigen systemmäßigen Bezügen, bzw. den Ortszulagen ihres Dienstortes in den deutschösterreichischen Staatsdienst zu übernehmen.</p>
+                  <p>Der Kabinettsrat erteilt die erbetene Ermächtigung.</p>
+                  <p>
+                     <pb facs="krp-0144_r-0030"/>
+                  </p>
+               </div>
+               <div type="top" xml:id="krp-0144_top16">
+                  <head>
+                     <label>
+                        <num n="16">16.</num>
+                        <seg>Gesetzesbeschluss des Tiroler Landtages über die Aufbringung der Teuerungszulagen für die diensttuenden Lehrkräfte an den öffentlichen allgemeinen Volksschulen und öffentlichen Bürgerschulen in Tirol; Gesetzesbeschluss des Steiermärkischen Landtages, womit die §§ 28 und 41 des Gesetzes vom 8. Februar 1869, LGBl. Nr. 11, betreffend die Schulaufsicht, abgeändert werden.</seg>
+                     </label>
+                  </head>
+                  <p>Unterstaatssekretär Glöckel erbittet vom Kabinettsrate die Ermächtigung, dass von der Erhebung einer Vorstellung gegen den Gesetzesbeschluss des Tiroler Landtages vom 11. Dezember 1919, über die Aufbringung der Teuerungszulagen für die diensttuenden Lehrkräfte an den öffentlichen allgemeinen Volksschulen und öffentlichen Bürgerschulen in Tirol, sowie gegen den Gesetzesbeschluss des Steiermärkischen Landtages vom 28. November 1919, womit die §§ 28 und 41 des Gesetzes vom 8. Februar 1869, LGBl. Nr. 11, betreffend die Schulaufsicht, abgeändert werden, abgesehen und der sofortigen Kundmachung des ersterwähnten Gesetzesbeschlusses zugestimmt werde. Rücksichtlich des Gesetzesbeschlusses des Steiermärkischen Landtages beabsichtige er, die Landesregierung noch zu ersuchen, beim Landesrat die Vornahme einer formalen Berichtigung anzuregen und ihn einzuladen, das entsprechend geänderte Gesetz zur Beisetzung der Gegenzeichnung wieder dem Unterrichtsamte vorzulegen.</p>
+                  <p>Der Kabinettsrat erteilt die erbetene Ermächtigung.</p>
+                  <p/>
+               </div>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>
