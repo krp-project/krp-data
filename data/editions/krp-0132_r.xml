@@ -1,0 +1,525 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href='http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:acdh="https://vocabs.acdh.oeaw.ac.at/schema#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xml:lang="de">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="a" type="main" n="0132">Kabinettsprotokoll Nr. 132 vom 20. Dezember 1919</title>
+            <title level="m" type="main" n="01">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <title level="m" type="sub" n="">Renner III (17. Oktober 1919 – 7. Juli 1920)</title>
+            <meeting>
+               <placeName key="https://d-nb.info/gnd/4066009-6">Wien</placeName>
+               <orgName key="https://d-nb.info/gnd/5162749-8">Kabinettsrat</orgName>
+               <date when-iso="1919-12-20"/>
+            </meeting>
+            <editor>
+               <persName key="https://d-nb.info/gnd/122481836"
+                         role="hasCreator"
+                         xml:id="hwohnout">
+                  <forename>Helmut</forename>
+                  <surname>Wohnout</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</affiliation>
+               <idno type="ORCID">0000-0002-3864-9839</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/120789825"
+                         role="hasCreator"
+                         xml:id="tolechowski">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0003-3291-6876</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/131679384"
+                         role="hasCreator"
+                         xml:id="rlein">
+                  <forename>Richard</forename>
+                  <surname>Lein</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0002-7502-0503</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="aholzer">
+                  <forename>Anna</forename>
+                  <surname>Holzer</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0005-3560-3500</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="dsoelkner">
+                  <forename>Dominik</forename>
+                  <surname>Sölkner</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-9895-7212</idno>
+            </editor>
+            <editor>
+               <persName role="hasContributor" xml:id="ischotzko">
+                  <forename>Ina</forename>
+                  <surname>Schotzko</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-5210-3713</idno>
+            </editor>
+            <funder n="1">
+               <orgName key="https://d-nb.info/gnd/2054142-9" role="hasFunder">Österreichischer Wissenschaftsfonds FWF</orgName>
+               <idno type="project">PAT1495024</idno>
+               <title type="project">Die Protokolle des österreichischen Kabinettsrates 1919–1920</title>
+            </funder>
+            <respStmt>
+               <resp>Projektverantwortung</resp>
+               <orgName key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Projektleitung</resp>
+               <persName key="https://d-nb.info/gnd/120789825" role="hasPrincipalInvestigator">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+                  <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+                  <idno type="ORCID">0000-0003-3291-6876</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Nationaler Forschungspartner</resp>
+               <orgName key="https://d-nb.info/gnd/1123037736" role="hasEnabler">Austrian Centre for Digital Humanities</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Digitalisierung der gedruckten Quellen</resp>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>TEI-Datenmodellierung</resp>
+               <persName role="hasContributor" xml:id="tfruehwirth">
+                  <forename>Timo</forename>
+                  <surname>Frühwirth</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-3997-5193</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technische Supervision</resp>
+               <persName key="https://d-nb.info/gnd/1043833846"
+                         role="hasContributor"
+                         xml:id="pandorfer">
+                  <forename>Peter</forename>
+                  <surname>Andorfer</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-9575-9372</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technisches Consulting und Vorbereitung der Druckausgabe</resp>
+               <persName key="https://d-nb.info/gnd/13281899X"
+                         role="hasContributor"
+                         xml:id="skurz">
+                  <forename>Stephan</forename>
+                  <surname>Kurz</surname>
+                  <affiliation key="https://d-nb.info/gnd/1202798799">Institut für die Erforschung der Habsburgermonarchie und des Balkanraumes</affiliation>
+                  <idno type="ORCID">0000-0003-2546-2570</idno>
+               </persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher key="https://d-nb.info/gnd/1001454-8">Österreichische Akademie der Wissenschaften</publisher>
+            <date when="2028"/>
+            <availability status="free">
+               <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">Lizenziert unter CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/deed.de)</licence>
+            </availability>
+            <idno type="ISBN_Print"/>
+            <idno type="ISBN_Part_epub"/>
+            <idno type="ISBN_Digital"/>
+            <idno type="DOI"/>
+            <idno type="DOI_zenodo"/>
+            <idno type="ebook_ID"/>
+         </publicationStmt>
+         <seriesStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="m" type="main">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <respStmt>
+               <resp>Bearbeitung und Herausgeberschaft</resp>
+               <orgName key="https://d-nb.info/gnd/2024703-5">Universität Wien</orgName>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+         </seriesStmt>
+         <notesStmt>
+            <note>Diese TEI-XML-Datei ist Grundlage für eine Druckausgabe der Edition.</note>
+            <relatedItem>
+               <biblStruct>
+                  <monogr>
+                     <imprint>
+                        <pubPlace key="https://d-nb.info/gnd/4066009-6">Wien</pubPlace>
+                        <publisher key="https://d-nb.info/gnd/2068748-5">Verlag der Österreichischen Akademie der Wissenschaften</publisher>
+                        <date when="2029"/>
+                     </imprint>
+                     <extent/>
+                  </monogr>
+                  <note>
+                     <idno/>
+                     <ptr/>
+                  </note>
+                  <citedRange/>
+               </biblStruct>
+            </relatedItem>
+         </notesStmt>
+         <sourceDesc>
+            <bibl>Quellbestand: AT-OeStA/AdR MRang MR 1Rep KRP Kabinettsratsprotokolle, 1918-1920 (Teilbestand)<ref target="https://www.archivinformationssystem.at/detail.aspx?id=5465">https://www.archivinformationssystem.at/detail.aspx?id=5465</ref>
+            </bibl>
+            <msDesc>
+               <msIdentifier>
+                  <institution key="https://d-nb.info/gnd/37748-X" role="hasOwner">AT-OeStA Österreichisches Staatsarchiv (Archiv (ÖStA))</institution>
+                  <repository key="https://d-nb.info/gnd/1601181-8">AT-OeStA/AdR Archiv der Republik, 1918- (Abteilung)</repository>
+                  <collection>AT-OeStA/AdR MRang MR 1Rep Ministerrat 1. Republik, 1918 - 1938 (Bestand)</collection>
+                  <idno>AT-OeStA_AdR-MRang-MR-1.-Rep.-KRP-132</idno>
+               </msIdentifier>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <abstract>
+            <p>
+          <!--to be generated-->
+        </p>
+         </abstract>
+      </profileDesc>
+      <encodingDesc>
+         <styleDefDecl scheme="css"/>
+         <tagsDecl>
+            <rendition xml:id="b" scheme="css">font-weight:bold;</rendition>
+            <rendition xml:id="su" scheme="css">vertical-align:super;font-size:.7em;</rendition>
+            <rendition xml:id="s" scheme="css">text-decoration:line-through;</rendition>
+            <rendition xml:id="u" scheme="css">text-decoration:underline;</rendition>
+            <rendition xml:id="ow" scheme="css">text-decoration:line-through;text-decoration-style:double;</rendition>
+            <rendition xml:id="r" scheme="css">display:block;text-align:right;</rendition>
+            <rendition xml:id="letterspaced" scheme="css">letter-spacing:0.15em;</rendition>
+            <rendition xml:id="i" scheme="css">font-style:italic;</rendition>
+         </tagsDecl>
+         <editorialDecl>
+            <hyphenation>
+               <p>
+            <!--to be added-->
+          </p>
+            </hyphenation>
+            <correction>
+               <p>
+            <!--to be added-->
+          </p>
+            </correction>
+            <normalization>
+               <p>
+            <!--to be added-->
+          </p>
+            </normalization>
+            <punctuation>
+               <p>
+            <!--to be added-->
+          </p>
+            </punctuation>
+            <stdVals>
+               <p>
+            <!--to be added-->
+          </p>
+            </stdVals>
+            <p>
+          <!--to be added-->
+        </p>
+         </editorialDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#tfruehwirth" when-iso="2026-09-15">TEIGarage output upconverted with upconvert.xsl</change>
+         <change who="#tfruehwirth" when-iso="2026-09-15">TEI header populated with generate_tei_templates.py</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface/>
+   </facsimile>
+   <text>
+      <body>
+         <div xml:id="doc-krp-0132.xml">
+            <head type="dokument">
+               <title type="num">132.<note type="footnote">Das Protokoll trägt den Vermerk <hi rend="#i">Vertraulich!</hi>
+                  </note>
+               </title>
+               <title type="desc">
+                  <pb facs="krp-0132_r-0001"/>
+                  <pb facs="krp-0132_r-0002"/>[Samstag] 1919-12-20</title>
+            </head>
+            <div type="dokumentkopf">
+               <div type="vorsitz">
+                  <head>Vorsitz:</head>
+                  <p>Fink</p>
+               </div>
+               <div type="anwesend">
+                  <head>Anwesend:</head>
+                  <p>Deutsch, Eisler, Eldersch, Ellenbogen, Glöckel, Hanusch, Loewenfeld-Russ, Miklas, Paul, Ramek, Reisch, Renner, Resch, Stöckler, Tandler, Waiss</p>
+               </div>
+               <div type="zugezogen">
+                  <head>Zugezogen:</head>
+                  <p>Grimm</p>
+               </div>
+               <div type="schriftfuehrer">
+                  <head>Schriftführer:</head>
+                  <p>unbekannt</p>
+               </div>
+               <div type="dauer">
+                  <head>Dauer:</head>
+                  <p>15.00–16.45 Uhr</p>
+               </div>
+            </div>
+            <div type="komponenten">
+               <p>Reinschrift, Beilagen</p>
+            </div>
+            <div type="beilagen">
+               <head>Beilagen:</head>
+               <list>
+                  <item>
+                     <ref target="#krp-0132_top02">Zu TOP 2</ref>: <ref target="#krp-0132_b01">Bericht der Staatskanzlei zu Zl. 1500/24 St.K./1919 über das steiermärkische Landesgesetz zur formellen Behandlung von Landtagsbeschlüssen</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0132_top03">Zu TOP 3</ref>: <ref target="#krp-0132_b02">Vollzugsanweisung des Staatsamtes für soziale Verwaltung Zl. 35.583/19 über die Unterstützung der arbeitslosen Arbeiter und Angestellten</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0132_top04">Zu TOP 4</ref>: <ref target="#krp-0132_b03">Vollzugsanweisung des Staatsamtes für soziale Verwaltung Zl. 35.582/19 über die Erhaltung des Arbeiterstandes in gewerblichen Betrieben</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0132_top05">Zu TOP 5</ref>: <ref target="#krp-0132_b04">Vollzugsanweisung des Staatsamtes für soziale Verwaltung über Maßnahmen der Wohnungsfürsorge</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0132_top06">Zu TOP 6</ref>: <ref target="#krp-0132_b05">Vortrag des Staatsamtes für Heereswesen zu Zl. 25.936/1919 über den Zuschuss zur Kostaufbesserung samt 25 % Erhöhung dieses Zuschusses und einmalige Zuwendungen für die Volkswehr</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0132_top07">Zu TOP 7</ref>: <ref target="#krp-0132_b06">Auszug für den Vortrag des Staatsamtes für Inneres und Unterricht zu Zl. 45.774/1919 über den Gesetzesentwurf des Niederösterreichischen Landtages zur Besorgung der Kanal- und Senkgrubenräumung in Wien und der damit verbundenen Einhebung von Gebühren</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0132_top10">Zu TOP 10</ref>: <ref target="#krp-0132_b07">Vortrag des Staatsamtes für Inneres und Unterricht zu Zl. 26.956-Abt. 9 über den Gesetzesbeschluss des Niederösterreichischen Landtages zur Entlohnung des Religionsunterrichtes an den öffentlichen Volksschulen des Landes Niederösterreich mit Ausnahme Wiens</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0132_top13">Zu TOP 13</ref>: <ref target="#krp-0132_b08">Vorlage der Staatsregierung über die Epidemiegesetz-Novelle mit Erläuterungen</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0132_top14">Zu TOP 14</ref>: <ref target="#krp-0132_b09">Vorlage des Staatsamtes für Land- und Forstwirtschaft zu Zl 25.388/1919 des Gesetzesbeschlusses der Steiermärkischen Landesversammlung über den Schutz der Alpen und die Förderung der Alpwirtschaft</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0132_top14">Zu TOP 14</ref>: <ref target="#krp-0132_b10">Gesetzesbeschluss der Steiermärkischen Landesversammlung über den Schutz der Alpen und die Förderung der Alpwirtschaft mit Begründung</ref>
+                  </item>
+               </list>
+            </div>
+            <div type="protokoll">
+               <pb facs="krp-0132_r-0003"/>
+               <div type="top" xml:id="krp-0132_top01">
+                  <head>
+                     <label>
+                        <num n="1">1.</num>
+                        <seg>Beitritt der Staatsregierung zu mehreren Gesetzesbeschlüssen der Nationalversammlung.</seg>
+                     </label>
+                  </head>
+                  <p>Über Vorschlag des <hi rend="#letterspaced">Vorsitzenden</hi> erhebt der Kabinettsrat gegen die von der Nationalversammlung beschlossenen Gesetze,</p>
+                  <list>
+                     <item n="1">
+                        <label>1.)</label> betreffend die vorläufige Regelung der Luftfahrt,</item>
+                     <item n="2">
+                        <label>2.)</label> betreffend Änderungen in der Unfallversicherung der Bergarbeiter und in der Zuständigkeit für Bruderladenangelegenheiten,</item>
+                     <item n="3">
+                        <label>3.)</label> betreffend das Schieß- und Sprengmittelmonopol,</item>
+                     <item n="4">
+                        <label>4.)</label> betreffend die Veräußerung land- und forstwirtschaftlicher Grundstücke (Grundverkehrsgesetz),</item>
+                     <item n="5">
+                        <label>5.)</label> über den Kriegsgeschädigtenfonds,</item>
+                     <item n="6">
+                        <label>6.)</label> womit in Abänderung des Art. 4 des Gesetzes vom 12. November 1918, StGBl. Nr. 5, über die Staats- und Regierungsform Bestimmungen bezüglich der Auseinandersetzung mit den Staaten, zu welchen Gebietsteile der ehemaligen österreichisch-ungarischen Monarchie gehören, getroffen werden,</item>
+                     <item n="7">
+                        <label>7.)</label> über die Gewährung von Anschaffungs<pb facs="krp-0132_r-0004"/>beiträgen an die aktiven und pensionierten Lehrpersonen der öffentlichen Volks- und Bürgerschulen sowie an die Witwen und Waisen nach solchen Lehrpersonen für das Jahr 1919,</item>
+                     <item n="8">
+                        <label>8.)</label> über die Feststellung und Verfolgung von Pflichtverletzungen militärischer Organe im Kriege,</item>
+                     <item n="9">
+                        <label>9.)</label> womit das Gesetz vom 3. April 1919, StGBl. Nr. 212 abgeändert wird (2. Verfassungsgerichtshofnovelle),</item>
+                     <item n="10">
+                        <label>10.)</label> betreffend die Stellung und die Bezüge der Professoren an den staatlichen Hochschulen und gleichgehaltenen staatlichen Unterrichtsanstalten,</item>
+                     <item n="11">
+                        <label>11.)</label> betreffend vorläufige Regelung der Besoldung der Lehrerschaft an mittleren und anderen Unterrichtsanstalten,</item>
+                     <item n="12">
+                        <label>12.)</label> über den achtstündigen Arbeitstag,</item>
+                     <item n="13">
+                        <label>13.)</label> zur vorläufigen Regelung der Besoldung der Zivilstaatsbeamten, Unterbeamten und Diener und der Volksbeauftragten (Besoldungsübergangsgesetz), und</item>
+                     <item n="14">
+                        <label>14.)</label> über die Ermächtigung der Staatsregierung zu vorläufigen Verfügungen auf dem Gebiete des Notenbankwesens</item>
+                  </list>
+                  <p>keine Vorstellung.</p>
+                  <p>
+                     <pb facs="krp-0132_r-0005"/>Die erwähnten Gesetze sind demgemäß nach Gegenzeichnung durch den Staatskanzler und die zuständigen Staatssekretäre dem Präsidenten der Nationalversammlung zur Fertigung vorzulegen.</p>
+               </div>
+               <div type="top" xml:id="krp-0132_top02">
+                  <head>
+                     <label>
+                        <num n="2">2.</num>
+                        <seg>Gesetzesbeschluss des Steiermärkischen Landtages über die formelle Behandlung von Landtagsbeschlüssen.</seg>
+                     </label>
+                  </head>
+                  <p>Der Vorsitzende erinnert daran, dass der Kabinettsrat in seiner Sitzung am 25. November 1919 die Staatskanzlei ermächtigt habe, namens der Staatsregierung der Steiermärkischen Landesregierung gegenüber die Erklärung abzugeben, es werde, falls die Landesregierung die mit ihr vereinbarte Abänderung des seinerzeit beim Verfassungsgerichtshofe angefochtenen Landesgesetzesbeschlusses über die formelle Behandlung von Landtagsbeschlüssen erwirken würde, die Anfechtung beim Verfassungsgerichtshofe zurückgezogen und eine Vorstellung nicht erhoben werden.</p>
+                  <p>Der Steiermärkische Landtag habe sohin in seiner Sitzung vom 28. November 1919 den angefochtenen Gesetzesbeschluss in einer Weise abgeändert, die der getroffenen Vereinbarung entspricht. Bereits aufgrund der telefonischen Mitteilung von dem vorbezeichneten neuerlichen Gesetzesbeschluss des Steier<pb facs="krp-0132_r-0006"/>märkischen Landtages habe die Staatskanzlei die Anfechtung beim Verfassungsgerichtshofe zurückgezogen. Nun sei mit Bericht der Steiermärkischen Landesregierung vom 13. Dezember 1919 der vereinbarungsgemäß geänderte neuerliche Gesetzesbeschluss vorgelegt worden.</p>
+                  <p>Der Vorsitzende beantragt, der Kabinettsrat wolle beschließen, dass gegen diesen Gesetzesbeschluss des Steiermärkischen Landtages vom 28. November 1919 über die formelle Behandlung von Landtagsbeschlüssen eine Vorstellung nicht erhoben und der sofortigen Kundmachung zugestimmt werde.</p>
+                  <p>Der Kabinettsrat erhebt diesen Antrag zum Beschluss.</p>
+               </div>
+               <div type="top" xml:id="krp-0132_top03">
+                  <head>
+                     <label>
+                        <num n="3">3.</num>
+                        <seg>Vollzugsanweisung des Staatsamtes für soziale Verwaltung über die Unterstützung der arbeitslosen Arbeiter und Angestellten.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Hanusch</hi> erbittet und erhält vom Kabinettsrate die Ermächtigung zur Erlassung einer Vollzugsanweisung, wonach die Bestimmungen der Vollzugsanweisungen über die Unterstützung der arbeitslosen Arbeiter und Angestellten vom 14. Februar 1919, StGBl. Nr. 120 und 121, vom 24. Juni 1919, StGBl. Nr. 327 und vom 20. August 1919, StGBl. Nr. 428 in ih<pb facs="krp-0132_r-0007"/>rer Geltungsdauer bis einschließlich 29. Februar 1920 erstreckt werden.</p>
+               </div>
+               <div type="top" xml:id="krp-0132_top04">
+                  <head>
+                     <label>
+                        <num n="4">4.</num>
+                        <seg>Vollzugsanweisung des Staatsamtes für soziale Verwaltung über die Erhaltung des Arbeiterstandes in gewerblichen Betrieben.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Hanusch erbittet und erhält vom Kabinettsrate die Ermächtigung zur Erlassung einer Vollzugsanweisung, wonach die Geltungsdauer der Vollzugsanweisung vom 16. Oktober 1919, StGBl. Nr. 489, über die Erhaltung des Arbeiterstandes in gewerblichen Betrieben bis einschließlich 29. Februar 1920 erstreckt wird</p>
+               </div>
+               <div type="top" xml:id="krp-0132_top05">
+                  <head>
+                     <label>
+                        <num n="5">5.</num>
+                        <seg>Vollzugsanweisung des Staatsamtes für soziale Verwaltung, betreffend Maßnahmen der Wohnungsfürsorge.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Hanusch erbittet und erhält vom Kabinettsrate die Ermächtigung zur Erlassung einer Vollzugsanweisung im Einvernehmen mit den Staatsämtern für Inneres und Unterricht und für Justiz wegen Verlängerung der Wirksamkeit und Abänderung der Ministerialverordnung vom 28. März 1918, RGBl. Nr. 114, betreffend Maßnahmen der Wohnungsfürsorge.</p>
+               </div>
+               <div type="top" xml:id="krp-0132_top06">
+                  <head>
+                     <label>
+                        <num n="6">6.</num>
+                        <seg>Zuschuss zur Kostaufbesserung samt 25%iger Erhöhung dieses Zuschusses und einmalige Zuwendung für die Volkswehr.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Deutsch</hi> erinnert daran, der Kabinettsrat habe mit Beschluss vom 24. Oktober d. J. bewil<pb facs="krp-0132_r-0008"/>ligt, dass in jenen Standorten, wo erhobenermaßen seit dem mit den Kabinettratsbeschlüssen vom 13. Mai und 17. Juni 1919 für die Volkswehr ab 1. Mai bzw. 1. Juni 1919 bewilligten Zuschuss zur Kostaufbesserung die Lebensbedingungen sich noch mehr verschlechtert haben, der Zuschuss von 2–4 K zur Kostaufbesserung samt der 25 % Erhöhung bis Ende Dezember 1919 zur Auszahlung gelange.</p>
+                  <p>Da sich seither die Verhältnisse nicht gebessert haben und die Preise sämtlicher Bedarfsartikel fortwährend steigen, erbitte sich der sprechende Staatssekretär vom Kabinettsrate die Ermächtigung, den Zuschuss zur Kostaufbesserung samt der 25 % Erhöhung im Rahmen des bisherigen Gesamtkredites von 4.430.000 K auch weiterhin bis Ende März 1920 auszahlen zu dürfen.</p>
+                  <p>Weiters bitte er um die Ermächtigung, die im Sinne der Begründung zum § 8 der Gesetzentwürfe zur vorläufigen Regelung der Besoldung einerseits der Zivilstaatsbeamten etc. und andererseits der Personen des militärischen Berufsstandes für die Zeit vom 1. September bis 31. Dezember 1919 im Verwaltungswege zu gewährende, einmalige, nicht wiederkehrende Zuwendung auch der Volkswehrmannschaft im gleichen Maße flüssig machen zu dürfen.</p>
+                  <p>
+                     <pb facs="krp-0132_r-0009"/>Der Kabinettsrat erteilt die erbetenen Ermächtigungen insoweit die Volkswehrmannschaft ohne Berufsunteroffiziere in Betracht kommt und mit der Maßgabe, dass hinsichtlich der Gagisten und der Berufsunteroffiziere an der Angleichung nach dem einschlägigen Erlasse des Staatsamtes für Heer[es]wesen, bzw. an dem Militärbesoldungsübergangsgesetze festzuhalten sein wird.</p>
+                  <p>Gleichzeitig beschließt der Kabinettsrat über Antrag das Staatssekretärs <hi rend="#letterspaced">Eldersch</hi>, dass die oberwähnte einmalige Zuwendung jedenfalls auch der Wiener Stadtschutzwache flüssig zu machen sein wird.</p>
+               </div>
+               <div type="top" xml:id="krp-0132_top07">
+                  <head>
+                     <label>
+                        <num n="7">7.</num>
+                        <seg>Gesetzesbeschluss des Niederösterreichischen Landtages, betreffend die Kanal- und Senkgrubenräumung im Gemeindegebiet von Wien.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Eldersch</hi> teilt mit, dass der Niederösterreichische Landtag in seiner Sitzung am 30. Oktober l. J. einen Gesetzesbeschluss, betreffend die Besorgung der Kanal- und Senkgrubenräumung innerhalb des Gemeindegebietes Wien und die Ermächtigung der Gemeinde Wien zur Einhebung von Gebühren für die Besorgung dieser Räumung, gefasst habe. Der sprechende Staatssekretär erbitte sich in Einvernehmen mit den Staatsämtern für Finanzen und für Handel und Gewerbe, Indu<pb facs="krp-0132_r-0010"/>strie und Bauten die Ermächtigung, dass von der Erhebung einer Vorstellung gegen diesen Gesetzesbeschluss abgesehen werde.</p>
+                  <p>Der Kabinettsrat erteilt die erbetene Ermächtigung.</p>
+               </div>
+               <div type="top" xml:id="krp-0132_top08">
+                  <head>
+                     <label>
+                        <num n="8">8.</num>
+                        <seg>Verhandlungen mit der polnischen Regierung zwecks Abtretung von Bildern aus österreichischen Sammlungen.</seg>
+                     </label>
+                  </head>
+                  <p>Unterstaatssekretär <hi rend="#letterspaced">Glöckel</hi> gibt dem Kabinettsrate bekannt, dass der Bevollmächtigte des polnischen Hauptliquidierungsamtes an das Staatsamt für Äußeres herangetreten sei, um im Namen seiner Regierung über die Abtretung eines Gemäldes aus der Galerie des Kunsthistorischen Museums und von fünf Gemälden aus der Galerie der Akademie der bildenden Künste in Wien für die polnische Staatsgalerie zu verhandeln. Die Transaktion betreffe die Überlassung des Gemäldes von Jan Matejko „Der Reichstag zu Warschau im Jahre 1773“ um einen Kaufpreis von 200.000 K polnischer Währung sowie der Gemälde von Leopold Löffler-Radymno „Der Labetrunk“, „Herzog Alba auf dem Schlosse zu Rudolfstadt“ und „Rückkehr aus der Sklaverei“, von Josef Brandt „Dänischer Feldzug der alliierten Truppen gegen die Schweden im Jahre 1658“ und von Daniel Penther „Selbstportrait“ gegen eine Kaufsumme von insgesamt 112.000 K österreichischer Währung.</p>
+                  <p>
+                     <pb facs="krp-0132_r-0011"/>Da es sich durchwegs um Werke polnischer Künstler handle, käme hier ein Sonderabkommen im Sinne des Art. 196 des Staatsvertrages von St. Germain in Betracht. In direkter Fühlungnahme zwischen dem Staatsamte für Äußeres und dem Unterrichtsamt sei aufgrund der vom Bevollmächtigten des polnischen Hauptliquidierungsamtes mit den Vorständen der beiden interessierten Sammlungen gepflogenen Vorbesprechungen der dem Kabinettsrate vorliegende Entwurf zu einem Abkommen ausgearbeitet worden, das den Wünschen der polnischen Regierung entgegenkomme, die Interessen der beteiligten Sammlungen und des österreichischen Staates wahre und Österreich gegen einen Einspruch der Ententestaaten dadurch sicher stelle, dass die polnische Regierung die Zustimmung der Hauptmächte oder der Commission des Réparations zu erwirken sich verpflichte. Die Staatsämter für Äußeres und der Finanzen hätten auf kurzem Wege ihre Zustimmung zu diesem für die österreichischen Interessen vorteilhaften Vertragsentwurfe erteilt. Der Vertrag selbst werde nach Abschluss der Verhandlungen der Regierung zur Genehmigung vorgelegt werden.</p>
+                  <p>Der sprechende Unterstaatssekretär <pb facs="krp-0132_r-0012"/>stelle somit den Antrag, der Kabinettsrat wolle beschließen, dass aufgrund des erwähnten Entwurfes die Verhandlungen mit den Bevollmächtigten des polnischen Hauptliquidierungsamtes zum Abschluss gebracht werden.</p>
+                  <p>Der Kabinettsrat beschließt im Sinne des gestellten Antrages.</p>
+               </div>
+               <div type="top" xml:id="krp-0132_top09">
+                  <head>
+                     <label>
+                        <num n="9">9.</num>
+                        <seg>Gesetzesbeschluss der Provisorischen Landesversammlung in Kärnten, betreffend die Schulaufsicht.</seg>
+                     </label>
+                  </head>
+                  <p>Unterstaatssekretär <hi rend="#letterspaced">G1öckel</hi> bringt dem Kabinettsrat in Erinnerung, dass mit dem Beschlusse vom 7. April 1919 die Ermächtigung erteilt worden sei, gegen die Durchführungsbestimmung des Art. III des von der Provisorischen Landesversammlung des Landes Kärnten am 19. Dezember 1918 beschlossenen Gesetzes, betreffend die Zusammensetzung der Bezirksschulräte, bzw. des Stadtschulrates für die Stadt Klagenfurt, dann gegen drei Bestimmungen des von dieser Landesversammlung am 6. Februar 1919 beschlossenen Gesetzes, betreffend die Zusammensetzung des Landesschulrates, und zwar gegen die im § 36 Pkt. 3 vorgesehene Bestellung von Lehrpersonen zu administrativen und ökonomischen Referenten, gegen die im § 36 Pkt. 7 beschlossene Entsendung von durch den <pb facs="krp-0132_r-0013"/>Landesrat zu ernennenden Elternvertretern als Mitglieder in den Landesschulrat, endlich gegen die Durchführungsbestimmung des Art. IV dieses Gesetzes bei der Landesversammlung Vorstellung zu erheben, dagegen die übrigen formellen Anstände, ohne dieserwegen Einspruch zu erheben, der Landesregierung lediglich mit dem Ersuchen bekanntzugeben, beim Landesrate eine entsprechende Änderung in Anregung zu bringen. Von diesem Beschlusse der Staatsregierung sei die Landesregierung in Kärnten seinerzeit in Kenntnis gesetzt worden.</p>
+                  <p>Der Landesschulrat für Kärnten habe nunmehr berichtet, dass der Kärntnerische Landesrat an dem Gesetze, betreffend die Zusammensetzung der Bezirksschulräte, bzw. des Stadtschulrates für die Stadt Klagenfurt, die von der Staatsregierung gewünschten Änderungen aufgrund der ihm von der Landesversammlung hiezu erteilten Ermächtigung selbst vorgenommen habe. Gegen die Gegenzeichnung und Kundmachung dieses Gesetzes obwalte daher nunmehr kein Anstand.</p>
+                  <p>Gleichzeitig habe der Landesschulrat dem Staatsamte für Inneres und Unterricht das von der vorläufigen Kärntnerischen Landesversammlung am 11. September 1919 neu beschlossene Gesetz, be<pb facs="krp-0132_r-0014"/>treffend die Zusammensetzung des Landesschulrates, unter Hinweis auf Art. 13 des Gesetzes vom 14. März 1919, über die Volksvertretung, StGBl. Nr. 179, vorgelegt.</p>
+                  <p>In der vorliegenden neuen Fassung dieses Gesetzes erscheine die von der Staatsregierung beanständete Bestimmung hinsichtlich der Elternvertreter unverändert wieder; dagegen sei das Gesetz in allen übrigen von der Staatsregierung berührten Belangen dem erhobenen Einspruche gemäß abgeändert worden.</p>
+                  <p>Der gegenständliche Beschluss der Landesversammlung vom 11. September 1919 stelle sich im Hinblicke auf die an dem Gesetze vorgenommenen Abänderungen als ein neuer Gesetzesbeschluss dar, worauf auch formell der Umstand deute, dass bei der Vorlage des Gesetzesbeschlusses auf die Bestimmung des Art. 13 des Gesetzes vom 14. März 1919, StGBl. Nr. 179, Bezug genommen wurde. Demgemäß ist dieser Beschluss auch seinem ganzen Inhalte nach anfechtbar.</p>
+                  <p>Gegen die Bestimmung hinsichtlich der Elternvertreter sei mit dem eingangs zitierten Beschlusse der Staatsregierung aus dem Grunde Einspruch erhoben worden, weil die Heranziehung von Elternvertretern zur Mitwirkung bei der Schlussfassung des Landesschulrates den Bestimmungen des Gesetzes vom 25. Mai 1868, RGBl. Nr. 48, <pb facs="krp-0132_r-0015"/>welches die Mitgliedschaft von Elternvertretern im Landesschulrate nicht vorsieht, widerspreche.</p>
+                  <p>Der sprechende Unterstaatssekretär stelle sohin den Antrag, der Kabinettsrat wolle ihn ermächtigen, gegen die von der Kärntnerischen vorläufigen Landesversammlung im § 36 Pkt. 7 des Gesetzes, betreffend die Zusammensetzung des Landesschulrates, neuerlich beschlossene Entsendung von durch den Landesrat zu ernennenden Elternvertretern als Mitglieder in den Landesschulrat bei der Landesversammlung im Wege der Landesregierung aufgrund des Art. 14 Abs. 1 des Gesetzes vom 14. März 1919 über die Volksvertretung, StGBl. Nr. 179, Vorstellung zu erheben und falls dieser Vorstellung seitens der Landesversammlung nicht Rechnung getragen werden sollte, auch die Gegenzeichnung gemäß Abs. 4 des zitierten Art. 14 zu verweigern.</p>
+                  <p>Der Kabinettsrat erteilt die erbetene Ermächtigung.</p>
+               </div>
+               <div type="top" xml:id="krp-0132_top10">
+                  <head>
+                     <label>
+                        <num n="10">10.</num>
+                        <seg>Gesetzesbeschluss des Niederösterreichischen Landtages, womit Bestimmungen über die Entlohnung des Religionsunterrichtes an den öffentlichen Volksschulen des Landes Niederösterreich mit Ausnahme Wiens getroffen werden.</seg>
+                     </label>
+                  </head>
+                  <p>Unterstaatssekretär Glöckel erbittet und erhält vom Kabinettsrate die Ermächtigung, dass von der Erhebung einer <pb facs="krp-0132_r-0016"/>Vorstellung gegen den vom Niederösterreichischen Landtag in seiner Sitzung am 30. Oktober l. J. gefassten Beschluss, womit Bestimmungen über die Entlohnung des Religionsunterrichtes an den öffentlichen Volksschulen des Landes Niederösterreichs mit Ausnahme Wiens getroffen werden, abgesehen und der sofortigen Kundmachung dieses Gesetzes zugestimmt werde.</p>
+               </div>
+               <div type="top" xml:id="krp-0132_top11">
+                  <head>
+                     <label>
+                        <num n="11">11.</num>
+                        <seg>Bericht des Staatskanzlers über das Ergebnis der Pariser Verhandlungen.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär [und Staatskanzler] Dr. <hi rend="#letterspaced">Renner</hi> gibt dem Kabinettsrate die Grundzüge des Berichtes bekannt, den er in der heutigen Sitzung der Nationalversammlung über das Ergebnis der Pariser Verhandlungen, betreffend die Lebensmittel- und Kreditbeschaffung zu erstatten beabsichtigt (vgl. das stenographische Protokoll der Sitzung der Nationalversammlung am 20. Dezember 1919.)</p>
+                  <p>Der Kabinettsrat nimmt die Mitteilungen des Staatskanzlers zur Kenntnis.</p>
+               </div>
+               <div type="top" xml:id="krp-0132_top12">
+                  <head>
+                     <label>
+                        <num n="12">12.</num>
+                        <seg>Gewährung von Staatsvorschüssen zur Deckung des Betriebsabganges des Wiener Krankenanstaltenfonds.</seg>
+                     </label>
+                  </head>
+                  <p>Unterstaatssekretär Dr. <hi rend="#letterspaced">Tandler</hi> verweist darauf, dass der Kabinettsrat in seiner Sitzung am 19. Dezember l. J. der Flüssigmachung eines Staatsvorschusses von 10 Millionen K an den Wiener Krankenanstaltenfonds zugestimmt habe. <pb facs="krp-0132_r-0017"/>Der Staat habe demnach bisher an den bezeichneten Fonds folgende vorschussweise Zahlungen geleistet:</p>
+                  <list>
+                     <item n="1">
+                        <label>1.)</label> den dritten Teil von 28 Millionen K, welcher Betrag auf kooperativer Basis von Land und Gemeinde zu zahlen war, per 9 1/3 Millionen K;</item>
+                     <item n="2">
+                        <label>2.)</label> seit 1. Juli 1919, da eine kooperative Beitragsleistung mit den beiden anderen Faktoren nicht zu erzielen war, einmal 21 Millionen K und einmal 10 Millionen K, zusammen also 31 Millionen K.</item>
+                  </list>
+                  <p>Laut Berichtes der Niederösterreichischen Landesregierung vom 10. Oktober 1919 ergebe sich für den Monat Oktober ein Gebarungsabgang von 11 Millionen K, der unbedingt durch einen Vorschuss aus Staatsmitteln gedeckt werden müsse und gegen dessen Gewährung von Seite des Staatsamtes der Finanzen keine Einwendung erhoben werde. Seither habe die Landesregierung berichtet, dass sich für den Monat November ein Gebarungsabgang per 12 Millionen K ergeben werde, der vorschussweise zu bedecken sei; auch werde mit Bestimmtheit einem weiteren Berichte entgegengesehen, der sich mit dem Gebarungsabgang für den Monat Dezember 1919 befassen werde.</p>
+                  <p>Angesichts der gegenwärtig vom Lande und der Gemeinde Wien eingenommenen ablehnenden Haltung, sich an der vorschuss<pb facs="krp-0132_r-0018"/>weisen Zahlung zu beteiligen, erübrigt wohl nichts anderes als die vorschussweise Zahlung aus Staatsmitteln zu bewilligen. Der sprechende Unterstaatssekretär stelle daher den Antrag, der Kabinettsrat wolle zur Gewährung einer vorschussweisen Zahlung von 11 Millionen K an den Wiener Krankenanstaltenfonds zur Deckung des Betriebsabganges pro Oktober 1919 die Zustimmung erteilen und weiters das Volksgesundheitsamt ermächtigen, im Einvernehmen mit dem Staatsamt der Finanzen auch die zur Deckung der Betriebsabgänge pro November und Dezember 1919 erforderlichen vorschussweisen Zahlungen zu leisten.</p>
+                  <p>Der Kabinettsrat erhebt diesen Antrag zum Beschluss und ladet das Volksgesundheitsamt ein, auf Land und Gemeinde nachhaltig dahin Einfluss zu nehmen, dass sie sich ihrer Pflicht zur kooperativen Gewährung von Vorschüssen nicht entziehen.</p>
+                  <p>In diesem Zusammenhang teilt Unterstaatssekretär Dr. <hi rend="#letterspaced">Tandler</hi> mit, dass das Defizit des Wiener Krankenanstaltenfonds sich bereits auf 100 Millionen K belaufe; er beantrage, dass zur Prüfung und Ordnung dieser Angelegenheit eine Kommission eingesetzt werde, <pb facs="krp-0132_r-0019"/>welche aus einem Vertreter des Volksgesundheitsamtes, des Staatsamtes für Finanzen, des Niederösterreichischen Landesrates, der Gemeinde Wien und aus zwei Mitgliedern der Nationalversammlung zu bestehen hätte.</p>
+                  <p>Nach einer kurzen Debatte, an welcher sich die Staatssekretäre Dr. <hi rend="#letterspaced">Reisch</hi>, Dr. <hi rend="#letterspaced">Deutsch</hi> und <hi rend="#letterspaced">Stöckler</hi> beteiligten, stimmt der Kabinettsrat dem Antrage des Unterstaatssekretärs Dr. Tandler mit der Maßgabe zu, dass von der Beiziehung von Mitgliedern der Nationalversammlung zu den Arbeiten der Kommission aus präjudiziellen Gründen abzusehen sein werde.</p>
+               </div>
+               <div type="top" xml:id="krp-0132_top13">
+                  <head>
+                     <label>
+                        <num n="13">13.</num>
+                        <seg>Gesetzentwurf, betreffend Änderungen des Gesetzes über die Verhütung und Bekämpfung übertragbarer Krankheiten (Epidemiegesetznovelle).</seg>
+                     </label>
+                  </head>
+                  <p>Unterstaatssekretär Dr. <hi rend="#letterspaced">Tandler</hi> erbittet vom Kabinettsrate die Ermächtigung, den Entwurf eines Gesetzes, betreffend Änderungen des Gesetzes über die Verhütung und Bekämpfung übertragbarer Krankheiten (Epidemiegesetznovelle) in der Nationalversammlung einbringen zu dürfen.</p>
+                  <p>Der Kabinettsrat erteilt die erbetene Ermächtigung und überlässt die Durchführung einiger vom Staatssekretär Dr. <hi rend="#letterspaced">Ramek</hi> angeregter Abänderungen des vorliegenden Gesetzestextes stilisti<pb facs="krp-0132_r-0020"/>scher Natur der Behandlung der Vorlage im zuständigen Ausschuss der Nationalversammlung.</p>
+               </div>
+               <div type="top" xml:id="krp-0132_top14">
+                  <head>
+                     <label>
+                        <num n="14">14.</num>
+                        <seg>Gesetzesbeschluss des Steiermärkischen Landtages, betreffend den Schutz der Alpen und die Förderung der Alpwirtschaft.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Stöckler</hi> erbittet und erhält vom Kabinettsrate die Ermächtigung, dass von der Erhebung einer Vorstellung gegen den vom Steiermärkischen Landtag in seiner Sitzung am 17. Oktober d. J. gefassten Gesetzesbeschluss, betreffend den Schutz der Alpen und die Förderung der Alpwirtschaft, abgesehen werde.</p>
+               </div>
+               <div type="top" xml:id="krp-0132_top15">
+                  <head>
+                     <label>
+                        <num n="15">15.</num>
+                        <seg>Vollzugsanweisung der Staatsregierung über vorläufige Verfügungen auf dem Gebiete des Notenbankwesens.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Reisch</hi> erbittet und erhält vom Kabinettsrate die Ermächtigung zur Erlassung einer Vollzugsanweisung der Staatsregierung über vorläufige Verfügungen auf dem Gebiete des Notenbankwesens.</p>
+                  <p/>
+               </div>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

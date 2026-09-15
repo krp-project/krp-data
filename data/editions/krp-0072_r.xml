@@ -1,0 +1,596 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href='http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:acdh="https://vocabs.acdh.oeaw.ac.at/schema#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xml:lang="de">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="a" type="main" n="0072">Kabinettsprotokoll Nr. 72 vom 20. Mai 1919</title>
+            <title level="m" type="main" n="01">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <title level="m" type="sub" n="">Renner II (15. März – 17. Oktober 1919)</title>
+            <meeting>
+               <placeName key="https://d-nb.info/gnd/4066009-6">Wien</placeName>
+               <orgName key="https://d-nb.info/gnd/5162749-8">Kabinettsrat</orgName>
+               <date when-iso="1919-05-20"/>
+            </meeting>
+            <editor>
+               <persName key="https://d-nb.info/gnd/122481836"
+                         role="hasCreator"
+                         xml:id="hwohnout">
+                  <forename>Helmut</forename>
+                  <surname>Wohnout</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</affiliation>
+               <idno type="ORCID">0000-0002-3864-9839</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/120789825"
+                         role="hasCreator"
+                         xml:id="tolechowski">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0003-3291-6876</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/131679384"
+                         role="hasCreator"
+                         xml:id="rlein">
+                  <forename>Richard</forename>
+                  <surname>Lein</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0002-7502-0503</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="aholzer">
+                  <forename>Anna</forename>
+                  <surname>Holzer</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0005-3560-3500</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="dsoelkner">
+                  <forename>Dominik</forename>
+                  <surname>Sölkner</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-9895-7212</idno>
+            </editor>
+            <editor>
+               <persName role="hasContributor" xml:id="ischotzko">
+                  <forename>Ina</forename>
+                  <surname>Schotzko</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-5210-3713</idno>
+            </editor>
+            <funder n="1">
+               <orgName key="https://d-nb.info/gnd/2054142-9" role="hasFunder">Österreichischer Wissenschaftsfonds FWF</orgName>
+               <idno type="project">PAT1495024</idno>
+               <title type="project">Die Protokolle des österreichischen Kabinettsrates 1919–1920</title>
+            </funder>
+            <respStmt>
+               <resp>Projektverantwortung</resp>
+               <orgName key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Projektleitung</resp>
+               <persName key="https://d-nb.info/gnd/120789825" role="hasPrincipalInvestigator">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+                  <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+                  <idno type="ORCID">0000-0003-3291-6876</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Nationaler Forschungspartner</resp>
+               <orgName key="https://d-nb.info/gnd/1123037736" role="hasEnabler">Austrian Centre for Digital Humanities</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Digitalisierung der gedruckten Quellen</resp>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>TEI-Datenmodellierung</resp>
+               <persName role="hasContributor" xml:id="tfruehwirth">
+                  <forename>Timo</forename>
+                  <surname>Frühwirth</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-3997-5193</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technische Supervision</resp>
+               <persName key="https://d-nb.info/gnd/1043833846"
+                         role="hasContributor"
+                         xml:id="pandorfer">
+                  <forename>Peter</forename>
+                  <surname>Andorfer</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-9575-9372</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technisches Consulting und Vorbereitung der Druckausgabe</resp>
+               <persName key="https://d-nb.info/gnd/13281899X"
+                         role="hasContributor"
+                         xml:id="skurz">
+                  <forename>Stephan</forename>
+                  <surname>Kurz</surname>
+                  <affiliation key="https://d-nb.info/gnd/1202798799">Institut für die Erforschung der Habsburgermonarchie und des Balkanraumes</affiliation>
+                  <idno type="ORCID">0000-0003-2546-2570</idno>
+               </persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher key="https://d-nb.info/gnd/1001454-8">Österreichische Akademie der Wissenschaften</publisher>
+            <date when="2028"/>
+            <availability status="free">
+               <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">Lizenziert unter CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/deed.de)</licence>
+            </availability>
+            <idno type="ISBN_Print"/>
+            <idno type="ISBN_Part_epub"/>
+            <idno type="ISBN_Digital"/>
+            <idno type="DOI"/>
+            <idno type="DOI_zenodo"/>
+            <idno type="ebook_ID"/>
+         </publicationStmt>
+         <seriesStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="m" type="main">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <respStmt>
+               <resp>Bearbeitung und Herausgeberschaft</resp>
+               <orgName key="https://d-nb.info/gnd/2024703-5">Universität Wien</orgName>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+         </seriesStmt>
+         <notesStmt>
+            <note>Diese TEI-XML-Datei ist Grundlage für eine Druckausgabe der Edition.</note>
+            <relatedItem>
+               <biblStruct>
+                  <monogr>
+                     <imprint>
+                        <pubPlace key="https://d-nb.info/gnd/4066009-6">Wien</pubPlace>
+                        <publisher key="https://d-nb.info/gnd/2068748-5">Verlag der Österreichischen Akademie der Wissenschaften</publisher>
+                        <date when="2029"/>
+                     </imprint>
+                     <extent/>
+                  </monogr>
+                  <note>
+                     <idno/>
+                     <ptr/>
+                  </note>
+                  <citedRange/>
+               </biblStruct>
+            </relatedItem>
+         </notesStmt>
+         <sourceDesc>
+            <bibl>Quellbestand: AT-OeStA/AdR MRang MR 1Rep KRP Kabinettsratsprotokolle, 1918-1920 (Teilbestand)<ref target="https://www.archivinformationssystem.at/detail.aspx?id=5465">https://www.archivinformationssystem.at/detail.aspx?id=5465</ref>
+            </bibl>
+            <msDesc>
+               <msIdentifier>
+                  <institution key="https://d-nb.info/gnd/37748-X" role="hasOwner">AT-OeStA Österreichisches Staatsarchiv (Archiv (ÖStA))</institution>
+                  <repository key="https://d-nb.info/gnd/1601181-8">AT-OeStA/AdR Archiv der Republik, 1918- (Abteilung)</repository>
+                  <collection>AT-OeStA/AdR MRang MR 1Rep Ministerrat 1. Republik, 1918 - 1938 (Bestand)</collection>
+                  <idno>AT-OeStA_AdR-MRang-MR-1.-Rep.-KRP-072</idno>
+               </msIdentifier>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <abstract>
+            <p>
+          <!--to be generated-->
+        </p>
+         </abstract>
+      </profileDesc>
+      <encodingDesc>
+         <styleDefDecl scheme="css"/>
+         <tagsDecl>
+            <rendition xml:id="b" scheme="css">font-weight:bold;</rendition>
+            <rendition xml:id="su" scheme="css">vertical-align:super;font-size:.7em;</rendition>
+            <rendition xml:id="s" scheme="css">text-decoration:line-through;</rendition>
+            <rendition xml:id="u" scheme="css">text-decoration:underline;</rendition>
+            <rendition xml:id="ow" scheme="css">text-decoration:line-through;text-decoration-style:double;</rendition>
+            <rendition xml:id="r" scheme="css">display:block;text-align:right;</rendition>
+            <rendition xml:id="letterspaced" scheme="css">letter-spacing:0.15em;</rendition>
+            <rendition xml:id="i" scheme="css">font-style:italic;</rendition>
+         </tagsDecl>
+         <editorialDecl>
+            <hyphenation>
+               <p>
+            <!--to be added-->
+          </p>
+            </hyphenation>
+            <correction>
+               <p>
+            <!--to be added-->
+          </p>
+            </correction>
+            <normalization>
+               <p>
+            <!--to be added-->
+          </p>
+            </normalization>
+            <punctuation>
+               <p>
+            <!--to be added-->
+          </p>
+            </punctuation>
+            <stdVals>
+               <p>
+            <!--to be added-->
+          </p>
+            </stdVals>
+            <p>
+          <!--to be added-->
+        </p>
+         </editorialDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#tfruehwirth" when-iso="2026-09-15">TEIGarage output upconverted with upconvert.xsl</change>
+         <change who="#tfruehwirth" when-iso="2026-09-15">TEI header populated with generate_tei_templates.py</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface/>
+   </facsimile>
+   <text>
+      <body>
+         <div xml:id="doc-krp-0072.xml">
+            <head type="dokument">
+               <title type="num">72.<note type="footnote">Das Protokoll trägt den Vermerk <hi rend="#i">Vertraulich!</hi>
+                  </note>
+               </title>
+               <title type="desc">
+                  <pb facs="krp-0072_r-0001"/>
+                  <pb facs="krp-0072_r-0002"/>[Dienstag] 1919-05-20</title>
+            </head>
+            <div type="dokumentkopf">
+               <div type="vorsitz">
+                  <head>Vorsitz:</head>
+                  <p>Fink</p>
+               </div>
+               <div type="anwesend">
+                  <head>Anwesend:</head>
+                  <p>Bauer, Bratusch, Deutsch, Eldersch, Ellenbogen, Glöckel, Hanusch, Loewenfeld-Russ, Miklas, Paul, Resch, Schumpeter, Stöckler, Tandler, Waiss</p>
+               </div>
+               <div type="zugezogen">
+                  <head>Zugezogen:</head>
+                  <p>Grimm, Mannlicher, Seitz</p>
+               </div>
+               <div type="schriftfuehrer">
+                  <head>Schriftführer:</head>
+                  <p>unbekannt</p>
+               </div>
+               <div type="dauer">
+                  <head>Dauer:</head>
+                  <p>21.00–01.15 Uhr</p>
+               </div>
+            </div>
+            <div type="komponenten">
+               <p>Reinschrift, Beilagen, streng vertraulicher Anhang, Konzept, Entwurf der Tagesordnung, diverse Zusätze, 4. Personalsitzung</p>
+            </div>
+            <div type="beilagen">
+               <head>Beilagen:</head>
+               <list>
+                  <item>
+                     <ref target="#krp-0072_top01">Zu TOP 1</ref>: <ref target="#krp-0072_b01">Ergebnis der fünften Länderkonferenz über den Reise- und Sommerverkehr</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0072_top02">Zu TOP 2</ref>: <ref target="#krp-0072_b02">Telegrammabschrift wegen der Vertretung Deutschsüdmährens bei der Friedenskonferenz</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0072_top05">Zu TOP 5</ref>: <ref target="#krp-0072_b03">Stellungnahme von Dr. Harpner zur Flüssigmachung der den vormaligen Erzherzoge Peter Ferdinand und Heinrich Ferdinand vom ehemaligen Kaiser bewilligten Unterstützungen</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0072_top07">Zu TOP 7</ref>: <ref target="#krp-0072_b04">Darstellung der in den Staatsämtern bisher getroffenen bzw. beabsichtigten Verfügungen hinsichtlich Urlaube des angestellten Personals im Jahre 1919</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0072_top09">Zu TOP 9</ref>: <ref target="#krp-0072_b05">Übernahmeregelungen für im Dienste Bosniens und der Herzegowina stehenden deutschösterreichischen Beamten</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0072_top11">Zu TOP 11</ref>: <ref target="#krp-0072_b06">Gesetzesbeschluss der Provisorischen Steiermärkischen Landesversammlung über die Einführung einer Wertzuwachsabgabe</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0072_top14">Zu TOP 14</ref>: <ref target="#krp-0072_b07">Beendigung des Obersten Sanitätsrates und des Obersten Lebensmittelbeirates</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0072_top15">Zu TOP 15</ref>: <ref target="#krp-0072_b08">Gesetzesentwurf zu Zl. 20989 Staatsamt für Volksernährung über die Regelung des Verkehres mit Getreide und Mahlprodukten</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0072_top15">Zu TOP 15</ref>: <ref target="#krp-0072_b09">Begründung des Gesetzesentwurfes über die Regelung des Verkehres mit Getreide und Mahlprodukten</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0072_top15">Zu TOP 15</ref>: <ref target="#krp-0072_b10">Vollzugsanweisung zu Zl. 20989 über die Regelung des Verkehres mit Getreide und Mahlprodukten</ref>
+                  </item>
+               </list>
+            </div>
+            <div type="protokoll">
+               <pb facs="krp-0072_r-0003"/>
+               <div type="top" xml:id="krp-0072_top01">
+                  <head>
+                     <label>
+                        <num n="1">1.</num>
+                        <seg>Ergebnis der Länderkonferenz über den Reise- und Sommerverkehr.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Loewenfeld-Russ</hi> berichtet über das Ergebnis der heute in Angelegenheit des Reise- und Sommerverkehrs abgehaltenen Länderkonferenz. Es sei gelungen, eine Vereinbarung mit den Landesregierungen dahingehend zu treffen, dass diese sich bereit erklärten, das generelle Einreiseverbot fallen zu lassen, wogegen die Staatsregierung mittelst einer Vollzugsanweisung die Landesregierungen ermächtigt, jeden über drei Tage dauernden Sommeraufenthalt von Personen, soferne sie nicht in der betreffenden Gemeinde heimatberechtigt sind oder dortselbst ihren ständigen Aufenthalt haben, an eine besondere Bewilligung zu knüpfen. Gleichzeitig wird der Wirksamkeitsbeginn der Vollzugsanweisung vom 29. April 1919, StGBl. Nr. 252 bis 10. Juni d. J. hinausgeschoben. Das Staatsamt für Volksernährung habe weiterhin in Aussicht gestellt, den Ländern zum Zwecke der besseren Versorgung während der Zeit, welche für den Sommerverkehr in Betracht kommt, beson<pb facs="krp-0072_r-0004"/>dere Lebensmittelzuschübe zur Verfügung zu stellen.</p>
+                  <p>Der Kabinettsrat nimmt diesen Bericht zustimmend zur Kenntnis und beschließt die Erlassung der oberwähnten Vollzugsanweisung.</p>
+               </div>
+               <div type="top" xml:id="krp-0072_top02">
+                  <head>
+                     <label>
+                        <num n="2">2.</num>
+                        <seg>Vertretung Deutschsüdmährens bei der Friedenskonferenz.</seg>
+                     </label>
+                  </head>
+                  <p>Der <hi rend="#letterspaced">Vorsitzend</hi>e teilt mit, dass ihm seitens des Hauptvolksrates Südmährens ein Telegramm zugekommen sei, worin er gebeten werde, die Forderung dieses Hauptvolksrates nach Entsendung des Kreishauptmannes Teufel als Vertreter der Interessen Deutschsüdmährens zur Friedenskonferenz sowohl im Hauptausschuss der Nationalversammlung wie auch im Kabinettsrat mit allem Nachdrucke zu vertreten.</p>
+                  <p>Der Kabinettsrat stellt fest, dass ein Vertreter Deutschsüdmährens in der Person des Sektionsrates Oldofredi bereits der Friedensdelegation beigegeben sei.</p>
+               </div>
+               <div type="top" xml:id="krp-0072_top03">
+                  <head>
+                     <label>
+                        <num n="3">3.</num>
+                        <seg>Gesetzentwurf über die Aufnahme weiterer Anlehen in ausländischer Währung und über die Heranziehung des Forstbesitzes zur Sicherstellung solcher Anlehen.</seg>
+                     </label>
+                  </head>
+                  <p>Präsident <hi rend="#letterspaced">Seitz</hi> verweist darauf, dass der Kabinettsrat in seiner Sitzung am 2. Mai d. J. den Beschluss <pb facs="krp-0072_r-0005"/>gefasst habe, einen Gesetzentwurf über die Aufnahme weiterer Anlehen in ausländischer Währung und über die Heranziehung des Forstbesitzes zur Sicherstellung solcher Anlehen vor der Einbringung in der Nationalversammlung vorerst im Hauptausschuss zur Besprechung zu bringen. Da es sich offenbar nur darum handle, eine parlamentarische Mehrheit für diesen Gesetzentwurf sicherzustellen, empfehle er, den Gesetzentwurf anstatt im Hauptausschusse zunächst mit einigen führenden Persönlichkeiten der beiden großen Parteien vertraulich zu besprechen.</p>
+                  <p>Der Kabinettsrat pflichtet dieser Anregung bei und modifiziert seinen seinerzeitigen Beschluss in diesem Sinne.</p>
+               </div>
+               <div type="top" xml:id="krp-0072_top04">
+                  <head>
+                     <label>
+                        <num n="4">4.</num>
+                        <seg>Beitritt der Staatsregierung zu mehreren von der Nationalversammlung beschlossenen Gesetzen.</seg>
+                     </label>
+                  </head>
+                  <p>Der Kabinettsrat findet über Antrag des <hi rend="#letterspaced">Vorsitzenden</hi> gegen nachstehende, von der Nationalversammlung beschlossene Gesetze keine Vorstellung zu erheben:</p>
+                  <list>
+                     <item n="1">
+                        <label>1.)</label> Gesetz über das Verbot der Nachtarbeit der Frauen und Jugendlichen in gewerblichen Betrieben;</item>
+                     <item n="2">
+                        <label>2.)</label> Gesetz, betreffend die definitive Anstellung der Bezirksschulinspektoren;<pb facs="krp-0072_r-0006"/>
+                     </item>
+                     <item n="3">
+                        <label>3.)</label> Gesetz, betreffend die Errichtung von Betriebsräten;</item>
+                     <item n="4">
+                        <label>4.)</label> Gesetz über die Mindestruhezeit, den Ladenschluss und die Sonntagsruhe in Handelsgewerben und anderen Betrieben.</item>
+                  </list>
+                  <p>Die Gesetzesbeschlüsse sind daher von den zuständigen Mitgliedern der Staatsregierung gegenzuzeichnen und dem Präsidenten zur Fertigung vorzulegen.</p>
+               </div>
+               <div type="top" xml:id="krp-0072_top05">
+                  <head>
+                     <label>
+                        <num n="5">5.</num>
+                        <seg>Flüssigmachung der den vormaligen Erzherzogen Peter Ferdinand und Heinrich Ferdinand vom ehemaligen Kaiser bewilligten Unterstützungen.</seg>
+                     </label>
+                  </head>
+                  <p>Der Vorsitzende bringt zur Kenntnis, dass nach einer Mitteilung des Rechtsanwaltes Dr. Harpner der vormalige Kaiser schon vor längerer Zeit – vor dem Inkrafttreten des Gesetzes, betreffend die Landesverweisung und die Übernahme des Vermögens des Hauses Habsburg-Lothringen – einer Reihe von Erzherzogen Unterstützungen bewilligt habe, welche mit zwei Ausnahmen auch zur Auszahlung gelangt seien. Diese zwei Ausnahmen betreffend die vormaligen Erzherzoge Peter Ferdinand, dem 60.000 K, und Heinrich Ferdinand, dem 50.000 K bewilligt worden waren. Die Genannten hatten die erwähnten Un<pb facs="krp-0072_r-0007"/>terstützungen bisher nicht behoben und ersuchten nunmehr durch ihre Vertreter Dr. Stritzl und Dr. Coumont um die Flüssigmachung dieser Beträge.</p>
+                  <p>Dr. Harpner stehe auf dem Standpunkt, dass die Erträgnisse des übernommenen Vermögens bis zum Zeitpunkte des Inkrafttretens des erwähnten Gesetzes nach allgemeinen Rechtsgrundsätzen dem früheren Eigentümer, dem vormaligen Kaiser gehören, also kein Anstand bestehe, die von den beiden genannten vormaligen Erzherzogen angesprochenen, ihnen seinerzeit bewilligten Unterstützungen flüssig zu machen, soferne die Flüssigmachung aus den Erträgnissen erfolgen könne, die das übernommene Vermögen vor dem Inkrafttreten des zitierten Gesetzes abgeworfen hat.</p>
+                  <p>Dr. Harpner beabsichtige hienach die Unterstützungen ans den gedachten Erträgnissen und gegen Nachweisung der seinerzeitigen Verfügung des vormaligen Kaisers flüssig zu machen.</p>
+                  <p>Der Kabinettsrat erhebt gegen diese beabsichtigte Maßnahme keine Einwendung.</p>
+                  <p>
+                     <pb facs="krp-0072_r-0008"/>
+                  </p>
+               </div>
+               <div type="top" xml:id="krp-0072_top06">
+                  <head>
+                     <label>
+                        <num n="6">6.</num>
+                        <seg>Vollzugsanweisung über die Änderung der Bezeichnung des Kreisgerichtes Feldkirch in „Landesgericht Feldkirch“.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Bratusch</hi>erbittet und erhält die Zustimmung des Kabinettsrates zur Erlassung einer Vollzugsanweisung des Staatsamtes für Justiz über die Änderung der Bezeichnung des Kreisgerichtes Feldkirch in „Landesgericht Feldkirch".</p>
+               </div>
+               <div type="top" xml:id="krp-0072_top07">
+                  <head>
+                     <label>
+                        <num n="7">7.</num>
+                        <seg>Regelung der Erholungsurlaube der Staatsbediensteten für das Jahr 1919.</seg>
+                     </label>
+                  </head>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> führt aus, dass es wünschenswert wäre, die Frage der den Staatsbediensteten im heurigen Jahre zu gewährenden Erholungsurlaube nach einheitlichen Grundsätzen zu regeln.</p>
+                  <p>Nach einer kurzen Debatte beschließt der Kabinettsrat, dass bei der Gewährung der Erholungsurlaube an den in der Dienstpragmatik festgesetzten Ausmaßen festzuhalten ist, den Amtsvorständen jedoch die Ermächtigung erteilt wird, den einzelnen Angestellten nach Maßgabe ihrer Inanspruchnahme und ihrer sonstigen Dienstleistung Urlaubsverlängerungen in der Dauer von 8–14 Tagen zuzubilligen.</p>
+                  <p>
+                     <pb facs="krp-0072_r-0009"/>
+                  </p>
+               </div>
+               <div type="top" xml:id="krp-0072_top08">
+                  <head>
+                     <label>
+                        <num n="8">8.</num>
+                        <seg>Stellung und Bezüge der in den deutschösterreichischen Staatsdienst übernommenen Bediensteten des liquidierenden Ministeriums für Landesverteidigung.</seg>
+                     </label>
+                  </head>
+                  <p>Im Auftrage des Vorsitzenden erörtert Ministerialsekretär Dr. <hi rend="#letterspaced">Mannlicher</hi> das Rechtsverhältnis der im liquidierenden Ministerium für Landesverteidigung tätigen Zivilstaatsbediensteten zum deutschösterreichischen Staat.</p>
+                  <p>Diese Bediensteten seien – soweit sie sich zur deutschen Nation bekannten – seinerzeit gleichzeitig mit den Angestellten der übrigen ehemals österreichischen Zentralstellen aufgrund der Kabinettsratsbeschlüsse vom 23. November 1918 für den deutschösterreichischen Staat angelobt und sohin in den deutschösterreichischen Staatsdienst übernommen worden.</p>
+                  <p>In diesem Zeitpunkte und auch noch in der nächsten Folge sei das vormalige Ministerium für Landesverteidigung im Sinne des § 13 des Beschlusses der Provisorischen Nationalversammlung vom 30. November 1918, StGBl. Nr. 1, unter der obersten Leitung des Staatssekretärs für Heer[es]wesen gestanden. Während dieser Zeit seien den betreffenden Zivilstaatsbediensteten die den deutschösterreichischen Staatsbediensteten seither zugebilligten außerordentlichen Zuwendungen (der halbe einmalige Zuschuss <pb facs="krp-0072_r-0010"/>zu Weihnachten 1918 und der einmalige Zuschuss im Februar 1919) ohne Anstand flüssig gemacht worden.</p>
+                  <p>Späterhin, und zwar im Laufe des Monates Februar 1919, sei für die Liquidierungsangelegenheiten des früheren Ministeriums für Landesverteidigung eine selbständige, unter internationaler Leitung stehende Liquidierungsstelle gebildet worden und habe hiemit jede Verbindung dieser Stelle mit dem Staatsamte für Heer[es]wesen aufgehört, nachdem ein Teil der Bediensteten schon früher in das letztgenannte Staatsamt übernommen worden war.</p>
+                  <p>Von diesem Zeitpunkte an haben sich bezüglich der beim liquidierendes Ministerium für Landesverteidigung verbliebenen Bediensteten insoferne Schwierigkeiten ergeben, als sich das Staatsamt für Heer[es]wesen nicht mehr für zuständig erachtete, die Personalangelegenheiten dieser Bediensteten weiterzuführen; außerdem habe sich jetzt anlässlich der Zuwendung des außerordentlichen Übergangsbeitrages vom 1. April bis Ende August 1919 und des einmaligen Zuschusses vom Mai 1919 an die deutschösterreichischen Staatsbediensteten die Frage ergeben, ob auch die auf den deutschösterreichischen Staat angelob<pb facs="krp-0072_r-0011"/>ten Bediensteten des liquidierenden Ministeriums für Landesverteidigung auf diese Begünstigungen Anspruch heben und wie die bezüglichen Beträge flüssig zu machen sind.</p>
+                  <p>Die Angelegenheit habe, speziell was die Führung der Personalien dieser Bediensteten anbelangt, auch bereits einmal den Gegenstand der Beratung in dem vom Kabinettsrat für die Beamtenfragen eingesetzten Zwischenstaatsamtlichen Komitee gebildet, welches in seiner Sitzung vom 10./11. März l. J. hiezu folgenden „Beschluss“ gefasst hat: </p>
+                  <p>„Die auf den deutschösterreichischen Staatsdienst erfolgte Angelobung dieser Bediensteten wäre als den Richtlinien widersprechend rückgängig zu machen. Im Übrigen wird, da ein alt-österreichischer Staatsdienst nicht mehr existiert, dem ältesten Beamten im liquidierenden Ministerium für Landesverteidigung die personelle Leitung zustehen.“</p>
+                  <p>Diesem Beschlusse, dem nach den dem Zwischenstaatsamtlichen Komitee zugewiesenen Aufgaben nur die Bedeutung eines „Antrages“ zukommen könne, dürfte wohl nicht zugestimmt werden können, da die seinerzeitige Angelobung und <pb facs="krp-0072_r-0012"/>Übernahme der der deutschen Nationalität angehörenden Zivilstaatsbediensteten des vormaligen Ministeriums für Landesverteidigung in den deutschösterreichischen Staatsdienst dem Inhalte der Kabinettsratsbeschlüsse vom 23. November 1918 entspreche und keine Handhabe gegeben erscheine, die Angelobung zum Nachteile der Betroffenen einfach wieder rückgängig zu machen.</p>
+                  <p>Es könne vielmehr kaum einem Zweifel unterliegen, dass auch die in Rede stehenden Zivilstaatsbediensteten des liquidierenden Ministeriums für Landesverteidigung genauso wie die übrigen, bei den verschiedenen ehemals österreichischen Zentralstellen in den deutschösterreichischen Staatsdienst übernommenen, Angestellten als deutschösterreichische Staatsbedienstete mit, allen Rechten und Pflichten solcher, daher insbesondere auch mit den Ansprüchen auf alle den deutschösterreichischen Staatsbediensteten zukommenden Bezüge, anzusehen sind.</p>
+                  <p>Eine gewisse Besonderheit ergebe sich nur insoferne, als die Betreffenden dermalen in einem als selbständige, unter internationaler Leitung stehende Liquidierungsstelle eingerich<pb facs="krp-0072_r-0013"/>teten Amte ausschließlich nur im gemeinsamen Interesse aller Nationalstaaten verwendet werden und ein personeller Zusammenhang dieser Bediensteten mit dem Staatsamt für Heer[es]wesen gegenwärtig nicht mehr besteht.</p>
+                  <p>In ersterer Hinsicht werde es als eine dringende Aufgabe der deutschösterreichischen Vertretung in der internationalen Liquidierungskommission erscheinen, die unverzügliche Zustimmung der übrigen Nationalstaaten zur gemeinsamen Tragung sämtlicher, den fraglichen Bediensteten im liquidierenden Ministerium für Landesverteidigung nach den deutschösterreichischen Vorschriften zukommenden Bezüge zu erwirken, da es nur als ganz selbstverständlich betrachtet werden müsse, dass sämtliche mit der Verwendung dieser Bediensteten für gemeinsame Zwecke verbundenen Auslagen auch auf gemeinsame Rechnung gehen müssen.</p>
+                  <p>Was andererseits die infolge der Auflösung des personellen Zusammenhanges mit dem Staatsamt für Heer[es]wesen aktuell gewordene Frage der Führung der Personalangelegenheiten der mehrerwähnten Beamten anbelange, so kämen diesbezüglich zwei Wege in Betracht: Entweder <pb facs="krp-0072_r-0014"/>wäre die Entscheidung zu treffen, dass die Personalangelegenheiten dieser Bediensteten auch nach der in der Stellung des vormaligen Ministeriums für Landesverteidigung eingetretenen Änderung noch vom Staatssekretär für Heer[es]wesen zu führen wären, oder es wäre der Vorgang zu wählen, dass der rangsälteste deutschösterreichische Staatsbedienstete im liquidierenden Ministerium für Landesverteidigung durch Beschluss der Staatsregierung ermächtigt würde, die Personalangelegenheiten mit den sonst dem Leiter eines deutschösterreichischen Staatsamtes bezüglich Personalien zustehenden Befugnissen zu führen.</p>
+                  <p>Zusammengefasst werden sohin folgende Anträge dem Kabinettsrate zur Beschlussfassung unterbreitet:</p>
+                  <list>
+                     <item n="1">
+                        <label>1.)</label> Die aufgrund der Kabinettsratsbeschlüsse vom 23. November 1918 für den deutschösterreichischen Staat angelobten und sohin in den deutschösterreichischen Staatsdienst übernommenen, im jetzigen liquidierenden Ministerium für Landesverteidigung in Verwendung stehenden Zivilstaatsbediensteten sind gleich den angelobten Angestellten aller übrigen ehemals öster<pb facs="krp-0072_r-0015"/>reichischen Zentralstellen in jeder Beziehung als deutschösterreichische Staatsbedienstete zu behandeln.</item>
+                     <item n="2">
+                        <label>2.)</label> Den bezeichneten Bediensteten gebühren daher alle den deutschösterreichischen Staatsbediensteten nach den jeweils geltenden Vorschriften zukommenden Bezüge, so insbesondere auch der außerordentliche Übergangsbeitrag vom 1. April bis Ende August l. J. und der einmalige Zuschuss pro Mai l. J.</item>
+                     <item n="3">
+                        <label>3.)</label> Die Flüssigmachung der letzterwähnten Zuwendungen, die zum Nachteil der betroffenen Bediensteten nicht länger aufgeschoben werden kann, hat vorläufig zu Lasten des deutschösterreichischen Staates, jedoch nur unter ausdrücklichem Vorbehalt des Ersatzanspruches gegenüber den anderen Nationalstaaten zu erfolgen.</item>
+                     <item n="4">
+                        <label>4)</label> Zur Geltendmachung dieses Ersatzanspruches und zwecks allgemeiner Anerkennung des Grundsatzes, dass sämtliche durch die Verwendung der in Rede stehenden deutschösterreichischen Staatsbediensteten im liquidierenden Ministerium für Landesverteidigung nach den deutschösterreichischen Bezugsvorschriften erwachsenden Auslagen auf gemeinsame Rechnung zu gehen haben, hat der deutschösterreichische Vertreter in der internationalen Liquidierungs<pb facs="krp-0072_r-0016"/>kommission unverzüglich das Erforderliche zu veranlassen.</item>
+                     <item n="5">
+                        <label>5.)</label> Zur Führung der Personalangelegenheiten der betreffenden Bediensteten wird der rangsälteste deutschösterreichische Staatsbedienstete im liquidierenden Ministerium für Landesverteidigung mit den sonst dem Leiter eines deutschösterreichischen Staatsamtes in Personalangelegenheiten zustehenden Befugnissen ermächtigt. (Eventualantrag: Die Personalangelegenheiten der betreffenden Bediensteten des liquidierenden Ministeriums für Landesverteidigung sind vom Staatssekretär für Heer[es]wesen zu führen.)</item>
+                     <item n="6">
+                        <label>6.)</label> Um den deutschösterreichischen Standpunkt bei den nach Pkt. 4 zu führenden Verhandlungen nicht zu erschweren, ist der prinzipielle Beschluss ad Pkt. 1, und in weiterer Folge auch der Beschluss ad Pkt. 5 nach außen hin, also insbesondere auch dem liquidierenden Ministerium für Landesverteidigung selbst gegenüber vorläufig nicht zu verlautbaren.</item>
+                  </list>
+                  <p>Im Zuge der sich hierüber entwickelnden eingehenden Debatte, an welcher sich nahezu sämtliche Kabinettsmitglieder beteiligten, führt Sektionschef Dr. <hi rend="#letterspaced">Grimm</hi> aus, dass die in <pb facs="krp-0072_r-0017"/>Rede stehenden Beamten durch die Angelobung in den deutschösterreichischen Staatsdienst bis zur definitiven Regelung ihres Dienstverhältnisses übernommen worden seien. Diese Regelung ihres Dienstverhältnisses sei nun in der Weise erfolgt, dass sie der liquidierenden Stelle zur Dienstleistung zugewiesen wurden, wodurch sie ihre Eigenschaft als deutschösterreichische Staatsbedienstete verloren haben. Infolgedessen könnten auch ihre Bezüge vom deutschösterreichischen Staate nicht getragen werden.</p>
+                  <p>Demgegenüber weisen die übrigen Redner darauf hin, dass die ehemals dem Ministerium für Landesverteidigung angehörenden Angestellten mit Rücksicht darauf, dass sie seinerzeit für den deutschösterreichischen Staat angelobt und in den deutschösterreichischen Staatsdienst übernommen wurden, noch immer als deutschösterreichische Staatsangestellte zu gelten hätten, woran auch der Umstand nichts ändere, dass sie einer unter internationaler Leitung stehenden liquidierenden Stelle zur Dienstleistung zur Verfügung gestellt wurden. Demgemäß seien ihre Bezüge unbeschadet allfälliger Regressansprüche nach wie vor vom deutschösterreichischen Staate zu tragen.</p>
+                  <p>
+                     <pb facs="krp-0072_r-0018"/>Der Kabinettsrat schließt sich dieser Auffassung an und fasst den Beschluss, die Bezüge dieser Beamten einschließlich aller den deutschösterreichischen Staatsbediensteten zugebilligten außerordentlichen Zuwendungen vorläufig zu Lasten des deutschösterreichischen Staates flüssig zu machen, gleichzeitig aber den deutschösterreichischen Vertreter in der Internationalen Liquidierungskommission anzuweisen, den Ersatz dieser Auslagen unverzüglich anzusprechen. In ihrer dienstlichen Verwendung sind diese Beamten der liquidierenden Stelle zugewiesen, wogegen sie hinsichtlich ihrer Personalien dem Staatssekretär für Heer[es]wesen unterstehen.</p>
+               </div>
+               <div type="top" xml:id="krp-0072_top09">
+                  <head>
+                     <label>
+                        <num n="9">9.</num>
+                        <seg>Übernahme der im Verwaltungsdienste Bosniens und der Herzegowina stehenden Beamten deutscher Nationalität in den deutschösterreichischen Staatsdienst.</seg>
+                     </label>
+                  </head>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> teilt mit, dass die Beamtenschaft deutscher Nationalität Bosniens und der Herzegowina der Staatskanzlei durch eine Abordnung eine Denkschrift überreicht habe, in welcher unter Hinweis auf die Unhaltbarkeit ihrer Lage im jugoslawischen Dienste die Bitte gestellt wird, den im Verwaltungsdienst Bosniens und der <pb facs="krp-0072_r-0019"/>Herzegowina stehenden Beamten und Angestellten deutscher Nationalität die Übernahme in den deutschösterreichischen Staatsdienst unter den gleichen Modalitäten zu ermöglichen, wie dies aufgrund des Beschlusses des Kabinettsrates vom 7. April d. J. den im bosnisch-herzegowinischen Dienste stehenden Eisenbahnbediensteten deutschösterreichischer Heimatszuständigkeit zugesichert wurde. Es handle sich im Ganzen um 161 Beamte und sonstige Bedienstete. Nach Ansicht des Vorsitzenden entspreche es einem Gebote der Billigkeit, die vorgetragene Bitte nicht abzuweisen und die in Rede stehenden Verwaltungsbeamten nicht ungünstiger zu behandeln als die bosnisch-herzegowinischen Eisenbahnbeamten.</p>
+                  <p>Nach einigen aufklärenden Bemerkungen des Sektionschefs Dr. <hi rend="#letterspaced">Grimm</hi> beschließt der Kabinettsrat wie folgt:</p>
+                  <list>
+                     <item n="1">
+                        <label>1.)</label> Die im Verwaltungsdienst Bosniens und der Herzegowina angestellten Beamten und Bediensteten unzweifelhaft deutscher Volkszugehörigkeit die in einer Gemeinde Deutschösterreichs heimatszuständig sind, sind im Sinne des III. Abschnittes des Kabinettsratsbeschlusses vom 23. November 1918 gleich <pb facs="krp-0072_r-0020"/>den ehemals österreichischen Staatsbediensteten deutscher Nationalität außerhalb des deutschösterreichischen Staatsgebietes zu behandeln. Insoweit solche Beamte und Staatsbedienstete von der Nationalregierung SHS vorzeitig in den Ruhestand versetzt wurden, wird der Ruhegenuss in die auszuzahlenden Beihilfen einzurechnen sein.</item>
+                     <item n="2">
+                        <label>2.)</label> Für die Beförderung, sowohl der Personen als auch der ganzen Übersiedlungseffekten der in Verwendung zu nehmenden Beamten und Bediensteten von ihrem alten Dienstorte in ihren neuen Dienstort ist durch die Beistellung von Sonderzügen für den staffelweisen Abtransport Vorsorge zu treffen. </item>
+                  </list>
+                  <p>In gleicher Weise ist auch hinsichtlich der Abbeförderung der Pensionisten, welche eine weitere Verwendung im deutschösterreichischen Dienst nicht mehr anstreben und der noch in Bosnien und Herzegowina wohnhaften Altpensionisten in ihre Heimat vorzugehen. </p>
+                  <p>Bezüglich der Übersiedlungsgebühren sind diese Beamten, Bediensteten und Pensionisten in gleicher Weise zu behandeln, wie jene Beamten deutsch<pb facs="krp-0072_r-0021"/>österreichischer Staatsangehörigkeit, welche aus den Gebieten der ehemaligen österreichischen Reichshälfte in den Dienst der deutschösterreichischen Republik in Verwendung genommen wurden und dorthin übersiedeln müssen.</p>
+                  <list>
+                     <item n="1">
+                        <label>3.)</label> Wegen Regelung und Sicherstellung der Ruhegenüsse der erwähnten bosnisch-herzegowinischen Beamten und Bediensteten einschließlich der Altpensionisten sind zwischenstaatliche Verhandlungen in die Wege zu leiten.</item>
+                     <item n="2">
+                        <label>4.)</label> Die sich auf den staffelweisen Abtransport beziehenden Einzelfragen sind nötigenfalls durch einen besonderen Bevollmächtigten mit der bosnisch-herzegowinischen Landesregierung zu bereinigen.</item>
+                     <item n="3">
+                        <label>5.)</label> Von diesem Beschlusse ist die Abordnung der bosnisch-herzegowinischen deutschen Verwaltungsbeamten schriftlich im Wege der Staatskanzlei zu verständigen.</item>
+                  </list>
+               </div>
+               <div type="top" xml:id="krp-0072_top10">
+                  <head>
+                     <label>
+                        <num n="10">10.</num>
+                        <seg>Memoranden der Paritätischen Industrieförderungskommission.</seg>
+                     </label>
+                  </head>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> ladet die zuständigen Staatssekretäre ein, ihre Äußerungen zu den ihnen zugekommenen Memoranden der paritätischen Industrieförderungskommission der Staatskanzlei <pb facs="krp-0072_r-0022"/>zur Verfügung zu stellen, welche es ihrerseits übernimmt, die Memoranden sodann aufgrund dieser Äußerungen der Erledigung zuzuführen. Bei dieser Gelegenheit erklärt Staatssekretär Dr. <hi rend="#letterspaced">Bauer</hi> schon jetzt, dass es bei der gegenwärtigen politischen Situation nicht angängig sei, der Forderung der Paritätischen Industrieförderungskommission nach Freigabe von Rüstungsmaterialien zur Lieferung nach den Sukzessionsstaaten Folge zu geben.</p>
+               </div>
+               <div type="top" xml:id="krp-0072_top11">
+                  <head>
+                     <label>
+                        <num n="11">11.</num>
+                        <seg>Gesetzesbeschluss der Provisorischen Landesversammlung in Steiermark über die Einführung einer Wertzuwachsabgabe.</seg>
+                     </label>
+                  </head>
+                  <p>Sektionschef Dr. <hi rend="#letterspaced">Grimm</hi> teilt mit, dass die Provisorische Landesversammlung von Steiermark in der Sitzung vom 29. Jänner 1919 einen Gesetzesbeschluss über die Einführung der Wertzuwachsabgabe von Liegenschaften in Steiermark gefasst habe.</p>
+                  <p>Dieser Gesetzesbeschluss lehne sich im Allgemeinen mit nur geringen Abweichungen an das vom Staatsamte der Finanzen ausgearbeitete Muster an. Eine wichtige Abweichung bestehe nur insoferne, als der Gesetzesbeschluss nicht nur auf die nach seiner Kundmachung erfolgenden Übertragungen angewendet wird, sondern auch – allerdings unter Ausschluss der Haftung des Erwerbers – für die Abgabe in solchen Fällen auf alle seit <pb facs="krp-0072_r-0023"/>1. Jänner 1917 erfolgten Übertragungen rückwirken soll.</p>
+                  <p>Wenngleich eine derartige dem Wesen der Wertzuwachsabgabe allerdings widersprechende Rückwirkung nicht geradezu als unzulässig erscheinen muss, sei eine Rückwirkung auf einen so langen Zeitraum doch nicht ganz unbedenklich, zumal in vielen Fällen, z. B. bei Notverkäufen von Realitäten oder im Falle einer Vermögenszersplitterung im Erbgange der Veräußerer bzw. seine Rechtsnachfolger nicht mehr im Besitze der aus der Veräußerung stammenden Mittel und somit nur schwer zur Tragung der Abgabe im Stande sein werden. Nichtsdestoweniger erscheine dieses Bedenken nicht so schwerwiegend, dass die Notwendigkeit bestünde, eine formelle Vorstellung im Sinne des Art. 14 des Gesetzes vom 14. März 1919, StGBl. Nr. 179 zu erheben.</p>
+                  <p>Es werde daher der Antrag gestellt, den Staatssekretär der Finanzen zu ermächtigen, der Landesregierung die angeführten Bedenken samt Begründung bekanntzugeben, ohne eine formelle Vorstellung gegen den Gesetzesbeschluss zu erheben und ihn weiters zu ermächtigen, die Gegenzeichnung des Gesetzesbeschlusses (die wegen der Mitwirkung <pb facs="krp-0072_r-0024"/>der Staatsregierung beim Vollzuge notwendig ist), und zwar allenfalls nachdem den angedeuteten Bedenken Rechnung getragen worden ist, vorzunehmen.</p>
+                  <p>Der Kabinettsrat erteilt die erbetenen Ermächtigungen.</p>
+               </div>
+               <div type="top" xml:id="krp-0072_top12">
+                  <head>
+                     <label>
+                        <num n="12">12.</num>
+                        <seg>Erklärung über den Umfang der in Aussicht genommenen Sozialisierungsaktion.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Bauer</hi> führt aus, dass die Nationalversammlung in ihrer Sitzung am 14. Mai d. J. die Regierung aufgefordert habe, mit vollverbindlicher Deutlichkeit zu erklären, bei welchen Betrieben sie eine Sozialisierung beabsichtige. Der sprechende Staatssekretär stellt den Antrag, dass Vizekanzler <hi rend="#letterspaced">Fink</hi> in der morgigen Sitzung der Nationalversammlung im Namen der Staatsregierung folgende Erklärung abgebe:</p>
+                  <p>„Nach den Absichten der Regierung sollen folgende Privatunternehmungen enteignet und in den Besitz und Betrieb gemeinwirtschaftlicher Anstalten überführt werden:</p>
+                  <list>
+                     <item n="1">
+                        <label>1.)</label> Diejenigen Kohlenbergbaue, welche nicht ausschließlich der örtlichen Versorgung oder der Versorgung einer einzelnen Unternehmung, deren Bestandteil sie bilden, dienen. Im Zu<pb facs="krp-0072_r-0025"/>sammenhange mit der Sozialisierung dieser Kohlenbergbaue soll auch der Kohlengroßhandel sozialisiert und zu diesem Zwecke eine besondere gemeinwirtschaftliche Anstalt gegründet werden.</item>
+                     <item n="2">
+                        <label>2.)</label> Die Eisenerzgewinnung und die Roheisenerzeugung sowie die damit unmittelbar verbundene Weiterverarbeitung und die Gewinnung anderer nutzbarer Metalle.</item>
+                     <item n="3">
+                        <label>3.)</label> Die Elektrizitätswirtschaft und die hiezu erforderliche Ausnützung der Wasserkräfte, soweit sie nicht ausschließlich örtlichen Bedürfnissen dienen.</item>
+                     <item n="4">
+                        <label>4.)</label> Die großen Forste nebst der Holzindustrie und der Großhandel mit Holz.</item>
+                  </list>
+                  <p>Es sollen also die beiden wichtigsten Kraftquellen, Kohle und Elektrizität, und die beiden wichtigsten Rohstoffe, Eisen und Holz, sozialisiert werden. Auf diese Weise wird die Gesellschaft die Verfügung über die wichtigsten Produktivkräfte erlangen.</p>
+                  <p>Die Vergesellschaftung soll gemeinsam durch den Staat und die Länder erfolgen. An der Verwaltung der gemeinwirtschaftlichen Anstalten, die den Kohlenbergbau und die Großeisenindustrie übernehmen sollen, sollen neben der <pb facs="krp-0072_r-0026"/>Staatsregierung auch die Landesverwaltungen teilnehmen. Die Elektrizitätswirtschaft und die Forstwirtschaft sollen Landesanstalten übertragen werden, die sich zur Verwaltung gemeinsamer Angelegenheiten zu Staatsverbänden vereinigen.</p>
+                  <p>Die Gesetzentwürfe über die Sozialisierung des Kohlenbergbaues und der Großeisenindustrie werden schon in der nächsten Woche der Sozialisierungskommission zugehen können. Der Gesetzentwurf über die Vergesellschaftung der Elektrizitätswirtschaft, der in der Sozialisierungskommission und in dem Wasser- und Elektrizitätswirtschaftsamt bereits vorberaten wurde, soll nach einer gemeinsamen Beratung mit den Vertretern der Landesregierungen unterzogen werden. Die Vorlagen über die Sozialisierung der Forstwirtschaft befinden sich noch in Vorbereitung.</p>
+                  <p>Außerdem beabsichtigt die Staatsregierung, die militärischen Betriebe an besondere gemeinwirtschaftliche Anstalten zu übertragen und sie dadurch in den Dienst der Volkswirtschaft zu stellen. Auch darüber werden der Sozialisierungskommission schon in allernächster Zeit Vorschläge unterbreitet werden. Im Zusammenhange damit wird endlich auch die Sozialisierung <pb facs="krp-0072_r-0027"/>einzelner Zweige der chemischen Industrie, die monopolistischen Charakter tragen, erwogen; doch sind die Studien darüber noch nicht zum Abschlusse gelangt.</p>
+                  <p>Der Abbau des landwirtschaftlichen Großbesitzes soll durch ein besonderes Gesetz erfolgen, das im Staatsamt für Landwirtschaft vorbereitet wird. Einen ersten Schritt dazu stellt das Wiederbesiedlungsgesetz dar, das der Nationalversammlung bereits vorliegt.</p>
+                  <p>Damit ist der Umfang der von der Staatsregierung in Aussicht genommenen Sozialisierungsaktion begrenzt. Was die Sozialisierung durch die Gemeinden betrifft, so werden ihre Grenzen durch den der Nationalversammlung bereits vorgelegten Gesetzentwurf über die Vergesellschaftung durch die Gemeinden umschrieben.“</p>
+                  <p>Der Kabinettsrat beschließt im Sinne des gestellten Antrages.</p>
+               </div>
+               <div type="top" xml:id="krp-0072_top13">
+                  <head>
+                     <label>
+                        <num n="13">13.</num>
+                        <seg>Zusammensetzung des Büros der Sozialisierungskommission und Bezüge ihrer Beamten.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Bauer</hi> gibt eine Darstellung über die Organisation des Büros der Sozialisierungskommission. Hienach gliedert sich das Büro in eine volkswirtschaftliche und eine <pb facs="krp-0072_r-0028"/>legistische Abteilung. Mit der Leitung der volkswirtschaftlichen Abteilung wurde Prof. Dr. Emil Lederer, mit der Leitung der legistischen Abteilung Sektionschef Dr. Krasny betraut. Als Fachmann steht noch Prof. Amon in Verwendung. Bei diesen Funktionären handle es sich um keine ständige Bestellung, sondern nur um eine vorübergehende Verwendung.</p>
+                  <p>Rücksichtlich des Sektionschefs Dr. Krasny, der im Vorjahre über sein Ansuchen in den dauernden Ruhestand übernommen worden sei, beantragt der sprechende Staatssekretär dessen Reaktivierung. Dr. Krasny sei bereit, nach Beendigung seiner Funktion bei der Sozialisierungskommission oder wenn er das 30. Dienstjahr erreicht hätte, neuerlich um seine Pensionierung einzuschreiten.</p>
+                  <p>Für die Prof. Dr. Lederer und Amon beantrage er die Festsetzung eines monatlichen Honorars von 1.500 K, ferner die Gewährung einer Zulage aus dem Kredite der Sozialisierungskommission für Prof. Dr. Lederer, als Vergütung für außerordentliche Auslagen, die ihm infolge seines vorübergehenden Aufenthaltes in Wien erwachsen.</p>
+                  <p>
+                     <pb facs="krp-0072_r-0029"/>Die übrigen im Büro in Verwendung stehenden Beamten hätten ihre normalen Bezüge als Staatsbeamte zu Lasten des Kredits der Sozialisierungskommission zu erhalten. Infolge ihrer außerordentlichen Inanspruchnahme sei beabsichtigt, ihnen ständige monatliche Zulagen zu gewähren.</p>
+                  <p>Der Kabinettsrat nimmt diese Ausführungen mit der Maßgabe zustimmend zur Kenntnis, dass von einer Reaktivierung des Sektionschefs Dr. Krasny abzusehen und ihm stattdessen für die Dauer seiner Verwendung bei der Sozialisierungskommission ein Zuschuss zu seinem Ruhegenuss im Ausmaße der Differenz zwischen seinen Pensionsbezügen und jenen Bezügen zu gewähren sei, die ihm im Falle seines Verbleibens in der Aktivität gebühren würden.</p>
+                  <p>Den zugeteilten Beamten können anstelle der in Aussicht genommenen ständigen Zulagen fallweise Remunerationen gewährt werden.</p>
+               </div>
+               <div type="top" xml:id="krp-0072_top14">
+                  <head>
+                     <label>
+                        <num n="14">14.</num>
+                        <seg>Beendigung der Wirksamkeit des Obersten Sanitätsrates und des Obersten Lebensmittelbeirates.</seg>
+                     </label>
+                  </head>
+                  <p>Unterstaatssekretär Dr. <hi rend="#letterspaced">Tandler</hi> führt aus, dass die letzte Ernennung der Mitglieder des mit dem Ge<pb facs="krp-0072_r-0030"/>setze vom 30. April 1870, RGBl. Nr. 68 eingesetzten Obersten Sanitätsrates im März 1916 erfolgte. Da für diesen Fachrat eine dreijährige Wirkungsdauer vorgesehen sei, wäre nunmehr jedenfalls seine Wirksamkeit abgelaufen.</p>
+                  <p>Seit November 1918 seien – unter Abstandnahme von einer formellen Festlegung – die deutschösterreichischen Mitglieder des bestandenen Obersten Sanitätsrates fallweise zur Beratung laufender Geschäftsstücke eingeladen worden. Entgegen dieser Übung erscheine es notwendig, nunmehr klare Verhältnisse zu schaffen und eindeutig festzulegen, dass der im Jahre 1916 als Körperschaft des ehemaligen österreichischen Staates eingesetzte Oberste Sanitätsrat zu bestehen aufgehört habe. Dies solle dadurch zum Ausdrucke gebracht werden, dass die bisherigen deutschösterreichischen Mitglieder – unter Feststellung der Beendigung ihrer Wirksamkeit – ein Dankschreiben für ihre Tätigkeit erhalten. Gegenüber dem bisherigen Präsidenten und den beiden Vizepräsidenten würde dies mit besonderen Worten der Anerkennung stattfinden.</p>
+                  <p>Der sprechende Unterstaatssekretär erbitte sich die Ermächtigung, von <pb facs="krp-0072_r-0031"/>einer Neubestellung des Obersten Sanitätsrates vorläufig abzusehen.</p>
+                  <p>An die Frage der Bestellung eines Gesundheitsbeirates bei der Obersten Zentralstelle des öffentlichen Gesundheitsdienstes in Deutschösterreich werde erst in einem späteren Zeitpunkte, – nach Klärung der gesamtstaatlichen Verhältnisse und damit zugleich auch der Stellung der Gesundheitsverwaltung – heranzutreten sein.</p>
+                  <p>Hinsichtlich der Beendigung der Wirksamkeit des Lebensmittelbeirates kämen gleiche Erwägungen in Betracht, wie hinsichtlich des Obersten Sanitätsrates.</p>
+                  <p>Aufgrund des § 24 des Gesetzes vom 16. Jänner 1896, RGBl. Nr. 89 – 1897, betreffend den Verkehr mit Lebensmitteln und einigen Gebrauchsgegenständen (Lebensmittelgesetz) wurde mit Ministerialverordnung vom 3. April 1897, RGBl. Nr. 90 der Ständige Beirat für Angelegenheiten des Verkehres mit Lebensmitteln und einigen Gebrauchsgegenständen (Lebensmittelbeirat) eingesetzt. Die letzte Ernennung der Mitglieder des Beirates erfolgte am 18. April 1916. Da für den Beirat eine dreijährige Wirkungsdauer vorgesehen <pb facs="krp-0072_r-0032"/>war, wäre nunmehr jedenfalls seine Wirksamkeit abgelaufen.</p>
+                  <p>Eine Einberufung des Lebensmittelbeirates habe seit Kriegsbeginn nicht stattgefunden, und zwar insbesondere deshalb, weil der Lebensmittelbeirat zum Teil durch das beim Obersten Sanitätsrat eingesetzte Fachkomitee für Volksernährung sowie durch das im Jahre 1917 neugegründete Fachkomitee des Amtes (jetzt Staatsamtes) für Volksernährung verdrängt wurde. Um klare Verhältnisse zu schaffen, werde es sich empfehlen, – ebenso wie hinsichtlich des Obersten Sanitätsrates – auch beim Lebensmittelbeirate ausdrücklich festzulegen, dass die Wirksamkeit des im Jahre 1916 als einer Körperschaft des ehemaligen österreichischen Staates eingesetzten Lebensmittelbeirates als beendet anzusehen ist. Dies solle dadurch zum Ausdrucke gebracht werden, dass alle bisherigen deutschösterreichischen Mitglieder des Lebensmittelbeirates – unter Feststellung der Beendigung ihrer Wirksamkeit des Beirates – ein Dankschreiben für ihre bisherige Tätigkeit erhalten. Ein gleichartiges Dankschreiben solle auch an den bisherigen Vorsitzenden des Lebensmittelbeirates gerichtet werden, dessen Honorar übrigens <pb facs="krp-0072_r-0033"/>schon im November 1918 eingestellt wurde.</p>
+                  <p>Redner bitte um die Ermächtigung, von einer Neubestellung des Lebensmittelbeirates abzusehen.</p>
+                  <p>In einem späteren Zeitpunkte werde zu erwägen sein, ob und in welcher Form für Deutschösterreich eine Körperschaft – gleichartig dem Lebensmittelbeirate – als oberste Instanz für fachtechnische Fragen des Verkehres mit Lebensmitteln und namentlich der Untersuchungsanstalten zu bestellen wäre.</p>
+                  <p>Der Kabinettsrat erteilt rücksichtlich des Lebensmittelbeirates die erbetene Ermächtigung. Was den Obersten Sanitätsrat anbelange, so wäre diese auf einem bisher nicht aufgehobenen Gesetz beruhende Institution als solche stillschweigend fortbestehen zu lassen, von einer Einberufung der Mitglieder zu Sitzungen jedoch abzusehen, und im geeigneten Zeitpunkte eine neue einschlägige Gesetzesvorlage einzubringen.</p>
+               </div>
+               <div type="top" xml:id="krp-0072_top15">
+                  <head>
+                     <label>
+                        <num n="15">15.</num>
+                        <seg>Gesetzentwurf über die Regelung des Verkehrs mit Getreide- und Mahlprodukten.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Loewenfeld-Russ</hi> erbittet die Zustim<pb facs="krp-0072_r-0034"/>mung des Kabinettsrates, in der Nationalversammlung den Entwurf eines Gesetzes über die Regelung des Verkehrs mit Getreide- und Mahlprodukten einbringen zu dürfen.</p>
+                  <p>Der Kabinettsrat erteilt die erbetene Zustimmung mit der Maßgabe, dass die noch vorhandenen Differenzen minderwichtiger Natur im Einvernehmen mit den Staatsämtern für Justiz und Finanzen vor der Einbringung zu bereinigen sein werden.</p>
+                  <p/>
+               </div>
+            </div>
+            <div type="anhaenge">
+               <p>
+                  <pb facs="krp-0072_a01-0001"/>Streng vertraulicher Anhang zum Kabinettsprotokoll Nr. 72 vom 20. Mai 1919.</p>
+               <div n="1">
+                  <head>Bericht über die bisher von der Friedensdelegation in St. Germain eingelangten Nachrichten.</head>
+                  <div type="a01_protokoll">
+                     <p>Staatssekretär Dr. <hi rend="#letterspaced">Bauer</hi> teilt mit Beziehung auf die in den letzten Tagen erschienenen Blättermeldungen mit, dass politische Verhandlungen in St. Germain bisher nicht stattgefunden haben. Die deutschösterreichischen Delegierten seien ebenso wie die deutschen vollkommen abgesperrt. Die Entente habe das Friedenselaborat noch nicht fertiggestellt. Inzwischen seien die seinerzeit in Wien eingeleiteten wirtschaftlichen Verhandlungen mit den Finanzdelegierten der Entente fortgeführt worden. Diese Verhandlungen hätten vorläufig einen nicht besonders günstigen Verlauf genommen, da die Franzosen sich zu weiteren Kreditgewährungen nur gegen die Stellung von Sicherheiten bereit erklärten. Die Unterredungen mit den Ententevertretern seien von unseren Delegierten auch zu politischen Gesprächen benützt worden. Hiebei sei hervorgekommen, dass die Entente die Absicht habe, den Anschluss von Deutschösterreich an Deutsch<pb facs="krp-0072_a01-0002"/>land zu verbieten und nunmehr die Frage in Erwägung stehe, ob eine Donaukonföderation zu bilden oder die volle Selbständigkeit Deutschösterreichs ins Auge zu fassen sei. Die Tschechoslowaken seien zu einer Donaukonföderation bereit, auch die Jugoslawen scheinen diesem Projekte nicht ablehnend gegenüberzustehen. Dagegen werde die Idee der Donaukonföderation seitens Italiens auf das Heftigste bekämpft. Die Polen und Rumänen erklären, dass sie sich nicht beteiligen würden. Die Franzosen hätten von Sektionschef Dr. Schüller zwei Elaborate verlangt, eines über die Donaukonföderation und eines für den Fall, dass eine solche Verbindung nicht zustande kommt. Dr. Schüller werde instruktionsgemäß in die Diskussion eingehen und die in Betracht kommenden Fragen konkretisieren.</p>
+                     <p>Einen weiteren Gegenstand des Gesprächs habe die Südtiroler-Frage gebildet. Nach dem Londoner Pakt sei Südtirol bereits den Italienern zugesprochen worden. Es sei aber nicht ausgeschlossen, dass Italien im Falle direkter Verhandlungen gewisse Zugeständnisse machen würde (Gewährung einer gewissen Autonomie, Verbleiben Südtirols <pb facs="krp-0072_a01-0003"/>in der deutschösterreichischen Zollgrenze).</p>
+                     <p>Der Kabinettsrat nimmt diesen Bericht zur Kenntnis.</p>
+                     <p>Staatssekretär Dr. Bauer wirft sodann die Frage der Entsendung von weiteren Finanzdelegierten nach St. Germain auf.</p>
+                     <p>Nach einer eingehenden Debatte beschließt der Kabinettsrat die Direktoren Dr. Hammerschlag, Weiner und Krasny sowie den Generalsekretär der Oesterreichisch-ungarischen Bank Rapp im Bedarfsfalle nach St. Germain zu entsenden. Der Vorschlag des Staatssekretärs für Finanzen, den früheren Gouverneur der [Allgemeinen österreichischen] Bodencreditanstalt Dr. Sieghart zu entsenden, wird abgelehnt.</p>
+                     <p>Die Anregung des Staatssekretärs Dr. <hi rend="#letterspaced">Loewenfeld-Russ</hi> wegen Entsendung eines Vertreters des Staatsamtes für Volksernährung wird zustimmend zur Kenntnis genommen.</p>
+                  </div>
+               </div>
+               <div n="2">
+                  <head>Situation in Westungarn</head>
+                  <div type="a02_protokoll">
+                     <p>Staatssekretär Dr. <hi rend="#letterspaced">Deutsch</hi> teilt mit, dass Oberstleutnant Cunningham in der letzten Zeit wie<pb facs="krp-0072_a01-0004"/>derholt dem ihm zugeteilten Verbindungsoffizier gegenüber erklärt habe, Deutschösterreich dürfe sich dem Hilferufe Westungarns nicht länger verschließen und müsse nunmehr eine militärische Aktion einleiten.</p>
+                     <p>Von einem Einmarsch nach Westungarn sei vorläufig insbesondere aus dem Grunde abgesehen worden, weil nach den erfolglosen Verhandlungen mit den Jugoslawen ein starker Angriff in Kärnten zu erwarten stehe. Es scheine sich übrigens hier lediglich um eine Sonderaktion des Oberstleutnants Cunningham zu handeln, was schon daraus hervorgehe, dass der Chef der italienischen Militärmission General Segré erklärt habe, von einem diesbezüglichen Wunsch der Entente nichts zu wissen. Von seinem (Segrés) Standpunkt müsse er auch einer militärischen Aktion gegenüber Westungarn abraten. Mit Rücksicht auf diese Sachlage sei nach Ansicht des sprechenden Staatssekretärs die größte Zurückhaltung am Platze; immerhin seien alle Vorbereitungen zu einem Einmarsch nach Westungarn für den Fall getroffen, dass die Räteregierung in Ungarn gestürzt und dort Anarchie eintreten würde.</p>
+                     <p>
+                        <pb facs="krp-0072_a01-0005"/>Anknüpfend daran verweist Staatssekretär <hi rend="#letterspaced">Eldersch</hi> auf die Notwendigkeit, die Aufrichtung der Verwaltung in den westungarischen Komitaten schon jetzt vorzubereiten, zu welchem Zwecke eine Kommission einzusetzen wäre, welche sich mit den Vorstudien hiefür zu befassen hätte.</p>
+                     <p>Staatssekretär Dr. <hi rend="#letterspaced">Bauer</hi> pflichtet der Anregung des Vorredners bei, weist aber darauf hin, dass die Stellungnahme der Entente in dieser Frage durchaus nicht einmütig sei, weshalb es geboten sei, dass die Kommission ihre Studien in unauffälliger und streng vertraulicher Weise betreibe.</p>
+                     <p>Staatssekretär <hi rend="#letterspaced">Pau1</hi> und Sektionschef Dr. <hi rend="#letterspaced">Grimm</hi> stellen das Ersuchen, dass in diese Kommission auch Vertreter der Staatsämter für Verkehrswesen und für Finanzen entsendet werden.</p>
+                     <p>Der Kabinettsrat nimmt den Bericht des Staatssekretärs Dr. Deutsch zur Kenntnis und ermächtigt den Staatssekretär Eldersch, die von ihm beabsichtigte Studienkommission unter den vom Staatsamt für Äußeres gekennzeichneten Vorsichten einzusetzen.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>
