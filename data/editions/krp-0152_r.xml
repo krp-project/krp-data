@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href='http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:acdh="https://vocabs.acdh.oeaw.ac.at/schema#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xml:lang="de">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="a" type="main" n="0152">Kabinettsprotokoll Nr. 152 vom 27. Februar 1920</title>
+            <title level="m" type="main" n="01">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <title level="m" type="sub" n="">Renner III (17. Oktober 1919 – 7. Juli 1920)</title>
+            <meeting>
+               <placeName key="https://d-nb.info/gnd/4066009-6">Wien</placeName>
+               <orgName key="https://d-nb.info/gnd/5162749-8">Kabinettsrat</orgName>
+               <date when-iso="1920-02-27"/>
+            </meeting>
+            <editor>
+               <persName key="https://d-nb.info/gnd/122481836"
+                         role="hasCreator"
+                         xml:id="hwohnout">
+                  <forename>Helmut</forename>
+                  <surname>Wohnout</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</affiliation>
+               <idno type="ORCID">0000-0002-3864-9839</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/120789825"
+                         role="hasCreator"
+                         xml:id="tolechowski">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0003-3291-6876</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/131679384"
+                         role="hasCreator"
+                         xml:id="rlein">
+                  <forename>Richard</forename>
+                  <surname>Lein</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0002-7502-0503</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="aholzer">
+                  <forename>Anna</forename>
+                  <surname>Holzer</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0005-3560-3500</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="dsoelkner">
+                  <forename>Dominik</forename>
+                  <surname>Sölkner</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-9895-7212</idno>
+            </editor>
+            <editor>
+               <persName role="hasContributor" xml:id="ischotzko">
+                  <forename>Ina</forename>
+                  <surname>Schotzko</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-5210-3713</idno>
+            </editor>
+            <funder n="1">
+               <orgName key="https://d-nb.info/gnd/2054142-9" role="hasFunder">Österreichischer Wissenschaftsfonds FWF</orgName>
+               <idno type="project">PAT1495024</idno>
+               <title type="project">Die Protokolle des österreichischen Kabinettsrates 1919–1920</title>
+            </funder>
+            <respStmt>
+               <resp>Projektverantwortung</resp>
+               <orgName key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Projektleitung</resp>
+               <persName key="https://d-nb.info/gnd/120789825" role="hasPrincipalInvestigator">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+                  <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+                  <idno type="ORCID">0000-0003-3291-6876</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Nationaler Forschungspartner</resp>
+               <orgName key="https://d-nb.info/gnd/1123037736" role="hasEnabler">Austrian Centre for Digital Humanities</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Digitalisierung der gedruckten Quellen</resp>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>TEI-Datenmodellierung</resp>
+               <persName role="hasContributor" xml:id="tfruehwirth">
+                  <forename>Timo</forename>
+                  <surname>Frühwirth</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-3997-5193</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technische Supervision</resp>
+               <persName key="https://d-nb.info/gnd/1043833846"
+                         role="hasContributor"
+                         xml:id="pandorfer">
+                  <forename>Peter</forename>
+                  <surname>Andorfer</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-9575-9372</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technisches Consulting und Vorbereitung der Druckausgabe</resp>
+               <persName key="https://d-nb.info/gnd/13281899X"
+                         role="hasContributor"
+                         xml:id="skurz">
+                  <forename>Stephan</forename>
+                  <surname>Kurz</surname>
+                  <affiliation key="https://d-nb.info/gnd/1202798799">Institut für die Erforschung der Habsburgermonarchie und des Balkanraumes</affiliation>
+                  <idno type="ORCID">0000-0003-2546-2570</idno>
+               </persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher key="https://d-nb.info/gnd/1001454-8">Österreichische Akademie der Wissenschaften</publisher>
+            <date when="2028"/>
+            <availability status="free">
+               <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">Lizenziert unter CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/deed.de)</licence>
+            </availability>
+            <idno type="ISBN_Print"/>
+            <idno type="ISBN_Part_epub"/>
+            <idno type="ISBN_Digital"/>
+            <idno type="DOI"/>
+            <idno type="DOI_zenodo"/>
+            <idno type="ebook_ID"/>
+         </publicationStmt>
+         <seriesStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="m" type="main">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <respStmt>
+               <resp>Bearbeitung und Herausgeberschaft</resp>
+               <orgName key="https://d-nb.info/gnd/2024703-5">Universität Wien</orgName>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+         </seriesStmt>
+         <notesStmt>
+            <note>Diese TEI-XML-Datei ist Grundlage für eine Druckausgabe der Edition.</note>
+            <relatedItem>
+               <biblStruct>
+                  <monogr>
+                     <imprint>
+                        <pubPlace key="https://d-nb.info/gnd/4066009-6">Wien</pubPlace>
+                        <publisher key="https://d-nb.info/gnd/2068748-5">Verlag der Österreichischen Akademie der Wissenschaften</publisher>
+                        <date when="2029"/>
+                     </imprint>
+                     <extent/>
+                  </monogr>
+                  <note>
+                     <idno/>
+                     <ptr/>
+                  </note>
+                  <citedRange/>
+               </biblStruct>
+            </relatedItem>
+         </notesStmt>
+         <sourceDesc>
+            <bibl>Quellbestand: AT-OeStA/AdR MRang MR 1Rep KRP Kabinettsratsprotokolle, 1918-1920 (Teilbestand)<ref target="https://www.archivinformationssystem.at/detail.aspx?id=5465">https://www.archivinformationssystem.at/detail.aspx?id=5465</ref>
+            </bibl>
+            <msDesc>
+               <msIdentifier>
+                  <institution key="https://d-nb.info/gnd/37748-X" role="hasOwner">AT-OeStA Österreichisches Staatsarchiv (Archiv (ÖStA))</institution>
+                  <repository key="https://d-nb.info/gnd/1601181-8">AT-OeStA/AdR Archiv der Republik, 1918- (Abteilung)</repository>
+                  <collection>AT-OeStA/AdR MRang MR 1Rep Ministerrat 1. Republik, 1918 - 1938 (Bestand)</collection>
+                  <idno>AT-OeStA_AdR-MRang-MR-1.-Rep.-KRP-152</idno>
+               </msIdentifier>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <abstract>
+            <p>
+          <!--to be generated-->
+        </p>
+         </abstract>
+      </profileDesc>
+      <encodingDesc>
+         <styleDefDecl scheme="css"/>
+         <tagsDecl>
+            <rendition xml:id="b" scheme="css">font-weight:bold;</rendition>
+            <rendition xml:id="su" scheme="css">vertical-align:super;font-size:.7em;</rendition>
+            <rendition xml:id="s" scheme="css">text-decoration:line-through;</rendition>
+            <rendition xml:id="u" scheme="css">text-decoration:underline;</rendition>
+            <rendition xml:id="ow" scheme="css">text-decoration:line-through;text-decoration-style:double;</rendition>
+            <rendition xml:id="r" scheme="css">display:block;text-align:right;</rendition>
+            <rendition xml:id="letterspaced" scheme="css">letter-spacing:0.15em;</rendition>
+            <rendition xml:id="i" scheme="css">font-style:italic;</rendition>
+         </tagsDecl>
+         <editorialDecl>
+            <hyphenation>
+               <p>
+            <!--to be added-->
+          </p>
+            </hyphenation>
+            <correction>
+               <p>
+            <!--to be added-->
+          </p>
+            </correction>
+            <normalization>
+               <p>
+            <!--to be added-->
+          </p>
+            </normalization>
+            <punctuation>
+               <p>
+            <!--to be added-->
+          </p>
+            </punctuation>
+            <stdVals>
+               <p>
+            <!--to be added-->
+          </p>
+            </stdVals>
+            <p>
+          <!--to be added-->
+        </p>
+         </editorialDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#tfruehwirth" when-iso="2026-09-15">TEIGarage output upconverted with upconvert.xsl</change>
+         <change who="#tfruehwirth" when-iso="2026-09-15">TEI header populated with generate_tei_templates.py</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface/>
+   </facsimile>
+   <text>
+      <body>
+         <div xml:id="doc-krp-0152.xml">
+            <head type="dokument">
+               <title type="num">152.<note type="footnote">Das Protokoll trägt den Vermerk <hi rend="#i">Vertraulich!</hi>
+                  </note>
+               </title>
+               <title type="desc">
+                  <pb facs="krp-0152_r-0001"/>
+                  <pb facs="krp-0152_r-0002"/>[Freitag] 1920-02-27</title>
+            </head>
+            <div type="dokumentkopf">
+               <div type="vorsitz">
+                  <head>Vorsitz:</head>
+                  <p>Renner</p>
+               </div>
+               <div type="anwesend">
+                  <head>Anwesend:</head>
+                  <p>Deutsch, Eisler, Eldersch, Ellenbogen, Fink, Glöckel, Hanusch, Loewenfeld-Russ, Mayr, Miklas, Paul, Ramek, Reisch, Resch, Waiss, Zerdik</p>
+               </div>
+               <div type="zugezogen">
+                  <head>Zugezogen:</head>
+                  <p>Alter, Grimm</p>
+               </div>
+               <div type="schriftfuehrer">
+                  <head>Schriftführer:</head>
+                  <p>unbekannt</p>
+               </div>
+               <div type="dauer">
+                  <head>Dauer:</head>
+                  <p>17.00–19.00 Uhr</p>
+               </div>
+            </div>
+            <div type="komponenten">
+               <p>Reinschrift, Beilagen</p>
+            </div>
+            <div type="beilagen">
+               <head>Beilagen:</head>
+               <list>
+                  <item>
+                     <ref target="#krp-0152_top03">Zu TOP 3</ref>: <ref target="#krp-0152_b01">Vortrag des Unterrichtsamtes Zl. 584 über die Belassung von aus den abgetretenen Gebieten stammenden Zöglingen der Staatserziehungsanstalten bzw. Stundung des Nachweises über die Erwerbung der österreichischen Staatsbürgerschaft</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0152_top04">Zu TOP 4</ref>: <ref target="#krp-0152_b02">Vortrag des Unterrichtsamtes Zl. 2811/1920 über den Gesetzesbeschluss der Tiroler Landesversammlung zur Abänderung einiger Bestimmungen des Schulaufsichtsgesetzes</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0152_top05">Zu TOP 5</ref>: <ref target="#krp-0152_b03">Vortrag des Staatsamtes für Inneres und Unterricht Zl. 7179 über Beschlüsse der Landesversammlungen bzw. Landesräte in Vorarlberg, Kärnten und Steiermark betreffend die Einhebung von Landeszuschlägen</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0152_top09">Zu TOP 9</ref>: <ref target="#krp-0152_b04">Vollzugsanweisung des Staatsamtes für soziale Verwaltung zu Zl. 5408/1920 über die Erhaltung des Arbeiterstandes in gewerblichen Betrieben</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0152_top10">Zu TOP 10</ref>: <ref target="#krp-0152_b05">Bericht und Antrag des land- und forstwirtschaftlichen Ausschusses an den Tiroler Landtag über die Zuständigkeit der Agrarbehörde zur Behandlung der nach dem Kaiserlichen Patent von 1853 abzulösenden oder zu regulierenden Rechte</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0152_top10">Zu TOP 10</ref>: <ref target="#krp-0152_b06">Vortrag des Staatsamtes für Land- und Forstwirtschaft Zl. 4057/1920 über den Gesetzesbeschluss des Tiroler Landtages, betreffend die Zuständigkeit der Agrarbehörde zur Behandlung der nach dem Kaiserlichen Patent von 1853 der Ablösung oder Regulierung unterliegenden Rechte samt Gesetz</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0152_top11">Zu TOP 11</ref>: <ref target="#krp-0152_b07">Vortrag des Präsidenten der Staatskommission für Sozialisierung Dr. Ellenbogen über die Errichtung einer gemeinwirtschaftlichen Anstalt unter der Firma „Steirische Fahrzeugwerke, gemeinwirtschaftliche Anstalt“ mit den Satzungen</ref>
+                  </item>
+               </list>
+            </div>
+            <div type="protokoll">
+               <pb facs="krp-0152_r-0003"/>
+               <div type="top" xml:id="krp-0152_top01">
+                  <head>
+                     <label>
+                        <num n="1">1.</num>
+                        <seg>Rechtsstellung der österreichischen Beamten des liquidierenden österreichischen Obersten Rechnungshofes.</seg>
+                     </label>
+                  </head>
+                  <p>Sektionschef Dr. <hi rend="#letterspaced">Grimm</hi> teilt mit, dass eine Anzahl deutscher Angestellter des liquidierenden österreichischen Obersten Rechnungshofes, welche seinerzeit mangels Bedarfes nicht in den Stand des Staatsrechnungshofes übernommen worden sind, bisher noch nicht die Anerkennung als Angestellte der Republik Österreich gefunden habe. Die nunmehr vollzogene Austrifizierung der Liquidierung biete die Gelegenheit, die unterlassene Angelobung dieser Beamten, die von ihnen als Härte und Zurücksetzung gegenüber allen anderen Angestellten des bestandenen österreichischen Staates empfunden werde, behufs ihrer Übernahme in den österreichischen Staatsdienst nachzuholen. Da es sich um einen ganz kleinen Personenkreis handle, fallen finanzielle Bedenken nicht ins Gewicht.</p>
+                  <p>Das Staatsamt für Finanzen stelle daher den Antrag, der Kabinettsrat wolle beschließen:</p>
+                  <p>„Der Kabinettsrat genehmigt die Übernahme der aktiven, der deutschen Nation angehörigen pragmatischen Angestellten des liquidierenden österreichischen Obersten Rechnungshofes in den Staatsdienst der Republik Österreich durch nachträgliche Ange<pb facs="krp-0152_r-0004"/>lobung. Gleichzeitig beschließt der Kabinettsrat, dass die der deutschen Nation angehörenden, pensionierten pragmatischen Angestellten des ehemaligen österreichischen Obersten Rechnungshofes, die nach dem 31. Oktober 1918 in den Ruhestand versetzt wurden, wie Pensionisten der Republik Österreich zu behandeln sind.“</p>
+                  <p>Der Kabinettsrat erhebt diesen Antrag zum Beschluss.</p>
+               </div>
+               <div type="top" xml:id="krp-0152_top02">
+                  <head>
+                     <label>
+                        <num n="2">2.</num>
+                        <seg>Beitritt der Staatsregierung zu mehreren Gesetzesbeschlüssen der Nationalversammlung.</seg>
+                     </label>
+                  </head>
+                  <p>Über Vorschlag des <hi rend="#letterspaced">Vorsitzenden</hi> erhebt der Kabinettsrat gegen die von der Nationalversammlung beschlossenen Gesetze,</p>
+                  <list>
+                     <item n="1">1.) womit Art. 7 des Gesetzes vom 14. März 1919, StGBl. Nr. 180, über die Staatsregierung, ergänzt wird,</item>
+                     <item n="2">2.) betreffend die Gewährung eines Zuschusses zu den Unterhaltsbeiträgen und Zuwendungen,</item>
+                     <item n="3">3.) über Kammern für Handel, Gewerbe und Industrie,</item>
+                     <item n="4">4.) über den Dienstvertrag der Hausgehilfen (Hausgehilfengesetz) und</item>
+                     <item n="5">5.) über die Errichtung von Kammern für Arbeiter und Angestellte (Arbeiterkammern)</item>
+                  </list>
+                  <p>keine Vorstellung.</p>
+                  <p>
+                     <pb facs="krp-0152_r-0005"/>Die erwähnten Gesetze sind demgemäß nach Gegenzeichnung durch den Staatskanzler und die zuständigen Staatssekretäre dem Präsidenten der Nationalversammlung zur Unterfertigung vorzulegen.</p>
+               </div>
+               <div type="top" xml:id="krp-0152_top03">
+                  <head>
+                     <label>
+                        <num n="3">3.</num>
+                        <seg>Belassung von aus den abgetretenen Gebieten stammenden Zöglingen der Staatserziehungsanstalten, bzw. Stundung des Nachweises über die Erwirkung der österreichischen Staatsbürgerschaft.</seg>
+                     </label>
+                  </head>
+                  <p>Unterstaatssekretär <hi rend="#letterspaced">Glöckel</hi> erinnert daran, dass der Kabinettsrat in seiner Sitzung vom 23. September 1919, die Ermächtigung erteilt habe, 84 Zöglinge der Staatserziehungsanstalten, welche aus den abgetretenen Gebieten der bestandenen Monarchie stammen, im Genusse der von ihnen innegehabten Freiplätze bis zum Schluss des 1. Semesters des Schuljahres 1918/19 zu belassen und ihnen bis zu diesem Zeitpunkte für den weiteren Freiplatzbezug den Nachweis über die erlangte österreichische Staatsbürgerschaft zu stunden.</p>
+                  <p>Da sich dermalen an den Staatserziehungsanstalten noch 70 Zöglinge befinden, welche den erwähnten Nachweis nicht erbracht haben, durch die Bestimmungen des inzwischen erflossenen Gesetzes vom 17. Oktober 1919, <pb facs="krp-0152_r-0006"/>StGBl. Nr. 481, aber die Erwerbung des Heimatsrechtes in einer österreichischen Gemeinde und damit folgeweise der österreichischen Staatsbürgerschaft jenen Zöglingseltern nicht mehr möglich sei, welche nicht nach erlangter Eigenberechtigung durch zehn der Bewerbung um das Heimatsrecht vorausgehende Jahre sich freiwillig und ununterbrochen in der betreffenden österreichischen Gemeinde aufgehalten haben, stelle der sprechende Unterstaatssekretär den Antrag, der Kabinettsrat wolle genehmigen, dass den aus den abgetretenen Gebieten der bestandenen Monarchie stammenden Zöglingen der Staatserziehungsanstalten, welche im Genusse von Freiplätzen stehen, zwecks Vermeidung des Abbruches ihrer Studien während des Schuljahres, der Nachweis über die Erwerbung der österreichischen Staatsbürgerschaft bis zum 15. Juli 1920 gestundet werde.</p>
+                  <p>Der Kabinettsrat erteilt die erbetene Genehmigung.</p>
+               </div>
+               <div type="top" xml:id="krp-0152_top04">
+                  <head>
+                     <label>
+                        <num n="4">4.</num>
+                        <seg>Gesetzesbeschluss des Tiroler Landtages, womit einzelne Bestimmungen des Schulaufsichtsgesetzes abgeändert werden.</seg>
+                     </label>
+                  </head>
+                  <p>Unterstaatssekretär Glöckel erbittet und erhält vom Kabinettsrate die Ermächtigung, dass von der Erhebung <pb facs="krp-0152_r-0007"/>einer Vorstellung gegen den vom Tiroler Landtag am 2. Dezember 1919 gefassten Gesetzesbeschluss, womit einige Bestimmungen der Gesetze vom 30. April 1892, LGBl. Nr. 7 und vom 1. Mai 1904, LGBl. Nr. 41, betreffend die Schulaufsicht, abgeändert werden, abgesehen werde. Gleichzeitig stimmt der Kabinettsrat zu, dass die Landesregierung ersucht werde, die Beseitigung einiger stilistischer, bzw. Redaktionsfehler in die Wege zu leiten, worauf die Gegenzeichnung durch den Staatssekretär für Inneres und Unterricht zu vollziehen und die Kundmachung des Gesetzes durch die Landesregierung zu veranlassen sein wird.</p>
+               </div>
+               <div type="top" xml:id="krp-0152_top05">
+                  <head>
+                     <label>
+                        <num n="5">5.</num>
+                        <seg>Beschlüsse der Landesversammlung, bzw. Landesräte in Vorarlberg, Kärnten und Steiermark in autonomen Finanzangelegenheiten.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Eldersch</hi> teilt mit, dass die Landesregierungen in Vorarlberg, Kärnten und Steiermark um die Erwirkung der Genehmigung der Staatsregierung für die Beschlüsse der Landtage von Vorarlberg vom 30. Dezember 1918, 27. Juni und 16. Dezember 1919, Kärnten vom 16. Dezember 1919 und Steiermark vom 5. Dezember 1919, betreffend die Einhebung von Landeszuschlägen, ersucht haben.</p>
+                  <p>Überdies habe die Landesregierung von Kärnten die Genehmigung der Landesratsbeschlüsse vom 18. November, 20. und 30. De<pb facs="krp-0152_r-0008"/>zember 1919, betreffend die Einhebung von 200 % übersteigenden Umlagen in den Gemeinden Treffen und Zeltschach, sowie einer Hundesteuer in Klagenfurt, die Landesregierung von Steiermark die Genehmigung der Landtagsbeschlüsse vom 10. Oktober 1919, betreffend die Einhebung von Mautgebühren für automobile Fahrzeuge in Graz und die Erhöhung der städtischen Pflastermaut in Graz beantragt.</p>
+                  <p>Über Vorschlag des sprechenden Staatssekretärs genehmigt der Kabinettsrat die erwähnten Beschlüsse.</p>
+               </div>
+               <div type="top" xml:id="krp-0152_top06">
+                  <head>
+                     <label>
+                        <num n="6">6.</num>
+                        <seg>Anwendung der das Dienstverhältnis der Staatsangestellten regelnden Vorschriften auf die Angestellten des Wiener Versatzamtsfonds.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Eldersch führt aus, dass die über das Dienstverhältnis der Staatsangestellten erlassenen gesetzlichen oder administrativen Normen jeweils auch für das Dienstverhältnis der Angestellten des Wiener Versatzamtsfonds als sinngemäß verbindlich erklärt worden seien. Die Frage der Zuständigkeit zur Erlassung der Anordnung über die sinngemäße Anwendung dieser Normen auf die bezeichneten Fondsangestellten sei vor der im Oktober 1918 erfolgten Verfassungsänderung nicht in eindeutiger Weise geregelt worden. In „wichtigeren“ Fällen erfolgte diese Anordnung aufgrund kaiserlicher Entschließungen, in „minder wich<pb facs="krp-0152_r-0009"/>tigeren“ durch die Erlässe des bestandenen Ministeriums des Innern vielfach aber auch in der Form nachträglicher ministerieller Genehmigung einer von der Landesbehörde getroffenen Verfügung. Nach dieser bisherigen Übung wäre somit gemäß den gegenwärtig geltenden verfassungsgesetzlichen Bestimmungen jeder einzelne „wichtigere“ Fall der Erlassung der vorbesprochenen Normen dem Kabinettsrate zur Beschlussfassung vorzulegen, während jeder einzelne „minder wichtige“ Fall der vorherigen Anordnung oder nachträglichen Genehmigung des Staatssekretärs vorbehalten bliebe. Es empfehle sich, diesen Vorgang dahin zu vereinfachen, dass einerseits der Staatssekretär für Inneres und Unterricht die generelle Ermächtigung des Kabinettsrates erhalte, die Verbindlichkeit der in Rede stehenden „wichtigeren“ Normen, auszusprechen, anderseits der Staatssekretär die Landesregierung generell ermächtige, die „minder wichtigen“ Normen für das Dienstverhältnis der Fondsangestellten als verbindlich zu erklären. Die Grenze wäre dahin abzustecken, dass der Staatssekretär aufgrund der generellen Ermächtigung des Kabinettsrates die sinngemäße Anwendung neuer grundsätzlicher sowie sonstiger gesetzlicher Vorschriften auf dem bezeichneten Gebiete anordne, wogegen der Landesregierung überlassen bliebe, die sinngemäße Verbindlichkeit aller <pb facs="krp-0152_r-0010"/>Normen, die im Rahmen der gegenwärtig geltenden grundsätzlichen und sonstigen gesetzlichen Bestimmungen über das Staatsdienstverhältnis für die Staatsangestellten erlassen werden, für das angeführte Fondsdienstverhältnis auszusprechen.</p>
+                  <p>Der Kabinettsrat beschließt sohin: Dem Staatssekretär für Inneres und Unterricht wird die generelle Ermächtigung erteilt, neue grundsätzliche sowie sonstige gesetzliche Vorschriften über das Dienstverhältnis der Staatsangestellten fallweise für das Dienstverhältnis der Angestellten des Versatz-, Verwahrungs- und Versteigerungsamtes in Wien (Angestellte des Versatzamtsfonds) als sinngemäß verbindlich zu erklären und der Landesregierung die entsprechenden Weisungen zu erteilen.</p>
+               </div>
+               <div type="top" xml:id="krp-0152_top07">
+                  <head>
+                     <label>
+                        <num n="7">7.</num>
+                        <seg>Beförderung von Beamten über den systemisierten Stand im Grazer Oberlandesgerichtssprengel.</seg>
+                     </label>
+                  </head>
+                  <p>Nach einer Mitteilung des Staatssekretärs Dr. <hi rend="#letterspaced">Ramek</hi> hatte das Staatsamt für Justiz im Einvernehmen mit dem Staatsamte für Finanzen die Beförderung von Beamten, die bereits die Bezüge der höheren Rangsklasse erlangt haben, über den systemisierten Stand in Aussicht genommen und im Wiener und Innsbrucker Sprengel vor dem 1. Jänner 1920 durchgeführt. Die Vorschläge aus dem Grazer Sprengel seien je<pb facs="krp-0152_r-0011"/>doch erst im Monate Jänner eingelangt und konnten im Hinblicke auf die Bestimmungen des Besoldungsübergangsgesetzes nicht mehr durchgeführt werden.</p>
+                  <p>Der sprechende Staatssekretär stelle daher den Antrag, der Kabinettsrat wolle seine Zustimmung erteilen, dass im Grazer Oberlandesgerichtssprengel Kanzleibeamte, bei denen die Voraussetzungen des Erlasses des Staatsamtes für Justiz vom 9. Dezember 1919, Zl. 19.141, zutreffen, mit Wirksamkeit vom 1. Jänner 1920 über den systemisierten Stand in die nächste Rangsklasse befördert werden.</p>
+                  <p>Der Kabinettsrat erteilt die erbetene Zustimmung.</p>
+               </div>
+               <div type="top" xml:id="krp-0152_top08">
+                  <head>
+                     <label>
+                        <num n="8">8.</num>
+                        <seg>Vollzugsanweisung des Staatsamtes für soziale Verwaltung über die Unterstützung der arbeitslosen Arbeiter und Angestellten.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Hanusch</hi> erbittet und erhält vom Kabinettsrate die Ermächtigung zur Erlassung einer Vollzugsanweisung, wonach die Bestimmungen der Vollzugsanweisungen des Staatsamtes für soziale Verwaltung über die Unterstützung der arbeitslosen Arbeiter und Angestellten vom 14. Februar 1919, StGBl. Nr. 120 und 121, vom 24. Juni 1919, StGBl. Nr. 327, vom 20. August 1919, StGBl. Nr. 428 und vom 30. Dezember 1919, StGBl. Nr. 12 ex 1920 in ihrer Geltungsdauer bis einschließlich 15. April 1920 erstreckt werden.</p>
+                  <p>
+                     <pb facs="krp-0152_r-0012"/>
+                  </p>
+               </div>
+               <div type="top" xml:id="krp-0152_top09">
+                  <head>
+                     <label>
+                        <num n="9">9.</num>
+                        <seg>Vollzugsanweisung des Staatsamtes für soziale Verwaltung über die Erhaltung des Arbeiterstandes in gewerblichen Betrieben.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Hanusch erbittet und erhält vom Kabinettsrate die Ermächtigung zur Erlassung einer Vollzugsanweisung, wonach die Geltungsdauer der Vollzugsanweisung vom 16. Oktober 1919, StGBl. Nr. 489, über die Erhaltung des Arbeiterstandes in gewerblichen Betrieben bis einschließlich 30. April 1920 erstreckt wird.</p>
+               </div>
+               <div type="top" xml:id="krp-0152_top10">
+                  <head>
+                     <label>
+                        <num n="10">10.</num>
+                        <seg>Gesetzesbeschlüsse des Tiroler Landtages, betreffend
+                           <list>
+                              <item n="1"><label>1.)</label> die Sicherstellung des Mehrerfordernisses für die Verbauung mehrerer Wasserläufe in Tirol,</item>
+                              <item n="2"><label>2.)</label> die Sicherstellung von Elementarbauten in der Gemeinde Wildschönau und der Behebung von Elementarschäden im oberen Brixentale,</item>
+                              <item n="3"><label>3.)</label> die Zuständigkeit der Agrarbehörden zur Behandlung der nach dem Kaiserlichen Patente vom 5.&#160;Juli 1853, RGBl. Nr.&#160;130, der Ablösung oder Regulierung unterliegenden Rechte..</item>
+                           </list>
+                        </seg>
+                        
+                     </label>
+                  </head>
+                  <p>Sektionschef Dr. <hi rend="#letterspaced">Alter</hi> erbittet und erhält vom Kabinettsrate die Ermächtigung, dass von der Erhebung einer Vorstellung gegen nachstehende Gesetzesbeschlüsse des Tiroler Landtages abgesehen werde:</p>
+                  <list>
+                     <item n="1">
+                        <label>1.)</label> vom 21. Jänner 1920, betreffend die Sicherstellung des Mehrerfordernisses für die Verbauung des Leonhardsbaches in Roppen, betreffend die Verbauung des Oberlaufes des Höttingerbaches, betreffend die Verbauung des Moratalbaches in Kirchdorf und Waidring und betreffend die Ergänzungs<pb facs="krp-0152_r-0013"/>arbeit am Maukenbache in Radfeld,</item>
+                     <item n="2">
+                        <label>2.)</label> vom 21. Jänner 1920, betreffend die Sicherstellung der Elementarbauten vom Jahre 1912 in der Gemeinde Wildschönau und der Behebung von Elementarschäden aus dem Jahre 1912 und 1916 im oberen Brixentale und</item>
+                     <item n="3">
+                        <label>3.)</label> vom 30. Jänner 1920, betreffend die Zuständigkeit der Agrarbehörden zur Behandlung der nach dem Kaiserlichen Patente vom 5. Juli 1853, RGBl. Nr. 130 der Ablösung oder Regulierung unterliegenden Rechte.</item>
+                  </list>
+               </div>
+               <div type="top" xml:id="krp-0152_top11">
+                  <head>
+                     <label>
+                        <num n="11">11.</num>
+                        <seg>Errichtung einer „Steirische Fahrzeugwerke, gemeinschaftlichen Anstalt.“</seg>
+                     </label>
+                  </head>
+                  <p>Der Präsident der Sozialisierungskommission Dr. <hi rend="#letterspaced">Ellenbogen</hi> stellt nach eingehender Begründung den Antrag, der Kabinettsrat wolle die Errichtung einer „Steirische Fahrzeugwerke, gemeinschaftliche Anstalt“ beschließen. Was die gleichzeitig vorgelegten Satzungen dieser Anstalt anbelange, so sei das Einverständnis mit dem Staatsamte für Finanzen in Bezug auf die Grundlagen hergestellt. Dem Wunsche des Staatsrates für Finanzen, die Bestimmung des Zeitpunktes der Aufnahme von Darlehen ebenso wie den Zeitpunkt der Ausgabe von Teilschuldverschreibungen dem Beschlusse der Anstalts<pb facs="krp-0152_r-0014"/>versammlung vorzubehalten (§ 4 vorletzter Abs.) wird Rechnung getragen werden. Das Staatsamt für Finanzen wünsche jedoch ferner, dass die Bestimmung der Bank, durch welche die Begebung der Teilschuldverschreibungen zu vollziehen sei, an die Zustimmung des Staatsamtes für Finanzen gebunden sein solle. Dies würde nach Anschauung des sprechenden Staatssekretärs einer bestimmten Bank ein Zwangsmonopol unter dem Schutze des Staatsamtes für Finanzen in die Hand geben, zumindest würde eine Gefahr in dieser Richtung bestehen. Redner bemerkt, dass im Sozialisierungsausschusse ein solches Zwangsmonopol für eine bestimmte Bank abgelehnt worden sei. Auch würde eine derartige Bestimmung die Anstalt bei Verhandlungen mit der betreffenden Bank zu sehr in deren Hände geben. Gleichwohl stimme er im vorliegenden Falle dem Antrage des Staatsamtes für Finanzen zu, jedoch mit dem Vorbehalte, dass diese Zustimmung nur im Hinblicke auf die besonderen Umstände der in Rede stehenden Anstaltsgründung erfolgt und keine prinzipielle Zustimmung zu diesem Begehren der Finanzverwaltung bedeutet. Ebenso sei er bereit, einige vom Staatsamt für Finanzen gewünschte stilistische Abänderungen der Satzungen durchzuführen.</p>
+                  <p>Der Kabinettsrat beschließt die Errichtung der Anstalt und genehmigt die <pb facs="krp-0152_r-0015"/>entsprechend zu ergänzenden Satzungen.</p>
+               </div>
+               <div type="top" xml:id="krp-0152_top12">
+                  <head>
+                     <label>
+                        <num n="12">12.</num>
+                        <seg>Vermietung der Gardekaserne in Wien an den Zentralverband der deutschösterreichischen Kriegsbeschädigten.</seg>
+                     </label>
+                  </head>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> teilt mit, dass der Oberste Verwalter des Hofärars den Antrag gestellt habe, die Staatsregierung wolle ihm aufgrund des § 15 des Gesetzes über den Kriegsgeschädigtenfonds die grundsätzliche Ermächtigung zum Abschlusse eines Mietvertrages mit der „Inva“ Buch-, Kunst-, Steindruckerei und Lithographie des Zentralverbandes der deutschösterreichischen Kriegsbeschädigten, Gesellschaft mbH, betreffend die Überlassung der Gardekaserne in Wien, VII. [Wiener Gemeindebezirk] Lerchenfelderstraße 1, mit folgenden wesentlichen Bestimmungen erteilen: Der Bestandvertrag soll auf zehn Jahre, d. i. vom 1. Jänner 1920 bis 31. Dezember 1929 abgeschlossen werden. Der Mietzins wird zunächst für zwei Jahre, d. i. bis 31. Dezember 1921 mit 5.000 K jährlich vereinbart. Für die folgenden acht Jahre ist der Mietzins unter Berücksichtigung der Adaptierungskosten noch festzusetzen.</p>
+                  <p>Der Kabinettsrat erteilt die erbetene Ermächtigung mit dem Vorbehalte, dass der Mietvertrag vor Perfektionierung noch der Finanzprokuratur zur Begutachtung zu übermitteln sein wird.</p>
+                  <p/>
+               </div>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>
