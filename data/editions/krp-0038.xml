@@ -1,0 +1,973 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href='http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:acdh="https://vocabs.acdh.oeaw.ac.at/schema#"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xml:lang="de">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der
+               Republik Österreich</title>
+            <title level="a" type="main" n="0038">Kabinettsprotokoll Nr. 38 vom 11. Februar
+               1919</title>
+            <title level="m" type="main" n="01">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat
+               31. Oktober 1918 bis 7. Juli 1920</title>
+            <title level="m" type="sub" n="">Renner I (31. Oktober 1918 – 15. März 1919)</title>
+            <meeting>
+               <placeName key="https://d-nb.info/gnd/4066009-6">Wien</placeName>
+               <orgName key="https://d-nb.info/gnd/5162749-8">Kabinettsrat</orgName>
+               <date when-iso="1919-02-11"/>
+            </meeting>
+            <editor>
+               <persName key="https://d-nb.info/gnd/122481836" role="hasCreator" xml:id="hwohnout">
+                  <forename>Helmut</forename>
+                  <surname>Wohnout</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/37748-X">Österreichisches
+                  Staatsarchiv</affiliation>
+               <idno type="ORCID">0000-0002-3864-9839</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/120789825" role="hasCreator"
+                  xml:id="tolechowski">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für
+                  Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0003-3291-6876</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/131679384" role="hasCreator" xml:id="rlein">
+                  <forename>Richard</forename>
+                  <surname>Lein</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für
+                  Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0002-7502-0503</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="aholzer">
+                  <forename>Anna</forename>
+                  <surname>Holzer</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für
+                  Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0005-3560-3500</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="dsoelkner">
+                  <forename>Dominik</forename>
+                  <surname>Sölkner</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für
+                  Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-9895-7212</idno>
+            </editor>
+            <editor>
+               <persName role="hasContributor" xml:id="ischotzko">
+                  <forename>Ina</forename>
+                  <surname>Schotzko</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für
+                  Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-5210-3713</idno>
+            </editor>
+            <funder n="1">
+               <orgName key="https://d-nb.info/gnd/2054142-9" role="hasFunder">Österreichischer
+                  Wissenschaftsfonds FWF</orgName>
+               <idno type="project">PAT1495024</idno>
+               <title type="project">Die Protokolle des österreichischen Kabinettsrates
+                  1919–1920</title>
+            </funder>
+            <respStmt>
+               <resp>Projektverantwortung</resp>
+               <orgName key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für
+                  Rechts- und Verfassungsgeschichte</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Projektleitung</resp>
+               <persName key="https://d-nb.info/gnd/120789825" role="hasPrincipalInvestigator">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+                  <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für
+                     Rechts- und Verfassungsgeschichte</affiliation>
+                  <idno type="ORCID">0000-0003-3291-6876</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Nationaler Forschungspartner</resp>
+               <orgName key="https://d-nb.info/gnd/1123037736" role="hasEnabler">Austrian Centre for
+                  Digital Humanities</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Digitalisierung der gedruckten Quellen</resp>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>TEI-Datenmodellierung</resp>
+               <persName role="hasContributor" xml:id="tfruehwirth">
+                  <forename>Timo</forename>
+                  <surname>Frühwirth</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital
+                     Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-3997-5193</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technische Supervision</resp>
+               <persName key="https://d-nb.info/gnd/1043833846" role="hasContributor"
+                  xml:id="pandorfer">
+                  <forename>Peter</forename>
+                  <surname>Andorfer</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital
+                     Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-9575-9372</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technisches Consulting und Vorbereitung der Druckausgabe</resp>
+               <persName key="https://d-nb.info/gnd/13281899X" role="hasContributor" xml:id="skurz">
+                  <forename>Stephan</forename>
+                  <surname>Kurz</surname>
+                  <affiliation key="https://d-nb.info/gnd/1202798799">Institut für die Erforschung
+                     der Habsburgermonarchie und des Balkanraumes</affiliation>
+                  <idno type="ORCID">0000-0003-2546-2570</idno>
+               </persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher key="https://d-nb.info/gnd/1001454-8">Österreichische Akademie der
+               Wissenschaften</publisher>
+            <date when="2028"/>
+            <availability status="free">
+               <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">Lizenziert
+                  unter CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/deed.de)</licence>
+            </availability>
+            <idno type="ISBN_Print"/>
+            <idno type="ISBN_Part_epub"/>
+            <idno type="ISBN_Digital"/>
+            <idno type="DOI"/>
+            <idno type="DOI_zenodo"/>
+            <idno type="ebook_ID"/>
+         </publicationStmt>
+         <seriesStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der
+               Republik Österreich</title>
+            <title level="m" type="main">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31.
+               Oktober 1918 bis 7. Juli 1920</title>
+            <respStmt>
+               <resp>Bearbeitung und Herausgeberschaft</resp>
+               <orgName key="https://d-nb.info/gnd/2024703-5">Universität Wien</orgName>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+         </seriesStmt>
+         <notesStmt>
+            <note>Diese TEI-XML-Datei ist Grundlage für eine Druckausgabe der Edition.</note>
+            <relatedItem>
+               <biblStruct>
+                  <monogr>
+                     <imprint>
+                        <pubPlace key="https://d-nb.info/gnd/4066009-6">Wien</pubPlace>
+                        <publisher key="https://d-nb.info/gnd/2068748-5">Verlag der Österreichischen
+                           Akademie der Wissenschaften</publisher>
+                        <date when="2029"/>
+                     </imprint>
+                     <extent/>
+                  </monogr>
+                  <note>
+                     <idno/>
+                     <ptr/>
+                  </note>
+                  <citedRange/>
+               </biblStruct>
+            </relatedItem>
+         </notesStmt>
+         <sourceDesc>
+            <bibl>Quellbestand: AT-OeStA/AdR MRang MR 1Rep KRP Kabinettsratsprotokolle, 1918-1920
+                  (Teilbestand)<ref
+                  target="https://www.archivinformationssystem.at/detail.aspx?id=5465"
+                  >https://www.archivinformationssystem.at/detail.aspx?id=5465</ref>
+            </bibl>
+            <msDesc>
+               <msIdentifier>
+                  <institution key="https://d-nb.info/gnd/37748-X" role="hasOwner">AT-OeStA
+                     Österreichisches Staatsarchiv (Archiv (ÖStA))</institution>
+                  <repository key="https://d-nb.info/gnd/1601181-8">AT-OeStA/AdR Archiv der
+                     Republik, 1918- (Abteilung)</repository>
+                  <collection>AT-OeStA/AdR MRang MR 1Rep Ministerrat 1. Republik, 1918 - 1938
+                     (Bestand)</collection>
+                  <idno>AT-OeStA_AdR-MRang-MR-1.-Rep.-KRP-038</idno>
+               </msIdentifier>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <abstract>
+            <p>
+               <!--to be generated-->
+            </p>
+         </abstract>
+      </profileDesc>
+      <encodingDesc>
+         <styleDefDecl scheme="css"/>
+         <tagsDecl>
+            <rendition xml:id="b" scheme="css">font-weight:bold;</rendition>
+            <rendition xml:id="su" scheme="css">vertical-align:super;font-size:.7em;</rendition>
+            <rendition xml:id="s" scheme="css">text-decoration:line-through;</rendition>
+            <rendition xml:id="u" scheme="css">text-decoration:underline;</rendition>
+            <rendition xml:id="ow" scheme="css"
+               >text-decoration:line-through;text-decoration-style:double;</rendition>
+            <rendition xml:id="r" scheme="css">display:block;text-align:right;</rendition>
+            <rendition xml:id="letterspaced" scheme="css">letter-spacing:0.15em;</rendition>
+            <rendition xml:id="i" scheme="css">font-style:italic;</rendition>
+         </tagsDecl>
+         <editorialDecl>
+            <hyphenation>
+               <p>
+                  <!--to be added-->
+               </p>
+            </hyphenation>
+            <correction>
+               <p>
+                  <!--to be added-->
+               </p>
+            </correction>
+            <normalization>
+               <p>
+                  <!--to be added-->
+               </p>
+            </normalization>
+            <punctuation>
+               <p>
+                  <!--to be added-->
+               </p>
+            </punctuation>
+            <stdVals>
+               <p>
+                  <!--to be added-->
+               </p>
+            </stdVals>
+            <p>
+               <!--to be added-->
+            </p>
+         </editorialDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#tfruehwirth" when-iso="2026-09-15">TEIGarage output upconverted with
+            upconvert.xsl</change>
+         <change who="#tfruehwirth" when-iso="2026-09-15">TEI header populated with
+            generate_tei_templates.py</change>
+         <change who="#ischotzko" when-iso="2026-09-18">mark-up entity person, place, organization</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface/>
+   </facsimile>
+   <text>
+      <body>
+         <div xml:id="doc-krp-0038.xml">
+            <head type="dokument">
+               <title type="num">38.<note type="footnote">Das Protokoll trägt den Vermerk <hi
+                        rend="#i">Vertraulich!</hi>
+                  </note>
+               </title>
+               <title type="desc">
+                  <pb facs="krp-0038_r-0001"/>[Dienstag] 1919-02-11</title>
+            </head>
+            <div type="dokumentkopf">
+               <div type="vorsitz">
+                  <head>Vorsitz:</head>
+                  <p><rs type="person" ref="#krp_person_id__26">Renner</rs>, teilweise <rs
+                        type="person" ref="#krp_person_id__28">Roller</rs></p>
+               </div>
+               <div type="anwesend">
+                  <head>Anwesend:</head>
+                  <p><rs type="person" ref="#krp_person_id__1">Bauer</rs>, <rs type="person"
+                        ref="#krp_person_id__2">Beck</rs>, <rs type="person"
+                        ref="#krp_person_id__10">Glöckel</rs>, <rs type="person"
+                        ref="#krp_person_id__11">Grimm</rs>, <rs type="person"
+                        ref="#krp_person_id__12">Hanusch</rs>, <rs type="person"
+                        ref="#krp_person_id__13">Jukel</rs>, <rs type="person"
+                        ref="#krp_person_id__14">Kaup</rs>, <rs type="person"
+                        ref="#krp_person_id__15">Loewenfeld-Russ</rs>, <rs type="person"
+                        ref="#krp_person_id__16">Marckhl</rs>, <rs type="person"
+                        ref="#krp_person_id__17">Mataja</rs>, <rs type="person"
+                        ref="#krp_person_id__18">Mayer</rs>, <rs type="person"
+                        ref="#krp_person_id__21">Pacher</rs>, <rs type="person"
+                        ref="#krp_person_id__731">Riedl</rs>, <rs type="person"
+                        ref="#krp_person_id__34">Urban</rs></p>
+               </div>
+               <div type="zugezogen">
+                  <head>Zugezogen:</head>
+                  <p><rs type="person" ref="#krp_person_id__85">Thaa</rs></p>
+               </div>
+               <div type="schriftfuehrer">
+                  <head>Schriftführer:</head>
+                  <p>unbekannt</p>
+               </div>
+               <div type="dauer">
+                  <head>Dauer:</head>
+                  <p>15.00–19.30 Uhr</p>
+               </div>
+            </div>
+            <div type="komponenten">
+               <p>Reinschrift, Beilagen, Entwurf der Tagesordnung</p>
+            </div>
+            <div type="beilagen">
+               <head>Beilagen:</head>
+               <list>
+                  <item>
+                     <ref target="#krp-0038_top03">Zu TOP 3</ref>: <ref target="#krp-0038_b01"
+                        >Richtlinien für die Ausgleichskommission im Staatsamt für Justiz, welche
+                        sich mit unbeglichenen Forderungen von Firmen an das liquidierende
+                        Kriegsministerium beschäftigen</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0038_top08">Zu TOP 8</ref>: <ref target="#krp-0038_b02"
+                        >Bericht des Staatsamtes für Finanzen wegen der Notwendigkeit, eine
+                        Saccharinfabrik nach der Besetzung der Fabrik in Oderberg durch tschechische
+                        Truppen durch Übernahme der chemischen Fabrik Kreidl, Heller &amp; Co. in
+                        Floridsdorf auf deutschösterreichischem Gebiet zu errichten</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0038_top08">Zu TOP 8</ref>: <ref target="#krp-0038_b03"
+                        >Ersuchen des Staatsamtes für Finanzen um Reservierung der Rohstoffe für ein
+                        halbes Jahr zur Erzeugung von Saccharin</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0038_top11">Zu TOP 11</ref>: <ref target="#krp-0038_b04"
+                        >Darstellung des Staatsamtes für Justiz um Vermehrung des Militärwachkorps
+                        für die Wiener Zivilgerichte</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0038_top12">Zu TOP 12</ref>: <ref target="#krp-0038_b05"
+                        >Antrag des Staatsamtes für Heerwesen auf Abänderung und Ergänzung der
+                        Superarbitrierungsvorschrift aufgrund der sozialen Notlage des größten Teils
+                        der Kriegsinvaliden</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0038_top14">Zu TOP 14</ref>: <ref target="#krp-0038_b06"
+                        >Antrag des Staatsamtes des Inneren, die Staatsämter anzuweisen, den im
+                        slowenischen Machtbereich gekündigten Staats- und Staatsbahnbediensteten so
+                        schnell wie möglich für ihre Angehörigen und ihr Hab und Gut ein
+                        Unterkunftsziel in Deutschösterreich anzuweisen</ref>
+                  </item>
+               </list>
+            </div>
+            <div type="protokoll">
+               <pb facs="krp-0038_r-0002"/>
+               <div type="top" xml:id="krp-0038_top01">
+                  <head>
+                     <label>
+                        <num n="1">1.</num>
+                        <seg>[Beschwerde des Staatsrates Teufel über die säumige Durchführung der
+                           Aufträge des Staatsrates seitens der Staatsämter].</seg>
+                     </label>
+                  </head>
+                  <p>Der <hi rend="#letterspaced"><rs type="person" ref="#krp_person_id__26"
+                           >Vorsitzende</rs></hi> teilt mit, dass der <rs type="org"
+                        ref="#krp_org_id__224">Staatsrat</rs> in seiner 70. Sitzung über die vom
+                     Staatsrate <rs type="person" ref="#krp_person_id__542">Teufel</rs> vorgebrachte
+                     Beschwerde wegen säumiger Durchführung von Aufträgen des <pb
+                        facs="krp-0038_r-0003"/>Staatsrates durch die Staatsämter den Beschluss
+                     gefasst habe, den Staatskanzler zu ersuchen, er möge den gerügten Übelstand in
+                     der Kabinettsratssitzung und in der Verbindungssitzung zur Sprache bringen und
+                     die Staatsämter einladen, Vorsorge für eine zeitgerechte Erledigung der ihnen
+                     vom Staatsrate überwiesenen Gegenstände zu treffen. Der Vorsitzende komme
+                     diesem Auftrage hiemit nach und ersuche mit allem Nachdrucke, diesem Beschlusse
+                     des Staatsrates zu entsprechen.</p>
+               </div>
+               <div type="top" xml:id="krp-0038_top02">
+                  <head>
+                     <label>
+                        <num n="2">2.</num>
+                        <seg>[Verhandlungen mit der deutschen Reichsregierung über den Anschluss
+                           Deutschösterreichs].</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced"><rs type="person"
+                           ref="#krp_person_id__1">Bauer</rs></hi> führt aus, dass er den Zeitpunkt
+                     für die Einleitung von Verhandlungen mit der <rs type="org"
+                        ref="#krp_org_id__243">deutschen Reichsregierung</rs> in der Anschlussfrage
+                     für gekommen erachte.</p>
+                  <p>Nach eingehender Darstellung seiner Auffassung legt der sprechende
+                     Staatssekretär dar, dass seiner Meinung nach mit dem <rs type="place"
+                        ref="#krp_place_id__6">Deutschen Reiche</rs> zunächst Verhandlungen auf rein
+                     politischer Grundlage zu führen und dann erst an die Behandlung der
+                     wirtschaftlichen Belange zu schreiten wäre. Die ersteren Verhandlungen hätten
+                     rein informativen Charakter zu tragen, rücksichtlich der letzteren müsste mit
+                        <pb facs="krp-0038_r-0004"/>der tunlichsten Beschleunigung an die
+                     Feststellung des grundsätzlichen Standpunktes geschritten werden. Er glaube,
+                     dass sich diese wirtschaftlichen Verhandlungen auf alle handelspolitischen, auf
+                     die staatsfinanziellen und verkehrspolitischen Fragen sowie auf die
+                     Angelegenheiten der auswärtigen Politik (Friedensverhandlungen, Beziehungen zu
+                     den Sukzessionsstaaten u. dgl.) erstrecken sollten. Hinsichtlich der
+                     handelspolitischen Vereinbarungen könnten allenfalls die Ergebnisse der
+                     Salzburger Verhandlungen zur Grundlage oder doch wenigstens zum Ausgangspunkt
+                     genommen werden. Redner halte dafür, dass sich die <rs type="org"
+                        ref="#krp_org_id__184">Regierung</rs> mit allen diesen Fragen möglichst
+                     schnell zu befassen hätte, um sodann an die Ausarbeitung jener Instruktionen zu
+                     schreiten, welche den Verhandlungsteilnehmern mitzugeben wären. Sehr
+                     empfehlenswert erscheine ihm auch die Zuziehung von Männern der Praxis und der
+                     Theorie – etwa in der Form eines Beirates – zu diesen Vorbesprechungen. In
+                     formeller Hinsicht dürfte es sich nach der Meinung des sprechenden
+                     Staatssekretärs empfehlen, die einschlägigen Verhandlungen ehestens, etwa um
+                     den 20. Februar herum aufzunehmen; er würde demgemäß – die Zustimmung des <rs
+                        type="org" ref="#krp_org_id__182">Kabinettsrates</rs> voraus<pb
+                        facs="krp-0038_r-0005"/>gesetzt – voraussichtlich am 19. Februar d. J. in
+                     Begleitung von höchstens drei Referenten (Äußeres, Finanzen und Handel) nach
+                        <rs type="place" ref="#krp_place_id__63">Berlin</rs> reisen.</p>
+                  <p>Unterstaatssekretär <hi rend="#letterspaced"><rs type="person"
+                           ref="#krp_person_id__731">Riedl</rs></hi> stimmt dem Standpunkte des
+                     Vorredners rückhaltslos zu. Er habe auch bereits im Sinne dieser Auffassung
+                     innerhalb seines Ressorts die erforderlichen Einleitungen getroffen. In
+                     formeller Hinsicht beabsichtige er, zunächst mit einzelnen maßgebenden
+                     Industriellen zu sprechen und sodann an die Abhaltung einer einschlägigen
+                     Enquête zu schreiten. Der sprechende Unterstaatssekretär ersucht nach
+                     eingehender Darstellung der bei den Salzburger Beratungen erörterten Frage der
+                     Zwischenzölle, gegen die er unter den gegenwärtigen, völlig geänderten
+                     Verhältnissen ernste Bedenken hege, ihm das Operat über die Salzburger
+                     Verhandlungen zur Verfügung zu stellen (Staatssekretär Dr. <hi
+                        rend="#letterspaced">Bauer</hi> sagt dies zu).</p>
+                  <p>Der <hi rend="#letterspaced"><rs type="person" ref="#krp_person_id__26"
+                           >Vorsitzende</rs></hi> erklärt, dass das <rs type="org"
+                        ref="#krp_org_id__244">Staatsdirektorium</rs> in der vorliegenden, überaus
+                     wichtigen Angelegenheit den <rs type="org" ref="#krp_org_id__224"
+                        >Staatsrat</rs> werde ersetzen müssen, da letzterer erst am 20. Februar
+                     zusammentrete. Innerhalb der nächsten Tage müssten alle diese Fragen einer
+                     Klärung zugeführt werden. Redner <pb facs="krp-0038_r-0006"/>nehme in Aussicht,
+                     zu diesem Behufe in den nächsten Tagen besondere Konferenzen mit dem <rs
+                        type="person" ref="#krp_person_id__1">Staatssekretär des Äußern</rs> und den
+                     Fachreferenten über die einschlägigen Fragen abzuhalten, wobei jedoch die
+                     Angelegenheiten der Ernährungspolitik – über besonderen Wunsch des
+                     Staatssekretärs Dr. <rs type="person" ref="#krp_person_id__15"
+                        >Loewenfeld-Russ</rs> – vorläufig aus taktischen Gründen nicht
+                     miteinzubeziehen wären. Rücksichtlich der durch die letzten Ankündigungen des
+                        <rs type="person" ref="#krp_person_id__488">tschechoslowakischen
+                        Finanzministers</rs> besonders aktuell gewordenen Währungsfrage glaube er
+                     aber, bereits jetzt die Debatte eröffnen zu sollen.</p>
+                  <p>Über Ersuchen des Vorsitzenden führt sodann Ministerialrat Dr. von <hi
+                        rend="#letterspaced"><rs type="person" ref="#krp_person_id__85"
+                        >Thaa</rs></hi> aus, dass eine Abstempelung unseres Notenbestandes
+                     jedenfalls verfügt werden könnte, allerdings wisse er nicht, inwieweit von
+                     Seiten des <rs type="org" ref="#krp_org_id__192">Staatsamtes des Innern</rs>
+                     bezüglich der Anschaffung der erforderlichen Stampiglien Vorsorge getroffen
+                     worden sei.</p>
+                  <p>Aufgrund seiner Fühlungnahme mit Funktionären der <rs type="org"
+                        ref="#krp_org_id__54">Oesterreichisch-ungarischen Bank</rs> dürfte hiebei
+                     die Anbringung einer Art Sicherheitsstempels auf den Noten selbst unter
+                     Beifügung einer Nummern- und Serienbezeichnung dem beabsichtigten Zwecke am
+                     besten ent<pb facs="krp-0038_r-0007"/>sprechen. Redner stelle sich den dermalen
+                     möglichen Vorgang so vor, dass zunächst an eine provisorische Abstempelung mit
+                     gewöhnlichen Amtsstampiglien zu schreiten wäre, wobei gleichzeitig der
+                     Öffentlichkeit bekanntgegeben werden sollte, dass die abgestempelten Noten
+                     binnen einer gewissen Frist gegen deutschösterreichische Noten – das wären die
+                     inzwischen hergestellten mit dem Sicherheitsstempel versehenen Banknoten –
+                     ausgewechselt werden können. Die Durchführung der Umwandlung scheine ihm nur in
+                     diesen zwei Etappen möglich; im Zusammenhange damit hätte eine entsprechende
+                     Grenzabsperrung sowie ein Verbot des Überweisungsverkehres zu erfolgen.
+                     Außerdem sollte seiner Auffassung nach das Ausland unbedingt darüber beruhigt
+                     werden, dass wir nicht die Absicht haben, das im Ausland vorhandene
+                     Notenmaterial zu devalvieren, sondern dass wir bereit seien, den auf uns
+                     entfallenden Teil zu übernehmen. Dadurch würde auch dem Anreiz, Noten nach <rs
+                        type="place" ref="#krp_place_id__2">Deutschösterreich</rs> hereinzubringen,
+                     begegnet werden.</p>
+                  <p>Unterstaatsssekretär <hi rend="#letterspaced">Riedl</hi> teilt mit, dass, nach
+                     seinen bei der Papierindustrie gepflogenen Erhebungen, Notenpapier, soweit es
+                     sich um das gewöhnliche weiße Notenpapier handle, in beliebiger Menge
+                        herstell<pb facs="krp-0038_r-0008"/>bar sei; Sicherheitspapier könne in
+                     Deutschösterreich nur in einer einzigen Sorte, dem sogenannten Faserpapier,
+                     erzeugt werden.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Bauer</hi> stellt sodann aufgrund
+                     der abgeführten Debatte den Antrag, der Kabinettsrat möge das <rs type="org"
+                        ref="#krp_org_id__187">Staatsamt für Finanzen</rs> ersuchen, über folgende
+                     Fragen bis Donnerstag nachmittags zu berichten:</p>
+                  <list>
+                     <item n="1">
+                        <label>1.)</label> über die technische Durchführbarkeit der Abstempelung
+                        (Zeitpunkt des Beginns und der Beendigung sowie erforderliche
+                        Mittel);</item>
+                     <item n="2">
+                        <label>2.)</label> wie sich durch die erfolgte Abstempelung das Verhältnis
+                        zur Oesterreichisch-ungarischen Bank gestalten werde (Frage der Schaffung
+                        einer Ersatzbank);Ver</item>
+                     <item n="3">
+                        <label>3.)</label> welches Verhältnis in der Währungsfrage mit dem Deutschen
+                        Reiche anzustreben wäre (Frage des Umrechnungskurses, Verhältnis der
+                        Darlehenskasse zur <rs type="org" ref="#krp_org_id__245">deutschen
+                           Reichsbanky</rs>)</item>
+                     <item n="4">
+                        <label>4.)</label> über die technische Durchführbarkeit der
+                        Grenzabsperrung;</item>
+                     <item n="5">
+                        <label>5.)</label> über die Frage der Zuziehung von Interessenten (Praktiker
+                        und Theoretiker) zu den Vorbereitungsmaßnahmen.</item>
+                  </list>
+                  <p>Der Kabinettsrat erhebt diese Anträge zum Beschluss und ermächtigt weiters den
+                     Staatssekretär des Äußern zur Aufnahme der politischen Verhandlung in Berlin um
+                     den 20. Februar d. J.</p>
+                  <p>
+                     <pb facs="krp-0038_r-0009"/>
+                  </p>
+               </div>
+               <div type="top" xml:id="krp-0038_top03">
+                  <head>
+                     <label>
+                        <num n="3">3.</num>
+                        <seg>[Wünsche der Industrie bezüglich der Liquidierung der vom
+                           Kriegsministerium geschuldeten Geldbeträge].</seg>
+                     </label>
+                  </head>
+                  <p>Der <hi rend="#letterspaced"><rs type="person" ref="#krp_person_id__26"
+                           >Vorsitzende</rs></hi> teilt mit, dass im <rs type="org"
+                        ref="#krp_org_id__193">Staatsamte für Justiz</rs> eine Ausgleichskommission
+                     tage, welche die Aufgabe habe, mit Firmen, deren Forderungen an das <rs
+                        type="org" ref="#krp_org_id__246">liquidierende Kriegsministerium</rs> noch
+                     nicht beglichen sind, Vergleiche abzuschließen und diese dem Kriegsministerium
+                     zu übermitteln. Die Arbeit dieser Ausgleichskommission stoße vornehmlich
+                     deshalb auf Schwierigkeiten, weil die Vertreter der einzelnen Nationalstaaten,
+                     welche zu den Vergleichen ihre Zustimmung geben sollten, an diesen Sitzungen
+                     nicht teilnehmen, sodass der <rs type="place" ref="#krp_place_id__2"
+                        >deutschösterreichische Staat</rs> mit den gegenständlichen Entscheidungen
+                     ein großes Risiko auf sich nehme. Bei der Behandlung dieser Frage handle es
+                     sich hauptsächlich darum, bestimmte Richtlinien dafür festzusetzen, in welcher
+                     Höhe, Reihenfolge und in welchem Zeitpunkte die Firmen zu befriedigen und wie
+                     der Begriff „Deutschösterreichische Industrie“ festzulegen sei.</p>
+                  <p>Unterstaatssekretär <hi rend="#letterspaced"><rs type="person"
+                           ref="#krp_person_id__731">Riedl</rs></hi> beleuchtet die einschlägigen
+                     Verhältnisse in ausführlicher Darstellung und schlägt folgende Richtlinien für
+                     die Behandlung dieser Ausgleichsfragen vor: Es sei </p>
+                  <list>
+                     <item n="1">
+                        <label>1.)</label> einer Firma die Rücknahme der <pb facs="krp-0038_r-0010"
+                        />von ihr gelieferten Waren gegen Löschung ihrer Forderung zu bewilligen;
+                        ebenso</item>
+                     <item n="2">
+                        <label>2.)</label> Einer Firma die Aufrechnung bei ihr befindlicher, ihr vom
+                        Kriegsministerium zugewiesener und noch nicht bezahlter Waren gegen ihre
+                        Forderung an das Kriegsministerium aus früheren Lieferungen zu
+                        bewilligen;</item>
+                     <item n="3">
+                        <label>3.)</label> einer Firma, die eine Lieferung für das Kriegsministerium
+                        übernommen und das Material dafür vom Kriegsministerium beigestellt erhalten
+                        hat, die Auflösung des Lieferungsvertrages unter der Bedingung zu gestatten,
+                        dass sie die übernommenen Materialien entweder zurückstelle oder der
+                        Hauptanstalt für Sachdemobilisierung bezahle.</item>
+                  </list>
+                  <p>Unzulässig sei aber die kompensationsweise Überlassung von Waren, die der
+                     Sachdemobilisierung unterliegen, soferne es sich nicht um Waren handelt, die
+                     von der betreffenden Firma geliefert worden sind.</p>
+                  <p>Nachdem Staatssekretär Dr. <hi rend="#letterspaced"><rs type="person"
+                           ref="#krp_person_id__34">Urban</rs></hi> die Auffassung vertreten hat,
+                     dass wir nur allgemeine Direktiven aufstellen können, im Einzelnen aber die
+                     Entscheidung von den konkreten Verhältnissen abhängig gemacht werden müsse,
+                     führt Unterstaatssekretär Dr. von <hi rend="#letterspaced"><rs type="person"
+                           ref="#krp_person_id__11">Grimm</rs></hi> aus, dass an den
+                     deutschösterreichischen Staat die Frage herantrete, ob <hi rend="#u">er</hi>
+                     etwas Be<pb facs="krp-0038_r-0011"/>sonderes für die Lieferanten tun wolle oder
+                     nicht. Der deutschösterreichische Staat werde sich bereit erklären müssen, den
+                     Lieferanten die auf Deutschösterreich voraussichtlich entfallende Quote vorweg
+                     zu zahlen, darüber jedoch keinesfalls hinauszugehen. Da diese Quote ungefähr
+                     20 % betragen werde, könnte der deutschösterreichische Staat die Beträge bis zu
+                     dieser Höhe, jedoch erst nach Beschaffung der erforderlichen Mittel, ohne
+                     Gefahr zur Auszahlung bringen. </p>
+                  <p>Der <rs type="org" ref="#krp_org_id__182">Kabinettsrat</rs> stimmt diesen
+                     Ausführungen der Unterstaatssekretäre Riedl und Dr. von Grimm zu.</p>
+               </div>
+               <div type="top" xml:id="krp-0038_top04">
+                  <head>
+                     <label>
+                        <num n="4">4.</num>
+                        <seg>[Mitteilungen des Staatssekretärs Dr. Loewenfeld-Russ zur Frage der
+                           Bedeckung der Lasten der Lebensmittelbeschaffung sowie der
+                           Preiserstellung der Lebensmittel].</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced"><rs type="person"
+                           ref="#krp_person_id__15">Loewenfeld-Russ</rs></hi> kommt auf die von ihm
+                     im Verein mit dem <rs type="org" ref="#krp_org_id__187">Staatsamte für
+                        Finanzen</rs> vertretene Frage der Bedeckung der Lasten der
+                     Lebensmittelbeschaffung sowie der Preiserstellung der Lebensmittel zu sprechen
+                     und erklärt, dass er mit einer wahren Flut von Zuschriften überschwemmt worden
+                     sei, in denen ihm die Vertretung dieser fiskalischen Maßnahmen zum Vorwurf
+                     gemacht wurde. Da er seine Aufgabe darin erblicken müsse, die Interessen des
+                     Konsums zu vertreten, und er daher das <pb facs="krp-0038_r-0012"/><rs
+                        type="org" ref="#krp_org_id__202">Ernährungsamt</rs> vor derartigen
+                     Angriffen zu schützen habe, erkläre er sich künftighin außer Stande, über den
+                     Rahmen der Lebensmittelbeschaffung hinaus auch noch die dabei mitspielenden
+                     Fragen der finanziellen Bedeckung zu vertreten.</p>
+                  <p>Unterstaatssekretär Dr. von <hi rend="#letterspaced"><rs type="person"
+                           ref="#krp_person_id__11">Grimm</rs></hi> erklärt, dass der Gesetzentwurf
+                     über die Brotauflage, der offenbar zu diesem Standpunkte des Staatssekretärs
+                     für Volksernährung Anlass gegeben habe, nach weitwendigen Verhandlungen im <rs
+                        type="org" ref="#krp_org_id__182">Kabinetts-</rs> und <rs type="org"
+                        ref="#krp_org_id__224">Staatsrate</rs> von letzterem genehmigt und endlich
+                     zur Vorlage an die <rs type="org" ref="#krp_org_id__143"
+                        >Nationalversammlung</rs> reif geworden sei. Bei der Obmännerkonferenz habe
+                     der sprechende Unterstaatssekretär mit allem Nachdrucke auf die absolute
+                     Notwendigkeit der Verabschiedung dieser Gesetzesvorlage hingewiesen und er
+                     bedauere es, dass der <rs type="person" ref="#krp_person_id__26"
+                        >Staatskanzler</rs> sowie Präsident <rs type="person"
+                        ref="#krp_person_id__272">Hauser</rs> sich gegen die Einbringung der Vorlage
+                     in der letzten Tagung der Nationalversammlung ausgesprochen hätten. Es sei ihm
+                     zwar die bindende Zusage gemacht worden, dass die Vorlage der Konstituierenden
+                     Nationalversammlung ohne Verzug werde unterbreitet werden; durch die
+                     eingetretene Verzögerung sei jedoch dem Staate ein nicht wieder gutzumachender
+                        finan<pb facs="krp-0038_r-0013"/>zieller Schaden erwachsen, da das
+                     aufgelaufene Defizit bis zum heutigen Tage bereits 28 Millionen K betrage und
+                     sich täglich um 1 ¾ Millionen K erhöhe. Redner müsse mit aller Entschiedenheit
+                     dagegen Stellung nehmen, dass dem Staatsamte für Finanzen die Verantwortung
+                     dafür angelastet werde, wenn durch die verzögerte Verabschiedung dieser Vorlage
+                     dem Staate eine so namhafte Schädigung erwachse, die selbst durch eine spätere
+                     Votierung der Vorlage in der Konstituierenden Nationalversammlung naturgemäß
+                     nicht mehr werde hereingebracht werden können.</p>
+                  <p>Die Vertretung der finanziellen Erfordernisse des Staates obliege pflichtgemäß
+                     nicht allein dem Staatsamte für Finanzen, sondern der gesamten Regierung und
+                     warne Redner davor, in derartigen Fragen eine Überstimmungspraxis einreißen zu
+                     lassen.</p>
+                  <p>Der Kabinettsrat nimmt diese Mitteilungen zur Kenntnis.</p>
+               </div>
+               <div type="top" xml:id="krp-0038_top05">
+                  <head>
+                     <label>
+                        <num n="5">5.</num>
+                        <seg>[Mitteilungen des Staatssekretärs Dr. Loewenfeld-Russ über die Mehl-
+                           und Fleischsituation].</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced"><rs type="person"
+                           ref="#krp_person_id__15">Loewenfeld-Russ</rs></hi> teilt mit, dass die
+                     nach <rs type="place" ref="#krp_place_id__82">Bern</rs> gesandte Kommission die
+                     Einreisebewilligung nach <rs type="place" ref="#krp_place_id__4"
+                        >Frankreich</rs> bisher noch nicht erhalten habe. Was die Mehlsituation
+                     anbelange, so seien <pb facs="krp-0038_r-0014"/>wir ausschließlich auf die
+                     ausländischen Importe angewiesen, die jedoch immer nur für eine überaus knappe
+                     Zeit ausreichen. Versuche, Vorräte aus der <rs type="place"
+                        ref="#krp_place_id__8">Schweiz</rs> zur Schaffung einer Reserve zu erlangen,
+                     seien ergebnislos geblieben. Auch die Fleischsituation verschlechtere sich
+                     infolge der unzulänglichen Viehaufbringung von Tag zu Tag. Wenn keine Besserung
+                     eintrete und es auch nicht gelingen sollte, von der Entente Fleisch zu
+                     bekommen, so werde ab 19. Februar in Wien eine fleischlose <rs type="place"
+                        ref="#krp_place_id__15">Wien</rs> eingeschoben werden müssen.</p>
+                  <p>Der <rs type="org" ref="#krp_org_id__182">Kabinettsrat</rs> nimmt diese
+                     Mitteilungen zur Kenntnis.</p>
+               </div>
+               <div type="top" xml:id="krp-0038_top06">
+                  <head>
+                     <label>
+                        <num n="6">6.</num>
+                        <seg>[Umwandlung der Brauerzentrale in eine deutschösterreichische
+                           Brauerstelle].</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <rs type="person" ref="#krp_person_id__15"
+                        >Loewenfeld-Russ</rs> erbittet und erhält die Zustimmung des <rs type="org"
+                        ref="#krp_org_id__182">Kabinettsrates</rs> zur Hinausgabe einer
+                     Vollzugsanweisung, der zufolge die mit der gleichmäßigen Verteilung der
+                     Rohstoffe auf die einzelnen Brauereien befasste Brauerzentrale in eine den
+                     gegenwärtigen staatsrechtlichen Verhältnissen angepasste deutschösterreichische
+                     Brauerstelle, in welcher alle Interessenten vertreten wären, umgewandelt werden
+                     soll.</p>
+                  <p>
+                     <pb facs="krp-0038_r-0015"/>
+                  </p>
+               </div>
+               <div type="top" xml:id="krp-0038_top07">
+                  <head>
+                     <label>
+                        <num n="7">7.</num>
+                        <seg>[Vollzugsanweisung des Staatsamtes für Volksernährung, betreffend die
+                           Organisation eines wirtschaftlichen Inspektionsdienstes].</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <rs type="person" ref="#krp_person_id__15"
+                        >Loewenfeld-Russ</rs> weist darauf hin, dass er die Absicht gehabt habe, die
+                     Einrichtung der Ernährungsinspektoren, welche sich während des Krieges bestens
+                     bewährt habe, den gegenwärtigen Verhältnissen anzupassen und diesfalls eine
+                     Vollzugsanweisung zu erlassen. Diese Einrichtung hätte eine Art
+                     wirtschaftlichen Hilfsdienstes für das <rs type="org" ref="#krp_org_id__202"
+                        >Ernährungsamt</rs> und die Landesregierungen werden sollen. Bei der letzten
+                     Länderkonferenz hätten sich nun die Vertreter aller Landesregierungen gegen
+                     diese seine Absicht ausgesprochen, weil sie darin eine Einschränkung ihrer
+                     Autonomie erblicken. Da der sprechende Staatssekretär dieser Organisation nicht
+                     entraten könne, beabsichtige er den Entwurf der bezüglichen Vollzugsanweisung
+                     an die Landesregierungen zur neuerlichen Stellungnahme hinauszugeben.
+                     Grundsätzlich solle an der Idee festgehalten werden, die Landesregierungen
+                     sollen lediglich um die Erstattung von Vorschlägen meritorischen Inhaltes
+                     ersucht werden.</p>
+                  <p>Der Kabinettsrat nimmt diese Mitteilungen zustimmend zur Kenntnis. </p>
+                  <p>
+                     <pb facs="krp-0038_r-0016"/>
+                  </p>
+               </div>
+               <div type="top" xml:id="krp-0038_top08">
+                  <head>
+                     <label>
+                        <num n="8">8.</num>
+                        <seg>[Errichtung einer deutschösterreichischen Saccharinfabrik].</seg>
+                     </label>
+                  </head>
+                  <p>Unterstaatssekretär Dr. Ritter von <hi rend="#letterspaced"><rs type="person"
+                           ref="#krp_person_id__2">Beck</rs></hi> berichtet über die Frage der
+                     Errichtung einer deutschösterreichischen Staatsfabrik für
+                     Saccharinerzeugung.</p>
+                  <p>Infolge der Besetzung <rs type="place" ref="#krp_place_id__304">Oderbergs</rs>
+                     durch die <rs type="place" ref="#krp_place_id__79">Polen</rs> bzw. in jüngster
+                     Zeit durch die <rs type="place" ref="#krp_place_id__1">Tschechen</rs> sei der
+                     deutschösterreichischen Süßstoffmonopolverwaltung jede Ingerenz auf die
+                     Saccharinfabrik in Oderberg genommen und seien die ganz unzulänglichen und
+                     unregelmäßigen Anlieferungen aus dieser Fabrik von dem guten Willen der anderen
+                     Nationalstaaten, gegenwärtig der Tschechen, abhängig.</p>
+                  <p>Es sei daher bei der heutigen Zuckerknappheit trotz des wesentlich kleineren
+                     Konsumgebietes unbedingt geboten, an die Errichtung einer neuen Saccharinfabrik
+                     auf deutschösterreichischen Boden zu schreiten.</p>
+                  <p>Bei der Stellungnahme zu den zahlreichen vorliegenden Projekten habe sich das
+                        <rs type="org" ref="#krp_org_id__187">Staatsamt für Finanzen</rs> für den
+                     gemischtstaatlichen Betrieb, d. h. für die Errichtung einer staatlichen Fabrik
+                     unter vorläufiger Betriebsführung durch eine fachkundige Privatfirma
+                     entschieden, da auf diese Weise die Risken der Einführung des ziemlich
+                     schwierigen Betriebes nicht die Staatsverwaltung belasten. </p>
+                  <p>
+                     <pb facs="krp-0038_r-0017"/>Über Antrag des sprechenden Unterstaatssekretärs
+                     ermächtigt der <rs type="org" ref="#krp_org_id__182">Kabinettsrat</rs> das
+                     Staatsamt für Finanzen, das Anbot der <rs type="org" ref="#krp_org_id__105"
+                        >Firma Kreidl, Heller &amp; Co.</rs> in <rs type="place"
+                        ref="#krp_place_id__307">Floridsdorf</rs>, ihre dortselbst gelegene
+                     chemische Fabrik um den Preis von 1.450.000 K zu überlassen, anzunehmen.
+                     Gleichzeitig wird über Anregung des Staatssekretärs Dr. <hi
+                        rend="#letterspaced"><rs type="person" ref="#krp_person_id__14"
+                        >Kaup</rs></hi> das Staatsamt für Finanzen eingeladen – ohne dass dadurch
+                     die Ermächtigung zum gegenständlichen Vertragsabschluss berührt wird – ein
+                     Gutachten des Professors an der <rs type="org" ref="#krp_org_id__40"
+                        >Technischen Hochschule</rs> in <rs type="place" ref="#krp_place_id__15"
+                        >Wien</rs> Dr. Max <rs type="person" ref="#krp_person_id__474"
+                        >Bamberger</rs> über die Vertrauenswürdigkeit und fachliche
+                     Leistungsfähigkeit der erwähnten Firma einzuholen.</p>
+               </div>
+               <div type="top" xml:id="krp-0038_top09">
+                  <head>
+                     <label>
+                        <num n="9">9.</num>
+                        <seg>[Übertragung aller Angelegenheiten des Kraftwagenwesens in die
+                           Kompetenz der deutschösterreichischen Generalpostdirektion].</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced"><rs type="person"
+                           ref="#krp_person_id__34">Urban</rs></hi> führt aus, dass für die
+                     Angelegenheiten des Kraftwagen- und Flugwesens bis nun keine einheitliche
+                     zivile Verwaltungsstelle bestehe. Dieser Mangel führe jetzt, wo im Zuge der
+                     Sachdemobilisierung der weitaus größte Teil des Kraftwagen- und Flugzeugparkes
+                     Zivilzwecken dienstbar gemacht werden soll, zu schweren und unersetzlichen
+                     Schaden für die Staatswirtschaft.</p>
+                  <p>In Erkenntnis der Notwendigkeit einer einheitlichen Zusammenfassung der
+                        staatli<pb facs="krp-0038_r-0018"/>chen Interessen an den erwähnten
+                     Verkehrsgebieten sei bereits im Oktober v. J. die Schaffung eines eigenen, der
+                        <rs type="org" ref="#krp_org_id__247">Postverwaltung</rs> anzugliedernden
+                        „<rs type="org" ref="#krp_org_id__248">Amtes für Kraftwagen- und
+                        Luftverkehr</rs>“ angeregt worden.</p>
+                  <p>Staat und Private seien in gleicher Weise an der <hi rend="#u">ehesten</hi>
+                     Festsetzung einer einheitlichen Verwaltungsstelle interessiert, die den auf dem
+                     Gebiete des Kraftfahr- und Flugwesens von Tag zu Tag neu auftretenden Fragen
+                     voll gerecht wird.</p>
+                  <p>Der sprechende Staatssekretär halte nach seiner in dieser Beziehung gemachten
+                     Erfahrung die Schaffung eines eigenen Amtes für Kraftwagen- und Luftverkehr
+                     daher für zweckmäßig. Das <rs type="org" ref="#krp_org_id__187">Staatsamt für
+                        Finanzen</rs> hätte aber gegen die Errichtung eines eigenen Amtes Bedenken
+                     erhoben. Zudem habe das <rs type="org" ref="#krp_org_id__189">Staatsamt für
+                        Verkehrswesen</rs> die Angelegenheiten des Flugwesens für sich in Anspruch
+                     genommen. Diesem Anspruche gegenüber hätten allerdings die für die
+                     Zuständigkeit des <rs type="org" ref="#krp_org_id__191">Staatsamtes für
+                        Gewerbe, Industrie und Handel</rs> in diesen Angelegenheiten geltend
+                     gemachten Gründe in den Hintergrund treten müssen.</p>
+                  <p>Die Zusammenfassung aller das <hi rend="#u">Kraftfahrwesen</hi> betreffenden
+                     Angelegenheiten bei <hi rend="#u">einer</hi> Zentralstelle aber könne nun
+                     zunächst durch die Festsetzung der Zuständigkeit des Staatsamtes für Gewerbe,
+                     Industrie <pb facs="krp-0038_r-0019"/>und Handel (Generalpostdirektion)
+                     erreicht werden, zumal kein anderer Zweig der staatlichen Verwaltung den
+                     Apparat des Kraftwagenbetriebes in dem Umfange und zugleich mit so geringen
+                     Kosten beistellen könnte, wie die Postanstalt, bei der dieser Apparat zum
+                     größten Teil bereits vorhanden und erprobt ist.</p>
+                  <p>Der <rs type="org" ref="#krp_org_id__182">Kabinettsrat</rs> schließt sich
+                     diesen Ausführungen vollinhaltlich an und genehmigt den vorliegenden
+                     Antrag.</p>
+               </div>
+               <div type="top" xml:id="krp-0038_top10">
+                  <head>
+                     <label>
+                        <num n="10">10.</num>
+                        <seg>[Übernahme des außerordentlichen Professors an der Exportakademie
+                           Achilles Decker in den deutschösterreichischen Staatsdienst].</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <rs type="person" ref="#krp_person_id__34">Urban</rs>
+                     erbittet nach einer eingehenden Darstellung der Sach- und Rechtslage die
+                     Ermächtigung, den a. o. Professor der französischen Sprache an der
+                     Exportakademie, Achilles <rs type="person" ref="#krp_person_id__475"
+                        >Decker</rs>, der im Jahre 1906 zwar die österreichische Staatsbürgerschaft
+                     erlangt hat, seiner Nationalität nach jedoch Franzose ist, in den
+                     deutschösterreichischen Staatsdienst übernehmen zu dürfen. Die Kompetenz des
+                        <rs type="org" ref="#krp_org_id__182">Kabinettsrates</rs> sei damit gegeben,
+                     dass es sich vorliegendenfalls nicht um eine Verwendung auf einem
+                     selbstständigen und verantwortungsvollen Posten (vgl. Kabinettsprotokoll
+                     Nr. 19, Pkt. 5) handle.</p>
+                  <p>Der Kabinettsrat erteilt die erbetene Ermächtigung.</p>
+                  <p>
+                     <pb facs="krp-0038_r-0020"/>
+                  </p>
+               </div>
+               <div type="top" xml:id="krp-0038_top11">
+                  <head>
+                     <label>
+                        <num n="11">11.</num>
+                        <seg>[Vermehrung des Militärwachkorps für die Zivilgerichte in Wien].</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced"><rs type="person"
+                           ref="#krp_person_id__28">Roller</rs></hi> erbittet und erhält die
+                     Zustimmung des <rs type="org" ref="#krp_org_id__182">Kabinettsrates</rs> zur
+                     Vermehrung des <rs type="org" ref="#krp_org_id__249">Militärwachkorps</rs> für
+                     die Zivilgerichte in <rs type="place" ref="#krp_place_id__15">Wien</rs> um
+                     30 Mann mit einem Kostenaufwand von ungefähr 12.000 K für den Monat.</p>
+               </div>
+               <div type="top" xml:id="krp-0038_top12">
+                  <head>
+                     <label>
+                        <num n="12">12.</num>
+                        <seg>[Vollzugsanweisung, betreffend Abänderungen und Ergänzungen der
+                           Superarbitrierungsvorschrift].</seg>
+                     </label>
+                  </head>
+                  <p>Über Ersuchen und in Vertretung des Unterstaatssekretärs Dr. <rs type="person"
+                        ref="#krp_person_id__4">Deutsch</rs> teilt Staatssekretär Dr. <hi
+                        rend="#letterspaced"><rs type="person" ref="#krp_person_id__14"
+                        >Kaup</rs></hi> mit, dass die dermalen in Kraft stehende
+                     Superarbitrierungsvorschrift infolge der geänderten politischen und
+                     militärischen Verhältnisse ihrem Zwecke nicht mehr entspreche. Die Anpassung
+                     des Superarbitrierungsverfahrens an die Gegenwart, insbesondere aber auch das
+                     Streben nach raschester Flüssigmachung der Militärversorgungsgebühren an die
+                     Bezugsberechtigten, fordere teils Abänderungen teils Ergänzungen der
+                     Bestimmungen dieser Vorschrift. Im Einvernehmen mit allen beteiligten
+                     Staatsämtern und den Vertretern der Invalidenschaft habe nun das <rs type="org"
+                        ref="#krp_org_id__226">Staatsamt für Heereswesen</rs> den Entwurf einer
+                     diesbezüglichen Vollzugsanweisung verfasst, die den Zweck verfolge, einerseits
+                     die auf Versorgung Anspruch erhebenden Kriegsbeschädigten zu erfassen und der
+                     Superarbitrierung zuzuführen, anderseits die zur Feststellung der Berufs- und
+                     Erwerbsfähigkeit berufenen Superarbi<pb facs="krp-0038_r-0021"/>t
+                     rierungskommissionen zusammenzusetzen. Im Hinblick auf die Notlage, in der sich
+                     der größte Teil der Kriegsinvaliden befinde, sei die ehestmögliche Hinausgabe
+                     dieser Vollzugsanweisung ein dringendes soziales Gebot.</p>
+                  <p>Nach einer eingehenden Erläuterung der Detailbestimmungen dieser
+                     Vollzugsanweisung erhält der sprechende Staatssekretär die Ermächtigung des <rs
+                        type="org" ref="#krp_org_id__182">Kabinettsrates</rs> zur Einbringung dieses
+                     Entwurfes im <rs type="org" ref="#krp_org_id__224">Staatsrat</rs> bzw. zur
+                     Unterbreitung an das Staatsratsdirektorium, das gegenwärtig die Funktionen des
+                     Staatsrates versieht.</p>
+               </div>
+               <div type="top" xml:id="krp-0038_top13">
+                  <head>
+                     <label>
+                        <num n="13">13.</num>
+                        <seg>[Behandlung der beim Staatsamt für Verkehrswesen aus fremden Staaten
+                           eingelaufenen Lieferungsofferte].</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced"><rs type="person"
+                           ref="#krp_person_id__13">Jukel</rs></hi> teilt mit, dass aufgrund einer
+                     vom <rs type="org" ref="#krp_org_id__189">Staatsamte für Verkehrswesen</rs>
+                     erlassenen Lieferungsausschreibung zahlreiche Offerten eingelangt seien, über
+                     welche erst nach Bereinigung mehrerer Vorfragen abgesprochen werden könne. Da
+                     es sich hiebei um grundsätzliche Erwägungen handle, glaube der sprechende
+                     Staatssekretär, diesfalls die Stellungnahme des <rs type="org"
+                        ref="#krp_org_id__182">Kabinettsrates</rs> einholen zu sollen. Es handle
+                     sich im Gegenstande um die Beantwortung nachstehender Fragen:</p>
+                  <list>
+                     <item n="1">
+                        <label>1.)</label> ob bei Konkurrenzfähigkeit der deutschböhmischen und
+                        sudetenländischen</item>
+                  </list>
+                  <p>
+                     <pb facs="krp-0038_r-0022"/>Firmen hinsichtlich der Preise loco <rs
+                        type="place" ref="#krp_place_id__2">Deutschösterreich</rs> mit
+                     deutschösterreichischen Firmen den ersteren als Bestbieter Lieferungen für
+                     Deutschösterreich übertragen werden sollen;</p>
+                  <list>
+                     <item n="1">
+                        <label>2.)</label> ob an deutschösterreichische Firmen, die ihre
+                        Betriebsstätten ganz oder teilweise im <rs type="place"
+                           ref="#krp_place_id__1">tschechoslowakischen</rs>, südslawischen oder <rs
+                           type="place" ref="#krp_place_id__79">polnischen</rs> Staate haben und von
+                        einem dieser Werke aus liefern wollen, Lieferungen für die
+                        deutschösterreichischen Staatsbahnen vergeben werden können;</item>
+                     <item n="2">
+                        <label>3.)</label> ob Materialien, welche gegenwärtig in Deutschösterreich
+                        nicht erhältlich sind, z. B. wegen des Kohlenmangels oder weil die
+                        deutschösterreichischen Fabriken solche Materialien nicht erzeugen und daher
+                        ein Bezug aus dem Auslande erfolgen muss, aus den neuentstandenen
+                        Nationalstaaten oder aber aus dem <rs type="place" ref="#krp_place_id__6"
+                           >Deutschen Reiche</rs> (annähernd gleiche Preise loco
+                        Einlieferungsstation vorausgesetzt) zu beziehen sind.</item>
+                  </list>
+                  <p>Der Kabinettsrat beschließt nach einer diesfalls abgeführten kurzen Debatte das
+                     Staatsamt für Verkehrswesen einzuladen, zunächst noch eine Äußerung der
+                     Vereinigung der deutschösterreichischen Industrie im Gegenstande einzuholen und
+                     die Angelegenheit sodann dem Ka<pb facs="krp-0038_r-0023"/>binettsrate
+                     neuerlich zur Beschlussfassung zu unterbreiten.</p>
+               </div>
+               <div type="top" xml:id="krp-0038_top14">
+                  <head>
+                     <label>
+                        <num n="14">14.</num>
+                        <seg>[Fürsorgemaßnahmen zugunsten der im slowenischen Gebiete
+                           zurückgebliebenen deutschen Staats- und Staatsbahnangestellten].</seg>
+                     </label>
+                  </head>
+                  <p>Unterstaatssekretär <hi rend="#letterspaced"><rs type="person"
+                           ref="#krp_person_id__16">Marckhl</rs></hi> unterbreitet nach eingehender
+                     Darstellung der Sachlage dem <rs type="org" ref="#krp_org_id__182"
+                        >Kabinettsrate</rs> folgenden Beschlussantrag:</p>
+                  <p>„Die Staatsämter werden angewiesen, ungesäumt zugunsten jener deutschen Staats-
+                     und Staatsbahnangestellten, die im slowenischen Machtbereiche zurückgeblieben
+                     sind und nun durch die bekannten grausamen Kündigungsmaßnahmen vor der
+                     unmittelbaren Gefahr der Delogierung und des Verlustes ihres Mobiliares stehen,
+                     alles Nötige vorzukehren, damit diese Angestellten so schnell als nur irgend
+                     möglich für sich, ihre Angehörigen und vor allem auch für ihr Hab und Gut ein
+                     Unterkunftsziel im <rs type="place" ref="#krp_place_id__2"
+                        >deutschösterreichischen Staate</rs> angewiesen erhalten.</p>
+                  <p>Zu diesem Zweck wären solchen Angestellten alle mit den Richtlinien nur irgend
+                     verträglichen Erleichterungen zu gewähren, um ihnen eine dienstliche Verwendung
+                     in Deutschösterreich zu ermöglichen und ihnen somit <hi rend="#u">sofort</hi>
+                     den hierländischen Verwendungsort bekanntgeben zu können, damit sie schon vor
+                     dem Verlassen des slowenischen Gebietes ein festes Ziel für die <pb
+                        facs="krp-0038_r-0024"/>Übersiedlung haben.</p>
+                  <p>Die Staatsämter werden umso leichter in der Lage sein, diesen zunächst
+                     angedeuteten Weg zur Unterbringung unserer flüchtigen Landesleute
+                     einzuschlagen, als auf absehbare Zeit mit einem namhaften Zuzug von
+                     Flüchtlingen aus dem Norden voraussichtlich nicht zu rechnen sein wird und
+                     daher die Staatsverwaltung ihre volle und ungeteilte Fürsorge hinsichtlich der
+                     Inverwendungnahme den deutschen Flüchtlingen aus dem slowenischen
+                     Machtbereiche, die jetzt in bitterster Notlage sind, zuzuwenden vermag.
+                     Insoweit die unverzügliche Inverwendungnahme dieser Angestellten, insbesondere
+                     im Hinblick auf die Kürze des Termines bis 20. Februar, zu dem die Delogierung
+                     zu gewärtigen ist, unüberwindlichen Schwierigkeiten begegnen sollte, hätten die
+                     Staatsämter jedenfalls unverzüglich für die ihrem Ressort nahestehenden ehemals
+                     österreichischen Angestellten aus dem slowenischen Machtbereiche einen
+                     geeigneten, der Landesgrenze möglichst nahegelegenen Sammelort zu bestimmen,
+                     der den betreffenden deutschen Flüchtlingen als nächstes Übersiedlungsziel
+                     bekanntgegeben werden könnte. Hand in Hand damit müsste aber unbedingt, und
+                     zwar sofort, alles Nötige eingeleitet werden, damit rechtzeitig alle
+                     Schwierigkeiten wegen Beschaffung von Unterkunft und namentlich <pb
+                        facs="krp-0038_r-0025"/>auch wegen Unterbringung des Mobiliars behoben
+                     werden.“</p>
+                  <p>Der Kabinettsrat fasst den Beschluss, den vorliegenden Antrag dem
+                     Zwischenstaatsamtlichen Komitee zur Behandlung von
+                     Staatsbedienstetenangelegenheiten zur unverzüglichen Stellungnahme zu
+                     übermitteln.</p>
+                  <p/>
+               </div>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>
