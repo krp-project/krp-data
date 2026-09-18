@@ -1,0 +1,806 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href='http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:acdh="https://vocabs.acdh.oeaw.ac.at/schema#"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xml:lang="de">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der
+               Republik Österreich</title>
+            <title level="a" type="main" n="0039">Kabinettsprotokoll Nr. 39 vom 12. Februar
+               1919</title>
+            <title level="m" type="main" n="01">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat
+               31. Oktober 1918 bis 7. Juli 1920</title>
+            <title level="m" type="sub" n="">Renner I (31. Oktober 1918 – 15. März 1919)</title>
+            <meeting>
+               <placeName key="https://d-nb.info/gnd/4066009-6">Wien</placeName>
+               <orgName key="https://d-nb.info/gnd/5162749-8">Kabinettsrat</orgName>
+               <date when-iso="1919-02-12"/>
+            </meeting>
+            <editor>
+               <persName key="https://d-nb.info/gnd/122481836" role="hasCreator" xml:id="hwohnout">
+                  <forename>Helmut</forename>
+                  <surname>Wohnout</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/37748-X">Österreichisches
+                  Staatsarchiv</affiliation>
+               <idno type="ORCID">0000-0002-3864-9839</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/120789825" role="hasCreator"
+                  xml:id="tolechowski">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für
+                  Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0003-3291-6876</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/131679384" role="hasCreator" xml:id="rlein">
+                  <forename>Richard</forename>
+                  <surname>Lein</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für
+                  Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0002-7502-0503</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="aholzer">
+                  <forename>Anna</forename>
+                  <surname>Holzer</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für
+                  Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0005-3560-3500</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="dsoelkner">
+                  <forename>Dominik</forename>
+                  <surname>Sölkner</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für
+                  Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-9895-7212</idno>
+            </editor>
+            <editor>
+               <persName role="hasContributor" xml:id="ischotzko">
+                  <forename>Ina</forename>
+                  <surname>Schotzko</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für
+                  Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-5210-3713</idno>
+            </editor>
+            <funder n="1">
+               <orgName key="https://d-nb.info/gnd/2054142-9" role="hasFunder">Österreichischer
+                  Wissenschaftsfonds FWF</orgName>
+               <idno type="project">PAT1495024</idno>
+               <title type="project">Die Protokolle des österreichischen Kabinettsrates
+                  1919–1920</title>
+            </funder>
+            <respStmt>
+               <resp>Projektverantwortung</resp>
+               <orgName key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für
+                  Rechts- und Verfassungsgeschichte</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Projektleitung</resp>
+               <persName key="https://d-nb.info/gnd/120789825" role="hasPrincipalInvestigator">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+                  <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für
+                     Rechts- und Verfassungsgeschichte</affiliation>
+                  <idno type="ORCID">0000-0003-3291-6876</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Nationaler Forschungspartner</resp>
+               <orgName key="https://d-nb.info/gnd/1123037736" role="hasEnabler">Austrian Centre for
+                  Digital Humanities</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Digitalisierung der gedruckten Quellen</resp>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>TEI-Datenmodellierung</resp>
+               <persName role="hasContributor" xml:id="tfruehwirth">
+                  <forename>Timo</forename>
+                  <surname>Frühwirth</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital
+                     Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-3997-5193</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technische Supervision</resp>
+               <persName key="https://d-nb.info/gnd/1043833846" role="hasContributor"
+                  xml:id="pandorfer">
+                  <forename>Peter</forename>
+                  <surname>Andorfer</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital
+                     Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-9575-9372</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technisches Consulting und Vorbereitung der Druckausgabe</resp>
+               <persName key="https://d-nb.info/gnd/13281899X" role="hasContributor" xml:id="skurz">
+                  <forename>Stephan</forename>
+                  <surname>Kurz</surname>
+                  <affiliation key="https://d-nb.info/gnd/1202798799">Institut für die Erforschung
+                     der Habsburgermonarchie und des Balkanraumes</affiliation>
+                  <idno type="ORCID">0000-0003-2546-2570</idno>
+               </persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher key="https://d-nb.info/gnd/1001454-8">Österreichische Akademie der
+               Wissenschaften</publisher>
+            <date when="2028"/>
+            <availability status="free">
+               <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">Lizenziert
+                  unter CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/deed.de)</licence>
+            </availability>
+            <idno type="ISBN_Print"/>
+            <idno type="ISBN_Part_epub"/>
+            <idno type="ISBN_Digital"/>
+            <idno type="DOI"/>
+            <idno type="DOI_zenodo"/>
+            <idno type="ebook_ID"/>
+         </publicationStmt>
+         <seriesStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der
+               Republik Österreich</title>
+            <title level="m" type="main">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31.
+               Oktober 1918 bis 7. Juli 1920</title>
+            <respStmt>
+               <resp>Bearbeitung und Herausgeberschaft</resp>
+               <orgName key="https://d-nb.info/gnd/2024703-5">Universität Wien</orgName>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+         </seriesStmt>
+         <notesStmt>
+            <note>Diese TEI-XML-Datei ist Grundlage für eine Druckausgabe der Edition.</note>
+            <relatedItem>
+               <biblStruct>
+                  <monogr>
+                     <imprint>
+                        <pubPlace key="https://d-nb.info/gnd/4066009-6">Wien</pubPlace>
+                        <publisher key="https://d-nb.info/gnd/2068748-5">Verlag der Österreichischen
+                           Akademie der Wissenschaften</publisher>
+                        <date when="2029"/>
+                     </imprint>
+                     <extent/>
+                  </monogr>
+                  <note>
+                     <idno/>
+                     <ptr/>
+                  </note>
+                  <citedRange/>
+               </biblStruct>
+            </relatedItem>
+         </notesStmt>
+         <sourceDesc>
+            <bibl>Quellbestand: AT-OeStA/AdR MRang MR 1Rep KRP Kabinettsratsprotokolle, 1918-1920
+                  (Teilbestand)<ref
+                  target="https://www.archivinformationssystem.at/detail.aspx?id=5465"
+                  >https://www.archivinformationssystem.at/detail.aspx?id=5465</ref>
+            </bibl>
+            <msDesc>
+               <msIdentifier>
+                  <institution key="https://d-nb.info/gnd/37748-X" role="hasOwner">AT-OeStA
+                     Österreichisches Staatsarchiv (Archiv (ÖStA))</institution>
+                  <repository key="https://d-nb.info/gnd/1601181-8">AT-OeStA/AdR Archiv der
+                     Republik, 1918- (Abteilung)</repository>
+                  <collection>AT-OeStA/AdR MRang MR 1Rep Ministerrat 1. Republik, 1918 - 1938
+                     (Bestand)</collection>
+                  <idno>AT-OeStA_AdR-MRang-MR-1.-Rep.-KRP-039</idno>
+               </msIdentifier>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <abstract>
+            <p>
+               <!--to be generated-->
+            </p>
+         </abstract>
+      </profileDesc>
+      <encodingDesc>
+         <styleDefDecl scheme="css"/>
+         <tagsDecl>
+            <rendition xml:id="b" scheme="css">font-weight:bold;</rendition>
+            <rendition xml:id="su" scheme="css">vertical-align:super;font-size:.7em;</rendition>
+            <rendition xml:id="s" scheme="css">text-decoration:line-through;</rendition>
+            <rendition xml:id="u" scheme="css">text-decoration:underline;</rendition>
+            <rendition xml:id="ow" scheme="css"
+               >text-decoration:line-through;text-decoration-style:double;</rendition>
+            <rendition xml:id="r" scheme="css">display:block;text-align:right;</rendition>
+            <rendition xml:id="letterspaced" scheme="css">letter-spacing:0.15em;</rendition>
+            <rendition xml:id="i" scheme="css">font-style:italic;</rendition>
+         </tagsDecl>
+         <editorialDecl>
+            <hyphenation>
+               <p>
+                  <!--to be added-->
+               </p>
+            </hyphenation>
+            <correction>
+               <p>
+                  <!--to be added-->
+               </p>
+            </correction>
+            <normalization>
+               <p>
+                  <!--to be added-->
+               </p>
+            </normalization>
+            <punctuation>
+               <p>
+                  <!--to be added-->
+               </p>
+            </punctuation>
+            <stdVals>
+               <p>
+                  <!--to be added-->
+               </p>
+            </stdVals>
+            <p>
+               <!--to be added-->
+            </p>
+         </editorialDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#tfruehwirth" when-iso="2026-09-15">TEIGarage output upconverted with
+            upconvert.xsl</change>
+         <change who="#tfruehwirth" when-iso="2026-09-15">TEI header populated with
+            generate_tei_templates.py</change>
+         <change who="#ischotzko" when-iso="2026-09-18">mark-up entity person, place, organization</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface/>
+   </facsimile>
+   <text>
+      <body>
+         <div xml:id="doc-krp-0039.xml">
+            <head type="dokument">
+               <title type="num">39.<note type="footnote">Das Protokoll trägt den Vermerk <hi
+                        rend="#i">Vertraulich!</hi>
+                  </note>
+               </title>
+               <title type="desc">
+                  <pb facs="krp-0039_r-0001"/>[Mittwoch] 1919-02-12</title>
+            </head>
+            <div type="dokumentkopf">
+               <div type="vorsitz">
+                  <head>Vorsitz:</head>
+                  <p><rs type="person" ref="#krp_person_id__26">Renner</rs>, teilweise <rs
+                        type="person" ref="#krp_person_id__34">Urban</rs> und <rs type="person"
+                        ref="#krp_person_id__28">Roller</rs></p>
+               </div>
+               <div type="anwesend">
+                  <head>Anwesend:</head>
+                  <p><rs type="person" ref="#krp_person_id__2">Beck</rs>, <rs type="person"
+                        ref="#krp_person_id__1">Bauer</rs>, <rs type="person"
+                        ref="#krp_person_id__11">Grimm</rs>, <rs type="person"
+                        ref="#krp_person_id__12">Hanusch</rs>, <rs type="person"
+                        ref="#krp_person_id__13">Jukel</rs>, <rs type="person"
+                        ref="#krp_person_id__14">Kaup</rs>, <rs type="person"
+                        ref="#krp_person_id__16">Marckhl</rs>, <rs type="person"
+                        ref="#krp_person_id__17">Mataja</rs>, <rs type="person"
+                        ref="#krp_person_id__18">Mayer</rs>, <rs type="person"
+                        ref="#krp_person_id__21">Pacher</rs>, <rs type="person"
+                        ref="#krp_person_id__32">Stöckler</rs></p>
+               </div>
+               <div type="zugezogen">
+                  <head>Zugezogen:</head>
+                  <p><rs type="person" ref="#krp_person_id__75">Reich</rs></p>
+               </div>
+               <div type="schriftfuehrer">
+                  <head>Schriftführer:</head>
+                  <p>unbekannt</p>
+               </div>
+               <div type="dauer">
+                  <head>Dauer:</head>
+                  <p>15.00–17.00 Uhr</p>
+               </div>
+            </div>
+            <div type="komponenten">
+               <p>Reinschrift, Beilagen, streng vertraulicher Anhang, Konzept</p>
+            </div>
+            <div type="beilagen">
+               <head>Beilagen:</head>
+               <list>
+                  <item>
+                     <ref target="#krp-0039_top06">Zu TOP 6</ref>: <ref target="#krp-0039_b01"
+                        >Vollzugsanweisung des Staatsamtes für soziale Fürsorge zur Unterstützung
+                        arbeitsloser Arbeiter</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0039_top06">Zu TOP 6</ref>: <ref target="#krp-0039_b02"
+                        >Vollzugsanweisung des Staatsamtes für soziale Fürsorge zur Unterstützung
+                        arbeitsloser Angestellten</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0039_top09">Zu TOP 9</ref>: <ref target="#krp-0039_b03"
+                        >Antrag des Landesschulrates für Steiermark auf Bewilligung einer Ausnahme
+                        vom Sammlungsverbot in den Schulen zu Gunsten der Waisenkinderversicherung
+                        gefallener Mannschaftspersonen</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0039_top10">Zu TOP 10</ref>: <ref target="#krp-0039_b04"
+                        >Antrag des Staatsamtes für Unterricht über Wunsch des Staatsamtes für
+                        Finanzen auf Auflassung des Tabulareigentums des oberösterreichischen
+                        Religionsfonds an der ehemaligen Karmeliterkirche Linz zugunsten der Linzer
+                        Barmherzigen Brüder</ref>
+                  </item>
+               </list>
+            </div>
+            <div type="protokoll">
+               <pb facs="krp-0039_r-0002"/>
+               <div type="top" xml:id="krp-0039_top01">
+                  <head>
+                     <label>
+                        <num n="1">1.</num>
+                        <seg>[Ausschließung der südslawischen Studenten von den
+                           deutschösterreichischen Hochschulen]</seg>
+                     </label>
+                  </head>
+                  <p>Der <hi rend="#letterspaced"><rs type="person" ref="#krp_person_id__26"
+                           >Vorsitzende</rs></hi> teilt mit, dass in Angelegenheit der am 4. Februar
+                     d. J. vom akademischen Senat der <rs type="org" ref="#krp_org_id__250">Wiener
+                        Universität</rs> beschlossenen Ausschließung der südslawischen Studenten von
+                     der <pb facs="krp-0039_r-0003"/>Universität der Dekan der juristischen Fakultät
+                     dieser Hochschule eine Vorstellung erhoben habe, worin er ausführt, dass dieser
+                     Beschluss geeignet sei, die Stellung der Wiener Universität als kulturelles
+                     Zentrum in hohem Maße zu schädigen. In der gleichen Angelegenheit habe ferner
+                     eine Deputation der jugoslawischen, der tschechoslowakischen und der
+                     sozialdemokratischen Studentenorganisationen vorgesprochen, die ebenfalls die
+                     Aufhebung des in Rede stehenden Senatsbeschlusses, und zwar bis zum 14. Februar
+                     mittags gefordert und überdies das Verlangen gestellt habe, dass an der
+                     Universität ein aufgrund des gleichen allgemeinen proportionalen Wahlrechtes zu
+                     bildender Studentenausschuss eingesetzt werde.</p>
+                  <p>Der Vorsitzende halte die Bedenken, welche gegen den Beschluss des akademischen
+                     Senates geltend gemacht werden, für berechtigt und würde sich auch von seinem
+                     Standpunkte für die Einsetzung von Hochschulausschüssen aussprechen, weil er
+                     glaube, dass auf diesem Wege die Verhandlungen über Wünsche und Beschwerden der
+                     Studentenschaft in geordnete Bahnen gelenkt und viele Schwierigkeiten leichter
+                     überwunden werden könnten.</p>
+                  <p>
+                     <pb facs="krp-0039_r-0004"/>Staatssekretär <hi rend="#letterspaced"><rs
+                           type="person" ref="#krp_person_id__21">Pacher</rs></hi> teilt mit, dass
+                     der erwähnte Beschluss des akademischen Senates den Gegenstand einer
+                     Besprechung im <rs type="org" ref="#krp_org_id__192">Staatsamt für
+                        Unterricht</rs> mit den Rektoren der Wiener Hochschulen im Beisein des
+                     Staatssekretärs Dr. <rs type="person" ref="#krp_person_id__1">Bauer</rs>
+                     gebildet habe, welche aufgrund der Darlegungen des Staatssekretärs Dr. Bauer zu
+                     dem Ergebnis führte, dass der Senatsbeschluss zwar genehmigend zur Kenntnis zu
+                     nehmen wäre, hiebei jedoch vorausgesetzt werde, dass sich die Geltung dieses
+                     Beschlusses nicht auf alle jugoslawischen, sondern lediglich auf die
+                     slowenischen Studenten beziehe und auf das Wintersemester 1918/19 eingeschränkt
+                     bleibe, dass ferner diese Studenten von der Ablegung der Prüfungen nicht
+                     ausgeschlossen seien. Hiemit würde sich auch eine Übereinstimmung in dem
+                     Vorgang an den übrigen Wiener Hochschulen ergeben. Diese Fassung des an die
+                     Rektorate der Wiener Hochschulen hinauszugebenden Erlasses habe auch die
+                     Zustimmung des jugoslawischen Bevollmächtigten gefunden. Die Frage des
+                     Hochschulausschusses sei eine Angelegenheit der Hochschulautonomie und es müsse
+                     daher den Hochschulen überlassen bleiben, hiezu Stellung zu nehmen.</p>
+                  <p>
+                     <pb facs="krp-0039_r-0005"/>Staatssekretär Dr. <hi rend="#letterspaced"
+                        >Bauer</hi> warnt in eindringlicher Weise vor der Befolgung einer
+                     Repressalienpolitik, die unter den gegenwärtigen Verhältnissen niemals zum
+                     Ziele führe und unseren Interessen, da sie zweifellos neue Repressalien auf der
+                     Gegenseite auslösen würde, nur schweren Schaden zufügen könnte. Aus ähnlichen
+                     Erwägungen würde er auch glauben, dass es vorteilhaft wäre, der von
+                     tschechischer Seite erhobenen Forderung, dass die die <rs type="org"
+                        ref="#krp_org_id__251">tierärztliche Hochschule</rs> besuchenden Studenten
+                     zu Prüfungen zugelassen und eventuell für sie Parallelkurse außerhalb des
+                     Hochschulgebäudes eingerichtet werden, tunlichst Rechnung zu tragen.</p>
+                  <p>Was die Frage des Hochschulausschusses anbelange, so sei das ein altes
+                     Streitobjekt. Da die deutschnationale Studentenschaft dagegen sei, dürfte es
+                     seiner Ansicht nach nicht möglich sein, diese Frage im Rahmen der
+                     Hochschulautonomie zu lösen; es würde sich vielmehr als notwendig erweisen,
+                     dass das Staatsamt für Unterricht ein Regulativ an alle Hochschulen für die
+                     Bildung von Studentenausschüssen erlasse.</p>
+                  <p>Nach einer eingehenden Debatte, an welcher sich die Staatssekretäre <hi
+                        rend="#letterspaced"><rs type="person" ref="#krp_person_id__12"
+                        >Hanusch</rs></hi> und Dr. <hi rend="#letterspaced"><rs type="person"
+                           ref="#krp_person_id__28">Roller</rs></hi> sowie die Unterstaatssekretäre
+                        <hi rend="#letterspaced"><rs type="person" ref="#krp_person_id__16"
+                           >Marckhl</rs></hi>
+                     <pb facs="krp-0039_r-0006"/>und Dr. von <hi rend="#letterspaced"><rs
+                           type="person" ref="#krp_person_id__2">Beck</rs></hi> beteiligten,
+                     genehmigt der <rs type="org" ref="#krp_org_id__182">Kabinettsrat</rs> die vom
+                     Staatssekretär Pacher beantragte Fassung des an die Hochschulen
+                     hinauszugebenden Erlasses. Gleichzeitig wird das Staatsamt für Unterricht
+                     ersucht, mit den Rektoren der Hochschulen in der Frage der Einführung
+                     allgemeiner Hochschulausschüsse eine Besprechung abzuhalten.</p>
+               </div>
+               <div type="top" xml:id="krp-0039_top02">
+                  <head>
+                     <label>
+                        <num n="2">2.</num>
+                        <seg>[Zwischenstaatliche Vereinbarung mit der tschechoslowakischen Regierung
+                           über die wechselseitige Auszahlung des im Monate Februar 1919 gewährten
+                           Anschaffungsbeitrages an die Staatsbediensteten]</seg>
+                     </label>
+                  </head>
+                  <p>Unterstaatssekretär Dr. von <rs type="person" ref="#krp_person_id__2">Beck</rs>
+                     erbittet die Genehmigung des <rs type="org" ref="#krp_org_id__182"
+                        >Kabinettsrates</rs> für folgende am 30. Jänner d. J. mit Vertretern des <rs
+                        type="org" ref="#krp_org_id__252">tschechoslowakischen
+                        Finanzministeriums</rs> getroffene Vereinbarung:</p>
+                  <p>„Die behufs Fortzahlung der Beihilfen an die enthobenen, ehemals
+                     österreichischen Staatsbediensteten für den Monat Februar 1919 getroffene
+                     Vereinbarung zwischen der <rs type="org" ref="#krp_org_id__183"
+                        >tschechoslowakischen Republik</rs> einerseits und der <rs type="org"
+                        ref="#krp_org_id__254">deutschösterreichischen Republik</rs> andererseits
+                     erstreckt sich unter gleichen Voraussetzungen, insbesonders der Bedingung der
+                     Gegenseitigkeit und unter Vorbehalt der Genehmigung beider Regierungen auch auf
+                     die Zahlung eines im Monate Februar 1919 in den beiden Staaten gewährten
+                     einmaligen Zuschusses zu den Teuerungszulagen im Ausmaße des im Monat November
+                     1918 an die ehemals österreichischen Staatsbediensteten ausgezahlten Betrages.“ </p>
+                  <p>
+                     <pb facs="krp-0039_r-0007"/>Der Kabinettsrat nimmt diese Vereinbarung
+                     genehmigend zur Kenntnis.</p>
+               </div>
+               <div type="top" xml:id="krp-0039_top03">
+                  <head>
+                     <label>
+                        <num n="3">3.</num>
+                        <seg>[Vollzugsanweisung des Staatsamtes für soziale Fürsorge betreffend eine
+                           Ergänzung der Vollzugsanweisung des Staatsrates vom 13.  November 1918,
+                           StGBl. Nr. 22, über die Anforderung von Wohnungen durch die
+                           Gemeinden]</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced"><rs type="person"
+                           ref="#krp_person_id__12">Hanusch</rs></hi> führt aus, dass die <rs
+                        type="org" ref="#krp_org_id__255">jugoslawische Regierung</rs> die
+                     deutschösterreichische Anforderungsverordnung vom 13. November 1918, StGBl.
+                     Nr. 22, zwar übernommen, den Kreis der der Anforderung unterliegenden Wohnungen
+                     jedoch dahin erweitert habe, dass die Gemeinden das Recht haben, auch voll
+                     besetzte Wohnungen von Personen anzufordern, die in der Gemeinde das
+                     Heimatsrecht nicht besitzen oder es nur aufgrund des § 10 des Gesetzes vom
+                     6. Dezember 1896, RGBl. Nr. 22 erlangt haben und die in der Gemeinde keinen
+                     öffentlichen oder im öffentlichen Interesse liegenden privaten Dienst oder
+                     Beruf ausüben.</p>
+                  <p>Diese Bestimmung mache keinen Unterschied zwischen eigenen und fremden
+                     Staatsangehörigen, praktisch diene sie jedoch dazu, den enthobenen Beamten,
+                     Offizieren und Eisenbahnern deutscher Nationalität die Wohnungen binnen ganz
+                     kurzer Frist zu entziehen. Über Ersuchen der <rs type="org"
+                        ref="#krp_org_id__195">Landesregierung von Steiermark</rs> habe das <rs
+                        type="org" ref="#krp_org_id__256">Staatsamt für soziale Fürsorge</rs> eine
+                     Vollzugsanweisung ausgearbeitet, welche den Gemeinden in <rs type="place"
+                        ref="#krp_place_id__2">Deutschösterreich</rs> das gleiche Recht ein<pb
+                        facs="krp-0039_r-0008"/>räumt, um zur Vergeltung auch die Wohnungen
+                     jugoslawischer Staatsangehöriger anfordern zu können.</p>
+                  <p>Da das <rs type="org" ref="#krp_org_id__186">Staatsamt des Äußern</rs> sich
+                     überhaupt gegen Retorsionsverordnungen ausgesprochen und seine Bedenken im
+                     konkreten Falle darauf gestützt habe, dass die Zahl jugoslawischer
+                     Staatsangestellter und Eisenbahner in Deutschösterreich verschwindend gering
+                     gegenüber der großen Zahl solcher Berufsangehöriger deutschösterreichischer
+                     Nationalität im südslawischen Staate sei, dass ferner die Jugoslawen die
+                     Möglichkeit und die Macht besäßen, empfindliche Repressalien gegenüber den
+                     zahlreichen deutschen Industrien und sonstigen Kapitalsanlagen in ihrem Staate
+                     zu ergreifen, sei beabsichtigt, die Vollzugsanweisung vorläufig nicht zu
+                     publizieren und sie lediglich dem Staatsamt des Äußern zur Verfügung zu
+                     stellen, damit sie in den diplomatischen Verhandlungen mit dem südslawischen
+                     Staate als Pressionsmittel verwendet werden könne.</p>
+                  <p>Der <rs type="org" ref="#krp_org_id__182">Kabinettsrat</rs> nimmt diese
+                     Ausführungen zustimmend zur Kenntnis und überlässt es dem Staatsamt des Äußern,
+                     über die allfällige Inkraftsetzung dieser Vollzugsanweisung Antrag zu
+                     stellen.</p>
+               </div>
+               <div type="top" xml:id="krp-0039_top04">
+                  <head>
+                     <label>
+                        <num n="4">4.</num>
+                        <seg>[Italienische Ansprüche auf Wiener Kunstschätze und Archivalien]</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced"><rs type="person"
+                           ref="#krp_person_id__1">Bauer</rs></hi> teilt <pb facs="krp-0039_r-0009"
+                     />mit, dass über die von italienischer Seite erhobenen Ansprüche auf Wiener
+                     Kunstschätze und Archivalien sehr langwierige und schwierige Verhandlungen
+                     gepflogen wurden. In dieser Sache sei nunmehr insoferne eine Wendung
+                     eingetreten, als die italienische Waffenstillstandskommission gestern ein
+                     24-stündiges Ultimatum für die Auslieferung der beanspruchten Gegenstände
+                     gestellt habe. Da sich der Leiter der <rs type="org" ref="#krp_org_id__257"
+                        >italienischen Waffenstillstandskommission</rs> General <rs type="person"
+                        ref="#krp_person_id__476">Segré</rs> auf keinerlei Erörterungen über die
+                     Rechtmäßigkeit der erhobenen Ansprüche eingelassen, sondern sich lediglich auf
+                     einen ihm seitens des italienischen Armeeoberkommandos zugekommenen Befehl
+                     berufen habe, sei dem sprechenden Staatssekretär nichts anderes übrig
+                     geblieben, als das Vorgehen der Waffenstillstandskommission als einen Akt der
+                     Gewalt zu bezeichnen, der keine rechtserzeugende Wirkung haben könne, welchem
+                     er jedoch unter Protest weichen müsse. General Segré habe gegen diese
+                     Auffassung keinen Widerspruch erhoben. Der sprechende Staatssekretär habe
+                     sowohl bei der <rs type="org" ref="#krp_org_id__185">italienischen</rs> als
+                     auch bei allen anderen Regierungen gegen das Vorgehen der italienischen
+                     Waffenstillstandskommission Verwahrung eingelegt und diesen <pb
+                        facs="krp-0039_r-0010"/>Protest gleichzeitig im Wege der Schutzmächte an die
+                        <rs type="place" ref="#krp_place_id__23">Vereinigten Staaten von
+                        Amerika</rs> und an die <rs type="org" ref="#krp_org_id__223">Entente</rs>
+                     gerichtet. Überdies habe er diese Angelegenheit noch der Gesandtenkonferenz
+                     mitgeteilt.</p>
+                  <p>Der <rs type="org" ref="#krp_org_id__182">Kabinettsrat</rs> nimmt diese
+                     Ausführungen zur Kenntnis.</p>
+               </div>
+               <div type="top" xml:id="krp-0039_top05">
+                  <head>
+                     <label>
+                        <num n="5">5.</num>
+                        <seg>[Stellung des Militärgeographischen Instituts]</seg>
+                     </label>
+                  </head>
+                  <p>Sektionschef Ing. <hi rend="#letterspaced"><rs type="person"
+                           ref="#krp_person_id__75">Reich</rs></hi> berichtet in Vertretung des
+                     abwesenden <rs type="person" ref="#krp_person_id__38">Staatssekretärs für
+                        öffentliche Arbeiten</rs>, dass sich das vom <rs type="org"
+                        ref="#krp_org_id__182">Kabinettsrat</rs> in seiner Sitzung vom 21. Dezember
+                     1918 zur Frage der einheitlichen Behandlung des Vermessungswesens eingesetzte
+                     zwischenstaatsamtliche Komitee auf den Antrag geeinigt habe, das <rs type="org"
+                        ref="#krp_org_id__258">Militärgeographische Institut</rs> sei dem <rs
+                        type="org" ref="#krp_org_id__253">Staatsamt für öffentliche Arbeiten</rs> zu
+                     unterstellen.</p>
+                  <p>Der Kabinettsrat erhebt diesen Antrag zum Beschluss.</p>
+               </div>
+               <div type="top" xml:id="krp-0039_top06">
+                  <head>
+                     <label>
+                        <num n="6">6.</num>
+                        <seg>[Verlängerung der Arbeitslosenunterstützung und der
+                           Angestelltenunterstützung]</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced"><rs type="person"
+                           ref="#krp_person_id__12">Hanusch</rs></hi> erbittet und erhält die
+                     Ermächtigung, dem <rs type="org" ref="#krp_org_id__244"
+                        >Staatsratsdirektorium</rs> je eine Vollzugsanweisung, betreffend die
+                     Verlängerung der Unterstützung der arbeitslosen Arbeiter sowie die
+                     Unterstützung der arbeits<pb facs="krp-0039_r-0011"/>losen Angestellten bis
+                     31. März 1919, unterbreiten zu dürfen.</p>
+                  <p>Über Antrag des Unterstaatssekretärs Dr. von <hi rend="#letterspaced"><rs
+                           type="person" ref="#krp_person_id__11">Grimm</rs></hi> spricht der <rs
+                        type="org" ref="#krp_org_id__182">Kabinettsrat</rs> bei diesem Anlasse die
+                     Erwartung aus, dass bei nächster Gelegenheit unbedingt auch ein Abbau der
+                     Unterstützungsansätze platzgreife.</p>
+               </div>
+               <div type="top" xml:id="krp-0039_top07">
+                  <head>
+                     <label>
+                        <num n="7">7.</num>
+                        <seg>[Verlängerung der Unterstützungsaktion für die arbeitslosen
+                           Textilarbeiter in Deutschböhmen und Sudetenland]</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced"><rs type="person"
+                           ref="#krp_person_id__12">Hanusch</rs></hi> teilt mit, dass die
+                     Textilindustrie während des Krieges eine Sonderaktion zur Unterstützung der
+                     arbeitslosen Textilarbeiter eingerichtet habe. Anlässlich der Erlassung der
+                     ersten Vollzugsanweisung über die Arbeitslosenunterstützung hätten die
+                     Textilindustriellen das Ersuchen gestellt, dass diese Sonderaktion, zu deren
+                     Kosten der Staat 80 %, die Unternehmer 20 % beitrugen, aufrecht bleibe. Diesem
+                     Ansuchen sei willfahrt worden. Es handle sich nunmehr um die Frage, inwiefern
+                     diese Sonderaktion anlässlich der Verlängerung der Arbeitslosenunterstützung
+                     weiterhin für <rs type="place" ref="#krp_place_id__29">Deutschböhmen</rs> und
+                     das <rs type="place" ref="#krp_place_id__26">Sudetenland</rs> in Betracht zu
+                     kommen habe. Die Aktion erfordere für Deutschböhmen und das Sudetenland einen
+                     monatlichen Aufwand aus staatlichen Mitteln von ungefähr 370.000–400.000 K. Der
+                     sprechende Staatssekretär <pb facs="krp-0039_r-0012"/>beantrage die
+                     Bereitstellung der erforderlichen Beträge und begründet dies damit, dass es
+                     sich aus politischen Rücksichten nicht empfehle, offiziell zu erklären, dass
+                     der <rs type="place" ref="#krp_place_id__2">deutschösterreichische Staat</rs>
+                     die Fürsorge der deutschen Textilarbeiter in Deutschböhmen und Sudetenland
+                     aufgebe bzw. der <rs type="org" ref="#krp_org_id__179">tschechischen
+                        Regierung</rs> überlasse.</p>
+                  <p>Der <rs type="org" ref="#krp_org_id__182">Kabinettsrat</rs> stimmt diesem
+                     Antrage zu.</p>
+               </div>
+               <div type="top" xml:id="krp-0039_top08">
+                  <head>
+                     <label>
+                        <num n="8">8.</num>
+                        <seg>[Regelung des Witwen- und Waisen-Fonds]</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <rs type="person" ref="#krp_person_id__12">Hanusch</rs> weist
+                     darauf hin, dass bei der Geschäftsführung des österreichischen "<rs type="org"
+                        ref="#krp_org_id__24">Militär-Witwen- und Waisenfonds</rs> Erscheinungen
+                     zutage getreten seien, welche bei dem Umstande als Vertreter von sieben
+                     Staatsämtern dem Vorstande und dem Arbeitsausschuss angehören, die Frage
+                     notwendig erscheinen lasse, welche Stellung künftighin die <rs type="org"
+                        ref="#krp_org_id__184">Regierung</rs> dem Fonds gegenüber einnehmen solle.
+                     Vor allem sei es die enge Verquickung des Fonds mit der <rs type="org"
+                        ref="#krp_org_id__259">Versicherungsgesellschaft „Österreichischer
+                        Phönix“</rs>, die zu vielfachen Beanständungen in der Öffentlichkeit Anlass
+                     gegeben habe, zumal die Leitung dieses Versicherungsunternehmens einen
+                     erheblichen Einfluss auf die Geschäftsfüh<pb facs="krp-0039_r-0013"/>rung der
+                     Zentrale des Fonds genommen habe. Auch bediene sich der Fonds bei der Besorgung
+                     seiner Agenden zweifelhafter Elemente, die zu hohen materiellen Bedingungen
+                     angestellt und nicht geeignet seien, das Vertrauen in eine klaglose
+                     Geschäftsführung zu erwecken. Zudem strebe der Verein an, sich durch eine in
+                     der nächsten Vollversammlung zu beschließende Statutenänderung eine völlig
+                     autonome Grundlage zu schaffen und sich von allen einschränkenden Fesseln zu
+                     befreien, insbesondere wäre der Präsident (bisher vom Kaiser ernannt)
+                     künftighin aus der Vollversammlung zu wählen und hätten die sieben Vertreter
+                     der Staatsämter aus dem Vorstande auszuscheiden.</p>
+                  <p>Der sprechende Staatssekretär stellt den Antrag, der <rs type="org"
+                        ref="#krp_org_id__182">Kabinettsrat</rs> wolle beschließen:</p>
+                  <list>
+                     <item n="1">
+                        <label>1.)</label> Das <rs type="org" ref="#krp_org_id__256">Staatsamt für
+                           soziale Fürsorge</rs> wird ermächtigt:</item>
+                     <item n="2">
+                        <label>a)</label> den Erlass des Ministeriums des Innern vom 8. März 1916,
+                        Zl. 4988, mit welchem der Österreichische Militär-Witwen- und Waisenfonds
+                        als Zentralstelle der freiwilligen Kriegerwitwen- und Waisenfürsorge in
+                        Österreich anerkannt wurde, durch einen Erlass an die politischen Behörden
+                        außer Kraft zu setzen;</item>
+                  </list>
+                  <p>
+                     <pb facs="krp-0039_r-0014"/>
+                  </p>
+                  <list>
+                     <item n="1">
+                        <label>b)</label> die über die Vermögensgebarung des Militär-Witwen- und
+                        Waisenfonds verhängte Sperre aufzuheben.</item>
+                     <item n="2">
+                        <label>2.)</label> Die in Betracht kommenden Staatsämter werden angewiesen,
+                        ihre Vertreter aus dem Vorstande und dem Arbeitsausschusse des
+                        Österreichischen Militär-Witwen- und Waisenfonds gleichzeitig zurückzuziehen
+                        und hievon unter einem den Verein zu verständigen.</item>
+                  </list>
+                  <p>Der Kabinettsrat erhebt diese Anträge zum Beschluss und ersucht gleichzeitig
+                     das <rs type="org" ref="#krp_org_id__192">Staatsamt des Innern</rs>, das
+                     Aufsichtsrecht über diesen Verein in nachdrücklicher Weise zu handhaben.</p>
+               </div>
+               <div type="top" xml:id="krp-0039_top09">
+                  <head>
+                     <label>
+                        <num n="9">9.</num>
+                        <seg>[Antrag des Landesschulrates in Steiermark auf Bewilligung einer
+                           Ausnahme von dem allgemeinen Sammelverbot in den Schulen zu Gunsten der
+                           bereits abgeschlossenen Versicherungen für Waisenkinder von gefallenen
+                           Mannschaftspersonen]</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced"><rs type="person"
+                           ref="#krp_person_id__21">Pacher</rs></hi> berichtet über einen Antrag des
+                        <rs type="org" ref="#krp_org_id__260">Landesschulrates für Steiermark</rs>
+                     auf Bewilligung einer Ausnahme von dem allgemeinen Sammelverbot in den Schulen
+                     zu Gunsten der bereits abgeschlossenen Versicherungen für Waisenkinder von
+                     gefallenen Mannschaftspersonen.</p>
+                  <p>Mit dem Erlasse des <rs type="org" ref="#krp_org_id__192">Staatsamtes für
+                        Unterricht</rs> vom 7. Dezember 1918, Zl. 1473, seien sämtliche Sammlungen
+                     in den Schulen, wie sie während der Kriegszeit zu verschiedenen Zwecken
+                     eingeleitet worden waren, eingestellt worden. An den Grazer <pb
+                        facs="krp-0039_r-0015"/>Schulen sei nun seit dem Vorjahre eine Sammlung ganz
+                     besonderer Art eingeführt, die zum Ziele habe, für die Krieger-Waisenkinder
+                     Versicherungen, und zwar auf je 1.000 K Kriegsanleihe sicherzustellen. Jede
+                     Klasse der Grazer Schulen habe sich die Aufgabe gesetzt, die Versicherung für
+                     je ein Krieger-Waisenkind zu bestreiten. Die Prämien würden, insoweit sie nicht
+                     durch Beiträge von Wohltätern und Zahlungen der Lehrer zustande kämen, durch
+                     Sammlung geringfügiger Beiträge unter den Schülern (Heller-Sammlung)
+                     aufgebracht. Auf diese Weise sei es gelungen, eine Versicherungssumme von
+                     250.000 K (für 250 Waisenkinder à 1.000 K) sicherzustellen. </p>
+                  <p>Die Auflassung dieser Sammlung würde nun die Hinfälligkeit der Versicherungen
+                     und – wegen des derzeitigen ungünstigen Kurses der Kriegsanleihe – auch den
+                     Verlust der schon eingezahlten Prämien zur Folge haben, wäre daher vom
+                     volkswirtschaftlichen Standpunkte sehr ungünstig. Überdies komme dieser
+                     Sammlung nach ihrer besonderen Eigenart auch vom ethisch-erziehlichen
+                     Standpunkte ein hoher Wert zu.</p>
+                  <p>In Anbetracht dieser Umstände beantrage der sprechende Staatssekretär –
+                     unbeschadet der sonstigen Weitergeltung des Einstellungserlasses vom
+                     7. Dezember 1918, <pb facs="krp-0039_r-0016"/>Zl. 1473 – die Fortführung dieser
+                     Sammlung, welche vom Witwen- und Waisenfonds erbeten und von den Schulbehörden
+                     wärmstens befürwortet wird, ausnahmsweise zu gestatten.</p>
+                  <p>Über Antrag des Staatssekretärs Dr. <hi rend="#letterspaced"><rs type="person"
+                           ref="#krp_person_id__28">Roller</rs></hi> ersucht der <rs type="org"
+                        ref="#krp_org_id__182">Kabinettsrat</rs> den Staatssekretär für Unterricht,
+                     vorerst erheben zu lassen, mit welcher Unternehmung die gegenständlichen
+                     Versicherungen abgeschlossen wurden, ferner ob nicht eine Rückkaufsmöglichkeit
+                     dieser Versicherungen bestehe, und sodann die Angelegenheit neuerlich im
+                     Kabinettsrat zur Sprache zu bringen.</p>
+               </div>
+               <div type="top" xml:id="krp-0039_top10">
+                  <head>
+                     <label>
+                        <num n="10">10.</num>
+                        <seg>[Auflassung des Tabulareigentums des oberösterreichischen
+                           Religionsfonds an der ehemaligen Karmelitinnenkirche in Linz zu Gunsten
+                           des Konventes der barmherzigen Brüder dortselbst]</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced"><rs type="person"
+                           ref="#krp_person_id__21">Pacher</rs></hi> teilt mit, dass der Provinzial
+                     der <rs type="org" ref="#krp_org_id__261">barmherzigen Brüder</rs> um
+                     Auflassung des Tabulareigentums des <rs type="org" ref="#krp_org_id__262"
+                        >oberösterreichischen Religionsfonds</rs> an der vom Konvente der
+                     barmherzigen Brüder benützten ehemaligen <rs type="place"
+                        ref="#krp_place_id__309">Karmelitinnenkirche in Linz</rs> zu Gunsten dieses
+                     Konventes gebeten habe.</p>
+                  <p>Von der genannten Kirche habe der Religionsfonds nichts als die nuda proprietas
+                     und müsse bei Auftreten anfälliger größerer Baugebrechen die Kosten der
+                     notwendigen Instandsetzung aus eigenen Mitteln bestreiten. </p>
+                  <p>
+                     <pb facs="krp-0039_r-0017"/>Das <rs type="org" ref="#krp_org_id__192">Staatsamt
+                        für Unterricht</rs> beabsichtige daher, im Einvernehmen mit dem <rs
+                        type="org" ref="#krp_org_id__187">Staatsamte der Finanzen</rs> der <rs
+                        type="org" ref="#krp_org_id__264">Landesregierung für Oberösterreich</rs> zu
+                     eröffnen, dass gegen die allfällige unentgeltliche Auflassung des
+                     Tabulareigentums des oberösterreichischen Religionsfonds an der ehemaligen
+                     Karmelitinnenkirche in Linz zugunsten des Konventes der Barmherzigen Brüder
+                     daselbst im Wesentlichen keine Bedenken obwalten. Die gegenständliche
+                     Transaktion könnte jedoch nur dann ins Auge gefasst werden, wenn sich der
+                     Konvent verpflichte:</p>
+                  <list>
+                     <item n="1">
+                        <label>1.)</label> die Kirche stets auf eigene Kosten im guten Bauzustande
+                        zu erhalten, sowie ohne Zustimmung der <rs type="org" ref="#krp_org_id__256"
+                           >Zentralkommission für Denkmalpflege</rs>, beziehungsweise des
+                        Landes-Denkmalamtes keinerlei Veränderungen am Baubestande und der
+                        Einrichtung vorzunehmen;</item>
+                     <item n="2">
+                        <label>2.)</label> diese Kirche auch weiterhin für immerwährende Zeiten dem
+                        öffentlichen Gottesdienste gewidmet zu halten;</item>
+                     <item n="3">
+                        <label>3.)</label> ausdrücklich für alle Zeiten auf jegliche
+                        Beitragsleistung des Religionsfonds oder des Staatsschatzes zu den Kosten
+                        der Erhaltung der Kirche und deren Einrichtung zu verzichten und</item>
+                     <item n="4">
+                        <label>4.)</label> sämtliche mit der Übertragung <pb facs="krp-0039_r-0018"
+                        />des Tabulareigentums an den Konvent etwa verbundene Kosten zu
+                        tragen.</item>
+                     <item n="5">
+                        <label>5.)</label> Auch werde ein grundbücherlich sicherzustellender
+                        Vorbehalt hinsichtlich einer etwaigen künftigen Heranziehung der Kirche zum
+                        Schulgottesdienst zu machen sein.</item>
+                  </list>
+                  <p>Sollte der Konvent sich bereit erklären, auf diese Bedingungen einzugehen, so
+                     würde die Länderregierung für Oberösterreich ermächtigt werden, unter
+                     Mitwirkung der Finanzprokuratur einen Vertragsentwurf abzufassen und denselben
+                     an das Staatsamt für Unterricht vorzulegen.</p>
+                  <p>Der <rs type="org" ref="#krp_org_id__182">Kabinettsrat</rs> genehmigt die
+                     beabsichtigten Verfügungen.</p>
+                  <p/>
+               </div>
+            </div>
+            <div type="anhaenge">
+               <p>
+                  <pb facs="krp-0039_a01-0001"/>Streng vertraulicher Anhang zu dem
+                  Kabinettsprotokoll Nr. 39 vom 11. Februar 1919.</p>
+               <div n="1">
+                  <head/>
+                  <div type="a01_protokoll">
+                     <p>Der <hi rend="#letterspaced"><rs type="person" ref="#krp_person_id__26"
+                              >Staatskanzler</rs></hi> erbittet und erhält die Bewilligung, beim <rs
+                           type="org" ref="#krp_org_id__244">Staatsratsdirektorium</rs> die
+                        Verleihung des Titels und Charakters eines Sektionschefs an den
+                        Ministerialrat der Staatskanzlei Dr. Josef Freiherrn von <rs type="person"
+                           ref="#krp_person_id__765">Löwenthal</rs> erbitten zu dürfen.</p>
+                  </div>
+               </div>
+               <div n="2">
+                  <head/>
+                  <div type="a02_protokoll">
+                     <p>Staatssekretär Dr. <hi rend="#letterspaced"><rs type="person"
+                              ref="#krp_person_id__34">Urban</rs></hi> erbittet und erhält die
+                        Ermächtigung, beim <rs type="org" ref="#krp_org_id__244"
+                           >Staatsratsdirektorium</rs> die Einreihung des Generaldirektors für Post-
+                        und Telegrafenangelegenheiten Sektionschef Konrad <rs type="person"
+                           ref="#krp_person_id__58">Hoheisel</rs> in die III. Rangsklasse der
+                        Staatsbeamten in Antrag bringen zu dürfen.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>
