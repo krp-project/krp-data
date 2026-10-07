@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href='http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:acdh="https://vocabs.acdh.oeaw.ac.at/schema#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xml:lang="de">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="a" type="main" n="0092">Kabinettsprotokoll Nr. 92 vom 25. Juli 1919</title>
+            <title level="m" type="main" n="01">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <title level="m" type="sub" n="">Renner II (15. März – 17. Oktober 1919)</title>
+            <meeting>
+               <placeName key="https://d-nb.info/gnd/4066009-6">Wien</placeName>
+               <orgName key="https://d-nb.info/gnd/5162749-8">Kabinettsrat</orgName>
+               <date when-iso="1919-07-25"/>
+            </meeting>
+            <editor>
+               <persName key="https://d-nb.info/gnd/122481836"
+                         role="hasCreator"
+                         xml:id="hwohnout">
+                  <forename>Helmut</forename>
+                  <surname>Wohnout</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</affiliation>
+               <idno type="ORCID">0000-0002-3864-9839</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/120789825"
+                         role="hasCreator"
+                         xml:id="tolechowski">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0003-3291-6876</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/131679384"
+                         role="hasCreator"
+                         xml:id="rlein">
+                  <forename>Richard</forename>
+                  <surname>Lein</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0002-7502-0503</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="aholzer">
+                  <forename>Anna</forename>
+                  <surname>Holzer</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0005-3560-3500</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="dsoelkner">
+                  <forename>Dominik</forename>
+                  <surname>Sölkner</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-9895-7212</idno>
+            </editor>
+            <editor>
+               <persName role="hasContributor" xml:id="ischotzko">
+                  <forename>Ina</forename>
+                  <surname>Schotzko</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-5210-3713</idno>
+            </editor>
+            <funder n="1">
+               <orgName key="https://d-nb.info/gnd/2054142-9" role="hasFunder">Österreichischer Wissenschaftsfonds FWF</orgName>
+               <idno type="project">PAT1495024</idno>
+               <title type="project">Die Protokolle des österreichischen Kabinettsrates 1919–1920</title>
+            </funder>
+            <respStmt>
+               <resp>Projektverantwortung</resp>
+               <orgName key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Projektleitung</resp>
+               <persName key="https://d-nb.info/gnd/120789825" role="hasPrincipalInvestigator">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+                  <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+                  <idno type="ORCID">0000-0003-3291-6876</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Nationaler Forschungspartner</resp>
+               <orgName key="https://d-nb.info/gnd/1123037736" role="hasEnabler">Austrian Centre for Digital Humanities</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Digitalisierung der gedruckten Quellen</resp>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>TEI-Datenmodellierung</resp>
+               <persName role="hasContributor" xml:id="tfruehwirth">
+                  <forename>Timo</forename>
+                  <surname>Frühwirth</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-3997-5193</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technische Supervision</resp>
+               <persName key="https://d-nb.info/gnd/1043833846"
+                         role="hasContributor"
+                         xml:id="pandorfer">
+                  <forename>Peter</forename>
+                  <surname>Andorfer</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-9575-9372</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technisches Consulting und Vorbereitung der Druckausgabe</resp>
+               <persName key="https://d-nb.info/gnd/13281899X"
+                         role="hasContributor"
+                         xml:id="skurz">
+                  <forename>Stephan</forename>
+                  <surname>Kurz</surname>
+                  <affiliation key="https://d-nb.info/gnd/1202798799">Institut für die Erforschung der Habsburgermonarchie und des Balkanraumes</affiliation>
+                  <idno type="ORCID">0000-0003-2546-2570</idno>
+               </persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher key="https://d-nb.info/gnd/1001454-8">Österreichische Akademie der Wissenschaften</publisher>
+            <date when="2028"/>
+            <availability status="free">
+               <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">Lizenziert unter CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/deed.de)</licence>
+            </availability>
+            <idno type="ISBN_Print"/>
+            <idno type="ISBN_Part_epub"/>
+            <idno type="ISBN_Digital"/>
+            <idno type="DOI"/>
+            <idno type="DOI_zenodo"/>
+            <idno type="ebook_ID"/>
+         </publicationStmt>
+         <seriesStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="m" type="main">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <respStmt>
+               <resp>Bearbeitung und Herausgeberschaft</resp>
+               <orgName key="https://d-nb.info/gnd/2024703-5">Universität Wien</orgName>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+         </seriesStmt>
+         <notesStmt>
+            <note>Diese TEI-XML-Datei ist Grundlage für eine Druckausgabe der Edition.</note>
+            <relatedItem>
+               <biblStruct>
+                  <monogr>
+                     <imprint>
+                        <pubPlace key="https://d-nb.info/gnd/4066009-6">Wien</pubPlace>
+                        <publisher key="https://d-nb.info/gnd/2068748-5">Verlag der Österreichischen Akademie der Wissenschaften</publisher>
+                        <date when="2029"/>
+                     </imprint>
+                     <extent/>
+                  </monogr>
+                  <note>
+                     <idno/>
+                     <ptr/>
+                  </note>
+                  <citedRange/>
+               </biblStruct>
+            </relatedItem>
+         </notesStmt>
+         <sourceDesc>
+            <bibl>Quellbestand: AT-OeStA/AdR MRang MR 1Rep KRP Kabinettsratsprotokolle, 1918-1920 (Teilbestand)<ref target="https://www.archivinformationssystem.at/detail.aspx?id=5465">https://www.archivinformationssystem.at/detail.aspx?id=5465</ref>
+            </bibl>
+            <msDesc>
+               <msIdentifier>
+                  <institution key="https://d-nb.info/gnd/37748-X" role="hasOwner">AT-OeStA Österreichisches Staatsarchiv (Archiv (ÖStA))</institution>
+                  <repository key="https://d-nb.info/gnd/1601181-8">AT-OeStA/AdR Archiv der Republik, 1918- (Abteilung)</repository>
+                  <collection>AT-OeStA/AdR MRang MR 1Rep Ministerrat 1. Republik, 1918 - 1938 (Bestand)</collection>
+                  <idno>AT-OeStA_AdR-MRang-MR-1.-Rep.-KRP-092</idno>
+               </msIdentifier>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <abstract>
+            <p>
+          <!--to be generated-->
+        </p>
+         </abstract>
+      </profileDesc>
+      <encodingDesc>
+         <styleDefDecl scheme="css"/>
+         <tagsDecl>
+            <rendition xml:id="b" scheme="css">font-weight:bold;</rendition>
+            <rendition xml:id="su" scheme="css">vertical-align:super;font-size:.7em;</rendition>
+            <rendition xml:id="s" scheme="css">text-decoration:line-through;</rendition>
+            <rendition xml:id="u" scheme="css">text-decoration:underline;</rendition>
+            <rendition xml:id="ow" scheme="css">text-decoration:line-through;text-decoration-style:double;</rendition>
+            <rendition xml:id="r" scheme="css">display:block;text-align:right;</rendition>
+            <rendition xml:id="letterspaced" scheme="css">letter-spacing:0.15em;</rendition>
+            <rendition xml:id="i" scheme="css">font-style:italic;</rendition>
+         </tagsDecl>
+         <editorialDecl>
+            <hyphenation>
+               <p>
+            <!--to be added-->
+          </p>
+            </hyphenation>
+            <correction>
+               <p>
+            <!--to be added-->
+          </p>
+            </correction>
+            <normalization>
+               <p>
+            <!--to be added-->
+          </p>
+            </normalization>
+            <punctuation>
+               <p>
+            <!--to be added-->
+          </p>
+            </punctuation>
+            <stdVals>
+               <p>
+            <!--to be added-->
+          </p>
+            </stdVals>
+            <p>
+          <!--to be added-->
+        </p>
+         </editorialDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#tfruehwirth" when-iso="2026-10-07">TEIGarage output upconverted with upconvert.xsl</change>
+         <change who="#tfruehwirth" when-iso="2026-10-07">TEI header populated with generate_tei_templates.py</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface/>
+   </facsimile>
+   <text>
+      <body>
+         <div xml:id="doc-krp-0092.xml">
+            <head type="dokument">
+               <title type="num">92.<note type="footnote">Das Protokoll trägt den Vermerk <hi rend="#i">Vertraulich!</hi>
+                  </note>
+               </title>
+               <title type="desc">
+                  <pb facs="krp-0092_r-0001"/>
+                  <pb facs="krp-0092_r-0002"/>[Freitag] 1919-07-25</title>
+            </head>
+            <div type="dokumentkopf">
+               <div type="vorsitz">
+                  <head>Vorsitz:</head>
+                  <p>Fink</p>
+               </div>
+               <div type="anwesend">
+                  <head>Anwesend:</head>
+                  <p>Bauer, Bratusch, Deutsch, Eldersch, Ellenbogen, Glöckel, Hanusch, Miklas, Paul, Pflügl, Resch, Schumpeter, Tandler, Waiss, Zerdik</p>
+               </div>
+               <div type="zugezogen">
+                  <head>Zugezogen:</head>
+                  <p>Froehlich, Grimm, Wilfling</p>
+               </div>
+               <div type="schriftfuehrer">
+                  <head>Schriftführer:</head>
+                  <p>unbekannt</p>
+               </div>
+               <div type="dauer">
+                  <head>Dauer:</head>
+                  <p>15.00–17.00 Uhr</p>
+               </div>
+            </div>
+            <div type="komponenten">
+               <p>Reinschrift, Beilagen, Konzept, stenographische Mitschrift, Entwurf der Tagesordnung, diverse Zusätze</p>
+            </div>
+            <div type="beilagen">
+               <head>Beilagen:</head>
+               <list>
+                  <item>
+                     <ref target="#krp-0092_top01">Zu TOP 1</ref>: <ref target="#krp-0092_b01">Beendigung der Geschäfte der Staatsschuldenkontrollkommission</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0092_top02">Zu TOP 2</ref>: <ref target="#krp-0092_b02">Vortrag über die Frage von Abänderungen der Steiermärkischen Landesordnung</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0092_top03">Zu TOP 3</ref>: <ref target="#krp-0092_b03">Liquidierung der Abteilung für Minderheitenschutz- und Propagandadienst</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0092_top05">Zu TOP 5</ref>: <ref target="#krp-0092_b04">Vortrag des Staatsamtes für Inneres und Unterricht zu Zl. 8559/1919 über den Antrag auf Führung des deutschösterreichischen Staatswappens durch die Ingenieurkammer, die behördlich autorisierten Privattechniker und Bergbauingenieure</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0092_top06">Zu TOP 6</ref>: <ref target="#krp-0092_b05">Entwurf einer Vollzugsanweisung der Staatsregierung über die Anwendung der Bestimmungen des Invalidenentschädigungsgesetzes auf Personen des militärischen Berufsstandes und ihre Hinterbliebenen</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0092_top07">Zu TOP 7</ref>: <ref target="#krp-0092_b06">Gesetzesentwurf des Staatssekretärs für Verkehrswesen Zl. 1580 über die Auflösung der Generalinspektion der österreichischen Eisenbahnen und Einbeziehung der Geschäfte in den engen Wirkungskreis des Staatsamtes für Verkehrswesen mit Begründung</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0092_top08">Zu TOP 8</ref>: <ref target="#krp-0092_b07">Entwurf eines Antrags des Staatsamtes für Handel und Gewerbe, Industrie und Bauten auf Erklärung der Ausführung einer Starkstromleitung für die Firma „Henry“-Seifen-, Kerzen- und Fettwarenfabrik in Wels als begünstigter Bau</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0092_top10">Zu TOP 10</ref>: <ref target="#krp-0092_b08">Gesetzesentwurf über die Zeitvorrückung der Supplenten und Assistenten an staatlichen mittleren Unterrichtsanstalten samt Begründung</ref>
+                  </item>
+               </list>
+            </div>
+            <div type="protokoll">
+               <pb facs="krp-0092_r-0003"/>
+               <div type="top" xml:id="krp-0092_top01">
+                  <head>
+                     <label>
+                        <num n="1">1.</num>
+                        <seg>Staatsschuldenkontrollkommission; Beendigung ihrer Wirksamkeit.</seg>
+                     </label>
+                  </head>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> macht von einem Berichte der Staatsschuldenkontrollkommission Mitteilung, wonach sie mit der Gegenzeichnung der Obligationen der 4%igen deutschösterreichischen Staatsanleihe im Gesamtnominalbetrage von 590.010.000 K ihre Geschäfte beendet habe. Da im Sinne des § 9 des Gesetzes vom 6. Februar 1919, StGBl. Nr. 85, über den Staatsrechnungshof die Kontrolle der Gebarung in der gesamten Staatswirtschaft <hi rend="#u">einschließlich der Staatsschulden</hi> auf den Staatsrechnungshof übergegangen ist, wäre die Staatsschuldenkontrollkommission nunmehr ihres Amtes zu entheben. Gemäß § 19 des zitierten Gesetzes sei der Staatsrat zur Enthebung der Kommission ermächtigt. Diese Ermächtigung sei durch den Art. 6 Abs. 1, des Gesetzes vom 14. März 1919, StGBl. Nr. 179, über die Volksvertretung auf die Staatsregierung übergegangen. Der Vorsitzende beantrage daher, der Kabinettsrat wolle die Staatsschuldenkontrollkommission bzw. deren einzelne Mitglieder – Rechtsanwalt Dr. Benedikt als Vorsitzenden, Dr. Ferdinand Wimmer, Minister a. D., Vizegouverneur der Oesterreichisch-ungarischen Bank und Rechtsanwalt Dr. Viktor Kienböck als Mitglieder ihres Amtes entheben und ihn er<pb facs="krp-0092_r-0004"/>mächtigen, den Genannten die erfolgte Enthebung unter Bekanntgabe des Dankes der Staatsregierung für ihre Betätigung in der Staatsschuldenkontrollkommission mitzuteilen und hievon zugleich dem Präsidenten des Staatsrechnungshofes, der nunmehr die Geschäfte der Staatsschuldenkontrollkommission zu übernehmen hat, Kenntnis zu geben.</p>
+                  <p>Der Kabinettsrat pflichtet diesem Antrage bei.</p>
+                  <p>In diesem Zusammenhange verweist Staatssekretär <hi rend="#letterspaced">Eldersch</hi> auf die Notwendigkeit der Unterbringung der nunmehr entbehrlich gewordenen, dieser Kommission zugeteilten Beamten, worauf der Kabinettsrat den sprechenden Staatssekretär einladet, zunächst ein Verzeichnis der in Betracht kommenden Staatsangestellten an jene Ressorts zu leiten, aus welchen sie hervorgegangen sind.</p>
+               </div>
+               <div type="top" xml:id="krp-0092_top02">
+                  <head>
+                     <label>
+                        <num n="2">2.</num>
+                        <seg>Steiermärkische Landesordnung; Abänderungen.</seg>
+                     </label>
+                  </head>
+                  <p>Über Einladung des Vorsitzenden erstattet Sektionsrat Dr. <hi rend="#letterspaced">Froehlich</hi> das diesem Protokoll als Beilage angeschlossene Referat über die Frage von Abänderungen der steiermärkischen Landesordnung.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Bratusch</hi> erklärt sich mit den Ausführungen in die<pb facs="krp-0092_r-0005"/>sem Referate durchaus einverstanden, würde jedoch behufs formaler Änderung einer Stelle des Erlassentwurfes noch ein kurzwegiges Einvernehmen zwischen der Staatskanzlei, dem Justizamte und dem Staatsamte für Finanzen anregen.</p>
+                  <p>Der Kabinettsrat genehmigt schließlich das ihm vorgelegte Referat und pflichtet gleichzeitig der Anregung des Staatssekretärs Dr. Bratusch bei.</p>
+               </div>
+               <div type="top" xml:id="krp-0092_top03">
+                  <head>
+                     <label>
+                        <num n="3">3.</num>
+                        <seg>Staatskanzlei; Abteilung für Minderheitsschutz- und Propagandadienst, Liquidierung.</seg>
+                     </label>
+                  </head>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> teilt mit, dass aufgrund des Staatsratsbeschlusses vom 9. Dezember v. J. in der Staatskanzlei eine eigene Abteilung für Minderheitsschutz errichtet worden sei, welche die deutschen Sprachinseln und Minderheiten, die in den im Gebiete der ehemaligen österreichisch-ungarischen Monarchie entstandenen nationalen Staaten zurückbleiben, samt ihrem materiellen und kulturellen Besitzstand zu verzeichnen, sowie mit diesen Sprachinseln und Minderheiten fortan ständige Verbindung zu halten und in jeder Hinsicht ihre Interessen zu wahren habe. In Verbindung mit der „Minderheitsschutzstelle" sei weiters eine Abteilung „Propagandadienst“ eingerichtet, der es obliegt, in der öffentlichen Meinung der Nachbarvöl<pb facs="krp-0092_r-0006"/>ker die Interessen und Bestrebungen Deutschösterreichs zu vertreten und zu fördern. Eine politische Propaganda irgendwelcher Art im Innern des Staates zu führen, sei – die bedrohten und vom Feinde besetzten Grenzgebiete ausgenommen, – nicht in dem Wirkungskreis der erwähnten Abteilung gelegen.</p>
+                  <p>Angesichts des bevorstehenden Abschlusses der Verhandlungen in St. Germain sei nun die Frage zu prüfen, ob dieser „Minderheitsschutz- und Propagandadienst” aufrechtzuhalten ist. Diese Frage dürfte zu verneinen sein.</p>
+                  <p>Der Kampf um die nationalen Gebiete, welche aufgrund des völkischen Selbstbestimmungsrechtes von der deutschösterreichischen Republik in Anspruch genommen worden waren, sei durch den Friedensschluss zunächst offiziell erledigt. Die deutschen Minderheiten in den Sukzessionsstaaten werden nunmehr durch den Erwerb der neuen Staatsbürgerschaft einer amtlichen Ingerenz der deutschösterreichischen Staatsregierung entrückt. Insoweit einzelne Angehörige dieser Minderheiten die deutschösterreichische Staatsbürgerschaft erwerben, falle die Wahrnehmung ihrer Interessen normalmäßig in den Wirkungskreis des Staatsamtes für Äußeres. Eine hervortretende <pb facs="krp-0092_r-0007"/>Mitwirkung der Staatskanzlei bei diesen Agenden wäre weder vom Standpunkte einer geordneten, einheitlichen Administration noch vom politischen Standpunkte zweckmäßig, müsste doch die politische Deckung aller Verfügungen auf diesem Gebiete vom Staatsamte für Äußeres übernommen werden.</p>
+                  <p>Ebensowenig könne weiterhin ein Propagandadienst Aufgabe der Staatskanzlei sein. Ein solcher Dienst berührt nach Herstellung normaler Zustände die heikelsten Gebiete der Außenpolitik und könne nur im Rahmen der gesamten Führung der außenpolitischen Geschäfte in einer nützlichen Weise versehen werden. In der Hand jeder anderen Stelle werde er zu einer ständigen Quelle von Verlegenheiten und Gefahren.</p>
+                  <p>Für gewisse Geschäfte der Fürsorge, die aus der Abwicklung laufender Aktionen, z. B. für stellenlos gewordene Staatsangestellte zivilen und militärischen Standes u. dgl. sich noch längere Zeit hindurch ergeben werden, würde die bisher als „Sudetendienst" bezeichnete Abteilung unter anderer, den tatsächlichen Verhältnissen entsprechender Bezeichnung zur Verfügung stehen.</p>
+                  <p>
+                     <pb facs="krp-0092_r-0008"/>Der Vorsitzende stelle daher den Antrag, der Kabinettsrat wolle grundsätzlich die Liquidierung der Abteilung der Staatskanzlei „Minderheitsschutz- und Propagandadienst“ beschließen.</p>
+                  <p>Der Kabinettsrat erhebt diesen Antrag zum Beschlusse.</p>
+               </div>
+               <div type="top" xml:id="krp-0092_top04">
+                  <head>
+                     <label>
+                        <num n="4">4.</num>
+                        <seg>Finanzlage der Stadt Graz.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Schumpeter</hi> erbittet die Schlussfassung des Kabinettsrates über ein von der Stadtgemeinde Graz gestelltes dringendes Ansuchen um Gewährung einer staatlichen Subvention im Betrage von 10 Millionen K, von welcher Redner bereits den Betrag von 2 Millionen K in Anhoffnung der Zustimmung des Kabinettsrates der Stadt Graz telegrafisch überwiesen habe.</p>
+                  <p>Nach einer längeren Debatte beschließt der Kabinettsrat, diese Angelegenheit vorläufig zu vertagen und den Staatssekretär für Finanzen einzuladen, an alle Kabinettsmitglieder im Sinne der Geschäftsordnung des Kabinettsrates zunächst eine schriftliche Darstellung des Gegenstandes mit einem motivierten Antrage zu übermitteln.</p>
+                  <p>
+                     <pb facs="krp-0092_r-0009"/>
+                  </p>
+               </div>
+               <div type="top" xml:id="krp-0092_top05">
+                  <head>
+                     <label>
+                        <num n="5">5.</num>
+                        <seg>Führung des deutschösterreichischen Staatswappens durch die Ingenieurkammern und die behördlich autorisierten Privattechniker sowie Bergbauingenieure.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Eldersch</hi> führt aus, dass nach der Verordnung des Ministeriums des Innern vom 24. April 1858, RGBl. Nr. 61, die Führung des kaiserlichen Reichswappens oder Reichsadlers oder eines anderen Landeswappens von einer allerhöchsten Bewilligung oder von der in einem besonderen Gesetze ausgesprochenen Gestattung bedingt gewesen sei.</p>
+                  <p>Im Sinne dieser Verordnung sei unterm 5. Dezember 1910 den behördlich autorisierten Privattechnikern und den aufgrund der Ministerialverordnung vom 23. Mai 1872, RGBl. Nr. 70, bestellten Bergbauingenieuren das Recht verliehen worden, bei den in ihrem Wirkungskreise gelegenen Ausfertigungen den kaiserlichen Adler im Siegel zu führen. Das gleiche Recht wurde unterm 19. April 1915 den aufgrund des Gesetzes vom 2. Jänner 1913, RGBl. Nr. 3, errichteten Ingenieurkammern zuerkannt.</p>
+                  <p>Das Staatsamt für Handel und Gewerbe, Industrie und Bauten habe nunmehr angeregt, dass von den autorisierten Privattechnikern, den Bergbauingenieuren und den Ingenieurkammern in Hinkunft an Stelle des kaiserlichen Adlers das Staatswappen der Republik Deutschösterreich zu führen wäre.</p>
+                  <p>Aus der Berechtigung, das Reichswappen <pb facs="krp-0092_r-0010"/>oder den Reichsadler zu führen, könne nicht ohne weiters das Recht zur Führung des deutschösterreichischen Staatswappens abgeleitet werden. Die Berechtigung sei seinerzeit als besondere monarchische Auszeichnung verliehen worden und sei vielfach auf Erwägungen zurückzuführen gewesen, die den heutigen Verhältnissen und Auffassungen nicht mehr entsprechen. Es werde deshalb daran festzuhalten sein, dass die Befugnis zur Führung des deutschösterreichischen Staatswappens auch dann einer besonderen Genehmigung bedürfe, wenn der Bewerber bisher die Berechtigung zur Führung des kaiserlichen Adlers besaß.</p>
+                  <p>Den behördlich autorisierten Privattechnikern und Bergbauingenieuren, die von der Staatsbehörde in Eid und Pflicht genommen werden und der staatlichen Disziplinargewalt unterstehen, obliegen Aufgaben, die sie mit der Autorität öffentlicher Funktionäre zu besorgen haben. Durch die Berechtigung, das deutschösterreichische Staatswappen im Siegel zu führen, würde ihnen, ähnlich wie den Notaren, weiterhin ein äußeres Zeichen ihres öffentlichen Amtes zugesprochen werden. Das Gleiche gelte von den Ingenieurkammern, welche nach § 1 des Gesetzes vom 2. Jänner 1913, RGB1. Nr. 3, gesetzlichen Vertretungscharakter haben. <pb facs="krp-0092_r-0011"/>Der sprechende Staatssekretär stelle daher den Antrag, es sei den Ingenieurkammern den behördlich autorisierten Privattechnikern und Bergbauingenieuren die Berechtigung zuzuerkennen, bei den in ihrem Wirkungskreis gelegenen Ausfertigungen das Staatswappen der Republik Deutschösterreich zu führen.</p>
+                  <p>Der Kabinettsrat erhebt diesen Antrag zum Beschluss.</p>
+               </div>
+               <div type="top" xml:id="krp-0092_top06">
+                  <head>
+                     <label>
+                        <num n="6">6.</num>
+                        <seg>Vollzugsanweisung der Staatsregierung, betreffend die Anwendung der Bestimmungen des Invalidenentschädigungsgesetzes auf Personen des militärischen Berufsstandes und ihre Hinterbliebenen.</seg>
+                     </label>
+                  </head>
+                  <p>Unterstaatssekretär Dr. <hi rend="#letterspaced">Waiss</hi> erbittet und erhält vom Kabinettsrate die Ermächtigung zur Erlassung einer Vollzugsanweisung der Staatsregierung, betreffend die Anwendung der Bestimmungen des Invalidenentschädigungsgesetzes auf Personen des militärischen Berufsstandes und ihre Hinterbliebenen.</p>
+               </div>
+               <div type="top" xml:id="krp-0092_top07">
+                  <head>
+                     <label>
+                        <num n="7">7.</num>
+                        <seg>Gesetzentwurf, betreffend die Auflösung der Generalinspektion der österreichischen Eisenbahnen und Einbeziehung der Geschäfte derselben in den engeren Wirkungskreis des Staatsamtes für Verkehrswesen.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Paul</hi> erbittet und erhält vom Kabinettsrate die Ermächtigung zur Einbringung eines Gesetzentwurfes, betreffend die Auflösung der Generalinspektion der österreichischen Eisenbahnen und Einbeziehung der Geschäfte derselben in den engeren Wirkungskreis des Staatsamtes für Verkehrswesen.</p>
+                  <p>
+                     <pb facs="krp-0092_r-0012"/>
+                  </p>
+               </div>
+               <div type="top" xml:id="krp-0092_top08">
+                  <head>
+                     <label>
+                        <num n="8">8.</num>
+                        <seg>„Henry“-Seifen-, Kerzen- und Fettwarenfabrik [GmbH] in Wels; Erklärung der Ausführung einer Starkstromfreileitung als begünstigter Bau.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Ellenbogen</hi> erbittet unter eingehender Darstellung der Sachlage vom Kabinettsrate die Ermächtigung, ein Einschreiten der „Henry" Seifen-, Kerzen- und Fettwarenfabrik GmbH in Wels um Erklärung der Ausführung einer Starkstromfreileitung vom Elektrizitätswerk in Wels nach der neu projektierten Anlage zur Härtung von Fetten als begünstigter Bau im Sinne der kaiserlichen Verordnung vom 16. Oktober 1914, RGBl. Nr. 284 willfahren zu dürfen.</p>
+                  <p>Der Kabinettsrat erteilt dem sprechenden Unterstaatssekretär die erbetene Ermächtigung.</p>
+               </div>
+               <div type="top" xml:id="krp-0092_top09">
+                  <head>
+                     <label>
+                        <num n="9">9.</num>
+                        <seg>Konferenz über die Frage der Warenein- und -ausfuhr in Steiermark.</seg>
+                     </label>
+                  </head>
+                  <p>Unterstaatssekretär Dr. Ellenbogen macht Mitteilung von einer Zuschrift der Landesregierung in Graz, in welcher die Entsendung von Vertretern der beteiligten Staatsämter zu einer am 22. Juli d. J. in Graz abzuhaltenden Besprechung über die lokale Regelung der Warenein- und -ausfuhr in Steiermark verlangt wird. Der sprechende Unterstaatssekretär ist der Anschauung, dass ungeachtet des durchaus ungehörigen Tones, in welchem dieses Schreiben gehalten ist, Vertreter <pb facs="krp-0092_r-0013"/>der Staatsämter für Finanzen und für Volksernährung nach Graz entsendet werden sollten, damit allzu weitgehende Beschlüsse bei dieser Besprechung durch unmittelbares Eingreifen der Regierungsvertreter hintangehalten werden. Die Delegierten wären aber in ihren Vollmachten auf die bloße Einholung von Informationen über den Gang der Verhandlungen zu beschränken und mit keinerlei Entscheidungsbefugnis auszustatten. Die Mitteilungen des Unterstaatssekretärs Dr. Ellenbogen veranlassen den Kabinettsrat, sich mit der ungebührlichen Form zu befassen, in der die steiermärkische Landesregierung seit längerer Zeit mit den Zentralbehörden in Wien verkehre. Über Antrag des Staatssekretärs <hi rend="#letterspaced">Paul</hi> beschließt der Kabinettsrat, dass die Staatskanzlei der Landesregierung in Graz in einem besonderen Erlasse die Unzulässigkeit des von ihr mehreren Staatsämtern gegenüber angeschlagenen Tones ernstlich auszustellen habe. Mit Bezug auf die gewünschte Entsendung von Vertretern der Staatsämter zu der Besprechung am 22. Juli wird in diesem Erlasse schließlich der Landesregierung noch zu eröffnen sein, dass die Referenten augenblicklich nicht abkömmlich seien und erst im Laufe der nächsten Woche <pb facs="krp-0092_r-0014"/>zwecks Einholung von Informationen und Entgegennahme der Wünsche der steiermärkischen Landesregierung nach Graz entsendet werden würden.</p>
+               </div>
+               <div type="top" xml:id="krp-0092_top10">
+                  <head>
+                     <label>
+                        <num n="10">10.</num>
+                        <seg>Gesetzentwurf, betreffend die Zeitvorrückung der Supplenten und Assistenten an staatlichen mittleren Unterrichtsanstalten.</seg>
+                     </label>
+                  </head>
+                  <p>Unterstaatssekretär <hi rend="#letterspaced">Glöckel</hi> erbittet und erhält vom Kabinettsrate die Ermächtigung zur Einbringung eines Gesetzentwurfes, betreffend die Zeitvorrückung der Supplenten und Assistenten an staatlichen mittleren Unterrichtsanstalten.</p>
+               </div>
+               <div type="top" xml:id="krp-0092_top11">
+                  <head>
+                     <label>
+                        <num n="11">11.</num>
+                        <seg>Besetzung der Stelle des staatlichen Direktors bei dem Credit-Institute für öffentliche Unternehmungen und Arbeiten.</seg>
+                     </label>
+                  </head>
+                  <p>Laut Mitteilung des Staatssekretärs Dr. <hi rend="#letterspaced">Schumpeter</hi> soll nach § 15 der vom Staatsamte für Inneres und Unterricht bereits genehmigten neuen Statuten des österreichischen Credit-Institutes für öffentliche Unternehmungen und Arbeiten dem gegenwärtigen Direktor ein staatlicher Vertrauensmann an die Seite gestellt werden, der vom Staatsamte für Finanzen zu ernennen ist. Der sprechende Staatssekretär habe dem Kabinettsrate bereits am 8. und 15. Juli 1919 mitgeteilt, dass für diese Stelle ein aktiver und in der Aktivität bleibender Beamter des Finanzressorts ausersehen sei.</p>
+                  <p>
+                     <pb facs="krp-0092_r-0015"/>Der Kabinettsrat habe seine Mitteilungen zur Kenntnis genommen.</p>
+                  <p>Für diesen Posten bestimme er nun den Oberfinanzrat im Staatsamte für Finanzen, Dr. Ernst Mosing, der gleichzeitig Börsekommissär an der Wiener Börse und Referent für das gesamte Bankwesen bleibe. Durch seine langjährigen sachlichen Erfahrungen und seine Vertrautheit mit den in Betracht kommenden zahlreichen Personen der Finanzwelt erscheine der Genannte für diesen Posten besonders geeignet. Gerade die Verbindung zwischen dem Referate für Bank- und Börsewesen und der Direktion des ersten halbstaatlichen Bankinstitutes dürfte einen heilsamen Einfluss auf unser Bankwesen ausüben. Da Dr. Mosing bisher auch Staatskommissär der [Allgemeinen österreichischen] Boden-Credit-Anstalt war, dieser Posten aber mit der Stelle des Direktors eines halbstaatlichen Konkurrenzinstitutes nicht vereinbar erscheine, werde er von dem Staatskommissariate bei der [Allgemeinen österreichischen] Boden-Credit-Anstalt enthoben werden.</p>
+                  <p>Der Kabinettsrat nimmt diese Mitteilungen genehmigend zur Kenntnis.</p>
+                  <p/>
+               </div>
+            </div>
+            <div type="stenogramme">
+               <div n="1">
+                  <head>EINZUFÜGEN</head>
+                  <p>Transkription in Arbeit.</p>
+                  <p/>
+               </div>
+               <div n="2">
+                  <head>EINZUFÜGEN</head>
+                  <p>Transkription in Arbeit.</p>
+               </div>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

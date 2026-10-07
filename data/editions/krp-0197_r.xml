@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href='http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:acdh="https://vocabs.acdh.oeaw.ac.at/schema#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xml:lang="de">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="a" type="main" n="0197">Kabinettsprotokoll Nr. 197 vom 2. Juli 1920</title>
+            <title level="m" type="main" n="01">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <title level="m" type="sub" n="">Renner III (17. Oktober 1919 – 7. Juli 1920)</title>
+            <meeting>
+               <placeName key="https://d-nb.info/gnd/4066009-6">Wien</placeName>
+               <orgName key="https://d-nb.info/gnd/5162749-8">Kabinettsrat</orgName>
+               <date when-iso="1920-07-02"/>
+            </meeting>
+            <editor>
+               <persName key="https://d-nb.info/gnd/122481836"
+                         role="hasCreator"
+                         xml:id="hwohnout">
+                  <forename>Helmut</forename>
+                  <surname>Wohnout</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</affiliation>
+               <idno type="ORCID">0000-0002-3864-9839</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/120789825"
+                         role="hasCreator"
+                         xml:id="tolechowski">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0003-3291-6876</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/131679384"
+                         role="hasCreator"
+                         xml:id="rlein">
+                  <forename>Richard</forename>
+                  <surname>Lein</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0002-7502-0503</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="aholzer">
+                  <forename>Anna</forename>
+                  <surname>Holzer</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0005-3560-3500</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="dsoelkner">
+                  <forename>Dominik</forename>
+                  <surname>Sölkner</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-9895-7212</idno>
+            </editor>
+            <editor>
+               <persName role="hasContributor" xml:id="ischotzko">
+                  <forename>Ina</forename>
+                  <surname>Schotzko</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-5210-3713</idno>
+            </editor>
+            <funder n="1">
+               <orgName key="https://d-nb.info/gnd/2054142-9" role="hasFunder">Österreichischer Wissenschaftsfonds FWF</orgName>
+               <idno type="project">PAT1495024</idno>
+               <title type="project">Die Protokolle des österreichischen Kabinettsrates 1919–1920</title>
+            </funder>
+            <respStmt>
+               <resp>Projektverantwortung</resp>
+               <orgName key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Projektleitung</resp>
+               <persName key="https://d-nb.info/gnd/120789825" role="hasPrincipalInvestigator">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+                  <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+                  <idno type="ORCID">0000-0003-3291-6876</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Nationaler Forschungspartner</resp>
+               <orgName key="https://d-nb.info/gnd/1123037736" role="hasEnabler">Austrian Centre for Digital Humanities</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Digitalisierung der gedruckten Quellen</resp>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>TEI-Datenmodellierung</resp>
+               <persName role="hasContributor" xml:id="tfruehwirth">
+                  <forename>Timo</forename>
+                  <surname>Frühwirth</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-3997-5193</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technische Supervision</resp>
+               <persName key="https://d-nb.info/gnd/1043833846"
+                         role="hasContributor"
+                         xml:id="pandorfer">
+                  <forename>Peter</forename>
+                  <surname>Andorfer</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-9575-9372</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technisches Consulting und Vorbereitung der Druckausgabe</resp>
+               <persName key="https://d-nb.info/gnd/13281899X"
+                         role="hasContributor"
+                         xml:id="skurz">
+                  <forename>Stephan</forename>
+                  <surname>Kurz</surname>
+                  <affiliation key="https://d-nb.info/gnd/1202798799">Institut für die Erforschung der Habsburgermonarchie und des Balkanraumes</affiliation>
+                  <idno type="ORCID">0000-0003-2546-2570</idno>
+               </persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher key="https://d-nb.info/gnd/1001454-8">Österreichische Akademie der Wissenschaften</publisher>
+            <date when="2028"/>
+            <availability status="free">
+               <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">Lizenziert unter CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/deed.de)</licence>
+            </availability>
+            <idno type="ISBN_Print"/>
+            <idno type="ISBN_Part_epub"/>
+            <idno type="ISBN_Digital"/>
+            <idno type="DOI"/>
+            <idno type="DOI_zenodo"/>
+            <idno type="ebook_ID"/>
+         </publicationStmt>
+         <seriesStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="m" type="main">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <respStmt>
+               <resp>Bearbeitung und Herausgeberschaft</resp>
+               <orgName key="https://d-nb.info/gnd/2024703-5">Universität Wien</orgName>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+         </seriesStmt>
+         <notesStmt>
+            <note>Diese TEI-XML-Datei ist Grundlage für eine Druckausgabe der Edition.</note>
+            <relatedItem>
+               <biblStruct>
+                  <monogr>
+                     <imprint>
+                        <pubPlace key="https://d-nb.info/gnd/4066009-6">Wien</pubPlace>
+                        <publisher key="https://d-nb.info/gnd/2068748-5">Verlag der Österreichischen Akademie der Wissenschaften</publisher>
+                        <date when="2029"/>
+                     </imprint>
+                     <extent/>
+                  </monogr>
+                  <note>
+                     <idno/>
+                     <ptr/>
+                  </note>
+                  <citedRange/>
+               </biblStruct>
+            </relatedItem>
+         </notesStmt>
+         <sourceDesc>
+            <bibl>Quellbestand: AT-OeStA/AdR MRang MR 1Rep KRP Kabinettsratsprotokolle, 1918-1920 (Teilbestand)<ref target="https://www.archivinformationssystem.at/detail.aspx?id=5465">https://www.archivinformationssystem.at/detail.aspx?id=5465</ref>
+            </bibl>
+            <msDesc>
+               <msIdentifier>
+                  <institution key="https://d-nb.info/gnd/37748-X" role="hasOwner">AT-OeStA Österreichisches Staatsarchiv (Archiv (ÖStA))</institution>
+                  <repository key="https://d-nb.info/gnd/1601181-8">AT-OeStA/AdR Archiv der Republik, 1918- (Abteilung)</repository>
+                  <collection>AT-OeStA/AdR MRang MR 1Rep Ministerrat 1. Republik, 1918 - 1938 (Bestand)</collection>
+                  <idno>AT-OeStA_AdR-MRang-MR-1.-Rep.-KRP-197</idno>
+               </msIdentifier>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <abstract>
+            <p>
+          <!--to be generated-->
+        </p>
+         </abstract>
+      </profileDesc>
+      <encodingDesc>
+         <styleDefDecl scheme="css"/>
+         <tagsDecl>
+            <rendition xml:id="b" scheme="css">font-weight:bold;</rendition>
+            <rendition xml:id="su" scheme="css">vertical-align:super;font-size:.7em;</rendition>
+            <rendition xml:id="s" scheme="css">text-decoration:line-through;</rendition>
+            <rendition xml:id="u" scheme="css">text-decoration:underline;</rendition>
+            <rendition xml:id="ow" scheme="css">text-decoration:line-through;text-decoration-style:double;</rendition>
+            <rendition xml:id="r" scheme="css">display:block;text-align:right;</rendition>
+            <rendition xml:id="letterspaced" scheme="css">letter-spacing:0.15em;</rendition>
+            <rendition xml:id="i" scheme="css">font-style:italic;</rendition>
+         </tagsDecl>
+         <editorialDecl>
+            <hyphenation>
+               <p>
+            <!--to be added-->
+          </p>
+            </hyphenation>
+            <correction>
+               <p>
+            <!--to be added-->
+          </p>
+            </correction>
+            <normalization>
+               <p>
+            <!--to be added-->
+          </p>
+            </normalization>
+            <punctuation>
+               <p>
+            <!--to be added-->
+          </p>
+            </punctuation>
+            <stdVals>
+               <p>
+            <!--to be added-->
+          </p>
+            </stdVals>
+            <p>
+          <!--to be added-->
+        </p>
+         </editorialDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#tfruehwirth" when-iso="2026-10-07">TEIGarage output upconverted with upconvert.xsl</change>
+         <change who="#tfruehwirth" when-iso="2026-10-07">TEI header populated with generate_tei_templates.py</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface/>
+   </facsimile>
+   <text>
+      <body>
+         <div xml:id="doc-krp-0197.xml">
+            <head type="dokument">
+               <title type="num">197.<note type="footnote">Das Protokoll trägt den Vermerk <hi rend="#i">Vertraulich!</hi>
+                  </note>
+               </title>
+               <title type="desc">
+                  <pb facs="krp-0197_r-0001"/>[Freitag] 1920-07-02</title>
+            </head>
+            <div type="dokumentkopf">
+               <div type="vorsitz">
+                  <head>Vorsitz:</head>
+                  <p>Renner</p>
+               </div>
+               <div type="anwesend">
+                  <head>Anwesend:</head>
+                  <p>Eisler, Eldersch, Ellenbogen, Glöckel, Hanusch, Loewenfeld-Russ, Reisch, Tandler</p>
+               </div>
+               <div type="zugezogen">
+                  <head>Zugezogen:</head>
+                  <p>[Froehlich], Hoheisel, Mannlicher, Pozzi</p>
+               </div>
+               <div type="schriftfuehrer">
+                  <head>Schriftführer:</head>
+                  <p>unbekannt</p>
+               </div>
+               <div type="dauer">
+                  <head>Dauer:</head>
+                  <p>15.00–17.00 Uhr</p>
+               </div>
+            </div>
+            <div type="komponenten">
+               <p>Reinschrift, Beilagen, Konzept, stenographische Mitschrift, Entwurf der Tagesordnung, diverse Zusätze</p>
+            </div>
+            <div type="beilagen">
+               <head>Beilagen:</head>
+               <list>
+                  <item>
+                     <ref target="#krp-0197_top01">Zu TOP 1</ref>: <ref target="#krp-0197_b01">Parte des Staatssekretärs für Verkehrswesen Ludwig Paul</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0197_top06">Zu TOP 6</ref>: <ref target="#krp-0197_b02">Vortrag des Staatssekretärs für Handel und Gewerbe, Industrie und Bauten z. Zl. 15.627/XXI b-Arb.-1920 über den Gesetzesbeschluss des Salzburger Landtages zu den gewerblichen Fortbildungsschulen im Land Salzburg</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0197_top07">Zu TOP 7</ref>: <ref target="#krp-0197_b03">Gesetzesentwurf mit Begründung zu St.A.Z. 15.516-1920 über die Dienstverhältnisse der unter Art. IV des Gesetzes vom 25. Jänner 1914 RGBl. Nr. 15 fallenden Postdienerschaft mit Dienstprüfung</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0197_top09">Zu TOP 9</ref>: <ref target="#krp-0197_b04">Vortrag des Staatsamtes für Finanzen über die Erlassung einer Vollzugsanweisung für den Verkehr mit Edelmetallen und Edelmetallwaren mit Vollzugsanweisung zu Zl. 41.705/1920</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0197_top10">Zu TOP 10</ref>: <ref target="#krp-0197_b05">Vortrag des Staatsamtes für Finanzen Zl. 53.534 über die Erhöhung der Gnadengaben</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0197_top11">Zu TOP 11</ref>: <ref target="#krp-0197_b06">Vorlage des Staatsamtes für Volksernährung über die Beibehaltung der gegenwärtigen Preisspannung beim Kleinverkauf von Rindfleisch in Wien</ref>
+                  </item>
+               </list>
+            </div>
+            <div type="protokoll">
+               <pb facs="krp-0197_r-0002"/>
+               <div type="top" xml:id="krp-0197_top01">
+                  <head>
+                     <label>
+                        <num n="1">1.</num>
+                        <seg>Trauerkundgebung für den verstorbenen Staatssekretär Ludwig Paul.</seg>
+                     </label>
+                  </head>
+                  <p>Vor Aufnahme der meritorischen Verhandlungen des Kabinettsrates ergreift der <hi rend="#letterspaced">Vorsitzende</hi> das Wort und führt aus:</p>
+                  <p>„Ein überaus schmerzlicher Verlust, der uns bereits vor einigen Tagen unmittelbar bevorzustehen schien, den wir aber hernach wieder als abgewendet betrachten zu können glaubten, hat uns nun doch betroffen: Unser Kollege Ludwig Paul ist in der Blüte seines Lebens und auf der Höhe seiner Schaffenskraft uns entrissen worden. Paul ist uns in der drangvollsten Zeit als treuer, opferbereiter Mitarbeiter, wie auch als ein ausgezeichneter Mensch lieb und wert geworden. Was er für den Staat bedeutete, brauche ich nicht auseinanderzusetzen, denn es ist in uns allen noch der Gedanke an <pb facs="krp-0197_r-0003"/>den ungeheueren Dienst lebendig, welchen er der Republik dadurch leistete, dass er es vermöge seiner genauen Kenntnis des Ressorts, des Vertrauens, das er sich durch seine Fürsorge bei dem gesamten Personal, aus dem er selbst hervorgegangen war, zu erringen wusste, seines Pflichteifers und seiner Loyalität zustande brachte, das staatliche Verkehrswesen in den Zeiten schwerster sozialer Beunruhigung aufrecht zu erhalten und dadurch den Staat vor den gefährlichsten Erschütterungen zu bewahren. Nun ist er – mitten im Dienste – selbst ein Opfer des Dienstes geworden und hat eine fast unersetzbare Lücke zurückgelassen.</p>
+                  <p>Voll Trauer nehmen wir in diesem Kreise Abschied von ihm; wir wollen ihm in unseren Herzen eine Stätte treuen Gedenkens errichten und Zeugnis davon ablegen, dass die Republik dem Dahingeschiedenen tiefen Dank für die Dienste schuldet, die er ihr in den schwersten Tagen ihres Bestandes erwiesen.</p>
+                  <p>Die Herren haben sich zum Zeichen ihrer Trauer von den Sitzen erhoben und damit ihre Zustimmung zu erkennen gegeben, dass diese Trauerkundgebung dem Kabinettsprotokolle einverleibt werde.“</p>
+                  <p>Nach dem Antrage des Vorsitzenden beschließt sodann der Kabinettsrat, die Kosten der Krankheit und der Beerdigung des Staatssekretärs Paul aus Staatsmitteln zu tragen.</p>
+               </div>
+               <div type="top" xml:id="krp-0197_top02">
+                  <head>
+                     <label>
+                        <num n="2">2.</num>
+                        <seg>Frage der Beteiligung Österreichs an einer Napoleon-Gedächtnisausstellung im Jahre 1921 in Malmaison.</seg>
+                     </label>
+                  </head>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> bringt dem Kabinettsrat zur Kenntnis, dass eine französische Gesellschaft, die sich die Pflege des Andenkens Napoleon I. zur Aufgabe setzt, an die österreichische <pb facs="krp-0197_r-0004"/>Regierung mit der Einladung herangetreten sei, sich an einer im nächsten Jahre anlässlich des 100. Todestages Napoleons geplanten Gedächtnisausstellung in Malmaison mit den in ihrem Besitz befindlichen Denkwürdigkeiten aus der napoleonischen Zeit zu beteiligen. Im Hinblick auf den Eindruck, den eine Beteiligung Österreichs an der Ausstellung in den politischen Kreisen des In- und Auslandes hervorrufen würde, habe Redner die Antwort auf diese Einladung zunächst der Entscheidung des Kabinettsrates vorbehalten.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Ellenbogen</hi> wendet sich dagegen, dass etwa der österreichische Staat selbst als Aussteller auftrete. Das äußerste Entgegenkommen wäre, dass die Regierung der erwähnten Gesellschaft über ein etwaiges Ansuchen gewisse Objekte der napoleonischen Zeit aus ihren Museal- und Archivbeständen zur Einreihung in die Ausstellung leihweise überlasse.</p>
+                  <p>Der Kabinettsrat sieht schließlich, um der künftigen Regierung hierin nicht vorzugreifen, von einer Beschlussfassung in der Angelegenheit ab und vertagt die Schlussfassung über den Gegenstand.</p>
+               </div>
+               <div type="top" xml:id="krp-0197_top03">
+                  <head>
+                     <label>
+                        <num n="3">3.</num>
+                        <seg>Einstellung des Eisenbahnverkehres mit Ungarn.</seg>
+                     </label>
+                  </head>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> teilt mit, dass er sich aufgrund des Ergebnisses einer langen Beratung mit dem Staatssekretär Hanusch und dem Sektionschef im Staatsamt für Verkehrswesen Ing. Enderes veranlasst gesehen habe, die Einstellung des Eisenbahnverkehres mit Ungarn vom 2. Juli angefangen zu verfügen. Diese Maßnahme habe sich angesichts der Zustände, wie sie sich im Gefolge des vom Internationalen Gewerkschaftsbunde gegen Ungarn verhängten Verkehrsboykotts auf der Ostbahn entwickelt haben, schließ<pb facs="krp-0197_r-0005"/>lich als das einzige Mittel erwiesen, um einer vollständigen Desorganisation des Eisenbahndienstes und einer schweren Gefährdung der Reisenden, Güter, wie auch der Eisenbahnanlagen vorzubeugen. Die Entscheidung habe ohne Verzug getroffen werden müssen, da Sektionschef Ing. Enderes erklärte, dass jeder Aufschub die folgenschwersten Ereignisse nach sich ziehen könne.</p>
+                  <p>Redner habe im Einvernehmen mit Staatssekretär Hanusch mit der Anordnung der Verkehrssperre gleichzeitig die Vertreter der beiden, in der Frage der Beteiligung am Verkehrsboykott einander gegenüberstehenden Gruppen der Eisenbahnbediensteten zu einer Besprechung zu sich berufen, um die reibungslose Wiederaufnahme des Dienstes seitens aller Angestellten der Ostbahndirektion herbeizuführen.</p>
+                  <p>Es sei gelungen, diesfalls ein Einverständnis herbeizuführen, so dass die Hoffnung gerechtfertigt erscheine, dass sich nunmehr der Bahnverkehr wieder glatt abwickeln werde.</p>
+                  <p>Die Stellung der Regierung gegenüber Ungarn habe dadurch eine wesentliche Erleichterung erfahren, dass die dortige Regierung von Staats wegen eine Verkehrssperre gegen Österreich anordnete und sich damit in der Boykottfrage im Gegensatze zur österreichischen Regierung als Partei erklärte.</p>
+                  <p>Trotz dieser Haltung der ungarischen Regierung, trage die Einstellung des Eisenbahnverkehres nach Ungarn aber lediglich den Charakter einer aus technischen Gründen unabwendbar gewordenen Notverfügung, die sofort wieder aufgehoben werde, sobald die innerhalb des Personals aufgetretenen Streitfragen bereinigt sein werden. Redner beabsichtige, bei der tschechoslowakischen und jugoslawischen Regierung anzufragen, welche Maßnahmen dort im Zusammenhange mit dem internationalen Verkehrsboykott getroffen wurden, damit in diesem Belange von den drei Nachbarstaaten Ungarns ein einheitliches Vorgehen beobachtet werde.</p>
+                  <p>
+                     <pb facs="krp-0197_r-0006"/>In der sich hieran anschließenden Debatte wurde unter anderem die Frage erörtert, in welcher Weise Sendungen nach Ungarn, die dem Verderben ausgesetzt sind und infolge der Verkehrseinstellung nicht weiterrollen können, behandelt werden sollen. Der Kabinettsrat einigt sich in der Auffassung, dass in dieser Hinsicht nach den Bestimmungen des Eisenbahnbetriebsreglements vorzugehen sei.</p>
+                  <p>Der Kabinettsrat nimmt schließlich den Bericht des Vorsitzenden zustimmend zur Kenntnis.</p>
+               </div>
+               <div type="top" xml:id="krp-0197_top04">
+                  <head>
+                     <label>
+                        <num n="4">4.</num>
+                        <seg>Kredite für die Elektrisierung der Staatsbahnen.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Ellenbogen</hi> berichtet, dass die vom Kabinettsrate in seiner letzten Sitzung angeordnete zwischenstaatsamtliche Verhandlung über die Frage der Bereitstellung entsprechender Kredite für die Bestreitung der laufenden Auslagen für die Elektrisierung der Staatsbahnen am 1. Juli d. J. stattgefunden habe. Hierüber sei nachstehendes Protokoll verfasst worden: „Niederschrift über die am 1. Juli 1920 unter dem Vorsitze des Staatssekretärs Dr. Ellenbogen und in Anwesenheit von Vertretern des Staatsamtes für Finanzen und des Elektrisierungsamtes der österreichischen Staatsbahnen des WEWA und des Staatsamtes für Verkehrswesen abgeführten Verhandlung, betreffend die Bereitstellung der Mittel für die Bestreitung der laufenden Auslagen für die Elektrisierung der Staatsbahnen.</p>
+                  <p>Der Kabinettsrat vom 30. Juni hat sich für die Abhaltung dieser Konferenz ausgesprochen und erwartet von ihr einen Vorschlag zur Lösung der Frage, die sich aus folgender Sachlage ergeben hat:</p>
+                  <p>Bekanntlich hat die Nationalversammlung ein einmonatliches Budgetprovisorium beschlossen, kraft dessen die laufenden Ausgaben im Ausmaße eines Zwölftels der Kreditbeträge des abgelaufenen Verwal<pb facs="krp-0197_r-0007"/>tungsjahres im Juli 1920 bestritten werden können. Da dem Elektrisierungsamt der österreichischen Staatsbahnen im Jahre 1920 kreditmäßig 95 Millionen K zur Verfügung standen, so könnte dieses Amt im Juli 1920 Ausgaben nur bis zur Höhe von 8 Millionen [K] vornehmen. Demgegenüber wurde in der Kabinettskonferenz von Seite des Elektrisierungsamtes nachgewiesen, dass allein die durch vertragsmäßige Verpflichtungen unvermeidbar im Juli 1920 auftretenden Ausgaben sich mindestens auf 100 Millionen K belaufen und dass ferner der für den Beginn der Kraftwerksbauten am Ruetzbache, im Stubachtale und an der Mallnitz im Juli 1920 voraussichtlich auftretende Geldbedarf 3 Millionen K betragen werde, so dass das Gelderfordernis des Elektrisierungsamtes im laufenden Monat allein für die allerdringendsten Zahlungen mindestens sich auf 73 Millionen K belaufen wird. Nach längerer Erörterung der Frage vom bautechnischen, sozialpolitischen und staatsfinanziellen Standpunkte war man in der Anschauung einig, dass ohne unabsehbare Folgen eine Drosselung bereits im Gange befindlicher Bauten und Herstellungen nicht möglich sei und für die kurze Spanne Zeit bis zur Verabschiedung des Gesetzentwurfes über die Elektrisierung der Staatsbahnen zur Bestreitung der dringendsten laufenden Ausgaben eine Ausgabenermächtigung der Staatsbahnverwaltung zu erteilen sei. Hiebei ist zu erwägen, dass die Staatsbahnverwaltung ohnehin von der ihr mit dem Kabinettsratsbeschlusse vom 16. März 1920 erteilten Ausgabenermächtigung, die Elektrisierungskredite bis zu 205 Millionen K überschreiten zu dürfen, wegen des inzwischen eingetretenen Ablaufes des Verwaltungsjahres keinen Gebrauch machen konnte, und sohin mehr als 200 Millionen K, die bis zum 1. Juli 1920 sonst für die Elektrisierung der Staatsbahnen zur Verfügung gestanden wären, verfallen lassen musste.</p>
+                  <p>Von der Voraussetzung ausgehend, dass der Regierungsentwurf zur Sicherstellungsvorlage noch im Laufe des Monates Juli Gesetz werde, hat sich sohin die Kabinettskonferenz unter Führung des <pb facs="krp-0197_r-0008"/>Staatssekretärs Dr. Ellenbogen zu dem Antrage an den Kabinettsrat entschieden, der in Folgendem zusammenzufassen ist:</p>
+                  <p>Der Kabinettsrat wolle beschließen, dass der Staatsbahnverwaltung zur Begleichung ihrer im Juli 1920 unvermeidbar zu erfüllenden Verpflichtungen und zur Fortführung bereits im Gange befindlicher Kraftwerksbauten, d. i. neben dem Spullerseewerke auch die begonnenen Kraftwerksbauten am Ruetzbache, im Stubachtale und an der Mallnitz eine Ausgabenermächtigung von 100 Millionen K erteilt werde, wobei der Staatsbahnverwaltung zur Pflicht gemacht wird, durch Zurückstellung von anderen Investitionsausgaben im Laufe des Monates Juli das Gleichgewicht in der Ausgabengebarung des Staatsamtes für Verkehrswesen während des einmonatlichen Budgetprovisoriums tunlichst zu wahren.“</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Reisch</hi> erklärt gegen diesen Antrag unter der Bedingung keine Einwendung zu erheben, dass die Bauleitung beauftragt werde, von der Einleitung und Inangriffnahme neuer Bauten insolange abzusehen, als nicht der Eingang der Darlehensvaluta aus der Investitionsanleihe vollkommen sichergestellt ist.</p>
+                  <p>Der Kabinettsrat erhebt den Antrag des Staatssekretärs Dr. Ellenbogen zum Beschlusse und weist ihn gleichzeitig an, der Anregung des Staatssekretärs für Finanzen in geeigneter Weise Rechnung zu tragen.</p>
+               </div>
+               <div type="top" xml:id="krp-0197_top05">
+                  <head>
+                     <label>
+                        <num n="5">5.</num>
+                        <seg>Beitritt der Staatsregierung zu dem Gesetzesbeschlusse der Nationalversammlung, betreffend die Strafgesetznovelle vom Jahre 1920.</seg>
+                     </label>
+                  </head>
+                  <p>Nach dem Vorschlage des <hi rend="#letterspaced">Vorsitzenden</hi> erhebt der Kabinettsrat gegen das von der Nationalversammlung beschlossene Gesetz, womit die Strafprozessordnung vom 23. Mai 1873, RGBl. Nr. 119, das Einführungsgesetz dazu und das Gesetz über die Bildung der Geschworenenlisten vom 23. Mai 1873, RGBl. Nr. 121, in der Fassung vom <pb facs="krp-0197_r-0009"/>23. Jänner 1919, StGBl. Nr. 37 abgeändert werden (Strafprozessnovelle vom Jahre 1920) keine Einwendung.</p>
+                  <p>Das Gesetz ist demgemäß nach Gegenzeichnung durch den Staatskanzler und die zuständigen Staatssekretäre dem Präsidenten der Nationalversammlung zur Fertigung vorzulegen und sodann kundzumachen.</p>
+               </div>
+               <div type="top" xml:id="krp-0197_top06">
+                  <head>
+                     <label>
+                        <num n="6">6.</num>
+                        <seg>Gesetzesbeschluss des Salzburger Landtages, betreffend die gewerblichen Fortbildungsschulen im Lande Salzburg.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Ellenbogen</hi> bespricht die wesentlichsten Bestimmungen des vom Salzburger Landtag in der Sitzung vom 8. Juni l. J. beschlossenen Gesetzes, betreffend die gewerblichen Fortbildungsschulen im Lande Salzburg, und bemerkt, dass gegen den Gesetzesbeschluss, der in gedeihlichster Weise die Weiterentwicklung des Fortbildungsschulwesens in Salzburg fördere, in sachlicher oder formaler Hinsicht kein Bedenken vorliege. Bloß bezüglich der Vollzugsklausel, welche mit der Durchführung die Staatssekretäre für Handel und Gewerbe, Industrie und Bauten und für Inneres und Unterricht, sowie die Landesregierung in Salzburg betraue, solle über Wunsch des Unterrichtsamtes der Landesregierung aus prinzipiellen Gründen nahegelegt werden, von der Anführung der Landesregierung abzusehen.</p>
+                  <p>Nach dem Antrage des sprechenden Staatssekretärs beschließt der Kabinettsrat von der Erhebung einer Vorstellung gegen den Gesetzesbeschluss abzusehen und der sofortigen Kundmachung des Gesetzes zuzustimmen.</p>
+                  <p>
+                     <pb facs="krp-0197_r-0010"/>
+                  </p>
+               </div>
+               <div type="top" xml:id="krp-0197_top07">
+                  <head>
+                     <label>
+                        <num n="7">7.</num>
+                        <seg>Entwurf eines Gesetzes, betreffend die Dienstverhältnisse der unter Art. IV des Gesetzes vom 25. Jänner 1914, RGBl. Nr. 15, fallenden Postdienerschaft mit Dienstprüfung.</seg>
+                     </label>
+                  </head>
+                  <p>Über Einladung des <hi rend="#letterspaced">Vorsitzenden</hi> erstattet Generalpostdirektor <hi rend="#letterspaced">Hoheisel</hi> Bericht über den dem Kabinettsrat vorgelegten Entwurf eines Gesetzes, betreffend die Dienstverhältnisse der unter Art. IV des Gesetzes vom 25. Jänner 1914, RGBl. Nr. 15, fallenden Postdienerschaft mit Dienstprüfung. Redner führt aus, dass die im Herbste v. J. erfolgte gesetzliche Schaffung von Staatsbeamtenstellen für mehrere vordem der Kategorie der Diener und Unterbeamten angehörende Gruppen von Staatsangestellten außerhalb des Bereiches der Postverwaltung (Gendarmerie, Sicherheits- und Polizeiagenten und Finanzwachunterbeamte) in den Kreisen der Postdienerschaft Bestrebungen nach ähnlicher Besserstellung und Hebung ihres Standes gezeitigt habe.</p>
+                  <p>Die staatliche Postverwaltung habe sich der grundsätzlichen Berechtigung dieser mit Nachdruck geltend gemachten Bestrebungen, mit Rücksicht auf den schwierigen und verantwortungsvollen Dienst der Postdienerschaft nicht verschließen können, sie sei jedoch im Interesse der Schonung der Staatsfinanzen bemüht gewesen, zu weitgehende Forderungen der Angestellten in dieser Richtung auf das entsprechende Maß zurückzuführen. Aus solchen Erwägungen staatsfinanzieller Natur musste insbesondere die ursprüngliche Forderung der Personalvertretung der Postangestellten Österreichs nach Ernennung sämtlicher Postunterbeamten und Postamtsdiener mit Unterbeamtenprüfung zu Staatsbeamten ohne Rangsklasse Bedenken erregen. Schließlich sei nach langwierigen Verhandlungen zwischen der Verwaltung und den Vertretern des beteiligten Personales eine Vereinbarung zustande gekommen, die den Kreis der für die Ernennung zu Staatsbeamten in Betracht kommenden Angestellten entsprechend ein<pb facs="krp-0197_r-0011"/>schränke und die Unterlage des dem Kabinettsrate unterbreiteten Gesetzentwurfes bilde. Durch die darin vorgesehene Beschränkung der Ernennung auf solche Postunterbeamte und geprüfte Postamtsdiener, die ständig auf gehobenen Dienstposten verwendet werden, bei gleichzeitiger Bindung noch an einzelne weitere Voraussetzungen sowie die ausdrückliche Betonung im Gesetzentwurfe, dass die Ablegung der Dienstprüfung allein noch keinen Anspruch auf eine Verwendung auf gehobenen Dienstposten und daher auch nicht auf die Ernennung zum Staatsbeamten begründe, schaffe eine ausreichende Gewähr dafür, dass die Übernahme in den Stand der Staatsbeamten nicht auf sämtliche Angestellte mit Dienstprüfung ausgedehnt werden könne, sondern auf etwa die Hälfte des Gesamtstandes beschränkt bleibe.</p>
+                  <p>Unter qualifizierten Voraussetzungen solle ferner solchen aus dem Stande der Unterbeamten und Diener hervorgegangenen Beamten ohne Rangsklasse die Möglichkeit der Ernennung zu Staatsbeamten der Zeitbeförderungsgruppe E eröffnet werden. Trotz der für die Übergangszeit vorgesehenen Erleichterungen dürften sich Fälle solcher Ernennungen im Hinblicke auf die geforderte Ablegung einer schwierigen Fachprüfung und den Abzug eines Zeitraumes von zwölf Jahren von der Gesamtdienstzeit für die Einreihung in das Besoldungsschema nicht allzu häufig ergeben.</p>
+                  <p>Da durch den Gesetzentwurf eine weit in die Zeit vor dem 1. Jänner 1920 zurückreichende Forderung erfüllt werden solle, der nur infolge des Umstandes, dass die zur Herbeiführung einer Einigung zwischen der Verwaltung und dem Personal notwendig gewesenen schwierigen Verhandlungen längere Zeit in Anspruch nahmen, erst jetzt Rechnung getragen werden könne, erscheine es billig, die nach dem Gesetze vorzunehmenden Beamtenernennungen mit der Rechtswirksamkeit vom 31. Dezember 1919 auszustatten. Abschließend erbittet Redner im Namen des Staatsamtes für Verkehrswesen die Ermächtigung zur Einbringung des Gesetzentwurfes in der Nationalversammlung.</p>
+                  <p>
+                     <pb facs="krp-0197_r-0012"/>Der Kabinettsrat erteilt die erbetene Ermächtigung, jedoch mit der Abänderung, dass als Termin der Ernennungen nicht der 31. Dezember 1919, sondern erst der 30. Juni 1920 festzusetzen ist.</p>
+               </div>
+               <div type="top" xml:id="krp-0197_top08">
+                  <head>
+                     <label>
+                        <num n="8">8.</num>
+                        <seg>Instruktion für die Abgrenzungskommissionen.</seg>
+                     </label>
+                  </head>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> teilt dem Kabinettsrate mit, dass vor wenigen Tagen die Instruktion des Obersten Rates für die Abgrenzungskommissionen nach Art. 29 des Staatsvertrages von St. Germain an die Zentralgrenzkommission gelangt sei. Die Instruktion, die bereits im Oktober v. J. vom Obersten Rate genehmigt, aber erst jetzt bekanntgegeben wurde, bringe für Österreich eine schwere Enttäuschung und weitergehende Einschränkungen als sie der Friedensvertrag vorsehe. Insbesondere sei von Belang, dass die Grenzregulierungsausschüsse einen rein militärischen Charakter tragen sollen, wodurch die von Österreich angestrebte Wahrnehmung der Interessen der Grenzbevölkerung durch die zivilen Vorstände der Länderzentralbüros ausgeschaltet erscheine. Eine weitere Benachteiligung liege noch in dem der Instruktion über den Art. 96 des Staatsvertrages hinaus durch einen Beschluss der Botschafterkonferenz beigefügten Zusatz, dass die Kommissionen die durch Vertrag bestimmte Zuteilung einer Gemeinde nur ganz ausnahmsweise unter der Bedingung des Einverständnisses der interessierten Mächte und der einhelligen Zustimmung der Kommission, und zwar nur aus Gründen rein wirtschaftlicher Natur mit Ausschluss der Berücksichtigung jeglicher nationaler, sprachlicher oder religiöser Momente ändern dürfen.</p>
+                  <p>Zu der letzteren Bestimmung bemerkt der <hi rend="#letterspaced">Vorsitzende</hi>, dass im Gegensatze dazu der Friedensvertrag mit Ungarn die Möglichkeit einer Abänderung der durch Vertrag festgesetzten Grenzlinie vorsehe, wenn überwiegend nationale Rücksichten für die Zuweisung einer Gemeinde an den anderen Staat sprechen. Österreich habe bereits <pb facs="krp-0197_r-0013"/>in einer Note an den Obersten Rat für sich die Anwendung des gleichen Grundsatzes verlangt und könne daher umso weniger die von der Botschafterkonferenz verfügten Einschränkungen hinnehmen.</p>
+                  <p>Nach Ansicht des <hi rend="#letterspaced">Vorsitzenden</hi> sollte gegen die gesamte Instruktion beim Obersten Rat Einsprache erhoben und deren Abänderung durch die Botschafterkonferenz in solcher Art verlangt werden, dass darin die Ungarn gegenüber angewendeten Grundsätze Aufnahme finden und außerdem der Bevölkerung die Möglichkeit gewahrt bleibe ihre wirtschaftlichen Interessen, die nach dem Friedensvertrage für die Bestimmung der Detailgrenzlinien maßgebend sein sollen, unmittelbar vor der Kommission vertreten zu können. Gleichzeitig wäre die Öffentlichkeit von dem Inhalt der Instruktion und den Gründen für deren Anfechtung beim Obersten Rat im Wege der Presse in Kenntnis zu setzen.</p>
+                  <p>Nach kurzen erläuternden Bemerkungen des Hofrates <hi rend="#letterspaced">Pozzi</hi> und des Staatssekretärs <hi rend="#letterspaced">Eldersch</hi> erteilt der Kabinettsrat der Zentralgrenzkommission den Auftrag, gegen die Instruktion ohne Verzug eine Vorstellung auszuarbeiten und dem Staatsamte für Äußeres zur Weiterleitung an den Obersten Rat in Paris zu übergeben, damit dieser in die Lage versetzt werde, die begehrten Änderungen noch vor dem Beginne der Tätigkeit der Grenzregulierungskommissionen vorzunehmen. Weiters hat die Zentralgrenzkommission in einem Zeitungskommuniqué klarzulegen, welche Verschiebungen die Instruktion in der Rechtslage nach dem Staatsvertrage zu Ungunsten Österreichs schaffe und welche Schritte beim Obersten Rat unternommen wurden, um eine Abhilfe dagegen zu erzielen.</p>
+               </div>
+               <div type="top" xml:id="krp-0197_top09">
+                  <head>
+                     <label>
+                        <num n="9">9.</num>
+                        <seg>Vollzugsanweisung über den Verkehr mit Edelmetallen und Edelmetallwaren.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Reisch</hi> unterbreitet dem Kabinettsrate den Entwurf einer Vollzugsanweisung über den Verkehr mit Edelmetal<pb facs="krp-0197_r-0014"/>len und Edelmetallwaren und erbittet die Ermächtigung zu deren Verlautbarung.</p>
+                  <p>Der Kabinettsrat erteilt die erbetene Ermächtigung mit dem Vorbehalte, dass angesichts einzelner Abänderungsanträge, die Staatssekretär <hi rend="#letterspaced">Eldersch</hi> namens des Staatsamtes für Justiz vorbringt, zunächst noch die beiden beteiligten Ressorts für Finanzen und für Justiz über den endgiltigen Wortlaut der Vollzugsanweisung sich auseinandersetzen.</p>
+               </div>
+               <div type="top" xml:id="krp-0197_top10">
+                  <head>
+                     <label>
+                        <num n="10">10.</num>
+                        <seg>Erhöhung der Gnadengaben.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Reisch</hi> führt aus, dass mit Rücksicht auf die durch das Pensionistengesetz und die Hinterbliebenenversorgungsnovelle erfolgten Aufbesserungen der normalmäßigen Versorgungsgenüsse es billig erscheine, auch die derzeit bereits im Bezüge von Gnadenversorgungsgenüssen (Gnadengaben) stehenden Personen einer den gegenwärtigen erschwerten Lebensverhältnissen wenigstens teilweise Rechnung tragenden Aufbesserung ihrer Bezüge teilhaftig werden zu lassen, sowie die in Hinkunft mit Gnadenversorgungsgenüssen (Gnadengaben) zu beteilenden Personen mit höheren Bezügen zu bedenken. Hiemit würde zugleich einer Anregung des Hauptausschusses, die Gnadenversorgungsgenüsse (Gnadengaben) in eine gewisse Relation zu den neuen Versorgungsgenüssen zu bringen, Rechnung getragen.</p>
+                  <p>Redner beabsichtige daher, beim Präsidenten der Nationalversammlung</p>
+                  <list>
+                     <item n="1">
+                        <label>1.)</label> vor allem die Bewilligung einer generellen Aufbesserung der derzeitigen Bezüge der mit Gnadenversorgungsgenüssen (Gnadengaben) beteiligten Personen zu beantragen, und zwar:</item>
+                     <item n="2">
+                        <label>a)</label> durch Erhöhung der derzeitigen Gnadenversorgungsgenüsse (Gnadengaben) um 100 % des derzeitigen Ausmaßes und</item>
+                  </list>
+                  <p>
+                     <pb facs="krp-0197_r-0015"/>
+                  </p>
+                  <list>
+                     <item n="1">
+                        <label>b)</label> durch Gewährung einer abbaufähigen Teuerungszulage gegen Einstellung der derzeitigen (laufenden) Aushilfe, je nach dem Wohnsitze der Partei in Wien oder in einem in die I. oder II. Aktivitätszulagenklasse eingereihten Orte oder in einem anderen Orte im Jahresbetrage von 1.008 K, 804 K oder 600 K.</item>
+                  </list>
+                  <p>Der gedachten Aufbesserung hätten nur jene Personen teilhaftig zu werden und zu bleiben, welche, bzw. solange sie die österreichische Staatsbürgerschaft besitzen.</p>
+                  <p>Durch die 100%ige Aufbesserung der Gnadenversorgungsgenüsse (Gnadengaben) würden dieselben den im § 5 des Pensionistengesetzes festgesetzten Ausmaßen der aufgebesserten Versorgungsgenüsse wesentlich nähergebracht.</p>
+                  <p>Die Ausmaße der Teuerungszulage decken sich mit den nach § 10 Abs. 2 des Pensionistengesetzes für elternlose Waisen festgesetzten Beträgen, was mit Rücksicht darauf angemessen erscheine, dass beim Genusse von Gnadengaben in weitaus überwiegender Zahl elternlose Waisen nach Staatsangestellten in Betracht kommen.</p>
+                  <p>Als Anfangstermin der Auszahlung der 100%igen Erhöhung und der Teuerungszulage wäre der 1. Juli 1920 festzusetzen.</p>
+                  <p>Der voraussichtliche Mehraufwand aus dieser Aktion dürfte für das erste Jahr mit 5–6 Millionen K zu veranschlagen sein, und werde durch den natürlichen Abfall an Perzipienten von Jahr zu Jahr eine Verminderung erfahren.</p>
+                  <list>
+                     <item n="1">
+                        <label>2.)</label> Weiters beabsichtige der sprechende Staatssekretär hinsichtlich der in Hinkunft mit Gnadenversorgungsgenüssen (Gnadengaben) zu beteilenden Personen die Genehmigung des Präsidenten der Nationalversammlung zu erbitten, dass, je nachdem es sich um Angestellte, die in den Dienst der Republik Österreich übernommen wurden oder nicht, bzw. um Hinterbliebene übernommener oder nichtübernommener Angestellter handelt, die Gnadenversorgungsgenüsse (Gnadengaben) für diese Personen in einem Ausmaße beantragt werden dürfen, welches in einem entsprechenden Verhältnisse zu den nach den eingangs er<pb facs="krp-0197_r-0016"/>wähnten Gesetzen sich ergebenden normalmäßigen Versorgungsgenüssen steht. Auch diesen Personen wäre neben dem bewilligten Gnadenversorgungsgenusse (der Gnadengabe) die oben erwähnte abbaufähige Teuerungszulage flüssig zu machen.</item>
+                  </list>
+                  <p>Der Kabinettsrat stimmt der Erstattung dieser Anträge zu.</p>
+               </div>
+               <div type="top" xml:id="krp-0197_top11">
+                  <head>
+                     <label>
+                        <num n="11">11.</num>
+                        <seg>Beibehaltung der gegenwärtigen Preisspannung beim Kleinverkauf von Rindfleisch in Wien.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Loewenfeld-Russ</hi> verweist darauf, dass die Verhältnisse, welche den Kabinettsrat in seiner Sitzung vom 29. April 1. J. zu dem Beschlusse bestimmt haben, behufs Vermeidung einer Erhöhung der Detailfleischpreise in Wien den durch die Steigerung der Löhne im Fleischhauergewerbe hervorgerufenen Mehrverlust am Verkaufspreise des Rindfleisches in Wien von monatlich 3½ Millionen K für die Dauer von zwei Monaten auf den Staatsschatz zu übernehmen, auch gegenwärtig noch unverändert fortbestehen. Redner stelle daher den Antrag, der Kabinettsrat wolle beschließen, dass dieser Mehrverlust für die Dauer von zwei weiteren Monaten, d. i. Juli und August 1. J. aus Staatsmitteln getragen werde, der Abgabepreis für Rindfleisch in Wien im Durchschnitte der teueren und billigen Wochen also auf 79 K 50 h pro kg zu belassen sei.</p>
+                  <p>Der Kabinettsrat beschließt im Sinne des gestellten Antrages.</p>
+                  <p/>
+               </div>
+            </div>
+            <div type="stenogramme">
+               <div n="1">
+                  <head>EINZUFÜGEN</head>
+                  <p>Transkription in Arbeit.</p>
+                  <p/>
+               </div>
+               <div n="2">
+                  <head>EINZUFÜGEN</head>
+                  <p>Transkription in Arbeit.</p>
+               </div>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

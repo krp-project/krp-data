@@ -1,0 +1,539 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href='http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:acdh="https://vocabs.acdh.oeaw.ac.at/schema#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xml:lang="de">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="a" type="main" n="0053">Kabinettsprotokoll Nr. 53 vom 24. März 1919</title>
+            <title level="m" type="main" n="01">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <title level="m" type="sub" n="">Renner II (15. März – 17. Oktober 1919)</title>
+            <meeting>
+               <placeName key="https://d-nb.info/gnd/4066009-6">Wien</placeName>
+               <orgName key="https://d-nb.info/gnd/5162749-8">Kabinettsrat</orgName>
+               <date when-iso="1919-03-24"/>
+            </meeting>
+            <editor>
+               <persName key="https://d-nb.info/gnd/122481836"
+                         role="hasCreator"
+                         xml:id="hwohnout">
+                  <forename>Helmut</forename>
+                  <surname>Wohnout</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</affiliation>
+               <idno type="ORCID">0000-0002-3864-9839</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/120789825"
+                         role="hasCreator"
+                         xml:id="tolechowski">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0003-3291-6876</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/131679384"
+                         role="hasCreator"
+                         xml:id="rlein">
+                  <forename>Richard</forename>
+                  <surname>Lein</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0002-7502-0503</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="aholzer">
+                  <forename>Anna</forename>
+                  <surname>Holzer</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0005-3560-3500</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="dsoelkner">
+                  <forename>Dominik</forename>
+                  <surname>Sölkner</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-9895-7212</idno>
+            </editor>
+            <editor>
+               <persName role="hasContributor" xml:id="ischotzko">
+                  <forename>Ina</forename>
+                  <surname>Schotzko</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-5210-3713</idno>
+            </editor>
+            <funder n="1">
+               <orgName key="https://d-nb.info/gnd/2054142-9" role="hasFunder">Österreichischer Wissenschaftsfonds FWF</orgName>
+               <idno type="project">PAT1495024</idno>
+               <title type="project">Die Protokolle des österreichischen Kabinettsrates 1919–1920</title>
+            </funder>
+            <respStmt>
+               <resp>Projektverantwortung</resp>
+               <orgName key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Projektleitung</resp>
+               <persName key="https://d-nb.info/gnd/120789825" role="hasPrincipalInvestigator">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+                  <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+                  <idno type="ORCID">0000-0003-3291-6876</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Nationaler Forschungspartner</resp>
+               <orgName key="https://d-nb.info/gnd/1123037736" role="hasEnabler">Austrian Centre for Digital Humanities</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Digitalisierung der gedruckten Quellen</resp>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>TEI-Datenmodellierung</resp>
+               <persName role="hasContributor" xml:id="tfruehwirth">
+                  <forename>Timo</forename>
+                  <surname>Frühwirth</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-3997-5193</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technische Supervision</resp>
+               <persName key="https://d-nb.info/gnd/1043833846"
+                         role="hasContributor"
+                         xml:id="pandorfer">
+                  <forename>Peter</forename>
+                  <surname>Andorfer</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-9575-9372</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technisches Consulting und Vorbereitung der Druckausgabe</resp>
+               <persName key="https://d-nb.info/gnd/13281899X"
+                         role="hasContributor"
+                         xml:id="skurz">
+                  <forename>Stephan</forename>
+                  <surname>Kurz</surname>
+                  <affiliation key="https://d-nb.info/gnd/1202798799">Institut für die Erforschung der Habsburgermonarchie und des Balkanraumes</affiliation>
+                  <idno type="ORCID">0000-0003-2546-2570</idno>
+               </persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher key="https://d-nb.info/gnd/1001454-8">Österreichische Akademie der Wissenschaften</publisher>
+            <date when="2028"/>
+            <availability status="free">
+               <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">Lizenziert unter CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/deed.de)</licence>
+            </availability>
+            <idno type="ISBN_Print"/>
+            <idno type="ISBN_Part_epub"/>
+            <idno type="ISBN_Digital"/>
+            <idno type="DOI"/>
+            <idno type="DOI_zenodo"/>
+            <idno type="ebook_ID"/>
+         </publicationStmt>
+         <seriesStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="m" type="main">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <respStmt>
+               <resp>Bearbeitung und Herausgeberschaft</resp>
+               <orgName key="https://d-nb.info/gnd/2024703-5">Universität Wien</orgName>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+         </seriesStmt>
+         <notesStmt>
+            <note>Diese TEI-XML-Datei ist Grundlage für eine Druckausgabe der Edition.</note>
+            <relatedItem>
+               <biblStruct>
+                  <monogr>
+                     <imprint>
+                        <pubPlace key="https://d-nb.info/gnd/4066009-6">Wien</pubPlace>
+                        <publisher key="https://d-nb.info/gnd/2068748-5">Verlag der Österreichischen Akademie der Wissenschaften</publisher>
+                        <date when="2029"/>
+                     </imprint>
+                     <extent/>
+                  </monogr>
+                  <note>
+                     <idno/>
+                     <ptr/>
+                  </note>
+                  <citedRange/>
+               </biblStruct>
+            </relatedItem>
+         </notesStmt>
+         <sourceDesc>
+            <bibl>Quellbestand: AT-OeStA/AdR MRang MR 1Rep KRP Kabinettsratsprotokolle, 1918-1920 (Teilbestand)<ref target="https://www.archivinformationssystem.at/detail.aspx?id=5465">https://www.archivinformationssystem.at/detail.aspx?id=5465</ref>
+            </bibl>
+            <msDesc>
+               <msIdentifier>
+                  <institution key="https://d-nb.info/gnd/37748-X" role="hasOwner">AT-OeStA Österreichisches Staatsarchiv (Archiv (ÖStA))</institution>
+                  <repository key="https://d-nb.info/gnd/1601181-8">AT-OeStA/AdR Archiv der Republik, 1918- (Abteilung)</repository>
+                  <collection>AT-OeStA/AdR MRang MR 1Rep Ministerrat 1. Republik, 1918 - 1938 (Bestand)</collection>
+                  <idno>AT-OeStA_AdR-MRang-MR-1.-Rep.-KRP-053</idno>
+               </msIdentifier>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <abstract>
+            <p>
+          <!--to be generated-->
+        </p>
+         </abstract>
+      </profileDesc>
+      <encodingDesc>
+         <styleDefDecl scheme="css"/>
+         <tagsDecl>
+            <rendition xml:id="b" scheme="css">font-weight:bold;</rendition>
+            <rendition xml:id="su" scheme="css">vertical-align:super;font-size:.7em;</rendition>
+            <rendition xml:id="s" scheme="css">text-decoration:line-through;</rendition>
+            <rendition xml:id="u" scheme="css">text-decoration:underline;</rendition>
+            <rendition xml:id="ow" scheme="css">text-decoration:line-through;text-decoration-style:double;</rendition>
+            <rendition xml:id="r" scheme="css">display:block;text-align:right;</rendition>
+            <rendition xml:id="letterspaced" scheme="css">letter-spacing:0.15em;</rendition>
+            <rendition xml:id="i" scheme="css">font-style:italic;</rendition>
+         </tagsDecl>
+         <editorialDecl>
+            <hyphenation>
+               <p>
+            <!--to be added-->
+          </p>
+            </hyphenation>
+            <correction>
+               <p>
+            <!--to be added-->
+          </p>
+            </correction>
+            <normalization>
+               <p>
+            <!--to be added-->
+          </p>
+            </normalization>
+            <punctuation>
+               <p>
+            <!--to be added-->
+          </p>
+            </punctuation>
+            <stdVals>
+               <p>
+            <!--to be added-->
+          </p>
+            </stdVals>
+            <p>
+          <!--to be added-->
+        </p>
+         </editorialDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#tfruehwirth" when-iso="2026-10-07">TEIGarage output upconverted with upconvert.xsl</change>
+         <change who="#tfruehwirth" when-iso="2026-10-07">TEI header populated with generate_tei_templates.py</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface/>
+   </facsimile>
+   <text>
+      <body>
+         <div xml:id="doc-krp-0053.xml">
+            <head type="dokument">
+               <title type="num">53.<note type="footnote">Das Protokoll trägt den Vermerk <hi rend="#i">Vertraulich!</hi>
+                  </note>
+               </title>
+               <title type="desc">
+                  <pb facs="krp-0053_r-0001"/>
+                  <pb facs="krp-0053_r-0002"/>[Montag] 1919-03-24</title>
+            </head>
+            <div type="dokumentkopf">
+               <div type="vorsitz">
+                  <head>Vorsitz:</head>
+                  <p>Renner</p>
+               </div>
+               <div type="anwesend">
+                  <head>Anwesend:</head>
+                  <p>Bauer, Bratusch, Deutsch, Ellenbogen, Fink, Glöckel, Hanusch, Loewenfeld-Russ, Miklas, Paul, Schumpeter, Waiss, Zerdik</p>
+               </div>
+               <div type="zugezogen">
+                  <head>Zugezogen:</head>
+                  <p>Brauneis, Grimm</p>
+               </div>
+               <div type="schriftfuehrer">
+                  <head>Schriftführer:</head>
+                  <p>unbekannt</p>
+               </div>
+               <div type="dauer">
+                  <head>Dauer:</head>
+                  <p>15.00–18.00 Uhr</p>
+               </div>
+            </div>
+            <div type="komponenten">
+               <p>Reinschrift, Beilagen, Konzept, stenographische Mitschrift, Entwurf der Tagesordnung, diverse Zusätze</p>
+            </div>
+            <div type="beilagen">
+               <head>Beilagen:</head>
+               <list>
+                  <item>
+                     <ref target="#krp-0053_top06">Zu TOP 6</ref>: <ref target="#krp-0053_b01">Beschluss der Provisorischen Landesversammlung Salzburgs über einige Abänderungen des Gesetzes über die Schulaufsicht</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0053_top07">Zu TOP 7</ref>: <ref target="#krp-0053_b02">Gesetzesvorlage der Salzburger Landesversammlung über Diensteinkommen, Ruhestandsversetzung und Versorgungsgenüsse der Lehrpersonen der öffentlichen Volks- und Bürgerschulen</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0053_top08">Zu TOP 8</ref>: <ref target="#krp-0053_b03">Gesetzesbeschlüsse der Provisorischen Landesversammlung Steiermark, womit einige Bestimmungen der Gesetze über die Schulaufsicht und Schulerrichtung und über die Rechtsverhältnisse des Lehrerstandes abgeändert werden</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0053_top09">Zu TOP 9</ref>: <ref target="#krp-0053_b04">Antrag des Staatsamtes für soziale Verwaltung auf Unterstützung arbeitsloser Deutschösterreicher in der Schweiz</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0053_top10">Zu TOP 10</ref>: <ref target="#krp-0053_b05">Vollzugsanweisung des Staatsamtes für soziale Verwaltung zur Unterstützung der arbeitslosen Arbeiter und Angestellten</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0053_top11">Zu TOP 11</ref>: <ref target="#krp-0053_b06">Gesetzesvorlage des Staatsamtes für Finanzen für Kreditoperationen</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0053_top12">Zu TOP 12</ref>: <ref target="#krp-0053_b07">Antrag des Staatsamtes für Handel und Gewerbe, Industrie und Bauten auf Bereitstellung von 25 Millionen K für Elektrifizierung von Eisenbahnen</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0053_top13">Zu TOP 13</ref>: <ref target="#krp-0053_b08">Antrag des Staatsamtes für Verkehrswesen auf Eingliederung des Luftfahrtwesens in das Staatsamt für Verkehrswesen</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0053_top14">Zu TOP 14</ref>: <ref target="#krp-0053_b09">Vorlage des Staatsamtes für Volksernährung wegen der Fleischversorgung Wiens und die Wiener Fleischverbilligungsaktion</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0053_top15">Zu TOP 15</ref>: <ref target="#krp-0053_b10">Notiz des Staatsamtes für Handel und Gewerbe, Industrie und Bauten auf Erklärung der von der Mitterberger Kupfer A.G. vorgesehenen Bauten als begünstigten Bau</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0053_top16">Zu TOP 16</ref>: <ref target="#krp-0053_b11">Antrag des Staatsamtes für Handel und Gewerbe, Industrie und Bauten auf Ratifikation eines mit der ukrainischen Delegation abgeschlossenen Vertrages über die sofortige Lieferung von Mineralölprodukten</ref>
+                  </item>
+               </list>
+            </div>
+            <div type="protokoll">
+               <pb facs="krp-0053_r-0003"/>
+               <div type="top" xml:id="krp-0053_top01">
+                  <head>
+                     <label>
+                        <num n="1">1.</num>
+                        <seg>Mitteilungen des Staatssekretärs Dr. Loewenfeld-Russ über seine Verhandlungen mit den in Wien anwesenden Missionen der alliierten Mächte über Lebensmittelzuschübe.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Loewenfeld-Russ</hi> teilt mit, dass er sich in letzter Zeit mehrfach veranlasst gesehen habe, die Vermittlung der in Wien anwesenden Missionen der alliierten Mächte in Anspruch zu nehmen, um die Lebensmitteltransporte nach Deutschösterreich zu beschleunigen. Außer der italienischen Waffenstillstandsmission seien es vor allem die Mitglieder der englischen Mission gewesen, die die Bestrebungen des Staatsamtes für Volksernährung jederzeit auf das Kräftigste unterstützt und sich damit um die Ernährung der Bevölkerung große Verdienste erworben hätten. So sei es dem Eingreifen der englischen Mission zu danken, dass soeben ein Zug Kondensmilch mit 400 t einlangte, der die Fortsetzung <pb facs="krp-0053_r-0004"/>der Milchverteilung insbesondere an Kinder ermöglichen wird. Dem Eingreifen englischer Offiziere, die den Transport unter militärischer Bedeckung nach Wien brachten, sei es zuzuschreiben, dass aus Polen 15 Wagen Eier und einige Wagen Fleisch einlangten, ebenso wie unter Führung eines Majors 30 englische Soldaten sich mit unseren Vertretern nach Belgrad begeben haben, um auch von dort früher eingekaufte Waren, in erster Linie Vieh und Fleisch, nach Deutschösterreich zu befördern. Ein Mitglied der britischen Mission, das mit dem Staatsamte für Volksernährung in engster Fühlung stehe, habe gestern erklärt, dass die Mission auch weiterhin alles zu tun bereit sei, um Deutschösterreich in seiner schwierigen Lebensmittellage zu helfen, insolange im Lande volle Ordnung aufrecht bleibe.</p>
+                  <p>Da gleichzeitig der Wunsch geäußert worden sei, hierüber die Öffentlichkeit zu informieren, erbitte sich der sprechende Staatssekretär die Zustimmung des Kabinettsrates zur Publizierung dieser Darstellung in der Presse.</p>
+                  <p>Der Kabinettsrat erteilt die erbetene Zustimmung.</p>
+                  <p>
+                     <pb facs="krp-0053_r-0005"/>
+                  </p>
+               </div>
+               <div type="top" xml:id="krp-0053_top02">
+                  <head>
+                     <label>
+                        <num n="2">2.</num>
+                        <seg>Ansuchen der Österreichischen Daimler-Motoren-AG um Bewilligung der Ausfuhr von Feldbahnen, Elektrozügen, Motorwagen, schweren Lastwagen, u. dgl.</seg>
+                     </label>
+                  </head>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> teilt mit, dass seitens der Österreichischen Daimler-Motoren-AG ein ausführlich begründetes Ansuchen um Bewilligung der Ausfuhr von Feldbahnen, Elektrozügen, eisernen Feldmotorwagen, schweren Lastwagen u. dgl. eingelangt sei. Er beantrage, der Kabinettsrat möge zur aufrechten Erledigung dieser Eingabe seine Zustimmung erteilen.</p>
+                  <p>Der Kabinettsrat genehmigt diesen Antrag und ermächtigt das Staatsamt für Äußeres auf dieser Grundlage die weiteren Verfügungen zu treffen.</p>
+               </div>
+               <div type="top" xml:id="krp-0053_top03">
+                  <head>
+                     <label>
+                        <num n="3">3.</num>
+                        <seg>Gesetzentwurf über den Ruhegenuss des gewesenen Staatssekretärs der Finanzen Dr. Otto Steinwender.</seg>
+                     </label>
+                  </head>
+                  <p>Der Vorsitzende teilt mit, dass laut § 6 des Gesetzes vom 22. November 1918, StGBl. Nr. 42, über die Dienstbezüge und Dienstzulagen der vom Volke beauftragten Staatsorgane die Bestimmungen von Ruhe- und Versorgungsgenüssen für die Staatssekretäre und Unterstaatssekretäre von Fall zu Fall den Beschlüssen der Nationalversammlung vorbehalten sei.</p>
+                  <p>Im Hinblick darauf, dass der gewesene Staatssekretär für Finanzen Dr. Otto Steinwender mit Ende Oktober 1918 aufgrund einer als <pb facs="krp-0053_r-0006"/>Gymnasialprofessor zurückgelegten anrechenbaren Dienstzeit von über 40 Jahren in den dauernden Ruhestand versetzt worden sei, erbittet und erhält der Vorsitzende die Zustimmung des Kabinettsrates zur Einbringung eines Gesetzentwurfes, wonach dem genannten Staatssekretär vom 1. April 1919 angefangen der Ruhegenuss eines Beamten der II. Rangsklasse bewilligt werden soll.</p>
+               </div>
+               <div type="top" xml:id="krp-0053_top04">
+                  <head>
+                     <label>
+                        <num n="4">4.</num>
+                        <seg>Genehmigung mehrerer Beschlüsse des Oberösterreichischen und des Niederösterreichischen Landesausschusses sowie der Provisorischen Landesversammlung von Steiermark betreffend Umlagen und Abgaben in Gemeinden und Ländern.</seg>
+                     </label>
+                  </head>
+                  <p>Der Vorsitzende erbittet und erhält die Zustimmung des Kabinettsrates zur Genehmigung</p>
+                  <list>
+                     <item n="1">
+                        <label>1.)</label> des Beschlusses des Oberösterreichischen Landesausschusses vom 30. November 1918, betreffend Forteinhebung der Lustbarkeitsabgabe in der Stadtgemeinde Wels,</item>
+                     <item n="2">
+                        <label>2.)</label> des Beschlusses des Oberösterreichischen Landesausschusses vom 30. November 1918, betreffend Forteinhebung des Kriegszuschlages zur Gemeindebierauflage in der Stadtgemeinde Wels im Jahre 1919,</item>
+                     <item n="3">
+                        <label>3.)</label> des Beschlusses des Oberösterreichischen Landesausschusses vom 30. November 1918, betreffend Forteinhebung des Kriegszuschlages zur Mietzinsauflage in der Stadtge<pb facs="krp-0053_r-0007"/>meinde Wels in den Jahren 1919 und 1920,</item>
+                     <item n="4">
+                        <label>4.)</label> Beschluss des Niederösterreichischen Landesausschusses vom 8. Oktober 1918, betreffend Einhebung einer 100 % übersteigenden Umlage in der Gemeinde Kirchberg am Wechsel und</item>
+                     <item n="5">
+                        <label>5.)</label> des Beschlusses der Provisorischen Landesversammlung von Steiermark vom 29. Jänner 1919, betreffend Erhöhung des Musikgefälles in den Städten und Märkten Steiermarks.</item>
+                  </list>
+               </div>
+               <div type="top" xml:id="krp-0053_top05">
+                  <head>
+                     <label>
+                        <num n="5">5.</num>
+                        <seg>Einhebung einer Abgabe von der Ausübung des Jagdrechtes in Steiermark.</seg>
+                     </label>
+                  </head>
+                  <p>Der Vorsitzende teilt mit, dass die Provisorische Landesversammlung des Landes Steiermark in der Sitzung am 24. Jänner 1919 ein Gesetz beschlossen habe, womit einzelne Bestimmungen des Gesetzes vom 23. Dezember 1906, LGBl. Nr. 6 aus 1907, betreffend Einhebung einer Abgabe von der Ausübung des Jagdrechtes zugunsten des steiermärkischen Landesarmenfonds, abgeändert werden.</p>
+                  <p>Der sprechende Staatskanzler beabsichtigt in seiner Eigenschaft als Leiter des Staatsamtes für Inneres und Unterricht gegen diesen Gesetzesbeschluss namens der Staatsregierung eine Vorstellung nicht zu erheben und daher der sofortigen Kundmachung dieses Gesetzes zuzustimmen.</p>
+                  <p>Der Kabinettsrat erteilt dem Vorsitzenden die diesfalls erbetene Ermächtigung.</p>
+                  <p>
+                     <pb facs="krp-0053_r-0008"/>
+                  </p>
+               </div>
+               <div type="top" xml:id="krp-0053_top06">
+                  <head>
+                     <label>
+                        <num n="6">6.</num>
+                        <seg>Beschluss der Provisorische Landesversammlung des Landes Salzburg, betreffend Abänderung einiger Bestimmungen des Gesetzes über die Schulaufsicht.</seg>
+                     </label>
+                  </head>
+                  <p>Nach einer eingehenden Begründung der Sachlage erbittet und erhält Unterstaatssekretär <hi rend="#letterspaced">G1öckel</hi> vom Kabinettsrate die Ermächtigung, gegen die von der Landesversammlung des Landes Salzburg in der Sitzung vom 20. Dezember 1918 beschlossene Gesetzesvorlage, betreffend die Abänderung einiger Bestimmungen über die Schulaufsicht, bei der Landesversammlung im Wege der Landesregierung Vorstellung zu erheben, der letzteren die sich aus der Fassung der Gesetzesvorlage ergebenden formellen Anstände mitzuteilen und sie zu ersuchen, beim Landesrate eine entsprechende Änderung der Vorlage in Anregung zu bringen.</p>
+               </div>
+               <div type="top" xml:id="krp-0053_top07">
+                  <head>
+                     <label>
+                        <num n="7">7.</num>
+                        <seg>Gesetzesvorlage der Provisorischen Landesversammlung in Salzburg, betreffend die Erlassung neuer Bestimmungen über das Diensteinkommen der Lehrpersonen der öffentlichen Volks- und Bürgerschulen, Versetzung dieser Lehrpersonen in den Ruhestand und die Versorgungsgenüsse für ihre Hinterbliebenen.</seg>
+                     </label>
+                  </head>
+                  <p>Unterstaatssekretär Glöckel teilt mit, dass mit dem Berichte der Landesregierung in Salzburg vom 25. Februar 1919, Zl. 577, dem Staatsamte für Unterricht die von der Salzburger Landesversammlung in ihrer Sitzung vom 22. Jänner 1919, beschlossene Gesetzesvorlage vorgelegt worden sei, mit welcher neue Bestimmungen über das Diensteseinkommen der Lehrpersonen der öffentlichen Volks- <pb facs="krp-0053_r-0009"/>und Bürgerschulen, über die Versetzung dieser Lehrpersonen in den Ruhestand und die Versorgung ihrer Hinterbliebenen getroffen werden.</p>
+                  <p>Die bezüglichen Bestimmungen seien im Interesse der Lehrerschaft gelegen, geben in sachlicher Hinsicht zu keinem Bedenken Anlass und erscheinen verfassungsrechtlich einwandfrei. Nur in einigen Bestimmungen seien Redaktionsfehler unterlaufen und Unklarheiten enthalten.</p>
+                  <p>Im Hinblick darauf erbittet der sprechende Unterstaatssekretär vom Kabinettsrate die Ermächtigung, von der Erhebung einer Vorstellung gegen diese Gesetzesvorlage absehen, beim Landesrat im Wege der Landesregierung einige formale Änderungen der Vorlage in Anregung bringen und den Landesrat einladen zu dürfen, das geänderte Gesetz zur Beisetzung der Gegenzeichnung des Staatssekretärs für Inneres und Unterricht wieder vorzulegen.</p>
+                  <p>Der Kabinettsrat erteilt die erbetene Ermächtigung.</p>
+               </div>
+               <div type="top" xml:id="krp-0053_top08">
+                  <head>
+                     <label>
+                        <num n="8">8.</num>
+                        <seg>Gesetzesbeschlüsse der Provisorischen Landesversammlung des Landes Steiermark, womit einige Bestimmungen der Gesetze über die Schulaufsicht und Schulerrichtung und über die Rechtsverhältnisse des Lehrerstandes abgeändert werden.</seg>
+                     </label>
+                  </head>
+                  <p>Unterstaatssekretär Glöckel macht davon Mitteilung, dass der Steiermärkische Landesrat dem Staatsamt des Innern vier Gesetze und einen Beschluss <pb facs="krp-0053_r-0010"/>der Provisorischen Landesversammlung des Landes Steiermark, womit einige Bestimmungen der Gesetze über die Schulaufsicht und Schulerrichtung und über die Rechtsverhältnisse des Lehrstandes abgeändert werden, mit dem Antrage auf Genehmigung vorgelegt habe.</p>
+                  <p>Der sprechende Unterstaatssekretär habe die Vorlagen, die vom Staatsamte des Innern an das Staatsamt für Unterricht geleitet worden seien, geprüft und stelle den Antrag, der Kabinettsrat wolle ihn ermächtigen, von der Erhebung einer Vorstellung gegen die von der Landesversammlung des Landes Steiermark in der Sitzung vom 24. Jänner 1919 beschlossenen Gesetzesvorlagen, betreffend die Abänderung einiger Bestimmungen der Gesetze über die Schulaufsicht und die Schulerrichtung und über die Rechtsverhältnisse des Lehrerstandes und gegen den in der Sitzung dieser Landesversammlung vom 30. Jänner 1919 gefassten Beschluss auf Aufhebung des Eheverbotes für Lehrerinnen der allgemeinen Volks- und Bürgerschulen abzusehen, jedoch beim Landesrate im Wege der Landesregierung einige formale Änderungen der Vorlagen in Anregung zu bringen und den Landesrat einzuladen, die dementsprechend geänderten Gesetze <pb facs="krp-0053_r-0011"/>zur Beisetzung der Gegenzeichnung des Staatskanzlers wieder vorzulegen.</p>
+               </div>
+               <div type="top" xml:id="krp-0053_top09">
+                  <head>
+                     <label>
+                        <num n="9">9.</num>
+                        <seg>Gewährung von Unterstützungen an arbeitslose Deutschösterreicher in der Schweiz.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Hanusch</hi> teilt mit, die industrielle Bezirkskommission für Vorarlberg in Bregenz habe wiederholt darauf hingewiesen, dass sich in der Schweiz, und zwar insbesondere in den Kantonen Zürich und St. Gallen, zahlreiche Deutschösterreicher infolge Arbeitslosigkeit in einer ganz außerordentlichen Notlage befinden, sodass Ausschreitungen ernstlich zu befürchten seien. Im Interesse des Ansehens des Deutschösterreichischen Staates im Auslande, und insbesondere in der Schweiz, sowie unter Hinweis auf die Befürchtung, dass die Schweiz im Falle von Unruhen mit der Ausweisung der Deutschösterreicher vorgehen könnte, habe die genannte Bezirkskommission im Einvernehmen mit den österreichisch-ungarischen Konsulatsbehörden in Zürich und St. Gallen um die Überweisung von 50.000 Franken ersucht. Der sprechende Staatssekretär glaube diesem Ansuchen beitreten zu wollen und stelle daher den Antrag, der Kabinettsrat möge das Staatsamt der Finanzen anweisen, unverzüglich dem Staatsamte des Äußern den Betrag von <pb facs="krp-0053_r-0012"/>50.000 Franken zu dem gedachten Zwecke flüssig zu machen. Von diesem Betrage wären 30.000 Franken nach Zürich und 20.000 Franken nach St. Gallen mit dem Auftrage zu überweisen, diese Beträge an besonders berücksichtigungswürdige arbeitslose Deutschösterreicher – gegen Verrechnung – auszufolgen. Das Staatsamt des Äußern sei ferner zu ersuchen, von der Durchführung dieser Unterstützungsaktion den Vorsitzenden der Industriellen Bezirkskommission in Bregenz, Landeshauptmannstellvertreter Friedrich Preis, umgehend in Kenntnis zu setzen.</p>
+                  <p>Der Kabinettsrat genehmigt diesen Antrag mit dem vom Staatssekretär Dr. <hi rend="#letterspaced">Schumpeter</hi> vorgeschlagenen Beisatze, dass es sich vorliegenden Falles nur um eine einmalige, ganz ausnahmsweise Aushilfe handle.</p>
+               </div>
+               <div type="top" xml:id="krp-0053_top10">
+                  <head>
+                     <label>
+                        <num n="10">10.</num>
+                        <seg>Vollzugsanweisung des Staatsamtes für soziale Verwaltung, betreffend die Unterstützung der arbeitslosen Arbeiter und Angestellten.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Hanusch</hi> führt aus, dass die besonderen wirtschaftlichen Verhältnisse, welche seinerzeit für die Einrichtung der Arbeitslosenfürsorge bis 15. Februar 1919 und in der Folge für die Verlängerung der Unterstützungsperiode bis 31. März 1919 maßgebend gewesen seien, bisher leider <pb facs="krp-0053_r-0013"/>keine Änderung erfahren hätten, für die nächste Zeit müsse sogar damit gerechnet werden, dass der Umfang der Arbeitslosigkeit und die Notlage der davon betroffenen Bevölkerungsschichten im gleichen Ausmaße weiter bestehen bleiben werden. Nach Anhörung der aus Vertretern der Arbeitgeber und Arbeitnehmer zusammengesetzten Industriekommissionen sei eine weitere Verlängerung der Arbeitslosenfürsorge vorläufig für die Zeit bis 15. Mai d. J. unbedingt erforderlich. Das Staatsamt für soziale Verwaltung nehme die Erlassung einer dementsprechenden Vollzuganweisung in Aussicht.</p>
+                  <p>Bei der sich hierüber entwickelnden Debatte, an welcher sich die Staatssekretäre Dr. <hi rend="#letterspaced">Deutsch</hi> und Ing. <hi rend="#letterspaced">Zerdik</hi> sowie Unterstaatssekretär Dr. <hi rend="#letterspaced">Ellenbogen</hi> beteiligten, gelangten mehrfache, auf eine teilweise Behebung der Arbeitslosigkeit abzielende Projekte (Regulierung des Liesingbaches, Frage der Adaptierung der Rossauerkaserne für Volkswohnungen, bzw. der Demolierung dieser Kaserne, Benützung der Kriegsgefangenenlager samt Werkstättenbetrieben, Verarbeitung der vorhandenen Rohstoffe u. dgl.) zur Sprache. In diesem Zusammenhange erklärte Staatssekretär Dr. <hi rend="#letterspaced">Deutsch</hi>, dass er in der Lage <pb facs="krp-0053_r-0014"/>sei, Hunderttausende von Geschoßmänteln zur Verfügung zu stellen, die ohne Weiteres zur Herstellung von Bijouteriewaren verwendet werden könnten. Staatssekretär Ing. <hi rend="#letterspaced">Zerdik</hi> nimmt hievon mit Befriedigung Kenntnis und erklärt, die Anregung weiter verfolgen zu wollen.</p>
+                  <p>Der Kabinettsrat genehmigte schließlich den vorliegenden Antrag des Staatssekretärs für soziale Verwaltung.</p>
+               </div>
+               <div type="top" xml:id="krp-0053_top11">
+                  <head>
+                     <label>
+                        <num n="11">11.</num>
+                        <seg>Gesetzesvorlage betreffend Kreditoperationen.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Schumpeter</hi> erbittet die Ermächtigung des Kabinettsrates zur Einbringung einer Gesetzesvorlage in der Provisorische Nationalversammlung, betreffend Kreditoperationen.</p>
+                  <p>Nachdem Sektionsrat Dr. <hi rend="#letterspaced">Brauneis</hi> die Vorlage in ihren Details erläutert hatte, erteilt der Kabinettsrat dem Staatssekretär für Finanzen die erbetene Ermächtigung.</p>
+               </div>
+               <div type="top" xml:id="krp-0053_top12">
+                  <head>
+                     <label>
+                        <num n="12">12.</num>
+                        <seg>Bereitstellung von 25 Millionen K für die Zwecke der Einführung des elektrischen Eisenbahnbetriebes für im Rahmen der für Notstandsarbeiten bewilligten Mittel.</seg>
+                     </label>
+                  </head>
+                  <p>Unterstaatssekretär Dr. <hi rend="#letterspaced">Ellenbogen</hi> führt aus, dass unter den für die Bekämpfung der Arbeitslosigkeit zutreffenden Vorsorgen, die Schaffung von Arbeitsgelegenheiten für Zwecke der Elektrisierung der Eisenbahnen insoferne <pb facs="krp-0053_r-0015"/>eine hervorragende Rolle spiele, als hiedurch eine Aktion von eminent volkswirtschaftlicher Bedeutung – für die eine Sicherstellung der Mittel bisher nicht erfolgt ist – eingeleitet wird und zugleich Arbeitsgelegenheit für mehrere tausend Arbeiter (zum größeren Teil Handlanger, im Übrigen aber qualifizierte Arbeiter) geschaffen würde.</p>
+                  <p>Im Rahmen der für die Einführung der elektrischen Zugförderung durchzuführenden Arbeiten und Lieferungen kämen für das Jahr 1919 in Betracht:</p>
+                  <list>
+                     <item n="1">
+                        <label>1.)</label> Für die Elektrifizierung der Arlbergstrecke sowie der Strecke Stainach-Irdning – Attnang-Puchheim die Beschaffung von Probelokomotiven und von Montagewagen, die Aufstellung von Masten die Arbeiten für die Streckenausrüstung und die Umgestaltung und Verlegung der Schwachstromleitungen usw.;</item>
+                     <item n="2">
+                        <label>2.)</label> für den Ausbau von Wasserkraftanlagen für Bahnbetrieb und zwar: für das Kraftwerk am Spullersee und ein Kraftwerk auf der Ostseite des Arlbergtunnels die Vorbereitung der Baudurchführung durch die Zugänglichmachung der Baustellen durch Wegbauten und Seilbahnen, die Aushebung von Fundamenten für Sperren<pb facs="krp-0053_r-0016"/>bauten, sowie die Steinbeschaffung, die Aufstellung von Baracken und die Anlage von Schrebergärten und schließlich die Inangriffnahme der Stollenbauten.</item>
+                  </list>
+                  <p>Das Gelderfordernis für die vorerwähnten im Laufe des Jahres 1919 durchführbaren Arbeiten einschließlich der ersten Rate für die Bestellung der elektrischen Fahrbetriebsmittel dürfte ungefähr 25 Millionen K betragen.</p>
+                  <p>Der sprechende Unterstaatssekretär beantragte abschließend, es sei der Betrag von 25 Millionen K für die Vorbereitung der Elektrifizierung auf den oberwähnten Strecken aus den schon bewilligten Notstandskrediten dem Staatsamte für Verkehrswesen zur Verfügung zu stellen.</p>
+                  <p>Staatssekretär <hi rend="#letterspaced">Paul</hi> befürwortet diesen Antrag wärmstens und weist darauf hin, dass das Staatsamt für Verkehrswesen sich mit der Ausarbeitung eines Gesetzes, betreffend die Elektrifizierung der Eisenbahnen befasse, welches demnächst dem Kabinettsrate vorgelegt werden wird.</p>
+                  <p>Auf eine Anregung des Staatssekretärs <hi rend="#letterspaced">Hanusch</hi>, der Arbeitslosigkeit auch durch eine großzügige Reparatur der Wiener Bahnhöfe und deren Inneneinrichtung zu steuern, bemerkt Staats<pb facs="krp-0053_r-0017"/>sekretär <hi rend="#letterspaced">Paul</hi>, dass dies insoferne mit großen Schwierigkeiten verbunden sei, als die Löhne der zu diesem Zwecke aufzunehmenden Arbeiter die Grundlöhne der ständigen Eisenbahnarbeiter wesentlich übersteigen und hiedurch die Gefahr neuer Lohnforderungen seitens der Letzteren hervorgerufen würde. Staatssekretär Ing. <hi rend="#letterspaced">Zerdik</hi> gibt seiner Meinung dahin Ausdruck, dass diese Schwierigkeit durch Vergebung der einschlägigen Arbeiten an Unternehmer behoben werden könnte.</p>
+                  <p>Der Kabinettsrat genehmigt schließlich den vorliegenden Antrag des Unterstaatssekretärs Dr. Ellenbogen.</p>
+               </div>
+               <div type="top" xml:id="krp-0053_top13">
+                  <head>
+                     <label>
+                        <num n="13">13.</num>
+                        <seg>Eingliederung des Luftfahrtwesens in das Staatsamt für Verkehrswesen.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Paul</hi> führt nach eingehender Darstellung der Sachlage aus, dass es nach der außerordentlichen Entwicklung, die das Luftfahrtwesen im Kriege erfahren hat, zu einem Gebote unbedingter Notwendigkeit geworden sei, sofort mit den Vorarbeiten einer gesetzlichen Regelung des Luftfahrtwesens in Deutschösterreich zu beginnen. Einer solchen Regelung habe sich die bis jetzt bei der staatlichen Behandlung der Luftverkehrsangelegenheiten herrschende Kompetenzzersplitterung hemmend entgegengestellt. Es hätten sich von den bis vor <pb facs="krp-0053_r-0018"/>kurzem bestandenen Zentralstellen nicht weniger als acht Staatsämter von ihrem Ressortstandpunkt aus mit diesen Angelegenheiten beschäftigt, ohne dass einem derselben die führende Behandlung übertragen worden wäre. Bei einer am 16. Jänner d. J. abgehaltenen zwischenstaatsamtlichen Besprechung sei einhellig der Meinung Ausdruck gegeben worden, dass die Schaffung einer staatlichen Zentralstelle für die Verwaltung des Luftfahrtwesens unbedingt geboten erscheine. Da es sich hiebei im Wesentlichen um eine Verkehrsangelegenheit handle, wäre dem Staatsamt für Verkehrswesen die Führung bei der staatlichen Verwaltung dieser Agenden zu übertragen. Es würde die auf diesem Gebiete erforderlichen Maßnahmen selbstverständlich im jeweiligen Einvernehmen mit den anderen beteiligten Staatsämtern treffen. Der sprechende Staatssekretär stellte den Antrag, der Kabinettsrat wolle beschließen: die führende Behandlung aller Angelegenheiten des Luftfahrtwesens obliege, soweit nicht auf Grund gesetzlicher Bestimmung die Zuständigkeit eines anderen Staatsamtes gegeben sei, dem Staatsamte für Verkehrswesen. Dieses habe eine eigene Dienststelle für Angelegenheiten des Luftfahrtwesens einzurichten und im Einvernehmen mit den be<pb facs="krp-0053_r-0019"/>teiligten Staatsämtern alle auf diesem Gebiete erforderlichen Maßnahmen zu treffen, insbesondere die Vorarbeiten hinsichtlich der erforderlichen Gesetzgebung durchzuführen und den Entwurf einer Vollzugsanweisung über die Vereinigung der erwähnten Angelegenheiten bei dem Staatsamte für Verkehrswesen auszuarbeiten.</p>
+                  <p>Die Staatssekretäre Ing. <hi rend="#letterspaced">Zerdik</hi> und Dr. <hi rend="#letterspaced">Deutsch</hi> schließen sich als die zunächst beteiligten Ressortleiter diesem Antrage unter der Voraussetzung an, dass das Staatsamt für Verkehrswesen bei der Übernahme der fraglichen Agenden zugleich auch jenes Personale mitübernehme, das sich in den beiden Staatsämtern bisher mit den Angelegenheiten des Luftfahrtwesens befasst habe. Staatssekretär Dr. Deutsch wünscht überdies, dass das Luftfahrtwesen einen öffentlich-rechtlichen Charakter erhalte und daher künftighin nicht etwa der Privatspekulation ausgesetzt werde.</p>
+                  <p>Demgegenüber betont Unterstaatssekretär Dr. von <hi rend="#letterspaced">Grimm</hi>, dass gemäß den seinerzeitigen Abmachungen mit dem Staatsamt für Heer[es]wesen ein Abbau der für das Luftfahrtwesen bisher verausgabten Summen hätte platzgreifen sollen, weshalb bei der erwähnten Personalübernahme <pb facs="krp-0053_r-0020"/>auf tunlichste Einschränkungen werde Bedacht genommen werden müssen.</p>
+                  <p>Im Zuge der weiteren Debatte gelangte die übereinstimmende Auffassung des Kabinettsrates zutage, dass dem Staatsamt für Verkehrswesen die Aufgabe zu stellen wäre, das vorhandene, überaus bedeutende Material entsprechend zu verwerten, demgemäß nach Möglichkeit eine regelmäßige Flugpost zu unterhalten und damit eine, wenn auch anfänglich nur geringe, Verzinsung der investierten Kapitalien zu erzielen.</p>
+                  <p>Der Kabinettsrat genehmigt schließlich den Antrag des Staatssekretärs <hi rend="#letterspaced">Paul</hi> mit dem Beifügen, dass alle finanziell belangreichen Maßnahmen nur nach jeweils mit dem Staatsamt für Finanzen gepflogenem Einvernehmen zu erlassen sein werden.</p>
+               </div>
+               <div type="top" xml:id="krp-0053_top14">
+                  <head>
+                     <label>
+                        <num n="14">14.</num>
+                        <seg>Fleischversorgung der Stadt Wien und die Wiener Fleischverbilligungsaktion.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Loewenfeld-Russ</hi> kommt auf die Frage der Fleischversorgung Wiens zu sprechen, erörtert deren gegenwärtig überaus ungünstigen Stand, macht von seinen einschlägigen Verhandlungen mit den Vertretern der Landesregierungen Mitteilung und stellt abschließend den Antrag, der Kabinettsrat wolle beschließen,</p>
+                  <p>
+                     <pb facs="krp-0053_r-0021"/>
+                  </p>
+                  <list>
+                     <item n="1">
+                        <label>1.)</label> dass der Kriegszuschlag bis auf Weiteres mit 1 K pro kg Lebensgewicht zu bemessen und zur Gänze aus Staatsmitteln zu tragen sei; für den Monat März wäre mindestens der bis Ende Februar zugestandene halbe Kriegszuschlag aufrecht zu erhalten;</item>
+                     <item n="2">
+                        <label>2.)</label> für Zwecke der Fleischverbilligung in Wien sei bis auf Weiteres ein monatlich verrechenbarer Kredit von 12 Millionen K ab 1. April 1919 und für die Zeit ab 20. März bis 1. April ein solcher von 4 Millionen K zur Verfügung zu stellen.</item>
+                  </list>
+                  <p>Hierüber entwickelt sich eine eingehende Debatte, an der sich außer dem <hi rend="#letterspaced">Vorsitzenden</hi> und dem <hi rend="#letterspaced">Referenten</hi>, Vizekanzler <hi rend="#letterspaced">Fink</hi>, die Staatssekretäre Dr. <hi rend="#letterspaced">Schumpeter</hi> und Dr. <hi rend="#letterspaced">Bauer</hi>, sowie Unterstaatssekretär Dr. von <hi rend="#letterspaced">Grimm</hi> beteiligten. Hiebei gelangte die Frage des eventuellen Abbaues des Kriegszuschlages überhaupt, der Differenzierung zwischen Niederösterreich und den anderen Ländern, einer Überwälzung dieser Mehrausgabe auf den Konsum und endlich der Preiserstellung für künftige Fleischzuschübe aus dem Auslande in eingehendster Weise zur Erörterung. Staatssekretär Dr. <hi rend="#letterspaced">Loewenfeld-Russ</hi> hielt hiebei an der grundsätzlichen Auffassung <pb facs="krp-0053_r-0022"/>fest, dass mit einer Erhöhung der Fleischpreise unter Berücksichtigung der gegenwärtigen politischen Situation auf keinen Fall vorgegangen werden dürfe.</p>
+                  <p>Der Kabinettsrat fasste den Beschluss, dass rücksichtlich des Antrages Pkt. 1.) es beim gegenwärtigen Zustande (bis Ende Mai 1919) zu belassen sei; rücksichtlich des Antrages Pkt. 2.) wären dem Staatsamt für Volksernährung für die Monate März und April Kredite im Höchstausmaße von je 8 Millionen K zur Verfügung zu stellen.</p>
+               </div>
+               <div type="top" xml:id="krp-0053_top15">
+                  <head>
+                     <label>
+                        <num n="15">15.</num>
+                        <seg>Mitterberger Kupfer AG, Wasserkraftanlage am Blühnbach; begünstigter Bau.</seg>
+                     </label>
+                  </head>
+                  <p>Nach eingehender Darstellung der Sachlage erbittet und erhält Staatssekretär Ing. <hi rend="#letterspaced">Zerdik</hi> die Ermächtigung des Kabinettsrates, den von der Mitterberger Kupfer AG beabsichtigten Bau einer Wasserfassungsanlage am Blühnbach, ferner die damit zusammenhängende hydroelektrische Zentrale sowie die Hochspannungsfreileitung in das Werk in Außerfelden im Sinne der Kaiserlichen Verordnung vom 16. Oktober 1914, RGBl. Nr. 284, als begünstigten Bau zu erklären.</p>
+               </div>
+               <div type="top" xml:id="krp-0053_top16">
+                  <head>
+                     <label>
+                        <num n="16">16.</num>
+                        <seg>Ratifikation eines mit der ukrainischen Delegation abgeschlossenen Vertrages über die sofortige Lieferung von Mineralölprodukten.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Ing. Zerdik teilt mit, dass die mit der polnischen <pb facs="krp-0053_r-0023"/>Liquidierungskommission, bzw. der polnischen Regierungskommission in Krakau in den Monaten November und Dezember 1918 abgeschlossenen Warenkompensationsverträge, die insbesondere die Lieferung von Mineralölprodukten aus Polnisch-Galizien zum Gegenstande hatten, infolge der vielfachen Unterbrechungen und Behinderungen des Bahnverkehres nur in einem solchen Umfange ausgeführt worden seien, dass der notdürftigste Bedarf unserer Bevölkerung an Leuchtpetroleum und Benzin gedeckt werden konnte, während die Industrie unter einen fast vollständigen Mangel an Gasöl leidet, was bei dem großen Kohlenmangel besonders hart empfunden werde. Diese Lage habe sich in den letzten Tagen dadurch erschwert, dass die polnische Regierung in Warschau die ohne ihre Genehmigung abgeschlossenen Verträge suspendiert und die Ausfuhr von Mineralölprodukten nach Deutschösterreich untersagt habe.</p>
+                  <p>In dieser Zwangslage sei mit der zum Zwecke des Abschlusses eines Handels-, Post- und Finanzübereinkommens in Wien weilenden ukrainischen Delegation ein Separatvertrag vereinbart worden, durch welchen die sofortige Lieferung der für die nächste Zeit –insbe<pb facs="krp-0053_r-0024"/>sondere auch die Bahnzwecke – dringendst benötigten Mineralölprodukte gesichert werden soll.</p>
+                  <p>Das Inkrafttreten des Vertrages sei unsererseits von der Regelung der Durchfuhrfrage mit Ungarn bis einschließlich 25. März abhängig gemacht. Ob dieser Termin eingehalten werden könne, sei ungewiss, da die bereits eingeleiteten Verhandlungen infolge des neuerlichen Umsturzes in Ungarn eine Unterbrechung erfahren haben. Es werde indes eine Verlängerung des Termines voraussichtlich ohne Schwierigkeiten zu erlangen sein. Der sprechende Staatssekretär erbitte demgemäß vom Kabinettsrat die Ratifikation dieses Separatvertrages.</p>
+                  <p>Der Kabinettsrat stimmt diesem Antrage zu.</p>
+                  <p/>
+               </div>
+            </div>
+            <div type="stenogramme">
+               <div n="1">
+                  <head>EINZUFÜGEN</head>
+                  <p>Transkription in Arbeit.</p>
+               </div>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

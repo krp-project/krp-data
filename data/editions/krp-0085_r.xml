@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href='http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:acdh="https://vocabs.acdh.oeaw.ac.at/schema#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xml:lang="de">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="a" type="main" n="0085">Kabinettsprotokoll Nr. 85 vom 4. Juli 1919</title>
+            <title level="m" type="main" n="01">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <title level="m" type="sub" n="">Renner II (15. März – 17. Oktober 1919)</title>
+            <meeting>
+               <placeName key="https://d-nb.info/gnd/4066009-6">Wien</placeName>
+               <orgName key="https://d-nb.info/gnd/5162749-8">Kabinettsrat</orgName>
+               <date when-iso="1919-07-04"/>
+            </meeting>
+            <editor>
+               <persName key="https://d-nb.info/gnd/122481836"
+                         role="hasCreator"
+                         xml:id="hwohnout">
+                  <forename>Helmut</forename>
+                  <surname>Wohnout</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</affiliation>
+               <idno type="ORCID">0000-0002-3864-9839</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/120789825"
+                         role="hasCreator"
+                         xml:id="tolechowski">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0003-3291-6876</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/131679384"
+                         role="hasCreator"
+                         xml:id="rlein">
+                  <forename>Richard</forename>
+                  <surname>Lein</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0002-7502-0503</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="aholzer">
+                  <forename>Anna</forename>
+                  <surname>Holzer</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0005-3560-3500</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="dsoelkner">
+                  <forename>Dominik</forename>
+                  <surname>Sölkner</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-9895-7212</idno>
+            </editor>
+            <editor>
+               <persName role="hasContributor" xml:id="ischotzko">
+                  <forename>Ina</forename>
+                  <surname>Schotzko</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-5210-3713</idno>
+            </editor>
+            <funder n="1">
+               <orgName key="https://d-nb.info/gnd/2054142-9" role="hasFunder">Österreichischer Wissenschaftsfonds FWF</orgName>
+               <idno type="project">PAT1495024</idno>
+               <title type="project">Die Protokolle des österreichischen Kabinettsrates 1919–1920</title>
+            </funder>
+            <respStmt>
+               <resp>Projektverantwortung</resp>
+               <orgName key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Projektleitung</resp>
+               <persName key="https://d-nb.info/gnd/120789825" role="hasPrincipalInvestigator">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+                  <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+                  <idno type="ORCID">0000-0003-3291-6876</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Nationaler Forschungspartner</resp>
+               <orgName key="https://d-nb.info/gnd/1123037736" role="hasEnabler">Austrian Centre for Digital Humanities</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Digitalisierung der gedruckten Quellen</resp>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>TEI-Datenmodellierung</resp>
+               <persName role="hasContributor" xml:id="tfruehwirth">
+                  <forename>Timo</forename>
+                  <surname>Frühwirth</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-3997-5193</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technische Supervision</resp>
+               <persName key="https://d-nb.info/gnd/1043833846"
+                         role="hasContributor"
+                         xml:id="pandorfer">
+                  <forename>Peter</forename>
+                  <surname>Andorfer</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-9575-9372</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technisches Consulting und Vorbereitung der Druckausgabe</resp>
+               <persName key="https://d-nb.info/gnd/13281899X"
+                         role="hasContributor"
+                         xml:id="skurz">
+                  <forename>Stephan</forename>
+                  <surname>Kurz</surname>
+                  <affiliation key="https://d-nb.info/gnd/1202798799">Institut für die Erforschung der Habsburgermonarchie und des Balkanraumes</affiliation>
+                  <idno type="ORCID">0000-0003-2546-2570</idno>
+               </persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher key="https://d-nb.info/gnd/1001454-8">Österreichische Akademie der Wissenschaften</publisher>
+            <date when="2028"/>
+            <availability status="free">
+               <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">Lizenziert unter CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/deed.de)</licence>
+            </availability>
+            <idno type="ISBN_Print"/>
+            <idno type="ISBN_Part_epub"/>
+            <idno type="ISBN_Digital"/>
+            <idno type="DOI"/>
+            <idno type="DOI_zenodo"/>
+            <idno type="ebook_ID"/>
+         </publicationStmt>
+         <seriesStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="m" type="main">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <respStmt>
+               <resp>Bearbeitung und Herausgeberschaft</resp>
+               <orgName key="https://d-nb.info/gnd/2024703-5">Universität Wien</orgName>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+         </seriesStmt>
+         <notesStmt>
+            <note>Diese TEI-XML-Datei ist Grundlage für eine Druckausgabe der Edition.</note>
+            <relatedItem>
+               <biblStruct>
+                  <monogr>
+                     <imprint>
+                        <pubPlace key="https://d-nb.info/gnd/4066009-6">Wien</pubPlace>
+                        <publisher key="https://d-nb.info/gnd/2068748-5">Verlag der Österreichischen Akademie der Wissenschaften</publisher>
+                        <date when="2029"/>
+                     </imprint>
+                     <extent/>
+                  </monogr>
+                  <note>
+                     <idno/>
+                     <ptr/>
+                  </note>
+                  <citedRange/>
+               </biblStruct>
+            </relatedItem>
+         </notesStmt>
+         <sourceDesc>
+            <bibl>Quellbestand: AT-OeStA/AdR MRang MR 1Rep KRP Kabinettsratsprotokolle, 1918-1920 (Teilbestand)<ref target="https://www.archivinformationssystem.at/detail.aspx?id=5465">https://www.archivinformationssystem.at/detail.aspx?id=5465</ref>
+            </bibl>
+            <msDesc>
+               <msIdentifier>
+                  <institution key="https://d-nb.info/gnd/37748-X" role="hasOwner">AT-OeStA Österreichisches Staatsarchiv (Archiv (ÖStA))</institution>
+                  <repository key="https://d-nb.info/gnd/1601181-8">AT-OeStA/AdR Archiv der Republik, 1918- (Abteilung)</repository>
+                  <collection>AT-OeStA/AdR MRang MR 1Rep Ministerrat 1. Republik, 1918 - 1938 (Bestand)</collection>
+                  <idno>AT-OeStA_AdR-MRang-MR-1.-Rep.-KRP-085</idno>
+               </msIdentifier>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <abstract>
+            <p>
+          <!--to be generated-->
+        </p>
+         </abstract>
+      </profileDesc>
+      <encodingDesc>
+         <styleDefDecl scheme="css"/>
+         <tagsDecl>
+            <rendition xml:id="b" scheme="css">font-weight:bold;</rendition>
+            <rendition xml:id="su" scheme="css">vertical-align:super;font-size:.7em;</rendition>
+            <rendition xml:id="s" scheme="css">text-decoration:line-through;</rendition>
+            <rendition xml:id="u" scheme="css">text-decoration:underline;</rendition>
+            <rendition xml:id="ow" scheme="css">text-decoration:line-through;text-decoration-style:double;</rendition>
+            <rendition xml:id="r" scheme="css">display:block;text-align:right;</rendition>
+            <rendition xml:id="letterspaced" scheme="css">letter-spacing:0.15em;</rendition>
+            <rendition xml:id="i" scheme="css">font-style:italic;</rendition>
+         </tagsDecl>
+         <editorialDecl>
+            <hyphenation>
+               <p>
+            <!--to be added-->
+          </p>
+            </hyphenation>
+            <correction>
+               <p>
+            <!--to be added-->
+          </p>
+            </correction>
+            <normalization>
+               <p>
+            <!--to be added-->
+          </p>
+            </normalization>
+            <punctuation>
+               <p>
+            <!--to be added-->
+          </p>
+            </punctuation>
+            <stdVals>
+               <p>
+            <!--to be added-->
+          </p>
+            </stdVals>
+            <p>
+          <!--to be added-->
+        </p>
+         </editorialDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#tfruehwirth" when-iso="2026-10-07">TEIGarage output upconverted with upconvert.xsl</change>
+         <change who="#tfruehwirth" when-iso="2026-10-07">TEI header populated with generate_tei_templates.py</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface/>
+   </facsimile>
+   <text>
+      <body>
+         <div xml:id="doc-krp-0085.xml">
+            <head type="dokument">
+               <title type="num">85.<note type="footnote">Das Protokoll trägt den Vermerk <hi rend="#i">Vertraulich!</hi>
+                  </note>
+               </title>
+               <title type="desc">
+                  <pb facs="krp-0085_r-0001"/>[Dienstag] 1919-07-04</title>
+            </head>
+            <div type="dokumentkopf">
+               <div type="vorsitz">
+                  <head>Vorsitz:</head>
+                  <p>Fink</p>
+               </div>
+               <div type="anwesend">
+                  <head>Anwesend:</head>
+                  <p>Bauer, Bratusch, Eldersch, Glöckel, Hanusch, Loewenfeld-Russ, Miklas, Paul, Schumpeter, Tandler, Waiss, Zerdik</p>
+               </div>
+               <div type="zugezogen">
+                  <head>Zugezogen:</head>
+                  <p>Grimm, Joas, Leifer, Rücker, Weinczierl, [Ziller]</p>
+               </div>
+               <div type="schriftfuehrer">
+                  <head>Schriftführer:</head>
+                  <p>unbekannt</p>
+               </div>
+               <div type="dauer">
+                  <head>Dauer:</head>
+                  <p>15.00–18.15 Uhr</p>
+               </div>
+            </div>
+            <div type="komponenten">
+               <p>Reinschrift, Beilagen, Konzept, stenographische Mitschrift, Entwurf der Tagesordnung, diverse Zusätze</p>
+            </div>
+            <div type="beilagen">
+               <head>Beilagen:</head>
+               <list>
+                  <item>
+                     <ref target="#krp-0085_top01">Zu TOP 1</ref>: <ref target="#krp-0085_b01">Antrag des Salzburger Landtages auf Verschärfung der Strafbestimmungen gegen Preistreiberei und Kettenhandel</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0085_top02">Zu TOP 2</ref>: <ref target="#krp-0085_b02">Verzichtserklärung des Franz, Hubert und Rainer Habsburg-Lothringen</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0085_top03">Zu TOP 3</ref>: <ref target="#krp-0085_b03">Referat der Staatskanzlei über die Frage des Aufenthaltsverbotes für das Haus Bourbon-Parma</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0085_top04">Zu TOP 4</ref>: <ref target="#krp-0085_b04">Referat der Staatskanzlei Zl. 303/1-St.K. über eine Amnestie in Verwaltungs- (Polizei)-strafsachen</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0085_top05">Zu TOP 5</ref>: <ref target="#krp-0085_b05">Referat der Staatskanzlei zu Zl. 1.735/3 St.K.-1919 über den Entwurf einer Vollzugsanweisung zur Änderung der Lieferungsverordnung</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0085_top06">Zu TOP 6</ref>: <ref target="#krp-0085_b06">Vortrag des Staatssekretärs für Heereswesen zu Abt. 17 Zl. 371/19 über die Liquidierung der militärgerichtlichen Strafsachen der gewesenen österreichisch-ungarischen Monarchie</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0085_top07">Zu TOP 7</ref>: <ref target="#krp-0085_b07">Vortrag und Antrag des Staatsamtes für Handel und Gewerbe, Industrie und Bauten über die Erwerbung des Brunner Gewerbelagers durch den Staat zur Unterbringung arbeitsloser Handwerker</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0085_top08">Zu TOP 8</ref>: <ref target="#krp-0085_b08">Gesetzesentwurf über Kammern für Handel, Gewerbe und Industrie</ref>
+                  </item>
+               </list>
+            </div>
+            <div type="protokoll">
+               <pb facs="krp-0085_r-0002"/>
+               <div type="top" xml:id="krp-0085_top01">
+                  <head>
+                     <label>
+                        <num n="1">1.</num>
+                        <seg>Kundmachung der Landesregierung in Salzburg, betreffend die Verhängung der Verwahrungshaft in Schleichhandelsfällen.</seg>
+                     </label>
+                  </head>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> teilt mit, dass die Landesregierung in Salzburg aufgrund einer vom Landtag erteilten Ermächtigung eine Kundmachung im Landesgesetzblatt verlautbart habe, wo<pb facs="krp-0085_r-0003"/>nach bis zur Erlassung verschärfter strafgesetzlicher Maßnahmen durch die Nationalversammlung in krassen Fällen des überwiesenen Schleichhandels die Schuldigen in Verwahrungshaft zu nehmen sind. Gleichzeitig seien die Unterbehörden strengstens angewiesen worden, von der durch den Landtagsbeschluss gegebenen Ermächtigung in unnachsichtlicher Weise Gebrauch zu machen.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Bratusch</hi> weist auf die Ungesetzlichkeit dieser Verfügung hin und regt an, ob es sich nicht empfehlen würde, den in Rede stehenden Landtagsbeschluss beim Verfassungsgerichtshofe anzufechten.</p>
+                  <p>In der hierüber abgeführten Debatte, an welcher sich die Staatssekretäre <hi rend="#letterspaced">Eldersch</hi> und Dr. <hi rend="#letterspaced">Bauer</hi> beteiligten, wurde geltend gemacht, dass von einer Anfechtung dieses Beschlusses beim Verfassungsgerichtshofe aus politischen Gründen sowie in der Erwägung Abstand zu nehmen wäre, dass es sich im vorliegenden Falle nicht um einen formalen Gesetzesbeschluss handle. Dagegen wäre es nicht zu unterlassen, die Landesregierung mittelst einer besonderen Zuschrift darauf aufmerksam zu machen, dass die Verfügung mit den bestehenden <pb facs="krp-0085_r-0004"/>Gesetzen im Widerspruche stehe und eventuell im Anwendungsfalle Schadenersatzansprüche an den Staat gestellt werden könnten.</p>
+                  <p>Der Kabinettsrat schließt sich dieser Auffassung an.</p>
+               </div>
+               <div type="top" xml:id="krp-0085_top02">
+                  <head>
+                     <label>
+                        <num n="2">2.</num>
+                        <seg>Verzichtserklärungen des Franz, Hubert und Rainer Habsburg-Lothringen.</seg>
+                     </label>
+                  </head>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> teilt mit, dass die Staatskanzlei aufgrund der Stellungnahme des Kabinettsrates zu der Frage der Verzichts- und Staatsbürgerschaftserklärungen der ehemaligen Erzherzoge Franz und Hubert Habsburg-Loth<pb facs="krp-0085_r-0005"/>ringen (Kabinettsprotokoll Nr. 71 vom 16. Mai d. J.) einvernehmlich mit den Staatsämtern für Inneres und Unterricht und für Justiz nachstehende Erledigung an das Präsidium der Niederösterreichischen Landesregierung hinauszugehen beabsichtige:</p>
+                  <p>„In der Anlage stellt die Staatskanzlei die mit den Berichten vom 29. April 1919, Zl. III b 3235 und 3236 und vom 10. Mai 1919, Zl. IV b 3506, dem Staatsamt für Inneres und Unterricht vorgelegten Verzichts- und Staatsbürgerschaftserklärungen der ehemaligen Erzherzoge Franz und Hubert Habsburg-Lothringen mit dem Bemerken zurück, dass zufolge der in den Einschreiten angedeuteten Einschränkung der beabsichtigten Namensführung auf das deutschösterreichische Staatsgebiet die Erklärungen nach Anschauung der Staatsregierung nicht als genügend angesehen werden können. Aus dieser Einschränkung scheint nämlich hervorzugehen, dass die Einschreiter der Ansicht sind, dass sie außerhalb Deutschösterreichs als Erzherzoge von Österreich auftreten können. Dies stünde aber nicht nur im Widerspruche mit dem im Gesetze verlangten Verzichte auf die Mitgliedschaft zum Hause Habsburg-Lothringen, sondern auch damit, dass die Bestimmungen der Gesetze vom 3. April 1919, St.G.Bl. Nr. 209 und Nr. 211 für deutschösterreichische Staatsbürger auch bei Aufenthalten außerhalb Deutschösterreichs verbindlich sind. Weiters müsste in den Einschreiten zum Ausdruck gebracht werden, dass sich der in den Erklärungen betonte Nichtverzicht auf die privatrechtlichen Rechte, Forderungen und Ansprüche <hi rend="#u">selbstverständlich</hi> nur auf jene Rechte, Forderungen und Ansprüche beziehen kann, die das nachweisbar freie persönliche Privatver<pb facs="krp-0085_r-0006"/>mögen betreffen.</p>
+                  <p>Dies wolle von der Landesregierung den Parteien mit der Einladung eröffnet werden eventuell neue entsprechend modifizierte Erklärungen, worin den Unterschriften überdies eine notarielle Beglaubigung beizusetzen wäre, einzubringen. Die Staatskanzlei wird diesfalls die Einschreiten der weiteren verfassungsmäßigen Behandlung zu führen.“</p>
+                  <p>Der Kabinettsrat pflichtet dieser Auffassung bei.</p>
+               </div>
+               <div type="top" xml:id="krp-0085_top03">
+                  <head>
+                     <label>
+                        <num n="3">3.</num>
+                        <seg>Frage des Aufenthaltsverbotes für das Haus Bourbon-Parma.</seg>
+                     </label>
+                  </head>
+                  <p>Der Vorsitzende erinnert daran, dass die Nationalversammlung gelegentlich der Verabschiedung des Gesetzes, betreffend die Landesverweisung und die Übernahme des Vermögens des Hauses Habsburg-Lothringen, nachstehende Entschließung gefasst habe: „Die Regierung wird aufgefordert, ehestens die entsprechenden Maßnahmen zu treffen, damit dem Hause Bourbon-Parma für immerwährende Zeiten der Aufenthalt in Deutschösterreich verwehrt sei.“</p>
+                  <p>Die Sach- und Rechtslage sei folgende:</p>
+                  <p>
+                     <pb facs="krp-0085_r-0007"/>Nach den erläuternden Bemerkungen zu dem Entwurfe des Gesetzes, betreffend die Einräumung des Gerichtsstandes des Obersthofmarschallamtes an Mitglieder des herzoglichen Parma‘schen Hauses (112 der Beilagen zu den stenographischen Protokollen des Herrenhauses XVIII Session 909) stand der verstorbene Herzog Robert von Parma im Genusse der Exterritorialität, die nach Maßgabe der Grundsätze des Völkerrechtes auch den nächsten Angehörigen des Herzogs zugute kam.</p>
+                  <p>Die als exterritorial anzusehenden Familienangehörigen unterstanden demnach zu Lebzeiten des Herzogs Robert nicht der österreichischen Staatshoheit.</p>
+                  <p>Das mit seiner souveränen Stellung im Zusammenhange stehende Vorrecht der Exterritorialität ist jedoch schon durch den Tod des Herzogs für die Familienangehörigen erloschen.</p>
+                  <p>Um die Aufnahme in die österreichische – und in der Folge in die deutschösterreichische Staatsbürgerschaft – haben sich die Mitglieder des Hauses Parma, soweit dem Staatsamt für Inneres und Unterricht bekannt, niemals beworben.</p>
+                  <p>Bei den ehemals souveränen Familien sind regelmäßig Aspirationen nach Wieder<pb facs="krp-0085_r-0008"/>erlangung der verlorenen Herrscherstellung vorhanden, die sich zum Mindesten in der Vermeidung von Handlungen äußern, aus denen ein Schluss auf ein Abgehen von ihren Ansprüchen gezogen werden könnte. Daher tritt bei diesen Familien stets das Bestreben zutage, die Staatsangehörigkeit in jenem Staate beizubehalten, in dem ihnen seinerzeit Herrscherrechte zukamen.</p>
+                  <p>Auch das Haus Parma scheint an der gleichen Tradition festgehalten zu haben. Dass einzelne seiner Mitglieder sich in die österreichisch-ungarische Armee einreihen ließen, rechtfertigt keinen Rückschluss auf die Frage ihrer Staatsbürgerschaft, da die Staatsangehörigkeit zu einer der beiden Reichshälften nicht eine notwendige Voraussetzung für den Eintritt in die österreichisch-ungarische Armee bildete.</p>
+                  <p>Tatsächlich sollen sich auch die Prinzen Sixtus und Franz Xaver unter Berufung auf ihre französische Staatsangehörigkeit – die Familie Parma betrachtet sich als Nachkommen des Hauses Bourbon als Franzosen – um Aufnahme in die französische Armee beworben haben.</p>
+                  <p>Die Mitglieder des Hauses Parma sind <pb facs="krp-0085_r-0009"/>somit für den Bereich des deutschösterreichischen Staates als Ausländer anzusehen, denen das Vorrecht der Exterritorialität – ganz abgesehen von den Bestimmungen des Gesetzes vom 3. April 1919, StGB1. Nr. 210 – nach völkerrechtlichen Grundsätzen an und für sich nicht zukommt und denen demgemäß nach den Bestimmungen des § 2, 5. Abs. des Gesetzes vom 27. Juli 1871, RGBl. Nr. 88 aus Rücksichten der öffentlichen Ordnung oder Sicherheit der Aufenthalt im Gebiete der Republik Deutschösterreich verwehrt werden könnte. Die Abschaffung nach § 2 cit. könnte allerdings nur aufgrund des im Gesetze vom 27. Juli 1871 vorgesehenen Verfahrens ausgesprochen werden und würde nur jene Mitglieder des Hauses treffen, gegen die das Verfahren durchgeführt werden kann. Soll dem Hause Parma als solches, das heißt auch den nachgeborenen Mitgliedern des Hauses, der Aufenthalt in Deutschösterreich für alle Zeiten verwehrt werden, so wären die Mitglieder des Hauses nach dem Beispiele des Gesetzes vom 3. April 1919, StGBl. Nr. 209, im Wege eines besonderen Gesetzes des Landes zu verweisen.</p>
+                  <p>
+                     <pb facs="krp-0085_r-0010"/>Die Staatsregierung habe eine solche Maßregel bereits gelegentlich der Vorbereitung des Gesetzes, betreffend die Landesverweisung und Übernahme des Vermögens des Hauses Habsburg-Lothringen beabsichtigt und demgemäß in den § 2 ihres Entwurfes die Bestimmung aufgenommen „ ……... werden der ehemalige Träger der Krone, alle Mitglieder des Hauses Habsburg-Lothringen <hi rend="#u">sowie des Hauses Bourbon-Parma</hi> des Landes verwiesen". Der Verfassungsausschuss habe jedoch in seinem Antrage an die Nationalversammlung die Worte „sowie des Hauses Bourbon-Parma“ gestrichen. Das Haus hat in der Folge das Gesetz in der vom Ausschusse vorgeschlagenen Fassung zum Beschluss erhoben.</p>
+                  <p>Unter diesen Umständen empfehle sich nach Auffassung der Staatskanzlei kaum die Ausarbeitung eines neuerlichen Gesetzentwurfes mit dem Ziele der Landesverweisung des genannten Hauses, zumal da gegenwärtig für eine solche Maßregel kein konkreter Anlass vorzuliegen scheint. Vorläufig erscheine die Republik durch die Bestimmungen des Gesetzes vom 27. Juli 1871, RGBl. Nr. 88, wonach aus Rücksichten der öffentlichen Ordnung <pb facs="krp-0085_r-0011"/>oder Sicherheit jedem Ausländer der Aufenthalt im Gebiete Deutschösterreichs unter Einhaltung eines bestimmten Verfahrens verwehrt werden kann, genügend gesichert. Sollte sich in Hinkunft ein einzelner Anwendungsfall dieses Gesetzes ergeben, so wäre damit auch vielleicht ein genügender Anlass zur Einbringung eines auf das ganze Haus sich erstreckenden Verbannungsgesetzes gegeben.</p>
+                  <p>Der sprechende Vizekanzler stelle daher den Antrag, der Kabinettsrat wolle beschließen:</p>
+                  <p>Es werde von legislativen oder administrativen Maßregeln gegen das Haus Bourbon-Parma vorderhand Abstand genommen.</p>
+                  <p>Der Kabinettsrat erhebt diesen Antrag zum Beschluss.</p>
+               </div>
+               <div type="top" xml:id="krp-0085_top04">
+                  <head>
+                     <label>
+                        <num n="4">4.</num>
+                        <seg>Amnestie in Verwaltungs- (Polizei-)strafsachen.</seg>
+                     </label>
+                  </head>
+                  <p>Der Vorsitzende gibt bekannt, dass die Polizeidirektion Wien bei der Staatskanzlei die Erlassung einer Amnestie in <hi rend="#u">Verwaltungs-(Polizei-)strafsachen</hi> aus Anlass der Errichtung der deutschösterreichischen Republik zur <pb facs="krp-0085_r-0012"/>Erwägung gestellt habe. Diese Amnestie hätte in den bereits erfolgten Amnestien zugunsten <hi rend="#u">gerichtlich</hi> bestrafter Personen ihr Vorbild. Die Staatskanzlei sei dieser jedenfalls sehr erwägenswerten Anregung näher getreten und habe sich insbesondere mit dem in der Angelegenheit führenden Staatsamt für Inneres und Unterricht ins Einvernehmen gesetzt, worauf dieses Staatsamt eine zwischenstaatsamtliche Besprechung der beteiligten Staatsämter veranlasste. Bei dieser Besprechung haben sich im Einklange mit der Auffassung des Staatsamtes für Inneres und Unterricht die Vertreter <hi rend="#u">aller</hi> Staatsämter <hi rend="#u">gegen</hi> die Erteilung einer (naturgemäß generellen) <hi rend="#u">Amnestie</hi> in <hi rend="#u">Verwaltungsstrafsachen</hi> ausgesprochen. Hiebei waren folgende Erwägungen maßgebend:</p>
+                  <p>Während im gerichtlichen Strafverfahren der Strafzwecke sich mit der Anwendung der Strafnorm erschöpft, bleibt er im Verwaltungsstrafverfahren im fortwährenden Zusammenhange mit den Verwaltungsaufgaben, deren Erfüllung die Verwaltungsstrafe ermöglichen soll. Daraus ergibt sich die Folgerung, dass Verwaltungsstrafsachen ohne Gefährdung der <pb facs="krp-0085_r-0013"/>Verwaltungszwecke selbst nicht anders, als nur unter Bewertung aller im <hi rend="#u">Einzelfalle</hi> maßgebenden persönlichen, örtlichen und sonstigen Verhältnisse durch die Administrativbehörden gemildert oder nachgesehen werden können, wie dies ja auch im § 5 Abs. 2 und 3, der mit Gesetzeskraft ausgestatteten Ministerialverordnung vom 31. Jänner 1860, RGBl. Nr. 31, vorgesehen ist.</p>
+                  <p>Weiters kommt in Betracht, dass gegenwärtig die Hauptzahl der Straffälle Übertretungen <hi rend="#u">kriegswirtschaftlicher</hi> Vorschriften betreffen, deren, <hi rend="#u">strenge</hi> Handhabung im Hinblicke auf die Schwierigkeiten der wirtschaftlichen Verhältnisse fortdauernd notwendig erscheint, und die daher in Übereinstimmung mit dem gestellten Antrage von einer generellen Amnestie unbedingt ausgenommen werden müssten. Ganz im Einklang damit steht ja auch der vom Herrn Staatssekretär für Justiz in der 71. Sitzung des Staatsrates vom 3. Februar 1919 gestellte und vom Staatsrat <hi rend="#u">angenommene</hi> Antrag, demzufolge gerichtliche Verurteilungen wegen Preistreiberei in eine generelle Amnestie <hi rend="#u">nicht</hi> einbezogen werden dürfen, sondern individuell behandelt werden müssen.</p>
+                  <p>
+                     <pb facs="krp-0085_r-0014"/>Wird aber von der Einbeziehung von Übertretungen kriegswirtschaftlicher Vorschriften in die Amnestie abgesehen, dann verbleibt dafür nur eine verhältnismäßig geringe Anzahl von Straffällen übrig, sodass eine auf noch nicht vollzogene Strafen als solche eingeschränkte Amnestie, die auf allfällige mit der Strafe verbundene Folgen gar keinen Bedacht nehmen soll, wenig praktischen Zweck hätte.</p>
+                  <p>Dazu kommt noch, dass die Erlassung einer Amnestie mit dem Stichtage 31. Oktober 1918 im gegenwärtigen Zeitpunkte eine Begünstigung gerade jener Straffälligen bedeuten würde, die sich möglichst lange dem Strafvollzuge zu entziehen trachteten. Insbesondere würden Straffällige Vorteil daraus ziehen, deren Strafangelegenheiten bei Behörden anhängig sind, die infolge Überlastung oder aus anderen Gründen den Strafvollzug nicht mit der gewünschten Raschheit durchgeführt haben.</p>
+                  <p>Zu diesen Bedenken mehr politischer Natur, welche gegen eine Amnestieerteilung im <hi rend="#u">Wege der Gesetzgebung</hi> sprechen, kommen Bedenken rechtlicher Natur, falls eine dasselbe bezweckende <pb facs="krp-0085_r-0015"/>administrative Maßregel ins Auge gefasst wird.</p>
+                  <p>Gemäß § 411 Abs. 1 der Strafprozessordnung vom 23. Mai 1873, RGBl. Nr. 119 der gleichlautend ist mit § 330 Abs. 1 der Strafprozessordnung vom 29. Juli 1853, RGBl. Nr. 151, an die sich die geltenden Vorschriften über das Verwaltungsstrafverfahren anlehnen, greift die Gnade der obersten Regierungsgewalt als solcher nur soweit Platz, als es sich um eine im Gesetze nicht vorbedachte Nachsicht oder Milderung der Strafe handelt. Demgemäß wurde in Verwaltungsstrafsachen auch stets der Standpunkt vertreten, dass in den Bestimmungen der Ministerialverordnung vom 31. Jänner 1860, RGBl. Nr. 31, nicht bloß eine delegationsweise Übertragung des Gnadenrechtes der obersten Regierungsgewalt an die politischen Landesbehörden sowie an die Zentralbehörden, sondern geradezu eine Einschränkung des Gnadenrechtes der obersten Regierungsgewalt gelegen ist. Aber nicht nur eine Einschränkung des Gnadenrechtes dieser obersten Gewalt, sondern auch eine Einschränkung in der Art der Ausübung dieses Rechtes durch die dazu berufenen Behörden muss durch <pb facs="krp-0085_r-0016"/>die vorgenannte Ministerialverordnung als gegeben erachtet werden, da diese bei Ausübung des Gnadenrechtes an die Vorschriften des § 5 der zitierten Ministerialverordnung gebunden sind, sodass daher eine Nachsicht nur für Einzelfälle, nicht aber eine generelle Nachsicht von diesen Behörden erteilt werden kann.</p>
+                  <p>Die Staatskanzlei teile diese Auffassung; der sprechende Vizekanzler glaube jedoch die Frage wegen ihrer politischen Bedeutung der Entscheidung des Kabinettsrates unterbreiten zu sollen und stelle demgemäß den Antrag: Der Kabinettsrat wolle beschließen, es werde von der Vorlage des Entwurfes eines Amnestiegesetzes in Verwaltungsstrafsachen oder einer ähnlichen auf dasselbe abzielenden administrativen Maßnahmen Abstand genommen.</p>
+                  <p>Der Kabinettsrat beschließt im Sinne des gestellten Antrages.</p>
+               </div>
+               <div type="top" xml:id="krp-0085_top05">
+                  <head>
+                     <label>
+                        <num n="5">5.</num>
+                        <seg>Vollzugsanweisung über die Abänderung und Ergänzung einiger Bestimmungen der Verordnung des Gesamtministeriums vom 3. April 1909, RGBl. Nr. 61, betreffend die Vergebung staatlicher Lieferungen und Arbeiten (Lieferungsverordnung).</seg>
+                     </label>
+                  </head>
+                  <p>Der Vorsitzende führt aus, dass der Kabinettsrat in seiner Sitzung vom 21. März 1919 den Entwurf einer Vollzugsanweisung über die Abänderung der §§ 32 <pb facs="krp-0085_r-0017"/>und 33 der Lieferungsverordnung genehmigt habe. Das Staatsamt für Handel und Gewerbe, Industrie und Bauten habe nunmehr den Entwurf ergänzt und beantragt, den ergänzten Entwurf, (der den Wirkungskreis einer Reihe von Staatsämtern berührt), als Vollzugsanweisung der Staatsregierung herauszugeben.</p>
+                  <p>Der sprechende Vizekanzler stelle demgemäß den Antrag, der Kabinettsrat wolle den neuen Entwurf einer Vollzugsanweisung über die Abänderung und Ergänzung einiger Bestimmungen der Verordnung des Gesamtministeriums vom 3. April 1909, RGBl. Nr. 61, betreffend die Vergehung staatlicher Lieferungen und Arbeiten (Lieferungsverordnung) zum Beschluss erheben und die Staatskanzlei zur Verlautbarung ermächtigen.</p>
+                  <p>Der Kabinettsrat erteilt die erbetene Ermächtigung.</p>
+               </div>
+               <div type="top" xml:id="krp-0085_top06">
+                  <head>
+                     <label>
+                        <num n="6">6.</num>
+                        <seg>Liquidierung der militärgerichtlichen Strafsachen der gewesenen österreichisch-ungarischen Monarchie.</seg>
+                     </label>
+                  </head>
+                  <p>Unter Staatssekretär Dr. <hi rend="#letterspaced">Waiss</hi> stellt die in der Protokollsbeilage verzeichneten Anträge, betreffend die Liquidierung der militärgerichtlichen Strafsachen <pb facs="krp-0085_r-0018"/>der gewesenen österreichisch-ungarischen Monarchie.</p>
+                  <p>Der Kabinettsrat genehmigt diese Anträge.</p>
+                  <p>Bei diesem Anlasse regt Staatssekretär Dr. <hi rend="#letterspaced">Bauer</hi> die eheste Vorbereitung eines Gesetzentwurfes an, mit welchem die Militärjustiz abgebaut werden soll und die Militärpersonen, insoweit es sich um die allgemeine Strafgerichtsbarkeit handelt, den Zivilgerichten unterstellt werden.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Bratusch</hi> und Unterstaatssekretär Dr. <hi rend="#letterspaced">Waiss</hi> nehmen diese Anregung zur Kenntnis.</p>
+               </div>
+               <div type="top" xml:id="krp-0085_top07">
+                  <head>
+                     <label>
+                        <num n="7">7.</num>
+                        <seg>Erwerbung des Brunner Gewerbelagers durch den Staat zwecks Unterbringung arbeitsloser Arbeiter.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Ing. <hi rend="#letterspaced">Zerdik</hi> teilt mit, die „Freie Vereinigung der deutschösterreichischen abgerüsteten Soldaten und Heimkehrer“ habe das Verlangen ausgesprochen, dass der deutschösterreichische Staat das Gewerbelager in Brunn am Gebirge für die Vereinigung erwerbe und das erforderliche Kapital für den Lagerbetrieb beistelle.</p>
+                  <p>Nach eingehender Darstellung der <pb facs="krp-0085_r-0019"/>Sachlage durch den Ministerialrat Dr. <hi rend="#letterspaced">Rücker</hi> stellt Staatssekretär Ing. <hi rend="#letterspaced">Zerdik</hi> folgende Anträge:</p>
+                  <list>
+                     <item n="1">
+                        <label>1.)</label> Der Erwerbung des Lagers durch den Staat und die vorläufige Übernahme durch ihn als Treuhänder gegen Erlag einer Kaution von 2.000.000 K wird zugestimmt. Mit der Übernahme des Lagers ist erst vorzugehen, wenn die Grundfragen so weit geklärt sind, dass nicht etwa mit dem Wegfall wesentlicher Lagerteile gerechnet werden muss. Die Hauptanstalt für Sachdemobilisierung ist wegen beschleunigter Durchführung der Verhandlungen anzuweisen.</item>
+                     <item n="2">
+                        <label>2.)</label> Der „Freien Vereinigung abgerüsteter Soldaten und Heimkehrer“ ist zu eröffnen, dass die Lagerübernahme zu dem Zwecke erfolgen wird, um gewerblich- wirtschaftlichen Vereinigungen, in erster Linie von handwerklich qualifizierten Arbeitslosen, die in Kriegsdienstleistung gestanden sind, ein Unterkommen zu bieten.</item>
+                     <item n="3">
+                        <label>3.)</label> Der deutschösterreichische Staat wird unter noch festzusetzenden Bedingungen den im Lager unterzubringenden Vereinigungen erforderlichenfalls Betriebsmittel und Betriebskapital ent<pb facs="krp-0085_r-0020"/>weder selbst beschaffen oder vermitteln. Der Gewerbeförderungskredit kann hiezu nicht herangezogen werden.</item>
+                     <item n="4">
+                        <label>4.)</label> Das Staatsamt für Handel und Gewerbe, Industrie und Bauten hat im Einvernehmen mit dem Staatsamt für soziale Verwaltung und der Sozialisierungskommission festzustellen, welches staatliche Amt mit der Durchführung der Lagerübernahme, der Verwaltung und Besiedelungsfrage zu betrauen ist. Über das Ergebnis der Verhandlungen ist dem Kabinettsrat ehestens Bericht zu erstatten.</item>
+                     <item n="5">
+                        <label>5.)</label> Einstweilen kann dem Wirtschaftausschusse der „Freien Vereinigung abgerüsteter Soldaten und Heimkehrer“ Gelegenheit gegeben werden, eine Werkhalle in Brunn in Absicht auf die Unterbringung einer wirtschaftlichen Organisation auszuwählen und mit der Gründung einer solchen vorzugehen. Sollte wider Erwarten die Erwerbung des Lagers und damit die Unterbringung der Wirtschaftsorganisation in dieser Werkhalle scheitern, so würde eine anderweitige Unterbringung staatlicherseits vermittelt werden.</item>
+                     <item n="6">
+                        <label>6.)</label> Wenn die gegenwärtig im Lager ansässigen, vom Gewerbeförderungsamt ge<pb facs="krp-0085_r-0021"/>pflegten Genossenschaften aus Gründen, die mit der Besiedelungsfrage zusammenhängen, das Lager verlassen sollten, so wird ihnen eine angemessene Entschädigung geboten werden, deren Höhe nach Anhörung des staatlichen Gewerbeförderungsamtes und des Gewerbeförderungsinstitutes der Handels- und Gewerbekammer festgesetzt werden wird. Zu dieser Entschädigung sind die Mittel der staatlichen Gewerbeförderung nicht heranzuziehen.</item>
+                  </list>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Bauer</hi> weist darauf hin, dass die Frage der Verwertung des Brunner Gewerbelagers im Büro der Sozialisierungskommission einem eingehenden Studium unterzogen worden sei. Nach einem bereits ausgearbeiteten Plane soll in Absicht auf die Sozialisierung der Schuherzeugung und teilweise auch der Lederverarbeitung eine gemeinwirtschaftliche Anstalt gebildet werden, an der der Staat, die Großeinkaufsgenossenschaft der österreichischen Konsumvereine und die Staatsangestelltenfürsorgeanstalt teilzunehmen hätten. Diese Anstalt könnte sofort ins Leben treten, sobald die Nationalversammlung die Gesetzesvorlage über die <pb facs="krp-0085_r-0022"/>gemeinwirtschaftlichen Anstalten and Gesellschaften gemeinwirtschaftlichen Charakters verabschiedet haben wird. Soweit daher die in Rede stehenden Anträge mit dem erörterten Plane in Widerspruch stehen, müsse er sich gegen deren Durchführung aussprechen.</p>
+                  <p>Staatssekretär <hi rend="#letterspaced">Hanusch</hi> warnt eindringlichst vor der Heranziehung der Heimkehrerorganisation, da diese nicht fähig sei, das Projekt durchzuführen. Der einzig gangbare Weg wäre der, dass der Staat das Brunner Gewerbelager ankaufe, die nötigen Einrichtungen übernehme und die einzelnen Teile an leistungsfähige Interessentengruppen vermiete. Das Staatsamt für Handel und Gewerbe, Industrie und Bauten hätte sich wegen Ausarbeitung eines geeigneten Durchführungsplanes mit der Sozialisierungskommission in Verbindung zu setzen.</p>
+                  <p>Nachdem Staatssekretär Ing. <hi rend="#letterspaced">Zerdik</hi> diesen Ausführungen zugestimmt hatte, beschließt der Kabinettsrat, das Brunner Gewerbelager durch den Staat käuflich zu erwerben, und ladet das Staatsamt für Handel und Gewerbe, Industrie und Bauten ein, im Einvernehmen mit dem Staatsamte für soziale Verwaltung und der Sozialisierungskommission <pb facs="krp-0085_r-0023"/>festzustellen, welches staatliche Amt mit der Durchführung der Lagerübernahme, der Verwaltung und Besiedlungsfrage zu betrauen wäre.</p>
+                  <p>Über das Ergebnis der Verhandlungen wird dem Kabinettsrate ehestens Bericht zu erstatten sein.</p>
+               </div>
+               <div type="top" xml:id="krp-0085_top08">
+                  <head>
+                     <label>
+                        <num n="8">8.</num>
+                        <seg>Entwurf eines Gesetzes über Kammern für Handel, Gewerbe und Industrie.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Ing. Zerdik erbittet die Zustimmung des Kabinettsrates, den Entwurf eines Gesetzes über Kammern für Handel, Gewerbe und Industrie in der Nationalversammlung einbringen zu dürfen.</p>
+                  <p>Gegen diese Gesetzesvorlage werden von den Staatssekretären Dr. <hi rend="#letterspaced">Bratusch</hi>, <hi rend="#letterspaced">Hanusch</hi>, <hi rend="#letterspaced">Paul</hi>, Dr. <hi rend="#letterspaced">Bauer</hi> und Dr. <hi rend="#letterspaced">Loewenfeld-Russ</hi> mehrfache Bedenken geltend gemacht, die sich vornehmlich gegen den § 3 Abs. 2 des Entwurfes richten, worin die obligatorische Einholung von Gutachten der Kammern vor der Einbringung von Gesetzesvorlagen und vor der Erlassung wichtigerer Vollzugsanweisungen festgesetzt werden soll.</p>
+                  <p>Außer diesen Bedenken wurde jedoch insbesondere darauf hingewiesen, dass es <pb facs="krp-0085_r-0024"/>nicht angängig sei, der Nationalversammlung die Novellierung des Handelskammergesetzes vorzulegen, solange die Frage des Neuaufbaues der wirtschaftlichen Selbstverwaltungskörper nicht spruchreif sei. Jedenfalls müssten aber gleichzeitig mit dem Handelskammergesetz Gesetzentwürfe über die Arbeiterkammern und über die Landwirtschaftskammern eingebracht werden.</p>
+                  <p>Mit Rücksicht darauf, dass eine Verabschiedung des Gesetzentwurfes während der Sommermonate nicht zu gewärtigen ist, stimmt Staatssekretär Ing. <hi rend="#letterspaced">Zerdik</hi> einer Vertagung der Angelegenheit bis September zu.</p>
+                  <p>Der Kabinettsrat beschließt die Angelegenheit vorläufig zurückzustellen.</p>
+               </div>
+               <div type="top" xml:id="krp-0085_top09">
+                  <head>
+                     <label>
+                        <num n="9">9.</num>
+                        <seg>Bestellung eines deutschösterreichischen Generalkommissärs für den Wirtschaftsverkehr mit Jugoslawien.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Loewenfeld-Russ</hi> erbittet und erhält die Ermächtigung des Kabinettsrates zur Bestellung des Generaldirektors Hans Kniep zum deutschösterreichischen Generalkommissär für den Wirtschaftsverkehr mit Jugoslawien.</p>
+                  <p>
+                     <pb facs="krp-0085_r-0025"/>
+                  </p>
+               </div>
+               <div type="top" xml:id="krp-0085_top10">
+                  <head>
+                     <label>
+                        <num n="10">10.</num>
+                        <seg>Erhöhung der Zuckerpreise.</seg>
+                     </label>
+                  </head>
+                  <p>Im Auftrage des Staatssekretärs für Finanzen legt Sektionschef Dr. <hi rend="#letterspaced">Joas</hi> dar, dass das Agio der tschechoslowakischen Krone ferner die Erhöhung der Frachtsätze sowie die Forderungen der Händler und Verschleißer nach Erhöhung der ihnen zugebilligten Zuschläge eine Erhöhung der Zuckerpreise von 5 K auf ca. 8 K unbedingt erforderlich machen. Diese Maßnahme sei umso dringender, als das Festhalten an den gegenwärtigen Zuckerpreisen für den Staat einen Verlust von täglich ca. 600.000 K zur Folge habe.</p>
+                  <p>In der hierüber sich entwickelnden Debatte, wurde seitens der Staatssekretäre Dr. <hi rend="#letterspaced">Loewenfeld-Russ</hi>, <hi rend="#letterspaced">Eldersch</hi>, <hi rend="#letterspaced">Hanusch</hi> und Dr. <hi rend="#letterspaced">Bauer</hi> zwar die Berechtigung der vom Staatsamte für Finanzen dargelegten Gründe anerkannt, jedoch auf die schwere politische Belastung hingewiesen, die eine derartige Steigerung mit sich bringe.</p>
+                  <p>In Berücksichtigung aller in Betracht kommenden Umstände erklärt schließlich der Kabinettsrat, einer <pb facs="krp-0085_r-0026"/>Erhöhung der Zuckerpreise in dem Ausmaße zuzustimmen, dass der Preis für Weißzucker auf höchstens 7 K 50 h, jener für Rohzucker in der hienach entsprechenden Relation festgesetzt werde.</p>
+                  <p>In diesem Zusammenhange hebt Staatssekretär Dr. Bauer hervor, dass es im Interesse einer Vermeidung von schweren politischen Verwicklungen unbedingt geboten sei, die Lösung des allgemeinen Problemes einer progressiven Abstufung der Lebensmittelpreise nach den Vermögensverhältnissen der Konsumenten sofort in Angriff zu nehmen.</p>
+                  <p>Der Kabinettsrat schließt sich dieser Anregung an und ersucht die Staatssekretäre für Finanzen und für Volksernährung, ihm bis längstens 1. August d. J. einen diesbezüglichen Vorschlag zu erstatten.</p>
+               </div>
+            </div>
+            <div type="stenogramme">
+               <div n="1">
+                  <head>EINZUFÜGEN</head>
+                  <p>Transkription in Arbeit.</p>
+                  <p/>
+               </div>
+               <div n="2">
+                  <head>EINZUFÜGEN</head>
+                  <p>Transkription in Arbeit.</p>
+               </div>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

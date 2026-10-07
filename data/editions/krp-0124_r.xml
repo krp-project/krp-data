@@ -1,0 +1,687 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href='http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:acdh="https://vocabs.acdh.oeaw.ac.at/schema#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xml:lang="de">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="a" type="main" n="0124">Kabinettsprotokoll Nr. 124 vom 25. November 1919</title>
+            <title level="m" type="main" n="01">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <title level="m" type="sub" n="">Renner III (17. Oktober 1919 – 7. Juli 1920)</title>
+            <meeting>
+               <placeName key="https://d-nb.info/gnd/4066009-6">Wien</placeName>
+               <orgName key="https://d-nb.info/gnd/5162749-8">Kabinettsrat</orgName>
+               <date when-iso="1919-11-25"/>
+            </meeting>
+            <editor>
+               <persName key="https://d-nb.info/gnd/122481836"
+                         role="hasCreator"
+                         xml:id="hwohnout">
+                  <forename>Helmut</forename>
+                  <surname>Wohnout</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</affiliation>
+               <idno type="ORCID">0000-0002-3864-9839</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/120789825"
+                         role="hasCreator"
+                         xml:id="tolechowski">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0003-3291-6876</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/131679384"
+                         role="hasCreator"
+                         xml:id="rlein">
+                  <forename>Richard</forename>
+                  <surname>Lein</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0002-7502-0503</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="aholzer">
+                  <forename>Anna</forename>
+                  <surname>Holzer</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0005-3560-3500</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="dsoelkner">
+                  <forename>Dominik</forename>
+                  <surname>Sölkner</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-9895-7212</idno>
+            </editor>
+            <editor>
+               <persName role="hasContributor" xml:id="ischotzko">
+                  <forename>Ina</forename>
+                  <surname>Schotzko</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-5210-3713</idno>
+            </editor>
+            <funder n="1">
+               <orgName key="https://d-nb.info/gnd/2054142-9" role="hasFunder">Österreichischer Wissenschaftsfonds FWF</orgName>
+               <idno type="project">PAT1495024</idno>
+               <title type="project">Die Protokolle des österreichischen Kabinettsrates 1919–1920</title>
+            </funder>
+            <respStmt>
+               <resp>Projektverantwortung</resp>
+               <orgName key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Projektleitung</resp>
+               <persName key="https://d-nb.info/gnd/120789825" role="hasPrincipalInvestigator">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+                  <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+                  <idno type="ORCID">0000-0003-3291-6876</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Nationaler Forschungspartner</resp>
+               <orgName key="https://d-nb.info/gnd/1123037736" role="hasEnabler">Austrian Centre for Digital Humanities</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Digitalisierung der gedruckten Quellen</resp>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>TEI-Datenmodellierung</resp>
+               <persName role="hasContributor" xml:id="tfruehwirth">
+                  <forename>Timo</forename>
+                  <surname>Frühwirth</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-3997-5193</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technische Supervision</resp>
+               <persName key="https://d-nb.info/gnd/1043833846"
+                         role="hasContributor"
+                         xml:id="pandorfer">
+                  <forename>Peter</forename>
+                  <surname>Andorfer</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-9575-9372</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technisches Consulting und Vorbereitung der Druckausgabe</resp>
+               <persName key="https://d-nb.info/gnd/13281899X"
+                         role="hasContributor"
+                         xml:id="skurz">
+                  <forename>Stephan</forename>
+                  <surname>Kurz</surname>
+                  <affiliation key="https://d-nb.info/gnd/1202798799">Institut für die Erforschung der Habsburgermonarchie und des Balkanraumes</affiliation>
+                  <idno type="ORCID">0000-0003-2546-2570</idno>
+               </persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher key="https://d-nb.info/gnd/1001454-8">Österreichische Akademie der Wissenschaften</publisher>
+            <date when="2028"/>
+            <availability status="free">
+               <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">Lizenziert unter CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/deed.de)</licence>
+            </availability>
+            <idno type="ISBN_Print"/>
+            <idno type="ISBN_Part_epub"/>
+            <idno type="ISBN_Digital"/>
+            <idno type="DOI"/>
+            <idno type="DOI_zenodo"/>
+            <idno type="ebook_ID"/>
+         </publicationStmt>
+         <seriesStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="m" type="main">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <respStmt>
+               <resp>Bearbeitung und Herausgeberschaft</resp>
+               <orgName key="https://d-nb.info/gnd/2024703-5">Universität Wien</orgName>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+         </seriesStmt>
+         <notesStmt>
+            <note>Diese TEI-XML-Datei ist Grundlage für eine Druckausgabe der Edition.</note>
+            <relatedItem>
+               <biblStruct>
+                  <monogr>
+                     <imprint>
+                        <pubPlace key="https://d-nb.info/gnd/4066009-6">Wien</pubPlace>
+                        <publisher key="https://d-nb.info/gnd/2068748-5">Verlag der Österreichischen Akademie der Wissenschaften</publisher>
+                        <date when="2029"/>
+                     </imprint>
+                     <extent/>
+                  </monogr>
+                  <note>
+                     <idno/>
+                     <ptr/>
+                  </note>
+                  <citedRange/>
+               </biblStruct>
+            </relatedItem>
+         </notesStmt>
+         <sourceDesc>
+            <bibl>Quellbestand: AT-OeStA/AdR MRang MR 1Rep KRP Kabinettsratsprotokolle, 1918-1920 (Teilbestand)<ref target="https://www.archivinformationssystem.at/detail.aspx?id=5465">https://www.archivinformationssystem.at/detail.aspx?id=5465</ref>
+            </bibl>
+            <msDesc>
+               <msIdentifier>
+                  <institution key="https://d-nb.info/gnd/37748-X" role="hasOwner">AT-OeStA Österreichisches Staatsarchiv (Archiv (ÖStA))</institution>
+                  <repository key="https://d-nb.info/gnd/1601181-8">AT-OeStA/AdR Archiv der Republik, 1918- (Abteilung)</repository>
+                  <collection>AT-OeStA/AdR MRang MR 1Rep Ministerrat 1. Republik, 1918 - 1938 (Bestand)</collection>
+                  <idno>AT-OeStA_AdR-MRang-MR-1.-Rep.-KRP-124</idno>
+               </msIdentifier>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <abstract>
+            <p>
+          <!--to be generated-->
+        </p>
+         </abstract>
+      </profileDesc>
+      <encodingDesc>
+         <styleDefDecl scheme="css"/>
+         <tagsDecl>
+            <rendition xml:id="b" scheme="css">font-weight:bold;</rendition>
+            <rendition xml:id="su" scheme="css">vertical-align:super;font-size:.7em;</rendition>
+            <rendition xml:id="s" scheme="css">text-decoration:line-through;</rendition>
+            <rendition xml:id="u" scheme="css">text-decoration:underline;</rendition>
+            <rendition xml:id="ow" scheme="css">text-decoration:line-through;text-decoration-style:double;</rendition>
+            <rendition xml:id="r" scheme="css">display:block;text-align:right;</rendition>
+            <rendition xml:id="letterspaced" scheme="css">letter-spacing:0.15em;</rendition>
+            <rendition xml:id="i" scheme="css">font-style:italic;</rendition>
+         </tagsDecl>
+         <editorialDecl>
+            <hyphenation>
+               <p>
+            <!--to be added-->
+          </p>
+            </hyphenation>
+            <correction>
+               <p>
+            <!--to be added-->
+          </p>
+            </correction>
+            <normalization>
+               <p>
+            <!--to be added-->
+          </p>
+            </normalization>
+            <punctuation>
+               <p>
+            <!--to be added-->
+          </p>
+            </punctuation>
+            <stdVals>
+               <p>
+            <!--to be added-->
+          </p>
+            </stdVals>
+            <p>
+          <!--to be added-->
+        </p>
+         </editorialDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#tfruehwirth" when-iso="2026-10-07">TEIGarage output upconverted with upconvert.xsl</change>
+         <change who="#tfruehwirth" when-iso="2026-10-07">TEI header populated with generate_tei_templates.py</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface/>
+   </facsimile>
+   <text>
+      <body>
+         <div xml:id="doc-krp-0124.xml">
+            <head type="dokument">
+               <title type="num">124.<note type="footnote">Das Protokoll trägt den Vermerk <hi rend="#i">Vertraulich!</hi>
+                  </note>
+               </title>
+               <title type="desc">
+                  <pb facs="krp-0124_r-0001"/>
+                  <pb facs="krp-0124_r-0002"/>[Dienstag] 1919-11-25</title>
+            </head>
+            <div type="dokumentkopf">
+               <div type="vorsitz">
+                  <head>Vorsitz:</head>
+                  <p>Renner, teilweise Fink</p>
+               </div>
+               <div type="anwesend">
+                  <head>Anwesend:</head>
+                  <p>Deutsch, Eisler, Eldersch, Ellenbogen, Glöckel, Hanusch, Loewenfeld-Russ, Mayr, Miklas, Paul, Ramek, Reisch, Resch, Stöckler, Tandler, Waiss, Zerdik</p>
+               </div>
+               <div type="zugezogen">
+                  <head>Zugezogen:</head>
+                  <p>Davy, Egghard, Froehlich, Grimm, Körner, Kralowsky, Pokorny</p>
+               </div>
+               <div type="schriftfuehrer">
+                  <head>Schriftführer:</head>
+                  <p>unbekannt</p>
+               </div>
+               <div type="dauer">
+                  <head>Dauer:</head>
+                  <p>21.00–01.45 Uhr</p>
+               </div>
+            </div>
+            <div type="komponenten">
+               <p>Reinschrift, Beilagen, streng vertraulicher Anhang, Konzept, stenographische Mitschrift, Entwurf der Tagesordnung, diverse Zusätze, 15. Personalsitzung</p>
+            </div>
+            <div type="beilagen">
+               <head>Beilagen:</head>
+               <list>
+                  <item>
+                     <ref target="#krp-0124_top02">Zu TOP 2</ref>: <ref target="#krp-0124_b01">Mitteilung für den Staatskanzler über die Arsenalaffäre</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0124_top04">Zu TOP 4</ref>: <ref target="#krp-0124_b02">Telegramm des Moskauer Volkskommisariat für Äußeres über die Sicherheit von Bela Kuhn und Genossen</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0124_top05">Zu TOP 5</ref>: <ref target="#krp-0124_b03">Gesetzesentwurf zur Flüssigmachung von Vorschüssen auf durch Gesetz anzuordnende Teuerungsmehrbezüge mit Begründung</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0124_top08">Zu TOP 8</ref>: <ref target="#krp-0124_b04">Bericht der Staatskanzlei über den Verfassungsstreit mit dem Land Steiermark</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0124_top09">Zu TOP 9</ref>: <ref target="#krp-0124_b05">Vortrag des Staatssekretärs für Inneres und Unterricht (Zentralgrenzkommission) über die einstweilige Regelung der Besitzverhältnisse in dem an den tschechoslowakischen Staat abzutretenden Teil des Gerichtsbezirks Feldsberg</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0124_top10">Zu TOP 10</ref>: <ref target="#krp-0124_b06">Vortrag des Staatssekretärs für Inneres und Unterricht (Zentralgrenzkommission) über die Einrichtung von Länderzentralbüros in Innsbruck, Graz und Wien</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0124_top10">Zu TOP 10</ref>: <ref target="#krp-0124_b07">Stellungnahme des Staatsamtes für Äußeres zur Wahl von Militärs zu Vorständen der Zentralländerbüros</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0124_top11">Zu TOP 11</ref>: <ref target="#krp-0124_b08">Auszug für den Kabinettsrat über einen Gesetzesbeschluss des Steiermärkischen Landtages zur Abänderung der Gemeindeordnung für die Stadt Graz</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0124_top12">Zu TOP 12</ref>: <ref target="#krp-0124_b09">Wehrgesetzvorlage</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0124_top12">Zu TOP 12</ref>: <ref target="#krp-0124_b10">Einbringung des Gesetzesentwurfs durch das Staatsamt für Heereswesen samt Berichtigung und Stellungnahme zu den § 25 und 30 des Wehrgesetzes</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0124_top13">Zu TOP 13</ref>: <ref target="#krp-0124_b11">Vollzugsanweisung des Staatsamtes für Finanzen über die Einhebung der im § 14 der Kaiserlichen Verordnung vom 28. Februar 1916 vorgesehenen Empfangsbestätigungsgebühren für die aus dem Ausland einlangenden Sendungen im Eisenbahn- und Flussschifffahrtsverkehr samt Vollzugsanweisung</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0124_top15">Zu TOP 15</ref>: <ref target="#krp-0124_b12">Vortrag des Unterstaatssekretärs für Kultus über die Erhöhung der Dotation des Erzbischofs von Salzburg</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0124_top16">Zu TOP 16</ref>: <ref target="#krp-0124_b13">Vortrag über die Bewilligung einer Personalzulage an den Salzburger Weihbischof Anton Keil</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0124_top17">Zu TOP 17</ref>: <ref target="#krp-0124_b14">Vortrag des Staatsamtes für Inneres und Unterricht zu Zl. 24.336-Abt. 15 über einen Gesetzesbeschluss des Oberösterreichischen Landtages zur Abänderung einiger Bestimmungen des Schulaufsichtsgesetzes</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0124_top18">Zu TOP 18</ref>: <ref target="#krp-0124_b15">Gesetzesentwurf des Staatssekretärs für Handel und Gewerbe, Industrie und Bauten zur Anwendung einzelner, den gewerblichen Rechtsschutz regelnder Bestimmungen des Staatsvertrags von St. Germain</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0124_top19">Zu TOP 19</ref>: <ref target="#krp-0124_b16">Vorlage des Staatsamtes für Handel und Gewerbe, Industrie und Bauten über einmalige Anschaffungsbeiträge und Weihnachtsremunerationen für die Angestellten der Hauptanstalt für Sachdemobilisierung</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0124_top20">Zu TOP 20</ref>: <ref target="#krp-0124_b17">Gesetzesentwurf über die Elektrizitätswirtschaft</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0124_top21">Zu TOP 21</ref>: <ref target="#krp-0124_b18">Gesetzesentwurf der Staatsregierung zu Zl. 33.316/19 über Änderungen in der Unfallversicherung der Bergarbeiter und in der Zuständigkeit für Bruderladenangelegenheiten mit Begründung</ref>
+                  </item>
+               </list>
+            </div>
+            <div type="protokoll">
+               <pb facs="krp-0124_r-0003"/>
+               <div type="top" xml:id="krp-0124_top01">
+                  <head>
+                     <label>
+                        <num n="1">1.</num>
+                        <seg>Förderung der Sanierungsaktion der Wiener Freiwilligen Rettungsgesellschaft durch die Staatsregierung.</seg>
+                     </label>
+                  </head>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> teilt mit, dass die Wiener Freiwillige Rettungsgesellschaft um Förderung der von ihr eingeleiteten Sanierungsaktion durch die Staatsregierung angesucht habe. Er glaube, dieses Ansuchen nicht erst als ganz besonders berücksichtigungswürdig bezeichnen zu müssen und lade die beteiligten Staatssekretäre ein, zu einer Spezialkonferenz zusammenzutreten, um dem in seiner Existenz ernstlich bedrohten, so überaus gemeinnützigen Unternehmen nach Möglichkeit Hilfe zu bringen. Es käme unter Führung des Unterstaatssekretärs Dr. Tandler hiebei die Staatssekretäre Eldersch, Hanusch und Dr. Reisch in Be<pb facs="krp-0124_r-0004"/>tracht.</p>
+                  <p>Der Kabinettsrat pflichtet dieser Anregung bei, bestellt eine Kabinettskonferenz in der beantragten Zusammenstellung und weist ihr den angeführten Aufgabenkreis zu. </p>
+               </div>
+               <div type="top" xml:id="krp-0124_top02">
+                  <head>
+                     <label>
+                        <num n="2">2.</num>
+                        <seg>Frage der Abolition des gegen Roman Hübner und Genossen anhängigen Strafverfahrens (Arsenalaffäre vom 10. Juli l. J.).</seg>
+                     </label>
+                  </head>
+                  <p>Der Vorsitzende erinnert an das am 10. Juli l. J. gegen den Kommandanten der Arbeiterwehr des Arsenals Geiser und dessen Stellvertreter von mehreren Personen, darunter von den tschechoslowakischen Offizieren Roman Hübner, Neander und Zavodsky verübte Attentat und teilt mit, dass die tschechoslowakischen Regierung in dringlicher Weise ersuchen ließ, das gegen Hübner und Genossen schwebende Strafverfahren wegen Totschlages zu abolieren. Die Erfüllung dieses Wunsches erscheine dem Redner bei der gegebenen Sachlage ungemein schwierig; er erbitte sich demnach zunächst die Wohlmeinung des Kabinetts hierüber.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Ramek</hi> spricht sich in entschiedener Weise gegen die Abolition dieser Strafsache aus. Es handle sich um einen ungemein schwerwiegenden <pb facs="krp-0124_r-0005"/>Fall, der den Tod zweier pflichttreuer Arbeiter gefordert habe; hiezu komme, dass nicht bloß tschechische Staatsangehörige, sondern auch mehrere Deutschösterreicher sehr zweifelhaften Charakters in die Affäre mitverwickelt seien, deren gleichzeitige Begnadigung ganz unmöglich erscheine. Die Durchführung des Strafverfahrens gegen Letztere würde nun bei der Verhandlung naturgemäß auch die ganzen Zusammenhänge mit den tschechoslowakischen Offizieren aufrollen müssen, wodurch der von der tschechoslowakischen Regierung mit dem vorgebrachten Ansuchen verfolgte Zweck, diese Angelegenheit vor der breiten Öffentlichkeit nicht wieder aufzurollen, keinesfalls erreichbar wäre. Vorbehaltlich der Zustimmung des Kabinettsrates würde der sprechende Staatssekretär diese seine Auffassung im Gegenstande dem Vorsitzenden schriftlich bekanntgeben und ihn ersuchen, die tschechoslowakische Regierung hievon in entsprechender Weise zu verständigen.</p>
+                  <p>Der Kabinettsrat pflichtet dem Standpunkte des Staatssekretärs für Justiz einhellig bei.</p>
+               </div>
+               <div type="top" xml:id="krp-0124_top03">
+                  <head>
+                     <label>
+                        <num n="3">3.</num>
+                        <seg>Nachträgliche Genehmigung der dringlichkeitshalber bereits verfügten Kundmachung des Gesetzes, betreffend Kreditoperationen.</seg>
+                     </label>
+                  </head>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> erbittet und erhält vom Kabinettsrate die nach<pb facs="krp-0124_r-0006"/>trägliche Zustimmung zu der dringlichkeitshalber bereits veranlassten Kundmachung des von der Nationalversammlung am 21. November d. J. beschlossenen Gesetzes, betreffend Kreditoperationen.</p>
+               </div>
+               <div type="top" xml:id="krp-0124_top04">
+                  <head>
+                     <label>
+                        <num n="4">4.</num>
+                        <seg>Telegramm des Moskauer Volkskommissariates für Äußeres, betreffend die Sicherheit Béla Kuns und Genossen.</seg>
+                     </label>
+                  </head>
+                  <p>Der Vorsitzende teilt mit, dass gestern vormittags nachstehendes Radiotelegramm aufgefangen worden sei:</p>
+                  <p>„An das Staatsamt für Äußeres und Kriegsgefangenen- und Zivilinterniertenamt 22 XI. Seine Sicherheit sowie Sicherheit anderer in Russland befindlichen Österreicher, die mit österreichischer Regierung in Verbindung sind, hängt von Sicherheit Béla Kun und anderer ungarischer Volkskommissäre ab. Die Ersteren werden vorläufig in Russland verbleiben als Bürgschaft dafür, dass die Letzteren nicht an Ungarn ausgeliefert werden. Nr. 11/1411 Volkskommissariat für Äußeres Moskau.“</p>
+                  <p>Die Verifizierung dieses Telegrammes, welches überdies im Wortlaute seines Einganges einer Richtigstellung bedürfe, sei vom Staatsamte für Äußeres auf dem Wege über Warschau veranlasst worden. Bis zum Einlangen einer diesbe<pb facs="krp-0124_r-0007"/>züglichen Mitteilung gedenke der Vorsitzende im Gegenstande nichts weiter zu verfügen. Er bringe diesen Sachverhalt dermalen dem Kabinettsrate bloß zur Kenntnis.</p>
+                  <p>Der Kabinettsrat nimmt diese Mitteilung zur Kenntnis.</p>
+               </div>
+               <div type="top" xml:id="krp-0124_top05">
+                  <head>
+                     <label>
+                        <num n="5">5.</num>
+                        <seg>Gesetzentwurf, womit die Staatsregierung zur Flüssigmachung von Vorschüssen auf durch Gesetz anzuordnende Teuerungsmehrbezüge ermächtigt wird.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Reisch</hi> erbittet vom Kabinettsrate die Ermächtigung, in der Nationalversammlung den Entwurf eines Gesetzes, womit die Staatsregierung zur Flüssigmachung von Vorschüssen auf durch Gesetz anzuordnende Teuerungsmehrbezüge ermächtigt wird, einbringen zu dürfen.</p>
+                  <p>Der Kabinettsrat erteilt die erbetene Ermächtigung nach einer über Antrag des Staatssekretärs Dr. <hi rend="#letterspaced">Deutsch</hi> vorgenommenen textlichen Abänderung im § 1 der dem Kabinettsrate vorgelegenen Fassung der Gesetzesvorlage. </p>
+               </div>
+               <div type="top" xml:id="krp-0124_top06">
+                  <head>
+                     <label>
+                        <num n="6">6.</num>
+                        <seg>Bericht des Staatssekretärs für Volksernährung über die allgemeine Ernährungslage.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Loewenfeld-Russ</hi> erstattet einen eingehenden Bericht über die augenblickliche Ernährungssituation und bespricht <pb facs="krp-0124_r-0008"/>die zur weiteren Aufrechterhaltung der Versorgung der Bevölkerung mit Lebensmitteln zu ergreifenden Maßnahmen.</p>
+                  <p>Die hierüber abgeführte eingehende Debatte, an der sich nahezu sämtliche Kabinettsmitglieder beteiligten, trägt gleichwie die hierüber im Gegenstande gefassten Beschlüsse streng vertraulichen Charakter.</p>
+               </div>
+               <div type="top" xml:id="krp-0124_top07">
+                  <head>
+                     <label>
+                        <num n="7">7.</num>
+                        <seg>Forderungen der Supplenten und Assistenten an staatlichen mittleren Unterrichtsanstalten.</seg>
+                     </label>
+                  </head>
+                  <p>Unterstaatssekretär <hi rend="#letterspaced">Glöckel</hi> teilt mit, dass ihm die Supplenten und Assistenten an den staatlichen Mittelschulen die Forderung nach Anrechnung der Kriegsdienstzeit zur Gänze sowie nach Besserung ihrer Vorrückungsverhältnisse unterbreitet hätten. Eine Reihe von Umständen, insbesondere die nachgewiesenermaßen äußerst ungünstige finanzielle Lage der Supplenten sowie das geringe finanzielle Erfordernis der angestrebten Besserstellung – es handle sich im Ganzen nur um ungefähr 170 Personen –, nicht zuletzt aber die Tatsache, dass die Lehramtsanwärter im Gegensatze zu den übrigen absolvierten Hochschülern auf den Staatsdienst unmittelbar angewiesen sind und nach ihrer Rückkehr aus dem Felde keine Möglichkeit einer Berufsänderung hatten, bestimmen ihn, der <pb facs="krp-0124_r-0009"/>Willfahrung der gestellten Förderungen das Wort zu führen.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Reisch</hi> spricht sich in entschiedener Weise aus prinzipiellen Gründen gegen die vom Unterstaatssekretär für Unterricht beantragten Maßnahmen aus, zumal die einseitige Behandlung dieses Falles unweigerlich zu Beispielsfolgerungen führen müsste. Auch würde es in der Öffentlichkeit kaum verstanden werden, wenn das diese Fragen behandelnde Gesetz vom 29. Juli 1919, StGBl. Nr. 408, betreffend die Zeitvorrückung der Supplenten und Assistenten an staatlichen mittleren Unterrichtsanstalten, nach einer verhältnismäßig so kurzen Zeit wieder abgeändert würde.</p>
+                  <p>Demgegenüber verweist Unterstaatssekretär <hi rend="#letterspaced">Glöckel</hi> darauf, dass die Nationalversammlung bereits anlässlich der Verabschiedung dieses Gesetzes eine Resolution angenommen habe, wonach die nachträgliche Regelung der Anrechenbarkeit von Kriegsdienstzeiten der Supplenten ins Auge zu fassen wäre.</p>
+                  <p>Nachdem sich noch die Staatssekretäre Dr. <hi rend="#letterspaced">Deutsch,</hi> Ing. <hi rend="#letterspaced">Zerdik</hi>, <hi rend="#letterspaced">Eldersch</hi> und Dr. <hi rend="#letterspaced">Mayr</hi> sowie die Unterstaatssekretäre <hi rend="#letterspaced">Miklas</hi> und Dr. <hi rend="#letterspaced">Tandler</hi>, schließ<pb facs="krp-0124_r-0010"/>lich Sektionschef Dr. <hi rend="#letterspaced">Grimm</hi> an der Debatte beteiligt hatten, fasst der <hi rend="#letterspaced">Vorsitzende</hi> das Ergebnis der Beratung dahin zusammen, dass die überwiegende Mehrzahl der Kabinettsmitglieder grundsätzlich der Auffassung des Staatssekretärs für Finanzen zuneige, dass jedoch die Besonderheit dieser Angelegenheit im Zusammenhalte mit der Geringfügigkeit des finanziellen Aufwandes eine ausnahmsweise Behandlung des Falles zulasse. Demgemäß ermächtigt der Kabinettsrat den Unterstaatssekretär Glöckel, mit Rücksicht auf die eigenartigen Verhältnisse bei den Supplenten und Assistenten an staatlichen mittleren Unterrichtsanstalten</p>
+                  <list>
+                     <item n="1">
+                        <label>1.)</label> die Vollzugsanweisung vom 31. Oktober 1919, StGBl. Nr. 511, durch eine neue Vollzugsanweisung dahin abzuändern, dass den Kriegsteilnehmern-Supplenten (Assistenten) die Kriegsdienstleistung zur Gänze für die im § 1 der bezogenen Vollzugsanweisung vorgesehenen Zwecke angerechnet werde und</item>
+                     <item n="2">
+                        <label>2.)</label> den Entwurf einer Novelle zum Gesetze vom 29. Juli 1919, StGBl. Nr. 408, betreffend die Zeitvorrückung der Supplenten und Assistenten an staatlichen <pb facs="krp-0124_r-0011"/>mittleren Unterrichtsanstalten in der Nationalversammlung einzubringen, mit welcher bestimmt wird, dass die Kriegsteilnehmer-Supplenten, (Assistenten) unter der Voraussetzung, dass sie mindestens durch 24 Monate in Kriegsdienstleistung gestanden sind und mindestens ein Jahr in der Eigenschaft eines mit der Lehrverpflichtung eines wirklichen Lehrers beschäftigten Supplenten oder Assistenten an staatlichen oder mit dem Öffentlichkeitsrecht beliehenen, nicht staatlichen mittleren Lehranstalten mit mindestens guter Qualifikation tatsächlich zugebracht und während dieser Zeit den im § 50 des Gesetzes vom 28. Juli 1917, RGBl. Nr. 319 (Lehrerdienstpragmatik) für die Erlangung der Remunerationserhöhungen festgesetzten Bedingungen entsprochen haben, auf Anmeldung zu definitiven Supplenten mit den systemmäßigen Bezügen der X. Rangsklasse zu ernennen sind.</item>
+                  </list>
+               </div>
+               <div type="top" xml:id="krp-0124_top08">
+                  <head>
+                     <label>
+                        <num n="8">8.</num>
+                        <seg>Kompromissverhandlungen zwischen der Staatsregierung und dem Lande Steiermark, betreffend den obschwebenden Verfassungsstreit.</seg>
+                     </label>
+                  </head>
+                  <p>Der Vorsitzende erinnert daran, dass die Verhandlung vor dem Verfassungsgerichtshofe über die von der Staatsregierung gegen den steiermärkischen Landesgesetzesbeschluss <pb facs="krp-0124_r-0012"/>wegen der formellen Behandlung von Landtagsbeschlüssen vom 4. Juli 1919 erhobene Anfechtung für den 20. d. M. anberaumt war. Kurz vor der Verhandlung sei der zur Verhandlung delegierte Vertreter des Landes Steiermark in der Staatskanzlei erschienen und habe von der Bereitwilligkeit des Landes Mitteilung gemacht, den Konflikt wenn möglich auf außergerichtlichem Wege beizulegen. Er habe insbesondere erklärt, dass das Land mit dem in Rede stehenden Gesetzesbeschluss keineswegs autonomistische Tendenzen verfolge, sondern dass ihm nur daran gelegen sei, die Landesverwaltung auf dem fraglichen Gebiete zu erleichtern. Diese Erklärung habe den sprechenden Staatskanzler bestimmt, die Möglichkeit eines außergerichtlichen Vergleiches ins Auge zu fassen. Demgemäß sei beim Verfassungsgerichtshof vom Vertreter der Staatsregierung und vom Vertreter des Landes Steiermark einvernehmlich – um für die Ausgleichsverhandlungen Raum zu gewinnen – die Vertagung der Gerichtsverhandlung beantragt und bis 3. Dezember 1919 erwirkt worden.</p>
+                  <p>Die am gestrigen Tage in der Staatskanzlei unter Zuziehung eines Vertreters <pb facs="krp-0124_r-0013"/>des ressortmäßig meistbeteiligten Staatsamtes für Finanzen durchgeführten Ausgleichsverhandlungen hätten nun zu einer solchen Formulierung des angefochtenen Gesetzesbeschlusses geführt, dass bei deren Annahme durch das Land Steiermark die Staatsregierung in der Lage wäre, ohne Preisgabe der wichtigsten in der Angelegenheit zu wahrenden materiellen, namentlich finanziellen Interessen dem Gesetzesbeschlusse zuzustimmen und die gerichtliche Anfechtung zurückzuziehen. Dieser Formulierung habe mittlerweile der Staatssekretär für Finanzen seine Zustimmung erteilt. Das Staatsamt für Inneres und Unterricht, das gleichfalls nach der bestehenden Kompetenzverteilung an einschlägigen Verwaltungsakten interessiert sei, habe gegen den Wegfall des Erfordernisses der Genehmigung bei den in seinen Wirkungskreis fallenden Akten der Selbstverwaltung keine Bedenken erhoben.</p>
+                  <p>Der Vertreter des Landes Steiermark hätte daraufhin die Formulierung des neu zu fassenden Gesetzesbeschlusses ad referendum zur Kenntnis genommen und sich verpflichtet, mit größter Beschleunigung eine Schlussfassung der Landesregierung darüber herbeizuführen, ob sie die gewünschte Abänderung des von der Staatsre<pb facs="krp-0124_r-0014"/>gierung beanständeten Gesetzesbeschlusses beim Landtage beantragen werde.</p>
+                  <p>Der angefochtene Gesetzesbeschluss habe folgenden Wortlaut:</p>
+                  <p>„§ 1. An die Stelle von Landtagsbeschlüssen, die nach den derzeit in Geltung stehenden Gesetzen vom Kaiser zu genehmigen waren, haben in Hinkunft Gesetzesbeschlüsse zu treten, für die die Bestimmungen des Gesetzes vom 14. März 1919, StGBl. Nr. 179, anzuwenden sind. </p>
+                  <p>§ 2. Dieses Gesetz tritt mit dem Tage seiner Kundmachung in Wirksamkeit. Mit dem Vollzuge dieses Gesetzes ist die Landesregierung betraut.“</p>
+                  <p>Dieser Gesetzesbeschluss wäre vom Steiermärkischen Landtage auf folgende Weise abzuändern:</p>
+                  <p>
+                     <hi rend="background(yellow)">„</hi>§ 1.</p>
+                  <list>
+                     <item n="1">
+                        <label>1.)</label> An die Stelle von Landtagsbeschlüssen, die nach den für die Republik Österreich durch Rezeption in Kraft gesetzten gesetzlichen Bestimmungen vom Kaiser zu genehmigen waren, haben in Hinkunft Gesetzesbeschlüsse gemäß den Bestimmungen der Art. 12 ff des Gesetzes vom 14. März 1919, StGBl. Nr. 179, über die Volksvertretung zu treten, insoweit es sich nicht handelt:</item>
+                     <item n="2">
+                        <label>1.)</label> um Beschlüsse, die sich auf die <pb facs="krp-0124_r-0015"/>Regelung des Landeshaushaltes beziehen,</item>
+                     <item n="3">
+                        <label>2.)</label> um folgende, die Haushalte der Bezirke und Gemeinden betreffende Angelegenheiten:</item>
+                     <item n="4">
+                        <label>a)</label> die Einhebung von Bezirks- und Gemeindezuschlägen zu den direkten Steuern,</item>
+                  </list>
+                  <p>wenn diese nicht gleichmäßig zu allen Steuerarten eingehoben werden und die Differenzierung nicht bloß in einer Vorbelastung der allgemeinen Erwerbsteuer, Renten- und Besoldungssteuer um höchstens ein Drittel besteht;</p>
+                  <p>oder wenn sie innerhalb ein und derselben Steuergattung differenziert werden sollen;</p>
+                  <list>
+                     <item n="1">
+                        <label>b)</label> die Einhebung von Mietzinshellern in zur Gänze der Hauszinssteuer unterliegenden Orten im Ausmaße von mehr als 20 %, sowie in nicht zur Gänze der Hauszinssteuer unterliegenden Orten;</item>
+                     <item n="2">
+                        <label>c)</label> die Einhebung von selbständigen Gemeindeauflagen</item>
+                  </list>
+                  <p>von gebrannten geistigen Flüssigkeiten, deren Alkoholgehalt mit dem Alkoholmeter bestimmt werden kann, im Ausmaße von mehr als 1 K per hl Alkohol,</p>
+                  <p>von gebrannten geistigen Flüssigkeiten, deren Alkoholgehalt mit dem Alkoholmeter nicht bestimmt werden kann, im Ausmaß von <pb facs="krp-0124_r-0016"/>mehr als 50 K per hl,</p>
+                  <p>von Bier im Ausmaß von mehr als 4 K per hl;</p>
+                  <list>
+                     <item n="1">
+                        <label>d)</label> die Einführung oder Erhöhung anderer selbständiger Auflagen, wenn für diese Einführung oder Erhöhung schon bisher eine Genehmigung der Staatsregierung erforderlich war.“</item>
+                  </list>
+                  <p>Der § 2 des Gesetzesbeschlusses hätte unverändert zu bleiben.</p>
+                  <p>Durch diese Fassung des Gesetzesbeschlusses würden die schwersten gegen ihn sprechenden meritorischen Bedenken beseitigt sein.</p>
+                  <p>Der Vorsitzende stelle bei dieser Sachlage den Antrag, der Kabinettsrat wolle die Staatskanzlei ermächtigen:</p>
+                  <list>
+                     <item n="1">
+                        <label>1.)</label> im Falle eines Landtagsbeschlusses auf Ergänzung des angefochtenen Gesetzesbeschlusses im vorbezeichneten Sinne oder einer verbindlichen Verpflichtungserklärung der Landesregierung, eine solche Ergänzung des Gesetzesbeschlusses beim Landtage zu erwirken, die Anfechtung beim Verfassungsgerichtshofe zurückzuziehen;</item>
+                     <item n="2">
+                        <label>2.)</label> der Landesregierung von Steiermark bereits jetzt die bedingte Erklärung abzugeben, dass die Staatsregierung gegen einen im vorerwähnten Sinne abgeänderten Gesetzesbeschluss eine Vor<pb facs="krp-0124_r-0017"/>stellung nicht erheben, sondern seiner sofortigen Kundmachung zustimmen werde.</item>
+                  </list>
+                  <p>Der Kabinettsrat erhebt diesen Antrag zum Beschluss.</p>
+               </div>
+               <div type="top" xml:id="krp-0124_top09">
+                  <head>
+                     <label>
+                        <num n="9">9.</num>
+                        <seg>Einstweilige Regelung der Besitzverhältnisse in dem an den tschechoslowakischen Staat abzutretenden Teile des Gerichtsbezirkes Feldsberg.</seg>
+                     </label>
+                  </head>
+                  <p>Im Auftrage des Staatssekretärs Eldersch berichtet Sektionschef Dr. <hi rend="#letterspaced">Davy</hi>, dass die bereits in der Sitzung des Kabinettsrates am 31. Oktober l. J. anlässlich der Beratung über die Gmünder Grenzfrage angekündigten örtlichen Erhebungen in dem an den tschechoslowakischen Staat gleichfalls abzutretenden Teile des Gerichtsbezirkes Feldsberg nunmehr durchgeführt worden seien, wobei eine Linie festgestellt wurde, bis zu der die tschechoslowakische Regierung Militärposten zwecks Verhinderung des Schmuggels und sonstiger Unzukömmlichkeiten vorrücken lassen könnte. Der Referent bespricht an der Hand einer aufliegenden Spezialkarte die für die Bestimmung dieser Linie maßgebenden Erwägungen. Abschließend unterbreitet er dem Kabinettsrat den Antrag, die Staatsregierung möge an die tschechoslowakische Regierung nachstehende Mitteilung gelangen lassen: </p>
+                  <p>
+                     <pb facs="krp-0124_r-0018"/>Die aufgrund des Kabinettsratsbeschlusses vom 31. Oktober d. J. erklärte grundsätzliche Einwilligung der österreichischen Regierung, tschechoslowakische Militärposten in das dem tschechoslowakischen Staate nach dem Staatsvertrag von St. Germain abzutretende Gebiet bei Feldsberg noch vor dessen definitiver Abgrenzung vorrücken zu lassen, bezieht sich auf die kartenmäßig ersichtlich gemachte Grenzlinie. Mit der Besetzung dieser Linie geht die bisher von den österreichischen Bahnbehörden geführte Verwaltung der Bahnstrecke von Voitelsbrunn bis Theimwald auf die tschechoslowakischen Bahnbehörden über. Da in das Besetzungsgebiet der Friedhof der Gemeinde Feldsberg fällt, wird die tschechoslowakische Regierung ersucht, die Benützung dieses Friedhofs durch den Militärkordon hindurch unter näheren mit ihr noch zu vereinbarenden Bedingungen zu gestatten.</p>
+                  <p>Die tschechoslowakische Regierung wird ferner ersucht, den freien Durchgangsverkehr auf der Bahn von Wien über Lundenburg sowie über Laa-Grußbach nach Feldsberg auch weiterhin in gleicher Weise wie bereits gegenwärtig <pb facs="krp-0124_r-0019"/>zuzulassen.</p>
+                  <p>Für den Fall als die tschechoslowakische Regierung mit diesem Zugeständnis sich nicht zufrieden geben sollte, wäre ihr die Vorrückung von Militärposten auch bis an das linke Thayaufer (Thaya-March-Dreieck) anzubieten. Hiebei müsste jedoch an einer vorherigen Vereinbarung bzgl. der Gestaltung der unbehinderten wirtschaftlichen Benützung der am linken Thayaufer gelegenen Grundstücke durch deren Besitzer oder Nutznießer in den Gemeinden Bernhardsthal, Rabensburg und Hohenau festgehalten werden.</p>
+                  <p>Der Kabinettsrat beschließt in diesem Sinne.</p>
+               </div>
+               <div type="top" xml:id="krp-0124_top10">
+                  <head>
+                     <label>
+                        <num n="10">10.</num>
+                        <seg>Einrichtung der Länderzentralbüros in Innsbruck, Graz und Wien.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Eldersch</hi> verweist darauf, dass der Kabinettsrat mit Beschluss vom 31. Oktober d. J. die organischen Bestimmungen für die Einrichtung des Dienstes zur Regelung und Festsetzung der neuen Staatsgrenze genehmigt und gleichzeitig die Staatskanzlei beauftragt habe, durch einen mit den Zielen der Grenzregelungsarbeiten vertrauten Beamten Verhandlungen in Graz und Innsbruck mit <pb facs="krp-0124_r-0020"/>Vertretern der beteiligten Länder einzuleiten, um die Zustimmung dieser Länder zu den geplanten Maßnahmen zu erlangen und über ihre Absichten in Bezug auf die nähere Ausführung des Projekts in persönlicher und sachlicher Richtung Klarheit zu schaffen.</p>
+                  <p>Diese Verhandlungen seien nunmehr durchgeführt worden und hätten in sachlicher Richtung zu dem Ergebnisse geführt, dass Tirol und Salzburg der Errichtung eines Länderzentralbüros in Innsbruck bedingungslos, Steiermark und Kärnten der Errichtung eines ebensolchen Büros in Graz grundsätzlich zugestimmt haben.</p>
+                  <p>Bei den Besprechungen in Innsbruck und Graz sei auch die Personenfrage berührt worden. Unmittelbar wäre von allen Ländern die Berufung eines Offiziers an die Spitze des Länderzentralbüros abgelehnt worden. Diese ablehnende Haltung sei namentlich damit begründet worden, dass militärische Persönlichkeiten an der Spitze des auch die Propaganda im Lande umfassenden Dienstes des Länderzentralbüros bei der Bevölkerung auf Widerstand stoßen würden, insbesondere auch deshalb, weil die Bevölkerung in erster Linie die <pb facs="krp-0124_r-0021"/>Vertretung ihrer wirtschaftlichen und sonstigen innerpolitischen Interessen wünsche. Es müsse noch hervorgehoben werden, dass die Ablehnung militärischer Vertreter mit ganz besonderer Schärfe in Innsbruck zum Ausdruck gelangt sei.</p>
+                  <p>Nach einer Mitteilung, die der Vertreter des Staatsamtes für Äußeres in der Zentralgrenzkommission gemacht habe, lege allerdings dieses Staatsamt ganz besonderes Gewicht darauf, dass einem alten internationalen Brauch entsprechend als österreichische Mitglieder in die internationalen Grenzregelungsausschüsse ausschließlich Offiziere berufen werden mögen.</p>
+                  <p>Die Zentralgrenzkommission habe in ihrem Schoße erwogen, dass diese Erklärung des Staatsamtes für Äußeres die sofortige Lösung der namentlich im Hinblick auf Steiermark dringendsten Frage nicht behindere, welche Persönlichkeiten augenblicklich an die Spitze der Länderzentralbüros zu treten hätten. Bei dem deutlich sichtbar gewordenen Widerstreben der Länder gegen die Designierung von Offizieren für diese Posten schiene, ohne weitläufige neuerliche und voraussichtlich aussichtslose Verhandlungen mit den <pb facs="krp-0124_r-0022"/>Ländern, kaum ein anderer Weg als der der Berufung von Persönlichkeiten aus dem Zivilstande an die Spitze der Länderzentralbüros gangbar.</p>
+                  <p>Hiedurch würde aber auch nach der einmütigen Auffassung der Zentralgrenzkommission keineswegs der Möglichkeit präjudiziert, im gegebenen späteren Zeitpunkt jenen Offizier, der schon jetzt als Mitarbeiter in jedes der Länderzentralbüros einzuteilen wäre, als Mitglied des betreffenden internationalen Grenzregelungsausschusses zu nominieren. Hiedurch wäre insbesondere dem Bedenken des Staatsamtes für Äußeres vorgebeugt, dass bei einem derartigen späteren Personenwechsel die Offiziere mit dem internen Gange der Vorverhandlungen nicht genügend vertraut seien.</p>
+                  <p>Unter diesem Vorbehalte wäre zunächst anzuführen, dass die beteiligten Länder Tirol und Salzburg als Vorstand des Länderzentralbüros in Innsbruck einmütig und als einzigen Kandidaten den Senatspräsidenten Dr. Franz Schuhmacher namhaft gemacht haben.</p>
+                  <p>Als Kandidaten für Graz seien aus der Mitte der steirischen und Kärntner Vertreter der frühere <pb facs="krp-0124_r-0023"/>österreichisch-ungarische Gesandte in Buenos Aires, Norbert Schmucker, der in Salcano ansässig sei, gegenwärtig in Graz wohne und sich um die gedachte Verwendung bewerbe, ferner der frühere Bürgermeister von Graz Dr. Robert Fleischhacker namhaft gemacht worden.</p>
+                  <p>Beide dürften, soweit in Erfahrung gebracht werden konnte, nicht über die unerlässliche Kenntnis eines südslawischen Idioms verfügen. Mit besonderem Nachdrucke hätten die Ländervertreter jedoch diese beiden Kandidaturen keineswegs betrieben.</p>
+                  <p>Bei dieser Sachlage dürfte vorzuziehen sein, von hier aus einen Kandidaten vorzuschlagen. Als solcher käme wohl vor allem ein Beamter in Betracht, da es sich ja auch um die Leitung eines amtlichen Apparats handle und Gewicht darauf gelegt werden müsse, dass die Staatsregierung den nötigen Einfluss, insbesonders auf die Führung der administrativ-technischen Abteilung der Länderzentralbüros, behalte.</p>
+                  <p>Als Kandidat wäre der gegenwärtig bei der Staatskanzlei in Verwendung stehende Hofrat der ehemaligen politischen Verwaltung im Küstenlande <pb facs="krp-0124_r-0024"/>Dr. Egon Glanz zu nennen. Er verfüge über die nötigen Sprachkenntnisse, beherrsche insbesondere auch Slowenisch und besitze alle sonstigen Eigenschaften, die für diese Funktion erforderlich seien.</p>
+                  <p>Da nunmehr die Lage so weit geklärt sei, um unverzüglich an die besonders für Graz dringend gewordene Errichtung der Länderzentralbüros schreiten zu können empfehle sich, die Lösung dieser organisatorischen Frage zugleich für Wien in Angriff zu nehmen. In dieser letzten Hinsicht wären die nötigen Verhandlungen mit Vertretern der Länder Niederösterreich und Oberösterreich auf der vom Kabinettsrat bereits beschlossenen Grundlage zu eröffnen. Als Kandidat für die Leitung des Wiener Länderzentralbüros könne der Sektionsrat Hieronymus Oldofredi, der zuletzt bei der Kreishauptmannschaft Znaim (Retz) in Verwendung stand und alle nötigen Eigenschaften sowie Kenntnisse besitze, vorgeschlagen werden.</p>
+                  <p>Referent stellte demgemäß folgenden Antrag:</p>
+                  <p>Der Staatssekretär für Inneres und Unterricht wird beauftragt, schriftlich die Landesregierungen in <pb facs="krp-0124_r-0025"/> Graz und Klagenfurt zu befragen, ob sie sich mit der Berufung des Hofrates Dr. Egon Glanz an die Spitze des Länderzentralbüros in Graz einverstanden erklären.</p>
+                  <p>Den Landesregierungen in Innsbruck und Salzburg wäre bekanntzugeben, dass die Staatsregierung die Berufung des Senatspräsidenten Dr. Franz Schuhmacher, dem Wunsche der Länder Tirol und Salzburg gemäß, in Aussicht nehme.</p>
+                  <p>Die Landesregierung in Klagenfurt wäre auch hievon mit dem Beifügen in Kenntnis zu setzen, dass sie bekanntgeben möge, ob sie dieser Kandidatur zustimme.</p>
+                  <p>Bei diesem Anlass wäre dieser Landesregierung mitzuteilen, dass der von ihrem Vertreter in Graz ausgesprochene Wunsch, die Verhandlungen des Länderzentralbüros Graz und Innsbruck, soweit sie sich auf die Kärntner Grenze beziehen, auch in Kärnten abzuhalten, berücksichtigt werden wird.</p>
+                  <p>Weiters wäre allen bezeichneten Landesregierungen zu eröffnen, dass, entsprechend dem gestellten Verlangen, auf die Wahl von österreichischen <pb facs="krp-0124_r-0026"/>Städten als Sitz der internationalen Grenzregelungsausschüsse im geeigneten Zeitpunkt hingewirkt werden wird.</p>
+                  <p>Die Staatskanzlei wird endlich beauftragt, in gleicher Weise wie dies in Bezug auf Graz und Innsbruck geschehen ist, auch wegen Errichtung des Länderzentralbüros in Wien Besprechungen mit den Vertretern der Länder Niederösterreich und Oberösterreich einzuleiten und hiebei als Kandidaten der Staatsregierung für den Vorstandsposten den Sektionsrat Hieronymus Oldofredi namhaft zu machen.</p>
+                  <p>Im Zuge der sich hierüber entwickelnden Debatte gelangt insbesondere die Frage der Berufung von Militärpersonen als Vorstände der genannten drei Länderzentralbüros zur Erörterung.</p>
+                  <p>Sektionschef Dr. <hi rend="#letterspaced">Davy</hi> teilt diesfalls aufklärend mit, dass es sich zunächst nur um eine rein innerpolitische Aufgabe handle, da dermalen bloß alle vorbereitenden Schritte bis zum Zeitpunkte der Aufstellung der drei internationalen Grenzregelungsausschüsse einzuleiten seien. In diesen Ausschüssen werde Österreich nur mit je einem Mitgliede vertreten sein, wozu seinerzeit im Sinne der Auffassung des <pb facs="krp-0124_r-0027"/>Staatsamtes für Äußeres ein Mitglied des Militärstandes leichthin bestellt werden könnte. Um dieser Persönlichkeit bereits jetzt einen Einblick in die vorbereitenden Arbeiten zu sichern, unterliege es keinem Anstande, die seinerzeit gegebenenfalles in den internationalen Ausschuss zu delegierende Militärperson bereits dermalen dem betreffenden Länderzentralbüros beizugeben.</p>
+                  <p>Der Kabinettsrat genehmigt unter dem ausdrücklichen Vorbehalte, dass der Staatsregierung bei der seinerzeitigen Delegierung des österreichischen Mitgliedes in die Internationale Kommission freie Hand gelassen wird und das jetzt bereits die für diese Funktion allenfalls in Betracht kommende qualifizierte Militärperson den Länderzentralbüros zugewiesen wird, die vom Staatssekretär für Inneres und Unterricht gestellten Anträge; gleichzeitig erhebt der Kabinettsrat einen vom Staatssekretär Dr. <hi rend="#letterspaced">Mayr</hi> gestellten Zusatzantrag zum Beschluss, wonach zu den einschlägigen Vorarbeiten der Länderzentralbüros auch Vertreter des Deutschen und Österreichischen Alpenvereines beizuziehen seien.</p>
+                  <p>
+                     <pb facs="krp-0124_r-0028"/>
+                  </p>
+               </div>
+               <div type="top" xml:id="krp-0124_top11">
+                  <head>
+                     <label>
+                        <num n="11">11.</num>
+                        <seg>Gesetzesbeschluss des Steiermärkischen Landtages über die Abänderung der Gemeindeordnung für die Stadt Graz.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Eldersch</hi> erbittet und erhält die Ermächtigung des Kabinettsrates, dass von der Erhebung einer Vorstellung gegen den vom Steiermärkischen Landtage beschlossenen Entwurf eines Gesetzes über die Abänderung der Gemeindeordnung für die Landeshauptstadt Graz abgesehen und der sofortigen Verlautbarung des Landesgesetzes zugestimmt werde.</p>
+               </div>
+               <div type="top" xml:id="krp-0124_top12">
+                  <head>
+                     <label>
+                        <num n="12">12.</num>
+                        <seg>Wehrgesetzvorlage.</seg>
+                     </label>
+                  </head>
+                  <p>Vor Eingehen in die meritorische Beratung über die vom Staatssekretär Dr. Deutsch dem Kabinettsrat unterbreitete Wehrgesetzvorlage ergreift Vizekanzler <hi rend="#letterspaced">Fink</hi> das Wort zur formalen Geschäftsbehandlung und beantragt unter Hinweis darauf, dass vom Unterstaatssekretär Dr. Waiss Abänderungsanträge zu diesem Gesetzentwurfe gestellt worden seien, die vorläufige Zurückstellung dieses Punktes der Tagesordnung, um eine vorherige Stellungnahme zu dieser Angelegenheit durch die beiden Regierungsparteien u. zw. in der hiezu berufenen Koalitionskommission zu ermöglichen.</p>
+                  <p>
+                     <pb facs="krp-0124_r-0029"/>Staatssekretär <hi rend="#letterspaced">Eldersch</hi> hält gleichfalls dafür, dass die einschlägigen Verhandlungen im Kabinettsrat ohne vorherige Fühlungnahme mit den beiden Parteien kaum zu einem befriedigenden Ergebnis führen können.</p>
+                  <p>Staatskanzler Dr. <hi rend="#letterspaced">Renner</hi> gibt seiner Anschauung dahin Ausdruck, dass zwar der Kabinettsrat – schon im Hinblick auf seine Zusammensetzung aus Vertretern der beiden koalierten Parteien – in der Lage sei, die volle Verantwortung für die Regierungsgeschäfte zu übernehmen, dass er jedoch angesichts der besonderen politischen Bedeutung des Gegenstandes keinen Anstand nehme, im vorliegenden Falle einer Ausnahme im Sinne des Antrages des Vizekanzlers zuzustimmen.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Deutsch</hi> pflichtet dieser Auffassung seinerseits gleichfalls bei und schlägt vor, die laufende Woche zu Verhandlungen in der Koalitionskommission zu benützen und nach deren Abschluss die Vorlage in der kommenden Dienstagsitzung der meritorischen Behandlung im Kabinettsrat zu unterziehen. Redner erklärt sodann, dass eine weitergehende Vorverhandlung über diese Gesetzesvorlage, insbesondere eine Fühlungnahme mit den Ländern, seines <pb facs="krp-0124_r-0030"/>Erachtens verfassungsrechtlich nicht zu vertreten wäre. In gleicher Weise hätte der sprechende Staatssekretär auch zahlreichen, sich darum bewerbenden militärischen Korporationen – selbstverständlich ebenso auch den fremden Missionen – jedweden Einblick in die Vorlage verwehrt. Es müsse daran festgehalten werden, dass die Abgeordneten bei den Ausschuss- und Plenarberatungen der Vorlage hinlänglich Gelegenheit haben werden, zu den einschlägigen Bestimmungen des Entwurfes vom Standpunkte der Länderinteressen fallweise Stellung zu nehmen.</p>
+                  <p>Nachdem Staatssekretär Dr. <hi rend="#letterspaced">Mayr</hi> der gekennzeichneten Vorbehandlung des Gesetzentwurfes zugestimmt hatte, beschließt der Kabinettsrat im Sinne des Antrages des Vizekanzlers Fink.</p>
+               </div>
+               <div type="top" xml:id="krp-0124_top13">
+                  <head>
+                     <label>
+                        <num n="13">13.</num>
+                        <seg>Vollzugsanweisung über die Einhebung der im § 14 der Kaiserlichen Verordnung vom 28. August 1916, RGBl. Nr. 281, vorgesehenen Empfangsbestätigungsgebühren für die aus dem Auslande einlangenden Sendungen im Eisenbahn- und Flussschifffahrtsverkehr.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Reisch</hi> erbittet im Einvernehmen mit dem Staatssekretär für Verkehrswesen vom Kabinettsrate die Ermächtigung zur Erlassung einer Vollzugsanweisung über die Einhebung der im § 14 der Kaiserlichen Verordnung vom 28. August 1916, RGBl. Nr. 281, vorgesehenen Empfangsbestätigungsgebühren <pb facs="krp-0124_r-0031"/>für die aus dem Auslande einlangenden Sendungen im Eisenbahn- und Flussschifffahrtsverkehr.</p>
+                  <p>Der Kabinettsrat erteilt die erbetene Ermächtigung.</p>
+               </div>
+               <div type="top" xml:id="krp-0124_top14">
+                  <head>
+                     <label>
+                        <num n="14">14.</num>
+                        <seg>Italienischer Protest gegen die Erwerbung von 50.000 Stück Aktien der [Oesterreichisch-] Alpine Montangesellschaft durch den Staat.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Reisch</hi> macht davon Mitteilung, dass von italienischer Seite gegen die Erwerbung der von der [Oesterreichisch-]Alpine Montangesellschaft neu emittierten 50.000 Stück Aktien durch den Staat Einsprüche erhoben worden sei.</p>
+                  <p>Die Beratung über diesen Gegenstand trug streng vertraulichen Charakter und ist in einem geheimen Anhange zu dem vorliegenden Protokolle niedergelegt.</p>
+               </div>
+               <div type="top" xml:id="krp-0124_top15">
+                  <head>
+                     <label>
+                        <num n="15">15.</num>
+                        <seg>Erhöhung der Dotation des Erzbischofs von Salzburg.</seg>
+                     </label>
+                  </head>
+                  <p>Unterstaatssekretär <hi rend="#letterspaced">Miklas</hi> erbittet und erhält vom Kabinettsrate die Ermächtigung, dem Erzbischofe vom Salzburg Dr. Ignaz Rieder die vorschussweise aus dem Religionsfonds bestrittene Dotation von 42.000 K für seine Person auf den Betrag jährlicher 50.000 K – vom 1. Juli l. J. an – erhöhen zu dürfen.</p>
+                  <p>
+                     <pb facs="krp-0124_r-0032"/>
+                  </p>
+               </div>
+               <div type="top" xml:id="krp-0124_top16">
+                  <head>
+                     <label>
+                        <num n="16">16.</num>
+                        <seg>Bewilligung einer Personalzulage an den Weihbischof Keil in Salzburg.</seg>
+                     </label>
+                  </head>
+                  <p>Nach eingehender Darstellung der Sachlage erbittet und erhält Unterstaatssekretär Miklas vom Kabinettsrate die Ermächtigung, dem Weihbischof der Salzburger Erzdiözese, Domkapitular des Metropolitankapitels Salzburg Anton Keil, aus dem Salzburger Religionsfonds vom Tage seines Amtsantrittes angefangen eine Personalzulage jährlicher 4.000 K bewilligen zu dürfen, welche dem Genannten insolange und insoweit flüssig erhalten bleiben wird, als nicht seine bisherigen lokalen Einkünfte eine Erhöhung erfahren werden. </p>
+               </div>
+               <div type="top" xml:id="krp-0124_top17">
+                  <head>
+                     <label>
+                        <num n="17">17.</num>
+                        <seg>Gesetzesbeschluss des Oberösterreichischen Landtages, betreffend die Abänderung einiger Bestimmungen des Gesetzes über die Schulaufsicht.</seg>
+                     </label>
+                  </head>
+                  <p>Unterstaatssekretär <hi rend="#letterspaced">Glöckel</hi> teilt mit, dass der Oberösterreichische Landtag am 21. Oktober l. J. ein Gesetz beschlossen habe, mit welchem die Bestimmungen des § 32 und des Abs. 1 des § 33 des oberösterreichischen Schulaufsichtsgesetzes in der Fassung des Gesetzes vom 28. Dezember 1907, RGB1. Nr. 40, abgeändert werden.</p>
+                  <p>§ 32 in der bisherigen Fassung regle sub. Z. 1–7 die Zusammensetzung des Landesschulrates. Durch die neue Fassung <pb facs="krp-0124_r-0033"/>dieses § werde die Zusammensetzung des Landesschulrates nur hinsichtlich der vom Landesrate (bisher Landesausschuss) zu berufenden Mitglieder, und zwar dahin abgeändert, dass deren Zahl nicht mehr vier, sondern fünf zu betragen hat. In formeller Beziehung werde durch die neue Fassung dieses § die Bezeichnung des Vorsitzenden und dessen Stellvertreters der gegenwärtigen Rechtslage gemäß abgeändert.</p>
+                  <p>Gegen diese Änderungen wäre keine Einwendung zu erheben.</p>
+                  <p>Abs. 1 des § 33 in der bisherigen Fassung enthalte die Bestimmung, dass die im § 32 unter 3., 4., 5. und 6. bezeichneten Mitglieder (und zwar der administrative Schulreferent, die Landesschulinspektoren und die Mitglieder des geistlichen [Standes] und des Lehrstandes) vom Kaiser ernannt werden auf Vorschlag des Ministers für Kultus und Unterricht, welcher hinsichtlich des administrativen Referenten das Einvernehmen mit dem Minister des Innern zu pflegen habe. In die neue Fassung des § 33 Abs. 1 dagegen sei an Stelle dieser Bestimmungen lediglich die Bestimmung aufgenommen worden, dass die im § 32 sub 5. und 6. erwähnten Mitglieder (und zwar die Mitglieder des <pb facs="krp-0124_r-0034"/>geistlichen [Standes] und des Lehrstandes) vom Staatsamte für Inneres und Unterricht ernannt werden. Bezüglich der geistlichen Mitglieder sei ferner das bisherige Vorschlagsrecht der konfessionellen Oberbehörde mit der Modifikation aufrecht erhalten worden, dass derselben das Vorschlagsrecht an die Landesregierung (bisher an den Minister für Kultus und Unterricht) zukommt.</p>
+                  <p>Es sei demnach die bisherige Bestimmung hinsichtlich der Ernennung des administrativen Referenten und der Landesschulinspektoren gänzlich ausgeschaltet oder zumindest in Schwebe gelassen und bezüglich der Mitglieder des geistlichen und des Lehrstandes die bisherige Bestimmung hinsichtlich des ernennungsberechtigten Faktors abgeändert worden.</p>
+                  <p>Nach Art. 3 des Gesetzes vom 12. November 1918, StGBl. Nr. 5, über die Staats- und Regierungsform von Deutschösterreich, sei das Ernennungsrecht der Krone auf den Staatsrat und nach Art. 7 des Gesetzes vom 14. März 1919, StGBl. Nr. 180, über die Staatsregierung, dieses Recht sodann auf den Präsidenten der Nationalversammlung übergegangen. Im letztbezogenen Gesetze sei hinsichtlich der dem Präsidenten <pb facs="krp-0124_r-0035"/>der Nationalversammlung vorbehaltenen Ernennungen eine Ausnahme nur in Bezug auf die Richterernennungen vorgesehen, zu deren Vornahme der Präsident den Staatssekretär für Justiz ermächtigen könne; in allen übrigen Fällen seien diese Ernennungen daher vom Präsidenten der Nationalversammlung zu vollziehen.</p>
+                  <p>Im Gegensatze zu dem früheren Ernennungsrechte der Krone sei sonach das Ernennungsrecht des Präsidenten der Nationalversammlung – den vorerwähnten Fall der Richterernennungen ausgenommen – unübertragbar und könne daher auch nicht durch ein Landesgesetz auf andere Faktoren übertragen werden.</p>
+                  <p>Die neue Bestimmung, wonach die Mitglieder des geistlichen und des Lehrstandes nunmehr vom Staatsamte für Inneres und Unterricht über Antrag der Landesregierung ernannt werden, erscheine nach dieser Darstellung verfassungswidrig. Gegen dieselbe wäre daher zunächst Vorstellung zu erheben.</p>
+                  <p>Ganz besondere Bedeutung müsse auch dem Umstande beigemessen werden, dass die bisherige Bestimmung hinsichtlich des zur Ernennung des administrativen Referenten und der Landesschulinspektoren berechtigten Faktors einfach eliminiert wurde. Diese Bestimmung wäre viel<pb facs="krp-0124_r-0036"/>mehr der bestehenden Rechtslage gemäß dahin abzuändern gewesen, dass die genannten Landesschulratsmitglieder ebenso wie die früher erwähnten Mitglieder des geistlichen [Standes] und des Lehrstandes nunmehr vom Präsidenten der Nationalversammlung auf Vorschlag des Staatsamtes für Inneres und Unterricht ernannt werden. Die Weglassung dieser Bestimmung erscheine nicht nur zweckwidrig aus gesetzestechnischen Gründen, da das Gesetz hinsichtlich aller übrigen Landeschulratsmitglieder bestimme, welche Faktoren deren Ernennung bzw. Wahl vorzunehmen haben, sondern auch aus dem Grunde bedenklich, weil sie zu einer unrichtigen Gesetzesauslegung führen könnte, die umso näher liege, als im Motivenberichte des Landesrates ausdrücklich hervorgehoben werde, dass das vom Kaiser ausgeübte Recht der Ernennung von Landesschulratsmitgliedern auf das Staatsamt für Inneres und Unterricht übertragen werden soll.</p>
+                  <p>Es wäre daher auch gegen die Nichtaufnahme der in Rede stehenden Bestimmung Vorstellung zu erheben.</p>
+                  <p>Die weiteren Bestimmungen des neubeschlossenen Gesetzes betreffen den Zeitpunkt, mit welchem das Gesetz in Wirksamkeit tritt, sowie die Durch<pb facs="krp-0124_r-0037"/>führung dieses Gesetzes. Hinsichtlich dieser Bestimmungen obwalten keine Bedenken.</p>
+                  <p>Der sprechende Unterstaatssekretär stelle daher den Antrag, der Kabinettsrat wolle ihn ermächtigen, gegen die Fassung des neubeschlossenen Gesetzes hinsichtlich der Ernennung der Mitglieder des geistlichen und des Lehrstandes, sowie gegen die Ausscheidung einer der gegenwärtigen Rechtslage entsprechende Bestimmung hinsichtlich der Ernennung des administrativen Referenten und der Landesschulinspektoren beim Oberösterreichischen Landtage im Wege der Landesregierung Vorstellung zu erheben.</p>
+                  <p>Der Kabinettsrat erteilt nach einer vom Staatssekretär Dr. <hi rend="#letterspaced">Ramek</hi> eingeleiteten kurzen Debatte dem Unterstaatssekretär Glöckel die erbetene Ermächtigung. </p>
+               </div>
+               <div type="top" xml:id="krp-0124_top18">
+                  <head>
+                     <label>
+                        <num n="18">18.</num>
+                        <seg>Gesetzentwurf über die Anwendung einzelner, den gewerblichen Rechtsschutz regelnder Bestimmungen des Staatsvertrages von St. Germain.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Ing. <hi rend="#letterspaced">Zerdik</hi> erbittet und erhält vom Kabinettsrate die Ermächtigung, den Entwurf eines Gesetzes über die Anwendung einzelner, den gewerblichen Rechtsschutz regelnder Bestimmungen des Staatsvertrages von St. Germain in der Nationalversammlung <pb facs="krp-0124_r-0038"/>einbringen zu dürfen.</p>
+               </div>
+               <div type="top" xml:id="krp-0124_top19">
+                  <head>
+                     <label>
+                        <num n="19">19.</num>
+                        <seg>Einmalige Anschaffungsbeiträge und Weihnachtsremunerationen für die Angestellten der Hauptanstalt für Sachdemobilisierung.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Ing. Zerdik erbittet und erhält vom Kabinettsrate die Ermächtigung zur Bewilligung einmaliger Anschaffungsbeiträge und Weihnachtsremunerationen für die Angestellten der Hauptanstalt für Sachdemobilisierung im Rahmen der dem Kabinettsrat vorgelegten generellen Anträge.</p>
+               </div>
+               <div type="top" xml:id="krp-0124_top20">
+                  <head>
+                     <label>
+                        <num n="20">20.</num>
+                        <seg>Gesetzentwurf über die Elektrizitätswirtschaft.</seg>
+                     </label>
+                  </head>
+                  <p>Der Präsident der Sozialisierungskommission legt aufgrund der im Sinne des Kabinettsratsbeschlusses vom 14. November l. J. gepflogenen Beratungen einen umgearbeiteten Entwurf des Gesetzes über die Elektrizitätswirtschaft zur Genehmigung vor und bespricht die gegenüber der früheren Fassung dieser Vorlage vorgenommenen Abänderungen.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Ramek</hi> stellt unter Hinweis darauf, dass er der vom Kabinettsrat in der Sitzung am 14. November l. J. eingesetzten Kabinettskonferenz nicht angehört habe, eine Reihe von Abänderungsvorschlägen zu der gegenwärtigen Vorlage.</p>
+                  <p>Nachdem noch über Einladung des Staatssekretärs Ing. <hi rend="#letterspaced">Zerdik</hi>
+                     <pb facs="krp-0124_r-0039"/>Ministerialrat Dr. <hi rend="#letterspaced">Pokorny</hi> den Standpunkt des Staatsamtes für Handel und Gewerbe, Industrie und Bauten vertreten hatte, pflichtet der Kabinettsrat der Auffassung des Vorsitzenden, dass die Angelegenheit eine Übereinstimmung unter den beteiligten Ressorts noch immer vermissen lasse, bei und betraut eine aus dem Präsidenten der Sozialisierungskommission, den Staatssekretären Ing. Zerdik, Dr. Reisch und Dr. Ramek bestehende Kabinettskonferenz mit einer neuerlichen Vorberatung des Entwurfes. Die Führung wird hiebei dem Staatssekretär Dr. Ellenbogen übertragen.</p>
+                  <p>Über Ersuchen des Staatssekretärs Ing. <hi rend="#letterspaced">Zerdik</hi> genehmigt der Kabinettsrat weiters in Abänderung seines Beschlusses vom 14. November l. J. die abgesonderte Einbringung des Gesetzentwurfes, betreffend elektrische Anlagen (Elektrizitätsgesetz), in der Nationalversammlung.</p>
+               </div>
+               <div type="top" xml:id="krp-0124_top21">
+                  <head>
+                     <label>
+                        <num n="21">21.</num>
+                        <seg>Gesetzentwurf, betreffend Änderungen in der Unfallversicherung der Bergarbeiter und in der Zuständigkeit für Bruderladenangelegenheiten.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Hanusch</hi> erbittet und erhält vom Kabinettsrate die Ermächtigung, den Entwurf eines Gesetzes, betreffend Änderungen in der Unfallversicherung der Bergarbeiter und <pb facs="krp-0124_r-0040"/>in der Zuständigkeit für Bruderladenangelegenheiten, in der Nationalversammlung einbringen zu dürfen.</p>
+                  <p/>
+               </div>
+            </div>
+            <div type="anhaenge">
+               <p>
+                  <pb facs="krp-0124_a01-0001"/>Streng vertraulicher Anhang zum Kabinettsprotokoll Nr. 124 vom 25. November 1919.</p>
+               <div n="1">
+                  <head>Maßnahmen der Staatsregierung anlässlich der kritischen Ernährungslage.</head>
+                  <div type="a01_protokoll">
+                     <p>Staatssekretär Dr. <hi rend="#letterspaced">Loewenfeld-Russ</hi> schildert die augenblicklich überaus bedenkliche Ernährungslage und verweist auf die zwingende Notwendigkeit, dass bereits im gegenwärtigen Zeitpunkte auf die Sicherstellung ausländischer Zuschübe im Monate Jänner hingewirkt werde. Erfahrungsgemäß zögen sich die gegenständlichen Verhandlungen durch viele Wochen hin, bevor sie das gewünschte Ergebnis zeitigen, so dass es sich bei dem vollständigen Mangel an Vorräten leichthin ereignen könnte, dass wir Ende Jänner vor einer Katastrophe stünden. Die Angelegenheit stehe und falle mit der Beschaffung der erforderlichen Kredite durch die Entente. Redner schlage vor, der Staatskanzler möge in seiner Eigenschaft als Staatssekretär für Äußeres die Wiener Vertreter der Ententemächte sowie die Mitglieder der Subkommission der Reparationskommission zu sich bitten und ihnen unter Darlegung der Situation ankündigen, dass <pb facs="krp-0124_a01-0002"/>die Regierung für den Fall, als sie binnen einer knappen Frist keine bindende Zusicherung erhalte, zur Demission gezwungen sein werde.</p>
+                     <p>Der <hi rend="#letterspaced">Vorsitzende</hi> stellt zur Erwägung, ob nicht auch eine persönliche Intervention des Staatskanzlers und des Staatssekretärs für Volksernährung in Paris bzw. beim Obersten Wirtschaftsrat, der gegenwärtig in Rom tage, angezeigt erschiene.</p>
+                     <p>In der sich hierüber entwickelnden Debatte verweist Staatsekretär Dr. <hi rend="#letterspaced">Deutsch</hi> auf die Notwendigkeit, auch die Bevölkerung über die regierungsseitig beabsichtigten Maßnahmen zeitgerecht aufzuklären, da diese immer noch nicht an den Ernst der Stunde glaube und auch aus einem derartigen Schritt falsche Schlüsse auf die Beweggründe hiefür, insbesondere auf einen mangelnden Rückhalt der Regierung im Innern ziehen könnte.</p>
+                     <p>Staatssekretär <hi rend="#letterspaced">Paul</hi> begrüßt ebenso wie Vizekanzler <hi rend="#letterspaced">Fink</hi> die Anregungen des Staatssekretärs Dr. Loewenfeld-Russ und beklagt die politisch unkluge Haltung eines Teiles der Presse.</p>
+                     <p>Nachdem noch Unterstaatssekretär Dr. <hi rend="#letterspaced">Eisler</hi> sowie die <pb facs="krp-0124_a01-0003"/>Staatssekrätere Dr. <hi rend="#letterspaced">Deutsch</hi>, Ing. <hi rend="#letterspaced">Zerdik</hi> und <hi rend="#letterspaced">Eldersch</hi> die verschiedenen Möglichkeiten einer Einflussnahme auf die Presse in den erwähnten Belangen erörtert hatten, fasst der <hi rend="#letterspaced">Vorsitzende</hi> das Ergebnis der Debatte in dem Antrage zusammen, der Kabinettsrat möge ihn als Staatssekretär für Äußeres ermächtigen, in Gemeinschaft mit den Staatssekretären für Volksernährung, für Handel und Gewerbe, Industrie und Bauten sowie für Verkehrswesen die Wiener Vertreter der Ententemächte, zugleich auch die Mitglieder der Subkommission der Reparationskommission zu sich zu bitten, ihnen die Situation eingehend zu schildern und sie davon in Kenntnis zu setzen, dass eine Abordnung der Regierung sich nach Paris bzw. Rom begeben werde, um eine wirksame Hilfe bei unseren Ernährungsvorsorgen in bindender Weise zu erwirken; bei diesem Anlasse wäre den erschienenen Vertretern für den Fall des Scheiterns einer derartigen Intervention die Gesamtdemission des Kabinetts anzukündigen.</p>
+                     <p>Der Kabinettsrat erhebt den gestellten Antrag mit dem ausdrücklichen Hinweis zum Beschlusse, dass diese Angelegenheit als streng geheim zu gelten habe.</p>
+                     <p>
+                        <pb facs="krp-0124_a01-0004"/>Schließlich erteilt der Kabinettsrat den Staatskanzler die Ermächtigung, dass die Durchführung der beschlossenen Maßnahmen von einer aus den obgenannten Kabinettsmitgliedern bestehenden Kabinettskonferenz weiterverfolgt werde.</p>
+                  </div>
+               </div>
+               <div n="2">
+                  <head>Italienischer Protest gegen die Erwerbung von 50.000 Aktien der [Oesterreichisch-]Alpine Montangesellschaft durch den Staat.</head>
+                  <div type="a02_protokoll">
+                     <p>Staatssekretär Dr. <hi rend="#letterspaced">Reisch</hi> teilt mit, dass die italienische Gruppe, welche bekanntlich eine große Post von Aktien der [Oesterreichische-]Alpine Montangesellschaft erworben hat, durch den Bruder des Generals Segré gegen die Übernahme der neu zu emittierenden 50.000 Stück Alpine-Aktien durch den Staat Einspruch erhoben habe. Hiebei sei darauf hingewiesen worden, dass in dem erwähnten Vorgehen ein unfreundlicher Akt gegen Italien erblickt werden könne, der gegebenenfalls mit Repressalien beantwortet würde. Es werde das Verlangen gestellt, dass sich der Staat verpflichte, die erworbenen 50.000 Aktien nicht an eine dritte Seite zu verkaufen, die den Italienern vielleicht Ungelegenheiten bereiten würde. Es sei weiters gefordert worden, dass der Staat der italienischen Gruppe, die auf ihren Aktienbesitz entfallende Quote <pb facs="krp-0124_a01-0005"/>der jungen Aktien nach den Schlüssel 9:l, sohin rund 22.000 Aktien überlasse. Der sprechende Staatssekretär würde bei Abwägung aller für und wider sprechenden Momente vom Standpunkte der Staatsfinanzen gegen die Erfüllung dieser letzteren Forderung keine Bedenken erheben, da die Staatsverwaltung mit den ihr erübrigenden rund 28.000 Aktien in der gleichen Position verbliebe, wie im Falle des Besitzes des ganzen Paketes es an jungen Aktien. Überdies würde der Staatsverwaltung beim Verkaufe der 28.000 Stück Aktien bei einem Kurse von rund 2.700 K (= 200 Lire) ein erheblicher Zwischengewinn zufallen. Weiters käme in Betracht, dass ein Konsortium diese Post von 28.000 Aktien zu dem erwähnten hohen Kurse übernehmen und sich gleichzeitig verpflichten würde, das bezügliche Aktienpaket durch drei Jahre hindurch unangetastet zu lassen, wodurch der Staatsverwaltung die wünschenswerte Einflussnahme auf die Gesellschaft gesichert bliebe. Auch dürfe in diesem Zusammenhange nicht übersehen werden, dass durch die in Rede stehende Transaktion eine Entlastung des Staatsschatzes von dem Zinsenverluste von 56 Millionen K sowie von dem Risiko des Kursverlustes platzgreifen würde.</p>
+                     <p>
+                        <pb facs="krp-0124_a01-0006"/>Staatssekretär Dr. <hi rend="#letterspaced">Loewenfeld-Russ</hi> bezweifelt die Legitimation der eingangs genannten Unterhändler zur Androhung von Repressalien, während Unterstaatssekretär Dr. <hi rend="#letterspaced">Eisler</hi> gegen die Überlassung von 22.000 Aktien an die italienische Gruppe nichts einzuwenden hätte, soferne es gelänge, diesen Schritt der Öffentlichkeit entsprechend verständlich zu machen. Immerhin schlage er vor, zunächst noch eine zuwartende Haltung einzunehmen.</p>
+                     <p>Staatssekretär Dr. <hi rend="#letterspaced">Reisch</hi> bemerkt, dass die Überlassung der Aktien an die Italiener nach Außen hin nicht in die Erscheinung treten müsste. Die Sozialisierungsbank könnte ermächtigt werden, einen Teil der Aktien an die italienische Gruppe, einen anderen Teil an das erwähnte Konsortium abzugeben.</p>
+                     <p>Staatssekretär <hi rend="#letterspaced">Eldersch</hi> hielte es für angezeigt, dass sich die Staatsverwaltung der gesamten 50.000 Aktien dadurch entledige, dass sie sie der Sozialisierungsbank übergebe, welche jedoch diese Post nicht ohne Ermächtigung der Staatsregierung weitergeben dürfte.</p>
+                     <p>Der Kabinettsrat beschließt, mit der endgiltigen Austragung dieser <pb facs="krp-0124_a01-0007"/>Angelegenheit eine aus dem Staatskanzler, den Staatsekretären für Finanzen, für Handel und Gewerbe, Industrie und Bauten sowie den Präsidenten der Sozialisierungskommission bestehende Kabinettskonferenz zu betrauen, wobei jedoch ausdrücklich festgesetzt wird, dass ein Verkauf der rund 22.000 Aktien an die italienische Gruppe nicht außer Betracht gelassen werden solle.</p>
+                     <p/>
+                  </div>
+               </div>
+            </div>
+            <div type="stenogramme">
+               <div n="1">
+                  <head>EINZUFÜGEN</head>
+                  <p>Transkription in Arbeit.</p>
+               </div>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

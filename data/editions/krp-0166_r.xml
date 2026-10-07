@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href='http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:acdh="https://vocabs.acdh.oeaw.ac.at/schema#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xml:lang="de">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="a" type="main" n="0166">Kabinettsprotokoll Nr. 166 vom 26. März 1920</title>
+            <title level="m" type="main" n="01">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <title level="m" type="sub" n="">Renner III (17. Oktober 1919 – 7. Juli 1920)</title>
+            <meeting>
+               <placeName key="https://d-nb.info/gnd/4066009-6">Wien</placeName>
+               <orgName key="https://d-nb.info/gnd/5162749-8">Kabinettsrat</orgName>
+               <date when-iso="1920-03-26"/>
+            </meeting>
+            <editor>
+               <persName key="https://d-nb.info/gnd/122481836"
+                         role="hasCreator"
+                         xml:id="hwohnout">
+                  <forename>Helmut</forename>
+                  <surname>Wohnout</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</affiliation>
+               <idno type="ORCID">0000-0002-3864-9839</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/120789825"
+                         role="hasCreator"
+                         xml:id="tolechowski">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0003-3291-6876</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/131679384"
+                         role="hasCreator"
+                         xml:id="rlein">
+                  <forename>Richard</forename>
+                  <surname>Lein</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0002-7502-0503</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="aholzer">
+                  <forename>Anna</forename>
+                  <surname>Holzer</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0005-3560-3500</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="dsoelkner">
+                  <forename>Dominik</forename>
+                  <surname>Sölkner</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-9895-7212</idno>
+            </editor>
+            <editor>
+               <persName role="hasContributor" xml:id="ischotzko">
+                  <forename>Ina</forename>
+                  <surname>Schotzko</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-5210-3713</idno>
+            </editor>
+            <funder n="1">
+               <orgName key="https://d-nb.info/gnd/2054142-9" role="hasFunder">Österreichischer Wissenschaftsfonds FWF</orgName>
+               <idno type="project">PAT1495024</idno>
+               <title type="project">Die Protokolle des österreichischen Kabinettsrates 1919–1920</title>
+            </funder>
+            <respStmt>
+               <resp>Projektverantwortung</resp>
+               <orgName key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Projektleitung</resp>
+               <persName key="https://d-nb.info/gnd/120789825" role="hasPrincipalInvestigator">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+                  <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+                  <idno type="ORCID">0000-0003-3291-6876</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Nationaler Forschungspartner</resp>
+               <orgName key="https://d-nb.info/gnd/1123037736" role="hasEnabler">Austrian Centre for Digital Humanities</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Digitalisierung der gedruckten Quellen</resp>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>TEI-Datenmodellierung</resp>
+               <persName role="hasContributor" xml:id="tfruehwirth">
+                  <forename>Timo</forename>
+                  <surname>Frühwirth</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-3997-5193</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technische Supervision</resp>
+               <persName key="https://d-nb.info/gnd/1043833846"
+                         role="hasContributor"
+                         xml:id="pandorfer">
+                  <forename>Peter</forename>
+                  <surname>Andorfer</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-9575-9372</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technisches Consulting und Vorbereitung der Druckausgabe</resp>
+               <persName key="https://d-nb.info/gnd/13281899X"
+                         role="hasContributor"
+                         xml:id="skurz">
+                  <forename>Stephan</forename>
+                  <surname>Kurz</surname>
+                  <affiliation key="https://d-nb.info/gnd/1202798799">Institut für die Erforschung der Habsburgermonarchie und des Balkanraumes</affiliation>
+                  <idno type="ORCID">0000-0003-2546-2570</idno>
+               </persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher key="https://d-nb.info/gnd/1001454-8">Österreichische Akademie der Wissenschaften</publisher>
+            <date when="2028"/>
+            <availability status="free">
+               <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">Lizenziert unter CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/deed.de)</licence>
+            </availability>
+            <idno type="ISBN_Print"/>
+            <idno type="ISBN_Part_epub"/>
+            <idno type="ISBN_Digital"/>
+            <idno type="DOI"/>
+            <idno type="DOI_zenodo"/>
+            <idno type="ebook_ID"/>
+         </publicationStmt>
+         <seriesStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="m" type="main">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <respStmt>
+               <resp>Bearbeitung und Herausgeberschaft</resp>
+               <orgName key="https://d-nb.info/gnd/2024703-5">Universität Wien</orgName>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+         </seriesStmt>
+         <notesStmt>
+            <note>Diese TEI-XML-Datei ist Grundlage für eine Druckausgabe der Edition.</note>
+            <relatedItem>
+               <biblStruct>
+                  <monogr>
+                     <imprint>
+                        <pubPlace key="https://d-nb.info/gnd/4066009-6">Wien</pubPlace>
+                        <publisher key="https://d-nb.info/gnd/2068748-5">Verlag der Österreichischen Akademie der Wissenschaften</publisher>
+                        <date when="2029"/>
+                     </imprint>
+                     <extent/>
+                  </monogr>
+                  <note>
+                     <idno/>
+                     <ptr/>
+                  </note>
+                  <citedRange/>
+               </biblStruct>
+            </relatedItem>
+         </notesStmt>
+         <sourceDesc>
+            <bibl>Quellbestand: AT-OeStA/AdR MRang MR 1Rep KRP Kabinettsratsprotokolle, 1918-1920 (Teilbestand)<ref target="https://www.archivinformationssystem.at/detail.aspx?id=5465">https://www.archivinformationssystem.at/detail.aspx?id=5465</ref>
+            </bibl>
+            <msDesc>
+               <msIdentifier>
+                  <institution key="https://d-nb.info/gnd/37748-X" role="hasOwner">AT-OeStA Österreichisches Staatsarchiv (Archiv (ÖStA))</institution>
+                  <repository key="https://d-nb.info/gnd/1601181-8">AT-OeStA/AdR Archiv der Republik, 1918- (Abteilung)</repository>
+                  <collection>AT-OeStA/AdR MRang MR 1Rep Ministerrat 1. Republik, 1918 - 1938 (Bestand)</collection>
+                  <idno>AT-OeStA_AdR-MRang-MR-1.-Rep.-KRP-166</idno>
+               </msIdentifier>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <abstract>
+            <p>
+          <!--to be generated-->
+        </p>
+         </abstract>
+      </profileDesc>
+      <encodingDesc>
+         <styleDefDecl scheme="css"/>
+         <tagsDecl>
+            <rendition xml:id="b" scheme="css">font-weight:bold;</rendition>
+            <rendition xml:id="su" scheme="css">vertical-align:super;font-size:.7em;</rendition>
+            <rendition xml:id="s" scheme="css">text-decoration:line-through;</rendition>
+            <rendition xml:id="u" scheme="css">text-decoration:underline;</rendition>
+            <rendition xml:id="ow" scheme="css">text-decoration:line-through;text-decoration-style:double;</rendition>
+            <rendition xml:id="r" scheme="css">display:block;text-align:right;</rendition>
+            <rendition xml:id="letterspaced" scheme="css">letter-spacing:0.15em;</rendition>
+            <rendition xml:id="i" scheme="css">font-style:italic;</rendition>
+         </tagsDecl>
+         <editorialDecl>
+            <hyphenation>
+               <p>
+            <!--to be added-->
+          </p>
+            </hyphenation>
+            <correction>
+               <p>
+            <!--to be added-->
+          </p>
+            </correction>
+            <normalization>
+               <p>
+            <!--to be added-->
+          </p>
+            </normalization>
+            <punctuation>
+               <p>
+            <!--to be added-->
+          </p>
+            </punctuation>
+            <stdVals>
+               <p>
+            <!--to be added-->
+          </p>
+            </stdVals>
+            <p>
+          <!--to be added-->
+        </p>
+         </editorialDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#tfruehwirth" when-iso="2026-10-07">TEIGarage output upconverted with upconvert.xsl</change>
+         <change who="#tfruehwirth" when-iso="2026-10-07">TEI header populated with generate_tei_templates.py</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface/>
+   </facsimile>
+   <text>
+      <body>
+         <div xml:id="doc-krp-0166.xml">
+            <head type="dokument">
+               <title type="num">166.<note type="footnote">Das Protokoll trägt den Vermerk <hi rend="#i">Vertraulich!</hi>
+                  </note>
+               </title>
+               <title type="desc">
+                  <pb facs="krp-0166_r-0001"/>
+                  <pb facs="krp-0166_r-0002"/>[Freitag] 1920-03-26</title>
+            </head>
+            <div type="dokumentkopf">
+               <div type="vorsitz">
+                  <head>Vorsitz:</head>
+                  <p>Renner</p>
+               </div>
+               <div type="anwesend">
+                  <head>Anwesend:</head>
+                  <p>Deutsch, Eldersch, Ellenbogen, Glöckel, Hanusch, Loewenfeld-Russ, Miklas, Paul, Reisch, Resch, Tandler, Waiss, Zerdik</p>
+               </div>
+               <div type="zugezogen">
+                  <head>Zugezogen:</head>
+                  <p>Deutsch, Wilfling</p>
+               </div>
+               <div type="schriftfuehrer">
+                  <head>Schriftführer:</head>
+                  <p>unbekannt</p>
+               </div>
+               <div type="dauer">
+                  <head>Dauer:</head>
+                  <p>15.00–17.00 Uhr</p>
+               </div>
+            </div>
+            <div type="komponenten">
+               <p>Reinschrift, Beilagen, Konzept, stenographische Mitschrift, Entwurf der Tagesordnung</p>
+            </div>
+            <div type="beilagen">
+               <head>Beilagen:</head>
+               <list>
+                  <item>
+                     <ref target="#krp-0166_top07">Zu TOP 7</ref>: <ref target="#krp-0166_b01">Vollzugsanweisung der Staatsregierung für den Nachtrag zum Besoldungsübergangsgesetz</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0166_top10">Zu TOP 10</ref>: <ref target="#krp-0166_b02">Vortrag des Staatsamtes für Land- und Forstwirtschaft zu Zl. 6392/20 über den Gesetzesbeschluss des Vorarlberger Landtages zur Kostendeckung der Entwässerung des Frastanzer Riedes</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0166_top11">Zu TOP 11</ref>: <ref target="#krp-0166_b03">Vortrag des Staatsamtes für Land- und Forstwirtschaft zu Zl. 6427/20 über den Gesetzesbeschluss des Vorarlberger Landtages zum Verbot der Begründung von Jagdrechten auf fremden Grund und Boden</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0166_top12">Zu TOP 12</ref>: <ref target="#krp-0166_b04">Vortrag des Staatsamtes für Inneres und Unterricht über den Gesetzesbeschluss des Salzburger Landtages zur Einhebung einer Schulabgabe</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0166_top13">Zu TOP 13</ref>: <ref target="#krp-0166_b05">Vortrag des Staatsamtes für Inneres und Unterricht über den Gesetzesbeschluss der Provisorischen Landesversammlung Kärntens</ref>
+                  </item>
+               </list>
+            </div>
+            <div type="protokoll">
+               <pb facs="krp-0166_r-0003"/>
+               <div type="top" xml:id="krp-0166_top01">
+                  <head>
+                     <label>
+                        <num n="1">1.</num>
+                        <seg>Vorsorgen für die Vertretung des Staatskanzlers bei gleichzeitiger Abwesenheit des Vizekanzlers.</seg>
+                     </label>
+                  </head>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> teilt mit, dass er während der Osterwoche voraussichtlich durch einige Tage hindurch von Wien abwesend sein werde. Infolge gleichzeitiger Abwesenheit des Vizekanzlers schlage er vor, dass während dieser Zeit der nach dem Alter hiezu berufene Staatssekretär Paul die Kabinettsführung und die Leitung der Staatskanzlei übernehme. </p>
+                  <p>Der Kabinettsrat stimmt diesem Vorschlage zu.</p>
+               </div>
+               <div type="top" xml:id="krp-0166_top02">
+                  <head>
+                     <label>
+                        <num n="2">2.</num>
+                        <seg>11. Bericht der Kommission zur Erhebung militärischer Pflichtverletzungen.</seg>
+                     </label>
+                  </head>
+                  <p>Der Vorsitzende erbittet und erhält vom Kabinettsrate die Ermächtigung, den 11. Bericht der Kommission zur Erhebung militärischer Pflichtverletzungen an die Nationalversammlung vorlegen zu dürfen.</p>
+                  <p>
+                     <pb facs="krp-0166_r-0004"/>
+                  </p>
+               </div>
+               <div type="top" xml:id="krp-0166_top03">
+                  <head>
+                     <label>
+                        <num n="3">3.</num>
+                        <seg>Übernahme der aus den Nationalstaaten vertriebenen ehemals österreichischen Staats-(Eisenbahn-)Angestellten deutscher Nationalität in den Dienst der österreichischen Republik.</seg>
+                     </label>
+                  </head>
+                  <p>Der Vorsitzende teilt mit, dass ihm eine Abordnung der aus den Nationalstaaten vertriebenen deutschen Staats- und Eisenbahnbediensteten die Bitte vorgebracht habe, auf eine Abänderung des Beschlusses des Kabinettsrates vom 16. März l. J., betreffend den Aufschub der Entscheidung in Angelegenheit ihrer Übernahme in den österreichischen Staatsdienst, hinzuwirken, damit der Unsicherheit ihrer Rechtslage, insbesondere in der Frage ihrer und ihrer Angehörigen Staatsbürgerschaft möglichst bald ein Ende gesetzt werde. Redner könne sich der Stichhältigkeit der vorgebrachten Gründe nicht verschließen und erachte es als billig, einen bestimmten Zeitpunkt in Aussicht zu nehmen, zu welchem das Rechtsverhältnis der vertriebenen Angestellten einseitig durch Österreich zu regeln wäre, wenn bis dahin kein Übereinkommen mit den Nationalstaaten erzielt worden sein sollte. Als diesen Zeitpunkt möchte Redner den 1. Juli l. J. bezeichnen.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Deutsch</hi> verweist darauf, dass sich bei der Aufstellung der neuen Wehrmacht eine besondere Vorsorge bezüglich einer Anzahl von <pb facs="krp-0166_r-0005"/>etwa 200 Berufsmilitärpersonen als notwendig herausstelle, welche bei deutschösterreichischen Heeresstellen in Dienst getreten, nunmehr aber durch den Friedensvertrag vermöge ihrer Zuständigkeit in den an die Nationalstaaten gefallenen deutschen Gebietsteilen Angehörige fremder Staaten geworden seien. Die Betreffenden hätten sich zwar um die Verleihung des Heimatrechtes in einer österreichischen Gemeinde beworben, doch habe ihre Aufnahme in den Heimatsverband infolge des Gesetzes vom 17. Oktober 1919, StGBl. Nr. 481, nicht mehr erfolgen können. Für die Dauer des gegenwärtigen Anstellungsverhältnisses habe sich das Staatsamt für Heer[es]wesen mit dem Auskunftsmittel begnügt, sie vorbehaltlich der späteren Option für Österreich im Dienst zu behalten. Rücksichtlich ihrer Aufnahme in die neue Wehrmacht stehe das Staatsamt für Finanzen jedoch auf dem Standpunkte, dass die Betreffenden durch die Option neu in den Staatsverband eintreten und ihnen daher die aus dem bisherigen Dienstverhältnis erworbenen Ansprüche im Falle der Anstellung bei der neuen Wehrmacht nicht angerechnet werden können. Darin liege aber eine schwere Unbilligkeit, da sich diese Offiziere und Militärbeamten <pb facs="krp-0166_r-0006"/>durch die Verwendung im deutschösterreichischen Heere die Rückkehr in die Nationalstaaten abgeschnitten haben; sie müssten vielmehr nach Auffassung des sprechenden Staatssekretärs gleich österreichischen Staatsangehörigen zur Bewerbung um die Aufnahme in die neue Wehrmacht zugelassen werden. Aufgrund dieser Bewerbung wären sie unter Anrechnung auf die für das neue Heer festgesetzte Anzahl von Offizieren aufzunehmen und provisorisch in ein Kontingent einzuteilen, bis nach Durchführung der Option ihre Definitivstellung erfolgen könne.</p>
+                  <p>Ministerialrat Dr. <hi rend="#letterspaced">Wilfling</hi> bemerkt, dass bei der Regelung der Aufnahme der vertriebenen deutschen Staatsbeamten in den österreichischen Dienst die Entscheidung, in welcher Anzahl das einzelne Ressort derartige Angestellte übernehmen dürfe, nach Analogie der für Neuaufnahmen geltenden Bestimmungen unbedingt an die Zustimmung des Staatsamtes für Finanzen geknüpft werden müsse.</p>
+                  <p>Nach einer weiteren Debatte, an welcher sich noch die Staatssekretäre Dr. <hi rend="#letterspaced">Deutsch</hi> und <hi rend="#letterspaced">Hanusch</hi> sowie Unterstaatssekretär <hi rend="#letterspaced">Mik1as</hi> beteiligten, beschließt der Kabinettsrat, die mit Beschluss vom 16. März d. J. zurückge<pb facs="krp-0166_r-0007"/>stellten Vorlagen, betreffend die Übernahme der aus den Nationalstaaten vertriebenen deutschen Staats- und Eisenbahnbediensteten in einem solchen Zeitpunkt neuerlich in Verhandlung zu ziehen, dass sie am 1. Juli 1. J. in Wirksamkeit gesetzt werden können, falls bis dahin noch kein Übereinkommen mit den Nationalstaaten erzielt worden sein sollte. Weiters ermächtigt der Kabinettsrat den Staatssekretär für Heer[es]wesen, jene aus den Nachfolgestaaten stammenden Berufsmilitärpersonen, welche schon jetzt im Dienste der deutschösterreichischen Wehrmacht stehen und sich bewährt haben, in nichtoffizieller Form zu verständigen, dass es ihnen frei stehe, die Erklärung ihrer Option für Österreich schon jetzt mit dem Begehren einzureichen sie sofort am Tage der Ratifikation des Friedens in Wirksamkeit treten zu lassen. Unter dieser Voraussetzung können die Betreffenden sich an der Meldung für die neue Wehrmacht beteiligen und mit allen Rechten wie österreichische Staatsangehörige vorläufig provisorisch und vom Tage der Rechtswirksamkeit der Option endgiltig in das Kontingent der Wehrmacht eingeteilt werden.</p>
+                  <p>
+                     <pb facs="krp-0166_r-0008"/>
+                  </p>
+               </div>
+               <div type="top" xml:id="krp-0166_top04">
+                  <head>
+                     <label>
+                        <num n="4">4.</num>
+                        <seg>Mehllieferungen aus Amerika nach Österreich.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Loewenfeld-Russ</hi> teilt mit, dass der amerikanische Kongress vor kurzem die United States Grain Corporation (Getreidegesellschaft der Vereinigten Staaten) ermächtigt habe, der österreichischen Regierung einen Kredit einzuräumen, aufgrund dessen nach Österreich 200.000 t Weizenmehl geliefert werden. Die Verladung dieser Mengen solle bis 31. Mai d. J. in amerikanischen Häfen erfolgen. Die britische Regierung habe sich bereit erklärt, für die Beistellung des zum Transport nach Österreich notwendigen Schiffsraumes zu sorgen und die hieraus erwachsenden Fracht und Versicherungskosten der österreichischen Regierung zu kreditieren. Die Festlegung der Bedingungen des von der erwähnten amerikanischen Grain Corporation und von der britischen Regierung Österreich zu gewährenden Kredites sei einem späteren Zeitpunkte vorbehalten; den bisherigen Mitteilungen zufolge könne mit einer mindestens fünfjährigen Kreditdauer gerechnet werden. Bei Zugrundelegung des jetzigen Kurses würde sich der Preis für ein kg amerikanischen Weizenmehles auf rund 30 K in Triest stellen.</p>
+                  <p>
+                     <pb facs="krp-0166_r-0009"/>Im Verlaufe der in der Vorwoche durch den geschäftsführenden Vizepräsidenten der Kriegsgetreideanstalt, Reif, in Paris mit den amerikanischen Vertretern in der Reparationskommission, Colonel Logan und Colonel Smith und dem britischen Vertreter Sir William Goode geführten Verhandlungen sei österreichischerseits alles versucht worden, um an Stelle von Mehl die Kreditlieferung von Getreide zu erwirken, da begreiflicherweise durch die Lieferung von Getreide die Beschäftigung der Mühlen und die Gewinnung von Kleie sichergestellt gewesen wäre; die Getreidelieferung hätte auch gegenüber der Lieferung von Mehl den Vorteil gehabt, dass durch größere Ausmahlung für den entsprechenden Dollarbetrag ein namhafteres Mehlquantum hätte gewonnen werden können, da die Ausmahlung in Österreich 90 % betrage, während diese in Amerika nur zu 60 % erfolge. Trotzdem besonders seitens der amerikanischen Vertreter Österreich gegenüber bekundeten Entgegenkommen konnte dieser Wunsch nicht erfüllt werden, da die Grain Corporation derzeit über keine abgebbaren Weizenbestände sondern lediglich über freie Mehllager verfüge. Es bleibe Österreich allerdings die Möglichkeit offen, nachdem einmal größere Mengen des zu erwartenden amerikanischen Mehles ein<pb facs="krp-0166_r-0010"/>gelangt sind, mit anderen Staaten in Verhandlungen wegen Tausches dieses Mehles gegen Getreide einzutreten.</p>
+                  <p>Die britische Regierung habe überdies mitgeteilt, dass sie beabsichtige, Österreich gegen Kredit 1.700 t Hafermehl zur Verfügung zu stellen, die voraussichtlich zur Kinderernährung Verwendung finden werden.</p>
+                  <p>Den bisher der österreichischen Regierung zugekommenen Mitteilungen zufolge sei mit der Beladung des ersten für Österreich bestimmten Dampfers in New-York bereits begonnen worden, so dass zu hoffen sei, dass die Lieferungen gegen Ende April in Triest einsetzen werden. Die österreichische Regierung sei unablässig bemüht, bei der italienischen Regierung Vorschüsse ab Triest und Venedig in einer Höhe zu erhalten, die hinreiche, den österreichischen Mehlbedarf bis zur Zeit des Einlangens der amerikanischen Sendungen sicherzustellen. In entgegenkommendster Weise sei von der italienischen Regierung ein Vorschuss von 15.000 t ab Venedig bewilligt worden, für dessen Abtransport alle Vorkehrungen getroffen werden.</p>
+                  <p>Redner habe sich überdies, um eine Unterbrechung in der Mehl- und Brotver<pb facs="krp-0166_r-0011"/>sorgung hintanzuhalten, im Wege des Schweizer Gesandten an die Schweizer Regierung mit dem Ersuchen gewendet, ob nicht von der Schweiz einige tausend t Getreide oder Mehl gegen seinerzeitige Rückstellung aus den von uns in Holland angekauften Getreidemengen vorgeliefert werden könnten. Der Schweizer Gesandte habe sich bereit erklärt, diese Bitte bei der Schweizer Regierung zu unterstützen.</p>
+                  <p>Der Kabinettsrat nimmt diese Mitteilungen zur Kenntnis.</p>
+               </div>
+               <div type="top" xml:id="krp-0166_top05">
+                  <head>
+                     <label>
+                        <num n="5">5.</num>
+                        <seg>Beitritt zu mehreren Gesetzesbeschlüssen der Nationalversammlung.</seg>
+                     </label>
+                  </head>
+                  <p>Über Vorschlag des <hi rend="#letterspaced">Vorsitzenden</hi> erhebt der Kabinettsrat gegen folgende, von der Nationalversammlung beschlossene, Gesetze keine Vorstellung: </p>
+                  <list>
+                     <item n="1">
+                        <label>1.)</label> Gesetz, betreffend Kreditoperationen, </item>
+                     <item n="2">
+                        <label>2.)</label> Gesetz, mit welchem Zuschläge zu dem Minimaleinkommen und zu den Ruhegenüssen der katholischen Seelsorger sowie zu dem Mimimaleinkommen der Dignitäre und Kanoniker bei den Metropolitan- und Kathedralkapiteln der katholischen Kirche festgestellt werden, </item>
+                     <item n="3">
+                        <label>3.)</label> Gesetz, betreffend die Aufhebung des Hofdekretes vom 4. Oktober 1833, JGS. Nr. 2633, und des Art. V des Gesetzes vom 1. August 1895, RGBl. Nr. 112,</item>
+                  </list>
+                  <p>
+                     <pb facs="krp-0166_r-0012"/>
+                  </p>
+                  <list>
+                     <item n="1">
+                        <label>4.)</label> Nachtrag zum Besoldungsübergangsgesetz.</item>
+                  </list>
+                  <p>Diese Gesetze sind demgemäß nach Gegenzeichnung durch den Staatskanzler und die zuständigen Staatssekretäre dem Präsidenten der Nationalversammlung vorzulegen.</p>
+               </div>
+               <div type="top" xml:id="krp-0166_top06">
+                  <head>
+                     <label>
+                        <num n="6">6.</num>
+                        <seg>Regelung der Erholungsurlaube der Staatsbediensteten für das Jahr 1920.</seg>
+                     </label>
+                  </head>
+                  <p>Der Vorsitzende erinnert daran, dass der Kabinettsrat in seiner Sitzung am 20. Mai v. J. den Beschluss gefasst habe, es sei im Jahre 1919 bei der Gewährung der Erholungsurlaube an die Staatsbediensteten an dem in der Dienstpragmatik festgesetzten Ausmaß festzuhalten, den Amtsvorständen jedoch die Ermächtigung zu erteilen, an einzelne Angestellte nach Maßgabe ihrer Inanspruchnahme und ihrer sonstigen Dienstleistung Urlaubsverlängerungen in der Dauer von 8–14 Tagen zu gewähren.</p>
+                  <p>Da die Schwierigkeit der Ernährungslage sich keineswegs verringert habe und infolgedessen auch heuer erhöhte Bedachtnahme auf die gesundheitlichen Verhältnisse der Staatsangestellten am Platze sei, beantrage Redner die Erneu<pb facs="krp-0166_r-0013"/>erung des vorjährigen Beschlusses.</p>
+                  <p>Nach einer kurzen Debatte beschließt der Kabinettsrat, dass im heurigen Jahre an dem in der Dienstpragmatik festgesetzten Urlaubsausmaße festzuhalten und von einer generellen Ermächtigung der Amtsvorstände zur Gewährung von Urlaubsverlängerungen abzusehen sein wird.</p>
+               </div>
+               <div type="top" xml:id="krp-0166_top07">
+                  <head>
+                     <label>
+                        <num n="7">7.</num>
+                        <seg>Vollzugsanweisung zur Durchführung des Nachtrages zum Besoldungsübergangsgesetz.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Reisch</hi> unterbreitet dem Kabinettsrate den Entwurf einer von der Staatsregierung zu erlassenden Vollzugsanweisung zur Durchführung des Nachtrages zum Besoldungsübergangsgesetz, in welcher auch die näheren Bestimmungen über die Festsetzung der durch das Gesetz auf sieben Stunden erhöhten Arbeitszeit bei den staatlichen und staatlichen Verwaltungszwecken dienenden Behörden, Ämtern und Anstalten getroffen werden.</p>
+                  <p>Nach dem Antrage des sprechenden Staatssekretärs erteilt der Kabinettsrat die Zustimmung zur Erlassung der Vollzugsanweisung nach dem eingebrachten Entwurfe.</p>
+                  <p>Mit Rücksicht auf die im Laufe der <pb facs="krp-0166_r-0014"/>Debatte erfolgte Feststellung, dass einzelne Staatsämter ihren Angestellten besondere Vergütungen für die Benützung der Straßenbahn zur Fahrt zum und vom Amte leisten oder höhere als die normierten Entschädigungen für die Überstundenarbeit gewähren, beschließt der Kabinettsrat weiters, sämtlichen Staatsämtern zur bindenden Pflicht zu machen, alle derartigen Sonderzuwendungen künftighin zu unterlassen und, soweit solche derzeit in Übung stehen, sie anlässlich der Einführung der erhöhten Bezüge mit 1. April l. J. unbedingt einzustellen.</p>
+               </div>
+               <div type="top" xml:id="krp-0166_top08">
+                  <head>
+                     <label>
+                        <num n="8">8.</num>
+                        <seg>Vollzugsanweisung, womit einige Bestimmungen der Vollzugsanweisung der Staatsregierung vom 9. Jänner 1920, StGBl. Nr. 22, zur vorläufigen Regelung der Entlohnung des Kanzleihilfspersonales und der Aushilfsdiener bei staatlichen Ämtern und Anstalten abgeändert und ergänzt werden.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. Reisch erbittet und erhält vom Kabinettsrate die Ermächtigung zur Erlassung einer Vollzugsanweisung der Staatsregierung, in welcher unter Anlehnung an den Nachtrag zum Besoldungsübergangsgesetz neue Gebührenvorschriften für die Entlohnung des Kanzleihilfspersonales und der Aushilfsdiener bei den staatlichen Behörden getroffen werden.</p>
+               </div>
+               <div type="top" xml:id="krp-0166_top09">
+                  <head>
+                     <label>
+                        <num n="9">9.</num>
+                        <seg>Erhöhung der Sitzpreise in den Staatstheatern.</seg>
+                     </label>
+                  </head>
+                  <p>Unterstaatssekretär <hi rend="#letterspaced">Glöckel</hi> berichtet, dass die wesentliche Steigerung <pb facs="krp-0166_r-0015"/>der Regiezulagen der Staatstheater eine neuerliche Erhöhung der Sitzpreise in diesen Theatern notwendig gemacht habe. Die Erhöhung solle aber keine allgemeine sein, sondern sich nur auf die Logen und die Parkett- und Parterresitze sowie auf die Abonnements für diese Kategorien beziehen. Redner gibt dem Kabinettsrate die im Einvernehmen mit dem Staatsamte für Finanzen festgesetzten neuen Sitz- und Abonnementpreise bekannt und erbittet dafür die Genehmigung des Kabinettsrates. Aus der Erhöhung werde ein Mehrertrag von 14,7 Millionen K erwartet, der durch die schon zugestandenen und für die nächste Zeit noch bevorstehenden Lohn- und Gagenerhöhungen bis zum Betrage von 11 Millionen K in Anspruch genommen sei.</p>
+                  <p>Der Kabinettsrat genehmigt die von Unterstaatssekretär Glöckel beantragten neuen Sitzpreise in den Staatstheatern.</p>
+               </div>
+               <div type="top" xml:id="krp-0166_top10">
+                  <head>
+                     <label>
+                        <num n="10">10.</num>
+                        <seg>Gesetzesbeschluss des Vorarlberger Landtages, betreffend die Entwässerung des Frastanzer Riedes.</seg>
+                     </label>
+                  </head>
+                  <p>Nach dem Antrage des Sektionschefs Dr. <hi rend="#letterspaced">Deutsch</hi> beschließt der Kabinettsrat von der Erhebung einer Vorstel<pb facs="krp-0166_r-0016"/>lung gegen den Gesetzesbeschluss des Vorarlberger Landtages vom 30. Juni 1919, betreffend die Entwässerung des Frastanzer Riedes, abzusehen und der Kundmachung dieses Gesetzes unter Gegenzeichnung des Staatssekretärs für Land- und Forstwirtschaft zuzustimmen.</p>
+               </div>
+               <div type="top" xml:id="krp-0166_top11">
+                  <head>
+                     <label>
+                        <num n="11">11.</num>
+                        <seg>Gesetzesbeschluss des Vorarlberger Landtages, betreffend das Verbot der Begründung von Jagdrechten auf fremden Grund und Boden.</seg>
+                     </label>
+                  </head>
+                  <p>Sektionschef Dr. Deutsch erstattet dem Kabinettsrate Bericht über den Gesetzesbeschluss des Vorarlberger Landtages vom 18. Dezember 1919, betreffend das Verbot der Begründung von Jagdrechten auf fremden Grund und Boden. Er führt aus, dass gegen den Gesetzesbeschluss abgesehen von der Vollzugsklausel, in welcher die Durchführung der Landesregierung übertragen werde, kein Bedenken obwalte. Da es sich um eine Angelegenheit des Privatrechtes handle, deren Durchführung Sache der Gerichte sei, müsse für die Staatsregierung eine Mitwirkung bei Vollziehung des Gesetzes in Anspruch genommen werden, so zwar, dass die Vollzugsklausel etwa folgende Fassung zu erhalten hätte:</p>
+                  <p>„Mit dem Vollzuge ist der Staatssekretär für Land- und Forstwirtschaft im <pb facs="krp-0166_r-0017"/>Einvernehmen mit dem Staatssekretär für Justiz betraut, welcher zur Durchführung die Vorarlberger Landesregierung ermächtigt.“</p>
+                  <p>Der Kabinettsrate beschließt, gegen den Gesetzesbeschluss keine Vorstellung zu erheben, jedoch die Landesregierung in Vorarlberg zu ersuchen, auf die entsprechende Abänderung der Vollzugsklausel in der angedeuteten Weise hinzuwirken.</p>
+                  <p>Der Originalgesetzestext wird sodann vom Staatssekretär für Land- und Forstwirtschaft gegenzuzeichnen und von der Landesregierung in Vorarlberg kundzumachen sein.</p>
+               </div>
+               <div type="top" xml:id="krp-0166_top12">
+                  <head>
+                     <label>
+                        <num n="12">12.</num>
+                        <seg>Gesetzesbeschluss des Salzburger Landtages, betreffend die Einhebung einer selbständigen Landesabgabe (Schulabgabe).</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Eldersch</hi> teilt dem Kabinettsrate mit, dass der Salzburger Landtag in seiner Sitzung am 5. Februar l. J. die Einführung einer Landesabgabe beschlossen habe, welche nach den Grundsätzen der staatlichen Einkommensteuer von allen physischen und juristischen Personen, denen im Lande Salzburg eine Personaleinkommensteuer bemessen und vorgeschrieben werde, eingehoben werden soll. Die Abgabe sei in der Art eines Zuschlages zur Einkommensteuer gedacht und <pb facs="krp-0166_r-0018"/>in solcher Höhe festgesetzt, dass sie bei einem Einkommen von 12[.000]–16.000 K mit 30 % der staatlichen Einkommensteuer beginnend, in steigender Progression bei Einkommen über 1.300.000 K den Satz von 400 % der staatlichen Einkommensteuer erreicht. Es handle sich somit eigentlich nicht um eine selbständige Abgabe, sondern um die Einführung eines Landeszuschlages zur Einkommensteuer. Der Gesetzesbeschluss durchbreche also den seit jeher streng festgehaltenen Grundsatz, dass die Einkommensteuer dem Staate vorbehalten bleiben müsse und mit autonomen Zuschlägen nicht belastet werden dürfe.</p>
+                  <p>Für die Aufrechthaltung der Zuschlagsfreiheit spreche schon die Erwägung, dass die Einkommensteuer in Österreich technisch so eingerichtet sei, dass das Einkommen am ordentlichen Wohnsitz des Steuerpflichtigen besteuert werde ohne Rücksicht darauf, wo die Einnahmsquelle liege. Bei Zulassung von Landeszuschlägen in Salzburg würden auch Einnahmsquellen, die außerhalb Salzburg liegen, mit zur Steuer herangezogen was den Grundsätzen des autonomen Steuerrechtes widerspreche.</p>
+                  <p>Außerdem erfordere die Einkommensteuer, wenn die ohnehin nicht genügend entwickelte Steuermoral nicht ganz unter<pb facs="krp-0166_r-0019"/>graben werden solle, eine sehr feine Durchbildung ihrer Progression. Die Progression der staatlichen Einkommensteuer würde schon an sich durch jeden Zuschlag autonomer Verbände verschoben, sie würde aber gänzlich umgestoßen, wenn autonome Verbände anfingen, die Progression anders einzurichten, als sie bei der staatlichen Einkommensteuer vorgesehen ist.</p>
+                  <p>Dazu komme, dass die kürzlich in der Nationalversammlung eingebrachte Personalsteuernovelle vom Jahre 1920 eine derartige Erhöhung der Steuerskala vorsehe, dass für die Einhebung von Landeszuschlägen keine Möglichkeit mehr offen bleibe. Schließlich werde der aus dem beschlossenen Gesetze erhoffte Ertrag weit unter der Höhe der Dotationen nebst außerordentlichen Zuschüssen zurückbleiben, die dem Lande aufgrund des Entwurfes eines Länderdotationsgesetzes aus Staatsmitteln zukommen sollen. Dieser Dotationen und Zuschüsse würde das Land aufgrund der Bestimmungen des § 6 Abs. 1 Pkt. 1 und Pkt. 3 des Länderdotationsgesetzes im Falle des Festhaltens an dem vorliegenden Gesetzesbeschluss verlustig gehen.</p>
+                  <p>Ein letzter Einwand gegen den Gesetzesbeschluss sei dadurch gegeben, dass über Antrag des Unterrichtsamtes gegen den Gesetzesbeschluss des Salzburger Land<pb facs="krp-0166_r-0020"/>tages vom 5. Februar 1920, betreffend die Besserstellung der Lehrerschaft, Vorstellung erhoben worden sei und mithin auch die dem vorliegenden Gesetzesbeschluss zu Grunde liegende Voraussetzung eine Anfechtung erfahren habe.</p>
+                  <p>Um die 14-tägige Frist des Art. 14 des Gesetzes über die Volksvertretung, die im vorliegenden Falle mit dem 23. März 1920 endete, nicht zu versäumen, habe das Staatsamt für Inneres und Unterricht nach gepflogenem Einvernehmen mit dem Staatsamte für Finanzen gegen den Gesetzesbeschluss – in Voraussetzung der nachträglichen Genehmigung durch den Kabinettsrat – am 22. März telegrafisch Vorstellung erhoben und der Regierung die Ausführung der Vorstellung vorbehalten.</p>
+                  <p>Nach dem Antrage des sprechenden Staatssekretärs stimmt der Kabinettsrate der vom Staatsamt für Inneres und Unterricht im telegrafischen Wege erhobenen Vorstellung gegen den erwähnten Gesetzesbeschluss des Salzburger Landtages zu und ermächtigt das Staatsamt, die Vorstellung nachträglich eingehend zu begründen.</p>
+                  <p>
+                     <pb facs="krp-0166_r-0021"/>
+                  </p>
+               </div>
+               <div type="top" xml:id="krp-0166_top13">
+                  <head>
+                     <label>
+                        <num n="13">13.</num>
+                        <seg>Gesetzesbeschluss der Provisorischen Landesversammlung in Kärnten, womit eine neue Landeswahlordnung für die Landeshauptstadt Klagenfurt erlassen wird.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Eldersch gibt dem Kabinettsrate bekannt, dass die Provisorische Landesversammlung in Kärnten eine neue Gemeindewahlordnung für die Landeshauptstadt Klagenfurt beschlossen habe. Nach Besprechung der wesentlichsten Bestimmungen des neuen Gesetzes, stellt der sprechende Staatssekretär den Antrag, der Kabinettsrat wolle beschließen, von der Erhebung einer Vorstellung gegen den Gesetzesbeschluss abzusehen und dessen sofortiger Kundmachung zustimmen. </p>
+                  <p>Der Kabinettsrat beschließt im Sinne des gestellten Antrages.</p>
+               </div>
+               <div type="top" xml:id="krp-0166_top14">
+                  <head>
+                     <label>
+                        <num n="14">14.</num>
+                        <seg>Lieferungsvertrag mit Polen.</seg>
+                     </label>
+                  </head>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> teilt unter Bezugnahme auf die Verhandlung in der Sitzung des Kabinettsrates vom 23. März l. J. über den Lieferungsvertrag mit Polen mit, dass er nach Prüfung aller Umstände zu der Auffassung gelangt sei, dass die österreichische Regierung die Freigabe der von Polen verlangten Sachdemobilisierungsgüter nicht in Erwägung ziehen könne, da Polen sich derzeit im Kriegszustande befinde.</p>
+                  <p>
+                     <pb facs="krp-0166_r-0022"/>Der Kabinettsrat pflichtet dieser Anschauung bei.</p>
+                  <p/>
+               </div>
+            </div>
+            <div type="stenogramme">
+               <div n="1">
+                  <head>EINZUFÜGEN</head>
+                  <p>Transkription in Arbeit.</p>
+               </div>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

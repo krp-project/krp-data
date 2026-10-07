@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href='http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:acdh="https://vocabs.acdh.oeaw.ac.at/schema#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xml:lang="de">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="a" type="main" n="0110">Kabinettsprotokoll Nr. 110 vom 29. September 1919</title>
+            <title level="m" type="main" n="01">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <title level="m" type="sub" n="">Renner II (15. März – 17. Oktober 1919)</title>
+            <meeting>
+               <placeName key="https://d-nb.info/gnd/4066009-6">Wien</placeName>
+               <orgName key="https://d-nb.info/gnd/5162749-8">Kabinettsrat</orgName>
+               <date when-iso="1919-09-29"/>
+            </meeting>
+            <editor>
+               <persName key="https://d-nb.info/gnd/122481836"
+                         role="hasCreator"
+                         xml:id="hwohnout">
+                  <forename>Helmut</forename>
+                  <surname>Wohnout</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</affiliation>
+               <idno type="ORCID">0000-0002-3864-9839</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/120789825"
+                         role="hasCreator"
+                         xml:id="tolechowski">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0003-3291-6876</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/131679384"
+                         role="hasCreator"
+                         xml:id="rlein">
+                  <forename>Richard</forename>
+                  <surname>Lein</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0002-7502-0503</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="aholzer">
+                  <forename>Anna</forename>
+                  <surname>Holzer</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0005-3560-3500</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="dsoelkner">
+                  <forename>Dominik</forename>
+                  <surname>Sölkner</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-9895-7212</idno>
+            </editor>
+            <editor>
+               <persName role="hasContributor" xml:id="ischotzko">
+                  <forename>Ina</forename>
+                  <surname>Schotzko</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-5210-3713</idno>
+            </editor>
+            <funder n="1">
+               <orgName key="https://d-nb.info/gnd/2054142-9" role="hasFunder">Österreichischer Wissenschaftsfonds FWF</orgName>
+               <idno type="project">PAT1495024</idno>
+               <title type="project">Die Protokolle des österreichischen Kabinettsrates 1919–1920</title>
+            </funder>
+            <respStmt>
+               <resp>Projektverantwortung</resp>
+               <orgName key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Projektleitung</resp>
+               <persName key="https://d-nb.info/gnd/120789825" role="hasPrincipalInvestigator">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+                  <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+                  <idno type="ORCID">0000-0003-3291-6876</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Nationaler Forschungspartner</resp>
+               <orgName key="https://d-nb.info/gnd/1123037736" role="hasEnabler">Austrian Centre for Digital Humanities</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Digitalisierung der gedruckten Quellen</resp>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>TEI-Datenmodellierung</resp>
+               <persName role="hasContributor" xml:id="tfruehwirth">
+                  <forename>Timo</forename>
+                  <surname>Frühwirth</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-3997-5193</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technische Supervision</resp>
+               <persName key="https://d-nb.info/gnd/1043833846"
+                         role="hasContributor"
+                         xml:id="pandorfer">
+                  <forename>Peter</forename>
+                  <surname>Andorfer</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-9575-9372</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technisches Consulting und Vorbereitung der Druckausgabe</resp>
+               <persName key="https://d-nb.info/gnd/13281899X"
+                         role="hasContributor"
+                         xml:id="skurz">
+                  <forename>Stephan</forename>
+                  <surname>Kurz</surname>
+                  <affiliation key="https://d-nb.info/gnd/1202798799">Institut für die Erforschung der Habsburgermonarchie und des Balkanraumes</affiliation>
+                  <idno type="ORCID">0000-0003-2546-2570</idno>
+               </persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher key="https://d-nb.info/gnd/1001454-8">Österreichische Akademie der Wissenschaften</publisher>
+            <date when="2028"/>
+            <availability status="free">
+               <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">Lizenziert unter CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/deed.de)</licence>
+            </availability>
+            <idno type="ISBN_Print"/>
+            <idno type="ISBN_Part_epub"/>
+            <idno type="ISBN_Digital"/>
+            <idno type="DOI"/>
+            <idno type="DOI_zenodo"/>
+            <idno type="ebook_ID"/>
+         </publicationStmt>
+         <seriesStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="m" type="main">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <respStmt>
+               <resp>Bearbeitung und Herausgeberschaft</resp>
+               <orgName key="https://d-nb.info/gnd/2024703-5">Universität Wien</orgName>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+         </seriesStmt>
+         <notesStmt>
+            <note>Diese TEI-XML-Datei ist Grundlage für eine Druckausgabe der Edition.</note>
+            <relatedItem>
+               <biblStruct>
+                  <monogr>
+                     <imprint>
+                        <pubPlace key="https://d-nb.info/gnd/4066009-6">Wien</pubPlace>
+                        <publisher key="https://d-nb.info/gnd/2068748-5">Verlag der Österreichischen Akademie der Wissenschaften</publisher>
+                        <date when="2029"/>
+                     </imprint>
+                     <extent/>
+                  </monogr>
+                  <note>
+                     <idno/>
+                     <ptr/>
+                  </note>
+                  <citedRange/>
+               </biblStruct>
+            </relatedItem>
+         </notesStmt>
+         <sourceDesc>
+            <bibl>Quellbestand: AT-OeStA/AdR MRang MR 1Rep KRP Kabinettsratsprotokolle, 1918-1920 (Teilbestand)<ref target="https://www.archivinformationssystem.at/detail.aspx?id=5465">https://www.archivinformationssystem.at/detail.aspx?id=5465</ref>
+            </bibl>
+            <msDesc>
+               <msIdentifier>
+                  <institution key="https://d-nb.info/gnd/37748-X" role="hasOwner">AT-OeStA Österreichisches Staatsarchiv (Archiv (ÖStA))</institution>
+                  <repository key="https://d-nb.info/gnd/1601181-8">AT-OeStA/AdR Archiv der Republik, 1918- (Abteilung)</repository>
+                  <collection>AT-OeStA/AdR MRang MR 1Rep Ministerrat 1. Republik, 1918 - 1938 (Bestand)</collection>
+                  <idno>AT-OeStA_AdR-MRang-MR-1.-Rep.-KRP-110</idno>
+               </msIdentifier>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <abstract>
+            <p>
+          <!--to be generated-->
+        </p>
+         </abstract>
+      </profileDesc>
+      <encodingDesc>
+         <styleDefDecl scheme="css"/>
+         <tagsDecl>
+            <rendition xml:id="b" scheme="css">font-weight:bold;</rendition>
+            <rendition xml:id="su" scheme="css">vertical-align:super;font-size:.7em;</rendition>
+            <rendition xml:id="s" scheme="css">text-decoration:line-through;</rendition>
+            <rendition xml:id="u" scheme="css">text-decoration:underline;</rendition>
+            <rendition xml:id="ow" scheme="css">text-decoration:line-through;text-decoration-style:double;</rendition>
+            <rendition xml:id="r" scheme="css">display:block;text-align:right;</rendition>
+            <rendition xml:id="letterspaced" scheme="css">letter-spacing:0.15em;</rendition>
+            <rendition xml:id="i" scheme="css">font-style:italic;</rendition>
+         </tagsDecl>
+         <editorialDecl>
+            <hyphenation>
+               <p>
+            <!--to be added-->
+          </p>
+            </hyphenation>
+            <correction>
+               <p>
+            <!--to be added-->
+          </p>
+            </correction>
+            <normalization>
+               <p>
+            <!--to be added-->
+          </p>
+            </normalization>
+            <punctuation>
+               <p>
+            <!--to be added-->
+          </p>
+            </punctuation>
+            <stdVals>
+               <p>
+            <!--to be added-->
+          </p>
+            </stdVals>
+            <p>
+          <!--to be added-->
+        </p>
+         </editorialDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#tfruehwirth" when-iso="2026-10-07">TEIGarage output upconverted with upconvert.xsl</change>
+         <change who="#tfruehwirth" when-iso="2026-10-07">TEI header populated with generate_tei_templates.py</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface/>
+   </facsimile>
+   <text>
+      <body>
+         <div xml:id="doc-krp-0110.xml">
+            <head type="dokument">
+               <title type="num">110.<note type="footnote">Das Protokoll trägt den Vermerk <hi rend="#i">Vertraulich!</hi>
+                  </note>
+               </title>
+               <title type="desc">
+                  <pb facs="krp-0110_r-0001"/>[Montag] 1919-09-29</title>
+            </head>
+            <div type="dokumentkopf">
+               <div type="vorsitz">
+                  <head>Vorsitz:</head>
+                  <p>Renner</p>
+               </div>
+               <div type="anwesend">
+                  <head>Anwesend:</head>
+                  <p>Bauer, Bratusch, Eldersch, Ellenbogen, Glöckel, Hanusch, Loewenfeld-Russ, Miklas, Paul, Pflügl, Resch, Schumpeter, Stöckler, Tandler, Waiss, Zerdik</p>
+               </div>
+               <div type="zugezogen">
+                  <head>Zugezogen:</head>
+                  <p>Grimm, Schwarzwald, Seitz</p>
+               </div>
+               <div type="schriftfuehrer">
+                  <head>Schriftführer:</head>
+                  <p>unbekannt</p>
+               </div>
+               <div type="dauer">
+                  <head>Dauer:</head>
+                  <p>15.00–20.00 Uhr</p>
+               </div>
+            </div>
+            <div type="komponenten">
+               <p>Reinschrift, streng vertraulicher Anhang, Konzept, stenographische Mitschrift</p>
+            </div>
+            <div type="beilagen">
+               <head>Beilagen:</head>
+               <list>
+                  <item>-</item>
+               </list>
+            </div>
+            <div type="protokoll">
+               <pb facs="krp-0110_r-0002"/>
+               <div type="top" xml:id="krp-0110_top01">
+                  <head>
+                     <label>
+                        <num n="1">1.</num>
+                        <seg>Zuwendungen an die Staatsangestellten und Staatseisenbahnbediensteten.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Paul</hi> berichtet, dass er nach neuerlichen Verhandlungen mit den Staatseisenbahnbediensteten am 27. d. M. schließlich folgende Erklärung namens der Regierung abgegeben habe:</p>
+                  <p>„Am 1. Oktober und 1. Dezember d. J. erhalten alle Staatsangestellten (Staatsbahnbediensteten), die bisher im Genusse des Übergangsbeitrages standen, den einfachen Übergangsbeitrag und einen Zuschuss in der Höhe dieses Beitrages; derselbe Zuschuss wird am 15. Oktober und am 15. Dezember neuerlich flüssiggemacht.</p>
+                  <p>Am 1. November wird der einfache Übergangsbeitrag und der Anschaffungsbeitrag ausbezahlt. Jene Staatsangestellten (Staatsbahnbediensteten), bei welchen diese beiden Beträge die Höhe des im Oktober gezahlten Übergangsbeitrages und der beiden Zuschüsse nicht erreichen, erhalten die Ergänzung auf diese Summe.</p>
+                  <p>Zu Weihnachten dieses Jahres erhalten alle Staatsangestellten (Staatsbahnbediensteten) eine einmalige außerordentliche Geldzuwendung in der Höhe des einfachen Übergangsbeitrages.</p>
+                  <p>
+                     <pb facs="krp-0110_r-0003"/>Die Regierung kann die vorstehenden Zugeständnisse nur unter der Bedingung machen, dass die Staatsangestellten (Staatsbahnbediensteten) zur Kenntnis nehmen, dass die Regierung außer Stande ist, bis Ende des Jahres 1919 weitere Zuwendungen zuzugestehen, und daher die Organisationen von diesbezüglichen weiteren Forderungen in dieser Zeit Abstand nehmen.“</p>
+                  <p>Seitens der Südbahnangestellten sei bisher keine Gegenvorstellung erhoben worden.</p>
+                  <p>Der Kabinettsrat nimmt diese Mitteilungen zur Kenntnis und genehmigt die abgegebene Erklärung.</p>
+                  <p>Weiters teilt Staatssekretär Paul mit, dass der Zentralausschuss noch nachstehende Beschlüsse gefasst habe:</p>
+                  <p>„Der Zentralausschuss beauftragt den ständigen Arbeitsausschuss einvernehmlich mit den gewählten Personalvertretern der Provinz und den Organisationen für die Wiener Bediensteten mit Rücksicht auf die besonders <pb facs="krp-0110_r-0004"/>schwierigen örtlichen Verhältnisse daselbst, die Erwirkung eines Zuschusses für diese anzubahnen.</p>
+                  <p>Desgleichen beauftragt der Zentralausschuss den Ständigen Arbeitsausschuss sich zwecks unentgeltlicher Zuwendung von Kleidern und Schuhen an alle Bediensteten mit den berufenen staatlichen Stellen ins Benehmen zu setzen und dem Zentralausschuss nach Abschluss dieser Beratungen Bericht zu erstatten.</p>
+                  <p>Die Lage der Pensionisten zwingt den Zentralausschuss von der Regierung Vorsorgen zu verlangen, welche einerseits eine Aufbesserung der Bezüge aller Pensionisten als auch insbesondere die Gleichstellung der Ruhebezüge der sogenannten Altpensionisten mit den jetzt in den Ruhestand zu versetzenden Bediensteten herbeizuführen.</p>
+                  <p>Schließlich fordert der Zentralausschuss die Regierung auf, mit allem Nachdruck und mit größter Beschleunigung die vom Zentralausschuss gefassten Beschlüsse bezüglich Aufnahme einer Valutaanleihe zur Beschaffung von Lebensmitteln für die Staatsangestellten und behufs Preisabbaues zur Durchführung zu bringen.“</p>
+                  <p>
+                     <pb facs="krp-0110_r-0005"/>Der sprechende Staatssekretär habe diese Beschlüsse vorläufig zur Kenntnis genommen.</p>
+               </div>
+               <div type="top" xml:id="krp-0110_top02">
+                  <head>
+                     <label>
+                        <num n="2">2.</num>
+                        <seg>Verwertung der Kunstschätze.</seg>
+                     </label>
+                  </head>
+                  <p>Nach einem eingehenden Berichte des <hi rend="#letterspaced">Vorsitzenden</hi> über seine Verhandlungen wegen Bestellung eines Bevollmächtigten zur Durchführung der Aktion wegen Verkaufes der Kunstschätze beschließt der Kabinettsrat über Anregung des Staatssekretärs Dr. <hi rend="#letterspaced">Bauer</hi>, den Sektionschef im Staatsamte für Verkehrswesen, Ing. Enderes, mit dieser Funktion zu betrauen und ihm einen Beirat beizugeben, welcher aus nachbenannten Persönlichkeiten zu bestehen hätte.</p>
+                  <list>
+                     <item n="1">
+                        <label>1.)</label> für die Museen und Sammlungen:</item>
+                  </list>
+                  <p>Direktor Dr. Glück (Hofmuseum), Direktor Dr. Haberditzl</p>
+                  <p>(Staatsgalerie),</p>
+                  <p>Direktor Dr. Leisching (Museum für Kunst und Industrie);</p>
+                  <list>
+                     <item n="1">
+                        <label>2.)</label> für das Staatsamt für Unterricht: Dr. Tietze,</item>
+                     <item n="2">
+                        <label>3.)</label> für den Stadterweiterungsfonds: Sektionschef Dr. Alexy,</item>
+                     <item n="3">
+                        <label>4.)</label> für das Gewerbeförderungsamt Hofrat Vetter.<pb facs="krp-0110_r-0006"/>
+                     </item>
+                     <item n="4">
+                        <label>5.)</label> für das Staatsdenkmalamt, Regierungsrat Dr. Schubert, </item>
+                     <item n="5">
+                        <label>6.)</label> für die hofärarischen Besitztümer Sektionschef Dr. Beck,</item>
+                     <item n="6">
+                        <label>7.)</label> für die hoffideikommissarischen Güter: Dr. Harpner und</item>
+                     <item n="7">
+                        <label>8.)</label> als Vertreter der privaten Kunstsammler: Stephan Auspitz.</item>
+                  </list>
+                  <p>Die von einer Seite in Vorschlag gebrachten Vertreter der Kunsthändler, Sartori und Maler Moll, kämen nicht als Mitglieder des Beirates, sondern allenfalls als Experten in Betracht.</p>
+                  <p>Der Kabinettsrat beschließt weiters über Antrag des Staatssekretärs Dr. <hi rend="#letterspaced">Schumpeter</hi>, dass die finanzielle Kontrolle der Aktion vom Staatsamte für Finanzen zu erfolgen haben wird.</p>
+               </div>
+               <div type="top" xml:id="krp-0110_top03">
+                  <head>
+                     <label>
+                        <num n="3">3.</num>
+                        <seg>Finanzplan.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. Schumpeter erstattet einen ausführlichen Bericht über die staatsfinanziellen Fragen. Die Niederschrift dieses Berichtes erliegt in einem <pb facs="krp-0110_r-0007"/>streng vertraulichen Anhang zu diesem Protokolle in der Staatskanzlei.</p>
+                  <p/>
+               </div>
+            </div>
+            <div type="anhaenge">
+               <p>
+                  <pb facs="krp-0110_a01-0001"/>Streng vertraulicher Anhang zu Kabinettsratsprotokoll Nr. 110 vom 29. September 1919.</p>
+               <div n="1">
+                  <head>Finanzplan</head>
+                  <div type="a01_protokoll">
+                     <p>
+                        <hi rend="#letterspaced">Schumpeter</hi>:</p>
+                     <p>Bisher ist es nicht möglich gewesen, den Finanzplan vorzubringen, weil die Friedensbedingungen nicht bekannt waren. Auch jetzt überblicken wir noch nicht vollständig den Umfang unserer Leistungsverpflichtungen und müssen daher noch immer mit einer Reihe von Unbekannten rechnen.</p>
+                     <p>Über die Finanzlage habe ich wenig zu sagen, sie ist nicht weniger ernst als alle glaubten. In den Kreisen der Fachleute hat sich eine sehr pessimistische Stimmung bemerkbar gemacht und ich kenne niemand, der sie nicht teilen würde. Sie geht darauf hinaus, dass die Lage hoffnungslos sei. Charakterisiert wird sie durch den Stand des Budgets mit dem Abgang von 6 Milliarden [K], nämlich 4 Milliarden [K] Defizit des vorgelegten Budgets, der Rest Überschreitungen bis Ende des Jahres.</p>
+                     <p>Noch schlimmer ist die Kreditunfähigkeit im Inneren und nach außen. Die Krone sinkt ins Uferlose und zu allen anderen Störungen des Produktionsprozesses macht sich nun eine neue bemerkbar, die Zusammenbruchsstimmung, die bewirkt, dass die Leute ihre Vorräte überhaupt nicht mehr abverkaufen wollen. Dazu kommt die Unmöglichkeit des Importes infolge Versagens des Rembours, was sich am sinnfälligsten in der budgetären Seite des Lebensmittelgeschäftes zeigt: Das Defizit bei Brot allein macht monatlich 300 Millionen K aus. Wir sind infolgedessen außerstande, Lebensmittel zu beziehen und sind augenblicklich darauf angewiesen, zur Finanzierung der Lebensmittelgeschäfte zum Verkauf der Kunstschätze zu schreiten.</p>
+                     <p>Gewinne sind in der Volkswirtschaft vereinzelt noch vorhanden, aber sie haben aufgehört, produktionsstimulie<pb facs="krp-0110_a01-0002"/>rend zu sein und beschränken sich auf Schiebergewinne. Es ist kaum übertrieben, von einer völligen Déroute zu sprechen, welche die Existenz des Staates bedroht und erst dem Radikalismus, dann der Reaktion die Zügel in die Hand geben muss.</p>
+                     <p>Wir müssen immer wieder zur Notenpresse greifen und verfallen dadurch einer steigenden Demoralisation.</p>
+                     <p>In dieser Lage haben sich immer mehr Leute, auch sehr ernste gefragt, ob ein Bankerott vermeidbar ist. Wir müssen uns zunächst klar werden, was Bankerott ist. Man kann darunter verstehen, dass infolge des gesunkenen Wertes der Krone man für das Geld weniger Ware bekommt als früher. Das ist aber eine übertragene Bedeutung, welche ich nicht anerkenne, denn dann hätte auch England Bankerott gemacht. Ich verstehe darunter eine Repudiierung der Staatsschulden, eine Verweigerung der Zahlungsverpflichtungen des Staates. Der Eintritt einer solchen ist viel ernster als man allgemein glaubt. Es auf einen Bankerott ankommen zu lassen, war früher möglich, wo eine agrarische Gemeinschaft im Wesentlichen außerhalb der kapitalistischen Wirtschaftsform lebte, wo der Bauer von den Vorgängen in der Stadt nicht betroffen wurde und nur einige Schuldtitres der Vernichtung anheimfielen. Heute würde davon das gesamte Wirtschaftsleben getroffen, die Bankinstitute, die öffentlichen Körperschaften, alle Unternehmungen, die Wohlfahrtsanstalten, wie jeder Einzelne. Ein Bankerott, der uns kreditunfähig macht, gestaltet die Lage des Volkes hoffnungslos. Nicht nur, dass er zahlreiche Existenzen mit sich reißt, er müsste auch das Auseinanderbrechen des Staates zur Folge haben, weil die einzelnen Teile immer nicht hoffen könnten, sich durch Absonderung den Wirkungen des Bankerottes zu entziehen.</p>
+                     <p>
+                        <pb facs="krp-0110_a01-0003"/>Aber selbst der Bankerott hilft uns nicht. Viele denken dabei einfach an eine Zinsenreduktion oder Zinseneinstellung. Aber eine Entlastung um diese Beträge macht bei unserem Budget wenig aus. Wir könnten trotz ihres Wegfalles den Rest unserer Auslagen, die Aufwendungen für die Beamten und die sozialen Aufgaben nicht aufbringen. Sind wir aber zu diesen Leistungen im Stande, können wir die Zinsen auch noch zahlen. Wenn der Bankerott also keine Rettung ist, so ergibt sich die Frage, ob er notwendig ist. Ich verneine dies und wünsche meine Ausführungen unter diesem Gesichtspunkte aufgefasst. Dasjenige, was den Staatsgläubigern noch von der Geldentwertung, die einer 90%igen Vermögensabgabe gleichkommt, gelassen wurde, muss unverletzlich sein.</p>
+                     <p>Entsprechend den beiden großen Problemen der staatlichen Finanzwirtschaft möchte ich das Thema in zwei Teilen behandeln. Der erste Teil betrifft die definitive Gesundung der Staatsfinanzen, also das Budget in etwa vier Jahren. Die Fähigkeit, diesem Budget gerecht zu werden, schließt in sich die Antwort auf die Frage, ob wir überhaupt eine Lebensmöglichkeit besitzen. Das andere Problem ist die Errichtung der Finanzwirtschaft in den Jahren bis dahin, also den nächsten vier Jahren der Krise und Not. Zunächst aber muss das erste Problem gelöst werden, denn gelingt uns das nicht, so nützt es auch nichts, über die ersten Jahre hinwegzukommen. Die Aussicht auf geordnete Zustände ist die Voraussetzung für unsere Kreditfähigkeit, wir müssen sie nach außen hin zeigen und dazu schon alle Gesichtspunkte für die Sanierung des Budgets in vier Jahren aufstellen.</p>
+                     <p>Ganz unmöglich ist es, das Problem in der Weise zu <pb facs="krp-0110_a01-0004"/>lösen, dass man den Geldwert auf die frühere Höhe bringt oder ihr auch nur einigermaßen nahetritt, ja dass wir überhaupt je einen wesentlich höheren Kursstand als 10 c erreichen. Ausgeschlossen ist auch der Versuch einer Gesundung des Währungssystems durch Herabdrücken der Ausgaben oder durch eine scharfe Banknoteneinziehung, wie diese der Misserfolg der Rašin‘schen Finanzpolitik beweist. </p>
+                     <list>
+                        <item n="1">
+                           <label>1.)</label> Wenn wir den Geldwert heben wollten, so würden die Staatsschulden in ihrer realen Bedeutung viel schwerer werden. Wir würden den Vorteil verlieren, eine Ablastung der Staatsschulden auf den Rentner zu bewirken und die Schuldenlast dadurch tragbar zu gestalten, dass sie sich in ihrem inneren Werte so verringert hat. Diese Abwälzung auf den Rentner ist der natürliche Vorgang bei den Erschütterungen aller Zeiten, den Anteil des Arbeiters gegenüber jenem des Rentners zu regeln, ist eine Frage der Politik. </item>
+                        <item n="2">
+                           <label>2.)</label> Wenn wir den Geldwert heben wollten, so müssten wir die Löhne abbauen. Bei der Disziplin unserer Arbeiterschaft wäre ein solcher Abbau wohl möglich, er würde aber eine Periode des Kampfes kosten, und die zu vermeiden, erscheint ein großer Vorteil. </item>
+                        <item n="3">
+                           <label>3.)</label> Eine Hebung des Geldwertes wäre ein Gewinn für die Rentner durch Anwachsen ihrer Vermögen über den Betrag der ursprünglichen Aufwendung. </item>
+                        <item n="4">
+                           <label>4.)</label> Ein besonderer Grund aber liegt darin, dass eine Hebung des Geldwertes nur sehr allmählich vor sich gehen kann und eine langdauernde Periode der Depression bedeutet, welche den Erholungsprozess verzögert. So unerschütterlich das Hauptprinzip der Politik sein muss, nicht eine einzige Note mehr zu drucken, so sicher ist, dass wir uns an einem Versuche der Hebung des Geldwertes verbluten würden.</item>
+                     </list>
+                     <p>
+                        <pb facs="krp-0110_a01-0005"/>Ist aber auf diese Art eine Abhilfe nicht möglich, so bleibt der Weg der Ablastung und Abbürdung der Staatsschulden gangbar, bei Erhaltung des Geldeinkommens für den Arbeiter und Beschränkung und Ausschaltung des Rentners so weit als möglich.</p>
+                     <p>Dieser Grundgedanke führt zur Hebung der Staatseinkünfte auf die durch die Geldentwertung gegebene Höhe. Es dürfen keine Noten gedruckt werden, die vorhandenen Noten aber, denen sich die Volkswirtschaft allmählich angepasst hat, müssen ruhig in Zirkulation bleiben. Wir haben mit einem Geldwert von einem Zehntel des Friedenswertes zu rechnen. Kurse unter 10 c ebenso wie Preise über dem Zehnfachen des Friedenspreises sind auf die Dauer unwahrscheinlich. Ein Abweichen davon könnte nur vorübergehend sein, verursacht durch Warenmangel oder markttechnische Vorgänge, denen sich durch Maßnahmen mit ausländischer Valuta entgegenarbeiten ließe.</p>
+                     <p>Wir müssen uns die Volkswirtschaft vorstellen auf einem Preisniveau, das zehnmal so hoch ist wie vor dem Kriege, zehnmal so hoch als der Weltmarktpreis. An sich wäre eine solche Verzehnfachung gleichgültig, wenn sich alle Einkommen auf das Zehnfache erhöht hätten. </p>
+                     <list>
+                        <item n="1">
+                           <label>1.) a)</label> Diese Erhöhung kann eintreten bei allen Arbeitern. Unsere Hauptsorge muss sein, sie ungehindert geschehen zu lassen, und der Staat muss eventuell die Initiative ergreifen, um eine Lohnerhöhung auf dieses Maß durchzusetzen. Eine solche ist möglich, weil die Erlöse für die Produktion dem groben Durchschnitte nach auf das Zehnfache gestiegen sein werden, also auch hohe Löhne bezahlt werden können. Der Staat muss eingreifen, weil die Löhne den Preisen mitunter nicht <pb facs="krp-0110_a01-0006"/>folgen, und der Arbeiterklasse ein Unrecht zugefügt werden könnte, wie in der ersten Zeit des Krieges. Die Lohnerhöhung wird aber auch bei der nichtorganisierten Arbeiterschaft, besonders bei den landwirtschaftlichen Arbeitern möglich sein, weil auch die Landwirtschaft durch die künftige Finanzpolitik saniert und wieder aktiv wird.</item>
+                        <item n="2">
+                           <label>1.) b)</label> Für den Staat kommt in Betracht, dass auch die Gehalte seiner Angestellten erhöht werden müssen. Ohne die Demagogie, die so oft auf die oberen Schichten vergisst, ist bei allen Gehältern, auch den höchsten, eine Steigerung auf ungefähr das Zehnfache nötig. Die Summe dafür muss ins Budget eingesetzt werden. Ich habe dafür außer dem gegenwärtigen Aufwand einen Mehrbetrag von 2 ½ Milliarden [K] in Aussicht genommen. </item>
+                     </list>
+                     <p>Die pragmatisierten Staatsangestellten auf dem Gebiete von Deutschösterreich erhalten jetzt schätzungsweise 750 Millionen K, d. i. das Dreifache des Friedensbetrages. Dieser Betrag musste nun noch verdreifacht werden, so dass sich ein Erfordernis von 2.280 M[illiarden] [K] ergibt. Dazu kommen noch die Eisenbahnangestellten und die Staatsarbeiter. Die Bezüge nach dem Stande vor den jüngst bewilligten Zulagen, also etwa vom letzten August, wären noch zu verdreifachen. Die Erfordernisziffern sind gegeben unter der Voraussetzung, dass gar kein Abbau erfolgt. Gegenüber dem Staatsvoranschlag resultiert also ein Mehraufwand von 2,5 Milliarden [K]. </p>
+                     <p>
+                        <pb facs="krp-0110_a01-0007"/>Gegenwärtig handelt es sich nur um eine Lohnsteigerung. Die Löhne würden erst sinken mit dem Sinken der Preise der rationierten Lebensmittel. Ein solches ist vorläufig nicht anzunehmen; aber wenn die Lebensmittel auf die Weltparität gestiegen sein werden, werden sie wieder fallen. Aber auch dann ist ein Sinken der Löhne noch nicht gerechtfertigt, denn es handelt sich nicht um eine Anpassung der Löhne an Konjunkturschwankungen, sondern um eine einmalige Anpassung eines desorganisierten Geldwertes an eine neue Situation. Dieser Prozess der Steigerung der Staatsangestelltengehalte und der Arbeiterlöhne kann nur allmählich geschehen, im Laufe der nächsten drei Jahre. Früher werden die Mittel dafür nicht da sein und in der verarmten Volkswirtschaft würden vorzeitige Steigerungen nur zu Preiserhöhungen führen, aber keinen Güterzuwachs bedeuten. Die Einkommenssteigerung muss erfolgen mit der Zunahme der Produktion und des Importes. Gewöhnlich werden höhere Löhne in Zeiten der Not gefordert, gegeben sollten sie aber werden in der Zeit, wo die Preise sinken. Die höheren Löhne sollen dann auf den Platz treten, wenn man sich mehr Ware dafür kaufen kann, damit sie keine Noteninflation bewirken, sondern durch die Möglichkeit, sich größere Warenmengen dafür zu kaufen, wieder aufgesogen werden.</p>
+                     <list>
+                        <item n="1">
+                           <label>2.)</label> Bei den selbständig Erwerbstätigen erfolgt die Steigerung des Einkommens von selbst durch die Steigerung der Preise, die ruhig gestattet werden kann. Die Bekämpfung der Preissteigerung hatte solange einen Sinn, als wir vom Ausland abgeschnitten waren und hoffen konnten, zum Friedensgeldwert zurückzukommen. Fassen wir aber den <pb facs="krp-0110_a01-0008"/>Entschluss, die gegebene Lage anzunehmen, so müssen wir die Preise steigen lassen.</item>
+                     </list>
+                     <p>Diese Möglichkeit, sich zu regressieren aus den steigenden Preisen, gilt für die kleinen Unternehmer, deren Produktion auch sonst geholfen werden kann. Für die großen Betriebe mit ihren Valutaschulden und den Aufwendungen sozialpolitischer Art ist diese Möglichkeit des Regresses weit weniger gegeben. Sie werden längere Zeit ertraglos bleiben, das macht aber nichts, denn eine kreditfähige Unternehmung kann eine solche Krise wohl überstehen. Der Betrieb soll nur so viel abwerfen, dass die leitenden Personen gut bezahlt werden können, weitere Überschüsse braucht die Unternehmung nicht zu erzielen.</p>
+                     <p>Das Gesagte muss sich in vollem Umfang auch auf die Landwirtschaft beziehen. Sie soll durch ein Steigen der Vieh- und Getreidepreise trotz der höheren Löhne aktiv gemacht werden, denn jetzt arbeitet sie mit einem Betriebsdefizit. Auch hier muss die Entwicklung ganz allmählich vor sich gehen.</p>
+                     <p>3.)	Keine Hilfe gibt es für den Rentner. Von ihm wird eine Vermögensabgabe im Ausmaße von 90 % verlangt, er muss ganz für die Kriegsschulden aufkommen. Ebenso steht es mit dem Eigentümer schon vorhandener Häuser. Er kann eine Steigerung der Mietzinse nur soweit zugestanden bekommen, als sie durch Reparaturkosten begründet ist. Bei neuen Häusern müssen die Zinsen höher sein, um die höheren Baukosten zu decken. Dieses Opfer der Rentner ist eine harte soziale und wirtschaftliche Notwendigkeit, es ist in Österreich aber noch eher zu ertragen, weil wir kein eigentliches Rentnerland sind. Hier werden vielfach die Wohltätigkeitsanstalten Hilfe bringen müssen.</p>
+                     <p>
+                        <pb facs="krp-0110_a01-0009"/>Verwandt dem Rentner ist der Aktionär, jedoch mit dem Unterschied, dass seine Dividenden wieder steigen werden. Aber so schnell wir andere Einkommen sollen sich die Dividendeneinkommen nicht erhöhen und es ist angemessen, einer Zeit der Dividendenlosigkeit entgegenzusehen.</p>
+                     <p>Ausgehend von dem vorlegten Budget soll nun das Erfordernis des Budgets in vier Jahren dargestellt werden. Das vorgelegte Budget hat 2 ½ Milliarden [K] Einnahmen und 6 ½ Milliarden [K] Ausgaben. Das Mehrerfordernis setzt sich zusammen aus 1.) dem Defizit vor Überreichung der Friedensbedingungen von 4 Milliarden [K], 2.) den Überschreitungen ohne die Gehaltserhöhungen von 1 ½ Milliarden [K], 3.) dem Mehrerfordernis an Gehalten für die Staatsangestellten von 3 ½ Milliarden [K], von denen ein kleiner Teil bereits durch die letzten Zugeständnisse in Anspruch genommen wurde 4.) und schließlich der Steigerung der Zinsenlast durch den Friedensvertrag über das im Budget vorgesehene Ausmaß von 1,7 Milliarden [K] samt der Verzinsung des dreijährigen Defizits zu 7 % mit 1,4 Milliarden [K], zusammen also 11,1 Milliarden [K]. Hievon kommen in Abfall die Zinsenersparnisse infolge der Vermögensabgabe der 0,8 Milliarden [K] und die Ausgaben für die Lebensmittelzuschüsse von 2,3 Milliarden [K]. Insgesamt bleibt also ein Mehrerfordernis von 8 Milliarden [K] bei einem Budget von 10 Milliarden [K] zu decken.</p>
+                     <list>
+                        <item n="1">
+                           <label>Ad 2.)</label> Die Überschreitungen, abgesehen von den Gehaltserhöhungen, erklären sich aus den Posten für Wohlfahrtszwecke und Materialbeschaffungen.</item>
+                        <item n="2">
+                           <label>Ad 3.)</label> Die Beamtengehalte müssen verzehnfacht werden. Der Geldaufwand inklusive der Teuerungs-, Funktions- und Aktivitätszulagen, der Teuerungs-, Anschaffungs- und Übergangsbeiträge, jedoch ohne effektive Naturalbezüge, stellt sich auf 810 Millionen K. Hievon entfallen auf den Beamten- und Dienerstand der in Deutschösterreich ver<pb facs="krp-0110_a01-0010"/>bliebenen Behörden 760 Millionen [K]. Vor dem Kriege betrug der Aufwand für sie 260 Millionen. Diese Auslagen haben sich verdreifacht und sind nun nochmals zu verdreifachen. Es muss ein wesentlicher Prüfstein für jeden Finanzplan sein, ob er diese Summen leisten kann, nicht nur aus moralischen Gründen, sondern weil der Staat sonst zusammenbricht. </item>
+                        <item n="3">
+                           <label>Ad 4.)</label>  Steigerung der Zinsenlasten durch den Krieg. Im Defizit des Budgets von 4 Milliarden [K] war eine Zinsenlast für Altösterreich von 3,4 Milliarden [K] angenommen. Davon entfielen auf Deutschösterreich 0,758 Milliarden [K]. Dazu kommen folgende Posten:</item>
+                     </list>
+                     <p>a)	Kriegsanleihe von 35 Milliarden [K], d. s. 60 % der gesamten Kriegsschulden, mithin 36 % mehr als 24, also gegen 700 [Millionen K].</p>
+                     <p>b)	Die nichttitulierten Schulden, die uns zu 100 % angelastet wurden, also 531 Millionen [K].</p>
+                     <p>c)	3 Milliarden [K] Auslandsbanknoten, davon 2 Milliarden [K] unser Anteil, mithin 110 Millionen [K] mehr.</p>
+                     <p>d)	Die 10 Milliarden [K] Banknoten, die nach dem 27. Oktober ausgegeben wurden, gleichgiltig ob sie sich im In- oder Ausland befinden, mithin 350 Millionen K mehr.</p>
+                     <p>Wir haben aufzukommen für die Noten im Inland, was keine Zinsen erfordert, dann für die Noten im Altausland und alle nach dem 27. Oktober ausgegebenen Noten, das sind 14 Milliarden [K], aber ich rechne nur 10 Milliarden [K]. In diesen 10 Milliarden [K] steckt eine große Reserve, denn auf uns entfällt davon nur das Redlich‘sche Anlehen und jene Noten, für welche keine Pfänder hinterlegt wurden. Die Zugehörigkeit der Noten mit Pfändern richtet sich nach der Zugehörigkeit der Pfänder.</p>
+                     <p>Keiner Erklärung bedarf es, dass wir in den nächsten drei Jahren 20 Milliarden [K] Defizit haben werden, die mit 7 % <pb facs="krp-0110_a01-0011"/>zu verzinsen sein werden, da bis dahin bei uns und im Ausland der Zinsfuß auf diese Höhe gestiegen sein wird.</p>
+                     <p>Bedeckung des 10 Milliarden-Budgets.</p>
+                     <p>Wenn man sich darüber klar ist, dass auf eine Verbilligung nicht in einem weiteren Umfang gerechnet werden kann, als die Teuerung auf Warenmangel und nicht auf die Ausgabe neuer Noten zurückzuführen ist, wenn man also die ganze Wirtschaft und Sozialpolitik auf die jetzigen Preise eingestellt und demnach die linke Seite des Budgets darnach eingerichtet hat, so muss dem auch die Bedarfsseite des Budgets darnach angepasst werden. Man muss die Bedeckung unter dem Gesichtspunkte der Hebung der Staatseinnahmen auf die dem gesunkenen Geldwert entsprechende Höhe bemessen. Eine automatische Steigerung der Staatseinnahmen durch die Geldentwertung geschieht nur sehr unvollkommen und nur bei einzelnen Einnahmequellen. Bei der Einkommenssteuer entziehen sich viele Einkommenszuwächse der Erfassung. Aber auch bei jenen Steuern, bei denen eine automatische Steigerung angenommen werden könnte, darf sie nicht ohne weiters in Rechnung gestellt werden. Wir können oft, so bei der Aktienbesteuerung, nicht die Entwicklung voraussehen, die die einzelnen Gesellschaften nehmen werden, und wissen auch nicht, welche Gesellschaften abwandern. Wir können uns also diese automatischen Steigerungen höchstens als Reserven vorbehalten.</p>
+                     <p>Die Steigerung der Einnahmen des Staates muss also durch eine Erhöhung der Sätze herbeigeführt werden. Es wäre aber nichts verfehlter, als gedankenlos Zuschläge zu den Steuern zu machen. Es könnte vieles erhöht werden, was ich nicht erhöhe, so die Grundsteuer. Die Reform der Grund<pb facs="krp-0110_a01-0012"/>steuer wird notwendig sein, aber sie darf nicht zusammenfallen mit der Vermögensabgabe. Zur Reform der Grundsteuer sind mehr die Länder berufen, denen die Grundsteuer im Sinne des Programmes der Finanzierung der Länder nach Myquel‘schem Muster zu überweisen sein wird.</p>
+                     <p>Ich ziehe daher von den direkten Steuern nur zwei zur Erhöhung in Betracht, nämlich die Einkommenssteuer und die Erbschaftsgebühren. Die Einkommenssteuer betrug im Jahre 1916 ohne Kriegszuschläge für Deutschösterreich 133 Millionen [K] und würde nach den heutigen Steuersätzen, berechnet nach dem Material von 1916, 302 Millionen [K] tragen. Die Wirkung der Geldentwertung gegenüber dem Jahre 1916 schätze ich für die Dauer höher ein, aber veranschlage sie nur mit 250 %. 1915 war allerdings ein Jahr sehr guter Konjunktur, das Jahr der eigentlichen Kriegsgewinne. Die damaligen Einkommen in ihrer realen Bedeutung werden nicht so bald wieder erzielt werden. Aber dem Betrage nach werden sich solche Geldeinkommen bei dem gesunkenen Geldwert wieder herausstellen, obwohl die Einkommensteuer für das laufende Jahr nur mit 170 Millionen [K] veranschlagt ist. Nächstes Jahr wird es nicht besser sein, aber dann wird es in der gesunkenen Valuta hinaufgehen. Rechnet man 250 %, so ergibt sich eine Steigerung von 0,65 Milliarden [K]. Ich nehme an, dass Einkommen aus Gebäuden nicht steigen, jene aus selbständigen Unternehmungen und Grundbesitz auf das Dreifache, die Diensteinkommen gegenüber 1916 auf das Vierfache, das Kapitaleinkommen und sonstige Einkommen, d. i. jenes aus gewissen Rentenkapitalien, ist einer Steigerung nicht fähig. Daraus ergibt sich eine erhebliche Steigerung auf 283,81 Millionen [K]. Davon sind abzuziehen 12,5 % aus verschiedenen Gründen, besonders deshalb, weil das Existenzminimum auf 10.000 K herabgesetzt werden soll, herabgesetzt infolge Sinkens des Geldwertes gegenüber <pb facs="krp-0110_a01-0013"/>dem Zustand vor dem Kriege. Nun rechne ich mit 650 Millionen [K] mehr aus der Einkommensteuer, sogar mit diesem Abschlag und ohne Erhöhungen. Aber es wird eine starke Progression notwendig sein. Eine solche ist mir lieber als eine Erneuerung der Kriegsgewinnsteuer. Ferner werden größere Intervalle gemacht werden müssen zwischen den einzelnen Stufen und dann ist ein Mehrertrag zu erhoffen durch das objektive Verfahren. Eine weitere Reform wird notwendig sein zur Berücksichtigung der Fundierung der einzelnen Einkommen. Aber alle diese Punkte stehen jetzt noch nicht in Diskussion, sondern sind als Reserven aufzuheben.</p>
+                     <p>Erbgebühren.</p>
+                     <p>Nach der Ansicht des Departements ist aus den Erbgebühren nach ihrer Erhöhung im Februar nichts mehr herauszuholen, aber ich teile diese Meinung nicht. Es ist richtig, dass wir im Falle der lachenden Erben mit unseren Zuschlägen die Höhe in Deutschland erreichen. Aber die Differenz liegt in jenen Gruppen der Erbfälle, die drei Viertel ihrer Gesamtzahl ausmachen, nämlich der Kinder, Deszendenten und Ehegatten. Da erreichen wir erst bei 20 Millionen K 60 [%], während in Berlin schon bei 1 Millionen Mark 20 % erreicht werden. Die Ansätze der deutschen Erbschaftssteuer würde ich im großen Ganzen annehmen. Das Februarsteuergesetz muss neu bearbeitet und in den Sätzen verdoppelt werden, aber ohne Verdoppelung der autonomen Zuschläge. Daraus ergebe sich ein Mehrertrag von 37 ½ Millionen [K]. Aber bei den Erbschaftsgebühren hat sich noch gar nicht die Geldentwertung durchgesetzt, da der Inventarisierung noch nicht die schwankenden Werte zugrunde gelegt werden konnten. Und so ist es eine sehr konservative Schätzung, wenn man 37,5 Millionen [K] Mehrertrag erwartet. Unter Berücksichtigung der Geldentwertung verspreche ich mir einen Mehrertrag von 100 Millionen [K]. Die Frage des Pflichtteilrechtes des Staates ist eine wichtige taktische Frage, finanziell ist sie deshalb aber <pb facs="krp-0110_a01-0014"/>bedeutungslos, weil sich das Erträgnis, das das Pflichtteilsrecht des Staates ergeben soll, auch auf andere Weise herausholen lässt.</p>
+                     <p>Gebühren.</p>
+                     <p>Aus den Gebühren werden 100 Millionen  [K]mehr erwartet. Dies hätte aber zur Voraussetzung, dass man sich entschließt, die Rechtsgiltigkeit von Rechtsgeschäften von ihrer Vergebührung abhängig zu machen. Der Stempelverschleiß ist mit 19,3 Millionen K veranschlagt, die Rechtsgebühren, die nicht unter die 23 Rubriken des Taxgesetzes fallen, mit 2,6 Millionen [K], zusammen 22 Millionen [K]. Dabei handelt es sich nur um jene Rechtsgeschäfte, die nicht wie etwa Versicherungen unter besonderer Kontrolle stehen. Nach der Erfahrung werden von allen gebührenpflichtigen Rechtsgeschäften höchstens ein Zehntel vergebührt, der Rest wird in Form von kaufmännischer Korrespondenz, einfacher Offerte, Protokolle u. dgl. so abgeschlossen, dass dadurch der Zweck schriftlicher Vereinbarung vollkommen erreicht wird, eine Gebührenpflicht aber nicht eintritt. Würde nun jedes Geschäft, in dem die Zahlung von Geld verbindlich versprochen wird, der Gebührenpflicht unterworfen, und seine Rechtsgiltigkeit von der Vergebührung abhängig gemacht, so könnte man ein Erträgnis von 100 Millionen [K] annehmen. Außerdem soll der Fakturenstempel auf ½ % erhöht werden. Das Wichtigste ist, dass die Handelskorrespondenz, soweit darin ein rechtsgiltiger Abschluss enthalten ist, der Gebührenfreiheit beraubt wird.</p>
+                     <p>Indirekte Steuern.</p>
+                     <p>Kein einsichtiger und verständiger Mann kann glauben, dass wir ohne Erhöhung der indirekten Steuern auskommen können. Einleitend ist zu betonen, dass die indirekte Besteuerung hart, aber nicht ungerecht ist. Denn abgesehen davon, dass in Österreich die Erfassung auch höherer Einkommen nur auf indirektem Wege oder durch Aufwandsteuern <pb facs="krp-0110_a01-0015"/>möglich ist, weil nicht ehrlich fatiert wird und niemand ehrlich einbekannt werden wird, besteht die Tatsache, dass alle Staaten bis auf Deutschland im Kriege die indirekten Steuern erhöht haben. Bei uns ist das aus Mangel an moralischem Mut nicht geschehen und den moralischen Mut, den der Absolutismus nicht besaß, muss nun die Republik aufbringen. Die indirekten Steuern sind nicht so drückend, wenn man sie auf den realen Geldwert reduziert. Im Allgemeinen hat jede Erhöhung indirekter Steuern einen Konsumrückgang zur Folge. Die vorzuschlagenden indirekten Steuern sollen diese Wirkung nicht haben, so weit sie innerhalb der Grenze der Geldentwertung bleiben, also nur im gleichen Schritt mit der Geldentwertung erhöht werden. Ob die Auflagen in der Form einer indirekten Steuer oder als Monopol eingehoben werden sollen, ist gleichgiltig. Gegen das Monopol spricht die Schonungsbedürftigkeit unseres Handels und die Erwägung, dass die fiskalische Ausnützung eines Monopols, wie sie in der Natur der Sache liegt, den Staat mit einem Odium belastet, das auch noch jene sozialen Zwecke trifft, denen das Erträgnis zugeführt werden soll. Technisch wäre ein Monopol möglich bei Zucker. Ebenso bei Branntwein. Bei Wein wäre das Monopol wegen der Spezialisierung schwierig und ganz unmöglich ist es bei Bier wegen der damit verbunden Kreditgewährung an die Wirte. Alle diese Steuern und Steuererhöhungen hätten in vier Jahren einzusetzen, also in der Zeit, wo der Konsum wieder gestiegen sein wird. Jetzt ist ihre Frage noch nicht aktuell, sie muss aber trotzdem schon angegangen werden.</p>
+                     <p>Die Grundprinzipien für die neuen Steuern hätten zu sein:</p>
+                     <list>
+                        <item n="1">
+                           <label>1.)</label> Die Sukzessivität. Würde man gleich mit der vollen Höhe einsetzen, so würde man den Konsum abgewöhnen. Die Belastung darf nur allmählich eintreten, aber man muss der Bevölkerung sagen, wie hoch gegangen werden soll, schon um <pb facs="krp-0110_a01-0016"/>nicht das Vertrauen in die Regierung zu erschüttern. Derartige Mitteilungen an die Öffentlichkeit über Steuerpläne sind in der Finanzgeschichte zwar noch nicht da gewesen. Diesmal wird die Regierung aber nicht darüber hinwegkommen.</item>
+                        <item n="2">
+                           <label>2.)</label> In der gesamten Diskussion über die indirekten Steuern herrschen seit Jahrhunderten, besonders in England, zwei Ansichten. In England, wo der Streik in den 50er Jahren eine besondere Rolle spielte, meinten die Einen: Möglichst gleiche Belastung auf möglichst viele Artikel, und die Andern: Erfassung einiger großer besonders ertragreicher Artikel und Freilassung aller anderen. Meine Idee neigt der letzteren Ansicht zu, wegen der Kontrolle, dann um dem Verkehr doch im Wesen die Preisbildung zu belassen und schließlich zur Herbeiführung einer Besteuerung des Luxus. Alle Steuern, deren Erhöhung vorgeschlagen wird, betreffen Dinge, die nicht unbedingt nötig sind. Sie gehören dem Luxus an, wenn auch jenen der untersten Volksschichten und sollen ergänzt werden durch besonders hohe Luxussteuern im eigentlichen Sinne des Wortes. Die Beachtung des Momentes des Luxus ist besonders aus dem Grunde nötig, weil die Möglichkeit eines Konsumrückganges besteht und die Objekte der Steuern daher so gewählt werden müssen, dass im Falle der Staat daran einen Verlust erleidet, wenigstens die Volkswirtschaft den Vorteil hat, dass durch den eintretenden Sparzwang ein unnötiger Verbrauch eingeschränkt wird. Nicht zuletzt tritt dazu noch das Moment der Besteuerung eines sichtbaren Aufwandes wie ihn die öffentliche Meinung schon lange fordert.</item>
+                     </list>
+                     <p>1.) Über 2 ½ Milliarden [K]sollen aus Bier, Branntwein, Wein und Tabak, 2.) über 1 ½ Milliarden [K] aus Post und Eisenbahnen, 3.) 0,5 Milliarden [K] aus Fleisch und Zucker eingehen und 4.) schließlich noch 0,5 Milliarden [K] aus verschiedenen Luxussteuern im engeren Sinn, darunter einer Wohnungsaufwandssteuer für die oberen Schichten.</p>
+                     <list>
+                        <item n="1">
+                           <pb facs="krp-0110_a01-0017"/>
+                           <label>1.) a)</label> An Bier wurden im Frieden in Deutschösterreich verbraucht 7 Millionen hl. Der jetzige Schankpreis ist 2 K34 h für den l und er muss in drei Jahren sehr erheblich höher werden. Es ist beabsichtigt, hier zu einer Steuer von 23 K pro Hektolitergrad Extrakt zu kommen. Das wird für den Anfang den Preis gar nicht so erheblich steigern, denn jetzt hat das Bier 4-5 Grad, wogegen das Normalbier elfgrädig ist. Der endliche Ertrag wird allmählich eintreten, einmal durch die sukzessive Erhöhung der Steuersätze und dann durch die fortschreitende Erhöhung des Gradgehaltes des Bieres mit der Rückkehr des Wohlstandes und der Produktionsmöglichkeit. Es wird daher die Steuer schließlich 250 K pro hl betragen, mit einem Ergebnis von 1.750 Millionen [K]. Diese Summe ist wesentlich höher als der Geldentwertung entsprechen würde und es ist daher ein Viertel als Konsumrückgang zu veranschlagen, so dass ein Mehrertrag von 1,31 Milliarden [K] verbleibt. Dass dieser Abschlag von einem Viertel sehr reichlich berechnet ist, erhellt aus der Tatsache, dass trotz der gegenwärtigen Verteuerung und Verschlechterung des Bieres noch immer die gesamte Produktion von 2 Millionen hl von Konsum aufgenommen werden. Der Liter wird in fünf Jahren sicher 5 K kosten.</item>
+                        <item n="2">
+                           <label>1.) b)</label> Die Besteuerung von <hi rend="#u">Wein und Branntwein</hi> muss in einem gewissen Verhältnis zur Biersteuer stehen, um den Konsum nicht abwandern zu lassen. Der Verbrauch an Wein stellte sich im Frieden auf 1,5 Millionen hl und die schließliche Besteuerung darf nicht weniger als 480 K pro Hektolitergrad betragen, d. h. es wird sich eine Mehreinnahme von 720 Millionen [K] ergeben, davon ein Viertel als Konsumrückgang abgezogen, verbleiben 530 Millionen [K]. An Branntwein wurden 130.000 hl konsumiert. Eine Steuer von 720 K auf den Hektolitergrad <pb facs="krp-0110_a01-0018"/>würde 360 Millionen K liefern oder mit dem Abstrich von einem Viertel 234,5 Millionen [K].</item>
+                        <item n="3">
+                           <label>1.) c)</label> Der <hi rend="#u">Tabak</hi> soll auf den zehnfachen Friedenspreis gebracht werden. Das Tabakmonopol ist in einem Maße passiv, wie es die Rechnungen der Tabakregie gar nicht erkennen lassen, denn dort werden die Kurssteigerungen und die erhöhten Löhne als vermeintlich vorübergehende Erscheinungen nicht berücksichtigt, während sie wirklich den ganzen jetzigen Überschuss aufzehren. Die Kopfquote war im Frieden 19 K, sie müsste also nach vier Jahren 190 K betragen, was nach Abzug der gesteigerten Gestehungskosten 0,6 Milliarden [K] mehr an Bruttokosten ergebe.</item>
+                        <item n="4">
+                           <label>2.) a)</label>
+                           <hi rend="#u">Eisenbahnen</hi>. Das Eisenbahnressort hat mit der 150%igen Frachtsteigerung die größte Erhöhung durchgeführt. Augenblicklich steht den Einnahmen von 590 Millionen [K] ein Erfordernis von 1.140 Millionen [K] gegenüber, bzw. mit den neuen Steigerungen weitere 1.280 Millionen [K]. Die Einnahmen müssten noch vervierfacht werden. Aber so weit braucht man nicht zu gehen, denn es ist nicht notwendig, dass in einem Lande wie Österreich die Eisenbahnen mit ihrer schwierigen Trassenführung aktiv sein müssten, es soll nur das Defizit beseitigt werden. Es ist daher mit einer Einnahmssteigerung von 200 % brutto 1.100 Millionen [K] zu rechnen.</item>
+                        <item n="5">
+                           <label>2.) b)</label> Die <hi rend="#u">Postgebühren</hi> wären zu vervierfachen, was ein Mehrertrag von 0,6 Millionen [K] abwirft.</item>
+                        <item n="6">
+                           <label>3.) a)</label>
+                           <hi rend="#u">Fleisch</hi>: Die herrschende Fleischnot wird zu weiteren Steigerungen der Fleischpreise führen, gegenüber denen die Steuern nach vier Jahren minimal sein werden. Das Fleisch wird sich dauernd auf 20-30 K pro kg stellen und verträgt dabei wohl eine Steuer von 2 K pro kg. Bei einem Verbrauch von 150 Millionen kg in Wien ergibt das einen Ertrag von 0,3 Milliarden [K]. Auch außerhalb von Wien wird <pb facs="krp-0110_a01-0019"/>in den Städten die Fleischsteuer in Form von Torsteuern eingehoben werden können. Auf dem flachen Lande dagegen lässt sie sich nicht durchführen.</item>
+                        <item n="7">
+                           <label>3.) b)</label> Bei <hi rend="#u">Zucker</hi> wäre ein Handelsmonopol zweckmäßig. Wird auf den Friedenskonsum von 100 Millionen [K] keine Steuer auf 2 K auf das kg gelegt, so liefert das einen Mehrertrag von 0,2 Milliarden [K].</item>
+                     </list>
+                     <p>Ausgeschlossen von einer Erhöhung und als Reserven für einen späteren Notfall hätten zu verbleiben die Kohle, der Kaffee, Baumaterialien und Eisen. Im Hintergrunde bliebe dann schließlich noch das Getreidemonopol, das besonders hart wäre und nur im äußersten Fall angewendet werden sollte.</p>
+                     <list>
+                        <item n="1">
+                           <label>4.)</label> Den angeführten Steuern, die in einem gewissen Sinn als Luxussteuer bezeichnet würden, stehen gegenüber die eigentlichen <hi rend="#u">Luxussteuern</hi>. Für deren Einführung sprechen die zwei Gesichtspunkte, dass sie finanziell notwendig sind und vom sozialen Gefühl gefordert werden. Die Notwendigkeit dabei ist breit zu greifen. Man muss unterscheiden zwischen dem französischen le grand Lux, der Lebensgewohnheit der internationalen Gesellschaft und der angenehmen Behaglichkeit. Alles, was von ersterem bei uns vorhanden ist, können wir besteuern, weil, soweit der Fremde den Luxus betreibt, er ihn wegen der Valutaentwertung noch immer zahlen kann. Der Haushalt auf großem Fuß wird allerdings unmöglich gemacht. Ein weiterer Gesichtspunkt ist, dass man unter Luxus Dinge mit großer Konsumption verstehen muss. Hier sind wir an gewisse Grenzen gebunden, soweit unsere Exportartikel in Betracht kommen. Zahlreiche Wiener Industrien, z. B. Damenhüte haben Weltruf, und diese Industrien müssten zugrunde gehen, wenn für sie nicht Wien zugleich ein Konsumzentrum bliebe. So steht es besonders bei den Automobilen. Im Verhältnis zu unserer Absatzmöglichkeit und der internationalen Konkurrenz haben wir zu viel <pb facs="krp-0110_a01-0020"/>Automobilfabriken und wenn die Hauptmarke auch das Lastautomobil ist, so kann doch auf den Luxuswagen nicht verzichtet werden. Auf einen Teil der Erträgnisse werden Städte und Länder greifen, 0,4 Milliarden [K] dürften aber noch für den Staat erübrigen, wobei man allerdings in der Besteuerung ziemlich weit gehen muss. So wären der Steuer zu unterwerfen Luxusnahrungsmittel, Luxuslokale, Luxusstoffe, teure Sitze in den Theatern, Luxusgefährte, Luxusgeschäftslokale, Dienstboten, Luxuskleidung und eine Reihe von anderen Dingen. Besonders scheint mir eine andere Stellungnahme zum Spiel nötig. Das Spiel können wir nicht verhindern, wir müssen es aber besteuern, wie es in Berlin geschieht. Die Sätze müssten hoch gestellt werden; zahlt der Minderbemittelte für seine Genussmittel bis 50 %, so muss der Reiche dafür gelegentlich 200 % zahlen. Ein Rückgang im Verbrauche ist bei der spezifischen Art des Konsums bei uns nicht zu befürchten.</item>
+                     </list>
+                     <p>Auf das Moment der Luxusbesteuerung lege ich einen großen Wert, es ist das ein Mittel den äußerlich hervortretenden Aufwand in einer Weise zu besteuern, welche das öffentliche Gewissen beruhigt, Erleichterungen für die Einführung anderer Steuern schafft und die technische Möglichkeit gibt, Einkommen, die sonst nicht gefasst werden, scharf heranzuziehen. Der Erfindungsgabe auf diesem Wege ist noch ein weiter Spielraum gezogen.</p>
+                     <p>Von diesen Luxussteuern hebt sich ab die Wohnungsaufwandsteuer mit einem Erträgnis von 0,1 Milliarden [K]. Es soll der Wohnraum, der eigenen Wohnzwecken dient, oder den Wohnzwecken anderer entzogen wird, soweit er das Maß übersteigt, das als das hygienisch Erstrebenswerte, wenngleich auch nicht annähernd durchschnittlich Erreichte betrachtet werden kann, besteuert werden. Das Maß der Besteuerung des Über<pb facs="krp-0110_a01-0021"/>schusses soll einer Verdreifachung des jetzt für diese überschüssigen Räume bezahlten Mietzinses gleichkommen. Um den finanziellen Effekt dieser Maßregel abzuschätzen, hätte man von einem Wohnungszins von 2.400 K jährlich als dem steuerfreien Standard auszugehen.</p>
+                     <p>Es handelt sich dabei um zwei Gesichtspunkte, deren erster die Besteuerung des Wohnungsluxusses ist; auch der bescheidene Luxus muss besteuert werden, denn wir können uns auch das bescheidene Behagen nicht mehr gönnen. Der zweite Gesichtspunkt ist, dass derjenige, welcher in einem neuen Hause wohnt, einen höheren Mietzins zu zahlen hat entsprechend der gesteigerten Baukosten des Hauses, derjenige aber, der in einem alten Hause wohnt, infolge der Mieterschutzordnung viel billiger im Zins sitzt, also auf die Dauer eine ungerechtfertigte Rente genießt. Es ist also eine Erhöhung der Leistungen für die Mieten in alten Häusern am Platze. Die Erhöhung darf aber nicht dem Hauseigentümer zufallen, weil er durch einen Mehrgewinn nicht zu einer Mehrtätigkeit angeregt wird, daher der Mehrgewinn nicht berechtigt ist. Die Steigerung hätte aber dem Staate zuzufallen und wenn alles auf das Zehnfache steigt, ist es schließlich nicht zu viel, wenn der Mietzins auf das Vier- bis Fünffache erhöht wird. Die Wohnungssteuer kann auf alte Häuser beschränkt bleiben; dehnt man sie aber auch auf Neubauten aus, dann ließe sich damit das Ziel erreichen, dass die Bautätigkeit von großen Bauten weg auf die Bauten von Kleinwohnungen hingelenkt wird.</p>
+                     <p>Nach vier Jahren werden wir ein Budget mit einem Defizit von 1,8 Milliarden [K] haben. Wir müssen ein Defizit beibehalten, denn ein in den Einnahmen und Ausgaben vollkommen ausbalanciertes Budget ist aus außenpolitischen Gründen nicht wünschenswert. Die Ausgaben sind darin aber um reichlich 1 Milliarde [K] zu hoch gegriffen, die Einnahmen um ½ Milliarde [K] zu niedrig geschätzt.<pb facs="krp-0110_a01-0022"/> Und ¼ Milliarde [K] darf der Staat noch aus den Wasserkräften erwarten. Ich habe auch nicht vom Sparen gesprochen, obwohl wir in unserer Not wohl auch gerade daran denken müssen. Ein Defizit von 1,8 Milliarden [K] bei einem Budget von 10 Milliarden [K], also etwa 20 %, ist zwar ernst, aber nicht hoffnungslos. Deshalb sage ich, dass die Regierung, welche diese Maßregeln durchführt, wird von sich behaupten können, sie habe Ordnung gemacht und das ist das Wesentliche. Einzeln lassen sich die Maßnahmen nicht durchführen, aber im Zusammenhang eines Gesamtplanes sind sie nicht unmöglich.</p>
+                     <p>Wirtschaftsplan während der nächsten drei Jahre</p>
+                     <p>Die Einnahmen des künftigen Budgets nützen uns für die nächsten drei Jahre nichts. Sie können erst eintreten, wenn das neue Wirtschaftsleben im Gange ist, wir über Lebensmittel verfügen und sich die neuen Maßregeln eingelebt haben. Es ist aber unmöglich, die Wirtschaft zu rekonstituieren, wenn wir mittellos dastehen und die Ansprüche, für die das Budget schon jetzt Vorsorge treffen muss, nicht befriedigen können. Wir müssen den Schuldendienst aufrechterhalten, die Volkswirtschaft muss durch Rohstoffbeschaffung und Ausbesserung der Produktionsanlagen hergestellt und den Verhältnissen, deren Umrisse noch nicht zu erkennen sind und die kostspielige Umstellungen erfordern, angepasst werden. Sie muss ausbalanciert werden durch Ausgleichung zwischen Produktionskosten und Preisen, indem die Banknotenvorräte wieder hervorkommen und die Bankkredite besonders der Rembours die früheren Formen wieder annimmt. Dafür sind innerhalb der nächsten drei Jahre je 0,2 Milliarden [K] eingestellt und außerdem kommt der Posten von 1 Milliarde [K] zugute, der für Kriegsleistungen aufgebraucht wird. Das Erfordernis dafür ist zu decken durch die Einnahmen der späteren Jahre.</p>
+                     <p>
+                        <pb facs="krp-0110_a01-0023"/>Gefährlich ist die Tatsache, dass jetzt die Kreditunfähigkeit des Staates zur Wahrheit geworden ist. Zunächst ist das eine Kreditunfähigkeit nach außen; wegen der schwankenden Valuta können sich die Banken nicht für die Deckung des Rembours verpflichten, zeitweise liegen die Gründe auch in der Anpassung des ausländischen Marktes, das Entscheidende aber ist, dass das Ausland unter dem Eindrucke des uns auferlegten Friedens und unserer Ernährungsschwierigkeiten an der Möglichkeit unserer Erholung verzweifelt.</p>
+                     <p>Eine Abhilfe wäre möglich durch den Import von ausländischem Kapital. Dieser kann sich jetzt nur im Wege der Verschleuderung unseres Volksvermögens vollziehen und wenn er auch wünschenswert ist und gefördert werden muss, so bringt er doch nur ganz unzureichende Summen und gibt dabei die Zukunft unseres Volkes aus der Hand. Ein weiteres Mittel ist der Abverkauf unseres Kunstbesitzes, an den wir jetzt schreiten. Schließlich wird noch immer auf eine Hilfe von der Reparationskommission gehofft. Ich kann nicht genug davor warnen, sich von der Reparationskommission viel zu erwarten. Wir werden Sympathie finden, aber die Kommission hat die Aufgabe, eine Reparation aus uns heraus zu wirtschaften und nicht uns wieder in die Höhe zu bringen. Das Äußerste, was wir erreichen könnten, wäre eventuell, dass wir keine oder nur eine geringe Reparation auferlegt bekommen, aber auf Kredite oder gar Geschenke dürfen wir nicht rechnen. Wir werden betteln müssen und wenn die Leute bei uns vor Hunger zusammenbrechen, werden wir vielleicht kleine Summen bekommen.</p>
+                     <p>Ebenso schlimm wie die äußere ist die innere Kreditunfähigkeit. Als Nachwirkung der letzten Monate ist das Vertrauen der Bürger in den Staat geschwunden. Wir können keine Anleihe unterbringen. Das rückt die Gefahr weiterer Noten<pb facs="krp-0110_a01-0024"/>emissionen vor uns und diese bedeuten den Zusammenbruch des Staates und das Auseinanderfallen in seine Teile. Nicht einmal Prämienanleihen bringen wir unter. Was also in Böhmen beim Misserfolg in der inneren Anleihe nur durch den Misserfolg der Rašin‘schen Finanzpolitik möglich war, ist bei uns durch die Tatsache gegeben, dass die Leute ihr Geld dem Staat nicht anvertrauen wollen.</p>
+                     <p>Trotzdem brauchen wir ausländische Zahlungsmittel, und zwar schon jetzt, wenn die Krone wenigstens auf dem jetzigen Kurs bleiben soll. Von einer Hebung des Kurses ist keine Rede und Lebensmittel- und Rohstoffbezüge müssen noch einen weiteren Druck ausüben, solange wir nicht über ausländische Guthaben verfügen. Wir brauchen mindestens 1 Milliarde Schweizer Franken, wenn wir berücksichtigen, dass weitere Beträge noch durch private Quellen zu beschaffen sein werden und ein Teil der Summe rouliert. Etwas wird doch produziert und exportiert. Der Arbeiter, welcher für den für die Auslandsvaluta gekauften Nahrungsmitteln lebt und etwas für den Export produziert, ersetzt durch seine Arbeit die für die Nahrungsmittel ausgegebene Summe. Der Bedarf an 1 Milliarde [K] kann aber durch Kapitalseinwanderung aus dem Verkauf der Kunstschätze nicht beschafft werden. Außerdem brauchen wir noch einen inneren Kredit von mindestens 10 Milliarden K ohne Notendruck. Jeder Finanzplan für die nächsten drei Jahre ist ein Misserfolg, wenn er nicht zeigt, wie wir ausländische Guthaben bekommen und uns im Innern ohne neue Noten behelfen können.</p>
+                     <p>Die Kreditbeschaffung ist hauptsächlich dadurch lahmgelegt, dass der Private dem Staat nicht traut und ihm daher auch nicht seine Kreditbeziehungen zur Verfügung stellt, denn die sind das letzte, was einem Geschäftsmann beim Zusammen<pb facs="krp-0110_a01-0025"/>bruch bleibt und ihm einen Rest von Hoffnung für die Wiederaufrichtung seiner Existenz lässt. Wie können wir dann erwarten, dass uns das Ausland kreditiert, da wir ein solches Defizit haben und eigentlich unter fremde Hoheit gestellt sind? Man wird uns höchstens Lebensmittelkredite geben, ein Mehr würde uns vollständiger Versklavung verfallen lassen. Der Staat muss unter diesen Umständen sich mit dem Kredit der Privaten behelfen, indem er den Kredit jener Leute heranzieht, die ihr Vermögen im Ausland haben oder draußen Kredit besitzen.</p>
+                     <p>Das Problem ist nun, die Staatsbürger zu zwingen, ihre Kreditbeziehungen zum Ausland dem Staate zur Verfügung zu stellen. Maßregeln der Währungspolitik, welche darauf hinauslaufen, sind:</p>
+                     <list>
+                        <item n="1">
+                           <label>1.)</label> Aufrufen und Abschöpfen der Krone im Ausland dadurch, dass man sie in Valutatitres verwandelt.</item>
+                        <item n="2">
+                           <label>2.)</label> Gestattung des Exportes gegen Kronen, um Nachfrage nach Kronen zu erzeugen und den Eindruck verschwinden zu machen, dass der Staat sein eigenes Geld boykottiere.</item>
+                        <item n="3">
+                           <label>3.)</label> Abgehen von den Grundsätzen des Notenumlaufgesetzes, welches zur Folge hat, dass das Ausland jetzt so schwer über seine Guthaben bei uns verfügen kann.</item>
+                        <item n="4">
+                           <label>4.)</label> Schaffung eines hochverzinslichen Titres mit Zahlkraft, welcher eine Mittelstellung zwischen Geld und Staatspapier einnimmt, Geld insofern, als er zirkulieren kann, Staatspapier insofern, als die Verzinsung den Anreiz bietet, ihn liegen zu lassen.</item>
+                        <item n="5">
+                           <label>5.)</label> Export von Obligationen, wenn es geht, besonders von Kriegsanleihe, nach Schaffung eines Marktes, wozu schon einzelne Maßregeln ergriffen wurden.</item>
+                     </list>
+                     <p>
+                        <pb facs="krp-0110_a01-0026"/>Dann müssen wir abwarten, bis die Krone von selbst ihren Kurs findet, denn dauernd kann man ihn nicht künstlich halten. Jeder Übergang zu einer fremden Währung kommt im Augenblick nicht in Betracht. Man könnte daran denken, am Schluss der Übergangsperiode, wenn sich die Krone dauernd auf 10 c stabilisiert hat.</p>
+                     <p>
+                        <hi rend="#u">Notenbank.</hi>
+                     </p>
+                     <p>Die im Friedensvertrag aufgetragene Liquidation der Oesterreichisch-ungarischen Bank stellt uns vor die Frage der Notenbank. Ebenso wie die Währungspolitik kann eine Notenbankpolitik erst dann seriös betrieben werden, wenn wir über ausländische Guthaben verfügen. Die Notenbankfrage stellt sich verschieden dar, je nachdem man glaubt, ob die Reparationskommission mit der sofortigen Liquidierung und Einlieferung der Noten Ernst macht oder nicht. Macht sie nicht Ernst, so soll man nicht vor dem Winter und vor der Vermögensabgabe an eine neue Notenbank schreiten. Man begründe ein staatliches Bankamt, übernehme die Filialen der Oesterreichisch-ungarischen Bank und betreibe nach einem Übereinkommen mit ihr das Geschäft weiter, solange das eigentliche Eskomptebedürfnis des wahren Dreimonat-Papieres noch nicht erwacht ist. Aber dieser Weg dürfte nicht gangbar sein, wir dürfen uns wenigstens nicht darauf verlassen und müssen uns für den anderen Fall vorbereiten, die Gründung einer deutschösterreichischen Bank, aber so, dass sie unter keinen Umständen dem Staate Kredit geben darf, sondern nur das reine Eskomptegeschäft zu bestreiten hätte. Eine Eskomptebedürfnissen dienende Notenemission ist ja nicht verderblich, weil sie die Preise nicht in die Höhe treibt. Eigentlich sollten wir der Bank auch einen Goldschatz geben; da aber <pb facs="krp-0110_a01-0027"/>die Funktion des Goldschatzes in der Zahlungsbereitschaft liegt, wir aber eine solche nicht leisten können, wäre der Goldschatz nur ein Augentrost. Die Grundlage für die Notenemission hätte das Staatspapiergeld zu bilden, als welches die Banknoten künftig ja aufzufassen sein werden.</p>
+                     <p>
+                        <hi rend="#u">Vermögensabgabe.</hi>
+                     </p>
+                     <p>Die Vermögensabgabe ist nicht die Rettung, sondern der wichtigste Schritt auf dem Wege zur finanziellen Rettung. An ihr muss unbedingt festgehalten werden. Ohne Vermögensabgabe mache ich keinen Finanzplan, obwohl man in Fachkreisen über die Vermögensabgabe jetzt vielfach anders denkt als zur Zeit der Enquête. Bezüglich des Ausmaßes wird das deutsche Vorbild wesentlich sein, wir müssen aber darüber hinausgehen und können das deutsche Muster nicht kopieren, weil uns die Unterlagen, wie sie das Deutsche Reich vom Wehrbeitrag, der Besitzsteuer und der Wertzuwachssteuer her hat, fehlen. Den Entwurf für die Vermögensabgabe habe ich im August dem Kabinettsrat vorgelegt.</p>
+                     <p>Zunächst wurde die Frage erörtert, welches Verhalten jenen Vermögen gegenüber zu beobachten ist, welche tatsächlich der Produktion dienen. Bei unproduktiven Vermögen ist der Abgabe der augenblickliche Vermögenswert zugrunde zu legen, bei produktiven Vermögen ist nach der Diskussion das Ertragswertprinzip unvermeidlich. Normal müssen der Kaufswert und Ertragswert übereinstimmen, denn Verkaufswert ist nichts anderes als Kapitalisierung des Ertrags. Wenn diese Übereinstimmung gegenwärtig nicht besteht, so liegt der Grund in der Panikstimmung, dass Erträge vorübergehend ausgefallen sind und man daher den Verkaufswert nicht ohne weiters zugrunde legen, ohne die Leute umzubringen. In der Diskussion hat damals Staatssekretär Dr. Bauer die Idee geäußert, beim Bauernstand eine längere Periode als Abzahlungsfrist in Aussicht <pb facs="krp-0110_a01-0028"/>zu nehmen und die Höhe der Ratenzahlungen abhängig zu machen von einem Standard nach der Bewegung der Produktenpreise. Es ist das eine ökonomisch richtige Idee, sie stößt aber auf technische Schwierigkeiten. Ich habe die Absicht, etwas Ähnliches zu machen und durch die Parteien selbst feststellen zu lassen, wie hoch der vernünftigerweise anzunehmende Ertragswert ist, um darnach zu einem Schlüssel für die Kapitalisierung zu kommen. Ausgeschlossen ist bei der Landwirtschaft wie bei der Industrie der Friedenswert und bei der Landwirtschaft außerdem noch unbedingt abzulehnen ein Verhältnis zum Katastralreinertrag. Es ist eine neue Schätzung durch Kommissionen unter Heranziehung der Interessenten notwendig. So verstanden ist das Prinzip des Ertragswertes, glaube ich, diskutabel.</p>
+                     <p>Als weiterer Punkt verdient Aufmerksamkeit, dass die Länder die Tendenz zeigen, 20 % der Vermögensabgabe für sich in Anspruch zu nehmen. Dem muss mit aller Entschiedenheit entgegengetreten werden, denn ein solches Verlangen müsste zum Zusammenbruch führen.</p>
+                     <p>Die Vermögensabgabe kann entweder nach der objektiven oder nach der subjektiven Methode angelegt sein. Der dem Kabinettsrat unterbreitete Entwurf ist nach der subjektiven Methode ausgearbeitet. Es wird darnach die einzelne Person besteuert und nicht das Vermögensstück. Vom Kabinettsrat wurde ich beauftragt, weitere Entwürfe nach der objektiven Methode ausarbeiten zu lassen, die auch meinem Empfinden besser entsprach. Es liegen nun weitere drei Entwürfe vor, die auf der subjektiven Methode mit verschieden zahlreichen objektiven Elementen aufgebaut sind und ein vierter Entwurf rein nach objektiver Methode befindet sich noch in Ausarbeitung.</p>
+                     <p>
+                        <pb facs="krp-0110_a01-0029"/>Bei der Beurteilung der objektiven Methode sind zwei verschiedene Gesichtspunkte auseinanderzuhalten. Ein finanztechnischer und der Gesichtspunkt, dass die objektive Methode einen Zugriff auf die Objekte selbst ermöglicht und sie zum Teil in natura unmittelbar der staatlichen Herrschaft unterwirft. Das Moment der technischen Vereinfachung ist in dem Augenblick nicht mehr ausschlaggebend, wo auf den Besitzstand des Steuersubjektes Rücksicht genommen wird oder gar eine Supertaxe auf höheren Besitz gelegt werden soll. Dadurch würde die objektive Methode zu kompliziert. Ein weiterer technischer Grund wäre die größere Sicherheit des Ertrages gewesen. Nach unseren Sperrmaßnahmen und da bei Grundbesitz und Gewerbebetrieben der Besitzstand ohnedies feststeht, ist dieses Moment von geringerer Bedeutung. Technisch ist jedenfalls die subjektive Methode vorzuziehen.</p>
+                     <p>Der zweite Gesichtspunkt, dass bei der objektiven Methode der Staat einen größeren Einfluss auf die einzelnen Vermögensgüter gewinnt im Sinne der Goldscheid‘schen Idee, fällt gleichfalls weg, da wir die Vermögensobjekte doch wieder an das Ausland weitergeben müssen. Wenn der Staat etwa die Aktien, die er bekommt, verkauft oder verpfändet, so kann er sich auf den Betrieb keinen größeren Einfluss sichern, als er nicht auf gesetzgeberischem Wege zu erreichen vermöchte. Die objektive Methode anzuwenden, wäre ein Scheinerfolg mit ungeheuren Nachteilen, denn, wenn wir Vermögensobjekte an uns nehmen, so vernichten wir damit den privaten Kredit, von dem unser Leben abhängt, ohne dass der Staat dadurch kreditfähiger würde. Der Staat würde es, wenn er in der Verwaltung dieser Güter einen Erfolg aufzuweisen hätte. Dies ist aber nicht der Fall und daher leiht Unternehmungen, deren Teilhaber der Staat geworden ist, niemand etwas. Ich bin Anhänger einer ge<pb facs="krp-0110_a01-0030"/>ordneten Sozialisierung, eine solche ist aber nur bei einem geordneten Budget möglich. Auf der Bahn der Sozialisierung werden die Herren mich wieder finden, sobald die Voraussetzungen dafür gegeben sind. Im gegenwärtigen Zeitpunkt, wo wir so notwendig des ausländischen Kredites im Wege privater Beziehungen bedürfen, halte ich eine Maßregel, wie die objektive Vermögensabgabe, für undurchführbar. In den Sätzen vertrete ich das radikalste Programm, das gewissenhafterweise vertreten werden kann. Dem gesunkenen Geldwert entsprechend muss das abgabefreie Minimum auf 30.000 K hinaufgesetzt werden.</p>
+                     <p>
+                        <hi rend="#u">Vermögensabgabe und Kreditpolitik.</hi>
+                     </p>
+                     <p>Die Notwendigkeit ausländischer Guthaben habe ich gezeigt, ebenso die Unmöglichkeit, auch nur einen inländischen Kredit zu erhalten. Der Hauptzweck der Vermögensabgabe ist die Abbürdung des Kapitales oder der Zinsenlast der Kriegsschulden. Wenn nun aber der Staat keine Anlehen aufnehmen kann, weil er nicht das Vertrauen genießt, so müssen wir die Vermögensabgabe der Krediterlangung dienstbar machen und die Kapitalisten zu Krediten zwingen. Dabei handelt es sich auch noch darum, das nach dem Ausland geflüchtete Kapital für unsere Volkswirtschaft zu retten. Das Kapital ist keineswegs erst während des Krieges ins Ausland gegangen, die große Kapitalsflucht begann vielmehr im Jahre 1906, als das Gefüge des Reiches immer sichtbarere Risse bekam und die Handels- und Zahlungsbilanz immer mehr passiv wurde. Seitdem ist so viel Kapital ins Ausland gegangen, dass Österreich viel mehr Auslandsguthaben hat, als ein Land von gleichem Kapitalstande haben sollte. Dieses nach dem Ausland gegangene Kapital müssen wir für die Volkswirtschaft zurückzugewinnen suchen, wir müssen es weiters dazu ausnutzen, auf die Privaten einen Zwang auszuüben, ihre Kreditbeziehungen dem Staate zur Ver<pb facs="krp-0110_a01-0031"/>fügung zu stellen und müssen schließlich den toten Punkt der Scheu vor staatlichen Titres im Inland zu überwinden suchen.</p>
+                     <p>Diesen Zwecken sollen folgende Vorschläge dienen:</p>
+                     <list>
+                        <item n="1">
+                           <label>1.)</label> In das abgabepflichtige Vermögen ist nicht einzurechnen jener Betrag, den der Steuerträger in bestimmten ausländischen Valuten, die durch Vollzugsanweisung festzusetzen sind und die sich außerhalb des staatlichen Bereiches befinden, auf die 2 ½%ige Valutaanleihe der Republik zum Tageskurs zeichnet und einzahlt.</item>
+                     </list>
+                     <p>(Die Befreiung von der Vermögensabgabe findet ihre Begründung darin, dass der Besitzer sich bei einem Weltzinsfuß von 7 % mit einer Verzinsung von nur 2 ½ % begnügt, also im Grunde eine Steuer von 66 2/3 % entrichtet).</p>
+                     <list>
+                        <item n="1">
+                           <label>2.)</label> Gibt der Steuerträger die Erklärung ab, dass er zur anlehensweisen Beschaffung eines bestimmten Betrages in bestimmten ausländischen Valuten, die durch Vollzugsanweisung bekannt zu geben sind, für den Staat sich verpflichtet und dass er die Verzinsung des Betrages, soweit sie 2 ½ % übersteigt bis zu 7 % gänzlich und darüber hinaus zu einem Drittel dauernd sich zu tragen verpflichtet, so ist ein solcher Betrag vom abgabepflichtigen Vermögen in Abzug zu bringen, wenn der Betrag dem Staate wirklich beschafft wird.</item>
+                     </list>
+                     <p>(Auch hier liegt die Abgabe in der Zinsenleistung).</p>
+                     <list>
+                        <item n="1">
+                           <label>3.)</label> Wer 4%ige innere Anleihe zum Nennwert zeichnet und einzahlt, dem wird ein Drittel des eingezahlten Betrages auf seine Vermögensabgabeschuldigkeit als bezahlt gutgeschrieben. Ein Drittel dieser Zeichnung wird in Kriegsanleihe angenommen. </item>
+                     </list>
+                     <p>Im Allgemeinen ist die Vermögensabgabe in drei Jahresraten einzuzahlen. Bei Vermögen bis zu 1 Million [K] erfolgt die <pb facs="krp-0110_a01-0032"/>Abzahlung in dreißig Jahresraten dann, wenn ein Betrag von mindestens einem Viertel des Vermögens auf die inländische Anleihe gezeichnet wurde. Bei Vermögen von mehr als 1 Million [K] erfolgt die Abzahlung in dreißig Jahresraten dann, wenn für einen Betrag von mindestens 40 % des Vermögens entweder in ausländischer Valuta auf die 2 ½%ige Valutaanleihe der Republik eingezahlt oder in mindestens gleicher Höhe die Verpflichtung zur anleiheweisen Beschaffung ausländischer Valuta übernommen wurde.</p>
+                     <p>Das, was infolge des Privilegs dreißigjähriger Abzahlung eingeht, dient der Abbürdung, das, was sofort abgezahlt wird, womöglich auch; aber lieber würde ich von den Eingängen jener Leute, die in drei Jahren zahlen müssen, noch eine Summe für die laufenden Bedürfnisse verwerten, als neue Noten zu drucken. Das, was geliehen wird, soll uns über die drei Jahre hinweghelfen und wenn ich auch nicht glaube, dass dadurch die 1 Milliarde Schweizer Franken, die wir brauchen, zusammenkommt, so wird sich doch ein erheblicher Teil auf diese Weise beschaffen lassen und dieser wird uns eine Kreditmöglichkeit für den verbleibenden Rest eröffnen. Deutschland gibt allgemein die dreißigjährige Abzahlungsfrist, entzieht aber dem Steuerträger jenes Vermögen, das nicht so verwertet wird, dass es mindestens 5 ½ % trägt. Wir wenden etwas Ähnliches an, aber eingedenk der Tatsachen, dass wir ein Handels- und Finanzstaat und viel weniger ein produktiver Staat sind, in der Form, dass die Begünstigungen eingeräumt werden für die Kreditgewährung und wenn diese verweigert wird, der volle Steuersatz und zudem Abzahlungstermine in Geltung treten, welche den Steuerpflichtigen in Schwierigkeiten stürzen. Der Abbau der Kriegsanleihe wird infolge dieser Stundungen zwar langsamer <pb facs="krp-0110_a01-0033"/>vor sich gehen, aber das darauf erhoffte Erträgnis von 0,8 Milliarden [K] bleibt erhalten. Der Mehraufwand für die höhere Verzinsung der Kriegsanleihe wird dadurch hereingebracht, dass der Steuerträger seinerseits sich mit einer Verzinsung von 2 ½ % begnügt. Der äußerste Einwand wäre also der, dass der vorgeschlagene Vorgang nicht zu dem gewünschten Erfolg führt, eine Einbuße an Steuereingängen ist daraus aber nicht zu befürchten.</p>
+                     <p/>
+                  </div>
+               </div>
+            </div>
+            <div type="stenogramme">
+               <div n="1">
+                  <head>EINZUFÜGEN</head>
+                  <p>Transkription in Arbeit.</p>
+                  <p/>
+               </div>
+               <div n="2">
+                  <head>EINZUFÜGEN</head>
+                  <p>Transkription in Arbeit.</p>
+               </div>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

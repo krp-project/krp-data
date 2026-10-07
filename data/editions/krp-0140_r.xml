@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href='http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:acdh="https://vocabs.acdh.oeaw.ac.at/schema#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xml:lang="de">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="a" type="main" n="0140">Kabinettsprotokoll Nr. 140 vom 23. Jänner 1920</title>
+            <title level="m" type="main" n="01">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <title level="m" type="sub" n="">Renner III (17. Oktober 1919 – 7. Juli 1920)</title>
+            <meeting>
+               <placeName key="https://d-nb.info/gnd/4066009-6">Wien</placeName>
+               <orgName key="https://d-nb.info/gnd/5162749-8">Kabinettsrat</orgName>
+               <date when-iso="1920-01-23"/>
+            </meeting>
+            <editor>
+               <persName key="https://d-nb.info/gnd/122481836"
+                         role="hasCreator"
+                         xml:id="hwohnout">
+                  <forename>Helmut</forename>
+                  <surname>Wohnout</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</affiliation>
+               <idno type="ORCID">0000-0002-3864-9839</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/120789825"
+                         role="hasCreator"
+                         xml:id="tolechowski">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0003-3291-6876</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/131679384"
+                         role="hasCreator"
+                         xml:id="rlein">
+                  <forename>Richard</forename>
+                  <surname>Lein</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0002-7502-0503</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="aholzer">
+                  <forename>Anna</forename>
+                  <surname>Holzer</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0005-3560-3500</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="dsoelkner">
+                  <forename>Dominik</forename>
+                  <surname>Sölkner</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-9895-7212</idno>
+            </editor>
+            <editor>
+               <persName role="hasContributor" xml:id="ischotzko">
+                  <forename>Ina</forename>
+                  <surname>Schotzko</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-5210-3713</idno>
+            </editor>
+            <funder n="1">
+               <orgName key="https://d-nb.info/gnd/2054142-9" role="hasFunder">Österreichischer Wissenschaftsfonds FWF</orgName>
+               <idno type="project">PAT1495024</idno>
+               <title type="project">Die Protokolle des österreichischen Kabinettsrates 1919–1920</title>
+            </funder>
+            <respStmt>
+               <resp>Projektverantwortung</resp>
+               <orgName key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Projektleitung</resp>
+               <persName key="https://d-nb.info/gnd/120789825" role="hasPrincipalInvestigator">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+                  <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+                  <idno type="ORCID">0000-0003-3291-6876</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Nationaler Forschungspartner</resp>
+               <orgName key="https://d-nb.info/gnd/1123037736" role="hasEnabler">Austrian Centre for Digital Humanities</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Digitalisierung der gedruckten Quellen</resp>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>TEI-Datenmodellierung</resp>
+               <persName role="hasContributor" xml:id="tfruehwirth">
+                  <forename>Timo</forename>
+                  <surname>Frühwirth</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-3997-5193</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technische Supervision</resp>
+               <persName key="https://d-nb.info/gnd/1043833846"
+                         role="hasContributor"
+                         xml:id="pandorfer">
+                  <forename>Peter</forename>
+                  <surname>Andorfer</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-9575-9372</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technisches Consulting und Vorbereitung der Druckausgabe</resp>
+               <persName key="https://d-nb.info/gnd/13281899X"
+                         role="hasContributor"
+                         xml:id="skurz">
+                  <forename>Stephan</forename>
+                  <surname>Kurz</surname>
+                  <affiliation key="https://d-nb.info/gnd/1202798799">Institut für die Erforschung der Habsburgermonarchie und des Balkanraumes</affiliation>
+                  <idno type="ORCID">0000-0003-2546-2570</idno>
+               </persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher key="https://d-nb.info/gnd/1001454-8">Österreichische Akademie der Wissenschaften</publisher>
+            <date when="2028"/>
+            <availability status="free">
+               <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">Lizenziert unter CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/deed.de)</licence>
+            </availability>
+            <idno type="ISBN_Print"/>
+            <idno type="ISBN_Part_epub"/>
+            <idno type="ISBN_Digital"/>
+            <idno type="DOI"/>
+            <idno type="DOI_zenodo"/>
+            <idno type="ebook_ID"/>
+         </publicationStmt>
+         <seriesStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="m" type="main">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <respStmt>
+               <resp>Bearbeitung und Herausgeberschaft</resp>
+               <orgName key="https://d-nb.info/gnd/2024703-5">Universität Wien</orgName>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+         </seriesStmt>
+         <notesStmt>
+            <note>Diese TEI-XML-Datei ist Grundlage für eine Druckausgabe der Edition.</note>
+            <relatedItem>
+               <biblStruct>
+                  <monogr>
+                     <imprint>
+                        <pubPlace key="https://d-nb.info/gnd/4066009-6">Wien</pubPlace>
+                        <publisher key="https://d-nb.info/gnd/2068748-5">Verlag der Österreichischen Akademie der Wissenschaften</publisher>
+                        <date when="2029"/>
+                     </imprint>
+                     <extent/>
+                  </monogr>
+                  <note>
+                     <idno/>
+                     <ptr/>
+                  </note>
+                  <citedRange/>
+               </biblStruct>
+            </relatedItem>
+         </notesStmt>
+         <sourceDesc>
+            <bibl>Quellbestand: AT-OeStA/AdR MRang MR 1Rep KRP Kabinettsratsprotokolle, 1918-1920 (Teilbestand)<ref target="https://www.archivinformationssystem.at/detail.aspx?id=5465">https://www.archivinformationssystem.at/detail.aspx?id=5465</ref>
+            </bibl>
+            <msDesc>
+               <msIdentifier>
+                  <institution key="https://d-nb.info/gnd/37748-X" role="hasOwner">AT-OeStA Österreichisches Staatsarchiv (Archiv (ÖStA))</institution>
+                  <repository key="https://d-nb.info/gnd/1601181-8">AT-OeStA/AdR Archiv der Republik, 1918- (Abteilung)</repository>
+                  <collection>AT-OeStA/AdR MRang MR 1Rep Ministerrat 1. Republik, 1918 - 1938 (Bestand)</collection>
+                  <idno>AT-OeStA_AdR-MRang-MR-1.-Rep.-KRP-140</idno>
+               </msIdentifier>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <abstract>
+            <p>
+          <!--to be generated-->
+        </p>
+         </abstract>
+      </profileDesc>
+      <encodingDesc>
+         <styleDefDecl scheme="css"/>
+         <tagsDecl>
+            <rendition xml:id="b" scheme="css">font-weight:bold;</rendition>
+            <rendition xml:id="su" scheme="css">vertical-align:super;font-size:.7em;</rendition>
+            <rendition xml:id="s" scheme="css">text-decoration:line-through;</rendition>
+            <rendition xml:id="u" scheme="css">text-decoration:underline;</rendition>
+            <rendition xml:id="ow" scheme="css">text-decoration:line-through;text-decoration-style:double;</rendition>
+            <rendition xml:id="r" scheme="css">display:block;text-align:right;</rendition>
+            <rendition xml:id="letterspaced" scheme="css">letter-spacing:0.15em;</rendition>
+            <rendition xml:id="i" scheme="css">font-style:italic;</rendition>
+         </tagsDecl>
+         <editorialDecl>
+            <hyphenation>
+               <p>
+            <!--to be added-->
+          </p>
+            </hyphenation>
+            <correction>
+               <p>
+            <!--to be added-->
+          </p>
+            </correction>
+            <normalization>
+               <p>
+            <!--to be added-->
+          </p>
+            </normalization>
+            <punctuation>
+               <p>
+            <!--to be added-->
+          </p>
+            </punctuation>
+            <stdVals>
+               <p>
+            <!--to be added-->
+          </p>
+            </stdVals>
+            <p>
+          <!--to be added-->
+        </p>
+         </editorialDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#tfruehwirth" when-iso="2026-10-07">TEIGarage output upconverted with upconvert.xsl</change>
+         <change who="#tfruehwirth" when-iso="2026-10-07">TEI header populated with generate_tei_templates.py</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface/>
+   </facsimile>
+   <text>
+      <body>
+         <div xml:id="doc-krp-0140.xml">
+            <head type="dokument">
+               <title type="num">140.<note type="footnote">Das Protokoll trägt den Vermerk <hi rend="#i">Vertraulich!</hi>
+                  </note>
+               </title>
+               <title type="desc">
+                  <pb facs="krp-0140_r-0001"/>[Sonntag] 1920-01-25</title>
+            </head>
+            <div type="dokumentkopf">
+               <div type="vorsitz">
+                  <head>Vorsitz:</head>
+                  <p>Renner</p>
+               </div>
+               <div type="anwesend">
+                  <head>Anwesend:</head>
+                  <p>Deutsch, Eisler, Eldersch, Ellenbogen, Fink, Glöckel, Hanusch, Loewenfeld-Russ, Mayr, Miklas, Paul, Ramek, Reisch, Resch, Stöckler, Waiss, Zerdik</p>
+               </div>
+               <div type="zugezogen">
+                  <head>Zugezogen:</head>
+                  <p>Grimm, Kralowsky, Seitz, Wilfling</p>
+               </div>
+               <div type="schriftfuehrer">
+                  <head>Schriftführer:</head>
+                  <p>unbekannt</p>
+               </div>
+               <div type="dauer">
+                  <head>Dauer:</head>
+                  <p>15.30–20.00 Uhr</p>
+               </div>
+            </div>
+            <div type="komponenten">
+               <p>Reinschrift, Beilagen, geheimer Anhang, Konzept, stenographische Mitschrift, Entwurf der Tagesordnung, diverse Zusätze</p>
+            </div>
+            <div type="beilagen">
+               <head>Beilagen:</head>
+               <list>
+                  <item>
+                     <ref target="#krp-0140_top01">Zu TOP 1</ref>: <ref target="#krp-0140_b01">Entwurf des Staatsamtes für Handel und Gewerbe, Industrie und Bauten für die Beantwortung eines Angebots der englischen Regierung wegen Gewährung von Rohstoffkredit</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0140_top02">Zu TOP 2</ref>: <ref target="#krp-0140_b02">Entwurf einer Vollzugsanweisung zur Durchführung des Liquidierungsgesetzes</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0140_top04">Zu TOP 4</ref>: <ref target="#krp-0140_b03">Vortrag des Unterrichtsamtes über einen Gesetzesbeschluss der Steiermärkischen Landesversammlung zum Diensteinkommen der Volks- und Bürgerschullehrer, ihre Versetzung in den Ruhestand und die Hinterbliebenenversorgung</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0140_top05">Zu TOP 5</ref>: <ref target="#krp-0140_b04">Vortrag des Staatsamtes für Inneres und Unterricht, Unterrichtsamt, über den Gesetzesbeschluss der Vorarlberger Landesversammlung zum Diensteinkommen der Volks- und Bürgerschullehrer, ihre Versetzung in den Ruhestand und die Hinterbliebenenversorgung</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0140_top07">Zu TOP 7</ref>: <ref target="#krp-0140_b05">Vorlage der Staatsregierung über das Militärabbaugesetz mit Begründung, Vollzugsanweisung samt Verordnungsblatt</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0140_top08">Zu TOP 8</ref>: <ref target="#krp-0140_b06">Vortrag des Staatsamtes für Finanzen über die Einführung des Monopols für Mineralwasser und Mineralwasserprodukte</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0140_top12">Zu TOP 12:</ref>
+                     <ref target="#krp-0140_b07">Vortrag des Staatsamtes für soziale Verwaltung über die Übergabe des Pellagrafonds an die italienische Regierung</ref>
+                  </item>
+               </list>
+            </div>
+            <div type="protokoll">
+               <pb facs="krp-0140_r-0002"/>
+               <div type="top" xml:id="krp-0140_top01">
+                  <head>
+                     <label>
+                        <num n="1">1.</num>
+                        <seg>Staatlicher Rohstoffkredit.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Ing. <hi rend="#letterspaced">Zerdik</hi> bringt dem Kabinettsrate zur Kenntnis, dass der englische Konsul Phillpotts ein Telegramm von Sir William Goode erhalten habe, worin dieser mitteilt, dass die englische Re<pb facs="krp-0140_r-0003"/>gierung geneigt wäre, Österreich einen Rohstoffkredit zu gewähren, und zwar für den Bezug von Rohstoffen und Fertigfabrikaten aus England, Holland, Spanien und Schweden. Die betreffenden Kreditanteile würden lediglich zu Ankäufen in den jeweils als Kreditgeber in Betracht kommenden Ländern verwendet werden müssen. Sir William Goode habe um sofortige telegrafische Mitteilung ersucht, welche Artikel aus den genannten Ländern am dringendsten benötigt werden.</p>
+                  <p>Das Staatsamt für Handel und Gewerbe, Industrie und Bauten beabsichtige, Konsul Phillpotts aufgrund des mit Vertretern der hauptsächlich in Betracht kommenden Industrien gepflogenen Einvernehmens die aus der Beilage zum vorliegenden Protokoll ersichtliche Antwort zu erteilen.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Loewenfeld-Russ</hi> empfiehlt, bei Verwendung des erhofften Kredites auch auf die Rohstoffbedürfnisse der Brauindustrie Rücksicht zu nehmen.</p>
+                  <p>Unterstaatssekretär Dr. <hi rend="#letterspaced">Eisler</hi> beantragt, dass in den Beirat von Treuhändern neben Vertretern industrieller Organisationen auch solche von Gewerkschaften zugezogen werden.</p>
+                  <p>
+                     <pb facs="krp-0140_r-0004"/>Staatssekretär<note type="footnote">Handschriftliche Korrektur aus „Unterstaatssekretär“.</note> Dr. <hi rend="#letterspaced">Deuts[ch]</hi> unterstützt diesen Antrag, spricht sich jedoch mit Rücksicht auf die in England herrschende Temperenzbewegung gegen die vom Staatssekretär Dr. Loewenfeld-Russ verlangte, ausdrückliche Bedachtnahme auf die Brauindustrie aus.</p>
+                  <p>Einen gleichen Standpunkt nimmt auch der <hi rend="#letterspaced">Vorsitzend</hi>e ein.</p>
+                  <p>Der Kabinettsrat genehmigt sohin den vom Staatssekretär Ing. Zerdik vorgeschlagenen Entwurf für die der englischen Regierung zu erteilende Antwort mit der Maßgabe, dass in Pkt. II Abs. 2 ausdrücklich die Zuziehung von Vert[retern] industrieller und gewerkschaftlicher Organisationen in den Beirat von Treuhändern vorgesehen werde.</p>
+                  <p>Gleichzeitig wird das Staatsamt für Handel und Gewerbe, Industrie und Bauten eingeladen, gelegentlich der Veröffentlichung eines Kommuniqués über diese Angelegenheit der Presse als Richtlinien für die Erörterung des Gegenstandes auch einen offiziellen Kommentar über die Auffassung der Regierung zu liefern.</p>
+               </div>
+               <div type="top" xml:id="krp-0140_top02">
+                  <head>
+                     <label>
+                        <num n="2">2.</num>
+                        <seg>Vollzugsanweisung zur Durchführung des Liquidierungsgesetzes.</seg>
+                     </label>
+                  </head>
+                  <p>Der Vorsitzende legt dem Kabinettsrate den Entwurf einer Vollzugsanweisung, womit zur Durchführung des Ge<pb facs="krp-0140_r-0005"/>setzes vom 18. Dezember 1919, StGBl. Nr. 577, nähere Bestimmungen über die Liquidation erlassen werden, vor und erörtert die bei ihrer Ausarbeitung zugrunde gelegten Gesichtspunkte.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Reisch</hi> gibt der Anschauung Ausdruck, dass der Aufbau der Vollzugsanweisung mit den Intentionen des Liquidierungsgesetzes nicht in Einklang stehe, weshalb er sich die Erstattung von Gegenvorschlägen vorbehalten müsse.</p>
+                  <p>Der Kabinettsrat beschließt daher über Antrag des Vorsitzenden, den Entwurf der Vollzugsanweisung einer Kabinettskonferenz der an der Liquidierung beteiligten Staatssekretäre unter Zuziehung der Referenten zu überweisen, die ihn in einer am Montag den 26. Jänner d. J. um 10 Uhr vormittags in der Staatskanzlei stattfindenden Sitzung vorzuberaten und sodann in der Kabinettssitzung am 27. Jänner d. J. Bericht zu erstatten haben wird.</p>
+               </div>
+               <div type="top" xml:id="krp-0140_top03">
+                  <head>
+                     <label>
+                        <num n="3">3.</num>
+                        <seg>Unterhaltsbeiträge der Kriegerwitwen.</seg>
+                     </label>
+                  </head>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> bringt zur Kenntnis, dass aus Kreisen der Abgeordneten das dringende Verlangen nach einer materiellen Besserstellung der <pb facs="krp-0140_r-0006"/>Witwen und Waisen nach Kriegern erhoben worden sei. Er erbitte daher die Entscheidung des Kabinettsrates, ob die Staatsämter für Heereswesen und für Finanzen beauftragt werden sollen, eine Erhöhung dieser Kategorie von Unterhaltsbeiträgen vorzunehmen.</p>
+                  <p>
+                     <note type="footnote">Handschriftliche Korrektur aus „Unterstaatssekretär“</note>Staatssekretär Dr. <hi rend="#letterspaced">Deutsch</hi> führt aus, dass Unterhaltsbeiträge gegenwärtig an Angehörige von Volkswehrleuten mit einem monatlichen Aufwand von 3 Millionen K, dann an die Angehörigen von Invaliden, Vermissten, Gestorbenen und Gefallenen mit einem monatlichen Aufwand von 21 Millionen K und schließlich an Angehörige von Kriegsgefangenen mit einem monatlichen Aufwand von 14 Millionen K, einschließlich des diesen gewährten 50 % Zuschusses, ausgezahlt werden. Es sei wiederholt der Wunsch geäußert worden, den Angehörigen von Invaliden, Vermissten, Gestorbenen und Gefallenen den gleichen 50 % Zuschuss zu gewähren, wie er den Angehörigen von Kriegsgefangenen zugestanden wurde. Redner habe aber wegen der dadurch entstehenden schweren finanziellen Belastung Bedenken getragen, der Erfüllung dieser Forderung näher zu treten.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Reisch</hi> fügt ergänzend hinzu, dass die Krie[gerwit]<pb facs="krp-0140_r-0007"/>wen bereits nach dem Militärversorgungsgesetz zu behandeln seien und die Unterhaltsbeiträge nur noch übergangsweise weiterbeziehen. Eine Erhöhung der Unterhaltsbeiträge hätte zur Folge, dass die Kriegerwitwen mehr erhielten als ihre künftigen Rentenbezüge ausmachen und dadurch ganz davon abgelenkt würden, ihre Rentenansprüche geltend zu machen.</p>
+                  <p>Nach einer kurzen Debatte, an welcher sich Staatssekretär <hi rend="#letterspaced">Hanusch</hi> und Unterstaatssekretär Dr. <hi rend="#letterspaced">Resch</hi> beteiligten, beschließt der Kabinettsrat, die Staatsämter für Heer[es]wesen und für Finanzen einzuladen, einvernehmlich den Klubpräsidien der koalierten Parteien mitzuteilen, dass aus den oben angeführten Gründen eine Erhöhung der Unterhaltsbeiträge der Kriegerwitwen und -waisen nicht in Aussicht genommen werden könne.</p>
+               </div>
+               <div type="top" xml:id="krp-0140_top04">
+                  <head>
+                     <label>
+                        <num n="4">4.</num>
+                        <seg>Gesetzesbeschluss der Steiermärkischen Landesversammlung, womit § 1 Pkt. 3 des Gesetzes vom 4. Juli 1919, LGBl. Nr. 115, betreffend das Diensteinkommen der Volks- und Bürgerschullehrerschaft, ihre Versetzung in den Ruhestand und die Versorgung ihrer Hinterbliebenen, abgeändert wird.</seg>
+                     </label>
+                  </head>
+                  <p>Unterstaatssekretär <hi rend="#letterspaced">Glöckel</hi> teilt mit, dass die Steiermärkische Landesversammlung am 28. November 1919 einen Gesetzesbeschluss gefasst habe, womit § 1 Pkt. 3 des Gesetzes vom 4. Juli 1919, LGBl. Nr. 115, betreffend das Diensteinkommen der Volks- und Bürger<pb facs="krp-0140_r-0008"/>schullehrerschaft, ihre Versetzung in den Ruhestand und die Versorgung ihrer Hinterbliebenen, abgeändert wird.</p>
+                  <p>Da der vorliegende Gesetzesbeschluss vom Standpunkte der Staatsgesetze zu keinerlei Bedenken Anlass gebe, stelle der sprechende Unterstaatssekretär den Antrag, der Kabinettsrat wolle ihm zu der Mitteilung an die Steiermärkische Landesregierung ermächtigen, dass seitens der Staatsregierung gegen den Gesetzesbeschluss eine Vorstellung nicht erhoben und der sofortigen Kundmachung des Gesetzes zugestimmt werde.</p>
+                  <p>Der Kabinettsrat erteilt die erbetene Ermächtigung.</p>
+               </div>
+               <div type="top" xml:id="krp-0140_top05">
+                  <head>
+                     <label>
+                        <num n="5">5.</num>
+                        <seg>Gesetzesbeschluss der Vorarlberger Landesversammlung, worin Bestimmungen über das Diensteinkommen der Lehrpersonen an öffentlichen Volks- und Bürgerschulen, ihre Versetzung in den Ruhestand und die Versorgung ihrer Hinterbliebenen erlassen werden.</seg>
+                     </label>
+                  </head>
+                  <p>Unterstaatssekretär Glöckel gibt dem Kabinettsrate bekannt, dass die Landesversammlung in Vorarlberg am 6. Dezember 1919 einen Gesetzesbeschluss gefasst habe, worin Bestimmungen über das Diensteinkommen der Lehrpersonen der öffentlichen Volks- und Bürgerschulen, ihre Versetzung in den Ruhestand und die Versorgung ihrer Hinterbliebenen erlassen werden.</p>
+                  <p>Die wichtigsten Grundsätze dieses Gesetzes bestehen darin, dass die dauernd <pb facs="krp-0140_r-0009"/>angestellten Lehrpersonen in ihren Bezügen und Ruhegenüssen den Staatsbediensteten der VII.–XI. Rangsklasse nach den bis zum Inkrafttreten des Besoldungsübergangsgesetzes (Gesetz vom 18. Dezember 1919, StGBl. Nr. 57) geltenden gesetzlichen Bestimmungen und die Witwen und Waisen dieser Lehrpersonen wie die Hinterbliebenen der Staatsbediensteten der XI.–VII. Rangsklasse nach den dermaligen Gesetzen behandelt werden.</p>
+                  <p>Diese Bestimmungen beinhalten eine wesentliche Besserstellung der Vorarlberger Lehrerschaft, deren Bezüge bisher durch das Gesetz vom 5. August 1908, LGBl. Nr. 44, in einer den derzeitigen Verhältnissen keineswegs mehr entsprechenden Weise geregelt gewesen sei und wären daher von diesem Standpunkte aus wärmstens zu begrüßen. Mit dem Gesetze solle übrigens nur der gegenwärtigen Notlage der Lehrerschaft gesteuert werden. Es trage, wie im Art. 1 angeführt wird, nur provisorischen Charakter.</p>
+                  <p>Die einzelnen Bestimmungen des Gesetzes geben jedoch zu mehrfachen Bedenken Anlass.</p>
+                  <p>Zunächst stehe die in der Einführungsklausel enthaltene Bezeichnung „Der Vorarlberger Landtag“ nicht im Einklang <pb facs="krp-0140_r-0010"/>mit der Terminologie des § 1 des Gesetzes vom 14. November 1918, StGBl. Nr. 24, über die Übernahme der Staatsgewalt in den Ländern und des Gesetzes vom 14. März 1919, StGBl. Nr. 79, über die Volksvertretung, wonach die gesetzgebenden Körperschaften der Länder Landesversammlungen heißen.</p>
+                  <p>Nach Art. 2 Abs. 1, sollen alle Rechte und Ansprüche, die aus diesem Gesetz erwachsen, an dem Tage erlöschen, an dem durch ein neues Gesetz andere Bestimmungen auf diesem Gebiete in Kraft treten. Diese Bestimmung könnte in der Praxis zu vielen Schwierigkeiten Anlass geben und wäre besser den Durchführungsbestimmungen eines künftigen Gesetzes zu überlassen, ob und inwieweit die Bestimmungen dieses Gesetzes aufgehoben werden. Nach dem 2. Abs. dieses § sei dieses neue Gesetz „spätestens dann zu schaffen, sobald die Gehaltsverhältnisse der Angestellten des Staates und des Landes gesetzlich neu geregelt sind“. Hiezu sei zu bemerken, dass die Gehaltsverhältnisse der Staatsangestellten unterdessen bereits durch das eingangs erwähnte Besoldungsübergangsgesetz vom 18. Dezember 1919 neu geregelt worden und daher die Voraussetzungen für die <pb facs="krp-0140_r-0011"/>Durchführung dieses Auftrages der Landesversammlung an sich selbst zum Teile bereits gegeben seien.</p>
+                  <p>§ 1 des Gesetzes enthalte, abgesehen von dem etwas unklaren Einleitungssatze „das Gesetz bezieht sich zunächst“ noch folgende Bestimmung, die zu Bedenken Anlass gebe. Es überlasse die Regelung der Entlohnung der Religionslehrer, der Bezüge der Supplenten und Aushilfslehrer und der als Supplentinnen und Aushilfslehrerinnen bestellten Arbeitslehrerinnen der Vereinbarung zwischen Landesschulrat und Landesrat. Gleichartige Bestimmungen enthalten rücksichtlich der Bezüge der Aushilfslehrpersonen, der geprüften Lehrer an Notschulen, der Supplenten und der ungeprüften Handarbeitslehrerinnen die §§ 15, 17 und 18. Diese Bestimmungen stehen nicht in Einklang mit dem § 55 des Reichsvolksschulgesetzes, wonach die Regelung des gesetzlichen Diensteinkommens der Volksschullehrerschaft der Landesgesetzgebung überlassen ist, und mit § 5 des Gesetzes vom 17. Juni 1888, RGBl. Nr. 99, wonach die Regelung der den Religionslehrern an öffentlichen Volks- und Bürgerschulen zukommenden festen Bezüge und Remunerationen und die nähere Feststellung der Bedingungen ihrer Gewährung gleichfalls der Landesgesetzgebung <pb facs="krp-0140_r-0012"/>vorbehalten ist. Es gehe demnach nicht an, dass eine Landesversammlung die ihr durch das Reichsvolksschulgesetz übertragene Aufgabe dem Landesschulrat und dem Landesrat überlasse.</p>
+                  <p>§ 5 bedürfe einer formellen Richtigstellung; hienach seien die Bezugsklassen und Bezugsstufen der Volksschullehrer den Gehaltsstufen der XI.–VIII. Rangsklasse der Staatsbeamten angepasst; diese Gehaltsstufen der Staatsbeamten seien dem Gesetze vom 19. Feber 1907, RGBl. Nr. 34, entnommen, dieses selbst aber sei im § 5 des vorliegenden Landesgesetzes nicht genannt; die Zitierung des Gesetzes vom 19. Februar 1907 erscheine aber mit Rücksicht auf das unterdessen in Kraft getretene Besoldungsübergangsgesetz erforderlich.</p>
+                  <p>Die Bürgerschullehrer werden in diesem Paragrafen rücksichtlich der Vorrückungsfristen analog wie die Staatsbediensteten der Gruppe B nach § 52 des Gesetzes vom 25. Jänner 1914, RGBl. Nr. 55 (Dienstpragmatik), behandelt und es sei offenbar aus einem Versehen die Zeit des Verbleibens in der 2. Bezugsstufe der II. Bezugsklasse mit drei Jahren angegeben, obwohl bei sinngemäßer Durchführung dieser Gleichstellung diese Zeit nur zwei Jahre betragen sollte. Ebenso dürfte es auf einen Irrtum zurück<pb facs="krp-0140_r-0013"/>zuführen sein, dass in der V. Bezugsklasse nur zwei Bezugsstufen angegeben sind, obwohl in der dieser Bezugsklasse entsprechenden VII. Rangsklasse der Staatsbediensteten nach dem mehrerwähnten Gesetze vom 19. Februar 1907 vier Gehaltsstufen bestehen.</p>
+                  <p>Im § 6 der die Bezüge der dauernd angestellten Arbeitslehrerinnen regele, sei offenbar aus einem Versehen die Dauer des Verbleibens in der 4. Bezugsstufe der III. Bezugsklasse ausgeblieben.</p>
+                  <p>Im § 7 letzter Abs. wäre in der vorletzten Zeile nach dem Worte „nach“ das Wort „Erreichung“ einzusetzen.</p>
+                  <p>§ 9, welcher die Höhe der Aktivitätszulagen regele, enthalte auch Bestimmungen darüber, wer die Lehrerbesoldungsauslagen zu tragen hat. Zunächst sei zu bemerken, dass diese Bestimmung eigentlich in den Rahmen des Gesetzes über die Errichtung, Erhaltung und den Besuch der Volksschulen falle und dass die Lehrerbesoldungsauslagen nach dem dermalen in Vorarlberg in Geltung stehenden Gesetze über die Errichtung, die Erhaltung und den Besuch der Volksschulen vom 28. August 1899, LGBl. Nr. 47, und den dasselbe abändernden Bestimmungen <pb facs="krp-0140_r-0014"/>vom 5. August 1908, LGBl. Nr. 45, von den Schulgemeinden und dem Lande getragen werden.</p>
+                  <p>Nach § 9 des neuen Gesetzes werden nun diese Auslagen aus dem neuzubildenden Landesschulfonds ausbezahlt, ohne dass eine Bestimmung getroffen sei, wer bis zur Bildung dieses Landesschulfonds die gedachten Auslagen trage, ferner sollen nach dieser gesetzlichen Bestimmung die Ortsschulräte einen übrigens nicht näher bestimmten Teil dieser Auslagen tragen, was schon aus dem Grunde unstatthaft sei, weil die Ortsschulräte Schulaufsichtsbehörden, aber nicht Vermögenssubjekte, welche zur Tragung von Lasten herangezogen werden können, seien.</p>
+                  <p>Nach dem letzten Satze dieses Paragrafen übernehme das Land 40 % der auf dieses und die Gemeinden entfallenden Personalauslagen, ohne dass darin aber festgesetzt sei, wieviel dieser Auslagen auf Land und Gemeinden entfallen.</p>
+                  <p>Der § 9 erscheine nun abgesehen von den angeführten Umständen insbesondere deshalb bedenklich, weil nach den Übergangsbestimmungen (§ 45) alle landesgesetzlichen Bestimmungen, soweit sie dem neuen Gesetze zuwiderlaufen, oder durch dasselbe ersetzt werden, <pb facs="krp-0140_r-0015"/>außer Kraft treten. Es würden daher durch das Inkrafttreten dieses Paragrafen jedenfalls Zweifel entstehen, inwieweit die bisherigen Bestimmungen des Schulerhaltungsgesetzes durch diesen § 9 derogiert erscheinen.</p>
+                  <p>Nach § 49 des Gesetzes werde mit der Durchführung des Gesetzes die Landesregierung betraut. Der sprechende Unterstaatssekretär habe bereits in der 109. Sitzung des Kabinettsrates vom 26. September 1919 gelegentlich des Vortrages des Gesetzesbeschlusses der Salzburger Landesversammlung vom 15. Juli 1919, betreffend das Diensteinkommen der Volks- und Bürgerschullehrer, welches eine gleiche Durchführungsbestimmung enthielt, ausgeführt, dass nach seinem Dafürhalten zur Durchführung aller Volksschulgesetze nicht die Landesregierung, sondern das Staatsamt für Inneres und Unterricht berufen sei. Um Wiederholungen zu vermeiden, nehme er auf seine damaligen Ausführungen Bezug, im Grunde welcher er vom Kabinettsrate ermächtigt wurde, gegen den erwähnten Gesetzesbeschluss der Landesversammlung in Salzburg Vorstellung zu erheben.</p>
+                  <p>Redner stelle den Antrag, der Kabinettsrat wolle ihn ermächtigen, wegen der gegen den Art. 2 Abs. 1 sowie gegen die §§ 1, 9, 15, 16, 18 und 49 des <pb facs="krp-0140_r-0016"/>vorliegenden Gesetzesbeschlusses vorgebrachten rechtlichen Bedenken im Sinne des Art. 14 des Gesetzes vom 14. März 1919, StGBl. Nr. 179, über die Volksvertretung bei der Landesversammlung im Wege der Landesregierung Vorstellung zu erheben. Einige sonstige im Gesetzesbeschlusse vorkommende Mängel stilistischer und gesetzestechnischer Natur beabsichtige er der Landesregierung lediglich mit dem Ersuchen bekanntzugeben, beim Landesrate eine entsprechende Änderung durch die Landesversammlung in Anregung zu bringen.</p>
+                  <p>Der Kabinettsrat beschließt im Sinne des gestellten Antrages.</p>
+               </div>
+               <div type="top" xml:id="krp-0140_top06">
+                  <head>
+                     <label>
+                        <num n="6">6.</num>
+                        <seg>Gesetzesbeschluss der Vorarlberger Landesversammlung über die Errichtung und Erhaltung landwirtschaftlicher Fortbildungsschulen.</seg>
+                     </label>
+                  </head>
+                  <p>Unterstaatssekretär Glöckel macht schließlich Mitteilung von einem am 19. Dezember 1919 von der Vorarlberger Landesversammlung gefassten Gesetzesbeschlusse über die Errichtung und Erhaltung landwirtschaftlicher Fortbildungsschulen.</p>
+                  <p>Einleitend bemerkt Redner, dass es sich um die Errichtung von Lehrkursen für die der Schulpflicht entwachsenen Jugend im Sinne der §§ 10 und 59 des Reichsvolksschulgesetzes handle, welche, wie im § 1 des <pb facs="krp-0140_r-0017"/>Gesetzes hervorgehoben wird, den Zweck haben, die in der allgemeinen Volksschule erworbenen Kenntnisse mit besonderer Berücksichtigung der örtlichen Verhältnisse zu vertiefen und praktisch zu erweitern.</p>
+                  <p>Der Reform dieses Zweiges des Fortbildungswesens habe die ehemalige österreichische Regierung schon seit vieles Jahren ihr Augenmerk zugewendet und es seien vom bestandenen Ministerium für Kultus und Unterricht seinerzeit Leitsätze an die Landesschulbehörden hinausgegeben worden, in welchen ausführliche Anregungen zur Durchführung der Reform dieses Fortbildungswesens gegeben und insbesondere auch die landesgesetzliche Regelung dieser Frage empfohlen wurden.</p>
+                  <p>Was den Inhalt des Gesetzes anbelange, sei zu bemerken, dass auch in der Einleitungsklausel zu diesem Gesetze wieder der Ausdruck „Vorarlberger Landtag“ gewählt wurde, welcher der Terminologie der Gesetze vom 14. November 1918, StGBl. Nr. 24, betreffend die Übernahme der Staatsgewalt in den Ländern und des Gesetzes vom 14. März 1919, StGBl. Nr. 179, über die Volksvertretung, worin die gesetzgebenden Körperschaften der Länder als Landesversammlungen bezeichnet werden, nicht entspreche.</p>
+                  <p>
+                     <pb facs="krp-0140_r-0018"/>Im § 3 werde die Errichtung der Fortbildungsschulen dem Landesrate nach Einvernahme des Landesschulrates aufgrund von Sitzungsbeschlüssen der Ortsschulräte und Gemeindevertretungen übertragen; die sachlichen Mittel sollen nach § 4 von der Gemeinde aufgebracht werden; für die anderen Bedürfnisse sollen, insoweit sie nicht durch Beiträge des Staates und der Interessenverbände gedeckt sind, Land und Gemeinde zu gleichen Teilen aufkommen.</p>
+                  <p>Die Frage der staatlichen Beteiligung an den Kosten derartiger Kurse sei in den erwähnten, im Einvernehmen mit dem Finanzministerium hinausgegebenen Leitsätzen des Ministeriums für Kultus und Unterricht ausführlich behandelt und als Höchstausmaß der staatlichen Beteiligung ein Drittteil der anderweitig nicht bedeckten persönlichen Auslagen angenommen worden.</p>
+                  <p>Der sprechende Unterstaatssekretär beabsichtige die Landesregierung bei Bekanntgabe der Stellungnahme der Staatsregierung zu diesem Gesetze insbesondere auch darauf aufmerksam zu machen, dass sich die beteiligten Staatsämter die freie Schlussfassung über die Beitragsleistung des Staates zu diesem Aufwande in jedem einzelnen Falle vorbehalten werden, dass diese Beitragsleistung auf <pb facs="krp-0140_r-0019"/>keinen Fall über das oberwähnte Maximalausmaß hinausgehen werde und dass sie um der Staatsregierung einen Einfluss auf diesen so wichtigen Unterrichtszweig zu wahren, jedenfalls davon werde abhängig gemacht werden, dass dem Staatsamte für Inneres und Unterricht die Genehmigung des Beschlusses des Landesrates auf Errichtung einer solchen Schule, die Genehmigung des Lehrplanes und die Bestätigung der ersten Anstellung des Lehrers bzw. Leiters der betreffenden ländlichen Fortbildungsschule vorbehalten bleiben müsse.</p>
+                  <p>Diese Vorbehalte wären lediglich als Bedingung für die Beitragsleistung des Staates im einzelnen Falle zu machen und werde hiedurch die noch später zu besprechende, im Reichsvolksschulgesetz vorgesehene Einflussnahme des Staatsamtes für Inneres und Unterricht auf diese Fortbildungsschulen nicht berührt.</p>
+                  <p>Die Genehmigung und endgiltige Festsetzung der Lehrpläne solle nach § 6 durch den Landesrat nach Anhörung des Landesschulrates erfolgen. Da es sich bei dem ländlichen Fortbildungsunterrichte um eine Erweiterung des Unterrichtes der Volksschulen handle, die Lehrpläne für Volksschulen aber gemäß § 4 des Reichsvolksschulgesetzes vom Minister für Kultus und Unterricht festgesetzt werden, <pb facs="krp-0140_r-0020"/>wäre zum mindesten die Festsetzung des Normallehrplanes dem Staatsamte für Inneres und Unterricht vorzubehalten, und es stehe sohin die Außerachtlassung des Staatsamtes zu dieser Funktion mit dem Reichsvolksschulgesetz nicht im Einklang.</p>
+                  <p>§ 7 enthalte die sehr zweckmäßige Bestimmung, dass zur Erteilung des Unterrichtes mit Ausnahme des Religionsunterrichtes Volks- und Bürgerschullehrer berufen werden sollen. Für die Erteilung dieses Unterrichtes sei aber eine spezielle Lehrbefähigung erforderlich, die in der Regel durch Absolvierung eines für diese Zwecke bestimmten Fortbildungskurses und durch Ablegung einer aufgrund dieses Kurses abgelegten Lehrbefähigungsprüfung zu erwerben wäre. Im Gesetze fehle aber jegliche Bestimmung über die Lehrbefähigung. Die näheren Bestimmungen über die Lehrbefähigungsprüfung hätten nach Analogie des § 38 des Reichsvolksschulgesetzes im Gesetze dem Staatsamte für Inneres und Unterricht vorbehalten werden sollen.</p>
+                  <p>Im § 8 werde die fakultative Bestellung eines eigenen Inspektors für derartige Fortbildungsschulen vorgesehen. Es sei aber in diesem Paragrafen nichts darüber enthalten, wer zur normalen Versehung des Aufsichtsdienstes berufen ist und es werde also diesfalls noch klar<pb facs="krp-0140_r-0021"/>zustellen sein, ob diese Inspektionsorgane neben den Bezirksschulinspektoren zu fungieren haben werden. Auf jeden Fall müsse dem Unterrichtsamte mit Rücksicht auf das ihm gesetzlich zustehende oberste Aufsichtsrecht zumindest die Genehmigung der Bestellung der betreffenden Inspektionsorgane vorbehalten bleiben.</p>
+                  <p>Im § 9 des Gesetzes werde der Schulbesuch der landwirtschaftlichen Fortbildungsschulen als ein pflichtgemäßer festgesetzt. Wenngleich in den „Leitsätzen“ die Einführung des Schulzwanges für diese Schulen als nicht rätlich bezeichnet wird, glaube Redner, dass diese Bestimmung an und für sich nicht zu beanständen wäre, und er habe über eine diesbezügliche, vor Vorlage des Gesetzes erfolgte Anfrage dem Landesrate in Vorarlberg mitgeteilt, dass es ihm überlassen bleiben müsse, zu beurteilen, ob die immerhin eine tiefeingreifende Änderung gegen den bisherigen Zustand beinhaltende Einführung des Schulzwanges für ländliche Fortbildungsschulen sich in Vorarlberg als durchführbar erweisen werde. § 9 enthalte aber keinerlei nähere Bestimmungen über die örtliche Zugehörigkeit der Schulpflichtigen zu einer bestimmten Schule, ferner darüber, welchen Berufskreisen die Schulpflichtigen anzugehören haben und wie lange die Schul<pb facs="krp-0140_r-0022"/>pflicht dauern soll. Diese Fragen wären aber bei Einführung des Schulzwanges jedenfalls in ihren Grundzügen im Gesetze selbst klarzustellen.</p>
+                  <p>§ 10 enthalte Bestimmungen über die Schulordnung und setze sehr strenge Strafen bis zu achttägiger Haft und 100 K Geldstrafe für Schulversäumnisse fest. Die Höhe dieser Strafen werde im Berichte des landwirtschaftlichen Ausschusses mit dem urwüchsigen, aber schwer lenkbaren Charakter der Bauernbevölkerung begründet und wäre hiegegen an und für sich nichts einzuwenden; wohl aber sei die Bestimmung, dass der auch in § 29 des Vorarlberger Schulerrichtungsgesetz zur Strafgewalt berufene Ortsschulrat die Ausführung der Strafhandlung der Bezirkshauptmannschaft übertragen könne, nicht statthaft, da einerseits nicht die Bezirkshauptmannschaft, sondern der Bezirksschulrat die dem Ortsschulrate vorgesetzte Behörde sei und eine Delegation wohl von einer höheren an eine niedrigere Behörde, aber nicht umgekehrt erfolgen könne.</p>
+                  <p>Im § 12 werde mit dem Vollzuge dieses Gesetzes die Landesregierung betraut. Hinsichtlich dieser letzteren Bestimmung verweist Redner auf seine Ausführungen anlässlich des soeben behandelten Gesetzes<pb facs="krp-0140_r-0023"/>beschlusses der Vorarlberger Landesversammlung über das Diensteinkommen der Volks- und Bürgerschullehrerschaft. Demgemäß wäre im § 12 mit der Durchführung des Gesetzes das Staatsamt für Inneres und Unterricht zu betrauen, und zwar im Einvernehmen mit dem Staatsamt für Land- und Forstwirtschaft, da es sich um einen, wenn auch nicht speziell landwirtschaftlichen, so doch einen für die ländliche Bevölkerung vorgesehenen Unterricht zur Ertüchtigung im landwirtschaftlichen Berufe handle.</p>
+                  <p>Der sprechende Unterstaatssekretär gelangt sohin zu dem Antrage, der Kabinettsrat wolle ihn ermächtigen, gegen den Gesetzesbeschluss der Vorarlberger Landesversammlung vom 19. Dezember 1919 wegen Nichtberücksichtigung der Kompetenz des Staatsamtes für Inneres und Unterricht hinsichtlich der Genehmigung der Lehrpläne (§ 6), wegen der unterbliebenen Bestimmungen über die Lehrbefähigung (§ 7), der ergänzungsbedürftigen Bestimmungen hinsichtlich der Inspektion (§ 8) und des Schulzwanges (§ 9), der besprochenen Bestimmung des § 10 wegen Delegation der Bezirkshauptmannschaft, endlich wegen der Durchführungsbestimmung des § 12 bei der Landesversammlung im Wege der Landesregierung im Sinne des Art. 14 des Gesetzes vom 14. März <pb facs="krp-0140_r-0024"/>1919, StGBl. Nr. 179, über die Volksvertretung Vorstellung zu erheben, die übrigen formellen und gesetzestechnischen Mängel des Gesetzesbeschlusses aber der Landesregierung mit dem Ersuchen bekanntzugeben, eine entsprechende Abänderung bei der Landesversammlung im Wege des Landesrates in Anregung zu bringen.</p>
+                  <p>Endlich ersucht Unterstaatssekretär Glöckel, im Falle der Berücksichtigung dieser Wünsche durch einen neuen Gesetzesbeschluss von einer abermaligen Berichterstattung an den Kabinettsrat absehen zu dürfen und ihn zu ermächtigen, in diesem Falle der Landesregierung zu eröffnen, dass gegen die sofortige Kundmachung eines solcher Art geänderten Gesetzesbeschlusses ein Anstand nicht obwalte.</p>
+                  <p>Vizekanzler <hi rend="#letterspaced">Fink</hi> erklärt, dass nach seiner Anschauung die Angelegenheiten der Landeskultur in die Kompetenz der Landesgesetzgebung fallen. Die Frage der Errichtung und Erhaltung landwirtschaftlicher Fortbildungsschulen dürfte daher, zumal im vorliegenden Falle kein perzentueller Staatsbeitrag bedungen wird, in den ausschließlichen Wirkungskreis der Landesversammlung und der Landesregierung gehören. Sollte jedoch der Kabinettsrat dieser Auffassung mit Rücksicht auf die bestehenden Gesetze nicht <pb facs="krp-0140_r-0025"/>beipflichten, so dürfe diese Stellungnahme des Kabinettsrates kein Präjudiz für die bei der Verfassungsreform vorzunehmende Abgrenzung der Kompetenzen zwischen Bund und Ländern bilden.</p>
+                  <p>Der Kabinettsrat nimmt diese Erklärung zur Kenntnis und erteilt dem Unterstaatssekretär Glöckel die erbetenen Ermächtigungen.</p>
+               </div>
+               <div type="top" xml:id="krp-0140_top07">
+                  <head>
+                     <label>
+                        <num n="7">7.</num>
+                        <seg>Gesetz, womit Maßnahmen zur Ausscheidung der überzähligen Berufsmilitärpersonen aus dem aktiven Militärdienstverhältnis getroffen werden (Militärabbaugesetz).</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Deutsch</hi> legt dem Kabinettsrate den Entwurf eines Gesetzes, womit Maßnahmen zur Ausscheidung der überzähligen Berufsmilitärpersonen aus dem aktiven Militärdienstverhältnis getroffen werden (Militärdienstabbaugesetz), vor und bespricht die Ansätze der in den §§ 4 und 6 vorgesehenen Übergangsgebühren und Abfertigungen in ihrem ziffermäßigen Ergebnisse für die einzelnen Dienstgrade. Er verweist hiebei darauf, dass die Art der Behandlung der Offiziere mit einer Dienstzeit bis zu neun Jahren Ansprüche der Reserveoffiziere nach Gewährung gleichartiger Zuwendungen auslösen dürften und erbittet daher die Entscheidung des Kabinettsrates, ob es bei den Ansätzen der Vorlage zu verbleiben habe, sowie die Ermächtigung, allfällige Abänderungen stilisti<pb facs="krp-0140_r-0026"/>scher Natur an der Vorlage im Einvernehmen mit dem Staatsamte für Finanzen vornehmen zu dürfen.</p>
+                  <p>Staatssekretär <hi rend="#letterspaced">Hanusch</hi> macht gegen die Bestimmungen der § 6 Abs. a und b das Bedenken geltend, dass danach die jetzt ausscheidenden Offiziere bedeutend bessergestellt würden als jene, welche im November 1918 abgefertigt wurden. Diesem Bedenken könne dadurch Rechnung getragen werden, dass der Bemessung der Abfertigung nicht die anrechenbare, sondern die effektive Dienstzeit zugrunde gelegt wird und bei einer effektiven Dienstzeit bis zu fünf Jahren die sechsmonatigen Gebühren, bei einer Dienstzeit von sechs bis zehn Jahren die zwölfmonatige Gebühr gewährt werden.</p>
+                  <p>Sektionschef Dr. <hi rend="#letterspaced">Grimm</hi> verweist auf die schwere Belastung der Staatsfinanzen infolge der Bestimmung, dass abweichend von dem Grundsatze des Pensionsbegünstigungsgesetzes für die Zivilstaatsbediensteten bei den Offizieren außer dem Gehalte auch die Bereitschaftszulagen und sonstigen militärischen Nebengebühren in die Berechnungsgrundlage für die Abfertigung einbezogen werden sollen. Das Pensionsbegünstigungsgesetz lege den Abfertigungen nur die reinen Gehalte zugrunde, berechne deren Betrag aber mit einem höheren <pb facs="krp-0140_r-0027"/>Vielfachen als im Militärabbaugesetz vorgesehen ist.</p>
+                  <p>Unterstaatssekretär Dr. <hi rend="#letterspaced">Eisler</hi> bezeichnet die Einbeziehung der im Kriege aktivierten Reserveoffiziere unter die Militärberufspersonen als eine ungerechtfertigte Besserstellung dieser Gruppe im Vergleiche zu den während des Krieges in der Reserve verbliebenen Offizieren und wünscht deren Ausschaltung aus dem Kreise der Abfertigungsberechtigten. Seiner Meinung nach müsste weiters die Berechnung der Abfertigung auf eine solche Grundlage gestellt werden, dass jene Offiziere, welche nach den Grundsätzen der Abfertigung vom November 1918 nur die halben Jahresbezüge erhalten hätten, nunmehr nicht vermöge ihres Weiterverbleibens im Dienste seit dem Umsturze Anspruch auf die Zuerkennung einer ganzjährigen Abfertigung erlangen. Zu diesem Zwecke beantrage er, die Abfertigung im Ausmaße der sechsmonatigen Gebühren für eine Dienstzeit in der Dauer von ein bis elf anrechenbaren Jahren vorzusehen.</p>
+                  <p>Unterstaatssekretär Dr. <hi rend="#letterspaced">Resch</hi>, Staatssekretär <hi rend="#letterspaced">Hanusch</hi> und der Vorsitzende betonen die Notwendigkeit, alle Leistungen nach dem Militärabbaugesetze derart zu bemessen, dass den Heimkehrern keine Handhabe geboten werde, daraus Forderungen für sich abzu<pb facs="krp-0140_r-0028"/>leiten.</p>
+                  <p>Unterstaatssekretär <hi rend="#letterspaced">Glöckel</hi> erweitert diesen Gesichtspunkt auch auf die Zivilstaatsbediensteten und spricht sich daher gegen die Einbeziehung der Bereitschaftszulage in die Berechnungsgrundlage der Abfertigungsbeträge aus.</p>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> empfiehlt eine Änderung des Gesetzestextes in der Richtung, dass die Abfertigungsbeträge, welche die Pensionen vertreten, nicht ziffermäßig angeführt werden, sondern bloß die Grundlagen, auf denen ihre Berechnung erfolgt.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Reisch</hi> schlägt zu diesem Zwecke vor, das Gesetz hätte die Pensionen nach Maßgabe der Dauer der Dienstzeit zu bestimmen und die Regierung zu ermächtigen, über Wunsch der Pensionsparteien die Ruhegenüsse in der Form eines Abfertigungsbetrages zu kapitalisieren. Dabei könnte, um einen Anreiz zur Entscheidung für die dem Staate günstigere Form der Abfertigung zu bieten, jenen, welche bis zum 1. Juli 1920 die Kapitalisierung begehren, eine gewisse Erhöhung der Abfertigung als Prämie zugestanden werden.</p>
+                  <p>Auch Unterstaatssekretär Dr. <hi rend="#letterspaced">Eisler</hi> tritt für die möglichste Begünstigung des Systems der Abfertigung ein, weil damit jede Beziehung der ehemaligen Offi<pb facs="krp-0140_r-0029"/>ziere zum Staate gelöst und allen späteren Förderungen nach Erhöhung der Ruhegenüsse vorgebeugt würde.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Deutsch</hi> pflichtet der Notwendigkeit, Beispielfolgerungen aus dem Militärabbaugesetze für die Heimkehrer hintanzuhalten, bei und spricht sich daher für eine Abänderung der Abs. a und b des § 6 im Sinne des Antrages des Staatssekretärs Hanusch aus. Diese beiden Absätze wären mithin derart zu fassen, dass im praktischen Erfolge die vor erlangter Pensionsberechtigung ausscheidenden Offiziere auch jetzt nur jene Beträge erhalten, die ihnen zugefallen wären, wenn sie sich im November 1918 hätten abfertigen lassen. Die Einbeziehung der Bereitschaftszulage in die Berechnungsgrundlage für die Abfertigungen werde schwer zu vermeiden sein, da sie auch bei den Abfertigungen vom November 1918 angerecht worden sei. In den beiden unteren Graden einen Unterschied zwischen aktiven Offizieren und aktivierten Reserveoffizieren zu machen scheine dem Redner nicht angebracht; diese Unterscheidung sei auch bei der Abfertigung im November 1918 nicht gemacht worden. Einer Entscheidung bedürfe schließlich noch die Frage des Termines für die Durchführung des Abbaues. Nach der ursprünglichen Absicht sollte der Abbau sechs Monate nach In<pb facs="krp-0140_r-0030"/>krafttreten des Wehrgesetzes beendet sein; da dies einen zu langen Aufschub bedeuten würde, bringe Redner den 1. Juli 1920 als Termin in Antrag.</p>
+                  <p>Nachdem noch Sektionschef Dr. <hi rend="#letterspaced">Kralowsky</hi> die im Gesetzentwurfe gewählten Ansätze begründet hatte, beschließt der Kabinettsrat, die Staatsämter für Heer[es]wesen und für Finanzen zu beauftragen, unter Zuziehung des Staatsamtes für soziale Verwaltung die Vorlage nach folgenden Gesichtspunkten umzuarbeiten und dem Kabinettsrate in der Sitzung vom 27. Jänner d. J. neuerlich zur Beratung vorzulegen:</p>
+                  <list>
+                     <item n="1">
+                        <label>1.)</label> Gagisten mit einer anrechenbaren Dienstzeit bis einschließlich elf Dienstjahren erhalten bei ihrem Ausscheiden aus dem aktiven Dienste die Halbjahresgebühren,</item>
+                     <item n="2">
+                        <label>2.)</label> Gagisten mit einer anrechenbaren Dienstzeit von zwölf bis einschließlich 14 Dienstjahren die Jahresgebühren ausbezahlt.</item>
+                  </list>
+                  <p>In beiden Fällen ist die Bereitschaftszulage einzurechnen.</p>
+                  <list>
+                     <item n="1">
+                        <label>3.)</label> Gagisten mit einer Dienstzeit von mehr als 14 Jahren erhalten Pensionen, deren Höhe nach den Grundsätzen des Pensionsbegünstigungsgesetzes für Zivilstaatsangestellte zu bemessen ist. Die Regierung wird ermächtigt, den Pensionsparteien über ihr Ansuchen die Ruhegenüsse <pb facs="krp-0140_r-0031"/>in der Form eines Abfertigungsbetrages zu kapitalisieren. Wird die Kapitalisierung bis zum 1. Juli 1920 in Anspruch genommen, so erhöht sich die Abfertigung um eine verhältnismäßige Prämie. Zifferangaben über die Höhe des Abfertigungsbetrages sind im Gesetzestexte zu vermeiden.</item>
+                     <item n="2">
+                        <label>4.)</label> Der Abbau der Gagisten hat bis spätestens 1. Juli 1920 durchgeführt zu sein.</item>
+                  </list>
+                  <p>Anschließend daran erbittet und erhält Staatssekretär Dr. <hi rend="#letterspaced">Deutsch</hi> noch die Ermächtigung, behufs erleichterter Durchführung des Abbaues unter den Gagisten in etwa 2.443 Fällen Beförderungen und in etwa 800 Fällen Vorrückungen in höhere Gehaltsstufen vornehmen und ausscheidenden Unteroffizieren die normalmäßig zufallenden Personalzulagen zuerkennen zu dürfen.</p>
+               </div>
+               <div type="top" xml:id="krp-0140_top08">
+                  <head>
+                     <label>
+                        <num n="8">8.</num>
+                        <seg>Durchführung des Monopols für Mineralwässer und Mineralwasserprodukte.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr<hi rend="#letterspaced">. Reisch</hi> erinnert daran, dass im Sinne des Gesetzentwurfes, betreffend die Einführung eines Monopols für Mineralwässer und Mineralwasserprodukte, das Monopolsrecht hinsichtlich der Erzeugung nur bei den künstlichen Mineralwässern und Mineralwasserprodukten ausgeübt werden soll. Es sei dies in der Weise gedacht, dass der Staat das aus<pb facs="krp-0140_r-0032"/>schließliche Recht zur Herstellung dieser Artikel einer Privatunternehmung überträgt, welche die Erzeugnisse in den von der Staatsverwaltung festzusetzenden Dosierungen und zu den ebenso bestimmten Preisen an die Abnehmer zu liefern hat, dem Staate aber für je einen Liter abgesetzten künstlichen Mineralwassers oder des dieser Menge entsprechenden Trockenproduktes eine feste Monopolsgebühr abführt und ihm überdies eine Beteiligung am Reingewinn einräumt, wenn dieser ein gewisses Ausmaß übersteigt.</p>
+                  <p>Zur Gründung dieser Monopolsunternehmung habe sich unter Führung des Präsidenten der Vereinigung der österreichischen Industrie in Wien, Fritz Hamburger, ein Konsortium gebildet. Mit dem Konsortium habe nun das Staatsamt für Finanzen einen Vertrag wegen Übertragung des Monopolsrechtes abzuschließen, mit der Wirkung, dass die vom Konsortium zu gründende Unternehmung in die aus dem Vertrage entspringenden Rechte und Pflichten einzutreten haben wird. Die Monopolsunternehmung selbst sei als Gesellschaft mit beschränkter Haftung gedacht. Als technischer Leiter der in Bad Aussee zu errichtenden Betriebsanlage sei von der Gesellschaft Mag. pharm. Gustav Hummer in Aussicht genommen.</p>
+                  <p>Der sprechende Staatssekretär erörtert<pb facs="krp-0140_r-0033"/>sodann die wesentlichen Bestimmungen des mit der Gesellschaft abschließenden Vertrages mit dem Beifügen, dass der Vertragsentwurf von der Finanzprokuratur überprüft und dem Staatsamt für soziale Verwaltung zur Kenntnis gebracht worden sei.</p>
+                  <p>Er erbitte sich die Ermächtigung des Kabinettsrates, den Vertrag abschließen zu dürfen.</p>
+                  <p>Der Kabinettsrat erteilt die erbetene Ermächtigung.</p>
+               </div>
+               <div type="top" xml:id="krp-0140_top09">
+                  <head>
+                     <label>
+                        <num n="9">9.</num>
+                        <seg>Erhöhung des Fettpreises.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Reisch</hi> verweist darauf, dass der Kabinettsrat den Fettpreis von der ersten Februarwoche an auf 100 K festgesetzt habe. Infolge des andauernden Steigens des Dollarkurses könne mit einem solchen Preise nicht das Auslangen gefunden werden. Dabei sei auch in Betracht zu ziehen, dass bei einem Preise von 100 K das Fett sich billiger stellen würde als einzelne Fleischsorten in den teueren Wochen. Redner beantrage daher eine Erhöhung des Fettpreises auf 120 K.</p>
+                  <p>Nachdem Staatssekretär Dr. <hi rend="#letterspaced">Loewenfeld-Russ</hi> es als eine zu starke Belastung der Bevölkerung erklärt hatte, gleichzeitig mit den Brot-, Mehl- und Zuckerpreisen auch den Preis für das <pb facs="krp-0140_r-0034"/>Fett zu erhöhen, beschließt der Kabinettsrat, die Entscheidung über diese Frage bis zum Ablaufe der beiden ersten Wochen der nächsten Fettkartenperiode zu verschieben.</p>
+               </div>
+               <div type="top" xml:id="krp-0140_top10">
+                  <head>
+                     <label>
+                        <num n="10">10.</num>
+                        <seg>Abschluss eines Vertrages mit dem Deutschen Reiche über die Verwertung der dort lagernden Kriegsgüter der ehemaligen österreichisch-ungarischen Armee.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Reisch</hi> teilt mit, dass über die Verwertung der im Deutschen Reiche lagernden Kriegsgüter der ehemaligen österreichisch-ungarischen Armee ein Übereinkommen mit der deutschen Regierung erzielt worden sei. Hienach werde von der deutschen Regierung die Ausbezahlung des Schätzwertes auf Rechnung ihrer Forderung an Österreich begehrt, wogegen der Abtransport des Materiales nach Österreich gestattet würde. Der sprechende Staatssekretär erbittet die Ermächtigung des Kabinettsrates, auf der angegebenen Grundlage, welche unser Interesse durchaus wahre, einen Vertrag abschließen zu dürfen.</p>
+                  <p>Der Kabinettsrat erteilt die erbetene Ermächtigung.</p>
+               </div>
+               <div type="top" xml:id="krp-0140_top11">
+                  <head>
+                     <label>
+                        <num n="11">11.</num>
+                        <seg>Forderung der Rechnungsbeamten nach Einreihung in die Vorrückungsgruppe B.</seg>
+                     </label>
+                  </head>
+                  <p>Im Auftrage des Staatssekretärs Dr. Reisch berichtet Ministerialrat [Dr.] <hi rend="#letterspaced">Wilfling</hi>, dass die Rechnungs<pb facs="krp-0140_r-0035"/>beamten bereits seit geraumer Zeit die Forderung vertreten hätten, aus der Kategorie C der Dienstpragmatik in die Kategorie B eingereiht zu werden. Das Zwischenstaatsamtliche Komitee für Beamtenangelegenheiten, welches sich mit dieser Forderung wiederholt befasst hat, habe nach ursprünglicher Ablehnung nunmehr den Antrag in Aussicht genommen, jene Rechnungsbeamten, welche im administrativen oder einem gleichgewerteten Rechnungsdienste verwendet werden, durch Gewährung von Zulagen und durch Anrechnung von 15 Monaten für 19 Monate in der Behandlung mit den Beamten der Kategorie B gleichzustellen. Die Rechnungsbeamten hätten sich jedoch mit einer solchen Lösung nicht zufriedengegeben und erklärt, falls sie nicht sämtlich dieser Begünstigung teilhaftig würden, am Montag, den 26. Jänner d. J. in einen dreitägigen Demonstrationsstreik mit anschließender passiven Resistenz treten zu wollen. Redner halte ein weiteres Entgegenkommen an die Rechnungsbeamten, als es das Zwischenstaatsamtliche Komitee in Vorschlag bringen wollte, für höchst bedenklich, da bereits die Steueramtsbeamten erklärt hätten, im Falle die Rechnungsbeamten mit ihren Wünschen durchdringen sollten, gleichfalls die Überstellung aus der Kategorie D in die Kategorie B zu verlangen und zur Durchsetzung dieser Forderung eventuell <pb facs="krp-0140_r-0036"/>die Mitwirkung an der Durchführung der Vermögensabgabe zu verweigern.</p>
+                  <p>Nach dem Antrage des Vorsitzenden beschließt der Kabinettsrat, die Beratung über den ein außerordentliches Entgegenkommen an die Rechnungsbeamten darstellenden Vorschlag des Zwischenstaatsamtlichen Komitees bis auf weiteres auszusetzen. Das Staatsamt für Finanzen wird aufgefordert, die Vertreter der Rechnungsbeamten hievon in Kenntnis zu setzen, und ihnen mitzuteilen, dass über den Gegenstand erst dann wieder verhandelt werden wird, bis die Beamten zu ihrer Arbeit zurückgekehrt sind.</p>
+               </div>
+               <div type="top" xml:id="krp-0140_top12">
+                  <head>
+                     <label>
+                        <num n="12">12.</num>
+                        <seg>Übergabe des Pellagrafonds an die italienische Regierung.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Hanusch</hi> bringt dem Kabinettsrate zur Kenntnis, dass nach einer Mitteilung des Zivilkommissariates der VI. italienischen Infanteriedivision vom 1. Dezember 1919 die italienische Regierung die Übergabe des in Innsbruck erliegenden Vermögens des Pellagrafonds verlangt habe. Dieser Fonds sei durch das Landesgesetz vom 24. Februar 1904, LGBl. Nr. 25, geschaffen worden und zur Bestreitung der Kosten der Maßnahmen zur Pellagrabekämpfung in Tirol bestimmt. Dem Verbreitungsgebiete der Krankheit entsprechend, <pb facs="krp-0140_r-0037"/>erstreckten sich diese Maßnahmen ausschließlich auf den nunmehr an Italien gefallenen Landesteil. Das Vermögen befindet sich, soweit es nicht in Investitionen in Südtirol angelegt ist, in Innsbruck und bestehe aus dem eigentlichen Fondsvermögen im Betrage von 1.082.367 K mit einem Lastensaldo von 261.372 K (Lombardkonto für die IV. österreichische Kriegsanleihe) und dem Vermögen der im Pellagragebiet eingerichteten Bäckereianlage von 801.134 K, darunter 500.000 K VII. österreichische Kriegsanleihe.</p>
+                  <p>Nach einer Erörterung der durch die Bestimmungen des Friedensvertrages geschaffenen Rechtslage, gelangt Staatssekretär Hanusch zu der Feststellung, dass die Rechtsbeständigkeit des Anspruches der italienischen Regierung zwar angezweifelt werden könne, dass aber Erwägungen der Billigkeit für die nunmehr betriebene Übergabe des Fonds an das Königreich Italien sprächen; denn der Fonds sei bisher ausschließlich im Interesse der südtirolischen Bevölkerung verwendet worden und seiner Widmung gemäß zur Kostenbestreitung von Maßnahmen bestimmt, deren Fortführung nunmehr dem Königreiche Italien aufgrund der Territorialhoheit obliege. Auch aus politischen Gründen erscheine die Übergabe, durch welche ein besonderes Entgegenkommen der Staatsre<pb facs="krp-0140_r-0038"/>gierung an die italienische Regierung bekundet werden soll, zweckmäßig. Nur wären jene Kautelen zu bedingen, durch welche der Staat vor der Inanspruchnahme künftiger, nach dem Friedensvertrage nicht gerechtfertigter Lasten geschützt werden soll, was insbesondere auch dadurch notwendig werde, dass ein Großteil des Fondsvermögens in Kriegsanleihe angelegt ist.</p>
+                  <p>Nach dem Antrage des sprechenden Staatssekretärs erteilt der Kabinettsrat, ohne jedoch damit eine rechtliche Verpflichtung anzuerkennen, die Zustimmung, dass der Pellagrafonds der italienischen Regierung nach dem Stande vom 28. Juli 1914 in jenen Vermögenswerten, die diesen Stand derzeit repräsentieren, übergeben werde; hiebei wird aber zu bedingen sein, dass für die auszufolgenden Titres der Kriegsanleihe die geltenden Vorschriften wegen Kennzeichnung der Mäntel und Zinsscheine sowie des Unterbleibens des Ankaufes der Zinsscheine maßgebend zu sein haben.</p>
+                  <p/>
+               </div>
+            </div>
+            <div type="stenogramme">
+               <div n="1">
+                  <head>EINZUFÜGEN</head>
+                  <p>Transkription in Arbeit.</p>
+                  <p/>
+               </div>
+               <div n="2">
+                  <head>EINZUFÜGEN</head>
+                  <p>Transkription in Arbeit.</p>
+               </div>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,561 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href='http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:acdh="https://vocabs.acdh.oeaw.ac.at/schema#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xml:lang="de">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="a" type="main" n="0118">Kabinettsprotokoll Nr. 118 vom 28. Oktober 1919</title>
+            <title level="m" type="main" n="01">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <title level="m" type="sub" n="">Renner III (17. Oktober 1919 – 7. Juli 1920)</title>
+            <meeting>
+               <placeName key="https://d-nb.info/gnd/4066009-6">Wien</placeName>
+               <orgName key="https://d-nb.info/gnd/5162749-8">Kabinettsrat</orgName>
+               <date when-iso="1919-10-28"/>
+            </meeting>
+            <editor>
+               <persName key="https://d-nb.info/gnd/122481836"
+                         role="hasCreator"
+                         xml:id="hwohnout">
+                  <forename>Helmut</forename>
+                  <surname>Wohnout</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</affiliation>
+               <idno type="ORCID">0000-0002-3864-9839</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/120789825"
+                         role="hasCreator"
+                         xml:id="tolechowski">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0003-3291-6876</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/131679384"
+                         role="hasCreator"
+                         xml:id="rlein">
+                  <forename>Richard</forename>
+                  <surname>Lein</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0002-7502-0503</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="aholzer">
+                  <forename>Anna</forename>
+                  <surname>Holzer</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0005-3560-3500</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="dsoelkner">
+                  <forename>Dominik</forename>
+                  <surname>Sölkner</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-9895-7212</idno>
+            </editor>
+            <editor>
+               <persName role="hasContributor" xml:id="ischotzko">
+                  <forename>Ina</forename>
+                  <surname>Schotzko</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-5210-3713</idno>
+            </editor>
+            <funder n="1">
+               <orgName key="https://d-nb.info/gnd/2054142-9" role="hasFunder">Österreichischer Wissenschaftsfonds FWF</orgName>
+               <idno type="project">PAT1495024</idno>
+               <title type="project">Die Protokolle des österreichischen Kabinettsrates 1919–1920</title>
+            </funder>
+            <respStmt>
+               <resp>Projektverantwortung</resp>
+               <orgName key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Projektleitung</resp>
+               <persName key="https://d-nb.info/gnd/120789825" role="hasPrincipalInvestigator">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+                  <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+                  <idno type="ORCID">0000-0003-3291-6876</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Nationaler Forschungspartner</resp>
+               <orgName key="https://d-nb.info/gnd/1123037736" role="hasEnabler">Austrian Centre for Digital Humanities</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Digitalisierung der gedruckten Quellen</resp>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>TEI-Datenmodellierung</resp>
+               <persName role="hasContributor" xml:id="tfruehwirth">
+                  <forename>Timo</forename>
+                  <surname>Frühwirth</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-3997-5193</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technische Supervision</resp>
+               <persName key="https://d-nb.info/gnd/1043833846"
+                         role="hasContributor"
+                         xml:id="pandorfer">
+                  <forename>Peter</forename>
+                  <surname>Andorfer</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-9575-9372</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technisches Consulting und Vorbereitung der Druckausgabe</resp>
+               <persName key="https://d-nb.info/gnd/13281899X"
+                         role="hasContributor"
+                         xml:id="skurz">
+                  <forename>Stephan</forename>
+                  <surname>Kurz</surname>
+                  <affiliation key="https://d-nb.info/gnd/1202798799">Institut für die Erforschung der Habsburgermonarchie und des Balkanraumes</affiliation>
+                  <idno type="ORCID">0000-0003-2546-2570</idno>
+               </persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher key="https://d-nb.info/gnd/1001454-8">Österreichische Akademie der Wissenschaften</publisher>
+            <date when="2028"/>
+            <availability status="free">
+               <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">Lizenziert unter CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/deed.de)</licence>
+            </availability>
+            <idno type="ISBN_Print"/>
+            <idno type="ISBN_Part_epub"/>
+            <idno type="ISBN_Digital"/>
+            <idno type="DOI"/>
+            <idno type="DOI_zenodo"/>
+            <idno type="ebook_ID"/>
+         </publicationStmt>
+         <seriesStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="m" type="main">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <respStmt>
+               <resp>Bearbeitung und Herausgeberschaft</resp>
+               <orgName key="https://d-nb.info/gnd/2024703-5">Universität Wien</orgName>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+         </seriesStmt>
+         <notesStmt>
+            <note>Diese TEI-XML-Datei ist Grundlage für eine Druckausgabe der Edition.</note>
+            <relatedItem>
+               <biblStruct>
+                  <monogr>
+                     <imprint>
+                        <pubPlace key="https://d-nb.info/gnd/4066009-6">Wien</pubPlace>
+                        <publisher key="https://d-nb.info/gnd/2068748-5">Verlag der Österreichischen Akademie der Wissenschaften</publisher>
+                        <date when="2029"/>
+                     </imprint>
+                     <extent/>
+                  </monogr>
+                  <note>
+                     <idno/>
+                     <ptr/>
+                  </note>
+                  <citedRange/>
+               </biblStruct>
+            </relatedItem>
+         </notesStmt>
+         <sourceDesc>
+            <bibl>Quellbestand: AT-OeStA/AdR MRang MR 1Rep KRP Kabinettsratsprotokolle, 1918-1920 (Teilbestand)<ref target="https://www.archivinformationssystem.at/detail.aspx?id=5465">https://www.archivinformationssystem.at/detail.aspx?id=5465</ref>
+            </bibl>
+            <msDesc>
+               <msIdentifier>
+                  <institution key="https://d-nb.info/gnd/37748-X" role="hasOwner">AT-OeStA Österreichisches Staatsarchiv (Archiv (ÖStA))</institution>
+                  <repository key="https://d-nb.info/gnd/1601181-8">AT-OeStA/AdR Archiv der Republik, 1918- (Abteilung)</repository>
+                  <collection>AT-OeStA/AdR MRang MR 1Rep Ministerrat 1. Republik, 1918 - 1938 (Bestand)</collection>
+                  <idno>AT-OeStA_AdR-MRang-MR-1.-Rep.-KRP-118</idno>
+               </msIdentifier>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <abstract>
+            <p>
+          <!--to be generated-->
+        </p>
+         </abstract>
+      </profileDesc>
+      <encodingDesc>
+         <styleDefDecl scheme="css"/>
+         <tagsDecl>
+            <rendition xml:id="b" scheme="css">font-weight:bold;</rendition>
+            <rendition xml:id="su" scheme="css">vertical-align:super;font-size:.7em;</rendition>
+            <rendition xml:id="s" scheme="css">text-decoration:line-through;</rendition>
+            <rendition xml:id="u" scheme="css">text-decoration:underline;</rendition>
+            <rendition xml:id="ow" scheme="css">text-decoration:line-through;text-decoration-style:double;</rendition>
+            <rendition xml:id="r" scheme="css">display:block;text-align:right;</rendition>
+            <rendition xml:id="letterspaced" scheme="css">letter-spacing:0.15em;</rendition>
+            <rendition xml:id="i" scheme="css">font-style:italic;</rendition>
+         </tagsDecl>
+         <editorialDecl>
+            <hyphenation>
+               <p>
+            <!--to be added-->
+          </p>
+            </hyphenation>
+            <correction>
+               <p>
+            <!--to be added-->
+          </p>
+            </correction>
+            <normalization>
+               <p>
+            <!--to be added-->
+          </p>
+            </normalization>
+            <punctuation>
+               <p>
+            <!--to be added-->
+          </p>
+            </punctuation>
+            <stdVals>
+               <p>
+            <!--to be added-->
+          </p>
+            </stdVals>
+            <p>
+          <!--to be added-->
+        </p>
+         </editorialDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#tfruehwirth" when-iso="2026-10-07">TEIGarage output upconverted with upconvert.xsl</change>
+         <change who="#tfruehwirth" when-iso="2026-10-07">TEI header populated with generate_tei_templates.py</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface/>
+   </facsimile>
+   <text>
+      <body>
+         <div xml:id="doc-krp-0118.xml">
+            <head type="dokument">
+               <title type="num">118.</title>
+               <title type="desc">
+                  <pb facs="krp-0118_r-0001"/>
+                  <pb facs="krp-0118_r-0002"/>[Dienstag] 1919-10-28</title>
+            </head>
+            <div type="dokumentkopf">
+               <div type="vorsitz">
+                  <head>Vorsitz:</head>
+                  <p>Renner, teilweise Fink</p>
+               </div>
+               <div type="anwesend">
+                  <head>Anwesend:</head>
+                  <p>Deutsch, Eldersch, Glöckel, Hanusch, Loewenfeld-Russ, Mayr, Miklas, Paul, Ramek, Reisch, Resch, Stöckler, Waiss</p>
+               </div>
+               <div type="zugezogen">
+                  <head>Zugezogen:</head>
+                  <p>Grimm, Lanzendörfer, Lelewer, Wilfling</p>
+               </div>
+               <div type="schriftfuehrer">
+                  <head>Schriftführer:</head>
+                  <p>unbekannt</p>
+               </div>
+               <div type="dauer">
+                  <head>Dauer:</head>
+                  <p>20.00–00.30 Uhr</p>
+               </div>
+            </div>
+            <div type="komponenten">
+               <p>Reinschrift, Beilagen, Konzept, stenographische Mitschrift, Entwurf der Tagesordnung, diverse Zusätze</p>
+            </div>
+            <div type="beilagen">
+               <head>Beilagen:</head>
+               <list>
+                  <item>
+                     <ref target="#krp-0118_top02">Zu TOP 2</ref>: <ref target="#krp-0118_b01">Industrieenquête zu Gehalts- und Lohnfragen</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0118_top03">Zu TOP 3</ref>: <ref target="#krp-0118_b02">Stand der Aktion zur Veräußerung und Verpfändung staatlichen Kunstbesitzes, Schreiben des Unterstaatssekretärs für Justiz Dr. Hisler an den Staatskanzler, Bericht des Sektionschefs Ing. Enderes</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0118_top04">Zu TOP 4</ref>: <ref target="#krp-0118_b03">Vorlage eines Gutachtens des zwischenstaatsamtlichen Komitees für Staatsbedienstetenangelegenheiten</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0118_top05">Zu TOP 5</ref>: <ref target="#krp-0118_b04">Auszug für den Vortrag im Kabinettsrat zu Zl. 674/1919 des Staatsamtes für Inneres und Unterricht über eine Mitteilung des Archivs im Staatsamte für Inneres und Unterricht an den tschechoslowakischen Liquidierungskommissär wegen dessen Anspruch auf das Gebäude der ehemaligen böhmischen Hofkanzlei</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0118_top06">Zu TOP 6</ref>: <ref target="#krp-0118_b05">Vortrag des Staatsamtes für Justiz über die Vollzugsanweisung zur Bezeichnung der fachmännischen Laienrichter der Gerichtshöfe erster Instanz</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0118_top07">Zu TOP 7</ref>: <ref target="#krp-0118_b06">Bericht des Staatsamtes für Volksernährung über die Neuorganisation des Ernährungsdienstes in den Ländern samt Entwurf der Vollzugsanweisung</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0118_top10">Zu TOP 10</ref>: <ref target="#krp-0118_b07">Bericht des Staatsamtes für Finanzen über die Frage der Rückwirkung der Staatsbürgerschaft und der Heimatzuständigkeit auf die Versorgungsgenüsse der Zivilangestellten und Berufsmilitärpersonen</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0118_top10">Zu TOP 10</ref>: <ref target="#krp-0118_b08">Stellungnahme des Staatsamtes für Heereswesen</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0118_top11">Zu TOP 11</ref>: <ref target="#krp-0118_b09">Stellungnahme des Staatsamtes für Finanzen zur Inkraftsetzung der neuen Bestimmungen über die Effektenumsatzsteuer</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0118_top12">Zu TOP 12</ref>: <ref target="#krp-0118_b10">Antrag des Staatsamtes für Land- und Forstwirtschaft zu Zl. 21.521/19 auf Bestätigung der Wahl von Landesrat Vinzenz Schumy zum Präsidenten des Landeskulturrates in Kärnten</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0118_top13">Zu TOP 13</ref>: <ref target="#krp-0118_b11">Referat des Staatsamtes für soziale Verwaltung zu Zl. 29.814/19 über die geplante Bekleidungsaktion zu Gunsten der deutschösterreichischen Kriegsbeschädigten</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0118_top14">Zu TOP 14</ref>: <ref target="#krp-0118_b12">Vollzugsanweisung des Staatsamtes für soziale Verwaltung über den Wohnungsnachweis</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0118_top15">Zu TOP 15</ref>: <ref target="#krp-0118_b13">Antrag des Staatsamtes für Inneres und Unterricht auf Übernahme der provisorischen Verwaltung der Kunstsammlung „Albertina“ und der Prunkräume im Palais Friedrich Habsburg-Lothringen</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0118_top16">Zu TOP 16</ref>: <ref target="#krp-0118_b14">Gesetzesentwurf über das Dienstverhältnis der Hochschulassistenten samt Begründung und Vollzugsanweisung</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0118_top17">Zu TOP 17</ref>: <ref target="#krp-0118_b15">Gesetzesentwurf zur Ergänzung des Gesetzes über die Feststellung und Verfolgung von Pflichtverletzungen militärischer Organe im Krieg</ref>
+                  </item>
+               </list>
+            </div>
+            <div type="protokoll">
+               <pb facs="krp-0118_r-0003"/>
+               <div type="top" xml:id="krp-0118_top01">
+                  <head>
+                     <label>
+                        <num n="1">1.</num>
+                        <seg>Ergänzung und Änderung des Gesetzes vom 3. April 1919, StGBl. Nr. 209, betreffend die Landesverweisung und die Übernahme des Vermögens des Hauses Habsburg-Lothringen.</seg>
+                     </label>
+                  </head>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> teilt mit, dass sich aufgrund der Besprechung mit den Parteien die Notwendigkeit ergeben hat, den in der letzten Sitzung des Kabinettsrates zur Einbringung in die Nationalversammlung beschlossenen Gesetzentwurf, betreffend die Ergänzung und Änderung des Habsburgergesetzes, rücksichtlich der Bestimmungen über die Domäne Eisenerz-Radmer dahin zu ändern, dass vorläufig ein Veräußerungsverbot dieser Domäne zu Gunsten der Republik Österreichs, erlassen werde. Hiedurch werde, ohne die Rechtsfrage zu entscheiden, der Staatsgewalt Raum für Verhandlungen mit den derzeitigen Eigentümern dieser Domäne geschaffen. Der sprechende Staatskanzler erbitte sich im Einvernehmen mit dem Vizekanzler die nachträgliche Genehmigung dieser Abänderung.</p>
+                  <p>Der Kabinettsrat erteilt die er<pb facs="krp-0118_r-0004"/>betene Genehmigung.</p>
+               </div>
+               <div type="top" xml:id="krp-0118_top02">
+                  <head>
+                     <label>
+                        <num n="2">2.</num>
+                        <seg>Gehalts- und Lohnfragen; Industriekonferenz.</seg>
+                     </label>
+                  </head>
+                  <p>Der Vorsitzende führt aus, dass die schwierigen Ernährungsverhältnisse, die Entwertung des Geldes und das Missverhältnis zwischen Gehalt und Löhnen einerseits und den Lebensmittelpreisen andererseits in den Kreisen aller Angestellten und Arbeiter eine tiefgehende Bewegung hervorgerufen habe. Die bei ihm erschienenen Vertreter der Gemeinde Wien hätten ihm mitgeteilt, dass die Gemeindebeamten, Lehrer und Arbeiter neue Forderungen gestellt haben, deren Erfüllung ein Mehrerfordernis von 120–200 Millionen K bedeuten würde – ein Betrag, der aus Mitteln der Gemeinde nicht geleistet werden könne. Da ein getrenntes Vorgehen von Gemeinde, Land und Staat zu einem Limitieren der Forderungen führen müsse, das unerträglich sei, beabsichtige er behufs genereller Regelung der Bezüge aller Staats-, Landes- und Gemeindeangestellten Vertreter des Staatsamtes für Finanzen, der Niederösterreichischen Landesregierung und des Wiener Stadtrates zu einer gemeinsamen Besprechung einzuladen. Mit <pb facs="krp-0118_r-0005"/>Rücksicht auf den Hinweis der Vertreter der Gemeinde Wien, dass eine allfällige Gehaltserhöhung nicht mehr aus Mitteln der Gemeinde bestritten werden könne, sondern nur im Wege erhöhter staatlicher Überweisungen durchführbar sei, beabsichtige er, eine Kommission, bestehend aus den Finanzreferenten des Staates, des Landes und der Gemeinde Wien unter seinem Vorsitz einzuberufen, welche diese Frage zu bereinigen hätte. Die zur Behandlung der Gehaltsfragen eingesetzte Kommission werde sich vor jeder Entscheidung mit der Kommission der Finanzreferenten ins Einvernehmen zu setzen haben.</p>
+                  <p>Der Vorsitzende verweist ferner auf die bestehende Gefahr eines allgemeinen Streiks der Industriearbeiter. Zur Bewältigung dieser Bewegung habe er im Einvernehmen mit den Unternehmern und den Gewerkschaften die Abhaltung einer Industriekonferenz in Aussicht genommen. Diese gemeinsame Tagung der Gewerkschaften und Genossenschaften einerseits und des Hauptverbandes der Industrie andererseits werde am 4. November d. J. stattfinden. Hiebei werde insbesondere die Frage der Anpassung <pb facs="krp-0118_r-0006"/>der Löhne an die Lebensmittelpreise zur Sprache gelangen. Ebenso wie der Staat bei der unvermeidlichen Erhöhung der Lebensmittelpreise auf die Weltmarktpreise seinen Beamten und Arbeitern die Differenz in Form von Zulagen zum Gehalt, bzw. Lohn werde vergüten müssen, sei auch die Industrie bereit, ein Gleiches zu tun und insbesonders die Familiengebühren entsprechend zu erhöhen. Sie wolle diese Aktion jedoch nur unter der Voraussetzung in Angriff nehmen, dass den minderleistungsfähigen Firmen mit unverzinslichen Darlehen, die halbjährig abgerechnet würden, vom Staate beigesprungen würde. Der Staatskanzler lade das Staatsamt für Finanzen ein, entsprechende Vorschläge für eine demnächst zur Beratung dieser Angelegenheit zusammentretende Kabinettskonferenz vorzubereiten.</p>
+                  <p>Bei der Industriekonferenz werde der Staat lediglich als Vermittler auftreten, während das Schwergewicht im Hauptverband der Industrie einerseits und in der Gewerkschaftskommission andererseits liegen werde.</p>
+                  <p>Der Kabinettsrat nimmt diese Mitteilungen zur Kenntnis.</p>
+                  <p>
+                     <pb facs="krp-0118_r-0007"/>
+                  </p>
+               </div>
+               <div type="top" xml:id="krp-0118_top03">
+                  <head>
+                     <label>
+                        <num n="3">3.</num>
+                        <seg>Gegenwärtiger Stand der Aktion zur Veräußerung und Verpfändung staatlichen Kunstbesitzes.</seg>
+                     </label>
+                  </head>
+                  <p>Der Vorsitzende bringt dem Kabinettsrat einen Bericht des Staatsbevollmächtigten Sektionschefs Ing. Enderes zur Kenntnis, wonach General Mauelère die Angelegenheit der Veräußerung staatlichen Kunstbesitzes zur Sprache gebracht und verlangt habe, dass in dieser Frage keine irgendwie präjudizielle Entscheidung getroffen werde; zugleich habe General Mauelère angedeutet, dass vielleicht die Entente den Kunstbesitz selbst als Pfand für das von ihr zu gewährende Darlehen in Anspruch nehmen werde. Die gleiche Mitteilung unter ausdrücklicher Nennung eines Darlehensbetrages von 5 Millionen Pfund Sterling sei dem Staatsbevollmächtigten von amerikanischer Seite zugekommen.</p>
+                  <p>Der Schritt des Generals Mauelère sei zweifellos darauf zurückzuführen, dass die Wiener Meldungen über die Absichten der österreichischen Regierung, Gegenstände aus dem staatlichen Kunstbesitz zu veräußern, namentlich in amerikanischen Kreisen eine gewisse Verstimmung hervorgerufen haben, da gerade dem amerikanischen Einflusse jene Fassung der Bestimmungen des Friedensvertrages zu verdanken sei, welche <pb facs="krp-0118_r-0008"/>den Schutz unseres staatlichen Kunstbesitzes bezwecken.</p>
+                  <p>Durch das Eingreifen der Ententevertretungen sei es uns jedenfalls unmöglich geworden, die mit verschiedenen Interessenten und Konsortien eingeleiteten Verhandlungen über die Verpfändung oder Veräußerung staatlichen Kunstbesitzes ohne weiters zum Abschluss zu bringen. Andererseits sei es aber auch untunlich, diese Verhandlungen abzubrechen, solange die Kapitalbeschaffung auf anderem Wege nicht völlig sichergestellt ist.</p>
+                  <p>Es scheine daher unerlässlich, ohne Verzug mit den maßgebenden Ententevertretern die näheren Modalitäten der Gewährung des von General Mauelère in Aussicht gestellten Darlehens zu erörtern, wobei die Ergebnisse der bisherigen Schätzungen als Grundlage genommen werden könnten.</p>
+                  <p>Der Kabinettsrat nimmt diesen Bericht zur Kenntnis.</p>
+               </div>
+               <div type="top" xml:id="krp-0118_top04">
+                  <head>
+                     <label>
+                        <num n="4">4.</num>
+                        <seg>Behandlung von Staatsangestellten, die zu Funktionären einer Gemeinde gewählt worden sind.</seg>
+                     </label>
+                  </head>
+                  <p>Der Vorsitzende gibt bekannt, dass das zwischenstaatsamtliche Komitee für Staatsbedienstetenangelegenheiten im Sinne des Beschlusses des Kabinettsrates vom 15. Juli d. J. ein Gutachten <pb facs="krp-0118_r-0009"/>über die Behandlung von Staatsangestellten die zu Funktionären einer Gemeinde gewählt worden sind, abgegeben habe. Das Gutachten ist dem vorliegenden Protokolle als Beilage A angeschlossen.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Mayr</hi> verweist darauf, dass die in Beratung stehende Frage auch im Verfassungsausschusse behandelt worden sei. Dieser habe den Standpunkt vertreten, dass durch die bestehenden gesetzlichen Vorschriften die Frage der Beurlaubung und Gebührenweiterzahlung lediglich für die zu Mitgliedern der Nationalversammlung gewählten Staatsangestellten geregelt sei und über diesen Rahmen nicht hinausgegangen werden soll. An diesem Standpunkte, der nach Meinung des Redners der einzig richtige sei, wäre auch vom Kabinettsrate festzuhalten.</p>
+                  <p>Staatssekretär <hi rend="#letterspaced">Stöckler</hi> gibt der Anschauung Ausdruck, dass eine generelle Regelung dieser Frage wohl nicht möglich sei. Immerhin könnte der Grundsatz aufgestellt werden, dass die betreffenden Gemeindefunktionäre, soferne es sich nicht nur um eine bloße Nebenbeschäftigung handle, von der Gemeinde zu entschädigen seien.</p>
+                  <p>
+                     <pb facs="krp-0118_r-0010"/>Staatssekretär <hi rend="#letterspaced">Eldersch</hi> weist darauf hin, dass vielfach staatliche Angestellte zu öffentlichen Funktionären in der Voraussetzung gewählt werden, dass der Staat ihnen ihre Bezüge weiter auszahle. Diesem Missbrauche müsse [gegen]gesteuert werden. Eine Ausnahme wäre nur bei den zu Bürgermeistern gewählten Staatsangestellten zu machen, und dies auch nur in jenen Fällen, in denen die Gemeinde nicht in der Lage sei, eine dem Gehalte des Gewählten angemessene Funktionsgebühr zu zahlen. Die Funktion eines Gemeinderates sei seiner Meinung nach als Nebenbeschäftigung zu qualifizieren.</p>
+                  <p>Staatssekretär <hi rend="#letterspaced">Hanusch</hi> beantragt die Vertagung der Beratung und regt an, dass die Staatskanzlei eine Auskunft darüber einhole, in welcher Weise diese Frage in der Schweiz gelöst sei.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Deutsch</hi> glaubt, dass eine Regelung nur für solche Organe erforderlich sei, die eine geschäftsführende Funktion (Bürgermeister und deren Stellvertreter) ausüben. Im Bedarfsfalle könnten den Gemeinden finanzielle Aushilfen geleistet werden. <pb facs="krp-0118_r-0011"/>Für andere Funktionäre, insbesondere für solche, die nicht aus öffentlicher Wahl hervorgegangen sind (z. B. Arbeiterräte), habe der Staat nicht aufzukommen. In Ausnahmsfällen hätte das betreffende Ressort zu entscheiden.</p>
+                  <p>Unterstaatssekretär Dr. <hi rend="#letterspaced">Resch</hi> pflichtet diesem Standpunkte bei.</p>
+                  <p>Unterstaatssekretär <hi rend="#letterspaced">Miklas</hi> ist der Anschauung, dass ein Hinausgehen über den vom Verfassungsausschusse gekennzeichneten Standpunkt dazu führen würde, dass der Staat allmählich für einen Großteil der Kosten der autonomen Verwaltung in den Gemeinden aufzukommen hätte. Wenn der Dienst, den der betreffende Staatsangestellte in der Gemeinde versehe, wichtiger sei als seine staatlichen Obliegenheiten, dann müsse allerdings der Betreffende zur Verfügung gestellt werden. Er denke hiebei an eine Versetzung in den zeitlichen Ruhestand. Dies sei aber seiner Meinung nach nur bei Bürgermeistern in größeren Gemeinden, etwa von 10.000 Einwohnern angefangen, der Fall.</p>
+                  <p>Vizekanzler <hi rend="#letterspaced">Fink</hi> fasst das Ergebnis der Debatte dahin zusammen, dass <pb facs="krp-0118_r-0012"/>eine staatliche Beihilfe nur jenen Staatsangestellten zu gewähren sei, die zu Bürgermeistern gewählt wurden, und dies auch nur dann, wenn die Gemeinde nicht in der Lage sei, eine entsprechende Funktionsgebühr zu zahlen. Im Übrigen hätte die Staatskanzlei im Einvernehmen mit den Staatsämtern für Inneres und Unterricht, für Verkehr und für Finanzen und nach vorheriger Einholung einer Auskunft über die Behandlung der Frage in der Schweiz einen konkreten Antrag an den Kabinettsrat auszuarbeiten.</p>
+                  <p>Der Kabinettsrat beschließt in diesem Sinne.</p>
+               </div>
+               <div type="top" xml:id="krp-0118_top05">
+                  <head>
+                     <label>
+                        <num n="5">5.</num>
+                        <seg>Elaborat über die Besitzrechte an dem Gebäude des vormaligen Ministeriums des Innern.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Eldersch</hi> erbittet und erhält die Ermächtigung des Kabinettsrates, die Abschrift eines, vom Allgemeinen Archiv im Staatsamte für Inneres und Unterricht ausgearbeiteten Elaborates über die Besitzrechte an dem Gebäude des vormaligen Ministeriums des Innern dem tschechoslowakischen Liquidierungskommissär, Ministerialrat Dr. Otavský, über dessen Wunsch ausfolgen zu dürfen.</p>
+                  <p>
+                     <pb facs="krp-0118_r-0013"/>
+                  </p>
+               </div>
+               <div type="top" xml:id="krp-0118_top06">
+                  <head>
+                     <label>
+                        <num n="6">6.</num>
+                        <seg>Vollzugsanweisung des Staatsamtes für Justiz über die Bezeichnung der fachlichen Laienrichter der Gerichtshöfe I. Instanz.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Ramek</hi> erbittet die Ermächtigung des Kabinettsrates zur Erlassung einer Vollzugsanweisung, wonach die fachmännischen Laienrichter der Gerichtshöfe I. Instanz künftighin während der Dauer ihrer Verwendung die Bezeichnung „Kommerzialrat" zu führen haben.</p>
+                  <p>Der Kabinettsrat erteilt die erbetene Ermächtigung.</p>
+               </div>
+               <div type="top" xml:id="krp-0118_top07">
+                  <head>
+                     <label>
+                        <num n="7">7.</num>
+                        <seg>Vollzugsanweisung der Staatsregierung über die einheitliche Zusammenfassung des staatlichen Ernährungsdienstes.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Loewenfeld-Russ</hi> verweist darauf, dass in der letzten Länderkonferenz die Desorganisation des Ernährungsdienstes eingehend erörtert worden sei. Der Staatskanzler habe hiebei die Notwendigkeit einer einheitlichen Zusammenfassung des staatlichen Ernährungsdienstes betont und gewisse Leitsätze, welche bei der Neuorganisation des Ernährungsdienstes in den Ländern zur Anwendung gelangen müssten, zur Diskussion gestellt. Unter den Ländervertretern sei hierüber eine einheitliche Auffassung nicht zutage getreten und es sei der Beschluss gefasst worden, dass der Entwurf einer gegenständlichen Vollzugsanweisung der Staatsregierung <pb facs="krp-0118_r-0014"/>den Landesregierungen zur Stellungnahme zu übermitteln sei. Der sprechende Staatssekretär erbitte sich die Ermächtigung des Kabinettsrates, den nunmehr ausgearbeiteten Entwurf an die Landesregierungen leiten zu dürfen.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Mayr</hi> erhebt gewichtige Bedenken gegen den gestellten Antrag. Der Kampf, der von den Ländern gegen die Zentralisierung des Ernährungsdienstes geführt werde, sei gegenwärtig schon im Abflauen begriffen. Mit umso größerer Vorsicht müsse bei jeder neuen Maßregel vorgegangen werden. Die Hinausgabe des vorliegenden Entwurfes würde aber neuerlich Öl ins Feuer gießen. Der Widerstand der Länder könne nur dann gebrochen werden, wenn diese Sicherungen dafür hätten, dass ihr Ernährungszustand durch eine solche Zentralisierung nicht verschlechtert werde.</p>
+                  <p>Staatssekretär <hi rend="#letterspaced">Stöckler</hi> spricht sich gleichfalls gegen den gestellten Antrag aus, da er bezweifeln müsse, ob der Staat die erforderlichen Machtmittel besitze, um die vorgeschlagene Maßnahme durchzuführen. Der einzige Weg, der ihm gangbar erscheine, um zu einem Einvernehmen mit den Ländern zu kommen, führe über die Reparations<pb facs="krp-0118_r-0015"/>kommission. Diese habe in einer mit Vertretern der Länder und der Stadt Wien abgehaltenen Konferenz ihren Standpunkt dahin gekennzeichnet, dass eine Hilfeleistung durch das Ausland nur dann Platz greifen könne, wenn die Länder zunächst sich untereinander helfen.</p>
+                  <p>Staatssekretär <hi rend="#letterspaced">Eldersch</hi> hält gleichfalls die vorgeschlagene Maßnahme, sosehr eine einheitliche Regelung des Ernährungsdienstes auch im Interesse der Länder notwendig wäre, im gegenwärtigen Zeitpunkt für praktisch nicht durchführbar und schlägt vor, den Entwurf der Vollzugsanweisung der nächsten Länderkonferenz unter Hinweis auf die erwähnte Stellungnahme der Reparationssubkommission zur Beratung vorzulegen.</p>
+                  <p>Der Kabinettsrat beschließt im Sinne dieses Antrages.</p>
+               </div>
+               <div type="top" xml:id="krp-0118_top08">
+                  <head>
+                     <label>
+                        <num n="8">8.</num>
+                        <seg>Zusammensetzung des Direktoriums des Staatsamtes für Volksernährung.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Loewenfeld-Russ</hi> teilt mit, dass sich anlässlich des bevorstehenden Ausscheidens eines Mitgliedes des gegenwärtig fünf<pb facs="krp-0118_r-0016"/>gliedrigen Direktoriums des Staatsamtes für Volksernährung die Frage aufwerfe, ob die gegenwärtige Zusammensetzung dieses Direktoriums, welches aus Vertretern der politischen Parteien, der Produzenten und der Konsumenten bestehe, aufrecht erhalten werden solle. Er würde Wert darauf legen, dass auch fernerhin die politischen Parteien tatsächlich im Direktorium vertreten seien.</p>
+                  <p>In der sich hierüber entwickelnden Debatte trat die einmütige Auffassung zutage, dass sich die Belassung von Interessentenvertretern im Direktorium nicht als erforderlich erweise, da den beteiligten Kreisen ohnedies bei jeder wichtigeren Ernährungsfrage Gelegenheit zur Stellungnahme gegeben werde. Es erscheine vielmehr empfehlenswert, dass durch die Zusammensetzung des Direktoriums eine wirksamere Verbindung mit den politischen Parteien herbeigeführt werde.</p>
+                  <p>Der Kabinettsrat ladet sohin den Staatssekretär für Volksernährung ein, sich mit den politischen Parteien wegen Namhaftmachung zweier christlichsozialer, zweier sozialdemokratischer und eines großdeutschen Vertreters zur Entsendung in das Direktorium in Ver<pb facs="krp-0118_r-0017"/>bindung zu setzen und sodann dem Kabinettsrate neuerlich Antrag zu stellen.</p>
+               </div>
+               <div type="top" xml:id="krp-0118_top09">
+                  <head>
+                     <label>
+                        <num n="9">9.</num>
+                        <seg>Amerikanische Küchenaktion in Wien.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. Loewenfeld-Russ berichtet über das Projekt des Leiters der amerikanischen Kinderhilfsaktion, Dr. Geist, wegen Übernahme der Kriegsküchen der Gemeinde Wien sowie der Gemeinschafts-, Betriebs- und Anstaltsküchen. Der sprechende Staatssekretär stehe auf dem Standpunkte, dass gegen die Übernahme der Kriegsküchen unter der Voraussetzung der ausreichenden Lebensmittelbelieferung kein Anstand obwalte. Die Frage der Übernahme der Gemeinschafts-, Betriebs- und Anstaltsküchen könne jedoch nur im Wege eines Übereinkommens mit den diese Küchen betreibenden Privatkorporationen gelöst werden.</p>
+                  <p>Der Kabinettsrat nimmt diesen Bericht zustimmend zur Kenntnis.</p>
+               </div>
+               <div type="top" xml:id="krp-0118_top10">
+                  <head>
+                     <label>
+                        <num n="10">10.</num>
+                        <seg>Rückwirkung der Staatsbürgerschaft und der Heimatszuständigkeit auf die Versorgungsgenüsse der Zivilstaatsangestellten und Berufsmilitärpersonen.</seg>
+                     </label>
+                  </head>
+                  <p>Sektionschef Dr. <hi rend="#letterspaced">Grimm</hi> erstattet den dem vorliegenden Protokolle als Beilage B anverwahrten Bericht <pb facs="krp-0118_r-0018"/>über die Rückwirkung der Staatsbürgerschaft und der Heimatzuständigkeit auf die Versorgungsgenüsse der Zivilstaatsangestellten und Berufsmilitärpersonen. Eine vom Staatssekretär für Heer[es]wesen im Gegenstande erstattete Gegenäußerung ist dem Protokolle als Beilage C angeschlossen.</p>
+                  <p>Nachdem Oberstauditor <hi rend="#letterspaced">Lelewer</hi> und Militäroberintendant <hi rend="#letterspaced">Lanzendörfer</hi> die Rechtslage eingehend erörtert hatten, bemerkt Staatssekretär Dr. <hi rend="#letterspaced">Reisch</hi>, dass seiner Ansicht nach der Kernpunkt dieser ungemein verwickelten Frage darin zu suchen sei, ob nicht die nach dem 31. Oktober 1918 erfolgte Erwerbung der deutschösterreichischen Staatsbürgerschaft oder der Heimatszuständigkeit in einer Gemeinde Deutschösterreichs aufgrund des Friedensvertrages hinsichtlich aller jener Personen ex tunc für null und nichtig zu erklären wäre, die nunmehr Angehörige eines anderen Nationalstaates sind.</p>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> stellt fest, dass die in einer Gemeinde eines anderen Nationalstaates heute noch Heimatberechtigten durchaus den anderen Nationalstaat angehen und dass dabei auch die Staatsbürgerschaftserklärung aufgrund des § 2 des Staatsbürgergesetzes keine Ausnahme bilde. Es bleiben nur <pb facs="krp-0118_r-0019"/>jene übrig, die zwar am 31. Oktober 1918 die Heimatberechtigung in einer Gemeinde besessen haben, welche nunmehr in einen anderen Staat fällt, inzwischen aber das Heimatrecht in einer Gemeinde erworben haben, die nach dem Vertrage von St. Germain zu unserem Staatsgebiete gehören wird.</p>
+                  <p>In dieser Hinsicht stehe der Friedensvertrag aber auf folgendem Standpunkte: Er behandelt die Frage so, als ob bis zum Inkrafttreten des Friedensvertrages der alte Staat Österreich noch bestünde und erst mit dem Inkrafttreten des Friedensvertrages die den anderen Staaten zufallenden Gebiete diesen abgetreten werden. Wir müssen daher anerkennen, dass diejenigen Personen, die inzwischen ordnungsgemäß das Heimatrecht in einer der Republik Österreich zufallenden Gemeinde erworben haben, unsere Staatsbürger sind und dass eine Heimatberechtigung, die inzwischen erworben wurde, nicht angefochten werden kann.</p>
+                  <p>Diese Heimatberechtigung und in ihrer Konsequenz die Staatsbürgerschaft begründe aber noch keinen Anspruch auf Übernahme in den deutschösterreichischen Dienst, sie begründe aber auch weiterhin an sich noch nicht den <pb facs="krp-0118_r-0020"/>Anspruch auf Versorgungsgenüsse und Pensionen. Diese Frage werde den Verhandlungen mit den Nationalstaaten vorzubehalten sein, und zwar auf Basis einer quotenmäßigen Auseinandersetzung oder, wenn dies nicht zu erreichen sei, aufgrund territorialer Aufteilung (indem jeder Nationalstaat jenen Teil der Versorgungsgenüsse übernimmt, welcher der Dauer der Dienstesverwendung in dem betreffenden Gebiete entspricht). Vorläufig werden wir allerdings diese Versorgungs- und Pensionsbezüge zahlen müssen; wir dürfen uns aber hiebei nicht präjudizieren. Bei den Verhandlungen werde der taktische Grundsatz eingehalten werden müssen, tunlichst viel Ansprüche auf die Nationalstaaten zu überwälzen.</p>
+                  <p>Bei der Aufnahme in die neue Wehrmacht können diejenigen, die inzwischen die Heimatberechtigung bei uns erworben haben, ohne weiters mitkonkurrieren.</p>
+                  <p>Über Antrag des Vorsitzenden beschließt der Kabinettsrat die Behandlung dieser Angelegenheit in diesem Sinne und überträgt die endgiltige Formulierung der hinauszugebenden Verfügungen einer aus Vertretern der Staatskanzlei und der Staatsämter für Inneres und Unterricht, für Finanzen und für Heer[es]wesen bestehenden Kabinettskonferenz.</p>
+                  <p>
+                     <pb facs="krp-0118_r-0021"/>
+                  </p>
+               </div>
+               <div type="top" xml:id="krp-0118_top11">
+                  <head>
+                     <label>
+                        <num n="11">11.</num>
+                        <seg>Inkraftsetzung der neuen Bestimmungen über die Effektenumsatzsteuer.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Reisch</hi> führt aus, dass die Verhältnisse im Effektenverkehre nunmehr die Inkraftsetzung der bereits kundgemachten neuen Bestimmungen über die Effektenumsatzsteuer ermöglichen. Bei einer mit den Vertretern der beteiligten Kreise abgehaltenen Expertise habe sich ergeben, dass auf Seite der zur Steuerentrichtung Berufenen eine ungefähr zweimonatliche Vorbereitungszeit für die Handhabung der neuen Vorschriften (Herstellung der notwendigen Druckseiten usw.) erforderlich sei, aber auch ausreichend sein werde.</p>
+                  <p>Der sprechende Staatssekretär beabsichtige daher, die neuen gesetzlichen Vorschriften über die Effektenumsatzsteuer mit Beginn des Jahres 1920 in Kraft zu setzen. Aus börsetechnischen Gründen empfehle es sich aber, den Wirksamkeitsbeginn mit einem Kassatage zusammenfallen zu lassen und die in Aussicht genommene Kundmachung sehe daher als Tag des Inkrafttretens des novellierten Gesetzes über die Effektenumsatzsteuer den 31. Dezember 1919 vor.</p>
+                  <p>Der Kabinettsrat stimmt diesem Vorgange zu.</p>
+                  <p>
+                     <pb facs="krp-0118_r-0022"/>
+                  </p>
+               </div>
+               <div type="top" xml:id="krp-0118_top12">
+                  <head>
+                     <label>
+                        <num n="12">12.</num>
+                        <seg>Bestätigung der Wahl des Landesrates Vinzenz Schumy zum Präsidenten des Landeskulturrates für Kärnten.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Stöckler</hi> erbittet und erhält vom Kabinettsrate die Ermächtigung, dem Präsidenten der Nationalversammlung die Bestätigung der Wahl des Landesrates Vinzenz Schumy zum Präsidenten des Landeskulturrates für Kärnten vorschlagen zu dürfen.</p>
+               </div>
+               <div type="top" xml:id="krp-0118_top13">
+                  <head>
+                     <label>
+                        <num n="13">13.</num>
+                        <seg>Bekleidungsaktion zu Gunsten der deutschösterreichischen Kriegsbeschädigten.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Hanusch</hi> teilt mit, dass der Landesverband Niederösterreichs des Zentralverbandes der deutschösterreichischen Kriegsbeschädigten unter Hinweis auf die plötzlich eingetretene Kälte und auf den in der Invalidenschaft herrschenden Mangel an den notwendigsten Kleidern, Wäschestücken und Schuhen die dringende Forderung erhoben habe, die Staatsregierung möge dem Landesverbande zur entgeltlichen Bekleidung der bedürftigsten Mitglieder aus den Beständen der Hauptanstalt für Sachdemobilisierung und der Hauptstelle für Volksbekleidung die erforderlichen Bedarfsgegenstände zuweisen und behufs deren Bezahlung einen Kredit gewähren, sowie durch einen entsprechenden Nachlass der Rückzahlung die unentgeltliche Beteilung der allerärmsten Witwen und Waisen ermöglichen.</p>
+                  <p>
+                     <pb facs="krp-0118_r-0023"/>Die Zahl der unbedingt zu beteilenden Invaliden Niederösterreichs einschließlich der Stadt Wien betrage rund 38.500, der Kriegerwitwen 17.500 und der Waisen 26.500. Eine Aufstellung der Hauptanstalt für Sachdemobilisierung und der Hauptstelle für Volksbekleidung über die verfügbaren Bedarfsartikel habe ergeben, dass der Gesamtpreis der verfügbaren Bestände, welche allerdings eine nur sehr unvollständige Deckung des Bedarfes ermöglichen, sich auf rund 9 Millionen K belaufe. Die Vertreter des Landesverbandes hätten nunmehr die Bitte um Gewährung eines allgemeinen Preisnachlasses von 50 % gestellt, wobei zur weiteren Erleichterung der Bedürftigsten in Aussicht genommen sei, dass bei 10 % der verfügbaren Bestände nur eine Zahlung von 10 % des Preises, gleichsam als Anerkennung der Entgeltlichkeit gefordert werden solle. Nach außen hin hätte die Abgabe durchwegs entgeltlich zu erfolgen. Das Staatsamt der Finanzen hätte den allfälligen Staatszuschuss dem Landesverband vorläufig als Darlehen zur Verfügung zu stellen, und der Landesverband hätte den 50 oder 90%igen Preisnachlass seinen Abnehmern bis auf Weiteres nur zu kreditieren. Die Vertreter des Landesverbandes hätten noch die Bitte um Gewährung einer Subvention im Betrage von <pb facs="krp-0118_r-0024"/>2 % des Warenwertes zur Deckung der Manipulationsspesen beigefügt.</p>
+                  <p>Der sprechende Staatssekretär glaube, für die Gesuchswillfahrung eintreten zu sollen, da die zur Verfügung gestellten Waren zum überwiegenden Teile den in größter Notlage befindlichen Kriegerwitwen und [-]waisen zugutekommen würden.</p>
+                  <p>Bei Durchführung dieser Verteilung wäre die Berücksichtigung der gesamten Invalidenschaft Niederösterreichs ohne Rücksicht auf Organisationszugehörigkeit zur Bedingung zu machen und hätte der Landesverband Niederösterreichs des Zentralverbandes deutschösterreichischer Kriegsbeschädigter demnach bei der Aufteilung Vertrauensmänner der übrigen Organisationen beizuziehen.</p>
+                  <p>Nach einer kurzen Debatte, an welcher sich Staatssekretär Dr. <hi rend="#letterspaced">Mayr</hi>, ferner Unterstaatssekretär <hi rend="#letterspaced">Miklas</hi> und Sektionschef Dr. <hi rend="#letterspaced">Grimm</hi> beteiligten, ermächtigt der Kabinettsrat den Staatssekretär für soziale Verwaltung zur Durchführung der dargelegten Aktion, die sich jedoch auf ganz Deutschösterreich zu erstrecken haben wird. Demgemäß werden in das Verteilungskomitee auch Vertrauensmänner der übrigen Landesverbände aufzunehmen sein.</p>
+                  <p>
+                     <pb facs="krp-0118_r-0025"/>
+                  </p>
+               </div>
+               <div type="top" xml:id="krp-0118_top14">
+                  <head>
+                     <label>
+                        <num n="14">14.</num>
+                        <seg>Vollzugsanweisung des Staatsamtes für soziale Verwaltung, betreffend den Wohnungsnachweis.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Hanusch</hi> erbittet und erhält vom Kabinettsrate die Ermächtigung zur Erlassung einer Vollzugsanweisung, betreffend den Wohnungsnachweis.</p>
+               </div>
+               <div type="top" xml:id="krp-0118_top15">
+                  <head>
+                     <label>
+                        <num n="15">15.</num>
+                        <seg>Übernahme der provisorischen Verwaltung der Kunstsammlung „Albertina“ und der Prunkräume im Palais Friedrich Habsburg-Lothringen durch das Unterrichtsamt.</seg>
+                     </label>
+                  </head>
+                  <p>Unterstaatssekretär <hi rend="#letterspaced">Glöckel</hi> erbittet unter eingehender Darstellung der Sachlage die Genehmigung des Kabinettsrates zur Übernahme der provisorischen Verwaltung der Kunstsammlung „Albertina“ und der Prunkräume im Palais Friedrich Habsburg-Lothringen durch das Unterrichtsamt.</p>
+                  <p>Der Kabinettsrat erteilt die erbetene Genehmigung.</p>
+               </div>
+               <div type="top" xml:id="krp-0118_top16">
+                  <head>
+                     <label>
+                        <num n="16">16.</num>
+                        <seg>Gesetzentwurf, betreffend das Dienstverhältnis der Hochschulassistenten.</seg>
+                     </label>
+                  </head>
+                  <p>Unterstaatssekretär Glöckel erbittet und erhält die Ermächtigung des Kabinettsrates den Entwurf eines Gesetzes, betreffend das Dienstverhältnis der Hochschulassistenten, in der Nationalversammlung einbringen zu dürfen.</p>
+               </div>
+               <div type="top" xml:id="krp-0118_top17">
+                  <head>
+                     <label>
+                        <num n="17">17.</num>
+                        <seg>Gesetzentwurf betreffend Ergänzung des Gesetzes vom 19. Dezember 1918, StGBl. Nr. 132, über die Feststellung und Verfolgung von Pflichtverletzungen militärischer Organe im Kriege.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Ramek</hi> führt aus, dass sich bei der Anwendung des <pb facs="krp-0118_r-0026"/>Gesetzes vom 19. Dezember 1918, StGBl. Nr. 132, über die Feststellung und Verfolgung militärischer Pflichtverletzungen im Kriege, Zweifel darüber ergeben haben, ob gegen die von der Generalstaatsanwaltschaft erhobene Anklage der Einspruch zulässig sei. Nach § 4 des Gesetzes seien die Vorschriften der Strafprozessordnung sinngemäß anzuwenden. Das sonst zur Entscheidung zuständige Oberlandesgericht könne aber hier nicht in Frage kommen, da nach § 3 die Gerichtsbarkeit in allen Pflichtverletzungssachen ausschließlich dem Obersten Gerichtshof zustehe. Die beim Obersten Gerichtshof für Sachen dieser Art gebildete Ratskammer habe in einem bestimmten Falle entschieden, dass der Einspruch zwar zulässig sei, die Entscheidung darüber aber nicht dem Oberlandesgerichte, sondern ihr selbst zustehe.</p>
+                  <p>Dieser Ausweg scheine aber nicht befriedigend. Das Gesetz vom 19. Dezember 1918 solle der Öffentlichkeit eine erhöhte Gewähr dafür bieten, dass das von militärischen Kommandanten im Kriege begangene Unrecht gesühnt werde. Dieser Zweck würde nicht erreicht, wenn über eine vom Generalstaatsanwalt erhobene Anklage in einem geheimen Verfahren abgesprochen werden könnte.</p>
+                  <p>
+                     <pb facs="krp-0118_r-0027"/>Gerade das Strafverfahren wegen der Pflichtverletzungen militärischer Organe bedürfe der strengsten Kontrolle durch die Öffentlichkeit. Die Gefahr, gegen die der Einspruch sonst schützen soll, die Gefahr einer mutwilligen Beschuldigung sei hier schon durch die sorgfältig vorbereitete Anklage und die doppelte Untersuchung des Falles durch die Kommission und durch den Untersuchungsrichter, und dadurch ausgeschlossen, dass die Erhebung der Anklage der Generalstaatsanwaltschaft überlassen ist.</p>
+                  <p>Der sprechende Staatssekretär erbitte sich daher die Ermächtigung des Kabinettsrates, nachstehenden Gesetzentwurf in der Nationalversammlung einbringen zu dürfen:</p>
+                  <p>„Art. I.</p>
+                  <p>Im § 4 Abs. 1 des Gesetzes vom 19. Dezember 1918, StGBl. Nr. 132, über die Feststellung und Verfolgung von Pflichtverletzungen militärischer Organe im Kriege ist nach dem ersten Satze einzuschalten: ‘Gegen die Anklageschrift findet kein Einspruch statt. Doch kann der Angeklagte die Zuständigkeit des Obersten Gerichtshofes in der Hauptverhandlung anfechten.[‘] </p>
+                  <p>Art. II.</p>
+                  <p>Dieses Gesetz tritt am Tage der <pb facs="krp-0118_r-0028"/>Kundmachung in Kraft. Es findet auf anhängige Sachen nur Anwendung, wenn die Anklageschrift dem Beschuldigten noch nicht zugestellt ist.</p>
+                  <p>Mit der Vollziehung sind die Staatssekretäre für Justiz und für Heer[es]wesen betraut.“</p>
+                  <p>Der Kabinettsrat erteilt die erbetene Ermächtigung.</p>
+                  <p/>
+               </div>
+            </div>
+            <div type="stenogramme">
+               <div n="1">
+                  <head>EINZUFÜGEN</head>
+                  <p>Transkription in Arbeit.</p>
+               </div>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href='http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:acdh="https://vocabs.acdh.oeaw.ac.at/schema#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xml:lang="de">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="a" type="main" n="0111">Kabinettsprotokoll Nr. 111 vom 30. September 1919</title>
+            <title level="m" type="main" n="01">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <title level="m" type="sub" n="">Renner II (15. März – 17. Oktober 1919)</title>
+            <meeting>
+               <placeName key="https://d-nb.info/gnd/4066009-6">Wien</placeName>
+               <orgName key="https://d-nb.info/gnd/5162749-8">Kabinettsrat</orgName>
+               <date when-iso="1919-09-30"/>
+            </meeting>
+            <editor>
+               <persName key="https://d-nb.info/gnd/122481836"
+                         role="hasCreator"
+                         xml:id="hwohnout">
+                  <forename>Helmut</forename>
+                  <surname>Wohnout</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</affiliation>
+               <idno type="ORCID">0000-0002-3864-9839</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/120789825"
+                         role="hasCreator"
+                         xml:id="tolechowski">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0003-3291-6876</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/131679384"
+                         role="hasCreator"
+                         xml:id="rlein">
+                  <forename>Richard</forename>
+                  <surname>Lein</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0002-7502-0503</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="aholzer">
+                  <forename>Anna</forename>
+                  <surname>Holzer</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0005-3560-3500</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="dsoelkner">
+                  <forename>Dominik</forename>
+                  <surname>Sölkner</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-9895-7212</idno>
+            </editor>
+            <editor>
+               <persName role="hasContributor" xml:id="ischotzko">
+                  <forename>Ina</forename>
+                  <surname>Schotzko</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-5210-3713</idno>
+            </editor>
+            <funder n="1">
+               <orgName key="https://d-nb.info/gnd/2054142-9" role="hasFunder">Österreichischer Wissenschaftsfonds FWF</orgName>
+               <idno type="project">PAT1495024</idno>
+               <title type="project">Die Protokolle des österreichischen Kabinettsrates 1919–1920</title>
+            </funder>
+            <respStmt>
+               <resp>Projektverantwortung</resp>
+               <orgName key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Projektleitung</resp>
+               <persName key="https://d-nb.info/gnd/120789825" role="hasPrincipalInvestigator">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+                  <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+                  <idno type="ORCID">0000-0003-3291-6876</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Nationaler Forschungspartner</resp>
+               <orgName key="https://d-nb.info/gnd/1123037736" role="hasEnabler">Austrian Centre for Digital Humanities</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Digitalisierung der gedruckten Quellen</resp>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>TEI-Datenmodellierung</resp>
+               <persName role="hasContributor" xml:id="tfruehwirth">
+                  <forename>Timo</forename>
+                  <surname>Frühwirth</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-3997-5193</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technische Supervision</resp>
+               <persName key="https://d-nb.info/gnd/1043833846"
+                         role="hasContributor"
+                         xml:id="pandorfer">
+                  <forename>Peter</forename>
+                  <surname>Andorfer</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-9575-9372</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technisches Consulting und Vorbereitung der Druckausgabe</resp>
+               <persName key="https://d-nb.info/gnd/13281899X"
+                         role="hasContributor"
+                         xml:id="skurz">
+                  <forename>Stephan</forename>
+                  <surname>Kurz</surname>
+                  <affiliation key="https://d-nb.info/gnd/1202798799">Institut für die Erforschung der Habsburgermonarchie und des Balkanraumes</affiliation>
+                  <idno type="ORCID">0000-0003-2546-2570</idno>
+               </persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher key="https://d-nb.info/gnd/1001454-8">Österreichische Akademie der Wissenschaften</publisher>
+            <date when="2028"/>
+            <availability status="free">
+               <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">Lizenziert unter CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/deed.de)</licence>
+            </availability>
+            <idno type="ISBN_Print"/>
+            <idno type="ISBN_Part_epub"/>
+            <idno type="ISBN_Digital"/>
+            <idno type="DOI"/>
+            <idno type="DOI_zenodo"/>
+            <idno type="ebook_ID"/>
+         </publicationStmt>
+         <seriesStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="m" type="main">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <respStmt>
+               <resp>Bearbeitung und Herausgeberschaft</resp>
+               <orgName key="https://d-nb.info/gnd/2024703-5">Universität Wien</orgName>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+         </seriesStmt>
+         <notesStmt>
+            <note>Diese TEI-XML-Datei ist Grundlage für eine Druckausgabe der Edition.</note>
+            <relatedItem>
+               <biblStruct>
+                  <monogr>
+                     <imprint>
+                        <pubPlace key="https://d-nb.info/gnd/4066009-6">Wien</pubPlace>
+                        <publisher key="https://d-nb.info/gnd/2068748-5">Verlag der Österreichischen Akademie der Wissenschaften</publisher>
+                        <date when="2029"/>
+                     </imprint>
+                     <extent/>
+                  </monogr>
+                  <note>
+                     <idno/>
+                     <ptr/>
+                  </note>
+                  <citedRange/>
+               </biblStruct>
+            </relatedItem>
+         </notesStmt>
+         <sourceDesc>
+            <bibl>Quellbestand: AT-OeStA/AdR MRang MR 1Rep KRP Kabinettsratsprotokolle, 1918-1920 (Teilbestand)<ref target="https://www.archivinformationssystem.at/detail.aspx?id=5465">https://www.archivinformationssystem.at/detail.aspx?id=5465</ref>
+            </bibl>
+            <msDesc>
+               <msIdentifier>
+                  <institution key="https://d-nb.info/gnd/37748-X" role="hasOwner">AT-OeStA Österreichisches Staatsarchiv (Archiv (ÖStA))</institution>
+                  <repository key="https://d-nb.info/gnd/1601181-8">AT-OeStA/AdR Archiv der Republik, 1918- (Abteilung)</repository>
+                  <collection>AT-OeStA/AdR MRang MR 1Rep Ministerrat 1. Republik, 1918 - 1938 (Bestand)</collection>
+                  <idno>AT-OeStA_AdR-MRang-MR-1.-Rep.-KRP-111</idno>
+               </msIdentifier>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <abstract>
+            <p>
+          <!--to be generated-->
+        </p>
+         </abstract>
+      </profileDesc>
+      <encodingDesc>
+         <styleDefDecl scheme="css"/>
+         <tagsDecl>
+            <rendition xml:id="b" scheme="css">font-weight:bold;</rendition>
+            <rendition xml:id="su" scheme="css">vertical-align:super;font-size:.7em;</rendition>
+            <rendition xml:id="s" scheme="css">text-decoration:line-through;</rendition>
+            <rendition xml:id="u" scheme="css">text-decoration:underline;</rendition>
+            <rendition xml:id="ow" scheme="css">text-decoration:line-through;text-decoration-style:double;</rendition>
+            <rendition xml:id="r" scheme="css">display:block;text-align:right;</rendition>
+            <rendition xml:id="letterspaced" scheme="css">letter-spacing:0.15em;</rendition>
+            <rendition xml:id="i" scheme="css">font-style:italic;</rendition>
+         </tagsDecl>
+         <editorialDecl>
+            <hyphenation>
+               <p>
+            <!--to be added-->
+          </p>
+            </hyphenation>
+            <correction>
+               <p>
+            <!--to be added-->
+          </p>
+            </correction>
+            <normalization>
+               <p>
+            <!--to be added-->
+          </p>
+            </normalization>
+            <punctuation>
+               <p>
+            <!--to be added-->
+          </p>
+            </punctuation>
+            <stdVals>
+               <p>
+            <!--to be added-->
+          </p>
+            </stdVals>
+            <p>
+          <!--to be added-->
+        </p>
+         </editorialDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#tfruehwirth" when-iso="2026-10-07">TEIGarage output upconverted with upconvert.xsl</change>
+         <change who="#tfruehwirth" when-iso="2026-10-07">TEI header populated with generate_tei_templates.py</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface/>
+   </facsimile>
+   <text>
+      <body>
+         <div xml:id="doc-krp-0111.xml">
+            <head type="dokument">
+               <title type="num">111.<note type="footnote">Das Protokoll trägt den Vermerk <hi rend="#i">Vertraulich!</hi>
+                  </note>
+               </title>
+               <title type="desc">
+                  <pb facs="krp-0111_r-0001"/>[Dienstag] 1919-09-30</title>
+            </head>
+            <div type="dokumentkopf">
+               <div type="vorsitz">
+                  <head>Vorsitz:</head>
+                  <p>Renner, teilweise Bratusch</p>
+               </div>
+               <div type="anwesend">
+                  <head>Anwesend:</head>
+                  <p>Bauer, Eldersch, Glöckel, Hanusch, Loewenfeld-Russ, Miklas, Paul, Pflügl, Resch, Schumpeter, Stöckler, Tandler, Waiss, Zerdik</p>
+               </div>
+               <div type="zugezogen">
+                  <head>Zugezogen:</head>
+                  <p>Grimm, Schober, Schüller, Schwarzwald, Seitz, Wilfling</p>
+               </div>
+               <div type="schriftfuehrer">
+                  <head>Schriftführer:</head>
+                  <p>unbekannt</p>
+               </div>
+               <div type="dauer">
+                  <head>Dauer:</head>
+                  <p>19.30–23.45 Uhr</p>
+               </div>
+            </div>
+            <div type="komponenten">
+               <p>Reinschrift, Beilagen, Konzept, stenographische Mitschrift, Entwurf der Tagesordnung</p>
+            </div>
+            <div type="beilagen">
+               <head>Beilagen:</head>
+               <list>
+                  <item>
+                     <ref target="#krp-0111_top02">Zu TOP 2</ref>: <ref target="#krp-0111_b01">Gesetz und Vollzugsanweisung über den achtstündigen Arbeitstag</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0111_top03">Zu TOP 3</ref>: <ref target="#krp-0111_b02">Bericht des Staatssekretärs für Volksernährung über die Erhöhung des Getreidepreises</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0111_top05">Zu TOP 5</ref>: <ref target="#krp-0111_b03">Vortrag des Staatssekretärs Dr. Bauer über die Errichtung einer gemeinwirtschaftlichen Anstalt unter der Firma „Deutschösterreichische Heilmittelstelle, gemeinwirtschaftliche Anstalt“</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0111_top05">Zu TOP 5</ref>: <ref target="#krp-0111_b04">Satzungen der Anstalt „Deutschösterreichische Heilmittelstelle, gemeinwirtschaftliche Anstalt“</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0111_top06">Zu TOP 6</ref>: <ref target="#krp-0111_b05">Antrag des Staatsamtes für Inneres und Unterricht zu Zl. 26.734/1919 auf Beschluss eines Gendarmeriedienstgesetzes</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0111_top06">Zu TOP 6</ref>: <ref target="#krp-0111_b06">Antrag des Staatsamtes für Inneres und Unterricht zu Zl. 32.198/19 auf Beschluss eines Polizeidienstgesetzes</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0111_top07">Zu TOP 7</ref>: <ref target="#krp-0111_b07">Vollzugsanweisung des Staatsamtes für soziale Verwaltung über die Umwandlung von Renten nach dem Invalidenentschädigungsgesetz</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0111_top08">Zu TOP 8</ref>: <ref target="#krp-0111_b08">Bericht der Staatskanzlei zur Frage der Entfernung der altösterreichischen Hoheitszeichen von Staatsgebäuden</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0111_top09">Zu TOP 9</ref>: <ref target="#krp-0111_b09">Antrag des Unterstaatssekretärs für Unterricht Zl. 19.814/Abt. 11 über den Wirkungskreis des Kurators der Theresianischen Akademie</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0111_top10">Zu TOP 10</ref>: <ref target="#krp-0111_b10">Verlautbarung des einheitlichen Textes der Effektenumsatzsteuervorschriften durch das Staatsamte für Finanzen</ref>
+                  </item>
+               </list>
+            </div>
+            <div type="protokoll">
+               <pb facs="krp-0111_r-0002"/>
+               <div type="top" xml:id="krp-0111_top01">
+                  <head>
+                     <label>
+                        <num n="1">1.</num>
+                        <seg>Finanzierung der Lebensmittelbeschaffung.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Loewenfeld-Russ</hi> berichtet, dass die Ernährungssituation derart kritisch geworden sei, dass man bereits ernstlich in Erwägung ziehen müsse, ob nicht mit <pb facs="krp-0111_r-0003"/>einer Kürzung der Brot- und Mehlquote für Wien vorzugehen wäre, um der Gefahr zu begegnen, bei Verzögerung von Transporten in der nächsten Zeit die Ausgabe von Brot und Mehl überhaupt einstellen zu müssen.</p>
+                  <p>Die Lage habe noch dadurch eine Verschärfung erfahren, dass für die Ernährung der Pferde in Wien aus den für den menschlichen Konsum bestimmten Getreidebeständen ein bestimmtes Quantum Mais unbedingt zur Verfügung gestellt werden müsse.</p>
+                  <p>Der allerdringendste Bedarf sei 14 Millionen Holland-Gulden zur Beschaffung von Getreide und 3 Millionen Holland-Gulden für die Beschaffung von Fett.</p>
+                  <p>Das Staatsamt für Finanzen könne gegenwärtig nur 3 Millionen Holland-Gulden zur Verfügung stellen.</p>
+                  <p>Der Erlös der Bilderaktion dürfte wohl zu spät kommen.</p>
+                  <p>Er stelle nunmehr an das Staatsamt für Finanzen die Frage, in welcher Weise für den Bedarf der nächsten zwei bis drei Monate vorgesorgt werden könne.</p>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> teilt mit, dass er am heutigen Tage den Staatsbevollmächtigten für die Verwertung der Kunst<pb facs="krp-0111_r-0004"/>schätze Sektionschef Ing. Enderes mit der Aufgabe betraut habe, binnen 14 Tagen den Betrag von 10 Millionen Holland-Gulden auf irgendeine Weise aufzubringen.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Schumpeter</hi> erklärt, dass außer der Beschaffung der vom Vorsitzenden erwähnten Summe aus dem Verkaufe von Kunstwerken weiters ein verhältnismäßig kleiner Betrag in Holland aufzubringen sein dürfte. Außerdem dürfte es möglich sein, ein kleines Darlehen von einigen Millionen Dollars in Amerika aufzunehmen. Er müsse allerdings hiezu bemerken, dass derartige kleine Operationen die Chancen einer späteren größeren Kreditoperation beeinträchtigen werden. Auch die Verpfändung von Wertpapieren müsste ins Auge gefasst werden. Auch könnte daran geschritten werden, Gold- und Schmuckgegenstände aus dem Privatbesitz in Anspruch zu nehmen.</p>
+                  <p>Ministerialrat Dr. <hi rend="#letterspaced">Schwarzwald</hi> erstattet einen eingehenden Bericht über die bisherige Tätigkeit des Staatsamtes für Finanzen auf dem Gebiete der Valutenbeschaffung und die immer geringer werdenden Aussichten für die Aufbringung ausländischer Zahlungsmittel.</p>
+                  <p>
+                     <pb facs="krp-0111_r-0005"/>Staatssekretär Dr. <hi rend="#letterspaced">Bauer</hi> erklärt, dass er die Kürzung der Brotquote für undurchführbar halte, weil wir bereits hart an der Grenze dessen stünden, was noch sozial möglich sei.</p>
+                  <p>Was die Frage der Kreditbeschaffung anbelange, so halte er es für ganz wirkungslos, wenn man der Entente anbieten würde, auf unseren Immobiliarbesitz zu greifen. Es gebe aber nach seiner Ansicht Formen, in denen derartige Vorschläge der Entente annehmbarer erscheinen würden. Er denke dabei an Goldpfandbriefe, die sich auf Immobilien zu stützen hätten.</p>
+                  <p>Oberst Causey habe mitgeteilt, dass der Ausschuss der Reparationskommission in Wien noch vor Ratifizierung des Friedens werde eingesetzt werden. Der sprechende Staatssekretär glaube daher, dass es unbedingt notwendig sei, konkrete Vorschläge für die Kreditbeschaffung vorzubereiten, die diesem Ausschusse zu erstatten wären.</p>
+                  <p>Staatssekretär <hi rend="#letterspaced">Eldersch</hi> spricht sich gleichfalls in entschiedener Weise gegen die Kürzung der Brot- und Mehlquote in Wien aus, vorausgesetzt, dass nicht die unmittelbare Gefahr bestehe, in einem späteren Zeit<pb facs="krp-0111_r-0006"/>punkte überhaupt nichts ausgeben zu können. Bei dem nahezu gänzlichen Versagen der Aufbringung in den Provinzen wäre er dafür, auf die Länder einen energischen Druck dadurch auszuüben, dass keine oder nur entsprechend gekürzte Zuschübe mehr hindisponiert werden.</p>
+                  <p>Sektionschef Dr. <hi rend="#letterspaced">Schüller</hi> führt aus, dass der Entente bereits klar gemacht worden sei, dass sie ein Ernährungsprogramm für uns aufstellen müsse. Ein diesbezüglich von den Amerikanern eingebrachter Antrag sei jedoch noch nicht angenommen worden. Ein Erfolg dieses Antrages könne nur darin erblickt werden, dass ein Organisationskomitee der Reparationskommission in Wien werde aufgestellt werden. Eine Wirkung dieser Maßnahme könne aber wohl vor zwei Monaten nicht eintreten. Es sei daher notwendig, die Entente auf den Ernst der Situation aufmerksam zu machen. Er rege deshalb an, der Entente mitzuteilen, dass die Regierung vor der Notwendigkeit stehe, die Brotquote zu kürzen, wenn uns nicht binnen drei Wochen eine Getreideaushilfe gewährt würde.</p>
+                  <p>Der Kabinettsrat beauftragt das Staatsamt für Äußeres ein Telegramm <pb facs="krp-0111_r-0007"/>im Sinne der Anregung des Sektionschefs Dr. Schüller an den Obersten Rat in Paris zu richten. Im Übrigen tritt die einmütige Auffassung des Kabinettsrates zutage, dass mit der Kürzung der Brot- und Mehlquote so lange als möglich zuzuwarten wäre.</p>
+               </div>
+               <div type="top" xml:id="krp-0111_top02">
+                  <head>
+                     <label>
+                        <num n="2">2.</num>
+                        <seg>Gesetz über den achtstündigen Arbeitstag.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Hanusch</hi> legt dem Kabinettsrat den entsprechend den Verhandlungen in der Sitzung des Kabinettsrates vom 26. August d. J. abgeänderten Entwurf eines Gesetzes, betreffend den achtstündigen Arbeitstag, mit der Bitte um Ermächtigung vor, diesen Entwurf der Nationalversammlung unterbreiten zu dürfen.</p>
+                  <p>Staatssekretär <hi rend="#letterspaced">Stöckler</hi> erklärt, dass er die seinerzeit von seinen engeren Parteikollegen vorgebrachten Einwendungen aufrecht halte. </p>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> entscheidet dahin, dass der vorliegende Gesetzentwurf der Nationalversammlung zu unterbreiten ist.</p>
+                  <p>
+                     <pb facs="krp-0111_r-0008"/>
+                  </p>
+               </div>
+               <div type="top" xml:id="krp-0111_top03">
+                  <head>
+                     <label>
+                        <num n="3">3.</num>
+                        <seg>Erhöhung der Getreidepreise.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Loewenfeld-Russ</hi> weist darauf hin, dass mit der im Einvernehmen mit den beteiligten Staatsämtern erlassenen Vollzugsanweisung des Staatsamtes für Volksernährung vom 15. Juli 1919, StGBl. Nr. 367, nach Anhörung der Zentral-Preisprüfungskommission, der Vertreter aller Länder und des Ernährungsausschusses die Übernahmspreise der Kriegsgetreideanstalt für Weizen und Roggen mit 130 K pro Meterzentner und für Gerste und Hafer mit 113 K pro Meterzentner festgelegt worden seien. Diese Preisfestsetzung habe sich als ein Kompromiss dargestellt, welcher sich aus den verschiedenartigen Forderungen der Vertreter der einzelnen Länder ergab.</p>
+                  <p>Der Verband der landwirtschaftlichen Genossenschaften Niederösterreichs, die Kärntner Landesregierung und Landwirte aus verschiedenen Gegenden Deutschösterreichs hätten in jüngster Zeit an das Staatsamt für Volksernährung dringende Ansuchen gerichtet, in welchen auf die Unzulänglichkeit der festgesetzten Getreidepreise im Verhältnis zu den hohen Gestehungskosten, <pb facs="krp-0111_r-0009"/>insbesondere aber darauf hingewiesen wurde, dass die Grundlagen, welche für die Preisfestsetzung im Juni d. J. maßgebend waren, durch die seither geänderten Verhältnisse überholt worden seien. Die hohen Kosten des Schnittes, des Drusches, der Fuhrlöhne und die Belastung der Landwirtschaft mit dem Kollektivvertrag der landwirtschaftlichen Arbeiter brächten es mit sich, dass die Getreideproduktion bei den jetzt geltenden Preisen mit Verlust arbeite.</p>
+                  <p>Tatsächlich sei die Aufbringung des Getreidekontingentes – wenn auch eine Reihe anderer Gründe mitmaßgebend waren, wie Verspätung der Ernte, Mangel an Kohle und Benzin für den Drusch – wesentlich hinter den Ergebnissen zur gleichen Zeit des Vorjahres zurückgeblieben. Sie habe am 25. September insgesamt nur 29.730 t gegen 85.400 t im Vorjahre betragen.</p>
+                  <p>Am 16. September d. J. habe im Staatsamte für Volksernährung eine Besprechung mit den Produzenten- und Konsumentenvertretern der Länder stattgefunden, bei der alle Länder mit Ausnahme von Tirol und Vorarlberg ver<pb facs="krp-0111_r-0010"/>treten waren. Die landwirtschaftlichen Vertreter Niederösterreichs verlangten eine Preiserhöhung um mindestens 100 K pro Meterzentner. Die Vertreter der Steiermärkischen Landesregierung versprachen sich einen Erfolg in der Getreideaufbringung nur dann, wenn der Getreideübernahmspreis mit dem Weltmarktpreise wenigstens annähernd im Einklang gebracht würde. Die Vertreter Kärntens sprachen sich für eine Erhöhung der Preise aus. Dagegen nahmen die Arbeitervertreter der verschiedenen Länder, insbesondere aber der oberösterreichische Landeshauptmannstellvertreter Gruber gegen die geplante Erhöhung der Getreidepreise entschieden Stellung, wobei insbesonders darauf hingewiesen wurde, dass eine ganze Reihe von Arbeitergruppen in der letzten Zeit von einer Erhöhung der Lohnsätze unter der Voraussetzung Abstand genommen hätten, dass in nächster Zeit mit dem allgemeinen Preisabbau eingesetzt werden würde. Es wurde auch darauf hingewiesen, dass man für die Eisenbahner kein Geld, wohl aber Geld für die Landwirte habe.</p>
+                  <p>Da im Gegenstande eine Einigung nicht zu erzielen war, sei der Be<pb facs="krp-0111_r-0011"/>schluss gefasst, die Beratung zu vertagen und einem engeren Komitee übertragen worden, das aus je einem Konsumenten- und einem Produzentenvertreter eines jeden Landes zu bestehen hätte.</p>
+                  <p>Dieses Komitee sei am 26. September d. J. zusammengetreten. Bei dieser Besprechung sei gegen die Stimme der Vertreter Salzburgs eine Einigung in der Richtung zustande gekommen, dass die Notwendigkeit einer Getreidepreiserhöhung anerkannt wurde. Der Landwirt hätte jedoch erst dann in den Vorteil eines höheren Preises einzutreten, wenn er seine Getreideablieferungspflicht voll und restlos erfüllt habe. Nach diesem Beschlusse würden sich demnach für alle Landwirte, welche ihrer Ablieferungspflicht nicht voll Genüge leisten, die bisherigen Preise von 130 K für Roggen und Weizen und von 113 K für Hafer und Gerste, für alle übrigen Landwirte aber erhöhte Getreidepreise ergeben. Von den Vertretern Niederösterreichs und Kärntens sei ein einheitlicher Brotgetreidepreis für Roggen, Weizen und Gerste mit 230 K pro Meterzentner und ein entsprechender Relationspreis für Hafer gefordert worden, während die Vertreter Oberösterreichs <pb facs="krp-0111_r-0012"/>den Brotgetreidepreis mit 160 K bis 180 K für genügend hoch erachteten.</p>
+                  <p>Der sprechende Staatssekretär bemerkt, dass eine entsprechende Erhöhung – eine kleine Erhöhung wäre zwecklos – sicherlich die Aufbringung des Kontingentes erleichtern würde; jede Tonne aufgebrachten Getreides bedeute aber selbst bei höherem Preise eine Entlastung des für die Einfuhr teueren ausländischen Getreides erforderlichen Aufwandes. Nach den Ausführungen der Produzentenvertreter und nach den vorgelegten Ertragsberechnungen stehe es außer Zweifel, dass die derzeit geltenden Getreidepreise durch die Ereignisse seit Juni d. J. überholt erscheinen und den Erzeugungskosten nicht mehr entsprechen.</p>
+                  <p>Redner stelle daher den Antrag: </p>
+                  <list>
+                     <item n="1">
+                        <label>1.)</label> die Übernahmspreise der deutschösterreichischen Kriegsgetreideanstalt für Weizen, Roggen und Gerste <hi rend="#u">einheitlich mit 200 K</hi> pro Meterzentner und die Übernahmspreise für <hi rend="#u">Hafer mit 160 K</hi> pro Meterzentner zu erstellen.</item>
+                     <item n="2">
+                        <label>2.)</label> Diese erhöhten Preise sollen dem Landwirte nur dann bezahlt werden, wenn er sein Brotgetreide- oder sein Haferkontingent restlos erfüllt hat.</item>
+                  </list>
+                  <p>
+                     <pb facs="krp-0111_r-0013"/>In diesem Falle hätte die Preiserhöhung rückwirkende Kraft, d. h. sie gelte für die gesamte, zur Ablieferung gebrachte Brotgetreide- oder Hafermenge.</p>
+                  <list>
+                     <item n="1">
+                        <label>3.)</label> Wenn nach der endgiltigen Aufteilung der Einzelkontingente unabwendbare Elementarereignisse eingetreten sind, welche es dem Landwirte unmöglich mache, sein Brotgetreide- oder Haferkontingent voll zu erfüllen, so hätten die Landesregierungen nach genauer Festsetzung des Tatbestandes den erhöhten Preis auch bei nur teilweiser Abstellung des Kontingentes zu bewilligen.</item>
+                  </list>
+                  <p>Was die rechtliche Behandlung der Frage anbelange, führt Staatssekretär Dr. Loewenfeld-Russ Folgendes aus:</p>
+                  <p>Nach § 7 Abs. 4 des Gesetzes vom 3. Juli 1919, StGBl. Nr. 345 über die Regelung des Verkehres mit Getreide- und Mahlprodukten „hat der einmal festgesetzte Übernahmspreis für Getreide bis zur Ernte des Jahres 1920 unverändert zu bleiben.“</p>
+                  <p>Hiezu sei Nachstehendes zu bemerken: Im vergangenen Wirtschaftsjahre waren wegen der äußerst schlechten Versorgungslage im Sommer 1918 Druschprämien zur Anwendung gelangt, welche <pb facs="krp-0111_r-0014"/>eine rasche Ablieferung des Getreides, speziell in der zweiten Hälfte des Monates August und im September, herbeiführen sollten. Diese Druschprämien, die anfangs mit einem Zuschlag von 25 K pro Meterzentner Getreide berechnet waren, sollten bis 20. Dezember 1918 auf 5 K abgebaut werden.</p>
+                  <p>Die Versorgungslage Deutschösterreichs war knapp nach dem Umsturze bekanntlich abermals in ein äußerst kritisches Stadium getreten, da die Zuschübe von auswärts aufgehört hatten und auch die inländische Aufbringung auf dem Nullpunkt angelangt war. Da aber die inländische Aufbringung damals die einzige Möglichkeit für die Versorgung bieten konnte, hat der Kabinettsrat die Wiedereinführung der erhöhten Druschprämie von 25 K in einem Zeitpunkte beschlossen, in welchem die Druschprämie bereits auf 5 K herabgesunken war. Durch diese Verfügung ist der Zustand eingetreten, dass ein großer Teil der Landwirte, welcher bis anfangs November bereits Getreide abgeliefert hatte, nur der geringeren Druschprämie teilhaftig wurde. Dies führte zu zahlreichen Beschwerden und Gesuchen, welche auf die Gleichstellung der Getreidepreise, bzw. -prämien auch für die <pb facs="krp-0111_r-0015"/>Zeit vor dem November 1918 abzielten. </p>
+                  <p>Die Fassung der oberwähnten Gesetzesstelle (§ 7 Abs. 4 des Gesetzes) sollte die Landwirte gegen ähnliche Erscheinungen schützen. Es sollte hiemit feierlich zum Ausdruck gebracht werden, dass Landwirte, die Getreide zur Ablieferung gebracht haben, durch irgendeine Preisänderung nicht zu Schaden kommen dürfen, d. h., dass jeder Preisänderung rückwirkende Kraft innewohnen müsse.</p>
+                  <p>Aus dieser Auslegung des § 7 Abs. 4 würde sich eine Änderung des Gesetzes erübrigen und lediglich eine Änderung der Vollzugsanweisung vom 15. Juli 1919, StGBl. Nr. 367 erforderlich sein.</p>
+                  <p>Staatsekretär Dr. <hi rend="#letterspaced">Bauer</hi> erhebt Bedenken dagegen, dass diese mit dem geltenden Gesetz in Widerspruch stehende Maßnahme ohne Zustimmung der Nationalversammlung getroffen werde. Der durch die parlamentarische Behandlung hervorgerufene kurze Aufschub komme umsoweniger in Betracht, als die gewünschte Wirkung bereits durch die Publizierung der in Aussicht stehenden Maßnahme erzielt würde.</p>
+                  <p>
+                     <pb facs="krp-0111_r-0016"/>Was das Meritum anbelange, so glaube er, dass die Ablieferung des vollen Kontingentes als Voraussetzung für die Zuerkennung der erhöhten Preise an einen bestimmten Zeitpunkt zu binden wäre.</p>
+                  <p>Was die Bestimmung anbelange, dass die Landesregierungen unter gewissen Voraussetzungen den erhöhten Preis auch bei teilweiser Abstellung des Kontingentes bewilligen dürfen, so sei er der Anschauung, dass in dieser Beziehung eine Kautel und Kontrolle geschaffen werden müsse.</p>
+                  <p>Nach einer längeren Debatte, an welcher sich Präsident <hi rend="#letterspaced">Seitz</hi>, ferner die Staatssekretäre <hi rend="#letterspaced">Eldersch</hi>, <hi rend="#letterspaced">Stöckler, Hanusch</hi> und Dr. <hi rend="#letterspaced">Loewenfeld-Russ</hi> beteiligten, beschließt der Kabinettsrat, dass die in Rede stehende Maßnahme im Wege eines Gesetzes durchzuführen sein werde. In der bezüglichen Gesetzesvorlage werde die volle Ablieferung des Kontingentes bis 1. März zu fordern, ferner an Stelle der Landesregierungen dem Staatsamt für Volksernährung die Befugnis zu erteilen sein, in außerordentlichen Fällen den erhöhten Preis <pb facs="krp-0111_r-0017"/>auch bei Nichtablieferung des vollen Kontingentes zuzugestehen.</p>
+               </div>
+               <div type="top" xml:id="krp-0111_top04">
+                  <head>
+                     <label>
+                        <num n="4">4.</num>
+                        <seg>Stand der Zuckerversorgung.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. Loewenfeld-Russ teilt mit, dass der Vertrag mit der tschechoslowakischen Regierung über die Zuckerlieferungen am heutigen Tage abgelaufen sei. Die Tschechen hätten Verhandlungen über die Erneuerung des Vertrages mit dem Hinweis darauf abgelehnt, dass sie ihre ganzen Zuckerüberschüsse an eine französische Gesellschaft verpfändet haben, an die wir uns wegen Weiterbelieferung zu wenden hätten. Wiewohl aus dem früheren Vertrage noch ein Rückstand von 5.000 Waggons bestehe, so sei doch unsere Situation für die Zukunft sehr bedrohlich.</p>
+                  <p>Der sprechende Staatssekretär habe sich an unsere Vertretung in Paris mit den Ersuchen gewendet, bei der Entente zu intervenieren, damit sie auf die Tschechen wegen weiterer direkter Belieferung einwirke.</p>
+                  <p>Der Kabinettsrat nimmt diesen Bericht zur Kenntnis und beauftragt den sprechenden Staatssekretär, allen<pb facs="krp-0111_r-0018"/>falls auch mit Deutschland Verhandlungen wegen Zuckerbelieferung einzuleiten.</p>
+               </div>
+               <div type="top" xml:id="krp-0111_top05">
+                  <head>
+                     <label>
+                        <num n="5">5.</num>
+                        <seg>Einrichtung einer „Deutschösterreichischen Heilmittelstelle, gemeinwirtschaftlichen Anstalt.“</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Bauer</hi> stellt nach eingehender Begründung den Antrag, der Kabinettsrat wolle die Errichtung der „Deutschösterreichischen Heilmittelstelle, gemeinwirtschaftliche Anstalt“ beschließen und die den Kabinettsrat gleichzeitig vorgelegten Satzungen dieser Anstalt genehmigen.</p>
+                  <p>Der Kabinettsrat beschließt im Sinne des gestellten Antrages. </p>
+               </div>
+               <div type="top" xml:id="krp-0111_top06">
+                  <head>
+                     <label>
+                        <num n="6">6.</num>
+                        <seg>Polizeidienstgesetz; Gendarmeriedienstgesetz.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Eldersch</hi> erbittet die Ermächtigung des Kabinettsrates, der Nationalversammlung den Entwurf eines Gesetzes, betreffend die Dienstverhältnisse der Mitglieder der Sicherheitswach- und Polizeiagentenkorps (Polizeidienstgesetz), sowie den Entwurf eines Gesetzes, betreffend die Neuregelung des Dienstverhältnisses und der Dienstbezüge der deutschösterreichischen <pb facs="krp-0111_r-0019"/>Gendarmerie (Gendarmeriedienstgesetz), unterbreiten zu dürfen.</p>
+                  <p>Polizeipräsident <hi rend="#letterspaced">Schober</hi> begründet die vorgelegten Gesetzentwürfe in eingehender Weise und führt aus, dass es sich im Wesentlichen um die Verleihung des Beamtencharakters an die Mitglieder dieser Korps handle.</p>
+                  <p>Sektionschef Dr. <hi rend="#letterspaced">Grimm</hi> erklärt, dass das Staatsamt für Finanzen gegen die vorliegenden Gesetzentwürfe keine Einwendung erhebe. Er halte es jedoch für unbedingt erforderlich, dass diese Maßnahme auch auf das Finanzwachkorps, welches seit jeher den beiden andern Wachkorps gleichgestellt wurde, ausgedehnt werde.</p>
+                  <p>Da jedoch zu befürchten sei, dass die vorgeschlagenen Begünstigungen auch von anderen ähnlichen Bedienstetenkategorien in Anspruch genommen werden würden, stelle das Staatsamt für Finanzen den Antrag, der Kabinettsrat wolle gleichzeitig mit der Annahme des von Staatssekretär Eldersch gestellten Antrages erklären, dass aus einem solchen Beschlusse keinerlei Präjudiz für andere ähnliche Bedienstetenkategorien abgeleitet werden dürfe.</p>
+                  <p>
+                     <pb facs="krp-0111_r-0020"/>Staatssekretär Dr. <hi rend="#letterspaced">Bratusch</hi> spricht sich gegen den von Sektionschef Dr. Grimm vertretenen Antrag mit dem Hinweis darauf aus, dass die Einbeziehung der Gefangenenaufseher unvermeidlich sein werde.</p>
+                  <p>Unterstaatssekretär Dr. <hi rend="#letterspaced">Waiss</hi> gibt namens des Staatsamtes für Heer[es]wesen nachstehende Erklärung ab:</p>
+                  <p>„Durch das Polizeidienstgesetz werden Beamtenstellen geschaffen, bezüglich welcher nach dem Gesetz vom 19. April 1872, RGBl. Nr. 60, den längerdienenden Unteroffizieren ein Vorzugsrecht eingeräumt ist.</p>
+                  <p>Obwohl die Gendarmerie nach dem Gesetz vom 27. November 1918, StGBl. Nr. 75, ein nach militärischem Muster organisierter <hi rend="#u">Zivilwachkörper</hi> ist, gilt das Gleiche nicht für die durch das Gendarmeriedienstgesetz geschaffenen Beamtenstellen. Dies aus dem Grunde, weil § 39 des Gesetzes vom 25. Dezember 1894, RGBl. Nr. 1 ex 1895 noch in Kraft steht und somit nach der bisherigen Rechtslage die Gendarmerie – auch nach ihrer Neuorganisation –   nicht als Anstellungsgebiet im Sinne des Unteroffiziersanstellungsgesetzes gelten kann. </p>
+                  <p>
+                     <pb facs="krp-0111_r-0021"/>Jedenfalls ist es notwendig, in die beiden Gesetze, namentlich aber in das Polizeidienstgesetz, eine Bestimmung aufzunehmen, wonach für die nach dem bezogenen Gesetze durchzuführenden Ernennungen das Gesetz vom 19. April 1872, RGBl. Nr. 60, kein Hindernis bildet.</p>
+                  <p>Eine gleiche Bestimmung enthält das Gesetz vom 5. Februar 1919, StGBl. Nr. 100 (Offiziantengesetz).</p>
+                  <p>Im Falle der Annahme der beiden Gesetze würde eine Rückwirkung im Bereiche des Heeresressorts insoferne nicht ausbleiben, als die Berufsunteroffiziere in der neuen Wehrmacht eine analoge Stellung und zwar mit höheren als den ihnen sonst zukommenden Gebühren anstreben werden, eine Forderung, die das Staatsamt für Heer[es]wesen vom Gesichtspunkte der Gebührenfrage selbstverständlich nur nachdrücklichst unterstützen muss. Eine unterschiedslose Überleitung von Berufsunteroffizieren in den Offiziersstand kann aber – soweit nach den heute schon vorliegenden Plänen des Aufbaues der neuen Wehrmacht gesprochen werden darf – nicht erfolgen.“</p>
+                  <p>Nach einer längeren Debatte, an welcher sich Präsident <hi rend="#letterspaced">Seitz</hi>, fer<pb facs="krp-0111_r-0022"/>ner die Staatssekretäre Dr. <hi rend="#letterspaced">Bauer</hi>, <hi rend="#letterspaced">Eldersch</hi> und <hi rend="#letterspaced">Hanusch</hi> sowie der Präsident der Polizeidirektion <hi rend="#letterspaced">Schober</hi> beteiligten, erteilt der Kabinettsrat dem Staatssekretär Eldersch die prinzipielle Ermächtigung zur Einbringung der beiden Gesetzesvorlagen mit der Maßgabe, dass über Einzelheiten vorher noch das Einvernehmen mit dem Staatsamte für Finanzen zu pflegen sein werde.</p>
+                  <p>Der Antrag des Sektionschefs Dr. Grimm wird abgelehnt, da die allfällige Ausdehnung der den Wachkorps einzuräumenden Begünstigungen auf andere ähnliche Bedienstetenkategorien insbesondere auf die Gefangenenaufseher nicht zu vermeiden sein werde.</p>
+               </div>
+               <div type="top" xml:id="krp-0111_top07">
+                  <head>
+                     <label>
+                        <num n="7">7.</num>
+                        <seg>Vollzugsanweisung, betreffend die Umwandlung von Renten nach dem Invalidenentschädigungsgesetz (4. Vollzugsanweisung zum Invalidenentschädigungsgesetz).</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Hanusch</hi> erbittet die Ermächtigung des Kabinettsrates zur Erlassung einer Vollzugsweisung des Staatsamtes für soziale Verwaltung im Einvernehmen mit den beteiligten Staatsämtern, betreffend die Umwandlung von Renten nach dem Invalidenentschädigungsgesetz (4. Vollzugsanweisung<pb facs="krp-0111_r-0023"/>zum Invalidenentschädigungsgesetz).</p>
+                  <p>Über die gegenständliche Vollzugsanweisung bestehe Einverständnis mit allen beteiligten Staatsämtern. Lediglich bezüglich des Wirksamkeitsbeginnes (§ 27) sei eine Meinungsverschiedenheit mit dem Staatsamte für Finanzen vorhanden. Während dieses den Standpunkt vertrete, dass die Vollzugsanweisung erst nach Ratifizierung des Friedensvertrages in Geltung zu treten habe, um dadurch die Anwendung der Vollzugsanweisung auf die aus den Sudetenländern stammenden Invaliden zu verhindern, müsse er mit Rücksicht auf die Dringlichkeit auf dem sofortigen Inkrafttreten bestehen. Er beabsichtige, den vom Staatsamte für Finanzen geltend gemachten Bedenken dadurch zu begegnen, dass die Invalidenentschädigungskommissionen mittels eines vertraulichen Erlasses angewiesen werden, mit der Entscheidung über Ansprüche von sudetenländischen Invaliden bis zur Ratifizierung des Friedens zuzuwarten, in welchem Zeitpunkte diese Ansprüche gegenstandslos würden.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Bauer</hi> weist darauf hin, dass sich auch bei <pb facs="krp-0111_r-0024"/>dieser Gelegenheit die Notwendigkeit zeige, ungesäumt, noch vor Ratifizierung des Friedens, an die Abänderung des Gebietes- und insbesondere des Staatsbürgergesetzes zu schreiten, da der gegenwärtige Zustand dem Staate täglich bedeutende Kosten verursache. Gleichzeitig wäre ein Gesetz über das Bezugsrecht derjenigen, die von dem Optionsrecht Gebrauch machen, zu erlassen.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Bratusch</hi> beantragt, eine stilistische Revision des Entwurfes zu dem Zwecke vorzunehmen, um sicherzustellen, dass die Vollzugsanweisung den Invaliden keinen Rechtsanspruch auf Gewährung einer Rente oder einer Abfertigung zuerkenne.</p>
+                  <p>Der Kabinettsrat erteilt dem Staatssekretär Hanusch unter gleichzeitiger Annahme des Antrages des Staatssekretärs Dr. Bratusch die erbetene Ermächtigung zur Erlassung der Vollzugsanweisung, die am Tage der Kundmachung in Kraft zu treten habe. Weiterhin richtet der Kabinettsrat im Sinne der Anregung des Staatssekretärs Dr. Bauer an die Staats<pb facs="krp-0111_r-0025"/>kanzlei das Ersuchen, wegen Einbringung der bezeichneten Gesetze das Erforderliche zu veranlassen.</p>
+               </div>
+               <div type="top" xml:id="krp-0111_top08">
+                  <head>
+                     <label>
+                        <num n="8">8.</num>
+                        <seg>Frage der Entfernung der altösterreichischen Hoheitszeichen von Staatsgebäuden.</seg>
+                     </label>
+                  </head>
+                  <p>In Vertretung des augenblicklich abwesenden Staatskanzlers Dr. Renner teilt Staatssekretär Dr. Bratusch mit, dass sich die Frage aufgeworfen habe, ob die altösterreichischen Hoheitszeichen (Adler und Krone) von Staatsgebäuden unter allen Umständen derzeit zu entfernen seien.</p>
+                  <p>Zweifellos sei grundsätzlich darauf zu dringen, dass sichtbare Erinnerungen an den ehemaligen Staat und an die monarchische Staatsform an Gebäuden unserer Republik möglichst zu vermeiden sind, zumal sie auch von der Bevölkerung vielfach beanständet werden.</p>
+                  <p>Andererseits stellen aber diese alten Hoheitszeichen oft einen mit dem Gebäude organisch verwachsenen Bauschmuck im architektonischen Sinne dar, so dass deren Beseitigung nicht nur eine baugeschichtliche Fälschung, sondern auch eine ästhetische Schädigung [und] <pb facs="krp-0111_r-0026"/>eine Wertverminderung der betreffenden Gebäude bedeuten würde. Zu dem komme noch, dass die Entfernung solchen Bauschmuckes sich in vielen Fällen nur mit namhaften Kosten bewerkstelligen ließe.</p>
+                  <p>Die Staatskanzlei glaube daher, dem Kabinettsrat folgende grundsätzliche Eröffnung an die Staatsämter vorschlagen zu solle:</p>
+                  <p>„Grundsätzlich ist dafür Sorge zu tragen, dass die alten Hoheitszeichen, welche an den ehemaligen Staat Österreich und die monarchische Staatform erinnern, von den staatlichen Gebäuden ehestens entfernt werden. Künstlerisch wertvolle Embleme (z. B. Schmiede- und getriebene Arbeiten u. dgl.) werden in den Landesmuseen zu hinterlegen sein.</p>
+                  <p>In solchen Fällen aber, in welchen diese Hoheitszeichen einen mit dem Gebäude organisch verwachsenen Baumschmuck darstellen, dessen Abnahme laut fachmännischer Begutachtung den Charakter einer architektonischen Schädigung, oder baugeschichtlicher Fälschung hätte, ferner in Fällen, in denen die Kosten der Abnahme unverhältnismäßig große wären, können die Hoheitszeichen belassen werden.</p>
+                  <p>
+                     <pb facs="krp-0111_r-0027"/>Es ist aber Vorsorge zu treffen, dass auf den Amtsgebäuden daneben in einer architektonisch zulässigen Weise der neue Name des Staates, bzw. die neuen Hoheitszeichen angebracht werden.“</p>
+                  <p>Der Kabinettsrat pflichtet dieser Auffassung bei.</p>
+               </div>
+               <div type="top" xml:id="krp-0111_top09">
+                  <head>
+                     <label>
+                        <num n="9">9.</num>
+                        <seg>Wirkungskreis des Kurators der Theresianischen Akademie.</seg>
+                     </label>
+                  </head>
+                  <p>Unterstaatssekretär <hi rend="#letterspaced">Glöckel</hi> weist darauf hin, dass es die im Zuge befindliche Umgestaltung der Theresianischen Akademie in eine den gegenwärtigen Verhältnissen angepasste Unterrichts- und Erziehungsanstalt erforderlich mache, für die oberste Leitung der Anstalt in einer den eingetretenen staatsrechtlichen Änderungen entsprechenden Weise vorzusorgen.</p>
+                  <p>Bisher habe diese Funktion in den Wirkungskreis des Kurators der Theresianischen Akademie gehört, welcher sie, und zwar unbeschadet des Überwachungsrechtes seitens der Obersten Stiftungs- bzw. Unterrichtsbehörde, aufgrund ihm anlässlich <pb facs="krp-0111_r-0028"/>seiner Ernennung erteilten jeweiligen kaiserlichen Auftrages ausgeübt habe.</p>
+                  <p>Seit dem Umsturze könne nun der Kurator diesen Wirkungskreis nicht mehr im Auftrage des früheren Staatsoberhauptes versehen, sei aber bisher stillschweigend in demselben belassen worden. Der Beginn des neuen Schuljahres und die auf die Reorganisation der Theresianischen Akademie abzielenden Reformen ließen es aber zweckmäßig erscheinen, diese Frage nunmehr endgiltig zu klären.</p>
+                  <p>Da der vom Kaiser verliehene und in seinem Namen bisher ausgeübte Wirkungskreis des Kurators als solcher erloschen sei, sei die gegenwärtige Staatsgewalt, in deren Gebiet sich die Theresianische Akademie befindet, berechtigt und verpflichtet, für die weitere Verwaltung dieser Anstalt Sorge zu tragen.</p>
+                  <p>Der zuletzt mit der Wahrnehmung der Agenden eines Kurators der Theresianischen Akademie betraute Ministerpräsident a. D. Dr. Ernst Seidler habe sich bereit erklärt, auf die weitere Ausübung dieser seiner Funktion von jenem Tage an zu verzichten, von <pb facs="krp-0111_r-0029"/>welchem an die von ihm in diesem Belange besorgten Agenden von der Staatsregierung übernommen werden.</p>
+                  <p>Der sprechende Unterstaatssekretär stelle daher den Antrag, der Kabinettsrat wolle beschließen:</p>
+                  <p>Mit Rücksicht auf die eingetretene Änderung der Staatsform und der staatsrechtlichen Verhältnisse wird die bisher aufgrund kaiserlichen Auftrages vom jeweiligen Kurator der Theresianischen Akademie besorgte, oberste Leitung dieser Anstalt von der Staatsregierung und zwar mit 1. Oktober 1919 übernommen.</p>
+                  <p>Der Kabinattsrat erhebt diesen Antrag zum Beschluss. </p>
+               </div>
+               <div type="top" xml:id="krp-0111_top10">
+                  <head>
+                     <label>
+                        <num n="10">10.</num>
+                        <seg>Verlautbarung des einheitlichen Textes der Effektenumsatzsteuervorschriften.</seg>
+                     </label>
+                  </head>
+                  <p>Sektionschef Dr. <hi rend="#letterspaced">Grimm</hi> führt aus, dass nach Art. 5 des neuen Effektenumsatzsteuergesetzes vom 6. Februar 1919, StGBl. Nr. 127, der Staatsrat (jetzt die Staatsregierung) ermächtigt sei, den Wortlaut des Gesetzes vom 9. März 1897, RGBl. Nr. 195, unter Berücksichtigung der geänderten staatsrechtlichen Verhältnisse sowie <pb facs="krp-0111_r-0030"/>der aus dem neuen Gesetze sich ergebenden Änderungen und Ergänzungen im Staatsgesetzblatte mit verbindlicher Kraft zu verlautbaren.</p>
+                  <p>Diese Verlautbarung hätte, sozusagen als Ankündigung der baldigen Inkraftsetzung des Gesetzes, demnächst zu erfolgen, und zwar im Wege einer Vollzugsanweisung der Staatsregierung. Der Tag des Wirksamkeitsbeginnes des neuen Gesetzes werde nach Fertigstellung der in Ausarbeitung begriffenen Durchführungsverordnung zu dem Gesetze bestimmt werden.</p>
+                  <p>Der Kabinettsrat beschließt die Erlassung der bezüglichen Vollzugsanweisung.</p>
+               </div>
+               <div type="top" xml:id="krp-0111_top11">
+                  <head>
+                     <label>
+                        <num n="11">11.</num>
+                        <seg>Sperre der Postsparkassenkonten militärischer Heilanstalten.</seg>
+                     </label>
+                  </head>
+                  <p>Unterstaatssekretär Dr. <hi rend="#letterspaced">Tandler</hi> teilt mit, dass nach einer Auskunft des Postsparkassenamtes das liquidierende Kriegsministerium die Sperre der Postsparkassenkonten des Garnisonsspitals in Graz sowie mehrerer anderer militärischer Heilanstalten verfügt habe.</p>
+                  <p>
+                     <pb facs="krp-0111_r-0031"/>Der Kabinettsrat beauftragt das Staatsamt für Heer[es]wesen, unverzüglich energische Schritte wegen dieser Maßnahme beim Leiter des liquidierenden Kriegsministeriums zu unternehmen und, wenn sich herausstellen sollte, dass die Verfügung vom Bevollmächtigtenkollegium getroffen worden sei, den deutschösterreichischen Bevollmächtigten zur Verantwortung zu ziehen.</p>
+               </div>
+            </div>
+            <div type="stenogramme">
+               <div n="1">
+                  <head>EINZUFÜGEN</head>
+                  <p>Transkription in Arbeit.</p>
+               </div>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

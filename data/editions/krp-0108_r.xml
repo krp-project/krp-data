@@ -1,0 +1,563 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href='http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:acdh="https://vocabs.acdh.oeaw.ac.at/schema#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xml:lang="de">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="a" type="main" n="0108">Kabinettsprotokoll Nr. 108 vom 23. September 1919</title>
+            <title level="m" type="main" n="01">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <title level="m" type="sub" n="">Renner II (15. März – 17. Oktober 1919)</title>
+            <meeting>
+               <placeName key="https://d-nb.info/gnd/4066009-6">Wien</placeName>
+               <orgName key="https://d-nb.info/gnd/5162749-8">Kabinettsrat</orgName>
+               <date when-iso="1919-09-23"/>
+            </meeting>
+            <editor>
+               <persName key="https://d-nb.info/gnd/122481836"
+                         role="hasCreator"
+                         xml:id="hwohnout">
+                  <forename>Helmut</forename>
+                  <surname>Wohnout</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</affiliation>
+               <idno type="ORCID">0000-0002-3864-9839</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/120789825"
+                         role="hasCreator"
+                         xml:id="tolechowski">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0003-3291-6876</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/131679384"
+                         role="hasCreator"
+                         xml:id="rlein">
+                  <forename>Richard</forename>
+                  <surname>Lein</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0002-7502-0503</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="aholzer">
+                  <forename>Anna</forename>
+                  <surname>Holzer</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0005-3560-3500</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="dsoelkner">
+                  <forename>Dominik</forename>
+                  <surname>Sölkner</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-9895-7212</idno>
+            </editor>
+            <editor>
+               <persName role="hasContributor" xml:id="ischotzko">
+                  <forename>Ina</forename>
+                  <surname>Schotzko</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-5210-3713</idno>
+            </editor>
+            <funder n="1">
+               <orgName key="https://d-nb.info/gnd/2054142-9" role="hasFunder">Österreichischer Wissenschaftsfonds FWF</orgName>
+               <idno type="project">PAT1495024</idno>
+               <title type="project">Die Protokolle des österreichischen Kabinettsrates 1919–1920</title>
+            </funder>
+            <respStmt>
+               <resp>Projektverantwortung</resp>
+               <orgName key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Projektleitung</resp>
+               <persName key="https://d-nb.info/gnd/120789825" role="hasPrincipalInvestigator">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+                  <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+                  <idno type="ORCID">0000-0003-3291-6876</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Nationaler Forschungspartner</resp>
+               <orgName key="https://d-nb.info/gnd/1123037736" role="hasEnabler">Austrian Centre for Digital Humanities</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Digitalisierung der gedruckten Quellen</resp>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>TEI-Datenmodellierung</resp>
+               <persName role="hasContributor" xml:id="tfruehwirth">
+                  <forename>Timo</forename>
+                  <surname>Frühwirth</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-3997-5193</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technische Supervision</resp>
+               <persName key="https://d-nb.info/gnd/1043833846"
+                         role="hasContributor"
+                         xml:id="pandorfer">
+                  <forename>Peter</forename>
+                  <surname>Andorfer</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-9575-9372</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technisches Consulting und Vorbereitung der Druckausgabe</resp>
+               <persName key="https://d-nb.info/gnd/13281899X"
+                         role="hasContributor"
+                         xml:id="skurz">
+                  <forename>Stephan</forename>
+                  <surname>Kurz</surname>
+                  <affiliation key="https://d-nb.info/gnd/1202798799">Institut für die Erforschung der Habsburgermonarchie und des Balkanraumes</affiliation>
+                  <idno type="ORCID">0000-0003-2546-2570</idno>
+               </persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher key="https://d-nb.info/gnd/1001454-8">Österreichische Akademie der Wissenschaften</publisher>
+            <date when="2028"/>
+            <availability status="free">
+               <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">Lizenziert unter CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/deed.de)</licence>
+            </availability>
+            <idno type="ISBN_Print"/>
+            <idno type="ISBN_Part_epub"/>
+            <idno type="ISBN_Digital"/>
+            <idno type="DOI"/>
+            <idno type="DOI_zenodo"/>
+            <idno type="ebook_ID"/>
+         </publicationStmt>
+         <seriesStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="m" type="main">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <respStmt>
+               <resp>Bearbeitung und Herausgeberschaft</resp>
+               <orgName key="https://d-nb.info/gnd/2024703-5">Universität Wien</orgName>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+         </seriesStmt>
+         <notesStmt>
+            <note>Diese TEI-XML-Datei ist Grundlage für eine Druckausgabe der Edition.</note>
+            <relatedItem>
+               <biblStruct>
+                  <monogr>
+                     <imprint>
+                        <pubPlace key="https://d-nb.info/gnd/4066009-6">Wien</pubPlace>
+                        <publisher key="https://d-nb.info/gnd/2068748-5">Verlag der Österreichischen Akademie der Wissenschaften</publisher>
+                        <date when="2029"/>
+                     </imprint>
+                     <extent/>
+                  </monogr>
+                  <note>
+                     <idno/>
+                     <ptr/>
+                  </note>
+                  <citedRange/>
+               </biblStruct>
+            </relatedItem>
+         </notesStmt>
+         <sourceDesc>
+            <bibl>Quellbestand: AT-OeStA/AdR MRang MR 1Rep KRP Kabinettsratsprotokolle, 1918-1920 (Teilbestand)<ref target="https://www.archivinformationssystem.at/detail.aspx?id=5465">https://www.archivinformationssystem.at/detail.aspx?id=5465</ref>
+            </bibl>
+            <msDesc>
+               <msIdentifier>
+                  <institution key="https://d-nb.info/gnd/37748-X" role="hasOwner">AT-OeStA Österreichisches Staatsarchiv (Archiv (ÖStA))</institution>
+                  <repository key="https://d-nb.info/gnd/1601181-8">AT-OeStA/AdR Archiv der Republik, 1918- (Abteilung)</repository>
+                  <collection>AT-OeStA/AdR MRang MR 1Rep Ministerrat 1. Republik, 1918 - 1938 (Bestand)</collection>
+                  <idno>AT-OeStA_AdR-MRang-MR-1.-Rep.-KRP-108</idno>
+               </msIdentifier>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <abstract>
+            <p>
+          <!--to be generated-->
+        </p>
+         </abstract>
+      </profileDesc>
+      <encodingDesc>
+         <styleDefDecl scheme="css"/>
+         <tagsDecl>
+            <rendition xml:id="b" scheme="css">font-weight:bold;</rendition>
+            <rendition xml:id="su" scheme="css">vertical-align:super;font-size:.7em;</rendition>
+            <rendition xml:id="s" scheme="css">text-decoration:line-through;</rendition>
+            <rendition xml:id="u" scheme="css">text-decoration:underline;</rendition>
+            <rendition xml:id="ow" scheme="css">text-decoration:line-through;text-decoration-style:double;</rendition>
+            <rendition xml:id="r" scheme="css">display:block;text-align:right;</rendition>
+            <rendition xml:id="letterspaced" scheme="css">letter-spacing:0.15em;</rendition>
+            <rendition xml:id="i" scheme="css">font-style:italic;</rendition>
+         </tagsDecl>
+         <editorialDecl>
+            <hyphenation>
+               <p>
+            <!--to be added-->
+          </p>
+            </hyphenation>
+            <correction>
+               <p>
+            <!--to be added-->
+          </p>
+            </correction>
+            <normalization>
+               <p>
+            <!--to be added-->
+          </p>
+            </normalization>
+            <punctuation>
+               <p>
+            <!--to be added-->
+          </p>
+            </punctuation>
+            <stdVals>
+               <p>
+            <!--to be added-->
+          </p>
+            </stdVals>
+            <p>
+          <!--to be added-->
+        </p>
+         </editorialDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#tfruehwirth" when-iso="2026-10-07">TEIGarage output upconverted with upconvert.xsl</change>
+         <change who="#tfruehwirth" when-iso="2026-10-07">TEI header populated with generate_tei_templates.py</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface/>
+   </facsimile>
+   <text>
+      <body>
+         <div xml:id="doc-krp-0108.xml">
+            <head type="dokument">
+               <title type="num">108.<note type="footnote">Das Protokoll trägt den Vermerk <hi rend="#i">Vertraulich!</hi>
+                  </note>
+               </title>
+               <title type="desc">
+                  <pb facs="krp-0108_r-0001"/>
+                  <pb facs="krp-0108_r-0002"/>[Dienstag] 1919-09-23</title>
+            </head>
+            <div type="dokumentkopf">
+               <div type="vorsitz">
+                  <head>Vorsitz:</head>
+                  <p>Renner</p>
+               </div>
+               <div type="anwesend">
+                  <head>Anwesend:</head>
+                  <p>Bauer, Bratusch, Deutsch, Eldersch, Ellenbogen, Glöckel, Hanusch, Loewenfeld-Russ, Miklas, Paul, Pflügl, Resch, Schumpeter, Stöckler, Tandler, Waiss, Zerdik</p>
+               </div>
+               <div type="zugezogen">
+                  <head>Zugezogen:</head>
+                  <p>Beck, Des Loges, Grimm, Harpner, Oberdorffer, Seitz</p>
+               </div>
+               <div type="schriftfuehrer">
+                  <head>Schriftführer:</head>
+                  <p>unbekannt</p>
+               </div>
+               <div type="dauer">
+                  <head>Dauer:</head>
+                  <p>15.00–20.30 Uhr</p>
+               </div>
+            </div>
+            <div type="komponenten">
+               <p>Reinschrift, Beilagen, streng vertraulicher Anhang, Konzept, stenographische Mitschrift, Entwurf der Tagesordnung</p>
+            </div>
+            <div type="beilagen">
+               <head>Beilagen:</head>
+               <list>
+                  <item>
+                     <ref target="#krp-0108_top01">Zu TOP 1</ref>: <ref target="#krp-0108_b01">Vortrag für den Kabinettsrat über die Bitte des Leiters des deutschösterreichischen Kriegsgefangenen- und Zivilinterniertenamtes und ehemaligen Staatssekretär für Heereswesen Josef Mayer auf Entbindung vom abgelegten Gelöbnis</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0108_top04">Zu TOP 4</ref>: <ref target="#krp-0108_b02">Auszug für den Vortrag im Kabinettsrat über die neue Gemeindewahlordnung in Tirol</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0108_top11">Zu TOP 11</ref>: <ref target="#krp-0108_b03">Abschrift des Referats des Staatsamtes für Handel und Gewerbe, Industrie und Bauten über die Bestellung eines Generaldirektors der staatlichen Industriebetriebe und eines neuen Direktors für die Arsenalwerke Wien</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0108_top13">Zu TOP 13</ref>: <ref target="#krp-0108_b04">Bericht des Obersten Verwalters des Hofärars, betreffend die Verwaltung des Hofärars nach Ratifizierung des Friedensvertrages</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0108_top13">Zu TOP 13</ref>: <ref target="#krp-0108_b05">Bericht an den Kabinettsrat über die Verpachtung der Güter Orth/Donau und Scharfenegg am Leithagebirge mit Gesellschaftsvertrag mit der Gemeinde Wien und der Amtlichen Übernahmestelle für Vieh und Fleisch und dem Pachtvertrag mit der Gemeinde Wien</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0108_top13">Zu TOP 13</ref>: <ref target="#krp-0108_b06">Beilage A zu Punkt 13 betr. Bericht des Obersten Verwalters des Hofärars über die Nutzbarmachung des hofärarischen Besitzes</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0108_top13">Zu TOP 13</ref>: <ref target="#krp-0108_b07">Beilage B zu Punkt 13 betr. Bericht des Rechtsanwaltes Dr. Gustav Harpner über die weitere Verwaltung des für das vormalige Kaiserhaus oder eine Zweiglinie desselben gebundenen Vermögens</ref>
+                  </item>
+               </list>
+            </div>
+            <div type="protokoll">
+               <pb facs="krp-0108_r-0003"/>
+               <div type="top" xml:id="krp-0108_top01">
+                  <head>
+                     <label>
+                        <num n="1">1.</num>
+                        <seg>Enthebung des vormaligen Staatssekretärs für Heer[es]wesen, Josef Mayer vom Gelöbnisse.</seg>
+                     </label>
+                  </head>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> teilt mit, dass der Leiter des deutschösterreichischen Kriegsgefangenen- und Zivilinterniertenamtes Josef Mayer an den Präsidenten der Nationalversammlung die Bitte gestellt habe, ihn, da er infolge der durch den Vertrag von St. Germain gegebenen Verhältnisse genötigt sei, den deutschösterreichischen Dienst zu verlassen, auch des seinerzeit als Staatssekretar für Heer[es]wesen in die Hände des Präsidenten der Nationalversammlung abgelegten Gelöbnisses zu entbinden, welches Gelöbnis für ihn auch während seiner dermaligen Tätigkeit bindend gewesen sei.</p>
+                  <p>Die Staatskanzlei beabsichtige über eine diesbezügliche Anfrage der Präsidentschaftskanzlei ihrer Ansicht dahin Ausdruck zu geben, dass eine Entbindung von dem als Staatssekretär geleisteten Gelöbnisse nach Aufhören der Funktion als solcher gegenstandslos wäre, da sich der Inhalt des Gelöbnisses lediglich auf die Tätigkeit in der betreffenden Funktion beziehe und daher nach deren Aufhören keine weitere Wirkung mehr äußere, als jene zur Amtsverschwiegenheit, von welch‘ letzterer aber eine Enthebung allgemeiner Natur nicht stattfinden könne. <pb facs="krp-0108_r-0004"/>Der Staatskanzlei würde die Gewährung des vom ehemaligen Staatssekretär Josef Mayer gestellten Ansuchens aus diesen Gründen, aber auch verfassungsrechtlich überhaupt unzulässig erscheinen und sie glaube, dass durch die Mitteilung obiger Ausführungen der Zweck erfüllt werde, welchen der Einschreiter im Auge habe.</p>
+                  <p>Der Kabinettsrat pflichtet dieser Auffassung bei.</p>
+               </div>
+               <div type="top" xml:id="krp-0108_top02">
+                  <head>
+                     <label>
+                        <num n="2">2.</num>
+                        <seg>Sperrgeldfrage.</seg>
+                     </label>
+                  </head>
+                  <p>Der Vorsitzende teilt mit Beziehung auf die in der letzten Sitzung des Kabinettsrates aufgeworfene Frage der Einhebung des Sperrgeldes in der Zeit von 8–10 Uhr abends mit, dass es die Niederösterreichische Landesregierung unter Hinweis auf § 9 des Landesgesetzes vom 1. Februar 1913, LGBl. Nr. 33, wonach den Hausbesorgern für die jedesmalige Öffnung des Haustores nach Torsperre eine Entlohnung von 20 h gebührt, abgelehnt habe, in dieser Angelegenheit eine Verfügung zu treffen.</p>
+                  <p>Der Kabinettsrat nimmt diese Mitteilung zur Kenntnis.</p>
+                  <p>
+                     <pb facs="krp-0108_r-0005"/>
+                  </p>
+               </div>
+               <div type="top" xml:id="krp-0108_top03">
+                  <head>
+                     <label>
+                        <num n="3">3.</num>
+                        <seg>Ernährungslage.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Loewenfeld-Russ</hi> führt aus, dass neuerlich eine krisenhafte Situation in der Ernährungslage eingetreten sei. Die verfügbaren Brotgetreide- und Mehlvorräte reichen nur mehr für eine Woche, die inländische Aufbringung versage fast vollkommen, die Ententezuschübe haben aufgehört. Wir seien daher nur auf das angewiesen, was wir uns selbst aus dem Auslande verschaffen können. Die in Argentinien getätigten Käufe würden für die Dauer von eineinhalb Monaten ausreichen. Die Hereinbringung dieser Menge stoße jedoch auf große Transportschwierigkeiten. Unter diesen Verhältnissen sei es nicht möglich, ein Versorgungsprogramm in der bisherigen Weise aufzustellen. Die weitere Deckung mit Nahrungsmitteln hänge davon ab, dass die gekauften Mengen halbwegs regelmäßig einlaufen und dass der jugoslawische Kompensationsvertrag so rasch als möglich abgewickelt werde. Für die weiteren Ankäufe bestehe die Hauptschwierigkeit in der Beschaffung der erforderlichen Geldmittel. Die vom Staatsamt für Finanzen zur Verfügung gestellten Mittel seien durchaus unzureichend. Bei <pb facs="krp-0108_r-0006"/>dem derzeitigen Kursstand der Krone sei weiterer Ankauf mit Barmitteln nicht möglich. Es müsse ein Übereinkommen getroffen werden, dass diese Kosten auf Reparationskonto übernommen werden oder aber eine Valutaanleihe gemacht werden. Bei dieser Sachlage beabsichtige er, vorläufig nur Getreide einzukaufen. Hiezu sei zu bemerken, dass zur Deckung des Monatsbedarfes an Getreide ein Aufwand von 10 Millionen holländischen Gulden = 300 Millionen K erforderlich sei.</p>
+                  <p>Noch schlechter stehe es mit der Fett- und Fleischversorgung, welche nur bis 1. November d. J. gesichert sei, Neuankäufe im Auslande könnten aus den vorerwähnten Gründen nicht getätigt werden. Die Aufbringung im Inlande versage vollkommen. An eine ausreichende Kartoffelversorgung sei bei den heutigen Transportverhältnissen nicht zu denken.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Schumpeter</hi> bemerkt zur Frage der Beschaffung der fremden Valuta, dass es im gegebenen Zeitpunkte ganz ausgeschlossen sei, ein größeres Darlehen für Lebensmittel zu bekommen. Die erforderlichen Schritte hiezu könnten <pb facs="krp-0108_r-0007"/>erst dann eingeleitet werden, bis wir einen ordnungsmäßigen Finanzplan vorzulegen in der Lage seien. Einen vorläufigen Notbehelf erblicke er in dem Abverkauf gewisser Kunstschätze, insbesondere der Gobelins. Die in dieser Beziehung im Zuge befindliche Aktion müsse beschleunigt werden.</p>
+                  <p>Über diesen momentanen Notbehelf hinaus, müsse die Frage in Erwägung gezogen werden, ob nicht darin ein Ausweg gefunden werden könnte, dass die staatliche Versorgung auf die Minderbemittelten zu beschränken sei, im Übrigen aber der Handel freizugeben wäre. Er wisse wohl, dass dieser Vorschlag kaum durchführbar sei. Wenn wir das staatliche Defizit beim Verkaufe der Lebensmittel beheben wollten, bliebe nichts anderes übrig, als die Preise entsprechend zu erhöhen. Die hieraus sich ergebende monatliche Mehrbelastung der Bevölkerung von 50 K pro Kopf sei natürlich aus politischen Gründen nicht erträglich. Er wäre jedoch bereit, einer Erhöhung der Bezüge der Staatsangestellten um diesen Monatsbetrag zuzustimmen. Was die Arbeiter betreffe, so müsse von staatswegen eine Lohnerhöhung in diesem Sin<pb facs="krp-0108_r-0008"/>ne eingeleitet werden.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Bauer</hi> pflichtet im Allgemeinen den Ausführungen des Vorredners bei. Außer den bereits erwähnten Gobelins könnten auch andere Kunstschätze, die keinen besonderen kulturellen Wert haben, verkauft werden. Es wäre Sache der einzelnen Staatsämter festzustellen, was an verkäuflichen Kunstgegenständen vorhanden sei. Überdies glaube er, dass eine Anforderung des privaten Kunstbesitzes unvermeidlich sei. Er stelle an das Staatsamt für Finanzen das Ersuchen, sobald als möglich nicht nur über eine konkrete Organisation, mittelst welcher der Verkauf von staatlichem Kunstbesitz systematisch eingeleitet und möglichst bald durchgeführt würde, sondern auch bezüglich der Anforderung von privatem Besitze geeignete Vorschläge zu erstatten. Hieraus könnten Erträgnisse erzielt werden, die über die Erfordernisse für die Lebensmittelbeschaffung hinausgehen und daher für valutarische Zwecke nutzbar gemacht werden könnten.</p>
+                  <p>Was die staatlichen Aufwendungen für die Lebensmittelbeschaffung an<pb facs="krp-0108_r-0009"/>belange, so sei er gleich dem Staatssekretär für Finanzen der Ansicht, dass diese Aufwendungen aufhören müssen. Dies könne aber nur im Zusammenhange mit lohnpolitischen Maßnahmen durchgeführt werden. Er stelle sich vor, dass es möglich wäre, eine staatliche Regelung der Löhne zu schaffen, welche sich den Lebensmittelpreisen anpasst. Eine derartige Regelung wäre seiner Anschauung nach auch das einzige Mittel, um die Löhne zeitweise abzubauen. Diese Frage könne jedoch nur im Zusammenhange mit dem Finanzplan gelöst werden. Es wäre Aufgabe der Staatsämter für Handel und Gewerbe, Industrie und Bauten sowie für soziale Verwaltung, bei Gelegenheit der Erörterung des Finanzplanes diesbezügliche Vorschläge zu erstatten.</p>
+                  <p>Staatssekretär <hi rend="#letterspaced">Eldersch</hi> spricht sich gleichfalls für den Verkauf von Kunstschätzen aus. Um die Aktion wirksam zu gestalten, wäre es jedoch erforderlich, für diese Zwecke eine Sachverständigenkommission mit weitgehenden Vollmachten einzusetzen.</p>
+                  <p>Der Kabinettsrat gelangt zu der einmütigen Auffassung, dass eine Beschlussfassung in der Frage der Ernäh<pb facs="krp-0108_r-0010"/>rungsvorsorgen und der unmittelbaren finanziellen Maßregeln zur Deckung der nächsten Kreditbedürfnisse auf die Kabinettsratssitzung am 26. d. M. zu verschieben wäre und eine besondere Kabinettsratssitzung über die Behandlung der Finanz- und Valutafragen anzuberaumen sei.</p>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> beraumt diese Sitzung für Montag, den 29. d. M. an.</p>
+               </div>
+               <div type="top" xml:id="krp-0108_top04">
+                  <head>
+                     <label>
+                        <num n="4">4.</num>
+                        <seg>Gemeindewahlreform in Tirol.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Eldersch</hi> erbittet und erhält die Ermächtigung des Kabinettsrates, dass von der Erhebung einer Vorstellung gegen den vom Tiroler Landtag beschlossenen Entwurf eines Gesetzes, womit eine neue Gemeindewahlordnung für alle Gemeinden mit Ausnahme der Hauptstädte mit eigenem Statut geschaffen wird, abgesehen und der sofortigen Verlautbarung des Landesgesetzes zugestimmt werde.</p>
+               </div>
+               <div type="top" xml:id="krp-0108_top05">
+                  <head>
+                     <label>
+                        <num n="5">5.</num>
+                        <seg>Behandlung der Staatsstiftungszöglinge aus den abgetretenen Staatsgebieten.</seg>
+                     </label>
+                  </head>
+                  <p>Unterstaatssekretär <hi rend="#letterspaced">Glöckel</hi> führt aus, dass von den mit Staatsstiftungen beliehenen Zöglingen 134 infolge <pb facs="krp-0108_r-0011"/>Verlustes der deutschösterreichischen Staatsangehörigkeit ausscheiden würden. Die Angehörigen von 84 Zöglingen haben sich um die deutschösterreichische Staatsbürgerschaft beworben. Er erbitte sich die Ermächtigung des Kabinettsrates, diesen 84 Zöglingen für den weiteren Stiftungsbezug ein Semester stunden zu dürfen. Hiezu kämen noch 47 Zöglinge aus Deutschböhmen, die im letzten Jahrgang ihrer Studien stehen. Da es als eine außerordentliche Härte empfunden werden müsste, wenn diesen Zöglingen die Stiftung im letzten Bezugsjahre entzogen würde, erbitte er weiters die Ermächtigung des Kabinettsrates, dass diesen 47 Zöglingen die Stiftung belassen werde.</p>
+                  <p>Der Kabinettsrat erteilt die erbetenen Ermächtigungen.</p>
+               </div>
+               <div type="top" xml:id="krp-0108_top06">
+                  <head>
+                     <label>
+                        <num n="6">6.</num>
+                        <seg>Subventionsansuchen der Hauptstelle Reichenberg des Vereines der deutschen Eisenbahnbeamten.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Paul</hi> teilt mit, dass die Hauptstelle Reichenberg des Vereines der deutschen Eisenbahnbeamten an das Staatsamt für Verkehrswesen um Gewährung einer Subvention herangetreten sei. Der sprechende Staatssekretär glaube, dass die Subventionierung des Vereines aus <pb facs="krp-0108_r-0012"/>außenpolitischen Gründen nicht tunlich sei, und beabsichtige daher, die Eingabe abschlägig zu bescheiden.</p>
+                  <p>Der Kabinettsrat pflichtet dieser Auffassung bei.</p>
+               </div>
+               <div type="top" xml:id="krp-0108_top07">
+                  <head>
+                     <label>
+                        <num n="7">7.</num>
+                        <seg>Ausfolgung der von den ungarischen Kommunisten beim Eintritte nach Deutschösterreich ausgelieferten Geldmittel und Wertsachen.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Eldersch</hi> führt aus, dass er beabsichtige, zur Deckung der Kosten der Überwachung und Verpflegung der in Deutschösterreich internierten ungarischen Kommunisten die ihnen beim Grenzübertritte nach Deutschösterreich abgenommenen Gelder und Wertsachen heranzuziehen.</p>
+                  <p>Der Kabinettsrat beschließt im Sinne des Antrages des sprechenden Staatssekretärs, dass die zur Bestreitung des Lebensunterhaltes der Internierten ungarischen Kommunisten notwendigen Beträge aus den von ihnen freiwillig abgelieferten Geldmitteln und Wertsachen seitens des Staatsamtes für Finanzen dem Staatsamt für Inneres und Unterricht auszufolgen sind.</p>
+               </div>
+               <div type="top" xml:id="krp-0108_top08">
+                  <head>
+                     <label>
+                        <num n="8">8.</num>
+                        <seg>Aufhebung der Finanzzensur.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Eldersch bittet um die Ermächtigung, dass er das dem Staatsamt für Finanzen für Zwecke der Finanzzensur bereitgestellte Personale zurückziehen dürfe.</p>
+                  <p>
+                     <pb facs="krp-0108_r-0013"/>Nachdem Dr. <hi rend="#letterspaced">Schumpeter</hi> erklärt hatte, dass er auf den Weiterbestand der Finanzzensur keinen besonderen Wert lege, beschließt der Kabinettsrat, die Finanzzensur aufzuheben. Die Durchführung dieser Maßregel obliege dem Staatsamt für Inneres und Unterricht im Einvernehmen mit den Staatsämtern für Finanzen und für Handel und Gewerbe, Industrie und Bauten.</p>
+               </div>
+               <div type="top" xml:id="krp-0108_top09">
+                  <head>
+                     <label>
+                        <num n="9">9.</num>
+                        <seg>Gewährung von Verdienstentgangsentschädigungen für die zur Mitwirkung bei der Bekämpfung des Kriegswuchers und Schleichhandels in Wien herangezogenen Vertreter der Arbeiter- und Bürgerräte.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Eldersch</hi> führt aus, dass die Funktion der zur Mitwirkung bei der Bekämpfung des Kriegswuchers und Schleichhandels in Wien herangezogenen Vertreter der Arbeiterräte im Allgemeinen eine ehrenamtliche sei; gleichwohl habe sich in einzelnen Fällen die Notwendigkeit ergeben, diesen Delegierten eine Verdienstentgangsentschädigung auszuzahlen. Er erbitte für diese Zwecke die Bereitstellung eines Kredites von ½ Million K und bemerkt, dass ein gleicher Vorgang selbstverständlich auch bezüglich der in Hinkunft zu verwendenden Vertreter der Bürgerräte zu gelten haben werde.</p>
+                  <p>Sektionschef Dr. <hi rend="#letterspaced">Grimm</hi> erhebt gegen die Bereitstellung des an<pb facs="krp-0108_r-0014"/>gesprochenen Kredites keine Einwendung, ersucht jedoch darauf Bedacht zu nehmen, dass die Vertreter der Arbeiter- und Bürgerräte keine die Bezüge der im Kriegswucheramt in Verwendung stehenden Staatsbediensteten übersteigende Entschädigung erhalten.</p>
+                  <p>Der Kabinettsrat beschließt, dass für die bei der Bekämpfung des Kriegswuchers verwendeten Vertreter der Arbeiter- und Bürgerräte Entschädigungen für den Verdienstentgang vorgesehen werden, jedoch nur für solche, die einer Entschädigung tatsächlich bedürfen, und zwar in einer noch näher zu vereinbarenden Maximalhöhe. Für diese Entschädigung wird ein Kredit von ½ Million K bereitgestellt.</p>
+                  <p>Die nähere Durchführung dieser Maßnahme wird das Staatsamt für Inneres und Unterricht im Einvernehmen mit dem Staatsamt für Finanzen zu treffen haben.</p>
+               </div>
+               <div type="top" xml:id="krp-0108_top10">
+                  <head>
+                     <label>
+                        <num n="10">10.</num>
+                        <seg>Gewährung einer Entschädigung für den Vertreter des Kreisarbeiterrates Wien im Volksbekleidungsamte.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Ing. <hi rend="#letterspaced">Zerdik</hi> bittet um die Ermächtigung, dem vom Kreisarbeiterrate Wien in das Volksbekleidungsamt entsendeten Vertreter, Jakob Neumann, eine Entschä<pb facs="krp-0108_r-0015"/>digung im Ausmaße vom 2.000 K pro Monat zu gewähren. Dieser Betrag entspreche seinem bisherigen monatlichen Verdienste.</p>
+                  <p>Der Kabinettsrat ermächtigt das Staatsamt für Handel und Gewerbe, Industrie und Bauten, den Genannten im Volksbekleidungsamte für die Dauer von vier Monaten in Verwendung zu nehmen und ihm eine seinem erhobenen Verdienstentgang gleichkommende Remuneration zu gewähren.</p>
+                  <p>Nach denselben Grundsätzen werden die anderen dortselbst in Verwendung stehenden Experten zu behandeln sein.</p>
+               </div>
+               <div type="top" xml:id="krp-0108_top11">
+                  <head>
+                     <label>
+                        <num n="11">11.</num>
+                        <seg>Errichtung einer Generaldirektion der staatlichen Industriebetriebe.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Ing. Zerdik führt aus, dass die großen früheren Heeresbetriebe im Arsenal, Fischamend, Wöllersdorf und Wörth, für deren Verwaltung im Februar l. J. die „zwischenstaatsamtliche Verwaltungskommission für Heeresbetriebe“ errichtet worden sei, bisher nur einen geringfügigen Teil ihrer Ausgaben erarbeiten. Der Grund hievon liege einerseits in dem Verbote von Arbeiterentlassungen, andererseits darin, dass die Umstellung dieser für Kriegszwecke erbauten und eingerichteten Fabriken auf die Erzeugung von Friedensarbeit nicht rasch genug habe vorgenommen werden können. Auch die erforderlichen Veränderungen in der Besetzung mit technischem <pb facs="krp-0108_r-0016"/>und kaufmännischem Personal und die Erledigung der kaum zur Ruhe kommenden Lohnfragen habe viel Zeit in Anspruch genommen. Vor allem aber sei es bisher nur zu einem geringfügigen Teile gelungen, lohnende Beschäftigung für jene Anlagen der Heeresbetriebe zu gewinnen, die für die Erzeugung von Maschinen (Flugmotorenbau in Fischamend) und die Eisenbearbeitung (Geschütz-, Gewehr- und Geschosserzeugung im Arsenal, Gewehrerzeugung in Wörth, Eisendreherei in Wöllersdorf) eingerichtet waren. Besonders fühlbar werde der Mangel an Arbeit in Wöllersdorf werden, sobald die Arbeiter für die Desadjustierung von Munition unter Materialrückgewinnung beendet sein werden, wobei ca. ¾ des rund 5.000 Mann zählenden Arbeiterstandes in Verwendung stehen. Diese Arbeiten werden im Herbste dieses Jahres zum Abschlusse gelangen. Die Ausfindigmachung entsprechender Ersatzarbeiten für ein so großes, hoch entlohntes Arbeiterpersonal und die richtige Organisierung dieser Arbeiter erfordere einen besonders tüchtigen Techniker und zugleich Kaufmann, der einen zuverläs<pb facs="krp-0108_r-0017"/>sigen Überblick über die aktuellen Erzeugungs- und Absatzmöglichkeiten besitzt und die Grundlinien für die Einrichtung der gesamten Arbeit in den Heeresbetrieben aufzustellen vermag. Diese einheitliche Leitung der genannten Heeresbetriebe sei auch zu dem erforderlich, um die einzelnen Erzeugungszweige in die hiefür geeignetsten Betriebe zusammenzufassen, um eine Konkurrenzierung zwischen den einzelnen Betrieben die sich geltend gemacht habe, auszuschließen, und um die Investitionsbestrebungen der einzelnen Betriebsdirektionen auf das richtige Maß zurückzuführen. Auch würden bei der einheitlichen Leitung Spezialfachmänner für die Bearbeitung solcher Erzeugungszwecke z. B. der Möbelerzeugung und der sonstigen Holzverarbeitung zu bestellen sein, die in mehreren Betrieben vertreten sind. Ferner werde sich der Ein- und Verkauf zweckmäßig bei der einheitlichen Leitung zusammenfassen lassen. An einer solchen einheitlichen kaufmännisch-technischen Leitung fehle es bisher. Die Direktionen der einzelnen Betriebe gingen bisher in diesen Richtungen unter der mehr weniger bürokratischen Leitung der Ver<pb facs="krp-0108_r-0018"/>waltungskommission, die bei einem ungenügenden Personalstand mit einer Unmenge administrativer Details belastet sei, voneinander zumeist ganz unabhängig vor. Der hervorstechendste und zugleich schädlichste Mangel aber mache sich durch das Fehlen einer zentral leitenden technischen und kaufmännischen Kapazität geltend. Auf einzelnen Gebieten, wie jenem der Erzeugung guter Möbel und vielversprechender Anfänge mit der Koffererzeugung in Fischamend, unterschiedlicher Holz- und Lederverarbeitung im Arsenal und der Herstellung von Jagdmunition in Wöllersdorf, seien Erfolge erzielt worden, der Großteil der für die Eisenverarbeitung und die Herstellung von Maschinen eingerichteten Werkstätten sei jedoch trotz gut gemeinter Versuche der Betriebsdirektionen noch ungenützt geblieben. Hier könne nur die zugreifende Initiative eines führenden Mannes von fachmännischem Rang helfen. Ihm müsse das für die Leitung erforderliche technische, kaufmännische und administrative Personal an die Seite gestellt werden. Es sei daher beabsichtigt, die bestehende Verwaltungskommission für Heeresbetriebe in eine Verwaltungskommission für staatliche Industriebetriebe um<pb facs="krp-0108_r-0019"/>zuwandeln und für letztere einen Generaldirektor zu bestellen. Für die Stelle des Generaldirektors sei Ing. Leo Linder in Aussicht genommen. Der Wirkungskreis der Generaldirektion werde von der Verwaltungskommission festgestellt werden. Die Behandlung sozialpolitischer Fragen sei einem Mitglied der Verwaltungskommission im selbständigen Referat übertragen, mit welchem der Generaldirektor hierüber sowie in Personalfragen, soweit sie sich, im Wirkungskreis der Generaldirektion ergeben, jeweils das Einvernehmen zu pflegen haben werden. Bei divergierender Meinung werde die Verwaltungskommission zu entscheiden haben. Der Gehalt des Generaldirektors sei mit monatlich 10.000 K festgesetzt. Das Dienstverhältnis werde für die Dauer eines halben Jahres, d. i. bis zum 31. März 1920 seinerseits unkündbar eingegangen. Bei früherer Auflösung der Verwaltungskommission sei eine Abfertigung von 90.000 K vorgesehen. Weiters sollen dem Generaldirektor die Kosten für die Übersiedlung seines Haushaltes von Paris nach Wien ersetzt werden. Ing. Linder habe sich für den Fall der Bestellung zum Generaldirektor ausbedungen, dass er auch <pb facs="krp-0108_r-0020"/>während seines Dienstverhältnisses für andere Unternehmungen tätig sein dürfe, soferne diese Unternehmungen nach ihrem Gegenstande als Konkurrenz für staatliche Industriebetriebe oder für die aus diesen hervorgegangenen gemein- oder gemischtwirtschaftlichen Betriebe nicht in Betracht kommen und insoweit die Versehung seines Dienstes durch diese anderweitige Tätigkeit nicht beeinträchtigt werde.</p>
+                  <p>Der sprechende Staatssekretär bittet, die Errichtung der Generaldirektion der staatlichen Industriebetriebe grundsätzlich zu genehmigen und ihm die Ermächtigung zu erteilen, den Ing. Leo Linder zum Generaldirektor unter den angeführten Bedingungen bestellen zu dürfen. Er fügt bei, dass er beabsichtige, den Genannten zur Verzichtleistung auf die immerhin bedenklich erscheinende Konkurrenzklausel zu bewegen.</p>
+                  <p>Der Kabinettsrat beschließt im Sinne der gestellten Anträge und nimmt gleichzeitig zur Kenntnis, dass Ing. Friedrich Langen zum Direktor der Arsenalwerke und Dr. Ing. Gröger zum General<note type="footnote">„sekretär“ handschriftlich hinzugefügt.</note> bestellt werden, ersterer mit einem Monatsgehalte von 3.500 K nebst einer Zulage vom 13.000 K jährlich, letzterer mit einem Monatsbezuge von 2.500 K.</p>
+                  <p>
+                     <pb facs="krp-0108_r-0021"/>
+                  </p>
+               </div>
+               <div type="top" xml:id="krp-0108_top12">
+                  <head>
+                     <label>
+                        <num n="12">12.</num>
+                        <seg>Liquidierung der Regierungsstellen für die Sudetenländer.</seg>
+                     </label>
+                  </head>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> teilt mit, dass die sudetendeutschen Vertretungen und Regierungen erklärt hätten, nunmehr nach Unterzeichnung des Friedensvertrages nicht länger ihre Funktionen ausüben zu können, und den Wunsch ausgesprochen hätten, dass sie des Treuegelöbnisses, das sie der Republik Deutschösterreich geleistet haben, in einem feierlichen Akte entbunden werden.</p>
+                  <p>Der Vorsitzende bringt dem Kabinettsrat das im Einvernehmen mit dem Präsidenten und den sudetendeutschen Vertretungen ausgearbeitete Programm der feierlichen Verabschiedung zur Kenntnis und bittet um die Ermächtigung, bei dieser Gelegenheit namens des deutschösterreichische Kabinettsrates folgende Erklärung abgeben zu dürfen:</p>
+                  <p>„Der deutschösterreichische Kabinettsrat geht von der Rechtsanschauung aus,</p>
+                  <list>
+                     <item n="1">
+                        <label>1.)</label> dass der Frieden von St. Germain erst in dem Augenblicke in volle Rechtskraft tritt, wo die Ratifikationsurkunden über den Frieden zwischen dem Obersten Rate der alliierten und assoziierten Mächte und der Republik Deutschösterreich ausgetauscht werden. Nach Art. 70 des Friedensvertrages <pb facs="krp-0108_r-0022"/>werden erst in diesem Augenblicke die Angehörigen des alten Österreichs dem Rechte nach Staatsbürger der einzelnen auf dem Boden der österreichisch-ungarischen Monarchie entstandenen neuen Staaten. Die Staatsbürgergesetze und die auf deren Grundlage erlassenen sonstigen Bestimmungen öffentlich-rechtlicher, strafrechtlicher oder privatrechtlicher Natur treten durch das Inkrafttreten des Friedensvertrages, soweit sie mit diesem nicht übereinstimmen, außer Kraft.</item>
+                     <item n="2">
+                        <label>2.)</label> Nach den Bestimmungen des Abschnittes III des dritten Teiles werden die inzwischen von der Tschechoslowakei tatsächlich besetzten Gebiete erst mit dem Inkrafttreten des Friedens von St. Germain von der Republik Deutschösterreich aufgegeben und von Rechtswegen gehen also auch die von der Republik Deutschösterreich in Anspruch genommenen Gebiete Deutschböhmen, Sudetenland, die Kreise Deutsch-Südböhmen und Deutsch-Südmähren sowie die Siedlungsgebiete von Brünn, Iglau und Olmütz erst von diesem Augenblicke an auf die tschechoslowakische Republik über.</item>
+                     <item n="3">
+                        <label>3.)</label> Trotzdem bezeugt die Tatsache, dass sowohl die Republik Deutschöster<pb facs="krp-0108_r-0023"/>reich wie die tschechoslowakische Republik am 10. September d. J. zu St. Germain unterfertigt haben, dass schon jetzt zwischen den beiden Freistaaten volles Einverständnis über die künftige Regelung der Fragen des Gebietes, der Staatsbürgerschaft und der Staatshoheit besteht, und die deutschösterreichische Republik ist daher bereit, schon jetzt – das Einverständnis der tschechoslowakischen Republik vorausgesetzt – das von der tschechoslowakischen Republik inzwischen tatsächlich besetzte Gebiet (und die noch nicht besetzten, der Tschechoslowakei im Frieden zu St. Germain zuerkannten Gebietsteile) sowie die aufgrund des Friedensvertrages selbst diesen Gebieten angehörenden Staatsbürger unter die volle staatliche Hoheit der tschechoslowakischen Republik zu stellen, unter der Voraussetzung, dass die tschechoslowakische Republik anerkennt, dass zufolge der zu St. Germain geschaffenen Rechtslage bis zum Stichtage kein Staatsbürger der ehemaligen im Reichsrat vertretenen Königreiche und Länder rechtlich in der Lage war, gegen die tschechoslowakische Republik irgend welche Delikte wider den Staat, wider staatliche Organe oder wider die öffentliche Ordnung zu begehen.</item>
+                  </list>
+                  <p>
+                     <pb facs="krp-0108_r-0024"/>
+                  </p>
+                  <list>
+                     <item n="1">
+                        <label>4.)</label> Indem die Republik Deutschösterreich dermaßen dem Inkrafttreten des Friedensvertrages vorgreift, verfügt sie:</item>
+                     <item n="2">
+                        <label>a.)</label> die Landesregierungen von Deutschböhmen, von Sudetenland, die Kreishauptmannschaft von Deutschsüdmähren, ferner alle übrigen durch die deutschösterreichische Republik auf dem künftigen Boden der tschechoslowakischen Republik eingerichteten wie immer Namen habenden deutschösterreichischen politischen, richterlichen, Finanz- und sonstigen Behörden sind mit Rechtswirksamkeit vom 24. September 1919 aufgehoben;</item>
+                     <item n="3">
+                        <label>b.)</label> die von den Bewohnern dieser Gebiete durch Wahl oder durch behördliche Berufung eingesetzten Vertretungskörper und zur Vertretung allgemeiner Interessen berufenen Persönlichkeiten, welchen Namen sie immer haben mögen, hören von diesem Tage auf, deutschösterreichische Vertretungen zu sein und werden als solche von der Republik Deutschösterreich nicht mehr anerkannt“.</item>
+                  </list>
+                  <p>Weiters bittet der Staatskanzler um die Ermächtigung des Kabinettsrates, sodann an den Präsidenten der Nationalversammlung herantreten zu dürfen, die von ihm selbst vereidigten Funktionäre der Republik Deutschöster<pb facs="krp-0108_r-0025"/>reich des Treuegelöbnisses für die Republik zu entbinden, wodurch auch alle von diesen Funktionären vorgenommenen Angelobungen nachgeordneter Organe aufgehoben sein werden. Sämtliche ehemals österreichische Staatsbürger, die nach dem Friedensvertrage von St. Germain künftig Staatsbürger der tschechoslowakischen Republik werden, werden damit des Treue- und Pflichtverhältnisses zur Republik Deutschösterreich enthoben sein.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Bauer</hi> gibt seiner Anschauung dahin Ausdruck, dass die Auflösung von Behörden durch die Staatsregierung mit der bestehenden Verfassung und den einschlägigen Gesetzen nicht in Einklang zu bringen sei. Er glaube, dass man sich auf einen politischen Abschied beschränken solle, da eine staatsrechtliche Verabschiedung seiner Meinung nach nur von der Nationalversammlung ausgehen könne. Was die noch nicht besetzten der Tschechoslowakei im Frieden zu St. Germain zuerkannten Gebiete (Feldsberg und Bahnhof Gmünd) betreffe, so wäre die Erwähnung dieser Gebiete in der abzugebenden Erklärung besser zu vermeiden.</p>
+                  <p>Präsident <hi rend="#letterspaced">Seitz</hi> gibt zu, dass der zu fassende Beschluss eine <pb facs="krp-0108_r-0026"/>Verletzung der Staatsgrundgesetze beinhalte. Die Schwierigkeit liege darin, dass von den sudetendeutschen Regierungen auf die Vollziehung des staatsrechtlichen Aktes aus bestimmten politischen Gründen der größte Wert gelegt werde. Vorher die Ermächtigung der Nationalversammlung einzuholen, reiche die Zeit nicht mehr aus. Er glaube aber, dass man sich über diese verfassungsrechtlichen Bedenken umso eher hinwegsetzen könne, als von keiner der drei Parteien der Nationalversammlung bisher eine Einwendung erhoben worden und die Erteilung der Indemnität von der Nationalversammlung unzweifelhaft zu gewärtigen sei.</p>
+                  <p>Staatssekretär <hi rend="#letterspaced">Stöckler</hi> und Unterstaatssekretär <hi rend="#letterspaced">Miklas</hi> erheben gegen den beantragten Vorgang die schwersten Bedenken und meinen, dass unbedingt zunächst die Nationalversammlung einzuberufen sei.</p>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> pflichtet der Anregung des Staatssekretärs Dr. Bauer, die Gebiete von Feldsberg und Gmünd in der Erklärung nicht zu erwähnen, bei und schlägt vor, die in Wien anwesenden Vertreter der sudetendeutschen Regierungen zu<pb facs="krp-0108_r-0027"/>nächst zu einer Besprechung einzuladen, um über eine sowohl den staatsrechtlichen Bedenken als auch den Wünschen der Sudetendeutschen Rechnung tragenden Vorgangsweise schlüssig zu werden. Zu diesem Zwecke unterbricht der Vorsitzende die Sitzung.</p>
+                  <p>Nach Wiederaufnahme der Verhandlungen teilt der Vorsitzende mit, dass mit den genannten Vertretern vereinbart wurde, den staatsrechtlichen Akt an den Vorbehalt der nachträglichen Genehmigung durch die Nationalversammlung zu knüpfen.</p>
+                  <p>Der Kabinettsrat beschließt sohin, den Staatskanzler zur Abgabe der nachstehenden Erklärung zu ermächtigen:</p>
+                  <p>„Der deutschösterreichische Kabinettsrat geht von der Rechtsanschauung aus, dass der Friede von St. Germain erst in dem Augenblicke in volle Rechtskraft tritt, wo die Ratifikationsurkunden über den Frieden zwischen dem Obersten Rate der alliierten und assoziierten Mächte und der Republik Deutschösterreich ausgetauscht werden. Nach den Bestimmungen des Abschnittes III des dritten Teiles werden die inzwischen von der Tschechoslowakei tatsächlich besetzten Gebiete erst mit <pb facs="krp-0108_r-0028"/>dem Inkrafttreten des Friedens von St. Germain von der Republik Deutschösterreich aufgegeben und von Rechtswegen gehen also auch die von der Republik Deutschösterreich in Anspruch genommenen Gebiete Deutschböhmen, Sudetenland, die Kreise Deutschsüdböhmen und Deutschsüdmähren sowie die Siedlungsgebiete von Brünn, Iglau und Olmütz erst von diesem Augenblicke auf die tschechoslowakische Republik über. Trotzdem bezeugt die Tatsache, dass sowohl die Republik Deutschösterreich wie die tschechoslowakische Republik am 10. September d. J. zu St. Germain unterfertigt haben, dass schon jetzt zwischen den beiden Freistaaten volles Einverständnis über die künftige Regelung der Fragen des Gebietes, der Staatsbürgerschaft und der Staatshoheit besteht, und die deutschösterreichische Regierung ist daher bereit, schon jetzt – die Zustimmung der gesetzgebenden Körperschaft vorausgesetzt – das von der tschechoslowakischen Republik inzwischen tatsächlich besetzte Gebiet sowie die aufgrund des Friedensvertrages selbst diesen Gebieten angehörenden Staatsbürger unter die volle staatliche Hoheit der tschechoslowa<pb facs="krp-0108_r-0029"/>kischen Republik zu stellen.</p>
+                  <p>Indem die Regierung Deutschösterreichs dermaßen dem Inkrafttreten des Friedensvertrages vorzugreifen bereit ist, hebt sie ihre entgegenstehenden Vollzugsanweisungen auf und verfügt vorbehaltlich der Genehmigung der Nationalversammlung:</p>
+                  <list>
+                     <item n="1">
+                        <label>1.)</label> die Landesregierungen von Deutschböhmen und von Sudetenland, die Kreishauptmannschaft von Deutschsüdmähren, ferner alle übrigen durch die deutschösterreichische Republik auf dem künftigen Boden der tschechoslowakischen Republik eingerichteten, wie immer Namen habenden deutschösterreichischen politischen, richterlichen, Finanz- und sonstigen Behörden sind mit Rechtswirksamkeit vom 24. September 1919 aufgehoben;</item>
+                     <item n="2">
+                        <label>2.)</label> die von den Bewohnern dieser Gebiete durch Wahl oder durch behördliche Berufung eingesetzten Vertretungskörper und zur Vertretung allgemeiner Interessen berufenen Persönlichkeiten, welchen Namen sie immer haben mögen, hören von diesem Tage auf, deutschösterreichische Vertretungen zu sein und werden als solche von der Regierung Deutschösterreichs nicht mehr anerkannt.“</item>
+                  </list>
+                  <p>
+                     <pb facs="krp-0108_r-0030"/>Weiters ermächtigt der Kabinettsrat den Staatskanzler, in der bereits oben gekennzeichneten Weise an den Präsidenten der Nationalversammlung wegen Entbindung der Funktionäre der ausscheidenden Gebiete vom Treuegelöbnisse herantreten zu dürfen.</p>
+               </div>
+               <div type="top" xml:id="krp-0108_top13">
+                  <head>
+                     <label>
+                        <num n="13">13.</num>
+                        <seg>Verwaltung der hofärarischen und der kaiserlichen Fondsgüter.</seg>
+                     </label>
+                  </head>
+                  <p>Der Oberste Verwalter des Hofärars Sektionschef Dr. <hi rend="#letterspaced">Beck</hi> erstattet den dem vorliegenden Protokolle als Beilage A) angeschlossenen Bericht, betreffend die Nutzbarmachung des hofärarischen Besitzes.</p>
+                  <p>Anschließend daran berichtet Rechtsanwalt Dr. <hi rend="#letterspaced">Harpner</hi> über die weitere Verwaltung des für das vormalige Kaiserhaus oder eine Zweiglinie desselben gebundenen Vermögens; dieser Bericht ist dem vorliegenden Protokolle als Beilage B) angeschlossen.</p>
+                  <p>Im Zuge der sich über diese Berichte und die im Zusammenhange damit gestellten Anträge entwickelnden Debatte gibt Staatssekretär Dr. <hi rend="#letterspaced">Bauer</hi> der Anschauung Ausdruck, dass die tunlichst baldige Überführung der in Betracht kommenden Vermögensbestandteile in die ressortmäßige <pb facs="krp-0108_r-0031"/>Verwaltung schon aus politischen Gründen anzustreben sei, da die dauernde Beibehaltung der einheitlichen Verwaltung dieser Güter in der Öffentlichkeit zu Vermutungen Anlass geben könnte, die besser vermieden werden sollten. Gleichwohl sehe er ein, dass diese Überführung nicht sofort durchführbar sei. Von seinem Ressortstandpunkte käme auch noch die Überweisung gewisser Objekte an gemeinwirtschaftliche Anstalten zu erwägen, weshalb er an die beiden Verwaltungen das Ersuchen richte, der Sozialisierungskommission eine Aufstellung aller von ihnen verwalteten Güter zukommen zu lassen.</p>
+                  <p>Nachdem Staatssekretär <hi rend="#letterspaced">Stöckler</hi> die Verwirklichung der Anregung auf Überweisung der landwirtschaftlichen Güter an gemeinwirtschaftliche Anstalten für sehr wünschenswert bezeichnet hatte, beschließt der Kabinettsrat, dass die Verwaltung sowohl der hofärarischen Güter wie des für das vormalige Kaiserhaus oder eine Zweiglinie desselben gebundenen Vermögens bis auf weiteres noch einheitlich zu führen sein wird. Die beiden Verwaltungen werden jedoch aufgefordert, möglichst bald dem Kabinettsrate Vor<pb facs="krp-0108_r-0032"/>schläge darüber zu erstatten, wie einzelne Objekte aus diesen Verwaltungen entweder der ressortmäßigen Verwaltung der Staatsämter zugeführt oder an gemeinwirtschaftliche Anstalten überwiesen werden könnten.</p>
+                  <p>Im Hinblick auf eine Bemerkung des Rechtsanwaltes Dr. Harpner, dass die Mitglieder des ehemaligen kaiserlichen Hauses trotz des Gesetzes vom 3. April 1919, StGBl. Nr. 209, noch Rechtsansprüche auf Bestandteile des sogenannten gebundenen Vermögens geltend machen, wird die Verwaltung eingeladen, die zur Klärung der Rechtslage erforderlichen Anträge zu stellen und insbesondere Vorschläge wegen gesetzlicher Regelung dieser Angelegenheit dem Kabinettsrate zu unterbreiten.</p>
+                  <p>Schließlich genehmigt der Kabinettsrat über Antrag des Rechtsanwaltes Dr. Harpner die Verpachtung der Güter Orth an der Donau und Scharfenegg zu Mannersdorf an eine aus dem Staate, vertreten durch die amtliche Übernahmsstelle für Vieh und Fleisch, aus der Stadtgemeinde Wien und aus der Generaldirektion der Habsburg-Lothringischen Vermögensverwaltung gebildete GmbH sowie die Errichtung des diesbezüglichen Gesellschaftsvertrages.</p>
+                  <p>
+                     <pb facs="krp-0108_r-0033"/>
+                  </p>
+               </div>
+               <div type="top" xml:id="krp-0108_top14">
+                  <head>
+                     <label>
+                        <num n="14">14.</num>
+                        <seg>Abänderungen einiger Bestimmungen des Gesetzes vom 9. Jänner 1886, (G. und VBl. Nr. 17) und vom 18. Februar 1909 (LG. u. VBl. Nr. 22) betreffend die Errichtung von Bezirksgenossenschaften der Landwirte und eines Landeskulturrates im Erzherzogtume Österreich ob der Enns, durch einen Beschluss des Oberösterreichischen Landtages.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Stöckler</hi> erbittet und erhält die Ermächtigung des Kabinettsrates, dass von der Erhebung einer Vorstellung gegen den Gesetzesbeschluss des Oberösterreichischen Landtages vom 12. August 1919, mit welchen einige Bestimmungen des Gesetzes vom 9. März 1886 (G. und VBl. Nr. 17) und vom 18. Februar 1909 (LG. und VBl. Nr. 22) betreffend die Errichtung von Bezirksgenossenschaften der Landwirte und eines Landeskulturrates im Erzherzogtums Österreich ob der Enns, abgeändert werden, abgesehen, die Landesregierung in Linz hievon verständigt und der Beschluss der Staatsregierung in der „Wiener Zeitung“ veröffentlich werde.</p>
+               </div>
+               <div type="top" xml:id="krp-0108_top15">
+                  <head>
+                     <label>
+                        <num n="15">15.</num>
+                        <seg>Teuerungszuwendungen für die Geistlichkeit.</seg>
+                     </label>
+                  </head>
+                  <p>Unterstaatssekretär <hi rend="#letterspaced">Miklas</hi> führt aus, dass die Seelsorgegeistlichkeit unter den vornehmlich auf fixe Bezüge angewiesenen Berufsklassen dermalen insoferne eine Ausnahmsstellung einnehme, als ihr keinerlei Teuerungszulagen zukommen. Die Bezugsverhältnisse der Geistlichkeit hätten zuletzt zu Anfang des Jahres 1918 <pb facs="krp-0108_r-0034"/>eine Neuregelung erfahren. Insbesondere sollte durch das Gesetz vom 28. März 1918, RGBl. Nr. 115, die notwendigste Abhilfe für die ganz unhaltbar gewordene finanzielle Lage der katholischen Geistlichkeit geschaffen werden, deren Kongrua schon vor Ausbruch des Krieges unzulänglich geworden war, so dass die definitive Kongruaregelung nicht länger aufgeschoben werden konnte. Hiebei sei naturgemäß den damals bestehenden Teuerungsverhältnissen in einem gewissen Maße Rechnung getragen worden; doch konnte in dem Gesetze, das ja als bleibende Regelung gedacht war, die infolge der außerordentlichen Verhältnisse immer schärfer hervortretende Entwertung des Geldes und die dadurch verursachte Teuerung nicht berücksichtigt werden. Zur selben Zeit sei auch für die evangelische Geistlichkeit die Erhöhung des staatlichen Unterstützungspauschales bewilligt worden. Desgleichen seien in der Folge den altkatholischen Seelsorgern fallweise Teuerungszulagen gewährt worden. Seit Anfang des Jahres 1918 sei jedoch die Teuerung immer weiter fortgeschritten, sodass die gegenwärti<pb facs="krp-0108_r-0035"/>gen Bezüge der weitaus überwiegenden Mehrzahl der Geistlichen nicht hinreichen, um den Lebensunterhalt zu fristen und sohin die damals erfolgte Aufbesserung sich heute als durchaus unzulänglich erweise.</p>
+                  <p>Wenn nun auch mit Rücksicht auf die verhältnismäßig kurze Zeit, die seit der letzten Regulierung verflossen sei, an eine Abänderung der Ansätze des erwähnten Gesetzes derzeit schon wegen der außergewöhnlichen Verhältnisse, die keinen Schluss auf die künftige Gestaltung der Dinge zulassen, nicht gedacht werden könne, so erscheine es doch als eine unabweisliche Notwendigkeit, den gegenwärtigen außerordentlichen Umständen Rechnung zu tragen und den Geistlichen der katholischen, evangelischen und altkatholischen Kirche Teuerungszulagen – und zwar zunächst für das II. Halbjahr 1919 – zu bewilligen.</p>
+                  <p>Wenngleich angenommen werden könne, dass in der Kongruanovelle vom 28. März 1918 bei Festsetzung der Dotation der Geistlichkeit bereits auf die Teuerungszulage, welche den Staatsangestellten um jene Zeit <pb facs="krp-0108_r-0036"/>gewährt wurde, in gewisser Hinsicht Bedacht genommen wurde, so dürfe doch nicht übersehen werden, dass seither den Staatsangestellten weitere besondere Begünstigungen zugebilligt wurden, wie denn auch für die Lehrpersonen an Volks- und Bürgerschulen – deren Bezüge nicht aus staatlich verwalteten Fonds fließen – zu den ihnen gewährten Teuerungszuwendungen immer höhere Zuschüsse aus Staatsmitteln geleistet werden müssen. Es werde für die Höhe der den Geistlichen jetzt zu gewährenden Teuerungszulagen der Mehrbezug als Richtschnur genommen werden können, der den Staatsangestellten heute gegenüber der Zeit des Wirksamkeitsbeginnes des erwähnten Gesetzes zufließt. Die nach dieser Maßgabe aufgestellte Berechnung ergebe für das Gebiet Deutschösterreichs nach den Grenzen des Friedensvertrages von St. Germain eine Summe von ca. 3,15 Millionen K als Erfordernis für die Teuerungszuwendungen an die Geistlichkeit pro II. Semester 1919.</p>
+                  <p>Das Staatsamt der Finanzen, mit dem diesbezüglich das Einvernehmen gepflogen wurde, habe zugestimmt, dass <pb facs="krp-0108_r-0037"/>für den bezeichneten Zweck ein Betrag im Höchstausmaß von 3 Millionen K in Anspruch genommen werde.</p>
+                  <p>An dieser Summe würden folgende Kategorien von Personen zu partizipieren haben: Die katholische Geistlichkeit und zwar die Kanoniker der Metropolitan- und Kathedralkapitel, die Professoren an den theologischen Diözesanlehranstalten, die Seelsorgegeistlichen, die Inhaber von Stellen, die als im Zwecke des Gesetzes vom 19. Februar 1902, RGBl. Nr. 48 systemisiert anerkannt sind und die geistlichen Pensionisten; weiters die evangelischen Geistlichen und die im Dienste der evangelischen Kirchengemeinden stehenden Lehrpersonen, einschließlich der Pensionisten und Hinterbliebenen; endlich die Seelsorger der altkatholischen Kirche.</p>
+                  <p>Die angemessene Aufteilung des erwähnten Betrages auf die einzelnen Konfessionen würde seitens des Staatsamtes für Inneres und Unterricht vorgenommen werden, welches auch die weiteren Verfügungen wegen Verteilung der den einzelnen Konfessionen zugewiesenen Teilbeträge auf die bezüglichen Perzipienten tref<pb facs="krp-0108_r-0038"/>fen werde.</p>
+                  <p>Der sprechende Unterstaatssekretär erbitte demnach die Genehmigung des Kabinettsrates, dass zum Zwecke der Gewährung von Teuerungszuwendungen an die Geistlichkeit für das II. Semester 1919 ein Betrag im Höchstausmaße von 3 Millionen K aus den staatlichen Beiträgen für Kultuszwecke verwendet werde.</p>
+                  <p>Der Kabinettsrat erteilt die erbetene Genehmigung.</p>
+               </div>
+               <div type="top" xml:id="krp-0108_top16">
+                  <head>
+                     <label>
+                        <num n="16">16.</num>
+                        <seg>Forderungen der Staatseisenbahnbediensteten.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Paul</hi> teilt mit, dass die Bewegung unter den Eisenbahnern seit Gewährung der letzten Zugeständnisse nicht zur Ruhe gekommen sei. Am 25. d. M. werde eine Konferenz der Wiener und Provinzvertrauensmänner und am 26. d. M. eine Versammlung des Zentralausschusses stattfinden. Wie der Vorsitzende dieses Zentralausschusses, Abgeordneter Tomschik, mitgeteilt habe, würden sich die Eisenbahn- und Postbediensteten mit der Gewährung einer außerordentlichen Geldzubuße im Ausmaß des Übergangsbeitrages, der am 1. Oktober neben den bereits <pb facs="krp-0108_r-0039"/>für den 1. und 15. Oktober vorgesehenen Übergangsbeiträgen auszuzahlen wäre, zufriedengeben. Der sprechende Staatssekretär beantragt, der Auszahlung dieser ausnahmsweisen Geldzuwendung zuzustimmen. Hiebei setze er voraus, dass am 1. November der Anschaffungsbeitrag und der einfache Übergangsbeitrag werde ausbezahlt werden und gebe es dem Kabinettsrat anheim, bereits im gegenwärtigen Zeitpunkte für den Monat Dezember Zuwendungen im gleichen Ausmaß wie pro Oktober in Aussicht zu stellen.</p>
+                  <p>In diesem Zusammenhange beantragt Staatssekretär Paul zur teilweisen Deckung des bisher auf ungefähr 700 Millionen K angewachsenen Defizits der deutschösterreichischen Staatsbahnen die Einführung einer Erhöhung des Gütertarifs um 100 %, des Personentarifs um 50 % und des Briefsportos auf 50 h.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Schumpeter</hi> erklärt, dass er den vom Staatssekretär für Verkehrswesen beantragten Zuwendungen für das Personal nur unter der Bedingung zustimmen könne, wenn gleichzeitig der Gütertarif um 150 %, der Personen<pb facs="krp-0108_r-0040"/>tarif um 50 % und das Briefporto auf 50 h erhöht werde. Diese Erhöhungen fasse er jedoch nur als vorläufig auf, da hiedurch das Defizit nicht voll gedeckt werde, weshalb er sich vorbehalte, im geeigneten Zeitpunkte eine weitere Erhöhung anzusprechen.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Bauer</hi> erachtet die gegenwärtige Zubußenpolitik für unhaltbar und glaubt, dass für die Staatsarbeiter die Schaffung von längerfristigen Kollektivverträgen mit gleitenden, sich den jeweiligen Lebensmittelpreisen anpassenden Lohnsätzen anzustreben sei.</p>
+                  <p>Nachdem noch die Staatssekretäre <hi rend="#letterspaced">Stöckler</hi> und <hi rend="#letterspaced">Eldersch</hi> zum Gegenstande gesprochen hatten, beantragt der <hi rend="#letterspaced">Vorsitzende</hi>, heute von einer bindenden Beschlussfassung noch abzusehen und ihn und den Staatssekretär Paul zu ermächtigen, in der Versammlung der Wiener und Provinzvertrauensmänner die entsprechenden Erklärungen abzugeben.</p>
+                  <p>Der Kabinettsrat beschließt in diesem Sinne.</p>
+                  <p/>
+               </div>
+            </div>
+            <div type="anhaenge">
+               <p>
+                  <pb facs="krp-0108_a01-0001"/>Streng vertraulicher Anhang, zum Kabinettsprotokoll Nr. 108 vom 23. September 1919.</p>
+               <div n="1">
+                  <head/>
+                  <div type="a01_protokoll">
+                     <p>Staatssekretär <hi rend="#letterspaced">Hanusch</hi> erbittet und erhält die Zustimmung des Kabinettsrates zur Erwirkung des Titels eines Sektionschefs für den Zentralgewerbeinspektor im Staatsamt für soziale Verwaltung Hofrat Ing. Viktor Würth aus Anlass der Versetzung in den dauernden Ruhestand und zur Erwirkung der Ernennung des Vorstandes des Gewerbeinspektorates für den 5. Aufsichtsbezirk in Wien diplomierten Chemiker Hans Tauss zum Zentralgewerbeinspektor.</p>
+                     <p/>
+                  </div>
+               </div>
+            </div>
+            <div type="stenogramme">
+               <div n="1">
+                  <head>EINZUFÜGEN</head>
+                  <p>Transkription in Arbeit.</p>
+               </div>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

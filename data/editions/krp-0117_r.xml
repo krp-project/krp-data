@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href='http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:acdh="https://vocabs.acdh.oeaw.ac.at/schema#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xml:lang="de">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="a" type="main" n="0117">Kabinettsprotokoll Nr. 117 vom 24. Oktober 1919</title>
+            <title level="m" type="main" n="01">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <title level="m" type="sub" n="">Renner III (17. Oktober 1919 – 7. Juli 1920)</title>
+            <meeting>
+               <placeName key="https://d-nb.info/gnd/4066009-6">Wien</placeName>
+               <orgName key="https://d-nb.info/gnd/5162749-8">Kabinettsrat</orgName>
+               <date when-iso="1919-10-24"/>
+            </meeting>
+            <editor>
+               <persName key="https://d-nb.info/gnd/122481836"
+                         role="hasCreator"
+                         xml:id="hwohnout">
+                  <forename>Helmut</forename>
+                  <surname>Wohnout</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</affiliation>
+               <idno type="ORCID">0000-0002-3864-9839</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/120789825"
+                         role="hasCreator"
+                         xml:id="tolechowski">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0003-3291-6876</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/131679384"
+                         role="hasCreator"
+                         xml:id="rlein">
+                  <forename>Richard</forename>
+                  <surname>Lein</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0002-7502-0503</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="aholzer">
+                  <forename>Anna</forename>
+                  <surname>Holzer</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0005-3560-3500</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="dsoelkner">
+                  <forename>Dominik</forename>
+                  <surname>Sölkner</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-9895-7212</idno>
+            </editor>
+            <editor>
+               <persName role="hasContributor" xml:id="ischotzko">
+                  <forename>Ina</forename>
+                  <surname>Schotzko</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-5210-3713</idno>
+            </editor>
+            <funder n="1">
+               <orgName key="https://d-nb.info/gnd/2054142-9" role="hasFunder">Österreichischer Wissenschaftsfonds FWF</orgName>
+               <idno type="project">PAT1495024</idno>
+               <title type="project">Die Protokolle des österreichischen Kabinettsrates 1919–1920</title>
+            </funder>
+            <respStmt>
+               <resp>Projektverantwortung</resp>
+               <orgName key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Projektleitung</resp>
+               <persName key="https://d-nb.info/gnd/120789825" role="hasPrincipalInvestigator">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+                  <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+                  <idno type="ORCID">0000-0003-3291-6876</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Nationaler Forschungspartner</resp>
+               <orgName key="https://d-nb.info/gnd/1123037736" role="hasEnabler">Austrian Centre for Digital Humanities</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Digitalisierung der gedruckten Quellen</resp>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>TEI-Datenmodellierung</resp>
+               <persName role="hasContributor" xml:id="tfruehwirth">
+                  <forename>Timo</forename>
+                  <surname>Frühwirth</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-3997-5193</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technische Supervision</resp>
+               <persName key="https://d-nb.info/gnd/1043833846"
+                         role="hasContributor"
+                         xml:id="pandorfer">
+                  <forename>Peter</forename>
+                  <surname>Andorfer</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-9575-9372</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technisches Consulting und Vorbereitung der Druckausgabe</resp>
+               <persName key="https://d-nb.info/gnd/13281899X"
+                         role="hasContributor"
+                         xml:id="skurz">
+                  <forename>Stephan</forename>
+                  <surname>Kurz</surname>
+                  <affiliation key="https://d-nb.info/gnd/1202798799">Institut für die Erforschung der Habsburgermonarchie und des Balkanraumes</affiliation>
+                  <idno type="ORCID">0000-0003-2546-2570</idno>
+               </persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher key="https://d-nb.info/gnd/1001454-8">Österreichische Akademie der Wissenschaften</publisher>
+            <date when="2028"/>
+            <availability status="free">
+               <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">Lizenziert unter CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/deed.de)</licence>
+            </availability>
+            <idno type="ISBN_Print"/>
+            <idno type="ISBN_Part_epub"/>
+            <idno type="ISBN_Digital"/>
+            <idno type="DOI"/>
+            <idno type="DOI_zenodo"/>
+            <idno type="ebook_ID"/>
+         </publicationStmt>
+         <seriesStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="m" type="main">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <respStmt>
+               <resp>Bearbeitung und Herausgeberschaft</resp>
+               <orgName key="https://d-nb.info/gnd/2024703-5">Universität Wien</orgName>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+         </seriesStmt>
+         <notesStmt>
+            <note>Diese TEI-XML-Datei ist Grundlage für eine Druckausgabe der Edition.</note>
+            <relatedItem>
+               <biblStruct>
+                  <monogr>
+                     <imprint>
+                        <pubPlace key="https://d-nb.info/gnd/4066009-6">Wien</pubPlace>
+                        <publisher key="https://d-nb.info/gnd/2068748-5">Verlag der Österreichischen Akademie der Wissenschaften</publisher>
+                        <date when="2029"/>
+                     </imprint>
+                     <extent/>
+                  </monogr>
+                  <note>
+                     <idno/>
+                     <ptr/>
+                  </note>
+                  <citedRange/>
+               </biblStruct>
+            </relatedItem>
+         </notesStmt>
+         <sourceDesc>
+            <bibl>Quellbestand: AT-OeStA/AdR MRang MR 1Rep KRP Kabinettsratsprotokolle, 1918-1920 (Teilbestand)<ref target="https://www.archivinformationssystem.at/detail.aspx?id=5465">https://www.archivinformationssystem.at/detail.aspx?id=5465</ref>
+            </bibl>
+            <msDesc>
+               <msIdentifier>
+                  <institution key="https://d-nb.info/gnd/37748-X" role="hasOwner">AT-OeStA Österreichisches Staatsarchiv (Archiv (ÖStA))</institution>
+                  <repository key="https://d-nb.info/gnd/1601181-8">AT-OeStA/AdR Archiv der Republik, 1918- (Abteilung)</repository>
+                  <collection>AT-OeStA/AdR MRang MR 1Rep Ministerrat 1. Republik, 1918 - 1938 (Bestand)</collection>
+                  <idno>AT-OeStA_AdR-MRang-MR-1.-Rep.-KRP-117</idno>
+               </msIdentifier>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <abstract>
+            <p>
+          <!--to be generated-->
+        </p>
+         </abstract>
+      </profileDesc>
+      <encodingDesc>
+         <styleDefDecl scheme="css"/>
+         <tagsDecl>
+            <rendition xml:id="b" scheme="css">font-weight:bold;</rendition>
+            <rendition xml:id="su" scheme="css">vertical-align:super;font-size:.7em;</rendition>
+            <rendition xml:id="s" scheme="css">text-decoration:line-through;</rendition>
+            <rendition xml:id="u" scheme="css">text-decoration:underline;</rendition>
+            <rendition xml:id="ow" scheme="css">text-decoration:line-through;text-decoration-style:double;</rendition>
+            <rendition xml:id="r" scheme="css">display:block;text-align:right;</rendition>
+            <rendition xml:id="letterspaced" scheme="css">letter-spacing:0.15em;</rendition>
+            <rendition xml:id="i" scheme="css">font-style:italic;</rendition>
+         </tagsDecl>
+         <editorialDecl>
+            <hyphenation>
+               <p>
+            <!--to be added-->
+          </p>
+            </hyphenation>
+            <correction>
+               <p>
+            <!--to be added-->
+          </p>
+            </correction>
+            <normalization>
+               <p>
+            <!--to be added-->
+          </p>
+            </normalization>
+            <punctuation>
+               <p>
+            <!--to be added-->
+          </p>
+            </punctuation>
+            <stdVals>
+               <p>
+            <!--to be added-->
+          </p>
+            </stdVals>
+            <p>
+          <!--to be added-->
+        </p>
+         </editorialDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#tfruehwirth" when-iso="2026-10-07">TEIGarage output upconverted with upconvert.xsl</change>
+         <change who="#tfruehwirth" when-iso="2026-10-07">TEI header populated with generate_tei_templates.py</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface/>
+   </facsimile>
+   <text>
+      <body>
+         <div xml:id="doc-krp-0117.xml">
+            <head type="dokument">
+               <title type="num">117.<note type="footnote">Das Protokoll trägt den Vermerk <hi rend="#i">Vertraulich!</hi>
+                  </note>
+               </title>
+               <title type="desc">
+                  <pb facs="krp-0117_r-0001"/>
+                  <pb facs="krp-0117_r-0002"/>[Freitag] 1919-10-24</title>
+            </head>
+            <div type="dokumentkopf">
+               <div type="vorsitz">
+                  <head>Vorsitz:</head>
+                  <p>Renner</p>
+               </div>
+               <div type="anwesend">
+                  <head>Anwesend:</head>
+                  <p>Deutsch, Eisler, Eldersch, Ellenbogen, Fink, Glöckel, Hanusch, Loewenfeld-Russ, Mayr, Miklas, Paul, Ramek, Reisch, Resch, Stöckler, Tandler, Waiss, Zerdik</p>
+               </div>
+               <div type="zugezogen">
+                  <head>Zugezogen:</head>
+                  <p>Beck, Boschan, Grimm, Harpner, Pöschl, Ziller</p>
+               </div>
+               <div type="schriftfuehrer">
+                  <head>Schriftführer:</head>
+                  <p>unbekannt</p>
+               </div>
+               <div type="dauer">
+                  <head>Dauer:</head>
+                  <p>15.30–19.00 Uhr</p>
+               </div>
+            </div>
+            <div type="komponenten">
+               <p>Reinschrift, Beilagen, streng vertraulicher Anhang, Konzept, stenographische Mitschrift, Entwurf der Tagesordnung, diverse Zusätze</p>
+            </div>
+            <div type="beilagen">
+               <head>Beilagen:</head>
+               <list>
+                  <item>
+                     <ref target="#krp-0117_top01">Zu TOP 1</ref>: <ref target="#krp-0117_b01">Antrag des Staatsamtes für Finanzen wegen des Abbaus der liquidierenden Stellen in Deutschösterreich infolge des Friedensvertrages</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0117_top01">Zu TOP 1</ref>: <ref target="#krp-0117_b02">Stellungnahme des Staatsamtes für Heereswesen</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0117_top01">Zu TOP 1</ref>: <ref target="#krp-0117_b03">Erwiderung des Staatsamtes für Finanzen auf die Gegenschrift des Staatsamtes für Heereswesen</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0117_top01">Zu TOP 1</ref>: <ref target="#krp-0117_b04">Entwürfe von Ministerialrat Wilhelm Boschan über „Vorschläge für die Reform des Liquidierungswesens aufgrund der Friedensverträge“ und über „Friedensvertrag und Liquidierungskommission“</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0117_top01">Zu TOP 1</ref>: <ref target="#krp-0117_b05">Rückäußerung des Staatsamtes für Heereswesen</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0117_top01">Zu TOP 1</ref>: <ref target="#krp-0117_b06">Antrag der Staatskanzlei</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0117_top02">Zu TOP 2</ref>: <ref target="#krp-0117_b07">Bericht über die Einsetzung einer Kommission für die Verwaltung der Museen</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0117_top03">Zu TOP 3</ref>: <ref target="#krp-0117_b08">Referat der Staatskanzlei zu Zl. 2555/51/1919 über die Gegenzeichnung des Vertrags von St. Germain</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0117_top05">Zu TOP 5</ref>: <ref target="#krp-0117_b09">Antrag des Staatsamtes für Handel und Gewerbe, Industrie und Bauten zur Weiterführung des Internates der ehemaligen Luftfahrbaujungenschule in Mauer bei Wien</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0117_top07">Zu TOP 7</ref>: <ref target="#krp-0117_b10">Vortrag des Staatsamtes für Heereswesen für den Kabinettsrat über die Erhöhung der Unterhaltsbeiträge für die Angehörigen bzw. Hinterbliebenen von Invaliden und Vermissten bzw. von Gestorbenen und Gefallenen</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0117_top08">Zu TOP 8</ref>: <ref target="#krp-0117_b11">Vortrag des Staatsamtes für Heereswesen für den Kabinettsrat über den Zuschuss zur Kostenaufbesserung und 25 % Erhöhung dieses Zuschusses für die Volkswehr</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0117_top09">Zu TOP 9</ref>: <ref target="#krp-0117_b12">Vortrag des Staatsamtes für Verkehrswesen für den Kabinettsrat über die Rückübernahme enthobener deutscher Bediensteter durch die tschechoslowakische Staatsbahnverwaltung</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0117_top10">Zu TOP 10</ref>: <ref target="#krp-0117_b13">Antrag des Staatsamtes für Heereswesen zur Ermöglichung der Unterstützung bedürftiger Kriegsbeschädigter, Kriegerwitwen und –Waisen mit Naturalien</ref>
+                  </item>
+               </list>
+            </div>
+            <div type="protokoll">
+               <pb facs="krp-0117_r-0003"/>
+               <div type="top" xml:id="krp-0117_top01">
+                  <head>
+                     <label>
+                        <num n="1">1.</num>
+                        <seg>Abbau der liquidierenden Stellen in Deutschösterreich infolge des Friedensvertrages.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Deutsch</hi> bespricht zunächst den vom Generalliquidierungskommissär Sektionschef Dr. <hi rend="#letterspaced">Pöschl</hi> dem Kabinettsrat vorgelegten Antrag über den Abbau der liquidierenden Stellen in Deutschösterreich infolge des Friedensvertrages. Er verweist auf die politische Unmöglichkeit, die internationalen Liquidierungsstellen auf deutschösterreichischem Boden weiter zu belassen und schlägt vor, die gesamte Liquidierung ausdrücklich als eine deutschösterreichische innerstaatliche Angelegenheit zu erklären; es hätten demzufolge die Gesandtenkonferenzen und die Bevollmächtigtenkollegien aufgelassen zu werden. Die Auseinandersetzung mit Ungarn wäre einem späteren Zeitpunkte vorzubehalten. Was die Ausführung dieses Gedankens anlange, denke sich Redner den nunmehr einzuschlagenden Weg so, dass jedes Staatsamt jene Liquidierungszweige übernehmen sollte, die meritorisch in sein Ressort fallen. Hiebei hätte die Liquidierung des bestandenen Kriegsministeriums nach den einzelnen Verwaltungsgegenständen auf die zuständigen Staatsämter aufgeteilt <pb facs="krp-0117_r-0004"/>zu werden. So würde beispielsweise der enorme Komplex von Finanzfragen durch das Staatsamt für Finanzen zu lösen sein.</p>
+                  <p>Um dieser Art die Zerlegung der Liquidierung des bestandenen Kriegsministeriums durchzuführen, empfehle Redner die Einsetzung eines Komitees, welchem zwei Vertreter des Staatsamtes für Heer[es]wesen (Sektionschef Hanausek und Oberst Ziller ), ein Vertreter des Staatsamtes für Finanzen (Finanzrat [Dr.] Hornik) und der bisherige Leiter des Büros der Gesandtenkonferenz und der internationalen Liquidierungskommission Ministerialrat Dr. Boschan anzugehören hätten. Ferner sollten zwei Abgeordnete der Nationalversammlung von dieser mit der Aufgabe betraut werden, die Liquidierung in allen Staatsämtern zu beaufsichtigen und auf deren möglichste Beschleunigung hinzuwirken. Generalliquidierungskommissär Sektionschef Dr. Pöschl verweist demgegenüber auf seine dem Kabinettsrat in dieser Angelegenheit vorgelegte Äußerung und gelangt nach eingehender Darstellung seiner gegenständlichen Auffassung zu dem Vorschlage, es möge beim Abbau der Liquidierung von nachstehenden Gesichts<pb facs="krp-0117_r-0005"/>punkten ausgegangen werden:</p>
+                  <list>
+                     <item n="1">
+                        <label>1.)</label> Hätte durch einen übereinstimmenden Beschluss aller Nationalstaaten ausgesprochen zu werden, dass mit dem Inkrafttreten des Friedensvertrages die bisherige Liquidierungsorganisation, hierunter die bisherige internationale Liquidierungskommission und die Bevollmächtigtenkollegien aufzulösen und Verhandlungen zu dem Zweck einzuleiten sind, damit an deren Stelle eine einzige Kommission der an der Liquidierung interessierten Nationalstaaten eingesetzt werde.</item>
+                     <item n="2">
+                        <label>2.)</label> Hätte sich in der Zwischenzeit, das ist bis zum Inkrafttreten des Friedensvertrages, die bestehende Liquidierungsorganisation lediglich auf die Behandlung der unumgänglich notwendigen laufenden Angelegenheiten zu beschränken, hingegen vor allen prinzipiellen Beschlüssen, die dem Friedensvertrage vorgreifen könnten, Abstand zu nehmen.</item>
+                     <item n="3">
+                        <label>3.)</label> Wäre eine strenge Unterscheidung zwischen den altösterreichischen liquidierenden Stellen und deren Unterstellen einerseits und den gemeinsamen vormals österreichisch-ungarischen liquidierenden Zentralstellen andererseits im Hinblicke darauf zu machen, dass die Übernahme der ersteren in die deutschösterreichische Verwaltung nach dem Friedensvertrage ohne Bedenken vor sich <pb facs="krp-0117_r-0006"/>gehen könne, also einem internationalen Hindernisse nicht begegnen würde, während bei den gemeinsamen Stellen das Einvernehmen mit Ungarn rechtlich notwendig sei. Auf diese Momente bitte Redner bei der Ausarbeitung des in Aussicht genommenen Gesetzentwurfes Bedacht zu nehmen. </item>
+                  </list>
+                  <p>Ministerialrat Dr. <hi rend="#letterspaced">Boschan</hi> bespricht die von ihm ausgearbeiteten und dem Kabinettsrat gleichfalls bereits vorliegenden Vorschläge für die Reform des Liquidierungswesens aufgrund des Friedensvertrages und betont abschließend, dass es seiner Ansicht nach unerlässlich erscheine, die gegenwärtige Organisation bis zum Zeitpunkte des Inkrafttretens des Friedensvertrages aus dem Grund aufrecht zu erhalten, um den Anschein zu vermeiden, als ob unsererseits eine gewaltsame einseitige Regelung dieser Frage beabsichtigt würde.</p>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> gibt der Anschauung Ausdruck, es müsse der Gesichtspunkt zum Durchbruche gelangen, dass wir durch den Friedensvertrag die volle Territorialhoheit auf unserem Staatsgebiete besitzen und demnach auf unserem Boden keine andere Verwaltung dulden brauchen als die durch unsere Staatsämter ausgeübt wird. Hiezu gebe <pb facs="krp-0117_r-0007"/>uns der Staatsvertrag von St. Germain das volle Recht, wonach die Liquidierung nicht etwa ex nunc aufgelöst, sondern als ex tunc gar nicht anerkannt gelte. Dadurch sei das ganze System der Liquidierung, das wir seinerzeit im guten Glauben aufgestellt haben, von Anfang an hinfällig geworden. Wir können daher diese Verwaltung ohne Bedenken übernehmen. Das gelte ebenso für die österreichisch-ungarischen Angelegenheiten, da nach dem Friedensvertrage auch Ungarn keinen Anspruch auf Mitverwaltung besitze. Ungarn bleibe es anheimgestellt, seine allfälligen Gegenansprüche im diplomatischen Wege geltend zu machen. Die näheren Details der Regelung dieser Fragen könnten wohl am besten der vom Staatssekretär Dr. <hi rend="#letterspaced">Deutsch</hi> in Antrag gebrachten Kommission vorbehalten werden, welcher auch die Aufgabe obliegen würde, den erforderlichen Gesetzentwurf auszuarbeiten.</p>
+                  <p>Staatssekretär Dr. Deutsch teilt vollends den vom Vorsitzenden entwickelten Standpunkt, dass wir uns bei der Behandlung der gegenständlichen Fragen auf den Boden des Friedensvertrages stellen müssen, welcher besage, dass alles, was sich auf unserem Territorium befinde, uns gehöre. Gleichwohl <pb facs="krp-0117_r-0008"/>weise er den Gedanken eines Einvernehmens mit den Nationalstaaten grundsätzlich nicht zurück; doch hätte die Liquidierung durch unsere Organe allein zu erfolgen, allfällig erforderliche Verhandlungen mit den Nationalstaaten könnten vom deutschösterreichischen Vertreter in einer neu zu schaffenden internationalen Vereinbarungskommission geführt werden.</p>
+                  <p>Was die Frage des Zeitpunktes betreffe, in welchem die Neuorganisation der Liquidierung ins Werk zu setzen wäre, so hege Redner keine grundsätzlichen Bedenken dagegen, dass damit bis zum Inkrafttreten des Friedensvertrages zugewartet werde.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Reisch</hi> sowie Sektionschef Dr. <hi rend="#letterspaced">Grimm</hi> treten besonders für einen ehesten Abbau der Liquidierung in personalwirtschaftlichen Belangen ein.</p>
+                  <p>Der Kabinettsrat gelangt sodann zu nachstehenden Beschlüssen:</p>
+                  <list>
+                     <item n="1">
+                        <label>1.)</label> Die gesamte Liquidierung wird als eine deutschösterreichische innerstaatliche Aufgabe erklärt; die Gesandtenkonferenz und die Bevollmächtigtenkollegien treten mit dem Tage der Rechtswirksamkeit des Staatsvertrages von St. Germain außer Funktion.</item>
+                     <item n="2">
+                        <label>2.)</label> Jedes Staatsamt übernimmt jene <pb facs="krp-0117_r-0009"/>Liquidierung, die in sein Ressort fällt.</item>
+                     <item n="3">
+                        <label>3.)</label> Die Liquidierung des Kriegsministeriums wird nach der Zugehörigkeit des einzelnen Verwaltungsgegenstandes zerlegt und auf die zuständigen Staatsämter aufgeteilt.</item>
+                     <item n="4">
+                        <label>4.)</label> Um die Zerlegung des liquidierenden Kriegsministeriums vorzubereiten, wird ein Komitee eingesetzt, das aus zwei Vertretern des Staatsamtes für Heer[es]wesen (Sektionschef Hanausek und Oberst Ziller), aus einem Vertreter des Staatsamtes für Finanzen (Finanzrat Hornik) und aus dem Vorstande des Büros der Gesandtenkonferenz und der internationalen Liquidierungskommission, Ministerialrat Dr. Boschan, zu bestehen hat.</item>
+                     <item n="5">
+                        <label>5.)</label> Der Nationalversammlung ist vorzuschlagen, zur Aufsicht über die gesamte Liquidierung zwei Abgeordnete namhaft zu machen, die mit besonderen Machtvollkommenheiten auszustatten sein werden.</item>
+                     <item n="6">
+                        <label>6.)</label> Zur Auseinandersetzung mit den Sukzessionsstaaten ist Deutschösterreich durch die Teilnahme an einer zu schaffenden internationalen Vereinbarungskommission bereit.</item>
+                  </list>
+                  <p>Schließlich weist der Kabinettsrat die Staatskanzlei an, die im Gegen<pb facs="krp-0117_r-0010"/>stande erforderlichen legislativen Maßnahmen im Einvernehmen mit dem Staatsamte für Finanzen, für Heer[es]wesen und für Äußeres vorzubereiten.</p>
+               </div>
+               <div type="top" xml:id="krp-0117_top02">
+                  <head>
+                     <label>
+                        <num n="2">2.</num>
+                        <seg>Einsetzung einer Kommission zur Wahrung und Ordnung des staatlichen Kunstbesitzes.</seg>
+                     </label>
+                  </head>
+                  <p>Unterstaatssekretär <hi rend="#letterspaced">Glöckel</hi> weist darauf hin, dass sich im Zuge der Aktion zur Veräußerung bzw. Verpfändung von staatlichen Kunstwerten die Notwendigkeit ergeben habe, ein Organ zu schaffen, dessen Aufgabe es sei, die volle Ausnutzung des Kunstbesitzes und die Ausscheidung des Überflüssigen und minder Belangreichen ohne kulturelle Gefährdung zu gewährleisten. Hiezu erscheine eine kleine, mit folgenden Befugnissen ausgestattete Kommission seiner Anschauung nach geeignet: Diese Kommission hätte</p>
+                  <list>
+                     <item n="1">
+                        <label>1.)</label> festzustellen, welche Objekte als unentbehrliche Teile des staatlichen Kulturbesitzes anzusehen sind und daher unter allen Umständen der Öffentlichkeit erhalten bleiben müssen. Aufgrund ihres Votums wird die Unterrichtsverwaltung das Einvernehmen mit dem mit der finanziellen Verwertung des staatlichen Kunstbesitzes betrauten Bevollmächtigten herstellen, zu dem dieser nach § 4 des bezüglichen Ge<pb facs="krp-0117_r-0011"/>setzes verpflichtet ist;</item>
+                     <item n="2">
+                        <label>2.)</label> ein Programm darüber auszuarbeiten, in welcher Weise die bisherigen Sammlungen umzugestalten wären, um unter Verbilligung der Verwaltung und Vereinfachung des Betriebes eine wesentlich größere Wirkung für die Volksbildung im weitesten Sinne sicherzustellen;</item>
+                     <item n="3">
+                        <label>3.)</label> zu ermitteln, welche Objekte ohne schwere Schädigung der Kulturinteressen veräußert werden können, wobei ein Teil des Erlöses dem Ausbau der Sammlungen selbst zu Gute zu kommen hätte. Dabei würde es sich für absehbare Zeit weniger um neue Erwerbungen handeln, als um Adaptierungen und Einrichtungsarbeiten, sodass diese Auslagen zur Gänze dem notleidenden heimischen Handwerk und der Industrie zu Gute kämen, und überdies in inländischer Währung zu leisten wären, während der Erlös aus den etwa ausgeschiedenen Objekten in ausländischer Valuta erzielt würde.</item>
+                  </list>
+                  <p>Die Kommission, deren Zusammensetzung dem Unterrichtsamte zu überlassen wäre, hätte ein beratendes Organ dieses Amtes, dem die Durchführung ihrer Vorschläge zusteht, zu sein. Ihre Tätigkeit wäre durch eine eigene Geschäftsordnung zu regeln.</p>
+                  <p>Der sprechende Unterstaatssekretär beabsichtigt wegen Durchführung der <pb facs="krp-0117_r-0012"/>erwähnten Maßnahmen das Erforderliche im Einvernehmen mit den berufenen Stellen zu veranlassen.</p>
+                  <p>Der Kabinettsrat erteilt dem Unterstaatssekretär Glöckel die Ermächtigung, in dem angedeuteten Sinne vorzugehen.</p>
+               </div>
+               <div type="top" xml:id="krp-0117_top03">
+                  <head>
+                     <label>
+                        <num n="3">3.</num>
+                        <seg>Frage der Gegenzeichnung des Staatsvertrages von St. Germain.</seg>
+                     </label>
+                  </head>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> bringt in Erinnerung, dass gemäß § 5 des Gesetzes vom 19. Dezember 1918, StGBl. Nr. 139, (Verfassungsnovelle) die Ratifizierung von Staatsverträgen durch den Präsidenten unter „<hi rend="#u">Gegenzeichnung des Staatskanzlers, des Staatssekretärs für Äußeres und des dem Gegenstande des Vertrages nach zuständigen Staatssekretärs</hi>" zu erfolgen habe.</p>
+                  <p>Der Staatsvertrag von St. Germain falle vermöge seines umfassenden Inhaltes wohl in den Wirkungskreis sämtlicher Staatsämter; daher erscheinen sämtliche Staatssekretäre als „zuständig" und es würde daher ihre kollektive Gegenzeichnung dem Wortlaute des Gesetzes am ehesten entsprechen. Nun widerspreche aber die Beisetzung so zahlreicher Unterschriften der völkerrechtlichen Praxis, welche sich fast ausnahmslos mit der Kontrasignierung der Ratifikationsunterschrift des <pb facs="krp-0117_r-0013"/>Staatsoberhauptes durch den verantwortlichen Leiter der Außenpolitik begnüge.</p>
+                  <p>Da die Beifügung so zahlreicher Unterschriften geradezu auffällig erscheinen müsste, beantrage der sprechende Staatskanzler, das in Paris zu überreichende Ratifikationsexemplar nebst der <hi rend="#u">Unterschrift</hi> des Herrn <hi rend="#u">Präsidenten nur</hi> mit der des Redners in seiner Eigenschaft als Staatskanzler zu versehen, ein Vorgehen, bei dem das Erfordernis einer verantwortlichen Gegenzeichnung immerhin bereits erfüllt wäre. Hingegen wäre der Vertragstext zur <hi rend="#u">innerstaatlichen</hi> Verlautbarung von <hi rend="#u">sämtlichen Staatssekretären</hi> gegenzufertigen.</p>
+                  <p>Redner ersucht, der Kabinettsrat wolle die Staatskanzlei im vorbezeichneten Sinne ermächtigen.</p>
+                  <p>Der Kabinettsrat erteilt die erbetene Ermächtigung.</p>
+               </div>
+               <div type="top" xml:id="krp-0117_top04">
+                  <head>
+                     <label>
+                        <num n="4">4.</num>
+                        <seg>Beitritt der Staatsregierung zu dem Gesetze, betreffend die Auflösung der Generalinspektion der österreichischen Eisenbahnen und Einbeziehung der Geschäfte derselben in den engeren Wirkungskreis des Staatsamtes für Verkehrswesen sowie zu dem Gesetze über die Umwandlung der Exportakademie in Wien zu einer Hochschule für Welthandel.</seg>
+                     </label>
+                  </head>
+                  <p>Über Vorschlag des Vorsitzenden erhebt der Kabinettsrat gegen die von der Nationalversammlung beschlossenen Gesetze,</p>
+                  <list>
+                     <item n="1">
+                        <label>1.)</label> betreffend die Auflösung der Generalinspektion der österreichischen Eisenbahnen und Einbeziehung <pb facs="krp-0117_r-0014"/>der Geschäfte derselben in den engeren Wirkungskreis des Staatsamtes für Verkehrswesen, sowie</item>
+                     <item n="2">
+                        <label>2.)</label> über die Umwandlung der Exportakademie in Wien zu einer Hochschule für Welthandel</item>
+                  </list>
+                  <p>keine Vorstellung.</p>
+                  <p>Die beiden Gesetze sind demgemäß nach Gegenzeichnung durch den Staatskanzler und die zuständigen Staatssekretäre dem Präsidenten der Nationalversammlung zur Fertigung vorzulegen.</p>
+               </div>
+               <div type="top" xml:id="krp-0117_top05">
+                  <head>
+                     <label>
+                        <num n="5">5.</num>
+                        <seg>Weiterführung des Internates der ehemaligen Luftfahrbaujungenschule in Mauer bei Wien.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Ing. <hi rend="#letterspaced">Zerdik</hi> führt aus, dass im Jahre 1916 die Heeresverwaltung eine sogenannte Luftfahrbaujungenschule in Mauer bei Wien errichtet habe, in welcher die Söhne Gefallener, dann im Felde ausgezeichneter Unteroffiziere, Waisen und Söhne unbemittelter Eltern zu Werkmeistern auf luftfahrtechnischem Gebiete ausgebildet werden. Nach dem Umsturze habe das liquidierende Fliegerarsenal die Schule und das mit ihr verbundene Internat auf Kosten der Liquidierungsmasse weitergeführt.</p>
+                  <p>Im Zuge der wegen Übernahme dieser Schule in die deutschösterreichische Verwaltung ge<pb facs="krp-0117_r-0015"/>pflogenen Verhandlungen habe sich das Staatsamt für Handel und Gewerbe, Industrie und Bauten zur Übernahme und Weiterführung der <hi rend="#u">Schule</hi> bereit erklärt, die Übernahme des Internates jedoch – im Einvernehmen mit dem Staatsamt für Finanzen – abgelehnt. Das liquidierende Kriegsministerium hätte nunmehr mit Ende September d. J. die Zahlung der Kosten des Internates eingestellt, über Ersuchen des Referenten jedoch die vorschussweise Weiterzahlung der erforderlichen Beträge für den Monat Oktober noch zugestanden.</p>
+                  <p>Da es nun höchst unsozial erschiene, wenn den den bedürftigsten Bevölkerungskreisen angehörenden Schülern des zweiten und dritten Jahrganges die weitere unentgeltliche Verpflegung und Bequartierung plötzlich versagt würde, stelle der sprechende Staatssekretär den Antrag, der Kabinettsrat wolle für den gedachten Zweck im laufenden Verwaltungsjahr den hiefür erforderlichen Betrag von 160.000 K zur Verfügung stellen und das Staatsamt für Handel und Gewerbe, Industrie und Bauten mit der Fortführung des Internates betrauen.</p>
+                  <p>Der Kabinettsrat erhebt den gestellten Antrag mit der Maßgabe zum <pb facs="krp-0117_r-0016"/>Beschluss, dass regierungsseitig auch noch zu versuchen ist, nach Möglichkeit lokale Faktoren zur Beitragsleistung für die terminierte Fortführung des Internates heranzuziehen.</p>
+               </div>
+               <div type="top" xml:id="krp-0117_top06">
+                  <head>
+                     <label>
+                        <num n="6">6.</num>
+                        <seg>Kompensationsweiser Abverkauf von Leder durch Kärntner Interessenten.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Ing. Zerdik teilt mit, dass sich mehrere Interessenten aus Kärnten an das Handelsamt um die Bewilligung gewendet hätten, einen halben Waggon Abfallleder und einen halben Waggon Crouponleder in den tschechoslowakischen Staat gegen 70 Waggons Koks ausführen zu dürfen.</p>
+                  <p>Da dieser Kompensationsschlüssel nicht angemessen sei, glaube der sprechende Staatssekretär dem Kabinettsrate die Schlussfassung überlassen zu sollen, zumal auch politische Rücksichten in Frage kämen, da der Koks zur Zementerzeugung für die Wiederaufbauarbeiten im Kärntner Abstimmungsgebiete verwendet werden soll.</p>
+                  <p>Nach einer kurzen Debatte spricht sich der Kabinettsrat für die aufrechte Erledigung des Ansuchens aus.</p>
+               </div>
+               <div type="top" xml:id="krp-0117_top07">
+                  <head>
+                     <label>
+                        <num n="7">7.</num>
+                        <seg>Frage der Erhöhung der Unterhaltsbeiträge für die Angehörigen bzw. Hinterbliebenen von Invaliden und Vermissten, bzw. von Gestorbenen und Gefallenen.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Deutsch</hi> erinnert daran, dass der Kabinettsrat in seiner Sitzung vom 5. August d. J. <pb facs="krp-0117_r-0017"/>beschlossen habe, das Staatsamt für Heer[es]wesen sei zu beauftragen, im Einvernehmen mit dem Staatsamte für Finanzen und für soziale Verwaltung eine Vollzugsanweisung zur Durchführung der Unterhaltsbeitragsnovelle auszuarbeiten, in welcher die Ausdehnung der den Angehörigen von Kriegsgefangenen in der Form eines 50%igen Zuschusses gewährten Erhöhung des Unterhaltsbeitrages auf die Angehörigen von Vermissten auszusprechen sei.</p>
+                  <p>In dem im Kabinettsrate am 12. September d. J. erstatteten Vortrage sei vom Staatsamt für Heer[es]wesen darauf verwiesen worden, dass einerseits die Angehörigen von Vermissten bereits unter die Bestimmungen des am 1. Juli 1919 in Wirksamkeit getretenen Invalidenentschädigungsgesetzes fallen, andererseits die einseitige Begünstigung der Angehörigen von Vermissten durch Gewährung eines Zuschusses zu den Unterhaltsbeiträgen eine unbegründete Härte gegenüber den dieser Erhöhung nicht teilhaft werdenden Angehörigen von Invaliden, sowie den Hinterbliebenen nach den Gefallenen und Gestorbenen bedeuten würde.</p>
+                  <p>Auch sei damals betont worden, dass die Gewährung des Zuschusses an die <pb facs="krp-0117_r-0018"/>erwähnten Personenkategorien die Staatsfinanzen um ca. 6 Millionen K monatlich belasten würde, und dass mit Rücksicht auf die dann in zahlreichen Fällen eintretende Verminderung der Bezüge nach dem Invalidenentschädigungsgesetze im Vergleiche zu den Bezügen derselben Personen nach dem Unterhaltsbeitragsgesetze sehr viele Parteien das größte Interesse an einer Verzögerung in der Bemessung der Rente nach dem Invalidenentschädigungsgesetze haben würden, daher mit gutem Grunde Widerstände gegen die Durchführung des Invalidenentschädigungsgesetzes zu erwarten wären.</p>
+                  <p>Der sprechende Staatssekretär habe schließlich seiner Meinung dahin Ausdruck gegeben, dass für den Fall, als ungeachtet der erwähnten Bedenken an der Durchführung des Kabinettsratsbeschlusses vom 5. August d. J. festgehalten werden sollte, diese nur in der Form eines Gesetzes erfolgen könnte, das sich allerdings nicht auf das Unterhaltsbeitragsgesetz, sondern lediglich auf § 62 des Invalidenentschädigungsgesetzes stützen müsste, demzufolge alle Unterhaltsbeiträge für die Angehörigen von Invaliden und Vermissten, sowie <pb facs="krp-0117_r-0019"/>für die Hinterbliebenen von Gefallenen und Gestorbenen ausgezahlt werden.</p>
+                  <p>In der Kabinettsratssitzung vom 12. September d. J. sei nun beschlossen worden, das Staatsamt für Heer[es]wesen zu ersuchen, in der vorliegenden Angelegenheit zunächst mit den Staatsämtern für Finanzen und soziale Verwaltung noch eine Besprechung abzuhalten.</p>
+                  <p>Aufgrund dieser Besprechung, bei der sich sowohl das Staatsamt für soziale Verwaltung, als auch jenes für Finanzen – dieses aus sozialpolitischen und staatsfinanziellen Gründen, jenes wegen der sonst zu gewärtigenden Undurchführbarkeit des Invalidenentschädigungsgesetzes – neuerlich gegen die Gewährung des derzeit den Angehörigen von Kriegsgefangenen ausbezahlten Zuschusses auch an die Angehörigen von Invaliden und Vermissten, sowie an die Hinterbliebenen von Gefallenen und Gestorbenen ausgesprochen hätten, erbitte er sich, umso mehr als die Fortzahlung der Unterhaltsbeiträge an die erwähnten Personenkategorien nicht mehr wie schon erwähnt, aufgrund des Unterhaltsbeitragsgesetzes, sondern aufgrund des § 62 des Invalidenentschädigungs<pb facs="krp-0117_r-0020"/>gesetzes erfolgt, die prinzipielle Entscheidung des Kabinettsrates, ob vom Staatsamte für Heer[es]wesen eine entsprechende Gesetzesvorlage überhaupt ausgearbeitet werden solle.</p>
+                  <p>Nachdem Staatssekretär <hi rend="#letterspaced">Hanusch</hi> und Sektionschef Dr. <hi rend="#letterspaced">Grimm</hi> die Frage von ihrem Ressortstandpunkte aus beleuchtet hatten, beschließt der Kabinettsrat in Abänderung seines am 5. August d. J. gefassten Beschlusses die Angelegenheit vorläufig auf sich beruhen zu lassen.</p>
+               </div>
+               <div type="top" xml:id="krp-0117_top08">
+                  <head>
+                     <label>
+                        <num n="8">8.</num>
+                        <seg>Zuschuss zur Kostaufbesserung für die Volkswehr.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Deutsch</hi> bringt in Erinnerung, dass der Kabinettsrat am 12. September 1919 beschlossen habe, es sei in jenen Standorten, wo erhobenermaßen seit dem mit Kabinettsratsbeschlüssen vom 13. Mai und 17. Juni 1919 für die Volkswehr ab 1. Mai bzw. 1. Juni 1919 bewilligten Zuschusse zur Kostaufbesserung die Lebensbedingungen sich noch mehr verschlechtert haben, eine Erhöhung dieses (seinerzeit mit 2–4 K festgesetzten) Zuschusses um 25 % für die Monate September und Oktober 1919 zur Auszahlung zu bringen.</p>
+                  <p>
+                     <pb facs="krp-0117_r-0021"/>Da sich seither die Verhältnisse nicht gebessert haben, bitte Redner um die Ermächtigung, den Zuschuss von 2–4 K zur Kostaufbesserung samt der 25 % Erhöhung im Rahmen des bisherigen Gesamtkredites von 4.430.000 K auch weiterhin bis Ende Dezember l. J. auszahlen zu dürfen.</p>
+                  <p>Der Kabinettsrat erteilt die erbetene Ermächtigung.</p>
+               </div>
+               <div type="top" xml:id="krp-0117_top09">
+                  <head>
+                     <label>
+                        <num n="9">9.</num>
+                        <seg>Rückübernahme enthobener deutscher Bediensteter durch die tschechoslowakische Staatsbahnverwaltung.</seg>
+                     </label>
+                  </head>
+                  <p>Einer Mitteilung des Staatssekretärs <hi rend="#letterspaced">Paul</hi> zufolge stehe das Eisenbahnministerium in Prag mit den Organisationen der deutschen Staatsbahnbediensteten im Gebiete der tschechoslowakischen Republik wegen Rückübernahme enthobener deutscher Bediensteter in der Absicht in Unterhandlung, die enthobenen Staatsbahnbediensteten, die in der Tschechoslowakei heimatsberechtigt sind und zur Zeit des Umsturzes bei einer dortigen Dienstesstelle in Verwendung standen, unter der Voraussetzung rückzuübernehmen, dass nicht besondere Gründe gegen die Rückübernahme Einzelner vorliegen. <pb facs="krp-0117_r-0022"/>Am 13. Oktober d. J. hätte weiters der Obmann des Brünner Vollzugsausschusses der enthobenen deutschen Staatsbahnbediensteten dem Staatsamte für Verkehrswesen mitgeteilt, dass an die Staatsbahndirektion Brünn ein Erlass des Prager Eisenbahnministeriums gelangt sei, demzufolge die im Gebiete der tschechoslowakischen Republik noch befindlichen enthobenen deutschen Bediensteten aufzufordern seien, um ihre Rückübernahme anzusuchen. Über die Gesuche werde individuell entschieden werden.</p>
+                  <p>Mit Rücksicht darauf, dass auf die Verringerung der nach Deutschösterreich einwandernden enthobenen Bediensteten nicht nur aus völkischen Rücksichten, sondern auch wegen der so wünschenswerten Entlastung gewisser Personalstände das größte Gewicht gelegt werden müsse, beantragt der sprechende Staatssekretär, der Kabinettsrat wolle folgenden Beschluss fassen:</p>
+                  <p>Da nach den Kabinettsratsbeschlüssen vom 23. November 1918 nur solche enthobene deutsche Staatsbahnbedienstete für eine provisorische Übernahme in Deutschösterreich in Betracht <pb facs="krp-0117_r-0023"/>kommen, die zum Verlassen des Dienstes in den Nationalstaaten gezwungen wurden, können solche Bedienstete, die ohne zwingende Gründe nicht jede Möglichkeit zum Verbleiben im Dienste, wozu auch das Ansuchen um Rückübernahme zählt, ausgenützt haben, eine provisorische Übernahme in Deutschösterreich nicht erwarten.</p>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> pflichtet diesem Antrage bei, hält jedoch dafür, dass es angezeigt sein dürfte, sich in dieser Frage auch noch mit den Eisenbahnorganisationen unmittelbar in Verbindung zu setzen. Auch die Erörterung der Sachlage in den Fachblättern erscheine ihm wünschenswert.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Reisch</hi> schließt sich der Anschauung des Referenten vollinhaltlich an und stellt den Zusatzantrag, dass dieser Standpunkt auch auf alle anderen, ehemals österreichischen Staatsbediensteten deutscher Nationalität anzuwenden wäre.</p>
+                  <p>Der Kabinettsrat erhebt den Antrag des Staatssekretär[s] für Verkehrswesen sowie den Zusatzantrag des Staatssekretär[s] für Finanzen zum Beschluss.</p>
+                  <p>
+                     <pb facs="krp-0117_r-0024"/>
+                  </p>
+               </div>
+               <div type="top" xml:id="krp-0117_top10">
+                  <head>
+                     <label>
+                        <num n="10">10.</num>
+                        <seg>Bereitstellung der erforderlichen Bedeckung für die Beteilung bedürftiger Kriegsbeschädigter, Kriegerwitwen und -waisen mit Naturalien.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Hanusch</hi> weist darauf hin, dass aufgrund des Kabinettsratsbeschlusses vom 15. April l. J., mit welchem zur Ermöglichung der Unterstützung bedürftiger Kriegsbeschädigter und der Erhöhung der Krankenlöhnung die Bereitstellung der notwendigen Bedeckung grundsätzlich beschlossen wurde, 2 Millionen K dazu bestimmt worden seien, um bis zu dem Zeitpunkte, in welchem die Rentenzahlung nach dem Invalidenentschädigungsgesetze fühlbar einsetzen würde, den Kriegsbeschädigten Unterstützungen hauptsächlich in Naturalien zu gewähren.</p>
+                  <p>Mit diesen Mitteln seien zwei Aktionen zur Beteilung von Kriegsbeschädigten mit Lebensmitteln in die Wege geleitet worden, die vom Zentralverbande der deutschösterreichischen Kriegsbeschädigten in der Zeit von Mitte Mai bis Ende Juni und Mitte Juli bis Ende August durchgeführt wurden. Eine dritte Aktion habe wegen Erschöpfung der Mittel nicht in Angriff genommen werden können.</p>
+                  <p>Der Beginn der rauen Jahreszeit und die stets steigenden Schwierig<pb facs="krp-0117_r-0025"/>keiten in der Lebensmittelversorgung sowie der Umstand, dass die Durchführung des Invalidenentschädigungsgesetzes sich trotz aller Beschleunigung länger als angenommen verzögere, machen es unerlässlich, die Lebensmittelbeteilung wieder aufzunehmen und noch einige Zeit fortzusetzen, um eine nicht unbedenkliche Beunruhigung der Invalidenschaft zu vermeiden.</p>
+                  <p>Im Einvernehmen mit dem Staatssekretär für Finanzen stelle der sprechende Staatssekretär daher den Antrag, der Kabinettsrat wolle die Bereitstellung des Betrages von 1 Million K zur Beteilung bedürftiger Kriegsbeschädigter, Kriegerwitwen und -waisen mit Naturalien grundsätzlich beschließen.</p>
+                  <p>Der Kabinettsrat erhebt diesen Antrag zum Beschluss.</p>
+                  <p/>
+               </div>
+            </div>
+            <div type="anhaenge">
+               <p>
+                  <pb facs="krp-0117_a01-0001"/>Streng vertraulicher Anhang zum Kabinettsprotokoll Nr. 117 vom 24. Oktober 1919.</p>
+               <div n="1">
+                  <head>Reassumierung des Kabinettsratsbeschlusses vom 21. Okt[ober] d. J., betreffend die Beteiligung des Staates an dem Gesellschaftskapital der [Oesterreichischen-]Alpine Montangesellschaft.</head>
+                  <div type="a01_protokoll">
+                     <p>Der <hi rend="#letterspaced">Vorsitzende</hi> stellt zur Erwägung, den Beschluss des Kabinettsrates vom 21. d. M. über die Nichtinanspruchnahme der neu zu emittierenden Alpine-Montan-Aktien durch den Staat zu reassumieren, da es nach seiner Anschauung doch nicht außerhalb der Interessensphäre des Staates gelegen sei, sich an dem Gesellschaftskapital des erwähnten Unternehmens zu beteiligen.</p>
+                     <p>Der Präsident der Sozialisierungskommission Dr. <hi rend="#letterspaced">Ellenbogen</hi> begrüßt diesen Antrag auf das Wärmste und teilt mit, dass nach ihm zugekommenen Informationen der italienische Besitz an den gedachten Unternehmen bereits 240.000 Stück Aktien umfasse, so dass es ihm geradezu als Pflicht des Staates erscheine, sich ein Einflussrecht auf die Verwaltung mit allen Mitteln zu sichern. Dazu komme noch, dass aufgrund von jüngst abgeführten Verhandlungen mit der Gesell<pb facs="krp-0117_a01-0002"/>schaft Aussicht vorhanden sei, den Übernahmspreis der Aktien auf einen wesentlich geringeren Kurs herab drücken zu können. Dieser Aufkauf würde nicht unter dem Gesichtspunkte der Sozialisierung erfolgen, weil dadurch das ausländische Kapital ungünstig beeinflusst werden könnte.</p>
+                     <p>Staatssekretär Ing. <hi rend="#letterspaced">Zerdik</hi> spricht sich gleichfalls für die Erwerbung der neu emittierten Aktien durch den Staat aus.</p>
+                     <p>Staatssekretär Dr. <hi rend="#letterspaced">Reisch</hi> macht auf die großen Schwierigkeiten, die sich diesem Projekte entgegenstellen würden, aufmerksam. Es würde die Aktion im Auslande als ein Bestreben nach Sozialisierung gewertet werden, was den ungünstigsten Einfluss auf unseren Kredit ausüben würde. Dazu komme, dass die zu emittierende Zahl von Aktien einen viel zu geringen Posten darstelle, um dem Staate einen wirksamen Einfluss auf das Unternehmen zu sichern. Auch hätte die Generalversammlung bereits den gesellschaftlichen Funktionären ein Vorzugsrecht auf den Bezug der jungen Aktien eingeräumt. Es müsste daher, soferne man nicht die Bestimmung des § 37 des Gesetzes über die gemeinwirtschaftlichen Unternehmungen heranziehe, die Generalversammlung zu einer Umstoßung ihres schon gefassten Beschlus<pb facs="krp-0117_a01-0003"/>ses veranlasst werden. Dies würde aber ein berechtigtes Aufsehen hervorrufen und wäre im Endergebnisse im Voraus auch gar nicht überblickbar. Ein anderer Weg zur Erreichung dieses Zieles erschiene dem sprechenden Staatssekretär praktikabler; er denke hiebei an ein Syndikat von Banken, welches die Aktien für den Staat aufzukaufen hätte. Doch verhehle er sich nicht, dass auch diese Lösung nicht unbedenklich sei.</p>
+                     <p>Der Präsident der Sozialisierungskommission Dr. <hi rend="#letterspaced">Ellenbogen</hi> erwidert hierauf, dass die Notwendigkeit, eine neue Generalversammlung einzuberufen, seiner Ansicht nach nicht bestehe. Im Übrigen habe die [Niederösterreichische] Escompte-Gesellschaft, die das größte Aktienpaket besitze, dasselbe Interesse wie der Staat; auch sie müsse sich gegen den italienischen Einflusse in der Verwaltung wehren. Es sei also die Tatsache nicht ungünstig, dass Staat und die genannte Bank dieselben Interessen verfolgen.</p>
+                     <p>In gleicher Weise spricht sich auch Unterstaatssekretär Dr. <hi rend="#letterspaced">Eisler</hi> nach Darstellung der juristischen Sachlage für den Antrag Dr. Ellenbogens aus.</p>
+                     <p>Staatssekretär Dr. <hi rend="#letterspaced">Reisch</hi> erklärt sich schließlich bereit, dieser Aktion unter der Bedingung zuzustimmen, dass dadurch kein Präjudiz für eine Wiederholung des Vorganges bei <pb facs="krp-0117_a01-0004"/>einer in absehbarer Zeit zu gewärtigenden neuerlichen Kapitalserhöhung geschaffen werde.</p>
+                     <p>Nachdem Staatskanzler Dr. <hi rend="#letterspaced">Renner</hi> noch den Antrag des Unterstaatssekretärs Dr. Ellenbogen wärmstens unterstützt hatte, gelangt der Kabinettsrat zur Entscheidung, den in der letzten Kabinettsratssitzung gefassten Beschluss zu reassumieren und das Staatsamt für Finanzen zu beauftragen, einvernehmlich mit der Staatskommission für Sozialisierung und dem Staatsamte für Handel und Gewerbe, Industrie und Bauten diese Angelegenheit weiter zu verfolgen.</p>
+                     <p/>
+                  </div>
+               </div>
+            </div>
+            <div type="stenogramme">
+               <div n="1">
+                  <head>EINZUFÜGEN</head>
+                  <p>Transkription in Arbeit.</p>
+                  <p/>
+               </div>
+               <div n="2">
+                  <head>EINZUFÜGEN</head>
+                  <p>Transkription in Arbeit.	</p>
+               </div>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

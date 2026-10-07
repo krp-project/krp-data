@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href='http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:acdh="https://vocabs.acdh.oeaw.ac.at/schema#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xml:lang="de">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="a" type="main" n="0077">Kabinettsprotokoll Nr. 77 vom 6. Juni 1919</title>
+            <title level="m" type="main" n="01">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <title level="m" type="sub" n="">Renner II (15. März – 17. Oktober 1919)</title>
+            <meeting>
+               <placeName key="https://d-nb.info/gnd/4066009-6">Wien</placeName>
+               <orgName key="https://d-nb.info/gnd/5162749-8">Kabinettsrat</orgName>
+               <date when-iso="1919-06-06"/>
+            </meeting>
+            <editor>
+               <persName key="https://d-nb.info/gnd/122481836"
+                         role="hasCreator"
+                         xml:id="hwohnout">
+                  <forename>Helmut</forename>
+                  <surname>Wohnout</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</affiliation>
+               <idno type="ORCID">0000-0002-3864-9839</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/120789825"
+                         role="hasCreator"
+                         xml:id="tolechowski">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0003-3291-6876</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/131679384"
+                         role="hasCreator"
+                         xml:id="rlein">
+                  <forename>Richard</forename>
+                  <surname>Lein</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0002-7502-0503</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="aholzer">
+                  <forename>Anna</forename>
+                  <surname>Holzer</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0005-3560-3500</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="dsoelkner">
+                  <forename>Dominik</forename>
+                  <surname>Sölkner</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-9895-7212</idno>
+            </editor>
+            <editor>
+               <persName role="hasContributor" xml:id="ischotzko">
+                  <forename>Ina</forename>
+                  <surname>Schotzko</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-5210-3713</idno>
+            </editor>
+            <funder n="1">
+               <orgName key="https://d-nb.info/gnd/2054142-9" role="hasFunder">Österreichischer Wissenschaftsfonds FWF</orgName>
+               <idno type="project">PAT1495024</idno>
+               <title type="project">Die Protokolle des österreichischen Kabinettsrates 1919–1920</title>
+            </funder>
+            <respStmt>
+               <resp>Projektverantwortung</resp>
+               <orgName key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Projektleitung</resp>
+               <persName key="https://d-nb.info/gnd/120789825" role="hasPrincipalInvestigator">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+                  <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+                  <idno type="ORCID">0000-0003-3291-6876</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Nationaler Forschungspartner</resp>
+               <orgName key="https://d-nb.info/gnd/1123037736" role="hasEnabler">Austrian Centre for Digital Humanities</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Digitalisierung der gedruckten Quellen</resp>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>TEI-Datenmodellierung</resp>
+               <persName role="hasContributor" xml:id="tfruehwirth">
+                  <forename>Timo</forename>
+                  <surname>Frühwirth</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-3997-5193</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technische Supervision</resp>
+               <persName key="https://d-nb.info/gnd/1043833846"
+                         role="hasContributor"
+                         xml:id="pandorfer">
+                  <forename>Peter</forename>
+                  <surname>Andorfer</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-9575-9372</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technisches Consulting und Vorbereitung der Druckausgabe</resp>
+               <persName key="https://d-nb.info/gnd/13281899X"
+                         role="hasContributor"
+                         xml:id="skurz">
+                  <forename>Stephan</forename>
+                  <surname>Kurz</surname>
+                  <affiliation key="https://d-nb.info/gnd/1202798799">Institut für die Erforschung der Habsburgermonarchie und des Balkanraumes</affiliation>
+                  <idno type="ORCID">0000-0003-2546-2570</idno>
+               </persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher key="https://d-nb.info/gnd/1001454-8">Österreichische Akademie der Wissenschaften</publisher>
+            <date when="2028"/>
+            <availability status="free">
+               <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">Lizenziert unter CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/deed.de)</licence>
+            </availability>
+            <idno type="ISBN_Print"/>
+            <idno type="ISBN_Part_epub"/>
+            <idno type="ISBN_Digital"/>
+            <idno type="DOI"/>
+            <idno type="DOI_zenodo"/>
+            <idno type="ebook_ID"/>
+         </publicationStmt>
+         <seriesStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="m" type="main">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <respStmt>
+               <resp>Bearbeitung und Herausgeberschaft</resp>
+               <orgName key="https://d-nb.info/gnd/2024703-5">Universität Wien</orgName>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+         </seriesStmt>
+         <notesStmt>
+            <note>Diese TEI-XML-Datei ist Grundlage für eine Druckausgabe der Edition.</note>
+            <relatedItem>
+               <biblStruct>
+                  <monogr>
+                     <imprint>
+                        <pubPlace key="https://d-nb.info/gnd/4066009-6">Wien</pubPlace>
+                        <publisher key="https://d-nb.info/gnd/2068748-5">Verlag der Österreichischen Akademie der Wissenschaften</publisher>
+                        <date when="2029"/>
+                     </imprint>
+                     <extent/>
+                  </monogr>
+                  <note>
+                     <idno/>
+                     <ptr/>
+                  </note>
+                  <citedRange/>
+               </biblStruct>
+            </relatedItem>
+         </notesStmt>
+         <sourceDesc>
+            <bibl>Quellbestand: AT-OeStA/AdR MRang MR 1Rep KRP Kabinettsratsprotokolle, 1918-1920 (Teilbestand)<ref target="https://www.archivinformationssystem.at/detail.aspx?id=5465">https://www.archivinformationssystem.at/detail.aspx?id=5465</ref>
+            </bibl>
+            <msDesc>
+               <msIdentifier>
+                  <institution key="https://d-nb.info/gnd/37748-X" role="hasOwner">AT-OeStA Österreichisches Staatsarchiv (Archiv (ÖStA))</institution>
+                  <repository key="https://d-nb.info/gnd/1601181-8">AT-OeStA/AdR Archiv der Republik, 1918- (Abteilung)</repository>
+                  <collection>AT-OeStA/AdR MRang MR 1Rep Ministerrat 1. Republik, 1918 - 1938 (Bestand)</collection>
+                  <idno>AT-OeStA_AdR-MRang-MR-1.-Rep.-KRP-077</idno>
+               </msIdentifier>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <abstract>
+            <p>
+          <!--to be generated-->
+        </p>
+         </abstract>
+      </profileDesc>
+      <encodingDesc>
+         <styleDefDecl scheme="css"/>
+         <tagsDecl>
+            <rendition xml:id="b" scheme="css">font-weight:bold;</rendition>
+            <rendition xml:id="su" scheme="css">vertical-align:super;font-size:.7em;</rendition>
+            <rendition xml:id="s" scheme="css">text-decoration:line-through;</rendition>
+            <rendition xml:id="u" scheme="css">text-decoration:underline;</rendition>
+            <rendition xml:id="ow" scheme="css">text-decoration:line-through;text-decoration-style:double;</rendition>
+            <rendition xml:id="r" scheme="css">display:block;text-align:right;</rendition>
+            <rendition xml:id="letterspaced" scheme="css">letter-spacing:0.15em;</rendition>
+            <rendition xml:id="i" scheme="css">font-style:italic;</rendition>
+         </tagsDecl>
+         <editorialDecl>
+            <hyphenation>
+               <p>
+            <!--to be added-->
+          </p>
+            </hyphenation>
+            <correction>
+               <p>
+            <!--to be added-->
+          </p>
+            </correction>
+            <normalization>
+               <p>
+            <!--to be added-->
+          </p>
+            </normalization>
+            <punctuation>
+               <p>
+            <!--to be added-->
+          </p>
+            </punctuation>
+            <stdVals>
+               <p>
+            <!--to be added-->
+          </p>
+            </stdVals>
+            <p>
+          <!--to be added-->
+        </p>
+         </editorialDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#tfruehwirth" when-iso="2026-10-07">TEIGarage output upconverted with upconvert.xsl</change>
+         <change who="#tfruehwirth" when-iso="2026-10-07">TEI header populated with generate_tei_templates.py</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface/>
+   </facsimile>
+   <text>
+      <body>
+         <div xml:id="doc-krp-0077.xml">
+            <head type="dokument">
+               <title type="num">77.<note type="footnote">Das Protokoll trägt den Vermerk <hi rend="#i">Vertraulich!</hi>
+                  </note>
+               </title>
+               <title type="desc">
+                  <pb facs="krp-0077_r-0001"/>
+                  <pb facs="krp-0077_r-0002"/>[Dienstag] 1919-06-06</title>
+            </head>
+            <div type="dokumentkopf">
+               <div type="vorsitz">
+                  <head>Vorsitz:</head>
+                  <p>Fink</p>
+               </div>
+               <div type="anwesend">
+                  <head>Anwesend:</head>
+                  <p>Bauer, Bratusch, Eldersch, Ellenbogen, Hanusch, Loewenfeld-Russ, Miklas, Paul, Resch, Schumpeter, Stöckler, Tandler, Waiss, Zerdik</p>
+               </div>
+               <div type="zugezogen">
+                  <head>Zugezogen:</head>
+                  <p>Grimm, Kaltenbrunner, Kralowsky, Wilfling</p>
+               </div>
+               <div type="schriftfuehrer">
+                  <head>Schriftführer:</head>
+                  <p>unbekannt</p>
+               </div>
+               <div type="dauer">
+                  <head>Dauer:</head>
+                  <p>16.30–19.30 Uhr</p>
+               </div>
+            </div>
+            <div type="komponenten">
+               <p>Reinschrift, Beilagen, Konzept, stenographische Mitschrift, Entwurf der Tagesordnung, diverse Zusätze</p>
+            </div>
+            <div type="beilagen">
+               <head>Beilagen:</head>
+               <list>
+                  <item>
+                     <ref target="#krp-0077_top02">Zu TOP 2</ref>: <ref target="#krp-0077_b01">Vortrag des Staatsamtes für Heereswesen über die Militärdienstpragmatik</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0077_top03">Zu TOP 3</ref>: <ref target="#krp-0077_b02">Gesetz über die Rechtsfolgen von Übertretungen der Vollzugsanweisungen über die Anmeldung und Kontrolle gewisser Vermögenschaften und die Sicherung der Vermögensabgabe</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0077_top04">Zu TOP 4</ref>: <ref target="#krp-0077_b03">Antrag des Staatsamtes für soziale Verwaltung Zl. 11.137/1919 V.G. über die Wiener Krankenanstalten hinsichtlich Anwendung des letzten Gesetzes samt Vollzugsanweisung auf das Kanzleihilfspersonal bzw. auf die Fondsangestellten</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0077_top05">Zu TOP 5</ref>: <ref target="#krp-0077_b04">Bericht des Staatsamtes für Handel und Gewerbe, Industrie und Bauten über den Stand der Ratifikation des Handelsabkommens mit der tschechoslowakischen Republik vom 12. März 1919</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0077_top06">Zu TOP 6</ref>: <ref target="#krp-0077_b05">Vortrag des Staatsamtes für Verkehrswesen Zl. 16.772 über die Bereitstellung eines Kredits von 2 Millionen K für die Fortführung des Bahnbaues Landeck – Pfunds</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0077_top07">Zu TOP 7</ref>: <ref target="#krp-0077_b06">Gesetzesentwurf für die 4. Novelle zum Krankenversicherungsgesetz samt Begründung</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0077_top08">Zu TOP 8</ref>: <ref target="#krp-0077_b07">Vortrag des Staatsamtes für Inneres und Unterricht Zl. 19.615 über den Gesetzesbeschluss der Landesversammlung Oberösterreichs über der Vereinigung der politischen Ortsgemeinde Urfahr mit der Landeshauptstadt Linz</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0077_top09">Zu TOP 9</ref>: <ref target="#krp-0077_b08">Regierungsvorlage eines Gesetzes, mit welchem Maßnahmen für den Zivilstaatsdienst aus Anlass des Krieges getroffen werden</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0077_top10">Zu TOP 10</ref>: <ref target="#krp-0077_b09">Auszug für den Vortrag über einen Gesetzesentwurf der Provisorischen Landesversammlung Salzburg für das Gemeindestatut der Landeshauptstadt Salzburg</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0077_top11">Zu TOP 11</ref>: <ref target="#krp-0077_b10">Antrag des Direktoriums der WEWA auf Vorbereitung der Anlage von Wasserbüchern</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0077_top12">Zu TOP 12</ref>: <ref target="#krp-0077_b11">Auszug für den Vortrag über den Gesetzesbeschluss der Tiroler Landesversammlung über eine neue Gemeindewahlordnung für Innsbruck</ref>
+                  </item>
+               </list>
+            </div>
+            <div type="protokoll">
+               <pb facs="krp-0077_r-0003"/>
+               <div type="top" xml:id="krp-0077_top01">
+                  <head>
+                     <label>
+                        <num n="1">1.</num>
+                        <seg>Beitritt der Staatsregierung zu mehreren von der Nationalversammlung beschlossenen Gesetzen.</seg>
+                     </label>
+                  </head>
+                  <p>Über Antrag des <hi rend="#letterspaced">Vorsitzenden</hi> findet der Kabinettsrat gegen nachstehende, von der Nationalversammlung beschlossene Gesetze keine Vorstellung zu erheben:</p>
+                  <list>
+                     <item n="1">
+                        <label>1.)</label> Gesetz über die Erhöhung der Wertgrenzen im bürgerlichen Streitverfahren (Streitwertnovelle);</item>
+                     <item n="2">
+                        <label>2.)</label> Gesetz über das Verfahren bei der Enteignung von Wirtschaftsbetrieben;</item>
+                     <item n="3">
+                        <label>3.)</label> Gesetz über die Außerkraftsetzung des Gesetzes vom 22. November 1918, StGBl. Nr. 36, über die Verwendbarkeit der von der Salzburger Landesversammlung auszugebenden Teilschuldverschreibungen zur fruchtbringenden Anlegung von Stiftungs-, Pupillar- und ähnlichen Kapitalien;</item>
+                  </list>
+                  <p>
+                     <pb facs="krp-0077_r-0004"/>
+                  </p>
+                  <list>
+                     <item n="1">
+                        <label>4.)</label> Gesetz über die Errichtung und Unterbringung von Volkspflegestätten;</item>
+                     <item n="2">
+                        <label>5.)</label> Gesetz über die Wiederbesiedelung gelegter Bauerngüter und Häusleranwesen (Wiederbesiedelungsgesetz).</item>
+                  </list>
+                  <p>Die Gesetzesbeschlüsse sind daher von den zuständigen Mitgliedern der Staatsregierung gegenzuzeichnen und dem Präsidenten zur Fertigung vorzulegen.</p>
+               </div>
+               <div type="top" xml:id="krp-0077_top02">
+                  <head>
+                     <label>
+                        <num n="2">2.</num>
+                        <seg>Anwendungsbereich der Militärdienstpragmatik.</seg>
+                     </label>
+                  </head>
+                  <p>Ministerialrat Dr. <hi rend="#letterspaced">Kralowsky</hi> verweist einleitend darauf, dass der Kabinettsrat in seiner Sitzung am 29. April l. J. das Staatsamt für Heer[es]wesen beauftragt habe, den Entwurf eines Gesetzes über eine Dienstpragmatik für die Berufsmilitärpersonen auszuarbeiten.</p>
+                  <p>In Ausführung dieses Kabinettsratsbeschlusses habe das Staatsamt für Heer[es]wesen einen „Gesetzentwurf, betreffend vorläufige Bestimmungen über das Dienstverhältnis der Berufsmilitärpersonen (Militärdienstpragmatik)" verfasst, über den nunmehr im „Zwischenstaatsamtlichen Komitee in Beamtenangelegenheiten“ Verhandlungen gepflogen werden. Der Vertreter des Staatsamtes für Finanzen in diesem Komitee sei <pb facs="krp-0077_r-0005"/>nun der grundsätzlichen Auffassung, dass sich die Bestimmungen dieser Militärdienstpragmatik nur auf Berufsmilitärpersonen beziehen können, die in die bewaffnete Macht Deutschösterreichs aufgenommen worden sind. Allenfalls würde er zustimmen, dass auch Berufsmilitärpersonen der Dienstpragmatik unterstellt werden, die bei der deutschösterreichischen Wehrmacht in Verwendung stehen.</p>
+                  <p>Diese Beschränkung des Kreises der Militärpersonen, für welche die Militärdienstpragmatik Geltung haben soll, sei aber vom Standpunkte des Staatsamtes für Heer[es]wesen nicht annehmbar, zumal hienach alle Berufsmilitärpersonen, die sich in Kriegsgefangenschaft befinden, oder sonst an der Rückkehr aus dem Auslande behindert sind, ausgeschlossen blieben und auch die im Liquidierungsdienste beschäftigten Berufsmilitärs außerhalb des Rahmens der Dienstpragmatik fallen würden, obwohl die Einteilung zu einer liquidierenden Stelle wie jede andere Kommandierung auf einer dem Willen des Einzelnen entrückten Verfügung des Staatsamtes für Heer[es]wesen begründet sei. Zur Unmöglichkeit werde aber <pb facs="krp-0077_r-0006"/>die Annahme des besprochenen Vorschlages dadurch, dass die vorläufige Anstellung der Berufsmilitärpersonen, die derzeit für Zwecke der deutschösterreichischen Wehrmacht verwendet werden, keineswegs aufgrund einer Auswahl erfolgte. Eine solche Sichtung, wie sie bei den anderen Staatsämtern unterstellten Personale vorgenommen wurde, habe eben beim Staatsamte für Heer[es]wesen im Zeitpunkte des Umsturzes nicht durchgeführt werden können. Demgemäß unterbreite der Referent dem Kabinettsrate folgenden Alternativantrag:</p>
+                  <p>„Die gleiche Behandlung der im Liquidierungsdienste verwendeten und der in Kriegsgefangenschaft befindlichen Berufsmilitärs einerseits mit den in Diensten, der deutschösterreichischen Wehrmacht Stehenden andererseits bedingt notwendigerweise, dass alle aktiven Berufsmilitärpersonen deutschösterreichischer Staatsbürgerschaft und deutscher Nationalität vorläufig in die deutschösterreichische Wehrmacht übernommen und der Militärdienstpragmatik unterstellt werden. Doch wäre im Gesetze ausdrücklich hervorzuheben, dass <pb facs="krp-0077_r-0007"/>diese Übernahme keine endgiltige ist und weiters zum Zwecke des Abbaues im Berufsmilitärstande der Heeresverwaltung besondere Ausscheidungsmaßregeln vorbehalten bleiben. In diesem Belange aber sieht schon § 3 des Entwurfes zum Militärpensionsgesetz Versetzungen in den Ruhestand von Amtswegen ohne die hiefür sonst geltenden Bedingungen vor. Schließlich müssten auch die bereits besprochenen Bestimmungen Aufnahme finden, die eine ungünstige Einflussnahme auf die Auseinandersetzung mit den anderen Nationalstaaten hintanhalten sollen.</p>
+                  <p>Erst in zweiter Linie käme der Vorschlag in Betracht, wonach die Militärdienstpragmatik nur auf die für Zwecke der deutschösterreichischen Wehrmacht verwendeten Personen Geltung haben soll, dass aber ausgewählte Teile dieser Militärdienstpragmatik –  insbesondere die Bestimmungen, welche die Zeitvorrückung, die Einrechnung der Überdienstzeit und die begünstigte Anrechnung der Kriegshalbjahre behandeln – auf alle Berufsmilitärpersonen deutschösterreichischer Staatsbürgerschaft und deutscher Nationalität anzuwenden sind, die gegenwärtig dem Aktivstande angehören oder nach dem <pb facs="krp-0077_r-0008"/>1. November 1918 infolge der Standesverringerung imperativ in den Ruhestand versetzt worden sind.“</p>
+                  <p>Hierüber entwickelte sich eine sehr eingehende Debatte, an welcher sich die Staatssekretäre Dr. <hi rend="#letterspaced">Schumpeter</hi> und Dr. <hi rend="#letterspaced">Bauer</hi> sowie die Unterstaatssekretäre <hi rend="#letterspaced">Miklas</hi> und Dr. <hi rend="#letterspaced">Ellenbogen</hi>, endlich Sektionsrat Dr. <hi rend="#letterspaced">Wilfling</hi> beteiligten, wobei auf die besondere Schwierigkeit, ja Unmöglichkeit der Erweiterung des Geltungsbereiches der Gesetzesvorlage im Sinne des Referentenantrages hingewiesen wurde. Staatssekretär Dr. <hi rend="#letterspaced">Bauer</hi> stellte schließlich den Antrag, den Geltungsbereich dieses Gesetzes lediglich auf die bei der deutschösterreichischen Wehrmacht in Verwendung stehenden Militärgagisten einzuschränken; bezüglich der Gleichstellung der bei den liquidierenden Stellen beschäftigten Berufsmilitärpersonen mit den in deutschösterreichischen Diensten stehenden Gagisten wären entsprechende Anträge bei der Internationalen Liquidierungskommission einzubringen.</p>
+                  <p>Bevor dieser Antrag zur Abstimmung gelangt, ersucht Unterstaatsekre<pb facs="krp-0077_r-0009"/>tär Dr. <hi rend="#letterspaced">Waiss</hi> um vorläufige Zurückstellung des Beratungsgegenstandes.</p>
+                  <p>Diesem Ansuchen stattgebend, vertagt sohin der Kabinettsrat seine diesfällige Beschlussfassung.</p>
+               </div>
+               <div type="top" xml:id="krp-0077_top03">
+                  <head>
+                     <label>
+                        <num n="3">3.</num>
+                        <seg>Gesetz, betreffend die Rechtsfolgen von Übertretungen der Vollzugsanweisungen über die Anmeldung und Kontrolle gewisser Vermögenschaften und die Sicherung der Vermögensabgabe.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Schumpeter</hi> erbittet und erhält vom Kabinettsrate die Ermächtigung, in der Nationalversammlung den Entwurf eines Gesetzes, betreffend die Rechtsfolgen von Übertretungen der Vollzugsanweisungen über die Anmeldung und Kontrolle gewisser Vermögenschaften und die Sicherung der Vermögensabgabe, einbringen zu dürfen.</p>
+               </div>
+               <div type="top" xml:id="krp-0077_top04">
+                  <head>
+                     <label>
+                        <num n="4">4.</num>
+                        <seg>Wiener Krankenanstalten; Anwendung des Gesetzes vom 5. Februar 1919, StGBl. Nr. 100, betreffend das Dienstverhältnis des Kanzleihilfspersonales, dann der Vollzugsanweisung vom 26. Februar 1919, StGBl. Nr. 148 auf die Fondsangestellten.</seg>
+                     </label>
+                  </head>
+                  <p>Unterstaatssekretär Dr. <hi rend="#letterspaced">Tandler</hi> verweist darauf, dass die Angestellten der Wiener Fondskrankenanstalten öffentliche Fondsbedienstete sind, auf welche die für die Staatsbediensteten erlassenen Vorschriften nur dann Anwendung finden können, wenn dies durch einen besonderen konstitutiven Akt der Staatsverwaltung zum Ausdrucke gebracht werde. So sei die Anwendung der Bestimmungen der mit dem Gesetze vom 25. Jänner 1914, RGBl. Nr. l5, erlas<pb facs="krp-0077_r-0010"/>senen Dienstpragmatik für Staatsbeamte und Staatsdienerschaft aufgrund der kaiserlichen Entschließung vom 22. April 1914 für die Fondsbediensteten mit dem Erlasse des vormaligen Ministeriums des Innern vom 25. April 1914, Zl. 4275/MI. verfügt worden. Hiebei seien jedoch die Beamten nur in drei Kategorien eingeteilt, welche den drei ersten Beamtengruppen A), B) und C) des § 52 der Dienstpragmatik entsprechen. Eigentliche Kanzleibeamte im Sinne der Gruppe E) der Dienstpragmatik seien bisher bei den Wiener Krankenanstalten nicht vorgekommen.</p>
+                  <p>Aus Anlass der Verlautbarung des Gesetzes vom 5. Februar 1919, StGBl. Nr. 100, mit welchem das Dienstverhältnis des staatlichen Kanzleihilfspersonales teilweise neu geregelt wurde, ergebe sich nun die Notwendigkeit, eine Verfügung zu erlassen, durch welche die materielle Gleichstellung des Kanzleihilfspersonales der Wiener Krankenanstalten mit dem staatlichen Kanzleihilfspersonale auch in den Belangen dieses Gesetzes ausgesprochen wird. Diese Maßnahme sei unvermeidbar und trage angesichts der Bewegung unter den Angestellten äußerst dringlichen Charakter. Der sprechende Staatssekretär [sic!] <pb facs="krp-0077_r-0011"/>erbitte demgemäß vom Kabinettsrate die Ermächtigung, dass die Bestimmungen des Gesetzes vom 5. Februar 1919, StGBl. Nr. 100, soweit hiedurch das Dienstverhältnis der Kanzleioffizianten und Kanzleioffiziantinnen, Kanzleigehilfen und Kanzleigehilfinnen teilweise abgeändert worden ist, samt den hierauf bezughabenden Durchführungsvorschriften auch auf das Kanzleihilfspersonale der Wiener Fondskrankenanstalten sinngemäß angewendet und dass zu diesem Behufe die Vorschriften des aufgrund der kaiserlichen Entschließung vom 22. April 1914 ergangenen Erlasses des vormaligen k. k. Ministeriums des Innern vom 25. April 1914, Zl. 4275/MI. dahin ergänzt werden, dass zum Zwecke der Einreihung der zu Beamten zu ernennenden Kanzleioffizianten und Kanzleioffiziantinnen in die entsprechende Zeitvorrückungsgruppe eine eigene Kategorie IV geschaffen werde.</p>
+                  <p>Der Kabinettsrat erteilt die erbetene Ermächtigung.</p>
+               </div>
+               <div type="top" xml:id="krp-0077_top05">
+                  <head>
+                     <label>
+                        <num n="5">5.</num>
+                        <seg>Ratifikation des Warenaustauschübereinkommens mit der tschechoslowakischen Republik.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Ing. <hi rend="#letterspaced">Zerdik</hi> führt aus, dass das am 12. März 1919 mit der tschechoslowakischen Kommission <pb facs="krp-0077_r-0012"/>für Aus- und Einfuhr abgeschlossene Übereinkommen, betreffend den gegenseitigen Warenaustausch (Zuckervertrag) mit dem Kabinettsratbeschluss vom 17. März 1919 genehmigt worden sei. Die tschechoslowakische Regierung habe inzwischen am 28. April 1919 ihre diesbezügliche Genehmigung erteilt, hiebei jedoch die Änderung der Vertragsbestimmungen über die Punkte betreffend die Durchfuhr, die Rindenlieferungen aus Deutschösterreich, die Hefelieferungen, ferner die Besteuerung der liquidierenden Zentralen in Deutschösterreich, sowie einen Zusatz zum Schlussprotokolle beantragt. Über diese Abänderungsanträge hätten zwischen den Delegierten der beiden Regierungen neuerliche Verhandlungen stattgefunden, die zu einer Einigung vorbehaltlich der Genehmigung der beiderseitigen Regierungen geführt haben. Zufolge der von den berufenen Staatsämtern eingeholten Äußerungen stehe dieser Genehmigung kein Hindernis entgegen. Im Hinblicke auf die Wichtigkeit der Versorgung Deutschösterreichs mit Zucker beantrage demgemäß der sprechende Staatssekretär, der Kabinettsrat wolle dieses <pb facs="krp-0077_r-0013"/>Übereinkommen genehmigen und weiters zustimmen, dass hievon das tschechoslowakische Handelsministerium in Prag telegrafisch verständigt werde.</p>
+               </div>
+               <div type="top" xml:id="krp-0077_top06">
+                  <head>
+                     <label>
+                        <num n="6">6.</num>
+                        <seg>Bereitstellung eines Kredites von 2 Millionen K für die Fortführung des Bahnbaues Landeck – Pfunds.</seg>
+                     </label>
+                  </head>
+                  <p>Nach eingehender Darstellung der Sachlage erbittet und erhält Staatssekretär <hi rend="#letterspaced">Paul</hi> die grundsätzliche Genehmigung des Kabinettsrates zur Fortführung des Baues der Bahnlinie Landeck – Tösens; gleichzeitig weist der Kabinettsrat das Staatsamt für Finanzen an, den für die Durchführung der bezüglichen Bauarbeiten bis zum Herbst d. J. erforderlichen Kredit von 2 Millionen K dem Staatsamte für Verkehrswesen außeretatmäßig zur Verfügung zu stellen.</p>
+               </div>
+               <div type="top" xml:id="krp-0077_top07">
+                  <head>
+                     <label>
+                        <num n="7">7.</num>
+                        <seg>Gesetzentwurf, betreffend Änderungen des Krankenversicherungsgesetzes (4. Novelle zum Krankenversicherungsgesetz).</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Hanusch</hi> erbittet und erhält vom Kabinettsrate die Ermächtigung, in der Nationalversammlung einen Gesetzentwurf betreffend Änderungen des Krankenversicherungsgesetzes (4. Novelle zum Krankenversicherungsgesetz), einbringen zu dürfen.</p>
+                  <p>
+                     <pb facs="krp-0077_r-0014"/>
+                  </p>
+               </div>
+               <div type="top" xml:id="krp-0077_top08">
+                  <head>
+                     <label>
+                        <num n="8">8.</num>
+                        <seg>Gesetzesbeschluss der Landesversammlung in Oberösterreich, betreffend die Vereinigung der politischen Ortsgemeinde Urfahr mit der Landeshauptstadt Linz.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Eldersch</hi> teilt mit, dass laut eines von der Landesversammlung für Oberösterreich beschlossenen Gesetzes die Ortsgemeinde Urfahr mit der Gemeinde Linz zu einer Ortsgemeinde unter dem gemeinschaftlichen Namen Linz vereinigt werden soll. Der Entwurf sei ähnlichen Gesetzen über die Erweiterung des Gemeindegebietes von Wien u. dgl. nachgebildet und gebe zu einer Einwendung keinen Anlass.</p>
+                  <p>Im Hinblick darauf, dass seitens der Landesregierung in Linz auf die sofortige Verlautbarung dieses Gesetzes der größte Wert gelegt worden sei, habe der sprechende Staatssekretär in der Annahme des Beitrittes der Staatsregierung zu der Gesetzesvorlage der Landesregierung telefonisch bereits mitteilen lassen, dass eine Vorstellung gegen den Gesetzesbeschluss nicht erhoben und der sofortigen Kundmachung des Landesgesetzes zugestimmt werde.</p>
+                  <p>Der Kabinettsrat genehmigt diese Verfügung des sprechenden Staatssekretärs.</p>
+                  <p>
+                     <pb facs="krp-0077_r-0015"/>
+                  </p>
+               </div>
+               <div type="top" xml:id="krp-0077_top09">
+                  <head>
+                     <label>
+                        <num n="9">9.</num>
+                        <seg>Gesetzentwurf, mit welchem Maßnahmen für den Zivilstaatsdienst aus Anlass des Krieges getroffen werden.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Eldersch erbittet und erhält vom Kabinettsrate die Ermächtigung, in der Nationalversammlung einen Gesetzentwurf, mit welchem Maßnahmen für den Zivilstaatsdienst aus Anlass des Krieges getroffen werden, einbringen zu dürfen.</p>
+                  <p>Einem Antrage des Vertreters des Staatsamtes für Heer[es]wesen, Ministerialrates Dr. <hi rend="#letterspaced">Kralowsky</hi>, auf Ergänzung der vorliegenden Gesetzesvorlage durch Aufnahme entsprechender Bestimmungen über Wahrung erworbener Rechte der Zertifikatisten pflichtet der Kabinettsrat unter Hinweis darauf nicht bei, dass die Zertifikatistenfrage in einem eigenen Gesetze zur Lösung zu gelangen haben werde.</p>
+                  <p>Angesichts der Berufung des Referenten auf Verhandlungen, die im Zwischenstaatsamtlichen Komitee für Beamtenangelegenheiten über diesen seinen Zusatzantrag abgeführt worden seien, beschließt der Kabinettsrat auf Anregung des Sektionschefs Dr. <hi rend="#letterspaced">Grimm</hi>, es sei das Komitee durch die Staatskanzlei einzuladen, wichtigere Beschlüsse, die im Kabinettsrate zur Sprache ge<pb facs="krp-0077_r-0016"/>bracht werden sollen, vorher allen beteiligten Staatsämtern behufs Ermöglichung einer Stellungnahme zur Kenntnis zu bringen.</p>
+               </div>
+               <div type="top" xml:id="krp-0077_top10">
+                  <head>
+                     <label>
+                        <num n="10">10.</num>
+                        <seg>Gesetzesbeschluss der Provisorischen Landesversammlung in Salzburg, betreffend die Abänderung mehrerer Bestimmungen des Gemeindestatutes für die Landeshauptstadt Salzburg.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Eldersch</hi> teilt mit, dass die Staatsregierung gegen einen von der Provisorischen Landesversammlung in Salzburg beschlossenen Entwurf eines Gesetzes, womit mehrere Bestimmungen des Gemeindestatutes für die Landeshauptstadt Salzburg vom 8. Dezember 1869, LGBl. Nr. 41, abgeändert werden, seinerzeit Vorstellung erhoben habe, weil in diesem Gesetzentwurf eine Verpflichtung des Staates zur Entschädigung der Gemeinde für die Besorgung der Geschäfte des übertragenen Wirkungskreises festgelegt worden sei. Nunmehr habe der Landesrat aufgrund besonderer Ermächtigung der Landesversammlung den Wünschen der Staatsregierung durch Streichung dieser Bestimmung Rechnung getragen.</p>
+                  <p>Über Antrag des sprechenden Staatssekretärs beschließt der Kabinettsrat, dass gegen den bezogenen Gesetzentwurf nunmehr eine Vorstellung nicht zu erheben und der sofortigen Verlautbarung des Landesgesetzes zuzustimmen ist.</p>
+                  <p>
+                     <pb facs="krp-0077_r-0017"/>
+                  </p>
+               </div>
+               <div type="top" xml:id="krp-0077_top11">
+                  <head>
+                     <label>
+                        <num n="11">11.</num>
+                        <seg>Vorbereitung der Anlage von Wasserbüchern.</seg>
+                     </label>
+                  </head>
+                  <p>Unterstaatssekretär Dr. <hi rend="#letterspaced">Ellenbogen</hi> verweist darauf, dass die Bestimmungen der geltenden Wasserrechtsgesetze über die Anlage und Führung von Wasserbüchern ihren Zweck, eine übersichtliche, die wasserwirtschaftliche Verwaltung erleichternde Darstellung der Verhältnisse zu geben, bekanntlich nicht erreicht hätte, weil der Staat niemals die hiefür erforderlichen Geldmittel zur Verfügung gestellt habe. Im Budget der vergangenen Jahre seien für diesen Zweck etwa 10.000 K vorgesehen gewesen. Dieses Versäumnis habe sich bitter gerächt. Bei den alten, aus der Vorzeit stammenden Wasserechten mangelten vielfach die zur Beurteilung des Umfanges oder Bestandes nötigen Urkunden. Mit dem Fortschreiten der wasserwirtschaftlichen Entwicklung sei die Auseinandersetzung zwischen bestehenden und entstehenden Rechten immer schwerer. Die Folge sei eine immer zunehmende Zahl von Streitigkeiten auf diesem Gebiete der Volkswirtschaft und damit eine endlose Beanspruchung des Behördenapparates. Die neuen Wasserrechtsgesetze sollen nun dem unhaltbaren Zustande ein Ende bereiten.</p>
+                  <p>Ihren Zweck aber werden diese Vorschriften nur dann erfüllen können, wenn auch die<pb facs="krp-0077_r-0018"/>nötigen Mittel und das erforderliche Personale rasch bereitgestellt werden.</p>
+                  <p>Zu diesem Behufe sollen bereits gegenwärtig gewisse Vorarbeiten eingeleitet werden. Dies würde auch die Gelegenheit bieten, einige der heute beschäftigungslosen technisch gebildeten Kräfte, die vom Staate ohnehin bezahlt oder doch unterstützt werden müssen, wirtschaftlich zweckmäßig zu verwenden. Im Interesse der Verbilligung der Verwaltung dürfe jedoch nicht daran gedacht werden, aus Anlass der Wasserbuchanlage zu einer dauernden Vermehrung der technischen Organe der politischen Verwaltung zu kommen. Durch das Hilfsmittel genauer Wasserbücher solle vielmehr die wasserwirtschaftliche Verwaltung vereinfacht und verbilligt werden. Am leichtesten und wohlfeilsten ließe sich dies etwa auf dem Wege erzielen, dass in jedem Bezirke ein Techniker mit zwei technischen Hilfsorganen unter Anleitung und Aufsicht der Staatstechniker die Anlage der Wasserbücher durchführen. Allenfalls könnte auch daran gedacht werden, die Kosten der Neuanlage durch Vorschreibung von Gebühren (Taxen) wenigstens teilweise hereinzubringen. In diesem Falle müssten der § 121, bzw. der Art.<pb facs="krp-0077_r-0019"/> V des Wasserrechtsgesetzes eine entsprechende Ergänzung finden. Die Durchführung der Aktion wäre vom Hydrographischen Zentralbüro zu übernehmen und zu überwachen.</p>
+                  <p>Nachdem Staatssekretär Ing. <hi rend="#letterspaced">Zerdik</hi> und Sektionschef Dr. <hi rend="#letterspaced">Grimm</hi> diese Anregung lebhaft begrüßt hatten, beschließt der Kabinettsrat, das Staatsamt für Finanzen einzuladen, einvernehmlich mit dem Staatsamte für Handel und Gewerbe, Industrie und Bauten sowie mit dem Staatsamte für Land- und Forstwirtschaft das im Sinne des Antrages des Unterstaatssekretärs Dr. Ellenbogen Erforderliche ohne Verzug in die Wege zu leiten.</p>
+               </div>
+               <div type="top" xml:id="krp-0077_top12">
+                  <head>
+                     <label>
+                        <num n="12">12.</num>
+                        <seg>Gesetzesbeschluss der Landesversammlung in Tirol, betreffend die Erlassung einer neuen Gemeindewahlordnung für Innsbruck.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Eldersch</hi> teilt mit, dass von der Provisorischen Landesversammlung in Tirol der Entwurf eines Gesetzes, womit eine neue Gemeindewahlordnung für Innsbruck erlassen und einzelne Bestimmungen des bisherigen Gemeindestatutes abgeändert werden, beschlossen worden sei. Dieser Gesetzentwurf sei in seinen wesentlichen Bestimmungen dem den Ländern mitgeteilten Musterentwurfe nachge<pb facs="krp-0077_r-0020"/>bildet. Der sprechende Staatssekretär beabsichtige daher gegen den Gesetzentwurf keine Vorstellung zu erheben und der sofortigen Verlautbarung des Gesetzes zuzustimmen.</p>
+                  <p>Der Kabinettsrat erteilt hiezu seine Zustimmung.</p>
+               </div>
+               <div type="top" xml:id="krp-0077_top13">
+                  <head>
+                     <label>
+                        <num n="13">13.</num>
+                        <seg>Regelung der Erholungsurlaube der Staatsbediensteten für das Jahr 1919.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Eldersch bringt zur Kenntnis, dass der Zentralangestelltenrat der deutschösterreichischen Staatsämter mittels Eingabe um Gewährung der heurigen regelmäßigen Sommerurlaube in einem Ausmaße angesucht habe, „das jenes des verflossenen Verwaltungsjahres bei jeder Dienstkategorie um mindestens eine Woche übersteigt“. </p>
+                  <p>Nach kurzer Debatte beschließt der Kabinettsrat an dem in seiner Sitzung am 20. Mai l. J. gefassten einschlägigen Beschlusse festzuhalten.</p>
+               </div>
+               <div type="top" xml:id="krp-0077_top14">
+                  <head>
+                     <label>
+                        <num n="14">14.</num>
+                        <seg>Frage der Zuckerpreiserhöhung.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Schumpeter</hi> bringt in Erinnerung, dass bei der seinerzeitigen Kalkulation des Zuckerprei<pb facs="krp-0077_r-0021"/>ses der Geldwert der tschechoslowakischen Krone zu niedrig angesetzt worden sei; bei dem gegenwärtig bedeutend höheren Kurse dieser Krone bringe jeder Tag dem Staate enorme Verluste. Aus finanziellen Gründen sei es unerlässlich, nunmehr mit einer dem valutarischen Stande der tschechoslowakischen Krone entsprechenden Zuckerpreiserhöhung vorzugehen.</p>
+                  <p>Nachdem Sektionsrat Dr. <hi rend="#letterspaced">Kaltenbrunner</hi> aufgrund des einschlägigen Ziffernmateriales dargetan hatte, dass bei den Zuckerlieferungen in den Monaten April und Mai mit einem Verluste von 40 Millionen K gerechnet werden müsse, verweist Staatssekretär Dr. <hi rend="#letterspaced">Loewenfeld-Russ</hi> auf die Schwierigkeiten, welche einer Preiserhöhung des Zuckers mit Rücksicht auf die allgemeine Lebensmittelteuerung entgegenstehen; auch könne es der Bevölkerung schwer zugemutet werden, dass sie den monatelang rückständigen Zucker jetzt auch noch teurer bezahle.</p>
+                  <p>Staatssekretär <hi rend="#letterspaced">Eldersch</hi> stellt sodann unter Hinweis auf die politische Bedenklichkeit einer solchen Maßnahme abschließend den Antrag, die Angelegenheit vorläufig zu vertagen.</p>
+                  <p>Der Kabinettsrat beschließt in die<pb facs="krp-0077_r-0022"/>sem Sinne und stellt über Anregung des Staatssekretärs [sic!] <hi rend="#letterspaced">Miklas</hi> an den Staatssekretär für Finanzen das Ersuchen, bei der Friedensdelegation in St. Germain anzuregen, sie möge unter Darlegung unserer finanziellen Verhältnisse von der Entente neben den bisherigen Lebensmittelkrediten auch Kredite für die Belieferung Deutschösterreichs mit Zucker und Kohle aus dem tschechoslowakischen Staate ansprechen; schließlich wird bei diesem Anlasse Staatssekretär Dr. <hi rend="#letterspaced">Schumpeter</hi> über Antrag des Staatssekretärs <hi rend="#letterspaced">Paul</hi> eingeladen, dem Kabinettsrate ehestens ein Exposé über die Finanzpolitik zu erstatten.</p>
+               </div>
+               <div type="top" xml:id="krp-0077_top15">
+                  <head>
+                     <label>
+                        <num n="15">15.</num>
+                        <seg>Gesetzentwurf über die Umwandlung der Exportakademie in Wien in eine Hochschule für Welthandel.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Ing. <hi rend="#letterspaced">Zerdik</hi> bittet unter Bezugnahme auf den Beschluss des Kabinettsrates in seiner letzten Sitzung um die Ermächtigung, in der Nationalversammlung den Entwurf eines Gesetzes über die Umwandlung der Exportakademie in Wien in eine Hochschule für Welthandel einbringen zu dürfen.</p>
+                  <p>Der Kabinettsrat erteilt die erbetene Ermächtigung.</p>
+                  <p/>
+               </div>
+            </div>
+            <div type="stenogramme">
+               <div n="1">
+                  <head>EINZUFÜGEN</head>
+                  <p>Transkription in Arbeit.</p>
+               </div>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

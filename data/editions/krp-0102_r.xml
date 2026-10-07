@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href='http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:acdh="https://vocabs.acdh.oeaw.ac.at/schema#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xml:lang="de">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="a" type="main" n="0102">Kabinettsprotokoll Nr. 102 vom 29. August 1919</title>
+            <title level="m" type="main" n="01">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <title level="m" type="sub" n="">Renner II (15. März – 17. Oktober 1919)</title>
+            <meeting>
+               <placeName key="https://d-nb.info/gnd/4066009-6">Wien</placeName>
+               <orgName key="https://d-nb.info/gnd/5162749-8">Kabinettsrat</orgName>
+               <date when-iso="1919-08-29"/>
+            </meeting>
+            <editor>
+               <persName key="https://d-nb.info/gnd/122481836"
+                         role="hasCreator"
+                         xml:id="hwohnout">
+                  <forename>Helmut</forename>
+                  <surname>Wohnout</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</affiliation>
+               <idno type="ORCID">0000-0002-3864-9839</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/120789825"
+                         role="hasCreator"
+                         xml:id="tolechowski">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0003-3291-6876</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/131679384"
+                         role="hasCreator"
+                         xml:id="rlein">
+                  <forename>Richard</forename>
+                  <surname>Lein</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0002-7502-0503</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="aholzer">
+                  <forename>Anna</forename>
+                  <surname>Holzer</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0005-3560-3500</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="dsoelkner">
+                  <forename>Dominik</forename>
+                  <surname>Sölkner</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-9895-7212</idno>
+            </editor>
+            <editor>
+               <persName role="hasContributor" xml:id="ischotzko">
+                  <forename>Ina</forename>
+                  <surname>Schotzko</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-5210-3713</idno>
+            </editor>
+            <funder n="1">
+               <orgName key="https://d-nb.info/gnd/2054142-9" role="hasFunder">Österreichischer Wissenschaftsfonds FWF</orgName>
+               <idno type="project">PAT1495024</idno>
+               <title type="project">Die Protokolle des österreichischen Kabinettsrates 1919–1920</title>
+            </funder>
+            <respStmt>
+               <resp>Projektverantwortung</resp>
+               <orgName key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Projektleitung</resp>
+               <persName key="https://d-nb.info/gnd/120789825" role="hasPrincipalInvestigator">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+                  <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+                  <idno type="ORCID">0000-0003-3291-6876</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Nationaler Forschungspartner</resp>
+               <orgName key="https://d-nb.info/gnd/1123037736" role="hasEnabler">Austrian Centre for Digital Humanities</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Digitalisierung der gedruckten Quellen</resp>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>TEI-Datenmodellierung</resp>
+               <persName role="hasContributor" xml:id="tfruehwirth">
+                  <forename>Timo</forename>
+                  <surname>Frühwirth</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-3997-5193</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technische Supervision</resp>
+               <persName key="https://d-nb.info/gnd/1043833846"
+                         role="hasContributor"
+                         xml:id="pandorfer">
+                  <forename>Peter</forename>
+                  <surname>Andorfer</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-9575-9372</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technisches Consulting und Vorbereitung der Druckausgabe</resp>
+               <persName key="https://d-nb.info/gnd/13281899X"
+                         role="hasContributor"
+                         xml:id="skurz">
+                  <forename>Stephan</forename>
+                  <surname>Kurz</surname>
+                  <affiliation key="https://d-nb.info/gnd/1202798799">Institut für die Erforschung der Habsburgermonarchie und des Balkanraumes</affiliation>
+                  <idno type="ORCID">0000-0003-2546-2570</idno>
+               </persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher key="https://d-nb.info/gnd/1001454-8">Österreichische Akademie der Wissenschaften</publisher>
+            <date when="2028"/>
+            <availability status="free">
+               <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">Lizenziert unter CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/deed.de)</licence>
+            </availability>
+            <idno type="ISBN_Print"/>
+            <idno type="ISBN_Part_epub"/>
+            <idno type="ISBN_Digital"/>
+            <idno type="DOI"/>
+            <idno type="DOI_zenodo"/>
+            <idno type="ebook_ID"/>
+         </publicationStmt>
+         <seriesStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="m" type="main">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <respStmt>
+               <resp>Bearbeitung und Herausgeberschaft</resp>
+               <orgName key="https://d-nb.info/gnd/2024703-5">Universität Wien</orgName>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+         </seriesStmt>
+         <notesStmt>
+            <note>Diese TEI-XML-Datei ist Grundlage für eine Druckausgabe der Edition.</note>
+            <relatedItem>
+               <biblStruct>
+                  <monogr>
+                     <imprint>
+                        <pubPlace key="https://d-nb.info/gnd/4066009-6">Wien</pubPlace>
+                        <publisher key="https://d-nb.info/gnd/2068748-5">Verlag der Österreichischen Akademie der Wissenschaften</publisher>
+                        <date when="2029"/>
+                     </imprint>
+                     <extent/>
+                  </monogr>
+                  <note>
+                     <idno/>
+                     <ptr/>
+                  </note>
+                  <citedRange/>
+               </biblStruct>
+            </relatedItem>
+         </notesStmt>
+         <sourceDesc>
+            <bibl>Quellbestand: AT-OeStA/AdR MRang MR 1Rep KRP Kabinettsratsprotokolle, 1918-1920 (Teilbestand)<ref target="https://www.archivinformationssystem.at/detail.aspx?id=5465">https://www.archivinformationssystem.at/detail.aspx?id=5465</ref>
+            </bibl>
+            <msDesc>
+               <msIdentifier>
+                  <institution key="https://d-nb.info/gnd/37748-X" role="hasOwner">AT-OeStA Österreichisches Staatsarchiv (Archiv (ÖStA))</institution>
+                  <repository key="https://d-nb.info/gnd/1601181-8">AT-OeStA/AdR Archiv der Republik, 1918- (Abteilung)</repository>
+                  <collection>AT-OeStA/AdR MRang MR 1Rep Ministerrat 1. Republik, 1918 - 1938 (Bestand)</collection>
+                  <idno>AT-OeStA_AdR-MRang-MR-1.-Rep.-KRP-102</idno>
+               </msIdentifier>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <abstract>
+            <p>
+          <!--to be generated-->
+        </p>
+         </abstract>
+      </profileDesc>
+      <encodingDesc>
+         <styleDefDecl scheme="css"/>
+         <tagsDecl>
+            <rendition xml:id="b" scheme="css">font-weight:bold;</rendition>
+            <rendition xml:id="su" scheme="css">vertical-align:super;font-size:.7em;</rendition>
+            <rendition xml:id="s" scheme="css">text-decoration:line-through;</rendition>
+            <rendition xml:id="u" scheme="css">text-decoration:underline;</rendition>
+            <rendition xml:id="ow" scheme="css">text-decoration:line-through;text-decoration-style:double;</rendition>
+            <rendition xml:id="r" scheme="css">display:block;text-align:right;</rendition>
+            <rendition xml:id="letterspaced" scheme="css">letter-spacing:0.15em;</rendition>
+            <rendition xml:id="i" scheme="css">font-style:italic;</rendition>
+         </tagsDecl>
+         <editorialDecl>
+            <hyphenation>
+               <p>
+            <!--to be added-->
+          </p>
+            </hyphenation>
+            <correction>
+               <p>
+            <!--to be added-->
+          </p>
+            </correction>
+            <normalization>
+               <p>
+            <!--to be added-->
+          </p>
+            </normalization>
+            <punctuation>
+               <p>
+            <!--to be added-->
+          </p>
+            </punctuation>
+            <stdVals>
+               <p>
+            <!--to be added-->
+          </p>
+            </stdVals>
+            <p>
+          <!--to be added-->
+        </p>
+         </editorialDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#tfruehwirth" when-iso="2026-10-07">TEIGarage output upconverted with upconvert.xsl</change>
+         <change who="#tfruehwirth" when-iso="2026-10-07">TEI header populated with generate_tei_templates.py</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface/>
+   </facsimile>
+   <text>
+      <body>
+         <div xml:id="doc-krp-0102.xml">
+            <head type="dokument">
+               <title type="num">102.<note type="footnote">Das Protokoll trägt den Vermerk <hi rend="#i">Vertraulich!</hi>
+                  </note>
+               </title>
+               <title type="desc">
+                  <pb facs="krp-0102_r-0001"/>[Freitag] 1919-08-29</title>
+            </head>
+            <div type="dokumentkopf">
+               <div type="vorsitz">
+                  <head>Vorsitz:</head>
+                  <p>Fink</p>
+               </div>
+               <div type="anwesend">
+                  <head>Anwesend:</head>
+                  <p>Bauer, Bratusch, Deutsch, Eldersch, Ellenbogen, Hanusch, Loewenfeld-Russ, Miklas, Paul, Pflügl, Resch, Schumpeter, Stöckler, Tandler, Waiss</p>
+               </div>
+               <div type="zugezogen">
+                  <head>Zugezogen:</head>
+                  <p>-</p>
+               </div>
+               <div type="schriftfuehrer">
+                  <head>Schriftführer:</head>
+                  <p>unbekannt</p>
+               </div>
+               <div type="dauer">
+                  <head>Dauer:</head>
+                  <p>15.00–17.30 Uhr</p>
+               </div>
+            </div>
+            <div type="komponenten">
+               <p>Reinschrift, Beilagen, Konzept, stenographische Mitschrift, Entwurf der Tagesordnung</p>
+            </div>
+            <div type="beilagen">
+               <head>Beilagen:</head>
+               <list>
+                  <item>
+                     <ref target="#krp-0102_top03">Zu TOP 3</ref>: <ref target="#krp-0102_b01">Referat der Staatskanzlei über finanzielle Staatsgarantien für verschiedene Verbindlichkeiten von Banken und Zentralen</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0102_top04">Zu TOP 4</ref>: <ref target="#krp-0102_b02">Referat der Staatskanzlei mit dem vierten Bericht der Kommission zur Erhebung militärischer Pflichtverletzungen</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0102_top05">Zu TOP 5</ref>: <ref target="#krp-0102_b03">Bericht des Staatsamtes für Finanzen über ein Übereinkommen der deutschösterreichischen und der polnischen Regierung aus Anlass der in Deutschösterreich zur Vorbereitung der Vermögensabgabe getroffenen Maßnahmen mit dem Wortlaut des Vertrages</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0102_top06">Zu TOP 6</ref>: <ref target="#krp-0102_b04">Staatshilfe für Vorarlberg</ref>
+                  </item>
+               </list>
+            </div>
+            <div type="protokoll">
+               <pb facs="krp-0102_r-0002"/>
+               <div type="top" xml:id="krp-0102_top01">
+                  <head>
+                     <label>
+                        <num n="1">1.</num>
+                        <seg>Ergänzung der Vollzugsanweisung des Staatsamtes für Land- und Forstwirtschaft vom 26. März 1919, StGBl. Nr. 198, betreffend die Aufbringung von Holz und die Regelung des Verkehres mit Holz.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Stöckler</hi> teilt mit, dass der Landeshauptmann in Niederösterreich das dringende Ersuchen gestellt habe, die Vollzugsanweisung des Staatsamtes für Land- und Forstwirtschaft vom 26. März 1919, StGBl. Nr. 198, betreffend die Aufbringung von Holz und die Regelung des Verkehres mit Holz, im Hinblick auf die von der Niederösterreichischen Landesregierung erlassene Verordnung vom 25. August 1919, betreffend die Aufbringung des für das Land Niederösterreich erforderlichen Brennholzes, im § 4 dahin zu erweitern, dass eine direkte Beschlagnahme von Waldbeständen ermöglicht werde.</p>
+                  <p>Der sprechende Staatssekretär hege mehrfache Bedenken dagegen, dass diesem Ansuchen Folge gegeben werde, weil da<pb facs="krp-0102_r-0003"/>durch die Holzanlieferung nach Wien gefährdet würde und im Übrigen Komplikationen wegen der Verpfändung des Forstbesitzes zur Sicherstellung ausländischer Lebensmittel- und Rohstoffkredite entstehen könnten.</p>
+                  <p>Der Kabinettsrat beschließt über Antrag des sprechenden Staatssekretärs, die Staatssekretäre für Land- und Forstwirtschaft und für Justiz einzuladen, die Angelegenheit einer zwischenstaatsamtlichen Beratung zu unterziehen und sodann dem Kabinettsrate antragstellend zu berichten.</p>
+               </div>
+               <div type="top" xml:id="krp-0102_top02">
+                  <head>
+                     <label>
+                        <num n="2">2.</num>
+                        <seg>Außerordentliche Zuwendungen an Staatsbedienstete.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Paul</hi> führt aus, dass sich in den letzten Tagen unter den Eisenbahn- und Postbediensteten wieder eine stärkere Lohnbewegung geltend gemacht habe. Dank der Unterstützung, welche dem sprechenden Staatssekretär bei den Verhandlungen durch die Staatssekretäre Eldersch und Hanusch zuteil wurde, sei es jedoch gelungen, die Gefahr eines Streiks zu beseitigen. Hiebei musste den Bediensteten das Zugeständnis gemacht werden, dass ihnen außer dem am 1. September und 1. Oktober d. J. zur Auszahlung gelangenden Übergangs<pb facs="krp-0102_r-0004"/>beitrage noch ein Zuschuss in der gleichen Höhe um den 15. September und wenn irgend möglich auch am 15. Oktober d. J. werde flüssig gemacht werden. Die ursprünglich in Aussicht genommene Differenzierung dieser Zuschüsse nach der geographischen Lage der Dienstorte musste fallen gelassen werden, da die Organisationen es abgelehnt hatten, bei der Durchführung der Differenzierung mitzuwirken. Staatssekretär Paul bittet um nachträgliche Genehmigung der den Bediensteten gemachten Zusicherungen.</p>
+                  <p>Im Zuge der sich anschließenden Debatte, an welcher sich nahezu sämtliche Kabinettsmitglieder sowie Sektionschef Dr. <hi rend="#letterspaced">Grimm</hi> beteiligten, gab Staatssekretär Dr. <hi rend="#letterspaced">Schumpeter</hi> eine eingehende Darstellung der staatsfinanziellen Lage, welche die strengste Rigorosität bei Gewährung von finanziell nur irgendwie belangreichen Zugeständnissen erheische. Es trat im Verlaufe der Wechselrede die Auffassung zutage, dass es sich empfehlen dürfte, in Hinkunft derartige, die Staatsfinanzen erheblich belastende Maßnahmen der parlamentarischen Beratung zu unterziehen, etwa auf dem Wege, dass in solchen Fällen seitens des Staatssekretärs für Finanzen ein <pb facs="krp-0102_r-0005"/>Nachtragskredit angesprochen würde.</p>
+                  <p>Der Kabinettsrat genehmigt schließlich die gemachten Zugeständnisse.</p>
+               </div>
+               <div type="top" xml:id="krp-0102_top03">
+                  <head>
+                     <label>
+                        <num n="3">3.</num>
+                        <seg>Staatsgarantien finanzieller Art für verschiedene Verbindlichkeiten von Banken und Zentralen.</seg>
+                     </label>
+                  </head>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> teilt mit, der Staatssekretär für Finanzen beabsichtige gemäß dem Gesetze vom 27. November 1918, StGBl. Nr. 74, über die Führung des Staatshaushaltes vom 1. November 1918 bis 30. Juli 1919, der Nationalversammlung zur Kenntnis zu bringen, dass er aufgrund der ihm durch die erwähnte Gesetzesbestimmung erteilten Ermächtigung zur Befriedigung unabweisbarer Bedürfnisse außer den im Berichte seines Amtsvorgängers vom 17. Februar 1919 verzeichneten Garantien noch eine Reihe näher bezeichneter Staatsgarantien finanzieller Art für verschiedene Verbindlichkeiten von Banken und Zentralen übernommen habe.</p>
+                  <p>Der Vorsitzende beantragt, die Staatskanzlei zur Vorlage des erwähnten Berichtes des Staatssekretärs für Finanzen an das Präsidium der Nationalversammlung zu ermächtigen.</p>
+               </div>
+               <div type="top" xml:id="krp-0102_top04">
+                  <head>
+                     <label>
+                        <num n="4">4.</num>
+                        <seg>Vierter Bericht der Kommission zur Erhebung militärischer Pflichtverletzungen.</seg>
+                     </label>
+                  </head>
+                  <p>Der Vorsitzende erbittet und er<pb facs="krp-0102_r-0006"/>hält die Ermächtigung des Kabinettsrates, den vierten Bericht der Kommission zur Erhebung militärischer Pflichtverletzungen der Nationalversammlung vorlegen zu dürfen.</p>
+               </div>
+               <div type="top" xml:id="krp-0102_top05">
+                  <head>
+                     <label>
+                        <num n="5">5.</num>
+                        <seg>Übereinkommen der deutschösterreichischen und polnischen Regierung aus Anlass der in Deutschösterreich zur Vorbereitung der Vermögensabgabe getroffenen Maßnahmen.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr<hi rend="#letterspaced">. Schumpeter</hi> erstattet den dem vorliegenden Protokolle als Beilage angeschlossenen Bericht betreffend ein Übereinkommen, welches zwischen der deutschösterreichischen und polnischen Regierung aus Anlass der in Deutschösterreich zur Vorbereitung der Vermögensabgabe getroffenen Maßnahmen abgeschlossen werden soll. Da die Angelegenheit von einer gewissen politischen Bedeutung sei, erbitte er sich eine Äußerung des Kabinettsrates im Gegenstande.</p>
+                  <p>Bei der sich hierüber entwickelnden Debatte, an der sich die Staatssekretäre Dr. <hi rend="#letterspaced">Bauer</hi> und <hi rend="#letterspaced">Eldersch</hi> sowie Unterstaatssekretär [Dr.] <hi rend="#letterspaced">Ellenbogen</hi> beteiligten, wurden die Gründe für und wider den Abschluss des Übereinkommens in der vorliegenden Fassung eingehend erörtert und schließlich der Anschauung Raum gegeben, dass es sich empfehlen dürfte, die Verhandlungen mit <pb facs="krp-0102_r-0007"/>den Polen bis über den Abschluss des Friedensvertrages hinauszuziehen.</p>
+                  <p>Der Kabinettsrat pflichtet dieser Auffassung bei.</p>
+               </div>
+               <div type="top" xml:id="krp-0102_top06">
+                  <head>
+                     <label>
+                        <num n="6">6.</num>
+                        <seg>Staatshilfe für Vorarlberg.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Schumpeter</hi> führt aus, die Finanzlage Vorarlbergs sei schon in den Jahren 1917 und 1918 eine schwierige gewesen, da die Einnahmen zur Deckung der Erfordernisse nicht mehr ausreichten und schwebende Schulden in der Höhe von etwa einem Viertel des Gesamterfordernisses aufgenommen werden mussten, um das Gleichgewicht im Landeshaushalte herzustellen. Die Höhe dieser Schulden belaufe sich bereits auf rund 850.000 K. Im Laufe des Jahres 1919 sei eine weitere wesentliche Verschlechterung eingetreten, die die Landesversammlung veranlasst habe, die Zuschläge zu den direkten Steuern, die bisher 60 % (bei der Gebäudesteuer 33 %) betrugen, bei den meisten Steuergattungen (ausgenommen Gebäudesteuer und Besoldungssteuer) auf das doppelte Ausmaß zu erhöhen. Von dieser gewiss ungewöhnlichen Mehrbelastung der Bevölkerung erwarte die Landesverwaltung eine Mehreinnahme von rund 400.000 K wovon zwei Drittel durch die Steigerung der <pb facs="krp-0102_r-0008"/>Erfordernisse aufgebraucht, der Rest aber zur allmählichen Abstoßung der schwebenden Schulden verwendet werden soll.</p>
+                  <p>Die schwierige Finanzlage des Landes veranlasse es aber, auch an den Staat um Übernahme gewisser Lasten heranzutreten:</p>
+                  <list>
+                     <item n="1">
+                        <label>1.)</label> Übernahme des Aufwandes, der sich aus der Errichtung der selbstständigen Vorarlberger Landesregierung ergibt (insbesondere für den Ankauf eines Amtsgebäudes). Er beträgt 660.000 K. Diesem Ansuchen wäre nach Anschauung des Staatssekretärs für Finanzen zu entsprechen. Es handle sich dabei um einen vereinzelten Fall, der ähnliche Ansprüche aus den anderen Ländern, wo die neuen Landesregierungen einfach die bestandenen politischen Landesstellen abgelöst haben, nicht befürchten lasse.</item>
+                     <item n="2">
+                        <label>2.)</label> Ersatz der Aufwendungen für die Lehrerschaft.</item>
+                  </list>
+                  <p>In dieser Beziehung habe der Staat schon weitgehende Leistungen auf sich genommen, ohne gesetzlich hiezu verpflichtet zu sein. Er trage den vollen Aufwand für die Anschaffungsbeiträge und den halben Aufwand für die Teuerungszulagen. Darüber hinauszugehen, dürfte sich nicht empfehlen. Doch wäre die unverzügliche Durchführung des kürzlich verabschiedeten Gesetzes über die Anschaffungsbeiträge im Jahre 1919 zuzusichern.</p>
+                  <p>
+                     <pb facs="krp-0102_r-0009"/>
+                  </p>
+                  <list>
+                     <item n="1">
+                        <label>3.)</label> Ersatz des Aufwandes für verschiedene Wasserbauten und Gewährung von Staatsbeiträgen für die Rheintal-Entwässerung. Der Aufwand des Landes wird mit 6 Millionen K angegeben.</item>
+                  </list>
+                  <p>Hiezu sei zu bemerken: Die Gewährung von Staatsbeiträgen für Wasserbauten erfolgt im Allgemeinen im Rahmen des Meliorationsgesetzes vom Jahre 1909 aufgrund besonderer die einzelnen Wasserbauten regelnder Landesgesetze. Eine Bereitstellung von Staatsmitteln über die für diese Staatsbeiträge in den Voranschlag aufgenommenen Kredite hinaus kann nicht in Erwägung gezogen werden. Doch könnte dem Lande innerhalb der angeführten Grenzen möglichste Berücksichtung der Vorarlberger Wasserbauten zugesagt werden, ohne dass eine Verpflichtung hinsichtlich eines bestimmten Betrages übernommen würde.</p>
+                  <p>Allenfalls könnte, da das Erfordernis für die Rheintal-Entwässerung möglicherweise im Rahmen der für Wasserbauten aufgrund des Meliorationsgesetzes bereitgestellten Staatsbeiträge nicht untergebracht werden kann, eine besondere gesetzliche Regelung der Aufbringung des Erfordernisses für diesen Wasserbau in Aussicht gestellt werden.</p>
+                  <list>
+                     <item n="1">
+                        <label>4.)</label> Refundierung des in den Monaten Februar und März 1. J. ausbezahlten Kriegszuschlages für die Schlachtviehaufbringung.</item>
+                  </list>
+                  <p>Vom Staatsrate sei seinerzeit beschlossen worden, dass der Kriegszuschlag für die Schlachtviehaufbrin<pb facs="krp-0102_r-0010"/>gung auf die Hälfte herabgesetzt werde. Vorarlberg sei nicht mehr in der Lage gewesen, dies rechtzeitig durchzuführen und habe daher den ganzen Kriegszuschlag während der Monate Februar und März d. J. ausbezahlt. Nunmehr ersuche das Land um Refundierung des aufgewendeten Betrages von 380.000 K an die Landesviehverkehrsstelle in Bregenz. Das Staatsamt für Land- und Forstwirtschaft befürworte dieses Ansuchen mit Rücksicht auf die anerkennenswerten Nutzviehlieferungen des Landes.</p>
+                  <p>Dem Ansuchen wäre zu entsprechen.</p>
+                  <list>
+                     <item n="1">
+                        <label>5.)</label> Subventionierung der Lungenheilstätte Gaisbühel.</item>
+                  </list>
+                  <p>Das Staatsamt wäre zu ermächtigen, dieser Anstalt eine noch zu bestimmende Subvention zu gewähren.</p>
+                  <p>Im Zuge der Debatte sprechen sich die Staatssekretäre <hi rend="#letterspaced">Eldersch</hi> und Dr. <hi rend="#letterspaced">Bauer</hi> entgegen einer im Kabinettsrate gegebenen Anregung dafür aus, dass die beantragten Zuwendungen ohne jeden Vorbehalt gewährt werden. Man dürfe nicht den Eindruck erwecken, als wolle die Staatsregierung auf Vorarlberg in der Anschlussfrage einen politischen Druck ausüben.</p>
+                  <p>
+                     <pb facs="krp-0102_r-0011"/>Der Kabinettsrat pflichtet dieser Auffassung bei, nimmt die Ausführungen des Staatssekretärs für Finanzen zustimmend zur Kenntnis und genehmigt die gestellten Anträge.</p>
+               </div>
+               <div type="top" xml:id="krp-0102_top07">
+                  <head>
+                     <label>
+                        <num n="7">7.</num>
+                        <seg>Vollzugsanweisung des Staatsamtes für Heer[es]wesen, betreffend die Ausbezahlung von Unterhaltsbeiträgen an die Angehörigen von aktiv dienenden Personen.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Deutsch</hi> erbittet und erhält die nachträgliche Genehmigung des Kabinettsrates zu der dringlichkeitshalber bereits erfolgten Hinausgabe einer Vollzugsanweisung, wonach den anspruchsberechtigten Angehörigen von Personen, die als Volkswehrmänner in der deutschösterreichischen Volkswehr dienen oder die bei deutschösterreichischen militärischen Stellen noch in aktiver Dienstleistung stehen, für die Dauer der Dienste, die diese Personen als aktive Militärpersonen in der Zeit vom 1. September bis 31. Oktober 1919 leisten, ein Unterhaltsbeitrag gewährt wird.</p>
+                  <p/>
+               </div>
+            </div>
+            <div type="stenogramme">
+               <div n="1">
+                  <head>EINZUFÜGEN</head>
+                  <p>Transkription in Arbeit.</p>
+               </div>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>
