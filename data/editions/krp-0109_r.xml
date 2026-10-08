@@ -1,0 +1,561 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href='http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:acdh="https://vocabs.acdh.oeaw.ac.at/schema#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xml:lang="de">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="a" type="main" n="0109">Kabinettsprotokoll Nr. 109 vom 26. September 1919</title>
+            <title level="m" type="main" n="01">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <title level="m" type="sub" n="">Renner II (15. März – 17. Oktober 1919)</title>
+            <meeting>
+               <placeName key="https://d-nb.info/gnd/4066009-6">Wien</placeName>
+               <orgName key="https://d-nb.info/gnd/5162749-8">Kabinettsrat</orgName>
+               <date when-iso="1919-09-26"/>
+            </meeting>
+            <editor>
+               <persName key="https://d-nb.info/gnd/122481836"
+                         role="hasCreator"
+                         xml:id="hwohnout">
+                  <forename>Helmut</forename>
+                  <surname>Wohnout</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</affiliation>
+               <idno type="ORCID">0000-0002-3864-9839</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/120789825"
+                         role="hasCreator"
+                         xml:id="tolechowski">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0003-3291-6876</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/131679384"
+                         role="hasCreator"
+                         xml:id="rlein">
+                  <forename>Richard</forename>
+                  <surname>Lein</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0002-7502-0503</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="aholzer">
+                  <forename>Anna</forename>
+                  <surname>Holzer</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0005-3560-3500</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="dsoelkner">
+                  <forename>Dominik</forename>
+                  <surname>Sölkner</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-9895-7212</idno>
+            </editor>
+            <editor>
+               <persName role="hasContributor" xml:id="ischotzko">
+                  <forename>Ina</forename>
+                  <surname>Schotzko</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-5210-3713</idno>
+            </editor>
+            <funder n="1">
+               <orgName key="https://d-nb.info/gnd/2054142-9" role="hasFunder">Österreichischer Wissenschaftsfonds FWF</orgName>
+               <idno type="project">PAT1495024</idno>
+               <title type="project">Die Protokolle des österreichischen Kabinettsrates 1919–1920</title>
+            </funder>
+            <respStmt>
+               <resp>Projektverantwortung</resp>
+               <orgName key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Projektleitung</resp>
+               <persName key="https://d-nb.info/gnd/120789825" role="hasPrincipalInvestigator">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+                  <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+                  <idno type="ORCID">0000-0003-3291-6876</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Nationaler Forschungspartner</resp>
+               <orgName key="https://d-nb.info/gnd/1123037736" role="hasEnabler">Austrian Centre for Digital Humanities</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Digitalisierung der gedruckten Quellen</resp>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>TEI-Datenmodellierung</resp>
+               <persName role="hasContributor" xml:id="tfruehwirth">
+                  <forename>Timo</forename>
+                  <surname>Frühwirth</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-3997-5193</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technische Supervision</resp>
+               <persName key="https://d-nb.info/gnd/1043833846"
+                         role="hasContributor"
+                         xml:id="pandorfer">
+                  <forename>Peter</forename>
+                  <surname>Andorfer</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-9575-9372</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technisches Consulting und Vorbereitung der Druckausgabe</resp>
+               <persName key="https://d-nb.info/gnd/13281899X"
+                         role="hasContributor"
+                         xml:id="skurz">
+                  <forename>Stephan</forename>
+                  <surname>Kurz</surname>
+                  <affiliation key="https://d-nb.info/gnd/1202798799">Institut für die Erforschung der Habsburgermonarchie und des Balkanraumes</affiliation>
+                  <idno type="ORCID">0000-0003-2546-2570</idno>
+               </persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher key="https://d-nb.info/gnd/1001454-8">Österreichische Akademie der Wissenschaften</publisher>
+            <date when="2028"/>
+            <availability status="free">
+               <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">Lizenziert unter CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/deed.de)</licence>
+            </availability>
+            <idno type="ISBN_Print"/>
+            <idno type="ISBN_Part_epub"/>
+            <idno type="ISBN_Digital"/>
+            <idno type="DOI"/>
+            <idno type="DOI_zenodo"/>
+            <idno type="ebook_ID"/>
+         </publicationStmt>
+         <seriesStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="m" type="main">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <respStmt>
+               <resp>Bearbeitung und Herausgeberschaft</resp>
+               <orgName key="https://d-nb.info/gnd/2024703-5">Universität Wien</orgName>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+         </seriesStmt>
+         <notesStmt>
+            <note>Diese TEI-XML-Datei ist Grundlage für eine Druckausgabe der Edition.</note>
+            <relatedItem>
+               <biblStruct>
+                  <monogr>
+                     <imprint>
+                        <pubPlace key="https://d-nb.info/gnd/4066009-6">Wien</pubPlace>
+                        <publisher key="https://d-nb.info/gnd/2068748-5">Verlag der Österreichischen Akademie der Wissenschaften</publisher>
+                        <date when="2029"/>
+                     </imprint>
+                     <extent/>
+                  </monogr>
+                  <note>
+                     <idno/>
+                     <ptr/>
+                  </note>
+                  <citedRange/>
+               </biblStruct>
+            </relatedItem>
+         </notesStmt>
+         <sourceDesc>
+            <bibl>Quellbestand: AT-OeStA/AdR MRang MR 1Rep KRP Kabinettsratsprotokolle, 1918-1920 (Teilbestand)<ref target="https://www.archivinformationssystem.at/detail.aspx?id=5465">https://www.archivinformationssystem.at/detail.aspx?id=5465</ref>
+            </bibl>
+            <msDesc>
+               <msIdentifier>
+                  <institution key="https://d-nb.info/gnd/37748-X" role="hasOwner">AT-OeStA Österreichisches Staatsarchiv (Archiv (ÖStA))</institution>
+                  <repository key="https://d-nb.info/gnd/1601181-8">AT-OeStA/AdR Archiv der Republik, 1918- (Abteilung)</repository>
+                  <collection>AT-OeStA/AdR MRang MR 1Rep Ministerrat 1. Republik, 1918 - 1938 (Bestand)</collection>
+                  <idno>AT-OeStA_AdR-MRang-MR-1.-Rep.-KRP-109</idno>
+               </msIdentifier>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <abstract>
+            <p>
+          <!--to be generated-->
+        </p>
+         </abstract>
+      </profileDesc>
+      <encodingDesc>
+         <styleDefDecl scheme="css"/>
+         <tagsDecl>
+            <rendition xml:id="b" scheme="css">font-weight:bold;</rendition>
+            <rendition xml:id="su" scheme="css">vertical-align:super;font-size:.7em;</rendition>
+            <rendition xml:id="s" scheme="css">text-decoration:line-through;</rendition>
+            <rendition xml:id="u" scheme="css">text-decoration:underline;</rendition>
+            <rendition xml:id="ow" scheme="css">text-decoration:line-through;text-decoration-style:double;</rendition>
+            <rendition xml:id="r" scheme="css">display:block;text-align:right;</rendition>
+            <rendition xml:id="letterspaced" scheme="css">letter-spacing:0.15em;</rendition>
+            <rendition xml:id="i" scheme="css">font-style:italic;</rendition>
+         </tagsDecl>
+         <editorialDecl>
+            <hyphenation>
+               <p>
+            <!--to be added-->
+          </p>
+            </hyphenation>
+            <correction>
+               <p>
+            <!--to be added-->
+          </p>
+            </correction>
+            <normalization>
+               <p>
+            <!--to be added-->
+          </p>
+            </normalization>
+            <punctuation>
+               <p>
+            <!--to be added-->
+          </p>
+            </punctuation>
+            <stdVals>
+               <p>
+            <!--to be added-->
+          </p>
+            </stdVals>
+            <p>
+          <!--to be added-->
+        </p>
+         </editorialDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#tfruehwirth" when-iso="2026-10-08">TEIGarage output upconverted with upconvert.xsl</change>
+         <change who="#tfruehwirth" when-iso="2026-10-08">TEI header populated with generate_tei_templates.py</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface/>
+   </facsimile>
+   <text>
+      <body>
+         <div xml:id="doc-krp-0109.xml">
+            <head type="dokument">
+               <title type="num">109.<note type="footnote">Das Protokoll trägt den Vermerk <hi rend="#i">Vertraulich!</hi>
+                  </note>
+               </title>
+               <title type="desc">
+                  <pb facs="krp-0109_r-0001"/>
+                  <pb facs="krp-0109_r-0002"/>[Freitag] 1919-09-26</title>
+            </head>
+            <div type="dokumentkopf">
+               <div type="vorsitz">
+                  <head>Vorsitz:</head>
+                  <p>Renner</p>
+               </div>
+               <div type="anwesend">
+                  <head>Anwesend:</head>
+                  <p>Bauer, Bratusch, Eldersch, Ellenbogen, Glöckel, Hanusch, Loewenfeld-Russ, Miklas, Paul, Pflügl, Resch, Schumpeter, Stöckler, Tandler, Waiss</p>
+               </div>
+               <div type="zugezogen">
+                  <head>Zugezogen:</head>
+                  <p>Grimm, Pfaundler, Schwarzwald</p>
+               </div>
+               <div type="schriftfuehrer">
+                  <head>Schriftführer:</head>
+                  <p>unbekannt</p>
+               </div>
+               <div type="dauer">
+                  <head>Dauer:</head>
+                  <p>15.00–20.00 Uhr</p>
+               </div>
+            </div>
+            <div type="komponenten">
+               <p>Reinschrift, Beilagen, Konzept, stenographische Mitschrift, Entwurf der Tagesordnung, diverse Zusätze, 12. Personalsitzung</p>
+            </div>
+            <div type="beilagen">
+               <head>Beilagen:</head>
+               <list>
+                  <item>
+                     <ref target="#krp-0109_top07">Zu TOP 7</ref>: <ref target="#krp-0109_b01">Staatshilfe für den Landeshaushalt von Niederösterreich</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0109_top08">Zu TOP 8</ref>: <ref target="#krp-0109_b02">Pressgesetz samt erläuternden Bemerkungen</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0109_top08">Zu TOP 8</ref>: <ref target="#krp-0109_b03">Journalistengesetz samt Bemerkungen</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0109_top09">Zu TOP 9</ref>: <ref target="#krp-0109_b04">Gesetzesbeschlüsse der Salzburger Landesversammlung über das Diensteinkommen und die Ruhestandsversetzung von Lehrpersonen, die Versorgung ihrer Hinterbliebenen und über die Besorgung des Religionsunterrichts an den öffentlichen Volks- und Bürgerschulen in Salzburg</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0109_top10">Zu TOP 10</ref>: <ref target="#krp-0109_b05">Gesetzesbeschluss der Vorarlberger Landesversammlung über Aufbringung und Zuweisung der Teuerungszulage für die Lehrkräfte an den öffentlichen Volks- und Bürgerschulen in Vorarlberg</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0109_top11">Zu TOP 11</ref>: <ref target="#krp-0109_b06">Nichtberücksichtigung von Anregungen der Staatsregierung durch den Oberösterreichischen Landesrat bei der Publizierung von Landesgesetzen</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0109_top12">Zu TOP 12</ref>: <ref target="#krp-0109_b07">Gesetz über das Schieß- und Sprengmittelmonopol</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0109_top13">Zu TOP 13</ref>: <ref target="#krp-0109_b08">Vortrag zur Vollzugsanweisung über die Weitergewährung des Zuschusses zu den Unterhaltsbeiträgen für die Angehörigen von Kriegsgefangenen</ref>
+                  </item>
+               </list>
+            </div>
+            <div type="protokoll">
+               <pb facs="krp-0109_r-0003"/>
+               <div type="top" xml:id="krp-0109_top01">
+                  <head>
+                     <label>
+                        <num n="1">1.</num>
+                        <seg>Ernährungsvorsorgen und unmittelbare finanzielle Maßregeln zur Deckung der nächsten Kreditbedürfnisse.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Loewenfeld-Russ</hi> knüpft an seine Darlegungen im letzten Kabinettsrate über die krisenhafte Lage der Lebensmittelbeschaffung an und führt aus, dass die ganze künftige Vorsorge auf drei Beschaffungsquellen aufgebaut werden müsse:</p>
+                  <list>
+                     <item n="1">
+                        <label>1.)</label> auf die inländische Aufbringung,</item>
+                     <item n="2">
+                        <label>2.)</label> auf den jugoslawischen Vertrag und</item>
+                     <item n="3">
+                        <label>3.)</label> auf staatliche Einkäufe im Auslande.</item>
+                  </list>
+                  <p>Für die nächsten drei Monate sei, wenn man nur die allernotwendigsten Lebensmittel berücksichtige, ein Betrag von 71 Millionen Holland-Gulden notwendig, d. i. nach dem gegenwärtigen Valutakurs umgerechnet 2 Milliarden K. Der allerdringendste unmittelbare Bedarf an Getreide und Futtermitteln erfordere die Bereitstellung von 14 Millionen Holland-Gulden, welcher jedoch im November eine neuerliche Anforderung von 14 Millionen Holland-Gulden werde folgen müssen.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Schumpeter</hi> erklärt, dass zur Beschaffung derartig bedeutender Summen zu außerordentlichen Mitteln geschritten werden müsse. <pb facs="krp-0109_r-0004"/>In dieser Beziehung schlage er vor, möglichst rasch und energisch an die Organisation des bereits seit längerer Zeit in Erörterung stehenden Planes wegen Abverkaufs von staatlichem Kunstbesitz ins Ausland zu schreiten.</p>
+                  <p>Ministerialrat Dr. <hi rend="#letterspaced">Schwarzwald</hi> berichtet über die in dieser Hinsicht bereits eingeleiteten Schritte. Das Staatsamt für Finanzen sei bereits mit namhaften ausländischen Kunsthändlern, insbesondere mit dem Repräsentanten des ersten New-Yorker Kunsthandlungshauses Sir Duveen in Verbindung getreten. Der Genannte wäre in der Lage, den gesamten in Betracht kommenden Kunstbesitz Deutschösterreichs zu verwerten und gegebenenfalls einen Vorschuss im Ausmaße von 10–15 Millionen Dollars flüssig zu machen. Er sei ferner bereit, im Falle der Erzielung eines die Kaufsumme wesentlich übersteigenden Erlöses uns einen perzentuellen Anteil am Gewinne zuzugestehen. Für die Durchführung der Aktion sei vor allem die Schaffung einer Organisation erforderlich, welcher die fachmännische Beurteilung obliegen würde, was an verwertbaren Kunstschätzen vorhanden ist.<pb facs="krp-0109_r-0005"/>Es müsste eine Kommission eingesetzt werden, welcher die Direktoren der staatlichen Gemäldegalerien, ferner Vertreter der Verwaltung des Hofärars, des Staatsdenkmalamtes sowie ein Vertreter aus den Kreisen der großen Kunstsammler anzugehören hätten.</p>
+                  <p>Das Staatsamt für Finanzen stelle daher den Antrag, der Kabinettsrat wolle die Einsetzung einer solchen Kommission genehmigen und die Staatsämter anweisen, diese Aktion in jeder Hinsicht zu unterstützen.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Bauer</hi> erklärt sich mit dem Antrage des Staatssekretärs für Finanzen grundsätzlich einverstanden, glaubt jedoch, dass die Organisation in der Weise einzurichten wäre, dass an Stelle einer Kommission eine mit unbeschränkter Vollmacht ausgestattete Persönlichkeit mit der Aufnahme und Requisition der in Betracht kommenden Objekte zu betrauen wäre. Dieser Persönlichkeit wäre allerdings ein Fachbeirat zur Seite zu stellen. Was den Kreis der verwertbaren Objekte anbelange, so könne hiebei an die Gobelinbestände gedacht werden, soferne sie nicht als Sammlung anzusehen seien, deren Verkauf sohin <pb facs="krp-0109_r-0006"/>nach dem Friedensvertrage unzulässig wäre. Außerdem kämen noch historische Möbel, sonstige Antiquitäten, Gemälde, Manuskripte und Kodizes in Frage, die sicherlich im Auslande Liebhaber finden würden.</p>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> gibt der Anschauung Ausdruck, dass es ihm vorteilhaft erschiene, sich nicht an eine Firma zu binden; es sei jedenfalls überlegenswert, ob nicht ein höherer Erlös erzielt werden könnte, wenn die Gegenstände im Wege einer vom Staate zu veranstaltenden Auktion im Auslande verwertet würden. Ihm schwebe dabei der Gedanke vor, dass die Zweckbestimmung des Verkaufserlöses zur Beschaffung der unbedingt notwendigen Lebensmittel die Käufer vielleicht veranlassen könnte, höhere Preise zu bieten. Um die ganze Aktion mit bestehenden Vorschriften, wie Ausfuhrverbot von Kunstschätzen, Kompetenz des Staatsdenkmalamtes etc. nicht in Widerspruch zu bringen, sei es notwendig, die Aktion auf eine gesetzliche Grundlage zu stellen. Er werde von der Staatskanzlei im Einvernehmen mit dem Unterrichtsamte einen diesbezüglichen Gesetzentwurf ausarbeiten lassen.</p>
+                  <p>
+                     <pb facs="krp-0109_r-0007"/>Der Kabinettsrat gelangt sohin zu nachstehenden Beschlüssen:</p>
+                  <list>
+                     <item n="1">
+                        <label>1.)</label> Kunstschätze und Kunstwerte, Antiquitäten, Manuskripte und Kodizes, Möbel usw., soweit deren Veräußerung uns nicht durch den Friedensvertrag verboten ist, sind in der kürzesten Frist an das Ausland abzuverkaufen; mit der Durchführung dieses Verkaufes ist eine Persönlichkeit zu betrauen, welche mit den notwendigen gesetzlichen und administrativen Machtvollkommenheiten auszurüsten ist. Dieser Persönlichkeit ist ein Beirat beizugeben, welcher aus den Direktoren der Museen, Vertretern der Verwaltung des Hofärars und des Staatsdenkmalamtes, einem Experten aus den Kreisen der Kunstsammler sowie einem Vertreter des Unterrichtsamtes zu bestehen hat. Diese Persönlichkeit ist befugt, nach Bedarf noch weitere Experten beizuziehen. Ihre Obliegenheiten werden durch ein vom Kabinettsrate festzusetzendes Regulativ geregelt. Sie hat den Kabinettsrat von Zeit zu Zeit über ihre Aktionen Bericht zu erstatten.</item>
+                     <item n="2">
+                        <label>2.)</label> Das Staatsamt für Finanzen ist ermächtigt, die Verhandlungen mit dem Kunsthause Duveen fortzusetzen und evtl. auch Verbindungen mit an<pb facs="krp-0109_r-0008"/>deren Firmen einzugehen, wobei jedoch die Chancen eines unmittelbaren Verkaufes durch den Staat selbst nicht außer Acht bleiben soll.</item>
+                     <item n="3">
+                        <label>3.)</label> Der Staatskanzler ist beauftragt, bis zur Sitzung des Kabinettsrates am 29. d. M. Vorschläge bezüglich der Person des Kommissärs für die Verwertung von Kunstbesitz des Staates zu erstatten.</item>
+                  </list>
+                  <p>Der Kabinettsrat wendet sich sodann der Erörterung der Frage zu, auf welche Weise die Belastung des Staatsschatzes durch die Lebensmittelbeschaffung zu beseitigen wäre.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Schumpeter</hi> führt aus, es sei auf die Dauer nicht angängig, dass die Differenz zwischen den Einkaufs- und Verkaufspreisen der Lebensmittel vom Staatsschatze getragen werde. Die budgetäre Deckung dieser Differenz durch neue Steuern sei nicht möglich, weil diese bereits für andere Zwecke bestimmt seien; auch von einer Abstufung der Preise nach den Einkommensverhältnissen der Konsumenten verspreche er sich nicht viel. Er halte dafür, dass es notwendig sei, die Preise auf das volle kostendeckende Maß zu erhöhen. Die dadurch entstehende Mehr<pb facs="krp-0109_r-0009"/>belastung der Bevölkerung sei leicht zahlenmäßig festzustellen. Um diesen Betrag müssten die Bezüge der Staatsangestellten erhöht werden und es sei weiters von staatswegen darauf zu dringen, dass auch seitens der Industrie die Löhne im gleichen Ausmaße erhöht werden.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Bauer</hi> unterstützt wärmstens den Vorschlag des Staatssekretärs für Finanzen, weil dieser Vorschlag seiner Ansicht nach die einzige Möglichkeit biete, die Lebensmittelpreise in entsprechender Höhe festzusetzen, ohne soziale Unruhen befürchten zu müssen. Allerdings sei eine solche Maßnahme nur im Zusammenhange mit der Finanzreform möglich.</p>
+                  <p>Staatssekretär <hi rend="#letterspaced">Hanusch</hi> weist auf die mannigfachen Schwierigkeiten hin, die einer Verwirklichung der Durchführung dieses Problems entgegenstehen und die jedenfalls nur durch eingehende Besprechungen mit der Industrie und den Gewerkschaften überwunden werden könnten. Immerhin sei er geneigt, diesem Plan zuzustimmen, weil er darin den einzigen Weg für einen allfälligen Abbau der Löhne erblicke.</p>
+                  <p>Staatssekretär <hi rend="#letterspaced">Stöckler</hi> hält den Vorschlag für undurchführbar, <pb facs="krp-0109_r-0010"/>weil hiedurch große Schichten der Bevölkerung über das erträgliche Maß belastet würden. Er gebe es der Erwägung anheim, ob es nicht angängig wäre, dass der Staat die Bewirtschaftung der Lebensmittel zu den bisherigen billigen Preisen nur für diejenigen besorge, welche tatsächlich bedürftig sind. Für die übrigen Schichten der Bevölkerung hätte der freie Handel zu sorgen.</p>
+                  <p>Staatssekretär <hi rend="#letterspaced">Hanusch</hi> hält der Anregung des Staatssekretärs Stöckler gegenüber, dass die Zahl der höher bemittelten, die sich die teuren Lebensmittel zu beschaffen in der Lage wären, zu gering sei. Wenn nach dem Vorschlage des Staatssekretärs Dr. Schumpeter die Arbeiterschaft, die Staatsangestellten und die Pensionisten entsprechend berücksichtigt würden, so blieben im Wesentlichen nur die kleinen Rentner übrig, die von der Maßnahme hart betroffen würden. Das Kleingewerbe und der Kleinhandel waren ja in der Lage, die Mehrbelastung auf die Schultern der Konsumenten zu überwälzen.</p>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> resümiert, dass in der Debatte drei Wege zur Lösung der Frage der Festsetzung der Lebensmittelpreise aufgezeigt wurden:</p>
+                  <p>
+                     <pb facs="krp-0109_r-0011"/>
+                  </p>
+                  <list>
+                     <item n="1">
+                        <label>1.)</label> Abstufung der Preise nach den Einkommensverhältnissen der Konsumenten,</item>
+                     <item n="2">
+                        <label>2.)</label> Beschränkung der staatlichen Bewirtschaftung auf die Minderbemittelten und</item>
+                     <item n="3">
+                        <label>3.)</label> Erhöhung der Preise auf das volle kostendeckende Ausmaß, wobei jedoch die jeweils errechneten Mehrkosten den Staatsangestellten und staatlichen Arbeitern vom Staate in der Form von Zubußen und den Industriearbeitern von den Unternehmern auf Grundlage gleitender Lohnskalen vergütet werden.</item>
+                  </list>
+                  <p>Der Kabinettsrat ladet den Staatssekretär für Finanzen ein, unter Berücksichtigung des Ergebnisses der Debatte positive Vorschläge im Einvernehmen mit dem Staatsamt für Volksernährung zu erstatten.</p>
+               </div>
+               <div type="top" xml:id="krp-0109_top02">
+                  <head>
+                     <label>
+                        <num n="2">2.</num>
+                        <seg>Ersuchen der tschechoslowakischen Regierung um Niederlassung von Gebrauchsgegenständen aus den Beständen des Hofärars.</seg>
+                     </label>
+                  </head>
+                  <p>Der Vorsitzende teilt mit, dass die tschechoslowakische Liquidierungskommission für das Hofärar an den Obersten Verwalter des Hofärars mit dem Ansinnen herangetreten sei, aus den Beständen des Hofärars einige Gebrauchsgegenstände, die der Präsident der tschechoslowakischen Republik für Repräsentations<pb facs="krp-0109_r-0012"/>zwecke und zur Einrichtung von Kanzleien benötigt, gegen Kompensationen auszufolgen.</p>
+                  <p>Der Oberste Verwalter des Hofärars habe sich im Hinblick auf die durch den Friedensvertrag hinsichtlich des hofärarischen Vermögens geschaffene neue Rechtslage nicht für befugt erachtet, dieses Ansuchen meritorisch zu erledigen, sondern sich darauf beschränkt, der tschechoslowakischen Liquidierungskommission für das Hofärar mitzuteilen, dass er die bezügliche Anforderung den kompetenten Stellen mit der Bitte um ehetunlichste grundsätzliche Schlussfassung zur Kenntnis gebracht habe. Gleichzeitig habe er angeregt, ihm schon jetzt ein Verzeichnis der benötigten Objekte zukommen zu lassen, damit dessen schleunige Perlustrierung von dem Gesichtspunkte, ob diese Gegenstände vorhanden und entbehrlich seien, veranlasst werden könnte.</p>
+                  <p>Der Vorsitzende fügt bei, dass der Gesandte Tusar bereits im Februar 1919 ihm persönlich eine gleichartige schriftliche Forderung überreicht habe, welche die Staatskanzlei damals dem Staatsamt für Äußeres zur zuständigen <pb facs="krp-0109_r-0013"/>Verfügung im Einvernehmen mit dem damaligen Staatsnotar Dr. Sylvester bekanntgegeben habe. Unter diesen damals angeforderten Gegenständen hätten sich nebst 33 Schreibtischen, 36 Teppichen, zwei Wertheimkassen, zwei Salongarnituren u. dgl. auch 4.000 Flaschen Tokayer, 600 Flaschen Champagner, 400 Flaschen Schaumweine etc. befunden.</p>
+                  <p>Der Vorsitzende beantragt, der Kabinettsrat wolle beschließen, dass dem Begehren der tschechoslowakischen Regierung grundsätzlich Folge gegeben, dass jedoch die Entscheidung über die Kompensationsgegenstände dem Zeitpunkte vorbehalten werde, bis die tschechoslowakische Regierung das Verzeichnis der angeforderten Gegenstände übermittelt haben wird.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Bauer</hi> weist darauf hin, dass es bei den Nationalstaaten zweifellos einen guten Eindruck hervorrufen würde, wenn ihnen gewisse Objekte zum Kauf angeboten würden, für die sie aus nationalen und historischen Gründen besonderes Interesse haben könnten. Er denke hiebei z. B. an das bekannte Gemälde des polnischen Malers Johann Matejko aus dem Hofmuseum, den <pb facs="krp-0109_r-0014"/>Reichstag zu Warschau 1773 darstellend, auf dessen Besitz die Polen besonderen Wert legen würden.</p>
+                  <p>Der Kabinettsrat beschließt im Sinne des vom Vorsitzenden gestellten Antrages und ladet weiters die Staatskanzlei ein, aus den hofärarischen und ehemals kaiserlichen Besitztümern, diejenigen Gegenstände, welche für die Nationalstaaten vom besonderen historischen Interesse sein könnten, zu verzeichnen und ihnen zum Kauf anzubieten.</p>
+               </div>
+               <div type="top" xml:id="krp-0109_top03">
+                  <head>
+                     <label>
+                        <num n="3">3.</num>
+                        <seg>Waffen und Munitionslieferung an das Königreich SHS.</seg>
+                     </label>
+                  </head>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> teilt mit, dass die Regierung des SHS-Königreiches ein Ansuchen um Belieferung mit Waffen und Munition im Wege des Warenverkehrsbüros und der südslawischen Centralna uprava in Belgrad gestellt habe. Bei dieser Gelegenheit habe der südslawische Vertreter Cerovič über Beeinflussungen der deutschösterreichischen Presse durch Italien Beschwerde geführt. Man glaube jugoslawischerseits bemerkt zu haben, dass Italien die deutschösterreichischen Journalisten individuell interessiert habe, was seinen Niederschlag in der Behandlung des italienisch-jugoslawischen <pb facs="krp-0109_r-0015"/>Konfliktes in der deutschösterreichischen Presse gefunden habe.</p>
+                  <p>Der Verkauf von Waffen und Munition in das SHS-Königreich sei nach Anschauung des Vorsitzenden geeignet, Italien zu verstimmen; gleichwohl sei es sehr wünschenswert, die alten Bestände loszubringen. Er beabsichtige daher, die Angelegenheit mit dem französischen Gesandten Allizé zu besprechen, um womöglich das Dazwischentreten einer französischen Firma zu veranlassen, wodurch Rekriminationen von Seiten des SHS-Königreiches und Italiens der Boden entzogen würde.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Bauer</hi> glaubt, dass es im Hinblick auf die Stellung Frankreichs im italienisch-jugoslawischen Konflikt empfehlenswerter wäre, mit einer anderen, an dem Konflikt nicht beteiligten Macht im Gegenstande zu verhandeln.</p>
+                  <p>Der Kabinettsrat ermächtigt sohin den Staatskanzler, wegen des Abverkaufes von Waffen und Munition durch die Sachdemobilisierung in Verhandlungen mit einer der großen, am Konflikte zwischen Italien und Jugoslawien nicht beteiligten Macht einzutreten.</p>
+                  <p>
+                     <pb facs="krp-0109_r-0016"/>
+                  </p>
+               </div>
+               <div type="top" xml:id="krp-0109_top04">
+                  <head>
+                     <label>
+                        <num n="4">4.</num>
+                        <seg>Gesetzesbeschluss des Oberösterreichischen Landtages vom 12. August 1919, betreffend die Einführung des Transportscheinszwanges für Lebensmittel und andere Bedarfsgegenstände, die nach Orten außerhalb Oberösterreichs versendet werden, die Einführung von Gebühren anlässlich der Ausfuhr sowie die Festsetzung von Höchst- und Richtpreisen.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Loewenfeld-Russ</hi> führt aus, dass der Oberösterreichische Landtag in seiner Sitzung vom 12. August d. J. den Entwurf eines Gesetzes beschlossen habe, wonach die Landesregierung ermächtigt werden solle, die Versendung wichtiger Lebensmittel und Bedarfsgegenstände, für welche der Verkehr und Handel innerhalb des Landes frei ist z. B. Obst, Most, Heu, Stroh, Häcksel, ferner Holz jeder Art, außerhalb des Landes mittels Bahn, Schiff, Floß oder per Achse, an eine von der Landesregierung des Landes Oberösterreich oder von einer durch sie hiezu ermächtigten Stelle ausgefertigte Transportbescheinigung zu binden.</p>
+                  <p>Ferner werde im § 4 des Gesetzesbeschlusses statuiert, dass für die Ausfuhr der obgenannten Waren aus Oberösterreich eine Gebühr eingehoben werden könne, die sich aus den mit der Ausfertigung der Transportscheine verbundenen Unkosten und einer Landesabgabe zusammensetzt, die dem Landesfonds zufließen soll. Die Festsetzung der Höhe dieser Gebühr solle, wenn sie aus dem Ersatz der Ausfertigungskosten besteht, durch die Landesregierung, wenn sie aber auch eine Landesabgabe ent<pb facs="krp-0109_r-0017"/>hält, durch Beschluss des Landtages stattfinden.</p>
+                  <p>Endlich würde die Landesregierung ermächtigt sein, für die obgenannten Artikel Richt- oder Höchstpreise festzusetzen.</p>
+                  <p>Übertretungen des Gesetzes sollen mit Geldstrafen bis zu 10.000 K oder mit Arreststrafen bis zu sechs Monaten bestraft worden, sofern der Tatbestand nach den gesetzlichen Bestimmungen nicht einer schärferen Ahndung unterliegt. Überdies könne der Verfall der Ware, auf die sich die strafbare Handlung bezieht, ausgesprochen werden.</p>
+                  <p>Das Gesetz solle mit dem Tage der Kundmachung in Wirksamkeit treten. Mit seiner Durchführung sei die Landesregierung betraut.</p>
+                  <p>Der Bericht des Gemeinde- und Verfassungsausschusses habe anlässlich der Einbringung des Gesetzentwurfes bei dem Oberösterreichischen Landtage Folgendes ausgeführt:</p>
+                  <p>„Es ist ein allgemeiner Wunsch aller Schichten unserer Bevölkerung, dass Lebensmittel und sonstige Bedarfsartikel aus Oberösterreich in erster Linie dazu dienen sollen, die Bedürfnisse der heimischen Bevölkerung zu decken. Sie <pb facs="krp-0109_r-0018"/>will daher vor allem vor Übergriffen auswärtiger, oft unerwünschter Händler und Agenten, die sich besonders bei Wiedereinführung des freien Handels bemerkbar machen werden, geschätzt sein. Wie sehr Schutzmaßnahmen gegen solche Übergriffe berechtigt sind, sehen wir beispielsweise in Tirol und Salzburg, wo nach Aufhören der staatlichen Raufutterbewirtschaftung der Preis des Heues rapid in die Höhe schnellte, nachdem gegen die Ausfuhr und die unlautere Preisbildung keinerlei Maßnahmen getroffen wurden. Es erscheint daher angezeigt, den Transportscheinzwang für alle Artikel, die unser Land verlassen, einzuführen und auch Vorkehrungen für die Aufstellung von Höchst- und Richtpreisen zu treffen. Durch die Transportbescheinigungen, welche ausschließlich von oberösterreichischen Stellen ausgefertigt werden sollen, hat es das Land in der Hand, die Ausfuhr unter Berücksichtigung des eigenen Bedarfes zu regeln und zu verhindern, dass durch exorbitante Schleichhändlerpreise die Preise unnötigerweise in die Höhe getrieben werden. Durch Festsetzung gewisser Höchst- oder Richtpreise soll die Preisbildung entsprechend beeinflusst werden.</p>
+                  <p>
+                     <pb facs="krp-0109_r-0019"/>Es wäre eigentlich Sache der Staatsregierung, derartige Maßnahmen zum Schutze der Länder und unserer ganzen Volkswirtschaft zu treffen. Leider steht aber die Staatsregierung diesem Verlangen der deutschösterreichischen Länder nach Einführung des Transportbescheinigungszwanges zwecks Verhinderung der gänzlichen Aussaugung der Länder abgeneigt gegenüber. Es ist nicht zu erwarten, dass die Staatsregierung in diesen Belangen zu unserem Schutz etwas unternimmt. Daher erscheint es notwendig, dass wir uns in Oberösterreich durch ein Landesgesetz die Möglichkeit verschaffen, den Transportbescheinigungszwang und die Festsetzung von Höchst- und Richtpreisen einzuführen. Für Holz hat bereits die Landesregierung im Verordnungswege den Transportbescheinigungszwang eingeführt. Durch ein eigenes Ermächtigungsgesetz sollen solche Verordnungen auch eine entsprechende Deckung erhalten.“</p>
+                  <p>Zu dem gegenwärtigen Gesetzesbeschluss sei Folgendes zu bemerken:</p>
+                  <p>Sowohl die Einführung eines Transportscheinzwanges für Lebensmittel und andere Bedarfsgegenstände wie die Festsetzung von Höchst- und Richtpreisen für <pb facs="krp-0109_r-0020"/>diese, stellen sich als Maßnahmen dar, die während der Dauer der durch den Krieg hervorgerufenen außerordentlichen Verhältnisse zur Förderung und Wiederaufrichtung des wirtschaftlichen Lebens, zur Abwehr wirtschaftlicher Schädigungen und zur Versorgung der Bevölkerung notwendig geworden sind.</p>
+                  <p>Die Anordnung derartiger Maßnahmen müsse als eine allen Ländern gemeinsame Angelegenheit bezeichnet werden und falle daher, da durch Art. 12 des Gesetzes vom 14. März 1919, StGBl. Nr. 179, über die Volksvertretung die überkommene Kompetenzabgrenzung zwischen Staat und Ländern zunächst aufrecht erhalten wurde, gemäß § 11 des Grundgesetzes über die Reichsvertretung vom 21. Dezember 1867, RGBl. Nr. 141, in den Wirkungskreis des Reichsrates bzw. der Nationalversammlung. Tatsächlich sei auch die Erlassung und Durchführung solcher wirtschaftlicher Maßnahmen durch ein Reichsgesetz geregelt worden, indem mit dem Gesetz vom 24. Juli 1917, RGBl. Nr. 307, die Befugnisse hiezu vom österreichischen Reichsrate der Reichs- (Staats-) regierung im Ermächtigungswege übertragen wurde. Ebenso sei durch die ein Reichsgesetz vertretende Kaiserliche Verordnung vom <pb facs="krp-0109_r-0021"/>24. März 1917, RGBl. Nr. 131, im § 9 die Erlassung gewisser dahinzielender wirtschaftlicher Maßnahmen dem Handelsminister, und soweit Lebens- und Futtermittel in Betracht kommen, dem mit der Leitung des Amtes für Volksernährung betrauten Minister vorbehalten und seien diese Minister im § 17 ermächtigt worden, Höchstpreise für Bedarfsgegenstände festzustellen. (Die Erstellung von Richtpreisen stehe überhaupt der Zentralpreisprüfungskommission und den Preisprüfungsstellen zu.) Die politischen Landebehörden seien nach den eben erwähnten Bestimmungen zur Anordnung der den Ministern übertragenen wirtschaftlichen Maßnahmen, sowie zur Festsetzung von Höchstpreisen nur über besondere Ermächtigung der Minister befugt.</p>
+                  <p>Da der Gesetzesbeschluss des Oberösterreichischen Landtages mit dem Reichsgesetz vom 24. Juli 1917, RGB1. Nr. 307 und der Kaiserlichen Verordnung vom 24. März 1917, RGBl. Nr. 131, im Widerspruch stehe, erscheine durch diesen Gesetzesbeschluss die dem oberösterreichischen Landtage zustehende Gesetzgebungskompetenz überschritten.</p>
+                  <p>Die Oberösterreichische Landes<pb facs="krp-0109_r-0022"/>regierung habe überdies wiederholt im Verordnungswege den Transportbescheinigungszwang und Höchstpreise für Lebens- und Futtermittel ohne vorherige Ermächtigung durch das Staatsamt für Volksernährung festgesetzt. Diese Verfügungen seien vom Staatsamte für Volksernährung teilweise wegen Gesetzwidrigkeit nicht zur Kenntnis genommen, teils unter Berufung auf die Bestimmungen des § 9 der erwähnten Kaiserlichen Verordnung aus zwingenden wirtschaftlichen Rücksichten nachträglich genehmigt worden.</p>
+                  <p>Was die im § 4 des Gesetzesbeschlusses normierte Festsetzung anbelange, dass für die Ausfuhr der genannten Waren aus Oberösterreich eine Gebühr eingehoben werden könne, so stelle sich diese Gebühr – soweit sie die reinen Ausfertigungskosten der Transportscheine überschreitet – als Systemisierung von Ausfuhrzöllen dar, deren Regelung im Sinne des § 11 lit. d des Grundgesetzes über die Reichsvertretung vom 21. Dezember 1867, RGBl. Nr. 141, gleichfalls dem Wirkungskreise des Reichsrates (Nationalversammlung) vorbehalten ist.</p>
+                  <p>Der sprechende Staatssekretär stelle daher den Antrag, ihn zu ermächtigen, gegen den mehrerwähnten Gesetzesbeschluss <pb facs="krp-0109_r-0023"/>des Oberösterreichischen Landtages vom 12. August 1919 im Wege der Oberösterreichischen Landesregierung bei dem Oberösterreichischen Landtage im Sinne des Art. 14 des Gesetzes vom 14. März 1919 über die Volksvertretung, StGBl. Nr. 179, namens der Staatsregierung Vorstellung zu erheben.</p>
+                  <p>Nach einer kurzen Debatte, an welcher sich die Staatssekretäre <hi rend="#letterspaced">Stöckler</hi>, <hi rend="#letterspaced">Paul</hi> und Dr. <hi rend="#letterspaced">Bauer</hi> beteiligten, erteilt der Kabinettsrat die erbetene Ermächtigung mit der Maßgabe, dass der Landesregierung weiters zu bedeuten sein wird, dass die Staatsregierung, falls der Vorstellung nicht Rechnung getragen würde, die Beschwerde beim Verfassungsgerichtshofe einbringen würde.</p>
+                  <p>Gleichzeitig wird das Staatsamt für Finanzen aufgefordert, den Landesregierungen unter Berufung auf den vorliegenden Kabinettsratsbeschluss zu bedeuten, dass alle von den Landesregierungen unter nicht gesetzlichen Titeln eingehobenen Auflagen, Gebühren, etc. von den staatlichen Überweisungen in Abzug gebracht werden, weshalb die Länder gewarnt würden, sich unnötige Auslagen mit der Einhebung derartiger Auflagen [zu] machen.</p>
+                  <p>
+                     <pb facs="krp-0109_r-0024"/>
+                  </p>
+               </div>
+               <div type="top" xml:id="krp-0109_top05">
+                  <head>
+                     <label>
+                        <num n="5">5.</num>
+                        <seg>Forderungen der Staatseisenbahnbediensteten.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Paul</hi> berichtet über den gegenwärtigen Stand der Verhandlungen mit den Staatseisenbahnbediensteten.</p>
+                  <p>Während sich die Angestellten der Staatsbahnen mit den im letzten Kabinettsrate gekennzeichneten Zugeständnissen zufriedengeben würden und lediglich noch die Auszahlung eines zweiten Übergangsbeitrages für November anstreben, haben die Südbahner erklärt, dass sie auf der Gewährung des vierfachen Übergangsbeitrages für die Monate Oktober und Dezember sowie des dreifachen Übergangsbeitrages nebst Anschaffungsbeitrag für den Monat November bestehen.</p>
+                  <p>Der sprechende Staatssekretär glaube, die Ermächtigung erbitten zu sollen, bei den noch bevorstehenden Schlussverhandlungen äußerstenfalls die Gewährung eines zweiten Übergangsbeitrages pro November in Aussicht stellen zu dürfen, um dadurch den Anschluss der Staatsbediensteten an einen eventuellen Streik der Südbahnbediensteten zu verhindern. Die hieraus entstehende Mehrbelastung würde 20 Millionen K für alle Staatsbe<pb facs="krp-0109_r-0025"/>diensteten ergeben.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Schumpeter</hi> erhebt gegen diese neuerliche Belastung des Staatsschatzes schwerwiegende Bedenken.</p>
+                  <p>Nachdem Staatssekretär <hi rend="#letterspaced">Paul</hi> darauf hingewiesen hatte, dass diese Mehrbelastung durch ein früheres Inkrafttreten der 50%igen Erhöhung des Personentarifes zum großen Teil wettgemacht werden könne, erteilt der Kabinettsrat dem Staatssekretär für Verkehrswesen die erbetene Ermächtigung.</p>
+               </div>
+               <div type="top" xml:id="krp-0109_top06">
+                  <head>
+                     <label>
+                        <num n="6">6.</num>
+                        <seg>Unterbringung des Warenverkehrbüros.</seg>
+                     </label>
+                  </head>
+                  <p>Unterstaatssekretär Dr. <hi rend="#letterspaced">Ellenbogen</hi> weist darauf hin, dass das Warenverkehrsbüro im Hinblick auf die ihm durch die Abwicklung des jugoslawischen Kompensationsvertrages erwachsende außerordentliche Mehrarbeit und die dadurch bedingte Personalerhöhung mit den von ihm gegenwärtig innegehabten Räumlichkeiten nicht das Auslangen finden könne. Er beantrage die Erteilung der Zustimmung, dass das Warenverkehrsbüro das Hotel Europe in Wien um den Betrag von 3 ½ Millionen K ankaufe.</p>
+                  <p>Nach einer kurzen Debatte, in wel<pb facs="krp-0109_r-0026"/>cher Staatssekretär <hi rend="#letterspaced">Eldersch</hi> den Antrag nachdrücklichst unterstützt, erteilt der Kabinettsrat über Anregung des Staatssekretärs Dr. <hi rend="#letterspaced">Schumpeter</hi> die Ermächtigung, der Pachtung des genannten Hotels für Zwecke des deutschösterreichischen Warenverkehrsbüros zuzustimmen.</p>
+               </div>
+               <div type="top" xml:id="krp-0109_top07">
+                  <head>
+                     <label>
+                        <num n="7">7.</num>
+                        <seg>Staatshilfe für den Landeshaushalt von Niederösterreich.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. Schumpeter führt aus, dass der Landeshaushalt von Niederösterreich für das Jahr 1919 mit einem Abgang von nahezu 120 Millionen K abschließe. Die außerordentliche Verschlechterung in den Landesfinanzen sei vor allem auf die infolge der zunehmenden Teuerung und Geldentwertung auf ein Vielfaches gestiegenen Gehaltsansprüche der Landesangestellten und Lehrer sowie auf die Verteuerung des Betriebes der verschiedenen Landesanstalten zurückzuführen. Nur ein verhältnismäßig kleiner Teil dieses Abganges werde durch eine erst zu beschließende Erhöhung der Zuschläge zu den direkten Steuern gedeckt werden können. Das Land habe sich daher an das Staatsamt für Finanzen um Hilfe gewendet.</p>
+                  <p>Da sich ähnliche Erscheinungen, <pb facs="krp-0109_r-0027"/>wenn auch nicht überall im gleichen Maße, auch in den anderen Ländern zeigen und eine einseitige Verfügung zugunsten Niederösterreichs allein überhaupt nicht durchführbar sei, beabsichtige das Staatsamt für Finanzen eine Regierungsvorlage auszuarbeiten, wonach allen Ländern außer den ihnen schon bisher zugekommenen Überweisungen aus Staatsmitteln noch besondere Zuschüsse zu gewähren seien, deren Höhe etwa mit dem doppelten Betrage der Überweisungen in Aussicht genommene sei. Daraus würde sich für Niederösterreich, dessen Überweisungen auf seinen gegenwärtigen Umfang berechnet, rund 35,8 Millionen K ausmachen, eine reine Mehreinnahme von über 71 Millionen K ergeben. Den Rest des Abganges müsste das Land durch Erhöhung seiner steuerlichen Einnahmen und im Kreditwege decken.</p>
+                  <p>Der Geldbedarf des Landes, dessen Vertretung schon in den nächsten Tagen vor der Notwendigkeit stehe, über eine neuerliche sehr weitgehende Aufbesserung der Bezüge der Landesangestellten und Lehrer am flachen Lande Beschluss zu fassen, sei ein außerordentlich dringender. Es könne daher mit der Flüssigmachung einer Staatshilfe in der ange<pb facs="krp-0109_r-0028"/>deuteten Höhe nicht zugewartet werden, bis der einzubringende Gesetzentwurf von der Nationalversammlung verabschiedet sein werde.</p>
+                  <p>Der sprechende Staatssekretär beantrage deshalb, der Kabinettsrat wolle ihn ermächtigen, dem Lande Niederösterreich auf Rechnung seines Anteiles an der allen Ländern zu gewährenden Dotation unverzinsliche Vorschüsse im Falle finanzieller Bedrängnis bis zum Betrage von 30 Millionen K flüssig zu machen, wobei die Abhebung dieses Betrages allmählich, je nach Bedarf, innerhalb des Jahres 1919 stattzufinden haben wird.</p>
+                  <p>Der Kabinettsrat erteilt die erbetene Ermächtigung und bemerkt hiezu, dass für die so gewährten Vorschüsse die hinterherige verfassungsmäßige Genehmigung durch die Nationalversammlung anzusprechen sein werde.</p>
+               </div>
+               <div type="top" xml:id="krp-0109_top08">
+                  <head>
+                     <label>
+                        <num n="8">8.</num>
+                        <seg>Pressgesetz und Journalistengesetz.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Bratusch</hi> erbittet die Zustimmung des Kabinettsrates zur Einbringung des Entwurfes eines Pressgesetzes in der Nationalversammlung.</p>
+                  <p>Sektionschef Dr. <hi rend="#letterspaced">Grimm</hi> erhebt <pb facs="krp-0109_r-0029"/>Bedenken gegen die im § 9 letztes al. statuierte Gebührenfreiheit für die Ausweiskarten.</p>
+                  <p>Der Kabinettsrat gibt der Anschauung Ausdruck, dass es sich vorliegendenfalls um die Befreiung von einer allfälligen Manipulationsgebühr handle, dass jedoch das Gebührengesetz nicht berührt werde, und erteilt dem sprechenden Staatssekretär sohin die Ermächtigung zur Einbringung der Gesetzesvorlage.</p>
+                  <p>Weiters ermächtigt der Kabinettsrat den Staatssekretär für Justiz über dessen Antrag zur Einbringung des Entwurfes eines Gesetzes über die Rechtsverhältnisse der Journalisten (Journalistengesetz) in der Nationalversammlung.</p>
+               </div>
+               <div type="top" xml:id="krp-0109_top09">
+                  <head>
+                     <label>
+                        <num n="9">9.</num>
+                        <seg>Gesetzesbeschluss des Salzburger Landtages, betreffend die Erlassung neuer Bestimmungen 1.) über das Diensteinkommen des Lehrpersonales, 2.) die Versetzung von Lehrpersonen in den Ruhestand und die Versorgung ihrer Hinterbliebenen und betreffend die Besorgung des Religionsunterrichtes an den öffentlichen Volks- und Bürgerschulen in Salzburg.</seg>
+                     </label>
+                  </head>
+                  <p>Unterstaatssekretär <hi rend="#letterspaced">Glöckel</hi> führt aus, dass die Salzburger Landesversammlung in ihrer Sitzung vom 22. Jänner 1919 einen Gesetzesbeschluss, betreffend die Erlassung neuer Bestimmungen über das Diensteinkommen des Lehrpersonals, die Versetzung von Lehrpersonen in den Ruhestand und die Versorgung ihrer Hinterbliebenen gefasst habe. Gegen diesen Beschluss sei mit Beschluss des Kabinetts<pb facs="krp-0109_r-0030"/>rates vom 24. März 1919 keine Vorstellung erhoben und es seien nur einige formelle Änderungen in Anregung gebracht worden. Nach Vornahme dieser Änderungen und Wiedervorlage des Gesetzesbeschlusses sei das mit der Gegenzeichnung versehene Exemplar der Landesregierung in Salzburg mit dem Beifügen übersendet worden, dass nunmehr gegen die Kundmachung des Gesetzes kein Anstand obwalte; diese Kundmachung sei jedoch nicht erfolgt.</p>
+                  <p>Inzwischen habe nämlich die Oberösterreichische Landesversammlung am 15. April 1919 einen Gesetzesbeschluss in gleicher Angelegenheit gefasst, welcher die Lehrpersonen besser stellt, als das Salzburger Gesetz, und sie ihrem Wunsche entsprechend, hinsichtlich ihrer Bezüge den Staatsbeamten der fünf untersten Rangsklassen gleichstellt.</p>
+                  <p>Der Salzburger Landtag habe nun augenscheinlich den Standpunkt vertreten, dass das Lehrpersonal des Landes nicht schlechter gestellt werden dürfe, als dasjenige Oberösterreichs, mithin das eben erst fertiggestellte Gesetz nicht durchgeführt und am 5. Juli 1919 Gesetzesbeschlüsse, betreffend A)  die Erlassung neuer Bestimmungen 1.) über das Diensteinkommen des Lehrpersonals, 2.) die Verset<pb facs="krp-0109_r-0031"/>zung von Lehrpersonen in den Ruhestand und die Versorgung ihrer Hinterbliebenen und betreffend B)  die Besorgung des Religionsunterrichtes an den öffentlichen Volks- und Bürgerschulen in Salzburg, gefasst, welche nunmehr der verfassungsmäßigen Behandlung zu unterziehen seien.</p>
+                  <p>Hinsichtlich des Diensteinkommens des Lehrpersonals schließe sich der Gesetzesbeschluss an das neue oberösterreichische Gesetz eng an und weise wie dieses eine bedeutende materielle Besserstellung des Lehrpersonals auf. Die Einzelheiten dieser Besserstellung seien dem Kabinettsrate bereits anlässlich des oberösterreichischen Gesetzesbeschlusses zur Kenntnis gebracht worden und hätten keiner Einwendung begegnet. Was die Bestimmungen über die Versetzung des Lehrpersonals in den Ruhestand und die Versorgung der Hinterbliebenen des Lehrstandes anbelange, so wäre namentlich zu erwähnen, da nunmehr weibliche Lehrpersonen, welche sich verehelichen, im Schuldienst verbleiben können und das eine materielle Besserstellung der Altpensionisten vorgenommen wurde.</p>
+                  <p>Hinsichtlich des Gesetzesbeschlusses, betreffend die Besorgung des Religionsunterrichtes an den öffentlichen <pb facs="krp-0109_r-0032"/>Volks- und Bürgerschulen in Salzburg, wäre hervorzuheben, dass den definitiven Katecheten vier Jahre theologisches Studium in die Dienstzeit eingerechnet werden und auch alleinstehende Seelsorgekatecheten für den Religionsunterricht entlohnt werden.</p>
+                  <p>Mit der teilweisen Aufnahme der Bestimmungen des oberösterreichischen Gesetzes seien aber auch Bestimmungen übernommen worden, deren Änderung seitens der Staatsregierung aufgrund des Kabinettsratsbeschlusses vom 16. Mai 1919 im Wege der Oberösterreichischen Landesregierung verlangt worden ist und welche im seinerzeitigen Gesetzesbeschlusse der Salzburger Landesversammlung vom 22. Jänner 1919 nicht enthalten waren.</p>
+                  <p>Hieher gehöre die Bestimmung des § 12 Abs. 1 des Gesetzesbeschlusses über das Diensteinkommen der Lehrer, dann aber Art. VII des 4. Abschnittes dieses Beschlusses und § 12 des Gesetzesbeschlusses, betreffend die Besorgung des Religionsunterrichtes.</p>
+                  <p>Der genannte § 12 enthalte die Bestimmung, dass Leiter von Volksschulen den Titel „Oberlehrer“ führen, und mache keinen Unterschied, ob an der Schule eine oder mehrere Lehrkräfte wirken. <pb facs="krp-0109_r-0033"/>Diese Bestimmung nun stehe im Widerspruche mit § 12 des Reichsvolksschulgesetzes, wonach nur der verantwortliche Leiter einer Volksschule, an der mehrere Lehrkräfte wirken, als „Oberlehrer“ zu bezeichnen ist, und sei daher entsprechend abzuändern.</p>
+                  <p>Der obzitierte Art. VII und mit ihm gleichlautend der § 12 des Gesetzesbeschlusses, betreffend die Besorgung des Religionsunterrichtes, bestimmen, dass mit dem Vollzuge der Gesetze die Landesregierung betraut sei.</p>
+                  <p>Gemäß § 1 des Gesetzes vom 25. Mai 1868, RGBl. Nr. 48, stehe die oberste Leitung und Aufsicht über das gesamte Unterrichts- und Erziehungswesen dem Staate zu. Diese oberste Leitung und Aufsicht übe der Staat gemäß § 9 des zitierten Gesetzes durch das Unterrichtsministerium, gegenwärtig durch das Staatsamt für Inneres und Unterricht aus.</p>
+                  <p>Die Mitwirkung der Staatsregierung sei daher hinsichtlich aller das Volksschulwesen betreffenden Landesgesetze gesetzlich vorgesehen und es sei daher auch jedes solche Gesetz dem Staatssekretär für Inneres und Unterricht zur Gegenzeichnung vorzulegen.</p>
+                  <p>Da aber die oberste Leitung und Auf<pb facs="krp-0109_r-0034"/>sicht über das Volksschulwesen dem Staatsamte für Inneres und Unterricht zustehe und durch die gesetzlich hiezu berufenen Organe auszuüben sei, könne mit der Durchführung eines Volksschulgesetzes nicht die Landesregierung, wie dies vorliegendenfalls geschah, betraut werden; die gesetzlich vorgesehenen Behörden seien eben das Staatsamt für Inneres und Unterricht und die ihm nachgeordneten Landesschulräte, welche laut § 10 des zitierten Gesetzes zur Leitung und Aufsicht über die Volksschule in jedem Lande berufen sind.</p>
+                  <p>Die beanständeten Bestimmungen hätten richtig zu lauten: „Mit dem Vollzuge dieses Gesetzes ist der Staatssekretär für Inneres und Unterricht betraut.“</p>
+                  <p>Endlich sei aber auch der letzte Abs. des dem Gesetzesbeschlusse vorangestellten Motivenberichtes geeignet, schwerwiegende Bedenken zu erregen und wäre im Falle der Motivenbericht veröffentlicht werden sollte, auf dessen Eliminierung zu dringen.</p>
+                  <p>Laut dieser Bestimmung seien mit Rücksicht auf die Gleichstellung der Lehrpersonen mit den Staatsbeamten der dritten, vierten bzw. fünften untersten Rangsklassen alle jeweilig treffenden Teuerungszu<pb facs="krp-0109_r-0035"/>lagen und Anschaffungsbeiträge in der gleichen Höhe der entsprechenden Klassen der Staatsbeamten durch die Landesregierung zur Auszahlung zu bringen unter der Bedingung, dass der Staat 50 % der Teuerungszulagen und den vollen Betrag der Anschaffungsbeiträge übernimmt.</p>
+                  <p>Das vorliegende Gesetz solle rückwirkend mit 1. Juli 1919 in Kraft treten.</p>
+                  <p>Die Höhe der allen Volksschullehrpersonen seitens des Staates gewährten Anschaffungsbeiträge sowie des vom Staate zur Zahlung übernommenen Teiles der Teuerungszulagen sei pro 1919 in den betreffenden Reichsgesetzen ziffermäßig bestimmt; es erscheine ausgeschlossen, dass mit einer Abänderung dieser Gesetze zu Gunsten der Lehrerschaft Salzburgs vorgegangen würde.</p>
+                  <p>Jedenfalls bedürfe die Bewilligung von Teuerungszulagen und Anschaffungsbeiträgen aus Staatsmitteln stets der Stellungnahme und Zustimmung des Staatsamtes für Finanzen, welches bisher immer den Standpunkt vertreten habe, diese Beiträge nur freiwillig zu leisten, ohne hiezu verpflichtet zu sein, da die sachliche und geldliche Obsorge für das Volksschulwesen nach den geltenden Gesetzen nicht in den Pflichtenkreis des<pb facs="krp-0109_r-0036"/>Staates falle.</p>
+                  <p>Sollte nun das Staatsamt für Finanzen infolge der finanziellen Lage des Staates auch künftighin nicht in der Lage sein, Volksschullehrpersonen, solange sie nicht Staatsbedienstete sind, die gleichen Anschaffungs- und Teuerungszulagen zu gewähren wie Staatsbediensteten, so würde sich die Zusage des Motivenberichtes als ein nicht erfüllbares Versprechen darstellen, das nur dazu dienen könnte, die Lehrerschaft in einen unvermeidlichen Gegensatz zu den Staatsbehörden zu bringen, um auf diese Weise die zur Tragung der Lehrerbezüge verpflichteten Faktoren vor Ansprüchen derselben zu schützen.</p>
+                  <p>Die Bestimmung müsste daher in dieser Fassung aus dem Motivenberichte eliminiert werden.</p>
+                  <p>Der sprechende Unterstaatssekretär ersuche daher, ihn aufgrund dieser Ausführungen zu ermächtigen, gegen die Gesetzesbeschlüsse vom 5. Juli 1919 bei der Landesversammlung im Wege der Landesregierung im Sinne des Art. 14 des Gesetzes vom 14. März 1919, StGBl. Nr. 179, über die Volksvertretung Vorstellungen zu erheben und zugleich dem Landesrate die erwähnten Bedenken gegen die besprochene Fassung des Motivenberichtes zur Kenntnis zu bringen.</p>
+                  <p>
+                     <pb facs="krp-0109_r-0037"/>Der Kabinettsrat erteilt die erbetene Ermächtigung.</p>
+               </div>
+               <div type="top" xml:id="krp-0109_top10">
+                  <head>
+                     <label>
+                        <num n="10">10.</num>
+                        <seg>Gesetzesbeschluss der Vorarlberger Landesversammlung, womit die Wirksamkeit des Gesetzes vom 3. Dezember 1918, LGBl. Nr. 19, über die Aufbringung und Zuweisung der Teuerungszulagen für die Lehrkräfte an den öffentlichen Volks- und Bürgerschulen in Vorarlberg für das Jahr 1919 verlängert wird.</seg>
+                     </label>
+                  </head>
+                  <p>Unterstaatssekretär Glöckel erbittet und erhält die Ermächtigung des Kabinettsrates, dass von der Erhebung einer Vorstellung gegen den von der Vorarlberger Landesversammlung vom 20. Jänner 1919 gefassten Gesetzesbeschluss womit die Wirksamkeit des Gesetzes vom 3. Dezember 1918 über die Aufbringung und Zuweisung der Teuerungszulagen für die Lehrkräfte an den öffentlichen Volks- und Bürgerschulen in Vorarlberg für das Jahr 1919 verlängert wird, abgesehen und die Landesregierung hievon mit dem Bemerken verständigt werde, dass gegen die sofortige Kundmachung dieses Gesetzes seitens der Staatsregierung ein Anstand nicht obwalte.</p>
+               </div>
+               <div type="top" xml:id="krp-0109_top11">
+                  <head>
+                     <label>
+                        <num n="11">11.</num>
+                        <seg>Nichtberücksichtigung von Anregungen der Staatsregierung durch den Oberösterreichischen Landesrat bei Publizierung von Landesgesetzen.</seg>
+                     </label>
+                  </head>
+                  <p>Unterstaatssekretär Glöcke1 erinnert daran, dass der Kabinettsrat ihn mit Beschluss des Kabinettsrates vom 16. Mai 1919 ermächtigt habe, von der Erhebung einer Vorstellung gegen die Gesetzesbeschlüsse der Oberösterreichischen Landesversammlung vom 15. April 1919, <pb facs="krp-0109_r-0038"/>betreffend die Regelung der Rechtsverhältnisse des Lehrstandes an den allgemeinen Volks- und Bürgerschulen in Oberösterreich und betreffend die Besoldung des Religionsunterrichtes an diesen Schulen, abzusehen, die Landesregierung aber zu ersuchen, einzelne Änderungen beim Landesrate in Anregung zu bringen, und letzteren einzuladen, die entsprechend geänderten Gesetze zur Beisetzung der Gegenzeichnung wieder vorzulegen.</p>
+                  <p>In diesem Sinne sei die Oberösterreichische Landesregierung mit dem Erlass vom 24. Mai 1919, Zl. 10.553, verbeschieden worden.</p>
+                  <p>Die in Anregung gebrachten Änderungen seien zum großen Teil formaler Natur gewesen, teilweise wurden sie aber auch aus rechtlichen Bedenken geltend gemacht, so insbesondere die Änderung gegen die in beiden Gesetzen enthaltene Bestimmung, dass die <hi rend="#u">Landesregierung</hi> mit der Durchführung der Gesetze betraut sei.</p>
+                  <p>Wenn der sprechende Unterstaatssekretär im Kabinettsrat darauf eingeraten habe, von einer Vorstellung abzusehen, und der Landesregierung die bezüglichen Änderungen im Wege gutächtlicher Bemerkungen nahe zu legen, so habe er sich hierin im Einklange mit der seitens der <pb facs="krp-0109_r-0039"/>Staatskanzlei in einer an alle Staatsämter gerichteten Zuschrift vom 31. März 1919, Zl. 1.500/St.K., niedergelegten Ansicht zu stehen geglaubt, dass nämlich nur aus den allertriftigsten Gründen, also nur wenn es unvermeidlich sei, von der Erhebung von Vorstellungen Gebrauch gemacht werden möge; weiters sei ihm hiefür die Erwägung maßgebend gewesen, dass bereits in mehreren Fällen, so bei verschiedenen Gesetzen, betreffend die Rechtsverhältnisse des Lehrstandes in Steiermark, und bei dem Lehrergehaltsgesetz Kärntens ein derartiger Schritt wegen Änderung der Durchführungsbestimmung von Erfolg begleitet gewesen sei.</p>
+                  <p>Am 18. August 1918 [sic!], nachdem also seit der Hinausgabe des Erlasses vom 24. Mai 1919, Zl. 10.553, fast drei Monate verstrichen waren, sei ein Bericht des oberösterreichischen Landesschulrates vom 12. August 1919, Zl. 8.609, eingelangt, mit welchem ein Bürstenabzug der Gesetze mit den vom Landesrat beschlossenen Änderungen vorgelegt und berichtet wurde, dass die Landesregierung bereits die Drucklegung der Gesetze zur Ermöglichung der ehesten Publizierung veranlasst habe; weiters wurde mit diesem Berichte auch um die sofortige Bekanntgabe ersucht,<pb facs="krp-0109_r-0040"/>von welchem Mitglied der Staatsregierung die Gegenzeichnung zu erfolgen hätte.</p>
+                  <p>Aus dem vorgelegten Bürstenabzug sei nun entnommen worden, dass zwar eine Reihe der von der Staatsregierung gewünschten Änderungen vorgenommen wurde, dass aber die Durchführungsbestimmungen unverändert geblieben sind und dass nach wie vor die Landesregierung mit der Durchführung der Gesetze betraut sei. Dieser Bericht wurde sodann durch einen weiteren Bericht des Landesschulrates vom 21. August 1919, Zl. 9.215, dahin ergänzt, dass der Landesrat von der Ansicht ausgehe, dass die gegenständlichen Gesetze in erster Linie die Besserung der materiellen Lage der Lehrerschaft bezwecken und deshalb Landesgesetze seien, welche der Gegenzeichnung seitens der Staatsregierung nicht bedürfen.</p>
+                  <p>Diese Auffassung sei nun keinesfalls zutreffend, da das Staatsamt für Inneres und Unterricht nach dem Gesetze vom 25. Mai 1868, RGBl. Nr. 48, ausschließlich zu der obersten Leitung und Aufsicht über das gesamte Unterrichts- und Erziehungswesen, mithin auch zur Durchführung der Landesschulgesetze berufen erscheine.</p>
+                  <p>Es handle sich daher um Gesetze, zu deren Durchführung die Mitwirkung der <pb facs="krp-0109_r-0041"/>Staatsregierung erforderlich ist, und die sohin im Hinblicke auf die Bestimmungen der Art. 14 Abs. 3 und 4 des Gesetzes vom 14. März 1919, StGBl. Nr. 179, im Zusammenhalt mit Art. 4 Abs. 2 dieses Gesetzes der Gesetzeskraft entbehren, wenn sie nicht vom zuständigen Staatssekretär gegengezeichnet sind.</p>
+                  <p>Da die Staatsregierung von den im eben erwähnten Gesetze eingeräumten rechtlichen Mitteln keinen Gebrauch gemacht habe, stehe ihr bedauerlicher Weise dermalen keinerlei Handhabe gegen die Nichtberücksichtigung ihrer Wünsche durch die Landesregierung zu Gebote. Der sprechende Unterstaatssekretär halte es aber nicht nur aus den dargelegten sachlichen Gründen, sondern auch im Interesse der Wahrung der Autorität der Staatsregierung für geboten, die Aufmerksamkeit des Kabinettsrates auf diesen Fall zu lenken, und hiebei zu berichten, dass er eine Zuschrift an die Staatskanzlei unter Darlegung dieser Angelegenheit gerichtet und darin angeregt habe, nach gepflogenem Einvernehmen mit den beteiligten Staatsämtern ergänzende Weisungen zu ihren in Angelegenheit der Behandlung der Landesgesetze ergangenen Erlässen hinauszugeben oder etwa bei einer der näch<pb facs="krp-0109_r-0042"/>sten Länderkonferenzen neuerliche Verhandlungen mit den Ländervertretern über das mit der Staatsregierung in Angelegenheit der Landesgesetze zu pflegende Einvernehmen einzuleiten. Überdies behalte er sich vor, nach Einlangen einer bezüglichen Äußerung der Staatskanzlei die Landesregierung in Oberösterreich auf das Ungesetzliche in der Auffassung des Landesrates im Sinne der vorstehenden Ausführungen aufmerksam zu machen.</p>
+                  <p>Der Kabinettsrat nimmt diese Mitteilungen zur Kenntnis.</p>
+               </div>
+               <div type="top" xml:id="krp-0109_top12">
+                  <head>
+                     <label>
+                        <num n="12">12.</num>
+                        <seg>Gesetz, betreffend das Schieß- und Sprengmittelmonopol.</seg>
+                     </label>
+                  </head>
+                  <p>Unterstaatssekretär Dr. <hi rend="#letterspaced">Waiss</hi> erbittet und erhält die Ermächtigung des Kabinettsrates, den Entwurf eines Gesetzes, betreffend das Schieß- und Sprengmittelmonopol, in der Nationalversammlung einbringen zu dürfen.</p>
+               </div>
+               <div type="top" xml:id="krp-0109_top13">
+                  <head>
+                     <label>
+                        <num n="13">13.</num>
+                        <seg>Vollzugsanweisung, betreffend die Weitergewährung des Zuschusses zu den Unterhaltsbeiträgen für die Angehörigen von Kriegsgefangenen.</seg>
+                     </label>
+                  </head>
+                  <p>Unterstaatssekretär Dr. Waiss weist darauf hin, dass aufgrund des Art. I des Gesetzes vom 28. Juli 1919, StGBl. Nr. 387, zu den Unterhaltsbeiträgen für die Angehörigen von Kriegsgefangenen mit Wirksamkeit vom 1. Juli <pb facs="krp-0109_r-0043"/>1919 angefangen auf drei Monate ein 50%iger Zuschuss gewährt worden sei. Gleichzeitig sei der Staatssekretär für Heer[es]wesen ermächtigt worden, nach Ablauf dieser Zeit einvernehmlich mit dem Staatssekretär für Finanzen nach Maßgabe des finanziellen Erfolges der im gleichen Gesetze angeordneten Überprüfung aller Unterhaltsbeiträge sowie unter Bedachtnahme auf die Preise der Lebensmittel sowie der sonstigen Gegenstände des täglichen Bedarfes den Zuschuss entweder einheitlich oder für bestimmte Gebiete weiterzugewähren.</p>
+                  <p>Da sich im Belange der Preisverhältnisse der Lebensmittel und der Bedarfsgegenstände seit Erlassung des Gesetzes eine Änderung zu Gunsten der Bevölkerung in keiner Weise ergeben habe, besteht die Notwendigkeit, den Zuschuss an die Angehörigen von Kriegsgefangenen auch weiterhin zu gewähren.</p>
+                  <p>Mit Rücksicht darauf jedoch, dass infolge der Kürze der zur Verfügung gestandenen Zeit – die Nationalversammlung habe die von der Staatsregierung für die Zeit vom 1. August bis Ende Oktober beantragte Geltungsdauer der Zuschussgewährung auf die Zeit vom 1. Juli bis Ende September verschoben – eine Überprüfung <pb facs="krp-0109_r-0044"/>der laufenden Unterhaltsbeiträge und somit die Erlangung eines Überblickes über den finanziellen Erfolg dieser gesetzlichen Maßnahme technisch ausgeschlossen gewesen sei, fehle eigentlich die weitere Voraussetzung, unter welcher dem Staatssekretär für Heer[es]wesen die Ermächtigung erteilt wurde, einvernehmlich mit dem Staatssekretär für Finanzen diesen Zuschuss weiterhin zu gewähren.</p>
+                  <p>Bei dieser Sachlage beantrage der sprechende Unterstaatssekretär einvernehmlich mit dem <hi rend="#letterspaced">Staatssekretär für Finanzen</hi>, der Kabinettsrat wolle die Zustimmung zur Erlassung einer Vollzugsanweisung erteilen, mit der die Gewährung des 50%igen Zuschusses zu den Unterhaltsbeiträgen für die Angehörigen von Kriegsgefangenen einheitlich auf weitere zwei Monate, d. i. für die Zeit vom 1. Oktober bis 30. November 1919 gewährt wird.</p>
+                  <p>Der Kabinettsrat erteilt die erbetene Ermächtigung.</p>
+               </div>
+            </div>
+            <div type="stenogramme">
+               <div n="1">
+                  <head>EINZUFÜGEN</head>
+                  <p>Transkription in Arbeit.</p>
+               </div>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>
