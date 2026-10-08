@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href='http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:acdh="https://vocabs.acdh.oeaw.ac.at/schema#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xml:lang="de">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="a" type="main" n="0164">Kabinettsprotokoll Nr. 164 vom 23. März 1920</title>
+            <title level="m" type="main" n="01">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <title level="m" type="sub" n="">Renner III (17. Oktober 1919 – 7. Juli 1920)</title>
+            <meeting>
+               <placeName key="https://d-nb.info/gnd/4066009-6">Wien</placeName>
+               <orgName key="https://d-nb.info/gnd/5162749-8">Kabinettsrat</orgName>
+               <date when-iso="1920-03-23"/>
+            </meeting>
+            <editor>
+               <persName key="https://d-nb.info/gnd/122481836"
+                         role="hasCreator"
+                         xml:id="hwohnout">
+                  <forename>Helmut</forename>
+                  <surname>Wohnout</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</affiliation>
+               <idno type="ORCID">0000-0002-3864-9839</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/120789825"
+                         role="hasCreator"
+                         xml:id="tolechowski">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0003-3291-6876</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/131679384"
+                         role="hasCreator"
+                         xml:id="rlein">
+                  <forename>Richard</forename>
+                  <surname>Lein</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0002-7502-0503</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="aholzer">
+                  <forename>Anna</forename>
+                  <surname>Holzer</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0005-3560-3500</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="dsoelkner">
+                  <forename>Dominik</forename>
+                  <surname>Sölkner</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-9895-7212</idno>
+            </editor>
+            <editor>
+               <persName role="hasContributor" xml:id="ischotzko">
+                  <forename>Ina</forename>
+                  <surname>Schotzko</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-5210-3713</idno>
+            </editor>
+            <funder n="1">
+               <orgName key="https://d-nb.info/gnd/2054142-9" role="hasFunder">Österreichischer Wissenschaftsfonds FWF</orgName>
+               <idno type="project">PAT1495024</idno>
+               <title type="project">Die Protokolle des österreichischen Kabinettsrates 1919–1920</title>
+            </funder>
+            <respStmt>
+               <resp>Projektverantwortung</resp>
+               <orgName key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Projektleitung</resp>
+               <persName key="https://d-nb.info/gnd/120789825" role="hasPrincipalInvestigator">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+                  <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+                  <idno type="ORCID">0000-0003-3291-6876</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Nationaler Forschungspartner</resp>
+               <orgName key="https://d-nb.info/gnd/1123037736" role="hasEnabler">Austrian Centre for Digital Humanities</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Digitalisierung der gedruckten Quellen</resp>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>TEI-Datenmodellierung</resp>
+               <persName role="hasContributor" xml:id="tfruehwirth">
+                  <forename>Timo</forename>
+                  <surname>Frühwirth</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-3997-5193</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technische Supervision</resp>
+               <persName key="https://d-nb.info/gnd/1043833846"
+                         role="hasContributor"
+                         xml:id="pandorfer">
+                  <forename>Peter</forename>
+                  <surname>Andorfer</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-9575-9372</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technisches Consulting und Vorbereitung der Druckausgabe</resp>
+               <persName key="https://d-nb.info/gnd/13281899X"
+                         role="hasContributor"
+                         xml:id="skurz">
+                  <forename>Stephan</forename>
+                  <surname>Kurz</surname>
+                  <affiliation key="https://d-nb.info/gnd/1202798799">Institut für die Erforschung der Habsburgermonarchie und des Balkanraumes</affiliation>
+                  <idno type="ORCID">0000-0003-2546-2570</idno>
+               </persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher key="https://d-nb.info/gnd/1001454-8">Österreichische Akademie der Wissenschaften</publisher>
+            <date when="2028"/>
+            <availability status="free">
+               <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">Lizenziert unter CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/deed.de)</licence>
+            </availability>
+            <idno type="ISBN_Print"/>
+            <idno type="ISBN_Part_epub"/>
+            <idno type="ISBN_Digital"/>
+            <idno type="DOI"/>
+            <idno type="DOI_zenodo"/>
+            <idno type="ebook_ID"/>
+         </publicationStmt>
+         <seriesStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="m" type="main">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <respStmt>
+               <resp>Bearbeitung und Herausgeberschaft</resp>
+               <orgName key="https://d-nb.info/gnd/2024703-5">Universität Wien</orgName>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+         </seriesStmt>
+         <notesStmt>
+            <note>Diese TEI-XML-Datei ist Grundlage für eine Druckausgabe der Edition.</note>
+            <relatedItem>
+               <biblStruct>
+                  <monogr>
+                     <imprint>
+                        <pubPlace key="https://d-nb.info/gnd/4066009-6">Wien</pubPlace>
+                        <publisher key="https://d-nb.info/gnd/2068748-5">Verlag der Österreichischen Akademie der Wissenschaften</publisher>
+                        <date when="2029"/>
+                     </imprint>
+                     <extent/>
+                  </monogr>
+                  <note>
+                     <idno/>
+                     <ptr/>
+                  </note>
+                  <citedRange/>
+               </biblStruct>
+            </relatedItem>
+         </notesStmt>
+         <sourceDesc>
+            <bibl>Quellbestand: AT-OeStA/AdR MRang MR 1Rep KRP Kabinettsratsprotokolle, 1918-1920 (Teilbestand)<ref target="https://www.archivinformationssystem.at/detail.aspx?id=5465">https://www.archivinformationssystem.at/detail.aspx?id=5465</ref>
+            </bibl>
+            <msDesc>
+               <msIdentifier>
+                  <institution key="https://d-nb.info/gnd/37748-X" role="hasOwner">AT-OeStA Österreichisches Staatsarchiv (Archiv (ÖStA))</institution>
+                  <repository key="https://d-nb.info/gnd/1601181-8">AT-OeStA/AdR Archiv der Republik, 1918- (Abteilung)</repository>
+                  <collection>AT-OeStA/AdR MRang MR 1Rep Ministerrat 1. Republik, 1918 - 1938 (Bestand)</collection>
+                  <idno>AT-OeStA_AdR-MRang-MR-1.-Rep.-KRP-164</idno>
+               </msIdentifier>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <abstract>
+            <p>
+          <!--to be generated-->
+        </p>
+         </abstract>
+      </profileDesc>
+      <encodingDesc>
+         <styleDefDecl scheme="css"/>
+         <tagsDecl>
+            <rendition xml:id="b" scheme="css">font-weight:bold;</rendition>
+            <rendition xml:id="su" scheme="css">vertical-align:super;font-size:.7em;</rendition>
+            <rendition xml:id="s" scheme="css">text-decoration:line-through;</rendition>
+            <rendition xml:id="u" scheme="css">text-decoration:underline;</rendition>
+            <rendition xml:id="ow" scheme="css">text-decoration:line-through;text-decoration-style:double;</rendition>
+            <rendition xml:id="r" scheme="css">display:block;text-align:right;</rendition>
+            <rendition xml:id="letterspaced" scheme="css">letter-spacing:0.15em;</rendition>
+            <rendition xml:id="i" scheme="css">font-style:italic;</rendition>
+         </tagsDecl>
+         <editorialDecl>
+            <hyphenation>
+               <p>
+            <!--to be added-->
+          </p>
+            </hyphenation>
+            <correction>
+               <p>
+            <!--to be added-->
+          </p>
+            </correction>
+            <normalization>
+               <p>
+            <!--to be added-->
+          </p>
+            </normalization>
+            <punctuation>
+               <p>
+            <!--to be added-->
+          </p>
+            </punctuation>
+            <stdVals>
+               <p>
+            <!--to be added-->
+          </p>
+            </stdVals>
+            <p>
+          <!--to be added-->
+        </p>
+         </editorialDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#tfruehwirth" when-iso="2026-10-08">TEIGarage output upconverted with upconvert.xsl</change>
+         <change who="#tfruehwirth" when-iso="2026-10-08">TEI header populated with generate_tei_templates.py</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface/>
+   </facsimile>
+   <text>
+      <body>
+         <div xml:id="doc-krp-0164.xml">
+            <head type="dokument">
+               <title type="num">164.<note type="footnote">Das Protokoll trägt den Vermerk <hi rend="#i">Vertraulich!</hi>
+                  </note>
+               </title>
+               <title type="desc">
+                  <pb facs="krp-0164_r-0001"/>
+                  <pb facs="krp-0164_r-0002"/>[Dienstag] 1920-03-23</title>
+            </head>
+            <div type="dokumentkopf">
+               <div type="vorsitz">
+                  <head>Vorsitz:</head>
+                  <p>Renner</p>
+               </div>
+               <div type="anwesend">
+                  <head>Anwesend:</head>
+                  <p>Deutsch, Eisler, Eldersch, Ellenbogen, Fink, Glöckel, Hanusch, Loewenfeld-Russ, Mayr, Miklas, Paul, Ramek, Reisch, Resch, Stöckler, Tandler, Waiss, Zerdik</p>
+               </div>
+               <div type="zugezogen">
+                  <head>Zugezogen:</head>
+                  <p>Dorrek</p>
+               </div>
+               <div type="schriftfuehrer">
+                  <head>Schriftführer:</head>
+                  <p>unbekannt</p>
+               </div>
+               <div type="dauer">
+                  <head>Dauer:</head>
+                  <p>20.00–01.00 Uhr</p>
+               </div>
+            </div>
+            <div type="komponenten">
+               <p>Reinschrift, Beilagen, Anhänge, Konzept, stenographische Mitschrift, Entwurf der Tagesordnung, diverse Zusätze</p>
+            </div>
+            <div type="beilagen">
+               <head>Beilagen:</head>
+               <list>
+                  <item>
+                     <ref target="#krp-0164_top04">Zu TOP 4</ref>: <ref target="#krp-0164_b01">Verzeichnis zu Zl. 127/20 St.K./1920 der aufgrund des Kriegswirtschaftlichen Ermächtigungsgesetzes erlassenen Vollzugsanweisungen</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0164_top06">Zu TOP 6</ref>: <ref target="#krp-0164_b02">Referat des Staatsamtes für Äußeres Zl. 16.038/1920 über die Vereinbarungen mit Ungarn zur Liquidierung der ehem. Zentralstellen und die Mitwirkung bei Vergleichen über laufende Militärlieferungsverträge</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0164_top07">Zu TOP 7</ref>: <ref target="#krp-0164_b03">Vortrag des Staatsamtes für Äußeres zu Zl. 16.796/1920 über das Regierungsübereinkommen mit Litauen zur Heimbeförderung österreichischer Kriegsgefangener aus Russland über Litauen</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0164_top08">Zu TOP 8</ref>: <ref target="#krp-0164_b04">Vortrag des Unterrichtsamtes zu Zl. 4900/20 über den Gesetzesbeschluss der Tiroler Landesversammlung zum Landesschulgesetz</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0164_top09">Zu TOP 9</ref>: <ref target="#krp-0164_b05">Antrag auf Erklärung des Kraftwerkbaus am Spullersee als begünstigten Bau</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0164_top10">Zu TOP 10</ref>: <ref target="#krp-0164_b06">Auszug für den Vortrag des Staatsamtes für Inneres und Unterricht über den Gesetzesbeschluss der Kärntner Landesversammlung zur Gemeindewahlordnung, ausgenommen die Städte mit eigenem Statut</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0164_top11">Zu TOP 11</ref>: <ref target="#krp-0164_b07">Auszug für den Vortrag des Staatsamtes für Inneres und Unterricht über den Gesetzesbeschluss des Steiermärkischen Landtages zur Einhebung städtischer Verbrauchsabgaben in Graz</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0164_top12">Zu TOP 12</ref>: <ref target="#krp-0164_b08">Vortrag des Staatsamtes für Inneres und Unterricht über Beschlüsse der Landesräte in Niederösterreich und Kärnten sowie der Tiroler und Steiermärkischen Landtage in autonomen Finanzangelegenheiten</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0164_top13">Zu TOP 13</ref>: <ref target="#krp-0164_b09">Vortrag des Staatsamtes für Finanzen über die Erhöhung der Tabakpreise</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0164_top15">Zu TOP 15</ref>: <ref target="#krp-0164_b10">Vortrag des Staatsamtes für Finanzen über den Gesetzesentwurf über die Regelung des Dienstverhältnisses der Steuerexekutoren</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0164_top15">Zu TOP 15</ref>: <ref target="#krp-0164_b11">Gesetzesentwurf über die Regelung des Dienstverhältnisses der Steuerexekutoren mit Begründung</ref>
+                  </item>
+               </list>
+            </div>
+            <div type="protokoll">
+               <pb facs="krp-0164_r-0003"/>
+               <div type="top" xml:id="krp-0164_top01">
+                  <head>
+                     <label>
+                        <num n="1">1.</num>
+                        <seg>Behandlung von Personalangelegenheiten der Kabinettsmitglieder.</seg>
+                     </label>
+                  </head>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> führt aus, dass die Regelung der dienstlichen oder der materiellen Stellung der beamteten Mitglieder des Kabinettes gelegentlich ihrer Wahl oder später nach Maßgabe des Gesetzes vom 26. Februar 1920, StGBl. Nr. 94, Gegenstand der Antragstellung an den Präsidenten der Nationalversammlung werden könne. Da jeder Staatssekretär dem Personalstande seines Ressorts angehöre, hätten derartige Anträge jeweils von ihm selbst auszugehen. Ein solches Hervortreten in eigener Sache wäre aber für jedes Kabinettsmitglied naturgemäß sehr misslich, wie es auch nicht angebracht erschiene, dass der Kabinettsrat Personalfragen seiner Mitglieder erörtere. Aus diesen Erwägungen glaube der Vorsitzende den Vorschlag machen zu sollen, der Kabinettsrat möge die Antragstellung in diesen Fällen, zu welchen nach dem Gesetz die Staatsregierung als solche berufen erscheine, ein für alle Mal an den Staatskanzler, bzw. in den Angelegenheiten, welche diesen betreffen, an den Vizekanzler delegieren und diese ermächtigen, die Unterbreitungen an den Präsidenten der Nationalversammlung selbständig im Namen des Kabinettsrates zu vollziehen.</p>
+                  <p>
+                     <pb facs="krp-0164_r-0004"/>Entsprechend dem Antrage des Vorsitzenden fasst der Kabinettrat folgenden Beschluss: Die Antragstellung in Personalangelegenheiten der Kabinettsmitglieder an den Präsidenten der Nationalversammlung wird dem Staatskanzler übertragen. Wenn eine Personalangelegenheit des Staatskanzlers selbst in Frage kommt, obliegt deren amtliche Behandlung dem Vizekanzler.</p>
+               </div>
+               <div type="top" xml:id="krp-0164_top02">
+                  <head>
+                     <label>
+                        <num n="2">2.</num>
+                        <seg>Verbilligte Abgabe von Corned Beef in Steiermark.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Reisch</hi> teilt mit, dass Landeshauptmann Dr. Rintelen unter Berufung auf eine mit dem Staatskanzler gepflogene Rücksprache an ihn mit dem Wunsch herangetreten sei, für Steiermark zur Behebung der eingetretenen Fleischnot sechs Waggons Corned Beef zur Verfügung zu stellen, welche zu dem dort für frisches Fleisch geltenden Preise zwischen 20 und 23 K abgegeben werden sollen. Da der Fleischpreis in Wien auf 120 K festgesetzt sei, halte der sprechende Staatssekretär eine verbilligte Abgabe in Steiermark für unzulässig und erbitte darum, wie auch aus staatsfinanziellen Gründen die Ermächtigung, das Einschreiten des Landeshauptmannes um Übernahme der Preisdifferenz auf den <pb facs="krp-0164_r-0005"/>Staatsschatz abschlägig bescheiden zu dürfen.</p>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> bemerkt, dass es sich nach den Angaben des Landeshauptmannes Dr. Rintelen nicht um eine fortlaufende Belieferung von Steiermark mit Corned Beef, sondern nur darum handle, gewisse Reserven für den Notfall anzulegen, da die steirischen Landwirte sich in der letzten Zeit geweigert haben, die ihnen aufgetragenen Viehlieferungen für Graz auszuführen. Die Frage, zu welchem Preis das Corned Beef abgegeben werden solle, sei bei der Unterredung mit Dr. Rintelen nicht berührt worden.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Loewenfeld-Russ</hi> vertritt gleichfalls den Standpunkt, dass in den Abgabepreisen für Corned Beef in Steiermark und in Wien unmöglich ein Unterschied gemacht werden könne, glaubt aber, dass sich darüber mit der steirischen Landesregierung noch eine Verständigung werde finden lassen.</p>
+                  <p>Unterstaatssekretär Dr. <hi rend="#letterspaced">Eisler</hi> begründet den Standpunkt der Landesregierung in Graz damit, dass Steiermark mit der Fleischversorgung in große Bedrängnis geraten sei und geglaubt habe, in dieser Notlage vom Staate einen Zuschuss zur Ermäßigung der Fleischverkaufspreise, wie er für Wien ständig geleistet werde, in <pb facs="krp-0164_r-0006"/>Anspruch nehmen zu können.</p>
+                  <p>Nach einer kurzen Polemik des Staatssekretärs <hi rend="#letterspaced">Eldersch</hi> gegen die Stichhältigkeit dieser Auffassung der Landesregierung in Graz nimmt der Kabinettsrat zur Kenntnis, dass die Staatssekretäre für Volksernährung und für Finanzen eine verbilligte Abgabe von Corned Beef für Steiermark abzulehnen beabsichtigen.</p>
+               </div>
+               <div type="top" xml:id="krp-0164_top03">
+                  <head>
+                     <label>
+                        <num n="3">3.</num>
+                        <seg>Einsetzung einer zwischenstaatlichen Kommission zu Vereinbarungen mit den Nachfolgestaaten über die Verteilung des Vermögens ehemals gemeinsamer Sozialversicherungsanstalten.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Hanusch</hi> bringt dem Kabinettsrat zur Kenntnis, dass für den 26. d. [M.] eine vorbereitende Besprechung zwischen Vertretern der österreichischen Regierung und den Regierungen der Nationalstaaten in Aussicht genommen sei, um Vereinbarungen über die Verteilung des Vermögens der ehemals gemeinsamen Sozialversicherungsanstalten einzuleiten. Das Staatsamt für soziale Verwaltung beabsichtige dabei, nach dem mit den übrigen Staatsämtern erzielten Einverständnis die Einsetzung einer zwischenstaatlichen Kommission in der Weise vorzuschlagen, dass jeder Staat nur je ein stimmberechtigtes Mitglied entsendet und diesem die Vertreter der sonst beteiligten Ressorts als bloße Berater beigegeben werden. Als Vertreter der österreichischen Regierung sei der Sektionschef im Staats<pb facs="krp-0164_r-0007"/>amte für soziale Verwaltung Dr. Kaan in Aussicht genommen.</p>
+                  <p>Der sprechende Staatssekretär erbitte die Genehmigung des Kabinettsrates zur Errichtung einer derartigen zwischenstaatlichen Kommission und die Ermächtigung, als Vertreter der österreichischen Staatsregierung Sektionschef Dr. Kaan bestellen zu dürfen.</p>
+                  <p>Der Kabinettsrat beschließt im Sinne des gestellten Antrages.</p>
+               </div>
+               <div type="top" xml:id="krp-0164_top04">
+                  <head>
+                     <label>
+                        <num n="4">4.</num>
+                        <seg>Verzeichnis der in der Zeit vom 1. November bis 31. März aufgrund des Kriegswirtschaftlichen Ermächtigungsgesetzes erlassenen Vollzugsanweisungen; Vorlage an die Nationalversammlung.</seg>
+                     </label>
+                  </head>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> ersucht um die Genehmigung des Kabinettsrates, eine Sammlung und ein Verzeichnis der in der Zeit vom 1. November 1919 bis 31. Jänner 1920 aufgrund des Kriegswirtschaftlichen Ermächtigungsgesetzes erlassenen Vollzugsanweisungen dem Präsidium der Nationalversammlung vorlegen zu dürfen.</p>
+                  <p>Der Kabinettsrat erteilt die erbetene Ermächtigung.</p>
+               </div>
+               <div type="top" xml:id="krp-0164_top05">
+                  <head>
+                     <label>
+                        <num n="5">5.</num>
+                        <seg>Vorlage einer aufgrund des zoll- und handelspolitischen Ermächtigungsgesetzes erlassenen Vollzugsanweisung an die Nationalversammlung.</seg>
+                     </label>
+                  </head>
+                  <p>Der Vorsitzende erbittet und erhält die Ermächtigung des Kabinettsrates zur Vorlage der aufgrund des <pb facs="krp-0164_r-0008"/>Gesetzes vom 6. Mai 1919, StGBl. Nr. 277 (zoll- und handelspolitisches Ermächtigungsgesetz) erlassenen Vollzugsanweisung der Staatsämter für Finanzen, für Handel und Gewerbe, Industrie und Bauten und für Land- und Forstwirtschaft vom 3. Dezember 1919, StGBl. Nr. 545, über die Zollbehandlung des Warenverkehres mit Ungarn an das Präsidium der Nationalversammlung.</p>
+               </div>
+               <div type="top" xml:id="krp-0164_top06">
+                  <head>
+                     <label>
+                        <num n="6">6.</num>
+                        <seg>Vereinbarung mit Ungarn über die Liquidierung der ehemals gemeinsamen Zentralstellen und die Mitwirkung bei Vergleichen über laufende Militärlieferungsverträge.</seg>
+                     </label>
+                  </head>
+                  <p>Der Vorsitzende unterbreitet dem Kabinettsrat das diesem Protokolle als Beilage A) angeschlossene Referat, betreffend die Vereinbarungen mit Ungarn über die Liquidierung der ehemals gemeinsamen Zentralstellen und die Mitwirkung bei Vergleichen über laufende Militärlieferungsverträge, und erbittet die Zustimmung zu den darin gestellten Anträgen.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Deutsch</hi> wendet ein, dass die Vereinbarungen der ungarischen Regierung einen zu großen Spielraum sowohl hinsichtlich der Zahl als auch hinsichtlich der Befugnisse ihrer Exponenten bei den ehemals gemeinsamen Zentralstellen in Wien einräumen.</p>
+                  <p>Der Kabinettsrat tritt dem vom Vor<pb facs="krp-0164_r-0009"/>sitzenden gestellten Antrage bei, beschließt aber, dass in dem Geleitschreiben über die Genehmigung des Übereinkommens an die ungarische Gesandtschaft außer den bereits im Antrag vorgesehenen Vorbehalten noch folgende Beisätze zu machen sein werden: Über die unbedingt notwendige Zahl der Exponenten der ungarischen Regierung bei den ehemals gemeinsamen Zentralstellen ist in jedem konkreten Falle zunächst mit der österreichischen Regierung das Einvernehmen herzustellen. Jeder dieser Exponenten muss von der ungarischen Gesandtschaft der österreichischen Regierung angemeldet werden, und darf seine Befugnisse erst nach erfolgter ausdrücklicher Zulassung von Seite der österreichischen Regierung ausüben. Die im Übereinkommen I unter Pkt. II Z. 2 vorgesehene Zustellung der auslaufenden Geschäftsstücke vor der Absendung an die ungarischen Exponenten darf die Erledigung der Akten nicht aufhalten.</p>
+               </div>
+               <div type="top" xml:id="krp-0164_top07">
+                  <head>
+                     <label>
+                        <num n="7">7.</num>
+                        <seg>Regierungsübereinkommen mit Litauen, betreffend die Heimbeförderung der österreichischen Kriegsgefangenen aus Russland über Litauen.</seg>
+                     </label>
+                  </head>
+                  <p>Der Vorsitzende erstattet dem Kabinettsrate das diesem Protokolle als Beilage B) angeschlossene Referat über ein Regierungsübereinkommen mit Litauen, betreffend die Heimbeförde<pb facs="krp-0164_r-0010"/>rung der österreichischen Kriegsgefangenen aus Russland über Litauen und erbittet die Genehmigung des Kabinettsrates zu dem darin gestellten Antrage.</p>
+                  <p>Der Kabinettsrat beschließt in diesem Sinne.</p>
+               </div>
+               <div type="top" xml:id="krp-0164_top08">
+                  <head>
+                     <label>
+                        <num n="8">8.</num>
+                        <seg>Gesetzesbeschluss der Tiroler Landesversammlung vom 30. Jänner 1920, womit ein Landesschulgesetz für Tirol erlassen wird.</seg>
+                     </label>
+                  </head>
+                  <p>Unterstaatssekretär <hi rend="#letterspaced">Glöckel</hi> berichtet, dass die Tiroler Landesversammlung in der Sitzung vom 30. Jänner 1920 einen Beschluss gefasst habe, womit ein Landesschulgesetz für Tirol erlassen wird. Der Gesetzesbeschluss gebe, abgesehen von einigen Druckfehlern, zu keinem Bedenken Anlass. In der Frage der Gegenzeichnung sei zu bemerken, dass nach Art. X des neuen Gesetzes die Durchführung dem Staatssekretär für Inneres und Unterricht im Verein mit dem Staatssekretär für Finanzen und dem Staatssekretär für Justiz obliegen solle; im Sinne des Art. 14 des Gesetzes vom 14. März 1919, StGBl. Nr. 179, wäre aber die Gegenzeichnung bloß durch den in erster Reihe zuständigen Staatssekretär für Inneres und Unterricht ausreichend.</p>
+                  <p>Nach dem Antrage des sprechenden Unterstaatssekretärs beschließt der Kabinettsrat, von der Erhebung einer Vorstel<pb facs="krp-0164_r-0011"/>lung gegen den Gesetzesbeschluss Abstand zu nehmen und der sofortigen Kundmachung zuzustimmen. Der Originalgesetzestext wird vom Staatssekretär für Inneres und Unterricht gegenzuzeichnen und sodann der Landesregierung in Innsbruck zur Berichtigung der unterlaufenen Druckfehler vor Kundmachung des Gesetzes zu übermitteln sein.</p>
+               </div>
+               <div type="top" xml:id="krp-0164_top09">
+                  <head>
+                     <label>
+                        <num n="9">9.</num>
+                        <seg>Erklärung des Ausbaues der Kraftwerke am Spullersee als begünstigter Bau.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Stöckler</hi> macht dem Kabinettsrat Mitteilung von dem Einschreiten des Elektrisierungsamtes der österreichischen Staatsbahnen um Erklärung des geplanten Ausbaues des Kraftwerkes am Spullersee bei Danöfen (Spullerseewerk) einschließlich aller zur Baudurchführung erforderlichen Hilfs- und Nebenanlagen als begünstigter Bau im Sinne der Kaiserlichen Verordnung vom 16. Oktober 1914, RGBl. Nr. 284. Da das geplante Kraftwerk der Elektrisierung der Staatsbahnen, somit einem öffentlichen Zwecke dienen solle, und die Durchführung des Baues mit Rücksicht auf den Kohlemangel als dringend anzusehen sei, stelle Redner den Antrag, dem Einschreiten Folge zu geben.</p>
+                  <p>Der Kabinettsrat beschließt sohin die <pb facs="krp-0164_r-0012"/>Erklärung der Ausführung des erwähnten Projektes als begünstigten Bau.</p>
+               </div>
+               <div type="top" xml:id="krp-0164_top10">
+                  <head>
+                     <label>
+                        <num n="10">10.</num>
+                        <seg>Gesetzesbeschluss der Kärntner Landesversammlung über die Gemeindewahlordnung für die Gemeinden des Landes Kärnten mit Ausnahme der Städte mit eigenem Statut.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Eldersch</hi> legt dem Kabinettsrate einen Gesetzesbeschluss der Landesversammlung in Kärnten über die Gemeindewahlordnung für die Gemeinden des Landes Kärnten mit Ausnahme der Städte mit eigenem Statut vor und bespricht die wesentlichsten Bestimmungen dieses Gesetzes.</p>
+                  <p>Nach seinem Antrage beschließt der Kabinettsrat von der Erhebung einer Vorstellung abzusehen und der sofortigen Verlautbarung des Gesetzes zuzustimmen.</p>
+               </div>
+               <div type="top" xml:id="krp-0164_top11">
+                  <head>
+                     <label>
+                        <num n="11">11.</num>
+                        <seg>Gesetzesbeschluss des Steiermärkischen Landtages, betreffend die Einhebung von städtischen Verbrauchsabgaben im Gebiete der Landeshauptstadt Graz.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Eldersch teilt dem Kabinettsrate mit, dass der Steiermärkische Landtag in der Sitzung vom 26. Februar 1920 einen Gesetzesbeschluss, betreffend die Einhebung von städtischen Verbrauchsabgaben im Gebiete der Landeshauptstadt Graz gefasst habe. Das Erträgnis der neuen Abgaben sei für das Jahr 1920 mit 15 ½ Millionen K, und für das Jahr 1921 mit 19 Millionen K <pb facs="krp-0164_r-0013"/>veranschlagt und solle zur teilweisen Deckung des für das Jahr 1920 mit rund 20 Millionen K bezifferten Abganges im Gemeindehaushalte der Stadt Graz dienen. Die neuen Abgaben treten an die Stelle des bisher in Graz eingehobenen 40 % Zuschlages zur Verzehrungssteuer und der bisherigen Gemeindeabgaben für Spirituosen, Bier, Wein, Weinmost, Weinmaische und Obstmost. Im Einvernehmen mit dem Staatssekretär für Finanzen stellt der sprechende Staatssekretär den Antrag, gegen den Gesetzesbeschluss keine Vorstellung zu erheben und der sofortigen Kundmachung zuzustimmen.</p>
+                  <p>Der Kabinettsrat beschließt in diesem Sinne.</p>
+               </div>
+               <div type="top" xml:id="krp-0164_top12">
+                  <head>
+                     <label>
+                        <num n="12">12.</num>
+                        <seg>Beschlüsse des Niederösterreichischen Landtages und Landesrates, des Kärntnerischen Landesrates und des Tiroler und des Steiermärkischen Landtages in autonomen Finanzengelegenheiten.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Eldersch teilt mit, dass die Niederösterreichische Landesregierung die Erwirkung der Genehmigung der Staatsregierung für die Beschlüsse des Niederösterreichischen Landtages vom 1. Oktober 1919, betreffend die Einhebung von 100 % übersteigenden Umlagen in den Gemeinden: Hettmannsdorf, Thomasberg, Wolfsegg, Oberkirchen, Neueigen, Köttlach, Willendorf, Bogenneusiedl-Streifing, Reichaueramt, Michelhausen und <pb facs="krp-0164_r-0014"/>Türnitz sowie für den Beschluss des Niederösterreichischen Landesrates vom 20. Februar 1919, betreffend die Einhebung einer Mietzinsauflage in der Gemeinde Hainburg und für den Beschluss des Niederösterreichischen Landtages vom 27. Jänner 1920, betreffend die Einhebung einer 16%igen Armenumlage im Armenbezirke St. Peter in der Au beantragt habe.</p>
+                  <p>Weiters sei die Landesregierung in Kärnten um die Genehmigung der Staatsregierung für die Beschlüsse des Kärntnerischen Landesrates vom 7. August, 13. und 26. September und 21. Oktober 1919, betreffend die Einhebung von 200 % übersteigenden Umlagen in den Gemeinden Sachsenburg, St. Salvator, Egg und Grades, bzw. vom 5. Dezember 1919, betreffend die Einhebung von Bier- und Branntweinauflagen in der Gemeinde Bleiburg, eingeschritten.</p>
+                  <p>Ferner habe die Landesregierung in Tirol die Erwirkung der Genehmigung der Staatsregierung für die Beschlüsse des Tiroler Landtages vom 18. und 19. Dezember 1919 und vom 30. Jänner 1920, betreffend die Einhebung von Landeszuschlägen und Wertzuwachsabgaben sowie von verschiedenen Gemeindeauflagen in Innsbruck, sowie schließlich die Landesregierung in Steiermark die <pb facs="krp-0164_r-0015"/>Genehmigung für den Beschluss des Steiermärkischen Landtages vom 17. Oktober 1919, betreffend die Einhebung von Verzehrungssteuerzuschlägen in der Gemeinde Graz nachgesucht.</p>
+                  <p>Über Vorschlag des sprechenden Staatssekretärs genehmigt der Kabinettsrat die vorangeführten Beschlüsse.</p>
+               </div>
+               <div type="top" xml:id="krp-0164_top13">
+                  <head>
+                     <label>
+                        <num n="13">13.</num>
+                        <seg>Erhöhung der Tabakpreise.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Reisch</hi> begründet anhand eines ausführlichen Referates die Notwendigkeit, die Tabakpreise einer neuerlichen Erhöhung zu unterziehen, um das Monopol, das bei Einkalkulierung der jetzigen, wesentlich gesteigerten Einkaufspreise für das Rohmaterial und der neuen Arbeitslöhne mit einem starken Verlust arbeiten würde, gewinnbringend zu erhalten und daraus auch noch gewisse Erträgnisse zur Deckung der Mehraufwendungen für die Staatsangestellten zu ziehen. Die bisher linear vorgenommenen Preiserhöhungen hätten es mit sich gebracht, dass die Verkaufspreise nicht in dem richtigen Verhältnisse zu den Gestehungskosten für die einzelnen Sorten stehen, so zwar, dass sich die Notwendigkeit ergebe, bei jenen Sorten, an welchen der Verlust des Staates der größte ist, eine <pb facs="krp-0164_r-0016"/>stärkere Steigerung eintreten zu lassen. Eine allzu starke Anspannung der Preise in diesem Falle solle aber durch eine Ermäßigung des Monopolgewinnes vermieden werden. Redner erbitte die Ermächtigung, den neuen Verschleißtarif mit Rechtswirksamkeit vom 12. April l. J. in Geltung setzen zu dürfen.</p>
+                  <p>Nach einer kurzen Bemerkung des Staatssekretärs <hi rend="#letterspaced">Eldersch</hi>, welcher auf die fast unerträgliche Belastung des Konsums durch die neuen Tabakpreise hinweist, erteilt der Kabinettsrat dem Antrage des Staatssekretärs [Dr.] Reisch die Zustimmung.</p>
+               </div>
+               <div type="top" xml:id="krp-0164_top14">
+                  <head>
+                     <label>
+                        <num n="14">14.</num>
+                        <seg>Kompensationsvertrag mit Polen.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Ing. <hi rend="#letterspaced">Zerdik</hi> unterbreitet dem Kabinettsrate den mit der polnischen Regierung geschlossenen Vertrag über die Lieferungen von Rohprodukten und Lebensmitteln aus Polen gegen Kompensationen von Österreich in industriellen Artikeln und Sachdemobilisierungsgütern und erbittet die Entscheidung des Kabinettsrates über die Genehmigung dieses Übereinkommens.</p>
+                  <p>Über den Gegenstand entwickelt sich eine längere Debatte, in welcher sich die Staatssekretäre Dr. <hi rend="#letterspaced">Deutsch</hi>, <hi rend="#letterspaced">Eldersch</hi> und Dr. <hi rend="#letterspaced">Ellenbogen</hi>
+                     <pb facs="krp-0164_r-0017"/>aus inner- und außenpolitischen Gründen gegen die Ratifikation, die Staatssekretäre Dr. <hi rend="#letterspaced">Reisch</hi> und Dr. <hi rend="#letterspaced">Loewenfeld-Russ</hi> im Interesse der Rohstoffversorgung unserer Industrie sowie der Lebensmittelversorgung für die Genehmigung des Vertrages aussprechen.</p>
+                  <p>Da der <hi rend="#letterspaced">Vorsitzende</hi> es für wünschenswert bezeichnet, zunächst noch Aufklärungen über die Sach- und Rechtslage einzuziehen, beschließt der Kabinettsrat von der Entscheidung über den Gegenstand vorläufig abzusehen.</p>
+               </div>
+               <div type="top" xml:id="krp-0164_top15">
+                  <head>
+                     <label>
+                        <num n="15">15.</num>
+                        <seg>Entwurf eines Gesetzes, betreffend die Regelung des Dienstverhältnisses der Steuerexekutoren.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Reisch</hi> verweist darauf, dass die in den letzten Monaten erfolgte Einreihung verschiedener Angestelltengruppen, zuletzt der gerichtlichen Vollstreckungsorgane, in die Beamtenkategorie bei den Steuerexekutoren, die derzeit vertraglich angestellt seien, den Wunsch nach Pragmatisierung ausgelöst habe. Der sprechende Staatssekretär müsse dieses Streben angesichts der in den anderen Ressorts vorgekommenen Beispiele als berechtigt anerkennen und beabsichtige daher, der Nationalversammlung den Entwurf eines Gesetzes über die Regelung des Dienstverhältnis<pb facs="krp-0164_r-0018"/>ses der Steuerexekutoren zu unterbreiten. Er erbitte hiezu die Ermächtigung des Kabinettsrates.</p>
+                  <p>Der Kabinettsrat beschließt im Hinblicke darauf, dass die Angelegenheit ursprünglich gleichzeitig mit der Pragmatisierung der gerichtlichen Vollstreckungsorgane geregelt werden sollte, und nur durch die Notwendigkeit vorheriger Bereinigung einzelner Zwischenfragen im Rückstande verblieben ist, der Einbringung des Gesetzentwurfes in der Nationalversammlung zuzustimmen, die Behandlung aller weiteren Wünsche von Staatsangestellten jedoch nach dem in der Sitzung vom 19. März 1920 gefassten Beschluss einzurichten und diesen Beschluss nunmehr zu veröffentlichen.</p>
+                  <p/>
+               </div>
+            </div>
+            <div type="anhaenge">
+               <div n="1">
+                  <pb facs="krp-0164_a01-0001"/>
+                  <head>Versetzung des Sektionschefs im Volksgesundheitsamte Dr. Ignaz Kaup in den zeitlichen Ruhestand.</head>
+                  <p>Streng vertraulicher Anhang zum Kabinettsprotokoll Nr. 164 vom 23. März 1920.</p>
+                  <div type="a01_protokoll">
+                     <p>Unterstaatssekretär Dr. <hi rend="#letterspaced">Tandler</hi> gibt dem Kabinettsrate bekannt, dass Sektionschef Dr. Kaup gegen die ihm aufgrund des Kabinettsbeschlusses vom 5. März 1. J. angekündigte Beurlaubung mit Wartegebühr, bzw. gegen die Versetzung in den zeitlichen Ruhestand, welche infolge der zwingenden Bestimmungen des § 18 Abs. 1 des Besoldungsübergangsgesetzes an die Stelle der ursprünglich beabsichtigten Maßregel zu treten hätte, Einwendungen erhoben habe, und nimmt zu deren Ausführungen in dem diesem Protokoll beiliegenden Bericht Stellung.</p>
+                     <p>
+                        <pb facs="krp-0164_a01-0002"/>Nach dem Antrage des sprechenden Unterstaatssekretärs ermächtigt der Kabinettsrat den Staatssekretär für soziale Verwaltung, die Einwendungen des Sektionschefs Dr. Kaup zurückzuweisen und den Genannten in den zeitlichen Ruhestand zu versetzen.</p>
+                  </div>
+               </div>
+               <div n="2">
+                  <pb facs="krp-0164_a02-0001"/>
+                  <head/>
+                  <p>Anhang zum Kabinettsprotokoll Nr. 164 von 23. März 1920.</p>
+                  <div type="a02_protokoll">
+                     <p>Staatssekretär Dr. <hi rend="#letterspaced">Reisch</hi> erbittet und erhält die Zustimmung des Kabinettsrates in Abänderung seines im Kabinettsrat vom 9. März 1920 gestellten Antrages die Ernennung des Ministerialrates im Staatsamt für Finanzen Dr. Adalbert Haala zum Präsidenten der Finanzlandesdirektion in Wien in der IV. Rangsklasse beim Präsidenten der Nationalversammlung in Antrag bringen zu dürfen.</p>
+                     <p/>
+                  </div>
+               </div>
+            </div>
+            <div type="stenogramme">
+               <div n="1">
+                  <head>EINZUFÜGEN</head>
+                  <p>Transkription in Arbeit.</p>
+               </div>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>
