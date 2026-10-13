@@ -1,0 +1,604 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href='http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:acdh="https://vocabs.acdh.oeaw.ac.at/schema#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xml:lang="de">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="a" type="main" n="0143">Kabinettsprotokoll Nr. 143 vom 30. Jänner 1920</title>
+            <title level="m" type="main" n="01">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <title level="m" type="sub" n="">Renner III (17. Oktober 1919 – 7. Juli 1920)</title>
+            <meeting>
+               <placeName key="https://d-nb.info/gnd/4066009-6">Wien</placeName>
+               <orgName key="https://d-nb.info/gnd/5162749-8">Kabinettsrat</orgName>
+               <date when-iso="1920-01-30"/>
+            </meeting>
+            <editor>
+               <persName key="https://d-nb.info/gnd/122481836"
+                         role="hasCreator"
+                         xml:id="hwohnout">
+                  <forename>Helmut</forename>
+                  <surname>Wohnout</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</affiliation>
+               <idno type="ORCID">0000-0002-3864-9839</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/120789825"
+                         role="hasCreator"
+                         xml:id="tolechowski">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0003-3291-6876</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/131679384"
+                         role="hasCreator"
+                         xml:id="rlein">
+                  <forename>Richard</forename>
+                  <surname>Lein</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0002-7502-0503</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="aholzer">
+                  <forename>Anna</forename>
+                  <surname>Holzer</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0005-3560-3500</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="dsoelkner">
+                  <forename>Dominik</forename>
+                  <surname>Sölkner</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-9895-7212</idno>
+            </editor>
+            <editor>
+               <persName role="hasContributor" xml:id="ischotzko">
+                  <forename>Ina</forename>
+                  <surname>Schotzko</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-5210-3713</idno>
+            </editor>
+            <funder n="1">
+               <orgName key="https://d-nb.info/gnd/2054142-9" role="hasFunder">Österreichischer Wissenschaftsfonds FWF</orgName>
+               <idno type="project">PAT1495024</idno>
+               <title type="project">Die Protokolle des österreichischen Kabinettsrates 1919–1920</title>
+            </funder>
+            <respStmt>
+               <resp>Projektverantwortung</resp>
+               <orgName key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Projektleitung</resp>
+               <persName key="https://d-nb.info/gnd/120789825" role="hasPrincipalInvestigator">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+                  <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+                  <idno type="ORCID">0000-0003-3291-6876</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Nationaler Forschungspartner</resp>
+               <orgName key="https://d-nb.info/gnd/1123037736" role="hasEnabler">Austrian Centre for Digital Humanities</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Digitalisierung der gedruckten Quellen</resp>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>TEI-Datenmodellierung</resp>
+               <persName role="hasContributor" xml:id="tfruehwirth">
+                  <forename>Timo</forename>
+                  <surname>Frühwirth</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-3997-5193</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technische Supervision</resp>
+               <persName key="https://d-nb.info/gnd/1043833846"
+                         role="hasContributor"
+                         xml:id="pandorfer">
+                  <forename>Peter</forename>
+                  <surname>Andorfer</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-9575-9372</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technisches Consulting und Vorbereitung der Druckausgabe</resp>
+               <persName key="https://d-nb.info/gnd/13281899X"
+                         role="hasContributor"
+                         xml:id="skurz">
+                  <forename>Stephan</forename>
+                  <surname>Kurz</surname>
+                  <affiliation key="https://d-nb.info/gnd/1202798799">Institut für die Erforschung der Habsburgermonarchie und des Balkanraumes</affiliation>
+                  <idno type="ORCID">0000-0003-2546-2570</idno>
+               </persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher key="https://d-nb.info/gnd/1001454-8">Österreichische Akademie der Wissenschaften</publisher>
+            <date when="2028"/>
+            <availability status="free">
+               <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">Lizenziert unter CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/deed.de)</licence>
+            </availability>
+            <idno type="ISBN_Print"/>
+            <idno type="ISBN_Part_epub"/>
+            <idno type="ISBN_Digital"/>
+            <idno type="DOI"/>
+            <idno type="DOI_zenodo"/>
+            <idno type="ebook_ID"/>
+         </publicationStmt>
+         <seriesStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="m" type="main">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <respStmt>
+               <resp>Bearbeitung und Herausgeberschaft</resp>
+               <orgName key="https://d-nb.info/gnd/2024703-5">Universität Wien</orgName>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+         </seriesStmt>
+         <notesStmt>
+            <note>Diese TEI-XML-Datei ist Grundlage für eine Druckausgabe der Edition.</note>
+            <relatedItem>
+               <biblStruct>
+                  <monogr>
+                     <imprint>
+                        <pubPlace key="https://d-nb.info/gnd/4066009-6">Wien</pubPlace>
+                        <publisher key="https://d-nb.info/gnd/2068748-5">Verlag der Österreichischen Akademie der Wissenschaften</publisher>
+                        <date when="2029"/>
+                     </imprint>
+                     <extent/>
+                  </monogr>
+                  <note>
+                     <idno/>
+                     <ptr/>
+                  </note>
+                  <citedRange/>
+               </biblStruct>
+            </relatedItem>
+         </notesStmt>
+         <sourceDesc>
+            <bibl>Quellbestand: AT-OeStA/AdR MRang MR 1Rep KRP Kabinettsratsprotokolle, 1918-1920 (Teilbestand)<ref target="https://www.archivinformationssystem.at/detail.aspx?id=5465">https://www.archivinformationssystem.at/detail.aspx?id=5465</ref>
+            </bibl>
+            <msDesc>
+               <msIdentifier>
+                  <institution key="https://d-nb.info/gnd/37748-X" role="hasOwner">AT-OeStA Österreichisches Staatsarchiv (Archiv (ÖStA))</institution>
+                  <repository key="https://d-nb.info/gnd/1601181-8">AT-OeStA/AdR Archiv der Republik, 1918- (Abteilung)</repository>
+                  <collection>AT-OeStA/AdR MRang MR 1Rep Ministerrat 1. Republik, 1918 - 1938 (Bestand)</collection>
+                  <idno>AT-OeStA_AdR-MRang-MR-1.-Rep.-KRP-143</idno>
+               </msIdentifier>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <abstract>
+            <p>
+          <!--to be generated-->
+        </p>
+         </abstract>
+      </profileDesc>
+      <encodingDesc>
+         <styleDefDecl scheme="css"/>
+         <tagsDecl>
+            <rendition xml:id="b" scheme="css">font-weight:bold;</rendition>
+            <rendition xml:id="su" scheme="css">vertical-align:super;font-size:.7em;</rendition>
+            <rendition xml:id="s" scheme="css">text-decoration:line-through;</rendition>
+            <rendition xml:id="u" scheme="css">text-decoration:underline;</rendition>
+            <rendition xml:id="ow" scheme="css">text-decoration:line-through;text-decoration-style:double;</rendition>
+            <rendition xml:id="r" scheme="css">display:block;text-align:right;</rendition>
+            <rendition xml:id="letterspaced" scheme="css">letter-spacing:0.15em;</rendition>
+            <rendition xml:id="i" scheme="css">font-style:italic;</rendition>
+         </tagsDecl>
+         <editorialDecl>
+            <hyphenation>
+               <p>
+            <!--to be added-->
+          </p>
+            </hyphenation>
+            <correction>
+               <p>
+            <!--to be added-->
+          </p>
+            </correction>
+            <normalization>
+               <p>
+            <!--to be added-->
+          </p>
+            </normalization>
+            <punctuation>
+               <p>
+            <!--to be added-->
+          </p>
+            </punctuation>
+            <stdVals>
+               <p>
+            <!--to be added-->
+          </p>
+            </stdVals>
+            <p>
+          <!--to be added-->
+        </p>
+         </editorialDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#tfruehwirth" when-iso="2026-10-13">TEIGarage output upconverted with upconvert.xsl</change>
+         <change who="#tfruehwirth" when-iso="2026-10-13">TEI header populated with generate_tei_templates.py</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface/>
+   </facsimile>
+   <text>
+      <body>
+         <div xml:id="doc-krp-0143.xml">
+            <head type="dokument">
+               <title type="num">143.<note type="footnote">Das Protokoll trägt den Vermerk <hi rend="#i">Vertraulich!</hi>
+                  </note>
+               </title>
+               <title type="desc">
+                  <pb facs="krp-0143_r-0001"/>
+                  <pb facs="krp-0143_r-0002"/>[Freitag] 1920-01-30</title>
+            </head>
+            <div type="dokumentkopf">
+               <div type="vorsitz">
+                  <head>Vorsitz:</head>
+                  <p>Renner</p>
+               </div>
+               <div type="anwesend">
+                  <head>Anwesend:</head>
+                  <p>Deutsch, Eisler Eldersch, Ellenbogen, Fink, Glöckel, Hanusch, Loewenfeld-Russ, Mayr, Miklas, Paul, Reisch, Resch, Stöckler, Waiss</p>
+               </div>
+               <div type="zugezogen">
+                  <head>Zugezogen:</head>
+                  <p>Grimm, Hoheisel, Lanzendörfer</p>
+               </div>
+               <div type="schriftfuehrer">
+                  <head>Schriftführer:</head>
+                  <p>unbekannt</p>
+               </div>
+               <div type="dauer">
+                  <head>Dauer:</head>
+                  <p>15.00–18.00 Uhr</p>
+               </div>
+            </div>
+            <div type="komponenten">
+               <p>Reinschrift, Beilagen, Konzept, stenographische Mitschrift, Entwurf der Tagesordnung, diverse Zusätze</p>
+            </div>
+            <div type="beilagen">
+               <head>Beilagen:</head>
+               <list>
+                  <item>
+                     <ref target="#krp-0143_top04">Zu TOP 4</ref>: <ref target="#krp-0143_b01">Vortrag des Staatsamtes für Inneres und Unterricht Zl. 3908 über die Genehmigung von Landtagsbeschlüssen von Steiermark, Kärnten, Tirol, Oberösterreich und Niederösterreich hinsichtlich Landeszuschläge</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0143_top07">Zu TOP 7</ref>: <ref target="#krp-0143_b02">Vortrag des Staatsamtes für Land- und Forstwirtschaft über den Gesetzesbeschluss des Salzburger Landtages zur Aufhebung bzw. Ablösung der Jagdrechte auf fremden Grund und Boden einschließend authentischer Interpretation</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0143_top08">Zu TOP 8</ref>: <ref target="#krp-0143_b03">Antrag der Forst- und Domänendirektion Wien namens des oberösterreichischen Religionsfonds um Erklärung einer geplanten Waldbahn bei Reichraming zum begünstigten Bau</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0143_top09">Zu TOP 9</ref>: <ref target="#krp-0143_b04">Entwurf des Heeresgebührengesetzes sowie die Abfertigung für ausscheidende Volkswehrmänner</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0143_top10">Zu TOP 10</ref>: <ref target="#krp-0143_b05">Gesetzesentwurf über die Arbeitslosenunterstützung mit erläuternden Bemerkungen</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0143_top11">Zu TOP 11</ref>: <ref target="#krp-0143_b06">Vorlage des Staatsamtes für soziale Verwaltung über einen Gesetzesentwurf der Kärntner Landesversammlung für die Einrichtung es Gesundheitsdienstes in den Gemeinden</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0143_top14">Zu TOP 14</ref>: <ref target="#krp-0143_b07">Auflegung einer Prämienanleihe</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0143_top16">Zu TOP 16</ref>: <ref target="#krp-0143_b08">Forderungen der Postbediensteten</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0143_top17">Zu TOP 17</ref>: <ref target="#krp-0143_b09">Vortrag des Unterstaatssekretärs Miklas betreffend die Aufnahme eines Hypothekardarlehens per 500.000 K durch das Benediktinerstift Altenburg</ref>
+                  </item>
+               </list>
+            </div>
+            <div type="protokoll">
+               <pb facs="krp-0143_r-0003"/>
+               <div type="top" xml:id="krp-0143_top01">
+                  <head>
+                     <label>
+                        <num n="1">1.</num>
+                        <seg>Anregungen des Koalitionskomitees, betreffend die Einbringung mehrerer Gesetzentwürfe.</seg>
+                     </label>
+                  </head>
+                  <p>Vizekanzler <hi rend="#letterspaced">Fink</hi> gibt bekannt, dass das Koalitionskomitee den Wunsch nach Einbringung folgender Gesetzentwürfe in der Nationalversammlung geäußert habe:</p>
+                  <list>
+                     <item n="1">
+                        <label>1.)</label> betreffend die Ermächtigung des Präsidenten der Nationalversammlung über Vorschlag der Staatsregierung Beamten anlässlich der Übernahme in den dauernden Ruhestand in besonders berücksichtigungswürdigen Fällen Zulagen zu den gesetzlichen Ruhegenüssen zu gewähren;</item>
+                     <item n="2">
+                        <label>2.)</label> betreffend die Überweisung der Regelung der Bezüge sämtlicher staatlicher Angestellten sowie der Tarife der staatlichen Monopole und Regalien in den Wirkungskreis der Nationalversammlung;</item>
+                     <item n="3">
+                        <label>3.)</label> betreffend eine Änderung des Gesetzes über die Geschäftsordnung der Nationalversammlung, wonach Anträge von Abgeordneten und Ausschüssen, welche eine finanzielle Mehrbelastung des Staates im Gefolge haben, nur unter der Voraussetzung der geschäftsordnungsmäßigen Behandlung zugeführt werden dürfen, dass sie mit Vorschlägen über die Bedeckung des Mehraufwandes verbunden sind;</item>
+                     <item n="4">
+                        <label>4.)</label> betreffend die Einsetzung einer <pb facs="krp-0143_r-0004"/>von der Nationalversammlung zu berufenden Kommission von Abgeordneten und Beamten zur Kontrolle des staatlichen Verwaltungsapparates behufs Feststellung aller Ersparungsmöglichkeiten.</item>
+                  </list>
+                  <p>Der letzterwähnte Gesetzentwurf wäre von der Regierung auszuarbeiten, jedoch dem Finanz- und Budgetausschuss zur Einbringung in der Nationalversammlung zu übergeben.</p>
+                  <p>Der Kabinettsrat nimmt diese Anregungen zur Kenntnis und überweist sie dem Vorsitzenden zur Durchführung.</p>
+               </div>
+               <div type="top" xml:id="krp-0143_top02">
+                  <head>
+                     <label>
+                        <num n="2">2.</num>
+                        <seg>Begünstigungen für die Bevölkerung des Abstimmungsgebietes in Kärnten hinsichtlich der Vermögensabgabe.</seg>
+                     </label>
+                  </head>
+                  <p>Nach einer Mitteilung des Vizekanzlers Fink wurde aus den Kreisen Kärntner Abgeordneter auf die Notwendigkeit hingewiesen, entsprechende Vorkehrungen für die bevorstehende Volksabstimmung in Kärnten zu treffen, von welcher es abhängen werde, ob die Zone A, die in wirtschaftlicher Hinsicht für Deutschösterreich von großer Bedeutung sei, sich für uns erklären werde. Es seien in dieser Beziehung folgende Vorschläge gemacht worden:</p>
+                  <list>
+                     <item n="1">
+                        <label>1.)</label> Die Vermögensabgabe dürfe erst nach erfolgter Abstimmung durchgeführt werden.</item>
+                  </list>
+                  <p>
+                     <pb facs="krp-0143_r-0005"/>
+                  </p>
+                  <list>
+                     <item n="1">
+                        <label>2.)</label> In der Zone A solle die Vermögensabgabe überhaupt nicht durchgeführt werden; denn stimmt Zone A gegen Deutschösterreich, so könne die Vermögensabgabe dort überhaupt nicht platzgreifen; entscheide sich aber die Zone A für uns, so sei der moralische und wirtschaftliche Erfolg ein derart großer, dass er den Ertrag der eventuellen Vermögensabgabe um ein Vielfaches übersteige.</item>
+                     <item n="2">
+                        <label>3.)</label> In der Zone B sollen den Bewohnern bezüglich der Vermögensabgabe bedeutende Vorteile zugesichert werden; denn es sei nicht gleichgiltig, ein wie großer Prozentsatz der Bevölkerung sich für Deutschösterreich erkläre, ob 70 % oder 95 %.</item>
+                     <item n="3">
+                        <label>4.)</label> Mit allen Mitteln müsse danach gestrebt werden, dass die Flüchtlinge endlich in die Zone A zurückkehren können, weil dies von wesentlicher Bedeutung für eine für uns günstige Abstimmung sei.</item>
+                     <item n="4">
+                        <label>5.)</label> Jenen Bewohnern, welche in der Zone B durch die jugoslawische Offensive im Mai und Juni des verflossenen Jahres auf das schwerste geschädigt worden sind, solle zur Einrichtung ihrer zerstörten Wirtschaft und zur Beschaffung notwendiger Fahrnisse ein Kredit von <pb facs="krp-0143_r-0006"/>2 Millionen [K] bewilligt werden.</item>
+                     <item n="5">
+                        <label>6.)</label> Wegen der Einlösung der Zinsscheine in der Zone A solle das Staatsamt der Finanzen baldigst das Erforderliche veranlassen.</item>
+                  </list>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> erklärt, dass diese Vorschläge im Wege der Staatskanzlei den zuständigen Ressorts werden bekanntgegeben werden. Die auf die Gewährung von Steuerbegünstigungen abzielenden Vorschläge werden an den Finanzausschuss der Nationalversammlung weitergeleitet werden.</p>
+               </div>
+               <div type="top" xml:id="krp-0143_top03">
+                  <head>
+                     <label>
+                        <num n="3">3.</num>
+                        <seg>Behandlung des Gesetzentwurfes, betreffend einige Bestimmungen über die Tarife der Eisenbahnen.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Paul</hi> erinnert daran, dass der Kabinettsrat in seiner Sitzung am 25. Dezember 1919 den Beschluss gefasst habe, geeignete Schritte einzuleiten, damit der Gesetzentwurf, betreffend einige Bestimmungen über die Tarife der Eisenbahnen, von einer der koalierten Parteien in der Nationalversammlung eingebracht werde. Dieser Beschluss sei bisher noch nicht durchgeführt worden.</p>
+                  <p>Nachdem der sprechende Staatssekretär die Gründe, die seiner Anschauung nach für diese Behandlungen des Gesetzentwurfes sprechen würden, nochmals erörtert hatte, beschließt der Kabinettsrat <pb facs="krp-0143_r-0007"/>nach einer kurzen Debatte, den Staatssekretär für Verkehrswesen zu ermächtigen, den Entwurf als Regierungsvorlage in der Nationalversammlung einzubringen.</p>
+               </div>
+               <div type="top" xml:id="krp-0143_top04">
+                  <head>
+                     <label>
+                        <num n="4">4.</num>
+                        <seg>Genehmigung von Landeszuschlägen in Steiermark, Kärnten, Tirol, Oberösterreich und Niederösterreich.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Eldersch</hi> teilt mit, dass die Landesregierungen in Steiermark, bzw. in Kärnten, Tirol, Oberösterreich und Niederösterreich um die Erwirkung der Genehmigung der Staatsregierung für die Beschlüsse des Landtages in Steiermark vom 2. Oktober, Kärnten vom 16. Dezember, Tirol vom 30. August und 20. Dezember, Oberösterreich vom 11. Dezember und Niederösterreich vom 22. Oktober 1919, betreffend die Einhebung von Landeszuschlägen, angesucht haben.</p>
+                  <p>Die Landesregierung von Steiermark habe überdies die Genehmigung des Landtagsbeschlusses vom 21. November 1919, betreffend den Verkauf eines Grundstreifens der Realität der steiermärkischen Landschaft EZ 313 Katastralgemeinde Knittelfeld an den Bezirk Knittelfeld für Straßenzwecke, und die Genehmigung des Landtagsbeschlusses vom 17. Oktober 1919, betreffend die Einhebung einer Umlage von 205 % im Bezirke Birkfeld, beantragt.</p>
+                  <p>
+                     <pb facs="krp-0143_r-0008"/>Über Vorschlag des sprechenden Staatssekretärs genehmigt der Kabinettsrat die bezeichneten Beschlüsse, und zwar den Beschluss des Steiermärkischen Landtages vom 2. Oktober 1919 unter der Voraussetzung, dass die Vorschreibung, Einhebung und Eintreibung der sich aufgrund dieses Beschlusses ergebenden Nachträge an Umlagen für das Jahr 1919 erst gemeinsam mit der Vorschreibung, Einhebung und Eintreibung der Umlagen für das Jahr 1920 erfolgt, und den Beschluss des Oberösterreichischen Landtages mit der Einschränkung, dass die Einhebung von Zuschlägen zur Rentensteuer auf die aufgrund von Bekenntnissen vorgeschriebene Rentensteuer beschränkt bleibt.</p>
+               </div>
+               <div type="top" xml:id="krp-0143_top05">
+                  <head>
+                     <label>
+                        <num n="5">5.</num>
+                        <seg>Steigerung der Lebensmittelpreise zur Einbringung der staatlichen Zuschüsse auf die Gestehungskosten.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Loewenfeld-Russ</hi> erbittet die Meinungsäußerung des Kabinettsrates zu der Frage der Vornahme weiterer Erhöhungen der Lebensmittelpreise. Das Staatsamt der Finanzen wünsche nach der kürzlich vorgenommenen Verteuerung von Brot, Mehl, Fleisch und Fett in der Angleichung der Lebensmittelpreise an die Gestehungskosten fortzuschreiten, doch trage Redner Bedenken, sich diesem Standpunkte anzu<pb facs="krp-0143_r-0009"/>schließen, da schon die jetzt geltenden Preisansätze die Kaufkraft der Bevölkerung übersteigen. Zudem erscheine es ihm fraglich, ob das Prinzip, die staatlichen Zuschüsse zu den Lebensmittelankäufen mit einem möglichst großen Anteil auf den Konsum zu überwälzen, dem Staate Vorteil bringe; vielmehr glaube er, dass die durch diese Überwälzung bewirkte Lebensmittelteuerung dem Staate auf den verschiedensten Gebieten derartige Mehraufwendungen verursachen, dass dadurch die erzielte Verlustdeckung mindestens aufgewogen werde. Aber auch abgesehen davon seien die staatlichen Lebensmittelzuschüsse nicht so hoch, dass sie vom Staate unter keinen Umständen mehr getragen werden könnten, und hielten sich nicht unwesentlich hinter den dafür im Budget eingestellten Ziffern, schließlich dürfe nicht übersehen werden, dass wir jetzt einige Hoffnung auf Erlangung ausländischer Kredite haben, welche die Valuta verbessern und billigere Einkaufsmöglichkeiten schaffen müssten. Der Augenblick sei daher für ein Hinaufsetzen der Verkaufspreise durchaus ungünstig, denn es würden dadurch Lohnerhöhungen verursacht, die dann nicht entsprechend der Senkung der Lebensmittelpreise wieder abgebaut werden könnten.</p>
+                  <p>
+                     <pb facs="krp-0143_r-0010"/>Angesichts dieser Umstände möchte der sprechende Staatssekretär vorschlagen, der Staat solle vorläufig die Verluste an den Lebensmitteln noch auf sich nehmen und vor weiteren Steigerungen die Entwicklung der Preisgestaltung in der nächsten Zeit abwarten.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Reisch</hi> beruft sich zur Begründung des Standpunktes der Finanzverwaltung darauf, dass die Ungleichung der Lebensmittelpreise an die Gestehungskosten einen Punkt des Koalitionsprogrammes darstelle. Er könne daher von einem allmählichen Abbau der staatlichen Zuschüsse nicht abgehen und nur insoferne ein Entgegenkommen an den Standpunkt des Vorredners bekunden, als er sich mit einer gewissen Verlangsamung bei Vornahme weiterer Preiserhöhungen einverstanden erkläre. Die ausländischen Kredite ließen zwar eine Verbilligung der Gestehungskosten erwarten, in keiner Weise aber würden sie so einschneidend wirken, dass mit einem Herabgehen der Selbstkosten auf die derzeitigen Verkaufspreise gerechnet werden dürfe. Es würden vielmehr für den Staat noch immer Verluste erübrigen, auf deren Einbringung die Finanzverwaltung nicht verzichten könne, soll nicht die staatliche Finanzwirtschaft in kürzester Zeit ganz <pb facs="krp-0143_r-0011"/>zusammenbrechen. Die Annahme, dass die Verlustdeckungen aus den Preiserhöhungen durch die gleichzeitig eintretenden Mehraufwendungen aufgezehrt würde, sei nicht zutreffend; denn der Staat habe doch nur an seine eigenen Angestellten eine Rückvergütung für die höheren Preise zu leisten und gewinne die darüber hinausgehenden Aufzahlungen der gesamten übrigen Bevölkerung.</p>
+                  <p>Staatssekretär <hi rend="#letterspaced">Eldersch</hi>, der <hi rend="#letterspaced">Vorsitzende</hi> und Staatssekretär Dr. <hi rend="#letterspaced">Mayr</hi> erklären es als notwendig, mit den Preissteigerungen für einige Zeit innezuhalten und sie auch künftighin der Leistungsfähigkeit der Bevölkerung anzupassen.</p>
+                  <p>Staatssekretär Dr. Mayr bemerkt hiezu noch, dass bei Aufstellung des Koalitionsprogrammes eine derartige Entwicklung der Preise, wie sie sich jetzt gezeigt habe, nicht vorausgesehen werden konnte; jedenfalls dürfe die Durchführung des Programmes nicht in einer Weise erfolgen, dass dadurch die bedenkliche Unruhe in der Bevölkerung noch vermehrt werde.</p>
+                  <p>Nach dem Antrage des Staatssekretäre Dr. <hi rend="#letterspaced">Loewenfeld-Russ</hi> beschließt sohin der Kabinettsrat, es sei vorderhand von einer Erhöhung der Lebens<pb facs="krp-0143_r-0012"/>mittelpreise abzusehen und von den Staatsämtern für Volksernährung und für Finanzen unter Abwägung der Leistungsfähigkeit der Bevölkerung einerseits und der Belastung des Staates andererseits jeweils der Zeitpunkt wahrzunehmen, zu welchem eine neuerliche Steigerung platzgreifen könnte.</p>
+               </div>
+               <div type="top" xml:id="krp-0143_top06">
+                  <head>
+                     <label>
+                        <num n="6">6.</num>
+                        <seg>Neuregelung der inländischen Zeitungspostgebühren.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Paul</hi> unterbreitet dem Kabinettsrat den Entwurf eines neuen Postgebührengesetzes, der die Zeitungen, entsprechend dem Beschlusse des Kabinettsrates vom 18. November 1919 nach Gewicht und Umfang treffen soll.</p>
+                  <p>Über Einladung des Vorsitzenden erläutert sodann Generaldirektor für das Postwesen Sektionschef <hi rend="#letterspaced">Hoheisel</hi> die einzelnen Ansätze und die Grundlagen, auf welchen sie errechnet wurden. Der neue Tarif gehe im Wesentlichen davon aus, dass ein Blatt bedrucktes Zeitungspapier in der Größe von 180 cm² im Durchschnitt ein g wiege. Demnach seien z. B. vier Blätter in der Größe von 900 cm<hi rend="superscript">2</hi> gleich schwer wie drei Blätter in der Größe von 1.200 cm² oder wie zwei Blätter in der Größe von 1.800 cm² oder wie ein Blatt von 3.600 cm², nämlich 20 g. Nach diesen Größenverhältnis<pb facs="krp-0143_r-0013"/>sen wurden die Zeitungen in Klassen eingeteilt und in Bezug auf den Umfang in der Klasse I (bis 900 cm<hi rend="superscript">2</hi>) vier Blatt, in der Klasse II (bis 1.200 cm<hi rend="superscript">2</hi>) drei Blatt, in der Klasse III (bis 1.800 cm²) zwei Blatt und in der Klasse IV (bis 3.600 cm<hi rend="superscript">2</hi>) ein Blatt als Tarifeinheit angenommen; hienach ergab sich als gleichwertige Tarifeinheit in Bezug auf das Gewicht 20 g. Demzufolge wurde in den einzelnen Klassen gestaffelt nach je vier, drei, zwei, ein Blatt (= je 20 g). Diese Staffelung entspreche auch vollkommen den Anforderungen des Übereinkommens des Weltpostvereines über den Postzeitungsdienst und sei daher auch ohneweiters auf den Auslandsverkehr anwendbar. Die vorgeschlagene Klasseneinteilung entspreche auch im Allgemeinen den tatsächlich vorkommenden Formaten der Zeitungen.</p>
+                  <p>Was die Bestimmung der Gebühr selbst betreffe, so sei als niedrigste Gebühr für die 1. Tarifeinheit 3 h in Aussicht genommen. Die Gebührenbemessung in den weiteren Stufen erfolge im Wege der Staffelung mit der Staffeleinheit von höchstens 1 h. Um jedoch die Gebühr dem Umfange der Zeitungen gewissermaßen individuell anzupassen, werde, sobald der niederste Satz überschritten wird, jeder Gebührensatz unterteilt, und zwar ent<pb facs="krp-0143_r-0014"/>sprechend den Blattstufen in der I. Klasse in vier, in der II. Klasse in drei und in der III. Klasse in zwei Teile. In der IV. Klasse entfalle eine Unterteilung, weil die Stufenfolge von 1 zu 1 h fortschreite.</p>
+                  <p>Eine besondere Behandlung würden die Sonntagsausgaben der Zeitungen mit Rücksicht auf deren mitunter sprunghaft erhöhten Umfang erfahren. Hienach sei beabsichtigt, von der Seitenanzahl der Sonntagsausgabe jene der Werktagsausgabe abzuziehen und für den Überschuss die halbe Gebühr einzuheben.</p>
+                  <p>Redner bespricht sodann die Wirkungen des neuen Tarifs auf die hauptsächlichsten Wiener Blätter, ferner die Frage der Barentrichtung der neuen Gebühren für die Tageszeitungen sowie die Tarifaufstellung für die seltener erscheinenden Zeitungen (Zeitschriften) und erbittet sich schließlich vom Kabinettsrate die Ermächtigung, auf Grundlage des dargelegten Entwurfes mit den Zeitungsorganisationen in Verhandlungen eintreten und sodann den Entwurf der bezüglichen Vollzugsanweisung vorlegen zu dürfen.</p>
+                  <p>Unterstaatssekretär Dr. <hi rend="#letterspaced">Eisler</hi> und Staatssekretär Dr. <hi rend="#letterspaced">Deutsch</hi> erklären, dass der neue Tarif nicht dem Wun<pb facs="krp-0143_r-0015"/>sche des Kabinettsrates nach einer entsprechenden Mehrbelastung der Inseratenblätter Rechnung trage, im Gegenteile ihnen eine Verbilligung bei Überschreitung des Normalmaßes an Sonntagen einräume. Es wäre in Erwägung zu ziehen, ob nicht eine progressive Erhöhung der Gebühren für die stärkeren Ausgaben eingeführt werden solle, deren Mehrertrag zur Verbilligung der Gebühren für die kleinen Blätter zu dienen hätte.</p>
+                  <p>Sektionschef <hi rend="#letterspaced">Hoheisel</hi> verweist darauf, dass die Behandlung der ein gewisses Normalmaß übersteigenden Blattzahl nach einem höheren Einheitssatz den Grundsätzen des internationalen Vereinsübereinkommens widersprechen würde; doch sei es ohne weiters möglich, die vorgeschlagene Behandlung der Sonntagsausgaben fallen zu lassen und diese als besondere Blätter nach der Blattzahl zu behandeln.</p>
+                  <p>Nachdem noch die Staatssekretäre Dr. <hi rend="#letterspaced">Reisch</hi> und <hi rend="#letterspaced">Paul</hi> sowie der <hi rend="#letterspaced">Vorsitzende</hi> zum Gegenstand gesprochen hatten, ladet der Kabinettsrat den Staatssekretär für Verkehrswesen ein, unter Bedachtnahme auf die in der Debatte geltend gemachten Gesichtspunkte einen neuen Tarif für die Sonntagsausgaben ausarbeiten zu lassen und dem Ka<pb facs="krp-0143_r-0016"/>binettsrate in seiner nächsten Sitzung vorzulegen.</p>
+               </div>
+               <div type="top" xml:id="krp-0143_top07">
+                  <head>
+                     <label>
+                        <num n="7">7.</num>
+                        <seg>Gesetzesbeschluss des Salzburger Landtages, womit das Gesetz vom 14. Februar 1919, LGBl. Nr. 64, betreffend die Aufhebung und Ablösung der Jagdrechte auf fremden Grund und Boden ergänzt und authentisch interpretiert wird.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Stöckler</hi> erbittet und erhält vom Kabinettsrate die Ermächtigung, dass von der Erhebung einer Vorstellung gegen den vom Salzburger Landtage am 13. Jänner d. J. gefassten Gesetzesbeschluss, womit das Gesetz vom 14. Februar 1919, LGBl. Nr. 64, betreffend die Aufhebung und Ablösung der Jagdrechte auf fremden Grund und Boden ergänzt und authentisch interpretiert wird, abgesehen und der Kundmachung dieses Gesetzes zugestimmt werde.</p>
+               </div>
+               <div type="top" xml:id="krp-0143_top08">
+                  <head>
+                     <label>
+                        <num n="8">8.</num>
+                        <seg>Waldbahn Reichraming; Erklärung als begünstigter Bau.</seg>
+                     </label>
+                  </head>
+                  <p>Nach dem Antrage des Staatssekretärs Stöckler beschließt der Kabinettsrat, die Ausführung des von der Forst- und Domänendirektion Wien geplanten Baues einer Waldbahn im Forstwirtschaftsbezirke Reichraming (politischer Bezirk Steyr) als begünstigen Bau im Sinne der Verordnung vom 16. Oktober 1914, RGBl. Nr. 284, zu erklären.</p>
+                  <p>
+                     <pb facs="krp-0143_r-0017"/>
+                  </p>
+               </div>
+               <div type="top" xml:id="krp-0143_top09">
+                  <head>
+                     <label>
+                        <num n="9">9.</num>
+                        <seg>Gesetzentwurf über die Gebühren der Personen des Heeres (Heeresgebührengesetz); Abfertigung für ausscheidende Volkswehrmänner.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Deutsch</hi> unterbreitet dem Kabinettsrate den Entwurf eines Gesetzes über die Gebühren der Personen des Heeres (Heeresgebührengesetz) sowie die Ansätze der Abfertigung für die nicht in die neue Wehrmacht übertretenden Volkswehrmänner.</p>
+                  <p>Die Abfertigung solle bestehen bei einer Volkswehrdienstzeit bis zu drei Monaten aus dem normalen Kündigungsgeld (für Wien 238 K), bei einer Volkswehrdienstzeit von drei bis inklusive sechs Monaten aus dem Kündigungsgeld und dem Betrage von 65 K für jeden der sechs Monate, und schließlich bei einer Volkswehrdienstzeit von über sechs Monaten bis inklusive 15 Monaten aus dem Kündigungsgelde, dazu einen Betrag von 200 K und weiters für jeden der 15 Monate noch 65 K. Überdies solle jeder der nicht übertretenden Volkswehrmänner bis 15. April 1920 mit vollen Gebühren, einschließlich des Unterhaltsbeitrages in militärischen Diensten verbleiben können, sodass eine Verlängerung der Kündigungsfrist um diese Zeit einträte; für die Abfertigung dagegen hätte nur die Zeit bis zum 15. Februar 1920 in Anschlag zu kommen.</p>
+                  <p>
+                     <pb facs="krp-0143_r-0018"/>Die Gebühren im neuen Heere seien den Gendarmerie- und Polizeigebühren zwar nachgebildet worden, ohne sie aber, wenigstens was die ledige Mannschaft betreffe, zu erreichen; die verheirateten Wehrmänner stünden den verheirateten Gendarmeriepersonen jetzt ungefähr gleich, würden aber hinter ihnen zurückbleiben, sobald die Besoldungsreform bei der Gendarmerie durchgeführt sein wird. Diese Niedrigkeit der Ansätze finde ihre Erklärung darin, dass als Grundlage die Gebühren der Volkswehr genommen wurden, die weit geringer seien als die sonst in öffentlichen Diensten geleistete Entlohnung. Wegen des Missverhältnisses zu den jetzt üblichen Arbeitslöhnen und im Hinblick auf die in Durchführung begriffene Besoldungsreform der Gendarmerie werde sich mit den vorgesehenen Heeresgebühren wahrscheinlich nur kurze Zeit das Auslangen finden lassen. Der sprechende Staatssekretär möchte daher empfehlen, die Gebührenregelung nicht im Gesetzgebungswege, sondern vorläufig nur mit provisorischer Geltung etwa vom 1. April 1920 bis 1. April 1921 durch Vollzugsanweisung vorzunehmen, damit notwendig werdende Abänderun<pb facs="krp-0143_r-0019"/>gen daran leichter durchgeführt werden können.</p>
+                  <p>Sektionschef Dr. <hi rend="#letterspaced">Grimm</hi> tritt dafür ein, die Gebühren der Wehrmänner hinsichtlich der fixen Löhnung und des Kostgeldes niedriger zu halten und dafür als Ausgleich einen abbaufähigen prozentuellen Zuschlag zu gewähren. Ferner weist er darauf hin, dass die Abfertigung beim Austritt aus dem künftigen Heer mit monatlich 50 K angesetzt sei, wogegen die Abfertigung für die jetzigen Zertifikatisten nur 40 K betrage. Da dieser Unterschied in der Entschädigung zu Schwierigkeiten bei dem Abbau der Berufsunteroffiziere der alten Armee führen könnte, scheine ihm die Herabsetzung der Abfertigung auf den Betrag der Zertifikatistenentschädigung von 40 K geboten. Endlich werde die Familienzulage für die Ehegattin und für jedes Kind bemessen, abweichend vom Besoldungsübergangsgesetz, das nur für die Kinder, nicht aber auch für die Ehegattin eine Familienzulage kenne. Es sollte daher Übereinstimmung mit dem Besoldungsübergangsgesetz hergestellt werden.</p>
+                  <p>Unterstaatssekretär Dr. <hi rend="#letterspaced">Resch</hi> wendet gegen den Entwurf ein, dass in § 9 <pb facs="krp-0143_r-0020"/>unentgeltliche Behandlung und Beistellung der Arzneien u. dgl., abgesehen von Infektionskrankheiten nur für den Fall einer im Dienste zugezogenen Erkrankung vorgesehen werde. Dies bedeute eine Benachteiligung der Wehrmänner gegenüber den übrigen staatlichen Angestellten, die jetzt die Gewährung unentgeltlicher Behandlung und Medikamentenbeistellung für alle Krankheitsfälle anstreben. Die gleiche Vorsorge müsse daher wohl auch für die Heeresangehörigen getroffen werden.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Deutsch</hi> tritt dem Verlangen des Sektionschefs Dr. Grimm nach Herabsetzung der fixen Gebühren mit dem Hinweis auf die Niedrigkeit der Ansätze entgegen. Dagegen stimmt er der Bemessung der Abfertigung mit 40 K zu, um nicht den Zertifikatisten Anlass zu Beispielsfolgerungen zu bieten. Bezüglich der Familienzulage bietet er die Aufklärung, dass sie einen Ausgleich für die den Angehörigen der Volkswehrmänner zufließenden Unterhaltsbeiträge darstelle, daher auch die Ehegattin miteinbeziehen müsse. Dafür betrage die Familienzulage pro Kopf auch nur 730 K gegenüber 1.200 K nach dem Besoldungsübergangsgesetz. <pb facs="krp-0143_r-0021"/>Mit dem Abänderungsantrage des Unterstaatssekretärs Dr. Resch erkläre sich Redner einverstanden.</p>
+                  <p>Vizekanzler <hi rend="#letterspaced">Fink</hi> und Staatssekretär Dr. <hi rend="#letterspaced">Mayr</hi> sprechen sich dafür aus, die Heeresgebühren nicht mittels Gesetzes in Kraft zu setzen. Letzterer erhebt noch das Bedenken, dass die Belassung der Ehegattin im Genusse der Familienzulage ein Präjudiz für die endgiltige Besoldungsreform der Zivilstaatsbediensteten schaffe.</p>
+                  <p>Der Kabinettsrat erteilt sohin den Abfertigungssätzen die Zustimmung und genehmigt die Heeresgebühren mit der Maßgabe, dass die Abfertigung nach § 7 mit 40 K zu bemessen sei und § 9 eine Erweiterung im Sinne des Antrages des Unterstaatssekretärs Dr. Resch zu erfahren habe. Die Inkraftsetzung der Abfertigungs- wie der Gebührenvorschriften hat durch die Verlautbarung als Kabinettsbeschluss zu erfolgen, wobei für die Heeresgebühren eine provisorische Geltungsdauer vom 1. April 1920 bis 1. April 1921 bestimmt wird.</p>
+                  <p>In diesem Zusammenhange erbittet und erhält Staatssekretär Dr. Deutsch die Zustimmung des Kabinettsrates zur Erhöhung des Kost<pb facs="krp-0143_r-0022"/>geldes der Volkswehr um täglich 1 K sowie dazu, dass der den Volkswehrmännern im Jänner d. J. in Erwartung der Besoldungsreform gewährte Vorschuss von 150 K ihnen neben den Vorschüssen von je 100 K für Jänner und Februar auf die gleitenden Zulagen als einmaliger Beitrag belassen werde.</p>
+               </div>
+               <div type="top" xml:id="krp-0143_top10">
+                  <head>
+                     <label>
+                        <num n="10">10.</num>
+                        <seg>Gesetzentwurf über die Unterstützung von Arbeitslosen.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Hanusch</hi> erbittet und erhält vom Kabinettsrate die Ermächtigung, den Entwurf eines Gesetzes über die Unterstützung von Arbeitslosen in der Nationalversammlung einbringen zu dürfen.</p>
+               </div>
+               <div type="top" xml:id="krp-0143_top11">
+                  <head>
+                     <label>
+                        <num n="11">11.</num>
+                        <seg>Gesetzesbeschluss der Landesversammlung in Kärnten, betreffend die Einrichtung des Gesundheitsdienstes in den Gemeinden.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Hanusch teilt mit, dass die Landesversammlung in Kärnten einen Gesetzesbeschluss, betreffend die Einrichtung des Gesundheitsdienstes in den Gemeinden, giltig für das Land Kärnten mit Ausnahme der Landeshauptstadt Klagenfurt, gefasst habe. Gegen den § 9 dieses Gesetzesbeschlusses obwalten nachstehende Bedenken:</p>
+                  <list>
+                     <item n="1">
+                        <label>1.)</label> Der bezeichnete § bezwecke eine authentische Interpre<pb facs="krp-0143_r-0023"/>tation des Epidemiegesetzes vom 14. April 1913, RGBl. Nr. 65; ein Staatsgesetz könne aber nur durch ein Staatsgesetz authentisch interpretiert werden.</item>
+                     <item n="2">
+                        <label>2.)</label> Die Interpretation, welche durch das Landesgesetz dem Staatsgesetze zuteil werden soll, sei unrichtig, weil im § 36 des Epidemiegesetzes die Fälle, in welchen der Staat für die Kosten der Erhebung herangezogen werden soll, taxativ aufgezählt seien und die Erhebungen durch die Gemeindeärzte nicht unter diese Kosten fallen.</item>
+                     <item n="3">
+                        <label>3.)</label> An dem Grundsatze, dass der Staatsschatz für die im übertragenen Wirkungskreis auflaufenden Kosten nicht aufzukommen habe, sei in dem bisherigen Landesgesetze festgehalten worden. Es wäre höchst bedenklich an diesem Grundsatze zu rütteln.</item>
+                     <item n="4">
+                        <label>4.)</label> Durch die Handhabung der im Gesetze enthaltenen neuen Bestimmungen würden dem Staatsschatze neue Lasten erwachsen. Diese neue Belastung könnte dem Staatsschatze nur mit Zustimmung der Staatsregierung aufgebürdet werden. Da die bemängelte Bestimmung als Vorbild vermutlich von den anderen Ländern übernommen werden <pb facs="krp-0143_r-0024"/>würde, sei es auch vom staatsfinanziellen Standpunkte aus dringend geboten, dem Versuche, durch die Landesgesetzgebung dem Staate Lasten aufzuerlegen, die in der Staatsgesetzgebung nicht begründet sind, entgegenzutreten.</item>
+                  </list>
+                  <p>Der sprechende Staatssekretär erbitte sich daher vom Kabinettsrate die Ermächtigung, gegen die Bestimmung des § 9 des in Rede stehenden Gesetzesbeschlusses gemäß Art. 14 des Gesetzes vom 14. März 1919, StGBl. Nr. 179, Vorstellung zu erheben.</p>
+                  <p>Der Kabinettsrat erteilt die erbetene Ermächtigung.</p>
+               </div>
+               <div type="top" xml:id="krp-0143_top12">
+                  <head>
+                     <label>
+                        <num n="12">12.</num>
+                        <seg>Übereinkommen, betreffend den wirtschaftlichen Verkehr zwischen Ungarn und Österreich.</seg>
+                     </label>
+                  </head>
+                  <p>Unterstaatssekretär Dr. <hi rend="#letterspaced">Ellenbogen</hi> unterbreitet dem Kabinettsrate das am 28. Jänner d. J. von den Vertretern der österreichischen und der ungarischen Regierung unterzeichnete Übereinkommen über den wirtschaftlichen Verkehr zwischen beiden Ländern.</p>
+                  <p>Der sprechende Unterstaatssekretär kennzeichnet das Wesen des Übereinkommens dahin, dass es zunächst Bestimmungen über die Abwicklung und teilweise Stornierung der bisherigen <pb facs="krp-0143_r-0025"/>Kompensationsverträge enthalte und weiters neue Kompensationsabmachungen treffe. Darin verpflichte sich Österreich zur Erteilung der Ausfuhrbewilligung für eine große Zahl solcher Industrieartikel, meist landwirtschaftlicher Maschinen und Geräte, an deren Absatz nach Ungarn unsere Industrie interessiert sei. Zu den auf der Liste stehenden 92 Waggons Rotationspapier sei zu bemerken, dass es sich hier um eine bereits vor längerer Zeit vereinbarte Lieferung handle, deren Durchführung aus wirtschaftlichen und politischen Gründen aufgeschoben worden sei, die jetzt aber erfüllt werden solle. Ungarn übernehme in dem Übereinkommen seinerseits die Verpflichtung, Ausfuhrbewilligungen für 2.000 Stück Schlachtrinder, 1.500 Stück Schlachtpferde und 1.000 Stück Einstellschweine sowie für eine Reihe von Rohstoffen zu erteilen, deren unsere Industrie dringend benötige. Bei den Rohstofflieferungen hätte Ungarn das von Österreich gewünschte Quantum von Rindshäuten nicht voll zugestanden, doch sei von den ungarischen Vertretern gelegentlich der Unterzeichnung des Vertrages die Erklärung abgegeben worden, sich für den <pb facs="krp-0143_r-0026"/>baldigsten Abschluss eines weiteren Kompensationsvertrages über die Lieferung von Häuten gegen Lederwaren einsetzen zu wollen.</p>
+                  <p>Die wertvollste Bestimmung des Vertrages für Österreich bilde die Regelung des Durchzugsverkehres, durch welche der freie Transit von und nach Rumänien gewährleistet werde. Damit sei der Weg geöffnet, dass unsere Industrieartikel mit Ausschaltung des ungarischen Zwischenhandels nach Rumänien gelangen und wir von dort Erdölprodukte und sonstige Landeserzeugnisse direkt beziehen können.</p>
+                  <p>Das Übereinkommen gelte für drei Monate, innerhalb welcher Zeit neue Vereinbarungen angebahnt werden sollen, und müsse von den beiderseitigen Regierungen bis längstens 5. Februar d. J. genehmigt werden. Da der Vertrag den österreichischen Interessen vollkommen gerecht werde, erbitte Redner dessen Genehmigung durch den Kabinettsrat.</p>
+                  <p>Der Kabinettsrat erteilt die erbetene Genehmigung.</p>
+               </div>
+               <div type="top" xml:id="krp-0143_top13">
+                  <head>
+                     <label>
+                        <num n="13">13.</num>
+                        <seg>Bestellung des Ministerialrates Dr. Schwarzwald zum Stellvertreter des Staatskommissärs bei der Oesterreichisch-ungarischen Bank.</seg>
+                     </label>
+                  </head>
+                  <p>Über Vorschlag des Staatssekretärs Dr. <hi rend="#letterspaced">Reisch</hi> bestellt der <pb facs="krp-0143_r-0027"/>Kabinettsrat an Stelle des Ministerialrates Dr. Brauneis, welcher eine andere Verwendung erhalten hat, den Ministerialrat im Staatsamte für Finanzen Dr. Hermann Schwarzwald zum Stellvertreter des Staatskommissärs bei der Oesterreichisch-ungarischen Bank.</p>
+                  <p>In diesem Zusammenhange verweist Staatssekretär Dr. Reisch darauf, dass nach den Statuten der Oesterreichisch-ungarischen Bank die Bestellung des Staatskommissärs und dessen Stellvertreters durch die Staatsregierung zu erfolgen habe. Er beantrage, dass der Staatssekretär für Finanzen ermächtigt werde, künftighin diese Bestellung namens der Staatsregierung zu vollziehen.</p>
+                  <p>Der Kabinettsrat erhebt diesen Antrag zum Beschluss.</p>
+               </div>
+               <div type="top" xml:id="krp-0143_top14">
+                  <head>
+                     <label>
+                        <num n="14">14.</num>
+                        <seg>Auflegung einer Prämienanleihe.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. Reisch gibt dem Kabinettsrate die Begebungsbedingungen der im Gesetze vom 23. Jänner 1920, [StGBl. Nr. 42], betreffend Kreditoperationen, vorgesehenen Prämienanleihe bekannt. </p>
+                  <p>Der Kabinettsrat nimmt diese Mitteilungen zur Kenntnis.</p>
+                  <p>
+                     <pb facs="krp-0143_r-0028"/>
+                  </p>
+               </div>
+               <div type="top" xml:id="krp-0143_top15">
+                  <head>
+                     <label>
+                        <num n="15">15.</num>
+                        <seg>Umgestaltung des Dienstverhältnisses der Unterbeamten und Diener des Staates.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. Reisch führt aus, dass aus Abgeordnetenkreisen die Absicht bekannt worden sei, im Finanzausschuss anlässlich der Beratung der von der Regierung eingebrachten Gesetzentwürfe über „das Dienstverhältnis der Gefangenoberaufseher und Gefangenaufseher der Gerichtsgefängnisse und Männerstrafanstalten (Aufseherdienstgesetz)“ und über „die Änderung des Dienstverhältnisses der Diener (Unterbeamten) des Justizressorts als Vollstreckungsorgane“ auch zu einem Antrage der Abgeordneten Allina, Ulrich, Zelenka und Genossen Stellung zu nehmen und auf dessen unbedingt gleichzeitiger Erledigung mit den beiden Regierungsvorlagen zu bestehen.</p>
+                  <p>Nach diesem Antrage sollen die Unterbeamten und Diener, die ausschließlich oder überwiegend Beamtendienste versehen, insoferne sie mindestens die Anfangsbezüge eines Staatsbeamten der XI. Rangsklasse beziehen, zu rangsklassenmäßigen Staatsbeamten in der Gruppe E, insoweit sie jedoch nicht im Genusse dieser Bezüge stehen, zu Staatsbeamten ohne Rangsklasse ernannt werden. Überdies sollen jene Unterbeamten und Diener, bei welchen <pb facs="krp-0143_r-0029"/>diese Verwendung derzeit nicht zutrifft, ihrem Dienstalter und ihren Fähigkeiten entsprechend zur Beamtendienstleistung herangezogen und auf freiwerdende Beamtenposten zu rangsklassenmäßigen Beamten ernannt werden.</p>
+                  <p>Der sprechende Staatssekretär vermöge diesem Antrage in Anbetracht der tatsächlichen Verwendungsart, der Diener und Unterbeamten eine sachliche Berechtigung nicht zuzuerkennen und müsse gegen ihn wegen der daraus für den Staatsschatz sich ergebenden weiteren Folgen umso nachdrücklicher Stellung nehmen, als den Dienern und Unterbeamten bereits durch das Besoldungsübergangsgesetz derartige Vorteile zugewendet worden seien, dass ihnen nunmehr die Erlangung von Bezügen offenstehe, welche die Bezüge der VIII. Rangsklasse nahezu erreichen.</p>
+                  <p>Auch ein allfälliger Hinweis auf die Einreihung der Gendarmerie-, Sicherheitswach- und Finanzwachorgane in die Rangsklassen der Staatsbeamten, bzw. Ernennung zu Beamten ohne Rangsklasse könnte keineswegs als stichhältig bezeichnet werden, weil den Angehörigen dieser Bedienstetenkategorien eine unter Umständen sehr weitgehende exekutive Gewalt eingeräumt <pb facs="krp-0143_r-0030"/>sei und von ihnen verhältnismäßig große Selbständigkeit in der Entscheidung sowie umfassende Kenntnis zahlreicher Gesetze und Vorschriften gefordert werden müsse, wie dies hinsichtlich der Amtsdiener und Unterbeamten, und zwar auch, wenn sie mitunter beamtenähnliche Dienste nebst ihren eigentlichen Geschäften versehen, nicht der Fall sei. Aus dem gleichen Grunde treffe auch ein Vergleich mit den gerichtlichen Gefangenenaussichtsorganen und noch weniger mit den gerichtlichen Vollstreckungsorganen zu, denen durch die beiden Regierungsvorlagen Beamtencharakter verliehen werden soll.</p>
+                  <p>Redner beabsichtige demnach bei Verhandlung des Antrages der Abgeordneten Allina und Genossen im Finanz- und Budgetausschuss einen ablehnenden Standpunkt einzunehmen und erbitte hiezu die Zustimmung des Kabinettsrates. Hiebei müsse er allerdings darauf aufmerksam machen, dass sich dadurch Schwierigkeiten für die Verabschiedung der Gesetzesvorlagen, betreffend die Gefangenenaufseher und die gerichtlichen Vollstreckungsorgane ergeben könnten.</p>
+                  <p>Unterstaatssekretär Dr. <hi rend="#letterspaced">Eisler</hi> bemerkt, dass die Entscheidung über den <pb facs="krp-0143_r-0031"/>Antrag Allina der Nationalversammlung überlassen werden müsse, die Regierung sich ihm aber schon aus dem Grunde nicht anschließen könne, weil der Kabinettsrat bei der Beratung der Vorlagen, betreffend die Regelung des Dienstverhältnisses der Gefangenenaufseher und gerichtlichen Vollstreckungsorgane die Genehmigung zur Einbringung ausdrücklich von der Bedingung abhängig gemacht habe, dass sich daraus für andere Angestelltenkategorien keinerlei Beispielsfolgerungen ergeben dürfen. Die Regierung hätte also an diesen beiden Vorlagen festzuhalten, ihrer Anwendung auf andere Gruppen aber entgegenzutreten.</p>
+                  <p>Der Kabinettsrat ermächtigt sohin den Staatssekretär für Finanzen zu der Erklärung im Finanz- und Budgetausschuss, dass eine Ausdehnung der Beamtenqualität auf Diener und Unterbeamte im Sinne des Antrages der Abgeordneten Allina und Genossen nicht zugestanden werden könne.</p>
+               </div>
+               <div type="top" xml:id="krp-0143_top16">
+                  <head>
+                     <label>
+                        <num n="16">16.</num>
+                        <seg>Forderungen der Postbediensteten.</seg>
+                     </label>
+                  </head>
+                  <p>Über Einladung des Vorsitzenden erstattet Ministerialrat Dr. <hi rend="#letterspaced">Wilfling</hi> Bericht über Zwischenfälle bei den Verhandlungen mit dem Besoldungsausschuss der Arbeits<pb facs="krp-0143_r-0032"/>gemeinschaft der Postangestelltenorganisationen in Angelegenheit der Durchführung des Besoldungsübergangsgesetzes.</p>
+                  <p>Über Veranlassung des Besoldungsausschusses habe am 24. Jänner l. J. eine Sitzung, zu der Redner als Vertreter des Staatsamtes für Finanzen berufen worden sei, stattgefunden, die sich mit den Abänderungsanträgen des Besoldungsausschusses zur Vollzugsanweisung über die Durchführung des Besoldungsübergangsgesetzes zu beschäftigen hatte. Bei dieser Sitzung seien drei Forderungen der Postbediensteten unerledigt geblieben, weil ihnen Redner als gegen das Besoldungsübergangsgesetz verstoßend, nicht zustimmen konnte.</p>
+                  <p>Sie betrafen:</p>
+                  <list>
+                     <item n="1">
+                        <label>1.)</label> Gewährung eines Ortszuschlages für die Praktikanten der Postverwaltung,</item>
+                     <item n="2">
+                        <label>2.)</label> Abstandnahme von der gesetzlich vorgesehenen Kürzung der Gesamtdienstzeit der Unterbeamten und Diener für den Anfall der Gehaltserhöhungen um drei Jahre und schließlich</item>
+                     <item n="3">
+                        <label>3.)</label> Bewilligung des Ortszuschlages von Wien auch für andere Orte mit großer Teuerung.</item>
+                  </list>
+                  <p>Bei Fortsetzung der Verhandlungen <pb facs="krp-0143_r-0033"/>am 30. Jänner hätten die Mitglieder des Besoldungsausschusses vom Vertreter des Staatsamtes für Finanzen eine bindende Zusage hinsichtlich dieser drei Punkte verlangt und da eine solche nicht erteilt werden konnte, eine schriftliche Erklärung abgegeben, derzufolge der Besoldungsausschuss bis Samstag, den 31. Jänner um 10 Uhr vormittags den Beginn der endgiltigen Verhandlungen unter Teilnahme eines zur Abgabe von bindenden Erklärungen ermächtigten Vertreters des Staatsamtes für Finanzen erwarte. Sollte dieser Erwartung nicht entsprochen werden, so müssten die Mitglieder des Besoldungsausschusses jede Verantwortung für etwaige Folgen ablehnen.</p>
+                  <p>Ferner sei angekündigt worden, dass noch weitere 14 Forderungen zur Verhandlung gelangen sollen, ohne dass diese aber bisher dem Staatsamt für Verkehrswesen noch jenem für Finanzen zur Kenntnis gebracht worden wären.</p>
+                  <p>Dieser Vorgang, dass Angestelltenorganisationen Vertreter des Staatsamtes für Finanzen zu Sitzungen berufen, um mit ihnen bindend über Forderungen zu verhandeln, die der eigenen Ressortbehörde noch gar nicht bekanntgegeben wurden, erscheine jedenfalls unzulässig.</p>
+                  <p>
+                     <pb facs="krp-0143_r-0034"/>Für die vorläufige Stellungnahme des Vertreters des Staatsamtes für Finanzen bei den Verhandlungen mit den Organisationen der Post- und der Telegrafenangestellten würden nun vom Kabinettsrat folgende Richtlinien erbeten:</p>
+                  <list>
+                     <item n="1">
+                        <label>1.)</label> Die Einberufung und Leitung der Verhandlung hat nur durch das Staatsamt für Verkehrswesen (Postsektion, Telegrafensektion) zu geschehen; womöglich wären die zu verhandelnden Gegenstände wenigstens 24 Stunden vorher schriftlich dem Staatsamt für Finanzen mitzuteilen.</item>
+                     <item n="2">
+                        <label>2.)</label> Zugeständnisse können nur insoweit gemacht werden, soferne sie</item>
+                     <item n="3">
+                        <label>a)</label> in den Besonderheiten des Post-, bzw. Telegrafendienstes gegründet sind,</item>
+                     <item n="4">
+                        <label>b)</label> soweit sie nicht mit dem Gesetze in Widerspruch stehen. </item>
+                  </list>
+                  <p>Soweit diese Voraussetzungen nicht, zutreffen, müsste die Entscheidung der Regierung ad a) wegen der Rückwirkungen auf andere Gruppen ad b) wegen der Unmöglichkeit gesetzwidrige Verfügungen im Verordnungswege zu erlassen, eingeholt werden.</p>
+                  <p>Staatssekretär Hanusch wendet sich gegen ein derartiges selbstständiges Vorgehen von Staatsbe<pb facs="krp-0143_r-0035"/>diensteten und beantragt einen Beschluss des Kabinettsrates, dass Verhandlungen über Forderungen der Angestellten eines Ressorts nur von diesem Ressort selbst, und zwar wo es sich um finanzielle Fragen handelt, unter Zuziehung eines Vertreters des Staatsamtes für Finanzen gepflogen werden dürfen.</p>
+                  <p>Der Kabinettsrat beschließt in diesem Sinne und beauftragt Ministerialrat Dr. Wilfling, die Vertreter der Organisationen der Festangestellten hievon zu verständigen.</p>
+               </div>
+               <div type="top" xml:id="krp-0143_top17">
+                  <head>
+                     <label>
+                        <num n="17">17.</num>
+                        <seg>Aufnahme eines Hypothekardarlehens durch das Benediktinerstift Altenburg.</seg>
+                     </label>
+                  </head>
+                  <p>Unterstaatssekretär <hi rend="#letterspaced">Miklas</hi> führt aus, dass das Benediktinerstift Altenburg beabsichtige, bei der Waisenkasse des Bezirksgerichtes Horn ein zu 4 % verzinsliches und in 54 ½ Jahren rückzahlbares Hypothekardarlehen im Betrage von 500.000 K gegen Verpfändung der dem Stifte gehörigen, im Grundbuche Wien über landtäfliche Liegenschaften sub EZ 544, 331, 516 und 264 vorgetragenen Güter Wildberg, Drösiedl, Limberg und Wisend aufzunehmen. Die Darlehensvaluta solle <pb facs="krp-0143_r-0036"/>zur Deckung unvermeidlicher Ausgaben für die Einführung des elektrischen Stromes für Licht- und Kraftgewinnung, weiters zur Anschaffung landwirtschaftlicher Maschinen und Bezüge und für notwendige Instandsetzungen verwendet werden. Da das Stift für die pünktliche Bezahlung der Annuitäten zweifellos aufzukommen imstande sei, da ferner durch die projektierten Investitionen eine Steigerung des Stiftseinkommens zu gewärtigen sei und mithin das Rechtsgeschäft für das Stift vorteilhaft erscheine, so sei bei dem Umstande, als der vom Bezirksgerichte Horn ausgefertigte Schuldschein über das gegenständliche Darlehen, abgesehen von kleinen noch vorzunehmenden stilistischen Berichtigungen zu Bedenken in rechtlicher Hinsicht keinen Anlass biete, sowohl die Niederösterreichische Landesregierung als auch das bischöfliche Ordinariat St. Pölten für die Genehmigung der gegenständlichen Transaktion eingetreten.</p>
+                  <p>Der sprechende Unterstaatssekretär stelle sohin den Antrag, der Kabinettsrat wolle ihn ermächtigen, dem Stifte Altenburg zur Aufnahme dieses Hypothekardarlehens im Sinne der Ministerialverordnung vom 20. Juni 1860, RGBl. Nr. 162, die staatsbehördliche Bewilligung erteilen zu dü<pb facs="krp-0143_r-0037"/>rfen.</p>
+                  <p>Der Kabinettsrat erteilt die erbetene Ermächtigung.</p>
+                  <p/>
+               </div>
+            </div>
+            <div type="stenogramme">
+               <div n="1">
+                  <head>EINZUFÜGEN</head>
+                  <p>Transkription in Arbeit.</p>
+                  <p/>
+               </div>
+               <div n="2">
+                  <head>EINZUFÜGEN</head>
+                  <p>Transkription in Arbeit.</p>
+               </div>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

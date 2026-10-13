@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href='http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:acdh="https://vocabs.acdh.oeaw.ac.at/schema#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xml:lang="de">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="a" type="main" n="0154">Kabinettsprotokoll Nr. 154 vom 5. März 1920</title>
+            <title level="m" type="main" n="01">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <title level="m" type="sub" n="">Renner III (17. Oktober 1919 – 7. Juli 1920)</title>
+            <meeting>
+               <placeName key="https://d-nb.info/gnd/4066009-6">Wien</placeName>
+               <orgName key="https://d-nb.info/gnd/5162749-8">Kabinettsrat</orgName>
+               <date when-iso="1920-03-05"/>
+            </meeting>
+            <editor>
+               <persName key="https://d-nb.info/gnd/122481836"
+                         role="hasCreator"
+                         xml:id="hwohnout">
+                  <forename>Helmut</forename>
+                  <surname>Wohnout</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</affiliation>
+               <idno type="ORCID">0000-0002-3864-9839</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/120789825"
+                         role="hasCreator"
+                         xml:id="tolechowski">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0003-3291-6876</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/131679384"
+                         role="hasCreator"
+                         xml:id="rlein">
+                  <forename>Richard</forename>
+                  <surname>Lein</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0002-7502-0503</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="aholzer">
+                  <forename>Anna</forename>
+                  <surname>Holzer</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0005-3560-3500</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="dsoelkner">
+                  <forename>Dominik</forename>
+                  <surname>Sölkner</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-9895-7212</idno>
+            </editor>
+            <editor>
+               <persName role="hasContributor" xml:id="ischotzko">
+                  <forename>Ina</forename>
+                  <surname>Schotzko</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-5210-3713</idno>
+            </editor>
+            <funder n="1">
+               <orgName key="https://d-nb.info/gnd/2054142-9" role="hasFunder">Österreichischer Wissenschaftsfonds FWF</orgName>
+               <idno type="project">PAT1495024</idno>
+               <title type="project">Die Protokolle des österreichischen Kabinettsrates 1919–1920</title>
+            </funder>
+            <respStmt>
+               <resp>Projektverantwortung</resp>
+               <orgName key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Projektleitung</resp>
+               <persName key="https://d-nb.info/gnd/120789825" role="hasPrincipalInvestigator">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+                  <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+                  <idno type="ORCID">0000-0003-3291-6876</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Nationaler Forschungspartner</resp>
+               <orgName key="https://d-nb.info/gnd/1123037736" role="hasEnabler">Austrian Centre for Digital Humanities</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Digitalisierung der gedruckten Quellen</resp>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>TEI-Datenmodellierung</resp>
+               <persName role="hasContributor" xml:id="tfruehwirth">
+                  <forename>Timo</forename>
+                  <surname>Frühwirth</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-3997-5193</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technische Supervision</resp>
+               <persName key="https://d-nb.info/gnd/1043833846"
+                         role="hasContributor"
+                         xml:id="pandorfer">
+                  <forename>Peter</forename>
+                  <surname>Andorfer</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-9575-9372</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technisches Consulting und Vorbereitung der Druckausgabe</resp>
+               <persName key="https://d-nb.info/gnd/13281899X"
+                         role="hasContributor"
+                         xml:id="skurz">
+                  <forename>Stephan</forename>
+                  <surname>Kurz</surname>
+                  <affiliation key="https://d-nb.info/gnd/1202798799">Institut für die Erforschung der Habsburgermonarchie und des Balkanraumes</affiliation>
+                  <idno type="ORCID">0000-0003-2546-2570</idno>
+               </persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher key="https://d-nb.info/gnd/1001454-8">Österreichische Akademie der Wissenschaften</publisher>
+            <date when="2028"/>
+            <availability status="free">
+               <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">Lizenziert unter CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/deed.de)</licence>
+            </availability>
+            <idno type="ISBN_Print"/>
+            <idno type="ISBN_Part_epub"/>
+            <idno type="ISBN_Digital"/>
+            <idno type="DOI"/>
+            <idno type="DOI_zenodo"/>
+            <idno type="ebook_ID"/>
+         </publicationStmt>
+         <seriesStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="m" type="main">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <respStmt>
+               <resp>Bearbeitung und Herausgeberschaft</resp>
+               <orgName key="https://d-nb.info/gnd/2024703-5">Universität Wien</orgName>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+         </seriesStmt>
+         <notesStmt>
+            <note>Diese TEI-XML-Datei ist Grundlage für eine Druckausgabe der Edition.</note>
+            <relatedItem>
+               <biblStruct>
+                  <monogr>
+                     <imprint>
+                        <pubPlace key="https://d-nb.info/gnd/4066009-6">Wien</pubPlace>
+                        <publisher key="https://d-nb.info/gnd/2068748-5">Verlag der Österreichischen Akademie der Wissenschaften</publisher>
+                        <date when="2029"/>
+                     </imprint>
+                     <extent/>
+                  </monogr>
+                  <note>
+                     <idno/>
+                     <ptr/>
+                  </note>
+                  <citedRange/>
+               </biblStruct>
+            </relatedItem>
+         </notesStmt>
+         <sourceDesc>
+            <bibl>Quellbestand: AT-OeStA/AdR MRang MR 1Rep KRP Kabinettsratsprotokolle, 1918-1920 (Teilbestand)<ref target="https://www.archivinformationssystem.at/detail.aspx?id=5465">https://www.archivinformationssystem.at/detail.aspx?id=5465</ref>
+            </bibl>
+            <msDesc>
+               <msIdentifier>
+                  <institution key="https://d-nb.info/gnd/37748-X" role="hasOwner">AT-OeStA Österreichisches Staatsarchiv (Archiv (ÖStA))</institution>
+                  <repository key="https://d-nb.info/gnd/1601181-8">AT-OeStA/AdR Archiv der Republik, 1918- (Abteilung)</repository>
+                  <collection>AT-OeStA/AdR MRang MR 1Rep Ministerrat 1. Republik, 1918 - 1938 (Bestand)</collection>
+                  <idno>AT-OeStA_AdR-MRang-MR-1.-Rep.-KRP-154</idno>
+               </msIdentifier>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <abstract>
+            <p>
+          <!--to be generated-->
+        </p>
+         </abstract>
+      </profileDesc>
+      <encodingDesc>
+         <styleDefDecl scheme="css"/>
+         <tagsDecl>
+            <rendition xml:id="b" scheme="css">font-weight:bold;</rendition>
+            <rendition xml:id="su" scheme="css">vertical-align:super;font-size:.7em;</rendition>
+            <rendition xml:id="s" scheme="css">text-decoration:line-through;</rendition>
+            <rendition xml:id="u" scheme="css">text-decoration:underline;</rendition>
+            <rendition xml:id="ow" scheme="css">text-decoration:line-through;text-decoration-style:double;</rendition>
+            <rendition xml:id="r" scheme="css">display:block;text-align:right;</rendition>
+            <rendition xml:id="letterspaced" scheme="css">letter-spacing:0.15em;</rendition>
+            <rendition xml:id="i" scheme="css">font-style:italic;</rendition>
+         </tagsDecl>
+         <editorialDecl>
+            <hyphenation>
+               <p>
+            <!--to be added-->
+          </p>
+            </hyphenation>
+            <correction>
+               <p>
+            <!--to be added-->
+          </p>
+            </correction>
+            <normalization>
+               <p>
+            <!--to be added-->
+          </p>
+            </normalization>
+            <punctuation>
+               <p>
+            <!--to be added-->
+          </p>
+            </punctuation>
+            <stdVals>
+               <p>
+            <!--to be added-->
+          </p>
+            </stdVals>
+            <p>
+          <!--to be added-->
+        </p>
+         </editorialDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#tfruehwirth" when-iso="2026-10-13">TEIGarage output upconverted with upconvert.xsl</change>
+         <change who="#tfruehwirth" when-iso="2026-10-13">TEI header populated with generate_tei_templates.py</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface/>
+   </facsimile>
+   <text>
+      <body>
+         <div xml:id="doc-krp-0154.xml">
+            <head type="dokument">
+               <title type="num">154.<note type="footnote">Das Protokoll trägt den Vermerk <hi rend="#i">Vertraulich!</hi>
+                  </note>
+               </title>
+               <title type="desc">
+                  <pb facs="krp-0154_r-0001"/>[Freitag] 1920-03-05</title>
+            </head>
+            <div type="dokumentkopf">
+               <div type="vorsitz">
+                  <head>Vorsitz:</head>
+                  <p>Renner, teilweise Fink</p>
+               </div>
+               <div type="anwesend">
+                  <head>Anwesend:</head>
+                  <p>Deutsch, Eisler, Eldersch, Ellenbogen, Hanusch, Loewenfeld-Russ, Miklas, Paul, Ramek, Reisch, Resch, Stöckler, Tandler, Waiss</p>
+               </div>
+               <div type="zugezogen">
+                  <head>Zugezogen:</head>
+                  <p>-</p>
+               </div>
+               <div type="schriftfuehrer">
+                  <head>Schriftführer:</head>
+                  <p>unbekannt</p>
+               </div>
+               <div type="dauer">
+                  <head>Dauer:</head>
+                  <p>15.00–17.00 Uhr</p>
+               </div>
+            </div>
+            <div type="komponenten">
+               <p>Reinschrift, Beilagen, Konzept, stenographische Mitschrift, Entwurf der Tagesordnung, diverse Zusätze</p>
+            </div>
+            <div type="beilagen">
+               <head>Beilagen:</head>
+               <list>
+                  <item>
+                     <ref target="#krp-0154_top02">Zu TOP 2</ref>: <ref target="#krp-0154_b01">Vortrag des Staatskanzlers Zl. 719/St.K. über die Neubesetzung der Stelle eines Ersatzmannes beim Verfassungsgerichtshof</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0154_top03">Zu TOP 3</ref>: <ref target="#krp-0154_b02">Vortag des Staatsamtes für Verkehrswesen Zl. 5087/1920 über die Regelung des Fahrbegünstigungswesens für Pensionisten</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0154_top04">Zu TOP 4</ref>: <ref target="#krp-0154_b03">Vortrag des Staatsamtes für Verkehrswesen Zl. 1172/T-1920 über die Vollzugsanweisung betreffend die Neufestsetzung einiger Telegrammgebühren</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0154_top06">Zu TOP 6</ref>: <ref target="#krp-0154_b04">Gesetzesvorlage der Staatsregierung über die Stellung und Bezüge der Professoren in den vom Staat erhaltenen Hebammenlehranstalten</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0154_top07">Zu TOP 7</ref>: <ref target="#krp-0154_b05">Vortrag des Staatsamtes für Inneres und Unterricht Zl. 7174 über den Entwurf einer Vollzugsanweisung der Staatsregierung über die Einführung der Sommerzeit für das Jahr 1920 mit Vollzugsanweisung und dem diesbezüglichen Vortrag des Staatsamtes für Verkehrswesen Zl. 5021/20 vom 15. Februar 1920</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0154_top08">Zu TOP 8</ref>: <ref target="#krp-0154_b06">Bericht des Staatsamtes für Finanzen über die Frage, dem Kärntner Abstimmungsgebiet eine Ausnahmestellung hinsichtlich der Vermögensabgabe zuzubilligen</ref>
+                  </item>
+               </list>
+            </div>
+            <div type="protokoll">
+               <pb facs="krp-0154_r-0002"/>
+               <div type="top" xml:id="krp-0154_top01">
+                  <head>
+                     <label>
+                        <num n="1">1.</num>
+                        <seg>Gesetzesbeschluss des Salzburger Landtages, betreffend Abänderung des Gesetzes über die Errichtung von Dienstbotenkrankenkassen im Lande Salzburg.</seg>
+                     </label>
+                  </head>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> teilt mit, dass der Salzburger Landtag am 27. Jänner l. J. einen Gesetzesbeschluss gefasst habe, „womit der § 3 des Gesetzes vom 6. Dezember 1901, LGBl. Nr. 5 ex 1902, betreffend die Errichtung von Dienstbotenkrankenkassen im Lande Salzburg abgeändert wird." Die Landesregierung habe diesen Beschluss dem Staatsamt für soziale Verwaltung mit dem Ersuchen vorgelegt, womöglich schon vor Ablauf der Vorstellungsfrist der Verlautbarung dieses Gesetzes zuzustimmen. Das Staatsamt für soziale Verwaltung habe diesen Gesetzesbeschluss, der nicht in seinen, sondern in den Wirkungskreis des Staatsamtes für Inneres und Unterricht fällt, der Staatskanzlei abgetreten.</p>
+                  <p>
+                     <pb facs="krp-0154_r-0003"/>Bedenken können nur gegen die Vollzugsklausel bestehen, durch welche die Landesregierung mit dem Vollzuge des Gesetzes beauftragt werden soll. Der Landesrat von Salzburg habe sich jedoch aufgrund einer ihm allgemein vom Landtag erteilten Ermächtigung zu formellen Änderungen von Gesetzesbeschlüssen damit einverstanden erklärt, dass der Art. III des Entwurfes, falls die Staatsregierung darauf Gewicht legen sollte, folgendermaßen formuliert werde: „Mit dem Vollzuge dieses Gesetzes ist das Staatsamt für soziale Verwaltung betraut, welches hiezu die Landesregierung beauftragt.“ Dieser Änderung könne unter der Voraussetzung zugestimmt werden, dass an Stelle des Staatsamtes für soziale Verwaltung das tatsächlich zuständige Staatsamt für Inneres und Unterricht in der Vollzugsklausel angeführt wird.</p>
+                  <p>Die Staatskanzlei stelle den Antrag, der Kabinettsrat wolle beschließen:</p>
+                  <p>Gegen den Gesetzesbeschluss des Landtages von Salzburg vom 27. Jänner l. J., „womit der § 3 des Gesetzes vom 6. Dezember 1901, LGBl. Nr. 5 ex 1902, betreffend die Errichtung von Dienstbotenkrankenkassen im Lande Salzburg abgeändert wird“, wird eine Vorstellung <pb facs="krp-0154_r-0004"/>nicht erhoben, sondern der sofortigen Kundmachung zugestimmt. Der Gesetzesbeschluss wird vom Staatssekretär für Inneres und Unterricht gegengezeichnet. Zugleich wird der Landesregierung nahegelegt, zu veranlassen, dass die Vollzugsklausel folgendermaßen formuliert werde: „Mit dem Vollzuge dieses Gesetzes ist das Staatsamt für Inneres und Unterricht betraut, welches mit der Durchführung die Landesregierung beauftragt“.</p>
+                  <p>Der Kabinettsrat erhebt diesen Antrag zum Beschluss.</p>
+               </div>
+               <div type="top" xml:id="krp-0154_top02">
+                  <head>
+                     <label>
+                        <num n="2">2.</num>
+                        <seg>Neubesetzung der Stelle eines Ersatzmannes beim Verfassungsgerichtshof.</seg>
+                     </label>
+                  </head>
+                  <p>Über Antrag des Vorsitzenden beschließt der Kabinettrat zur Ernennung als Ersatzmann beim Verfassungsgerichtshof an Stelle des verstorbenen Rechtsanwaltes Dr. Fritz Winter den Rechtsanwalt Dr. Isidor Rosner in Wien dem Präsidenten der Nationalversammlung vorzuschlagen.</p>
+               </div>
+               <div type="top" xml:id="krp-0154_top03">
+                  <head>
+                     <label>
+                        <num n="3">3.</num>
+                        <seg>Regelung des Fahrbegünstigungswesens der Pensionisten.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Paul</hi> erstattet entsprechend dem ihm vom Kabinettsrate in seiner Sitzung am 27. Jänner d. J. erteilten Auftrag einen eingehenden Bericht über die Frage der Neurege<pb facs="krp-0154_r-0005"/>lung des Fahrbegünstigungswesens der Pensionisten. Der sprechende Staatssekretär vermeint, dass der gegenwärtige Zeitpunkt für eine Neuregelung, die eine Einschränkung der Begünstigungen im Gefolge hätte, nicht geeignet sei und stellt den Antrag, die Lösung dieser Frage einem späteren, günstigeren Zeitpunkte vorzubehalten.</p>
+                  <p>Der Kabinettsrat pflichtet dieser Auffassung bei.</p>
+               </div>
+               <div type="top" xml:id="krp-0154_top04">
+                  <head>
+                     <label>
+                        <num n="4">4.</num>
+                        <seg>Vollzugsanweisung des Staatsamtes für Verkehrswesen, betreffend die Neufestsetzung einiger Telegrammgebühren.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Paul unterbreitet dem Kabinettsrat den Entwurf einer Vollzugsanweisung, durch welche im Zusammenhange mit der durch die Tariferhöhungen in Deutschland und in den Nationalstaaten notwendig gewordenen Erhöhung der Wortgebühren für Telegramme nach diesen Staaten, zur Hereinbringung der wesentlich gesteigerten Betriebskosten auch die Wortgebühren für Inlandstelegramme sowie die Nebengebühren im Telegrafenverkehre mit der Rechtswirksamkeit vom 1. April l. J. neu bestimmt werden sollen.</p>
+                  <p>Danach hätte künftig zu betragen:</p>
+                  <list>
+                     <item n="1">
+                        <label>1.)</label> im Inlandverkehre die Gebühr für jedes Wort eines gewöhnlichen Te<pb facs="krp-0154_r-0006"/>legrammes 40 h, eines Pressetelegrammes 20 h und die Mindestgebühr für jedes Telegramm 4 K,</item>
+                     <item n="2">
+                        <label>2.)</label> die Gebühr für die Ausfertigung eines Telegrammaufgabescheines 1 K,</item>
+                     <item n="3">
+                        <label>3.)</label> die Gebühr für die Eintragung einer gekürzten Telegrammadresse oder einer besonderen Zustellanweisung (Registrierungsgebühr) für Wien 500 K und für die anderen Orte 100 K jährlich,</item>
+                     <item n="4">
+                        <label>4.)</label> die Gebühr für die Ausfertigung einer Telegrammabschrift 5 K für jedes angefangene Hundert der Wortzahl.</item>
+                  </list>
+                  <p>Mit Rücksicht auf die in der Nationalversammlung in Verhandlung stehende Vorlage, durch welche die Festsetzung der Tarife der staatlichen Verkehrsunternehmungen dem Gesetzgebungswege vorbehalten werden soll, erbitte Redner die Entscheidung des Kabinettsrates, ob in dem gegenwärtigen Falle die Regelung noch durch Vollzugsanweisung erfolgen könne.</p>
+                  <p>Nach einer kurzen Debatte, in welcher Staatssekretär Dr. <hi rend="#letterspaced">Reisch</hi> anregt, die Registrierungsgebühren auch in den Orten außerhalb von Wien verhältnismäßig zu erhöhen, spricht <pb facs="krp-0154_r-0007"/>sich der Kabinettsrat dafür aus, die beantragten Tarifänderungen unter Festsetzung der Registrierungsgebühr außerhalb Wiens mit 200 K, diesmal noch durch Vollzugsanweisung vorzunehmen, beschließt aber, diese Vorgangsweise vor Erlassung der Verfügung dem Hauptausschusse zur Kenntnis zu bringen.</p>
+               </div>
+               <div type="top" xml:id="krp-0154_top05">
+                  <head>
+                     <label>
+                        <num n="5">5.</num>
+                        <seg>Tarifarische Behandlung der Kinderzüge im Verhältnis zur Tschechoslowakei.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Paul</hi> teilt mit, dass die tschechische Staatsbahnverwaltung eine Änderung in dem Übereinkommen hinsichtlich der tarifarischen Behandlung der beiderseitigen Kinderzüge nach dem Auslande innerhalb des fremden Staatsgebietes verlangt habe. Bisher sei die Beförderung der Kinderzüge wechselseitig kostenlos erfolgt. Da aber ungefähr doppelt so viel österreichische Kinderzüge über tschechisches Gebiet gehen, als von dort über Österreich, solle Österreich die tschechischen Kinderzüge künftighin kostenlos führen, für seine eigenen aber auf den tschechischen Bahnen eine Ermäßigung auf die Hälfte der normalen Gebühren unter der Voraussetzung zugestanden bekommen, dass es sich verbindlich mache, Reisende zu Sokolfesten, zur Prager Messe und ähn<pb facs="krp-0154_r-0008"/>lichen Veranstaltungen, welche die tschechische Eisenbahnverwaltung jeweils rechtzeitig bekanntgeben würde, unentgeltlich zu befördern.</p>
+                  <p>Der sprechende Staatssekretär halte diese Bedingung für unannehmbar und erbitte sich die Ermächtigung des Kabinettsrates, sie auch auf die Gefahr hin ablehnen zu dürfen, dass die Tschechen dann die halbe Ermäßigung für die österreichischen Kinderzüge nicht mehr zugestehen.</p>
+                  <p>Der Kabinettsrat pflichtet dieser Auffassung bei und ermächtigt gleichzeitig das Staatsamt für Finanzen, dem Volksgesundheitsamte gegebenenfalls jene Mittel zur Verfügung zu stellen, welche bei Berechnung der Durchfahrtskosten der österreichischen Kinderzüge durch tschechoslowakisches Gebiet nach den vollen Gebührensätzen auflaufen.</p>
+               </div>
+               <div type="top" xml:id="krp-0154_top06">
+                  <head>
+                     <label>
+                        <num n="6">6.</num>
+                        <seg>Gesetzentwurf, betreffend die Stellung und Bezüge der Professoren in den vom Staate erhaltenen Hebammenlehranstalten.</seg>
+                     </label>
+                  </head>
+                  <p>Unterstaatssekretär [Dr.] <hi rend="#letterspaced">Tandler</hi> erbittet und erhält vom Kabinettsrat die Ermächtigung, in der Nationalversammlung den Entwurf eines Gesetzes, betreffend die Stellung und Bezüge der Professoren in den vom Staate erhaltenen Hebammenlehranstal<pb facs="krp-0154_r-0009"/>ten, einbringen zu dürfen.</p>
+               </div>
+               <div type="top" xml:id="krp-0154_top07">
+                  <head>
+                     <label>
+                        <num n="7">7.</num>
+                        <seg>Einführung der Sommerzeit im Jahre 1920.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Eldersch</hi> erbittet die Genehmigung des Kabinettsrates zur Erlassung einer Vollzugsanweisung, durch welche nach dem mit dem Staatsamt für Verkehrswesen gepflogenen Einvernehmen in Österreich für die Dauer vom 5. April bis zum 27. September l. J. die Sommerzeit eingeführt werden soll.</p>
+                  <p>Vizekanzler <hi rend="#letterspaced">Fink</hi> und Staatssekretär <hi rend="#letterspaced">Stöckler</hi> sprechen sich dagegen aus, die Sommerzeit vor dem 15. April einzuführen und über den 15. September auszudehnen, da zu dieser Jahreszeit bei Vorverlegung der Zeit um eine Stunde in der Landwirtschaft die Stallarbeiten bei künstlichem Licht besorgt werden müssen und den Landwirten dazu das Beleuchtungsmaterial fehle.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Loewenfeld-Russ</hi> und Unterstaatssekretär Dr. <hi rend="#letterspaced">Ellenbogen</hi> verweisen demgegenüber darauf, dass in Frankreich heuer die Sommerzeit bereits mit 15. Februar in Geltung gesetzt worden sei und es vor der Entente <pb facs="krp-0154_r-0010"/>nicht verantwortet werden könnte, wenn Österreich, um Kohlen zu ersparen, von der Sommerzeit nicht den ausgiebigsten Gebrauch macht.</p>
+                  <p>Nachdem Unterstaatssekretär Dr. <hi rend="#letterspaced">Eisler</hi> empfohlen hatte, durch eine entsprechende Aufklärung die Bevölkerung von der Unerlässlichkeit dieser Maßregel zu überzeugen, genehmigt der Kabinettsrat die Vollzugsanweisung mit der Abänderung, dass als Endtermin für die Sommerzeit der 15. September festgesetzt wird.</p>
+               </div>
+               <div type="top" xml:id="krp-0154_top08">
+                  <head>
+                     <label>
+                        <num n="8">8.</num>
+                        <seg>Steuerbegünstigungen für das Volksabstimmungsgebiet in Kärnten.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Reisch</hi> erinnert daran, dass dem Kabinettsrat in der Sitzung vom 30. Jänner d. J. eine Eingabe vorgelegen sei, in welcher für das Abstimmungsgebiet in Kärnten steuerrechtliche Begünstigungen gefordert wurden, u. zw.:</p>
+                  <list>
+                     <item n="1">
+                        <label>1.)</label> die Vermögensabgabe dürfe erst nach erfolgter Abstimmung durchgeführt werden;</item>
+                     <item n="2">
+                        <label>2.)</label> in der Zone A solle die Vermögensabgabe überhaupt nicht gefordert werden;</item>
+                     <item n="3">
+                        <label>3.)</label> in der Zone B sollen den Bewohnern bedeutende Vorteile zugesichert werden.</item>
+                  </list>
+                  <p>
+                     <pb facs="krp-0154_r-0011"/>
+                  </p>
+                  <p>Dieser Vorschlag sei an den Finanzausschuss weitergeleitet worden. Der Unterausschuss des Finanzausschusses habe nun in seiner Sitzung am 28. Februar die Regierung aufgefordert, in dieser Angelegenheit die Entscheidung des Hauptausschusses der Nationalversammlung einzuholen.</p>
+                  <p>Dem Staatsamte für Finanzen liegen in dieser Angelegenheit Berichte der Kärntner Landesregierung vor, welche die erwähnten Vorschläge mit dem Hinweise darauf unterstützen, dass die in Österreich bevorstehende Vermögensabgabe von den Jugoslawen als wirksames Agitationsmittel zu ihren Gunsten verwendet werde.</p>
+                  <p>Zur vorliegenden Frage sei folgendes zu bemerken:</p>
+                  <p>Ein allgemeiner Aufschub der Durchführung der Vermögensabgabe im ganzen Staatsgebiete bis nach der Abstimmung in Kärnten sei nicht möglich, weil der Zeitpunkt, in dem diese stattfinden werde, vielleicht noch sehr ferne liege.</p>
+                  <p>Eine Erklärung, dass das Vermögensabgabegesetz im Abstimmungsgebiet erst später in Kraft treten werde, könnte eine günstige Wirkung nicht erzielen. Die Bevölkerung würde die <pb facs="krp-0154_r-0012"/>befürchtete Abgabe ja doch gewärtigen, sobald das Gebiet zu Österreich gehören wird.</p>
+                  <p>Es sei daher klar, dass eine Verfügung in dieser Frage nur dann wirkungsvoll sein könne, wenn sie jetzt definitiv und in bindender Form getroffen und publiziert würde.</p>
+                  <p>Vom Standpunkte der Finanzverwaltung erscheine es nicht möglich, eine Ausnahme von der Vermögensabgabepflicht für die Abstimmungsgebiete zu empfehlen, wiewohl man nicht leugnen könne, dass die traurige wirtschaftliche und finanzielle Lage des Staates und die durch sie bedingte Steuerlast bei der Volksabstimmung auf solche Elemente, die sich bei ihrer Entschließung nicht von ethischen, sondern von ökonomischen Erwägungen leiten lassen, in einem uns ungünstigen Sinne rückwirken könne.</p>
+                  <p>Um nun den Intentionen der Landesregierung so weit als irgendmöglich entgegenzukommen und zu vermeiden, dass bei völliger Ablehnung ihrer Wünsche nach etwa ungünstigem Ausgange der Abstimmung Vorwürfe gegen die Staatsregierung erhoben würden, bliebe nur der eine Weg, Begünstigungen bei der Bemessung bzw. Entrichtung <pb facs="krp-0154_r-0013"/>der Abgabe zu gewähren.</p>
+                  <p>Der sprechende Staatssekretär beantrage daher, der Kabinettsrat, wolle beschließen:</p>
+                  <p>Die Frage, ob dem Volksabstimmungsgebiete in Kärnten die Freiheit von der Verpflichtung zur Zahlung der Vermögensabgabe zugestanden werden soll, wird dem Hauptausschuss der Nationalversammlung mit dem Antrage auf Verneinung zur Entscheidung vorgelegt. Dabei regt die Regierung an, dem Begehren nach Begünstigung hinsichtlich der Vermögensabgabe in den umstrittenen Gebieten in der Form Rechnung zu tragen, dass in das Gesetz über die große Vermögensabgabe eine Bestimmung Aufnahme zu finden hätte, nach welcher in dem durch Vollzugsanweisung näher zu umschreibenden Kampfgebiete Kärntens, der infolge der kriegerischen Ereignisse und der jugoslawischen Besetzung von Abgabepflichtigen tatsächlich erlittene und nachgewiesene Schaden von der schuldigen Abgabe in Abschlag gebracht werden kann. Den Anregungen wegen Gewährung von Abschreibungen an den sonstigen direkten Steuern in diesen Gebieten Kärntens wird die Regierung im eigenen Wirkungskreise mit möglichstem Entgegenkommen weitgehend Rechnung tragen.</p>
+                  <p>
+                     <pb facs="krp-0154_r-0014"/>Der Kabinettsrat erhebt diesen Antrag zum Beschluss.</p>
+               </div>
+               <div type="top" xml:id="krp-0154_top09">
+                  <head>
+                     <label>
+                        <num n="9">9.</num>
+                        <seg>Einschränkung der Automobilbenützung bei den staatlichen Ämtern.</seg>
+                     </label>
+                  </head>
+                  <p>Vizekanzler <hi rend="#letterspaced">Fink</hi> bringt vor, dass die große Anzahl der bei den einzelnen staatlichen Ämtern in Verwendung stehenden Automobile angesichts der ungeheueren Betriebskosten großes Ärgernis in der Bevölkerung errege. Es erscheine ihm angemessen, dieser Stimmung Rechnung zu tragen und darum eine weitgehende Verringerung in der Zahl der Dienstautomobile eintreten zu lassen. Redner stelle daher den Antrag, der Kabinettsrat wolle entsprechende Maßnahmen beschließen, durch welche die Automobilbenützung bei staatlichen Ämtern eingeschränkt wird.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Loewenfeld-Russ</hi> erklärt, dass im Bereiche seines Ressorts der Dienstbetrieb nur dann aufrechterhalten werden könne, wenn für die Fahrten der Amtsorgane zu den zahlreichen auswärtigen Interventionen eine entsprechende Anzahl von Automobilen zur Verfügung stehe. Von diesem Gesichtspunkte aus müsse sich Redner bezüglich des Staatsamtes für Volksernährung gegen eine Einschränkung der Automobilbenützung aussprechen.</p>
+                  <p>
+                     <pb facs="krp-0154_r-0015"/>Staatssekretär <hi rend="#letterspaced">Hanusch</hi> weist darauf hin, dass es sich hauptsächlich darum handeln würde, zu überprüfen, ob jene Personen, welche gegenwärtig in Dienstautomobilen fahren, die Berechtigung zu deren Benützung besitzen. Es gebe auch eine Reihe von liquidierenden Stellen, die noch immer ganz unnötigerweise staatliche Automobile zur Verfügung haben.</p>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> erklärt, Erhebungen über die einschlägigen Verhältnisse pflegen und sodann dem Kabinettsrate Vorschläge unterbreiten zu wollen.</p>
+                  <p>Der Kabinettsrat beschließt, die Antragstellung von Seite des Vorsitzenden abzuwarten.</p>
+                  <p/>
+               </div>
+            </div>
+            <div type="stenogramme">
+               <div n="1">
+                  <head>EINZUFÜGEN</head>
+                  <p>Transkription in Arbeit.</p>
+                  <p/>
+               </div>
+               <div n="2">
+                  <head>EINZUFÜGEN</head>
+                  <p>Transkription in Arbeit.</p>
+               </div>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href='http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:acdh="https://vocabs.acdh.oeaw.ac.at/schema#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xml:lang="de">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="a" type="main" n="0158">Kabinettsprotokoll Nr. 158 vom 9. März 1920</title>
+            <title level="m" type="main" n="01">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <title level="m" type="sub" n="">Renner III (17. Oktober 1919 – 7. Juli 1920)</title>
+            <meeting>
+               <placeName key="https://d-nb.info/gnd/4066009-6">Wien</placeName>
+               <orgName key="https://d-nb.info/gnd/5162749-8">Kabinettsrat</orgName>
+               <date when-iso="1920-03-09"/>
+            </meeting>
+            <editor>
+               <persName key="https://d-nb.info/gnd/122481836"
+                         role="hasCreator"
+                         xml:id="hwohnout">
+                  <forename>Helmut</forename>
+                  <surname>Wohnout</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</affiliation>
+               <idno type="ORCID">0000-0002-3864-9839</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/120789825"
+                         role="hasCreator"
+                         xml:id="tolechowski">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0003-3291-6876</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/131679384"
+                         role="hasCreator"
+                         xml:id="rlein">
+                  <forename>Richard</forename>
+                  <surname>Lein</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0002-7502-0503</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="aholzer">
+                  <forename>Anna</forename>
+                  <surname>Holzer</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0005-3560-3500</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="dsoelkner">
+                  <forename>Dominik</forename>
+                  <surname>Sölkner</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-9895-7212</idno>
+            </editor>
+            <editor>
+               <persName role="hasContributor" xml:id="ischotzko">
+                  <forename>Ina</forename>
+                  <surname>Schotzko</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-5210-3713</idno>
+            </editor>
+            <funder n="1">
+               <orgName key="https://d-nb.info/gnd/2054142-9" role="hasFunder">Österreichischer Wissenschaftsfonds FWF</orgName>
+               <idno type="project">PAT1495024</idno>
+               <title type="project">Die Protokolle des österreichischen Kabinettsrates 1919–1920</title>
+            </funder>
+            <respStmt>
+               <resp>Projektverantwortung</resp>
+               <orgName key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Projektleitung</resp>
+               <persName key="https://d-nb.info/gnd/120789825" role="hasPrincipalInvestigator">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+                  <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+                  <idno type="ORCID">0000-0003-3291-6876</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Nationaler Forschungspartner</resp>
+               <orgName key="https://d-nb.info/gnd/1123037736" role="hasEnabler">Austrian Centre for Digital Humanities</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Digitalisierung der gedruckten Quellen</resp>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>TEI-Datenmodellierung</resp>
+               <persName role="hasContributor" xml:id="tfruehwirth">
+                  <forename>Timo</forename>
+                  <surname>Frühwirth</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-3997-5193</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technische Supervision</resp>
+               <persName key="https://d-nb.info/gnd/1043833846"
+                         role="hasContributor"
+                         xml:id="pandorfer">
+                  <forename>Peter</forename>
+                  <surname>Andorfer</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-9575-9372</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technisches Consulting und Vorbereitung der Druckausgabe</resp>
+               <persName key="https://d-nb.info/gnd/13281899X"
+                         role="hasContributor"
+                         xml:id="skurz">
+                  <forename>Stephan</forename>
+                  <surname>Kurz</surname>
+                  <affiliation key="https://d-nb.info/gnd/1202798799">Institut für die Erforschung der Habsburgermonarchie und des Balkanraumes</affiliation>
+                  <idno type="ORCID">0000-0003-2546-2570</idno>
+               </persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher key="https://d-nb.info/gnd/1001454-8">Österreichische Akademie der Wissenschaften</publisher>
+            <date when="2028"/>
+            <availability status="free">
+               <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">Lizenziert unter CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/deed.de)</licence>
+            </availability>
+            <idno type="ISBN_Print"/>
+            <idno type="ISBN_Part_epub"/>
+            <idno type="ISBN_Digital"/>
+            <idno type="DOI"/>
+            <idno type="DOI_zenodo"/>
+            <idno type="ebook_ID"/>
+         </publicationStmt>
+         <seriesStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="m" type="main">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <respStmt>
+               <resp>Bearbeitung und Herausgeberschaft</resp>
+               <orgName key="https://d-nb.info/gnd/2024703-5">Universität Wien</orgName>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+         </seriesStmt>
+         <notesStmt>
+            <note>Diese TEI-XML-Datei ist Grundlage für eine Druckausgabe der Edition.</note>
+            <relatedItem>
+               <biblStruct>
+                  <monogr>
+                     <imprint>
+                        <pubPlace key="https://d-nb.info/gnd/4066009-6">Wien</pubPlace>
+                        <publisher key="https://d-nb.info/gnd/2068748-5">Verlag der Österreichischen Akademie der Wissenschaften</publisher>
+                        <date when="2029"/>
+                     </imprint>
+                     <extent/>
+                  </monogr>
+                  <note>
+                     <idno/>
+                     <ptr/>
+                  </note>
+                  <citedRange/>
+               </biblStruct>
+            </relatedItem>
+         </notesStmt>
+         <sourceDesc>
+            <bibl>Quellbestand: AT-OeStA/AdR MRang MR 1Rep KRP Kabinettsratsprotokolle, 1918-1920 (Teilbestand)<ref target="https://www.archivinformationssystem.at/detail.aspx?id=5465">https://www.archivinformationssystem.at/detail.aspx?id=5465</ref>
+            </bibl>
+            <msDesc>
+               <msIdentifier>
+                  <institution key="https://d-nb.info/gnd/37748-X" role="hasOwner">AT-OeStA Österreichisches Staatsarchiv (Archiv (ÖStA))</institution>
+                  <repository key="https://d-nb.info/gnd/1601181-8">AT-OeStA/AdR Archiv der Republik, 1918- (Abteilung)</repository>
+                  <collection>AT-OeStA/AdR MRang MR 1Rep Ministerrat 1. Republik, 1918 - 1938 (Bestand)</collection>
+                  <idno>AT-OeStA_AdR-MRang-MR-1.-Rep.-KRP-158</idno>
+               </msIdentifier>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <abstract>
+            <p>
+          <!--to be generated-->
+        </p>
+         </abstract>
+      </profileDesc>
+      <encodingDesc>
+         <styleDefDecl scheme="css"/>
+         <tagsDecl>
+            <rendition xml:id="b" scheme="css">font-weight:bold;</rendition>
+            <rendition xml:id="su" scheme="css">vertical-align:super;font-size:.7em;</rendition>
+            <rendition xml:id="s" scheme="css">text-decoration:line-through;</rendition>
+            <rendition xml:id="u" scheme="css">text-decoration:underline;</rendition>
+            <rendition xml:id="ow" scheme="css">text-decoration:line-through;text-decoration-style:double;</rendition>
+            <rendition xml:id="r" scheme="css">display:block;text-align:right;</rendition>
+            <rendition xml:id="letterspaced" scheme="css">letter-spacing:0.15em;</rendition>
+            <rendition xml:id="i" scheme="css">font-style:italic;</rendition>
+         </tagsDecl>
+         <editorialDecl>
+            <hyphenation>
+               <p>
+            <!--to be added-->
+          </p>
+            </hyphenation>
+            <correction>
+               <p>
+            <!--to be added-->
+          </p>
+            </correction>
+            <normalization>
+               <p>
+            <!--to be added-->
+          </p>
+            </normalization>
+            <punctuation>
+               <p>
+            <!--to be added-->
+          </p>
+            </punctuation>
+            <stdVals>
+               <p>
+            <!--to be added-->
+          </p>
+            </stdVals>
+            <p>
+          <!--to be added-->
+        </p>
+         </editorialDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#tfruehwirth" when-iso="2026-10-13">TEIGarage output upconverted with upconvert.xsl</change>
+         <change who="#tfruehwirth" when-iso="2026-10-13">TEI header populated with generate_tei_templates.py</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface/>
+   </facsimile>
+   <text>
+      <body>
+         <div xml:id="doc-krp-0158.xml">
+            <head type="dokument">
+               <title type="num">158.<note type="footnote">Das Protokoll trägt den Vermerk <hi rend="#i">Vertraulich!</hi>
+                  </note>
+               </title>
+               <title type="desc">
+                  <pb facs="krp-0158_r-0001"/>[Dienstag] 1920-03-09</title>
+            </head>
+            <div type="dokumentkopf">
+               <div type="vorsitz">
+                  <head>Vorsitz:</head>
+                  <p>Renner, teilweise Fink</p>
+               </div>
+               <div type="anwesend">
+                  <head>Anwesend:</head>
+                  <p>Deutsch, Eldersch, Glöckel, Hanusch, Mayr, Paul, Ramek, Reisch, Stöckler, Tandler, Waiss</p>
+               </div>
+               <div type="zugezogen">
+                  <head>Zugezogen:</head>
+                  <p>Grimm, Grünberger, Seitz</p>
+               </div>
+               <div type="schriftfuehrer">
+                  <head>Schriftführer:</head>
+                  <p>unbekannt</p>
+               </div>
+               <div type="dauer">
+                  <head>Dauer:</head>
+                  <p>20.30–00.30 Uhr</p>
+               </div>
+            </div>
+            <div type="komponenten">
+               <p>Reinschrift, Beilagen, Anhang, Konzept, stenographische Mitschrift, Entwurf der Tagesordnung, 22. Personalsitzung</p>
+            </div>
+            <div type="beilagen">
+               <head>Beilagen:</head>
+               <list>
+                  <item>
+                     <ref target="#krp-0158_top01">Zu TOP 1</ref>: <ref target="#krp-0158_b01">Bericht des Staatsamtes für Finanzen über die Foreign Commerce Corporation in New York; Einrichtung einer Filiale in Wien</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0158_top05">Zu TOP 5</ref>: <ref target="#krp-0158_b02">Bericht der Staatskanzlei zu Zl. 1/54-St.K./1920 über die Ermächtigung zur vorübergehenden Weitergabe des bisher angefallenen Aktenmaterials an das Präsidium der Nationalversammlung sowie die Anfrage der Kommission, Verhandlungen für öffentlich erklären zu können</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0158_top05">Zu TOP 5</ref>: <ref target="#krp-0158_b03">Bericht der Staatskanzlei Zl. 1/48 bzw. 1/56 St.K./1920 über die Vorlage des 9. und 10. Berichts der Kommission zur Erhebung militärischer Pflichtverletzungen</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0158_top07">Zu TOP 7</ref>: <ref target="#krp-0158_b04">Instruktion der Staatsregierung zu Zl. 21/45 St.K.-20 zur Vollzugsanweisung über die Liquidierung</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0158_top09">Zu TOP 9</ref>: <ref target="#krp-0158_b05">Bericht und Antrag des Staatssekretärs für Volksernährung über die gegenwärtige Ernährungslage, beiliegend ein Schreiben des Staatssekretärs an den Präsidenten des Organisationskomitees der Reparationskommission Jonnart</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0158_top10">Zu TOP 10</ref>: <ref target="#krp-0158_b06">Gesetzesentwurf über die Errichtung, die Erhaltung und den Betrieb öffentlicher Heil- und Pflegeanstalten samt Erläuterungen</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0158_top11">Zu TOP 11</ref>: <ref target="#krp-0158_b07">Antrag des Staatsamtes für soziale Verwaltung Zl. 4490/VG/1920 auf Unterstützung des Gesetzesbeschlusses des Salzburger Landtages über die Entlohnung der Ärzte und Hebammen für die Behandlung Armer und Findlinge</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0158_top12">Zu TOP 12</ref>: <ref target="#krp-0158_b08">Vortrag des Staatsamtes für Land- und Forstwirtschaft z. Zl. 4931/1920 über die Abänderung der Vollzugsanweisung hinsichtlich der Einführung von Transportbescheinigungen für Holz</ref>
+                  </item>
+                  <item>
+                     <ref target="#krp-0158_top12">Zu TOP 12</ref>: <ref target="#krp-0158_b09">Vollzugsanweisung des Staatsamtes für Land- und Forstwirtschaft über die Einführung von Transportbescheinigungen für Holz</ref>
+                  </item>
+               </list>
+            </div>
+            <div type="protokoll">
+               <pb facs="krp-0158_r-0002"/>
+               <div type="top" xml:id="krp-0158_top01">
+                  <head>
+                     <label>
+                        <num n="1">1.</num>
+                        <seg>Bericht über das Ergebnis der weiteren Finanzverhandlungen in Paris.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Reisch</hi> berichtet, dass es den beiden in Paris zurückgelassenen Vertretern des Staatsamtes für Finanzen gelungen sei, die vom sprechenden Staatssekretär gelegentlich des letzten Pariser Aufenthaltes angeknüpfte Verbindung mit dem Pariser Hause der Firma Morgan Harjes &amp; Co zu erweitern und die Firma nunmehr ins Auge gefasst habe, in Wien eine Zweigniederlassung der von ihr zur Besorgung des Warengeschäftes ins Leben <pb facs="krp-0158_r-0003"/>gerufenen Aktiengesellschaft „Foreign Commerce Corporation of America“ in New-York zu errichten, sofern dieser seitens der österreichischen Regierung die Generalagentschaft für die staatlichen Ankäufe von Lebensmitteln und Rohstoffen übertragen werde.</p>
+                  <p>Der sprechende Staatssekretär führt aus, dass ein derartiger Schritt des größten und solidesten amerikanischen Bankhauses für die Entwicklung unseres Wirtschaftslebens von der gewichtigsten Bedeutung sei und daran die Hoffnung geknüpft werden könne, das Interesse der Firma auch für andere österreichische Angelegenheiten, so den Ausbau der Wasserkräfte und die Elektrifizierung der Staatsbahnen, wie auch für die Versorgung unserer Industrie mit Rohstoffen zu gewinnen.</p>
+                  <p>Angesichts dessen erbitte Redner die Ermächtigung, an die Firma Morgan Harjes &amp; Co ein Schreiben richten zu dürfen, in welchem die „Foreign Commerce Corporation of America“ zum Generalagenten für die staatlichen Einkäufe an Lebensmitteln und Rohstoffen unter der Voraussetzung bestellt wird, dass sie in kürzester Zeit eine Filiale in Wien errichtet.</p>
+                  <p>Der Kabinettsrat beschließt im Sinne des gestellten Antrages.</p>
+                  <p>
+                     <pb facs="krp-0158_r-0004"/>
+                  </p>
+               </div>
+               <div type="top" xml:id="krp-0158_top02">
+                  <head>
+                     <label>
+                        <num n="2">2.</num>
+                        <seg>Förderung der Subskription der Prämienanleihe.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. Reisch berichtet, dass das Ergebnis der Zeichnungen auf die Prämienanleihe bisher ein höchst unbefriedigendes geblieben sei. Die Ursache liege zum größten Teile darin, dass die Anleihe seitens der öffentlichen Faktoren und der politischen Parteien nicht die wünschenswerte Förderung erfahre. Redner habe bereits an sämtliche Staatssekretäre Schreiben gerichtet, in denen er die Mitwirkung der einzelnen Ressorts zur Belebung des Interesses der Bevölkerung an der Prämienanleihe erbittet. Er wende sich nunmehr an die parlamentarischen Mitglieder des Kabinettes mit dem dringenden Ersuchen, ihre Parteien und deren Presse zu einem nachdrücklicheren Eintreten für die Prämienanleihe zu veranlassen, damit auch in politischer Hinsicht jene Voraussetzungen geschaffen werden, von denen der Erfolg der Subskription wesentlich abhänge. Sollte die Prämienanleihe ohne das erhoffte Ergebnis bleiben, so müssten daraus die verhängnisvollsten Folgen für jede weitere Aktion zur Geldaufbringung im Inlande wie auch für die Aussichten auf Erlangung ausländischer Kredite erwachsen.</p>
+                  <p>
+                     <pb facs="krp-0158_r-0005"/>In der anschließenden Debatte geben die Staatssekretäre Dr. <hi rend="#letterspaced">Ellenbogen</hi>, Dr. <hi rend="#letterspaced">Deutsch</hi> und Dr. <hi rend="#letterspaced">Mayr</hi> sowie Vizekanzler <hi rend="#letterspaced">Fink</hi> nähere Aufschlüsse über die Haltung ihrer Parteipresse gegenüber der Prämienanleihe und bringen den Wunsch zum Ausdruck, dass von Seite des Staatsamtes für Finanzen Maßnahmen getroffen werden mögen, um in der Bevölkerung ein stärkeres Interesse für die Prämienanleihe zu erwecken, vor allem aber um die Banken zu einer erhöhten Aktivität für die Erlangung von Zeichnungen zu bringen.</p>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> äußert die Absicht, mit den beiden koalierten Parteien über die Frage eines verstärkten Eintretens für die Prämienanleihe Fühlung nehmen</p>
+                  <p>zu wollen.</p>
+                  <p>Diese Absicht findet die Zustimmung des Kabinettsrates.</p>
+               </div>
+               <div type="top" xml:id="krp-0158_top03">
+                  <head>
+                     <label>
+                        <num n="3">3.</num>
+                        <seg>Erhöhung der Tarife von Eisenbahn, Post, Telefon und Telegrafen zur Deckung des Mehraufwandes für die Zuwendungen an die Staatsangestellten.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Paul</hi> bespricht die Erhöhungen, welche in den Tarifen von Eisenbahn, Post, Telegrafen und Telefon einzutreten haben werden, um daraus, wie beabsichtigt, die Bedeckung des Mehrerfordernisses für die jüngsten Zuwendungen an die Staatsangestell<pb facs="krp-0158_r-0006"/>ten zu gewinnen. Da von dem auf 1,9 Milliarden [K] veranschlagten Mehrerfordernis für diese Zwecke 100 Millionen [K] aus dem Tabakmonopol eingebracht werden sollen, erübrigen für die staatlichen Verkehrsunternehmungen noch 1.800 Millionen K zu bedecken, so dass zusammen mit einen Defizit von 500 Millionen K der Eisenbahnen und von rund 100 Millionen K aus dem Postbetriebe für Mehreinnahmen in der Höhe von 2.400 Millionen K vorzusorgen wäre.</p>
+                  <p>Die Einnahmen aus dem Eisenbahnbetrieb seien für das Jahr 1920 auf 2.138 Millionen K und zwar 486 Millionen K aus dem Personenverkehr, 40 Millionen K aus dem Gepäcksverkehr und 1.216 Millionen K aus dem Güterverkehr veranschlagt. Darnach müsste bei den Eisenbahnen eine Erhöhung der Tarife in der Weise eintreten, dass durch eine 50%ige Erhöhung des Personentarifes 243 Millionen K, durch eine 50%ige Erhöhung des Gepäcktarifes 20 Millionen K und eine 80%ige Erhöhung des Gütertarifes 1.290 Millionen K aufgebracht werden. Aus dem Postbetriebe könnten bei einer 100%igen Erhöhung 400 Millionen K, von Telegraf und Telefon 200 Millionen K und aus Verkehrssteuern 300 Millionen K erwartet werden. Zusammen ergebe das den benötigten Betrag von 2.450 Millionen K.</p>
+                  <p>
+                     <pb facs="krp-0158_r-0007"/>Bei Durchführung dieser Erhöhungen müsse aber auf eine derartige Verteilung Bedacht genommen werden, dass eine Prohibitivwirkung der neuen Sätze vermieden bleibt. Insbesondere müsse bei den Eisenbahntarifen beachtet werden, dass eine lineare Steigerung der Frachttarife für zahlreiche Güter eine derartige Verteuerung des Transportes mit sich brächte, dass sie künftighin auf der Eisenbahn überhaupt nicht mehr verfrachtet werden könnten. Der sprechende Staatssekretär habe, da sich solche Wirkungen bereits aus den letzten Tariferhöhungen zu äußern begannen, eine Tarifreform in Aussicht genommen, welche die Tarife je nach der volkswirtschaftlichen Bedeutung der betreffenden Güter verschieden festsetzt. Nach den noch zu leistenden Vorarbeiten wäre aber mindestens ein Vierteljahr erforderlich, bevor der neue Tarif in Geltung gesetzt werden könnte. Da aber die Lage der staatlichen Finanzen einen derart langen Aufschub nicht zulassen, erübrige nun kein anderer Ausweg, als trotz aller Bedenken doch zu einer linearen Erhöhung der Gütertarife im Ausmaße von 80 % zu greifen. Die Regelung hätte aber nur einen provisorischen Charakter zu tragen und der Tarifreform nicht vorzugreifen. Redner gedenke viel<pb facs="krp-0158_r-0008"/>mehr die Vorbereitungen für die in den wesentlichsten Zügen bereits fertiggestellte Tarifreform unter Abänderung ihrer Sätze auf die zur Erzielung der angestrebten Mehreinnahmen von 1.550 Millionen K fortzusetzen, um sie möglichst bald in Geltung treten lassen zu können, und der Öffentlichkeit gelegentlich der Vornahme der linearen Tariferhöhungen bekanntzugeben, dass damit nur ein kurzfristiges Provisorium geschaffen werde, an dessen Stelle schon in der nächsten Zelt der neue Reformtarif treten solle.</p>
+                  <p>Redner erbitte nunmehr die Entscheidung des Kabinettsrates, in welcher Form der Nationalversammlung von den geplanten Maßnahmen Mitteilung zu machen wäre. Im Hinblick auf die weitgehende Belastung der Volkswirtschaft könne die Regierung die Tariferhöhung unmöglich auf eigene Verantwortung vornehmen, dem Parlamente aber fehle vor der Verabschiedung des Gesetzes über die Übertragung der Tarifhoheit an die Nationalversammlung im gegenwärtigen Augenblicke noch die Zuständigkeit in diesen Angelegenheiten.</p>
+                  <p>Nachdem zu der Angelegenheit der <hi rend="#letterspaced">Vorsitzende</hi>, Vizekanzler <hi rend="#letterspaced">Fink</hi> und Staatssekretär <hi rend="#letterspaced">Eldersch</hi> gesprochen hatten, beschließt der Kabi<pb facs="krp-0158_r-0009"/>nettsrat, die Absicht auf Vornahme von Tariferhöhungen bei den staatlichen Verkehrsunternehmungen zur Deckung des Mehrerfordernisses aus den Zuwendungen an die Staatsangestellten in dem Motivenbericht der Gesetzesvorlage, betreffend die Bezugsregelung der Staatsangestellten anzukündigen, um so dem Finanz- und Budgetausschuss Gelegenheit zu bieten, dazu Stellung zu nehmen. Weiters wird der Staatssekretär für Verkehrswesen eingeladen, die Vollzugsanweisungen, mit welchen die Tariferhöhungen in Kraft gesetzt werden sollen, zunächst dem Präsidenten der Nationalversammlung mit der Bitte um Behandlung im Hauptausschusse vorzulegen, da die Regierung sich nicht für befugt erachte, aus eigener Machtvollkommenheit derartig weitgehende Belastungen des Wirtschaftslebens zu verfügen. Schließlich wird die Öffentlichkeit darüber aufzuklären sein, dass die 80%ige lineare Erhöhung des Gütertarifes nur einen Notbehelf darstelle, welcher in kürzester Frist durch eine neue Tarifreform abgelöst werden soll.</p>
+                  <p>
+                     <pb facs="krp-0158_r-0010"/>
+                  </p>
+               </div>
+               <div type="top" xml:id="krp-0158_top04">
+                  <head>
+                     <label>
+                        <num n="4">4.</num>
+                        <seg>Beitritt der Staatsregierung zu einem Gesetzesbeschluss der Nationalversammlung.</seg>
+                     </label>
+                  </head>
+                  <p>Nach dem Vorschlage des <hi rend="#letterspaced">Vorsitzenden</hi> erhebt der Kabinettsrat gegen das von der Nationalversammlung beschlossene Gesetz wegen Bewilligung einer einmaligen nicht wiederkehrenden Aushilfe an die Staatsangestellten (Staatsangestelltenaushilfegesetz) keine Vorstellung.</p>
+                  <p>Das Gesetz ist demgemäß nach Gegenzeichnung durch den Staatskanzler und die zuständigen Staatssekretäre, dem Präsidenten der Nationalversammlung zur Unterfertigung vorzulegen.</p>
+               </div>
+               <div type="top" xml:id="krp-0158_top05">
+                  <head>
+                     <label>
+                        <num n="5">5.</num>
+                        <seg>Berichte Nr. 9 und 10 der Kommission zur Erhebung militärischer Pflichtverletzungen.</seg>
+                     </label>
+                  </head>
+                  <p>Der Vorsitzende stellt im Sinne des Kabinettsbeschlusses vom 2. d. M. die Berichte Nr. 9 und 10 der Kommission zur Erhebung militärischer Pflichtverletzungen neuerlich zur Verhandlung und beantragt deren Weiterleitung an die Nationalversammlung.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Ramek</hi> spricht sich unter Berufung auf seine Ausführungen in der Kabinettsitzung vom 2. März gegen die Weiterleitung des Berichtes Nr. 9 aus. Die Kommission, <pb facs="krp-0158_r-0011"/>deren Wirkungskreis sich nach dem Gesetze nur auf die Erhebung militärischer Pflichtverletzungen zu beschränken habe, sei darin weit über ihre Befugnisse hinaus gegangen, indem sie sich in eine ihr nicht zustehende Beurteilung der Rechtssprechung des Obersten Gerichtshofes einließe. Der Bericht verstoße also gegen das Gesetz und müsse von der Regierung zurückgewiesen werden, soll nicht die Autorität des Obersten Gerichtshofes in der gesamten Öffentlichkeit zum Schaden einer geordneten Rechtspflege die schwerste Erschütterung erfahren.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Deutsch</hi> erklärt neuerlich, dass die Regierung kein Recht besitze, an den Berichten der Kommission eine wie immer geartete Zensur zu üben oder dazu auch nur Stellung zu nehmen. Redner müsse daher entschiedene Einsprache dagegen erheben, dass etwa das Kabinett als solches die Weiterleitung der Berichte an die Nationalversammlung mit meritorischen Erörterungen über deren Inhalt verknüpfe. Das äußerste Zugeständnis an die Auffassung des Staatssekretärs für Justiz läge in einer Ermächtigung an diesen, in der Nationalversammlung über den Bericht eine Erklärung von <pb facs="krp-0158_r-0012"/>seinem Ressortstandpunkte aus abzugeben.</p>
+                  <p>Nach einer weiteren Debatte, an welcher sich noch Vizekanzler <hi rend="#letterspaced">Fink</hi> und die Staatssekretäre Dr. <hi rend="#letterspaced">Reisch</hi> und <hi rend="#letterspaced">Eldersch</hi> beteiligen, erhebt der Kabinettsrat den Vermittlungsvorschlag des Vorsitzenden zum Beschluss, die Berichte Nr. 9 und 10 durch die Staatskanzlei unter einfachem Hinweis auf den § 8 des Gesetzes vom 19. Dezember 1919, StGBl. Nr. 132, an den Präsidenten der Nationalversammlung weiterleiten zu lassen und in die Begleitnote nur das Beifügen aufzunehmen, dass im Anhange eine Erklärung des Staatssekretärs für Justiz zu dem Bericht Nr. 9 beigeschlossen sei.</p>
+                  <p>Die Erklärung wird im Einvernehmen zwischen den Staatssekretären Dr. <hi rend="#letterspaced">Ramek</hi> und <hi rend="#letterspaced">Eldersch</hi> auszuarbeiten sein und im Wesen zu besagen haben, dass nach der Auffassung des Staatssekretärs für Justiz der Bericht seinem Inhalte nach eine Überschreitung der Kompetenz der Kommission zur Erhebung militärischer Pflichtverletzungen darstelle und die darin an dem Obersten Gerichtshof geübte Kritik sachlich nicht gerechtfertigt und in vielen Punkten zu weitgehend sei.</p>
+                  <p>
+                     <pb facs="krp-0158_r-0013"/>
+                  </p>
+               </div>
+               <div type="top" xml:id="krp-0158_top06">
+                  <head>
+                     <label>
+                        <num n="6">6.</num>
+                        <seg>Änderungen in der Organisation der Kommission zur Erhebung militärischer Pflichtverletzungen.</seg>
+                     </label>
+                  </head>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> bringt dem Kabinettsrate zur Kenntnis, dass die Kommission zur Erhebung militärischer Pflichtverletzungen im Zusammenhange mit der Behandlung ihres Berichtes über die Vorgänge beim Abschluss des Waffenstillstandes den Wunsch geäußert habe, durch eine Änderung des Gesetzes vom 19. Dezember 1919, StGBl. Nr. 132, die Ermächtigung zu erhalten, ihre Verhandlungen nach freiem Ermessen auch öffentlich abführen zu dürfen. Die Kommission begründe ihre Anregung damit, dass die geheime Verhandlungsmethode in der Bevölkerung ein ganz falsches Bild von der Tätigkeit der Kommission habe entstehen lassen und sie böswilligen Angriffen aussetze, denen am besten dadurch der Boden entzogen werden könnte, dass die Kommission das Recht bekommt, ihre Wirksamkeit vor der Öffentlichkeit auszuüben. </p>
+                  <p>Von anderer Seite wieder seien Zweifel über die Zweckmäßigkeit des Bestandes der Kommission überhaupt oder wenigstens hinsichtlich des jetzigen Aufbaues laut geworden. Ihr Aufgabenkreis sei in einer Art umschrieben, dass in den positiven Fällen die Endentscheidungen nicht von der Kom<pb facs="krp-0158_r-0014"/>mission, sondern vom Obersten Gerichtshof auszugehen haben, woraus sich ein fortgesetzter Anlass zu Divergenzen mit der Rechtssprechung eines unabhängigen Gerichtes ergebe.</p>
+                  <p>Redner habe die Absicht, den gesamten Fragenkomplex einer Kabinettskonferenz zuzuweisen, die alle hinsichtlich der Kommission zur Erhebung militärischer Pflichtverletzungen vorliegenden Anträge vorzuberaten und sodann innerhalb [von] 14 Tagen dem Kabinettsrate Vorschläge über die bezüglich der Kommission vorzunehmende Regelung zu erstatten hätte.</p>
+                  <p>Der Kabinettsrat stimmt dieser Vorgangsweise zu und beschließt die Einsetzung einer Kabinettskonferenz, welche unter der Führung des Staatssekretärs Paul aus den Staatssekretären Dr. Deutsch, Eldersch, Dr. Mayr und Dr. Ramek zu bestehen hat.</p>
+               </div>
+               <div type="top" xml:id="krp-0158_top07">
+                  <head>
+                     <label>
+                        <num n="7">7.</num>
+                        <seg>Instruktion der Staatsregierung zur Vollzugsanweisung vom 27. Jänner 1920, StGBl. Nr. 35, betreffend die Liquidierung.</seg>
+                     </label>
+                  </head>
+                  <p>Der Vorsitzende erbittet und erhält die Genehmigung des Kabinettsrates für den Entwurf einer Instruktion der Staatsregierung zur Vollzugsanweisung vom 27. Jänner 1920, StGBl. Nr. 35, betreffend die Liquidierung.</p>
+                  <p>
+                     <pb facs="krp-0158_r-0015"/>
+                  </p>
+               </div>
+               <div type="top" xml:id="krp-0158_top08">
+                  <head>
+                     <label>
+                        <num n="8">8.</num>
+                        <seg>Bestellung der Vertreter der österreichischen Regierung beim interalliierten Überwachungsausschuss für das Landheer.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Deutsch</hi> stellt anknüpfend an den in der Kabinettssitzung vom 20. Februar d. J. erstatteten Bericht, betreffend den Verkehr mit den interalliierten Missionen, den Antrag, als Beauftragte der österreichischen Regierung im interalliierten Überwachungsausschuss für das Landheer die beiden Liquidierungsinspektoren der Nationalversammlung Abgeordneten Johann Smitka und Abgeordneten Rudolf Buchinger zu bestellen, um schon durch die Auswahl von Zivilpersonen für diese Funktion zum Ausdruck zu bringen, dass in Österreich der Bestand einer Militärmacht aufgehört habe. Zur Erledigung rein militärischer Fragen werden den beiden Genannten Offiziere als Sachverständige beizugeben sein.</p>
+                  <p>Der Kabinettsrat pflichtet diesem Antrage bei und ermächtigt den Staatssekretär für Heer[es]wesen, mit den beiden Liquidierungsinspektoren wegen Übernahme der ihnen zugedachten Funktion Rücksprache zu pflegen und im Falle ihrer Einwilligung von deren Bestellung als Beauftragte der österreichischen Regierung im interalliier<pb facs="krp-0158_r-0016"/>ten Überwachungsausschuss für das Landheer der interalliierten Kontrollkommission mit der entsprechenden Begründung Mitteilung zu machen.</p>
+               </div>
+               <div type="top" xml:id="krp-0158_top09">
+                  <head>
+                     <label>
+                        <num n="9">9.</num>
+                        <seg>Bericht aber die Ernährungslage.</seg>
+                     </label>
+                  </head>
+                  <p>Über Einladung des <hi rend="#letterspaced">Vorsitzenden</hi> erstattet Ministerialrat Dr. <hi rend="#letterspaced">Grünberger</hi> einen eingehenden Bericht über die gegenwärtige Ernährungslage. Darnach ist der Bedarf an den wichtigsten Lebensmitteln nur bis etwa zur Hälfte des Monates April gedeckt, so dass es notwendig erscheine, rechtzeitig nachdrückliche Schritte bei der Entente zu unternehmen, um den Eintritt eines Vakuums hintanzuhalten. Redner fügt bei, dass von der in den Zeitungen angekündigten Getreideaushilfe Amerikas auf Rechnung des künftigen Kredites bis zur Stunde weder dem Staatsamte für Volksernährung noch den fremden Missionen in Wien eine offizielle Nachricht zugekommen sei.</p>
+                  <p>Die Anträge des Staatsamtes für Volksernährung gehen dahin, der Staatskanzler möge im Vereine mit der Gesamtregierung bei den Vertretern der fremden Mächte in Wien und <pb facs="krp-0158_r-0017"/>bei der Subkommission der Reparationskommission neuerlich eindringliche Vorstellungen erheben, dass binnen kürzester Frist, wenn möglich mit Terminangabe Vorkehrungen getroffen werden, um die Lebensmittelversorgung der österreichischen Bevölkerung sicherzustellen.</p>
+                  <p>Die zu unternehmenden Schritte hätten zu bezwecken,</p>
+                  <list>
+                     <item n="1">
+                        <label>1.)</label> dass für die nächsten Monate ungeachtet der in Aussicht gestellten Kredite, noch nicht bewilligt sind, die notwendigen wichtigsten Lebensmittelmengen, nach der von uns wiederholt bezeichneten Art und Menge sofort auf Kredit geliefert und – angesichts der in Deutschland bestehenden Transportschwierigkeiten – über Triest nach Österreich gebracht werden,</item>
+                     <item n="2">
+                        <label>2.)</label> dass die Verwirklichung der in Paris in Aussicht gestellten großzügigen Kreditaktion und der Versorgung Österreichs mit Lebensmitteln und Rohstoffen eine Beschleunigung erfahre.</item>
+                  </list>
+                  <p>In dieser Hinsicht wäre insbesondere der amerikanische Bevollmächtigte zu ersuchen, bei seiner Regierung nachdrücklichst auf die endliche Bewilligung des beantragten amerikanischen Kredites hinzuwirken.</p>
+                  <p>Des Weiteren erbittet der Vertre<pb facs="krp-0158_r-0018"/>ter des Staatsamtes für Volksernährung Vorsorgen von Seite des Staatsamtes für Finanzen, dass der Geldbedarf der Kriegsgetreideanstalt, der deutschösterreichischen Lebensmitteleinfuhrstelle und der Übernahmsstelle für Vieh und Fleisch zum Ankauf der von ihnen bewirtschafteten Artikel während der beiden nächsten Monate im Betrage von 2 Milliarden K ungeachtet der Inanspruchnahme der staatlichen Kassenbestände durch die neuen Zuwendungen an die Staatsangestellten flüssig gehalten werde.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Reisch</hi> gibt in dieser Hinsicht beruhigende Erklärungen ab.</p>
+                  <p>Der Kabinettsrat ladet den Vorsitzenden ein, die vom Staatsamte für Volksernährung beantragten Schritte bei den Missionen und den Regierungen der alliierten Mächte zu unternehmen.</p>
+               </div>
+               <div type="top" xml:id="krp-0158_top10">
+                  <head>
+                     <label>
+                        <num n="10">10.</num>
+                        <seg>Entwurf eines Gesetzes über die Errichtung, die Erhaltung und den Betrieb öffentlicher Heil- und Pflegeanstalten (Krankenanstaltengesetz).</seg>
+                     </label>
+                  </head>
+                  <p>Unterstaatssekretär Dr. <hi rend="#letterspaced">Tandler</hi> legt dem Kabinettsrat den Entwurf eines Gesetzes über die Errichtung, die Erhaltung und den Betrieb öffentlicher Heil- und Pflegeanstalten (Krankenanstaltengesetz) vor und erbittet die Ermächtigung zu dessen Einbringung in der Nationalversammlung. <pb facs="krp-0158_r-0019"/>Die Vorlage bezwecke eine gesetzliche Regelung über die Aufbringung der Mittel für die Errichtung und den Betrieb öffentlicher Krankenanstalten und werde auch die Grundlage bieten, den Wiener Krankenanstaltenfonds für die Zukunft zu sanieren. Der Entwurf sei mit den beteiligten Staatsämtern durchberaten worden und hätte auch das Einverständnis der koalierten Parteien gefunden.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Reisch</hi> wendet gegen den § 50 ein, dass daraus das Land Niederösterreich und die Gemeinde Wien die Befreiung von der Rückerstattung jener Beträge ableiten könnten, welche der Staat als Vorschüsse auf die von Land und Gemeinde übernommenen, jedoch nicht eingezahlten Drittelanteile an dem Defizit des Krankenanstaltenfonds geleistet hat. Die Finanzverwaltung müsse daher verlangen, dass entweder die Einbringung des Gesetzentwurfes von der vorherigen ausdrücklichen Anerkennung der Rückzahlungsverpflichtung seitens des Landes und der Gemeinde Wien abhängig gemacht werde oder dass wenigstens der § 50 Abs. 1 die Einschaltung erhalte, dass die Zinsen und Rückzahlungsbeträge für Anleihen, die vor dem Geltungsbeginn dieses Gesetzes zur Deckung von Errichtungs- oder Betriebskosten aufgenommen wurden, „unbeschadet des bisherigen Rechtszustandes“ <pb facs="krp-0158_r-0020"/>in die Grundlage für die Bemessung der Beitragsleistungen nicht einzubeziehen seien.</p>
+                  <p>Unterstaatssekretär Dr. <hi rend="#letterspaced">Tandler</hi> erwidert, dass der § 50 gerade die Absicht verfolge, die Regelung der Rückzahlungspflicht hinsichtlich dieser Vorschüsse dem Geltungsbereiche des Gesetzes zu entziehen und einer besonderen Abmachung des Staates mit den beiden anderen Faktoren vorzubehalten. Ein Aufschub in der Einbringung des Entwurfes sei unmöglich und wäre auch für die Staatsfinanzen abträglich. Denn jetzt beruhen die Leistungen des Landes und der Gemeinde Wien zum Krankenanstaltenfonds auf bloßer Freiwilligkeit und der Staat würde erst durch das Gesetz die Sicherheit erlangen, das Defizit mit keinem höheren Anteil als zu drei Achtel übernehmen zu müssen. Der sprechende Unterstaatssekretär sei jedoch mit jeder Änderung im Wortlaut des § einverstanden, welche zum Zweck hat, die oben angedeutete Ansicht schärfer zum Ausdruck zu bringen.</p>
+                  <p>Dem von Unterstaatssekretär Dr. Tandler vertretenen Standpunkt schließen sich auch Präsident <hi rend="#letterspaced">Seitz</hi> sowie die Staatssekretäre <hi rend="#letterspaced">Eldersch</hi> und <hi rend="#letterspaced">Hanusch</hi> an.</p>
+                  <p>
+                     <pb facs="krp-0158_r-0021"/>Der Kabinettsrat erteilt schließlich die Zustimmung zur Einbringung des Gesetzentwurfes in der Nationalversammlung mit der von Staatssekretär Dr. Reisch beantragten Abänderung im § 50.</p>
+               </div>
+               <div type="top" xml:id="krp-0158_top11">
+                  <head>
+                     <label>
+                        <num n="11">11.</num>
+                        <seg>Gesetzesbeschluss des Landtages in Salzburg, betreffend die Abänderung des Landesgesetzes vom 29. Februar 1910, LGBl. Nr. 68, über die Entlohnung der Ärzte und Hebammen für die Behandlung erkrankter Armer und Findlinge.</seg>
+                     </label>
+                  </head>
+                  <p>Unterstaatssekretär Dr. <hi rend="#letterspaced">Tandler</hi> erbittet und erhält vom Kabinettsrat die Ermächtigung, dass von der Erhebung einer Vorstellung gegen den Gesetzesbeschluss des Landtages in Salzburg vom 5. Februar d. J., betreffend die Abänderung des Landesgesetzes vom 29. Februar 1910, LGBl. Nr. 68, über die Entlohnung der Ärzte und Hebammen für die Behandlung erkrankter Armer und Findlinge abgesehen und der Kundmachung des Gesetzes durch die Landesregierung zugestimmt werde.</p>
+               </div>
+               <div type="top" xml:id="krp-0158_top12">
+                  <head>
+                     <label>
+                        <num n="12">12.</num>
+                        <seg>Abänderung der Vollzugsanweisung, betreffend die Einführung von Transportbescheinigungen für Holz.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Stöckler</hi> teilt mit, dass vom Hauptausschusse gegen die vom Kabinettsrat in der Sitzung vom 10. Februar d. J. genehmigte und wegen der besonderen Dringlichkeit ohne vorherige Behandlung im Hauptausschusse kundgemachte Vollzugsanweisung, <pb facs="krp-0158_r-0022"/>betreffend die Einführung von Transportbescheinigungen für Holz, Einsprache erhoben worden sei. Der Hauptausschuss habe sich die Genehmigung der Vollzugsanweisung vorbehalten und in meritorischer Beziehung die Ausschaltung der Bestimmung des § 5 a, nach welcher die Beibringung von Transportbescheinigungen für Sendungen innerhalb eines Landes nicht erforderlich ist, verlangt, da nach seiner Meinung die Brennholzversorgung Wiens nur dann gewährleistet werden könne, wenn die bisherige Kontrolle der Holzlieferungen aus Niederösterreich nach Wien durch die Transportscheine aufrecht erhalten bleibe.</p>
+                  <p>Der sprechende Staatssekretär beantrage nunmehr, dem Hauptausschusse für § 5 folgende Fassung in Vorschlag zu bringen:</p>
+                  <p>„Die Beibringung von Transportbescheinigungen ist nicht erforderlich:</p>
+                  <list>
+                     <item n="1">
+                        <label>a)</label> für Regiesendungen der Eisenbahnen und der Post- und Telegrafenverwaltung zu Bau- und Betriebszwecken,</item>
+                     <item n="2">
+                        <label>b)</label> für Sendungen aus dem Zollauslande.</item>
+                  </list>
+                  <p>Ob und in welcher Weise für Sendungen innerhalb des Bereiches eines Landes die Beibringung eines Transportscheines erforderlich ist, haben die Landesregierungen nach eingehol<pb facs="krp-0158_r-0023"/>ter Zustimmung des Staatsamtes für Land- und Forstwirtschaft im Verordnungswege zu verfügen.“</p>
+                  <p>Der sprechende Staatssekretär könne jedoch nicht umhin, seine Bedenken gegen die vom Hauptausschusse gewünschte Abänderung zu äußern, weil durch die Einführung des Transportscheinzwanges innerhalb der Landesgrenzen der Wirtschaft eine ungeheure Erschwernis erwachsen müsse und zudem die Länder nicht über das Personal verfügen, die Einhaltung dieser Vorschrift zu überwachen. Aus diesem Grunde solle der Transportscheinzwang wenigstens nicht obligatorisch festgelegt, sondern seine Einführung den Landesregierungen überlassen werden.</p>
+                  <p>Präsident <hi rend="#letterspaced">Seitz</hi> erklärt, die vom Vorredner vorgeschlagene Fassung widerspreche dem einmütig erhobenen Wunsche des Hauptausschusses nach Beibehaltung des Transportscheinzwanges für die Sendungen innerhalb des Landes, und könne dazu führen, dass der Hauptausschuss der Vollzugsanweisung überhaupt die Genehmigung versagt. Den gegen die Transportscheinpflicht geltend gemachten Bedenken könne höchstens in der Form Rechnung getragen werden, dass das Staatsamt <pb facs="krp-0158_r-0024"/>für Land- und Forstwirtschaft dem Hauptausschuss zwei Entwürfe für eine Vollzugsanweisung vorlege, einer in der Fassung, dass Pkt. a) des § 5 der jetzigen Vollzugsanweisung außer Kraft gesetzt wird, der zweite enthaltend neben der Außerkraftsetzung dieses Punktes die Ermächtigung der Landesregierungen, von der Beibringung der Transportscheine für den Verkehr im Lande abzusehen.</p>
+                  <p>Der Kabinettsrat tritt der Auffassung des Präsidenten Seitz bei und beschließt, dem Hauptausschusse Entwürfe für eine neue Vollzugsanweisung in der vorgeschlagenen doppelten Fassung zur Entscheidung für die eine oder die andere Form vorzulegen. Gleichzeitig wird der Präsident der Nationalversammlung gebeten, zu der betreffenden Sitzung des Hauptausschusses den Staatssekretär für Land- und Forstwirtschaft einzuladen.</p>
+                  <p/>
+               </div>
+            </div>
+            <div type="anhaenge">
+               <p>
+                  <pb facs="krp-0158_a01-0001"/>
+               </p>
+               <div n="1">
+                  <head>Anhang zum Kabinettsprotokoll Nr. 158 vom 9. März 1920.</head>
+                  <div type="a01_protokoll">
+                     <p>Staatssekretär Dr. <hi rend="#letterspaced">Reisch</hi> erbittet und erhält die Zustimmung des Kabinettsrates, die Verleihung des Titels eines Präsidenten der Finanzlandesdirektion in Wien an den Ministerialrat im Staatsamt für Finanzen Dr. Adalbert Haala und die Bewilligung einer in die Pension einrechenbaren Personalzulage jährlicher 2.000 K für den Hofrat der Finanzlandesdirektion in Wien Dr. Josef Pawlitza sowie für den Hofrat und Vorstand des Zentraltax- und Gebührenbemessungsamtes in Wien, Siegfried Gerstmann, beim Präsidenten der Nationalversammlung in Antrag bringen zu dürfen.</p>
+                     <p/>
+                  </div>
+               </div>
+            </div>
+            <div type="stenogramme">
+               <div n="1">
+                  <head>EINZUFÜGEN</head>
+                  <p>Transkription in Arbeit.</p>
+               </div>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>
