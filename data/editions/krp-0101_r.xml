@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href='http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:acdh="https://vocabs.acdh.oeaw.ac.at/schema#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xml:lang="de">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="a" type="main" n="0101">Kabinettsprotokoll Nr. 101 vom 26. August 1919</title>
+            <title level="m" type="main" n="01">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <title level="m" type="sub" n="">Renner II (15. März – 17. Oktober 1919)</title>
+            <meeting>
+               <placeName key="https://d-nb.info/gnd/4066009-6">Wien</placeName>
+               <orgName key="https://d-nb.info/gnd/5162749-8">Kabinettsrat</orgName>
+               <date when-iso="1919-08-26"/>
+            </meeting>
+            <editor>
+               <persName key="https://d-nb.info/gnd/122481836"
+                         role="hasCreator"
+                         xml:id="hwohnout">
+                  <forename>Helmut</forename>
+                  <surname>Wohnout</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</affiliation>
+               <idno type="ORCID">0000-0002-3864-9839</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/120789825"
+                         role="hasCreator"
+                         xml:id="tolechowski">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0003-3291-6876</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/131679384"
+                         role="hasCreator"
+                         xml:id="rlein">
+                  <forename>Richard</forename>
+                  <surname>Lein</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0002-7502-0503</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="aholzer">
+                  <forename>Anna</forename>
+                  <surname>Holzer</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0005-3560-3500</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="dsoelkner">
+                  <forename>Dominik</forename>
+                  <surname>Sölkner</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-9895-7212</idno>
+            </editor>
+            <editor>
+               <persName role="hasContributor" xml:id="ischotzko">
+                  <forename>Ina</forename>
+                  <surname>Schotzko</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-5210-3713</idno>
+            </editor>
+            <funder n="1">
+               <orgName key="https://d-nb.info/gnd/2054142-9" role="hasFunder">Österreichischer Wissenschaftsfonds FWF</orgName>
+               <idno type="project">PAT1495024</idno>
+               <title type="project">Die Protokolle des österreichischen Kabinettsrates 1919–1920</title>
+            </funder>
+            <respStmt>
+               <resp>Projektverantwortung</resp>
+               <orgName key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Projektleitung</resp>
+               <persName key="https://d-nb.info/gnd/120789825" role="hasPrincipalInvestigator">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+                  <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+                  <idno type="ORCID">0000-0003-3291-6876</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Nationaler Forschungspartner</resp>
+               <orgName key="https://d-nb.info/gnd/1123037736" role="hasEnabler">Austrian Centre for Digital Humanities</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Digitalisierung der gedruckten Quellen</resp>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>TEI-Datenmodellierung</resp>
+               <persName role="hasContributor" xml:id="tfruehwirth">
+                  <forename>Timo</forename>
+                  <surname>Frühwirth</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-3997-5193</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technische Supervision</resp>
+               <persName key="https://d-nb.info/gnd/1043833846"
+                         role="hasContributor"
+                         xml:id="pandorfer">
+                  <forename>Peter</forename>
+                  <surname>Andorfer</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-9575-9372</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technisches Consulting und Vorbereitung der Druckausgabe</resp>
+               <persName key="https://d-nb.info/gnd/13281899X"
+                         role="hasContributor"
+                         xml:id="skurz">
+                  <forename>Stephan</forename>
+                  <surname>Kurz</surname>
+                  <affiliation key="https://d-nb.info/gnd/1202798799">Institut für die Erforschung der Habsburgermonarchie und des Balkanraumes</affiliation>
+                  <idno type="ORCID">0000-0003-2546-2570</idno>
+               </persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher key="https://d-nb.info/gnd/1001454-8">Österreichische Akademie der Wissenschaften</publisher>
+            <date when="2028"/>
+            <availability status="free">
+               <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">Lizenziert unter CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/deed.de)</licence>
+            </availability>
+            <idno type="ISBN_Print"/>
+            <idno type="ISBN_Part_epub"/>
+            <idno type="ISBN_Digital"/>
+            <idno type="DOI"/>
+            <idno type="DOI_zenodo"/>
+            <idno type="ebook_ID"/>
+         </publicationStmt>
+         <seriesStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="m" type="main">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <respStmt>
+               <resp>Bearbeitung und Herausgeberschaft</resp>
+               <orgName key="https://d-nb.info/gnd/2024703-5">Universität Wien</orgName>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+         </seriesStmt>
+         <notesStmt>
+            <note>Diese TEI-XML-Datei ist Grundlage für eine Druckausgabe der Edition.</note>
+            <relatedItem>
+               <biblStruct>
+                  <monogr>
+                     <imprint>
+                        <pubPlace key="https://d-nb.info/gnd/4066009-6">Wien</pubPlace>
+                        <publisher key="https://d-nb.info/gnd/2068748-5">Verlag der Österreichischen Akademie der Wissenschaften</publisher>
+                        <date when="2029"/>
+                     </imprint>
+                     <extent/>
+                  </monogr>
+                  <note>
+              <idno/>
+              <ptr/>
+            </note>
+                  <citedRange/>
+               </biblStruct>
+            </relatedItem>
+         </notesStmt>
+         <sourceDesc>
+            <bibl>Quellbestand: AT-OeStA/AdR MRang MR 1Rep KRP Kabinettsratsprotokolle, 1918-1920 (Teilbestand)<ref target="https://www.archivinformationssystem.at/detail.aspx?id=5465">https://www.archivinformationssystem.at/detail.aspx?id=5465</ref>
+            </bibl>
+            <msDesc>
+               <msIdentifier>
+                  <institution key="https://d-nb.info/gnd/37748-X" role="hasOwner">AT-OeStA Österreichisches Staatsarchiv (Archiv (ÖStA))</institution>
+                  <repository key="https://d-nb.info/gnd/1601181-8">AT-OeStA/AdR Archiv der Republik, 1918- (Abteilung)</repository>
+                  <collection>AT-OeStA/AdR MRang MR 1Rep Ministerrat 1. Republik, 1918 - 1938 (Bestand)</collection>
+                  <idno>AT-OeStA_AdR-MRang-MR-1.-Rep.-KRP-101</idno>
+               </msIdentifier>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <abstract>
+            <p>
+          <!--to be generated-->
+        </p>
+         </abstract>
+      </profileDesc>
+      <encodingDesc>
+         <styleDefDecl scheme="css"/>
+         <tagsDecl>
+            <rendition xml:id="b" scheme="css">font-weight:bold;</rendition>
+            <rendition xml:id="su" scheme="css">vertical-align:super;font-size:.7em;</rendition>
+            <rendition xml:id="s" scheme="css">text-decoration:line-through;</rendition>
+            <rendition xml:id="u" scheme="css">text-decoration:underline;</rendition>
+            <rendition xml:id="ow" scheme="css">text-decoration:line-through;text-decoration-style:double;</rendition>
+            <rendition xml:id="r" scheme="css">display:block;text-align:right;</rendition>
+            <rendition xml:id="letterspaced" scheme="css">letter-spacing:0.15em;</rendition>
+            <rendition xml:id="i" scheme="css">font-style:italic;</rendition>
+         </tagsDecl>
+         <editorialDecl>
+            <hyphenation>
+               <p>
+            <!--to be added-->
+          </p>
+            </hyphenation>
+            <correction>
+               <p>
+            <!--to be added-->
+          </p>
+            </correction>
+            <normalization>
+               <p>
+            <!--to be added-->
+          </p>
+            </normalization>
+            <punctuation>
+               <p>
+            <!--to be added-->
+          </p>
+            </punctuation>
+            <stdVals>
+               <p>
+            <!--to be added-->
+          </p>
+            </stdVals>
+            <p>
+          <!--to be added-->
+        </p>
+         </editorialDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#tfruehwirth" when-iso="2026-10-13">TEIGarage output upconverted with upconvert.xsl</change>
+         <change who="#tfruehwirth" when-iso="2026-10-13">TEI header populated with generate_tei_templates.py</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface/>
+   </facsimile>
+   <text>
+      <body>
+         <div xml:id="doc-krp-0101.xml">
+            <head type="dokument">
+               <title type="num">101.<note type="footnote">Das Protokoll trägt den Vermerk <hi rend="#i">Vertraulich!</hi></note>
+               </title>
+               <title type="desc">
+                  <pb facs="krp-0101_r-0001"/>[Dienstag] 1919-08-26</title>
+            </head>
+            <div type="dokumentkopf">
+               <div type="vorsitz">
+                  <head>Vorsitz:</head>
+                  <p>Fink</p>
+               </div>
+               <div type="anwesend">
+                  <head>Anwesend:</head>
+                  <p>Bauer, Bratusch, Deutsch, Eldersch, Ellenbogen, Hanusch, Loewenfeld-Russ, Paul, Pflügl, Resch, Stöckler, Tandler, Zerdik</p>
+               </div>
+               <div type="zugezogen">
+                  <head>Zugezogen:</head>
+                  <p>Beck, Gluth, Grimm, Ippen, Oberdorffer, Pollak, Syrowatka, Weinczierl</p>
+               </div>
+               <div type="schriftfuehrer">
+                  <head>Schriftführer:</head>
+                  <p>unbekannt</p>
+               </div>
+               <div type="dauer">
+                  <head>Dauer:</head>
+                  <p>15.00–19.00 Uhr</p>
+               </div>
+            </div>
+            <div type="komponenten">
+               <p>Reinschrift, Beilagen, Konzept, stenographische Mitschrift, Entwurf der Tagesordnung, diverse Zusätze</p>
+            </div>
+            <div type="beilagen">
+               <head>Beilagen:</head>
+               <list>
+                  <item><ref target="#krp-0101_top01">Zu TOP 1</ref>: <ref target="#krp-0101_b01">Antrag des Staatsamtes für Heereswesen über die Behandlung der deutsch-böhmischen Berufsmilitärpersonen</ref></item>
+                  <item><ref target="#krp-0101_top04">Zu TOP 4</ref>: <ref target="#krp-0101_b02">Antrag der Provisorischen Steiermärkischen Landesversammlung auf Beschlagnahme des Kronfideikommissgutes Eisenerz-Radmer</ref></item>
+                  <item><ref target="#krp-0101_top05">Zu TOP 5</ref>: <ref target="#krp-0101_b03">Gesetzesvorlage über den achtstündigen Arbeitstag mit erläuternden Bemerkungen und Vollzugsanweisung des Staatsamtes für soziale Fürsorge</ref></item>
+                  <item><ref target="#krp-0101_top05">Zu TOP 5</ref>: <ref target="#krp-0101_b04">Stellungnahme des Staatsamtes für Handel und Gewerbe, Industrie und Bauten zur geplanten Einführung des achtstündigen Arbeitstags</ref></item>
+                  <item><ref target="#krp-0101_top06">Zu TOP 6</ref>: <ref target="#krp-0101_b05">Stellungnahme des Staatsamtes für Volksernährung zur Frage des Kriegszuschlags zu den Schlachtviehpreisen</ref></item>
+                  <item><ref target="#krp-0101_top07">Zu TOP 7</ref>: <ref target="#krp-0101_b06">Bericht des Staatssekretärs für Volksernährung über die verbilligte Abgabe von Rindfleisch in Wien</ref></item>
+                  <item><ref target="#krp-0101_top08">Zu TOP 8</ref>: <ref target="#krp-0101_b07">Auszug für den Vortrag des Staatsamtes für Inneres und Unterricht im Kabinettsrat zu Zl. 30186/1919 über Gesetzesbeschlüsse des Niederösterreichischen Landtages über die einstweilige Bestellung der Gemeindevertreter in den Bezirksarmenräten und Bezirksstraßenausschüssen sowie über die Abänderung einiger Bestimmungen des niederösterreichischen Schulaufsichtsgesetzes</ref></item>
+                  <item><ref target="#krp-0101_top09">Zu TOP 9</ref>: <ref target="#krp-0101_b08">Referat des Staatsamtes für soziale Verwaltung Zl. 22436/V.G. zum Verfügungsrecht über das Sanitätsmaterial</ref></item>
+                  <item><ref target="#krp-0101_top10">Zu TOP 10</ref>: <ref target="#krp-0101_b09">Mitteilung des Staatsamtes für Finanzen über die Auflösung des Zoll- und Steuervereins seitens Liechtensteins</ref></item>
+               </list>
+            </div>
+            <div type="protokoll">
+               <pb facs="krp-0101_r-0002"/>
+               <div type="top" xml:id="krp-0101_top01">
+                  <head>
+                     <label>
+                        <num n="1">1.</num>
+                        <seg>Frage des Verhaltens der aus Deutschböhmen und Sudetenland stammenden Militärpersonen zu der von der tschechoslowakischen Regierung erlassenen Amnestie.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Deutsch</hi> macht Mitteilung von einer heute stattfindenden Versammlung der aus Deutschböhmen und dem Sudetenland stammenden Berufsmilitärpersonen, in welcher die Frage zur Erörterung gelangen soll, wie sich diese Militärpersonen zu der von der tschechoslowa<pb facs="krp-0101_r-0003"/>kischen Regierung erlassenen Amnestie zu verhalten hätten.</p>
+                  <p>Nach einer längeren Debatte, an welcher sich die Staatssekretäre Dr. <hi rend="#letterspaced">Bauer</hi>, Dr. <hi rend="#letterspaced">Bratusch</hi>, <hi rend="#letterspaced">Eldersch</hi>, ferner Unterstaatssekretär Dr. <hi rend="#letterspaced">Tandler</hi> und Sektionschef Dr. <hi rend="#letterspaced">Grimm</hi> sowie der dem Kabinettsrate zugezogene Sektionsrat <hi rend="#letterspaced">Oberdorffer</hi> beteiligten, gelangt der Kabinettsrat zu dem Beschlusse, dass den beteiligten Militärpersonen keinesfalls irgendwelche Versprechungen wegen Übernahme in die deutschösterreichische Wehrmacht bzw. wegen Auszahlung von Pensionen gemacht werden soll, diese Militärpersonen vielmehr darauf aufmerksam zu machen wären, dass sie im tschechoslowakischen Staate jedenfalls günstigere Aussichten als in Deutschösterreich haben dürften. Durch ihren Übertritt in die tschechoslowakische Armee würden sie übrigens auch eine nationale Pflicht erfüllen. Diese Eröffnungen wären jedoch den Beteiligten nicht in offizieller Form zu machen.</p>
+               </div>
+               <div type="top" xml:id="krp-0101_top02">
+                  <head>
+                     <label>
+                        <num n="2">2.</num>
+                        <seg>Reise- und Sommerfrischenverkehr in Salzburg.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Loewenfeld-Russ</hi> teilt mit, dass der Landesrat in Salzburg entgegen dem <pb facs="krp-0101_r-0004"/>Einspruche des Vertreters das Staatsamtes für Volksernährung den Beschluss gefasst habe, mit Rücksicht auf die schlechten Ernährungsverhältnisse vom 1. September d. J. an keinerlei Aufenthaltsbewilligungen zu erteilen, den dreitägigen freien Verkehr aufzuheben, die Entfernung der im Lande befindlichen Fremden zu veranlassen und jenen Zustand wiederherzustellen, nach welchem jede Einreise an eine spezielle Einreisebewilligung geknüpft war.</p>
+                  <p>Der sprechende Staatssekretär regt an, dass binnen kurzem eine Länderkonferenz einberufen werde, in welcher das Verhältnis der Länder zur Staatsregierung insbesondere auch auf dem Gebiete des Ernährungswesens klarzustellen wäre.</p>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> teilt mit, dass die Staatskanzlei unter Hinweis auf den Beschluss des Landesrates in Salzburg an alle Landesregierungen den dringenden Appell gerichtet habe, bis zu der in Aussicht stehenden Länderkonferenz von einseitigen Verfügungen im Gegenstand absehen zu wollen.</p>
+                  <p>Der Salzburger Landesregierung sei bedeutet worden, es müsse als vollkommen ausgeschlossen gelten, dass der Einreise zu kurzem, sei es geschäftli<pb facs="krp-0101_r-0005"/>chen, sei es privaten Zwecken dienenden Aufenthalt Hindernisse bereitet und der Freizügigkeit, welche in der Verfassung verbürgt ist und eine unbedingte Voraussetzung des wirtschaftlichen Lebens bildet, eine diesen Forderungen widersprechende Einschränkung auferlegt wird.</p>
+                  <p>Was die Einberufung einer Länderkonferenz betreffe, so wäre darüber nach Abschluss des Friedensvertrages Beschluss zu fassen.</p>
+                  <p>Der Kabinettsrat nimmt diese Mitteilungen zur Kenntnis.</p>
+               </div>
+               <div type="top" xml:id="krp-0101_top03">
+                  <head>
+                     <label>
+                        <num n="3">3.</num>
+                        <seg>Schutz- und Hilfsmaßnahmen für Westungarn.</seg>
+                     </label>
+                  </head>
+                  <p>Der Vorsitzende richtet über Wunsch des Staatskanzlers an die Staatssekretäre die Einladung, in Erwägung zu ziehen, welche Schutz- und Hilfsmaßnahmen im Bereiche der einzelnen Staatsämter zugunsten des Dreiburgenlandes vorzubereiten wären. Über Vorschlag des Staatssekretärs <hi rend="#letterspaced">Eldersch</hi> wird die im Staatsamt für Inneres errichtete Verwaltungsstelle mit dieser Frage befasst und dem Kabinettsrate berichtet werden.</p>
+                  <p><pb facs="krp-0101_r-0006"/></p>
+               </div>
+               <div type="top" xml:id="krp-0101_top04">
+                  <head>
+                     <label>
+                        <num n="4">4.</num>
+                        <seg>Enteignung des Kronfideikomissgutes Eisenerz-Radmer.</seg>
+                     </label>
+                  </head>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> teilt mit, dass der Staatsrat in seiner Sitzung am 26. November 1918 die Einsetzung einer Kommission beschlossen habe, welche die Frage der – unter Abänderung der letztwilligen Verfügung des vormaligen Kaisers Franz Joseph – erfolgten Überlassung des Kronfideikommissgutes Eisenerz-Radmer an die Hohenberg‘schen Erben zu studieren hätte. Dieser Kommission gehörte unter dem Vorsitz des Staatsnotars der Staatssekretär für Justiz, der Präsident des Reichsgerichtes Dr. Grabmayr und der zweite Präsident des Obersten Gerichts- und Kassationshofes Johann Berka an.</p>
+                  <p>Über die von der Kommission geführten Verhandlungen sei der Staatskanzlei bisher eine Mitteilung nicht zugekommen. Es erscheine nun zweckmäßig, über die Frage schlüssig zu werden, ob die vom Staatsrate eingesetzte Kommission überhaupt noch als bestehend angesehen werden könne, zumal der dem Staatsnotar übertragene Vorsitz mit dem Wegfalle dieses Staatsamtes wohl erledigt sei und auch bei den übrigen Mitgliedern sich Veränderungen in ihren amtlichen Stellungen ergeben haben, die ihre weitere Mit<pb facs="krp-0101_r-0007"/>gliedschaft allenfalls berühren könnten. Weiters könnte über eine Anregung des Landesrates von Steiermark gleichzeitig der Kommission auch der Auftrag erteilt werden, zur Frage der Rechtsnatur der Besitzung Mürzsteg Stellung zu nehmen.</p>
+                  <p>Die Staatskanzlei erachte, dass eine Veränderung in der Zusammensetzung der Kommission wohl nur insoweit geboten schiene, als an Stelle des seinerzeitigen Vorsitzenden und vormaligen Staatsnotars Dr. Sylvester nunmehr der Oberste Verwalter das Hofärars Sektionschef Dr. Beck zu setzen wäre. Letzterer hätte gleichzeitig die nötigen Vorkehrungen bezüglich des Zusammentrittes der Kommission zu treffen.</p>
+                  <p>Unterstaatssekretär <hi rend="#letterspaced">Miklas</hi> stellt den Antrag, die Kommission aufzulösen und mit dem Studium der oberwähnten Fragen den Staatssekretär Dr. Bratusch zu betrauen, dem es überlassen bliebe, die ihm erforderlich erscheinenden Experten beizuziehen.</p>
+                  <p>Der Kabinettsrat erhebt diesen von den Staatssekretären <hi rend="#letterspaced">Stöckler</hi> und Dr. <hi rend="#letterspaced">Bauer</hi> unterstützten Antrag zum Beschluss.</p>
+               </div>
+               <div type="top" xml:id="krp-0101_top05">
+                  <head>
+                     <label>
+                        <num n="5">5.</num>
+                        <seg>Gesetz über den achtstündigen Arbeitstag.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Hanusch</hi> <pb facs="krp-0101_r-0008"/>erbittet die Zustimmung des Kabinettsrates zur Einbringung des Entwurfes eines Gesetzes über den achtstündigen Arbeitstag in der Nationalversammlung.</p>
+                  <p>Durch das Gesetz vom 19. Dezember 1918, StGBl. Nr. 138, sei der achtstündige Arbeitstag in den fabriksmäßig betriebenen Gewerbeunternehmungen für die Übergangszeit bis zum Friedensschluss eingeführt worden. Um nicht für unbestimmte Zeit eine der wichtigsten sozialpolitischen Errungenschaften der Arbeiterschaft in Frage zu stellen, sei es notwendig, das erlöschende Gesetz durch ein neues abzulösen. Es sei kaum zweckmäßig, neuerdings eine vorläufige Regelung eintreten zu lassen, zumal mehrere Nachbarstaaten, vor allem die tschechoslowakische Republik den achtstündigen Arbeitstag, und zwar für das ganze Gebiet des gewerblichen Lebens endgiltig eingeführt haben und auch im Deutschen Reiche ein Entwurf dieser Art in Verhandlung stehe.</p>
+                  <p>Der vorliegende Gesetzentwurf enthalte zwei wichtige Neuerungen: Er nimmt eine endgiltige Regelung in Aussicht und erweitert das Anwendungsgebiet des achtstündigen Arbeitstages auf alle gewerblichen Betriebe im weitesten Sinne des Wortes. Die <pb facs="krp-0101_r-0009"/>übrigen Vorschriften des geltenden Gesetzes seien im Wesentlichen beibehalten worden.</p>
+                  <p>Staatssekretär [Ing.] <hi rend="#letterspaced">Zerdik</hi> nimmt gegen den Gesetzentwurf in ausführlicher Weise Stellung und führt aus:</p>
+                  <list>
+                     <item n="1"><label>1.)</label> Es sei unzweckmäßig, den achtstündigen Arbeitstag im gegenwärtigen Zeitpunkte durch ein Gesetz bereits definitiv festzulegen, bevor noch ein Überblick darüber gewonnen werden könne, wie sich die übrigen Staaten zur Frage der endgiltigen Regelung des Achtstundentages verhalten werden. Denn Deutschösterreich, in dem alle erwerbenden Stände in Hinkunft mehr denn je in intensivster Weise produktiv tätig sein müssen, werde diese sozialpolitische Errungenschaft für die Dauer nur dann aufrechterhalten können, wenn der Achtstundentag auch in den übrigen Industriestaaten festgelegt wird.</item>
+                  </list>
+                  <p>Es würde daher der gegenwärtigen Situation mehr entsprechen, wenn das in Geltung stehende Gesetz vom 19. Dezember 1918, StGBl. Nr. 138, mit dem der achtstündige Arbeitstag in fabriksmäßig betriebenen Gewerbeunternehmungen bis zum Friedensschluss <pb facs="krp-0101_r-0010"/>eingeführt wurde, durch eine Vollzugsanweisung auf etwa vier bis sechs Monate verlängert würde.</p>
+                  <p>Die Terminierung des Gesetzes vom 19. Dezember 1918 mit dem Zeitpunkt des Friedensschlusses sei seinerzeit mit der Begründung gewählt worden, dass der eventuellen internationalen Regelung der Arbeitszeit nicht vorgegriffen werden soll. Dasselbe Argument habe auch heute noch Geltung und die vom Staatsamte für soziale Verwaltung in den „erläuternden Bemerkungen“ des neuen Gesetzentwurfes angeführte Begründung, „dass die erhoffte zwischenstaatliche Regelung auch in den Umrissen noch nicht erkennbar sei und eine neuerliche vorläufige Regelung kaum zweckmäßig wäre“, rechtfertige in keiner Weise, dass diese für unsere Produktion so weittragende Angelegenheit nunmehr in Deutschösterreich einseitig und endgiltig geregelt werden soll. Auch im Deutschen Reiche sei der Achtstundentag bisher bloß provisorisch in Geltung.</p>
+                  <p>In der Tschechoslowakei gelte das Gesetz vom 19. Dezember 1918 über die achtstündige Arbeitszeit für die der Gewerbeordnung unterworfenen Unternehmungen mit sehr zahlreichen Ausnahmsbestimmungen.<note type="footnote">Dieser Absatz ist eine maschinschriftliche Einfügung im Originalprotokoll.</note></p>
+                  <list>
+                     <item n="1"><label>2.)</label> Während nach dem Gesetze vom 19. Dezember 1918 der achtstündige Arbeitstag bisher nur für fabriksmäßig betriebene Gewerbeunternehmun<pb facs="krp-0101_r-0011"/>gen gelte, sollen die Bestimmungen über den achtstündigen Arbeitstag durch den vorliegenden Gesetzentwurf nunmehr auf alle Betriebe, die den Vorschriften der Gewerbeordnung unterliegen, somit auch auf das ganze Kleingewerbe und den Kleinhandel (§ 2) ausgedehnt werden.</item>
+                  </list>
+                  <p>Die Einführung des achtstündigen Arbeitstages werde jedoch nur von einem Teile der kleingewerblichen Gehilfenschaft gewünscht, da – zum Unterschied von der Fabriksarbeiterschaft – ein großer Teil der gewerblichen Gehilfen und Lehrlinge die Meisterschaft anstrebe und daher an der Erhaltung der Lebensfähigkeit des Gewerbes selbst interessiert sei. Auch sei es fraglich, ob im Hinblicke auf das im Vergleiche zur Industrie weit nähere Verhältnis, in dem Meister und Gehilfe im Kleingewerbe zueinander stehen – ein Verhältnis, das namentlich auf dem Lande vielfach den Charakter der Hausgenossenschaft habe – die Einführung des Achtstundentages überhaupt praktisch durchzusetzen wäre.</p>
+                  <p>Gerade im gegenwärtigen Zeitpunkte müsste die Ausdehnung des achtstündigen Arbeitstages auf alle nicht fabriksmäßigen Gewerbebetriebe <pb facs="krp-0101_r-0012"/>schwerwiegende, für die Allgemeinheit höchst abträgliche Konsequenzen zur Folge haben. Denn es sei durchaus unwahrscheinlich, dass das ohnehin schwer leidende Kleingewerbe diese Belastung werde tragen können. Soweit das Kleingewerbe nicht überhaupt zugrunde geht – wodurch dem Einströmen fremder Waren der Weg geebnet würde – dürfte die bereits in letzter Zeit in zunehmendem Maße beobachtete Erscheinung, dass die Meister es vorziehen, ohne Gehilfen zu arbeiten, infolge des Achtstundentages weitere Fortschritte machen; dadurch müsste der Gewerbestand auf ein primitives Niveau herabgedrückt werden.</p>
+                  <list>
+                     <item n="1"><label>3.)</label> Die Unmöglichkeit, den Achtstundentag bei einer großen Anzahl von fabriksmäßigen Betrieben aufrechtzuerhalten, habe dazu geführt, dass schon aufgrund des dermalen geltenden Gesetzes zahlreiche Ausnahmen im Wege einer Vollzugsanweisung vom 12. Februar 1919, insbesondere bei pausenlosen Betrieben, dann für Kutscher, Fuhrwerker und Chauffeure; für die kontinuierlichen Betriebe der Zuckerindustrie, der Malzfabrikation, der Sauerstoff- und Industriegasfabri<pb facs="krp-0101_r-0013"/>kation, der Papier-, Zellulose-, Pappen- und Holzstofffabrikation, der keramischen Industrie, für die Glasfabriken, die Bierbrauereien, Spiritus- und Presshefefabriken, dann die Kartonnagefabriken eingeführt werden mussten.</item>
+                  </list>
+                  <p>Solche Ausnahmen müssten in Hinkunft – insbesondere im Falle der Ausdehnung der Bestimmungen auf das Kleingewerbe – naturgemäß eine wesentliche Erweiterung erfahren. Dies würde einerseits zu neuerlichen monatelangen Verhandlungen und zu großer Unruhe in der Produktion führen, andererseits die Einführung des Achtstundentages für die weitaus größte Anzahl der Betriebe wieder aufheben.</p>
+                  <list>
+                     <item n="1"><label>4.)</label> Vom produktionstechnischen Standpunkte müsse entschieden dagegen Stellung genommen werden, dass die (schon im gegenwärtig geltenden Gesetz normierte) 44-stündige Arbeitswoche für Frauen und Jugendliche (§ 1 Pkt. 2) definitiv – und gar auch für das Kleingewerbe – festgelegt werden soll.</item>
+                  </list>
+                  <p>Die Aufrechterhaltung dieser Bestimmung müsste für die meisten Betriebe – im Hinblicke auf die Arbeitsgemeinschaft mit männlichen Arbeitern – <pb facs="krp-0101_r-0014"/>die faktische Einführung der allgemeinen 44-stündigen Arbeitswoche oder aber die Entlassung eines großen Teiles der Frauen und Jugendlichen zur Folge haben.</p>
+                  <p>Aus diesen Gründen habe sich die Notwendigkeit ergeben, die 44-stündige Arbeitswoche auch schon aufgrund des gegenwärtig geltenden Gesetzes mit Vollzugsanweisung vom 12. Februar 1919 für alle jene fabriksmäßig betriebenen Gewerbeunternehmungen außer Kraft zu setzen, in denen die Arbeitsleistung der weiblichen und jugendlichen Arbeiter mit jener der männlichen derart zusammenhängt, dass die Beobachtung der 44-stündigen Arbeitswoche eine entsprechende Kürzung der Arbeitszeit der männlichen Arbeiter zur Folge hätte oder die Verwendung der weiblichen oder jugendlichen Arbeiter in Frage stellen würde. Schon dermalen sei demnach die gesetzliche Festlegung der 44-stündigen Arbeitswoche für die fabriksmäßigen Betriebe praktisch beinahe illusorisch geworden.</p>
+                  <p>Unterstaatssekretär Dr. <hi rend="#letterspaced">Resch</hi> ist gleichfalls der Ansicht, dass eine Verlängerung der Geltungsdauer des bestehenden Gesetzes auf etwa sechs Monate hinreichen würde. Der gegenwärtige <pb facs="krp-0101_r-0015"/>Zeitpunkt scheine für eine endgiltige Festlegung des Achtstundentages nicht günstig.</p>
+                  <p>Staatssekretär <hi rend="#letterspaced">Paul</hi> bemerkt, dass im Eisenbahn- und Schifffahrtsbetriebe derzeit schon, soweit dies möglich sei, der achtstündige Arbeitstag bestehe. Die strikte Durchführung des vorliegenden Gesetzes, insbesondere im Verkehrsdienst sei jedoch mit großen Schwierigkeiten verbunden und würde jedenfalls beträchtliche Mehrkosten verursachen.</p>
+                  <p>Er stelle daher den Antrag, im § 2 des Gesetzentwurfes die Eisenbahn- und Dampfschifffahrtsunternehmungen vom achtstündigen Arbeitstag ausdrücklich auszunehmen und für diese besondere Vorschriften zu erlassen.</p>
+                  <p>Unterstaatssekretär Dr. <hi rend="#letterspaced">Ellenbogen</hi> weist darauf hin, dass gerade der gegenwärtige Zeitpunkt für die Einführung des Achtstundentages der günstigste sei, weil die Arbeitszeit gegenwärtig ohnedies gekürzt sei und der Industrie durch die gesetzliche Festlegung des Achtstundentages kein Abbruch geschehe.</p>
+                  <p>Was das Argument der internationalen Regelung betreffe, so sei dies bereits überholt, da die umliegenden Staaten eben den Achtstundentag schon <pb facs="krp-0101_r-0016"/>eingeführt haben oder dessen Einführung im Zuge sei.</p>
+                  <p>Bezüglich der Eisenbahnen müssten die bestehenden Schwierigkeiten durch Vereinbarung mit dem Personal überwunden werden.</p>
+                  <p>Sektionschef Dr. <hi rend="#letterspaced">Grimm</hi> ersucht um nähere Aufklärungen über das vom Staatssekretär <hi rend="#letterspaced">Paul</hi> angedeutete finanzielle Mehrerfordernis, das durch die Einführung des Achtstundentages im Verkehrsdienste eintreten würde.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Bauer</hi> führt aus, dass die internationale Frage vollständig entschieden sei, seitdem Frankreich den Achtstundentag eingeführt habe. Er sei gleichfalls der Anschauung, dass der jetzige Zeitpunkt für die Einführung des Achtstundentages am günstigsten sei; es erscheine ganz ausgeschlossen, diese Maßnahme in Zeiten eines starken Arbeitsbedarfes durchzuführen. Die gesetzliche Festlegung des Achtstundentages – ein grundlegendes Postulat der Arbeiterschaft – sei übrigens nicht mehr aufzuhalten.</p>
+                  <p>Um die im Verkehrsdienste bestehenden Schwierigkeiten zu umgehen, würde es sich vielleicht empfehlen, statt des Achtstundentages die <pb facs="krp-0101_r-0017"/>48-Stundenwoche festzusetzen, wozu der § 5 eine Handhabe biete.</p>
+                  <p>Was das Kleingewerbe anbelange, so sei nach seiner Überzeugung die Fortführung der Praxis, bei allen sozialpolitischen Maßnahmen für das Kleingewerbe Ausnahmen zu schaffen, nicht mehr möglich. Die Arbeiterschaft werde das nicht mehr zugeben; auch würde das Kleingewerbe keine Arbeiter mehr bekommen, wenn der Unterschied der Arbeitsbedingungen zwischen Fabriksbetrieb und Kleingewerbe zu groß sei.</p>
+                  <p>Staatssekretär <hi rend="#letterspaced">Hanusch</hi> erklärt sich mit der Einführung der 48-Stundenwoche im Verkehrsdienst einverstanden und richtet schließlich einen eindringlichen Appell an den Kabinettsrat, der Einbringung des vorliegenden Entwurfes zuzustimmen; eine Verlängerung der Geltungsdauer des bestehenden Gesetzes könne er vom politischen Standpunkt ebensowenig vertreten, wie die Nichtaufnahme des Kleingewerbes.</p>
+                  <p>Staatssekretär [Ing.] <hi rend="#letterspaced">Zerdik</hi> bemerkt, dass er sich für den Fall der Annahme des Gesetzentwurfes im Kabinettsrate die Stellung von Abände<pb facs="krp-0101_r-0018"/>rungsanträgen vorbehalte.</p>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> entscheidet, dass der vorliegende Entwurf der Spezialdebatte zugrunde zu legen sei.</p>
+                  <p>Daraufhin stellt Staatssekretär [Ing.] <hi rend="#letterspaced">Zerdik</hi> folgende Abänderungsanträge:</p>
+                  <list>
+                     <item n="1"><label>1.)</label> Die Vollzugsanweisung, welche die oben unter 3.) und 4.) erwähnten sehr umfangreichen Ausnahmsbestimmungen zu enthalten hätte, müsste gleichzeitig mit dem neuen Gesetze wirksam werden, damit nicht – wie bei der dermaligen provisorischen Regelung – ein Vakuum eintrete.</item>
+                     <item n="2"><label>2.)</label> In § 4 Abs. 1 des neuen Gesetzentwurfes sei vorgesehen, dass insbesondere in Saisonindustrien und Saisongewerben höchstens an 30 Tagen innerhalb eines Kalenderjahres zur Befriedigung eines erhöhten Arbeitsbedürfnisses eine Verlängerung der Arbeitszeit bis zu höchstens 10 Stunden täglich von der politischen Behörde I. Instanz bewilligt werden könne. Dieses Ausmaß wäre mindestens auf 60 Tage auszudehnen, weil die Zeit der Konjunktur für die meisten Saisonbetriebe wohl länger als 30 Tage dauere.</item>
+                  </list>
+                  <p>Zu § 4 Abs. 1: Zufolge § 9 des Arbeiterurlaubsgesetzes vom <pb facs="krp-0101_r-0019"/>30. Juli 1919, StGBl. Nr. 395, kann, wenn es zur Vermeidung von Störungen des Betriebes oder zur Verhinderung eines erheblichen Produktionsausfalles im Betriebe erforderlich ist, zum Ersatz der durch die Urlaube ausfallenden Arbeitsleistungen die Arbeitszeit der übrigen im Betriebe beschäftigten Arbeiter, und zwar für jeden von ihnen bis zur Höchstdauer von 14 Tagen im Jahre und bis zu zwei Stunden innerhalb 24 Stunden, verlängert werden. In dem vorliegenden Gesetzentwurf wäre, um völlige Klarheit zu schaffen, die ausdrückliche Bestimmung aufzunehmen, dass die Verlängerung der Arbeitszeit im Sinne des Arbeiterurlaubsgesetzes in die im § 4 Abs. 1 des vorliegenden Gesetzes vorgesehene Frist von 30 (nach seinem Antrag mindestens 60) Tagen nicht einzurechnen ist. </p>
+                  <list>
+                     <item n="1"><label>3.)</label> Die in § 4 Abs. 2, vorgeschriebene Befragung des Gewerbeinspektors und der Berufsorganisationen der Arbeiter oder Angestellten wäre nur dann festzusetzen, wenn die Verlängerung der Arbeitszeit über zwei Arbeitswochen (statt eine Arbeitswoche) hinaus in Anspruch genommen wird.</item>
+                     <item n="2"><label>4.)</label> Nach § 6 des Gesetzentwurfes könne das Staatsamt für soziale Ver<pb facs="krp-0101_r-0020"/>waltung nach Vernehmung der in Betracht kommenden Berufsvereinigungen der Arbeiter und Angestellten einerseits, der Arbeitgeber andererseits und nach Anhörung eines gleichmäßig aus Vertretern der Arbeitgeber und Arbeitnehmer zusammengesetzten Beirates für bestimmte Gruppen von Betrieben Ausnahmen von den Vorschriften dieses Gesetzes gewähren. Die Mitglieder dieses Beirates werden nach § 6 Abs. 2 vom Staatssekretär für soziale Verwaltung ernannt.</item>
+                  </list>
+                  <p>Es wäre dringend erforderlich, dass die Mitglieder dieses Beirates im Einvernehmen mit dem Staatssekretär für Handel und Gewerbe, Industrie und Bauten ernannt werden, damit auf die Zusammensetzung dieser Körperschaft entsprechend Einfluss genommen werden könne.</p>
+                  <list>
+                     <item n="1"><label>5.)</label> Da die Verdienstbeträge der Arbeiter vielfach sehr kompliziert sind (Gedinglöhne, Prämien, Teuerungszulagen, Anschaffungsbeiträge usw.) sei der Durchschnittsverdienst für die Berechnung der Überstundenentlohnung vielfach sehr schwierig festzustellen.</item>
+                  </list>
+                  <p>Es wäre daher zu § 8 der Beisatz dringend erforderlich, dass die Be<pb facs="krp-0101_r-0021"/>stimmungen des Abs. 1 über die Entlohnungen der Überstunden nur insoferne gelten, als sie nicht durch kollektive Arbeitsverträge abweichend geregelt werden.</p>
+                  <p>Wie dem Staatsamt für Handel und Gewerbe, Industrie und Bauten bekannt sei, seien schon dermalen derartige Vereinbarungen – und zwar direkt contra legem – gegen die Bestimmungen des § 8 des geltenden Achtstundentaggesetzes (insbesondere bei Portieren, Kutschern und anderen Angestelltenkategorien) üblich.</p>
+                  <list>
+                     <item n="1"><label>6.)</label> Von den Bestimmungen des Gesetzes müssten die technischen und kommerziellen Leiter der Betriebe ausgenommen werden.</item>
+                     <item n="2"><label>7.)</label> Im § 11 wäre mit der Durchführung des Gesetzes das Staatsamt für soziale Verwaltung im Einvernehmen mit dem Staatsamt für Handel und Gewerbe, Industrie und Bauten zu betrauen.</item>
+                  </list>
+                  <p>Schließlich teilt der sprechende Staatssekretär mit, dass von industrieller Seite der Wunsch nach gleichzeitiger Abschaffung der kirchlichen Feiertage im Gesetzgebungswege ausgesprochen worden sei, um die Ver<pb facs="krp-0101_r-0022"/>minderung der Produktion durch die definitive Regelung des Achtstundentages einigermaßen wett zu machen.</p>
+                  <p>Staatssekretär <hi rend="#letterspaced">Paul</hi> beantragt eine entsprechende Abänderung des § 9, da sonst der Fall eintreten könnte, dass gegen ein Staatsamt von einer politischen Behörde I. Instanz das Strafverfahren eingeleitet wird.</p>
+                  <p>Staatssekretär <hi rend="#letterspaced">Hanusch</hi> stellt die Berücksichtigung dieser Abänderungsanträge in Aussicht.</p>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> stellt fest, dass in der Frage der Einführung der 48-Stundenwoche im Verkehrsdienste sowie bezüglich der in der Spezialdebatte gestellten Abänderungsanträge volle Übereinstimmung erzielt wurde. Die endgiltige Textierung des Gesetzentwurfes wäre vom Staatsamt für soziale Verwaltung im Einvernehmen mit den beteiligten Staatsämtern vorzunehmen.</p>
+                  <p>Was die beiden offen gebliebenen grundsätzlichen Fragen, nämlich die Frage der Ausdehnung des Achtstundentages auf das Kleingewerbe sowie die Fragen der Beibehaltung der 44-stündigen Arbeitswoche für die Frauen und Jugendlichen anbelange, so sei es nicht <pb facs="krp-0101_r-0023"/>möglich gewesen, die bestehenden Gegensätze zu überbrücken. Der Vorsitzende bricht daher die weitere Beratung des Gegenstandes ab und vertagt die Verhandlung bis zur Rückkehr des Staatskanzlers.</p>
+                  <p>Der Kabinettsrat erklärt sich mit der Vertagung einverstanden.</p>
+               </div>
+               <div type="top" xml:id="krp-0101_top06">
+                  <head>
+                     <label>
+                        <num n="6">6.</num>
+                        <seg>Kriegszuschlag zu den Schlachtviehpreisen.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Loewenfeld-Russ</hi> verweist auf den vom Kabinettsrat in seiner Sitzung am 27. Mai d. J. gefassten Beschluss, wonach der Kriegszuschlag zu dem Übernahmepreise für Schlachtvieh in den Monaten Juni, Juli und August in der Höhe von 50 h pro kg lebend den Vieheignern auszuzahlen und aus Staatsmitteln zu tragen ist, von Ende August an aber mit der Einstellung dieses Zuschlages unbedingt vorzugehen sein wird.</p>
+                  <p>Die große Bedeutung, die der Frage der Fortzahlung des Kriegszuschlages für die Aufbringung bzw. für die Preisbildung innewohnt, habe des Staatsamt für Land- und Forstwirtschaft veranlasst, im Rahmen einer am 15. August d. J. in Salzburg <pb facs="krp-0101_r-0024"/>abgehaltenen Tagung mit den Landesregierungen und den Landesviehverkehrsorganisationen auch diese Frage zum Beratungsgegenstande zu machen.</p>
+                  <p>Die Vertreter von Salzburg und von Kärnten hätten sich wohl für die Aufhebung des Kriegszuschlages ausgesprochen; von Seite Salzburgs sei auch die Vereinheitlichung der Übernahmspreise für Schlachtvieh in ganz Deutschösterreich befürwortet worden. Dieser Vorschlag sei auch von den Vertretern der übrigen deutschösterreichischen Länder gutgeheißen worden, wenngleich die Anregung, für die neuen Übernahmspreise die etwas nach obenhin abzurundenden Kärntner Preise (die derzeit bei Ochsen für die beste Qualität 5,30 K pro kg lebend betragen) zur Grundlage zu nehmen, in jenen Ländern zweifellos auf Schwierigkeiten stoßen werde, in denen wie in Niederösterreich und in Steiermark die derzeit geltenden Preise höher sind als in Kärnten.</p>
+                  <p>Der Vorschlag hinsichtlich des Abbaues des Kriegszuschlages habe nicht ungeteilten Beifall gefunden. Speziell von Seite Oberösterreichs sei betont worden, dass die Aufrechthaltung des Kriegszuschlages ebenso <pb facs="krp-0101_r-0025"/>notwendig sei, wie es unmöglich wäre, durch Überwälzung des Kriegszuschlages auf den Fleischpreis diesen zu erhöhen. Auch in Niederösterreich würde die Aufhebung des Kriegszuschlages eine Preisminderung bedeuten, die auf die Viehaufbringung zweifellos von nachteiligem Einfluss sein würde.</p>
+                  <p>Aus dem Gesagten ergebe sich, dass in einzelnen deutschösterreichischen Ländern immerhin gewisse Bedenken bestehen, den Kriegszuschlag einzustellen. Vom Standpunkte des Staatsamtes für Volksernährung müsse in Übereinstimmung mit dem Staatsamte für Land- und Forstwirtschaft aufmerksam gemacht werden, dass jede Kürzung des Kriegszuschlages nach menschlicher Voraussicht eine weitere Herabminderung des Ergebnisses der inländischen Viehaufbringung zur Folge haben werde. Diese Aufbringung sei auch jetzt schon so gering, dass für den Wiener Konsum nur noch schwache niederösterreichische Lieferungen (wöchentlich etwa 100 Stück Schlachtrinder) in Betracht kommen und dass trotzdem auch in den einzelnen Ländern bereits eine Fleischknappheit eingetreten ist, die sich nicht nur in einer Herabsetzung der Wochenquote vielfach bis auf das Wiener Ausmaß, sondern sogar in der <pb facs="krp-0101_r-0026"/>Einschaltung von fleischlosen Wochen, wie z. B. in Niederösterreich, Oberösterreich, Steiermark und Tirol (Innsbruck) ausdrückt. Der Grad der Fleischknappheit in den einzelnen deutschösterreichischen Ländern gehe am besten daraus hervor, dass auch hier schon eine immer stärker werdende Nachfrage nach ausländischem Fleisch laut werde. Diese Nachfrage zu befriedigen, sei umso weniger möglich, als die erlangbaren ausländischen Valuten kaum dazu ausreichen, um amerikanisches Gefrierfleisch in einer Menge zu beschaffen, die eine zeitlang zur regelmäßigen Fleischausgabe auf Basis einer Wochenkopfquote von 10 dkg ausreicht.</p>
+                  <p>Die Frage des Kriegszuschlages und die damit zusammenhängende Frage der Belieferung von Wien mit inländischem Fleisch sei auch für die vom Standpunkte der Verbraucher hochwichtige Frage der Preisbildung für Fleisch in Wien von Einfluss. Je höher nämlich die Anlieferung von Schlachtrindern und Rindfleisch aus den deutschösterrichischen Ländern nach Wien ist, desto geringer sei die Gefahr, sei es der Verteuerung des Fleisches, sei es der Belastung der Staatsfinanzen durch Beiträge für die Fleischverbilligung.</p>
+                  <p><pb facs="krp-0101_r-0027"/>Im Hinblicke auf die geschilderten Verhältnisse halte sich das Staatsamt für Volksernährung in Übereinstimmung mit jenem für Land- und Forstwirtschaft für verpflichtet, es der Erwägung des Gesamtkabinettes anheimzustellen, ob nicht ungeachtet des Beschlusses vom 27. Mai d. J. die Zahlung des Kriegszuschlages in der Höhe von 50 h pro kg lebend aus Staatsmitteln etwa durch weitere drei Monate fortzusetzen wäre.</p>
+                  <p>Zur Darstellung des erforderlichen Aufwandes sei angeführt, dass für den Kriegszuschlag vom Umsturze bis zur Kabinettssitzung vom 24. März d. J. rund 55.000.000 K, seither bis zur Kabinettssitzung vom 27. Mai d. J. 3.500.000 K und von dieser Zeit an bis Mitte August d. J. 6.725.000 K ausbezahlt worden sind. Der erste Zeitabschnitt gebe kein klares Bild, nicht nur weil in den Wintermonaten 1918/19 die Viehanlieferung eine sehr starke war, sondern auch weil bis 1. Jänner d. J. der Kriegszuschlag in der Höhe von 1 K pro kg lebend aus Staatsmitteln bezahlt worden ist. Für die Zeit ab März bis Mitte August, während welcher der Kriegszuschlag bereits auf 50 h pro kg lebend herab<pb facs="krp-0101_r-0028"/>gemindert war, ergebe sich eine monatliche Belastung der Staatsfinanzen von etwas mehr als 2.000.000 K.</p>
+                  <p>Sektionschef Dr. <hi rend="#letterspaced">Grimm</hi> weist in formaler Beziehung darauf hin, dass der Kabinettsrat vor drei Monaten in solenner Form beschlossen habe, dass der Kriegszuschlag mit 31. August d. J. unbedingt eingestellt werde; das Staatsamt für Finanzen habe daher damit rechnen müssen, dass diese Angelegenheit endgiltig abgeschlossen sei. In der Sache selbst müsse er erklären, dass die Finanzverwaltung nicht in der Lage sei, für diese Zwecke monatlich 2 Millionen K zur Verfügung zu stellen. Er bitte daher dringendst an dem bereits gefassten Beschluss festzuhalten.</p>
+                  <p>Nachdem Staatssekretär <hi rend="#letterspaced">Stöckler</hi> auf das Missverhältnis zwischen den Vieh- und Fleischpreisen hingewiesen hatte, beschließt der Kabinettsrat die Zahlung des Kriegszuschlages über den 31. August d. J. nicht fortzusetzen.</p>
+               </div>
+               <div type="top" xml:id="krp-0101_top07">
+                  <head>
+                     <label>
+                        <num n="7">7.</num>
+                        <seg>Verbilligte Abgabe von Rindfleisch in Wien.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Loewenfeld-Russ</hi> erstattet in Angelegen<pb facs="krp-0101_r-0029"/>heit der Rindfleischverbilligungsaktion für Wien den dem vorliegenden Protokolle als Beilage angeschlossenen Bericht und stellt die darin verzeichneten Anträge.</p>
+                  <p>Nachdem die Einstellung des Kriegszuschlages zu den Schlachtviehpreisen beschlossen worden sei, könne er auf einen Zuschuss aus Staatsmitteln zur Verbilligung des Rindfleisches in Wien unter keiner Bedingung verzichten. In dieser Hinsicht stelle der 2. von ihm erstattete Alternativantrag wohl das Minimum dessen dar, was von der Finanzverwaltung beigesteuert werden müsse.</p>
+                  <p>Sektionschef Dr. <hi rend="#letterspaced">Grimm</hi> erklärt, dass er sich im Prinzip gegen jede Belastung der Staatsfinanzen zum Zwecke der Verbilligung von Lebensmitteln aussprechen müsse. Er könne höchstens dem zustimmen, dass für den in Rede stehenden Zweck die aus den bisher bewilligten Krediten ersparten Restbestände verwendet werden.</p>
+                  <p>Der Kabinettsrat ermächtigt sohin das Staatsamt für Volksernährung, die Rindfleischverbilligungsaktion gemäß dem zweiten Alternativantrage für die Dauer eines Monates unter Inanspruchnahme der noch zur Verfügung stehenden Kreditreste fortzuführen.</p>
+                  <p><pb facs="krp-0101_r-0030"/>Die Staatsämter für Volksernährung und für Finanzen hätten sodann einvernehmlich neue Vorschläge im Gegenstande dem Kabinettsrate zu erstatten.</p>
+               </div>
+               <div type="top" xml:id="krp-0101_top08">
+                  <head>
+                     <label>
+                        <num n="8">8.</num>
+                        <seg>Gesetzesbeschlüsse des Niederösterreichischen Landtages, betreffend die einstweilige Bestellung der Gemeindevertreter in den Bezirksarmenräten und Bezirksstraßenausschüssen und betreffend die Abänderung einiger Bestimmungen des niederösterreichischen Schulaufsichtsgesetzes.</seg>
+                     </label>
+                  </head>
+                  <p>In Vertretung des augenblicklich abwesenden Staatssekretärs für Inneres und Unterricht teilt der <hi rend="#letterspaced">Vorsitzende</hi> mit, dass der Niederösterreichische Landtag drei Gesetzesbeschlüsse, betreffend die einstweilige Bestellung der Gemeindevertreter in den Bezirksarmenräten und Bezirksstraßenausschüssen und betreffend die Abänderung einiger Bestimmungen des niederösterreichischen Schulaufsichtsgesetzes gefasst habe.</p>
+                  <p>Die drei Gesetze regeln bis zur Erlassung neuer gesetzlicher Bestimmungen die Bestellung der Gemeindevertreter in den Bezirksarmenräten, Bezirksstraßenausschüssen und Bezirksschulräten nach den Grundsätzen des Verhältniswahlrechtes.</p>
+                  <p>Die Bezirksarmenräte und Bezirksstraßenausschüsse haben aus je 20 Vertretern der Gemeinden des Armenbezirkes, bzw. Straßenbezirkes und aus ebenso vielen Ersatzmännern zu bestehen. <pb facs="krp-0101_r-0031"/>Ihre Amtsdauer beträgt zwei Jahre.</p>
+                  <p>Wahlvorschläge können nur von jenen Parteien erstattet werden, die sich an der Wahlwerbung für den Landtag beteiligt haben. Die Stellen werden auf die einzelnen Parteien nach dem Verhältnisse der Stimmen verteilt, die im Gerichtsbezirk auf sie bei der Landtagswahl entfallen sind.</p>
+                  <p>Für die Überprüfung der Wahlvorschläge und für das Ermittlungsverfahren finden die Bestimmungen der Landtagswahlordnung sinngemäß Anwendung.</p>
+                  <p>In die Bezirksschulräte außerhalb Wiens werden vorläufig die Vertreter der Gemeinden, deren Anzahl fallweise für jede Funktionsperiode vom Landesschulrat im Einvernehmen mit dem Landesrate festgesetzt wird und die absolute Mehrheit sämtlicher Bezirksschulratsmitglieder betragen muss, auf zwei Jahre gewählt.</p>
+                  <p>Die Wahl erfolgt in den Landbezirken nach denselben Grundsätzen wie die Bestellung der Gemeindevertreter in den Bezirksarmenräten und Bezirksstraßenausschüssen, in Wiener Neustadt und Waidhofen an der Ybbs nach den Bestimmungen der Gemeindewahlordnungen für die Städte. Die näheren Anordnungen über die Wahl der Gemeindevertreter in den Landbezirken hat der Landesschulrat im Einvernehmen <pb facs="krp-0101_r-0032"/>mit dem Landesrat zu treffen. In der Zusammensetzung des Bezirksschulrates in Wien tritt keine Änderung ein.</p>
+                  <p>Die Gesetze bieten in sachlicher und formeller Beziehung zu einer Vorstellung keinen Anlass.</p>
+                  <p>Im Einvernehmen mit dem Staatsamt für Handel und Gewerbe, Industrie und Bauten und der Abteilung für Unterricht des Staatsamtes für Inneres und Unterricht werde beantragt, gegen die Gesetzesbeschlüsse keine Vorstellung zu erheben und der sofortigen Verlautbarung der drei Landesgesetze zuzustimmen.</p>
+                  <p>Der Kabinettsrat beschließt im Sinne des gestellten Antrages.</p>
+               </div>
+               <div type="top" xml:id="krp-0101_top09">
+                  <head>
+                     <label>
+                        <num n="9">9.</num>
+                        <seg>Verfügungsrecht über das aus der Sachdemobilisierung stammende Sanitätsmaterial.</seg>
+                     </label>
+                  </head>
+                  <p>Unterstaatssekretär Dr. <hi rend="#letterspaced">Tandler</hi> verweist darauf, [dass] das Verfügungsrecht über die Militärsanitätsanstalten, das Sanitätspersonal und das Sanitätsmaterial seinerzeit dem Staatsamt für Volksgesundheit übertragen worden sei.</p>
+                  <p>Nach Errichtung der deutschösterreichischen Hauptanstalt für Sachdemobilisierung, welche mit der Besorgung des Verkaufes der Demobilisierungsgüter betraut ist, habe diese An<pb facs="krp-0101_r-0033"/>stalt auch ihrerseits ein Verfügungsrecht, bzw. mindestens eine Mitwirkung bei der Gebarung mit dem Sanitätsmaterial in Anspruch genommen.</p>
+                  <p>Aufgrund mehrfacher Vereinbarungen sei der Wirkungskreis der beiden genannten Stellen in der Folge in der Weise abgegrenzt worden, dass dem Volksgesundheitsamte das Verfügungsrecht über das gesamte Sanitätsmaterial zustehe, während der Hauptanstalt für Sachdemobilisierung lediglich die Evidenz des Materiales und die Durchführung der Abverkäufe des seitens des Volksgesundheitsamtes nicht in Anspruch genommenen und zum Abverkauf freigegebenen Materials überlassen werde.</p>
+                  <p>Trotzdem habe die Hauptanstalt für Sachdemobilisierung vor kurzem die Militärmedikamentendirektion (Staatliche Heilmitteldirektion) „darauf aufmerksam gemacht, dass über die bei der Militärmedikamentendirektion lagernden Arzneiwaren, Verbandstoffe etc. mit Ausnahme jener Mengen, welche für das Staatsamt für Heer[es]wesen reserviert sind, <hi rend="#u">niemand</hi>, weder die Fachstelle zur Bewirtschaftung von Arzneimitteln, <hi rend="#u">noch das Staatsamt für Volksgesundheit</hi> ein Verfügungsrecht hat, und dass von diesen Vorräten nur aufgrund eines Ausfolgescheines der Haupt<pb facs="krp-0101_r-0034"/>anstalt abgegeben werden darf.“</p>
+                  <p>Der sprechende Unterstaatssekretär erbitte eine Entscheidung des Kabinettsrates, dass es bei dem bisherigen Verfügungsrechte des Volksgesundheitsamtes zu verbleiben habe.</p>
+                  <p>Unterstaatssekretär Dr. <hi rend="#letterspaced">Ellenbogen</hi> erklärt, dass die getroffenen Vereinbarungen selbstverständlich aufrecht bleiben müssen und es sich im vorliegenden Fall nur um eine irrige Verfügung einer untergeordneten Stelle handeln könne.</p>
+                  <p>Der Kabinettsrat nimmt diese Mitteilung zur Kenntnis.</p>
+               </div>
+               <div type="top" xml:id="krp-0101_top10">
+                  <head>
+                     <label>
+                        <num n="10">10.</num>
+                        <seg>Auflösung des Zoll- und Steuervereines mit Liechtenstein.</seg>
+                     </label>
+                  </head>
+                  <p>Sektionschef Dr. <hi rend="#letterspaced">Grimm</hi> macht Mitteilung von einer beim Staatsamt für Äußeres eingelangten Erklärung der Regierung des Fürstentums Liechtenstein, dass Liechtenstein den Vertrag vom 3. Dezember 1876 über den Zoll- und Steuerverein zwischen Österreich-Ungarn und Liechtenstein nach einem Beschluss des Liechtensteinischen Landtages mit Rücksicht auf den Zerfall der österreichisch-ungarischen Monarchie als nicht mehr zurecht bestehend ansehe, dass Liechtenstein den Abschluss eines neuen Vertrages <pb facs="krp-0101_r-0035"/>nicht plane, sondern sich vorläufig als selbständiges Freihandelsgebiet (ohne Zölle gegen das Ausland) einrichten wolle.</p>
+                  <p>Die liechtensteinische Regierung verlange daher die Rückverlegung unserer Zollgrenze an die Vorarlberg-Liechtensteiner Grenze und damit die Zurückziehung unserer Zoll- und Finanzwachangestellten aus Liechtenstein womöglich schon mit 1. Oktober dieses Jahres.</p>
+                  <p>Der zuletzt die Zölle, Staatsmonopole, Verzehrungssteuern und den Spielkartenstempel umfassende Zoll- und Steuerverein und die hiedurch begründete wirtschaftspolitische Gemeinschaft zwischen der österreichisch-ungarischen Monarchie und Liechtenstein habe seit dem Jahre 1852 bestanden. Der letzte nunmehr gekündigte Vertrag vom Jahre 1876 sei wiederholt zuletzt mit Ablauf des Jahres 1912 für je zwölf Jahre stillschweigend erneuert und seit dem Zerfalle Österreich-Ungarns stillschweigend fortgesetzt worden. Das Staatsamt für Finanzen sei aber schon vor Monaten an das Staatsamt des Äußer[e]n wegen Abschluss eines neuen Vertrages mit dem Hinweis darauf herangetreten, dass durch den Wegfall des einen von den beiden seinerzeitigen Vertragsteilen, nämlich Österreich-Ungarns, der Vertrag er<pb facs="krp-0101_r-0036"/>loschen sei.</p>
+                  <p>Der als Kündigung bezeichnete Trennungsschritt Liechtensteins könne mit Rechtseinwendungen nicht angefochten werden.</p>
+                  <p>Als Gründe für den nunmehrigen Schritt Liechtensteins werde angegeben: die Verstimmung über die gegenwärtigen und die Besorgnis vor den künftigen Wirkungen des Zollvereines für Liechtenstein, namentlich wegen der bereits geltenden und der noch nach dem Friedensschlusse zu erwartenden Zoll- und Steuererhöhungen, ferner das Bestreben der liechtensteinischen Parteien, von den Ententemächten als neutrales, auch von Österreich unabhängiges Land angesehen zu werden.</p>
+                  <p>Seitens des deutschösterreichischen Finanzressorts bestehe kein Interesse an der Fortdauer des Zoll- und Steuervereines. In einigen Belangen sei die Aufhebung des Vereines mit Liechtenstein geradezu für uns vorteilhaft, so im Zollgefälle, da der Aufteilungsschlüssel der Zolleinnahmen uns in Nachteil setzte, ferner bezüglich des Salzgefälles, weil das Salz an Liechtenstein zu einem Preissatze geliefert werden musste, der gegenüber den heutigen Abgabepreisen ganz unverhält<pb facs="krp-0101_r-0037"/>nismäßig billig sei, schließlich auch in Hinsicht auf die Gefällssicherheit, da schon seit Kriegsausbruch, vornehmlich aber in den letzten Monaten der Schmuggel in Liechtenstein derart exzessiv ausgeartet habe, dass die Finanzwache ein weiteres Verbleiben in Liechtenstein verweigerte.</p>
+                  <p>Im Zusammenhange mit der Auflösung der Zollgemeinschaft beabsichtige Liechtenstein, sich auch währungspolitisch von uns zu trennen und sein der deutschösterreichischen Banknotenstempelung unterzogenes Papiergeld mit einem Liechtensteinischen Stempel zu versehen.</p>
+                  <p>Angesichts der vorgebrachten Tatsachen beantrage das Staatsamt für Finanzen, die Aufhebung des bestandenen Zoll- und Steuervereines mit dem Fürstentum Liechtenstein zur Kenntnis zu nehmen und zu gestatten, dass die Maßnahmen zur Zurückziehung unserer Zoll- und Finanzwachanstalten aus dem Fürstentum und die Errichtung der neuen Zolllinie an der liechtensteinisch-vorarlbergischen Grenze unverzüglich eingeleitet und so rasch als möglich durchgeführt werden.</p>
+                  <p>Den Anträgen der fürstlichen Regierung wegen Abschluss von Übereinkommen über Grenzverkehrserleichterungen und einen Warenaustausch mit Deutschöster<pb facs="krp-0101_r-0038"/>reich werde von Seiten der beteiligten deutschösterreichischen Staatsämter aufgrund der noch zu gewärtigenden Vorschläge näher getreten werden.</p>
+                  <p>Der Kabinettsrat pflichtet diesem Antrage bei.</p>
+               </div>
+            </div>
+            <div type="stenogramme">
+               <div n="1">
+                  <head>EINZUFÜGEN</head>
+                  <p>Transkription in Arbeit.</p>
+               </div>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

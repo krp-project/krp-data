@@ -1,0 +1,628 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href='http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:acdh="https://vocabs.acdh.oeaw.ac.at/schema#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xml:lang="de">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="a" type="main" n="0116">Kabinettsprotokoll Nr. 116 vom 21. Oktober 1919</title>
+            <title level="m" type="main" n="01">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <title level="m" type="sub" n="">Renner III (17. Oktober 1919 – 7. Juli 1920)</title>
+            <meeting>
+               <placeName key="https://d-nb.info/gnd/4066009-6">Wien</placeName>
+               <orgName key="https://d-nb.info/gnd/5162749-8">Kabinettsrat</orgName>
+               <date when-iso="1919-10-21"/>
+            </meeting>
+            <editor>
+               <persName key="https://d-nb.info/gnd/122481836"
+                         role="hasCreator"
+                         xml:id="hwohnout">
+                  <forename>Helmut</forename>
+                  <surname>Wohnout</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</affiliation>
+               <idno type="ORCID">0000-0002-3864-9839</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/120789825"
+                         role="hasCreator"
+                         xml:id="tolechowski">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0003-3291-6876</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/131679384"
+                         role="hasCreator"
+                         xml:id="rlein">
+                  <forename>Richard</forename>
+                  <surname>Lein</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0002-7502-0503</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="aholzer">
+                  <forename>Anna</forename>
+                  <surname>Holzer</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0005-3560-3500</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="dsoelkner">
+                  <forename>Dominik</forename>
+                  <surname>Sölkner</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-9895-7212</idno>
+            </editor>
+            <editor>
+               <persName role="hasContributor" xml:id="ischotzko">
+                  <forename>Ina</forename>
+                  <surname>Schotzko</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-5210-3713</idno>
+            </editor>
+            <funder n="1">
+               <orgName key="https://d-nb.info/gnd/2054142-9" role="hasFunder">Österreichischer Wissenschaftsfonds FWF</orgName>
+               <idno type="project">PAT1495024</idno>
+               <title type="project">Die Protokolle des österreichischen Kabinettsrates 1919–1920</title>
+            </funder>
+            <respStmt>
+               <resp>Projektverantwortung</resp>
+               <orgName key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Projektleitung</resp>
+               <persName key="https://d-nb.info/gnd/120789825" role="hasPrincipalInvestigator">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+                  <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+                  <idno type="ORCID">0000-0003-3291-6876</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Nationaler Forschungspartner</resp>
+               <orgName key="https://d-nb.info/gnd/1123037736" role="hasEnabler">Austrian Centre for Digital Humanities</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Digitalisierung der gedruckten Quellen</resp>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>TEI-Datenmodellierung</resp>
+               <persName role="hasContributor" xml:id="tfruehwirth">
+                  <forename>Timo</forename>
+                  <surname>Frühwirth</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-3997-5193</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technische Supervision</resp>
+               <persName key="https://d-nb.info/gnd/1043833846"
+                         role="hasContributor"
+                         xml:id="pandorfer">
+                  <forename>Peter</forename>
+                  <surname>Andorfer</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-9575-9372</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technisches Consulting und Vorbereitung der Druckausgabe</resp>
+               <persName key="https://d-nb.info/gnd/13281899X"
+                         role="hasContributor"
+                         xml:id="skurz">
+                  <forename>Stephan</forename>
+                  <surname>Kurz</surname>
+                  <affiliation key="https://d-nb.info/gnd/1202798799">Institut für die Erforschung der Habsburgermonarchie und des Balkanraumes</affiliation>
+                  <idno type="ORCID">0000-0003-2546-2570</idno>
+               </persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher key="https://d-nb.info/gnd/1001454-8">Österreichische Akademie der Wissenschaften</publisher>
+            <date when="2028"/>
+            <availability status="free">
+               <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">Lizenziert unter CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/deed.de)</licence>
+            </availability>
+            <idno type="ISBN_Print"/>
+            <idno type="ISBN_Part_epub"/>
+            <idno type="ISBN_Digital"/>
+            <idno type="DOI"/>
+            <idno type="DOI_zenodo"/>
+            <idno type="ebook_ID"/>
+         </publicationStmt>
+         <seriesStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="m" type="main">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <respStmt>
+               <resp>Bearbeitung und Herausgeberschaft</resp>
+               <orgName key="https://d-nb.info/gnd/2024703-5">Universität Wien</orgName>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+         </seriesStmt>
+         <notesStmt>
+            <note>Diese TEI-XML-Datei ist Grundlage für eine Druckausgabe der Edition.</note>
+            <relatedItem>
+               <biblStruct>
+                  <monogr>
+                     <imprint>
+                        <pubPlace key="https://d-nb.info/gnd/4066009-6">Wien</pubPlace>
+                        <publisher key="https://d-nb.info/gnd/2068748-5">Verlag der Österreichischen Akademie der Wissenschaften</publisher>
+                        <date when="2029"/>
+                     </imprint>
+                     <extent/>
+                  </monogr>
+                  <note>
+              <idno/>
+              <ptr/>
+            </note>
+                  <citedRange/>
+               </biblStruct>
+            </relatedItem>
+         </notesStmt>
+         <sourceDesc>
+            <bibl>Quellbestand: AT-OeStA/AdR MRang MR 1Rep KRP Kabinettsratsprotokolle, 1918-1920 (Teilbestand)<ref target="https://www.archivinformationssystem.at/detail.aspx?id=5465">https://www.archivinformationssystem.at/detail.aspx?id=5465</ref>
+            </bibl>
+            <msDesc>
+               <msIdentifier>
+                  <institution key="https://d-nb.info/gnd/37748-X" role="hasOwner">AT-OeStA Österreichisches Staatsarchiv (Archiv (ÖStA))</institution>
+                  <repository key="https://d-nb.info/gnd/1601181-8">AT-OeStA/AdR Archiv der Republik, 1918- (Abteilung)</repository>
+                  <collection>AT-OeStA/AdR MRang MR 1Rep Ministerrat 1. Republik, 1918 - 1938 (Bestand)</collection>
+                  <idno>AT-OeStA_AdR-MRang-MR-1.-Rep.-KRP-116</idno>
+               </msIdentifier>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <abstract>
+            <p>
+          <!--to be generated-->
+        </p>
+         </abstract>
+      </profileDesc>
+      <encodingDesc>
+         <styleDefDecl scheme="css"/>
+         <tagsDecl>
+            <rendition xml:id="b" scheme="css">font-weight:bold;</rendition>
+            <rendition xml:id="su" scheme="css">vertical-align:super;font-size:.7em;</rendition>
+            <rendition xml:id="s" scheme="css">text-decoration:line-through;</rendition>
+            <rendition xml:id="u" scheme="css">text-decoration:underline;</rendition>
+            <rendition xml:id="ow" scheme="css">text-decoration:line-through;text-decoration-style:double;</rendition>
+            <rendition xml:id="r" scheme="css">display:block;text-align:right;</rendition>
+            <rendition xml:id="letterspaced" scheme="css">letter-spacing:0.15em;</rendition>
+            <rendition xml:id="i" scheme="css">font-style:italic;</rendition>
+         </tagsDecl>
+         <editorialDecl>
+            <hyphenation>
+               <p>
+            <!--to be added-->
+          </p>
+            </hyphenation>
+            <correction>
+               <p>
+            <!--to be added-->
+          </p>
+            </correction>
+            <normalization>
+               <p>
+            <!--to be added-->
+          </p>
+            </normalization>
+            <punctuation>
+               <p>
+            <!--to be added-->
+          </p>
+            </punctuation>
+            <stdVals>
+               <p>
+            <!--to be added-->
+          </p>
+            </stdVals>
+            <p>
+          <!--to be added-->
+        </p>
+         </editorialDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#tfruehwirth" when-iso="2026-10-13">TEIGarage output upconverted with upconvert.xsl</change>
+         <change who="#tfruehwirth" when-iso="2026-10-13">TEI header populated with generate_tei_templates.py</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface/>
+   </facsimile>
+   <text>
+      <body>
+         <div xml:id="doc-krp-0116.xml">
+            <head type="dokument">
+               <title type="num">116.<note type="footnote">Das Protokoll trägt den Vermerk <hi rend="#i">Vertraulich!</hi></note>
+               </title>
+               <title type="desc">
+                  <pb facs="krp-0116_r-0001"/>
+                  <pb facs="krp-0116_r-0002"/>[Dienstag] 1919-10-21</title>
+            </head>
+            <div type="dokumentkopf">
+               <div type="vorsitz">
+                  <head>Vorsitz:</head>
+                  <p>Renner, teilweise Fink</p>
+               </div>
+               <div type="anwesend">
+                  <head>Anwesend:</head>
+                  <p>Deutsch, Eisler, Eldersch, Ellenbogen, Glöckel, Hanusch, Loewenfeld-Russ, Mayr, Miklas, Paul, Ramek, Reisch, Resch, Stöckler, Tandler, Waiss, Zerdik</p>
+               </div>
+               <div type="zugezogen">
+                  <head>Zugezogen:</head>
+                  <p>Beck, Enderes, Grimm, Harpner, [Pokorny]</p>
+               </div>
+               <div type="dauer">
+                  <head>Dauer:</head>
+                  <p>21.00–00.30 Uhr</p>
+               </div>
+            </div>
+            <div type="komponenten">
+               <p>Reinschrift, Beilagen, streng vertraulicher Anhang, Konzept, stenographische Mitschrift, Entwurf der Tagesordnung, diverse Zusätze, 13. Personalsitzung</p>
+            </div>
+            <div type="beilagen">
+               <head>Beilagen:</head>
+               <list>
+                  <item><ref target="#krp-0116_top04">Zu TOP 4</ref>: <ref target="#krp-0116_b01">Bericht des Staatsbevollmächtigten für die Veräußerung von Kunstschätzen über Veräußerungen und Verpfändungen auf Basis des Gesetzes vom 16. Oktober 1919</ref></item>
+                  <item><ref target="#krp-0116_top04">Zu TOP 4</ref>: <ref target="#krp-0116_b02">Äußerung des Beirates der Sachverständigen</ref></item>
+                  <item><ref target="#krp-0116_top06">Zu TOP 6</ref>: <ref target="#krp-0116_b03">Beschlussantrag der Staatskanzlei zu Zl. I-6620/4 über die Aufstellung einer vorbereitenden Kommission für die Grenzregulierungsarbeiten zwischen Deutschösterreich und dem Königreich SHS</ref></item>
+                  <item><ref target="#krp-0116_top07">Zu TOP 7</ref>: <ref target="#krp-0116_b04">Vortrag des Staatskanzlers über die durch das Eintreffen der Reparationssubkommission notwendig gewordenen Verfügungen</ref></item>
+                  <item><ref target="#krp-0116_top07">Zu TOP 7</ref>: <ref target="#krp-0116_b05">Gesetzesentwurf samt Begründung zur Durchführung der Artikel 192 und 193 des Staatsvertrages von St. Germain</ref></item>
+                  <item><ref target="#krp-0116_top08">Zu TOP 8</ref>: <ref target="#krp-0116_b06">Motivenbericht des Staatskanzlers für den Gesetzesentwurf über die Regelung des Konsulargebührentarifes</ref></item>
+                  <item><ref target="#krp-0116_top09">Zu TOP 9</ref>: <ref target="#krp-0116_b07">Antrag des Staatsamtes für soziale Verwaltung über die Übernahme des Offizierswaiseninstitutes in Hirtenberg</ref></item>
+                  <item><ref target="#krp-0116_top10">Zu TOP 10</ref>: <ref target="#krp-0116_b08">Vollzugsanweisung des Staatsamtes für soziale Verwaltung zu Zl. 29.052/19 über die Erhaltung des Arbeiterstandes in gewerblichen Betrieben</ref></item>
+                  <item><ref target="#krp-0116_top11">Zu TOP 11</ref>: <ref target="#krp-0116_b09">Vollzugsanweisung des Staatsamtes für soziale Verwaltung zu Zl. 29.052/19 über die Unterstützung der arbeitslosen Arbeiter und Angestellten</ref></item>
+                  <item><ref target="#krp-0116_top12">Zu TOP 12</ref>: <ref target="#krp-0116_b10">Vortrag des Staatssekretärs für Verkehrswesen Zl. 2241/St.V. zur Vollzugsanweisung der Staatsregierung über die Trennung der Verwaltung des Telegrafen-, Fernsprech- und Rohrpostwesens von der Postverwaltung</ref></item>
+                  <item><ref target="#krp-0116_top13">Zu TOP 13</ref>: <ref target="#krp-0116_b11">Notiz des Staatssekretärs für Handel und Gewerbe, Industrie und Bauten für den Vortrag im Kabinettsrat über die Erklärung der Schleppbahn Untermühl – Partenstein als begünstigter Bau</ref></item>
+                  <item><ref target="#krp-0116_top14">Zu TOP 14</ref>: <ref target="#krp-0116_b12">Vortrag des Staatssekretärs für Handel und Gewerbe, Industrie und Bauten über die Fortführung der Rheinregulierung von der Illmündung abwärts bis zum Bodensee</ref></item>
+                  <item><ref target="#krp-0116_top15">Zu TOP 15</ref>: <ref target="#krp-0116_b13">Vortrag des Staatssekretärs für Finanzen über den Gesetzesbeschluss des Oberösterreichischen Landtages zur Einhebung einer Wertzuwachsabgabe für Landes- und Gemeindezwecke</ref></item>
+                  <item><ref target="#krp-0116_top16">Zu TOP 16</ref>: <ref target="#krp-0116_b14">Verkauf der Süddeutschen Donau-Dampf-Schifffahrts-Gesellschaft</ref></item>
+                  <item>Streng vertraulichen Anhang:</item>
+                  <item>Zu 2.:<ref target="#krp-0116_b15">Gesetz zur Landesverweisung und Übernahme des Vermögens des Hauses Habsburg-Lothringen</ref></item>
+                  <item>Zu 2.:<ref target="#krp-0116_b16">Motivenbericht</ref></item>
+                  <item>Zu 3.:<ref target="#krp-0116_b17">Übersicht über die Waffenbestände</ref></item>
+               </list>
+            </div>
+            <div type="protokoll">
+               <pb facs="krp-0116_r-0003"/>
+               <div type="top" xml:id="krp-0116_top01">
+                  <head>
+                     <label>
+                        <num n="1">1.</num>
+                        <seg>Kundmachung des Gesetzes, betreffend die Abänderung des Gesetzes über das deutschösterreichische Staatsbürgerrecht und über die zeitweise Unzulässigkeit von Aufnahmen in den Heimatverband.</seg>
+                     </label>
+                  </head>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> teilt mit, dass er die Kundmachung des von der Nationalversammlung beschlossenen Gesetzes, betreffend die Abänderung des Gesetzes über das deutschösterreichische Staatsbürgerrecht und über die zeitweise Unzulässigkeit von Aufnahmen in den Heimatverband, im Staatsgesetzblatte dringlichkeitshalber ohne vorherige Lesung durch das Kabinett veranlasst habe.</p>
+                  <p>Da gegen diesen Gesetzesbeschluss von der Staatsregierung keine Vorstellung zu erheben sein dürfte, erbitte er nunmehr die nachträgliche Genehmigung dieser seiner Verfügung.</p>
+                  <p>Der Kabinettsrat erteilt die erbetene Genehmigung. </p>
+                  <p><pb facs="krp-0116_r-0004"/></p>
+               </div>
+               <div type="top" xml:id="krp-0116_top02">
+                  <head>
+                     <label>
+                        <num n="2">2.</num>
+                        <seg>Beitritt der Staatsregierung zu zwei von der Nationalversammlung beschlossenen Gesetzen.</seg>
+                     </label>
+                  </head>
+                  <p>Über Antrag des Vorsitzenden findet der Kabinettsrat gegen die von der Nationalversammlung beschlossenen Gesetze über die Staatsform sowie über die Vornahme einer außerordentlichen Volkszählung keine Vorstellung zu erheben. Die Gesetzesbeschlüsse sind daher von den zuständigen Mitgliedern der Staatsregierung gegenzuzeichnen und den Präsidenten der Nationalversammlung zur Fertigung vorzulegen.</p>
+               </div>
+               <div type="top" xml:id="krp-0116_top03">
+                  <head>
+                     <label>
+                        <num n="3">3.</num>
+                        <seg>Ergänzung und Änderung des Gesetzes vom 3. April 1919, StGBl. Nr. 209, betreffend die Landesverweisung und die Übernahme des Vermögens des Hauses Habsburg-Lothringen.</seg>
+                     </label>
+                  </head>
+                  <p>Der Vorsitzende erbittet und erhält die Ermächtigung des Kabinettsrates, in der Nationalversammlung den Entwurf eines Gesetzes, womit das Gesetz vom 3. April 1919, StGBl. Nr. 209, betreffend die Landesverweisung und die Übernahme des Vermögens des Hauses Habsburg-Lothringen, ergänzt und abgeändert wird, einbringen zu dürfen.</p>
+                  <p>Die sich hierüber entwickelnde Debatte trägt vertraulichen Charakter und ist in einem Geheimprotokoll niedergelegt.</p>
+                  <p><pb facs="krp-0116_r-0005"/></p>
+               </div>
+               <div type="top" xml:id="krp-0116_top04">
+                  <head>
+                     <label>
+                        <num n="4">4.</num>
+                        <seg>Bericht des Staatsbevollmächtigten Sektionschefs Ing. Enderes über den gegenwärtigen Stand der Aktion zur Veräußerung und Verpfändung staatlichen Kunstbesitzes.</seg>
+                     </label>
+                  </head>
+                  <p>Sektionschef Ing. <hi rend="#letterspaced">Enderes</hi> berichtet, dass sich die ihm ursprünglich gestellte Aufgabe, bis Mitte Oktober 10 Millionen Holland-Gulden und bis Ende Oktober weitere 20 Millionen Holland-Gulden zu beschaffen, als vollkommen undurchführbar erwiesen habe, u. zw. hauptsächlich aus dem Grunde, weil für kein einziges großes Objekt und für keine einzige Gruppe von Objekten im staatlichen Kunstbesitz eine halbwegs verlässliche Bewertung vorlag und bei dem verfügbaren Stand an Fachleuten und der Art und Aufbewahrung der in Frage kommenden Gegenstände eine solche Bewertung in so kurzer Zeit nicht möglich gewesen sei.</p>
+                  <p>Angesichts dieser Schwierigkeiten bleibe nichts anderes übrig, als das bisherige Programm in folgendem Sinne zu ändern:</p>
+                  <list>
+                     <item n="1"><label>1.)</label> baldigste Beschaffung einer Darlehenssumme von rund 15 Millionen Holland-Gulden durch Verkauf und Verpfändung der Silberkammer, eines Teiles des Kirchenschatzes und sämtlicher verfügbaren orientalischen Teppiche und eines Teiles der Gobelins;</item>
+                  </list>
+                  <p><pb facs="krp-0116_r-0006"/></p>
+                  <list>
+                     <item n="1"><label>2.)</label> vertragsmäßige Festlegung der Absicht, dass nicht die verpfändeten Objekte, sondern mindestens teilweise auch andere sowohl in der Gesamtsumme wie auch in ihrem Einzelwerte annähernd gleichwertige Gegenstände seinerzeit zur Deckung der Pfandsumme und Erzielung eines Übergewinnes verkauft werden;</item>
+                     <item n="2"><label>3.)</label> zur Deckung des noch unbedeckten Geldbedarfes wären andere Quellen heranzuziehen. </item>
+                  </list>
+                  <p>Hiefür käme vor allem das im Naturhistorischen Hofmuseum befindliche Edelsteinbouquet Kaiser Franz I. in Betracht, das angeblich einen Wert von rund 1 Million Gulden österreichische Währung besessen haben soll und das zweifellos nach dem Wortlaute des Gesetzes vom 16. Oktober herangezogen werden kann. Weiters wäre die Veräußerung von Immobilien aus dem staatlichen Besitz in Erwägung zu ziehen. Eine solche Aktion würde allerdings viel mehr Zeit in Anspruch nehmen, als der ursprünglich gedachte Mobilienverkauf; der Zeitverlust werde jedoch vielleicht nicht größer sein, als jener, der allein schon durch die Auswahl, Schätzung usw. zahlreicher Sammlungsbestandteile entstünde.</p>
+                  <p><pb facs="krp-0116_r-0007"/>Redner macht schließlich darauf aufmerksam, dass inzwischen die tschechische Vertretung in Wien gegen die ganze Aktion unter Berufung auf den Vertrag von St. Germain Einspruch erhoben habe.</p>
+                  <p>Der Kabinettsrat nimmt diesen Bericht zur Kenntnis und gibt der Anschauung Ausdruck, dass angesichts der außerordentlichen Dringlichkeit der Valutabeschaffung die Aktion in jeder möglichen Weise zu beschleunigen sein werde. </p>
+               </div>
+               <div type="top" xml:id="krp-0116_top05">
+                  <head>
+                     <label>
+                        <num n="5">5.</num>
+                        <seg>Verfügungen über die Waffenbestände aufgrund des Staatsvertrages von St. Germain.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Deutsch</hi> erstattet einen eingehenden Bericht über die aufgrund des Staatsvertrages von St. Germain zu treffenden Verfügungen über die Waffenbestände.</p>
+                  <p>Dieser Bericht sowie die gegenständlichen Beschlüsse des Kabinettsrates sind in einem Geheimprotokoll niedergelegt.</p>
+               </div>
+               <div type="top" xml:id="krp-0116_top06">
+                  <head>
+                     <label>
+                        <num n="6">6.</num>
+                        <seg>Aufstellung einer vorbereitenden Kommission für die Grenzregulierungsarbeiten zwischen Deutschösterreich und dem Königreiche SHS.</seg>
+                     </label>
+                  </head>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> führt aus, dass laut Art. 48 des Staatsvertrages von St. Germain der Verlauf der Grenze <pb facs="krp-0116_r-0008"/>zwischen Deutschösterreich und dem Königreiche der Serben, Kroaten und Slowenen in dem im Art. 27 Pkt. 4 genannten Abschnitte vom Hühnerkogel (Kote 1522) bis zu dem künftigen Treffpunkte der Grenzen Deutschösterreichs, Jugoslawiens und Ungarns (2 km östlich von Toka im Eisenburger Komitat) von einem siebengliedrigen Grenzregelungsausschuss, in dem Deutschösterreich ein Mitglied zu ernennen hat, werde bestimmt werden.</p>
+                  <p>Die Grenzregelungsausschüsse haben laut Art. 29 des Staatsvertrages sehr weitgehende Befugnisse bei Festsetzung des Grenzverlaufes, insbesondere können sie dort, wo der Text des Friedensvertrages bisherige Verwaltungsgrenzen als Staatsgrenzen festsetzt, über Wunsch der interessierten Staaten Abänderungen an der von der Konferenz festgesetzten Linie vornehmen.</p>
+                  <p>Es werde daher von größter Wichtigkeit sein, seitens Deutschösterreichs schon jetzt alles für die Arbeiten dieser Grenzregelungsausschüsse vorzubereiten und das Material zu beschaffen, das vom deutschösterreichischen Ausschussmitgliede bei der eigentlichen Kommissionsarbeit zu verwerten sein <pb facs="krp-0116_r-0009"/>werde. Auch werde es erforderlich sein, sich über die lokalen Verhältnisse in politischer, ethnographischer, verkehrstechnischer und wirtschaftlicher Beziehung schon jetzt gründlich zu orientieren, mit der Bevölkerung dieser Gebiete Fühlung zu nehmen, um einerseits über die Wünsche und Bedürfnisse derselben orientiert zu sein, andererseits gegebenenfalls auf die Äußerung von Wünschen der Bevölkerung im Sinne einer für Deutschösterreich günstigen Führung der Grenzlinie Einfluss zu nehmen.</p>
+                  <p>Auch wären die von unserem Vertreter im Ausschusse zu stellenden Anträge unter möglichster Rücksichtnahme auf die Wünsche und Interessen der Bevölkerung in allen Details auszuarbeiten.</p>
+                  <p>Von den an den verschiedenen Grenzfragen interessierten Landesregierungen sei zunächst die Steiermärkische Landesregierung an das Staatsamt für Äußeres mit dem Antrage herangetreten, eine vorbereitende Kommission für die Grenzbestimmungsarbeiten einzusetzen, die in dem oben angedeuteten Sinne bzgl. des im Art. 27 Pkt. 4 erwähnten Grenzabschnittes tätig zu sein hätte. Der Kommission <pb facs="krp-0116_r-0010"/>obläge ferner die Aufgabe, im Sinne des Art. 31 des Staatsvertrages alle Dokumente, Belege und Behelfe, die der Ausschuss bei seiner Arbeit braucht, vorzubereiten und zu sammeln.</p>
+                  <p>Nach dem Antrage der Landesregierung von Steiermark hätte die vorbereitende Kommission zu bestehen:</p>
+                  <list>
+                     <item n="1"><label>1.)</label> aus dem künftigen Vertreter Deutschösterreichs im Grenzregelungsausschusse, als Vertreter des Staatsamtes für Äußeres und Leiter der Kommission;</item>
+                     <item n="2"><label>2.)</label> einem Offizier mit Lokalkenntnissen, als Vertreter der militärischen Interessen;</item>
+                     <item n="3"><label>3.)</label> einem Geometer, zur Besorgung der vermesserischen und kartographischen Arbeit;</item>
+                     <item n="4"><label>4.)</label> im Bedarfsfalle einer journalistisch versierten Persönlichkeit, für Propagandazwecke;</item>
+                     <item n="5"><label>5.)</label> den erforderlichen Schreib- und Hilfskräften, von denen einer mit der Rechnungsführung zu beauftragen wäre.</item>
+                  </list>
+                  <p>Nötigenfalls wären zu den Arbeiten der vorbereitenden Kommission noch Vertreter der betreffenden Länder, die aus den lokalen Interessenten der ein<pb facs="krp-0116_r-0011"/>zelnen Grenzabschnitte entnommen würden, dauernd oder vorübergehend zuzuziehen.</p>
+                  <p>Für die Besoldung der Kommissionsmitglieder und der Hilfskräfte, die Errichtung und Führung des Büros, die Materialbeschaffung und die Durchführung der Bereisungen, die größtenteils im Automobil und Wagen erfolgen werden müssen, beantrage die Landesregierung die Bewilligung eines Kredites von 1 Million K, die in Teilbeträgen flüssig zu machen wären.</p>
+                  <p>Das Staatsamt für Äußeres sei mit der Errichtung der in Rede stehenden Kommission in der angedeuteten Zusammensetzung im Wesentlichen einverstanden, würde jedoch die Frage, ob der Leiter der vorbereitenden Kommission später als Vertreter für Deutschösterreich in den Grenzregelungsausschuss zu bestellen wäre, vorläufig noch offenlassen, da sich dessen Auswahl wohl danach richten müsse, ob seitens der Ententestaaten und Jugoslawiens militärische oder zivile Vertreter bestellt werden.</p>
+                  <p>Da die Arbeiten im Gelände zum großen Teil von der Witterung und der Fahrbarkeit der Wege abhängen, sei eine <pb facs="krp-0116_r-0012"/>ehesttunliche Inangriffnahme der Kommissionsarbeiten dringend notwendig, um noch vor Eintritt des strengen Winters die höher gelegenen Gegenden erledigen zu können.</p>
+                  <p>In Anbetracht des Vorgesagten stelle der Vorsitzende den Antrag, der Kabinettsrat wolle beschließen:</p>
+                  <list>
+                     <item n="1"><label>1.)</label> Es ist eine vorbereitende Kommission für die Grenzregelungsarbeiten im Gebiete der im Art. 27 Pkt. 4 genannten Grenzlinie aufzustellen.</item>
+                     <item n="2"><label>2.)</label> Das Staatsamt für Inneres und Unterricht wird ermächtigt, im Einvernehmen mit den sonst in Betracht kommenden Staatsämtern und der Landesregierung für Steiermark (insoweit es sich um Bestellung eines lokalen Vertreters für den kärntnerischen Grenzabschnitt Hühnerkogel-Landesgrenze handelt, auch der Landesregierung für Kärnten) die Zusammensetzung der Kommission sowie die Bezüge der Mitglieder sowie die sonstigen Auslagen der Kommission zu regeln.</item>
+                     <item n="3"><label>3.)</label> Für die gesamten durch die Kommission erwachsenden Auslagen wird der bereits eröffnete Kredit von <pb facs="krp-0116_r-0013"/>600.000 K in Anspruch zu nehmen sein.</item>
+                  </list>
+                  <p>Der Kabinettsrat erhebt die gestellten Anträge zum Beschluss.</p>
+               </div>
+               <div type="top" xml:id="krp-0116_top07">
+                  <head>
+                     <label>
+                        <num n="7">7.</num>
+                        <seg>Vorbereitungen anlässlich des Eintreffens der Reparationssubkommission.</seg>
+                     </label>
+                  </head>
+                  <p>Der Vorsitzende führt aus, dass das bevorstehende Eintreffen mehrerer Mitglieder der Reparationssubkommission in Wien die Erlassung einer Reihe von Durchführungsvorschriften zum Staatsvertrag von St. Germain als besonders dringlich erscheinen lasse.</p>
+                  <p>Als solche Vorschriften, denen besondere Dringlichkeit zukomme, kämen in Betracht:</p>
+                  <list>
+                     <item n="1"><label>1.)</label> Nach Art. 186 des Staatsvertrages von St. Germain habe die österreichische Regierung dem Wiedergutmachungsausschuss alle Auskünfte über Finanzlage und Finanzgeschäfte, Güter, Produktionskraft, Vorräte und laufende Erzeugung von Rohstoffen und gewerblichen Erzeugnissen Österreichs und seiner Staatsangehörigen zu geben; desgleichen habe sie jede Auskunft über militärische Operationen des Krieges 1914–1919, deren Kenntnis vom Ausschuss für nötig erachtet wird, zu liefern. Österreich habe es ferner übernommen, <pb facs="krp-0116_r-0014"/>die Bezüge und Kosten des Ausschusses und des von ihm etwa beschäftigten Personals zu bestreiten. </item>
+                  </list>
+                  <p>Hier werden Verfügungen erforderlich sein, welche etwa in einer vom Staatsamt für Handel und Gewerbe, Industrie und Bauten im Einvernehmen mit den Staatsämtern für Finanzen und für Heer[es]wesen zu erlassenden Vollzugsanweisung zusammengefasst werden könnten, durch welche eine Auskunftspflicht für Private in jenen Belangen geschaffen werden soll, in denen die österreichische Regierung eine solche dem Wiedergutmachungsausschuss gegenüber trifft.</p>
+                  <list>
+                     <item n="1"><label>2.)</label> Nach Art. 191 des Staatsvertrages von St. Germain verpflichtet sich Österreich, jeder einzelnen der verbündeten und assoziierten Mächte alle Akten, Urkunden, Altertümer und Kunstgegenstände, sowie alles wissenschaftliche und bibliographische Material, das aus besetzten Gebieten weggebracht wurde, zurückzustellen, unbekümmert, ob es dem Staat-, Provinz- oder Gemeindeverwaltungen, Spitälern, der Kirche oder anderen öffentlichen oder privaten Institutionen gehört. Nach Art. 192 desselben Staatsvertrages hat Öster<pb facs="krp-0116_r-0015"/>reich alle Gegenstände der im Art. 191 bezeichneten Art zurückzustellen, die nach dem 1. Juni 1914 aus den abgetretenen Gebieten weggebracht worden sind, ausgenommen jedoch die von privaten Eigentümern gekauften Gegenstände. </item>
+                  </list>
+                  <p>Zur innerstaatlichen Durchführung dieser Artikel des Staatsvertrages von St. Germain sei ein Gesetz notwendig. Den Entwurf eines solchen Gesetzes habe das Staatsamt für Justiz im Einvernehmen mit dem mitbeteiligten Staatsamte für Inneres und Unterricht ausgearbeitet. Der Vorsitzende beantrage, der Kabinettsrat wolle die Einbringung des dem Kabinettsrate vorliegenden Entwurfes in der Nationalversammlung beschließen.</p>
+                  <list>
+                     <item n="1"><label>3.)</label> Der Staatsvertrag von St. Germain enthalte im Art. 248 Bestimmungen über die Regelung der Geldverbindlichkeiten, welche zwischen den Angehörigen der beiden im Kriege befindlich gewesenen Mächtegruppen bestehen, der sogenannten „feindlichen Schulden". </item>
+                  </list>
+                  <p>Zum Zwecke der in diesem Artikel geregelten Abwicklung verbiete nach lit. a des Art. 248 jeder der vertragsschließenden Teile alle Zahlungen, Zahlungsannahmen, überhaupt jeden auf <pb facs="krp-0116_r-0016"/>die Regelung der genannten Schulden bezüglichen Verkehr zwischen den Beteiligten, sofern er nicht durch Vermittlung der nach dem Staatsvertrag zu errichtenden Prüfungs- und Ausgleichsämter erfolge. </p>
+                  <p>Es werde daher eine Vollzugsanweisung zu erlassen sein, durch welche alle Zahlungen, Zahlungsannahmen und überhaupt jeder auf die Regelung der gegenständlichen Schulden bezügliche Verkehr, der sich nicht der Vermittlung des Prüfungs- und Ausgleichsamtes bedient, verboten werden. Diese Vollzugsanweisung werde vom Staatsamt für Finanzen als führende Stelle im Einvernehmen mit dem Staatsamt für Justiz zu erlassen sein.</p>
+                  <list>
+                     <item n="1"><label>4.)</label> Nach lit. d des Art. 248 bestimme für die neugebildeten Mächte Polen und Tschechoslowakei der Wiedergutmachungsausschuss die für die Zahlung oder Gutschrift der früher erwähnten „feindlichen Schulden" maßgebende Währung und den dabei anzuwendenden Umrechnungskurs, es sei denn, dass die beteiligten Staaten vorher zu einem die schwebenden Fragen regelnden Einvernehmen gelangt wären. </item>
+                  </list>
+                  <p><pb facs="krp-0116_r-0017"/>Es werde daher ehestens mit den Tschechen und Polen der Abschluss eines solchen Übereinkommens anzustreben sein. Als führende Stelle bei den sich hierauf beziehenden Verhandlungen hätte nebst dem Staatsamt für Äußeres das Staatsamt für Finanzen in Betracht zu kommen, welches hiebei im Einvernehmen mit dem Staatsamt für Handel und Gewerbe, Industrie und Bauten und mit dem Staatsamt für Volksernährung vorzugehen haben werde.</p>
+                  <list>
+                     <item n="1"><label>5.)</label> Was die Erlassung von Enteignungsvorschriften anbelange, so dürfte es vorteilhaft und angängig sein, mit derartigen Maßnahmen möglichst lange zuzuwarten und in dieser Richtung nichts zu veranlassen, bevor wir nicht dazu gedrängt werden.</item>
+                  </list>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Reisch</hi> bemerkt, die im § 2 des vorliegenden Gesetzentwurfes zur Durchführung der Art. 191 und 192 des Staatsvertrages von St. Germain vorgesehene Bestimmung, dass die in Betracht kommenden Gegenstände vom Staatsamt für Inneres und Unterricht oder von einer von ihm hiezu ermächtigten Stelle als verfallen zu erklären seien, werde die Schaffung eines großen administrativen Apparates <pb facs="krp-0116_r-0018"/>erforderlich machen. Im Interesse der Kostenersparnis dürfte es sich daher empfehlen, den Verfall ex lege und nicht aufgrund eines Verwaltungsaktes auszusprechen. Er schlage vor, der betreffenden Bestimmung folgende Fassung zu geben:</p>
+                  <p>„Die im § 1 bezeichneten Gegenstände sind zu Gunsten des Staates verfallen, ausgenommen diejenigen, welche nach dem 1. Juni 1914 aus den abgetretenen Gebieten weggebracht, jedoch von privaten Eigentümern gekauft worden sind".</p>
+                  <p>Der Kabinettsrat nimmt die Ausführungen des Staatskanzlers zustimmend zur Kenntnis und ermächtigt ihn zur Einbringung des erwähnten Gesetzentwurfes unter Berücksichtigung der vom Staatssekretär für Finanzen beantragten Abänderung.</p>
+               </div>
+               <div type="top" xml:id="krp-0116_top08">
+                  <head>
+                     <label>
+                        <num n="8">8.</num>
+                        <seg>Gesetzentwurf über die Konsulargebühren.</seg>
+                     </label>
+                  </head>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> erbittet und erhält die Ermächtigung des Kabinettsrates, den Entwurf eines Gesetzes über die Konsulargebühren in der Nationalversammlung einbringen zu dürfen.</p>
+                  <p><pb facs="krp-0116_r-0019"/></p>
+               </div>
+               <div type="top" xml:id="krp-0116_top09">
+                  <head>
+                     <label>
+                        <num n="9">9.</num>
+                        <seg>Übernahme des Offizierswaiseninstitutes in Hirtenberg durch das Staatsamt für soziale Verwaltung.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Hanusch</hi> weist darauf hin, dass mit der Unterzeichnung des Friedensvertrages das in Hirtenberg befindliche Militärwaiseninstitut, das widmungsgemäß für Waisen nach Berufsmilitärgagisten bestimmt war und das in Fragen der Erziehung und des Unterrichtes dem Unterrichtsministerium und bezüglich der Internatsangelegenheiten dem früheren Kriegsministerium unterstand, als eine auf deutschösterreichischen Gebiete gelegene ehemalige Militäranstalt dem deutschösterreichischen Staate zufalle. Dadurch sei die Frage des weiteren Schicksals dieser Anstalt aktuell geworden.</p>
+                  <p>Nach eingehender Erörterung der Sachlage beantragt der sprechende Staatssekretär, der Kabinettsrat wolle beschließen, dass das Offizierswaisenhaus in Hirtenberg mit 1. Jänner 1920 als Staatswaisenhaus in die Verwaltung des Staatsamtes für soziale Verwaltung übergehe, dem die zur Weiterführung der Anstalt notwendigen Kredite zu überweisen wären.</p>
+                  <p>Sektionschef Dr. <hi rend="#letterspaced">Grimm</hi> bemerkt, dass die beantragte Maßnahme insoferne <pb facs="krp-0116_r-0020"/>präjudizierlich für die ganze künftige Gebarung sei, als die Waisenfürsorge für den Staat eine neue Aufgabe bilde, die er unter den gegenwärtigen finanziellen Verhältnissen nicht übernehmen könne. Mindestens müsste die endgiltige Entscheidung hierüber der Nationalversammlung überlassen bleiben.</p>
+                  <p>Die Staatssekretäre <hi rend="#letterspaced">Stöckler</hi> und Dr. <hi rend="#letterspaced">Mayr</hi> schließen sich dieser Auffassung an, während Unterstaatssekretär <hi rend="#letterspaced">Glöckel</hi> darauf hinweist, dass die sich jetzt darbietende günstige Gelegenheit, ein fertiges Gebäude zu übernehmen, nicht versäumt werden dürfe.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Deutsch</hi> stellt folgenden Vermittlungsantrag:</p>
+                  <p>Das Offizierswaisenhaus in Hirtenberg hat mit 1. Jänner 1920 vorläufig als Staatswaisenhaus in die Verwaltung des Staatsamtes für soziale Verwaltung überzugehen, dem die zur sparsamsten Weiterführung der Anstalt notwendigen Kredite zu überweisen sind. Ob und inwieweit die Anstalt ausschließlich für Militärwaisen bestimmt oder überhaupt anderen Zwecken zugeführt wird, wird einer künftigen Entscheidung vorbehalten, worüber das Staatsamt für soziale <pb facs="krp-0116_r-0021"/>Verwaltung mit den Staatsämtern für Heer[es]wesen und für Finanzen das Einvernehmen zu pflegen hat.</p>
+                  <p>Der Kabinettsrat beschließt im Sinne dieses Antrages.</p>
+               </div>
+               <div type="top" xml:id="krp-0116_top10">
+                  <head>
+                     <label>
+                        <num n="10">10.</num>
+                        <seg>Vollzugsanweisung des Staatsamtes für soziale Verwaltung über die Erhaltung des Arbeiterstandes in gewerblichen Betrieben.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Hanusch erbittet und erhält vom Kabinettsrate die Ermächtigung zur Erlassung einer Vollzugsanweisung, wonach die Geltungsdauer der Bestimmung des § 2 der Vollzugsanweisung vom 14. Mai 1919, StGBl. Nr. 268, über die Anstellung von Arbeitslosen in gewerblichen Betrieben bis zum 31. Dezember 1919 erstreckt wird.</p>
+               </div>
+               <div type="top" xml:id="krp-0116_top11">
+                  <head>
+                     <label>
+                        <num n="11">11.</num>
+                        <seg>Vollzugsanweisung des Staatsamtes für soziale Verwaltung über die Unterstützung der arbeitslosen Arbeiter und Angestellten.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Hanusch erbittet vom Kabinettsrate die Ermächtigung zur Erlassung einer Vollzugsanweisung, wonach die Bestimmungen der Vollzugsanweisungen über die Unterstützung der arbeitslosen Arbeiter und Angestellten vom 14. Februar 1919, StGBl. Nr. 120 und 121, vom 24. Juni 1919, StGBl. Nr. 327 und vom 20. August 1919, StGBl. Nr. 428, in ihrer Geltungsdauer <pb facs="krp-0116_r-0022"/>bis einschließlich 31. Dezember 1919 erstreckt werden.</p>
+                  <p>Nach einer kurzen Debatte, in welcher insbesondere der <hi rend="#letterspaced">Staatssekretär der Finanzen</hi> auf die Notwendigkeit eines beschleunigteren Abbaues der Arbeitslosenunterstützung hinwies, erteilt der Kabinettsrat die erbetene Ermächtigung.</p>
+               </div>
+               <div type="top" xml:id="krp-0116_top12">
+                  <head>
+                     <label>
+                        <num n="12">12.</num>
+                        <seg>Vollzugsanweisung der Staatsregierung über die Trennung der Verwaltung des Telegrafen-, Fernsprech- und Rohrpostwesens von der Postverwaltung.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Paul</hi> führt aus, dass der in der Sitzung des Kabinettsrates vom 22. August d. J. beschlossene Entwurf einer Vollzugsanweisung der Staatsregierung über die Trennung der Verwaltung des Telegrafen-, Fernsprech- und Rohrpostwesens von der Postverwaltung im Sinne des damals gefassten Beschlusses dem Hauptausschusse zur Zustimmung vorgelegt worden sei. Nun habe der Hauptausschuss diesen Entwurf zwar in Verhandlung genommen, sich jedoch nach längerer Beratung für unzuständig erklärt. Es sei daher der Regierung nunmehr anheimgegeben, die beabsichtigte Trennung nach freiem Ermessen im eigenen Wirkungskreise durchzuführen. Der Entwurf sei einer neuerlichen Überprüfung unterzo<pb facs="krp-0116_r-0023"/>gen und dahin abgeändert worden, dass an Stelle der ursprünglich in Aussicht genommenen zwei neuen Generaldirektionen, und zwar der „Generalpostdirektion" und der „Generaltelegrafendirektion", nur zwei neue Sektionen im Staatsamte für Verkehrswesen für das gesamte Postwesen einerseits und das gesamte Telegrafen-, Fernsprech- und Rohrpostwesen andererseits errichtet werden sollen. Der neue Entwurf, welcher außerdem noch einige geringfügige, das Meritum aber nicht berührende Änderungen enthalte, sei auch den interessierten Personalvertretungskörpern vorgelegt worden, welche dagegen keine Einwendung erhoben haben. Der sprechende Staatssekretär stelle den Antrag, diesen Entwurf zu genehmigen.</p>
+                  <p>Der Kabinettsrat erteilt die erbetene Genehmigung.</p>
+               </div>
+               <div type="top" xml:id="krp-0116_top13">
+                  <head>
+                     <label>
+                        <num n="13">13.</num>
+                        <seg>Erklärung der Schleppbahn Untermühl – Partenstein als begünstigter Bau.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Ing. <hi rend="#letterspaced">Zerdik</hi> erbittet und erhält die Ermächtigung des Kabinettsrates, den Bau der schmalspurigen Schleppbahn von der Landungsstelle der Donau-Dampfschiffahrts-Gesellschaft in Untermühl zu dem im Bau befindlichen Kraftwerke Partenstein im <pb facs="krp-0116_r-0024"/>Sinne der Kaiserlichen Verordnung vom 16. Oktober 1914, RGBl. Nr. 284, als begünstigten Bau erklären zu dürfen.</p>
+               </div>
+               <div type="top" xml:id="krp-0116_top14">
+                  <head>
+                     <label>
+                        <num n="14">14.</num>
+                        <seg>Fortführung der Rheinregulierung von der Illmündung bis zum Bodensee.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Ing. Zerdik führt aus, dass die Versumpfungen der beiderseitigen Ufergebiete des Rheinstromes von der Illmündung abwärts bis zum Bodensee sowie die steten Überschwemmungen des Rheintales, welche insbesondere durch die Hochwässer der Jahre 1888 und 1890 einen katastrophalen Umfang erreichten, dazu geführt haben, dass die bestandene österreichisch-ungarische Monarchie mit der Schweiz im Jahre 1892 einen Vertrag abschloss, der zum Zwecke der Beseitigung der erwähnten Übelstände die Durchführung einer Reihe von Regulierungsmaßnahmen umfasste, von denen im Besonderen die Anlage der Durchstiche bei Fußach und Diepoldsau zu erwähnen seien.</p>
+                  <p>Die Gesamtkosten dieser Bauherstellungen seien nach dem Staatsvertrage vom 30. Dezember 1892, RGBl. Nr. 141 ex 1893 mit 16.560.000 Franken festgestellt worden, wovon Österreich und die Schweiz je die Hälfte zu tragen haben.</p>
+                  <p><pb facs="krp-0116_r-0025"/>Aufgrund dieses Vertrages sei zunächst der Fußacher Durchstich und die anschließenden Regulierungsarbeiten ausgeführt worden, welchen Bauten dann die Anlage des Diepoldsauer Durchstiches folgen sollte. </p>
+                  <p>Im Jahre 1909 habe nun die Schweiz den Vorschlag gemacht, an Stelle des Diepoldsauer Durchstiches die alte Serpentine des Rheines zu normalisieren, da nach Anschauung der schweizerischen Ingenieure durch diese Maßnahme ausreichende Verbesserungen in den Überflutungsverhältnissen erzielt werden könnten. Angesichts des Umstandes, dass die hierüber von der österreichischen Regierung eingesetzte Expertise jedoch zu dem Beschlusse gelangte, dass österreichischerseits an der Ausführung des Diepoldsauer Durchstiches unverändert festgehalten werden müsse, und die Schweiz diesem Standpunkte nach langwierigen Verhandlungen zustimmte, sei eine Vereinbarung auf der Grundlage zustandegekommen, dass sich beide Staaten verpflichteten, zur Bedeckung der noch erübrigenden Baukosten durch neun Jahre jährlich je 690.000 Franken sowie einen schließlichen Restbeitrag von je 283.000 Franken zu leisten, <pb facs="krp-0116_r-0026"/>wonach somit die bisher vertraglich festgestellten Kosten der Internationalen Rheinregulierung zusammen insgesamt 29.546.000 Franken betragen.</p>
+                  <p>Auf Rechnung dieser vertraglichen Zusicherungen erübrigen für die beiden Konkurrenzfaktoren, außer eines dermalen fälligen und von Österreich bis nun noch nicht abgestatteten Beitrages pro 1919 von 200.000 Franken, ab 1920 noch restliche Beiträge von zusammen je 1.463.000 Franken. Des Weiteren sei aber noch zu berücksichtigen, dass infolge der ungünstigen Geldverhältnisse und der steten Steigerung der Arbeitslöhne und Materialpreise mit dem von den beiden Regierungen im Jahre 1908/09 bewilligten Kredite von 12.986.000 Franken das Auslangen nicht mehr gefunden werden könne und aufgrund eines demnächst zur Verhandlung gelangenden Ergänzungsprojektes mit Mehransprüchen von insgesamt rund 4.000.000 Franken zu rechnen sei, sodass für jeden der beiden Vertragsstaaten ein restliches Erfordernis von 1.463.000 Franken + 2.000.000 Franken, zusammen also von je rund 3,5 Millionen Franken resultiere.</p>
+                  <p><pb facs="krp-0116_r-0027"/>Wenngleich nicht übersehen werden könne, dass die Abstattung dieser Beitragsquote, von der nach dem Bauvoranschlage 1919/20 im Jahre 1920 ein Teilbetrag von 690.000 Franken und der Rest in den folgenden Jahren aufzubringen wäre, die österreichische Republik infolge der ungünstigen Kursverhältnisse besonders schwer belaste, so sprechen doch eine Reihe von gewichtigen Gründen dafür, dass Österreich in die Verbindlichkeiten des bisher in Geltung gestandenen Vertrages einzutreten hätte, ganz abgesehen von der angeblich strittigen Frage, ob Österreich hiezu eo ipso verpflichtet sei oder nicht.</p>
+                  <p>In erster Linie sei dabei der Umstand zu berücksichtigen, dass für den Fall als Österreich die Verpflichtungen des Vertrages nicht übernehmen würde, das Bauunternehmen in seiner Schlussphase abgebrochen und damit der bisher unter Anwendung großer Opfer angestrebte Gesamterfolg hintangehalten würde. Hieraus würde für das Land Vorarlberg, in dessen vorwiegendem Interesse die Ausführung des Diepoldsauer Durchstiches und der damit zusammenhängenden restlichen Regulierungs<pb facs="krp-0116_r-0028"/>maßnahmen gelegen sei, die Gefahr weiterer Hochwasseraustritte bestehen bleiben und die Entwässerung des Rheintales beeinträchtigt sein.</p>
+                  <p>Dieser Umstand allein müsse schon dazu führen, das Unternehmen im Einvernehmen mit der Schweiz zur Vollendung zu bringen, wenn andernfalls den bekannten Absonderungsbestrebungen des Landes Vorarlberg nicht neue Nahrung zugeführt werden soll. Neben diesen technischen und innerpolitischen Erwägungen sei aber auch darauf Bedacht zu nehmen, dass eine Einstellung der Bautätigkeit am Diepoldsauer Durchstiche aller Voraussicht nach eine Trübung des bisher mit der Schweiz bestandenen freundnachbarlichen Verhältnisses hervorrufen würde, zumal da die Schweiz in den Kriegsjahren bei allen aus der Fortführung der Rheinregulierung aufgetretenen Fragen das größte Entgegenkommen gezeigt habe.</p>
+                  <p>Diese Verhältnisse sprechen daher dafür, dass seitens Österreichs unbedingt getrachtet werden müsse, den bisher hinsichtlich der Rheinregulierung bestandenen Vertragsverpflichtungen gegenüber der Schweiz nachzukommen.</p>
+                  <p><pb facs="krp-0116_r-0029"/>Was die eventuell mögliche Lösung der bestehenden Schwierigkeiten in der Form anbelange, dass der Vertrag von Jahre 1892 zwar als durch den Zerfall der österreichisch-ungarischen Monarchie gelöst betrachtet werde, Österreich sich aber bereit erkläre, einen neuen Vertrag abzuschließen, so könnte dieser Weg wohl in Erwägung gezogen werden. Bei dem vorgeschrittenen Stande des Bauunternehmens und der Notwendigkeit, behufs Eröffnung des Diepoldsauer Durchstiches einen <hi rend="#u">forcierteren</hi> Baubetrieb einzuleiten, dürften aber hiedurch nennenswerte finanzielle Erleichterungen für die Abstattung der deutschösterreichischen Beiträge gegenüber den nach dem bisherigen Vertrag entfallenden Jahresquoten von je 690.000 Franken voraussichtlich umso weniger zu erzielen sein, als es durchaus nicht ausgeschlossen erscheine, dass die Schweiz aus Anlass dieser Vertragserneuerung unter Hinweis auf die vorwiegend im Interesse Vorarlbergs gelegenen restlichen Bauarbeiten eine gegenüber dem bisherigen Vertragsverhältnisse weitergehende Inanspruchnahme hierländiger Mittel beanspruchen könnte.</p>
+                  <p><pb facs="krp-0116_r-0030"/>Viel mehr Aussicht bezüglich Beseitigung der für Deutschösterreich bestehenden Schwierigkeiten böte die weitere Verfolgung der bei der diesjährigen Überprüfung der Jahresrechnung der Internationalen Rheinregulierung zur Diskussion gestellten Vorschläge, welche auf eine Aufbringung der hierländigen restlichen Beitragsquoten im Wege der Aufnahme eines Darlehens bzw. durch Begebung einer Anleihe in der Schweiz abzielen.</p>
+                  <p>Der sprechende Staatssekretär stelle den Antrag, der Kabinettsrat wolle beschließen, dass Österreich mit Rücksicht auf die dargelegten Gründe in die Verpflichtungen des zwischen der Schweiz und der bestandenen österreichisch-ungarischen Monarchie abgeschlossenen Vertrages vom 30. Dezember 1892, RGBl. Nr. 141 ex 1893 einzutreten habe.</p>
+                  <p>Nach einer längeren Debatte beschließt der Kabinettsrat, die beteiligten Staatsämter anzuweisen, vorerst Verhandlungen mit der Schweizer Regierung wegen Aufnahme eines Darlehens zur Bestreitung der Bausumme einzuleiten und hiebei die Einbeziehung des schuldigen Betrages von 200.000 Franken in dieses Darlehen anzustreben.</p>
+                  <p><pb facs="krp-0116_r-0031"/></p>
+               </div>
+               <div type="top" xml:id="krp-0116_top15">
+                  <head>
+                     <label>
+                        <num n="15">15.</num>
+                        <seg>Gesetzesbeschluss des Oberösterreichischen Landtages über die Einhebung einer Wertzuwachsabgabe für Landes- und Gemeindezwecke.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Reisch</hi> erbittet und erhält die Ermächtigung des Kabinettsrates, dass von der Erhebung einer Vorstellung gegen den Gesetzesbeschluss des Oberösterreichischen Landtages vom 25. September 1919 über die Einhebung einer Wertzuwachsabgabe für Landes- und Gemeindezwecke abgesehen werde.</p>
+               </div>
+               <div type="top" xml:id="krp-0116_top16">
+                  <head>
+                     <label>
+                        <num n="16">16.</num>
+                        <seg>Verkauf der Süddeutschen Donau-Dampf-Schifffahrts-Gesellschaft.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. Reisch berichtet über das Ergebnis der in Angelegenheit des Verkaufes der Aktien der Süddeutschen Donau-Dampf-Schifffahrts-Gesellschaft abgehaltenen Kabinettskonferenz. Hienach sei es als wünschenswert bezeichnet worden, diese Aktien nach England zu verkaufen. Nach den Friedensbestimmungen könnte uns der größte Teil des Schiffsparks entzogen werden und auch vor der Inanspruchnahme der Aktien wären wir nicht gesichert. Während diese in unserer Hand nur einen sehr geringen Wert haben, hätten sie in der Hand der Engländer einen ungleich größeren. Wenn wir die Aktien an englische Käufer ab<pb facs="krp-0116_r-0032"/>geben, können wir es diesen überlassen, sich mit einem eventuellen Einspruch der Reparationskommission, der übrigens nicht begründet wäre, auseinander zu setzen.</p>
+                  <p>Der sprechende Staatssekretär erbittet sohin die Ermächtigung, die erforderlichen Verhandlungen mit Mr. Butler einleiten zu dürfen.</p>
+                  <p>Der Kabinettsrat erteilt die erbetene Ermächtigung.</p>
+               </div>
+               <div type="top" xml:id="krp-0116_top17">
+                  <head>
+                     <label>
+                        <num n="17">17.</num>
+                        <seg>Beteiligung an der Arbeitskonferenz in Washington.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Hanusch</hi> teilt unter Hinweis auf den Beschluss des Kabinettsrates vom 3. Oktober d. J., betreffend die Entsendung von Delegierten zu der Arbeitskonferenz nach Washington mit, dass Deutschland zwar beschlossen habe, Vertreter dorthin zu entsenden, gleichwohl jedoch nach Anschauung des Redners von der Entsendung deutschösterreichischer Delegierter mit Rücksicht auf die außerordentlich hohen Kosten abzusehen wäre.</p>
+                  <p>Der Kabinettsrat pflichtet dieser Auffassung bei.</p>
+                  <p/>
+               </div>
+            </div>
+            <div type="anhaenge">
+               <p><pb facs="krp-0116_a01-0001"/>Streng vertraulicher Anhang zum Kabinettsprotokoll Nr. 116 vom 21. Oktober 1919.</p>
+               <div n="1">
+                  <head>Beteiligung des Staates am Gesellschaftskapital der [Oesterreichische-]Alpine Montangesellschaft.</head>
+                  <div type="a01_protokoll">
+                     <p>Der Präsident der Staatskommission für Sozialisierung Dr. <hi rend="#letterspaced">Ellenbogen</hi> teilt mit, dass die Alpine Montangesellschaft in ihrer Generalversammlung vom 29. September d. J. einen Beschluss auf Erhöhung ihres Aktienkapitals gefasst habe. Aufgrund des § 37 des Gesetzes vom 29. Juli 1919, StGBl. Nr. 389, über die gemeinwirtschaftlichen Unternehmungen stünde dem Staate das Recht zu, sich im vollen Umfange der Erhöhung am Gesellschaftskapitale zu beteiligen. Angesichts des hohen Übernahmskurses der Aktien sowie mit Rücksicht darauf, dass durch den Aktien<pb facs="krp-0116_a01-0002"/>erwerb dem Staate ein relativ geringer Einfluss auf das Unternehmen gesichert wäre, stelle er den Antrag, von dem erwähnten Rechte keinen Gebrauch zu machen. Der Kabinettsrat genehmigt diesen Antrag.</p>
+                  </div>
+               </div>
+               <div n="2">
+                  <head>Ergänzung und Änderung des Gesetzes vom 3. April 1919, StGBl. Nr. 209, betreffend die Landesverweisung und die Übernahme des Vermögens des Hauses Habsburg-Lothringen.</head>
+                  <div type="a02_protokoll">
+                     <p>Rechtsanwalt Dr. <hi rend="#letterspaced">Harpner</hi> erörtert an der Hand eines von ihm ausgearbeiteten Gesetzentwurfes die Notwendigkeit einer Abänderung und Ergänzung des Habsburgergesetzes.</p>
+                     <p>Eine lebhafte Debatte entwickelt sich über die Bestimmung des Gesetzentwurfes, wonach die Domäne Eisenerz-Radmer in das freie unbeschränkte Eigentum der Republik Österreich gegen eine den derzeitigen Eigentümern auszuzahlende Entschädigung im Betrage von rund 2.800.000 K überzugehen hätte.</p>
+                     <p>Staatssekretär Dr. <hi rend="#letterspaced">Loewenfeld-Russ</hi> gibt der Anschauung Ausdruck, dass der rücksichtlich dieser Domäne vorgeschlagene Vorgang einer Enteignung der Hohenberg'schen Deszendenz gleich käme; in diesem Falle wäre die Entschädigung nicht nach dem seinerzeitigen Buchwerte, sondern nach dem heutigen Werte der Realität zu bemessen.</p>
+                     <p><pb facs="krp-0116_a01-0003"/>Demgegenüber verweist der <hi rend="#letterspaced">Vorsitzende</hi> darauf, dass das Kronfideikommiss durch den dem Willen des Testators widerstreitenden Vergleich schwer geschädigt worden sei. Durch die vorgeschlagene Maßnahme, für welche übrigens auch sehr beachtenswerte Nützlichkeitsmomente sprechen, werde nur das materielle Recht im Wege des Gesetzes wieder hergestellt.</p>
+                     <p>Unterstaatssekretär Dr. <hi rend="#letterspaced">Eisler</hi> spricht sich für die Einbringung der Gesetzesvorlage aus, deren Meritum einem bereits in einem früheren Zeitpunkte von allen Parteien der Steiermärkischen Landesversammlung geäußerten Wunsche Rechnung trage.</p>
+                     <p>Unterstaatssekretär <hi rend="#letterspaced">Miklas</hi> würdigt die vorhandenen Nützlichkeitsgründe, hegt jedoch schwerwiegende Bedenken in rechtlicher Beziehung. Auch sei nicht zu übersehen, dass sich unter Umständen Verwicklungen mit der tschechoslowakischen Regierung ergeben könnten, falls die Hohenberg'sche Deszendenz sich zur tschechoslowakischen Staatsbürgerschaft bekennen sollte.</p>
+                     <p>Staatssekretär Dr. <hi rend="#letterspaced">Ramek</hi> bemerkt, dass er sich – soweit er die Rechtslage nach oberflächlichem Studium zu überblicken vermöge – vom juristischen Standpunkte mit den Ausführungen <pb facs="krp-0116_a01-0004"/>Dr. Harpners nicht einverstanden erklären könne. Es möge richtig sein, dass der Wille des Testators verletzt worden sei. Die beteiligten Rechtsnachfolger hätten sich jedoch unter Zustimmung des kompetenten Gerichtes und des Posteritätskurators über die Frage geeinigt. Es liege daher eine rechtskräftige Entscheidung vor, die alle binde. Rechtlich sei heute die Hohenberg'sche Deszendenz unanfechtbare Eigentümerin des Gutes.</p>
+                     <p>Der <hi rend="#letterspaced">Vorsitzende</hi> führt hiezu aus, es unterliege allerdings keinem Zweifel, dass eine rechtskräftige Entscheidung zustande gekommen sei. Wenn jedoch das materielle Recht verletzt wurde, so könne der Gesetzgeber das Recht wieder herstellen. Dazu komme noch, dass ja nicht eine Enteignung ohne Entschädigung vorgesehen sei, den Eigentümern vielmehr ein Betrag von rund 2.800.000 K, d. i. der Buchwert des Gutes am 21. November 1916, dem Tage des Ablebens des Kaisers Franz Joseph, ersetzt werden soll. Dadurch werde der Deszendenz Hohenberg durchaus kein Unrecht zugefügt.</p>
+                     <p>Staatssekretär Dr. <hi rend="#letterspaced">Ramek</hi> hält es selbst bei Anerkennung der vom Vorsitzenden entwickelten Auffassung für bedenklich, im Gesetz den Entschädi<pb facs="krp-0116_a01-0005"/>gungsbetrag ziffermäßig festzusetzen. Er würde daher beantragen, dass der Betrag selbst aus dem Gesetzestext eliminiert und lediglich bestimmt werde, dass als Entschädigung jener Betrag zu bezahlen ist, welcher dem Buchwerte der Domäne Eisenerz-Radmer nach dem Stande von 21. November 1916 entspricht. Auch glaube er, dass es billig wäre, den derzeitigen Inhabern der Domäne für die von ihnen gemachten Aufwendungen einen angemessenen Ersatz zu leisten.</p>
+                     <p>Der Kabinettsrat pflichtet diesem Antrage bei und ermächtigt den Vorsitzenden, den Gesetzentwurf in der diesem Protokolle samt Motivenbericht beigeschlossenen Fassung in der Nationalversammlung einzubringen.</p>
+                  </div>
+               </div>
+               <div n="3">
+                  <head>Verfügungen über die Waffenbestände aufgrund des Staatsvertrages von St. Germain.</head>
+                  <div type="a03_protokoll">
+                     <p>Staatssekretär Dr. <hi rend="#letterspaced">Deutsch</hi> führt aus, dass er aufgrund des Staatsvertrages von St. Germain die Einholung sämtlicher Bestände an Waffen veranlasst habe, wobei festgestellt worden sei:</p>
+                     <list>
+                        <item n="1"><label>I</label> <hi rend="#u">Geschütze:</hi></item>
+                     </list>
+                     <p>Es sind gegenüber den im Staatsvertrage von St. Germain für die Wehrmacht zugebilligten Geschützen und nach Reservierung von 720 für die <pb facs="krp-0116_a01-0006"/>Brückenköpfe notwendigen Geschützen überzählig vorhanden:</p>
+                     <p>1–38 cm Haubitzrohr und eine Lafette, </p>
+                     <p>15–30,5 cm Mörser-Rohre, sieben Lafetten und sechs Bettungen. </p>
+                     <p>Diese Geschütze können:</p>
+                     <list>
+                        <item n="1"><label>1.)</label> der italienischen Waffenstillstandskommission laut Waffenstillstandsvertrages übergeben werden,</item>
+                        <item n="2"><label>2.)</label> der Hauptanstalt für Sachdemobilisierung zum Verkauf zur Verfügung gestellt werden,</item>
+                        <item n="3"><label>3.)</label> für die Brückenköpfe Tulln, Krems, Wien reserviert werden. Hiefür wäre eine analoge Zahl anderer Geschütze (Kleinkaliber) auszuscheiden.</item>
+                     </list>
+                     <p>Ad 1). 	Zur Übergabe wären wir aufgrund des Waffenstillstandsvertrages wohl verpflichtet, welcher vorschreibt, dass das genannte schwere Artilleriematerial an Italien abzugeben ist. Da jedoch die Italiener von diesen Geschützen keine Kenntnis besitzen, wäre es immerhin möglich, sie für die Brückenköpfe zu reservieren, für welche sie dem Kaliber nach zulässig sind, da im Art. 131 des Staatsvertrages von St. Germain auch Geschütze größeren Kalibers als 105 mm zugestanden sind.</p>
+                     <p>Ad 2). Die Übergabe wäre für den Staat ein finanzieller Gewinn, birgt jedoch in sich die zweifellose <pb facs="krp-0116_a01-0007"/>Gefahr, dass bei einem Verkaufe das Vorhandensein dieser Geschütze entdeckt und sie aufgrund der Waffenstillstandsbedingungen rückverlangt werden.</p>
+                     <p>Ad 3). Die Rückbehaltung für die Brückenköpfe schließt wohl nicht die Gefahr aus, dass diese Geschütze, falls die Italiener von ihrem Vorhandensein Kenntnis erlangen, ebenfalls auf Grund der Waffenstillstandsbedingungen reklamiert werden. Es ergibt sich aber die Möglichkeit, diese Geschütze in späterer Zeit herauszuholen und in die Armierung einzustellen.</p>
+                     <list>
+                        <item n="1"><label>II.</label> <hi rend="#u">Minenwerfer:</hi></item>
+                     </list>
+                     <p>Insgesamt sind 41 Stück 9 cm Minenwerfer überzählig. Dieser Bestand ist derartig gering, zudem auch für die Brückenköpfe notwendig und bei einem Verkauf finanziell so belanglos, dass die Rückbehaltung beantragt wird. Dieser Vorgang widerstreitet allerdings den Waffenstillstandsbedingungen von Villa Giusti in gleicher Weise wie die Rückbehaltung der Geschütze, doch ist nicht anzunehmen, dass die Minenwerfer von den Italienern entdeckt werden.</p>
+                     <list>
+                        <item n="1"><label>III.</label> <hi rend="#u">Gewehre:</hi></item>
+                     </list>
+                     <p>Die Gesamtvorräte und die bisherigen Abgaben an die Sachdemobilisie<pb facs="krp-0116_a01-0008"/>rung sind der Beilage zu entnehmen.</p>
+                     <p>Insgesamt sind 167.324 Gewehre vorhanden, hievon wurden 98.174 an Volkswehren, Finanzwache, Gendarmerie, Polizei und die Bevölkerung ausgegeben, 69.150 Gewehre erliegen in Depots. Nach dem Staatsvertrag von St. Germain sind uns 34.500 Gewehre gestattet. Wird in Reservebestandteilen zu jedem Gewehr ein zweites dazugelegt, so sind hiefür insgesamt 69.000 Gewehre notwendig. Es wären somit 98.324 Gewehre überzählig, also etwa so viel, als bei der Volkswehr und den sonstigen Institutionen ausgegeben sind.</p>
+                     <p>Will man den Bestand für die neue Wehrmacht in Form eines abgesonderten, genau visitierten und hergerichteten Bestandes hinterlegen, so können somit – da ja eine Entwaffnung der Volkswehr und sonstigen Institutionen in der vom Staatsvertrag verlangten Zeit unmöglich ist – trotz der vorhandenen Überzahl Gewehre an die Sachdemobilisierung nicht mehr abgegeben werden. Tritt dann eine Entwaffnung der früher erwähnten Formationen ein, dann ist die Gefahr vorhanden, dass die rückverlangten Gewehre der Entente übergeben werden müssen. Sollen aber nur die 34.500, für die erste Linie bestimmten Gewehre <pb facs="krp-0116_a01-0009"/>in Form eines abgesonderten und genau visitierten Depots hinterlegt werden, was als unerlässlich erachtet wird, um in der Aufstellung der neuen Wehrmacht vom Tempo des Abbaues der alten Wehrmacht unabhängig zu sein, und sollen die als Reservebestandteile gedachten weiteren 34.500 Gewehre erst später aus den jetzt bei den Formationen befindlichen Gewehren gedeckt werden, dann könnten aus Depotbeständen rund 34.000 Gewehre der Sachdemobilisierung übergeben werden. Diese Ziffer wird allerdings eine Variation dadurch erleiden müssen, dass wir vorhandene sehr gute Gewehre Modell 95 nicht abtreten können, weil unter den jetzt ausgegebenen Waffen sich nur ein Teil solcher Modelle vorfindet, der überwiegende Teil aber älteren Musters ist.</p>
+                     <p>Die Entscheidung muss hier in der Richtung getroffen werden, ob</p>
+                     <list>
+                        <item n="1">der ganze Bestand für die zukünftige Wehrmacht – also 69.000 Gewehre – oder </item>
+                        <item n="2">nur der halbe Bestand – 34.500 Gewehre ohne dazugehörige Reservegewehre – in den Depots sichergestellt werden soll. </item>
+                        <item n="3"><label>IV.</label> <hi rend="#u">Maschinengewehre:</hi></item>
+                     </list>
+                     <p>Die Gesamtvorräte und die bishe<pb facs="krp-0116_a01-0010"/>rigen Abgaben an die Sachdemobilisierung sind der Beilage zu entnehmen. Insgesamt sind 2.719 Maschinengewehre vorhanden, hievon 1.072 an Volkswehren, Finanzwache, Gendarmerie, Polizei etc. ausgegeben, 1.647 Maschinengewehre erliegen im Depot. Somit sind gegenüber dem im Staatsvertrage von St. Germain für die Wehrmacht zugebilligten 450 Maschinengewehren und nach Reservierung von 950 für die Brückenköpfe notwendigen Maschinengewehren noch 1.319 Maschinengewehre überzählig vorhanden.</p>
+                     <p>Will man die für die deutschösterreichische Wehrmacht nötigen und die für die Brückenköpfe erforderlichen Maschinengewehre in Form eines abgesonderten, genau visitierten und in tadellosem Zustande befindlichen Vorrates hinterlegen, so können, da eine Abfuhr der bei der Volkswehr und sonstigen Institutionen befindlichen Maschinengewehre in der im Staatsvertrag festgesetzten Zeit unmöglich ist, nur 247 Maschinengewehre an die Sachdemobilisierung abgegeben werden.</p>
+                     <p>Will man den Bedarf für die Brückenköpfe aus den seinerzeit von der Volkswehr und sonstigen Institutionen rückfließenden Maschinengewehre decken, so könnte die ganze Anzahl der überzähligen Maschinengewehre abgeführt <pb facs="krp-0116_a01-0011"/>werden. Da es jedoch fraglich ist, ob die seinerzeit von der Volkswehr etc. zurückkommenden Maschinengewehre im brauchbaren Zustand sein werden, oder in solchem Zustand versetzt werden können, so besteht die Gefahr, dass man beim Vorgange nach der zweiterwähnten Variante den Bedarf für die Brückenköpfe nicht vollständig decken kann.</p>
+                     <p>Es wäre daher zweckmäßiger, nach der zuerst erwähnten Variante vorzugehen und nur die 247 Maschinengewehre abzuliefern, die als überzählig erscheinen, wenn man den Bedarf für die Wehrmacht und für die Brückenköpfe aus deponierten Vorräten deckt.</p>
+                     <p>Der sprechende Staatssekretär erbittet sich eine Entscheidung des Kabinettsrates hinsichtlich der unter I-IV aufgeworfenen Fragen:</p>
+                     <p>Der Kabinettsrat entscheidet:</p>
+                     <p>ad I: Alle überzähligen Geschütze sind zu verkaufen, eventuell zu zerstören. </p>
+                     <p>ad II: Die Minenwerfer sind nicht abzuliefern. </p>
+                     <p>ad III: Der ganze Bestand für die zukünftige Wehrmacht – also 69.000 Gewehre – ist in den Depots sicherzustellen. </p>
+                     <p>ad IV: Es sind nur 247 Maschinengewehre abzuliefern.</p>
+                     <p/>
+                  </div>
+               </div>
+            </div>
+            <div type="stenogramme">
+               <div n="1">
+                  <head>EINZUFÜGEN</head>
+                  <p>Transkription in Arbeit.</p>
+               </div>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>
