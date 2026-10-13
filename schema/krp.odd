@@ -167,6 +167,33 @@
           </attList>
         </elementSpec>
         
+        <!-- page beginnings -->
+        
+        <elementSpec ident="pb" mode="change">
+          <constraintSpec ident="pb-facs" scheme="schematron" mode="add">
+            <constraint>
+              <sch:rule context="tei:pb">
+                <sch:assert test="starts-with(@facs, concat('krp-', ancestor::tei:TEI/tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:title[@level='a'][@type='main']/@n, '_'))">
+                  In &lt;pb&gt;-Elementen beginnt der Wert der @facs-Attribute mit der Nummer des eigenen Protokolls nach dem Muster "krp-{Protokollnummer}_".
+                </sch:assert>
+                <sch:assert test="not(@facs = preceding::tei:pb/@facs)">
+                  Jeder Wert des @facs-Attributs ist innerhalb eines Dokuments nur einmal vergeben.
+                </sch:assert>
+              </sch:rule>
+            </constraint>
+          </constraintSpec>
+          <attList>
+            <attDef ident="facs" usage="req" mode="change">
+              <datatype>
+                <dataRef name="token" restriction="krp-[0-9]{4}_(r|s[0-9]{2}|a[0-9]{2})-[0-9]{4}"/>
+              </datatype>
+              <remarks>
+                <p>Im KRP-Schema entsprechen die Werte der @facs-Attribute in &lt;pb&gt; der Scan-ID nach dem Muster "krp-{Protokollnummer}_{r|sNN|aNN}-{Seitenzahl}".</p>
+              </remarks>
+            </attDef>
+          </attList>
+        </elementSpec>
+        
         <!-- highlighting -->
         
         <elementSpec ident="hi" mode="change">
