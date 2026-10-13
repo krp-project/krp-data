@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href='http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:acdh="https://vocabs.acdh.oeaw.ac.at/schema#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xml:lang="de">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="a" type="main" n="0049">Kabinettsprotokoll Nr. 49 vom 8. März 1919</title>
+            <title level="m" type="main" n="01">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <title level="m" type="sub" n="">Renner I (31. Oktober 1918 – 15. März 1919)</title>
+            <meeting>
+               <placeName key="https://d-nb.info/gnd/4066009-6">Wien</placeName>
+               <orgName key="https://d-nb.info/gnd/5162749-8">Kabinettsrat</orgName>
+               <date when-iso="1919-03-08"/>
+            </meeting>
+            <editor>
+               <persName key="https://d-nb.info/gnd/122481836"
+                         role="hasCreator"
+                         xml:id="hwohnout">
+                  <forename>Helmut</forename>
+                  <surname>Wohnout</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</affiliation>
+               <idno type="ORCID">0000-0002-3864-9839</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/120789825"
+                         role="hasCreator"
+                         xml:id="tolechowski">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0003-3291-6876</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/131679384"
+                         role="hasCreator"
+                         xml:id="rlein">
+                  <forename>Richard</forename>
+                  <surname>Lein</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0002-7502-0503</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="aholzer">
+                  <forename>Anna</forename>
+                  <surname>Holzer</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0005-3560-3500</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="dsoelkner">
+                  <forename>Dominik</forename>
+                  <surname>Sölkner</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-9895-7212</idno>
+            </editor>
+            <editor>
+               <persName role="hasContributor" xml:id="ischotzko">
+                  <forename>Ina</forename>
+                  <surname>Schotzko</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-5210-3713</idno>
+            </editor>
+            <funder n="1">
+               <orgName key="https://d-nb.info/gnd/2054142-9" role="hasFunder">Österreichischer Wissenschaftsfonds FWF</orgName>
+               <idno type="project">PAT1495024</idno>
+               <title type="project">Die Protokolle des österreichischen Kabinettsrates 1919–1920</title>
+            </funder>
+            <respStmt>
+               <resp>Projektverantwortung</resp>
+               <orgName key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Projektleitung</resp>
+               <persName key="https://d-nb.info/gnd/120789825" role="hasPrincipalInvestigator">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+                  <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+                  <idno type="ORCID">0000-0003-3291-6876</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Nationaler Forschungspartner</resp>
+               <orgName key="https://d-nb.info/gnd/1123037736" role="hasEnabler">Austrian Centre for Digital Humanities</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Digitalisierung der gedruckten Quellen</resp>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>TEI-Datenmodellierung</resp>
+               <persName role="hasContributor" xml:id="tfruehwirth">
+                  <forename>Timo</forename>
+                  <surname>Frühwirth</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-3997-5193</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technische Supervision</resp>
+               <persName key="https://d-nb.info/gnd/1043833846"
+                         role="hasContributor"
+                         xml:id="pandorfer">
+                  <forename>Peter</forename>
+                  <surname>Andorfer</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-9575-9372</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technisches Consulting und Vorbereitung der Druckausgabe</resp>
+               <persName key="https://d-nb.info/gnd/13281899X"
+                         role="hasContributor"
+                         xml:id="skurz">
+                  <forename>Stephan</forename>
+                  <surname>Kurz</surname>
+                  <affiliation key="https://d-nb.info/gnd/1202798799">Institut für die Erforschung der Habsburgermonarchie und des Balkanraumes</affiliation>
+                  <idno type="ORCID">0000-0003-2546-2570</idno>
+               </persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher key="https://d-nb.info/gnd/1001454-8">Österreichische Akademie der Wissenschaften</publisher>
+            <date when="2028"/>
+            <availability status="free">
+               <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">Lizenziert unter CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/deed.de)</licence>
+            </availability>
+            <idno type="ISBN_Print"/>
+            <idno type="ISBN_Part_epub"/>
+            <idno type="ISBN_Digital"/>
+            <idno type="DOI"/>
+            <idno type="DOI_zenodo"/>
+            <idno type="ebook_ID"/>
+         </publicationStmt>
+         <seriesStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="m" type="main">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <respStmt>
+               <resp>Bearbeitung und Herausgeberschaft</resp>
+               <orgName key="https://d-nb.info/gnd/2024703-5">Universität Wien</orgName>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+         </seriesStmt>
+         <notesStmt>
+            <note>Diese TEI-XML-Datei ist Grundlage für eine Druckausgabe der Edition.</note>
+            <relatedItem>
+               <biblStruct>
+                  <monogr>
+                     <imprint>
+                        <pubPlace key="https://d-nb.info/gnd/4066009-6">Wien</pubPlace>
+                        <publisher key="https://d-nb.info/gnd/2068748-5">Verlag der Österreichischen Akademie der Wissenschaften</publisher>
+                        <date when="2029"/>
+                     </imprint>
+                     <extent/>
+                  </monogr>
+                  <note>
+              <idno/>
+              <ptr/>
+            </note>
+                  <citedRange/>
+               </biblStruct>
+            </relatedItem>
+         </notesStmt>
+         <sourceDesc>
+            <bibl>Quellbestand: AT-OeStA/AdR MRang MR 1Rep KRP Kabinettsratsprotokolle, 1918-1920 (Teilbestand)<ref target="https://www.archivinformationssystem.at/detail.aspx?id=5465">https://www.archivinformationssystem.at/detail.aspx?id=5465</ref>
+            </bibl>
+            <msDesc>
+               <msIdentifier>
+                  <institution key="https://d-nb.info/gnd/37748-X" role="hasOwner">AT-OeStA Österreichisches Staatsarchiv (Archiv (ÖStA))</institution>
+                  <repository key="https://d-nb.info/gnd/1601181-8">AT-OeStA/AdR Archiv der Republik, 1918- (Abteilung)</repository>
+                  <collection>AT-OeStA/AdR MRang MR 1Rep Ministerrat 1. Republik, 1918 - 1938 (Bestand)</collection>
+                  <idno>AT-OeStA_AdR-MRang-MR-1.-Rep.-KRP-049</idno>
+               </msIdentifier>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <abstract>
+            <p>
+          <!--to be generated-->
+        </p>
+         </abstract>
+      </profileDesc>
+      <encodingDesc>
+         <styleDefDecl scheme="css"/>
+         <tagsDecl>
+            <rendition xml:id="b" scheme="css">font-weight:bold;</rendition>
+            <rendition xml:id="su" scheme="css">vertical-align:super;font-size:.7em;</rendition>
+            <rendition xml:id="s" scheme="css">text-decoration:line-through;</rendition>
+            <rendition xml:id="u" scheme="css">text-decoration:underline;</rendition>
+            <rendition xml:id="ow" scheme="css">text-decoration:line-through;text-decoration-style:double;</rendition>
+            <rendition xml:id="r" scheme="css">display:block;text-align:right;</rendition>
+            <rendition xml:id="letterspaced" scheme="css">letter-spacing:0.15em;</rendition>
+            <rendition xml:id="i" scheme="css">font-style:italic;</rendition>
+         </tagsDecl>
+         <editorialDecl>
+            <hyphenation>
+               <p>
+            <!--to be added-->
+          </p>
+            </hyphenation>
+            <correction>
+               <p>
+            <!--to be added-->
+          </p>
+            </correction>
+            <normalization>
+               <p>
+            <!--to be added-->
+          </p>
+            </normalization>
+            <punctuation>
+               <p>
+            <!--to be added-->
+          </p>
+            </punctuation>
+            <stdVals>
+               <p>
+            <!--to be added-->
+          </p>
+            </stdVals>
+            <p>
+          <!--to be added-->
+        </p>
+         </editorialDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#tfruehwirth" when-iso="2026-10-13">TEIGarage output upconverted with upconvert.xsl</change>
+         <change who="#tfruehwirth" when-iso="2026-10-13">TEI header populated with generate_tei_templates.py</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface/>
+   </facsimile>
+   <text>
+      <body>
+         <div xml:id="doc-krp-0049.xml">
+            <head type="dokument">
+               <title type="num">49.<note type="footnote">Das Protokoll trägt den Vermerk <hi rend="#i">Vertraulich!</hi></note>
+               </title>
+               <title type="desc">
+                  <pb facs="krp-0049_r-0001"/>[Samstag] 1919-03-08</title>
+            </head>
+            <div type="dokumentkopf">
+               <div type="vorsitz">
+                  <head>Vorsitz:</head>
+                  <p>Renner</p>
+               </div>
+               <div type="anwesend">
+                  <head>Anwesend:</head>
+                  <p>Enderes, Grimm, Hanusch, Kaup, Loewenfeld-Russ, Marckhl, Mataja, Mayer, Pacher, Riedl, Steinwender, Stöckler, Urban, Waiss</p>
+               </div>
+               <div type="zugezogen">
+                  <head>Zugezogen:</head>
+                  <p>Brauneis, Breisky, Grünberger, Schüller</p>
+               </div>
+               <div type="schriftfuehrer">
+                  <head>Schriftführer:</head>
+                  <p>unbekannt</p>
+               </div>
+               <div type="dauer">
+                  <head>Dauer:</head>
+                  <p>15.00–18.00 Uhr</p>
+               </div>
+            </div>
+            <div type="komponenten">
+               <p>Reinschrift, Beilagen, Konzept, stenographische Mitschrift, diverse Zusätze</p>
+            </div>
+            <div type="beilagen">
+               <head>Beilagen:</head>
+               <list>
+                  <item><ref target="#krp-0049_top01">Zu TOP 1</ref>: <ref target="#krp-0049_b01">Handschriftliche Notiz Dr. Renners hinsichtlich der Publizierung der Einsetzung einer Statuskommission in den Abendblättern zur Beruhigung der Enttäuschten</ref></item>
+               </list>
+            </div>
+            <div type="protokoll">
+               <pb facs="krp-0049_r-0002"/>
+               <div type="top" xml:id="krp-0049_top01">
+                  <head>
+                     <label>
+                        <num n="1">1.</num>
+                        <seg>Frage der Herstellung einer Gleichmäßigkeit bei den Beförderungen in den einzelnen Staatsämtern.</seg>
+                     </label>
+                  </head>
+                  <p>Im Zuge der Debatte über einige aus dem Kreise der Kabinettsmitglieder gestellte Personalanträge gelangte die Frage zur Beratung, auf welche Weise eine Gleichmäßigkeit bei den Beförderungen der akademisch vorgebildeten Beamten in den einzelnen Staatsämtern erzielt werden könnte, um den hiebei vielfach zutage getretenen vergleichsweisen Unbilligkeiten vorzubeugen.</p>
+                  <p>An der Debatte beteiligten sich nahezu sämtliche Kabinettsmitglieder:</p>
+                  <p>Hiebei wurde von mehreren Seiten die Auffassung vertreten, dass durch eine Zusammenlegung der einzelnen Personalstände aller Zentralstellen in einem gemeinsamen Status die gerügten Übelstände voraussichtlich beseitigt werden könnten. Eine derartige Maßnahme würde sich auch im Hinblick auf die voraussichtliche Zusammenlegung von Staatsämtern als empfehlenswert darstellen. Allerdings müsste der Verschmelzung dieser Personalstände in einen Konkretualstatus die vorherige Ausgleichung der nachweisbaren Ungleichmäßigkeiten bei den bisherigen Beförderungen in den einzelnen Staatsämtern vorausgehen. Gleichzeitig müssten hiebei auch die Rangsverhältnisse <pb facs="krp-0049_r-0003"/>der in die Personalstände nicht eingereihten, den einzelnen Staatsämtern lediglich zugeteilten Beamten berücksichtigt werden.</p>
+                  <p>Der Kabinettsrat beschließt, dass sich mit dem Studium der Frage der Verschmelzung der Personalstände aller Zentralstellen unter gleichzeitiger Regelung der Rangsverhältnisse der den Staatsämtern zugeteilten Beamten ein aus dem Staatssekretär des Innern und den Unterstaatssekretären Dr. von Grimm und Ing. Ritter von Enderes zusammengesetztes Komitee zu befassen haben wird. Diesem Komitee wird das Recht eingeräumt, im Bedarfsfalle von jedem Staatsamt einen oder mehrere mit den Personalangelegenheiten vertraute Beamte seinen Beratungen zuzuziehen. Dem Komitee wird insbesondere die Aufgabe zugewiesen, hiebei auch die Frage des Härtenausgleiches einer Prüfung zu unterziehen; über das Ergebnis seiner Erhebungen und Beratungen wird das Komitee dem Kabinettsrate Vorschläge zu unterbreiten haben.</p>
+                  <p>Zum Zweck einer vergleichsweisen Überprüfung der Personalanträge, welche von den einzelnen Staatsämtern künftighin bis zur Regelung dieser Frage werden erstattet werden, haben schließlich alle Staatsämter je eine <pb facs="krp-0049_r-0004"/>Ausfertigung ihrer Personalstände (für die akademisch vorgebildeten Beamten) der Staatskanzlei zu Handen des Protokollführers des Kabinettsrates zu übermitteln; zwischenweilig eintretende Änderungen werden der Staatskanzlei im kurzen Weg fortlaufend anzuzeigen sein.</p>
+               </div>
+               <div type="top" xml:id="krp-0049_top02">
+                  <head>
+                     <label>
+                        <num n="2">2.</num>
+                        <seg>Bericht über die Pariser Lebensmittelverhandlungen.</seg>
+                     </label>
+                  </head>
+                  <p>Im Anschluss an die vom Staatssekretär Dr. <hi rend="#letterspaced">Bauer</hi> im letzten Kabinettsrate gemachten Mitteilungen über die Pariser Lebensmittelverhandlungen erstattet Sektionschef Dr. <hi rend="#letterspaced">Schüller</hi> einen ausführlichen Bericht über die Vorschläge, welche die deutschösterreichischen Unterhändler zur Bestreitung der Kosten der Lebensmittelzuschübe kürzlich in Paris gemacht haben:</p>
+                  <p>Hienach käme ein großangelegter Export von Holz, die Aufnahme einer 20 Millionen Dollaranleihe durch die Gemeinde Wien bei Gewährung entsprechender Pfandrechte, endlich die Ausgabe von staatlichen Goldobligationen auf die Salinen in Frage. Die sofortige Inangriffnahme der bezüglichen Vorarbeiten sei unerlässlich, zumal es nicht ausgeschlossen wäre, dass eine Finanzkommission der Entente bereits in der al<pb facs="krp-0049_r-0005"/>lernächsten Zeit in Wien eintreffen wird, welche sich mit der Überprüfung der unsererseits angebotenen Sicherstellungen zu befassen hätte. Jedenfalls wäre die Grundlage für eine Anleihe von zusammen 60 Millionen Dollar zu schaffen. Was die Ausgabe von Obligationen der Stadt Wien mit hypothekarischer Sicherheit anlangt, sei Bürgermeister Dr. Weiskirchner geneigt, entsprechende Pfandrechte bereitzustellen. Die Holzaktion müsste auf die Lieferung von wenigstens 2 Millionen Festmeter Holz abgestellt und eine großzügige Holzschlägelungsaktion unter zentraler Leitung in Angriff genommen werden, wobei aber immer noch auf die Selbständigkeit der Länder entsprechend Bedacht genommen werden könnte. Hiebei dürften beiläufig 30.000 Arbeiter erforderlich sein, für deren Ernährung von Italien ¾ kg Mehl und ein entsprechendes Fettquantum pro Kopf und Tag angesprochen werden würden. Was die letzterwähnte Sicherstellung anlange, die Ausgabe der auf den Salinen fundierten Goldobligationen, so müsste auch diese Frage binnen längstens acht Tagen geklärt werden.</p>
+                  <p>Bei der darauffolgenden Debatte, an welcher sich die Staatssekretäre Dr. <hi rend="#letterspaced">Loewenfeld-Russ</hi>, Dr. <hi rend="#letterspaced">Steinwender</hi> und <hi rend="#letterspaced">Stöck</hi><pb facs="krp-0049_r-0006"/><hi rend="#letterspaced">ler</hi> sowie Unterstaatssekretär <hi rend="#letterspaced">Riedl</hi> beteiligten, gelangte die Frage zur Erörterung, ob rücksichtlich der Ausgabe von Salinenscheinen und des Anlehens der Stadt Wien eine gesetzliche Ermächtigung erforderlich wäre.</p>
+                  <p>Staatssekretär <hi rend="#letterspaced">Stöckler</hi> wies gegenüber den separatistischen Bestrebungen der einzelnen Länder insbesondere auf die Notwendigkeit einer einheitlichen Durchführung der Holzaktion hin und betonte, dass in erster Linie der private Waldbesitz heranzuziehen wäre.</p>
+                  <p>Der Kabinettsrat nimmt abschließend den vom Referenten erstatteten eingehenden Bericht zur Kenntnis; weiters erteilt der Kabinettsrat, soweit die Unterhändler veranlasst waren, selbständige Entschließungen zu fassen, die nachträglich einer Genehmigung bedürfen, diese Genehmigung; endlich wird das Staatsamt der Finanzen eingeladen, die Frage der Ausgabe von Salinenscheinen zu studieren und etwaige gesetzliche Grundlagen hiefür auszuarbeiten. Das Staatsamt für Landwirtschaft wird eingeladen, im Einvernehmen mit dem Staatsamt für Gewerbe, Industrie und Handel die Holzaktion unverzüglich einzuleiten. Das Staatsamt der Justiz wird eingeladen, zu prüfen, ob die Ge<pb facs="krp-0049_r-0007"/>meinde Wien ohne eine besondere gesetzliche Grundlage an die Aufnahme einer Goldanleihe von 80 Millionen Dollar mit entsprechender hypothekarischer Sicherstellung zu schreiten befugt sei.</p>
+                  <p>Die Betreibung dieser Aktionen hat in den Händen des Staatsamtes des Äußern zu ruhen; in allen Fällen, die für das Staatsamt für Volksernährung von Belang sind, ist dieses den gegenständlichen Verhandlungen beizuziehen.</p>
+               </div>
+               <div type="top" xml:id="krp-0049_top03">
+                  <head>
+                     <label>
+                        <num n="3">3.</num>
+                        <seg>Behandlung der beim Staatsamt für Verkehrswesen aus fremden Staaten eingelaufenen Lieferungsofferte.</seg>
+                     </label>
+                  </head>
+                  <p>Unterstaatssekretär Ing. von <hi rend="#letterspaced">Enderes</hi> berichtet, dass in der Frage der Behandlung der beim Staatsamt für Verkehrswesen aus fremden Staaten eingelaufenen Lieferungsofferte gemäß dem Beschluss des Kabinettsrates in dessen 38. Sitzung vom 11. Februar d. J. mit den Vertretern der Vereinigung der deutschösterreichischen Industrie eine gegenständliche Besprechung abgehalten wurde, die zu folgendem Ergebnis geführt hat:</p>
+                  <p><hi rend="#u">ad Frage 1)</hi> ob bei Konkurrenzfähigkeit der deutschböhmischen und sudetenländischen Firmen hinsichtlich der Preise loko Deutschösterreich mit deutschösterreichischen Firmen den er<pb facs="krp-0049_r-0008"/>steren als Bestbieter Lieferungen für Deutschösterreich übertragen werden sollen:</p>
+                  <p>Deutschösterreichische Firmen mit in Deutschösterreich gelegenen Werken sind auch, wenn sie um einen geringeren Prozentsatz (5 %) teurer sind als deutschböhmische und sudetenländische Firmen, zu bevorzugen, weil deren Steuerleistung dem deutschösterreichischen Staat und die von ihnen bezahlten Löhne deutschösterreichischen Arbeitern zugute kommen und schließlich deren Lieferungen sicherer sind, als jene der deutschböhmischen oder sudetenländischen Firmen infolge der seitens der Tschechoslowaken verursachbaren Aus- und Durchfuhrsschwierigkeiten.</p>
+                  <p><hi rend="#u">ad Frage 2)</hi> Ob an deutschösterreichische Firmen, die ihre Betriebsstätten ganz oder teilweise im tschechoslowakischen, südslawischen oder polnischen Staate haben und von einem dieser Werke aus liefern wollen, Lieferungen für die deutschösterreichische Staatsbahn vergeben werden können:</p>
+                  <p>Wenn das Kapital der in Frage stehenden Firmen in deutschösterreichischen Besitz ist, z. B. Witkowitz, Prager Eisenindustrie-Gesellschaft, Mannesmann, Brevillier und Urban, Liebig, <pb facs="krp-0049_r-0009"/>Ginzkey etc., so besteht gegen einen Lieferungszuschlag bei Konkurrenzfähigkeit mit in Deutschösterreich gelegenen Werken prinzipiell kein Einwand. Es empfiehlt sich jedoch, aus den ad Frage 1) ausgeführten Gründen, Lieferungszuschläge an solche Firmen nur dann zu erteilen, wenn der betreffende Liefergegenstand ab deutschösterreichischem Werk überhaupt nicht oder nur zu erheblich höherem Preis erhältlich ist.</p>
+                  <p>ad Frage 3) Ob Materialien, welche gegenwärtig in Deutschösterreich nicht erhältlich sind, z. B. wegen des Kohlenmangels oder weil die deutschösterreichischen Fabriken solche Materialien nicht erzeugen und daher ein Bezug aus dem Auslande erfolgen muss, aus den neu entstandenen Nationalstaaten oder aber aus dem Deutschen Reiche (annähernd gleiche Preise loko Einlieferungsstation vorausgesetzt) zu beziehen sind:</p>
+                  <p>Bei annähernd gleichen Preisen loko Einlieferungsstation wäre reichsdeutschen Firmen der Vorzug vor jenen der tschechoslowakischen, südslawischen oder polnischen Staate zu gewähren, wenn die Lieferung die Valuta des <pb facs="krp-0049_r-0010"/>deutschösterreichischen Staates nicht ungünstig beeinflusst, das heißt, finanziell nicht erheblich ist.</p>
+                  <p>Ist der Bezug aus dem deutschen Reiche aus valutarischen Gründen nicht angezeigt, so kann der Bedarf bei Firmen der genannten neuentstandenen Nationalstaaten gedeckt werden, wobei die Zahlung loko Wien in deutschösterreichischen Kronen vorzusehen, die Genehmigung der Ausfuhr und Durchfuhr des Liefergegenstandes aus – oder durch den betreffenden Staat tunlichst noch vor Lieferungszuschlag – erwirkt und der Staatseisenbahnverwaltung bei in Teilen erfolgenden Lieferungen (Massenartikeln) die Möglichkeit gewahrt bleiben soll, die Lieferung in dem Augenblicke an deutschösterreichische Werke zu vergeben, in welchem diese liefer- und konkurrenzfähig sind.</p>
+                  <p>Der Kabinettsrat erhebt diese Richtlinien zum Beschluss.</p>
+                  <p>Der sprechende Unterstaatssekretär führt in diesem Zusammenhang weiters aus, dass sowohl in Deutschösterreich als auch in den Neustaaten gewisse Spezialindustrien bestehen, die bisher in der ganzen ehemaligen österreichisch-ungarischen Monarchie oder wenigstens in der früheren österreichischen Reichs<pb facs="krp-0049_r-0011"/>hälfte eine Art Monopolstellung innehatten, daher sehr billig und in besonders guter Beschaffenheit liefern konnten. Der Referent regt an, es möge in dieser Hinsicht ein Übereinkommen mit den Neustaaten angebahnt werden, dass solchen Industrien wenigstens für einige Jahre gegenseitigen Schutz sichert, um die nötigen Umstellungen in der Industrie möglichst zu erleichtern.</p>
+                  <p>Der Kabinettsrat nimmt diese Ausführungen zustimmend mit dem Beifügen zur Kenntnis, dass über diese Fragen im Anschluss an die in Prag vom Staatsamt für Gewerbe, Industrie und Handel bereits eingeleiteten Verhandlungen endgiltig abgesprochen werden wird.</p>
+               </div>
+               <div type="top" xml:id="krp-0049_top04">
+                  <head>
+                     <label>
+                        <num n="4">4.</num>
+                        <seg>Veröffentlichung von Kommuniqués durch die einzelnen Staatsämter.</seg>
+                     </label>
+                  </head>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> weist darauf hin, dass sich in der letzten Zeit wiederholt Fälle ereignet haben, in welchen bei Veröffentlichung von Kommuniqués durch die einzelnen Staatsämter das unbedingt notwendige Einvernehmen mit der Presseabteilung der Staatskanzlei nicht gepflogen wurde. Nach einem eingehenden Referat des Ministerialrates <hi rend="#letterspaced">Breisky</hi> beschließt der Kabinettsrat folgende Richtlinien für die Regelung dieser Frage:</p>
+                  <p><pb facs="krp-0049_r-0012"/></p>
+                  <list>
+                     <item n="1"><label>1.)</label> Kommuniqués sind grundsätzlich durch Vermittlung der Presseabteilung der Staatskanzlei im Wege der Staatskorrespondenz auszugeben. Lassen besondere Umstände ausnahmsweise eine andere Art der Veröffentlichung wünschenswert erscheinen, so ist dies, wenn die Angelegenheit irgendwie politischen Charakters oder sonst von erheblicherer Bedeutung ist, der Presseabteilung der Staatskanzlei unter Mitteilung des Textes vor Durchführung der Ausgabe, andernfalls gleichzeitig mit der Ausgabe zur Kenntnis zu bringen.</item>
+                     <item n="2"><label>2.)</label> Hinsichtlich des Textes von Kommuniqués, deren Inhalt den Interessenkreis mehrerer Ressorts berührt, ist von dem die Veröffentlichung veranlassenden Staatsamte vor Übergabe an die Presseabteilung der Staatskanzlei das Einverständnis dar beteiligten Ressorts sicherzustellen und, dass dies geschehen ist, anmerkungsweise auf der der Presseabteilung der Staatskanzlei übermittelten Ausfertigung zu verzeichnen.</item>
+                  </list>
+                  <p>Für die Ausgabe der Kommuniqués an die Blätter kommen wesentlich die Stunden von 9–12 Uhr vormittags und von 5–8 Uhr abends in Betracht. Da die Vervielfältigung und Versendung eine gewisse Zeit in Anspruch nimmt, wäre zu veranlassen, dass die Kommuni<pb facs="krp-0049_r-0013"/>quéstexte – einseitig geschrieben – längstens bis 11 Uhr vormittags bzw. bis 7 Uhr abends der Presseabteilung der Staatskanzlei vorliegen. Die Staatsämter werden ersucht, die Umschläge (Kuverts), in denen Kommuniqués übersandt werden, stets mit der Adresse: „An die <hi rend="#u">Presseabteilung</hi> der Staatskanzlei, I. [Wiener Gemeindebezirk] Herrengasse Nr. 7“ mit einer in die Augen fallenden Dringlichkeitsbezeichnung und mit dem Vermerke: „Communiqué“ oder „Zeitungsnotiz“ zu versehen.</p>
+                  <p>Jedes Staatsamt sorgt dafür, dass während der in Betracht kommenden Amtsstunden ein über die Presseangelegenheiten seines Ressorts unterrichteter Beamter jederzeit erreichbar ist.</p>
+                  <p/>
+               </div>
+            </div>
+            <div type="stenogramme">
+               <div n="1">
+                  <head>[KBR 49, 8. März 1919, Stenogramm]</head>
+                  <p><pb facs="krp-0049_s01-0001"/>Nr. 49 vom 8. /3.</p>
+                  <p>[<hi rend="#i">Rechtes Obereck</hi>:] Schüller</p>
+                  <p>Grünberger</p>
+                  <p>Brauneis.</p>
+                  <p>1.) Roller: Personalantrag: Bratusch und Mayer ad pers. III. Rangsklasse 8.000 Kronen. </p>
+                  <p>Hanusch: Dagegen, dass anlässlich der Demission ein Beförderungsregen niedergeht. </p>
+                  <p>Pacher: Wegen Fesch. </p>
+                  <p>Renner: 15 Herren gehen diesen beiden Herren vor. </p>
+                  <p>Enderes: Die Beförderungsverhältnisse sind sehr verschieden in den einzelnen Staatsämtern. Dieser Antrag nur mit genauer Beziehung zu den anderen Staatsämtern zu prüfen.</p>
+                  <p>Renner: Für diese Dinge eine gesichertere Praxis. Fabriksausschuss der Beamten. </p>
+                  <p>Anregung, dass die Personalreferenten der Ämter zusammentreten und einen zentralen Schematismus aller Ämter anlegen, um auf diese Weise der Staatskanzlei zu ermöglichen, die Dinge zu vergleichen. </p>
+                  <p>Grimm: Gedanke, der schon oft erwogen wurde beim Neuaufbau eines deutsch-österreichischen Beamtenschemas. Ob nicht in den Zentralstellen die Gesamtdienstzeit </p>
+                  <p>eine Rolle spielen soll. Man sollte die Gesamtdienstzeit bei der Reihung berücksichtigen. </p>
+                  <p>Steinwender: Die 3. Rangsklasse ist eine Ausnahme, sie soll für besondere Ausnahmen verliehen werden. </p>
+                  <p>Loewenfeld: Bei den höheren Rangsklassen kann nicht nach der Reihung vorgegangen werden. </p>
+                  <p>Zusammenlegung der Staatsämter und aller Beamten in einen Status. </p>
+                  <p>Riedl: Gewiss viel für sich. Vorher aber müssten gewisse Ungleichmäßigkeiten ausgeglichen werden. (Handel und Volksernährung). <lb/></p>
+                  <p>Roller: Comité; zugleich müsste Zuteilungswesen einer Regelung unterzogen werden. </p>
+                  <p>Enderes: Sehr dafür, dass dieses Personal zusammengelegt wird; Schwierigkeit, die aus der Verwendung besonders hochwertiger Kräfte neben den Ministerialbeamten [resultieren]. </p>
+                  <p>Die Ungleichheiten müssten wesentlich gemildert werden. Bei den Eisenbahnern: Staatsbahnbeamte neben dem Ministerialstatus. </p>
+                  <p>Also vorher Ausgleich und dann Zusammenlegung; endlich Beziehungen des zentralen Stat[us] zum Dienst draußen. </p>
+                  <p><hi rend="#s">Renner: Vorwiegend</hi> -.</p>
+                  <p>Roller: Nach dem Studium der ausländischen Verhältnisse sollten konkrete Vorschläge gemacht werden. Es wird im Rahmen des Beamtenrechts gelöst werden müssen. Bezüglich der jetzt bestehenden Ungleichheiten -.</p>
+                  <p>Renner: Sache noch nicht spruchreif. Antrag Roller vorläufig zurückgestellt.</p>
+                  <p>Bittet zu beschließen, [dass man] alle Staatsämter beauftragt, ihre bis auf den letzten Tag bericht[igten] Status - der Staatskanzlei einzusenden, <lb/></p>
+                  <p>an Horicky.</p>
+                  <p>Zum Studium der Frage der Verschmelzung des Status der Zentralstellen und der Regelung des Zuteilungswesens ein Komitee </p>
+                  <p>eingesetzt: Grimm und zwei Staatsämter. Dieses Komitee hat außerdem das Recht, von jedem Staatsamt einen Beamten, der mit diesen Angelegenheiten </p>
+                  <p><pb facs="krp-0049_s01-0002"/>besonders befasst und mit ihnen vertraut ist, einzuladen zu einem erweiterten Ausschuss, der die Frage berät und Antrag unterbreitet.</p>
+                  <p>Ich glaube, es wäre nicht zweckmäßig, wenn gerade der Personalreferent käme, kann auch Beamter sein, der das Vertrauen genießt einigermaßen.</p>
+                  <p>Spezialauftrag an diese Kommission über einen Härtenausgleich nachzudenken und Vorschlag zu erstatten, wie dieser durchgeführt werden kann. </p>
+                  <p>(Rückdatierung von Ernennungen und in den gewissen Rängen einen Schub machen; Gesamtdienstzeit, Dienstzeit mit bestimmtem Rang; </p>
+                  <p>Modalität erfinden, wo besondere Leistungen ohne Verschiebung des Ranges zu honorieren).</p>
+                  <p>Neben Grimm noch Mat[aja] und Enderes (nur </p>
+                  <p><hi rend="#s">Konzeptbeamte</hi> akademisch vorgebildete Beamte). </p>
+                  <p>2. Mayer: Anschuldigungen wegen Missbrauch der Amtsgewalt. </p>
+                  <p>Es [ist] außerordentlich schwer, sich das Material zu beschaffen und besonders die Zeitungen, die darüber geschrieben haben sollen, nicht erhältlich sind. </p>
+                  <p>Im Amt selbst wurden alle Akten durchgesehen und sind ausgehoben. </p>
+                  <p>Bei der tschechoslowakischen Regierung soll direkt um Auskunft ersucht werden. Wohnungsdurchsuchung in Eger in meiner Wohnung (Donnerstag). </p>
+                  <p>Renner: Wird sich mit dem Staats[sekretär des] Äußeren ins Einvernehmen setzen, um dieses Material in unzweideutiger Weise zu beschaffen. </p>
+                  <p>3. Schüller: Bei der Ankunft wurde erklärt, dass kein Kredit eingeräumt werden kann wegen der amerikanischen Gesetze (100 Millionen Dollar). </p>
+                  <p>Wir sind gestrichen worden aus diesem Gesetz. Die Tschechoslowakei hat 10 Millionen bekommen. Man hat gesagt, dass wir diesen Kredit in den </p>
+                  <p>neutralen Staaten einfordern sollen, da die Lebensmittel unbedingt bezahlt werden müssen. </p>
+                  <p>Frage, wie wir uns diese Bezahlung des Kredites vorstellen. Wir antworteten, dass wir diese Kronen im Inland finden können. </p>
+                  <p>Vorschlag wurde abgelehnt. Weiterer Vorschlag: Holzexporte, Stadt-Wien-Obligationen mit hypoth[ekarischer] Sicherheit, </p>
+                  <p>Ausgaben staatsamtlicher Obligationen auf Salinen gebaut. Ausländische Wertpapiere: ein Zugriff nicht möglich, </p>
+                  <p>aber Antrag gestellt Finanzkommission. Unser Antrag hätte erst nach Wochen durchberaten werden können. </p>
+                  <p>Eine Geneigtheit, uns positiv zu helfen war bei den Italienern vorhanden: neben wirtschaftlicher [Hilfe] auch politische. Sache verfolgt worden, unserer - zu helfen. </p>
+                  <p>Crespi hat gesagt, dass ein Engagement auch von ihm nicht gemacht werden kann, dass er sich aber bemühen wird, italienischerseits </p>
+                  <p>die Versorgung in die Hand zu nehmen. Er hat prot[okollarische] Erklärung abgegeben, Italien wird unterstützen. Bietet sich an, prov[isorisch] aufzukommen, </p>
+                  <p>Grundlage 30.000 t Getreide und 2.000 t Fett pro Monat. Entscheidung, ob angenommen, liegt aber noch nicht vor. </p>
+                  <p>Wir haben also noch zu erwarten, ob diese Finanzverhandlungen tatsächlich stattfinden werden.</p>
+                  <p>Auch wegen Rohstoffen mit den Amerikanern gesprochen. Der betreffende Amerikaner wusste gar nicht, dass wir Feinde sind.</p>
+                  <p>Währungsregelung: Wir haben Entwurf gemacht [für eine] Depesche wegen März-Coupon. Wenn Ihr März-Zahlung [leistet], dann bekommt ihr </p>
+                  <p>Lebensmittel. Dieser [...] Entwurf wieder abgeändert abgesendet.</p>
+                  <p><pb facs="krp-0049_s01-0003"/>Loewenfeld: Die uns in Aussicht gestellten Mengen sollen in der Bevölkerung nicht den Eindruck hervorrufen, dass wir damit genug haben. Dazu kommt, dass die Schweiz Tirol </p>
+                  <p>ohne Bezahlung nicht mehr versorgen will. Das sind aber in der Francs-Währung Auslagen, die wir auf die Dauer nicht leisten können - für 100 Fr. 440 Kronen. </p>
+                  <p>In der Blockade-Sistierung sieht Redner keine Besserung für uns; dass wir frei ankaufen könnten, glaube ich nicht. Dazu Transportschwierigkeiten? </p>
+                  <p>Hilfe momentan nur [durch] die Italiener. Ernährungssituation aber ist nach wie vor gespannt.</p>
+                  <p>Schüller: Da wir nur gegen bares Geld etwas bekommen werden, wird die Beschaffung von Nahrungsmitteln sehr schwierig sein. Immerhin wäre es [eine] Erleichterung, wenn wir in neutralen </p>
+                  <p>oder feindlichen Staaten gegen Geld Zubußen bekommen könnten.</p>
+                  <p>Die entscheidende Frage ist, dass wir rasch diesen Kredit bis zur neuen Ernte bekommen. </p>
+                  <p>[<hi rend="#i">Rechter Rand</hi>:] 60 Millionen Dollar.</p>
+                  <p>1.) Was Wien betrifft, ist - ist Bürgermeister bereit, unter Gewährung entsprechender Pfandrechte 20 Millionen Dollar Goldanleihe zu geben.</p>
+                  <p>2.) Aktion bezieht sich auf das Holz: diese Aktion wird in den nächsten Tagen eingeleitet werden müssen. Unter Berücksichtigung der Selbständigkeit der Länder muss eine </p>
+                  <p>große Schlägerungsaktion eingeleitet werden. Wir müssten 2 Millionen Festmeter Holz liefern können.</p>
+                  <p>3.) Die Frage mit den Salinen-Scheinen, Goldobligationen auf die Salinen auszugeben. Das muss eventuell binnen 8 Tagen gesichert sein. </p>
+                  <p>Es kann eine Verhandlung anberaumt werden.</p>
+                  <p>Steinwender: Ein eigenes Gesetz brauchen wir nicht, da die Ermächtigung vorhanden ist. Aber die Salinen gehören dem Gesamtstaat.</p>
+                  <p>Schüller: Die Gesandtenkonferenz natürlich darf darüber nichts beschließen, sonst ist es schlecht.</p>
+                  <p>Renner: Diese Frage wird Gegenstand besonderen Studiums der beteiligten Staatsämter sein; insbesondere [sollte das] Staatsamt für Justiz prüfen, ob Gemeinde Wien imstande ist, ihr Gut </p>
+                  <p>zu verpfänden.</p>
+                  <p>Riedl: Ob nicht auch andere größere Gemeinden sich beteiligen sollen.</p>
+                  <p>Stöckler: Holzbeschaffungsaktion: diese müsste einheitlich durchgeführt werden. Die separat[istische] Tendenz der einzelnen Länder muss storniert werden. </p>
+                  <p>Im großen Interesse der Aktion wäre es gelegen, wenn die Privaten dazu gebracht werden können, dass jeder Einzelne schlägern kann. </p>
+                  <p>Es soll aber niemand Holz schlägern wegen der Vermögensabgabe. Dies ist ein ungeheures Hindernis. Die italienischen Preise von heute müssten die Leute eines Besseren </p>
+                  <p>belehren. Schüller: (30.000 Arbeiter sind erforderlich; von den Italienern pro Tag 3/4 Kg. Mehl und entsprechend Fett).</p>
+                  <p>Renner: Antrag: Kabinett nimmt den Bericht zur Kenntnis. Soweit die Mission veranlasst war, selbständige Entschließungen zu fassen, [die] </p>
+                  <p>der nachträglichen Genehmigung bedürfen, wird die Genehmigung erteilt.</p>
+                  <p>Staatsamt für Finanzen einzuladen, Frage der Salinenscheine zu studieren und etwaige Gesetzesvorlagen auszuarbeiten. </p>
+                  <p>Acker[bau] eingeladen, im Einvernehmen mit Handel die Holzschlägerungsaktion einzuleiten. </p>
+                  <p>Die Betreibung der ganzen Aktion hat in den Händen des Staatsamtes des Äußern zu liegen und hinzugezogen soll in allen Fällen </p>
+                  <p>das Staatsamt für Volksernährung [werden], die für dasselbe von Belang sind.</p>
+                  <p>4. Zentrale Preisprüfungskommission.</p>
+                  <p>Riedl: Bittet, den Antrag vorläufig zurückzustellen. Auf 14 Tage vertagt.</p>
+                  <p><pb facs="krp-0049_s01-0004"/>5. [Enderes:] Lieferofferte. Die Erzeugungsstätten zahlreicher Materialien liegen in den neuen Staaten, wir können also nichts mehr bekommen. </p>
+                  <p>[Dies wurde im] Kabinettsrat II. /2. bereits besprochen. Mit den Industrien in Fühlung getreten. </p>
+                  <p>Bezüglich Konkurrenz deutsch-österreichischer gegenüber deutsch-böhmischer Firmen .... (bei 1.) angeführt: Steuerleistung und Arbeitslohn.)</p>
+                  <p>Hanusch &amp; Riedl: Jedenfalls Grundsatz, dass die bei Firmen, die in zwei Staaten Unternehmungen besitzen, bestellte Ware möglichst in Deutsch-Österreich </p>
+                  <p>erzeugt wird oder zumindest, dass die Firma bei uns vollbeschäftigt ist.</p>
+                  <p>Eine gewisse gegenseitige Schonung und Duldung bei der Erzeugung von Spezialartikeln durch Spezialindustrie: Einvernehmen mit den </p>
+                  <p>fremden Staaten.</p>
+                  <p>Hanusch: Diese Ausführungen haben allerdings etwas für sich. Was für die kleinen Staaten gilt, die schwer produzieren (Dänemark, Schweiz und nun </p>
+                  <p>Tschechoslowakei), das trifft bei uns künftig nicht zu, da wir zu Deutschland kommen werden. Wenn die Tschechoslowaken klug sind, werden sie </p>
+                  <p>mit uns gehen, wir brauchen ihnen aber nicht nachzulaufen, da wir die Entwicklungsfähigkeit durch den Anschluss an Deutschland haben werden.</p>
+                  <p>Enderes: Der Gedanke Hanuschs ist richtig; die Entwicklung wird aber vielleicht 10 Jahre dauern. </p>
+                  <p>Sicherung anlegen also für die Übergangszeit ein derartiger Modus wünschenswert.</p>
+                  <p>Angenommen.</p>
+                  <p>6. Verwaltungsgerichtshof. Angenommen.</p>
+                  <p>7. [Renner:] Communiqué Breisky.</p>
+                  <p>Loewenfeld: Stellt Sachverhalt fest. Die Zeitungen sind verständigt worden von der Ankunft der Pariser Delegierten. </p>
+                  <p>Kommuniqué ist vom Sektionschef Schüller selbst verfasst worden. Ein besseres Einvernehmen als mit dem Äußern ist unmöglich. </p>
+                  <p>Antrag der Staatskanzlei wird den einzelnen Staatsämtern zugestellt werden (von Breisky).</p>
+                  <p>Enderes: Hierbei nicht gedacht auf rein fachliche Angelegenheiten.</p>
+                  <p>Breisky: Als Communiqué nur gedacht, was an alle Zeitungen oder an eine Gruppe von Zeitungen gehen soll. </p>
+                  <p>Es handelt sich um keine Spezialzeitschriften.</p>
+                  <p>Loewenfeld: Muss für sein Amt eine gewisse Ellbogenfreiheit haben.</p>
+                  <p>Renner: So zu verstehen, das, was irgendwie politischen Charakter hat.</p>
+                  <p>Angenommen.</p>
+                  <p>8. Hanusch: Dass bei einzelnen Staatsämtern </p>
+                  <p>Invalide entlassen werden. In einigen Wochen werden wir </p>
+                  <p>das Militärversorgungsgesetz haben. Möchte persönlich – schriftlich schon geschehen – noch bitten, nicht zu entlassen.</p>
+                  <p>Schluss 6h.</p>
+               </div>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,840 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href='http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:acdh="https://vocabs.acdh.oeaw.ac.at/schema#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xml:lang="de">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="a" type="main" n="0188">Kabinettsprotokoll Nr. 188 vom 4. Juni 1920</title>
+            <title level="m" type="main" n="01">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <title level="m" type="sub" n="">Renner III (17. Oktober 1919 – 7. Juli 1920)</title>
+            <meeting>
+               <placeName key="https://d-nb.info/gnd/4066009-6">Wien</placeName>
+               <orgName key="https://d-nb.info/gnd/5162749-8">Kabinettsrat</orgName>
+               <date when-iso="1920-06-04"/>
+            </meeting>
+            <editor>
+               <persName key="https://d-nb.info/gnd/122481836"
+                         role="hasCreator"
+                         xml:id="hwohnout">
+                  <forename>Helmut</forename>
+                  <surname>Wohnout</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</affiliation>
+               <idno type="ORCID">0000-0002-3864-9839</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/120789825"
+                         role="hasCreator"
+                         xml:id="tolechowski">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0003-3291-6876</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/131679384"
+                         role="hasCreator"
+                         xml:id="rlein">
+                  <forename>Richard</forename>
+                  <surname>Lein</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0002-7502-0503</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="aholzer">
+                  <forename>Anna</forename>
+                  <surname>Holzer</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0005-3560-3500</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="dsoelkner">
+                  <forename>Dominik</forename>
+                  <surname>Sölkner</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-9895-7212</idno>
+            </editor>
+            <editor>
+               <persName role="hasContributor" xml:id="ischotzko">
+                  <forename>Ina</forename>
+                  <surname>Schotzko</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-5210-3713</idno>
+            </editor>
+            <funder n="1">
+               <orgName key="https://d-nb.info/gnd/2054142-9" role="hasFunder">Österreichischer Wissenschaftsfonds FWF</orgName>
+               <idno type="project">PAT1495024</idno>
+               <title type="project">Die Protokolle des österreichischen Kabinettsrates 1919–1920</title>
+            </funder>
+            <respStmt>
+               <resp>Projektverantwortung</resp>
+               <orgName key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Projektleitung</resp>
+               <persName key="https://d-nb.info/gnd/120789825" role="hasPrincipalInvestigator">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+                  <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+                  <idno type="ORCID">0000-0003-3291-6876</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Nationaler Forschungspartner</resp>
+               <orgName key="https://d-nb.info/gnd/1123037736" role="hasEnabler">Austrian Centre for Digital Humanities</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Digitalisierung der gedruckten Quellen</resp>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>TEI-Datenmodellierung</resp>
+               <persName role="hasContributor" xml:id="tfruehwirth">
+                  <forename>Timo</forename>
+                  <surname>Frühwirth</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-3997-5193</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technische Supervision</resp>
+               <persName key="https://d-nb.info/gnd/1043833846"
+                         role="hasContributor"
+                         xml:id="pandorfer">
+                  <forename>Peter</forename>
+                  <surname>Andorfer</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-9575-9372</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technisches Consulting und Vorbereitung der Druckausgabe</resp>
+               <persName key="https://d-nb.info/gnd/13281899X"
+                         role="hasContributor"
+                         xml:id="skurz">
+                  <forename>Stephan</forename>
+                  <surname>Kurz</surname>
+                  <affiliation key="https://d-nb.info/gnd/1202798799">Institut für die Erforschung der Habsburgermonarchie und des Balkanraumes</affiliation>
+                  <idno type="ORCID">0000-0003-2546-2570</idno>
+               </persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher key="https://d-nb.info/gnd/1001454-8">Österreichische Akademie der Wissenschaften</publisher>
+            <date when="2028"/>
+            <availability status="free">
+               <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">Lizenziert unter CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/deed.de)</licence>
+            </availability>
+            <idno type="ISBN_Print"/>
+            <idno type="ISBN_Part_epub"/>
+            <idno type="ISBN_Digital"/>
+            <idno type="DOI"/>
+            <idno type="DOI_zenodo"/>
+            <idno type="ebook_ID"/>
+         </publicationStmt>
+         <seriesStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="m" type="main">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <respStmt>
+               <resp>Bearbeitung und Herausgeberschaft</resp>
+               <orgName key="https://d-nb.info/gnd/2024703-5">Universität Wien</orgName>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+         </seriesStmt>
+         <notesStmt>
+            <note>Diese TEI-XML-Datei ist Grundlage für eine Druckausgabe der Edition.</note>
+            <relatedItem>
+               <biblStruct>
+                  <monogr>
+                     <imprint>
+                        <pubPlace key="https://d-nb.info/gnd/4066009-6">Wien</pubPlace>
+                        <publisher key="https://d-nb.info/gnd/2068748-5">Verlag der Österreichischen Akademie der Wissenschaften</publisher>
+                        <date when="2029"/>
+                     </imprint>
+                     <extent/>
+                  </monogr>
+                  <note>
+              <idno/>
+              <ptr/>
+            </note>
+                  <citedRange/>
+               </biblStruct>
+            </relatedItem>
+         </notesStmt>
+         <sourceDesc>
+            <bibl>Quellbestand: AT-OeStA/AdR MRang MR 1Rep KRP Kabinettsratsprotokolle, 1918-1920 (Teilbestand)<ref target="https://www.archivinformationssystem.at/detail.aspx?id=5465">https://www.archivinformationssystem.at/detail.aspx?id=5465</ref>
+            </bibl>
+            <msDesc>
+               <msIdentifier>
+                  <institution key="https://d-nb.info/gnd/37748-X" role="hasOwner">AT-OeStA Österreichisches Staatsarchiv (Archiv (ÖStA))</institution>
+                  <repository key="https://d-nb.info/gnd/1601181-8">AT-OeStA/AdR Archiv der Republik, 1918- (Abteilung)</repository>
+                  <collection>AT-OeStA/AdR MRang MR 1Rep Ministerrat 1. Republik, 1918 - 1938 (Bestand)</collection>
+                  <idno>AT-OeStA_AdR-MRang-MR-1.-Rep.-KRP-188</idno>
+               </msIdentifier>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <abstract>
+            <p>
+          <!--to be generated-->
+        </p>
+         </abstract>
+      </profileDesc>
+      <encodingDesc>
+         <styleDefDecl scheme="css"/>
+         <tagsDecl>
+            <rendition xml:id="b" scheme="css">font-weight:bold;</rendition>
+            <rendition xml:id="su" scheme="css">vertical-align:super;font-size:.7em;</rendition>
+            <rendition xml:id="s" scheme="css">text-decoration:line-through;</rendition>
+            <rendition xml:id="u" scheme="css">text-decoration:underline;</rendition>
+            <rendition xml:id="ow" scheme="css">text-decoration:line-through;text-decoration-style:double;</rendition>
+            <rendition xml:id="r" scheme="css">display:block;text-align:right;</rendition>
+            <rendition xml:id="letterspaced" scheme="css">letter-spacing:0.15em;</rendition>
+            <rendition xml:id="i" scheme="css">font-style:italic;</rendition>
+         </tagsDecl>
+         <editorialDecl>
+            <hyphenation>
+               <p>
+            <!--to be added-->
+          </p>
+            </hyphenation>
+            <correction>
+               <p>
+            <!--to be added-->
+          </p>
+            </correction>
+            <normalization>
+               <p>
+            <!--to be added-->
+          </p>
+            </normalization>
+            <punctuation>
+               <p>
+            <!--to be added-->
+          </p>
+            </punctuation>
+            <stdVals>
+               <p>
+            <!--to be added-->
+          </p>
+            </stdVals>
+            <p>
+          <!--to be added-->
+        </p>
+         </editorialDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#tfruehwirth" when-iso="2026-10-13">TEIGarage output upconverted with upconvert.xsl</change>
+         <change who="#tfruehwirth" when-iso="2026-10-13">TEI header populated with generate_tei_templates.py</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface/>
+   </facsimile>
+   <text>
+      <body>
+         <div xml:id="doc-krp-0188.xml">
+            <head type="dokument">
+               <title type="num">188.<note type="footnote">Das Protokoll trägt den Vermerk <hi rend="#i">Vertraulich!</hi></note>
+               </title>
+               <title type="desc">
+                  <pb facs="krp-0188_r-0001"/>[Freitag] 1920-06-04</title>
+            </head>
+            <div type="dokumentkopf">
+               <div type="vorsitz">
+                  <head>Vorsitz:</head>
+                  <p>Renner</p>
+               </div>
+               <div type="anwesend">
+                  <head>Anwesend:</head>
+                  <p>Eisler, Eldersch, Ellenbogen, Fink, Glöckel, Hanusch, Mayr, Miklas, Ramek, Reisch, Resch, Stöckler, Tandler, Waiss, Zerdik</p>
+               </div>
+               <div type="zugezogen">
+                  <head>Zugezogen:</head>
+                  <p>Fischer, Schüller, Schwarzwald, Zedtwitz</p>
+               </div>
+               <div type="schriftfuehrer">
+                  <head>Schriftführer:</head>
+                  <p>unbekannt</p>
+               </div>
+               <div type="dauer">
+                  <head>Dauer:</head>
+                  <p>15.00–18.00 Uhr</p>
+               </div>
+            </div>
+            <div type="komponenten">
+               <p>Reinschrift, Beilagen, Konzept, stenographische Mitschrift, Entwurf der Tagesordnung, diverse Zusätze</p>
+            </div>
+            <div type="beilagen">
+               <head>Beilagen:</head>
+               <list>
+                  <item><ref target="#krp-0188_top03">Zu TOP 3</ref>: <ref target="#krp-0188_b01">Vortrag des Staatsamtes für Finanzen über Errichtung einer Aktiengesellschaft für Veredlungsverkehr und treuhändige Güterverwertung</ref></item>
+                  <item><ref target="#krp-0188_top04">Zu TOP 4</ref>: <ref target="#krp-0188_b02">Lohnforderungen der Arbeiter der Versuchswirtschaft der Hochschule für Bodenkultur</ref></item>
+               </list>
+            </div>
+            <div type="protokoll">
+               <pb facs="krp-0188_r-0002"/>
+               <div type="top" xml:id="krp-0188_top01">
+                  <head>
+                     <label>
+                        <num n="1">1.</num>
+                        <seg>Protest gegen das Austreten des französischen Kapitäns de L‘Epine in der Anschlussfrage.</seg>
+                     </label>
+                  </head>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> kommt auf die in den Zeitungen vom 1. Juni l. J. gebrachte Meldung zu sprechen, wonach der französische Kapitän de L‘Epine in Vertretung der französischen Militärmission bei dem Landeshauptmannstellvertreter Dr. Rehrl in Salzburg erschienen sei, um über die Stimmung der Bevölkerung hinsichtlich eines Anschlusses von Salzburg an Bayern Informationen einzuholen und die Frage zu erörtern, in welcher Weise dieser Anschluss durchgeführt werden könnte. Der Vorsitzende bemerkt, dass Kapitän de L‘Epine in der Angelegenheit auch mit einem führenden Politiker der Großdeutschen Partei Salzburgs eine Unterredung gehabt und dabei geradezu für die Einbeziehung Salzburgs in eine süddeutsche Monarchie Propaganda gemacht habe. Redner erklärt, diesen Vorfall zum Gegenstande einer Vorstellung beim französischen Gesandten machen und Aufklä<pb facs="krp-0188_r-0003"/>rungen über dieses mit dem Staatsvertrage von St. Germain ebenso wie mit den Staatsgesetzen in Widerspruch stehende Auftreten de L’Epines verlangen zu wollen.</p>
+                  <p>Der Kabinettsrat stimmt diesem Schritte des Vorsitzenden zu.</p>
+               </div>
+               <div type="top" xml:id="krp-0188_top02">
+                  <head>
+                     <label>
+                        <num n="2">2.</num>
+                        <seg>Note der Reparationskommission über die Bedingungen der Kredithilfe für Österreich.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Reisch</hi> bespricht in eingehender Weise die einzelnen Punkte der vom Staatskanzler bereits in der Sitzung des Finanz- und Budgetausschusses vom 2. Juni l. J. veröffentlichten Note der Reparationskommission über die Bedingungen für die Kredithilfe der Alliierten und neutralen Mächte an Österreich. Nach den Ausführungen des Redners halten sich die Bestimmungen der Note durchaus im Rahmen des Friedensvertrages von St. Germain, sodass die Erhebung einer Vorstellung gegen die Österreich darin auferlegten Bindungen nicht in Frage kommen könne. Wohl aber bedürfen einzelne Details noch einer Klarstellung, die nach Ansicht des sprechenden Staatssekretärs jedoch nicht im Wege eines Schriftenwechsels, sondern durch mündliche Verhandlungen mit der österreichischen Sektion der Reparationskommis<pb facs="krp-0188_r-0004"/>sion, die in kürzester Frist ihre Tätigkeit aufnehmen wird, herbeizuführen wäre. Als solche Details bezeichnet Redner insbesondere die Abs. a und b des zweiten Abschnittes sowie den dritten Abschnitt der Note.</p>
+                  <p>Redner stelle daher den Antrag, es möge die Note der Reparationskommission, ohne dass auf das Meritum eingegangen würde, in dem Sinne beantwortet werden, dass Österreich den Beschluss der Reparationskommission, den Wiederherstellungskrediten ein Vorzugsrecht vor den Reparationszahlungen einzuräumen, und ihre Absicht, einen Gesamtplan zur Wiederaufrichtung der wirtschaftlichen und finanziellen Verhältnisse Österreichs auszuarbeiten, dankbar begrüße und bereit sei, alle Bestimmungen der Note, soweit sie mit dem Staatsvertrag von St. Germain im Einklang stehen, loyal zu erfüllen. Bezüglich einzelner unklar gebliebener Punkte behalte sich Österreich vor, mit den Mitgliedern der österreichischen Sektion der Reparationskommission nach deren Eintreffen in Wien in mündliche Verhandlungen einzutreten.</p>
+                  <p>Abschließend bemerkt der sprechende Staatssekretär, dass die Durchführung der Note eine gesetzliche Ermächtigung zur Ausgabe von auf Gold lautenden <pb facs="krp-0188_r-0005"/>Schatzbons erfordere, weshalb er in Aussicht nehme, der Nationalversammlung demnächst eine bezügliche Gesetzesvorlage zu unterbreiten.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Mayr</hi> stellt fest, dass die Note über den Wortlaut des Art. 197 des Friedensvertrages hinausgehe, indem sie für die Kredite auch Landes- und Gemeindeeigentum haftbar mache. Hiegegen werde jedenfalls ein Widerspruch der Länder ausgelöst werden, weshalb er anrege, die Staatsregierung möge zur Vermeidung von Misshelligkeiten aus eigenen Stücken gegen diesen Punkt der Note bei der Reparationskommission Vorstellung erheben.</p>
+                  <p>Anknüpfend daran entspinnt sich eine längere Debatte über die aus der Note fließenden Bindungen für das Landes- und Gemeindeeigentum, in deren Verlaufe Sektionschef Dr. <hi rend="#letterspaced">Schüller</hi> über die Wechselbeziehungen zwischen dem Friedensvertrag und der Note der Reparationskommission eingehende Aufklärungen gibt. Als bedeutsamstes Moment der Note hebt er den Umstand hervor, dass die Note nicht von der Aufgabe der Reparationskommission spreche, die Höhe der von Österreich bis zum Mai 1921 zu leistenden Reparationssumme festzu<pb facs="krp-0188_r-0006"/>setzen, sie vielmehr die nach dem Friedensvertrage für die Wiedergutmachung haftenden Pfänder als Pfandobjekte für Lebensmittel- und Rohstoffkredite freigebe. Im Zuge der seinerzeit abgeführten Verhandlungen über den Friedensvertrag sei von der Entente bereits ausdrücklich erklärt worden, dass der Ausdruck „der gesamte Besitz Österreichs“ des Art. 197 auch das Eigentum von Ländern und Gemeinden in sich begreife. Infolgedessen wäre es nach der Ansicht des Redners aussichtslos, dagegen Stellung zu nehmen, dass der Besitz der Länder und Gemeinden nunmehr auch für die Lebensmittel- und Rohstoffkredite haften solle, umso mehr, als die daraus beschafften Güter ja auch den Ländern und Gemeinden zugutekommen.</p>
+                  <p>Nach dem Vorschlage des <hi rend="#letterspaced">Vorsitzenden</hi> beschließt der Kabinettsrat, in dieser Frage das Staatsamt für Finanzen zu beauftragen, im Einvernehmen mit dem Staatsamt für Äußeres (wirtschaftspolitische Abteilung) eine Instruktion auszuarbeiten und dem Kabinettsrate vorzulegen, welche die Länder über die durch den Friedensvertrag und die jetzige Note geschaffene Rechtslage aufklärt und ihnen die Unzulässigkeit vorführt, sich künftighin durch Verpfändung von Landes- oder Gemeindeeigentum Sonderkre<pb facs="krp-0188_r-0007"/>dite zu beschaffen.</p>
+                  <p>Weiters genehmigt der Kabinettsrat die Absendung einer Note an die Reparationskommission mit dem vom Staatssekretär Dr. Reisch gekennzeichneten Inhalt und legt endlich allen beteiligten Ressorts die Verpflichtung auf, unter allen Umständen und mit allen Mitteln dafür zu sorgen, dass die zur Unterbringung der österreichischen Sektion der Reparationskommission angeforderten Räumlichkeiten spätestens am 7. Juni l. J. zur Instandsetzung für die Zwecke der Reparationskommission bereitgestellt werden.</p>
+               </div>
+               <div type="top" xml:id="krp-0188_top03">
+                  <head>
+                     <label>
+                        <num n="3">3.</num>
+                        <seg>Errichtung einer AG für Veredlungsverkehr und [für] treuhändige Güterverwertung (Treuga).</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Reisch</hi> führt aus, dass bei den Verhandlungen über die Erlangung ausländischer Rohstoffkredite die ausländischen Geldgeber immer wieder das Verlangen nach einer Bürgschaft durch eine privatwirtschaftliche, jedoch mit einer gewissen Offizialität ausgestatteten Gesellschaft stellen, damit die den inländischen Betrieben zu kreditierenden Rohstoffe während der ganzen Dauer des Produktionsprozesses vor staatlichen oder sonstigen Zugriffen gesichert bleiben und eine solche Verwendung erfahren, welche <pb facs="krp-0188_r-0008"/>durch die Verwertung eines Teiles der Fertigware im Auslande die Bezahlung der geschuldeten Beträge in fremder Valuta ermögliche.</p>
+                  <p>In Anbetracht dieses Begehrens sei eine Gruppe heimischer Industrieller, Gewerbetreibender und Kaufleute, die mit ausländischen Finanzgruppen, welche zur Gewährung von Rohstoffkrediten bereit wären, in Fühlung stehe, sowohl an das Staatsamt für Finanzen, wie an das Staatsamt für Handel und Gewerbe, Industrie und Bauten herangetreten, um sich des Einverständnisses zur Errichtung einer Aktiengesellschaft zu versichern, welche ebenso wie gleichartige in Deutschland ins Leben getretene Unternehmungen als Treuhandstelle für die ausländischen Kreditgeber in dem Sinne fungieren solle, dass sie, im Auftrage und für Rechnung derselben, die zur Realisierung der rechtlichen Sicherung der eingeräumten Rohstoffkredite notwendigen kaufmännischen Kontrollen durchführt. Da aus den Unterhandlungen mit den ausländischen Gruppen der Eindruck gewonnen wurde, dass diese in die korrekte Gebarung einer solchen Organisation ein erhöhtes Vertrauen setzen würden, wenn die Unternehmung unbeschadet ihres im Übrigen privatwirtschaftlichen Charakters doch eine <pb facs="krp-0188_r-0009"/>gewisse Offizialität besitzt, so haben die Proponenten des Unternehmens der Regierung in den Statuten der Gesellschaft vorweg eine Staatsaufsicht mit sehr weitgehenden Vollmachten konzediert und dem Staatsamt für Finanzen auch sonst weitgehende Ingerenz auf die Gebarung der Gesellschaft zugestanden.</p>
+                  <p>Diese Form der Kreditgewährung stelle allerdings weder vom privatwirtschaftlichen, noch vom volkswirtschaftlichen Standpunkte aus betrachtet, ein Ideal dar, weil sie das heimische Gewerbe in einen Grad der Abhängigkeit von den ausländischen Kreditgebern bringe, der leicht in Lohnsklaverei ausarten könne. Die Erlangung von Rembourskrediten aufgrund des Personalkredites hin wiederum, wie sie unter normalen Verhältnissen üblich war, sei aber infolge der augenblicklichen Zerrüttung unseres Geld- und Kreditsystems, nur noch sehr großen Unternehmungen mit internationalen Beziehungen möglich und noch insoferne erschwert, als infolge der internationalen Geldknappheit und des internationalen Kapitalhungers der Industrie die ausländischen Kapitalisten nähere und gesichertere Gelegenheiten zu fruchtbringender Verwertung ihrer Kapitalien finden, sodass ihnen Zinsengewinn und hohe Provisionen <pb facs="krp-0188_r-0010"/>allein keinen hinreichenden Anreiz bieten. Der heimische Erzeuger müsse sich daher, um den Kredit zu erlangen, vielfach dazu entschließen, den Kreditgebern die vollständige Verfügung über das daraus hergestellte Produkt zu gewähren und ihnen auf diese Weise auch einen mehr oder weniger erheblichen Teil des Handelsgewinnes zu überlassen, wogegen er allerdings dem Risiko der Valutaspekulation entgehe. Die Schwierigkeiten liegen darin, dass infolge der valutarischen Verhältnisse der freihändige Einkauf von Rohstoffen für unsere Industrie den Besitz von Zahlungsmitteln mit internationaler Geltung voraussetze und diese nur durch Exporte aufgebracht werden können, für welche eben wiederum das ausländische Rohmaterial die Vorbedingung bilde.</p>
+                  <p>Die Vorschläge der Proponenten gehen dahin, ausländische Zahlungsmittel zur Beschaffung von Rohstoffen für das heimische Gewerbe dadurch aufzubringen, dass der Verkauf und Export hochwertiger Vermögensobjekte aller Art, insbesondere von Juwelen, Altertümern, Kunstgegenständen u. dgl., welcher sich gegenwärtig in ganz ungeregelter Weise vollzieht, unter Kontrolle und nach den Ab<pb facs="krp-0188_r-0011"/>sichten der für die Regelung des Außenhandels, zuständigen öffentlichen Faktoren in eine legitime, wohlorganisierte, und loyal arbeitende Aktion übergeleitet und die Exportvaluta, die bisher in vielen Fällen weder für den Staat, noch für die heimische Volkswirtschaft greifbar und zumeist der Erwerbung von entbehrlichen Konsumgütern oder der Thesaurierung gewidmet wurde, zur Beschaffung von Rohstoffen dauernd dem Wiederaufbau der heimischen Volkswirtschaft und der Befruchtung des Gewerbes zugeführt werde.</p>
+                  <p>Um die Widmung der durch diese Aktion aufgebrachten ausländischen Zahlungsmittel für die Zwecke des wirtschaftlichen Wiederaufbaues sicherzustellen und die öffentlichen Interessen dabei in gehöriger Weise zu wahren, solle mit der Gesellschaft ein Vertrag geschlossen werden, durch welchen festgelegt wird, dass die besagten fremden Valuten dazu verwendet werden, eine fortlaufende Belieferung des Gewerbes und der Industrie mit Rohstoffen zu organisieren. Dies hätte in der Weise zu geschehen, dass das investierte und treuhändig sichergestellte Kapital durch entsprechende Exporte von Fertigfabrikaten fortwährend in ausländischer Valuta erneuert wird, so dass eine Aufzehrung der gewonnenen Mittel im inländischen Konsum vermieden bleibt. Dabei solle dem Staats<pb facs="krp-0188_r-0012"/>amte für Finanzen vorbehalten werden, die Verwendung dieser Valuten den Bestrebungen des Staatsamtes für Finanzern nutzbar zu machen, welche dahin zielen, im Vereine mit ausländischem Kapital möglichst unter Mitwirkung der Gesellschaft Bankorganisationen zu schaffen, welche in größerem Stile Rohstoffkredite für die österreichische Volkswirtschaft beschaffen oder sonst wie an deren Wiederaufbau mitwirken. Die Vereinbarungen darüber, in welcher Weise die von der Gesellschaft beschafften Valuten bei derartigen Bankanstalten fruchtbringend angelegt werden sollen, bleiben besonderen Abmachungen vorbehalten. Insbesondere sei in Aussicht genommen, dass die Gesellschaft ihre Treuhandfunktionen derartigen Bankanstalten zur Verfügung stelle und als deren inländische Agentur wirke.</p>
+                  <p>Weiterhin erscheine es erforderlich, über den Rahmen der statutenmäßig festgesetzten Staatsaufsicht noch hinausgehende vertragliche Sicherungen für eine widmungsgemäße Gebarung der Gesellschaft zu treffen. Von dem ursprünglichen Gedanken, den Staat bei der Gesellschaft unmittelbar kapitalistisch zu beteiligen, sei aus praktischen Gründen Abstand genommen worden. Im Interesse der Erreichung <pb facs="krp-0188_r-0013"/>der von der Gesellschaft angestrebten Ziele erscheine es vielmehr notwendig, ihren privaten Charakter zu wahren, um insbesondere das Vertrauen der ausländischen Interessenten zu der durchaus geschäftlichen und von allen fiskalischen Rücksichten freien Gebarung der Gesellschaft zu befestigen und jedem Anschein, als handle es sich um einen bürokratischen oder sonst schwerfälligen Apparat, vorzubeugen. Auch wahre die Benützung eines privaten Unternehmens, dessen Verhältnis zum Staat, durch ein zweiseitiges Abkommen geregelt ist, der Staatsverwaltung eine größere Dispositionsfreiheit, als die staatliche Eigenbeteiligung. Aus diesen Erwägungen solle statt einer direkten Beteiligung des Staates der Gesellschaft vertragsmäßig auferlegt werden, unbeschadet der im Statut festgelegten, sehr weitgehenden Aufsichtsrechte der Staatsregierung, vor Bestellung der leitenden Funktionäre des Unternehmens zunächst die Vorgenehmigung des Staatsamtes für Finanzen für die dafür in Aussicht genommenen Persönlichkeiten einzuholen. Der Präsident der Gesellschaft solle über Vorschlag des Verwaltungsrates direkt vom Staatsamte für Finanzen ernannt werden.</p>
+                  <p>Unter der Voraussetzung, dass die Gesellschaft sich all diesen Sicherungen <pb facs="krp-0188_r-0014"/>und Kontrollen unterwirft, erscheine es im öffentlichen Interesse gelegen, der Exportaktion der Gesellschaft ein tunlichst großes Material an hochwertigen Objekten zuzuführen. Um den Bestrebungen der Gesellschaft in dieser Hinsicht eine Stütze zu bieten und gleichseitig für die Einhaltung des legitimen Weges bei der Veräußerung von hochwertigen Gegenständen nach dem Auslande einen materiellen Anreiz zu schaffen, solle der Gesellschaft vertragsmäßig das Recht eingeräumt werden, den Verkäufern bis zu 40 % der erlösten ausländischen Valuta zu überlassen, während der Rest, soweit er nicht dauernd den ausländischen Fonds der Gesellschaft für die Beschaffung von Rohstoffen und Rohstoffkrediten zugeführt wird, den allgemeinen Vorschriften entsprechend, der Devisenzentrale einzuliefern sein werde; die Gesellschaft solle nur jenen Teil der Erlöse in ausländischer Valuta behalten dürfen, welcher aus Übergewinnen bei Transaktionen für eigene Rechnung, aus Provisionen, Kommissionen u. dgl., beim An- und Verkauf, resultiert. Des Weiteren sollen der Gesellschaft generelle Erleichterungen hinsichtlich der Formalitäten des Ein-, Aus- und Durchfuhrverfahrens eingeräumt werden, welche sie in die Lage versetzen, <pb facs="krp-0188_r-0015"/>mit größerer Beweglichkeit zu operieren. Diese Perspektiven haben beispielsweise eines der für die Aktion hauptsächlich in Betracht kommenden und sehr leistungsfähigen Exportgewerbe, das Juwelier- und Goldarbeitergewerbe, bewogen, sich einheitlich der Gesellschaft anzuschließen, weil diese Gewerbetreibenden in der Überlassung eines Teiles der ausländischen Valuta die Möglichkeit sehen, ihr Gewerbe mit den notwendigen Rohmaterialien, namentlich Farbsteinen, aus dem Auslande zu alimentieren und eine erhöhte Exporttätigkeit zu entwickeln. Die Gesellschaft werde aber auch eine Stütze für Aktionen des Staates auf diesem Gebiete bieten können. Dem Staatsamte für Finanzen stehen aufgrund einer mit Hilfe des Hauptmünzamtes und sonstiger offizieller Stellen eingeleiteten Einlösungsaktion größere Mengen von Gold und Silber zur Verfügung und es sei daran gedacht, diese unter Intervention der Gesellschaft dem heimischen Goldarbeitergewerbe zum Zwecke der Herstellung von Exportware zu überantworten, wodurch der doppelte Vorteil einer Unterstützung dieses gegenwärtig an Materialmangel leidenden Gewerbes und der Beschaffung ausländischer Zahlungsmittel für den Staat erreicht werden würde.</p>
+                  <p><pb facs="krp-0188_r-0016"/>Auch sonst bestehen im Rahmen der Staatsverwaltung mehrfache Bedürfnisse in der Richtung der dargestellten Valutabeschaffungsaktion der Gesellschaft. So habe der Staat die Gelegenheit sich ihrer bei Bewertung und Verwertung hochwertiger Objekte aus staatlichem oder aus Privatbesitz, welche im Zuge der Verwaltungsgeschäfte in die Verfügung oder unter die Ingerenz der Regierung gelangt sind, als Treuhänderin und Kommissionärin zu bedienen; sie werde ihm darüber hinaus bei der Sachgüterverwertung, sofern sie eine kaufmännische Behandlung erfordert und insbesondere auch bei der so überaus notwendigen kommerziellen Orientierung staatlicher Betriebe auf den Auslandsabsatz wertvolle Dienste leisten können. Das Bedürfnis der Staatsverwaltung nach einer solchen kaufmännischen Hilfsorganisation trete umso lebhafter in einem Zeitpunkte auf, wo im Zuge der Liquidation Österreichs aufgrund des Friedensvertrages zahlreiche mobile Werte der verschiedensten Art in die Verfügung der Staatsverwaltung gelangt sind, deren Verwertung gegen Valuta im Ausland unbedingt eine sachkundige kaufmännische Behandlung erheische.</p>
+                  <p>Als Gegenleistung dafür, dass die Gesellschaft sich nicht nur den erwähnten weitgehenden Kontrollen und Ingerenzen der Staatsregierung unterwirft, sondern <pb facs="krp-0188_r-0017"/>auch, nach Ausschüttung einer Dividende von 5 % an die Aktionäre dem Staatsschatze einen 25%igen Anteil an Reingewinn einräumt, solle ihr vertragsmäßig zugestanden werden, dass sich die Regierung für die Dauer des Vertrages, die zunächst mit einem Jahre in Aussicht genommen ist, bei allfälliger Verwertung von mobilen Werten der erwähnten Art ausschließlich dieser Gesellschaft als ihrer Treuhänderin und Kommissionärin bedienen werde. Die finanziellen Bedingungen solcher Transaktionen sollen in jedem einzelnen Falle spezieller Vereinbarung zwischen dem Staatsamte für Finanzen und der Gesellschaft vorbehalten bleiben, so dass in jenen besonderen Fällen, in welchen die Gesellschaft vom Staate etwa mit besonderen Verkäufen betraut werden sollte, noch spezielle Abmachungen über einen weitergehenden Gewinnanteil der Staatsverwaltung getroffen werden können.</p>
+                  <p>Abgesehen von den besprochenen vertraglichen Sicherungen, geben auch die Interessenten, welche sich zur Bildung dieser Gesellschaft vereinigt haben, persönliche Gewähr dafür, dass ihre Wirksamkeit tatsächlich auf die angegebenen Ziele gerichtet sein werde. Dem Konzern der Interessenten gehören einige Gruppen der größeren Industrien (Maschinen, Leder, Öl, <pb facs="krp-0188_r-0018"/>und Fett usw.), ferner sämtliche Interessentengruppen des Juwelier- und Goldarbeitergewerbes (einschließlich der in der genossenschaftlichen Organisation vereinigten), endlich die kleinen und mittleren Erzeuger des für den Export arbeitenden Edelgewerbes, die im Verband der Gewerbeförderungsinstitute ihren Sammelpunkt finden, an; die Beteiligung auch ausländischen (englischen und voraussichtlich auch holländischen) Kapitales an dem Unternehmen dürfte besonders geeignet sein, zur Erreichung seiner Ziele beizutragen.</p>
+                  <p>Die Gesellschaft werde den Namen „Treuga, Aktiengesellschaft für Veredlungsverkehr und für treuhändige Güterverwertung“ führen. An ihre Spitze beabsichtige Redner den Leiter der ehemaligen österreichisch-ungarischen Militärwirtschaftsstelle in Bukarest Felix Sobotka, dessen Person für eine großzügige und loyale Geschäftsführung im öffentlichen Interesse alle Gewähr biete.</p>
+                  <p>Redner erbitte sohin vom Kabinettsrate die Ermächtigung, mit der [„]Treuga, Aktiengesellschaft für Veredlungsverkehr und für treuhändige Güterverwertung[„], auf Basis der vorgetragenen Grundsätze einen Vertrag abzuschließen, wobei er sich vorbehalte, über den Fortschritt und die Ergebnisse dieser Aktion dem Kabinettsra<pb facs="krp-0188_r-0019"/>te fallweise zu berichten.</p>
+                  <p>Staatssekretär <hi rend="#letterspaced">Eldersch</hi> und Unterstaatssekretär Dr. <hi rend="#letterspaced">Eisler</hi> äußern Bedenken gegen das der Gesellschaft zugedachte Geschäftsprivileg für Verkäufe nach dem Ausland und verweisen darauf, dass hinsichtlich der Verwertung der Sachdemobilisierungsgüter ein Interessengegensatz mit dem Warenverkehrsbüro geschaffen werde, der unter Umständen eine Beeinträchtigung in der Aufbringung der zur Erfüllung der Lebensmittelverträge mit dem Auslande erforderlichen Kompensationsobjekte befürchten lasse. Unterstaatssekretär Dr. Eisler wünscht insbesondere, dass der Staat sich für die der Gesellschaft einzuräumenden Begünstigungen wenigstens einen stärkeren Einfluss auf die innere Geschäftsgebarung und einen höheren Gewinnanteil sichere.</p>
+                  <p>Staatssekretär Ing. <hi rend="#letterspaced">Zerdik</hi> tritt dafür ein, die staatliche Vorgenehmigung nicht nur bezüglich der Mitglieder des Verwaltungsrates, sondern auch bezüglich des leitenden Direktors zu beanspruchen, wobei dem Staatsamte für Handel und Gewerbe, Industrie und Bauten das Mitbestimmungsrecht zu sichern wäre.</p>
+                  <p>Sektionschef Dr. <hi rend="#letterspaced">Zedtwitz</hi> erbittet Sicherungen dafür, dass die beab<pb facs="krp-0188_r-0020"/>sichtigte Überlassung von 40 % des Valutaeinganges an den Verkäufer keine Verkürzung des Bedarfes des Staatsamtes für Volksernährung an ausländischen Zahlungsmitteln für Lebensmittelkäufe im Auslande bewirke.</p>
+                  <p>Ministerialrat Dr. <hi rend="#letterspaced">Schwarzwald</hi> gibt in längeren Ausführungen den Gedankengang wieder, welcher zum Plane der Schaffung einer Treuhandstelle als Vermittlerin zwischen der rohstoffbedürftigen inländischen Industrie und dem ausländischen Kapital führte und legt insbesondere die Notwendigkeit dar, die Treuga in die Lage zu versetzen, sich zur Stärkung ihrer Vertrauenswürdigkeit durch selbständige Geschäfte einen gewissen Eigenbesitz an ausländischer Valuta zu schaffen. Das Hauptinteresse des Staates liege nicht in der Gewinnbeteiligung, sondern in der Erzielung einer strengen Kontrolle über die Valuteneingänge und der Schaffung einer Gewähr dafür, dass sie tatsächlich der Wiederherstellung unserer Wirtschaft dienstbar gemacht werden. Darum solle auch der 40%ige Anteil des Verkäufers am Valutenerlöse womöglich nicht im Baren, sondern in Anteilscheinen der holländischen Bank erfolgt werden, damit das Geld als solches weiter im Interesse unseres Wiederaufbaues arbeite. Die Gesellschaft sei bereit, dem Staate Kon<pb facs="krp-0188_r-0021"/>trollrechte in jedem gewünschten Umfange einzuräumen, wobei dann noch immer im einzelnen Falle, wo die Gesellschaft mit der Durchführung besonderer staatlicher Verkäufe betraut wird, weitergehende Befugnisse ausbedungen werden können. Die Gewährung einer Vorzugsstellung an die Treuga bei Verwertung der Sachdemobilisierungsgüter im Auslande sei nicht gedacht, der Staat behalte vielmehr die volle Freiheit in der Entscheidung, sich je nach der Zweckmäßigkeit der Treuga oder des Warenverkehrsbüros zu bedienen. Eine Schmälerung der Eingänge der Devisenzentrale an Valuta aus der Überlassung von 40 % an den Verkäufer sei nicht zu besorgen, da diese Art von Verkäufen sich bisher ausschließlich im Schleichwege vollzogen und der Erlös aus ihnen für die Allgemeinheit überhaupt zur Gänze verloren ging.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Reisch</hi> betont, dass der Verwaltungsrat der Treuga durchwegs aus Vertrauenspersonen der Regierung bestehe, die alle Gewähr für eine loyale Geschäftsführung bieten. Das Vorgenehmigungsrecht des Staates erstrecke sich auch auf die Person des leitenden Direktors und solle im Einvernehmen mit dem Staatsamte für Handel und Gewerbe[, Industrie und Bauten] ausgeübt werden. Die Treuga sei berufen und geeignet, den großen volkswirtschaftlichen <pb facs="krp-0188_r-0022"/>Dienst zu leisten, unserer Wirtschaft in organisierten Formen ausländisches Kapital zu verschaffen; Redner erbitte daher ungeachtet aller möglichen Kritik in der Öffentlichkeit einen Beschluss des Kabinettsrates im Sinne seines Antrages, um mit den am 5. Juni l. J. nach Wien kommenden holländischen Interessenten endgiltige Abmachungen treffen zu können.</p>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> bemerkt, dass die Hauptfunktion der Treuga in der Belebung des Wirtschaftsverkehres zu suchen sei und bei richtiger Durchführung dieser Aufgabe die in der Debatte vorgebrachten Bedenken in den Hintergrund treten.</p>
+                  <p>Der Kabinettsrat genehmigt sohin den Abschluss des von Staatssekretär Dr. Reisch vorgeschlagenen Übereinkommens.</p>
+               </div>
+               <div type="top" xml:id="krp-0188_top04">
+                  <head>
+                     <label>
+                        <num n="4">4.</num>
+                        <seg>Lohnforderungen der Arbeiter der Versuchswirtschaft der Hochschule für Bodenkultur.</seg>
+                     </label>
+                  </head>
+                  <p>Unterstaatssekretär <hi rend="#letterspaced">Glöcke1</hi> bringt vor, dass die Arbeiter der Versuchswirtschaft der Hochschule für Bodenkultur in Groß-Enzersdorf im letzten Winter im Streikwege die Entlohnung nach dem Kollektivvertrag der land- und forstwirtschaftlichen Arbeiter Niederösterreichs durch<pb facs="krp-0188_r-0023"/>gesetzt haben, wodurch eine Steigerung der Wirtschaftsauslagen um etwa die Hälfte bewirkt wurde. Seit dem 1. März l. J. stehe ein neuer Kollektivvertrag der land- und forstwirtschaftlichen Arbeiter mit wesentlich höheren Lohnansätzen in Geltung, den die Arbeiter der Versuchswirtschaft nun gleichfalls auf sich angewendet sehen wollen. Dadurch würden sich die Wirtschaftsauslagen der Versuchswirtschaft gegenüber dem Vorjahre ungefähr verdoppeln.</p>
+                  <p>Das Ressort stehe zwar auf dem Standpunkte, dass dieser Kollektivvertrag ebenso wie der frühere sich rechtlich nicht auf die Versuchswirtschaft beziehe, beabsichtige aber doch, die Forderungen der Arbeiter zu erfüllen, weil ein Streik im jetzigen Zeitpunkt zu schweren Schäden für die Wirtschaft führen müsste und sich für die Dauer auf der Versuchswirtschaft wesentlich geringere Löhne, als sie die niederösterreichischen privaten Landwirtschaften zu bezahlen haben, kaum aufrechterhalten lassen dürften.</p>
+                  <p>Das Staatsamt der Finanzen habe im Hinblicke darauf, dass auch bei den in Niederösterreich gelegenen staatlichen Industriebetrieben die Kollektivverträge der Arbeiter der Privatindustrie angewendet werden, keine Einwendung erhoben, jedoch gewünscht, dass die Angelegenheit mit <pb facs="krp-0188_r-0024"/>Rücksicht auf ihre Bedeutung für die übrigen landwirtschaftlichen Staatsbetriebe im Kabinettsrate zum Vortrag gebracht werde.</p>
+                  <p>Redner erbitte demgemäß die Ermächtigung zur Anwendung des Kollektivvertrages auf die Arbeiter der Versuchswirtschaft in Groß-Enzersdorf.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Reisch</hi> macht zu der Zustimmung der Finanzverwaltung den Vorbehalt, dass bei einer weiteren Steigerung der Betriebskosten der Versuchswirtschaft deren Einstellung ins Auge gefasst werden müsste.</p>
+                  <p>Der Kabinettsrat erteilt schließlich die von Unterstaatssekretär Glöckel erbetene Ermächtigung.</p>
+                  <p/>
+               </div>
+            </div>
+            <div type="stenogramme">
+               <div n="1">
+                  <head>[KRP 188, 4. Juni 1920, Stenogramm Groß]</head>
+                  <p><pb facs="krp-0188_s01-0001"/>188. Sitzung, 4. Juni 1920.</p>
+                  <p>1.</p>
+                  <p><hi rend="#s">Renner: R. von Großindustriellen und Banken herausgegeben -.</hi></p>
+                  <p>[Zur] Mission des Kapitän de l'Epine. Eines Tages ist DelE. [de l'Epine] bei der Salzburger Landesregierung, Rehrl, erschienen, hat </p>
+                  <p>erklärt - in offizieller Eigenschaft als Mitglied der französischen Militärmission sich erkundigt, wie es mit der Anschlussfrage stehe. Tags darauf ist er </p>
+                  <p>zu den Großdeutschen gegangen und hat mit - ihm gesprochen. Es ist kein Zweifel, dass er weit die Grenzen überschritten hat, die ihm notwendigerweise </p>
+                  <p>gezogen sind als Vertreter der Militärmission einer fremden Macht. Ich habe den Gesandten eingeladen und gedenke, ihm Vorhalte zu machen. Notwendig </p>
+                  <p>wäre eine Protestnote nach Paris. Das schiene mir zu viel. Es würde vielleicht zu sehr verletzen. Ich werde Aufklärungen verlangen. E. [de l'Epine] hat den Großdeutschen </p>
+                  <p>gegenüber direkt für den Prinzp[...] ?Ruprecht von Bayern Propaganda gemacht. Das steht im Widerspruch zum Friedensvertrag und zu den </p>
+                  <p>Staatsgesetzen. Ich werde erklären, dass er sich nicht auf österreichischem Boden weiter aufhalten soll, sonst würde er wegen Hochverrat verfolgt. </p>
+                  <p>Aber schriftlich werde ich nicht einschreiten. Die Herren nehmen das zur Kenntnis.</p>
+                  <p>2.</p>
+                  <p>Renner: </p>
+                  <p>Die von uns jüngst mitgeteilte Radiodepesche Tsch[itscherins] ist eingetroffen und [er] führt Beschwerde </p>
+                  <p>wegen Verletzung der Neutralität und erklärt, dass die Rücksendung der Kriegsgefangenen nicht stattfinden könne, wenn weitere Verletzungen stattfinden. </p>
+                  <p>Wir haben erklärt, dass früher Feindseligkeiten mit Sowjet [...] nicht stattgefunden haben und [seither] keine Lieferung ... strikteste Neutralität zwischen </p>
+                  <p>beiden kriegsführenden [Parteien beobachtet wird]. Eine weitere Äußerung ist nicht erfolgt.</p>
+                  <p>3.</p>
+                  <p>[Zugezogen:] Schüller. Reisch: Note der Reparationskommission. </p>
+                  <p>Den offiziellen Text habe ich nicht vor mir. Sie wurde im Budgetausschuss verlesen und ist in der Wiener Zeitung wörtlich wiedergegeben. </p>
+                  <p>Ich darf daher wohl - den Inhalt als bekannt vorauszusetzen. Der Inhalt enthält für jene, welche den Friedensvertrag genau studiert haben, keine </p>
+                  <p>Überraschung. Der Eindruck der Note in der Öffentlichkeit ist zum Großteil darauf zurückzuführen, dass die Öffentlichkeit nicht sehr gründlich ist </p>
+                  <p>und unangenehme Dinge vergisst, so dass [sie] eine genaue Evidenz über die Bedingungen des Friedensvertrages nicht vor Augen hatte. Wenn man den </p>
+                  <p>Friedensvertrag zur Hand nimmt, so sieht man, dass die Note nichts enthält, was sich nicht aus dem Friedensvertrag ableiten könnte. </p>
+                  <p>Es können daher keine Vorstellungen - nicht erhoben werden. Einige Aufklärungen werden nötig sein, doch dürfte es sich nicht empfehlen, es schriftlich zu </p>
+                  <p>machen, da die Österreich-Sektion der Reparationskommission nächste Woche in Wien eintreffen dürfte und die Verhandlungen besser mündlich gepflogen werden können.</p>
+                  <p>Im wesentlichen zerfällt die Note in mehrere voneinander scharf zu trennende Teile. Der erste Teil über die Kreditfrage verfügt </p>
+                  <p>die Formalisierung der bisher aufgenommenen und weiter aufzunehmenden Kredite indem verfügt wird, dass alle Kredite seit dem 3. November ?nunmehr </p>
+                  <p>in die Form von Schatzscheinen zu kleiden sind, welche 6 % verzinslich sind und mit 1. Jänner '25 als rückzahlbar bezeichnet werden. </p>
+                  <p>Die bisher gegebenen Kredite sind also einzurechnen, weiters auch die jetzt in Verhandlung stehenden Kredite und dann wird Erwähnung getan von </p>
+                  <p>den von Zeit zu Zeit uns neu zukommenden Krediten. Wir dürfen also hoffen, dass die jetzigen Kredite nicht die letzten sein werden. </p>
+                  <p>Die Schatzbons werden auf Gold lauten und ich werde daher bemüßigt sein, eine eigene Gesetzesvorlage einzubringen, welche mich ermächtigt, </p>
+                  <p>über Verlangen der Reparationskommission Schatzbons auszustellen. Zu begrüßen ist, dass diesen Bons ausdrücklich das Vorrecht vor den Reparationen </p>
+                  <p><pb facs="krp-0188_s01-0002"/>eingeräumt wird, weil dies hoffen lässt, dass die Bons als entsprechend fundiert anerkannt werden, soweit sich </p>
+                  <p>mit der Zeit die Möglichkeit einer Negoziierung auf den Geldmärkten ergeben wird. Die Note schreibt als Gegenstück für die </p>
+                  <p>eingeräumten Kredite Österreich gewisse Verpflichtungen vor. Auch hier wird einige Aufklärung notwendig sein. </p>
+                  <p>So dort, wo es heißt, dass die österreichische Regierung ... [die Veräußerung] alles öffentlichen Eigentums, welches dem Staat, den Ländern und Gemeinden </p>
+                  <p>zukommt, zu verhindern [habe], so müssen wir aufmerksam machen, dass die Gesetze keine Handhabe bieten, diese Vorschrift in die Praxis zu übersetzen </p>
+                  <p>und das strikte Verlangen nach Durchführung eigene gesetzliche Vorschriften erfordern würde. Vorerst muss [mit] der Reparationskommission in Fühlung getreten werden, </p>
+                  <p>ob es wirklich buchstäblich gemeint ist. Auch im 2. Punkt scheint [sich] die Kommission über die verfassungsrechtlichen Einrichtungen </p>
+                  <p>nicht klar zu sein, wenn sie vorschreibt ... die beantragten Gesetze zur Annahme zu bringen. Wir können zwar Vorlagen einbringen, </p>
+                  <p>aber sind nicht in der Lage, [eine] Verpflichtung wegen deren Annahme zu übernehmen. Die Beschränkungen, dass wir nicht mehr ins Ausland verkaufen dürfen und </p>
+                  <p>kein Monopol einräumen dürfen, lassen sich aus dem Frieden ableiten und enthalten nichts Neues. Schwierig ist, wenn vorgeschrieben </p>
+                  <p>wird, dass eventuell von privater Seite durchgeführte Verkäufe rückgängig gemacht werden sollen. Die Kommission dürfte sich nicht klar geworden sein </p>
+                  <p>darüber, welche Erschütterung der Rechtsordnung da entstehen könnte. Wenn ein Mann Schifffahrts-Aktien an Italien verkauft hat, so gibt </p>
+                  <p>es wohl kein Mittel, den Verkauf rückgängig zu machen. Dann wird noch vorbehalten der Reparationskommission, dass sie falls sie es </p>
+                  <p>wünschenswert hält, die Einhebung von Steuern ... in die Hand nehmen kann und die bezügliche Einhebung auch beaufsichtigen kann. </p>
+                  <p>Dass die Reparationskommission den Wunsch haben sollte, für uns den Steuerbüttel zu spielen, glaube ich nicht. Es dürfte eine nicht glückliche Ausdrucksweise </p>
+                  <p>sein, um zu sagen, dass die Reparationskommission auf die Regierung entsprechenden Einfluss nehmen wird, die notwendigen Steuervorschläge </p>
+                  <p>zur Aufrechterhaltung des Staatshaushaltes einzubringen. Auch der Vorbehalt der Vorstellung wegen Sparsamkeit in der öffentlichen </p>
+                  <p>Verwaltung gehört wohl auf das Gebiet, dass sie bei der Regierung Vorstellung erheben wird. Dass sie die Verwaltung in Österreich einrichten </p>
+                  <p>wollte und uns in der Sparsamkeit mit gutem Beispiel voraus gehen könnte, glaube ich nicht nachdem -.</p>
+                  <p>[Ich stelle den] Antrag, dass wir eine ganz kurze Antwort, die in das Meritum der Sache nicht eingeht, erstatten und darin </p>
+                  <p>im Wesentlichen uns vorbehalten, nach Eintreffen der Reparationskommission in Wien in mündliche Verhandlungen über die gestreiften Punkte </p>
+                  <p>zur Klarstellung einzutreten. Ein ausgearbeiteter Entwurf liegt noch nicht vor. Ich würde glauben, dass wir höflich danken dafür, </p>
+                  <p>dass die Kommission in Aussicht stellt, [dass sie] einen vollständigen Wirtschaftsplan zur Wiederaufrichtung Österreichs ausarbeiten will und dass wir im Übrigen </p>
+                  <p>versichern, dass wir die Bestimmungen der Note, soweit sie mit dem Friedensvertrag im Einklang stehen, genauestens ein[ge]halten haben; </p>
+                  <p>soweit aber eine Bestimmung nicht klar ist und ihre Tragweite wir nicht zu erkennen vermögen, [wir uns vorbehalten], nach Eintreffen der </p>
+                  <p>Reparationskommission darüber mündliche Verhandlungen einzuleiten.</p>
+                  <p>Mayr: </p>
+                  <p>Die Note enthält an einer Stelle ein schweres Bedenken. Die österreichische Regierung übernimmt auch </p>
+                  <p>die Verpflichtung, den Verkauf und die Übertragung alles öffentlichen Eigentums von Staat, Ländern und Gemeinden usw. Ich glaube, die Ausdehnung auf </p>
+                  <p>das Eigentum der Länder und Gemeinden wäre eine bedeutende Überschreitung von [Artikel] 197 des Friedens. Dort ist das Pfandrecht gelegt </p>
+                  <p><pb facs="krp-0188_s01-0003"/>auf das Vermögen Österreichs und nicht jenes der Länder und Gemeinden. Es ist bei der Landesregierung schon seinerzeit eine Bewegung [jener gewesen], </p>
+                  <p>welche befürchten, dass eventuell auch auf das Eigentum der Länder und Gemeinden gegriffen werden könnte und damals remonstrieren wollten dagegen. </p>
+                  <p>Wenn nun die Note als authentisch bekannt wird, dass auch auf das Eigentum von Ländern und Gemeinden gegriffen werden kann, wird in den Ländern eine </p>
+                  <p>bedeutende Aufregung entstehen und ich glaube, wir sind verpflichtet, dafür zu sorgen, dass den Ententevertretern gesagt wird, dass das eine </p>
+                  <p>Überschreitung des Friedensvertrages, [Artikel] 197, ist. Es würde sich empfehlen, jetzt schon in geeigneter Form die Länder aufmerksam </p>
+                  <p>zu machen, auch die Gemeinden, was ihnen droht, oder wenn das nicht angeht, dass man bei der Antwort auf die Note auf </p>
+                  <p>die Inkongruenz hinweist.</p>
+                  <p>Schüller: </p>
+                  <p>Diese Frage wurde schon mit den al[liierten] Mächten besprochen. Der Wortlaut hat natürlich auch die Interpretation </p>
+                  <p>zugelassen, dass auch das Privateigentum inbegriffen ist. Tatsächlich erstreckt sich die Note und der Frieden auch auf das </p>
+                  <p>Privateigentum: 1.) Öffentliches Eigentum; 2.) Einnahmen; 3.) privates Eigentum, Grundbesitz, Vieh, Aktien, </p>
+                  <p>Waren, können zu Reparationszahlungen herangezogen werden. Nun haben wir gegen eine solche Auffassung des [Artikel] 197 </p>
+                  <p>schon Vorstellung erhoben und die Antwort erhalten, Privateigentum ist in [Artikel] 197 nicht gemeint sondern in anderen, wohl aber </p>
+                  <p>das öffentliche Eigentum. Wenn wir das auf das Staatseigentum beschränken wollen, so fürchte ich, dass wir kein Glück haben werden. </p>
+                  <p>Sie werden einwenden, die Kredite werden verwendet für die Länder und die ganze Bevölkerung. Ich weiß nicht, wie sie [davon] Gebrauch machen könnten, aber ich </p>
+                  <p>glaube nicht, dass sie von der Erklärung abgehen.</p>
+                  <p>Mayr: </p>
+                  <p>Ich würde bitten, dass ausdrücklich darauf hingewiesen wird, dass in [Artikel] 197 Länder und Gemeinden nicht ausdrücklich genannt sind. </p>
+                  <p>Sonst glauben sie, die Staatsregierung lässt jetzt etwas zu, worüber früher nie die Rede war.</p>
+                  <p>Renner: </p>
+                  <p>Vor den siegreichen Mächten hat nur die Monarchie und nicht die Länder bestanden. Sie kümmern sich nicht, </p>
+                  <p>wie das im Inneren aussieht. Öffentliches Gut umfasst Staat, Länder und Gemeinden. Da von der Rep[aration] auch das private Eigentum </p>
+                  <p>ergriffen wird, so gibt es kein Entrinnen. Wir können eine Bemerkung machen, aber es nützt nichts.</p>
+                  <p>Mayr: </p>
+                  <p>Wir sollten uns gegen die direkte Aufzählung wehren, weil es im [Artikel] 197 nicht geschehen ist, damit uns </p>
+                  <p>die Länder keine Vorwürfe machen.</p>
+                  <p>Renner: </p>
+                  <p>Wir machen keine gute Figur, wenn wir sagen, bloß der Staat haftet für die Reparation.</p>
+                  <p>Miklas: </p>
+                  <p>Ich halte die Bedenken Mayrs innenpolitisch [für] berechtigt. Er soll in einer Versammlung darauf hinweisen und eine Wendung </p>
+                  <p>gebrauchen, dass man in Regierungskreisen nicht einsieht, wie das mit herangezogen werden [soll]. Offiziell die Entente möchte ich </p>
+                  <p>nicht hereinziehen. Es sieht schlecht aus, wenn der Staat nur leisten will, die Länder nicht. In der Note wird man sagen, wir </p>
+                  <p>sprechen mündlich, in der Sache selbst aber nicht davon reden.</p>
+                  <p><pb facs="krp-0188_s01-0004"/>Fink: </p>
+                  <p>So günstig der erste Punkt der Note ist, so bedenklich sind die Bedingungen. Ich habe den Eindruck, dass </p>
+                  <p>da die Entente uns mit diesen Sachen kommt, um uns ganz in die Hand zu bekommen und was den Anschluss [betrifft] uns möglichst </p>
+                  <p>zu binden. Ich habe mich gewundert, dass der Kanzler mit der Sache so in die Öffentlichkeit gegangen ist bevor das Kabinett davon etwas </p>
+                  <p>erfahren hat. Es hätte erst im Kabinett beraten werden müssen vor der Publikation im Finanzausschuss. Für die Zukunft wäre es besser, </p>
+                  <p>solche Dinge erst im Kabinett zu beraten und erst dann im Haus und den Ausschüssen es veröffentlichen. Ich meine, wir sollen auf alles, </p>
+                  <p>was nicht ganz nach dem Frieden ist, dass wir es zu leisten haben, sollen wir entgegnen und unsere Rechte möglichst wahren - z. B. was den </p>
+                  <p>Gemeinden gehört, der Haftung zu unterwerfen, das geht doch sehr weit. Sagen muss man ihnen schon auch, dass man das nicht </p>
+                  <p>als Pfand uns nehmen kann. Ich meine, wir sollen auch in den anderen Punkten, welche Reisch angeführt hat, Aufklärungen verlangen. </p>
+                  <p>Man nimmt uns so in die Hand, dass Österreich unter völlige Kontrolle genommen wird und unter Kuratel. Wenn es auch nichts </p>
+                  <p>nützt, so sollen wir uns doch dagegen wehren.</p>
+                  <p>Renner: </p>
+                  <p>Es wird uns schwer werden, einen Anspruch zu erheben. Wir haben das Getreide bekommen. Der erste Kreditposten </p>
+                  <p>sind die Lebensmittel. Diese sind an alle Gemeinden zur Verteilung hinaus gegangen. Wir haben die Lebensmittel und sollen dafür Goldbons </p>
+                  <p>ausgeben. Die Entente muss sich versichern, dass sie bezahlt und gedeckt werden. Nun kann man keine einzige öffentliche Körperschaft </p>
+                  <p>von der Verpflichtung zu zahlen ausnehmen. Auch die Gemeinden waren an den Lebensmittelsendungen interessiert. Wenn wir das bei der Entente </p>
+                  <p>[...], so werden wir keinen Erfolg haben. Etwas anderes ist es mit den Gesetzen. Dann die Außerkraftsetzung der privaten Käufe. </p>
+                  <p>Die Aktien der ?Alpine sind veräußert worden und ich glaube, dass die Reparationskommission das gesagt hat von der Rückgängigmachung der Verkäufe – </p>
+                  <p>[dass] sich [das] auf die Verkäufe ?Alpine der bezieht oder der ?Loyd-Dampfer. Man wird ihnen die Schwierigkeit klar machen. Ich meine, </p>
+                  <p>dass man die einzelnen Verwahrungen und Hinweise darauf, was durchführbar, schwer oder undurchführbar ist, sich aufsparen soll für die Anwesenheit </p>
+                  <p>der österreichischen Sektion in Wien. Ich würde mich begnügen mit einer allgemeinen Antwort.</p>
+                  <p>Was die Mitteilung anlangt im Ausschuss, so ist der Vorgang nur in der Hinsicht neu -. Sonst sind </p>
+                  <p>bei Einlangen von Noten [diese] nach der [...] einfach der Presse mitgeteilt worden. Wir können sie ja nicht unterschlagen, es wird </p>
+                  <p>ja auch von der Entente veröffentlicht. Ich habe mit Obmann Weißkirchner gesprochen, ob er es nicht zweckmäßiger </p>
+                  <p>findet, statt durch die Presse, sie direkt bekannt zu machen im Ausschuss. Meine angeknüpften Bemerkungen haben nichts ?verschlagen. </p>
+                  <p>Wir werden es immer so machen, dass die Note erst über die gerade tagenden Ausschüsse - parlamentarischen Körperschaften bekannt zu machen.</p>
+                  <p>Schüller: </p>
+                  <p>Die richtige Beurteilung der Note geht aus dem Friedensvertrag hervor. Die Aufgabe der Reparationskommission ist die Bestimmung der Summe, </p>
+                  <p>welche [wir] bis Mai '21 zu zahlen haben. Deutschland hat 20 Milliarden Mark auferlegt bekommen und geleistet. Das wäre ihre </p>
+                  <p>Aufgabe. Alles, was an Garantien im Frieden enthalten ist - die Hypothek auf das öffentliche Eigentum und die Steuern und schließlich das private Eigentum – </p>
+                  <p>alles soll dienen zur Sicherung der Reparationszahlung, nicht irgendwelcher Kredite. Die Reparationskommission kann bei Säumigkeit Strafmaßnahmen </p>
+                  <p>ergreifen. Sie hat auch die Aufgabe, das Steuersystem zu überwachen. Dann hat Österreich [jene Gesetze] einzubringen, anzunehmen und durchzuführen, </p>
+                  <p>welche zur Durchführung des Friedensvertrages erforderlich sind. Jetzt können [wir] uns aus dem Geld, dass wir aufbringen, Lebensmittel kaufen.</p>
+                  <p><pb facs="krp-0188_s01-0005"/>Wichtig ist, was in der Note nicht steht, nämlich, dass wir bis Mai '21 Reparationen zu zahlen haben und dafür Bürgschaften </p>
+                  <p>genommen werden können. Es heißt nur am Schluss, sie werden [Österreich] wirtschaftlich aufrichten, damit wir die Reparationen zahlen können. Positiv </p>
+                  <p>steht darin, dass nicht wir - nicht zahlen, sondern dass sie uns gezahlt haben, neue Kredite gewähren und weitere Kredite für uns in </p>
+                  <p>Aussicht nehmen. Die Kredite sollen gedeckt werden durch Schatzbons. Unter Umständen könnten diese negotiabel werden. Der </p>
+                  <p>Kredit ist ein Blankokredit, weil reale Sicherheiten dafür nicht gestellt werden. Die Reparationskommission [sagt], es wurden schon Pfänder </p>
+                  <p>gegeben. Diese Sicherheiten, welche bis auf die ausländischen Wertpapiere nicht realisiert wurden, werden freigegeben. Sie bleiben unter der Kontrolle und </p>
+                  <p>statt dessen nehmen sie die Sicherheiten, welche sie im Frieden für die Reparationen bekommen haben, jetzt für die Kredite und die Punkte, </p>
+                  <p>welche sie dabei anführen, sind die Punkte, über welche Reisch schon verhandelt hat. Sie spielen auf das Tabakmonopol an. </p>
+                  <p>Dann sagen sie Kunstgegenstände. Wir haben den Verkauf nicht durchgeführt, sie behalten sich vor, Kunstgegenstände als Pfand </p>
+                  <p>zu verlangen. Darin liegt die einzige substanzielle Garantie für die Bons. Ob sie von den Garantien Gebrauch machen werden, </p>
+                  <p>ist wenig wahrscheinlich.</p>
+                  <p>Die Kontrollrechte der Reparationskommission sind die gleichen, welche sie für die Reparationszahlung gehabt hätte. Sie nehmen </p>
+                  <p>sie als eine Art moralische Garantie für die Kredite. Soweit sie von öffentlichem Eigentum sprechen, ist es nur eine Wiederholung </p>
+                  <p>des Friedens. Es wäre gefährlich, darüber eine Note zu schreiben, um keinen Widerspruch hervorzurufen. Nicht so klar ist es, wie sie </p>
+                  <p>das Verbot des Exportes von Privateigentum [...] begründen können. Der Frieden verpfändet allerdings auch Privateigentum, aber eine </p>
+                  <p>Bestimmung, wonach sie den Export verbieten dürfen, kann ich nicht finden. Nun ist mir mündlich die Absicht bekundet [worden] - die Absicht, der </p>
+                  <p>Überfremdung entgegen zu treten. Sie sagen, [dass], wenn sie das öffentliche Leben wieder aufrichten wollen, die Privaten dem entgegenarbeiten, wenn sie </p>
+                  <p>Aktien an das Ausland geben. Darauf geht es zurück, dass wir veranlasst werden sollen, Gesetze zu erlassen, welche den Transport von Eigentum </p>
+                  <p>Privater verhindert. [Artikel] 187 sieht die Erlass[ung] von Gesetzen vor. Der Friede ist auch ein Gesetz, das Parlament hat sich </p>
+                  <p>also verpflichtet zur Erlassung der notwendigen Gesetze. Schief ist die Sache aber trotzdem. Sie haben ja schon solche Gesetze verlangt, </p>
+                  <p>so das Holzexportgesetz.</p>
+                  <p>Was die Bestimmung über die Steuerkontrolle [anlangt, diese] steht im Frieden auch drinnen. Die Steuer darf nicht niedriger sein als in </p>
+                  <p>einem alliierten Staat und [es heißt], dass sie dafür zu sorgen haben, dass bei den Ausgaben in erster Linie die Forderungen aus den Friedensverträgen gedeckt werden.</p>
+                  <p>Ich glaube, dass das Wesentliche an der Note ist, dass alle Kontrolle nicht verlangt wird für die Reparationen, sondern für die Kredite, die man uns gibt und </p>
+                  <p>der Zustand der ist, dass nicht wir, sondern die anderen zahlen. Der Ton ist auf die öffentliche Meinung in den Ententestaaten abgestellt, </p>
+                  <p>die Note ist aber gewiss gut gemeint, wenn ich auch einsehe, dass es einzelne unangenehme Zwischenfälle zu schlichten geben wird. </p>
+                  <p>Aber ich kann mir nicht vorstellen, dass die Herren, wenn sie nicht in den inneren Verhältnissen zwingende Verhältnisse dazu sehen, sie beabsichtigen, sich </p>
+                  <p>in die Schwierigkeit wirklicher Finanzkontrollen und Steuereinhebungen zu begeben.</p>
+                  <p>Wenn die Entente wirklich eine Reparationskommission herschickt und diese ein Programm machen soll für die Wiederaufrichtung, </p>
+                  <p>so setzen sie sich eine zweifelhafte Aufgabe und inwieweit es möglich sein wird, wie sie die Mittel aufbringen werden, die sie </p>
+                  <p>selbst brauchen werden -. Wenn ihr das nicht gelingt und sie zugestehen muss, dass sie ihre Pläne nicht verwirklichen kann - wie sie dann sich dem </p>
+                  <p><pb facs="krp-0188_s01-0006"/>Anschluß präjudiziert, so muss sich das die Entente selbst ausmachen.</p>
+                  <p>Fink: </p>
+                  <p>Wenn die Entente sagt, man müsse vorsorgen, dass auch das Privateigentum nicht ins Ausland gehe, </p>
+                  <p>so muss ich sagen, dass die Entente am meisten dazu beigetragen hat, dass das österreichische Eigentum in das Ausland gekommen ist. </p>
+                  <p>Mit dem Ententezug gehen Tausende von Millionen ins Ausland. Ich möchte zur Erwägung geben, darauf hinzuweisen, den </p>
+                  <p>Ententezug kontrollieren zu lassen, wenn wir die Sicherheit geben sollen, dass das Privateigentum nicht ins Ausland gehen soll.</p>
+                  <p>Renner: </p>
+                  <p>Einzelne Länder haben Eigentum an die Entente verpfändet. Wir können [nicht] eine bestimmte Verantwortung übernehmen, wenn wir </p>
+                  <p>die Länder nicht aufmerksam machen, dass das nicht mehr geht. Wir müssten die Länder informieren. Für die Reparationsschuld ist auch </p>
+                  <p>das Eigentum der Länder verpfändet.</p>
+                  <p>Schüller: </p>
+                  <p>Die Garantien, welche für die Nahrungsmittel gegeben wurden, bestehen solange, wie - [bis] der Betreffende Schatzbons genommen hat. </p>
+                  <p>Es soll in Bons konvertiert werden. Er bekommt sie nur unter der Bedingung, dass er auf die gegebenen Garantien verzichtet.</p>
+                  <p>Renner: </p>
+                  <p>Das öffentliche Gut Tirol ist der Reparation verhaftet. [Die Staatsämter für] Finanzen und Äußeres sollen den Ländern eine Instruktion schicken – [<hi rend="#i">Einschub:</hi>] ausarbeiten und dem Kabinettsrat vorlegen, [<hi rend="#i">Einschub Ende</hi>] wie es </p>
+                  <p>nach dem Friedensvertrag ist und wie es jetzt nach der Note ist. Sicherlich wird die Schweiz dafür von uns Schatzbons fordern und wir müssen sie geben, </p>
+                  <p>die Garantien müssen zurückgegeben werden. Andererseits ist alles öffentliche Eigentum der Reparationskommission verpfändet.</p>
+                  <p>Mayr: </p>
+                  <p>Der Schweizer Übereinkunft mit Tirol wurde von Paris zugestimmt.</p>
+                  <p>Renner: </p>
+                  <p>Man kann uns dafür zur Verantwortung ziehen, wenn wir ein Pfand für die Reparation haben verschleppen lassen.</p>
+                  <p>Stöckler: </p>
+                  <p>Die Länder, welche in Verhandlung, treten sollen das wissen. Es kann ihnen gleich sein, wie es steht, wenn sie Kredit nehmen, </p>
+                  <p>berührt werden nur die Kreditgeber.</p>
+                  <p>Renner: </p>
+                  <p>Von der Reparationskommission wurden gewisse Anforderungen gestellt, die das Äußere ohne Hilfe der Staatsämter nicht erfüllt werden können.</p>
+                  <p>Schüller: </p>
+                  <p>Ende der nächsten Woche sollen im Heeresamt 200 Zimmer frei gemacht werden; 200-250 [Bedienstete], [davon] </p>
+                  <p>30-40 Konzept[beamte], das andere ist untergeordnetes Personal. Ich habe mich schon an das Heerwesen gewandt und an Zerdik </p>
+                  <p>mit der Bitte, dass diese Zimmer jedenfalls geräumt werden. Sonst wäre es eine große Unannehmlichkeit. Mit dem Verkehrswesen sind die größten </p>
+                  <p>Schwierigkeiten.</p>
+                  <p>[<hi rend="#i">Am Rand:</hi>] Zur Unterbringung der Reparationskommission müssen im Heeresamt 200 Zimmer freigemacht werden. [Das] Verkehrsamt will von 36 angeforderten Zimmern nur 14 hergeben, außerdem ist noch nicht erledigt die Freimachung der 14 Räume der zwischenstaatlichen Verkehrskommission.</p>
+                  <p>Fischer: </p>
+                  <p>Es ist schon verfügt, die vereinbarungsgemäß zu räumenden Zimmer freizugeben.</p>
+                  <p>Schüller: </p>
+                  <p>Über den Begriff der nötigen Zimmer bestehen Meinungsverschiedenheiten. 36 wurden gefordert und 14 sollen freigemacht [werden]. </p>
+                  <p>Die zwischenstaatsamtliche [sic] Verkehrskommission hat 14 Zimmer und die sollen auch geräumt werden. Die Kommission kann ihre Tätigkeit nicht unterbrechen. </p>
+                  <p><pb facs="krp-0188_s01-0007"/>Für die zwischenstaatliche Verkehrskommission wurden am Laurenzer Berg Zimmer frei gemacht. Diese Zimmer wurden aber den Post- und Telegraphen-</p>
+                  <p>beamten zugesagt und diese drohen mit Streik wenn sie sie nicht bekommen. Die Räume müssen am Montag freigemacht sein.</p>
+                  <p>Waiß: </p>
+                  <p>Die 200 Räume zur Verfügung zu stellen ist unmöglich. Was entbehrlich ist, wurde alles aufgegeben.</p>
+                  <p>Schüller: </p>
+                  <p>Es handelt sich nur noch darum, dass das Verkehrsamt - die 22 und die 14 Zimmer freigegeben werden. </p>
+                  <p>Mit solchen Kleinigkeiten können wir uns nicht in Verzug setzen und Missstimmung erregen.</p>
+                  <p>Zerdik: </p>
+                  <p>Die erste Anforderung war ein Fünftel dessen, was [jetzt] gebraucht wird und das haben wir zur Verfügung gehalten. Ich muss [um] die Ermächtigung </p>
+                  <p>bitten, auch Gewalt anwenden zu dürfen, um die Räume frei zu bekommen.</p>
+                  <p>Renner: </p>
+                  <p>Das Äußere wird unterstützen. Die Räume müssen unter allen Umständen und mit allen Mitteln geräumt werden. </p>
+                  <p>Die Staatsämter für Finanzen und Äußeres legen [eine] Instruktion an die Länder dem Kabinett vor.</p>
+                  <p>Es ist ein Übelstand, dass wir nicht in der Lage waren, den Friedensvertrag im Haus zu verhandeln.</p>
+                  <p>3.</p>
+                  <p>Reisch: </p>
+                  <p>Treuga. </p>
+                  <p>Ich habe den Herren schon im letzten Kabinettsrat den Entwurf des Vortrages zugemittelt. Es wurde gewünscht, dass </p>
+                  <p>vorher mit den Klubs Fühlung genommen werden könne.</p>
+                  <p>Es handelt sich um die Schaffung einer Organisation, welche für ausländische Kapitalgeber als Treuhandstelle zu fungieren hat. </p>
+                  <p>Wir haben Kreise gefunden, welche Beziehungen mit dem Auslandskapital haben und bereit wären, Rohstoffkredite unter der Bedingung voller Sicherheit </p>
+                  <p>während des Produktionsprozesses einzuräumen. Über Wunsch der ausländischen Kreise und meiner Anschauung [entsprechend] soll es eine privatwirtschaftliche Organisation </p>
+                  <p>sein mit [einer] gewissen Offizialiät. Deshalb hat sich die Gesellschaft einer weitgehenden Staatsaufsicht unterworfen. Die Gesellschaft soll ausländische Kredite </p>
+                  <p>an inländische Produzenten geben in der Form, dass sich die Kredite dadurch erneuern, dass ein Teil der erzeugten Ware wieder exportiert wird </p>
+                  <p>und der Produzent dadurch neue ausländische Valuta bekommt. Die Treuga soll sich mit ausländischen Banken in Verbindung setzen, [eine] eigene </p>
+                  <p>Bankenorganisation schaffen und im Inland als deren Agentur wirken. Die Gesellschaft soll privaten Charakter haben, jedoch soweit </p>
+                  <p>offiziös sein, dass sie sich verpflichtet, nur solche Persönlichkeiten an leitende Stelle zu setzen, welche vorweg mit dem Staatsamt für Finanzen </p>
+                  <p>vereinbart sind. Eines der Hauptgeschäfte soll sein, eine - der edlen Objekte, welche heute ins Ausland gehen, durch ihre Hand </p>
+                  <p>laufen zu lassen, damit wir die ausländischen Valuten, welche kontrolllos im inländischen Verkehr verschwinden, erfassen zu können. Um diesen Versuch zu kräftigen, </p>
+                  <p>soll der Gesellschaft das Recht eingeräumt werden, bis zu 40 % der ausländischen Valuta aus solchen Verkäufen, den Verkäufern zu überlassen.</p>
+                  <p>Auch soll mit der Gesellschaft ein Vertrag geschlossen werden, wonach ihr die Formalitäten für die Ein-, Aus- und Durchfuhr erleichtert werden. </p>
+                  <p>Diese Aussicht hat das gesamte Goldarbeitergewerbe, welches hier eine große Rolle spielt, [bewogen], sich der Organisation anzuschließen. Wir wollen </p>
+                  <p>das in der Weise fördern, dass wir das eingelöste Gold und Silber diesem Gewerbe zur Verfügung stellen, [um] damit neue Waren </p>
+                  <p><pb facs="krp-0188_s01-0008"/>für den Export zu erzeugen und zu exportieren, wodurch wir den Exporthandel in hochwertigen Artikeln zu fördern </p>
+                  <p>hoffen. Desgleichen wird die Treuga der Staatsverwaltung dort beratend zur Seite stehen, wo der Staat selbst infolge der Sachdemobilisierung </p>
+                  <p>über solche hochwertigen Güter zu verfügen in die Lage kommt. Dafür hat die Gesellschaft statutengemäß der Staatsverwaltung einen 25 % </p>
+                  <p>Gewinnanteil nach 5 % Dividende eingeräumt. Es soll ihr grundsätzlich zugesichert werden, dass sich die Staatsverwaltung </p>
+                  <p>mit ihr bedienen wird, im Einzelfall bleiben aber konkrete Abmachungen über [eine] höhere Beteiligung zu treffen.</p>
+                  <p>Die wichtigste Gewähr für die einwandfreie Geschäftsführung besteht darin, dass auf die Besetzung der leitenden Posten der Staat </p>
+                  <p>Einfluss hat. Die Liste des ersten Verwaltungsrates wurde nach langen Verhandlungen festgesetzt. </p>
+                  <p>Ich glaube sagen zu können, dass zufolge der Regelung der Personenfrage alle denkbaren Garantien für ein klagloses </p>
+                  <p>Funktionieren der Gesellschaft auf dem Gebiet des Exporthandels geschaffen sind. [Ich] stelle den Antrag um Ermächtigung, mit der Tr[euga] </p>
+                  <p>auf Basis der skizzierten Grundsätze einen Vertrag wegen der künftigen Verwertung der dem Staat zur Verfügung stehenden Sachdemobilisierungsgüter </p>
+                  <p>zu erteilen. Über die Ergebnisse dieser Aktion würde ich fortlaufend berichten.</p>
+                  <p>Die Gesellschaft steht in Verbindung mit einer holländischen Kapitalgruppe und eine holländische Bank wird gegründet und </p>
+                  <p>die Treuga als deren inländische Agentur zu fungieren haben. Eine holländische Wiederauf[bau]bank soll begründet werden.</p>
+                  <p>Eldersch: </p>
+                  <p>[Ich] frage Reisch, ob der Wirkung[skreis] der Treuga mit dem Wirkungskreis des Warenverkehrsbüros </p>
+                  <p>kollidiert. Die Treuga wird nur jene Waren ausführen, welche mit <hi rend="#s">eingeführten</hi> - vermittelten Rohstoffen </p>
+                  <p>hergestellt wurden. Da aber auch Sachdemobilisierungsgüter exportiert werden sollen, kann ich mir schon eine Interessenskollision mit dem </p>
+                  <p>Warenverkehrsbüro denken, da auch dieses Sachdemobilisierungsgüter für Lebensmittel exportiert.</p>
+                  <p>Reisch: </p>
+                  <p>Es steht in der Hand des Staats, ob es durch die eine oder die andere Gesellschaft verkauft werden soll. </p>
+                  <p>Für hochwertige Objekte soll die Treuga herangezogen werden. Das Warenverkehrsbüro ist kein Verkaufsbüro, </p>
+                  <p>es hat die Durchführung der Kompensationsverträge -.</p>
+                  <p>Eldersch: </p>
+                  <p>Die Hoffnung, dass die Schieber das Gold der Treuga bringen werden, teile ich nicht. Er wird noch immer besser fahren, </p>
+                  <p>wenn er das Gold selbst verkauft. Sie spekulieren [...] ja auch mit Differenzgewinn. Das Dritte ist, dass </p>
+                  <p>der Staat nur 25 % Gewinnanteil haben soll und der Rest thesauriert wird.</p>
+                  <p>Reisch: </p>
+                  <p>Durch den Anschluss der Goldarbeiter besteht doch die Wahrscheinlichkeit, dass sie sich für ihr Auslandsgeschäft der Treuga </p>
+                  <p>bedienen werden. Dann sollen ihnen 40 % überlassen werden.</p>
+                  <p>Zerdik: </p>
+                  <p>Eine Interessenskollision wird mitunter vorliegen, aber das Warenverkehrsbüro muss sich auf die Kompensationsverträge beschränken. </p>
+                  <p>Wenn das durch Abschluss der Handelsverträge aufhört, wird es wegfallen. Das Staatsamt für Handel wird beurteilen, ob die Zwecke der </p>
+                  <p>Treuga oder des Warenverkehrsbüros wichtiger sind. Das Staatsamt für Handel ist mit dem Aufbau einverstanden. Was an der Sache</p>
+                  <p> Bedenken auslöst ist, dass nach dem Vertrag die Einflussnahme des Staates sich erstreckt bloß auf die Ernennung des Präsidenten und </p>
+                  <p><pb facs="krp-0188_s01-0009"/>die Zusammensetzung des Verwaltungsrates. Dagegen ist nichts gesagt über die Direktoren. Seite 5 sieht vor ein bedeutendes Zugeständnis: </p>
+                  <p>Die Auswertung liegt nicht in den Händen des Verwaltungsrates, sondern in den Händen der Direktoren. Es wäre von Bedeutung, wenn sich die </p>
+                  <p>Staatsverwaltung auf die Bestellung der Direktoren den nötigen Einfluss wahren würde.</p>
+                  <p>Da es sich um Rohstoffkredite handelt und wegen Hereinspielen der Sachdemobilisierung ist das </p>
+                  <p>Staatsamt für Handel sehr an der Treuga interessiert. Gegen die Liste besteht jetzt kein Einwand. Wegen des großen Interesse des Staatsamtes für Handel </p>
+                  <p>wäre es nötig, bei den [...] der Funktionen die Mitwirkung des Staatsamtes für Handel sicherzustellen.</p>
+                  <p>Eisler: </p>
+                  <p>Es ist nicht überzeugend zu übernehmen, welche besonderen Vorteile der Staat aus der Errichtung der Treuga haben soll. </p>
+                  <p>Es ist richtig, dass ausländisches Kapital herkommt, aber es kommt zu typischen Gelegenheitsgeschäften her. Es handelt sich um </p>
+                  <p>die Ausnützung der bestehenden Konjunktur durch eine vom Staat besonders begünstigte Kapitalgruppe. Welche Gegenleistung bietet sie? </p>
+                  <p>Sie wird gewisse Dinge verwerten, die der Staat auch anders verwerten könnte. Es ist schon viel darüber gesprochen worden, warum das wilde Aufkaufen </p>
+                  <p>von Lebensmitteln ruhig geduldet wurde und erst jetzt durch eine Gründung der Gesellschaft geändert werden soll. Es ist immer als unmöglich </p>
+                  <p>empfunden worden, dass die Bewilligung von Devisen und Einfuhrbewilligungen und der Kompensationsverkehr von verschiedenen Stellen geführt wurde </p>
+                  <p>und [gefordert worden, dass] diese eng zusammengehörenden Seiten des Austauschsverkehrs vereinigt würden. Das geschieht jetzt, aber zugunsten einer privaten Gesellschaft, </p>
+                  <p>während solange der Staat selbst daraus Vorteile haben konnte, die Zusammenziehung an allen möglichen Gründen scheiterte.</p>
+                  <p>Der Staat hat das Recht, sich der Treuga zu bedienen. Eine Pflicht auf ihrer Seite wurde nicht vorgesehen. </p>
+                  <p>Wenn sich ein Geschäft machen lässt, wird sie es tun. Dafür gibt sie dem Staat 25 % Gewinnanteil, aber sie wird [es] </p>
+                  <p>dem Staat erst zahlen, wenn eine entsprechende Dividende erzielt wurde, und auch eine angemessene Tantieme für den Verwaltungsrat </p>
+                  <p>gesichert ist. Erst dann kommt der Staat mit einem verhältnismäßig geringen Anteil daran. 25 % sind im </p>
+                  <p>Vergleich zu den zugesicherten Vorteilen nicht viel. Es ist nicht klar, wie die Kontrolle der Gebarung vor sich geht, um zu </p>
+                  <p>verhindern, dass durch die nicht ganz unbekannte Methoden, mit denen eine Bilanz aufgestellt wird, dass dem Staat die 25 % </p>
+                  <p>auch verlässlich zukommen. Die interne Aufsicht des Staates mit Ausnahme des Einflusses auf die Auswahl des Präsidenten - würde sich die Kontrolle </p>
+                  <p>beschränken wie bei Unternehmungen unter öffentlicher Rechnungslegung. Dies reicht aber doch nicht aus. Ich fürchte, es wird von den 25 % </p>
+                  <p>für den Staat nicht viel übrig bleiben. Die Treuga wird ein gutes Geschäft machen, der Staat keinen Vorteil haben. Daraus wird sich ein </p>
+                  <p>Gegensatz zu allen möglichen Seiten ergeben. Es wird nicht nur von privater Seite Widerspruch erhoben werden wegen des Privilegs </p>
+                  <p>der Gesellschaft, sondern auch das Warenverkehrsbüro wird in eine unangenehme Lage kommen und das Staatsamt für Handel wird immer vor </p>
+                  <p>die Frage gestellt sein, welches Unternehmen herangezogen werden soll. Das wird nicht gleichgültig sein. Das Warenverkehrsbüro </p>
+                  <p>hat eine starke öffentlich-rechtliche Funktion, es hat die Kompensationsverträge zu ermöglichen und jene Güter sicherzustellen, welche zur </p>
+                  <p>Erfüllung ausländischer Kompensationsforderungen verlangt werden. Einen Teil dieser Güter wird die Treuga jetzt für sich in Anspruch nehmen. </p>
+                  <p>Das Warenverkehrsbüro beurteilt die Kompensationsgeschäfte vom Standpunkt des öffentlichen Interesses, bei der Treuga kann vermutet werden, dass </p>
+                  <p>hier mehr die [...] Chancen eine Rolle spielen werden. Es wird ein bitterer Streit zwischen den beiden Ämtern beginnen.</p>
+                  <p><pb facs="krp-0188_s01-0010"/>Es ist auch nicht sicher, dass jener, welcher 100 % gewinnen kann, sich aus moralischen Erwägungen mit 40 % begnügen wird. </p>
+                  <p>Die Goldarbeiter können mit dem Aufkaufen von Edelmetallen nicht mehr viel holen und die Lage ist so, dass sie sich </p>
+                  <p>solches jetzt durch die Vermittlung des Staates besorgen wollen. Es ist vieles da, was zur Kritik in der Öffentlichkeit Anlass gibt. Das </p>
+                  <p>beste Mittel, dem zu begegnen wäre, eine weitgehende Verschärfung des staatlichen Einflusses und der staatlichen Kontrolle auf die Gebarung der </p>
+                  <p>Gesellschaft. Eine solche Kontrolle funktioniert nicht immer sehr verlässlich, aber sie ist eine formale Rechtfertigung nach außen, wenn man </p>
+                  <p>sich [darauf] berufen kann, dass der Staat auf - [auch] die interne Geschäftsführung kontrollieren kann. Auch die Gewinnbeteiligung des Staates könnte </p>
+                  <p>günstiger gestaltet werden in der Weise, dass sein Anspruch den Tantiemen vorgeht, dass die Tantiemen verkürzt werden </p>
+                  <p>oder dass mehr Gewinn zu einem höheren Anteil dem Staat zukommt.</p>
+                  <p>Renner: </p>
+                  <p>Die Hauptfunktion muss darin liegen, den Veredelungsverkehr zu beleben. Darin ist eine Konkurrenz </p>
+                  <p>mit dem Warenverkehrsbüro nicht möglich. Wenn das nicht der Fall ist, so ist die Sache fraglicher Natur.</p>
+                  <p>Wir haben seinerzeit zum Verkauf der Kunstgegenstände eine besondere Vorsorge getroffen. Es ist daraus nichts geworden. </p>
+                  <p>Ist gedacht, dass die Treuga die Kunstgegenstände verkaufen soll?</p>
+                  <p>Reisch: </p>
+                  <p>Soweit wir über Kunstgegenstände verfügen können, soll es durch die Treuga geschehen.</p>
+                  <p>Renner: </p>
+                  <p>Wenn dieses Unternehmen das Schwergewicht auf den Veredelungsverkehr legt, dann treten die Einwendungen mehr </p>
+                  <p>zurück. Übrigens wären wir in manchen Dingen besser gefahren, wenn wir Sachgüter ins Ausland verkauft hätten.</p>
+                  <p>Zedtwitz: </p>
+                  <p>Das Ernährungsamt hat bisher die fremden Devisen beansprucht für die Lebensmittel. Nun sollen sie </p>
+                  <p>durch die Devisenzentrale gehen. Ein großer Teil ist wirklich erfasst worden. Wenn nun ein Teil der Devisen </p>
+                  <p>dem Handel frei überlassen werden soll, so erscheint mir darin ein gewisser Abbau zu liegen und die Möglichkeit, dass die Höhe </p>
+                  <p>der Devisen dadurch geschmälert wird. Es ist beabsichtigt, durch die Treuga den Handel zu erweitern und neue </p>
+                  <p>Quellen zu erschließen. Ich möchte [eine] gewisse Beruhigung erhalten, dass dadurch die Zahl der Devisen und der Zahlungsmittel, die </p>
+                  <p>für Lebensmittelimporte zur Verfügung gestellt werden, keine Schmälerung erfahren [wird]. Es schweben Verhandlungen über eine freie Liste, </p>
+                  <p>über Lebensmittel, welche dem freien Verkehr überlassen werden sollen, um dadurch eine Einschränkung der Devisen [...] </p>
+                  <p>herbeizuführen.</p>
+                  <p>Schwarzwald: </p>
+                  <p>Der Hauptpunkt liegt darin, dass wir ein Treuhandstelle als Mittelglied zwischen der rohstoffbedürftigen </p>
+                  <p>Industrie und dem ausländischen Kapital [schaffen]. [Die Staatsämter für] Handel und Finanzen haben bei allen Gesprächen über Kredite für den Wiederaufbau die Schwierigkeit gehabt, </p>
+                  <p>dass das Ausland wegen der Unsicherheit in Österreich immer wieder gefragt hat: Wenn ich Rohstoffe borge, dann </p>
+                  <p>muss ich meine Valuta zurückbekommen und nicht österreichische Valuta. Wer bürgt mir dafür, dass der Rohstoff </p>
+                  <p><pb facs="krp-0188_s01-0011"/>so verarbeitet wird, dass daraus wieder ausländische [Valuta] gewonnen wird? Die Kleinindustrien können die Gewähr nicht bieten. Hier muss </p>
+                  <p>eine Stelle geschaffen werden, welche die Bürgschaft übernimmt. Auch die Reparationskommission hat den Gedanken vertreten, dass eine Organisation </p>
+                  <p>geschaffen werden [soll] zur Vermittlung zwischen Produktion und Kredit. In Deutschland ist unter Führung einer Großbank und anderen </p>
+                  <p>Banken eine große Treuhandgesellschaft konstituiert [worden], welche in Verbindung mit amerikanischem Kapital die Sicherheit schaffen will, dass nach </p>
+                  <p>Maßgabe der [...] Gesetze und Justiz dafür gesorgt wird, dass der Rohstoff während der ganzen Produktionsperiode verhaftet bleibt </p>
+                  <p>für den Kredit, um - [und] zur Wiederherstellung der Valuta wieder exportiert werden soll.</p>
+                  <p>[<hi rend="#i">Am Rand:</hi>] Symp[athische] Aufnahme des Proj[ekts] bei der Reparationskommission und in Holland, wo eine eigene Bank für die Gewährung von Rohstoffkrediten zur Wiederaufrichtung Österreichs unter Beteiligung amerikanischen Kapitals </p>
+                  <p>begründet werden soll.</p>
+                  <p>Wir haben als der E[...] fertig war und wir in Holland anfragen [ließen] wurde es sympathisch </p>
+                  <p>aufgenommen. Die Holländer wollen, [dass] eine holländisch-österreichische Rohstoff-Wiederaufbaubank gegründet wird, [um] die Wirtschaft </p>
+                  <p>durch Kredite aufzubauen. Die Holländer haben auch Amerikaner dafür interessiert. Die Bedingung ist, dass die Organisation </p>
+                  <p>auch ihrerseits Valutamittel aufbringt als Bürgschaft dafür, dass sie selbst gut genug ist. Es ist das Interesse, die Gesellschaft </p>
+                  <p>in die Lage zu versetzen, ihrerseits Valutamittel aufzubringen und bei der holländischen Bank mitarbeiten zu lassen. Dazu </p>
+                  <p>wurde die Rohstofforganisation kombiniert mit der Idee aus Goldarbeiterkreisen, um dem - [den] Schleichhandel in Schmucksachen </p>
+                  <p>möglichst abzubauen und die Mittel diesem Zweck dienstbar zu machen. So ist es dazu gekommen, dass in zweiter Linie die </p>
+                  <p>Treuga [dazu] herangezogen wurde, dadurch dass sie jenen, welche solche Goldsachen verkaufen wollen, auch eine Quote in Valuta </p>
+                  <p>zu geben. Wir denken uns, dass Inhaber von hochwertigem Schmuck sich - [ihnen] für die 40 % Valuta keine </p>
+                  <p>Barvaluta gegeben wird, sondern angeboten [wird], dass sie das Geld in der Hollandbank arbeiten lassen, [sie] eine Aktie erhalten und das Kapital arbeitet in der Bank weiter mit.</p>
+                  <p>Die Hauptrechte an der Gesellschaft möchte ich nicht in der Gewinnbeteiligung suchen, sondern darin, dass die Valuta </p>
+                  <p>unter [eine] strenge Kontrolle des Staates gestellt wird. Alle Valuten, welche sie durch [...] ... einzig </p>
+                  <p>für die Wiederaufbauzwecke verwendet werden darf. Diesbezüglich werden uns Kontrollrechte eingeräumt werden. Für die Spezialverträge </p>
+                  <p>über die Valuta wird gesagt, dass besondere Kontrollrechte dem Staat vorbehalten werden, damit die Valuta dem R[...]-Kredit dient.</p>
+                  <p>Verhältnis zum Warenverkehrsbüro: Ist einmal der Apparat geschaffen, so ist es unser Interesse, dass </p>
+                  <p>dort, wo der Staat in der Lage ist, neue Valutamittel zu erlangen, diese auch zur Vergrößerung der Zwecke verwendet werden. Daher stellen </p>
+                  <p>wir der Gesellschaft in Aussicht, dass dort, wo der Staat Dinge im Ausland verkauft, er auf die Organisation [zurückgreift], dass die Gesellschaft größer wird. </p>
+                  <p>Den - [Dem] holländischen Kapital soll gezeigt werden, dass der Staat selbst etwas leisten will und nicht bloß [etwas] von ihnen verlangt. </p>
+                  <p>Unter dann erst festzustellenden Bedingungen soll die Gesellschaft als Kommissionär herangezogen werden. Es soll ihr für die Verwertung </p>
+                  <p>der Sachdemobilisierungsgüter kein Privileg gegeben werden.</p>
+                  <p>[Was] die Besorgnis Zedtwitz', dass die Valuten von 40 % der Lebensmittelversorgung entgehen, [anlangt], </p>
+                  <p>so verweise ich darauf, dass wir dadurch die 60 % zu erhalten hoffen, welche uns jetzt entgehen. Aus Schmucksachen hat die </p>
+                  <p>Devisenzentrale bisher keine Eingänge gehabt. Durch die kommerzielle Organisation soll es möglich sein, wenigstens große </p>
+                  <p>Objekte dazu zu verwenden, sie der Wirtschaft dienstbar zu machen.</p>
+                  <p><pb facs="krp-0188_s01-0012"/>Reisch: </p>
+                  <p>Die weitgehende Kontrolle liegt darin, dass wir im Verwaltungsrat vier [Ver]trauensmänner der Regierung haben. </p>
+                  <p>Es ist im Verwaltungsrat vor allem der Leiter der Devisenzentrale [...], </p>
+                  <p>welcher Einfluss nehmen wird auf die Valutengebarung. [Weiters kommen hinein] ?Rauf, Hofrat ?Druck vom Handelsministerium, es </p>
+                  <p>kommt hinein der [...] Vertreter der Kriegsgetreideanstalt in Amsterdam und der ?Amann. </p>
+                  <p>Von diesen kann die Vertretung der Staatsinteressen im Verwaltungsrat erwartet werden. Als leitender Direktor ist </p>
+                  <p>Schnabel in Aussicht genommen, welcher sich in den schwierigen Verhandlungen mit Holland reichlich erprobt </p>
+                  <p>hat. Er hat die ganze Verhandlung mit der holländischen Kapitalistengruppe geführt. Unter die leitenden Persönlichkeiten ist auch </p>
+                  <p>der Direktor zu verstehen und ich nehme keinen Anstand zu erklären, im Einvernehmen mit dem Staatsamt für Handel vorzugehen.</p>
+                  <p>Der Vertrag wird der Öffentlichkeit zu Kritik Anlass bieten. Man ist immer den unglaublichsten Angriffen </p>
+                  <p>ausgesetzt. Als Verwalter der Staatsfinanzen muss man auch etwas Unpopuläres auf sich nehmen, wenn man der Volkswirtschaft </p>
+                  <p>etwas Gutes tut. Die Treuga soll der Volkswirtschaft einen großen Dienst erweisen, ausländisches Kapital organisieren, der Volkswirtschaft </p>
+                  <p>zuzuführen. In dieser Beziehung ist schon Großes geleistet worden. Es treffen am Sonntag Vertreter aus Holland ein, </p>
+                  <p>um den Vertrag mit der Treuga zu besiegeln.</p>
+                  <p>Renner: </p>
+                  <p>Der Kabinettsrat kann nur die allgemeinen Grundlinien zur Kenntnis nehmen, die Durchführung </p>
+                  <p>bleibt dem Staatsamt für Finanzen vorbehalten und dieses hat die Verantwortung zu tragen. Der Anlage nach scheint das Geschäft </p>
+                  <p>dem Staatsinteresse zu entsprechen. Die Einwendungen wurden widerlegt. Der Kabinettsrat nimmt den Antrag des Staatsamtes für Finanzen </p>
+                  <p>zur Kenntnis.</p>
+                  <p>4.</p>
+                  <p>Zerdik: -. Glöckel: </p>
+                  <p>Das Staatsamt für Finanzen hat zugestimmt, dass dieser Kollektivvertrag genehmigt wird. Es ist kein Zweifel, dass </p>
+                  <p>wir in kurzer Zeit in Schwierigkeiten gelangen würden. [Ich] bitte um die Bewilligung, die Kollektivverträge anerkennen zu dürfen.</p>
+                  <p>Reisch: </p>
+                  <p>[Ich stimme zu mit der] Verwahrung, dass man - [wenn] die Kosten sich derart weiter steigern wir auf die Sperrung hinwirken müssen, weil wir unmöglich -.</p>
+                  <p>Genehmigt.</p>
+                  <p>5.</p>
+                  <p>Zerdik: </p>
+                  <p>[Es wurde] mitgeteilt, dass die Zeitung[en] beschlossen hätte[n], im Falle, [dass] nicht [darauf] eingegangen wird, die Berichterstattung über Staatsdinge zu versagen </p>
+                  <p>und nichts, was bekannt gegeben wird, soll im Ausland bekannt gegeben werden.</p>
+               </div>
+               <div n="2">
+                  <head>[KRP 188, 4. Juni 1920, Stenogramm]</head>
+                  <p><pb facs="krp-0188_s02-0001"/>188.</p>
+                  <p>[Zugezogen:] Fischer, Schüller.</p>
+                  <p>1. Renner: Mitteilung, was ich über die Mission des Kapitän de Lepine [de l'Epine] in Salzburg vernommen habe. [Er hat sich] erkundigt, wie es mit der Anschlussfrage steht; zuerst mit Rehrl, </p>
+                  <p>dann mit einem Vertreter Großdeutschen. L. [de l'Epine] hat die Grenzen weit überschritten, die ihm als Vertreter der Militärmission einer fremden Macht gezogen hat - [sind]. </p>
+                  <p>[Ich] habe den französischen Vertreter eingeladen und will ihm Vorhalte machen. [Ich] werde also Aufklärungen verlangen. L. [de l'Epine] hat direkt für ?Prinzip ?Ruprecht von Bayern </p>
+                  <p>Stimmung gemacht. [Ein] schriftliches Einschreiten ist nicht beabsichtigt.</p>
+                  <p>Zur Kenntnis.</p>
+                  <p>2. Renner: Die jüngst von uns empfangene Radiodepesche Tschitscherins ist inzwischen eingelangt. Die Rücksendung der Kriegsgefangenen wird nicht eintreten, wenn die Verletzung der </p>
+                  <p>Neutralität weiter fortgesetzt wird. Ich habe geantwortet, seit die Feindseligkeiten aufgenommen wurden, sind keine Sendungen mehr erfolgt. </p>
+                  <p>Wir wollen neutral sein und bleiben.</p>
+                  <p>3. Reisch: Note der Reparationskommission.</p>
+                  <p>Für denjenigen, der den Friedensvertrag kennt, enthält die Note keine Überraschungen. <hi rend="#s">Der Eindruck</hi> - Die Note enthält nichts, was sich nicht aus dem Friedensvertrag ableiten [lassen] könnte. </p>
+                  <p>Daher [sind] Vorstellungen ernster Natur kaum möglich. Der schriftliche Weg dürfte sich nicht empfehlen, da die Kommission schon in der nächsten Woche eintreffen wird.</p>
+                  <p>Die Note zerfällt in mehrere Teile. Der erste Teil beschäftigt sich mit den Kreditfragen (Formalisierung der aufgenommenen und noch aufzunehmenden Kredite). </p>
+                  <p>Bezüglich der Schatzbons [ist ein] eigenes Gesetz [notwendig], das ich demnächst einbringen werde. Zu begrüßen ist, dass diesen Bons das Vorrecht vor der Reparation </p>
+                  <p>eingeräumt wird.</p>
+                  <p>Übernahme gewisser Verpflichtungen. </p>
+                  <p>Der Redner bespricht die einzelnen Punkte.</p>
+                  <p>Antrag: Wir sollen in höflicher Weise dafür danken, dass die Kommission einen vollständigen Wirtschaftsplan zur Wiederaufrichtung Österreichs ausarbeiten will; und </p>
+                  <p>dass wir die Versicherung abgeben, dass wir die Bestimmungen der Note insoweit sie mit dem Friedensvertrag in Übereinstimmung stehen, genau erfüllen wollen, dass aber, </p>
+                  <p>wo wir das nicht zu erkennen vermögen, uns vorbehalten, mündliche Verhandlungen einzuleiten.</p>
+                  <p>Mayr: </p>
+                  <p>[Es ist die Rede von] öffentlichem Eigentum, das dem Staat, den Ländern und Gemeinden zukommt. [Dies ist eine] Überschreitung des Artikel 197 des Friedensvertrages. Dort ist </p>
+                  <p>das Pfandrecht gelegt auf das Vermögen Österreichs, nicht aber der Länder. Das wird eine [...] Aufregung in den Ländern hervorrufen.</p>
+                  <p>Die Staatsregierung ist verpflichtet, den Vertretern zu sagen, dass das eine Überschreitung des Friedensvertrages bedeutet. Ich glaube, es würde sich jetzt schon empfehlen, </p>
+                  <p>die Länder aufmerksam zu machen, was ihnen da drohen könnte - oder dass man schon bei der ersten Beantwortung der Note auf diese Unstimmigkeit hinweist.</p>
+                  <p>Schüller: Diese Frage ist mit den alliierten Mächten schon besprochen worden. Es erstreckt sich auch auf alles Eigentum. Das Pfandrecht [wurde] gelegt auf 1.) öffentliches Eigentum; 2.) Einnahmen; </p>
+                  <p>3.) privates Eigentum (Grundbesitz, Vieh, Unternehmungen, Aktien, Waren usw.)</p>
+                  <p>[Auf eine Anfrage erhielten wir] die Antwort: Privateigentum ist in [Artikel] 197 nicht gemeint. Wir werden es nicht unterlassen, [Vorstellung zu erheben], aber wir werden wenig Erfolg haben.</p>
+                  <p>Mayr: [Ich] würde trotzdem bitten, [darauf hinzuweisen], dass im Artikel 197 Länder und Gemeinden nicht genannt sind. Die Länder könnte das irre führen. Gegen die direkte Aufzählung sollen wir uns wehren.</p>
+                  <p>Renner: Wir können eine Bemerkung machen, aber es nützt nichts.</p>
+                  <p>Miklas: [Ich] halte die Anregung Mayrs für sehr berechtigt vom innerpolitischen Gesichtspunkt aus. Vielleicht könnte Mayr [dies] in einer Rede erklären. In einer Note aber möchte ich dies nicht gern sehen.</p>
+                  <p>Fink: Ich habe mich daher gewundert, dass der Kanzler damit in die volle Öffentlichkeit gegangen ist. Das ist mir zu weit gegangen bevor das Kabinett davon etwas erfährt. Es wäre für die Zukunft besser, wenn wir zuerst im Kabinettsrat beraten könnten.</p>
+                  <p>Renner: Wir haben Lebensmittel bekommen, die sind an alle Gemeinden hinaus gegangen. Wir geben Goldbons aus, die Entente will sich versichern, dass diese Scheine gedeckt werden. Wir werden also mit einem Einwand </p>
+                  <p>keine gute Figur machen.</p>
+                  <p><pb facs="krp-0188_s02-0002"/>Diese Auseinandersetzung, die einzelnen Verwahrungen, was schwer oder undurchführbar ist - sollte man aufschieben bis die Kommission in Wien ist. Was die Mitteilung im Ausschuss anlangt, so ist dieser Vorgang nur </p>
+                  <p>in einer Hinsicht neu - derartige Noten sind normal der Presse bekannt gegeben worden.</p>
+                  <p>Schüller: Wenn man die Note richtig beurteilen will, muss man sich den Friedensvertrag ins Gedächtnis zurückrufen. Nicht darin steht, dass wir eine Summe bis '21 zahlen müssen. Das Negative </p>
+                  <p>ist die Hauptsache. Bianco-Kredit. Die bisher schon gewährten Sicherungen werden nun frei gegeben. Statt dessen nehmen sie die Sicherheiten, die sie im Friedensvertrag für die Reparationen </p>
+                  <p>bekommen haben, für die Kredite, welche sie uns jetzt gewähren.</p>
+                  <p>Das Wesentliche an der Note ist, dass alle diese Kontrollen nicht verlangt werden für die Reparationen, sondern für die Kredite, die man uns gibt. Also, nicht wir zahlen, sondern die anderen zahlen.</p>
+                  <p>Fink: [Geldausfuhr im Ententezug]: 125 K[ronen], Koffer, neue Banknoten (Tausender).</p>
+                  <p>Reisch: Die Verschleppung der neuen Noten ins Ausland hat dem Staatsamt für Finanzen den Anlaß gegeben, das Ausland zu verständigen, dass derartige Noten nur im Schmuggelweg hinaus gekommen sein könnten.</p>
+                  <p><hi rend="#s">Renner: -. Schüller: -.</hi></p>
+                  <p>Renner: Wir müssen den Ländern eine genaue Erläuterung geben. Vielleicht wird Reisch mit Schüller eine solche Note ausarbeiten? Diese Darstellung wäre dem Kabinettsrat vorzulegen.</p>
+                  <p><hi rend="#s">Stöckler: -.</hi></p>
+                  <p><hi rend="#s">4. Renner: Von der Rep. -.</hi></p>
+                  <p>Schüller: Das Wesentliche ist, dass die Rep[arationskommission] verlangt, dass nächste Woche 200 Zimmer im Staatsamt für Heer[wesen] frei gemacht werden; </p>
+                  <p>30-40 höhere Beamte, Sekretäre, Übersetzer; 60 Schreibmaschinen. </p>
+                  <p>Diese Zimmer müssen geräumt werden.</p>
+                  <p>Wegen Verkehrswesen: <hi rend="#s">Die nötigen Zimmer werden nicht geräumt.</hi></p>
+                  <p>Fischer: Die nötigen Zimmer werden geräumt. 36 Zimmer sind nötig, 14 [wurden] erst bereit gestellt.</p>
+                  <p>Schüller: Die zwischenstaatliche Verkehrskommission soll auch ihre Räume zur Verfügung stellen. Diese Kommission muss aber sofort untergebracht werden.</p>
+                  <p>Waiß: Wir haben den drübigen Trakt schon geräumt.</p>
+                  <p>Zerdik: Erbittet vom Kabinett die Ermächtigung, sofort Gewalt anzuwenden.</p>
+                  <p>Renner: Beschluss: Die Räume müssen unbedingt herge- - beigestellt werden.</p>
+                  <p>4. Reisch: Treuga; Erleichterung der Ein-, Aus- und Durchfuhr.</p>
+                  <p>Eldersch: [Ich frage], ob der Wirkungskreis der Treuga mit dem Wirkungskreis des Warenverkehrsbüros kollidiert. Die Hoffnung, dass die Schieber der Treuga das Gold bringen werden, teile ich nicht.</p>
+                  <p>Zerdik: [Eine] Interessenskollision zwischen Verkehrsbüro und Treuga wird zweifellos vorkommen können. Das Warenverkehrsbüro wird viel - hat ja vornehmlich die Kompensationsgeschäfte zu ?fixieren.</p>
+                  <p>Es ist nichts darüber enthalten, wie es mit der Bestellung der Direktoren steht. Es wird der Gesellschaft ein sehr bedeutendes Zugeständnis gemacht. Es wird also von den Direktoren </p>
+                  <p>sehr viel abhängen und [es wäre] daher von Bedeutung, dass die Staatsverwaltung auf die Bestellung der Direktoren sich einen Einfluss wahren könnte.</p>
+                  <p>[Ich stelle] daher den Antrag, dem Staatsamt für Handel die Mitwirkung einzuräumen.</p>
+                  <p>Eisler: Welche besonderen Vorteile hat der Staat? Privileg: Das Staatsamt für Handel wird immer vor die Frage gestellt sein, für welche der beiden Gesellschaften es sich entscheiden soll.</p>
+                  <p>Antrag: Möglichst weite Verschärfung des staatlichen Einflusses, enge Kontrollrechte des Staates auf die Gesellschaft. Auch die Gewinnbeteiligung des Staates sollte günstiger gestaltet werden.</p>
+                  <p><hi rend="#s">Renner: Wenn nicht für Leder, Galanteriewaren -.</hi></p>
+                  <p>Zedtwitz: Wenn nun ein Teil der Devisen dem Handel zur freien Verfügung überlassen werden soll, scheint mir darin ein gewisser Abbau eingeleitet. Dadurch - Ich möchte daher eine gewisse Beruhigung erhalten, dass dadurch die </p>
+                  <p>Zahlung der Devisen, die für Lebensmittelkäufe bestimmt werden, nicht eine Verringerung erfährt.</p>
+                  <p><pb facs="krp-0188_s02-0003"/>Schwarzwald: Die Gesellschaft soll als Mittelglied fungieren zwischen <hi rend="#s">Rohstoffbeschaffung und Kredit</hi> - auswärtigem Kapital und der inländischen Industrie.</p>
+                  <p>Die Gesellschaft muss ihrerseits auch fremde Valutamittel aufbringen können und da haben wir diese Rohstofforganisation kombiniert</p>
+                  <p> mit einer anderen Idee. Wir wollen nun dem Schleichhandel in Juwelen steuern und diesem Zweck dienstbar machen. So haben wir die Treuga </p>
+                  <p>in zweiter Linie dazu herangezogen haben, dass wir - die Treuga jenen, die Schmuck verkaufen wollen, auch fremde Valuta teilweise gibt.</p>
+                  <p>Der erste Paragraph ist, dass alle Valuten, die die Gesellschaft erhält, nur für Wiederaufbauzwecke verwendet werden dürfen.</p>
+                  <p>[Zum] Einwand Zedtwitz': Bisher ist alles unter den Tisch gefallen, jetzt sollen wenigstens 60 % uns zukommen.</p>
+                  <p>Reisch: [Zur] weitgehenden Kontrolle: Schon jetzt [sind] im Verwaltungsrat fünf Herren, die unsere Vertrauensmänner sind.</p>
+                  <p>Als leitender Direktor ist Schnabel in Aussicht genommen.</p>
+                  <p>Angenommen (zur Kenntnis genommen).</p>
+                  <p><hi rend="#s">5. Reisch: -.</hi></p>
+                  <p>Glöckel: Das Staatsamt für Finanzen hat zugestimmt, dass dieser Kollektivvertrag anerkannt wird. Wir können die Musterwirtschaft nicht plötzlich auflassen.</p>
+                  <p>Bittet um die Bewilligung, dass er diesen Vertrag anerkennen kann.</p>
+                  <p>Stöckler ist derselben Meinung.</p>
+                  <p>Reisch: Wir haben zugestimmt, wenn sich aber die Kosten wieder weiter steigern, werden wir sperren müssen.</p>
+                  <p>6. Zerdik: -.</p>
+                  <p>Schluss ½ 6 Uhr.</p>
+               </div>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

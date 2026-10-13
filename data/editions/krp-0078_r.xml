@@ -1,0 +1,573 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href='http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:acdh="https://vocabs.acdh.oeaw.ac.at/schema#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xml:lang="de">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="a" type="main" n="0078">Kabinettsprotokoll Nr. 78 vom 10. Juni 1919</title>
+            <title level="m" type="main" n="01">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <title level="m" type="sub" n="">Renner II (15. März – 17. Oktober 1919)</title>
+            <meeting>
+               <placeName key="https://d-nb.info/gnd/4066009-6">Wien</placeName>
+               <orgName key="https://d-nb.info/gnd/5162749-8">Kabinettsrat</orgName>
+               <date when-iso="1919-06-10"/>
+            </meeting>
+            <editor>
+               <persName key="https://d-nb.info/gnd/122481836"
+                         role="hasCreator"
+                         xml:id="hwohnout">
+                  <forename>Helmut</forename>
+                  <surname>Wohnout</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</affiliation>
+               <idno type="ORCID">0000-0002-3864-9839</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/120789825"
+                         role="hasCreator"
+                         xml:id="tolechowski">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0003-3291-6876</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/131679384"
+                         role="hasCreator"
+                         xml:id="rlein">
+                  <forename>Richard</forename>
+                  <surname>Lein</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0002-7502-0503</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="aholzer">
+                  <forename>Anna</forename>
+                  <surname>Holzer</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0005-3560-3500</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="dsoelkner">
+                  <forename>Dominik</forename>
+                  <surname>Sölkner</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-9895-7212</idno>
+            </editor>
+            <editor>
+               <persName role="hasContributor" xml:id="ischotzko">
+                  <forename>Ina</forename>
+                  <surname>Schotzko</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-5210-3713</idno>
+            </editor>
+            <funder n="1">
+               <orgName key="https://d-nb.info/gnd/2054142-9" role="hasFunder">Österreichischer Wissenschaftsfonds FWF</orgName>
+               <idno type="project">PAT1495024</idno>
+               <title type="project">Die Protokolle des österreichischen Kabinettsrates 1919–1920</title>
+            </funder>
+            <respStmt>
+               <resp>Projektverantwortung</resp>
+               <orgName key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Projektleitung</resp>
+               <persName key="https://d-nb.info/gnd/120789825" role="hasPrincipalInvestigator">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+                  <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+                  <idno type="ORCID">0000-0003-3291-6876</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Nationaler Forschungspartner</resp>
+               <orgName key="https://d-nb.info/gnd/1123037736" role="hasEnabler">Austrian Centre for Digital Humanities</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Digitalisierung der gedruckten Quellen</resp>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>TEI-Datenmodellierung</resp>
+               <persName role="hasContributor" xml:id="tfruehwirth">
+                  <forename>Timo</forename>
+                  <surname>Frühwirth</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-3997-5193</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technische Supervision</resp>
+               <persName key="https://d-nb.info/gnd/1043833846"
+                         role="hasContributor"
+                         xml:id="pandorfer">
+                  <forename>Peter</forename>
+                  <surname>Andorfer</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-9575-9372</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technisches Consulting und Vorbereitung der Druckausgabe</resp>
+               <persName key="https://d-nb.info/gnd/13281899X"
+                         role="hasContributor"
+                         xml:id="skurz">
+                  <forename>Stephan</forename>
+                  <surname>Kurz</surname>
+                  <affiliation key="https://d-nb.info/gnd/1202798799">Institut für die Erforschung der Habsburgermonarchie und des Balkanraumes</affiliation>
+                  <idno type="ORCID">0000-0003-2546-2570</idno>
+               </persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher key="https://d-nb.info/gnd/1001454-8">Österreichische Akademie der Wissenschaften</publisher>
+            <date when="2028"/>
+            <availability status="free">
+               <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">Lizenziert unter CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/deed.de)</licence>
+            </availability>
+            <idno type="ISBN_Print"/>
+            <idno type="ISBN_Part_epub"/>
+            <idno type="ISBN_Digital"/>
+            <idno type="DOI"/>
+            <idno type="DOI_zenodo"/>
+            <idno type="ebook_ID"/>
+         </publicationStmt>
+         <seriesStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="m" type="main">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <respStmt>
+               <resp>Bearbeitung und Herausgeberschaft</resp>
+               <orgName key="https://d-nb.info/gnd/2024703-5">Universität Wien</orgName>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+         </seriesStmt>
+         <notesStmt>
+            <note>Diese TEI-XML-Datei ist Grundlage für eine Druckausgabe der Edition.</note>
+            <relatedItem>
+               <biblStruct>
+                  <monogr>
+                     <imprint>
+                        <pubPlace key="https://d-nb.info/gnd/4066009-6">Wien</pubPlace>
+                        <publisher key="https://d-nb.info/gnd/2068748-5">Verlag der Österreichischen Akademie der Wissenschaften</publisher>
+                        <date when="2029"/>
+                     </imprint>
+                     <extent/>
+                  </monogr>
+                  <note>
+              <idno/>
+              <ptr/>
+            </note>
+                  <citedRange/>
+               </biblStruct>
+            </relatedItem>
+         </notesStmt>
+         <sourceDesc>
+            <bibl>Quellbestand: AT-OeStA/AdR MRang MR 1Rep KRP Kabinettsratsprotokolle, 1918-1920 (Teilbestand)<ref target="https://www.archivinformationssystem.at/detail.aspx?id=5465">https://www.archivinformationssystem.at/detail.aspx?id=5465</ref>
+            </bibl>
+            <msDesc>
+               <msIdentifier>
+                  <institution key="https://d-nb.info/gnd/37748-X" role="hasOwner">AT-OeStA Österreichisches Staatsarchiv (Archiv (ÖStA))</institution>
+                  <repository key="https://d-nb.info/gnd/1601181-8">AT-OeStA/AdR Archiv der Republik, 1918- (Abteilung)</repository>
+                  <collection>AT-OeStA/AdR MRang MR 1Rep Ministerrat 1. Republik, 1918 - 1938 (Bestand)</collection>
+                  <idno>AT-OeStA_AdR-MRang-MR-1.-Rep.-KRP-078</idno>
+               </msIdentifier>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <abstract>
+            <p>
+          <!--to be generated-->
+        </p>
+         </abstract>
+      </profileDesc>
+      <encodingDesc>
+         <styleDefDecl scheme="css"/>
+         <tagsDecl>
+            <rendition xml:id="b" scheme="css">font-weight:bold;</rendition>
+            <rendition xml:id="su" scheme="css">vertical-align:super;font-size:.7em;</rendition>
+            <rendition xml:id="s" scheme="css">text-decoration:line-through;</rendition>
+            <rendition xml:id="u" scheme="css">text-decoration:underline;</rendition>
+            <rendition xml:id="ow" scheme="css">text-decoration:line-through;text-decoration-style:double;</rendition>
+            <rendition xml:id="r" scheme="css">display:block;text-align:right;</rendition>
+            <rendition xml:id="letterspaced" scheme="css">letter-spacing:0.15em;</rendition>
+            <rendition xml:id="i" scheme="css">font-style:italic;</rendition>
+         </tagsDecl>
+         <editorialDecl>
+            <hyphenation>
+               <p>
+            <!--to be added-->
+          </p>
+            </hyphenation>
+            <correction>
+               <p>
+            <!--to be added-->
+          </p>
+            </correction>
+            <normalization>
+               <p>
+            <!--to be added-->
+          </p>
+            </normalization>
+            <punctuation>
+               <p>
+            <!--to be added-->
+          </p>
+            </punctuation>
+            <stdVals>
+               <p>
+            <!--to be added-->
+          </p>
+            </stdVals>
+            <p>
+          <!--to be added-->
+        </p>
+         </editorialDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#tfruehwirth" when-iso="2026-10-13">TEIGarage output upconverted with upconvert.xsl</change>
+         <change who="#tfruehwirth" when-iso="2026-10-13">TEI header populated with generate_tei_templates.py</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface/>
+   </facsimile>
+   <text>
+      <body>
+         <div xml:id="doc-krp-0078.xml">
+            <head type="dokument">
+               <title type="num">78.<note type="footnote">Das Protokoll trägt den Vermerk <hi rend="#i">Vertraulich!</hi></note>
+               </title>
+               <title type="desc">
+                  <pb facs="krp-0078_r-0001"/>[Dienstag] 1919-06-10</title>
+            </head>
+            <div type="dokumentkopf">
+               <div type="vorsitz">
+                  <head>Vorsitz:</head>
+                  <p>Fink</p>
+               </div>
+               <div type="anwesend">
+                  <head>Anwesend:</head>
+                  <p>Bauer, Bratusch, Deutsch, Eldersch, Ellenbogen, Hanusch, Loewenfeld-Russ, Miklas, Paul, Resch, Schumpeter, Stöckler, Tandler</p>
+               </div>
+               <div type="zugezogen">
+                  <head>Zugezogen:</head>
+                  <p>Breisky</p>
+               </div>
+               <div type="schriftfuehrer">
+                  <head>Schriftführer:</head>
+                  <p>unbekannt</p>
+               </div>
+               <div type="dauer">
+                  <head>Dauer:</head>
+                  <p>21.00–23.00 Uhr</p>
+               </div>
+            </div>
+            <div type="komponenten">
+               <p>Reinschrift, Beilagen, Konzept, stenographische Mitschrift, Entwurf der Tagesordnung, diverse Zusätze</p>
+            </div>
+            <div type="beilagen">
+               <head>Beilagen:</head>
+               <list>
+                  <item><ref target="#krp-0078_top04">Zu TOP 4</ref>: <ref target="#krp-0078_b01">Vortrag über die Pragmatisierung der bisher vertragsmäßig angestellten Redaktionsbeamten des Telegraphen-Korrespondenz-Bureaus</ref></item>
+                  <item><ref target="#krp-0078_top07">Zu TOP 7</ref>: <ref target="#krp-0078_b02">Entwurf der Staatskanzlei über Stellungnahme zu den Landesumlagen in der Steiermark Zl. 2409/1919 St.K., mit Abschrift der gestrichenen Note des Staatsamtes der Finanzen (zu Zl. 2409/1919 St.K.) Zl. 7652</ref></item>
+                  <item><ref target="#krp-0078_top08">Zu TOP 8</ref>: <ref target="#krp-0078_b03">Vortrag des Staatsamtes für Inneres und Unterricht Zl. 199/A über die Besetzung von drei Haller Erziehungsstipendien der erbländischen Abteilung</ref></item>
+                  <item><ref target="#krp-0078_top09">Zu TOP 9</ref>: <ref target="#krp-0078_b04">Gesetzesentwurf über Gebührenbegünstigungen aus Anlass der Aufhebung und Ablösung der Jagdrechte auf fremdem Grund und Boden</ref></item>
+               </list>
+            </div>
+            <div type="protokoll">
+               <pb facs="krp-0078_r-0002"/>
+               <div type="top" xml:id="krp-0078_top01">
+                  <head>
+                     <label>
+                        <num n="1">1.</num>
+                        <seg>Zulässigkeit der Herausgabe einer Tageszeitung durch einen Staatsbeamten.</seg>
+                     </label>
+                  </head>
+                  <p>Unterstaatssekretär Dr. <hi rend="#letterspaced">Tandler</hi> macht davon Mitteilung, dass ihm der Ministerialsekretär im Staatsamte für soziale Verwaltung, Univ.-Prof. Dr. Karl Hugelmann <pb facs="krp-0078_r-0003"/>angezeigt habe, er werde von morgigen Tage an als Nebenbeschäftigung im Sinne des § 33 Dienstpragmatik die Stelle eines Herausgebers der Tageszeitung „Deutsches Volksblatt" versehen. Da es sich im vorliegenden Falle um eine Frage grundsätzlichen Charakters handle, unterbreite der sprechende Unterstaatssekretär diese Angelegenheit dem Kabinettsrate zur Prüfung nach der Richtung, ob sich die Funktion des Herausgebers einer politischen Tageszeitung mit jener eines Staatsbeamten vereinbaren lasse. Nach einer kurzen Debatte, an der sich die Staatssekretäre <hi rend="#letterspaced">Eldersch</hi>, Dr. <hi rend="#letterspaced">Bratusch</hi> und <hi rend="#letterspaced">Hanusch</hi> sowie Unterstaatssekretär <hi rend="#letterspaced">Miklas</hi> beteiligten, beschließt der Kabinettsrat vor der endgiltigen Schlussfassung im Gegenstande eine Äußerung der Staatskanzlei einzuholen.</p>
+               </div>
+               <div type="top" xml:id="krp-0078_top02">
+                  <head>
+                     <label>
+                        <num n="2">2.</num>
+                        <seg>Forderungen der Eisenbahnangestellten.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Paul</hi> berichtet, dass in den letzten Tagen der Pfingstwoche auf der Nordbahn ein partieller Streik der Eisenbahnbediensteten ausgebrochen sei, der vorläufig<pb facs="krp-0078_r-0004"/>– bis Donnerstag – beigelegt werden konnte. Die im Zuge der Verhandlungen zu Tage getretenen Erscheinungen hätten erkennen lassen, dass die Kommunistische Partei offenbar einen wachsenden Einfluss auf die Eisenbahnbediensteten gewinne und die Gefahr drohe, dass die Vertrauensmänner der bestehenden Organisationen die Führung verlieren könnten.</p>
+                  <p>Der sprechende Staatssekretär habe zur vorläufigen Beilegung des Streiks gewisse Zusicherungen gemacht, welche als vorläufige Teilzugeständnisse aufzufassen seien und eine finanzielle Belastung von ungefähr 500.000–600.000 K beinhalten. Er glaube nicht allein den Staatssekretär für Finanzen um die Gewährung dieses Kredites, sondern auch die parlamentarischen Mitglieder des Kabinettsrates um die eheste Einflussnahme auf die Eisenbahnbediensteten zwecks Abstandnahme von weiteren Forderungen ersuchen zu müssen.</p>
+                  <p>Nachdem Staatssekretär Dr. <hi rend="#letterspaced">Schumpeter</hi> die ausnahmsweise Bereitstellung des angesprochenen Kredites zugesagt hatte, gibt Staatssekretär Dr. <hi rend="#letterspaced">Bauer</hi> zu erwägen, ob nicht etwa <pb facs="krp-0078_r-0005"/>der Gedanke der Sozialisierung der Eisenbahnen aufgegriffen und im Zuge der Verhandlungen verwertet werden sollte, wodurch naturgemäß die gesamte Eisenbahnarbeiterschaft zu Mitinteressenten an der möglichst lukrativen Ausnützung des Betriebes gemacht sowie zur aktiven Teilnahme an der gesamten Verwaltung herangezogen und damit auch deren Stellungnahme zu den konkreten Lohnfragen beeinflusst würde.</p>
+                  <p>Diese Anregung findet die Billigung des Kabinettsrates, welcher schließlich den Staatssekretär <hi rend="#letterspaced">Eldersch</hi> über dessen Anregung einladet, im Vereine mit dem Abgeordneten Tomschik die gegenwärtige Eisenbahnerbewegung beim Präsidenten Seitz zur Sprache zu bringen und entsprechende Einleitungen zu treffen, um dem Staatssekretär für Verkehrswesen bei den zu gewärtigenden Verhandlungen mit den Eisenbahnbediensteten die erforderliche politische Unterstützung angedeihen zu lassen.</p>
+                  <p><pb facs="krp-0078_r-0006"/></p>
+               </div>
+               <div type="top" xml:id="krp-0078_top03">
+                  <head>
+                     <label>
+                        <num n="3">3.</num>
+                        <seg>Gesetz, betreffend die Übernahme der zur Besorgung der Handleistungen beim Zollverfahren amtlich bestellten Hilfskräfte in den Staatsdienst.</seg>
+                     </label>
+                  </head>
+                  <p>Der Kabinettsrat findet über Antrag des <hi rend="#letterspaced">Vorsitzenden</hi> gegen das von der Nationalversammlung beschlossene Gesetz, betreffend die Übernahme der zur Besorgung der Handleistungen beim Zollverfahren amtlich bestellten Hilfskräfte in den Staatsdienst, keine Vorstellung zu erheben.</p>
+                  <p>Der Gesetzesbeschluss ist daher vom Vizekanzler und vom Staatssekretär für Finanzen gegenzuzeichnen und dem Präsidenten zur Fertigung vorzulegen.</p>
+               </div>
+               <div type="top" xml:id="krp-0078_top04">
+                  <head>
+                     <label>
+                        <num n="4">4.</num>
+                        <seg>Pragmatisierung der bisher vertragsmäßig angestellten Redaktionsbeamten des Telegraphen-Korrespondenz-Bureaus und Änderung des Amtstitels des Redaktionspersonales dieses Büros.</seg>
+                     </label>
+                  </head>
+                  <p>Der Vorsitzende führt aus, dass der Redaktionsdienst im Telegraphen-Korrespondenz-Bureau bisher von Staatsbeamten der Zeitvorrückungsgruppe A der Dienstpragmatik und von vertragsmäßig angestellten Kräften (Vertragsbeamten und Hilfsstenographen) versehen worden sei.</p>
+                  <p>Die vertragsmäßig angestellten Bediensteten streben seit Langem ihre Pragmatisierung an, die nun – da auch das staatliche Kanzleihilfs- und Aushilfsdienerpersonal dieser Begünstigung teilhaftig geworden ist – nicht <pb facs="krp-0078_r-0007"/>mehr länger hinausgeschoben werden könne. Das Staatsamt für Finanzen habe dieser Maßnahme bereits zugestimmt.</p>
+                  <p>Diese Angestellten haben, entsprechend den Erfordernissen des Dienstes die Absolvierung einer mittleren Lehranstalt nachzuweisen, weshalb beabsichtigt sei, sie zu Staatsbeamten der Zeitvorrückungsgruppe C der Dienstpragmatik zu ernennen.</p>
+                  <p>Hiedurch erweise sich einerseits eine Ergänzung der Gesamtministerialverordnung vom 1. Februar 1914, RGBl. Nr. 34 über die Einreihung der einzelnen Beamtenkategorien der Dienstzweige und Ressorts in die Zeitvorrückungsgruppen des Gesetzes vom 25. Jänner 1914, RGBl. Nr. 15 (Dienstpragmatik) für nötig, wie es andererseits auch erforderlich erscheine, die Amtstitel für die zu Staatsbeamten zu ernennenden Vertragsbeamten des Telegraphen-Korrespondenz-Bureaus festzusetzen. In letzterem Belange müsse billigerweise darauf Bedacht genommen werden, die in die Zeitvorrückungsgruppe A eingereihten Redaktionsbeamten, das sind jene, welche die für den staatlichen Konzeptsdienst vor<pb facs="krp-0078_r-0008"/>geschriebene Vorbildung nachzuweisen haben und denen auch in Hinkunft die verantwortungsvolle <hi rend="#u">Leitung</hi> des Dienstes übertragen bleiben wird, in ihrem Amtstitel von der nun neu systemisierten, geringer qualifizierten Beamtengruppe zu unterscheiden.</p>
+                  <p>Es sei daher beabsichtigt, die Diensttitel für die mit voller Hochschulbildung ausgestatteten Redaktionsbeamten der Zeitvorrückungsgruppe A (bisher in der X. Rangsklasse: Redaktionsadjunkt, in der IX., VIII. und VII. Rangsklasse: Redakteur II. Klasse, Redakteur I. Klasse und Chefredakteur) in „Redaktionskonzipist "für die X. Rangsklasse „Redakteur", „Oberredakteur" und „Redaktionsrat“ für die IX., VIII. und VII. Rangsklasse zu ändern, während für die in die Gruppe C einzureihenden Beamten in der XI. Rangsklasse der Diensttitel „Redaktionsassistent“, in der X., IX. und VIII. Rangsklasse die Diensttitel, „Redaktionsoffizial“, „Redaktionsrevident" und „Redaktionsoberrevident“ festzustellen wäre.</p>
+                  <p>Weiters sei beabsichtigt, im Einvernehmen mit dem Staatsamte für Finanzen eine Vollzugsanweisung zur <pb facs="krp-0078_r-0009"/>Änderung der bereits erwähnten Gesamtministerialverordnung vom 1. Februar 1914, RGBl. Nr. 34 (Einreihung der einzelnen Beamtenkategorien in die Vorrückungsgruppe der Dienstpragmatik) zu erlassen.</p>
+                  <p>Der sprechende Vizekanzler erbittet sich die Zustimmung des Kabinettsrates zu diesen Maßnahmen.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Schumpeter</hi> verweist in diesem Zusammenhange auf die Bedenklichkeit der Umreihung dieser Vertragsbeamten aus der Gruppe D in die Gruppe C, zumal hiedurch ein Anlass zu ähnlichen Forderungen anderer Staatsbeamtenkategorien gegeben werden dürfte. Außerdem bringt er einen Wunsch des Zwischenstaatsamtlichen Komitees für Beamtenangelegenheiten zur Kenntnis, wonach die in Aussicht genommene Bezeichnung „Redaktions-Konzeptsbeamte“ durch eine den Begriff „Konzeptsbeamte“ nicht enthaltende Bezeichnung zu ersetzen wäre.</p>
+                  <p>Nachdem Sektionschef <hi rend="#letterspaced">Breisky</hi> eine Darstellung der Rechts- und Sachlage gegeben und insbesondere darauf hingewiesen hatte, dass die hier in Betracht kommenden Bediensteten mit nur wenigen, die ältesten <pb facs="krp-0078_r-0010"/>Beamten betreffenden Ausnahmen die für die Gruppe C vorgeschriebene volle Mittelschulbildung bereits aufweisen und außerdem eine bezügliche Novellierung der einschlägigen Bestimmungen der Dienstordnung beabsichtigt sei, beschließt der Kabinettsrat, dass in der die Einreihung dieser Beamten in die Gruppe C normierenden Bestimmung der Vollzugsanweisung das Erfordernis der vollen Mittelschulbildung als Voraussetzung festzulegen wäre; in besonders berücksichtigungswürdigen Fällen, zumal bei den bereits im Dienste befindlichen länger dienenden vertragsmäßig Angestellten könne die Nachsicht von diesem Erfordernisse ausnahmsweise zugestanden werden.</p>
+               </div>
+               <div type="top" xml:id="krp-0078_top05">
+                  <head>
+                     <label>
+                        <num n="5">5.</num>
+                        <seg>Beantwortung der von den Abgeordneten Kollmann und Genossen an die Gesamtregierung gerichteten Anfrage, betreffend die Übergriffe des Arbeiter- und Soldatenrates im politischen Bezirke Baden.</seg>
+                     </label>
+                  </head>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> erbittet und erhält die Zustimmung des Kabinettsrates zu der von ihm beabsichtigten Beantwortung der von den Abgeordneten Kollmann und Genossen in der 3. Sitzung der Konstituierenden Nationalversammlung am 12. März l. J. an die Gesamtregierung gerichteten Anfrage, betreffend die Übergriffe des Arbeiter- und Soldatenrates im <pb facs="krp-0078_r-0011"/>politischen Bezirke Baden.</p>
+               </div>
+               <div type="top" xml:id="krp-0078_top06">
+                  <head>
+                     <label>
+                        <num n="6">6.</num>
+                        <seg>Frage der Vornahme einer Ergänzungswahl in die deutschösterreichische Staatsschuldenkontrollkommission.</seg>
+                     </label>
+                  </head>
+                  <p>Der Vorsitzende teilt mit, dass die Staatsschuldenkontrollkommission in einer an die Staatskanzlei gerichteten Zuschrift die Frage der Berufung eines neuen Mitgliedes anstelle des ausgeschiedenen Mitgliedes, Finanzministers a. D. Dr. Ferdinand Wimmer, aufgenommen habe.</p>
+                  <p>Der sprechende Vizekanzler beabsichtige, der genannten Kommission mitzuteilen, dass eine solche Neuberufung im gegenwärtigen Stadium einem praktischen Bedürfnisse nicht entspreche, weshalb die Staatsregierung glaube, von einer Antragstellung an die Nationalversammlung in dieser Hinsicht Abstand nehmen zu sollen, zumal die Kommission der Hauptsache nach nur noch berufen sei, die Schuldurkunden, deren Gegenzeichnung von ihr bereits beschlossen worden ist, gegenzuzeichnen und diese Gegenzeichnung nicht kollegial, sondern durch ein Einzelmitglied zu erfolgen habe.</p>
+                  <p>Der Kabinettsrat pflichtet dieser Auffassung bei.</p>
+                  <p><pb facs="krp-0078_r-0012"/></p>
+               </div>
+               <div type="top" xml:id="krp-0078_top07">
+                  <head>
+                     <label>
+                        <num n="7">7.</num>
+                        <seg>Landesumlagen in Steiermark.</seg>
+                     </label>
+                  </head>
+                  <p>Laut Mitteilung des Vorsitzenden hat das Staatsamt für Finanzen der Staatskanzlei einen von der Provisorischen Landesversammlung von Steiermark Ende Dezember 1918 gefassten Beschluss zur Kenntnis gebracht, wonach die Landesumlagen und Zuschläge im ersten Halbjahr 1919 in derselben Höhe wie im zweiten Halbjahre 1918 eingehoben werden sollen, wofür noch die Genehmigung des Staatsrates einzuholen gewesen wäre.</p>
+                  <p>Der Steiermärkische Landesrat stehe auf dem Standpunkte, dass die Genehmigung des Staatsrates zur Fortbewilligung einer bereits bestehenden Auflage nicht erforderlich sei, weil nach § 16 der Provisorischen Landesordnung für das Land Steiermark nur Beschlüsse über neue Landesabgaben der Genehmigung des Staatsrates bedürfen. Da die Provisorische Landesordnung im Landesgesetzblatte nicht verlautbart worden sei, erscheine es fraglich, ob ihr überhaupt Gesetzeskraft zugeschrieben werden könne.</p>
+                  <p>Der sprechende Vizekanzler glaube, dass die Rechtslage sich fol<pb facs="krp-0078_r-0013"/>gendermaßen darstelle:</p>
+                  <p>„Gemäß § 22 der Landesordnungen bedürfen höhere als 10%ige Landeszuschläge zu einer direkten Steuer oder sonstige Landesumlagen der kaiserlichen Genehmigung. Mit dem Wegfall dieses Erfordernisses ist nicht volle Freiheit der Regelung der Landesfinanzen eingetreten, die selbst bei strengster Auslegung des Gedankens der Autonomie mit staatsfinanziellen Rücksichten nicht völlig vereinbar wäre; vielmehr bedürfen solche Akte der Landesfinanzverwaltung gemäß § 3 des Gesetzes über die Staats- und Regierungsform, StGBl. Nr. 5 aus 1918, des Beitrittes des Staatsrates und nunmehr – gemäß § 6 des Gesetzes über die Staatsregierung, StGBl. Nr. 180 aus 1919 – des Beitrittes der Staatsregierung. Diese Konsequenz ergibt sich aus der Tatsache, dass die Verfassungsgesetze vom 14. März 1919 zwar die Landesgesetzgebung neu geregelt, aber die Landesverwaltung provisorisch in den bisherigen Formen unverändert beibehalten haben.“</p>
+                  <p>Wenn nun auch kein Zweifel besteht, dass der fragliche Beschluss der Provisorischen Landesversammlung von Steiermark die Zustimmung des Ka<pb facs="krp-0078_r-0014"/>binettsrates gefunden hätte, so sollte doch im Hinblick auf die denkbare große staatsfinanzielle Tragweite solcher Maßregeln der Länder die verfassungsmäßige Form grundsätzlich gewahrt werden. Es empfiehlt sich daher, die Steiermärkische Landesregierung auf die vorhin umschriebene Rechtslage im Hinblick auf die voraussichtlich demnächst bevorstehende Erneuerung des Beschlusses für das zweite Halbjahr 1919 aufmerksam zu machen. Auf den in Rede stehenden Beschluss zurückzukommen und ihn nachträglich zu genehmigen, empfiehlt sich im gegenwärtigen Zeitpunkt, wo er bald seine Aktualität verloren haben wird, wohl nicht mehr.</p>
+                  <p>Die Staatskanzlei beabsichtige demgemäß das Staatsamt für Finanzen zu ersuchen, die Landesregierung in Graz in diesem Sinne zu verbescheiden.</p>
+                  <p>Der Kabinettsrat pflichtet dieser Auffassung bei.</p>
+               </div>
+               <div type="top" xml:id="krp-0078_top08">
+                  <head>
+                     <label>
+                        <num n="8">8.</num>
+                        <seg>Besetzung von drei Haller-Erziehungsstipendien der erbländischen Abteilung.</seg>
+                     </label>
+                  </head>
+                  <p>Über Antrag des Staatssekretärs <hi rend="#letterspaced">Eldersch</hi> genehmigt der Kabinettsrat die Verleihung von drei <pb facs="krp-0078_r-0015"/>erledigten Haller-Erziehungsstipendien der erbländischen Abteilung mit dem Jahresbezuge von je 200 K an die Kanzleiadjunktentochter Wilhelmine Kratzig, die Hilfsämterdirektorstochter Herta Eckl und die Hilfsämterdirektorswaise Maria Wernigg.</p>
+               </div>
+               <div type="top" xml:id="krp-0078_top09">
+                  <head>
+                     <label>
+                        <num n="9">9.</num>
+                        <seg>Gesetzentwurf, betreffend die Gebührenbegünstigungen aus Anlass der Aufhebung und Ablösung der Jagdrechte auf fremden Grund und Boden.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Schumpeter</hi> erbittet und erhält vom Kabinettsrate die Ermächtigung, in der Nationalversammlung den Entwurf eines Gesetzes, betreffend die Gebührenbegünstigungen aus Anlass der Aufhebung und Ablösung der Jagdrechte auf fremden Grund und Boden einbringen zu dürfen.</p>
+                  <p/>
+               </div>
+            </div>
+            <div type="stenogramme">
+               <div n="1">
+                  <head>[KBR 78, 10. Juni 1919, Stenogramm A]</head>
+                  <p><pb facs="krp-0078_s01-0001"/>Nr. 78, 10. /6.</p>
+                  <p>Entschuldigt Zerdik.</p>
+                  <p>Loewenfeld: In einzelnen Zeitungen [steht], dass die Südslawen eigene Kommissäre in den Gemeinden einsetzen.</p>
+                  <p>1. Tandler: Heute von [<hi rend="#i">Einschub:</hi>] Doktor Karl [<hi rend="#i">Einschub Ende</hi>] Hugelmann, Universitätsprofessor und Ministerialsekretär, Schreiben erhalten: [dass er gemäß §] 33 der Dienstpragmatik die Nebenbeschäftigung als </p>
+                  <p>Herausgeber der Tageszeitung "Deutsches Volksblatt" übernommen hat. Der Redner hält dies für eine prinzipielle Frage, Kabinettsrats-Frage.</p>
+                  <p>Eldersch, Bratusch, Hanusch: Sehr bedenklich. </p>
+                  <p>Anschauung des Kabinettsrates, dass dies nicht zulässig ist.</p>
+                  <p>Miklas: Ohne ein Inkomp[atibilitäts]-Gesetz werden wir über diese Schwierigkeit nicht hinüberkommen.</p>
+                  <p>Breisky: Verliest die Dienstpragmatik.</p>
+                  <p>Miklas: Einem Beamtenkomitee [übergeben].</p>
+                  <p>2. Paul: In den letzten Tagen der Woche vor Pfingsten auf der Nordbahn ein part[ieller] Streik der Eisenbahnbediensteten auf der Nordbahn. </p>
+                  <p>Die Sache ist bis Donnerstag vertagt worden. Die dabei zutage getretenen Erscheinungen, sowie weitere Erfahrungen, die ich machen musste, nötigen mich, über die </p>
+                  <p>sehr ernste Lage, in der sich der Eisenbahnbetrieb befindet, Mitteilung zu machen. Die auswärtigen Vertreter haben gesprochen mit den Arbeitern; </p>
+                  <p>die Arbeitsleistung [ist] sehr gering, [dies ist] zurückzuführen auf Unterernährung, geringe Bekleidung und durch die [Ent]mutigung der Arbeiter durch die schweren Friedensbedingungen. </p>
+                  <p>Auch der Redner hat dasselbe bemerkt. Bei diesem Streik sind ganz neue Vertrauensmänner erschienen, insbesondere haben sie verlangt, dass noch am Samstag </p>
+                  <p>nachts der Staatssekretär für Finanzen erscheine. [Er] musste gewisse Zusicherungen machen, diese Zusicherungen müssen Donnerstag definitiv gegeben werden. [Es haben sich] neue Organisationen gebildet </p>
+                  <p>(technische Union). Eine Reihe von Eisenbahnern der komm[unistischen] Partei beigetreten (in den Ortsgruppen sind die Kom[munisten] </p>
+                  <p>schon drinnen). Wenn der Einfluss Tomschiks sinkt, wie es scheint, dann weiß ich nicht, was wir machen sollen. Bei den Südbahnbediensteten </p>
+                  <p>(Wiener Neustadt) ist es am ärgsten. Er meint, dass die Regierung bei dieser Versammlung erscheinen und einwirken [soll]; </p>
+                  <p>hofft mit 5-600.000 Kronen das Auslangen zu - schweigen. </p>
+                  <p>Auf der Nordbahn Sabotageakte (zum ersten Mal). </p>
+                  <p>Bittet, die Parteimitglieder des Kabinettsrates, auf die Leute einzuwirken.</p>
+                  <p>Schumpeter: Die halbe Million steht zur Verfügung unter der Einschränkung, ob es dabei bleibt. Da spielt ungarisches Geld mit.</p>
+                  <p>Bauer: In solchen Dingen ist es immer zu versuchen, ob [man] nicht materielle Forderungen, die nicht bewilligt werden können, dadurch aufschieben will, [dass] man versucht, den Leuten den ideellen Ersatz zu geben. Man könnte die Leute </p>
+                  <p>unter dem Schlagwort der Sozialisierung der Eisenbahnen vielleicht [dazu bringen], die Lohnforderungen in den Hintergrund [zu] stellen. Das liegt der Denkweise der Leute sehr nahe. Das wäre ein </p>
+                  <p>Gegenmittel gegen diese rein materiellen Forderungen. </p>
+                  <p>Der Redner bittet sich mit dieser Frage und ihrer Verwertung [zu] beschäftigen.</p>
+                  <p><pb facs="krp-0078_s01-0002"/>Schumpeter: Die Anregung Bauers scheint nicht so sehr eine Erleichterung der Situation, sondern einfach die einzig mögliche Rettung zu sein. Aber wenn wir daraus einen Vorteil für die Entspannung der Situation </p>
+                  <p>ziehen wollen, müssen wir rasch handeln. [Er] regt also an, nicht zu zögern.</p>
+                  <p>Loewenfeld: Kann nicht beurteilen, ob diese letzten Forderungen der Eisenbahner allgemein politischen Gründen entsprungen sind, oder [ob sie] der Not entsprungen [sind]. </p>
+                  <p>Teilt mit, dass er Lebensmittel nicht geben könnte, in erhöhten Mengen ist es ihm nicht möglich.</p>
+                  <p>Paul: Gegenwärtig wäre es immer noch wichtiger, dem scharf einsetzenden Einfluss entgegen zu treten.</p>
+                  <p>Hanusch: Es scheinen Elemente zu sein, die organis[atorisch] niemand hinter sich haben. Die Gefahr ist, wenn diesen Leuten Zugeständnisse gemacht werden, </p>
+                  <p>Ausbeutung durch die Geschäftsleute (Prager Vorbild!).</p>
+                  <p>Eldersch: Mit Präsident Seitz, Tomschik besprechen und Paul helfen. </p>
+                  <p>Preiswucherbekämpfung: man muss die Organisation der Arbeiterräte gemeinsam mit der Gemeindeverwaltung in diesen Dienst stellen.</p>
+                  <p>Loewenfeld: Das Staatsamt für Volksernährung kämpft seit Monaten vergeblich gegen die Preiswucherungen. </p>
+                  <p>Die Bekämpfung ist aber deshalb schwieriger heute wie früher: das hängt zusammen mit dem freien Handel.</p>
+                  <p>3. Fink: 2.) a) Angenommen.</p>
+                  <p>4. Fink: 2.) b) Telegraphen-Korrespondenz-Bureau.</p>
+                  <p>Schumpeter: Solche Umreihungen werfen die ganze Besoldungsreform über den Haufen (die Steuerbeamten etc. alle Beamten, die in der Gruppe D sind, werden in die Gruppe C kommen wollen). </p>
+                  <p>Die ganze Sache wird spruchreif werden, wenn wir die ganze Frage bereinigen werden. </p>
+                  <p>Die Bezeichnung Redaktionskonzeptbeamte wäre umzuändern in eine die Konzeptbeamten nicht enthaltende Bezeichnung.</p>
+                  <p>Paul: Hier handelt es sich um eine neue Pragmatisierung ....</p>
+                  <p>Breisky: Eine große Überzahl dieser Beamten erfüllt schon jetzt die Forderung der Abs[olvierung] der Mittelschule, nur einige der älteren lassen [dies] noch vermissen. </p>
+                  <p>Wir beabsichtigen, diese Frage zu novellieren. </p>
+                  <p>Was in den letzten Jahren dazu gekommen ist, entspricht alles. Durch die novellierten Dienstvorschriften werden die Bedingungen erfüllt.</p>
+                  <p><hi rend="#s">Schumpeter</hi>: -. Paul: Nur jene kommen in die Gruppe C, die volle Mittelschulbildung haben; den anderen gibt man dann individuell die Studien-Nachsicht.</p>
+                  <p>5. Interp[ellation]</p>
+                  <p>Bauer: [Statt] "Die gewesene Fürstin": Frau Elis[abeth] Windischgrätz.</p>
+                  <p>Angenommen.</p>
+                  <p><pb facs="krp-0078_s01-0003"/>6. Fink: St. Sch. K. K.</p>
+                  <p>Angenommen.</p>
+                  <p>7. Fink: Landesumlage in der Steiermark.</p>
+                  <p>Angenommen.</p>
+                  <p>8. Eldersch: Haller.</p>
+                  <p>Angenommen.</p>
+                  <p>9. Schumpeter: -.</p>
+                  <p>Angenommen.</p>
+                  <p>10. Schumpeter: Finanzexposé.</p>
+                  <p>½11.</p>
+                  <p>Freitag, 3h.</p>
+                  <p>Tagesordnung Finanzexposé</p>
+                  <p>11. Bauer: Es haben die Südslawen in Kärnten angegriffen. Der Landesbefehlshaber hat [um] Waffenstillstand gebeten. Trotz Einspruch der Entente </p>
+                  <p>haben die Südslawen Klagenfurt besetzt. Konzept unterschrieben im Einverständnis mit den Kärntner Vertretern. </p>
+                  <p>Italienischer Offizier nach Krainburg geschickt, erklärt, dass die Entente darauf bestehe, dass die Südslawen Klagenfurt räumen. [Dies wurde] </p>
+                  <p>unter direkt betrügerischen Vorstellungen verhindert, dass die Regierung den Antrag nicht ratifiziert. </p>
+                  <p>An die Entente und an Renner mitteilen. </p>
+                  <p>Es ist zu hoffen, dass Klagenfurt geräumt wird.</p>
+                  <p>Deutsch: Frage, ob es in den Int[entionen] des Auswärtigen Amtes gelegen wäre, wenn wir die Südgrenze verstärken würden?</p>
+                  <p>Bauer: Ich sehe im Augenblick keinen Grund zur Verstärkung. Wir sind zu schwach, wir müssen die Entente führen lassen. </p>
+                  <p>Poysdorf und Feldsberg. </p>
+                  <p>Abbau der Volkswehr, die Entente versteht jetzt schon, wie dumm es war. Morgen geht eine Note an die Italiener: zum Schutz </p>
+                  <p>der Neutralität verschieben wir den Abbau der Volkswehr. </p>
+                  <p>Die Franzosen versuchen auszuüben einen Druck zur Herausgabe von Munition aus Wöllersdorf an die Tschechen. </p>
+                  <p>Ich habe erklärt, dass dies ganz unmöglich ist.</p>
+                  <p>Deutsch: Poysdorf Abbau der Volkswehr: ein Abbau ist bereits vor sich gegangen: von 60 jetzt nur noch 39.000 Mann. Ab morgen nur noch 35.000 Mann. Noch mehr [her]abzugehen ist sehr bedenklich.</p>
+                  <p>Schumpeter: Tusar war bei mir in Sachen der Brückenanlage angefordert aus der Liquidierung gegen Zucker und Kohle.</p>
+                  <p/>
+               </div>
+               <div n="2">
+                  <head>[KBR 78, 10. Juni 1919, Stenogramm B]</head>
+                  <p><pb facs="krp-0078_s02-0001"/>78, 10. /6. 19.</p>
+                  <p>Tandler: Ich habe von Ministerialsekretär und a. o. Universitätsprofessor Dr. Karl Hugelmann [ein Schreiben erhalten] – </p>
+                  <p>Nebenbeschäftigung als Herausgeber des Tagblattes "Deutsches Volksblatt" übernommen. </p>
+                  <p>Ich habe es mir vorbehalten, das dem Kabinettsrat vorzutragen.</p>
+                  <p>Miklas: Ohne Inkomp[atibilitäts]-Gesetz werden wir über diese Schwierigkeit nicht hinüberkommen.</p>
+                  <p>Breisky: § 33 Dienstpragmatik.</p>
+                  <p>Ellenbogen: Das Moment der Befangenheit kommt in Betracht.</p>
+                  <p>Miklas: Beantrage, die Sache einem Beamtenkomitee zum Studium zu übertragen.</p>
+                  <p>[Beschluss]: Wird einem Beamtenkomitee der Staatskanzlei zur Antragstellung -.</p>
+                  <p>Paul: In den letzten Tagen [ist] auf der Nordbahn ein partieller Streik ausgebrochen. Verhandlungen bis Sonntag früh, bis Donnerstag </p>
+                  <p>hinausgeschoben.</p>
+                  <p>Die Entente-Vertreter haben in den letzten Tagen unsere Werkstätten besucht und der Bericht lautet sehr eigentümlich. Es heißt, dass sie zwar gefunden haben, </p>
+                  <p>dass unsere Werkstätten sehr zweckmäßig arbeiten, dass sie aber unzureichend arbeiten. Gründe &lt; &gt;. </p>
+                  <p>Dieser Bericht stimmt überein mit dem, was ich beim letzten Streik beobachtet habe. Bei den Verhandlungen sind ganz andere Leute erschienen </p>
+                  <p>und haben einen Ton angeschlagen, den ich nicht gewohnt war. </p>
+                  <p>[Sie haben] verlangt, dass der Staatssekretär für Finanzen noch in der Nacht am Samstag erscheint und bestimmte Zugeständnisse macht. </p>
+                  <p>Ich konnte nicht anders, als gewisse Zusicherungen zu machen, die am Donnerstag definitiv gegeben werden sollen.</p>
+                  <p>Es haben sich neue Organisationen gebildet - technische Union. Beitritte zur kom[munistischen] Partei. </p>
+                  <p>Wenn Tomschiks Einfluss sinkt, weiß ich nicht mehr, wie ich mit den Leuten fertig werden soll.</p>
+                  <p>Dienstag große Konferenz mit den Südbahnern. Tomschik meint, es sei notwendig, dass die Regierung bei einer solchen Versammlung erscheint und erklärt, dass das </p>
+                  <p>Hinauflizitieren aufhören muss. </p>
+                  <p>Die Forderungen würden sich auf 90 Millionen beziffern.</p>
+                  <p>Bitte um die Ermächtigung, [Einschub:] für die Zugeständnisse [Einschub Ende] gewisse Kredite, welche schon überschritten sind um 5-600.000 Kronen für dieses Budgetjahr überschreiten zu dürfen.</p>
+                  <p>Es haben schon Sabotageakte auf der Nordbahn stattgefunden.</p>
+                  <p>Möchte bitten, die Kabinettsmitglieder, die in der Partei stehen, auf die Leute einwirken zu lassen.</p>
+                  <p><pb facs="krp-0078_s02-0002"/>Schumpeter: Die halbe Million steht zur Verfügung mit der Einschränkung, dass es dabei bleibt. </p>
+                  <p>Verwendung wie ungarisches Geld.</p>
+                  <p>Paul: Für die Verwendung wie ungarisches Geld bin ich nicht zu haben und werde nicht zu haben sein.</p>
+                  <p>Bauer: Verbreitung von ungarischem Geld halte ich auch für ausgeschlossen. </p>
+                  <p>Es ist bei solchen Dingen immer zu versuchen, ob man nicht materielle Forderungen, die man nicht bewilligen kann, dadurch mildert, dass man ihnen einen </p>
+                  <p>ideellen Ersatz gibt. Ich denke, dass man den Leuten das System der Sozialisierung vorschlägt. Es ist etwas, was der </p>
+                  <p>Denkweise der Leute naheliegt und auch etwas, was dem Staat von Vorteil sein kann. </p>
+                  <p>Wenn man die Leute mit so etwas beschäftigt, so könnte das ein Gegenmittel gegen rein materielle Forderungen sein.</p>
+                  <p>Schumpeter: Mir scheint das nicht so sehr eine Erleichterung, als vielmehr die einzige Rettung zu sein. </p>
+                  <p>Aber wenn wir daraus einen Vorteil ziehen wollen zur Entspannung der Situation, so müsste es sehr rasch sein und wir müssten uns eventuell </p>
+                  <p>auch über außenpolitische Rücksichten hinwegsetzen. Es darf nicht gezögert werden.</p>
+                  <p>Loewenfeld: Ich weiß nicht, ob diese Forderungen aus politischen Gründen entsprungen sind, oder der Not. </p>
+                  <p>Ich kann keine Lebensmittel mehr in erhöhten Mengen geben und vielleicht auch nicht die normale Menge zu billigeren Preisen. </p>
+                  <p>Die Zufuhren nehmen wieder ab. </p>
+                  <p>Vielleicht könnte man doch gewisse Lebensmittel zu billigeren Preisen abgeben.</p>
+                  <p>Paul: Es ist richtig, dass den Leuten das Geld zur Bezahlung fehlt. Gegenüber der Sozialisierungsidee möchte ich bemerken: </p>
+                  <p>gegenwärtig ist es wichtig, schon in den nächsten Tagen den radikalen Elementen entgegen zu treten.</p>
+                  <p>Hanusch: Es scheinen das Elemente zu sein, die organisatorisch nichts hinter sich haben. </p>
+                  <p>Wenn diesen Leuten etwas zugestanden wird, so wirkt das sehr organisatorisch. </p>
+                  <p>Es muss etwas zum Abbau der Wucherpreise gemacht werden, sonst werden wir ebensolches erleben wie in Prag.</p>
+                  <p>Eldersch: Wir sollen mit Seitz und Tomschik sprechen und dem Staatssekretär Paul an die Hand gehen. </p>
+                  <p>Die Organisation der Arbeiterräte in den Dienst der Wucherpreisbekämpfung stellen.</p>
+                  <p>Loewenfeld: Das [Staatsamt für] Volksernährung kämpft einen ganz vergeblichen Kampf gegen die Wucherpreise. </p>
+                  <p>Es hängt das auch mit dem freien Handel zusammen. Ich kann das Gremium der Hoteliers nicht verhindern, mit ?italienischen Schiebern </p>
+                  <p>Abschlüsse zu machen, die sie dann zu unerhörten Preisen verkaufen.</p>
+                  <p><pb facs="krp-0078_s02-0003"/>Punkt 2.a) Fink: -.</p>
+                  <p>Angenommen.</p>
+                  <p>Punkt 2.b) </p>
+                  <p>Schumpeter: [Dem] Wunsch nach Einreihung in die Gruppe C wäre nicht zu entsprechen. </p>
+                  <p>Die ganze Sache wird ohnedies spruchreif werden bei der Neuorganisierung des Staatsdienstes. Sonst würde sich eine Reihe von Forderungen ergeben. </p>
+                  <p>Redaktionskonzeptbeamter wäre in – [durch] eine den Begriff Konzeptbeamter nicht enthaltende Bezeichnung zu ersetzen.</p>
+                  <p>Breisky: Eine große Zahl von Vertragsbeamten hat schon das Erfordernis der Mittelschule -. Nur die Ältesten haben noch einen Defekt. </p>
+                  <p>Wir beabsichtigen, gleichzeitig die Dienstordnung zu novellieren und die Mittelschule als Erfordernis zu statuieren.</p>
+                  <p>Paul: -.</p>
+                  <p>Schumpeter: In die Vollzugsanweisung. Nur jene kommen in die Gruppe C, die die volle Mittelschulbildung haben; und [wir] machen dann Nachsichten.</p>
+                  <p>Punkt 2.c) </p>
+                  <p>Bauer: Statt gewesene Fürstin Windischgrätz .... Frau Elisabeth Windischgrätz.</p>
+                  <p>Angenommen.</p>
+                  <p>Punkt 2.d) Niemand wird gewählt.</p>
+                  <p>Punkt 2.e) Angenommen.</p>
+                  <p>Punkt 3. Eldersch: -.</p>
+                  <p>Angenommen.</p>
+                  <p><pb facs="krp-0078_s02-0004"/>Punkt 5.a) Schumpeter: -.</p>
+                  <p>Angenommen.</p>
+                  <p>Freitag, 3h.</p>
+                  <p>Bauer: In Kärnten haben die Südslawen angegriffen und wie unsere Truppen nicht mehr standhalten konnten, hat der Landesbefehlshaber um </p>
+                  <p>Waffenstillstand gebeten. Das hat sich hingezogen. Trotz Einspruch der Entente haben die Jugoslawen inzwischen Klagenfurt </p>
+                  <p>besetzt.</p>
+                  <p>Deutsch: Liegt es in den Intentionen des Staatsamtes für Äußeres, dass wir die Südgrenze mit Truppen verstärken?</p>
+                  <p>Bauer: Ich sehe im Augenblick keinen Grund zu einer Verstärkung. Wir können die Sache militärisch nicht machen, sondern nur die </p>
+                  <p>Entente. Ich würde verfügbare Truppen nach Feldsberg, Poysdorf schicken.</p>
+                  <p>Bezüglich Abbau der Volkswehr, die Entente versteht schon, wie dumm es war, diese Forderung zu stellen. Es wird morgen eine Note an die italienische </p>
+                  <p>Waffenstillstandskommission, dass wir in dem Krieg zwar neutral bleiben wollen, dass wir aber unsere Grenzen sichern müssen und daher </p>
+                  <p>den Abbau jetzt nicht durchführen.</p>
+                  <p>Druck der Franzosen zur Herausgabe von Munition an die Tschechen. </p>
+                  <p>Ich habe den Franzosen mitgeteilt, dass wir das nicht tun können.</p>
+                  <p>Deutsch: Poysdorf nehme ich zur Kenntnis. </p>
+                  <p>Abbau der Volkswehr ist schon zum Großteil erfolgt. Von 60.000 Mann sind schon 20.000 entlassen. Morgen werden noch </p>
+                  <p>5.000 Leute entlassen. Größerer Abbau wäre gefährlich.</p>
+                  <p>Schumpeter: Tusar äußerte auch bei mir den Wunsch nach Munition.</p>
+                  <p>Loewenfeld: -</p>
+                  <p>11h.</p>
+               </div>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

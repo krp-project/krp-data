@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href='http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:acdh="https://vocabs.acdh.oeaw.ac.at/schema#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xml:lang="de">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="a" type="main" n="0165">Kabinettsprotokoll Nr. 165 vom 24. März 1920</title>
+            <title level="m" type="main" n="01">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <title level="m" type="sub" n="">Renner III (17. Oktober 1919 – 7. Juli 1920)</title>
+            <meeting>
+               <placeName key="https://d-nb.info/gnd/4066009-6">Wien</placeName>
+               <orgName key="https://d-nb.info/gnd/5162749-8">Kabinettsrat</orgName>
+               <date when-iso="1920-03-24"/>
+            </meeting>
+            <editor>
+               <persName key="https://d-nb.info/gnd/122481836"
+                         role="hasCreator"
+                         xml:id="hwohnout">
+                  <forename>Helmut</forename>
+                  <surname>Wohnout</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</affiliation>
+               <idno type="ORCID">0000-0002-3864-9839</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/120789825"
+                         role="hasCreator"
+                         xml:id="tolechowski">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0003-3291-6876</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/131679384"
+                         role="hasCreator"
+                         xml:id="rlein">
+                  <forename>Richard</forename>
+                  <surname>Lein</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0002-7502-0503</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="aholzer">
+                  <forename>Anna</forename>
+                  <surname>Holzer</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0005-3560-3500</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="dsoelkner">
+                  <forename>Dominik</forename>
+                  <surname>Sölkner</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-9895-7212</idno>
+            </editor>
+            <editor>
+               <persName role="hasContributor" xml:id="ischotzko">
+                  <forename>Ina</forename>
+                  <surname>Schotzko</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-5210-3713</idno>
+            </editor>
+            <funder n="1">
+               <orgName key="https://d-nb.info/gnd/2054142-9" role="hasFunder">Österreichischer Wissenschaftsfonds FWF</orgName>
+               <idno type="project">PAT1495024</idno>
+               <title type="project">Die Protokolle des österreichischen Kabinettsrates 1919–1920</title>
+            </funder>
+            <respStmt>
+               <resp>Projektverantwortung</resp>
+               <orgName key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Projektleitung</resp>
+               <persName key="https://d-nb.info/gnd/120789825" role="hasPrincipalInvestigator">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+                  <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+                  <idno type="ORCID">0000-0003-3291-6876</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Nationaler Forschungspartner</resp>
+               <orgName key="https://d-nb.info/gnd/1123037736" role="hasEnabler">Austrian Centre for Digital Humanities</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Digitalisierung der gedruckten Quellen</resp>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>TEI-Datenmodellierung</resp>
+               <persName role="hasContributor" xml:id="tfruehwirth">
+                  <forename>Timo</forename>
+                  <surname>Frühwirth</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-3997-5193</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technische Supervision</resp>
+               <persName key="https://d-nb.info/gnd/1043833846"
+                         role="hasContributor"
+                         xml:id="pandorfer">
+                  <forename>Peter</forename>
+                  <surname>Andorfer</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-9575-9372</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technisches Consulting und Vorbereitung der Druckausgabe</resp>
+               <persName key="https://d-nb.info/gnd/13281899X"
+                         role="hasContributor"
+                         xml:id="skurz">
+                  <forename>Stephan</forename>
+                  <surname>Kurz</surname>
+                  <affiliation key="https://d-nb.info/gnd/1202798799">Institut für die Erforschung der Habsburgermonarchie und des Balkanraumes</affiliation>
+                  <idno type="ORCID">0000-0003-2546-2570</idno>
+               </persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher key="https://d-nb.info/gnd/1001454-8">Österreichische Akademie der Wissenschaften</publisher>
+            <date when="2028"/>
+            <availability status="free">
+               <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">Lizenziert unter CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/deed.de)</licence>
+            </availability>
+            <idno type="ISBN_Print"/>
+            <idno type="ISBN_Part_epub"/>
+            <idno type="ISBN_Digital"/>
+            <idno type="DOI"/>
+            <idno type="DOI_zenodo"/>
+            <idno type="ebook_ID"/>
+         </publicationStmt>
+         <seriesStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="m" type="main">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <respStmt>
+               <resp>Bearbeitung und Herausgeberschaft</resp>
+               <orgName key="https://d-nb.info/gnd/2024703-5">Universität Wien</orgName>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+         </seriesStmt>
+         <notesStmt>
+            <note>Diese TEI-XML-Datei ist Grundlage für eine Druckausgabe der Edition.</note>
+            <relatedItem>
+               <biblStruct>
+                  <monogr>
+                     <imprint>
+                        <pubPlace key="https://d-nb.info/gnd/4066009-6">Wien</pubPlace>
+                        <publisher key="https://d-nb.info/gnd/2068748-5">Verlag der Österreichischen Akademie der Wissenschaften</publisher>
+                        <date when="2029"/>
+                     </imprint>
+                     <extent/>
+                  </monogr>
+                  <note>
+              <idno/>
+              <ptr/>
+            </note>
+                  <citedRange/>
+               </biblStruct>
+            </relatedItem>
+         </notesStmt>
+         <sourceDesc>
+            <bibl>Quellbestand: AT-OeStA/AdR MRang MR 1Rep KRP Kabinettsratsprotokolle, 1918-1920 (Teilbestand)<ref target="https://www.archivinformationssystem.at/detail.aspx?id=5465">https://www.archivinformationssystem.at/detail.aspx?id=5465</ref>
+            </bibl>
+            <msDesc>
+               <msIdentifier>
+                  <institution key="https://d-nb.info/gnd/37748-X" role="hasOwner">AT-OeStA Österreichisches Staatsarchiv (Archiv (ÖStA))</institution>
+                  <repository key="https://d-nb.info/gnd/1601181-8">AT-OeStA/AdR Archiv der Republik, 1918- (Abteilung)</repository>
+                  <collection>AT-OeStA/AdR MRang MR 1Rep Ministerrat 1. Republik, 1918 - 1938 (Bestand)</collection>
+                  <idno>AT-OeStA_AdR-MRang-MR-1.-Rep.-KRP-165</idno>
+               </msIdentifier>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <abstract>
+            <p>
+          <!--to be generated-->
+        </p>
+         </abstract>
+      </profileDesc>
+      <encodingDesc>
+         <styleDefDecl scheme="css"/>
+         <tagsDecl>
+            <rendition xml:id="b" scheme="css">font-weight:bold;</rendition>
+            <rendition xml:id="su" scheme="css">vertical-align:super;font-size:.7em;</rendition>
+            <rendition xml:id="s" scheme="css">text-decoration:line-through;</rendition>
+            <rendition xml:id="u" scheme="css">text-decoration:underline;</rendition>
+            <rendition xml:id="ow" scheme="css">text-decoration:line-through;text-decoration-style:double;</rendition>
+            <rendition xml:id="r" scheme="css">display:block;text-align:right;</rendition>
+            <rendition xml:id="letterspaced" scheme="css">letter-spacing:0.15em;</rendition>
+            <rendition xml:id="i" scheme="css">font-style:italic;</rendition>
+         </tagsDecl>
+         <editorialDecl>
+            <hyphenation>
+               <p>
+            <!--to be added-->
+          </p>
+            </hyphenation>
+            <correction>
+               <p>
+            <!--to be added-->
+          </p>
+            </correction>
+            <normalization>
+               <p>
+            <!--to be added-->
+          </p>
+            </normalization>
+            <punctuation>
+               <p>
+            <!--to be added-->
+          </p>
+            </punctuation>
+            <stdVals>
+               <p>
+            <!--to be added-->
+          </p>
+            </stdVals>
+            <p>
+          <!--to be added-->
+        </p>
+         </editorialDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#tfruehwirth" when-iso="2026-10-13">TEIGarage output upconverted with upconvert.xsl</change>
+         <change who="#tfruehwirth" when-iso="2026-10-13">TEI header populated with generate_tei_templates.py</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface/>
+   </facsimile>
+   <text>
+      <body>
+         <div xml:id="doc-krp-0165.xml">
+            <head type="dokument">
+               <title type="num">165.<note type="footnote">Das Protokoll trägt den Vermerk <hi rend="#i">Vertraulich!</hi></note>
+               </title>
+               <title type="desc">
+                  <pb facs="krp-0165_r-0001"/>[Mittwoch] 1920-03-24</title>
+            </head>
+            <div type="dokumentkopf">
+               <div type="vorsitz">
+                  <head>Vorsitz:</head>
+                  <p>Renner</p>
+               </div>
+               <div type="anwesend">
+                  <head>Anwesend:</head>
+                  <p>Deutsch, Eisler, Eldersch, Ellenbogen, Fink, Glöckel, Loewenfeld-Russ, Mayr, Miklas, Paul, Ramek, Reisch, Resch, Stöckler, Tandler, Waiss, Zerdik</p>
+               </div>
+               <div type="zugezogen">
+                  <head>Zugezogen:</head>
+                  <p>Körner</p>
+               </div>
+               <div type="schriftfuehrer">
+                  <head>Schriftführer:</head>
+                  <p>unbekannt</p>
+               </div>
+               <div type="dauer">
+                  <head>Dauer:</head>
+                  <p>14.30–17.30 Uhr</p>
+               </div>
+            </div>
+            <div type="komponenten">
+               <p>Reinschrift, Beilagen, Anhang, Konzept, stenographische Mitschrift</p>
+            </div>
+            <div type="beilagen">
+               <head>Beilagen:</head>
+               <list>
+                  <item><ref target="#krp-0165_top02">Zu TOP 2</ref>: <ref target="#krp-0165_b01">Vortrag des Staatsamtes für Heereswesen über einheitliche Maßnahmen zur Durchführung des Wehrgesetzes</ref></item>
+                  <item><ref target="#krp-0165_top02">Zu TOP 2</ref>: <ref target="#krp-0165_b02">Entwurf des Wehrgesetzes</ref></item>
+                  <item><ref target="#krp-0165_top02">Zu TOP 2</ref>: <ref target="#krp-0165_b03">Staatsamt für Heereswesen Zl. 2520/1920 über die Durchführung des Wehrgesetzes</ref></item>
+                  <item><ref target="#krp-0165_top02">Zu TOP 2</ref>: <ref target="#krp-0165_b04">Staatsamt für Heereswesen Zl. 2314/1920 über die Organisation des Heeres</ref></item>
+                  <item><ref target="#krp-0165_top02">Zu TOP 2</ref>: <ref target="#krp-0165_b05">Staatsamt für Heereswesen Zl. 2171/1920 über Bekleidung und Festsetzung der Landesabzeichen des österreichischen Heeres</ref></item>
+               </list>
+            </div>
+            <div type="protokoll">
+               <pb facs="krp-0165_r-0002"/>
+               <div type="top" xml:id="krp-0165_top01">
+                  <head>
+                     <label>
+                        <num n="1">1.</num>
+                        <seg>Beantwortung der Anfrage der Abgeordneten Friedmann und Genossen, betreffend die Maßregelung des Sektionschefs Dr. Kaup.</seg>
+                     </label>
+                  </head>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> teilt die Absicht mit, in der heutigen Sitzung der Nationalversammlung die von den Abgeordneten Friedmann und Genossen am 20. März eingebrachte Anfrage, betreffend die Maßregelung des Sektionschefs Dr. Kaup zu beantworten und bringt dem Kabinettsrat den dafür vorbereiteten Entwurf zur Verlesung.</p>
+                  <p>Der Kabinettsrat erklärt sich mit der Beantwortung der Anfrage in der vorgeschlagenen Fassung einverstanden.</p>
+               </div>
+               <div type="top" xml:id="krp-0165_top02">
+                  <head>
+                     <label>
+                        <num n="2">2.</num>
+                        <seg>Durchführung des Wehrgesetzes.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Deutsch</hi> bespricht an der Hand des dem Kabinettsrat vorliegenden Elaborates des Staatsamtes für Heer[es]wesen über die Maßnahmen zur Durchführung des Wehrgesetzes zunächst die Notwendigkeit, den Termin für die Anmeldung auf das erhöhte Kündigungsgeld für austretende Volkswehrmänner vom 15. April auf den 30. April zu erstrecken. Diese Fristverlängerung sei dadurch notwendig geworden, dass wegen der Verzögerung in der Verabschiedung des Wehrgesetzes die Werbung auf die Zeit vom 1.–30. April festgesetzt werden müsste und daher im Falle der Beibehaltung des <pb facs="krp-0165_r-0003"/>15. April als Ende der Anmeldungsfrist auf das erhöhte Kündigungsgeld ein Vakuum von 14 Tagen bliebe, innerhalb dessen überhaupt keine staatliche Wehrmacht vorhanden wäre.</p>
+                  <p>Weiters hebt der sprechende Staatssekretär hervor, dass bezüglich der Gliederung des Heeres an dem Brigadesystem festgehalten werde und die Aufstellung von sechs Brigaden in Aussicht genommen sei. Er geht sodann über auf die Adjustierungsvorschriften und bemerkt, dass darüber nunmehr mit den Ländern Verhandlungen eingeleitet werden sollen.</p>
+                  <p>Schließlich verweist er auf den Entwurf des Erlasses über die Grundsätze für die erste Wehrmacht, welche sich im Wesentlichen auf die Wiedergabe der einschlägigen Bestimmungen des Wehrgesetzes beschränken, und erbittet dafür die Genehmigung des Kabinettsrates.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Ramek</hi> wendet sich zunächst gegen die Einseitigkeit der in dem Elaborate des Staatsamtes für Heer[es]wesen gegebenen Motivierung für die beschleunigte Durchführung des Wehrgesetzes. Weiters bezeichnet er es als einen Widerspruch zum Wehrgesetz, wenn das Referat davon spreche, dass die Gebühren für die künftigen Wehrmänner bereits festgelegt worden seien, da § 29 des Wehrgesetzes <pb facs="krp-0165_r-0004"/>die Gebühren der Heeresangehörigen ausdrücklich der gesetzlichen Regelung vorbehalte.</p>
+                  <p>In den Adjustierungsvorschriften vermisst Redner Bestimmungen über Fahnen und fragt an, ob die Einführung solcher in Aussicht genommen sei oder nicht. Sollte die Absicht bestehen, der neuen Wehrmacht Fahnen zu geben, so müssten sie entsprechend den demokratischen Grundsätzen in den Staats- oder Landesfarben gehalten werden. Dagegen wäre es ganz unzulässig, dass die neue Wehrmacht etwa, wie jetzt die Volkswehr, mit roten Fahnen ausgestattet werde.</p>
+                  <p>Anlangend die Grundsätze für die erste Werbung erblickt der sprechende Staatssekretär in der Bestimmung des Abschnittes II Pkt. 1, wonach sich die Offiziere und Berufsunteroffiziere der Beurteilung jener Landeskommissionen zu unterwerfen haben, in deren Bereich sie eingeteilt sind, eine gewisse Härte. Er verlange, dass es jedem Offizier und Berufsunteroffizier freigestellt werde, sich in jenem Lande zu melden, in dessen Kontingent er die Aufnahme anstrebt, da durch die Beurteilung von Seite einer anderen Landeskommission ein ihm ungünstiges Präjudiz in der Entscheidung über seine Aufnahme geschaffen werden könnte. <pb facs="krp-0165_r-0005"/>Redner stelle daher den Antrag, den Pkt. 1 dahin abzuändern, dass die Beurteilung der Offiziere und Berufsunteroffiziere nicht durch die Landeskommission des Landes, in welchem der Betreffende eingeteilt ist, sondern durch die Landeskommission jenes Landes, für welches der Einzelne sich meldet, zu erfolgen habe. Ist er in diesem Lande nicht heimatsberechtigt, habe nicht die Landeskommission, sondern die Landesregierung über die Aufnahme zu entscheiden.</p>
+                  <p>Zu den Pkt. 2–4 desselben Abschnittes II wünsche Redner die protokollarische Festlegung, dass nach der Ansicht seiner Parteigenossen das freie Ermessen des Leiters der Heeresverwaltungsstellen bei der Aufnahme durch die Befugnisse der Reichskommissionen nicht beeinträchtigt werden dürfe und der Leiter der Heeresverwaltungskommission die Entscheidung über die Aufnahme treffen könne, ohne die Entscheidung oder Zuweisung durch die Reichskommission abwarten zu müssen.</p>
+                  <p>Eine zwingende Notwendigkeit, die Frist zur Anmeldung auf das erhöhte Kündigungsgeld für austretende Volkswehrmänner auf den 30. April zu verschieben, scheine dem sprechenden Staatssekretär nicht gegeben, er halte im Gegenteil da<pb facs="krp-0165_r-0006"/>für, dass die vom Staatsamte für Heer[es]wesen angeführten Gründe eher nach einer Abkürzung des Termines drängen.</p>
+                  <p>In dem zweiten Abs. des Abschnittes III der Grundsätze für die Werbung erblicke er einen Widerspruch zu § 12 des Wehrgesetzes, welcher die Höchstzahl der in den einzelnen Werbebereichen anzuwerbenden Heeresangehörigen ziffernmäßig genau begrenzt, wogegen nach den Grundsätzen Wehrmänner in jedem Werbebereich ohne Rücksicht auf die Höchstzahl nach § 12 des Wehrgesetzes angeworben werden sollen.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Deutsch</hi> stellt zu den Bemerkungen des Staatssekretärs Dr. Ramek ausdrücklich fest, dass die endgiltige Festsetzung der Gebühren für die Heeresangehörigen entsprechend dem § 29 des Wehrgesetzes der Nationalversammlung vorbehalten werde und sich der bezügliche Gesetzentwurf bereits in Ausarbeitung befinde.</p>
+                  <p>Dem Wunsche bezüglich der Fahnen erklärt sich Redner durch Aufnahme folgender Bestimmungen in die Adjustierungsvorschriften zu entsprechen bereit: „Die Formationen der neuen Wehrmacht werden auf ihren Fahnen die Farben des Staates und jenes Landes führen, aus dessen Werbebereich sie stammen.“ Die Fahnen <pb facs="krp-0165_r-0007"/>der Volkswehr seien nicht vom Staate beigestellt, sondern von der Mannschaft selbst aus eigenen Mitteln angeschafft worden; es entfiel daher der Anlass, von amtswegen zu der Art ihrer Ausstattung Stellung zu nehmen.</p>
+                  <p>Der zu Pkt. 1 des Abschnittes II der Grundsätze für die erste Werbung gewünschten Änderung hinsichtlich der Zuständigkeit der Landeskommissionen zur Beurteilung der Offiziere und Berufsunteroffiziere vermöge der sprechende Staatssekretär nicht beizutreten. Es müsse unterschieden werden zwischen der Aufnahme, die durch den Staat nach der Qualifikation zu erfolgen habe, und der Zuweisung an die einzelnen Standeskörper, welche nach der Zuständigkeit geschehe und bei den nicht im Werbebereiche heimatberechtigten Heeresangehörigen der Zustimmung der zuständigen Landesregierung bedürfe. Die Beurteilung, ob die allgemeinen Voraussetzungen für die Aufnahme vorliegen, könne naturgemäß nur durch jene Landeskommission vorgenommen werden, welche den Aufnahmewerber wirklich kennt, und darum sei es notwendig, die Landeskommission, in deren Bereich der Betreffende dient, mit dieser Aufgabe zu betrauen. Die Aufrechterhaltung dieser Vorgangsweise sei auch aus dem Grunde <pb facs="krp-0165_r-0008"/>notwendig, um den Abbau der Offiziere und Berufsunteroffiziere in einem gerechten Verhältnis zwischen Bedarf und der aus den einzelnen Ländern stammenden Zahl der Berufsmilitärpersonen durchführen zu können.</p>
+                  <p>Der sprechende Staatssekretär müsse ferner dem Verlangen nach protokollarischer Festlegung entgegentreten, dass das freie Ermessen des Leiters der Heeresverwaltungsstellen bei der Aufnahme durch die Tätigkeit der Reichskommissionen nicht beeinträchtigt werden dürfe. Es sei unmöglich, der Heeresverwaltungsstelle das Entscheidungsrecht über die Aufnahme in die Hand zu geben, da die Aufnahmen doch erst erfolgen können, bis eine Gesamtübersicht über die Bewerber vorliege und die Auswahl nach dem Grade der Berücksichtigungswürdigkeit getroffen werden könne. Ein selbständiges Vorgehen der Heeresverwaltungsstelle könnte zur Folge haben, dass Aufnahmen weit über den Bedarf stattfinden und den Überzähligen die nach § 13 des Wehrgesetzes erforderliche Bestätigung der Aufnahme durch das Staatsamt für Heer[es]wesen verweigert werden müsste.</p>
+                  <p>Die Beibehaltung des 15. April als Endtermin für die Anmeldung der Volkswehrmänner auf das erhöhte Kündigungsgeld <pb facs="krp-0165_r-0009"/>sei aus administrativ-technischen Gründen ausgeschlossen. Redner halte sich auch für verpflichtet, ausdrücklich darauf hinzuweisen, dass es ganz und gar unmöglich sei, in der Zeit bis 15. April irgendeine verlässliche Auswahl aus der Zahl der Aufnahmewerber zu treffen und er daher von Vornherein jede Verantwortung dafür ablehne, wenn die neue Wehrmacht nicht den Wünschen hinsichtlich der Qualitäten der Wehrmänner entspricht. Sollte der Kabinettsrat aber trotzdem sich für eine Abkürzung entscheiden, müsse Redner folgenden Zusatzantrag stellen: „Den in die neue Wehrmacht aufnahmesuchenden Volkswehrmännern muss bis längstens 15. April die Entscheidung der Heeresverwaltungsstellen mitgeteilt werden.“ </p>
+                  <p>Staatssekretär <hi rend="#letterspaced">Eldersch</hi> erwidert auf die Polemik des Staatssekretärs Dr. Ramek gegen die Motivierung für die Beschleunigung in der Aufstellung der neuen Wehrmacht. Er sowie Unterstaatssekretär Dr. <hi rend="#letterspaced">Eisler</hi> bezeichnen es als einen schweren Fehler, auf dem 15. April als Endtermin für die Anmeldung der Volkswehrmänner auf das erhöhte Kündigungsgeld zu beharren. Für die neue Wehrmacht sollen doch aus den Bewerbern die besten Elemente ausgesucht werden, <pb facs="krp-0165_r-0010"/>was einen gewissen Zeitaufwand erfordere und jedenfalls nicht bis zum 15. April geschehen könnte. Die Abkürzung der Frist würde also nur zum Nachteil für die Güte des Mannschaftsmateriales des künftigen Heeres ausschlagen und das Verfahren über die eingelaufenen Anmeldungen zu einer leeren Formalität gestalten.</p>
+                  <p>Unterstaatssekretär Dr. Eisler knüpft daran noch die weitere Bemerkung, dass die Anregungen des Staatssekretärs Dr. Ramek offenbar von dem Wunsche ausgehen, den Einfluss der Länder auf das Werbegeschäft möglichst zu verstärken. Dieser Zweck werde aber durch eine Abkürzung der Anmeldefrist in keiner Weise erreicht, sondern im Gegenteil den Ländern damit nur die größten Schwierigkeiten bereitet, da ihre zur Besorgung der Heeresangelegenheiten geschaffenen Einrichtungen und Organisationen einen viel zu schwerfälligen Apparat darstellen, als dass sie innerhalb eines so kurzen Zeitraumes die ihnen zufallenden Arbeiten tatsächlich zu erledigen im Stande wären.</p>
+                  <p>Infolge Abberufung des Vorsitzenden in die Sitzung der Nationalversammlung unterbricht der Kabinettsrat die Beratungen. Nach Wiederaufnahme der Verhandlung teilt Staatssekretär Dr. <hi rend="#letterspaced">Deutsch</hi> <pb facs="krp-0165_r-0011"/>mit, dass in der Zwischenzeit unter den Parteien eine Einigung gelungen sei, aufgrund welcher Staatssekretär Dr. Ramek seine Einwendungen und Vorbehalte zu den Abschnitten II und III der Grundsätze für die erste Werbung sowie gegen die Verlängerung des Anmeldetermines auf das erhöhte Kündigungsgeld zurückgezogen habe.</p>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> verkündet sohin, dass bezüglich der von Staatssekretär Dr. Ramek zu Beginn der Sitzung berührten Punkte im Kabinettsrate nunmehr folgendes Einverständnis herrsche:</p>
+                  <list>
+                     <item n="1"><label>1.)</label> Es wird ausdrücklich festgestellt, dass die endgiltige Regelung der Heeresgebühren im Gesetzgebungswege zu erfolgen habe,</item>
+                     <item n="2"><label>2.)</label> bezüglich der Fahnen erhalten die Adjustierungsvorschriften nachstehende Ergänzung:</item>
+                  </list>
+                  <p>„Die Formationen der neuen Wehrmacht werden auf ihren Fahnen die Farben des Staates und jenes Landes führen, aus dessen Werbebereich sie stammen“,</p>
+                  <list>
+                     <item n="1"><label>3.)</label> die Beurteilung der Offiziere und Berufsunteroffiziere erfolgt durch jene Landeskommission, in deren Bereich die Bewerber eingeteilt sind.</item>
+                  </list>
+                  <p>Von dem Vorbehalte zu den Pkt. 2–4 des Abschnittes II der Grundsätze für die erste Werbung wird abgesehen.</p>
+                  <p><pb facs="krp-0165_r-0012"/></p>
+                  <list>
+                     <item n="1"><label>4.)</label> Die Frist für Anmeldungen der austretenden Volkswehrmänner auf das erhöhte Kündigungsgeld wird vom 15. April auf den 30. April erstreckt.</item>
+                  </list>
+                  <p>Der erste Abs. des Abschnittes III der Grundsätze für die erste Werbung erhält folgende Fassung:</p>
+                  <p>„Die Anmeldung für die neue Wehrmacht hat vom 1.–15. April 1920 zu erfolgen. Als erster Werbetag gilt der 1. April.“</p>
+                  <p>Abschließend ersucht der Vorsitzende den Staatssekretär für Heer[es]wesen, die Aufstellung und Ausrüstung der neuen Wehrmacht möglichst zu beschleunigen und jedenfalls dafür Sorge zu tragen, dass an der bevorstehenden Besetzung Westungarns bereits Kontingente aus allen Ländern mitwirken können.</p>
+                  <p/>
+               </div>
+            </div>
+            <div type="anhaenge">
+               <p><pb facs="krp-0165_a01-0001"/>Anhang zum Kabinettsprotokoll Nr. 165 vom 24. März 1920.</p>
+               <div n="1">
+                  <head/>
+                  <div type="a01_protokoll">
+                     <p>Anknüpfend an den Beschluss des Kabinettsrates vom 23. März 1920, betreffend die Behandlung der Personalangelegenheiten der beamteten Staatssekretäre, teilt der <hi rend="#letterspaced">Vorsitzende</hi> mit, dass er beabsichtige, beim Präsidenten der Nationalversammlung die Ernennung des Staatssekretärs für Verkehrswesen Ludwig Paul unter Festsetzung des Beginnes der anrechenbaren Dienstzeit mit 1. Jänner 1892 zum Sektionschef im Staatsamte für Verkehrswesen und die Einreihung des Genannten sowie des Staatssekretärs für Volksernährung, Sektionschefs Dr. Johann Loewenfeld-Russ ad personam in die II. Rangsklasse zu beantragen.</p>
+                     <p>Der Kabinettsrat nimmt die Mitteilung zustimmend zur Kenntnis.</p>
+                     <p/>
+                  </div>
+               </div>
+            </div>
+            <div type="stenogramme">
+               <div n="1">
+                  <head>[KRP 165, 24. März 1920, Stenogramm Groß]</head>
+                  <p><pb facs="krp-0165_s01-0001"/>1.</p>
+                  <p>[Renner]: [Ernennung der Staatssekretäre Paul und Loewenfeld-Russ]. Antrag, dass sie zu Sektionschefs der II. Rangsklasse ernannt werden.</p>
+                  <p>2.</p>
+                  <p>Renner: </p>
+                  <p>Interpellation Fried[mann] wegen Kaup.</p>
+                  <p>Fink: </p>
+                  <p>Bemängelt die scharfen Ausdrücke bei der Besprechung der Wirksamkeit als Staatsse-</p>
+                  <p>kretär für Volksgesundheit.</p>
+                  <p>3.</p>
+                  <p>Deutsch: </p>
+                  <p>Kündigungsfrist bis 30. April. Fink hat Bedenken geltend gemacht und ich habe gemeint, wir würden nicht [darauf] bestehen. Die Referenten sind [aber] der Meinung, dass wir darauf bestehen müssen.</p>
+                  <p>Die Werbung kann beginnen am 1. und endet 30. April. Wenn [man] am 15. April die Kündigungsfrist erlöschen lässt, so entsteht ein Vakuum und das ist unmöglich. </p>
+                  <p>Wir können nichts anderes tun, als die Verlängerung um 14 Tage auszusprechen. Das genügt auch nur dann, wenn wir mit den Werbesachen rechtzeitig herauskommen. An der Verzögerung ist der </p>
+                  <p>Aufschub in der Wehrvorlage schuld. Es ist ausgeschlossen, hier eine Änderung zu treffen. Wir haben überlegt, es so zu machen, dass bis 15. April die Volkswehrleute bis dahin </p>
+                  <p>begutachtet sein können. Das ist auch unmöglich, weil die Landesverwaltungsstellen nicht so rasch zusammentreten können.</p>
+                  <p>Ich bringe zur Kenntnis, dass ich die Entwicklung zur Brigade weiter verfolge. Eine Äußerung des Kabinetts [ist] nicht nötig.</p>
+                  <p>Adj[ustierung]; [ich] habe Vorschriften vorgelegt und [diese soll man] verhandeln mit den Ländern. [Ein] Kabinettsbeschluss nicht nötig.</p>
+                  <p>[Ein] Beschluss ist nötig über die Werbung. Der Entwurf des Erlasses beinhaltet nur die Wiedergabe des Gesetzes. Es bleiben die Kommissionen, insofern als sie Begutachtungskommissionen </p>
+                  <p>sind nach den Bestimmungen des Gesetzes. Eine Änderung ist auch da nicht möglich, weil die Kommissionen in voller Tätigkeit sind und eine Änderung alle Ordnung unmöglich machen würde.</p>
+                  <p>[Ich] bitte 1.) zu beschließen, dass die Kündigungsfrist um 14 Tage verlängert wird; 2.) dass die Werbung in der vorgeschriebenen Fassung durchgeführt wird;</p>
+                  <p>3.) dass wir in der Formation zur Brigade fortschreiten und 4.) wegen der Adj[ustierung] mit den Ländern verhandeln.</p>
+                  <p>Renner: </p>
+                  <p>Kann das Heeresamt bejahen, dass bei der Besetzung von Westungarn aus allen Ländern kleine Kontingente beigestellt werden?</p>
+                  <p>Deutsch: </p>
+                  <p>Wenn ich heute die Vollmacht bekomme, kann ich die Heeresverwaltungsstellen zu rascherer Arbeit anweisen und ich könnte das Kontingent aufstellen. Schwierigkeiten könnten nur mit Tirol </p>
+                  <p>entstehen.</p>
+                  <p>Renner: </p>
+                  <p>Es wäre von Wichtigkeit für Westungarn als - [aus] allen Ländern Kontingente zu haben, wobei die Verteilung der Kontingente in Westungarn selbst von Wichtigkeit ist.</p>
+                  <p>Ramek: </p>
+                  <p>Der Vortrag [des Staatsamtes] für das Heerwesen beginnt mit einer Motivierung der raschen Durchführung und weist auf die politischen Verhältnisse hin. Die aufgezählten Tatsachen sind alle bekannt. Wir </p>
+                  <p>kennen die Schwierig[keiten] in der Bevölkerung und wir gehen von der Erkenntnis aus, dass rasch eine neue Armee aufgestellt werden muss, damit die Volkswehr in dem jetzigen Bestand abgebaut wird, die so vielen Anfeindungen </p>
+                  <p>ausgesetzt ist. Ich möchte aber dazu, wenn schon das Heeresamt sich bemüßigt gefunden hat, darauf hinzuweisen, bemerken, dass meine Parteimitglieder es sonderbar gefunden haben, dass hier Licht und </p>
+                  <p>Schatten etwas ungleich verteilt wurden. Es wird darauf hingewiesen, dass die Verweigerung des Gehorsams eine allgemeine ist, die politischen Verhältnisse zu einer allgemeinen Bewaffnung führen. Dann werden Beispiele </p>
+                  <p>angeführt. Es handelt sich da um Bauern. Es waren ?streikende Bauern, aber die Christlichsozialen haben mit Aufopferung, besonders Rintelen, die Revolte niedergeschlagen und </p>
+                  <p>jetzt sieht es so aus, als ob die ganzen Nachteile des öffentlichen Lebens man - den bürgerlichen Kreisen aufgelastet werden können. Man hätte ebenso gut auf andere Beispiele hinweisen können, so </p>
+                  <p>auf Neunkirchen, Ternitz, Gloggnitz, die soweit geführt haben, dass man nicht einmal die gerichtliche Untersuchung im Falle von Neunkirchen durchführen und die Beschuldigten verhaften kann. </p>
+                  <p><pb facs="krp-0165_s01-0002"/>Der Kreisarbeiterrat von Wien hat zur Bewaffnung des Proletariats aufgefordert. Nun, das im allgemeinen. Im besonderen hätte ich einige Punkte zu berühren, die nicht von </p>
+                  <p>besonderer Tragweite sind, aber einer Klarstellung bedürfen.</p>
+                  <p>[Zu] Seite 3: Im Kabinettsratsbeschluss vom 15. März wurden die Gebühren nicht festgelegt, sondern in Aussicht genommen, und die Festsetzung der Gebühren nach </p>
+                  <p>§ 29 vorbehalten ist einem eigenen Gesetz. Ich möchte darauf hinweisen, dass der Ausdruck schief ist und kein Präjudiz bilden kann gegenüber § 29.</p>
+                  <p>Was die Beilagen [anlangt], möchte ich auf die Festsetzung der Landesabzeichen hinweisen, dass hier in dem ganzen Artikel nichts steht von den Fahnen. Sind Fahnen in </p>
+                  <p>Aussicht genommen oder nicht? Die Volkswehr hat solche, [...] rot. Will man Fahnen einführen, dann müssen sie entsprechend den demokratischen Grundsätzen </p>
+                  <p>in den Staats- oder Landesfarben eingeführt werden. Es wäre unhaltbar, dass die neue Wehrmacht mit roten Fahnen aufmarschiert. Diese Frage sollte jetzt </p>
+                  <p>bereinigt werden. Das würde den - [dem] demokratischen Charakter der neuen Wehrmacht nicht entsprechen. Ich bitte, dass über diesen - [dieser] Punkt im Kabinettsrat besprochen wird.</p>
+                  <p>Was die Durchführungsverordnung zum Wehrgesetz anlangt, so glaube ich, dass der Punkt 1 eine gewisse Härte enthalten kann. Die Landeskommission für </p>
+                  <p>Offiziere hat die Beurteilung aller im Land eingeteilten Bewerber zum Ausdruck zu bringen. In die Wehrmacht kann nach dem Gesetz niemand aufgenommen werden, der [sich] nicht darum </p>
+                  <p>bewirbt. Die erste Instanz, welche das Gutachten abzugeben und die Gesuche zu übernehmen hat - es heißt, dass die Anmeldung nur dort erfolgen kann, wo der </p>
+                  <p>Offizier eingeteilt [ist] - das ist zu eng. Wenn heute ein Steirer oder [ein] Tiroler Offizier, der zuständig ist in einem anderen Land, in Wien eingeteilt ist, so muss er </p>
+                  <p>sich in Wien melden und wird hier begutachtet, selbst wenn er nicht in dieses Landeskontingent, sondern in ein anderes die Aufnahme anstrebt und wenn er wo-</p>
+                  <p>anders heimatzuständig ist. Dann wäre seiner Aufnahme präjudiziert, er könnte nicht aufgenommen werden ohne Zustimmung der Landesregierung. Andererseits ist es möglich, dass sich ein </p>
+                  <p>Offizier oder Berufsunteroffizier in einem Land melden will, wo er nicht heimatzuständig ist und nicht eingeteilt ist. Dann ist es Sache der Landesregierung zu </p>
+                  <p>entscheiden, ob er aufgenommen werden soll oder nicht. Ich glaube, diesem Recht der Offiziere oder Berufsunteroffiziere ohne Präjudiz -. Man muss ihnen die Freiheit lassen, </p>
+                  <p>sich dort anzumelden, wo er will. [Ich stelle den] Antrag, dass dieser Punkt abgeändert wird, dass die Beurteilung nicht durch die Kommission [erfolgt], wo der Betreffende eingeteilt ist, </p>
+                  <p>sondern dort, wo er sich anmeldet. Ist er nicht heimatberechtigt, hat nicht die Kommission, sondern die Landesregierung zu entscheiden.</p>
+                  <p>Punkt 2-4: Mit der textlichen Fassung bin ich einverstanden. [Ich] bitte festzustellen im Protokoll meine Rechtsansicht, die alle [christlichsozialen] Kabinettsmitglieder teilen, </p>
+                  <p>dass durch die Befugnisse der Reichskommission absolut nicht präjudiziert oder beeinträchtigt werden darf das freie Ermessen des Leiters der Heeresverwaltungsstelle bei der Aufnahme. </p>
+                  <p>Denn man könnte aus dieser Stilisierung herauslesen, dass die Reichskommission über die beurteilende Landeskommission übergeordnet ist, dadurch dass sie den Ausgleich trifft </p>
+                  <p>und dadurch in das freie Ermessen des Leiters der Heeresverwaltungsstelle eingreifen kann. Dieser Leiter darf bezüglich der Aufnahme der einzelnen Angehörigen nicht gebunden sein </p>
+                  <p>in der Zeit, dass er zuwarten muss, bis die Reichskommission ihre Entscheidung oder Zuweisung trifft. Unsere Auffassung soll festgestellt werden im Protokoll.</p>
+                  <p>Punkt 3, Frist bis 15. April. Die Ausdehnung und die Begründung dafür sind für mich nicht zwingend. Wenn ein V[akuum] eintreten würde durch eine entsprechende </p>
+                  <p>Feststellung der Frist, so würde es [zwar] nicht dafür sprechen, dass die Frist verkürzt werden soll, sondern sie nicht zu verlängern. Das neue Heer muss bald aufgestellt werden und daher ist die </p>
+                  <p>Verlängerung der Frist überflüssig. Das - [Wir] beharren darauf, dass die Werb[ung] am 15. April genauso beendet sein muss, wie bei den Offizieren und Berufsunteroffizieren.</p>
+                  <p>[Zu Abschnitt] III: § 12 sagt ausdrücklich, dass die Höchstzahl der Anzuwerbenden ... bestimmt, die Höchstzahl ist festgestellt und darüber hinaus darf nicht angeworben werden. </p>
+                  <p>Die Vollzugsanweisung verordnet das Gegenteil.</p>
+                  <p>Deutsch: </p>
+                  <p>Die Gebührenfestsetzung durch die Nationalversammlung ist selbstverständlich. Das Gesetz wird demnächst vorgelegt werden. Die endgültige Gebührenfestsetzung wird der Nationalversammlung </p>
+                  <p>vorbehalten und der Gesetzentwurf wird ausgearbeitet. Ich habe gemeint, dass wenn wir im Laufe der Besoldungsreform die Gebühren festgesetzt hätten, die Gebühren auf die Gend[armerie]-Höhe </p>
+                  <p>gekommen wären und wir haben uns daher mit [einem] Beschluss des Kabinettsrates begnügt. Wir haben die Forderung Gendarmen-Höhe und das, was für Bekleidung und Unterkunft abgezogen wird, </p>
+                  <p>wird als zu hoch abgezogen - 2.800 Kronen gegenüber ... Kronen bei der Polizei. Wir werden Mühe haben, bei den Sätzen zu bleiben.</p>
+                  <p><pb facs="krp-0165_s01-0003"/>Die Fahnen müssen in den Staats- oder Landesfarben, womöglich in beiden, sein. Ich stimme dem zu. Von Fahnen haben wir nichts geredet, </p>
+                  <p>weil wir sie erst ansprechen wollen. Die Volkswehrleute haben sich die Fahnen selbst gekauft. Dem konnten wir nicht entgegentreten. Wir können ein Passus </p>
+                  <p>aufnehmen, dass die Fahnen die Staats- oder Landesfarben tragen müssen.</p>
+                  <p>Nicht zustimmen kann ich, dass der Offizier sich nicht anmelden soll, wo er eingeteilt ist und eine Aufnahme nur mit Zustimmung </p>
+                  <p>der Landesregierung möglich ist. Die Aufnahme erfolgt vom Staat, nur die Zuweisung ist an die Zustimmung der Landesregierung gebunden. Die Aufnahme erfolgt </p>
+                  <p>ohne Rücksicht auf die Zuständigkeit in einem Land. Die Zuweisung der Aufgenommenen erfolgt nur mit Zustimmung der Landesregierung. § 13, Absatz 5 – </p>
+                  <p>ein Offizier, der in Wien dient und nach Tirol heimatzuständig ist, so dürfte er nach Ramek in Wien überhaupt nicht aufgenommen werden. Sondern staatlich </p>
+                  <p>muss er in Wien aufgenommen werden [und] wenn er aufgenommen ist, muss die Landesregierung zustimmen, dass er <hi rend="#s">aufgenommen</hi> - zugewiesen wird. Dann kommt er nach Tirol und die </p>
+                  <p>müssen ihn annehmen. Das ist ganz klar nach dem Gesetz und war auch unsere Absicht. Das alles kann nur entschieden werden bei der Zuweisung und nicht bei der Aufnahme. </p>
+                  <p>Die Aufnahme geschieht nach der Qualifikation, die Zuweisung nach der Zuständigkeit. Es liegt also offenbar ein Missverständnis vor. Die Beurteilung bei einer Stelle, </p>
+                  <p>wo der Mann nicht dient und nicht gekannt wird, ist unmöglich.</p>
+                  <p>Das freie Ermessen des Leiters der Heeresverwaltungsstelle muss protokollarisch festgehalten werden. Das ist unmöglich. Wir können nicht dem Leiter das </p>
+                  <p>Recht geben aufzunehmen, ich kann ihm nicht das Recht geben für Aufnahmen. Die Liste muss festgestellt und vom Reich geprüft werden. Dann erst kann die Aufnahme erfolgen. </p>
+                  <p>Das ist verwaltungstechnisch unmöglich, weil Leute aufgenommen werden könnten, die über das Kontingent gehen.</p>
+                  <p>Wenn sie auf einer Abkürzung bestehen, werden wir es machen. Aber ich müsste den Zusatz beantragen, dass den Volkswehrmännern die Entscheidung </p>
+                  <p>bis 15. April mitgeteilt werden muss. Das macht aber jede sachliche Arbeit unmöglich. Es muss jeder aufgenommen werden ohne Auswahl.</p>
+                  <p>Die Wehrmänner ohne Rücksicht auf die Höchstzahl könnte zu Missverständnissen Anlass geben. Das ist ein Missverständnis zwischen Anwerben und Aufnehmen.</p>
+                  <p>Ich bitte, dass von den Einwendungen Rameks: 1.) Gebührenfestsetzung [...];</p>
+                  <p>2.) Fahnen Zustimmung, Staats- und Landesfarben;</p>
+                  <p>3.) den Antrag wegen der Beurteilung der Offiziere bei der anwerbenden Stelle abzulehnen; die </p>
+                  <p>Feststellung, dass der Leiter der Heeresverwaltungsstelle ohne Zuwarten auf die Entscheidung einen aufnehmen kann, abgelehnt;</p>
+                  <p>4.) über die Kündigung erbitte ich [eine] Entscheidung. Wenn Entscheidung fällt für 15. April, dann muss der Zusatz [beschlossen werden]: Den aufnahmesuchenden Volkswehrmännern </p>
+                  <p>ist - [muss] bis längstens 15. 4. die Entscheidung der Heeresverwaltungsstelle mitgeteilt werden. Für alle Folgen in der Auswahl lehne ich die </p>
+                  <p>Verantwortung ab.</p>
+                  <p>Körner: </p>
+                  <p>Selbst das ist nicht durchführbar, dass [es] von 1.-30. April durchgeführt wird. Das Wehrgesetz erscheint am 27., die Vollzugsanweisung kommt Ende März hinaus. </p>
+                  <p>Dann kommen die Feiertage, dann sind noch acht Tage Zeit. In dieser Zeit müssen [sich] diese Wehrmänner anmelden, <hi rend="#s">die Heeresverwaltungsstellen müssen prüfen, ob</hi> - die ?Ergänzungskommissionen müssen nachschauen, </p>
+                  <p>ob er den Bedingungen entspricht und [ihn] der Heeresverwaltungsstelle vorschlagen, diese legt [es] vor an das Heeresamt und dieses muss [es] bestätigen und zurückschicken. Das ist technisch undurchführbar. Wir haben </p>
+                  <p>die Leiter der Heeresverwaltungsstellen noch nicht. Die Anfragen sind hinaus gegangen, es wird ein Widerspruch herauskommen. 14 Tage reichen technisch nicht aus, selbst wenn nirgends ein </p>
+                  <p>Widerstand auftritt.</p>
+                  <p>Eldersch: </p>
+                  <p>[Zur] Bemängelung des Eingangs möchte ich feststellen, dass weder in Ternitz eine Arbeiterbewaffnung festgestellt wurde -. Die Arbeiterschaft ist nicht bewaffnet, es sind </p>
+                  <p>nur Depots, welche von der Volkswehr <hi rend="#s">bewaffnet werden</hi> - bewacht werden. Dass erklärt wird, es könnten Verhaftungen nur unter großer Assistenz geschehen, ist Ansicht der lokalen Funktionäre. </p>
+                  <p>Ich scheue mich, Verstärkung hinauszuschicken, weil dadurch die Arbeiter gereizt würden. Man kann die Untersuchung - [kann] auch auf freiem Fuß durchgeführt werden.</p>
+                  <p><pb facs="krp-0165_s01-0004"/>Ich habe gebeten, die Untersuchung auf freiem Fuß durchzuführen. In ?Radkersburg handelte es sich um [eine] Auflehnung der Bevölkerung mit bewaffneter Macht gegen den Staat, </p>
+                  <p>in Neunkirchen nur um einen ?Roheits-Akt. Es gibt viel mehr bewaffnete Bauern als bewaffnete Arbeiter. Man soll sich abgewöhnen, die Untersuchung </p>
+                  <p>bei Gericht gegen Arbeiter immer unter Verhaftung durchzuführen. Bei den Bürgerlichen ist das nicht der Fall.</p>
+                  <p>Was die Frist anlangt, so ist es ausgeschlossen, die Werbung bis Mitte April durchzuführen. Bis 15. April kann sich der Mann kaum melden, </p>
+                  <p>aber eine Untersuchung, Auswahl und Bescheid in dieser Zeit ist nicht möglich. Es kann administrativ nicht bewältigt werden. Ich bitte, auf dieser Forderung nicht zu beharren, weil </p>
+                  <p>sonst der Werbungsakt nicht mit der nötigen Sorgfalt durchgeführt werden könnte.</p>
+                  <p>Eisler: </p>
+                  <p>Die Vorschläge Rameks dürften vorwiegend von dem Wunsch bestimmt sein, den Ländereinfluss auf das Werbegeschäft zu verstärken. <hi rend="#s">Die Länder</hi> – </p>
+                  <p>Ich weiß nicht, ob die Herren die Einrichtungen in den Ländern kennen. Die Länder kämen bei zu kurzen Fristen in die größte Verlegenheit. Es besteht die technische Möglichkeit </p>
+                  <p>nicht, die Einrichtungen sind unzulänglich. Es ist kein Apparat da und der bisherige Verlauf der Sache zeigt, dass es so ist. Außerdem ist hier im Staatsamt </p>
+                  <p>für Heerwesen ein Organ, wo alles sich vereinigt, der Einfluss der parlamentarischen Parteien mit der Administrierung. In den Ländern funktionieren diese Organisationen </p>
+                  <p>nebeneinander, sie müssen aber zusammenwirken, wenn nicht schwere Misshelligkeiten entstehen sollen. In den Ländern kommt noch das Mitreden jener Organisationen [dazu], welche die Landesregierung [im] </p>
+                  <p>Einvernehmen mit den Parteien geschaffen haben und auch gefragt werden müssen. Diese arbeiten nicht expeditiv und lassen sich nicht ausschalten. Das, was als Gefallen für </p>
+                  <p>die Länder gedacht war, -.</p>
+                  <p>Renner: </p>
+                  <p>[Zur] Gebührenfrage [kann man] feststellen, dass die endgültige Regelung im Gesetzgebungsweg erfolgen soll und rasch geschehen soll, aber einstweilen zur Anreizung der Leute </p>
+                  <p>für die Werbung die Gebührensätze maßgebend sein sollen, welche das Kabinett beschlossen hat.</p>
+                  <p>[Bezüglich der] Fahnen soll der Satz aufgenommen werden: Die Formationen der neuen Wehrmacht werden auf ihren Fahnen die Fahnen - [Farben] des Staates und jenes Landes führen, aus dessen Werbebereich </p>
+                  <p>sie stammen. [Das] kommt in die Adjustierungsvorschrift.</p>
+                  <p>3.) Die Frage der Beurteilung, wo sich der Offizier anmeldet - oder dort, wo er jetzt eingeteilt ist. Ich glaube, das ist der im Gesetz vorgesehene Modus.</p>
+                  <p>Ramek: </p>
+                  <p>Das präjudiziert die Entscheidung der Länder. Über [einen] Steirer begutachtet die Wiener Kommission, auch wenn sie ihn nicht kennen.</p>
+                  <p>Fink: </p>
+                  <p>Die loyale Durchführung ist von allen Seiten zugesagt worden und das sollte auch eingehalten werden.</p>
+                  <p>Deutsch: </p>
+                  <p>Die Kommissionen sind in der Koal[ition] gründlich beraten worden. Es hängt das auch zusammen mit der Frage des gerechten Abbaus.</p>
+                  <p>Renner: </p>
+                  <p>Ich halte es für unmöglich.</p>
+                  <p>[KRP 165, 24. März 1920, Fortsetzung, Stenogramm Fenz]</p>
+                  <p><pb facs="krp-0165_s01-0005"/>5 Uhr.</p>
+                  <p>[<hi rend="#i">Zentriert</hi>:] [Zugezogen]: Seitz.</p>
+                  <p>Deutsch: Wir haben inzwischen beraten und glauben, den Punkt 3-4 belassen zu sollen, wie er vorliegt. Im Kap[itel] 3, Wehrmänner, soll es </p>
+                  <p>heißen: "Die Anmeldung für die neue Wehrmacht hat vom 1.-15. IV. '20 zu erfolgen." Damit hat die Rückwirkungsfrist gar nichts </p>
+                  <p>zu tun, diese wird verlängert bis 30. V. Damit sind die Streitpunkte bereinigt.</p>
+                  <p>Renner: Die Vollzugsanweisung kann also hinausgegeben werden. Nach meinem Gefühl wäre es ein dringendes Interesse, dass bei der Besetzung von Westungarn Kontingente </p>
+                  <p>aller Länder mitwirken. In die ländlichen Distrikte sollen auch Männer aus den Ländern kommen.</p>
+                  <p>Renner: Rennwettengesetz. Frage an Stöckler, wie das werden wird? Frage, ob sich das reparieren lassen wird?</p>
+                  <p>Stöckler: Furchtbare wirtschaftliche Nachteile.</p>
+                  <p>Renner: Bittet Stöckler, die Sache wieder im Ausschuss aufzunehmen.</p>
+               </div>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

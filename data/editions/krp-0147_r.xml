@@ -1,0 +1,813 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href='http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:acdh="https://vocabs.acdh.oeaw.ac.at/schema#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xml:lang="de">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="a" type="main" n="0147">Kabinettsprotokoll Nr. 147 vom 18. Februar 1920</title>
+            <title level="m" type="main" n="01">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <title level="m" type="sub" n="">Renner III (17. Oktober 1919 – 7. Juli 1920)</title>
+            <meeting>
+               <placeName key="https://d-nb.info/gnd/4066009-6">Wien</placeName>
+               <orgName key="https://d-nb.info/gnd/5162749-8">Kabinettsrat</orgName>
+               <date when-iso="1920-02-18"/>
+            </meeting>
+            <editor>
+               <persName key="https://d-nb.info/gnd/122481836"
+                         role="hasCreator"
+                         xml:id="hwohnout">
+                  <forename>Helmut</forename>
+                  <surname>Wohnout</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</affiliation>
+               <idno type="ORCID">0000-0002-3864-9839</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/120789825"
+                         role="hasCreator"
+                         xml:id="tolechowski">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0003-3291-6876</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/131679384"
+                         role="hasCreator"
+                         xml:id="rlein">
+                  <forename>Richard</forename>
+                  <surname>Lein</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0002-7502-0503</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="aholzer">
+                  <forename>Anna</forename>
+                  <surname>Holzer</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0005-3560-3500</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="dsoelkner">
+                  <forename>Dominik</forename>
+                  <surname>Sölkner</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-9895-7212</idno>
+            </editor>
+            <editor>
+               <persName role="hasContributor" xml:id="ischotzko">
+                  <forename>Ina</forename>
+                  <surname>Schotzko</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-5210-3713</idno>
+            </editor>
+            <funder n="1">
+               <orgName key="https://d-nb.info/gnd/2054142-9" role="hasFunder">Österreichischer Wissenschaftsfonds FWF</orgName>
+               <idno type="project">PAT1495024</idno>
+               <title type="project">Die Protokolle des österreichischen Kabinettsrates 1919–1920</title>
+            </funder>
+            <respStmt>
+               <resp>Projektverantwortung</resp>
+               <orgName key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Projektleitung</resp>
+               <persName key="https://d-nb.info/gnd/120789825" role="hasPrincipalInvestigator">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+                  <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+                  <idno type="ORCID">0000-0003-3291-6876</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Nationaler Forschungspartner</resp>
+               <orgName key="https://d-nb.info/gnd/1123037736" role="hasEnabler">Austrian Centre for Digital Humanities</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Digitalisierung der gedruckten Quellen</resp>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>TEI-Datenmodellierung</resp>
+               <persName role="hasContributor" xml:id="tfruehwirth">
+                  <forename>Timo</forename>
+                  <surname>Frühwirth</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-3997-5193</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technische Supervision</resp>
+               <persName key="https://d-nb.info/gnd/1043833846"
+                         role="hasContributor"
+                         xml:id="pandorfer">
+                  <forename>Peter</forename>
+                  <surname>Andorfer</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-9575-9372</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technisches Consulting und Vorbereitung der Druckausgabe</resp>
+               <persName key="https://d-nb.info/gnd/13281899X"
+                         role="hasContributor"
+                         xml:id="skurz">
+                  <forename>Stephan</forename>
+                  <surname>Kurz</surname>
+                  <affiliation key="https://d-nb.info/gnd/1202798799">Institut für die Erforschung der Habsburgermonarchie und des Balkanraumes</affiliation>
+                  <idno type="ORCID">0000-0003-2546-2570</idno>
+               </persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher key="https://d-nb.info/gnd/1001454-8">Österreichische Akademie der Wissenschaften</publisher>
+            <date when="2028"/>
+            <availability status="free">
+               <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">Lizenziert unter CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/deed.de)</licence>
+            </availability>
+            <idno type="ISBN_Print"/>
+            <idno type="ISBN_Part_epub"/>
+            <idno type="ISBN_Digital"/>
+            <idno type="DOI"/>
+            <idno type="DOI_zenodo"/>
+            <idno type="ebook_ID"/>
+         </publicationStmt>
+         <seriesStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="m" type="main">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <respStmt>
+               <resp>Bearbeitung und Herausgeberschaft</resp>
+               <orgName key="https://d-nb.info/gnd/2024703-5">Universität Wien</orgName>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+         </seriesStmt>
+         <notesStmt>
+            <note>Diese TEI-XML-Datei ist Grundlage für eine Druckausgabe der Edition.</note>
+            <relatedItem>
+               <biblStruct>
+                  <monogr>
+                     <imprint>
+                        <pubPlace key="https://d-nb.info/gnd/4066009-6">Wien</pubPlace>
+                        <publisher key="https://d-nb.info/gnd/2068748-5">Verlag der Österreichischen Akademie der Wissenschaften</publisher>
+                        <date when="2029"/>
+                     </imprint>
+                     <extent/>
+                  </monogr>
+                  <note>
+              <idno/>
+              <ptr/>
+            </note>
+                  <citedRange/>
+               </biblStruct>
+            </relatedItem>
+         </notesStmt>
+         <sourceDesc>
+            <bibl>Quellbestand: AT-OeStA/AdR MRang MR 1Rep KRP Kabinettsratsprotokolle, 1918-1920 (Teilbestand)<ref target="https://www.archivinformationssystem.at/detail.aspx?id=5465">https://www.archivinformationssystem.at/detail.aspx?id=5465</ref>
+            </bibl>
+            <msDesc>
+               <msIdentifier>
+                  <institution key="https://d-nb.info/gnd/37748-X" role="hasOwner">AT-OeStA Österreichisches Staatsarchiv (Archiv (ÖStA))</institution>
+                  <repository key="https://d-nb.info/gnd/1601181-8">AT-OeStA/AdR Archiv der Republik, 1918- (Abteilung)</repository>
+                  <collection>AT-OeStA/AdR MRang MR 1Rep Ministerrat 1. Republik, 1918 - 1938 (Bestand)</collection>
+                  <idno>AT-OeStA_AdR-MRang-MR-1.-Rep.-KRP-147</idno>
+               </msIdentifier>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <abstract>
+            <p>
+          <!--to be generated-->
+        </p>
+         </abstract>
+      </profileDesc>
+      <encodingDesc>
+         <styleDefDecl scheme="css"/>
+         <tagsDecl>
+            <rendition xml:id="b" scheme="css">font-weight:bold;</rendition>
+            <rendition xml:id="su" scheme="css">vertical-align:super;font-size:.7em;</rendition>
+            <rendition xml:id="s" scheme="css">text-decoration:line-through;</rendition>
+            <rendition xml:id="u" scheme="css">text-decoration:underline;</rendition>
+            <rendition xml:id="ow" scheme="css">text-decoration:line-through;text-decoration-style:double;</rendition>
+            <rendition xml:id="r" scheme="css">display:block;text-align:right;</rendition>
+            <rendition xml:id="letterspaced" scheme="css">letter-spacing:0.15em;</rendition>
+            <rendition xml:id="i" scheme="css">font-style:italic;</rendition>
+         </tagsDecl>
+         <editorialDecl>
+            <hyphenation>
+               <p>
+            <!--to be added-->
+          </p>
+            </hyphenation>
+            <correction>
+               <p>
+            <!--to be added-->
+          </p>
+            </correction>
+            <normalization>
+               <p>
+            <!--to be added-->
+          </p>
+            </normalization>
+            <punctuation>
+               <p>
+            <!--to be added-->
+          </p>
+            </punctuation>
+            <stdVals>
+               <p>
+            <!--to be added-->
+          </p>
+            </stdVals>
+            <p>
+          <!--to be added-->
+        </p>
+         </editorialDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#tfruehwirth" when-iso="2026-10-13">TEIGarage output upconverted with upconvert.xsl</change>
+         <change who="#tfruehwirth" when-iso="2026-10-13">TEI header populated with generate_tei_templates.py</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface/>
+   </facsimile>
+   <text>
+      <body>
+         <div xml:id="doc-krp-0147.xml">
+            <head type="dokument">
+               <title type="num">147.<note type="footnote">Das Protokoll trägt den Vermerk <hi rend="#i">Vertraulich!</hi></note>
+               </title>
+               <title type="desc">
+                  <pb facs="krp-0147_r-0001"/>
+                  <pb facs="krp-0147_r-0002"/>[Mittwoch] 1919-02-18</title>
+            </head>
+            <div type="dokumentkopf">
+               <div type="vorsitz">
+                  <head>Vorsitz:</head>
+                  <p>Renner</p>
+               </div>
+               <div type="anwesend">
+                  <head>Anwesend:</head>
+                  <p>Deutsch, Eisler, Eldersch, Ellenbogen, Fink, Glöckel, Hanusch, Loewenfeld-Russ, Miklas, Paul, Ramek, Resch, Stöckler, Tandler, Waiss, Zerdik</p>
+               </div>
+               <div type="zugezogen">
+                  <head>Zugezogen:</head>
+                  <p>Grimm, Halban, Kaltenbrunner, Zedtwitz</p>
+               </div>
+               <div type="schriftfuehrer">
+                  <head>Schriftführer:</head>
+                  <p>Fenz</p>
+               </div>
+               <div type="dauer">
+                  <head>Dauer:</head>
+                  <p>15.00–20.45 Uhr</p>
+               </div>
+            </div>
+            <div type="komponenten">
+               <p>Reinschrift, Beilagen, Konzept, stenographische Mitschrift, Entwurf der Tagesordnung, diverse Zusätze, 20. Personalsitzung</p>
+            </div>
+            <div type="beilagen">
+               <head>Beilagen:</head>
+               <list>
+                  <item><ref target="#krp-0147_top02">Zu TOP 2</ref>: <ref target="#krp-0147_b01">Vortrag über die Fertigstellung des Kochküchengebäudes des Allgemeinen Krankenhauses</ref></item>
+                  <item><ref target="#krp-0147_top03">Zu TOP 3</ref>: <ref target="#krp-0147_b02">Gesetzesbeschluss des Salzburger Landtages über den Schutz der Alpen und die Förderung der Alpwirtschaft</ref></item>
+                  <item><ref target="#krp-0147_top04">Zu TOP 4</ref>: <ref target="#krp-0147_b03">Bericht des Staatsamtes für Land- und Forstwirtschaft Zl. 3073/1920 über den Gesetzesbeschluss des Salzburger Landtages über die Ausnützung der heimischen Wasserkräfte durch das Land</ref></item>
+                  <item><ref target="#krp-0147_top04">Zu TOP 4</ref>: <ref target="#krp-0147_b04">Gesetzesbeschluss des Salzburger Landtages Zl. 7100 über die Ausnützung der heimischen Wasserkräfte durch das Land</ref></item>
+                  <item><ref target="#krp-0147_top05">Zu TOP 5</ref>: <ref target="#krp-0147_b05">Antrag des Staatsamtes für Land- und Forstwirtschaft Zl. 25.203/1919 auf Abänderung der bisherigen Titel der staatlichen land- und forstwirtschaftlichen Versuchsanstalten in Österreich</ref></item>
+                  <item><ref target="#krp-0147_top06">Zu TOP 6</ref>: <ref target="#krp-0147_b06">Vortrag des Staatsamtes für Finanzen über einen Gesetzesbeschluss der Vorarlberger Landesversammlung zur Einführung einer Landes- und Gemeindeabgabe vom Wertzuwachse von Liegenschaften</ref></item>
+                  <item><ref target="#krp-0147_top07">Zu TOP 7</ref>: <ref target="#krp-0147_b07">Vortrag des Staatsamtes für Finanzen über den Gesetzesbeschluss des Tiroler Landtages über die Weitereinhebung der Wertzuwachsabgabe</ref></item>
+                  <item><ref target="#krp-0147_top08">Zu TOP 8</ref>: <ref target="#krp-0147_b08">II. Gesetzesentwurf über das Pensionistengesetz samt Begründung und Vollzugsanweisung</ref></item>
+                  <item><ref target="#krp-0147_top08">Zu TOP 8</ref>: <ref target="#krp-0147_b09">II. Gesetzesentwurf über die Hinterbliebenenversorgungsnovelle samt Begründung</ref></item>
+                  <item><ref target="#krp-0147_top09">Zu TOP 9</ref>: <ref target="#krp-0147_b10">Schriftwechsel des Staatsamtes für Äußeres und dem Staatsamt für Heereswesen wegen der Veröffentlichung eines Heereskommuniqués ohne vorheriges Einvernehmen mit dem Staatsamt für Äußeres</ref></item>
+                  <item><ref target="#krp-0147_top10">Zu TOP 10</ref>: <ref target="#krp-0147_b11">Gesetzesentwurf des Invalidenschutzgesetzes samt Begründung</ref></item>
+                  <item><ref target="#krp-0147_top11">Zu TOP 11</ref>: <ref target="#krp-0147_b12">Vortrag des Staatsamtes für Handel und Gewerbe, Industrie und Bauten über den Ausbau des AG Elektrizitätswerkes Wels mit Erklärung zum begünstigten Bau</ref></item>
+                  <item><ref target="#krp-0147_top12">Zu TOP 12</ref>: <ref target="#krp-0147_b13">Auszug für den Vortrag des Staatsamtes für Inneres und Unterricht Zl. 4926 über den Beschluss des Oberösterreichischen Landtages zur Einhebung von Lustbarkeitsabgaben für Land- und Gemeindezwecke</ref></item>
+                  <item><ref target="#krp-0147_top13">Zu TOP 13</ref>: <ref target="#krp-0147_b14">Ergänzung des Gesetzes vom 14. März 1919 StGBl. Nr. 180 über die Staatsregierung mit erläuternden Bemerkungen</ref></item>
+                  <item><ref target="#krp-0147_top14">Zu TOP 14</ref>: <ref target="#krp-0147_b15">Gesetzesentwurf über die Mitwirkung der Nationalversammlung an der Regelung von Eisenbahntarifen, Post-, Telegrafen- und Telefongebühren und Preisen von Monopolgegenständen sowie von Bezügen staatlicher Angestellter</ref></item>
+                  <item><ref target="#krp-0147_top16">Zu TOP 16</ref>: <ref target="#krp-0147_b16">Vortrag des Staatsamtes für Verkehrswesen Zl. 1817/1920 über die Vollzugsanweisung des Staatsamtes für Verkehrswesen betreffend die Abänderung der Konzessionsurkunde für die Lokomotiveisenbahn von Salzburg zur österreichisch – bayerischen Reichsgrenze in der Richtung gegen Berchtesgaden</ref></item>
+                  <item><ref target="#krp-0147_top17">Zu TOP 17</ref>: <ref target="#krp-0147_b17">Vortrag des Staatsamtes für Handel und Gewerbe, Industrie und Bauten über den Gesetzesentwurf für die ausschließliche Berechtigung der Zivilingenieure und -geometer</ref></item>
+                  <item><ref target="#krp-0147_top17">Zu TOP 17</ref>: <ref target="#krp-0147_b18">Gesetz über die ausschließliche Berechtigung der Zivilingenieure und -geometer mit Erläuterungen</ref></item>
+                  <item><ref target="#krp-0147_top18">Zu TOP 18</ref>: <ref target="#krp-0147_b19">Antrag des Staatsamtes für Volksernährung Zl. 8073, Abt. 3 auf Erhöhung des Zuckerpreises</ref></item>
+               </list>
+            </div>
+            <div type="protokoll">
+               <pb facs="krp-0147_r-0003"/>
+               <div type="top" xml:id="krp-0147_top01">
+                  <head>
+                     <label>
+                        <num n="1">1.</num>
+                        <seg>Gehaltsforderungen der öffentlichen Angestellten.</seg>
+                     </label>
+                  </head>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> teilt mit, dass in der letzten Zeit eine Bewegung unter den Angestellten des Staates, des Landes und der Gemeinde Wien wegen Erhöhung ihrer Bezüge entstanden sei. Die erhobenen Forderungen weichen vielfach von einander ab. In den abgehaltenen Versammlungen sei die Sicherstellung eines Existenzminimums von monatlich 2.000 K gefordert worden. Die Angestellten der Gemeinde Wien hätten eine Verdopplung ihrer Bezüge verlangt. Einmütig sei jedoch darauf hingewiesen worden, dass die Angestellten, namentlich der unteren Kategorien in der letzten Woche dieses Monates nicht mehr imstande seien, die rayonierten Artikel einzukaufen, weshalb die Gewährung einer sofortigen Aushilfe unbedingt notwendig sei. Diese Aushilfe hätte sich für Ledige <pb facs="krp-0147_r-0004"/>auf 1.000 K, für Verheiratete auf 1.500 K zu belaufen. Der momentane Notstand sei neben der allgemeinen Teuerung insbesondere darauf zurückzuführen, dass im Monate Februar die Zinszahlung habe erfolgen müssen und überdies die Bezüge vielfach durch Abzug der Kohlenrate eine Schmälerung erfahren hätten.</p>
+                  <p>Der Vorsitzende habe diese Angelegenheit im Hauptausschusse und im Koalitionskomitee zur Sprache gebracht. Ein über Wunsch des Koalitionskomitees noch im Verlaufe der heutigen Kabinettssitzung zur Beratung gelangender Gesetzentwurf sehe vor, dass die Regelung der Bezüge der öffentlichen Angestellten künftighin nicht mehr vom Kabinette allein, sondern nur unter Mitwirkung der Nationalversammlung zu erfolgen habe. Solle daher den Angestellten im gegenwärtigen Zeitpunkte geholfen werden, so werde die Staatsregierung einer Ermächtigung der Nationalversammlung bedürfen, deren Erwirkung umso dringender sei, als die Nationalversammlung in diesem Monate nach dem vereinbarten Programm nur mehr am morgigen Tage zusammentreten werde. Der sprechende Staatskanzler erbitte sich daher die Zustimmung des Kabinettsrates, dem heute tagenden <pb facs="krp-0147_r-0005"/>Finanzausschusse eine Gesetzesvorlage zur Einbringung in der Nationalversammlung empfehlen zu dürfen, wonach die Staatsregierung ermächtigt würde, den ledigen Staatsangestellten je nach dem Dienstorte eine außerordentliche einmalige Zuwendung von 500 bzw. 400 bzw. 300 K zu gewähren, welche für jedes Familienmitglied um 100 bzw. 80 bzw. 60 K erhöht würde. Das finanzielle Erfordernis würde sich auf 100–120 Millionen K belaufen.</p>
+                  <p>Nach einer längeren Debatte, an welcher sich nahezu sämtliche Kabinettsmitglieder sowie Sektionschef Dr. <hi rend="#letterspaced">Grimm</hi> beteiligten und welche streng vertraulichen Charakter trägt, beschließt der Kabinettsrat, von der Erwirkung einer derartigen Ermächtigung abzusehen.</p>
+                  <p>Gleichzeitig ersucht der Kabinettsrat den Vorsitzenden, dem Wunsche der Staatsregierung Ausdruck zu geben, dass in der Tagung der Nationalversammlung keine Unterbrechung eintrete.</p>
+               </div>
+               <div type="top" xml:id="krp-0147_top02">
+                  <head>
+                     <label>
+                        <num n="2">2.</num>
+                        <seg>Gewährung eines staatlichen Vorschusses für die Fertigstellung des Kochküchengebäudes im Bereiche des Neubaues des Wiener Allgemeinen Krankenhauses.</seg>
+                     </label>
+                  </head>
+                  <p>Unterstaatssekretär <hi rend="#letterspaced">Glöckel</hi> verweist auf die dringende Notwendigkeit der Fertigstellung der schon vor Kriegsausbruch begonnenen Herstellung <pb facs="krp-0147_r-0006"/>eines Kochküchengebäudes im Bereiche des Neubaues des Wiener Allgemeinen Krankenhauses und seiner Kliniken. Die betriebsfertige Vollendung dieses Neubaues, zu der noch ein Teil der immobilen Einrichtung und die innere Betriebseinrichtung fehle, lasse schon aus dem Grunde keinen Aufschub zu, weil die neue Spitalsanlage mit ihren über 1.000 Pfleglingen nebst dem dazu gehörigen Pflege- und Ärztepersonal bisher auf die entfernt gelegene Küche des alten Allgemeinen Krankenhauses angewiesen sei und diese räumlich beschränkte und in ihren Einrichtungen durchaus mangelhafte Küche auch noch das gesamte Personal des alten Krankenhauses zu verköstigen habe. Eine allfällige Störung im Betriebe dieser alten Krankenhausküche würde für beide Spitalsanlagen die schwersten Komplikationen nach sich ziehen. Die gesamten Kosten für die betriebsfertige Herstellung des Baues werden sich auf über 10 Millionen K stellen.</p>
+                  <p>Die ganze Neubauaktion für das Allgemeine Krankenhaus und seine Kliniken sollte auf einer finanziellen Kooperation des Wiener Krankenanstaltenfonds und des Staates beruhen, für welche auch bereits der Entwurf eines Kostenaufteilungsschlüssels vorliege. <pb facs="krp-0147_r-0007"/>Tatsächlich sei aber der Wiener Krankenanstaltenfonds infolge seiner schon vor Kriegsausbruch sehr prekären und während des Krieges geradezu kritisch gewordenen Finanzlage nicht imstande gewesen, nennenswerte Beitrage zu leisten, weshalb von der gesamten in der Bauaktion bisher investierten Summe von über 29 Millionen K bereits über 22 Millionen K vorschussweise aus Staatsmitteln bestritten werden mussten. Angesichts der völligen Unmöglichkeit von dem ganz verschuldeten Krankenanstaltenfonds irgendeine Beitragszahlung zu erlangen, werde daher nichts anderes erübrigen, als behufs Vollendung des Küchengebäudes auch die nunmehr erforderliche Zahlung vorschussweise aus Staatsmitteln zu leisten und die definitive Festsetzung der Kostenaufteilung einem späteren Zeitpunkte vorzubehalten.</p>
+                  <p>Der sprechende Unterstaatssekretär stelle sonach den Antrag, dass der Staat für Zwecke der Fertigstellung des Kochküchengebäudes ebenso wie bei den früheren Bauten vorschussweise noch einen Betrag bis zu 10 Millionen K nach Bedarf zur Verfügung stelle, und zwar vorbehaltlich der in der zwischenstaatsamtlichen <pb facs="krp-0147_r-0008"/>Kommission sofort durchzuführenden Überprüfung der neuen Kostenvoranschläge der Bauleitung und vorbehaltlich einer endgiltigen Kostenaufteilung, bezüglich welcher vorläufig festzulegen wäre, dass der Staat zu den Gesamtkosten dieses Baues ein Viertel als seine Beitragsquote definitiv zu übernehmen haben werde.</p>
+                  <p>Sektionschef Dr. <hi rend="#letterspaced">Grimm</hi> stimmt namens des Staatsamtes für Finanzen der beantragten Vorschussgewährung zu, bittet jedoch davon abzusehen, dass das Ausmaß der staatlichen Beitragsquote bereits im gegenwärtigen Zeitpunkte definitiv festgelegt werde.</p>
+                  <p>Der Kabinettsrat erhebt den gestellten Antrag mit der vom Staatsamte für Finanzen gewünschten Einschränkung zum Beschluss.</p>
+               </div>
+               <div type="top" xml:id="krp-0147_top03">
+                  <head>
+                     <label>
+                        <num n="3">3.</num>
+                        <seg>Gesetzesbeschluss des Salzburger Landtages, betreffend den Schutz der Alpen und die Förderung der Alpwirtschaft.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Stöckler</hi> erbittet und erhält vom Kabinettsrate die Ermächtigung, dass von der Erhebung einer Vorstellung gegen den vom Salzburger Landtage gefassten Gesetzesbeschluss, betreffend den Schutz der Alpen und die Förderung der Alpwirtschaft, abgesehen werde.</p>
+                  <p><pb facs="krp-0147_r-0009"/></p>
+               </div>
+               <div type="top" xml:id="krp-0147_top04">
+                  <head>
+                     <label>
+                        <num n="4">4.</num>
+                        <seg>Gesetzesbeschluss des Salzburger Landtages über die Ausnützung der heimischen Wasserkräfte durch das Land.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Stöckler teilt mit, dass der Salzburger Landtag in seiner Sitzung am 27. Jänner d. J. einen Gesetzesbeschluss über die Ausnützung der heimischen Wasserkräfte durch das Land gefasst habe.</p>
+                  <p>Die Landesregierung habe bereits vor Einbringung des Gesetzentwurfes im Landtage den Entwurf den beteiligten Staatsämtern zur vorbereitenden Stellungnahme mitgeteilt. Grundsätzliche Bedenken gegen den Gesetzentwurf bestünden nicht, doch hätten immerhin einige Bestimmungen den beteiligten Staatsämtern Anlass zu Abänderungsvorschlägen gegeben, denen nur zum Teile Rechnung getragen worden sei. Die nicht berücksichtigten Bedenken seien einerseits derart, dass sie vom Landesrate im Rahmen der ihm von dem Landtage erteilten Ermächtigung zur selbständigen Vornahme unwesentlicher, von der Staatsregierung noch gewünschter Änderungen einer Berücksichtigung zugeführt werden können, und andererseits solche, deren Durchführung eine neuerliche Beschlussfassung des Landtages erforderlich machen würde; es seien dies die Bedenken wegen der allzu weiten und unbestimmten Abgrenzung des Enteignungsrechtes und wegen des <pb facs="krp-0147_r-0010"/>Fehlens einer Bestimmung, wonach das Land, falls es das von einem anderen überreichte Wasserkraftprojekt ganz oder in wesentlichen Teilen übernimmt, diesem die erweislichen Kosten für die Projektsverfassung zu vergüten habe. Da für eine Änderung des Gesetzesbeschlusses im Sinne dieser letztangeführten, trotz Bekanntgabe unbeachtet gebliebenen Bedenken durch einen neuerlichen Landtagsbeschluss keine Aussicht bestehe, wäre von einer Vorstellung gegen den Gesetzesbeschluss abzusehen; es wäre jedoch die Landesregierung auf jene oben angeführten Bedenken mehr [oder] weniger unwesentlicher Natur, deren Berücksichtigung durch den vom Landtage hiezu im Allgemeinen ermächtigten Landesrat wünschenswert wäre, nochmals hinzuweisen, wobei auch auf einige stilistische Unebenheiten aufmerksam zu machen wäre.</p>
+                  <p>Der sprechende Staatssekretär beantrage daher, von der Erhebung einer Vorstellung gegen den Gesetzesbeschluss abzusehen und ihn zur Gegenzeichnung zu ermächtigen. Zugleich wäre die Landesregierung zu ersuchen, für den Fall, als der Gesetzentwurf entsprechend den Anregungen der Staatsregierung geändert werden sollte, eine Ausfertigung des abgeänderten Gesetzesbeschlusses zur neuerlichen Gegenzeichnung vorzulegen.</p>
+                  <p><pb facs="krp-0147_r-0011"/>Der Kabinettsrat beschließt in diesem Sinne.</p>
+               </div>
+               <div type="top" xml:id="krp-0147_top05">
+                  <head>
+                     <label>
+                        <num n="5">5.</num>
+                        <seg>Abänderung der bisherigen Titel der staatlichen land- und forstwirtschaftlichen Versuchsanstalt in Österreich.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Stöckler verweist darauf, dass die staatlichen land- und forstwirtschaftlichen Versuchsanstalten aufgrund der seinerzeitigen mit kaiserlichen Entschließungen genehmigten Satzungen folgende Titel führten:</p>
+                  <list>
+                     <item n="1"><label>1.)</label> K. k. landwirtschaftlich-chemische Versuchsstation in Wien bzw. Linz. </item>
+                     <item n="2"><label>2.)</label> K. k. landwirtschaftlich-bakteriologische und Pflanzenschutzstation in Wien.</item>
+                     <item n="3"><label>3.)</label> K. k. Samenkontrollstation (landwirtschaftlich-botanische Versuchsanstalt) in Wien.</item>
+                     <item n="4"><label>4.)</label> K. k. forstliche Versuchsanstalt in Mariabrunn.</item>
+                  </list>
+                  <p>Für die zur Errichtung gelangende Versuchsstation für Arznei- und Nutzpflanzenbau sei schließlich der Titel: k. k. Versuchsstation für Arznei- und Nutzpflanzenbau in Aussicht genommen gewesen.</p>
+                  <p>Mit Rücksicht auf den Wegfall der Bezeichnung „k. k.“ seien die genannten Anstalten nicht mehr als staatliche Institute gekennzeichnet; auch trügen die <pb facs="krp-0147_r-0012"/>bisherigen Bezeichnungen ihrem inzwischen erweiterten Wirkungskreise nicht mehr genügend Rechnung. Aus diesen Gründen erscheine es angezeigt, die Titel, um eine Verwechslung mit nichtstaatlichen (Landes- und Privat-) Anstalten zu vermeiden, ehestens zu ändern. Redner stelle daher den Antrag, der Kabinettsrat wolle beschließen, dass die Titel der genannten Anstalten in Zukunft zu lauten haben:</p>
+                  <list>
+                     <item n="1"><label>1.)</label> Staatliche landwirtschaftlich-chemische Versuchsanstalt in Wien bzw. Linz.</item>
+                     <item n="2"><label>2.)</label> Staatsanstalt für Pflanzenschutz (Landwirtschaftlich-bakteriologische Versuchsanstalt) in Wien.</item>
+                     <item n="3"><label>3.)</label> Staatsanstalt für Pflanzenbau und Samenprüfung (Landwirtschaftlich-botanische Versuchsanstalt) in Wien.</item>
+                     <item n="4"><label>4.)</label> Staatliche forstliche Versuchsanstalt in Mariabrunn.</item>
+                     <item n="5"><label>5.)</label> Staatsanstalt für Arznei- und Nutzpflanzenbau in Wien.</item>
+                  </list>
+                  <p>Der Kabinettsrat erhebt diesen Antrag zum Beschluss.</p>
+               </div>
+               <div type="top" xml:id="krp-0147_top06">
+                  <head>
+                     <label>
+                        <num n="6">6.</num>
+                        <seg>Gesetzesbeschluss der Vorarlberger Landesversammlung, betreffend Einführung einer Landes- und Gemeindeabgabe vom Wertzuwachs von Liegenschaften.</seg>
+                     </label>
+                  </head>
+                  <p>Nach dem Antrag des Sektionschefs Dr. <hi rend="#letterspaced">Grimm</hi> beschließt der Kabinettsrat, dass von der Erhebung einer Vorstel<pb facs="krp-0147_r-0013"/>lung gegen den von der Vorarlberger Landesversammlung am 22. Dezember 1919 gefassten Gesetzesbeschluss, betreffend Einführung einer Landes- und Gemeindeabgabe vom Wertzuwachs von Liegenschaften, abgesehen werde.</p>
+                  <p>Der Landesrat ist einzuladen, einige ihm bekanntzugebende, bei der Fassung des Gesetzes unterlaufene, rein formelle Mängel aufgrund der ihm von der Landesversammlung erteilten Ermächtigung nachträglich zu beseitigen. Die Staatssekretäre für Inneres und Unterricht, für Finanzen und für Justiz werden nach Durchführung dieser Verbesserungen zur Gegenzeichnung des Gesetzes ermächtigt.</p>
+               </div>
+               <div type="top" xml:id="krp-0147_top07">
+                  <head>
+                     <label>
+                        <num n="7">7.</num>
+                        <seg>Gesetzesbeschluss des Tiroler Landtages über Weitereinhebung der Wertzuwachsabgabe.</seg>
+                     </label>
+                  </head>
+                  <p>Sektionschef Dr. Grimm führt aus, dass in Tirol die Wertzuwachsabgabe im Jahre 1919 aufgrund des vom Staatsrat am 29. Jänner 1919 genehmigten Landesratsbeschlusses vom 11. Dezember 1918 eingehoben worden sei. Am 19. Dezember 1919 habe der Tiroler Landtag ein neues Gesetz über die Weitereinhebung der Abgabe beschlossen, das mit dem Tage der Kundmachung in Wirksamkeit treten solle. Um zu vermeiden, dass in der Einhebung der Abgabe eine Unterbrechung eintrete, habe er gleichzeitig <pb facs="krp-0147_r-0014"/>den Beschluss gefasst, die Wirksamkeit des erstangeführten Landesratsbeschlusses bis zur Kundmachung des neuen Gesetzes zu verlängern. Für diesen Beschluss, der der Genehmigung durch die Staatsregierung bedürfe, sei eine solche Genehmigung nicht angesucht worden, weshalb der Landesregierung werde nahegelegt werden, nachträglich ein solches Ansuchen vorzulegen.</p>
+                  <p>Was den Gesetzesbeschluss betreffe, so sei er im Allgemeinen den im Jahre 1919 in Geltung gestandenen Bestimmungen nachgebildet, enthalte aber auch einige sachlich bedeutungsvolle Abweichungen hievon, von denen nur ein Teil zweckmäßig erscheine, während andere unter ihnen Bedenken erregen. Diese Bedenken würden jedoch nicht hinreichen, um gegen den Gesetzesbeschluss eine Vorstellung im Sinne des Art. 14 des Gesetzes über die Volksvertretung zu erheben, für welche übrigens die 14-tägige Frist bereits versäumt sei.</p>
+                  <p>Es werde daher beantragt, der Kabinettsrat wolle den Staatssekretär für Finanzen im Einvernehmen mit den mitbeteiligten Staatssekretären für Inneres und Unterricht und für Justiz zunächst zur Bekanntgabe der gegen den Gesetzesbeschluss bestehenden Bedenken an den Landesrat – ohne Erhebung einer formellen <pb facs="krp-0147_r-0015"/>Vorstellung – und sodann zur Vornahme der erforderlichen Gegenzeichnung für den Gesetzesbeschluss ermächtigen.</p>
+                  <p>Der Kabinettsrat erteilt die erbetene Ermächtigung.</p>
+               </div>
+               <div type="top" xml:id="krp-0147_top08">
+                  <head>
+                     <label>
+                        <num n="8">8.</num>
+                        <seg>Pensionistengesetz, Hinterbliebenenversorgungsnovelle.</seg>
+                     </label>
+                  </head>
+                  <p>Sektionschef Dr. Grimm unterbreitet dem Kabinettsrate die im Sinne der Beschlüsse des Kabinettsrates vom 6. Februar d. J. umgearbeiteten Entwürfe des Pensionistengesetzes und der Hinterbliebenenversorgungsnovelle. Redner erläutert die vorgenommenen Abänderungen der beiden Gesetzesvorlagen, welche nunmehr folgende Titel führen:</p>
+                  <list>
+                     <item n="1"><label>1.)</label> Gesetz über die Regelung von Ruhe(Versorgungs)genüssen der Staatsangestellten und ihrer Hinterbliebenen sowie der katholischen Seelsorger, ferner über Teuerungsmaßnahmen für Pensionisten (Pensionistengesetz).</item>
+                     <item n="2"><label>2.)</label> Gesetz zur vorläufigen Regelung der Versorgungsgenüsse der Witwen und Waisen der Zivilstaatsbeamten, Staatslehrpersonen, Unterbeamten und Diener, dann der Personen des militärischen Berufsstandes, auf welche die Gesetze vom 18. Dezember 1919, StGBl. Nr. 570, 571 und 572, und vom 20. Dezember 1919, StGBl. Nr. 603, Anwendung finden (Hinterbliebenenversorgungsnovelle).</item>
+                  </list>
+                  <p><pb facs="krp-0147_r-0016"/>Der Kabinettsrat erteilt die Ermächtigung zur Einbringung dieser beiden Gesetzentwürfe in der Nationalversammlung.</p>
+                  <p>Einige noch von den Staatssekretären Dr. <hi rend="#letterspaced">Ramek</hi> und <hi rend="#letterspaced">Paul</hi> zum Pensionistengesetz gestellte Abänderungsanträge werden der Behandlung dieser Vorlage im Ausschusse vorbehalten.</p>
+               </div>
+               <div type="top" xml:id="krp-0147_top09">
+                  <head>
+                     <label>
+                        <num n="9">9.</num>
+                        <seg>Veröffentlichung von Kommuniqués durch die einzelnen Staatsämter.</seg>
+                     </label>
+                  </head>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> erinnert anlässlich eines vorgekommenen Falles die Kabinettsmitglieder an die vom Kabinettsrate am 8. März 1919 beschlossenen Richtlinien für die Veröffentlichung von Kommuniqués durch die einzelnen Staatsämter und ersucht insbesondere darauf zu achten, dass vor der Veröffentlichung von Kommuniqués politischen Inhaltes stets das Einvernehmen mit dem Staatsamte für Äußeres gepflogen werde.</p>
+               </div>
+               <div type="top" xml:id="krp-0147_top10">
+                  <head>
+                     <label>
+                        <num n="10">10.</num>
+                        <seg>Gesetzentwurf über die Gewährung von außerordentlichen Teuerungszuschüssen zu den aufgrund des Gesetzes vom 25. April 1919, StGBl. Nr. 245 (Invalidenentschädigungsgesetz) gebührenden Renten.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Hanusch</hi> erbittet und erhält vom Kabinettsrate die Ermächtigung, in der Nationalversammlung den Entwurf eines Gesetzes über die Gewährung von außerordentlichen Teuerungszuschüssen zu den aufgrund des Gesetzes vom 25. April 1919, StGBl. Nr. 245 (Invalidenentschädigungsgesetz) gebührenden Renten einbringen zu dürfen.</p>
+                  <p><pb facs="krp-0147_r-0017"/></p>
+               </div>
+               <div type="top" xml:id="krp-0147_top11">
+                  <head>
+                     <label>
+                        <num n="11">11.</num>
+                        <seg>Ausbau des Elektrizitätswerkes Wels; Erklärung als begünstigter Bau.</seg>
+                     </label>
+                  </head>
+                  <p>Nach einer Mitteilung des Staatssekretärs Ing. <hi rend="#letterspaced">Zerdik</hi> beabsichtigt die AG Elektrizitätswerk Wels, ihre Zentrale in Wels durch Erhöhung des Welser Traunwehrs auszugestalten und ihr Leitungsnetz durch Errichtung einer Starkstromleitung von Buchkirchen nach Oftering und einiger Zweigleitungen zu erweitern. Über Antrag des sprechenden Staatssekretärs beschließt der Kabinettsrat die Ausgestaltung der bezeichneten Zentrale und die Errichtung der Starkstromleitung im Sinne der Kaiserlichen Verordnung vom 16. Oktober 1914, RGBl. Nr. 284, als begünstigter Bau zu erklären.</p>
+               </div>
+               <div type="top" xml:id="krp-0147_top12">
+                  <head>
+                     <label>
+                        <num n="12">12.</num>
+                        <seg>Gesetzesbeschluss des Oberösterreichischen Landtages, betreffend die Einführung von Lustbarkeitsabgaben für Landes- und Gemeindezwecke.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Eldersch</hi> erbittet und erhält vom Kabinettsrate die Ermächtigung, dass von der Erhebung einer Vorstellung gegen den vom Oberösterreichischen Landtag in seiner Sitzung am 12. Dezember 1919 gefassten Gesetzesbeschluss, betreffend die Einführung von Lustbarkeitsabgaben für Landes- und Gemeindezwecke, abgesehen und der sofortigen Kundmachung dieses Gesetzes zugestimmt werde.</p>
+                  <p><pb facs="krp-0147_r-0018"/></p>
+               </div>
+               <div type="top" xml:id="krp-0147_top13">
+                  <head>
+                     <label>
+                        <num n="13">13.</num>
+                        <seg>Gesetzentwurf, womit Art. 7 des Gesetzes vom 14. März 1919, StGBl. Nr. 180, über die Staatsregierung ergänzt wird.</seg>
+                     </label>
+                  </head>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> führt aus, dass die Art. 2, 3, 4, 7 und 8 des Gesetzes über die Staatsregierung die staatsoberhauptlichen Befugnisse aufzählen, welche dem Präsidenten der Nationalversammlung in seiner Eigenschaft als Organ der obersten Exekutive im Staate zustehen. Art. 7 enthalte insbesondere jene Befugnisse, welche sich auf das Beamtenrecht beziehen, indem dem Präsidenten der Nationalversammlung die dem Staatsrate oder dem Staatsratsdirektorium vorbehalten gewesenen Ernennungen und Bestätigungen von Beamten und sonstigen öffentlichen Organen, sowie die Verleihung von Amtstiteln über Vorschlag der Staatsregierung und unter Gegenzeichnung des Staatskanzlers oder des ressortmäßig berufenen Mitgliedes der Staatsregierung übertragen werde.</p>
+                  <p>Nun habe es sich gezeigt, dass die Auszahlung der in dieses Gebiet einschlagenden Befugnisse eine Lücke aufweise, indem über die Befugnisse zur Gewährung von persönlichen, für den Ruhegenuss anrechenbaren Zulagen an aktive Staatsangestellte und zur Zuerkennung von Gnadenzulagen, Gnadenver[sor]gungsgenüssen und Gnadengaben für Staatsangestellte und deren Hinterbli<pb facs="krp-0147_r-0019"/>ebene keine Bestimmung enthalten sei. Diese im alten Staat Österreich vom Monarchen ausgeübten Befugnisse, welche unsere Verfassungsgesetzgebung bisher mit Stillschweigen übergangen habe, hängen ihrer Natur nach zweifellos mit den übrigen im Art. 7 des Gesetzes über die Staatsregierung dem Präsidenten übertragenen Befugnissen zusammen. Diese Lücke wäre durch ein Gesetz auszufüllen, wonach im 1. Abs. des Art. 7 des Gesetzes vom 14. März 1919, StGBl. Nr. 180, über die Staatsregierung nach den Worten „sowie die Verleihung von Amtstiteln“ folgender Passus eingeschaltet würde:</p>
+                  <p>„ ,dann die Gewährung von persönlichen, für den Ruhegenuss anrechenbaren Zulagen an aktive Staatsangestellte, endlich die Bewilligung von Gnadenzulagen, das ist höherer als der normalmäßigen Ruhe- oder Versorgungsgenüssen für Staatsangestellte und deren Hinterbliebene sowie die Zuerkennung von Gnadenversorgungsgenüssen und Gnadengaben“.</p>
+                  <p>Der sprechende Staatskanzler erbittet sich vom Kabinettsrate die Ermächtigung zur Einbringung eines derartigen Gesetzentwurfes in der Nationalversammlung, wodurch auch einem vom Koalitionskomitee ausgesprochenen Wunsche (vgl. Kabinettsprotokoll Nr. 143, Pkt. 1) Rechnung getragen, würde.</p>
+                  <p><pb facs="krp-0147_r-0020"/>Der Kabinettsrat erteilt die erbetene Ermächtigung. Gleichzeitig beschließt der Kabinettsrat, dass persönliche, für den Ruhegenuss nicht anrechenbare Zulagen an aktive Staatsangestellte bis zum Höchstausmaße von 2.400 K vom zuständigen Staatssekretär im Einvernehmen mit dem Staatsamte für Finanzen gewährt werden können, während die Bewilligung derartiger Zulagen über 2.400 K bis zum Höchstausmaß von 6.000 K dem Kabinettsrate vorbehalten bleibt.</p>
+               </div>
+               <div type="top" xml:id="krp-0147_top14">
+                  <head>
+                     <label>
+                        <num n="14">14.</num>
+                        <seg>Gesetzentwurf über die Mitwirkung der Nationalversammlung an der Regelung von Eisenbahntarifen, Post-, Telegrafen- und Telefongebühren und Preisen von Monopolgegenständen sowie von Bezügen der in staatlichen Betrieben Angestellten.</seg>
+                     </label>
+                  </head>
+                  <p>Der Vorsitzende unterbreitet – gleichfalls im Sinne einer Anregung des Koalitionskomitees – dem Kabinettsrate den Entwurf eines Gesetzes über die Mitwirkung der Nationalversammlung an der Regelung von Eisenbahntarifen, Post-, Telegrafen- und Telefongebühren und Preisen von Monopolgegenständen sowie von Bezügen der in staatlichen Betrieben Angestellten und bittet um die Ermächtigung zur Einbringung dieser Gesetzesvorlage in die Nationalversammlung.</p>
+                  <p>Sektionschef Dr. <hi rend="#letterspaced">Grimm</hi> weist darauf hin, dass der vorliegende Gesetzentwurf grundlegende Änderungen in der ganzen Finanzverwaltung beinhalte, weil <pb facs="krp-0147_r-0021"/>dadurch dem jeweiligen Staatssekretär für Finanzen die Handhabe entzogen würde, im Einvernehmen mit den zuständigen Staatssekretären für Anforderungen der Verwaltung in sachlicher und persönlicher Beziehung die Bedeckung sicherzustellen. Er müsse daher die Bitte stellen, mit der Einbringung dieses Gesetzentwurfes bis zur Rückkehr des Staatssekretärs Dr. Reisch aus Paris zuzuwarten, um ihm Gelegenheit zur Stellungnahme zu geben.</p>
+                  <p>Staatssekretär <hi rend="#letterspaced">Paul</hi> regt an, im § 2 vor den Worten „Bezüge der Angestellten“ das Wort „regelmäßige“ zu streichen.</p>
+                  <p>Nachdem der <hi rend="#letterspaced">Vorsitzende</hi> auf die besondere Dringlichkeit der Einbringung dieses Gesetzentwurfes hingewiesen hatte, erteilt der Kabinettsrat die erbetene Ermächtigung mit der Maßgabe, dass der vom Staatssekretär Paul gegebenen Anregung Rechnung zu tragen ist.</p>
+               </div>
+               <div type="top" xml:id="krp-0147_top15">
+                  <head>
+                     <label>
+                        <num n="15">15.</num>
+                        <seg>Beitritt der Staatsregierung zu mehreren Gesetzesbeschlüssen der Nationalversammlung.</seg>
+                     </label>
+                  </head>
+                  <p>Über Vorschlag des Vorsitzenden erhebt der Kabinettsrat gegen die von der Nationalversammlung beschlossenen Gesetze,</p>
+                  <list>
+                     <item n="1"><label>1.)</label> betreffend die Zuständigkeit des <pb facs="krp-0147_r-0022"/>Bezirksgerichtes Urfahr zur Führung der Grundbücher für die Katastralgemeinden Urfahr und Pöstlingberg,</item>
+                     <item n="2"><label>2.)</label> über die Aufhebung vermögensrechtlicher Beschränkungen von Militärpersonen und</item>
+                     <item n="3"><label>3.)</label> zur Durchführung der Art. 191 und 192 des Staatsvertrages von St. Germain</item>
+                  </list>
+                  <p>keine Vorstellung.</p>
+                  <p>Die erwähnten Gesetze sind demgemäß nach Gegenzeichnung durch den Staatskanzler und die zuständigen Staatssekretäre dem Präsidenten der Nationalversammlung zur Fertigung vorzulegen.</p>
+               </div>
+               <div type="top" xml:id="krp-0147_top16">
+                  <head>
+                     <label>
+                        <num n="16">16.</num>
+                        <seg>Vollzugsanweisung des Staatsamtes für Verkehrswesen, betreffend die Abänderung der Konzessionsurkunde für die Salzburger Eisenbahn- und Tramwaygesellschaft.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Paul</hi> teilt mit, dass die Salzburger Eisenbahn- und Tramwaygesellschaft die Ausgestaltung ihrer Linien im größeren Umfange plane. Die hiefür erforderlichen Kapitalien beabsichtige die Gesellschaft durch Aufnahme einer Prioritätsobligationenanleihe aufzubringen. Da der Gesellschaft jedoch nach der Konzessionsurkunde vom 21. April 1885, RGBl. Nr. 70, die Ausgabe von Prioritätsobligationen untersagt sei, habe sie um die entsprechende Abänderung dieser Konzessionsurkunde ersucht.</p>
+                  <p>Der sprechende Staatssekretär stelle <pb facs="krp-0147_r-0023"/>den Antrag, der Kabinettsrat wolle ihn zur Erlassung einer Vollzugsanweisung, betreffend die Abänderung der Bestimmungen des 3. und 4. Abs. des § 6 der Konzessionsurkunde vom 21. April 1885, RGBl. Nr. 70, für die Lokomotiveisenbahn von Salzburg zur österreichisch-bayrischen Reichsgrenze in der Richtung gegen Berchtesgaden, ermächtigen.</p>
+                  <p>Der Kabinettsrat erteilt die erbetene Ermächtigung.</p>
+               </div>
+               <div type="top" xml:id="krp-0147_top17">
+                  <head>
+                     <label>
+                        <num n="17">17.</num>
+                        <seg>Ziviltechnikergesetz.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Ing. <hi rend="#letterspaced">Zerdik</hi> erbittet und erhält vom Kabinettsrate die Ermächtigung, in der Nationalversammlung den Entwurf eines Gesetzes über die ausschließliche Berechtigung der Zivilingenieure und Zivilgeometer (Ziviltechniker) zur Verrichtung bestimmter technischer Arbeiten (Ziviltechnikergesetz) einbringen zu dürfen.</p>
+               </div>
+               <div type="top" xml:id="krp-0147_top18">
+                  <head>
+                     <label>
+                        <num n="18">18.</num>
+                        <seg>Erhöhung der Zuckerpreise.</seg>
+                     </label>
+                  </head>
+                  <p>Sektionschef Dr. <hi rend="#letterspaced">Zedtwitz</hi> teilt mit, dass der durchschnittliche Einkaufspreis von 13 tschechoslowakischen Kronen für die aufgrund der Prager Verhandlungen von der tschechoslowakischen Zuckerausfuhrgesellschaft zu <pb facs="krp-0147_r-0024"/>liefernden Zuckermengen eine namhafte Erhöhung der zuletzt mit Vollzugsanweisung vom 25. November 1919, StGBl. Nr. 531, festgesetzten Zuckerpreise unabweisbar mache. Unter der Voraussetzung, dass eine Belastung das Staatsschatzes vermieden werden solle, hänge das Ausmaß der vorzunehmenden Zuckerpreiserhöhung im Wesentlichen von der Höhe des Agios der tschechoslowakischen K ab, das der Preiserstellung zugrunde zu legen sei. Das Staatsamt für Volksernährung habe seine Berechnungen vergleichsweise auf die Kurse von österreichischen 350, 400 und 450 K für 100 tschechoslowakische Kronen abgestellt. Je nach diesen Kurssätzen ergeben sich bei Berücksichtigung der (seit l. Jänner neuerdings um 150 % erhöhten) Frachtkosten der Sortenzuschläge, Versicherungsprämien, Zinsenverluste, Ausfuhrgebühren, Steuern usw. folgende Einstandspreise für den Handel:</p>
+                  <list>
+                     <item n="1"><label>1.) bei einem Kurse von 350</label> 37,20 österreichische K für 1 kg;</item>
+                     <item n="2"><label>2.) bei einem Kurse von 400</label> 42,62 österreichische K für 1 kg;</item>
+                     <item n="3"><label>3.) bei einem Kurse von 450</label> 48,23 österreichische K für 1 kg.</item>
+                  </list>
+                  <p>Bei Hinzurechnung der Handelszuschläge, die infolge des großen Mankos und Kapitalaufwand sowie auch der gesteigerten Regien dem erhöhten Einstandspreise angepasst werden müssen, verrechnen sich die Kleinhandelspreise für <pb facs="krp-0147_r-0025"/>Haushaltungszucker wie folgt: </p>
+                  <list>
+                     <item n="1"><label>1.) bei einem Kurse von 350</label> 42,64 österreichische K für 1 kg;</item>
+                     <item n="2"><label>2.) bei einem Kurse von 400</label> 49,80 österreichische K für 1 kg;</item>
+                     <item n="3"><label>3.) bei einem Kurse von 450</label> 55,53 österreichische K für 1 kg.</item>
+                  </list>
+                  <p>Diese Preise gelten für Weißzucker. Die Preise für Rohzucker würden sich um je 5 K niedriger stellen.</p>
+                  <p>Demgegenüber betrugen die bisherigen Kleinhandelspreise für Haushaltungszucker: 15,28 K (für Weißzucker) und 14,32 K (für Rohzucker) für 1 kg.</p>
+                  <p>Mit Rücksicht auf die sich hienach ergebende unvermittelt hohe Preissteigerung eines der wichtigsten Lebensmittel, die von der Bevölkerung namentlich von mehrköpfigen Familien kaum mehr werde ertragen werden können, erscheine es dem Staatsamt für Volksernährung für angezeigt, anlässlich der nunmehr vorzunehmenden Preisfestsetzung auf die Einstellung einer namhaften Kursreserve zu verzichten und die Zuckerpreise unter Zugrundelegung des beiläufigen derzeitigen Kursstandes der tschechoslowakischen Kronen zu bestimmen.</p>
+                  <p>Der Verzicht auf die Einstellung einer entsprechenden Kursreserve – dies wäre der Fall bei Annahme eines Kurses <hi rend="#u">unter</hi> 450 – setze aber voraus, dass die Verluste, die sich für die Zuckerstelle bei Ankauf von tschechoslowakischen K <hi rend="#u">über</hi> dem angenommenen Kursstande <pb facs="krp-0147_r-0026"/>ergeben, auf den Staatsschatz übernommen werden. Da die Zuckerstelle über das zur Vorausbezahlung der in der Tschechoslowakei angekauften Zuckermengen erforderliche Betriebskapital nicht verfüge, sondern auf die keineswegs immer prompten Vorausbezahlungen der Händlerschaft angewiesen sei, so setze die Nichteinkalkulierung einer ausreichenden Kursreserve in den Zuckerpreis weiters voraus, dass der Zuckerstelle die erforderlichen Geldmittel – ca. 200 Millionen österreichische K – beigestellt werden, damit sie nicht wegen Mangels an Bargeld um die Möglichkeit komme, ihre Zahlungsverpflichtungen gegenüber der tschechoslowakischen Zuckerausfuhrgesellschaft zu erfüllen sowie günstige Kursgestaltungen durch Ankauf von tschechoslowakischen Kronen ausnützen zu können.</p>
+                  <p>Unter diesen beiden Voraussetzungen stelle das Staatsamt für Volksernährung daher den Antrag auf Neubestimmung der Zuckerpreise auf Basis eines Umrechnungskurses von ungefähr 350 und daher Festsetzung des Kleinhandelspreises für weißen Haushaltungszucker mit 42,64 K für 1 kg.</p>
+                  <p>Der neue Preis hätte mit 1. März dieses Jahres in Kraft zu treten, um den Märzzucker bereits zu erhöhtem Preise ausgeben zu können.</p>
+                  <p><pb facs="krp-0147_r-0027"/>Im Zuge der sich hierüber entwickelnden Debatte verweist Sektionschef Dr. <hi rend="#letterspaced">Grimm</hi> darauf, dass die geforderte Bereitstellung von 200 Millionen K bei der gegenwärtigen staatsfinanziellen Lage kaum zu prästieren sei. Er bitte daher den Kabinettsrat, in Erwägung zu ziehen, ob nicht doch ein Umrechnungskurs von 450 für die Neubestimmung des Zuckerpreises zugrunde gelegt werden könne.</p>
+                  <p>Der Kabinettsrat einigt sich schließlich auf die Annahme eines Umrechnungskurses von 360, wonach sich der Kleinhandelspreis für Weißzucker auf ca. 45 K pro kg stellen werde. Das Staatsamt für Volksernährung wird beauftragt, die Vollzugsanweisung vor ihrer Erlassung dem Präsidenten der Nationalversammlung zur Vorlage an den Hauptausschuss zu unterbreiten.</p>
+                  <p/>
+               </div>
+            </div>
+            <div type="stenogramme">
+               <div n="1">
+                  <head>[KRP 147, 18. Februar 1920, Stenogramm Fenz]</head>
+                  <p><pb facs="krp-0147_s01-0001"/>147.</p>
+                  <p>[Renner]: Im Rahmen des Koalitionskomitees wie im Rahmen des Hauptausschusses ist die Lage der öffentlichen Angestellten beraten worden. </p>
+                  <p>Die Versammlungen, die stattgefunden haben, haben sich auf ein Ex[istenz]minimum von 2.000 Kronen monatlich geeinigt. </p>
+                  <p>Die Angestellten der Gemeinde Wien verlangen das Doppelte.</p>
+                  <p>[Es ist] von allen Seiten darauf hingewiesen worden, dass infolge besonderer Umstände die Beamten [der] unteren Kategorien in diesem Monat nicht mehr imstande sind, einzukaufen, weil sie </p>
+                  <p>kein Geld mehr besitzen. Es sei [daher] unbedingt notwendig, für die letzte Woche vorzusorgen, [für] Ledige 1.000 Kronen, [für] Verheiratete 1.500 Kronen. </p>
+                  <p>Februar [ist ein] Zinsmonat, die Kohlenrate wurde abgezogen.</p>
+                  <p>Ich habe diese Sache im Hauptausschuss und im Koalitionskomitee zum Vortrag gebracht.</p>
+                  <p>[§] 2 c [des Gesetzentwurfes] sieht vor, dass in Hinkunft die öffentlichen Bezüge nicht mehr durch das Kabinett allein geregelt werden können, sondern dass dazu jeweils der Beschluss der </p>
+                  <p>Nationalversammlung notwendig ist. Wenn wir jetzt helfen wollen, brauchen wir eine Ermächtigung der Nationalversammlung.</p>
+                  <p>Wilfling hat einen Entwurf gemacht. Die Ermächtigung würde sich [dar]auf [beziehen], den Ledigen 500 Kronen [...], [in der] II. B[ezugs]klasse - [Ortsklasse] 400, [in der] III. 300 [Kronen zu geben], [dazu] </p>
+                  <p>für jedes Familienmitglied 100, 80, [bzw.] 60 Kronen. [Es] wäre gedacht einmalig - als außerordentliche, einmalige Aushilfe. </p>
+                  <p>Das Erfordernis [beträgt] 100-120 Millionen Kronen. Die Rückwirkung auf die anderen Kategorien [wäre] sehr empfindlich. Es ist fraglich, ob man [dabei bleiben kann], das als einmalige Aushilfe </p>
+                  <p>zu betrachten. In jedem Zinsmonat werden die Beamten in dieselbe Lage kommen. Ich glaube, wir bedürfen sehr rasch einer solchen Ermächtigung, weil [es] doch für die letzte </p>
+                  <p>Woche gedacht ist. [Eine] Diff[erenzierung] nach Gehaltsstufen ist nicht vorgesehen, weil die ?Vorschreibung sonst gar nicht möglich wäre.</p>
+                  <p>[Die Vorgangsweise wäre, dass man die Vorlage] heute im Finanzausschuss [einbringt], dann [sich] alle drei Parteien diesen Antrag zu eigen machen; der Finanzausschuss fasst - berichtet morgen an das Haus und das Haus beschließt [es].</p>
+                  <p>[Ich] bitte um die Ermächtigung, diesen Antrag im Finanzausschuss vorzubringen.</p>
+                  <p>Fink: Ich habe große Bedenken, dass wir das machen auch aus den Gründen Renners. Es wird keine einmalige Ausgabe sein, sondern </p>
+                  <p>eine monatliche. [Zu erwarten sind] auch Weiterungen für die Lehrer und andere Kategorien. Das Wichtigste ist mir aber, dass ich sagen muss, die Sache geht zu rasch. Wir beschließen </p>
+                  <p>nacheinander so rasch Verbesserungen der fix Angestellten, dass das Staatsamt für Finanzen es nicht bewilligen kann. Ein großer Teil der Unzufriedenheit rührt daher, </p>
+                  <p>dass am 1. I. und 1. II. nicht das gegeben wurde, was gebührt. Wenn man es [ein]richten könnte, dass man nur den Hauszins zahlt, so dass das keine </p>
+                  <p>Weiterungen hätte, so wäre es noch zu überlegen. Aber wenn man helfen - Wenn wir es aber so machen, wie [es] beantragt ist, so treiben wir dem Staatsbankrott </p>
+                  <p>entgegen. Wir haben [noch] gar keine neuen Steuern gemacht.</p>
+                  <p>[Ich stelle den] Antrag: Das Kabinett soll dem[issionieren] und sagen, es kann nicht die Verantwortung übernehmen für eine solche Steigerung.</p>
+                  <p><pb facs="krp-0147_s01-0002"/>Eisler: Es gibt nur Vorschüsse oder Zuwendungen. Vorschüsse [sind] unzweckmäßig, weil sie nicht abgezogen werden können. </p>
+                  <p>Es haben in den letzten zwei Jahren die meisten Länder und die meisten größeren Städte konzediert die Gleichstellung mit den Staatsbeamten, so dass das, was der </p>
+                  <p>Staat für die Beamten tut, automatisch auch in den Städten geschieht. Die Länder haben jetzt auf diese Sache gar keinen Einfluss, was sie doch sehr belastet. </p>
+                  <p>Daher werden sie größere Überweisungen verlangen. Indirekt wird der Staat dann auch die Erhöhung für die Landes- und Gemeindebeamten tragen müssen. </p>
+                  <p>Die Berechnungen [der Kosten für den Staat] sind daher falsch, weil er ja auch dann für die Landes- und Gemeindeangestellten zahlen muss.</p>
+                  <p>Miklas: Ich würdige vollkommen die Lage der Staatsbeamten. Es ist auch selbstverständlich, dass der Dienstgeber vorsorgen muss. </p>
+                  <p>Wenn wir aber den Kreis der staatlichen Beamten [mit] 100 Millionen bedenken, so ist eines gewiß: Dass ein solches Zugeständnis finanzielle Konsequenzen </p>
+                  <p>für alle Angestellten in öffentlichen Diensten hat, die ähnliche Forderungen werden stellen müssen. Wenn man die staatlichen Beamten aufbessert, werden auch für die Seelsorger in den großen </p>
+                  <p>Städten [Verbesserungen] eingeleitet werden müssen. [Es ist klar], dass man ferner auch die Pensionisten nicht wird vergessen können. Auch die öffentlichen Fondsangestellten, die Lehrer, werden eine </p>
+                  <p>ähnliche Zubuße erhalten müssen. Es wird auch auf den Februar nicht beschränkt bleiben, mindestens die nächsten Zinsmonate werden dasselbe bewirken.</p>
+                  <p>Man soll diesen Liebesdienst noch gewähren, aber gleichzeitig dem Parlament sagen, wir sind bei unserer Val[utenlage] nicht imstande, unsere Angestellten zu bezahlen; </p>
+                  <p>die Nationalversammlung solle neue Vorschläge machen.</p>
+                  <p>Deutsch: Was man den Zivilisten gibt, muss man auch den Militärs geben. </p>
+                  <p>Wir leiden unter einer ganz falschen Beamtenpolitik des Staates. Die Forderungen sind gewiß berechtigt, der Staat kann sie aber nicht erfüllen. Warum? </p>
+                  <p>Weil wir zehnmal so viele Beamte haben als wir brauchen. Der große Beamtenapparat macht es unmöglich, ordentlich zu verwalten. </p>
+                  <p>Die praktische Arbeit ist höchstens drei Stunden. Wenn diese Frage nicht gelöst wird, so wird die Frage des Staates nicht gelöst.</p>
+                  <p>Wenn Fink die Demission beantragt, so können wir das doch nur unter Parteizustimmung [machen]. </p>
+                  <p>Ein viel richtigeres Mittel wäre, dem Finanzausschuss die Sache vorzulegen [und] ihn aufzufordern, die Steuervorlagen zu machen.</p>
+                  <p>Ich glaube, die Demission wäre nicht der richtige Weg. Der Finanzausschuss müsste das beschließen, dass in ganz kurzer Zeit die Steuervorlagen verabschiedet werden </p>
+                  <p>und es müsste in feierlicher Form der Abbau der Beamten angekündigt werden. - Comitee der Nationalversammlung.</p>
+                  <p>Paul: Wir können nur abbauen im Zentraldienst; im Exekutivdienst - und der macht die Hauptsache im Geld aus - kann man es nicht.</p>
+                  <p>Renner: Unter 2 b) ist <hi rend="#s">angeführt</hi> - vorgesehen die Bedeckung.</p>
+                  <p>[In] 2 c) ist vorgesehen, dass die Erhöhungen etc. nur durchgeführt werden unter der bestimmt geregelten Mitwirkung der Nationalversammlung. </p>
+                  <p>Weiters der Wunsch nach [einer] Ersparungs- und Kontrollkommission wurde dem Budgetausschuss überwiesen.</p>
+                  <p>Wir haben ein ganzes ?Paket von Steuervorlagen, die zusammenfassende Übersicht fehlt noch und Reisch ist nicht da.</p>
+                  <p><pb facs="krp-0147_s01-0003"/>Die allgemeinen Fragen stehen nicht zur Verhandlung und Entscheidung. Zu entscheiden ist: Gibt es eine Möglichkeit für den Rest des Monats für die Beamten, </p>
+                  <p>die nichts mehr haben, eine Aushilfe zu geben, die ihnen über diese Woche hinaushilft? Wenn die Nationalversammlung beisammen bleibt, so könnte alles </p>
+                  <p>geregelt werden. Was wird geschehen, wenn Aufläufe von Beamten entstehen? Die Staatsregierung muss eine Ermächtigung haben. Ob wir von dieser Ermächtigung </p>
+                  <p>Gebrauch machen oder nicht, ist ganz eine andere Frage.</p>
+                  <p>Was die Frage der Demission anbelangt: Wenn der Finanzausschuss es ablehnt, so ist die Frage, ob sich die Regierung mit der Vorlage identifiziert. </p>
+                  <p>Ich glaube nicht. </p>
+                  <p>Im vorigen Jahr ist jedes Mal [etwas] gegeben worden ohne das Haus zu fragen. Das Haus ist vorsichtig geworden. Die Ermächtigung kann nur im Wege des Gesetzes </p>
+                  <p>geschehen. Ich weiß keinen anderen Ausweg, als an den Finanzausschuss heranzutreten. Versagt es der Finanzausschuss, so müsste man abwarten, was geschieht.</p>
+                  <p>Will das Kabinett vorsorgen, dass wir für die Not der Beamtenschaft in der letzten Woche gerüstet ist - [sind] und will das Kabinett vorsorgen, dass wir eine </p>
+                  <p>Ermächtigung [be]kommen?</p>
+                  <p>Hanusch: Mit der Einbringung hat man eigentlich schon Ja gesagt, denn man wird doch unbedingt zahlen müssen, wenn die </p>
+                  <p>Ermächtigung erteilt ist. [Zur] Bedeckungsfrage: Es sind gar nicht genug Steuervorlagen da, um [das] zu bedecken. </p>
+                  <p>Weder der manuelle noch der geistige Arbeiter wird, so wie er es verlangt, so leben wie im Jahr 1914. </p>
+                  <p>Man muss die Beamtenorganisationen einmal vor die Tatsache stellen: Wir haben ein Heer von Beamten. Entweder ein Drittel muss abgebaut und entlassen werden, </p>
+                  <p>damit die anderen besser bezahlt werden; oder sie müssen sich mit einem geringeren Gehalt begnügen.</p>
+                  <p>Eldersch: Wir müssen uns fragen, ob ein solcher Notstand da ist. Ist er da, so werden wir gezwungen sein, Vorschüsse zu geben und dann würden </p>
+                  <p>wir in eine sehr schiefe Situation gegenüber der Nationalversammlung kommen. Ein Abbau geht vielleicht noch in den Zentralämtern, im </p>
+                  <p>Exekutivdienst geht es aber nicht.</p>
+                  <p>Was die Demission anbelangt, so frage ich, auf wen wollen wir dadurch einen Druck ausüben? Auf die Beamten oder auf die Nationalversammlung? </p>
+                  <p>Wir sollen über die aktuelle Frage -.</p>
+                  <p>Deutsch: Antrag: 1.) Herantreten an das Präsidium der Nationalversammlung, dass die Nationalversammlung beisammen bleibt; </p>
+                  <p>2.) die ganzen Beträge sollen auf die Hälfte reduziert werden.</p>
+                  <p>Zerdik: Auf der einen Seite mache - [muss] ich feststellen, dass es notwendig ist. Auf der anderen Seite handelt es sich doch nur um den Zinsmonat. </p>
+                  <p>Hauptsächlich wird befürchtet, dass es nicht bei der einmaligen Zulage bleibt. </p>
+                  <p>Man soll monatlich den Ortszuschlag in [eine] Akt[iven]-Zulage umwandeln und dann die Zulage nur vierteljährlich geben.</p>
+                  <p><pb facs="krp-0147_s01-0004"/>Grimm: Kassenbestand: 600 Millionen [sind] verfügbar. Davon [sind] 300 Millionen gebunden, der Rest [ist] für die laufenden Angelegenheiten. </p>
+                  <p>Die 100 Millionen, die hier errechnet wurden, werden sich um 50-60 Millionen erhöhen müssen.</p>
+                  <p>[Es besteht ein] schwerwiegendes Bedenken gegen die Vorlage. Es wurde erwähnt, dass die Aktion von den intell[ektuellen] <hi rend="#s">Beamten</hi> - Arbeitern </p>
+                  <p>ausgeht. Nach der Vorlage bekommt ein Sektionschef dasselbe wie ein Waschweib. <hi rend="#s">Es steht zu befürchten, dass –</hi> </p>
+                  <p>Man muss einen Unterschied machen zwischen Beamten und Unterbeamten und Dienern und Arbeitern. Ich glaube, [man sollte] für Wien 400 Kronen [für] Beamte [geben], 350 Kronen [für] Unterbeamte und Diener, 300 Kronen [für] Arbeiter. </p>
+                  <p>Für alle anderen Ortsklassen 300 und 200 Kronen.</p>
+                  <p>Der Vorschlag Zerdiks würde zu viel kosten.</p>
+                  <p>Renner: Vielleicht könnte man sagen: [Man gibt] den halben Ortszuschlag als Mietzinsbeitrag für diesen Monat.</p>
+                  <p>Paul: Eine Forderung der Bediensteten geht dahin, dass die fakultative Möglichkeit, den - [dass der] Ortszuschlag vierteljährlich im Vorhinein gegeben werden kann, </p>
+                  <p>im Gesetz geschaffen wird.</p>
+                  <p>Unter der Bedienstetenschaft [besteht eine] starke kommunistische Strömung, die Vertrauensmänner werden durchgeprügelt. Sie fürchten -.</p>
+                  <p>Grimm: Anstelle der Aushilfe sollen Gehalts- bzw. Besoldungsvorschüsse gegeben werden, die in zwölf Monatsraten hereingebracht werden können. </p>
+                  <p>Es ist das nicht präjudizierlich gegenüber den Beamten und nicht gegenüber den Landes- und Gemeindeangestellten.</p>
+                  <p>Paul: [Ich] bin gegen die Vorschüsse.</p>
+                  <p>Eisler: Vielleicht [wäre es] am besten, [wenn wir] für einige Monate die Ortszuschläge vorausbezahlen. Das ginge aber nur bei den Beamten, </p>
+                  <p>nicht bei den Arbeitern.</p>
+                  <p>Deutsch: Wir belügen uns mit allen diesen Vorschlägen, weil wir doch die Vorschüsse nie mehr hereinbekommen. </p>
+                  <p>Da noch keine Ansätze mit den Organisationen gemacht sind, so bin ich absolut dagegen, irgend etwas zu machen. <hi rend="#s">Wenn wir es so machen</hi>, </p>
+                  <p><hi rend="#s">wie der Herr Staatskanzler vorschlägt, -.</hi></p>
+                  <p>Stöckler: Ich kann nur Deutsch zustimmen. Lassen wir die Sache an uns herankommen und sagen wir ihnen ein energisches Wort.</p>
+                  <p><pb facs="krp-0147_s01-0005"/>Renner: Paul soll sagen, wie die Sache eigentlich steht unter seinen Bediensteten.</p>
+                  <p>Vertraulich.</p>
+                  <p>Paul: Es ist bis Anfang des Monats vollkommen ruhig gewesen. Tomschik hat mich gefragt, was die Leute noch in diesem Monat </p>
+                  <p>bekommen werden. Ich habe ihnen gesagt: 100 Kronen (gleitend) und 200 Kronen als Vorschuss auf das Besoldungsübergangsgesetz, welches ja noch nicht für die Eisenbahner </p>
+                  <p>gilt. Der Zentralausschuss war davon vollkommen befriedigt. Bei den Eisenbahnern zeigt sich nicht die geringste Bewegung.</p>
+                  <p><hi rend="#s">Mittlerweile wurde</hi> - Bei der Beratung des Besoldungsübergangsgesetzes wurde den Postbediensteten zugesagt, dass über gewisse einzelne Begünstigungen, die die Postbediensteten </p>
+                  <p>hatten, beraten werden wird. Die Beratungen haben stattgefunden. Während dieser Beratungen hat sich unter den Postbediensteten die Bewegung geltend gemacht, dass in diesem </p>
+                  <p>Monat noch etwas gegeben werden muss.</p>
+                  <p>Es ist nicht klar, warum gerade im Februar diese Bewegung ausgebrochen ist. Zelenka sagt, es sei ein komm[unistischer] </p>
+                  <p>Einschlag. [Es wurde eine] Resolution in den Versammlungen [gefasst]: 1.500 Kronen, 1.000 Kronen. </p>
+                  <p>Alle Forderungen, wie sie hier geltend gemacht wurden, betreffen hauptsächlich das mittlere und niedere Personal. Sie wollen ihre Forderungen auf die gleitende Zulage werfen.</p>
+                  <p>Wenn wir gar nichts machen, so stelle ich mir vor, dass die Leute, die kolossal verhetzt zu sein scheinen, von den Führern nicht mehr </p>
+                  <p>zurückgehalten werden. Ein ein- bis zweitägiger Dem[onstrations]-Streik ist zu erwarten im Februar.</p>
+                  <p>Ich möchte den Vorschlag machen, dass wir in irgendeiner Form beschließen, in diesem Monat etwas zu geben. Die Zeit der Ruhe soll dann </p>
+                  <p>dazu benützt werden, zu einer Lösung der ganzen Frage zu gelangen. </p>
+                  <p>Ich glaube aber nicht, dass der Vorschlag Grimms etwas nützt. Die Leute werden halt beim Abzug streiken. </p>
+                  <p><hi rend="#s">Man sollte nur sagen, dass</hi> -.</p>
+                  <p>Fink: Unbeschadet dessen, was ich zu Beginn der Sitzung gesagt habe: </p>
+                  <p>Wenn jetzt etwas geschehen muss, so glaube ich, dass man noch am billigsten herauskommt, wenn man sagt, [dass man] den Beamten bis </p>
+                  <p>inkl[usive] VI. Rangsklasse einen Teil des vierteljährigen Zinses zahlt - abgestuft nach Verheirateten und Ledigen und abgestuft </p>
+                  <p>nach den Ortsklassen.</p>
+                  <p>Aber ich kann nicht mitmachen, wenn man nicht die Steuern erledigt und nicht auch das Haus an die Arbeit geht und den Pensionisten </p>
+                  <p>auch etwas gibt.</p>
+                  <p>Renner: 300 [Kronen] für den Ledigen, 500 für den Verheirateten in Wien.</p>
+                  <p>Eisler: Wenn schon etwas gegeben wird, so muss [ein] Unterschied gemacht werden zwischen Verheirateten mit und ohne Kinder. </p>
+                  <p>Ich bin auch nicht dafür, [es] auf den Zins abzustellen, weil das nicht mehr rückgängig zu machen ist.</p>
+                  <p><pb facs="krp-0147_s01-0006"/>[Ich] beantrage: In Wien [für] Ledige 300, [für] Verheiratete 400 und für jedes Kind 50 [Kronen]; </p>
+                  <p>für die Provinz [für] Ledige 300, [für] Verheiratete 200 und für jedes Kind 40 [Kronen].</p>
+                  <p>Man soll das nicht für den Zins geben, sondern als einmalige außerordentliche Zuwendung. Ob man es als Debitpost buchen kann, </p>
+                  <p>wäre zu erwägen. Aber man muss dabei reagieren auf die Form, wie es gefordert wird.</p>
+                  <p>Im Zusammenhang mit dieser Konzession muss eine Zurückweisung der Form, wie solche Sachen verlangt werden, erfolgen. </p>
+                  <p>Bei der Vertretung im Parlament hätte dies zu geschehen.</p>
+                  <p><hi rend="#s">Renner:</hi> -.</p>
+                  <p>Paul: Zu den Ansätzen: Es bekommt der Ledige, wo immer er ist, 150 Kronen, [dazu] für jedes Familienmitglied 50 Kronen, </p>
+                  <p>auszuzahlen nach den Normen des ?bestandenen Ausgangsbetrages.</p>
+                  <p>Deutsch: Es ist [<hi rend="#i">Einschub:</hi>] nach Paul [<hi rend="#i">Einschub Ende</hi>] keine allgemeine Beamtenbewegung, sondern nur von den Postbeamten. Deshalb soll jeder andere Kategorie </p>
+                  <p>auch etwas bekommen? <hi rend="#s">Man soll mit diesen Leuten</hi> - Man soll mit den Postbediensteten selbständig verhandeln.</p>
+                  <p>Resch: Ich glaube, dass die Sache künstlich hineingetragen ist. Zelenka hat ihnen versprochen 1.000 Kronen und [eine] </p>
+                  <p>Reform des Besoldungsübergangsgesetzes. Jetzt warten sie darauf.</p>
+                  <p>Ich bin dagegen, dass man zwischen Tür und Angel so etwas Wichtiges beschließt. Die Nationalversammlung muss beisammen bleiben.</p>
+                  <p>Renner: Wir teilen dem Finanzausschuss mit, dass die schwierige Lage [entsteht] durch das Zusammentreten des Parlaments - [wenn dieses] erst am 2. III </p>
+                  <p>wieder zusammentritt. [Es besteht] die Gefahr einer entscheidenden Bewegung, die uns zu Entscheidungen zwingt, wenn das Parlament nicht beisammen ist. </p>
+                  <p>Daher die Vorlage. Das Kabinett kann sich [damit aber] nicht identifizieren. Der Finanzausschuss soll [daher] geltend machen, dass die Nationalversammlung </p>
+                  <p>nächste Woche tagt oder bereit ist.</p>
+                  <p>Glöckel: Die Regierung müsste [<hi rend="#i">Einschub:</hi>] dem Finanzausschuss [<hi rend="#i">Einschub Ende</hi>] sagen, wir haben alle Mittel versucht, einen Ausweg zu finden, aber wir finden ihn nicht.</p>
+                  <p>Eldersch: Wenn ein Streik kommt und wir können ihn nicht durchhalten, so müssen wir abdizieren. </p>
+                  <p>Wenn wir ruhig etwas geben jetzt, so kommen wir billiger daraus. Wenn man einer Kategorie etwas gibt, </p>
+                  <p>so muss man es allen anderen auch geben.</p>
+                  <p><pb facs="krp-0147_s01-0007"/>Renner: Das Kabinett wird es also verantworten, nichts zu geben?</p>
+                  <p>Deutsch: Wir sollen dem Finanzausschuss sagen, dass mit den Post- und Telegraphenbediensteten wird verhandelt werden.</p>
+                  <p>Glöckel: -.</p>
+                  <p>Renner: Es ist keine Einigung auf die Ermächtigung. </p>
+                  <p>Übernimmt das Kabinett die Verantwortung dafür, dass wir - in den letzten Teil der Woche zu gehen ohne eine solche Ermächtigung, </p>
+                  <p>so dass wir Nein sagen?</p>
+                  <p>[Beschluss]: Das Kabinett [<hi rend="#i">Einschub:</hi>] wünscht nicht eine Ermächtigung, sondern [<hi rend="#i">Einschub Ende</hi>] spricht den Wunsch aus, dass das Parlament dableibt.</p>
+                  <p>Ramek: </p>
+                  <p>Wir haben das Geschworenenlisten-Gesetz beschlossen und stärker demokratisiert. [Es wurde ein Taggeld von] </p>
+                  <p>10 Kronen festgesetzt für alle, die im Tages- oder Wochenlohn leben. [Ein] Arbeiter kann davon nicht leben, wenn er den Arbeitslohn einbüßt. </p>
+                  <p>Es ist eine sehr starke Bewegung nicht nur unter der Arbeiterschaft von Wien, sondern auch in den Ländern.</p>
+                  <p>Wir haben [einen] Gesetzentwurf ausgearbeitet, den ich [am] Dienstag vortragen werde, wo wir gleichzeitig mit der Erhöhung des Taggeldes auch [eine] Reform </p>
+                  <p>des ganzen Gerichtsverfahrens beabsichtigen. Die Erhöhung des Taggeldes würde namentlich in Wien sehr viel kosten, weil das Schwurgericht </p>
+                  <p>hier fast das ganze Jahr tagt. Würde man [aber] z. B. die Vermögensdelikte ausscheiden, so wäre das eine antidemokratische </p>
+                  <p>Maßregel. Um nun diesem Gedanken entgegen zu kommen, glaube ich, wäre es am besten, wenn man gleichzeitig mit dem Abbau der Geschworenen-</p>
+                  <p>gerichte die Schöffengerichte einführt, so dass im Erkenntnissenat neben dem Richter zwei Schöffen sitzen.</p>
+                  <p>Im Zusammenhang damit würde ich den Vorschlag machen, dass alle - [jeder], der das Amt des Geschworenen oder Schöffen oder Vertrauensmannes bei </p>
+                  <p>Gericht ausübt und im Tages- oder Wochenlohn steht, ein Taggeld von 50 Kronen bekommt. Mit dem Staatsamt für Finanzen [wurde] </p>
+                  <p>noch nicht Einvernehmen gepflogen. Bis zur Verabschiedung dieses Gesetzes vergehen zwei Monate. Daher soll unter Bedachtnahme auf </p>
+                  <p>dieses Gesetz schon heute das Staatsamt für Justiz rückwirkend auf 1. II. ermächtigt werden, die Gebühr der Geschworenen auf </p>
+                  <p>50 Kronen zu erhöhen, nur denjenigen, die von Tages- und Wochenlohn leben, und zwar nur unter der Voraussetzung, dass diese Gesetzesvorlage auch wirklich </p>
+                  <p><pb facs="krp-0147_s01-0008"/>Gesetz wird. Wird das Gesetz nicht Gesetz, so würde in der Folgezeit Abhilfe geschaffen werden bzw. [die Zahlung der] 50 Kronen wieder eingestellt werden.</p>
+                  <p>Grimm: Ich möchte mich dagegen aussprechen, dass wir diese Frage heute schon entscheiden.</p>
+                  <p>Es sind nicht allein die Geschworenen allein, sondern es existieren so viele ehrenamtliche und nicht ehrenamtliche Kommissionen. </p>
+                  <p>Wenn heute [ein solcher] Beschluss gefasst wird, so wird die ganze Frage bei allen anderen derartigen ehrenamtlichen Entschädigungen aufgerollt.</p>
+                  <p>Der Kabinettsrat möge das Staatsamt für Justiz beauftragen, sich zuerst mit dem Staatsamt für Finanzen ins Einvernehmen zu setzen.</p>
+                  <p>Ramek: Wenn ich diese Ermächtigung nicht bekomme, so kann ich nur mit einem Gesetz kommen, wo nur den Geschworenen </p>
+                  <p>50 Kronen gegeben werden.</p>
+                  <p>Eisler: [Zu] Beginn 1919 wurde das Taggeld beschlossen und bis heute wurde es noch nicht den Verhältnissen angepasst. </p>
+                  <p>Wir haben die Entschädigungsfrage zusammengespannt mit dem Gesetz wegen Abbau der Geschworenengerichte. Wenn das nicht geht, </p>
+                  <p>so müssen wir selbständig die 50 Kronen gesetzlich einführen. Dann wird im Ausschuss verlangt werden, die volle Entschädigung </p>
+                  <p>des Arbeitsverdienstes.</p>
+                  <p>Ramek: Im Finanz- und Bürgerausschuss wurde einhellig von allen Mitgliedern darauf hingewiesen, dass das Staatsamt für Justiz dafür </p>
+                  <p>sorgen soll, dass diesem Zustand ein Ende bereitet wird und zwar wurde dort von der Vergütung des vollen Verdienstentganges gesprochen.</p>
+                  <p>Hanusch: 50 Kronen ist das Bescheidenste, was man geben kann. </p>
+                  <p>Die Arbeiter haben durch das Gesetz zwar das Recht zum Geschworenen bekommen, haben aber nicht die Möglichkeit, es auszuüben. </p>
+                  <p>Es wundert mich nur, da das Gesetz doch schon so lange in Kraft tritt - [ist], dass das Staatsamt für Justiz noch nicht mit dem </p>
+                  <p>Staatsamt für Finanzen zusammen getreten ist.</p>
+                  <p>[Ich] beantrage, dass das Staatsamt für Justiz bis Dienstag das Einvernehmen mit dem Staatsamt für Finanzen pflegt und dann [einen]</p>
+                  <p> konkreten Antrag stellt.</p>
+                  <p>Antrag Hanusch angenommen.</p>
+                  <p><pb facs="krp-0147_s01-0009"/>3. Glöckel: Kochküchengebäude.</p>
+                  <p>Tandler: Es ist ganz unmöglich, die Verantwortung für die Zustände weiter auf sich zu nehmen. Ich habe schon vor sieben Monaten </p>
+                  <p>den Ausbau [<hi rend="#i">Einschub</hi>:] der Küche im allgemeinen Krankenhaus [<hi rend="#i">Einschub Ende</hi>] verlangt und es ist bisher nicht geschehen. Die Küche ist für 1.500 Personen eingerichtet und [es] wird jetzt für </p>
+                  <p>5.400-5.800 gekocht. Wenn ein Kessel Schaden leidet -.</p>
+                  <p>Grimm: [Wir sind] bereit zu 10 Millionen, aber gegen [ein] Präjudiz. </p>
+                  <p>Mit der Einschränkung, dass der Satz &lt;bezüglich ...&gt; wegfällt.</p>
+                  <p>Angenommen.</p>
+                  <p>4. a) Stöckler: -. Keine Vorstellung.</p>
+                  <p>4. b) Stöckler: -. Angenommen.</p>
+                  <p>4. c) Stöckler: Titeländerungen.</p>
+                  <p>Angenommen.</p>
+                  <p>5. a) Grimm: -. Angenommen.</p>
+                  <p>5. b) Grimm: -. Angenommen.</p>
+                  <p><pb facs="krp-0147_s01-0010"/>5. c) Grimm: Pensionistengesetz.</p>
+                  <p>Ad I. Hauptstück: Der Personenkreis [wird in] § 1 al. 2 </p>
+                  <p>erhöht: "Wenn die Dauer der ununterbrochenen Verwendung des Angestellten bei den Zentralbehörden mindestens 10 Jahre und wenigstens - mindestens </p>
+                  <p>zwei Drittel seiner Gesamtdienstzeit beträgt oder - ["].</p>
+                  <p>Ramek: Ad § 14 und 15 PG [Pensionistengesetz]: </p>
+                  <p>Eine ähnliche Bestimmung haben wir in das Besoldungsübergangsgesetz nicht aufgenommen, sondern eine Ermächtigung mittels Vollzugsanweisung vom 5. I. 20 </p>
+                  <p>erhalten. Vielleicht könnte man hier auch mit [einer] Vollzugsanweisung vorgehen, zumal in nächster Zeit ein allgemeines Gesetz über </p>
+                  <p>Lohn- und Gehaltsbeschlagnahme geschaffen werden soll. Auch [wäre es eine] Diskrepanz, dass [es] beim Besoldungsübergangsgesetz [durch] Vollzugsanweisung [und] hier durch </p>
+                  <p>Gesetz geregelt [wird]. Vielleicht könnte man die Paragraphen 14 und 15 ganz auslassen. Wenn sie darin bleiben, </p>
+                  <p>so wären Ergänzungen notwendig: § 15a &lt; &gt;; </p>
+                  <p>§ 15b; </p>
+                  <p>§ 16 noch ein Absatz.</p>
+                  <p>[Ich] bitte, ohne Zusatz oder die Materie durch Vollzugsanweisung [zu regeln].</p>
+                  <p>Paul: § 1 wird nicht im Ausschuss aufrecht erhalten werden können ohne Zusatz.</p>
+                  <p>Ad § 4, 2: § 4, 3 steht mit § 4, 2 im Widerspruch – </p>
+                  <p>stilistische Änderung.</p>
+                  <p>Eldersch: Nach § 5 PBG können Beamte mit Wartegebühr beurlaubt werden. Wie sind die jetzt zu behandeln?</p>
+                  <p>Grimm: Detail nicht notwendig.</p>
+                  <p><pb facs="krp-0147_s01-0011"/>Ramek: [Ich] bin einverstanden, dass [das] im Ausschuss gemacht wird.</p>
+                  <p>Angenommen.</p>
+                  <p>[Renner]: Note der ungarischen Gesandtschaft. Wir stehen auf dem Standpunkt des Friedens von St. Germain.</p>
+                  <p>[Renner]: Communiqués politischen Inhaltes. </p>
+                  <p>[Es] möchte beachtet werden, dass [solche] nur im Einvernehmen mit dem Staatskanzler [veröffentlicht werden].</p>
+                  <p>7. Hanusch: -.</p>
+                  <p>Angenommen.</p>
+                  <p>11. c) Zerdik: Wels, begünstigter Bau.</p>
+                  <p>Angenommen.</p>
+                  <p>10. Eldersch: Lustbarkeit[sabgabe].</p>
+                  <p>Angenommen.</p>
+                  <p>2. b) Renner: Wird vom Geschäftsordnungsausschuss eingebracht werden.</p>
+                  <p>2. a) Grimm: Nach dieser Fassung: </p>
+                  <p>Der Staatsregierung bleibt es anheim gestellt, nicht anrechenbare Personalzulagen in welcher Höhe nicht - immer </p>
+                  <p>zu bewilligen. Eventuell nur bis 10.000 Kronen.</p>
+                  <p>Eldersch: Ich glaube, über 2.000 Kronen dem Präsidenten.</p>
+                  <p><pb facs="krp-0147_s01-0012"/>[Beschluss]: Die Gewährung von persönlichen, nicht anrechenbaren Zulagen </p>
+                  <p>bis <hi rend="#s">2.000</hi> - 2.400 Kronen Staatssekretär, <hi rend="#s">über 2.000 Kronen Kabinett und mehr als 6.000 Kronen</hi> – </p>
+                  <p>im Einvernehmen mit dem Staatsamt für Finanzen - bis zum Betrag von 6.000 Kronen nach </p>
+                  <p>Zustimmung des Kabinettsrates.</p>
+                  <p>Gesetzentwurf im Übrigen angenommen.</p>
+                  <p>2. c) Grimm: -.</p>
+                  <p>Paul: Ad § 2 Antrag: Streichung von "regelmäßigen".</p>
+                  <p>Angenommen. - Die Staatskanzlei.</p>
+                  <p>[Beschluss]: [Es wird] aus dem Gesichtspunkt des Budgetressorts, des Hauses und aus der Pflicht des Hauses für die Bedeckung zu sorgen, </p>
+                  <p>morgen eingebracht.</p>
+                  <p>[Renner]: Beitritt. Angenommen.</p>
+                  <p>Paul: Tramway.</p>
+                  <p>Angenommen.</p>
+                  <p>[Zerdik]: Ziviltechniker. Genehmigt.</p>
+                  <p>[Zugezogen]: Halban, Sektionsrat Kaltenbrunner (Finanzen).</p>
+                  <p>Zedtwitz: Zuckerpreis.</p>
+                  <p><pb facs="krp-0147_s01-0013"/>Eldersch: Jede Familie wird über 100 Kronen mehr im Monat zahlen müssen. </p>
+                  <p>Regt an [eine] sukzessive Erhöhung, zunächst etwa 30 Kronen.</p>
+                  <p>Grimm: [<hi rend="#i">Einschub:</hi>] Rabatt 200 Millionen Kronen an die Zuckerstelle. [<hi rend="#i">Einschub Ende</hi>] Da das Volksernährungsamt sich schon Zucker aus anderen Ländern wird beschaffen müssen, so brauchen wir das Geld für diese Zwecke. </p>
+                  <p>Bei [einer] vollen Erhöhung würde man dem Staat eine Leistung ersparen, die er überhaupt nicht prästieren kann. </p>
+                  <p>Vielleicht wäre es erträglicher, den Zucker auch im März nicht auszugeben.</p>
+                  <p>Zedtwitz: Ausgeschlossen.</p>
+                  <p>Renner: Wir sollen jetzt den Antrag des Staatsamtes für Volksernährung annehmen. </p>
+                  <p>Mit einem höheren Kurs als 3 Kronen 60 Heller können wir nicht rechnen.</p>
+                  <p>Halban: -.</p>
+                  <p>Kaltenbrunner: -.</p>
+                  <p>Renner: Ich glaube 45 Kronen.</p>
+                  <p>[Beschluss]: Vollzugsanweisung, die dem Präsidenten für den Hauptausschuss gegeben wird. </p>
+                  <p>Der Finanzausschuss wird eingeladen, sich zu bemühen, die 200 Millionen zu beschaffen.</p>
+                  <p>¾ 9 Uhr.</p>
+               </div>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

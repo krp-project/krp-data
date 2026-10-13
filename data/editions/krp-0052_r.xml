@@ -1,0 +1,566 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href='http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:acdh="https://vocabs.acdh.oeaw.ac.at/schema#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xml:lang="de">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="a" type="main" n="0052">Kabinettsprotokoll Nr. 52 vom 21. März 1919</title>
+            <title level="m" type="main" n="01">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <title level="m" type="sub" n="">Renner II (15. März – 17. Oktober 1919)</title>
+            <meeting>
+               <placeName key="https://d-nb.info/gnd/4066009-6">Wien</placeName>
+               <orgName key="https://d-nb.info/gnd/5162749-8">Kabinettsrat</orgName>
+               <date when-iso="1919-03-21"/>
+            </meeting>
+            <editor>
+               <persName key="https://d-nb.info/gnd/122481836"
+                         role="hasCreator"
+                         xml:id="hwohnout">
+                  <forename>Helmut</forename>
+                  <surname>Wohnout</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</affiliation>
+               <idno type="ORCID">0000-0002-3864-9839</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/120789825"
+                         role="hasCreator"
+                         xml:id="tolechowski">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0003-3291-6876</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/131679384"
+                         role="hasCreator"
+                         xml:id="rlein">
+                  <forename>Richard</forename>
+                  <surname>Lein</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0002-7502-0503</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="aholzer">
+                  <forename>Anna</forename>
+                  <surname>Holzer</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0005-3560-3500</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="dsoelkner">
+                  <forename>Dominik</forename>
+                  <surname>Sölkner</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-9895-7212</idno>
+            </editor>
+            <editor>
+               <persName role="hasContributor" xml:id="ischotzko">
+                  <forename>Ina</forename>
+                  <surname>Schotzko</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-5210-3713</idno>
+            </editor>
+            <funder n="1">
+               <orgName key="https://d-nb.info/gnd/2054142-9" role="hasFunder">Österreichischer Wissenschaftsfonds FWF</orgName>
+               <idno type="project">PAT1495024</idno>
+               <title type="project">Die Protokolle des österreichischen Kabinettsrates 1919–1920</title>
+            </funder>
+            <respStmt>
+               <resp>Projektverantwortung</resp>
+               <orgName key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Projektleitung</resp>
+               <persName key="https://d-nb.info/gnd/120789825" role="hasPrincipalInvestigator">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+                  <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+                  <idno type="ORCID">0000-0003-3291-6876</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Nationaler Forschungspartner</resp>
+               <orgName key="https://d-nb.info/gnd/1123037736" role="hasEnabler">Austrian Centre for Digital Humanities</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Digitalisierung der gedruckten Quellen</resp>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>TEI-Datenmodellierung</resp>
+               <persName role="hasContributor" xml:id="tfruehwirth">
+                  <forename>Timo</forename>
+                  <surname>Frühwirth</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-3997-5193</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technische Supervision</resp>
+               <persName key="https://d-nb.info/gnd/1043833846"
+                         role="hasContributor"
+                         xml:id="pandorfer">
+                  <forename>Peter</forename>
+                  <surname>Andorfer</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-9575-9372</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technisches Consulting und Vorbereitung der Druckausgabe</resp>
+               <persName key="https://d-nb.info/gnd/13281899X"
+                         role="hasContributor"
+                         xml:id="skurz">
+                  <forename>Stephan</forename>
+                  <surname>Kurz</surname>
+                  <affiliation key="https://d-nb.info/gnd/1202798799">Institut für die Erforschung der Habsburgermonarchie und des Balkanraumes</affiliation>
+                  <idno type="ORCID">0000-0003-2546-2570</idno>
+               </persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher key="https://d-nb.info/gnd/1001454-8">Österreichische Akademie der Wissenschaften</publisher>
+            <date when="2028"/>
+            <availability status="free">
+               <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">Lizenziert unter CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/deed.de)</licence>
+            </availability>
+            <idno type="ISBN_Print"/>
+            <idno type="ISBN_Part_epub"/>
+            <idno type="ISBN_Digital"/>
+            <idno type="DOI"/>
+            <idno type="DOI_zenodo"/>
+            <idno type="ebook_ID"/>
+         </publicationStmt>
+         <seriesStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="m" type="main">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <respStmt>
+               <resp>Bearbeitung und Herausgeberschaft</resp>
+               <orgName key="https://d-nb.info/gnd/2024703-5">Universität Wien</orgName>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+         </seriesStmt>
+         <notesStmt>
+            <note>Diese TEI-XML-Datei ist Grundlage für eine Druckausgabe der Edition.</note>
+            <relatedItem>
+               <biblStruct>
+                  <monogr>
+                     <imprint>
+                        <pubPlace key="https://d-nb.info/gnd/4066009-6">Wien</pubPlace>
+                        <publisher key="https://d-nb.info/gnd/2068748-5">Verlag der Österreichischen Akademie der Wissenschaften</publisher>
+                        <date when="2029"/>
+                     </imprint>
+                     <extent/>
+                  </monogr>
+                  <note>
+              <idno/>
+              <ptr/>
+            </note>
+                  <citedRange/>
+               </biblStruct>
+            </relatedItem>
+         </notesStmt>
+         <sourceDesc>
+            <bibl>Quellbestand: AT-OeStA/AdR MRang MR 1Rep KRP Kabinettsratsprotokolle, 1918-1920 (Teilbestand)<ref target="https://www.archivinformationssystem.at/detail.aspx?id=5465">https://www.archivinformationssystem.at/detail.aspx?id=5465</ref>
+            </bibl>
+            <msDesc>
+               <msIdentifier>
+                  <institution key="https://d-nb.info/gnd/37748-X" role="hasOwner">AT-OeStA Österreichisches Staatsarchiv (Archiv (ÖStA))</institution>
+                  <repository key="https://d-nb.info/gnd/1601181-8">AT-OeStA/AdR Archiv der Republik, 1918- (Abteilung)</repository>
+                  <collection>AT-OeStA/AdR MRang MR 1Rep Ministerrat 1. Republik, 1918 - 1938 (Bestand)</collection>
+                  <idno>AT-OeStA_AdR-MRang-MR-1.-Rep.-KRP-052</idno>
+               </msIdentifier>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <abstract>
+            <p>
+          <!--to be generated-->
+        </p>
+         </abstract>
+      </profileDesc>
+      <encodingDesc>
+         <styleDefDecl scheme="css"/>
+         <tagsDecl>
+            <rendition xml:id="b" scheme="css">font-weight:bold;</rendition>
+            <rendition xml:id="su" scheme="css">vertical-align:super;font-size:.7em;</rendition>
+            <rendition xml:id="s" scheme="css">text-decoration:line-through;</rendition>
+            <rendition xml:id="u" scheme="css">text-decoration:underline;</rendition>
+            <rendition xml:id="ow" scheme="css">text-decoration:line-through;text-decoration-style:double;</rendition>
+            <rendition xml:id="r" scheme="css">display:block;text-align:right;</rendition>
+            <rendition xml:id="letterspaced" scheme="css">letter-spacing:0.15em;</rendition>
+            <rendition xml:id="i" scheme="css">font-style:italic;</rendition>
+         </tagsDecl>
+         <editorialDecl>
+            <hyphenation>
+               <p>
+            <!--to be added-->
+          </p>
+            </hyphenation>
+            <correction>
+               <p>
+            <!--to be added-->
+          </p>
+            </correction>
+            <normalization>
+               <p>
+            <!--to be added-->
+          </p>
+            </normalization>
+            <punctuation>
+               <p>
+            <!--to be added-->
+          </p>
+            </punctuation>
+            <stdVals>
+               <p>
+            <!--to be added-->
+          </p>
+            </stdVals>
+            <p>
+          <!--to be added-->
+        </p>
+         </editorialDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#tfruehwirth" when-iso="2026-10-13">TEIGarage output upconverted with upconvert.xsl</change>
+         <change who="#tfruehwirth" when-iso="2026-10-13">TEI header populated with generate_tei_templates.py</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface/>
+   </facsimile>
+   <text>
+      <body>
+         <div xml:id="doc-krp-0052.xml">
+            <head type="dokument">
+               <title type="num">52.<note type="footnote">Das Protokoll trägt den Vermerk <hi rend="#i">Vertraulich!</hi></note>
+               </title>
+               <title type="desc">
+                  <pb facs="krp-0052_r-0001"/>[Freitag] 1919-03-21</title>
+            </head>
+            <div type="dokumentkopf">
+               <div type="vorsitz">
+                  <head>Vorsitz:</head>
+                  <p>Renner</p>
+               </div>
+               <div type="anwesend">
+                  <head>Anwesend:</head>
+                  <p>Bauer, Bratusch, Deutsch, Ellenbogen, Fink, Glöckel, Hanusch, Loewenfeld-Russ, Miklas, Paul, Schumpeter, Stöckler, Waiss</p>
+               </div>
+               <div type="zugezogen">
+                  <head>Zugezogen:</head>
+                  <p>Beck, Herman, Okorn, Thaa</p>
+               </div>
+               <div type="schriftfuehrer">
+                  <head>Schriftführer:</head>
+                  <p>unbekannt</p>
+               </div>
+               <div type="dauer">
+                  <head>Dauer:</head>
+                  <p>15.00–18.00 Uhr</p>
+               </div>
+            </div>
+            <div type="komponenten">
+               <p>Reinschrift, Beilagen, Konzept, stenographische Mitschrift, Entwurf der Tagesordnung, diverse Zusätze</p>
+            </div>
+            <div type="beilagen">
+               <head>Beilagen:</head>
+               <list>
+                  <item><ref target="#krp-0052_top01">Zu TOP 1</ref>: <ref target="#krp-0052_b01">Frage der Kompetenz zur Erteilung der Legitimation und zur Bewilligung von Gnadenversorgungen</ref></item>
+                  <item><ref target="#krp-0052_top03">Zu TOP 3</ref>: <ref target="#krp-0052_b02">Memorandum über Versammlung der Zwangspensionisten aller Kategorien</ref></item>
+                  <item><ref target="#krp-0052_top03">Zu TOP 3</ref>: <ref target="#krp-0052_b03">Antrag der Staatskanzlei auf umgehende Betrauung der zwischenstaatlichen Geschäftsstelle für Staatsbedienstetenangelegenheiten mit diesem Ansuchen</ref></item>
+                  <item><ref target="#krp-0052_top04">Zu TOP 4</ref>: <ref target="#krp-0052_b04">Gesetzesentwurf des Staatsamtes für Handel und Gewerbe, Industrie und Bauten über die Inanspruchnahme von Grundflächen zur Torfgewinnung</ref></item>
+                  <item><ref target="#krp-0052_top06">Zu TOP 6</ref>: <ref target="#krp-0052_b05">Gesetzesentwurf des Staatsamtes für Justiz über die Errichtung von Einigungsämtern für Streitigkeiten aus bestimmten Lieferungsverträgen</ref></item>
+                  <item><ref target="#krp-0052_top07">Zu TOP 7</ref>: <ref target="#krp-0052_b06">Entwurf einer Vollzugsanweisung des Staatsamtes für Handel und Gewerbe, Industrie und Bauten über die Vergebung stattlicher Lieferungen und Arbeiten</ref></item>
+                  <item><ref target="#krp-0052_top08">Zu TOP 8</ref>: <ref target="#krp-0052_b07">Gesetzesentwurf des Staatsamtes für soziale Verwaltung über die Regelung der Arbeit in den Betrieben zur Erzeugung von Backwaren</ref></item>
+                  <item><ref target="#krp-0052_top09">Zu TOP 9</ref>: <ref target="#krp-0052_b08">Gesetzesentwurf des Staatsamtes für Justiz über die Abschaffung der nicht im Völkerrecht begründeten Exterritorialität</ref></item>
+                  <item><ref target="#krp-0052_top10">Zu TOP 10</ref>: <ref target="#krp-0052_b09">Vollzugsanweisung des Staatsamtes für Handel und Gewerbe, Industrie und Bauten für die Übertragung von Rechten zur Ausnützung von Wasserkraftwerken</ref></item>
+               </list>
+            </div>
+            <div type="protokoll">
+               <pb facs="krp-0052_r-0002"/>
+               <div type="top" xml:id="krp-0052_top01">
+                  <head>
+                     <label>
+                        <num n="1">1.</num>
+                        <seg>Frage der Kompetenz zur Erteilung der Legitimation (§ 162 ABGB.) und zur Bewilligung von Gnadenversorgungen.</seg>
+                     </label>
+                  </head>
+                  <p>Nach Begrüßung des zum ersten Male im Kabinettsrat erschienenen Vizekanzlers Fink führt der <hi rend="#letterspaced">Vorsitzende</hi> aus, dass gemäß Art. 3 des Gesetzes vom 12. November 1918, StGBl Nr. 5, alle Rechte, welche nach der Verfassung der im Reichsrate vertretenen Königreiche und Länder dem Kaiser zustanden, bis zur endgiltigen Festsetzung der Verfassung durch die Konstituierende Nationalversamm<pb facs="krp-0052_r-0003"/>lung auf den Staatsrat übergegangen seien, und damit auch das Recht der Legitimation (§ 162 ABGB) und der Bewilligung von Gnadenversorgungen; der Staatsrat und das Staatsratsdirektorium hätten diese Rechte bisher auch ausgeübt.</p>
+                  <p>Im Art. 6 des Gesetzes vom 14. März 1919, StGBl Nr. 180, sei jedoch inzwischen bestimmt worden, dass die Geschäfte des Staatsrates und des Staatsratsdirektoriums auf die Staatsregierung überzugehen haben, soweit gesetzlich nichts anderes bestimmt ist. Art. 7 dieses Gesetzes räumt weiters eine Reihe von bisher dem Staatsrate oder dem Staatsratsdirektorium zugestandenen Rechten dem Präsidenten der Nationalversammlung ein, unter denen allerdings die beiden oben angeführten Rechte nicht ausdrücklich erwähnt sind. Trotzdem dürfte aber daraus der Schluss, dass sie deshalb der Staatsregierung und nicht dem Präsidenten zustehen, nicht abzuleiten sein. Im Art. 7 sei nämlich das Recht der Ernennung, der Verleihung von Amtstiteln und das Recht der Begnadigung und Abolition dem Präsidenten überwiesen. Das seien die wichtigsten, <pb facs="krp-0052_r-0004"/>seinerzeit auf den Staatsrat übergegangenen Vorrechte des Landesfürsten. Da auch die beiden obgenannten Rechte aus dem obersten Gnadenrechte fließen und das Recht der Gnadenversorgung gewissermaßen ein Gegenstück des Ernennungsrechtes sei, werde anzunehmen sein, dass die Aufzählung im Art. 7 keine erschöpfende, sondern nur eine beispielsweise sei. Man werde daher in analoger Anwendung dieser Gesetzesstelle zu dem Schlusse kommen, dass der Präsident der Nationalversammlung wie zur Ausübung sonstiger Gnadenrechte auch zur Erteilung der Legitimation und zur Bewilligung von Gnadenversorgungen berufen sei.</p>
+                  <p>Der Kabinettsrat schließt sich dieser Auffassung mit dem Beifügen an, dass hierüber dem Präsidenten der Nationalversammlung Bericht zu erstatten sein werde.</p>
+               </div>
+               <div type="top" xml:id="krp-0052_top02">
+                  <head>
+                     <label>
+                        <num n="2">2.</num>
+                        <seg>Erstreckung der Frist für den Banknotenumtausch. Gesetzentwurf, betreffend den Banknotenumlauf in Deutschösterreich und die Ordnung damit im Zusammenhang stehender Rechtsverhältnisse.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Schumpeter</hi> führt einleitend aus, dass er die von der früheren Regierung ergriffenen währungspolitischen Maßnahmen nicht für zweckentsprechend halte und sich daher mit ihnen nicht iden<pb facs="krp-0052_r-0005"/>tifizieren könne. Als pflichtgebundener Nachfolger seines Amtsvorgängers sei er jedoch selbstverständlich bereit, die eingeleiteten Aktionen weiterzuführen, wenn der Kabinettsrat nach wie vor an dem Standpunkt festhalte, dass die deutschösterreichisch gestempelten Noten allein Zahlkraft haben sollen.</p>
+                  <p>Bei der vom <hi rend="#letterspaced">Vorsitzenden</hi> diesfalls vorgenommenen Abstimmung hält der Kabinettsrat an den einschlägigen Beschlüssen des früheren Kabinettes fest.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Schumpeter</hi> weist nunmehr darauf hin, dass die Frist für den Banknotenumtausch werde verlängert werden müssen, weil in vielen Gegenden die Umtauschaktion zu spät eingesetzt habe. Das Staatsamt für Finanzen nehme zu diesem Zwecke die Erlassung einer Kundmachung in Aussicht, in welcher die Frist für die Einreichung der Noten der Oesterreichisch-ungarischen Bank zum Umtausch gegen deutschösterreichisch gestempelte bis 29. März 1919 erstreckt wird. Nach Ablauf dieser Frist werde der Umtausch von nicht gestempelten gegen deutsch<pb facs="krp-0052_r-0006"/>österreichisch gestempelte Banknoten über Ansuchen nur in besonders rücksichtswürdigen Ausnahmsfällen bewilligt werden können. Das Staatsamt für Finanzen sehe weitere vor, einem Gesetzentwurf, betreffend den Banknotenumlauf in Deutschösterreich und die Ordnung damit im Zusammenhang stehender Rechtsverhältnisse, in der Nationalversammlung einzubringen.</p>
+                  <p>Der sprechende Staatssekretär erläutert die Einzelheiten der bezüglichen Gesetzesvorlage. Im Zuge der sich hierüber entwickelnden Debatte, an welcher sich der <hi rend="#letterspaced">Vorsitzende</hi>, Vizekanzler <hi rend="#letterspaced">Fink</hi>, Staatssekretär Dr. <hi rend="#letterspaced">Bauer</hi> und Ministerialrat Dr. von <hi rend="#letterspaced">Thaa</hi> beteiligten, gelangt auch die Frage der Auszahlung des Aprilcoupons zur Erörterung.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Schumpeter</hi> erklärt, dass die Finanzverwaltung vorbehaltlich der Zustimmung des Kabinettsrates diesfalls nach folgenden Grundsätzen vorzugehen beabsichtige:</p>
+                  <list>
+                     <item n="1"><label>1.)</label> Volle Einlösung des Aprilcoupons;</item>
+                     <item n="2"><label>2.)</label> dieselbe hätte zu Lasten der Liquidationsmasse zu erfolgen;</item>
+                  </list>
+                  <p><pb facs="krp-0052_r-0007"/></p>
+                  <list>
+                     <item n="1"><label>3.)</label> wer sich als deutschösterreichischer Staatsbürger bekennt, erhält den Coupon in deutschösterreichischer Note honoriert, während</item>
+                     <item n="2"><label>4.)</label> alle übrigen Präsentanten ungestempelte Noten erhalten.</item>
+                     <item n="3"><label>5.)</label> In rücksichtswürdigen Fällen würde über spezielles Ansuchen auch im Falle des Punktes 4 eine Einlösung in deutschösterreichischen Noten erfolgen können.</item>
+                  </list>
+                  <p>Zu der in diesem Zusammenhange vom Staatssekretär Dr. <hi rend="#letterspaced">Bauer</hi> aufgeworfenen Frage der Domizilierung der in Deutschösterreich vorhandenen Kriegsanleihe stellt Staatssekretär Dr. <hi rend="#letterspaced">Schumpeter</hi> die Vorlage eines diesbezüglichen Gesetzentwurfes in Aussicht. Bis dahin werde man sich in dieser Beziehung ebenso wie rücksichtlich der Kassenscheine der Oesterreichisch-ungarischen Bank mit einem Affidavit begnügen müssen.</p>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> ersucht um Klarstellung, ob es möglich sein werde, das in Verhandlung stehende Gesetz zu erlassen, ohne damit gleichzeitig auch den internationalen Zahlungsverkehr im Detail entsprechend zu regeln.</p>
+                  <p>Ministerialrat Dr. von <hi rend="#letterspaced">Thaa</hi> <pb facs="krp-0052_r-0008"/>erklärt hiezu, dass in eingehenden Beratungen mit allen in Betracht kommenden maßgebenden finanziellen Faktoren davon dringendst abgeraten worden sei; es hätte vielmehr bei der Anwendung der allgemein geltenden Rechtsnormen sein Bewenden zu haben.</p>
+                  <p>Bei der hierauf vorgenommenen Abstimmung genehmigt der Kabinettsrat die Erlassung der Kundmachung des Staatsamtes für Finanzen, betreffend die Erstreckung der Frist für den Banknotenumtausch, weiters den vom Staatssekretär für Finanzen in Vorschlag gebrachten Vorgang bezüglich der Einlösung des Aprilcoupons, sowie endlich den materiellen Inhalt des Gesetzentwurfes, betreffend den Banknotenumlauf in Deutschösterreich und die Ordnung damit im Zusammenhang stehender Rechtsverhältnisse. Was die formale Behandlung des letzteren Gesetzentwurfes anbelangt, stellte der Kabinettsrat fest, dass die Nationalversammlung wahrscheinlich erst am Ende der nächsten Woche werde zusammentreten können, weshalb eine Verabschiedung dieses Gesetzentwurfes auf parlamentarischem Wege zeitgerecht nicht mehr möglich sei, da die Bevölkerung sonst Gefahr liefe, die am letzten Tage der verlängerten Frist <pb facs="krp-0052_r-0009"/>noch zirkulierenden ungestempelten Noten nicht mehr in deutschösterreichische Noten umtauschen zu können. Die Verfügungen seien daher auf Grund des kriegswirtschaftlichen Ermächtigungsgesetzes einige Tage vor dem 29. März, spätestens am 26. März, hinauszugeben. Dem Hauptausschusse werde jedoch bei dessen nächstem Zusammentreten die Vorlage zu unterbreiten sein.</p>
+               </div>
+               <div type="top" xml:id="krp-0052_top03">
+                  <head>
+                     <label>
+                        <num n="3">3.</num>
+                        <seg>Ansuchen der Zwangspensionisten aller Kategorien um regierungsseitige Verfügungen behufs Milderung der ihnen durch die vorzeitige Pensionierung erwachsenen Schädigung.</seg>
+                     </label>
+                  </head>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> teilt mit, dass ihm von Vertretern der für den Staat Deutschösterreich angelobten Zwangspensionisten aller Kategorien das dem Protokolle abschriftlich beiliegende Memorandum, betreffend die Sicherung ihrer materiellen Lage, überreicht worden sei. Er stelle den Antrag, dass sich die mit der Behandlung von Staatsbedienstetenangelegenheiten betraute zwischenstaatsamtliche Geschäftsstelle mit dieser Frage umgehend zu befassen und dem Kabinettsrate binnen längstens acht Tagen antragstellend zu berichten habe. Der Geschäftsstelle solle es unbenommen bleiben, der Beratung über diesen Gegenstand im Bedarfsfalle auch noch Funktionäre der in ihr gegenwärtig <pb facs="krp-0052_r-0010"/>nicht vertretenen Ressorts beizuziehen.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Deutsch</hi> ergänzt diesen Vorschlag durch den Antrag, im Zusammenhange damit auch die Frage der Gleichstellung der Offiziere mit den Zivilstaatsbediensteten und zwar rücksichtlich des Ausmaßes ihrer Ruhegenüsse der Beratung durch die Geschäftsstelle unterziehen zu lassen.</p>
+                  <p>Der Kabinettsrat erhebt die beiden Anträge mit der Maßgabe zum Beschlusse, dass die Geschäftsstelle dem Kabinettsrate in seiner Sitzung am 28. März d. J. hierüber zu berichten haben werde.</p>
+               </div>
+               <div type="top" xml:id="krp-0052_top04">
+                  <head>
+                     <label>
+                        <num n="4">4.</num>
+                        <seg>Gesetzentwurf, betreffend die Inanspruchnahme von Grundstücken zur Gewinnung von Torf.</seg>
+                     </label>
+                  </head>
+                  <p>Namens des abwesenden Staatssekretärs Ing. Zerdik erläutert Ministerialrat <hi rend="#letterspaced">Okorn</hi> den Entwurf eines Gesetzes, betreffend die Inanspruchnahme von Grundstücken zur Gewinnung von Torf, und erbittet die Ermächtigung des Kabinettsrates zur Einbringung dieses Gesetzentwurfes in der Nationalversammlung.</p>
+                  <p>Der Kabinettsrat erteilt die erbetene Ermächtigung.</p>
+                  <p><pb facs="krp-0052_r-0011"/></p>
+               </div>
+               <div type="top" xml:id="krp-0052_top05">
+                  <head>
+                     <label>
+                        <num n="5">5.</num>
+                        <seg>Niederösterreichische Landtagswahlordnung.</seg>
+                     </label>
+                  </head>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> teilt mit, dass die Niederösterreichische Landesversammlung am gestrigen Tage die Landtagswahlordnung für Niederösterreich beschlossen habe. Der Gesetzentwurf halte sich im Wesentlichen an das von der Staatskanzlei den einzelnen Landesregierungen bekanntgegebene Muster. Die von der Niederösterreichischen Landesversammlung beschlossenen geringen Abänderungen seien nicht präjudiziell. Der Auffassung des sprechenden Staatskanzlers nach bestehe kein Bedenken dagegen, dass von der verfassungsgesetzlichen Fakultät Vorstellungen gegen das Gesetz zu erheben, vorliegenden Falles kein Gebrauch gemacht werde. Der Staatskanzler als Staatssekretär für Inneres und Unterricht würde daher vorbehaltlich der Zustimmung des Kabinettsrates die Gegenzeichnung dieses Gesetzes vollziehen.</p>
+                  <p>Der Kabinettsrat stimmt diesen Ausführungen zu.</p>
+               </div>
+               <div type="top" xml:id="krp-0052_top06">
+                  <head>
+                     <label>
+                        <num n="6">6.</num>
+                        <seg>Gesetz über die Errichtung von Einigungsämtern für Streitigkeiten aus bestimmten Lieferungsverträgen.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. von <hi rend="#letterspaced">Bratusch</hi> erbittet und erhält die Ermächtigung des Kabinettsrates zur Einbringung eines Gesetzentwurfes in <pb facs="krp-0052_r-0012"/>der Nationalversammlung, betreffend die Errichtung von Einigungsämtern für Streitigkeiten aus bestimmten Lieferungsverträgen.</p>
+               </div>
+               <div type="top" xml:id="krp-0052_top07">
+                  <head>
+                     <label>
+                        <num n="7">7.</num>
+                        <seg>Vollzugsanweisung, betreffend die Vergebung staatlicher Lieferungen und Arbeiten.</seg>
+                     </label>
+                  </head>
+                  <p>Unterstaatssekretär Dr. <hi rend="#letterspaced">Ellenbogen</hi> erbittet namens des Staatssekretärs für Handel und Gewerbe, Industrie und Bauten die Ermächtigung des Kabinettsrates zur Erlassung einer Vollzugsanweisung der Staatsregierung über die Abänderung der Verordnung des Gesamtministeriums vom 3. April 1909, RGBl. Nr. 61, betreffend die Vergebung staatlicher Lieferungen und Arbeiten.</p>
+                  <p>Der Kabinettsrat erteilt die erbetene Ermächtigung.</p>
+               </div>
+               <div type="top" xml:id="krp-0052_top08">
+                  <head>
+                     <label>
+                        <num n="8">8.</num>
+                        <seg>Gesetzentwurf über die Regelung der Arbeit in den Betrieben zur Erzeugung von Backwaren.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Hanusch</hi> erbittet und erhält die Ermächtigung, in der Nationalversammlung den Entwurf eines Gesetzes über die Regelung der Arbeit in den Betrieben zur Erzeugung von Backwaren einbringen zu dürfen.</p>
+               </div>
+               <div type="top" xml:id="krp-0052_top09">
+                  <head>
+                     <label>
+                        <num n="9">9.</num>
+                        <seg>Gesetzentwurf über die Abschaffung der nicht im Völkerrecht begründeten Exterritorialität.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. von <hi rend="#letterspaced">Bratusch</hi> erbittet und erhält die <pb facs="krp-0052_r-0013"/>Ermächtigung des Kabinettsrates in der Nationalversammlung einen Gesetzentwurf über die Abschaffung der nicht im Völkerrechte begründeten Exterritorialität einbringen zu dürfen.</p>
+               </div>
+               <div type="top" xml:id="krp-0052_top10">
+                  <head>
+                     <label>
+                        <num n="10">10.</num>
+                        <seg>Vollzugsanweisung, betreffend die Übertragung von Rechten zur Ausnützung von Wasserkräften.</seg>
+                     </label>
+                  </head>
+                  <p>Namens des abwesenden Staatssekretärs Ing. <hi rend="#letterspaced">Zerdik</hi> teilt der Vorsitzende mit, dass das Stift Fiecht die Absicht habe, den ihm gehörigen Achensee zu verkaufen. Da die wasserwirtschaftliche Verwertung dieses Sees einen der wichtigsten Bestandteile des Projektes über die Ausnützung der alpenländischen Wasserkräfte bilde, sei es im eminenten volkswirtschaftlichen Interesse gelegen, dem Staate eine Einflussnahme auf derartige Transaktionen zu sichern. Demgemäß beabsichtige das Staatsamt für Handel und Gewerbe, Industrie und Bauten eine Vollzugsanweisung, betreffend die Übertragung von Rechten zur Ausnützung von Wasserkräften, zu erlassen, wodurch die entsprechenden Kautelen in dem erwähnten Sinne geschaffen würden.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Bauer</hi> erhebt Bedenken dagegen, dass diese <pb facs="krp-0052_r-0014"/>Vollzugsanweisung aufgrund des Kriegswirtschaftlichen Ermächtigungsgesetzes erlassen werde, da diese Angelegenheit mit dem Kriegsnotstande nicht in einem ursächlichen Zusammenhange stehe.</p>
+                  <p>Demgegenüber weist der Vorsitzende darauf hin, dass die Ausnützung der Wasserkräfte einen Hauptprogrammpunkt der Politik unserer Übergangswirtschaft bilde, weshalb er ungeachtet der gewiss sehr beachtenswerten Erwägungen des Vorredners im vorliegenden Falle gleichwohl keine Überschreitung der der Regierung im Gesetze vom 25. Juli 1917, RGBl. Nr. 307, erteilten Ermächtigung erblicken könne.</p>
+                  <p>Der Kabinettsrat schließt sich dieser Auffassung an und erteilt die erbetene Ermächtigung zur Erlassung der Vollzugsanweisung mit dem Beifügen, dass sich das Staatsamt für Handel und Gewerbe, Industrie und Bauten wegen endgiltiger Redigierung der Fassung dieser Vollzugsanweisung noch mit dem Staatsamte für Justiz in Verbindung zu setzen haben werde.</p>
+                  <p/>
+               </div>
+            </div>
+            <div type="stenogramme">
+               <div n="1">
+                  <head>[KBR 52, 21. März 1919, Stenogramm]</head>
+                  <p><pb facs="krp-0052_s01-0001"/>52 vom 21. /3. </p>
+                  <p>[<hi rend="#i">Rechtes Obereck:</hi>] Zugezogen: Beck und Thaa.</p>
+                  <p>Renner: Begrüße in unserer Mitte den Vizekanzler.</p>
+                  <p>1. [Renner]: Auslegung des Gesetzes über die Staatsregierung und die Volksvertretung. Bei der Abgrenzung der Rechte des Präsidenten und des Kabinetts [sind] Zweifel aufgetaucht [betreffend] </p>
+                  <p>Legitimation und Handhabe. </p>
+                  <p>In diesem Fall trifft Präsident die letztwillige Verfügung. Nur ausgeübt werden könne aufgrund des vorherigen Antrages des Kabinetts oder Ressorts. </p>
+                  <p>Präsident ist zu verständigen.</p>
+                  <p>2. Finanzminister: Es handelt sich um zwei dringende Maßregeln. Unsere Kredite erschöpft. <hi rend="#s">Wir brauchen eine Gesetz</hi> -</p>
+                  <p>Das Gesetz [betreffend] den Banknotenumlauf: Das Gesetz muss heraus mit Ablauf der Abstempelungsfrist. [Diese] wird verlängert werden müssen. Über den 1. /4. kann sie nicht verlängert werden (wenn Südtirol </p>
+                  <p>zurück kommt).</p>
+                  <p><hi rend="#s">Wir haben die Wahl, einen ganz überwiegenden Teil der Banknoten abzustempeln</hi> -</p>
+                  <p>Wenn das Kabinett auf dem Standpunkt steht, dass die gestempelten deutsch-österreichischen Noten [<hi rend="#i">Einschub:</hi>] allein [<hi rend="#i">Einschub Ende</hi>] Zahlungskraft haben sollten. Angenommen.</p>
+                  <p>Renner: Uns ist jetzt keine andere Wahl gegeben.</p>
+                  <p>Fink: Ob man schon einen Plan hat entgegenzuarbeiten. Man hat abgestempelt ohne ?aufzuschreien und jetzt ?schreit man. Als interner Behelf, aber keine Konsequenz zu ziehen.</p>
+                  <p>Finanzminister: Kommentiert das Gesetz.</p>
+                  <p>Bauer: Gesteht, dass [ihm] einige Punkte ganz unklar geblieben [sind]. Wir werden den Coupon irgendwie bezahlen. An Leute, die hier ihren Wohnsitz in Deutsch-Österreich ... Staatsbürgerschaft notwendig. </p>
+                  <p>Andere Nicht-Deutsch-Österreicher werden den Coupon – [<hi rend="#i">Einschub:</hi>] soweit überhaupt [<hi rend="#i">Einschub Ende</hi>] - in ungestempelten Noten -. Ich habe immer Standpunkt vertreten, dass Abstempelung in Zusammenhang gebracht werden müsste mit der Domi-</p>
+                  <p>zilierung der in Deutsch-Österreich vorhanden Kriegsanleihe.</p>
+                  <p>Finanzminister: Stimmt zu, eine solche Maßregel ist geplant. <hi rend="#s">Domizilierung</hi> -</p>
+                  <p>Bauer: Was geschieht mit den Giro-Konti der österreichisch-ungarischen Bank? Ob in diesem Gesetz auch die ganze verwickelte Rechtsfrage erörtert wird? Werden nach diesem Gesetz staatliche Kassen </p>
+                  <p>ungestempelte Noten noch annehmen (nein).</p>
+                  <p>Finanzminister: Sowie wir in der Lage sein werden, die Unterschiede zu machen, so werden [wir] nach der Domizilierung auch die Kupons der deutsch-österreichischen Anleihe einlösen in deutsch-österreichischen Noten. </p>
+                  <p>Die ungestempelten Banknoten werden eine sehr schwierige Position haben.</p>
+                  <p>Ich beabsichtige, den April-Coupon, für den noch aus der Liquidationsmasse [Mittel] vorhanden sind: 1) volle Einlösung; 2) zu Lasten der Liquidationsmasse; </p>
+                  <p>3) [<hi rend="#i">Einschub:</hi>] wer sich als deutsch-österreichischer Staatsbürger bekennt [<hi rend="#i">Einschub Ende</hi>], der erhält deutsch-österreichische Noten, die anderen erhalten ungestempelte Noten; 4) die übrigen ungestempelte Noten; </p>
+                  <p>5) bittet um Ermächtigung, in rücksichtswürdigen Fällen auch im Punkt 4) deutsch-österreichische Noten zu geben über Ansuchen.</p>
+                  <p><hi rend="#s">Bauer:</hi> -</p>
+                  <p>Thaa: Ein Affidavit auch für den April-Coupon möglich wäre. Es würde genügen, Name und Adresse der Kasse gegenüber und </p>
+                  <p>dabei die Erklärung abzugeben, dass der Präsentant der Coupons zugleich Eigentümer der betreffenden Stücke ist, hier seinen Wohnsitz hat und allen Voraussetzungen </p>
+                  <p>entspricht, welche gefordert werden und dass er nicht ein suj[et] mixte ist.</p>
+                  <p>Die Nostrifizierung der Anleihe selbst konnte nicht geschafft werden in diesem Zeitraum, weil Steinwender der Ansicht war, dass für die Kriegsanleihen </p>
+                  <p>separat eine Staatsangehörigkeit der Kriegsanleihen durchzuführen [wäre], um sich nicht dabei für die Zukunft zu präjudizieren.</p>
+                  <p><pb facs="krp-0052_s01-0002"/>Bauer: Die Nostrifizierung für die Vermögensabgabe.</p>
+                  <p>Renner: Möchte die Frage des Coupons jetzt nicht zur Abstimmung bringen, [sondern] zunächst die ursprünglichen Ausführungen Bauers berühren.</p>
+                  <p>Finanzminister: Konten der österreichisch-ungarischen Bank (ist ausreichend).</p>
+                  <p>Problem der Oblig[ationen].</p>
+                  <p>Renner: Hält es für zweckmäßig, dass was das Publikum für rechtens zu halten hat, ihm explizite dargestellt würde.</p>
+                  <p>Thaa: Schumpeter hat den §4 bereits zur Verlesung gebracht.</p>
+                  <p>Bauer: Frage, was mit den Kassenscheinen ist?</p>
+                  <p>Schumpeter: Wir werden die Kassenscheine nostrifizieren müssen. Solange nicht die physische Möglichkeit besteht, bleibt nur das Surrogat der früher besprochenen Regulierung.</p>
+                  <p>Renner: Bittet klarzustellen: ist es möglich, dass wir dieses Gesetz allein herausgeben ohne zugleich und in einem Akt auch für die – [<hi rend="#i">Einschub:</hi>] wenn auch unvollkommene [<hi rend="#i">Einschub Ende</hi>] - Domizilierung unserer Kriegs-</p>
+                  <p>anleihe Vorsorge [zu treffen] und ist es möglich, dass wir das Gesetz herausgeben ohne zugleich den internationalen Zahlungsverkehr besonders [zu] regeln?</p>
+                  <p>Thaa: Soweit ein Zahlungsverkehr zwischen Wien und Prag in Frage kommt: wenn es sich um Geschäfte handelt, welche sich abwickeln nach der Währungsänderung. </p>
+                  <p>Ob nicht bezüglich der alten Verbindlichkeit abgesonderte Regelung zu treffen wäre: ungestempelte Noten. Nach sehr eingehenden Erwägungen wurde davon dringendst abgeraten, </p>
+                  <p>wäre nicht in unserem Interesse gelegen.</p>
+                  <p>Schumpeter: Dadurch, dass wir das Zentrum des Verkehrs waren, [stehen] wir vor einer viel schwierigeren Situation wie die Tschechen. </p>
+                  <p>Sollte Bauer bestimmte Vorschläge machen wollen, könnten wir mit einem Nachtrag kommen. </p>
+                  <p>Damit aber kein absolutes Chaos entsteht im Wirtschaftsleben bitte ich um Annahme dieses Entwurfes.</p>
+                  <p>Renner: Wir müssen es der Verantwortung der Finanzverwaltung überlassen, das Richtige getroffen zu haben. </p>
+                  <p>Aber: was wird bis zum 1. April versucht werden?</p>
+                  <p>Fink: Zahlung zwischen Wien und Prag.</p>
+                  <p>Renner: In Deutsch-Österreich in deutsch-österreichischen Noten. </p>
+                  <p>Einstweilen [<hi rend="#i">Einschub:</hi>] aber, jetzt [<hi rend="#i">Einschub Ende</hi>] tritt hier Wohnsitz; das Prinzip bei der Nostrifizierung wird Staatsbürgerschaft sein müssen. </p>
+                  <p>Wer in Deutsch-Österreich wohnt exkl[usive] der besetzten Gebiete, wird den Coupon in deutsch-österreichischen Noten ausgezahlt erhalten. </p>
+                  <p>Bei den Banken wird bezüglich des Eigenbesitzes nach einem gewissen Schlüssel vorgenommen werden müssen. </p>
+                  <p><hi rend="#s">Jetzt aber wird die</hi> –</p>
+                  <p>Bittet, die stärkste Aufmerksamkeit darauf zu richten, dass wir das Interesse haben, dass Wien das Zahlungszentrum bleibt, dass aber nicht dabei das staatliche Interesse </p>
+                  <p>zurückgestellt wird hinter dem Bankeninteresse.</p>
+                  <p>Staatsamt für Finanzen soll ermächtigt sein, in besonders rücksichtswürdigen Fällen über Ansuchen Ausnahmen zu machen.</p>
+                  <p>Bauer: Mein Staatsamt bemüht sich seit vielen Wochen, auf die Entente einzuwirken, dass sie eingreifen muss. Erfolg Schüllers ist, dass die Entente einige Herren herschickt. </p>
+                  <p>Zu viel darf man sich aber davon nicht versprechen.</p>
+                  <p>Renner: Fünf Klauseln: Vorgang in Bezug auf die Auszahlung des April-Coupons genehmigt.</p>
+                  <p>Materielle Frage: Angenommen (inhaltlich).</p>
+                  <p>Formale Seite: Nationalversammlung wird wahrscheinlich erst Ende der nächsten Woche zusammentreten können. Die Frist läuft Montag ab; das Gesetz müsste </p>
+                  <p>also draußen sein; aufgrund des Ermächtigungsgesetzes hat also die Vorlage hinauszugehen, hat dann dem Hauptausschuss zuzukommen </p>
+                  <p>und Frage offen, ob [man es] nicht trotzdem als Gesetzesvorlage einbringen [soll].</p>
+                  <p><pb facs="krp-0052_s01-0003"/>Schumpeter: Bittet dann noch um eine Weisung wegen Fristverlängerung.</p>
+                  <p>Thaa: Schumpeter hat ganz kurze Verlängerung der Frist in Aussicht genommen. Unentbehrlich aus zwei Gründen: 1) Nach Telegramm der Landesregierungen ist die Abstempelungs-</p>
+                  <p>aktion noch nicht so weit gediehen, dass mit dem Termin ausgekommen würde. 2.) Wenn dieses Gesetz erscheint, würde am Tag nach Schluss der Abstempelungsaktion – </p>
+                  <p>würde das zur Folge haben, dass Leute, die am letzten Tag der Frist alte Noten noch entgegennehmen mussten, nicht mehr in der Lage wären, sie in Umtausch zu nehmen. </p>
+                  <p>Wir würden also 29. März vorschlagen.</p>
+                  <p>Stöckler: Eine Verlängerung ist unbedingt nötig; die Umtauschstellen sind mit viel zu wenig abgestempelten Noten versehen.</p>
+                  <p>Renner: Noch Frage: soll bei diesem verspäteten Termin eine Gebühr abgeführt werden? Nein.</p>
+                  <p>Die Verlängerung der Abstempelungsfrist bis 29. /3. genehmigt.</p>
+                  <p><hi rend="#s">Die Vollzugsanweisung aufgrund des Ermächtigungsgesetzes würde erscheinen dann wenn der Termin so erstellt wird</hi> -.</p>
+                  <p>Bauer: Die Vollzugsanweisung sogleich zu erlassen, dass sie am 29. /3. in Kraft tritt: es soll das möglichst bekannt sein.</p>
+                  <p>Renner: Kundmachung der Vollzugsanweisung aufgrund des Ermächtigungsgesetzes hätte bis längstens Mittwoch (26. /3.) zu erfolgen. </p>
+                  <p>Bei der Verlängerungsmaßnahme ist mit aller Deutlichkeit auszusprechen, dass eine weitere Verlängerung ausgeschlossen ist. </p>
+                  <p>Der Bevölkerung ist zu sagen -.</p>
+                  <p>Kredite: Gesetzentwurf Kredit: Montag Kabinettsrat.</p>
+                  <p>1. Deutsch: Sein Ressort hat an dieser Regelung das größte Interesse. </p>
+                  <p>Die Pension wie sie bisher war, soll für Offiziere erhöht werden. Die Offiziere streben eine Gleichstellung mit den Beamten an. </p>
+                  <p>Also Offiziere müssen einbezogen werden.</p>
+                  <p>Antrag: Die Offizierspension ist mit und einheitlich mitzubehandeln mit den Staatsbeamten.</p>
+                  <p>Beck: Bittet, nicht schon einen meritorischen Beschluss zu fassen. Die Frage soll so rasch wie möglich überprüft werden und dem Kabinettsrat dann Bericht erstatten.</p>
+                  <p>Renner: Der Kommission nur die Weisung geben, nur die Gleichstellung der Offiziere in Erwägung zu ziehen. Bis nächsten Freitag 28. /3.</p>
+                  <p>2. Torf (Ministerialrat Okorn)</p>
+                  <p>Gesellschaftsentwurf: müsste Gegenstand besonderer Beratungen bilden </p>
+                  <p>(vorher Sozialisierung hören).</p>
+                  <p>Gegen Einbringung des Torfgesetzes kein Widerspruch.</p>
+                  <p>[<hi rend="#i">Rechter Rand:</hi>] Mittwoch Stöckler.</p>
+                  <p>1.) Salzburger Regulierungsgesetz.</p>
+                  <p>2.) Aufhebung und Ablösung der Jagdrechte auf fremdem Grund- und Boden.</p>
+                  <p>3.) Gesetz betreffend Ablösung wie Neuregulierung <hi rend="#s">der Forst- und Weiderechte </hi></p>
+                  <p><hi rend="#s">und Sicherung der Forst</hi> - und Sicherung der regulierten Holz-, </p>
+                  <p>Forstproduktenbezugs- und Weiderechte.</p>
+                  <p><pb facs="krp-0052_s01-0004"/>Renner: [<hi rend="#i">Einschub:</hi>]Wiener [<hi rend="#i">Einschub Ende</hi>] niederösterreichischer Landtag hat gestern Landeswahlordnung beschlossen; wenn darnach rechtzeitig gewählt werden soll, muss das Gesetz morgen heraus-</p>
+                  <p>kommen; der Gesetzentwurf hält sich im Wesentlichen an das von der Staatskanzlei hinausgegebene Muster. Die wenigen Abänderungen präjudizieren </p>
+                  <p>uns nicht. Von der Staatskanzlei keine Bedenken dagegensprechen, dass die verfassungsgesetzliche Fakultät, Vorstellungen zu erheben </p>
+                  <p>gegen das Landesgesetz, [nicht] ausgeübt wird. Die Staatsregierung hat also keinen Anlass dagegen Vorstellung zu erheben. Inneres und Unterricht werden die Gegenzeichnung </p>
+                  <p>zu vollziehen [haben].</p>
+                  <p>Kein Einspruch.</p>
+                  <p><hi rend="#s">Stöckler</hi>: Renner: Von verschiedenen Staatssekretären ist der Wunsch geäußert worden, dass die nächste Personalsitzung Donnerstag stattfindet. Also alle Anträge an Staatskanzlei </p>
+                  <p>Anfang kommende Woche. Donnerstag 3h Nachmittag. Dafür entfällt Samstag-Sitzung.</p>
+                  <p>Einigungsämter. Bratusch: Lieferungsverträge. </p>
+                  <p>Gesetz entspricht dem Wunsch aller Interessenten. Bespricht die dagegen vorgebrachten Einwendungen.</p>
+                  <p>Renner: Frage der oblig[atorischen] Einigungsämter. Die Sache wird im Justizausschuss eingehend beraten werden müssen.</p>
+                  <p>Vorlage genehmigt.</p>
+                  <p>[<hi rend="#i">Rechter Rand:</hi>] Erbittet und erhält die Ermächtigung des Kabinettsrates </p>
+                  <p>zur Einbringung des Gesetzentwurfes betreffend ....</p>
+                  <p>Staatliche Lieferungen und Arbeiten.</p>
+                  <p>Ellenbogen: -</p>
+                  <p>Renner: In wechselseitigen Vereinbarungen wären die Industrien hüben und drüben zu schützen sein.</p>
+                  <p>Anfrage Ellenbogen: </p>
+                  <p>Wewa wünscht diejenigen Arbeiten, die schon jetzt möglich sind, sofort in Angriff zu nehmen. Das [wäre] möglich unter dem Titel der einmal schon </p>
+                  <p>vom Staatsrat bewilligten Notstandsarbeiten. Ob nicht möglich, eine Minderung der damals bewilligten –</p>
+                  <p>Gegenstand Montag Kabinett. Übertragung von Notstandskrediten auf die Elektrifizierung der Eisenbahnen.</p>
+                  <p>Backwaren. Hanusch: </p>
+                  <p>Renner: Gegenstand wird gewiss sehr breite Behandlung im sozialpolitischen Ausschuss des Hauses finden. Wir können die Ermächtigung zur Vorlage im Haus ohne weiters erteilen.</p>
+                  <p><pb facs="krp-0052_s01-0005"/>Exterrit[orialität] (Bratusch).</p>
+                  <p>[Bratusch]: Frage ob das Aberkennen der Exterritorialität im Gesetzgebungsweg zu geschehen hat oder nicht. </p>
+                  <p>Kaiserliche Entschließungen aus der vor-konstitutionellen Zeit sind als Gesetz anzuerkennen. In diesem Fall ist ein Gesetz erforderlich. </p>
+                  <p>Die anderen sind aber auch im RGBl. publiziert, daher ebenso durch Gesetz. </p>
+                  <p>Die Verfügung muss auf festen Füßen stehen.</p>
+                  <p>Bauer: Lichtenstein-Frage er ist souveräner Staat. Gegen Cumb. sollte man entsprechende Überwachungen einleiten.</p>
+                  <p>Vorlage genehmigt.</p>
+                  <p>Ausnützung von Wasserkräften.</p>
+                  <p>Renner: Achensee zu verkaufen die Absicht hat Stift Ficht. </p>
+                  <p>Das Projekt ist eines der ergiebigsten unserer Werke. </p>
+                  <p>Bittet um Genehmigung der Vollzugsanweisung.</p>
+                  <p>Bauer: Der Entwurf ist ein typisches Beispiel für den Missbrauch des Ermächtigungsgesetzes. Das darf kein §14 werden. Bedauert, dass noch die Gesetzgebung sich </p>
+                  <p>Kompetenzen angemaßt wird mit einer Berufung auf erhaltene Ermächtigung.</p>
+                  <p>Will auch nicht aus diesem Anlass gerade Vorstellungen machen, bittet aber, dass man nächstens das gesetzlich macht, aber nicht sich auf ein Gesetz </p>
+                  <p>beruft, das für ganz andere Zwecke da ist.</p>
+                  <p>Renner: Die Wasserkräfte sind das Wichtigste unserer Wirtschaftspolitik.</p>
+                  <p>Paul: -.</p>
+                  <p>Bratusch: Stilisierungsvorschlag.</p>
+                  <p>Renner: Antrag: Staatsamt für Handel [wird] gebeten, einvernehmlich mit dem Staatsamt für Justiz zu redigieren.</p>
+                  <p>Ellenbogen: Wenn jemand schon die Wasserkräfte hat, kann ihm das Recht nicht genommen werden (so höre ich von einem Fachmann aus dem Staatsamt für öffentliche Arbeiten).</p>
+                  <p>Dann Vollzugsanweisung erlassen.</p>
+                  <p>6h Schluss.</p>
+               </div>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

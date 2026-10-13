@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href='http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:acdh="https://vocabs.acdh.oeaw.ac.at/schema#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xml:lang="de">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="a" type="main" n="0044">Kabinettsprotokoll Nr. 44 vom 22. Februar 1919</title>
+            <title level="m" type="main" n="01">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <title level="m" type="sub" n="">Renner I (31. Oktober 1918 – 15. März 1919)</title>
+            <meeting>
+               <placeName key="https://d-nb.info/gnd/4066009-6">Wien</placeName>
+               <orgName key="https://d-nb.info/gnd/5162749-8">Kabinettsrat</orgName>
+               <date when-iso="1919-02-22"/>
+            </meeting>
+            <editor>
+               <persName key="https://d-nb.info/gnd/122481836"
+                         role="hasCreator"
+                         xml:id="hwohnout">
+                  <forename>Helmut</forename>
+                  <surname>Wohnout</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</affiliation>
+               <idno type="ORCID">0000-0002-3864-9839</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/120789825"
+                         role="hasCreator"
+                         xml:id="tolechowski">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0003-3291-6876</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/131679384"
+                         role="hasCreator"
+                         xml:id="rlein">
+                  <forename>Richard</forename>
+                  <surname>Lein</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0002-7502-0503</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="aholzer">
+                  <forename>Anna</forename>
+                  <surname>Holzer</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0005-3560-3500</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="dsoelkner">
+                  <forename>Dominik</forename>
+                  <surname>Sölkner</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-9895-7212</idno>
+            </editor>
+            <editor>
+               <persName role="hasContributor" xml:id="ischotzko">
+                  <forename>Ina</forename>
+                  <surname>Schotzko</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-5210-3713</idno>
+            </editor>
+            <funder n="1">
+               <orgName key="https://d-nb.info/gnd/2054142-9" role="hasFunder">Österreichischer Wissenschaftsfonds FWF</orgName>
+               <idno type="project">PAT1495024</idno>
+               <title type="project">Die Protokolle des österreichischen Kabinettsrates 1919–1920</title>
+            </funder>
+            <respStmt>
+               <resp>Projektverantwortung</resp>
+               <orgName key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Projektleitung</resp>
+               <persName key="https://d-nb.info/gnd/120789825" role="hasPrincipalInvestigator">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+                  <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+                  <idno type="ORCID">0000-0003-3291-6876</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Nationaler Forschungspartner</resp>
+               <orgName key="https://d-nb.info/gnd/1123037736" role="hasEnabler">Austrian Centre for Digital Humanities</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Digitalisierung der gedruckten Quellen</resp>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>TEI-Datenmodellierung</resp>
+               <persName role="hasContributor" xml:id="tfruehwirth">
+                  <forename>Timo</forename>
+                  <surname>Frühwirth</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-3997-5193</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technische Supervision</resp>
+               <persName key="https://d-nb.info/gnd/1043833846"
+                         role="hasContributor"
+                         xml:id="pandorfer">
+                  <forename>Peter</forename>
+                  <surname>Andorfer</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-9575-9372</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technisches Consulting und Vorbereitung der Druckausgabe</resp>
+               <persName key="https://d-nb.info/gnd/13281899X"
+                         role="hasContributor"
+                         xml:id="skurz">
+                  <forename>Stephan</forename>
+                  <surname>Kurz</surname>
+                  <affiliation key="https://d-nb.info/gnd/1202798799">Institut für die Erforschung der Habsburgermonarchie und des Balkanraumes</affiliation>
+                  <idno type="ORCID">0000-0003-2546-2570</idno>
+               </persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher key="https://d-nb.info/gnd/1001454-8">Österreichische Akademie der Wissenschaften</publisher>
+            <date when="2028"/>
+            <availability status="free">
+               <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">Lizenziert unter CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/deed.de)</licence>
+            </availability>
+            <idno type="ISBN_Print"/>
+            <idno type="ISBN_Part_epub"/>
+            <idno type="ISBN_Digital"/>
+            <idno type="DOI"/>
+            <idno type="DOI_zenodo"/>
+            <idno type="ebook_ID"/>
+         </publicationStmt>
+         <seriesStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="m" type="main">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <respStmt>
+               <resp>Bearbeitung und Herausgeberschaft</resp>
+               <orgName key="https://d-nb.info/gnd/2024703-5">Universität Wien</orgName>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+         </seriesStmt>
+         <notesStmt>
+            <note>Diese TEI-XML-Datei ist Grundlage für eine Druckausgabe der Edition.</note>
+            <relatedItem>
+               <biblStruct>
+                  <monogr>
+                     <imprint>
+                        <pubPlace key="https://d-nb.info/gnd/4066009-6">Wien</pubPlace>
+                        <publisher key="https://d-nb.info/gnd/2068748-5">Verlag der Österreichischen Akademie der Wissenschaften</publisher>
+                        <date when="2029"/>
+                     </imprint>
+                     <extent/>
+                  </monogr>
+                  <note>
+              <idno/>
+              <ptr/>
+            </note>
+                  <citedRange/>
+               </biblStruct>
+            </relatedItem>
+         </notesStmt>
+         <sourceDesc>
+            <bibl>Quellbestand: AT-OeStA/AdR MRang MR 1Rep KRP Kabinettsratsprotokolle, 1918-1920 (Teilbestand)<ref target="https://www.archivinformationssystem.at/detail.aspx?id=5465">https://www.archivinformationssystem.at/detail.aspx?id=5465</ref>
+            </bibl>
+            <msDesc>
+               <msIdentifier>
+                  <institution key="https://d-nb.info/gnd/37748-X" role="hasOwner">AT-OeStA Österreichisches Staatsarchiv (Archiv (ÖStA))</institution>
+                  <repository key="https://d-nb.info/gnd/1601181-8">AT-OeStA/AdR Archiv der Republik, 1918- (Abteilung)</repository>
+                  <collection>AT-OeStA/AdR MRang MR 1Rep Ministerrat 1. Republik, 1918 - 1938 (Bestand)</collection>
+                  <idno>AT-OeStA_AdR-MRang-MR-1.-Rep.-KRP-044</idno>
+               </msIdentifier>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <abstract>
+            <p>
+          <!--to be generated-->
+        </p>
+         </abstract>
+      </profileDesc>
+      <encodingDesc>
+         <styleDefDecl scheme="css"/>
+         <tagsDecl>
+            <rendition xml:id="b" scheme="css">font-weight:bold;</rendition>
+            <rendition xml:id="su" scheme="css">vertical-align:super;font-size:.7em;</rendition>
+            <rendition xml:id="s" scheme="css">text-decoration:line-through;</rendition>
+            <rendition xml:id="u" scheme="css">text-decoration:underline;</rendition>
+            <rendition xml:id="ow" scheme="css">text-decoration:line-through;text-decoration-style:double;</rendition>
+            <rendition xml:id="r" scheme="css">display:block;text-align:right;</rendition>
+            <rendition xml:id="letterspaced" scheme="css">letter-spacing:0.15em;</rendition>
+            <rendition xml:id="i" scheme="css">font-style:italic;</rendition>
+         </tagsDecl>
+         <editorialDecl>
+            <hyphenation>
+               <p>
+            <!--to be added-->
+          </p>
+            </hyphenation>
+            <correction>
+               <p>
+            <!--to be added-->
+          </p>
+            </correction>
+            <normalization>
+               <p>
+            <!--to be added-->
+          </p>
+            </normalization>
+            <punctuation>
+               <p>
+            <!--to be added-->
+          </p>
+            </punctuation>
+            <stdVals>
+               <p>
+            <!--to be added-->
+          </p>
+            </stdVals>
+            <p>
+          <!--to be added-->
+        </p>
+         </editorialDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#tfruehwirth" when-iso="2026-10-13">TEIGarage output upconverted with upconvert.xsl</change>
+         <change who="#tfruehwirth" when-iso="2026-10-13">TEI header populated with generate_tei_templates.py</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface/>
+   </facsimile>
+   <text>
+      <body>
+         <div xml:id="doc-krp-0044.xml">
+            <head type="dokument">
+               <title type="num">44.<note type="footnote">Das Protokoll trägt den Vermerk <hi rend="#i">Vertraulich!</hi></note>
+               </title>
+               <title type="desc">
+                  <pb facs="krp-0044_r-0001"/>[Samstag] 1919-02-22</title>
+            </head>
+            <div type="dokumentkopf">
+               <div type="vorsitz">
+                  <head>Vorsitz:</head>
+                  <p>Renner</p>
+               </div>
+               <div type="anwesend">
+                  <head>Anwesend:</head>
+                  <p>Bauer, Enderes, Hanusch, Kaup, Loewenfeld-Russ, Pacher, Riedl, Roller, Steinwender, Urban</p>
+               </div>
+               <div type="zugezogen">
+                  <head>Zugezogen:</head>
+                  <p>Pfersmann</p>
+               </div>
+               <div type="schriftfuehrer">
+                  <head>Schriftführer:</head>
+                  <p>unbekannt</p>
+               </div>
+               <div type="dauer">
+                  <head>Dauer:</head>
+                  <p>15.00–16.30 Uhr</p>
+               </div>
+            </div>
+            <div type="komponenten">
+               <p>Reinschrift, Beilagen, streng vertraulicher Anhang, Konzept, stenographische Mitschrift, Entwurf der Tagesordnung</p>
+            </div>
+            <div type="beilagen">
+               <head>Beilagen:</head>
+               <list>
+                  <item><ref target="#krp-0044_top01">Zu TOP 1</ref>: <ref target="#krp-0044_b01">Einigung des Kabinettsrates hinsichtlich der bevorstehenden handelspolitischen Verhandlungen in Weimar</ref></item>
+                  <item><ref target="#krp-0044_top02">Zu TOP 2</ref>: <ref target="#krp-0044_b02">Antrag des Staatsamtes für öffentliche Arbeiten auf Auflösung der Dienststelle für gewerbliche Kreditangelegenheiten und Übertragung der Agenden an das deutschösterreichische Gewerbeförderungsamt</ref></item>
+               </list>
+            </div>
+            <div type="protokoll">
+               <pb facs="krp-0044_r-0002"/>
+               <div type="top" xml:id="krp-0044_top01">
+                  <head>
+                     <label>
+                        <num n="1">1.</num>
+                        <seg>Dienstesanweisung für die Abordnung nach Weimar.</seg>
+                     </label>
+                  </head>
+                  <p>Die Verhandlungen über diesen Gegenstand wurden als streng vertraulich erklärt; über deren Gang wird ein Geheimprotokoll verfasst und in einer Ausfertigung in der Staatskanzlei hinterlegt.</p>
+               </div>
+               <div type="top" xml:id="krp-0044_top02">
+                  <head>
+                     <label>
+                        <num n="2">2.</num>
+                        <seg>Auflösung der deutschösterreichischen Dienststelle für gewerbliche Kreditangelegenheiten und Übertragung ihrer Agenden an das deutschösterreichische Gewerbeförderungsamt.</seg>
+                     </label>
+                  </head>
+                  <p>Im Namen des abwesenden Staatssekretärs Ing. Zerdik führt Sektionsrat des Staatsamtes für öffentliche Arbeiten von <hi rend="#letterspaced">Pfersmann</hi> aus, dass im Jahre 1908<note type="footnote">Handschriftliche Korrektur aus „bisher“.</note> als besonderes Vollzugsamt für die in den Wirkungskreis des Ministeriums für öffentliche Arbeiten fallenden Angelegenheiten des gewerblichen Kreditwesens die Dienststelle für gewerbliche Kreditangelegenheiten errichtet worden sei.<note type="footnote">Handschriftliche Korrektur aus „fungiert habe“ </note> Diese Dienststelle, der als wichtigste Aufgabe die Durchführung der erforderlichen Maßnahmen zur Organisierung des gewerblichen Kreditwesens, also namentlich die Mitwirkung bei der Gründung gewerblicher Kreditgenossenschaften, der Zusammenschluss solcher Genossenschaften zu Verbän<pb facs="krp-0044_r-0003"/>den und die sachgemäße Pflege und Beratung dieser Organisationen obliegt, habe ihre Amtstätigkeit am 1. Februar 1909 eröffnet. Infolge der geänderten Verhältnisse habe nun der Wirkungskreis der Dienststelle eine derartige Einschränkung erfahren, dass der Weiterbestand eines ausschließlich den Interessen des gewerblichen Kreditwesens dienenden selbstständigen Vollzugsamtes des deutschösterreichischen Staatsamtes für öffentliche Arbeiten nicht mehr als gerechtfertigt angesehen werden könne. Vom rein sachlichen Standpunkte aus sowie nicht minder mit Rücksicht auf den derzeitigen Stand der Staatsfinanzen ergebe sich daher die Notwendigkeit, die Auflösung dieser Dienststelle in Erwägung zu ziehen. Gegen eine solche Maßnahme liegen Bedenken umso weniger vor, als die Agenden der Dienststelle ohne weiters dem deutschösterreichischen Gewerbeförderungsamte überwiesen werden können, das schon vermöge seines auf die gesamte technische wirtschaftliche Gewerbeförderung sich erstreckenden Wirkungskreises zur Versehung auch der Agenden des gewerblichen Kreditwesens als durchaus beru<pb facs="krp-0044_r-0004"/>fen angesehen werden müsse.</p>
+                  <p>Der Referent stelle daher auftragsgemäß den Antrag, der Kabinettsrat wolle beschließen:</p>
+                  <p>Die deutschösterreichische Dienststelle für gewerbliche Kreditangelegenheiten wird aufgelöst und hat ihre selbständige Wirksamkeit mit dem 28. Februar 1919 einzustellen. Die Agenden dieser Dienststelle und ihr gesamtes Personal werden mit 1. März 1919 dem deutschösterreichischen Gewerbeförderungsamte zugewiesen.</p>
+                  <p>Der Kabinettsrat genehmigt diesen Antrag.</p>
+                  <p/>
+               </div>
+            </div>
+            <div type="anhaenge">
+               <p><pb facs="krp-0044_a01-0001"/>Streng vertraulicher Anhang zum Kabinettsprotokoll Nr. 44.</p>
+               <div n="1">
+                  <head>Dienstesanweisung für die Abordnung nach Weimar.</head>
+                  <div type="a01_protokoll">
+                     <p>Staatssekretär Dr. <hi rend="#letterspaced">Bauer</hi> führt aus, dass es sich im Gegenstande zunächst um die Feststellung der Verhandlungsbasis in handelspolitischen Belangen handle. Man könnte diesfalls von den Ergebnissen der seinerzeitigen Salzburger Verhandlungen ausgehen und frage es sich, inwieweit wir nunmehr die Forderung stellen sollten, dass uns Deutschland volle Freiheit für den Warenverkehr geben soll, wir hingegen für eine gewisse Übergangszeit noch Zwischenzölle zum Schutze unserer Industrie festzusetzen befugt sein sollen. Eine andere Frage sei, ob man von diesem Rechte gegebenenfalls überhaupt Gebrauch machen würde.</p>
+                     <p>Weiters werfe sich die Frage auf, inwieweit wir für Deutschösterreich das Recht auf selbständige handelspolitische Abmachungen mit den Sukzessions- und Balkanstaaten beanspruchen können. Auch auf dieses Recht sollten wir vorläufig nicht verzichten, da sich Situationen ergeben können, welche die Ausübung dieses Rechtes – vielleicht sogar im eminenten Interesse Deutschlands selbst – wünschenswert erscheinen lassen. Redner denke nämlich an die Möglichkeit, dass es in absehbarer Zeit gelingen könnte, Deutschland in ein näheres Wirtschaftsverhältnis mit den Südoststaaten zu bringen. Das dies im Wege unmittelbarer Verhandlungen zwischen Deutschland und diesen Staaten erziel<pb facs="krp-0044_a01-0002"/>bar wäre, sei für die nächsten Jahre wohl kaum anzunehmen; das dies jedoch auf dem Wege über Deutschösterreich, soferne dieses bereits Abmachungen solcher Art mit den Südoststaaten getroffen hätte, leichter gelingen könnte, liege auf der Hand.</p>
+                     <p>Unterstaatssekretär <hi rend="#letterspaced">Riedl</hi> bemerkt, dass die den Salzburger Verhandlungen zugrunde gelegenen Voraussetzungen heute nicht mehr zutreffen. Das große Absatzgebiet, welches der deutschösterreichischen Industrie im Rahmen der früheren Monarchie zur Verfügung gestanden sei, wäre jetzt in Wegfall gekommen; die Produktionsgebiete hingegen seien geblieben. Weit größere Vorteile, als durch das Zugeständnis von Zwischenzöllen würden der Industrie erwachsen, wenn es unseren Bemühungen gelänge, eine Gleichartigkeit der Produktionsbedingungen zu sichern. Unerlässlich sei es ferner, den Bezug inländischer Roh- und Hilfsstoffe insbesondere von Kohle zu gewährleisten. Wenn wir rücksichtlich der letzteren von den böhmischen Gruben unabhängig wären, würden die Tschechen zur Bestimmung erträglicher Kohlenpreise gezwungen werden.</p>
+                     <p>Staatssekretär Dr. <hi rend="#letterspaced">Steinwender</hi> erklärt sich mit dem Standpunkt des Staatssekretärs für Äußeres durchaus einverstanden und vermöchte sich der Auffassung des Unterstaatssekretärs Riedl nicht anzuschließen, da seines Erachtens keine zwingende Notwendigkeit dafür bestehe, von der Sicherung derartiger Vorbehalte, deren praktische Ausübung ja überhaupt noch fraglich sei, Umgang zu nehmen.</p>
+                     <p>Nachdem noch die Staatssekretäre Dr. <hi rend="#letterspaced">Urban</hi> und Dr. <hi rend="#letterspaced">Bauer</hi> sowie der <hi rend="#letterspaced">Vorsitzende</hi> diese Fragen vom Gesichtspunkte ihrer taktischen Ausnützbarkeit bei den bevorstehenden Verhandlungen beleuchtet hatten, einigt sich der Kabinettsrat auf nachstehende Formulierung der im Zuge der Debatte zutage getretenen Auffassung:</p>
+                     <p><pb facs="krp-0044_a01-0003"/>„Die handelspolitischen Verhandlungen sind in dem Sinne zu führen, dass das Deutsche Reich und Deutschösterreich sobald als möglich zu einem gemeinsamen Zollgebiete mit einem autonomen Tarife und mit einheitlichen Handelsverträgen vereinigt werden; jedoch macht Deutschösterreich hiebei folgende Vorbehalte: </p>
+                     <list>
+                        <item n="1"><label>1.)</label> Das Recht auf besondere Grenzabgaben, welche als Aufschlag auf den gemeinsamen Zoll, bzw. als Zwischenzoll an der deutschösterreichischen Grenze eingehoben werden sollen, u. zw. für eine noch näher zu bestimmende Liste von Waren und für eine bestimmte Reihe von Jahren (im Rahmen der Salzburger Verhandlungen);</item>
+                        <item n="2"><label>2.)</label> das Recht einseitiger handelspolitischer Verhandlungen und Vertragsabschlüsse mit den Sukzessionsstaaten, wobei jedoch Deutschösterreich die Verpflichtung eingeht, jeweils im Benehmen mit der Reichsregierung vorzugehen. Auch dieses Recht zu Sonderhandlungen ist zeitlich mit demselben Termine wie die Zwischenzölle zu begrenzen und nur auf handelspolitische, zolltarifarische, verkehrspolitische und verkehrstechnische Vereinbarungen und Kompensationsverhandlungen zu beschränken.</item>
+                     </list>
+                     <p>Die Abordnung ist bevollmächtigt, bei den Verhandlungen über die Liste der Waren von vornherein Hilfsstoffe und Halbfabrikate auszuscheiden.“</p>
+                     <p>Zurückkommend auf die jüngsten Kabinettsberatungen über die Frage des Umrechnungskurses beim Übergang von der Kronen- zur Markwährung, weist Staatssekretär Dr. <hi rend="#letterspaced">Bauer</hi> sodann darauf hin, dass die Verhandlungen zu einem im allgemeinen Verkehr schwer zu handhabenden Umrechnungskurse (beispielsweise 1:1,79) führen könnten. Für einen solchen Fall erbittet und erhält der sprechende Staatssekretär die Ermächtigung, bei den <pb facs="krp-0044_a01-0004"/>Verhandlungen den Standpunkt vertreten zu dürfen, dass der deutschösterreichische Staat eine vielleicht ungünstigere, im Verkehr jedoch leicht verrechenbare Relation festsetzen und die sich gegenüber den faktischen Umrechnungskurs ergebende Differenz dem deutschösterreichischen Staatsschatz überweisen werde.</p>
+                     <p>Unterstaatssekretär Ing. von <hi rend="#letterspaced">Enderes</hi> bespricht sodann die bei den Verhandlungen auf dem Gebiete der Verkehrspolitikfestzuhaltenden Gesichtspunkte. Er weist in eingehender Darstellung darauf hin, dass unsererseits die Einordnung des deutschösterreichischen Staatsbahnnetzes in eine zu schaffende deutsche Reichseisenbahnverwaltung anzustreben wäre. Diesfalls würden wir eine sehr gewichtige Unterstützung bei Preußen finden. Taktisch halte Redner es allerdings für wichtig, diesen unseren Wunsch nicht allzu sehr in den Vordergrund zu stellen, sondern, wenn möglich, uns diesen Vorschlag von der anderen Seite bringen zu lassen.</p>
+                     <p>Unterstaatssekretär <hi rend="#letterspaced">Ried1</hi> verweist darauf, dass bei den bevorstehenden Verhandlungen auch noch die Grundlagen für eine einverständliche Regelung der Wasserstraßenfrage (Vertiefung der oberen Donaustrecke, Kanalverbindung zum Rhein, Donau-Oder-Kanal), der Schifffahrtsrechte und Schifffahrtabgaben sowie der Frage der Elbeschifffahrt anzustreben sein werden.</p>
+                     <p>Der <hi rend="#letterspaced">Vorsitzende</hi> konstatiert abschließend, dass bezüglich der Verhandlungstaktik über die verkehrs- und schifffahrtspolitischen Angelegenheiten eine durchaus einhellige Auffassung des Kabinettes zutage getreten sei, weshalb eine ausdrückliche Formulierung im Gegenstande entbehrlich erscheine.</p>
+                     <p/>
+                  </div>
+               </div>
+            </div>
+            <div type="stenogramme">
+               <div n="1">
+                  <head>[KBR 44, 22. Februar 1919, Stenogramm]</head>
+                  <p><pb facs="krp-0044_s01-0001"/>22. /2.; 44. Sitzung.</p>
+                  <p>[<hi rend="#i">Rechtes Obereck:</hi>] Steinwender, Bauer, Roller, Kaup, </p>
+                  <p>Urban, Hanusch, Riedl, Loewenfeld, Enderes, </p>
+                  <p>Pacher.</p>
+                  <p>3. Bauer: Zunächst zu Entscheidungen über die Weisungen in handelspolitischen Beziehungen. Schon im Kabinett verschiedene Meinungen angedeutet worden. </p>
+                  <p>Man wird ausgehen von den Ergebnissen der Salzburger Verhandlungen. Dort ist ein [<hi rend="#i">Einschub:</hi>] gemeinsamer auto[nomer] [<hi rend="#i">Einschub Ende</hi>] Zolltarif vereinbart [worden] nach außen, </p>
+                  <p>außerdem noch eine Reihe von Zwischenzöllen.</p>
+                  <p>Dagegen kann man in einer anderen Beziehung anknüpfen. Gegenseitig wurde das Recht auf Zwischenzölle zugestanden und die Waren bezeichnet, für welche Zwischenzölle in Anspruch genommen werden. </p>
+                  <p>Die Waren kommen für Deutsch-Österreich gar nicht mehr in Betracht. Wir hätten also freie Ausfuhr von Waren über das ganze Deutsche Reich. Ungarn hat sich aber vorbehalten </p>
+                  <p>eine viel größere Liste. Wenn diese durchgesehen wird, so entfällt auch hier der weitaus größte Teil weg.</p>
+                  <p>Es bleibt aber immerhin eine Liste von Zwischenzöllen übrig. Die Frage ist nun, inwieweit sollen wir bei den Verhandlungen die Forderungen stellen, </p>
+                  <p>dass während Deutschland uns volle Freiheit geben würde, wir vorläufig noch Zwischenzölle einheben sollten für eine gewisse Übergangszeit?</p>
+                  <p>Bin der Meinung, dass man sich das Recht vorbehalten sollte auf diese Zölle. Etwas anderes ist es, ob man dann davon auch Gebrauch machen wird.</p>
+                  <p><hi rend="#s">Die logische</hi> - Man soll auf alle Zwischenzölle verzichten.</p>
+                  <p>Diese allgemeinen Grundsätze auf jeden einzelnen Industriezweig zu übertragen, schien mir bedenklich, weil wir unserer Industrie </p>
+                  <p>erhöhte Produktionskosten auferlegen ...</p>
+                  <p>Wegen des allgemeinen Prinzips der Arbeitsteilung ....</p>
+                  <p>I. Zuerst sollte man sagen: wir beanspruchen für uns das Recht, Zwischenzölle für eine gewisse Übergangszeit einzuführen und zwar auf diejenigen </p>
+                  <p>Waren, auf welche die Zölle schon in Salzburg vereinbart wurden soweit diese Waren in Deutsch-Österreich </p>
+                  <p>erzeugt werden. Wir wissen nicht, ob und inwieweit wir davon Gebrauch machen werden, da wir jetzt noch nicht </p>
+                  <p>wissen, ob wir Teile unserer Industrie nicht damit schützen werden müssen.</p>
+                  <p>Dazu kommt: <hi rend="#s">Zwangsorganisation wird eine große Rolle spielen für die Zukunft</hi> - die heute noch nicht klare, künftige Gestaltung unserer industriellen Organisation.</p>
+                  <p><hi rend="#s">In der Frage der Binnen</hi> -.</p>
+                  <p>II. Ein zweiter Fragenkomplex: inwieweit wir etwa für Deutsch-Österreich das Recht auf selbständige handelspolitische Abmachungen </p>
+                  <p>beanspruchen könnten, [<hi rend="#i">Einschub:</hi>] wenigstens mit den Sukz[essions]- und den Balkanstaaten. [<hi rend="#i">Einschub Ende</hi>] Auch dieses Recht sollten wir vorläufig nicht preisgeben. Es ist sehr wahrscheinlich, dass wir das nicht brauchen werden. </p>
+                  <p>W<hi rend="#s">enn Deutschland den Getreidezoll hätte, dann </hi>-. Diese Freiheit sollte man sich umso mehr ausbedingen, wenn Deutschböhmen zu Deutschland kommen würde (Zug nach Südost). </p>
+                  <p>Ich mache aufmerksam, dass wir uns nur Rechte wahren sollen. Es soll aber nicht voreilig etwas aus der Hand gegeben werden.</p>
+                  <p>Die Dauer der Übergangsperiode: 10-15 Jahre müssten gewährleistet werden.</p>
+                  <p><pb facs="krp-0044_s01-0002"/>Renner: Habe den Eindruck, dass durch den Zerfall der Monarchie und dass wir Deutsch-Österreicher allein stehen und wahrscheinlich unsere Märkte im Osten schwer wieder gewonnen werden können,</p>
+                  <p>dass für uns die Zwischenzoll-Frage nicht mehr die Bedeutung von früher hat; und erst recht nicht, wenn Deutschböhmen nicht bei uns bleiben würde. Wir sind ein kleines Land, </p>
+                  <p>das sich jetzt erst einen Markt suchen muss und es als ein Glück ansehen muss, wenn wir den deutschen Markt bekommen.</p>
+                  <p>.... um auf anderen Gebieten eine Konzession zu erhalten, wäre -.</p>
+                  <p>Die vertragsmäßige Sicherung dafür, dass wir in Zukunft, wenn der Verkehr wieder freigegeben ist, die Kohle und Rohstoffe so billig wie möglich beziehen können; </p>
+                  <p>dass beim Ankauf von überseeischen Rohstoffen wir eine Einkaufsgemeinschaft bilden können; Frage der differenten Steuerbelastung; </p>
+                  <p>dass wir in einer bestimmten Zeit rechnen können mit der Fertigstellung des Rhein-Donau-Kanals.</p>
+                  <p>Innerlich bin ich Gegner der Zwischenzölle.</p>
+                  <p>Redner stimmt ganz überein mit dem Antrag, dass von den Salzburger Verhandlungen ausgegangen wird, dass man aber auch bereit ist, diese Punkte aufzugeben, </p>
+                  <p>wenn man andere Komp[ensationen] bekommt.</p>
+                  <p>Wenn wir unsere Eisenproduktion vergesellschaften -.</p>
+                  <p><hi rend="#s">Das Schwergewicht liegt</hi> - Frage der Alpenbahnen. Diese sind weitaus teurer im Betrieb also sie im Durchschnitt bei uns und in Deutschland [sind]. </p>
+                  <p>Einbeziehung der Eisenbahnen in die Deutschen Staatsbahnen.</p>
+                  <p>Riedl: Was in S[alzburg] an Zwischenzöllen besprochen wurde, ist nicht eine einheitliche ....</p>
+                  <p><hi rend="#s">Zwischenzölle sind</hi> - Die österreichische Industrie arbeitet unter ungünstigeren Verhältnissen mit einem geringer aufnahmsfähigen Absatzgebiet; sie konnte sich </p>
+                  <p>nicht so spezialisieren und entwickeln, Verschiedenheit der Steuersysteme, der Frachttarife, Leistungsfähigkeit des Arbeiters ...</p>
+                  <p><hi rend="#s">Der Zoll des Staates, der den niedrigeren Zoll einhebt, vermehrt </hi>– </p>
+                  <p>Die Deutschen haben sich für eine Reihe von Waren für Zwischenzölle erklärt unter der Voraussetzung, dass ...</p>
+                  <p>Trotz des Bestandes des Zwischenzolls hatte Deutschland doch noch einen Vorsprung vor den anderen.</p>
+                  <p>Von einer endgültigen Annahme dieser Salzburger Zwischenzölle kann man nicht reden.</p>
+                  <p>Der Vorbehalt eines großen Absatzgebietes fehlt aber jetzt (Galizien und Südosten) ist infolge Zerfalles Österreichs zunichte geworden. Absatzgebiete weggefallen, </p>
+                  <p>Produktionsgebiete geblieben.</p>
+                  <p>Fast die einstimmige Meinung der Industrie, dass die Zwischenzölle jetzt ihren Wert verloren haben. Die Frage, ob man einen bestimmten Zoll will, ist – </p>
+                  <p>nicht zu trennen ist von der Höhe des Zolles und diese nicht zu trennen ist von der Gestaltung der Preise: Das ist heute eine unlösbare Sache. </p>
+                  <p>Der Schutz, den wir auf diesem Weg uns erringen können, reicht nicht entfernt heran an den Vorteil der unserer Industrie zufließt, wenn wir unsere Bemühungen auf </p>
+                  <p>die Herstellung einer Gleichheit der Produktionsbedingungen, nicht aber auf einen künstlichen Schutz richten.</p>
+                  <p>Alpine, </p>
+                  <p>steirische Stahlwerke – [<hi rend="#i">Neben Summenklammer:</hi>] Kohlenfrage und nicht Schutzzoll auf Eisen.</p>
+                  <p><hi rend="#s">Dass durch unser Schutzzollregime unserer Industrie geschadet wird</hi> -</p>
+                  <p>Die Frage gewinnt besondere Bedeutung im Verhältnis zur Frage einer planmäßig geordneten Erzeugung, der Syndizierung der Betriebe. </p>
+                  <p>Der Vorbehalt von Zwischenzöllen für kleine Industrien, bei welchen das überhaupt nicht in Betracht kommt ....</p>
+                  <p>Wir laufen Gefahr, wenn wir unserer Industrie durch Schutzzölle ein abgegrenztes Gebiet zuweisen, dass er jetzt sich auf dieses engere Gebiet beschränken muss. </p>
+                  <p><pb facs="krp-0044_s01-0003"/>II. [Über die] Sicherung gleichartiger Grundsätze (Behandlung) bei der Schaffung von Syndikaten und Vornahme von Kontingentierungen, habe ich schon gesprochen. </p>
+                  <p>Sicherung des Bezugs inländischer Roh- und Hilfsstoffe. Da hängen wir von Deutschland ab, da wir keine Steinkohle besitzen, als auch was die Sicherung </p>
+                  <p>des Kohlenbezugs aus den böhmischen Gruben [betrifft, so wird dieser] abhängig sein davon, dass wir uns für den Entfall die Sicherung unseres Kohle-Bezugs von Deutschland her erwirken.</p>
+                  <p>Auf die Gefahr hin, den Absatz bei uns zu verlieren - wird die Tschechen mürbe machen. Die Tschechoslowakei wird das naturgemäße Bestreben haben, uns die Kohlen </p>
+                  <p>so teuer zu verkaufen wie möglich, wir müssen uns durch Conc. von Deutschland ein erträgliches Leben sichern.</p>
+                  <p>Gleichartige Behandlungen im Bezug ausländischer Roh- und Hilfsstoffe. Wenn wir isoliert bleiben, droht uns die [Ge]fahr der Isolierung.</p>
+                  <p>Gleiches Steuersystem: Es ist [eine] schwierige Aufgabe, muss aber gemacht werden.</p>
+                  <p>III. Verkehrspolitische Frage: Einverständnis mit Verkehr Weiß hergestellt im Großen und Ganzen.</p>
+                  <p>Frage selbständiger handelspolitischer Abkommen: Damit hängt zusammen, dass es sich in Salzburg um den Zusammenschluss zweier größerer Wirtschaftsgebiete </p>
+                  <p>mit selbständigem Zolltarif und staatlicher Selbständigkeit und wenigstens dem Schein nach mit einer selbständigen Handelspolitik nach außen gehandelt hat. </p>
+                  <p>Solche selbständigen Abmachungen können nicht mit Erfolg angestrebt werden, wenn man sich klar ist [über] die Abneigung der Sukz[essions]-Staaten gegenüber uns </p>
+                  <p>(Ungarn ausgenommen). Frage Rumänien.</p>
+                  <p>Ich glaube, wir sollten uns bei den Verhandlungen darauf konzentrieren, die Bürgschaften für die Gleichmäßigkeit der Produktionsbedingungen </p>
+                  <p>zwischen uns und Deutschland zu sichern. Deshalb glaube ich, dass Zwischenzölle und ein selbständiges Verhandeln für uns nicht in Betracht kommen können, weil sie uns darin dann schwächen.</p>
+                  <p>Steinwender: Wenn wir im Sinne Riedels vorgehen, so geben wir uns Deutschland widerspruchslos preis. Wir sind die Schwächeren, wir werden uns fügen müssen. </p>
+                  <p>Redner ist mit Bauer einverstanden, zumal wir uns Rechte sichern, die wir vielleicht ja auch gar nicht ausüben werden. Die Absichten Bauers sind praktisch, </p>
+                  <p>wir wollen uns [diese Rechte] vorbehalten und werden erst sehen, ob wir sie brauchen.</p>
+                  <p>Eine gewisse Begünstigung in Bezug auf die Belastung durch Steuern wäre ganz gut denkbar (Bayern ist auch in Bezug auf die Biersteuer abgeschlossen vom Reich). </p>
+                  <p>(Schulwesen in Berlin). Das, was Vorsicht aufgestellt wurde, halte ich für richtig. Verzichten aber dürfen wir nicht.</p>
+                  <p>Urban: <hi rend="#s">Kontroverse über Sach</hi>-. Als Ziel muss man daran denken, dass an solche Zwischenzölle nicht gedacht werden kann.</p>
+                  <p>Die öffentliche Bewirtschaftung wird in gewissem Sinne <hi rend="#s">an die Stelle</hi> den Zollschutz ersetzen können. Wir werden von Deutschland Zugeständnisse auf gewissen Gebieten zu fordern haben.</p>
+                  <p>.... dazu kommt das Gebiet der Finanzpolitik, wo wir die meisten Zugeständnisse von Deutschland werden verlangen müssen. Da werden wir nichts geben können </p>
+                  <p>als Komp[ensations]-Sache.</p>
+                  <p>Redner hätte große Bedenken gegen <hi rend="#s">eigene Tarife</hi> das Recht auf selbständige Abmachungen. Das erste aber ist eine rein taktische Frage. Wenn Bauer das nur als </p>
+                  <p>taktische Waffe benützen will, stimmt Redner zu.</p>
+                  <p>Bauer: Ich bin mit Riedl ganz einverstanden bezüglich des Zieles, auch einig in der Einschätzung des Zolles als Mittel zur Sicherung (jetzt weniger wert als früher). </p>
+                  <p>Der ganze Streit ist folgender: ich will nicht vorgreifen und auf irgendetwas, das es Deutschland schon so gut wie zugestanden hätte, will ich nicht verzichten im gegenwärtigen Augenblick </p>
+                  <p>aus dem Grund, weil wir mit Gleichungen arbeiten müssen mit zahllosen Unbekannten. Wir dürfen uns nicht präjudizieren ohne Not.</p>
+                  <p>Nun hat Riedl gesagt: nur Kleinindustrie würde geschützt; demgegenüber sage ich, dass gerade diese Kleinindustrie geschont werden muss (Wien!).</p>
+                  <p>Dasselbe wie bezüglich der Zwischenzölle gilt auch von den handelspolitischen Abmachungen. Ich meine eine einseitige Freiheit nur für Deutsch-Österreich und nur gegenüber den Sukzessions-Staaten. </p>
+                  <p>Bezüglich dieser Staaten will Deutsch-Österreich ein gewisses Vorrecht haben. Die Konstruktion ist eine spätere Sache. Darauf will Redner sich nicht einlassen vorderhand. </p>
+                  <p>Für eine gewisse Übergangszeit werden wir aber solche Sonderrechte brauchen (Zwischenzölle und das Recht, besondere Abmachungen über das allgemeine Verhältnis mit Deutschland hinaus).</p>
+                  <p><pb facs="krp-0044_s01-0004"/>Die Frage des Zusammenhangs mit den Zwangs-Syndikaten. Da sind die Dinge unklar. Es gibt Industriezweige, wo wir mehr beanspruchen </p>
+                  <p>könnten an Kontingenten, aufgrund unserer Leistungsfähigkeiten, als die Versorgung des deutsch-österreichischen Marktes. </p>
+                  <p>Im Effekte kommt es dabei heraus darauf, ob ich mir die Versorgung des Inlandsbedarfes sichere durch Zwischenzölle oder durch ein Kontingent. </p>
+                  <p>Man soll in dieser Sache sich nur von praktischen Bedürfnissen leiten lassen, nicht aber von der Doktrine.</p>
+                  <p>Wir sichern uns also diese Rechte, die uns Deutschland voraussichtlich ohne Kompensation zugestehen wird, ohne noch endgültig darüber zu entscheiden. </p>
+                  <p>Redner ist überzeugt, dass dies dem Anschlussgedanken auch sehr dienen wird.</p>
+                  <p>Riedl: Selbständige Abkommen mit den Sukzessions-Staaten. Redner möchte darauf hinweisen, das, was über selbständige Handelspolitik in den sogenannten Richtlinien steht, ein Surrogat für das </p>
+                  <p>war, was infolge der staatsrechtlichen Verhältnisse und der Eifersucht der beiden Mächte aufeinander nicht erreicht werden konnte. An der Unmöglichkeit, ein gemeinsames Organ zu schaffen, ist der </p>
+                  <p>Grundsatz gescheitert, die Handelspolitik einheitlich zu führen. Immer die Eifersucht der Dynastien.</p>
+                  <p>Es ist eine ganz andere Potenz, wenn wir als 70-Millionen-Volk auftreten als Deutsch-Österreich mit 6 Millionen. </p>
+                  <p>Mit Deutschland zusammen umklammern wir das – das tsch[echoslowakische] Gebiet ...</p>
+                  <p>Frage der Zwischenzölle: Wenn es sich nur um den einseitigen Schutz handelt, dagegen gewiss kein Einwand. Der Schwerpunkt des ganzen liegt in der entschlossenen </p>
+                  <p>Streichung der Zölle für Halbfabrikate (Eisen, Textil- und chemische Industrie). </p>
+                  <p>Auch Wirkungen auf unsere Landwirtschaft: auf dem Gebiet des Vieh- und Getreideverkehrs werden von unseren Nachbarn Forderungen an uns gestellt werden.</p>
+                  <p>Renner: Ich glaube, wir sind im Wesentlichen, was die augenblickliche Konstruktion [anlangt], einig.</p>
+                  <p>Riedl will ja nicht, dass man das nicht benützt, was man in Salzburg erlangt hat, als Mittel, um möglichst viel herauszuschlagen.</p>
+                  <p>Ziel ebenso einig: in der kürzesten Zeit die wirtschaftliche Gemeinschaft zu erzielen. </p>
+                  <p>Auch hier nicht der Vorsatz, das Recht als selbständiger Verhandler mit den Nationalstaaten die Möglichkeit einer Zwischenzolllinie .... aufrecht zu erhalten.</p>
+                  <p>Es kann die Notwendigkeit eintreten; <hi rend="#s">es ist schwer für einen Unterhändler vorweg zu sagen, dass</hi> ...</p>
+                  <p>Was den Umfang und die Spezialisierung der gegenwärtigen Verhandlungen [anlangt]: die leise Differenz in diesem Punkt wird noch keinen Schaden zufügen können.</p>
+                  <p>Wir für uns, ohne Zusammenhang mit den Salzburger Verhandlungen, müssen uns vorbehalten bei der Unbestimmtheit der Beziehungen zu den Sukzessions-Staaten, innerhalb der nächsten 10 Jahre unter gegebenen Umständen Sonderverhandlungen zu führen. Das soll aber immer nur ein Mittel des Übergangs sein. </p>
+                  <p>Das Ziel muss immer sein die vollständige Verschmelzung der beiden Wirtschaftsgebiete; die Sa[lzburger] Verhandlungen sollten dabei benützt werden zu unserer Stärkung, was dies möglich ist.</p>
+                  <p>Bauer: Bittet doch um Weisung: 1.) <hi rend="#s">Das Recht auf einseitige Zuschüsse</hi> - Eine noch festzustellende Liste von Waren für eine bestimmte Reihe von Jahren sei von Deutschland zu fordern.</p>
+                  <p>2.) Das Recht zu fordern, die einseitige handelspolitische Aktionsfreiheit, dass Deutsch-Österreich während dieser Übergangszeit besondere Handelsabkommen </p>
+                  <p>mit den Sukzessions-Staaten zu schließen berechtigt wäre, wogegen Deutschland und Deutsch-Österreich keine anderen Verträge abschließt.</p>
+                  <p>Riedl: Halte es für eine verhängnisvolle Sache, wenn wir uns das Recht wahren, Verträge selbständig abzuschließen mit den Sukzessions-Staaten. Unsere Einordnung in das deutsche Wirtschaftsleben </p>
+                  <p>wird dadurch erschwert. Dagegen können wir das Recht verlangen, bei diesen Verhandlungen mit den Sukzessions-Staaten stets mitreden zu können.</p>
+                  <p>Bauer: Es wird möglich sein, Deutschland in ein Verhältnis mit dem Südosten zu bringen; mit Österreich aber wird es in kürzester Zeit vielleicht möglich sein (aus den </p>
+                  <p>alten Beziehungen heraus). Das Reich wird erben, was Österreich gewonnen hat. Ob das richtig ist, kann niemand sagen, aber wozu sich einen Weg versperren.</p>
+                  <p>Urban: Natürlich müsste das Deutsche Reich immer intern verständigt werden und am Laufenden erhalten werden über die jeweils zu führenden Verhandlungen.</p>
+                  <p><pb facs="krp-0044_s01-0005"/>Riedl: Das handelspolitische Einvernehmen mit Deutschland müsste bei solchen Sonderverträgen aber sichergestellt werden. </p>
+                  <p>Dazu ist notwendig, dass eine solche Mittlerstellung im Einvernehmen mit unserem deutschen Bundesgenossen erfolgen müsste. </p>
+                  <p>Ein solches Einvernehmen muss aber fixiert werden, damit wir uns dann dahinter verschanzen können. </p>
+                  <p>Mit dieser Abänderung wäre Riedl einverstanden.</p>
+                  <p>Enderes: Diese letzte Konstruktion scheint mir äußerst wichtig, wir haben heute eine Einheit, die in Gefahr ist, zerschlagen zu werden. Dies wäre von großem Nachteil für </p>
+                  <p>alle beteiligten, namentlich aber für uns. Wenn wir in das Deutsche Reich eintreten, [in einer Form], in der uns Sonderverhandlungen mit unseren alten Reichsgenossen gewährt bleiben, so wäre </p>
+                  <p>es vielleicht möglich, diese Eisenbahngemeinschaft für eine gewisse Zeit aufrecht zu erhalten.</p>
+                  <p>Urban: Es wäre wichtig, sicherzustellen, auf welche Angelegenheiten es sich bezieht – </p>
+                  <p>zollpolitische, verkehrspolitische und verkehrstechnische Fragen.</p>
+                  <p>Die handelspolitischen Verhandlungen sollen in dem Sinn geführt werden, oder <hi rend="#s">die Verschmelzung der beiden Wirtschaftsgebiete</hi> dass Deutsche Reich und Deutsch-Österreich </p>
+                  <p>sobald als möglich zu einem gemeinsamen Zollgebiet mit einem auto[nomen] Tarif und mit einheitlichen Handelsverträgen vereinigt werden; jedoch <hi rend="#s">behält sich</hi> macht </p>
+                  <p>Deutsch-Österreich <hi rend="#s">das einseitige Recht auf folgende Sonderrechte vor</hi> (folgende Vorbehalte):1.) Das Recht auf einseitige Zwischenzölle </p>
+                  <p>für noch näher zu bestimmende Liste von Waren für eine bestimmte Reihe von Jahren, im Rahmen der in den Salzburg Verhandlungen </p>
+                  <p>gemachten Vorbehalte<hi rend="#s">; unter Zwischenzoll ist gemeint die Differenz zwischen den höheren und niederen Positionen;</hi> </p>
+                  <p>das Recht auf besondere <hi rend="#s">Zuschläge zu den Zwischenzöllen, welche</hi> - Grenzabgaben, welche als Aufschlag auf den gemeinsamen Zoll </p>
+                  <p>bzw. als Zwischenzoll an der Deutsch-Österreichischen Grenze eingehoben werden sollen und -.</p>
+                  <p>2.) Das Recht, einseitiger handelspolitischer Verhandlung und Vertragsabschlüsse mit den Sukz[essions]-Staaten, wobei jedoch Deutsch-Österreich </p>
+                  <p>die Verpflichtung eingeht, im Benehmen mit der Reichsregierung vorzugehen. <hi rend="#s">Auch diese Abmachung erstreckt </hi>- Auch dieses Recht </p>
+                  <p>zu Sonderverhandlungen ist zeitlich mit dem gleichen Termin wie die Zwischenzölle zu begrenzen und nur auf handelspolitische (Zolltarife, verkehrspolitische, insbesondere verkehrstechnische) Vereinbarungen und Komp[ensations]-Verhandlungen zu beschränken.</p>
+                  <p>Die Abordnung ist zu bevollmächtigen, bei den Verhandlungen über die Liste der Waren von vornherein <hi rend="#s">Rohstoffe, Produktionsmittel</hi>, Hilfs-</p>
+                  <p>stoffe und Halbfabrikate auszuscheiden. <hi rend="#s">Die Vollmacht auf die Einbeziehung von Hilfsstoffen und Halbfabrikaten, die in der Salzburger</hi> </p>
+                  <p><hi rend="#s">Liste genannt sind, abzugeben.</hi></p>
+                  <p>Verkehrspol.?</p>
+                  <p>Enderes: <hi rend="#s">Die deutsche Rechtsverwaltung hat eine Reichseisenbahnverwaltung vorgesehen. </hi></p>
+                  <p><hi rend="#s">Die Strömungen nach einer Reichseisenbahnverwaltung werden sich voraussichtlich verstärken.</hi></p>
+                  <p>Wir stehen nicht einer einheitlichen deutschen Eisenbahnpolitik gegenüber, sondern einer in zwei Richtungen parteimäßig gespaltenen Politik. Persönlich glaube ich, wenn wir </p>
+                  <p>in diese Geschichte hineinkommen, bleibt uns nichts übrig, als Bundesgenosse jener Richtung zu sein, welche die baldigste Überführung in den Reichsbesitz durchführen will. </p>
+                  <p>Bei Beurteilung solcher Fragen müssen wir uns von dem Grundsatz leiten lassen, dass möglichst [...] und Förderung der Volkswirtschaft zu erzielen ist. </p>
+                  <p>Wir können [uns] mit unserem Eisenbahnnetz als selbständiges Netz nicht rühren. In einem so verarmten Staat können wir die Bahnen nicht zu einem Betrieb </p>
+                  <p>machen, der die Verzinsung und Tilgung durchführt. Wir müssen unter allen Umständen hinsichtlich der Eisenbahn-Politik irgendwo eine [...] finden.</p>
+                  <p><pb facs="krp-0044_s01-0006"/><hi rend="#s">Wir haben uns bemüht, einen Entwurf zu machen, der</hi> -.</p>
+                  <p>Wir müssen also trachten, in ein deutsches Reichseisenbahnnetz uns einzukaufen mit unseren Bahnen. Wir werden dabei wahrscheinlich ein sehr willkommener Bundesgenosse der preußischen Bestrebungen sein. </p>
+                  <p>Bei takt[ischer] Ausnützung werden wir wahrscheinlich sehr gut abschneiden. Wenn diese Einfügung gelingt, würde die Gefahr </p>
+                  <p>eines Betriebsdefizits verschwinden, [wir] dieselben Tarife haben wie das ganze Reich.Vorteile:1.) Ausschaltung von Umwegen. 2.) Verringerung </p>
+                  <p>des erforderlichen Wagen- und Lokomotivenmaterials. 3.) Ungeheure Vorteile in politischer Beziehung. Reichseisenbahnnetz würde uns die Tschechoslowaken ausliefern, </p>
+                  <p>wenn sie überspannt sind. 4.) Entfall von baulichen Herstellungen in den Übergangsstationen, gegenseitigen Verrechnungen, Saldierungs- und Ausgleichsstellen, </p>
+                  <p>Ver[ein]heitlichung der Typen.</p>
+                  <p>Vorteile, welche die Bundesstaaten haben, müssten uns jetzt schon eingeräumt werden.</p>
+                  <p>1.) Herstellung der Reichseisenbahnen würde uns ermöglichen, unsere entsetzlichen Personalüberschüsse in schmerzloser Weise anzubringen. Die Deutschen haben sehr viele verloren, </p>
+                  <p>sie leiden vielleicht sogar an Personalmangel.</p>
+                  <p>2.) Die Neugründung der Reichseisenbahnbehörden könnte benützt werden, um in Wien ein Aeq. zu schaffen für ....</p>
+                  <p>Die Verwaltung der preußischen Direktionen würde immer in Berlin bleiben. Das höchste Reichseisenbahnamt (Zentralstelle) könnte ebenso gut nach </p>
+                  <p>Wien verlegt werden wie nach Berlin. Exz. Lage ist nebensächlich (eine zusammenfassende Reichsdienststelle).</p>
+                  <p>Taktisch richtig, das vorderhand noch zu verschweigen und sich den Gedanken von außen bringen zu lassen.</p>
+                  <p>Entwürfe für den eisenbahnpolitischen Hauptvertrag mit dem Deutschen Reich, daneben Nebenvertrag mit den Tschechoslowaken, Ungarn und Südslawen für die </p>
+                  <p>Übergangszeit.</p>
+                  <p>Als Reserve: Hauptvertrag mit Tschechoslowakei, Ungarn und Nebenvertrag mit Deutschland.</p>
+                  <p>Nur allgemein und grundsätzlich sollten die Dinge festgelegt werden.</p>
+                  <p>Riedl: Vollständig einverstanden mit dem Vorredner. Von unserem Standpunkt aus würde ich wünschen, dass man sich gewisse Tarif-Zusicherungen für Wien geben lässt.</p>
+                  <p>Die Anwendung des deutschen Tarif-Baremes auf unsere Eisenbahnen. </p>
+                  <p>Wir können den Deutschen auch etwas bieten mit unseren Absichten auf Triest.</p>
+                  <p>Im Falle es nicht zur Schaffung eines Reichseisenbahnsystems kommt, dass wir –[uns] von vornherein eine Art Präzipuum gegeben wird zu unserer finanziellen Erleichterung [für die] </p>
+                  <p>Sicherung von billigen Kohlen- und Coks-Tarifen.</p>
+                  <p>Bauer: Der sächsische Geschäftsträger hat mit mir schon darüber gesprochen. Jetzt ändern sich auch in Deutschland die Anschauungen; nur Bayern noch stützig.</p>
+                  <p>Riedl: Wir müssen Rücksicht nehmen, dass uns nicht in Rechnung gestellt werden Mark-Vorschüsse.</p>
+                  <p>Enderes: Man müsste sich zunächst Klarheit darüber verschaffen, dass das Deutsche Reich gewillt ist, uns nicht für den teuren Betrieb und die großen Anlagekosten verantwortlich - gemacht werden. </p>
+                  <p>Wenn es nur zur bundesstaatlichen Eisenbahn kommt, dann gibt es zwei Wege, dass nicht alles aus unserer Tasche geht (Reichszuschüsse und der Weg </p>
+                  <p>eines Längenzuschlages). Vor der zweiten Alternative muss gewarnt werden.</p>
+                  <p>Riedl: Wasserstraßen: Vertiefung und Verbesserung der Schifffahrtsstrecke auf der oberen Donau und im Rhein-Main-Donau-Kanal.</p>
+                  <p>Zweite Frage ist die Stellung der Deutschen zum Oder-Donau-Kanal. Im Falle des Baues aber nicht allein eine Ausmündung in Preßburg, </p>
+                  <p>sondern auch Stichkanal nach Deutsch-Österreich.</p>
+                  <p><pb facs="krp-0044_s01-0007"/>Ferner Frage inwieweit sie sich an den Kosten beteiligen (Reichssache). Alles Reichsangelegenheit.</p>
+                  <p>Schifffahrtsrechte und -Abgaben: Es sollte hingewiesen werden darauf, was schon geschehen ist. </p>
+                  <p>Was Betrieb der Schifffahrtsgesellschaft betrifft, <hi rend="#s">wäre ein Schutz des</hi> -</p>
+                  <p>Elbeschifffahrt: wäre einverständliches Vorgehen in der Frage des Erwerbs der Aktien der ....</p>
+                  <p>Renner: Volle Einigung; keine besondere Stilisierung.</p>
+                  <p>2. Pfersmann: Angenommen.</p>
+               </div>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

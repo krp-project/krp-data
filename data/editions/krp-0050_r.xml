@@ -1,0 +1,604 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href='http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:acdh="https://vocabs.acdh.oeaw.ac.at/schema#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xml:lang="de">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="a" type="main" n="0050">Kabinettsprotokoll Nr. 50 vom 17. März 1919</title>
+            <title level="m" type="main" n="01">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <title level="m" type="sub" n="">Renner II (15. März – 17. Oktober 1919)</title>
+            <meeting>
+               <placeName key="https://d-nb.info/gnd/4066009-6">Wien</placeName>
+               <orgName key="https://d-nb.info/gnd/5162749-8">Kabinettsrat</orgName>
+               <date when-iso="1919-03-17"/>
+            </meeting>
+            <editor>
+               <persName key="https://d-nb.info/gnd/122481836"
+                         role="hasCreator"
+                         xml:id="hwohnout">
+                  <forename>Helmut</forename>
+                  <surname>Wohnout</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</affiliation>
+               <idno type="ORCID">0000-0002-3864-9839</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/120789825"
+                         role="hasCreator"
+                         xml:id="tolechowski">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0003-3291-6876</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/131679384"
+                         role="hasCreator"
+                         xml:id="rlein">
+                  <forename>Richard</forename>
+                  <surname>Lein</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0002-7502-0503</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="aholzer">
+                  <forename>Anna</forename>
+                  <surname>Holzer</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0005-3560-3500</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="dsoelkner">
+                  <forename>Dominik</forename>
+                  <surname>Sölkner</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-9895-7212</idno>
+            </editor>
+            <editor>
+               <persName role="hasContributor" xml:id="ischotzko">
+                  <forename>Ina</forename>
+                  <surname>Schotzko</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-5210-3713</idno>
+            </editor>
+            <funder n="1">
+               <orgName key="https://d-nb.info/gnd/2054142-9" role="hasFunder">Österreichischer Wissenschaftsfonds FWF</orgName>
+               <idno type="project">PAT1495024</idno>
+               <title type="project">Die Protokolle des österreichischen Kabinettsrates 1919–1920</title>
+            </funder>
+            <respStmt>
+               <resp>Projektverantwortung</resp>
+               <orgName key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Projektleitung</resp>
+               <persName key="https://d-nb.info/gnd/120789825" role="hasPrincipalInvestigator">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+                  <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+                  <idno type="ORCID">0000-0003-3291-6876</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Nationaler Forschungspartner</resp>
+               <orgName key="https://d-nb.info/gnd/1123037736" role="hasEnabler">Austrian Centre for Digital Humanities</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Digitalisierung der gedruckten Quellen</resp>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>TEI-Datenmodellierung</resp>
+               <persName role="hasContributor" xml:id="tfruehwirth">
+                  <forename>Timo</forename>
+                  <surname>Frühwirth</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-3997-5193</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technische Supervision</resp>
+               <persName key="https://d-nb.info/gnd/1043833846"
+                         role="hasContributor"
+                         xml:id="pandorfer">
+                  <forename>Peter</forename>
+                  <surname>Andorfer</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-9575-9372</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technisches Consulting und Vorbereitung der Druckausgabe</resp>
+               <persName key="https://d-nb.info/gnd/13281899X"
+                         role="hasContributor"
+                         xml:id="skurz">
+                  <forename>Stephan</forename>
+                  <surname>Kurz</surname>
+                  <affiliation key="https://d-nb.info/gnd/1202798799">Institut für die Erforschung der Habsburgermonarchie und des Balkanraumes</affiliation>
+                  <idno type="ORCID">0000-0003-2546-2570</idno>
+               </persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher key="https://d-nb.info/gnd/1001454-8">Österreichische Akademie der Wissenschaften</publisher>
+            <date when="2028"/>
+            <availability status="free">
+               <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">Lizenziert unter CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/deed.de)</licence>
+            </availability>
+            <idno type="ISBN_Print"/>
+            <idno type="ISBN_Part_epub"/>
+            <idno type="ISBN_Digital"/>
+            <idno type="DOI"/>
+            <idno type="DOI_zenodo"/>
+            <idno type="ebook_ID"/>
+         </publicationStmt>
+         <seriesStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="m" type="main">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <respStmt>
+               <resp>Bearbeitung und Herausgeberschaft</resp>
+               <orgName key="https://d-nb.info/gnd/2024703-5">Universität Wien</orgName>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+         </seriesStmt>
+         <notesStmt>
+            <note>Diese TEI-XML-Datei ist Grundlage für eine Druckausgabe der Edition.</note>
+            <relatedItem>
+               <biblStruct>
+                  <monogr>
+                     <imprint>
+                        <pubPlace key="https://d-nb.info/gnd/4066009-6">Wien</pubPlace>
+                        <publisher key="https://d-nb.info/gnd/2068748-5">Verlag der Österreichischen Akademie der Wissenschaften</publisher>
+                        <date when="2029"/>
+                     </imprint>
+                     <extent/>
+                  </monogr>
+                  <note>
+              <idno/>
+              <ptr/>
+            </note>
+                  <citedRange/>
+               </biblStruct>
+            </relatedItem>
+         </notesStmt>
+         <sourceDesc>
+            <bibl>Quellbestand: AT-OeStA/AdR MRang MR 1Rep KRP Kabinettsratsprotokolle, 1918-1920 (Teilbestand)<ref target="https://www.archivinformationssystem.at/detail.aspx?id=5465">https://www.archivinformationssystem.at/detail.aspx?id=5465</ref>
+            </bibl>
+            <msDesc>
+               <msIdentifier>
+                  <institution key="https://d-nb.info/gnd/37748-X" role="hasOwner">AT-OeStA Österreichisches Staatsarchiv (Archiv (ÖStA))</institution>
+                  <repository key="https://d-nb.info/gnd/1601181-8">AT-OeStA/AdR Archiv der Republik, 1918- (Abteilung)</repository>
+                  <collection>AT-OeStA/AdR MRang MR 1Rep Ministerrat 1. Republik, 1918 - 1938 (Bestand)</collection>
+                  <idno>AT-OeStA_AdR-MRang-MR-1.-Rep.-KRP-050</idno>
+               </msIdentifier>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <abstract>
+            <p>
+          <!--to be generated-->
+        </p>
+         </abstract>
+      </profileDesc>
+      <encodingDesc>
+         <styleDefDecl scheme="css"/>
+         <tagsDecl>
+            <rendition xml:id="b" scheme="css">font-weight:bold;</rendition>
+            <rendition xml:id="su" scheme="css">vertical-align:super;font-size:.7em;</rendition>
+            <rendition xml:id="s" scheme="css">text-decoration:line-through;</rendition>
+            <rendition xml:id="u" scheme="css">text-decoration:underline;</rendition>
+            <rendition xml:id="ow" scheme="css">text-decoration:line-through;text-decoration-style:double;</rendition>
+            <rendition xml:id="r" scheme="css">display:block;text-align:right;</rendition>
+            <rendition xml:id="letterspaced" scheme="css">letter-spacing:0.15em;</rendition>
+            <rendition xml:id="i" scheme="css">font-style:italic;</rendition>
+         </tagsDecl>
+         <editorialDecl>
+            <hyphenation>
+               <p>
+            <!--to be added-->
+          </p>
+            </hyphenation>
+            <correction>
+               <p>
+            <!--to be added-->
+          </p>
+            </correction>
+            <normalization>
+               <p>
+            <!--to be added-->
+          </p>
+            </normalization>
+            <punctuation>
+               <p>
+            <!--to be added-->
+          </p>
+            </punctuation>
+            <stdVals>
+               <p>
+            <!--to be added-->
+          </p>
+            </stdVals>
+            <p>
+          <!--to be added-->
+        </p>
+         </editorialDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#tfruehwirth" when-iso="2026-10-13">TEIGarage output upconverted with upconvert.xsl</change>
+         <change who="#tfruehwirth" when-iso="2026-10-13">TEI header populated with generate_tei_templates.py</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface/>
+   </facsimile>
+   <text>
+      <body>
+         <div xml:id="doc-krp-0050.xml">
+            <head type="dokument">
+               <title type="num">50.<note type="footnote">Das Protokoll trägt den Vermerk <hi rend="#i">Vertraulich!</hi></note>
+               </title>
+               <title type="desc">
+                  <pb facs="krp-0050_r-0001"/>[Montag] 1919-03-17</title>
+            </head>
+            <div type="dokumentkopf">
+               <div type="vorsitz">
+                  <head>Vorsitz:</head>
+                  <p>Renner</p>
+               </div>
+               <div type="anwesend">
+                  <head>Anwesend:</head>
+                  <p>Bauer, Bratusch, Deutsch, Ellenbogen, Glöckel, Hanusch, Loewenfeld-Russ, Miklas, Paul, Schumpeter, Stöckler, Waiss, Zerdik</p>
+               </div>
+               <div type="zugezogen">
+                  <head>Zugezogen:</head>
+                  <p>Grimm, Joas, Kaan</p>
+               </div>
+               <div type="schriftfuehrer">
+                  <head>Schriftführer:</head>
+                  <p>unbekannt</p>
+               </div>
+               <div type="dauer">
+                  <head>Dauer:</head>
+                  <p>15.00–19.00 Uhr</p>
+               </div>
+            </div>
+            <div type="komponenten">
+               <p>Reinschrift, Beilagen, streng vertraulicher Anhang, Konzept, stenographische Mitschrift, Entwurf der Tagesordnung, diverse Zusätze</p>
+            </div>
+            <div type="beilagen">
+               <head>Beilagen:</head>
+               <list>
+                  <item><ref target="#krp-0050_top01">Zu TOP 1</ref>: <ref target="#krp-0050_b01">Entwurf einer Geschäftsordnung für die Sitzungen des Kabinettsrates</ref></item>
+                  <item><ref target="#krp-0050_top08">Zu TOP 8</ref>: <ref target="#krp-0050_b02">Entwurf des Staatsamtes für soziale Verwaltung für ein Militärversorgungsgesetz</ref></item>
+               </list>
+            </div>
+            <div type="protokoll">
+               <pb facs="krp-0050_r-0002"/>
+               <div type="top" xml:id="krp-0050_top01">
+                  <head>
+                     <label>
+                        <num n="1">1.</num>
+                        <seg>Begrüßung der neuen Kabinettsmitglieder; Geschäftsordnung für die Sitzungen des Kabinettsrates.</seg>
+                     </label>
+                  </head>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> begrüßt das Kabinett bei dessen erstem Zusammentreten und bringt den neuen Kabinettmitgliedern die beim Amtsantritte zu beobachtenden Formalien zur Kenntnis.</p>
+                  <p>Der sprechende Staatskanzler weist sodann auf die namhaft erhöhte politische Verantwortung hin, mit der das Kabinett infolge Wegfalles des Staatsrates nunmehr belastet sei. Die gleichzeitig auch materiell gesteigerte Arbeit werde die Regierung nur durch streng sachliche und möglichst <pb facs="krp-0050_r-0003"/>rasche Verhandlungen im Kabinettsrate, die wieder eine vorherige Informierung aller Kabinettsmitglieder über die zur Beratung gelangenden Gegenstände erfordern, bewältigen können. Von einer Geschäftsordnung für die Sitzungen des Kabinettsrates verspreche sich Redner in diesen Belangen mannigfache Vorteile. Er habe daher eine solche Geschäftsordnung entwerfen lassen, die er den Kabinettsmitgliedern hiemit zur Durchsicht und Stellungnahme unterbreite. Anschließend hieran bringt Redner in Erinnerung, dass es Aufgabe des jeweils kompetenten Staatsamtes sein werde, die aus den Kabinettsprotokollen ersichtlichen Beschlüsse der Staatsregierung zum Gegenstande amtswegiger Verfügungen zu machen. Seitens der Staatskanzlei werde eine besondere Ausfertigung dieser Beschlüsse wie bisher nur in den vom Kabinettsrate fallweise festgesetzten Fällen vorgenommen werden.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Schumpeter</hi> erklärt sich mit dem Inhalte der Geschäftsordnung durchaus einverstanden, betont aber bei diesem Anlasse, dass alle Angelegenheiten, welche <pb facs="krp-0050_r-0004"/>finanziell irgendwie von Belang sind, nur nach vorheriger Fühlungnahme mit dem Staatsamte für Finanzen vor den Kabinettsrat gebracht werden sollten.</p>
+                  <p>Nach einer vom Staatssekretär Dr. <hi rend="#letterspaced">Bauer</hi> gestellten, vom Vorsitzenden beantworteten Zwischenfrage über die den Staatssekretären zustehenden Vertretungsbefugnisse konstatiert Letzterer, dass gegen den Entwurf grundsätzliche Bedenken nicht erhoben worden sind. Um aber allfällige Ergänzungen, die sich aus der Praxis ergeben sollten, noch vornehmen zu können, empfiehlt schließlich der Vorsitzende, die Beschlussfassung über diese Geschäftsordnung auf einen späteren Zeitpunkt zu verschieben.</p>
+                  <p>Der Kabinettsrat schließt sich diesem Vorschlage an.</p>
+               </div>
+               <div type="top" xml:id="krp-0050_top02">
+                  <head>
+                     <label>
+                        <num n="2">2.</num>
+                        <seg>Vorbereitung der nächstwöchigen Parlamentstagung.</seg>
+                     </label>
+                  </head>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> teilt mit, dass der Hauptausschuss den Wunsch ausgesprochen habe, es mögen die Sitzungen der Nationalversammlung bereits in der nächsten Woche wieder aufgenommen und hiebei zunächst in die Verhandlungen über das Budget <pb facs="krp-0050_r-0005"/>eingetreten werden.</p>
+                  <p>Sektionschef Dr. von <hi rend="#letterspaced">Grimm</hi> legt eine Reihe von Gründen dar, welche gegen die Abführung einer Budgetdebatte aus der Grundlage des bereits der Provisorischen Nationalversammlung vorgelegten Voranschlages sprechen, zumal dessen Ziffern dermalen bereits überholt seien, eine entsprechende Abänderung der Vorlage nach dem augenblicklichen Stande vor Ablauf von 14 Tagen aber technisch undurchführbar erscheine. Seines Erachtens könnte hiebei nicht an eine budgetmäßige Zusammenlegung der einzelnen Kapitel und Titel – unter Zugrundelegung der jüngsten Änderungen in den Kompetenzen einer Reihe von Staatsämtern – geschritten werden, es wäre dem bisherigen Voranschlage lediglich eine Vollzugsanweisung, betreffend die durch die Zusammenlegung mehrerer Staatsämter bedingten formellen Übertragungen der Anweisungskompetenz, anzuschließen, wobei allerdings vorausgesetzt werden müsse, dass aus diesen Kompetenzübertragungen dem Staate kein Mehrerfordernis erwachse.</p>
+                  <p>Nachdem noch Staatssekretär Dr. <hi rend="#letterspaced">Schumpeter</hi> betont hatte, <pb facs="krp-0050_r-0006"/>dass auch eine Debatte über die allgemeinen Richtlinien der künftigen Finanzpolitik unter den augenblicklichen Umständen kaum durchführbar erscheine, beschließt der Kabinettsrat über den Antrag des Vorsitzenden, es sei dem Hauptausschusse zu empfehlen, unter diesen Umständen von einer Budgetdebatte abzusehen.</p>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> bringt sodann zur Kenntnis, dass alle Vorlagen, welche die Regierung während der nächstwöchigen Parlamentstagung einzubringen gedenkt, bereits in der nächsten, bzw. übernächsten Kabinettsratssitzung zur Durchberatung zu bringen sein werden.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Bauer</hi> weist auf die politische Notwendigkeit hin, dass der Nationalversammlung Vorlagen unterbreitet werden, die die Aufmerksamkeit und das Interesse der breitesten Öffentlichkeit in Anspruch nehmen, worauf die Staatssekretäre Dr. von <hi rend="#letterspaced">Bratusch</hi>, Dr. <hi rend="#letterspaced">Deutsch</hi>, <hi rend="#letterspaced">Stöckler</hi>, <hi rend="#letterspaced">Hanusch</hi>, Ing. <hi rend="#letterspaced">Zerdik</hi>, sowie Unterstaatssekretär Dr. <hi rend="#letterspaced">Ellenbogen</hi> und der <hi rend="#letterspaced">Vorsitzende</hi> selbst die Regierungsvorlagen <pb facs="krp-0050_r-0007"/>bekanntgeben, die sie während der nächsten Parlamentstagung einzubringen beabsichtigen und die daher bereits in den nächsten zwei Kabinettsratssitzungen werden zur Beratung gestellt werden.</p>
+               </div>
+               <div type="top" xml:id="krp-0050_top03">
+                  <head>
+                     <label>
+                        <num n="3">3.</num>
+                        <seg>Behandlung der in der Nationalversammlung eingebrachten Interpellationen.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Loewenfeld-Russ</hi> wirft die Frage auf, wie die in der Nationalversammlung eingebrachten Interpellationen seitens der Ressorts zwecks Erzielung tunlichster Einheitlichkeit zu behandeln wären.</p>
+                  <p>Nach einer hierüber abgeführten kurzen Debatte stellt der <hi rend="#letterspaced">Vorsitzende</hi> fest, dass Interpellationen rein sachlichen Inhaltes, falls sie politisch ohne Bedeutung sind, von den Staatssekretären schriftlich und zwar ohne vorherige Mitteilung <pb facs="krp-0050_r-0008"/>der Regierungserklärung an den Kabinettsrat beantwortet werden können. Was hingegen alle anderen, namentlich die politisch heiklen Anfragen, sowie die mündlich zu beantwortenden Interpellationen anbelange, so müsse es der Bedachtsamkeit und Vorsicht jedes einzelnen Staatssekretärs überlassen bleiben, ob er eine konkrete Interpellation ohne vorherige Mitteilung der Regierungserklärung an den Kabinettsrat beantworten könne; in allen zweifelhaften Fallen müsse an dem Grundsatze festgehalten werden, dass Interpellationsbeantwortungen, die eine politische Verpflichtung der Staatsregierung irgendwie begründen könnten, unbedingt vorher dem Kabinettsrate zur Genehmigung vorzulegen sein werden.</p>
+               </div>
+               <div type="top" xml:id="krp-0050_top04">
+                  <head>
+                     <label>
+                        <num n="4">4.</num>
+                        <seg>Regelung der Verordnungsgewalt.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Loewenfeld-Russ</hi> macht darauf aufmerksam, dass infolge Abänderung der bisherigen Verfassung, insbesondere infolge Wegfalles des Staatsrates, eine entsprechende Änderung der gegenwärtigen Bestimmungen über die Erlassung von Vollzugsanweisungen (Unterschriften, Eingangsformel u. dgl.) erforderlich erscheine.</p>
+                  <p>Der Kabinettsrat beschließt über Antrag des <hi rend="#letterspaced">Vorsitzenden</hi>, dass der Gesetzgebungsdienst der Staatskanzlei beauftragt werde, die Staatsämter im Gegenstande umgehend zu instruieren.</p>
+                  <p><pb facs="krp-0050_r-0009"/></p>
+               </div>
+               <div type="top" xml:id="krp-0050_top05">
+                  <head>
+                     <label>
+                        <num n="5">5.</num>
+                        <seg>Antrag des Vorsitzenden der Staatskommission für Kriegsgefangene auf Einsetzung einer deutschösterreichischen Mission für Kriegsgefangene in Bern.</seg>
+                     </label>
+                  </head>
+                  <p>Der Vorsitzende bringt zur Kenntnis, dass der Vorsitzende der Staatskommission für Kriegsgefangene Hofrat Prof. Dr. Aemilian Schöpfer die Einsetzung einer offiziellen „deutschösterreichischen Mission für Kriegsgefangene in Bern" angeregt habe, welche die bisher von General Slatin-Pascha ohne staatliche Beauftragung geführten einschlägigen Angelegenheiten zu übernehmen hätte.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Deutsch</hi> macht darauf aufmerksam, dass regierungsseitig beabsichtigt sei, eine eigene Staatskommission mit diesen Aufgaben zu betrauen, weshalb es sich empfehlen dürfte, den vorliegenden Antrag dermalen zurückzustellen, zumal die bezüglichen Vorschläge des Staatsamtes für Heer[es]wesen der Regierung bereits in der nächsten Kabinettsratssitzung werden unterbreitet werden.</p>
+                  <p>Der Kabinettsrat schließt sich dieser Auffassung an.</p>
+               </div>
+               <div type="top" xml:id="krp-0050_top06">
+                  <head>
+                     <label>
+                        <num n="6">6.</num>
+                        <seg>Bestellung einer zwischenstaatsamtlichen Kommission zur Vorberatung über die Durchführung der Reorganisation der Staatsämter (Zusammenlegungskommission).</seg>
+                     </label>
+                  </head>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> führt aus, dass das Gesetz über die Staatsregierung <pb facs="krp-0050_r-0010"/>eine Änderung der bisherigen Einteilung der Staatsämter vorsehe, die bezüglichen gesetzlichen Bestimmungen jedoch nur allgemeine Grundsätze enthalten, weshalb es sich nunmehr darum handle, diese Anordnungen raschestens zur Durchführung zu bringen. Zu diesem Zwecke schlage er die Bildung einer zwischenstaatsamtlichen Kommission vor, in welche jedes beteiligte Staatsamt einen Funktionär zu entsenden hätte, der technisch-administrativ über eine umfassende Geschäftskenntnis verfüge. Die Kommission, welche unter dem Vorsitze eines Vertreters der Staatskanzlei bereits am Donnerstag um 10 Uhr Vormittag in der Staatskanzlei zusammenzutreten habe, werde sich aber lediglich mit der Regelung der Kompetenzabgrenzung in technisch-administrativer Hinsicht zu befassen haben. Mit Fragen der Zusammenlegung von Staatsämtern rücksichtlich des inneren Dienstes hätte sich die Kommission jedenfalls nicht zu befassen.</p>
+                  <p>Der Kabinettsrat beschließt nach einer kurzen Debatte, an der sich die Staatssekretäre <hi rend="#letterspaced">Paul</hi>, <hi rend="#letterspaced">Hanusch</hi> <pb facs="krp-0050_r-0011"/>und Dr. <hi rend="#letterspaced">Bauer</hi> beteiligten, im Sinne des Antragstellers.</p>
+               </div>
+               <div type="top" xml:id="krp-0050_top07">
+                  <head>
+                     <label>
+                        <num n="7">7.</num>
+                        <seg>Verwaltung des Hofärars.</seg>
+                     </label>
+                  </head>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> weist darauf hin, dass durch das Gesetz über die Staatsregierung das Amt des Staatsnotars aufgehoben worden sei. Da sich dieser unter anderem auch mit der Verwaltung und Liquidation des Hofärars befasst habe, erscheine es notwendig, nunmehr bis zu einer einschlägigen gesetzlichen Regelung eine Verfügung über diesen Agendenkreis zu treffen. Für diese Funktion schlage er den vormaligen Unterstaatssekretär im Staatsamte für Finanzen Dr. Ritter von <hi rend="#letterspaced">Beck</hi> vor.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Bauer</hi> macht darauf aufmerksam, dass die Nationalstaaten für die Verwaltung des Hofärars die Einsetzung eines Bevollmächtigtenkollegiums verlangt hätten, was nach langwierigen Verhandlungen seinerseits im Prinzipe habe zugestanden werden müssen. Die nach dem Vorschlage des Vorsitzenden dermalen mit der Verwaltung des Hofärars zu betrauende Persönlichkeit hätte daher nach einer allfälligen Konstituierung des Bevollmächtigtenkollegiums <pb facs="krp-0050_r-0012"/>als deutschösterreichischer Vertreter in dieser Körperschaft zu fungieren.</p>
+                  <p>Der Kabinettsrat beschließt im Sinne des Antrages des Vorsitzenden, den Sektionschef Dr. Ritter von Beck mit der vorläufigen Verwaltung des Hofärars zu betrauen, bzw. ihn im Falle des Zustandekommens des Bevollmächtigtenkollegiums als deutschösterreichischen Vertreter in dieses zu entsenden. Über eine Anregung des Staatssekretärs Dr. Bauer wird dem Genannten insbesondere auch die Aufgabe obliegen, festzustellen, was an hofärarischem Gute außerhalb Deutschösterreichs vorhanden sei.</p>
+                  <p>Weiters beschließt der Kabinettsrat, die Staatsämter seien aufzufordern, dafür Sorge zu tragen, dass für die Liquidierung der auf fremden Staatsgebieten liegenden Werte deutschösterreichische Liquidatoren bestellt werden, die den Sukzessionsstaaten im Wege des Staatsamtes des Äußern zu notifizieren sein werden. Diese Anweisung gelte auch für den mit der Verwaltung der hofärarischen Güter nunmehr betrauten obgenannten Funktionär.</p>
+                  <p><pb facs="krp-0050_r-0013"/></p>
+               </div>
+               <div type="top" xml:id="krp-0050_top08">
+                  <head>
+                     <label>
+                        <num n="8">8.</num>
+                        <seg>Militärversorgungsgesetz.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Hanusch</hi> legt dem Kabinettsrate den Entwurf eines Gesetzes über Versorgungsansprüche aus Anlass militärischer Dienstleistungen (Militärversorgungsgesetz) vor und führt aus, dass dieser Entwurf das Ergebnis langwieriger zwischenstaatsamtlicher Verhandlungen darstelle, die nahezu in allen Einzelfragen zu einer Übereinstimmung der Auffassungen geführt hätten. Lediglich in der Frage der Terminierung des Gesetzes sowie über die im § 63 vorgesehene Abstufung der Teuerungszulagen bestehe noch eine Meinungsverschiedenheit zwischen dem Staatsamte der Finanzen und dem für soziale Verwaltung.</p>
+                  <p>Über diese beiden Fragen entwickelte sich eine längere Debatte, an der sich außer dem Referenten noch der Vorsitzende, die Staatssekretäre Dr. <hi rend="#letterspaced">Schumpeter</hi>, Dr. <hi rend="#letterspaced">Bauer</hi> sowie die Sektionschefs Dr. von <hi rend="#letterspaced">Grimm</hi> und Dr. <hi rend="#letterspaced">Kaan</hi> beteiligten und die zu dem Beschlusse des Kabinettsrates führte, dass</p>
+                  <list>
+                     <item n="1"><label>1.)</label> in das Gesetz eine Bestimmung Aufnahme zu finden habe, welche dessen Geltung „bis zur reichsgesetzlichen Regelung der Invalidenversor<pb facs="krp-0050_r-0014"/>gung“ festlegt, dass</item>
+                     <item n="2"><label>2.)</label> die im § 63 vorgesehenen Teuerungszulagen vorläufig nur für ein Jahr (im Ausmaße von 50 %) und nur beschränkt auf die Renten selbst, nicht aber auf andere Leistungen (Krankengelder u. dgl.) festzusetzen seien.</item>
+                  </list>
+                  <p>Über Antrag des Staatssekretärs Dr. von <hi rend="#letterspaced">Bratusch</hi> beschließt ferner der Kabinettsrat dem § 38, betreffend die Übertragung, Pfändung und Verpfändung der in diesem Gesetze geregelten Ansprüche, eine solche Fassung zu geben, dass die Exekutionsfreiheit dieser Ansprüche bis zum Ausmaße von 2.400 K gewährleistet erscheint. Eine bezügliche Formulierung wird das Staatsamt für Justiz dem Staatsamte für soziale Verwaltung zu übermitteln haben.</p>
+                  <p>Endlich hat der Kabinettsrat über einen einschlägigen Antrag des Staatssekretärs Dr. Bauer seiner grundsätzlichen Auffassung dahin Ausdruck gegeben, dass anspruchsberechtigt im Sinne dieses Gesetzes nur jene deutschösterreichischen Staatsbürger sein sollen, die am 1. März 1919 die deutschösterreichische Staatsbürger<pb facs="krp-0050_r-0015"/>schaft bereits besessen haben oder in einer Gemeinde des deutschösterreichischen Staates heimatsberechtigt sind. Eine diese Gedanken berücksichtigende Fassung zu formulieren, wird dem Staatsamte für soziale Verwaltung überlassen.</p>
+               </div>
+               <div type="top" xml:id="krp-0050_top09">
+                  <head>
+                     <label>
+                        <num n="9">9.</num>
+                        <seg>Zuckerlieferungsvertrag mit der tschechoslowakischen Regierung.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Loewenfeld-Russ</hi> berichtet über das Ergebnis der mit der tschechoslowakischen Regierung in Prag abgeführten Verhandlungen wegen Belieferung Deutschösterreichs mit Zucker bis 30. September l. J. Hienach würden sich die Tschechen zur Lieferung von insgesamt 10.000 Waggons Zucker an uns verpflichten; sie verlangen jedoch die Bezahlung in tschechischer Währung, ferner verweigern sie die bereits an der Erzeugungsstätte eingehobene Zuckersteuer, wodurch sich der Preis für den Verbrauchszucker auf rund 5 K pro kg stellen würde. Der Zuckerpreis für industrielle Zwecke würde sich infolge weiterer diesbezüglicher Preisforderungen durch die Tschechen noch um ein Beträchtliches u. zw. bis bisher 290 K auf 540 K per 100 kg erhöhen; die tschechoslowakische Regierung verfolge damit offenbar das Ziel, unsere <pb facs="krp-0050_r-0016"/>Zuckerwarenindustrie außer Konkurrenz zu setzen.</p>
+                  <p>Überdies sei in Prag noch eine Reihe von Kompensationsforderungen gestellt und hierüber vom Staatsamte für Handel ein eigener Vertrag – vorbehaltlich der Genehmigung der Regierung – abgeschlossen worden.</p>
+                  <p>Wenn auch die uns gestellten Bedingungen als äußerst drückend zu bezeichnen seien, so glaube der sprechende Staatssekretär unter den gegenwärtigen Zwangsverhältnissen, dem Kabinettsrate dennoch den Antrag auf Ratifizierung dieser beiden Verträge unterbreiten zu sollen.</p>
+                  <p>Staatssekretär Ing. <hi rend="#letterspaced">Zerdik</hi> teilt sodann den Inhalt des vom Staatsamte für Handel [und Gewerbe, Industrie und Bauten] formulierten Vertragsentwurfes mit, worauf der Kabinettsrat diese beiden Verträge genehmigt und den Staatssekretären für Volksernährung und für Handel die Ermächtigung zur Ratifizierung der abgeschlossenen Übereinkommen erteilt.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Loewenfeld-Russ</hi> kommt schließlich noch auf die Frage zurück, in welcher <pb facs="krp-0050_r-0017"/>Weise der Entgang hereingebracht werden könnte, welchen der Staatsschatz dadurch erleide, dass die tschechoslowakische Regierung die Überweisung der Zuckersteuer nach Deutschösterreich verweigere (Staatsfinanzieller Entgang per Monat 6–7 Millionen K).</p>
+                  <p>Hierüber entwickelte sich eine eingehende Debatte, an der sich außer dem Referenten noch der Vorsitzende, Staatssekretär Dr. <hi rend="#letterspaced">Bauer</hi> und Sektionschef Dr. <hi rend="#letterspaced">Joas</hi> beteiligten. Dabei tritt die Auffassung zutage, dass die Frage, ob aus diesem Anlasse eine Erhöhung des Zuckerpreises im Ausmaße der von den Tschechen zurückgehaltenen Zuckersteuer im administrativen Wege verfügt werden könnte, ehestens gelöst werden müsse. Die Beschlussfassung hierüber wurde der nächsten Kabinettsratssitzung vorbehalten.</p>
+                  <p/>
+               </div>
+            </div>
+            <div type="anhaenge">
+               <p><pb facs="krp-0050_a01-0001"/>Streng vertraulicher Anhang zum Kabinettsprotokoll Nr. 50.</p>
+               <div n="1">
+                  <head/>
+                  <div type="a01_protokoll">
+                     <p>Staatssekretär <hi rend="#letterspaced">Hanusch</hi> erbittet und erhält die Zustimmung des Kabinettsrates zur Stellung eines Antrages, betreffend die Ernennung des ehemaligen Staatssekretärs für Volksgesundheit Dr. Ignaz Kaup zum Sektionschef über den systemisierten Stand im Staatsamte für soziale Verwaltung.</p>
+                     <p/>
+                  </div>
+               </div>
+            </div>
+            <div type="stenogramme">
+               <div n="1">
+                  <head>[KBR 50, 17. März 1919, Stenogramm]</head>
+                  <p><pb facs="krp-0050_s01-0001"/>Nr. 50 vom 17. /3.</p>
+                  <p>1. Renner: Begrüßt aufs freundlichste [die neuen Kabinettsmitglieder] und zunächst Mitteilung, dass Fink verhindert ist teilzunehmen. Stöckler wahrscheinlich Verzögerung ....</p>
+                  <p>Tagesordnung bekannt, Formalien, dann einige Worte über Dienstantritt. </p>
+                  <p>Sit[uation], sich anmelden, die leitenden Beamten begrüßen und Amt übernehmen. Dienst des Kabinetts wird am klarsten werden, dass wir eine Geschäftsordnung </p>
+                  <p>ausgeben.</p>
+                  <p>Redner bespricht die Geschäftsordnung.</p>
+                  <p>Wenn Staatskanzlei verhalten sein sollte, von allen Beschlüssen jedem Staatsamt eigene Ausfertigungen hinauszugeben, wäre das Vielschreiberei. Das auf das Staatsamt Bezügliche muss ausgezogen und eine </p>
+                  <p>bezügliche Sektion hinausgegeben werden.</p>
+                  <p>Bittet, pünktlich anfangen und Schluss 6h.</p>
+                  <p>Bauer: Vertretungsbefugnis: auch eine andere Vertretung neben dem Staatssekretär und Unterstaatssekretär.</p>
+                  <p>Renner: Fachreferenten können immer mitgenommen werden, aber nur zu dem betreffenden Punkt. Unbedingte Anwesenheit aber notwendig. Jetzt höhere Verantwortung weil Staatsrat weggefallen; </p>
+                  <p>Kabinettsrat belastet mit der vollen politischen Verantwortung.</p>
+                  <p>Schumpeter: Einvernehmliches Vorgehen sehr zu begrüßen. Es hat keinen Zweck, dass der Kabinettsrat mit langen Beratungen belastet wird. Unbedingt notwendig, zu fragen, was etwas kostet. </p>
+                  <p>Vorlagen die Ausgaben betreffend nicht ohne vorherige Fühlung mit der Finanz vor den Kabinettsrat zu bringen.</p>
+                  <p>Renner: Beschlüsse fassen in einem späteren Stadium; nur ins Protokoll und dann sehen, wie es sich bewährt. </p>
+                  <p>[<hi rend="#i">Rechter Rand</hi>:] Sachliche und möglichst rasche </p>
+                  <p>Verhandlungen im Kabinettsrat, die wieder </p>
+                  <p>eine vorherige Kenntnis des </p>
+                  <p>Gegenstandes erfordern [...].</p>
+                  <p>2. Renner: Im Hauptausschuss [wurde der] Wunsch ausgesprochen, die Parlamentsverhandlungen Dienstag oder Mittwoch wieder aufzunehmen und sie damit zu beginnen, dass man </p>
+                  <p>in die Verhandlungen des ordentlichen Budgets eintritt. Es fragt sich nun, ob wir die alte Budgetvorlage übernehmen können oder nicht. </p>
+                  <p>Nun eingetreten die Änderungen der Staatsämter und daher Frage, ob möglich.</p>
+                  <p>Grimm: Halte es nicht für zweckmäßig über diesen Voranschlag, wie er vorliegt, eine Budgetberatung zu eröffnen da die Ziffern vollkommen überholt sind. </p>
+                  <p>Die Ziffern sind heute schon um 100% überschritten. Diese Anträge können wir aber nicht in einem Nachtrag - Budget mit Nachtrag vorlegen – </p>
+                  <p>einzubringen. Halte es für zweckmäßig, dass das Kabinett diesen Voranschlag adaptiert durch die notwendigen Umstellungen. </p>
+                  <p>Dass dieses Heft mit einer Vollzugsanweisung, in welcher die Übertragung zum Ausdruck kommt. </p>
+                  <p>Der - Dieser Voranschlag mit den Vollzugsanweisungen, in welcher diese Änderungen [<hi rend="#i">Einschub:</hi>] der Abänderungen der Staatssekretäre [<hi rend="#i">Einschub Ende</hi>] zum Ausdruck kommen. </p>
+                  <p>Aber nicht in einer budg[etären] Zusammenlegung der Kapitel und Titel.</p>
+                  <p>Der Voranschlag müsste so, wie er ist, bleiben, nur eine Vollzugsanweisung angeschlossen werden, wo nur die formellen Übertragungen der </p>
+                  <p>Überweisungskompetenzen ersichtlich gemacht sind. Voraussetzung ist allerdings, dass bei dieser Auseinanderlegung absolut kein Mehrerfordernis </p>
+                  <p>entstehen darf (also ganz ausgeschlossen etwa Personalansprüche).</p>
+                  <p><pb facs="krp-0050_s01-0002"/>In 5-8 Tagen könnte [man] das mit den übrigen Zentralstellen dann drucken, so dass vor 14 Tagen unmöglich. </p>
+                  <p>Jetzt wäre es jedenfalls nicht zweckmäßig, mit einer solchen Budget-Debatte einzusetzen.</p>
+                  <p>Renner: Unter Umständen wäre es zweckmäßig, dem Hauptausschuss zu empfehlen, von einer Budgetdebatte jetzt abzusehen.</p>
+                  <p>Schumpeter: Es ist das ausgeschlossen, ein überholtes Budget einzubringen. Ehe nicht gewisse finanzielle Maßregeln - nicht ausgearbeitet sind, sollte man nicht eintreten in eine Debatte. </p>
+                  <p>Eine eigentliche Debatte über die Richtlinien der Finanzpolitik kann jetzt mit Nutzen kaum abgeführt werden.</p>
+                  <p>Renner: Sohin Antrag, dem Hauptausschuss [mitzuteilen], dass wir jetzt können - [keine] Budgetdebatte empfehlen können.</p>
+                  <p>Bis Donnerstag Mittwoch im ordnungsmäßigen Weg alle Vorlagen, die für die nächste Parlamentstagung einzubringen sind, sind einzubringen. <lb/></p>
+                  <p>Die fertiggestellten Anträge wären also schon Donnerstag Mittwoch an die Staatskanzlei zu bringen. </p>
+                  <p>Freitag kommen dann Vorlagen dran, die noch nicht fertig sind.</p>
+                  <p>Bratusch: Entworfen ist eine Vollzugsanweisung [<hi rend="#i">Einschub:</hi>] aufgrund des Ermächtigungsgesetzes zwischen Justiz und Übergangswirtschaft [<hi rend="#i">Einschub Ende</hi>], über die Einrichtung von [<hi rend="#i">Einschub:</hi>] Einigungsämtern für [<hi rend="#i">Einschub Ende</hi>] Streitigkeiten aus den bestimmten Verträgen.</p>
+                  <p>Diese Vollzugsanweisung soll möglichst bald in ein Gesetz umgewandelt werden.</p>
+                  <p>Bauer: Halte es für eine politische Notwendigkeit, dass der National[versammlung] Dinge vorgelegt werden, welche die Aufmerksamkeit breitester Kreise auf sich lenken. Die </p>
+                  <p>breitere Öffentlichkeit muss interessiert werden. Ich weiß nicht, inwieweit das unmittelbar möglich ist. </p>
+                  <p>Vielleicht Heereswesen: die Vorlage über Kriegsgefangenenfürsorge.</p>
+                  <p>Deutsch: Die Arbeiten über die Kriegsgefangenenfürsorge können schon jetzt abgeschlossen werden. Wir wollen die Kommission umwandeln durch die Zuziehung von politischen Parteien .... </p>
+                  <p>Mittwoch wird es dem Kabinettsrat vorgelegt werden.</p>
+                  <p>Stöckler: Will vorlegen ein Gesetz betreffend Enteignung und Aufteilung der zu Jagdzwecken aufgekauften Bauerngüter. </p>
+                  <p>Ein Gesetz, das von der Salzburger [Landes]versammlung beschlossen wurde: Regelung der beiden Rechts- [<hi rend="#i">Einschub</hi>:] und Holzbezugs-[<hi rend="#i">Einschub Ende</hi>] Servitute. </p>
+                  <p>Dass die Staatsregierung nicht berechtigt ist, den Landesversammlungen Gesetzesvorlagen zu unterbreiten, das fehlt in den Verfassungsgesetzen.</p>
+                  <p>Hanusch: <hi rend="#s">Das Gesetz über die</hi> - ?Bäcker-Schutzgesetz, vollständiges Verbot der Nachtarbeit der Frauen und jugendlichen Hilfsarbeiter, Militärversorgung.</p>
+                  <p>Loewenfeld: Behandlung von Interp[ellationen] in der Nationalversammlung. Schriftlich ist es zwar möglich, gegen eine solche bin ich dann, wenn die Beantwortung in wenigen Tagen schon überholt ist. </p>
+                  <p>Frage: Sind solche Int[erpellation] von den einzelnen Staatssekretären zu beantworten?</p>
+                  <p>Renner: Interpellationen, die weder der Sache nach noch nach dem Antragsteller von Bedeutung sind, einfach schriftlich zu beantworten. </p>
+                  <p>Im Übrigen wird des zweckmäßig sein, wenn sich die betreffenden Staatssekretäre am Anfang oder Schluss erheben und mündlich beantworten. </p>
+                  <p>Frage soll es dem einzelnen Staatssekretär überlassen bleiben, die Beantwortung ohne Kenntnis des Kabinetts zu machen und es lediglich dem Takt des Einzelnen zu überlassen </p>
+                  <p>Es muss dem Takt [<hi rend="#i">Einschub:</hi>] des einzelnen Staatssekretärs [<hi rend="#i">Einschub Ende</hi>] überlassen werden, welche Interpellationen kein politisches Obligo begründen. Solche müssen dem Kabinett kurz dem Inhalt nach skizziert werden. </p>
+                  <p>Was die Brotpreiserhöhung anlangt, bittet Renner diese Maßregel für die zwei nächsten Wochen in Anspruch zu nehmen.</p>
+                  <p>Entweder Montag oder Mittwoch Sitzung der nächsten Woche. Es muss aber vorher der Hauptausschuss erreichbar sein.</p>
+                  <p>Frage an Staats[sekretär] für Justiz: Wir müssen daran gehen, ein neues Pressegesetz zu erlassen (von ganz anderen Gesichtspunkten muss es geleitet werden wie bisher; sich im Einvernehmen </p>
+                  <p>zu setzen mit den Pressevertretern; erwarte Vorschlag).</p>
+                  <p><pb facs="krp-0050_s01-0003"/>Justiz: Im Kreis einer Journ[alisten]-Vereinigung wird schon gearbeitet an einem Gesetz. Ob das eine geeignete Grundlage sein wird, kann ich noch nicht sagen. </p>
+                  <p>Wir wollen die Pressevertreter einladen zu einer Verhandlung zur Feststellung der Grundgesetze.</p>
+                  <p>Renner: Der erste Schritt soll sofort ergehen. Sofort einladen die Vertreter der Presse, damit der Öffentlichkeit unsere Absicht kundgemacht wird.</p>
+                  <p>Ellenbogen: Vorbereitung eines Entwurfes über den Ausbau der Wasserkräfte der Staatsbahnen in Vorarlberg und Tirol. Dürfte eine solche moralische Kompens[ation] sein.</p>
+                  <p>Glöckel: Es wäre auch durchführbar, einen Gesetzentwurf vorzulegen betreffend Koalitionsrecht.</p>
+                  <p>Zerdik: Einführung des 8-Stunden-Tages im Bergarbeiterbetrieb (schon Mittwoch).</p>
+                  <p>Loewenfeld: Die Staatskanzlei soll den Staatssekretären das Recht zur Erlassung von Vollzugsanweisungen (Unterschriften und Eingangsformel). </p>
+                  <p>Der Gesetzgebungsdienst der Staatskanzlei ist beauftragt, die Staatssekretäre zu instruieren über die formale Ausgestaltung der Vollzugsanweisungen.</p>
+                  <p>3. [Renner:] Eingabe Schoepfer: Da der Staatsrat nicht mehr besteht, hat das Kabinett dazu Stellung zu nehmen.</p>
+                  <p>Deutsch: Es wäre nicht klug, wenn wir jetzt die Komm[ission] beglaubigen wollten, wenn wir entschlossen sind, eine eigene Kommission zu bestellen. Bittet, dies zusammen zu machen mit der Gesetzesvorlage, die Mittwoch zur Verhandlung kommen wird.</p>
+                  <p>Renner: Wir behalten uns dies vor.</p>
+                  <p>4. Renner: Das Gesetz gibt uns keinen festen Termin, wann diese Zusammenlegung beendet sein soll. Erfordert sehr viele Beratungen, möchte die Anregung geben, dass eine zwischenstaatsamtliche </p>
+                  <p>Kommission zusammengesetzt wird, in die jedes Staatsamt denjenigen Funktionär entsendet, der technisch administrativ die größte Geschäftskenntnis besitzt. </p>
+                  <p>Diese Kommission soll den Artikel durchführen, der vorsieht die genauere Detailabgrenzung. Diese Kommission tritt in der Staatskanzlei zusammen und [wird] den Entwurf einer Detailzusammenlegung </p>
+                  <p>und Aufteilung der Dienste vorberaten. Dieser Entwurf wäre dann dem Kabinettsrat zu unterbreiten.</p>
+                  <p>Paul: Begrüßt die Ausführungen (wir wissen nicht, wohin die Postsparkasse hingehört). Die Kommission muss [eine] gebundene Marschroute haben und schnell arbeiten. </p>
+                  <p>Aber nur rein sachliche Arbeit und nicht verquickt mit Personalfragen.</p>
+                  <p>Renner: Wir nennen sie Zusammenlegungskommission. Jedes Staatsamt alten Stils muss einen Vertreter haben.</p>
+                  <p>Hanusch: Ich könnte es nicht verstehen, wenn diese Kommission eingreifen sollte in die zusammengelegten Ämter. Dies muss klargestellt werden. </p>
+                  <p>Die Kommission hat nur festzustellen, welche Kompetenz die neuen Ämter haben.</p>
+                  <p>Renner: Diese Vertreter hätten nicht die innere Zusammenlegung zu beeinflussen. Also doch nur die 10 neuen Staatsämter hätten vertreten zu sein. </p>
+                  <p>Grundsatz: jedes neue Staatsamt nominiert einen Vertreter. Die innere Zusammenlegung darf dadurch aber nicht aufgehalten werden, nur die </p>
+                  <p>Grenzstücke sollen klargelegt werden.</p>
+                  <p>Bittet, die Sache so fertigzustellen, dass die Kommission schon Donnerstag zusammentreten kann; in der Staatskanzlei; Vorsitz von der Staatskanzlei bestellt. </p>
+                  <p>Donnerstag 10h Vormittag.</p>
+                  <p>Bauer: Ursprünglich war nur formuliert eine Beamtenkommission, die das Gesetz im Einzelnen durchzuführen [hat]. Jetzt aber die Debatte auf ein anderes Gebiet geführt.</p>
+                  <p><pb facs="krp-0050_s01-0004"/>Renner: Im Wesentlichen handelt es sich um die Detaildurchführung des Gesetzes mit Ausschluss der inneren Dienstaufteilung im Staatsamt.</p>
+                  <p>5. Renner: Hofärar hat Verwalter verloren. Dieser Komplex kann nicht so bleiben.</p>
+                  <p>Bauer: <hi rend="#s">Beck als Bevollmächtigten</hi> mit der Verwaltung zu betrauen, sobald das Bevollmächtigungskollegium gebildet wird.</p>
+                  <p>Renner: Beck wird mit der Verwaltung betraut bzw. sobald das Bevollmächtigtenkollegium zustande [kommt], in demselben </p>
+                  <p>als deutsch-österreichischer Vertreter unsere Interessen zu wahren.</p>
+                  <p>Bauer: Ihm ist die Weisung zu geben, dass er sich interessiert, was an hofärarischem Gut außerhalb Wiens sich befindet. </p>
+                  <p>Hradschin und was sonst für Krongüter sich in Alt-Österreich befinden.</p>
+                  <p>Renner: Beck ist er auch verpflichtet, für das gesamte hofärarische Gut auch auf dem Gebiete der anderen Nationalstaaten sein Augenmerk zu lenken; diese Verpflichtung bis </p>
+                  <p>zur Bildung [des Kollegiums] der Bevollmächtigen über die Güter des Erzhauses werden wir ein anderes mal besprechen.</p>
+                  <p>Emolumente: Staatsamt für Finanzen hat sich zu interessieren.</p>
+                  <p>Grimm: Die Hoftheater-Frage - <hi rend="#s">Das Defizit wird</hi> -. Unterricht: Hofbibliothek etc. belassen beim Unterricht (Glöckel).</p>
+                  <p>Bauer: Dem Bevollmächtigen-Collegium wäre zu sagen, dass die Hoftheater auch ein Bestandteil sind; da Ihr kein Interesse habt daran, </p>
+                  <p>gebt sie uns in die Verwaltung. Nur Einstimmigkeit. Rechnungsmäßig gehört es zusammen; aber wir werden es verwalten.</p>
+                  <p>Stöckler: Wir schaffen damit ein gefährliches Präjudiz. Was die Tschechen haben, gilt als ihr unbestrittenes Eigentum. </p>
+                  <p>Wenn wir das Collegium hier anerkennen, so präjudizieren wir uns sehr damit.</p>
+                  <p>Bauer: Ursprünglich Bevollmächtigungs-Collegium nur beim Kriegsministerium, MS, LVM und Finanzministerium. </p>
+                  <p>Die anderen Nationen haben dann verlangt, solche Kollegien auch bei allen Staatsämtern und [beim] Hofärar. </p>
+                  <p>Schließlich musste ich eine Konzession machen: das Hofärar wurde als Konzession herausgegriffen. </p>
+                  <p>Der Fehler, den wir begehen: während die anderen sich um das gemeinsame Gut kümmern, kümmern wir uns nicht darum. Das kann nur jedes Staatsamt </p>
+                  <p>machen.</p>
+                  <p>Renner: Zurückzukommen auf den Beschluss vom 25. /2. </p>
+                  <p>Staatssekretäre Sorge tragen, dass zur Liquidation der auf fremden Staaten liegenden Liquidationskommissionen Bevollmächtigte [bestimmt] und den fremden </p>
+                  <p>Staaten durch das Staatsamt des Äußeren notifiziert werden.</p>
+                  <p>Weisung an den Staatsnotar, an den Beauftragten Beck.</p>
+                  <p>6. Militärversorgungsgesetz (Kaan)</p>
+                  <p>Hanusch: Bespricht die einzelnen Differenzpunkte mit dem Staatsamt für Finanzen. </p>
+                  <p>[Die] Ausgaben [werden sich] immerhin im II. Jahr auf 360 Millionen Kronen jährlich belaufen. </p>
+                  <p>Die Terminierung des Gesetzes wäre abzulehnen (Staatsamt für Finanzen); bittet, auch §63 anzunehmen.</p>
+                  <p><pb facs="krp-0050_s01-0005"/>Finanzen: Stehe auf dem Standpunkt Hanuschs. Ein Staat, der höchstens 1.500 Millionen erklärte Einnahmen hat, trägt so etwas schwer. Trotzdem brauchen wir nicht das Gesetz zu terminieren.</p>
+                  <p>Renner: <hi rend="#s">Wenn man das Gesetz</hi> - Frage, ob vorbehaltlich der reichsrechtlichen Regelung der Frage ....</p>
+                  <p>Hanusch: Man muss auch die gegenwärtige politische Situation berücksichtigen. Ich kenne die Schwierigkeiten unserer Finanzlage. Die Regierung darf nicht als eine invalidenfeindliche </p>
+                  <p>ausschauen. Damit schafft man keine Ruhe.</p>
+                  <p>Renner: Frage, soll das Gesetz gestellt sein, dass jeder Invalide die Zusage bekommt, dauernd eine Versorgung zu genießen oder soll die Versorgung nur </p>
+                  <p>auf eine bestimmte Zeit in Aussicht genommen werden (terminiert oder nicht terminiert). Mit Stimmenmehrheit für dauernd.</p>
+                  <p>Teuerungsskala (§63): Wenn wir in einem Jahr wieder Verhandlungen machen, so kommen wir teuer heraus.</p>
+                  <p>Schumpeter: Verhandlungen kommen ja ohnehin. Wenigstens Konzession bei der Skala.</p>
+                  <p>Hanusch: Wenn wir die Löhne von 1918 genommen hätten, wäre die Finanzverwaltung noch schlechter herausgekommen. Spricht sich gegen Streichung der Skalen </p>
+                  <p>ab 13 aus.</p>
+                  <p>Grimm: Dem Anschluss an Deutschland wird viel zu wenig Rechnung getragen. In der heutigen Zeit ist alles, was nach einer Fürsorgeaktion aussieht - wird von allen Kreisen aufgegriffen </p>
+                  <p>und Konsequenzen gezogen. Krankengeld: Bezirkskrankenkassen.</p>
+                  <p>Vorschlag: Die Teuerungszuschläge nur für ein Jahr und nur beschränkt auf die Rente, nicht auf die anderen Leistungen.</p>
+                  <p>Schumpeter: Bittet um kleine Konzession.</p>
+                  <p>Bauer: Einleuchtend erscheint mir der Hinweis auf Deutschland. Bis zur Regelung durch ein deutsches Reichsgesetz finden darauf die folgenden Bestimmungen Anwendung.</p>
+                  <p>Hanusch: Einverstanden, dass die Zulage nur auf die Rente gegeben wird und nicht auf das Krankengeld und dass eine Klausel hineinkommt betreffend </p>
+                  <p>Anschluss an Deutschland: Bis das deutsche Reichsgesetz Anwendung findet. Damit wird ausgeschlossen, dass es erworbenes Recht ist.</p>
+                  <p>Beschluss: Ein Jahr, 50%.</p>
+                  <p>Renner: Exekutionsfreiheit (§38). </p>
+                  <p>2.400 Kronen als Grenze. Staatsamt für Justiz wird eine Formulierung dem Staatsamt übermitteln.</p>
+                  <p>Renner: Frage des §1, Heimatszuständigkeit.</p>
+                  <p>Bauer: 1.) Deutsch-österreichische Staatsbürger, die die Staatsbürgerschaft schon am Tag der Kundmachung schon gehabt haben. </p>
+                  <p>2.) Alle in einer deutsch-österreichischen Gemeinde heimatberechtigten Personen. </p>
+                  <p>[<hi rend="#i">Neben Summenklammer:</hi>] Am 1. /2. schon zuständig; </p>
+                  <p>die in einer österreichischen Heimat[gemeinde] zuständig.</p>
+                  <p>Renner: Es ist sehr wesentlich bei der Beratung des Gesetzes, dass von Seite der zwei großen Parteien Abänderungsanträge nicht mehr gestellt werden. </p>
+                  <p>Also notwendig, dass der Staatssekretär selbst in den Parteienversammlungen selbst referiert; ein Beamter auch in den großdeutschen Vereinigungen.</p>
+                  <p>Hanusch: Das wird geschehen.</p>
+                  <p><pb facs="krp-0050_s01-0006"/>[<hi rend="#i">Rechtes Obereck:</hi>] Durch die erhöhten Preise verursachte Verteuerung auch die Frage besprochen wird, ob </p>
+                  <p>die Zuckersteuer, welche von den Tschechoslowaken eingesteckt wird, durch eine Preiserhöhung in Deutsch-Österreich </p>
+                  <p>von der Finanzverwaltung hereingebracht werden kann. Leg[ale] Basis bezweifelt. </p>
+                  <p><hi rend="#s">Frage der Zuckerpreise</hi> Fortsetzung der Besprechung der Zuckerpreise.</p>
+                  <p>Loewenfeld: Ad 6c): Zuckervertrag. </p>
+                  <p>Mit dem Zucker sind mehr [oder] weniger die wichtigsten wirtschaftlichen Fragen in Verbindung gebracht worden. </p>
+                  <p>Die Tschechoslowaken wollten den Vertrag nur auf 2 Monate eingehen. Erzielt wurde schließlich, dass der Vertrag bis 31. /9. abgeschlossen werden konnte. </p>
+                  <p>Belieferung bis zu diesem Zeitpunkt Übernahme aufgrund einer durchschnittlichen Kopfquote, die höher ist als die heutige. Nachlieferungen haben schon begonnen. </p>
+                  <p>Bevor wir nicht langsam auf allen Gebieten den Zuckermangel behoben haben, können wir mit einer Erhöhung nicht beginnen. </p>
+                  <p>Tschechoslowakei wollte, [dass wir] in der jeweils von ihnen zu bestimmenden Währung zahlen. Endlich abgemacht, dass in tschechoslowakischer Währung gezahlt wird. </p>
+                  <p>Preisforderung musste nachgegeben werden: Effektiv hat die Tschechoslowakei für den Verbrauchszucker (für den Konsum): 74 Kronen pro 100 Kilo [mehr gefordert], </p>
+                  <p>statt 246 mit 320 Kronen also um 74 Kronen mehr.</p>
+                  <p>Beim Zucker für industrielle Zwecke (Bäcker, Marmeladeerzeugung etc): bisher 290 Kronen, jetzt 540 Kronen (Kampf gegen unsere Zuckerwarenindustrie).</p>
+                  <p>Frage der Steuern: bekanntlich [werden] bei der Produktion eingehoben 54 Kronen pro 100 Kilo. Das macht 6-7 Millionen Kronen monatlich aus. </p>
+                  <p>Dann ein Abkommen getroffen worden über Melasselieferung (wir verpflichteten uns, dafür die entsprechende Hefe nach Böhmen zu schicken). </p>
+                  <p>Zwischen diesen Abkommen ist ein unbedingter Konkurs hergestellt worden.</p>
+                  <p>Bevor Antrag auf Ratifizierung dieses Vertrages: diese Erhöhung um 74 Kronen ist nicht alles. Nun müssen wir in tschechoslowakischer Währung </p>
+                  <p>zahlen (Agio 20%), pro 100 Kilo weitere Steigerung um ....</p>
+                  <p>Wir müssen eine sehr strenge Zentralisierung einführen (über die Zuckerstelle) nur dadurch [ist] möglich eine gleichmäßige Zuckerpreiserstellung. </p>
+                  <p>Damit nicht der einzelne den Agio-Schwankungen unterworfen wäre. Dadurch vorbereitet das Zuckermonopol.</p>
+                  <p>Was Steuer anbelangt: nachdem dem Staatsamt für Finanzen daraus die Steuer entgeht, soll diese im Wege einer Preiserhöhung hereingebracht werden ([nach] Anschauung [des] Staatsamtes für Finanzen). </p>
+                  <p>Loewenfeld meint, dass wir das ohne Steuer nicht tun können.</p>
+                  <p>Heute 3 Kronen 04 Heller [pro] Kilo Zucker + </p>
+                  <p>1.92 = </p>
+                  <p>4.96. 	Renner: Die Frage der Übernahme der Steuer im bloß administrativen Weg erscheint mir sehr anfechtbar. </p>
+                  <p>Die Sache sollte also im Gesetzesweg gemacht werden. Das hätte den Vorteil, dass man die ganze Sache </p>
+                  <p>motivieren kann vor der Öffentlichkeit. Es fragt sich nur, ob die Tarife nicht so durchgerechnet werden könnten, </p>
+                  <p>dass ein Einheitssatz ohne [Rücksicht auf die] geographische Lage möglich wäre. Das ist allerdings nicht unbedingt berechtigt. </p>
+                  <p>In welcher Form ließe sich das parlamentarisch machen?</p>
+                  <p>Bauer: Man mutet also den Leuten zu, eine doppelte Zuckersteuer zu bezahlen. Rohrzucker enorm. Glaube nicht, dass die Nationalversammlung darauf eingeht.</p>
+                  <p>Joas: Glaube behaupten zu dürfen, dass unter den heutigen Verhältnissen ein Verzicht auf eine so wichtige Einnahme kaum vertretbar ist. </p>
+                  <p>Nach unserem Zuckersteuergesetz ist die Steuer einzuheben ....</p>
+                  <p>Renner: Man wird sich formal helfen, wenn man ein generelles Gesetz beschließt, das ....</p>
+                  <p>Ratifikation wird erteilt.</p>
+                  <p><pb facs="krp-0050_s01-0007"/>Zerdik: Komp[ensation] außer Zucker Sacharin .... staatliche […].</p>
+                  <p>Loewenfeld: Wir bekommen über 10.000 Waggons Zucker bis 1. /10.</p>
+                  <p>Renner: Wie steht es mit der Bezahlung; stehen die Komp[ensationen] im Verhältnis zu den Preisen?</p>
+                  <p>Ratif[ikations]-Telegramm zu fertigen durch Loewenfeld und Zerdik.</p>
+                  <p>Schluss 7h.</p>
+                  <p>Hanusch: Kaup wahrscheinlich nicht mehr Unterstaatssekretär. Um ihm doch teilweise Rechnung zu tragen, Vortrag auf wirklichen Sektionschef über den systemisierten Stand.</p>
+                  <p>Angenommen</p>
+               </div>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

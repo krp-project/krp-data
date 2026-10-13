@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href='http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:acdh="https://vocabs.acdh.oeaw.ac.at/schema#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xml:lang="de">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="a" type="main" n="0187">Kabinettsprotokoll Nr. 187 vom 1. Juni 1920</title>
+            <title level="m" type="main" n="01">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <title level="m" type="sub" n="">Renner III (17. Oktober 1919 – 7. Juli 1920)</title>
+            <meeting>
+               <placeName key="https://d-nb.info/gnd/4066009-6">Wien</placeName>
+               <orgName key="https://d-nb.info/gnd/5162749-8">Kabinettsrat</orgName>
+               <date when-iso="1920-06-01"/>
+            </meeting>
+            <editor>
+               <persName key="https://d-nb.info/gnd/122481836"
+                         role="hasCreator"
+                         xml:id="hwohnout">
+                  <forename>Helmut</forename>
+                  <surname>Wohnout</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</affiliation>
+               <idno type="ORCID">0000-0002-3864-9839</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/120789825"
+                         role="hasCreator"
+                         xml:id="tolechowski">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0003-3291-6876</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/131679384"
+                         role="hasCreator"
+                         xml:id="rlein">
+                  <forename>Richard</forename>
+                  <surname>Lein</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0002-7502-0503</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="aholzer">
+                  <forename>Anna</forename>
+                  <surname>Holzer</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0005-3560-3500</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="dsoelkner">
+                  <forename>Dominik</forename>
+                  <surname>Sölkner</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-9895-7212</idno>
+            </editor>
+            <editor>
+               <persName role="hasContributor" xml:id="ischotzko">
+                  <forename>Ina</forename>
+                  <surname>Schotzko</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-5210-3713</idno>
+            </editor>
+            <funder n="1">
+               <orgName key="https://d-nb.info/gnd/2054142-9" role="hasFunder">Österreichischer Wissenschaftsfonds FWF</orgName>
+               <idno type="project">PAT1495024</idno>
+               <title type="project">Die Protokolle des österreichischen Kabinettsrates 1919–1920</title>
+            </funder>
+            <respStmt>
+               <resp>Projektverantwortung</resp>
+               <orgName key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Projektleitung</resp>
+               <persName key="https://d-nb.info/gnd/120789825" role="hasPrincipalInvestigator">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+                  <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+                  <idno type="ORCID">0000-0003-3291-6876</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Nationaler Forschungspartner</resp>
+               <orgName key="https://d-nb.info/gnd/1123037736" role="hasEnabler">Austrian Centre for Digital Humanities</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Digitalisierung der gedruckten Quellen</resp>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>TEI-Datenmodellierung</resp>
+               <persName role="hasContributor" xml:id="tfruehwirth">
+                  <forename>Timo</forename>
+                  <surname>Frühwirth</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-3997-5193</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technische Supervision</resp>
+               <persName key="https://d-nb.info/gnd/1043833846"
+                         role="hasContributor"
+                         xml:id="pandorfer">
+                  <forename>Peter</forename>
+                  <surname>Andorfer</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-9575-9372</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technisches Consulting und Vorbereitung der Druckausgabe</resp>
+               <persName key="https://d-nb.info/gnd/13281899X"
+                         role="hasContributor"
+                         xml:id="skurz">
+                  <forename>Stephan</forename>
+                  <surname>Kurz</surname>
+                  <affiliation key="https://d-nb.info/gnd/1202798799">Institut für die Erforschung der Habsburgermonarchie und des Balkanraumes</affiliation>
+                  <idno type="ORCID">0000-0003-2546-2570</idno>
+               </persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher key="https://d-nb.info/gnd/1001454-8">Österreichische Akademie der Wissenschaften</publisher>
+            <date when="2028"/>
+            <availability status="free">
+               <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">Lizenziert unter CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/deed.de)</licence>
+            </availability>
+            <idno type="ISBN_Print"/>
+            <idno type="ISBN_Part_epub"/>
+            <idno type="ISBN_Digital"/>
+            <idno type="DOI"/>
+            <idno type="DOI_zenodo"/>
+            <idno type="ebook_ID"/>
+         </publicationStmt>
+         <seriesStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="m" type="main">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <respStmt>
+               <resp>Bearbeitung und Herausgeberschaft</resp>
+               <orgName key="https://d-nb.info/gnd/2024703-5">Universität Wien</orgName>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+         </seriesStmt>
+         <notesStmt>
+            <note>Diese TEI-XML-Datei ist Grundlage für eine Druckausgabe der Edition.</note>
+            <relatedItem>
+               <biblStruct>
+                  <monogr>
+                     <imprint>
+                        <pubPlace key="https://d-nb.info/gnd/4066009-6">Wien</pubPlace>
+                        <publisher key="https://d-nb.info/gnd/2068748-5">Verlag der Österreichischen Akademie der Wissenschaften</publisher>
+                        <date when="2029"/>
+                     </imprint>
+                     <extent/>
+                  </monogr>
+                  <note>
+              <idno/>
+              <ptr/>
+            </note>
+                  <citedRange/>
+               </biblStruct>
+            </relatedItem>
+         </notesStmt>
+         <sourceDesc>
+            <bibl>Quellbestand: AT-OeStA/AdR MRang MR 1Rep KRP Kabinettsratsprotokolle, 1918-1920 (Teilbestand)<ref target="https://www.archivinformationssystem.at/detail.aspx?id=5465">https://www.archivinformationssystem.at/detail.aspx?id=5465</ref>
+            </bibl>
+            <msDesc>
+               <msIdentifier>
+                  <institution key="https://d-nb.info/gnd/37748-X" role="hasOwner">AT-OeStA Österreichisches Staatsarchiv (Archiv (ÖStA))</institution>
+                  <repository key="https://d-nb.info/gnd/1601181-8">AT-OeStA/AdR Archiv der Republik, 1918- (Abteilung)</repository>
+                  <collection>AT-OeStA/AdR MRang MR 1Rep Ministerrat 1. Republik, 1918 - 1938 (Bestand)</collection>
+                  <idno>AT-OeStA_AdR-MRang-MR-1.-Rep.-KRP-187</idno>
+               </msIdentifier>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <abstract>
+            <p>
+          <!--to be generated-->
+        </p>
+         </abstract>
+      </profileDesc>
+      <encodingDesc>
+         <styleDefDecl scheme="css"/>
+         <tagsDecl>
+            <rendition xml:id="b" scheme="css">font-weight:bold;</rendition>
+            <rendition xml:id="su" scheme="css">vertical-align:super;font-size:.7em;</rendition>
+            <rendition xml:id="s" scheme="css">text-decoration:line-through;</rendition>
+            <rendition xml:id="u" scheme="css">text-decoration:underline;</rendition>
+            <rendition xml:id="ow" scheme="css">text-decoration:line-through;text-decoration-style:double;</rendition>
+            <rendition xml:id="r" scheme="css">display:block;text-align:right;</rendition>
+            <rendition xml:id="letterspaced" scheme="css">letter-spacing:0.15em;</rendition>
+            <rendition xml:id="i" scheme="css">font-style:italic;</rendition>
+         </tagsDecl>
+         <editorialDecl>
+            <hyphenation>
+               <p>
+            <!--to be added-->
+          </p>
+            </hyphenation>
+            <correction>
+               <p>
+            <!--to be added-->
+          </p>
+            </correction>
+            <normalization>
+               <p>
+            <!--to be added-->
+          </p>
+            </normalization>
+            <punctuation>
+               <p>
+            <!--to be added-->
+          </p>
+            </punctuation>
+            <stdVals>
+               <p>
+            <!--to be added-->
+          </p>
+            </stdVals>
+            <p>
+          <!--to be added-->
+        </p>
+         </editorialDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#tfruehwirth" when-iso="2026-10-13">TEIGarage output upconverted with upconvert.xsl</change>
+         <change who="#tfruehwirth" when-iso="2026-10-13">TEI header populated with generate_tei_templates.py</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface/>
+   </facsimile>
+   <text>
+      <body>
+         <div xml:id="doc-krp-0187.xml">
+            <head type="dokument">
+               <title type="num">187.<note type="footnote">Das Protokoll trägt den Vermerk <hi rend="#i">Vertraulich!</hi></note>
+               </title>
+               <title type="desc">
+                  <pb facs="krp-0187_r-0001"/>[Dienstag] 1920-06-01</title>
+            </head>
+            <div type="dokumentkopf">
+               <div type="vorsitz">
+                  <head>Vorsitz:</head>
+                  <p>Renner</p>
+               </div>
+               <div type="anwesend">
+                  <head>Anwesend:</head>
+                  <p>Deutsch, Eisler, Eldersch, Ellenbogen, Fink, Glöckel, Hanusch, Loewenfeld-Russ, Mayr, Miklas, Paul, Reisch, Resch, Stöckler, Tandler, Waiss, Zerdik</p>
+               </div>
+               <div type="zugezogen">
+                  <head>Zugezogen:</head>
+                  <p>-</p>
+               </div>
+               <div type="schriftfuehrer">
+                  <head>Schriftführer:</head>
+                  <p>unbekannt</p>
+               </div>
+               <div type="dauer">
+                  <head>Dauer:</head>
+                  <p>15.00–17.15 Uhr</p>
+               </div>
+            </div>
+            <div type="komponenten">
+               <p>Reinschrift, Beilagen, streng geheimer Anhang, Konzept, stenographische Mitschrift, Entwurf der Tagesordnung, diverse Zusätze</p>
+            </div>
+            <div type="beilagen">
+               <head>Beilagen:</head>
+               <list>
+                  <item><ref target="#krp-0187_top02">Zu TOP 2</ref>: <ref target="#krp-0187_b01">Vortrag des Staatskanzlers über die beabsichtigte Veröffentlichung von Dokumenten aus dem Kriegsarchiv</ref></item>
+                  <item><ref target="#krp-0187_top04">Zu TOP 4</ref>: <ref target="#krp-0187_b02">Vollzugsanweisung des Staatsamtes für soziale Verwaltung über die nicht gewerbemäßige Arbeitsvermittlung</ref></item>
+                  <item><ref target="#krp-0187_top05">Zu TOP 5</ref>: <ref target="#krp-0187_b03">Vorlage des Staatsamtes für Land- und Forstwirtschaft Zl. 10.527 über die Genehmigung des Vergleichs zwischen der Forst- und Domänendirektion in Wien und der Firma Glesinger S. in Wien zur Regelung der Durchführung der Holzkaufvertragsauflösung</ref></item>
+                  <item><ref target="#krp-0187_top06">Zu TOP 6</ref>: <ref target="#krp-0187_b04">Vortrag des Staatssekretärs für Handel und Gewerbe, Industrie und Bauten Zl. 12.185-IVa-Arb. über die Zuweisung der Einmietung staatlicher Behörden, Ämter und Anstalten in Privatgebäuden in Wien an das Staatsamt mit einem Auszug aus dem diesbezüglichen KRP 177/TOP 2</ref></item>
+                  <item><ref target="#krp-0187_top07">Zu TOP 7</ref>: <ref target="#krp-0187_b05">Vortrag des Staatsamtes für Finanzen über die Vollzugsanweisung der Staatsregierung zur Regelung der Rechtsstellung der Zivilangestellten der ehemaligen k. u. k. Behörden und Ämter, der Ruhegenüsse sowie die Versorgung Hinterbliebener aufgrund des Pensionistengesetzes 1920</ref></item>
+                  <item><ref target="#krp-0187_top07">Zu TOP 7</ref>: <ref target="#krp-0187_b06">Vollzugsanweisung der Staatsregierung zur Regelung der Rechtsstellung der Zivilangestellten der ehem. k. u. k. Behörden und Ämter, der Ruhegenüsse sowie die Versorgung Hinterbliebener aufgrund des Pensionistengesetzes 1920</ref></item>
+                  <item><ref target="#krp-0187_top08">Zu TOP 8</ref>: <ref target="#krp-0187_b07">Antrag des Direktoriums der WEWA Zl. 544/WEWA auf Abänderung ihres Organisationsstatutes</ref></item>
+               </list>
+            </div>
+            <div type="protokoll">
+               <pb facs="krp-0187_r-0002"/>
+               <div type="top" xml:id="krp-0187_top01">
+                  <head>
+                     <label>
+                        <num n="1">1.</num>
+                        <seg>Streik der Gerichtskanzleiangestellten.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Reisch</hi> führt aus, dass er einem Teile der letzten Kabinettsratssitzung infolge dringender Abberufung nicht habe anwohnen können; während seiner Abwesenheit wäre der Streik der Gerichtskanzleiangestellten zur Sprache gelangt. Die hiebei gefassten Beschlüsse hätten die Frage der Gehaltsabzüge bei den Streikenden überhaupt offen gelassen, wodurch seiner Auffassung nach den Bestimmungen der Dienstpragmatik, welche bei unentschuldigtem Ausbleiben der Staatsbediensteten vom Dienste eine entsprechende Kürzung der Gehaltsbezüge ausdrücklich vorsehen, nicht Rechnung getragen worden sei. Redner halte dies für präjudiziell überaus bedenklich.</p>
+                  <p>Unterstaatssekretär Dr. <hi rend="#letterspaced">Eisler</hi> bemerkt hiezu, dass weder der gefasste Be<pb facs="krp-0187_r-0003"/>schluss den beteiligten Staatsbediensteten mitgeteilt, noch auch irgendeine offizielle Erklärung ihnen gegenüber abgegeben worden sei. Im Übrigen wären bei der Vornahme von Gehaltskürzungen die weitwendigsten Erhebungen und Berechnungen notwendig geworden, da der Ausstand nicht mit einem bestimmten Tage einheitlich zur Durchführung gelangt und auch die Wiederaufnahme der Arbeit durch den ganzen Block der Streikenden nicht gleichzeitig vor sich gegangen sei. Letztere hätten vielmehr einzeln und in nicht geregelter Weise ihren Dienst wieder angetreten.</p>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> verkündet als Beschluss des Kabinettsrates, dass die Bemerkungen des Staatssekretärs für Finanzen zur Kenntnis genommen werden und ausdrücklich festgelegt wird, dass die Staatsregierung aus ihrem diesmaligen Verhalten ein Präjudiz für die Zukunft ausdrücklich ablehnt.</p>
+               </div>
+               <div type="top" xml:id="krp-0187_top02">
+                  <head>
+                     <label>
+                        <num n="2">2.</num>
+                        <seg>Veröffentlichung von Dokumenten aus dem Kriegsarchiv.</seg>
+                     </label>
+                  </head>
+                  <p>Der Vorsitzende teilt mit, das Kriegsarchiv habe dem Staatsamte für Heer[es]wesen die eheste Veröffentlichung der wichtigsten, in der „Abteilung für militärische Staatsakten“ erliegenden Dokumente aus der Zeit des Weltkrieges vorgeschlagen. Das Staatsamt für Heer[es]wesen, welches <pb facs="krp-0187_r-0004"/>grundsätzlich einverstanden war und davon einen namhaften literarischen und finanziellen Erfolg erhofft, habe an die Staatskanzlei das Ersuchen gerichtet, dem Direktor des Kriegsarchivs die entsprechenden Weisungen zu erteilen.</p>
+                  <p>Der Archivbevollmächtigte der Republik hätte nun Bedenken grundsätzlicher und insbesondere politischer Natur geäußert, indem er ausführte, dass durch derartige Veröffentlichungen nach den bisher in Österreich und in Deutschland gemachten Erfahrungen den auf neue Verfassungsgrundlagen gestellten Staaten eher geschadet als genützt werde. Auch könnten wir, sobald wir selbst einmal mit Veröffentlichungen begonnen hätten, die Regierungen und Forscher der anderen Nachfolgestaaten kaum mehr daran hindern, das Material des Kriegsarchivs zu verwerten. Um vollständig zu sein, würden die in Aussicht genommenen Veröffentlichungen die Heranziehung der Archivalien des Staatsamtes für Äußeres und des Kabinettsarchivs bedingen; was aber nach den noch in Geltung befindlichen Anordnungen untunlich sei.</p>
+                  <p>Gegen Veröffentlichungen rein militärischen Charakters habe der Archivbevollmächtigte jedoch keinen Anstand erhoben.</p>
+                  <p>Für die Staatskanzlei fehle aus Gründen der Ressortzuständigkeit der Anlass zu einer <pb facs="krp-0187_r-0005"/>meritorischen Verfügung. Aus Rücksichten allgemein politischer Natur beabsichtige sie lediglich, dem Staatsamte für Heer[es]wesen mitzuteilen, dass mit Rücksicht auf die auch dem Staatsamte vom Archivbevollmächtigten bekanntgegebenen Bedenken vor der Drucklegung der in Aussicht genommenen Veröffentlichungen des Kriegsarchivs (Abteilung für militärische Staatsakten) jeweils das Einvernehmen mit dem Staatsamte für Äußeres und dem Archivbevollmächtigten herzustellen wäre. Redner stelle daher den Antrag, der Kabinettsrat wolle beschließen, dass dem Staatsamte für Heer[es]wesen anheimgestellt werde, an die Veröffentlichung geeigneter, in der Abteilung für militärische Staatsakten des Kriegsarchivs vorliegender Dokumente aus der Zeit des Weltkrieges zu schreiten, wobei jedoch jeweils vorher das Einvernehmen mit dem Archivbevollmächtigten der Republik und mit dem Staatsamte für Äußeres zu pflegen sein werde.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Deutsch</hi> bemerkt hiezu, dass mit den ihm unterstellten Staatsamte über den vorliegenden Antrag – entgegen der in solchen Fällen stets eingehaltenen Gepflogenheit – ein vorgängiges Einvernehmen nicht hergestellt worden sei, weshalb er um Vertagung dieses Gegenstandes bis zur nächsten Sitzung des Kabinettsrates ersuche.</p>
+                  <p><pb facs="krp-0187_r-0006"/>Nach einer kurzen Debatte, an der sich Vizekanzler <hi rend="#letterspaced">Fink</hi>, die Staatssekretäre Dr. <hi rend="#letterspaced">Reisch</hi> und Dr. <hi rend="#letterspaced">Mayr</hi> sowie Unterstaatssekretär <hi rend="#letterspaced">Miklas</hi> beteiligten, beschließt der Kabinettsrat, dass diese Angelegenheit vorher noch zum Gegenstande einer internen Aussprache zwischen den Staatssekretären für Finanzen und für Heer[es]wesen, dem Staatssekretär Dr. Mayr und dem Archivbevollmächtigten der Republik zu machen und erst nach Abschluss dieser Beratung dem Kabinettsrate zur endgiltigen Schlussfassung neuerlich vorzulegen sei.</p>
+               </div>
+               <div type="top" xml:id="krp-0187_top03">
+                  <head>
+                     <label>
+                        <num n="3">3.</num>
+                        <seg>Vorlage des Berichtes des Staatssekretärs für Finanzen, betreffend die Übernahme von Staatsgarantien im ersten Quartal 1920, an die Nationalversammlung.</seg>
+                     </label>
+                  </head>
+                  <p>Über Antrag des <hi rend="#letterspaced">Vorsitzenden</hi> ermächtigt der Kabinettsrat die Staatskanzlei, den vom Staatssekretär für Finanzen im Sinne des § 2 Abs. 2 des Gesetzes vom 20. Dezember 1919, StGBl. Nr. 608, erstatteten Bericht über die von der österreichischen Staatsverwaltung im ersten Quartal des laufenden Jahres übernommenen finanziellen Garantien, dem Präsidium der Nationalversammlung vorzulegen</p>
+               </div>
+               <div type="top" xml:id="krp-0187_top04">
+                  <head>
+                     <label>
+                        <num n="4">4.</num>
+                        <seg>Vollzugsanweisung des Staatsamtes für soziale Verwaltung über die nicht gewerbsmäßige Arbeitsvermittlung.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Hanusch</hi> erbittet und erhält von Kabinettsrate die Ermächtigung zur Erlassung einer Vollzugsanweisung des Staatsamtes für soziale Verwaltung über die nicht gewerbemäßige Arbeitsvermittlung.</p>
+                  <p><pb facs="krp-0187_r-0007"/></p>
+               </div>
+               <div type="top" xml:id="krp-0187_top05">
+                  <head>
+                     <label>
+                        <num n="5">5.</num>
+                        <seg>Entwurf eines Vergleiches zwischen der Forst- und Domänendirektion in Wien und der Firma Glesinger S. daselbst, betreffend die Regelung der Durchführung der Holzkaufvertragsauflösung.</seg>
+                     </label>
+                  </head>
+                  <p>Nach einer eingehenden Darstellung der Sachlage und der Rechtsverhältnisse stellt Staatssekretär <hi rend="#letterspaced">Stöckler</hi> den Antrag, der Kabinettsrat wolle dem zwischen der Forst- und Domänendirektion in Wien und der Firma Glesinger S. daselbst im Entwurf ausgearbeiteten Vergleiche, betreffend die Durchführung der Holzkaufvertragsauflösung, seine Zustimmung erteilen.</p>
+                  <p>In der sich hieran anschließenden Debatte gelangt die übereinstimmende Anschauung zum Ausdruck, dass es angesichts der hiebei in Betracht kommenden namhaften Beträge angezeigt erschiene, den einzelnen beteiligten Ressorts noch Gelegenheit zum eingehenden Studium des Falles zu bieten.</p>
+                  <p>Der Kabinettsrat pflichtet dieser von Staatssekretär Dr. <hi rend="#letterspaced">Ellenbogen</hi> gemachten und vom <hi rend="#letterspaced">Vizekanzler</hi> befürworteten Anregung bei und beschließt, diese Angelegenheit zunächst einer aus den Staatssekretären Stöckler (Vorsitz), Dr. Reisch, Ing. Zerdik, Dr. Ellenbogen und Dr. Ramek bestehenden Kabinettskonferenz zu übertragen und diese einzuladen, nach Abschluss ihrer Beratungen dem Kabinettsrate antragstellend zu berichten.</p>
+                  <p><pb facs="krp-0187_r-0008"/></p>
+               </div>
+               <div type="top" xml:id="krp-0187_top06">
+                  <head>
+                     <label>
+                        <num n="6">6.</num>
+                        <seg>Zuweisung der Einmietung staatlicher Behörden, Ämter und Anstalten in Privatgebäuden in Wien an das Staatsamt für Handel und Gewerbe, Industrie und Bauten.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Ing. <hi rend="#letterspaced">Zerdik</hi> weist darauf, dass das Staatsamt für Handel und Gewerbe, Industrie und Bauten laut Beschlusses des Kabinettsrates vom 4. Februar 1920 mit der Unterbringung der im Sinne des Staatsvertrages von St. Germain nach Wien zu delegierenden militärischen und sonstigen Kommissionen betraut worden sei.</p>
+                  <p>Da die staatseigenen Gebäude heute schon zur Deckung des eigenstaatlichen Bedarfes, der, insolange die Liquidierungstätigkeit noch fortdauert, infolge der Errichtung einer großen Anzahl neuer Stellen dermalen eine bedeutende Erhöhung erfahren hat, nicht mehr ausreichen, stehe es nicht fest, ob die fremdländischen Kommissionen zum Teile nicht auch in Privatgebäuden werden eingemietet werden müssen.</p>
+                  <p>Dieser Umstand, sowie die Notwendigkeit, dem mit der Wahrnehmung und Befriedigung des Raumbedarfes der staatlichen Stellen betrauten Ressort einen möglichst vollständigen Überblick über sämtliche in Betracht kommende Ansprüche, sowie über die zu ihrer Befriedigung verfügbaren Räume zu verschaffen, lasse es angezeigt erscheinen, dass alle Angelegenheiten, betreffend die Beschaffung und Zuweisung von Räumen, sowohl insoweit es sich um die fremdländischen Kommissionen als auch um die an die Staats<pb facs="krp-0187_r-0009"/>gebäudeverwaltung gewiesenen staatlichen Behörden, Ämter und Anstalten handelt – und zwar vorläufig nur in Wien – an <hi rend="#u">einer</hi> Stelle, nämlich beim Staatsamte für Handel und Gewerbe, Industrie und Bauten, zusammengefasst werden, da dieses Staatsamt nur unter dieser Voraussetzung die ihm übertragene Aufgabe gedeihlich und zweckmäßig wird lösen können.</p>
+                  <p>Nach der gegenwärtigen Abgrenzung des Wirkungskreises der Zentralstellen stehe dem Staatsamte für Handel und Gewerbe, Industrie und Bauten als oberste Staatsgebäudeverwaltungsbehörde aber nur die Verwendung der Staatsgebäude selbst für dikasterielle Zwecke zu, während die mietweise Unterbringung von staatlichen Behörden, Ämtern und Anstalten von jedem Ressort selbständig besorgt werde. Diese Zersplitterung der Kompetenz habe sich auch bisher schon störend bemerkbar gemacht, weil sie die Evidenz über den Raumbedarf und damit die zweckmäßige Disposition mit den verfügbaren Räumen verhindere und anderseits die einheitliche Budgetierung erschwere, da ungeachtet der Selbstständigkeit der Ressorts beim Abschluss von Mietverträgen die in den gemieteten Räumen durchzuführenden Adaptierungen und Instandsetzungsarbeiten von der Staatsgebäudeverwaltung zu besorgen sind und die ihr zugewiesenen Kredite belasten.</p>
+                  <p><pb facs="krp-0187_r-0010"/>Redner stelle demgemäß den Antrag, der Kabinettsrat wolle beschließen, dass alle Angelegenheiten, welche die mietweise Unterbringung von in Wien gelegenen staatlichen Behörden, Ämtern und Anstalten aller Ressorts, sowie den Abschluss von Mietverträgen für diese Zwecke betreffen, von nun an ausschließlich dem Staatsamte für Handel und Gewerbe, Industrie und Bauten übertragen werden. Dieses Staatsamt hätte in jedem Fall im Einvernehmen mit den beteiligten Zentralstellen vorzugehen, so zwar, dass diesen die Einflussnahme zur Sicherung einer den Ressortbedürfnissen entsprechenden Lösung von Unterbringungsfragen in jeder Phase der Verhandlungen über Einmietungen gewahrt bleibt und <hi rend="#u">entscheidende</hi> Verfügungen der Zustimmung des fachlich zuständigen Staatsamtes bedürfen. Soweit nach der gegenwärtigen Organisation der Staatsgebäudeverwaltung für einzelne staatliche Verwaltungszweige Sonderbestimmungen bestehen, hätte in der bisherigen Kompetenz auch hinsichtlich der Einmietungen keine Änderung einzutreten. Zur Ermöglichung einer einheitlichen Raumdisposition und einer entsprechenden Evidenz über die für dikasterielle Zwecke verfügbaren und hiefür tatsächlich benutzten Räume wäre weiters vor der Einmietung von staatlichen Behörden, Ämtern und Anstalten <pb facs="krp-0187_r-0011"/>außerhalb Wiens sowie vor der Auflösung bestehender Mietverträge von den beteiligten Ressorts jeweils das Einvernehmen mit dem Staatsamte für Handel und Gewerbe, Industrie und Bauten zu pflegen.</p>
+                  <p>Der Kabinettsrat erhebt diesen Antrag zum Beschluss.</p>
+               </div>
+               <div type="top" xml:id="krp-0187_top07">
+                  <head>
+                     <label>
+                        <num n="7">7.</num>
+                        <seg>Vollzugsanweisung der Staatsregierung, womit aufgrund des § 33 des Gesetzes vom 18. März 1920, StGBl. Nr. 132 (Pensionistengesetz), die Rechtsstellung der Zivilangestellten der ehemaligen k. u. k. Behörden und Ämter, sowie die Ruhe-(Versorgungs-)genüsse dieser Angestellten und ihrer Hinterbliebenen geregelt werden.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Reisch</hi> erbittet und erhält vom Kabinettsrate die Ermächtigung zur Erlassung einer Vollzugsanweisung der Staatsregierung, womit aufgrund des § 33 des Gesetzes vom 18. März 1920, StGBl. Nr. 132 (Pensionistengesetz), die Rechtsstellung der Zivilangestellten der ehemaligen k. u. k. Behörden und Ämter, sowie die Ruhe-(Versorgungs-)genüsse dieser Angestellten und ihrer Hinterbliebenen geregelt werden. </p>
+               </div>
+               <div type="top" xml:id="krp-0187_top08">
+                  <head>
+                     <label>
+                        <num n="8">8.</num>
+                        <seg>Abänderung des Organisationsstatutes des WEWA.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Ellenbogen</hi> erbittet vom Kabinettsrate nach eingehender Darstellung der Verhältnisse die Bewilligung zur Abänderung des § 7 des Organisationsstatutes des WEWA in nachstehender Form:</p>
+                  <p><pb facs="krp-0187_r-0012"/>§ 7.</p>
+                  <table>
+                     <row>
+                        <cell>Alte Fassung</cell>
+                        <cell>Neue Fassung</cell>
+                     </row>
+                     <row>
+                        <cell>(1) Die beratende Kommission besteht aus:</cell>
+                        <cell/>
+                     </row>
+                     <row>
+                        <cell>a) je einem Vertreter der Landesregierungen;</cell>
+                        <cell>bleibt ungeändert.</cell>
+                     </row>
+                     <row>
+                        <cell>b) je einem von den Gemeindevertretungen der Landeshauptstädte namhaft zu machenden machenden Vertreter;</cell>
+                        <cell><p>b) zwei von der Gemeindevertretung der Stadt Wien namhaft zu machenden Vertreter und je einem von der Gemeindevertretung der übrigen</p><p>der Landeshauptstädte namhaft zu machenden 	Vertretern;</p></cell>
+                     </row>
+                     <row>
+                        <cell><p>c) vom Direktorium des WEWA zu berufenden Mitgliedern, und zwar: </p><p>drei Vertretern aus den Kreisen der elektrischen und übrigen Industrie,</p><p>je zwei Vertretern der Finanzinstitute,          </p><p>der Land- und Forstwirtschaft, </p><p>der technischen Fachkreise,</p><p>der Arbeiterschaft und </p><p>einem Vertreter der im Interesse des Fremdenverkehres wirkenden Kreise.</p></cell>
+                        <cell>bleibt ungeändert.</cell>
+                     </row>
+                     <row>
+                        <cell><p>(2) bleibt ungeändert</p></cell>
+                        <cell/>
+                     </row>
+                     <row>
+                        <cell><p>(3) bleibt ungeändert</p></cell>
+                        <cell/>
+                     </row>
+                     <row>
+                        <cell>(4) Die Berufung sämtlicher Mitglieder erfolgt ehrenamtlich auf die Dauer von drei Jahren; eine Wiederberufung ist zulässig</cell>
+                        <cell>(4) Die Berufung sämtlicher Mitglieder erfolgt ehrenamtlich auf die Dauer von drei Jahren; eine Wiederberufung ist zulässig. Die Landesregierungen und die Gemeindevertretungen <pb facs="krp-0187_r-0013"/>der Landeshauptstädte sind jedoch jederzeit berechtigt, ihre Vertreter und deren Ersatzmänner abzuberufen und an deren Stelle neue Vertreter und Ersatzmänner namhaft zu machen.</cell>
+                     </row>
+                     <row>
+                        <cell>(5) bleibt ungeändert</cell>
+                        <cell/>
+                     </row>
+                  </table>
+                  <p>Der Kabinettsrat erteilt hiezu seine Zustimmung.</p>
+               </div>
+               <div type="top" xml:id="krp-0187_top09">
+                  <head>
+                     <label>
+                        <num n="9">9.</num>
+                        <seg>Neuregelung der Personalverhältnisse bei der Generaldirektion der staatlichen Industriewerke.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Ing. <hi rend="#letterspaced">Zerdik</hi> kommt auf den in der letzten Sitzung des Kabinettsrates gefassten Beschluss in Angelegenheit der Neuregelung der Personalverhältnisse bei der Generaldirektion der staatlichen Industriewerke zu sprechen und teilt mit, dass Generaldirektor Linder sich nunmehr mit einem Fixum von 30.000 K monatlich und einer Remuneration von 140.000 K begnügen würde. Es frage sich daher, ob der Kabinettsrat angesichts dieser veränderten Sachlage es nicht für zweckmäßig hielte, von seinem letzthin gefassten Beschlusse abzugehen und die Zustimmung dazu zu erteilen, dass auf der erwähnten Grundlage mit dem Genannten neuerlich verhandelt werde.</p>
+                  <p>Nach einer längeren Debatte, an der sich die Staatssekretäre Dr. <hi rend="#letterspaced">Ellenbogen</hi>, <hi rend="#letterspaced">Hanusch</hi>, <hi rend="#letterspaced">Eldersch</hi>, <pb facs="krp-0187_r-0014"/><hi rend="#letterspaced">Paul</hi> und der referierende Staatssekretär beteiligten, beschließt der Kabinettsrat, den Staatssekretär für Handel und Gewerbe, Industrie und Bauten zu ermächtigen, mit Generaldirektor Linder in neuerliche Verhandlungen einzutreten. Ein weiterer im Gegenstande gefasster Beschluss wird als vertraulich in einem geheimen Anhang zu diesem Protokolle niedergelegt.</p>
+                  <p/>
+               </div>
+            </div>
+            <div type="anhaenge">
+               <p><pb facs="krp-0187_a01-0001"/>Streng geheimer Anhang zum Kabinettsprotokolle Nr. 187 vom 1. Juni 1920.</p>
+               <div n="1">
+                  <head>ad Pkt. 9. Neuregelung der Personalverhältnisse bei der Generaldirektion der staatlichen Industriewerke.</head>
+                  <div type="a01_protokoll">
+                     <p>Der Kabinettsrat beschließt, dass es aus den von den Staatssekretären Ing. <hi rend="#letterspaced">Zerdik</hi> und Dr. <hi rend="#letterspaced">Ellenbogen</hi> dargelegten Gründen nicht empfehlenswert sei, Generaldirektor [Ing.] Linder sogleich aus den Vertragsverhältnisse scheiden zu lassen, da augenblicklich ein geeigneter Ersatz nicht zur Verfügung stehe. In die Vertragsverlängerung auf der vom Staatssekretär Ing. Zerdik bekanntgegebenen Grundlage wäre sohin einzugehen, jedoch eine jederzeitige Kündbarkeit festzulegen. Weiters wäre nach einem geeigneten Nachfolger Linders Umschau zu halten und nach dessen Sicherstellung mit der Kündigung Linders ohne Verzug vorzugehen.</p>
+                     <p/>
+                  </div>
+               </div>
+            </div>
+            <div type="stenogramme">
+               <div n="1">
+                  <head>[KRP 187, 1. Juni 1920, Stenogramm]</head>
+                  <p><pb facs="krp-0187_s01-0001"/>187., 1. /6.</p>
+                  <p>1. [Renner]: Die holländische Hilfsaktion, einquartiert in die Orangerie Schönbrunn. [Sie] möchte die Reitschule haben. [...] sagt, er braucht das für das Heu.</p>
+                  <p>1. [Renner]: Gesandter ?Felder lädt ein zum Sokolfest. Das Büro wird ein Schreiben verfassen: Wir danken, durch innere <hi rend="#s">Schwierigkeiten</hi> - Aufgaben und Pflichtreisen so schwer in Aussicht in Anspruch </p>
+                  <p>genommen, dass keine Aussicht <hi rend="#s">für die Fahrt</hi> -. Brief.</p>
+                  <p>2.</p>
+                  <p>Loewenfeld-Ruß: Wir fahren morgen früh nach Belgrad. [Ich möchte fragen], ob Weisungen gegeben werden. Paul: Verkehrsfrage, </p>
+                  <p>Valutafrage; wir wollen in Kronen zahlen, sonst müssten sie auf den Ententekredit verwiesen werden - schwer.</p>
+                  <p>3. Reisch: Der Justizbeamtenstreik [ist] in einer Weise zum Austragen gelangt, die meiner Anschauung widerspricht. Ohne jeden Abzug [sollen] die Bezüge zur Bezahlung gebracht </p>
+                  <p>werden (Bestimmungen bei unentschuldigtem Ausbleiben [lauten, dass] binnen drei Tagen die entsprechende Quote nicht zur Auszahlung zu bringen sei). </p>
+                  <p>Nicht auf der Tagesordnung und nicht im Einlauf.</p>
+                  <p>Eisler: Dieser Beschluss ist weder den Betroffenen mitgeteilt, noch ihnen gegenüber eine Erklärung abgegeben [worden]. [Die Streikenden sind] nur einzeln wieder eingerückt, [das bedeutet] ungeheure Berechnungen.</p>
+                  <p>Renner: [Es] wird zur Kenntnis genommen, dass aus dieser Sache kein Präjudiz gemacht werden darf in Erledigung von Beamtensachen.</p>
+                  <p>4. Renner: Kriegsarchiv.</p>
+                  <p>Deutsch: [Das wurde] mit dem Heerwesen gar nicht vereinbart. Damit die Referenten dazu Stellung nehmen können, bitte [ich] um Vertagung.</p>
+                  <p>Renner: [Ich] habe nichts dagegen.</p>
+                  <p>Fink: Stimmt zu, dass zunächst er Gelegenheit haben muss, Stellung zu nehmen. [Er bringt] im allgemeinen die Meinung zum Ausdruck, dass man sich nicht allzu sehr beeilen muss </p>
+                  <p>mit den Veröffentlichungen, [dazu] habe es noch Zeit.</p>
+                  <p>Reisch: In formeller Beziehung: Das Kriegsarchiv untersteht dem Militärliquidierungsamt, [da]mit also dem Staatsamt für Finanzen.</p>
+                  <p>Mayr: Schließt sich dem Antrag an, dass die Staatskanzlei, bzw. das Staatsamt für Äußeres gefragt werden sollen, an. </p>
+                  <p>[Man sollte ihn] derzeit zurückstellen, [damit] das Heeresamt um seine Meinung gefragt wird. Aber ganz besondere Vorsicht bei den Veröffentlichungen staatlicher Akten möchte er empfehlen.</p>
+                  <p>Renner: Angelegenheit zur [...] Aussprache mit dem Staatsamt für Finanzen, dem Staatsamt für Heerwesen und Professor Redlich und Dr. Mayr.</p>
+                  <p>Miklas: Kleines Komitee: Renner, Finanzen, Heerwesen, Finanzen [sic] und Dr. Mayr.</p>
+                  <p>Mayr: Der liter[arische] Ehrgeiz des Kriegsarchivs ist sehr bedenklich. Die Herren wollen sich eine Lebensstellung retten; für rein lit[erarische] Unternehmungen die </p>
+                  <p>eigenen Stellen freihalten.</p>
+                  <p>Vertagt.</p>
+                  <p>5. Reisch: 2. b). Der Bericht wird weitergeleitet. Kein Einwand.</p>
+                  <p>6. Hanusch: 3. Genehmigt.</p>
+                  <p><pb facs="krp-0187_s01-0002"/>7. Stöckler: (4.), Vertrag [mit] Glesinger.</p>
+                  <p>Zerdik: Die beiden Verträge: Entweder Unlauterkeit oder Unfähigkeit.</p>
+                  <p>Ellenbogen: Die Sache ist zu folgenschwer, als dass wir jetzt schon ein Urteil abgeben könnten, für welches wir die Verantwortung auf uns nehmen. </p>
+                  <p>Beantragt, dass wenigstens dem Staatsamt für Finanzen und [dem Staatsamt für] Handel bis zur nächsten Sitzung zum Studium - übertragen wird.</p>
+                  <p>Eisler: Es wird davon abhängen, ob da durch legisl[ative] Maßnahmen oder Vollzugsanweisungen den schwachen Punkten nicht nachgeholfen </p>
+                  <p>werden könnte.</p>
+                  <p>Stöckler: [Ich] habe nichts dagegen, dass die Entscheidung bis zur nächsten Sitzung verschoben wird.</p>
+                  <p>Fink: [Die Sache wird] vertagt und überprüft durch eine Kabinettskommission: Stöckler, <hi rend="#s">Justiz, Handel und</hi> - Ramek, Zerdik, Ellenbogen, Reisch.</p>
+                  <p>8. Zerdik: Staatliche Gebäude (5. a). Angenommen.</p>
+                  <p>9. Zerdik: Vertagt auf Freitag.</p>
+                  <p>10. Reisch: Pensionisten, Vollzugsanweisung.</p>
+                  <p>Angenommen.</p>
+                  <p>11. Ellenbogen: -. Angenommen.</p>
+                  <p>12. Glöckel: Versuchsanstalt.</p>
+                  <p>Reisch: Zurückstellen - nächste Sitzung.</p>
+                  <p>Stöckler: -.</p>
+                  <p>[<hi rend="#i">Am Rand:</hi>] Lohnforderungen der Arbeiter in der Versorgungswirtschaft der Hochschule für Bodenkultur.</p>
+                  <p>13. Renner: Radio-Telegramm aufgefangen ... Lieferung von Kriegsmaterial an Polen.</p>
+                  <p>Zerdik: Aus dem Arsenal [wurde] nichts geliefert. </p>
+                  <p>[Es muss] aus der Einzesfelder und Hirtenberger [Produktion] stammen.</p>
+                  <p>Deutsch: Ich würdige ganz die schwierige Lage, in der sich Zerdik befindet. [Aber eine] Waffenlieferung bedeutet einen Neutralitätsbruch. Wenn wir das Geringste machen, um diese Durchfuhr zu ermöglichen, </p>
+                  <p>dann bleiben die Kriegsgefangenentransporte aus. Damit ist die Stimmung [...] besser geworden. Der brit[ische] Kommandant hat ihm auch erklärt, dass nach Polen keine Waffen geliefert werden können. </p>
+                  <p>Auch die Tschech[oslowaken] werden das nicht dulden.</p>
+                  <p>Zerdik: Dadurch kommen wir in [eine] schwierige wirtschaftliche Situation.</p>
+                  <p><pb facs="krp-0187_s01-0003"/>Renner: Gestern war bei mir ?Hostine.</p>
+                  <p>Ellenbogen: [Es ist] fraglich, woher die russische Regierung diese Nachricht nimmt. Die Behauptung der ganzen Waffenlieferung ist unrichtig. [Man sollte] auf irgendeiner Weise ihr das mitteilt.</p>
+                  <p>Renner: [In einem] Communiqué gegenüber den verbreiteten Nachrichten muss festgestellt werden, dass dies nicht wahr ist. Wenn etwas geschehen ist, geschah dies von privater Seite. </p>
+                  <p>Dies aber [ist] immer noch zwecklos, weil die Tschech[oslowaken] nichts durchlassen.</p>
+                  <p>Paul, Reisch: Rum[änische] Verhandlungen.</p>
+                  <p>Ellenbogen: Einen sehr großen Vertrag beabsichtigen die Rumänen nicht zu schließen.</p>
+                  <p>14. Zerdik: [Der Kabinettsrat hat beschlossen], man soll Verzicht leisten auf die Dienste Linders. </p>
+                  <p>Linder ist bescheidener geworden, [er] begnügt sich [nun] mit einem Fixum von 30.000 Kronen monatlich und [einer] Rem[uneration] von </p>
+                  <p>140.000 Kronen. </p>
+                  <p>[Ich stelle] den Antrag, [der Kabinettsrat solle erwägen], ob [es] nicht zweckmäßiger [wäre], von seinem Beschluss abzugehen und auf dieser Grundlage zu verhandeln.</p>
+                  <p>Hanusch: Wir haben ja in Österreich selbst Leute, die ich für bedeutender halte. Wäre es nicht möglich, dass man Generaldirektor Günter gewinnen könnte?</p>
+                  <p>Ellenbogen: Der Wechsel auf das [...] hin ist noch bedenklicher als die Bezahlung seiner hohen Forderung. </p>
+                  <p>[Man sollte] den Vertrag nicht auf unbestimmte Zeit [schließen, sondern] vielleicht auf ein Jahr oder ein halbes Jahr. In der Zwischenzeit wird sich Linder die größte Mühe geben, das Defizit </p>
+                  <p>abzubauen, [wo] Linder gerade im Begriff ist, abzuschließen einen Vertrag mit französischen Kapitalisten betreffend die Instandsetzung von Fischamend.</p>
+                  <p>Eldersch: Ich kenne Linder nicht; die Art der Berechnung aber usw. ist kaum anständig. Einen guten Eindruck macht das nicht - [man sollte] lieber ihn ziehen zu lassen.</p>
+                  <p>Paul: Unsere zwei Waggonfabriken Simmering und Graz stehen vor dem Zusammenbruch. In Österreich werden sie nie mehr als ein Zehntel des Bedarfes zu decken im Stande sein. </p>
+                  <p>Wie eine dritte Fabrik in Österreich noch gedeihen soll, ist mir unerklärlich.</p>
+                  <p>Renner: Linder sofort weggehen zu lassen, ist nicht sehr praktisch. Wenn niemand zu finden ist, so muss er leider bleiben. </p>
+                  <p>Also den Vertrag verlängern zu den bisherigen Bedingungen, aber jederzeit kündbar. Wenn ein Geeigneter kommt, dann wird der neue Mann angenommen.</p>
+                  <p>[<hi rend="#i">Am Rand:</hi>] <hi rend="#s">Bezüge der leitenden Funktionäre</hi> - Neuregelung der Personalverhältnisse </p>
+                  <p>bei der Generaldirektion der </p>
+                  <p>staatlichen Industriewerke.</p>
+                  <p>15. Renner: Der serbische Geschäftsträger [teilte mit]: Die serbische Regierung hat nachgegeben, [sie wird] die Transportkosten auf sich nehmen. Die serbische Beutekommission wird kommen und feststellen, welche Maschinen -.</p>
+                  <p>¼ 6 Uhr.</p>
+               </div>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

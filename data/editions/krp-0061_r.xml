@@ -1,0 +1,693 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href='http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:acdh="https://vocabs.acdh.oeaw.ac.at/schema#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xml:lang="de">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="a" type="main" n="0061">Kabinettsprotokoll Nr. 61 vom 15. April 1919</title>
+            <title level="m" type="main" n="01">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <title level="m" type="sub" n="">Renner II (15. März – 17. Oktober 1919)</title>
+            <meeting>
+               <placeName key="https://d-nb.info/gnd/4066009-6">Wien</placeName>
+               <orgName key="https://d-nb.info/gnd/5162749-8">Kabinettsrat</orgName>
+               <date when-iso="1919-04-15"/>
+            </meeting>
+            <editor>
+               <persName key="https://d-nb.info/gnd/122481836"
+                         role="hasCreator"
+                         xml:id="hwohnout">
+                  <forename>Helmut</forename>
+                  <surname>Wohnout</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</affiliation>
+               <idno type="ORCID">0000-0002-3864-9839</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/120789825"
+                         role="hasCreator"
+                         xml:id="tolechowski">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0003-3291-6876</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/131679384"
+                         role="hasCreator"
+                         xml:id="rlein">
+                  <forename>Richard</forename>
+                  <surname>Lein</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0002-7502-0503</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="aholzer">
+                  <forename>Anna</forename>
+                  <surname>Holzer</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0005-3560-3500</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="dsoelkner">
+                  <forename>Dominik</forename>
+                  <surname>Sölkner</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-9895-7212</idno>
+            </editor>
+            <editor>
+               <persName role="hasContributor" xml:id="ischotzko">
+                  <forename>Ina</forename>
+                  <surname>Schotzko</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-5210-3713</idno>
+            </editor>
+            <funder n="1">
+               <orgName key="https://d-nb.info/gnd/2054142-9" role="hasFunder">Österreichischer Wissenschaftsfonds FWF</orgName>
+               <idno type="project">PAT1495024</idno>
+               <title type="project">Die Protokolle des österreichischen Kabinettsrates 1919–1920</title>
+            </funder>
+            <respStmt>
+               <resp>Projektverantwortung</resp>
+               <orgName key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Projektleitung</resp>
+               <persName key="https://d-nb.info/gnd/120789825" role="hasPrincipalInvestigator">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+                  <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+                  <idno type="ORCID">0000-0003-3291-6876</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Nationaler Forschungspartner</resp>
+               <orgName key="https://d-nb.info/gnd/1123037736" role="hasEnabler">Austrian Centre for Digital Humanities</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Digitalisierung der gedruckten Quellen</resp>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>TEI-Datenmodellierung</resp>
+               <persName role="hasContributor" xml:id="tfruehwirth">
+                  <forename>Timo</forename>
+                  <surname>Frühwirth</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-3997-5193</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technische Supervision</resp>
+               <persName key="https://d-nb.info/gnd/1043833846"
+                         role="hasContributor"
+                         xml:id="pandorfer">
+                  <forename>Peter</forename>
+                  <surname>Andorfer</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-9575-9372</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technisches Consulting und Vorbereitung der Druckausgabe</resp>
+               <persName key="https://d-nb.info/gnd/13281899X"
+                         role="hasContributor"
+                         xml:id="skurz">
+                  <forename>Stephan</forename>
+                  <surname>Kurz</surname>
+                  <affiliation key="https://d-nb.info/gnd/1202798799">Institut für die Erforschung der Habsburgermonarchie und des Balkanraumes</affiliation>
+                  <idno type="ORCID">0000-0003-2546-2570</idno>
+               </persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher key="https://d-nb.info/gnd/1001454-8">Österreichische Akademie der Wissenschaften</publisher>
+            <date when="2028"/>
+            <availability status="free">
+               <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">Lizenziert unter CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/deed.de)</licence>
+            </availability>
+            <idno type="ISBN_Print"/>
+            <idno type="ISBN_Part_epub"/>
+            <idno type="ISBN_Digital"/>
+            <idno type="DOI"/>
+            <idno type="DOI_zenodo"/>
+            <idno type="ebook_ID"/>
+         </publicationStmt>
+         <seriesStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="m" type="main">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <respStmt>
+               <resp>Bearbeitung und Herausgeberschaft</resp>
+               <orgName key="https://d-nb.info/gnd/2024703-5">Universität Wien</orgName>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+         </seriesStmt>
+         <notesStmt>
+            <note>Diese TEI-XML-Datei ist Grundlage für eine Druckausgabe der Edition.</note>
+            <relatedItem>
+               <biblStruct>
+                  <monogr>
+                     <imprint>
+                        <pubPlace key="https://d-nb.info/gnd/4066009-6">Wien</pubPlace>
+                        <publisher key="https://d-nb.info/gnd/2068748-5">Verlag der Österreichischen Akademie der Wissenschaften</publisher>
+                        <date when="2029"/>
+                     </imprint>
+                     <extent/>
+                  </monogr>
+                  <note>
+              <idno/>
+              <ptr/>
+            </note>
+                  <citedRange/>
+               </biblStruct>
+            </relatedItem>
+         </notesStmt>
+         <sourceDesc>
+            <bibl>Quellbestand: AT-OeStA/AdR MRang MR 1Rep KRP Kabinettsratsprotokolle, 1918-1920 (Teilbestand)<ref target="https://www.archivinformationssystem.at/detail.aspx?id=5465">https://www.archivinformationssystem.at/detail.aspx?id=5465</ref>
+            </bibl>
+            <msDesc>
+               <msIdentifier>
+                  <institution key="https://d-nb.info/gnd/37748-X" role="hasOwner">AT-OeStA Österreichisches Staatsarchiv (Archiv (ÖStA))</institution>
+                  <repository key="https://d-nb.info/gnd/1601181-8">AT-OeStA/AdR Archiv der Republik, 1918- (Abteilung)</repository>
+                  <collection>AT-OeStA/AdR MRang MR 1Rep Ministerrat 1. Republik, 1918 - 1938 (Bestand)</collection>
+                  <idno>AT-OeStA_AdR-MRang-MR-1.-Rep.-KRP-061</idno>
+               </msIdentifier>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <abstract>
+            <p>
+          <!--to be generated-->
+        </p>
+         </abstract>
+      </profileDesc>
+      <encodingDesc>
+         <styleDefDecl scheme="css"/>
+         <tagsDecl>
+            <rendition xml:id="b" scheme="css">font-weight:bold;</rendition>
+            <rendition xml:id="su" scheme="css">vertical-align:super;font-size:.7em;</rendition>
+            <rendition xml:id="s" scheme="css">text-decoration:line-through;</rendition>
+            <rendition xml:id="u" scheme="css">text-decoration:underline;</rendition>
+            <rendition xml:id="ow" scheme="css">text-decoration:line-through;text-decoration-style:double;</rendition>
+            <rendition xml:id="r" scheme="css">display:block;text-align:right;</rendition>
+            <rendition xml:id="letterspaced" scheme="css">letter-spacing:0.15em;</rendition>
+            <rendition xml:id="i" scheme="css">font-style:italic;</rendition>
+         </tagsDecl>
+         <editorialDecl>
+            <hyphenation>
+               <p>
+            <!--to be added-->
+          </p>
+            </hyphenation>
+            <correction>
+               <p>
+            <!--to be added-->
+          </p>
+            </correction>
+            <normalization>
+               <p>
+            <!--to be added-->
+          </p>
+            </normalization>
+            <punctuation>
+               <p>
+            <!--to be added-->
+          </p>
+            </punctuation>
+            <stdVals>
+               <p>
+            <!--to be added-->
+          </p>
+            </stdVals>
+            <p>
+          <!--to be added-->
+        </p>
+         </editorialDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#tfruehwirth" when-iso="2026-10-13">TEIGarage output upconverted with upconvert.xsl</change>
+         <change who="#tfruehwirth" when-iso="2026-10-13">TEI header populated with generate_tei_templates.py</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface/>
+   </facsimile>
+   <text>
+      <body>
+         <div xml:id="doc-krp-0061.xml">
+            <head type="dokument">
+               <title type="num">61.<note type="footnote">Das Protokoll trägt den Vermerk <hi rend="#i">Vertraulich!</hi></note>
+               </title>
+               <title type="desc">
+                  <pb facs="krp-0061_r-0001"/>
+                  <pb facs="krp-0061_r-0002"/>[Dienstag] 1919-04-15</title>
+            </head>
+            <div type="dokumentkopf">
+               <div type="vorsitz">
+                  <head>Vorsitz:</head>
+                  <p>Renner</p>
+               </div>
+               <div type="anwesend">
+                  <head>Anwesend:</head>
+                  <p>Bauer, Bratusch, Deutsch, Glöckel, Hanusch, Loewenfeld-Russ, Miklas, Paul, Resch, Stöckler, Waiss, Zerdik</p>
+               </div>
+               <div type="zugezogen">
+                  <head>Zugezogen:</head>
+                  <p>Grimm, Günther</p>
+               </div>
+               <div type="schriftfuehrer">
+                  <head>Schriftführer:</head>
+                  <p>unbekannt</p>
+               </div>
+               <div type="dauer">
+                  <head>Dauer:</head>
+                  <p>15.00–17.45 Uhr</p>
+               </div>
+            </div>
+            <div type="komponenten">
+               <p>Reinschrift, Beilagen, Konzept, stenographische Mitschrift, Entwurf der Tagesordnung, diverse Zusätze</p>
+            </div>
+            <div type="beilagen">
+               <head>Beilagen:</head>
+               <list>
+                  <item><ref target="#krp-0061_top06">Zu TOP 6</ref>: <ref target="#krp-0061_b01">Übersichtstabelle des Staatsamtes für Inneres und Unterricht Zl. 18168 über alle jene Beschlüsse der Niederösterreichischen und Kärntner Landesausschüsse hinsichtlich der Einhebung von Umlagen in deren Gemeinden</ref></item>
+                  <item><ref target="#krp-0061_top07">Zu TOP 7</ref>: <ref target="#krp-0061_b02">Antrag auf Ausdehnung der Vollmacht von Univ. Prof. Hofrat Dr. Oswald Redlich auf die Archive der früheren gemeinsamen und österreichischen Zentralstellen</ref></item>
+                  <item><ref target="#krp-0061_top09">Zu TOP 9</ref>: <ref target="#krp-0061_b03">Gesetzesantrag des Staatsamtes für Land- und Forstwirtschaft Zl. 8135/1919 zum Schutz der Alpen und der Förderung der Alpwirtschaft</ref></item>
+                  <item><ref target="#krp-0061_top10">Zu TOP 10</ref>: <ref target="#krp-0061_b04">Gesetzesbeschluss der Provisorischen Landesversammlung Salzburg auf Errichtung einer Bürgerschule in Bischofshofen</ref></item>
+                  <item><ref target="#krp-0061_top11">Zu TOP 11</ref>: <ref target="#krp-0061_b05">Antrag des Staatssekretärs Dr. Bauer auf Herausgabe eines Erlasses über die Anwendung der Dienstpragmatik die Beamten und Diener des Auswärtigen Dienstes</ref></item>
+                  <item><ref target="#krp-0061_top12">Zu TOP 12</ref>: <ref target="#krp-0061_b06">Gewährung einmaliger Mehrbezüge an das Lehrpersonal der Exportakademie</ref></item>
+                  <item><ref target="#krp-0061_top13">Zu TOP 13</ref>: <ref target="#krp-0061_b07">Anträge des Staatsamtes für Justiz Zl. 6862/19 und 6878/19 auf Befristung des Treuegelöbnisses deutscher Beamter für den tschechoslowakischen Staat mit 30. April 1919</ref></item>
+                  <item><ref target="#krp-0061_top14">Zu TOP 14</ref>: <ref target="#krp-0061_b08">Vollzugsanweisung des Staatsamtes für Verkehrswesen Zl. 885/Präs auf Festsetzung der Zuständigkeit hinsichtlich der staatshoheitlichen und staatsaufsichtsrechtlichen Angelegenheiten des Luftfahrtwesens</ref></item>
+                  <item><ref target="#krp-0061_top15">Zu TOP 15</ref>: <ref target="#krp-0061_b09">Vortrag des Staatsamtes für Verkehrswesen Zl. 317/Präs auf Forderung der Zuständigkeit für die Beförderung von Staatseisenbahnbeamten in die V. und IV. Dienstklasse</ref></item>
+               </list>
+            </div>
+            <div type="protokoll">
+               <pb facs="krp-0061_r-0003"/>
+               <div type="top" xml:id="krp-0061_top01">
+                  <head>
+                     <label>
+                        <num n="1">1.</num>
+                        <seg>Regelung des Reise- und Sommerverkehres.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Loewenfeld-Russ</hi> teilt mit, dass sich die Landesregierungen in Graz, Innsbruck und Linz gegenüber dem ihnen zur Begutachtung übermittelten Entwurfe einer Verordnung der Gesamtregierung wegen Aufhebung der Beschränkungen des Einreiseverkehrs durchaus ablehnend verhalten. Es werfe sich daher die Frage auf, ob im Kabinette die Auffassung vorherrsche, dass mit der Hinausgabe dieser Verordnung gleichwohl, und zwar unter Berücksichtigung konkreter Wünsche der Landesregierungen, die bei der morgigen Besprechung über diesen Gegenstand vorgebracht werden dürften, vorgegangen werden sollte.</p>
+                  <p>Nach einer eingehenden Debatte, an der sich nebst dem Vorsitzenden und dem Referenten noch die Staatssekretäre <pb facs="krp-0061_r-0004"/>Dr. <hi rend="#letterspaced">Bauer</hi> und Dr. <hi rend="#letterspaced">Bratusch</hi> beteiligten, wird Staatssekretär Dr. Loewenfeld-Russ vom Kabinettsrat eingeladen, die Konferenz mit den Landesregierungen abzuhalten, einen einschlägigen Verordnungsentwurf unter allfälliger Berücksichtigung des Ergebnisses dieser Besprechung auszuarbeiten und ihn dem nächsten Kabinettsrat zur Beschlussfassung vorzulegen. Ferner wird Staatssekretär Dr. Bratusch eingeladen, dem Kabinettsrate ehestens den Entwurf einer Vollzugsanweisung der Staatsregierung zu unterbreiten, mit welcher die Verordnung des Gesamtministeriums vom 25. Juli 1914, RGBl Nr. 158, betreffend die Erlassung von Ausnahmsverfügungen, aufgehoben wird; hiedurch soll den Ländern die Möglichkeit genommen werden, sich bei ihren verschiedentlichen Einreisesperrmaßnahmen auf die bezogene Verordnung zu berufen.</p>
+                  <p>Endlich wird Staatssekretär Dr. Bratusch eingeladen, der Frage näherzutreten, in welcher Form die volle Verkehrsfreiheit zwischen allen Teilen des Staatsgebietes gesetzlich sichergestellt werden könnte, wodurch von vornherein entgegengesetzten Entschließungen autonomer Körperschaften die Rechtskraft <pb facs="krp-0061_r-0005"/>aberkannt würde und gleichzeitig die Möglichkeit gegeben wäre, zuwiderhandelnde Organe straf-, gegebenenfalls auch zivilrechtlich verantwortlich zu machen.</p>
+               </div>
+               <div type="top" xml:id="krp-0061_top02">
+                  <head>
+                     <label>
+                        <num n="2">2.</num>
+                        <seg>Bestimmung des 1. Mai als Schul- und Amtsfeiertag; Auszahlung der Gehalts- und Dienstbezüge an alle Staatsangestellten für den Monat Mai bereits am 30. April.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Paul</hi> weist darauf hin, dass von den Staatseisenbahnbediensteten das Verlangen gestellt werde, es möge der 1. Mai künftighin im Dienstbetrieb gleich einem Feiertage behandelt werden; gleichzeitig möge die Gehaltsauszahlung für den Monat Mai bereits am 30. April vorgenommen werden. Da für den Fall, als diesem Wunsche entsprochen werden sollte, eine Reihe von Verfügungen erlassen werden müsste, ersuche der sprechende Staatssekretär bereits jetzt um eine diesbezügliche Stellungnahme des Kabinetts.</p>
+                  <p>Nachdem der <hi rend="#letterspaced">Vorsitzende</hi> darauf verwiesen hatte, dass der 1. Mai auch schon im Deutschen Reiche als Feiertag erklärt worden sei, beschließt der Kabinettsrat diesen Tag als Schul- und Amtsfeiertag zu erklären. Gleichzeitig stimmt der Kabinettsrat der Auszahlung der Gehälter an sämtliche Staats- und Staatsbahnbediensteten für den Monat Mai bereits am 30. April zu.</p>
+                  <p><pb facs="krp-0061_r-0006"/></p>
+               </div>
+               <div type="top" xml:id="krp-0061_top03">
+                  <head>
+                     <label>
+                        <num n="3">3.</num>
+                        <seg>Einführung der Sommerzeit mit 28. April l. J.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Paul</hi> führt aus, dass Deutschland, die Schweiz weiters die tschechoslowakische und die jugoslawische Republik die Einführung der Sommerzeit abgelehnt haben. Nachdem sohin lediglich Italien und die ungarische Räterepublik, eventuell noch der polnische Staat die Sommerzeit eingeführt haben bzw. einführen werden, werfe sich die Frage auf, ob der von der Staatsregierung bereits gefasste positive Beschluss nicht etwa rückgängig gemacht werden sollte. Nach einer hierüber abgeführten kurzen Debatte beschließt der Kabinettsrat, an seinem ursprünglichen Beschlusse betreffend die Einführung der Sommerzeit mit 28. April d. J. festzuhalten.</p>
+               </div>
+               <div type="top" xml:id="krp-0061_top04">
+                  <head>
+                     <label>
+                        <num n="4">4.</num>
+                        <seg>Ententekommission zur Verhinderung der Einfuhr von Kriegsmaterial und Lebensmitteln nach Deutschland und Ungarn.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Paul bringt zur Kenntnis, dass die Entente die Einsetzung einer viergliedrigen Kommission mit dem Sitze in Wien zur Verhinderung der Einfuhr von Kriegsmaterial und Lebensmitteln nach Deutschland und Ungarn angekündigt habe.</p>
+                  <p>Der Kabinettsrat nimmt diese Mitteilung zur Kenntnis und beschließt, <pb facs="krp-0061_r-0007"/>hierüber eine offizielle Verlautbarung an die Presse hinauszugeben und zwar bevor die Kommission ihre Wirksamkeit beginnt. In dieser Bekanntgabe wird ausdrücklich auf den Zusammenhang der Tätigkeit dieser Kommission mit der Freigabe der Blockade für Deutschösterreich hinzuweisen sein. Mit der Verfassung dieser Verlautbarung wird das Staatsamt für Verkehrswesen betraut.</p>
+               </div>
+               <div type="top" xml:id="krp-0061_top05">
+                  <head>
+                     <label>
+                        <num n="5">5.</num>
+                        <seg>Frage einer Unterbringung der Invaliden in den Schlössern Schönbrunn, Hetzendorf und Laxenburg.</seg>
+                     </label>
+                  </head>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> gibt bekannt, dass die Invaliden die Forderung gestellt haben, es möge ihnen die Schlösser Schönbrunn und Hetzendorf als Unterkunftsstätten zur Verfügung gestellt werden.</p>
+                  <p>Über Einladung des Vorsitzenden teilt hierauf Sektionschef Dr. <hi rend="#letterspaced">Beck</hi> mit, er habe bereits mit dem Schlosshauptmanne von Schönbrunn und Hetzendorf diesbezüglich Rücksprache gepflogen und hätte sich an der Hand der einschlägigen Pläne die Überzeugung verschaffen können, dass in Hetzendorf keinerlei Möglichkeit für eine Unterbringung der Invaliden bestehe, zumal die Trakte vor dem Hauptgebäude bereits vollständig belegt seien (private Mietwohnungen und <pb facs="krp-0061_r-0008"/>Dienerschaftsräume). Was Schönbrunn anbelangt, seien die meisten der in Betracht kommenden Räumlichkeiten gleichfalls schon vermietet. Leer seien lediglich die 30 Zimmer der sogenannten Valerieappartements, weiters käme noch der große Gardehof in Betracht, der mit seinen zwei großen Räumen für beiläufig 100 Mann aufnahmsfähig erscheine. Auch das Hauptgebäude des Schönbrunner Schlosses eigne sich bei seiner Anlage kaum für die gedachten Zwecke. Hingegen könnte das Schloss Laxenburg hiezu herangezogen werden, dessen Räumlichkeiten gegenwärtig noch verfügbar seien. Es würde sich seines Erachtens empfehlen, eine Abordnung der Invaliden in die genannten Schlösser zu führen und sie durch einen Lokalaugenschein von den Unterbringungsmöglichkeiten zu überzeugen.</p>
+                  <p>Der Kabinettsrat beschließt, dass der Vorstand des Zentralverbandes der Invaliden einzuladen sei, die Schlösser Schönbrunn, Hetzendorf und Laxenburg in Augenschein zu nehmen, um dem Zentralverband dann berichten zu können, ob bzw. welche Räume zur Unterbringung der Invaliden geeignet erscheinen.</p>
+                  <p><pb facs="krp-0061_r-0009"/></p>
+               </div>
+               <div type="top" xml:id="krp-0061_top06">
+                  <head>
+                     <label>
+                        <num n="6">6.</num>
+                        <seg>Beitritt der Staatsregierung zu einer Reihe von Beschlüssen des Niederösterreichischen Landesausschusses bzw., des Niederösterreichischen Landesrates sowie des Kärntnerischen Landesausschusses über die Einhebung von Umlagen in Gemeinden Niederösterreichs und Kärntens.</seg>
+                     </label>
+                  </head>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> erbittet und erhält die Zustimmung des Kabinettsrates zum Beitritt der Staatsregierung zu nachstehenden Beschlüssen der Landesverwaltung in Niederösterreich und Kärnten:</p>
+                  <p>Beschluss des Niederösterreichischen Landesausschusses vom 10. September 1918, betreffend Einhebung einer 100 % übersteigenden Umlage in den Schulsprengeln Schandachen, Illmanns und Reingers der Katastralgemeinde Schandachen im Jahre 1918;</p>
+                  <p>Beschluss des Niederösterreichischen Landesausschusses vom 24. September 1918, betreffend Einhebung einer 100 % übersteigenden Umlage in den nach Steinbach eingeschulten Gemeindeteilen der gleichnamigen Gemeinde im Jahre 1918;</p>
+                  <p>Beschluss des Niederösterreichischen Landesausschusses vom 18. Juni 1918, betreffend Einhebung einer 100 % übersteigenden Umlage auf die Hauszins- und Erwerbsteuer im Markte Türnitz für das Jahr 1917;</p>
+                  <p>Beschluss des Niederösterreichischen Landesausschusses vom 18. Juni 1918, betreffend Einhebung einer 100 % übersteigenden Umlage auf die Hauszins- und Er<pb facs="krp-0061_r-0010"/>werbsteuer im Markte Türnitz für das Jahr 1918;</p>
+                  <p>Beschluss des Niederösterreichischen Landesausschusses vom 22. Oktober 1918, betreffend Einhebung einer 100 % übersteigenden Umlage in den nach Waidhofen an der Thaya eingeschulten Gemeindeteilen der Katastralgemeinde Klein-Eberhards durch die Ortsgemeinde Jarolden für das Jahr 1918;</p>
+                  <p>Beschluss des Niederösterreichischen Landesausschusses vom 23. August 1918, betreffend Einhebung einer 100 % übersteigenden Umlage in der Gemeinde Schrattenbach für das Jahr 1918;</p>
+                  <p>Beschluss des Niederösterreichischen Landesausschusses vom 15. Oktober 1918, betreffend Einhebung einer 100 % übersteigenden Umlage in den Schulsprengeln Kirchberg am Wechsel, Trattenbach und Ottertal der Gemeinde Molzegg für das Jahr 1918;</p>
+                  <p>Beschluss des niederösterreichischen Landesausschusses vom 8. Oktober 1918, betreffend Einhebung einer 100 % übersteigenden Umlage in den Schulsprengeln Kirchberg am Wechsel und Feistritz am Wechsel der Gemeinde Feistritz am Wechsel für das Jahr 1918;</p>
+                  <p><pb facs="krp-0061_r-0011"/>Beschluss des Niederösterreichischen Landesausschusses vom 2. Oktober 1918, betreffend Einhebung einer 100 % übersteigenden Umlage in den Schulsprengeln St. Peter am Neuwald und Mariensee durch die Ortsgemeinde Amt Aspang im Jahre 1918;</p>
+                  <p>Beschluss des Niederösterreichischen Landesausschusses vom 10. September 1918, betreffend Einhebung einer 100 % übersteigenden Umlage in den nach Purgstall eingeschulten Gemeindeteilen der Gemeinde Feichsen für das Jahr 1918;</p>
+                  <p>Beschluss des Niederösterreichischen Landesrates vom 4. Februar 1919, betreffend Einhebung einer 100 % übersteigenden Umlage in den nach Süßenbach eingeschulten Gemeindeteilen der Gemeinde Limbach für das Jahr 1919;</p>
+                  <p>Beschluss des Kärntnerischen Landesausschusses vom 3. November 1918, betreffend Einhebung einer 200 % übersteigenden Umlage in den nach Obermillstatt eingeschulten Gemeindeteilen der Gemeinde Obermillstatt für das Jahr 1918;</p>
+                  <p>Beschluss des Kärntnerischen Landesausschusses vom 10. November 1918, betreffend Einhebung einer 200 % übersteigenden Umlage in den nach Görtschach-Förolach eingeschulten Gemeindeteilen der Gemeinde Görtschach für das Jahr 1919;</p>
+                  <p><pb facs="krp-0061_r-0012"/>Beschluss des Kärntnerischen Landesausschusses vom 30. Oktober 1918, betreffend Einhebung einer 200 % übersteigenden Umlage in den nach Gnesau, Zedlitzdorf und Patergassen eingeschulten Gemeindeteilen der Gemeinde Gnesau für das Jahr 1919 und endlich;</p>
+                  <p>Beschluss des Kärntnerischen Landesausschusses vom 25. Oktober 1918, betreffend Einhebung einer 200 % übersteigenden Umlage in der Gemeinde Mühldorf und einer Auflage von 10 K von jedem in dieser Gemeinde zum Verbrauche gelangenden Hektoliter gebrannter geistiger Flüssigkeiten ohne Unterschied der Gradhältigkeit für das Jahr 1919.</p>
+               </div>
+               <div type="top" xml:id="krp-0061_top07">
+                  <head>
+                     <label>
+                        <num n="7">7.</num>
+                        <seg>Ausdehnung der Vollmacht des Univ.- Prof. Hofrates Dr. Oswald Redlich auf Archive der früheren gemeinsamen und österreichischen Zentralstellen.</seg>
+                     </label>
+                  </head>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> erbittet und erhält die Ermächtigung des Kabinettsrates zur Ausdehnung der Vollmacht des Univ.- Prof. Hofrates Dr. Oswald Redlich auf die Archive der früheren gemeinsamen und österreichischen Zentralstellen, und zwar in nachstehender Weise:</p>
+                  <list>
+                     <item n="1"><label>1.)</label> Prof. Hofrat Dr. Redlich wird bevollmächtigt, den deutschösterreichischen Staat bei der Auseinandersetzung mit den anderen auf dem Boden der ehemaligen Monarchie entstandenen Staaten über deren Ansprüche auf die Archive und Registraturen der frühe<pb facs="krp-0061_r-0013"/>ren gemeinsamen und österreichischen staatlichen Zentralstellen zu vertreten, die hiezu in diesen Archiven notwendigen Arbeiten zu leiten und die nötigen Verhandlungen zu führen.</item>
+                     <item n="2"><label>2.)</label> Hiebei sollen die vom Kabinettsrate in der Sitzung vom 18. Februar 1919 (Kabinettsprotokoll Nr. 43, Pkt. 2) gebilligten Grundsätze als Richtschnur dienen.</item>
+                     <item n="3"><label>3.)</label> Der genannte Bevollmächtigte wird die Vorstände und Leiter der in Betracht kommenden Archive zur Beratung und zur allfälligen Teilnahme an Verhandlungen heranzuziehen haben.</item>
+                  </list>
+               </div>
+               <div type="top" xml:id="krp-0061_top08">
+                  <head>
+                     <label>
+                        <num n="8">8.</num>
+                        <seg>Gewährung eines außerordentlichen Übergangsbeitrages für die deutschösterreichischen Staatsbediensteten aus Anlass der bestehenden außergewöhnlichen Teuerungsverhältnisse.</seg>
+                     </label>
+                  </head>
+                  <p>Sektionschef Dr. <hi rend="#letterspaced">Grimm</hi> verweist im Auftrage des augenblicklich abwesenden Staatssekretärs für Finanzen auf den Beschluss des Kabinettsrates vom 28. März d. J., wonach den Staatseisenbahnbediensteten unter dem Drucke der gegebenen Verhältnisse (Gesamtstreik der Eisenbahner) neben anderen Zugeständnissen für die Zeit vom 1. April bis Ende August 1919 als Beitrag zur Erleichterung der Haushaltsführung während der Übergangszeit ein am 1. eines jeden Monates im Vorhinein auszuzahlender Übergangsbeitrag und zwar von je <pb facs="krp-0061_r-0014"/>100 K für jeden Bediensteten ohne Unterschied der Stellung und von je 20 K für jedes in seiner Versorgung befindliche Familienmitglied im Sinne der für die derzeitigen Teuerungszulagen geltenden Normen und der bezüglichen Durchführungsvorschriften gewährt worden sei.</p>
+                  <p>Bei der Unmöglichkeit, bis 1. April 1919 den jedem einzelnen Bediensteten zukommenden Betrag genau festzustellen, sei angeordnet worden, dass an diesem Tage jedem Bediensteten ein Pauschalbetrag von 150 K angewiesen und die genaue Abrechnung im Laufe des Monates April 1919 durchgeführt werde. Der vorerwähnte Übergangsbeitrag sei unter einem auch den Bediensteten der Generalpostdirektion bereits gewährt worden.</p>
+                  <p>Die Staatsangestelltenorganisationen einiger Länder hätten nun unter Hervorhebung ihrer Entrüstung über die einseitige Bevorzugung der Eisenbahn- und Postbediensteten sehr entschieden die Forderung nach Gewährung der gleichen Begünstigung gestellt.</p>
+                  <p>Bei den am 11. April 1919 stattgefundenen Verhandlungen in der Staatskanzlei, die zwischen dem Staatssekretär der Finanzen und den Vertretern des Zentralverbandes der Staatsbeamtenvereine Deutschösterreichs gepflogen wurd<pb facs="krp-0061_r-0015"/>en, habe der Staatssekretär der Finanzen schließlich die den Eisenbahnern gewährten vorerwähnten Begünstigungen rückwirkend mit 1. April 1919 für alle Staatsbediensteten, ferner einen neuerlichen einmaligen Zuschuss im Ausmaß der bisher gewährten einmaligen Zuschüsse für den Monat Mai 1919 in Aussicht gestellt.</p>
+                  <p>Der aus der Gewährung eines Übergangsbeitrages an alle Zivilstaatsbediensteten (außer den Eisenbahn- und Postbediensteten) sich ergebende Mehraufwand betrage unter der Voraussetzung, dass ungefähr 50.000 Bedienstete hier in Frage kommen und mit einem durchschnittlichen Höchstbetrag von 160 K Monat zu rechnen sei, für einen Monat ungefähr 8 Millionen K, für die fünf Monate daher 40 Millionen K. Der Aufwand für den einmaligen Zuschuss betrage ungefähr 51–54 Millionen K.</p>
+                  <p>Im Auftrage des Staatssekretärs für Finanzen beantrage Redner, der Kabinettsrat wolle diesen Bericht genehmigend zur Kenntnis nehmen.</p>
+                  <p>Der Kabinettsrat erteilt die erbetene Genehmigung.</p>
+               </div>
+               <div type="top" xml:id="krp-0061_top09">
+                  <head>
+                     <label>
+                        <num n="9">9.</num>
+                        <seg>Gesetzentwurf über den Schutz der Alpen und die Förderung der Alpwirtschaft.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Stöckler</hi> erbittet und erhält die Ermächtigung des <pb facs="krp-0061_r-0016"/>Kabinettsrates, den Landesregierungen den Entwurf eines Gesetzes, betreffend den Schutz der Alpen und die Förderung der Alpwirtschaft, behufs Vorlage an die Landesversammlungen übermitteln zu dürfen.</p>
+               </div>
+               <div type="top" xml:id="krp-0061_top10">
+                  <head>
+                     <label>
+                        <num n="10">10.</num>
+                        <seg>Gesetzesbeschluss der Provisorischen Landesversammlung des Landes Salzburg über die Errichtung einer Doppelbürgerschule in Bischofshofen.</seg>
+                     </label>
+                  </head>
+                  <p>Unterstaatssekretär <hi rend="#letterspaced">Glöckel</hi> teilt mit, dass die Provisorische Landesversammlung des Landes Salzburg am 28. Februar d. J. im Grunde des § 5 des Gesetzes vom 10. Jänner 1870, LGBl Nr. 11, wonach von Fall zu Fall durch ein Landesgesetz festzustellen ist, an welchen Orten und mit welchen Mitteln Bürgerschulen zu errichten sind, die Errichtung einer öffentlichen dreiklassigen Bürgerschule für Knaben und Mädchen in Bischofshofen beschlossen und die Kundmachung dieses Gesetzes am 10. März d. J. verfügt habe. In der Erwägung, dass gegen den Inhalt dieses Gesetzes ein Bedenken nicht obwaltet, glaube der sprechende Staatssekretär die vom Landesrat verfügte Kundmachung nicht weiter bemängeln zu sollen und erbittet gleichzeitig die Ermächtigung des Kabinettsrates, von der Erhebung einer Vorstellung gegen diesen Gesetzesbeschluss absehen zu dürfen.</p>
+                  <p><pb facs="krp-0061_r-0017"/>Der Kabinettsrat erteilt die erbetende Ermächtigung.</p>
+               </div>
+               <div type="top" xml:id="krp-0061_top11">
+                  <head>
+                     <label>
+                        <num n="11">11.</num>
+                        <seg>Anwendung der Dienstpragmatik auf die Beamten und Diener des deutschösterreichischen Auswärtigen Dienstes.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Bauer</hi> führt aus, dass für die Angestellten des bestandenen Ministeriums des Äußerns die Dienstpragmatik keine Geltung hatte. Infolge Errichtung des Staatsamtes für Äußeres und dessen Aufnahme in die Reihe der übrigen deutschösterreichischen Staatsämter gelten nunmehr zweifellos die Bestimmungen der Dienstpragmatik auch für die Angestellten des deutschösterreichischen Auswärtigen Dienstes, d. i. des Staatsamtes für Äußeres, der deutschösterreichischen Vertretungsbehörden im Auslande und des deutschösterreichischen Staatsarchivs und zwar vom Tage ihrer Angelobung an.</p>
+                  <p>Um die Unterschiede, welche sich hinsichtlich der Gebühren, Urlaube, etc. gegenüber den früheren Normen ergeben, auszugleichen, beabsichtigte der sprechende Staatssekretär nach gepflogenem Einvernehmen mit den Staatsämtern für Inneres und Unterricht und für Finanzen Übergangsbestimmungen in einem internen Durchführungserlass zu treffen. Inzwischen hätten die Kanzleibeamten des Auswärtigen Dienstes die Bitte um Einreihung in die Gruppe C der Staatsbeamten gestellt und diese Bitte mit dem <pb facs="krp-0061_r-0018"/>Hinweis auf ihre Vorbildung, die abgelegte Sprachenprüfung und den Umstand, dass sie nicht aus dem Kreise der Zertifikatisten hervorgegangen seien, begründet. Staatssekretär Dr. Bauer halte diese Bitte für berücksichtigungswert und erbitte sich die Ermächtigung zur Durchführung dieser Maßnahme sowie zur Hinausgabe des erwähnten Durchführungserlasses.</p>
+                  <p>Nach einer längeren Debatte, an welcher sich Staatssekretär <hi rend="#letterspaced">Paul</hi>, Unterstaatssekretär <hi rend="#letterspaced">Miklas</hi> sowie die Sektionschefs Dr. <hi rend="#letterspaced">Grimm</hi> und <hi rend="#letterspaced">Günther</hi> beteiligten, stimmt der Kabinettsrat den Anträgen des sprechenden Staatssekretärs unter der Voraussetzung zu, dass hinsichtlich der Willfahrung des Petits der Kanzleibeamten im Schoße der zwischenstaatsamtlichen Geschäftsstelle für die Behandlung von Staatsbedienstetenangelegenheiten eine Form gefunden werde, welche die angestrebte Einreihung der Kanzleibeamten in eine höhere Beamtenkategorie ermöglicht. Diese Einreihung hätte sich jedoch jedenfalls nur auf die bereits dem bestandenen Ministerium des Äußern angehörigen Angestellten zu erstrecken und dürfe der bevorstehenden endgiltigen Regelung der Beamtenfragen nicht vorgreifen.</p>
+                  <p><pb facs="krp-0061_r-0019"/></p>
+               </div>
+               <div type="top" xml:id="krp-0061_top12">
+                  <head>
+                     <label>
+                        <num n="12">12.</num>
+                        <seg>Gewährung einmaliger Mehrbezüge an das Lehrpersonal der Exportakademie.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Ing. <hi rend="#letterspaced">Zerdik</hi> führt aus, dass das vormalige Ministerium für Kultus und Unterricht im Hinblick auf die außerordentlichen Teuerungsverhältnisse den Hochschulprofessoren für das Verwaltungsjahr 1917/18 Mehrbezüge gewährt habe, worauf auch das Staatsamt für Gewerbe, Industrie und Handel nach Einholung der Genehmigung des Staatsratsdirektoriums den ordentlichen und außerordentlichen Professoren der seinem Ressort unterstehenden Exportakademie solche Mehrbezüge, u. zw. in demselben Ausmaße flüssig gemacht habe, welches das Unterrichtsministerium für Hochschulprofessoren festgesetzt hatte.</p>
+                  <p>Für das Verwaltungsjahr 1918/19 habe nun das vormalige Ministerium für Kultus und Unterricht abermals, vorbehaltlich einer seinerzeitigen allgemeinen Regelung der Bezüge, den Hochschulprofessoren aufgrund einer kaiserlichen Ermächtigung vom 28. Juni 1918 Mehrbezüge zugebilligt.</p>
+                  <p>Nach Analogie dieser Verfügung beabsichtige auch das Staatsamt für Handel und Gewerbe, Industrie und Bauten den Lehrkräften der Exportakademie ein<pb facs="krp-0061_r-0020"/>malige Mehrbezüge für das Verwaltungsjahr 1918/19 in dem vom früheren Unterrichtsministerium für das seinem Ressort unterstehende Lehrpersonal festgesetzten Ausmaße flüssig zu machen. Ferner sei beabsichtigt, dem a.o. Prof. Achill Decker, der erst aufgrund des Kabinettsratsbeschlusses vom 11. Februar 1919 in den deutschösterreichischen Staatsdienst übernommen werden konnte, und daher einen Mehrbezug für das Verwaltungsjahr 1917/18 noch nicht erhalten habe, diesen Mehrbezug im Nachhinein zu gewähren.</p>
+                  <p>Die Zubilligung dieser Mehrbezüge stelle sich angesichts der immer mehr zunehmenden Teuerung als eine dringliche Maßregel dar. Das Staatsamt der Finanzen habe seine Zustimmung bereits im kurzen Wege erteilt.</p>
+                  <p>Der sprechende Staatssekretär stelle daher den Antrag:</p>
+                  <p>Der Kabinettsrat wolle die Gewährung nachstehender einmaliger Mehrbezüge an das Lehrpersonal der Exportakademie genehmigen:</p>
+                  <list>
+                     <item n="1"><label>1.)</label> für das Verwaltungsjahr 1917/18 dem a.o. Prof. Achill Decker den Betrag von K 800;</item>
+                     <item n="2"><label>2.)</label> für das Verwaltungsjahr 1918/19 dem o. Prof. Dr. Franz <pb facs="krp-0061_r-0021"/>Heiderich den Betrag von K 1.600, dem o. Prof. Hofrat Dr. Josef Gruntzel den Betrag von K 1.066,67, den o. Prof. Hofrat Anton Schmid und Sigmund Feitler den Betrag von je K 800 und den a.o. Prof. Dr. Josef Priebsch und Achill Decker den Betrag von je K 400.</item>
+                  </list>
+                  <p>Der Kabinettsrat stimmt diesem Antrage zu.</p>
+               </div>
+               <div type="top" xml:id="krp-0061_top13">
+                  <head>
+                     <label>
+                        <num n="13">13.</num>
+                        <seg>Befristung des Treugelöbnisses der deutschen Beamten für den tschechoslowakischen Staat mit 30. April 1919.</seg>
+                     </label>
+                  </head>
+                  <p>Wie dem Kabinettsprotokoll vom 25. Februar 1919, (Nr. 45) zu entnehmen ist, wurde mit dem tschechoslowakischen Gesetze vom 7. Februar 1919, Sammlung Nr. 74, angeordnet, dass die deutschösterreichischen Beamten in den von den Truppen des tschechoslowakischen Staates besetzten und unter dessen Verwaltung genommenen Gebieten binnen Monatsfrist dem tschechoslowakischen Staate Treue anzugeloben haben, andernfalls sie ihres Dienstpostens und aller Ansprüche auf Gehalt und Pension für sich und ihre Familie verlustig werden. Die Festsetzung des Beginnes der Frist wurde einer Verordnung vorbehalten. Staatssekretär Dr. <hi rend="#letterspaced">Bratusch</hi> gibt bekannt, dass diese Verordnung nunmehr <pb facs="krp-0061_r-0022"/>in dem am 26. März d. J. ausgegebenen XXXII. Stücke der Sammlung der Gesetze und Verordnungen des tschechoslowakischen Staates erschienen ist; sie verfügt, dass die Frist am 1. April beginnt und am 30. April 1919 endet.</p>
+                  <p>Nach dem bezogenen Kabinettsprotokolle sei beschlossen worden, durch das Staatsamt für Äußeres gegen das Vorgehen der tschechoslowakischen Regierung bei der Entente und bei der Regierung des tschechoslowakischen Staates Protest einlegen zu lassen und wenn der Protest zu keinem Ziele führen sollte, den deutschösterreichischen Beamten für ihr weiteres Verhalten besondere Instruktionen zu erteilen.</p>
+                  <p>Wegen der Wichtigkeit, die dem Treugelöbnisse der kurzen Befristung für dessen Ablegung und den Folgen der Nichtleistung zukomme, beantrage der sprechende Staatssekretär gegen das Vorgehen der tschechoslowakischen Regierung neuerlich bei dieser Regierung und bei der Entente durch das Staatsamt für Äußeres Protest einlegen zu lassen und weiters den deutschen Staatsbediensteten im Einklange mit den Kabinettsratsbeschlüssen vom 9. Jänner 1919 die Ablegung des Gelöbnisses, dem vor Entscheidung über die Gebietsfrage eine nur zwischenzeitliche Gel<pb facs="krp-0061_r-0023"/>tung beigelegt werden könne, zu empfehlen.</p>
+                  <p>Der Kabinettsrat genehmigt diese Anträge.</p>
+               </div>
+               <div type="top" xml:id="krp-0061_top14">
+                  <head>
+                     <label>
+                        <num n="14">14.</num>
+                        <seg>Vollzugsanweisung, betreffend Festsetzung der Zuständigkeit hinsichtlich der staatshoheitlichen und staatsaufsichtsrechtlichen Angelegenheiten des Luftfahrtwesens.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Paul</hi> führt anknüpfend an den Beschluss des Kabinettsrates vom 24. März d. J., betreffend die Unterstellung des gesamten Luftfahrtwesens unter das Staatsamt für Verkehrswesen aus, das genannte Staatsamt sei bei den näherem Studium der hiernach erforderlichen Maßnahmen zur Überzeugung gelangt, dass hinsichtlich des derzeit gänzlich desorganisierten Luftfahrtwesens eine Ordnung und einheitliche Regelung in absehbarer Zeit nur dann zustande kommen könne, wenn die einzelnen mit diesem Verkehrszweige zusammenhängenden Agenden systematisch und aufbauend in den Wirkungskreis des Staatsamtes für Verkehrswesen eingereiht werden.</p>
+                  <p>Die sofortige Übernahme <hi rend="#u">aller</hi> Angelegenheiten des Luftfahrtwesens unter <hi rend="#u">einem,</hi> sohin auch der Einrichtung und Leitung sowie des Betriebes eines von den beschäftigungslosen Heerespiloten angestrebten, sofort zu aktivie<pb facs="krp-0061_r-0024"/>renden staatlichen Luftverkehrsunternehmens in den Wirkungskreis des Staatsamtes für Verkehrswesen würde dem beabsichtigten Zwecke keineswegs entsprechen, zumal das Staatsamt für Verkehrswesen gegenwärtig über keine Organe verfüge, welche im Luftfahrtwesen derart ausgebildet und erfahren wären, um vom Anbeginne mit der erforderlichen Kraft und Autorität den bestehenden verworrenen Zuständen und maßlosen Aspirationen entgegentreten zu können.</p>
+                  <p>Das Staatsamt für Verkehrswesen beantrage daher in Erwägung der vorstehenden Ausführung <hi rend="#u">vorerst</hi> als <hi rend="#u">vorläufige</hi> Maßnahme die staatshoheits- und staatsaufsichtsrechtlichen Angelegenheiten des Luftfahrtwesens in seinen Wirkungskreis einzubeziehen und in seiner Hand zu vereinigen, dagegen den ausübenden staatlichen Luftfahrtdienst – der sich bisher nur auf Übungsfahrten der Heerespiloten beschränkte, bei welchen fallweise Zivilpersonen gegen Bezahlung mitgenommen wurden – bis auf weiteres in der Verwaltung jenes Staatsamtes zu belassen (Heer[es]wesen), welches bisher den staatlichen Luftfahrtdienst im Frieden wie im Kriege geleitet hat und auch über die erforderlichen exekutiven Organe hiezu verfügt.</p>
+                  <p>Das Staatsamt für Verkehrswesen betrachte es als seine erste Aufgabe, <pb facs="krp-0061_r-0025"/>einen Gesetzentwurf für die einheitliche Regelung des Luftfahrtwesens im Einvernehmen mit den übrigen Staatsämtern vorzubereiten und hiebei auch unter Heranziehung von Fachleuten alle jene Richtlinien festzulegen, welche zur künftigen Ordnung der noch schwebenden Fragen hinsichtlich der Verwendbarkeit und Verwendung des vorhandenen Kriegsmaterials der Fliegertruppe sowie der Flugplätze und Flughäfen für einen zivilen öffentlichen Verkehr sowie für die Gestaltung und den Betrieb eines allenfalls vom Staate zu unternehmenden tätigen Luftdienstes zu verfolgen sind.</p>
+                  <p>In diesem Sinne habe das Staatsamt für Verkehrswesen den Entwurf einer Vollzugsanweisung ausgearbeitet.</p>
+                  <p>Was das Meritum des Entwurfes betreffe, fänden die Bestimmungen des § 2, demgemäß die Liquidierungsgeschäfte der Fliegertruppe sowie die Angelegenheiten der künftigen Gestaltung des <hi rend="#u">militärischen</hi> Luftfahrtwesens dem Staatsamte für Heer[es]wesen führend zu überlassen sind, darin ihre Begründung, dass es sich hiebei nicht um die Wahrung und Förderung eines dem allgemeinen öffentlichen Interesse dienenden Verkehrszweiges, sondern nur um das besondere Interesse eines einzi<pb facs="krp-0061_r-0026"/>gen Ressorts (Heer[es]wesen) handelt, zu dessen Betreuung das Staatsamt für Verkehrswesen nach seinem Wirkungskreise weder zuständig sein könne, noch auch die erforderlichen fachlichen Qualifikationen besitze.</p>
+                  <p>Hinsichtlich der formellen Seite des Entwurfes müsse bezüglich der Zuständigkeit zur <hi rend="#u">Erlassung</hi> der erwähnten Vollzugsanweisung darauf hingewiesen werden, dass bisher eine Bestimmung über die fachliche Zuständigkeit des Luftfahrtwesens von keiner Regierung erlassen worden ist und auch das Gesetz vom 14. März 1919, StGBl. Nr. 180, hierüber nichts enthalte. Da es sich im Gegenstande daher nicht um die einvernehmliche Übertragung bereits bestehender Zuständigkeiten von einem Staatsamte auf ein anderes, sondern um die grundsätzliche Festlegung der bisher staatlich nicht geregelten Zuständigkeit für einen das allgemeine Interesse und die Rechtssphäre Einzelner berührenden Verkehrszweig handle, erscheine für die Erlassung der bezüglichen Vollzugsanweisung nur die Staatsregierung als solche, nicht aber das Staatsamt für Verkehrswesen zuständig.</p>
+                  <p>Im Hinblicke auf die angeführten Gründe, die Dringlichkeit der Angelegenheit und ferner zu dem Zwecke, die <pb facs="krp-0061_r-0027"/>gesetzgeberische Arbeit, deren Vorbereitung beim Staatsamte für Verkehrswesen schon weit vorgeschritten sei, rasch der Vollendung zuzuführen sowie die erforderliche Einleitung zur Erzielung eines Einvernehmens mit den übrigen Staatsämtern ehestens treffen zu können, stelle der sprechende Staatssekretär sohin den Antrag, der Kabinettsrat wolle beschließen:</p>
+                  <p>„Die führende Behandlung aller aus dem Staatshoheits- und Staatsaufsichtsrechte entspringenden Angelegenheiten des Flugfahrtwesens obliegt, insoweit nicht aufgrund gesetzlicher Bestimmungen noch die Zuständigkeit eines anderen Staatsamtes besteht, ab l. Mai 1919 dem Staatsamte für Verkehrswesen.</p>
+                  <p>Die Liquidierungsgeschäfte der Fliegertruppe, die Angelegenheiten der künftigen Gestaltung des militärischen Luftfahrtwesens sowie die Verwaltung des ausübenden staatlichen Luftfahrtdienstes hat bis auf weiteres das Staatsamt für Heer[es]wesen zu besorgen.</p>
+                  <p>Die sofortige Verlautbarung der Vollzugsanweisung der Staatsregierung, betreffend Festsetzung der Zuständigkeit hinsichtlich der staatshoheitlichen und staatsaufsichtsrechtlichen Angelegenheiten des Luftfahrtwesens wird <pb facs="krp-0061_r-0028"/>in der vom Staatsamte für Verkehrswesen beantragten Passung genehmigt.“</p>
+                  <p>In der sich hierüber entwickelnden Debatte wurde seitens des Sektionschefs Dr. <hi rend="#letterspaced">Grimm</hi> darauf aufmerksam gemacht, dass die Liquidierungsgeschäfte der Fliegertruppe dem liquidierenden Kriegsministerium obliegen und zweckmäßigerweise dieser Stelle zu belassen wären.</p>
+                  <p>Der Kabinettsrat genehmigt sohin den vom Staatssekretär Paul gestellten Antrag mit der Maßgabe, dass im § 2 der Vollzugsanweisung gemäß dem Antrage des Sektionschefs Dr. Grimm die Worte „Die Liquidierungsgeschäfte der Fliegertruppe sowie“ zu entfallen haben.</p>
+               </div>
+               <div type="top" xml:id="krp-0061_top15">
+                  <head>
+                     <label>
+                        <num n="15">15.</num>
+                        <seg>Zuständigkeit des Staatssekretärs für Verkehrswesen zur Beförderung von Staatseisenbahnbeamten in die V. und IV. Dienstklasse.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Paul</hi> führt aus, dass infolge einer Entscheidung des Staatsratsdirektoriums vom 30. Jänner 1919 der Staatssekretär für Verkehrswesen Beförderungen von Staatseisenbahnbediensteten in solche Diätenklassen, die der VI. und V. Rangsklasse der Staatsbeamten entsprechen, nicht mehr wie dies früher dem Eisenbahnminister auf Grund des § 6 Pkt. 6, des Organisationsstatutes für die staatliche Eisenbahnverwaltung zustand, im <pb facs="krp-0061_r-0029"/>eigenen Wirkungskreis vorzunehmen, sondern die bezügliche Anträge dem Staatsratsdirektorium zur Entscheidung vorzulegen hatte. Dadurch, dass das Staatsratsdirektorium nicht mehr bestehe, sei die Beobachtung dieses Beschlusses undurchführbar geworden.</p>
+                  <p>Die Bestimmungen des Art. 7 Abs. 1 des Gesetzes vom 14. März 1919, StGBl. Nr. 180, über die Staatsregierung fänden auf die erwähnten Fälle keine Anwendung, da ein <hi rend="#u">Gesetz</hi>, demzufolge die erwähnten Beförderungen dem Staatsratsdirektorium vorbehalten sind, nicht bestehe. Die einzige für die Frage der Zuständigkeit in Betracht kommende staatliche Anordnung – die Kundmachung des Handelsministers vom 19. Jänner 1896, RGBl. Nr. 16, betreffend das Organisationstatut für die staatliche Eisenbahnverwaltung – behalte vielmehr die Beförderung <hi rend="#u">aller</hi> Beamten dem Eisenbahnminister vor.</p>
+                  <p>In materieller Beziehung würde die Aufhebung des unbeschränkten Beförderungsrechtes des Staatssekretärs für Verkehrswesen nicht nur eine Einschränkung der Befugnisse dieses Staatssekretärs bedeuten, sondern immerhin auch eine Umständlichkeit bei der Vornahme von Beförderungen in die V. und IV. Dienstklasse zur Folge haben.</p>
+                  <p><pb facs="krp-0061_r-0030"/>Der sprechende Staatssekretär beabsichtige daher an den Präsidenten der Nationalversammlung mit der Bitte heranzutreten, dass früher dem Eisenbahnminister hinsichtlich der Staatseisenbahnbeamten aller Dienstklassen zugestandene unbeschränkte Beförderungsrecht nunmehr dem Staatssekretär für Verkehrswesen zu übertragen.</p>
+                  <p>Er stelle sohin den Antrag, der Kabinettsrat wolle beschließen:</p>
+                  <p>„Der Staatssekretär für Verkehrswesen wird zur Einbringung eines auf die Festsetzung seiner Zuständigkeit zur Beförderung von Staatseisenbahnbeamten in <hi rend="#u">alle</hi> Dienstklassen abzielenden Antrages an den Präsidenten der Nationalversammlung ermächtigt.“</p>
+                  <p>Der Kabinettsrat stimmt diesem Antrage zu.</p>
+               </div>
+               <div type="top" xml:id="krp-0061_top16">
+                  <head>
+                     <label>
+                        <num n="16">16.</num>
+                        <seg>Erhöhung der Bezüge der Kriegsbeschädigten.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Hanusch</hi> teilt mit, dass die Invaliden in einer abgehaltenen Versammlung nachstehende Forderungen gestellt haben:</p>
+                  <list>
+                     <item n="1"><label>1.)</label> Gewährung einer Abfertigung von 800 K,</item>
+                     <item n="2"><label>2.)</label> Festsetzung des Ausmaßes der täglichen Rente mit 15 bzw. 7 K 50 h bzw. 5 K, <pb facs="krp-0061_r-0031"/></item>
+                     <item n="3"><label>3.)</label> Erhöhung der Spitalsgebühren auf 4 K,</item>
+                     <item n="4"><label>4.)</label> Überlassung der Schlösser Schönbrunn und Hetzendorf (welche Frage bereits den Gegenstand der heutigen Beratung des Kabinettsrates gebildet hat).</item>
+                  </list>
+                  <p>Was die unter Pkt. 1 und 2 erwähnten Forderungen anbelange, so könne deren Berücksichtigung nicht in Betracht gezogen werden. Dagegen erbitte er sich die Ermächtigung, dem zur Vertretung der Invaliden berufenen Zentralverbande der Invaliden folgende Vorschläge machen zu dürfen:</p>
+                  <list>
+                     <item n="1"><label>1.)</label> Für die Zeit bis zum 15. Juni, d. i. dem Zeitpunkte des Inkrafttretens des Invalidenversorgungsgesetzes, wird dem Zentralverband der Invaliden der Betrag von 2 Millionen K überwiesen. Dieser Betrag soll jedoch nicht an die Invaliden ausgezahlt, sondern zum Ankauf von Lebensmitteln verwendet werden, deren Verteilung dem Zentralverband unter Oberaufsicht des Staatsamtes für soziale Verwaltung zu überlassen wäre.</item>
+                     <item n="2"><label>2.)</label> Die Erhöhung der Spitalsgebühren von 1 K auf 2 K.</item>
+                  </list>
+                  <p>Der Kabinettsrat erteilt die erbetene Ermächtigung.</p>
+                  <p><pb facs="krp-0061_r-0032"/></p>
+               </div>
+               <div type="top" xml:id="krp-0061_top17">
+                  <head>
+                     <label>
+                        <num n="17">17.</num>
+                        <seg>Fortführung der Sonderaktion zur Unterstützung der arbeitslosen Textilarbeiter.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Hanusch erbittet die Zustimmung des Kabinettsrates, dass die Sonderaktion zur Unterstützung der arbeitslosen Textilarbeiter, die am 31. März d.  J. abgelaufen ist, analog wie die allgemeine Arbeitslosenunterstützung bis 15. Mai d. J. fortgeführt werde. Es handle sich hiebei insbesondere um die Unterstützung der deutschen Textilarbeiter in Deutschböhmen und Sudetenland, wofür ein Gesamtaufwand von ungefähr 1 ½ Millionen K erforderlich sei. Zur Begründung seines Antrages führt der sprechende Staatssekretär an, dass die Erwägungen politischer Natur, die seinerzeit für die Aufrechterhaltung der gegenständlichen Aktion maßgebend waren, in gleicher Weise auch gegenwärtig noch fortbestehen.</p>
+                  <p>Der Kabinettsrat erteilt die erbetene Zustimmung.</p>
+               </div>
+            </div>
+            <div type="stenogramme">
+               <div n="1">
+                  <head>[KBR 61, 15. April 1919, Stenogramm]</head>
+                  <p><pb facs="krp-0061_s01-0001"/>61., 15. /4.</p>
+                  <p>[<hi rend="#i">zentriert:</hi>] Loewenfeld Gehaltsfrage.</p>
+                  <p>[<hi rend="#i">rechtes Obereck:</hi>] Grimm, Günther, </p>
+                  <p>Resch.</p>
+                  <p>Entschuldigt: Schumpeter (Verhandlungen mit Ungarn), Hanusch (Metallindustriekonferenz), Ellenbogen.</p>
+                  <p>[<hi rend="#i">Am Rand</hi>:] Vollzugsanweisung über Reise- und Sommer-Verkehr.</p>
+                  <p>1. Loewenfeld: Morgen um 10h Besprechung mit den Ländern über den Entwurf der Verordnung der Gesamtregierung wegen Aufhebung [der Beschränkung] des Einreiseverkehrs. Die Verordnung vor acht Tagen </p>
+                  <p>den Ländern überschickt. Graz bittet um Verschiebung auf drei Wochen. Innsbruck telegraphiert ebenfalls verneinend. Linz -.</p>
+                  <p>Sitzung heute nicht mehr abzusagen. Das Kabinett [hat] schon Beschluss gefasst, dass die Verordnungen illegal sind, Redner bittet um Äußerung des Kabinettsrates. Verhältnisse ganz unhaltbarer Art </p>
+                  <p>entwickeln sich.</p>
+                  <p>Bauer: Ob schon der Versuch eingeleitet wurde, einen Fall vor den Verfassungsgerichtshof zu bringen, je einen Fall für jedes Land.</p>
+                  <p>Renner: 1.) Bis zur nächsten Kabinettssitzung einen ausdrücklichen Beschluss der Gesamtregierung vorbereiten, dass jene Verordnung der Gesamtregierung auf den sich die Leute stützen, aufgehoben ist.</p>
+                  <p>[<hi rend="#i">Am Rand:</hi>] (Do.) Tag [des] nächsten Kabinettsrates.</p>
+                  <p>2.) Gesetzesweg (Nationalversammlung); morgen die Sache festzustellen, einfach darüber zur Tagesordnung übergehen.</p>
+                  <p>3.) Justiz nachzudenken, welche Gesetzesbeschlüsse in der Nationalversammlung gefasst werden könnten, die [die] völlige Verkehrsfreiheit zwischen allen Teilen des Staatsgebietes sicherstellen und von vornherein entgegengesetzte </p>
+                  <p>Entschließungen irgendwelcher aut[onomer] Körperschaften die Rechtskraft aberkennen. Zuwiderhandelnde Organe strafrechtlich verantwortlich zu machen.</p>
+                  <p>Bauer: An die Sache wird man nur herankommen durch eine Änderung des Reichsgemeindegesetzes.</p>
+                  <p>Anderer Weg: Gesetz, wonach jedes Organ ... Syndikatsklage.</p>
+                  <p>[<hi rend="#i">Am Rand:</hi>] Aufhebung der gesamtstaatlichen Verordnung.</p>
+                  <p>Renner: Dann festzusetzen, durch welchen Akt wir die volle Verkehrsfreiheit in allen Teilen des Staates sichern können.</p>
+                  <p>Loewenfeld: Als erster Punkt für Donnerstag: Regelung der Beschaffung von Geldmitteln für die Einfuhr von Lebensmitteln (Kreditbeschaffung für die Lebensmitteleinkäufe).</p>
+                  <p>2. Paul: 1. Mai ganz nahe, Verlangen des Personals, dass am 30. /4. die Gehaltsauszahlung stattfindet. Dann, wie man jetzt in den Schulen, Staatsämtern den 1. Mai </p>
+                  <p>feiern soll. Ein Büro hat noch niemals frei gehabt.</p>
+                  <p>Renner: 1. Mai als Feiertag erklärt worden in Deutschland. Wenn das der Fall ist, dann auch bei uns. Durch Regierungsbeschluss.</p>
+                  <p>Beschluss als Feiertag für sämtliche Ämter.</p>
+                  <p>3. Paul: Sommerzeit: in Deutschland, Tschechoslowakei, Schweiz nicht. In Italien wurde eingeführt, in Ungarn demnächst. </p>
+                  <p>Wenn Kabinettsratsbeschluss mit 28. /4.: alle Nachbarstaaten mit Ausnahme von Ungarn und Italien. </p>
+                  <p>Beantragt Reassumierung und Nicht-Einführung der Sommerzeit.</p>
+                  <p>Stöckler: Sehr einverstanden damit.</p>
+                  <p>Zerdik: Mit Rücksicht auf die Kohlenfrage für die Sommerzeit.</p>
+                  <p>Miklas: Die Vorteile könnten dadurch erreicht werden, dass [man] die Dienststunden der öffentlichen Ämter usw. der sommerlichen Jahreszeit anpasst.</p>
+                  <p>Loewenfeld: Unbedingter Anhänger der Sommerzeit.</p>
+                  <p>Abstimmung: Zwei dafür, Sommerzeit bleibt aufrecht.</p>
+                  <p>4. Paul: Heute ein französischer und englischer, angekündigt [ein] amerikanischer und italienischer Offizier. 4 zusammen. [Sie sollen eine] Kommission bilden der Alliierten </p>
+                  <p>zur Verhinderung der Einfuhr von Kriegsmaterial und Lebensmittel nach Deutschland und Ungarn. In sämtlichen Stationen Offiziere, welche Amtshandlungen vornehmen werden. </p>
+                  <p>Staatsamt des Inneren wo Sektionsrat ?Ahrer behandeln wird (morgen Sitzung, 11h).</p>
+                  <p><pb facs="krp-0061_s01-0002"/>Loewenfeld: Aus Ungarn bekommen wir fast gar nichts.</p>
+                  <p>Renner: Wir können dies nur zur Kenntnis nehmen.</p>
+                  <p>Bauer: Publizierung notwendig. Zusammenhang mit Blockade. Eine für jedermann verständliche Erklärung. (persönlich C[...] 16 Zimmer).</p>
+                  <p>Renner: Dass man auch nur die Grenzen kennt (ca. 100 Personen).</p>
+                  <p>5. Zerdik: Im Staatsamt Arbeiterräte zu wählen. Wählbar nur jene Angestellten, die auf dem Boden des soz. Parteiprogrammes stehen.</p>
+                  <p>Renner: Diese Bewegung vollzieht sich auf dem Boden der Ämter, ist aber keine amtliche Bewegung.</p>
+                  <p>Das Personal hat das Bedürfnis, bei diesen Räten mitzuwirken. Wenn man alles erwägt, nicht unerwünscht, wenn man Gruppen, Betriebe mitwirken lässt, </p>
+                  <p>von denen anzunehmen ist, dass sie nicht über radikal sein werden. </p>
+                  <p>Auf diese Vorgänge selbst ist aber am besten gar nicht zu reagieren, man soll die Sache laufen lassen. </p>
+                  <p>Niemandem dazu oder dagegen raten.</p>
+                  <p>Bauer: Die Sache gewinnt erst ein anderes Aussehen, wenn eine strafbare Handlung begangen wird. Nur dann Gegenstand der Beratung im Kabinettsrat.</p>
+                  <p>Zerdik: Deshalb ins Kabinett gebracht, weil sich die Beamten schon mit dem Rat [...] abfinden. Dadurch wird eine Unruhe in die Staatsämter gebracht. Konventikel.</p>
+                  <p>Renner: Darüber kann man verschiedener Auffassung sein; eine Entscheidung de jure ist nicht angemessen; eine Verfolgung kann man nicht einleiten.</p>
+                  <p>Frage, wie kommt man am besten durch; ich mische mich nicht hinein. Der Beamte muss nur seinen Dienst machen. </p>
+                  <p>Ich finde es nur opportuner, wenn nicht durch irgendwelche Erschwerungen nur ein Teil der Arbeiterbevölkerung wählt und ein anderer nicht.</p>
+                  <p>6. Zerdik: In einer Nummer der Reichspost: Dienstvertrag der Volkswehroffiziere. </p>
+                  <p>Anfrage an Deutsch, ob dieser Text authentisch ist.</p>
+                  <p>Deutsch: Die Soldatenräte haben, um die Disziplin zu erhöhen, die <hi rend="#s">Offiziere</hi> veranlasst, ein starres Disziplin[arverfahren] einzuhalten. </p>
+                  <p>Die Soldatenräte haben das Bedauern ausgesprochen.</p>
+                  <p>7. Beck: -. Renner: Es besteht das dringende Bedürfnis, den Invaliden entgegenzukommen und ihnen eine Ubik[ation] zur Verfügung zu stellen. </p>
+                  <p>Schloss Hetzendorf. Der Zentralverband [hat den] Wunsch geäußert nach einer staatlichen Widmung.</p>
+                  <p>Beck: Schlosshauptmann von Schönbrunn und Hetzendorf kommen lassen. Hetzendorf: Hauptgebäude (Parterre und erster Stock) nicht geeignet. Die Trakte </p>
+                  <p>vor dem Hauptgebäude sind vollständig belegt (private Mietwohnungen, Dienerschaft, Gärtner). Aufgrund der Notwohnungsverfügung der Gemeinde Wien.</p>
+                  <p>Schönbrunn: Auch da sind die meisten Baulichkeiten bereits vollständig vermietet, zum Teil </p>
+                  <p>an kleine Leute. Eine ganze Reihe von Trakten für größere Mietwohnungen. Leer sind die Valerieappart[ments] (30 Zimmer).</p>
+                  <p>Weiters ist links ein großer Gardehof, welcher zum Belag von ca. 100 Männer dienen könnte (2 große Räume).</p>
+                  <p>Hauptgebäude: Zumeist Pracht- und Prunkräume, die als solche sich nicht eignen für solche Zwecke. Im Mezzanin Dienerschaftsräume frei, </p>
+                  <p>30 Räume (sehr wenig Klosetts). Eine Absperrung gegenüber den Prunkräumen nicht möglich. Im zweiten Stock 90 Räume (Suiten-</p>
+                  <p>Zimmer).</p>
+                  <p>Wohl aber könnte Laxenburg in Betracht kommen; diese Räumlichkeiten sind nicht belegt. Eine Abordnung der Invaliden könnte sich das anschauen.</p>
+                  <p>Beschluss: Der Vorstand des Zentralverbandes der Invaliden wird eingeladen, Schönbrunn, Hetzendorf und Laxenburg in Augenschein zu nehmen und dem Zentralverband [zu] berichten, welche </p>
+                  <p>Räume in Betracht kommen zur Unterbringung der Invaliden.</p>
+                  <p><pb facs="krp-0061_s01-0003"/>Donnerstag: Beck einladen: Bericht über die finanziellen Angelegenheiten und die Verwaltung des hofärarischen Vermögens, insbesondere bezüglich des Schicksals </p>
+                  <p>der beiden hofärarischen Theater.</p>
+                  <p>8. Renner: Empfang bei den Staatssekretären.</p>
+                  <p>Deutsch: Die Veröffentlichungen halte ich für unmöglich. Das widerspricht der demokratischen Zeit. Polizeiliche Regelungen hinauszugeben ist unmöglich.</p>
+                  <p>Bauer: Ebenso.</p>
+                  <p>Loewenfeld: Eher der entgegengesetzte Eindruck wird hervorgerufen.</p>
+                  <p>Renner: Dann muss diese Sache unterbleiben.</p>
+                  <p>9. Renner: Redlich.</p>
+                  <p>Angenommen.</p>
+                  <p>10. Grimm: -.</p>
+                  <p><hi rend="#s">Punkt 2 </hi></p>
+                  <p>Punkt 3. Stöckler: Gesetzentwurf betreffend Schutz der Alpen. </p>
+                  <p>Bittet [um] Ermächtigung zur Übermittelung an die Landesregierungen behufs Vorlage an die Landesversammlungen.</p>
+                  <p>Genehmigt.</p>
+                  <p>Punkt 4. Glöckel: Bischofshofen.</p>
+                  <p>Genehmigt.</p>
+                  <p>Vorsitz Bratusch.</p>
+                  <p>Punkt 5. Dr. Bauer: Dienstpragmatik.</p>
+                  <p>Paul: -</p>
+                  <p>Günther: -</p>
+                  <p>Grimm: -</p>
+                  <p><hi rend="#s">Referenten treten zusammen.</hi></p>
+                  <p>[Bauer]: Nach der Dienstpragmatik kommen die Kanzleibeamten in die Gruppe E, sie werden nicht benachteiligt indem sie Zulagen bis zum </p>
+                  <p>Ausmaß der Gruppe C erhalten.</p>
+                  <p>Glöckel: -</p>
+                  <p><pb facs="krp-0061_s01-0004"/>Miklas: Auch im Staatsamt für Unterricht ist eine kleine Gruppe von Kanzleibeamten, für welche besondere Erfordernisse verlangt wurden. </p>
+                  <p>Man hat sie tatsächlich in die Gruppe E eingereiht, hat ihnen aber Zulagen gegeben. </p>
+                  <p>Die Bitte, sie in jene Gruppe aufzunehmen, der sie ihrer Vorbildung nach angehören, ist nur billig.</p>
+                  <p>Paul: Man soll sich jetzt nur auf das Staatsamt des Äußeren beschränken.</p>
+                  <p>Bauer: Es soll das der endgültigen Regelung nicht vorgreifen. Es soll sich auch nur auf die dem k. u. k. Ministerium des Äußeren </p>
+                  <p>angehörig gewesenen erstrecken.</p>
+                  <p>Grimm: Die Angelegenheit wäre noch im Beamtenkomitee zu beraten hinsichtlich der Kanzleibeamten in der C.</p>
+                  <p>Bauer: Stimmt zu. Wenn Einigung erzielt, soll B[auer] ermächtigt sein, ohne vorherige Berichterstattung im Kabinettsrat die </p>
+                  <p>Verordnung hinauszugeben. Angenommen.</p>
+                  <p>Punkt 7. Zerdik: -. Angenommen.</p>
+                  <p>Punkt 8. Bratusch: -.</p>
+                  <p>Angenommen.</p>
+                  <p>Punkt 10 a)</p>
+                  <p>Paul: -.</p>
+                  <p>Grimm: Ad § 2 "Liquidierung Staatsamt für Heerwesen im Einvernehmen mit Verkehrswesen." </p>
+                  <p>Die Liquidierung wäre doch wohl Sache des liquidierenden Kriegsministeriums.</p>
+                  <p>Beantrage Streichung im § 2 - die Streichung der Worte "Die .... sowie".</p>
+                  <p>Angenommen.</p>
+                  <p>Punkt 10 b)</p>
+                  <p>Paul: -.</p>
+                  <p>Glöckel: Entweder allen Ressorts oder niemand.</p>
+                  <p><hi rend="#s">Bauer: Im Art. 7 heißt es ausdrücklich "die dem -.</hi></p>
+                  <p>Grimm: -.</p>
+                  <p>Genehmigt.</p>
+                  <p><pb facs="krp-0061_s01-0005"/><hi rend="#s">Punkt 9. Hanusch</hi></p>
+                  <p>Hanusch: </p>
+                  <p>Die Invaliden haben Versammlungen abgehalten. Das neue Gesetz kann vor dem 15. II. oder 1. VII. aus organisatorischen Gründen </p>
+                  <p>nicht in Kraft treten. Nun erklären die Invaliden folgende Forderungen zu stellen:</p>
+                  <p>1.) Abfertigung 800 Kronen.</p>
+                  <p>2.) Tägliche Rente 15 Kronen, 7.50, 5 Kronen.</p>
+                  <p>3.) Erhöhung der Spitalsgelder auf 4 Kronen.</p>
+                  <p>4.) Schönbrunner und Hetzendorfer Schloss.</p>
+                  <p>Ad 4.) wird bewilligt werden.</p>
+                  <p>Von 1.) und 2.) kann keine Rede sein.</p>
+                  <p>Zentralverband der Invaliden. </p>
+                  <p>Wir wollen Folgendes vorschlagen: 1.) Es wird für die Zeit bis zum 15. VI. - Zeitpunkt des Inkrafttretens des Gesetzes - wird dem Verband </p>
+                  <p>der Invaliden der Betrag von zwei Millionen Kronen gegeben. Diese Gelder sollen nicht verteilt werden, sondern sie sollen dafür Lebensmittel </p>
+                  <p>kaufen und den Invaliden zuweisen. </p>
+                  <p>Die Vertreter des Verbandes werden sich damit einverstanden erklären. </p>
+                  <p>Die Lebensmittelverteilung würde unter Oberaufsicht des Staatsamtes für Soziale Verwaltung [stattfinden].</p>
+                  <p>2.) Ad 3.) Erhöhung von 1 K auf 2 K wollen wir gewähren.</p>
+                  <p>Bitte für die neuerliche Besprechung am Donnerstag um Ermächtigung, diese Vorschläge erstatten zu dürfen.</p>
+                  <p>Angenommen.</p>
+                  <p><hi rend="#s">Dr. Waiss: -</hi></p>
+                  <p>Hanusch:</p>
+                  <p>Wir haben neben der allgemeinen Arbeiterunterstützungsaktion auch die Textilarbeiterunterstützungsaktion. </p>
+                  <p>Letztere ist am 31. III. abgelaufen.</p>
+                  <p>Wir haben die allgemeine Arbeiterunterstützung bis 15. Mai verlängert. </p>
+                  <p>Die deutschen Unternehmer in Deutschböhmen und Sudetenland weigern sich, das Angebot der tschechoslowakischen Regierung 100 % zu übernehmen </p>
+                  <p>weil sie sich nicht präj[udizieren] wollen.</p>
+                  <p><pb facs="krp-0061_s01-0006"/>Ca. im Monat 1 Million.</p>
+                  <p>Politikum: Wenn wir die deutschen Unternehmer an die tschechoslowakische Regierung weisen, so könnte darin ein Präjudiz in der Frage </p>
+                  <p>der Festhaltung an Deutschböhmen und Sudetenland erblickt werden.</p>
+                  <p>Grimm: Es ist dies die einzige Gruppe von Staatsbürgern in den besetzten Gebieten, die von uns bezahlt wird. </p>
+                  <p>Wenn der Kabinettsrat dies für politisch wichtig hält, so stimmt die Finanzverwaltung zu.</p>
+                  <p>Angenommen.</p>
+                  <p>¾6h.</p>
+                  <p>Stöckler für Donnerstag wegen Dienstreise entschuldigt.</p>
+               </div>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

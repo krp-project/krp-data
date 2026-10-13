@@ -1,0 +1,712 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href='http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:acdh="https://vocabs.acdh.oeaw.ac.at/schema#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xml:lang="de">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="a" type="main" n="0191">Kabinettsprotokoll Nr. 191 vom 15. Juni 1920</title>
+            <title level="m" type="main" n="01">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <title level="m" type="sub" n="">Renner III (17. Oktober 1919 – 7. Juli 1920)</title>
+            <meeting>
+               <placeName key="https://d-nb.info/gnd/4066009-6">Wien</placeName>
+               <orgName key="https://d-nb.info/gnd/5162749-8">Kabinettsrat</orgName>
+               <date when-iso="1920-06-15"/>
+            </meeting>
+            <editor>
+               <persName key="https://d-nb.info/gnd/122481836"
+                         role="hasCreator"
+                         xml:id="hwohnout">
+                  <forename>Helmut</forename>
+                  <surname>Wohnout</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</affiliation>
+               <idno type="ORCID">0000-0002-3864-9839</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/120789825"
+                         role="hasCreator"
+                         xml:id="tolechowski">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0003-3291-6876</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/131679384"
+                         role="hasCreator"
+                         xml:id="rlein">
+                  <forename>Richard</forename>
+                  <surname>Lein</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0002-7502-0503</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="aholzer">
+                  <forename>Anna</forename>
+                  <surname>Holzer</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0005-3560-3500</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="dsoelkner">
+                  <forename>Dominik</forename>
+                  <surname>Sölkner</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-9895-7212</idno>
+            </editor>
+            <editor>
+               <persName role="hasContributor" xml:id="ischotzko">
+                  <forename>Ina</forename>
+                  <surname>Schotzko</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-5210-3713</idno>
+            </editor>
+            <funder n="1">
+               <orgName key="https://d-nb.info/gnd/2054142-9" role="hasFunder">Österreichischer Wissenschaftsfonds FWF</orgName>
+               <idno type="project">PAT1495024</idno>
+               <title type="project">Die Protokolle des österreichischen Kabinettsrates 1919–1920</title>
+            </funder>
+            <respStmt>
+               <resp>Projektverantwortung</resp>
+               <orgName key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Projektleitung</resp>
+               <persName key="https://d-nb.info/gnd/120789825" role="hasPrincipalInvestigator">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+                  <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+                  <idno type="ORCID">0000-0003-3291-6876</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Nationaler Forschungspartner</resp>
+               <orgName key="https://d-nb.info/gnd/1123037736" role="hasEnabler">Austrian Centre for Digital Humanities</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Digitalisierung der gedruckten Quellen</resp>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>TEI-Datenmodellierung</resp>
+               <persName role="hasContributor" xml:id="tfruehwirth">
+                  <forename>Timo</forename>
+                  <surname>Frühwirth</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-3997-5193</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technische Supervision</resp>
+               <persName key="https://d-nb.info/gnd/1043833846"
+                         role="hasContributor"
+                         xml:id="pandorfer">
+                  <forename>Peter</forename>
+                  <surname>Andorfer</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-9575-9372</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technisches Consulting und Vorbereitung der Druckausgabe</resp>
+               <persName key="https://d-nb.info/gnd/13281899X"
+                         role="hasContributor"
+                         xml:id="skurz">
+                  <forename>Stephan</forename>
+                  <surname>Kurz</surname>
+                  <affiliation key="https://d-nb.info/gnd/1202798799">Institut für die Erforschung der Habsburgermonarchie und des Balkanraumes</affiliation>
+                  <idno type="ORCID">0000-0003-2546-2570</idno>
+               </persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher key="https://d-nb.info/gnd/1001454-8">Österreichische Akademie der Wissenschaften</publisher>
+            <date when="2028"/>
+            <availability status="free">
+               <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">Lizenziert unter CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/deed.de)</licence>
+            </availability>
+            <idno type="ISBN_Print"/>
+            <idno type="ISBN_Part_epub"/>
+            <idno type="ISBN_Digital"/>
+            <idno type="DOI"/>
+            <idno type="DOI_zenodo"/>
+            <idno type="ebook_ID"/>
+         </publicationStmt>
+         <seriesStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="m" type="main">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <respStmt>
+               <resp>Bearbeitung und Herausgeberschaft</resp>
+               <orgName key="https://d-nb.info/gnd/2024703-5">Universität Wien</orgName>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+         </seriesStmt>
+         <notesStmt>
+            <note>Diese TEI-XML-Datei ist Grundlage für eine Druckausgabe der Edition.</note>
+            <relatedItem>
+               <biblStruct>
+                  <monogr>
+                     <imprint>
+                        <pubPlace key="https://d-nb.info/gnd/4066009-6">Wien</pubPlace>
+                        <publisher key="https://d-nb.info/gnd/2068748-5">Verlag der Österreichischen Akademie der Wissenschaften</publisher>
+                        <date when="2029"/>
+                     </imprint>
+                     <extent/>
+                  </monogr>
+                  <note>
+              <idno/>
+              <ptr/>
+            </note>
+                  <citedRange/>
+               </biblStruct>
+            </relatedItem>
+         </notesStmt>
+         <sourceDesc>
+            <bibl>Quellbestand: AT-OeStA/AdR MRang MR 1Rep KRP Kabinettsratsprotokolle, 1918-1920 (Teilbestand)<ref target="https://www.archivinformationssystem.at/detail.aspx?id=5465">https://www.archivinformationssystem.at/detail.aspx?id=5465</ref>
+            </bibl>
+            <msDesc>
+               <msIdentifier>
+                  <institution key="https://d-nb.info/gnd/37748-X" role="hasOwner">AT-OeStA Österreichisches Staatsarchiv (Archiv (ÖStA))</institution>
+                  <repository key="https://d-nb.info/gnd/1601181-8">AT-OeStA/AdR Archiv der Republik, 1918- (Abteilung)</repository>
+                  <collection>AT-OeStA/AdR MRang MR 1Rep Ministerrat 1. Republik, 1918 - 1938 (Bestand)</collection>
+                  <idno>AT-OeStA_AdR-MRang-MR-1.-Rep.-KRP-191</idno>
+               </msIdentifier>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <abstract>
+            <p>
+          <!--to be generated-->
+        </p>
+         </abstract>
+      </profileDesc>
+      <encodingDesc>
+         <styleDefDecl scheme="css"/>
+         <tagsDecl>
+            <rendition xml:id="b" scheme="css">font-weight:bold;</rendition>
+            <rendition xml:id="su" scheme="css">vertical-align:super;font-size:.7em;</rendition>
+            <rendition xml:id="s" scheme="css">text-decoration:line-through;</rendition>
+            <rendition xml:id="u" scheme="css">text-decoration:underline;</rendition>
+            <rendition xml:id="ow" scheme="css">text-decoration:line-through;text-decoration-style:double;</rendition>
+            <rendition xml:id="r" scheme="css">display:block;text-align:right;</rendition>
+            <rendition xml:id="letterspaced" scheme="css">letter-spacing:0.15em;</rendition>
+            <rendition xml:id="i" scheme="css">font-style:italic;</rendition>
+         </tagsDecl>
+         <editorialDecl>
+            <hyphenation>
+               <p>
+            <!--to be added-->
+          </p>
+            </hyphenation>
+            <correction>
+               <p>
+            <!--to be added-->
+          </p>
+            </correction>
+            <normalization>
+               <p>
+            <!--to be added-->
+          </p>
+            </normalization>
+            <punctuation>
+               <p>
+            <!--to be added-->
+          </p>
+            </punctuation>
+            <stdVals>
+               <p>
+            <!--to be added-->
+          </p>
+            </stdVals>
+            <p>
+          <!--to be added-->
+        </p>
+         </editorialDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#tfruehwirth" when-iso="2026-10-13">TEIGarage output upconverted with upconvert.xsl</change>
+         <change who="#tfruehwirth" when-iso="2026-10-13">TEI header populated with generate_tei_templates.py</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface/>
+   </facsimile>
+   <text>
+      <body>
+         <div xml:id="doc-krp-0191.xml">
+            <head type="dokument">
+               <title type="num">191.<note type="footnote">Das Protokoll trägt den Vermerk <hi rend="#i">Streng Vertraulich!</hi></note>
+               </title>
+               <title type="desc">
+                  <pb facs="krp-0191_r-0001"/>[Dienstag] 1920-06-15</title>
+            </head>
+            <div type="dokumentkopf">
+               <div type="vorsitz">
+                  <head>Vorsitz:</head>
+                  <p>Renner</p>
+               </div>
+               <div type="anwesend">
+                  <head>Anwesend:</head>
+                  <p>Deutsch, Eisler, Eldersch, Ellenbogen, Fink, Glöckel, Hanusch, Loewenfeld-Russ, Mayr, Miklas, Paul, Ramek, Reisch, Resch, Stöckler, Tandler, Waiss, Zerdik</p>
+               </div>
+               <div type="zugezogen">
+                  <head>Zugezogen:</head>
+                  <p>Grimm, Kronholz, Schüller</p>
+               </div>
+               <div type="schriftfuehrer">
+                  <head>Schriftführer:</head>
+                  <p>unbekannt</p>
+               </div>
+               <div type="dauer">
+                  <head>Dauer:</head>
+                  <p>20.00–01.00 Uhr</p>
+               </div>
+            </div>
+            <div type="komponenten">
+               <p>Reinschrift, Beilagen, geheimer Anhang, Konzept, stenographische Mitschrift, Entwurf der Tagesordnung</p>
+            </div>
+            <div type="beilagen">
+               <head>Beilagen:</head>
+               <list>
+                  <item><ref target="#krp-0191_top03">Zu TOP 3</ref>: <ref target="#krp-0191_b01">Besetzungsvorschlag für den Posten des Präsidenten der Staatstheaterverwaltung mit Entwurf der Vollzugsanweisung</ref></item>
+                  <item><ref target="#krp-0191_top05">Zu TOP 5</ref>: <ref target="#krp-0191_b02">Vorlage der Vollzugsanweisung zur Erhöhung der Verschleißtarife für die Erzeugnisse des Süßstoffmonopols mit überarbeitetem Konzept</ref></item>
+                  <item><ref target="#krp-0191_top09">Zu TOP 9</ref>: <ref target="#krp-0191_b03">Bericht der Staatskanzlei Zl. 61/83 St.K. mit Vollzugsanweisung über das Inkrafttreten gewisser internationaler Kollektivverträge</ref></item>
+               </list>
+            </div>
+            <div type="protokoll">
+               <pb facs="krp-0191_r-0002"/>
+               <div type="top" xml:id="krp-0191_top01">
+                  <head>
+                     <label>
+                        <num n="1">1.</num>
+                        <seg>Mitglieder der interalliierten Überwachungsausschüsse; Beteilung mit Legitimationen und Verkehr mit österreichischen Staatsfunktionären.</seg>
+                     </label>
+                  </head>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> teilt dem Kabinettsrate mit, dass der Beauftragte der österreichischen Regierung beim interalliierten Heeresüberwachungsausschuss in einer Note an den Staatssekretär für Heer[es]wesen gegen die Gepflogenheit der Mitglieder der interalliierten Ausschüsse Stellung genommen habe, ohne sein Vorwissen unmittelbar bei verschiedenen Staatsfunktionären Auskünfte einzuholen. Dieser Vorgang laufe dem Art. 151 des Staatsvertrages von St. Germain zuwider und berge bei der Vielgestaltigkeit der wahrzunehmenden Interessen die Gefahr in sich, dass die Vertreter der alliierten Mächte sich auf solche Art unerwünschte Aufschlüsse verschaffen. Der Beauftragte gebe daher die Anregung, den Mitgliedern des Heeresüberwachungsausschusses nahezulegen, ihren Verkehr mit österreichischen Regierungsstellen gemäß Art. 151 des Staatsvertrages ausschließlich unter Vermittlung des Beauftragten der öster<pb facs="krp-0191_r-0003"/>reichischen Regierung zu vollziehen.</p>
+                  <p>Redner fügt bei, dass sich dazu das Staatsamt für Äußeres in dem Sinne geäußert habe, der Friedensvertrag lege zwar die Verpflichtung der österreichischen Regierung fest, der Kontrollkommission einen Beauftragten zur Verfügung zu stellen, enthalte dagegen keine Bestimmung, dass die Kommission nicht auch direkt mit der Regierung in Verbindung treten könne. Nach allen bisherigen Erfahrungen erscheine es praktisch unmöglich, einer interalliierten Kommission eine solche Vorschrift zu machen, oder von ihr gewünschte Unterredungen mit Mitgliedern der Regierung prinzipiell abzulehnen.</p>
+                  <p>Das Staatsamt empfehle daher, der interalliierten Kontrollkommission anzudeuten, dass es für die ganze Geschäftsführung notwendig und empfehlenswert erscheine, den Verkehr mit österreichischen Regierungsstellen in der Regel durch den Beauftragten zu pflegen. Daneben wäre durch eine Note an sämtliche Staatsämter zu bewirken, dass alle Staatsfunktionäre, an welche Mitglieder der Kommission etwa direkt herantreten, sich mit der erforderlichen Vorsicht äußern und über ihre Gespräche dem Beauftragten sofort eine Mitteilung zukommen lassen.</p>
+                  <p>Des Weiteren habe der interalliierte Heeresüberwachungsausschuss das Verlangen geäußert, seine Mitglieder mit Legitimationen zu beteilen, welche sie ermächtigen, alle öffentlichen und privaten Betriebe, die unmittelbar oder mittel<pb facs="krp-0191_r-0004"/>bar mit der militärischen Organisation in Verbindung stehen, ohne vorherige Anmeldung zu besuchen.</p>
+                  <p>Der Staatssekretär für Heer[es]wesen vertrete in dieser Hinsicht die Meinung, dass nach Art. 151 des Friedensvertrages solche Besichtigungen nur unter Vermittlung des Beauftragten der Regierung erfolgen können. Demgegenüber müsse aber bedacht werden, dass nach einem Telegramm unseres Gesandten in Paris vom 12. Juni der französische Ministerpräsident mitteilte, die Verfügungen der Kontrollkommission in Wien in Angelegenheit der Überwachung des Kriegsmateriales entsprechen den Instruktionen der Botschafterkonferenz, doch habe die Kommission, um den wirtschaftlichen Bedürfnissen Österreichs entgegenzukommen, den Auftrag erhalten, jenes Kriegsmaterial, das nur zu militärischen Zwecken verwendet werden kann, von dem übrigen Material streng zu scheiden. Zu diesem Zwecke müsse eine genaue Inventarisierung vorgenommen werden, wobei die Entscheidung ausschließlich in die Kompetenz der Kontrollkommission falle.</p>
+                  <p>Die Ententemächte zeigen also trotz Ablehnung unseres Rechtsstandpunktes das notwendige Entgegenkommen und es sei zu befürchten, dass ein Konflikt mit der Kommission über formale Fragen eine schwere Schädigung in sachlicher Beziehung herbeiführen könnte. Außerdem zeige die Praxis, dass jeder Privatbetrieb die Vertreter der Entente auch ohne besondere Legitima<pb facs="krp-0191_r-0005"/>tionen, Besichtigungen gestatte, sodass solche nun auch für die militärischen Staatsbetriebe und Lager kaum abgelehnt werden können. Es wäre daher angezeigt, die gewünschte Legitimation auszustellen. Hiebei wäre jedoch zu berücksichtigen, dass die gesetzliche Handhabe fehle, auf den privaten Unternehmer einen Zwang zu üben, die Besichtigung seines Betriebes zuzulassen.</p>
+                  <p>Wohl aber dürften sich keine Schwierigkeiten ergeben, wenn an den Unternehmer das bloße Ersuchen gerichtet wird, die Besichtigung zu gestatten. Der interalliierte Überwachungsausschuss wäre ferner zu verständigen, dass die Regierung es mit Bezug auf den Art. 151 für angemessen halte, den österreichischen Beauftragten von jeder Besichtigung zu verständigen. Unter diesen Umständen erscheine die Vornahme unangesagter Revisionen allerdings ausgeschlossen, doch dürfte sich auch hier für die praktische Durchführung eine den Wünschen der Ententevertreter genügende Form finden lassen.</p>
+                  <p>Redner erbitte nunmehr eine Äußerung, welche Regelung nach Ansicht der Kabinettsmitglieder in beiden Fragen zu treffen wäre.</p>
+                  <p>In der anschließenden Debatte bringen die Staatssekretäre Ing. <hi rend="#letterspaced">Zerdik</hi>, <hi rend="#letterspaced">Hanusch</hi> und <hi rend="#letterspaced">Eldersch</hi> die Meinung zum Ausdruck, dass den Ententevertretern die Besichtigung industrieller Betriebe nur in Begleitung eines österreichischen Funktionärs und nur nach vorheriger Ansage beim Unternehmen einzuräumen wäre.</p>
+                  <p><pb facs="krp-0191_r-0006"/>Staatssekretär Dr. <hi rend="#letterspaced">Deutsch</hi> empfiehlt überdies noch, die Unternehmer durch die Handels- und Gewerbekammern und den Hauptverband der Industrie Österreichs entsprechend zu instruieren, derartige Besichtigungen zwar grundsätzlich zu gestatten, sie jedoch so einzurichten, dass dabei kein österreichischen Interessen schädlicher Einblick in den Betrieb gewonnen werden könne.</p>
+                  <p>Der Kabinettsrat stimmt sohin in der Frage der Einrichtung des Verkehrs zwischen den Mitgliedern der interalliierten Überwachungsausschüsse mit österreichischen Regierungsfunktionären den Vorschlägen des Staatsamtes für Äußeres bei.</p>
+                  <p>Dem Wunsche nach Beteilung der Kommissionsmitglieder mit besonderen Legitimationen soll Rechnung getragen, den interalliierten Überwachungsausschüssen jedoch eröffnet werden, dass die österreichische Regierung den Arbeiten der Kommissionsmitglieder selbstverständlich keine Schwierigkeiten in den Weg legen werde, der Stand der österreichischen Gesetzgebung es aber erfordere, dass die Besichtigungen in Begleitung eines österreichischen Regierungsfunktionärs erfolgen und der Unternehmer kürzer oder länger vorher von dem Erscheinen der Kommission verständigt werde. Die Legitimationen sind unter Mitwirkung des Staatsamtes für Äußeres in der Form auszustellen, dass sie eine Einladung an die Betriebsinhaber enthalten, den Kom<pb facs="krp-0191_r-0007"/>missionsmitgliedern den Zutritt zu gestatten. Die Ansuchen um Ausstellung der Legitimationen sind an die Beauftragten der österreichischen Regierung bei den interalliierten Überwachungsausschüssen zu richten, die sich über die Art und Weise der Vornahme der Besichtigungen sowohl mit dem Hauptverbande der Industrie wie mit den Handels- und Gewerbekammern zu verständigen haben. Ebenso ist jeder beabsichtigte Besuch eines Unternehmens dem Beauftragten bekanntzugeben. Das Staatsamt für Handel und Gewerbe, Industrie und Bauten wird eingeladen, den Hauptverband der Industrie und die Handels- und Gewerbekammern über die Rechtslage sowie über das den Betriebsinhabern zu empfehlende Verhalten zu informieren. Dabei wäre auch darauf hinzuweisen, dass ein großes politisches und wirtschaftliches Interesse bestehe, bei den Überwachungsausschüssen keine Verstimmung zu erregen, damit das von der Entente durch die Freigabe des noch nicht fertig verarbeiteten Kriegsmateriales bewiesene Entgegenkommen nicht in Frage gestellt werde.</p>
+               </div>
+               <div type="top" xml:id="krp-0191_top02">
+                  <head>
+                     <label>
+                        <num n="2">2.</num>
+                        <seg>Munitions- und Waffenlieferungen nach Polen.</seg>
+                     </label>
+                  </head>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> setzt den Kabinettsrat von dem Einlangen einer Radiodepesche des russischen Volkskommissärs für Äußeres in Kenntnis. Soweit der verstümmelte Text entnehmen lasse, sei darin gesagt, dass Russland sich Gewissheit verschafft habe, dass einzelne <pb facs="krp-0191_r-0008"/>private Industrien an Polen ungeachtet seiner Kriegführung gegen Russland weiter Munition und Waffen liefern und Russland daher genötigt wäre, die eingeleiteten handelspolitischen Verhandlungen abzubrechen, sowie den Heimtransport der österreichischen Kriegsgefangenen zu untersagen, soferne einer derartigen Neutralitätsverletzung nicht Einhalt getan werde.</p>
+                  <p>Der Vorsitzende erklärt, dass die politische Lage, sowie die Sorge um unsere Kriegsgefangenen es erheische, der russischen Regierung volle Gewissheit dafür zu bieten, dass Waffen- und Munitionslieferungen nach Polen nicht stattfinden, und zu diesem Zwecke auch das ohnedies bestehende Verbot der Waffen- und Munitionsausfuhr neuerlich einzuschärfen.</p>
+                  <p>Staatssekretär Ing. <hi rend="#letterspaced">Zerdik</hi> stellt ausdrücklich fest, dass seit Ausbruch des Kriegszustandes zwischen Polen und Russland weder aus staatlichen Beständen Waffen- oder Munitionslieferungen an Polen erfolgten noch auch privaten Firmen die Ausfuhrbewilligung für solche erteilt wurde.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Deutsch</hi> regt mit Rücksicht auf diese Auskunft des Vorredners an, die Radiodepesche dahin zu beantworten, dass der österreichischen Regierung keinerlei Vorfälle bekannt seien, welche den erhobenen Vorwurf des Neutralitätsbruches rechtfertigen würden und sie daher um die Bekanntgabe jener kon<pb facs="krp-0191_r-0009"/>kreten Fälle ersucht, welche zu der Beschwerde Anlass geboten haben.</p>
+                  <p>Der Kabinettsrat richtet sohin an das Staatsamt für Handel und Gewerbe [, Industrie und Bauten] die Einladung, das Verbot der Ausfuhr von Waffen und Munition in verschärfter Form in Erinnerung zu bringen. Die Beantwortung der Radiodepesche wird in dem Sinne beschlossen, dass mit Wissen und Willen der österreichischen Regierung keine Waffen- und Munitionslieferungen nach Polen erfolgt seien und die russische Regierung, die ihrer Beschwerde zu Grunde liegenden Fälle bekanntgeben möge, um ein Einschreiten gegen die daran Beteiligten zu ermöglichen. Die Antwortnote wird auch ausdrücklich noch darauf Bezug zu nehmen haben, dass die Vorstellung der russischen Regierung zum Anlass genommen worden sei, dass bereits bestehende Verbot der Ausfuhr von Waffen und Munition in verschärfter Form zu erneuern.</p>
+               </div>
+               <div type="top" xml:id="krp-0191_top03">
+                  <head>
+                     <label>
+                        <num n="3">3.</num>
+                        <seg>Besetzungsvorschlag für den Posten des Präsidenten der Staatstheaterverwaltung.</seg>
+                     </label>
+                  </head>
+                  <p>Unterstaatssekretär <hi rend="#letterspaced">Glöcke1</hi> erbittet und erhält die Zustimmung des Kabinettsrates, dem Präsidenten der Nationalversammlung die Ernennung des Direktors des Gewerbeförderungsamtes, Sektionschef Dr. Adolf Vetter, zum Präsidenten der Staatstheaterverwaltung vorzuschlagen.</p>
+                  <p><pb facs="krp-0191_r-0010"/></p>
+               </div>
+               <div type="top" xml:id="krp-0191_top04">
+                  <head>
+                     <label>
+                        <num n="4">4.</num>
+                        <seg>Wirtschaftliche Verhandlungen in Belgrad.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär [Dr.] <hi rend="#letterspaced">Loewenfeld-Russ</hi> erstattet dem Kabinettsrate Bericht über die von ihm und Staatssekretär <hi rend="#letterspaced">Paul</hi> in Belgrad geführten wirtschaftlichen Verhandlungen. Der Bericht und die gestellten Anträge sowie die darüber stattgefundene Debatte tragen streng vertraulichen Charakter und sind in einem bei der Staatskanzlei verwahrten Anhang zum Protokolle niedergelegt.</p>
+               </div>
+               <div type="top" xml:id="krp-0191_top05">
+                  <head>
+                     <label>
+                        <num n="5">5.</num>
+                        <seg>Erhöhung des Verschleißtarifes für die Erzeugnisse des Süßstoffmonopols.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Reisch</hi> führt aus, dass die enorme Steigerung der Rohmaterialien für die Erzeugung von künstlichen Süßstoffen eine weitergehende Erhöhung der Verschleißtarife für Saccharin, als in der Sitzung des Kabinettsrates von 18. Mai l. J. beschlossen wurde, notwendig mache. Redner erbitte daher die Ermächtigung des Kabinettsrates, den derzeit beim Hauptausschusse in Verhandlung stehenden Entwurf einer Vollzugsanweisung über diesen Gegenstand durch einen geänderten Entwurf ersetzen zu dürfen, welcher eine Steigerung der Verschleißpreise um 10 % der dort enthaltenen Ansätze vorsieht und gleichzeitig die Verschleißprovisionen auf zusammen 10 % erhöht.</p>
+                  <p>Der Kabinettsrat erteilt die erbetene Ermächtigung.</p>
+                  <p><pb facs="krp-0191_r-0011"/></p>
+               </div>
+               <div type="top" xml:id="krp-0191_top06">
+                  <head>
+                     <label>
+                        <num n="6">6.</num>
+                        <seg>Gewährung von Fahrpreisbegünstigungen für die Reise zum Sokolkongress in Prag.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Paul</hi> teilt mit, dass die tschechoslowakische Gesandtschaft in Wien für 800 Wiener und 300 südslawische Sokoln eine 50%ige Fahrpreisermäßigung für die Reise zum Sokolkongress in Prag erbeten habe. Redner verweist darauf, dass bisher die tschechische Eisenbahnverwaltung bei der Beförderung österreichischer Kinderzüge viel weitergehende Leistungen zu vollziehen hatte, als die österreichische bei Beförderung tschechischer Kinderzüge. Angesichts dessen erscheine es angebracht, den Tschechen in dem vorliegenden Falle Entgegenkommen zu beweisen und daher die angesprochene Fahrpreisbegünstigung zu gewähren.</p>
+                  <p>Der Kabinettsrat pflichtet der Auffassung des sprechenden Staatssekretärs bei und spricht sich für die Gewährung einer 50%igen Fahrpreisermäßigung aus.</p>
+               </div>
+               <div type="top" xml:id="krp-0191_top07">
+                  <head>
+                     <label>
+                        <num n="7">7.</num>
+                        <seg>Sicherung des österreichischen Post- und Eisenbahnärars gegen Schadensersatzansprüche infolge der Rückwirkungen des Boykottbeschlusses des internationalen Transportarbeiterverbandes in Amsterdam gegen Ungarn.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Paul</hi> bringt zur Sprache, dass der internationale Transportarbeiterverband in Amsterdam die Verhängung des Verkehrsboykottes gegen Ungarn vom 20. Juni l. J. an beschlossen habe, und stellt die Frage zur Diskussion, in welcher Art sich die Staatsverwaltung gegen Ersatzansprüche sichern könnte, wenn infolge der Beteiligung der österreichischen Eisenbahn- und Postangestellten an dem <pb facs="krp-0191_r-0012"/>Boykott Sendungen nach Ungarn nicht weiter befördert werden und dadurch zu Schaden kommen oder Verzögerungen erleiden. Nach Ansicht Redners müsse die Regierung vermeiden, sich irgendwie mit dem Boykott zu identifizieren; doch dürfte der Standpunkt gerechtfertigt sein, dass in diesem Falle eine Art von Streik vorliege und damit eine vis major gegeben sei, welche die Haftungspflicht den Eisenbahn- und Postärars aufhebt.</p>
+                  <p>Nachdem sich zum Gegenstande der <hi rend="#letterspaced">Vorsitzende</hi>, die Staatssekretäre <hi rend="#letterspaced">Hanusch</hi>, <hi rend="#letterspaced">Eldersch</hi>, Dr. <hi rend="#letterspaced">Deutsch</hi> und Dr. <hi rend="#letterspaced">Reisch</hi> sowie die Unterstaatssekretäre <hi rend="#letterspaced">Miklas</hi>, Dr. <hi rend="#letterspaced">Resch</hi> und Dr. <hi rend="#letterspaced">Ellenbogen</hi> geäußert hatten, beschließt der Kabinettsrat, das Staatsamt für Verkehrswesen habe in einer allgemeinen Verlautbarung das Publikum unverzüglich auf den nach Zeitungsnachrichten bevorstehenden Verkehrsboykott aufmerksam zu machen und der Bevölkerung nahezulegen, in ihrem eigenen Interesse Sendungen nach Ungarn zu unterlassen, da der von einer internationalen Organisation ausgehende und darum einer Ingerenz von Seite der österreichischen Regierung entrückte Boykottsbeschluss in seinen Rückwirkungen auf das Inland für die Eisenbahn- und Postverwaltung eine vis major schaffe, durch welche die Haftung für <pb facs="krp-0191_r-0013"/>Sendungen dorthin aufgehoben erscheine. Sobald feststeht, dass der Boykott tatsächlich zur Durchführung gelangt, wird zur Vermeidung von Stauungen sowohl an den Grenzen als auch bei den inländischen Verkehrsanstalten die Annahme von Sendungen nach Ungarn einzustellen und dies den ausländischen Verwaltungen, wie der Inlandsbevölkerung rechtzeitig zur Kenntnis zu bringen sein.</p>
+               </div>
+               <div type="top" xml:id="krp-0191_top08">
+                  <head>
+                     <label>
+                        <num n="8">8.</num>
+                        <seg>Beitritt der Staatsregierung zu mehreren Gesetzesbeschlüssen der Nationalversammlung.</seg>
+                     </label>
+                  </head>
+                  <p>Nach dem Vorschlage des <hi rend="#letterspaced">Vorsitzenden</hi> erhebt der Kabinettsrat gegen die von der Nationalversammlung beschlossenen Gesetze:</p>
+                  <list>
+                     <item n="1"><label>1.)</label> über das Zollrecht und das Zollverfahren (Zollgesetz),</item>
+                     <item n="2"><label>2.)</label> betreffend die Stellung und die Bezüge der Professoren an den vom Staate erhaltenen Hebammenlehranstalten,</item>
+                     <item n="3"><label>3.)</label> über die Schaffung einer Staatskommission für Rennangelegenheiten und einschlägige Zuchtfragen</item>
+                  </list>
+                  <p>keine Einwendung.</p>
+                  <p>Diese Gesetze sind demgemäß nach Gegenzeichnung durch den Staatskanzler und die zuständigen Staatssekretäre dem Präsidenten der Nationalversammlung zur Fertigung vorzulegen und sodann kundzumachen.</p>
+                  <p><pb facs="krp-0191_r-0014"/></p>
+               </div>
+               <div type="top" xml:id="krp-0191_top09">
+                  <head>
+                     <label>
+                        <num n="9">9.</num>
+                        <seg>Vollzugsanweisung, betreffend das Inkrafttreten gewisser internationaler Kollektiverträge.</seg>
+                     </label>
+                  </head>
+                  <p>Der Vorsitzende führt aus, dass zufolge des Staatsvertrages von St. Germain gleichzeitig mit diesem Vertrag eine Reihe internationaler Kollektivverträge zwischen den daran beteiligten alliierten und assoziierten Mächten einerseits und der Republik Österreich andererseits Wirksamkeit erlangt habe. Zur Inkraftsetzung dieser Kollektivverträge bedürfe es mit Rücksicht auf den konstitutiven Charakter des Staatsvertrages keiner weiteren Verfügung, doch empfehle es sich, ihr Inkrafttreten durch eine Vollzugsanweisung kundzumachen, zumal diese Bestimmungen in mehreren Artikeln des Staatsvertrages zerstreut sind. Auch erscheine es zweckmäßig, bei diesem Anlass Text samt Übersetzung jener unter diesen Kollektivverträgen zu veröffentlichen, die, wie das Haager Vormundschaftsübereinkommen, für das alte Österreich mangels endgiltigen Beitrittes nicht verbindlich waren, oder deren Veröffentlichung bisher aus anderen Gründen unterblieben ist, soweit eine solche Publikation nicht im einzelnen Falle aus besonderen Gründen untunlich sei.</p>
+                  <p>Redner unterbreite zu diesem Zwecke einen vom Staatsamt für Äußeres im Einvernehmen mit der Staatskanzlei und dem Staatsamt für Justiz ausgearbeiteten Entwurf einer Vollzugsanweisung der Staatsregierung über das Inkraft<pb facs="krp-0191_r-0015"/>treten gewisser Kollektivverträge mit der Bitte um die Ermächtigung zur Verlautbarung der Vollzugsanweisung.</p>
+                  <p>Der Kabinettsrat erteilt die erbetene Ermächtigung.</p>
+                  <p/>
+               </div>
+            </div>
+            <div type="anhaenge">
+               <p><pb facs="krp-0191_a01-0001"/>Geheimer Nachtrag zum Kabinettsprotokoll Nr. 191 vom 15. Juni 1920.</p>
+               <div n="1">
+                  <head>Verhandlungen in Belgrad über den Abschluss eines Wirtschaftsvertrages mit der jugoslawischen Regierung.</head>
+                  <div type="a01_protokoll">
+                     <p>Staatssekretär Dr. <hi rend="#letterspaced">Loewenfeld-Russ</hi> erstattet dem Kabinettsrate über die von Redner und Staatssekretär Paul in Belgrad geführten Verhandlungen mit der jugoslawischen Regierung über den Abschluss eines Wirtschaftsvertrages den diesem Protokolle als Beilage angeschlossenen Bericht und stellt die darin verzeichneten Anträge.</p>
+                     <p>Nach der in der anschließenden Debatte einmütig zutage getretenen Auffassung stellt der Kabinettsrat fest, dass die Sequestration österreichischen Vermögens in Jugoslawien als eine vollkommen rechtswidrige Maßnahme nicht den Gegenstand von Verhandlungen und noch weniger den Gegenstand eines Junktims mit der Erfüllung des Friedensvertrages oder aber mit dem Abschluss des Wirtschaftsvertrages bilden könne. Österreich sei bereit, den Friedensvertrag loyal durchzuführen und demnach im Augenblick der Ratifikation die Sperre jugoslawischer Depots gegen Aufhebung der Sequestra<pb facs="krp-0191_a01-0002"/>tion nach Maßgabe von Sonderverhandlungen des Staatsamtes für Finanzen über die finanziellen Fragen des Friedensvertrages aufzuheben. Diese Verhandlungen dürfen aber mit den gegenwärtigen Wirtschaftsverhandlungen in keinen Zusammenhang gebracht werden. Zur Bereinigung der übrigen Belange des Friedensvertrages wird nach Herstellung der Ordnung in den Grenzverhältnissen die Einsetzung von gemischten Kommissionen, wie solche im Verhältnis zu der Tschechoslowakei bereits in Tätigkeit getreten sind, in Aussicht genommen. Der Abschluss eines generellen Handelsabkommens wird einem späteren Zeitpunkt vorbehalten. Für den Augenblick ist nur ein Vertrag über Lebensmittellieferungen nach den von Staatssekretär Dr. Loewenfeld-Russ dargelegten Grundsätzen anzustreben und dessen Zustandekommen zur Bedingung für den Abschluss des von den Jugoslawen gewünschten Vertrages über die Leihe und die Reparatur von Lokomotiven, zu machen. Die Festsetzung der Zahlungsmodalitäten wird von dem Ergebnisse vorheriger Feststellungen des Staatsamtes für Finanzen abhängig gemacht, ob Dinars in den benötigten Beträgen überhaupt im Umlaufe sind und ob es an und für sich günstig erscheint, die Bezahlung der Lieferungen in Dinars in Aussicht zu nehmen, um nicht durch <pb facs="krp-0191_a01-0003"/>die plötzliche Vermehrung der Nachfragen nach dieser Valuta deren Wertrelation zu Ungunsten der österreichischen Krone herbeizuführen zu verschieben.</p>
+                     <p>Der Kabinettsrat genehmigt schließlich die Anträge des Staatssekretärs für Volksernährung zusammen mit den vorstehend dargelegten Gesichtspunkten als Instruktion für die weiteren Verhandlungen über das Wirtschaftsabkommen mit der jugoslawischen Regierung.</p>
+                     <p/>
+                  </div>
+               </div>
+            </div>
+            <div type="stenogramme">
+               <div n="1">
+                  <head>[KRP 191, 15. Juni 1920, Stenogramm Groß]</head>
+                  <p><pb facs="krp-0191_s01-0001"/>191. Sitzung, 15. Juni 1920.</p>
+                  <p>[?Renner]: Die Generalräte der Verkehrsbank sind in der letzten Versammlung gewählt worden. Bisher [war erforderlich] die kaiserliche Bestätigung, dann [durch den] Staatsrat, jetzt [durch den] Kabinettsrat. </p>
+                  <p>Wiedergewählt [wurden] ?Kraft und der Chef der Firma Medinger und Söhne, Emil Medinger und ?Adalbert ?Doumont.</p>
+                  <p>[Beschluss]: Bestätigung erteilen.</p>
+                  <p>Glöckel: </p>
+                  <p>Strunz.</p>
+                  <p>Paul: </p>
+                  <p>Es wurde mir mitgeteilt, dass das Staatsamt für Finanzen nicht in der Lage ist, die Ernennungen in die VII. und VIII. zu genehmigen, weil erst der Kabinetts-</p>
+                  <p>rat zuerst Direktiven aufstellen müsse. Die Ernennungen müssen mit 1. Juli vollzogen werden und müssen im Anschluss an die Ernennung des Präsidenten geschehen. Von Direktiven </p>
+                  <p>des Kabinettsrates ist mir nichts bekannt geworden.</p>
+                  <p>Reisch: -.</p>
+                  <p>1.</p>
+                  <p>[Zugezogen:] Schüller. Renner: </p>
+                  <p>Ausfolgung von Legitimationen an die Mitglieder der Entente-Kommissionen. </p>
+                  <p>Deutsch teilte mit, dass die Heereskommission Legitimationen verlangt.</p>
+                  <p>Wir sind in diesem Fall in einer schwierigen Rechtslage. Denn es ist nicht einmal den eigenen behördlichen Organen ohne weiteres erlaubt, Privatbetriebe </p>
+                  <p>zu besichtigen. Diese Besichtigung ist für die Betriebe von großer Bedeutung. Der Referent im Äußeren bemerkt hierzu ...</p>
+                  <p>Ich stelle die Frage dem Kabinettsrat zur Diskussion.</p>
+                  <p>Die Beauftragten sind [...] und [...].</p>
+                  <p>Zerdik: </p>
+                  <p>Die Sache ist für die Industrie- und Gewerbestelle sehr unsympathisch. Wenn die fremden Missionen ein [...] besichtigen wollen, müssen sie sich vorher </p>
+                  <p>anfragen. Wird ihnen aber eine solche Legitimation ausgestellt, werden sie unangesagt erscheinen und Revisionen vornehmen, welche zur Wahrung des Betriebs- und Geschäftsgeheimnisses </p>
+                  <p>sehr unangenehm sein können.</p>
+                  <p>Renner: </p>
+                  <p>Die interalliierte Militärkommission in Deutschland benützt die Revisionen dazu, die Betriebsgeheimnisse der deutschen Industrie zu sammeln. </p>
+                  <p>Mein Gefühl spricht dagegen aus Rücksicht auf die Privaten und den Staat selbst. Denn wir verzichten vollständig auf unsere staatliche Hoheitsrechte, wenn wir nicht mindestens </p>
+                  <p>verlangen, dass die Herren in Begleitung eines österreichischen Staatsfunktionärs kommen.</p>
+                  <p>Hanusch: </p>
+                  <p>Nur der Gewerbeinspektor darf einen Betrieb unangemeldet betreten. Es ginge gut an, diese Besichtigung an die Begleitung des </p>
+                  <p>Gewerbeinspektors zu knüpfen.</p>
+                  <p>Eldersch: </p>
+                  <p>Die Institution der Gewerbeinspektion wird durch diese Koppelung geschädigt und alles Odium, wenn etwas geschieht, fällt auf ihn. </p>
+                  <p>Es würden neue Argumente der Unternehmen gegen sie gegeben. Die Begleitung sollte von einem politischen Beamten geschehen. Ich kann mir nicht vorstellen, dass </p>
+                  <p>wir den Ausländern Rechte zur Beaufsichtigung geben, welche wir selbst nicht haben. Es müsste ein eigenes Gesetz dafür geschaffen werden.</p>
+                  <p>Miklas: </p>
+                  <p>Es kommt alles auf die Stilisierung des Friedensvertrages an. Der Friedensvertrag ist [ein] Grundgesetz und spricht der Entente Rechte zu, welche über unsere </p>
+                  <p>Rechte hinausgeht. Aber der Text dürfte der Entente kaum die Möglichkeit geben, unangemeldet zu erscheinen. Wir sollten nicht darüber hinausgehen, was der </p>
+                  <p>Friedensvertrag unbedingt von uns verlangt.</p>
+                  <p><pb facs="krp-0191_s01-0002"/>Renner: </p>
+                  <p>Die Praxis der Ungarn gegenüber der Ententemission aufgrund des Waffenstillstandes in Ödenburg ist so, dass keiner </p>
+                  <p>etwas unternehmen kann ohne Begleitung und Verständigung der Behörden.</p>
+                  <p>Schüller: </p>
+                  <p>Nach dem Friedensvertrag muss Österreich der Kontrollkommission alle Mittel zur Verfügung stellen, welche die Kommission zur Erfüllung ihrer Aufgaben </p>
+                  <p>braucht.</p>
+                  <p>Renner: </p>
+                  <p>Wir müssen Anzeigen den Besuch und wir müssen den Mann hinführen. Aber als Ausländer kann er ohne Begleitung eines österreichischen Beamten </p>
+                  <p>nicht in eine private Unternehmung eintreten.</p>
+                  <p>Schüller: </p>
+                  <p>Wir schlagen daher vor, nicht dass sie das Recht haben, den Betrieb zu betreten, sondern die Unternehmer werden eingeladen, </p>
+                  <p>sie zuzulassen und dass sie den Beauftragten verständigen müssen. Es ist [eine] Sache der Durchführung.</p>
+                  <p>Renner: </p>
+                  <p>Wird es sich nicht empfehlen, dass diese Machtvollkommenheit alle Betriebe zu betreten und zu durchsuchen, wir uns erst durch ein Gesetz [...]</p>
+                  <p>[…]</p>
+                  <p>Schüller: </p>
+                  <p>Ein Gesetz würde uns die Machtvollkommenheit geben, während wir sie [jetzt] nicht haben und jetzt uns darauf ausreden können. Sie wollen einen </p>
+                  <p>Kataster machen und wir werden sie darin unterstützen. Die Industriellen werden nichts dagegen haben, wenn ihnen der Beauftragte sagt, wir kommen.</p>
+                  <p>Renner: </p>
+                  <p>Das Staatsamt für Handel möchte sich entscheiden, was zum Schutz der Industrie Not tut. Genügt es, wenn gesagt wird, die Industriellen werden </p>
+                  <p>eingeladen, die Besichtigung zu gestatten?</p>
+                  <p>Zerdik: </p>
+                  <p>Wir müssen die Möglichkeit haben, bei manchen Betrieben rechtzeitig eine Verständigung ergehen zu lassen. Wir haben in der letzten Zeit große </p>
+                  <p>Munitionsbestände zu Rohstoffen - haben umschmelzen lassen. Wenn das herauskommt, haben wir Verlegenheiten. Es ginge nur so, dass die Regierung </p>
+                  <p>unter allen Umständen dabei interveniert und dass österreichische Organe die Vermittlung herstellen.</p>
+                  <p>Renner: </p>
+                  <p>Es müsste ausgesprochen werden, dass Auskünfte - über Verfahrensweisen keine Auskünfte gegeben werden dürfen.</p>
+                  <p>Schüller: </p>
+                  <p>In dem Moment, wo der Industrielle nur ersucht wird, den Besuch zu gestatten, wird er keine Geschäftsgeheimnisse verraten. </p>
+                  <p>Die Industriellen werden eingeladen, den Mitgliedern, welche in Begleitung des Beauftragten erscheinen, an die Hand zu gehen.</p>
+                  <p>Deutsch: </p>
+                  <p>Ich glaube, dass wir hier mit der bloßen Festlegung der juristischen Lage nicht weiter kommen. Die Entente sagt immer, es muss, wenn das Recht </p>
+                  <p>fehlt, ein Gesetz geschaffen werden. Es hat keinen Zweck, sich weiter zu streiten. Wir müssen [trachten], die für uns praktische Form der Besuche zu finden. </p>
+                  <p>Man sollte sich in Verbindung setzen mit den Handels- und Gewerbekammern und dem Zentralverband der Industrie - und ihnen selbst anheimgibt, ihre Mitglieder </p>
+                  <p>zu verständigen. Es handelt sich nur um die großen organisierten Vertreter. Wenn diese von der Organisation mit unserer Mitwirkung instruiert werden, </p>
+                  <p>erreichen wir das Gewünschte. [Man sollte] grundsätzlich die Besuche gestatten, aber nach Möglichkeit sabotieren durch Aufschub, Schwierigkeiten machen. </p>
+                  <p>Durchführbar ist das nur in Verbindung mit den Organisationen der Industrie.</p>
+                  <p>Ellenbogen: </p>
+                  <p>Ist ein Fabrikant berechtigt, eine Antwort über ein Betriebsgeheimnis zu verweigern?</p>
+                  <p>Deutsch: </p>
+                  <p>Ich würde jedem raten, die Sache zu sabotieren.</p>
+                  <p><pb facs="krp-0191_s01-0003"/>Renner: </p>
+                  <p>Es wäre festzuhalten: Der interalliierten Kontrollkommission ist zu eröffnen, dass die österreichische Regierung selbstverständlich den Arbeiten der </p>
+                  <p>Kontrollkommission keine Schwierigkeiten in den Weg legen wird, dass jedoch nach dem Stand unserer Gesetzgebung ein österreichischer Regierungsfunktionär die besichtigende </p>
+                  <p>Kommission begleiten muss und die Unternehmen kürzer oder länger vorher verständigt werden müssen. Vor jedem Besuch muss eine Verständigung geschehen.</p>
+                  <p>Die Leg[itimation] ist auszustellen und ihr Wortlaut hat eine Aufforderung - Einladung an die Betriebsinhaber zu enthalten, den Kommissionsmitgliedern </p>
+                  <p>den Zutritt zu gestatten. Alle diese Ansuchen sind zu richten an den Staatsbeauftragten und dieser hat sich sowohl mit dem Hauptverband der Industrie wie </p>
+                  <p>mit der Handels- und Gewerbekammer des Gebietes über die Durchführung der Sache zu verständigen. <hi rend="#s">Auch ist das Staatsamt für Äußeres</hi> - Das Staatsamt für Handel ist eingeladen, </p>
+                  <p>den Hauptverband und die Handelskammern über die rechtliche Lage der Industriellen zu informieren.</p>
+                  <p>Schüller: </p>
+                  <p>Bei der Sache muss bedacht werden, dass nach dem Friedensvertrag sie sachlich viel weiter gehen könnten, als sie gehen und darin, dass sie </p>
+                  <p>sagen, [dass] alles, was nicht als Kriegsmaterial verwendet werden kann, freigegeben wird - darin ein großes Entgegenkommen liegt. Das hat großes politisches </p>
+                  <p>Interesse. Was nicht fertiges Kriegsmaterial ist, kann also verarbeitet werden - was nach dem Friedensvertrag nicht klar ist. Über diesen Punkt muss das Staatsamt für Handel </p>
+                  <p>die Industriellen auch klarstellen.</p>
+                  <p>2.</p>
+                  <p>Renner: </p>
+                  <p>[Eine] drahtlose Depesche von Tschitscherin [ist eingelangt]. [Sie ist] verstümmelt, es wird um Wiederholung gebeten. [Darin heißt es]: Trotz unserer letzten Depesche, </p>
+                  <p>dass wir uns als neutral benehmen werden, finden fortwährend Exporte von Waffen und Munition nach Polen statt. Die Sowjet-Regierung hat </p>
+                  <p>sich darüber Gewissheit verschafft und sieht sich gezwungen, da sie Krieg führt, Repression zu üben und wird deshalb weder die Handelsverhandlungen </p>
+                  <p>fortführen, die wir einleiten wollen, noch die Kriegsgefangenentransporte zulassen. Ich werde die Depesche dem Kabinettsrat unterbreiten. </p>
+                  <p>Diese Tatsache zwingt uns, eine neuerliche Depesche nach Moskau zu richten. Denn wir können den Heimtransport der Kriegsgefangenen </p>
+                  <p>nicht einstellen lassen und wenn auch die Handelsverhandlungen kein positives Ergebnis haben werden, so können wir - dass der andere Staat den Versuch macht, </p>
+                  <p>direkt einen Abbruch dieser Verhandlungen [zu] bewirken. Ich möchte fragen, ist es möglich, solche Exporte vor der ganzen Welt zu untersagen, auch den </p>
+                  <p>Privaten? Wir müssen das tun.</p>
+                  <p>Zerdik: </p>
+                  <p>Seit geraumer Zeit nicht nur aus den Staatsbeständen - und anderen Beständen wird keine Ausfuhrbewilligung erteilt. Wenn </p>
+                  <p>eine österreichische Firma eine falsche Deklaration macht, so lässt sich das nicht kontrollieren.</p>
+                  <p>Renner: </p>
+                  <p>Es ist etwas anderes, wenn wir keine Ausfuhrbewilligung geben oder wenn wir sagen, es ist verboten und das Zuwiderhandeln </p>
+                  <p>wird bestraft. Es müsste ausdrücklich verboten werden, damit wir die Bedenken der russischen Regierung beseitigen. Es kann doch ein neuerliches Verbot </p>
+                  <p>ausgesprochen werden.</p>
+                  <p>Deutsch: </p>
+                  <p>Das Verbot kann in Erinnerung gebracht werden. Wir sollten erwidern und sie direkt fragen, wo etwas geliefert wurde. Mit unserem Willen </p>
+                  <p>und Wissen ist nichts geliefert worden. Wir sollten sagen, wir verstehen die Depesche [...], wir bitten uns die Daten bekannt zu geben.</p>
+                  <p>Renner: </p>
+                  <p>Ich würde die Sache doch unterstützen dadurch, dass das Verbot neuerlich eingeschärft wurde - [würde].</p>
+                  <p>Zerdik: </p>
+                  <p>Das Verbot bringt uns gegenüber Polen in eine unangenehme Lage.</p>
+                  <p><pb facs="krp-0191_s01-0004"/>Renner: </p>
+                  <p>Das Staatsamt für Handel ist eingeladen, das Verbot in Erinnerung zu bringen und tunlichst zu verschärfen. Vom Außenamt wird eine </p>
+                  <p>Depesche gerichtet, dass wir solche Fälle nicht kennen, [wir] bitten die russische Regierung möge - uns konkrete Angaben zu machen, damit wir einschreiten </p>
+                  <p>können, übrigens ist das Verbot jetzt neuerdings verschärft kundgemacht worden.</p>
+                  <p>3.</p>
+                  <p>Glöckel: </p>
+                  <p>Staatstheater, Präsident der Staatstheaterkommission. Es liegen sieben Projekte vor zur Sanierung der Staatstheater mit weitgehenden Plänen </p>
+                  <p>und es ist nicht möglich, sich mit diesen Dingen unmittelbar zu beschäftigen.</p>
+                  <p>Adolf Vetter, Direktor des Gewerbeförderungsamtes.</p>
+                  <p>Genehmigt.</p>
+                  <p>4.</p>
+                  <p>[Zugezogen:] Konsul Kronholz. Loewenfeld-Ruß: Wirtschaftsverhandlungen mit Jugoslawien. </p>
+                  <p>Ich habe von Belgrad Kronholz mitgenommen, damit er ?Redlich und [den/die] Referenten selbst über das Ergebnis informieren kann. </p>
+                  <p>Ich möchte bitten, ein paar Bemerkungen vorbringen zu können.</p>
+                  <p>Wir sind am 2. Juni abgereist. Am 1. Juni war ein Kabinettsrat, ohne dass uns Mitteilung gemacht worden wäre über die </p>
+                  <p>Note der Reparationskommission, welche auch mein Ressort berührt. Am 2. Juni wurde sie im Finanzausschuss mitgeteilt, ohne dass </p>
+                  <p>mein Ressort verständigt worden wäre. Wir haben davon erst aus [jugo]slawischen Zeitungen erfahren. Bis heute ist sie dem Volksernährungsamt amtlich </p>
+                  <p>nicht zur Kenntnis gekommen. Diese Art der Vermittlung wichtiger Nachrichten an die Ressorts entspricht nicht den Notwendigkeiten. Der Weg, den das Äußere </p>
+                  <p>einhält, um das Ernährungsamt über Mitteilungen aus dem Ausland zu verständigen ist unzweckmäßig, es kommt entweder zu spät und das </p>
+                  <p>Staatsamt für Äußeres verhindert einen direkten Verkehr mit unserer Legation.</p>
+                  <p>Wir sind auch von der Demission nicht verständigt worden, haben am Samstag noch verhandelt und [wurden] erst von jugoslawischer [Seite von] </p>
+                  <p>unserer Demission verständigt. Unsere taktische Stellung ist dadurch sehr verschlechtert worden.</p>
+                  <p>Schüller: </p>
+                  <p>Ich müsste ?heftige Gegenklagen stellen. Es ist umgekehrt. Nach allen Orten gehen von den Ministerien Herren. Was diese berichten, wissen wir in der </p>
+                  <p>Regel nicht. Wir nehmen an, dass sie direkt berichten. Ich erfahre erst aus einer -.</p>
+                  <p>Der innere Warenverkehr ist völlig frei, die Wareneinfuhr ist [aber] für die Lebensmittel und die wichtigsten Rohstoffe verboten.</p>
+                  <p>Paul: </p>
+                  <p>Ich habe dem Bericht nichts hinzuzufügen. Ich kann bestätigen, dass die Südslaven die Verhandlungen wegen des Lokomotivleihvertrages </p>
+                  <p>nicht abbrechen werden. Ich sehe aber keinen Weg, den Südslaven die Lokomotiven wegzunehmen. Ohne die 45 Lokomotiven steht der Eisenbahnbetrieb </p>
+                  <p>in wenigen Tagen still. Das war ein Grund und weil es nichts nützt, dass wir die Verhandlungen abgebrochen hätten - mussten wir uns von 24 auf 67 [Lokomotiven] einigen, </p>
+                  <p>weil sie sonst die Lebensmitteltransporte [nicht] durchführen können. Auch auf der Donau wird es schlecht gehen, die südslawischen Schiffe sind schlecht, die </p>
+                  <p>österreichischen haben keine Kohle und solche wollen die Slaven nicht liefern. Wir haben darum den Lokomotivvertrag nicht gekündigt.</p>
+                  <p>[<hi rend="#i">Am Rand:</hi>] Die Südslaven haben an Lokomotivleihvertrag großes Interesse.</p>
+                  <p>Renner: </p>
+                  <p>Der springende Punkt ist die Erklärung Korosec' in der Kammer und die Bedingungen, durch welche vor aller Welt eine Tatsache gesetzt wird, </p>
+                  <p>welche schwer beseitigt werden kann. Die südslawische Regierung wird vor den Wahlen auf diese Bedingungen formell nicht verzichten werden - können.</p>
+                  <p><pb facs="krp-0191_s01-0005"/>Renner: </p>
+                  <p>Die Sequestration ist widerrechtlich und daher kein Gegenstand von Verhandlungen. Die weitest[gehende] Methode wäre, diesen Streitgegenstand anhängig machen. </p>
+                  <p>Das würden wir zwar durchsetzen, aber würden [die Jugoslawen] stark verärgern. Dann könnte man in Bezug auf die Lokomotiven und die Lokomotivreparaturen [sich] zurückhalten und sie zur </p>
+                  <p>Nachgiebigkeit zwingen. Das ist [aber] für die Industrie wichtig und es würde sehr schwierig werden für sie. Die dritte Methode wäre das Weiterverhandeln und ihren Standpunkt </p>
+                  <p>zu ändern. Die feste Instruktion des Kabinetts müsste vor allem ganz geheim sein.</p>
+                  <p>Schüller: </p>
+                  <p>Da einerseits der Friedensvertrag sehr rasch in Kraft treten wird und über die Aufhebung der Sequestration und der Sperre schon jetzt </p>
+                  <p>verhandelt wird, so muss es den Jugoslawen gleichgültig sein, ob sie formal in Zusammenhang mit dem Wirtschaftsvertrag oder mit der Aufhebung der </p>
+                  <p>Sperre steht. Die Junktim-?Revolte ist nur eine Spiegelfechterei, das ist gegen den Frieden. Wir sind bereit, die Sperre aufzuheben, wenn die Sequestr[ation] </p>
+                  <p>aufgehoben wird. Wir sind bereit, den Frieden zu erfüllen. Und zu den Lokomotiven: Die Aufhebung der Sequestr[ation] muss geschehen, wenn der Frieden in Kraft tritt. </p>
+                  <p>Wenn sie es von der Rückstellung weggeführten Gegenstände abhäng[ig] machen, so verletzten sie den Friedensvertrag. Für die Aufhebung der Sequestr[ation] heben wir </p>
+                  <p>die Sperre über die anderen Depots auf und den Frieden werden wir erfüllen. So können sie uns nichts anhaben. Dann kann man den Wirtschafts- und den Lokomotivenvertrag mit-</p>
+                  <p>einander verbinden.</p>
+                  <p>Renner: </p>
+                  <p>Wegen der Sequestration hat es besondere Schwierig[keiten]. Sie haben den deutschen Steirern die Weingärten weggenommen und verkauft. Sie </p>
+                  <p>haben die größten Schwierigkeiten, das rückgängig zu machen. Wenn die Sequestr[ation] aufgehoben wird, so machen sie sich bei den Wahlen in Untersteier[mark] und Laibach </p>
+                  <p>sehr unbeliebt. Wie die Rückgängigmachung durchgeführt werden soll, weiß ich nicht. Der wunde Punkt bei der jugoslawischen Regierung und Verwaltung ist dieses slavische Gebiet, das </p>
+                  <p>sie nicht verdauen können. Man wird vor der Wahl die Slaven nicht bloßstellen, vor ihren Wahlen. Ich bin in Bezug auf die Aufhebung der Sequestration sehr pessimistisch. </p>
+                  <p>In [Jugo]slawien wurde die Sequestration nicht so weit getrieben und ist eine Realsequestration geblieben.</p>
+                  <p>Eisler: </p>
+                  <p>Ich weiß nicht, wie weit man sich im Klaren ist. Es darf nicht übersehen [werden], dass ein Teil der Sequestration und Zwangsliquidation </p>
+                  <p>scheinbar durch innerstaatliche Gesetze gedeckt ist, welche allerdings einseitig gehässig durchgeführt werden. Die Agrarreform ist ein Schwindel und nur eine </p>
+                  <p>Verhüllung dieser gewaltsamen Liquidation durch die innerstaatliche Gesetzgebung. Die Grundmaße im Enteignungsgesetz, das praktisch nur im Slowenien und nur gegen </p>
+                  <p>Deutsche durchgeführt wurde, [sind so], dass man sagen kann, es ist zu diesem Zweck gemacht. Das ist eine ?Bürde, welche die Wiedergutmachung sehr erschwert. Es sind Enteignungen </p>
+                  <p>unter dem Titel der Agrarreform. Wenn jetzt die Sequestr[ation] aufgehoben wird, dann hat er nichts mehr. Es hat sich besonders um Dinge gehandelt, welche unter das Agrargesetz </p>
+                  <p>fallen und jetzt endgültig verloren ist - [sind]. Das müsste berücksichtigt werden, wenn die Aufhebung der Sequestr[atrion] einen Sinn haben soll.</p>
+                  <p>Schüller: </p>
+                  <p>Nach dem Frieden müssen die Leute in integrum versetzt werden und für den Schaden schadlos gehalten werden. Nachdem, was </p>
+                  <p>die Jugoslawen gemacht haben, bleibt uns nichts übrig als laut Beschwerde zu führen.</p>
+                  <p>Eldersch: </p>
+                  <p>Wir können die Bedingung des Junktims zwischen der Aufhebung der Sequestrierung und der Sperre nicht annehmen. Die Jugoslawen haben das gefordert, die Erfüllung </p>
+                  <p>des Friedens, weil sie wissen, dass gewisse Bedingungen nur schwer und in längerer Zeit erfüllt werden [können]. Die Feststellung dauert lange und deswegen stellen sie eine solche Bedingung, </p>
+                  <p>damit auch sie nicht die Sequestr[ation] aufheben müssen, weil sie die ihnen da entstehenden Schwierigkeiten kennen. Wir müssen uns auf den Rechtsstandpunkt stellen, dass die Sequestr[ation] </p>
+                  <p>nach dem Frieden unzulässig ist. Wenn wir gewisse Bedingungen daran knüpfen lassen, welche schwer erfüllbar sind, so würden wir formell die Sequestr[ation] anerkennen und die Nicht-Aufhebung </p>
+                  <p>legitimieren, da wir gewisse Bedingungen noch nicht erfüllt haben.</p>
+                  <p>Loewenfeld-Ruß: </p>
+                  <p>Die einzelnen Äußerungen sind nur ein Beweis dessen, dass der Antrag 1 der einzig mögliche ist. Wenn wir uns in die Frage der </p>
+                  <p><pb facs="krp-0191_s01-0006"/>Sequestr[ation] verlieren, so werden wir nie zu den Lieferungen kommen. Die Jugoslawen haben wegen ihrer Verkehrsmisere und wegen der Größe der neuen Ernte </p>
+                  <p>ein Interesse am Vertrag. Wir müssen nochmals versuchen, die wirtschaftlichen Verhandlungen mit dem Junktim zu lösen und zu sagen, dass die Gegenstände einen </p>
+                  <p>untrennbaren Zusammenhang bilden: Lokomotiven und Lebensmittel. Die Beurteilung des Junktims zwischen der Sequestr[ation] und der Sperre muss ich dem Staatsamt für Finanzen überlassen. </p>
+                  <p>Was die Erfüllung [der Bestimmungen] des Friedens anlangt, so sollten wir erklären, wir werden sie erfüllen und meinetwegen eine Kommission einsetzen. Diese Sequestrationsaufhebung </p>
+                  <p>und der Friedensvertrag ist nur dadurch in ein Junktim gekommen, dass wir die Sperre in Verbindung brachten mit der Sequestr[ation]. Wir müssen sagen, die Aufhebung </p>
+                  <p>der Sperre darf damit nicht in Verbindung gesetzt werden. Wenn die Verhandlungen sich zerschlagen, so verlieren wir viel Zeit und müssten uns an die Reparationskommission </p>
+                  <p>wenden.</p>
+                  <p>Renner: </p>
+                  <p>Wenn wir den Vertrag Lebensmittel gegen Lokomotiven schließen und wir kommen dann in Streit über die Sequestration mit den Jugoslawen, </p>
+                  <p>so werden sie das Getreide nicht liefern. Andererseits unsere Kompensation, die Lokomotiven, haben sie und ihre Reparaturen wird unsere Industrie machen müssen, weil </p>
+                  <p>sie sonst nicht arbeiten kann - [können].</p>
+                  <p>Die Sequestration ist als durch den Friedensvertrag nicht gerechtfertigt kompromisslos von den Jugoslawen aufzuheben. </p>
+                  <p>Mit der Aufhebung der Sequestration fällt auch die Sperre. Das ist eine Durchführung des Friedensvertrages. Diese Verhandlungen werden separat geführt durch das Staatsamt für Finanzen </p>
+                  <p>unter dem Titel der Durchführung der finanziellen Friedensbestimmungen. Diese Verhandlungen berühren - dürfen eigentlich die Wirtschaftsverhandlungen nicht berühren. Wenn die Verhandlungs-</p>
+                  <p>basis festgestellt ist, dann sollen die Staatssekretäre wieder hinunter fahren.</p>
+                  <p>Mit dem generellen Handelsabkommen können wir warten. Das Staatsamt für Finanzen soll sich äußern, ob die monatsweise Preisbestimmung nach der </p>
+                  <p>Rotterdamer Notierung das Richtige ist.</p>
+                  <p>Loewenfeld-Ruß: </p>
+                  <p>Es ist fraglich, ob die erforderlichen Mengen an Dinar erhältlich sind und wir nicht eine Steigerung der Dinare hervorrufen.</p>
+                  <p>Reisch: </p>
+                  <p>Es müsste erst festgestellt werden, ob Dinar in den nötigen Mengen überhaupt im Umlauf sind.</p>
+                  <p>Renner: </p>
+                  <p>Weil die L[iquidation?] nicht fertig ist, stocken die Verhandlungen. Dann kann erklärt werden, zur Durchführung des Friedens werden wir die </p>
+                  <p>gemischte Kommission wie mit den anderen Staaten einsetzen und wenn ich sehe, dass der Kompensationsvertrag läuft und in den Grenzfragen Ordnung </p>
+                  <p>gemacht wird und der Vertrag dem Abschluss nahe ist, dann werde ich sehr gern hinunter fahren, um endgültig abzuschließen.</p>
+                  <p>[Beschluss]: Über die Durchführung des Friedensvertrages wird der Staatskanzler selbst verhandeln, sofern man sieht, dass der Vertrag zustande kommt.</p>
+                  <p>Loewenfeld-Ruß: </p>
+                  <p>Getreidebewirtschaft[ung].</p>
+                  <p>Das Gesetz im Haus ist verzögert [worden] durch meine Abwesenheit und die Seltenheit der Sitzungen des Ernährungsausschusses. Ob das, </p>
+                  <p>was über den freien - [in einer] Kampfabstimmung [waren] die Sozialdemokraten [um] 5 [Stimmen] gegen die Christlichsozialen und Großdeutschen in der Minderheit. Wenn ein Landeskontingent </p>
+                  <p>vollkommen abgeliefert ist, kann das Getreide in den freien Verkehr kommen. Ich habe nichts dagegen einzuwenden. Die Agrarier haben dagegen gestimmt, </p>
+                  <p>sie wollen es den Genossenschaften vorbehalten. Ich weiß nicht, wie ich mich im Haus verhalten soll, wenn die beiden Parteien gegeneinander stimmen. Dazu </p>
+                  <p>kommt, dass die Abgeordnete Freundlich einen Minderheitsantrag auf Wiederherstellung der alten Regierungsvorlage fordert. Der Preis von 1.000 Kronen </p>
+                  <p>war an die Bedingung geknüpft, dass das ganze Getreide gebunden bleibt. Das Staatsamt für Ernährung hat den Preis den Agrariern zugesagt. Wir haben in den Ländern </p>
+                  <p><pb facs="krp-0191_s01-0007"/>schon Vorbereitungen über die Kontingentierung getroffen. Ich weiß nicht, wie ich mich verhalten soll. Das Gesetz zurückzustellen ist nicht möglich.</p>
+                  <p>Eldersch: </p>
+                  <p>Wir haben den Preis nur zugestanden unter der Voraussetzung, dass das Überschussgetreide an die Genossenschaften kommt und eine </p>
+                  <p>gemeinnützige Verwaltung findet.</p>
+                  <p>Deutsch: </p>
+                  <p>Das Gesetz ins Haus zu bringen führt zu einem großen Zusammenstoß und zu keinem Resultat. Es muss zu einem Übereinkommen </p>
+                  <p>zu kommen getrachtet werden. Auf einen Kampf kann man es nicht ankommen lassen. Vielleicht kann man es im Hauptausschuss machen oder im - [in einer] Obmännerkonferenz.</p>
+                  <p>Reisch: </p>
+                  <p>Saccharinverordnung. Der Hauptausschuss behandelt sie nicht. Inzwischen hat sich herausgestellt, dass die Preise für das </p>
+                  <p>Rohmaterial fortwährend steigen. [Ich] habe daher die Verordnung etwas zu ändern und erbitte dazu die Ermächtigung. Diese Preise bedingen einen Verlust bei </p>
+                  <p>S[accharin], wenn die Preise nicht darnach eingerichtet werden. Ich erbitte die Ermächtigung, die vorgetragenen Preise um 10 % erhöhen zu dürfen und die vorbehaltenen </p>
+                  <p>Provisionssätze zu erhöhen, weil die Saccharinverschleisser zu den bisherigen Sätzen das Geschäft ablehnen. Die Provisionssätze von 8 Heller </p>
+                  <p>der bereits im Hauptausschuss liegenden Verordnung durch einen neuen zu ersetzen mit 10 % Preiserhöhung.</p>
+                  <p>Genehmigt.</p>
+                  <p>Paul:</p>
+                  <p>Sokolkongress, Fahrpreisermäßigung. Der Kabinettsrat hat beschlossen, dass die tschech[oslowakischen] Kinder, welche auf Ferien geschickt werden durch -. </p>
+                  <p>[Für] 800 Wiener und 300 südslawische [Sokoln] halber Fahrpreis.</p>
+                  <p>Paul:</p>
+                  <p>Verkehrsboykott gegen Ungarn und eingeschriebene Sendungen nach Ungarn.</p>
+                  <p>Renner: </p>
+                  <p>Die internationale Transportarbeiterorganisation hat den B[oykott]-Beschluss einhellig gefasst, er wird von allen Staaten durchgeführt werden. </p>
+                  <p>Die tschechoslovakische Regierung hat gesagt, dass dort der B[oykott] gehalten werden wird. Die Rechtslage ist für uns als Regierung </p>
+                  <p>sehr schwierig. Wir können natürlich einen solchen B[oykott] nicht billigen, aber wir werden ohnmächtig sein, ihn zu verbieten.</p>
+                  <p>Hanusch: </p>
+                  <p>Die Regierung muss sich fragen, welche Haltung sie einzunehmen hätte, um Schadenersatzansprüchen vorzubeugen.</p>
+                  <p>Eldersch: </p>
+                  <p>Wir können gegen den B[oykott] nicht Stellung nehmen und auch keine Differenzen mit den Bediensteten suchen. Ich mache die </p>
+                  <p>Staatsämter aufmerksam, dass wir eine Zentralstelle namhaft machen müssen, welche alle Beschwerden aufnimmt und [bei] Schwierigkeiten bei den ausländischen </p>
+                  <p>Arbeiterorganisationen einwirkt, sonst kommen wir selbst im B[oykott] zu Schaden.</p>
+                  <p>Renner: </p>
+                  <p>[Das Staatsamt für] Verkehrswesen soll sich an die übrigen Verkehrsämter wenden und sagen, die österreichische Regierung ist außer Stande, Sendungen, die </p>
+                  <p>nach Ungarn gehen, zu übernehmen. Wir werden sie an der Grenze nicht übernehmen, um uns nicht der Verantwortung auszusetzen.</p>
+                  <p><pb facs="krp-0191_s01-0008"/>Paul: </p>
+                  <p>Boykott ist Streik, daher vis major.</p>
+                  <p>Deutsch: </p>
+                  <p>[Man könnte] die Länder verständigen, dass Waren nicht übernommen werden, im Inneren erklären, dass B[oykott] Streik ist und höhere Gewalt wirkt.</p>
+                  <p>Renner: </p>
+                  <p>[Man könnte] kundgeben, dass [ein] B[oykott] beabsichtigt ist. Für den Fall, als dieser Beschluss zur Durchführung käme, [...] wie ein Streik. </p>
+                  <p>So dass die Staatsverwaltung sich einer v[is] m[aior] gegenüber sehen würde und für Sendungen keine Verantwortung übernehmen könnte, das Publikum möge sich danach </p>
+                  <p>einrichten. Das [hätte] allerdings die Folge, dass es aussieht, als würde man die Sache unterstützen.</p>
+                  <p>Miklas: </p>
+                  <p>Eine solche Kundgebung ist notwendig, aber sie müsste mit einer offiziellen Verwarnung an die Streikenden und einer Verwahrung gegenüber dem Ausland </p>
+                  <p>wegen eventueller Ersatzforderungen [verbunden sein].</p>
+                  <p>Deutsch: </p>
+                  <p>Gegen eine Verwarnung müsste ich mich aussprechen. Auch vom parteipolitischen Standpunkt kann ich dazu nicht zustimmen.</p>
+                  <p>Reisch: </p>
+                  <p>[Man könnte] sagen, dass [ein] Streik beschlossen [wurde], die Regierung kann nichts annehmen.</p>
+                  <p>Renner: </p>
+                  <p>Wir können uns von Regierungswegen an dem B[oykott] nicht beteiligen, wir dürfen auch nicht den Anschein erwecken. Wenn der Staatssekretär </p>
+                  <p>mitteilt, dass der B[oykott] beschlossen wurde und verfügt, die österreichische Regierung kann die Tragweite dieses Beschlusses nicht ermessen, sie macht aber das </p>
+                  <p>Publikum aufmerksam und stellt fest, dass diese Bewegung, soweit sie den österreichischen Gesetzen und Dienstvorschriften widerspricht, von der Regierung nicht gebilligt </p>
+                  <p>werden kann.</p>
+                  <p>Reisch: </p>
+                  <p>[Man könnte sagen]: Wir sind nicht in der Lage, die Sendungen nach Ungarn unter diesen Verhältnissen zu übernehmen und lehnen die Annahme ab.</p>
+                  <p>Eldersch: </p>
+                  <p>Wenn das Schwierigkeiten macht, und eine Missbilligung -.</p>
+                  <p>Renner: </p>
+                  <p>Das Publikum soll aufmerksam gemacht werden, dass [ein] internationaler Beschluss vorliegt, [der] sich der Ingerenz der österreichischen Regierung entzieht. </p>
+                  <p>Für diesen Fall läge v[is] m[aior] vor und die Regierung müsste Ersatzforderungen ablehnen. Am letzten Tag [vor dem Ausbruch des Streiks] Instruktion, solche Sendungen sind nicht anzunehmen.</p>
+                  <p>Deutsch: </p>
+                  <p>Wir sollen das Publikum davor warnen, Sendungen aufzugeben, weil wir einer höheren Gewalt gegenüber stehen und daher keinen Schaden[ersatz] leisten können.</p>
+                  <p>Renner: </p>
+                  <p>[Man sollte] morgen das Publikum auf den Beschluss aufmerksam machen. [Es sei zwar] ungewiss, ob er zur Durchführung gelangt, wenn er eintritt, stünde die Regierung vor v[is] m[aior] </p>
+                  <p>und könnte keinen Ersatz leisten. Daher [sei] die Aufgabe von Sendungen mit [einer] Gefahr verbunden. Am Tag vor dem Ausbruch würde das Staatsamt für Verkehr </p>
+                  <p>die Instruktion hinausgeben, solche Sachen nicht anzunehmen wegen der Gefahr aus der Stockung.</p>
+                  <p><pb facs="krp-0191_s01-0009"/>[Renner?/Ramek?]: Verhandlungen mit dem deutschen Reich in verschiedenen Justizbelangen.</p>
+               </div>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

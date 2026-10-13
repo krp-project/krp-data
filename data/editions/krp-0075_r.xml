@@ -1,0 +1,561 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href='http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:acdh="https://vocabs.acdh.oeaw.ac.at/schema#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xml:lang="de">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="a" type="main" n="0075">Kabinettsprotokoll Nr. 75 vom 30. Mai 1919</title>
+            <title level="m" type="main" n="01">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <title level="m" type="sub" n="">Renner II (15. März – 17. Oktober 1919)</title>
+            <meeting>
+               <placeName key="https://d-nb.info/gnd/4066009-6">Wien</placeName>
+               <orgName key="https://d-nb.info/gnd/5162749-8">Kabinettsrat</orgName>
+               <date when-iso="1919-05-30"/>
+            </meeting>
+            <editor>
+               <persName key="https://d-nb.info/gnd/122481836"
+                         role="hasCreator"
+                         xml:id="hwohnout">
+                  <forename>Helmut</forename>
+                  <surname>Wohnout</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</affiliation>
+               <idno type="ORCID">0000-0002-3864-9839</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/120789825"
+                         role="hasCreator"
+                         xml:id="tolechowski">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0003-3291-6876</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/131679384"
+                         role="hasCreator"
+                         xml:id="rlein">
+                  <forename>Richard</forename>
+                  <surname>Lein</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0002-7502-0503</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="aholzer">
+                  <forename>Anna</forename>
+                  <surname>Holzer</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0005-3560-3500</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="dsoelkner">
+                  <forename>Dominik</forename>
+                  <surname>Sölkner</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-9895-7212</idno>
+            </editor>
+            <editor>
+               <persName role="hasContributor" xml:id="ischotzko">
+                  <forename>Ina</forename>
+                  <surname>Schotzko</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-5210-3713</idno>
+            </editor>
+            <funder n="1">
+               <orgName key="https://d-nb.info/gnd/2054142-9" role="hasFunder">Österreichischer Wissenschaftsfonds FWF</orgName>
+               <idno type="project">PAT1495024</idno>
+               <title type="project">Die Protokolle des österreichischen Kabinettsrates 1919–1920</title>
+            </funder>
+            <respStmt>
+               <resp>Projektverantwortung</resp>
+               <orgName key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Projektleitung</resp>
+               <persName key="https://d-nb.info/gnd/120789825" role="hasPrincipalInvestigator">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+                  <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+                  <idno type="ORCID">0000-0003-3291-6876</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Nationaler Forschungspartner</resp>
+               <orgName key="https://d-nb.info/gnd/1123037736" role="hasEnabler">Austrian Centre for Digital Humanities</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Digitalisierung der gedruckten Quellen</resp>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>TEI-Datenmodellierung</resp>
+               <persName role="hasContributor" xml:id="tfruehwirth">
+                  <forename>Timo</forename>
+                  <surname>Frühwirth</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-3997-5193</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technische Supervision</resp>
+               <persName key="https://d-nb.info/gnd/1043833846"
+                         role="hasContributor"
+                         xml:id="pandorfer">
+                  <forename>Peter</forename>
+                  <surname>Andorfer</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-9575-9372</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technisches Consulting und Vorbereitung der Druckausgabe</resp>
+               <persName key="https://d-nb.info/gnd/13281899X"
+                         role="hasContributor"
+                         xml:id="skurz">
+                  <forename>Stephan</forename>
+                  <surname>Kurz</surname>
+                  <affiliation key="https://d-nb.info/gnd/1202798799">Institut für die Erforschung der Habsburgermonarchie und des Balkanraumes</affiliation>
+                  <idno type="ORCID">0000-0003-2546-2570</idno>
+               </persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher key="https://d-nb.info/gnd/1001454-8">Österreichische Akademie der Wissenschaften</publisher>
+            <date when="2028"/>
+            <availability status="free">
+               <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">Lizenziert unter CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/deed.de)</licence>
+            </availability>
+            <idno type="ISBN_Print"/>
+            <idno type="ISBN_Part_epub"/>
+            <idno type="ISBN_Digital"/>
+            <idno type="DOI"/>
+            <idno type="DOI_zenodo"/>
+            <idno type="ebook_ID"/>
+         </publicationStmt>
+         <seriesStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="m" type="main">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <respStmt>
+               <resp>Bearbeitung und Herausgeberschaft</resp>
+               <orgName key="https://d-nb.info/gnd/2024703-5">Universität Wien</orgName>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+         </seriesStmt>
+         <notesStmt>
+            <note>Diese TEI-XML-Datei ist Grundlage für eine Druckausgabe der Edition.</note>
+            <relatedItem>
+               <biblStruct>
+                  <monogr>
+                     <imprint>
+                        <pubPlace key="https://d-nb.info/gnd/4066009-6">Wien</pubPlace>
+                        <publisher key="https://d-nb.info/gnd/2068748-5">Verlag der Österreichischen Akademie der Wissenschaften</publisher>
+                        <date when="2029"/>
+                     </imprint>
+                     <extent/>
+                  </monogr>
+                  <note>
+              <idno/>
+              <ptr/>
+            </note>
+                  <citedRange/>
+               </biblStruct>
+            </relatedItem>
+         </notesStmt>
+         <sourceDesc>
+            <bibl>Quellbestand: AT-OeStA/AdR MRang MR 1Rep KRP Kabinettsratsprotokolle, 1918-1920 (Teilbestand)<ref target="https://www.archivinformationssystem.at/detail.aspx?id=5465">https://www.archivinformationssystem.at/detail.aspx?id=5465</ref>
+            </bibl>
+            <msDesc>
+               <msIdentifier>
+                  <institution key="https://d-nb.info/gnd/37748-X" role="hasOwner">AT-OeStA Österreichisches Staatsarchiv (Archiv (ÖStA))</institution>
+                  <repository key="https://d-nb.info/gnd/1601181-8">AT-OeStA/AdR Archiv der Republik, 1918- (Abteilung)</repository>
+                  <collection>AT-OeStA/AdR MRang MR 1Rep Ministerrat 1. Republik, 1918 - 1938 (Bestand)</collection>
+                  <idno>AT-OeStA_AdR-MRang-MR-1.-Rep.-KRP-075</idno>
+               </msIdentifier>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <abstract>
+            <p>
+          <!--to be generated-->
+        </p>
+         </abstract>
+      </profileDesc>
+      <encodingDesc>
+         <styleDefDecl scheme="css"/>
+         <tagsDecl>
+            <rendition xml:id="b" scheme="css">font-weight:bold;</rendition>
+            <rendition xml:id="su" scheme="css">vertical-align:super;font-size:.7em;</rendition>
+            <rendition xml:id="s" scheme="css">text-decoration:line-through;</rendition>
+            <rendition xml:id="u" scheme="css">text-decoration:underline;</rendition>
+            <rendition xml:id="ow" scheme="css">text-decoration:line-through;text-decoration-style:double;</rendition>
+            <rendition xml:id="r" scheme="css">display:block;text-align:right;</rendition>
+            <rendition xml:id="letterspaced" scheme="css">letter-spacing:0.15em;</rendition>
+            <rendition xml:id="i" scheme="css">font-style:italic;</rendition>
+         </tagsDecl>
+         <editorialDecl>
+            <hyphenation>
+               <p>
+            <!--to be added-->
+          </p>
+            </hyphenation>
+            <correction>
+               <p>
+            <!--to be added-->
+          </p>
+            </correction>
+            <normalization>
+               <p>
+            <!--to be added-->
+          </p>
+            </normalization>
+            <punctuation>
+               <p>
+            <!--to be added-->
+          </p>
+            </punctuation>
+            <stdVals>
+               <p>
+            <!--to be added-->
+          </p>
+            </stdVals>
+            <p>
+          <!--to be added-->
+        </p>
+         </editorialDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#tfruehwirth" when-iso="2026-10-13">TEIGarage output upconverted with upconvert.xsl</change>
+         <change who="#tfruehwirth" when-iso="2026-10-13">TEI header populated with generate_tei_templates.py</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface/>
+   </facsimile>
+   <text>
+      <body>
+         <div xml:id="doc-krp-0075.xml">
+            <head type="dokument">
+               <title type="num">75.<note type="footnote">Das Protokoll trägt den Vermerk <hi rend="#i">Vertraulich!</hi></note>
+               </title>
+               <title type="desc">
+                  <pb facs="krp-0075_r-0001"/>[Freitag] 1919-05-30</title>
+            </head>
+            <div type="dokumentkopf">
+               <div type="vorsitz">
+                  <head>Vorsitz:</head>
+                  <p>Fink</p>
+               </div>
+               <div type="anwesend">
+                  <head>Anwesend:</head>
+                  <p>Bauer, Bratusch, Eldersch, Ellenbogen, Fink, Glöckel, Hanusch, Loewenfeld-Russ, Miklas, Paul, Resch, Tandler, Waiss, Zerdik</p>
+               </div>
+               <div type="zugezogen">
+                  <head>Zugezogen:</head>
+                  <p>Grimm, Lanzendörfer, Redinger, Wilfling</p>
+               </div>
+               <div type="schriftfuehrer">
+                  <head>Schriftführer:</head>
+                  <p>unbekannt</p>
+               </div>
+               <div type="dauer">
+                  <head>Dauer:</head>
+                  <p>15.00–17.30 Uhr</p>
+               </div>
+            </div>
+            <div type="komponenten">
+               <p>Reinschrift, Beilagen, streng vertraulicher Anhang, Konzept, stenographische Mitschrift, Entwurf der Tagesordnung, diverse Zusätze</p>
+            </div>
+            <div type="beilagen">
+               <head>Beilagen:</head>
+               <list>
+                  <item><ref target="#krp-0075_top02">Zu TOP 2</ref>: <ref target="#krp-0075_b01">Entwurf des Militärpensionsgesetzes samt Erläuterungen</ref></item>
+                  <item><ref target="#krp-0075_top02">Zu TOP 2</ref>: <ref target="#krp-0075_b02">Bemerkungen zum Entwurf eines Gesetzes, mit dem die Versorgung der Personen des militärischen Berufsstandes und ihrer Hinterbliebenen mit der Versorgung der Zivilstaatsangestellten und ihrer Hinterbliebenen in Übereinstimmung gebracht wird</ref></item>
+                  <item><ref target="#krp-0075_top03">Zu TOP 3</ref>: <ref target="#krp-0075_b03">Gesetzesentwurfs der Provisorischen Steiermärkischen Landesregierung über das Diensteinkommen der Volks- und Bürgerschullehrer, ihre Ruhestandsversetzung und die Hinterbliebenenversorgung</ref></item>
+                  <item><ref target="#krp-0075_top04">Zu TOP 4</ref>: <ref target="#krp-0075_b04">Auszug des Staatsamtes für Inneres und Unterricht Zl. 17.604 für den Vortrag im Kabinettsrat über den Gesetzesbeschluss der Provisorischen Steiermärkischen Landesversammlung über die Einhebung von Gemeindeabgaben für Theater-, Zirkus- und Lichtbildvorstellungen</ref></item>
+                  <item><ref target="#krp-0075_top05">Zu TOP 5</ref>: <ref target="#krp-0075_b05">Bericht des Sektionschef Dr. Grimm über die Frage der Auszahlung staatlicher Pensionen</ref></item>
+                  <item><ref target="#krp-0075_top05">Zu TOP 5</ref>: <ref target="#krp-0075_b06">Stellungnahme des Hofrates Ganglbauer zu Pensionsfragen in der Sitzung der von der Gesandtenkonferenz zur Regelung von Staatsbedienstetenfragen eingesetzten zwischenstaatlichen Kommission</ref></item>
+                  <item><ref target="#krp-0075_top06">Zu TOP 6</ref>: <ref target="#krp-0075_b07">Antrag des Staatsamtes der Finanzen auf Errichtung von Betrieben für die Virginierzigarren-Erzeugung</ref></item>
+                  <item><ref target="#krp-0075_top07">Zu TOP 7</ref>: <ref target="#krp-0075_b08">Vollzugsanweisung des Staatsamtes für soziale Verwaltung für den Beginn der Wirksamkeit, Behörden und Verfahren des Invalidenentschädigungsgesetzes</ref></item>
+                  <item><ref target="#krp-0075_top08">Zu TOP 8</ref>: <ref target="#krp-0075_b09">Antrag des Staatsamtes für Äußeres für die Bestallungsdiplome der deutschösterreichischen Konsularvertreter im Ausland</ref></item>
+                  <item><ref target="#krp-0075_top09">Zu TOP 9</ref>: <ref target="#krp-0075_b10">Antrag des Unterstaatssekretärs für Kultus Zl. 9917/Abt. 1 auf Aufnahme eines Hypothekardarlehens durch das Stift St. Peter in Salzburg</ref></item>
+                  <item>Zum streng vertraulichen Anhang:</item>
+                  <item><ref target="#krp-0075_b11">Mitteilung des Legationsrates Seidler über die Forderung des Oberst Lenoble der französischen Mission nach einer dringenden Munitionslieferung an die tschechoslowakische Regierung</ref></item>
+               </list>
+            </div>
+            <div type="protokoll">
+               <pb facs="krp-0075_r-0002"/>
+               <div type="top" xml:id="krp-0075_top01">
+                  <head>
+                     <label>
+                        <num n="1">1.</num>
+                        <seg>Vollzugsanweisung, betreffend die Zollbehandlung des Warenverkehrs mit der tschechoslowakischen Republik, Polen und Jugoslawien.</seg>
+                     </label>
+                  </head>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> erbittet und erhält vom Kabinettsrate die Ermächtigung, die vom Staatsamte für Finanzen im Einvernehmen mit den Staatsämtern für Handel und Gewerbe, Industrie und Bauten sowie für Land- und Forstwirtschaft erlassene Vollzugsanweisung vom 22. Mai 1919, betreffend die Zollbehandlung des Warenverkehres mit der tschechoslowakischen Republik, Polen und Jugoslawien, gemäß § 4 des Gesetzes vom 6. Mai 1919, StGBl. Nr. 277 , der Nationalversammlung zur Beschlussfassung vorlegen zu dürfen.</p>
+                  <p><pb facs="krp-0075_r-0003"/></p>
+               </div>
+               <div type="top" xml:id="krp-0075_top02">
+                  <head>
+                     <label>
+                        <num n="2">2.</num>
+                        <seg>Militärpensionsgesetz.</seg>
+                     </label>
+                  </head>
+                  <p>Unterstaatssekretär Dr. <hi rend="#letterspaced">Waiss</hi> erbittet vom Kabinettsrate die Ermächtigung, in der Nationalversammlung einen „Gesetzentwurf, mit dem die Versorgung der Personen des militärischen Berufsstandes und ihrer Hinterbliebenen mit der Versorgung der Zivilstaatsbediensteten und ihrer Hinterbliebenen in Übereinstimmung gebracht wird (Militär-Pensionsgesetz)“ einbringen zu dürfen. Zu den einzelnen Bestimmungen des Gesetzentwurfes gibt sodann Militäroberintendant <hi rend="#letterspaced">Lanzendörfer</hi> eingehende Aufklärungen, woraus Sektionschef Dr. <hi rend="#letterspaced">Grimm</hi> dagegen Stellung nimmt, dass der Entwurf vielfach eine Gleichstellung der Militär- und Zivilpensionisten, u. zw. zu Ungunsten der Letzteren, vermissen lasse. Da der Kabinettsrat sich bereits wiederholt – auch der Staatssekretär für Heer[es]wesen – zu der Auffassung bekannt habe, dass in allen Fragen der Gebührenbehandlung stets eine Gleichstellung zwischen Militärpersonen und Zivilangestellten anzustreben sei, müsse die Finanzverwaltung dagegen Einspruch erheben, dass dieser Forderung im vorliegenden Falle nicht Rechnung getragen erscheine, zumal eine derartige Ungleichmäßigkeit naturgemäß wieder auf Seiten der Zivil<pb facs="krp-0075_r-0004"/>staatsangestellten neuerliche Forderungen auslösen würde. Demgemäß beantrage er im § 8 des Entwurfes folgende Ergänzung als 2. Abs. anzufügen: „Weiters darf die Summe der Pension und der den Militärpensionisten nach den jeweils bestehenden Vorschriften zukommenden Teuerungsaushilfe bei den in einer Rangsklasse eingereihten Militärgagisten den Gesamtbetrag der Pension und der Teuerungsaushilfe eines Zivilstaatsbeamten nicht übersteigen, der die gleiche Gesamtdienstzeit und die gleiche Dienstzeit in der Rangsklasse bezw. mit den Bezügen jener Rangsklasse ausweist, die der Rangsklasse des Militärgagisten gleichkommt. Um den allfälligen Mehrbetrag ist die militärische Teuerungsaushilfe zu kürzen. Die Durchführung des gleichen Grundsatzes bei den übrigen Militärpersonen bleibt der Regelung durch Vollzugsanweisung vorbehalten.“</p>
+                  <p>Nachdem auf die hiegegen vorgebrachten Einwendungen des Referenten des Staatsamtes für Heer[es]wesen vom Ministerialrate Dr. <hi rend="#letterspaced">Redinger</hi> und Sektionsrate Dr. <hi rend="#letterspaced">Wilfling</hi> erwidert worden war und noch der <hi rend="#letterspaced">Vorsitzende</hi>, ferner Unterstaatssekretär Dr. <hi rend="#letterspaced">Waiss</hi> und Staatssekretär <hi rend="#letterspaced">Paul</hi> zum Gegenstande gesprochen hatten, veranlasst der Vorsitzende über den Zusatzantrag des Staatsamtes <pb facs="krp-0075_r-0005"/>für Finanzen eine Probeabstimmung, wobei sich sämtliche Kabinettsmitglieder mit Ausnahme des Unterstaatssekretärs Dr. <hi rend="#letterspaced">Waiss</hi> für die Aufnahme der beantragten Ergänzung des § 8 aussprechen.</p>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> entscheidet sohin im Sinne des Antrages des Sektionschefs Dr. Grimm.</p>
+                  <p>Der Fassung der übrigen Bestimmungen des Gesetzentwurfes stimmt der Kabinettsrat zu und erteilt dem Unterstaatssekretär Dr. Waiss die erbetene Ermächtigung zur Einbringung der Gesetzesvorlage.</p>
+               </div>
+               <div type="top" xml:id="krp-0075_top03">
+                  <head>
+                     <label>
+                        <num n="3">3.</num>
+                        <seg>Gesetzesbeschluss der Provisorischen Landesversammlung in Steiermark, betreffend das Diensteinkommen der Volks- und Bürgerschullehrerschaft, ihre Versetzung in den Ruhestand und die Versorgung ihrer Hinterbliebenen.</seg>
+                     </label>
+                  </head>
+                  <p>Unterstaatssekretär <hi rend="#letterspaced">G1öcke1</hi> teilt mit, dass die Provisorische Landesversammlung in Steiermark am 29. Apri1 d. J. den Entwurf eines Gesetzes, betreffend das Diensteinkommen der Volks- und Bürgerschullehrerschaft, ihre Versetzung in den Ruhestand und die Versorgung ihrer Hinterbliebenen, beschlossen habe. Der sprechende Unterstaatssekretär stellt den Antrag, ihn zu ermächtigen, von der Erhebung einer Vorstellung gegen diesen Gesetzesbeschluss absehen, gleichzeitig jedoch die Landesregierung einladen zu dürfen, einige formelle textliche Ände<pb facs="krp-0075_r-0006"/>rungen beim Landesrat zwecks Weiterleitung an die Landesversammlung in Anregung zu bringen, worauf das dementsprechend geänderte Gesetz zur Beisetzung der Gegenzeichnung des Staatssekretärs für Inneres und Unterricht wieder vorzulegen wäre.</p>
+                  <p>Der Kabinettsrat erteilt die erbetene Ermächtigung.</p>
+               </div>
+               <div type="top" xml:id="krp-0075_top04">
+                  <head>
+                     <label>
+                        <num n="4">4.</num>
+                        <seg>Gesetzesbeschluss der Provisorischen Landesversammlung in Steiermark, betreffend die Einhebung von Gemeindeabgaben für Theater-, Zirkus- und Lichtbildvorstellungen.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Eldersch</hi> teilt mit, dass die Provisorischen Landesversammlung in Steiermark ein Gesetz, betreffend die Einhebung von Gemeindeabgaben für Theater-, Zirkus- und Lichtbildvorstellungen, beschlossen habe; während bisher zur Neueinführung von Gemeindeabgaben der erwähnten Art in jedem Falle ein vom Kaiser genehmigter Landtagsbeschluss erforderlich war, soll nunmehr die Bewilligung zur Einhebung solcher Abgaben dem Landesrate zustehen. Gegen die einzelnen Bestimmungen des Gesetzes sei nichts einzuwenden.</p>
+                  <p>Der sprechende Staatssekretär beabsichtigt daher im Einvernehmen mit dem Staatsamte für Finanzen gegen diesen Gesetzesbeschluss keine Vorstellung zu erheben und der sofortigen Kundmachung des <pb facs="krp-0075_r-0007"/>Landesgesetzes zuzustimmen.</p>
+                  <p>Der Kabinettsrat pflichtet diesem Antrage bei.</p>
+               </div>
+               <div type="top" xml:id="krp-0075_top05">
+                  <head>
+                     <label>
+                        <num n="5">5.</num>
+                        <seg>Auszahlung der staatlichen Pensionen.</seg>
+                     </label>
+                  </head>
+                  <p>Sektionschef Dr. <hi rend="#letterspaced">Grimm</hi> erstattet in der Frage der Auszahlung der staatlichen Pensionen den diesem Protokolle als Beilage angeschlossenen Bericht.</p>
+                  <p>Der Kabinettsrat nimmt diese Ausführungen zustimmend zur Kenntnis.</p>
+               </div>
+               <div type="top" xml:id="krp-0075_top06">
+                  <head>
+                     <label>
+                        <num n="6">6.</num>
+                        <seg>Errichtung von Betrieben für die Virginierzigarren-Erzeugung.</seg>
+                     </label>
+                  </head>
+                  <p>Sektionschef Dr. Grimm führt aus, dass die Erweiterung der Virginierzigarren-Erzeugung infolge Steigerung des Bedarfes an dieser Zigarrensorte aus staatsfinanziellen Gründen dringend geboten erscheine. Angesichts der Unmöglichkeit, für die provisorische Unterbringung eines Virginiererzeugungsbetriebes ein entsprechendes Mietobjekt ausfindig zu machen, habe sich die Monopolsverwaltung mit der Österreichischen Immobiliarbank AG behufs Ausführung eines Neubaues in Verbindung gesetzt und bereits ein entsprechendes Anbot erhalten. Hienach würde der Bau, welcher inkl. der Kosten für die Erwerbung des Grundes laut beiläufiger Schätzung mit rund 18,2 Mil<pb facs="krp-0075_r-0008"/>lionen K veranschlagt ist und in Stein an der Donau aufgeführt werden soll, auf Rechnung des Bankinstitutes hergestellt und sodann der Regieverwaltung unkündbar in Miete gegeben werden.</p>
+                  <p>Der Mietzins für die auf eine Frist von 40 Jahren in Aussicht genommene Bestandnahme werde derart berechnet werden, dass der Bank behufs Tilgung des aufzunehmenden Anlagekapitales ein lastenfreier Betrag von 6,975 % des verwendeten Kapitales verbleibt. Zur Deckung der Regieauslagen werde lediglich für die ersten 15 Jahre ¼ % des jeweils noch nicht amortisierten Baukapitals in Rechnung gestellt werden. In dem unter Mitwirkung der niederösterreichischen Finanzprokuratur abzuschließenden Mietvertrage werde sich die Finanzverwaltung das Recht vorbehalten, die Realität zu jedem beliebigen Zeitpunkte um den Betrag des noch nicht amortisierten Kapitales zu erwerben; des Weiteren hat die Bank auch das Zugeständnis gemacht, dass sich der Staat innerhalb eines Zeitraumes von sechs Monaten nach Abschluss des Mietvertrages noch entschließen könne, die Bauaktion selbständig zu finanzieren.</p>
+                  <p>Der sprechende Vertreter des Staatsamtes für Finanzen stellte abschließend den Antrag, der Kabinettsrat wolle der <pb facs="krp-0075_r-0009"/>Durchführung der von der Finanzverwaltung in Aussicht genommenen Bauaktion zustimmen.</p>
+                  <p>Staatssekretär Ing. <hi rend="#letterspaced">Zerdik</hi> ersucht, in das mit der Immobiliarbank abzuschließende Übereinkommen noch Bestimmungen des Inhalts aufzunehmen, das dem Ärar als vorläufigen Inbestandnehmer und zukünftigen Besitzer eine wirksame Einflussnahme auf die sachgemäße Bauausführung und auf die möglichste Einschränkung des von ihm zu verzinsenden und zu tilgenden Baukapitals gewahrt bleibt. Dem Ärar werde sonach eine überwachende und entscheidende Mitwirkung bei den stets im Wege der (eventuell beschränkten) Konkurrenz erfolgenden Vergebungen, bei der Überwachung der Bauausführung, der Überprüfung der Rechnungen und schließlich die Kollaudierung des fertigen Baues vorzubehalten sein. Zu diesem Zwecke werde eine ständige örtliche Bauaufsicht (etwa durch ein technisches sachverständiges Organ der Tabakregie) und eventuell eine periodische Baukontrolle und schließliche Kollaudierung, etwa durch ein Organ des Staatsamtes für Handel und Gewerbe, Industrie und Bauten, erforderlich, sein. In gleicher Weise müsste der staatlichen Bauverwaltung ein entscheidender Einfluss auf die Wahl und <pb facs="krp-0075_r-0010"/>Erwerbungsmodalitäten des Bauplatzes, weiters die Prüfung und Genehmigung des Projektes, sowie die Art seiner Beschaffung gewahrt bleiben. Wegen der einzelnen in Betracht kommenden technischen Momente werde schließlich auch der Abschluss des Transaktionsvertrages mit der Immobiliarbank im Einvernehmen mit dem Staatsamt für Handel und Gewerbe, Industrie und Bauten erfolgen müssen.</p>
+                  <p>Der Kabinettsrat stimmt dem Antrage des Sektionschefs Dr. Grimm sowie dem Zusatzantrage des Staatssekretärs Ing. Zerdik zu.</p>
+               </div>
+               <div type="top" xml:id="krp-0075_top07">
+                  <head>
+                     <label>
+                        <num n="7">7.</num>
+                        <seg>Vollzugsanweisung, betreffend den Beginn der Wirksamkeit, Behörden und Verfahren des Invalidenentschädigungsgesetzes.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Hanusch</hi> erbittet und erhält vom Kabinettsrate die Ermächtigung zur Erlassung einer Vollzugsanweisung des Staatsamtes für soziale Verwaltung im Einvernehmen mit den beteiligten Staatsämtern, betreffend den Beginn der Wirksamkeit, Behörden und Verfahren des Invalidenentschädigungsgesetzes.</p>
+               </div>
+               <div type="top" xml:id="krp-0075_top08">
+                  <head>
+                     <label>
+                        <num n="8">8.</num>
+                        <seg>Bestallungsdiplome der deutschösterreichischen Konsularvertreter im Auslande.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Bauer</hi> führt aus, dass ein großer Teil der ehemaligen österreichisch-ungarischen Vertretungsbehörden im Laufe <pb facs="krp-0075_r-0011"/>der Monate Februar bis April aufgelassen werden musste, da die Nationalstaaten, die für deren Belassung erforderliche Valuta nicht beistellten, somit die Erhaltung dieser Ämter dem deutschösterreichischen Fiskus zur Last gefallen wäre. Andererseits habe sich im Hinblicke auf den Schutz der Interessen der zahlreichen im Deutschen Reiche wohnhaften deutschösterreichischen Staatsbürger die unabweisliche und dringende Notwendigkeit ergeben, in der Mehrzahl der Städte im Deutschen Reiche, wo österreichisch-ungarische Konsularämter bestanden, unverzüglich deutschösterreichische Konsularämter zu errichten. Dieselben wurden auch bereits am 1. Mai d. J. aktiviert. Der bisherigen von allen Staaten beobachteten Gepflogenheit entsprechend empfehle es sich nunmehr, die neuernannten deutschösterreichischen Konsularvertreter mit Bestallungsdiplomen zu versehen und auf letztere das Exequatur der Regierung, bei welcher dieselben beglaubigt sind, einzuholen.</p>
+                  <p>Der sprechende Staatssekretär erbitte sich demgemäß die Zustimmung des Kabinettsrates, dem Präsidenten der Nationalversammlung den Entwurf eines solchen Bestallungsdiplomes (vgl. Protokollsbeilage 2) zur Geneh<pb facs="krp-0075_r-0012"/>migung unterbreiten zu dürfen.</p>
+                  <p>Der Kabinettsrat erteilt die erbetene Ermächtigung.</p>
+               </div>
+               <div type="top" xml:id="krp-0075_top09">
+                  <head>
+                     <label>
+                        <num n="9">9.</num>
+                        <seg>Aufnahme eines Hypothekardarlehens durch das Stift St. Peter in Salzburg.</seg>
+                     </label>
+                  </head>
+                  <p>Unterstaatssekretär <hi rend="#letterspaced">Miklas</hi> führt aus, dass das Stift St. Peter in Salzburg im Laufe der Jahre 1914 bis 1918 mit Genehmigung der staatlichen und kirchlichen Behörden österreichische Kriegsanleihen und deutschösterreichische Staatsanleihe im Nominalwerte von zusammen 3.110.000 K gezeichnet und zu diesem Zwecke bei einem Salzburger Bankhause eine Lombardschuld im Betrage von 2.873.334 K 93 h aufgenommen habe.</p>
+                  <p>Diese Schuld soll nunmehr in ein Hypothekardarlehen im Nominalbetrage der gezeichneten Anleihen, d. i. im Betrage von 3.110.000 K, das die Salzburger Landeshypothekenanstalt dem Stifte zu gewähren bereit ist, konvertiert werden. Die aufzunehmende Hypothekarschuld wäre mit 4 % zu verzinsen und in 5%igen Annuitäten in 54 ½ Jahren rückzuzahlen. Zur Sicherstellung dieser Schuld soll der in der Umgebung der Stadt Salzburg gelegene stiftliche Realbesitz als Pfand bestellt werden.</p>
+                  <p>Das Hypothekardarlehen könne augenblicklich al pari beschafft werden, wes<pb facs="krp-0075_r-0013"/>halb auch infolge der niedrigeren Verzinsung der Zinsendienst für das Stift gegenüber den derzeit zu bezahlenden Lombardschuldzinsen per 143.667 K auf 124.400 K, somit um den Betrag von 19.267 K jährlich verringern würde.</p>
+                  <p>Da sonach das geplante Rechtsgeschäft für das Stift vorteilhaft erscheine, erbitte der sprechende Unterstaatssekretär – bei vorliegender Zustimmung des erzbischöflichen Ordinariates in Salzburg und in Übereinstimmung mit dem Gutachten der Landesregierung – die Ermächtigung des Kabinettsrates, im Sinne der Ministerialverordnung vom 20. Juni 1860, RGBl. Nr. 162, zur Aufnahme des vorerwähnten Darlehens im Betrage von 3.110.000 K durch das Benediktinerstift St. Peter in Salzburg bei der Salzburger Landeshypothekenanstalt sowie zur Pfandbestellung des dem Stifte gehörenden Realbesitzes in der Umgebung der Stadt Salzburg die staatsbehördliche Genehmigung erteilen zu dürfen.</p>
+                  <p>Der Kabinettsrat erteilt die erbetene Ermächtigung.</p>
+                  <p/>
+               </div>
+            </div>
+            <div type="anhaenge">
+               <p><pb facs="krp-0075_a01-0001"/>Streng vertraulicher Anhang zum Kabinettsprotokoll Nr. 75 vom 30. Mai 1919.</p>
+               <div n="1">
+                  <head>Lieferung von Munitionssorten an die tschechoslowakische Regierung.</head>
+                  <div type="a01_protokoll">
+                     <p>Staatssekretär Dr. <hi rend="#letterspaced">Bauer</hi> teilt mit, dass Oberst Lenoble von der französischen Mission im Staatsamt für Äußeres erschienen sei und dringend die Lieferung folgender Munitionssorten an die tschechoslowakische Regierung verlangt habe: 15.000 Granaten und 15.000 Schrapnells zu 8 cm;10.000 Granaten und 10.000 Schrapnells zu 10 cm; 5.000 Granaten und 5.000 Schrapnells zu 15 cm.</p>
+                     <p>Dieses Verlangen sei auch heute vom französischen Gesandten Alizé beim sprechenden Staatssekretär mündlich erneuert worden. Redner halte die Auslieferung von Waffen an die Tschechoslowaken im gegenwärtigen Augenblicke, in dem man wohl mit dem Verluste Deutschböhmens und Sudetenlands rechnen müsse, für äußerst bedenklich. Er schlage daher vor, ihn zu ermächtigen, das Ansuchen abzulehnen, zumal die Entente auch uns in den Kärntner Kämpfen keine Unterstützung angedeihen lasse. Es sei <pb facs="krp-0075_a01-0002"/>selbstverständlich möglich, dass uns die Entente so wie in vielen anderen Dingen (Bilderraub), auch hier zum Nachgeben zwingen werde, und zwar voraussichtlich auf dem Wege, dass sie die Forderung erheben werde, die Munition einer interalliierten Kommission auszufolgen. Für diesen Fall würde der sprechende Staatssekretär, die Ermächtigung des Kabinettsrates vorausgesetzt, unter Hinweis darauf, dass wir die diesbezüglichen Bedingungen des Waffenstillstandsübereinkommens bereits erfüllt hätten, Verwahrung einlegen und nur unter dem Drucke der Zwangslage dem Diktate der Entente Folge geben. Eventuell angebotene Kompensationen würden nicht zurückzuweisen sein, eine Forderung nach solchen aber wäre nicht zu erheben. </p>
+                     <p>Der Kabinettsrat billigt die vom Staatssekretär Dr. Bauer in dieser Frage in Aussicht genommene Stellungnahme.</p>
+                     <p>Auf eine Anfrage des Staatssekretärs Dr. <hi rend="#letterspaced">Loewenfeld-Russ</hi> über das regierungsseitig zu beobachtende Verhalten gegenüber der ungarischen Räterepublik erwidert Staatssekretär Dr. <hi rend="#letterspaced">Bauer</hi>, dass sich das Staatsamt für Äußeres in den kriegerischen Verwicklungen der Räteregierung <pb facs="krp-0075_a01-0003"/>neutral verhalte. Was das Verhältnis zur Arader Gegenregierung anbelange, so erkenne das Außenamt augenblicklich diejenige Regierung in Ungarn an, welche im faktischen Besitze der Gewalt im Lande sei.</p>
+                     <p/>
+                  </div>
+               </div>
+            </div>
+            <div type="stenogramme">
+               <div n="1">
+                  <head>[KBR 75, 30. Mai 1919, Stenogramm A]</head>
+                  <p><pb facs="krp-0075_s01-0001"/>Nr. 75, 30. /5., 3¼.</p>
+                  <p>[<hi rend="#i">Rechtes Obereck</hi>:] [Entschuldigt]: Schumpeter, Stöckler, Deutsch, Pflügl.</p>
+                  <p>1. [Fink]: Vollzugsanweisung Nationalversammlung. Zur Kenntnis genommen.</p>
+                  <p>2. [Zugezogen]: Wilfling, Ministerialrat Redinger, Oberintentant Lanzendörfer.</p>
+                  <p>[Lanzendörfer]: Militärversorgungsgesetz. Bespricht die Details des Entwurfes.</p>
+                  <p>Grimm: Die Darstellung des Vorredners verhüllt manches Wichtige. Die Staatsbeamten werden mit den gleichen Forderungen kommen. Auch der frühere Kabinettsrat hat sich stets auf die Grundlage gestellt </p>
+                  <p>der Gleichstellung von Zivil- und Militär[pensionisten]. Deutsch selbst einverstanden mit der Gleichstellung. Bittet, nicht dem Drängen der Militärverwaltung [nachzugeben und] jetzt ein Gesetz </p>
+                  <p>zu beschließen, das eine Ungleichheit beinhaltet zwischen Militär- und Zivil[pensionisten], die wieder eine spätere Neubehandlung notwendig erweisen würde.</p>
+                  <p>Vorschlag, die Gesamtsumme der normalmäßigen Pension und der Teuerungszulage. In dieser Beziehung soll die Gleichstellung erzielt werden (eventuell Kürzung </p>
+                  <p>der Teuerungszulage).</p>
+                  <p>Redinger: Zusatz zu § 8 des Gesetzentwurfes: Weiters darf die Summe der Pension ....</p>
+                  <p>Lanzendörfer: Sucht Grimm zu entkräften.</p>
+                  <p>Wilfling: -.</p>
+                  <p>Waiss: -.</p>
+                  <p>Fink: -.</p>
+                  <p>Paul: -.</p>
+                  <p>Fink: Probeabstimmung - einstimmig.</p>
+                  <p>Paul: Deput[ation] bei Grimm, dass die Sache jetzt zur Beratung kommt. Das ist schon der dritte Fall.</p>
+                  <p>Waiss: Seit Tagen werden wir bestürmt. Zur Beruhigung der Dep[utation] vor Präsidenten und Vizekanzler.</p>
+                  <p>Grimm: Zu § 1 betreffend deutsch-österreichische Staatsbürgerschaft hat sich das Staatsamt des Inneren eine kleine Änderung vorbehalten.</p>
+                  <p>Gegenstand erledigt.</p>
+                  <p>3. Glöckel: Diensteinkommen. Angenommen.</p>
+                  <p>4. Eldersch: -. Genehmigt.</p>
+                  <p><pb facs="krp-0075_s01-0002"/>5. Grimm: Staatliche Pensionen. Erläutert das Material. Infolge der Postverhältnisse und aus anderen Gründen sind diese Karten vielfach in Verlust geraten. Wiederholt Klage eingelaufen. </p>
+                  <p>Das Staatsamt für Finanzen [hat sich] zunächst bereit erklärt, aus deutsch-österreichischen Mitteln vorschussweise diese Pensionsparteien, die in Vorschreibung stehen und deren </p>
+                  <p>Karten noch nicht eingelangt sind, weiter zu zahlen.</p>
+                  <p>Wir haben beschlossen, dass wir vorbehaltlich der künftigen Aufteilung alle Personen, bezüglich deren die Pensionsbezüge nicht übernommen werden ....</p>
+                  <p>Zur Kenntnis genommen.</p>
+                  <p>6. Grimm: Virginiazigarren.</p>
+                  <p>Zerdik: Bespricht die ziffernmäßigen Belange. Einige Ergänzungen des Vertrages mit der Immobiliarbank, dass dem Ärar </p>
+                  <p>eine wirksame Überwachung der Ausführung -.</p>
+                  <p>Angenommen.</p>
+                  <p>7. Bauer: Starke Einbuße an Prestige, dass Verbindung mit Russland möglich ...</p>
+                  <p>Die Auslieferung von Waffen ist eine sehr bedenkliche Sache, Friedensvertrag (Deutschböhmen).</p>
+                  <p>Der Redner schlägt vor, den Vorschlag abzulehnen und zu sagen, dass wir zu unserem Bedauern nicht in der Lage sind, zumal die Sicherung von Klagenfurt </p>
+                  <p>durch die Entente nicht [gewährleistet] scheint. Den Tschechen nicht, aber der Entente vielleicht: das hätte ein anderes Gesicht.</p>
+                  <p>Bittet also um Genehmigung: Jedes Verlangen um Auslieferung an die Tschechen glatt ablehnen, </p>
+                  <p>an die Entente aber auch Verwahrung einlegen, weil nach dem Waffenstillstandsvertrag </p>
+                  <p>nicht notwendig. Aber wenn Forderung, dann zurückweichen.</p>
+                  <p>Ellenbogen: Welche Wirkungen hätte es, wenn man es der Entente überlassen würde, sich in unserem Weigerungsfall die Sachen selbst zu nehmen?</p>
+                  <p>Zerdik: Vertrag mit Polen? Stimmt Bauer zu?</p>
+                  <p>Loewenfeld: Wie sollen wir uns verhalten gegenüber der ungarischen Räterepublik?</p>
+                  <p>Bauer: Was Polen anbelangt, so haben sie unseren Besitz im Naphtha-Gebiet sequestriert (feindlicher Akt); auch etw[aigen] polnischen Forderungen </p>
+                  <p>gegenüber wäre unter Hinweis auf diesen feindlichen Akt -.</p>
+                  <p>Was die ungarische Frage [anbelangt]: wir haben uns auf den Standpunkt gestellt, dass wir uns neutral verhalten. Etwas anderes [ist] die Nebenregierung. Da anerkennen wir nur diejenige Regierung, welche die </p>
+                  <p>faktische Gewalt hat.</p>
+                  <p>Eine Truppenwerbung in Wien kann man nicht dulden.</p>
+                  <p>8. Hanusch: Vollzugsanweisung. Genehmigt.</p>
+                  <p>9. Loewenfeld: Kompromiss mit den Ländern wegen Einreisebewilligung. Einige Länder haben auch aufgehoben ihre früheren Verfügungen. Hingegen sind zwei Verordnungen </p>
+                  <p>aus Tirol und - eingelangt. Frage, ist der Vizekanzler der Meinung, wer Stellung zu nehmen hat zu dieser Verordnung? </p>
+                  <p><pb facs="krp-0075_s01-0003"/>Die Verfügung entspricht nicht dem Kompromiss.</p>
+                  <p>Fink: Meint, dass schon das Staatsamt für Volksernährung dagegen Stellung nehmen müsste. </p>
+                  <p>Halte dafür, dass ein energischer Mensch hingeschickt wird. Mündlich lässt sich die Sache leichter machen.</p>
+                  <p>Loewenfeld: Salzburg hat eine spezielle Verordnung erlassen ohne uns zu verständigen. Das amtsärztliche Zeugnis (Wien) muss von dortigen Amtsärzten überprüft werden. Das geht nicht.</p>
+                  <p>Fink: Jemand schicken und wenn in Tirol in Ordnung, dann weiterfahren nach Vorarlberg.</p>
+                  <p>Ellenbogen: Schweizer Fall. Angenommen.</p>
+                  <p>10. Bauer: Deutsch-österreichische Konsulate. Genehmigt.</p>
+                  <p>11. Miklas: Stift St. Peter.</p>
+                  <p>Angenommen.</p>
+                  <p>½ 6 h.</p>
+                  <p>Kabinettsrat Dienstag, ab Früh bereit; telefonische Einladung.</p>
+                  <p>Pers[onal]-Sitzung Montag Abend 7 h 9 h 8 h.</p>
+                  <p>Nachtsitzung.</p>
+                  <p/>
+               </div>
+               <div n="2">
+                  <head>[KBR 75, 30. Mai 1919, Stenogramm B]</head>
+                  <p><pb facs="krp-0075_s02-0001"/>75., 30. /5.</p>
+                  <p>1. [Fink]: Vollzugsanweisung geht an die Nationalversammlung.</p>
+                  <p>2. Militärpensionistengesetz.</p>
+                  <p>[Lanzendörfer]: Das Staatsamt für Finanzen will als Pensionsgrundlage nicht die letzten Aktiv-Bezüge der Militärpersonen, sondern die Aktiv-Bezüge des gleichrangigen Staatsangestellten </p>
+                  <p>nehmen.</p>
+                  <p>Grimm: Es darf nur eine völlige Gleichstellung der Zivil- und Militär[pensionisten] geben. </p>
+                  <p>In diese eine Kategorie von Staatsangestellten wären eben schon gelegentlich des Militärpensionsgesetzes die Militärs </p>
+                  <p>einzureihen.</p>
+                  <p>Das Nächstrichtigste wäre, dass man die Versorgungsgenüsse abgesehen von den Teuerungszulagen vollkommen gleichstellt jenen der Staatsbeamten. </p>
+                  <p>Der Kabinettsrat soll jetzt nicht ein Gesetz beschließen, welches nicht [auf] eine vollkommene Gleichstellung zielt.</p>
+                  <p>Vorschlag: Gleichstellung der Gesamtsumme der normalmäßigen Pension und der Teuerungszulage mit den Zivilangestellten. </p>
+                  <p>Nicht maßgebend kann hierbei aber die Gend[armerie]-Zulage sein. Dann ist die Gleichstellung mit den Zivilangestellten gegeben. </p>
+                  <p>Um das zu erreichen haben wir verlangt, dass ein Passus in das Gesetz aufgenommen wird - § 8.</p>
+                  <p>M[inisterialrat] Redinger: Der Zusatz würde lauten: &lt; &gt;.</p>
+                  <p>Lanzendörfer: -.</p>
+                  <p>Wilfling: -.</p>
+                  <p>Waiss: -.</p>
+                  <p>Fink: -.</p>
+                  <p>Paul: -.</p>
+                  <p>[Fink]: Probeabstimmung über Abänderungsantrag: Alles gegen Staatsamt für Heerwesen. </p>
+                  <p>Es bleibt beim Antrag des Staatsamtes für Finanzen.</p>
+                  <p>Unwesentliche Abänderung im § 1 durch Staatskanzl[-er/-lei].</p>
+                  <p>Glöckel: Punkt 5, keine Vorstellung, textliche Änderungen. [Das] dementsprechend geänderte Gesetz wieder vorlegen.</p>
+                  <p>Angenommen.</p>
+                  <p><pb facs="krp-0075_s02-0002"/>Eldersch: Punkt 7. Angenommen.</p>
+                  <p>Grimm: Auszahlung der staatlichen Pensionen.</p>
+                  <p>Genehmigt.</p>
+                  <p>Grimm: Virginier.</p>
+                  <p>Zerdik: In das Übereinkommen mit der Immobiliarbank werden als Bedingungen aufzunehmen sein, </p>
+                  <p>dass dem Ärar als vorläufigem Inbestandnehmer und zukünftigem Besitzer eine Einflussnahme auf die ....</p>
+                  <p>Angenommen.</p>
+                  <p>Bauer: Die ungarischen Truppen [erzielten] bei Miskolz wesentliche Erfolge, für die Tsch[echoslowakei] sehr misslich. </p>
+                  <p>Die Entente ist hierüber in höchstem Maße beunruhigt wegen allfälliger Vorstöße der Ungarn bis an die gal[izische] Grenze. </p>
+                  <p>Zusammenstoß mit den Russen, was -.</p>
+                  <p>Die Tsch[echoslowakei] hat Munitionsmangel. Es erschienen Oberst Lenoble von der französischen Mission; </p>
+                  <p>60.000 Art[illerie]-Geschoße, die in Wöllersdorf liegen.</p>
+                  <p>Ich habe geantwortet, dass wir wegen Kärnten sehr bedrängt sind; übrigens müsse der Kabinettsrat entscheiden. </p>
+                  <p>Heute [ist] Allizé bei mir erschienen mit derselben Sache.</p>
+                  <p>Folgegebung sehr bedenklich in dem Moment, wo man weiß, dass Db. [Deutschböhmen] und Sl. [Sudetenland] verloren.</p>
+                  <p>Ich schlage daher vor, das Ansuchen abzulehnen zumal auch die Entente uns keine Unterstützung in Kärnten geben dürfte.</p>
+                  <p>Was wird nun die Entente tun? Die Entente wird die Forderung erheben, die Munition einer interalliierten Kommission zu geben. </p>
+                  <p>Der Öffentlichkeit gegenüber wäre das schon eine Milderung.</p>
+                  <p>Bitte um Ermächtigung, jedes Verlangen [<hi rend="#i">Einschub:</hi>] zur Auslieferung von Munition [<hi rend="#i">Einschub Ende</hi>] an die tschechoslowakische Regierung abzulehnen. </p>
+                  <p>Bei Aufforderung zur Lieferung an die Entente zwar Verwahrung einzulegen, wenn sie aber Druck ausüben, dass ich da zurückweiche. Eventuell Kompens[ation].</p>
+                  <p><pb facs="krp-0075_s02-0003"/>Ellenbogen: Hätte es bedenkliche Wirkungen, wenn wir auch einem Druck nicht nachgeben würden und es der Entente überlassen würden, sich die </p>
+                  <p>Munition zu holen?</p>
+                  <p>Bauer: Das kann ich nicht voraussagen.</p>
+                  <p>Zerdik: Ein anderer Weg kann nicht eingeschlagen werden, schon wegen des Vorganges mit Polen.</p>
+                  <p>Loewenfeld: Wie verhalten wir uns offiziell mit der ungarischen Räteregierung?</p>
+                  <p>Bauer: Unser Naphtha-Besitz [<hi rend="#i">Einschub:</hi>] in Boryslaw [<hi rend="#i">Einschub Ende</hi>] beschlagnahmt von den Polen.</p>
+                  <p>Wir haben uns auf den Standpunkt gestellt, dass wir uns in den Kämpfen, [<hi rend="#i">Einschub:</hi>] welche die Ungarn führen, [<hi rend="#i">Einschub Ende</hi>] neutral verhalten. </p>
+                  <p>Etwas anderes ist unser Verhältnis zur Arader Gegenregierung. Wir anerkennen nur die Regierung, die die faktische Macht im Land hat.</p>
+                  <p>Loewenfeld: Cunningham will hier Offiziere aus Ungarn hier sammeln und wenn er eine genügende Anzahl beisammen hat, so </p>
+                  <p>will er dann sagen, für die haben wir keine Lebensmittel, daher sollen sie abfahren.</p>
+                  <p>Bauer: Truppenwerbungen können wir absolut nicht zugeben. Ich bitte um eine Notiz über dieses Gespräch.</p>
+                  <p>Zerdik: Ein loyaler Beitrag. Geheimprotokoll.</p>
+                  <p>Punkt 8. Hanusch: Vollzugsanweisung Invalidenentschädigungsgesetz.</p>
+                  <p>Genehmigt.</p>
+                  <p>Loewenfeld: Es wurde ein Kompromiss mit den Ländern wegen der Einreisebewilligung -. </p>
+                  <p>Es liegen Entwürfe von Tirol vor, der Kompromiss wird nicht eingehalten [bzw.] umgangen. Die Tiroler verlangen -. </p>
+                  <p>Wer soll Stellung nehmen? Anstelle der Einreisebewilligung jetzt Kontrollausweis. </p>
+                  <p>Wer soll Stellung nehmen?</p>
+                  <p>Fink: Es soll das Staatsamt für Volksernährung jemand Energischen [<hi rend="#i">Einschub</hi>:] nach Innsbruck [<hi rend="#i">Einschub Ende</hi>] hinschicken und auch nach Bregenz.</p>
+                  <p>Loewenfeld: Salzburg hat eine Spezialverordnung für Gastein erlassen. </p>
+                  <p>Durch unsere Nachtragsverordnung werden ja die Heilbäder nicht berührt. Nunmehr hat Salzburg angeordnet, dass eine Aufenthaltsbewilligung </p>
+                  <p>verlangt wird und dass das hiesige amtsärztliche Zeugnis vom dortigen Amtsarzt überprüft wird.</p>
+                  <p>Fink: Es soll auch jemand nach Salzburg geschickt werden.</p>
+                  <p><pb facs="krp-0075_s02-0004"/>Bauer: Punkt 4a.</p>
+                  <p>Genehmigt.</p>
+                  <p>Miklas: St. Peter.</p>
+                  <p>Genehmigt.</p>
+                  <p>½6 h.</p>
+                  <p>Montag 8 h, Personalsitzung.	</p>
+               </div>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

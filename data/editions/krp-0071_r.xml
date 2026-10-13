@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href='http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:acdh="https://vocabs.acdh.oeaw.ac.at/schema#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xml:lang="de">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="a" type="main" n="0071">Kabinettsprotokoll Nr. 71 vom 16. Mai 1919</title>
+            <title level="m" type="main" n="01">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <title level="m" type="sub" n="">Renner II (15. März – 17. Oktober 1919)</title>
+            <meeting>
+               <placeName key="https://d-nb.info/gnd/4066009-6">Wien</placeName>
+               <orgName key="https://d-nb.info/gnd/5162749-8">Kabinettsrat</orgName>
+               <date when-iso="1919-05-16"/>
+            </meeting>
+            <editor>
+               <persName key="https://d-nb.info/gnd/122481836"
+                         role="hasCreator"
+                         xml:id="hwohnout">
+                  <forename>Helmut</forename>
+                  <surname>Wohnout</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</affiliation>
+               <idno type="ORCID">0000-0002-3864-9839</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/120789825"
+                         role="hasCreator"
+                         xml:id="tolechowski">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0003-3291-6876</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/131679384"
+                         role="hasCreator"
+                         xml:id="rlein">
+                  <forename>Richard</forename>
+                  <surname>Lein</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0002-7502-0503</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="aholzer">
+                  <forename>Anna</forename>
+                  <surname>Holzer</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0005-3560-3500</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="dsoelkner">
+                  <forename>Dominik</forename>
+                  <surname>Sölkner</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-9895-7212</idno>
+            </editor>
+            <editor>
+               <persName role="hasContributor" xml:id="ischotzko">
+                  <forename>Ina</forename>
+                  <surname>Schotzko</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-5210-3713</idno>
+            </editor>
+            <funder n="1">
+               <orgName key="https://d-nb.info/gnd/2054142-9" role="hasFunder">Österreichischer Wissenschaftsfonds FWF</orgName>
+               <idno type="project">PAT1495024</idno>
+               <title type="project">Die Protokolle des österreichischen Kabinettsrates 1919–1920</title>
+            </funder>
+            <respStmt>
+               <resp>Projektverantwortung</resp>
+               <orgName key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Projektleitung</resp>
+               <persName key="https://d-nb.info/gnd/120789825" role="hasPrincipalInvestigator">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+                  <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+                  <idno type="ORCID">0000-0003-3291-6876</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Nationaler Forschungspartner</resp>
+               <orgName key="https://d-nb.info/gnd/1123037736" role="hasEnabler">Austrian Centre for Digital Humanities</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Digitalisierung der gedruckten Quellen</resp>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>TEI-Datenmodellierung</resp>
+               <persName role="hasContributor" xml:id="tfruehwirth">
+                  <forename>Timo</forename>
+                  <surname>Frühwirth</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-3997-5193</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technische Supervision</resp>
+               <persName key="https://d-nb.info/gnd/1043833846"
+                         role="hasContributor"
+                         xml:id="pandorfer">
+                  <forename>Peter</forename>
+                  <surname>Andorfer</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-9575-9372</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technisches Consulting und Vorbereitung der Druckausgabe</resp>
+               <persName key="https://d-nb.info/gnd/13281899X"
+                         role="hasContributor"
+                         xml:id="skurz">
+                  <forename>Stephan</forename>
+                  <surname>Kurz</surname>
+                  <affiliation key="https://d-nb.info/gnd/1202798799">Institut für die Erforschung der Habsburgermonarchie und des Balkanraumes</affiliation>
+                  <idno type="ORCID">0000-0003-2546-2570</idno>
+               </persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher key="https://d-nb.info/gnd/1001454-8">Österreichische Akademie der Wissenschaften</publisher>
+            <date when="2028"/>
+            <availability status="free">
+               <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">Lizenziert unter CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/deed.de)</licence>
+            </availability>
+            <idno type="ISBN_Print"/>
+            <idno type="ISBN_Part_epub"/>
+            <idno type="ISBN_Digital"/>
+            <idno type="DOI"/>
+            <idno type="DOI_zenodo"/>
+            <idno type="ebook_ID"/>
+         </publicationStmt>
+         <seriesStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="m" type="main">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <respStmt>
+               <resp>Bearbeitung und Herausgeberschaft</resp>
+               <orgName key="https://d-nb.info/gnd/2024703-5">Universität Wien</orgName>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+         </seriesStmt>
+         <notesStmt>
+            <note>Diese TEI-XML-Datei ist Grundlage für eine Druckausgabe der Edition.</note>
+            <relatedItem>
+               <biblStruct>
+                  <monogr>
+                     <imprint>
+                        <pubPlace key="https://d-nb.info/gnd/4066009-6">Wien</pubPlace>
+                        <publisher key="https://d-nb.info/gnd/2068748-5">Verlag der Österreichischen Akademie der Wissenschaften</publisher>
+                        <date when="2029"/>
+                     </imprint>
+                     <extent/>
+                  </monogr>
+                  <note>
+              <idno/>
+              <ptr/>
+            </note>
+                  <citedRange/>
+               </biblStruct>
+            </relatedItem>
+         </notesStmt>
+         <sourceDesc>
+            <bibl>Quellbestand: AT-OeStA/AdR MRang MR 1Rep KRP Kabinettsratsprotokolle, 1918-1920 (Teilbestand)<ref target="https://www.archivinformationssystem.at/detail.aspx?id=5465">https://www.archivinformationssystem.at/detail.aspx?id=5465</ref>
+            </bibl>
+            <msDesc>
+               <msIdentifier>
+                  <institution key="https://d-nb.info/gnd/37748-X" role="hasOwner">AT-OeStA Österreichisches Staatsarchiv (Archiv (ÖStA))</institution>
+                  <repository key="https://d-nb.info/gnd/1601181-8">AT-OeStA/AdR Archiv der Republik, 1918- (Abteilung)</repository>
+                  <collection>AT-OeStA/AdR MRang MR 1Rep Ministerrat 1. Republik, 1918 - 1938 (Bestand)</collection>
+                  <idno>AT-OeStA_AdR-MRang-MR-1.-Rep.-KRP-071</idno>
+               </msIdentifier>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <abstract>
+            <p>
+          <!--to be generated-->
+        </p>
+         </abstract>
+      </profileDesc>
+      <encodingDesc>
+         <styleDefDecl scheme="css"/>
+         <tagsDecl>
+            <rendition xml:id="b" scheme="css">font-weight:bold;</rendition>
+            <rendition xml:id="su" scheme="css">vertical-align:super;font-size:.7em;</rendition>
+            <rendition xml:id="s" scheme="css">text-decoration:line-through;</rendition>
+            <rendition xml:id="u" scheme="css">text-decoration:underline;</rendition>
+            <rendition xml:id="ow" scheme="css">text-decoration:line-through;text-decoration-style:double;</rendition>
+            <rendition xml:id="r" scheme="css">display:block;text-align:right;</rendition>
+            <rendition xml:id="letterspaced" scheme="css">letter-spacing:0.15em;</rendition>
+            <rendition xml:id="i" scheme="css">font-style:italic;</rendition>
+         </tagsDecl>
+         <editorialDecl>
+            <hyphenation>
+               <p>
+            <!--to be added-->
+          </p>
+            </hyphenation>
+            <correction>
+               <p>
+            <!--to be added-->
+          </p>
+            </correction>
+            <normalization>
+               <p>
+            <!--to be added-->
+          </p>
+            </normalization>
+            <punctuation>
+               <p>
+            <!--to be added-->
+          </p>
+            </punctuation>
+            <stdVals>
+               <p>
+            <!--to be added-->
+          </p>
+            </stdVals>
+            <p>
+          <!--to be added-->
+        </p>
+         </editorialDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#tfruehwirth" when-iso="2026-10-13">TEIGarage output upconverted with upconvert.xsl</change>
+         <change who="#tfruehwirth" when-iso="2026-10-13">TEI header populated with generate_tei_templates.py</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface/>
+   </facsimile>
+   <text>
+      <body>
+         <div xml:id="doc-krp-0071.xml">
+            <head type="dokument">
+               <title type="num">71.<note type="footnote">Das Protokoll trägt den Vermerk <hi rend="#i">Vertraulich!</hi></note>
+               </title>
+               <title type="desc">
+                  <pb facs="krp-0071_r-0001"/>[Freitag] 1919-05-16</title>
+            </head>
+            <div type="dokumentkopf">
+               <div type="vorsitz">
+                  <head>Vorsitz:</head>
+                  <p>Fink</p>
+               </div>
+               <div type="anwesend">
+                  <head>Anwesend:</head>
+                  <p>Bauer, Bratusch, Eldersch, Ellenbogen, Glöckel, Hanusch, Loewenfeld-Russ, Miklas, Paul, Stöckler, Tandler, Waiss</p>
+               </div>
+               <div type="zugezogen">
+                  <head>Zugezogen:</head>
+                  <p>[Fries]</p>
+               </div>
+               <div type="schriftfuehrer">
+                  <head>Schriftführer:</head>
+                  <p>unbekannt</p>
+               </div>
+               <div type="dauer">
+                  <head>Dauer:</head>
+                  <p>20.00–22.00 Uhr</p>
+               </div>
+            </div>
+            <div type="komponenten">
+               <p>Reinschrift, Beilagen, Konzept, stenographische Mitschrift, Entwurf der Tagesordnung, diverse Zusätze</p>
+            </div>
+            <div type="beilagen">
+               <head>Beilagen:</head>
+               <list>
+                  <item><ref target="#krp-0071_top01">Zu TOP 1</ref>: <ref target="#krp-0071_b01">Schreiben des Staatssekretärs für Volksernährung über die Forderung der interalliierten Lebensmittelkommission nach Einführung der Sommerzeit</ref></item>
+                  <item><ref target="#krp-0071_top02">Zu TOP 2</ref>: <ref target="#krp-0071_b02">Schreiben des Staatssekretärs für Heereswesen Vers. Zl. 2881 wegen der gesetzlichen Neuregelung der Versorgungsgenüsse der Militärpersonen und deren Hinterbliebenen</ref></item>
+                  <item><ref target="#krp-0071_top03">Zu TOP 3</ref>: <ref target="#krp-0071_b03">Schriftwechselabschrift Zl. 2.015/4-St.K. über die Verzichts- und Staatsbürgerschaftserklärung der ehemaligen Erzherzöge Franz und Hubert Habsburg-Lothringen</ref></item>
+                  <item><ref target="#krp-0071_top06">Zu TOP 6</ref>: <ref target="#krp-0071_b04">Bericht des Staatsamtes für Volksernährung Zl. 17740 über das Institut der Preisprüfung, seine Tätigkeit und Organisation in der Übergangswirtschaft</ref></item>
+                  <item><ref target="#krp-0071_top06">Zu TOP 6</ref>: <ref target="#krp-0071_b05">Mitgliederliste und Ausschusseinteilung der Zentral-Preisprüfungs-Kommission</ref></item>
+                  <item><ref target="#krp-0071_top09">Zu TOP 9</ref>: <ref target="#krp-0071_b06">Gesetzesbeschlüsse der Provisorischen Landesversammlung Oberösterreichs</ref></item>
+               </list>
+            </div>
+            <div type="protokoll">
+               <pb facs="krp-0071_r-0002"/>
+               <div type="top" xml:id="krp-0071_top01">
+                  <head>
+                     <label>
+                        <num n="1">1.</num>
+                        <seg>Forderung der interalliierten Lebensmittelkommission nach Einführung der Sommerzeit.</seg>
+                     </label>
+                  </head>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> teilt mit, dass entsprechend dem Kabinettsratsbeschlusse vom 13. Mai 1919 dem Hauptausschusse die Forderung der interalliierten Lebensmittelkommission nach Einführung der Sommerzeit in Deutschösterreich <pb facs="krp-0071_r-0003"/>unterbreitet worden sei. Der Hauptausschuss habe einstimmig beschlossen, an seinem bisherigen ablehnenden Standpunkte festzuhalten. Es erübrige daher nichts anderes, als die Ententevertreter durch den Staatssekretär für Volksernährung im Gegenstande entsprechend zu informieren.</p>
+                  <p>Der Kabinettsrat schließt sich dieser Auffassung an und ladet den Staatssekretär Dr. Loewenfeld-Russ ein, das hienach Erforderliche in die Wege zu leiten.</p>
+               </div>
+               <div type="top" xml:id="krp-0071_top02">
+                  <head>
+                     <label>
+                        <num n="2">2.</num>
+                        <seg>Gesetzliche Neuregelung der Versorgungsgenüsse der Militärpersonen und derer Hinterbliebenen.</seg>
+                     </label>
+                  </head>
+                  <p>Der Vorsitzende teilt mit, dass ihm seitens des Staatssekretärs für Heer[es]wesen ein Schreiben zugekommen sei, wonach die Gesetzesentwürfe über die Gleichstellung der Versorgung der Militärpersonen und ihrer Hinterbliebenen mit der Versorgung der Zivilstaatsbediensteten sowie über die Anwendung des vom Staatsamte für soziale Verwaltung ausgearbeiteten Versorgungsgesetzes auf die hiefür in Betracht kommenden Berufsmilitärpersonen und ihre Hinterbliebenen vom Staatsamte für Heer[es]wesen den zuständigen Staatsämtern für soziale Verwaltung und für Finanzen zur Stellungnahme bereits übermittelt worden seien. Die beiden genannten Staatsämter hätten <pb facs="krp-0071_r-0004"/>jedoch gegen die ihnen hiebei gestellte zweitägige Frist Einsprache erhoben, weshalb zu besorgen sei, dass diese Gesetzesentwürfe nicht bis zu dem vom Kabinettsrate in seiner Sitzung am 29. April d. J. festgesetzten Termine des 20. Mai der Nationalversammlung unterbreitet werden könnten; der Staatssekretär für Heer[es]wesen lehne daher jede Verantwortung für eine verspätete Vorlage dieser Gesetzentwürfe ab und bitte, auf die sofortige Bekanntgabe der Stellungnahme der genannten beiden Staatsämter Einfluss zu nehmen.</p>
+                  <p>Staatssekretär <hi rend="#letterspaced">Hanusch</hi> bemerkt hiezu, dass innerhalb des Zeitraumes von 48 Stunden – die Gesetzentwürfe seien erst am 13. Mai im Staatsamte für soziale Verwaltung eingelangt – eine gesetzestechnische Überprüfung des umfangreichen Materiales völlig ausgeschlossen erscheine. Das ihm unterstellte Staatsamt werde den Wünschen der Heeresverwaltung nach Möglichkeit entgegenkommen. Eine Verantwortung für eine allfällige Verspätung könne er jedoch für das von ihm verwaltete Ressort bei dieser Sachlage keinesfalls übernehmen.</p>
+                  <p>Der Kabinettsrat nimmt diese Mitteilungen zur Kenntnis.</p>
+                  <p><pb facs="krp-0071_r-0005"/></p>
+               </div>
+               <div type="top" xml:id="krp-0071_top03">
+                  <head>
+                     <label>
+                        <num n="3">3.</num>
+                        <seg>Verzichts- und Staatsbürgerschaftserklärungen der ehemaligen Erzherzoge Franz und Hubert Habsburg-Lothringen.</seg>
+                     </label>
+                  </head>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> teilt mit, dass die vormaligen Erzherzoge Franz und Hubert Habsburg-Lothringen an die Niederösterreichische Landesregierung Eingaben gerichtet haben, in welchen sie gemäß § 2 des Gesetzes vom 3. April 1919, StGBl. Nr. 209, auf die Mitgliedschaft zum Hause Habsburg-Lothringen und auf alle aus ihr gefolgerten Herrschaftsansprüche ausdrücklich verzichten und sich als getreue Staatsbürger der Republik bekennen. In den bezüglichen Eingaben weisen sie darauf hin, dass sich die Namensführung „Franz bzw. Hubert Habsburg-Lothringen“ selbstverständlich ausdrücklich nur auf das Geltungsgebiet des Gesetzes vom 3. April 1919, StGBl. Nr. 209, beziehe, und fügen überdies zur Vermeidung jeglicher missverständlicher Auffassung bei, dass der Verzicht auf die Mitgliedschaft des Hauses Habsburg-Lothringen nur eine <hi rend="#u">staatsrechtliche</hi> Bedeutung besitzen solle und keineswegs so gedeutet werden dürfe, als ob sie auch auf jene <hi rend="#u">privatrechtlichen</hi> Rechte, Forderungen und Ansprüche verzichten würden, die ihnen als Mitglied des Hauses Habsburg-Lothringen, insbesondere in vermögensrechtlicher Beziehung zukommen.</p>
+                  <p><pb facs="krp-0071_r-0006"/>Nach einer kurzen Debatte, an der sich außer dem Vorsitzenden die Staatssekretäre Dr. <hi rend="#letterspaced">Bauer</hi> und Dr. <hi rend="#letterspaced">Bratusch</hi> beteiligen, wird festgestellt, dass die Einschränkung der beabsichtigten Namensführung auf das deutschösterreichische Staatsgebiet nicht akzeptiert werden könne und dass sich der in den Erklärungen betonte Nichtverzicht auf die privatrechtlichen Rechte, Forderungen und Ansprüche <hi rend="#u">selbstverständlich</hi> nur auf jene Rechte, Forderungen und Ansprüche beziehen könne, die das nachweisbar freie persönliche Privatvermögen betreffen.</p>
+                  <p>Der Kabinettsrat gelangt sohin zu dem Beschluss, die gegenständlichen Eingaben den vormaligen Erzherzogen Franz und Hubert Habsburg-Lothringen im Sinne dieser Bemerkungen zurückzustellen und bei diesem Anlasse gleichzeitig die notarielle Beglaubigung der Unterschriften zu verlangen.</p>
+               </div>
+               <div type="top" xml:id="krp-0071_top04">
+                  <head>
+                     <label>
+                        <num n="4">4.</num>
+                        <seg>Mitteilungen des Staatssekretärs Dr. Bauer über eingelangte Berichte der Friedensdelegation; Entsendung von Vertretern der Wiener Großbanken und der Industrie nach St. Germain.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Bauer</hi> teilt mit, dass vom Leiter der Friedensdelegation in St. Germain bereits einige Berichte eingelangt seien. Hienach stelle sich zunächst die Notwen<pb facs="krp-0071_r-0007"/>digkeit heraus, noch einige Persönlichkeiten nach St. Germain zu entsenden, die als Vertreter der Bankwelt und der Industrie dem Leiter der Friedensdelegation zur Seite gestellt werden sollen, zumal Präsident Landesberger erklärt habe, dass er die Verantwortung für die ihm zugemessene Aufgabe allein nicht übernehmen könne. Der sprechende Staatssekretär gibt seines diesfalls mit dem Staatssekretär für Finanzen sowie mit dem Staatsamte für Handel und Gewerbe, Industrie und Bauten im Gegenstande gepflogenen Verhandlungen bekannt und macht in diesem Zusammenhange darauf aufmerksam, dass mit allfälligen Vertretern der Industrie jedenfalls auch ein Vertreter der Arbeiterschaft nach Frankreich zu entsenden wäre, wobei die Nominierung der betreffenden Persönlichkeit dem Staatssekretär für soziale Verwaltung überlassen werden könnte. Der Staatssekretär für Landwirtschaft hätte weiters für den Bedarfsfall einen Fachmann auf dem Gebiete des Holzexportes bereit zu halten.</p>
+                  <p>Nach einer längeren Debatte, an welcher sich die Staatssekretäre Dr. <hi rend="#letterspaced">Bratusch</hi>, Dr. <hi rend="#letterspaced">Loewenfeld-Russ</hi>, <hi rend="#letterspaced">Paul</hi>, <hi rend="#letterspaced">Hanusch</hi>, Unterstaatssekretär Dr. <hi rend="#letterspaced">Ellenbogen</hi> sowie der <hi rend="#letterspaced">Vorsitzende</hi> beteilig<pb facs="krp-0071_r-0008"/>ten, wobei insbesondere der Erstgenannte das Ersuchen stellt, es möge ein Vertreter des Justizressorts den Friedensverhandlungen bereits im gegenwärtigen Zeitpunkte zugezogen werden, beschließt der Kabinettsrat, den Staatssekretär Dr. <hi rend="#letterspaced">Baue</hi>r zu ermächtigen, in Absicht auf die Ergänzung der Friedensdelegation durch Entsendung von Vertretern der Bankwelt, der Industrie und der Arbeiterschaft mit den Staatssekretären für Finanzen, für Handel und Gewerbe, Industrie und Bauten, sowie für soziale Verwaltung das Einvernehmen zu pflegen und die von diesen vorgeschlagenen Vertreter sodann nach St. Germain zu entsenden. Weiters wird Staatssekretär Dr. Bauer ermächtigt, dem Leiter der Friedensdelegation telegrafisch mitzuteilen, dass Staatssekretär Dr. Bratusch auf die sofortige Beiziehung eines Vertreters des Staatsamtes für Justiz zu den Verhandlungen der Friedensdelegation besonderen Wert lege.</p>
+               </div>
+               <div type="top" xml:id="krp-0071_top05">
+                  <head>
+                     <label>
+                        <num n="5">5.</num>
+                        <seg>Beförderung von Staatseisenbahnbeamten in die IV. und V. Dienstklasse.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Paul</hi> verweist auf den in der Kabinettsratssitzung am 15. April d. J. gefassten Beschluss, wonach er ermächtigt worden sei, einen auf die Festsetzung der Zuständigkeit des jeweiligen Staatssekretärs für Verkehrswesen <pb facs="krp-0071_r-0009"/>zur Beförderung von Staatseisenbahnbeamten in alle Dienstklassen abzielenden Antrag dem Präsidenten der Nationalversammlung zu unterbreiten. Diesem in der Folge auch vorgelegten Antrage habe der Präsident der Nationalversammlung rücksichtlich des Rechtes des Staatssekretärs für Verkehrswesen auf Beförderung von Staatseisenbahnbeamten in die IV. und V. Dienstklasse die Genehmigung versagt und sei der sprechende Staatssekretär angewiesen worden, vor Vollziehung derartiger Ernennungen jeweils eine Liste der zur Beförderung in Aussicht genommenen Beamten dem Präsidenten vorzulegen. Da durch Einrechnung der Kriegsjahre in die Gesamtdienstzeit ein Avancement außerhalb der beiden üblichen Beförderungstermine nunmehr notwendig geworden sei, erbitte der sprechende Staatssekretär vom Kabinettsrate die Ermächtigung, das bezügliche Verzeichnis der für eine Beförderung in die V. und IV. Dienstklasse dermalen in Betracht kommenden Staatseisenbahnbeamten dem Präsidenten der Nationalversammlung unterbreiten zu dürfen.</p>
+                  <p>Der Kabinettsrat erteilt die erbetene Ermächtigung.</p>
+                  <p><pb facs="krp-0071_r-0010"/></p>
+               </div>
+               <div type="top" xml:id="krp-0071_top06">
+                  <head>
+                     <label>
+                        <num n="6">6.</num>
+                        <seg>Das Institut für Preisprüfung, seine Tätigkeit und Organisation in der Übergangswirtschaft.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Loewenfeld-Russ</hi> kommt auf die Frage zu sprechen, ob und in welchem Umfange der Weiterbestand der Zentralpreisprüfungskommission als deutschösterreichische Einrichtung in näherer und weiterer Zukunft ins Auge zu fassen sei. Er erörtert die genetische Entwicklung und die Aufgaben des Instituts der Preisprüfung und bringt in Erinnerung, dass diese Angelegenheit dem Kabinettsrate bereits in dessen Sitzung am 6. März d. J. beschäftigt habe. Die damals vor einer endgiltigen Austragung dieser Frage vom Kabinettsrate angeordnete einschlägige Vorbesprechung der beteiligten Staatsämter habe am 21. März d. J. beim Staatsamt für Volksernährung stattgefunden. Aufgrund des Beratungsergebnisses unterbreite der sprechende Staatssekretär dem Kabinettsrate nunmehr folgende Anträge: </p>
+                  <list>
+                     <item n="1"><label>„1.)</label> Da im gegenwärtigen Zeitpunkte ein Überblick über die wirtschaftliche Entwicklung auf halbwegs längerer Dauer unmöglich erscheint, wäre jedwede entbehrliche Um- oder Neuorganisierung zu unterlassen; die Einrichtung der amtlichen Preisprüfung und zwar sowohl jene der lokalen Preisprüfungsstellen, als jene der Zentralpreisprüfungskommission wäre daher vorläufig bis auf Weiteres <pb facs="krp-0071_r-0011"/>nach Maßgabe der Bestimmungen der kaiserlichen Verordnung vom 24. März 1917, RGB1. Nr. 131, beizubehalten. Die wertvollen und überaus beachtenswerten Gesichtspunkte der Kommissionsanträge, in Absicht auf eine staatliche Beeinflussung nach kollektivistischen Grundsätzen gebildeter Preise wären laufend im Auge zu behalten und der Zentralpreisprüfungskommission die Vorlage genügend konkretisierter Vorschläge im gegebenen Zeitpunkte zu überlassen.</item>
+                     <item n="2"><label>2.)</label> Auf dem Gebiete der Preisbildung hat die Zentralpreisprüfungskommission vorläufig vorsichtigste Zurückhaltung zu beobachten und das Hauptgewicht ihrer Betätigung vorerst auf das engere Gebiet der Preisprüfung zu verlegen.</item>
+                     <item n="3"><label>3.)</label> Die Mitgliederliste der deutschösterreichischen Zentralpreisprüfungskommission ist vom Staatsamte für Volksernährung im Einvernehmen mit den beteiligten Staatsämtern nunmehr ehesttunlich zusammenzustellen, wobei zu trachten ist, die geringstmögliche Mitgliederanzahl zu erreichen. Bei der Neuzusammensetzung der Fachausschüsse ist auf die erforderliche erhöhte Heranziehung von Konsumentenvertretern besonders Bedacht zu nehmen.<pb facs="krp-0071_r-0012"/></item>
+                     <item n="4"><label>4.)</label> Konform den Anträgen der Zentralpreisprüfungskommission sind die auf die Verschärfung der administrativen Kriegswucherbekämpfung gerichteten Bestrebungen des Staatsamtes für Volksernährung fortzusetzen. Zum Teile erscheint den vorliegenden Anträgen bereits insoferne Rechnung getragen, als die bestandenen Kriegswucherämter in Wien, Linz und Graz beträchtlich ausgestaltet und in Salzburg und Innsbruck neue Kriegswucherämter errichtet worden sind.</item>
+                     <item n="5"><label>5.)</label> Allen in Betracht kommenden Staatsämtern wird empfohlen, zwecks Herbeiführung einer gewissen Einheitlichkeit der staatlichen Preispolitik sich des begutachtenden Rates der deutschösterreichischen Zentral-Preisprüfungskommission schon auch deshalb zu bedienen, um eine beständige Relationierung aller amtlichen Preissätze aufrecht zu erhalten.“</item>
+                  </list>
+                  <p>Hierüber entwickelte sich eine eingehende Debatte, an welcher sich außer dem Referenten und dem zugezogenen Vorsitzenden der Preisprüfungskommission Ministerialrat <hi rend="#letterspaced">Fries</hi> noch der <hi rend="#letterspaced">Vorsitzende</hi>, sowie die Staatssekretäre <hi rend="#letterspaced">Eldersch</hi>, <hi rend="#letterspaced">Stöckler</hi>, ferner Unterstaatssekretär Dr. <hi rend="#letterspaced">Ellen</hi><pb facs="krp-0071_r-0013"/><hi rend="#letterspaced">bogen</hi> beteiligten. Hiebei trat die übereinstimmende Auffassung zutage, dass ein sukzessiver Abbau der Zentralpreisprüfungskommission aus einer Reihe von Gründen wünschenswert erscheine.</p>
+                  <p>Der Kabinettsrat fasste demgemäß den Beschluss, es sei an einen langsamen Abbau der Zentralpreisprüfungskommission zu schreiten und habe diese ihre Tätigkeit in der Hauptsache lediglich auf die Unterstützung und Überwachung der lokalen Preisprüfungsstellen zu beschränken. Die Durchführung der zu diesem Zwecke erforderlichen Maßnahmen wird dem Staatssekretär für Volksernährung übertragen, der hiebei jeweils mit dem Vorsitzenden der genannten Kommission das Einvernehmen zu pflegen hat.</p>
+               </div>
+               <div type="top" xml:id="krp-0071_top07">
+                  <head>
+                     <label>
+                        <num n="7">7.</num>
+                        <seg>Kundmachung des Gesetzes, womit Art. 11 des Gesetzes vom 14. März 1919, StGBl. Nr. 180, über die Staatsregierung ergänzt wird.</seg>
+                     </label>
+                  </head>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> teilt mit, dass er die Kundmachung des von der Nationalversammlung beschlossenen Gesetzes vom 14. Mai d. J., womit der Art. 11 des Gesetzes vom 14. März d. J., StGBl. Nr. 180, über die Staatsregierung ergänzt wird, dringlichkeitshalber bereits ohne vorherige Lesung durch das Kabinett veranlasst habe. Da gegen diesen Gesetzesbeschluss regierungsseitig keine Vorstellung zu erheben sein dürfte, erbitte er nunmehr die <pb facs="krp-0071_r-0014"/>nachträgliche Genehmigung einer Verfügung.</p>
+                  <p>Der Kabinettsrat erteilt die erbetene Genehmigung.</p>
+               </div>
+               <div type="top" xml:id="krp-0071_top08">
+                  <head>
+                     <label>
+                        <num n="8">8.</num>
+                        <seg>Beitritt der Staatsregierung zum Gesetzesbeschlusse, betreffend die Einhebung der inneren Abgaben und der Lizenzgebühren für eingeführte Verbrauchssteuergegenstände und Gegenstände des Staatsmonopols.</seg>
+                     </label>
+                  </head>
+                  <p>Über Antrag des Vorsitzenden findet der Kabinettsrat gegen das von der Nationalversammlung beschlossene Gesetz, betreffend die Einhebung der inneren Abgaben und Lizenzgebühren für eingeführte Verbrauchssteuergegenstände und Gegenstände des Staatsmonopols keine Vorstellung zu erheben.</p>
+                  <p>Das Gesetz ist daher vom Staatskanzler (in dessen Vertretung vom Vizekanzler) und vom Staatssekretär für Finanzen gegenzuzeichnen und dem Präsidenten zur Fertigung vorzulegen.</p>
+               </div>
+               <div type="top" xml:id="krp-0071_top09">
+                  <head>
+                     <label>
+                        <num n="9">9.</num>
+                        <seg>Gesetzesbeschlüsse der Provisorischen Landesversammlung für Oberösterreich vom 15. April d. J. über die Regelung der Rechtsverhältnisse des Lehrstandes an den allgemeinen öffentlichen Volks- und Bürgerschulen in Oberösterreich und über die Besorgung des Religionsunterrichtes an diesen Schulen.</seg>
+                     </label>
+                  </head>
+                  <p>Unterstaatssekretär <hi rend="#letterspaced">Glöckel</hi> bespricht in eingehender Weise die von der Provisorischen Landesversammlung für Oberösterreich am 15. April d. J. gefassten Beschlüsse, betreffend die Regelung der Rechtsverhältnisse des Lehrstandes an den allgemeinen öffentlichen Volks- und Bürgerschulen in Oberösterreich und betreffend die Besorgung des Religionsunterrichtes an diesen Schulen. </p>
+                  <p><pb facs="krp-0071_r-0015"/>Der sprechende Unterstaatssekretär stellt abschließend das Ersuchen, der Kabinettsrat wolle ihn ermächtigen, von der Erhebung einer Vorstellung gegen diese Gesetzesbeschlüsse Abstand nehmen, gleichzeitig jedoch die Landesregierung einladen zu dürfen, eine Reihe von Änderungen des Gesetzestextes beim Landesrate in Anregung zu bringen, worauf die dementsprechend geänderten Gesetze der Staatsregierung zur Beisetzung der Gegenzeichnung wieder vorzulegen wären.</p>
+                  <p>Der Kabinettsrat erteilt die erbetene Ermächtigung.</p>
+               </div>
+               <div type="top" xml:id="krp-0071_top10">
+                  <head>
+                     <label>
+                        <num n="10">10.</num>
+                        <seg>Memorandum der Paritätischen Industrieförderungskommission.</seg>
+                     </label>
+                  </head>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> teilt mit, dass die paritätische Industrieförderungskommission, welche je zur Hälfte aus Vertretern der Arbeiterorganisationen, sowie der Industriellenverbände bestehe, dem Staatskanzler mehrere Memoranden nebst einer Denkschrift unterbreitet habe. Über Wunsch des Staatskanzlers seien diese Memoranden den zuständigen Staatssekretären zum persönlichen Studium bereits übermittelt worden und nehme der sprechende Vizekanzler nunmehr in Aussicht, diese Angelegenheit in der nächsten Sitzung des Kabinettsrates zur Beratung zu stellen.</p>
+                  <p>Für den Fall, als der Kabinettsrat dieser seiner Absicht zustimmen sollte, er<pb facs="krp-0071_r-0016"/>suche der Vorsitzende die beteiligten Staatssekretäre für die nächste Kabinettsratssitzung gegenständliche Beschlussanträge vorzubereiten.</p>
+                  <p>Der Kabinettsrat pflichtet den Ausführungen des Vorsitzenden bei.</p>
+                  <p/>
+               </div>
+            </div>
+            <div type="stenogramme">
+               <div n="1">
+                  <head>[KBR 71, 16. Mai 1919, Stenogramm]</head>
+                  <p><pb facs="krp-0071_s01-0001"/>Nr. 71, 16. /5.</p>
+                  <p>Entschuldigt: Zerdik, Resch. [Zugezogen]: Fries.</p>
+                  <p>[<hi rend="#i">Am Rand:</hi>] Dienstag, 11h Hg. [Herrengasse] </p>
+                  <p>Länderkonferenz: </p>
+                  <p>Besprechung über die Entsendung bevollmächtigter Vertreter </p>
+                  <p>in Angelegenheit der Vollziehung der Vollzugsanweisung über den </p>
+                  <p>Reiseverkehr (Eldersch, </p>
+                  <p>Paul, </p>
+                  <p>Loewenfeld, </p>
+                  <p>Staatsamt für Handel), Volksgesundheit. </p>
+                  <p>Alle Länder, auch Niederösterreich, eventuell</p>
+                  <p>auch Stadt Wien für sich.</p>
+                  <p>1. [Fink]: Sommerzeit. Hauptausschuss einstimmig beschlossen, dass dabeigeblieben werden soll. Loewenfeld gebeten, die Entente-Vertreter </p>
+                  <p>darüber zu informieren. Zur Kenntnis genommen.</p>
+                  <p>2. [Fink]: Heerwesen Eingabe gerichtet an das Staats[amt] für Soziale Verwaltung und für Finanzen: 20. /5.</p>
+                  <p>Hanusch: Entwurf am 13. /6. [richtig: 5.] ins Amt gekommen. In zwei Tagen kann das Gesetz technisch nicht umgearbeitet werden.</p>
+                  <p>Waiss: Die Leute sind schon weicher geworden.</p>
+                  <p>Zur Kenntnis genommen.</p>
+                  <p>3. [Fink]: <hi rend="#s">Verkehr mit der Friedensdelegation schon hergestellt</hi>. - Erstansuchen der Erzherzöge Franz Salv[ator] mit Hubert. Verzichtserklärung und sich als Staatsbürger erklärt. </p>
+                  <p>Verzicht auf Mitgliedschaft des Hauses nur staatsrechtlich.</p>
+                  <p>Bauer: Vermögensrechtlicher Vorbehalt würde genügen; Zuschrift Führung des Namens nur einschränken auf das Geltungsgebiet des Gesetzes. Man kann nur einen Namen führen. Auf dem Weg </p>
+                  <p>durch die Landesregierung zu eröffnen, dass er die Führung des Namens überall gleich zu führen hat.</p>
+                  <p>Fink: Wenn man es schon zurückgibt, auch das sagen: nur auf jene Rechte und Ansprüche sich beziehen kann, die .... betreffen ([...]) und notarielle Beglaubigung.</p>
+                  <p>Bratusch: Akt erbeten.</p>
+                  <p>[<hi rend="#i">Am Rand:</hi>] [Beschluss]: 1.) Geltungsgebiet. </p>
+                  <p>2.) Notarielle </p>
+                  <p>Beglaubigung.</p>
+                  <p>4. Bauer: Eines der ersten Telegramme aus Frankreich. Landesberger hat Vorstellungen gemacht, dass er unmöglich allein die Verantwortung übernehmen könne. <hi rend="#s">Man ist</hi> – </p>
+                  <p>Renner wünscht, dass man sofort noch einige Herren bereitstelle, eventuell Montag für den Entente-Zug. Von Seiten der Banken: Neurath, </p>
+                  <p>Feilchenfeller, Generalsekretär Rapp, [<hi rend="#i">Einschub:</hi>] österreichisch-ungarische Bank, [<hi rend="#i">Einschub Ende</hi>] und Reisch; Vertreter der Industrie; Reichsverband der </p>
+                  <p>Industriellen und der Handels- und Gewerbekammer.</p>
+                  <p>Bauer hat zunächst Schumpeter verständigt und hat [sich] sagen lassen: dass Feilchenfelder nicht für notwendig, bezüglich Neurath ob nicht Hammerschlag; gegen Rapp und Reisch keine Bedenken.</p>
+                  <p>Schumpeter: Rät Doktor Adler oder Weiner von der Boden[creditanstalt]. Neurath hält er für ungeeignet, Hammerschlag wegen </p>
+                  <p>mangelnder Personenkenntnis. Er schlägt also eigentlich nur Rapp und Weiner vor.</p>
+                  <p>Bauer: Schlägt also vor, Reisch, Rapp und Weiner, eventuell noch Neurath oder Hammerschlag. Im Interesse der Regierung liegt es, </p>
+                  <p>alle Großbanken zu berücksichtigen.</p>
+                  <p>Was die Industrie anlangt, kann das Staatsamt für Handel erst morgen mitteilen. Wenn aber Industrielle hingehen, halte ich es für unmöglich, dass nicht auch ein Vertreter der Arbeiterschaft </p>
+                  <p>mitgeht. Han[usch] hat das Nötige schon veranlasst und als seinen Vertreter Prof. Pribram nominiert.</p>
+                  <p>[Das Staatsamt für] Landwirtschaft müsste auch bereithalten einen Holzfachmann. Dann bittet der Redner, dass auch das Staatsamt für Handel einen Vertreter bereithält.</p>
+                  <p><pb facs="krp-0071_s01-0002"/>Der Redner bittet um die Vollmacht, mit dem Staatsamt für Finanzen gemeinsam diese Vertreter entsenden zu können; was die Industrie anbelangt, im Einvernehmen </p>
+                  <p>mit dem Staatsamt für Handel.</p>
+                  <p>Schuhmacher-Zwischenfall. Gürtler hat telegraphiert an die Christlichsozialen, keinen Widerspruch zu erheben, wenn ein anderer geschickt werden soll.</p>
+                  <p>Bratusch: Bittet auch einen Vertreter des Staatsamtes für Justiz mitzuschicken.</p>
+                  <p>Bauer: Es gibt jetzt keine Staffel; wen die Friedensdelegation beruft, der wird hinfahren. [Ich werde] morgen telegraphieren, dass Bratusch großen Wert darauf legt (Walker).</p>
+                  <p>Loewenfeld: Creditanstalt muss hingehen. Neurath ist erster Direktor.</p>
+                  <p>Bauer: Das Staatsamt für Handel sollte eine Verordnung erlassen aufgrund des Ermächtigungsgesetzes, wodurch der Verkauf von ausländischen Papieren gebunden wird an die Zustimmung der Regierung. Dadurch geht uns </p>
+                  <p>eines der wertvollsten Mittel verloren zur Bezahlung von Rohstoffen und Lebensmitteln.</p>
+                  <p>Hanusch: Im Haus selbst [ist] eine Strömung vorhanden, dass man das Ermächtigungsgesetz nicht in der Weise in Anspruch nehmen soll, wie bisher. Man soll also ein spezielles Gesetz machen.</p>
+                  <p>Fink: Bezüglich der Bank-Delegierten: Bauer und Schumpeter soll überlassen werden die Auswahl; Ellenbogen wird morgen nominieren.</p>
+                  <p><hi rend="#s">Ellenbogen</hi>: Brosche.</p>
+                  <p>Fink: Resümiert für die Soziale Verwaltung Prof. Pribram und Nationalrat Hueber. </p>
+                  <p>Ferner wird Bauer anfragen, dass Bratusch Wert darauf legt, ....</p>
+                  <p>5. Paul: [Mir] wurde die Ermächtigung erteilt, Berufungen in die 5. und 4. Dienstklasse der Staatseisenbahnbeamten im eigenen Wirkungskreis wieder vornehmen zu dürfen. </p>
+                  <p>Der Präsident hat diesem Kabinettsratsbeschluss die Genehmigung versagt. [Er] verlangt vor dem Av[ancement] die Liste jener Beamten, welche zu befördern sind. </p>
+                  <p>Durch die Einrechnung der Kriegsjahre ist ein Nachtrags-Avancement notwendig. </p>
+                  <p>Bittet um die Ermächtigung, diese Liste dem Präsidenten überreichen zu dürfen.</p>
+                  <p>Angenommen.</p>
+                  <p>6. Loewenfeld-Russ: Preisprüfung. </p>
+                  <p>Die Staatssekretäre haben den Standpunkt vertreten, dass die Preisprüfung kein besonderes Ergebnis gezeitigt hat. Nur das Staatsamt für Justiz hat für die lokale Preisprüfung </p>
+                  <p>einen Wert darin gesehen. Jetzt sollen sie eine ganze Reihe von Mitgliedern ernennen. Auflösen aber kann man sie schwer im jetzigen Zeitpunkt.</p>
+                  <p>Fink: In Vorarlberg sagt man, sie müssten [eine] Preistreiberkommission haben.</p>
+                  <p>Eldersch: Wünscht, dass diese Kommission die Tätigkeit entfaltet, die notwendig ist, um die lokalen Stellen zu überwachen und zu beraten, dass sie aber auf dem Gebiet der Preis-</p>
+                  <p>festsetzung keine Tätigkeit entfaltet, weil sie darin keinen Erfolg gehabt hat. Man soll die Kommission langsam absterben lassen.</p>
+                  <p>Stöckler: Stimmt Eldersch zu. Die Zentralstelle war der Hemmschuh für die lokale Organisation.</p>
+                  <p>Ellenbogen: Wenn jetzt Export und Import kommen soll, wird die [...] -.</p>
+                  <p>Fries: Bespricht die Wünsche der Zentralpreisprüfungskommission. Bittet, heute zu beschließen, dass das Institut der Preisprüfung fortbestehen möge; </p>
+                  <p><pb facs="krp-0071_s01-0003"/>dass der Kabinettsrat die Preisprüfung grundsätz[lich] zur Kenntnis nehmen möge. Sehr erwünscht wäre die Errichtung eines Kalk[ulations]-Büros </p>
+                  <p>und dass das Chaos [beendet wird], das bisher [dadurch] bestanden hat in der Preisbildung, dass die einzelnen Staatsämter, ohne anzuhören, Preise selbst festgesetzt haben. [Von] allen Staatsämtern soll bei jeder </p>
+                  <p>Preisprüfung die Intervention der zentralen Preisprüfungskommission gehört werden. </p>
+                  <p>Ferner Entsendung von Mitgliedern in das Warenverkehrsbüro, etc. und [in die] Sozialisierungskommission. Dann Ausdehnung der Kriegswucherämter.</p>
+                  <p>Loewenfeld: Ernennung von Mitgliedern müsste vorgenommen werden.</p>
+                  <p>Fink: Wie kann ein Ausbau in personeller Hinsicht vorgenommen werden, wenn man einen Abbau vornehmen will?</p>
+                  <p>Eldersch: Die Tätigkeit der ZPC [Zentralpreisprüfungskommission] insoweit es sich um die Preisfestsetzung handelt, keine erfolgreiche gewesen ist. Bittet, dass die einzelnen Staatsämter an ihre Organe die </p>
+                  <p>Weisungen ergehen lassen, die ZPC nicht in Anspruch zu nehmen (Holzschaufeln [...]).</p>
+                  <p>Stöckler: Jetzt liegen die Verhältnisse so, dass eine Preiserstellung eine ganz unmögliche Sache ist. Das hat nur einen Sinn, wenn man den Preis eine Zeitlang halten kann. Jetzt soll </p>
+                  <p>sich die Sache nur beschränken auf die Überwachung der Preisprüfungsstellen.</p>
+                  <p>Fink: Die Kommission soll also nicht aufgehoben, aber langsam abgebaut werden.</p>
+                  <p>Loewenfeld: Getreidepreis-Frage Gesetzentwurf. Enquete-Einberufung.</p>
+                  <p>Resümee: Das Kabinett ist dafür, dass die ZPC langsam abgebaut wird und dass sie ihre Tätigkeit hauptsächlich auf die Unterstützung und Überwachung der lokalen Preisprüfungsstellen <hi rend="#s">in erster Linie </hi></p>
+                  <p>in der Hauptsache beschränkt. Die Durchführung wird dem Staatsamt für Volksernährung im Einvernehmen mit dem Präsidenten Fries überlassen.</p>
+                  <p>Angenommen.</p>
+                  <p>7. Fink: Kundmachung Gesetz 14. /III. Gegenzeichnung des Vizekanzlers.</p>
+                  <p>Angenommen.</p>
+                  <p>8. Fink: Lizenzgebühren.</p>
+                  <p>Angenommen.</p>
+                  <p>9. Glöckel: Landesversammlung Oberösterreich.</p>
+                  <p>Angenommen.</p>
+                  <p>10. Fink: Staatskanzler, paritätische Industriekommission. </p>
+                  <p>Nächste Sitzung: Dienstag Abend, pünktlich (9h (Verbindungssitzung)) 8h. </p>
+                  <p>Freitag 3h präzise.</p>
+                  <p><pb facs="krp-0071_s01-0004"/>11. Eldersch: Urlaube.</p>
+                  <p>Paul: Nicht D[Dienst] Pr[-pragmatik] sondern D.O. [Dienstordnung].</p>
+                  <p>Schluss 10h.</p>
+               </div>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

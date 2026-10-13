@@ -1,0 +1,839 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href='http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:acdh="https://vocabs.acdh.oeaw.ac.at/schema#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xml:lang="de">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="a" type="main" n="0123">Kabinettsprotokoll Nr. 123 vom 18. November 1919</title>
+            <title level="m" type="main" n="01">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <title level="m" type="sub" n="">Renner III (17. Oktober 1919 – 7. Juli 1920)</title>
+            <meeting>
+               <placeName key="https://d-nb.info/gnd/4066009-6">Wien</placeName>
+               <orgName key="https://d-nb.info/gnd/5162749-8">Kabinettsrat</orgName>
+               <date when-iso="1919-11-18"/>
+            </meeting>
+            <editor>
+               <persName key="https://d-nb.info/gnd/122481836"
+                         role="hasCreator"
+                         xml:id="hwohnout">
+                  <forename>Helmut</forename>
+                  <surname>Wohnout</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</affiliation>
+               <idno type="ORCID">0000-0002-3864-9839</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/120789825"
+                         role="hasCreator"
+                         xml:id="tolechowski">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0003-3291-6876</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/131679384"
+                         role="hasCreator"
+                         xml:id="rlein">
+                  <forename>Richard</forename>
+                  <surname>Lein</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0002-7502-0503</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="aholzer">
+                  <forename>Anna</forename>
+                  <surname>Holzer</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0005-3560-3500</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="dsoelkner">
+                  <forename>Dominik</forename>
+                  <surname>Sölkner</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-9895-7212</idno>
+            </editor>
+            <editor>
+               <persName role="hasContributor" xml:id="ischotzko">
+                  <forename>Ina</forename>
+                  <surname>Schotzko</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-5210-3713</idno>
+            </editor>
+            <funder n="1">
+               <orgName key="https://d-nb.info/gnd/2054142-9" role="hasFunder">Österreichischer Wissenschaftsfonds FWF</orgName>
+               <idno type="project">PAT1495024</idno>
+               <title type="project">Die Protokolle des österreichischen Kabinettsrates 1919–1920</title>
+            </funder>
+            <respStmt>
+               <resp>Projektverantwortung</resp>
+               <orgName key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Projektleitung</resp>
+               <persName key="https://d-nb.info/gnd/120789825" role="hasPrincipalInvestigator">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+                  <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+                  <idno type="ORCID">0000-0003-3291-6876</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Nationaler Forschungspartner</resp>
+               <orgName key="https://d-nb.info/gnd/1123037736" role="hasEnabler">Austrian Centre for Digital Humanities</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Digitalisierung der gedruckten Quellen</resp>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>TEI-Datenmodellierung</resp>
+               <persName role="hasContributor" xml:id="tfruehwirth">
+                  <forename>Timo</forename>
+                  <surname>Frühwirth</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-3997-5193</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technische Supervision</resp>
+               <persName key="https://d-nb.info/gnd/1043833846"
+                         role="hasContributor"
+                         xml:id="pandorfer">
+                  <forename>Peter</forename>
+                  <surname>Andorfer</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-9575-9372</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technisches Consulting und Vorbereitung der Druckausgabe</resp>
+               <persName key="https://d-nb.info/gnd/13281899X"
+                         role="hasContributor"
+                         xml:id="skurz">
+                  <forename>Stephan</forename>
+                  <surname>Kurz</surname>
+                  <affiliation key="https://d-nb.info/gnd/1202798799">Institut für die Erforschung der Habsburgermonarchie und des Balkanraumes</affiliation>
+                  <idno type="ORCID">0000-0003-2546-2570</idno>
+               </persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher key="https://d-nb.info/gnd/1001454-8">Österreichische Akademie der Wissenschaften</publisher>
+            <date when="2028"/>
+            <availability status="free">
+               <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">Lizenziert unter CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/deed.de)</licence>
+            </availability>
+            <idno type="ISBN_Print"/>
+            <idno type="ISBN_Part_epub"/>
+            <idno type="ISBN_Digital"/>
+            <idno type="DOI"/>
+            <idno type="DOI_zenodo"/>
+            <idno type="ebook_ID"/>
+         </publicationStmt>
+         <seriesStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="m" type="main">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <respStmt>
+               <resp>Bearbeitung und Herausgeberschaft</resp>
+               <orgName key="https://d-nb.info/gnd/2024703-5">Universität Wien</orgName>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+         </seriesStmt>
+         <notesStmt>
+            <note>Diese TEI-XML-Datei ist Grundlage für eine Druckausgabe der Edition.</note>
+            <relatedItem>
+               <biblStruct>
+                  <monogr>
+                     <imprint>
+                        <pubPlace key="https://d-nb.info/gnd/4066009-6">Wien</pubPlace>
+                        <publisher key="https://d-nb.info/gnd/2068748-5">Verlag der Österreichischen Akademie der Wissenschaften</publisher>
+                        <date when="2029"/>
+                     </imprint>
+                     <extent/>
+                  </monogr>
+                  <note>
+              <idno/>
+              <ptr/>
+            </note>
+                  <citedRange/>
+               </biblStruct>
+            </relatedItem>
+         </notesStmt>
+         <sourceDesc>
+            <bibl>Quellbestand: AT-OeStA/AdR MRang MR 1Rep KRP Kabinettsratsprotokolle, 1918-1920 (Teilbestand)<ref target="https://www.archivinformationssystem.at/detail.aspx?id=5465">https://www.archivinformationssystem.at/detail.aspx?id=5465</ref>
+            </bibl>
+            <msDesc>
+               <msIdentifier>
+                  <institution key="https://d-nb.info/gnd/37748-X" role="hasOwner">AT-OeStA Österreichisches Staatsarchiv (Archiv (ÖStA))</institution>
+                  <repository key="https://d-nb.info/gnd/1601181-8">AT-OeStA/AdR Archiv der Republik, 1918- (Abteilung)</repository>
+                  <collection>AT-OeStA/AdR MRang MR 1Rep Ministerrat 1. Republik, 1918 - 1938 (Bestand)</collection>
+                  <idno>AT-OeStA_AdR-MRang-MR-1.-Rep.-KRP-123</idno>
+               </msIdentifier>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <abstract>
+            <p>
+          <!--to be generated-->
+        </p>
+         </abstract>
+      </profileDesc>
+      <encodingDesc>
+         <styleDefDecl scheme="css"/>
+         <tagsDecl>
+            <rendition xml:id="b" scheme="css">font-weight:bold;</rendition>
+            <rendition xml:id="su" scheme="css">vertical-align:super;font-size:.7em;</rendition>
+            <rendition xml:id="s" scheme="css">text-decoration:line-through;</rendition>
+            <rendition xml:id="u" scheme="css">text-decoration:underline;</rendition>
+            <rendition xml:id="ow" scheme="css">text-decoration:line-through;text-decoration-style:double;</rendition>
+            <rendition xml:id="r" scheme="css">display:block;text-align:right;</rendition>
+            <rendition xml:id="letterspaced" scheme="css">letter-spacing:0.15em;</rendition>
+            <rendition xml:id="i" scheme="css">font-style:italic;</rendition>
+         </tagsDecl>
+         <editorialDecl>
+            <hyphenation>
+               <p>
+            <!--to be added-->
+          </p>
+            </hyphenation>
+            <correction>
+               <p>
+            <!--to be added-->
+          </p>
+            </correction>
+            <normalization>
+               <p>
+            <!--to be added-->
+          </p>
+            </normalization>
+            <punctuation>
+               <p>
+            <!--to be added-->
+          </p>
+            </punctuation>
+            <stdVals>
+               <p>
+            <!--to be added-->
+          </p>
+            </stdVals>
+            <p>
+          <!--to be added-->
+        </p>
+         </editorialDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#tfruehwirth" when-iso="2026-10-13">TEIGarage output upconverted with upconvert.xsl</change>
+         <change who="#tfruehwirth" when-iso="2026-10-13">TEI header populated with generate_tei_templates.py</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface/>
+   </facsimile>
+   <text>
+      <body>
+         <div xml:id="doc-krp-0123.xml">
+            <head type="dokument">
+               <title type="num">123.<note type="footnote">Das Protokoll trägt den Vermerk <hi rend="#i">Vertraulich!</hi></note>
+               </title>
+               <title type="desc">
+                  <pb facs="krp-0123_r-0001"/>
+                  <pb facs="krp-0123_r-0002"/>[Dienstag] 1919-11-18</title>
+            </head>
+            <div type="dokumentkopf">
+               <div type="vorsitz">
+                  <head>Vorsitz:</head>
+                  <p>Renner</p>
+               </div>
+               <div type="anwesend">
+                  <head>Anwesend:</head>
+                  <p>Deutsch, Eisler, Eldersch, Ellenbogen, Fink, Glöckel, Hanusch, Loewenfeld-Russ, Mayr, Miklas, Paul, Ramek, Reisch, Resch, Stöckler, Tandler, Waiss, Zerdik</p>
+               </div>
+               <div type="zugezogen">
+                  <head>Zugezogen:</head>
+                  <p>Grimm, Hoheisel, Zedtwitz</p>
+               </div>
+               <div type="schriftfuehrer">
+                  <head>Schriftführer:</head>
+                  <p>unbekannt</p>
+               </div>
+               <div type="dauer">
+                  <head>Dauer:</head>
+                  <p>20.30–23.45 Uhr</p>
+               </div>
+            </div>
+            <div type="komponenten">
+               <p>Reinschrift, Beilagen, Anhänge, Konzept, stenographische Mitschrift, Entwurf der Tagesordnung</p>
+            </div>
+            <div type="beilagen">
+               <head>Beilagen:</head>
+               <list>
+                  <item><ref target="#krp-0123_top04">Zu TOP 4</ref>: <ref target="#krp-0123_b01">Erhöhung der Post-, Telegrafen- und Fernsprechgebühren</ref></item>
+                  <item><ref target="#krp-0123_top06">Zu TOP 6</ref>: <ref target="#krp-0123_b02">Gesetzesvorlage mit Begründung der Staatsregierung zur Durchführung des § 24 des Anhangs zu Art. 248 und der Art. 254 und 256 des Staatsvertrages von St. Germain</ref></item>
+                  <item><ref target="#krp-0123_top07">Zu TOP 7</ref>: <ref target="#krp-0123_b03">Vortrag des Staatsamtes für Justiz zu Zl. 19.835/19 über die Zuständigkeit des Bezirksgerichts Urfahr zur Führung der Grundbücher für Urfahr und Pöstlingberg</ref></item>
+                  <item><ref target="#krp-0123_top08">Zu TOP 8</ref>: <ref target="#krp-0123_b04">Vortrag des Staatsamtes für Inneres und Unterricht über die Genehmigung niederösterreichischen Landtagsbeschlüsse zur Einhebung von Totenbeschaugebühren in Heinrichs bzw. 100 % übersteigende Umlagen in diversen Gemeinden</ref></item>
+                  <item><ref target="#krp-0123_top10">Zu TOP 10</ref>: <ref target="#krp-0123_b05">Antrag des Staatsamtes für Land- und Forstwirtschaft Zl. 22.847/19 über die Genehmigung von Gesetzesbeschlüssen der Steiermärkischen Landesregierung zum Schutz landwirtschaftlicher Grundstücke gegen Beschädigung durch fremde Bäume</ref></item>
+                  <item><ref target="#krp-0123_top11">Zu TOP 11</ref>: <ref target="#krp-0123_b06">Übernahme von Gagisten und Unteroffiziere in den Zivilstaatsdienst</ref></item>
+                  <item><ref target="#krp-0123_top12">Zu TOP 12</ref>: <ref target="#krp-0123_b07">Antrag des Staatsamtes für Finanzen auf Ausprägung von 20 Heller Stücken aus Gammametall</ref></item>
+                  <item><ref target="#krp-0123_top13">Zu TOP 13</ref>: <ref target="#krp-0123_b08">Antrag des Staatsamtes für soziale Verwaltung auf Anwendung des Pensionsbegünstigtengesetzes auf die Angestellten der Wiener Fondskrankenanstalten</ref></item>
+                  <item><ref target="#krp-0123_top14">Zu TOP 14</ref>: <ref target="#krp-0123_b09">Vortrag des Präsidenten der Staatskommission für Sozialisierung Dr. Ellenbogen über die Zuerkennung des gemeinwirtschaftlichen Charakters an die neu gegründete „Kupfer- und Zinnhütte Betriebsgesellschaft mbH“</ref></item>
+               </list>
+            </div>
+            <div type="protokoll">
+               <pb facs="krp-0123_r-0003"/>
+               <div type="top" xml:id="krp-0123_top01">
+                  <head>
+                     <label>
+                        <num n="1">1.</num>
+                        <seg>Hinausgabe eines Kommuniqués über eine bedrohliche Verschlechterung der Ernährungslage.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Eldersch</hi> teilt mit, dass Staatssekretär Dr. Loewenfeld-Russ dienstlich verhindert sei, der heutigen Sitzung bereits von Anbeginn an beizuwohnen und ihn deshalb ersucht habe, dem Kabinettsrate über eine in den letzten Tagen eingetretene besondere Verschärfung der Ernährungslage Bericht zu erstatten. Die Unzulänglichkeit der Getreide- und Mehlzufuhr lassen die völlige Einstellung oder beträchtliche Kürzung der Mehl- und Brotausgabe bereits für die nächste Woche befürchten. Es sei zwar zu hoffen, dass die ununterbrochenen Bemühungen des Ernährungsamtes eine Milderung dieser Situation herbeiführen werden, gleichwohl erscheine es aber notwendig, die Bevölkerung schon jetzt im Wege einer amtlichen Verlautbarung auf diese Situation aufmerksam zu machen. Zu diesem Zwecke sei im Staatsamte für Volksernährung ein Kommuniqué ausgearbeitet worden, das vom anwesenden Sektionschef Dr. Zedtwitz dem Kabinettsrate zur Kenntnis <pb facs="krp-0123_r-0004"/>gebracht werden wird.</p>
+                  <p>Über Einladung des <hi rend="#letterspaced">Vorsitzenden</hi> verliest sodann der genannte <hi rend="#letterspaced">Sektionschef</hi> den Entwurf dieser amtlichen Verlautbarung.</p>
+                  <p>Der Kabinettsrat genehmigt – nach Annahme einer vom Staatssekretär <hi rend="#letterspaced">Paul</hi> beantragten Abänderung, bzw. Ergänzung – den Wortlaut dieses Entwurfes und ermächtigt den Staatssekretär für Volksernährung zur Hinausgabe dieses Kommuniqués in den morgigen Tageszeitungen. </p>
+               </div>
+               <div type="top" xml:id="krp-0123_top02">
+                  <head>
+                     <label>
+                        <num n="2">2.</num>
+                        <seg>Bevorzugte Berücksichtigung staatlicher Betriebe bei Lieferungsvergebungen durch staatliche Behörden und Ämter.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">E11enbogen</hi> gibt bekannt, dass nach mehrfachen von ihm gemachten Wahrnehmungen die Staatsämter bei Vergebung von Lieferungen nicht in dem wünschenswerten Maße auf die vorhandenen, bekanntlich unter erhöhten Schwierigkeiten arbeitenden staatlichen Betriebe Rücksicht zu nehmen pflegen. So habe sich kürzlich der Fall ereignet, dass die Staatsfabrik Blumau von der Lieferung größerer Mengen eines von ihr herstellbaren Produktes ausgeschlossen bleiben sollte, weil das mit der einschlägigen Lieferungs<pb facs="krp-0123_r-0005"/>vergebung betraute Staatsamt einen langsichtigen Lieferungsvertrag mit einer Privatfirma in Aussicht genommen hatte. Redner glaube daher, den Antrag stellen zu sollen, der Kabinettsrat wolle sich grundsätzlich dahin aussprechen, dass bei Lieferungsvergebungen durch die Staatsämter und die ihnen nachgeordneten Behörden und Ämter die staatlichen Betriebe eine bevorzugte Berücksichtigung zu finden haben.</p>
+                  <p>Der Kabinettsrat beschließt im Sinne des gestellten Antrages.</p>
+               </div>
+               <div type="top" xml:id="krp-0123_top03">
+                  <head>
+                     <label>
+                        <num n="3">3.</num>
+                        <seg>Übernahme von Aktien der Wolfsegg-Traunthaler Kohlenwerks-AG durch den Staat.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Ing. <hi rend="#letterspaced">Zerdik</hi> gibt bekannt, dass die Wolfsegg-Traunthaler Kohlenwerks-AG ihr Stammkapital im Betrage von 8 Millionen K durch Ausgabe von 30.000 Stück neuer Aktien zum Nominale von 200 K auf 12 Millionen K zu erhöhen beabsichtige. Hiedurch solle die Gesellschaft in die Lage gesetzt werden, ihre vielfach unzulänglichen Einrichtungen auszugestalten bzw. neue Förderanlagen zu errichten. Aufgrund der mit der Gesellschaft bereits getroffenen Abmachungen werde das Land Oberösterreich <pb facs="krp-0123_r-0006"/>zwei Drittel der neuen Aktien übernehmen, während die Option für das letzte Drittel (10.000 Stück Aktien) dem Staate eingeräumt werde. Die Übernahme soll zum Kurse von 320 K erfolgen (letzter Tageskurs rund 1.250 K). Dem Staate würden zwei, dem Lande Oberösterreich drei Vertreter in der gesellschaftlichen Verwaltung zugestanden werden. Bei der fraglichen Übernahme würde eine Berufung auf den § 37 des Gesetzes über gemeinwirtschaftliche Unternehmungen nicht erfolgen. Der sprechende Staatssekretär bitte demgemäß um die Ermächtigung zur Übernahme des genannten Aktienpaketes durch den Staat.</p>
+                  <p>Der Kabinettsrat erteilt die erbetene Ermächtigung.</p>
+               </div>
+               <div type="top" xml:id="krp-0123_top04">
+                  <head>
+                     <label>
+                        <num n="4">4.</num>
+                        <seg>Erhöhung der Post-, Telegrafen- und Fernsprechgebühren.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Paul</hi> verweist darauf, dass sich bei der Post-, Telegrafen- und Fernsprechverwaltung nach möglichst genauer Schätzung ein Betriebsabgang von jährlich ungefähr 160 Millionen K ergebe. Dieser Abgang, der sich durch weitere notwendige Ausgaben noch etwas erhöhen werde, müsse <pb facs="krp-0123_r-0007"/>durch Gebührenerhöhungen beseitigt werden, von denen auf die Post rund 134 Millionen K, auf den Telegrafen rund 11 Millionen K und auf den Fernsprecher rund 35 Millionen K, zusammen sohin 180 Millionen K gelegt werden können. Er erbitte sich die Zustimmung des Kabinettsrates zu den beabsichtigten Maßnahmen, die sodann über Einladung des Vorsitzenden der Generalpostdirektor Sektionschef <hi rend="#letterspaced">Hoheisel</hi> im Einzelnen erläutert; dieser bespricht zunächst die Details der Erhöhungen rücksichtlich der Briefe, Postkarten, Drucksachen, Warenproben, Geschäftspapiere, Postanweisungen, der Wertgebühr bei Wertbriefen, der Pakete und endlich der Zeitungen. Bis auf die Zeitungsgebühren finden alle in Aussicht genommenen Erhöhungen die Zustimmung des Kabinettsrates. Hingegen löst die in Aussicht genommene Erhöhung der Zeitungsgebühren, und zwar für das Stück einer wenigstens zweimal wöchentlich erscheinenden Zeitung ohne Unterschied des Gewichtes, von gegenwärtig 2 h auf künftighin 4 h eine eingehende Debatte aus, an welcher sich nahezu sämtliche Kabinettsmitglieder beteiligen. Hiebei wurde insbesondere von den Staatssekretären Dr. <hi rend="#letterspaced">Deutsch</hi> und <hi rend="#letterspaced">Eldersch</hi> die Notwendigkeit <pb facs="krp-0123_r-0008"/>betont, dass ein Unterschied in der Postgebührenbehandlung dieser periodischen Druckschriften nach dem Gewichte, bzw. nach der Seitenzahl zu machen wäre. Es sei nicht angängig, den in unverhältnismäßig großem Umfange erscheinenden Tagesblättern kapitalistischer Richtung, die erfahrungsgemäß aus dem Inseratengeschäfte außerordentlich hohe Gewinne ziehen, die gleiche Behandlung zuteilwerden zu lassen, wie den im bescheidenen Umfange erscheinenden Blättern der drei großen Parteien. Hiebei komme noch in Betracht, dass die Leistung des Staates beim Transporte der Zeitungspakete eine derartige differenzielle Behandlung vollauf gerechtfertigt erscheinen lasse.</p>
+                  <p>In diesem Zusammenhange regt Vizekanzler <hi rend="#letterspaced">Fink</hi> die Einführung einer Inseratensteuer an, worauf Staatssekretär Dr. <hi rend="#letterspaced">Reisch</hi> seine grundsätzliche Bereitwilligkeit zur ehesten Einbringung eines diesbezüglichen Gesetzentwurfes erklärt.</p>
+                  <p>Generalpostdirektor Sektionschef <hi rend="#letterspaced">Hoheisel</hi> bittet, die technischen Schwierigkeiten, welche einer solchen verschiedenartigen Behandlung der einzelnen Zeitungssendungen entgegenstehen, nicht zu gering einzuschätzen <pb facs="krp-0123_r-0009"/>und warnt davor, eine übereilte Entscheidung vor eingehender Prüfung dieser Frage durch die berufenen Fachorgane zu treffen. Auch dürfe nicht übersehen werden, dass es gefährlich sei, uns auf vergleichsweise völlig verschiedene Grundlagen hinsichtlich der Gebührenbehandlung der Zeitungen gegenüber den umliegenden Staaten zu stellen.</p>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> fasst das Ergebnis der Debatte dahin zusammen, es sei die Frage der Zeitungsgebührenerhöhung vorläufig zurückzustellen, gleichzeitig aber der Beschluss des Kabinettsrates kundzumachen, dass die Zeitungsgebühren nunmehr nach dem Gewichte bzw. Umfange der Zeitungen abgestuft und die einzelnen Gebührensätze nachträglich verlautbart werden.</p>
+                  <p>Der Kabinettsrat beschließt in diesem Sinne, genehmigt die übrigen Postgebührenerhöhungen und ladet den Generalpostdirektor ein, in der Frage der Erhöhung der Zeitungsgebühren auf der vom Kabinettsrate beschlossenen Grundlage ehestens konkrete Detailvorschläge zu erstatten.</p>
+                  <p>In diesem Zusammenhange ersucht <pb facs="krp-0123_r-0010"/>Unterstaatssekretär <hi rend="#letterspaced">Glöckel</hi>, vor der künftigen Herstellung neuer Postwertzeichen mit dem Unterrichtsamte zum Zwecke der Einholung künstlerischer Gutachten das Einvernehmen zu pflegen. Generalpostdirektor <hi rend="#letterspaced">Hoheisel</hi> sichert zu, dass diesem Ersuchen Rechnung getragen werden wird.</p>
+                  <p>Sodann erörtert Letzterer die Details über die beabsichtigte Erhöhung der Telegrafengebühren.</p>
+                  <p>Der Kabinettsrat erteilt die erbetene Ermächtigung zur Erlassung einer diesbezüglichen Vollzugsanweisung.</p>
+                  <p>Schließlich bespricht der Generalpostdirektor die beabsichtigte Erhöhung der Fernsprechgebühren an der Hand der vom Staatsamte für Verkehrswesen auszuarbeitenden und von dem Kabinettsrate vorliegenden „Vollzugsanweisung, betreffend die Abänderung einiger Bestimmungen der Fernsprechordnung und der Fernsprechgebührenordnung“.</p>
+                  <p>Im Zuge der sich hierüber entwickelnden Debatte wurde seitens der Staatssekretär[e] <hi rend="#letterspaced">Eldersch</hi> und <hi rend="#letterspaced">Hanusch</hi> darauf verwiesen, dass die nunmehrige Unterscheidung der Staatsgespräche in dringende und gewöhnliche und die Einhebung höherer Sprechgebühren <pb facs="krp-0123_r-0011"/>für erstere kaum geeignet sein dürfte, die von der Postverwaltung beklagte Überlastung der Leitungen mit Staatsgesprächen zu beseitigen. Es müsse vielmehr eine Reform in diesem Belange dahin abzielen, dass überflüssige Staatsgespräche unbedingt hintangehalten werden. Die Einhebung einer dreifachen Gebühr aber belaste lediglich die Amtspauschalien, ohne den gewünschten Erfolg zu sichern.</p>
+                  <p>Über Vorschlag des <hi rend="#letterspaced">Vorsitzenden</hi> einigt sich schließlich der Kabinettsrat dahin, die erbetene Ermächtigung zur Erlassung der gegenständlichen Vollzugsanweisung zu erteilen, gleichzeitig jedoch die Staatskanzlei zu beauftragen, im Einvernehmen mit der Generalpostdirektion ein Regulativ auszuarbeiten und dem Kabinettsrat zur Beschlussfassung vorzulegen, in welchem entsprechende Sicherungen zur möglichsten Eindämmung der Staatsgespräche innerhalb der einzelnen Behörden geschaffen werden.</p>
+               </div>
+               <div type="top" xml:id="krp-0123_top05">
+                  <head>
+                     <label>
+                        <num n="5">5.</num>
+                        <seg>Handhabung des Gesetzes über die Volksvertretung.</seg>
+                     </label>
+                  </head>
+                  <p>Der Vorsitzende erinnert daran, dass sich der Kabinettsrat in seiner Sitzung vom 26. September 1919, <pb facs="krp-0123_r-0012"/>über Anregung des Unterstaatssekretärs Glöckel mit den Missgriffen bei der Landesgesetzgebung befasst und ein Referat des Staatsamtes für Inneres und Unterricht, womit dieses Staatsamt ein Einschreiten bei den Landesregierungen anregt, genehmigend zur Kenntnis genommen habe. Die Staatskanzlei habe sohin einen die früheren Erlässe aufgrund der neuen Erfahrungen ergänzenden Runderlass entworfen. Redner beantrage, der Kabinettsrat wolle die Abfertigung des nachstehenden Erlasses genehmigen:</p>
+                  <p>„Die Staatskanzlei hat sich mit Erlass vom 31. März 1919, Zl. 1500 namens der Staatsregierung gestattet, Erläuterungen zu den die Landesregierungen berührenden Bestimmungen des Gesetzes vom 14. März 1919, StGBl. Nr. 179, zu geben. Aufgrund der bei der Handhabung dieser Bestimmungen gemachten Erfahrungen möchte die Staatsregierung im Folgenden noch einige Feststellungen vornehmen, die bis zur Neuregelung der Verfassungsgrundlage Geltung haben sollen.</p>
+                  <p>Die von der Verfassung vorgesehenen Formalitäten der Landesgesetzgebung haben sich, wie die Staatskanzlei mit Genugtuung feststellen möchte, in den meisten Punkten in fast allen Ländern eingelebt.</p>
+                  <p><pb facs="krp-0123_r-0013"/>In der einen oder anderen Hinsicht ereignen sich aber auch heute noch gelegentlich Formverletzungen. So ist es öfters vorgekommen, dass in Angelegenheiten, welche offenkundig in den Wirkungskreis der Staatsregierung fallen, nicht die Staatsregierung oder der zuständige Staatssekretär, sondern die Landesregierung, die in solchen Fällen oft gar nicht – faktisch und juristisch – in der Lage ist, mit der Durchführung betraut wird. Es wurde z. B. in Gesetzen, die Zahlungen aus Staatsmitteln vorsehen, die Landesregierung mit dem Vollzuge beauftragt. Ferner haben Landesschulgesetze der Landesregierung den Gesetzesvollzug übertragen, obwohl im Gesetze vom 25. Mai 1868, RGBl. Nr. 4 – in dessen Rahmen sich die Landesgesetzgebung hier zu bewegen hat – die oberste Leitung des gesamten Unterrichts- und Erziehungswesens dem Staate vorbehalten ist.</p>
+                  <p>Weiters haben sich Fälle ereignet, in denen trotz der Notwendigkeit der Gegenzeichnung des zur Mitwirkung beim Vollzuge berufenen Staatssekretärs, das betreffende Landesgesetz ohne Einholung der Gegenzeichnung verlautbart wurde. Die Staatskanzlei gestattet sich aufmerksam zu machen, dass für die Zukunft die Entscheidung in jedem einzelnen Falle vorbehalten bleiben muss, ob die <pb facs="krp-0123_r-0014"/>Staatsregierung bei der Vollziehung eines derart formwidrig zustande gekommenen Gesetzes mitwirken kann. Sie wird z. B. kaum in der Lage sein, Zahlungen aus staatlichen Mitteln aufgrund eines Landesgesetzes zu leisten, dessen Kundmachung in der erwähnten verfassungswidrigen Weise ohne Zustimmung der Staatsregierung bzw. ohne Gegenzeichnung des zuständigen Staatssekretärs erfolgt ist und welches daher nach den allgemein geltenden staatsrechtlichen Grundsätzen eigentlich niemals gesetzliche Wirksamkeit erlangen kann, außer durch eine nach Sanierung des Verfassungsmangels erfolgende neuerliche Kundmachung. Ebensowenig können die Landesgesetzgebungen ohne Zustimmung der Staatsregierung über die Dienste der staatlichen Behörden und Anstalten im Lande, wie z. B. Post, Telegraf, Telefon, Staatsbahn, Gendarmerie und Finanzbehörde verfügen. Andernfalls könnte die Anforderung von Diensten der genannten Organe zur Vollziehung von Landesgesetzen diese Organe in schwere Pflichtenkollisionen, ja unter Umständen in die Gefahr bringen, sich einen strafbaren Missbrauch der Amtsgewalt zu Schulden kommen zu lassen. Es spricht wohl schon das Lan<pb facs="krp-0123_r-0015"/>desinteresse entschieden dafür, die im Lande wirkenden Staatsangestellten nicht derartigen Möglichkeiten auszusetzen.</p>
+                  <p>Außer den bezeichneten Gebrechen in der <hi rend="#u">Form</hi> von Landesgesetzen kommen auch solche, gegen deren verfassungsmäßig vorgesehenen <hi rend="#u">Inhalt</hi> vor. Derartige Kompetenzüberschreitungen stellen sich zugleich als Eingriffe in den Wirkungskreis der Nationalversammlung dar. Die Staatskanzlei gestattet sich zur Klarstellung der Sachlage die für diese Frage insbesondere in Betracht kommenden Gegenstände anzuführen, die zweifellos in den Wirkungskreis der Nationalversammlung gehören. Es sind dies insbesondere die Gesetzgebung zur Regelung des Geld-, Münz- und Zettelbankwesens, der Zoll- und Handelsangelegenheiten, des Telegrafen-, Post-, Eisenbahn-, Schifffahrts- und sonstigen Reichskommunikationswesens. Die Kredit-, Bank-, Privilegien- und Gewerbegesetzgebung; die Gesetzgebung über Maße und Gewichte; über Marken und Musterschutz; die Medizinalgesetzgebung, sowie die Gesetzgebung zum Schutze gegen Epidemien und Viehseuchen; die Gesetzgebung über das Staatsbürger- und Heimatrecht, über Fremdenpolizei und Passwesen, sowie über Volkszählung; über die konfessionellen Verhältnisse, über das <pb facs="krp-0123_r-0016"/>Vereins- und Versammlungsrecht, über die Presse und den Schutz des geistigen Eigentums; die Feststellung der Grundsätze des Unterrichtswesens bezüglich der Volksschulen und Gymnasien, dann die Gesetzgebung über die Universitäten; die Strafjustiz sowie die Zivilrechtsgesetzgebung mit Ausschluss der Gesetzgebung über die innere Einrichtung der öffentlichen Bücher; ferner die Gesetzgebung über das Handels- und Wechselrecht, ferner das Bergrecht; dann die Gesetzgebung über die Grundzüge der Organisierung der Gerichts- und Verwaltungsbehörden. Diese dem Staatsgrundgesetz vom 21. Dezember 1867, RGBl. Nr. 141 über die Reichsvertretung entnommene Aufzählung ist jedoch nur eine beispielsweise, da die Nationalversammlung nicht bloß auf den Wirkungskreis des ehemaligen österreichischen Reichsrates beschränkt, sondern durch den Beschluss über die grundlegenden Einrichtungen der Staatsgewalt, StGBl. Nr. 1 aus 1918 zum allgemeinen Gesetzgebungsorgan berufen ist. In den Wirkungskreis der Nationalversammlung fällt somit beispielsweise noch das Gebiet des seinerzeitigen ‚selbständigen Verordnungsrechtes‘ des Monarchen, wofern ein solches überhaupt als zu Recht bestehend angenommen werden konnte.</p>
+                  <p>Außer auf den Gebieten der Gesetzgebung sind ferner auch auf den Gebieten <pb facs="krp-0123_r-0017"/>der Selbstverwaltung der Länder gewisse Missverständnisse hinsichtlich der Kompetenzverteilung zu Tage getreten. Es kann kein Zweifel bestehen, dass das deutschösterreichische Verfassungsgesetz vom 14. März 1919, StGBl. Nr. 179, das Verhältnis zwischen Staat und Land, nur auf dem Gebiete der Gesetzgebung teilweise neu geregelt, auf dem Gebiete der Verwaltung jedoch das bestehende einstweilen unverändert übernommen hat. Die Rechtslage bei Akten der Selbstverwaltung ist mithin folgende:</p>
+                  <p>Soweit sie ehedem ausschließlich von den eigenen Organen des Landes vorgenommen wurden, sind sie auch heute den analogen Landesorganen vorbehalten; soweit jedoch eine Genehmigung von Seite des Landesfürsten vorgesehen war, ist zweifellos an Stelle dieser kaiserlichen Genehmigung zunächst auf Grund des Art. 3 des Gesetzes über die Staats- und Regierungsform vom 12. November 1918, StGBl. Nr. 5, der Beitritt des Staatsrates und späterhin aufgrund des Art. 6 des Gesetzes vom 14. März 1919, StGBl. Nr. 180, über die Staatsregierung der Beitritt der Staatsregierung erforderlich geworden. Diese Folgerung ergibt sich aus der Tatsache, dass das Verfassungs<pb facs="krp-0123_r-0018"/>gesetz vom 14. März 1919 zwar die Landesgesetzgebung neu geregelt, aber die Landesverwaltung provisorisch in den bisherigen Formen unverändert beibehalten hat.</p>
+                  <p>Besonders aktuell wird diese Rechtslage im Falle höherer als 10%iger Landeszuschläge zu einer direkten Staatssteuer oder sonstiger Landesumlagen. Solche Finanzmaßregeln der Länder bedurften früher der Zustimmung des Kaisers und bedürfen nunmehr der Zustimmung der Staatsregierung: Eine Kompetenz, auf die die Staatsregierung, insolange nicht eine Sonderung der Einnahmsquellen zwischen Staat und Land eingetreten ist, aus zwingenden finanziellen Rücksichten nicht verzichten kann, da durch selbständige Maßregeln der Länder bestehende Steuerquellen geradezu verschüttet werden könnten.</p>
+                  <p>Die Staatskanzlei ist sich sehr wohl bewusst, dass die im vorigen umschriebene Kompetenzabgrenzung vielfach unbefriedigend und reformbedürftig ist; diese Reform soll ja bekanntlich ein Grundpfeiler des künftigen Verfassungswerkes werden. Nichtsdestoweniger müssen während des verhältnismäßig kurzen Provisoriums bis zum Inkrafttreten der künftigen Verfassung diese <pb facs="krp-0123_r-0019"/>derzeit nun einmal bestehenden rechtlichen Schranken gleicherweise von der Staatsregierung und den Landesregierungen eingehalten werden; dies schon darum, damit nicht das notwendige Vertrauensverhältnis zwischen Staat und Ländern in einer unter Umständen sogar das Verfassungswerk gefährdenden Weise getrübt wird."</p>
+                  <p>Der Kabinettsrat erteilt dem Vorsitzenden die erbetene Ermächtigung.</p>
+               </div>
+               <div type="top" xml:id="krp-0123_top06">
+                  <head>
+                     <label>
+                        <num n="6">6.</num>
+                        <seg>Gesetzentwurf zur Durchführung des § 24 des Anhanges zu Art. 248 und der Art. 254 und 256 Abs. f und g, des Staatsvertrages von St. Germain.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Ramek</hi> erbittet vom Kabinettsrate die Ermächtigung den Entwurf eines Gesetzes zur Durchführung des § 24 des Anhanges zu Art. 248 und der Art. 254 und 256 Abs. f und g, des Staatsvertrages von St. Germain in der Nationalversammlung einbringen zu dürfen.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Reisch</hi> hielte es nicht für empfehlenswert, dieses minder wichtige und auch nicht unmittelbar dringliche Gesetz außerhalb des Zusammenhanges mit zahlreichen anderen, auf dem Staatsvertrag von St. Germain fußenden Vorlagen, in der Nationalversammlung einzubringen. Auch erachte er die Textierung des § 2 <pb facs="krp-0123_r-0020"/>insoferne nicht glücklich, als darin von einer „verbündeten oder assoziierten Macht“ ohne den gleichzeitigen Hinweis darauf gesprochen wurde, dass damit die vertragschließenden Teile auf Seite der Entente gemeint seien.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Ramek</hi> sichert eine textliche Neuredigierung des § 2 zu.</p>
+                  <p>Über Antrag des <hi rend="#letterspaced">Vorsitzenden</hi> genehmigt der Kabinettsrat grundsätzlich die Einbringung dieses Gesetzentwurfes mit der Maßgabe, dass rücksichtlich des Zeitpunktes der Einbringung der Vorlage die Entscheidung dem Staatskanzler überlassen zu bleiben habe.</p>
+               </div>
+               <div type="top" xml:id="krp-0123_top07">
+                  <head>
+                     <label>
+                        <num n="7">7.</num>
+                        <seg>Gesetzentwurf über die Zuständigkeit des Bezirksgerichtes Urfahr in Linz zur Führung der Grundbücher für die Katastralgemeinden Urfahr und Pöstlingberg.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Ramek</hi> erbittet und erhält vom Kabinettsrat die Ermächtigung, in der Nationalversammlung eine Gesetzesvorlage über die Zuständigkeit des Bezirksgerichtes Urfahr in Linz zur Führung der Grundbücher für die Katastralgemeinden Urfahr und Pöstlingberg einbringen zu dürfen.</p>
+                  <p><pb facs="krp-0123_r-0021"/></p>
+               </div>
+               <div type="top" xml:id="krp-0123_top08">
+                  <head>
+                     <label>
+                        <num n="8">8.</num>
+                        <seg>Genehmigung von niederösterreichischen Landtagsbeschlüssen, betreffend die Einhebung einer Toten[be]schaugebühr in der Gemeinde Heinrichs sowie die Einhebung von 100 % übersteigenden Umlagen in mehreren Gemeinden Niederösterreichs.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Eldersch</hi> teilt mit, dass die Niederösterreichischen Landesregierung um die Erwirkung der Genehmigung der Staatsregierung für die Beschlüsse des Niederösterreichischen Landtages vom 3. und 23. Juli 1919, betreffend die Einhebung einer Totenbeschaugebühr in der Gemeinde Heinrichs sowie die Einhebung von 100 % übersteigenden Umlagen in den Gemeinden Puchberg am Schneeberg, Eggendorf, Schrattenbach, Böheimkirchen, Steinbach, Reinberg-Litschau, Ramplach, Raglitz, Stössing, Altendorf, Mautern, Warnungs, Grafensulz, Stattersdorf, Mollram, Ober-Meisling, Gansbach, Sittendorf, Scheideldorf, Gastern, Langegg, Grünbach am Schneeberg, Grimmenstein, Dürnbach, Eberweis, Lang-Schwarze, Breitenfeld, Mödring, Thiermannsdorf, Ostra, Schandachen, Poigen, Alt-Pölla, Nieder-Edlitz und Krumbach, angesucht habe.</p>
+                  <p>Über Antrag des sprechenden Staatssekretärs genehmigt der Kabinettsrat die vorgenannten Beschlüsse.</p>
+               </div>
+               <div type="top" xml:id="krp-0123_top09">
+                  <head>
+                     <label>
+                        <num n="9">9.</num>
+                        <seg>Industriekonferenz.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Paul</hi> bringt einige politisch relevante Vorkommnisse in der gegenwärtig tagenden Industrie<pb facs="krp-0123_r-0022"/>konferenz zur Sprache. Anschließend hieran gibt auch Staatssekretär Dr. <hi rend="#letterspaced">Deutsch</hi> einen das Staatsamt für Heer[es]wesen betreffenden Vorfall in der heutigen Kommissionssitzung der Industriekonferenz bekannt.</p>
+                  <p>Diese Mitteilungen sowie die sich hieran anschließende Debatte tragen vertraulichen Charakter und sind in einen geheimen Anhange zu diesem Protokolle niedergelegt. </p>
+               </div>
+               <div type="top" xml:id="krp-0123_top10">
+                  <head>
+                     <label>
+                        <num n="10">10.</num>
+                        <seg>Gesetzesbeschluss der Steiermärkischen Landesversammlung, betreffend den Schutz landwirtschaftlicher Grundstücke gegen Beschädigung durch fremde Bäume.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Stöckler</hi> erbittet und erhält vom Kabinettsrate die Ermächtigung, dass von der Erhebung einer Vorstellung gegen den von der Steiermärkischen Landesversammlung am 8. Oktober d. J. gefassten Gesetzesbeschluss, betreffend den Schutz landwirtschaftlicher Grundstücke gegen Beschädigung durch fremde Bäume, zwar abgesehen, der Landesregierung jedoch nahegelegt werde, wegen mehrfacher Abänderung, bzw. Ergänzung dieses Gesetzesbeschlusses auf die Landesversammlung einzuwirken.</p>
+               </div>
+               <div type="top" xml:id="krp-0123_top11">
+                  <head>
+                     <label>
+                        <num n="11">11.</num>
+                        <seg>Übernahme der Gagisten und Unteroffiziere der Gestütsbranche in den Zivilstaatsdienst.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Stöckler führt aus, dass die Staatspferdezucht<pb facs="krp-0123_r-0023"/>anstalten bis zum Zusammenbruche mit Ausnahme des Wirtschaftspersonales in den Staatsgestüten militärisch organisiert gewesen seien. Das System der militärischen Führung der Anstalten unter ziviler ökonomisch-administrativer Leitung hätte sich bekanntlich nicht bewährt. Diese Tatsache, wie nicht minder die Ungleichheit der Gebührenbehandlung der leitenden und beaufsichtigenden Militärpersonen nach den militärischen Normen einerseits und des zivilen Dienstpersonals nach den zivilen Normen andererseits ließen die sofortige Zivilisierung der bei den Staatspferdezuchtanstalten benötigten Gagisten und Unteroffiziere wünschenswert erscheinen. Mit Zustimmung des Staatsamtes für Finanzen sollen daher die einzelnen Gagisten unter Berücksichtigung ihrer militärischen Charge und Bezüge in die entsprechenden Rangsklassen der Zivilbeamten eingereiht werden. Hiebei ergebe sich die Notwendigkeit, für die hiedurch entstehende neue Kategorie der pferdezuchtkundigen Beamte[n] neue Amtstitel zu schaffen. Diesfalls schlage der sprechende Staatssekretär folgende Bezeichnungen vor:</p>
+                  <p>Für die XI. Rangsklasse: Gestütspraktikant, für die X.: Gestütsbereiter, für die IX.: Gestütsoberbereiter, <pb facs="krp-0123_r-0024"/>für die VIII.: Gestütsrat II. Klasse, für die VII.: Gestütsrat I. Klasse und für die VI. Rangsklasse der Staatsbeamten den Titel Obergestüterat. Gleichzeitig würde in Ergänzung der Ministerialverordnung vom 1. Februar 1914, RGBl. Nr. 34, über die Einreihung der einzelnen Beamtenkategorien der Dienstzweige und Ressorts in die Gruppen des im § 52 der Dienstpragmatik festgesetzten Zeitvorrückungsschemas eine Vollzugsanweisung zu erlassen sein, mit welcher die pferdezuchtkundigen Beamten in die Beamtengruppe B eingereiht werden. Die in den Zivilstaatsdienst übernommenen Militärtierärzte und Truppenrechnungsoffiziere sollen die rangsklassenmäßigen Titel der übrigen staatlichen Tierärzte, bzw. Rechnungsbeamten führen. Endlich hätten die in den Zivilstaatsdienst als Unterbeamte bzw. Diener zu übernehmenden Unteroffiziere der Gestütsbranche, je nach ihrer Funktion, folgende Titel zu erhalten: Die Unterbeamten: Wirtschafter für den Kanzleidienst, Gestütsmeister, Beschlagmeister; die Diener: Gestütsaufseher, bei den Staatsgestüten außerdem noch Gestütsaufseheranwärter und bei den Staatshengstendepots: Stallwärter. </p>
+                  <p><pb facs="krp-0123_r-0025"/>Der Kabinettsrat genehmigt die vorstehenden Anträge mit der Maßgabe, dass – entsprechend einen Antrage des Staatssekretärs Dr. <hi rend="#letterspaced">Reisch</hi> – die Titelbezeichnung für die Beamten der XI. Rangsklasse statt „Gestütspraktikant", als mit der Dienstpragmatik im Widerspruche stehend, mit „Gestütsbereiter II. Klasse“ und dementsprechend die Titelbezeichnung für die X. Rangsklasse mit „Gestütsbereiter I. Klasse“ festgesetzt wird.</p>
+               </div>
+               <div type="top" xml:id="krp-0123_top12">
+                  <head>
+                     <label>
+                        <num n="12">12.</num>
+                        <seg>Gesetzentwurf wegen Ausprägung und Ausgabe neuer Teilmünzen der Kronenwährung.</seg>
+                     </label>
+                  </head>
+                  <p>Nach eingehender Darstellung des Sachverhaltes erbittet und erhält Staatssekretär Dr. Reisch die Ermächtigung des Kabinettsrates zur Einbringung eines Gesetzentwurfes in der Nationalversammlung über die Ausprägung und Ausgabe neuer Teilmünzen der Kronenwährung.</p>
+                  <p>In diesem Zusammenhange beauftragt der Kabinettsrat nach einer kurzen Debatte das Staatsamt für Finanzen, nach der vorläufig in Aussicht genommenen Ausprägung von 20 Hellerstücken auch die Ausgabe von Münzen zu 50 und 10 h zu erwägen und hierüber dem Kabinettsrate ehestens zu berichten.</p>
+                  <p>Gleichzeitig wird der Staatsse<pb facs="krp-0123_r-0026"/>kretär für Finanzen eingeladen, bezüglich der künstlerischen Ausstattung der neuen Scheidemünzen – und zwar auch bereits rücksichtlich der 20 Hellermünzen – mit dem Unterrichtsamte das Einvernehmen zu pflegen.</p>
+               </div>
+               <div type="top" xml:id="krp-0123_top13">
+                  <head>
+                     <label>
+                        <num n="13">13.</num>
+                        <seg>Anwendung des Pensionsbegünstigungsgesetzes auf die Angestellten der Wiener Fondskrankenanstalt.</seg>
+                     </label>
+                  </head>
+                  <p>Unterstaatssekretär Dr. <hi rend="#letterspaced">Tandler</hi> erinnert daran, dass die Angestellten der Wiener Fondskrankenanstalten öffentliche Fondsbedienstete seien, auf welche die für die Staatsbediensteten erlassenen Vorschriften nur dann Anwendung finden können, wenn dies durch einen besonderen konstitutiven Akt der Staatsverwaltung zum Ausdrucke gebracht worden ist. Gelegentlich der letzten Verhandlungen über die Forderungen der Angestellten der Wiener Fondskrankenanstalten nach Verbesserung ihrer materiellen Lage sei den Bediensteten die verbindliche Zusage gemacht worden, dass alle Vorschriften, welche für die Staatsbediensteten erlassen werden, auch auf die Fondsbediensteten zur sinngemäßen Anwendungen zu gelangen haben. Aufgrund dieser Zusage werde nunmehr die Forderung erhoben, die Vorschriften des Pensionsbegünstigungsgesetzes vom <pb facs="krp-0123_r-0027"/>30. Juli 1919, StGBl. Nr. 411, in Anwendung zu bringen. Dieser Forderung wäre unter den durch die Sonderstellung der Fondsbediensteten notwendigen Abänderungen Folge zu geben, wobei insbesondere vorzusehen wäre, dass der Beginn der Fristen, welche nach den Bestimmungen des Gesetzes vom Zeitpunkte des Inkrafttretens desselben zu laufen beginnen, auf den 1. Dezember 1919 verlegt werde und dass an die Stelle der im § 6 des bezogenen Gesetzes enthaltenen Bestimmungen, wonach die Zustimmung des Staatsamtes der Finanzen gefordert wird, die Anordnung zu treten hat, dass die Neuaufnahme nur mit Zustimmung des Staatsamtes für soziale Verwaltung (Volksgesundheitsamt) stattfinden werde.</p>
+                  <p>Der Kabinettsrat pflichtet diesem Antrage bei.</p>
+               </div>
+               <div type="top" xml:id="krp-0123_top14">
+                  <head>
+                     <label>
+                        <num n="14">14.</num>
+                        <seg>Zuerkennung des gemeinwirtschaftlichen Charakters an die neugegründete Kupfer- und Zinnhütte Betriebsgesellschaft mbH.</seg>
+                     </label>
+                  </head>
+                  <p>Der Präsident der Sozialisierungskommission Dr. <hi rend="#letterspaced">Ellenbogen</hi> teilt mit, dass im Zuge der Vorkehrungen für die Umstellung der ehemaligen Heeresbetriebe im Arsenal auf die Friedenswirtschaft die dortselbst be<pb facs="krp-0123_r-0028"/>findliche Kupfer- und Zinnhütte an eine neu zu errichtende Betriebsgesellschaft mbH auf 25 Jahre verpachtet werden soll. Diese Gesellschaft werde mit einen Stammkapital von 900.000 K gebildet, an dessen Aufbringung sich der Staat mit 450.000 K, die Metall- &amp; Erz-Gesellschaft mbH. in Wien mit 225.000 K und die Firma Jakob Neurath in Wien ebenfalls mit 225.000 K beteiligen. Die Vorarbeiten zur Errichtung dieser Gesellschaft sowie die Abfassung des Gesellschaftsvertrages seien im Einvernehmen des Staatsamtes für Handel und Gewerbe, Industrie und Bauten mit dem Staatsamte der Finanzen erfolgt. Der Gesellschaftsvertrag entspreche den Anforderungen, die das Gesetz vom 29. Juli 1919 über gemeinwirtschaftliche Unternehmungen an die Zuerkennung des gemeinwirtschaftlichen Charakters stelle. Das Gesetz schreibe vor, dass diese Zuerkennung durch die Staatsregierung zu erfolgen habe. Der genaue Vorgang für die zukünftige Behandlung derartiger Angelegenheiten sei grundsätzlich mit den beteiligten Staatsämtern vereinbart worden und werde in einer zu erlassenden Vollzugsanweisung festgelegt werden. Da bis zur Erlassung dieser Vollzugsanweisung noch einige Zeit verstreichen wird und die Errichtung der gegenständlichen Gesellschaft im <pb facs="krp-0123_r-0029"/>Interesse des Staates äußerst dringend sei, stelle der sprechende Staatssekretär den Antrag, der Kabinettsrat wolle der Kupfer- und Zinnhütte Betriebsgesellschaft mbH den gemeinwirtschaftlichen Charakter zuerkennen.</p>
+                  <p>Der Kabinettsrat erhebt diesen Antrag zum Beschluss.</p>
+               </div>
+               <div type="top" xml:id="krp-0123_top15">
+                  <head>
+                     <label>
+                        <num n="15">15.</num>
+                        <seg>Bevorstehende Verhandlungen mit der tschechoslowakischen Regierung.</seg>
+                     </label>
+                  </head>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> teilt mit, dass der tschechoslowakische Minister des Äußern eine generelle Aussprache zwischen der tschechoslowakischen und der österreichischen Regierung über alle obschwebenden außen- und innerpolitischen Fragen angeregt habe, deren Ergebnis die Grundlage eines weit ausgreifenden Übereinkommens zwischen den beiden Regierungen bilden solle.</p>
+                  <p>Das Staatsamt für Äußeres werde in dieser Angelegenheit demnächst an alle beteiligten Ressorts mit dem Ersuchen herantreten, diesfällige Vorbereitungen unverzüglich zu treffen und dieser zunächst das einschlägige Material zu sichten und alle jene Gegenstände in Evidenz zu nehmen, die unmittelbar verhandlungsreif wären. Bei der Wichtigkeit dieser Angelegen<pb facs="krp-0123_r-0030"/>heit, mache Redner die Kabinettsmitglieder bereits jetzt hierauf aufmerksam, zumal eine baldige vorherige Fühlungnahme der Ressorts mit den korrespondierenden Ministerien in Prag empfehlenswert erscheine, um vorher den Rahmen abzustecken, innerhalb dessen später ein generelles Übereinkommen der gedachten Art geschlossen werden könnte.</p>
+                  <p>Der Kabinettsrat nimmt diese Mitteilungen zur Kenntnis.</p>
+                  <p/>
+               </div>
+            </div>
+            <div type="anhaenge">
+               <div n="1">
+                  <pb facs="krp-0123_a01-0001"/>
+                  <head>Vorkommnisse in der Industriekonferenz.</head>
+                  <p>Streng vertraulicher Anhang zum Kabinettsprotokoll Nr. 123 vom 18. November 1919.</p>
+                  <div type="a01_protokoll">
+                     <p>Staatssekretär <hi rend="#letterspaced">Paul</hi> teilt mit, dass in der heutigen Plenarsitzung der Industriekonferenz die Tätigkeit des Staatsamtes für Verkehrswesen einer abfälligen Kritik unterzogen worden sei. Bereits in der gestrigen Subkomiteesitzung sei beschlossen worden, in der Plenarsitzung darüber Klage zu führen, dass das Verkehrsamt in bürokratischer Weise verwaltet werde und es zweckmäßig erschiene, an die Spitze dieses Amtes einen Industriellen zu berufen. Die weiters beschlossene Resolution enthalte in zwölf Punkten Forderungen, denen zu entsprechen den Verantwortungskreis des Staatssekretärs für Verkehrswesen übersteige. Redner rege an, der Kabinettsrat möge dazu Stellung nehmen, inwieweit die aufgestellten Forderungen politisch durchführbar seien und die Beschlüsse <pb facs="krp-0123_a01-0002"/>der Industriekonferenz von der Staatsregierung anerkannt würden.</p>
+                     <p>Staatssekretär Dr. <hi rend="#letterspaced">Deutsch</hi> bringt anschließend hieran zur Kenntnis, dass in der heutigen Sitzung der Kommission Materialien zur Verfügung standen, die zweifellos nur von genauest eingeweihten Beamten des Finanzamtes herrühren können. Er behalte sich vor, gegen die allenfalls schuldtragenden Organe die Einleitung einer Disziplinaruntersuchung zu beantragen.</p>
+                     <p>Der <hi rend="#letterspaced">Vorsitzende</hi> erblickt in diesen Vorfällen einen bedauerlichen Beweis dafür, dass die Industrieenquête ihren eigentlichen Zweck, die maßgebenden Kreise der Bevölkerung über noch bestehende Missverständnisse aufzuklären, bisher eigentlich verfehlt habe.</p>
+                     <p>Nach Anschauung des Staatssekretärs <hi rend="#letterspaced">Hanusch</hi> mache es den Eindruck, als ob sich die Enquête zu einer ständigen Kontrolleinrichtung über die Staatsregierung etablieren wollte. Diese Auffassung müsse aus der Welt geschafft werden. Bedauerlich erscheine nur, dass Arbeiter und Unternehmer in den Angriffen auf die Regierung einhelliger Meinung seien.</p>
+                     <p>Der <hi rend="#letterspaced">Vorsitzende</hi> stellt seine persönliche Interven<pb facs="krp-0123_a01-0003"/>tion in der Industriekonferenz zum Zwecke tunlichster Vermeidung einer Wiederholung derartiger unliebsamer Vorkommnisse in Aussicht.</p>
+                     <p>Der Kabinettsrat nimmt diese Mitteilung zustimmend zur Kenntnis. </p>
+                  </div>
+               </div>
+               <div n="2">
+                  <pb facs="krp-0123_a02-0001"/>
+                  <head>Personalien.</head>
+                  <p>Streng vertraulicher Anhang zum Kabinettsprotokoll Nr. 123 vom 18. November 1919.</p>
+                  <div type="a02_protokoll">
+                     <p>Über Antrag des Staatssekretär Ing. <hi rend="#letterspaced">Zerdik</hi> stimmt der Kabinettsrat der Erwirkung des Titels und Charakters eines Sektionschefs an die Ministerialräte im Staatsamte für Handel und Gewerbe, Industrie und Bauten Franz Pergelt und Ing. Karl Goeb1 zu.</p>
+                     <p/>
+                  </div>
+               </div>
+            </div>
+            <div type="stenogramme">
+               <div n="1">
+                  <head>[KBR 123, 18. November 1919, Stenogramm A]</head>
+                  <p><pb facs="krp-0123_s01-0001"/>123., 18. /11., ½ 9.</p>
+                  <p>[<hi rend="#i">Rechtes Obereck:</hi>] Zedtwitz, </p>
+                  <p>Hoheisel </p>
+                  <p>Beizug.</p>
+                  <p>1. Eldersch: Der Staatssekretär für Volksernährung hat mich telefonisch aufgerufen und mitgeteilt, dass große Gefahr besteht, dass [er] nächste Woche die Brot- und Mehlquote überhaupt nicht oder nur in sehr </p>
+                  <p>gekürztem Maße wird austeilen können - Transport[arbeiter]streik. Wir haben zwar einen Kauf mit Trovati 30.000 Tonnen gemacht, </p>
+                  <p>die Reparationskommission hat [aber] erklärt, dass zu diesem Kauf die Zustimmung des Hohen Rates in Paris notwendig sei, obzwar Valuta bereits bereitgestellt [wurde]. Diese Zustimmung von Paris [ist] </p>
+                  <p>noch nicht eingelangt. 10 Millionen [sic] Tonnen [liegen] schon in Triest, Waggons [sind] auch schon unten. Das Ernährungsamt versucht, auf einem anderen Weg zu diesen </p>
+                  <p>10.000 Tonnen zu gelangen durch Dr. Geist (telegraphische Zustimmung Italiens notwendig). Doch notwendig, Communiqué etwas </p>
+                  <p>optimistisch abzufassen.</p>
+                  <p>Zedwitz: Verliest Communiqué.</p>
+                  <p>Paul: In Deutschland.</p>
+                  <p>Einverstanden.</p>
+                  <p>2. Ellenbogen: Es handelt sich um die Lieferungsvergebungen der staatlichen Betriebe. Wir finden bei den Staatssekretären nicht das genügende Verständnis. Z. B. [ist] von der Staatsfabrik Blumau angetragen worden, Schwefelkohlenstoff zu produzieren. </p>
+                  <p>Nun hat das Staatsamt für Landwirtschaft einen Vertrag mit der Firma Wagenmann, Seibel &amp; Co. abgeschlossen, [am] 17. /11. '19 einen 10-jährigen Lieferungsvertrag abgeschlossen. [Ich möchte bitten], </p>
+                  <p>wenn eine Staatsfabrik derlei Produktion aufnimmt, dass die Staatssekretäre uns dabei entgegenkommen sollen. Also nicht mit Privatfirmen, sondern womöglich mit staatlichen Betrieben.</p>
+                  <p>Angenommen.</p>
+                  <p>3. Zerdik: Wolfsegg-Trauntaler, [das Kapital soll von] 8 [auf] 12 Millionen erhöht [werden]. Mittel zur Ausgestaltung der bestehenden und Errichtung neuer Förderanlagen. 2:1; 320 </p>
+                  <p>Kronen Kurs. </p>
+                  <p>Zu einem Siebtel Mitbesitzer. Einzahlung. </p>
+                  <p>Verwaltung zwei Vertreter des Staates und drei Vertreter Oberösterreichs. </p>
+                  <p>Die Staatsbahnen und die Salinen werden zum wesentlichen Teil versorgt. § 37 soll nicht angewandt werden. </p>
+                  <p>10.000 neue Aktien zum Kurs [von] 320 Kronen.</p>
+                  <p>Angenommen.</p>
+                  <p>4. Zerdik: Sektionschef Göbel leitet zwei Sektionen: seit 4 Jahren Charak[ter], [seit] 3 Jahren wirklicher Ministerialrat. </p>
+                  <p>Titel und Charakter [eines Sektionschefs].</p>
+                  <p>Pergelt: -.</p>
+                  <p>Angenommen.</p>
+                  <p>5. Paul: (Hoheisel): Post-, Telegraphen- und Fernsprech[gebühren].</p>
+                  <p>Hoheisel: Der Betrieb [ist] derzeit stark passiv, nach Schätzungen etwa 160 Millionen jährlich. Preissteigerungen im Material und bedeutend erhöhte Personalkosten.</p>
+                  <p>[Erforderlich ist eine] Erhöhung [um] 100%. Im Briefverkehr Relation 1:4, im Paketverkehr 1:6.</p>
+                  <p>Paul: Der Verein der Post-, Telegraphen- und Verkehrsinteressenten [erhebt] keine Einwendung gegen die Postgebühr.</p>
+                  <p>Fink: Bei den Zeitungen sollte man die Inserate besteuern (Gebührform). Damit würden die großen Blätter besteuert.</p>
+                  <p><hi rend="#s">Eldersch</hi>: Deutsch: Der Unterschied wird nicht nach dem Gewicht gemacht. Bis 250 Gramm eventuell auch mit 4 Heller, die anderen Zeitungen aber höher zu behandeln. </p>
+                  <p>Eventuell nur nach der Zeitungszahl, über 6 Blätter z. B. höher besteuern. Empfiehlt, eine solche Unterscheidung zu machen.</p>
+                  <p><pb facs="krp-0123_s01-0002"/>Eldersch: Es ist ein schweres Unrecht, dass die Zeitungen einer politischen Partei keinen großen Umfang haben. Nur die kapitalistischen Blätter befördern ein Buch um denselben Preis wie die parteipolitischen Blätter. </p>
+                  <p>Also bis 8 oder 10 Seiten sind 3 Heller zu zahlen, für eine entsprechende Seitenzahl mehr das Doppelte.</p>
+                  <p>Hoheisel: Die Zeitungen genießen auf der ganzen Welt eine wesentliche Refactie, entweder Postabonnement oder Einzelfrankierung. Die individuelle Frankierung </p>
+                  <p>erscheint mir fast undurchführbar zwischen ½ 4 und ½ 6 [Uhr].</p>
+                  <p>Deutsch: Die technischen Schwierigkeiten können doch nicht groß sein, einfache Kontrolle. Die vielfache Portofreiheit bei der Post ist mir unverständlich. </p>
+                  <p>Auch viele Vereine haben Portofreiheit.</p>
+                  <p>Hoheisel: Möglichst bald wird ein Gesetzentwurf betreffend Einschränkung der Portofreiheit eingebracht werden.</p>
+                  <p>Reisch: [Ich] halte die Idee [von] Deutsch für sehr richtig. Mit geringen Stichproben wird die stufenweise Erhebung der Gebühr sichergestellt werden können.</p>
+                  <p>Eldersch: Ich war auch in einem Zeitungsunternehmen. Man muss sich auf die Zeitung verlassen. Mit Absicht schwindeln die Zeitungen doch nicht.</p>
+                  <p>Hoheisel: Diese wertvollen Anregungen müssen studiert werden. Es wäre überstürzt.</p>
+                  <p>Resch: Die Erhöhung der Gebühren muss vorgenommen werden. Unbedingt Einvernehmen der Parteien, da diese eine enorme Belastung der Bevölkerung bedeutet.</p>
+                  <p>Hoheisel: Die Gebühren können mittels Vollzugsanweisung hinausgehen.</p>
+                  <p>Deutsch: [Man sollte] die Einwendung [von] Resch nicht ganz abweisen. Man könnte die ganze Sache den Parteien vorlegen, inzwischen Hoheisel ersuchen, bis dahin </p>
+                  <p>eine Vorlage [zu] machen, die der Kabinettsrat wünscht. Der Kabinettsrat aber soll im Prinzip das annehmen, dass die Zeitungen nach dem Gewicht oder der Seitenzahl </p>
+                  <p>taxiert werden. Das kann in acht Tagen erledigt sein.</p>
+                  <p>Paul: Gefahr einer Fehlarbeit.</p>
+                  <p>Fink: Das den Parteien vorzulegen ist gut, schon wegen der Zeitungen. Die Berechnungen sollen von der Postverwaltung, aber im Einvernehmen mit dem Staatsamt für Finanzen gepflogen werden.</p>
+                  <p>Glöckel: Neue Briefmarken: Nicht ohne jede Berücksichtigung der künstlerischen Seite machen. Die Zeit auszunützen, um sich mit Künstlern in Verbindung zu setzen.</p>
+                  <p>Renner: Wenn wir Verwaltungssachen in immer höherem Maße an das Forum der Parteien ziehen, dann geht die Verwaltung zugrunde. Wenn wir uns an enge Interessengruppen </p>
+                  <p>binden, dann geht es überhaupt nicht. Dagegen muss ich gestehen, dass ich die Schwierigkeiten Hoheisels doch nicht so hoch einschätzen kann, dass ich nicht glaube, dass sie sich </p>
+                  <p>bewältigen lassen. Wenn wir also beschließen den erhöhten Tarif, können die Durchführungsmaßnahmen doch später angepasst werden dem neuen System? </p>
+                  <p>Über die Durchführung kann man dann später mit den Zeitungen reden.</p>
+                  <p>Hoheisel: Wir dürfen uns nicht vergleichsweise auf andere Grundlage stellen mit den umliegenden Ländern. Ich widerrate sehr, sich außerhalb dieses Kreises zu stellen.</p>
+                  <p>Renner: Dann schalten wir die Zeitungsgebühr aus und machen einen Beschluss kund, dass auch das jetzt angepasst werden muss und dass der Kabinettsrat beschlossen hat, </p>
+                  <p>die Zeitungspostgebühr abzustufen nach dem Gewicht und Umfang der Zeitung. Diese Gebühr [der] Post wird nachträglich kundgemacht werden.</p>
+                  <p>Hoheisel: Schwierigkeiten der Staatsdruckerei, Kohle nur auf 14 Tage. Erklärt den "Skandal" Glöckel auf.</p>
+                  <p>Glöckel: Anerkannte Künstler haben sich abfällig geäußert.</p>
+                  <p>Mayr: Besteht Gelegenheit, die Inseratensteuer zu studieren?</p>
+                  <p>Reisch: Diese Steuer wird dauernd im Staatsamt für Finanzen studiert. [Sie ist] bisher stets gescheitert an politischen Erwägungen.</p>
+                  <p>Hoheisel: Telegraphengebühr. 20 Heller das Wort. Zusammen rund 11 Millionen zu erwarten. Mayr: Beförderungsdauer. Hoheisel: Mit Zürich schnelle Telegraphen (Siemensapparat).</p>
+                  <p>Angenommen.</p>
+                  <p>Hoheisel: Fernspr[echgebühren], 100 % Erhöhung.</p>
+                  <p>Eldersch: -. Hoheisel: Staatsgespräche Unfug.</p>
+                  <p><pb facs="krp-0123_s01-0003"/>Renner: Es sollte in jedem Amte ein indiv[idueller] Verantwortlicher bestellt werden zur Aufgabe von Staatsgesprächen.</p>
+                  <p>Eldersch: Man muss eine Reform versuchen auf dem Weg, dass überflüssige Staatsgespräche nicht gehalten werden. Durch die dreifache Gebühr wird das nicht erzielt werden. <hi rend="#s">Dass Unbefugte</hi> -. </p>
+                  <p>Sie können nur entweder kriechen oder frech sein.</p>
+                  <p>Paul: Es handelt sich nicht um die Staatsämter, sondern um die Behörden ohne Hauszentrale.</p>
+                  <p>Hoheisel: Wir haben keine Wege unversucht lassen, durch persönliche Verhandlungen ...</p>
+                  <p>Glöckel: Wird man wenigstens die nicht dringlichen Staatsgespräche rangieren vor die nicht dringlichen Privatgespräche?</p>
+                  <p>Eldersch: Man soll die Missbräuche abstellen.</p>
+                  <p>Hanusch: Die Erhöhung der Gebühren hat überhaupt keinen Zweck. Es wird darauf keine Rücksicht genommen werden, ob das Staatsgespräch die dreifache Gebühr kostet. Der Begriff Behörden und Ämter scheint zu weit </p>
+                  <p>gesteckt zu sein.</p>
+                  <p>Paul: Die Erhöhung werden wir fallen lassen und ein Schreiben an die Staatsämter [richten], um ein Verzeichnis der Behörden und Ämter, die berechtigt sein sollen zur Führung interurbaner Gespräche und dass [diese] </p>
+                  <p>auch in den Staatsämtern möglichst eingeschränkt werden.</p>
+                  <p>Renner: Wie wäre es, wenn man die einzelnen Ämter klassifiziert?</p>
+                  <p>Reisch: Wir dürfen nicht den Verkehr einschränken.</p>
+                  <p>Die Staatskanzlei [wird] im Einvernehmen mit der Postdirektion ein Regulativ ausarbeiten und zum Vortrag bringen. 1. /4. in Wirksamkeit tritt.</p>
+                  <p>6.</p>
+                  <p>[<hi rend="#i">Notiz:</hi>] Staatssekretär Paul bringt einige politisch rel[evante] Vorkommnisse in der gegenwärtig tagenden I.E. [Industrie-Enquete] zur Sprache. Anschließend teilt Staatssekretär Deutsch -.</p>
+                  <p>Paul: Plenarsitzung der Industrie-Enquete. </p>
+                  <p>Heerwesen [ist] kritisiert, Verkehrswesen [in] milder Form kritisiert worden. </p>
+                  <p>Gestern im Subkomitee [ist] beschlossen worden, in der Plenarsitzung Klage zu führen, dass das Staatsamt für Verkehr in bürokratischer Weise arbeite [und] </p>
+                  <p>der Staatssekretär durch [einen] Industriellen zu ersetzen [sei]. Resolution 12 Punkte, Forderungen, denen nachzukommen, meine Verantwortung übersteigt. </p>
+                  <p>Alle Einwendungen im Komitee sind heute in der Referentenrede wiederholt worden. </p>
+                  <p>Nach Schluss der Enquete [sollte] diese Resolution im Kabinettsrat einer Sichtung unterzogen werden, wie weit sie politisch zu werten sind und welche Bedeutung </p>
+                  <p>der Industrie-Konferenz von Seite des Kabinettsrates anzuerkennen ist. </p>
+                  <p>Mir wäre es unmöglich, diese Forderungen durchzuführen.</p>
+                  <p>Deutsch: In der heutigen Sitzung bin ich nicht erschienen und habe [einen] Referenten hingeschickt. Das Material konnte nur von den eingeweihtesten Beamten des Finanzamtes [Staatsamt für Finanzen] </p>
+                  <p>zur Verfügung gestellt [worden sein]. [Ich] behalte mir vor, gegen den Beamten die Disziplinaruntersuchung zu beantragen. </p>
+                  <p>Unwahre Sachen. Redner will sich nicht rechtfertigen, sondern nur zeigen, dass von amtlicher Seite Material in einer öffentlichen Versammlung preisgegeben wird. </p>
+                  <p>Mit den Beamten ist nie mehr zu arbeiten. Die Beamten politisieren jetzt.</p>
+                  <p>Renner: Die Sache beweist, dass in den maßgebenden Kreisen der Bevölkerung über das ganze Gebaren der Bevölkerung solche Missverständnisse bestehen, die aufzuklären der Zweck </p>
+                  <p>der Enquete ist. Dann hat die Konferenz ihren Zweck verfehlt.</p>
+                  <p><hi rend="#s">Paul</hi>: -. Hanusch: In der Kommission wäre Zeit gewesen, dass das Heeresamt diese Unklarheiten aufgeklärt hätte. Diese Enquete etabliert sich zu einer ständigen Einrichtung der Kontrolle der </p>
+                  <p>Staatsregierung. Diesen Nimbus muss man dieser Körperschaft nehmen. Sie darf nicht glauben, dass sie über dem Parlament steht. Arbeiter und Unternehmer marschieren zusammen.</p>
+                  <p><pb facs="krp-0123_s01-0004"/>Loewenfeld: Es haben heute zwei Staatssekretäre Beschwerden an der Beamtenschaft geübt mit vollem Recht. Niemand bedauert sehr [r: mehr] diesen Zustand. Wenn die österreichische Beamtenschaft das nicht mehr ist, was sie </p>
+                  <p>war, so haben die politischen Parteien selbst daran schuld. Wenn die Beamten Politiker geworden sind, so haben das die Parteien selbst verschuldet. Im Amte sollen die Beamten </p>
+                  <p>nicht Politik treiben. Die Beamtenschaft wird fortwährend beschimpft. Die Beamtenschaft wird von oben herab diskreditiert, auch von der Presse.</p>
+                  <p>Eldersch: Gewiss ist, dass die Beamtenschaft politisiert, das war aber früher auch der Fall. Welche K[...] hat es früher doch gegeben! </p>
+                  <p>Das Ansehen des Beamten ist natürlich geringer geworden. [Weniger aufgrund der Politisierung], mehr noch [aufgrund] der wirtschaftlichen Lage, für welche die Regierung verantwortlich gemacht wird.</p>
+                  <p>Deutsch: Der von mir angeführte Fall hat mit der Politik gar nichts zu tun (Hornik).</p>
+                  <p>Renner: Der eigentliche Grund [ist], die Beamten stammen aus den Kreisen der Bourg[eoisie]. Eine wirkliche Volksregierung ist den Leuten unverständlich. Sie betrachten sich als eine Partei, die jetzt nicht regiert wie früher. </p>
+                  <p>Das wird sich schon geben. Etwas anderes ist der Fall Deutsch.</p>
+                  <p>Was die Industrie-Konferenz betrifft, werde ich versuchen, dem Verlauf mehr Aufmerksamkeit zuzuwenden. </p>
+                  <p>Alle Schichten der Bevölkerung sind in gleicher Weise unzufrieden.</p>
+                  <p>7. Renner: Erlass an die Länder (1b).</p>
+                  <p>Angenommen.</p>
+                  <p>8. Ramek: Staatsvertrag von St. Germain.</p>
+                  <p>Reisch: Das ist eines der [am] mindesten wichtigen und dringlichen [Gesetze]; es werden noch viele anderen Gesetze kommen müssen. Also ich glaube, dass... </p>
+                  <p>§ 2: 'verbündete und assoziierte Mächte'.</p>
+                  <p>Ramek: Wir können schon warten.</p>
+                  <p>Renner: Einbringung noch zurückhalten bis [alles] beisammen ist ...</p>
+                  <p>Eisler: [Es ist] eine Frage der Arbeitsökonomie, solche politisch gleichgültigen Gesetze nach und nach zu erledigen. Sukzessive in den Ausschüssen bearbeiten lassen.</p>
+                  <p>Renner: Wir werden [es] von uns aus verabschieden, aber noch einige Stücke abwarten, bis wir sie einbringen.</p>
+                  <p>Vom Kabinettsrat aus verabschiedet, mit der Einbringung noch zuzuwarten.</p>
+                  <p>9. Ramek: Urfahr.</p>
+                  <p>Angenommen.</p>
+                  <p>10. Eldersch: -. Angenommen.</p>
+                  <p>11. Stöckler: Gesetz sehr mangelhaft.</p>
+                  <p>Angenommen.</p>
+                  <p>12. Stöckler: Gestütsbranche.</p>
+                  <p>Reisch: Prakt[ikant] nach der D.P. [Dienstpragmatik] unmöglich. </p>
+                  <p>Gestütsbereiter 2. Klasse, 1. Klasse.</p>
+                  <p>Angenommen.</p>
+                  <p><pb facs="krp-0123_s01-0005"/>13. Reisch: 20-Heller-Stücke.</p>
+                  <p><hi rend="#s">Glöckel</hi>: Fink: Wenn man Eisen genommen hat, so sind die Stücke ins Ausland gewandert. Frage, ob nicht noch mehr ins Ausland wandern wird, alles nach Italien.</p>
+                  <p>Reisch: Es wird mehrere Monate dauern, inzwischen werden sich die anderen Staaten hoffentlich das nötige Kleingeld selbst prägen.</p>
+                  <p>Glöckel: [Ich möchte bitten, dass man] noch 10 Tage wartet - künstlerische Form.</p>
+                  <p>Deutsch: Anregung, ob nicht auch eine andere Münze (Scheidemünze) zu prägen wäre. Ob nicht auch [ein] 50-Heller-Stück.</p>
+                  <p>Hanusch: [Ein] 50-Heller-Stück [ist] gewiss notwendig, aber uns fehlt eine Münze mit 10 Heller. </p>
+                  <p>Wenn man schon bei 50 gewinnt, kann man 10 Heller vielleicht ohne Gewinn ausprägen.</p>
+                  <p>50 und 10 [Heller] studiert. Wegen der künstlerischen Ausstattung wird das Staatsamt für Finanzen mit dem Staatsamt für Unterricht Beratungen pflegen.</p>
+                  <p>14. Tandler: Fondsbeamte.</p>
+                  <p>Angenommen.</p>
+                  <p>Schluss ½12 ¾12.</p>
+                  <p>15. Ellenbogen: Kupfer-Zinkhütte. Reisch: Bisher nur grundsätzliche Einigung, in den Details grundsätzliche Zustimmung noch </p>
+                  <p>vorbehalten.</p>
+                  <p>Angenommen.</p>
+                  <p>Renner: [Das Staatsamt für Äußeres ersucht], in Evidenz zu halten alle Fragen, die den Gegenstand eines handels- [und] währungspolitischen Übereinkommens </p>
+                  <p>bilden könnten. Die einzelnen Ressorts mit den Ressorts in der Tschechoslowakei miteinander verhandeln. Beneš </p>
+                  <p>liegt daran, dass diese Sachen zusammengefasst werden und dass über alle möglichen Fragen Übereinkommen rechtzeitig </p>
+                  <p>zustande kommen.</p>
+                  <p>Die einzelnen Ressorts [werden] gebeten, alle Vorbereitungen zu treffen und das Material zu sichten, damit man weiß, </p>
+                  <p>was gegebenenfalls spruchreif wäre und worüber verhandelt werden könnte.</p>
+                  <p>Bittet, in den Staatsämtern die entsprechenden Vorbereitungen zu treffen.</p>
+                  <p>Eldersch: Wenn das Staatsamt des Äußeren mit der Tschechoslowakei darüber verhandeln würde, ob sie nicht gewisse Herren delegieren könnten zu diesen Verhandlungen. </p>
+                  <p>Unsere Bestimmungen sind geändert worden auf die Zuständigkeit, während die Tschechoslowakei [...] Verträge anders festsetzt. </p>
+                  <p>Nur nicht diese weit[...] Verhandlungen. Wenn eine solche kongressartige Verhandlung erfolgt, so muss was Positives herauskommen. Da müssen nun die entsprechenden </p>
+                  <p>Ressorts schon Fühlung genommen haben und man muss vorher schon abgesteckt haben, inwieweit Übereinkommen abgeschlossen werden können oder nicht.</p>
+                  <p>Reisch: [...] Übereinkommen über Ausfolgung der gegenseitigen Depots und der Wertpapiere. Der politische Vertrag steht vor der Unterfertigung und dürfte für die Tschechoslowakei einen guten Vorspann abgeben.</p>
+                  <p/>
+               </div>
+               <div n="2">
+                  <head>[KBR 123, 18. November 1919, Stenogramm B]</head>
+                  <p><pb facs="krp-0123_s02-0001"/>123., 18. /11.</p>
+                  <p>[Zugezogen]: Zedtwitz, </p>
+                  <p>Hoheisel, </p>
+                  <p>Grimm.</p>
+                  <p>Eldersch: </p>
+                  <p>Loewenfeld hat mitgeteilt, dass die große Gefahr besteht, dass er in der nächsten Woche die Brot- und Mehlquote überhaupt nicht oder nur in sehr </p>
+                  <p>gekürztem Maße verteilen wird können. Die Transport[arbeiter] streiken. Wir haben zwar einen Kauf von 3.000 [...] Getreide und Mehl mit Italien gemacht. Die R.C. [Reparationskommission] </p>
+                  <p>hat aber erklärt, dass zu diesem Kauf die Zustimmung des Ob[ersten] Rates notwendig sei, obwohl die Valuta bereits bereitgestellt wurde. Diese Zustimmung ist </p>
+                  <p>noch nicht eingetroffen. Von diesen 30.000 Tonnen liegen 10.000 in Triest zum Verladen bereit, die Waggons sind auch </p>
+                  <p>schon dort. Das Ernährungsamt trachtet durch Dr. Geist in den Besitz dieser Tonnen zu gelangen. Aber auch dazu ist die Zustimmung It[aliens] notwendig. </p>
+                  <p>Kommuniqué notwendig, um die Bevölkerung vorzubereiten.</p>
+                  <p>Zedtwitz: Verliest das Kommuniqué.</p>
+                  <p>Paul: -</p>
+                  <p>Angenommen.</p>
+                  <p>Ellenbogen: Lieferungsvergebungen der staatlichen Betriebe. Wir bemühen uns, das Defizit dieser Betriebe durch Produktionsvergebungen abzuhelfen. </p>
+                  <p>Wir wenden uns zu diesem Zweck auch an die Staatsämter. Dem Staatsamt für Landwirtschaft haben wir Schwefelkohlenstoff angeboten. </p>
+                  <p>Trotzdem hat dieses Staatsamt einen zehnjährigen Lieferungsvertrag mit Wagenmann &amp; Seytel abgeschlossen. </p>
+                  <p>Glücklicherweise soll aus diesem Vertrag nichts werden. Ich bitte aber, dass, wenn wir uns an die Staatsämter wenden, diese nicht mit Privatfabriken, </p>
+                  <p>sondern mit der Staatsfabrik in Blumau abschließen.</p>
+                  <p>?</p>
+                  <p>Zerdik: Wolfsegg, </p>
+                  <p>10.000 Aktien [zu einem Kurs von] 320 [Kronen].</p>
+                  <p>Angenommen.</p>
+                  <p>[Zerdik]: Göbel, Pergelt, T[itel] und Ch[arakter] [eines] Sektionschefs.</p>
+                  <p><pb facs="krp-0123_s02-0002"/>Erhöhung der Postgebühren.</p>
+                  <p>Hoheisel: Gegenwärtig stark passiv, Def[izit] etwa 160 Millionen jährlich. Preissteigerungen im Material und sehr </p>
+                  <p>erhöhte Personalkosten.</p>
+                  <p>100% Erhöhung erforderlich. Im Briefverkehr Relation 1:4, </p>
+                  <p>im Paketverkehr Relation 1:6.</p>
+                  <p>Frage der Ausnahme der Zeitungen von der Erhöhung. </p>
+                  <p>Bei einmaliger Versendung Belastung der Zeitung [...] 96 Heller, die sie aber sicherlich überwälzen.</p>
+                  <p>Paul: Der Verein der Post-, Telegrapheninteressenten hat keine Einwendung gegen die Erhöhungen erhoben.</p>
+                  <p>Fink: Man sollte eine Inseratensteuer einführen.</p>
+                  <p>Deutsch: [Es ist] ungerecht, dass kein Unterschied im Gewicht gemacht wird. Etwa bis 250 Gramm nur 4 Heller, die anderen Zeitungen aber höher. </p>
+                  <p>Oder bis 6 Blätter 4 Heller, darüber höher.</p>
+                  <p>Eldersch: Es ist ein schweres Unrecht, dass die Zeitungen, [die] großkapitalistischen, ein Buch befördern, die anderen aber nicht. </p>
+                  <p>Ich bin ebenfalls für [eine] Differenzierung nach der Seitenzahl.</p>
+                  <p>Hoheisel: Die Zeitungen genießen auf der ganzen Welt eine wesentliche Refaktie, entweder Postabonnement oder die </p>
+                  <p>Einzelfrankierung. Wir haben das letztere bisher eingehalten, Deutschland macht das Postab[onnement], hat aber schlechte Erfahrungen gemacht.</p>
+                  <p>Die individuelle Frankierung scheint mir fast undurchführbar. Sie werden zwischen ½4 und ½6 [Uhr] in ungeheuren Mengen aufgeliefert. </p>
+                  <p>Die Frankierung ist fast unmöglich oder sie erfordert ein solches Personal, dass der Ertrag aufgefressen wird.</p>
+                  <p>Deutsch: Die technischen Schwierigkeiten können doch nicht sehr groß sein. Die Zeitungen werden je nach der Seitenanzahl selbst frankieren, </p>
+                  <p>die Post macht Stichproben. Sind Fehler unterlaufen, so wird nachträglich die Gebühr eingefordert, bzw. besser noch, die Zeitung wird nicht befördert. </p>
+                  <p>Da wird es sich die Zeitung überlegen, noch ein zweites Mal falsch zu frankieren.</p>
+                  <p>Ad Portofreiheit: Es haben nicht allein die Ämter, sondern auch viele Vereine haben die Portofreiheit. Wie steht es damit?</p>
+                  <p>Hoheisel: Das beruht auf gesetzlicher Basis. Es wird ein Gesetzentwurf wegen Einschränkung der Portofreiheit eingebracht werden.</p>
+                  <p>Reisch: Die Anregung, die Zeitungen nach dem Gewicht zu behandeln, ist - ist zutreffend. Es brauchen nur die Zeitungen im vorhinein </p>
+                  <p>aufmerksam gemacht werden, dass nicht ausreichend frankierte Zeitungen nicht befördert werden und dass die Gebühr nachgefordert werden wird.</p>
+                  <p>Eldersch: Keiner Zeitung fällt es ein, zu schwindeln.</p>
+                  <p>Hoheisel: Ich würde es mich nicht getrauen, die Sache hinauszugeben ohne dass die Sache vorher genau studiert wird und mit den Zeitungen </p>
+                  <p>vorher gesprochen wird.</p>
+                  <p><pb facs="krp-0123_s02-0003"/>Resch: Zu einer solchen Belastung der Bevölkerung kann der Kabinettsrat nicht zustimmen ohne vorher die Parteien zu hören.</p>
+                  <p>Hoheisel: Bei uns können alle Gebühren mit V. A. [Vollzugsanweisung] erhöht werden.</p>
+                  <p>Resch: Das formelle Recht bestreite ich nicht, aber es ist doch eine [...].</p>
+                  <p>Deutsch: Scheint mir berechtigt. </p>
+                  <p>Man könnte die Sache den Parteien vorlegen und den Generalpostdirektor einladen, inzwischen ein Elaborat </p>
+                  <p>über die Zeitungsporto nach den Grundsätzen, die das Kabinett beschließt, vor[zu]legen.</p>
+                  <p>Fink: [Ich] stimme Resch und Deutsch zu. Bezüglich der Zeitungen sollen die Erhebungen vom Staatsamt für Verkehr gepflogen werden unter </p>
+                  <p>Zuziehung des Staatsamts für Finanzen.</p>
+                  <p>Glöckel: Man denkt offenbar auch an neue Briefmarken. Ich möchte bitten, dass man die Zeit, die mit Verhandlungen ausgefüllt wird, </p>
+                  <p>auch dazu benützt, um mit den Künstlern Fühlung zu nehmen, damit wir Briefmarken bekommen, die sich am Weltmarkt sehen lassen können.</p>
+                  <p>Renner: Es wird nicht möglich sein, die Parteien mit den Verwaltungssachen zu befassen. Das Kabinett hat ja Vertreter der Parteien. </p>
+                  <p>Die Schwierigkeiten, die Hoheisel sieht, kann ich nicht so hoch einschätzen, dass sie sich nicht bewältigen lassen. </p>
+                  <p>Wir müssen daran gehen, die Zeitungsgebühren so zu erhöhen, dass sie der Leistung des Staates angemessen ist. </p>
+                  <p>Wenn wir das so beschließen, so können ja die Durchführungsmaßnahmen bezüglich der Zeitungen auch nachträglich studiert werden. Über die </p>
+                  <p>Durchführung kann man ja später mit den Zeitungen reden.</p>
+                  <p>Hoheisel: Es ist nicht möglich, dass wir uns bezüglich des Tarifs anders bewegen als die Tarife der umliegenden Länder, weil sonst </p>
+                  <p>die Zeitungsindustrie gefährdet werden könnte.</p>
+                  <p>Renner: Ich schlage vor: Wir schalten die Zeitungsgebühren aus und machen gleichzeitig einen Beschluss kund, dass die Zeitungsgebühren, die ohnedies </p>
+                  <p>seit Jahrzehnten nicht erhöht wurden, angepasst werden müssen und dass der Kabinettsrat beschlossen hat, die Zeitungspostgebühr abzustufen nach </p>
+                  <p>Gewicht und Umfang der Zeitung. Diese Gebühren werden nachträglich kundgemacht werden.</p>
+                  <p>Hoheisel: Schwierigkeiten der Staatsdruckerei, Kohle nur für 14 Tage. Ich hoffe jedoch, dass [die Erhöhung] mit 15. Jänner in Wirksamkeit </p>
+                  <p>treten kann. [Ich] schlage aber vor, dass alles, was nicht Marken kostet, schon früher in Kraft tritt.</p>
+                  <p>Glöckel: Bitte, wenn neue Marken kommen, das Einvernehmen mit dem Staatsamt für Unterricht zu pflegen.</p>
+                  <p>Hoheisel: Neue Marken kommen nicht vor einem Jahr. Jetzt werden nur die bestehenden Marken angepasst.</p>
+                  <p>Mayr: Ich bitte um Studium der Inseratensteuer und uns einen Vorschlag zu machen.</p>
+                  <p><pb facs="krp-0123_s02-0004"/>Reisch: Bisher ist [sie] immer an politischen Erwägungen gescheitert. Ich würde es nur begrüßen.</p>
+                  <p>Renner: Ich bitte, einen solchen Entwurf vorzulegen.</p>
+                  <p>[Hoheisel]: Telegraphengebühren.</p>
+                  <p>Mayr: Ad Beförderungsdauer der Telegramme. Die Länder im Westen leiden sehr darunter, dass die Telegramme oft mit der Briefpost </p>
+                  <p>befördert werden.</p>
+                  <p>Hoheisel: Mit dem Zusammenbruch sind zunächst einmal sämtliche Linien nach Norden von den Tschechoslowaken abgeschnitten worden. </p>
+                  <p>Ähnlich [im] Westen und Süden. Die direkten Leitungen sind unterbrochen, zum Teil durch Schnitte. Es werden so bald als möglich </p>
+                  <p>die Schnell-Telegramme mittels Siemens nach Zürich eingeführt werden. Überlastung der Leitungen.</p>
+                  <p>[Hoheisel]: Fernspr[echgebühren], 100 % Erhöhung.</p>
+                  <p>Eldersch: Missstände.</p>
+                  <p>Hoheisel: Klärt auf, </p>
+                  <p>Staatsgespräche.</p>
+                  <p>Eldersch: Man muss eine Form suchen, dass Unbefugte nicht telefonieren können.</p>
+                  <p>Hoheisel: -.</p>
+                  <p>Glöckel: Sollte man nicht die nicht-dringlichen Staatsgespräche vor den nicht-dringlichen Privatgesprächen rangieren?</p>
+                  <p>Hanusch: Die Erhöhung der Gebühren hat für die Staatsgespräche, soweit Staatsämter in Betracht kommen, keinen Zweck. </p>
+                  <p>Man müsste den Kreis der Ämter einschränken. Rundschreiben an die Staatsämter, dass eine Kontrolle geübt wird.</p>
+                  <p>Paul: [Wir werden] die Erhöhung fallen lassen und [es sollen] die Staatsämter selbst diejenigen Ämter angeben, welche berechtigt sind, Staatsgespräche zu führen und </p>
+                  <p>dass eine Kontrolle innerhalb der Ämter eingeführt wird.</p>
+                  <p>Renner: Man müsste die Ämter klassifizieren.</p>
+                  <p>Reisch: Nicht der Verkehr darf erschwert werden, sondern die Technik muss sich anpassen den gesteigerten Anforderungen.</p>
+                  <p>Die Staatskanzlei wird im Einvernehmen mit der Postdirektion ein Regulativ für die Ämter ausarbeiten und </p>
+                  <p>dem Kabinettsrat unterbreiten.</p>
+                  <p><pb facs="krp-0123_s02-0005"/>Paul: Plenarsitzung der Industriekonferenz. </p>
+                  <p>Heerwesen kritisiert, </p>
+                  <p>auch Verkehrswesen kritisiert. </p>
+                  <p>Gestern ist in dem Sub-Komitee beschlossen worden, in der Plenarsitzung zur Sprache zu bringen, dass das Staatsamt für Verkehr bürokratisch </p>
+                  <p>geführt wird und der Staatssekretär durch einen Industriellen ersetzt werden soll. </p>
+                  <p>Resolution [mit] 12 Forderungen, die für mich zum Großteil unannehmbar sind. </p>
+                  <p>Die Komitees sollen fortbestehen, um eine Kontrolle auszuüben, wie die Forderungen erfüllt worden sind. </p>
+                  <p>Das Kabinett soll beschließen, inwieweit diese Forderungen politisch möglich sind und inwieweit die Beschlüsse der Industriekonferenz als maßgebend </p>
+                  <p>betrachtet werden müssen.</p>
+                  <p>Deutsch: Es wurde dort fortwährend die Liquidierung mit dem Staatsamt für Heerwesen verwechselt. Man konnte dort das </p>
+                  <p>Material nur von einem Beamten des F.A. [Staatsamtes für Finanzen] erhalten haben. Ich muss mich dagegen verwahren, dass Daten, die nur dem Amte </p>
+                  <p>bekannt sind, preisgegeben werden, um dann dort gegen das Staatsamt für Heerwesen ausgespielt zu werden.</p>
+                  <p>Renner: Das beweist, dass in Kreisen der Bevölkerung Missverständnisse herrschen, die aufzuklären Aufgabe der Industriekonferenz gewesen ist.</p>
+                  <p>Hanusch: In der Kommission wäre Zeit gewesen, dass diese Unklarheit zwischen Liquidierung und Heeresamt aufgeklärt wird. </p>
+                  <p>Die Enquete etabliert sich zu einer ständigen Kontrolle der Staatsämter und Staatssekretäre, und diesen Nimbus muss man </p>
+                  <p>der Enquete in der letzten Sitzung - genommen werden.</p>
+                  <p>Loewenfeld: Kritik an der Beamtenschaft. Niemand bedauert das mehr als ich, den Rückgang. </p>
+                  <p>Wenn heute die Beamten, die ehemals österreichische Beamte und unpolitisch waren und das jetzt nicht mehr sind - so haben das </p>
+                  <p>die Parteien selbst hineingetragen. Diskreditierung der Beamten von unten und von oben bis zum St.K. [Staatskanzler].</p>
+                  <p>Eldersch: Gewiss ist durch die Demokratisierung das Ansehen der Beamten geringer geworden. Aber das gerade die Politisierung </p>
+                  <p>das gemacht hat, bezweifle ich.</p>
+                  <p>Deutsch: F.R. Hornik scheint die Sache, wo er hier nicht durchgedrungen ist, jetzt nach außen zu machen.</p>
+                  <p>Renner: Die Beamten stammen vorwiegend aus der Bourgeoisie, eine Volksregierung ist ihnen unverständlich.</p>
+                  <p><hi rend="#s">Was die Industrie-Konferenz betrifft, so</hi> -.</p>
+                  <p><pb facs="krp-0123_s02-0006"/>1. b) Renner: Erlass an die Landesregierungen.</p>
+                  <p>Angenommen.</p>
+                  <p>3. a) Ramek: Gesetz zur Durchführung des § 24 ...</p>
+                  <p>Reisch: Mich wundert, dass gerade dieses Gesetz als erstes Durchführungsgesetz zum Friedensvertrag eingebracht wird. </p>
+                  <p>Man sollte mehrere und wichtigere Gesetze einbringen.</p>
+                  <p>Beantrage Änderung des § 2: 'verbündete und assoziierte Mächte'.</p>
+                  <p>Ramek: Kann stilistisch berücksichtigt werden.</p>
+                  <p>Renner: Die Einbringung zurückhalten bis mehrere Gesetzentwürfe da sind.</p>
+                  <p>Eisler: Im Interesse der Arbeitsökonomie [wäre] doch besser [eine] sukzessive Einbringung.</p>
+                  <p>Renner: Hier erledigen nach Maßgabe der Fertigstellung, aber einbringen erst, wenn mehr vom Justizamt ausgearbeitete </p>
+                  <p>Gesetzentwürfe hier verabschiedet sind.</p>
+                  <p><hi rend="#s">Ramek: Vielleicht doch gleich einbringen.</hi></p>
+                  <p>Vom Kabinettsrat angenommen, mit der Einbringung wird noch zugewartet.</p>
+                  <p>3. b) [Ramek]: Urfahr.</p>
+                  <p>Angenommen.</p>
+                  <p>4. Eldersch: Niederösterreichischer Landtagsbeschluss.</p>
+                  <p>Angenommen.</p>
+                  <p>5. a) Stöckler: Schutz landwirtschaftlicher Grundstücke.</p>
+                  <p>Angenommen.</p>
+                  <p><pb facs="krp-0123_s02-0007"/>5. b) [Stöckler:] Gestütsbranche.</p>
+                  <p>Reisch: Gestütspraktikant geht nicht wegen der D.P. [Dienstpragmatik]. Gestütsbereiter II. Klasse.</p>
+                  <p>Angenommen.</p>
+                  <p>6. Reisch: 20-Heller-Stücke.</p>
+                  <p>Fink: Wenn man Eisen genommen hat, so sind sie, weil sie Hartgeld waren, ins Ausland </p>
+                  <p>gewandert. Ich möchte fragen, ob man, wenn man jetzt besseres Material verwendet - noch mehr ins Ausland wandern wird. </p>
+                  <p>Ob es sich wohl lohnt, Kupfer zu verwenden?</p>
+                  <p>Glöckel: [Ich] möchte bitten, uns noch einen Zeitraum von zehn Tagen zu geben, um einen künstlerischen Entwurf zu übermitteln.</p>
+                  <p>Deutsch: Anregung, noch eine andere Münze zu prägen - 50 Heller.</p>
+                  <p>Reisch: Die großen Stückelungen des Kleingeldes steigern erfahrungsgemäß die Teuerung.</p>
+                  <p>Hanusch: Uns fehlt eine Scheidemünze mit 10 Hellern.</p>
+                  <p>Das Staatsamt für Finanzen wird die drei [...] studieren. Die 20 Heller werden schon gemacht. Das Metall wird </p>
+                  <p>genehmigt. Einvernehmen mit dem Staatsamt für Unterricht wegen der künstlerischen Ausstattung.</p>
+                  <p>7. Tandler: Pensionsbegünstigung für Fondsbeamte.</p>
+                  <p>Angenommen.</p>
+                  <p>Ellenbogen: Kupfer- und Zinkhütte.</p>
+                  <p>Reisch: Bisher nur grundsätzlich im Staatsamt für Finanzen behandelt. </p>
+                  <p>Einvernehmen mit dem Staatsamt für Finanzen. Angenommen.</p>
+                  <p><hi rend="#s">½12 h.</hi></p>
+                  <p><pb facs="krp-0123_s02-0008"/>Renner: </p>
+                  <p>Benesch hat wiederholt durch ?Flieder bei mir angefragt, ob nicht eine Generalaussprache zwischen </p>
+                  <p>den beiden Republiken stattfindet. Fragen der auswärtigen Politik, aber auch alle Fragen der Innenpolitik. Daher werden </p>
+                  <p>alle Ressorts vom Staatsamt für Äußeres eingeladen werden, alle diejenigen Fragen in Evidenz [zu halten], die Gegenstand </p>
+                  <p>eines handelspolitischen und währungspolitischen Übereinkommens bilden können, so dass -.</p>
+                  <p>Die einzelnen Ressorts sind gebeten, alle Vorbereitungen zu treffen, damit man sieht, was spruchreif wäre und worüber verhandelt werden </p>
+                  <p>kann.</p>
+                  <p>Eldersch: Das Staatsamt für Äußeres soll mit der Tschechoslowakei darüber verhandeln, ob sie nicht gewisse Herren delegieren könnten zu diesen Verhandlungen zu vorläufigen Verhandlungen und dass man erst, wenn eine Substanz vorhanden ist, </p>
+                  <p>die offiziellen Verhandlungen führt.</p>
+                  <p>Renner: Damit etwas herauskommt [<hi rend="#i">Einschub:</hi>] bei der Generalaussprache [<hi rend="#i">Einschub Ende</hi>] müssen die einzelnen Ressorts der beiden Staaten miteinander in Fühlung getreten sind [r: sein].</p>
+                  <p>Reisch: Das tschechoslowakische Finanzressort legt größten Wert darauf, dass [ein] Übereinkommen in finanzieller Beziehung so bald als möglich </p>
+                  <p>zustande kommt.</p>
+                  <p>Renner: Die einzelnen Ressortverhandlungen sollen dann in einem feierlichen Akt vereinigt werden. </p>
+                  <p>Die Herren sind eingeladen, nachzudenken, was spruchreif wäre.</p>
+                  <p>½12 h.</p>
+               </div>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

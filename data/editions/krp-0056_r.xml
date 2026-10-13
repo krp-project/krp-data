@@ -1,0 +1,970 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href='http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:acdh="https://vocabs.acdh.oeaw.ac.at/schema#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xml:lang="de">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="a" type="main" n="0056">Kabinettsprotokoll Nr. 56 vom 31. März 1919</title>
+            <title level="m" type="main" n="01">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <title level="m" type="sub" n="">Renner II (15. März – 17. Oktober 1919)</title>
+            <meeting>
+               <placeName key="https://d-nb.info/gnd/4066009-6">Wien</placeName>
+               <orgName key="https://d-nb.info/gnd/5162749-8">Kabinettsrat</orgName>
+               <date when-iso="1919-03-31"/>
+            </meeting>
+            <editor>
+               <persName key="https://d-nb.info/gnd/122481836"
+                         role="hasCreator"
+                         xml:id="hwohnout">
+                  <forename>Helmut</forename>
+                  <surname>Wohnout</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</affiliation>
+               <idno type="ORCID">0000-0002-3864-9839</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/120789825"
+                         role="hasCreator"
+                         xml:id="tolechowski">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0003-3291-6876</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/131679384"
+                         role="hasCreator"
+                         xml:id="rlein">
+                  <forename>Richard</forename>
+                  <surname>Lein</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0002-7502-0503</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="aholzer">
+                  <forename>Anna</forename>
+                  <surname>Holzer</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0005-3560-3500</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="dsoelkner">
+                  <forename>Dominik</forename>
+                  <surname>Sölkner</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-9895-7212</idno>
+            </editor>
+            <editor>
+               <persName role="hasContributor" xml:id="ischotzko">
+                  <forename>Ina</forename>
+                  <surname>Schotzko</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-5210-3713</idno>
+            </editor>
+            <funder n="1">
+               <orgName key="https://d-nb.info/gnd/2054142-9" role="hasFunder">Österreichischer Wissenschaftsfonds FWF</orgName>
+               <idno type="project">PAT1495024</idno>
+               <title type="project">Die Protokolle des österreichischen Kabinettsrates 1919–1920</title>
+            </funder>
+            <respStmt>
+               <resp>Projektverantwortung</resp>
+               <orgName key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Projektleitung</resp>
+               <persName key="https://d-nb.info/gnd/120789825" role="hasPrincipalInvestigator">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+                  <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+                  <idno type="ORCID">0000-0003-3291-6876</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Nationaler Forschungspartner</resp>
+               <orgName key="https://d-nb.info/gnd/1123037736" role="hasEnabler">Austrian Centre for Digital Humanities</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Digitalisierung der gedruckten Quellen</resp>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>TEI-Datenmodellierung</resp>
+               <persName role="hasContributor" xml:id="tfruehwirth">
+                  <forename>Timo</forename>
+                  <surname>Frühwirth</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-3997-5193</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technische Supervision</resp>
+               <persName key="https://d-nb.info/gnd/1043833846"
+                         role="hasContributor"
+                         xml:id="pandorfer">
+                  <forename>Peter</forename>
+                  <surname>Andorfer</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-9575-9372</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technisches Consulting und Vorbereitung der Druckausgabe</resp>
+               <persName key="https://d-nb.info/gnd/13281899X"
+                         role="hasContributor"
+                         xml:id="skurz">
+                  <forename>Stephan</forename>
+                  <surname>Kurz</surname>
+                  <affiliation key="https://d-nb.info/gnd/1202798799">Institut für die Erforschung der Habsburgermonarchie und des Balkanraumes</affiliation>
+                  <idno type="ORCID">0000-0003-2546-2570</idno>
+               </persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher key="https://d-nb.info/gnd/1001454-8">Österreichische Akademie der Wissenschaften</publisher>
+            <date when="2028"/>
+            <availability status="free">
+               <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">Lizenziert unter CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/deed.de)</licence>
+            </availability>
+            <idno type="ISBN_Print"/>
+            <idno type="ISBN_Part_epub"/>
+            <idno type="ISBN_Digital"/>
+            <idno type="DOI"/>
+            <idno type="DOI_zenodo"/>
+            <idno type="ebook_ID"/>
+         </publicationStmt>
+         <seriesStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="m" type="main">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <respStmt>
+               <resp>Bearbeitung und Herausgeberschaft</resp>
+               <orgName key="https://d-nb.info/gnd/2024703-5">Universität Wien</orgName>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+         </seriesStmt>
+         <notesStmt>
+            <note>Diese TEI-XML-Datei ist Grundlage für eine Druckausgabe der Edition.</note>
+            <relatedItem>
+               <biblStruct>
+                  <monogr>
+                     <imprint>
+                        <pubPlace key="https://d-nb.info/gnd/4066009-6">Wien</pubPlace>
+                        <publisher key="https://d-nb.info/gnd/2068748-5">Verlag der Österreichischen Akademie der Wissenschaften</publisher>
+                        <date when="2029"/>
+                     </imprint>
+                     <extent/>
+                  </monogr>
+                  <note>
+              <idno/>
+              <ptr/>
+            </note>
+                  <citedRange/>
+               </biblStruct>
+            </relatedItem>
+         </notesStmt>
+         <sourceDesc>
+            <bibl>Quellbestand: AT-OeStA/AdR MRang MR 1Rep KRP Kabinettsratsprotokolle, 1918-1920 (Teilbestand)<ref target="https://www.archivinformationssystem.at/detail.aspx?id=5465">https://www.archivinformationssystem.at/detail.aspx?id=5465</ref>
+            </bibl>
+            <msDesc>
+               <msIdentifier>
+                  <institution key="https://d-nb.info/gnd/37748-X" role="hasOwner">AT-OeStA Österreichisches Staatsarchiv (Archiv (ÖStA))</institution>
+                  <repository key="https://d-nb.info/gnd/1601181-8">AT-OeStA/AdR Archiv der Republik, 1918- (Abteilung)</repository>
+                  <collection>AT-OeStA/AdR MRang MR 1Rep Ministerrat 1. Republik, 1918 - 1938 (Bestand)</collection>
+                  <idno>AT-OeStA_AdR-MRang-MR-1.-Rep.-KRP-056</idno>
+               </msIdentifier>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <abstract>
+            <p>
+          <!--to be generated-->
+        </p>
+         </abstract>
+      </profileDesc>
+      <encodingDesc>
+         <styleDefDecl scheme="css"/>
+         <tagsDecl>
+            <rendition xml:id="b" scheme="css">font-weight:bold;</rendition>
+            <rendition xml:id="su" scheme="css">vertical-align:super;font-size:.7em;</rendition>
+            <rendition xml:id="s" scheme="css">text-decoration:line-through;</rendition>
+            <rendition xml:id="u" scheme="css">text-decoration:underline;</rendition>
+            <rendition xml:id="ow" scheme="css">text-decoration:line-through;text-decoration-style:double;</rendition>
+            <rendition xml:id="r" scheme="css">display:block;text-align:right;</rendition>
+            <rendition xml:id="letterspaced" scheme="css">letter-spacing:0.15em;</rendition>
+            <rendition xml:id="i" scheme="css">font-style:italic;</rendition>
+         </tagsDecl>
+         <editorialDecl>
+            <hyphenation>
+               <p>
+            <!--to be added-->
+          </p>
+            </hyphenation>
+            <correction>
+               <p>
+            <!--to be added-->
+          </p>
+            </correction>
+            <normalization>
+               <p>
+            <!--to be added-->
+          </p>
+            </normalization>
+            <punctuation>
+               <p>
+            <!--to be added-->
+          </p>
+            </punctuation>
+            <stdVals>
+               <p>
+            <!--to be added-->
+          </p>
+            </stdVals>
+            <p>
+          <!--to be added-->
+        </p>
+         </editorialDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#tfruehwirth" when-iso="2026-10-13">TEIGarage output upconverted with upconvert.xsl</change>
+         <change who="#tfruehwirth" when-iso="2026-10-13">TEI header populated with generate_tei_templates.py</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface/>
+   </facsimile>
+   <text>
+      <body>
+         <div xml:id="doc-krp-0056.xml">
+            <head type="dokument">
+               <title type="num">56.<note type="footnote">Das Protokoll trägt den Vermerk <hi rend="#i">Vertraulich!</hi></note>
+               </title>
+               <title type="desc">
+                  <pb facs="krp-0056_r-0001"/>
+                  <pb facs="krp-0056_r-0002"/>[Montag] 1919-03-31</title>
+            </head>
+            <div type="dokumentkopf">
+               <div type="vorsitz">
+                  <head>Vorsitz:</head>
+                  <p>Renner</p>
+               </div>
+               <div type="anwesend">
+                  <head>Anwesend:</head>
+                  <p>Bauer, Bratusch, Deutsch, Ellenbogen, Fink, Glöckel, Hanusch, Loewenfeld-Russ, Miklas, Paul, Schumpeter, Stöckler, Zerdik</p>
+               </div>
+               <div type="zugezogen">
+                  <head>Zugezogen:</head>
+                  <p>Davy, Durig, Grimm</p>
+               </div>
+               <div type="schriftfuehrer">
+                  <head>Schriftführer:</head>
+                  <p>unbekannt</p>
+               </div>
+               <div type="dauer">
+                  <head>Dauer:</head>
+                  <p>15.00–19.30 Uhr</p>
+               </div>
+            </div>
+            <div type="komponenten">
+               <p>Reinschrift, Beilagen, Konzept, stenographische Mitschrift, Entwurf der Tagesordnung, diverse Zusätze</p>
+            </div>
+            <div type="beilagen">
+               <head>Beilagen:</head>
+               <list>
+                  <item><ref target="#krp-0056_top01">Zu TOP 1</ref>: <ref target="#krp-0056_b01">Umgrenzung des Wirkungskreises des Ministers a.D. Dr. Franz Klein im Staatsamt für Äußeres</ref></item>
+                  <item><ref target="#krp-0056_top06">Zu TOP 6</ref>: <ref target="#krp-0056_b02">Bericht des Staatssekretärs für Volksernährung über die wegen Einfuhren erforderliche Regelung der Mehl- und Brotpreise</ref></item>
+                  <item><ref target="#krp-0056_top06">Zu TOP 6</ref>: <ref target="#krp-0056_b03">Anhang zum Bericht des Staatssekretärs für Volksernährung</ref></item>
+                  <item><ref target="#krp-0056_top07">Zu TOP 7</ref>: <ref target="#krp-0056_b04">Auszug für den Vortrag im Kabinettsrat für ein Gesetz der Provisorischen Steiermärkischen Landesversammlung über Bauerleichterungen für Kleinhäuser</ref></item>
+                  <item><ref target="#krp-0056_top08">Zu TOP 8</ref>: <ref target="#krp-0056_b05">Gesetzesentwurf über die Aufhebung und Ablösung der Jagdrechte auf fremden Grund und Boden samt Begründung</ref></item>
+                  <item><ref target="#krp-0056_top09">Zu TOP 9</ref>: <ref target="#krp-0056_b06">Gesetzesentwurf des Staatsamtes für Landwirtschaft Zl. 6671/1919 über die Ablösung, Neuregulierung und Sicherung der Holz-, Forstproduktenbezugs- und Weiderechte, Information über das Salzburger Servitutsgesetz samt Begründung</ref></item>
+                  <item><ref target="#krp-0056_top10">Zu TOP 10</ref>: <ref target="#krp-0056_b07">Antrag des Staatsamtes für Land- und Forstwirtschaft um Zustimmung zum Beschluss der Steiermärkischen Landesregierung auf Änderungen im Landesjagdgesetz</ref></item>
+                  <item><ref target="#krp-0056_top11">Zu TOP 11</ref>: <ref target="#krp-0056_b08">Antrag des Staatsamtes für Land- und Forstwirtschaft auf Einbringung eines Gesetzes über die Wiederbesiedlung gelegener Bauerngüter und Häusleranwesen samt Begründung</ref></item>
+                  <item><ref target="#krp-0056_top12">Zu TOP 12</ref>: <ref target="#krp-0056_b09">Anträge des zwischenstaatlichen Komitees für Staatsbedienstetenangelegenheiten in Bezug auf das Ansuchen der Zwangspensionisten um Milderung ihrer Lage, Memorandum der Zwangspensionisten samt Bericht des Komitees vom 2. März 1919</ref></item>
+                  <item><ref target="#krp-0056_top13">Zu TOP 13</ref>: <ref target="#krp-0056_b10">Antrag des Staatsamtes für Inneres und Unterricht auf Veräußerung von Kirchenvermögen, dem Verkauf des Währinger Ortsfriedhofes an die Stadtgemeinde Wien</ref></item>
+                  <item><ref target="#krp-0056_top14">Zu TOP 14</ref>: <ref target="#krp-0056_b11">Vollzugsanweisung des Staatsamtes für soziale Verwaltung zum Gesetz über den Schutz von Ziehkindern und unehelichen Kindern samt erläuternden Bemerkungen</ref></item>
+                  <item><ref target="#krp-0056_top15">Zu TOP 15</ref>: <ref target="#krp-0056_b12">Abänderungsanträge zum bereits behandelten Entwurf eines Militärversorgungsgesetzes</ref></item>
+               </list>
+            </div>
+            <div type="protokoll">
+               <pb facs="krp-0056_r-0003"/>
+               <div type="top" xml:id="krp-0056_top01">
+                  <head>
+                     <label>
+                        <num n="1">1.</num>
+                        <seg>Umgrenzung des Wirkungskreises des Ministers a. D. Dr. Franz Klein im Staatsamte für Äußeres.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Bauer</hi> teilt mit, dass er kürzlich im inneren Dienstbereiche des Staatsamtes für Äußeres eine Personalverfügung getroffen habe, deren nachträgliche Genehmigung durch den Kabinettsrat er erbitte. Er habe den bereits seit einiger Zeit in diesem Staatsamt mit der Vorbereitung der Friedensverhandlungen befassten Minister a. D. Dr. Franz Klein mit der Approbation gewisser Akten der politischen Sektion, u. zw. unter selbstverständlicher Aufrechterhaltung der Verantwortlichkeit des Staatssekretärs, betraut. Zu dieser Maßnahme habe er sich in erster Linie aus dem Grunde veranlasst gesehen, weil er durch seine Inanspruchnahme als Präsident der Sozialisierungskommission einer Entlastung dringend bedürfe. Diese Erleichterung beziehe sich nicht nur auf die Approbation kurrenter Angelegenheiten, sondern auch auf die Abnahme gewisser repräsentativer Verpflichtungen, insbesondere der ungemein zahlreichen und zeitraubenden Empfänge. Deshalb <pb facs="krp-0056_r-0004"/>habe Redner eine diesbezügliche Notiz der Presse übergeben lassen, in welcher von einer Betrauung Dr. Kleins mit seiner Stellvertretung die Rede war. Dieser Umstand habe in der Öffentlichkeit gewisse Zweifel hervorgerufen, ob ein solcher Vorgang überhaupt verfassungsrechtlich zulässig erscheine. Der sprechende Staatssekretär halte es unter diesen Umständen für angezeigt, die Angelegenheit dem Kabinettsrat zur Entscheidung vorzulegen. Die Frage stelle sich demnach so dar, dass eine Ausstattung Dr. Kleins mit einer politischen Verantwortlichkeit nicht vorliege, dass er also politische Entscheidungen, die über die kurrenten Agenden hinausgehen, nicht treffen könne. Es liege lediglich ein Fall der staatlichen Beauftragung rein interner Natur mit scharf umgrenztem Wirkungskreis vor. Es werfe sich schließlich noch die Frage auf, ob für diese Personalmaßnahme eine ausdrückliche Ermächtigung des Präsidenten einzuholen sei.</p>
+                  <p>Vizekanzler <hi rend="#letterspaced">Fink</hi> gibt der Anschauung Ausdruck, dass es sich nach dieser Darstellung um eine interne Angelegenheit des Staatsamtes handle, weshalb er die Zustimmung des Kabinettsrates hiezu für ausreichend halte. </p>
+                  <p><pb facs="krp-0056_r-0005"/>Der Kabinettsrat nimmt den Bericht des Staatssekretärs für Äußeres zustimmend zur Kenntnis.</p>
+               </div>
+               <div type="top" xml:id="krp-0056_top02">
+                  <head>
+                     <label>
+                        <num n="2">2.</num>
+                        <seg>Bericht des Staatssekretärs Ing. Zerdik über das Ergebnis seiner Verhandlungen mit dem Deutschen Reiche über die Belieferung Deutschösterreichs mit Kohle.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Ing. <hi rend="#letterspaced">Zerdik</hi> gibt eine eingehende Darstellung seiner in Berlin und Weimar gepflogenen Verhandlungen über die Versorgung Deutschösterreichs mit Kohle. Diese Verhandlungen hätten zu dem Ergebnis geführt, dass uns eine Belieferung mit oberschlesischer Kohle im Ausmaße von 7.500 t pro Tag zugestanden wurde, was gegenüber dem gegenwärtigen Stande eine Erhöhung um 5.000 t bedeute. Der sprechende Staatssekretär erläutert sodann den Aufteilungsschlüssel, den er unter Zugrundelegung der gesamten deutschen Kohlenzuschübe nunmehr für die Versorgung der Bahnen, der Industrie, des Gewerbes, der städtischen Unternehmungen und der Haushaltungen in Aussicht nehme und teilt abschließend mit, dass in beiläufig 14 Tagen noch Verhandlungen in Warschau in der Frage der Kohlenbelieferung aus Polen beginnen werden.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Bauer</hi> regt an, dass der deutschen Reichsregierung für das im vorliegenden Falle bewiese<pb facs="krp-0056_r-0006"/>ne besondere Entgegenkommen der Dank der Staatsregierung ausgedrückt werden möge.</p>
+                  <p>Nach einer kurzen Debatte, an welcher sich außer dem Vorsitzenden und dem Vizekanzler noch die Staatssekretäre Dr. <hi rend="#letterspaced">Loewenfeld-Russ</hi> und <hi rend="#letterspaced">Paul</hi> beteiligten, beschließt der Kabinettsrat aufgrund des Berichtes des Staatssekretärs für Handel und Gewerbe, Industrie und Bauten über das Ergebnis seiner gegenständlichen Verhandlungen in Berlin, dass der deutschen Reichsregierung für diese in Aussicht gestellte Hilfeleistung im Wege des Staatsamtes des Äußeren der wärmste Dank auszusprechen sei.</p>
+               </div>
+               <div type="top" xml:id="krp-0056_top03">
+                  <head>
+                     <label>
+                        <num n="3">3.</num>
+                        <seg>Systemisierungen beim Obersten Gerichtshofe.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. von <hi rend="#letterspaced">Bratusch</hi> erbittet und erhält die Ermächtigung des Kabinettsrates zur Systemisierung des Personalstandes beim deutschösterreichischen Obersten Gerichtshofe. Hienach wären drei Senatspräsidentenstellen und 19 Hofratsstellen zu schaffen, vorbehaltlich weiterer Ernennungen im Falle eines künftighin sich ergebenden Mehrbedarfes. Da die beanspruchte Stellenanzahl gegenüber dem Personalstande des früheren Ober<pb facs="krp-0056_r-0007"/>sten Gerichts- und Kassationshofes unter das für Deutschösterreich als Normalmaß angenommene Verhältnis von 2/5 sinke, erbittet und erhält der sprechende Staatssekretär gleichzeitig die Zustimmung des Kabinettsrates, einen Teil der hiedurch freiwerdenden Mittel für andere Dienststellen verwenden zu dürfen.</p>
+               </div>
+               <div type="top" xml:id="krp-0056_top04">
+                  <head>
+                     <label>
+                        <num n="4">4.</num>
+                        <seg>Kommission zur Erhebung militärischer Pflichtverletzungen.</seg>
+                     </label>
+                  </head>
+                  <p>Der <hi rend="#letterspaced">Staatskanzler</hi> teilt mit, dass der Vorsitzende der Kommission zur Erhebung militärischer Pflichtverletzungen kürzlich bei ihm vorgesprochen und die Zuziehung von fachlichen Mitarbeitern mit dem besonderen Auftrage, die Tatsachen der jüngsten Geschichte festzustellen, angeregt habe. Gleichzeitig hätte er auf die Notwendigkeit der Eröffnung eines staatlichen Kredites für die Kommission hingewiesen sowie die Regelung der Vergütungsfrage für die Kommissionsmitglieder und die herangezogenen Experten sowie entsprechende Vorsorgen bezüglich der Unterbringung der Kommission als dringend notwendig erklärt. Im Sinne dieser Petite unterbreitet der Vorsitzende dem Kabinettsrate nachstehenden Antrag:</p>
+                  <p>„</p>
+                  <list>
+                     <item n="1"><label> 1.)</label> Der Kabinettsrat erstattet dem Präsidenten der Nationalversamm<pb facs="krp-0056_r-0008"/>lung den Vorschlag, als Mitarbeiter der Kommission zur Erhebung militärischer Pflichtverletzungen mit dem besonderen Auftrage, die Tatsachen der jüngsten Geschichte festzustellen, die Herren Heinrich Friedjung und Hugo Schulz zu berufen.</item>
+                     <item n="2"><label>2.)</label> Für die Kommission, die im Wesentlichen vom Parlament eingesetzt ist, wird ein Kredit von 200.000 K beim Kapitel Volksvertretung einzusetzen sein; das Staatsamt für Finanzen wird über diesen Kredit mit dem Präsidenten der Kommission die nötigen Verhandlungen pflegen.</item>
+                     <item n="3"><label>3.)</label> Über die Entschädigung, die den einzelnen Kommissionsmitgliedern und über die Vergütungen, die den von der Kommission herangezogenen Experten im Rahmen dieses Kredites zu leisten sind, wird der Präsident der Kommission selbst dem Staatskanzler generelle Vorschläge zu erstatten haben. Die Zuerkennung der Vergütung bleibt der Kommission oder deren Präsidenten vorbehalten.</item>
+                     <item n="4"><label>4.)</label> Bezüglich der lokalen Unterbringung der Kommission wird das Staatsamt für Handel und Gewerbe, Industrie und Bauten beauftragt, die erforderlichen Maßnahmen zu treffen.“</item>
+                  </list>
+                  <p><pb facs="krp-0056_r-0009"/>Hierüber entwickelte sich eine eingehende Debatte, an der sich Vizekanzler <hi rend="#letterspaced">Fink</hi>, die Staatssekretäre Dr. <hi rend="#letterspaced">Deutsch</hi>, Dr. <hi rend="#letterspaced">Bauer</hi> und Dr. von <hi rend="#letterspaced">Bratusch</hi> sowie Sektionschef Dr. von <hi rend="#letterspaced">Grimm</hi> beteiligten; hiebei trat die Auffassung zutage, dass die Aufgabe der Kommission nicht so sehr in einer wissenschaftlichen Bearbeitung des gesamten Tatsachenmaterials von Kriegsbeginn an liege, dass die Kommission vielmehr ohne Verzug einzelne konkrete Fälle krasser Pflichtverletzungen, für welche das Rechtsgefühl der Bevölkerung eine Sühne verlange, zu untersuchen und damit die Grundlage für eine allfällige strafrechtliche Verfolgung der Schuldigen zu liefern habe.</p>
+                  <p>Vizekanzler <hi rend="#letterspaced">Fink</hi> verweist insbesondere darauf, dass die Kommission seinerzeit vom Staatsrate unter dem Eindruck des regellosen Rückzuges der Armee aus Italien bestellt worden sei, weshalb es in erster Linie auch auf die Klarstellung des Verschuldens in diesen Belangen anzukommen habe.</p>
+                  <p>Der Kabinettsrat genehmigt die vom Vorsitzenden gestellten Anträge und beauftragt gleichzeitig das Staatsamt für Heer[es]wesen, diejenigen <pb facs="krp-0056_r-0010"/>Tatbestände, deren Untersuchung besonders dringlich erscheint, dem Kabinettsrat ehestens bekanntzugeben, der sodann die Kommission anweisen wird, diese Fälle zunächst u. zw. mit der tunlichsten Beschleunigung zu untersuchen.</p>
+               </div>
+               <div type="top" xml:id="krp-0056_top05">
+                  <head>
+                     <label>
+                        <num n="5">5.</num>
+                        <seg>Gemeindewahlordnung für die Städte Waidhofen an derYbbs und Wiener Neustadt; Gesetz über die Durchführung der Landtags- und Gemeinderatswahlen in Wiener Neustadt.</seg>
+                     </label>
+                  </head>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> teilt mit, dass die Provisorische Niederösterreichische Landesversammlung am 28. März 1919 die neue Gemeindewahlordnung für die Städte Wiener Neustadt und Waidhofen an der Ybbs sowie einen Gesetzentwurf über die Durchführung der Landtags- und Gemeindewahlen in Wiener Neustadt beschlossen habe.</p>
+                  <p>Der sprechende Staatskanzler beabsichtige in seiner Eigenschaft als Leiter des Staatsamtes für Inneres und Unterricht gegen diese Gesetzesbeschlüsse namens der Staatsregierung eine Vorstellung nicht zu erheben und der sofortigen Kundmachung dieser Landesgesetze zuzustimmen.</p>
+                  <p>Der Kabinettsrat erteilt dem Vorsitzenden die diesfalls erbetene Ermächtigung.</p>
+                  <p><pb facs="krp-0056_r-0011"/></p>
+               </div>
+               <div type="top" xml:id="krp-0056_top06">
+                  <head>
+                     <label>
+                        <num n="6">6.</num>
+                        <seg>Bericht des Staatssekretärs für Volksernährung über die durch die ausländischen Getreideeinfuhren erforderliche Regelung der Mehl- und Brotpreise.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Loewenfeld-Russ</hi> führt aus, dass die Frage der durch die ausländischen Getreideeinfuhren gebotenen Regelung der Mehl- und Brotpreise den Kabinettsrat bereits wiederholt, insbesondere in der Sitzung am 14. Jänner l. J. beschäftigt habe. Auch seit dieser Zeit sei die Differenz zwischen den Kosten des Ententegetreides und dem Preise, zu welchem das Mehl dem inländischen Konsum übergeben wird, aus staatlichen Mitteln gedeckt worden. Bisher seien ungefähr 50.000 t Ententegetreide zugeschoben worden, weshalb die Belastung das Staatsschatzes bereits eine exorbitante Höhe erreicht habe. Da wir bis zur neuen Ernte noch rund 280.000 t benötigen werden, erscheine es unausweichlich, nunmehr ehestens an die Erhöhung der Brot- und Mehlpreise sowie an die Einführung der im Kabinettsrate bereits seinerzeit behandelten Brotauflage zu schreiten. Immerhin erachte der sprechende Staatssekretär den gegenwärtigen Augenblick zur Erlassung derartiger unpopulärer Maßnahmen nicht für günstig und glaube, dass mit dieser Verfügung noch 8–14 Tage zugewartet werden sollte, zumal in diesem Zeitpunkte bereits Klarheit <pb facs="krp-0056_r-0012"/>darüber bestehen dürfte, ob wir aufgrund der erhöhten Ententezuschübe in der Lage sein werden, gleichzeitig auch mit einer Erhöhung der Quote vorzugehen.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Schumpeter</hi> erklärt sich mit dem 14-tägigen Aufschube unter der Voraussetzung einverstanden, dass zwischen dem Inkrafttreten des Gesetzes über die Brotauflage und der Mehlpreiserhöhung ein Junktim geschaffen werde.</p>
+                  <p>Vizekanzler <hi rend="#letterspaced">Fink</hi> hält gleichfalls den gegenwärtigen Zeitpunkt für eine Mehl- und Brotpreiserhöhung für ungeeignet, unterstützt die Anregung des Staatssekretärs für Finanzen auf Schaffung eines Junktims und beantragt, die Angelegenheit zunächst im Hauptausschusse der Nationalversammlung zur Sprache zu bringen.</p>
+                  <p>Über Vorschlag des <hi rend="#letterspaced">Vorsitzenden</hi> fasst sohin der Kabinettsrat den Beschluss:</p>
+                  <list>
+                     <item n="1"><label>1.)</label> Unter Vorsitz des Vizekanzlers haben die Staatssekretäre für Finanzen, für Volksernährung, soziale Verwaltung und Landwirtschaft am morgigen Tage zusammenzutreten, um über die Frage der gegenständlichen Preiserstellungen schlüssig zu werden. <pb facs="krp-0056_r-0013"/></item>
+                     <item n="2"><label>2.)</label> Das Ergebnis dieser Kabinettskonferenz wird dem Hauptausschusse in seiner nächsten Sitzung (Mittwoch) zu unterbreiten sein, dem gleichzeitig auch der Gesetzentwurf über die Brotauflage vorzulegen wäre.</item>
+                     <item n="3"><label>3.)</label> In diesen Gesetzentwurf hat das vom Staatssekretär für Finanzen gewünschte Junktim Aufnahme zu finden.</item>
+                     <item n="4"><label>4.)</label> Der Staatssekretär für Volksernährung wird beauftragt, eine schriftliche Darstellung der einschlägigen Situation für die Sitzung des Hauptausschusses bereitzuhalten.</item>
+                  </list>
+               </div>
+               <div type="top" xml:id="krp-0056_top07">
+                  <head>
+                     <label>
+                        <num n="7">7.</num>
+                        <seg>Gesetz der Provisorischen Steiermärkischen Landesversammlung über Bauerleichterungen für Kleinhäuser.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Ing. <hi rend="#letterspaced">Zerdik</hi> erbittet und erhält die Ermächtigung des Kabinettsrates, dem Landesrate in Graz im Wege der dortigen Landesregierung eröffnen zu dürfen, dass die Staatsregierung den am 28. Jänner d. J. gefassten Beschluss der Provisorischen Landesversammlung des Landes Steiermark, betreffend die Erlassung eines Gesetzes über Bauerleichterungen für Kleinhäuser, beitritt.</p>
+               </div>
+               <div type="top" xml:id="krp-0056_top08">
+                  <head>
+                     <label>
+                        <num n="8">8.</num>
+                        <seg>Gesetzesentwurf über die Aufhebung und Ablösung der Jagdrechte auf fremden Grund und Boden.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Stöckler</hi> erbittet die Ermächtigung des Kabinetts<pb facs="krp-0056_r-0014"/>rates, sämtlichen Landesregierungen den Entwurf eines Gesetzes über die Aufhebung und Ablösung der Jagdrechte auf fremdem Grund und Boden zur Vorlage an die Landesversammlungen übermitteln zu dürfen (mit Ausnahme des Landes Salzburg, welches ein derartiges Gesetz bereits beschlossen hat).</p>
+                  <p>Der Kabinettsrat erteilt die erbetene Ermächtigung mit der Maßgabe, dass aufgrund einer Anregung des Vizekanzlers <hi rend="#letterspaced">Fink</hi> im ersten Satze des § 6 statt des Wortes „Grundbuchskörper“ die Worte „Grundstücke (Grundbuchskörper)“ aufgenommen sowie dass weiters über Anregung des Sektionschefs Dr. von <hi rend="#letterspaced">Grimm</hi> im letzten Satze des § 6 die Worte „dieselben gesetzlichen Vorrechte wie die Grundsteuer“ durch die Worte „das Vorrecht unmittelbar nach den staatlichen Abgaben“ ersetzt werden.</p>
+                  <p>Gleichzeitig beschließt der Kabinettsrat den Beitritt der Staatsregierung zu dem gleichen Gesetzesbeschlusse der Landesversammlung des Landes Salzburg.</p>
+               </div>
+               <div type="top" xml:id="krp-0056_top09">
+                  <head>
+                     <label>
+                        <num n="9">9.</num>
+                        <seg>Gesetzesentwurf über die Ablösung, Neuregulierung und Sicherung der auf Grund des Kaiserlichen Patentes vom 5. Juli 1853 RGBl. Nr. 130 regulierten Holz-, Forstproduktenbezugs- und Weiderechte.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Stöckler</hi> erbittet die Ermächtigung des Kabinettsrates, sämtlichen Landesregierungen <pb facs="krp-0056_r-0015"/>den Entwurf eines Gesetzes über die Ablösung, Neuregulierung und Sicherung der aufgrund des Kaiserlichen Patentes vom 5. Juli 1853, RGBl. Nr. 130 regulierten Holz-, Forstproduktenbezugs- und Weiderechte zur Vorlage an die Landesversammlungen übermitteln zu dürfen (mit Ausnahme des Landes Salzburg, welches ein derartiges Gesetz bereits beschlossen hat).</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Bauer</hi> gibt zu erwägen, ob durch diese Gesetzesvorlage nicht etwa über einen Teil der zu sozialisierenden Bestände in einem Augenblicke verfügt wird, in welchen man sich über das Ausmaß und die Art der Sozialisierung von Waldungen noch nicht endgiltig im Klaren ist.</p>
+                  <p>Nachdem sowohl der Antragsteller als auch Vizekanzler <hi rend="#letterspaced">Fink</hi> den Standpunkt vertreten und begründet hatten, dass die Sozialisierungsaktion keineswegs erschwert würde, wenn bei Gesetzwerdung dieser Vorlage der Waldbesitz agrarischen Gemeinschaften überantwortet würde, erteilt der Kabinettsrat dem Staatssekretär für Land- und Forstwirtschaft die erbetene Ermächtigung.</p>
+                  <p>Gleichzeitig beschließt der Kabinettsrat den Beitritt der Staatsre<pb facs="krp-0056_r-0016"/>gierung zu dem gleichen Gesetzesbeschlusse der Landesversammlung des Landes Salzburg vom 20. Dezember 1918.</p>
+               </div>
+               <div type="top" xml:id="krp-0056_top10">
+                  <head>
+                     <label>
+                        <num n="10">10.</num>
+                        <seg>Abänderung einzelner Bestimmungen des steiermärkischen Jagdgesetzes vom 21. September 1906, LGBl. Nr. 5 von 1907 durch einen Gesetzesbeschluss der Provisorischen Landesversammlung in Steiermark vom 24. Jänner l. J.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Stöckler</hi> teilt mit, dass die Provisorische Landesversammlung des Landes Steiermark am 24. Jänner 1919 eine Abänderung einzelner Bestimmungen des steiermärkischen Jagdgesetzes vom 21. September 1906, LGBl. Nr. 5 von 1907 beschlossen habe.</p>
+                  <p>Über Antrag des sprechenden Staatssekretärs beschließt der Kabinettsrat den Beitritt der Staatsregierung zu diesem Gesetzesbeschlusse.</p>
+               </div>
+               <div type="top" xml:id="krp-0056_top11">
+                  <head>
+                     <label>
+                        <num n="11">11.</num>
+                        <seg>Gesetz über die Wiederbesiedelung gelegter Bauerngüter und Häusleranwesen (Wiederbesiedelungsgesetz).</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Stöckler erbittet die Ermächtigung des Kabinettsrates zur Einbringung eines Gesetzentwurfes über die Wiederbesiedelung gelegter Bauerngüter und Häusleranwesen (Wiederbesiedelungsgesetz) in der Nationalversammlung.</p>
+                  <p>Staatsekretär Dr. <hi rend="#letterspaced">Bauer</hi> erklärt sich mit den Bestimmungen des Gesetzes in Allgemeinen sehr einver<pb facs="krp-0056_r-0017"/>standen, hegt jedoch gegen einzelne Details der Vorlage Bedenken.</p>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> glaubt, dass allfällige, diesen Bedenken Rechnung tragende Abänderungen der Gesetzesvorlage der Ausschussbehandlung vorbehalten bleiben könnten; lediglich die vom Staatssekretär Dr. <hi rend="#letterspaced">Bauer</hi> angeregte Streichung der Worte „deutscher Stammeszugehörigkeit“ im § 4, al. 3 des Gesetzentwurfes wäre im Hinblicke auf die vom Vorredner vorgebrachten, sehr beachtenswerten politischen Gründe bereits jetzt durchzuführen.</p>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> regt weiters die Zuziehung des Staatssekretärs Dr. Bauer in seiner Eigenschaft als Präsident der Sozialisierungskommission zu den einschlägigen Ausschussberatungen an.</p>
+                  <p>Der Kabinettsrat erteilt dem Staatssekretär für Land- und Forstwirtschaft die erbetene Ermächtigung zur Einbringung dieses Gesetzentwurfes und tritt gleichzeitig den beiden Anregungen des Vorsitzenden bei.</p>
+               </div>
+               <div type="top" xml:id="krp-0056_top12">
+                  <head>
+                     <label>
+                        <num n="12">12.</num>
+                        <seg>Ansuchen der Zwangspensionisten um Milderung der ihnen erwachsenen Schädigung; Frage der Gleichstellung der Militärpensionisten mit den Zivilstaatspensionisten.</seg>
+                     </label>
+                  </head>
+                  <p>In Befolgung des der zwischenstaatsamtlichen Geschäftsstelle für die Behandlung von Staatsbediensteten<pb facs="krp-0056_r-0018"/>angelegenheiten in der Kabinettsratssitzung am 21. März d. J. erteilten Auftrages, berichtet Ministerialrat <hi rend="#letterspaced">Davy</hi> über die Vorschläge, welche diese Geschäftsstelle für die Erledigung des Memorandums der Zwangspensionisten, betreffend die Sicherstellung ihrer materiellen Lage erstattet.</p>
+                  <p>Gleichzeitig berichtet der Genannte über die Stellungnahme des Komitees zur Anregung, des Staatssekretärs Dr. <hi rend="#letterspaced">Deutsch</hi> wegen Gleichstellung der Militärpensionisten mit den Zivilstaatspensionisten.</p>
+                  <p>Dem in einem eingehenden Referate gestellten Antrage tritt der Kabinettsrat bei und beschließt demgemäß:</p>
+                  <list>
+                     <item n="1"><label>1.)</label> Allen verheirateten oder gleichzuhaltenden Zivilstaatsbediensteten, die von der deutschösterreichischen Republik aufgrund des Kabinettsratsbeschlusses vom 23. November 1918 (Pkt.II, Zl. 1 der Richtlinien) pensioniert worden sind, wird rückwirkend von dem auf ihre Versetzung in den Ruhestand folgenden Monatsersten bis Ende Juni 1919 eine Ergänzung ihrer im Ruhestande genossenen Teuerungsbezüge auf das volle Ausmaß jener Teuerungsbezüge gewährt, die sie erhalten hätten, wenn sie bis 30. Juni 1919 in Aktivität verblieben wären.<pb facs="krp-0056_r-0019"/></item>
+                     <item n="2"><label>2.)</label> Zu Gunsten solcher Pensionisten, soweit sie bei Verbleiben in der Aktivität im Laufe des Jahres 1919 unter Anrechnung der Kriegshalbjahre in einen höheren Bezug vorgerückt wären, können die Staatsämter in einzelnen rücksichtswürdigen Fällen gnadenweise Zulagen erwirken.</item>
+                     <item n="3"><label>3.)</label> Die gedachten Pensionisten können ferner, soweit es die im einzelnen Fall obwaltenden Verhältnisse und insbesondere die Unterkunftsbedürfnisse des Amtsnachfolgers gestatten, bis längstens 1. Februar 1920 im Genusse der ihnen allfällig zugestandenen Dienst- oder Naturalwohnung belassen werden, und erhalten, sofern dies nicht möglich ist, einen angemessenem Geldbetrag im Höchstausmaß der auf ein Vierteljahr entfallenden Aktivitätszulagen.</item>
+                     <item n="4"><label>4.)</label> Insoweit die Verteilung von Lebensmitteln in Frage kommt, ist den gedachten Pensionisten wie schon bisher nach Maßgabe der vorhandenen oder erlangbaren Bestände die gleiche Anteilnahme an deren Verteilung wie den aktiven Staatsbediensteten zu gewähren. Ebenso werden sie, falls Güter der Sachdemobilisierung zur Verteilung kommen sollten, zur Teilnahme daran zuzulassen sein. <pb facs="krp-0056_r-0020"/></item>
+                     <item n="5"><label>5.)</label> Verdienten Beamten, deren Auszeichnung durch Verleihung eines höheren Amtstitels anlässlich der Versetzung in den Ruhestand etwa nur im Drange der Ereignisse unterblieben sein sollte, werden die Staatsämter diese Auszeichnung nachträglich in der üblichen Weise zukommen lassen.</item>
+                     <item n="6"><label>6.)</label> Die seit Errichtung der deutschösterreichischen Republik pensionierten Militärgagisten deutschösterreichischer Staatsbürgerschaft und deutscher Nationalität werden vom 1. Jänner 1919 angefangen hinsichtlich der Gesamtwirkung der Teuerungsmaßnahmen den seit 23. November 1918 in den Ruhestand versetzten deutschösterreichischen Zivilstaatsbediensteten gleichgestellt.</item>
+                     <item n="7"><label>7.)</label> Die Steuern und Quittungsstempel von den Versorgungsgebühren der militärischen Personen und ihrer Hinterbliebenen werden ebenso und auf die gleiche Dauer wie bei den deutschösterreichischen Zivi1staatabediensteten und deren Hinterbliebenen vom Staat zur Zahlung übernommen.</item>
+                     <item n="8"><label>8.)</label> Alle über eine bloße Gleichstellung mit den unter Pkt. 1 bezeichneten Zivilpensionisten hinausgehenden Maßnahmen zu Gunsten von Militärpersonen deutschösterreichischer Staatsbür<pb facs="krp-0056_r-0021"/>gerschaft und deutscher Nationalität, insbesondere solche zur Verbesserung der Versorgungsgenüsse der Gagisten, die schon vor Errichtung der deutschösterreichischen Republik pensioniert worden sind, dann der pensionierten Berufsunteroffiziere, ferner der Hinterbliebenen von Militärpersonen, nach dem Vorbild der Versorgungsgenüsse der deutschösterreichischen Zivilstaatsbediensteten und ihrer Hinterbliebenen, bleiben der abgesonderten Regelung durch die Gesetzgebung vorbehalten.</item>
+                  </list>
+               </div>
+               <div type="top" xml:id="krp-0056_top13">
+                  <head>
+                     <label>
+                        <num n="13">13.</num>
+                        <seg>Verkauf des Währinger Ortsfriedhofes an die Stadtgemeinde Wien zur Errichtung einer Parkanlage.</seg>
+                     </label>
+                  </head>
+                  <p>Unterstaatssekretär <hi rend="#letterspaced">Miklas</hi> teilt mit, dass die Pfarrkirche Währing den ihr gehörigen Friedhof um den Betrag von 640.000 K an die Gemeinde Wien verkauft hat.</p>
+                  <p>Aus dem Kaufschilling sollen die mit dem Umbaue der Pfarrkirche bzw. Pfarrhofbau verbundenen Kosten bestritten werden, während die Gemeinde Wien den Friedhof zu einer Gartenanlage umzugestalten gedenkt.</p>
+                  <p>Im Hinblick darauf, dass das Rechtsgeschäft für die Pfarrkirche vorteilhaft ist und eine volle Einigung zwischen der Zentralkommission für Denkmal<pb facs="krp-0056_r-0022"/>pflege und der Gemeinde Wien erzielt wurde, obwalte – bei vorliegender Zustimmung des fürsterzbischöflichen Ordinariates und der Landesregierung – gegen die – nunmehr gemäß Art. 6 Abs. 1 des Gesetzes vom 14. März 1919, StGBl. Nr. 180, in den Wirkungskreis der Staatsregierung, sohin des Kabinettsrates fallende – Genehmigung dieser Transaktion keine Bedenken.</p>
+                  <p>Der sprechende Unterstaatssekretär erbittet und erhält sohin die Ermächtigung zu dieser Transaktion die staatliche Bewilligung erteilen zu dürfen.</p>
+               </div>
+               <div type="top" xml:id="krp-0056_top14">
+                  <head>
+                     <label>
+                        <num n="14">14.</num>
+                        <seg>Vollzugsanweisung, des Staatsamtes für soziale Verwaltung zum Gesetze über den Schutz von Ziehkindern und unehelichen Kindern (Ziehkinderordnung).</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Hanusch</hi> erbittet die Ermächtigung zur Erlassung einer Vollzugsanweisung zum Gesetze über den Schutz von Ziehkindern und unehelichen Kindern (Ziehkinderordnung).</p>
+                  <p>Nach einer Erläuterung der Bestimmungen dieser Vollzugsanweisung durch den Referenten erteilt der Kabinettsrat die erbetene Ermächtigung mit der Maßgabe, dass im Sinne einer vom Vizekanzler <hi rend="#letterspaced">Fink</hi> gemachten Anregung im § 17, al. 2 nach dem Worte „Witterungsverhältnisse“ die Worte „und weite Entfernungen“ einzufügen sind.</p>
+                  <p><pb facs="krp-0056_r-0023"/></p>
+               </div>
+               <div type="top" xml:id="krp-0056_top15">
+                  <head>
+                     <label>
+                        <num n="15">15.</num>
+                        <seg>Abänderung einiger Bestimmungen des Entwurfes eines Militärversorgungsgesetzes.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Hanusch</hi> weist darauf hin, dass die Vertrauensmänner der Kriegsbeschädigten gegen den bereits vom Kabinettsrat in der Sitzung am 17. März d. J. behandelten Entwurf eines Gesetzes über Versorgungsansprüche aus Anlass militärischer Dienstleistungen (Militärversorgungsgesetz) Einwendungen erhoben haben.</p>
+                  <p>Der sprechende Staatssekretär könne sich der Stichhaltigkeit dieser Wünsche nicht verschließen und beantrage demgemäß einige Abänderungen dieses Gesetzentwurfes.</p>
+                  <p>Diese Abänderungen beziehen sich einerseits auf den Titel des Gesetzes, der nunmehr zu lauten hätte „Gesetz über Vergütungsansprüche aus Anlass militärischer Dienstleistungen (Invaliden- und Hinterbliebenenversorgungsgesetz)“ andererseits auf eine Reihe von Erhöhungen der Leistungen an die aus diesem Gesetze Bezugsberechtigten. Nach einer eingehenden Darstellung der diesfalls in Betracht kommenden Positionen, die eine ziffernmäßige Erhöhung bzw. Abänderung erfahren sollen, erbit<pb facs="krp-0056_r-0024"/>tet der sprechende Staatssekretär die Zustimmung des Kabinettsrates zu diesen seinen Vorschlägen.</p>
+                  <p>Im Auftrage des augenblicklich, abwesenden Staatssekretärs für Finanzen erklärt Sektionschef Dr. von <hi rend="#letterspaced">Grimm</hi>, dass sich die Finanzverwaltung gegen die beantragten Abänderungen des Gesetzentwurfes deshalb entschiedenst aussprechen müsse, weil es sich hiebei um eine dauernde Mehrbelastung des Staatsschatzes handle.</p>
+                  <p>Nachdem Staatssekretär <hi rend="#letterspaced">Hanusch</hi> die Gründe, die ihn zu diesen Vorschlägen veranlassten, eingehend dargestellt hatte, schließt sich der Kabinettsrat der Auffassung des Referenten an und genehmigt sohin dessen Antrag.</p>
+                  <p/>
+               </div>
+            </div>
+            <div type="stenogramme">
+               <div n="1">
+                  <head>[KBR 56, 31. März 1919, Stenogramm A]</head>
+                  <p><pb facs="krp-0056_s01-0001"/>56., 31. /3.</p>
+                  <p>[<hi rend="#i">Rechtes Obereck:</hi>] [Zugezogen:] Durig</p>
+                  <p>1. Bauer: Bittet um nachträgliche Genehmigung einer Verfügung, die [er] getroffen hat im inneren Dienstbereich. Durch die Sozialisierung belastet, Vertretung gebraucht zu seiner Entlastung. </p>
+                  <p>Zu diesem Zweck Dr. Klein, der ohnehin schon mit der Vorbereitung der Friedensverhandlungen betraut.</p>
+                  <p>1.) Appr[obation] gewisser Akten der politischen Sektion, die [ich] bisher selbst appr[obiert habe] (mit der Verantwortung nach außen nichts gemein). </p>
+                  <p>In der Zeitungsmitteilung war überdies von Stellvertretung die Rede; gemeint: [jeden] Tag Unmenge Menschen zu empfangen, Sektionschef und Dep[artement]-Chef genügt </p>
+                  <p>nicht den Leuten. Deshalb von Stellvertretung gesprochen worden, damit nach außen hin als Stellvertreter.</p>
+                  <p>Da Zweifel geäußert worden sind, ob ein Staatssekretär solche Verfügungen treffen kann, so halte ich es für gut, [es] dem Kabinettsrat zur Entscheidung vorzulegen, [ob es] in aller </p>
+                  <p>Form beim Präsidenten beantragt und genehmigt werden [muss]. Es liegt keine Ernennung vor, nur Erweiterung seiner Kompetenz.</p>
+                  <p>Fink: Wenn es sich nur um eine interne Angelegenheit handelt, ist dies Sache des Staatssekretärs.</p>
+                  <p>Renner: Dr. Klein hat einen Amtsauftrag gehabt: die Vorbereitung der Friedensverträge und die Ausarbeitung der darauf bezüglichen Vorlagen.</p>
+                  <p>Bauer: Habe Klein zu vielen Dingen herangezogen. </p>
+                  <p>Kein Vertragsbeamtenverhältnis, weil er keine Bezüge verlangt: es liegt ein Fall der staatlichen Beauftragung vor (angelobt).</p>
+                  <p>[Renner:] Dieses Verhältnis ist erweitert worden dadurch, dass er für die laufenden Agenden der politischen Sektion die Revision hat. Das ist ganz intern. Verlautbart ist dies worden, weil </p>
+                  <p>in allen Angelegenheiten die nicht politischen Charakter haben, der Staatssekretär entlastet werden soll von Empfängen. Um Dr. Klein mit diesen Empfängen belasten zu können, </p>
+                  <p>wurde das verlautbart. Ein politisches Vertretungsverhältnis liegt nicht vor. Vier Mitglieder des Hauptausschusses [haben] sowohl bei Renner als bei Seitz vorgesprochen, aufgeklärt. </p>
+                  <p>Glaube, dass diese zur Kenntnis genommen wurde. Eine politische Betrauung ist damit nicht gegeben. </p>
+                  <p><hi rend="#s">Keinerlei Betrauung mit</hi> - Politische Entscheidungen <hi rend="#s">von großer Tragweite kann</hi> -, die über die laufenden Agenden hinausgehen, stehen Klein nicht zu. </p>
+                  <p>(Staatliches Auftragsverhältnis, das nicht mit Beamtung verbunden ist) (angelobt).</p>
+                  <p>Kabinettsrat nimmt dies zur Kenntnis.</p>
+                  <p>2. Zerdik: Ergebnis der Kohlenreise nach Berlin. </p>
+                  <p>Dem Kabinett Grüße ?Scheidmann entbieten. Mit Geheimrat Stutz Verhandlung hat kein Ergebnis gezeitigt. Abgebrochen, [um] politische Deckung nach </p>
+                  <p>Weimar gefahren. Die maßgebenden Faktoren haben dort die Berechtigung unserer Forderungen anerkannt. Endlich gelungen, 7.500 t täglich aus Oberschlesien. </p>
+                  <p>Die gesamte Einfuhr an niederschlesischer Kohle wird den Bahnen zugeführt werden.</p>
+                  <p>Wirkungen für die Industrie: von den 7.500 den Bahnen 2.500 t und die ganze niederschlesische (Voraussetzung Schnellzugverbindung </p>
+                  <p>Wien - Bregenz, wenigstens an den zwei Tagen, an denen schon bis Inns[bruck]). Dem Gewerbe und Hausbrand 2.000, </p>
+                  <p>Gaswerk 500, Elektrowerk. </p>
+                  <p>Insgesamt 5.550, verbleiben 1.950 t Täglicher Industriebedarf: 7.062 t., </p>
+                  <p>Möglichkeit, täglich rund 2.000 t zuzuwenden. Dazu kommt niederschlesische und westfälische [Kohle], die nicht einbezogen ist.</p>
+                  <p>In 14 Tagen Verhandlungen aufgenommen mit den Polen in Warschau, wo noch eine Waggon-Frage zu regeln ist. Preis nicht mehr so groß wie früher (Höchstpreis).</p>
+                  <p>Von Hartmann [ist der] Wunsch geäußert worden, dass in den Verfassungsausschuss [ein Delegierter entsandt wird] - und Austausch von Beamten.</p>
+                  <p>Bauer: Kohlensache: möchte raten, dass man der deutschen Reichsregierung den Dank ausspricht für dieses Entgegenkommen. Vielleicht, dass Zerdik der National[versammlung] mitteilt und dann herzliche Dankesworte richtet. </p>
+                  <p>Oder Kundgebung des Kabinetts. Was die Frage der Delegierung in den Verfassungsausschuss und Austausch [von Beamten anlangt]: kann vertagt werden, weil Hartmann übermorgen nach Wien kommt.</p>
+                  <p><pb facs="krp-0056_s01-0002"/>Loewenfeld: Schwierige Situation gegenüber Bauer. Wir hängen ganz von der Entente ab. Was den offiziellen Dank betrifft (Nationalversammlung), hat Redner Bedenken. Wir verhandeln wegen wesentlich erhöhten Zuschüben.</p>
+                  <p>Bauer: Es ließe sich leicht eine Form wählen. Etwa in Form der Beantwortung einer Interpellation unter Anschluss eines Dankes.</p>
+                  <p>Renner: Kabinettsrat beschließt: spricht aufgrund des Berichtes des Staatssekretärs für ... über das Ergebnis der Verhandlungen über die Kohlenbelieferung [<hi rend="#i">Einschub:</hi>] in Berlin [<hi rend="#i">Einschub Ende</hi>], für die Hilfeleistung ... </p>
+                  <p>dem Deutschen Reich den herzlichsten Dank aus.</p>
+                  <p>Bauer: Dieser Dank an Deutschland ohne eine Spitze gegen einen anderen (Tschechen insbesondere); die Entente scheint gerade jetzt zu intervenieren zu unseren Gunsten.</p>
+                  <p>Fink: Ist für den Antrag Bauers (im Parlament und Kabinettsrat). Den Befürchtungen Loewenfelds könnte man begegnen: wenn die Entente uns mehr gibt, dass dort auch gedankt wird.</p>
+                  <p>Paul: Alberti [ist] sehr nervös; [er ist] bereit, alles zu tun, um [<hi rend="#i">Einschub:</hi>] zu helfen und eventuell [<hi rend="#i">Einschub Ende</hi>] mit den Eisenbahnern selbst zu sprechen.</p>
+                  <p>3. Schumpeter: a) Ein einstiger reichsdeutscher Beamter im Staatsamt für Finanzen nicht möglich. [Es würde] Verstimmung erregen und [ist] nicht notwendig. (Nachteil für den Dienst).</p>
+                  <p>b) Zunächst werden immer wieder die Akten zu einem Zeitpunkt zugestellt, ohne sie zu studieren. </p>
+                  <p>In allen Ressorts geschehen Dinge, die gesetzmäßig beim Finanzministerium ressortieren. </p>
+                  <p>Für uns sehr wesentlich, dass wir nicht weiter zu Ausgaben gedrängt werden.</p>
+                  <p>c) Der finanzielle Horizont verdüstert sich, [Maßnahmen] wie die Vermögensabgabe selbst sind durch die politische Situation erschwert.</p>
+                  <p>d) Für die Durchführung [der] Vermögensabgabe ist ein sehr großer Personalzuwachs notwendig (für Niederösterreich allein 2-300 Leute). Bittet, ihm Leute zur Verfügung zu stellen.</p>
+                  <p>e) Unvermeidlich, dass eine Aktion nachgeholt wird, die schon lange hätte gemacht werden sollen: die Nostrif[ikation] unserer Kriegsanleihe. </p>
+                  <p>Redner [ge]denkt, sich zu beschränkt auf gewisse Teile der Kriegsanleihe. Die Methode: durch Zwangsdeponierung bei den Banken, Sparkassen, Steuerämtern (in kürze). </p>
+                  <p>Wir müssen energischer sein wie bisher. Wenn es aber dann Protestversammlungen gibt, dürfen wir nicht umfallen.</p>
+                  <p>f) Es ist notwendig, dass wir bezüglich der weiteren Banknoten-Umwechslung sehr vorsichtig vorgehen, sonst bekommen wir Unmengen von Ungarn herein.</p>
+                  <p>g) Die Volksbekleidungsaktion hat [uns] auch [das] Messer an die Kehle gesetzt (30 Millionen gefordert). Das muss abgebaut werden.</p>
+                  <p>h) Nicht-Befriedigung von Forderungen des Ärars; die Rechnungen des alten Ärars können wir nicht glatt zahlen (d[eutsch]-böhm[ische] Gagisten).</p>
+                  <p>i) Unter Drohung von Waffengewalt darf man nicht alles nachgeben. Protest an Staatskanzler [wegen] Volkswehr-Untersuchung.</p>
+                  <p><hi rend="#s">Renner: Zur</hi> -.</p>
+                  <p>Loewenfeld: Die Nachschau [ist in Wien] geregelt, es geschieht jetzt anscheinend nicht mehr. Dagegen am Land noch nicht in reine Bahnen gebracht. Die Volkswehr läßt uns nichts nach Wien </p>
+                  <p>bringen. Bauernschaft lehnt sich auf.</p>
+                  <p>Stöckler: Draußen wird es so unheimlich (Melk, Schranke). In Oberösterreich [nimmt die] Hetze unerhört zu — [keine Lieferungen] außer mit Bestechungen. Wiener Pferdestand dadurch </p>
+                  <p>einer Katastrophe entgegen gehend.</p>
+                  <p>Deutsch: Die Volkswehr wird für Dinge verantwortlich gemacht, die sie nichts angehen. Es ist bezüglich der Bestechungen nicht möglich, einen konkreten Fall zu erhalten. Ungeheure Übertreibungen werden dabei laut.</p>
+                  <p>Renner: Der Fehler ist gemacht worden im Frühjahr 1915 (dass man überhaupt den Ernährungsdienst verländert und dann innerhalb der Länder den einzelnen Bezirkshauptmannschaften überlassen hat). </p>
+                  <p>Dieser Fehler rächt sich heute. Heute macht jeder Mensch seine eigene Ernährungspolitik. Wenn die Gefahr besteht, wie Loewenfeld sagt, wird nichts übrigbleiben </p>
+                  <p>als einen direkten Ernährungsdienst einzurichten (staatlich von oben bis unten). Redner möchte die Anregung geben, zu prüfen, ob man nicht aus den Orts- und </p>
+                  <p>Bezirkswirtschaftsämtern, die nur durch einen Erlass begründet [sind], durch Gesetz einen staatlichen Ernährungsdienst schafft, der uns von der Ingerenz der Länder und Bezirke </p>
+                  <p>befreit. Bevor wir zugrunde gehen, müssen wir vielleicht auch dies versuchen.</p>
+                  <p>Loewenfeld: Dieser Versuch ist von mir bereits gemacht worden - ganz erfolglos. Wenn ich die Unterstützung des Kabinettsrates habe, werde ich diese Frage wieder aufleben lassen.</p>
+                  <p><pb facs="krp-0056_s01-0003"/>Renner: Bei der Länderkonferenz wäre die Sache wieder zur Sprache zu bringen.</p>
+                  <p><hi rend="#s">Beschluss: allgemeine Finanzpolitik</hi> -.</p>
+                  <p>Hanusch: Schumpeter hat sich beschwert, dass die Sachen [<hi rend="#i">Einschub:</hi>] ihm [<hi rend="#i">Einschub Ende</hi>] so spät zukommen, so dass er sie nicht mehr studieren kann.</p>
+                  <p>Grimm: In welch kritischer Situation wir arbeiten. Alles wesentliche in den einzelnen Staatsämtern vereinigt sich bei uns. </p>
+                  <p>15. IV. Neusystemisierung!!</p>
+                  <p>Beschluss: allgemeine Finanzpolitik in einer eigenen Kabinettsratssitzung.</p>
+                  <p>4. [Renner:] Staatsfeiertag 12. /11.</p>
+                  <p>Bauer: Jetzt warnt er vor einem solchen Beschluss. Antrag zu vertagen.</p>
+                  <p>Zerdik: Wir können neben Deutschland -.</p>
+                  <p>Renner: Noch zurückgestellt.</p>
+                  <p>5. Oberster Gerichtshof. Bratusch: Nach §3 des Gesetzes wird – </p>
+                  <p>4 Senate müssen bestehen (zwei zivile und zwei Strafsenate). Es müsste noch einer ernannt werden, Markhl. </p>
+                  <p>Die drei bereits übernommen, die 18 übernommenen Hofräte und Markl. Bleibt unter zwei Fünftel zurück.</p>
+                  <p>Angenommen.</p>
+                  <p>[<hi rend="#i">Rechter Rand:</hi>] Drei Senatspräsidenten, </p>
+                  <p>19 Hofräte </p>
+                  <p>vorbehaltlich weiterer Ernennung im </p>
+                  <p>Falle des Bedarfs </p>
+                  <p>und Verwendung eines Teils des dadurch freiwerdenden </p>
+                  <p>Fonds für andere Dienststellen.</p>
+                  <p>6. [Renner:] Kommission [zur Untersuchung von] Pflichtverletzungen der Armee.</p>
+                  <p>Grimm: Bevollmächtigtenkonferenz (oberster Rechenhof steht auch auf dem Standpunkt, dass dies die Liquidierungsmasse betrifft).</p>
+                  <p>Antrag: dass wir vorschussweise einen Betrag von 100.000 Kronen zur Verfügung stellen bis die Verrechnungsfrage geeinigt ist.</p>
+                  <p>Deutsch: Die finanzielle Frage: Kredit in dieser Höhe scheint mir nicht notwendig. Das wird eine Gelehrtenarbeit. Man legt mehr Gewicht [darauf], einzelne Fälle zu untersuchen und bald mit einem Resultat zu kommen. </p>
+                  <p>Die Untersuchung soll in Anlehnung an den amtlichen Apparat gemacht werden.</p>
+                  <p>Renner: Löffler.</p>
+                  <p>Bauer: Bevollmächtigungskollegium, schade um die Sitzung, es ist dies ganz aussichtslos. </p>
+                  <p>Man sollte Löffler klar machen, warum die Kommission eingesetzt wurde. Das Volk will eine Sühne, besonders die letzten Ereignisse. Das Bedürfnis nach Sühne soll befriedigt werden. </p>
+                  <p>Konkrete Beschwerden wegen des Davonlaufens der Stäbe. Ein zweiter Komplex von Fragen sind sanitäre Fragen (Rückzug der Truppen aus Albanien). </p>
+                  <p>Das hätte schon längst fertig sein können. [Die] Kommission muss begreifen, dass ihre Kompetenz nicht ist, alle möglichen Fälle zu untersuchen, sondern nur die, wo Beschuldigungen [vorliegen], welche das Volk geklärt sehen will. </p>
+                  <p>Der Kommission ist zu sagen, dass wir entrüstet sind darüber, dass sie noch nichts gemacht hat.</p>
+                  <p>Renner: Die Kommission ist noch nicht zur Arbeit gekommen. Staatsrat hat [sie] ernannt, [der] halbe Teil hat zurückgelegt die Berufung. Ersatzernennungen sind - Ersatzvorschläge sind sehr mangelhaft erstattet worden. Erst in den letzten Tagen ist die </p>
+                  <p>Kommission zusammen getreten. Entschädigungen an die Mitglieder der Kommission.</p>
+                  <p>Fink: <hi rend="#s">Einverstanden, dass jemand bestimmt wird</hi>. Habe immer gewartet darauf, was herauskommt wegen des italienischen Rückzuges. Wir werden also einen Kredit bestimmen müssen, aber man sollte zunächst im Kabinettsrat </p>
+                  <p>bestimmen, welche Angelegenheiten jetzt zu studieren sind.</p>
+                  <p>Bratusch: Was die Kommission zu tun hat, ist im Gesetz genau vorgeschrieben.</p>
+                  <p>Grimm: 200.000 würden vorgesehen werden vom Staatsamt für Finanzen.</p>
+                  <p><hi rend="#s">Deutsch: Auftrag des Kabinettsrates.</hi></p>
+                  <p>Renner: Heerwesen ist beauftragt, diejenigen Tatbestände, deren Untersuchung es zunächst für geboten hält, zunächst zu beschreiben. </p>
+                  <p><pb facs="krp-0056_s01-0004"/>Die Kommission wird den Auftrag bekommen, diese Fälle zunächst und mit der tunlichsten Beschleunigung zu bearbeiten.</p>
+                  <p>7. [Renner:] Waidhofen und Wr. Neustadt.</p>
+                  <p>Angenommen.</p>
+                  <p>8. Loewenfeld: Will die Angelegenheit kurz erklären. </p>
+                  <p>Wir bekommen täglich [eine] Menge ausländisches Mehl und geben dieses Mehl zum inländischen Preis ab. Dieser Preis ist niedriger als der Preis, den uns das Getreide kostet. </p>
+                  <p>Um wieviel der Staat darauf zahlt, kann nicht berechnet werden. Unser Bedarf ist eine feststehende Ziffer. Wieviel wir aus dem Ausland aber wirklich beziehen, ist eine unsichere Sache. </p>
+                  <p>Wir brauchen täglich 1.200 t Getreide. Wenn wir 300 Gramm geben würden, würden wir 1.800 t brauchen. </p>
+                  <p>Bisher rund 50.000 t. von der Entente bekommen. Wir würden weiter 277-281.000 t. benötigen. Dabei unsicher der Preis, den wir </p>
+                  <p>der Entente zahlen werden. Einen Fixpreis hat uns die Entente überhaupt noch nicht bekannt gegeben.</p>
+                  <p>Ein effektiver Getreide- oder Mehlpreis ist also nicht herauszurechnen im gegenwärtigen Augenblick. Sicher ist aber, dass wir das Mehl teurer bezahlen </p>
+                  <p>an das Ausland als wir es abgeben an den Konsum.</p>
+                  <p>Welchen Mehlpreis also sollen wir festsetzen, um den Staat vor weiteren Verlusten zu bewahren?</p>
+                  <p>Vor einiger Zeit haben wir den Antrag gestellt, man möge die Mehlpreise so festsetzen, damit wir später keine Verluste erleiden. </p>
+                  <p>[<hi rend="#i">Neben Summenklammer:</hi>] Wir haben schon im Jänner angeregt: </p>
+                  <p>Brotmehlpreis von 1 Krone auf 1,50, </p>
+                  <p>Backmehlpreis von 2,50 auf 4 Kronen.</p>
+                  <p>Wenn man sich überhaupt damit abfindet, dass die Mehlpreise erhöht werden müssen, ist eine gleiche Erhöhung für den Armen und Reichen eine Ungerechtigkeit. Deshalb haben wir eine Brotauflage </p>
+                  <p>angeregt.</p>
+                  <p>Die jetzigen 200 gr. zum alten Preis, die Erhöhung um 50 gr. zu einem höheren Preissatz. </p>
+                  <p>Also Antrag: man soll die Mehlpreis-Erhöhung nicht sofort machen, sondern noch 8-14 Tage zuwarten bis Klarheit ist, ob eine Erhöhung der Quote </p>
+                  <p>möglich [ist]; damit eine Erhöhung der Ration über das bisherige durch eine starke Preiserhöhung.</p>
+                  <p>Brotauflage müsste zur gleichen Zeit eingebracht werden.</p>
+                  <p>Bittet schließlich, die Sache nicht vertreten zu müssen, da dies eine rein fiskalische Angelegenheit ist.</p>
+                  <p>[Renner:] Die Erhöhung der Brotpreise vorläufig - 14 Tage - auszusetzen, weil nichts da ist, jedenfalls erst im Moment, wo man mehr liefern kann </p>
+                  <p>und dass die fiskalische Maßregel der Brotauflage gleichzeitig eingebracht wird.</p>
+                  <p>Nun Schwierigkeit wenn [es] nicht in der jetzigen Tagung eingebracht wird. </p>
+                  <p>Redner glaubt, man beschließt die Brotauflage, setzt sie aber erst in Kraft, wenn ... </p>
+                  <p>Also zunächst im Parlament erörtern und dann erst mit Erhöhung vorzugehen.</p>
+                  <p>Schumpeter: Finanzen drängt nicht. Will 14 Tage warten, bittet nur zu bedenken, je mehr wir Konzessionen machen, wir umso weniger Geld haben werden für andere Sachen. </p>
+                  <p>Brotauflage sollte gleichzeitig mit der Mehlpreiserhöhung in Kraft treten. Junktim zwischen Brotauflage und Mehlpreiserhöhung: in einem Paragraph muss gesagt sein, </p>
+                  <p>dass das Gesetz nur in Kraft tritt, wenn die Mehlpreise erhöht werden. Dem Staat darf daraus nichts erwachsen, da er es nicht aufbringen kann.</p>
+                  <p>Loewenfeld: Man sollte auch [erwägen], einen Ausschuss der Nationalversammlung mit der Mehlpreisfrage zu befassen. Der Ernährungsausschuss ist meiner Meinung nach nicht das richtige Forum, </p>
+                  <p>vielmehr lediglich den Budgetausschuss Finanzausschuss.</p>
+                  <p><pb facs="krp-0056_s01-0005"/>Fink: Würde zustimmen, dass man nicht gleich mit einer Brotpreiserhöhung vorgeht. Erst dann kann man erhöhen, wenn man mehr geben kann. Spricht sich auch für Junktim aus. </p>
+                  <p>Die Sache müsste zuerst im Hauptausschuss verhandelt werden. Höherbemittelten-Steuer und Grundbesitz-Steuer (80% Katastral-Reinertrag<hi rend="#s">). Einige Erleichterungen </hi></p>
+                  <p><hi rend="#s">bei den [...] Mitgliedern</hi> -.</p>
+                  <p>Renner: Antrag: Fink soll mit Finanzkomitee die Brotsteuer-Vorlage in der letzten Fassung herstellen. Ernährung wird [...] Bericht bereithalten für Hauptausschuss (schriftlich, </p>
+                  <p>damit studierbar). Dann wird die Einberufung des Hauptausschusses in die Wege geleitet werden (Mittwoch Vormittag 10h). Modalität dann die, dass erst das Gesetz </p>
+                  <p>beschlossen wird, ist aber bedingt mit der Erhöhung des Brotpreises in jenem Zeitpunkt, in welchem mehr geliefert werden kann.</p>
+                  <p>Grimm: Wir müssen bereits mit einem Defizit von 340 Millionen Kronen rechnen (Valuta-Frage, Frage des inländischen Getreidepreises im zweiten Semester spielt auch mit, </p>
+                  <p>dann, wenn wir im zweiten Semester bei schlechter Ernte wieder auf Entente-Getreide angewiesen sein sollten).</p>
+                  <p>Beschluss: Kabinettskonferenz: Finanzen, Ernährung, Soziale Verwaltung, Landwirtschaft unter Vorsitz Fink. Auch noch die Frage der Preiserstellung zu behandeln (Morgen ½10).</p>
+                  <p>9. Zerdik: Steiermärkisches [Gesetz betreffend] Kleinhäuser.</p>
+                  <p>Angenommen.</p>
+                  <p>10. Stöckler: <hi rend="#s">Bauerngüter</hi> 4b) Jagdrechte.</p>
+                  <p>Fink: §6, auf dem Grundstück (Grundbuchkörper). Nicht Regierungsvorlage, sondern den Landesregierungen vorzulegen.</p>
+                  <p>Grimm: §6, letzte Zeile: genießt das Vorrecht, [<hi rend="#i">Einschub:</hi>] unmittelbar [<hi rend="#i">Einschub Ende</hi>] hinter den staatlichen Abgaben.</p>
+                  <p>[Stöckler]: c) schon in Expertisen besprochen. </p>
+                  <p>Und dem bereits beschlossenen Gesetz der Salzburger Landesversammlungen beitreten.</p>
+                  <p>Bauer: Grundgedanke, dass Serv[itutsrechte] abgelöst werden sollen gegen Grundabtretungen; Hauptwirkung wird also sein, dass die belasteten Grundbesitzer an Bauern-</p>
+                  <p>Gesamt[...] werden Wald abtreten müssen. Die Bewirtschaftung der Wälder wird dadurch nicht besser. Frage, was wir überhaupt mit unseren Forsten machen sollen. Wenn man an die </p>
+                  <p>Sozialisierung denkt, so greift man hier vor und verfügt über einen Teil der zu sozialisierenden Bestände in einem Augenblick, in welchem </p>
+                  <p>man sich über das Ausmaß und die Art der Sozialisierung noch nicht klar ist. Die Sache sollte also heute noch nicht endgültig behandelt werden. </p>
+                  <p>Daher Bedenken gegen diesen Gesetzentwurf (§8).</p>
+                  <p>Stöckler: §9 sagt ausdrücklich, dass die Ablösung -. [Stöckler] und Fink: Es wird nicht erschwert die Sozialisierung, wenn der Waldbesitz in den Händen der agrarischen Gemeinschaften ist.</p>
+                  <p>Also kein Widerspruch in der Form: es wird den Landesregierungen zur Vorlage an die Landesversammlungen übermittelt.</p>
+                  <p>11. Stöckler: Steiermark. Angenommen.</p>
+                  <p>12. Stöckler: Bauerngüter. Der erste Beginn der Sozialisierung. Hätte es sehr gern gesehen, dass wir das der nächsten Nationalversammlung unterbreiten.</p>
+                  <p>Bauer: Das Gesetz kommt einem Bedürfnis entgegen; ich muss auch hier sagen, dass ich einige Bedenken habe. Nach §1 erfolgt Enteignung im Falle wirtschaftlicher Zweckmäßigkeit. </p>
+                  <p>Wann diese vorliegt, geht aus §8 hervor. Letzterer ist nun nicht klar genug. Wo die Wiederbesiedlung einen technischen Rückschritt bedeuten würde, darf dies nicht geschehen. </p>
+                  <p>Wenn das betreffende Gut seiner natürlichen Beschaffenheit nach zur Großbewirtschaftung geeignet ist, dann nicht. Redner hält eine scharfe Fassung des §8 für nötig.</p>
+                  <p><pb facs="krp-0056_s01-0006"/>Weiters §17, die Kreditmöglichkeit würde sehr eingeschränkt werden. Volkswirtschaftlich bedenklich, <hi rend="#s">durch einen</hi> [Wenn man] statt einen Geldbetrag erlegen zu müssen, zu einem </p>
+                  <p>Grundzins verpflichtet [wird], der von Zeit zu Zeit revidiert werden kann, wäre dies besser.</p>
+                  <p>§4, Deutsche Stammeszugehörigkeit: novum, Ladiner und Slowenen (in Kärnten) sprechen wir an. Dadurch schließen wir diese aus. Man hat es sowieso in der Hand.</p>
+                  <p>Renner: Die Abänderungen bis auf eine einzige könnte der Ausschussbehandlung vorbehalten werden. Nur was §4 (Nationalität) anbelangt, schon früher eliminiert.</p>
+                  <p>Miklas: Vorschlag wegen Erbpacht.</p>
+                  <p>Renner: Nur Ausschuss.</p>
+                  <p>Bauer: [Ersucht um] Zustimmung um Teilnahme an den Ausschuss-Beratungen.</p>
+                  <p>Grimm: Eine staatliche Bürgschaftsleistung ist nicht notwendig; es handelt sich um Maßnahmen, welche zunächst nur im Interesse der Länder geschehen. </p>
+                  <p>Daher hätte die staatliche Bürgschaftsleistung auszufallen.</p>
+                  <p>Das Gesetz erscheint mir so, wie es vorliegt, [dazu angetan], dass alle Grundbesitzer abgehalten werden von allen Meliorationen. Wenn das Gesetz terminiert wird auf 10 oder </p>
+                  <p>15 Jahre, dann wird der Großgrundbesitzer sich fürchten, Meliorationen durchzuführen.</p>
+                  <p>Beschluss: Zwei Worte (deutsch) [weg]gefallen; alle übrigen Änderungen [bleiben] dem Ausschuss überlassen. Staatssekretär Bauer beizuziehen.</p>
+                  <p>Davy: -.</p>
+                  <p>Renner: Das Kabinett tritt den Anträgen bei. Formulierung als Kabinettsratsbeschluss.</p>
+                  <p>Miklas: Angenommen.</p>
+                  <p>Hanusch: Angenommen. Änderung (Fenz).</p>
+                  <p>Hanusch: Gesetz übermorgen einzubringen, Motivenbericht folgt nach.</p>
+                  <p>Grimm: Muss sich gegen eine Erhöhung aussprechen. 16,10 Millionen Erhöhung.</p>
+                  <p>Angenommen.</p>
+                  <p>[<hi rend="#i">Am Rand</hi><hi rend="#s"><hi rend="#i">:</hi></hi><hi rend="#s">] Namens des abwesenden Staatssekretärs für Finanzen </hi></p>
+                  <p><hi rend="#s">erhebt Sektionschef Dr. von Grimm Einspruch gegen die in Aussicht genommene </hi></p>
+                  <p><hi rend="#s">Erhöhung der</hi> -.</p>
+                  <p>Im Auftrag des augenblicklich abwesenden Staatssekretärs für Finanzen erklärt Sektionschef Doktor von Grimm, dass sich die </p>
+                  <p>Finanzverwaltung gegen die beantragten Abänderungen des Gesetzentwurfes </p>
+                  <p>aussprechen muss, zumal sie eine dauernde Mehrbelastung des Staatsschatzes beinhalten.</p>
+                  <p>Nachdem Staatssekretär Hanusch die Gründe, die ihn zu dieser Abänderung veranlassen, eingehend dargestellt hatte, </p>
+                  <p>beschließt der Kabinettsrat im Sinne des Antragstellers.</p>
+                  <p>Schluss: ½8.</p>
+                  <p/>
+               </div>
+               <div n="2">
+                  <head>[KBR 56, 31. März 1919, Stenogramm B]</head>
+                  <p><pb facs="krp-0056_s02-0001"/>56., 31. /3.</p>
+                  <p>[1.] Bauer: Nachträgliche Genehmigung einer Verfügung im inneren Dienstbereich. </p>
+                  <p>Durch die Sozialisierungskommission stark belastet, Vertretung zu meiner Entlastung. Zu diesem Zweck M[inister] a.D. Dr. Klein </p>
+                  <p>weitere Kompetenzen zugewiesen: 1.) Betraut mit der Approb[ation] gewisser Akten der politischen Sektion, </p>
+                  <p>verantwortlich bleibt weiterhin der Staatssekretär. In der Zeitungsmitteilung war von Stellvertretung die Rede; gewisse Beunruhigung. </p>
+                  <p>Der Sektionschef und der Dep.-Vorstand genügt den Leuten nicht, wenn ich sie nicht empfangen kann. </p>
+                  <p>[Daher] nach außen hin Stellvertretung. In Wirklichkeit habe ich mir die Entscheidung aller pol[itisch] relev[anten Fragen] vor[behalten].</p>
+                  <p>Da Zweifel, ob ein Staatssekretär eine solche Verfügung treffen kann, bringe ich es dem Kabinett zur Kenntnis, welches eventuell sodann </p>
+                  <p>beim Präsidenten die Bestellung erwirken sollte.</p>
+                  <p>Fink: Wenn nur intern, dann Sache des Staatssekretärs.</p>
+                  <p>Renner: Dr. Klein hat einen Amtsauftrag gehabt, die Vorbereitung der Friedensverhandlungen und Ausarbeitung aller darauf bezüglichen </p>
+                  <p>Vorlagen.</p>
+                  <p>Bauer: Er ist angelobt, es ist kein Vertragsverhältnis da er keine Bezüge erhält.</p>
+                  <p>Renner: Das Beauftragungsverhältnis ist erweitert worden [dadurch], dass er die politisch nicht relevanten Akten approbiert, </p>
+                  <p>ferner Vertretung des Staatssekretärs bei Empfängen in nicht politischen Angelegenheiten [übernimmt].</p>
+                  <p>Um den Dr. Klein mit den kurrenten Empfängen betrauen zu können, wurde die Verlautbarung veranlasst.</p>
+                  <p>Vier Mitglieder des Hauptausschusses haben in dieser Angelegenheit bei mir und Seitz vorgesprochen und wurden in diesem Sinne aufgeklärt.</p>
+                  <p>Eine politische Betrauung ist damit nicht gegeben. Keinerlei Entscheidungen von politischer Tragweite; </p>
+                  <p>politische Entscheidungen, die über die kurrenten Ag[enden] hinausgehen, werden von Klein nicht getroffen.</p>
+                  <p><hi rend="#s">Die Bestellung wird zur Kenntnis genommen</hi> -. Die aufklärende Mitteilung des B[auer] wird zur Kenntnis genommen.</p>
+                  <p>Beauftragung und Angelobung.</p>
+                  <p>[2.] Zerdik: Ergebnis der Kohlenreise. </p>
+                  <p>Grüße ?Scheidmann.</p>
+                  <p>Zuerst Berlin: Verhandlungen mit [<hi rend="#i">Einschub:</hi>] Geheimrat [<hi rend="#i">Einschub Ende</hi>] Stutz zunächst ergebnislos; politische Deckung in Weimar für Stutz gesucht. </p>
+                  <p>7.500 t täglich aus Oberschlesien, ein Plus von 5.000 t gegenüber dem jetzigen Stand. </p>
+                  <p>Die niederschlesische Kohle konnte nicht angeliefert werden. Auch die niederschlesische Kohle wird zur Verteilung gelangen.</p>
+                  <p><pb facs="krp-0056_s02-0002"/>Wirkung für die Industrie: wenn wir von 7.500 t den Bahnen 2.000 t und die ganze niederschlesische Kohle geben, so ist die Voraussetzung gegeben, </p>
+                  <p>dass wir eine Schnellzugverbindung Wien - Bregenz [einrichten].</p>
+                  <p>2.000 Hausbrand.</p>
+                  <p>Elektrowerke 500.</p>
+                  <p>Verbleibt 1.950 t.</p>
+                  <p>Die westfälische Kohle ist nicht einbezogen in das Quantum.</p>
+                  <p>In 14 Tagen Verhandlungen mit Polen in Warschau, wo lediglich eine Waggon-Frage zu lösen ist. Die Preise sind nicht mehr die horrenden Preise von früher, sondern Höchstpreise.</p>
+                  <p>Gesandter Hartmann hat den Wunsch geäußert, dass ein Delegierter in den Verfassungsausschuss gesandt wird – </p>
+                  <p>und Beamtenaustausch.</p>
+                  <p>Bauer: 1.) Der deutschen Reichsregierung wäre der Dank auszusprechen. </p>
+                  <p>Zerdik soll der Nationalversammlung mitteilen und dann Worte des Dankes. Oder Telegramm des Kabinetts.</p>
+                  <p>2.) Delegierung in den Verfassungsausschuss und Beamtenaustausch sollte man vertagen, da Hartmann übermorgen nach Wien kommt.</p>
+                  <p>Loewenfeld: Ad 1) Wir hängen, was Lebensmittel betrifft, ganz von der Entente ab. Gegen Dank in der Nationalversammlung </p>
+                  <p>auszusprechen, habe ich Bedenken. Die Entente hat uns wiederholt zum Wissen gemacht, dass ein engeres Verhältnis mit Deutschland ihr </p>
+                  <p>wenigstens jetzt nicht erwünscht ist. Daher Bedenken.</p>
+                  <p>Bauer: Wenn es in der Form geschieht, dass Zerdik in Form einer Int[erpellations]-Beantwortung Bericht erstattet und daran einige </p>
+                  <p>Worte des Dankes knüpft, so sollte die Entente nichts daran finden. Resolution wäre zu viel </p>
+                  <p>Solennität.</p>
+                  <p>Renner: Der Kabinettsrat spricht über den Bericht [<hi rend="#i">Einschub:</hi>] des Staatssekretärs für ... über das Ergebnis der Kohle-Verhandlungen [<hi rend="#i">Einschub Ende</hi>] dem Deutschen Reich für die Hilfe den herzlichsten Dank aus.</p>
+                  <p>Bauer: Dieser Dank an Deutschland soll ausgesprochen werden ohne Spitze gegen irgendwen, insbesondere nicht gegen die Tschechen. </p>
+                  <p>Die Entente scheint in Prag interveniert zu haben.</p>
+                  <p>Fink: Den Befürchtungen des [Staatssekretärs für] Volksernährung könnte man dadurch begegnen, dass wenn uns die Entente mehr zusichert, </p>
+                  <p>wir auch der Entente im Parlament dankt.</p>
+                  <p><hi rend="#s">Paul: Alberti Befürchtungen über Streik in Wr. Neustadt; bereit erklärt</hi> -.</p>
+                  <p>Renner: In der Presse bekannt zu geben, Beschluss des Staatsamtes des Äußern zu übermitteln.</p>
+                  <p><pb facs="krp-0056_s02-0003"/>[3.] Schumpeter:</p>
+                  <p>1) Ein Einschieben reichsdeutscher Beamter in mein Ressort nicht wünschenswert, </p>
+                  <p>ich bin hingegen gern bereit, jemand hinauszuschicken. Einerseits Verstimmung erregen und Erschwerung der Arbeit. </p>
+                  <p>Ein solcher Austausch findet nicht einmal zwischen Bayern und Preußen statt.</p>
+                  <p>2) Es werden die Akten immer wieder in einem Zeitpunkt überschickt, der ein Studium vor dem Kabinettsrat nicht mehr möglich macht.</p>
+                  <p>3) In allen Ressorts geschehen Dinge, die gesetzmäßig vom Finanzministerium ressortieren. Von Steuern, Kreditoperationen </p>
+                  <p>ist das Finanzministerium fast ganz ausgeschlossen.</p>
+                  <p>4) Es ist für uns sehr wesentlich, dass wir nicht weiter zu Ausgaben gedrängt werden. Es geht nicht mehr. Wir müssen stoppen. </p>
+                  <p>Die uferlose Ausgabenpolitik muss aufhören.</p>
+                  <p>5) Der finanzielle Horizont verdüstert sich. Sowohl die Kredit-Op[eration] wie die Vermögensabgabe kann unmöglich werden. </p>
+                  <p>Es leiht uns niemand mehr. Organisation der Vermögensabgabe nur möglich, wenn eine [...] eintritt.</p>
+                  <p>6) Sehr großer Personalzuwachs für die Vermögensabgabe. Ich bitte alle Herren, die über überflüssige Kräfte verfügen, sich mit mir ins Einvernehmen zu setzen.</p>
+                  <p>7) Unvermeidlich eine Aktion der Nostrifizierung unserer Kriegsanleihe. </p>
+                  <p>Ich denke mir die N[ostrifizierung] beschränkt auf gewisse Teile der Kriegsanleihe nach einem gewissen Zeitpunkt. Zeichnung und Erwerb vor einem gewissen Zeitpunkt. </p>
+                  <p>Ich denke an eine Zwangsdeponierung bei den Banken, Sparkassen, Steuerämtern.</p>
+                  <p>8) Es ist notwendig, dass wir bezüglich der weiteren Banknoten-Umwechslung sehr vorsichtig vorgehen, sonst bekommen wir aus Ungarn und der Tschechoslowakei </p>
+                  <p>ungestempelte Noten herein.</p>
+                  <p>9) Die Volksbekleidungsaktion hat 30 Millionen bis Ende Mai verlangt. Das muss abgebaut werden, ich bitte mich </p>
+                  <p>zu unterstützen.</p>
+                  <p>10) Was geschieht mit den Industrien, die Forderungen an das Ärar haben und bei Nicht-Begleichung zusperren müssen? Die Rechnungen des alten </p>
+                  <p>Ärars kann ich nicht zahlen.</p>
+                  <p>11) Es sind [<hi rend="#i">Einschub:</hi>] deutsch-österreichische Noten [<hi rend="#i">Einschub Ende</hi>] nach Deutsch-Böhmen geschmuggelt worden, um Gagisten dort zu zahlen. Die Gagisten haben einen </p>
+                  <p>Hofrat bei mir bedroht.</p>
+                  <p>12) Protest, dass bei einem sehr verdienten Beamten 10 Männer Nachschau gehalten haben.</p>
+                  <p>Renner: Wenn die deutsch-böhmischen Gagisten sich tatsächlich so benommen haben, dass der Hofrat bedroht wurde, so bitte ich, </p>
+                  <p>den Tatbestand aufnehmen zu lassen und der Polizeidirektion zu übermitteln.</p>
+                  <p><pb facs="krp-0056_s02-0004"/>Nachschau liegt schon 8 Tage zurück.</p>
+                  <p>Loewenfeld: Die Angelegenheit der Nachschau ist in Wien geregelt. </p>
+                  <p>Am Land steht die Volkswehr unter gar keiner Disziplin. Die Volkswehr schnappt alles auf, zum Teil auch für eigene Zwecke. </p>
+                  <p>Die Bauernschaft rüstet sich zu Gegen-Gewalttätigkeit.</p>
+                  <p>Stöckler: Die Volkswehr hat in Melk eine Schranke aufgerichtet auf der Straße. </p>
+                  <p>Oberösterreich ist vollgepfropft mit Pferden; kein Pferd wird von der Volkswehr hinausgelassen, außer er </p>
+                  <p>besticht die Volkswehr.</p>
+                  <p>Deutsch: Sie machen die Volkswehr für Dinge verantwortlich, die sie nichts angehen. </p>
+                  <p>Die autonomistische Strömung in Oberösterreich hat die Volkswehr veranlasst bearbeitet, mitzuwirken. </p>
+                  <p>Schuld sind die Landesbehörden.</p>
+                  <p>Dasselbe im politischen Bezirk Wr. Neustadt.</p>
+                  <p>Ich habe nie eine konkrete Meldung über Bestechung der Volkswehr erhalten.</p>
+                  <p>Renner: Der Fehler, an dem wir leiden, ist Anfang 1915 gemacht worden indem man den Ernährungsdienst verländert hat. </p>
+                  <p>Seitdem verfolgt jede Bezirkshauptmannschaft eine eigene Ernährungspolitik. </p>
+                  <p>Wenn die Verhältnisse so sind, so wird nichts anders übrigbleiben, [als] einen staatlichen direkten Ernährungsdienst einzuführen.</p>
+                  <p>Anregung an Loewenfeld, zu prüfen, ob man nicht auf die Orts- und Bezirkswirtschaftsämter aufgebaut, durch Gesetz einen direkten </p>
+                  <p>Ernährungsdienst aufrichten könnte, der uns von der Ingerenz der Länder und Bezirkshauptmannschaften befreit.</p>
+                  <p>Loewenfeld: Dieser Versuch ist von mir bereits gemacht worden - mit welchem Erfolg bei den Intentionen der Länder brauche ich nicht hervorzuheben. </p>
+                  <p>Wir haben den äußeren Ernährungsinspektionsdienst eingeführt. Ich wollte vor sechs Wochen diesen Dienst auf eine neue Basis stellen. </p>
+                  <p>Die Länder haben einfach abgelehnt. </p>
+                  <p>Wenn ich die Unterstützung des Kabinetts habe, so werde ich es so einrichten, dass die Landeswirtschaftsämter uns direkt unterstehen.</p>
+                  <p>Renner: Die Sache soll von Loewenfeld bei der Länderkonferenz wieder zur Sprache gebracht werden; </p>
+                  <p>die allgemeine Finanzpolitik in der Sitzung am Freitag.</p>
+                  <p>Hanusch: Die Sachen bleiben im Staatsamt für Finanzen ungeheuer lange liegen.</p>
+                  <p>Grimm: [Das liegt an der] kritischen Situation, in welcher im Staatsamt der Finanzen gearbeitet wird. Alles konzentriert sich im </p>
+                  <p>Staatsamt der Finanzen. </p>
+                  <p>Es ist oft nicht möglich, die Sachen rechtzeitig zu erledigen.</p>
+                  <p><pb facs="krp-0056_s02-0005"/>[4.] Gesetzentwurf </p>
+                  <p>Renner: 12. XI. Staatsfeiertag.</p>
+                  <p>Bauer: Ich warne vor diesem Beschluss im gegenwärtigen Augenblick. </p>
+                  <p>Wenn wir zu Deutschland kommen, so wird dort vielleicht der 9. November als Staatsfeiertag erklärt werden, daher </p>
+                  <p>kein Anlass bei uns 12. XI.</p>
+                  <p>Zerdik: Auch wenn wir eingegliedert werden, so könnte die deutsch-österreichische Regierung einen eigenen Feiertag haben.</p>
+                  <p>Renner: Dringende Notwendigkeit, das jetzt zu tun, besteht nicht. Vielleicht könnte man die Sache zurückstellen.</p>
+                  <p>Zurückstellen.</p>
+                  <p>[5.] Bratusch: Systemisierungen beim Obersten Gerichtshof. </p>
+                  <p>Nach §3 ein Präs. erforderlich, Senatspräs[identen] und Hofräte. </p>
+                  <p>Nach dem Schlüssel 2/5 hätten wir Anspruch auf 4 Senatspräs[identen], 27 Hofräte. </p>
+                  <p>Bestehen müssen 4 Senate.</p>
+                  <p>18 + 3 [=] 21 	3 Sen[atspräsidenten], 18 übernommene Hofräte und noch ein neuer zu ernennen. </p>
+                  <p>Vorschlag Hofrat Marckhl.</p>
+                  <p>Bleibt weit unter 2/5 zurück.</p>
+                  <p>Genehmigt.</p>
+                  <p>[6.] Renner: Antrag für die Kommission zur Erhebung militärischer Pflichtverletzungen. </p>
+                  <p>Mitarbeiter Friedjung, Schulz. </p>
+                  <p>Kredit <hi rend="#s">500.000</hi> 200.000 Kronen für die ganze Aktion.</p>
+                  <p>Grimm: Ges[etz vom] 19. XII. 18. Die Tätigkeit beschränkt sich nicht nur auf Deutsch-Österreich. </p>
+                  <p>Wenn auf 500.000 bestanden wird, so müsste das dem Bevollmächtigten-Kollegium vorgelegt werden.</p>
+                  <p>Antrag: vorschussweise 100.000 Kronen zur Verfügung stellen bis die Kreditfrage geordnet ist.</p>
+                  <p><pb facs="krp-0056_s02-0006"/>Deutsch: Ich glaube, dass ein Kredit in dieser Höhe nicht nötig ist. </p>
+                  <p>Mir kommt vor, dass der Aufbau verfehlt ist. Es wird eine Gelehrtenarbeit sein.</p>
+                  <p>Renner: Es wird ja nur ein Hilfsbüro für die Richter sein.</p>
+                  <p>Deutsch: Es müssen einzelne, konkrete Fälle, bezüglich welcher Anzeigen vorliegen, untersucht werden. In Anlehnung an den amtlichen Apparat, </p>
+                  <p>den wir haben.</p>
+                  <p><hi rend="#s">Renner:</hi> -.</p>
+                  <p>Bauer: [<hi rend="#i">Einschub:</hi>] Die Sache dem [<hi rend="#i">Einschub Ende</hi>] Bevollmächtigten-Kollegium wegen des Kredites [vorzulegen ist] aussichtslos. Die Aufgabe wird falsch aufgefasst.</p>
+                  <p>Das Rechtsgefühl des Volkes verlangt eine Sühne für gewisse Dinge, die insbesondere in den letzten Tagen des Krieges geschehen sind. </p>
+                  <p>Das sind folgende Dinge: 1.) Davonlaufen der Stäbe in den letzten Tagen.</p>
+                  <p>2.) Gewisse sanitäre Sachen, z.B. die Leute, die verantwortlich sind für die Art und Weise, wie der </p>
+                  <p>Rückzug in Albanien gemacht wurde. Oder T[...].</p>
+                  <p>Dazu ist die Bewilligung großer Mittel nicht erforderlich.</p>
+                  <p>Renner: Die Kommission ist noch zu gar keiner Arbeit gekommen. Ein Teil der Ernannten hat die </p>
+                  <p>Funktion niedergelegt, die Ersatzernennungen sind erst sehr spärlich eingegangen. Erst in den letzten Tagen ist die </p>
+                  <p>Kommission komplett geworden. Inzwischen großes Material angehäuft, welches gesichtet werden muss. </p>
+                  <p>Den Helfern und Experten wird man Vergütungen zahlen müssen.</p>
+                  <p>Fink: <hi rend="#s">Ich bin einverstanden</hi> -. Wir werden einen Kredit [<hi rend="#i">Einschub:</hi>] und Personal [<hi rend="#i">Einschub Ende:</hi>] bewilligen müssen. Aber wir sollen im Kabinettsrat [<hi rend="#i">Einschub:</hi>] beschließen [<hi rend="#i">Einschub Ende</hi>], welche Angelegenheiten </p>
+                  <p>zunächst von der Kommission zu behandeln sind.</p>
+                  <p><hi rend="#s">Renner</hi>: -</p>
+                  <p>Bratusch: Wie die Kommission vorzugehen hat, ist im Gesetz genau vorgeschrieben. </p>
+                  <p>Den anderen Staaten eine Beitragsleistung zuzuschieben halte ich ebenfalls für ganz aussichtslos, da es sich um eine rein </p>
+                  <p>deutsch-österreichische Sache handelt.</p>
+                  <p>Grimm: Auf das hin revidiere ich meine Auffassung, Einschränkung auf [einen Betrag von] 200.000 Kronen – </p>
+                  <p>der fallweise in Anspruch genommen wird, so wie das bei Kapitel Volksvertretung vorgesehen wird.</p>
+                  <p><hi rend="#s">Deutsch:</hi> Antrag.</p>
+                  <p>Renner: Das Staatsamt für Heerwesen ist angewiesen, diejenigen Tatbestände, deren Untersuchung es für besonders dringlich ansieht, dem Kabinett </p>
+                  <p>bekannt zu geben und das Kabinett wird dann der Kommission den Auftrag geben, diese Tatbestände zunächst zu untersuchen.</p>
+                  <p><pb facs="krp-0056_s02-0007"/>[7.] Renner: Gemeindewahlordnungen Wr. Neustadt und Waidhofen a/d Ybbs.</p>
+                  <p>Keine Vorstellung.</p>
+                  <p>Tagesordnung.</p>
+                  <p>Punkt 1 [8.]</p>
+                  <p>Loewenfeld: Wir bekommen täglich und wöchentlich ausländisches Mehl und geben es zum inländischen Preis ab. Er ist niedriger </p>
+                  <p>als der ausländische Preis. Wieviel der Staat darauf zahlt, kann niemand berechnen. Das Etab. ist auf Hypothesen aufgebaut. </p>
+                  <p>Unser Bedarf ist feststehend. Wieviel wir aber aus dem Ausland wirklich beziehen, [wieviel] ist schon im Land -. </p>
+                  <p>Wir brauchen täglich rund 1.200 t Getreide. Bei einer etwas erhöhten Quote 1.500 t. Und wenn wir die Quote </p>
+                  <p>geben, die wir von der Ent[ente] verlangen, 1.800 t, mit Einschluss von Oberösterreich rund 2.000 t.</p>
+                  <p>Der Berechnung ist 1.500 t zugrunde gelegt. </p>
+                  <p>Bisher haben wir 50.000 t von der Entente bezogen. </p>
+                  <p>Ist schon die Menge, die wir beziehen ganz unsicher, so ist ebenso unsicher der Preis. </p>
+                  <p>Brotmehl 1 Krone, Verschleißmehl 2,50. </p>
+                  <p>Ein effektiver Preis für das Mehl ist nicht zu errechnen.</p>
+                  <p>Wir haben angenommen, dass uns das Getreide 300 Kronen kostet.</p>
+                  <p>Wir haben schon Um die ganze Differenz hereinzubringen, so müssten wir </p>
+                  <p>Brotmehl [von] 1 [auf] 2,30 [erhöhen], </p>
+                  <p>Verschleißmehl von 2,50 [auf] 5,76. </p>
+                  <p>Wir haben den Antrag gestellt, Brotmehl 1,50, </p>
+                  <p>Verschleißmehl 4,00 [Kronen].</p>
+                  <p>Eine Erhöhung der Preise wäre erträglicher für die Bevölkerung wenn wir gleichzeitig eine Erhöhung der Quote eintreten lassen können, und zwar zunächst nur für die Zubuße.</p>
+                  <p>Ich möchte daher unter Zurückziehung der Referentenanträge beantragen, noch 8-14 Tage zuzuwarten bis wir Klarheit haben, ob wir die </p>
+                  <p>Quote erhöhen können, bejahendenfalls [<hi rend="#i">Einschub</hi>:] den Preis [<hi rend="#i">Einschub Ende</hi>] der Zubuße radikal zu erhöhen.</p>
+                  <p>Gleichzeitig Einbringung der Brotauflagen.</p>
+                  <p>Ich möchte ferner bitten, dass nicht ich die Sache zu vertreten habe, denn es ist eine rein fiskalische Maßnahme.</p>
+                  <p><pb facs="krp-0056_s02-0008"/>Renner: Brotpreiserhöhung auf etwa noch 14 Tage aufzuschieben, jedenfalls auf den Moment zu warten, wo die Ernährung </p>
+                  <p>sich bessert.</p>
+                  <p>Man beschließt die Brotauflage, setzt sie aber erst in Kraft, wenn man mit der -. </p>
+                  <p>Die Brotauflage wäre im Parlament erst dann zu beraten und zu beschließen und dann erst mit der Erhöhung des Brotpreises </p>
+                  <p>und zwar mit der Erhöhung erst dann vorgehen, wenn eine reichere Anlieferung Platz greift.</p>
+                  <p>Schumpeter: Das Staatsamt der Finanzen drängt nicht. </p>
+                  <p>Je mehr wir Konzessionen in dieser Beziehung machen, desto weniger können wir jetzt für andere Zwecke halten. </p>
+                  <p>Die Brotauflage müsste gleichzeitig mit der Mehlpreiserhöhung in Kraft treten.</p>
+                  <p>Dieses Gesetz tritt nur in Kraft, wenn die Mehlpreise erhöht werden.</p>
+                  <p>Loewenfeld: Man müsste einen Ausschuss der Nationalversammlung mit der Frage der Mehlpreis-Erhöhung befassen. </p>
+                  <p>Den Ernährungsausschuss halte ich nicht für das kompetente Forum, maßgebend ist <hi rend="#s">die Budget</hi> – der</p>
+                  <p>Finanzausschuss. Es müsste dort schon vor Ostern besprochen werden. </p>
+                  <p>Das Staatsamt der Finanzen hätte beide Sachen gemeinsam in den betreffenden Ausschuss zu bringen.</p>
+                  <p>Fink: Ich würde zustimmen, dass man nicht momentan mit der Brotpreiserhöhung vorgeht. Erst dann, wenn man mehr </p>
+                  <p>Brot und Mehl geben kann. </p>
+                  <p>Es muss ein Junktim geschaffen werden. </p>
+                  <p>Die Sache sollte zuerst im Hauptausschuss zuerst zur Sprache gebracht werden.</p>
+                  <p>Bei der Brotauflage Milderung für die kleineren Landwirte. Denjenigen Grundbesitzern, denen im Jahr 1918 keine </p>
+                  <p>pers. E[inkommens]-St[euer] vorgeschrieben wurde, sollten nur 40% vom Katastral-Reinertrag vorgeschrieben werden. </p>
+                  <p>Milderung in den untersten Stufen; bei größerer Familienanzahl bezüglich der Dienstbotenauflage.</p>
+                  <p>Renner: Fink soll zusammen mit F.A. das Brotauflage-Gesetz herstellen. </p>
+                  <p><hi rend="#s">Ernährungsausschuss</hi> Ernährungsamt soll Bericht für Hauptausschuss vorbereiten, Schlussantrag muss weg.</p>
+                  <p>Hauptausschuss Mittwoch Vormittag 10h, ausschließliche Tagesordnung. </p>
+                  <p>Erst wird das Gesetz beschlossen mit der nötigen Weite; Inkrafttreten bedingt mit - Inkrafttreten mit der Mehlpreiserhöhung </p>
+                  <p>im Gesetz Junktim.</p>
+                  <p><pb facs="krp-0056_s02-0009"/>Grimm: Wir müssen mit einem Defizit von 340 Millionen rechnen. </p>
+                  <p>Es spielt hierbei auch die Frage des inländischen Getreidepreises im zweiten Semester mit. </p>
+                  <p>Dieses Defizit ist nicht gedeckt.</p>
+                  <p>Staatsamt der Finanzen, Mehlpreis 5 Kronen, </p>
+                  <p>Brotpreis 1,80 Kronen.</p>
+                  <p>Bauer: Wenn man imstande wäre, die Brotration zu erhöhen, so wäre eine Preiserhöhung leichter durchzusetzen.</p>
+                  <p>Renner: Kabinettskonferenz morgen, ½10 h; </p>
+                  <p>Finanzen, Volksernährung, Soziale Fürsorge, Landwirtschaft </p>
+                  <p>unter Vorsitz Vizekanzler wird die Frage der Preiserstellung noch behandeln.</p>
+                  <p>Punkt 3.</p>
+                  <p>Zerdik: -.</p>
+                  <p>Angenommen.</p>
+                  <p>Punkt 4. Stöckler: b).</p>
+                  <p>Fink: Im §6, zweite Zeile: auf dem Grundstück (Grundbuchkörper).</p>
+                  <p>Grimm: §6, letzte Zeile: genießt das Vorrecht [<hi rend="#i">Einschub</hi>:] unmittelbar nach [<hi rend="#i">Einschub Ende</hi>] den staatlichen Abgaben.</p>
+                  <p>Angenommen mit den Abänderungen.</p>
+                  <p>[Stöckler]: c).</p>
+                  <p>Bauer: Es handelt sich um Ablösung gegen Grundabtretungen. Die Bauern werden Wald an agr[arische] Gemeinschaften abtreten müssen.</p>
+                  <p>Die Bewirtschaftung der Wälder durch die agr[arischen] Gemeinschaften ist bisher noch sehr schlecht. Daher Befürchtung, dass Waldbestände </p>
+                  <p>schlechter bewirtschaftet werden als jetzt.</p>
+                  <p>Man kann die Sache nicht außer Zusammenhang bringen mit der Frage, was man mit unseren Forsten machen wird. Wenn man an die </p>
+                  <p>Sozialisierung [<hi rend="#i">Einschub:</hi>] der Forstwirtschaft [<hi rend="#i">Einschub Ende</hi>] denkt, so greift man dieser Aktion vor. Die Ablösung der Servitute sollte nur in Zusammenhang </p>
+                  <p>mit der allgemeinen Sozialisierung gemacht werden. Ich habe daher Bedenken gegen diesen Gesetzentwurf.</p>
+                  <p><pb facs="krp-0056_s02-0010"/>Stöckler: Die Ablösung ist in erster Linie bei Weiderechten gedacht (§9).</p>
+                  <p>Bauer: Ich wende mich hauptsächlich gegen §8 (Wald).</p>
+                  <p>Stöckler: Wenn man die Sache aufschiebt, so werden es die Länder auf eigene Faust machen. </p>
+                  <p>Man sollte das Gesetz jetzt doch einbringen und die <hi rend="#s">Organisation</hi> Neuorganisation der Agrar-Gemeinschaften </p>
+                  <p>der Sozialisierungsaktion vorbehalten. Auch würde die Abtretung an die Gemeinschaften weniger die Sozialisierung erschweren, als wenn </p>
+                  <p>es in den Händen einzelner verbliebe.</p>
+                  <p>Es wird den Landesregierungen zur Vorlage an die Landesversammlungen übermittelt.</p>
+                  <p>Angenommen.</p>
+                  <p>[Stöckler]: d).</p>
+                  <p>Angenommen.</p>
+                  <p>[Stöckler]: a) Bauer: Bedenken. </p>
+                  <p>Im §1 erfolgt die Enteignung und Wiederbesiedlung im Falle wirtschaftlicher Zweckmäßigkeit. Was Zweckmäßigkeit ist, geht aus dem §8 hervor. </p>
+                  <p>Dieser §8 <hi rend="#s">ist nicht klar</hi> - geht nicht weit genug. Musterwirtschaften zu zerstören, wäre gefährlich. Dort, wo die Wiederbesiedlung einen technischen </p>
+                  <p>Rückschritt bedeutet, sollte sie unterbleiben.</p>
+                  <p>§8, es müsste ausgeschlossen werden – [sichergestellt werden], dass die Enteignung dort unterbleiben muss, wo rationellere </p>
+                  <p>Betriebe geschädigt würden.</p>
+                  <p>§17, die Kreditmöglichkeit würde sehr eingeschränkt werden, Melioration würde dadurch erschwert.</p>
+                  <p>Zulässigkeit der Rentengüter und Erbpachtungen. Grundzins, der von 10 zu 10 Jahren revidiert werden könnte.</p>
+                  <p>§4 (3), Deutsche Stammesangehörigkeit. [Die] Ladiner in Tirol und Slowenen (Windischen) in Kärnten </p>
+                  <p>würden dadurch ausgeschlossen werden und wir hoffen doch, dass wir sie für uns bekommen. Daher wäre diese Einschränkung zu streichen.</p>
+                  <p>Renner: Die Abänderung bis auf eine sollte der Ausschussbehandlung vorbehalten werden. Nur das Nationale sollte jetzt schon abgeändert werden.</p>
+                  <p><pb facs="krp-0056_s02-0011"/>Bauer: Teilnahme des Präsidenten der Sozialisierungskommission. </p>
+                  <p>§4 Weglassung "deutscher Stammeszugehörigkeit".</p>
+                  <p>Grimm: §20, staatliche Bürgschaftsleistung ist nicht nötig ...</p>
+                  <p>Mir erscheint das Gesetz dadurch, wie es vorliegt, geeignet, alle Grundbesitzer, die vor der Ungewissheit stehen, ob sie nicht einmal enteignet </p>
+                  <p>werden, vor Meliorationen ab[zu]halten. </p>
+                  <p>Terminierung des Gesetzes auf 10 Jahre.</p>
+                  <p>Stöckler: Der Großgrundbesitz dürfte zum größten Teil nicht in Betracht kommen. Einschränkung §1 und §3.</p>
+                  <p>Das Gesetz ist zur Vorlage bestimmt.</p>
+                  <p>Punkt 5. Davy: -</p>
+                  <p>[Renner:] Das Kabinett tritt den Anträgen bei. </p>
+                  <p>Wo positive Forderungen erfüllt werden – </p>
+                  <p>jedoch diese und diese Wünsche müssten -.</p>
+                  <p>Punkt 6. Miklas: -</p>
+                  <p>Genehmigung erteilt.</p>
+                  <p>Punkt 8.</p>
+                  <p>Fink: §17. Bei der unehelichen Mutter binnen 14 Tagen vor den Arzt bringen. </p>
+                  <p>Käme die weite Entfernung in Betracht - zu ziehen. </p>
+                  <p>Witterungsverhältnisse und weite Entfernung.</p>
+                  <p>Genehmigt.</p>
+                  <p><pb facs="krp-0056_s02-0012"/>Punkt 9. Hanusch: </p>
+                  <p>Militärversorgungsgesetz. </p>
+                  <p>Nach Annahme der Änderungen wird das Gesetz eingebracht werden. Donnerstag, Motivenbericht folgt nach.</p>
+                  <p>Grimm: Ich muss mich gegen die Erhöhung aussprechen, weil es eine dauernde Belastung - aussprechen.</p>
+                  <p>Das Gesetz ist zur Einbringung beschieden.</p>
+               </div>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

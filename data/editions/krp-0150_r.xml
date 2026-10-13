@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href='http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:acdh="https://vocabs.acdh.oeaw.ac.at/schema#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xml:lang="de">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="a" type="main" n="0150">Kabinettsprotokoll Nr. 150 vom 22. Februar 1920</title>
+            <title level="m" type="main" n="01">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <title level="m" type="sub" n="">Renner III (17. Oktober 1919 – 7. Juli 1920)</title>
+            <meeting>
+               <placeName key="https://d-nb.info/gnd/4066009-6">Wien</placeName>
+               <orgName key="https://d-nb.info/gnd/5162749-8">Kabinettsrat</orgName>
+               <date when-iso="1920-02-22"/>
+            </meeting>
+            <editor>
+               <persName key="https://d-nb.info/gnd/122481836"
+                         role="hasCreator"
+                         xml:id="hwohnout">
+                  <forename>Helmut</forename>
+                  <surname>Wohnout</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</affiliation>
+               <idno type="ORCID">0000-0002-3864-9839</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/120789825"
+                         role="hasCreator"
+                         xml:id="tolechowski">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0003-3291-6876</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/131679384"
+                         role="hasCreator"
+                         xml:id="rlein">
+                  <forename>Richard</forename>
+                  <surname>Lein</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0002-7502-0503</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="aholzer">
+                  <forename>Anna</forename>
+                  <surname>Holzer</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0005-3560-3500</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="dsoelkner">
+                  <forename>Dominik</forename>
+                  <surname>Sölkner</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-9895-7212</idno>
+            </editor>
+            <editor>
+               <persName role="hasContributor" xml:id="ischotzko">
+                  <forename>Ina</forename>
+                  <surname>Schotzko</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-5210-3713</idno>
+            </editor>
+            <funder n="1">
+               <orgName key="https://d-nb.info/gnd/2054142-9" role="hasFunder">Österreichischer Wissenschaftsfonds FWF</orgName>
+               <idno type="project">PAT1495024</idno>
+               <title type="project">Die Protokolle des österreichischen Kabinettsrates 1919–1920</title>
+            </funder>
+            <respStmt>
+               <resp>Projektverantwortung</resp>
+               <orgName key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Projektleitung</resp>
+               <persName key="https://d-nb.info/gnd/120789825" role="hasPrincipalInvestigator">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+                  <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+                  <idno type="ORCID">0000-0003-3291-6876</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Nationaler Forschungspartner</resp>
+               <orgName key="https://d-nb.info/gnd/1123037736" role="hasEnabler">Austrian Centre for Digital Humanities</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Digitalisierung der gedruckten Quellen</resp>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>TEI-Datenmodellierung</resp>
+               <persName role="hasContributor" xml:id="tfruehwirth">
+                  <forename>Timo</forename>
+                  <surname>Frühwirth</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-3997-5193</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technische Supervision</resp>
+               <persName key="https://d-nb.info/gnd/1043833846"
+                         role="hasContributor"
+                         xml:id="pandorfer">
+                  <forename>Peter</forename>
+                  <surname>Andorfer</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-9575-9372</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technisches Consulting und Vorbereitung der Druckausgabe</resp>
+               <persName key="https://d-nb.info/gnd/13281899X"
+                         role="hasContributor"
+                         xml:id="skurz">
+                  <forename>Stephan</forename>
+                  <surname>Kurz</surname>
+                  <affiliation key="https://d-nb.info/gnd/1202798799">Institut für die Erforschung der Habsburgermonarchie und des Balkanraumes</affiliation>
+                  <idno type="ORCID">0000-0003-2546-2570</idno>
+               </persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher key="https://d-nb.info/gnd/1001454-8">Österreichische Akademie der Wissenschaften</publisher>
+            <date when="2028"/>
+            <availability status="free">
+               <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">Lizenziert unter CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/deed.de)</licence>
+            </availability>
+            <idno type="ISBN_Print"/>
+            <idno type="ISBN_Part_epub"/>
+            <idno type="ISBN_Digital"/>
+            <idno type="DOI"/>
+            <idno type="DOI_zenodo"/>
+            <idno type="ebook_ID"/>
+         </publicationStmt>
+         <seriesStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="m" type="main">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <respStmt>
+               <resp>Bearbeitung und Herausgeberschaft</resp>
+               <orgName key="https://d-nb.info/gnd/2024703-5">Universität Wien</orgName>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+         </seriesStmt>
+         <notesStmt>
+            <note>Diese TEI-XML-Datei ist Grundlage für eine Druckausgabe der Edition.</note>
+            <relatedItem>
+               <biblStruct>
+                  <monogr>
+                     <imprint>
+                        <pubPlace key="https://d-nb.info/gnd/4066009-6">Wien</pubPlace>
+                        <publisher key="https://d-nb.info/gnd/2068748-5">Verlag der Österreichischen Akademie der Wissenschaften</publisher>
+                        <date when="2029"/>
+                     </imprint>
+                     <extent/>
+                  </monogr>
+                  <note>
+              <idno/>
+              <ptr/>
+            </note>
+                  <citedRange/>
+               </biblStruct>
+            </relatedItem>
+         </notesStmt>
+         <sourceDesc>
+            <bibl>Quellbestand: AT-OeStA/AdR MRang MR 1Rep KRP Kabinettsratsprotokolle, 1918-1920 (Teilbestand)<ref target="https://www.archivinformationssystem.at/detail.aspx?id=5465">https://www.archivinformationssystem.at/detail.aspx?id=5465</ref>
+            </bibl>
+            <msDesc>
+               <msIdentifier>
+                  <institution key="https://d-nb.info/gnd/37748-X" role="hasOwner">AT-OeStA Österreichisches Staatsarchiv (Archiv (ÖStA))</institution>
+                  <repository key="https://d-nb.info/gnd/1601181-8">AT-OeStA/AdR Archiv der Republik, 1918- (Abteilung)</repository>
+                  <collection>AT-OeStA/AdR MRang MR 1Rep Ministerrat 1. Republik, 1918 - 1938 (Bestand)</collection>
+                  <idno>AT-OeStA_AdR-MRang-MR-1.-Rep.-KRP-150</idno>
+               </msIdentifier>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <abstract>
+            <p>
+          <!--to be generated-->
+        </p>
+         </abstract>
+      </profileDesc>
+      <encodingDesc>
+         <styleDefDecl scheme="css"/>
+         <tagsDecl>
+            <rendition xml:id="b" scheme="css">font-weight:bold;</rendition>
+            <rendition xml:id="su" scheme="css">vertical-align:super;font-size:.7em;</rendition>
+            <rendition xml:id="s" scheme="css">text-decoration:line-through;</rendition>
+            <rendition xml:id="u" scheme="css">text-decoration:underline;</rendition>
+            <rendition xml:id="ow" scheme="css">text-decoration:line-through;text-decoration-style:double;</rendition>
+            <rendition xml:id="r" scheme="css">display:block;text-align:right;</rendition>
+            <rendition xml:id="letterspaced" scheme="css">letter-spacing:0.15em;</rendition>
+            <rendition xml:id="i" scheme="css">font-style:italic;</rendition>
+         </tagsDecl>
+         <editorialDecl>
+            <hyphenation>
+               <p>
+            <!--to be added-->
+          </p>
+            </hyphenation>
+            <correction>
+               <p>
+            <!--to be added-->
+          </p>
+            </correction>
+            <normalization>
+               <p>
+            <!--to be added-->
+          </p>
+            </normalization>
+            <punctuation>
+               <p>
+            <!--to be added-->
+          </p>
+            </punctuation>
+            <stdVals>
+               <p>
+            <!--to be added-->
+          </p>
+            </stdVals>
+            <p>
+          <!--to be added-->
+        </p>
+         </editorialDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#tfruehwirth" when-iso="2026-10-13">TEIGarage output upconverted with upconvert.xsl</change>
+         <change who="#tfruehwirth" when-iso="2026-10-13">TEI header populated with generate_tei_templates.py</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface/>
+   </facsimile>
+   <text>
+      <body>
+         <div xml:id="doc-krp-0150.xml">
+            <head type="dokument">
+               <title type="num">150.<note type="footnote">Das Protokoll trägt den Vermerk <hi rend="#i">Vertraulich!</hi></note>
+               </title>
+               <title type="desc">
+                  <pb facs="krp-0150_r-0001"/>[Freitag] 1920-02-22</title>
+            </head>
+            <div type="dokumentkopf">
+               <div type="vorsitz">
+                  <head>Vorsitz:</head>
+                  <p>Renner</p>
+               </div>
+               <div type="anwesend">
+                  <head>Anwesend:</head>
+                  <p>Deutsch, Eisler, Eldersch, Ellenbogen, Fink, Hanusch, Loewenfeld-Russ, Miklas, Paul, Reisch, Resch, Tandler, Waiss, Zerdik</p>
+               </div>
+               <div type="zugezogen">
+                  <head>Zugezogen:</head>
+                  <p>Breitner, Grimm, Hartl, Müller, Speiser, Tomschik, Reumann, Wilfling</p>
+               </div>
+               <div type="schriftfuehrer">
+                  <head>Schriftführer:</head>
+                  <p>Fenz</p>
+               </div>
+               <div type="dauer">
+                  <head>Dauer:</head>
+                  <p>10.00–13.15 Uhr</p>
+               </div>
+            </div>
+            <div type="komponenten">
+               <p>Reinschrift, Konzept, stenographische Mitschrift</p>
+            </div>
+            <div type="beilagen">
+               <head>Beilagen:</head>
+               <list>
+                  <item>-</item>
+               </list>
+            </div>
+            <div type="protokoll">
+               <div type="top" xml:id="krp-0150_top01">
+                  <head>
+                     <label>
+                        <num n="1">1.</num>
+                        <seg>Gehaltsforderungen der öffentlichen Angestellten.</seg>
+                     </label>
+                  </head>
+                  <p>Über Einladung des <hi rend="#letterspaced">Vorsitzenden</hi> berichtet Ministerialrat Dr. <hi rend="#letterspaced">Wilfling</hi> über die in der gestern Vormittag abgehaltenen Sitzung der paritätischen Lohnkommission von den einzelnen Angestelltenkategorien <pb facs="krp-0150_r-0002"/>erhobenen Forderungen.</p>
+                  <p>Die <hi rend="#u">Angestellten der Gemeinde Wien</hi> fordern:</p>
+                  <list>
+                     <item n="1"><label>1.)</label> Erhöhung der Gehaltsansätze sämtlicher Stufen des Gehaltsschemas, der Teuerungszulage und der Kinderzulage um 100 %,</item>
+                     <item n="2"><label>2.)</label> Erhöhung der Pensionen um 100 % sowie Gewährung der Teuerungszulage und Kinderzulage an die Pensionisten im Ausmaße der aktiv Angestellten,</item>
+                     <item n="3"><label>3.)</label> Rückwirkung der Erhöhungen auf den 1. Jänner 1920 an Stelle der gleitenden Zulage,</item>
+                     <item n="4"><label>4.)</label> eheste Flüssigmachung einer Anzahlung von je 500 K an die aktiven und pensionierten Angestellten für die Monate Jänner und Februar auf Rechnung dieser Erhöhungen.</item>
+                  </list>
+                  <p>Die <hi rend="#u">Angestellten des Landes Niederösterreich</hi> haben sich diesen Forderungen angeschlossen.</p>
+                  <p>Die <hi rend="#u">Post- und Telegrafenangestellte</hi>n verlangen:</p>
+                  <list>
+                     <item n="1"><label>1.)</label> Eine einmalige Unterstützung von 1.500 K für die verheirateten und von 1.000 K für die ledigen Angestellten,</item>
+                     <item n="2"><label>2.)</label> die Sicherstellung eines Existenzminimums von 24.000 K jährlich,</item>
+                     <item n="3"><label>3.)</label> die Abgabe der rayonierten Lebensmittel in natura.</item>
+                  </list>
+                  <p><pb facs="krp-0150_r-0003"/>Die <hi rend="#u">Sektion der akademisch vorgebildeten Beamten</hi> verlangt:</p>
+                  <list>
+                     <item n="1"><label>1.)</label> Abgabe von Brot, Mehl, Fett und Zucker in natura und überdies Gewährung einer gleitenden Zulage hinsichtlich der übrigen Lebensmittel und sonstigen Bedarfsartikel,</item>
+                     <item n="2"><label>2.)</label> Erhöhung der im Besoldungsübergangsgesetze festgesetzten Grundgehalte unter Zugrundelegung eines Existenzminimums von jährlich 24.000 K,</item>
+                     <item n="3"><label>3.)</label> Erhöhung der Teuerungs- und Kinderzulagen um 50 %,</item>
+                     <item n="4"><label>4.)</label> Erhöhung des Ortszuschlages der 3. und 4. Aktivitätszulagenklasse.</item>
+                  </list>
+                  <p>Die <hi rend="#u">Eisenbahnangestellten</hi> fordern die Abgabe der notwendigen Lebensmittel und Bedarfsartikel in natura, andernfalls Ausbau der gleitenden Zulage durch Einbeziehung von Fleisch, Kartoffeln und Brennstoff.</p>
+                  <p>Von sämtlichen Angestelltenkategorien wird unbeschadet der künftigen Neuregelung die Gewährung einer augenblicklichen Geldaushilfe verlangt.</p>
+                  <p>Anschließend hieran teilt der <hi rend="#letterspaced">Vorsitzende</hi> mit, dass sich das Koalitionskomitee in einer gestern abgehaltenen Sitzung mit den Gehaltsforderungen der öffentlichen Ange<pb facs="krp-0150_r-0004"/>stellten befasst habe und unvorgreiflich der Entscheidung des Kabinettsrates zu folgendem Ergebnisse gelangt sei:</p>
+                  <list>
+                     <item n="1"><label>1.)</label> Die Bemessung der Teuerungszulagen nach dem Familienstande ist aufrecht zu erhalten.</item>
+                     <item n="2"><label>2.)</label> Die Gewährung einer der Kinderzulage entsprechenden Zulage für die Gattin ist in Aussicht zu nehmen.</item>
+                     <item n="3"><label>3.)</label> Die gleitende Zulage ist entweder durch Einbeziehung neuer Artikel oder durch Erhöhung des perzentuellen Zuschlages auszugestalten.</item>
+                     <item n="4"><label>4.)</label> Ein angemessener Teil des Ortzuschlages ist dort, wo der Zins vierteljährlich gezahlt wird, für drei Monate vorauszuzahlen.</item>
+                     <item n="5"><label>5.)</label> Für die Gewährung einer allfälligen augenblicklichen Aushilfe wäre eine Form zu wählen, welche für die Zukunft nicht präjudiziert.</item>
+                     <item n="6"><label>6.)</label> Der Hauptausschuss wäre aufzufordern, eine öffentliche Enquête über die Gehaltsfrage der Angestellten abzuhalten, welcher sowohl die Vertreter von Staat, Land und Gemeinde Wien, als auch die Angestelltenorganisationen beizuziehen wären, um einerseits die berechtigten Forderungen der Angestellten festzustellen und andererseits den Angestellten <pb facs="krp-0150_r-0005"/>selbst die Finanzlage der öffentlichen Haushalte vor Augen zu führen.</item>
+                  </list>
+                  <p>Schließlich habe das Koalitionskomitee den Wunsch ausgesprochen, dass die Verhandlungen mit den Angestelltenorganisationen über die augenblicklich zu treffenden Maßnahmen von den Staatssekretären Dr. Reisch und Eldersch aufgrund einer vom Kabinettsrate zu erteilenden Instruktion geführt werden.</p>
+                  <p>In einer hierüber abgeführten eingehenden Debatte tritt folgende einmütige Auffassung des Kabinettsrates zutage:</p>
+                  <list>
+                     <item n="1"><label>1.)</label> Von dem Grundsatze der Bemessung der Teuerungszulage nach dem Familienstande wäre nicht abzugehen.</item>
+                     <item n="2"><label>2.)</label> Die Einbeziehung der Gattin in den Familienstand wäre mit Rücksicht darauf abzulehnen, dass bei Bemessung der Teuerungszulage im Besoldungsübergangsgesetz ohnedies die früher für Verheiratete erstellte Teuerungszulage zugrunde gelegt wurde und zugegeben werden müsse, dass wohl auf die schwierigere wirtschaftliche Lage der Ledigen gegenüber den Verheirateten ohne Kinder Rücksicht genommen werden müsse.</item>
+                  </list>
+                  <p><pb facs="krp-0150_r-0006"/></p>
+                  <list>
+                     <item n="1"><label>3.)</label> Das Hauptgewicht wäre auf die Ausgestaltung der gleitenden Zulage zu legen. Die Abgabe von Lebensmitteln in natura wäre aus organisationstechnischen Gründen abzulehnen; allenfalls wäre die Abgabe gegen Gutscheine in Erwägung zu ziehen.</item>
+                     <item n="2"><label>4.)</label> Die Vorausbezahlung des Ortsklassenzuschlages in Vierteljahresraten ist begründet.</item>
+                     <item n="3"><label>5.)</label> Unter allen Umständen wäre es in Hinblick auf die Ungeklärtheit der gegenwärtigen wirtschaftlichen Verhältnisse zu vermeiden, ein Definitivum zu schaffen; vielmehr wäre durch eine augenblickliche, auf Rechnung der dauernden Regelung zu gewährende Geldaushilfe Raum für die durch den Hauptausschuss zu führenden Verhandlungen zu schaffen.</item>
+                     <item n="4"><label>6.)</label> Der Abhaltung einer Enquête durch den Hauptausschuss wird zugestimmt.</item>
+                  </list>
+                  <p>In diesem Sinne wären die Verhandlungen in der Lohnkommission mit den Vertretern der Angestelltenorganisationen zu führen. Als Vertreter der Staatsregierung werden hiezu die Staatssekretäre Dr. Reisch, Eldersch und Paul sowie Unterstaatssekretär Miklas delegiert. </p>
+                  <p><pb facs="krp-0150_r-0007"/>Eine lebhafte Debatte entwickelt sich sodann über die Frage des weiteren gemeinsamen Vorgehens der Staatsregierung mit der Gemeinde Wien und dem Lande Niederösterreich. Von der Mehrzahl der Redner wurde hervorgehoben, dass diese Bindung bisher lediglich zum Nachteil des Staates ausgeschlagen habe, da die Forderungen der Gemeindeangestellten jenen der übrigen Angestellten weit vorausgeeilt seien. Auch sei der gegenwärtige Zustand, dass der Staat für das aus den Gehaltsansprüchen der Gemeindeangestellten entstehende Mehrerfordernis mangels der Gemeinde Wien zur Verfügung stehender Mittel aufkomme, auf die Dauer nicht aufrechtzuerhalten.</p>
+                  <p>Da überdies die Organisation der Angestellten der Gemeinde Wien ihren Austritt aus der Lohnkommission angemeldet hat, betrachtet der Kabinettsrat den in der Sitzung vom 28. Oktober 1919 gefassten Beschluss, betreffend das gemeinsame Vorgehen von Staat, Land und Gemeinde in Gehaltsfragen ihrer Angestellten, für gegenstandslos und hebt ihn auf. Der Staat wird jedoch als Arbeitgeber mit dem Lande Niederösterreich und der Gemeinde Wien <pb facs="krp-0150_r-0008"/>als Arbeitgebern selbstverständlich die Fühlung aufrechterhalten, ohne dass jedoch dadurch eine Verpflichtung zu paritätischem Vorgehen begründet wird.</p>
+                  <p>Der Vorsitzende teilt diesen Beschluss des Kabinettsrates den nunmehr den Beratungen beigezogenen Vertretern des Landes Niederösterreich und der Gemeinde Wien sowie dem Abgeordneten Tomschik mit.</p>
+                  <p>Die Vertreter der Gemeinde Wien geben ihrem lebhaften Bedauern über die Auflösung der bisher bestandenen Bindung Ausdruck und weisen darauf hin, dass gerade dieses gemeinsame Zusammengehen ein ungemein wertvolles retardierendes Moment gegenüber den Forderungen der Gemeindeangestellten gebildet habe. Eine Rückwirkung auf die Ansprüche der Staatsangestellten sei übrigens auch bei getrenntem Vorgehen unausbleiblich.</p>
+                  <p>Was die aufgestellten Forderungen selbst anbelange, so sei es zur Vermeidung eines Ausstandes unbedingt notwendig, eine momentane Aushilfe zu gewähren. Diese Aushilfe wäre für die Monate Jänner, Februar und März zu gewähren und nicht unter 500 K zu bemessen. Selbstverständlich werden <pb facs="krp-0150_r-0009"/>die bereits ausbezahlten Vorschüsse auf die gleitende Zulage hiebei in Abrechnung zu bringen sein.</p>
+                  <p>Im Verlaufe der weiteren Debatte weist Staatssekretär Dr. <hi rend="#letterspaced">Deutsch</hi> darauf hin, dass die Stellung der Gemeinde Wien in der ganzen Frage noch dadurch erschwert sei, dass im Gemeinderate nicht wie in der Staatsregierung eine Koalition zwischen der Sozialdemokratischen und der Christlichsozialen Partei bestehe. Es müsse daher angestrebt werden, dass die beiden genannten Parteien auch im Gemeinderate in der Angestelltenfrage eine einheitliche Haltung bekunden. Für unbedingt notwendig halte er es überdies, dass noch in dieser Woche der Nationalversammlung die Steuervorlagen unterbreitet werden, um der Öffentlichkeit gegenüber darzutun, dass die Staatsregierung auch bestrebt sei, für die durch die Forderungen der Angestellten hervorgerufene Mehrbelastung die erforderliche Bedeckung zu schaffen.</p>
+                  <p>Abgeordneter <hi rend="#letterspaced">Tomschik</hi> spricht sich gleichfalls dafür aus, dass den Angestellten ein Vorschuss ausbezahlt werde, um Zeit für Verhandlungen für die definitive Regelung der Forderungen zu gewinnen. Das Wichtigste wäre seiner Ansicht nach die <pb facs="krp-0150_r-0010"/>Angleichung der gleitenden Zulage an die bestehenden Teuerungsverhältnisse. Weiterhin wäre eine größere Differenzierung der Ortsklassenzuschläge anzustreben.</p>
+                  <p>Staatssekretär <hi rend="#letterspaced">Reisch</hi> spricht sich gegen eine definitive Regelung der Gehaltsfrage im gegenwärtigen Zeitpunkte aus; als zweckmäßigstes Auskunftsmittel erschiene ihm, den perzentuellen Zuschlag zur gleitenden Zulage zu erhöhen und auf diese Erhöhung Vorschüsse zu gewähren, wodurch der Forderung nach einer augenblicklichen Zuwendung Rechnung getragen wäre. Eine Einbeziehung nicht staatlich bewirtschafteter Artikel in die gleitende Zulage könne er nicht empfehlen.</p>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> fasst das Ergebnis der Beratung dahin zusammen, dass in die Verhandlungen mit den Angestelltenorganisationen in der morgen abzuhaltenden Sitzung der Lohnkommission einzugehen sei, wobei auf Grundlage einer augenblicklichen, auf Rechnung der dauernden Regelung zu gewährenden Geldaushilfe Raum für die durch den Hauptausschuss zu führenden Verhandlungen zu schaffen sein werde.</p>
+                  <p/>
+               </div>
+            </div>
+            <div type="stenogramme">
+               <div n="1">
+                  <head>[KRP 150, 22. Februar 1920, Stenogramm Fenz]</head>
+                  <p><pb facs="krp-0150_s01-0001"/>150., 22. /II.</p>
+                  <p>[Zugezogen:] Wilfling, </p>
+                  <p>Grimm.</p>
+                  <p>[Renner]: Gestern Abend hat das Koalitionskomitee eine Sitzung abgehalten und hat die Frage der Beamten besprochen.</p>
+                  <p>[Am] Vormittag [war eine] Beratung der Lohnkommission unter Vorsitz Tomschiks. Von einem Teil der Angestellten wird die gleitende Zulage ganz abgelehnt. </p>
+                  <p>Die Forderungen der Beamten sind zum Teil dahin gegangen, die gleitende Zulage durch Naturalverpflegung zu ersetzen. </p>
+                  <p>[Als] Existenzminimum für die städt[ischen] Angestellten [wurden] 24.000 Kronen zugrunde gelegt, [außerdem wurde eine] Erhöhung der Kinder- und Teuerungszulage [und] </p>
+                  <p>allgemein [eine] einmalige Zulage gefordert. Am bescheidensten die Eisenbahner.</p>
+                  <p>Das Koalitionskomitee [kam zu] folgender Auffassung unvorgreiflich der Entscheidung des Kabinettsrates:</p>
+                  <p>Die Bezahlung nach dem Familienstand ist aufrecht zu erhalten im Gegensatz zur Industrie.</p>
+                  <p>Es wurde die Überzeugung ausgesprochen, dass die gleitende Zulage aufrecht zu erhalten ist; dass die Grundlagen des Besoldungsübergangsgesetzes nicht geändert </p>
+                  <p>werden, aber die gleitende Zulage durch die Einbeziehung von Artikeln ausgestaltet und das Zuschussprozent erhöht wird.</p>
+                  <p>Die Einbeziehung der Frau in die Familienzulage.</p>
+                  <p>Was die augenblickliche Zulage betrifft, so wünscht die Koalition nicht eine Form der einmaligen Zulage, welche für die </p>
+                  <p>Zukunft präjudizieren würde. [Sie sprach] sich aber nicht dafür und nicht [dagegen aus].</p>
+                  <p>Es wurde auf den Ortsklassenzuschlag hingewiesen, welcher monatlich ausbezahlt wird und auf die Zinszahlung ungünstig wirke. </p>
+                  <p>[Zu erwägen sei eine] Zusammenlegung im Zinsmonat. Es sei daher möglich, dass man einen dem Zins angemessenen Bruchteil der Ortsklassenzuschläge </p>
+                  <p>vierteljährlich zahlt. Mit der Erteilung von Vorschüssen soll man zurückhaltend sein und - [ so dass man] nur im Falle der Not [etwas] gibt.</p>
+                  <p>[Es besteht] der Wunsch, dass man jetzt über die Schwierigkeit hinwegkommt und den Hauptausschuss auffordert, [dass er] eine Beamtenenquete </p>
+                  <p>[<hi rend="#i">Am Rand:</hi>] mit Staat, Land und Gemeinden </p>
+                  <p>abhält. Eine solche mündliche Vernehmung beider Teile durch den Hauptausschuss schiene zweckmäßig, um in aller Öffentlichkeit die Finanzlage und die </p>
+                  <p>Lage der Beamten aufzuklären.</p>
+                  <p>Diese Wünsche müssen nun überprüft werden. </p>
+                  <p>[Dabei ist] auf folgenden Gesichtspunkt Rücksicht zu nehmen: </p>
+                  <p>Das Koalitionskomitee hat den Wunsch ausgesprochen, dass Reisch und Eldersch die Verhandlungen mit den Angestellten führen, denen vom Kabinettsrat die erforderlichen Instruktionen – </p>
+                  <p>vom Kabinettsrat gegeben werden. Es wäre so zu machen, dass die beiden Staatssekretäre aufgrund der vom heutigen Kabinettsrat zu beschließenden Instruktion verhandeln. </p>
+                  <p>Dabei ist aber zu beachten, dass die Gemeinde Wien nicht über die nötigen Mittel verfügt, um nur halbwegs den Wünschen der Stadtangestellten nachzukommen.</p>
+                  <p>Hanusch: Es muss auch von der anderen Partei, die in der Koalition dabei ist, [jemand nominiert werden, der] an den Verhandlungen teilnimmt. [Ich] beantrage, dass auch ein </p>
+                  <p>christlichsozialer Vertreter teilnimmt, damit auch diese Partei die Verantwortung mitträgt.</p>
+                  <p>[Beschluss]: Miklas.</p>
+                  <p>Renner: <hi rend="#s">Es ist</hi> -.</p>
+                  <p><pb facs="krp-0150_s01-0002"/>Wilfling: Berichtet über die formulierten Forderungen der Angestellten.</p>
+                  <p>[Angestellte der] Gemeinde Wien.</p>
+                  <p>Post- und Telegraphen[angestellte]: [Einmalige Unterstützung von] 1.500 - 1.000 [Kronen].</p>
+                  <p>Beamtensektion der Akad[miker]: 1.) Ersatz der gleitenden Zulage durch Naturallieferungen (Brot, Mehl, Fett und Zucker). </p>
+                  <p>Daneben Ausbau der gleitenden Zulage hinsichtlich der Artikel, die außerhalb dieser vier Artikel sind. </p>
+                  <p>Erhöhung der ständigen Bezüge unter Zugrundelegung des Minimums von 24.000 Kronen. </p>
+                  <p>Erhöhung der variablen Bezüge (Teuerungs- und Kinderzulage) um 50 %. </p>
+                  <p>Erhöhung des Ortszuschlages der III. Klasse der mit 10 %.</p>
+                  <p>Land[esangestellte]: Haben sich der Gemeinde angeschlossen.</p>
+                  <p>Eisenbahner: Die gleitende Zulage hat nicht die Hoffnung erfüllt. [Man sollte] drei Artikel hinein nehmen, Fleisch, Beheizung und Kartoffel. </p>
+                  <p>Sie sind in erster Linie für die Naturalbeschaffung, wo nicht möglich, soll die gleitende [Zulage] aufrecht bleiben.</p>
+                  <p>Alle: Unbeschadet der künftigen Regelung jetzt ein Geldbetrag.</p>
+                  <p>Ad Koalition: Die Bezahlung nach dem Familienstand entspricht dem jetzigen System. Die Einbeziehung der Frauen war ein Wunsch der Eisenbahner. </p>
+                  <p>Der Standpunkt aller anderen Staatsangestellten ist, das Prinzip der Gemeinde Wien - nämlich die Frau auszuschließen - anzunehmen. Das ganze System ist ohnedies aufgebaut auf den </p>
+                  <p>Verheirateten. Es würde daher eine Änderung des ganzen Aufbaues erfordern.</p>
+                  <p>Was den Ortsklassenzuschlag anbelangt, so würden keine Bedenken sein für diejenigen, die es verlangen, für die Zwecke des Zinses.</p>
+                  <p>Wegen der Südbahn: -.</p>
+                  <p>Reisch: Es geht nicht, dass die Gemeinde Wien einfach vorprellt und dann sagt, der Staat soll zahlen, weil sie kein Geld hat. </p>
+                  <p>Die Bezüge der Beamten müssen mit dem vorhandenen Nationaleinkommen in Einklang gebracht werden. </p>
+                  <p>Ich erkläre, dass ich es für ausgeschlossen halte, den Forderungen Rechnung zu tragen, weil [uns] das höchstens für einen oder zwei Monate rettet, dann aber </p>
+                  <p>den Zusammenbruch herbeiführen muss.</p>
+                  <p>Als Richtschnur müsste gelten, dass wir einerseits die übertriebenen Forderungen überhaupt zurückweisen und es auf einen Kampf ankommen lassen. </p>
+                  <p>Gegenwärtig kann ein Def[initivum] nicht geschaffen werden, weil die wirtschaftlichen Verhältnisse nicht stabil sind, höchstens ein Expediens für jetzt. </p>
+                  <p>Insbesondere [die Forderung nach] 24.000 [Kronen] Existenzminimum [ist] nicht zu diskutieren.</p>
+                  <p>Renner: Es fällt uns gar nicht ein, zu kapitulieren. Andererseits geht es nicht, dass man sich auf den Standpunkt stellt, es wird nicht verhandelt. </p>
+                  <p>Es handelt sich auch darum, dass man jetzt die Basis für Verhandlungen schafft. Der Standpunkt Reischs bedeutet eine Kampfansage auf der ganzen Linie. </p>
+                  <p>Wenn man nun sagt, vom Nationaleinkommen kann nur eine bestimmte Summe gegeben werden, [<hi rend="#i">Einschub:</hi>] so geht das nicht ohne Diktatur über die Beamten, [<hi rend="#i">Einschub Ende</hi>] so muss man den Beamten sagen, es muss abgebaut werden, die übrigen </p>
+                  <p><pb facs="krp-0150_s01-0003"/>müssen dann entsprechend gezahlt werden.</p>
+                  <p>Man muss versuchen, jetzt über die augenblickliche Schwierigkeit hinüber zu kommen, dass man die Verhandlungsmöglichkeit herstellt. Man muss ihnen die Ungebühr einzelner </p>
+                  <p>Forderungen vorführen. In anderen hätten sie recht, aber sie sind nicht zu erfüllen. Man muss eine Enquête unter der ganzen Öffentlichkeit abhalten.</p>
+                  <p>Eldersch: Ich halte es [für] unmöglich, in die Verhandlungen einzutreten mit der Erklärung, man kann gar nichts geben.</p>
+                  <p>Die Forderung der Gemeinde Wien ist undiskutabel. Ich bin dafür, dass man die Verbindung zwischen der Gemeinde Wien und den Angestellten des Landes und des Staates löst, weil sich </p>
+                  <p>daraus die Schwierigkeit ergibt, dass die Forderungen sich überbieten. Ganz ausgeschlossen ist, dass die Gemeinde [etwas] bewilligt und der Staat [es] zahlt. Es ginge nicht, dass die </p>
+                  <p>Angestellten der Gemeinde besser bezahlt werden als die Angestellten des Staates und der Staat es zahlt. </p>
+                  <p>Dazu kommt, dass man, wenn man [es] Wien bewilligt, es auch für das Land geben müsste, was unbillig wäre.</p>
+                  <p>Man muss trachten, die gleitende Zulage auszugestalten. </p>
+                  <p>Wir haben nicht allein unter einer furchtbaren Teuerung zu leiden, aber auch unter der ungleichmäßigen Kaufkraft der Krone in Wien und den Ländern. </p>
+                  <p>Der Schlüssel der Situation liegt in der gleitenden Zulage, die muss ausgestaltet werden - eventuell mit Rückwirkung von 1. I.</p>
+                  <p>Die größte Unzufriedenheit haben wir dadurch ausgelöst, dass der Verwaltungsapparat so schwerfällig ist, dass man das, was man zu bekommen hätte, so spät bekommen hat. </p>
+                  <p>Die Befriedigung über [<hi rend="#i">Einschub:</hi>] die durch das Besoldungsübergangsgesetz [<hi rend="#i">Einschub Ende</hi>] zugesicherte Leistung ging verloren dadurch, dass die Flüssigmachung so spät erfolgte.</p>
+                  <p>Ob man - die Zulage auch für Frauen zu geben wäre, wäre sehr zu überlegen, weil dann die Ledigen kommen werden.</p>
+                  <p>Fink: Ich halte dafür, dass es besser wäre, zuerst im Kabinett zu beraten und dann die von uns bestimmten drei Mitglieder morgen verhandeln.</p>
+                  <p>Deutsch: Ich bin der Meinung, dass wir die Gemeinde und das Land hier zuzuziehen [hätten], denn ein Beschluss ohne sie nützt gar nichts.</p>
+                  <p>Miklas: [Ich] bin auch der Meinung, dass es sehr wünschenswert wäre, wenn die Verbindung gelöst würde, dass es aber praktisch nicht möglich ist. </p>
+                  <p>Man soll den formalen Zusammenhang lösen, aber doch wären die Verhandlungen mit der Gemeinde zusammen zu führen, weil Zugeständnisse, die die Gemeinde macht, </p>
+                  <p>rückwirken auf die Staatsangestellten. Eine eigentliche Bindung wäre aber zu eliminieren. Das Recht der freien Entscheidung muss uns gewahrt werden.</p>
+                  <p>Renner: Da die Angestelltenorganisation der Gemeinde Wien aus der Lohnkommission ihren Austritt angemeldet hat, so betrachtet der Kabinettsrat </p>
+                  <p>den damals gefassten Beschluss für gegenstandslos und hebt ihn auf. Andererseits wird der Staat als Arbeitgeber mit dem Land und der Gemeinde als Arbeitgeber </p>
+                  <p>die Fühlung in allen Fällen aufrecht zu erhalten suchen, ohne dass dadurch eine Verpflichtung zu parit[ätischem] Vorgehen begründet wird.</p>
+                  <p>Die Unterhändler sollen sich rezeptiv verhalten und dann versuchen, ein augenblickliches Auskunftsmittel zu schaffen und dann die dauernde Reform aufgrund </p>
+                  <p>eines Gesetzes aufgrund einer allgemeinen Aussprache zu suchen - zu erklären.</p>
+                  <p>[Zu den Vorschlägen der] Koal[ition]: Die Einbeziehung der Frau wird abgelehnt. Ausgestaltung der gleitenden Zulage durch Einbeziehung von anderen Artikeln (Fleisch und Beheizung). </p>
+                  <p>Die Frage der Hinausgabe der Artikel in natura scheint der K[...] undurchführbar. Ortsklassenzuschläge [...], dass alle diejenigen, die Vierteljahreszins </p>
+                  <p><pb facs="krp-0150_s01-0004"/>zahlen, jetzt zwei Monate nachbezahlt bekommen. Enquête.</p>
+                  <p>[Zugezogen]: Reumann, Landesrat Müller, Breitner, Speiser, Hartl, </p>
+                  <p>Tomschik.</p>
+                  <p>Der Beschluss wird verlesen: &lt; &gt;</p>
+                  <p>Reumann: Was der Staatskanzler mitgeteilt hat, bedeutet, dass morgen unsere Leute in den Streik treten werden. Die Gesichtspunkte, die der Staatskanzler </p>
+                  <p>mitgeteilt hat - [das] ist höchstens für die Verhandlungen von Bedeutung. Wenn nicht in der nachfolgenden Diskussion etwas herauskommt, was man augenblicklich den Angestellten </p>
+                  <p>geben kann -.</p>
+                  <p>Die vom Koalitionskomitee wie vom Kabinett gebotenen Auskunftsmittel seien keine Mittel, den Streik hintan zu halten.</p>
+                  <p>Breitner: Unser stärkstes Bremsmittel war, dass wir parallel mit dem Staat vorgehen. Die Angestellten haben sich darum </p>
+                  <p>losgelöst, weil sie diese Hemmung gefühlt haben. Wenn die Koppelung aufhört, so wird deshalb die Rückwirkung auf die Staatsbeamten </p>
+                  <p>nicht ausbleiben, vielleicht infolge der schwächeren Organisation der Staatsbeamten erst in 14 Tagen, aber dann doch unbedingt.</p>
+                  <p>Der Beschluss ist unannehmbar für die Gemeinde Wien, denn die Gemeinde hat nicht die Mittel. <hi rend="#s">Das Zusammengehen mit dem Staat hatte wohl einerseits den Grund, um dem Staat -.</hi></p>
+                  <p>Renner: Die Frage der Partizipation des Staates an den Lasten ist eine andere Frage, über die der Beschluss sich nicht ausspricht.</p>
+                  <p>Breitner: Wir müssen für uns dann auch Steuerrechte in Anspruch nehmen. Wenn wir den Vorschuss morgen nicht geben, dann [kommt es zu einem] Stillstand </p>
+                  <p>des Wiener Verwaltungsapparates.</p>
+                  <p>Fink: Seit wir die Sache behandeln [besteht] im Kabinett einhellig die Meinung, dass die Geldentwertung und die Teuerung so stark [ist], </p>
+                  <p>dass für die Staats- und Gemeindeangestellten die heutige Entlohnung nicht genügt. Verschieden war nur die Meinung auf welche Weise man helfen soll, damit </p>
+                  <p>die Angestellten besser gestellt [werden] und wie der Staat es ertragen soll.</p>
+                  <p>Der Zusammenhang zwischen den Arbeitgebern soll bleiben, aber der Zusammenhang zwischen den Angestellten der Gemeinde und des Staates wurde von </p>
+                  <p>den Gemeindeangestellten aufgelöst. Daher ist er Beschluss begründet.</p>
+                  <p>Die Koalition hat gemeint, man soll an den Grundgehältern nichts ändern, an den Teuerungszulagen nur insofern, als die Frauen einbezogen werden. </p>
+                  <p>Bei der Ortsgebühr soll es so gemacht werden, dass der Zins gezahlt werden kann. Bei der - die gleitende Zulage soll verbessert werden durch die Einbeziehung </p>
+                  <p>von Artikeln und dann so, dass sie rechtzeitig anfällt.</p>
+                  <p>Loewenfeld-Ruß: Ad Einführung der Naturalentlohnung. [Ich] halte es für technisch undurchführbar. Vielleicht [ginge es] in Wien, wo alle Beamten an </p>
+                  <p>Lebensmittellager angeschlossen sind. Am Land aber kaum.</p>
+                  <p>Die Begründung, dass der Staat - ohnedies schuldig bleibt, ist nicht richtig. Seit der Erschöpfung des amerikanischen Kredites zahlt der Staat. </p>
+                  <p><pb facs="krp-0150_s01-0005"/>Es würde eintreten, dass nachdem der Zucker immer gezahlt wird, desgleichen Brot und Mehl und Fett, der Staat bzw. die Einkaufsorganisation weniger </p>
+                  <p>Geld zurückbekommen als sie ausbezahlt haben. Nun sind alle Einkaufsorganisationen immobil, denn sie verfügen nicht mehr über die erforderlichen </p>
+                  <p>Geldmittel. Wenn das Staatsamt für Finanzen die bindende Verpflichtung übernimmt, [dass es] die Gelder, die uns entgehen, nicht nur ersetzt, sondern sie uns im voraus gibt, so ginge es. </p>
+                  <p>Bisher war das Staatsamt für Finanzen immer im Rückstand.</p>
+                  <p>Deutsch: Ich möchte die Bedenken der Gemeinde Wien doch nicht zu leicht nehmen. [Ich denke, dass die Bedenken] wegen der Loslösung durchaus zutreffend. </p>
+                  <p>Die Angestellten der Gemeinde Wien wollen heraus, weil die Bindung retardierend wirkt. Die Forderungswut hat dann keine Grenzen mehr. </p>
+                  <p>Das Zusammengehen mit der Gemeinde Wien war von der Fiktion geleitet, dass wir es mit demselben Partner zu tun haben. Aber in der Nationalversammlung [besteht eine] </p>
+                  <p>Koalition, in der Gemeinde Wien aber nicht. Wenn wir die Gemeinde Wien heraus lassen, so wird die christlichsoziale Partei in der Gemeinde maßlos </p>
+                  <p>agitieren. Diese Taktik halte ich für verderblich.</p>
+                  <p>Im Wesen handelt es sich darum, sind die Christlichsozialen bereit, mit uns den Beamten entgegen zu treten? Wenn ja, dann müssen sie es aber </p>
+                  <p>auch in der Gemeinde Wien. Die Angestellten der Gemeinde Wien erheben diese Forderungen nur, weil sie die christlichsoziale Opposition der Gemeinde Wien </p>
+                  <p>für sich haben. Ich bin der Meinung, dass die Loslösung dahin führt, [dass] der wüsten demagogischen Agitation völlig </p>
+                  <p>Tür und Tor geöffnet ist.</p>
+                  <p>Sachlich stehe ich auf dem Standpunkt wie Reisch: Kein Definitivum, eventuell [eine] Aushilfe aufgrund von Verhandlungen.</p>
+                  <p>Wir schaffen jetzt für den Staat eine starke Bindung durch die Nationalversammlung. Diese Bindung besteht aber für die Gemeinde Wien nicht. </p>
+                  <p>Erst wenn die Angestellten der Gemeinde Wien sehen, dass sie letztlich doch von der Nationalversammlung abhängen -.</p>
+                  <p>1.) Mit der Gemeinde Wien gemeinsam vorgehen, die Christlichsozialen müssten mit den Christlichsozialen in der Gemeinde deutsch reden.</p>
+                  <p>2.) Sachlich Standpunkt Reisch: kein Def[initivum], eventuell Aushilfe; die gleitende Zulage ausgestalten, die Frauenzulage [wäre] nach Möglichkeit abseits zu lassen.</p>
+                  <p>3.) Noch in dieser Woche der Nationalversammlung die Steuervorlagen vorlegen, damit die Öffentlichkeit sieht, wohin die Beamtenpolitik führt.</p>
+                  <p>Tomschik: <hi rend="#s">Momentan [besteht] folgende Schwierigkeit: Es wird morgen auf der Südbahn, nachdem auch die Wiener ein solches Komitee gebildet haben</hi> -.</p>
+                  <p>Es soll heute eine Entscheidung darüber gefällt werden, dass man einen Vorschuss ausbezahlt, der weitere Verhandlungen ermöglicht wegen der Regelung der gleitenden </p>
+                  <p>Zulage. In letzterer Beziehung man muss einbeziehen: Fleisch, Kartoffeln und Brennmaterial. Die gleitende Zulage muss auf eine Höhe gebracht werden, die </p>
+                  <p>den Teuerungsverhältnissen entspricht.</p>
+                  <p>Man müsste die Zuschläge der Ortsklassen zwischen 30 % und 20 % abstufen auf 30 %, 27 %, 24 %, und 20 %. </p>
+                  <p>Dadurch würde der Sturm der Beamten am Land zurückgeschlagen werden. Die Wiener Forderungen sind hauptsächlich auch diktiert von der Provinz.</p>
+                  <p><pb facs="krp-0150_s01-0006"/>Miklas: </p>
+                  <p>Wenn es in Wien nicht gelingen sollte, ein gütliches Einvernehmen zwischen den beiden Parteien herzustellen, so bedauert das die christlichsoziale Partei am meisten. </p>
+                  <p>Der Behauptung, dass die Agit[ation] von der christlichsozialen Angestelltenschaft ausgeht, möchte ich entgegenhalten, dass sie nach meiner Kenntnis von den </p>
+                  <p>Angestellten der Betriebe ausgegangen sind. Was die staatlichen Angestellten betrifft, so [ist sie ausgegangen] von den Postlern unter Zelenka.</p>
+                  <p>Wir sollten unter allen Umständen einen modus ausfindig machen, der eine plötzliche Hilfsmaßnahme bedeutet. Ich möchte es gerne sehen, </p>
+                  <p>dass diese momentane Hilfsmaßnahme nicht in dem Hinwerfen eines Betrages von einigen 100 Kronen ist, sondern dass <hi rend="#s">diese Hilfsmaßnahme</hi> - darauf </p>
+                  <p>bedacht genommen wird, dass diese Hilfsmaßnahme <hi rend="#s">schon Rücksicht nimmt</hi> - sich auf das künftige System anrechnen lässt.</p>
+                  <p>[Ich bin] sehr einverstanden mit Vorschlag Deutschs wegen der Einbringung der Steuervorlagen. Übertriebene Hoffnungen knüpfe ich daran aber nicht, weil </p>
+                  <p>sie höchstens die Bedeckung für die jetzigen Mehrforderungen schaffen aber keineswegs eine Bedeckung des Defizits von 8,8 Milliarden überhaupt.</p>
+                  <p>Reisch: Wenn die Gemeinde Wien meint, sie müsste die Forderungen bewilligen, so wirft sich die Frage auf, mit welchen Mitteln? </p>
+                  <p>Der Staat kann auf die Länge der Zeit Vorschüsse der Gemeinde Wien nur aufgrund von Gesetzen geben. [Ein] Überweisungsgesetz ist vorbereitet. </p>
+                  <p>Damit wird aber dann die Gemeinde Wien auch wieder die selbständige Wirtschaft aufnehmen müssen. Wenn die Gemeinde selbständig Konzessionen macht, so wird sie auch darüber </p>
+                  <p>nachdenken müssen, wie sie die Mittel hierzu aufbringt.</p>
+                  <p>Wir müssen vorläufig ein Auskunftsmittel wählen, das uns die Zeit für weitere Verhandlungen schafft. Def[initive] Vorkehrungen können bei der gegenwärtigen </p>
+                  <p>ungeklärten wirtschaftlichen Lage nicht geschaffen werden.</p>
+                  <p>[<hi rend="#i">Am Rand:</hi>] Praktisch: </p>
+                  <p>Ausbau der gleitenden Zulage, Vorschuss auf die auszubauende gleitende Zulage. </p>
+                  <p>Was den Ausbau betrifft, so glaube ich, dass man weitere Artikel nicht einbeziehen kann. Wenn wir Holz oder Fleisch einbeziehen, so stoßen wir auf die </p>
+                  <p>Schwierigkeit, dass keine einheitlichen Preise für diese Artikel bestehen. Das gegebene Auskunftsmittel schiene mir, dass die Zuschläge zur </p>
+                  <p>gleitenden Zulage erhöht werden - entweder rückwirkend auf 1. I. oder Vorschüsse, wodurch die sofortige Auszahlung eines Geld-</p>
+                  <p>betrages ermöglicht würde.</p>
+                  <p>Die Abänderung der Ortsklassenzulage, wie sie Tomschik empfiehlt, würde eine Änderung des Gesetzes erfordern.</p>
+                  <p>Renner: Es wäre vom Staatsamt für Finanzen [ein Entwurf] auszuarbeiten, wonach als Vorschuss zur Neuregelung der gleitenden Zulage ein Betrag per Februar </p>
+                  <p>gegeben wird. Die weiteren Verhandlungen wären dann dem Hauptausschuss zu überlassen.</p>
+                  <p>[Von] größter Wichtigkeit [ist], dass bis Mittwoch die Steuervorlagen <hi rend="#s">eingebracht werden</hi> - durchberaten sind.</p>
+                  <p>Der Kabinettsbeschluss wird nicht publiziert und ist nur bestimmt, die drei Staatssekretäre zu decken, wenn die Gemeindeangestellten morgen nicht kommen. </p>
+                  <p>Bei den morgigen Verhandlungen wird am Schluss der Vorschuss in Aussicht gestellt.</p>
+                  <p><pb facs="krp-0150_s01-0007"/>Speiser: Eine Erhöhung von 500 Kronen monatlich bei gleichzeitiger Einrechnung in die gleitende Zulage ist das mindeste. </p>
+                  <p>Sie muss auch rückwirkend für Jänner gegeben werden, abzüglich der schon ausbezahlten Vorschüsse auf die gleitende Zulage. </p>
+                  <p>Wir brauchen diese 500 Kronen auch für ruhige Verhandlungen im März.</p>
+                  <p>Was die Einbeziehung anderer Artikel in die gleitende [Zulage] anbelangt, so werden wir mit dem gegenwärtigen System der vier Artikel nicht auskommen.</p>
+                  <p>Resch: Die gleitende Zulage muss entsprechend ausgebaut werden und es muss ein Vorschuss jetzt gegeben werden. </p>
+                  <p>Im Zusammenhang mit einer neuen Besoldungsreform müssen wir den Abbau der Beamten verlangen. </p>
+                  <p>Der Vorschuss muss differenziert werden zwischen Wien und Land.</p>
+                  <p>Eldersch: Für den Beschluss des Kabinettsrates wäre vor allem die Erwägung maßgebend, dass die übertriebenen Forderungen der Gemeindeangestellten auf die </p>
+                  <p>Angestellten des Staates und des Landes rückwirken. Ich will nicht behaupten, dass die Forderungen der Gemeindeangestellten mit Rücksicht auf </p>
+                  <p>die Teuerungsverhältnisse undiskutabel sind, aber sie sind diskutabel wegen der gegenwärtigen Lage der Staats- und Gemeindefinanzen. </p>
+                  <p>Dafür war der Beschluss maßgebend. Die Solidarität mit den Arbeitgebern sollte ja nicht abgelehnt werden.</p>
+                  <p>Was die materielle Seite anbelangt: Die städtischen Angestellten haben die gleitende Zulage pro Februar nicht genommen. Sie müssen </p>
+                  <p>daher jetzt höhere Vorschüsse bekommen als die Staatsbeamten.</p>
+                  <p>Es wurde viel von der Gemeinde Wien gegen die gleitende Zulage eingewendet. Sie muss bleiben, aber sie kann ausgestaltet werden durch </p>
+                  <p>die Einbeziehung anderer Artikel oder durch [eine] Erhöhung des Prozentsatzes. Aber das halten wir für unberechtigt, dass der Ledige und der </p>
+                  <p>Verheiratete ohne Kinder dasselbe bekommen soll wie der Verheiratete mit Kindern. Denn die Teuerung trifft den kinderreichen Haushalt </p>
+                  <p>stärker als den Ledigen oder den kinderlosen Verheirateten. Es ist daher ungerecht, dass dagegen Einwendungen erhoben werden, wenn man </p>
+                  <p>sagt, jeder nur 500 Kronen.</p>
+                  <p>Was die Naturalabgabe handelt - [anbelangt], so ist das ein Organisations- und Valutenproblem. </p>
+                  <p>Ad Organisation: Gutscheine. Es fragt sich nur, ob diese Arbeit rentiert mit Rücksicht auf das Val[uten]-Problem.</p>
+                  <p>Wenn die Herren der Gemeinde Wien meinen, dass die plötzliche Auflösung der Bindung auf die gegenwärtigen Verhandlungen ungünstig einwirke, so könnte es </p>
+                  <p>ja im vorliegenden Fall noch bleiben. Aber darauf kommt es an, dass wir von Staats wegen den Beamten der Gemeinde Wien nicht mehr geben können als den </p>
+                  <p>Staatsbeamten.</p>
+                  <p><pb facs="krp-0150_s01-0008"/>Renner: Die Verhandlungen werden aufgenommen. Die Vertreter werden im Sinne der Ausführungen des Kabinetts handeln. </p>
+                  <p>Ich möchte, dass auch Paul beigezogen wird, weil er zwei Drittel aller Staatsbediensteten vertritt. </p>
+                  <p>Diese Kommission [<hi rend="#i">Einschub:</hi>] mit Vertretern der Gemeinde [<hi rend="#i">Einschub Ende</hi>] soll morgen um 10 zusammentreten und sich vorbesprechen über das Verhalten im Detail.</p>
+                  <p>Lohnkommission 2 Uhr hier.</p>
+                  <p>Vollmacht: Durch eine augenblickliche auf Rechnung der dauernden Regelung [zu gebende] Zuwendung Raum zu schaffen für ruhige Verhandlungen, </p>
+                  <p>die durch den Hauptausschuss zu führen sein werden.</p>
+                  <p>Dienstag, 10 Uhr Vormittag, Steuersitzung.</p>
+               </div>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

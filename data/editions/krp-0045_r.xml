@@ -1,0 +1,736 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href='http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:acdh="https://vocabs.acdh.oeaw.ac.at/schema#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xml:lang="de">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="a" type="main" n="0045">Kabinettsprotokoll Nr. 45 vom 25. Februar 1919</title>
+            <title level="m" type="main" n="01">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <title level="m" type="sub" n="">Renner I (31. Oktober 1918 – 15. März 1919)</title>
+            <meeting>
+               <placeName key="https://d-nb.info/gnd/4066009-6">Wien</placeName>
+               <orgName key="https://d-nb.info/gnd/5162749-8">Kabinettsrat</orgName>
+               <date when-iso="1919-02-25"/>
+            </meeting>
+            <editor>
+               <persName key="https://d-nb.info/gnd/122481836"
+                         role="hasCreator"
+                         xml:id="hwohnout">
+                  <forename>Helmut</forename>
+                  <surname>Wohnout</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</affiliation>
+               <idno type="ORCID">0000-0002-3864-9839</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/120789825"
+                         role="hasCreator"
+                         xml:id="tolechowski">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0003-3291-6876</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/131679384"
+                         role="hasCreator"
+                         xml:id="rlein">
+                  <forename>Richard</forename>
+                  <surname>Lein</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0002-7502-0503</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="aholzer">
+                  <forename>Anna</forename>
+                  <surname>Holzer</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0005-3560-3500</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="dsoelkner">
+                  <forename>Dominik</forename>
+                  <surname>Sölkner</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-9895-7212</idno>
+            </editor>
+            <editor>
+               <persName role="hasContributor" xml:id="ischotzko">
+                  <forename>Ina</forename>
+                  <surname>Schotzko</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-5210-3713</idno>
+            </editor>
+            <funder n="1">
+               <orgName key="https://d-nb.info/gnd/2054142-9" role="hasFunder">Österreichischer Wissenschaftsfonds FWF</orgName>
+               <idno type="project">PAT1495024</idno>
+               <title type="project">Die Protokolle des österreichischen Kabinettsrates 1919–1920</title>
+            </funder>
+            <respStmt>
+               <resp>Projektverantwortung</resp>
+               <orgName key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Projektleitung</resp>
+               <persName key="https://d-nb.info/gnd/120789825" role="hasPrincipalInvestigator">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+                  <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+                  <idno type="ORCID">0000-0003-3291-6876</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Nationaler Forschungspartner</resp>
+               <orgName key="https://d-nb.info/gnd/1123037736" role="hasEnabler">Austrian Centre for Digital Humanities</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Digitalisierung der gedruckten Quellen</resp>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>TEI-Datenmodellierung</resp>
+               <persName role="hasContributor" xml:id="tfruehwirth">
+                  <forename>Timo</forename>
+                  <surname>Frühwirth</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-3997-5193</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technische Supervision</resp>
+               <persName key="https://d-nb.info/gnd/1043833846"
+                         role="hasContributor"
+                         xml:id="pandorfer">
+                  <forename>Peter</forename>
+                  <surname>Andorfer</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-9575-9372</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technisches Consulting und Vorbereitung der Druckausgabe</resp>
+               <persName key="https://d-nb.info/gnd/13281899X"
+                         role="hasContributor"
+                         xml:id="skurz">
+                  <forename>Stephan</forename>
+                  <surname>Kurz</surname>
+                  <affiliation key="https://d-nb.info/gnd/1202798799">Institut für die Erforschung der Habsburgermonarchie und des Balkanraumes</affiliation>
+                  <idno type="ORCID">0000-0003-2546-2570</idno>
+               </persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher key="https://d-nb.info/gnd/1001454-8">Österreichische Akademie der Wissenschaften</publisher>
+            <date when="2028"/>
+            <availability status="free">
+               <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">Lizenziert unter CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/deed.de)</licence>
+            </availability>
+            <idno type="ISBN_Print"/>
+            <idno type="ISBN_Part_epub"/>
+            <idno type="ISBN_Digital"/>
+            <idno type="DOI"/>
+            <idno type="DOI_zenodo"/>
+            <idno type="ebook_ID"/>
+         </publicationStmt>
+         <seriesStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="m" type="main">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <respStmt>
+               <resp>Bearbeitung und Herausgeberschaft</resp>
+               <orgName key="https://d-nb.info/gnd/2024703-5">Universität Wien</orgName>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+         </seriesStmt>
+         <notesStmt>
+            <note>Diese TEI-XML-Datei ist Grundlage für eine Druckausgabe der Edition.</note>
+            <relatedItem>
+               <biblStruct>
+                  <monogr>
+                     <imprint>
+                        <pubPlace key="https://d-nb.info/gnd/4066009-6">Wien</pubPlace>
+                        <publisher key="https://d-nb.info/gnd/2068748-5">Verlag der Österreichischen Akademie der Wissenschaften</publisher>
+                        <date when="2029"/>
+                     </imprint>
+                     <extent/>
+                  </monogr>
+                  <note>
+              <idno/>
+              <ptr/>
+            </note>
+                  <citedRange/>
+               </biblStruct>
+            </relatedItem>
+         </notesStmt>
+         <sourceDesc>
+            <bibl>Quellbestand: AT-OeStA/AdR MRang MR 1Rep KRP Kabinettsratsprotokolle, 1918-1920 (Teilbestand)<ref target="https://www.archivinformationssystem.at/detail.aspx?id=5465">https://www.archivinformationssystem.at/detail.aspx?id=5465</ref>
+            </bibl>
+            <msDesc>
+               <msIdentifier>
+                  <institution key="https://d-nb.info/gnd/37748-X" role="hasOwner">AT-OeStA Österreichisches Staatsarchiv (Archiv (ÖStA))</institution>
+                  <repository key="https://d-nb.info/gnd/1601181-8">AT-OeStA/AdR Archiv der Republik, 1918- (Abteilung)</repository>
+                  <collection>AT-OeStA/AdR MRang MR 1Rep Ministerrat 1. Republik, 1918 - 1938 (Bestand)</collection>
+                  <idno>AT-OeStA_AdR-MRang-MR-1.-Rep.-KRP-045</idno>
+               </msIdentifier>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <abstract>
+            <p>
+          <!--to be generated-->
+        </p>
+         </abstract>
+      </profileDesc>
+      <encodingDesc>
+         <styleDefDecl scheme="css"/>
+         <tagsDecl>
+            <rendition xml:id="b" scheme="css">font-weight:bold;</rendition>
+            <rendition xml:id="su" scheme="css">vertical-align:super;font-size:.7em;</rendition>
+            <rendition xml:id="s" scheme="css">text-decoration:line-through;</rendition>
+            <rendition xml:id="u" scheme="css">text-decoration:underline;</rendition>
+            <rendition xml:id="ow" scheme="css">text-decoration:line-through;text-decoration-style:double;</rendition>
+            <rendition xml:id="r" scheme="css">display:block;text-align:right;</rendition>
+            <rendition xml:id="letterspaced" scheme="css">letter-spacing:0.15em;</rendition>
+            <rendition xml:id="i" scheme="css">font-style:italic;</rendition>
+         </tagsDecl>
+         <editorialDecl>
+            <hyphenation>
+               <p>
+            <!--to be added-->
+          </p>
+            </hyphenation>
+            <correction>
+               <p>
+            <!--to be added-->
+          </p>
+            </correction>
+            <normalization>
+               <p>
+            <!--to be added-->
+          </p>
+            </normalization>
+            <punctuation>
+               <p>
+            <!--to be added-->
+          </p>
+            </punctuation>
+            <stdVals>
+               <p>
+            <!--to be added-->
+          </p>
+            </stdVals>
+            <p>
+          <!--to be added-->
+        </p>
+         </editorialDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#tfruehwirth" when-iso="2026-10-13">TEIGarage output upconverted with upconvert.xsl</change>
+         <change who="#tfruehwirth" when-iso="2026-10-13">TEI header populated with generate_tei_templates.py</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface/>
+   </facsimile>
+   <text>
+      <body>
+         <div xml:id="doc-krp-0045.xml">
+            <head type="dokument">
+               <title type="num">45.<note type="footnote">Das Protokoll trägt den Vermerk <hi rend="#i">Vertraulich!</hi></note>
+               </title>
+               <title type="desc">
+                  <pb facs="krp-0045_r-0001"/>
+                  <pb facs="krp-0045_r-0002"/>[Dienstag] 1919-02-25</title>
+            </head>
+            <div type="dokumentkopf">
+               <div type="vorsitz">
+                  <head>Vorsitz:</head>
+                  <p>Renner</p>
+               </div>
+               <div type="anwesend">
+                  <head>Anwesend:</head>
+                  <p>Beck, Enderes, Grimm, Hanusch, Kaup, Loewenfeld-Russ, Marckhl, Pacher, Resch, Roller, Steinwender, Stöckler, Urban, Waiss, Zerdik</p>
+               </div>
+               <div type="zugezogen">
+                  <head>Zugezogen:</head>
+                  <p>Hanausek, Hoheisel, Kralowsky, Schwarzwald, Thaa</p>
+               </div>
+               <div type="schriftfuehrer">
+                  <head>Schriftführer:</head>
+                  <p>unbekannt</p>
+               </div>
+               <div type="dauer">
+                  <head>Dauer:</head>
+                  <p>15.00–20.00 Uhr</p>
+               </div>
+            </div>
+            <div type="komponenten">
+               <p>Reinschrift, Beilagen, streng vertraulicher Anhang, Konzept, stenographische Mitschrift</p>
+            </div>
+            <div type="beilagen">
+               <head>Beilagen:</head>
+               <list>
+                  <item><ref target="#krp-0045_top02">Zu TOP 2</ref>: <ref target="#krp-0045_b01">Antrag des Staatsamtes für Landwirtschaft betreffend die Erklärung der hydroelektrischen Anlage an der Jochbergache für den staatlichen Kupferbergbau Jochberg bei Kitzbühel zum begünstigten Bau</ref></item>
+                  <item><ref target="#krp-0045_top04">Zu TOP 4</ref>: <ref target="#krp-0045_b02">Beschwerde des tschechischen Gesandten Vlastimil Tusar im Auftrag seiner Regierung wegen der Frage der Valuta für die Abrechnung bei Sachdemobilisierungen</ref></item>
+                  <item><ref target="#krp-0045_top07">Zu TOP 7</ref>: <ref target="#krp-0045_b03">Vollzugsanweisung für die teilweise Änderung des Dienstverhältnisses der Kanzleioffizianten und Kanzleioffiziantinnen, Kanzleigehilfen und Kanzleigehilfinnen, ständigen Aushilfs- und Landpostdiener</ref></item>
+                  <item><ref target="#krp-0045_top11">Zu TOP 11</ref>: <ref target="#krp-0045_b04">Antrag des Staatsamtes des Äußeren auf Protest gegen die völkerrechtswidrigen tschechoslowakischen Verfügungen hinsichtlich der dort ansässigen deutschen Beamten</ref></item>
+               </list>
+            </div>
+            <div type="protokoll">
+               <pb facs="krp-0045_r-0003"/>
+               <div type="top" xml:id="krp-0045_top01">
+                  <head>
+                     <label>
+                        <num n="1">1.</num>
+                        <seg>Ansprüche der tschechoslowakischen Regierung auf hofärarische Güter.</seg>
+                     </label>
+                  </head>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> bringt mehrere Zuschriften des tschechoslowakischen Bevollmächtigten an das Staatsamt für Äußeres zur Kenntnis, worin seitens der tschechoslowakischen Regierung einerseits auf eine Reihe von Einrichtungs- und Verbrauchsgegenständen aus den Beständen des Hofärars für Repräsentationszwecke sowie zur Einrichtung verschiedener Kanzleien Anspruch erhoben wird, andererseits gegen den Verkauf von Staatsgütern sowie gegen die Abholzungen in Staats- und hofärarischen Forsten Protest eingelegt wird.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Urban</hi> führt aus, dass eine einseitige Ausfolgung hofärarischer Güter in natura ohne vorherige Vereinbarung mit den übrigen Nationalstaaten unzulässig sei und schlägt vor, die Angelegenheit bei der Gesandtenkonferenz zur Sprache zu bringen. Eine Veräußerung von Staats- und Krongut sei bisher nur dann vorgenommen worden, wenn sich hiezu die Notwendigkeit ergeben habe.</p>
+                  <p>Staatssekretär <hi rend="#letterspaced">Stöckler</hi> teilt in diesem Zusammenhange mit, dass eine Veräußerung der in Deutschösterreich noch befindlichen 260°hofärarischen Pferde mit Rücksicht auf den <pb facs="krp-0045_r-0004"/>herrschenden Futtermangel und die dadurch eintretende Entwertung dieses Pferdematerials dringend notwendig sei. Wiederholte Anfragen in dieser Hinsicht bei der tschechoslowakischen Regierung seien bisher unbeantwortet geblieben.</p>
+                  <p>Unterstaatssekretär Ing. von <hi rend="#letterspaced">Enderes</hi> macht darauf aufmerksam, dass sich auch in den übrigen Nationalstaaten hofärarische Güter befänden, welche in die Liquidationsmasse einzubeziehen wären.</p>
+                  <p>Ministerialrat Dr. Ritter von <hi rend="#letterspaced">Thaa</hi> hält es für bedenklich, in eine Teilung der Aktiven einzugehen, insolange nicht über die Teilung der Passiven eine Vereinbarung getroffen worden sei. Jedenfalls sei es notwendig, dass entsprechend dem von den anderen Nationalstaaten eingehaltenen Vorgange auch Deutschösterreich geeignete Liquidationsorgane in den fremdnationalen Staaten bestelle.</p>
+                  <p>Nachdem zum Gegenstande noch Staatssekretär <hi rend="#letterspaced">Hanusch</hi> und Unterstaatssekretär <hi rend="#letterspaced">Marckhl</hi> gesprochen hatten, fasst der Kabinettsrat nachstehende Beschlüsse:</p>
+                  <list>
+                     <item n="1"><label>1.)</label> Die Ansprüche der tschechoslowakischen Republik auf hofärarische Güter sind in der Gesandtenkonferenz zur Verhandlung zu bringen.<pb facs="krp-0045_r-0005"/></item>
+                     <item n="2"><label>2.)</label> Für die Bestellung eigener deutschösterreichischer Liquidationsorgane in den fremdnationalen Staaten ist ehestens Vorsorge zu treffen.</item>
+                     <item n="3"><label>3.)</label> Der Staatsnotar wird eingeladen, im Einvernehmen mit dem Staatssekretär für Landwirtschaft der tschechoslowakischen Regierung für die Abnahme des hofärarischen Pferdematerials eine kurze Frist zu stellen und nach fruchtlosem Ablaufe dieser Frist mit dem Verkauf vorzugehen.</item>
+                     <item n="4"><label>4.)</label> Die Staatsämter werden aufgefordert, bekanntzugeben, inwieweit Eingriffe der Nationalstaaten in gemeinsames Besitztum stattgefunden haben, damit dagegen bei der Gesandtenkonferenz Stellung genommen werde könne.</item>
+                     <item n="5"><label>5.)</label> Desgleichen werden die Staatsämter neuerlich aufgefordert, insoweit ihr Ressort in Betracht kommt, Nachweisungen über die gemeinsamen Vermögenschaften zu geben, welche sich auf dem Territorium der fremdnationalen Staaten befinden.</item>
+                  </list>
+               </div>
+               <div type="top" xml:id="krp-0045_top02">
+                  <head>
+                     <label>
+                        <num n="2">2.</num>
+                        <seg>Erklärung des Baues einer hydroelektrischen Kraftanlage für den staatlichen Kupferbergbau Jochberg bei Kitzbühel als begünstigter Bau.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Stöckler</hi> erbittet und erhält die Zustimmung des Kabinettsrates, den geplanten Bau ei<pb facs="krp-0045_r-0006"/>ner hydroelektrischen Kraftanlage für den staatlichen Kupferbergbau Jochberg an der Jochberger Ache im Sinne der Kaiserlichen Verordnung vom 16. Oktober 1914, RGBl. Nr. 284, als begünstigten Bau zu erklären.</p>
+               </div>
+               <div type="top" xml:id="krp-0045_top03">
+                  <head>
+                     <label>
+                        <num n="3">3.</num>
+                        <seg>Währungspolitik.</seg>
+                     </label>
+                  </head>
+                  <p>Ministerialrat Dr. von <hi rend="#letterspaced">Thaa</hi> referiert über den gegenwärtigen Stand der Abstempelungsaktion. Der Vorrat der abgestempelten Noten sei zwar nicht so groß, dass sofort mit dem Umtausch begonnen werden könne, wäre es jedoch immerhin möglich, die Staatskassen mit einer entsprechenden Notenmenge zu dotieren, um bereits am 28. Februar oder 1. März die Zahlungen in abgestempelten Noten zu vollziehen.</p>
+                  <p>In der sich hieran anschließenden Debatte, an welcher sich außer dem Vorsitzenden und dem Referenten die Staatssekretäre Dr. <hi rend="#letterspaced">Steinwender</hi> und Dr. <hi rend="#letterspaced">Urban</hi>, ferner Unterstaatssekretär Dr. <hi rend="#letterspaced">Waber</hi> und Hofrat Dr. <hi rend="#letterspaced">Schwarzwald</hi> beteiligten, wurde insbesondere die Behandlung der Auslandsguthaben in Deutschösterreich, sowie die Frage, ob die Staatsschuldverbindlichkeiten in altösterreichi<pb facs="krp-0045_r-0007"/>schen oder in deutschösterreichischen Noten zu tilgen sein werden, eingehend erörtert. Das Staatsamt der Finanzen wurde eingeladen, über diese Fragen in der nächsten Sitzung des Kabinettsrates entsprechende Vorschläge zu erstatten.</p>
+               </div>
+               <div type="top" xml:id="krp-0045_top04">
+                  <head>
+                     <label>
+                        <num n="4">4.</num>
+                        <seg>Frage der Valuta für die Abrechnung bei der Sachdemobilisierung.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Urban</hi> teilt mit, dass der Gesandte Tusar in Auftrag seiner Regierung über das angebliche Verlangen des Unterstaatssekretärs Riedl, wonach die Werte der Sachdemobilisierung zufolge der Abstempelung der Valuta in Schweizer Francs oder in holländischen Gulden zu verrechnen seien, Beschwerde geführt habe. Die tschechoslowakische Regierung habe aus diesem Anlasse die Gegenforderung gestellt, dass die Lebensmittel- und Kohlenbezüge in Böhmen gleichfalls in neutraler Valuta bezahlt werden.</p>
+                  <p>Redner stellt zunächst fest, dass ein einschlägiges Verlangen vom Unterstaatssekretär Riedl <hi rend="#u">nicht</hi> gestellt worden sei. Immerhin bleibe aber die Frage zu beantworten, wie sich valutarisch die Verrechnung werde zu gestalten haben, wenn einmal die einheitliche Wäh<pb facs="krp-0045_r-0008"/>rung durch national gesonderte ersetzt sein wird. Auch werfe sich die Frage auf, in welcher Valuta die wechselseitigen Warenbezüge zwischen Deutschösterreich und dem tschechoslowakischen Staate zu bezahlen seien, ferner in welcher Valuta die Zahlungen des liquidierenden Kriegsministeriums zu erfolgen hätten.</p>
+                  <p>Nachdem Hofrat Dr. <hi rend="#letterspaced">Schwarzwald</hi> die in Betracht kommenden Verhältnisse dargelegt hatte, beschließt der Kabinettsrat, dem Gesandten Tusar sei mitzuteilen, dass ein Verlangen nach Verrechnung der Sachdemobilisierungswerte in neutraler Valuta nicht gestellt worden sei, dass jedoch deutschösterreichischerseits Wert darauf gelegt werde, dass die von den einzelnen Staaten aus dem Titel der Sachdemobilisierung an uns zu leistenden Zahlungen in solcher Währung entrichtet werden, welche die Beträge zu allen Zahlungen nach allen Richtungen gleichmäßig und ohne Verkürzung in irgendeiner Hinsicht durch ein Agio, sei es zu Lasten der Masse, sei es zu Lasten des Empfängers, verfügbar mache.</p>
+                  <p>Was die Zahlungen für die Importe aus Böhmen und die Exporte nach Böhmen anbelangt, so wäre, solange die Tsche<pb facs="krp-0045_r-0009"/>choslowaken für ihre Lieferungen Begleichung in tschechoslowakischer Währung verlangen, in allen Fällen, wo wir liefern, auf Begleichung in frei verfügbaren Prager Guthaben bzw. in tschechoslowakischer Währung zu bestehen. Ferner wäre bis auf weiteres dabei zu verharren, dass sämtliche Zahlungen gemeinsamen Liquidierungsstellen bis auf weiteres in ungestempelten Noten geleistet werden. Der ganze Gegenstand wäre in der internationalen Valutakommission zur Sprache zu bringen und dort als Ziel anzustreben, dass die Zahlungen des liquidierenden Kriegsministeriums in jedem Lande paritätisch in jener Valuta flüssig gemacht werden können, die am Sitz des forderungsberechtigten Unternehmens in Geltung ist, da eine solche Valutaumwandlung bloß vom Willen jeder einzelnen Nationalregierung abhängen wird.</p>
+               </div>
+               <div type="top" xml:id="krp-0045_top05">
+                  <head>
+                     <label>
+                        <num n="5">5.</num>
+                        <seg>Sondermaßnahmen für die am 28. Februar 1919 in das nichtaktive Verhältnis zu übersetzenden subsistenzlosen deutschösterreichischen Mannschaften der Liquidierungsstellen.</seg>
+                     </label>
+                  </head>
+                  <p>Sektionschef <hi rend="#letterspaced">Hanausek</hi> teilt mit, dass nach den von der Internationalen Liquidierungskommission getroffenen Verfügungen alle nichtaktiven Gagisten und Mannschaftspersonen, die bei liquidierenden militärischen Stellen noch beschäftigt sind, am 28. Februar <pb facs="krp-0045_r-0010"/>d. J. in das Zivilverhältnis zu übersetzen sind. Die zur Beendigung der Liquidierung über diesen Zeitpunkt hinaus unumgänglich erforderlichen Kräfte, sollen für diesen Zweck als Zivilpersonen durch einen Dienstvertrag verpflichtet werden. Hienach müssten alle Entbehrlichen entlassen werden. Um nun zu verhindern, dass durch diese Maßnahmen nichtaktive Mannschaften deutschösterreichischer Staatsbürgerschaft der Arbeitslosenfürsorge anheimfallen, stelle das Staatsamt für Heer[es]wesen den Antrag, jene erwerbs- und mittellosen nicht aktiven Mannschaftspersonen deutschösterreichischer Staatsbürgerschaft, die im Sinne des vorerwähnten Beschlusses als entbehrlich erachtet werden, aus sozialen Rücksichten – jedoch ohne Abschließung eines Dienstvertrages – noch bis 15. April 1919 mit den bisherigen Bezügen zu Lasten des deutschösterreichischen Staates als Zivilpersonen im Stande zu behalten und nach Maßgabe einer Verwendungsmöglichkeit für die Liquidierungstätigkeit heranzuziehen.</p>
+                  <p>Der Kabinettsrat erhebt diesen Antrag zum Beschluss.</p>
+                  <p><pb facs="krp-0045_r-0011"/></p>
+               </div>
+               <div type="top" xml:id="krp-0045_top06">
+                  <head>
+                     <label>
+                        <num n="6">6.</num>
+                        <seg>Versetzung aller aktiven Offiziere in den Ruhestand.</seg>
+                     </label>
+                  </head>
+                  <p>Weiters teilt Sektionschef Hanausek mit, dass nach einem Beschluss der Internationalen Liquidierungskommission die gesamten aktiven Offiziere, soweit sie nicht in den Dienst eines der Nationalstaaten übernommen worden sind, am 28. Februar 1919 in den Ruhestand zu übersetzen sind. Das Staatsamt für Heer[es]wesen müsse gegen diesen Beschluss Einspruch erheben, da er ohne dessen vorherige Kenntnis zustande gekommen sei.</p>
+                  <p>Nach einer kurzen Debatte, an der sich die Unterstaatssekretäre Dr. von <hi rend="#letterspaced">Grimm</hi> und Dr. <hi rend="#letterspaced">Waber</hi> beteiligten, nimmt der Kabinettsrat den in Rede stehenden Beschluss als für Deutschösterreich bindend zur Kenntnis.</p>
+                  <p>Die Durchführung der Pensionierung ist durch eine Verfügung des liquidierenden Kriegsministeriums vorzunehmen.</p>
+                  <p>Da sich diese Durchführung bis 1. März nicht bewerkstelligen lässt, erwartet der Kabinettsrat, dass eine neuerliche Beratung in der Gesandtenkonferenz den Übergang ermöglichen werde; unser Vertreter in der Gesandtenkonferenz ist beauftragt, in dieser Richtung hinzuwirken.</p>
+                  <p><pb facs="krp-0045_r-0012"/>Das Staatsamt für Heer[es]wesen wird ersucht, seinen Bedarf an Offizieren zu umschreiben, insbesondere zunächst diejenigen auszuscheiden, die nicht benötigt werden.</p>
+                  <p>Selbstverständlich dürfen nur Deutschösterreicher übernommen werden. Die Auslese hat individuell und nicht generell zu erfolgen.</p>
+               </div>
+               <div type="top" xml:id="krp-0045_top07">
+                  <head>
+                     <label>
+                        <num n="7">7.</num>
+                        <seg>Vollzugsanweisung des Deutschösterreichischen Staatsrates, betreffend die teilweise Änderung des Dienstverhältnisses der Kanzleioffizianten und Kanzleioffiziantinnen, der Kanzleigehilfen und Kanzleigehilfinnen, ständigen Aushilfsdiener und Landpostdiener.</seg>
+                     </label>
+                  </head>
+                  <p>Unterstaatssekretär Dr. von <hi rend="#letterspaced">Beck</hi> erbittet und erhält die Zustimmung des Kabinettsrates, dem Staatsrate eine Vollzugsanweisung, betreffend die teilweise Änderung des Dienstverhältnisses der Kanzleioffizianten und Kanzleioffiziantinnen, der Kanzleigehilfen und Kanzleigehilfinnen, ständigen Aushilfsdiener und Landpostdiener, unterbreiten zu dürfen.</p>
+                  <p>Die Anregung des Vertreters des Staatsamtes für Heer[es]wesen, Ministerialrates Dr. <hi rend="#letterspaced">Kralowsky</hi>, wegen entsprechender Berücksichtigung der Zertifikatisten bei der Ernennung von Postamtsdienern wird abgelehnt.</p>
+               </div>
+               <div type="top" xml:id="krp-0045_top08">
+                  <head>
+                     <label>
+                        <num n="8">8.</num>
+                        <seg>Forderung der postalischen Gewerkschaften und der technischen Union.</seg>
+                     </label>
+                  </head>
+                  <p>Generalpostdirektor <hi rend="#letterspaced">Hoheisel</hi> teilt mit, dass die postalischen Gewerk<pb facs="krp-0045_r-0013"/>schaften, unterstützt von der technischen Union, neuerliche unter Streikandrohung eine Reihe von Forderungen erhoben haben, u. zw.:</p>
+                  <list>
+                     <item n="1"><label>1.)</label> Einrechnung der Gesamtdienstzeit bei der Pragmatisierung;</item>
+                     <item n="2"><label>2.)</label> Zurücknahme des Erlasses, worin die Anerkennung der Angestelltenräte verweigert wurde;</item>
+                     <item n="3"><label>3.)</label> Zuerkennung des November-Anschaffungsbeitrages für die nach dem 1. November von der Militärdienstleistung zurückgekehrten Postangestellten;</item>
+                     <item n="4"><label>4.)</label> Einführung der vollständigen Sonntagsruhe mit 1. März 1919.</item>
+                  </list>
+                  <p>Nach einer längeren Debatte, an welcher sich die Staatssekretäre Dr. <hi rend="#letterspaced">Roller</hi> und Dr. <hi rend="#letterspaced">Urban</hi> sowie die Unterstaatssekretäre <hi rend="#letterspaced">Marckhl</hi> und Dr. Ritter von <hi rend="#letterspaced">Beck</hi> beteiligten, gelangt der Kabinettsrat zu folgenden Beschlüssen:</p>
+                  <p>Ad 1.): Der Forderung wird stattgegeben.</p>
+                  <p>Ad 2.): Der Kabinettsrat steht prinzipiell auf dem Standpunkte der Anerkennung von Angestelltenvertretungen. Er verschließt sich aber nicht der Tatsache, dass diese Angestelltenräte auf gesetzlicher Basis organisiert werden müssen. Infolgedessen können die Ange<pb facs="krp-0045_r-0014"/>stelltenräte, soweit sie sich gebildet haben, via facti und nur vorläufig, bis die Frage der Angestelltenkammern auf gesetzlichem Wege geregelt sein wird, anerkannt werden.</p>
+                  <p>Ad 3.): Wird abgelehnt.</p>
+                  <p>Ad 4.): Die Einführung der vollständigen Sonntagsruhe wird als derzeit nicht durchführbar abgelehnt und wird getrachtet werden, nach Möglichkeit noch weitere Erleichterungen platzgreifen zu lassen.</p>
+                  <p>Der Kabinettsrat ermächtigt den Generalpostdirektor auf Grundlage dieser Beschlüsse mit den Organisationen in weitere Verhandlungen einzutreten.</p>
+               </div>
+               <div type="top" xml:id="krp-0045_top09">
+                  <head>
+                     <label>
+                        <num n="9">9.</num>
+                        <seg>Errichtung einer Radiostation auf dem Equitablepalais in Wien durch die amerikanische Mission.</seg>
+                     </label>
+                  </head>
+                  <p>Generalpostdirektor <hi rend="#letterspaced">Hoheisel</hi> teilt mit, dass die amerikanische Mission um die Bewilligung zur Errichtung einer Radiostation auf dem Equitablepalais in Wien eingeschritten sei. Der Kabinettsrat beauftragt den Generalpostdirektor, sich diesfalls zunächst mit den Staatsämtern für Heer[es]wesen und für Äußeres in Verbindung zu setzen und diese Angelegenheit sodann eventuell neuerlich im Kabinettsrat zur Sprache zu bringen.</p>
+                  <p><pb facs="krp-0045_r-0015"/></p>
+               </div>
+               <div type="top" xml:id="krp-0045_top10">
+                  <head>
+                     <label>
+                        <num n="10">10.</num>
+                        <seg>Leihweise Überlassung eines Sanitätszuges an Rumänien zur Heimbeförderung kranker Kriegsgefangener aus Deutschland.</seg>
+                     </label>
+                  </head>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> teilt mit, dass seitens des rumänischen Nationalrates das Ersuchen um leihweise Überlassung eines Sanitätszuges an Rumänien zur Heimbeförderung kranker Kriegsgefangener aus Deutschland gestellt worden sei.</p>
+                  <p>Der Kabinettsrat genehmigt, dass das Staatsamt für Verkehrswesen bei der gemeinsamen Verkehrskommission die Überlassung eines solchen Zuges in Antrag bringe.</p>
+               </div>
+               <div type="top" xml:id="krp-0045_top11">
+                  <head>
+                     <label>
+                        <num n="11">11.</num>
+                        <seg>Stellungnahme der Regierung zum tschechoslowakischen Gesetz, betreffend die Angelobung der Staatsangestellten, hinsichtlich jener deutschen Beamten, die bereits dem deutschösterreichischen Staate die Angelobung geleistet haben.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Roller</hi> teilt mit, dass von der tschechoslowakischen Nationalversammlung am 7. Februar d. J. ein Gesetz beschlossen wurde, wonach alle Beamten, die von einem anderen als dem tschechoslowakischen Staate angestellt wurden, also auch die von Deutschösterreich in Pflicht genommenen Beamten in den von den Tschechoslowaken besetzten deutschen Gebieten nur dann ihre Dienstposten behalten, wenn sie innerhalb eines Monates das Treugelöbnis für den tschechoslowakischen Staat ablegen. Bei Nichteinhaltung dieser Frist würden sie des Dienstpostens und aller Ansprüche auf Gehalt und Ruhegebühren für sich und ihre Familie verlu<pb facs="krp-0045_r-0016"/>stig. Außerdem wird in diesem Gesetze der Regierung das Recht vorbehalten, innerhalb eines Jahres Angestellte auch aus anderen als den in der Dienstpragmatik bestimmten Gründen zu entlassen. Dadurch sei der Regierung die gesetzliche Handhabe zur Entfernung jedes deutschen Beamten geboten.</p>
+                  <p>Der Kabinettsrat beschließt, das Staatsamt des Äußern zu ersuchen, gegen dieses Vorgehen bei der Entente und bei der tschechoslowakischen Regierung Protest einzulegen. Sollte diesem Proteste nach Ablauf einer gewissen Frist nicht Folge gegeben werden, so werde sich die Notwendigkeit herausstellen, den deutschen Beamten bezüglich ihres weiteren Verhaltens besondere Instruktionen zu erteilen.</p>
+                  <p/>
+               </div>
+            </div>
+            <div type="anhaenge">
+               <p><pb facs="krp-0045_a01-0001"/>Streng vertraulicher Anhang zum Kabinettsprotokoll Nr. 45.</p>
+               <div n="1">
+                  <head/>
+                  <div type="a01_protokoll">
+                     <p>Der <hi rend="#letterspaced">Vorsitzende</hi> erbittet und erhält die Zustimmung des Kabinettsrates zur Erwirkung der Einreihung des Rates des Verwaltungsgerichtshofes Dr. Konrad Sachs in die IV. Rangsklasse unter gleichzeitiger Zuerkennung einer Funktionszulage jährlicher 3.000 K.</p>
+                  </div>
+               </div>
+               <div n="2">
+                  <head/>
+                  <div type="a02_protokoll">
+                     <p>Der Vorsitzende teilt mit, dass er dem Staatsrate nachstehende Mitglieder des ehemaligen österreichischen Verwaltungsgerichtshofes zur Ernennung zu Mitgliedern des deutschösterreichischen Verwaltungsgerichtshofes vorzuschlagen beabsichtige u. zw.: </p>
+                     <p>Die Senatspräsidenten:</p>
+                     <p>Dr. Heinrich Freiherr von Reissig,</p>
+                     <p>Dr. Maximilian Schuster Edler von Bonnott und</p>
+                     <p>Wilhelm von Jenny;</p>
+                     <p>die Räte der IV. Rangsklasse:</p>
+                     <p>Paul Freiherrn von Hock,</p>
+                     <p>Dr. Anton Schimm,</p>
+                     <p>Dr. Johann Freiherr von Hiller-Schönaich,</p>
+                     <p>Viktor Freiherr von Weiss-Starkenfels,</p>
+                     <p>Dr. Friedrich Tezner,</p>
+                     <p>Dr. Julius Löcker und</p>
+                     <p>Dr. Konrad Sachs;</p>
+                     <p>ferner die Räte der V. Rangsklasse:</p>
+                     <p>Dr. Rudolf Herrmann von Herrnritt,</p>
+                     <p>Dr. Johann Edler von Schneller,</p>
+                     <p><pb facs="krp-0045_a01-0002"/>Guido von Bonfioli-Valcabó,</p>
+                     <p>Dr. Wenzel Kamitz,</p>
+                     <p>Friedrich Schubert,</p>
+                     <p>Dr. Karl Wilhelm,</p>
+                     <p>Dr. Georg Binder und</p>
+                     <p>Dr. Josef Peer.</p>
+                     <p>Der Kabinettsrat stimmt diesem Vorschlage zu.</p>
+                     <p/>
+                  </div>
+               </div>
+            </div>
+            <div type="stenogramme">
+               <div n="1">
+                  <head>[KBR 45, 25. Februar 1919, Stenogramm ?Fenz].</head>
+                  <p><pb facs="krp-0045_s01-0001"/>1. Renner: </p>
+                  <p>Anspruch des Bevollmächtigten der tschechoslowakischen Republik auf die hofär[arischen] Güter. </p>
+                  <p>33 Schreibtische etc. </p>
+                  <p>3 Verbalnoten.</p>
+                  <p>Urban: Eine einseitige Ausfolgung hofärarischer Güter [<hi rend="#i">Einschub:</hi>] in natura [<hi rend="#i">Einschub Ende</hi>] ohne vorherige Vereinbarung unzulässig, weil wir den anderen Nationalstaaten rechnungspflichtig sind. </p>
+                  <p>Bei der Sachdemobilisierung veräußern wir als Treuhänder. </p>
+                  <p>Die Tschechen haben höchstens Anspruch auf 1/5 in natura. </p>
+                  <p>Wir müssen diese Angelegenheit zur Aussprache bei der Gesandtenkonferenz bringen.</p>
+                  <p>Enderes: Es befinden sich auch in Böhmen hofärarische Güter.</p>
+                  <p>Urban: Wir haben einen Kommissär ernannt, der in Böhmen die Inventarisierung überwacht. </p>
+                  <p><hi rend="#s">Solange die Tschechen nicht zustimmen</hi> -.</p>
+                  <p>Stöckler: Wir füttern noch 260 Pferde. Von diesen haben höchstens 40 Zuchtwert. </p>
+                  <p>Wir müssen bis Ende März die Pferde weg haben, weil wir kein Futter mehr haben und die Pferde immer mehr abnehmen.</p>
+                  <p>Hanusch: Man soll die gleichen Forderungen an die anderen Staaten stellen.</p>
+                  <p>Marckhl: In der Flüchtlingsfürsorge stellen sich die Tschechen auf den Standpunkt, dass diese Sachen demjenigen Staat gehören, auf dessen Territorium </p>
+                  <p>sich die Sachen befinden. Solange nicht eine Generalliquidierung stattfindet, sollen wir nichts in natura herausgeben.</p>
+                  <p>Renner: Dieser Standpunkt ist, als es zu einzelnen Vereinbarungen kam, verlassen worden. Auf diesen Standpunkt können wir nicht mehr zurückkommen.</p>
+                  <p>Thaa: Es ist bedenklich, in eine Teilung der Aktiva einzugehen, solange nicht auch in die Teilung der Passiva </p>
+                  <p>eingegangen wird. </p>
+                  <p>Es müsste jedenfalls eine entsprechende Bewertung bei Vorausgaben Platz greifen. Es müssen auch in den anderen Nationalstaaten unsererseits </p>
+                  <p>geeignete Organe bestellt werden.</p>
+                  <p>Renner: 1.) [<hi rend="#i">Einschub:</hi>] Die Angelegenheit ist in der [<hi rend="#i">Einschub Ende</hi>] Gesandtenkonferenz zur Sprache zu bringen.</p>
+                  <p>2.) In den Nationalstaaten muss für die Bestellung eigener [<hi rend="#i">Einschub:</hi>] deutsch-österreichischer [<hi rend="#i">Einschub Ende</hi>] Liquidationsorgane vorgesorgt werden.</p>
+                  <p>3.) Der Staatsnotar im Einvernehmen mit dem Staatssekretär für Landwirtschaft sind beauftragt, der tschechoslowakischen</p>
+                  <p>Regierung für die Abnahme des Pferdematerials eine kurze Frist zu stellen und nach fruchtlosem Ablauf dieser Frist mit dem </p>
+                  <p>Verkauf des Pferdematerials vorzugehen.</p>
+                  <p>4.) Die Staatsämter sind aufzufordern, bekannt zu geben inwieweit Eingriffe der Nationalstaaten in gemeinsames Eigentum erfolgt sind, damit </p>
+                  <p>diese Eingriffe in der Gesandtenkonferenz reluiert werden können.</p>
+                  <p><pb facs="krp-0045_s01-0002"/>5.) Desgleichen sind die Staatsämter neuerlich aufzufordern, Nachweisungen über die [<hi rend="#i">Einschub:</hi>] gemeinsamen [<hi rend="#i">Einschub Ende</hi>] Vermögenschaften zu geben, welche auf dem Territorium der fremdnationalen </p>
+                  <p>Staaten sich befinden und die in irgendeiner Weise zu ihrem Ressort gehören.</p>
+                  <p>2. [Renner:] Reissig, Sachs.</p>
+                  <p>Genehmigt.</p>
+                  <p>3. [Renner:] Verwaltungsgerichtshof.</p>
+                  <p>Marckhl: Einspruch gegen Herrnritt und Bonfioli.</p>
+                  <p>[Renner:] Herrnritt hat die deutsch-österreichische Staatsbürgerschaft erworben und hat sich 1910 zur deutschen Umgangssprache bekannt. </p>
+                  <p>Bonfioli, der Staatsrat hat, obwohl er italienischer Herkunft ist, [ihn] in den deutsch-österreichischen Staatsdienst übernommen.</p>
+                  <p>Zur Kenntnis genommen.</p>
+                  <p>Stöckler: Erklärung begünstigter Bau, Kupferbergbau in Jochberg.</p>
+                  <p>Genehmigt.</p>
+                  <p>Renner: Die Tschechen stempeln schon jetzt ab obwohl sie erst morgen in der Nationalversammlung das Gesetz verabschieden werden.</p>
+                  <p>Sie machen dies im Wege der Überklebung mit Marken.</p>
+                  <p>Thaa: Es wird zwar sehr fleißig an der Stempelung der Noten gearbeitet, bisher zirka 10 Millionen Stück. </p>
+                  <p>Der Nominalbetrag ist aber relativ gering, weil meist 10- oder 20-Kronennoten abgestempelt wurden. </p>
+                  <p>Das Material von 100- und 1000-Kronennoten ist nicht sehr groß und die Neuerzeugung schreitet verhältnismäßig langsam vor. </p>
+                  <p>Es kann also in den nächsten Tagen mit einer Umtauschaktion begonnen werden.</p>
+                  <p>Antrag: Die Zahlungen der Staatskassen [<hi rend="#i">Einschub:</hi>] und Ämter [<hi rend="#i">Einschub Ende</hi>] in schon gestempelten Noten erfolgen zu lassen, wogegen die Kassen angewiesen werden sollen, die Noten, </p>
+                  <p>namentlich die höheren Appoints an die Österreich-Ungarische Bank abzuliefern zur Abstempelung. Dies hätte den Vorteil, dass unmittelbar nach den </p>
+                  <p>Tschechen mit der Aktion eingesetzt wird.</p>
+                  <p>Antrag: Unter entsprechender Bekanntgabe an das Publikum am 28. Februar mit der Ausgabe von abgestempelten Noten bei den staatlichen Kassen und </p>
+                  <p>Ämtern zu beginnen.</p>
+                  <p><pb facs="krp-0045_s01-0003"/>Renner: Der Umtausch kostet sehr wie [viel]. Warum wird keine Gebühr eingehoben? Warum findet keine </p>
+                  <p>Relution statt?</p>
+                  <p>Thaa: Wir sind der Meinung, dass wir nicht zustande kommen mit der Aktion, wenn wir eine Gebühr einheben. </p>
+                  <p>Auch im tschechoslowakischen Staat wird die Gebühr im Abzugsweg bei dem zurückgehaltenen Teil der Noten eingehoben.</p>
+                  <p>Renner: Verbindung mit Aktion zur Feststellung für die Vermögenssteuer.</p>
+                  <p>Thaa: Die Leute würden abgeschreckt werden, die Noten zur Abstempelung zu bringen. Entente würde das ausnützen, um zu sagen, </p>
+                  <p>es liefert unsere Zählung keine verlässliche Grundlage für die Teilnahme an der Staatsschuld.</p>
+                  <p>Steinwender: Was die Gebühr anbelangt, so würden wir keine vollständige Abstempelung erzielen. 1% würde auch nicht viel ergeben. Ertragsfähig wird erst die </p>
+                  <p>Vermögenssteuer sein.</p>
+                  <p>Schwierigkeiten ergeben sich a) wie werden die Staatsschuldzinsen gezahlt? Ich glaube, am 1. März in ungestempelten Noten.</p>
+                  <p>Es wird dann Sache der Rezipienten sein, sie tschechisch, jugoslawisch oder deutsch-österreichisch abstempeln zu lassen.</p>
+                  <p>b) Was ist mit der Auszahlung von Guthaben, welche in Wien zur Auszahlung gelangen? Es wird der Versuch gemacht werden, eine Teilung </p>
+                  <p>eintreten zu lassen. Wir werden hier unsere Notenmenge nicht allzu sehr vermehren.</p>
+                  <p>Renner: Ich hätte gemeint, dass man gleichzeitig mit der Umtauschaktion lokal abstempelt und dann erst die abgestempelten </p>
+                  <p>Noten umtauscht. Weil sonst in kurzer Zeit unsere Währung ungemein leiden wird.</p>
+                  <p>Was den Dienst der Staatsschuldzentralkasse anbelangt, so wird diese Kasse nur ungestempelte Noten abgeben. Wie werden wir dann </p>
+                  <p>diejenigen Zahlungen, die in Wien domiziliert sind, bezeichnen? Die Staatsschuldenkasse muss exterritorialisiert werden. </p>
+                  <p>Es wäre jetzt die Gelegenheit, nachzuweisen, was jeder an Noten besitzt und auch was jeder an Effekten besitzt.</p>
+                  <p>Urban: Kronenguthaben des Auslandes. Wenn ein Schweizer ein Guthaben hier hat, so kann </p>
+                  <p>er Effekten kaufen. Es kommen diese Noten in Verkehr und um diese Summe wird der Notenumlauf vermehrt.</p>
+                  <p>Coupons, die aus der Schweiz hereinkommen, werden diesen Guthaben zugeschrieben und tragen natürlich bei, den </p>
+                  <p>Notenumlauf zu lasten des deutsch-österreichischen Staats zu vermehren.</p>
+                  <p>Die Tschechen haben die stärksten Maßregeln ergriffen. Sie haben bei jeder Bank einen Regierungskommissär [ein]gesetzt, der </p>
+                  <p>die Guthaben sehr genau überprüft. Es fehlt insbesondere eine Kontrolle gegenüber den fremdnationalen Banken. </p>
+                  <p>Die Živnostenská kann alle Transaktionen durchführen. Ich halte es daher für dringend notwendig, </p>
+                  <p><pb facs="krp-0045_s01-0004"/>dass wir in die Živnostenská und zur Ungarischen Handels- und Verkehrsbank Regierungskommissäre geschickt werden und die Gebarung überwachen.</p>
+                  <p>Gebühr bei der Abstempelung. </p>
+                  <p>Jeder, der Noten hat, würde sie zu einer Bank oder Sparkasse bringen, weil die Einlagen ganz anders behandelt würden, als die Noten selbst.</p>
+                  <p>Man müsste soweit gehen, dass man auch auf die Einlagen greifen müsste.</p>
+                  <p>Exterritorialität der St[aatsschulden]-Z[entral]-K[asse].</p>
+                  <p>Kronenguthaben des Auslandes.</p>
+                  <p>Scharfe Kontrolle der fremdnationalen Banken.</p>
+                  <p>Thaa: Regierungskommissäre. Es müsste jemand bestellt werden, der gerieben ist in diesen Transaktionen.</p>
+                  <p>Die Durchführung einer effektiven Aufsicht bei der Ž[ivnostenská] ist anzustreben, aber ich verspreche mir nicht viel dafür.</p>
+                  <p>Kronenguthaben des Auslandes. </p>
+                  <p>Es wird von unserer Seite versucht, irgendeine Konstruktion zu finden, welche jene -. </p>
+                  <p>Sämtliche Guthaben der Ausländer, welche auf Kronen lauten, müssten beim Währungswechsel in deutsch-österreichischer Währung zur Auszahlung gelangen. Das gilt </p>
+                  <p>international. Es muss aber ein Mittel gesucht werden, um dieser schweren Belastung der deutsch-österreichischen Währung zu begegnen,</p>
+                  <p>weil ja die Guthaben gehalten wurden, nicht nur Zahlung nach Deutsch-Österreich, sondern auch nach fremdnationalen Staaten.</p>
+                  <p>Man sollte derartige, aus der Zeit vor dem Währungswechsel stammende Guthaben besonders kennzeichnen in der Weise, dass aus diesen Guthaben </p>
+                  <p>Zahlungen nach Deutsch-Österreich in deutsch-österreichischer Währung gezahlt werden, sofern aber damit Zahlungen außerhalb Deutsch-Österreichs zu leisten wären, </p>
+                  <p>in ungestempelten Noten.</p>
+                  <p>Für neue Geschäfte, die erst nach dem Währungswechsel entriert wurden, müssten besondere Vorkehrungen getroffen werden.</p>
+                  <p>Die Nicht-Anerkennung dieser Grundsätze würde allerdings eventuell zu einer Katastrophe führen können.</p>
+                  <p>Entweder währungspolitische oder kreditpolitische Katastrophe.</p>
+                  <p><hi rend="#s">Renner:</hi> -.</p>
+                  <p>[Thaa]: In Angelegenheit der Staatsschulden halte ich es für irrelevant, ob wir am 1. März in </p>
+                  <p>österreichischer oder in deutsch-österreichischer Währung auszahlen. Was wir österreichisch auszahlen, so wird es irgendwo abgestempelt werden. </p>
+                  <p>Der Betrag ist ein geringfügiger.</p>
+                  <p>Urban: Man muss unterscheiden, wie die Auslandsguthaben entstanden sind. Man könnte die Verfügungen über die Auslandsguthaben </p>
+                  <p>während der Abstempelungszeit durchführen. Für Zahlungen für deutsch-österreichische Zwecke werden deutsch-österreichische Noten ausgefolgt, für andere nur 20%.</p>
+                  <p><pb facs="krp-0045_s01-0005"/>Urgiert Errichtung einer deutsch-österreichischen Devisen-Zentrale.</p>
+                  <p>Renner: Abstempelung durch die lokalen Postämter, insbesondere im Flachland.</p>
+                  <p>Dadurch würde zunächst unser Notenbestand fixiert werden.</p>
+                  <p>Schwarzwald: -.</p>
+                  <p>Waber: Grundprinzip, dass Noten, die jetzt nicht abgestempelt werden, späterhin nicht mehr umgetauscht werden.</p>
+                  <p>Renner: Ich bitte, in einem der nächsten Kabinettssitzungen zu berichten, wie der März-Coupon </p>
+                  <p>von der St[aatsschulden]-Z[entral]-K[asse] eingelöst werden wird, in alter oder in der deutsch-österreichischen Währung.</p>
+                  <p>Vorschläge über die Auszahlung der Auslandsguthaben in Wien.</p>
+                  <p>Bezüglich der Abstempelung wird das Verfahren der maschinellen -.</p>
+                  <p>Punkt 2.</p>
+                  <p>Urban: Es ist nicht richtig, dass von Seiten R. eine solche Forderung gestellt wurde.</p>
+                  <p>Aufgrund des Übereinkommens mit den Tschechen haben diese [<hi rend="#i">Einschub:</hi>] Anspruch auf [<hi rend="#i">Einschub Ende</hi>] 1/5 der Sachgüter. </p>
+                  <p>Die Tschechen bezahlen nicht gleich, sondern es wird ihnen zulasten geschrieben. Man wird aber schon jetzt feststellen müssen, </p>
+                  <p>in welcher Valuta werden die Tschechen bezahlt, nach dem Kurs der ungestempelten Noten.</p>
+                  <p>1.) Den Tschechen wird geantwortet, dass das nicht richtig ist, dass man das gefordert hat.</p>
+                  <p>2.) Es muss aber ein Übereinkommen getroffen werden, in welcher Valuta die Lebensmittel- und Kohlenbezüge </p>
+                  <p>gezahlt werden. Wir müssen auf dem Standpunkt stehen: Valuta des Erfüllungsortes, also deutsch-österreichische Währung.</p>
+                  <p>3.) Bekanntlich werden fortwährend Zahlungen geleistet vom liquidierenden Kriegsministerium. In welcher Valuta werden diese Zahlungen geleistet werden?<lb/></p>
+                  <p>Mit was für Noten wird das liquidierende Kriegsministerium zahlen? Wenn der Lieferant der deutsch-österreichischen Nation angehört, so wird in deutsch-österreichischer <lb/></p>
+                  <p>Währung gezahlt werden; in welcher Valuta aber an Tschechen? Diesbezüglich muss eine Verfügung getroffen werden.</p>
+                  <p>1.) [<hi rend="#i">Einschub:</hi>] Seinerzeitige [<hi rend="#i">Einschub Ende</hi>] Verrechnung bezüglich Demobilisierungsgüter soll nach dem Kurs der ungestempelten Noten erfolgen.</p>
+                  <p>2.) In welcher Valuta sollen Bezüge aus dem [...] Staat gezahlt werden, bzw. in welcher Valuta sollen die [..] für Lieferungen, die wir </p>
+                  <p>leisten, gezahlt werden?</p>
+                  <p>3.) Valuta der Zahlungen des liquidierenden Kriegsministeriums.</p>
+                  <p><pb facs="krp-0045_s01-0006"/><hi rend="#s">Renner:</hi> -.</p>
+                  <p>Schwarzwald: Die Ungarn haben schon fremde Valuta bei Lieferungen von uns verlangt. </p>
+                  <p>Die Erlöse aus der Sachdemobilisierung werden auf ein gemeinsames Conto erlegt. Dieses Conto dient dazu, um gemeinsame Verbindlichkeiten </p>
+                  <p>(Gagisten, Heereslieferungen) zu tilgen.</p>
+                  <p><hi rend="#s">Wenn man nicht wissen kann</hi> -.</p>
+                  <p>Alle liquidierenden Stellen zahlen in gemeinsamer Währung, daher auch der März-Coupon.</p>
+                  <p>Antwort an Tusar: Das Verlangen ist nicht richtig, sondern dass wir Wert darauf legen, dass das, was uns <hi rend="#s">die Tschechen zahlen</hi> </p>
+                  <p>die einzelnen Staaten uns aus [dem] Titel der Sachdemobilisierung zahlen, zu allen Zahlungen gleichmäßig verfügbar wird und nicht in irgendeiner Richtung durch <lb/></p>
+                  <p>ein Disagio entwertet wird.</p>
+                  <p><hi rend="#s">Punkt 3.</hi></p>
+                  <p><hi rend="#s">Hanausek: </hi></p>
+                  <p><hi rend="#s">Die n. a. [nicht-aktiven] Personen sollen am 28. Februar in ein Vertragsverhältnis gebracht werden.</hi></p>
+                  <p>[Schwarzwald:] 2.) Die Zahlungen für die Importe aus Böhmen und umgekehrt für die Exporte nach Böhmen sollen in tschechoslowakischer Währung abgerechnet werden.</p>
+                  <p>3.) Sämtliche Zahlungen von liquidierenden Stellen haben bis auf weiteres in ungestempelten Noten zu erfolgen. </p>
+                  <p>Damit auch die Zahlung der Cou[pons] für die Staatsschulden am 1. III. 19.</p>
+                  <p>Dem Val[uta]-Ausschuss der Liqu[idierungs]-Kommission wird vorgeschlagen, dass die Zahlungen des liquidierenden Kriegsministeriums in jener Valuta zu erfolgen sind, die am Sitz des Unternehmens </p>
+                  <p>Zahlungsmittel ist.</p>
+                  <p>Punkt 3.</p>
+                  <p>Sektionschef Hanausek, </p>
+                  <p>Grimm.</p>
+                  <p><pb facs="krp-0045_s01-0007"/>Beschluss: Übernahme der Kosten über die &lt;Stellen&gt; im Schätz-Betrag </p>
+                  <p>von 3½ Millionen Kronen auf deutsch-österreichische Kosten.</p>
+                  <p>Sind aus sozialen Rücksichten noch bis zum 15. April 1919 mit den bisherigen Bezügen </p>
+                  <p>Siehe Beilage.</p>
+                  <p>[Hanausek]: II. Die internationale Liquidierungskommission hat noch den Beschluss gefasst: </p>
+                  <p>Übersetzung aller aktiven Offiziere, die nicht einem der Nationalstaaten angehören, mit 28. II. 1919 in das Ruhestandsverhältnis. </p>
+                  <p>Technisch nicht durchführbar.</p>
+                  <p>Staatsamt für Heerwesen hat vor, Notbeihilfe für seine Angehörigen zu zahlen.</p>
+                  <p>Grimm: <hi rend="#s">Das Staatsamt für Finanzen</hi> - Dieser Beschluss muss einfach durchgeführt werden, denn er liegt auch im allgemeinen Interesse. </p>
+                  <p>Durch eine Verordnung des liquidierenden Kriegsministeriums, die in den Zeitungen verlautbart werden soll, soll die Pensionierung mit 28. II. </p>
+                  <p>ausgesprochen werden.</p>
+                  <p>Das Staatsamt für Heerwesen soll auf die Rückzahlung der [<hi rend="#i">Einschub:</hi>] Differenz zwischen [<hi rend="#i">Einschub Ende</hi>] aktiven Bezügen [<hi rend="#i">Einschub:</hi>] und Pension [<hi rend="#i">Einschub Ende</hi>] entweder verzichten oder [sie] in Raten rückzahlen lassen. </p>
+                  <p>Das Staatsamt für Heerwesen muss sich entscheiden, wie viele von den Offizieren und Unteroffizieren übernommen und nicht übernommen werden.</p>
+                  <p>Renner: Das Kabinett nimmt den Beschluss </p>
+                  <p>der Gesandtenkonferenz, dass die gesamten aktiven Offiziere mit 28. II. 1919 in den Ruhestand </p>
+                  <p>zu übersetzen sind, als für Deutsch-Österreich bindend zur Kenntnis. </p>
+                  <p>Die Durchführung der Pensionierung ist durch eine Verfügung des liquidierenden Kriegsministeriums vorzunehmen.</p>
+                  <p>Waber: Man soll der Gesandtenkonferenz mitteilen, dass die Durchführung bis 1. III. unmöglich ist und dass die Aktiv-Bezüge noch bis zum 1. IV. ausbezahlt werden.</p>
+                  <p>Mache auf die Gefahr aufmerksam, aber es ist nicht von uns initiiert worden, sondern von der Liquidierungskommission.</p>
+                  <p>Renner: Da sich diese Durchführung bis 1. III. nicht bewerkstelligen lässt, so erwartet der Kabinettsrat, dass [durch] </p>
+                  <p>eine neuerliche Beratung in der Gesandtenkonferenz [<hi rend="#i">Einschub:</hi>] ein Übergang [<hi rend="#i">Einschub Ende</hi>] ermöglicht wird. Unser Vertreter in der Gesandtenkonferenz </p>
+                  <p>ist beauftragt, in dieser Richtung einzutreten.</p>
+                  <p><pb facs="krp-0045_s01-0008"/>Das Staatsamt für Heerwesen ist ersucht, seinen Bedarf zu umschreiben, zunächst diejenigen auszuscheiden, die nicht benötigt werden. </p>
+                  <p>Es ist selbstverständlich, dass nur Deutsch-Österreicher übernommen werden, individuelle Auslese, keine Generäle.</p>
+                  <p>Dr. Waiss: </p>
+                  <p>Das Staatsamt für Heerwesen legt Einspruch gegen den Beschluss der Gesandtenkonferenz [ein], weil er ohne vorherige Kenntnis </p>
+                  <p>des Staatsamtes für Heerwesen erfolgt ist.</p>
+                  <p><hi rend="#s">Kralowski: -</hi></p>
+                  <p>Punkt 10.</p>
+                  <p>Beck: -.</p>
+                  <p>Kralowski: Während §5 als Voraussetzung für den Postamtsdiener eine dreijährige Vordienstzeit </p>
+                  <p>als Aushilfsdiener vorsieht, sieht die Vollzugsanweisung davon ab. </p>
+                  <p>Weiters sind die Zertifikatisten ausgeschlossen. </p>
+                  <p>Dadurch, dass wir den Mangel von Zertifikatisten in der Vollzugsanweisung nicht finden, sind die </p>
+                  <p>Zertifikatisten präkludiert. Deshalb kann das Staatsamt für Heerwesen </p>
+                  <p>diesen Bestimmungen nicht zustimmen. (Abs. 4 zu §5).</p>
+                  <p>Hoheisel: Wenn die Landpostdiener mit 10 Jahren nicht berücksichtigt würden, so verlieren die Leute </p>
+                  <p>4 Jahre, was nicht vertreten werden könnte. </p>
+                  <p>Der Einwand ist insofern unbegründet, als das ja keine Stellen sind, die frei sind. In den Bestimmungen </p>
+                  <p>des Jahres '10 ist hingewiesen auf freie Stellen. Hier handelt es sich ja gar nicht um freie Stellen, auf die </p>
+                  <p>alle ein Zertifikatist einspringen könnte. In Deutsch-Österreich gibt es bisher kein Zertifikatisten-</p>
+                  <p>Gesetz. Eine Schädigung der Zertifikatisten tritt daher nicht ein.</p>
+                  <p>Roller: Beantragt die Streichung der Worte "auf freie syst[emisierte] Stellen". </p>
+                  <p>Dadurch würde ihnen ermöglicht, die Leute zu ernennen, ohne dass die Zertifikatisten geschädigt werden.</p>
+                  <p><pb facs="krp-0045_s01-0009"/>Hoheisel: Um diese Landpostdiener, die bereits 10 Jahre gedient haben, zu PAD [Postamtsdienern] zu machen, bedarf es gar </p>
+                  <p>keiner besonderen Vollzugsanweisung. Das könnte jeden Augenblick durch eine Verfügung der Behörde im Einvernehmen mit dem </p>
+                  <p>Staatsamt der Finanzen [gemacht werden].</p>
+                  <p>Mit Streichung angenommen.</p>
+                  <p>Punkt 11. Hoheisel: </p>
+                  <p>Bevorstehender Streik der Postangestellten. </p>
+                  <p>Die Methoden, fortwährend etwas zu erzwingen durch Streike -. </p>
+                  <p>Es ist aber auch insoweit befremdend, weil der Union immer mit Entgegenkommen begegnet wurde. </p>
+                  <p>Wie soll sich die Verwaltung solch brutalen Drohungen gegenüber verhalten?</p>
+                  <p><hi rend="#s">Entweder muss man autoritär</hi> –</p>
+                  <p>Neue Forderungen der postal[ischen] Gewerkschaften:</p>
+                  <p>1.) Einrechnung der gesamten Dienstzeit in die Pragmatisierung (Einrechnung der Vordienstzeit bei der Vorrückung in </p>
+                  <p>die einzelnen Gehaltsstufen).</p>
+                  <p>2.) Weitgehende Berücksichtigung der technischen Angestellten angesichts der bevorstehenden Sozialisierung.</p>
+                  <p>3.) Restlose Erfüllung aller gelegentlich des Streikes gestellten Forderungen.</p>
+                  <p>Roller: -</p>
+                  <p>Marckhl: -</p>
+                  <p>Urban: -</p>
+                  <p>Beck: Es wurde seinerzeit beim Streik ein Übereinkommen getroffen, <hi rend="#s">sie legen es nach Punkt aus </hi>-. </p>
+                  <p>Dass die vier Praktikantenjahre durch die vorherige Privatdienstzeit </p>
+                  <p>äquipariert wird. Jetzt behaupten sie, dass damit die Einrechnung der gesamten Vordienstzeit bei der Vorrückung in die </p>
+                  <p>einzelnen Gehaltsstufen gemeint war.</p>
+                  <p>Die Heimkehrer wollen ferner den Anschaffungsbeitrag per 1. November 1918 </p>
+                  <p>auch wenn sie nach dem 1. XI. 1918 aus dem Feld zurückgekehrt sind. Das würde, weil dann auch die Eisenbahner kämen, mehrere Millionen </p>
+                  <p><pb facs="krp-0045_s01-0010"/>kosten.</p>
+                  <p>Sie werden den halben Anschaffungsbeitrag von Weihnachten und den Februar-Anschaffungsbeitrag bekommen, auch wenn sie am 1. </p>
+                  <p>XI. 19 [sic] nicht da waren.</p>
+                  <p>Hoheisel: [<hi rend="#i">Einschub:</hi>] Weitere Forderung: [<hi rend="#i">Einschub Ende</hi>] Zurücknahme des Nichtanerkennungserlasses über die Angestellten-</p>
+                  <p>Räte.</p>
+                  <p>Es käme zu entscheiden, ob bis zur Bildung von Angestelltenkammern zuzuwarten ist oder ob die [Bildung der] Räte </p>
+                  <p>bei der Postanstalt zu bewilligen ist.</p>
+                  <p>Renner: Die prinzipielle Frage soll nicht aufgeworfen werden.</p>
+                  <p>Das Kabinett steht auf dem Standpunkt der Anerkennung von Angestelltenvertretungen. Er verschließt sich aber </p>
+                  <p>der Sicht nicht, dass diese Angestelltenräte auf gesetzlicher Basis organisiert werden müssen. Infolgedessen können die </p>
+                  <p>Angestelltenräte, soweit sie sich gebildet haben, via facti anerkannt werden und nur vorläufig bis die </p>
+                  <p>Frage der Angestelltenkammern auf gesetzlichem Weg geregelt ist.</p>
+                  <p>Pacher: Es hat sich ein Zentralrat der Mittelschüler in Wien gebildet. </p>
+                  <p>Man spricht mit ihm über die gemeinsamen Sachen, setzt aber voraus, dass er sich aufgrund der Schulgemeinden umzugestalten hat.</p>
+                  <p>Renner: Das Kabinett wird selbst im Einvernehmen mit den Organisationen einen Entwurf verfassen, wie </p>
+                  <p>die Angestelltenvertretungen zu organisieren sein werden.</p>
+                  <p>Bezüglich der Anschaffungsbeiträge pro November können wir nichts machen.</p>
+                  <p>Vordienstzeit: noch Verhandlungen mit den Organisationen.</p>
+                  <p>Hoheisel: Weitere Forderung: volle Sonntagsruhe mit 1. März 19. </p>
+                  <p>Wir haben planmäßig und ziemlich eingehend den Sonntagsdienst eingeschränkt. Ich habe den Direktionen den Auftrag gegeben, </p>
+                  <p>die meistmögliche Einschränkung mir bekanntzugeben. Dann werde ich eventuell noch mehr Einschränkungen eintreten lassen.</p>
+                  <p>Das genügt aber den Leuten nicht.</p>
+                  <p><pb facs="krp-0045_s01-0011"/>Renner: So rasch geht das überhaupt nicht. </p>
+                  <p>Nicht manu propria Einschränkungen geben. </p>
+                  <p>Man soll den Leuten sagen: Wir werden uns in den nächsten Tagen mit den Organisationen zusammensetzen und dann dem Kabinett -.</p>
+                  <p>Vom volkswirtschaftlichen Standpunkt von allen volkswirtschaftlichen Ressorts die größten Bedenken. </p>
+                  <p>Das Kabinett ermächtigt den Generalpostdirektor mit den Leuten zu verhandeln.</p>
+                  <p>Hoheisel: </p>
+                  <p>Die amerikanische Mission bittet um Bewilligung der Errichtung einer Radiostation auf dem <lb/></p>
+                  <p>Equitable-Palais. Es handelt sich nur um eine [...] Station.</p>
+                  <p>Heerwesen und Äußeres zu fragen.</p>
+                  <p>Punkt 9</p>
+                  <p>Renner: Die beiden Ressorts haben sich geeinigt: </p>
+                  <p>nur ein Wagen vom Kabinett bewilligt.</p>
+                  <p>Vom Staatsamt für Verkehrswesen bei der Verkehrskomm[ission] <lb/></p>
+                  <p>in Antrag zu bringen.</p>
+                  <p>Roller: Punkt 13</p>
+                  <p>1.) Sie müssen die Eid leisten, widrigenfalls sie entlassen werden.</p>
+                  <p>2.) Sie können ad libitum innerhalb eines Jahres entlassen werden.</p>
+                  <p>Protest an Staatsamt des Äußeren zur Weiterleitung an die Entente und tschechoslowakische </p>
+                  <p>Regierung. Wenn nach einiger Zeit nichts verrichtet, muss man den Beamten eine </p>
+                  <p>Instruktion geben.</p>
+                  <p>8h.</p>
+                  <p>Nächster Kabinettsrat </p>
+                  <p>Donnerstag, 4h.</p>
+               </div>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,867 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href='http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:acdh="https://vocabs.acdh.oeaw.ac.at/schema#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xml:lang="de">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="a" type="main" n="0182">Kabinettsprotokoll Nr. 182 vom 15. Mai 1920</title>
+            <title level="m" type="main" n="01">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <title level="m" type="sub" n="">Renner III (17. Oktober 1919 – 7. Juli 1920)</title>
+            <meeting>
+               <placeName key="https://d-nb.info/gnd/4066009-6">Wien</placeName>
+               <orgName key="https://d-nb.info/gnd/5162749-8">Kabinettsrat</orgName>
+               <date when-iso="1920-05-15"/>
+            </meeting>
+            <editor>
+               <persName key="https://d-nb.info/gnd/122481836"
+                         role="hasCreator"
+                         xml:id="hwohnout">
+                  <forename>Helmut</forename>
+                  <surname>Wohnout</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</affiliation>
+               <idno type="ORCID">0000-0002-3864-9839</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/120789825"
+                         role="hasCreator"
+                         xml:id="tolechowski">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0003-3291-6876</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/131679384"
+                         role="hasCreator"
+                         xml:id="rlein">
+                  <forename>Richard</forename>
+                  <surname>Lein</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0002-7502-0503</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="aholzer">
+                  <forename>Anna</forename>
+                  <surname>Holzer</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0005-3560-3500</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="dsoelkner">
+                  <forename>Dominik</forename>
+                  <surname>Sölkner</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-9895-7212</idno>
+            </editor>
+            <editor>
+               <persName role="hasContributor" xml:id="ischotzko">
+                  <forename>Ina</forename>
+                  <surname>Schotzko</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-5210-3713</idno>
+            </editor>
+            <funder n="1">
+               <orgName key="https://d-nb.info/gnd/2054142-9" role="hasFunder">Österreichischer Wissenschaftsfonds FWF</orgName>
+               <idno type="project">PAT1495024</idno>
+               <title type="project">Die Protokolle des österreichischen Kabinettsrates 1919–1920</title>
+            </funder>
+            <respStmt>
+               <resp>Projektverantwortung</resp>
+               <orgName key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Projektleitung</resp>
+               <persName key="https://d-nb.info/gnd/120789825" role="hasPrincipalInvestigator">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+                  <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+                  <idno type="ORCID">0000-0003-3291-6876</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Nationaler Forschungspartner</resp>
+               <orgName key="https://d-nb.info/gnd/1123037736" role="hasEnabler">Austrian Centre for Digital Humanities</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Digitalisierung der gedruckten Quellen</resp>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>TEI-Datenmodellierung</resp>
+               <persName role="hasContributor" xml:id="tfruehwirth">
+                  <forename>Timo</forename>
+                  <surname>Frühwirth</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-3997-5193</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technische Supervision</resp>
+               <persName key="https://d-nb.info/gnd/1043833846"
+                         role="hasContributor"
+                         xml:id="pandorfer">
+                  <forename>Peter</forename>
+                  <surname>Andorfer</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-9575-9372</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technisches Consulting und Vorbereitung der Druckausgabe</resp>
+               <persName key="https://d-nb.info/gnd/13281899X"
+                         role="hasContributor"
+                         xml:id="skurz">
+                  <forename>Stephan</forename>
+                  <surname>Kurz</surname>
+                  <affiliation key="https://d-nb.info/gnd/1202798799">Institut für die Erforschung der Habsburgermonarchie und des Balkanraumes</affiliation>
+                  <idno type="ORCID">0000-0003-2546-2570</idno>
+               </persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher key="https://d-nb.info/gnd/1001454-8">Österreichische Akademie der Wissenschaften</publisher>
+            <date when="2028"/>
+            <availability status="free">
+               <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">Lizenziert unter CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/deed.de)</licence>
+            </availability>
+            <idno type="ISBN_Print"/>
+            <idno type="ISBN_Part_epub"/>
+            <idno type="ISBN_Digital"/>
+            <idno type="DOI"/>
+            <idno type="DOI_zenodo"/>
+            <idno type="ebook_ID"/>
+         </publicationStmt>
+         <seriesStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="m" type="main">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <respStmt>
+               <resp>Bearbeitung und Herausgeberschaft</resp>
+               <orgName key="https://d-nb.info/gnd/2024703-5">Universität Wien</orgName>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+         </seriesStmt>
+         <notesStmt>
+            <note>Diese TEI-XML-Datei ist Grundlage für eine Druckausgabe der Edition.</note>
+            <relatedItem>
+               <biblStruct>
+                  <monogr>
+                     <imprint>
+                        <pubPlace key="https://d-nb.info/gnd/4066009-6">Wien</pubPlace>
+                        <publisher key="https://d-nb.info/gnd/2068748-5">Verlag der Österreichischen Akademie der Wissenschaften</publisher>
+                        <date when="2029"/>
+                     </imprint>
+                     <extent/>
+                  </monogr>
+                  <note>
+              <idno/>
+              <ptr/>
+            </note>
+                  <citedRange/>
+               </biblStruct>
+            </relatedItem>
+         </notesStmt>
+         <sourceDesc>
+            <bibl>Quellbestand: AT-OeStA/AdR MRang MR 1Rep KRP Kabinettsratsprotokolle, 1918-1920 (Teilbestand)<ref target="https://www.archivinformationssystem.at/detail.aspx?id=5465">https://www.archivinformationssystem.at/detail.aspx?id=5465</ref>
+            </bibl>
+            <msDesc>
+               <msIdentifier>
+                  <institution key="https://d-nb.info/gnd/37748-X" role="hasOwner">AT-OeStA Österreichisches Staatsarchiv (Archiv (ÖStA))</institution>
+                  <repository key="https://d-nb.info/gnd/1601181-8">AT-OeStA/AdR Archiv der Republik, 1918- (Abteilung)</repository>
+                  <collection>AT-OeStA/AdR MRang MR 1Rep Ministerrat 1. Republik, 1918 - 1938 (Bestand)</collection>
+                  <idno>AT-OeStA_AdR-MRang-MR-1.-Rep.-KRP-182</idno>
+               </msIdentifier>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <abstract>
+            <p>
+          <!--to be generated-->
+        </p>
+         </abstract>
+      </profileDesc>
+      <encodingDesc>
+         <styleDefDecl scheme="css"/>
+         <tagsDecl>
+            <rendition xml:id="b" scheme="css">font-weight:bold;</rendition>
+            <rendition xml:id="su" scheme="css">vertical-align:super;font-size:.7em;</rendition>
+            <rendition xml:id="s" scheme="css">text-decoration:line-through;</rendition>
+            <rendition xml:id="u" scheme="css">text-decoration:underline;</rendition>
+            <rendition xml:id="ow" scheme="css">text-decoration:line-through;text-decoration-style:double;</rendition>
+            <rendition xml:id="r" scheme="css">display:block;text-align:right;</rendition>
+            <rendition xml:id="letterspaced" scheme="css">letter-spacing:0.15em;</rendition>
+            <rendition xml:id="i" scheme="css">font-style:italic;</rendition>
+         </tagsDecl>
+         <editorialDecl>
+            <hyphenation>
+               <p>
+            <!--to be added-->
+          </p>
+            </hyphenation>
+            <correction>
+               <p>
+            <!--to be added-->
+          </p>
+            </correction>
+            <normalization>
+               <p>
+            <!--to be added-->
+          </p>
+            </normalization>
+            <punctuation>
+               <p>
+            <!--to be added-->
+          </p>
+            </punctuation>
+            <stdVals>
+               <p>
+            <!--to be added-->
+          </p>
+            </stdVals>
+            <p>
+          <!--to be added-->
+        </p>
+         </editorialDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#tfruehwirth" when-iso="2026-10-13">TEIGarage output upconverted with upconvert.xsl</change>
+         <change who="#tfruehwirth" when-iso="2026-10-13">TEI header populated with generate_tei_templates.py</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface/>
+   </facsimile>
+   <text>
+      <body>
+         <div xml:id="doc-krp-0182.xml">
+            <head type="dokument">
+               <title type="num">182.<note type="footnote">Das Protokoll trägt den Vermerk <hi rend="#i">Vertraulich!</hi></note>
+               </title>
+               <title type="desc">
+                  <pb facs="krp-0182_r-0001"/>[Samstag] 1920-05-15</title>
+            </head>
+            <div type="dokumentkopf">
+               <div type="vorsitz">
+                  <head>Vorsitz:</head>
+                  <p>Renner</p>
+               </div>
+               <div type="anwesend">
+                  <head>Anwesend:</head>
+                  <p>Deutsch, Eisler, Eldersch, Ellenbogen, Fink, Glöckel, Hanusch, Loewenfeld-Russ, Mayr, Miklas, Paul, Ramek, Reisch, Resch, Tandler</p>
+               </div>
+               <div type="zugezogen">
+                  <head>Zugezogen:</head>
+                  <p>Grimm, Ippen, Paltauf, Peter, Schüller, Rappaport</p>
+               </div>
+               <div type="schriftfuehrer">
+                  <head>Schriftführer:</head>
+                  <p>unbekannt</p>
+               </div>
+               <div type="dauer">
+                  <head>Dauer:</head>
+                  <p>10.00–12.45 Uhr</p>
+               </div>
+            </div>
+            <div type="komponenten">
+               <p>Reinschrift, Konzept, stenographische Mitschrift</p>
+            </div>
+            <div type="beilagen">
+               <head>Beilagen:</head>
+               <list>
+                  <item>-</item>
+               </list>
+            </div>
+            <div type="protokoll">
+               <pb facs="krp-0182_r-0002"/>
+               <div type="top" xml:id="krp-0182_top01">
+                  <head>
+                     <label>
+                        <num n="1">1.</num>
+                        <seg>Beschlüsse der Botschafterkonferenz, betreffend die Überwachung des Kriegsmateriales.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Deutsch</hi> macht dem Kabinettsrate die Mitteilung, dass ihm am 14. Mai l. J. der Präses des interalliierten Luftfahrtüberwachungsausschusses in Österreich, Oberst Barrés eine Note überreicht habe, worin folgende Beschlüsse der Botschafterkonferenz notifiziert werden:</p>
+                  <p>„</p>
+                  <list>
+                     <item n="1"><label>1.)</label> Die österreichische Regierung einzuladen, von jetzt ab die in Österreich bestehenden Kriegsmaterialdepots unter die Überwachung des Überwachungsausschusses zu setzen.</item>
+                     <item n="2"><label>2.)</label> Dass das Kriegsmaterial des Depots Klagenfurt unter gleichen Bedingungen unter die Überwachung der genannten Kommission gestellt werde.</item>
+                     <item n="3"><label>3.)</label> Den Präses des interalliierten Luftfahrtüberwachungsausschusses in Österreich zu ersuchen, eine Untersuchung einzuleiten und Bericht zu erstatten, bezüglich der Verkäufe in Österreich, oder der Ausfuhr von Fliegermaterial in Österreich durch das Syndikat Westen-Sieber oder andere Personen und Organisationen.</item>
+                  </list>
+                  <p>Herr Wallace wird den gegenwärtigen Beschluss in Washington zur Kenntnis seiner Regierung bringen."</p>
+                  <p>Oberst Barrés habe von Redner eine sofortige Antwort auf die Note und <pb facs="krp-0182_r-0003"/>unverzügliche Befehle zu ihrer Durchführung verlangt. Der sprechende Staatssekretär habe dies jedoch mit der Begründung abgelehnt, dass die Entscheidung wegen ihrer großen Wichtigkeit der Gesamtregierung vorbehalten bleiben müsse, und habe Barrés erklärt, dass nach seiner persönlichen Meinung und nach der Auffassung seines Ressorts der Friedensvertrag Österreich das Recht lasse, über das in seinem Besitze befindliche Kriegsmaterial bis zum Zeitpunkte der Ratifikation frei zu verfügen. Infolgedessen entspreche auch die Unterstellung der Kriegsmaterialdepots unter den Überwachungsausschuss vor diesem Zeitpunkt nicht den Bestimmungen des Friedensvertrages; das Verfügungsrecht der Entente über das Kriegsmaterial einschließlich der Luftfahrzeuge und ihrer Teile werde vielmehr erst nach dem Inkrafttreten des Friedensvertrages aktuell und beschränke sich auch dann nur auf jene Güter, die sich in diesem Augenblick noch im Eigentum des Staates befinden werden. Oberst Barrés habe dieser Auffassung entschieden widersprochen und angekündigt, er werde sich bei der Botschafterkonferenz alle Vollmachten zur nötigenfalls zwangsweisen Durchführung ihrer Beschlüsse erwirken.</p>
+                  <p>Praktisch genommen beinhalte die angekündigte Überwachung die Beschlagnahme <pb facs="krp-0182_r-0004"/>des gesamten Kriegsmaterials und die Stilllegung der Sachdemobilisierung. Denn nach der Instruktion der Botschafterkonferenz für den Überwachungsdienst solle verhindert werden, dass irgendein Gut ohne ausdrückliche Zustimmung des Präses des interalliierten Luftfahrtüberwachungsausschusses von seinem Orte weggebracht werde. Damit wäre also jeder Kompensationsverkehr zur Lebensmittelbeschaffung, ebenso aber auch die Versorgung der heimischen Industrie mit Betriebserfordernissen aus den Bestanden der Sachdemobilisierung unterbunden.</p>
+                  <p>Dieser schwerwiegenden Folgen wegen müsse, ganz abgesehen von der Rechtslage, alles aufgeboten werden, den Eingriff der Entente abzuwehren. Als Mittel der Abwehr möchte Redner vorschlagen:</p>
+                  <list>
+                     <item n="1"><label>1.)</label> Die Einleitung einer diplomatischen Aktion, welche den alliierten Staaten die ruinösen Rückwirkungen des Schrittes der Botschafterkonferenz auf unser gesamtes Wirtschaftsleben vor Augen führt;</item>
+                     <item n="2"><label>2.)</label> die Aufnahme einer Presskampagne, welche die öffentliche Meinung des In- und Auslandes gegen dieses Vorgehen aufruft, und schließlich</item>
+                     <item n="3"><label>3.)</label> die Vorsorge, dass in der Zeit bis zur Ratifikation des Friedensvertrages die <pb facs="krp-0182_r-0005"/>Sachdemobilisierungsgüter noch möglichst restlos an Private abverkauft werden.</item>
+                  </list>
+                  <p>Die Berechtigung Österreichs zum freien Abverkaufe des Kriegsmaterials stehe für den sprechenden Staatssekretär nach dem Wortlaut des Friedensvertrages außer jedem Zweifel. Alleiniger Zweck der Bestimmungen über die Ablieferung des Kriegsmaterials sei es, Österreich zu entwaffnen. Dabei werde es dem Staate zunächst überlassen, sich des Kriegsmaterials selbst zu entäußern; bloß jener Teil, der sich zu bestimmten, mit der Ratifikation des Friedensvertrages in Beziehung gesetzten Terminen noch in den Händen des Staates befinde, habe dann an die Entente überzugehen. Dass Österreich bis zum Eintritt dieser Termine die vollkommen freie Verfügungsgewalt behalte, gehe schon aus der Verschiedenartigkeit der Bestimmungen des Friedensvertrages über die einzelnen Gattungen von Kriegsmaterial mit aller Deutlichkeit hervor. Während nämlich der Art. 141 das Seekriegsmaterial schon mit dem Tage der Unterzeichnung des Waffenstillstandes vom 3. November 1918 als Eigentum der Entente erkläre, werde für das Landkriegsmaterial, abgesehen vom Luftfahrtzeugmaterial, in Art. 133, soweit es die für die eigene Wehrmacht zugelassene Menge überschreitet, <pb facs="krp-0182_r-0006"/>die Ablieferung in drei Monaten nach dem Inkrafttreten des Friedensvertrages, und für das Luftfahrzeugmaterial in Art. 148 die Auslieferung mit dem Inkrafttreten des Friedensvertrages vorgeschrieben. Besonders zwingend aber gestatte die Tatsache, dass in Art. 132 noch für die Dauer von drei Monaten nach Inkrafttreten des Friedensvertrages die weitere Erzeugung von Waffen, Munition und Kriegsgeräten zugelassen wird, a contrario den Schluss, dass Österreich in der Zeit bis dahin keinerlei Beschränkungen hinsichtlich der Gebarung mit den Sachdemobilisierungsgütern unterworfen sein sollte. Nicht minder erhelle aber aus den angeführten Bestimmungen des Friedensvertrages, dass an die Entente bloß das zu den betreffenden Terminen noch dem Staat selbst gehörende Material zu fallen habe, sie aber keinerlei Anspruch auf jene Kriegsgüter besitze, welche zu dieser Zeit bereits im Eigentum Privater stehen. Dieser Umstand müsse deswegen besonders festgestellt werden, um von vornherein auszuschließen, dass die Entente etwa auf den Erlös des Staates aus dem Abverkaufe von Sachdemobilisierungsgütern seit dem Abschluss des Waffenstillstandes Beschlag lege.</p>
+                  <p>Was speziell das Luftfahrzeugmaterial betreffe, so sei dieses aufgrund eines <pb facs="krp-0182_r-0007"/>im Juni 1919 abgeschlossenen Vertrages zur Gänze an das in Pkt. 3 der Beschlüsse der Botschafterkonferenz genannte Syndikat Westen-Sieber abverkauft worden, und dadurch, als nicht mehr im Staatseigentum befindlich, dem Zugriff der Entente überhaupt entrückt. Wenn die Botschafterkonferenz jetzt eine Überprüfung der Gebarung des Syndikates wünsche, so könne eine solche wohl nicht durch den Präses des Luftfahrtüberwachungsausschusses, sondern nur durch die österreichische Regierung vorgenommen werden, die dabei wieder an alle Schranken gebunden wäre, welche die Gesetze für solche Eingriffe in die Privatwirtschaft ziehen.</p>
+                  <p>An die Ausführungen des sprechenden Staatssekretärs knüpft sich eine eingehende Erörterung über den Umfang der Österreich durch den Friedensvertrag auferlegten Ablieferungspflicht bezüglich des Kriegsmateriales. Der Kabinettsrat stellt hiebei als seine Rechtsauffassung fest, dass eine Ablieferungspflicht, soweit sie nicht nach dem Waffenstillstande gegeben war, nur hinsichtlich der zu den Terminen des Friedensvertrages noch im staatlichen Besitz verbliebenen Sachdemobilisierungsgüter bestehe und bis dahin der Staat in der Veräußerung solcher freies Verfügungsrecht besitze.</p>
+                  <p><pb facs="krp-0182_r-0008"/>Der Kabinettsrat beschließt sohin, in einer Note an die Botschafterkonferenz gegen die vorliegenden Beschlüsse Einsprache zu erheben und der Auslegung entgegenzutreten, dass bis zum Inkrafttreten des Friedensvertrages Österreich in der Verfügung über das Kriegsmaterial irgendwelchen Beschränkungen unterworfen gewesen sei.</p>
+                  <p>In der Note soll unter ausführlicher Begründung der Rechtsauffassung des Kabinettsrates weiters das Verlangen gestellt werden, dass von der einer vertragswidrigen Beschlagnahme der Sachdemobilisierungsgüter gleichkommenden Überwachung abgesehen werde, da seit dem Waffenstillstande die Beschaffung sowohl der Lebensmittel wie der Betriebsstoffe für die Industrie im Wesen auf der Verwertung des Kriegsmaterials aufgebaut ist.</p>
+                  <p>Mit der Ausarbeitung der Note wird das Staatsamt für Äußeres im Einvernehmen mit den Staatsämtern für Heer[es]wesen, für Handel und Gewerbe, Industrie und Bauten und für Finanzen beauftragt.</p>
+                  <p>Weiters ladet der Kabinettsrat den Staatssekretär Dr. Deutsch ein, die von Oberst Barrés überreichte Note an diesen in nachstehendem Sinne zu beantworten. </p>
+                  <p>„Vorbehaltlich aller aus dem Friedens<pb facs="krp-0182_r-0009"/>vertrage zu unseren Gunsten erfließenden Rechte, insbesondere des Eigentums- und Verfügungsrechtes über die Materialien im Ganzen wie im Einzelnen, nimmt der Kabinettsrat die Entscheidung der Botschafterkonferenz mit folgenden Bemerkungen zur Kenntnis:</p>
+                  <p>Zu Pkt. 1: Die in Österreich bestehenden Kriegsmaterialdepots sind nach später festzusetzenden Detailbestimmungen unter die Überwachung des Überwachungsausschusses zu setzen, jedoch in der Art, dass die Disposition der österreichischen Regierung oder der sonstigen Eigentümer über die Materialien nicht behindert und insbesondere die industrielle Verwertung der Materialien als Roh- oder Hilfsstoffe für Friedensproduktionen nicht beeinträchtigt werden darf.</p>
+                  <p>Zu Pkt. 2: ist nichts zu bemerken.</p>
+                  <p>Zu Pkt. 3: Gegen die Untersuchung der Verkäufe oder der Ausfuhr von Fliegermaterialien durch den Präses des interalliierten Luftfahrtsüberwachungsausschusses hat die österreichische Staatsregierung selbstverständlich keine Einwendung, soweit das Gebaren von staatlichen Stellen in Betracht kommt. Was jedoch die Untersuchung oder Überwachung privater Unternehmungen betrifft, kann ein solches Recht der Entente aus dem Friedensvertrage nicht <pb facs="krp-0182_r-0010"/>abgeleitet werden. Doch erklärt sich die Staatsregierung bereit, alle Ermittlungen zu pflegen und Auskünfte zu erteilen, soweit unsere Gesetze dies der österreichischen Regierung ermöglichen.</p>
+                  <p>Bereit, alle von dem Friedensvertrage irgendwie betroffenen Materialien unter die Überwachung der Kommission zu stellen, muss die österreichische Staatsregierung im Interesse der Aufrechterhaltung des gesamten Wirtschaftslebens, das sonst stillgelegt zu werden droht, und vor allem im Interesse der Aufrechterhaltung unserer Volksernährung erwarten, dass der industrielle Arbeitsprozess durch die Überwachung nicht gestört und die Verfügung über alle Roh- und Hilfsstoffe nicht gehemmt werde.“</p>
+                  <p>Schließlich hat das Staatsamt für Äußeres die Blätter im Wege einer Pressekonferenz über die Vorgänge zu informieren und mit allem Material zur Beleuchtung der Tragweite des Schrittes der Botschafterkonferenz für unser gesamtes Wirtschaftsleben zu versehen.</p>
+               </div>
+               <div type="top" xml:id="krp-0182_top02">
+                  <head>
+                     <label>
+                        <num n="2">2.</num>
+                        <seg>Streik der Gerichtskanzleiangestellten.</seg>
+                     </label>
+                  </head>
+                  <p>Im Auftrage des Staatssekretärs für Justiz berichtet Sektionschef Dr. <hi rend="#letterspaced">Paltauf,</hi> dass die Gerichtskanzleiangestellten wegen nicht restloser Erfüllung ihrer Forderungen in den Ausstand getreten seien. <pb facs="krp-0182_r-0011"/>Staatssekretär Dr. <hi rend="#letterspaced">Ramek</hi> sei der Anschauung, dass dieser Streik nunmehr durchgefochten werden müsse und nicht in Verhandlungen eingetreten werden solle. Auch sei beabsichtigt, die gleitende Zulage an die Streikenden am 15. d. M. nicht auszuzahlen. Zum Schutz der Arbeitswilligen solle ein Verbot des Betretens der Gerichtsgebäude durch die Streikenden erlassen und die Befolgung dieses Verbotes eventuell durch Polizeigewalt erzwungen werden. Weiters beabsichtige der Staatssekretär für Justiz, alle jene streikenden Kanzleibeamten, welche aufgrund des § 17 des Besoldungsübergangsgesetzes in der Aktivität belassen wurden, nunmehr in den Ruhestand zu versetzen. Auch stehe der Staatssekretär auf dem Standpunkt, dass bei Fortdauer des Streiks die bisher gemachten Zugeständnisse als gegenstandslos zu erklären seien. Was die Einstellung der Tätigkeit der Gerichte anbelange, so beabsichtige das Staatsamt für Justiz mit dieser Maßnahme erst im Falle unbedingter Notwendigkeit vorzugehen.</p>
+                  <p>In der sich hierüber entwickelnden Debatte, an der sich außer dem <hi rend="#letterspaced">Vorsitzenden</hi> noch die Staatssekretäre <hi rend="#letterspaced">Eldersch</hi>, Dr. <hi rend="#letterspaced">Deutsch</hi> und <hi rend="#letterspaced">Paul</hi> sowie Unterstaatssekretär Dr. <hi rend="#letterspaced">Eisler</hi> beteiligten, wurde der An<pb facs="krp-0182_r-0012"/>schauung Ausdruck gegeben, dass einige der vom Staatsamt für Justiz zur Bekämpfung des Streiks in Aussicht genommenen Mittel, so insbesondere die Aufbietung von Polizei vor den Gerichtsgebäuden zum Schutze der Arbeitswilligen sowie die sofortige Pensionierung der bisher als unentbehrlich in der Aktivität Belassenen vielleicht zu drastisch und geeignet seien, einen Sympathiestreik bei anderen Kategorien auszulösen. Es trat die Auffassung zutage, dass die weitere Entwicklung der Bewegung abgewartet und erst nach einem länger als drei Tage dauernden Fernbleiben der Angestellten vom Amte (§ 29 Dienstpragmatik) Beschluss über die zu treffenden Maßnahmen gefasst werden solle. Inzwischen wäre von den politischen Parteien der Versuch zu unternehmen, auf die Führer der Bewegung einzuwirken.</p>
+                  <p>Hiezu bemerkt Staatssekretär Dr. <hi rend="#letterspaced">Reisch</hi>, dass bei dieser Gelegenheit die Angestellten nachdrücklichst daran zu erinnern wären, dass sie im Falle eines länger als drei Tage währenden eigenmächtigen Fernbleibens vom Dienste für die Dauer der ungerechtfertigten Abwesenheit mit dem Verlust ihrer Bezüge zu rechnen hätten.</p>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> vertagt sodann die weitere Beratung dieses Gegenstandes bis zur Sitzung am 18. Mai d. J.</p>
+                  <p/>
+               </div>
+            </div>
+            <div type="stenogramme">
+               <div n="1">
+                  <head>[KRP 182, 15. Mai 1920, Stenogramm Groß]</head>
+                  <p><pb facs="krp-0182_s01-0001"/>182. Sitzung.</p>
+                  <p>1.</p>
+                  <p>Deutsch: </p>
+                  <p>Oberst Gorrey [r: Barrès] ist mit [einer] Abordnung von Offizieren zur Überreichung eines Schriftstückes erschienen. Es </p>
+                  <p>beinhaltet eine Prüfung der gesamten Gebarung der Lufa[g]. Der Hintergrund ist so, [dass] die Kommission jede Von-Ort-Bringung von Kriegsmitteln </p>
+                  <p>verhindert wissen will, weil sie alles als Eigentum der Entente erklären. Das Amt für Sachdemobilisierung hätte sofort seine Tätigkeit einzustellen. Ich habe </p>
+                  <p>mich sofort gewehrt und erklärt, wie das [Staatsamt für] Äußerer anlässlich des Telegramms an die Botschafter, dass nach dem Friedensvertrag wir das Recht haben, über alles Kriegsmaterial zu verfügen, </p>
+                  <p>solange der Vertrag nicht rat[ifiziert] wird und wir nachher nur jene Dinge abzuliefern haben, welche unser Eigentum sind. Der Oberst hat [dies] bestritten </p>
+                  <p>und gedroht, sich Vollmachten zu verschaffen, um gegen uns aufzutreten. Ich habe [gesagt, ich muss] die Entscheidung dem Kabinettsrat überlassen. Er wollte [einen] sofortigen Befehl, dass in den </p>
+                  <p>verschiedenen Depots nichts mehr weggebracht werden darf. Ich erklärte, dass ich dazu nicht berufen sei, weil ein anderes Staatsamt zuständig ist.</p>
+                  <p>Ich wurde unter der Hand verständigt, wie sie sich die Überwachung vorstellen. Ich habe abgelehnt, daher könnte er mir die Weisung nicht überreichen. [Ich sagte], alles, was er </p>
+                  <p>will, kann man erst entscheiden, bis die Gesamtregierung Stellung genommen hat. Diese Weisung des Präses, da war .... entscheidend </p>
+                  <p>der Absatz 'Aufgabe der Wachposten', Punkt 1: Es heißt also Beschlagnahme.</p>
+                  <p>[<hi rend="#i">Am Rand:</hi>] Bestimmungen des Friedensvertrages über das Luftfahrzeugmaterial (auszuliefern mit Ratifikation des Friedensvertrages, Artikel 148).</p>
+                  <p>Das Flugzeugmaterial wird im Friedensvertrag von dem übrigen Material sehr genau unterschieden. [Wir] haben das Flugzeugmaterial </p>
+                  <p>zu deponieren und innerhalb einer gewissen Zeit der Entente abzuliefern. Aber das kommt erst in Betracht nach Inkrafttreten des Friedens-</p>
+                  <p>vertrages und nur bezüglich jenes Materials, welches sich in den Händen der österreichischen Regierung zu jener Zeit befindet. Sie wollen schon jetzt beschlagnahmen das, was uns gehört </p>
+                  <p>und was wir Privaten gegeben haben. Es ist das jetzt beschränkt auf Fliegermaterial, sie werden es aber wahrscheinlich auf die gesamte </p>
+                  <p>Sachdemobilisierung ausdehnen. Kriegsmaterial ist nach ihrer Auffassung einfach alles. Es ist ein ungeheurer Komplex von Gütern, welche </p>
+                  <p>von der Entente beschlagnahmt werden sollen. Wenn jedes Von-Ort-Bringen untersagt wird, hört sich jede Sachdemobilisierung und jede Arbeit in den </p>
+                  <p>Fabriken auf. Es liegt ein Beschluss der Gesandtenkonferenz vor. Dieser wurde erzielt aufgrund unrichtiger Informationen.</p>
+                  <p>Es handelt sich nicht darum, sie zu überzeugen, dass wir im Recht sind, sondern [darum], einen Weg der Abwehr zu finden.</p>
+                  <p>Es wird nötig sein, ein Communiqué über den Schritt hinauszugeben, um die Öffentlichkeit über den Ernst der Lage </p>
+                  <p>aufmerksam zu machen, damit sich die Industrie [danach] richten kann. Das C[ommuniqué] ist veröffentlicht worden, die Blätter haben [aber] keine Stellung </p>
+                  <p>genommen. Das war sehr ungeschickt, und muss nachgeholt werden. Es hätte eine große dip[lomatische] Aktion zu erfolgen, welche aufgrund </p>
+                  <p>des Schrittes auseinandersetzt, dass wir zugrunde gerichtet werden, wenn [man] die Kommission nach Belieben schalten lässt. Dann [wäre notwendig], dass wir die Öffentlichkeit </p>
+                  <p>in einem Pressefeldzug aufrufen, bei uns und im Ausland, und - [um] die öffentliche Meinung auf die Vorgänge aufmerksam zu machen.</p>
+                  <p>[Eine] Erörterung der Rechtsgrundlage ist überflüssig, es muss die Art der diplomatischen Kampagne und der Presseaktion besprochen werden.</p>
+                  <p>Renner: </p>
+                  <p>Nach Mitteilung Mar. wird Dienstag in der französischen Kammer der Friedensvertrag verhandelt werden. Am</p>
+                  <p>Mittwoch oder Donnerstag wird der Senat nachfolgen, Ende nächster Woche wird der Friede ratifiziert sein. Der Zeitpunkt, wo uns die Rechtsfolgen </p>
+                  <p>des Friedens erwachsen, ist also sehr nahe. Von diesem Gesichtspunkt aus haben wir nur 1-2 Wochen Zeit. Die Aktion erstreckt sich </p>
+                  <p>zunächst auf das Luftfahrt-Material, sie präj[udiziert] aber die Heeresüberwachungskommission. Am meisten muss dagegen Stellung genommen werden, dass wir in der Zeit </p>
+                  <p>zwischen Waffenstillstand und Friedensratifikation nicht die rechtliche Verkaufsmöglichkeit gehabt hätten. Denn wenn das so wäre, würde der ganze Erlös der </p>
+                  <p>Zwischenzeit als Kaufpreis für eine unrechtmäßige Veräußerung gelten und wir wären den ganzen gelösten Betrag der Entente </p>
+                  <p>schuldig. Die zweite Seite ist die Sperrung des Materials. Nun müsste man hier eine scharfe Abgrenzung dessen haben, wozu wir uns zu liefern verpflichtet </p>
+                  <p><pb facs="krp-0182_s01-0002"/>fühlen und was nicht. Fertige Geschütze und Gewehre usw. wären wir zu liefern verpflichtet, dagegen angefangene nicht. </p>
+                  <p>Ich weiß nicht, wie man es halten soll. Bis zur Ratifikation sind wir gar nichts schuldig und können nicht gehindert werden. </p>
+                  <p>Vom Moment des Friedensvertrages sind wir verpflichtet, diese Dinge zu liefern, andere nicht. Diese müssten bestimmt abgegrenzt werden.</p>
+                  <p>Deutsch: </p>
+                  <p>Im Vertrag ist für die Wehrmacht ein Quantum zugebilligt, alles weitere müssen wir abliefern. </p>
+                  <p>Nun hat diese Ablieferung innerhalb [von] drei Monaten zu geschehen nach der Ratifizierung. Es ist zu erwägen, ob wir den Vertrag </p>
+                  <p>nicht so auslegen können, dass wir in den drei Monaten noch verkaufen können und erst hinterlegen, was nach drei Monaten </p>
+                  <p>übrig ist. Die Entente will uns nicht schädigen, sondern nur entwaffnen. Es wäre zu erwägen, ob wir den Überschuss nicht</p>
+                  <p>[<hi rend="#i">Am Rand:</hi>] Artikel 130, Abs. 2 und Artikel 133, Auslegung. Die Entente wünscht nur die Entwaffnung Österreichs, überlässt es ihm aber bis drei Monate nach Ratifikation des Friedens, sich des Kriegsmaterials selbst zu entledigen; bloß das, was zu dieser Zeit noch übrig ist im staatlichen Eigentum, fällt an die Entente. [Man muss] daher trachten, die restlichen Demobilisierungsgüter unverzüglich in priv[aten] Besitz zu bringen.</p>
+                  <p>so rasch als möglich aus dem staatlichen Eigentum bringen. Dazu müsste der Vertreter der Sachdemobilisierung sagen, wieweit es geschehen kann. </p>
+                  <p>Ich habe gestern nur beabsichtigt, Zeit zu gewinnen. Wir müssen überlegen, was zu tun ist. Dieser Schritt bedroht die Sachdemobilisierung überhaupt </p>
+                  <p>und [sie] muss am 17. Mai aufhören zu bestehen. Wir haben die Verpflichtung, innerhalb [von] drei Monaten nach dem Frieden abzuliefern und zu dep[onieren]. </p>
+                  <p>Wir müssen sagen, innerhalb der drei Monate können wir noch verkaufen, der Rest wird abgegeben. Die Entente kann aber schon in der ersten Woche </p>
+                  <p>die Ablieferung verlangen. Gegen diese Ablieferung kann man sich wehren, wenn man die Ware rechtzeitig aus dem Besitz des Staates in Privateigentum </p>
+                  <p>überführt. Ob man die großen Vorräte in private Hände oder Gemeindehände oder sonst [an] juristische Personen bringen kann, </p>
+                  <p>weiß ich nicht. Diese Frage wäre zunächst zu lösen, nebst den beiden anderen Fragen des diplomatischen Widerstandes und der </p>
+                  <p>Pressekampagne.</p>
+                  <p>Renner: </p>
+                  <p>Der Anschlag bedeutet, dass von Montag [an] die Sachdemobilisierung gesperrt [wird] und [sie] die Depots militärisch besetzen wollen </p>
+                  <p>und jede Ortsveränderung unmöglich ist außer mit Zustimmung des Präses der Kommission. Das heißt eine völlige Stilllegung </p>
+                  <p>der Sachdemobilisierung.</p>
+                  <p>Eldersch: </p>
+                  <p>Man soll erst die Lage schildern wegen der Luftfahrzeuge. Denn die Aktion beschränkt sich vorläufig nur auf diese. </p>
+                  <p>Wir fürchten nur, dass dann sofort weitere Begehren gestellt werden.</p>
+                  <p>Deutsch: </p>
+                  <p>Die Ausfolgung des Fliegermaterials beginnt am 17., aber die allgemeine Überwachung gilt für alles. </p>
+                  <p>Das Fliegermaterial erklärt Artikel 148. Das muss - [hat] mit Inkrafttreten des Friedensvertrages zu erfolgen, während sonst </p>
+                  <p>binnen drei Monaten abgeliefert werden muss. Artikel 144.</p>
+                  <p>[<hi rend="#i">Am Rand:</hi>] Im Gegensatz zu Artikel 133 verlangt Artikel 148 die Auslieferung des Luftfahrzeugmaterials sofort mit Ratifikation des Friedens.</p>
+                  <p>Renner: </p>
+                  <p>Beim Fliegermaterial ist entscheidend die private Lufa[g], welcher das Material ausgefolgt wurde.</p>
+                  <p>Deutsch: </p>
+                  <p>Als Teil des Heerwesens und der Polizei dürfen wir keine Luftfahrtstreitkräfte führen. Darum haben wir das </p>
+                  <p>ganze Material der Lufag übergeben. Daher sollte für sie der Friedensvertrag nicht zutreffen. Die Entente behauptet </p>
+                  <p>aber, dass das doch zutrifft und die Auslieferungspflicht besteht auch bezüglich dessen, was im Privatbesitz ist. Die Lufag </p>
+                  <p>hat das gesamte Material bekommen zum Verkauf unter Beteiligung des Staates am Erlös. Die Verträge datieren vom 1. 6. '19 </p>
+                  <p>und liegen bei der Sachdemobilisierung. Dort werden sie vom Militär eingesehen. Der Verkauf ist kommissionsweise.</p>
+                  <p>Grimm: </p>
+                  <p>Das Fliegermaterial wurde verkauft nach einer sukzessiven Schätzung zu einem Grundpreis und [einem] Anteil am Mehrerlös. </p>
+                  <p>[<hi rend="#i">Am Rand:</hi>] Grimm: Das Luftfahrzeugmaterial wurde der Lufag fix verkauft, die Preisbestimmung aber einer sukzessiven Feststellung nach Maßgabe von Schätzungen zuzüglich eines staatlichen Gewinnanteiles am Überpreis vorbehalten. Es ist daher die Frage, ob das noch nicht abgeschätzte Material als bereits in das Eigentum der Lufag übergegangen angesehen werden kann.</p>
+                  <p><pb facs="krp-0182_s01-0003"/>Um 60 Mill[ionen] erst dürfte verkauft sein, etwa 100 M[illionen] dürften noch da sein.</p>
+                  <p>Deutsch: </p>
+                  <p>Es war ein wirklicher Verkauf, der nur über die Preisfestsetzung spätere Verhandlungen offen gelassen hat.</p>
+                  <p>Renner: </p>
+                  <p>Das im Staatseigentum stehende Material fällt in den Besitz der Entente nach der Ratifikation.</p>
+                  <p>Eldersch: </p>
+                  <p>Es ist die Frage, ob der Vertrag mit der Lufag hieb- und stichfest ist. Wir müssen uns auf den Standpunkt stellen, </p>
+                  <p>dass der Frieden noch nicht in Kraft ist.</p>
+                  <p>Renner: </p>
+                  <p>Ich möchte bitten, dass Eldersch, Reisch, Ellenbogen und Deutsch sich den Vertrag rasch anschauen, um ein </p>
+                  <p>Bild zu bekommen, wie es mit dem Moment des Eigentumsüberganges steht. Wie steht es mit den Vorräten?</p>
+                  <p>Ellenbogen: </p>
+                  <p>Das Material ist zum größten Teil noch da. Ich mache aufmerksam in der Frage des Verkaufes, [was] die in der Sachdemobilisierung </p>
+                  <p>befindlichen Güter anlangt: Es sind noch einige große Liegenschaften [und] Räumlichkeiten, z. B. Strebersdorf. Es wäre nützlich, wenn es möglich wäre, </p>
+                  <p>Strebersdorf an Wien zu verkaufen. Es ist die Frage, ob das geht.</p>
+                  <p>Deutsch: </p>
+                  <p>Ich war gegen die Lufag, [aber] wir können an den Tatsachen nichts mehr ändern. Aber ich habe die Frage angeregt, </p>
+                  <p>ob neben der dip[lomatischen Aktion] und der Presseaktion wir alle Dinge, welche wir noch haben, in den letzten acht Tagen abstoßen, um sie nicht im Eigentum zu haben. </p>
+                  <p>Das betrifft die Lufag und die ganze Sachdemobilisierung.</p>
+                  <p>Ellenbogen: </p>
+                  <p>Von den staatlichen Industriewerken ist ein großer Teil aus der Sachdemobilisierung entnommen. Fällt das auch darunter?</p>
+                  <p>Deutsch: </p>
+                  <p>Die Gesellschaft nicht, die Werke selbstverständlich.</p>
+                  <p>Ellenbogen: </p>
+                  <p>Der Vertreter der Daimler-Werke hat mitgeteilt, dass die Entente-Kommission bei ihm erhoben hat die Motoren [in] </p>
+                  <p>den Kraftwagen und erklärt hat, dass auch das von ihnen sichergestellt und mit Beschlag belegt wird. Er hat mich auch </p>
+                  <p>gefragt, ob er noch verkaufen darf. (Renner: Selbstverständlich.)</p>
+                  <p>Loewenfeld-Ruß: </p>
+                  <p>Mir kommt die juristische Auffassung des Friedensvertrages merkwürdig vor. Es kann doch nicht die Absicht der Entente </p>
+                  <p>gewesen sein, uns freie Hand bei der Verwaltung der Sachdemobilisierung zu lassen. Wir hätten alles verkaufen können und die Entente hätte das </p>
+                  <p>Nachsehen gehabt. Man wird uns wegen dieser Auslegung des Friedensvertrages von der Entente schwere Vorwürfe machen. Die letzten acht Tage </p>
+                  <p>zum Abverkauf zu benützen, ist schon ganz unmöglich.</p>
+                  <p>Fink: </p>
+                  <p>Hat die Entente uns gestern etwas schriftlich gegeben und ist es das Ganze, was [man] ihnen zuzugestanden - [zuzugestehen] hat? Wir müssen genau </p>
+                  <p>wissen, was die Entente von uns verlangt.</p>
+                  <p>Deutsch: </p>
+                  <p>Ich mache Loewenfeld-Ruß auf folgendes aufmerksam: Kapitel 5 sagt: Wir dürfen eine gewisse Summe von </p>
+                  <p>Waffen und Munition nicht überschreiten, [abgesehen von] Artikel 133. Es ist schwer, den Beweis zu führen, weil die Kapitel gesondert sind. </p>
+                  <p>Aber gerade die Sonderung gibt andererseits wieder [einen] Hinweis. Die Seestreitkräfte werden ganz anders behandelt [in Artikel] 141: Die Seestreitkräfte </p>
+                  <p>mussten sofort ausgeliefert werden. Bei den anderen hat man etwas anderes gewollt und das ist unsere stärkste Waffe. </p>
+                  <p><pb facs="krp-0182_s01-0004"/>Wo von Munition und Waffen gesprochen wird, die das Heer besitzt, wird die Formel mit dem 'actuellement' </p>
+                  <p>gewählt. Ganz anders wird mit den Seestreitkräften verfahren. Deren Material, das Österreich zur Zeit des Waffenstillstandes besaß, </p>
+                  <p>wird von diesem Moment an als Eigentum der Entente erklärt. Dieser Unterschied beweist, dass etwas anderes geschehen sollte. </p>
+                  <p>Die Marine wollte man - [sie wurde] vom Moment des Waffenstillstandes als Eigentum der Entente erklärt. Bis zur Ratifikation des Friedens </p>
+                  <p>dürfen wir fabrizieren, wir haben erst später zu schließen. Selbst bei den Luftfahrzeugen ist eine Frist von sechs </p>
+                  <p>Monaten ([Artikel] 147). Das spricht dafür, dass meine Auffassung die richtige ist.</p>
+                  <p>[<hi rend="#i">Am Rand:</hi>] Die Verschiedenheit der Bestimmungen des Friedensvertrages über die Behandlung des Seekriegsmaterials (Artikel 141, Auszuliefern der Entente am Abschluss des Waffenstillstandes), des Kriegsmaterials der Landstreitkräfte (Artikel 130, Abs. 2, Ablieferung innerhalb drei Monaten nach Ratifikation) und die Gestattung der weiteren Erzeugung von Kriegsmaterial bis drei Monate nach Ratifikation (Artikel 132) beweisen a contrario das freie Verfügungsrecht Österreichs über das Kriegsmaterial innerhalb dieser Zeit.</p>
+                  <p>Renner: </p>
+                  <p>Der faktische Grund, dass wir verkaufen mussten, um leben zu können, gibt uns die Deckung. Mit der Lufag </p>
+                  <p>muss man sich die Verträge ansehen. Im Moment der Ratifikation hört für uns der gute Glaube bei einer </p>
+                  <p>Veräußerung auf. Ich bitte, in diesem Punkt vorsichtig zu sein. Jede Änderung geschieht nicht mehr im guten Glauben, während wir uns </p>
+                  <p>jetzt auf die unbestritten bewilligte Rechtsauffassung berufen können. Diese Fragen müssen geprüft werden. Unmittelbar muss ein-</p>
+                  <p>geleitet werden eine Pressekampagne und eine diplomatische Aktion. Der Schritt ging aus von der Botschafterkonferenz. Die Antwort muss </p>
+                  <p>daher auch wieder an sie ergehen. Diese Antwort muss die ganze Rechtsauffassung enthalten und muss die Hinweise bringen auf </p>
+                  <p>unsere Lebensnot, welche uns zu den Verkäufen nötigt und die Lage der Industrie [muss] klargestellt werden. Diese Note muss heute </p>
+                  <p>noch abgesandt werden. Wir haben schon in einem Telegramm an Eichhoff unsere Rechtsauffassung dargestellt. Wir brauchen nur </p>
+                  <p>an dieses Telegramm an[zu]knüpfen. Wir müssen sagen, wir können den Schritt nicht zur Kenntnis nehmen. Die Note geht auch an alle </p>
+                  <p>Gesandten in Wien. [Es] soll der Tenor dahin lauten, dass die Regierung nicht in der Lage ist, diese Note zur Kenntnis zu nehmen.</p>
+                  <p>Die Überwachung kann man nicht ablehnen, man muss nur ablehnen die Disposition. Die Dispositionsfreiheit muss gewahrt werden.</p>
+                  <p>Deutsch: </p>
+                  <p>Wir nehmen den Punkt 1 an, wenn uns die Dispositionsfreiheit gewahrt wird in der Form, dass der Präses der </p>
+                  <p>Kommission <hi rend="#s">unter</hi> - ohne dessen Visum nichts hinausgehen kann, einer Disposition der österreichischen Regierung das Visum nicht versagen darf.</p>
+                  <p>Renner: </p>
+                  <p>Warum ist Klagenfurt besonders genannt?</p>
+                  <p>Deutsch: </p>
+                  <p>Klagenfurt liegt in der neutralen Zone und wir dürfen nichts herausnehmen. Die Italiener wollen Beschlag darauf legen. </p>
+                  <p>Wir können dort überhaupt nicht disponieren. Punkt 2 kann ganz angenommen werden. Alles müsste geschehen unter Vorbehalt des Eigentumsrechtes.</p>
+                  <p>Auch [Punkt] 3 unter dem Vorbehalt, dass es eine private Gesellschaft ist, welche den Staat nichts angeht und dass hier kein Gut vorliegt, über </p>
+                  <p>das der österreichische Staat verfügen kann. Den Präses ... zu ersuchen, eine Untersuchung ... Das kann man nicht abschlagen, wenn </p>
+                  <p>nicht zum Ausdruck kommen soll, dass ein Eigentum der Entente vorliegt.</p>
+                  <p>Renner: </p>
+                  <p>Der Beschluss der Botschafterkonferenz ist unanfechtbar, insoweit man darin eine bloße Überwachung und keine </p>
+                  <p>Verfügung über das Eigentumsrecht darin sieht. Wir können den Beschluss der Botschafterkonferenz zur Kenntnis nehmen.</p>
+                  <p>Vorbehaltlich <hi rend="#s">der Entscheidung über das Eigentum</hi> - des Eigentums- und Verfügungsrechtes der österreichischen Regierung der zu überwachenden Gegenstände im Ganzen wie im Einzelnen, nimmt der </p>
+                  <p>Kabinettsrat die Entscheidung der Botschafterkonferenz mit folgenden Bemerkungen zur Kenntnis:</p>
+                  <p>[<hi rend="#i">Am Rand:</hi>] Vorbehaltlich aller aus dem Friedensvertrag zu unseren Gunsten erfließenden Rechte, insbesondere des </p>
+                  <p>Eigentums- und Verfügungsrechtes über die Materialien im Ganzen und im Einzelnen, nimmt die Staatsregierung </p>
+                  <p>die Entscheidung der Botschafterkonferenz mit folgenden Bemerkungen zur Kenntnis:</p>
+                  <p>Ad 1: Die in österreichischen - [Österreich] bestehenden Kriegsmaterialdepots sind entsprechend - nach später festzusetzenden Detail-</p>
+                  <p>bestimmungen unter die Überwachung des Überwachungsausschusses zu setzen, jedoch in der Art, dass die Disposition der österreichischen Regierung über die </p>
+                  <p><pb facs="krp-0182_s01-0005"/>Materialien <hi rend="#s">(behufs Veräußerung) nicht beeinträchtigt werden darf oder jener Personen oder Körperschaften, denen das – </hi></p>
+                  <p>der Regierung oder der sonstigen Eigentümer der Materialien nicht beeinträchtigt und insbesondere die Verarbeitung - industrielle <hi rend="#s">Verarbeitung</hi> der Materialien </p>
+                  <p>als Roh- [<hi rend="#i">Einschub:</hi>] oder Hilfs- [<hi rend="#i">Einschub Ende</hi>]-stoffe für die Friedensproduktion nicht <hi rend="#s">gehindert werden darf</hi> - gestört - gehindert werden darf.</p>
+                  <p>Ad 2.) Punkt 2 wird akzeptiert.</p>
+                  <p>Ad 3.) Gegen die Untersuchung <hi rend="#s">durch den Präses des in[terallierten] Luftfahrt-Überwachungsausschusses</hi> </p>
+                  <p><hi rend="#s">bezüglich</hi> - der Verkäufe oder der Ausfuhr von Fliegermaterial durch das S. W.-S. [Syndikat Westen-Sieber] oder andere Personen und </p>
+                  <p>Organisationen wird kein Einwand erhoben, doch festgestellt, dass diese Firma eine private – </p>
+                  <p>hat die österreichische Staatsregierung nichts einzuwenden, jedoch nur insoweit, als dem Staat im Rahmen unserer Gesetzgebung das Recht der Untersuchung </p>
+                  <p>oder Überwachung privater Unternehmungen zusteht.</p>
+                  <p>Paul: </p>
+                  <p>Der Vertrag mit der Lufag ist sehr verdächtig. Es muss der Entente etwas von den Schätzungen bekannt </p>
+                  <p>geworden sein und sie will jetzt der Firma in den Arm fallen. Der Westen ist gegenwärtig auch Proponent eines </p>
+                  <p>Syndikats wegen des Ankaufs der ?Südländischen. Ich habe ihm sagen lassen, dass ich mit ihm nichts zu </p>
+                  <p>tun haben will. Darauf hat er durch den früheren Direktor B. sagen lassen, er sei nicht mehr in der Lage, bei der Lufag </p>
+                  <p>einzuschreiten, er trete aber von dort aus. Die ganze Sache hat - [ist] möglicherweise nur ein Handlegen auf </p>
+                  <p>diese eindeutige Gesellschaft der Lufag. Der Vertrag wurde auch in Österreich von allen Kreisen schärfstens </p>
+                  <p>bekämpft. Ein solcher Vertrag wurde [noch] nie geschlossen.</p>
+                  <p>Deutsch: </p>
+                  <p>Ich bin der gegenteiligen Meinung. Ich habe [mich] gegen die Vertragsschließung mit der Lufag </p>
+                  <p>ganz entschieden gewehrt. Der Privatbrief an Zerdik und Renner muss ja noch vorliegen. Der Entente kann es sich </p>
+                  <p>nicht darum handeln, die Schiebergeschäfte zu verhindern, weil sie kein Interesse daran hat. Dass die Firma von der Botschafter-</p>
+                  <p>konferenz genannt wird, ist sehr einfach [deshalb], weil die Luft[fahr]zeugstoffe hier sitzen und [diese] mit Inkrafttreten des Friedensvertrages </p>
+                  <p>abgeliefert werden [müssen]. Die Entente will das Material an sich nehmen und das Material ist in den Händen einer Privatgesellschaft. </p>
+                  <p>[Um] einen anderen Privaten in Anspruch zu nehmen, war noch kein Anlass für die Entente gegeben, weil sie auf noch keinen gestoßen ist. </p>
+                  <p>Dass es nicht eine Aktion gegen die Lufag ist, geht daraus hervor, dass das ganze Material unter Überwachung gestellt wird.</p>
+                  <p>Renner: </p>
+                  <p>Sollen wir sagen, dass wir an Untersuchungen bei privaten Unternehmungen uns nur soweit beteiligen können, als das die </p>
+                  <p>Gesetze möglich machen?</p>
+                  <p>Deutsch: </p>
+                  <p>Die Industrie wird sich dagegen wehren, dass die feindlichen Firmen ihre Geschäftsgebarung überprüfen. Wir werden </p>
+                  <p>vor einem Sturm stehen. Darum können wir nur sagen, eine solche Überwachung ist nur möglich im Rahmen des Gesetzes, soweit der Staat </p>
+                  <p>bei privaten Gesellschaften dreinreden darf.</p>
+                  <p>Soweit im Rahmen - unsere Gesetzgebung dem Staat das Recht der Überwachung privater Unternehmungen zulässt.</p>
+                  <p>Es müsste herauskommen, dass die Entente das überhaupt nicht machen kann, sondern nur der Staat und auch dieser nur im Rahmen der Gesetze.</p>
+                  <p><pb facs="krp-0182_s01-0006"/>Reisch: </p>
+                  <p>Wir müßten eigentlich ablehnen. Ich würde erklären, dass, soweit sich das Material im Besitz Privater besitzt - [befindet], </p>
+                  <p>uns das Recht zu irgendwelchen Untersuchungen fehlt.</p>
+                  <p>Gegen die Untersuchung der Verkäufe oder der Ausfuhr von Fliegermaterial durch den Präses </p>
+                  <p>des i. a. [interalliierten] Luftschiffahrts-Überwachungsausschuß hat die österreichische Staatsregierung selbstverständlich keine Einwendung, </p>
+                  <p>soweit das Gebaren von staatlichen Stellen in Betracht kommt. Was jedoch die Untersuchung oder Überwachung privater Unternehmungen </p>
+                  <p>betrifft, kann ein solches Recht der Entente aus dem Friedensvertrag nicht abgeleitet werden. Jedoch erklärt die Staatsregierung sich </p>
+                  <p>bereit, <hi rend="#s">im Rahmen unserer Gesetzgebung</hi> - Ermittlungen zu pflegen und alle gewünschten Auskünfte zu erteilen, soweit </p>
+                  <p><hi rend="#s">dies der Regierung im Rahmen der österreichischen Gesetze möglich ist</hi> - soweit unsere Gesetze dies der österreichischen Regierung ermöglichen.</p>
+                  <p>Fink: </p>
+                  <p>Im Eingang haben wir gesagt 'die Rechte, welche aus dem Friedensvertrag fließen' und weiters gesprochen von </p>
+                  <p>Eigentum und Verfügung. Wir sollten schauen, ob das noch nötig ist, damit wir nicht anstoßen.</p>
+                  <p>Renner: </p>
+                  <p>Die Entente kann [das Material] überwachen und übernehmen. Aber solange sie [es] nicht übernommen hat, kann sie uns nicht hindern, [darüber] </p>
+                  <p>zu verfügen. Bezüglich des Eigentums behaupten wir, dass die Entente nach der Anlage des Abschnitts über die Wehrmacht sagen will, wir </p>
+                  <p>müssen abrüsten und dürfen nicht mehr haben als eine bestimmte Menge. Wenn wir selbst abrüsten, ist dem Frieden genüge geschehen. Wir </p>
+                  <p>dürfen [es] drei Monate nach der Ratifikation nicht mehr besitzen, inzwischen besitzen wir es zu eigen und können es selbst veräußern. </p>
+                  <p>Bloß wenn [wir] es drei Monate nach dem Frieden [noch haben], so müssen wir es abliefern. Das andere können wir selbst veräußern, soweit </p>
+                  <p>wir es nicht schon nach dem Waffenstillstandsvertrag abliefern mussten.</p>
+                  <p>Bereit, <hi rend="#s">alle von dem Waffen</hi>- - Friedensvertrag irgendwie betroffenen Materialien unter die Bewachung der Kommission zu stellen, </p>
+                  <p>muss die österreichische Staatsregierung im Interesse der Aufrechterhaltung <hi rend="#s">der Produktion</hi> – [<hi rend="#i">Einschub:</hi>] des gesamten Wirtschaftslebens, das sonst stillgesetzt zu werden droht, </p>
+                  <p>und vor allem im Interesse der Aufrechterhaltung unserer Volksernährung [<hi rend="#i">Einschub Ende</hi>] erwarten, dass der industrielle Arbeitsprozess </p>
+                  <p>durch die Überwachung nicht gestört und die Verfügung über alle Roh- und Hilfsstoffe nicht gehemmt wird.</p>
+                  <p>Der Pr[äses] wird uns vor der Ratifikation an der Verfügung nicht hindern.</p>
+                  <p>Deutsch: </p>
+                  <p>Wir müssen in den acht Tagen verkaufen, was wir können, damit das Eigentumsrecht des Staates beseitigt wird. </p>
+                  <p>[Das Staatsamt für] Handel und Gewerbe mit [den Staatsämtern für] Finanzen und Äußeres hätten diese Vorbereitungen zu treffen, um das Eigentumsrecht an dem Kriegsmaterial so zu </p>
+                  <p>gestalten, dass der Staat nicht mehr als Eigentümer erscheint. Diese Maßnahmen zu treffen, müssen einige Herren der Staatsämter abgestellt werden.</p>
+                  <p>Der Kabinettsrat hat beschlossen, das Staatsamt für Handel ... zu beauftragen, die Sachdemobilisierung tunlichst zu beschleunigen </p>
+                  <p>und schwebende Verhandlungen <hi rend="#s">sofort</hi> - ohne Verzug zum Abschluss zu bringen.</p>
+                  <p>Renner: </p>
+                  <p>Das [Staatsamt für] Äußeres mit [den Staatsämtern für] Handel, Finanzen und Heer[wesen] muss eine Note ausarbeiten über die ganze Sache, welche den Ausgang nimmt von dem </p>
+                  <p>positiven Schritt. Die Botschafterkonferenz hat, wie uns durch die Note vom ... des Präses des Luftschiffahrts-Überwachungsausschusses </p>
+                  <p>mitgeteilt wird, folgenden Beschluss gefasst: ...</p>
+                  <p><pb facs="krp-0182_s01-0007"/>Ein wesentlicher Teil ist die Klärung der Rechtslage nach den Angaben [von] Deutsch. Das muss eine Denkschrift sein, welche unsere </p>
+                  <p>Interpretation genau enthält.</p>
+                  <p>Schüller: </p>
+                  <p>Wir sollten Torretta bitten, nach Rom zu telegraphieren, dass die Botschafterkonferenz keine Gewalt anwendet.</p>
+                  <p>Deutsch: </p>
+                  <p>Wir müssten die Note, welche die Antwort auf die drei Punkte enthält, dem Oberst B[arrès] übergeben. </p>
+                  <p>Zugleich soll sie der Presse gegeben werden. Aber es müssten nun die Zeitungen bearbeitet werden in der Weise, dass sich die Herren </p>
+                  <p>Reisch, Zerdik, welche damit zu tun haben, interv[iewen] lassen.</p>
+                  <p><hi rend="#s">Schüller</hi>: -. Renner: </p>
+                  <p>Sch[üller] soll [eine] Pressekonferenz abhalten.</p>
+                  <p>[<hi rend="#i">Am Rand:</hi>] Information durch [eine] Pressekonferenz im Äußern.</p>
+                  <p>Schüller: </p>
+                  <p>Es wird uns gar nichts nützen, wir kommen nur zu einer Verhandlung über die fallweise Freigabe von Kompensationsgütern. </p>
+                  <p>Man müsste die Militärs unsicher machen, dass es nicht mit den Absichten des Obersten Rates übereinstimmt.</p>
+                  <p>Renner: </p>
+                  <p>Wir erheben wegen dieser Entscheidung bei der Botschafterkonferenz eine Vorstellung. Die positive Entscheidung der Botschafter-</p>
+                  <p>konferenz fechten wir bei ihr selbst an. Gegen die Überwachung, soweit der Staat in Betracht kommt, [besteht] kein Einwand, aber sie </p>
+                  <p>darf die Disposition nicht stören und dem Eigentum nicht präjudizieren.</p>
+                  <p>Deutsch: </p>
+                  <p>Dieses Comité aus [dem Staatsamt für] Äußeres, Schüller soll den Kabinettsbeschluss überprüfen und als Antwort </p>
+                  <p>mit einer Verwahrung festsetzen, dass [es] vor dem Friedensvertrag überhaupt nichts gibt.</p>
+                  <p>[<hi rend="#i">Am Rand:</hi>] Verwahrung, dass bis zum Inkrafttreten des Friedensvertrages das Verfügungsrecht Österreichs irgendwelchen Beschränkungen unterliege.</p>
+                  <p>Renner: </p>
+                  <p>Die formelle Verhandlung im Kabinettsrat kann jetzt nicht weiter gehen. Die beteiligten Ressorts </p>
+                  <p>sollen die Gegenstände besprechen.</p>
+                  <p>Fink: </p>
+                  <p>Ich habe ein Bedenken, dass der Kabinettsrat einen Beschluss fasst, rasch zu verkaufen. Wir setzen uns damit </p>
+                  <p>ins Unrecht.</p>
+                  <p>Schüller: </p>
+                  <p>Wenn gegen uns entschieden wird, werden die Verträge storniert.</p>
+                  <p>Reisch: </p>
+                  <p>Wenn wir auf dem Standpunkt stehen, dass wir erst nach dem Friedensvertrag abzuliefern haben, so schließen wir </p>
+                  <p>daraus, dass wir bis zu diesem Moment frei verkaufen können.</p>
+                  <p>Antwortnote.</p>
+                  <p>Antwort an die Konferenz.</p>
+                  <p>Kommuniqué an die Presse.</p>
+                  <p><pb facs="krp-0182_s01-0008"/>2.</p>
+                  <p>Paltauf: </p>
+                  <p>Ramek ist der Ansicht, dass die gleitende Zulage den streikenden Beamten nicht ausgezahlt wird. In diese Richtung </p>
+                  <p>sind Weisungen ergangen vorbehaltlich weiterer Verfügungen.</p>
+                  <p>Paul: </p>
+                  <p>Ich habe die gleitende Zulage auszahlen lassen bis zum Moment des Streiks. Man darf sich nicht in ein Unrecht </p>
+                  <p>setzen. Es ist schon eine Einschränkung bis zum Streiktag. Wir haben nicht das Recht, etwas was bereits fällig ist, zurückzuhalten.</p>
+                  <p>Reisch: </p>
+                  <p>Die gleitende Zulage ist Ende des Monats fällig, das Gesetz wegen des 15. wird erst heute beschlossen. </p>
+                  <p>In der Dienstpragmatik ist vorgesehen, dass ihm pro rata temp[oris] das Gehalt nicht auszuzahlen ist.</p>
+                  <p>Paltauf: </p>
+                  <p>Weiters erbittet er sich den Schutz der Arbeitswilligen. Es ist kein Zweifel, dass Leute kommen werden und nur </p>
+                  <p>deshalb ausbleiben, weil sie sich nicht trauen. Der Staatssekretär möchte daher Weisungen erlassen, dass - [den] Eintritt der Streikenden in die Gerichtsräume </p>
+                  <p>zu verbieten und [sie] zum Verlassen des Gebäudes zu veranlassen, eventuell sie entfernen zu lassen. Er will sich auch an Polizeidirektion wenden, um die </p>
+                  <p>Mitwirkung der Polizei sicherzustellen. Auf dem Land ist anzunehmen, dass ein großer Teil kommen wird, da die Ländervertreter gegen den </p>
+                  <p>Streik gestimmt haben. Der Terror ist ein solcher, dass die Militäranwärter beim Strafgericht am Dienstantritt gehindert wurden. </p>
+                  <p>Es wurde ihnen gesagt, dass sie nicht in den Gerichtsdienst aufgenommen werden dürfen.</p>
+                  <p>Dann behält sich der Staatssekretär das disziplinäre Vorgehen vor. Er will jene Kanzleibeamten, welche aufgrund des </p>
+                  <p>Pensionsübergangsgesetzes [in den Ruhestand] versetzt werden sollten und nur wegen [ihrer] Unentbehrlichkeit behalten wurden, sofort in den Ruhestand versetzen.</p>
+                  <p>Anknüpfend an einen Bericht der Zeitungen, dass beschlossen wurde, es haben die Zugeständnisse aufrecht zu bleiben, [ist zu bemerken]: Sie stehen auf dem </p>
+                  <p>Standpunkt, dass damit der frühere Streik beendet wurde, die Zugeständnisse daher gehalten werden müssen. Der Staatssekretär steht auf dem Standpunkt, dass </p>
+                  <p>alles eine Einheit bildet und daher die Zugeständnisse gegenstandslos werden, wenn keine Vereinbarung zustande kommt.</p>
+                  <p>Endlich will er den Betrieb bei den Gerichten soweit als möglich aufrecht erhalten. In dieser Richtung hat sich ein Gegensatz mit der </p>
+                  <p>Richtervereinigung herausgestellt. Diese hat beschlossen, empfohlen, die zivilgerichtliche Tätigkeit bei allen Gerichten einzustellen. Das wäre eine </p>
+                  <p>so einschränkende Maßregel, [dass] der Staatssekretär glaubt, es nicht tun zu können, solange sich keine unbedingte Notwendigkeit </p>
+                  <p>dazu zeigt. Die Richtervereinigung bezeichnet den Streik als einen mutwilligen, die Richterschaft sagte sich von ihnen los und unterstützt </p>
+                  <p>ihre Forderung in keiner Weise mehr.</p>
+                  <p>Das wäre der Standpunkt des Staatssekretärs und die Vorkehrungen, welche er treffen will. Gleichzeitig soll ein Erlass an die Oberlandesgerichte </p>
+                  <p>gegeben werden, anknüpfend an die Direktive bei dem ersten Streik. Besonders hervorgehoben wird nur der Grund des Richterstandes, </p>
+                  <p>dass er fürchtet, syndikalisch verantwortlich gemacht zu werden. Wir haben vor, diese Bedenken zu zerstreuen und zu erklären, </p>
+                  <p>dass ein Richter niemals zum Schadenersatz wird herangezogen werden.</p>
+                  <p>Eisler: </p>
+                  <p>Ich glaube, dass die Anträge meistens selbstverständlich sind, nur wird es sich nicht empfehlen, vor jedem Gerichtsgebäude </p>
+                  <p>[...] zu führen. Ich würde es aber für notwendig halten, dass die Leiter des Streikkomitees nicht nur vom Staatsamt für Justiz, sondern [auch] </p>
+                  <p>vom Kanzler oder Vizekanzler belehrt werden. Sie sind nicht dazu zu bringen, die Kompetenzverteilung zwischen dem Kabinett und dem Staatsamt für Justiz </p>
+                  <p>zu verstehen. Sie glauben noch immer, dass [ihnen] durch die Vereinbarung mit dem Staatsamt für Justiz Rechte eingeräumt wurden, welche ihnen jetzt entzogen werden. </p>
+                  <p><pb facs="krp-0182_s01-0009"/>Sie wollen nicht glauben, dass der Kabinettsrat sie nicht ratifiziert hat. Es sollte ihnen das vom Kanzler oder Vizekanzler </p>
+                  <p>direkt gesagt werden. Es müsste ihnen gesagt werden, dass ihnen das - [vom] Staatsamt für Justiz nur die Vertretung der Ansprüche zugesagt wurde.</p>
+                  <p>Paltauf: </p>
+                  <p>Die Führer sind Leute vom Offizientenstand. Sie haben die anderen überstimmt.</p>
+                  <p>Renner: </p>
+                  <p>Bei der Bekämpfung des Streiks darf ein Moment nicht aus dem Auge verloren werden, die Gefahr von </p>
+                  <p>Sympathiestreiks. Es wird zu hoffen sein, dass die politischen Parteien mit den Leuten reden. Der Vizekanzler möge die </p>
+                  <p>Leute aufklären, dass wegen der Rückwirkungen auf die anderen nicht alles bewilligt werden konnte. Aber bei den Maßregeln </p>
+                  <p>zur Bekämpfung muss man trachten, dass man nicht eine Sympathiebewegung bei der Post oder der Postsparkasse, wo eine Frage </p>
+                  <p>hängt, bekommt. Deshalb kann die Sache nicht bloß aus dem Standpunkt des Justizressorts allein betrachtet werden. Einige Mittel </p>
+                  <p>scheinen ein bisschen drastisch zu sein.</p>
+                  <p>Eldersch: </p>
+                  <p>Wir sollten ein paar Tage sehen, welche Dimensionen der Streik annimmt, um sich über die Stimmung der </p>
+                  <p>Leute zu informieren. Ich wäre nicht dafür, die Gerichte unter Polizeischutz zu stellen. Wir wissen auch nicht, wie die Richter </p>
+                  <p>darauf reagieren werden. Sollte irgendeine Gewalt angewendet werden, so wird die Polizei einschreiten. Aber es ist besser, </p>
+                  <p>die anderen sich ins Unrecht setzen zu lassen, dass sie als erste Gewalt anwenden. Ich wäre auch nicht dafür, jetzt schon die Pensionierungen </p>
+                  <p>vorzunehmen. Das würde nur Öl ins Feuer gießen und die Gefahr von Sympathiestreiks geradezu heraufbeschwören.</p>
+                  <p>Die Gehaltsgewährung würde ihnen den Streik nur erleichtern.</p>
+                  <p>Deutsch: </p>
+                  <p>Man soll die Gegensätze nicht vergrößern, aber ich möchte schon sagen, dass [man] die Leute, welche besonders aggressiv sind, </p>
+                  <p>pensionieren soll. [Eldersch]: Wir lassen die drei Tage verstreichen. [Am] Mittwoch wären die drei Tage verstrichen, [am] Dienstag abend können </p>
+                  <p>wir darüber reden. Man müsste den Leuten den Auftrag geben, zur Arbeit zu erscheinen.</p>
+                  <p>Renner: </p>
+                  <p>Die Presse muss aufgeklärt werden, um welche Kleinigkeiten es sich eigentlich handelt. </p>
+                  <p>Bis am Montag, außer es geschieht Gewalt, muss man der Sache ihren Lauf lassen. Soll man den Standpunkt beziehen, dass auch </p>
+                  <p>die Zugeständnisse in Frage gestellt sind?</p>
+                  <p>Reisch: </p>
+                  <p>Den Leuten darf kein Zweifel gelassen werden, dass die - [von den] gesetzlichen Vorschriften über die Einstellung des Gehalts für [eine] Abwesenheit [von] </p>
+                  <p>über drei Tagen unbedingt Gebrauch gemacht wird. Kein Arbeiter wird für das Streiken bezahlt, es darf kein Privileg für die </p>
+                  <p>fix Besoldeten geschaffen werden, dass sie unter Bezahlung streiken dürfen.</p>
+                  <p>Eisler: </p>
+                  <p>Das vorige Mal sind die übrigen Staatsangestellten bereit gewesen, einen solchen Abzug zum Kriegsfall zu machen.</p>
+                  <p>Paul: </p>
+                  <p>Es ist ein großer Unterschied zwischen Arbeitern und Angestellten. Beim Arbeiter darf es nachträglich abgezogen werden. </p>
+                  <p>Wenn wir es abziehen, wird am 1. eine neue Aufregung entstehen und das Staatsamt wird sich der Auszahlung nicht entziehen [können].</p>
+                  <p><pb facs="krp-0182_s01-0010"/>Eldersch: </p>
+                  <p>Es soll bis Dienstag gewartet werden, ohne mit den Leuten zu sprechen. Bloß Fink soll </p>
+                  <p>ihnen den Kopf waschen. Es sollen keine Verhandlungen stattfinden, sondern ihnen zur Vernunft zugeredet werden.</p>
+                  <p>Renner: </p>
+                  <p>Es ist besser, es geschieht von Seite der Parteien statt von der Regierung. Die Hauptsache wäre, dass die Parteien </p>
+                  <p>einen Sympathiestreik verhüten. Es ist gut, dass man zunächst gar nichts macht, was einen Sympathiestreik </p>
+                  <p>auslösen könnte. Darüber, ob die Gerichte stillzusetzen sind - [das] wird das Staatsamt für Justiz selbst mit der Richtervereinigung ausmachen müssen. </p>
+                  <p>Soviel als möglich muss man aufrecht erhalten.</p>
+                  <p/>
+               </div>
+               <div n="2">
+                  <head>[KRP 182, 15. Mai 1920, Stenogramm Fenz]</head>
+                  <p><pb facs="krp-0182_s02-0001"/>182., 15. /5. '20.</p>
+                  <p>[Zugezogen:] Sektionschef Paltauf, </p>
+                  <p>Rappaport, </p>
+                  <p>Peter, Ippen, Schüller.</p>
+                  <p>Deutsch: Oberst Barrès hat eine Note übergeben, der Inhalt [ist] bekannt. </p>
+                  <p>Die Kommissionen, die hier sind, wollen jede Wegbringung von Kriegsmaterial hindern unter dem Titel, dass es Eigentum der Entente ist. </p>
+                  <p>Die Folge wäre die Einstellung der Tätigkeit der Sachdemobilisierung.</p>
+                  <p>[Ich habe erklärt]: Nach dem Friedensvertrag haben wir das Recht, über alles Kriegsmaterial zu verfügen bis der Vertrag in Kraft getreten ist. </p>
+                  <p>Oberst B[arrès] ist dem entgegengetreten. Ich habe [einen diesbezüglichen Befehl] abgelehnt bis zur Entscheidung der Gesamtregierung.</p>
+                  <p>Ich bin unter der Hand verständigt worden, wie die Überwachung geschehen soll. Weisung &lt; &gt; Aufgaben der Wachposten. Entscheidend ist der Punkt 1.</p>
+                  <p>Das Flugzeugmaterial wird im Friedensvertrag sehr genau von dem übrigen Material unterschieden. Sie wollen nicht allein das beschlagnahmen, was uns gehört, sondern auch </p>
+                  <p>das, was wir bereits Privaten gegeben haben. Nach ihrer Auffassung ist alles Kriegsmaterial. Es ist ein ungeheurer Komplex von Gütern, die von der </p>
+                  <p>Entente beschlagnahmt sind. Die Offiziere sind gedeckt durch einen Beschluss der Gesandtenkonferenz in Rom.</p>
+                  <p>Für uns ist die Aufgabe gestellt, wie wir diesen Schlag am besten paralysieren sollen. [<hi rend="#i">Einschub:</hi>] Die Rechtsgrundlage ist ganz klar. [<hi rend="#i">Einschub Ende</hi>] [Es ist] notwendig, ein Communiqué hinauszugeben. </p>
+                  <p>Das ist geschehen. Die Blätter haben dazu gar keine Stellung genommen, was sehr ungünstig ist. Das muss nachgeholt werden.</p>
+                  <p>1.) Große diplomatische Aktion, dass wir zugrunde gerichtet sind.</p>
+                  <p>2.) Aufruf der Öffentlichkeit, Pressefeldzug bei uns und im Ausland.</p>
+                  <p>Renner: Am Dienstag wird in der französischen Kammer der Friedensvertrag verhandelt werden, so dass Ende der Woche wahrscheinlich der Frieden ratifiziert ist. </p>
+                  <p>Wir werden also längstens 1-2 Wochen Zeit haben.</p>
+                  <p>Die Aktion erstreckt sich jetzt zunächst auf die Frage der Luftschifffahrt, ist aber präj[udizierend] auf die Heeresüberwachungskommission.</p>
+                  <p>Sie richtet sich 1.) hauptsächlich dagegen, dass wir zwischen Waffenstillstand und Friedensrat[ifikation] nicht berechtigt waren, zu verkaufen und wir wären also der Entente [gegenüber in einer] Schuldigkeit;</p>
+                  <p>2.) [gegen] die Sperrung des Materials.</p>
+                  <p>Es muss genau abgegrenzt sein, wozu wir zu liefern verpflichtet sind und wozu nicht. </p>
+                  <p>Bis zur Ratifikation sind wir gar nichts schuldig und können an nichts gehindert werden. Vom Moment des Friedensvertrages sind wir das und das zu liefern verpflichtet, und </p>
+                  <p>das und das nicht. Das muss abgegrenzt werden.</p>
+                  <p>Deutsch: Was wir haben dürfen für die Wehrmacht, ist genau im Friedensvertrag vorgeschrieben. Das übrige müssen wir abliefern und zwar binnen drei Monaten.</p>
+                  <p>Wir können aber auch die Sache so auslegen, dass wir während der drei Monate noch verkaufen dürfen und dann nach drei Monaten abliefern, was übrig bleibt. </p>
+                  <p>Es ist aber schon möglich, dass die Entente schon in der ersten Woche die Ablieferung verlangt. Dagegen könnte man sich wehren, wenn man die Vorräte so bald als möglich </p>
+                  <p><hi rend="#s">Es wäre zu erwägen, ob wir das, was wir als Überschuss haben, so bald als möglich</hi> -. aus dem Eigentum des Staates bringt.</p>
+                  <p>Renner: Der Anschlag bedeutet, dass von Montag, den 17. an die Sachdemobilisierung vollkommen gesperrt ist und dass jedes Wegbringen unmöglich ist ohne </p>
+                  <p>Zustimmung des Präses der Kommission. [Eldersch]: Das bezieht sich vorderhand nur auf die Luftfahrzeug-Materialien.</p>
+                  <p><pb facs="krp-0182_s02-0002"/>Deutsch: Bezüglich des Fliegermaterials heißt es im Artikel 148 'die sofortige Ablieferung mit Inkrafttreten des Friedens', </p>
+                  <p>während bezüglich des übrigen Materials eine Frist von drei Monaten gegeben ist.</p>
+                  <p>Artikel 144 sagt, dass Österreich kein Fliegermaterial als Bestandteil des Heeres besitzen [darf]. </p>
+                  <p>Wir haben infolgedessen das ganze Material bereits vor Monaten der Lufag gegeben. Wir haben bisher gesagt, das ist in privatem Besitz und braucht nicht </p>
+                  <p>ausgeliefert werden. Gemeint kann nur sein das, was Bestandteil des Heeres ist. Die Entente behauptet das Gegenteil.</p>
+                  <p>Grimm: Das ganze Fliegermaterial ist verkauft worden mit der Bedingung, dass es abgegeben wird zu einem Grundpreis [und] was darüber ist, [<hi rend="#i">Einschub:</hi>] [bekommen] aufgrund von Schätzungen [<hi rend="#i">Einschub Ende</hi>] nach einem bestimmten Schlüssel </p>
+                  <p>wir und die Lufag. Das Eigentum ist noch nicht übergegangen.</p>
+                  <p>Renner: Man müsste schauen, dass man jetzt noch möglichst viel ins [private] Eigentum überträgt.</p>
+                  <p>Ellenbogen: Es handelt sich auch noch um große Liegenschaften und Räumlichkeiten, z. B. Strebersdorf. Es wäre sehr gut, wenn bis </p>
+                  <p>zum Inkrafttreten noch die Gemeinde Wien Strebersdorf kaufen würde.</p>
+                  <p>Loewenfeld-Ruß: Die Entente hat gesagt, [<hi rend="#i">Einschub</hi>:] drei Monate [<hi rend="#i">Einschub Ende</hi>] nach der Ratifikation soll abgeliefert werden. Es kann doch nicht die Absicht der Entente gewesen sein, dass wir innerhalb </p>
+                  <p>dieser drei Monate verkaufen können, was wir wollen. Daraus geht hervor, dass wir doch nicht in den letzten acht Tagen noch alles verkaufen können.</p>
+                  <p>Deutsch: Zur Rechtsfrage.</p>
+                  <p>Bei [Artikel] 141 heißt es, die Seestreitkräfte sind sofort bei Unterzeichnung [des Waffenstillstandes] auszuliefern. Bei den anderen Materialien heißt es anders.</p>
+                  <p>Die Cap[itel] sind getrennt. Wo von Munition und Waffen die Rede ist, wird wie es scheint, die sehr schwierige Formel mit 'actuellement' und 'binnen drei Monaten' </p>
+                  <p>gewählt. Bei den Seestreitkräften [Artikel] 141.</p>
+                  <p>Daraus ergibt sich, dass man auch etwas anderes wollte bei den anderen Materialien und dass man den Wortlaut günstig auslegen kann. Ein Beweis ist ferner auch darin </p>
+                  <p>gelegen, dass wir bis zur Ratif[ikation] noch fabrizieren konnten ([Artikel] 147).</p>
+                  <p>Renner: Man muss die Verträge mit der Lufag anschauen (Deutsch). </p>
+                  <p>Im Moment der Ratifikation hört aber der gute Glaube beim Verkauf auf.</p>
+                  <p>Es sind zwei Sachen, die sofort geschehen [müssen]: 1.) Pressekampagne, 2.) diplomatische Aktion.</p>
+                  <p>Die Antwort muss sofort an die Botschafterkonferenz gehen. Diese Note muss unsere Rechtsauffassung darlegen und auf unsere Lebensnot hinweisen; ferner </p>
+                  <p>darauf, dass unsere ganze Industrie erschlagen ist.</p>
+                  <p><hi rend="#s">Die Regierung ist nicht imstande, diese Note zur Kenntnis zu nehmen.</hi></p>
+                  <p>Punkt 1 kann man nicht ablehnen. Die Überwachung könnte man annehmen wenn uns die Dispositionsfreiheit gewahrt bleibt. [Deutsch]: Und zwar in der Form, </p>
+                  <p>dass der General, [<hi rend="#i">Einschub:</hi>] der die Überwachung führt, [<hi rend="#i">Einschub Ende</hi>] der österreichischen Regierung das Visum nicht versagen darf.</p>
+                  <p>Punkt 2 kann akzeptiert werden, unter Vorbehalt des Eigentumsrechtes.</p>
+                  <p>Punkt 3 kann auch angenommen werden, unter dem Vorbehalt, dass das eine private Gesellschaft ist, die den Staat nichts mehr angeht; dass also hier </p>
+                  <p><pb facs="krp-0182_s02-0003"/>kein Gut vorliegt, das dem österreichischen Staat gehört.</p>
+                  <p>[Renner]: <hi rend="#s">Der Beschluss kann zur Kenntnis genommen werden</hi>.</p>
+                  <p>Vorbehaltlich <hi rend="#s">der Entscheidung über das Eigentum der zu überwachenden Gegenstände im</hi> - aller aus dem Friedensvertrag zu unseren Gunsten <hi rend="#s">bestehenden</hi> - erfließenden Rechte <hi rend="#s">und des Verfügungsrechtes</hi> - insbesondere des Eigentums- und Verfügungsrechtes über die Materialien im ganzen wie im einzelnen, nimmt der Kabinettsrat die Entscheidung </p>
+                  <p>der Botschafterkonferenz mit folgenden Bemerkungen zur Kenntnis.</p>
+                  <p>Zu Punkt 1: Die in Österreich bestehenden Kriegsmaterialdepots sind <hi rend="#s">entsprechend</hi> - nach später festzusetzenden </p>
+                  <p>Detailbestimmungen unter die Überwachung des Überwachungsausschusses zu setzen, jedoch in der Art, dass die Disposition der österreichischen Regierung [<hi rend="#i">Einschub:</hi>] oder der sonstigen Eigentümer [<hi rend="#i">Einschub Ende</hi>] über die </p>
+                  <p>Materialien <hi rend="#s">behufs Veräußerung</hi> - nicht <hi rend="#s">beeinträchtigt werden darf</hi> - behindert und </p>
+                  <p>insbesondere die [<hi rend="#i">Einschub:</hi>] industrielle [<hi rend="#i">Einschub Ende</hi>] Verwertung der Materialien als [Einschub:] Roh- oder [<hi rend="#i">Einschub Ende</hi>] Hilfsstoffe für die Friedensproduktion nicht <hi rend="#s">gestört</hi> - beeinträchtigt werden darf.</p>
+                  <p>Zu Punkt 2 ist nichts zu bemerken.</p>
+                  <p>Zu Punkt 3: Gegen die Untersuchung <hi rend="#s">durch den Präses des int[erallierten] Luftschifffahrts-Überwachungsausschusses bezüglich</hi> - der Verkäufe oder der </p>
+                  <p>Ausfuhr von Fliegermaterial <hi rend="#s">durch das Syndikat W[esten]-Sieber oder andere Personen und Organisationen wird kein </hi></p>
+                  <p><hi rend="#s">Einwand erhoben, doch festgestellt, dass diese Firma eine private</hi> - durch den Präses des int[erallierten] Luftschifffahrts-Überwachungsausschusses – </p>
+                  <p><hi rend="#s">soweit im Rahmen unserer Gesetzgebung dem Staat die Überwachung privater Unternehmungen zu-.</hi></p>
+                  <p>[Deutsch]: - hat die österreichische Staatsregierung nichts einzuwenden, jedoch nur insoweit, als dem Staat im Rahmen unserer Gesetzgebung das Recht der Untersuchung oder </p>
+                  <p>Überwachung privater Unternehmungen zusteht.</p>
+                  <p>[Reisch]: Zu Punkt 3: Gegen die Untersuchung der Verkäufe oder der Ausfuhr von Fliegermaterial durch den Präses des int[eralliierten] </p>
+                  <p>Luftschifff[ahrts]-Überwachungsausschusses hat die österreichische Staatsregierung selbstverständlich keine Einwendung, soweit das Gebaren von staatlichen Stellen in Betracht </p>
+                  <p>kommt. Was jedoch die Untersuchung oder Überwachung privater Unternehmungen betrifft, kann ein solches Recht der Entente aus dem Friedensvertrag nicht </p>
+                  <p>abgeleitet werden. Jedoch erklärt sich die Staatsregierung bereit<hi rend="#s">, im Rahmen unserer Gesetzgebung alle gewünschten Auskünfte zu erteilen und Ermittlungen zu pflegen</hi> – </p>
+                  <p>alle Ermittlungen zu pflegen und Auskünfte zu erteilen, soweit <hi rend="#s">dies der Regierung im Rahmen unserer Gesetze möglich ist</hi> - unsere Gesetze dies </p>
+                  <p>der österreichischen Regierung ermöglichen.</p>
+                  <p><pb facs="krp-0182_s02-0004"/>[Renner]: Bereit, alle von den Friedensverträgen irgendwie betroffenen Materialien unter die Überwachung der Kommission zu stellen, muss die österreichische Staatsregierung </p>
+                  <p>im Interesse der Aufrechterhaltung <hi rend="#s">der Produktion</hi> – [<hi rend="#i">Einschub:</hi>] des gesamten Wirtschaftslebens, das sonst stillgelegt zu werden droht, und vor allem im Interesse der Aufrechterhaltung unserer Volksernährung erwarten, [<hi rend="#i">Einschub Ende</hi>] dass der industrielle Arbeitsprozess durch die Überwachung nicht gestört </p>
+                  <p>und die Verfügung über alle Roh- und Hilfsstoffe nicht gehemmt wird.</p>
+                  <p>Geheim.</p>
+                  <p>Deutsch: Das Handels- und Gewerbeamt müsste im Einvernehmen mit dem Staatsamt für Finanzen und [dem Staatsamt für] Äußeres [<hi rend="#i">Einschub:</hi>] in den nächsten acht Tagen [<hi rend="#i">Einschub Ende</hi>] alles vorkehren, um das Eigentumsrecht an Kriegsmaterial </p>
+                  <p>so zu gestalten, dass der Staat nicht mehr als Eigentümer erscheint.</p>
+                  <p>"die Sachdemobilisierung tunlichst zu beschleunigen und schwebende Verhandlungen sofort - ohne Verzug zum Abschluss zu bringen."</p>
+                  <p>[Renner]: Das Außenamt muss im Einvernehmen mit [den Staatsämtern für] Handel und Heer[wesen] eine Note richten, die zum Ausgang den Schritt [der Botschafterkonferenz] nimmt.</p>
+                  <p>Die Botschafterkonferenz hat, wie uns durch die Note vom ... mitgeteilt wird, folgenden Beschluss gefasst [...].</p>
+                  <p>Ein wesentlicher Teil muss die Klärung der Rechtslage sein, wie sie Deutsch dargelegt hat.</p>
+                  <p>Deutsch: 1.) Note und dipl[omatische] Aktion.</p>
+                  <p>2.) Verkäufe beschleunigen.</p>
+                  <p>3.) Presse - Interviews der Staatssekretäre.</p>
+                  <p>Deutsch: Das Komitee soll auch den Beschluss redigieren.</p>
+                  <p><pb facs="krp-0182_s02-0005"/>Paltauf: </p>
+                  <p>Streik, intakt ist nur das <hi rend="#s">Gerichtshof</hi> - Grundbuch.</p>
+                  <p><hi rend="#s">Die Vertreter der Länder</hi> -. Einzelne Punkte nicht konzediert [worden], sie wollen alle Forderungen erfüllt. </p>
+                  <p>Übelste Zeiten.</p>
+                  <p>Ramek ist der Anschauung, dass dieser Streik jetzt durchzufechten ist und keine Verhandlungen einzutreten [haben]. Ferner [will er] die gleitende Zulage nicht auszahlen an die </p>
+                  <p>Streikenden.</p>
+                  <p>Paul: Ich habe bis zum Streiktag pro rata temporis <hi rend="#s">ausz</hi>- - die gleitende Zulage auszahlen zu lassen, weil wir etwas Fälliges </p>
+                  <p>nicht zurückhalten können.</p>
+                  <p>Reisch: Nach dem bisherigen Gesetz war die gleitende Zulage am Ende des Monats auszubezahlen. Die Bestimmung vom 15. wird erst heute </p>
+                  <p>in Kraft treten. Es gibt auch keine Auszahlung pro rata temporis.</p>
+                  <p>Paltauf: Wichtig ist, dass man die Arbeitswilligen schützt. Ramek möchte daher die Weisung geben, dass das Eindringen </p>
+                  <p>der Streikenden in die Gerichtsgebäude verboten wird, eventuell mit Gewalt durch die Polizei. Wenn man die Leute nicht schützt, so </p>
+                  <p>kann man den Erfolg nicht gewärtigen.</p>
+                  <p>Ramek behält sich das disziplinäre Vorgehen vor. Darüber kann man nicht absprechen. </p>
+                  <p>Er beabsichtigt, alle Kanzleibeamten, welche aufgrund des PBG als unentbehrlich behalten wurden, in Pension zu schicken.</p>
+                  <p>Ramek steht auf dem Standpunkt, dass das ganze ein Block ist [und daher], wenn es zu einem Einverständnis nicht kommt, die Zugeständnisse jetzt </p>
+                  <p>hinfällig geworden sind. </p>
+                  <p>Ramek möchte den Betrieb soweit es möglich ist, aufrecht erhalten. Darin besteht ein Gegensatz mit der Richtervereinigung. Sie hat beschlossen, </p>
+                  <p>zu empfehlen, die Zivilgerichtsbarkeit überall einzustellen. Ramek möchte das erst tun, wenn sich die unbedingte Notwendigkeit ergibt. </p>
+                  <p>Die Richtervereinigung will sich im übrigen von der Kanzleibeamtenschaft vollkommen lossagen, weil Mutwilligkeit bei den großen Zugeständnissen.</p>
+                  <p>Den Richtern soll in einem Erlass an die Oberlandesgerichtspräsidenten bedeutet werden, dass Syndik[...] nicht zur Anwendung kommen werden.</p>
+                  <p>Eisler: Vielleicht [wäre es] nicht notwendig, [ein] Polizeiaufgebot zu machen vor jedem Gerichtsgebäude.</p>
+                  <p>Es wäre sehr gut, wenn den Leuten vom Kanzler oder Vizekanzler gesagt wird, dass ihnen vom Staatsamt für Justiz nichts anderes zugesagt werden konnte, als dass </p>
+                  <p>ihre Forderungen vor dem Kabinettsrat vertreten werden. Es muss ihnen gesagt werden, wohin das führt, wenn sie nicht schleunigst zur Arbeit zurückkehren.</p>
+                  <p>Renner: Bei der ganzen Bekämpfung ist ein Moment nicht außer Acht zu lassen, die Gefahr von Sympathiebewegungen. Es müssen daher einerseits die </p>
+                  <p>politischen Parteien mit den Leuten reden; bei den Maßregeln zur Bekämpfung muss man [andererseits darauf] achten, dass man nicht eine Sympathiebewegung der Post [...] </p>
+                  <p>oder bei der Postsparkasse bekommt, wo gerade eine Frage pendent ist. Einzelne Mittel scheinen mir zu drastisch, z. B. die Pensionierung.</p>
+                  <p><pb facs="krp-0182_s02-0006"/>Eldersch: Man soll noch einige Tage warten, wie sich der Streik entwickelt. Ich wäre gegen die Blockierung der Gerichte mit Polizei. </p>
+                  <p>Man weiß auch nicht, wie das auf die Richter wirken wird. Wenn irgendwo etwas geschieht, so wird man die Polizei rufen müssen. Aber man soll nicht von </p>
+                  <p>Haus aus die Sache so anlegen, dass es gleich zu starken Differenzen kommt. Ich bin auch nicht dafür, dass jetzt gleich mit den Pensionierungen vorgegangen wird. </p>
+                  <p>Sonst würde man die Sympathiebewegungen heraufbeschwören. Was die Gehaltsfrage betrifft, so bin ich einverstanden, dass man nicht auszahlt.</p>
+                  <p>Deutsch: Ich bin auch [dafür], dass man die Sache auslaufen lässt. Andererseits bin ich doch dafür, dass man die Leute, welche gewalttätig vorgehen, pensioniert.</p>
+                  <p>Eldersch: Man muss die drei Tage der Dienstpragmatik abwarten. Die laufen am Mittwoch ab.</p>
+                  <p>Renner: Die Presse muss aufgeklärt [werden], um welche Lappalien es sich handelt.</p>
+                  <p>Reisch: Ich möchte nur, dass den Leuten kein Zweifel darüber gelassen wird, dass diejenigen, die drei Tage unentschuldigt vom Amt weg bleiben – </p>
+                  <p>dass von dieser gesetzlichen Vorschreibung diesmal unnachsichtlich Gebrauch gemacht werden wird. Das letzte Mal ist das nicht geschehen, [das war eine] schwere Gesetzesübertretung der Staatsregierung.</p>
+                  <p>Eisler: Das letzte Mal hat die Zentralvertretung diesen Fall als Kriegsfall erklärt.</p>
+                  <p>Paul: Wenn wir das jetzt tun, so wird bei der nächsten Auszahlung am 1. verlangt werden, dass [es] doch ausgezahlt wird.</p>
+                  <p>Eldersch: Wir müssen bis Dienstag warten. Inzwischen soll der Vizekanzler mit den Führern sprechen.</p>
+                  <p>Renner: Es wäre besser, dass das von den politischen Parteien aus geschieht.</p>
+                  <p>Ob die Gerichte stillzusetzen sind oder nicht, darüber wird das Staatsamt für Justiz entscheiden müssen.</p>
+                  <p>¾ 1 Uhr.</p>
+                  <p/>
+               </div>
+               <div n="3">
+                  <head>[KRP 182, 15. Mai 1920, Stenogramm]</head>
+                  <p><pb facs="krp-0182_s03-0001"/>Renner, Fink, Ramek, Miklas, Paul, Hanusch, Tandler, Mayr, Loewenfeld, Eldersch, Eisler, Deutsch, Grimm, Rappaport, Reisch, Resch, Ellenbogen, Peter, Glöckel, Ippen, Schüller.</p>
+                  <p>Deutsch: </p>
+                  <p>1.) Große diplomatische Aktion, mit größtem Nachdruck auseinandersetzen, </p>
+                  <p>dass wir zugrunde gerichtet werden.</p>
+                  <p>2.) Die Öffentlichkeit muss aufgerufen werden, Pressefeldzug zu inszenieren.</p>
+                  <p>Renner: [Am] Dienstag [ist er in] der französischen Kammer, Ende der nächsten Woche [wird] der Friede ratifiziert.</p>
+                  <p>[Notwendig ist eine] scharfe Abgrenzung dessen, was wir abzuliefern haben.</p>
+                  <p>Renner: Soweit wir es im Eigentum haben, können wir zweifellos zur Abgabe </p>
+                  <p>gezwungen werden.</p>
+                  <p>Ellenbogen: Es sind noch einige große Liegenschaften und Räumlichkeiten (Strebersdorf).</p>
+                  <p>Der Vertreter der Daimler-Werke [hat mitgeteilt], die Kommission war bei ihm und hat erhoben die Motoren </p>
+                  <p>in den Kraftwagen usw.</p>
+                  <p>Renner: <hi rend="#s">Die Beschlüsse der Gesandtenkonferenz -. Vorbehaltlich der Entscheidung über das Eigentums- und Verfügungsrecht der </hi></p>
+                  <p><hi rend="#s">zu überwachenden Gegenstände im ganzen wie im einzelnen, nimmt [der Kabinettsrat] die Entscheidung </hi></p>
+                  <p><hi rend="#s">der Botschafterkonferenz mit folgenden Bemerkungen zur Kenntnis</hi>:</p>
+                  <p>Vorbehaltlich aller aus dem Friedensvertrag zu unseren Gunsten <hi rend="#s">bestehenden</hi> - erfließenden Rechte, </p>
+                  <p>insbesondere des Eigentums- und Verfügungsrechtes über die Materialien im ganzen und im einzelnen, </p>
+                  <p>nimmt die Staatsregierung die Entscheidung der Botschafterkonferenz zur Kenntnis mit folgenden </p>
+                  <p>Bemerkungen:1.) Die in Österreich bestehenden Kriegsmaterialdepots sind </p>
+                  <p><hi rend="#s">entsprechend</hi> - nach später festzusetzenden Detailbestimmungen unter die Überwachung des Überwachungsausschusses </p>
+                  <p>zu setzen, jedoch in der Art, dass die Disposition der deutschösterreichischen Regierung oder der sonstigen Eigentümer über die Materialien </p>
+                  <p><hi rend="#s">behufs</hi> - nicht beeinträchtigt werden darf und insbesondere die industrielle Verwertung der Materialien als Roh- oder Hilfsstoffe </p>
+                  <p>für die Friedensproduktion <hi rend="#s">nicht behindert werden darf</hi>.</p>
+                  <p>2.) -.</p>
+                  <p>3.) <hi rend="#s">Gegen die</hi> Untersuchung durch den Präses des inter[allierten] Luftschifffahrts-Überwachungsausschusses </p>
+                  <p>bezüglich der Verkäufe oder der Ausfuhr von Fliegermaterial <hi rend="#s">durch das Syndikat Westen oder sonstige O</hi></p>
+                  <p><hi rend="#s">rganisationen wird kein Einwand erhoben, doch festgestellt, dass diese Firma eine private -.</hi></p>
+                  <p>[Deutsch]: &lt; &gt; hat die Staatsregierung nichts einzuwenden, jedoch nur insoweit, als dem Staat im Rahmen </p>
+                  <p>unserer Gesetzgebung das Recht der Untersuchung oder Überwachung privater Unternehmungen zusteht.</p>
+                  <p>[Reisch]: Was jedoch die Untersuchung ... [betrifft], kann ein solches Recht der Entente aus dem Friedensvertrag nicht abgehalten - [abgeleitet] werden. Jedoch </p>
+                  <p>erklärt sich die Staatsregierung bereit, im Rahmen unserer Gesetzgebung alle gewünschten Auskünfte zu erteilen und Ermittlungen zu pflegen </p>
+                  <p>[<hi rend="#i">Linkes Untereck</hi>:] soweit dies der Regierung im Rahmen unserer Gesetze möglich ist.</p>
+                  <p>[<hi rend="#i">Linker Rand:</hi>][Renner]: Bereit, alle von dem Friedensvertrag irgendwie betroffenen Materialien unter die Bewachung </p>
+                  <p>der Kommission zu stellen, muss die österreichische Staatsregierung im Interesse der Aufrechterhaltung </p>
+                  <p>der Produktion erwarten, dass der industrielle Arbeitsprozess durch die Überwachung nicht gestört </p>
+                  <p>und die Verfügung über alle Roh- und Hilfsstoffe nicht gehemmt wird, da </p>
+                  <p>sonst -.</p>
+               </div>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

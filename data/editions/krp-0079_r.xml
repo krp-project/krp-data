@@ -1,0 +1,705 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href='http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:acdh="https://vocabs.acdh.oeaw.ac.at/schema#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xml:lang="de">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="a" type="main" n="0079">Kabinettsprotokoll Nr. 79 vom 13. Juni 1919</title>
+            <title level="m" type="main" n="01">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <title level="m" type="sub" n="">Renner II (15. März – 17. Oktober 1919)</title>
+            <meeting>
+               <placeName key="https://d-nb.info/gnd/4066009-6">Wien</placeName>
+               <orgName key="https://d-nb.info/gnd/5162749-8">Kabinettsrat</orgName>
+               <date when-iso="1919-06-13"/>
+            </meeting>
+            <editor>
+               <persName key="https://d-nb.info/gnd/122481836"
+                         role="hasCreator"
+                         xml:id="hwohnout">
+                  <forename>Helmut</forename>
+                  <surname>Wohnout</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</affiliation>
+               <idno type="ORCID">0000-0002-3864-9839</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/120789825"
+                         role="hasCreator"
+                         xml:id="tolechowski">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0003-3291-6876</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/131679384"
+                         role="hasCreator"
+                         xml:id="rlein">
+                  <forename>Richard</forename>
+                  <surname>Lein</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0002-7502-0503</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="aholzer">
+                  <forename>Anna</forename>
+                  <surname>Holzer</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0005-3560-3500</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="dsoelkner">
+                  <forename>Dominik</forename>
+                  <surname>Sölkner</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-9895-7212</idno>
+            </editor>
+            <editor>
+               <persName role="hasContributor" xml:id="ischotzko">
+                  <forename>Ina</forename>
+                  <surname>Schotzko</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-5210-3713</idno>
+            </editor>
+            <funder n="1">
+               <orgName key="https://d-nb.info/gnd/2054142-9" role="hasFunder">Österreichischer Wissenschaftsfonds FWF</orgName>
+               <idno type="project">PAT1495024</idno>
+               <title type="project">Die Protokolle des österreichischen Kabinettsrates 1919–1920</title>
+            </funder>
+            <respStmt>
+               <resp>Projektverantwortung</resp>
+               <orgName key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Projektleitung</resp>
+               <persName key="https://d-nb.info/gnd/120789825" role="hasPrincipalInvestigator">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+                  <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+                  <idno type="ORCID">0000-0003-3291-6876</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Nationaler Forschungspartner</resp>
+               <orgName key="https://d-nb.info/gnd/1123037736" role="hasEnabler">Austrian Centre for Digital Humanities</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Digitalisierung der gedruckten Quellen</resp>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>TEI-Datenmodellierung</resp>
+               <persName role="hasContributor" xml:id="tfruehwirth">
+                  <forename>Timo</forename>
+                  <surname>Frühwirth</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-3997-5193</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technische Supervision</resp>
+               <persName key="https://d-nb.info/gnd/1043833846"
+                         role="hasContributor"
+                         xml:id="pandorfer">
+                  <forename>Peter</forename>
+                  <surname>Andorfer</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-9575-9372</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technisches Consulting und Vorbereitung der Druckausgabe</resp>
+               <persName key="https://d-nb.info/gnd/13281899X"
+                         role="hasContributor"
+                         xml:id="skurz">
+                  <forename>Stephan</forename>
+                  <surname>Kurz</surname>
+                  <affiliation key="https://d-nb.info/gnd/1202798799">Institut für die Erforschung der Habsburgermonarchie und des Balkanraumes</affiliation>
+                  <idno type="ORCID">0000-0003-2546-2570</idno>
+               </persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher key="https://d-nb.info/gnd/1001454-8">Österreichische Akademie der Wissenschaften</publisher>
+            <date when="2028"/>
+            <availability status="free">
+               <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">Lizenziert unter CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/deed.de)</licence>
+            </availability>
+            <idno type="ISBN_Print"/>
+            <idno type="ISBN_Part_epub"/>
+            <idno type="ISBN_Digital"/>
+            <idno type="DOI"/>
+            <idno type="DOI_zenodo"/>
+            <idno type="ebook_ID"/>
+         </publicationStmt>
+         <seriesStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="m" type="main">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <respStmt>
+               <resp>Bearbeitung und Herausgeberschaft</resp>
+               <orgName key="https://d-nb.info/gnd/2024703-5">Universität Wien</orgName>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+         </seriesStmt>
+         <notesStmt>
+            <note>Diese TEI-XML-Datei ist Grundlage für eine Druckausgabe der Edition.</note>
+            <relatedItem>
+               <biblStruct>
+                  <monogr>
+                     <imprint>
+                        <pubPlace key="https://d-nb.info/gnd/4066009-6">Wien</pubPlace>
+                        <publisher key="https://d-nb.info/gnd/2068748-5">Verlag der Österreichischen Akademie der Wissenschaften</publisher>
+                        <date when="2029"/>
+                     </imprint>
+                     <extent/>
+                  </monogr>
+                  <note>
+              <idno/>
+              <ptr/>
+            </note>
+                  <citedRange/>
+               </biblStruct>
+            </relatedItem>
+         </notesStmt>
+         <sourceDesc>
+            <bibl>Quellbestand: AT-OeStA/AdR MRang MR 1Rep KRP Kabinettsratsprotokolle, 1918-1920 (Teilbestand)<ref target="https://www.archivinformationssystem.at/detail.aspx?id=5465">https://www.archivinformationssystem.at/detail.aspx?id=5465</ref>
+            </bibl>
+            <msDesc>
+               <msIdentifier>
+                  <institution key="https://d-nb.info/gnd/37748-X" role="hasOwner">AT-OeStA Österreichisches Staatsarchiv (Archiv (ÖStA))</institution>
+                  <repository key="https://d-nb.info/gnd/1601181-8">AT-OeStA/AdR Archiv der Republik, 1918- (Abteilung)</repository>
+                  <collection>AT-OeStA/AdR MRang MR 1Rep Ministerrat 1. Republik, 1918 - 1938 (Bestand)</collection>
+                  <idno>AT-OeStA_AdR-MRang-MR-1.-Rep.-KRP-079</idno>
+               </msIdentifier>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <abstract>
+            <p>
+          <!--to be generated-->
+        </p>
+         </abstract>
+      </profileDesc>
+      <encodingDesc>
+         <styleDefDecl scheme="css"/>
+         <tagsDecl>
+            <rendition xml:id="b" scheme="css">font-weight:bold;</rendition>
+            <rendition xml:id="su" scheme="css">vertical-align:super;font-size:.7em;</rendition>
+            <rendition xml:id="s" scheme="css">text-decoration:line-through;</rendition>
+            <rendition xml:id="u" scheme="css">text-decoration:underline;</rendition>
+            <rendition xml:id="ow" scheme="css">text-decoration:line-through;text-decoration-style:double;</rendition>
+            <rendition xml:id="r" scheme="css">display:block;text-align:right;</rendition>
+            <rendition xml:id="letterspaced" scheme="css">letter-spacing:0.15em;</rendition>
+            <rendition xml:id="i" scheme="css">font-style:italic;</rendition>
+         </tagsDecl>
+         <editorialDecl>
+            <hyphenation>
+               <p>
+            <!--to be added-->
+          </p>
+            </hyphenation>
+            <correction>
+               <p>
+            <!--to be added-->
+          </p>
+            </correction>
+            <normalization>
+               <p>
+            <!--to be added-->
+          </p>
+            </normalization>
+            <punctuation>
+               <p>
+            <!--to be added-->
+          </p>
+            </punctuation>
+            <stdVals>
+               <p>
+            <!--to be added-->
+          </p>
+            </stdVals>
+            <p>
+          <!--to be added-->
+        </p>
+         </editorialDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#tfruehwirth" when-iso="2026-10-13">TEIGarage output upconverted with upconvert.xsl</change>
+         <change who="#tfruehwirth" when-iso="2026-10-13">TEI header populated with generate_tei_templates.py</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface/>
+   </facsimile>
+   <text>
+      <body>
+         <div xml:id="doc-krp-0079.xml">
+            <head type="dokument">
+               <title type="num">79.<note type="footnote">Das Protokoll trägt den Vermerk <hi rend="#i">Vertraulich!</hi></note>
+               </title>
+               <title type="desc">
+                  <pb facs="krp-0079_r-0001"/>[Freitag] 1919-06-13</title>
+            </head>
+            <div type="dokumentkopf">
+               <div type="vorsitz">
+                  <head>Vorsitz:</head>
+                  <p>Fink</p>
+               </div>
+               <div type="anwesend">
+                  <head>Anwesend:</head>
+                  <p>Bauer, Bratusch, Ellenbogen, Glöckel, Hanusch, Loewenfeld-Russ, Miklas, Paul, Pflügl, Resch, Schumpeter, Stöckler, Tandler, Waiss, Zerdik</p>
+               </div>
+               <div type="zugezogen">
+                  <head>Zugezogen:</head>
+                  <p>[Braun], Ehrenfeld-Pop, Grimm, Pöschl</p>
+               </div>
+               <div type="schriftfuehrer">
+                  <head>Schriftführer:</head>
+                  <p>unbekannt</p>
+               </div>
+               <div type="dauer">
+                  <head>Dauer:</head>
+                  <p>15.00–18.00 Uhr</p>
+               </div>
+            </div>
+            <div type="komponenten">
+               <p>Reinschrift, Beilagen, Konzept, stenographische Mitschrift, Entwurf der Tagesordnung, diverse Zusätze</p>
+            </div>
+            <div type="beilagen">
+               <head>Beilagen:</head>
+               <list>
+                  <item><ref target="#krp-0079_top03">Zu TOP 3</ref>: <ref target="#krp-0079_b01">Entwurf des Kohlenlieferungsvertrags mit der tschechoslowakischen Republik</ref></item>
+                  <item><ref target="#krp-0079_top04">Zu TOP 4</ref>: <ref target="#krp-0079_b02">Runderlass des Staatsamtes für Handel und Gewerbe, Industrie und Bauten Pr.Z. 1903 über die Festsetzung der Amtsstunden in den Staatsämtern</ref></item>
+                  <item><ref target="#krp-0079_top05">Zu TOP 5</ref>: <ref target="#krp-0079_b03">Äußerung des Staatskanzlers zur Frage der Zulässigkeit der Ausübung von Nebenbeschäftigungen durch Staatsbeamte</ref></item>
+                  <item><ref target="#krp-0079_top07">Zu TOP 7</ref>: <ref target="#krp-0079_b04">Auszug für den Vortrag des Staatsamtes des Inneren zu Zl. 21.127/1919 wegen des Beschlusses des Niederösterreichischen Landtages auf Abänderung der Gemeindewahlordnung für Niederösterreich mit Ausnahme der Städte mit eigenem Statut</ref></item>
+                  <item><ref target="#krp-0079_top12">Zu TOP 12</ref>: <ref target="#krp-0079_b05">Antrag des Staatsamtes der Finanzen auf Aushilfen für Pensionsparteien</ref></item>
+                  <item><ref target="#krp-0079_top13">Zu TOP 13</ref>: <ref target="#krp-0079_b06">Antrag des Staatsamtes der Finanzen auf Teuerungszulagen für die Staatsangestellten</ref></item>
+                  <item><ref target="#krp-0079_top14">Zu TOP 14</ref>: <ref target="#krp-0079_b07">Kreditgewährung zum Wiederaufbau kriegszerstörter Tiroler Gebiete in Sexten und Innichen</ref></item>
+                  <item><ref target="#krp-0079_top15">Zu TOP 15</ref>: <ref target="#krp-0079_b08">Ansuchen des Oberbefehlshabers Feldmarschallleutnants Adolf Boog um Enthebung von seinem Dienstposten und um Versetzung in den Ruhestand</ref></item>
+               </list>
+            </div>
+            <div type="protokoll">
+               <pb facs="krp-0079_r-0002"/>
+               <div type="top" xml:id="krp-0079_top01">
+                  <head>
+                     <label>
+                        <num n="1">1.</num>
+                        <seg>Bestätigung der Wahl des Bürgermeisters der Landeshauptstadt Linz.</seg>
+                     </label>
+                  </head>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> erbittet namens des abwesenden Staatssekretärs für Inneres und Unterricht die Ermächtigung des Kabinettsrates, dem Präsidenten der Nationalversammlung den Antrag auf Bestätigung der Wahl des Buchdruc<pb facs="krp-0079_r-0003"/>kereileiters Josef Dametz zum Bürgermeister der Landeshauptstadt Linz unterbreiten zu dürfen.</p>
+                  <p>Der Kabinettsrat erteilt die erbetene Ermächtigung.</p>
+               </div>
+               <div type="top" xml:id="krp-0079_top02">
+                  <head>
+                     <label>
+                        <num n="2">2.</num>
+                        <seg>Forderungen der Post- und Eisenbahnbediensteten.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Paul</hi> berichtet in Ergänzung seiner in der letzten Kabinettsratssitzung gemachten Mitteilungen, die Postbediensteten hätten seither die Forderung erhoben, dass der bisher vierteljährig ausgezahlte Anschaffungsbeitrag in der gleichen Höhe monatlich flüssig gemacht werde. Dies würde einen Mehraufwand von 55 Millionen K erfordern. Die gleiche Forderung hätten nunmehr auch die Eisenbahnbediensteten gestellt, was hinwiederum einen Mehraufwand von 93 Millionen K bedeuten würde.</p>
+                  <p>Der sprechende Staatssekretär ersucht die Kabinettsmitglieder bei sich darbietender Gelegenheit auf die in Frage kommenden Organisationen dahin einzuwirken, damit sie von den erwähnten, gänzlich unerfüllbaren Forderungen Abstand nehmen.</p>
+                  <p><pb facs="krp-0079_r-0004"/></p>
+               </div>
+               <div type="top" xml:id="krp-0079_top03">
+                  <head>
+                     <label>
+                        <num n="3">3.</num>
+                        <seg>Kohlenvertrag mit der tschechoslowakischen Republik.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Ing. <hi rend="#letterspaced">Zerdik</hi> teilt mit, dass in den letzten Tagen in Prag von den Vertretern der deutschösterreichischen und der tschechoslowakischen Regierung unter Mitwirkung des Vertreters der amerikanischen Mission, Hutchinson, der Entwurf eines Vertrages über die Lieferung von Kohle aus der tschechoslowakischen Republik nach Deutschösterreich für die Zeit nach Ablauf des am 11. Dezember 1918 abgeschlossenen Vertrages, d. i. ab 12. Juni d. J., vereinbart wurde. Zu diesem Vertragsentwurfe haben die tschechoslowakischen Vertreter nachträglich eine Reihe von Vorbehalten und Bemerkungen gemacht, auf welche die Vertreter der deutschösterreichischen Regierung nicht eingehen zu können erklärten. Es werde nunmehr der Versuch gemacht werden, durch Vermittlung des Vertreters der amerikanischen Mission zu erreichen, dass der Vertrag im Sinne des vereinbarten Entwurfes abgeschlossen werde.</p>
+                  <p>Der Kabinettsrat nimmt diese Mitteilungen zur Kenntnis.</p>
+                  <p><pb facs="krp-0079_r-0005"/></p>
+               </div>
+               <div type="top" xml:id="krp-0079_top04">
+                  <head>
+                     <label>
+                        <num n="4">4.</num>
+                        <seg>Festsetzung der Amtsstunden in den Staatsämtern.</seg>
+                     </label>
+                  </head>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> gibt bekannt, dass der Zentralangestelltenrat bei den Staatsämtern die Einführung der Amtsstunden von 8–2 Uhr anstrebe. In der hierüber abgeführten Debatte wurde festgestellt, dass es sich im Wesen um eine Verlegung der bisherigen Amtsstunden von 9–3 Uhr auf die Zeit von 8–2 Uhr handle und dass in einigen Staatsämtern der vorgebrachten Bitte bereits entsprochen wurde. Gegen die von mehreren Staatssekretären im Sinne des Begehrens getroffenen Verfügungen wird keine Einwendung erhoben, dagegen mit Rücksicht auf die Verschiedenheit der in den einzelnen Ämtern sich ergebenden dienstlichen Erfordernisse von einer einheitlichen Regelung abgesehen.</p>
+               </div>
+               <div type="top" xml:id="krp-0079_top05">
+                  <head>
+                     <label>
+                        <num n="5">5.</num>
+                        <seg>Zulässigkeit der Herausgabe einer Tageszeitung durch einen Staatsbeamten.</seg>
+                     </label>
+                  </head>
+                  <p>Der Vorsitzende bringt die in der letzten Sitzung des Kabinettsrates der Staatskanzlei im Gegenstande aufgetragene Äußerung, welche dem vorliegenden Protokolle als Beilage angeschlossen ist, zur Kenntnis.</p>
+                  <p>In der sich hierüber entwickelnden Debatte, an welcher sich die Staatssekretäre Dr. <hi rend="#letterspaced">Bauer</hi>, <hi rend="#letterspaced">Hanusch</hi> <pb facs="krp-0079_r-0006"/>und Dr. <hi rend="#letterspaced">Bratusch</hi> beteiligten, tritt die Auffassung zutage, dass gegen eine Beteiligung eines Staatsbeamten an der Herausgabe einer Tageszeitung unter der Voraussetzung kein Bedenken zu erheben wäre, dass diese Funktion der Öffentlichkeit gegenüber nicht in die Erscheinung trete. Staatssekretär Hanusch wird eingeladen, den Ministerialsekretär Dr. Hugelmann in diesem Sinne zu verbescheiden. Für den Fall, dass eine Regelung der Angelegenheit auf diese Weise nicht zu erzielen wäre, behält sich der Kabinettsrat die weitere Schlussfassung vor.</p>
+               </div>
+               <div type="top" xml:id="krp-0079_top06">
+                  <head>
+                     <label>
+                        <num n="6">6.</num>
+                        <seg>Umwandlung der Exportakademie in Wien in eine Hochschule für Welthandel.</seg>
+                     </label>
+                  </head>
+                  <p>Unterstaatssekretär <hi rend="#letterspaced">Glöckel</hi> kommt auf den vom Kabinettsrate in der Sitzung vom 2. Juni d. J. gefassten Beschluss zurück, wonach die Exportakademie in Wien in eine Hochschule für Welthandel umzuwandeln ist. Dem gefassten Beschlusse könne er nur unter der ausdrücklichen Verwahrung zustimmen, dass die Hochschule für Welthandel der Kompetenz des Unterrichtsamtes unterstellt werde.</p>
+                  <p>Demgegenüber bemerkt Staatssekretär Ing. <hi rend="#letterspaced">Zerdik</hi>, dass in der <pb facs="krp-0079_r-0007"/>erwähnten Kabinettsratssitzung die Frage der Kompetenz überhaupt nicht berührt und dieser Frage daher nicht präjudiziert worden sei. Er müsse allerdings daran festhalten, dass die Verwaltung der Hochschule für Welthandel beim Handelsamte verbleibe.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Bauer</hi> bringt bei diesem Anlasse zur Kenntnis, dass es sich empfehlen dürfte, in diesem Zusammenhange auch die Frage des Weiterbestandes der Konsularakademie zu regeln, welche Anstalt seiner Anschauung nach, – soferne sie nicht im Falle des Anschlusses an Deutschland vom Deutschen Reiche übernommen würde – in die Hochschule für Welthandel einzugliedern wäre.</p>
+                  <p>Der Kabinettsrat gelangt zur Auffassung, dass die strittige Kompetenzfrage gelegentlich der parlamentarischen Beratungen des über die Errichtung der Hochschule für Welthandel einzubringenden Gesetzentwurfes zu lösen sein werde und dass im Übrigen die weitere Behandlung der Angelegenheit im steten Einvernehmen zwischen den Staatsämtern für Handel und Gewerbe, Industrie und Bauten, für Inneres und Unterricht und für Äußeres zu erfolgen hätte.</p>
+                  <p><pb facs="krp-0079_r-0008"/></p>
+               </div>
+               <div type="top" xml:id="krp-0079_top07">
+                  <head>
+                     <label>
+                        <num n="7">7.</num>
+                        <seg>Gesetzesbeschluss des Niederösterreichischen Landtages, betreffend die Abänderung der Gemeindewahlordnung für Niederösterreich mit Ausnahme der Städte mit eigenem Statut.</seg>
+                     </label>
+                  </head>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> teilt namens des abwesenden Staatssekretärs für Inneres und Unterricht mit, dass der Niederösterreichische Landtag den Entwurf eines Gesetzes, betreffend die Abänderung der Gemeindewahlordnung für Niederösterreich mit Ausnahme der Städte mit eigenem Statut beschlossen habe.</p>
+                  <p>Der Entwurf sieht eine Erhöhung der Zahl der Mitglieder der Gemeinderäte vor und erstreckt für die im Zuge befindlichen Neuwahlen in die Gemeindevertretungen, die am 22. Juni stattfinden sollen, die Fristen für die Einbringung der Wahlvorschläge und der Ergänzungsvorschläge sowie die Frist für die Abschließung der Parteilisten.</p>
+                  <p>Der sprechende Vizekanzler erbittet und erhält die Ermächtigung des Kabinettsrates, dass von der Erhebung einer Vorstellung gegen diesen Gesetzesbeschluss abgesehen und die Landesregierung hievon mit dem Bemerken verständigt werde, dass der sofortigen Kundmachung dieses Landesgesetzes seitens der Staatsregierung zugestimmt wird. </p>
+                  <p><pb facs="krp-0079_r-0009"/></p>
+               </div>
+               <div type="top" xml:id="krp-0079_top08">
+                  <head>
+                     <label>
+                        <num n="8">8.</num>
+                        <seg>Warenaustauschübereinkommen mit Ungarn.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Ing. <hi rend="#letterspaced">Zerdik</hi> berichtet über ein zwischen dem deutschösterreichischen und dem ungarischen Warenverkehrsbüro zustandegekommenes Warenaustauschübereinkommen. Hienach hätte Deutschösterreich zu liefern: 48 Waggons Rotationsdruckpapier, diverse Chemikalien im Fakturenbetrage von 2.800.000 K, Arzneimittel im Fakturenbetrage von 200.000 K und fertige Herren- und Kinderkleider im Fakturenbetrage von 900.000 K. Ungarischerseits wäre zu liefern: 30.000 kg Schafwolle, fünf Waggons Braumalz und 1.000 Waggons Zement. Einer besonderen Vertragsbestimmung zufolge hätte die ungarische Räteregierung neuerlich das Eigentum der ehemaligen österreichischen Rennstallbesitzer auf ihre derzeit in Ungarn befindlichen Vollblut- und Traberpferde anzuerkennen und sich bereit zu erklären, diese sowie die in Ungarn befindlichen Pferde der ehemaligen österreichischen Staatspferdezuchtanstalten bis 30. Juni d. J. auf deutschösterreichisches unbesetztes Gebiet zu bringen. Die deutschösterreichische Regierung hätte der ungarischen Räterepublik die Bewilligung zu erteilen, 16 Millionen K <pb facs="krp-0079_r-0010"/>ungestempelte Noten der Oesterreichisch-ungarischen Bank nach Deutschösterreich zur Bezahlung von Industrieartikeln einzuführen.</p>
+                  <p>Der sprechende Staatssekretär beantrage die Ratifizierung dieses Übereinkommens.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Bauer</hi> bemerkt hiezu, die interalliierte Wirtschaftskommission habe dem Staatsamt für Äußeres zur Kenntnis gebracht, dass sie die Ausfuhr sämtlicher Waren nach Ungarn verbiete. Er habe diesen Beschluss als dem Waffenstillstandsvertrage nicht entsprechend, nicht zur Kenntnis genommen und diesfalls Verhandlungen eingeleitet, die jedoch noch nicht zum Abschluss gelangt seien. Redner beantrage daher, der ungarischen Regierung mitzuteilen, dass die Ratifizierung des Warenaustauschübereinkommens mit dem Vorbehalt erfolge, dass wir nicht seitens der Entente gezwungen werden, die Lieferungen einzustellen.</p>
+                  <p>Der Kabinettsrat beschließt in diesem Sinne.</p>
+                  <p><pb facs="krp-0079_r-0011"/></p>
+               </div>
+               <div type="top" xml:id="krp-0079_top09">
+                  <head>
+                     <label>
+                        <num n="9">9.</num>
+                        <seg>Aufhebung der Safesperre.</seg>
+                     </label>
+                  </head>
+                  <p>Über eine Anfrage des Staatssekretärs Dr. <hi rend="#letterspaced">Schumpeter</hi> gibt der Kabinettsrat der Anschauung Ausdruck, dass es aus außerpolitischen wie aus innerpolitischen Gründen keinesfalls zweckmäßig erschiene, im gegenwärtigen Zeitpunkte die Safesperre aufzuheben.</p>
+               </div>
+               <div type="top" xml:id="krp-0079_top10">
+                  <head>
+                     <label>
+                        <num n="10">10.</num>
+                        <seg>Stellungnahme der Regierung zu den Forderungen der liquidierenden militärischen Organe.</seg>
+                     </label>
+                  </head>
+                  <p>Anschließend an die einleitenden Worte des Sektionschefs Dr. <hi rend="#letterspaced">Grimm</hi> berichtet Generalliquidierungskommissär Sektionschef Dr. <hi rend="#letterspaced">Pöschl</hi> über die Verhandlungen, die über das Memorandum der liquidierenden militärischen Organe bei der Internationalen Liquidierungskommission gepflogen wurden. Er bemerkt, diesen Bericht in zwei Gruppen teilen zu wollen. Die erste umfasse die Verhandlungen bis zu dem Stadium, welches durch den gestrigen Beschluss der Internationalen Liquidierungskonmission, zunächst auf die erst künftig zu treffende Regelung der Bezugsaufbesserungen einen Vorschuss zu gewähren, begrenzt ist, während die zweite Gruppe sich mit den noch bevorstehenden Verhandlungen wegen dieser künftigen Regelung befassen solle.</p>
+                  <p><pb facs="krp-0079_r-0012"/>A</p>
+                  <p>Sektionschef Dr. Pöschl bespricht die Geschichte des Memorandums, das von dem Aktionskommitte bei der Internationalen Liquidierungskommission überreicht wurde, die wegen Nichterfüllung seiner Forderungen nach Verstreichen des zuletzt auf den 2. Juni 1919 gestellt gewesenen Erledigungstermines entstandene tiefe Erregung, die besonders in der Massenversammlung im Hofe der Stiftskaserne am 4. Juni stürmischen Ausdruck gefunden und sich ganz zu Unrecht gegen den deutschösterreichischen Vertreter in der Internationalen Liquidierungskommission und die deutschösterreichische Regierung gerichtet habe. Die von der Internationalen Liquidierungskommission gegebene Zusage einer Erledigung des Memorandums bis längstens 23. Juni habe keine Beruhigung gebracht und die sogenannte passive Resistenz, in Wirklichkeit sehr aktive Gewaltsamkeiten, haben am 5. Juni eingesetzt. Aufgrund der von Seite der liquidierenden militärischen Zentralstellen beschafften Nachweisungen sowie aufgrund der vom Leiter des liquidierenden Kriegsministeriums, Minister a. D. Homann, angebahnten <pb facs="krp-0079_r-0013"/>Ausgleichsverhandlungen habe die Internationale Liquidierungskommission am 12. Juni eine vorschussweise Zuwendung an die liquidierenden militärischen Organe in folgender Form beschlossen:</p>
+                  <list>
+                     <item n="1"><label>1.)</label> Aufgrund des vom Aktionskomitee der bei den liquidierenden militärischen Stellen in Deutschösterreich beschäftigten Angestellten vorgelegten Memorandums wird zunächst, bis zur endgiltigen Schlussfassung der Kommission über das Memorandum sämtlichen in Wien und Niederösterreich tätigen liquidierenden Organen mit Ausnahme der Vertragsbeamten, die monatlich mindestens 1.000 K erhalten, und der Arbeiter und Arbeiterinnen ein Vorschuss auf die noch zu regelnden Gebührenerhöhungen im Ausmaße von 300 K (dreihundert Kronen) bewilligt. Die außerhalb Niederösterreichs beschäftigten liquidierenden Angestellten erhalten mit den gleichen Ausnahmen wie oben einen solchen Vorschuss im Betrage von 225 K (zweihundertfünfundzwanzig Kronen).</item>
+                     <item n="2"><label>2.)</label> Den im Dienste der Liquidierung tätigen Arbeitern und Arbeiterinnen werden mit Rückwirkung vom 1. Mai l. J. die gewerkschaftlichen Löhne der gleichen Branche, und wo solche nicht existieren, die ortsüblichen Löhne bewil<pb facs="krp-0079_r-0014"/>ligt.</item>
+                  </list>
+                  <p>Die zu gewährenden Vorschüsse, bzw. Aufbesserungen für die Arbeiter und Arbeiterinnen sind nur insoweit aus der Liquidationsmasse flüssig zu machen, als es sich um Personen handelt, die bei den liquidierenden militärischen Zentralstellen tätig sind. Die an die übrigen auf dem Gebiete Deutschösterreichs beschäftigten liquidierenden Organe zu gewährenden Zuwendungen sind vorläufig von Deutschösterreich als Territorialstaat flüssig zu machen.</p>
+                  <p>Die Regelung der Frage, in welcher Höhe der Rückersatz dieser grundsätzlich als Liquidationsaufwand anerkannten Auslagen aus der Liquidationsmasse mit Rücksicht auf die Anzahl des bei der Liquidierung beschäftigten Personals zu erfolgen haben wird, bleibt grundsätzlichen Vereinbarungen vorbehalten.</p>
+                  <p>Der einmalige Mehraufwand aus der vorschussweisen Zuwendung ad I.</p>
+                  <p>beträgt	..6.055.200 K,</p>
+                  <p>wovon jedoch	 4.466.100 K</p>
+                  <p>vorerst aus deutschösterreichischen Mitteln zu bestreiten sind.</p>
+                  <p>Der Finanzeffekt der Gewährung der gewerkschaftlichen oder der orts<pb facs="krp-0079_r-0015"/>üblichen Löhne ad II lässt, sich zur Zeit nicht ziffermäßig angeben, da die Zahl der Arbeiter, die bereits solche Löhne beziehen, sowie die Sätze dieser Löhne an den verschiedenen Orten derzeit nicht festgestellt werden können, doch steht die bezügliche Ziffer nach Angabe des liquidierenden Kriegsministeriums bedeutend unter der Höhe des Mehraufwandes ad I.</p>
+                  <p>B</p>
+                  <p>Bei den Verhandlungen über die definitive Erledigung des Memorandums kommen in Betracht:</p>
+                  <list>
+                     <item n="1"><label>1.)</label> Die Forderungen des Memorandums selbst,</item>
+                     <item n="2"><label>2.)</label> Bezugsaufbesserungen nach dem in mehreren Beschlüssen des Kabinettsrates festgehaltenen Grundsatze der Gleichstellung der Bezüge des liquidierenden Personales und jener der analogen Kategorien der deutschösterreichischen Zivilstaatsangestellten,</item>
+                     <item n="3"><label>3.)</label> die Ausgleichsvorschläge, die bei den mit dem Aktionskomitee angebahnten Verhandlungen bereits zu einer bestimmten Linie gediehen sind.</item>
+                  </list>
+                  <p>I</p>
+                  <p>Die Forderungen des Memorandums zerfallen in zwei Gruppen, <pb facs="krp-0079_r-0016"/>Bezugsaufbesserungen und Ausgestaltung der Angestelltenorganisation.</p>
+                  <p>Die letztere Gruppe wurde bei den Verhandlungen in der Internationalen Liquidierungskommission, um Raum für die zunächst wichtigere andere Gruppe zu gewinnen, zurückgestellt und nach den bei den erwähnten Ausgleichsverhandlungen gewonnenen Eindrücken ist das Aktionskomitee hiemit einverstanden.</p>
+                  <p>Die im Memorandum geforderten Bezugsaufbesserungen sind:</p>
+                  <p>1.) Teuerungszulagen, 2.) Abfertigungen für den Fall der Entlassung aus dem Liquidierungsdienste.</p>
+                  <list>
+                     <item n="1"><label>1.)</label> a.)	 Die Teuerungszulagen werden verlangt durchwegs nach einem gleichen Maße für alle Kategorien der liquidierenden Organe, nach dem Satze von 10 K (für einige wenige der Zahl nach nicht bedeutende Kategorien 12 K) per Kopf und Tag. Diese Teuerungszulage soll fortlaufend ab 1. Mai und rückwirkend für die Zeit vom 1. Jänner bis 30. April 1919 gewährt werden.</item>
+                     <item n="2"><label>b.)</label> Für die Arbeiter und Arbeiterinnen im Liquidierungsdienste werden die gewerkschaftlichen Löhne ab 1. Mai verlangt und für die Zeit vom 1. Jän<pb facs="krp-0079_r-0017"/>ner bis 30. April 1919, soweit die Arbeiter nicht bereits im Besitze der gewerkschaftlichen Löhne waren, die gleichen Teuerungszulagen wie ad 1a).</item>
+                     <item n="3"><label>2.)</label>  Als Abfertigung für den Fall der Entlassung aus dem Liquidierungsdienste wird für alle liquidierenden Organe (mit Ausnahme jener, die infolge strafgerichtlicher Verurteilung ausscheiden) der Betrag der dreimonatlichen Aktivitätsbezüge verlangt.</item>
+                  </list>
+                  <p>Der Finanzeffekt der vollen Bewilligung dieser Forderungen würde sich stellen wie folgt:</p>
+                  <p>Monatlicher Mehraufwand für die ab 1. Mai laufenden Teuerungszulagen ad l.a)		.6.039.160 K</p>
+                  <p>hievon würden bei der vorerwähnten Scheidung der bei den liquidierenden militärischen Zentralstellen tätigen und der übrigen liquidierenden Organe auf letztere, also zunächst</p>
+                  <p>auf deutschösterreichische Mittel, entfallen 4.459.200 K</p>
+                  <p>Einmaliger Mehraufwand: für die Rückwirkung auf die Zeit vom 1. Jänner bis 30. April 1919 ad la)</p>
+                  <p>und 1b)	25.342.800 K</p>
+                  <p>hievon würden nach der erwähnten Scheidung zunächst auf Deutschösterreich entfallen 		 19.220.160 K</p>
+                  <p>Einmaliger Mehraufwand</p>
+                  <p>ad 2)	38.286.100 K</p>
+                  <p>hievon würden nach dem Gesagten zunächst auf Deutschösterreich entfallen	</p>
+                  <p>	 28.447.308 K</p>
+                  <p>ad 1b) lassen sich aus analogen Gründen wie oben bemerkt, zur Zeit zif<pb facs="krp-0079_r-0018"/>fermäßige Angaben nicht machen.</p>
+                  <p>II</p>
+                  <p>Gegenüber den Forderungen des Memorandums habe sich der deutschösterreichische Vertreter in der Internationalen Liquidierungskommission von Anfang an gemäß den erhaltenen Instruktionen auf den Standpunkt gestellt, dass angesichts der Notwendigkeit staatlicher Zuwendungen zur Abhilfe gegen die außerordentlich gespannten Teuerungsverhältnisse und der hiefür verfügbaren beschränkten Mittel nur eine gleichmäßige Abhilfe für alle in gleichartiger Kategorie befindlichen und unter denselben Teuerungsverhältnissen lebenden staatlichen Bediensteten eintreten könne. Die Gesamtbezüge der militärischen Funktionäre sind in vielen Relationen wesentlich höher als die Gesamtbezüge der in analoger Kategorie stehenden Zivilstaatsangestellten, in mehreren Relationen aber niedriger, hauptsächlich weil bei den militärischen Bezügen der Familienstand, der für die Teuerungszulagen der Zivilstaatsangestellten maßgebend ist, nach den bisherigen Vorschriften nicht berücksichtigt wird. Es empfehle sich daher, <pb facs="krp-0079_r-0019"/>für die in Frage stehenden Bezugsaufbesserungen der Weg der Gleichstellung der liquidierenden militärischen Organe mit den am gleichen Orte und unter den gleichen Teuerungsverhältnissen funktionierenden deutschösterreichischen Zivilstaatsangestellten schon vermöge der innewohnenden Gerechtigkeitsidee; die bereits erworbenen Rechte sollen bei allen Relationen, in welchen die militärischen Organe höhere Gesamtbezüge haben als die Zivilstaatsangestellten, unberührt bleiben, nur sollen auf die vorhandene Differenzierung nicht neue Ungleichheiten aufgebaut werden. Die praktischen Schwierigkeiten bei Durchführung der Gleichstellung infolge der außerordentlich detaillierten Kategorisierung und des hiezu erforderlichen Zeitaufwandes seien nicht zu verkennen, aber nicht unüberwindlich, zumal zur vorläufigen Befriedigung der Aufbesserungswünsche eine vorschussweise Zuwendung eintritt.</p>
+                  <p>Der Finanzeffekt würde sich im Falle der Durchführung der Gleichstellungsidee weit unter den Ziffern halten, die bei voller Erfüllung der Forderungen des Memorandums erwachsen würden. <pb facs="krp-0079_r-0020"/>Bei Durchführung der Gleichstellung würde betragen der monatliche Mehraufwand an Ausgleichungszulagen ……………….. 1.039.225 K,</p>
+                  <p>wovon zunächst aus deutschösterreichischen Mitteln zu bestreiten wären . . . 800.304 K, der einmalige Mehraufwand für eine etwa zuzugestehende Rückwirkung der Ausgleichungszulagen auf die Zeit vom 1. Jänner bis</p>
+                  <p>30.April 1919 	 4.096.380 K,</p>
+                  <p>wovon zunächst zu Lasten Deutschösterreichs entfallen würden……… 3.200.000 K,</p>
+                  <p>Dann der einmalige Mehraufwand für eine Abfertigung beim Ausscheiden aus dem Liquidierungsdienste im Ausmaße der dreimonatlichen Gesamtbezüge einschließlich der Ausgleichszulagen. . . 23.479.582 K wovon zunächst aus deutschösterreichischen Mitteln zu bestreiten wären ……………. 17.927.800 K.</p>
+                  <p>III</p>
+                  <p>Aufgrund der neuesten Verhandlungen, die mit dem Aktionskomitee gepflogen wurden, lasse sich eine ausgleichsweise Befriedigung der geforderten Bezugsaufbesserungen auf der <pb facs="krp-0079_r-0021"/>folgend bezeichneten Grundlage in Aussicht nehmen. Es müsse aber hiebei berücksichtigt werden, dass zufolge der Stellungnahme der übrigen Nationalstaatsvertreter (mit Ausnahme des Deutschösterreichischen Vertreters) in der Internationalen Liquidierungskommission bei der definitiven Regelung der Bezugsaufbesserungen, ebenso wie es schon vorhinein bei dem bewilligten Vorschusse zur Wirkung kam, lediglich der Aufwand für die direkt bei den liquidierenden militärischen Zentralstellen tätigen liquidierenden Organe aus der gemeinsamen Liquidierungsmasse flüssig gemacht werden soll, während für die übrigen liquidierenden Organe, das heißt für den Großteil derselben, der grundsätzlich als Liquidationskosten anerkannte Aufwand zunächst aus deutschösterreichischen Mitteln bestritten werden soll gegen Rückersatz aus der gemeinsamen Liquidationsmasse, wobei aber die Höhe des Betrages, soweit sie von der Zahl der jeweils zur Liquidierung benötigten Organe abhängt, weiterer grundsätzlicher Vereinbarung überlassen ist.</p>
+                  <p>Die Ausgleichspropositionen sind</p>
+                  <list>
+                     <item n="1"><label>1.)</label> Teuerungszulagen werden ab 1. Mai 1919 gewährt an die liquidierenden <pb facs="krp-0079_r-0022"/>militärischen Organe mit Ausnahme der Vertragsangestellten mit mindestens 1.000 K Monatsbezügen und mit Ausnahme der Arbeiterschaft und zwar</item>
+                     <item n="2"><label>a)</label> an Gagisten von der VII. Rangsklasse aufwärts im Ausmaße von monatlich 100 K und 20 K für jedes unversorgte Familienmitglied (Ausmaß der Übergangszulage für die deutschösterreichischen Zivi1staatsangestellten)</item>
+                     <item n="3"><label>b)</label> an allen übrigen der unter 1) fallenden liquidierenden militärischen Organe und zwar</item>
+                     <item n="4"><label>A)</label> in Niederösterreich (einschließlich Wien) im Ausmaße von monatlich 150 K und 20 K für jedes unversorgte Familienmitglied</item>
+                     <item n="5"><label>B)</label> im übrigen Gebiete Deutschösterreichs im Ausmaße von monatlich 100 K und 20 K für jedes unversorgte Familienmitglied.</item>
+                     <item n="6"><label>2.)</label> Die bei den liquidierenden militärischen Stellen beschäftigten Arbeiter und Arbeiterinnen erhalten ab 1. Mai 1919 die branchenmäßig festgesetzten gewerkschaftlichen Löhne und wo solche nicht bestehen, die ortsüblichen Löhne der betreffenden Branche,</item>
+                     <item n="7"><label>3.)</label> Eine Abfertigung in der Höhe zweimonatlicher gesamter Aktivitätsbezüge erhalten beim Ausscheiden aus <pb facs="krp-0079_r-0023"/>dem Liquidierungsdienste alle liquidierenden militärischen Organe mit Ausnahme der Arbeiterschaft und mit Ausnahme jener Organe, die unmittelbar in einen anderen öffentlichen Dienst übertreten und jene, die infolge einer strafgerichtlichen Verurteilung aus dem Liquidierungsdienste ausscheiden.</item>
+                  </list>
+                  <p>Was die im Memorandum geforderte Rückwirkung der Teuerungszulage für die Zeit vom 1. Jänner bis 30. April 1919 betreffe, so haben die Ausgleichsverhandlungen mit dem Aktionskomitee ergeben, dass dieses bereit wäre, die Rückwirkung auf die Zeit bis 1. März 1919 zurück einzuschränken, aber auf die Rückwirkung ganz zu verzichten nicht willens sind.</p>
+                  <p>Der Finanzeffekt der Bezugsaufbesserungen aufgrund dieser angebahnten Ausgleichspropositionen würde sich stellen wie folgt:</p>
+                  <p>Monatlicher Mehraufwand ad 1) </p>
+                  <p>Teuerungszulage. ..... 3.171.785 K </p>
+                  <p>hievon würden zunächst von Deutschösterreich zu bestreiten sein …………. 2.259.905 K</p>
+                  <p>Einmaliger Mehraufwand: </p>
+                  <p>Für die Rückwirkung der Teuerungszulage auf zwei Monate (berechnet nach den Sätzen <pb facs="krp-0079_r-0024"/>von zusammen 300 K und 40 K für jedes unversorgte Familienmitglied dann 200 K und 40 K) ……………………. 8.135.840 K hievon würden zunächst von Deutschösterreich zu bestreiten sein 	…………………. 6.323.600 K</p>
+                  <p>für die Abfertigung ad 3) 25.524.274 K wovon zunächst von Deutschösterreich zu bestreiten wären …….. 18.964.872 K</p>
+                  <p>Dieser einmalige Mehraufwand würde nach der Natur der Sache nicht auf einmal, sondern erst sukzessive zur Wirkung kommen. Der nach dem vorerwähnten Beschlusse der Internationalen Liquidierungskommission vom 12. Juni 1919 auf die zu regelnde Bezugsaufbesserung gewährte Vorschuss und ebenso die bereits früher den Gagisten (und Gleichgestellten) unter den liquidierenden militärischen Organen für Mai, dann für Juni gewährte Übergangszulage von monatlich 100 K und 20 K für jedes unversorgte Familienmitglied, soweit sie zur Auszahlung gelangt sind, wären auf die neu geregelten Bezugsaufbesserungen zu verrechnen.</p>
+                  <p>Was speziell die Abfertigungen beim Ausscheiden aus dem Liquidierungsdienste anbelange, so rechtfertige sich ihre Zugestehung aus gewissen <pb facs="krp-0079_r-0025"/>Billigkeitsgründen, weil diese Abfertigung den in einer ganz vorübergehenden prekären Stellung befindlichen liquidierenden militärischen Organen die Möglichkeit bieten soll, nach Beendigung ihrer Liquidierungstätigkeit, ohne sofort in Nahrungskümmernisse zu verfallen, eine andere Erwerbsbeschäftigung aufzusuchen, wogegen die prekäre Natur der Liquidierungstätigkeit bei dem Ausmaße der Teuerungszulagen nicht zur Berücksichtigung kommen kann. Für die Zugestehung der Abfertigung spreche aber auch der für die beschleunigte Beendigung der Liquidierung wirksame praktische Grund, dass ihr eine Aufbesserung in einer Form gewährt wird, wonach sie nur beim Ausscheiden aus der Liquidierungstätigkeit empfangen werden kann, daher keinen Anreiz bieten kann, sich länger als notwendig im Liquidierungsdienste zu erhalten.</p>
+                  <p>Wenn auch bei Annahme dieser Ausgleichsvorschläge der bisher von Seite Deutschösterreichs festgehaltene Standpunkt der Gleichstellung der Gesamtbezüge der liquidierenden militärischen Organe und der unter den gleichen Teuerungsverhältnissen lebenden deutschösterreichischen Zivilstaatsangestellten grundsätzlich verlassen werde und diese <pb facs="krp-0079_r-0026"/>Ausgleichsideen nur in einem sehr unvollkommenen Maße auf dem Kompromisswege zur Durchführung gelangen würden, so empfehle sich die Annahme der angebahnten Ausgleichsvorschläge dennoch unter den derzeit obwaltenden Umständen, bei der Geltung der übrigen Nationalstaatsvertreter in der Internationalen Liquidierungskommission einerseits und angesichts der großen Nachteile anderseits, die bei Fortsetzung der Resistenzbewegung durch Störung des Liquidierungsbetriebes und Gefahr von Sabotageakten drohen würden.</p>
+                  <p>Sektionschef Dr. Pöschl glaube daher für den Fall, dass nicht doch ein für die Liquidationsmasse und die deutschösterreichischen Staatsfinanzen günstigeres und auch dem bisher von Deutschösterreich festgehaltenen Grundsatze der Gleichstellung der Bezüge der militärischen und der zivilen Staatsangestellten näher kommendes Ergebnis bei den weiteren Verhandlungen in der Internationalen Liquidierungskommission erreicht werden könnte, auf die Annahme der unter III. angeführten Ausgleichsvorschläge einraten zu sollen.</p>
+                  <p>Anschließend an diese Ausführungen beantragt Sektionschef Dr. <hi rend="#letterspaced">Grimm</hi> <pb facs="krp-0079_r-0027"/>den deutschösterreichischen Vertreter in der Internationalen Liquidierungskommission zu ermächtigen, bei den weiteren Verhandlungen über das Memorandum der Liquidierenden militärischen Organe, soweit nicht im Sinne der gemachten Ausführungen ein günstigeres Ergebnis erzielt werden könnte, worauf die Bemühungen des deutschösterreichischen Vertreters zunächst zu richten sein werden, die vorbezeichneten Ausgleichsvorschläge, jedoch mit Ausschluss der Rückwirkung über den 1. Mai 1919 zurück, als Verhaltungslinie einzunehmen, derart dass diese als dem deutschösterreichischen Vertreter gegebene Ermächtigungsgrenze zu betrachten ist.</p>
+                  <p>Der Kabinettsrat beschließt im Sinne dieses Antrages.</p>
+               </div>
+               <div type="top" xml:id="krp-0079_top11">
+                  <head>
+                     <label>
+                        <num n="11">11.</num>
+                        <seg>Finanzielle Sicherstellung der weiteren Lebensmittellieferungen durch die Entente.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretäre Dr. <hi rend="#letterspaced">Bauer</hi> macht unter Bezugnahme auf die vom Kabinettsrate in der Sitzung am 27. Mai d. J. gefassten Beschlüsse eingehende Mitteilungen über den gegenwärtigen Stand der Verhandlungen, betreffend die Frage der finanziellen Sicherstellung der weiteren Lebensmittellieferungen durch die Entente, und richtet an die zuständigen <pb facs="krp-0079_r-0028"/>Staatsämter das Ersuchen, die bezüglichen Gesetzentwürfe auszuarbeiten und im Wege des Staatsamtes für Äußeres der Friedensdelegation in St. Germain zur Begutachtung zu übermitteln, damit die Gesetzesvorlage erforderlichenfalls rechtzeitig der Nationalversammlung zur Beschlussfassung vorgelegt werden können. Weiters wäre es notwendig, wegen der durch die Gemeinden zu leistenden Sicherheiten zunächst mit der Gemeinde Wien in vertraulicher Weise in Fühlung zu treten.</p>
+                  <p>Der Kabinettsrat nimmt diese Ausführungen zur Kenntnis.</p>
+               </div>
+               <div type="top" xml:id="krp-0079_top12">
+                  <head>
+                     <label>
+                        <num n="12">12.</num>
+                        <seg>Aushilfen für Pensionsparteien.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Schumpeter</hi> erbittet und erhält die Ermächtigung des Kabinettsrates, den in Deutschösterreich in Vorschreibung stehenden Pensionsparteien, welche die deutschösterreichische Staatsbürgerschaft besitzen, der deutschen Nation angehören und eine Aushilfe aufgrund der Verordnung des Finanzministeriums vom 11. September 1918, RGBl. Nr. 334, genießen, diese Aushilfe in den nach den §§ 4 bis 5 der bezogenen Verordnung bzw. nach den zum § 6 derselben ergangenen besonderen Anordnungen festgesetz<pb facs="krp-0079_r-0029"/>ten bisherigen Ausmaßen bis Ende Dezember 1919 weiter flüssig machen zu dürfen.</p>
+               </div>
+               <div type="top" xml:id="krp-0079_top13">
+                  <head>
+                     <label>
+                        <num n="13">13.</num>
+                        <seg>Teuerungszulagen für die Staatsangestellten.</seg>
+                     </label>
+                  </head>
+                  <p>Über Antrag des Staatssekretärs Dr. Schumpeter beschließt der Kabinettsrat die Giltigkeit der Bestimmungen der §§ 1 bis einschließlich 10 der Verordnung vom 11. September 1918, RGB1. Nr. 833, über Zuwendungen an Staatsbedienstete aus Anlass der durch den Krieg geschaffenen außergewöhnlichen Verhältnisse und der mit dem Erlasse vom 11. September 1918, Zl. 1983/F.M., hiezu erlassenen Durchführungsvorschriften sowie der sonstigen diese Zuwendungen (Teuerungszulagen und Übernahme der Abzüge) betreffenden seither getroffenen besonderen Verfügungen auf die Zeit vom 1. Juli 1919 bis 31. Dezember 1919 zu erstrecken.</p>
+                  <p>Diese Ausdehnung hat auf die deutschösterreichischen Staatsangestellten, auf die ehemals österreichischen Staatsangestellten deutscher Nationalität außerhalb des deutschösterreichischen Staatsgebietes, die im Sinne des Abschnittes III der Beschlüsse des Kabinettsrates vom 23. November 1918 vor<pb facs="krp-0079_r-0030"/>läufig im deutschösterreichischen Staatsdienste verwendet werden, sowie auf ehemals österreichische Staatsangestellte nichtdeutscher Nationalität im deutschösterreichischen Staatsgebiete, die im Sinne des Abschnittes IV der erwähnten Kabinettsratsbeschlüsse vorläufig im Dienste des deutschösterreichischen Staates weiter verwendet werden, Anwendung zu finden.</p>
+               </div>
+               <div type="top" xml:id="krp-0079_top14">
+                  <head>
+                     <label>
+                        <num n="14">14.</num>
+                        <seg>Wiederaufbau kriegszerstörter Gebiete in Tirol.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Ing. <hi rend="#letterspaced">Zerdik</hi> teilt mit, dass die Landesregierung in Innsbruck an das Staatsamt für Handel und Gewerbe, Industrie und Bauten das Ersuchen gerichtet habe, ihr zur Sicherung der unbehinderten und sachgemäßen Weiterführung des Wiederaufbaues der durch den Krieg zerstörten Gebiete in Tirol einen weiteren Kredit von 1.500.000 K ehestens zur Verfügung zu stellen. Dieser Betrag soll in erster Linie für große Bauholzeinkäufe, für welche gerade dermalen eine günstige Gelegenheit gegeben sein soll, verwendet werden. Bei dem Umstande, als die zerstörten Gebiete in Tirol dermalen fast zur Gänze von den Italienern besetzt seien und wohl nicht mit Sicherheit gehofft werden könne, dass diese Gebiete bei den Friedensverhandlungen dem deutschösterreichischen Staate <pb facs="krp-0079_r-0031"/>zugesprochen werden sollen, erscheine eine gewisse Vorsicht bei Zuweisung von Krediten immerhin geboten. Anderseits aber bestehe die Gefahr, dass die Wiederaufbauaktion in den Gemeinden Sexten und Innichen sofort eingestellt und mit einer Entlassung von Arbeitern vorgegangen werden müsste, falls nicht rechtzeitig die für die Fortführung der Wiederaufbauarbeiten erforderlichen Mittel von der Regierung zur Verfügung gestellt würden.</p>
+                  <p>Es bedürfe keines besonderen Hinweises, dass die Einstellung der unter den bestehenden Verhältnissen ohnehin nur in einem sehr mäßigen Tempo geführten Wiederaufbauaktion die Bevölkerung in hohem Maße beunruhigen würde und dass daher eine solche vermieden werden sollte. Der hiefür unerlässlichen Zuweisung eines Kredites komme natürlich insoferne eine prinzipielle Bedeutung zu, als auch den Wiederaufbaugebieten in Kärnten solche Zuwendungen nicht weiter verweigert werden dürfte.</p>
+                  <p>Aufgrund dieser Ausführung stelle der sprechende Staatssekretär den Antrag, der Kabinettsrat möge beschließ<pb facs="krp-0079_r-0032"/>en, dass die zur Fortführung der Wiederaufbauarbeiten notwendigen Kredite auch in solchen Fällen, in welchen es nicht feststeht, ob die betreffenden Gebiete an Deutschösterreich fallen werden, wenigstens in einem durch die Umstände gebotenen bescheidenen Ausmaß bewilligt und insbesondere für Tirol schon jetzt ein Kredit von rund 0,5 Million K der Landesregierung für Holzeinkäufe und die Entlohnung der Arbeiter zur Verfügung gestellt werde.</p>
+                  <p>Sektionschef Dr. <hi rend="#letterspaced">Grimm</hi> anerkennt namens des Staatsamtes der Finanzen die für den gestellten Antrag maßgebenden Gründe, glaubt jedoch, dass es bedenklich wäre, für Holzeinkäufe und Wiederaufbauarbeiten in entschieden bestrittenen Gebieten einen Kredit zu gewähren, weshalb er bitte, den beanspruchten Kredit demgemäß vorläufig auf 200.000 K herabzusetzen.</p>
+                  <p>Staatssekretär Ing. <hi rend="#letterspaced">Zerdik</hi> erklärt sich hiemit einverstanden, worauf der Kabinettsrat den modifizierten Antrag zum Beschlusse erhebt.</p>
+                  <p><pb facs="krp-0079_r-0033"/></p>
+               </div>
+               <div type="top" xml:id="krp-0079_top15">
+                  <head>
+                     <label>
+                        <num n="15">15.</num>
+                        <seg>Ansuchen des Oberbefehlshabers Feldmarschallleutnants Boog um Enthebung von seinem Dienstposten.</seg>
+                     </label>
+                  </head>
+                  <p>Unterstaatssekretär Dr. <hi rend="#letterspaced">Waiss</hi> teilt mit, dass der Oberbefehlshaber der deutschösterreichischen Wehrmacht, Feldmarschallleutnant Adolf Boog, um Enthebung von seinem Posten und um Versetzung in den Ruhestand eingeschritten sei.</p>
+                  <p>Der sprechende Unterstaatssekretär beantrage, der Bitte des Oberbefehlshabers zu willfahren, ihn mit 1. Juli l. J. von seinem Posten zu entheben und bei Zuerkennung der gebührenmäßigen Versorgungsgenüsse in den Ruhestand zu versetzen, ferner dem Genannten anlässlich seiner Enthebung vom Posten für seine hingebungsvolle Tätigkeit in besonders schwierigen Zeiten den Dank und die Anerkennung der Regierung auszusprechen.</p>
+                  <p>Eine Neubesetzung des Postens des Oberbefehlshabers halte das Staatsamt für Heereswesen unter den gegenwärtigen Verhältnissen derzeit für nicht notwendig.</p>
+                  <p>Der Kabinettsrat beschließt im Sinne des gestellten Antrages.</p>
+                  <p/>
+               </div>
+            </div>
+            <div type="stenogramme">
+               <div n="1">
+                  <head>[KBR 79, 13. Juni 1919, Stenogramm]</head>
+                  <p><pb facs="krp-0079_s01-0001"/>Nr. 79, 13. /6. 19.</p>
+                  <p>[<hi rend="#i">Rechtes Obereck:</hi>] [Zugezogen]: Grimm, </p>
+                  <p>Sektionsrat Dr. Ehrenfeld-Pop; </p>
+                  <p>Pöschl.</p>
+                  <p>1. Fink: </p>
+                  <p>Bürgermeister in Linz.</p>
+                  <p>Angenommen.</p>
+                  <p>Paul: Ergänzung der Mitteilung. Vorgestern und gestern [sind] die Postbediensteten bei mir erschienen unter der Führung von Vertrauensmännern der technischen Union. </p>
+                  <p>Die beiden Führer wurden vor mir derart niedergeschrieen, dass sie beinahe den Saal verlassen mussten.</p>
+                  <p>Zwei Forderungen: Anschaffungsbeitrag monatlich - würde 11 Millionen Kronen ausmachen. </p>
+                  <p>77 Millionen; 55 Millionen, 93 Millionen - 150 Millionen Mehrbedarf.</p>
+                  <p>Die Eisenbahnbediensteten haben heute dieselbe Forderung gestellt.</p>
+                  <p>Ich würde die Bitte stellen, bei einer demnächst stattfindenden Eisenbahnerversammlung auch bezüglich der Forderungen der Postbediensteten -. </p>
+                  <p>Seitens der Regierung möge auf die Postbediensteten eingewirkt werden, damit von diesen gänzlich unerfüllbaren Forderungen Abstand genommen wird.</p>
+                  <p>Zur Kenntnis genommen.</p>
+                  <p>Zerdik: Am 5. Juni hat in Prag eine Verhandlung stattgefunden über die Verlängerung des Kohlenvertrages. </p>
+                  <p>In Abwesenheit des amerikanischen Vertreters haben die Tschechen Vorbehalte gemacht. </p>
+                  <p>Auf diese Vorbehalte wurde seitens unseres Vertreters nicht eingegangen.</p>
+                  <p>Bitte, dieses Protokoll zur Kenntnis zu nehmen und wir werden trachten, durch Hutchinson zu erreichen, dass der Vertrag so </p>
+                  <p><hi rend="#s">abgeschlossen</hi> wird zur Durchführung gelangt, wie er am 1. Tag abgeschlossen wurde.</p>
+                  <p>Loewenfeld: Wie wurde die Bezahlung der Kohlenmenge in Aussicht genommen?</p>
+                  <p>Schumpeter: -.</p>
+                  <p>Die Mitteilung über die Verhandlungen in Prag zur Kenntnis genommen.</p>
+                  <p>3. Fink: Zentralangestelltenrat, [Amtsstunden] 8-2.</p>
+                  <p>Paul: Die Amtsstunden in meinem Amt von 9-3 h, unforciert über Abstimmung 8-2.</p>
+                  <p>Zerdik: 8-2 ab 15. Juni.</p>
+                  <p><pb facs="krp-0079_s01-0002"/>Loewenfeld: Wenn solche Regelungen offiziell erfolgen, so werden Weiterungen entstehen, da die Aufgaben nicht gelöst werden können. </p>
+                  <p>Eine offizielle Regelung würde Kosten verursachen, weil sonst niemand freiwillig länger bliebe.</p>
+                  <p>Zerdik: Es war immer von 9-3 festgelegt.</p>
+                  <p>Loewenfeld: Ich gebe zu, dass sie offiziell [...] sind, aber eine Betonung.</p>
+                  <p>Grimm: Steht im Zusammenhang mit der Forderung [<hi rend="#i">Einschub:</hi>] der Konzeptbeamten [<hi rend="#i">Einschub Ende</hi>] nach Überstundenentlohnung, die jetzt im Beamtenkomitee in Beratung steht.</p>
+                  <p>Bauer: Bitte, keine bindenden Beschlüsse zu fassen, da im Äußeren nicht durchführbar.</p>
+                  <p>Fink: Es soll kein Beschluss gefasst werden, dagegen erhebt man keine Einwendung gegen die von einzelnen Staatsämtern bereits erfolgte Regelung.</p>
+                  <p>Fink: </p>
+                  <p>Hugelmann, </p>
+                  <p>Herausgeber einer Zeitung zu sein verträgt sich mit einem Staatsbeamten nicht.</p>
+                  <p>Braun: Politisch von meinem Standpunkt hätte ich eher kein Interesse, das zu hindern. </p>
+                  <p>Vom Standpunkt des Beamtenrechtes aus könnte man vielleicht Bedenken erheben. </p>
+                  <p>Vielleicht könnte man mit dem Mann reden und Übereinkommen treffen, dass jemand anderer [<hi rend="#i">Einschub:</hi>] als Herausgeber [<hi rend="#i">Einschub Ende</hi>] zeichnet.</p>
+                  <p>Hanusch: Trotz B[auer] möchte ich auf folgendes aufmerksam machen. </p>
+                  <p>In den letzten Wochen haben wir wahrgenommen, dass mehrmals aus den Staatsämtern Sachen in die Öffentlichkeit und in die Presse gekommen sind. </p>
+                  <p>Wenn etwas ins Deutsche Volksblatt kommt, so wird man den Eindruck haben, dass es durch H[ugelmann] geschehen ist, was zu Komplikationen </p>
+                  <p>im Amte führen könnte.</p>
+                  <p>Bratusch: Es ist dies keine Nebenbeschäftigung, die sich mit dem Ch[arakter] eines Beamten verträgt.</p>
+                  <p>Bauer: Man kann heute [<hi rend="#i">Einschub:</hi>] keinen Beamten [<hi rend="#i">Einschub Ende</hi>] hindern, dass er Leitartikel schreibt. Stoßen kann man sich nur [daran], dass er auf dem Blatt </p>
+                  <p>als Herausgeber erscheint.</p>
+                  <p>Fink: H[anusch] nimmt zur Kenntnis, dass die Sache mit H[ugelmann] im Sinne B[auers] zu ordnen, eventuell neuerlich </p>
+                  <p>an den Kabinettsrat.</p>
+                  <p><pb facs="krp-0079_s01-0003"/>Glöckel: </p>
+                  <p>Reassumierung des Beschlusses betreffend Exportakademie (2. Juni). </p>
+                  <p>Ich bin mit der Umwandlungsaktion vollkommen einverstanden. </p>
+                  <p>Es geht ja nicht an, durch Kabinettsbeschluss die Umwandlung einer Privatanstalt in eine Hochschule zu verfügen. </p>
+                  <p>Es ginge auch nicht an, die Umwandlung von der Genehmigung der Sitzung abhängig zu machen.</p>
+                  <p>Bauer: Ich war damals auch nicht anwesend. </p>
+                  <p>Es handelt sich auch um die Konsularakademie. Ich halte es für ausgeschlossen, dass die Schule in ihrer jetzigen Art </p>
+                  <p>erhalten wird. Wenn man eine Hochschule für Welthandel gründet, so sollte die Konsularakademie mit eingeschlossen werden. </p>
+                  <p>Allerdings würden die Deutschen sich sehr für die Anstalt interessieren und sie eventuell übernehmen. </p>
+                  <p>Ich bitte um Zuziehung des Staatsamtes für Äußeres zu den Verhandlungen.</p>
+                  <p>Zerdik: Eldersch war anwesend. Ich musste annehmen, dass er eventuell etwas vorbringen würde. </p>
+                  <p>Was die Kompetenzen anbelangt, so würde es bei den alten Kompetenzen bleiben, bis nicht das Kabinett </p>
+                  <p>etwas anderes beschließt. Die Sache ist sehr dringend.</p>
+                  <p>Ich glaube, man soll es bei dem Kabinettsratsbeschluss belassen und [versuchen], im Haus selbst im Ausschuss die Sache so herzurichten, wie es der Sache </p>
+                  <p>entspricht.</p>
+                  <p>Glöckel: Ich möchte Z[erdik] ersuchen, dass bei der Durchführung die nunmehr zu geschehen hat, dass Unterrichtsamt zugezogen </p>
+                  <p>wird. Dann würde ich gegen die Aufrechterhaltung des Beschlusses keine Einwendung mit der Verwahrung erheben, dass die </p>
+                  <p>Verwaltung zum Unterricht kommt.</p>
+                  <p>Zerdik: Demgegenüber halte ich den Anspruch auf die Kompetenz für das Handelsamt aufrecht.</p>
+                  <p>[Beschluss]: Einverstanden, dass die Sache in die Nationalversammlung kommt. </p>
+                  <p>Vorerst Einvernehmen zwischen den drei Ämtern.</p>
+                  <p>Fink: Gemeindewahlordnung. Angenommen.</p>
+                  <p><pb facs="krp-0079_s01-0004"/>Zerdik: Rotationspapier für Ungarn. </p>
+                  <p>Warenaustauschübereinkommen mit Ungarn. </p>
+                  <p>Von Deutsch-Österreich nach Ungarn: 48 [Waggons] Rot[ations]-Druckpapier, Chemikalien, Arzneimittel, fertige Herren- und Kinderkleider. </p>
+                  <p>Von Ungarn nach Deutsch-Österreich: 30.000 kg. Schafwolle, </p>
+                  <p>5 W[aggons] Braumalz,</p>
+                  <p>Zement. </p>
+                  <p>Deutsch-österreichische Rennpferde und altösterreichische Zuchtpferde ([...]).</p>
+                  <p>Beantrage Ratifikation.</p>
+                  <p>Bauer: Die interalliierte Wirtschaftskommission hat beschlossen, die Ausfuhr sämtlicher Waren nach Ungarn zu verbieten. </p>
+                  <p>Dieser Beschluss wurde uns mitgeteilt zur Danach-Achtung von der internationalen Blockadekommission. </p>
+                  <p>Ich habe dies [...] dem Vertrag nicht entsprechend nicht zur Kenntnis genommen und Verhandlungen eingeleitet. </p>
+                  <p>Ich muss aber meine Zustimmung zur Rat[ifikation] nur unter der Voraussetzung geben, dass die Entente nicht die </p>
+                  <p>Ausfuhr verbietet. Man muss bereit sein, ihnen das Papier rasch zu liefern, wenn man dadurch finanzielle Zugeständnisse erhält. </p>
+                  <p>Noch bevor das Entente-Verbot kommt.</p>
+                  <p>Ellenbogen: -.</p>
+                  <p>[Beschluss]: Keine Einwendung, </p>
+                  <p>Zuschrift an die ungarische Regierung, dass wir rat[ifizieren] unter dem Vorbehalt, dass die höhere Gewalt der Entente uns zwingen </p>
+                  <p>könnte, die weiteren Lieferungen zu unterlassen.</p>
+                  <p>Schumpeter: Frage der gesperrten Safes. Nachdem es nicht ausgeschlossen ist, dass bei Unruhen </p>
+                  <p>Angriffe auf die Safes erfolgen könnten -. Es handelt sich um eine politische Frage. Ich bin nicht in der </p>
+                  <p>Lage, die Verantwortung nach der einen oder anderen Richtung zu übernehmen.</p>
+                  <p>Bauer: Verweist auf den Inhalt des Schreibens, wo wir uns verpflichten, Gold und Silber herzugeben. </p>
+                  <p>Die Freigabe würde die Lebensmittelkreditbeschaffung frustrieren. </p>
+                  <p>Innerpolitisch würde die Freigabe eine Agitation namentlich in kommunistischen Kreisen verursachen.</p>
+                  <p><pb facs="krp-0079_s01-0005"/>Ich halte es für ein unbegründetes Nachgeben gegenüber der Angst gewisser Kreise.</p>
+                  <p>Aus außenpolitischen und innerpolitischen Gründen dagegen.</p>
+                  <p>Schumpeter: Ich bin einverstanden.</p>
+                  <p>Das Kabinett nimmt zur Kenntnis.</p>
+                  <p>Punkt 2 d.</p>
+                  <p>[Grimm]: Bisher hat der Generalliquidator Verfügungen getroffen, die sich entsprechend den Beschlüssen des Kabinettsrates </p>
+                  <p>auf Gleichstellung der Zivil- und Militärangestellten -.</p>
+                  <p>Pöschl: [<hi rend="#i">Einschub:</hi>] Beschlüsse der internationalen Liquidierungskommission. [<hi rend="#i">Einschub Ende</hi>]</p>
+                  <p>a) Vorschuss von 300 Kronen für die liqu[idierenden] Organe ausgenommen Arbeiter und höher entlohnte Vertragsangestellte.</p>
+                  <p>b) [Dass] die Arbeiter rückwirkend vom 1. Mai in den Genuss der gewerkschaftlichen Löhne der betreffende Branche gesetzt werden.</p>
+                  <p>Über Anregung des italienischen Vertreters wurde der Standpunkt eingenommen, dass diese Bezugsaufbesserungen derzeit auf Kosten </p>
+                  <p>der Liquidationsmasse nur dann zu erfolgen haben, wenn es sich um Organe handelt, die bei liquidierenden Zentralen in Verwendung </p>
+                  <p>stehen. Rücksichtlich der übrigen Organe, die in Deutsch-Österreich verwendet werden, hätte die Auslagen Deutsch-Österreich, allerdings </p>
+                  <p>als Liquidierungsausgabe, zu tragen.</p>
+                  <p>ad a) Vorschuss: fin[anzieller] Effekt: einmalige Auslage von 6 Millionen 55.000 Kronen. </p>
+                  <p>1,589.000 Kronen für jene, welche bei den liquidierenden Zentralstellen in Verwendung stehen, </p>
+                  <p>der Rest wäre vorläufig von Deutsch-Österreich als Liquidierungsausgabe zu tragen.</p>
+                  <p>ad b) Die Ziffer steht nicht fest, jedoch [ist sie] bedeutend niedriger als der Vorschuss-Aufwand. </p>
+                  <p>Es ist anzunehmen, dass bei Gewährung von a) die pass[ive] Resistenz eingestellt wird.</p>
+                  <p>Memorandum vom 2. Mai mit den Forderungen der Organ[isationen] der liquidierenden militärischen Zentralstellen. </p>
+                  <p>Materielle Forderungen: a) Teuerungszulage, </p>
+                  <p>b) Abfertigung (3-monatlich) bei Beendigung der Tätigkeit.</p>
+                  <p>ad a) einheitliche monatliche Zulage von 10 Kronen pro Tag und Kopf. </p>
+                  <p><pb facs="krp-0079_s01-0006"/>Bezugsaufbesserung nach Maßgabe der Gleichstellung mit den in analogen <hi rend="#s">Bezügen stehenden</hi> deutsch-österreichischen Zivilangestellten. </p>
+                  <p>150 Kronen im allgemeinen </p>
+                  <p>und 100 Kronen für die in Rangsklassen eingeteilten Organe.</p>
+                  <p>Diesem Ausgleich [...] müsste auch die Zuerkennung von Abfertigungen an die Seite treten. Und zwar nicht eine 3-monatliche sondern eine </p>
+                  <p>2-monatliche Abfertigung. Ausgenommen solche, welche in öffentliche Stellung treten und solchen, welche ihre Stelle durch strafgerichtliche Verurteilung verlieren.</p>
+                  <p>Finanzeffekt: Im Fall, [dass] sämtliche Forderungen erfüllt würden, würde sich der Mehraufwand für die Teuerungszulagen </p>
+                  <p>auf monatlich mehr [als] 6,039.000 Kronen [belaufen]. </p>
+                  <p>Die Rückwirkung auf 1. Jänner [auf] einmalig 25 Millionen, </p>
+                  <p>die 3-monatliche Abfertigung [auf] 38,000.000.</p>
+                  <p>Der Aufwand, welcher sich ergeben würde im Falle der Gleichstellung: </p>
+                  <p>monatlicher Mehraufwand 1,039.000 Kronen, </p>
+                  <p>einmaliger Mehraufwand für die Rückwirkung 4,096.000 [Kronen], </p>
+                  <p>Mehraufwand für die 3-monatliche [Abfertigung] 23 Millionen [Kronen].</p>
+                  <p>Ausgleichsvorschlag: monatlicher Mehraufwand 3,552.000 Kronen, </p>
+                  <p>2-monatliche Abfertigung 25,524.000 Kronen.</p>
+                  <p>Grimm: Antrag: </p>
+                  <p>Die Forderung des Memorandums ist unerfüllbar. </p>
+                  <p>Der Vorschlag b) Gleichstellung mit Zulagen-Schema wäre am sympathischsten. </p>
+                  <p>Der Kabinettsrat sollte sich zu dem Vermittlungsvorschlag bereit finden: 150 Kronen bzw. 100 Kronen </p>
+                  <p>und 2-monatliche Abfertigung.</p>
+                  <p>Von einer Rückwirkung auf den 1. Jänner wäre abzusehen. </p>
+                  <p>Liqu. zu beauftragen, mit allem Nachdruck [zu verlangen], dass [dies] aus der Liquidierungsmasse getragen [wird]. Wenn nicht geht aus Deutsch-Österreich, </p>
+                  <p><pb facs="krp-0079_s01-0007"/>den Vertretern in anderen Bevollmächtigten-Koll[egien] den Auftrag erteilen, dass sie in der Öffentlichkeit </p>
+                  <p>keine andere Stellung einnehmen als hier beschlossen wurde.</p>
+                  <p>Angenommen.</p>
+                  <p>Punkt 6. Bauer: &lt; &gt;. Ich habe den Staatskanzler angefragt, ob wir jetzt schon Gesetzentwürfe vorlegen sollen, oder ob wir eine Antwort der </p>
+                  <p>Entente abwarten müssen. Antwort des Staatskanzlers nicht eingelangt. </p>
+                  <p>Die zuständigen Staatsämter wollen die Vorarbeiten für die Entwürfe in Angriff nehmen. Insbesondere das Staatsamt für Finanzen </p>
+                  <p>im Einvernehmen mit dem Staatsamt für Landwirtschaft. Die Entwürfe wären dem Staatsamt des Äußeren und [<hi rend="#i">Einschub</hi>:] der Friedensdelegation [<hi rend="#i">Einschub Ende</hi>] [in] St. Germain zu übermitteln. </p>
+                  <p>Das Staatsamt für Finanzen soll sich auch ins Einvernehmen mit der Gemeinde Wien und den Gemeinden über 50.000 E[inwohnern] setzen.</p>
+                  <p>Schumpeter: Soll bezüglich der Gemeinden das Staatsamt der Finanzen oder die Staatskanzlei das weitere veranlassen?</p>
+                  <p>Bauer: Die Gemeindevertretungen soll man nicht befassen. [<hi rend="#i">Einschub</hi>:] Man soll die Sache vertraulich behandeln, [<hi rend="#i">Einschub Ende</hi>] man sollte nur mit der Gemeinde Wien vorerst sprechen.</p>
+                  <p>Loewenfeld: -.</p>
+                  <p>Grimm: T[euerungs]-Z[ulage] für die Pensionisten. (Material liegt vor). </p>
+                  <p>Die bisherige Verordnung soll durch den Kabinettsrat genehmigt werden. </p>
+                  <p>Gleichzeitig auch die T[euerungs]-Z[ulagen]-Verordnung für die aktiven Staatsbediensteten bis Ende Dezember verlängern. (Material schickt Grimm).</p>
+                  <p>Angenommen.</p>
+                  <p>Zerdik: Punkt 3, Wiederaufbau.</p>
+                  <p>Grimm: Anerkennt die Gründe. </p>
+                  <p>Aber dort, wo die Grenze ganz bestritten ist, [ist es] sehr bedenklich wenn man Holzeinkäufe und Wiederaufbauarbeiten </p>
+                  <p>vornehmen würde. </p>
+                  <p>Beantrage 200.000 Kronen für Tirol.</p>
+                  <p>Zerdik: Einverstanden. Angenommen.</p>
+                  <p><pb facs="krp-0079_s01-0008"/>Punkt 5. Waiss: Boog.</p>
+                  <p>Angenommen.</p>
+                  <p>6h.</p>
+               </div>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

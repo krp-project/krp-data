@@ -1,0 +1,775 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href='http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:acdh="https://vocabs.acdh.oeaw.ac.at/schema#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xml:lang="de">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="a" type="main" n="0141">Kabinettsprotokoll Nr. 141 vom 28. Jänner 1920</title>
+            <title level="m" type="main" n="01">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <title level="m" type="sub" n="">Renner III (17. Oktober 1919 – 7. Juli 1920)</title>
+            <meeting>
+               <placeName key="https://d-nb.info/gnd/4066009-6">Wien</placeName>
+               <orgName key="https://d-nb.info/gnd/5162749-8">Kabinettsrat</orgName>
+               <date when-iso="1920-01-28"/>
+            </meeting>
+            <editor>
+               <persName key="https://d-nb.info/gnd/122481836"
+                         role="hasCreator"
+                         xml:id="hwohnout">
+                  <forename>Helmut</forename>
+                  <surname>Wohnout</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</affiliation>
+               <idno type="ORCID">0000-0002-3864-9839</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/120789825"
+                         role="hasCreator"
+                         xml:id="tolechowski">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0003-3291-6876</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/131679384"
+                         role="hasCreator"
+                         xml:id="rlein">
+                  <forename>Richard</forename>
+                  <surname>Lein</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0002-7502-0503</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="aholzer">
+                  <forename>Anna</forename>
+                  <surname>Holzer</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0005-3560-3500</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="dsoelkner">
+                  <forename>Dominik</forename>
+                  <surname>Sölkner</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-9895-7212</idno>
+            </editor>
+            <editor>
+               <persName role="hasContributor" xml:id="ischotzko">
+                  <forename>Ina</forename>
+                  <surname>Schotzko</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-5210-3713</idno>
+            </editor>
+            <funder n="1">
+               <orgName key="https://d-nb.info/gnd/2054142-9" role="hasFunder">Österreichischer Wissenschaftsfonds FWF</orgName>
+               <idno type="project">PAT1495024</idno>
+               <title type="project">Die Protokolle des österreichischen Kabinettsrates 1919–1920</title>
+            </funder>
+            <respStmt>
+               <resp>Projektverantwortung</resp>
+               <orgName key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Projektleitung</resp>
+               <persName key="https://d-nb.info/gnd/120789825" role="hasPrincipalInvestigator">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+                  <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+                  <idno type="ORCID">0000-0003-3291-6876</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Nationaler Forschungspartner</resp>
+               <orgName key="https://d-nb.info/gnd/1123037736" role="hasEnabler">Austrian Centre for Digital Humanities</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Digitalisierung der gedruckten Quellen</resp>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>TEI-Datenmodellierung</resp>
+               <persName role="hasContributor" xml:id="tfruehwirth">
+                  <forename>Timo</forename>
+                  <surname>Frühwirth</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-3997-5193</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technische Supervision</resp>
+               <persName key="https://d-nb.info/gnd/1043833846"
+                         role="hasContributor"
+                         xml:id="pandorfer">
+                  <forename>Peter</forename>
+                  <surname>Andorfer</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-9575-9372</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technisches Consulting und Vorbereitung der Druckausgabe</resp>
+               <persName key="https://d-nb.info/gnd/13281899X"
+                         role="hasContributor"
+                         xml:id="skurz">
+                  <forename>Stephan</forename>
+                  <surname>Kurz</surname>
+                  <affiliation key="https://d-nb.info/gnd/1202798799">Institut für die Erforschung der Habsburgermonarchie und des Balkanraumes</affiliation>
+                  <idno type="ORCID">0000-0003-2546-2570</idno>
+               </persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher key="https://d-nb.info/gnd/1001454-8">Österreichische Akademie der Wissenschaften</publisher>
+            <date when="2028"/>
+            <availability status="free">
+               <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">Lizenziert unter CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/deed.de)</licence>
+            </availability>
+            <idno type="ISBN_Print"/>
+            <idno type="ISBN_Part_epub"/>
+            <idno type="ISBN_Digital"/>
+            <idno type="DOI"/>
+            <idno type="DOI_zenodo"/>
+            <idno type="ebook_ID"/>
+         </publicationStmt>
+         <seriesStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="m" type="main">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <respStmt>
+               <resp>Bearbeitung und Herausgeberschaft</resp>
+               <orgName key="https://d-nb.info/gnd/2024703-5">Universität Wien</orgName>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+         </seriesStmt>
+         <notesStmt>
+            <note>Diese TEI-XML-Datei ist Grundlage für eine Druckausgabe der Edition.</note>
+            <relatedItem>
+               <biblStruct>
+                  <monogr>
+                     <imprint>
+                        <pubPlace key="https://d-nb.info/gnd/4066009-6">Wien</pubPlace>
+                        <publisher key="https://d-nb.info/gnd/2068748-5">Verlag der Österreichischen Akademie der Wissenschaften</publisher>
+                        <date when="2029"/>
+                     </imprint>
+                     <extent/>
+                  </monogr>
+                  <note>
+              <idno/>
+              <ptr/>
+            </note>
+                  <citedRange/>
+               </biblStruct>
+            </relatedItem>
+         </notesStmt>
+         <sourceDesc>
+            <bibl>Quellbestand: AT-OeStA/AdR MRang MR 1Rep KRP Kabinettsratsprotokolle, 1918-1920 (Teilbestand)<ref target="https://www.archivinformationssystem.at/detail.aspx?id=5465">https://www.archivinformationssystem.at/detail.aspx?id=5465</ref>
+            </bibl>
+            <msDesc>
+               <msIdentifier>
+                  <institution key="https://d-nb.info/gnd/37748-X" role="hasOwner">AT-OeStA Österreichisches Staatsarchiv (Archiv (ÖStA))</institution>
+                  <repository key="https://d-nb.info/gnd/1601181-8">AT-OeStA/AdR Archiv der Republik, 1918- (Abteilung)</repository>
+                  <collection>AT-OeStA/AdR MRang MR 1Rep Ministerrat 1. Republik, 1918 - 1938 (Bestand)</collection>
+                  <idno>AT-OeStA_AdR-MRang-MR-1.-Rep.-KRP-141</idno>
+               </msIdentifier>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <abstract>
+            <p>
+          <!--to be generated-->
+        </p>
+         </abstract>
+      </profileDesc>
+      <encodingDesc>
+         <styleDefDecl scheme="css"/>
+         <tagsDecl>
+            <rendition xml:id="b" scheme="css">font-weight:bold;</rendition>
+            <rendition xml:id="su" scheme="css">vertical-align:super;font-size:.7em;</rendition>
+            <rendition xml:id="s" scheme="css">text-decoration:line-through;</rendition>
+            <rendition xml:id="u" scheme="css">text-decoration:underline;</rendition>
+            <rendition xml:id="ow" scheme="css">text-decoration:line-through;text-decoration-style:double;</rendition>
+            <rendition xml:id="r" scheme="css">display:block;text-align:right;</rendition>
+            <rendition xml:id="letterspaced" scheme="css">letter-spacing:0.15em;</rendition>
+            <rendition xml:id="i" scheme="css">font-style:italic;</rendition>
+         </tagsDecl>
+         <editorialDecl>
+            <hyphenation>
+               <p>
+            <!--to be added-->
+          </p>
+            </hyphenation>
+            <correction>
+               <p>
+            <!--to be added-->
+          </p>
+            </correction>
+            <normalization>
+               <p>
+            <!--to be added-->
+          </p>
+            </normalization>
+            <punctuation>
+               <p>
+            <!--to be added-->
+          </p>
+            </punctuation>
+            <stdVals>
+               <p>
+            <!--to be added-->
+          </p>
+            </stdVals>
+            <p>
+          <!--to be added-->
+        </p>
+         </editorialDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#tfruehwirth" when-iso="2026-10-13">TEIGarage output upconverted with upconvert.xsl</change>
+         <change who="#tfruehwirth" when-iso="2026-10-13">TEI header populated with generate_tei_templates.py</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface/>
+   </facsimile>
+   <text>
+      <body>
+         <div xml:id="doc-krp-0141.xml">
+            <head type="dokument">
+               <title type="num">141.<note type="footnote">Das Protokoll trägt den Vermerk <hi rend="#i">Vertraulich!</hi></note>
+               </title>
+               <title type="desc">
+                  <pb facs="krp-0141_r-0001"/>
+                  <pb facs="krp-0141_r-0002"/>[Dienstag] 1920-01-27</title>
+            </head>
+            <div type="dokumentkopf">
+               <div type="vorsitz">
+                  <head>Vorsitz:</head>
+                  <p>Renner, teilweise Fink</p>
+               </div>
+               <div type="anwesend">
+                  <head>Anwesend:</head>
+                  <p>Deutsch, Eisler, Eldersch, Ellenbogen, Glöckel, Hanusch, Loewenfeld-Russ, Miklas, Paul, Ramek, Reisch, Resch, Stöckler, Waiss, Zerdik</p>
+               </div>
+               <div type="zugezogen">
+                  <head>Zugezogen:</head>
+                  <p>Grimm, Hlawač, Jüptner, Kralowsky, Pohl, Rotky, Ziller</p>
+               </div>
+               <div type="schriftfuehrer">
+                  <head>Schriftführer:</head>
+                  <p>unbekannt</p>
+               </div>
+               <div type="dauer">
+                  <head>Dauer:</head>
+                  <p>20.00–00.45 Uhr</p>
+               </div>
+            </div>
+            <div type="komponenten">
+               <p>Reinschrift, Beilagen, Konzept, stenographische Mitschrift, Entwurf der Tagesordnung, diverse Zusätze</p>
+            </div>
+            <div type="beilagen">
+               <head>Beilagen:</head>
+               <list>
+                  <item><ref target="#krp-0141_top03">Zu TOP 3</ref>: <ref target="#krp-0141_b01">Vortrag des Staatsamtes für Handel und Gewerbe, Industrie und Bauten über die Staatsbeteiligung an der Ausbeutung des Kohlenbergbaus in Weyer</ref></item>
+                  <item><ref target="#krp-0141_top04">Zu TOP 4</ref>: <ref target="#krp-0141_b02">Vorlage der Staatsregierung des Militärabbaugesetzes mit Vollzugsanweisung</ref></item>
+                  <item><ref target="#krp-0141_top05">Zu TOP 5</ref>: <ref target="#krp-0141_b03">Vortag des Staatsamtes für Heereswesen, Abt. 20 a, Zl. 191/1920 auf Weitergewährung des 50 % Zuschusses zu den Unterhaltsbeiträgen für die Angehörigen von Kriegsgefangenen vom 1. Februar–31. März 1920</ref></item>
+                  <item><ref target="#krp-0141_top06">Zu TOP 6</ref>: <ref target="#krp-0141_b04">Vortrag des Staatsamtes für Verkehrswesen Zl. 39.584/1919 über die Erweiterung der übereinkommengemäßen Fahrbegünstigungen für Eisenbahnbedienstete und deren Angehörige</ref></item>
+                  <item><ref target="#krp-0141_top07">Zu TOP 7</ref>: <ref target="#krp-0141_b05">Antrag des Staatsamtes für Land- und Forstwirtschaft zu Zl. 1034/1920 auf Zustimmung zu den Gesetzesbeschlüssen des Tiroler Landtags zur Verbauung des Bockinger Grabens, der Ausführung von Elementarbauten am Stuibenbach und der Ergänzung der Schutzbauten am Lussbach bei Lermoos</ref></item>
+                  <item><ref target="#krp-0141_top08">Zu TOP 8</ref>: <ref target="#krp-0141_b06">Berufung eines ständigen Vertreters des Staatsamtes für Land- und Forstwirtschaft in die Zentralgrenzkommission</ref></item>
+                  <item><ref target="#krp-0141_top09">Zu TOP 9</ref>: <ref target="#krp-0141_b07">Entwurf einer Vollzugsanweisung zur Durchführung des Liquidationsgesetzes</ref></item>
+                  <item><ref target="#krp-0141_top11">Zu TOP 11</ref>: <ref target="#krp-0141_b08">Vortrag des Staatsamtes für Handel und Gewerbe, Industrie und Bauten über die Abänderung der Bautaxen für Innsbruck</ref></item>
+                  <item><ref target="#krp-0141_top12">Zu TOP 12</ref>: <ref target="#krp-0141_b09">Einführung einer ständigen zwischenstaatsamtlichen Kommission für den Neubau des allgemeinen Krankenhauses in Wien</ref></item>
+                  <item><ref target="#krp-0141_top13">Zu TOP 13</ref>: <ref target="#krp-0141_b10">Vortrag des Staatsamtes für Inneres und Unterricht über die Veräußerung von Klostervermögen des Stifts St. Peter in Salzburg, Kreuzhof in Morzg</ref></item>
+               </list>
+            </div>
+            <div type="protokoll">
+               <pb facs="krp-0141_r-0003"/>
+               <div type="top" xml:id="krp-0141_top01">
+                  <head>
+                     <label>
+                        <num n="1">1.</num>
+                        <seg>Beitritt der Staatsregierung zu zwei Gesetzesbeschlüssen der Nationalversammlung.</seg>
+                     </label>
+                  </head>
+                  <p>Über Vorschlag des <hi rend="#letterspaced">Vorsitzenden</hi> erhebt der Kabinettsrat gegen die von der Nationalversammlung beschlossenen Gesetze,</p>
+                  <list>
+                     <item n="1"><label>1.)</label> betreffend Kreditoperationen und</item>
+                     <item n="2"><label>2.)</label> wegen Einführung eines Monopols für Mineralwässer und Mineralwasserprodukte</item>
+                  </list>
+                  <p>keine Vorstellung.</p>
+                  <p>Die erwähnten Gesetze sind demgemäß nach Gegenzeichnung durch den Staatskanzler und die zuständigen Staatssekretäre dem Präsidenten der Nationalversammlung zur Fertigung vorzulegen.</p>
+               </div>
+               <div type="top" xml:id="krp-0141_top02">
+                  <head>
+                     <label>
+                        <num n="2">2.</num>
+                        <seg>Überlassung eines ehemaligen Hofwaggons an die tschechoslowakische Republik.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Paul</hi> teilt mit, dass die tschechoslowakische Regierung das Ersuchen gestellt habe, ihr den Speisewagen des ehemaligen Hofzuges (Nr. 005), welcher mit Gemälden des tschechischen Malers Zenišek geschmückt ist, zu überlassen. Die Rechtslage sei die, dass der ehemalige Hofzug im gemeinsamen Eigentum sämtlicher ehemals österreichischen Staats- und Privatbahnen gestanden sei. Mit den deutschösterreichischen Privatbahnen sei diesfalls ein Übereinkommen be<pb facs="krp-0141_r-0004"/>reits getroffen worden. Es wären nur allfällige Ansprüche der Polen und Jugoslawen in Betracht zu ziehen.</p>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> gibt der Anschauung Ausdruck, dass der in Rede stehende Waggon mit Rücksicht darauf, dass er mit Gemälden eines tschechischen Malers ausgestattet sei und zu einem aliquoten Teil im Eigentum des tschechoslowakischen Staates stehe, dessen Regierung wohl überlassen werden könnte.</p>
+                  <p>Der Kabinettsrat beschließt in diesem Sinne.</p>
+               </div>
+               <div type="top" xml:id="krp-0141_top03">
+                  <head>
+                     <label>
+                        <num n="3">3.</num>
+                        <seg>Beteiligung des Staates an der Ausbeutung des Bergbaubesitzes der Kohlengewerkschaft in Weyer.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Ing. <hi rend="#letterspaced">Zerdik</hi> verweist darauf, dass es Aufgabe der Staatsverwaltung sei mit allen Mitteln eine Steigerung der inländischen Kohlenproduktion anzustreben, um das Land möglichst weitestgehend vom Auslande unabhängig zu machen. Eine Möglichkeit hiezu biete sich in der Annahme eines in jüngster Zeit gestellten Anbotes der Steinkohlenbergwerk und Kalkwerkschaft Weyer Gesellschaft m.b.H., welches auf eine gemeinsame Arbeit des Staates und der früheren Gewerke in einer neu zu bildenden Gesellschaft hinauslaufe.</p>
+                  <p><pb facs="krp-0141_r-0005"/>Die Gewerken hätten sich nach langwierigen Verhandlungen mit einer Kapitalsbeteiligung des Staates unter folgenden Bedingungen bereitgefunden:</p>
+                  <list>
+                     <item n="1"><label>1.)</label> Es wird eine Gesellschaft mit einem Grundkapital 3.000.000 K gegründet. Das Kapital wird aufgebracht zu 54 % durch Apports der bestehenden Gewerkschaft Weyer im Betrage von 1.620.000 K. Der Staat übernimmt die restlichen 46 % im Betrage von 1.380.000 K gegen Bareinzahlung in unentgeltlicher Einbringung seiner im Bereiche des neuen Unternehmens gelegenen Freischürfe.</item>
+                     <item n="2"><label>2.)</label> In den Statuten der neuen Gesellschaft ist die Zulässigkeit einer Erhöhung des Kapitals bis 6 Millionen K vorzusehen. Das Bezugsrecht ist in Verhältnisse von 54:46 den bisherigen Gesellschaftern zu wahren.</item>
+                     <item n="3"><label>3.)</label> Für die Zwecke der erforderlichen Anlagen sichert der Staat der neu zu gründenden Gesellschaft ein Darlehen von vorerst 7 Millionen K auf die Dauer von 15 Jahren, erklärt sich jedoch bereit, dieses Darlehen auf 12 Millionen K zu erhöhen, wenn die mit den geführten Aufschlussarbeiten erzielten Erfolge solcher Art sind, dass nach fachmännischem Ermessen die Gewähr <pb facs="krp-0141_r-0006"/>für die Entwicklung eines Bergbaubetriebes mit angemessenen Gewinn geboten ist.</item>
+                  </list>
+                  <p>Die Entscheidung über die Bereitstellung dieses zweiten Darlehenteiles wird von dem Gutachten eines sachkundigen Ausschusses abhängig gemacht. Der Ausschuss wird von je einem Sachkundigen des Staates und der übrigen Gesellschafter und dem Berghauptmann von Wien als Vorsitzenden gebildet. Bei abweichender Ansicht entscheidet der Berghauptmann.</p>
+                  <p>Das Darlehen wird allmählich dem Erfordernisse entsprechend flüssig gemacht werden.</p>
+                  <list>
+                     <item n="1"><label>4.)</label> Das Anlagedarlehen bleibt bis zur Ausschüttung einer 6%igen Dividende zinsenfrei. Der diese Dividende übersteigende Betrag wird sodann in erster Linie für die Bezahlung von 4 % Zinsen für das staatliche Darlehen aufgewendet werden. Der Restteil des Überschusses wird zur Hälfte für die Schaffung eines Darlehentilgungsfonds verwendet werden, während die zweite Hälfte als Superdividende zur Auszahlung kommen wird.</item>
+                     <item n="2"><label>5.)</label> Die Tilgung des gesamten gewährten Darlehens wird nach Ablauf von 15 Jahren vom Beginne des Vertrages an<pb facs="krp-0141_r-0007"/>gerechnet, in 15 gleichen Jahresraten unter Berechnung von 6 % Zins- und Zinseszinsen vorgenommen werden.</item>
+                     <item n="3"><label>6.)</label> In einen zwischen der bestehenden Gewerkschaft und der neuen Gesellschaft abzuschließenden Übereinkommen ist festzulegen, dass der alten Gewerkschaft nebst den ihr für die Überlassung des Werkes zu gewährenden Anteilen der neuen Gesellschaft ein Barbetrag von 1 Million K zu vergüten ist. Dieser Betrag wird zur Befriedigung einiger alter Gewerken dienen, welche noch zur Zeit günstiger valutarischer Verhältnisse Geld für die ersten Aufschlussarbeiten aufgewendet haben und nunmehr eine entsprechende Entschädigung verlangen, bevor sie ihre Zustimmung zur Bildung einer neuen Gesellschaft geben.</item>
+                     <item n="4"><label>7.)</label> Die neue Gesellschaft verpflichtet sich, der alten Weyer GmbH oder deren Rechtsnachfolgern eine Förderprämie von 1 K per t aus dem gewerkschaftlichen Besitz geförderter und wirklich verfrachteter Kohle für die Dauer von 15 Jahren zu leisten.</item>
+                     <item n="5"><label>8.)</label> Als Übernahmstag wird rückwirkend der 1. Oktober 1919 angesetzt.</item>
+                     <item n="6"><label>9.)</label> Die Leitung, der Aufsichtsrat der Gesellschaft werden nach den Vor<pb facs="krp-0141_r-0008"/>schlägen der beiden Gruppen im Verhältnisse von 54:46 gebildet. Bezüglich der Leitung des Werkes und der technischen Beurteilung der beabsichtigten Investitionen muss der Montanabteilung des Staatsamtes für Handel und Gewerbe, Industrie und Bauten ein maßgebender Einfluss gewahrt werden und müssen insbesondere alle Betriebspläne und Investitionsprogramme vom Staatsamte genehmigt werden.</item>
+                     <item n="7"><label>10.)</label> Dem Staatsamte für Handel und Gewerbe, Industrie und Bauten steht es frei, einen Teil seines Aktienbesitzes an das Land Oberösterreich abzutreten.</item>
+                  </list>
+                  <p>Nach einer eingehenden Erörterung der Grubenverhältnisse und der Rentabilität des Unternehmens sowie der dem Staate durch die Beteiligung erwachsenden Vorteile gelangt der sprechende Staatssekretär im Einvernehmen mit dem Staatssekretär für Finanzen zu dem Antrage, der Kabinettsrat wolle ihn ermächtigen, mit der Steinkohlenbergwerk und Kalkwerkschaft Weyer Gesellschaft m.b.H. wegen Bildung einer Aktiengesellschaft mit einem Aktienkapital von 2.050.000 K und einer Beteiligung des Staates mit 46 Anteilen in Verhandlung zu treten, im äußersten Falle die <pb facs="krp-0141_r-0009"/>Festsetzung des Aktienkapitales auf 3 Millionen K unter Annahme der übrigen Forderungen der dermaligen Besitzer zuzugestehen und sodann den Vertrag abzuschließen.</p>
+                  <p>Gleichzeitig wolle der Kabinettsrat seine Zustimmung zur Überlassung eines Teiles der staatlichen Gesellschaftsanteile an das Land Oberösterreich erteilen.</p>
+                  <p>Der Kabinettsrat erhebt den gestellten Antrag zum Beschluss.</p>
+               </div>
+               <div type="top" xml:id="krp-0141_top04">
+                  <head>
+                     <label>
+                        <num n="4">4.</num>
+                        <seg>Militärabbaugesetz.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Deutsch</hi> legt dem Kabinettsrat den im Sinne des Beschlusses vom 23. Jänner d. J. umgearbeiteten Entwurf des Gesetzes, womit Maßnahmen zur Ausscheidung der überzähligen Militärpersonen aus dem aktiven Militärdienstverhältnis getroffen werden (Militärabbaugesetz), vor. Lediglich bzgl. der Bestimmung des § 5 al. 1 Pkt. I a sei, den Intentionen des Kabinettsrates entsprechend, eine Abweichung gemacht worden, indem die Abfertigung mit dem halben Jahresausmaß der Gebühren anstatt bei einer Dienstzeit bis zu elf Jahren, bei einer solchen bis zehn Jahren vorgesehen wurde.</p>
+                  <p>Was den laut § 5 al. 1 Pkt. II den Berufsmilitärpersonen, die eine <pb facs="krp-0141_r-0010"/>anrechenbare Dienstzeit von mehr als 14 bis einschließlich 24 Jahren ausweisen, zuzuerkennenden Zuschlag zur Abfertigung anbelangt, legt der sprechende Staatssekretär dem Kabinettsrat einen Ausweis vor, aus welchem zu entnehmen ist, wie hoch sich die Abfertigungsgebühr bei Bemessung des Zuschlages mit 10 %, bzw. 15 %, bzw. 20 % stellen würde, und stellt dem Kabinett[s]rat die Entscheidung über die Festsetzung des Ausmaßes dieses Zuschlages anheim.</p>
+                  <p>Die den Offizieren mit einer anrechenbaren Dienstzeit von mehr als 24 Jahren auf Grundlage des bestehenden Militärversorgungsgesetzes gebührenden begünstigten fortlaufenden Pensionen werden das Ausmaß der Versorgungsgenüsse der nach dem Pensionsbegünstigungsgesetz in den Ruhestand versetzten Zivilstaatsangestellten übersteigen.</p>
+                  <p>Dagegen würden sich die Pensionen der Berufsunteroffiziere sowie der Gagisten ohne Rangsklasse vielfach niedriger stellen als jene der Zivilstaatsangestellten. Da diese Ungleichmäßigkeit aus politischen Gründen zu vermeiden sei, erbitte sich der sprechende Staatssekretär die Ermächtigung, die Pensionen der Berufsunteroffiziere und Gagisten ohne Rangsklasse durch Gewährung von <pb facs="krp-0141_r-0011"/>Pensionszulagen den Offizierspensionen perzentuell abgleichen zu dürfen.</p>
+                  <p>Nach einer längeren Debatte, an welcher sich Vizekanzler <hi rend="#letterspaced">Fink</hi>, ferner die Staatssekretäre Dr. <hi rend="#letterspaced">Reisch</hi>, Dr. <hi rend="#letterspaced">Ramek</hi> sowie die Unterstaatssekretäre <hi rend="#letterspaced">G1öckel</hi> und Dr. <hi rend="#letterspaced">Resch</hi> beteiligten, ermächtigt der Kabinettsrat den Staatssekretär für Heer[es]wesen, die Gesetzesvorlage in der Nationalversammlung mit der Maßgabe einzubringen, dass das Ausmaß des oberwähnten Zuschlages mit 15 % festzusetzen sein wird. Gleichzeitig erteilt der Kabinettsrat die Ermächtigung zur Gewährung der vom sprechenden Staatssekretär beantragten Pensionszulagen an die Berufsunteroffiziere und Gagisten ohne Rangsklasse. Schließlich stimmt der Kabinettsrat der Erlassung einer Vollzugsanweisung des Staatsamtes für Heereswesen zur Durchführung des in Rede stehenden Gesetzes zu.</p>
+               </div>
+               <div type="top" xml:id="krp-0141_top05">
+                  <head>
+                     <label>
+                        <num n="5">5.</num>
+                        <seg>Vollzugsanweisung über die Weitergewährung des 50%igen Zuschusses zu den Unterhaltsbeiträgen für die Angehörigen von Kriegsgefangenen bis Ende Juni 1920.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Deutsch</hi> erbittet und erhält vom Kabinettsrate die Ermächtigung zur Erlassung einer Vollzugsanweisung, womit die Weitergewährung des 50%igen Zuschusses zu den Unterhaltsbeiträgen für die An<pb facs="krp-0141_r-0012"/>gehörigen von Kriegsgefangenen bis Ende Juni 1920, verfügt wird.</p>
+               </div>
+               <div type="top" xml:id="krp-0141_top06">
+                  <head>
+                     <label>
+                        <num n="6">6.</num>
+                        <seg>Erweiterung der übereinkommengemäßen Fahrbegünstigungen für Eisenbahnbedienstete und deren Familienangehörigen.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Paul</hi> teilt mit, dass der vormalige deutschösterreichische Eisenbahnbeirat (jetzt: Zentralausschuss der Personalvertretung der österreichischen Staatsbahnen) in seiner Sitzung vom 11. Februar 1919 unter anderem folgenden Antrag gestellt habe:</p>
+                  <p>„Den Familienangehörigen der aktiven und pensionierten (provisionierten) Bediensteten sowie den Pensionisten (Provisionisten) selbst ist an Stelle der nach dem bisherigen Fahrbegünstigungsübereinkommen auf den Linien der fremden Bahnverwaltungen festgesetzten 50%igen Fahrpreisermäßigung die diesen Personen auf den Linien der eigenen Bahnverwaltung bereits zustehende Begünstigung des Personalfahrpreises einzuräumen.“</p>
+                  <p>Der Antrag des Eisenbahnbeirates entspreche einem langjährigen Wunsche des Eisenbahnpersonales, der von diesem wie auch von den einzelnen Organisationen wiederholt, zuletzt anlässlich der Streikbewegung im Sommer 1919 mit allem Nachdrucke vorgebracht worden sei.</p>
+                  <p>Wenngleich die Durchführung des <pb facs="krp-0141_r-0013"/>in Rede stehenden Antrages mit einem bedeutenden Einnahmenausfall für die Transportunternehmungen und insbesondere auch für die österreichische Staatseisenbahnverwaltung verbunden wäre, so sei das Staatsamt für Verkehrswesen dennoch der Anschauung, dass sich die Erfüllung dieses Wunsches des Personales unter den gegenwärtigen Verhältnissen namentlich auch im Hinblicke auf die inzwischen erfolgte namhafte Erhöhung der Personentarife nicht länger mehr von der Hand weisen lasse, zumal bereits sämtliche privaten österreichischen Transportunternehmungen diese Forderung ihrerseits nachdrücklich unterstützt und soweit hiebei der Bereich ihrer eigenen Verwaltung in Betracht komme, ihre Zustimmung zu der Verwirklichung dieses Antrages bereits gegeben haben.</p>
+                  <p>Das Staatsamt für Finanzen, mit welchem das Einvernehmen gepflogen wurde, würde seine Bedenken gegen die beantragte Maßnahme nur dann zurückstellen, wenn gleichzeitig erklärt werden könnte, dass Beispielsfolgerungen für sonstige Bedienstetengruppen (Postbedienstete) nicht zu befürchten seien und wenn diese Erklärung durch einen zustimmenden Beschluss des Kabinettsrates bekräftigt würde.</p>
+                  <p>Der sprechende Staatssekretär nehme nun keinen Anstand zu erklären, dass <pb facs="krp-0141_r-0014"/>die vom Staatsamt für Finanzen befürchteten Beispielsfolgerungen überhaupt nur dann gewärtigt werden könnten, wenn auch andere Bedienstetengruppen mit übereinkommengemäßen Fahrbegünstigungslegitimationen beteilt wären, was jedoch nicht der Fall sei, da sich die Bestimmungen des Fahrbegünstigungsübereinkommens ausschließlich nur auf die Bediensteten der Eisenbahnunternehmungen (und der Donaudampfschifffahrtsgesellschaft) beziehen. Was insbesondere die vom Staatsamt für Finanzen angeführten <hi rend="#u">Postbediensteten</hi> anbelange, so beziehen sich die ihnen und ihren Angehörigen eingeräumten Fahrbegünstigungen nur auf den Bereich der österreichischen Staatsbahnen und zwar hätten die aktiven Bediensteten Anspruch auf den Personalfahrpreis, die Angehörigen auf eine 50%ige Fahrpreisermäßigung. Den pensionierten Postbediensteten steht nur die den pensionierten Staatsbediensteten überhaupt eingeräumte Fahrbegünstigung (50 %) zu. Eine Erweiterung des Kreises der begünstigten Personen könnte jedenfalls nur mit Zustimmung des Staatsamtes für Finanzen vorgenommen werden, das demnach jederzeit Gelegenheit haben werde, zu einer solchen Erweiterung Stellung zu nehmen. <pb facs="krp-0141_r-0015"/>Redner stelle daher den Antrag:</p>
+                  <p>Der Kabinettsrat wolle diese Erklärung zur Kenntnis nehmen und unter der ausdrücklichen Bedingung, dass Beispielsfolgerungen hieraus nicht abgeleitet werden dürfen, keine Einwendung dagegen erheben, dass im Sinne des Antrages des Eisenbahnbeirates den Familienangehörigen der aktiven und pensionierten (provisionierten) Eisenbahn- und Schifffahrtsbediensteten sowie den Pensionisten (Provisionisten) der in Rede stehenden Art selbst, insoweit sie einen Anspruch auf übereinkommengemäße Fahrbegünstigungslegitimationen haben, auf den Linien der dem Übereinkommen angehörigen fremden Bahnunternehmungen (und der Donaudampfschifffahrtgesellschaft) anstatt der bisherigen 50%igen Fahrpreisermäßigung künftighin die Begünstigung des Personalfahrpreises eingeräumt werde.</p>
+                  <p>Der Kabinettsrat wolle sohin das Staatsamt für Verkehrswesen ermächtigen, in diesem Sinne das weitere im Gegenstande Erforderliche zu veranlassen.</p>
+                  <p>Der Kabinettsrat nimmt die Erklärung des Staatssekretärs für Verkehrswesen zur Kenntnis und erteilt ihm die erbetene Ermächtigung.</p>
+                  <p><pb facs="krp-0141_r-0016"/>In diesem Zusammenhange weist Staatssekretär Paul auf die in der letzten Zeit stetig wachsende Zunahme der Ansprüche auf Erteilung von Fahrbegünstigungen hin. So sei bereits seit über einem Jahr die Frage der Gewährung von Fahrbegünstigungen an die Landesbeamten anhängig, ferner hätten die Heimkehrer, die Invaliden, die Gemeindebeamten, die Lehrer, etc. ähnliche Ansprüche erhoben. Er müsse daher um eine Weisung des Kabinettsrates bitten, wie er sich diesen Ansuchen gegenüber zu verhalten hätte.</p>
+                  <p>Nach einer eingehenden Debatte gelangt der Kabinettsrat zu folgenden Beschlüssen:</p>
+                  <list>
+                     <item n="1"><label>1.)</label> Das Staatsamt für Verkehrswesen wird beauftragt, bei der Gewährung von Fahrbegünstigungen über den Kreis der bisherigen Anspruchsberechtigten nicht hinauszugehen.</item>
+                     <item n="2"><label>2.)</label> Das Staatsamt für Verkehrswesen wird aufgefordert, eine Regelung des Fahrbegünstigungswesens der Pensionisten vorzubereiten.</item>
+                     <item n="3"><label>3.)</label> Das Ansuchen der Landesbeamten um Gewährung von Fahrbegünstigungen ist bis zur Verfassungsreform unerledigt zu lassen.</item>
+                     <item n="4"><label>4.)</label> Die Parteien der Nationalversammlung wären dafür zu interessieren, <pb facs="krp-0141_r-0017"/>für eine Einschränkung des Fahrbegünstigungswesens einzutreten.</item>
+                  </list>
+               </div>
+               <div type="top" xml:id="krp-0141_top07">
+                  <head>
+                     <label>
+                        <num n="7">7.</num>
+                        <seg>Gesetzesbeschlüsse des Tiroler Landtages, betreffend die Verbauung des Bockingergrabens im oberen Brixentale, betreffend die Ausführung von Elementarbauten am Stuibenbache bei Schattwald und betreffend die Ergänzung der Schutzbauten am Lussbache bei Lermoos.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Stöckler</hi> erbittet und erhält vom Kabinettsrate die Ermächtigung, dass von der Erhebung einer Vorstellung gegen die vom Tiroler Landtag in seiner Sitzung am 19. Dezember 1919 gefassten Gesetzesbeschlüsse, betreffend die Verbauung des Bockingergrabens im oberen Brixentale, betreffend die Ausführung von Elementarbauten am Stuibenbache bei Schattwald und betreffend die Ergänzung der Schutzbauten am Lussbache bei Lermoos, abgesehen und die Landesregierung hievon unter Übermittlung je eines mit der Gegenzeichnung des Staatssekretärs für Land- und Forstwirtschaft versehenen Exemplares der Gesetze verständigt werde.</p>
+               </div>
+               <div type="top" xml:id="krp-0141_top08">
+                  <head>
+                     <label>
+                        <num n="8">8.</num>
+                        <seg>Berufung eines ständigen Vertreters des Staatsamtes für Land- und Forstwirtschaft als Mitglied in die Zentralgrenzkommission.</seg>
+                     </label>
+                  </head>
+                  <p>Über Antrag des Staatssekretärs Stöckler genehmigt der Kabinettsrat in Ergänzung des Kabinettsratsbeschlusses vom 31. Oktober 1919, betreffend die Einrichtung des Dienstes zur Regelung und Festsetzung der neuen Staatsgrenzen, die Berufung eines ständigen Vertreters des Staatsamtes für <pb facs="krp-0141_r-0018"/>Land- und Forstwirtschaft als Mitglied in die Zentralgrenzkommission.</p>
+               </div>
+               <div type="top" xml:id="krp-0141_top09">
+                  <head>
+                     <label>
+                        <num n="9">9.</num>
+                        <seg>Vollzugsanweisung zur Durchführung des Liquidierungsgesetzes.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Deutsch</hi> unterbreitet dem Kabinettsrate den im Sinne der Beschlüsse einer Kabinettskonferenz (vgl. Kabinettsprotokoll Nr. 140, Pkt. 2) umgearbeiteten Entwurf einer Vollzugsanweisung, womit zur Durchführung des Gesetzes vom 18. Dezember 1919, StGBl. Nr. 577, Bestimmungen über die bisher zwischenstaatlich besorgte Liquidation getroffen werden.</p>
+                  <p>Der Kabinettsrat stimmt diesem Entwurfe mit nachfolgenden Änderungen zu:</p>
+                  <list>
+                     <item n="1"><label>1.)</label> Der Schlussabsatz des Art. 1 hat zu lauten:</item>
+                  </list>
+                  <p>„Die Vergleichskommission für laufende Militärlieferungsverträge bleibt in ihrer gegenwärtigen Zusammensetzung bis zur Neuregelung bestehen.“</p>
+                  <list>
+                     <item n="1"><label>2.)</label> Art. 2 1. Abs. hat zu lauten:</item>
+                  </list>
+                  <p>„Die liquidierenden Behörden ..... haben mit 23. Dezember 1919 rechtlich zu bestehen aufgehört. Die liquidierenden Zentralstellen .....“</p>
+                  <list>
+                     <item n="1"><label>3.)</label> Art. 2, 5. Abs., hat zu lauten:</item>
+                  </list>
+                  <p>„Alle vorhandenen Barschaften, Inventare, Akten, Archive und Registra<pb facs="krp-0141_r-0019"/>turen sind mit 23. Dezember 1919 abzuschließen und formell und protokollarisch zu übergeben bzw. zu übernehmen.“</p>
+                  <list>
+                     <item n="1"><label>4.)</label> Im Art. 4, Abs. 8, ist das Wort „Hofrat“ zu streichen.</item>
+                     <item n="2"><label>5.)</label> Der Schlusssatz des vorletzten Absatzes des Art. 4 hat zu lauten:</item>
+                  </list>
+                  <p>„Das gesamte Personal bleibt im Personalstande des Amtes, dem es entnommen ist.“</p>
+                  <list>
+                     <item n="1"><label>6.)</label> Der letzte Abs. des Art. 4 ist dahin zu ergänzen, dass auch die Staatskanzlei und der Staatsrechnungshof je einen ständigen Vertreter in den Liquidierungsbeirat entsenden.</item>
+                     <item n="2"><label>7.)</label> Art. 5 erhält folgende Fassung:</item>
+                  </list>
+                  <p>„Zum Liquidierungsinspektorate gelangen insbesondere Liquidierungsangelegenheiten allgemeiner Natur oder solche, welche mehrere Ressorts zugleich betreffen.</p>
+                  <p>Diese Angelegenheiten sind von den Liquidierungsinspektoren mit dem Liquidierungsbeirat zu beraten. Im Falle erzielter Einhelligkeit werden die Verfügungen durchgeführt, wenn kein zuständiger Staatssekretär Einspruch erhebt; andernfalls wird die Angelegenheit zwischen den Liquidierungsinspektoren und den beteiligten Staatsse<pb facs="krp-0141_r-0020"/>kretären ausgetragen oder dem Kabinettsrat zur Entscheidung unterbreitet.“</p>
+                  <list>
+                     <item n="1"><label>8.)</label> Der Schlusssatz des Art. 6 2. Abs. hat zu lauten:</item>
+                  </list>
+                  <p>„Die Einsichtnahme in diese Materialien kann von den Gesandten......beim Staatsamt für Äußeres angesprochen werden.“</p>
+               </div>
+               <div type="top" xml:id="krp-0141_top10">
+                  <head>
+                     <label>
+                        <num n="10">10.</num>
+                        <seg>Tarifermäßigung für Milchtransporte.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Loewenfeld-Russ</hi> weist darauf hin, dass durch die am 1. Jänner 1920 eingetretene Eisenbahnfrachttariferhöhung die Transportkosten für die Milch wesentlich gestiegen seien. Wenn nun nicht eine Erhöhung der Milchpreise oder eine Rückvergütung der erhöhten Transportkosten oder eine Herabsetzung des Frachttarifes zugestanden werde, bestehe die Gefahr, dass die gegenwärtig sich günstig gestaltende Milchanlieferung wesentlich zurückgehe.</p>
+                  <p>Der sprechende Staatssekretär spricht sich, vom Staatssekretär <hi rend="#letterspaced">Hanusch</hi> unterstützt, für den letzterwähnten Ausweg aus, zumal bei der Besonderheit der Verwendung des in Frage stehenden Lebensmittels ein Präjudiz für andere Artikel wohl nicht zu gewärtigen sei.</p>
+                  <p><pb facs="krp-0141_r-0021"/>Nachdem auch Staatssekretär Dr. <hi rend="#letterspaced">Reisch</hi> dagegen keine Einwendung erhoben hatte, beschließt der Kabinettsrat die Wiederherstellung des Frachttarifes vom 15. Oktober 1919 für Milchtransporte.</p>
+               </div>
+               <div type="top" xml:id="krp-0141_top11">
+                  <head>
+                     <label>
+                        <num n="11">11.</num>
+                        <seg>Abänderung der Bautaxen für Innsbruck.</seg>
+                     </label>
+                  </head>
+                  <p>Unterstaatssekretär Dr. <hi rend="#letterspaced">Ellenbogen</hi> teilt mit, dass der Tiroler Landtag in seiner Sitzung am 18. Dezember 1919 einen Beschluss gefasst habe, wonach der im § 110 der Bauordnung für die Landeshauptstadt Innsbruck enthaltene Tarif der Bau- und Kommissionstaxen, zu deren Einhebung die Gemeinde berechtigt ist, den heutigen Verhältnissen entsprechend abgeändert werden soll. Bei den dermaligen Baukosten sei durch die beschlossene Taxenerhöhung eine übermäßige Belastung der Bautätigkeit nicht zu besorgen. Auch sonst gebe das Gesetz, mit dessen Vollzug die Tiroler Landesregierung betraut wird, zu Einwendungen der Staatsregierung keinen Anlass. Der sprechende Unterstaatssekretär stelle daher den Antrag, dass von der Erhebung einer Vorstellung gegen den in Rede stehenden Gesetzesbeschluss abgesehen und der sofortigen Kundmachung des Gesetzes zugestimmt werde.</p>
+                  <p><pb facs="krp-0141_r-0022"/>Der Kabinettsrat erhebt diesen Antrag zum Beschluss.</p>
+               </div>
+               <div type="top" xml:id="krp-0141_top12">
+                  <head>
+                     <label>
+                        <num n="12">12.</num>
+                        <seg>Einführung einer ständigen zwischenstaatsamtlichen Kommission für den Neubau des allgemeinen Krankenhauses und seiner Kliniken in Wien.</seg>
+                     </label>
+                  </head>
+                  <p>Unterstaatssekretär <hi rend="#letterspaced">Glöckel</hi> erinnert daran, dass behufs Beschleunigung der Verhandlungen, betreffend den Neubau des allgemeinen Krankenhauses und seiner Kliniken im Jahre 1902 aufgrund kaiserlicher Entschließung eine besondere Ministerialkommission eingesetzt worden sei, in welcher sämtliche an der Aktion beteiligten Ministerien vertreten waren; außerdem gehörten dieser Kommission Vertreter der Statthalterei als Verwalterin des Wiener Krankenanstaltenfonds, Vertreter des Professorenkollegiums und der Vorstand der für die Neubauaktion geschaffenen Baukanzlei an.</p>
+                  <p>Infolge des Ausbruches des Krieges sei in dem Fortgange der Bauaktion ein Stillstand eingetreten. Es sei aber getrachtet und auch erreicht worden, den schon vor Kriegsausbruch begonnenen Teilbau für die dringend notwendige Küche in der neuen Spitalsanlage im Bau fertigzustellen und so weit es anging, mit der immobilen Einrichtung fertigzustellen. Gegenwärtig <pb facs="krp-0141_r-0023"/>wird an der Vollendung der Einrichtung dieser Küche gearbeitet.</p>
+                  <p>Eine sofortige Wiederaufnahme der Bauaktion stoße vor allem aus finanziellen Gründen auf die größten Schwierigkeiten, da die ganze Aktion von vorneherein als eine Kooperation von Krankenanstaltenfonds und Staat geplant gewesen sei, dieser Fonds aber, wie schon vor dem Kriege, jetzt infolge seiner noch desolater gewordenen Finanzlage nicht in der Lage sei, irgendwelche Mittel für die Neubauaktion aufzubringen. Eine Änderung in der Sachlage könne nur davon erhofft werden, dass das jetzt vom Volksgesundheitsamt ausgearbeitete Gesetz, betreffend die Errichtung und Erhaltung öffentlicher Heilanstalten, in Kraft trete, da durch dieses Gesetz die Möglichkeit geboten sein werde, eine durchgreifende Sanierung des Wiener Krankenanstaltenfonds durchzuführen.</p>
+                  <p>Wenn auch, abgesehen von diesen finanziellen Schwierigkeiten zur Zeit noch in Betracht komme, dass für eine größere Bautätigkeit die nötigen Materialien entweder gar nicht oder nur zu unerschwinglichen Preisen beschafft werden können, so werde es sich doch empfehlen, um die Aktion wieder in <pb facs="krp-0141_r-0024"/>Gang zu bringen, die seinerzeitige Ministerialkommission mit der der jetzigen Ämterorganisation entsprechenden Zusammensetzung zu einer Sitzung einzuberufen, damit sie den Stand der ganzen Aktion zur Kenntnis nehme und berate, welche Schritte weiter zu unternehmen wären.</p>
+                  <p>Der sprechende Unterstaatssekretär erbitte sich daher vom Kabinettsrate die Ermächtigung, die Kommission einberufen, bzw. die beteiligten Staatsämter einladen zu dürfen, ihre Vertreter namhaft zu machen.</p>
+                  <p>Der Kabinettsrat erteilt die erbetene Ermächtigung.</p>
+               </div>
+               <div type="top" xml:id="krp-0141_top13">
+                  <head>
+                     <label>
+                        <num n="13">13.</num>
+                        <seg>Veräußerung von Klostervermögen.</seg>
+                     </label>
+                  </head>
+                  <p>Unterstaatssekretär <hi rend="#letterspaced">Miklas</hi> teilt mit, dass das Benediktinerstift St. Peter in Salzburg mit dem Kaufvertrage de dato Salzburg, 4. Jänner 1919 die Veräußerung der aus mehreren Parzellen und Parzellenteilen, inliegend sub EZ 82 und 202 des Grundbuches Morzg, bestehenden Realität „Kreuzhof“ an Kunibert und Josefine Lamberg in Morzg um den Kaufpreis von 200.000 K in Aussicht genommen hatte. Da die über Auftrag des Staatsamtes für Inneres und Unterricht durchgeführte Schätzung des Verkaufs<pb facs="krp-0141_r-0025"/>objektes dessen Wert mit 249.000 K erkennen ließ und mithin die Veräußerung zum Verkaufspreise von 200.000 K für das Stift nicht vorteilhaft gewesen wäre, sei über die seitens des Kabinettsrates in seiner Sitzung vom 15. Juli 1919 dem Unterstaatssekretär für Kultus erteilte Ermächtigung zu diesem Kaufvertrage die staatsbehördliche Genehmigung zu versagen, die erbetene kultusbehördliche Genehmigung nicht erteilt worden. Laut Berichtes der Landesregierung Salzburg sei in der Folge zwischen der Stiftvorstehung und dem Ehepaare Lamberg ein Zusatzvertrag vom 7. November 1919 abgeschlossen worden, laut dessen der Verkaufspreis einverständlich auf 350.000 K erhöht, dieser seitens der Käufer auch bereits erlegt und dessen Empfang seitens des Stiftes per contractum quittiert wurde. Da der Verkauf zu diesem Preise sich als für das Stift vorteilhaft erweise, auch die Realität schon seit 1. Jänner 1919 unter Aufwendung namhafter Investitionen vom Ehepaare Lamberg tatsächlich bewirtschaftet werde und die Zustimmung der kirchlichen Behörde bereits vorliege, so stelle der sprechende Unterstaatssekretär in Übereinstimmung mit dem Vorschlage der Land<pb facs="krp-0141_r-0026"/>esregierung in Salzburg den Antrag, der Kabinettsrat wolle ihm die Ermächtigung erteilen, zu der in Rede stehenden Veräußerung die staatsbehördliche Genehmigung im Sinne der Ministerialverordnung vom 20. Juni 1860, RGBl. Nr. 162, aussprechen zu dürfen.</p>
+                  <p>Der Kabinettsrat erteilt die erbetene Ermächtigung.</p>
+               </div>
+            </div>
+            <div type="stenogramme">
+               <div n="1">
+                  <head>Kabinettsprotokoll Nr. 141 vom 27.1.1920</head>
+                  <p><pb facs="krp-0141_s01-0001"/>[…]</p>
+                  <p>1) Bezüge der Volksbeauftragten </p>
+                  <p>&lt;&gt;</p>
+                  <p>Loewenfeld: Mit Gesetz vom 28.XI.1919 wurde eine Teuerungszulage von 1000 K </p>
+                  <p>zuerkannt. Gebührt die außerdem noch?</p>
+                  <p>Renner: Ja.</p>
+                  <p>2) Kundmachung Kreditoperationen, </p>
+                  <p>Mineralwassermonopol.</p>
+                  <p>Angenommen</p>
+                  <p>Allizé bittet Reisch und Paul die Sache zu beschleunigen. Die französische Regierung wäre sehr dankbar. </p>
+                  <p>Brief beantworten, dass Reisch beauftragt und gelegentlich seiner Reise nach Paris die Sache zu beschleunigen. </p>
+                  <p>Abschrift Brief und der Antwort an Reisch.</p>
+                  <p>Friedrich Reischl</p>
+                  <p>Angenommen</p>
+                  <p>Übergabe [<hi rend="#i">Einschub:</hi>] eines Hofwaggons [<hi rend="#i">Einschub Ende</hi>] an die Tschechen.</p>
+                  <p>Paul: Der Hofzug ist gemeinsamer Hofzug hergestellt von sämtlichen Österreich-Bahnen. </p>
+                  <p>Die Tschechen haben erklärt, dass sie die tschechischen Privatbahnen auf sich nehmen werden und ich habe gesagt, ich werde die österreichischen Privatbahnen </p>
+                  <p>übernehmen. Die Sache ist hier geordnet. Nun sind aber die österreichischen Staatsbahnen Miteigentümer. Die österreichischen Staatsbahnen </p>
+                  <p>sind aber zum Teil auch auf Jugoslawien und Polen übergegangen. Kann die Regierung die Verantwortung übernehmen, dass wenn der Wagen an die Tschechen übergeben wird, mit den Polen und Jugoslawen </p>
+                  <p>nicht vorher verhandelt wird.</p>
+                  <p>Renner: Unter dem Titel, dass dieser Waggon mit Gemälden des tschechischen Malers Zenišek geschmückt ist und aliquoter Teil den Tschechen </p>
+                  <p>gehört, sollte man den Wagen dem Präsidenten Masaryk </p>
+                  <p><pb facs="krp-0141_s01-0002"/>der tschechoslowakischen Republik den Wagen 005 mit einem entsprechen Schreiben zur Verfügung zu stellen.</p>
+                  <p>Ellenbogen: In der gestrigen Sitzung des B.A. und das Tabakmonopol verhandelt. </p>
+                  <p>Aus Äußerungen Reisch habe ich entnommen, dass Reisch prinzipiell dagegen ist, dass die ausländische </p>
+                  <p>Gesellschaft mit dem Staat eine Gemeinschaft in Form einer gemeinwirtschaftlichen Anstalt eintritt, </p>
+                  <p>weil diese Form im Ausland unbekannt sei. Dagegen sprechen Erfahrungen, die ich selbst gemacht habe, wonach z.B. </p>
+                  <p>Franzosen gemeinsam mit uns eine Fabrik im Arsenal errichten wollen. Derartige Formen </p>
+                  <p>sind in Frankreich bekannt. Ich würde eine Beteiligung in der Form, dass der Staat alle Tabakeinrichtungen </p>
+                  <p>als Apparat mitbringt für möglich halten. Gemischt wirtschaftliche Konstruktion scheint mir durchaus möglich. </p>
+                  <p>Ich muss von Standpunkt der Sozialisierungskommission gegen die prinzipielle Ablehnung der Beteiligung des Staates an derartigen Aktionen </p>
+                  <p>Bedenken erheben. In einem Fall, wo wir selbst Besitzer eines Betriebes sind von unserem Mitbeteiligungsrecht vollständig abgehen, </p>
+                  <p>halte ich für ganz unangebracht und ich meine, dass 1.) die finanziellen Interessen des Staates besser gewahrt würden, wenn der Staat eine </p>
+                  <p>gemeinwirtschaftliche Unternehmung eingeht. </p>
+                  <p>Bei dem Umstand, dass das Ausland in diesem Fall aber nicht zurückhaltend ist, sondern eine ganze Reihe von Komponenten da sind. </p>
+                  <p>Ich möchte bitten, dass in den Verhandlungen in Paris die weitere Beteiligung des Staates in einem Prozentverhältnis an dem Betrieb </p>
+                  <p>in Aussicht nimmt. Es würde uns dann die Beteiligung.—</p>
+                  <p>Reisch: Ich habe erklärt, wenn möglich das Tabakmonopol so erweitern, dass wir möglichst viele ausländische Valuta bekommen. Daher </p>
+                  <p>kann kein großer Vorbehalt für den Staat gewählt werden. </p>
+                  <p>Es soll aber eine solche Form gewählt werden, dass ich möglichst viel Valuta bekomme und dass ein möglichst großer Gewinnanteil über die </p>
+                  <p>nämliche Verzinsung gesichert wird. Diese Konstruktion der Gesellschaft ist meines Erachtens nur in der Form einer AG möglich, </p>
+                  <p>AG sui generis, in dem sich der Staat vertragsmäßig möglichst große Rechte und weit mehr Einfluss sichert als die gemeinwirtschaftlichen </p>
+                  <p>Anstalten. Ich nehme mir 2 Verwaltungsräte und einen Regierungskommissär mit den weitestgehenden Rechten. Der Regierungskommissär </p>
+                  <p>muss nach der Natur des Unternehmens mit besonderen Rechten ausgestattet sein. Ein Fachmann, der den ganzen Produktionsprozess dauernd überwacht, </p>
+                  <p>ausgestattet mit Insp. Organen. Ich wähle zwar die dem Ausland geläufige Form der AG, werde aber die Rechte der AG. </p>
+                  <p>vertragsmäßig möglichst beschränken bzw. dem Staat die möglichst großen Rechte vertragsmäßig sichern.</p>
+                  <p>Aufklärung ist zur Kenntnis genommen.</p>
+                  <p><pb facs="krp-0141_s01-0003"/>8c) Zerdik: Kohlengewerkschaft Weyr.</p>
+                  <p>Eisler: Was fordert das Werk.</p>
+                  <p>Zerdik: Jetzt dient das, was das Werk fordert, zum Betrieb der Kalkgewerkschaft. 8-10 Waggons im Monat.</p>
+                  <p>Angenommen.</p>
+                  <p>3a) Militärabbaugesetz. </p>
+                  <p>In einem Fall bitte ich von dem Gesetzesantrag abzusehen. </p>
+                  <p>Offiziere bis 11 Jahre halb-, </p>
+                  <p>bis 14 ganzjährig.</p>
+                  <p>Unsere Offiziere, die während des Krieges eingetreten sind, gehen nur bis 10 Jahre. Wenn 11 Jahre, so fallen auch Offiziere, </p>
+                  <p>die vor dem Krieg eingetreten sind, was nicht die Absicht des Kabinetts ist. </p>
+                  <p>Bitte daher bis einschließlich 10 Jahre das halbe Ausmaß. </p>
+                  <p>Die Zwangsabfertigung wird nach den vorgelegten Tabellen bei den Jüngsten (Lt). </p>
+                  <p>Prämie von 20 % wird vorgeschlagen. Bitte Entscheidung des Kabinetts über das Ausmaß. </p>
+                  <p>Nach 24 Dienstjahren treten die Pensionen ein. </p>
+                  <p>Mit dieser Pensionsbegünstigung bekommen die Offiziere mehr als die zivilen Angestellten, weil es ein zwangsweiser A</p>
+                  <p>bbau ist. </p>
+                  <p>Begünstigte Pensionen für Berufsunteroffiziere und Gagisten ohne Rangsklasse. Die G.o.R. bekommen etwas weniger als die </p>
+                  <p>zivilen Beamten. Es wäre nur möglich auszugleichen, wenn das Kabinett die Ermächtigung gibt durch Personalzulagen </p>
+                  <p>auszugleichen.</p>
+                  <p>Reisch: Es ist hier die Rede, dass man einen 20 %-Zuschlag geben soll. </p>
+                  <p>Ich würde glauben, dass die 20 % Prämie ermäßigt werden sollen, um die Offiziere nicht erheblich besser zu stellen </p>
+                  <p>als die zivilen Angestellten. Ein 10 %-Zuschlag dürfte genügen, um eine Ausgleichung zu bewirken und sogar eine Besserstellung </p>
+                  <p><pb facs="krp-0141_s01-0004"/>zu erzielen.</p>
+                  <p>Fink: Es würden die wenigen Gagisten, die mehr als 24 Dienstjahre haben und regelmäßig pensioniert werden auch höhere Pensionen </p>
+                  <p>bekommen als die Zivilen. Wenn die zwangsweise Abgefertigten mehr bekommen, so halte ich das nicht für so gefährlich als bei den Ersten.</p>
+                  <p>Deutsch: Was die Frage der Zwangsabfertigungen anbelangt, so verstehe ich den Antrag 10 %. Vielleicht sollte man 15 % geben.</p>
+                  <p>Reisch: Vielleicht 15 % bei den Niedrigen, 10 % bei den Höheren.</p>
+                  <p>Deutsch: Man müsste die Älteren doch eher berücksichtigen, weil sie nicht so leicht einen Beruf finden. Bin für 15 % </p>
+                  <p>bei allen Zwangsabzufertigenden.</p>
+                  <p>Reisch: Ein zwingendes Moment liegt nicht vor, weil bereits alle bei 10 % besser gestellt sind als die Zivilen.</p>
+                  <p>Ramek: Es wird sich die Notwendigkeit herausstellen 15 %. Wenn ein Zivilbeamter nach dem P.B.Gesetz </p>
+                  <p>in Pension geht und sich abfertigen lässt, so hat er in der Regel einen wirtschaftlichen Rückhalt durch die Sicherung eines Berufs, sonst tut er es </p>
+                  <p>nicht. Die Offiziere werden zwangsweise abgebaut, sie müssen weg und haben keine so leichte Möglichkeit einen anderen Beruf </p>
+                  <p>zu ergreifen. Da machen schon die 5 % mehr nicht so viel aus als dass man von einem Luxus spricht. Unterstütze 15 %.</p>
+                  <p># 15 % angenommen.</p>
+                  <p># Ermächtigung Personalzulagen für Unteroffiziere zu gewähren, um die </p>
+                  <p>15 % für die Offiziere sinngemäß auch auf die Unteroffiziere anzuwenden. </p>
+                  <p>Sinngemäß die Unteroffiziere auf eine ähnliche Grundlage zu bringen wie die Offiziere. Denselben %-Satz für die Pensionen der U.O. zu erhöhen, um sie ebenso zu erhöhen über die zivilen </p>
+                  <p>Beamten wie die Offiziere<lb/></p>
+                  <p># Die Grundsätze dieser Erhöhungen sollen mit dem FA. vereinbart werden.</p>
+                  <p>Begünstigte Pensionen für Offiziere.</p>
+                  <p>Glöckel: Schwer zu vertreten, wenn Zivile mehr bekommen als Offiziere.</p>
+                  <p>Reisch: Es ist nur durch die bestehenden Gesetze in beiden Fällen</p>
+                  <p>Resch: Es handelt sich ja doch um Zwangspensionen. Das ist eine Rechtfertigung.</p>
+                  <p>Angenommen.</p>
+                  <p><pb facs="krp-0141_s01-0005"/>Vollzugsanweisung ebenfalls genehmigt.</p>
+                  <p>3b) 50 % -igen Zuschuss Unterhaltsbeitrag für die Angehörigen der </p>
+                  <p>Kriegsgefangenen.</p>
+                  <p>Bis 30.Juni</p>
+                  <p>4) Paul: Fahrbegünstigungen</p>
+                  <p>Reisch: Zelinka hat schon erklärt, dass den Postbediensteten alle Begünstigungen </p>
+                  <p>zugesprochen werden müssen auch auf den Privatbahnen wie den Eisenbahnbediensteten.</p>
+                  <p>Hanusch: In der Bevölkerung große Missstimmung über die Karten, die die Eisenbahner und Privatbediensteten benützen.</p>
+                  <p>Paul: Seit einem Jahr liegt im FA. ein Antrag betreffend Landesbeamtenverlangen nachdem sie Staatsbeamte sind, </p>
+                  <p>Staatsbeamten-Legitimationen erhalten. Salzburg und Tirol haben ihren sämtlichen Landesangestellten die Staatsbeamten-</p>
+                  <p>Legitimation ausgefolgt, die anderen Länder werden nachfolgen und sämtliche Landesbeamte werden im Besitz von Staatsbeamten-Legitimation sein. </p>
+                  <p>Hoftheater-Angehörige sind auch gekommen mit der Begründung Staatstheater – Staatsbeamte. </p>
+                  <p>Ich kann der Fülle von Ansuchen, die von Heimkehrern, Invaliden, Lehrern etc. nicht mehr widerstehen. </p>
+                  <p>Ich muss mich auf einen strikten Kabinettsbeschluss stützen können. […]</p>
+                  <p>[…] Dass von StA für Finanzen die Frage geklärt wird wegen der Landesbeamten, die behaupten Staatsbeamte zu sein. </p>
+                  <p>Ich muss ferner ersuchen, dass die St.Ä. mit den Anforderungen um dienstliche Freikarten zurückhalten.</p>
+                  <p>Reisch: Den Eigenmächtigkeiten der Landesregierungen kann man nur beikommen, dass man ihnen das Recht Legitimation auszustellen </p>
+                  <p>entzieht und die Ausfertigung der Legitimationen im StA für Verkehr zentralisiert wird.</p>
+                  <p>Zerdik: Die Landesbeamten sind nach unseren Gesetzen Staatsbeamte und es gebührt ihnen jedes Benefizium der Staatsangestellten.</p>
+                  <p>Reisch: Wenn sie Staatsangestellte wären, so müssten sie auch dieselben Bezüge haben.</p>
+                  <p>Eisler: In den Ländern, die selbstständig Legitimationen ausgestellt haben, müssen die Legitimationen weggenommen werden, denn </p>
+                  <p>sie sind nicht Staatsbeamte. Es ist die Umwandlung noch nicht durchgeführt.</p>
+                  <p>Miklas: </p>
+                  <p><pb facs="krp-0141_s01-0006"/>Paul: Das FA. soll den Akt in dieser Weise erledigen.</p>
+                  <p>Miklas: Lehrer [<hi rend="#i">Einschub:</hi>] haben Legitimation bekommen, [<hi rend="#i">Einschub Ende</hi>] solche sogenannte Geistlichkeit verlangt es auch.</p>
+                  <p>Paul: Die Katecheten haben Legitimation bekommen. Die solchen sogenannten Geistlichen, welche nicht Katecheten sind bekommen, </p>
+                  <p>wenn sie einreichen auch die Begünstigung der Hälfte.</p>
+                  <p>Stöckler: Das ganze System ist unmöglich. Es fährt niemand mehr als wer eine Begünstigung hat.</p>
+                  <p>Renner: Vorsitz</p>
+                  <p>Deutsch: Ich schließe mich im Wesen Stöckler an.</p>
+                  <p>Antrag: Das StA für Verkehrswesen soll jede weitere Ausgabe von Freikarten über den gegenwärtigen Kreis </p>
+                  <p>nicht hinausgehen.</p>
+                  <p>Paul: Einen Abbau bei den Beamten zu beginnen halte ich jetzt für ausgeschlossen.</p>
+                  <p>Deutsch: 1) Antrag, dass StA für Verkehrswesen wird beauftragt über den bisherigen Kreis von Fahrbegünstigungen nicht hinauszugehen.<lb/></p>
+                  <p>2) StA für Verkehrswesen wird aufgefordert eine Ergänzung des Freikartenwesens der Pensionisten auszuarbeiten.</p>
+                  <p>Paul: Was geschieht mit den [<hi rend="#i">Einschub:</hi>] Landes- und [<hi rend="#i">Einschub Ende</hi>] Gemeindeangestellten. Akt beim FA.</p>
+                  <p>Reisch: Die Legitimationen sollen nur beim V.A. ausgestellt werden. Ebenso sämtliche von Innsbruck und Salzburg ausgestellten Legitimationen.</p>
+                  <p>Miklas: </p>
+                  <p>Kabinettskonferenz wird beauftragt binnen kürzester Zeit einen Vorschlag auszuarbeiten, welche Kategorie berechtigt ist für </p>
+                  <p>Fahrbegünstigung. FA., VA und beteiligte Ressorts.</p>
+                  <p>Grimm: Nicht zweckmäßig eine Entscheidung zu treffen über den Akt des V.A. vor der Verfassungsreform.</p>
+                  <p>Deutsch: Bitte meinen Antrag anzunehmen. Werde nur für eine Konferenz die Einschränkungen zu bearbeiten haben.</p>
+                  <p># Renner: 3) Die Angelegenheit der Landesbeamten bleibt in suspenso bis zur Verfassungsreform. </p>
+                  <p>Das Finanzamt wird ermächtigt den Akt liegen zu lassen.</p>
+                  <p># 4) Die Parteien werden dafür interessiert werden, damit das Freikartenwesen aufhört.</p>
+                  <p>Antrag Paul angenommen.</p>
+                  <p><pb facs="krp-0141_s01-0007"/>5a) Stöckler: Bockingergraben etc.</p>
+                  <p>Angenommen.</p>
+                  <p>5b) Stöckler: Zentralgrenzkommission</p>
+                  <p>Angenommen.</p>
+                  <p>Vollzugsanweisung Liquidierung.</p>
+                  <p>Es sind 2 Entwürfe ausgearbeitet worden, eines vom Finanzamt, eines von Heerwesen.</p>
+                  <p>Deutsch: Der V.A. Entwurf des Heerwesens hält sich an die Leitsätze des Kabinettsrates.</p>
+                  <p>Art. 1)</p>
+                  <p>Ramek: Die Sukzessionsstaaten haben gegen das Überführungsgesetz Protest erhoben. </p>
+                  <p>Die Verkehrskommission hat immer nach dem Prinzip gehandelt, dass es sich immer um Forderungen handelt, die das k.u.k. </p>
+                  <p>KM betrifft. Die Forderungen wurden immer bezahlt von allen Staaten zusammen. Wenn wir nun diese Kommission auflösen, so hätte das zur Folge, </p>
+                  <p>dass wir vielleicht die noch unbefriedigten Forderungen aus österreichischen Mitteln zahlen müssten. Bisher ist es in der Verkehrskommission </p>
+                  <p>dem österreichischen Vertreter gelungen große Ersparnis zu erzielen, weit über 100 Mill. Die noch nicht angemeldeten </p>
+                  <p>Forderungen belaufen sich auf 2 Md. Es wurde von den Mitgliedern der Kommission angeregt, ob es nicht im Interesse Österreichs </p>
+                  <p>wäre, die Kommission noch zu belassen. Man könnte aufgrund Art. 3 mit den Staaten ein Übereinkommen treffen.</p>
+                  <p>Renner: Weder die Tschechen noch die Polen noch Jugoslawien haben Einwendungen erhoben, sondern die Austrifizierung anerkannt. </p>
+                  <p>Was die Einwände betrifft, so müsste das FA. die Berechtigung der Einwendungen überdenken. </p>
+                  <p>Die Verkehrskommission sollte bis zum Inkrafttreten neuer Vereinbarungen in Kraft bleiben.</p>
+                  <p>Grimm: Die Beschlüsse der Verkehrskommission kommen zum großen Teil uns zugute. Diese Institution muss auch nach unserer </p>
+                  <p>Ansicht in irgendeiner Form bestehen bleiben. Es wäre mit dem Liquidierungsgesetz im Einklang, wenn die Kommission </p>
+                  <p>aufgelöst würde. Was Ungarn betrifft, so erlangen sie eine paritätische Vertretung. </p>
+                  <p><pb facs="krp-0141_s01-0008"/>Die anderen Staaten verlangen eine gewisse Interessenvertretung. Das wäre möglich durch die vorgesehene „bes. Verfügung“. </p>
+                  <p>Ich bitte um die Erlaubnis, dass bis zu dieser Verfügung die Kommission in ihrer jetzigen Gestalt weiter amtieren darf. </p>
+                  <p>Die weitere Gestalt der Kommission müsste mit den Ungarn und mit den anderen Nationalstaaten geregelt werden.</p>
+                  <p>Eisler: Wieso verschlechtert sich der Stand, wenn man die Kommission auflöst.</p>
+                  <p>Grimm: Aus gemeinschaftlichen Mitteln wurden Heeresforderungen nur so lange befriedigt, als wir gemeinsame Mittel hatten. Seither ist eine </p>
+                  <p>fremde Firma nicht mehr befriedigt worden, nur d[eutsch]ö[sterreichische] Firmen. Eine Zeit lang können wir nur d[eutsch]ö[sterreichische] Firmen befriedigen, aber wir müssen doch auch andere Firmen </p>
+                  <p>befriedigen, weil wir nicht wissen, wie die Rep[arations-]Kommission entscheiden wird. Unsere Hoffnung ist, dass Ungarn und die anderen Nationalstaaten zu den </p>
+                  <p>Forderungen an die k.u.k. Militärverwaltung als nicht tituliert schulden.</p>
+                  <p>Hlawatsch: </p>
+                  <p>Renner: Es kann bei der Fassung des Art. 1 bleiben, die besondere Ergänzung müsste aufgrund des § 215 </p>
+                  <p>des Friedensvertrages erfolgen.</p>
+                  <p>Art. 2.</p>
+                  <p>Fink: mit 23.XII.1919</p>
+                  <p>Renner: Abs. 5 mit 23.XII.1919</p>
+                  <p>Art. 3 letzter Absatz: StA für Finanzen Ergänzung </p>
+                  <p>Art. 4 Hofrat gestrichen.</p>
+                  <p>Fink: Das gesamte Personal, welches im Personalstand des Amtes dem es entnommen ist.</p>
+                  <p>Reisch: Frage der Unterstellung des Inspektorates.	</p>
+                  <p>Renner: Inspektorat muss der Staatskanzlei unterstellt werden, weil es eine halbpolitische Institution.</p>
+                  <p>Reisch: Die sachliche Arbeit soll von finanziell geschulten Organen geleistet werden. Der Sekretär muss im Staatsamt für Finanzen </p>
+                  <p>entnommen werden.</p>
+                  <p>Miklas: Inspektorat kann weder dem StA für Finanzen oder der Staatskanzlei unterstellt werden, sondern nur </p>
+                  <p>angegliedert werden, u.zw. der Staatskanzlei. Auszusuchen haben den Sekretär die beiden Abgeordneten der </p>
+                  <p><pb facs="krp-0141_s01-0009"/>Nationalversammlung.</p>
+                  <p>Renner: Wir sollten in diesem Stadium nichts anderes entscheiden als die bürokratische Unterstellung. </p>
+                  <p>Da das Inspektorat der gesamten Regierung untersteht, so muss es der StK angegliedert werden.</p>
+                  <p>Deutsch: Der Einfluss des StA für Finanzen ist schon hinlänglich gewährt durch F.R.Hornik als </p>
+                  <p>Liquidator des KM. Das StA für Finanzen kann sich nicht auch noch selbst kontrollieren. </p>
+                  <p>Den anderen Posten soll das StA für Heerwesen haben. Im Übrigen stimme ich dem Vorschlag des StK zu, </p>
+                  <p>dass das StK. angegliedert wird und dann erst wird entschieden, wer der Liquidator ist.</p>
+                  <p>Reisch: Die Liquidatoren sind schon eine Erschwernis. Ich kann nur zustimmen, wenn den </p>
+                  <p>beiden Liquidatoren ein genau in finanziellen und Liquidation erfahrener Finanzbeamter zur Seite gestellt wird.</p>
+                  <p>Renner: Da das FA. sich nicht selbst kontrollieren kann, so muss die Staatskanzlei im Einvernehmen mit FA und </p>
+                  <p>Heerwesen die Liquidatoren bestellen.</p>
+                  <p>Fink: letzter Absatz. Auch ein Vertreter des St. Rechnungshofes</p>
+                  <p>Renner: und Staatskanzlei</p>
+                  <p>Art. 5 Einspruch des StA für Finanzen</p>
+                  <p>Deutsch: Neuer Vorschlag &lt;..&gt;</p>
+                  <p>Angenommen.</p>
+                  <p><pb facs="krp-0141_s01-0010"/>6) Loewenfeld: </p>
+                  <p>Durch die Erhöhung des Frachttarifes, der am 1.I. in Kraft getreten ist, haben sich die Transportkosten der </p>
+                  <p>Milch wesentlich erhöht. Die Milchlieferanten bzw. die Transportführer verlangen die Differenz von den </p>
+                  <p>Molkereien. Die Molkereien lehnen es ab. Wenn keine Entschädigung geboten wird, ist Gefahr, dass </p>
+                  <p>die Milchanlieferung, die jetzt vergleichsweise günstig ist (80000 l pro Tag) sehr leidet. </p>
+                  <p>Es entsteht folgende Frage: wenn man am 1.II. die Milchpreise um die Differenz erhöht (30-40 h pro </p>
+                  <p>l) so schafft man die Frage aus der Welt oder man kann die Frachttarife für Milch wieder auf den vorigen Stand </p>
+                  <p>bringen. Das würde aber ein Präjudiz für andere Artikel schaffen. Oder das StA für Finanzen würde die </p>
+                  <p>Differenz tragen zur Verbilligung. Dagegen ebenfalls Präjudiz für andere Artikel. </p>
+                  <p>Ich kann nicht für eine Erhöhung der Milchpreise eintreten, weil unentbehrliches Lebensmittel für Kinder. </p>
+                  <p>Der einfachste Ausweg wäre, dass ausnahmsweise die Frachterhöhung für Milch zurückgezogen würde. </p>
+                  <p>Ein wesentliches Präjudiz glaube ich würde nicht entstehen. Die Differenz würde 7 Mill. </p>
+                  <p>pro Jahr ausmachen.</p>
+                  <p>Hanusch: Schon in Friedenszeiten waren in einzelnen Staaten für Milchtransport eigene Tarife. </p>
+                  <p>Wenn das in Friedenszeiten in anderen Staaten möglich war, so muss das bei uns jetzt auch möglich sein, um </p>
+                  <p>Erhöhung der Milchpreise zu vermeiden. Ein Beliefern der anderen Produzenten kann nicht Platz greifen, </p>
+                  <p>weil Milch eine Besonderheit ist.</p>
+                  <p>Reisch: Bin für die Erstellung eines eigenen Tarifes</p>
+                  <p># Wiederherstellung des Tarifes von 15.X.</p>
+                  <p><pb facs="krp-0141_s01-0011"/>8a) Ellenbogen: </p>
+                  <p>Bautaxen</p>
+                  <p>Angenommen.</p>
+                  <p>8b) Wiener Messe. </p>
+                  <p>Ellenbogen.</p>
+                  <p>Eldersch: Muss Einspruch erheben, dass das Gebäude dem Handelsamt zugewiesen wird, weil das erst sein </p>
+                  <p>wird, dass die Polizei, die mit Pferden darin ist, evakuiert wird. Die Unterhandlungen mit dem Bürgermeister, </p>
+                  <p>die gar nicht verbindlich sind.</p>
+                  <p>Riesige Kosten der Adaptierung des gänzlich verwahrlosten Gebäudes..</p>
+                  <p>Ellenbogen:</p>
+                  <p>Reisch: Es besteht keine Einigung über das Gebäude.</p>
+                  <p>Vertagt.</p>
+                  <p>9) Glöckel: Krankenhaus. </p>
+                  <p>Ermächtigung, dass das Unterrichtsamt die Kommission einberuft, bzw. die beteiligten Staatsämter auffordert, ihre </p>
+                  <p>Vertreter zu nominieren.</p>
+                  <p>Angenommen.</p>
+                  <p>10) Veräußerung von Klostergut.</p>
+                  <p>Miklas.</p>
+                  <p>Angenommen.</p>
+                  <p><pb facs="krp-0141_s01-0012"/>Loewenfeld: Reise nach Paris. </p>
+                  <p>Zweck der Reise nach Paris ist die Urgenz und Durchführung der Beschlüsse des Obersten Rates. </p>
+                  <p>Im letzten Punkt hat der Oberste Rat über das Ernährungsprogramm und die uns zu gewährenden Kredite uns die Entscheidung </p>
+                  <p>für 14 Tage in Aussicht gestellt. </p>
+                  <p>Wenn uns der Oberste Rat sagt in Washington ist der Antrag auf 70 Mill. Dollar </p>
+                  <p>eingebracht und da muss man warten, so verweise ich darauf, dass wir, wenn wir auch auf eine gewisse Zeit gedeckt sind, </p>
+                  <p>doch keinen Anschluss für die Zukunft haben. </p>
+                  <p>Ich möchte das Kabinett fragen, ob ich nicht auf diesen amerikanischen Kredit Vorschuss in Anspruch nehmen könnte, eventuell </p>
+                  <p>auch auf das Tabakmonopol.</p>
+                  <p>2) ob wir wieder als Bittsteller auftreten sollen oder ob wir auch drängend auftreten sollen unter Hinweis auf den Friedensvertrag, dass die </p>
+                  <p>Entente verpflichtet ist uns zu helfen.<lb/></p>
+                  <p>3) Es ist mir mitgeteilt worden, dass man in der Schweiz verstimmt sei, dass die obersten Regierungsfunktionäre durchgereist sind </p>
+                  <p>und sich nicht aufgehalten haben. Ob es nicht angewiesen wäre, dass ich mich mit Rücksicht, dass die Aushilfe der Schweiz sich </p>
+                  <p>hauptsächlich in Ernährungsangelegenheiten betätigt hat, einen Besuch beim Bundespräsidenten oder sonst einem hohen </p>
+                  <p>Funktionär […] machen soll.</p>
+                  <p>Renner: Es wäre gut, wenn L. Besuch machen würde in Bern.</p>
+                  <p>Urgenz der fremden Missionen an ihre Heimatstaaten wegen Zustimmung dieser Freigabe gewisser Objekte. </p>
+                  <p>Die Frage über die Kredite wird nicht in Paris beredet werden können, denn es hängt nur von Senat ab. </p>
+                  <p>Die Kreditsache wird sich daher nur auf das Tabakmonopol beschränken können.</p>
+                  <p><pb facs="krp-0141_s01-0013"/>Eldersch: </p>
+                  <p>Interpellationsbemerkung wegen Karlstein. </p>
+                  <p>Morgen in die Abendblätter bevor ich es im Parlament vorbringe.</p>
+                  <p>Loewenfeld: Ich halte die Behandlung der Kommunistensache vor unserer Pariser Reise für sehr unzweckmäßig. </p>
+                  <p>Es wird, was immer geschieht, heißen, die Kommunisten werden freigelassen und das wird uns in Paris die Sache </p>
+                  <p>erschweren.</p>
+                  <p>Eldersch: Ich muss die Kranken evakuieren. Wenn ich das mache und nicht melde in der </p>
+                  <p>Int. Beantwortung, so werden wieder Gerüchte entstehen.</p>
+                  <p>Eisler: Es sind alle möglichen Gerüchte verbreitet, dann Aufklärung unbedingt nötig ist.</p>
+                  <p># Hinausgabe und Pohl aufmerksam machen für die auswärtigen Blätter.</p>
+                  <p>¾ 1 Uhr</p>
+               </div>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

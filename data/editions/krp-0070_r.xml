@@ -1,0 +1,860 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href='http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:acdh="https://vocabs.acdh.oeaw.ac.at/schema#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xml:lang="de">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="a" type="main" n="0070">Kabinettsprotokoll Nr. 70 vom 13. Mai 1919</title>
+            <title level="m" type="main" n="01">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <title level="m" type="sub" n="">Renner II (15. März – 17. Oktober 1919)</title>
+            <meeting>
+               <placeName key="https://d-nb.info/gnd/4066009-6">Wien</placeName>
+               <orgName key="https://d-nb.info/gnd/5162749-8">Kabinettsrat</orgName>
+               <date when-iso="1919-05-13"/>
+            </meeting>
+            <editor>
+               <persName key="https://d-nb.info/gnd/122481836"
+                         role="hasCreator"
+                         xml:id="hwohnout">
+                  <forename>Helmut</forename>
+                  <surname>Wohnout</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</affiliation>
+               <idno type="ORCID">0000-0002-3864-9839</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/120789825"
+                         role="hasCreator"
+                         xml:id="tolechowski">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0003-3291-6876</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/131679384"
+                         role="hasCreator"
+                         xml:id="rlein">
+                  <forename>Richard</forename>
+                  <surname>Lein</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0002-7502-0503</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="aholzer">
+                  <forename>Anna</forename>
+                  <surname>Holzer</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0005-3560-3500</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="dsoelkner">
+                  <forename>Dominik</forename>
+                  <surname>Sölkner</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-9895-7212</idno>
+            </editor>
+            <editor>
+               <persName role="hasContributor" xml:id="ischotzko">
+                  <forename>Ina</forename>
+                  <surname>Schotzko</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-5210-3713</idno>
+            </editor>
+            <funder n="1">
+               <orgName key="https://d-nb.info/gnd/2054142-9" role="hasFunder">Österreichischer Wissenschaftsfonds FWF</orgName>
+               <idno type="project">PAT1495024</idno>
+               <title type="project">Die Protokolle des österreichischen Kabinettsrates 1919–1920</title>
+            </funder>
+            <respStmt>
+               <resp>Projektverantwortung</resp>
+               <orgName key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Projektleitung</resp>
+               <persName key="https://d-nb.info/gnd/120789825" role="hasPrincipalInvestigator">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+                  <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+                  <idno type="ORCID">0000-0003-3291-6876</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Nationaler Forschungspartner</resp>
+               <orgName key="https://d-nb.info/gnd/1123037736" role="hasEnabler">Austrian Centre for Digital Humanities</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Digitalisierung der gedruckten Quellen</resp>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>TEI-Datenmodellierung</resp>
+               <persName role="hasContributor" xml:id="tfruehwirth">
+                  <forename>Timo</forename>
+                  <surname>Frühwirth</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-3997-5193</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technische Supervision</resp>
+               <persName key="https://d-nb.info/gnd/1043833846"
+                         role="hasContributor"
+                         xml:id="pandorfer">
+                  <forename>Peter</forename>
+                  <surname>Andorfer</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-9575-9372</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technisches Consulting und Vorbereitung der Druckausgabe</resp>
+               <persName key="https://d-nb.info/gnd/13281899X"
+                         role="hasContributor"
+                         xml:id="skurz">
+                  <forename>Stephan</forename>
+                  <surname>Kurz</surname>
+                  <affiliation key="https://d-nb.info/gnd/1202798799">Institut für die Erforschung der Habsburgermonarchie und des Balkanraumes</affiliation>
+                  <idno type="ORCID">0000-0003-2546-2570</idno>
+               </persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher key="https://d-nb.info/gnd/1001454-8">Österreichische Akademie der Wissenschaften</publisher>
+            <date when="2028"/>
+            <availability status="free">
+               <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">Lizenziert unter CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/deed.de)</licence>
+            </availability>
+            <idno type="ISBN_Print"/>
+            <idno type="ISBN_Part_epub"/>
+            <idno type="ISBN_Digital"/>
+            <idno type="DOI"/>
+            <idno type="DOI_zenodo"/>
+            <idno type="ebook_ID"/>
+         </publicationStmt>
+         <seriesStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="m" type="main">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <respStmt>
+               <resp>Bearbeitung und Herausgeberschaft</resp>
+               <orgName key="https://d-nb.info/gnd/2024703-5">Universität Wien</orgName>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+         </seriesStmt>
+         <notesStmt>
+            <note>Diese TEI-XML-Datei ist Grundlage für eine Druckausgabe der Edition.</note>
+            <relatedItem>
+               <biblStruct>
+                  <monogr>
+                     <imprint>
+                        <pubPlace key="https://d-nb.info/gnd/4066009-6">Wien</pubPlace>
+                        <publisher key="https://d-nb.info/gnd/2068748-5">Verlag der Österreichischen Akademie der Wissenschaften</publisher>
+                        <date when="2029"/>
+                     </imprint>
+                     <extent/>
+                  </monogr>
+                  <note>
+              <idno/>
+              <ptr/>
+            </note>
+                  <citedRange/>
+               </biblStruct>
+            </relatedItem>
+         </notesStmt>
+         <sourceDesc>
+            <bibl>Quellbestand: AT-OeStA/AdR MRang MR 1Rep KRP Kabinettsratsprotokolle, 1918-1920 (Teilbestand)<ref target="https://www.archivinformationssystem.at/detail.aspx?id=5465">https://www.archivinformationssystem.at/detail.aspx?id=5465</ref>
+            </bibl>
+            <msDesc>
+               <msIdentifier>
+                  <institution key="https://d-nb.info/gnd/37748-X" role="hasOwner">AT-OeStA Österreichisches Staatsarchiv (Archiv (ÖStA))</institution>
+                  <repository key="https://d-nb.info/gnd/1601181-8">AT-OeStA/AdR Archiv der Republik, 1918- (Abteilung)</repository>
+                  <collection>AT-OeStA/AdR MRang MR 1Rep Ministerrat 1. Republik, 1918 - 1938 (Bestand)</collection>
+                  <idno>AT-OeStA_AdR-MRang-MR-1.-Rep.-KRP-070</idno>
+               </msIdentifier>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <abstract>
+            <p>
+          <!--to be generated-->
+        </p>
+         </abstract>
+      </profileDesc>
+      <encodingDesc>
+         <styleDefDecl scheme="css"/>
+         <tagsDecl>
+            <rendition xml:id="b" scheme="css">font-weight:bold;</rendition>
+            <rendition xml:id="su" scheme="css">vertical-align:super;font-size:.7em;</rendition>
+            <rendition xml:id="s" scheme="css">text-decoration:line-through;</rendition>
+            <rendition xml:id="u" scheme="css">text-decoration:underline;</rendition>
+            <rendition xml:id="ow" scheme="css">text-decoration:line-through;text-decoration-style:double;</rendition>
+            <rendition xml:id="r" scheme="css">display:block;text-align:right;</rendition>
+            <rendition xml:id="letterspaced" scheme="css">letter-spacing:0.15em;</rendition>
+            <rendition xml:id="i" scheme="css">font-style:italic;</rendition>
+         </tagsDecl>
+         <editorialDecl>
+            <hyphenation>
+               <p>
+            <!--to be added-->
+          </p>
+            </hyphenation>
+            <correction>
+               <p>
+            <!--to be added-->
+          </p>
+            </correction>
+            <normalization>
+               <p>
+            <!--to be added-->
+          </p>
+            </normalization>
+            <punctuation>
+               <p>
+            <!--to be added-->
+          </p>
+            </punctuation>
+            <stdVals>
+               <p>
+            <!--to be added-->
+          </p>
+            </stdVals>
+            <p>
+          <!--to be added-->
+        </p>
+         </editorialDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#tfruehwirth" when-iso="2026-10-13">TEIGarage output upconverted with upconvert.xsl</change>
+         <change who="#tfruehwirth" when-iso="2026-10-13">TEI header populated with generate_tei_templates.py</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface/>
+   </facsimile>
+   <text>
+      <body>
+         <div xml:id="doc-krp-0070.xml">
+            <head type="dokument">
+               <title type="num">70.<note type="footnote">Das Protokoll trägt den Vermerk <hi rend="#i">Vertraulich!</hi></note>
+               </title>
+               <title type="desc">
+                  <pb facs="krp-0070_r-0001"/>
+                  <pb facs="krp-0070_r-0002"/>[Dienstag] 1919-05-13</title>
+            </head>
+            <div type="dokumentkopf">
+               <div type="vorsitz">
+                  <head>Vorsitz:</head>
+                  <p>Fink</p>
+               </div>
+               <div type="anwesend">
+                  <head>Anwesend:</head>
+                  <p>Bauer, Bratusch, Deutsch, Eldersch, Ellenbogen, Glöckel, Hanusch, Loewenfeld-Russ, Miklas, Paul, Resch, Stöckler, Tandler, Waiss, Zerdik</p>
+               </div>
+               <div type="zugezogen">
+                  <head>Zugezogen:</head>
+                  <p>Davy, Grimm</p>
+               </div>
+               <div type="schriftfuehrer">
+                  <head>Schriftführer:</head>
+                  <p>unbekannt</p>
+               </div>
+               <div type="dauer">
+                  <head>Dauer:</head>
+                  <p>21.00–23.30 Uhr</p>
+               </div>
+            </div>
+            <div type="komponenten">
+               <p>Reinschrift, Beilagen, Konzept, stenographische Mitschrift, Entwurf der Tagesordnung, diverse Zusätze</p>
+            </div>
+            <div type="beilagen">
+               <head>Beilagen:</head>
+               <list>
+                  <item><ref target="#krp-0070_top01">Zu TOP 1</ref>: <ref target="#krp-0070_b01">Antrag des Staatskanzlers auf Titelverleihung an die in den Ruhestand tretenden Beamten des liquidierenden Ministeriums des Äußern</ref></item>
+                  <item><ref target="#krp-0070_top07">Zu TOP 7</ref>: <ref target="#krp-0070_b02">Auszug für den Vortrag des Gesetzesbeschlusses der Provisorischen Steiermärkischen Landesversammlung über die Durchführung von Neuwahlen in allen Gemeinden für alle Gemeinden im Lande</ref></item>
+                  <item><ref target="#krp-0070_top08">Zu TOP 8</ref>: <ref target="#krp-0070_b03">Übersichtstabelle über Beschlüsse des Niederösterreichischen und Kärntner Landesausschuss über die Einhebung von 100 % übersteigenden Umlagen in den Gemeinden</ref></item>
+                  <item><ref target="#krp-0070_top09">Zu TOP 9</ref>: <ref target="#krp-0070_b04">Antrag des Verfassungsausschuss über ein Gesetz, womit Art. 11 des Gesetzes vom 14. März 1919, StGBl.  Nr. 180, über die Staatsregierung ergänzt wird</ref></item>
+                  <item><ref target="#krp-0070_top10">Zu TOP 10</ref>: <ref target="#krp-0070_b05">Vorstellung des zwischenstaatsamtlichen Komitees für Beamtenangelegenheiten gegen die Kooptierung eines Vertreters des Staatsamtes für Heereswesen und Antrag des Staatsamtes für Äußeres Zl. II-4.188/6 auf Bestellung eines Vertreters des Staatsamtes für Äußeres in diesem Komitee für Staatsbedienstetenangelegenheiten</ref></item>
+                  <item><ref target="#krp-0070_top11">Zu TOP 11</ref>: <ref target="#krp-0070_b06">Vortrag des Staatssekretärs für Verkehrswesen über die Reorganisation des Staatseisenbahnrates</ref></item>
+                  <item><ref target="#krp-0070_top12">Zu TOP 12</ref>: <ref target="#krp-0070_b07">Vortrag des Staatssekretärs für Verkehrswesen zu Zl. 4056/1918 wegen der Erklärung einer Schleppanlage in St. Pölten als begünstigten Bau</ref></item>
+                  <item><ref target="#krp-0070_top14">Zu TOP 14</ref>: <ref target="#krp-0070_b08">Vollzugsanweisung mit Begründung des Staatssekretärs für Justiz über die Einrechnung militärischer Dienstleistung in die Praxis der Justizberufe</ref></item>
+                  <item><ref target="#krp-0070_top15">Zu TOP 15</ref>: <ref target="#krp-0070_b09">Vortrag des Staatsamtes für Heereswesen über Teuerungszulagen für die Volkswehr</ref></item>
+                  <item><ref target="#krp-0070_top16">Zu TOP 16</ref>: <ref target="#krp-0070_b10">Ermächtigung des Staatssekretärs für Handel und Gewerbe, Industrie und Bauten für die Kompensationsverhandlungen in Warschau</ref></item>
+                  <item><ref target="#krp-0070_top18">Zu TOP 18</ref>: <ref target="#krp-0070_b11">Notiz des Unterstaatssekretärs für Unterricht Glöckel über eine Plakette zur Erinnerung an die Errichtung der Republik</ref></item>
+               </list>
+            </div>
+            <div type="protokoll">
+               <pb facs="krp-0070_r-0003"/>
+               <div type="top" xml:id="krp-0070_top01">
+                  <head>
+                     <label>
+                        <num n="1">1.</num>
+                        <seg>Titelverleihung an die in den Ruhestand tretenden Beamten des liquidierenden Ministeriums des Äußern.</seg>
+                     </label>
+                  </head>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> gibt bekannt, dass der Leiter des liquidierenden Ministeriums des Äußern, Sektionschef Dr. Flotow das Ersuchen gestellt habe, den pensionierten Beamten dieses Amtes in üblicher Weise den Titel der nächsthöheren Rangsklasse (ohne deren Bezüge) zuzuerkennen. Da nicht klargestellt sei, wem das Recht, diese Titel zu verleihen, dermalen zustünde, bzw. kein Verleihungsberechtigter vorhanden sei, die Beamten jedoch dadurch ungebührlich in erworbenen Ansprüchen verkürzt würden, schlage der sprechende Vizekanzler vor, dass der Leiter des liquidierenden Ministeriums des Äußern ermächtigt werde, diese Titel den Beamten deutschösterreichischer Staatsangehörigkeit bei ihrer Pensionierung zuzuerkennen.</p>
+                  <p><pb facs="krp-0070_r-0004"/>In Stattgebung dieses Antrages beschließt der Kabinettsrat:</p>
+                  <p>Die vom Leiter des liquidierenden Ministeriums des Äußern aus Anlass der Pensionierung von Beamten deutschösterreichischer Staatszugehörigkeit nach der bisher üblichen Weise verliehenen Titel der nächsthöheren Rangsklasse sind in Deutschösterreich anerkannt.</p>
+               </div>
+               <div type="top" xml:id="krp-0070_top02">
+                  <head>
+                     <label>
+                        <num n="2">2.</num>
+                        <seg>Beitritt der Staatsregierung zu mehreren von der Nationalversammlung beschlossenen Gesetzen.</seg>
+                     </label>
+                  </head>
+                  <p>Der Kabinettsrat findet über Antrag des Vorsitzenden gegen das von der Nationalversammlung beschlossene Gesetz, womit die Bestimmungen des Gesetzes vom 5. Februar 1919, StGBl. Nr. 100, teilweise abgeändert werden, sowie gegen das Gesetz, betreffend die Ermächtigung der Regierung zu zoll- und handelspolitischen Verfügungen, keine Vorstellung zu erheben.</p>
+                  <p>Die Gesetzesbeschlüsse sind daher von den zuständigen Mitgliedern der Staatsregierung gegenzuzeichnen und dem Präsidenten zur Fertigung vorzulegen.</p>
+               </div>
+               <div type="top" xml:id="krp-0070_top03">
+                  <head>
+                     <label>
+                        <num n="3">3.</num>
+                        <seg>Lebensmitteltransporte aus Jugoslawien.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Loewenfeld-Russ</hi> gibt bekannt, dass die <pb facs="krp-0070_r-0005"/>amerikanische Lebensmittelkommission in Wien eine telegrafische Mitteilung aus Belgrad erhalten habe, wonach die serbische Regierung insolange keine Lebensmitteltransporte nach Deutschösterreich zulassen werde, als die Kämpfe in Kärnten fortdauern. Der Chef der amerikanischen Mission erwarte bis morgen Mittag eine Information über die Lage in Kärnten zum Zwecke der Beantwortung dieses Telegrammes.</p>
+                  <p>Nach Darstellung der Situation durch Unterstaatssekretär Dr. <hi rend="#letterspaced">Waiss</hi> beschließt der Kabinettsrat, den Staatssekretär für Volkernährung zu ermächtigen, dem Chef der amerikanischen Mission mitzuteilen, dass die einschlägigen Verhandlungen in Kärnten noch nicht beendet werden konnten, deren baldiger Abschluss jedoch zu gewärtigen sei.</p>
+               </div>
+               <div type="top" xml:id="krp-0070_top04">
+                  <head>
+                     <label>
+                        <num n="4">4.</num>
+                        <seg>Forderung der interalliierten Lebensmittelkommission nach Einführung der Sommerzeit in Deutschösterreich.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Loewenfeld-Russ</hi> teilt mit, dass die Leiter der amerikanischen und der englischen Lebensmittelkommissionen ihn ersucht hätten, offiziell zur Kenntnis zu nehmen, dass es den fremden Staaten, die seit Monaten nicht nur Deutschösterreich mit Lebensmitteln versorgen, sondern auch die Kohlenfrage Öster<pb facs="krp-0070_r-0006"/>reichs zu lösen bestrebt sind, unverständlich sei, weshalb in Deutschösterreich nicht wie in so vielen anderen Ländern die Sommerzeit eingeführt wurde und damit Ersparnisse an Kohle erzielt werden, die gerade für Deutschösterreich ganz außerordentlich in die Waagschale fallen. Die Vertreter der interalliierten Lebensmittelkommissionen forderten deshalb, dass die Regierung ohne jeden Verzug die notwendigen Maßnahmen treffe, um ehestens die Sommerzeit zur Einführung zu bringen. Da die Missionsleiter eine sofortige Antwort über die Stellungnahme der Regierung zu dieser Frage verlangten, erbitte sich der sprechende Staatssekretär eine diesfällige Weisung des Kabinettsrates. Nach einer kurzen Debatte, an welcher sich die Staatssekretäre <hi rend="#letterspaced">Eldersch</hi> und <hi rend="#letterspaced">Paul</hi> sowie Unterstaatssekretär Dr. <hi rend="#letterspaced">Ellenbogen</hi> beteiligten, beschließt der Kabinettsrat über Vorschlag des <hi rend="#letterspaced">Vorsitzenden</hi>, dass die Angelegenheit nochmals im Hauptausschusse zur Sprache zu bringen sein werde.</p>
+               </div>
+               <div type="top" xml:id="krp-0070_top05">
+                  <head>
+                     <label>
+                        <num n="5">5.</num>
+                        <seg>Beantwortung mehrerer Interpellationen über die Ernährungslage und über den Fremden- und Reiseverkehr.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Loewenfeld-Russ</hi> teilt mit, dass er <pb facs="krp-0070_r-0007"/>die Absicht habe, in der morgigen Sitzung der Nationalversammlung eine Reihe von Interpellationen über die allgemeine Ernährungslage, über den Stand der Zuckerversorgung sowie über den Stand der Fremden- und Reiseverkehrsfrage zu beantworten. Redner bespricht die die ganze Ernährungswirtschaft gefährdenden Widerstände, welche die einzelnen Länder der staatlicherseits erfolgten Verkehrsregelung entgegenstellen, und erbittet sich Direktiven des Kabinettsrates für die Beantwortung dieser Interpellation. Der sprechende Staatssekretär weist, hiebei darauf hin, dass sich auch die Ententemissionen bereits mit dieser Angelegenheit befasst haben. Der Chef der amerikanischen Lebensmittelkommission, Captain Gregory, habe die aus den Absperrmaßnahmen der Länder sich ergebende Situation als vollkommen unmöglich und den Intentionen der interalliierten Mächte auf tunlichst raschen Wiederaufbau des Wirtschaftslebens in Deutschösterreich vollkommen zuwiderlaufend bezeichnet. Der Genannte beabsichtige, im Auftrage Mr. Hoovers alle Maßnahmen zu treffen, um die bestehenden Behinderungen im gesamten Verkehrswesen zwischen den Sukzessionsstaaten <pb facs="krp-0070_r-0008"/>zu beheben und werde zu diesem Zwecke Fachmänner auf dem Gebiete des Eisenbahn-, Post-, Telegrafen- und Telefonwesens zu einer gemeinsamen Besprechung einladen. Aus dieser Tatsache allein gehe schon hervor, dass er umso mehr alle jene Tendenzen bekämpfen werde, die auf deutschösterreichischem Gebiete selbst auf eine Absperrung der einzelnen Länder gegeneinander und auf separatistische Maßnahmen abzielen.</p>
+                  <p>Staatssekretär <hi rend="#letterspaced">Eldersch</hi> teilt mit, dass er einen Erlass an die Landesregierungen hinauszugeben beabsichtige, worin ihnen die Ungehörigkeit ihres Vorgehens vorgehalten und auch die Stellungnahme der Entente zu dieser Frage werde gekennzeichnet werden. Den Wortlaut dieses Erlasses werde er in der nächsten Kabinettsratssitzung vorlegen. Auch habe er die Gendarmerie bereits beauftragt, künftighin eine Mitwirkung bei der Kontrolle des Reiseverkehrs sowie bei der Abnahme von Lebensmitteln abzulehnen.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Deutsch</hi> stellt die Hinausgabe eines analogen Auftrages an die Volkswehr in Aussicht und gibt der Anschauung Ausdruck, dass schärfere Mittel als bisher gegenüber den Ländern angewendet werden müssten.</p>
+                  <p><pb facs="krp-0070_r-0009"/>Staatssekretär Dr. <hi rend="#letterspaced">Bauer</hi> spricht sich von seinem Standpunkte dagegen aus, dass die Konflikte mit den Ländern im gegenwärtigen Zeitpunkte, solange der Friede noch nicht geschlossen ist, ausgetragen werden. Bei der Interpellationsbeantwortung wäre seiner Meinung nach das Hauptgewicht auf den Nachweis der absoluten Verfassungswidrigkeit der einschlägigen Verfügungen der Länder zu legen. Auch wäre dafür Sorge zu tragen, dass von Interessenten so rasch als möglich Beschwerden über die Beschränkung der Freizügigkeit beim Verfassungsgerichtshofe eingebracht werden. Auch empfehle er die Angelegenheit propagandistisch in der Presse zu verwerten.</p>
+                  <p>Nachdem noch der <hi rend="#letterspaced">Vorsitzende</hi> sowie die Staatssekretäre <hi rend="#letterspaced">Stöckler</hi> und <hi rend="#letterspaced">Paul</hi> zum Gegenstande gesprochen hatten, nimmt der Kabinettsrat zur Kenntnis, dass Staatssekretär Dr. <hi rend="#letterspaced">Loewenfeld-Russ</hi> die in Rede stehende Interpellation im Sinne seiner Ausführungen und unter Bedachtnahme auf die in der Debatte zutage getretenen Auffassungen beantworten werde.</p>
+                  <p><pb facs="krp-0070_r-0010"/></p>
+               </div>
+               <div type="top" xml:id="krp-0070_top06">
+                  <head>
+                     <label>
+                        <num n="6">6.</num>
+                        <seg>Gesetzentwurf, betreffend die Rückstellung von Kunst- und historischen Wertgegenständen an Italien.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Bauer</hi> erbittet und erhält vom Kabinettsrate die Ermächtigung, in der Nationalversammlung einen Gesetzentwurf, betreffend die Rückstellung von Kunst- und historischen Wertgegenständen an Italien, einbringen zu dürfen.</p>
+               </div>
+               <div type="top" xml:id="krp-0070_top07">
+                  <head>
+                     <label>
+                        <num n="7">7.</num>
+                        <seg>Gesetzesbeschluss der Provisorischen Steiermärkischen Landesversammlung über die Durchführung von Neuwahlen für alle Gemeinden im Lande.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Eldersch</hi> teilt mit, dass die Provisorische Steiermärkische Landesversammlung einen Gesetzentwurf über die Durchführung von Neuwahlen für alle Gemeinden im Lande beschlossen habe.</p>
+                  <p>Über Antrag des sprechenden Staatssekretärs beschließt der Kabinettsrat, diesem Gesetzbeschlusse namens der Staatsregierung beizutreten, bzw. gegen ihn keine Vorstellung zu erheben und der sofortigen Kundmachung dieses Gesetzes zuzustimmen.</p>
+               </div>
+               <div type="top" xml:id="krp-0070_top08">
+                  <head>
+                     <label>
+                        <num n="8">8.</num>
+                        <seg>Beitritt der Staatsregierung zu einer Reihe von Beschlüssen des Niederösterreichischen Landesausschusses bzw. des Niederösterreichischen Landesrates sowie des Kärntnerischen Landesausschusses über die Einhebung von Umlagen in Gemeinden Niederösterreichs und Kärnten.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Eldersch</hi> erbittet und erhält die Zustimmung des Kabinettsrates zum Beitritt der Staatsregierung zu den Beschlüssen des Nie<pb facs="krp-0070_r-0011"/>derösterreichischen Landesausschusses vom 10. und 29. Oktober 1918, bzw. des Niederösterreichischen Landesrates vom 17. Dezember 1918, ferner vom 10., 21. und 28. Jänner und vom 4., 20. und 25. Februar 1919, betreffend die Einhebung von 100 % übersteigenden Umlagen in mehreren Gemeinden Niederösterreichs, sowie zu den Beschlüssen des Kärntnerischen Landesausschusses vom 9. und 16. Oktober, 21. November, 9., 23. und 31. Dezember 1918, 22. und 31. Jänner, 5., 7. und 19. Februar und vom 14. März 1919, betreffend die Einhebung von 200 % übersteigenden Umlagen in mehreren Gemeinden Kärntens.</p>
+               </div>
+               <div type="top" xml:id="krp-0070_top09">
+                  <head>
+                     <label>
+                        <num n="9">9.</num>
+                        <seg>Gesetzentwurf, betreffend die Vertretungsbefugnis des Vizekanzlers.</seg>
+                     </label>
+                  </head>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> erbittet und erhält die Zustimmung des Kabinettsrates, den Entwurf eines Gesetzes, womit Art. 11 des Gesetzes vom 14. März 1919, StGBl. Nr. 180, über die Staatsregierung ergänzt wird, in der Nationalversammlung einbringen zu dürfen</p>
+               </div>
+               <div type="top" xml:id="krp-0070_top10">
+                  <head>
+                     <label>
+                        <num n="10">10.</num>
+                        <seg>Vorstellung des Zwischenstaatsamtlichen Komitees für Beamtenangelegenheiten gegen die Kooptierung eines Vertreters des Staatsamtes für Heer[es]wesen; Bestellung eines Vertreters des Staatsamtes für Äußeres in diesem Komitee.</seg>
+                     </label>
+                  </head>
+                  <p>Der Vorsitzende bringt zur Kenntnis, dass das Zwischenstaatsamtliche Komitee für Beamtenangelegenheiten ge<pb facs="krp-0070_r-0012"/>gen den vom Kabinettsrate in seiner Sitzung am 29. April d. J. gefassten Beschluss, dass in das bezeichnete Komitee ein Vertreter des Staatsamtes für Heer[es]wesen zur Wahrnehmung der materiellen Interessen der Berufsmilitärpersonen einzuteilen ist, Vorstellung mit der Begründung erhoben habe, dass die Mitglieder des Komitees aufgrund ihrer Wahl durch die Vertreter sämtlicher Zentralstellen vom Kabinettsrate berufen worden sind und das Komitee daher nicht etwa eine Vertretung bloß jener Ressorts darstelle, aus deren Angehörigen es derzeit zusammengesetzt ist. Solle es seinen Aufgaben als Fachbeirat des Kabinettsrates gerecht werden, so müsse schon zur Wahrung der technischen Arbeitsmöglichkeiten einer Vermehrung der Mitgliederzahl widerraten werden.</p>
+                  <p>Nach einer längeren Debatte, an welcher sich außer dem Vorsitzenden noch Staatssekretär Dr. <hi rend="#letterspaced">Bratusch</hi>, ferner Sektionschef Dr. <hi rend="#letterspaced">Grimm</hi> und Ministerialrat Dr. <hi rend="#letterspaced">Davy</hi> beteiligten und in deren Zuge Staatssekretär Dr. <hi rend="#letterspaced">Deutsch</hi> eingehend die Gründe darlegte, welche ihn seinerzeit zur Stellung seines Antrages bewogen hatten, beschließt der Kabinettsrat, dass an dem <pb facs="krp-0070_r-0013"/>Beschlusse vom 29. April d. J., betreffend die Entsendung eines ständigen Vertreters des Staatsamtes für Heer[es]wesen in das mehrerwähnte Komitee festgehalten werde. Gleichzeitig wird das Komitee über Antrag des Staatssekretärs Dr. <hi rend="#letterspaced">Bauer</hi> angewiesen, jeweils einen Vertreter des Staatsamtes für Äußeres mit beratender Stimme zuzuziehen, sobald Fragen dieses Ressorts in Betracht kommen. Schließlich wird festgestellt, dass das Komitee eine Vertretung sämtlicher Ressorts bildet und aus technischen Gründen künftighin eine Vermehrung der Mitgliederzahl nicht in Aussicht genommen wird.</p>
+               </div>
+               <div type="top" xml:id="krp-0070_top11">
+                  <head>
+                     <label>
+                        <num n="11">11.</num>
+                        <seg>Reorganisation des Staatseisenbahnrates.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Paul</hi> führt aus, dass die Bestimmungen der Vollzugsanweisung vom 7. Februar 1919, StGBl. Nr. 109, betreffend die Bestellung eines vorläufigen deutschösterreichischen Staatseisenbahnrates, einer Revision bedürfen. Er sei der Meinung, dass die seit dem Umsturz völlig geänderten politischen und staatsrechtlichen Verhältnisse auch schon bei einem vorläufigen Beirat ihre Berücksichtigung finden müssten. Dazu komme weiters die durch <pb facs="krp-0070_r-0014"/>das Gesetz vom 14. März 1919, StGBl. Nr. 180, über die Staatsregierung verfügte Erweiterung des Wirkungskreises des Staatsamtes für Verkehrswesen, die gleichfalls nicht unbeachtet bleiben könne. Er halte es daher für unbedingt nötig, bei Errichtung des vorläufigen Beirates des Staatsamtes für Verkehrswesen einerseits eine weitgehende Demokratisierung dieser Körperschaft (insbesondere möglichste Einschränkung des Ernennungsrechtes der Regierung, <hi rend="#u">Wahl</hi> der körperschaftlichen Vertreter anstatt Ernennung) ins Auge zu fassen und andererseits auch für die Berufung von Vertretern derjenigen Kreise Sorge zu tragen, die für eine begutachtende Tätigkeit in solchen Angelegenheiten allgemeiner Natur in Betracht kommen, die nunmehr außer den Eisenbahnangelegenheiten in die Zuständigkeit des Staatsamtes für Verkehrswesen fallen.</p>
+                  <p>In Würdigung dieser Umstände beantrage der sprechende Staatssekretär daher:</p>
+                  <list>
+                     <item n="1"><label>1.)</label> dass von der Durchführung der Vollzugsanweisung vom 7. Februar 1919, StGBl. Nr. 109, abgesehen werde und</item>
+                     <item n="2"><label>2.)</label> dass das Staatsamt für Verkehrswesen ermächtigt werde, sofort die Vor<pb facs="krp-0070_r-0015"/>arbeiten für die Schaffung eines vorläufigen Beirates in die Wege zu leiten, dessen Zusammensetzung, Wirkungskreis, Geschäftsordnung usw. den dargelegten Gesichtspunkten Rechnung trägt.</item>
+                  </list>
+                  <p>Der Kabinettsrat stimmt diesen Vorschlägen zu und ermächtigt den Staatssekretär für Verkehrswesen, durch eine Mitteilung in den Tagesblättern die Öffentlichkeit von den geänderten Absichten der Staatsregierung in Bezug auf die Schaffung eines vorläufigen deutschösterreichischen Staatseisenbahnrates zu unterrichten.</p>
+               </div>
+               <div type="top" xml:id="krp-0070_top12">
+                  <head>
+                     <label>
+                        <num n="12">12.</num>
+                        <seg>Erklärung einer Schleppgleisanlage der Whitehead &amp; Co. AG in St. Pölten als begünstigter Bau.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Paul erbittet und erhält, die Zustimmung des Kabinettsrates, die Errichtung der von der Whitehead &amp; Co AG in St. Pölten geplanten, im Anschlusse an die zur Glanzstofffabrik führende Schleppbahn der St. Pöltner Straßenbahn herzustellenden Schleppgleisanlage in das neue Werk der genannten AG als begünstigten Bau im Sinne der kaiserlichen Verordnung vom 16. Oktober 1914, RGBl. Nr. 384, zu erklären.</p>
+                  <p><pb facs="krp-0070_r-0016"/></p>
+               </div>
+               <div type="top" xml:id="krp-0070_top13">
+                  <head>
+                     <label>
+                        <num n="13">13.</num>
+                        <seg>Verhalten der Regierung zu den Zentralen.</seg>
+                     </label>
+                  </head>
+                  <p>Unterstaatssekretär Dr. <hi rend="#letterspaced">Ellenbogen</hi> teilt mit, dass in der morgigen Sitzung der Nationalversammlung der Antrag der Abgeordneten Partik und Genossen, betreffend den schleunigen Abbau der Zentralen zur Verhandlung gelangen werde. Die Regierung müsse sich darüber klar werden, welche Stellung zu dieser Frage einzunehmen wäre.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Loewenfeld-Russ</hi> weist, darauf hin, dass einige Zentralen bereits ausgelöst, einige sich schon in Liquidation befinden. Auf die Mitwirkung gewisser Zentralen könne jedoch im gegenwärtigen Zeitpunkte nicht verzichtet werden.</p>
+                  <p>Staatssekretär <hi rend="#letterspaced">Eldersch</hi> schließt sich dieser Anschauung an und erörtert den Zusammenhang der in Rede stehenden Frage mit der Sozialisierungsaktion.</p>
+                  <p>Staatssekretär [Ing.] <hi rend="#letterspaced">Zerdik</hi> hält dafür, dass eine generelle Behandlung dieser Frage nicht möglich sei; es müsse vielmehr jeder einzelne Fall für sich studiert werden.</p>
+                  <p>Der Kabinettsrat beschließt, dass in die morgige Debatte regierungsseitig nicht einzugreifen sein werde; <pb facs="krp-0070_r-0017"/>sollte sich jedoch die Notwendigkeit hiezu ergeben, so würde der Staatssekretär für Handel und Gewerbe, Industrie und Bauten den vom Kabinettsrate gekennzeichneten Standpunkt vertreten.</p>
+               </div>
+               <div type="top" xml:id="krp-0070_top14">
+                  <head>
+                     <label>
+                        <num n="14">14.</num>
+                        <seg>Vollzugsanweisung über die Einrechnung militärischer Dienstleistung in die Praxis der Justizberufe (Einrechnungsvorschrift).</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Bratusch</hi> erbittet und erhält vom Kabinettsrate die Zustimmung zur Erlassung einer Vollzugsanweisung über die Einrechnung militärischer Dienstleistung in die Praxis der Justizberufe (Einrechnungsvorschrift).</p>
+               </div>
+               <div type="top" xml:id="krp-0070_top15">
+                  <head>
+                     <label>
+                        <num n="15">15.</num>
+                        <seg>Teuerungszulagen für die Volkswehr.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Deutsch</hi> teilt mit, dass der Vollzugsausschuss des Soldatenrates der Wiener Volkswehr ihm den Wunsch der Wiener Volkswehrmänner vorgetragen habe, ihnen angesichts der <hi rend="#u">besonders in Wien</hi> von Tag zu Tag immer fühlbarer werdenden Teuerung eine Zulage vom 120 K pro Mann und Monat ab 1. April 1919 zu bewilligen.</p>
+                  <p>Die Volkswehr weise darauf hin, dass seit ihrer Aufstellung trotz der seitherigen Verschlechterung der Lebensbedingungen in ihren Bezügen so gut wie <pb facs="krp-0070_r-0018"/>gar keine Erhöhung platzgegriffen habe. Tatsächlich sei der Volkswehr seither nur das Brotgeld von 44 h täglich bewilligt und die ursprünglich unterschiedlich nach dem Chargengrade mit 6 und 7 K bemessene Löhnung einheitlich mit 7 K festgesetzt worden.</p>
+                  <p>Während es dem Vollzugsausschüsse bisher gelungen ist, das bereits vor Monaten in den Kreisen der Volkswehr laut gewordene Verlangen nach Erhöhung der Bezüge einzudämmen, sei nunmehr diese Forderung mit größtem Ungestüm geltend gemacht worden, und zwar insbesondere in Anbetracht der zunächst den Eisenbahnbediensteten und dann den übrigen Staatsbediensteten zugebilligten Zuwendung von 100 K für das Familienhaupt und je 20 K monatlich für jedes in seiner Versorgung stehende Familienmitglied; ferner habe zu dem erwähnten Verlangen auch noch der Umstand wesentlich beigetragen, dass seitens der Internationalen Liquidierungskommission auch für die liquidierenden militärischen Dienststellen die gleichen Zuwendungen wie den Zivilstaatsbediensteten bewilligt wurden.</p>
+                  <p>Da die zufolge des Beschlusses der Internationalen Liquidierungskommission <pb facs="krp-0070_r-0019"/>für die Liquidierungsstellen bewilligte Zuwendung auch den Gagisten der deutschösterreichischen provisorischen Wehrmacht nicht werde vorenthalten werden können, könne sich der sprechende Staatssekretär den Forderungen der Wiener Volkswehr gegenüber nicht mehr länger ablehnend verhalten und stelle den Antrag, der Kabinettsrat wolle bewilligen, dass dem Landesbefehlshaber in Wien behufs Aufbesserung der materiellen Lage der derzeit noch aktiv dienenden Wiener Volkswehr ab 1. April 1919 pro Mann des Standes an Gagisten und Mannschaften monatlich ein Betrag in jenem Ausmaße zugewiesen werde, dass pro Kopf und Tag eine Zuwendung von 4 K entfällt.</p>
+                  <p>Die Verwendung der bewilligten Summe hätte je nach Wunsch der zu Beteilenden entweder zum Ankaufe von Lebensmitteln und dergleichen im Großen oder durch zehntägig im Nachhinein zu bewirkende Auszahlung im Baren zu erfolgen.</p>
+                  <p>Das diesfällige monatliche Erfordernis betrage bei dem dermaligen Stande der Wiener Volkswehr von 14.033 Mannschaftspersonen und 1.170 Gagisten inkl. Landesbefehlshaberamt und Depotwachen 1.824.360 K.</p>
+                  <p><pb facs="krp-0070_r-0020"/>Selbstverständlich hätte für den Fall, dass den Gagisten der deutschösterreichischen Wehrmacht die gleiche Zuwendung gemacht wird, wie den Zivilstaatsbediensteten und den Gagisten bei den liquidierenden Stellen, die diesbezügliche Bestimmung auf die Wiener Volkswehr nicht Anwendung zu finden.</p>
+                  <p>Nach einer längeren Debatte, an welcher sich außer dem Referenten noch Staatssekretär <hi rend="#letterspaced">Eldersch</hi> und Sektionschef Dr. <hi rend="#letterspaced">Grimm</hi> beteiligten, beschließt der Kabinettsrat, dass ab 1. Mai d. J. an Stelle des den Zivilstaatsbediensteten zugestandenen sogenannten Übergangsbeitrages für die Dauer der Gewährung dieses Beitrages dem Landesbefehlshaber ein Betrag von monatlich 1.824.360 K für Zwecke der Kostaufbesserung für die Wiener Volkswehr übergeben werde.</p>
+               </div>
+               <div type="top" xml:id="krp-0070_top16">
+                  <head>
+                     <label>
+                        <num n="16">16.</num>
+                        <seg>Kompensationsverhandlungen in Warschau.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Ing. <hi rend="#letterspaced">Zerdik</hi> gibt bekannt, dass er sich am 15. d. M. nach Warschau begeben werde, um mit der polnischen Regierung wegen Lieferung von Kohlen, Erdöl, Petroleum und <pb facs="krp-0070_r-0021"/>Derivaten der Erdölproduktion gegen Kompensationen Verhandlungen zu pflegen. Er erbitte sich die Ermächtigung des Kabinettsrates, bei diesen Kompensationsverhandlungen Abschlüsse jedweder Art in für den Staat Deutschösterreich bindender Form tätigen zu dürfen.</p>
+                  <p>Der Kabinettsrat erteilt die erbetene Ermächtigung.</p>
+               </div>
+               <div type="top" xml:id="krp-0070_top17">
+                  <head>
+                     <label>
+                        <num n="17">17.</num>
+                        <seg>Herstellung des Einvernehmens mit dem Staatsamt für Justiz bei Erlassung gewisser Vollzugsanweisungen.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Bratusch</hi> richtet an die Kabinettsmitglieder das Ersuchen, dafür Vorsorge zu treffen, dass vor Erlassung von Vollzugsanweisungen, in welchen hinsichtlich der Geltendmachung von privatrechtlichen Ansprüchen Abweichungen vom ordentlichen Rechtswege festgesetzt werden, jeweils das Einvernehmen mit dem Staatsamt für Justiz gepflogen werde.</p>
+                  <p>Der Kabinettsrat nimmt dieses Ersuchen zur Kenntnis.</p>
+               </div>
+               <div type="top" xml:id="krp-0070_top18">
+                  <head>
+                     <label>
+                        <num n="18">18.</num>
+                        <seg>Plakette zur Erinnerung an die Errichtung der Republik.</seg>
+                     </label>
+                  </head>
+                  <p>Unterstaatssekretär <hi rend="#letterspaced">Glöckel</hi> erbittet und erhält die Ermächtigung des Kabinettsrates, dem Medailleur Prof. Marschall die Bewilligung erteilen zu dürfen, beim <pb facs="krp-0070_r-0022"/>Vertriebe einer von ihm zur Erinnerung an die Errichtung der Republik hergestellten Bronzeplakette einen Zuschlag zum Selbstkostenpreis einheben zu dürfen.</p>
+               </div>
+            </div>
+            <div type="stenogramme">
+               <div n="1">
+                  <head>[KBR 70, 13. Mai 1919, Stenogramm A]</head>
+                  <p><pb facs="krp-0070_s01-0001"/>Schumpeter entschuldigt.</p>
+                  <p>Kabinettsrat Nr. 70, 13. /5.</p>
+                  <p>1. [Fink]: Antrag Bauer-Flotow Titelverleihung an Beamte des liquidierenden Ministeriums des Äußeren.</p>
+                  <p>Angenommen.</p>
+                  <p>2. [Fink]: Gesetz Kanzleioffizianten etc.</p>
+                  <p>Angenommen.</p>
+                  <p>3. [Fink]: Wenn von der Friedenskonferenz im telegraphischen Weg Mitteilungen und Anfragen kommen, muss vorgesorgt werden, dass möglichst bald die Antwort gegeben werden kann.</p>
+                  <p>In Erinnerung gebracht.</p>
+                  <p>4. Loewenfeld-Russ:</p>
+                  <p>a) Ständiger Verbindungsdienst mit der amerikanischen Lebensmittel-Kommission. Aus Belgrad Telegramm, </p>
+                  <p>dass die Südslawen insolange nicht Lebensmittel liefern, als in Marburg Konflikte und Kämpfe. </p>
+                  <p>Eine völlige Beilegung der Kämpfe nur würde die Lebensmittelsendungen weiterlaufen lassen. Termin bis morgen </p>
+                  <p>Mittag. Nun sind große Lebensmitteltransporte am Weg.</p>
+                  <p>Waiss: Die letzten Nachrichten gehen dahin, dass die Drau als Demarkationslinie genommen werden soll.</p>
+                  <p>Loewenfeld: Werde sagen, dass die Verhandlungen noch nicht beendigt werden konnten, dass aber weiterverhandelt wird und der baldige Abschluss zu erwarten ist.</p>
+                  <p>[4.] b) [Loewenfeld]: Der Missionsleiter hat Loewenfeld wissen lassen, dass er es angesichts der Kohlen-Not </p>
+                  <p>nicht verstehe, warum wir die Sommerzeit nicht einführen. Er hat dann im Verlauf des Gesprächs in solenner Form gefordert, dass die Sommerzeit eingeführt wird.</p>
+                  <p>Ellenbogen: <hi rend="#s">Ebenso</hi> Findet es unbegreiflich, dass die Sommerzeit nicht eingeführt wurde.</p>
+                  <p>Eldersch: Alle bäuerlichen Abgeordneten und die Arbeiter am Land waren auch gegen die Sommerzeit.</p>
+                  <p>Fink: Ob nicht etwa nur in Wien?</p>
+                  <p>Paul: Dagegen, die Öffentlichkeit lacht uns aus.</p>
+                  <p>Fink: Damit den Amerikanern und Engländern gezeigt wird, dass man auf sie achtet wäre der </p>
+                  <p>Hauptausschuss neuerlich zu befragen.</p>
+                  <p>[4.] c) Loewenfeld: Hat eine Reihe von Interp[ellationen] erhalten über die allgemeine Ernährungslage, die Zuckersituation und allgemeinen Fremden- und Reiseverkehr. </p>
+                  <p>Der Redner fragt an, ob er morgen mündlich antworten kann. Allerdings fragt es sich, eine Beantwortung </p>
+                  <p>über den Fremdenverkehr überhaupt erfolgen soll. Der Redner bespricht die Widerstände, welche die einzelnen Länder dagegen erheben. </p>
+                  <p>Wenn die Länder diese Tendenz weiterverfolgen und die ganze Ernährungswirtschaft gefährden, so möge man einen Politiker </p>
+                  <p>auf meinen Platz setzen. Die interalliierte Lebensmittel-Kommission hat alle Fachmänner des Verkehrs zu einer Besprechung </p>
+                  <p><pb facs="krp-0070_s01-0002"/>eingeladen. Redner bittet um die Meinung des Kabinettsrates, wie er sich zur Interp[ellation] verhalten soll.</p>
+                  <p>Fink: Hauptsächlich ist es die Sorge der Ernährung und nicht politische Gründe, welche zumeist die einzelnen Länder zu dieser </p>
+                  <p>Haltung veranlassen.</p>
+                  <p>Eldersch: Ein Erlass ist in Vorbereitung an die Länder, in welchem ihnen die Ungehörigkeit eines derartigen Vorgehens vorgehalten werden soll. </p>
+                  <p>Darin wird auch die Stellungnahme der Entente zu kennzeichnen sein. Der Entwurf wird vorgelegt werden in der </p>
+                  <p>nächsten Kabinettsratssitzung.</p>
+                  <p>Deutsch: Den Ländern gegenüber wird man schärfer auftreten müssen. Wir lassen uns alles gefallen. Die Lebensmittel, die wir durch die </p>
+                  <p>Entente beziehen, kann man einfach den Ländern vorenthalten. </p>
+                  <p>Vorarlberg - Miliz Deutsch hält diese Zustände für unhaltbar.</p>
+                  <p>Fink: Gibt eine genetische Darstellung der Sachlage (Lindau, Spartakisten). In der Sache selbst sollte man </p>
+                  <p>jetzt nicht vorgehen.</p>
+                  <p>Bauer: Von seinem Standpunkt spricht er sich dagegen aus, dass derartige Konflikte mit den Ländern gerade jetzt ausgetragen werden. Solange der Friede nicht </p>
+                  <p>geschlossen ist, würde dies sehr schaden. Es gibt schon Machtmittel: Banknotenpresse. </p>
+                  <p>Dagegen sollten die Beschlüsse, die schon gefasst wurden, doch verwirklicht werden: Beschwerden so schnell als möglich an den Verfassungsgerichtshof. Weiters soll </p>
+                  <p>man diese Sache mehr propagandistisch behandeln (im Wege der Presse). </p>
+                  <p>Morgen aber hält der Redner die Beantwortung für nicht möglich, weil großer Sturm mit Debatte.</p>
+                  <p>Stöckler: Stimmt Bauer wegen der Sache selbst zu, auch was die Zeit anbelangt. Deutsch soll feststellen, wozu die Volkswehr </p>
+                  <p>verwendet werden kann. Ferner soll Paul einfach die Waggons nicht beistellen, wenn Ungesetzlichkeiten von den Ländern begangen werden.</p>
+                  <p>Eldersch: Die Gendarmerie ist beauftragt, bei dieser Kontrolle des Reiseverkehrs abzulehnen und bei der Abnahme von </p>
+                  <p>Lebensmitteln. </p>
+                  <p>[<hi rend="#i">Am Rand:</hi>] Wünscht Aufnahme im Protokoll.</p>
+                  <p>Deutsch: Wird eine ähnliche Verordnung hinausgeben wie Eldersch.</p>
+                  <p>Paul: Habe schon Verfügungen getroffen und das Personal aufgeklärt; allerdings hat die Landesregierungen in Innsbruck dagegen remonstriert.</p>
+                  <p>Loewenfeld: Ist mit Bauer einverstanden, dass jetzt nicht mit Kopf durch die Wand gerannt wird.</p>
+                  <p>Das aber muss er morgen sagen, was er vorgebracht hat, um sich vor der Öffentlichkeit zu rechtfertigen.</p>
+                  <p>Zur Kenntnis genommen.</p>
+                  <p>5. Bauer: Gesetzentwurf in der Nationalversammlung. Die Italiener begründen [ihre] Forderung nach Kunstschätzen damit, dass von der Armee wertvolle Kunstschätze geraubt [wurden] - hat. </p>
+                  <p>Es wäre vielleicht notwendig, unseren guten Willen zu zeigen, den unrechtmäßig erworbenen Besitz den Italienern zurückzugeben und dadurch vielleicht die italienischen </p>
+                  <p>Entschädigungsansprüche zu reduzieren. Aus diesen Gründen ist ein Gesetzentwurf verfasst worden, der ehestens in der Nationalversammlung eingebracht werden soll. Zunächst </p>
+                  <p>Statuierung einer Anzeigepflicht. Mit dem Staatsamt des Inneren, Unterricht und Justiz wurde schon Einvernehmen gepflogen.</p>
+                  <p>Zugestimmt.</p>
+                  <p><pb facs="krp-0070_s01-0003"/>6. Eldersch: Gemeindewahlordnung für das Land Steiermark.</p>
+                  <p>Angenommen.</p>
+                  <p>7. Eldersch: Niederösterreichischer und Kärntner Landesausschuss.</p>
+                  <p>Angenommen.</p>
+                  <p>8. Fink: Zoll- und handelspolitische Verfügungen.</p>
+                  <p>Angenommen.</p>
+                  <p>9. Fink: Vertretungsbefugnis [des] Vizekanzlers.</p>
+                  <p>Angenommen als Initiativantrag des Verfassungsausschusses.</p>
+                  <p>10. Fink: Vorstellung des zwischenstaatsamtlichen Komitees [gegen einen Heeresvertreter].</p>
+                  <p>Deutsch: Verweist auf die Motive, welche im letzten Kabinettsrat dazu geführt haben. Im Komitee muss aber jemand sitzen, </p>
+                  <p>der die Verhältnisse der Berufsgagisten kennt.</p>
+                  <p>Bauer: Bittet auch um Zustimmung des Kabinettsrates, dass ein Vertreter für das Äußere entsendet wird (die k. u. k. Beamten waren ganz verschieden von </p>
+                  <p>den deutsch-österreichischen Beamten. Noch größere Verschiedenheiten gehen aus der Art der Verwendung der Beamten - namentlich der im Ausland - hervor. </p>
+                  <p>Die Details können dem Komitee nicht bekannt sein. Der Titel bei Verwendungen im Ausland kann nicht </p>
+                  <p>abgeschafft werden, da das international geregelt ist.</p>
+                  <p>Grimm: Durch eine Vermehrung der Mitgliederzahl wird die Arbeit beeinträchtigt. Die Vertreter des Heerwesens und des Äußeren sollen nur mit </p>
+                  <p>beratender Stimme teilnehmen und nur sprechen wenn mitstimmen bei Angelegenheiten ihres Ressorts.</p>
+                  <p>Bratusch: Das Komitee beruht auf einem Beschluss vom 5. /11. 1918, Prot. Nr. 11. Spricht zugunsten der Vorstellung.</p>
+                  <p>Deutsch: Die Frage der Offiziere ist von großer Bedeutung für den Staat.</p>
+                  <p>Bauer: Mit Vorschlag Grimm einverstanden.</p>
+                  <p>Deutsch: Besteht auf seiner Forderung (Fachmann für Heerwesen Kralowsky!!).</p>
+                  <p>Davy: Tritt ein für den Vorschlag wegen der technischen Schwierigkeiten: 50 Sitzungen à 4 Stunden.</p>
+                  <p>Fink: Resümiert: Bauer nur mit beratender Stimme. Deutsch erhält das Recht,</p>
+                  <p>zur Entsendung eines Fachmannes, hingegen werden andere Wünsche zurückgestellt (Staatsamt für Handel).</p>
+                  <p>Angenommen.</p>
+                  <p>[<hi rend="#i">Am Rand:</hi>] Gleichzeitig Antrag Dr. Bauer.</p>
+                  <p>11. Paul: Reorganisation des Staatseisenbahnrates.</p>
+                  <p>Angenommen.</p>
+                  <p><pb facs="krp-0070_s01-0004"/>12. Paul: Schleppgleisanlage.</p>
+                  <p>Ellenbogen: Ob das die alte Torpedofabrik ist?</p>
+                  <p>Zerdik: Die Torpedofabrik wird in eine Unternehmung zur Erzeugung landwirtschaftlicher Maschinen umgewandelt.</p>
+                  <p>Angenommen.</p>
+                  <p>13. Ellbogen: Zentralen.</p>
+                  <p>Morgen wird im Haus der Antrag Partik und Genossen verhandelt werden. Wir müssen uns darüber klar werden, da morgen eine große </p>
+                  <p>Debatte zu erwarten ist. </p>
+                  <p>Es fragt sich, wie der Abbau der Zentralen zu erfolgen haben wird. Der Redner möchte dahin einraten, dass morgen in einer farblosen </p>
+                  <p>Weise darauf hingewiesen wird, dass die Frage im Ausschuss mit der notwendigen Gründlichkeit behandelt wird.</p>
+                  <p>Loewenfeld: Der Ausschuss bedeutet nichts anderes als die lange Bank; der Redner betrachtet die Sache als recht ungefährlich. </p>
+                  <p>Auf die Mitwirkung dieser Zentralen kann jetzt nicht verzichtet werden; einige sind schon aufgelöst, einige sind entbehrlich geworden und befinden sich schon </p>
+                  <p>in Liquidation. Dagegen ist die KVA [?KGA] z. B., gegen die sich die meisten richten, geradezu unentbehrlich.</p>
+                  <p>Zerdik: So allgemein lässt sich diese Frage nicht behandeln. Man muss jede Sache für sich behandeln. Leder, Messing!! </p>
+                  <p>Der Redner glaubt also, man soll sich auf den Standpunkt stellen, dass jeder einzelne Fall gesondert studiert werden muss.</p>
+                  <p>Eldersch: Es müsste festgestellt werden, dass die Frage des Abbaues der Zentrale für Lebensmittelbewirtschaftung auf keinen Fall in Aussicht genommen werden kann. Auch muss vorerst </p>
+                  <p>die Frage der Sozialisierung klargestellt sein, da man sich sonst eine unnötige Mehrarbeit machen würde.</p>
+                  <p>Fink: Beschluss: Der Kabinettsrat sieht nicht vor, in die Debatte einzugreifen; wenn aber dennoch notwendig, dann würde das Staatsamt </p>
+                  <p>für Handel (Ellenbogen) im obigen Sinn sprechen.</p>
+                  <p>Angenommen.</p>
+                  <p>14. Bratusch: Einrechnung militärischer Dienstleistung in die Praxis der </p>
+                  <p>Justizberufe.</p>
+                  <p>Grimm: Man hätte es ins Komitee bringen sollen. Angenommen.</p>
+                  <p>15. Deutsch: Volkswehr.</p>
+                  <p>Eldersch: Macht darauf aufmerksam, dass diese Forderung ihre Rückwirkung üben wird auf die Polizei, Stadtschutzwache, Polizei und Gendarmerie.</p>
+                  <p>Grimm: Ab 1. Mai und nur solange, als auch der Übergangsbeitrag zugestanden wurde (bis Ende August). </p>
+                  <p>Militärgagisten-Versammlungen! Die waren mit den 100 Kronen nicht zufrieden, haben sich mit den Soldatenräten verbunden: fordern 10 Kronen täglich Zulage, </p>
+                  <p>3-monatliche Abfertigung. Heute [ist] in der zwischenstaatsamtlichen Kommission ein Antrag gestellt worden, welcher die Gleichstellung der Offiziere mit den Beamten vertritt. </p>
+                  <p>Bittet um Ermächtigung des Kabinettsrates, dass darüber hinaus nicht gegangen werden darf. Wenn die Volkswehr die Menage-Aufbesserung nicht bekommt, dann ist die Gefahr, </p>
+                  <p>dass es zu großen Unruhen kommt. Dafür muss sich Deutsch verpflichten.</p>
+                  <p>Deutsch: Die Gefahr ist nicht so groß. Man wird gar nichts merken, wenn diese Leute streiken. </p>
+                  <p>Abbau: In Wien allein im April über 2.000 Mann; im Land Niederösterreich über 4.000 Leute. <hi rend="#s">Insgesamt</hi> -.</p>
+                  <p><pb facs="krp-0070_s01-0005"/>Grimm: Ein Approv[isionierungs]-Zuschuss, den der Befehlshaber für die Mannschaft mit der Waffe -.</p>
+                  <p>Eldersch: Rückwirkung auf sein Ressort ist sehr zu befürchten.</p>
+                  <p>Fink: Resümiert: Anstelle des den Zivilbediensteten zuerkannten Übergangsbeitrages [<hi rend="#i">Einschub:</hi>] wird dem Landesbefehlshaber [<hi rend="#i">Einschub Ende</hi>] ein Betrag von monatlich 1.8 Millionen übergeben für die </p>
+                  <p>Zeit der Geltung des Übergangsbeitrages.</p>
+                  <p>Angenommen.</p>
+                  <p>16. Zerdik: In Warschau sind Vertreter des Warenverkehrsbüros, Volksernährung und der verschiedenen Stellen des Staatsamtes für Handel und Gewerbe, um dort </p>
+                  <p>zu verhandeln. Zu lösen ist vor allem die Waggon-Frage (wir müssen mit unseren eigenen Waggons abholen). </p>
+                  <p>Zerdik soll hinkommen. Es handelt sich nun darum, dass die Vollmacht entsprechend ausgestaltet wird. Die Vollmacht hat die Klausel: "Mit Vorbehalt </p>
+                  <p>der Regierung Zustimmung". Wenn Zerdik hinauffährt, will er den Vertrag bindend unterfertigen können. </p>
+                  <p>Bittet um Ermächtigung, dort bindend abschließen zu können.</p>
+                  <p>Genehmigt.</p>
+                  <p>17. Bratusch: [Ersucht], dass vor Erlassung von Vollzugsanweisungen, </p>
+                  <p>[<hi rend="#i">Einschub:</hi>] mit denen hinsichtlich der Geltendmachung von privatrechtlichen Ansprüchen </p>
+                  <p>Abweichungen vom ordentlichen Rechtsweg festgesetzt werden, jeweils [<hi rend="#i">Einschub Ende</hi>]</p>
+                  <p>das Einvernehmen mit dem Staatsamt für Justiz gepflogen wird.</p>
+                  <p>Zur Kenntnis genommen.</p>
+                  <p>18. Glöckel: -</p>
+                  <p>Schluss ½12h; </p>
+                  <p>nächster Kabinettsrat Freitag, 8h.</p>
+                  <p/>
+               </div>
+               <div n="2">
+                  <head>[KBR 70, 13. Mai 1919, Stenogramm B]</head>
+                  <p><pb facs="krp-0070_s02-0001"/>70, 13. /5.</p>
+                  <p>[<hi rend="#i">Rechtes Obereck:</hi>] Grimm, </p>
+                  <p>Davy.</p>
+                  <p>Glöckel, </p>
+                  <p>Bialoruski</p>
+                  <p>Dr. Müller </p>
+                  <p>für Tandler.</p>
+                  <p>1. Fink: Titelverleihung.</p>
+                  <p>Bratusch: Muss das nicht der Präs[ident] machen?</p>
+                  <p>Angenommen.</p>
+                  <p>2. [Fink]: Gesetz betreffend Kanzleioffizianten .... veröffentlichen.</p>
+                  <p>Einverstanden.</p>
+                  <p>3. [Fink]: Technische Vorbereitung wenn von der Friedensdelegation telegraphische Anfragen an ein Staatsamt kommen.</p>
+                  <p>In Erinnerung bringen.</p>
+                  <p>4. Loewenfeld: </p>
+                  <p>Ich habe einen ständigen Verbindungsdienst mit der amerikanischen Lebensmittel-Kommission. Die amerikanische Mission hat aus Belgrad eine Mitteilung </p>
+                  <p>bekommen, dass die [süd]slawische Regierung insolange keine Transporte nach Deutsch-Österreich zuzulassen [gedenkt], insolange die Kämpfe in Kärnten fortdauern. </p>
+                  <p>Erst vollständige Einstellung der Kämpfe. </p>
+                  <p>Der Chef der amerikanischen Mission erwartet morgen Vormittag zum Zwecke der Beantwortung dieses Telegrammes eine genaue Information </p>
+                  <p>über die Lage in Kärnten durch den Staatssekretär für Volksernährung.</p>
+                  <p>Unterstaatssekretär Waiss: Die letzten Nachrichten sind dahingehend, dass die Drau als neue D[emarkations]-L[inie] genommen werden soll. </p>
+                  <p>Die Jugoslawen stehen auf dem Standpunkt, dass wir dorthin zurückkehren sollen, wo wir vor dem 28. IV. standen. </p>
+                  <p>Das können wir nicht wegen Völkermarkt. </p>
+                  <p>Es wird daher noch verhandelt. Die Verhandlungen dürften morgen zum Abschluss kommen.</p>
+                  <p>[Loewenfeld]: Baldiger Abschluss zu erwarten.</p>
+                  <p>5. Loewenfeld: Die Amerikaner haben mich wissen lassen, dass sie, wo sie [sich für] uns doch so für die Kohlenversorgung bemühen, nicht </p>
+                  <p>verstehen, dass wir die Sommerzeit nicht einführen und haben die Einführung gefordert. </p>
+                  <p>(Beschluss des H[aupt]-A[usschusses] einstimmig womit unser seinerzeitiger Beschluss aufgehoben [wurde]). </p>
+                  <p>Es möge in den allernächsten Tagen eine Mitteilung über die Stellungnahme der deutsch-österreichischen Regierung -.</p>
+                  <p>Ellenbogen: Beantrage Einberufung des H[aupt]-A[usschusses], da ich die Einführung für sehr nützlich halte. Wir sind gezwungen, noch einmal </p>
+                  <p><pb facs="krp-0070_s02-0002"/>die Frage zu beraten.</p>
+                  <p>Eldersch: Alle bäuerlichen Abgeordneten und die Mehrheit der sozialdemokratischen Abgeordneten waren für die Aufhebung der V.A. [Vollzugsanweisung]. </p>
+                  <p>Nur ein Teil der Wiener Abgeordneten war dafür.</p>
+                  <p>Fink: Wenn durchführbar, dass nur für Wien ginge es. Das wird aber wegen ?Gericht und Eisenbahnen nicht gehen.</p>
+                  <p>Paul: Wenn der Hauptausschuss einen Beschluss auf sofortige Einführung fassen würde, so könnte ich es nicht durchführen. Die Durchführung </p>
+                  <p>würde 10-14 Tage erfordern. Was würde die Öffentlichkeit dazu sagen?</p>
+                  <p>Fink: Man wird die Sache noch einmal in den Hauptausschuss bringen und werden dort auch die Bedenken Pauls vorbringen.</p>
+                  <p>Loewenfeld: Ich habe eine Reihe von Interp[ellationen]. Ich soll 1.) Auskunft über die allgemeine Ernährung[slage geben], </p>
+                  <p>2.) [über den] Stand der Zuckerversorgung, </p>
+                  <p>3.) über [den] Stand des Fremden- und Reiseverkehrs.</p>
+                  <p>Ad 1.) und 2.) bitte [ich] um Ermächtigung, dass ich die Beantwortung morgen mündlich beantworte.</p>
+                  <p>Schwieriger ist die Frage wegen Reiseverkehr. </p>
+                  <p>Salzburg hat eine öffentliche Kundmachung erlassen, dass sie sich nicht [um die Vollzugsanweisung] kehrt. Oberösterreich und Tirol haben schriftlich protestiert. </p>
+                  <p>Es wirft sich die Frage auf, was die Gesamtregierung zu diesem Verhalten der Länder macht. Ich bin besonders interessiert, weil mein Amt die </p>
+                  <p>Vollzugsanweisung hinausgegeben hat. Frage des Prestige.</p>
+                  <p>Wenn die Länder aus politischen Gründen die Tendenz in dieser Weise weiter verfolgen, dass sie auch die Ernährungswirtschaft gefährden, so soll man einen </p>
+                  <p>Politiker an die Spitze stellen. Ich mache das nicht mehr sehr lange mit.</p>
+                  <p>Die Sache ist auch schon zur Kenntnis der fremden Missionen gekommen. </p>
+                  <p>Die int[eralliierte] Lebensmittel-Kommission trifft alle Maßnahmen, um die Verkehrsschwierigkeiten zwischen den einzelnen Ländern zu beheben. </p>
+                  <p>Capt. Gregory hat die Verkehrs-, Telefon- etc. Vertreter zu einer Besprechung eingeladen.</p>
+                  <p>Soll ich die Sachen vollkommen aufklären, wie sie sind? Bitte um die Meinung des Kabinetts, ob ich bei der Interp[ellations]-Beantwortung </p>
+                  <p>auf die unmöglichen Verhältnisse hinweisen kann.</p>
+                  <p>Fink: Ich glaube nicht, dass es politische Gründe sind, sondern hauptsächlich Sorge um die Ernährung. Hamstern durch die Fremden und Preistreiberei. </p>
+                  <p><pb facs="krp-0070_s02-0003"/><hi rend="#s">Nichtsdestoweniger müssen wir [ver]suchen, dass die Verordnung, wenn sie am 20. ins Leben tritt</hi> -. </p>
+                  <p>Die Verordnung tritt am 20. in Kraft. Insolange können wir nichts machen gegen [das] Nicht-einreisen-lassen.</p>
+                  <p>Eldersch: Der Staatssekretär für Volksernährung hat an mich das Ersuchen gestellt, für die Durchführung zu sorgen. </p>
+                  <p>Es bleibt mir nichts anderes übrig, als einen Erlass hinauszugeben, wo die Gründe <hi rend="#s">hinausgegeben und</hi> dargelegt und gegen </p>
+                  <p>die Maßnahmen protestiert [wird]. Ein solcher Erlass ist bei mir in Ausarbeitung. </p>
+                  <p>Ich werde den Druck der Entente auch verwenden.</p>
+                  <p>Fink: Das Wirksamste wäre, wenn man zunächst in milder Form darauf hinweist, dass man auch bei der Zuweisung </p>
+                  <p>von Lebensmitteln Bedacht nehmen würde.</p>
+                  <p>Paul: -.</p>
+                  <p>Deutsch: Man soll den Ländern gegenüber schärfer auftreten. Man soll ihnen zeigen, dass wir auch Machtmittel haben. </p>
+                  <p>Die Entente-Lebensmittel sind ein solches Mittel.</p>
+                  <p><hi rend="#s">Eldersch</hi>: - [Deutsch]: Heerwesen ist zentrale Sache. Es geht in den Ländern bereits soweit, dass sich die Länder auch militärisch selbständig machen. </p>
+                  <p>Schaffung einer Volksmiliz in Vorarlberg. Es ist unmöglich, weil uns der Friedensvertrag das nicht gestatten wird. </p>
+                  <p>Ich habe dem Landesbefehlshaber den Auftrag gegeben, dass man der Miliz keine Waffen geben darf.</p>
+                  <p>Die Landesregierung schickt ein Telegramm: die V[orarlberger] Landesregierung hat aus schwerwiegenden Gründen die Schaffung einer Volksmiliz angeordnet und wird diese </p>
+                  <p>Maßregel zu jenem Zeitpunkt aufheben, wo es ihr wieder erforderlich erscheint. Der Landesbefehlshaber wird angewiesen, </p>
+                  <p>die Waffen auszugeben.</p>
+                  <p>Es wirft sich die Frage auf, entweder die Volkswehr in Vorarlberg aufzuheben, oder man muss sich auf den Standpunkt stellen, dass das Heersachen - Reichssache ist.</p>
+                  <p>Fink: Es war eine Maßnahme gegen die Spartakisten, die von Lindau her zuströmen wollten. </p>
+                  <p>Man hat in Tirol und V[orarlberg] das Standesschützen - gehabt und da war der Besitz von Waffen jederzeit gestattet. </p>
+                  <p>In der Sache soll man jetzt nicht vorgehen, denn man hat bei der Landesregierung beschlossen, wenn in einer Gemeinde etwas ist, wenn dort </p>
+                  <p>Volkswehr ist, sich die Miliz der Volkswehr unterordnen muss und nur wo keine Volkswehr ist, kann die Miliz zur Abwehr schreiten.</p>
+                  <p>Bauer: Ich muss mich von meinem Standpunkt dagegen aussprechen, dass die Konflikte mit den Ländern im gegenwärtigen Zeitpunkt ausgetragen werden. </p>
+                  <p>Solange der Friede nicht geschlossen ist, würde uns das zu sehr schaden. </p>
+                  <p>Was die Machtmittel anbelangt, so bin ich nicht skeptisch. </p>
+                  <p>Man braucht sich nur zu entschließen, dass die Länder, welche nicht parieren, am 1. kein Geld bekommen. </p>
+                  <p>Beide Konflikte wären hinhaltend zu behandeln. </p>
+                  <p>Hingegen sollen die Beschlüsse des Kabinetts [durchgeführt werden], dass die Verfügungen endlich vor den Verfassungsgerichtshof kommen. Bitte den Herrn Staatssekretär für Volksernährung, </p>
+                  <p><pb facs="krp-0070_s02-0004"/>[dass er] dafür sorgt, dass am 20. in jedem Land von Interessenten Beschwerden über die Beschränkung der Freizügigkeit beim Verfassungsgerichtshof </p>
+                  <p>eingebracht werden.</p>
+                  <p>Es ist auch schon hier der Wunsch geäußert worden, dass die Sachen propagandistisch in der Presse behandelt werden. </p>
+                  <p>Jeder einzelne Fall soll in die Zeitung kommen.</p>
+                  <p>Was die Int[erpellations]-Beantwortung anbelangt, so wird das morgen nicht gehen, weil sich daran eine lange Debatte anschließen [wird]. </p>
+                  <p>Ich würde raten, das Hauptgewicht auf den Nachweis der absoluten Verfassungswidrigkeit [zu] legen.</p>
+                  <p>Was die V[orarlberger] Sache anbelangt -. Die Gefahr für Vorarlberg ist vorüber. Es ist nicht möglich, dass sich ein Land ein selbständiges </p>
+                  <p>Heerwesen schafft. Man wird einmal von den Machtmitteln Gebrauch machen müssen. Man muss aber damit aber warten.</p>
+                  <p>Stöckler: Stimme zu wegen der Zeit. Aber man muss schon jetzt Vorbereitungen treffen. Eine der wichtigsten Vorbereitungen [ist], dass man sich </p>
+                  <p>klar wird, was für Organe verwendet werden. Volkswehr und Eisenbahner. Man muss sich im Klaren werden, wozu die Volkswehr </p>
+                  <p>verwendet werden darf. </p>
+                  <p>D[eutsch] soll schon jetzt mit der Volkswehr in Fühlung treten, wozu sie verwendet werden darf.</p>
+                  <p>Paul soll die Verwendung der Waggons überwachen. (Oberösterreich hat den Transportschein-Zwang aufrecht erhalten.)</p>
+                  <p>Unsere Organe müssen unsere Verfügungen beobachten.</p>
+                  <p>Eldersch: Die Gendarmerie wurde angewiesen, die Mitwirkung bei der Lebensmittel-Kontrolle zu versagen.</p>
+                  <p>Deutsch: Ich habe im V[ollzugs]-A[usschuss] der Soldatenräte darüber gesprochen. Der Vollzugsausschuss hat zugestimmt, dass die Volkswehr zu solchen </p>
+                  <p>Sachen nicht verwendet werden soll. Gegenwärtig bezahlen wir die Volkswehr in manchen Ländern ausschließlich dazu, um uns auszuhungern.</p>
+                  <p>Paul: Bezüglich des Holzes: ich habe am 3. Mai die Verordnung erlassen, dass die Landesverordnung ungültig ist. </p>
+                  <p>Die Landesregierung in Tirol hat einen Protest dagegen erhoben und mitgeteilt, dass sie dafür Sorge tragen wird, dass der Transport[schein]-</p>
+                  <p>Zwang aufrecht erhalten wird.</p>
+                  <p>Loewenfeld: Ich bin mit Bauer einverstanden. Meine Unterbehörden parieren nicht. </p>
+                  <p>Das Zuwarten hat für mich eine sehr unangenehme Wirkung, weil die Wiener nicht wissen, wie sie dran sind. </p>
+                  <p>Die Ernährung wird gefährdet.</p>
+                  <p><pb facs="krp-0070_s02-0005"/>Bauer: Gesetzentwurf betreffend die Rückstellung von Kunst- und historischen Wertgegenständen an Italien. </p>
+                  <p>Die Italiener begründen ihre Forderungen an Kunstschätzen damit, dass von der Armee viel aus Venetien mitgenommen wurde. </p>
+                  <p>Das Staatsamt des Inneren hat im Einvernehmen mit uns eine öffentliche Aufforderung in der Presse erlassen, Kunstschätze aus Venetien </p>
+                  <p>abzuliefern. </p>
+                  <p>[An das] Staatsamt für Justiz und für Inneres gesendet und umgearbeitet.</p>
+                  <p>Anzeigepflicht. </p>
+                  <p>Verfahren geordnet. </p>
+                  <p>Amnestie.</p>
+                  <p>Genehmigung der Einbringung.</p>
+                  <p>Eldersch: Wahlordnung.</p>
+                  <p>Eldersch: Umlagen.</p>
+                  <p>Fink: Zoll- und handelspolitische Verfügungen.</p>
+                  <p>Fink: Vizekanzler.</p>
+                  <p>Angenommen.</p>
+                  <p>Fink: Punkt 2c. Vorstellung [des zwischenstaatsamtlichen Komitees] gegen [einen] Heeresvertreter. </p>
+                  <p>Verliest die Vorstellung.</p>
+                  <p>Deutsch: Erinnert an die Motive, die zu dem Beschluss geführt haben. </p>
+                  <p>Es handelt sich darum, dass ein fachmännischer Vertreter der Interessen der Berufsgagisten zugezogen ist. </p>
+                  <p>Ich glaube nicht, dass ein Grund besteht, von dem Beschluss abzugehen.</p>
+                  <p><pb facs="krp-0070_s02-0006"/>Bauer: [<hi rend="#i">Einschub:</hi>] Ad Punkt 3. [<hi rend="#i">Einschub Ende</hi>] Ich bitte auch um die Zustimmung, dass ein Vertreter des Äußeren berufen wird. </p>
+                  <p>Es gibt eine Reihe von Notwendigkeiten für die Herren des äußeren Dienstes, die den Herren des Komitees nicht </p>
+                  <p>bekannt ist. Abschaffung der Titel ist im äußeren Dienst nicht möglich. </p>
+                  <p>Bitte um Zustimmung des Kabinetts.</p>
+                  <p>Grimm: Im letzten Kabinettsrat wurde von einigen Mitgliedern erwähnt, dass bereits ein solcher Beschluss gefasst wurde. </p>
+                  <p>Vertreter sollen nur mit beratender Stimme und nur bei [Fragen des] Äußeren und Heerwesens mitstimmen, sonst Verzögerung der Arbeiten.</p>
+                  <p>Bratusch: 15. XI. 18 (KP [Kabinettsratsprotokoll] 11). </p>
+                  <p>Es wäre zu erwägen, ob man wirklich die Zahl der Mitglieder vermehren soll um nicht die Arbeiten des Komitees </p>
+                  <p>zu verzögern.</p>
+                  <p>Deutsch: Die Frage des Abbaues des Standes der Offiziere [ist] von größter Bedeutung. Im Komitee werden Fragen an die </p>
+                  <p>Offiziere behandelt, ohne dass jemand dort sitzt, der die einschlägigen Fragen kennt. </p>
+                  <p>Ich bestehe nicht darauf, dass ein ständiger Vertreter bestellt wird. </p>
+                  <p>Wir wollen, dass die Offiziere den Staatsangestellten gleichgestellt werden. Diese Frage werden </p>
+                  <p>wir wollen, dass die Offiziere nichts anderes haben als die Staatsangestellten.</p>
+                  <p>Bauer: Mit jeweiliger Zuziehung eines Experten mit beratender Stimme wenn Ressort-Fragen vorkommen [einverstanden].</p>
+                  <p>Deutsch: Verlangt ständigen Vertreter.</p>
+                  <p>Davy: Unsere Eingabe hat kein bestimmtes Ressort im Auge, sondern nur die Wahrung der </p>
+                  <p>technischen Arbeitsmöglichkeiten.</p>
+                  <p>Fink: Im Übrigen wird konstatiert, dass das Komitee für alle Ressorts da ist.</p>
+                  <p>Paul: Staatseisenbahnrat.</p>
+                  <p>Genehmigt.</p>
+                  <p><pb facs="krp-0070_s02-0007"/>Paul: Schleppgleise.</p>
+                  <p>Ellbogen: Zentralen.</p>
+                  <p>Antrag Partik und Genossen wegen Abschaffung der Zentralen morgen auf der Tagesordnung - dass ein Ausschuss eingesetzt wird, welcher mit der Regierung verhandelt wegen Abbau der Zentralen. </p>
+                  <p>Der Vorgang im Ausschuss war so, dass die Debatte ausging von der Lederzentrale, deren Abschaffung verlangt wurde. </p>
+                  <p>Der Antrag auf Abbau der Zentralen wird angenommen werden.</p>
+                  <p>Der Abbau der Zentralen. </p>
+                  <p>Wir sollen uns in möglichst formloser Weise befassen […] und darauf beschränken zu sagen, dass die Sache im Ausschuss möglichst gründlich </p>
+                  <p>studiert werden wird.</p>
+                  <p>Loewenfeld: Die Frage der Zentralen hängt zusammen mit der staatlichen Bewirtschaftung. </p>
+                  <p>Ich kann auf die Mitwirkung der Zentralen derzeit nicht verzichten. Manche sind schon aufgelöst, </p>
+                  <p>K.G.A. [Kriegsgetreideanstalt] ist unentbehrlich.</p>
+                  <p>Zerdik: Man muss jede Sache für sich allein behandeln.</p>
+                  <p>Eldersch: Die beteiligten Ressorts müssen zu dieser Frage morgen nicht Stellung nehmen. </p>
+                  <p>Eventuell müsste erklärt werden, dass die Auflösung jener Zentralen, welche mit </p>
+                  <p>Lebensmitteln befasst sind, jetzt nicht möglich ist. </p>
+                  <p>Auch die industriellen Zentralen können erst abgebaut werden, bis wir mit der Sozialisierung klar sind.</p>
+                  <p>[Fink]: Der Kabinettsrat sieht vor, in die Debatte nicht einzugreifen; </p>
+                  <p>wenn [es] trotzdem notwendig wäre, so würde [<hi rend="#i">Einschub:</hi>] Zerdik oder Unterstaatssekretär Ellenbogen [<hi rend="#i">Einschub Ende</hi>] den Standpunkt vertreten.</p>
+                  <p><pb facs="krp-0070_s02-0008"/>Bratusch: Einrechnungsvorschriften.</p>
+                  <p>Angenommen.</p>
+                  <p>Deutsch: Teuerungszulage für die Volkswehr.</p>
+                  <p>Eldersch: Diese Forderung wird rückwirken auf die Polizei, Gendarmerie, Gewerbewache und Stadtschutzwache.</p>
+                  <p>Grimm: Es muss eine Form gewählt werden, welche nicht präjudizierend wirkt.</p>
+                  <p>1.) Vom 1. Mai - mit Dank zur Kenntnis - bis 31. VIII.</p>
+                  <p>2.) Nur solange, als der Übergangsbeitrag gewährt wird.</p>
+                  <p>3.) Es wird anstelle des den zivilen Bediensteten zugestanden Üb[ergangs]-Beitrages dem Landesbefehlshaber eine bestimmte Summe übergeben. </p>
+                  <p>[<hi rend="#i">Am Rand</hi>:] 1,800.000 zu Zwecken der Kostaufbesserung </p>
+                  <p>der Wiener Volkswehr.</p>
+                  <p>Die Interm[inisterielle] Liquidierungskommission hat den Gagisten bei den liquidierenden Stellen auch den Übergangsbeitrag </p>
+                  <p>gewährt. Sie waren nicht zufrieden - Protestversammlung. Sie verlangen 10 Kronen pro Tag, </p>
+                  <p>3-monatliche Abfertigung, etc. Am Freitag ist der Termin zu Ende. </p>
+                  <p>Die interstaatsamtliche Subkommission hat beschlossen, zuzugestehen die Gleichstellung der Offiziere mit den Staatsangestellten. </p>
+                  <p>Ermächtigung, dass der deutsch-österreichische Vertreter in der Liquidierungskommission nicht weiter geht. </p>
+                  <p>Wir müssen nur verlangen, dass die Volkswehr uns gegen Gewaltakte zur Durchsetzung der [<hi rend="#i">Einschub:</hi>] weitergehenden [<hi rend="#i">Einschub Ende</hi>] Forderungen der </p>
+                  <p>Gagisten und liquidierenden Mannschaften unterstützt.</p>
+                  <p>Deutsch: Der Schaden, der angerichtet werden kann, ist nicht so erheblich. Es handelt sich größtenteils um Kanzleileute. </p>
+                  <p>Bei dieser Gelegenheit Abbau in Wien 2.000; </p>
+                  <p>von 60.000 auf 48.000. </p>
+                  <p>Die Belastung wird nicht allzu schwer sein.</p>
+                  <p>Grimm: Es handelt sich also nur um die Volkswehr mit der Waffe.</p>
+                  <p>Eldersch: Ich muss noch einmal auf die Rückwirkungen aufmerksam machen.</p>
+                  <p>Fink: -.</p>
+                  <p><pb facs="krp-0070_s02-0009"/><hi rend="#s">Bratusch: Einrechnungsvorschriften</hi>.</p>
+                  <p>Zerdik: </p>
+                  <p>In Warschau sind Vertreter des Warenverkehrsbüros, Volksernährung, Handel und Gewerbe </p>
+                  <p>[betreffend] Kohlenimport </p>
+                  <p>[und] Industrieartikel, die wir dorthin ausführen. </p>
+                  <p>Zu lösen ist vor allem die Waggon-Frage. Ausstellung der Vollmacht. Kloss hat die Klausel "Mit Vorbehalt der Genehmigung der Regierung". </p>
+                  <p>Bitte [um] die Ermächtigung, direkt den Vertrag dort bindend zu unterfertigen.</p>
+                  <p>Genehmigt.</p>
+                  <p>Bratusch: [Ersucht], dass vor Erlassung der Vollzugsanweisung ... das Einvernehmen mit [dem Staatsamt für] Justiz </p>
+                  <p>gepflogen wird.</p>
+                  <p>Zur Kenntnis genommen.</p>
+                  <p>Glöckel: Über Wunsch des Staatskanzlers. </p>
+                  <p>Prof. Marschall will eine Plakette aus Bronze anfertigen und </p>
+                  <p>eine bestimmte Anzahl soll der Regierung zur Verfügung gestellt werden zum Selbstkostenpreis. </p>
+                  <p>Plakette zur Erinnerung an die Gründung der deutsch-österreichischen Republik. </p>
+                  <p>Bewilligung eines Zuschlages zum Selbstkostenpreis beim Vertrieb.</p>
+                  <p>½12h.</p>
+                  <p>Freitag 8h.</p>
+                  <p><pb facs="krp-0070_s02-0010"/>Bei einer Besprechung [über] die Sep[arations]-Bestrebungen gewisser Länder Deutsch-Österreichs (Absperrungsmaßnahmen, Einreisebewilligung) </p>
+                  <p>hat der Chef der amerikanischen Delegation der internationalen Lebensmittel-Kommission Capt. </p>
+                  <p>Gregory erklärt, dass er gerade darüber sei, im Auftrag Mr. Hoovers alle Maßnahmen zu treffen, </p>
+                  <p>um die bestehenden Behinderungen im gesamten Verkehrswesen zwischen den einzelnen früheren Staaten Österreichs zu beheben. </p>
+                  <p>Er hat deshalb die Fachmänner auf dem Gebiet des Eisenbahn-, Post-, Telephon- und Telegraphenwesens aller </p>
+                  <p>früheren österreichischen Länder und Deutsch-Österreichs zu einer gemeinsamen Besprechung einzuladen um dahin zu </p>
+                  <p>gelangen, dass alle Verkehrsverbindungen des alten Österreich wieder hergestellt werden. Aus dieser Tatsache </p>
+                  <p>allein geht schon hervor, dass er umso mehr mit Energie alle jene Tendenzen bekämpfen wird, die </p>
+                  <p>auf deutsch-österreichischem Gebiet selbst auftauchen und auf eine Absperrung der einzelnen Länder Deutsch-Österreichs gegeneinander </p>
+                  <p>und auf Sep[arations]-Maßnahmen hinzielen. Gregory erklärte die daraus sich ergebende Situation </p>
+                  <p>für eine vollkommen unmögliche und den Intentionen der internationalen Mächte auf tunlichst raschen Wiederaufbau des Wirtschaftslebens in Deutsch-Österreich vollkommen zuwiderlaufend. </p>
+                  <p>Gregory hat ein Telegramm diesen Inhaltes heute Nachmittag an den Staatssekretär für Verkehrswesen gerichtet, </p>
+                  <p>eine Abschrift hievon dem Staatssekretär für Volksernährung übermittelt, mit der Aufforderung, ihm über die erwähnten Verhältnisse zwecks </p>
+                  <p>weiterer Verfügungen ehestens eingehend zu berichten.</p>
+               </div>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

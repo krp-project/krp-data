@@ -1,0 +1,931 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href='http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:acdh="https://vocabs.acdh.oeaw.ac.at/schema#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xml:lang="de">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="a" type="main" n="0176">Kabinettsprotokoll Nr. 176 vom 27. April 1920</title>
+            <title level="m" type="main" n="01">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <title level="m" type="sub" n="">Renner III (17. Oktober 1919 – 7. Juli 1920)</title>
+            <meeting>
+               <placeName key="https://d-nb.info/gnd/4066009-6">Wien</placeName>
+               <orgName key="https://d-nb.info/gnd/5162749-8">Kabinettsrat</orgName>
+               <date when-iso="1920-04-27"/>
+            </meeting>
+            <editor>
+               <persName key="https://d-nb.info/gnd/122481836"
+                         role="hasCreator"
+                         xml:id="hwohnout">
+                  <forename>Helmut</forename>
+                  <surname>Wohnout</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</affiliation>
+               <idno type="ORCID">0000-0002-3864-9839</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/120789825"
+                         role="hasCreator"
+                         xml:id="tolechowski">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0003-3291-6876</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/131679384"
+                         role="hasCreator"
+                         xml:id="rlein">
+                  <forename>Richard</forename>
+                  <surname>Lein</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0002-7502-0503</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="aholzer">
+                  <forename>Anna</forename>
+                  <surname>Holzer</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0005-3560-3500</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="dsoelkner">
+                  <forename>Dominik</forename>
+                  <surname>Sölkner</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-9895-7212</idno>
+            </editor>
+            <editor>
+               <persName role="hasContributor" xml:id="ischotzko">
+                  <forename>Ina</forename>
+                  <surname>Schotzko</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-5210-3713</idno>
+            </editor>
+            <funder n="1">
+               <orgName key="https://d-nb.info/gnd/2054142-9" role="hasFunder">Österreichischer Wissenschaftsfonds FWF</orgName>
+               <idno type="project">PAT1495024</idno>
+               <title type="project">Die Protokolle des österreichischen Kabinettsrates 1919–1920</title>
+            </funder>
+            <respStmt>
+               <resp>Projektverantwortung</resp>
+               <orgName key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Projektleitung</resp>
+               <persName key="https://d-nb.info/gnd/120789825" role="hasPrincipalInvestigator">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+                  <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+                  <idno type="ORCID">0000-0003-3291-6876</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Nationaler Forschungspartner</resp>
+               <orgName key="https://d-nb.info/gnd/1123037736" role="hasEnabler">Austrian Centre for Digital Humanities</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Digitalisierung der gedruckten Quellen</resp>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>TEI-Datenmodellierung</resp>
+               <persName role="hasContributor" xml:id="tfruehwirth">
+                  <forename>Timo</forename>
+                  <surname>Frühwirth</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-3997-5193</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technische Supervision</resp>
+               <persName key="https://d-nb.info/gnd/1043833846"
+                         role="hasContributor"
+                         xml:id="pandorfer">
+                  <forename>Peter</forename>
+                  <surname>Andorfer</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-9575-9372</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technisches Consulting und Vorbereitung der Druckausgabe</resp>
+               <persName key="https://d-nb.info/gnd/13281899X"
+                         role="hasContributor"
+                         xml:id="skurz">
+                  <forename>Stephan</forename>
+                  <surname>Kurz</surname>
+                  <affiliation key="https://d-nb.info/gnd/1202798799">Institut für die Erforschung der Habsburgermonarchie und des Balkanraumes</affiliation>
+                  <idno type="ORCID">0000-0003-2546-2570</idno>
+               </persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher key="https://d-nb.info/gnd/1001454-8">Österreichische Akademie der Wissenschaften</publisher>
+            <date when="2028"/>
+            <availability status="free">
+               <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">Lizenziert unter CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/deed.de)</licence>
+            </availability>
+            <idno type="ISBN_Print"/>
+            <idno type="ISBN_Part_epub"/>
+            <idno type="ISBN_Digital"/>
+            <idno type="DOI"/>
+            <idno type="DOI_zenodo"/>
+            <idno type="ebook_ID"/>
+         </publicationStmt>
+         <seriesStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="m" type="main">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <respStmt>
+               <resp>Bearbeitung und Herausgeberschaft</resp>
+               <orgName key="https://d-nb.info/gnd/2024703-5">Universität Wien</orgName>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+         </seriesStmt>
+         <notesStmt>
+            <note>Diese TEI-XML-Datei ist Grundlage für eine Druckausgabe der Edition.</note>
+            <relatedItem>
+               <biblStruct>
+                  <monogr>
+                     <imprint>
+                        <pubPlace key="https://d-nb.info/gnd/4066009-6">Wien</pubPlace>
+                        <publisher key="https://d-nb.info/gnd/2068748-5">Verlag der Österreichischen Akademie der Wissenschaften</publisher>
+                        <date when="2029"/>
+                     </imprint>
+                     <extent/>
+                  </monogr>
+                  <note>
+              <idno/>
+              <ptr/>
+            </note>
+                  <citedRange/>
+               </biblStruct>
+            </relatedItem>
+         </notesStmt>
+         <sourceDesc>
+            <bibl>Quellbestand: AT-OeStA/AdR MRang MR 1Rep KRP Kabinettsratsprotokolle, 1918-1920 (Teilbestand)<ref target="https://www.archivinformationssystem.at/detail.aspx?id=5465">https://www.archivinformationssystem.at/detail.aspx?id=5465</ref>
+            </bibl>
+            <msDesc>
+               <msIdentifier>
+                  <institution key="https://d-nb.info/gnd/37748-X" role="hasOwner">AT-OeStA Österreichisches Staatsarchiv (Archiv (ÖStA))</institution>
+                  <repository key="https://d-nb.info/gnd/1601181-8">AT-OeStA/AdR Archiv der Republik, 1918- (Abteilung)</repository>
+                  <collection>AT-OeStA/AdR MRang MR 1Rep Ministerrat 1. Republik, 1918 - 1938 (Bestand)</collection>
+                  <idno>AT-OeStA_AdR-MRang-MR-1.-Rep.-KRP-176</idno>
+               </msIdentifier>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <abstract>
+            <p>
+          <!--to be generated-->
+        </p>
+         </abstract>
+      </profileDesc>
+      <encodingDesc>
+         <styleDefDecl scheme="css"/>
+         <tagsDecl>
+            <rendition xml:id="b" scheme="css">font-weight:bold;</rendition>
+            <rendition xml:id="su" scheme="css">vertical-align:super;font-size:.7em;</rendition>
+            <rendition xml:id="s" scheme="css">text-decoration:line-through;</rendition>
+            <rendition xml:id="u" scheme="css">text-decoration:underline;</rendition>
+            <rendition xml:id="ow" scheme="css">text-decoration:line-through;text-decoration-style:double;</rendition>
+            <rendition xml:id="r" scheme="css">display:block;text-align:right;</rendition>
+            <rendition xml:id="letterspaced" scheme="css">letter-spacing:0.15em;</rendition>
+            <rendition xml:id="i" scheme="css">font-style:italic;</rendition>
+         </tagsDecl>
+         <editorialDecl>
+            <hyphenation>
+               <p>
+            <!--to be added-->
+          </p>
+            </hyphenation>
+            <correction>
+               <p>
+            <!--to be added-->
+          </p>
+            </correction>
+            <normalization>
+               <p>
+            <!--to be added-->
+          </p>
+            </normalization>
+            <punctuation>
+               <p>
+            <!--to be added-->
+          </p>
+            </punctuation>
+            <stdVals>
+               <p>
+            <!--to be added-->
+          </p>
+            </stdVals>
+            <p>
+          <!--to be added-->
+        </p>
+         </editorialDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#tfruehwirth" when-iso="2026-10-13">TEIGarage output upconverted with upconvert.xsl</change>
+         <change who="#tfruehwirth" when-iso="2026-10-13">TEI header populated with generate_tei_templates.py</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface/>
+   </facsimile>
+   <text>
+      <body>
+         <div xml:id="doc-krp-0176.xml">
+            <head type="dokument">
+               <title type="num">176.<note type="footnote">Das Protokoll trägt den Vermerk <hi rend="#i">Vertraulich!</hi></note>
+               </title>
+               <title type="desc">
+                  <pb facs="krp-0176_r-0001"/>[Dienstag] 1920-04-27</title>
+            </head>
+            <div type="dokumentkopf">
+               <div type="vorsitz">
+                  <head>Vorsitz:</head>
+                  <p>Renner</p>
+               </div>
+               <div type="anwesend">
+                  <head>Anwesend:</head>
+                  <p>Deutsch, Eisler, Eldersch, Ellenbogen, Fink, Glöckel, Hanusch, Loewenfeld-Russ, Mayr, Miklas, Paul, Ramek, Reisch, Resch, Stöckler, Tandler, Waiss, Zerdik</p>
+               </div>
+               <div type="zugezogen">
+                  <head>Zugezogen:</head>
+                  <p>Seitz</p>
+               </div>
+               <div type="schriftfuehrer">
+                  <head>Schriftführer:</head>
+                  <p>unbekannt</p>
+               </div>
+               <div type="dauer">
+                  <head>Dauer:</head>
+                  <p>22.00–01.30 Uhr</p>
+               </div>
+            </div>
+            <div type="komponenten">
+               <p>Reinschrift, Beilagen, Konzept, stenographische Mitschrift, Entwurf der Tagesordnung</p>
+            </div>
+            <div type="beilagen">
+               <head>Beilagen:</head>
+               <list>
+                  <item><ref target="#krp-0176_top02">Zu TOP 2</ref>: <ref target="#krp-0176_b01">Exposé des Staatssekretärs Ing. Zerdik über die Verbilligung des Zeitungsrotationsdruckpapiers und die Einführung einer Papierabgabe</ref></item>
+                  <item><ref target="#krp-0176_top03">Zu TOP 3</ref>: <ref target="#krp-0176_b02">Vortrag des Staatsamtes für Handel und Gewerbe, Industrie und Bauten über die Erklärung des Militärverpflegsmagazins in Linz als begünstigter Bau</ref></item>
+                  <item><ref target="#krp-0176_top05">Zu TOP 5</ref>: <ref target="#krp-0176_b03">Vorlage der Staatsregierung des Handelsagentengesetzes mit Begründung</ref></item>
+                  <item><ref target="#krp-0176_top06">Zu TOP 6</ref>: <ref target="#krp-0176_b04">Vorlage der Staatsregierung der Strafgesetznovelle vom Jahre 1920 mit Begründung</ref></item>
+                  <item><ref target="#krp-0176_top07">Zu TOP 7</ref>: <ref target="#krp-0176_b05">Vorlage des Staatsamtes für Finanzen über den Gesetzesbeschluss der Kärntner Landesversammlung für die Weitereinhebung der Wertzuwachsabgabe im Jahre 1920</ref></item>
+                  <item><ref target="#krp-0176_top08">Zu TOP 8</ref>: <ref target="#krp-0176_b06">Vorlage des Staatsamtes für Finanzen über den Gesetzesbeschluss des Landes Salzburg zur Gebührenbefreiung angeordneter Verfahren zur Ergänzungsregulierung, Ablösung und Sicherung von Holz- und Forstproduktionsbezugs- und Weiderechten</ref></item>
+                  <item><ref target="#krp-0176_top09">Zu TOP 9</ref>: <ref target="#krp-0176_b07">Referat des Staatsamtes für soziale Verwaltung Zl. 12.367 über die Unterbringung unterstandsloser Kriegsbeschädigter im Schloss Schönbrunn</ref></item>
+               </list>
+            </div>
+            <div type="protokoll">
+               <pb facs="krp-0176_r-0002"/>
+               <div type="top" xml:id="krp-0176_top01">
+                  <head>
+                     <label>
+                        <num n="1">1.</num>
+                        <seg>Maßnahmen, betreffend die Kommission zur Erhebung militärischer Pflichtverletzungen.</seg>
+                     </label>
+                  </head>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> führt aus, dass es notwendig sei, in Angelegenheit der Kommission zur Erhebung militärischer Pflichtverletzungen eine Entscheidung zu treffen, ohne dass die Vorschläge der mit Kabinettsratsbeschluss vom 9. März d. J. zur Vorberatung der Anträge auf Änderung in der Organisation der Kommission eingesetzten Kabinettskonferenz abgewartet werden können. Unter den Kommissionsmitgliedern herrsche schwere Missstimmung, dass der Oberste Gerichtshof über die beiden eklatantesten Strafanzeigen der Kommission freisprechende Urteile gefällt habe. Weiters werde darüber Beschwerde geführt, dass die Berichte der Kommission von der Regierung ungebührlich lange zurückgehalten werden und, wenn sie an die <pb facs="krp-0176_r-0003"/>Nationalversammlung gelangt sind, dort nicht entsprechend zur Verhandlung kommen. Außerdem habe sich herausgestellt, dass infolge Ablehnung der Berufung seitens einzelner für die Kommission in Aussicht genommen gewesener Persönlichkeiten deren Zusammensetzung nicht ganz entspreche und die mit der eigentlichen Arbeit betrauten Kommissionsmitglieder unter großer Überbürdung leiden. Schließlich wünsche die Kommission, die Ermächtigung zu bekommen, ihre Verhandlungen öffentlich durchführen zu können, damit die öffentliche Meinung in die Lage versetzt sei, sich ein Bild über ihre Tätigkeit zu machen. Der Eindruck des Freispruchs des Feldzeugmeisters Ljubicic habe auf die Kommission so stark gewirkt, dass ihre Mitglieder die Absicht geäußert hätten, ihre Funktionen demonstrativ niederzulegen. Redner habe sich bemüht, sie von der Ausführung dieser Absicht abzubringen und zunächst die Entscheidung des Kabinettsrates über die Erfüllung ihrer Wünsche abzuwarten.</p>
+                  <p>Ein Rücktritt der Kommission vom Amte wäre eine arge Verlegenheit. Sie müsste nicht nur bei der Öffentlichkeit des Inlandes peinliches Aufsehen hervorgerufen, sondern auch nach außen schädlich wirken, weil in diesem Falle zu gewärtigen sei, dass verschiedene ausländische Staaten mit Auslieferungsbegehren <pb facs="krp-0176_r-0004"/>hervortreten würden, die sie bisher im Hinblick auf den Bestand der Kommission zurückgehalten haben. Da der Bestand der Kommission auf einem Gesetze beruhe, müssten im Falle des Rücktrittes der jetzigen Mitglieder neue Mitglieder bestellt werden, deren Auswahl sich nicht ohne parteipolitische Schwierigkeiten vollziehen dürfte.</p>
+                  <p>Nach Ansicht des Redners sollte sich daher der Kabinettsrat dazu entschließen, die Verhandlungen der Kommission für öffentlich zu erklären, Vorsorge für die Ergänzung der eingetretenen Vakanzen zu treffen und sich dafür einzusetzen, dass die Berichte der Kommission im Heeresausschuss und im Plenum der Nationalversammlung einer ausführlichen Behandlung unterzogen werden. Redner ersuche die an der Angelegenheit zunächst beteiligten Staatssekretäre für Justiz und für Heer[es]wesen, ihre Auffassung zu äußern, damit der Kabinettsrat über die vorstehenden Vorschläge schlüssig werden könne.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Ramek</hi> hält öffentliche Verhandlungen vor der Kommission vom strafprozessualen Standpunkte aus nicht für zweckmäßig, da durch das vorzeitige Bekanntwerden des Untersuchungsergebnisses die Beweisführung <pb facs="krp-0176_r-0005"/>in einem etwa anschließenden Strafverfahren erschwert werden könnte. Sollte aber die Geneigtheit bestehen, aus politischen Gründen diesem Begehren der Kommission nachzukommen, würde sich der sprechende Staatssekretär öffentlichen Kommissionsverhandlungen nicht widersetzen, nur müsste genau umschrieben werden, in welchen Teilen des Verfahrens die Öffentlichkeit platzzugreifen habe.</p>
+                  <p>Der größte Übelstand liege darin, dass nach dem Gesetz die Verhandlung und Aburteilung der von der Kommission aufgegriffenen Pflichtverletzungen einem Senate des Obersten Gerichtshofes unter Anwendung des Militärstrafgesetzes oder des allgemeinen Strafgesetzes übertragen wurde. Denn die geltenden Gesetze sehen für Pflichtverletzungen der vorgekommenen Art in den seltensten Fällen einen strafbaren Tatbestand und eine Strafsanktion vor und es müsse darum mit Naturnotwendigkeit zu Freisprüchen kommen, zumal sich der Nachweis nicht erbringen lasse, dass der Angeklagte im Bewusstsein und in der Absicht der Rechtswidrigkeit gehandelt habe.</p>
+                  <p>Die Kommission außer Tätigkeit treten zu lassen, ohne für sie Ersatz zu schaffen, würde Redner aus politischen Gründen für bedenklich halten. Seiner <pb facs="krp-0176_r-0006"/>Meinung nach müsste aber die Gerichtsbarkeit auf eine andere Basis gestellt und ein besonderer politischer Gerichtshof geschaffen werden, welcher die Verfehlungen nicht nach den geltenden Strafgesetzen, sondern von dem Gesichtspunkte aus zu beurteilen hätte, inwieweit eine Überspannung der Anschauungen gewisser Organe über ihre Machtbefugnisse oder Fahrlässigkeit vorliege.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Deutsch</hi> erklärt, dass in der Praxis der eigentliche Zweck der Kommission in den Hintergrund getreten sei. Ihre ursprüngliche Aufgabe habe weniger darin bestanden, die Pflichtverletzungen vor den Richter zu bringen, als vielmehr auch dort, wo kein juristisch zu ahndendes Vergehen oder Verbrechen vorliege, die Fahrlässigkeit oder das verfehlte Rechtsbewusstsein im konkreten Falle festzustellen, um auf diese Art den Schuldigen der öffentlichen Ächtung preiszugeben. Dass ein solcher Vorgang bisher nicht möglich war, sei durch die Nichtöffentlichkeit der Verhandlungen der Kommission verursacht. Es sollte ihr daher die Möglichkeit geboten werden, nach Durchführung aller Erhebungen die Feststellung, dass eine Pflichtverletzung vorgekommen sei, in einer öffentlichen Schlussverhandlung vorzuneh<pb facs="krp-0176_r-0007"/>men und so dann die Allgemeinheit moralisch das Urteil sprechen zu lassen. Ein teilweiser Ersatz für die bisher mangelnde Öffentlichkeit könne nur noch darin gefunden werden, dass die Berichterstattung in der Nationalversammlung in einer solchen Form erfolge, dass der Öffentlichkeit ein klares Bild über die Vorkommnisse vor Augen geführt werde.</p>
+                  <p>Unterstaatssekretär Dr. <hi rend="#letterspaced">Eisler</hi> widerspricht dem Gedanken nachträglicher Schaffung strafbarer Tatbestände für bereits in der Vergangenheit liegende Handlungen.</p>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> schließt sich dieser Meinung an und bedauert es als einen schweren Fehler, dass zur Aburteilung der militärischen Pflichtverletzungen nicht ein besonderer Gerichtshof eingesetzt wurde. Nach seiner Meinung sei aber auch die Art und Weise, wie der Oberste Gerichtshof in den bei ihm anhängig gemachten Fällen das geltende Strafgesetz angewendet habe, juristisch nicht gerechtfertigt. Es könne doch irgendein Strafgesetz nicht so weit von dem natürlichen Rechtsempfinden abweichen, dass Verfehlungen, wie sie zur Anzeige gebracht wurden, absolut straflos bleiben könnten. Er bezweifle insbesonders, dass etwa von anderen Gesellschaftsschichten <pb facs="krp-0176_r-0008"/>unter ähnlichen Verhältnissen begangene Taten vom Gerichte in der gleichen Weise wie es hier geschehen sei, beurteilt worden wären. Der Oberste Gerichtshof habe sich zum unwiderbringlichen Schaden in Widerspruch zur allgemeinen Rechtsauffassung gesetzt und es werde schwere Mühe kosten, die erschütterte Autorität der Gerichte wieder herzustellen.</p>
+                  <p>In der Frage der Öffentlichkeit der Verhandlungen der Kommission hätte der Kabinettsrat heute nur die grundsätzliche Zustimmung zu erklären, die näheren Bestimmungen darüber aber den Vorschlägen der Kommission selbst vorzubehalten. Es sei auch durchaus unzweckmäßig und der Stellung der Kommission als eines von der Nationalversammlung beauftragten Organes unwürdig, dass sie aufgrund ihrer Feststellungen an das Gericht nur eine Anzeige erstatten dürfe, dagegen nicht die Möglichkeit habe, selbst die Anklage zu führen. Auch in dieser Hinsicht müsste durch eine entsprechende Änderung des Gesetzes Abhilfe geschaffen werden.</p>
+                  <p>Redner bringe daher in Antrag, der Kommission mitzuteilen, dass der Kabinettsrat bereit sei, ihre Anträge entgegenzunehmen und zu unterstützen, in welcher Art die Verhandlungen im entscheidenden <pb facs="krp-0176_r-0009"/>Stadium der Kommissionsberatung für öffentlich erklärt werden sollen. Ferner wäre der Kommission bekanntzugeben, dass die Staatsregierung es bedauere, dass ihre Anzeigen beim Obersten Gerichtshofe nicht die von der Kommission gewünschten Erfolge erzielt haben. Dem wäre jedoch beizufügen, dass nach Ansicht des Kabinettsrates das Schwergewicht der Tätigkeit der Kommission nicht so sehr auf die Erstattung gerichtlicher Strafanzeigen, als auf die Berichterstattung über festgestellte Pflichtverletzungen an die Nationalversammlung zu legen sei. Der Kabinettsrat werde für die jeweilige rascheste Weiterleitung der Berichte der Kommission an die Nationalversammlung sowie dafür Sorge tragen, dass sie dort den Sitzungsprotokollen als Beilagen einverleibt und sowohl im Heeresausschuss wie im Plenum des Hauses zum Gegenstand der Beratung gemacht werden. Der Kabinettsrat sehe schließlich Anträgen auf Ergänzung der Kommission entgegen und werde in Erwägung ziehen, inwieweit ihr nicht durch eine Gesetzesänderung das Recht zur selbständigen Erhebung der Anklage vor dem Gerichtshofe eingeräumt werden könnte.</p>
+                  <p>Präsident <hi rend="#letterspaced">Seitz</hi> ist der Ansicht, dass die Einsetzung eines besonde<pb facs="krp-0176_r-0010"/>ren Gerichtshofes zur Aburteilung der militärischen Pflichtverletzungen nicht zu umgehen sein werde. Aus dem jetzigen Zustand drohe die schwere Verwicklung, dass den zu erwartenden Auslieferungsbegehren fremder Staaten kein wirksamer Einspruch entgegengesetzt werden könne, da wir uns durch die Tat als unfähig erwiesen hätten, die inkriminierten Delikte selbst zu verfolgen.</p>
+                  <p>Das geltende Gesetz stehe einer öffentlichen Verhandlung vor der Kommission durchaus nicht entgegen, da der § 8 nur den einzelnen Kommissionsmitgliedern die Pflicht der Amtsverschwiegenheit auferlege, woraus das Verbot eines öffentlichen Verfahrens der Kommission als solcher nicht abgeleitet werden könne.</p>
+                  <p>Redner stellt schließlich in Aussicht, die Drucklegung der Kommissionsberichte als Beilagen zu den Protokollen der Nationalversammlung veranlassen und dafür Sorge tragen zu wollen, dass im Heeresausschuss und der Nationalversammlung selbst Raum für eine ausführliche Debatte darüber geschaffen werde.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Ramek</hi> nimmt den Obersten Gerichtshof gegen die Anschuldigung in Schutz, durch seine Urteile das allgemeine Rechtsgefühl verletzt und Klassenjustiz geübt zu haben. Er legt <pb facs="krp-0176_r-0011"/>dabei anhand der einzelnen Fälle dar, dass nach den geltenden Strafgesetzen dem Senate tatsächlich keine andere Möglichkeit geblieben sei, als mit einem freisprechenden Urteil vorzugehen. Aus diesen Gründen müsse Redner sich dagegen aussprechen, dass der Kabinettsrat der Kommission gegenüber die Erfolglosigkeit ihrer Anzeigen beim Obersten Gerichtshof bedaure. Er halte es weiters für bedenklich, der Kommission das Recht zur selbstständigen Anklageerhebung vor Gericht einzuräumen; er würde einer solchen Einrichtung aber zustimmen, soferne es sich darum handelte, vor der Kommission selbst ein öffentliches Verfahren einzurichten, welches ohne eigentliche Straffolgen und ohne Rücksicht auf das Strafgesetz einen moralischen Schuldspruch zu fällen hätte.</p>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> erklärt, an seinem Antrage, betreffend den Ausdruck des Bedauerns über die freisprechenden Urteile des Obersten Gerichtshofes nicht festhalten zu wollen.</p>
+                  <p>Der Kabinettsrat erteilt sohin dem Vorsitzenden die Ermächtigung, an die Kommission zur Erhebung militärischer Pflichtverletzungen ein Schreiben im Sinne der übrigen von ihm beantragten Punkte richten zu dürfen.</p>
+                  <p><pb facs="krp-0176_r-0012"/></p>
+               </div>
+               <div type="top" xml:id="krp-0176_top02">
+                  <head>
+                     <label>
+                        <num n="2">2.</num>
+                        <seg>Verbilligung des Zeitungsdruckrotationspapieres und die Einführung einer Papierabgabe.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Ing. <hi rend="#letterspaced">Zerdik</hi> erstattet das dem vorliegenden Protokoll als Beilage angeschlossene Exposé über die Verbilligung des Zeitungsdruckrotationspapiers und die Einführung einer Papierabgabe. Er teilt ferner mit, dass der Hauptausschuss die Vollzugsanweisung, betreffend die Einschränkung des Zeitungspapierverbrauches, heute nachträglich genehmigt, gleichzeitig jedoch den Wunsch ausgesprochen habe, es mögen die Sparmaßnahmen ohne Unterbrechung bis mindestens 31. Mai l. J. ausgedehnt werden. Hiebei wäre von einer Unterscheidung über die Verwendung des Papieres für Text oder Inserate, wie dies jetzt im § 2 vorgesehen sei, Umgang zu nehmen. Unter einem wäre jedoch für den Schutz der Arbeiter und Beamten der Zeitungsunternehmungen durch Vollzugsanweisung, welche im Einvernehmen mit dem Staatsamt für soziale Verwaltung zu erlassen wäre, Vorsorge zu treffen.</p>
+                  <p>Redner würde vorschlagen, dass es ihm überlassen werde, die Giltigkeitsdauer der Vollzugsanweisung wenn nötig über den 1. Mai d. J. zu erstrecken, sonst aber die Zeitungen von den ihnen auferlegten Beschränkungen zu befreien.</p>
+                  <p>Staatssekretär <hi rend="#letterspaced">Eldersch</hi> führt <pb facs="krp-0176_r-0013"/>aus, dass, wenn schon nach Pkt. 1 der Anträge von der Einhebung einer Abgabe für das von den Zeitungen über acht Seiten verbrauchte Papier abgesehen werden solle, so doch der im Pkt. 2 vorgeschlagene geänderte Modus der Begünstigung, nämlich die Preisermäßigung nicht nach dem Umfange, sondern nach der monatlichen Verbrauchsmenge zu gewähren und hiebei wieder den Preis zu differenzieren, um eine Begünstigung der Zeitungen mit geringem Leserkreis bedeute. Die Intentionen des Kabinetts gingen doch nicht so sehr dahin, die Zeitungsunternehmungen zu begünstigen, als vielmehr das Publikum vor allzu hohen Abonnementgebühren zu schützen. Auch sei beabsichtigt gewesen, den kleineren Zeitungen, die kein Inseratengeschäft betreiben, für die ersten acht Seiten billigeres Papier zu verschaffen, wobei allerdings auf das Format Rücksicht zu nehmen wäre. Ebenso könne sich Redner mit der vorgeschlagenen begünstigten Behandlung der selbständigen Mittags- und Abendblätter nicht einverstanden erklären, da diese Blätter nach der Fassung des Pkt. 3 der Anträge ihren ganzen Papierbedarf zum billigen Preis decken können. Er schlage vor, die Begünstigung des ermäßigten Preises unter Berücksichtigung des Formates der Zeitungen nach dem Gewichte <pb facs="krp-0176_r-0014"/>zu gewähren.</p>
+                  <p>Was den Pkt. 4 der Anträge anbelange, so glaube Redner, dass die Beschränkung der Begünstigung auf bestehende Zeitungen, soferne sie nicht den Besitzer gewechselt haben oder noch wechseln werden, zur Hintanhaltung der Spekulation aufrecht zu erhalten wäre.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Reisch</hi> spricht sich gegen den Pkt. 1 der Anträge aus. Da das von den Zeitungen über die begünstigte Menge hinaus verbrauchte Papier dem Export entzogen werde, so sei es im Interesse der Staatsfinanzen gelegen, diesen Mehrverbrauch mit der Abgabe zu belasten. Allenfalls könnte die Exportabgabe für diese Mengen auf die Hälfte reduziert werden.</p>
+                  <p>Pkt. 2 der Anträge sei seiner Anschauung nach nicht zu rechtfertigen; es sollte an der Begünstigung für acht Seiten umgerechnet auf das Gewicht festgehalten werden, damit kleinere Formate nicht benachteiligt werden.</p>
+                  <p>Redner wendet sich weiters gegen den Pkt. 4 der Anträge, sowie gegen die im Pkt. 2 vorgesehene Begünstigung der Gewerkschaftsblätter, wodurch eine monatliche Mehrbelastung von ca. ½ Millionen K entstehe. Er verlangt endlich die ausdrückliche Ausschließung neuer <pb facs="krp-0176_r-0015"/>Zeitungen von der Belieferung mit Rotationspapier sowie die unbedingte Aufrechterhaltung der Exportabgabe bis die seit Jänner 1920 aus dem Staatsschatz geleisteten Beträge für Begünstigungen aus dem Erträgnisse der Abgabe refundiert sind.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Ellenbogen</hi> gibt der Anschauung Ausdruck, dass die in den Pkt. 2 und 3 der Anträge vorgeschlagene Regelung eine ungerechtfertigte Bevorzugung der kleinen Blätter sowie der selbständigen Mittags- und Abendblätter beinhalte und beantragt weiters, dass im Pkt. 4 die Ausschließung neuer Zeitungen von der Belieferung mit Rotationspapier ausdrücklich festgelegt werde.</p>
+                  <p>Was die Vollzugsanweisung und den Vorschlag des Hauptausschusses anbelange, so glaube Redner, dass der 1. Mai l. J. in die Neuregelung nicht einbezogen werden solle. Im Übrigen wären die Beschränkungen wohl eine Zeit hindurch aufrecht zu erhalten.</p>
+                  <p>Staatssekretär Ing. <hi rend="#letterspaced">Zerdik</hi> vermeint, dass eine Belastung des Mehrverbrauches über acht Seiten mit der Exportabgabe von den Blättern nicht werde ertragen werden können. Was die Aufrechterhaltung der Begünstigung im Falle eines Be<pb facs="krp-0176_r-0016"/>sitzwechsels betreffe, so sei bei diesem Vorschlage nur auf das Interesse der Angestellten Bedacht genommen worden, da andernfalls die Gefahr von Entlassungen und Vermehrung der Zahl der Arbeitslosen bestehe. Gegen die Nichtbelieferung der neuen Zeitungen habe er nichts einzuwenden, doch müsste es dem Kabinettsrate überlassen bleiben, gegebenenfalls Ausnahmen zu machen. Der vom Staatssekretär für Finanzen verlangten Aufrechterhaltung der Exportabgabe bis zur völligen Refundierung aller staatlichen Vorschüsse stimme Redner zu. Zur Sicherung der Exportabgabe beantrage er noch, unter den Begriff „alle Arten von Papier“ auch die Pappewaren zu subsumieren und die nähere Durchführung dem Handelsamte vorzubehalten.</p>
+                  <p>Aufgrund der abgeführten Debatte gelangt der Kabinettsrat sodann zu nachstehenden Beschlüssen:</p>
+                  <list>
+                     <item n="1"><label>1.)</label> Von der Einhebung einer Papierabgabe für das von den Zeitungen über die begünstigte Menge hinaus verbrauchte Papier wird abgesehen.</item>
+                     <item n="2"><label>2.)</label> Die Begünstigung des ermäßigten Preises wird den Zeitungen einschließlich der Gewerkschaftsblätter, die bereits jetzt auf Rotationspapier erscheinen, gewährt. Die Auszahlung der Begünstigung <pb facs="krp-0176_r-0017"/>erstreckt sich nur auf einen Verbrauch bis zum Gewichte von 30 g pro Exemplar, multipliziert mit der jeweiligen Auflage. Rücksichtlich der bestehenden Zeitungen, soferne sie nicht den Besitz gewechselt haben oder wechseln werden, wird die Differenz im Papierpreise von 5 K auf 11 K für die Monate Mai und Juni gewährt.</item>
+                     <item n="3"><label>3.)</label> Den selbständigen Mittags- und Abendblättern wird ein begünstigter Papierverbrauch im Ausmaße von ¼ dessen gewährt, was den übrigen selbstständigen Zeitungen zukommt.</item>
+                     <item n="4"><label>4.)</label> Der Fachpresse wird ein Verbrauch von höchstens sechs Waggons monatlich zum begünstigten Preise möglich gemacht.</item>
+                     <item n="5"><label>5.)</label> Ausfuhren auf Rechnung laufender Regierungs- und laufender privater Kompensationsverträge sind von der Abgabe befreit. Künftige Kompensationsverträge gleichgiltig, ob sie von der Regierung oder von Privaten geschlossen wurden, sind von der Abgabe nicht befreit; doch werden die Staatssekretäre für Handel und Gewerbe, Industrie und Bauten, für Volksernährung und für Finanzen ermächtigt, zur Wahrung volkswirtschaftlicher Interessen auf die Abgabe einvernehmlich zu verzichten.</item>
+                     <item n="6"><label>6.)</label> Soweit es tunlich erscheint, sind auch Papier- und Pappewaren mit der Exportabgabe zu belasten. Die nähere Durchführung bleibt dem Staatssekretär für Handel und <pb facs="krp-0176_r-0018"/>Gewerbe, Industrie und Bauten vorbehalten.</item>
+                     <item n="7"><label>7.)</label> Die Exportabgabe ist so lange auf alle bezeichneten Artikel einzuheben, bis die aus dem Staatsschatze geleisteten Beträge für Begünstigungen aus dem Erträgnisse der Abgabe refundiert erscheinen.</item>
+                     <item n="8"><label>8.)</label> Der Papierverbrauch bleibt bis einschließlich 15. Mai d. J. in gleicher Weise beschränkt, doch kann mit Rücksicht darauf, dass am 2. Mai d. J. keine Zeitungen erscheinen, am 1. Mai eine Doppelnummer herausgegeben werden, wofür auch die Begünstigung für das doppelte festgelegte Quantum eingeräumt wird.</item>
+                     <item n="9"><label>9.)</label> Bis auf Weiteres und vorbehaltlich konkreter Beschlüsse des Kabinettsrates wird Rotationspapier an neue Zeitungen nicht abgegeben.</item>
+                  </list>
+                  <p>Staatssekretär <hi rend="#letterspaced">Hanusch</hi> verweist in diesem Zusammenhange darauf, dass es infolge der beschlossenen Neuregelung zweifellos zu Entlassungen von Angestellten der Zeitungsunternehmungen kommen werde. Bei derartigen Entlassungen sei bisher daran festgehalten worden, dass die Betreffenden 66 % ihres Lohnes bis zum Höchstausmaße von 22 K erhalten. Im vorliegenden Falle werde es sich aber um eine Kategorie hochqualifizierter Arbeiter handeln, die mit diesem Höchstausmaße nicht werden abgefunden werden können, zumal sie wegen ihrer speziellen Ausbildung nicht <pb facs="krp-0176_r-0019"/>leicht in der Lage sein werden, in einer anderen Branche unterzukommen. Der sprechende Staatssekretär richte daher an das Staatsamt für Finanzen das Ersuchen, angesichts der geschilderten Sachlage in derartigen Fällen die Beschränkung auf die Höchstgebühr von 22 K fallen zu lassen und zuzustimmen, dass bei etwa erfolgenden Entlassungen von Angestellten der Zeitungsindustrie die vollen 66 % des Arbeitslohnes flüssig gemacht werden.</p>
+               </div>
+               <div type="top" xml:id="krp-0176_top03">
+                  <head>
+                     <label>
+                        <num n="3">3.</num>
+                        <seg>Erklärung der Baulichkeiten für das Militärverpflegsmagazin in Linz als begünstigter Bau.</seg>
+                     </label>
+                  </head>
+                  <p>Nach dem Antrage des Staatssekretärs Ing. <hi rend="#letterspaced">Zerdik</hi> beschließt der Kabinettsrat, die während des Krieges von der Heeresverwaltung für Zwecke des Militärverpflegsmagazines in Linz auf ärarischem Grund ausgeführten zwei Eisenbetonhallen samt mehreren dazu gehörigen kleineren Baulichkeiten, für welche Anlage eine Baubewilligung vor ihrer Herstellung wegen deren Dringlichkeit seinerzeit nicht eingeholt wurde, als begünstigter Bau im Sinne der Kaiserlichen Verordnung vom 16. Oktober 1914, RGBl. Nr. 284, zu erklären.</p>
+               </div>
+               <div type="top" xml:id="krp-0176_top04">
+                  <head>
+                     <label>
+                        <num n="4">4.</num>
+                        <seg>Vollzugsanweisung des Staatsamtes für Finanzen über die vorzeitige Einstellung des Dienstes der Losanleihen der österreichischen Gesellschaft vom Roten Kreuze.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Reisch</hi> erbittet und erhält vom Kabinettsrate die Ermächtigung zur Erlassung einer Vollzugsanweisung, womit die österreichische Gesellschaft vom Roten Kreuze ermächtigt <pb facs="krp-0176_r-0020"/>wird, den Dienst ihrer Losanleihen aus den Jahren 1882 und 1916 einzustellen, bis ihre finanziellen Verhältnisse durch die im Art. 215 des Staatsvertrages von St. Germain vorgesehenen internationalen Vereinbarungen oder Schiedgerichtsentscheidungen geordnet sind.</p>
+                  <p>Die genannte Gesellschaft wird in dieser Vollzugsanweisung angewiesen, vom 1. Mai 1920 angefangen, die spielplanmäßig vorgesehenen Ziehungen bis auf Weiteres abzusetzen.</p>
+               </div>
+               <div type="top" xml:id="krp-0176_top05">
+                  <head>
+                     <label>
+                        <num n="5">5.</num>
+                        <seg>Gesetzentwurf über die Rechtsverhältnisse der Handelsagenten (Handelsagentengesetz).</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Ramek</hi> erbittet und erhält vom Kabinettsrate die Ermächtigung, den Entwurf eines Gesetzes über die Rechtsverhältnisse der Handelsagenten (Handelsagentengesetz), in der Nationalversammlung einbringen zu dürfen.</p>
+               </div>
+               <div type="top" xml:id="krp-0176_top06">
+                  <head>
+                     <label>
+                        <num n="6">6.</num>
+                        <seg>Gesetzentwurf, womit einige Bestimmungen des Strafgesetzes abgeändert werden (Strafgesetznovelle vom Jahre 1920).</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. Ramek erbittet und erhält vom Kabinettsrate die Ermächtigung, den Entwurf eines Gesetzes, womit einige Bestimmungen des Strafgesetzes abgeändert werden (Strafgesetznovelle vom Jahre 1920), in der Nationalversammlung einbringen zu dürfen.</p>
+               </div>
+               <div type="top" xml:id="krp-0176_top07">
+                  <head>
+                     <label>
+                        <num n="7">7.</num>
+                        <seg>Gesetzesbeschluss der Landesversammlung in Kärnten, betreffend die Weitereinhebung der Wertzuwachsabgabe im Jahre 1920.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Deutsch</hi> teilt mit, dass die Landesversammlung in Kärnten am 11. März d. J. einen Gesetzes<pb facs="krp-0176_r-0021"/>beschluss gefasst habe, wonach die Geltung der Abgabenordnung vom 1. Mai 1919, LGBl. Nr. 28, aufgrund welcher die Weitereinhebung der Wertzuwachsabgabe im Jahre 1919 erfolgte, bis Ende 1920 mit der einzigen Änderung verlängert wird, dass der Reinertrag nicht wie bisher zu 70 % den Gemeinden und zu 30 % dem Lande, sondern nunmehr im Allgemeinen je zur Hälfte dem Lande und der Gemeinde zufließen, bei Abgabenbeträgen von über 50.000 K aber der Anteil der Gemeinden sich auf 20 % des Mehrbetrages erniedrigen, der Anteil des Landes sich auf 80 % erhöhen soll.</p>
+                  <p>Der sprechende Staatssekretär beantragt, dass von der Erhebung einer Vorstellung gegen diesen Gesetzesbeschluss abgesehen und der Staatssekretär für Finanzen zur Gegenzeichnung ermächtigt werde.</p>
+                  <p>Der Kabinettsrat beschließt in diesem Sinne.</p>
+               </div>
+               <div type="top" xml:id="krp-0176_top08">
+                  <head>
+                     <label>
+                        <num n="8">8.</num>
+                        <seg>Gebührenbefreiungen für das durch das Gesetz für das Land Salzburg vom 11. April 1919, LG. u. VBl. Nr. 47, angeordnete Verfahren zur Ergänzungsregulierung, Ablösung und Sicherung von Holz- und Forstproduktenbezugs- und Weiderechten.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Reisch</hi> verweist darauf, dass durch § 1 des Gesetzes vom 16. Dezember 1910, RGBl. Nr. 233, der Finanzminister ermächtigt worden sei, für das im Wege der Landesgesetzgebung angeordnete oder in Hinkunft anzuordnende Verfahren zur Neuregelung, Ablösung und Sicherung der aufgrund des Kaiserlichen Patentes <pb facs="krp-0176_r-0022"/>vom 5. Juli 1853, RGBl. Nr. 130, geregelten Forst- und Weideservituten die Befreiung von den Stempel- und unmittelbaren Gebühren einzuräumen.</p>
+                  <p>Aufgrund dieser Ermächtigungsbestimmung sei bisher in Ansehung jener Länder, in denen das bezügliche Landesgesetz bereits erflossen ist, die Gebührenbefreiung für das Regulierungs-, Ablösungs- und Sicherungsverfahren zugestanden worden.</p>
+                  <p>Der sprechende Staatssekretär erbitte sich die Ermächtigung, im Wege einer Vollzugsanweisung eine analoge Verfügung für das Land Salzburg treffen zu dürfen, in dem durch das Landesgesetz vom 11. April 1919, LG. u. VBl. Nr. 47, und die dazu erlassene Durchführungsverordnung vom 22. Dezember 1919, LG. u. VBl. Nr. 159, Bestimmungen über die Ergänzungsregulierung, Ablösung und Sicherung der in Rede stehenden Forst- und Weideservituten erlassen wurden.</p>
+                  <p>Der Kabinettsrat erteilt die erbetene Ermächtigung.</p>
+               </div>
+               <div type="top" xml:id="krp-0176_top09">
+                  <head>
+                     <label>
+                        <num n="9">9.</num>
+                        <seg>Unterbringung von Kriegsbeschädigten in Schönbrunn.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Hanusch</hi> führt aus, dass am 30. Juni 1919 der Valerietrakt des Schönbrunner Schlosses von Kriegsbeschädigten besetzt worden sei, welche, da es sich um Pfleglinge des Kriegsspitales Meidling handelte, seither von dieser Heilanstalt verköstigt wurden. Gegenwärtig be<pb facs="krp-0176_r-0023"/>finden sich dortselbst 89 Kriegsbeschädigte, deren Verpflegung aus dem Meidlinger Kriegsspitale, da die Betreffenden nicht mehr spitalsbedürftig sind, vom Volksgesundheitsamte mit 1. Mai l. J. eingestellt worden sei. Da die Leute arbeits- und obdachlos seien, und die wiederholten Bemühungen des Invalidenamtes wegen anderweitiger Versorgung bzw. Unterbringung der Leute erfolglos blieben, erübrige im Augenblicke nur die weitere Verpflegung der betreffenden Kriegsbeschädigten zu Lasten der Kredite für die Unterbringung obdachloser Kriegsbeschädigter, wobei die minderschwer Beschädigten nach Maßgabe des verfügbaren Raumes in die für diese Zwecke bestimmten anderweitigen Unterkunftsstellen überstellt werden, während der Rest in Anbetracht der weiteren Entfernung der letztbezeichneten Unterkunftsstellen und deren minderer Eignung zur Unterbringung Schwerkriegsbeschädigter vorläufig im Schönbrunner Valerietrakte zu belassen wäre.</p>
+                  <p>Mit 1. Mai l. J. sei aber noch für die Unterbringung und Verpflegung einer Anzahl anderer Kriegsbeschädigter vorzusorgen, die bis her in der vormaligen Filiale des orthopädischen Kriegsspitales am Bacherplatz (V. [Wiener Gemeindebezirk] Castelligasse 25), einem städtischen Schulgebäude, untergebracht seien, dessen Räumung der Gemeinde wiederholt zugesichert und zuletzt für den 1. Mai l. J. in bestimmte Aussicht gestellt <pb facs="krp-0176_r-0024"/>worden sei. In diesem Falle handle es sich um etwa 100 fast ausnahmslos Schwerkriegsbeschädigte, größtenteils Prothesenträger, deren Heilbehandlung abgeschlossen sei, die aber unter den gegenwärtigen Verhältnissen weder Arbeit noch Unterkunft finden können, und deren Unterbringung in die minder geeigneten und entfernt liegenden Unterkunftsstellen für obdachlose Invalide, auch abgesehen von deren räumlicher Unzulänglichkeit, nicht in Betracht kommen könne. Auch diese Kriegsbeschädigten, welche bisher auf Rechnung der Kredite das Volksgesundheitsamtes in Verpflegung standen, müssen nunmehr mit 1. Mai l. J. auf Rechnung der für die Unterbringung obdachloser Kriegsbeschädigter vorgesehenen Mittel anderweitig untergebracht werden.</p>
+                  <p>Das Staatsamt für soziale Verwaltung beabsichtige, diese Kriegsbeschädigten nach Durchführung jedes irgendmöglichen Abbaues mit ihrer bisherigen Verwaltung vorläufig im Valerietrakte des Schönbrunner Schlosses unterzubringen, woselbst sich dann im Ganzen ungefähr 120–150 Kriegsbeschädigte befinden würden. Eine Inanspruchnahme weiterer, als der bisher benützten Wohnräume, wäre dadurch nicht erforderlich, nur müsste die dort befindliche Küche zur Verfügung gestellt werden.</p>
+                  <p>Die Zustimmung des Staatsamtes für Finanzen zu dieser provisorischen Maßnahme sei von dem Staatsamte für soziale Verwal<pb facs="krp-0176_r-0025"/>tung erbeten worden, stehe jedoch noch aus. Der Oberste Verwalter des Hofärars und das Präsidium des Kriegsgeschädigtenfonds hätten erklärt, der Stellungnahme des Kuratoriums des Kriegsgeschädigtenfonds hinsichtlich einer Inanspruchnahme des Schönbrunner Schlosses nicht vorgreifen zu können. Der sprechende Staatssekretär stelle gemäß § 15 des Gesetzes vom 18. Dezember 1919, StGBl. Nr. 573, den Antrag, der Kabinettsrat wolle unvorgreiflich der künftigen Widmung des Schönbrunner Schlosses die bisher ohne förmliche Genehmigung erfolgte Inanspruchnahme des Valerietraktes zur vorläufigen Beherbergung unterstandsloser Kriegsbeschädigter nach Maßgabe der vorstehenden Darlegungen genehmigen.</p>
+                  <p>Der Kabinettsrat erteilt die erbetene Genehmigung.</p>
+                  <p/>
+               </div>
+            </div>
+            <div type="stenogramme">
+               <div n="1">
+                  <head>[KRP 176, 27. April 1920, Stenogramm Fenz]</head>
+                  <p><pb facs="krp-0176_s01-0001"/>176., 27. /IV.</p>
+                  <p>1.) [Renner]: Praxis der Pensionierung und Belassung im Dienst. </p>
+                  <p>[Ich ersuche] alle Staatsämter, dass sie die von ihrem Ressortstandpunkt maßgebenden Momente ins Treffen führen – </p>
+                  <p>für die nächste Personalsitzung.</p>
+                  <p>2. b)</p>
+                  <p>Renner: Wir haben seinerzeit eine Konferenz von Kabinettsmitgliedern eingesetzt, welche über diese Frage berichten soll. [Die Frage ist] deshalb aktuell, </p>
+                  <p>weil die Kommissionsmitglieder aus demonstrativen Gründen ihre Ämter niederlegen wollen, um gegen die Freisprüche des Obersten Gerichtshofes </p>
+                  <p>zu demonstrieren. Es besteht die Gefahr, dass wieder Freisprüche erfolgen werden, wo die Kommission die feste Überzeugung hat, dass Verurteilungen </p>
+                  <p>erfolgen müssen. Die Kommission klagt, dass die Nationalversammlung ihre Berichte nicht beachtet, die Regierung sie zurückhält und das Gericht freispricht. </p>
+                  <p>Die Kommission ist auch wegen ihrer inneren Zusammensetzung nicht sehr befriedigt. Auch glaubt die Kommission, [dass] wenn sie nicht </p>
+                  <p>öffentlich funktioniert, die Öffentlichkeit nicht ein richtiges Bild über ihre Amtierung gewinnt. Sie hat bereits [einen] Antrag auf Öffentlichkeits-Erklärung </p>
+                  <p>gestellt. Wenn die Kommission ihr Amt niederlegt, so wäre das sehr beklagenswert. Die Kommission hat viele Tausende Beschwerden </p>
+                  <p>bekommen. Es wären viele unzufrieden, dass sie nicht recht bekommen haben. Auch viele Offiziere haben an die Kommission appelliert, </p>
+                  <p>damit ihnen Recht widerfahre. Wenn die Kommission [ihr Amt] niederlegt, so ist es eine Bloßstellung der ganzen Republik, welche die </p>
+                  <p>Kommission eingesetzt hat, [eine] Bloßstellung der Nationalversammlung und [eine] Sache von politischer Bedeutung. Es wird auch [nach] außen zu die </p>
+                  <p>allerschlechteste Wirkung machen. Wir haben uns international in eine günstigere Lage versetzt als Deutschland, welches eine solche Kommission </p>
+                  <p>nicht eingesetzt hat. In dem Augenblick, wo die Kommission zurücktritt, müssen wir die größte Rekrim[ination] von den National-</p>
+                  <p>staaten und auch von anderer Seite gewärtigen. Bisher hat die Auslieferungsfrage bei uns keine Rolle gespielt. </p>
+                  <p>Wenn Funktionäre freigesprochen werden, die ausgeliefert werden sollen, so ist das sehr misslich.</p>
+                  <p>Ich glaube nicht, dass wir [sie ihr Amt] niederlegen lassen dürfen. Die Kommission beruht auf einem Gesetz, man müsste sie wieder </p>
+                  <p>neu besetzen. Es wäre am besten, die Verhandlungen für öffentlich [zu] erklären und damit ihrem Wunsche Rechnung [zu] tragen. Wir sollen </p>
+                  <p>veranlassen, dass die Berichte als Beilagen veröffentlicht werden und veranlassen, dass der Ausschuss für Heerwesen sich damit befasst.</p>
+                  <p>Ich möchte, dass diejenigen Staatsämter, die mit der Sache befasst sind, Heerwesen und Justiz, ihre Auffassung bekannt geben.</p>
+                  <p>Ramek: Ich weiß nicht, ob die Kabinettskonferenz zusammengetreten ist. Ich bin nie zu einer Sitzung beigezogen worden.</p>
+                  <p>Wenn die Erhebung der Kommission ein Material [zu Tage] fördert, das zu einer Verhandlung führt, so ist vom prozessualen Standpunkt die Öffentlichkeits-Erklärung </p>
+                  <p><pb facs="krp-0176_s01-0002"/>nicht sehr erwünscht. Die Strafprozessordnung verlangt, dass das Vorverfahren nicht öffentlich durchgeführt wird, weil die öffentliche Durch-</p>
+                  <p>führung den Beschuldigten von vornherein in den Stand setzt, das ganze Verfahren zu sabotieren. Ich glaube, dass wir </p>
+                  <p>durch eine Öffentlichkeits-Erklärung außerordentlich den eigentlichen Zweck nachteilig beeinflussen würden. Wenn man aber aus politischen Gründen glaubt, dass das </p>
+                  <p>doch notwendig ist, so müsste man den strafprozessualen Nachteil auf sich nehmen. Der größte Fehler des Einsetzungsgesetzes </p>
+                  <p>ist sicherlich, dass man die Verhandlung und Aburteilung durch keinen besonderen Gerichtshof führen lässt und zwar nach den allgemeinen Strafgesetzen. </p>
+                  <p>Das ist die Ursache der Freisprüche. Das Strafgesetz versagt eben bei diesen speziellen Delikten. Wenn man </p>
+                  <p>auch meritorische Bestimmungen und einen besonderen Gerichtshof aufgestellt hätte, so käme man sicher zu einem Resultat.</p>
+                  <p>Wir sind von den Sukzessionsstaaten der einzige Staat, der derartige Untersuchungen durchführt und solche Erhebungen einleitet. </p>
+                  <p>Die schwerwiegendsten Delikte sind sicherlich von Angehörigen der Sukzessionsstaaten vollbracht worden. Das ist auch ein Grund, warum wir </p>
+                  <p>bei diesen Erhebungen zu keinem pos[itiven] Resultat kommen.</p>
+                  <p>Wenn man jetzt noch mit einer Abänderung des Gesetzes kommen könnte, so wäre </p>
+                  <p>es angezeigt. Ich hielte es auch für politisch bedenklich, wenn man die Kommission verschwinden lassen würde. </p>
+                  <p>Besser wäre es, wenn man die Gerichtsbarkeit auf eine andere Basis stellen würde - anderer Gerichtshof und </p>
+                  <p>besondere meritorische Bestimmungen und besondere Strafsanktionen.</p>
+                  <p>Deutsch: Es scheint mir, als ob im Laufe der Zeit der ursprüngliche Zweck der Kommission zu sehr in den Hintergrund </p>
+                  <p>getreten ist. Es war sehr unangenehm für uns, dass die Kommission [versuchte], einzelne vor den Richter zu bringen.</p>
+                  <p>Was die Wirksamkeit der Kommission anbelangt, so ist es gar nicht nötig, dass sie in jedem einzelnen Fall zum Richter geht. </p>
+                  <p>Es ist uns vielmehr darauf angekommen, dass die Kommission den Tatbestand der Fahrlässigkeit feststellt, auch wenn kein </p>
+                  <p>juristisch zu ahndendes Verbrechen vorliegt. Es war eben der Fehler, dass nicht die Öffentlichkeit vorgesehen war, es hätte die öffentliche </p>
+                  <p>Ächtung […] genügt. Ich stimme daher dem Vorschlag des Staatskanzlers zu, dass man die Verhandlungen [für] öffentlich erklärt.</p>
+                  <p><pb facs="krp-0176_s01-0003"/>Eisler: Jetzt eine neue materielle Strafbestimmung zu treffen für Delikte, die in der Vergangenheit </p>
+                  <p>liegen und nicht pro futura, wäre sehr von Übel. Auch müssten viele Tatbestände erfasst werden, die nach </p>
+                  <p>dem geltenden Strafgesetz verjährt wären. Es wird nichts anderes übrig bleiben, als die Verhandlungen [für] öffentlich zu erklären und sich </p>
+                  <p>damit [zu] begnügen, was die Kommission feststellt. Und das wird wirksamer sein als was bisher geschehen ist.</p>
+                  <p>Renner: Nach meiner Meinung wäre es verfehlt, wenn man hinterher das Gesetz ändern [würde] und Delikttatbestände festsetzt und </p>
+                  <p>Strafsanktionen schafft. Der Oberste Gerichtshof würde trotzdem freisprechen. Eine Rückwirkung einer Strafdrohung ist nach den </p>
+                  <p>allgemein anerkannten Grundsätzen des Strafrechtes nicht zulässig. Das Gesetz war verfehlt.</p>
+                  <p>Nichtsdestoweniger möchte ich behaupten, dass die Art und Weise, wie der Oberste Gerichtshof das geltende Gesetz angewendet hat, sich juristisch </p>
+                  <p>nicht rechtfertigen lässt. Es ist tatsächlich so, dass der Oberste Gerichtshof sich in Widerspruch mit dem Rechtsempfinden der ganzen Zeit gesetzt hat. </p>
+                  <p>Die Autorität der obersten Gerichtshöfe hat dadurch unendlich gelitten.</p>
+                  <p>In der gegenwärtigen Lage wäre die Öffentlich-Erklärung möglich. Eine Abgrenzung wäre [aber] in der Art vorzunehmen, dass wenn die Kommission </p>
+                  <p>soweit Erhebungen durch die Referenten gepflogen hat, dass eine bestimmte Schlussverhandlung öffentlich zu machen wäre. Darüber müsste die </p>
+                  <p>Kommission uns Vorschläge machen. Wir könnten die prinzipielle Zustimmung geben, dass gewisse Verhandlungen im abschließenden Stadium </p>
+                  <p>öffentlich geführt werden können.</p>
+                  <p>Wir sollten der Kommission den Rat geben, ihr Schwergewicht darauf - auf die Berichterstattung im Parlament </p>
+                  <p>zu legen und nicht auf die Zuführung des einzelnen Falles vor das Gericht. Dann müsste aber das Parlament mehr Aufmerksamkeit </p>
+                  <p>den Berichten schenken. Die Berichte müssten als Beilagen abgedruckt und dem Ausschuss zugewiesen werden. Die Berichterstatter hätten </p>
+                  <p>im Ausschuss möglichst bald zu berichten, so dass die Berichte auch in das Haus gelangen.</p>
+                  <p>Es wäre endlich der Kommission nahezulegen, dass wenn sie glaubt, dass sie zu ihrer Arbeit Ergänzungen braucht, [sie] darüber Vorschläge </p>
+                  <p>macht.  Es wäre wichtig, dass demnächst die einzelnen Berichte schon im Haus verhandelt werden. </p>
+                  <p>Wenn die Kommission glaubt, dass [sie] doch in gewissen krassen Fällen auf der Anklage bestehen muss, so könnte eine einfache Änderung des Gesetzes </p>
+                  <p>bewirken, dass der Kommission die Funktion des öffentlichen Anklägers übertragen wird.</p>
+                  <p>[Ich schlage vor], der Kabinettsrat soll beschließen:</p>
+                  <p>1.) Der Kabinettsrat ist bereit, [einen] Antrag entgegen zu nehmen und zu unterstützen, welcher die Verhandlung im abschließenden, entscheidenden Stadium der für öffentlich </p>
+                  <p>erklärt.</p>
+                  <p>2.) Die Staatsregierung bedauert, dass die Anträge bei dem Obersten Gerichtshof nicht den von der Kommission gewünschten Erfolg erzielt </p>
+                  <p>haben, glaubt jedoch, dass das Hauptgewicht nicht auf diesen Anträgen, sondern [auf dem] Bericht an das Parlament [liegen sollte].</p>
+                  <p><pb facs="krp-0176_s01-0004"/>3.) Der Kabinettsrat wird Gewicht darauf legen, dass die Berichte der Kommission .... </p>
+                  <p>Der Kabinettsrat ist bereit, Anträge auf Ergänzung der Kommission entgegen zu sehen - [nehmen] und allenfalls in Erwägung zu ziehen, </p>
+                  <p>in welcher Weise die Kommission die Funktion des öffentlichen Anklägers übertragen werden [könnte].</p>
+                  <p>Seitz: Das ganze Gesetz leidet darunter, dass 1.) lauter Funktionäre bestellt sind, die aus dem allerältesten </p>
+                  <p>Regime bestellt sind und sich in das Volksempfinden nicht hinein denken können. Man müsste noch einen Schritt weiter gehen. </p>
+                  <p>[Es ist die Frage], ob das Parlament sich nicht wird entschließen müssen, einen Gerichtshof für diese Delikte zu schaffen.</p>
+                  <p>Allerdings ist richtig, dass die Kommission den § 1, Absatz 1 des Gesetzes nicht mehr richtig in Erinnerung hat. Die Einleitung des </p>
+                  <p>Strafverfahrens war nur ein Zusatz, die eigentliche Aufgabe der Kommission war die Untersuchung. Übrigens wäre auch die </p>
+                  <p>öffentliche Verhandlung von Gesetz wegen nicht ausgeschlossen.</p>
+                  <p>Ramek: Ich kann mich der Verurteilung des Senats des Obersten Gerichtshofes nicht vollkommen anschließen.</p>
+                  <p><hi rend="#s">Bei dem Urteil</hi> - Im Fall Ll. [Ljubicic] fehlte der Nachweis, dass er im Bewusstsein der Rechtswidrigkeit </p>
+                  <p>gehandelt habe.</p>
+                  <p>Ich kann dem Punkt nicht zustimmen, dass der Kabinettsrat sein Bedauern ausspricht, dass die Anträge der Kommission ihr Ziel </p>
+                  <p>nicht erreicht haben.</p>
+                  <p>Ich möchte auch zur Erwägung stellen, dass man der Kommission oder einem Funktionär die Anklagefunktion überträgt. </p>
+                  <p>Denn das ist ein Angriff gegen die Generalstaatsanwaltschaft.</p>
+                  <p>Renner: Diesen Punkt würde ich fallen lassen.</p>
+                  <p>[Beschluss]: Die übrigen Punkte sind angenommen.</p>
+                  <p>[Renner]: Die Gerichtskanzleibeamten-Sache wird nochmals [dem Staatsamt für] Justiz und dem Staatsamt für Finanzen überantwortet und erst wenn ein </p>
+                  <p>Einverständnis erzielt ist, wieder vor das Kabinett.</p>
+                  <p><pb facs="krp-0176_s01-0005"/>5. b)</p>
+                  <p>Zerdik: Papier.</p>
+                  <p>&lt; &gt;</p>
+                  <p>Der Hauptausschuss hat sich mit der Vollzugsanweisung befasst und sie genehmigt.</p>
+                  <p>Ich würde vorschlagen, dass es mir überlassen bleibt, eventuell die Gültigkeit der Vollzugsanweisung über den 1. Mai auszudehnen, wenn </p>
+                  <p>es aber nicht notwendig wäre, <hi rend="#s">es nicht zu tun</hi> - die Zeitungen von diesen Beschränkungen zu befreien.</p>
+                  <p>Eldersch: Wenn man schon Umgang nehmen wollte von dem Beschluss des Kabinettsrates, von der Menge über acht Seiten </p>
+                  <p>die Exportabgabe einzuheben, so muss ich doch sagen, dass die Änderung im Modus der Preisermäßigung - also sie </p>
+                  <p>nicht zu gewähren für die acht Seiten, sondern für eine bestimmte Menge im Monat und dabei wieder die Differenzen zwischen </p>
+                  <p>8 und 11 Kronen ohne Exportabgabe - eine Begünstigung einiger Zeitungen ist, die nicht viel gelesen sind. Er wäre </p>
+                  <p>eine Strafe für Zeitungen, die einen großen Leserkreis haben. Wir wollten ja nicht die Zeitungen begünstigen, sondern das Publikum </p>
+                  <p>vor allzu hohen Preisen schützen. Ich glaube, dass sich die beiden Parteien mit diesem Modus nicht befreunden werden können. </p>
+                  <p>Wir haben uns gesagt, dass die kleinen Zeitungen, die kein Inseratengeschäft haben, dass die für die ersten acht Seiten </p>
+                  <p>das billigere Papier haben sollen. Dabei gebe ich zu, dass man auf das Format Rücksicht nehmen muss. </p>
+                  <p>Ebenso verstehe ich nicht, warum den selbständigen Mittags- und Abendblättern eine so billige Menge Papier gegeben werden soll. </p>
+                  <p>Sie bekämen ihren ganzen Papierbedarf zum billigen Preis. [Ich] schlage vor, unter Berücksichtigung des Formates nach dem Gewicht vorzugehen.</p>
+                  <p>Zu Punkt 4: Es soll das Hauptsächliche sein der Schutz gegen Spekulationen sein.</p>
+                  <p>Zu Punkt 7 möchte ich bemängeln, dass man nur laufende K[ompensations]-Verträge von der Abgabe befreit.</p>
+                  <p>Reisch: Eigentlich wollen wir heute wieder das fallen lassen, was wir letztes Mal an Beschränkungen durchgesetzt haben.</p>
+                  <p>Punkt 2 lässt sich nicht rechtfertigen. Wir sollten daran festhalten, dass es bei acht Seiten, allerdings umgerechnet </p>
+                  <p>auf das Gewicht zu verbleiben hat, damit auch kleinere Zeitungsformate nicht benachteiligt werden.</p>
+                  <p>Auch sehe ich nicht ein, warum Punkt 1 ... abgesehen werden soll, denn dieses Papier wird dem </p>
+                  <p>Export entzogen und es wäre im Interesse der Staatsfinanzen, dass hierfür die Exportabgabe gezahlt wird. Eventuell könnte auf das halbe Ausmaß der Abgabe herabgegangen werden.</p>
+                  <p>Auch den Besitzerwechsel soll man aufrecht erhalten - soll der Beschluss aufrecht bleiben.</p>
+                  <p><pb facs="krp-0176_s01-0006"/>Auch die Ausdehnung der Begünstigung auf die Gewerkschaftsblätter sehe ich nicht ein. Es ist das eine Mehrbelastung von einer halben Million Kronen </p>
+                  <p>im Monat.</p>
+                  <p><hi rend="#s">Auch wäre es nicht zu empfehlen, der Fachpresse ohne Rücksicht auf den tatsächlichen Verbrauch 8 Waggons zuzuweisen. Es wäre fallweise zu </hi></p>
+                  <p><hi rend="#s">beurteilen.</hi></p>
+                  <p>Unbedingt müsste ich verlangen den Ausschluss neuer Zeitungen. Es soll das ausdrücklich ausgesprochen werden. </p>
+                  <p>Desgleichen, dass die Exportauflage insolange aufrecht zu erhalten [ist], als nicht alle Vorschüsse, die das Staatsamt für Finanzen seit dem Jahr '20 </p>
+                  <p>geleistet hat, zurückgezahlt sind.</p>
+                  <p>Ellenbogen: Ich habe bisher noch keinen Vorschlag gefunden, der nach allen Seiten befriedigend wäre. </p>
+                  <p><hi rend="#s">Wenn wir nur acht Seiten berücksichtigen, so könnten</hi> -. Wenn man die Regelung mit Waggons vornimmt, dann werden andere, </p>
+                  <p>kleinere Blätter, die bisher drei Waggons benützt haben, eine größere Menge verlangen.</p>
+                  <p>Gegen Punkt 3 habe ich folgende Bedenken: In dieser Fassung ist den Blättern eine Vergrößerung gestattet. Hier wäre eine </p>
+                  <p>Beschränkung auf 75 % des letzten Verbrauchs gut.</p>
+                  <p>Im Punkt 4 sollte man ausdrücklich sagen, dass <hi rend="#s">die Herausgabe neuer Zeitungen nicht gestattet wird</hi> - neue Zeitungen nicht beliefert werden.</p>
+                  <p>Was [<hi rend="#i">Einschub:</hi>] die Vollzugsanweisung und den [<hi rend="#i">Einschub Ende</hi>] Vorschlag des Hauptausschusses betrifft, so meine ich, dass vor allem der 1. Mai von dieser </p>
+                  <p>Verordnung ausgenommen werden sollte. Da haben alle ein Interesse daran, dass dieser Tag in die Verordnung </p>
+                  <p>nicht einbezogen wird. Für das Weitere bin ich schon dafür, dass diese Beschränkungen eine Zeit lang </p>
+                  <p>aufrecht erhalten werden.</p>
+                  <p><hi rend="#s">Welcher Schutz der Arbeiter und Beamten der Zeitungsunternehmungen ist dann gemeint? Es besteht doch eine Vollzugsanweisung, dass 10 % </hi></p>
+                  <p><hi rend="#s">der eingestellten Beamten -.</hi></p>
+                  <p>Zerdik: Ich möchte [<hi rend="#i">Einschub:</hi>] mich [<hi rend="#i">Einschub Ende</hi>] gegen eine Belastung des Mehrverbrauches über acht Seiten [<hi rend="#i">Einschub:</hi>] mit der Exportabgabe [<hi rend="#i">Einschub Ende</hi>] aussprechen, weil das die Zeitungen nicht aushalten werden.</p>
+                  <p>Was [<hi rend="#i">Einschub:</hi>] die Ausschaltung der Begünstigung im Falle eines Besitzerwechsels [<hi rend="#i">Einschub Ende</hi>] anbelangt, so ist dabei nur das Interesse der Angestellten im Auge zu behalten [<hi rend="#i">Einschub:</hi>] und sie vor eventuell [<hi rend="#i">Einschub Ende</hi>] eintretender Arbeitslosigkeit zu schützen.</p>
+                  <p><hi rend="#s">Was das Verhältnis anbelangt, dass man acht Waggons zu 5 Kronen, dann drei Waggons zu 8 Kronen [abgibt], so wäre zu bedenken, </hi></p>
+                  <p><hi rend="#s">dass eine Zeitung, die mehr Auflage hat, diesen Unterschied ertragen kann.</hi></p>
+                  <p>[Ich] bin auch für die Nicht-Belieferung neuer Zeitungen. Ausnahmen müssten dem Kabinettsrat überlassen bleiben.</p>
+                  <p><pb facs="krp-0176_s01-0007"/>Dass die Exportauflage so lange aufrecht zu erhalten ist bis alles zurückgezahlt ist, halte ich für gerechtfertigt. </p>
+                  <p>Zur [<hi rend="#i">Einschub:</hi>] Sicherung der Exportauflage beantrage ich, dass [<hi rend="#i">Einschub Ende</hi>] unter den Begriff 'alle Arten von Papier', und alle - auch die Pappwaren einbezogen werden und die nähere Durchführung dem Staatsamt für Handel vorbehalten bleibt.</p>
+                  <p>[Renner]: Ad 1.)</p>
+                  <p>Reisch: Wenigstens die halbe Exportauflage.</p>
+                  <p>Seitz: Der Punkt 1 wäre nur bei [einer] Beschränkung auf eine bestimmte Seitenanzahl haltbar.</p>
+                  <p>[Renner]: 1.) in der Fassung Zerdik.</p>
+                  <p>2.) ... [...] Die Auszahlung der Begünstigung erstreckt sich nur auf einen Verbrauch </p>
+                  <p><hi rend="#s">bis zum Umfang von acht Seiten, wobei als Seitenformat das Format</hi> [...] - bis zum Gewicht von </p>
+                  <p>30 Gramm pro Exemplar multipliziert mit der jeweiligen Auflage des letzten Monats. </p>
+                  <p>Rücksichtlich der bestehenden Zeitungen, sofern sie nicht den Besitzer gewechselt haben oder wechseln werden, wird die Differenz im </p>
+                  <p>Papierpreis von 5 Kronen auf 11 Kronen für die Monate Mai und Juni gewährt.</p>
+                  <p>3.) Den selbständigen Mittags- und Abendblätter wird ein begünstigter Papierverbrauch im Ausmaß von einem Viertel dessen gewährt, </p>
+                  <p>was den [<hi rend="#i">Einschub:</hi>] sonstigen [<hi rend="#i">Einschub Ende</hi>] selbständigen Zeitungen zukommt.</p>
+                  <p>4.) 0.</p>
+                  <p>5.) 0.</p>
+                  <p>6.) 4.) Bleibt aufrecht.</p>
+                  <p>7.) 5.) Ausfuhren ... befreit. Künftige K[ompensations]verträge, gleichgültig ob sie von </p>
+                  <p>der Regierung oder von Privaten geschlossen werden, sind von der Abgabe nicht befreit. Doch werden die Staatssekretäre für Handel, </p>
+                  <p>Volksernährung und für Finanzen ermächtigt, zur Wahrung volkswirtschaftlicher Interessen auf die Abgabe einvernehmlich zu verzichten.</p>
+                  <p>8.) 6.) Soweit es tunlich erscheint, sind auch Papier- und Pappwaren mit der Exportabgabe zu belasten. Die nähere Durchführung bleibt dem Staatssekretär für Handel vorbehalten.</p>
+                  <p><pb facs="krp-0176_s01-0008"/><hi rend="#s">9.)</hi> 7.) Die Exportabgabe ist solange auf alle bezeichneten Artikel einzuheben bis die </p>
+                  <p>aus dem Staatsschatz geleisteten Beträge für die Begünstigung aus dem Erträgnis der Abgabe refundiert </p>
+                  <p>erscheinen.</p>
+                  <p><hi rend="#s">10.) 8.) Mit Rücksicht auf den Ausfall am 2. Mai – </hi></p>
+                  <p>Der Papierverbrauch bleibt <hi rend="#s">im Monat Mai</hi> - bis einschließlich 15. Mai in gleicher Weise beschränkt, <hi rend="#s">dafür kann</hi> - doch kann [<hi rend="#i">Einschub:</hi>] mit Rücksicht darauf, dass am 2. Mai keine Zeitung erscheint, [<hi rend="#i">Einschub Ende</hi>] am 1. Mai </p>
+                  <p>eine Doppelnummer <hi rend="#s">erscheinen</hi> - herausgegeben werden, wofür auch die Begünstigung für 16 Seiten - das doppelte festgelegte </p>
+                  <p>Quantum <hi rend="#s">gegeben erscheint</hi> - eingeräumt wird.</p>
+                  <p><hi rend="#s">11.)</hi> 9.) <hi rend="#s">Neue Zeitungen können kein begünstigtes Rotationspapier erhalten, Ausnahmen bleiben dem Kabinettsrat vorbehalten.</hi> </p>
+                  <p>Bis auf weiteres und vorbehaltlich konkreter Beschlüsse des Kabinettsrates wird [<hi rend="#i">Einschub:</hi>] Rotationspapier [<hi rend="#i">Einschub Ende</hi>] an neue Zeitungen nicht gegeben.</p>
+                  <p>Angenommen.</p>
+                  <p>Hanusch: Eine ganze Reihe von Leuten wird jetzt entlassen werden müssen. Wir haben bei solchen Entlassungen bisher </p>
+                  <p>daran festgehalten, dass solche Leute 66 % des Lohnes bis 22 Kronen erhalten. Ich werde aber die hier in Betracht </p>
+                  <p>kommenden Leute mit 22 Kronen nicht entlohnen können.</p>
+                  <p>[Ich] beantrage, dass der Kabinettsrat beschließt, weil es sich hier um eine Gruppe von Menschen handelt, die zu anderen Arbeiten nicht verwendet werden </p>
+                  <p>können, dass sie wirklich 66 % ohne Beschränkung auf das Höchstausmaß von 22 Kronen bekommen.</p>
+                  <p>Seitz: Darum komme ich nochmals auf meinen ursprünglichen Vorschlag zurück. Da es sich - auf ca. </p>
+                  <p>14 Tage die Beschränkung auf die Seitenzahl [aufrecht] halten wird, so soll man alle Vorschriften auf diese Zeit einschränken. </p>
+                  <p>Für diese Zeit kann man die Unternehmen verhalten, die Leute zu behalten. Für die Zeit nachher wird man sich </p>
+                  <p>noch schlüssig werden müssen. Jetzt würde es genügen, wenn man sich bloß auf die Seitenanzahl beschränkte. </p>
+                  <p>Dann braucht man nicht die ganze Sache mit den Waggons jetzt entscheiden.</p>
+                  <p><hi rend="#s">Begünstigter Bau.</hi></p>
+                  <p><hi rend="#s">¼ 2 Uhr.</hi></p>
+                  <p><hi rend="#s">Donnerstag, 6 Uhr.</hi></p>
+                  <p><pb facs="krp-0176_s01-0009"/>Zerdik: Begünstigter Bau. Angenommen.</p>
+                  <p>Reisch: Vollzugsanweisung [betreffend] die Ermächtigung für die Gesellschaft vom Roten Kreuz, die Ziehung am 1. Mai sistieren zu lassen. </p>
+                  <p>[Wir müssen] die Verlosungen insolange sistieren bis [ein] Übereinkommen mit den Nationalstaaten zustande gekommen ist.</p>
+                  <p>Angenommen.</p>
+                  <p>[Ramek]: Handelsagentengesetz.</p>
+                  <p>Angenommen.</p>
+                  <p>[Ramek]: Strafgesetznovelle. Angenommen.</p>
+                  <p>Reisch: Wertzuwachsabgabe in Kärnten.</p>
+                  <p>Angenommen.</p>
+                  <p>[Reisch]: Gebührenbefreiung für Salzburg.</p>
+                  <p>Angenommen.</p>
+                  <p>Hanusch: Ersatzforderungen.</p>
+                  <p>Hanusch: Invaliden nach Schönbrunn.</p>
+                  <p>Fink: Warum tritt das Kuratorium nicht zusammen? </p>
+                  <p>Ich möchte nicht, dass wir dem Kuratorium vorgreifen.</p>
+                  <p><pb facs="krp-0176_s01-0010"/>[Beschluss]: Dem Vizekanzler soll die Tabelle über die Ausscheidungen gegeben werden.</p>
+                  <p>Angenommen.</p>
+                  <p>½ 2 Uhr.</p>
+                  <p>Donnerstag, 5 [Uhr] Herrengasse.</p>
+                  <p/>
+               </div>
+               <div n="2">
+                  <head>[KRP 176, 27. April 1920, Stenogramm Groß]</head>
+                  <p><pb facs="krp-0176_s02-0001"/>1.</p>
+                  <p>[Renner]: Wir haben seinerzeit eine Konferenz von Kabinettsmitgliedern eingesetzt zur Berichterstattung. Die Frage der militärischen Kommission ist aktuell geworden, weil in den Reihen der </p>
+                  <p>Kommissionsmitglieder der Wunsch nach Amtsniederlegung besteht, um zu demonstrieren gegen die Freisprüche durch den Obersten Gerichtshof. Es stehen noch Verhandlungen aus und es besteht die Gefahr, </p>
+                  <p>dass die Anträge der Kommission wieder abgelehnt werden und [ein] Freispruch erfolgt, wo nach Ansicht der Kommission ein Schuldspruch hätte erfolgen sollen. Die drei letzten Berichte </p>
+                  <p>sind in der Nationalversammlung anscheinend verloren gegangen. Die Kommission klagt, dass die Berichte von der Regierung zurückgehalten und von der Nationalversammlung nicht behandelt werden und der Oberste Gerichtshof </p>
+                  <p>ihre Anklage durch Freisprüche a[d] a[bsurdum] führt. Einzelne Mitglieder, die in Aussicht genommen waren, haben nicht angenommen, die Ersatzmitglieder bringen nicht den nötigen Eifer auf und [da] einzelne schwer belastet sind </p>
+                  <p>stimmt auch die innere Zusammensetzung nicht richtig. Die Kommission hat auch den Eindruck, dass wenn ihre Verhandlungen geheim sind und - die öffentliche Meinung nicht das richtige Bild ihrer Tätigkeit bekommt. Darum haben sie </p>
+                  <p>beantragt, ihre Verhandlungen [als] öffentlich zu erklären. Ich habe die Mitglieder gebeten, das Amt nicht am Samstag niederzulegen, sondern den Kabinettsrat abzuwarten. Wenn die Kommission zurücktritt, so ist das </p>
+                  <p>Ereignis außerordentlich zu beklagen. Die Kommission hat Tausende von Beschwerden entgegen genommen und die Beschwerdeführer, welche [eine] Sühne ihres beleidigten Rechtsgefühls verlangen, werden sagen, dass eine Sühne nicht </p>
+                  <p>zu finden sind - [ist]. Außerdem haben viele Offiziere mit Namen, gegen welche in der Öffentlichkeit angeschuldigt wurde, von der Kommission die Untersuchung zur Rechtfertigung verlangt. Wenn die Kommission zurücktritt, </p>
+                  <p>so ist das in den Augen jener, welche das Drama des Krieges mitgemacht haben, eine [...] in dem Glauben, dass das Recht nicht gefunden werden kann, eine Bloßstellung der Republik und der Nationalversammlung, </p>
+                  <p>welche die Kommission eingesetzt hat und eine Sache von politischer Bedeutung. Es wird auch nach außen [eine] schlechte Wirkung tun. Wir haben [uns] durch die Einsetzung der Kommission in eine günstigere </p>
+                  <p>Lage versetzt als Deutschland, das eine solche Kommission einzusetzen sich nicht entschlossen hat. Bei uns hat die Frage der Auslieferung einzelner Funktionäre aufgrund des Friedensvertrages keine </p>
+                  <p>merkliche Rolle gespielt. In dem Augenblick, wo die Kommission zurücktritt, müssen wir gewärtigen, dass [wir] Rekriminationen von den Nationalstaaten und anderwärts haben. Die serbische Regierung wird eine </p>
+                  <p>Reihe von Auslieferungen verlangen. Wenn die Dinge so fortgehen und es werden Funktionäre, deren Auslieferung verlangt wird, hier freigesprochen, so kommen wir in Schwierigkeiten. Ich glaube nicht, dass </p>
+                  <p>man die Kommission einfach ihr Mandat niederlegen lassen kann. Die Kommission beruht auf einem Gesetz, wir müssen die Kommission neu besetzen. Die Neubesetzung wird auch parteipolitische Schwierigkeiten </p>
+                  <p>hervor rufen. Wir sollten uns entschließen, die Verhandlungen der Kommission für öffentlich zu erklären und die Vakanzen durch neue Parteivorschläge ergänzen und [uns dafür einsetzen, dass] die Berichte, welche von der Kommission </p>
+                  <p>erstattet wurden, die wegen Papiermangel bloß dem Ausschuss zugestellt wurden, als Beilagen ausgedruckt werden und der Heeresausschuss veranlasst werden soll, die Berichte in Verhandlung zu nehmen. </p>
+                  <p>Das sollen wir der Kommission mitteilen, um es [ihr] zu ermöglichen, ihre Arbeit weiter zu führen. Ich möchte, dass jene Staatsämtern, welche mit der Sache näher befasst sind, Heer und Justiz, ihr Auffassung </p>
+                  <p>bekannt geben, damit das Kabinett sich über die Vorschläge entscheiden kann.</p>
+                  <p>Ramek: </p>
+                  <p>Das Kabinett [hat] seinerzeit eine Konferenz eingesetzt, welche über diese Fragen beraten und einen Vorschlag erstatten sollte. Ich weiß nicht, ob die Konferenz zusammengetreten ist. </p>
+                  <p>Ich war als Mitglied bestimmt, wurde aber nicht beigezogen. Was die Frage der Öffentlichkeitserklärung betrifft, so verweise ich darauf, wenn die Erhebungen der Kommission dann Material [zu Tage] fördern, </p>
+                  <p>das zu einer Anklage führt, so ist die Öffentlicherklärung dieser Verhandlung vom prozessualen Standpunkt nicht erwünscht, denn auf diese Weise kann der Zweck der Sache illusorisch gemacht werden. </p>
+                  <p>Die Strafprozessordnung verlangt, dass das Vorverfahren nicht öffentlich durchgeführt werden soll, weil die öffentliche Durchführung den Beschuldigten in den Stand setzt, irgendwie das Verfahren zu sabotieren, Beweismittel </p>
+                  <p>zu verschleiern, auf die Zeugen einzuwirken. Ich glaube, dass wir durch eine Öffentlicherklärung dieser Beratungen der Kommissionen den eigentlichen Zweck schädigen. Wenn man aber doch glaubt, dass das aus </p>
+                  <p>politischen Gründen, um der Bevölkerung entgegen zu kommen, [notwendig ist], so müsste man diesen prozessualen Nachteil auf sich nehmen. Ich weiß nicht, in welcher Form man sich die Durchführung der Angelegenheit vorstellt. </p>
+                  <p><pb facs="krp-0176_s02-0002"/>Man müsste jede Einvernahme eines Referenten in der Öffentlichkeit durchführen. Der größte Fehler des Gesetzes über die Kommission ist sicherlich, wie die Erfahrung zeigte, dass man die Verhandlung und </p>
+                  <p>Aburteilung durch ein Gericht durchführen lässt und zwar nach den allgemeinen Strafgesetzen. Das ist der Nachteil und die Ursache der Freisprüche. Das Strafgesetz versagt </p>
+                  <p>für diese Fälle von besonderer Art. Ich bin überzeugt, [dass man], wenn man auch meritorische Bestimmungen und einen besonderen Gerichtshof aufgestellt hätte, sicherlich zu einem Ergebnis gekommen wäre. Es </p>
+                  <p>ist im Falle Lj[ubicic] für eine Anklage kein anderer Spielraum möglich als die Anklage wegen Mordes. Wenn er vermöge Dienstbefugnis das Recht hatte, Tötungen anzuordnen, </p>
+                  <p>so fehlte ihm das Bewusstsein und die Absicht der Rechtswidrigkeit. Allerdings ist er dabei fahrlässig vorgegangen. In der Hinsicht versagt aber das Gesetz, weil die Delikte schon verjährt waren. </p>
+                  <p>Hätte man besondere meritorische Grundsätze aufgestellt, so hätte man ihn verurteilen können. Aber so fehlen der Tatbestand und die Strafsanktion für derartige Delikte. Ich möchte aber darauf - auf eines hinweisen: </p>
+                  <p>Von den Sukzessionsstaaten ist Österreich der einzige Staat, welcher solche Untersuchungen durchführt und Verfolgungen einleitet. Die Tschechen, Polen und Jugoslawen würden so etwas gewiss nicht unternehmen. </p>
+                  <p>Die schwersten Delikte, welche vorgekommen sind, stammen sicherlich von Offizieren und militärischen Funktionären, die diesen Staaten zugehören. Aus politischen Gründen wird gegen sie aber nicht vorgegangen. Das ist auch </p>
+                  <p>ein Grund, warum wir zu keinem Ergebnis kommen. Denn es haben überall die deutschen Truppen und die deutschen Offiziere ihre Pflicht gegenüber dem früheren Vaterland am gewissenhaftesten erfüllt. Wenn man jetzt noch mit </p>
+                  <p>einer Abänderung des Gesetzes kommen könnte, so wäre es wohl angezeigt. Ich hielte es für politisch bedenklich, die Kommission ohne Ersatz auseinander gehen zu lassen. Besser wäre es, wenn man die </p>
+                  <p>Gerichtsbarkeit auf eine andere Basis stellen würde, einen besonderen politischen Gerichtshof damit betrauen würde und meritorische Straftatbestände aufstellen würde, weil das Strafgesetz nicht ausreicht und besondere Strafsanktionen -. </p>
+                  <p>In den meisten Fällen handelt es sich nicht um gemeine Verbrechen, sondern [um] Delikte, die aus der Überspannung der Anschauung über die Machtbefugnis oder [aus] Fahrlässigkeit entstanden sind, aber nicht aus dem bösen Willen, </p>
+                  <p>ein Verbrechen zu begehen.</p>
+                  <p>Deutsch: </p>
+                  <p>Es scheint mir, als ob im Laufe der Zeit der Zweck der Kommission in den Hintergrund getreten ist. Wir haben uns nicht vorgestellt, dass man aufgrund der bestehenden </p>
+                  <p>Gesetze imstande sein könnte, alle jene, welche sich Verschiedenes haben zu Schulden kommen lassen, vor den Richter zu bringen. Wir haben die Mängel des Gesetzes gekannt und es war für uns unangenehm, dass </p>
+                  <p>die Kommission es versuchte, die Leute vor den Richter zu bringen. Ich kann nicht beurteilen, ob das Mittel Rameks, eine Strafsanktion für diese Dinge zu schaffen, politisch so rasch </p>
+                  <p>durchführbar ist, dass es wirksam sein könnte. Was die Wirksamkeit der Kommission anlangt, so ist sie gar nicht nötig, vor den Richter zu gehen und einen Wahrspruch des Gerichtes zu </p>
+                  <p>erzielen. Es ist uns darauf angekommen, dass die Kommission, auch wenn kein juristisch zu ahndendes Verbrechen oder Vergehen vorliegt - muss die Kommission die Fahrlässigkeit feststellen </p>
+                  <p>oder das Rechtsbewusstsein, unter welchem die Handlungen geschehen sind, [welche] dem heutigen System widersprechen. Es hätte die Ächtung des Mannes genügt. Die Öffentlichkeit der Verhandlungen ist nicht geschehen und </p>
+                  <p>die Kommission will das nachholen. Die Kommission will also die Verhandlungen öffentlich vornehmen. Nicht jede Einvernahme soll öffentlich erfolgen, sondern nach Abschluß des Aktenlaufes </p>
+                  <p>soll eine Verhandlung stattfinden, bei welcher der Fall vor der Öffentlichkeit besprochen wird. Wie vorteilhaft wäre es, wenn man die Vorgänge über den Waffenstillstand öffentlich </p>
+                  <p>hätte verhandeln können. Wir konnten nicht einmal den Bericht veröffentlichen, weil der Bericht Mängel hatte. Wenn die Verhandlung öffentlich gewesen wäre, hätte das viel[leicht] selbst ein Urteil bilden können. </p>
+                  <p>Eine Aburteilung durch das Gericht wollten wir nicht. Die Männer, welche aus Fahrlässigkeit gefehlt hatten, sollten der öffentlichen Ächtung verfallen. Die Schlußverhandlungen sollen öffentlich geführt werden können, </p>
+                  <p>ein solcher Antrag ist im Parlament bereits in Vorschlag. Dann ist noch zu überlegen, für besondere Vergehen und Verbrechen ein besonderes Strafgesetz zu schaffen. Wenn es noch rasch genug </p>
+                  <p>geschehen kann, wäre ich dafür, dass Justiz und Heerwesen beauftragt werden, solche Vorschläge zu erstatten.</p>
+                  <p>Ein teilweiser Ersatz für die bisher gefehlte Öffentlichkeit kann gefunden werden in der Berichterstattung an das Parlament in solcher Form, dass die Öffentlichkeit dann [...]. </p>
+                  <p><pb facs="krp-0176_s02-0003"/>Man hat von den Berichten in der Nationalversammlung nichts gehört. Die Berichterstattung soll so erfolgen, dass die öffentliche Aufmerksamkeit darauf gelenkt wird.</p>
+                  <p>Durch diese Maßregeln haben wir uns für den Augenblick geholfen, für die Zukunft muss die von Ramek angeregte Strafsanktion geschaffen werden.</p>
+                  <p>Eisler: </p>
+                  <p>Ich möchte empfehlen, sich nicht übereilt sich - auf einen Beschluss einzulassen, welcher die Sache noch verschlechtern würde. Jetzt eine neue materielle Strafbestimmung </p>
+                  <p>und einen neuen Delikttatbestand [zu] konstruieren für Delikte, welche in der Vergangenheit liegen - nicht so wie in der ganzen Strafgesetzgebung maßgebend pro futura, sondern pro posterior – </p>
+                  <p>ist von Übel. Es müssten auch Tatbestände erfasst werden, welche nach den Strafgesetzen verjährt werden. Eine Strafsanktion für vergangene strafbare Handlungen ist nicht möglich. Jeder Mensch muss nach der </p>
+                  <p>gesetzlichen Präsumption das Gesetz kennen und wissen, dass er das Gesetz verletzt. Aber nachträglich ein Strafgesetz zu machen, ist unmöglich. Heute die Sache auf[zu]geben, hieße vor den [...] Sprüchen </p>
+                  <p>die Flucht ergreifen oder andernfalls sichere Freisprüche herbeizuführen. Man wird die Verhandlungen öffentlich führen lassen müssen und sich mit den akademischen Feststellungen der Kommission begnügen lassen. </p>
+                  <p>Das wird aber wirksamer sein als das bisher Geschehene. Es würde auch jede andere Maßnahme in so enge Beziehung zum Verfahren vor dem Gerichtshof gebracht werden, dass es nur [...] und nichts </p>
+                  <p>ändern würde.</p>
+                  <p>Renner: </p>
+                  <p>Es wäre verfehlt, jetzt hinterher das Gesetz [dahin] zu ändern, dass Delikttatbestände aufgestellt und unter besonderen Strafen bedroht würden. Trotzdem würde der Gerichtshof </p>
+                  <p>freisprechen nach dem Grundsatz nullum crimen sine lege. Eine Rückwirkung eines Gesetzes oder einer Strafdrohung ist nach den allgemein </p>
+                  <p>anerkannten Grundsätzen des Strafgesetzes nicht zulässig. Dass man keinen besonderen Gerichtshof eingesetzt hat, war ein schwerer Fehler. Der Staatsrat hatte einen solchen in Antrag gebracht, Ofner, </p>
+                  <p>Langenhan und Licht haben den Entwurf gemacht und der Staatsrat hat sich [nach] langem Streit entschieden, etwas anzunehmen, damit überhaupt etwas geschehe. Er konnte nicht die entsprechende Sorgfalt </p>
+                  <p>walten lassen. Nichtsdestoweniger möchte ich behaupten, dass die Art und Weise, wie der Oberste Gerichtshof hier das geltende Strafgesetz angewendet hat, sich juristisch nicht rechtfertigen lässt. </p>
+                  <p>Ich kann nicht annehmen, dass irgendein Strafgesetz soweit abweicht von dem natürlichen Rechtsempfinden, dass Täter dieser Art absolut straflos bleiben könnten. Ich [ver]setze mich nur in den Fall, dass </p>
+                  <p>etwa von anderen Gesellschaftsschichten unter ähnlichen Verhältnissen ähnliche Taten verübt werden, so hätten wir andere Urteile bekommen. Zum unwiederbringlichen Schaden hat sich der Oberste Gerichtshof </p>
+                  <p>in Widerspruch zur allgemeinen Rechtsauffassung gesetzt. Ich beklage das außerordentlich, denn ich kann nach den Erfahrungen mit Urteilen nüchtern denkender Menschen aus dem Volk sagen, dass </p>
+                  <p>die Autorität der Gerichte gelitten hat und wir daran denken müssen, wie wir [...] Gerichte schaffen, welche die verlorene Autorität wieder herstellen.</p>
+                  <p>Aufgrund des Gesetzes und in der gegenwärtigen Lage können wir was tun? Die öffentliche Verhandlung ist möglich, [aber] die Öffentlichkeit muss dabei abgegrenzt werden. Es wird die </p>
+                  <p>Kommission darüber Vorschläge zu erstatten haben in der Art, dass wenn die Verhandlung durch den Referenten [...] soweit geführt ist, dass der Tatbestand klar gestellt ist und das glaubhaft durch Zeugen </p>
+                  <p>festgehalten werden kann, dass dann eine bestimmte Schlußverhandlung erfolgt, welche öffentlich zu machen wäre. Die Anträge darüber müssten der Kommission vorbehalten bleiben. Wir würden nur grundsätzlich [die Zustimmung] dazu </p>
+                  <p>geben, dass die Verhandlungen in einem gewissen Stadium öffentlich geführt werden können. Ich glaube, dass wir der Kommission einen Rat geben könnten, das Schwergewicht der Arbeit nicht darin zu sehen, dass strafprozessuale</p>
+                  <p> Tatbestände dem Gerichtshof vorgelegt werden, sondern auf die Berichterstattung an das Parlament, wozu sie eigentlich zunächst berufen ist, so dass diese Fälle im Heeresausschuss und im Haus behandelt werden können. </p>
+                  <p>Das ist der wesentliche Teil in der Absicht des Gesetzes gewesen und die strafprozessuale Verhandlung war nur subsidiär gedacht. Nebenher läuft eine Reihe von weniger aufreizenden Prozessen, </p>
+                  <p>[...]-Fälle, und in der Hinsicht hat die Kommission still viel Nutzen geschaffen. <hi rend="#s">Ihre Hauptaufgabe</hi> -.</p>
+                  <p><hi rend="#s">Bericht</hi> - Der Kommission wäre zu sagen, an das Parlament [zu] berichten und diesem müsste die Kommission mehr Aufmerksamkeit zuwenden und die Berichte müssten als Beilagen zum Protokoll gedruckt und </p>
+                  <p><pb facs="krp-0176_s02-0004"/>den Ausschüssen zugewiesen werden. Es war für die Kommission besonders peinlich, dass im Parlament nichts von ihrer Tätigkeit ruchbar geworden ist. Man müsste [darauf] einwirken, dass </p>
+                  <p>die Berichterstatter im Ausschuss möglich[st] bald Bericht erstatten und die Berichte an das Haus gelangen. Eine solche Zusage des Plenums der Nationalversammlung an die Kommission würde sie </p>
+                  <p>gewiß bestimmen, ihre Rücktritte ganz fallen zu lassen. Und dann wäre der Kommission nahezulegen, wenn sie glaubt, zu ihrer Arbeit eine Ergänzung [zu] brauchen, darüber </p>
+                  <p>Vorschläge zu machen. Die Regierung wird entscheiden, ob und welches Gesetz zur [...] notwendig ist. Wir würden so die Kommission vielleicht erhalten, in ihrer Zusammensetzung </p>
+                  <p>verbessern und ihre Verhandlungen fruchtbar machen. Es wäre wichtig, dass die Berichte im Haus zur Verhandlung gekommen sind. Wenn die Kommission glaubt, dass sie doch </p>
+                  <p>in gewissen Fällen, besonders krassen Fällen, auf der Anklage bestehen muss, so würde das eine Änderung des Gesetzes [dahin] ermöglichen, dass man der Kommission die Funktion eines öffentlichen Anklägers überträgt. </p>
+                  <p>Es ist unwürdig für die Kommission, wenn sie als Beauftragte des Parlaments einen strafbaren Tatbestand vorlegt, das nicht eine Anklage ist, sondern wie eine Anzeige eines Privatmannes [behandelt wird] </p>
+                  <p>und die [Vertreter der] Kommission den Fall gar nicht selbst führen können. Man kann es der Funktion - [Kommission] nicht versagen, aus ihrer Mitte den Ankläger zu stellen nachdem sie die Anklage als Beauftragte der Nationalversammlung </p>
+                  <p>erhoben hat. [Ich] schlage vor, dass der Kabinettsrat der Kommission folgendes eröffnet: Der Kabinettsrat ist bereit, [einen] Antrag entgegen zu nehmen und zu unterstützen, welcher die Verhandlung im entscheidenden </p>
+                  <p>Stadium der Kommissionsberatung für öffentlich erklärt. Die Staatsregierung bedauert, dass die Anträge bei dem Obersten Gerichtshof nicht den von der Kommission gewünschten Erfolg erzielt haben, </p>
+                  <p>glaubt jedoch, dass das [...] sondern auf die Berichterstattung – [<hi rend="#i">Einschub:</hi>] die Kommission das Schwergewicht ihrer Tätigkeit auf die Berichterstattung an das Haus legen sollte, statt die Anhängigmachung gerichtlicher Strafverfolgung anzustreben. [<hi rend="#i">Einschub Ende</hi>] Er - [der Kabinettsrat] wird sich dafür verwenden, dass sie nicht nur dem Parlament übermittelt [werden], [sondern] die Berichte den Protokollen einverleibt [werden und] die </p>
+                  <p>Verhandlung im Heeresausschuss und Parlament erfolgt. [Der Kabinettsrat] ist bereit, Anträge auf Ergänzung der Kommission entgegen zu nehmen und in Erwägung zu ziehen, inwieweit die Kommission durch [eine] Gesetzesänderung </p>
+                  <p>das Recht zur Erhebung der Anklage vor dem Gerichtshof erhalten könnte. Inzwischen könnte auf dem Boden der Nationalversammlung das Nötige vorgekehrt werden, durch - welches zeigt, dass diese </p>
+                  <p>Einrichtung von der Nationalversammlung ernst genommen wird.</p>
+                  <p>Seitz: </p>
+                  <p>In der ersten Frage ist man einig, dass man nicht neue Delikte schaffen kann. Das ganze Gesetz leidet darunter, dass 1.) lauter Funktionäre bestellt sind, die </p>
+                  <p>aus dem alten Regime stammen und die in ihrer Art fort denken, ohne sich in das Volksempfinden finden [zu] können. Die Kommission hat eigentlich die Funktion eines Untersuchungsrichters, trotz[dem] wird beim </p>
+                  <p>Obersten Gerichtshof [ein] Untersuchungsrichter bestellt und der Senat besteht zur Hälfte aus Militärrichtern, welche befangen sind, und [aus] alten Räten des Gerichtshofes, von denen man ein anderes Urteil nicht </p>
+                  <p>erwarten kann. Ich glaube, man müsste einen Schritt weiter gehen. Das Parlament wird sich entschließen müssen, einen eigenen Gerichtshof für diese Delikte zu schaffen, eine Art Volksgericht. Und [es ist die Frage], ob es nicht </p>
+                  <p>nötig sein wird mit Rücksicht auf diese Freisprüche, welche furchtbar aufreizend wirken. So würde das mechanisch auslösen das Begehren nach Auslieferungen und wir könnten nicht so wie Deutschland </p>
+                  <p>heraus kommen, weil wir uns als unfähig erwiesen haben, solche Delikte zu verfolgen. Allerdings ist richtig, dass die Kommission den § 1, Absatz 1 des Gesetzes nicht mehr richtig in Erinnerung </p>
+                  <p>zu haben scheint. Denn dort heißt es, dass die Kommission die Aufgabe hat, zu erheben ... diese Erhebung hat den Anstoß zur Einleitung eines allfälligen Strafverfahrens zu geben. </p>
+                  <p>Die Hauptaufgabe war die Untersuchung und Berichterstattung. Wenn sie da etwas genauer gewesen wäre, so hätte die Kommission sich im eigenen Dienstbereich eine Geschäftsordnung machen können, nach welcher </p>
+                  <p>zunächst Erhebungen gepflogen werden und dann eine Art öffentliches Verfahren nach Art einer Gerichtsverhandlung stattfindet. § 8 sagt nur, dass den einzelnen Mitglieder die Pflicht zur Amtsverschwiegenheit </p>
+                  <p>obliegt, während eine öffentliche Verhandlung nicht ausdrücklich ausgeschlossen ist. Wenn die Kommission das gemacht hätte, so wäre vielleicht die Kommission in einem anderen Licht erschienen. Man misst auch dem </p>
+                  <p>Parlament eine Schuld bei. Das Parlament ist daran unschuldig. Der erste Bericht ist verhindert worden, nur weil damals eine rasche Berichterstattung notwendig war. [Er ist] im kurzen Weg </p>
+                  <p>verhandelt worden ohne Vorlage eines schriftlichen Berichtes. Das ist den Herren jetzt unangenehm. Aber bei den weiteren Berichten trifft das Parlament keine Schuld, sondern ich erinnere, dass eines Tages von der Regierung </p>
+                  <p>eine Zuschrift an das Parlament gekommen ist mit der Aufforderung, den 2. und 3. Bericht dem Kabinett zurück zu stellen, weil er nur durch ein Versehen an das Parlament gelangt sei. Ich habe geantwortet, dass </p>
+                  <p><pb facs="krp-0176_s02-0005"/>ich das nicht machen kann. Andererseits hat mir der Kanzler gesagt, es ergeben sich Schwierigkeiten im Kabinett und ich habe mich selbst von den Meinungsverschiedenheiten [überzeugt, die] über die Zweckmäßigkeit der Vorlage eines [...] </p>
+                  <p>Berichtes an das Parlament bestehen, weil einige eine Ident[ifizierung] der Regierung behaupteten. Ich habe einen Ausweg gewählt, indem ich nicht den Bericht zurückgestellt, aber den Referenten ersucht habe, mir den Bericht </p>
+                  <p>zur Einsicht vorzulegen. Ich habe den Bericht zurückgehalten mit dem Vorsatz, wenn das Kabinett sich die Möglichkeit der Verhandlung klar sein wird, ihm den - [ihn dem] Referenten zurück zu geben. Der Referent hat </p>
+                  <p>in nicht zurück verlangt und er wartet noch, wie sich die Regierung dazu stellt. Nachdem das jetzt geschehen ist, werde ich dem Referenten den Bericht zurück stellen und [ihn] ersuchen, sobald als möglich das Referat erstatten. </p>
+                  <p>Das wird ein schriftlicher Bericht an das Haus, welchem [man] auch Raum in einer Debatte gewähren muss, so dass diesem Bedürfnis der Kommission Genüge geschieht. Im übrigen wird es Sache der Kommission sein, einen </p>
+                  <p>Vorgang vorzuschlagen, welcher [geeignet ist], ihren Verhandlungen eine gewisse Öffentlichkeit zu verleihen. Von weiteren Anklagen wird die Kommission nach den bisherigen Erfahrungen der ?Rechtsverbeugung des Obersten Gerichtshofes </p>
+                  <p>absehen. Das Parlament wird einen eigenen Gerichtshof schaffen müssen, welcher dem Rechtsempfinden des Volkes mehr Rechnung trägt.</p>
+                  <p>Ramek: </p>
+                  <p>Ich kann mich der Verurteilung des gemischten Senats beim Obersten Gerichtshof nicht ganz anschließen. Nicht jede Pflichtverletzung und jedes Delikt, selbst wenn es </p>
+                  <p>festgestellt wird, führt unbedingt zur Bestrafung. Das liegt in den besonderen Verhältnissen des Strafgesetzes. Ich glaube nicht, dass die Anklage [nicht] genug energisch vertreten war, es ist dem öffentlichen Ankläger </p>
+                  <p>nichts übrig geblieben, als die Anklage auf Mord zu erheben und er hat auch die Anklage energisch vertreten. Es kommt halt die Diskrepanz heraus, dass eine ?Rechtsverbeugung vorliegt, weil </p>
+                  <p>sich alle bewusst sind, dass Pflichtverletzungen ?vorliegen. Wäre die Verjährung nicht da, so wäre er wegen Fahrlässigkeit verurteilt worden. Aber wegen Mordes konnte er nach den Ergebnissen des Beweisverfahrens nicht verurteilt </p>
+                  <p>werden. Das Urteil ist sehr ausführlich begründet und nach allen Seiten erwogen, auch als Verbrechen des Missbrauches der Amtsgewalt, obwohl die Anklage darauf nicht erhoben war. Aber es fehlte dann der </p>
+                  <p>Nachweis, dass der Angeklagte im Bewusstsein der Rechtswidrigkeit vorgegangen sei. Zur Anwendung des Kriegsnotwehrrechtes war er ja an und für sich berechtigt und verpflichtet durch die Befehle </p>
+                  <p>der höheren Kommanden. Er war in [einer] außerordentlich schwierigen Situation, Hochverrat, Feigheitsfälle, Desertion, Verrat, [...]. Die Russen versuchten, das Heer zu demoralisieren. </p>
+                  <p>Die Truppen waren von einem Netz von Spionen umgeben. Es war auch der Druck von Seite der Soldaten. Unter diesen Verhältnissen musste er, um größeren Schaden von den Truppen abzuwenden, von dem </p>
+                  <p>Mittel des Kriegsnotrechtes Gebrauch machen. Es war eine schwere Pflichtenkollision. Zeugen haben die außerordentlich schwierige Lage bestätigt, Lj[ubicic] wurde von ihnen als außerordentlich milde </p>
+                  <p>bezeichnet. Der Drang der Truppen war auch da. Er war vielleicht der einzige Kommandant, welcher über diese Fälle Handakten anlegen ließ und diese sind ihm jetzt zum Verhängnis geworden. Andere haben </p>
+                  <p>keine Akten - nicht anlegen lassen und die Entscheidung einem untergeordneten Organ übertragen. Hier mögen noch viel größere Missbräuche vorgekommen sein. Er hatte nicht den Willen und die Absicht, ein </p>
+                  <p>Unrecht zu begehen und darum versagte das Strafgesetz bei der Anklage auf Mord. Auch ein anderer Gerichtshof hätte ihn nicht schuldig gesprochen. Einige Fälle waren besonders krass, wo ein </p>
+                  <p>gerichtliches Strafverfahren abgeführt worden ist. Es wurde [von] ihm aber nachgewiesen, dass er von diesem Strafverfahren gar nicht gewusst hatte. Irgendwie die Pflichtverletzung -. Die Ansicht, dass der Senat </p>
+                  <p>gegen das Gesetz gehandelt hat und Klassenjustiz übte, kann ich nicht unterstützen. Es sind [...] Richter, welche sich nicht von politischen Stimmungen beeinflussen lassen, sondern sich an das </p>
+                  <p>Gesetz gehalten haben. Ein besonderer Gerichtshof kann auch nichts anderes machen. Es wäre angezeigt gewesen, besondere strafbare Tatbestände herzustellen. Die Feststellung der Kommission oder eines besonderen Gerichtshofes wird auf nichts anderes </p>
+                  <p>hinaus laufen, [als] dass der Mann in gewisser Hinsicht die Pflicht verletzt hat. Ich bin nicht einverstanden und kann nicht zustimmen, dass der Kabinettsrat bedauert, dass die Anträge der Kommission beim Obersten Gerichtshof </p>
+                  <p>ihr Ziel nicht gefunden haben. Der Oberste Gerichtshof ist unsere höchste richterliche Autorität und meine Überzeugung geht dahin, dass der Senat nur nach seiner Pflicht gehandelt und das Gesetz nicht verletzt hat. Ich </p>
+                  <p>möchte auch zur Erwägung stellen, ob man der Kommission oder einem Organ von ihr das Recht zur Anklagevertretung einräumen kann. Das ist ein Angriff gegen die eigene Staatsanwaltschaft, welche durch ihr </p>
+                  <p>Verhalten ein solches Vorgehen nicht gerechtfertigt hat. Sie hat die Anklage erhoben auch wenn sie nicht die Überzeugung hatte, dass die Anklage zum Erfolg führen wird. Wenn ein moralischer Schuldspruch </p>
+                  <p>fällt ohne Straffolgen und ohne Rücksicht auf das Strafgesetz - da ist es zulässig[er], als dass dort ein Funktionär der Kommission die Anklage vertritt. Denn auch hier müsste das Prinzip aufrecht </p>
+                  <p><pb facs="krp-0176_s02-0006"/>erhalten werden, dass kein Verfahren ohne Anklage möglich ist. Gegen den Punkt, worin das Bedauern ausgesprochen wird - dem kann ich nicht zustimmen.</p>
+                  <p>Renner: </p>
+                  <p>Diesen Satz würde ich fallen lassen über Einspruch, denn die Kommission weiß, wie der Kabinettsrat über die Sache denkt. Aber sonst werden wir mit diesen </p>
+                  <p>sechs Punkten den Beschluss fassen und den Gegenstand erledigen.</p>
+                  <p>2.</p>
+                  <p><hi rend="#s">Zerdik</hi>: -. Renner: </p>
+                  <p>Der Beschluss [ist] nochmals den Staatsämtern für Finanzen und Justiz zur Erwägung zu geben und wenn sie ein Einverständnis erzielt haben, die Sache im Kabinettsrat vorzutragen.</p>
+                  <p>Reisch: </p>
+                  <p>[Ich erhielt eine] Einladung zu Verhandlungen der paritätischen Lohnkommission für morgen 3 Uhr Nachmittag. [Ich] habe den Nachmittag schon vergeben und in meritorischer Beziehung muss ich beklagen, dass </p>
+                  <p>wieder [eine] Lohnfrage, die Neuregelung der gleitenden Zulage [zur Debatte] steht, ein Beweis, dass finanzielle Forderungen erhoben werden sollen. Man hätte dem Lohnkomitee sagen können, dass erst die [...] </p>
+                  <p>Fragen über die Gerichtskanzelisten zu regeln sein werden, bevor neue Forderungen verhandelt werden können.</p>
+                  <p>Renner: </p>
+                  <p>Es sind zwischen den Verhandlungen gestellte Fragen, welche aus den letzten Verhandlungen noch offen geblieben ist- [sind], so die Anwendung der siebenstündigen Arbeitszeit. Auch die anderen Fragen sind </p>
+                  <p>so, dass wir die Leute anhören müssen. Es soll ein Vertreter des Staatsamtes für Finanzen kommen. Die Ortsklasseneinreihung geht auch nicht vorwärts. Die Länderkommissionen können nicht zusammen treten, weil </p>
+                  <p>die Beamtenorganisationen ihre Vertreter nicht namhaft gemacht haben.</p>
+                  <p>Paul: -.</p>
+                  <p>3.</p>
+                  <p>Zerdik: </p>
+                  <p>Papierverbrauch. Der Hauptausschuss hat sich in der heutigen Sitzung mit der Vollzugsanweisung über die Regelung der Abgabe von Rotationsdruckpapier befasst. </p>
+                  <p>Der H[aupt]ausschuss hat sich mit der - [die] Vollzugsanweisung über die Einschränkung des Papierverbrauchs genehmigt, gewünscht, es mögen die Sparmaßnahmen ...</p>
+                  <p>Die Kohlensituation hat sich gebessert, es müssen aber die Wagen rasch entladen werden. Daher kann es nicht an alle Stellen abgegeben werden. Ich meine, dass </p>
+                  <p>dadurch, dass wir Reserven in den Betrieben ansammeln im Mai die Papierindustrie besser beliefert werden kann als bisher. Ich möchte es so machen, dass es mir überlassen bleibt, die Gültigkeit </p>
+                  <p>der Verordnung über den 1. Mai, wenn nötig, auszudehnen, sonst aber die Zeitungen von diesen Beschränkungen zu befreien.</p>
+                  <p>Eldersch: </p>
+                  <p>Wenn man schon Umgang nehmen konnte von dem Beschluss des Kabinettsrates für jene Menge, welche über acht Seiten [geht], auch die Exportabgabe einzuheben mit Rücksicht auf die [...], </p>
+                  <p>dass eine Menge von Papier verschiedener Sorten erzeugt wird und die Belastung der Zeitungen mit der Exportabgabe nicht erforderlich scheint; so ist doch die Änderung im Modus der Preisermäßigung – </p>
+                  <p>sie nicht für die ersten acht Seiten zu gewähren, sondern für eine bestimmte Papiermenge im Monat und darüber hinaus den Preis abzustufen - so meine ich, dass diese Änderung im Modus eine Begünstigung </p>
+                  <p>einiger Zeitungen ist - jener, welche nicht viel gelesen werden, keinen großen Leserkreis haben - und eine Strafe für Zeitungen mit [einem] großen Leserkreis. Warum haben wir die Ermäßigung in Aussicht genommen? </p>
+                  <p>Nicht um den Zeitungen zu helfen, sondern um das Publikum gegen übermäßige Preise zu schützen und zu verhindern, dass Zeitungen nicht auf das Inseratengeschäft abgelenkt werden. Jetzt soll </p>
+                  <p>ohne Rücksicht auf den Umfang eine bestimmte Papiermenge billig abgegeben werden. Die beiden Parteien werden sich mit dieser Aufteilung nicht zufrieden geben können. Es widerspricht unserer Absicht, </p>
+                  <p>die Zeitungen zu strafen, welche einen größeren Absatz haben. Die kleinen Zeitungen, welche kein Inseratengeschäft haben und bloß politische Nachtrichten bringen, sollen für die ersten acht Seiten ein billiges Papier haben. </p>
+                  <p>Man soll auch auf das Format Rücksicht nehmen und [es] auf ein einheitliches Format umrechnen. Aber man kann nicht einfach eine bestimmte Papiermenge billig abgeben und den Rest zu [einem] höheren Preis.</p>
+                  <p><pb facs="krp-0176_s02-0007"/>Ebenso verstehe ich nicht die Begünstigung der selbständigen Mittags- und Abendblätter. Das sind Zeitungen, welche das größte Geschäft machen, es - [sie] haben keine kostspielige Redaktion. </p>
+                  <p>Sie haben ohnedies einen viel zu großen Umfang, sie bekommen das Papier vollständig zum billigeren Preis. Zu Post 4 über Besitzerwechsel möchte ich sagen, dass es weniger ein Schutz </p>
+                  <p>für die Angestellten ist, als gegen Spekulationen beim Verkauf von Zeitungen. Der neu Eintretende soll doch nicht geschützt werden. Bei Punkt 7 möchte ich bemängeln, dass man auch laufende </p>
+                  <p>private Kompensationsverträge (bis zu ihrer Abwicklung) von der Exportabgabe befreit. Handelt es sich nur um die laufenden Kompensationsverträge, die unter einer bestimmten Kalkulation stehen? Das Haupt[...] </p>
+                  <p>ist, dass man - die Berechnungsgrundlage von acht Seiten aufgegeben wird und man sich auf eine bestimmte Papiermenge einlässt zu einem bestimmten Preis und dagegen - [damit] wird die Spitze gekehrt gegen jene Zeitungen, welche einen </p>
+                  <p>großen Leserkreis [haben]. Dagegen muss ich Stellung nehmen und bitte, dass es bei den acht Seiten mit [einer] Umrechnung bei Verschiedenheit des Formats verbleibt. Man [kann] auch bei Zeitungen, welche eine geringere Auflage haben, </p>
+                  <p>aber einen größeren Umfang - kann man auch bei einer niedrigen Auflage einen höheren Preis verrechnen, weil sie das Geschäft mit den Inseraten machen.</p>
+                  <p>Reisch: </p>
+                  <p>Bei den ersten Beschlüssen über die Papiersubvention habe ich aufmerksam gemacht, dass wir uns auf eine schiefe Bahn begeben. Auf dieser schiefen Bahn schreiten wir [...] </p>
+                  <p>weiter. Heute sollen alle mühsam durchgesetzten Einschränkungen wieder aufgehoben werden. Es soll der Reihe nach fallen gelassen werden, was als Beschränkung aufgenommen wurde, besonders die Beschränkung auf </p>
+                  <p>acht Seiten bei den Hauptblättern und zwei Seiten bei den Mittags- und Abendblättern und [deren] Ersetzung durch die Bestimmung einer <hi rend="#s">Waggonmenge</hi> - Preisabstufung nach der Waggonmenge. Das ist ein bedeutender Rückschritt, welcher sich </p>
+                  <p>nicht rechtfertigen lässt. Die vorgeschützten technischen Schwierigkeiten der Ermittlung des Verbrauchs bestehen nicht. Es ist festgestellt, dass acht Seiten Rotationsdruckpapier 29,925 Gramm wiegt und es lässt sich </p>
+                  <p>unter Berücksichtigung der Höhe der Auflage genau berechnen, wieviel ermäßigtes Papier dieser Zeitung zuzukommen hat. Wir haben daher keinen Grund, diesem Drang der Interessenten nachzugeben. </p>
+                  <p>Wir sollten auf den acht Seiten Papierverbrauch, umgerechnet auf das Gewicht zu verbleiben haben, damit auch Zeitungen kleinen Formats nicht geschädigt werden. Ich finde keinen Grund, warum von der Abgabe </p>
+                  <p>bezüglich des Mehrverbrauchs abgegangen wird. Denn dieses Papier wird ja dem Export entzogen und es wäre im Interesse des Staatsamtes für Finanzen gelegen, dass für dieses Papier die Exportabgabe gezahlt wird. </p>
+                  <p>Das ist die einzige sichere Deckung des Staatsamtes für Finanzen für den bedeutenden Aufwand. Denn wo Z[erdik] meint, dass die Berechnung mit 8 M[illionen] zu gering sei, so bezweifle ich, ob wir tatsächlich </p>
+                  <p>acht M[illionen] einheben werden, da der Export großteils noch auf die Kompensationsrechnung geht, wegen Valuta[...] der Export eingeschränkt wird. Es wird ein </p>
+                  <p>großer Ausfall für den Staatsschatz aus den Subventionen erübrigen. Man müsste für den Mehrverbrauch wenigstens die halbe Abgabe einheben. Auch für den Besitzerwechsel müsste Beschluss </p>
+                  <p>aufrecht bleiben. Wir haben keinen Anlass einem neuen Besitzer zu einem neuen Geschäft zu verhelfen, noch weniger dem Vorbesitzer zu einem günstigen Verkauf zu verhelfen wegen der </p>
+                  <p>Berechtigung zum billigen Papierbezug. Auch gegen die anderen Begünstigungen spreche ich mich aus, so die Ausdehnung auf die gewerkschaftlichen Zeitungen. Es ist das eine Durchbrechung des Grundsatzes, </p>
+                  <p>dass wir nur Tageszeitungen in der Richtung unterstützen. Das ist ein Mehrerfordernis von 0,500 Millionen Kronen monatlich. <hi rend="#s">Es müsste wenigstens auf Rotationsdruckpapier eingeschränkt bleiben</hi>. </p>
+                  <p>Auch empfiehlt sich nicht, der Fachpresse <hi rend="#s">ohne Rücksicht auf den Verbrauch</hi> - 6 Waggons zuzuweisen. Es müsste fallweise einer Entscheidung der Staatsämter vorbehalten werden unter Rücksichtnahme auf die Höhe der </p>
+                  <p><hi rend="#s">Auflage</hi>. Unbedingt müsste ich verlangen, die Ausschließung neuer Zeitungen. Eine neue Zeitungsgründung hat keinen Anspruch auf verbilligtes Papier. Auch möchte ich ausgesprochen haben, dass die Export-</p>
+                  <p>abgabe solange einzuheben ist, als nicht alle Vorschüsse des Staatsamtes seit dem Jahr '20 zur Rückzahlung gelangt sind. Wir haben uns immer damit getröstet, dass die Auslagen durch </p>
+                  <p>die Exportabgabe hereingebracht werden sollen. Das muss nun eingehalten werden.</p>
+                  <p>Ellenbogen: </p>
+                  <p>Ich habe noch keinen Vorschlag gehört, welcher nach allen Seiten befriedigen würde. Es ist ein befriedigender Weg noch nicht gefunden. Wenn wir die Form wählen, </p>
+                  <p>dass nur die acht Seiten begünstigt werden, dann können die Blätter [versuchen], durch Erhöhung der Auflage das Papier aufzubrauchen. Wenn man mit acht Waggons arbeitet, dann ist es möglich, dass kleine </p>
+                  <p>Blätter, welche bisher drei Waggons verbraucht haben, eine größere Anzahl von Papier verlangen. Vielleicht wäre die Lösung die acht Seiten und die Beschränkung auf den Durchschnitt der Auflage während der letzten drei </p>
+                  <p>Monate. <hi rend="#s">Mit dieser Ergänzung</hi> -. Gegen den Punkt 3 habe ich das Bedenken: Auch in dieser Fassung ist diesen Blättern eine weitere Vergrößerung gestattet. Es wird nicht von der Seitenzahl gesprochen, sie können sich </p>
+                  <p>alle bis zu acht Waggons geben lassen. Hier wäre die Beschränkung auf einen Prozent[satz], 75 % der letzten [...], am Platz. Dann meine ich, dass in Punkt 4 ausdrücklich gesagt werden soll, </p>
+                  <p><pb facs="krp-0176_s02-0008"/>dass neue Zeitungen nicht beliefert werden. Die Befürchtung, dass etwa wir nicht die Möglichkeit hätten, neue Parteizeitungen zu gründen, diese Befürchtung braucht nicht gehegt zu werden. </p>
+                  <p>Wir brauchen in der Zeit auch keine neuen Parteizeitungen. Was die Vollzugsanweisung und den Vorschlag des Hauptausschusses betrifft, so meine ich, dass vor allem erst im Mai - [der 1. Mai] von dieser Verordnung </p>
+                  <p>ausgegangen - [ausgenommen] werden soll. Da haben wir und alle gleichermaßen Interesse, dass dieser Tag nicht in die Verordnung einbezogen wird. Dagegen, wenn also es sich handelt um die weitere Fortsetzung, </p>
+                  <p>so wäre ich dafür, dass vorläufig diesem Wunsch Rechnung getragen wird und diese Beschränkung [noch] eine Zeit lang bleibt, sei es auch nur als - dass wir eine gewisse Reserve an Zeitungspapier aufheben können. </p>
+                  <p>Der Kabinettsrat kann dann, wenn wirklich die Kohlenzuweisungen regelmäßig erfolgen, die Sache am 14. Mai neu verhandeln und entscheiden, was weiter geschehen soll.</p>
+                  <p>(Renner: Lieber [das Papier] verkaufen und Valuten machen und [die Beschränkung] nur aufheben, wenn wir keinen Absatz finden). [Ellenbogen]: Frage [an] den Präsidenten, welcher Schutz der Arbeiter und Beamten der Zeitungen gemeint ist? Es besteht ein </p>
+                  <p>Gesetz, dass 10 % des Standes eingestellt werden müssen. Ist daran gedacht, dass über diesen Prozentsatz hinausgegangen werden soll oder welche anderen Schutzvorkehrungen sind da gemeint?</p>
+                  <p>Seitz: Bekanntlich sind auch gewisse Unterstützungen ausgezahlt worden bei der Stilllegung von Betrieben unter Heranziehung der Unternehmen und des Staates, 66 % des Lohnes. An etwas </p>
+                  <p>Ähnliches denkt man hier. Man sagte sich, das ist weit billiger wenn wir Papier an das Ausland verkaufen können als wenn man das Papier hier unnütz verwendet. Mit den Inseratenblättern geschieht </p>
+                  <p>eine ungeheure Papierverschwendung. Die Entschädigung der Arbeiter ist möglich. Die -.</p>
+                  <p>Zerdik: </p>
+                  <p>Nur mit Rücksicht auf Arbeiter und Beamte habe ich gemeint, dass man die Beschränkungen nicht aufrecht erhalten soll, wenn es nicht nötig ist. Man müsste eine Berechnung </p>
+                  <p>anstellen, was uns dieser Sache kostet gegenüber dem, was wir im Export verdienen. Dann bin ich gegen eine Belastung des Mehrverbrauchs über acht Seiten, weil dann der Papierpreis 14 Kronen ist </p>
+                  <p>und das könnte keine Zeitung aushalten. [Bei der Bestimmung] über den Besitzerwechsel ist das Interesse der Angestellten im Auge zu behalten. Eine Zeitung, welche den vollen Preis zahlen muss, kann nicht mehr erscheinen. </p>
+                  <p>[Was] das Verhältnis acht Waggons zu 5 Kronen, dann drei Waggons zu 8 Kronen [anlangt], so ist zu bedenken, [dass eine Zeitung], welche mehr Auflage hat, auch rentabler ist und dieses Verhältnis auch ertragen kann.</p>
+                  <p>Bei den neuen Zeitungen bin ich dafür, sie nicht mit Papier versorgen. Ausnahmen müssten dem Kabinettsrat überlassen werden, bei Blättern der führenden politischen Parteien. Dass die Exportauflage aufrecht erhalten </p>
+                  <p>werden soll bis zur Hereinbringung der Auslagen, gebe ich zu. Zur Sicherung der Exportauflage beantrage ich, dass unter dem Begriff 'alle Arten von Papier', auch Papier- und Pappwaren </p>
+                  <p>begriffen [werden] und die nähere Durchführung dem Staatsamt für Handel vorbehalten bleibt.</p>
+                  <p>Renner: </p>
+                  <p>Punkt 1: festhalten.</p>
+                  <p>Reisch: </p>
+                  <p><hi rend="#s">Vermittlung</hi> - [Ich] halte meinen Antrag auf die ganze Auflage oder wenigstens [als] Vermittlungsantrag auf die halbe Exportauflage aufrecht. Sie bekommt das Papier noch immer </p>
+                  <p>billiger und zahlt trotz Exportauflage weniger als den Marktpreis.</p>
+                  <p>Seitz: </p>
+                  <p>In dem Augenblick, wo die Beschränkung auf die Seitenzahl fällt, natürlich eine sehr schwere Arbeiterfrage auftauchen wird. Dann wird das Tagblatt solches Papier kaufen und kann wieder </p>
+                  <p>drucken und Arbeiter beschäftigen und die Unterstützung hört auf. Also glaube ich schon, dass man gewisse Möglichkeiten offen lassen muss. Der Punkt 1 wäre nur für die Dauer der Beschränkung auf eine Seitenanzahl </p>
+                  <p>haltbar. Aber wenn die Beschränkung aufhört, kann das Kabinett entscheiden, dass die Zeitungen das Plus über acht Seiten teurer zahlen müssen, ob mit der reinen Exportauflage oder halbiert.</p>
+                  <p>Renner: </p>
+                  <p>Die überwiegende Anschauung [bezüglich Punkt 1 ist] nach dem Antrag Zerdik.</p>
+                  <p><pb facs="krp-0176_s02-0009"/>Punkt 2: Wie ist das Format der Gewerkschaftsblätter? - Vier und zwei Seiten.</p>
+                  <p><hi rend="#s">Die Auszahlung der Begünstigung erstreckt sich nur auf einen Verbrauch bis zum Umfang von acht Seiten, wobei als Seitenformat das Format der N. F. Pr. [Neuen Freien Presse] </hi></p>
+                  <p><hi rend="#s">angenommen wird (63 x 95). </hi></p>
+                  <p>Die Auszahlung der Begünstigung erstreckt sich nur auf einen Verbrauch bis zum Ausmaß - Gewicht von 30 Gramm pro Exemplar </p>
+                  <p>multipliziert mit der jeweiligen Auflage. Rücksichtlich der bestehenden Zeitungen, sofern sie nicht den Besitzer gewechselt haben oder noch wechseln werden, wird die </p>
+                  <p>Differenz im Papierpreis von 5 Kronen auf 11 Kronen für die Monate Mai und Juni gewährt.</p>
+                  <p>Punkt 3: Die - [Den] selbständigen Mittags- und Abendblätter wird ein begünstigter Papierverbrauch in dem Ausmaß eines Viertels dessen gewährt, was den selbständigen Zeitungen zukommt.</p>
+                  <p>Punkt 6: Bleibt aufrecht.</p>
+                  <p>Punkt 7: Künftige Kompensationsverträge, gleichgültig ob sie von der Regierung oder von Privaten geschlossen werden, sind von der Abgabe nicht befreit. Doch </p>
+                  <p>werden die Staatssekretäre für Handel, Volksernährung und für Finanzen ermächtigt, zur Wahrung volkswirtschaftlicher Interessen auf die Abgabeneinnahmen einvernehmlich zu verzichten.</p>
+                  <p>Punkt 8: Soweit es tunlich erscheint, sind auch Papier- und Pappwaren mit der Exportabgabe zu belasten. Die nähere Durchführung bleibt dem </p>
+                  <p>Staatssekretär für Handel überlassen.</p>
+                  <p><hi rend="#s">Wunsch des Hauptausschusses: -.</hi></p>
+                  <p>9.) Die Exportabgabe ist solange auf alle bezeichneten Artikel einzuheben, bis die aus dem Staatsschatz geleisteten Beträge </p>
+                  <p>für die Begünstigung aus dem Erträgnis der Abgabe refundiert erscheinen.</p>
+                  <p>10.) <hi rend="#s">Die Verordnungen werden vom</hi> - Am 1. Mai darf mir Rücksicht auf den Ausfall des 2. Mai – </p>
+                  <p>Im Monat Mai bleibt der Papierverbrauch in gleicher Weise beschränkt, <hi rend="#s">doch wird für den 1. Mai das Erscheinen von Doppelnummern gestattet </hi>– </p>
+                  <p>doch kann mit Rücksicht auf das Ausfallen der Nummer am 2. Mai eine Doppelnummer herausgegeben [werden], damit auch die Begünstigung für </p>
+                  <p><hi rend="#s">16 Seiten</hi> - das doppelte festgelegte Quantum gegeben erscheint. </p>
+                  <p>[<hi rend="#i">Am Rand:</hi>] Der Papierverbrauch wird einschließlich bis 15. Mai </p>
+                  <p><hi rend="#s">aufrecht erhalten</hi> - eingeschränkt.</p>
+                  <p>11.) <hi rend="#s">Neue Zeitungen können kein Rotationspapier erhalten, Ausnahmen hiervon bleiben dem Kabinettsrat vorbehalten</hi>. </p>
+                  <p>Bis auf weiteres und vorbehaltlich konkreter Beschlüsse des Kabinettsrates wird Rotationspapier an neue Zeitungen nicht abgegeben.</p>
+                  <p>Hanusch: </p>
+                  <p>Es entsteht die Frage, dass eine Reihe von Leuten entlassen wird. Das Opfer muss man auf sich nehmen. Bei solchen Entlassungen bekamen die Leute 66 %, </p>
+                  <p>[das] bekommen [sie] bis zum Höchstmaß von 22 Kronen, der Arbeiter bekam höchstes 22 Kronen. Hier handelt es sich um eine ganze Industriegruppe, es werden Leute mit </p>
+                  <p>80-100 Kronen brotlos werden. Das Staatsamt für Finanzen hat sich geweigert, über 22 Kronen zu gehen. Ich wünsche [einen] Beschluss, dass in diesem Fall, da die Leute zu einer anderen </p>
+                  <p>Arbeit nicht zu verwenden sind, eine Ausnahme gemacht und bei ihnen jene Grundlage geschaffen wird, dass sie 66 % des Lohnes bekommen ohne Beschränkung auf ein[en] </p>
+                  <p>Verhältnissatz. Es handelt sich um eine längere Arbeitslosigkeit. Es muss vom Kabinettsrat entschieden werden, dass das Staatsamt für Finanzen bei den Verhandlungen mit [den Staatsämtern für] Handel und Justiz </p>
+                  <p>keine Schwierigkeiten macht, den Arbeitern das zu geben, was notwendig ist.</p>
+                  <p>Seitz: </p>
+                  <p>Darum komme ich nochmals auf den ursprünglichen Vorschlag zurück. Es handelt sich, da man - auf 14 Tage die Beschränkung auf die Seitenzahl aufrecht </p>
+                  <p>erhalten wird, zunächst um diese Zeit und ich hätte die ganzen Vorschriften darauf eingestellt. In dieser Zeit kann den Unternehmen zugemutet werden, die Arbeiter zu behalten auch ohne [...].</p>
+                  <p><pb facs="krp-0176_s02-0010"/>Im Laufe dieser Zeit wird sich Gelegenheit bieten, eine große Zahl von Schwierigkeiten doch noch zu erörtern und zu bereinigen. </p>
+                  <p>Es kann sein, [dass] wenn wir [eine Verlängerung] auf zwei Monate bestimmen, das Kabinett umfallen muss. Das ist leicht möglich. Das wäre dann schlimm. Es ist möglich, dass </p>
+                  <p>man vielleicht dann eine Bestimmung nach Waggons treffen kann, dass nur getrachtet werden muss, dass die Auflagenzahl ins Verhältnis gebracht werden kann </p>
+                  <p>zu den ?Ins[eraten]. Und man kann diese Schwierigkeit im Laufe der Zeit noch studieren und jetzt würde es genügen, wenn man sich bloß auf die </p>
+                  <p>Seitenzahl beschränkt. Dann braucht man nicht - die Frage der Waggons und des Gewichts nicht entscheiden und im Laufe der Zeit wird man es schriftlich entscheiden. </p>
+                  <p>Dann kann man die Arbeiterfrage mit einbeziehen. Während der ersten 14 Tage können die Unternehmer - die Arbeiter weiter zu behalten.</p>
+                  <p>Zerdik: </p>
+                  <p>Militärverpflegsmagazin in Linz.</p>
+                  <p>Reisch: </p>
+                  <p>Ermächtigung für die österreichische Gesellschaft vom Roten Kreuz, die Ziehung ihrer Lose am 1. Mai sistieren zu dürfen. Sie hat </p>
+                  <p>zur Sicherstellung ihres Losdienstes eine Kriegsanleihe erlegt, welche wir nicht anerkennen können, weil die Gesellschaft auf alle Nationalstaaten ihre Wirksamkeit </p>
+                  <p>erstreckt hat und der Losbesitz in allen Nationalstaaten verteilt ist. Die Versuche von Übereinkommen mit den National[staaten] sind gescheitert und Österreich allein hat </p>
+                  <p>im August einen Vorschuss geleistet. Wir können das nicht weiter tun und es erübrigt nichts, [als] die Verlosungen solange zu sistieren bis das Übereinkommen </p>
+                  <p>mit den Nationalstaaten zustande gekommen ist und so auf die Nationalstaaten einzuwirken.</p>
+                  <p>[Beschluss]: Die österreichische Gesellschaft vom Roten Kreuz wird ermächtigt, ihre -.</p>
+                  <p>6.</p>
+                  <p>[Ramek]: Handelsagenten.</p>
+                  <p>7.</p>
+                  <p>[Ramek]: Strafgesetz.</p>
+                  <p>8.</p>
+                  <p>[Reisch]: Landesgesetze, Wertzuwachssteuer in Kärnten.</p>
+                  <p>9.</p>
+                  <p>[Reisch]: Gebührenbefreiung für Salzburg.</p>
+                  <p>10.</p>
+                  <p>[Hanusch]: <hi rend="#s">Ersatzforderungen</hi> - Invalidenunterbringung.</p>
+                  <p>Fink: </p>
+                  <p>Warum tritt das Kuratorium nicht zusammen? Ich möchte nicht, dass wir ein Präjudiz schaffen und [man sollte] dem Kuratorium nicht vorgreifen.</p>
+                  <p>Beschlossen.</p>
+               </div>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

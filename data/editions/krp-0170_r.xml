@@ -1,0 +1,570 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href='http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:acdh="https://vocabs.acdh.oeaw.ac.at/schema#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xml:lang="de">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="a" type="main" n="0170">Kabinettsprotokoll Nr. 170 vom 13. April 1920</title>
+            <title level="m" type="main" n="01">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <title level="m" type="sub" n="">Renner III (17. Oktober 1919 – 7. Juli 1920)</title>
+            <meeting>
+               <placeName key="https://d-nb.info/gnd/4066009-6">Wien</placeName>
+               <orgName key="https://d-nb.info/gnd/5162749-8">Kabinettsrat</orgName>
+               <date when-iso="1920-04-13"/>
+            </meeting>
+            <editor>
+               <persName key="https://d-nb.info/gnd/122481836"
+                         role="hasCreator"
+                         xml:id="hwohnout">
+                  <forename>Helmut</forename>
+                  <surname>Wohnout</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</affiliation>
+               <idno type="ORCID">0000-0002-3864-9839</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/120789825"
+                         role="hasCreator"
+                         xml:id="tolechowski">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0003-3291-6876</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/131679384"
+                         role="hasCreator"
+                         xml:id="rlein">
+                  <forename>Richard</forename>
+                  <surname>Lein</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0002-7502-0503</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="aholzer">
+                  <forename>Anna</forename>
+                  <surname>Holzer</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0005-3560-3500</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="dsoelkner">
+                  <forename>Dominik</forename>
+                  <surname>Sölkner</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-9895-7212</idno>
+            </editor>
+            <editor>
+               <persName role="hasContributor" xml:id="ischotzko">
+                  <forename>Ina</forename>
+                  <surname>Schotzko</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-5210-3713</idno>
+            </editor>
+            <funder n="1">
+               <orgName key="https://d-nb.info/gnd/2054142-9" role="hasFunder">Österreichischer Wissenschaftsfonds FWF</orgName>
+               <idno type="project">PAT1495024</idno>
+               <title type="project">Die Protokolle des österreichischen Kabinettsrates 1919–1920</title>
+            </funder>
+            <respStmt>
+               <resp>Projektverantwortung</resp>
+               <orgName key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Projektleitung</resp>
+               <persName key="https://d-nb.info/gnd/120789825" role="hasPrincipalInvestigator">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+                  <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+                  <idno type="ORCID">0000-0003-3291-6876</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Nationaler Forschungspartner</resp>
+               <orgName key="https://d-nb.info/gnd/1123037736" role="hasEnabler">Austrian Centre for Digital Humanities</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Digitalisierung der gedruckten Quellen</resp>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>TEI-Datenmodellierung</resp>
+               <persName role="hasContributor" xml:id="tfruehwirth">
+                  <forename>Timo</forename>
+                  <surname>Frühwirth</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-3997-5193</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technische Supervision</resp>
+               <persName key="https://d-nb.info/gnd/1043833846"
+                         role="hasContributor"
+                         xml:id="pandorfer">
+                  <forename>Peter</forename>
+                  <surname>Andorfer</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-9575-9372</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technisches Consulting und Vorbereitung der Druckausgabe</resp>
+               <persName key="https://d-nb.info/gnd/13281899X"
+                         role="hasContributor"
+                         xml:id="skurz">
+                  <forename>Stephan</forename>
+                  <surname>Kurz</surname>
+                  <affiliation key="https://d-nb.info/gnd/1202798799">Institut für die Erforschung der Habsburgermonarchie und des Balkanraumes</affiliation>
+                  <idno type="ORCID">0000-0003-2546-2570</idno>
+               </persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher key="https://d-nb.info/gnd/1001454-8">Österreichische Akademie der Wissenschaften</publisher>
+            <date when="2028"/>
+            <availability status="free">
+               <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">Lizenziert unter CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/deed.de)</licence>
+            </availability>
+            <idno type="ISBN_Print"/>
+            <idno type="ISBN_Part_epub"/>
+            <idno type="ISBN_Digital"/>
+            <idno type="DOI"/>
+            <idno type="DOI_zenodo"/>
+            <idno type="ebook_ID"/>
+         </publicationStmt>
+         <seriesStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="m" type="main">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <respStmt>
+               <resp>Bearbeitung und Herausgeberschaft</resp>
+               <orgName key="https://d-nb.info/gnd/2024703-5">Universität Wien</orgName>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+         </seriesStmt>
+         <notesStmt>
+            <note>Diese TEI-XML-Datei ist Grundlage für eine Druckausgabe der Edition.</note>
+            <relatedItem>
+               <biblStruct>
+                  <monogr>
+                     <imprint>
+                        <pubPlace key="https://d-nb.info/gnd/4066009-6">Wien</pubPlace>
+                        <publisher key="https://d-nb.info/gnd/2068748-5">Verlag der Österreichischen Akademie der Wissenschaften</publisher>
+                        <date when="2029"/>
+                     </imprint>
+                     <extent/>
+                  </monogr>
+                  <note>
+              <idno/>
+              <ptr/>
+            </note>
+                  <citedRange/>
+               </biblStruct>
+            </relatedItem>
+         </notesStmt>
+         <sourceDesc>
+            <bibl>Quellbestand: AT-OeStA/AdR MRang MR 1Rep KRP Kabinettsratsprotokolle, 1918-1920 (Teilbestand)<ref target="https://www.archivinformationssystem.at/detail.aspx?id=5465">https://www.archivinformationssystem.at/detail.aspx?id=5465</ref>
+            </bibl>
+            <msDesc>
+               <msIdentifier>
+                  <institution key="https://d-nb.info/gnd/37748-X" role="hasOwner">AT-OeStA Österreichisches Staatsarchiv (Archiv (ÖStA))</institution>
+                  <repository key="https://d-nb.info/gnd/1601181-8">AT-OeStA/AdR Archiv der Republik, 1918- (Abteilung)</repository>
+                  <collection>AT-OeStA/AdR MRang MR 1Rep Ministerrat 1. Republik, 1918 - 1938 (Bestand)</collection>
+                  <idno>AT-OeStA_AdR-MRang-MR-1.-Rep.-KRP-170</idno>
+               </msIdentifier>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <abstract>
+            <p>
+          <!--to be generated-->
+        </p>
+         </abstract>
+      </profileDesc>
+      <encodingDesc>
+         <styleDefDecl scheme="css"/>
+         <tagsDecl>
+            <rendition xml:id="b" scheme="css">font-weight:bold;</rendition>
+            <rendition xml:id="su" scheme="css">vertical-align:super;font-size:.7em;</rendition>
+            <rendition xml:id="s" scheme="css">text-decoration:line-through;</rendition>
+            <rendition xml:id="u" scheme="css">text-decoration:underline;</rendition>
+            <rendition xml:id="ow" scheme="css">text-decoration:line-through;text-decoration-style:double;</rendition>
+            <rendition xml:id="r" scheme="css">display:block;text-align:right;</rendition>
+            <rendition xml:id="letterspaced" scheme="css">letter-spacing:0.15em;</rendition>
+            <rendition xml:id="i" scheme="css">font-style:italic;</rendition>
+         </tagsDecl>
+         <editorialDecl>
+            <hyphenation>
+               <p>
+            <!--to be added-->
+          </p>
+            </hyphenation>
+            <correction>
+               <p>
+            <!--to be added-->
+          </p>
+            </correction>
+            <normalization>
+               <p>
+            <!--to be added-->
+          </p>
+            </normalization>
+            <punctuation>
+               <p>
+            <!--to be added-->
+          </p>
+            </punctuation>
+            <stdVals>
+               <p>
+            <!--to be added-->
+          </p>
+            </stdVals>
+            <p>
+          <!--to be added-->
+        </p>
+         </editorialDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#tfruehwirth" when-iso="2026-10-13">TEIGarage output upconverted with upconvert.xsl</change>
+         <change who="#tfruehwirth" when-iso="2026-10-13">TEI header populated with generate_tei_templates.py</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface/>
+   </facsimile>
+   <text>
+      <body>
+         <div xml:id="doc-krp-0170.xml">
+            <head type="dokument">
+               <title type="num">170.<note type="footnote">Das Protokoll trägt den Vermerk <hi rend="#i">Vertraulich!</hi></note>
+               </title>
+               <title type="desc">
+                  <pb facs="krp-0170_r-0001"/>[Dienstag] 1920-04-13</title>
+            </head>
+            <div type="dokumentkopf">
+               <div type="vorsitz">
+                  <head>Vorsitz:</head>
+                  <p>Fink</p>
+               </div>
+               <div type="anwesend">
+                  <head>Anwesend:</head>
+                  <p>Deutsch, Eisler, Eldersch, Hanusch, Mayr, Miklas, Ramek, Reisch, Stöckler, Waiss</p>
+               </div>
+               <div type="zugezogen">
+                  <head>Zugezogen:</head>
+                  <p>Fischer, Garzarolli, Zedtwitz</p>
+               </div>
+               <div type="schriftfuehrer">
+                  <head>Schriftführer:</head>
+                  <p>unbekannt</p>
+               </div>
+               <div type="dauer">
+                  <head>Dauer:</head>
+                  <p>15.30–17.30 Uhr</p>
+               </div>
+            </div>
+            <div type="komponenten">
+               <p>Reinschrift, Beilagen, Konzept, stenographische Mitschrift, Entwurf der Tagesordnung</p>
+            </div>
+            <div type="beilagen">
+               <head>Beilagen:</head>
+               <list>
+                  <item><ref target="#krp-0170_top01">Zu TOP 1</ref>: <ref target="#krp-0170_b01">Stellungnahme des „Zentralverbands der österreichischen Staatsbeamtenvereine“ gegen die Stellungnahme des Kabinetts zu den Forderungen einzelner Staatsbeamtenkategorien</ref></item>
+                  <item><ref target="#krp-0170_top02">Zu TOP 2</ref>: <ref target="#krp-0170_b02">Referat des Staatsamtes für soziale Verwaltung Zl. 10.700/1920 über den Gesetzesentwurf zur Gewährung außerordentlicher Teuerungszulagen für Renten aufgrund des Invalidenentschädigungsgesetzes mit Begründung</ref></item>
+                  <item><ref target="#krp-0170_top04">Zu TOP 4</ref>: <ref target="#krp-0170_b03">Vortrag des Staatsamtes für Heereswesen Zl. 3120/1920 über die Erstreckung des Anmeldetermines für Wehrmänner bis zum 30. April 1920</ref></item>
+                  <item><ref target="#krp-0170_top05">Zu TOP 5</ref>: <ref target="#krp-0170_b04">Notiz über die Frage der Kündigung von Vertragsangestellten des Heeres, die aus Nachfolgestaaten stammen</ref></item>
+                  <item><ref target="#krp-0170_top06">Zu TOP 6</ref>: <ref target="#krp-0170_b05">Auszug für den Vortrag des Staatsamtes für Inneres und Unterricht über den Gesetzesentwurf der Kärntner Landesversammlung zur Abänderung einiger Bestimmungen der Gemeindeordnung für Klagenfurt</ref></item>
+                  <item><ref target="#krp-0170_top07">Zu TOP 7</ref>: <ref target="#krp-0170_b06">Vortrag des Staatsamtes für Inneres und Unterricht Zl. 12.904/1920 über Gesetzesbeschlüsse des Niederösterreichischen Landtages zur Teilung mehrerer Gemeinden</ref></item>
+                  <item><ref target="#krp-0170_top08">Zu TOP 8</ref>: <ref target="#krp-0170_b07">Vortrag des Staatsamtes für Verkehrswesen Zl. 10.966 über die Erklärung der Elektrifizierung der Arlbergbahn als begünstigten Bau</ref></item>
+                  <item><ref target="#krp-0170_top09">Zu TOP 9</ref>: <ref target="#krp-0170_b08">Vortrag des Staatsamtes für Finanzen über den Gesetzesbeschluss der Niederösterreichischen Landesversammlung über die Einhebung einer Gemeindeabgabe vom Wertzuwachs von Liegenschaften im Gebiet der Stadt Wiener Neustadt</ref></item>
+                  <item><ref target="#krp-0170_top10">Zu TOP 10</ref>: <ref target="#krp-0170_b09">Vorlage des Staatsamtes für Finanzen über die sofortige Inkraftsetzung der Vollzugsanweisung zum Mobiliarverteilungsausschuss</ref></item>
+               </list>
+            </div>
+            <div type="protokoll">
+               <pb facs="krp-0170_r-0002"/>
+               <div type="top" xml:id="krp-0170_top01">
+                  <head>
+                     <label>
+                        <num n="1">1.</num>
+                        <seg>Protest des „Zentralverbandes der österreichischen Staatsangestelltenvereinigungen“ und der „Gewerkschaft der Akademiker in öffentlichen Diensten“ gegen die Stellungnahme des Kabinetts zu den Forderungen einzelner Staatsangestelltenkategorien.</seg>
+                     </label>
+                  </head>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> teilt mit, dass die in der „Arbeitsgemeinschaft“ vereinigten beiden Organisationen, der „Zentralverband der Staatsangestelltenvereinigungen“ und die „Gewerkschaft der Akademiker in öffentlichen Diensten“, sich in einer <pb facs="krp-0170_r-0003"/>an die Staatskanzlei gerichteten Eingabe gegen die am 25. März d. J. veröffentlichte Stellungnahme des Kabinetts zu den Forderungen einzelner Staatsangestelltenkategorien gewendet haben. Die genannten Organisationen erblicken in dieser Veröffentlichung „insoferne einen unfreundlichen Akt gegenüber den Staatsbediensteten, als minder eingeweihte Kreise der Bevölkerung dadurch zu irrigen Auffassungen über die Bestrebungen der Staatsangestellten verleitet werden können, wodurch das notwendige gute Einvernehmen zwischen Volk und Verwaltung unter Umständen gefährdet werden könnte. Aus diesem Grunde können sie diesen Kabinettsratsbeschluss nicht zur Kenntnis nehmen.“</p>
+                  <p>Der Kabinettsrat nimmt diese Mitteilung zur Kenntnis.</p>
+               </div>
+               <div type="top" xml:id="krp-0170_top02">
+                  <head>
+                     <label>
+                        <num n="2">2.</num>
+                        <seg>Gesetzentwurf über die Gewährung von erhöhten Teuerungszulagen zu den aufgrund des Invalidenentschädigungsgesetzes gebührenden Renten.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Hanusch</hi> führt auf, dass der vom Kabinettsrate in seiner Sitzung am 18. Februar d. J. genehmigte Entwurf eines Gesetzes über die Gewährung von außerordentlichen Teuerungszuschüssen zu den aufgrund des Invalidenentschädigungsgesetzes gebührenden Renten vom Ausschüsse für soziale Verwaltung seinerzeit zwar unverändert angenommen, in der Nationalver<pb facs="krp-0170_r-0004"/>sammlung jedoch aufgrund der von der Invalidenschaft zwischenweilig gefassten Resolutionen, welche eine gleichmäßige Erhöhung der nach § 63 des Invalidenentschädigungsgesetzes gebührenden 50%igen Teuerungszulage zu den Renten auf 150 % verlangten, zurückgestellt und neuerdings an den Ausschuss für soziale Verwaltung verwiesen worden sei.</p>
+                  <p>Um nun dem Ausschusse die für eine Reassumierung seines Beschlusses und für eine Abänderung der Regierungsvorlage erforderlichen Grundlagen bieten zu können, sei aufgrund der Ergebnisse einer im Staatsamte für soziale Verwaltung am 27. März l. J. mit den Nationalräten Allina und Hölzel sowie den Vertretern der organisierten Invalidenschaft abgehaltenen Besprechung ein neues Schema ausgearbeitet und dieses dem Entwurfe eines neuen Gesetzes zugrunde gelegt worden.</p>
+                  <p>Mit höheren Teuerungszulagen werden alle Rentenempfänger mit Ausnahme jener Kriegsbeschädigten bedacht, deren Erwerbstätigkeit um weniger als 35 vom 100 gemindert ist. Hinsichtlich der letzteren lasse sich annehmen, dass sie einer regelmäßigen Erwerbstätigkeit nachzugehen imstande sind und daher durch den Arbeitsverdienst die höheren Mittel zur Bestreitung des gesteigerten <pb facs="krp-0170_r-0005"/>Lebensunterhaltes erhalten können. Konsequenterweise wären auch die erwerbsfähigen Witwen auszunehmen gewesen. Hievon sei jedoch abgesehen worden, weil die Witwenrente an sich gering bemessen sei.</p>
+                  <p>Bei den Invalidenrenten sehe der Entwurf eine prozentuelle Steigerung der Teuerungszulagen entsprechend dem fortschreitenden Grade der Minderung der Erwerbsfähigkeit derart vor, dass die Rente nunmehr in der Stufe der Invalidität von 55–65 % schon die doppelte, in der Stufe der Invalidität von 65–75 % die zweieinhalbfache und bei vollkommener Invalidität die dreifache Höhe erreicht. Der Durchschnitt durch die vorgeschlagenen Ansätze ergebe eine Erhöhung der Invalidenrenten um 108 %.</p>
+                  <p>Zu den Hinterbliebenenrenten trete nach dem Entwurf einheitlich eine Erhöhung der bisherigen Teuerungszulagen von 50 % auf 100 % ein, sodass die Hinterbliebenenrenten nunmehr in doppelter Höhe zur Auszahlung kämen. Eine besondere Berücksichtigung erfahren die erwerbsunfähigen und über 55 Jahre alten Witwen, denen nunmehr eine Teuerungszulage von 150 % aus dem Grunde zukommen soll, weil die Witwenrente normalmäßig nur die Hälfte der Invalidenvollrente beträgt.</p>
+                  <p><pb facs="krp-0170_r-0006"/>Der Mehraufwand gegenüber der bisherigen Belastung an Teuerungszulagen belaufe sich im Ganzen auf ungefähr 122 Millionen K.</p>
+                  <p>Wenn die beantragten Erhöhungen auch keineswegs den seitens der Interessentengruppen wiederholt vorgebrachten Forderungen entsprechen, so stellen sich die Vorschläge mit Rücksicht auf die finanzielle Lage des Staates dennoch als das Höchstausmaß des zu Gewährenden dar.</p>
+                  <p>Der sprechende Staatssekretär stellt den Antrag, der Kabinettsrat wolle dem Entwurf die Genehmigung erteilen und den Staatssekretär für soziale Verwaltung ermächtigen, diesen Entwurf dem Ausschuss für soziale Verwaltung zur Verfügung zu stellen.</p>
+                  <p>Der Kabinettsrat beschließt im Sinne des gestellten Antrages.</p>
+               </div>
+               <div type="top" xml:id="krp-0170_top03">
+                  <head>
+                     <label>
+                        <num n="3">3.</num>
+                        <seg>Gesetzentwurf, betreffend die Gebühren der österreichischen Wehrmacht (Heeresgebührengesetz).</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Deutsch</hi> unterbreitet dem Kabinettsrate den Entwurf eines Gesetzes, betreffend die Gebühren der österreichischen Wehrmacht (Heeresgebührengesetz), und erbittet sich die Ermächtigung zur Einbringung dieser Vorlage in der Nationalversammlung.</p>
+                  <p>Unterstaatssekretär Dr. <hi rend="#letterspaced">Waiss</hi> <pb facs="krp-0170_r-0007"/>beantragt die Vertagung der Schlussfassung über diese Angelegenheit bis zur nächsten Sitzung, um vorher noch den politischen Parteien Gelegenheit zu geben, zu der Vorlage Stellung zu nehmen.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Reisch</hi> hegt Bedenken gegen die niedrigen Ansätze des Kostgeldes, da zu besorgen sei, dass es nicht möglich sein werde, hieraus die Verpflegung der Wehrmänner in natura zu bestreiten und daher binnen kurzem eine Erhöhung des Kostgeldes werde erfolgen müssen, ohne dass gleichzeitig eine Restringierung der übrigen Bezüge werde eintreten können. Er beantrage daher, dem Abs. 4 des § 2 des Entwurfes folgende Fassung zu geben:</p>
+                  <p>„Die Teuerungszulage (§ 5) und die gleitende Zulage (§ 6) dienen in erster Linie zur etwa erforderlichen Erhöhung des Kostgeldes. Ersparungen an Kostgeld in der Naturalwirtschaft sind Eigentum der an der Naturalverköstigung teilnehmenden Wehrmänner.“</p>
+                  <p>Weiters stelle er folgende Abänderungsanträge:</p>
+                  <list>
+                     <item n="1"><label>1.)</label> Im § 5 Abs. 2, hätte der unter lit b angeführte Satz der Teuerungszulagen für Orte der Zwischenklasse I a der Zivilstaatsangestellten richtig 192 K zu lauten.</item>
+                  </list>
+                  <p><pb facs="krp-0170_r-0008"/></p>
+                  <list>
+                     <item n="1"><label>2.)</label> § 11 und § 13 Abs. 2 hätten zu lauten:</item>
+                  </list>
+                  <p>„Die sonstigen besonderen Gebühren, dann Gebühren aus besonderen Anlässen usw., die sich aus der Eigentümlichkeit des Militärdienstes ergeben, sind durch Gesetz zu regeln.“</p>
+                  <list>
+                     <item n="1"><label>3.)</label> § 14 hätte zu lauten:</item>
+                  </list>
+                  <p>„Die Ansätze der den Wehrmännern nach §§ 2, 3 und 5 zukommenden abbaufähigen Gebühren sind bei Änderungen in den Bezügen der Zivilstaatsdienerschaft in entsprechender Weise durch die Staatsregierung zu ändern.“</p>
+                  <p>Der Kabinettsrat beschließt, die weitere Beratung über diese Angelegenheit auf die nächste Sitzung zu verschieben.</p>
+               </div>
+               <div type="top" xml:id="krp-0170_top04">
+                  <head>
+                     <label>
+                        <num n="4">4.</num>
+                        <seg>Erstreckung des Anmeldetermines für die Wehrmänner.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Deutsch</hi> teilt mit, die Landesregierung in Salzburg habe erklärt, dass infolge Verzögerungen in der Aufstellung der Heeresverwaltungsstelle der Abschluss der Anmeldungen von Zivilpersonen für die neue Wehrmacht mit 15. April 1920 undurchführbar sei und frühestens mit 30. April 1920 anzusetzen wäre.</p>
+                  <p>Ähnliche Schwierigkeiten ergeben sich in Steiermark, Tirol und Vorarlberg. </p>
+                  <p><pb facs="krp-0170_r-0009"/>Das Staatsamt für Heereswesen sehe sich demnach veranlasst, aus zwingenden administrativ-technischen Gründen die Erstreckung des Anmeldetermines von Zivilpersonen für die neue Wehrmacht bis zum 30. April 1920 zu beantragen.</p>
+                  <p>Als Termin für den Austritt der mit erhöhtem Kündigungsgelde ausscheidenden Volkswehrmänner werde der 30. April 1920 beibehalten.</p>
+                  <p>Volkswehrmänner, die sich für die neue Wehrmacht melden, erhalten das erhöhte Kündigungsgeld auch nach dem 30. April ausbezahlt, wenn sie in die neue Wehrmacht nicht aufgenommen werden; nach erfolgter Verständigung durch die Heeresverwaltungsstelle sind sie sofort auszuscheiden.</p>
+                  <p>Der Kabinettsrat erhebt den gestellten Antrag zum Beschluss.</p>
+               </div>
+               <div type="top" xml:id="krp-0170_top05">
+                  <head>
+                     <label>
+                        <num n="5">5.</num>
+                        <seg>Gebührenbehandlung von bei militärischen Stellen beschäftigten Vertragsangestellten, die nicht in einer österreichischen Gemeinde heimatberechtigt sind.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. Deutsch erinnert daran, dass ihn der Kabinettsrat in seiner Sitzung am 26. März d. J. ermächtigt habe, jene aus den Nachfolgestaaten stammenden Berufsmilitärpersonen, welche bereits im Dienste der deutschösterreichischen Wehrmacht stehen und sich bewährt haben, in nicht offizieller Form zu verständigen, dass es ihnen frei stehe, die Erklärung <pb facs="krp-0170_r-0010"/>ihrer Option für Österreich schon jetzt mit dem Begehren einzureichen, sie sofort am Tage der Ratifikation des Staatsvertrages von St. Germain in Wirksamkeit treten zu lassen. Der sprechende Staatssekretär glaube, dass man den gleichen Vorgang auch bei jenen bei militärischen Stellen noch beschäftigten Vertragsangestellten, die sich zwar um die Verleihung des Heimatsrechtes in einer österreichischen Gemeinde beworben haben, deren Aufnahme in den Heimatverband jedoch infolge des Gesetzes vom 17. Oktober 1919, StGBl. Nr. 481, nicht mehr erfolgen könnte, beobachten solle.</p>
+                  <p>Nach einer kurzen Debatte, an welcher sich die Staatssekretäre Dr. <hi rend="#letterspaced">Reisch</hi>, Dr. <hi rend="#letterspaced">Mayr</hi> und Unterstaatssekretär <hi rend="#letterspaced">Miklas</hi> beteiligten, ermächtigt der Kabinettsrat den Staatssekretär für Heer[es]wesen, diejenigen Vertragsangestellten, welche die Staatsbürgerschaftserklärung für Österreich gemäß dem Gesetz vom 5. Dezember 1918, StGBl. Nr. 91, abgegeben haben, deren Ansuchen um Aufnahme in den Heimatverband einer österreichischen Gemeinde aber infolge des Inkrafttretens des Gesetzes vom 17. Oktober 1919, StGBl. Nr. 481, nicht willfahrt werden konnte, in ihrem jetzigen Dienste zu belassen <pb facs="krp-0170_r-0011"/>und ihnen rückwirkend vom 1. November 1919 die den Vertragsangestellten neuösterreichischer Staatsbürgerschaft zukommenden Gebühren auszubezahlen, soferne sie in ihrer Dienstleistung besonders qualifiziert sind und weiterhin benötigt werden und wenn sie die Erklärung abgeben, dass sie nach dem Inkrafttreten des Staatsvertrages von St. Germain für die österreichische Staatsbürgerschaft optieren werden.</p>
+               </div>
+               <div type="top" xml:id="krp-0170_top06">
+                  <head>
+                     <label>
+                        <num n="6">6.</num>
+                        <seg>Gesetzesbeschluss der Landesversammlung in Kärnten, womit einige Bestimmungen der Gemeindeordnung für die Landeshauptstadt Klagenfurt abgeändert werden.</seg>
+                     </label>
+                  </head>
+                  <p>Nach einer Mitteilung des Staatssekretärs <hi rend="#letterspaced">Eldersch</hi> hat die Landesversammlung in Kärnten einen Gesetzesbeschluss gefasst, womit einige Bestimmungen der Gemeindeordnung für die Landeshauptstadt Klagenfurt abgeändert werden.</p>
+                  <p>Vom finanzpolitischen Standpunkte seien die Bestimmungen der §§ 59, 60 und 61 des Entwurfes äußerst bedenklich.</p>
+                  <p>Nach § 59 können einzelne Kategorien von direkten Steuern mit verschiedenen Umlageprozenten, und zwar in jeder beliebigen Höhe belegt werden, ohne dass der Staatsverwaltung Gelegenheit zur Stellung hiegegen eingeräumt werde. Die ausschließliche Übertragung der Genehmigungskompetenz an den Landesrat erscheine nur für jene Fälle zulässig, in denen es sich um Zuschläge handle, <pb facs="krp-0170_r-0012"/>die zu den einzelnen Kategorien der direkten Steuern mit einem gleichen Prozentsatz eingehoben werden. Hingegen müsste die Einhebung von differenzierten Zuschlägen zu den direkten Steuern einem Landesgesetz vorbehalten bleiben.</p>
+                  <p>Die Bestimmungen der §§ 60 und 61 ermächtigen den Landesrat, bestehende Auflagen und Abgaben, die nicht in die Gattung der Steuerzuschläge gehören, sowie dermalen schon bestehende Taxen und Gebühren des Landesrates zu erhöhen.</p>
+                  <p>Auch gegen diese Bestimmungen wäre Stellung zu nehmen, da sich die Staatsregierung eine Einflussnahme nicht bloß auf die Art, sondern auch auf das Ausmaß der Abgaben bzw. Taxen vorbehalten müsse.</p>
+                  <p>Das Staatsamt für Inneres und Unterricht habe im Einvernehmen mit dem Staatsamte für Finanzen gegen den vorliegenden Gesetzentwurf, und zwar mit Rücksicht auf die Dringlichkeit der Angelegenheit – die vierzehntägige Frist des Art. 14 des Gesetzes über die Volksvertretung endet bereits am 14. April – vor Einholung eines Beschlusses der Staatsregierung Vorstellung erhoben. Der sprechende Staatssekretär erbitte sich nunmehr die nachträgliche Genehmigung zu diesem Vorgehen.</p>
+                  <p>Der Kabinettsrat erteilt die erbetene nachträgliche Genehmigung.</p>
+                  <p><pb facs="krp-0170_r-0013"/></p>
+               </div>
+               <div type="top" xml:id="krp-0170_top07">
+                  <head>
+                     <label>
+                        <num n="7">7.</num>
+                        <seg>Gesetzesbeschlüsse des Niederösterreichischen Landtages, betreffend die Teilung mehrerer Gemeinden.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Eldersch</hi> teilt mit, dass der Niederösterreichische Landtag in seiner Sitzung am 11. März 1920 Gesetzesbeschlüsse, betreffend die Teilung der Gemeinden Nödersdorf, Matzelsdorf, Sallapulka, Pernegg, Thumritz, Rodingersdorf, Klein-Burgstall, Hippersdorf, Goggitsch, Heinreichs, Lauterbach, Lembach, Hagenberg, Mautern, Ullrichs, Reitzenschlag und Niederleis gefasst habe.</p>
+                  <p>Durch die Teilung der ersterwähnten neun Gemeinden würden Ortsgemeinden geschaffen, die weniger als 100 Einwohner zählen würden und deren Vorschreibung an umlagepflichtigen direkten Staatssteuern kaum 1.000 K erreichen würde. Die Schaffung derartiger Zwerggemeinden sei verwaltungspolitisch äußerst unzweckmäßig. Das Gemeindevermögen und die Gemeindeeinkünfte werden zersplittert und an Stelle wirtschaftlich leistungsfähiger Gebilde entstünden Verwaltungskörper, die, wie die Erfahrung lehre, in materieller und personeller Hinsicht nicht in der Lage seien, den wachsenden Anforderungen auf dem Gebiete des selbständigen wie des übertragenen Wirkungskreises gerecht zu werden.</p>
+                  <p>Ganz eigentümliche Verhältnisse <pb facs="krp-0170_r-0014"/>müssten sich in solchen Gemeinden insbesondere bei der Durchführung der Gemeindewahlen ergeben. Nach § 20 der Gemeindewahlordnung müsse jeder Wahlvorschlag von 20 Wählern unterschrieben sein und die Namen von mindestens zehn Bewerbern um Gemeinderatsmandate enthalten. Nun habe die Zahl der Wahlberechtigten bei den Wahlen zur Konstituierenden Nationalversammlung durchschnittlich 50–60 % der Einwohnerzahl betragen. In Gemeinden mit 60–70 Einwohnern und 30–40 Wählern könnte daher überhaupt nur ein Wahlvorschlag mit 20 Unterschriften erstattet werden; und auch in Gemeinden mit etwa 100 Einwohnern wären Minoritäten von etwa einem Drittel der Wählerschaft nicht in der Lage, die nötige Zahl von Unterschriften für einen zweiten Wahlvorschlag aufzubringen. Damit aber werde das Prinzip der Minoritätenvertretung, auf dem die Gemeindewahlordnung aufgebaut sei, für diese Gemeinden gegenstandslos.</p>
+                  <p>Ähnliche – wenn auch nicht so krasse – Verhältnisse würden sich in den Fällen der Gemeinden Heinreichs, Lauterbach, Lembach, Hagenberg, Mautern, Ullrichs, Reitzenschlag und Niederleis ergeben, gegen deren Teilung sich die mit den örtlichen Verhältnissen und den <pb facs="krp-0170_r-0015"/>Bedürfnissen der Bevölkerung und der Lokalverwaltung vertrauten Bezirksbehörden selbst ausgesprochen haben.</p>
+                  <p>Gegenüber den dargelegten Bedenken müssen die für die Teilung geltend gemachten Gründe, die sich meist auf Streitigkeiten zwischen den Bewohnern der einzelnen Gemeindeteile und auf das Bestreben einer Minorität nach größerem Einflusse auf die Verwaltung zurückführen lassen, nach Ansicht des Staatsamtes für Inneres und Unterricht zurücktreten, da das dauernde Interesse der öffentlichen Verwaltung nicht Forderungen des Tages geopfert werden soll, die oft nur vorübergehenden, lokalen Erscheinungen und Stimmungen entspringen. Dabei dürfe der Umstand nicht in die Waagschale fallen, dass es bereits einzelne Gemeinden gebe, die nach Einwohnerzahl und Steuerleistung nicht besser ausgestattet seien, denn es könne nicht die Aufgabe der Gesetzgebung sein, bei der Ausgestaltung der Gemeindeverwaltung sich die ungünstigsten Verhältnisse zum Vorbilde zu nehmen und in zu weitgehender Auslegung des Prinzipes der Selbstverwaltung Gemeinden zu schaffen, die der Voraussetzung einer gedeihlichen Verwaltung ermangeln.</p>
+                  <p>Das Staatsamt für Inneres und Un<pb facs="krp-0170_r-0016"/>terricht habe deshalb gegen die erwähnten Gesetzentwürfe, und zwar mit Rücksicht auf die Dringlichkeit der Angelegenheit – die vierzehntägige Frist des Art. 14 des Gesetzes über die Volksvertretung endet bereits am 14. April 1920 – vor Einholung eines Beschlusses der Staatsregierung Vorstellung erhoben.</p>
+                  <p>Nach einer kurzen Debatte erteilt der Kabinettsrat über Antrag des sprechenden Staatssekretärs hiezu die nachträgliche Genehmigung.</p>
+               </div>
+               <div type="top" xml:id="krp-0170_top08">
+                  <head>
+                     <label>
+                        <num n="8">8.</num>
+                        <seg>Elektrisierung der Arlbergbahn; Erklärung als begünstigter Bau.</seg>
+                     </label>
+                  </head>
+                  <p>Sektionschef Ing. <hi rend="#letterspaced">Fischer</hi> führt aus, dass es im öffentlichen Interesse liege, die Elektrisierung der Staatsbahnstrecke Innsbruck – Landeck und Landeck – Bludenz (Arlbergbahn) möglichst zu beschleunigen und die Arbeiten ehestens zum Abschluss zu bringen. Diese wichtigen gemeinnützigen Zwecken dienende Herstellung sei unter den durch den Krieg hervorgerufenen außerordentlichen Verhältnissen im öffentlichen Interesse dringlich.</p>
+                  <p>Das Staatsamt für Verkehrswesen beantrage daher, die Herstellung der elektrischen Ausrüstung der Arlbergbahn von Innsbruck bis Bludenz und aller dazugehörigen Leitungsanlagen, ferner <pb facs="krp-0170_r-0017"/>der Unterstationen und die Errichtung der Zugförderungsanlage mit angegliederter Betriebswerkstätte in Innsbruck-Westbahnhof als begünstigte Bauten im Sinne der Kaiserlichen Verordnung vom 16. Oktober 1914, RGBl. Nr. 284 zu erklären.</p>
+                  <p>Der Kabinettsrat beschließt in diesem Sinne.</p>
+               </div>
+               <div type="top" xml:id="krp-0170_top09">
+                  <head>
+                     <label>
+                        <num n="9">9.</num>
+                        <seg>Gesetzesbeschluss des Niederösterreichischen Landtages, betreffend die Einhebung einer Gemeindeabgabe vom Wertzuwachs von Liegenschaften im Gebiete der Stadt Wiener Neustadt.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Reisch</hi> weist darauf hin, dass die Wertzuwachsabgabe als Landes- und Gemeindeabgabe in allen Ländern mit Ausnahme von Niederösterreich eingeführt sei. In diesem Lande bestehe sie bisher lediglich in Wien als Gemeindeabgabe. Nunmehr beabsichtige der Niederösterreichische Landtag mittels eines am 11. März d. J. gefassten Gesetzesbeschlusses ihre Einführung auch in Wiener Neustadt als Gemeindeabgabe, und zwar mit Wirksamkeit vom 1. Jänner 1920 an für die Dauer von zehn Jahren. Dieser Gesetzesbeschluss lehne sich fast wörtlich an das Gesetz vom 18. Dezember 1919, LGBl. Nr. 460, betreffend die Einhebung einer Gemeindeabgabe vom Wertzuwachs von Liegenschaften im Gebiete der Stadt Wien an, weiche aber in einigen wichtigen Beziehungen in einer bedenklich erscheinenden Form hievon ab.</p>
+                  <p><pb facs="krp-0170_r-0018"/></p>
+                  <list>
+                     <item n="1"><label>1.)</label> Bezüglich des Ausmaßes und der Bemessungsgrundlage der Abgabe. Die Abgabe werde in Wien nach dem Vorgang in den meisten anderen Ländern nach der <hi rend="#u">relativen</hi> Größe des Wertzuwachses im Verhältnisse zum Erwerbswert bemessen, was zur Folge habe, dass gleich günstige Übertragungsgeschäfte immer der relativ gleichen Belastung unterliegen, ohne Rücksicht darauf, ob es sich um große oder kleine Realitäten handle. Nach dem vorliegenden Gesetzesbeschlusse soll die Abgabe grundsätzlich von der <hi rend="#u">absoluten</hi> Größe des Wertzuwachses mit 3–20 % bemessen werden, die relative Größe des Wertzuwachses werde aber durch Berechnung eines Zuschlages von 10–200 % zu den sich so ergebenden Abgabesätzen berücksichtigt.</item>
+                  </list>
+                  <p>Dies hätte zur Folge, dass Übertragungen größerer Realitäten verhältnismäßig stärker belastet werden, als gleich günstige oder sogar noch günstigere Verkäufe kleinerer Realitäten.</p>
+                  <p>Es sei fraglich, ob die Stadtgemeinde diese verschiedene Behandlung wirtschaftlich gleich zu beurteilender Übertragungsakte wirklich im Auge gehabt habe.</p>
+                  <list>
+                     <item n="1"><label>2.)</label> Hiemit im Zusammenhang stehe ein zweites Bedenken gegen die Höhe <pb facs="krp-0170_r-0019"/>der Abgabe, die das wirtschaftlich zulässige Maximalausmaß zu überschreiten scheine. Sie erreiche, wenn der Wertzuwachs größer als 500.000 K und 500 % des Erwerbswertes ist (wenn also z. B. eine um 100.000 K erworbene Liegenschaft um mehr als 600.000 K verkauft wird) und bei einer Besitzdauer von weniger als einem Jahr <hi rend="#u">72 %.</hi> Das sei unter Berücksichtigung der großen Verschärfung der Abgabe, die sich schon aus der dauernden Geldentwertung ergebe, wohl zu weitgehend.</item>
+                     <item n="2"><label>3.)</label> Von der Erhöhung der Abgabe bei kürzerer als einjähriger Besitzdauer sollen zwar Einzelbaugewerbetreibende befreit bleiben, nicht aber das Baugewerbe betreibende Gesellschaftsfirmen. Für diese Unterscheidung liege keinerlei Anlass vor, da die gleichen Gründe für die Ausnahmsbestimmung zu Gunsten beider Arten von Baugewerbetreibenden sprechen.</item>
+                     <item n="3"><label>4.)</label> Innerhalb eines Jahres durch den gleichen Veräußerer an den gleichen oder an verschiedene Erwerber erfolgende Übertragungen sollen für die Abgabenbemessung zusammengerechnet werden. Dadurch sollen Umgehungen der Abgabe durch Zerlegung größerer in mehrere kleinere Übertragungen verhindert werden. Insoweit Übertragungen an <hi rend="#u">verschiedene</hi> Erwerber zusammenge<pb facs="krp-0170_r-0020"/>rechnet werden sollen, erscheine die Bestimmung durchaus verfehlt, da in diesen Fällen von keinem Umgehungsversuch gesprochen werden könne. Aber auch soweit die Übertragungen an den gleichen Erwerber stattfinden, stehen der Durchführung der Bestimmung technische Schwierigkeiten entgegen, da neben dem Wertzuwachs auch die Besitzdauer eine Rolle spiele, diese aber, insoferne es sich um zu verschiedenen Zeitpunkten erworbene Liegenschaften handle, doch nur für jede Teilübertragung getrennt berücksichtigt werden könne.</item>
+                     <item n="4"><label>5.)</label> Endlich erscheine die Vollzugsklausel nicht entsprechend, da es nicht angehe, den Staatsämtern, ohne sie mit dem Gesetzesvollzug zu betrauen, den Gesetzesauftrag zu erteilen, die Mitwirkung der Unterbehörden im Verordnungswege anzuordnen, wie dies in § 30 des Gesetzesbeschlusses geschehe.</item>
+                  </list>
+                  <p>Mit Rücksicht auf die vorgebrachten schwerwiegenden Bedenken stelle der sprechende Staatssekretär den Antrag, im Sinne des Art. 14 Abs. 1 des Gesetzes über die Volksvertretung vom 14. März 1919 gegen den Gesetzesbeschluss Vorstellung zu erheben und die Vornahme der Gegenzeichnung im Sinne des Art. 14 Abs. 4 des <pb facs="krp-0170_r-0021"/>angeführten Gesetzes zu verweigern.</p>
+                  <p>Der Kabinettsrat erhebt diesen Antrag zum Beschluss.</p>
+               </div>
+               <div type="top" xml:id="krp-0170_top10">
+                  <head>
+                     <label>
+                        <num n="10">10.</num>
+                        <seg>Inkraftsetzung der Vollzugsanweisung vom 30. März 1920, StGBl. Nr. 166, über den Mobiliarverteilungsausschuss.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. Reisch teilt mit, dass in der am 11. April 1920 im Staatsgesetzblatte unter Nr. 166 verlautbarten Vollzugsanweisung der Staatsregierung vom 30. März 1920 über den Mobiliarverteilungsausschuss die übliche Schlussbestimmung, dass die Vollzugsanweisung sofort in Kraft tritt, infolge eines Redaktionsversehens weggeblieben sei. Infolgedessen würde diese Vollzugsanweisung gemäß § 6 des Gesetzes vom 12. November 1918, StGBl. Nr. 7 über die Kundmachung von Gesetzen und Verordnungen durch das Staatsgesetzblatt, erst 45 Tage später, das ist am 26. Mai 1920 verbindende Kraft erlangen. Da die Aufnahme der Tätigkeit des Mobiliarverteilungsausschusses äußerst dringlich sei, erscheine die sofortige Sanierung des Fehlers geboten. Zu diesem Zwecke erbitte sich der sprechende Staatssekretär vom Kabinettsrate die Ermächtigung zur Erlassung einer sofort – und zwar spätestens am 15. April – zu verlautbarenden Vollzugsanweisung der Staatsregierung, womit die Vollzugsanweisung über den <pb facs="krp-0170_r-0022"/>Mobiliarverteilungsausschuss mit 15. April d. J. in Kraft gesetzt wird.</p>
+                  <p>Der Kabinettsrat erteilt die erbetene Ermächtigung.</p>
+                  <p/>
+               </div>
+            </div>
+            <div type="stenogramme">
+               <div n="1">
+                  <head>[KRP 170, 13. April 1920, Stenogramm Fenz]</head>
+                  <p><pb facs="krp-0170_s01-0001"/>170., 13. /IV. '20.</p>
+                  <p>[Zugezogen:] Dr. Garzarolli</p>
+                  <p>Hanusch: </p>
+                  <p>5) Teuerungszulagen für die Invalidenrenten. </p>
+                  <p>Das Staatsamt für Finanzen hat zugestimmt.</p>
+                  <p>Angenommen.</p>
+                  <p>[<hi rend="#i">Am Rand:</hi>] Über Antrag aller drei Parteien wird die </p>
+                  <p>alte Vorlage an den Ausschuss zurückverwiesen.</p>
+                  <p>Fink: Eingabe des Zentralverbandes der Staatsbeamtenvereinigungen. &lt; &gt;.</p>
+                  <p>Bei mir haben Kanzleibeamte verschiedener Ämter - bei mir vorgesprochen und ein Memorandum überreicht.</p>
+                  <p><hi rend="#s">Ramek</hi>: -.</p>
+                  <p>Zur Kenntnis.</p>
+                  <p>2. Deutsch: Bezüge der Angehörigen der neuen Wehrmacht.</p>
+                  <p>Waiß: Mit Rücksicht darauf, dass es uns nicht möglich war in der Klubsitzung -. Ersucht um Vertagung.</p>
+                  <p>Reisch: [Ich habe] gewisse Bedenken, dass das Kostgeld sehr niedrig angesetzt ist und zu besorgen ist, dass das Kost-</p>
+                  <p>geld [für] die Naturalbezüge nicht ausreichen wird und daher [eine] Erhöhung <hi rend="#s">der Bezüge verlangt werden wird</hi> - des Kostgeldes wird erfolgen müssen ohne eine Restringierung der übrigen Bezüge </p>
+                  <p>eintreten lassen zu können.</p>
+                  <p>[Ich beantrage] daher gewisse Änderungen im Interesse der Staatsfinanzen.</p>
+                  <p>§ 2, Abs. 4 wie folgt: Die Teuerungszulage und die gleitende Zulage dienen in erster Linie zur etwa erforderlichen Erhöhung </p>
+                  <p>des Kostgeldes ....</p>
+                  <p>§ 5, Abs. 2, der Satz - der Teuerungszulagensatz [hätte anstatt] 187 richtig 192 [Kronen zu lauten].</p>
+                  <p>§ 11 und 13 hätten zu lauten -.</p>
+                  <p>§ 14 Die Ansätze der Gebühren sind bei Änderungen der Bezüge der zivilen Dienerschaft sind bei Änderungen - sinngemäß zu ändern.</p>
+                  <p>Deutsch: Ich stehe auf dem Standpunkt, dass die Gesamtsumme einer Kategorie die Bezüge der entsprechenden Kategorie der Zivilangestellten </p>
+                  <p>nicht übersteigen darf.</p>
+                  <p><pb facs="krp-0170_s01-0002"/>§ 2, Absatz 4 hätte zu lauten: </p>
+                  <p>Die Teuerungszulage (§ 5) und die gleitende Zulage (§ 6) dienen in erster Linie zur etwa erforderlichen Erhöhung des </p>
+                  <p>Kostgeldes. Ersparungen an Kostgeld in der Naturalwirtschaft sind Eigentum der an der Naturalverköstigung </p>
+                  <p>teilnehmenden Wehrmänner.</p>
+                  <p>2.) Im § 5, Absatz 2 hat der unter b) angeführte Satz der Teuerungszulage für </p>
+                  <p>die Zwischenklasse Ia richtig 192 Kronen zu lauten.</p>
+                  <p>3.) § 11 und § 13, Absatz 2 haben zu lauten: </p>
+                  <p>Die sonstigen besonderen Gebühren, dann Gebühren aus besonderen Anlässen ... die sich aus der </p>
+                  <p>Eigenschaft des Militärdienstes ergeben, sind durch Gesetz zu regeln.</p>
+                  <p>4.) § 14 hätte zu lauten: </p>
+                  <p>Die Ansätze der den Wehrmännern nach § 2, 3 und 5 zukommenden abbaufähigen Gebühren </p>
+                  <p>sind bei Änderungen in den Bezügen der zivilen Staatsdienerschaft in entsprechender Weise durch die </p>
+                  <p>Staatsregierung zu ändern.</p>
+                  <p>Vertagt auf Freitag.</p>
+                  <p>Deutsch: Erstreckung des Anmeldetermins.</p>
+                  <p>Angenommen.</p>
+                  <p><pb facs="krp-0170_s01-0003"/>Deutsch: Wir haben in den beiden 1. Gebührenerlässen gesagt: Jene, welche aus der Volkswehr austreten, bekommen eine Abfertigung. </p>
+                  <p>Die in die neue Wehrmacht eintreten, bekommen dieses Geld nicht, sondern es werden ihnen 40 Kronen per Monat gutgeschrieben. </p>
+                  <p>Inzwischen ist die Werbung zu Ende und die Leute traten ein. Sie machten - [möchten] nun lieber das Guthaben ausbezahlt haben, insbesondere in </p>
+                  <p>Oberösterreich. Ich habe mit Hauser verhandelt. Er steht auf dem Standpunkt, man solle den Leuten einen Vorschuss geben, denn es </p>
+                  <p>gebührt ihnen das Geld. Aus pädagogischen Gründen möchte ich folgende Einschränkung machen: 1.) Dass der Mann nicht den </p>
+                  <p>ganzen Betrag, sondern höchstens 350 Kronen (von 500 Kronen) – [<hi rend="#i">Einschub:</hi>] 75 % des Guthabens [<hi rend="#i">Einschub Ende</hi>] als Vorschuss bekommen soll und zwar soll er darum [<hi rend="#i">Einschub:</hi>] individuell [<hi rend="#i">Einschub Ende</hi>] ansuchen müssen.</p>
+                  <p>Dr. Waiß: Die Sache hat im Klub nicht Anklang gefunden. Mit Rücksicht auf die [...] von </p>
+                  <p>jetzt bitte ich um Vertagung bis Freitag.</p>
+                  <p>Auf Freitag vertagt.</p>
+                  <p>[?Deutsch]: Wir sind dabei, die Leute für die Leiter der Heeresverwaltungsstellen zu bestellen - im Einvernehmen mit den Landesregierungen.</p>
+                  <p>Für Tirol: Es wurde uns nahegelegt, Major Feichtmeier (Sozialdemokrat) und Oberst Gasteiger (Christlichsozialer) vorzuschlagen. </p>
+                  <p>Ich habe abgelehnt und - Oberstleutnant Neuhäuser und Oberstleutnant Mittsch, zwei ganz neutrale Herren vorzuschlagen, </p>
+                  <p>zwei ausgezeichnet beschriebene und bodenständige Offiziere.</p>
+                  <p>Nun sagt das Land Tirol, es muss der Christlichsoziale werden und nicht der parteilose. </p>
+                  <p>Ich habe nun erklärt, dass ich bis zur Entscheidung dieser Frage den bisherigen Landesbefehlshaber mit der provisorischen Leitung betrauen werde. </p>
+                  <p>Die Landesregierung hat dagegen protestiert und verlangt Oberstleutnant Gasteiger.</p>
+                  <p>Ich bitte zur Kenntnis zu nehmen, dass ich provisorisch den Landesbefehlshaber betraut habe.</p>
+                  <p>Mayr: Ich würde die schwersten Bedenken tragen, gegen den Wunsch der Landesregierung irgendeinen Beschluss zu fassen mit Rücksicht auf die Stimmung im Land. </p>
+                  <p>Gasteiger ist der einzige Angehörige einer wirklich deutsch-tirolerischen Familie, während die anderen eigentlich nicht als wirkliche Tiroler angesehen werden. </p>
+                  <p>Feichtmeier ist kein Tiroler, Mittsch ist kein eigentlicher Tiroler. Das gleiche gilt auch von Neuhäuser. Wenn er nach S[...] </p>
+                  <p>zuständig ist, so ist er gewiss ein Sohn eines eingewanderten Tabakfabriksbeamten, also [aus] ?Mähren oder Böhmen.</p>
+                  <p>Waiß: Genauso liegt die Sache in Graz.</p>
+                  <p><pb facs="krp-0170_s01-0004"/>Eisler: -.</p>
+                  <p>Fink: Man soll keinen Beschluß fassen, sondern in persönlichen Kontakt treten mit den Landesregierungen.</p>
+                  <p>Deutsch: Ich werde die provisorische Verfügung auf meine Verantwortung treffen.</p>
+                  <p>Deutsch: Gebührenbehandlung der nicht in Österreich Heimatberechtigten.</p>
+                  <p>Wir haben seinerzeit beschlossen, dass diejenigen ... die Option ausüben können. </p>
+                  <p>Ich glaube, dass man dasselbe machen muss für den Rest von den Vertragsangestellten, die wir noch haben. Es handelt sich um etwa </p>
+                  <p>100 Leute.</p>
+                  <p>Das Staatsamt für Finanzen hat gesagt, dass denen gekündigt werden muss. </p>
+                  <p>Ich glaube, man muss sie ebenso behandeln wie die Offiziere. Ich kann nicht aus dem Grund der Staatsbürgerschaft jemand entlassen, </p>
+                  <p>wenn man den Offizieren die Option gestattet.</p>
+                  <p>Das Staatsamt für Finanzen stellt sich auf den Standpunkt, dass diesen Leute, welche noch keine vollen Deutschösterreicher sind, auch nicht die Gebühren zukommen wie </p>
+                  <p>den anderen. Das halte ich für eine Unmöglichkeit.</p>
+                  <p>Ich bitte um den Beschluss, dass wir von den Vertragsangestellten, die um die Heimatzuständigkeit eingeschritten sind, die Option </p>
+                  <p>verlangen können, wenn sie sich bewährt haben und wenn sie benötigt werden.</p>
+                  <p>2.) Dass solange die Leute da sind, ihnen auch die Gebühren und Bezüge ausbezahlt werden solange sie Dienst machen.</p>
+                  <p>Reisch: Das Staatsamt für Finanzen steht auf dem Standpunkt, dass bezüglich des Abbaus ein Kabinettsratsbeschluss vorliegt, der umso mehr bei den Vertragsangestellten </p>
+                  <p>Anwendung finden muss.</p>
+                  <p>Deutsch: [In Bezug auf] diejenigen Vertragsangestellten, die die Staatsbürgerschaftserklärung für Deutschösterreich abgegeben haben und deren Heimatzuständigkeit aus formalen Ursachen </p>
+                  <p>noch nicht in Deutschösterreich festgestellt werden konnte, wird der Staatssekretär für Heerwesen ermächtigt, sofern sie in ihrer Dienstleistung besonders qualifiziert sind, [sie] in dem deutschösterreichischen Dienst zu belassen; </p>
+                  <p>[sie] haben aber in diesem Fall die Erklärung abzugeben, dass sie nach der Ratifikation des Friedensvertrages für Deutschösterreich optieren werden.</p>
+                  <p>Mayr: Ich habe Bedenken, derart generelle Beschlüsse zu fassen, weil es Missstimmung bei den Pensionierten hervorrufen wird.</p>
+                  <p><pb facs="krp-0170_s01-0005"/>Miklas: Wir sind seinerzeit mit dem Gesetzesbeschluss über die Staatsbürgerschaft und mit dem Beschluss, wo die [...] gefallen ist, zu weit </p>
+                  <p>gegangen. Man hätte die Möglichkeit von Ausnahmen schaffen müssen. </p>
+                  <p>Ich bin dafür, dass wir - heute keinen generellen Beschluss zu fassen. </p>
+                  <p>Der Staatssekretär für Heerwesen soll ermächtigt werden, in jedem einzelnen Fall ... Ausnahmen zu machen.</p>
+                  <p>Deutsch: Ermächtigt, nach Maßgabe der Notwendigkeit des Dienstes.</p>
+                  <p>Angenommen.</p>
+                  <p>3. a) Eldersch: -.</p>
+                  <p>Angenommen.</p>
+                  <p>3. b) Eldersch: -.</p>
+                  <p>Hanusch: Auf diesem Gebiet soll eine ganz andere Haltung der Regierung eingenommen werden. Solchen Beschlüssen soll grundsätzlich </p>
+                  <p>die Zustimmung versagt werden. Man soll die ganze Tendenz der Teilungsversuche -.</p>
+                  <p>Mayr: -.</p>
+                  <p>Reisch: Wir haben unsere Zustimmung gegeben, gleichzeitig aber gebeten, noch drei weitere Gemeinden in diese Vorstellung einzubeziehen: </p>
+                  <p>Neudorf an der Wild, Wolfshof und Gastern, die zwar mehr als </p>
+                  <p>100 Einwohner, aber weniger als 1.000 Kronen Steuervorschreibung haben.</p>
+                  <p>Eldersch: Stimme dazu.</p>
+                  <p>Miklas: Aus taktischen Gründen man soll nachdem [es] die überwiegende Mehrheit beschlossen hat diesmal noch zustimmen, aber gleichzeitig [eine] Note an die </p>
+                  <p>Landesregierung [richten], dass künftighin nicht mehr zugestimmt würde.</p>
+                  <p><pb facs="krp-0170_s01-0006"/>Eldersch: Man wird mit den Parteien verhandeln und dann kann man ja die Vorstellung noch immer zurückziehen.</p>
+                  <p>Antrag Eldersch angenommen.</p>
+                  <p>4. Fischer: Arlberg.</p>
+                  <p>Angenommen.</p>
+                  <p>6. a) Reisch: Wertzuwachsabgabe Wr. Neustadt.</p>
+                  <p>Angenommen.</p>
+                  <p>6. b) Reisch: Vollzugsklausel.</p>
+                  <p>Angenommen.</p>
+                  <p>½ 6 Uhr.</p>
+                  <p>Freitag, 3 Uhr, wo?</p>
+               </div>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

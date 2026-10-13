@@ -1,0 +1,642 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href='http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:acdh="https://vocabs.acdh.oeaw.ac.at/schema#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xml:lang="de">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="a" type="main" n="0069">Kabinettsprotokoll Nr. 69 vom 9. Mai 1919</title>
+            <title level="m" type="main" n="01">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <title level="m" type="sub" n="">Renner II (15. März – 17. Oktober 1919)</title>
+            <meeting>
+               <placeName key="https://d-nb.info/gnd/4066009-6">Wien</placeName>
+               <orgName key="https://d-nb.info/gnd/5162749-8">Kabinettsrat</orgName>
+               <date when-iso="1919-05-09"/>
+            </meeting>
+            <editor>
+               <persName key="https://d-nb.info/gnd/122481836"
+                         role="hasCreator"
+                         xml:id="hwohnout">
+                  <forename>Helmut</forename>
+                  <surname>Wohnout</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</affiliation>
+               <idno type="ORCID">0000-0002-3864-9839</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/120789825"
+                         role="hasCreator"
+                         xml:id="tolechowski">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0003-3291-6876</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/131679384"
+                         role="hasCreator"
+                         xml:id="rlein">
+                  <forename>Richard</forename>
+                  <surname>Lein</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0002-7502-0503</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="aholzer">
+                  <forename>Anna</forename>
+                  <surname>Holzer</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0005-3560-3500</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="dsoelkner">
+                  <forename>Dominik</forename>
+                  <surname>Sölkner</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-9895-7212</idno>
+            </editor>
+            <editor>
+               <persName role="hasContributor" xml:id="ischotzko">
+                  <forename>Ina</forename>
+                  <surname>Schotzko</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-5210-3713</idno>
+            </editor>
+            <funder n="1">
+               <orgName key="https://d-nb.info/gnd/2054142-9" role="hasFunder">Österreichischer Wissenschaftsfonds FWF</orgName>
+               <idno type="project">PAT1495024</idno>
+               <title type="project">Die Protokolle des österreichischen Kabinettsrates 1919–1920</title>
+            </funder>
+            <respStmt>
+               <resp>Projektverantwortung</resp>
+               <orgName key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Projektleitung</resp>
+               <persName key="https://d-nb.info/gnd/120789825" role="hasPrincipalInvestigator">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+                  <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+                  <idno type="ORCID">0000-0003-3291-6876</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Nationaler Forschungspartner</resp>
+               <orgName key="https://d-nb.info/gnd/1123037736" role="hasEnabler">Austrian Centre for Digital Humanities</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Digitalisierung der gedruckten Quellen</resp>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>TEI-Datenmodellierung</resp>
+               <persName role="hasContributor" xml:id="tfruehwirth">
+                  <forename>Timo</forename>
+                  <surname>Frühwirth</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-3997-5193</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technische Supervision</resp>
+               <persName key="https://d-nb.info/gnd/1043833846"
+                         role="hasContributor"
+                         xml:id="pandorfer">
+                  <forename>Peter</forename>
+                  <surname>Andorfer</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-9575-9372</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technisches Consulting und Vorbereitung der Druckausgabe</resp>
+               <persName key="https://d-nb.info/gnd/13281899X"
+                         role="hasContributor"
+                         xml:id="skurz">
+                  <forename>Stephan</forename>
+                  <surname>Kurz</surname>
+                  <affiliation key="https://d-nb.info/gnd/1202798799">Institut für die Erforschung der Habsburgermonarchie und des Balkanraumes</affiliation>
+                  <idno type="ORCID">0000-0003-2546-2570</idno>
+               </persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher key="https://d-nb.info/gnd/1001454-8">Österreichische Akademie der Wissenschaften</publisher>
+            <date when="2028"/>
+            <availability status="free">
+               <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">Lizenziert unter CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/deed.de)</licence>
+            </availability>
+            <idno type="ISBN_Print"/>
+            <idno type="ISBN_Part_epub"/>
+            <idno type="ISBN_Digital"/>
+            <idno type="DOI"/>
+            <idno type="DOI_zenodo"/>
+            <idno type="ebook_ID"/>
+         </publicationStmt>
+         <seriesStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="m" type="main">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <respStmt>
+               <resp>Bearbeitung und Herausgeberschaft</resp>
+               <orgName key="https://d-nb.info/gnd/2024703-5">Universität Wien</orgName>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+         </seriesStmt>
+         <notesStmt>
+            <note>Diese TEI-XML-Datei ist Grundlage für eine Druckausgabe der Edition.</note>
+            <relatedItem>
+               <biblStruct>
+                  <monogr>
+                     <imprint>
+                        <pubPlace key="https://d-nb.info/gnd/4066009-6">Wien</pubPlace>
+                        <publisher key="https://d-nb.info/gnd/2068748-5">Verlag der Österreichischen Akademie der Wissenschaften</publisher>
+                        <date when="2029"/>
+                     </imprint>
+                     <extent/>
+                  </monogr>
+                  <note>
+              <idno/>
+              <ptr/>
+            </note>
+                  <citedRange/>
+               </biblStruct>
+            </relatedItem>
+         </notesStmt>
+         <sourceDesc>
+            <bibl>Quellbestand: AT-OeStA/AdR MRang MR 1Rep KRP Kabinettsratsprotokolle, 1918-1920 (Teilbestand)<ref target="https://www.archivinformationssystem.at/detail.aspx?id=5465">https://www.archivinformationssystem.at/detail.aspx?id=5465</ref>
+            </bibl>
+            <msDesc>
+               <msIdentifier>
+                  <institution key="https://d-nb.info/gnd/37748-X" role="hasOwner">AT-OeStA Österreichisches Staatsarchiv (Archiv (ÖStA))</institution>
+                  <repository key="https://d-nb.info/gnd/1601181-8">AT-OeStA/AdR Archiv der Republik, 1918- (Abteilung)</repository>
+                  <collection>AT-OeStA/AdR MRang MR 1Rep Ministerrat 1. Republik, 1918 - 1938 (Bestand)</collection>
+                  <idno>AT-OeStA_AdR-MRang-MR-1.-Rep.-KRP-069</idno>
+               </msIdentifier>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <abstract>
+            <p>
+          <!--to be generated-->
+        </p>
+         </abstract>
+      </profileDesc>
+      <encodingDesc>
+         <styleDefDecl scheme="css"/>
+         <tagsDecl>
+            <rendition xml:id="b" scheme="css">font-weight:bold;</rendition>
+            <rendition xml:id="su" scheme="css">vertical-align:super;font-size:.7em;</rendition>
+            <rendition xml:id="s" scheme="css">text-decoration:line-through;</rendition>
+            <rendition xml:id="u" scheme="css">text-decoration:underline;</rendition>
+            <rendition xml:id="ow" scheme="css">text-decoration:line-through;text-decoration-style:double;</rendition>
+            <rendition xml:id="r" scheme="css">display:block;text-align:right;</rendition>
+            <rendition xml:id="letterspaced" scheme="css">letter-spacing:0.15em;</rendition>
+            <rendition xml:id="i" scheme="css">font-style:italic;</rendition>
+         </tagsDecl>
+         <editorialDecl>
+            <hyphenation>
+               <p>
+            <!--to be added-->
+          </p>
+            </hyphenation>
+            <correction>
+               <p>
+            <!--to be added-->
+          </p>
+            </correction>
+            <normalization>
+               <p>
+            <!--to be added-->
+          </p>
+            </normalization>
+            <punctuation>
+               <p>
+            <!--to be added-->
+          </p>
+            </punctuation>
+            <stdVals>
+               <p>
+            <!--to be added-->
+          </p>
+            </stdVals>
+            <p>
+          <!--to be added-->
+        </p>
+         </editorialDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#tfruehwirth" when-iso="2026-10-13">TEIGarage output upconverted with upconvert.xsl</change>
+         <change who="#tfruehwirth" when-iso="2026-10-13">TEI header populated with generate_tei_templates.py</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface/>
+   </facsimile>
+   <text>
+      <body>
+         <div xml:id="doc-krp-0069.xml">
+            <head type="dokument">
+               <title type="num">69.<note type="footnote">Das Protokoll trägt den Vermerk <hi rend="#i">Vertraulich!</hi></note>
+               </title>
+               <title type="desc">
+                  <pb facs="krp-0069_r-0001"/>[Freitag] 1919-05-09</title>
+            </head>
+            <div type="dokumentkopf">
+               <div type="vorsitz">
+                  <head>Vorsitz:</head>
+                  <p>Renner</p>
+               </div>
+               <div type="anwesend">
+                  <head>Anwesend:</head>
+                  <p>Bauer, Bratusch, Eldersch, Ellenbogen, Fink, Glöckel, Hanusch, Loewenfeld-Russ, Miklas, Paul, Pflügl, Resch, Schumpeter, Stöckler, Tandler, Waiss, Zerdik</p>
+               </div>
+               <div type="zugezogen">
+                  <head>Zugezogen:</head>
+                  <p>Grimm</p>
+               </div>
+               <div type="schriftfuehrer">
+                  <head>Schriftführer:</head>
+                  <p>unbekannt</p>
+               </div>
+               <div type="dauer">
+                  <head>Dauer:</head>
+                  <p>16.00–18.30 Uhr</p>
+               </div>
+            </div>
+            <div type="komponenten">
+               <p>Reinschrift, Beilagen, Konzept, stenographische Mitschrift, Entwurf der Tagesordnung, diverse Zusätze</p>
+            </div>
+            <div type="beilagen">
+               <head>Beilagen:</head>
+               <list>
+                  <item><ref target="#krp-0069_top03">Zu TOP 3</ref>: <ref target="#krp-0069_b01">Information des Staatsamtes für Land- und Forstwirtschaft Zl. 10106/19 über einen Gesetzesentwurf der Provisorischen Tiroler Landesversammlung über eine Novelle zum Tiroler Landeswasserrechtsgesetz</ref></item>
+                  <item><ref target="#krp-0069_top04">Zu TOP 4</ref>: <ref target="#krp-0069_b02">Gesetzesbeschluss der Provisorischen Tiroler Landesversammlung auf Errichtung einer Mädchenbürgerschule in Hall</ref></item>
+                  <item><ref target="#krp-0069_top05">Zu TOP 5</ref>: <ref target="#krp-0069_b03">Stellungnahme des Unterstaatssekretärs für Unterricht zum Gesetzesbeschluss der Provisorischen Niederösterreichischen Landesversammlung über die Rechtsverhältnisse des Lehrstandes an den öffentlichen Volksschulen</ref></item>
+                  <item><ref target="#krp-0069_top06">Zu TOP 6</ref>: <ref target="#krp-0069_b04">Entwurf der Vollzugsanweisung des Staatsamtes für soziale Verwaltung Zl. 10.758/19 über die Unterstützung der arbeitslosen Arbeiter und Angestellten</ref></item>
+                  <item><ref target="#krp-0069_top07">Zu TOP 7</ref>: <ref target="#krp-0069_b05">Entwurf der Vollzugsanweisung des Staatsamtes für soziale Verwaltung über den Urlaub jugendlicher Arbeiter und Angestellter im Jahre 1919</ref></item>
+                  <item><ref target="#krp-0069_top11">Zu TOP 11</ref>: <ref target="#krp-0069_b06">Antrag des Staatsamtes für Finanzen auf Unterstützung der Tageszeitungen beim Bezug von Runddruckpapiere</ref></item>
+                  <item><ref target="#krp-0069_top13">Zu TOP 13</ref>: <ref target="#krp-0069_b07">Anträge des Staatsamtes für Finanzen über den einmaliger Zuschuss für Pensionsparteien</ref></item>
+                  <item><ref target="#krp-0069_top15">Zu TOP 15</ref>: <ref target="#krp-0069_b08">Zwei Schreiben des Staatssekretärs für Volksernährung vom 7. bzw. 9. Mai 1919 an Staatskanzler Dr. Renner wegen Fragen der Kreditpolitik in Hinblick auf Lebensmittelbeschaffung aus dem Ausland</ref></item>
+               </list>
+            </div>
+            <div type="protokoll">
+               <pb facs="krp-0069_r-0002"/>
+               <div type="top" xml:id="krp-0069_top01">
+                  <head>
+                     <label>
+                        <num n="1">1.</num>
+                        <seg>Vorsorgen für die Vertretung des Staatskanzlers während seiner Abwesenheit.</seg>
+                     </label>
+                  </head>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> begrüßt zunächst die in der heutigen Sitzung der Nationalversammlung gewählten und in der Kabinettsratssitzung zum ersten Male erschienenen Mitglieder der Staatsregierung, u. zw. den Staatssekretär für Inneres und Unterricht Mathias Eldersch sowie den Unterstaatsse<pb facs="krp-0069_r-0003"/>kretär für Volksgesundheit Univ.- Prof.  Dr. Julius Tandler.</p>
+                  <p>Sodann verweist der sprechende Staatskanzler auf die Notwendigkeit entsprechender Vorsorgen für die Leitung der Staatsgeschäfte während der Zeit seiner Abwesenheit. Was die Kabinettsführung und die Leitung der Staatskanzlei anbelange, so werde Vizekanzler Fink an seine Stelle zu treten haben und hiefür die verfassungsmäßige Grundlage zu schaffen sein. Die Angelegenheiten des Staatsamtes für Inneres und Unterricht hätten durch den nunmehr gewählten Staatssekretär Eldersch verwaltet zu werden. Im Falle der Verhinderung des Vizekanzlers schlage der sprechende Staatskanzler zu dessen Vertreter den nach dem Alter hiezu berufenen Staatssekretär Dr. Bratusch vor.</p>
+                  <p>Der Kabinettsrat stimmt diesen Vorschlägen zu.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Bauer</hi> bespricht sodann die Einrichtung des Kurierdienstes zwischen der Staatsregierung und der Friedensdelegation in St. Germain. Es wäre grundsätzlich daran festzuhalten, dass die Korrespondenz an die Mitglieder der Friedensdelegation dem Staatsamt für Äu<pb facs="krp-0069_r-0004"/>ßeres offen zur Beförderung zu übergeben sein werde, die Verschließung der Korrespondenz werde im Staatsamt für Äußeres erfolgen. In Fällen ganz besonderer Notwendigkeit einer Übermittlung vertraulicher Mitteilungen eines Kabinettsmitgliedes an seine in St. Germain exponierten Beamten müssten die betreffenden Zuschriften ausnahmsweise dem Staatssekretär Dr. Bauer persönlich übermittelt werden. Der Schriftenwechsel von St. Germain nach Wien wäre in der Weise einzurichten, dass die Korrespondenz in St. Germain verschlossen dem Kurier übergeben und nach ihrem Einlangen im Staatsamte für Äußeres geöffnet würde. Für die Zensur der von den Pressevertretern der Friedensdelegation zur Aufgabe gelangenden Telegramme hätte der Leiter dieser Delegation Vorsorge zu treffen.</p>
+                  <p>Der Kabinettsrat pflichtet diesen Richtlinien bei.</p>
+               </div>
+               <div type="top" xml:id="krp-0069_top02">
+                  <head>
+                     <label>
+                        <num n="2">2.</num>
+                        <seg>Kundmachung des Gesetzes über das Staatswappen und das Staatssiegel der Republik Deutschösterreich.</seg>
+                     </label>
+                  </head>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> teilt mit, dass er die Kundmachung des von der Nationalversammlung beschlossenen Gesetzes über das Staatswappen und das Staatssiegel der Republik Deutschösterreich im Staats<pb facs="krp-0069_r-0005"/>gesetzblatte dringlichkeitshalber bereits ohne vorherige Lesung durch das Kabinett veranlasst habe. Da gegen diesen Gesetzesbeschluss von der Staatsregierung keine Vorstellung zu erheben sein dürfte, erbitte er nunmehr die nachträgliche Genehmigung seiner Verfügung.</p>
+                  <p>Der Kabinettsrat erteilt die erbetene Genehmigung.</p>
+               </div>
+               <div type="top" xml:id="krp-0069_top03">
+                  <head>
+                     <label>
+                        <num n="3">3.</num>
+                        <seg>Gesetzesbeschluss der Landesversammlung in Tirol, betreffend eine Novelle zum Tiroler Landeswasserrechtsgesetz.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Stöckler</hi> gibt bekannt, dass die Provisorische Landesversammlung in Tirol in der Sitzung vom 8. April 1919 eine Novelle zum Tiroler Landeswasserrechtsgesetze beschlossen und im Wege der Landesregierung beim Staatsamte für Land- und Forstwirtschaft um die Zustimmung der Staatsregierung zur Publikation dieses Gesetzesbeschlusses ersucht habe. Hienach solle in Einkunft die Veräußerung und Verpachtung von Privatgewässern an die Zustimmung des Landesrates gebunden sein.</p>
+                  <p>Gegen diese Bestimmung, durch die den Landesfaktoren ein Einfluss darüber gewahrt werden soll, dass die heimischen Privatgewässer nicht in einer den Landesinteressen widerstreitenden Weise <pb facs="krp-0069_r-0006"/>verwertet werden, obwalte vom Standpunkt der Staatsregierung kein Bedenken.</p>
+                  <p>Die weitere Bestimmung der Novelle, wonach die Ausnützung der öffentlichen Gewässer in Hinkunft auch von der Zustimmung des Landesrates abhängen wird, decke sich mit analogen Gesetzesbeschlüssen der Provisorischen Landesverwaltungen in Steiermark und Kärnten, gegen die die Staatsregierung aufgrund der bei der vierten Länderkonferenz am 5. April l. J. mit den Landeshauptleuten getroffenen Vereinbarungen eine Vorstellung im Sinne des Gesetzes vom 14. März 1919, StGBl. Nr. 179, nicht erhoben hat. Eine solche könne daher auch nicht gegenüber der Tiroler Wasserrechtsgesetznovelle geltend gemacht werden.</p>
+                  <p>Der sprechende Staatssekretär beabsichtigt demgemäß, der Landesregierung in Innsbruck mitzuteilen, dass die Staatsregierung gegen diesen Gesetzesbeschluss keine Vorstellung erhebe und dessen Publikation zustimme; er erbittet hiezu die Ermächtigung des Kabinettsrates.</p>
+                  <p>Der Kabinettsrat erteilt die erbetene Ermächtigung.</p>
+                  <p><pb facs="krp-0069_r-0007"/></p>
+               </div>
+               <div type="top" xml:id="krp-0069_top04">
+                  <head>
+                     <label>
+                        <num n="4">4.</num>
+                        <seg>Gesetzesbeschluss der Landesversammlung in Tirol, betreffend die Errichtung einer öffentlichen Mädchenbürgerschule in Hall.</seg>
+                     </label>
+                  </head>
+                  <p>Unterstaatssekretär <hi rend="#letterspaced">Glöckel</hi> bringt zur Kenntnis, dass die Provisorische Landesversammlung in Tirol am 21. März l. J. im Grunde des § 11 des Tiroler Landesgesetzes vom 27. Juli 1918, LGBl. Nr. 56, wonach von Fall zu Fall über vorausgegangene Verhandlung zwischen dem Landesschulrate und dem Landesausschusse durch ein Landesgesetz festzustellen ist, an welchen Orten und mit welchen Mitteln öffentliche Bürgerschulen zu errichten sind, die Errichtung einer öffentlichen Mädchenbürgerschule in Hall beschlossen habe. Gegen den Inhalt des Gesetzentwurfes wäre im Allgemeinen keine Einwendung zu erheben und könne von der Erhebung einer Vorstellung gegen denselben abgesehen werden. Wohl aber sei eine formale Berichtigung in dem Sinne vorzunehmen, dass im § 4 anstelle der Landesregierung, wie dies bisher in allen Volksschulgesetzen bestimmt war, der Staatssekretär für Inneres und Unterricht mit der Durchführung betraut wird.</p>
+                  <p>Der sprechende Unterstaatssekretär erbitte sich daher die Ermächtigung, von der Erhebung einer Vorstellung gegen diesen Gesetzesbeschluss absehen, <pb facs="krp-0069_r-0008"/>die Landesregierung dagegen ersuchen zu dürfen, bei der Landesversammlung eine formale Berichtigung des § 4 dieses Gesetzes in Anregung zu bringen.</p>
+                  <p>Der Kabinettsrat erteilt die erbetene Ermächtigung.</p>
+               </div>
+               <div type="top" xml:id="krp-0069_top05">
+                  <head>
+                     <label>
+                        <num n="5">5.</num>
+                        <seg>Gesetzesbeschluss der Niederösterreichischen Landesregierung, betreffend Abänderung des Gesetzes vom 31. Juli 1917, LGBl. Nr. 158, über die Rechtsverhältnisse des Lehrstandes an den öffentlichen Volksschulen.</seg>
+                     </label>
+                  </head>
+                  <p>Unterstaatssekretär Glöckel teilt mit, dass die Niederösterreichische Landesversammlung am 16. April l. J. einen Gesetzesbeschluss, betreffend die Abänderung des Gesetzes vom 31.  Juli 1917, LGBl. Nr. 158, über die Rechtsverhältnisse des Lehrstandes an den öffentlichen Volksschulen, beschlossen habe. Nach § 1 dieses Gesetzesbeschlusses seien für den Schulbezirk Wien vom 1. Mai 1919 an die Bezüge der aktiven Lehrpersonen, die Ruhegenüsse der Lehrpersonen und die Versorgungsgenüsse der Hinterbliebenen nach Lehrpersonen insbesondere auch unter Anrechnung der Kriegsmehrdienstzeit gemäß den vom Wiener Gemeinderat festzusetzenden Bestimmungen zuzuerkennen und flüssig zu machen.</p>
+                  <p>Nach § 2 des Gesetzes werde mit dessen Vollzug der Staatssekretär für Inneres und Unterricht betraut, und treten die damit im Widerspruch stehenden <pb facs="krp-0069_r-0009"/>Bestimmungen des Gesetzes vom 31. Juli 1917, LGBl. Nr. 158, außer Kraft.</p>
+                  <p>Gegen diesen Gesetzesbeschluss ergeben sich, nun folgende Bedenken:</p>
+                  <p>Nach § 55 des Reichsvolksschulgesetz erfolgt die Regelung des Diensteinkommens und der Art des Bezuges durch die Landesgesetzgebung und es kann die hiemit der Landesgesetzgebung übertragene Regelung wohl nicht in der Art erfolgen, dass, wie es im vorliegenden Fall geschehen ist, das Landesgesetz einfach der Gemeinde, welche für die betreffenden Bezüge aufzukommen hat, es überlässt, durch einen erst zu fassenden Beschluss diese Regelung vorzunehmen, sondern es muss – wie dies bisher in allen zur ehemaligen österreichischen Monarchie gehörigen Ländern, in Niederösterreich zuletzt durch das Landesgesetz vom 31. Juli 1917, LGBl. Nr. 158, geschehen ist – die genaue Bestimmung der Bezüge der Lehrpersonen durch die Landesgesetzgebung selbst erfolgen.</p>
+                  <p>Die Gemeinde Wien ist wohl zufolge des mit dem Gesetze vom 19. Dezember 1890, LGBl. Nr. 45, erlassenen Statutes (§ 52 Abs. b) zur Festsetzung der Dienstpragmatik sowie der Pensionsvorschriften für die Angestellten der Gemeinde und <pb facs="krp-0069_r-0010"/>für ihre Witwen und Waisen zuständig, die Lehrpersonen der Volks- und Bürgerschulen, sind aber, wenngleich ihre Bezüge zufolge § 5 des Gesetzes vom 24. Juli 1905, LGBl. Nr. 108, betreffend die Regelung der Schulverwaltung im Wiener Schulbezirke aus den Mitteln der Gemeinde Wien getragen werden, nicht als Angestellte der Gemeinde, sondern als öffentliche Funktionäre einer besonderen Kategorie anzusehen, deren Dienstesbezüge eben wie erwähnt, durch die Landesgesetzgebung geregelt werden.</p>
+                  <p>Inwieweit die Landesgesetzgebung sich bei dieser Regelung an die Anregungen der Gemeinde, aus deren Mitteln die Bezüge bestritten werden, halten wird, bleibt selbstredend der Landesversammlung überlassen.</p>
+                  <p>Aber auch abgesehen von diesen rechtlichen Bedenken enthalte der vorgelegte Gesetzesbeschluss nach Dafürhalten des sprechenden Unterstaatssekretärs insoferne Unklarheiten, als nach § 2 desselben die mit diesem Gesetz im Widerspruche stehenden Bestimmungen des Gesetzes vom 31. Juli 1917, LGBl. Nr. 158, aufgehoben werden; nun seien aber durch dieses Landesgesetz die Rechtsverhältnisse des Lehrstandes an den öffentlichen Volksschulen in ganz <pb facs="krp-0069_r-0011"/>Niederösterreich geregelt, und werde zwar das Diensteseinkommen des Lehrpersonales in den Schulbezirken außer Wien im I. Teil des II. Abschnittes und das Diensteinkommen des Lehrpersonales im Schulbezirke Wien im 2. Teil des II. Abschnittes gesondert festgesetzt, während im IV. Abschnitt die Bestimmungen über die Versetzung des Lehrpersonales in den Ruhestand und die Versorgung der Lehrerswitwen und -waisen einheitlich für alle Schulbezirke in Niederösterreich geregelt werden, sodass durch den § 2 des Gesetzesbeschlusses vom 16. April 1919 eine Unklarheit darüber entstehe, ob und welche Bestimmungen dieses IV. Abschnittes des Gesetzes vom 31. Juli 1917 aufgehoben werden.</p>
+                  <p>Endlich erscheine es fraglich, ob durch den Gesetzesbeschluss nur das zitierte Gesetz oder aber, da auch die Anrechnung der Kriegsmehrdienstzeit angeführt ist, nicht auch das Gesetz vom 9. Juli 1892, LGBl. Nr. 46, betreffend die Regelung der Personal- und Dienstverhältnisse der der bewaffneten Macht angehörigen Lehrpersonen an öffentlichen Volksschulen mit Bezug auf deren Verpflichtung zur aktiven Militär- und Landsturmdienstleistung eine Abänderung erfährt.</p>
+                  <p><pb facs="krp-0069_r-0012"/>Aufgrund dieser Ausführungen erbittet sich Unterstaatssekretär Glöckel vom Kabinettsrate die Ermächtigung, gegen den Gesetzesbeschluss der Niederösterreichischen Landesversammlung vom 18. April 1919 bei der Landesversammlung im Wege der Landesregierung im Sinne des Art. 14 des Gesetzes vom 14. März 1919, StGBl. Nr. 179, über die Volksvertretung Vorstellungen zu erheben.</p>
+                  <p>Der Kabinettsrat erteilt die erbetene Ermächtigung.</p>
+               </div>
+               <div type="top" xml:id="krp-0069_top06">
+                  <head>
+                     <label>
+                        <num n="6">6.</num>
+                        <seg>Vollzugsanweisung des Staatsamtes für soziale Verwaltung, betreffend die Unterstützung der arbeitslosen Arbeiter und Angestellten.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Hanusch</hi> erbittet und erhält die Ermächtigung des Kabinettsrates zur Erlassung einer Vollzugsanweisung, wonach die in der Vollzugsanweisung des Staatsamtes für soziale Fürsorge vom 14. Februar 1919, StGBl. Nr. 120, festgesetzte Dauer der Unterstützung der arbeitslosen Arbeiter bis 30. Juni 1919 verlängert wird.</p>
+                  <p>In diesem Zusammenhange kommt Staatssekretär Hanusch weiters auf die Frage der vom Kabinettsrate bereits beschlossenen Vollzugsanweisung, betreffend die Einstellung der Arbeitslosen in den Betrieben mit mehr als zehn Arbeitern zu sprechen.</p>
+                  <p><pb facs="krp-0069_r-0013"/>Der <hi rend="#letterspaced">Vorsitzende</hi> bemerkt hiezu, dass der Hauptausschuss der Nationalversammlung den Wunsch ausgesprochen habe, den Inhalt dieser Vollzugsanweisung vor ihrer Publikation noch kennen zu lernen.</p>
+                  <p>Staatssekretär <hi rend="#letterspaced">Hanusch</hi> verweist darauf, dass die Kundmachung dieser Vollzugsanweisung umso dringlicher sei, als deren Wortlaut bereits durch eine Indiskretion in die Presse gelangt sei. Eine meritorische Abänderung erscheine übrigens auch deshalb kaum notwendig, weil in der Zwischenzeit über die Details der Durchführung dieser Vollzugsanweisung ein Einvernehmen zwischen der Arbeiterschaft und den Unternehmerorganisationen bereits hergestellt worden sei.</p>
+                  <p>Nachdem auch vom Staatssekretär <hi rend="#letterspaced">Eldersch</hi> auf die besondere Notwendigkeit einer raschen Publikation dieser Maßnahme hingewiesen worden war, wird Staatssekretär Hanusch über Antrag des <hi rend="#letterspaced">Vorsitzenden</hi> beauftragt, zunächst den Präsidenten der Nationalversammlung über die Sachlage zu informieren, dessen Zustimmung zur Erlassung dieser Vollzugsanweisung noch vor dem nächsten Zusammentritte des Hauptaus<pb facs="krp-0069_r-0014"/>schusses zu erwirken und sodann mit dessen Zustimmung die Verlautbarung der Vollzugsanweisung zu veranlassen.</p>
+               </div>
+               <div type="top" xml:id="krp-0069_top07">
+                  <head>
+                     <label>
+                        <num n="7">7.</num>
+                        <seg>Vollzugsanweisung über den Urlaub von jugendlichen Arbeitern und Angestellten im Jahre 1919.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Hanusch</hi> erbittet die Ermächtigung des Kabinettsrates zur Erlassung einer Vollzugsanweisung des Staatsamtes für soziale Verwaltung über den Urlaub von jugendlichen Arbeitern und Angestellten im Jahre 1919.</p>
+                  <p>Der Kabinettsrat erteilt die erbetene Ermächtigung mit der Maßgabe, dass im § 1 Abs. l al. c des Entwurfes die Dauer des Dienstverhältnisses mit „wenigstens sechs Monaten" festgesetzt wird.</p>
+               </div>
+               <div type="top" xml:id="krp-0069_top08">
+                  <head>
+                     <label>
+                        <num n="8">8.</num>
+                        <seg>Vermögensabgabe in Tirol.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Schumpeter</hi> gibt bekannt, dass in der Tiroler Landesversammlung ein Antrag eingebracht worden sei, wonach die Eingänge aus der Vermögensabgabe im Lande Tirol zurückbehalten werden sollen.</p>
+                  <p>Der sprechende Staatssekretär verweist in dieser Hinsicht darauf, dass die Vermögensabgabe den Zweck verfolge, <pb facs="krp-0069_r-0015"/>die Kriegsschulden abzubürden. Sollte daher ein derartiger Antrag von der Landesversammlung in Tirol zum Beschluss erhoben werden, so müsse selbstverständlich an dem Grundsatze festgehalten werden, dass in diesem Falle Tirol einen entsprechenden Teil der Kriegslasten übernehmen und decken müsse. Da nun der auf Tirol entfallende Teil der Kriegslasten die Eingänge aus der Vermögensabgabe in Tirol wesentlich überschreiten dürfte, würde ein derartiges selbständiges Vorgehen dieses Landes eine erhebliche finanzielle Belastung Tirols mit sich bringen.</p>
+                  <p>Nach einer kurzen Debatte, an der sich außer dem Referenten der <hi rend="#letterspaced">Vorsitzende</hi> und Vizekanzler <hi rend="#letterspaced">Fink</hi> beteiligten, beschließt der Kabinettsrat, den Staatssekretär Dr. Schumpeter einzuladen, dem Landeshauptmanne in Tirol in geeigneter Weise bekanntzugeben, dass in dieser Frage dem Landtage die Kompetenz zu einem selbständigen Vorgehen mangle, dass weiters die Organe der Staatsverwaltung lediglich von der Zentralregierung Weisungen entgegenzunehmen und bloß die vom zuständigen Staatssekretär gegengezeichneten Gesetze zu befolgen haben. Gleichzeitig wäre der Landeshauptmann auf die oben <pb facs="krp-0069_r-0016"/>dargestellten Konsequenzen eines derartigen Landtagsbeschlusses aufmerksam zu machen.</p>
+               </div>
+               <div type="top" xml:id="krp-0069_top09">
+                  <head>
+                     <label>
+                        <num n="9">9.</num>
+                        <seg>Frage der Fortsetzung der mit Deutschland anhängigen kommissionellen Verhandlungen.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Schumpeter</hi> wirft die Frage auf, ob und bejahenden Falles auf welcher Grundlage die anhängigen finanziellen Verhandlungen mit dem Deutschen Reiche im Hinblick auf die gegenwärtigen politischen Verhältnisse fortgesetzt werden sollen.</p>
+                  <p>Über die Frage entwickelt sich eine eingehende Debatte vertraulichen Charakters, an welcher sich nahezu sämtliche Kabinettsmitglieder beteiligten.</p>
+                  <p>Der Kabinettsrat fasst nachstehende Beschlüsse:</p>
+                  <p>Die Rechtskommission hat weiter zu verhandeln, ebenso die Unterrichtskommission ihre Arbeiten zu beginnen bzw. fortzusetzen; die Verkehrskommission hat gegenwärtig nicht in Funktion zu treten. Das Staatsamt für Justiz wird ermächtigt, behufs Beteiligung an den Beratungen über die Angleichung der Strafgesetzgebung Vertreter nach Berlin zu entsenden. Das Staatsamt für soziale Verwaltung wird ermächtigt, die Verhandlungen wegen  <pb facs="krp-0069_r-0017"/>Schaffung eines Arbeiterrechtsbuches und über die Sozialversicherung aufzunehmen bzw. fortzuführen. Die finanziellen Verhandlungen mit Deutschland sind vom Staatsamte für Finanzen fortzusetzen und hätten zum Hauptgegenstand die aktuellen Fragen, insbesondere die Gewährung eines Valutadarlehens, zu nehmen.</p>
+               </div>
+               <div type="top" xml:id="krp-0069_top10">
+                  <head>
+                     <label>
+                        <num n="10">10.</num>
+                        <seg>Neubesetzung der Stelle eines Vorsitzenden der deutschösterreichischen Hauptstelle für Volksbekleidung.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Ing. <hi rend="#letterspaced">Zerdik</hi> erbittet und erhält die Ermächtigung des Kabinettsrates zur Ernennung des Abgeordneten Eduard Heinl zum Vorsitzenden der deutschösterreichischen Hauptstelle für Volksbekleidung.</p>
+               </div>
+               <div type="top" xml:id="krp-0069_top11">
+                  <head>
+                     <label>
+                        <num n="11">11.</num>
+                        <seg>Unterstützung der Tageszeitungen beim Bezuge von Runddruckpapier.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Schumpeter</hi> erörtert anlässlich einer an ihn gerichteten Interpellation die Frage der Unterstützung der Tageszeitungen beim Bezuge von Runddruckpapier und stellt den Antrag, der Kabinettsrat wolle die in der Beilage zu diesem Protokoll verzeichnete Darstellung der Sachlage zur Kenntnis nehmen, gleichzeitig aber auch darüber Beschluss fas<pb facs="krp-0069_r-0018"/>sen, ob dieses System der staatlichen Subventionierung von Zeitungen für die Zukunft beibehalten werden solle.</p>
+                  <p>Unterstaatssekretär Dr. <hi rend="#letterspaced">Ellenbogen</hi> spricht sich in entschiedener Weise gegen die Aufrechterhaltung des bisherigen Vorganges aus. Die Gründe, welche seinerzeit zu dieser Maßnahme Veranlassung geboten hätten, seien nunmehr weggefallen. Vom Standpunkte der Pressfreiheit allein erscheine es notwendig, dass die Verbindung von Presse und staatlicher Subventionierung ein Ende finde. Politisch bedeute der bisherige Aufbau die Konservierung derjenigen Zeitungen, die gar keinen Rückhalt in der Öffentlichkeit haben, somit eine Umkehrung dessen, was die jetzige politische Entwicklung tatsächlich wolle. Im Staatsamte für Handel und Gewerbe, Industrie und Bauten seien eine Reihe von Vorschlägen ausgearbeitet worden, wie der Abbau dieses Subventionsystems – mit dem seiner Meinung nach längstens Ende Juni d. J. gebrochen werden sollte – zu bewerkstelligen wäre.</p>
+                  <p>Die Staatssekretäre <hi rend="#letterspaced">Eldersch</hi> und <hi rend="#letterspaced">Stöckler</hi> pflichten der Auffassung des Vorredners durchaus bei.</p>
+                  <p>Der Kabinettsrat beschließt, den <pb facs="krp-0069_r-0019"/>Staatssekretär für Finanzen zu ermächtigen, die einschlägige Interpellation im Rahmen seiner Ausführungen zu beantworten, hiebei jedoch gleichzeitig darauf zu verweisen, dass die Staatsregierung unter möglichster Schonung aller berechtigter Interessen an den tunlichst raschen Abbau dieser Subventionierung schreiten werde. Gleichzeitig beauftragt der Kabinettsrat die Staatssekretäre für Finanzen sowie für Handel und Gewerbe, Industrie und Bauten, bis zur nächsten Kabinettsratssitzung detaillierte Anträge über den Abbau dieses Systems zu unterbreiten, worauf der Kabinettsrat spätestens in der übernächsten Sitzung über die gestellten Anträge endgiltig Beschluss zu fassen haben wird.</p>
+               </div>
+               <div type="top" xml:id="krp-0069_top12">
+                  <head>
+                     <label>
+                        <num n="12">12.</num>
+                        <seg>Erstattung der Budgetvorlagen durch die einzelnen Staatsämter.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Schumpeter</hi> verweist darauf, dass seitens einer Reihe von Staatsämtern die Vorlagen für die Zusammenstellung des Staatsvoranschlages noch ausständig seien. Da hiedurch die rechtzeitige Einbringung des Voranschlages gefährdet erscheine, richte er an die Kabinettsmitglieder die dringende Bitte, das Entsprechende <pb facs="krp-0069_r-0020"/>in diesem Sinne ohne Verzug zu veranlassen.</p>
+                  <p>Der Kabinettsrat nimmt diese Ausführungen zur Kenntnis.</p>
+               </div>
+               <div type="top" xml:id="krp-0069_top13">
+                  <head>
+                     <label>
+                        <num n="13">13.</num>
+                        <seg>Einmaliger Zuschuss für Pensionsparteien.</seg>
+                     </label>
+                  </head>
+                  <p>Im Auftrag des Staatssekretärs für Finanzen führt Sektionschef Dr. <hi rend="#letterspaced">Grimm</hi> aus, dass im Kabinettsrate vom 9. April 1919 die Anträge des Staatsamtes für Finanzen auf Gewährung eines einmaligen Zuschusses für Pensionsparteien unter der Voraussetzung der Einbeziehung der Militärpensionisten und deren Angehöriger in diese Aktion genehmigt worden seien; falls diese Erweiterung vom Staatsamte für Finanzen nicht vertreten werden könnte, wäre die Angelegenheit neuerlich dem Kabinettsrate zur Schlussfassung zu unterbreiten. Außerdem sei im Kabinettsratsbeschlusse nicht mehr das Erfordernis der deutschen Nationalität der zu beteilenden Pensionsparteien zum Ausdrucke gekommen.</p>
+                  <p>Was nun die Militärpensionsparteien anlange, so bestehe eine Verhandlung mit dem liquidierenden Kriegsministerium wegen Auszahlung der (laufenden) Aushilfe für das erste Halbjahr 1919 (welche bereits im Oktober 1918 bewil<pb facs="krp-0069_r-0021"/>ligt war, jedoch infolge des Umsturzes bisher nicht zur Auszahlung gelangt ist) und zwar aus gemeinsamen Mitteln.</p>
+                  <p>Bevor diese Aktion zum Abschlusse gelangt ist, könne zur Frage der Auszahlung eines einmaligen Zuschusses für die Militärpensionisten, die ja einen Annex zur laufenden Aushilfe bildet, nicht definitiv Stellung genommen werden.</p>
+                  <p>Im Hinblick darauf, dass die Verquickung der Gewährung des einmaligen Zuschusses an die Militärpensionsparteien mit jener an die Zivilpensionsparteien sicherlich eine Verzögerung der ganzen Aktion verursachen würde, die Auszahlung des Zuschusses an die Zivilpensionisten jedoch schon dringend sei und auch von den Zivilpensionsparteien für die allernächste Zeit erwartet werde, dürfe nach Ansicht des Staatsamtes für Finanzen die Hinausgabe der den Zuschuss für die Zivilpensionsparteien betreffenden Verfügung nicht länger aufgehalten werden.</p>
+                  <p>Bezüglich des neben der deutschösterreichischen Staatsbürgerschaft ursprünglich noch aufgestellten im eingangs erwähnten Beschlusse des Kabinettsrates jedoch nicht mehr enthaltenen Erfordernisses der Angehörigkeit der zu be<pb facs="krp-0069_r-0022"/>teilenden Pensionsparteien zur deutschen Nation sei Folgendes zu bemerken:</p>
+                  <p>Mit Ausnahme der tschechoslowakischen Republik habe keiner der anderen Nationalstaaten im laufenden Jahre den in seinem Gebiete in Vorschreibung stehenden Pensionsparteien einmalige Zuschüsse gewährt. Falls bei der vorliegenden auf Deutschösterreich sich erstreckenden Aktion die Beteilung mit dem Zuschusse nur von der deutschösterreichischen Staatsbürgerschaft abhängig gemacht würde, würde eine Begünstigung der in Deutschösterreich in Vorschreibung stehenden Pensionsparteien nicht deutscher Nationalität gegenüber den in den anderen Nationalstaaten in Vorschreibung stehenden Perzipienten deutscher Nationalität eintreten, indem die ersteren des Zuschusses teilhaftig würden, während die letzteren keinen Zuschuss erhalten haben.</p>
+                  <p>Der einmalige Zuschuss wäre daher in Deutschösterreich nur jenen Pensionsparteien zu gewähren, die die deutschösterreichische Staatsbürgerschaft besitzen und der deutschen Nation angehören.</p>
+                  <p>Gegenüber der tschechoslowakischen Republik werde allerdings nach dem Grundsatze der Gegenseitigkeit vorgegangen werden. </p>
+                  <p><pb facs="krp-0069_r-0023"/>Nach dem vom Kabinettsrate bedingungsweise genehmigten Antrage sollten erhalten:</p>
+                  <p>Die Staatsbediensteten des Ruhestandes. das Dreifache; die Witwen, elternlosen Waisen u. Gnadengabenparteien das Zweifache; die vaterlosen Waisen das Eineinhalbfache des Novemberzuschusses.</p>
+                  <p>Mit Rücksicht auf den Umstand, dass die aktiven Staatsbediensteten im Monate Mai neuerlich einen Zuschuss erhalten haben und zu erwarten sei, dass die Pensionsparteien mit dem Begehren um einen ebensolchen Maizuschuss auftreten werden, dessen Gewährung wohl nicht umgangen werden könnte, dürften Billigkeitsgründe dafür sprechen, die Pensionsparteien, ihrem stets geäußerten Verlangen gemäß analog den aktiven Staatsbediensteten zu behandeln und ihnen und zwar ohne Unterschied nunmehr einen Zuschuss im Zweieinhalbfachen des Novemberzuschusses zu gewähren.</p>
+                  <p>Der für diese Zuschussaktion mit 20 Millionen K veranschlagte Aufwand würde hiedurch eine Erhöhung um rund 5 Millionen K auf rund 25 Millionen K erfahren.</p>
+                  <p>Das Staatsamt für Finanzen beantra<pb facs="krp-0069_r-0024"/>ge die Genehmigung dieser Verfügungen mit dem Bemerken, dass die Regierung von der Nationalversammlung mit Beschluss vom 4. April ermächtigt wurde, die einmaligen Zuwendungen für Dezember 1918 und Februar 1919 den Pensionisten, Witwen und Waisen nachträglich binnen eines Monates in Auszahlung zu bringen.</p>
+                  <p>Der Kabinettsrat tritt diesem Antrage nach einer kurzen Debatte bei.</p>
+               </div>
+               <div type="top" xml:id="krp-0069_top14">
+                  <head>
+                     <label>
+                        <num n="14">14.</num>
+                        <seg>Personalverhältnisse der Staatssekretäre.</seg>
+                     </label>
+                  </head>
+                  <p>Namens des vom Kabinettsrate in seiner Sitzung am 29. April l. J. zur Beratung der Frage der Behandlung der Bezüge der Staatssekretäre und Unterstaatssekretäre eingesetzten Kabinettskomitees stellt Staatssekretär <hi rend="#letterspaced">Paul</hi> folgende, vom Kabinettsrat in der Folge angenommene Anträge:</p>
+                  <list>
+                     <item n="1"><label>1.)</label> Unter Bezügen im Sinne des § 2 al. 2 des Gesetzes vom 4. April 1919, StGBl. Nr. 221, sind die systemmäßigen Bezüge an Gehalt, Funktions- bzw. Aktivitätszulage oder Quartiergeld, sowie etwaige Personalzulagen zu verstehen, dagegen sind anderweitige Zuwendungen wie z. B. Teuerungszulagen, Anschaffungsbeiträge und Übergangsbeiträge nicht einzurechnen.</item>
+                  </list>
+                  <p><pb facs="krp-0069_r-0025"/>Im Übrigen bleibt es der Staatskanzlei überlassen, besonderen Verhältnissen in geeigneter Weise Rechnung zu tragen.</p>
+                  <list>
+                     <item n="1"><label>2.)</label> Die Durchführung des Punktes 1 hätte rückwirkend vom 1. März 1919 an zu erfolgen, wobei von dem Ersatze von etwaigen bereits genossenen Übergebühren abzusehen wäre.</item>
+                     <item n="2"><label>3.)</label> Die Frage der Beförderung von Staatssekretären und Unterstaatssekretären wurde bereits mit dem Kabinettsratsbeschlusse vom 29. April 1919 dahin geregelt, dass gegen eine tourmäßige Beförderung kein Bedenken obwalte, jedoch von einer Verlautbarung derselben in der Wiener Zeitung abzusehen ist.</item>
+                  </list>
+               </div>
+               <div type="top" xml:id="krp-0069_top15">
+                  <head>
+                     <label>
+                        <num n="15">15.</num>
+                        <seg>Fragen der Kreditpolitik unter besonderer Berücksichtigung der Lebensmittelbeschaffung aus dem Auslande.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Loewenfeld-Russ</hi> weist neuerlich darauf hin, dass ihm eine Reihe von besonders günstigen Lebensmittellieferofferten aus dem Auslande vorliege, zu denen er mangels verfügbarer Valuta nicht Stellung nehmen könne. Insbesondere werfe sich die Frage auf, ob allenfalls zur Verfügung stehende Kredite zunächst für Rohstoffimporte oder für Lebensmittelimporte in Anspruch zu nehmen seien. In diesem Zusammenhange <pb facs="krp-0069_r-0026"/>glaube der sprechende Staatssekretär auch die Stellungnahme des Kabinettes zur Frage der freien Bewirtschaftung und Zulassung des freien Handels erbitten zu müssen. Zu dieser Anregung sehe er sich dadurch veranlasst, dass sich in der letzten Zeit einzelne Regierungsmitglieder in der Öffentlichkeit für die vollkommene Freigabe des Handels ausgesprochen haben, während andere Mitglieder des Kabinettes diesen Standpunkt in dieser uneingeschränkten Fassung nicht vertreten. Seiner Auffassung nach sei auf dem Gebiete der inländischen Lebensmittelproduktion sowohl als auch auf dem Gebiete der Lebensmitteleinfuhr die vollkommene Freigabe des Handels derzeit nicht möglich. Derartige widersprechende Äußerungen von Mitgliedern der Regierung vor der Öffentlichkeit schaffen jedoch Verwirrung und stärken jedenfalls die immer wachsende Bewegung, die für die vollkommene Aufhebung der Zwangswirtschaft sowie gewisser Beschränkungen in der Lebensmitteleinfuhr eintrete. Es erscheine daher notwendig, dass im Schoße der Regierung einheitliche Richtlinien für das Vorgehen aller Kabinettsmitglieder in diesen Belangen festgelegt werden.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Bauer</hi> unterstützt die Anregung des Vorredners <pb facs="krp-0069_r-0027"/>und weist in diesem Zusammenhange darauf hin, dass er bereits seit langem auf die Notwendigkeit der Nutzbarmachung der im Inlande befindlichen ausländischen Wertpapiere zum Zwecke der Kreditbeschaffung, sei es im Wege des Verkaufes dieser Wertpapiere, sei es durch deren Verpfändung, eingetreten sei. Er betone neuerlich, dass diesfalls in allerkürzester Zeit Verfügungen getroffen werden müssten.</p>
+                  <p>Der Kabinettsrat beschließt die Einsetzung eines Komitees, bestehend aus den Staatssekretären für Finanzen, für Volksernährung sowie für Handel und Gewerbe, Industrie und Bauten, welches die Frage der finanziellen Bedeckung für die Einfuhren, die Art und Weise der Verwendung der Exportartikel sowie die Stellungnahme der Regierung zur Frage des freien Handels ohne Verzug zu behandeln haben wird. Dieses Komitee hätte auch die Frage der Verwertung der im Inlande befindlichen ausländischen Werteffekten für Zwecke der Kreditbeschaffung in den Kreis seiner Beratungen zu ziehen.</p>
+                  <p/>
+               </div>
+            </div>
+            <div type="stenogramme">
+               <div n="1">
+                  <head>[KBR 69, 9. Mai 1919, Stenogramm]</head>
+                  <p><pb facs="krp-0069_s01-0001"/>Nr. 69, 9. /5.</p>
+                  <p>[<hi rend="#i">Rechtes Obereck:</hi>] Tandler, </p>
+                  <p>Eldersch, </p>
+                  <p>Seitz?</p>
+                  <p>1. Renner: Vorstellung Eldersch und Tandler.</p>
+                  <p>2. [Renner]: Vorsorge für die Zeit der Abwesenheit. Bedauere sehr durch 14 Tage bis 3 Wochen. </p>
+                  <p>Während der Abwesenheit [wird] Fink die Geschäfte des Kabinetts leiten, in den Geschäften des Staats[amtes] des Inneren wird Eldersch wirken. Montag, Mittwoch, Freitag keine Änderung, </p>
+                  <p>Montag Abend Abreise. Wenn Fink verhindert, dann Bratusch laufender Dienst. Entgegennahme der Anmeldungen für Kabinettsrat.</p>
+                  <p>Bauer: Courier-Dienst. [Möchte] daran festhalten, dass Briefe dem Staats[amt] des Äußeren offen zu übergeben [sind]. Wenn ein besonderer Fall wäre, dass ein Staatssekretär </p>
+                  <p>an seine Beamten eine vertrauliche Mitteilung an seine Beamten geben will, so müsste Bauer persönlich überschickt werden (dann verschlossen weitergegeben wird). </p>
+                  <p>Rücksendung offen bis Staatsamt.</p>
+                  <p>Telegramm-Zensurierung.</p>
+                  <p>3. [Renner]: Gesetz über Staatswappen und Staatssiegel. Genehmigung erteilt.</p>
+                  <p>4. Stöckler: Die Provisorische Landesversammlung [hat eine] Novelle über Tiroler Wasserrechtsgesetz beschlossen. </p>
+                  <p>Bittet um Zustimmung, dass dagegen keine Einwendung. Genehmigt.</p>
+                  <p>5. Glöckel: Gesetz zur Kenntnis genommen.</p>
+                  <p>Angenommen.</p>
+                  <p>6. Glöckel: Präs[ident] der niederösterreichischen Landesregierung hat mitgeteilt, dass in der Sitzung 15. .... </p>
+                  <p>Rechtsverhältnisse des Lehrerstandes.</p>
+                  <p>Angenommen.</p>
+                  <p>7. Hanusch: Arbeitslosenunterstützung Verlängerung bis 30. /6.</p>
+                  <p>Genehmigt.</p>
+                  <p>R[...] 4: Einstellung der Arbeitslosen in den Betrieben. </p>
+                  <p>Große Bedenken: 20% bei 10 Arbeitern angefangen.</p>
+                  <p>Renner: Der Hauptausschuss will die Verordnung noch sehen.</p>
+                  <p>Eldersch: Es wäre von großem Interesse, wenn diese Vollzugsanweisung sofort erscheint. Die Unternehmer halten mit der Einstellung unbedingt notwendiger Arbeitskräfte zurück.</p>
+                  <p>Renner: Aufgrund des allgemeinen Ermächtigungsgesetzes?</p>
+                  <p>Hanusch: Die Vollzugsanweisung ist schon im Neuen Tag erschienen. Nur zwei Personen haben diese Anweisung bekommen (?Hueber) und ?Geburger (Unternehmervertreter). </p>
+                  <p>Jeder Unternehmer, der mehr als 10 Arbeiter hat, [wird] verpflichtet, 20% Arbeitslose einzustellen. Die Entscheidung trifft die Bezirkskommission betreffend </p>
+                  <p>die praktische Arbeitslosenvermittlung. Jene Industriezweige, die nicht arbeiten, werden natürlich nicht einstellen müssen. Stets ein Einvernehmen zwischen Arbeiter- und </p>
+                  <p>Unternehmerorganisationen.</p>
+                  <p>Renner: [Bezüglich der] Indiskret[ion] Polizeipräsident beauftragt, Erhebungen zu pflegen. </p>
+                  <p>Von Kabinettssitzungen von besonderem Interesse, von Hauptausschusssitzungen verständigt wird. Hanusch direkt mit Schober ins Einvernehmen.</p>
+                  <p><pb facs="krp-0069_s01-0002"/>Hanusch: Mit Präsident reden und klar machen, dass für Hauptausschuss keine Zeit mehr ist. Die Erlassung muss erfolgen nachdem es mit Seitz geregelt ist.</p>
+                  <p>Genehmigt.</p>
+                  <p>8. Hanusch: Urlaubsverordnung.</p>
+                  <p>Fink: 6 Monate im Betrieb.</p>
+                  <p>Angenommen.</p>
+                  <p>9. Schumpeter: Im Tiroler Landtag eingebrachten Antrag [ab]zulehnen, [nach dem] Eingänge der außerordentlichen Vermögensabgabe im Land Tirol </p>
+                  <p>zurückbehalten werden müssen. Frage, ob gebilligt wird. Auf einen solchen Beschluss Antwort: Im Falle Tirol die Vermögensabgabe, welche [dazu] </p>
+                  <p>dienen .... natürlich muss dann [Tirol] uno actu auch den entsprechenden Teil der Kriegslast </p>
+                  <p>übernehmen - und decken müsste. Dieser Anteil der Kriegslast ist größer als die Eingänge aus der Vermögensabgabe. </p>
+                  <p>Weiters würde ich antworten, dass, da es sich ohnehin um die Abbürdung von Kriegslasten handelt, tatsächlich [diese], wenngleich die Abrechnung </p>
+                  <p>zentral erfolgt, sich in eine Landesangelegenheit verwandeln würde, wenn Tirol dabei selbständig vorgehen sollte.</p>
+                  <p>Fink: Gesetzesbeschluss?</p>
+                  <p>Schumpeter: Es handelt sich um einen eingebrachten Antrag.</p>
+                  <p>Renner: Zuschrift nach Innsbruck und zunächst so, dass der Landtag darin keine Kompetenz hat und dass die Organe von der Zentralregierung Befehle entgegenzunehmen haben </p>
+                  <p>und dass Schumpeter nicht kontrasignieren wird. Zuschrift an Landeshauptmann.</p>
+                  <p>10. Schumpeter: Appell im Falle überflüssiger Konzeptkräfte: Bedarf im Staatsamt der Finanzen.</p>
+                  <p>Ellenbogen: Für die äußeren Hilfsarbeiten aus dem Stand der arbeitslosen Handlungsgehilfen eingestellt.</p>
+                  <p>11. a) Schumpeter: Ungarn, Null, aufgeschoben.</p>
+                  <p>11. b) [Schumpeter]: Deutsche Finanzkommission. Protokolle sind zugekommen den Kabinettsmitgliedern.</p>
+                  <p>Bauer: Frage, ob jetzt die Fortsetzung der Verhandlungen mit dem Deutschen Reich für angezeigt erscheint. </p>
+                  <p>Bezüglich einzelner Angelegenheiten wäre es sehr gut, die Verhandlungen fortzusetzen, z. B. die Rechtskommission, Unterrichtskommission sollte möglichst </p>
+                  <p>schnell zusammentreten. Bittet die zuständigen Staatssekretäre darauf zu sehen.</p>
+                  <p>Finanzkommission, von Deutschland aus [ist die] Anregung gemacht worden, unsere Vertreter nach Berlin zu schicken. Von unserem Gesichtspunkt wäre nichts dagegen einzuwenden.</p>
+                  <p>Schumpeter: Pflichtet Bauer bei. Detailfragen, deren Erörterung mit Nutzen fortgesetzt werden kann. 14 Tage die Verhandlungen auszusetzen wäre erwägenswert. Dazu [sind] die Herren jetzt nicht alle entbehrlich.</p>
+                  <p>Fink: Die Verhandlungen jetzt nicht demonstr[ativ] zu forcieren. Deutschland fragen, ob sie es jetzt wünschen. Auch dort werden sie wegen </p>
+                  <p>der Friedensverhandlungen kaum Zeit haben. Daher zweckmäßig, etwas zuzuwarten.</p>
+                  <p>Bratusch: Rechtsangelegenheiten auf staatsrechtlichem Gebiet - sollen wir uns beteiligen in Deutschland an der Schaffung des neuen Strafgesetzes oder sollen wir </p>
+                  <p>allein arbeiten?</p>
+                  <p><pb facs="krp-0069_s01-0003"/>Hanusch: Die bereits begonnenen Verhandlungen sollten nicht unterbrochen werden (Sozialpolitik).</p>
+                  <p>Bauer: Verfassungsausschuss. Zu einer Verfassungsberatung wäre es gewiss nicht gut, jetzt Vertreter zu entsenden. </p>
+                  <p>Beratungen über die Angleichung der Strafgesetzgebung, Sozialversicherung etc. halte ich für förderlich.</p>
+                  <p>Bratusch: Im Strafgesetz handelt es sich nicht um eine Fortsetzung. Wir müssten fragen, ob sie uns mitarbeiten lassen.</p>
+                  <p>Paul: Meine Kommission soll auch nicht in Betracht gezogen werden. Jetzt über eine Tarif- und Verkehrseinheit zu sprechen, halte ich für unmöglich.</p>
+                  <p>Renner: Die Rechtskommission soll unbeschadet weiterverhandeln; ebenso die Unterrichtskommission ihre Arbeit beginnen oder fortsetzen. </p>
+                  <p>Verkehrskommission wird wegen der Unmöglichkeit .... nicht in Funktion treten. </p>
+                  <p><hi rend="#s">Finanzkommission wird zusammentreten - Kommission, die hier getagt hat über den ganzen Komplex der Fragen über die Währungsangleichung, Staatsschuldsteuer, dagegen für Kreditverhandlungen</hi> -</p>
+                  <p>Bauer: Wenn Deutschland will, kann die Finanzkommission gleich zusammentreten (sie wird sich dann nur als Valuta-Kommission beschäftigen). </p>
+                  <p><hi rend="#s">Die Deutschen sollen gefragt werden, ob sie</hi> -</p>
+                  <p>Schumpeter: <hi rend="#s">Es seien die Verhandlungen fortzusetzen oder nicht fortzusetzen seien</hi> - Antrag: gegenwärtig sind die finanziellen Verhandlungen mit dem Deutschen Reich - sich auf die laufenden </p>
+                  <p>Fragen der nächsten Zeit beschränken sollen. Dazu soll die Finanzkommission nach Berlin gehen.</p>
+                  <p>Bauer: Meiner Meinung nach kann es nur nützen, wenn wir mit Deutschland verhandeln, weil die Entente sehen wird, dass sie uns helfen muss, wenn sie nicht will, dass es Deutschland tut.</p>
+                  <p>Beschluss: Die finanziellen Verhandlungen mit Deutschland sind vom Staatsamt für Finanzen fortzusetzen und hätten zum Hauptinhalt zu nehmen die akt[uellen] Fragen, insbesondere die Gewährung eines Valuta-</p>
+                  <p>Darlehens. Nicht mit großer Aufmachung zu führen.</p>
+                  <p>Verfassungsverhandlungen sind nicht akt[uell].</p>
+                  <p>Justiz wird ermächtigt, Vertreter nach Berlin zu schicken, um an den Verhandlungen [über die] Strafgesetze - fortzuführen.</p>
+                  <p>Soziale Verwaltung [wird] ermächtigt, [<hi rend="#i">Einschub:</hi>] Angleichung zwischen [<hi rend="#i">Einschub Ende</hi>] über Arbeitsrecht und Sozialversicherung aufzunehmen oder fortzuführen.</p>
+                  <p>12. Zerdik: Heinl Präsident der Volksbekleidung.</p>
+                  <p>Renner: <hi rend="#s">Unter der Voraussetzung, dass den</hi> -</p>
+                  <p>13. Schumpeter: Runddruckpapier. </p>
+                  <p>Frage, ob diese Politik fortgesetzt werden soll; es handelt sich um weitere Preiserhöhungen. </p>
+                  <p>Die Subvention, die angesprochen wurde, würde 3-4 Millionen jährlich betragen.</p>
+                  <p>Ellenbogen: [Bin] der Meinung, dass mit dem System ein Ende gemacht werden muss. Der ganze Aufbau ist darauf zurückzuführen, dass während des früheren Regimes die Kriegsverwaltung </p>
+                  <p>die Presse genötigt hat, in ihrem Sinn zu schreiben und zum Bedienten der Heeresverwaltung zu machen.</p>
+                  <p>Dieses System ist weggefallen. Vom Standpunkt der Pressefreiheit allein ist es notwendig, dass die Verbindung von Presse und staatlicher Subvention endlich aufhört. </p>
+                  <p>Weiters an sich ein korruptives Element. Ein anständiger Journalist wehrt sich dagegen.</p>
+                  <p>Politisch bedeutet der ganze Aufbau eine Umkehrung dessen, was die politische Entwicklung will: Konservierung derjenigen Zeitungen, die gar keinen </p>
+                  <p>Rückhalt in der Öffentlichkeit haben. Die Stimmung der öffentlichen Meinung ist auf Seite Schumpeters, durch die Börsenpresse wird sie sich nicht abbringen lassen.</p>
+                  <p>Redner macht Vorschlag: aus den är[arischen] Forsten billiges Schleifholz den Papierfabriken zur Verfügung [zu] stellen. </p>
+                  <p>[Es] wäre zu erwägen, ob nicht aus diesen Forsten eine billige Holzanlieferung zu erzielen wäre.</p>
+                  <p><pb facs="krp-0069_s01-0004"/>Weiters Vorschlag: man soll trachten, einen Ausgleich zwischen Papierindustrie und Holzproduzenten herbeizuführen. </p>
+                  <p>Wenn der Kabinettsrat beschließt, dass Ende Halbjahr 1919 hört die staatliche Subvention auf, dann werden die Herrschaften gezwungen sein, auf einen solchen Ausgleich </p>
+                  <p>einzugehen.</p>
+                  <p>Antrag: Beschluss, mit diesem Subventions-System spätestens am 30. /6. <hi rend="#s">einzustellen</hi> zu brechen.</p>
+                  <p>Eldersch: Stehe auf dem Standpunkt Ellenbogens. Es kann sich nicht um nennenswerte Beträge handeln bei den Zeitungen, die wirklich jemand hinter sich haben.</p>
+                  <p>Stöckler: Stimmt Eldersch zu. Die Einbuße wird nicht allzu bedeutend sein. Ein Abbau soll eintreten, bis Ende des Jahres eintreten zu lassen.</p>
+                  <p>Billiges Holz aus den Staatsforsten ist nicht bedeutend, geringes Quantum.</p>
+                  <p>Schumpeter: Man verkündet das Programm des Abbaus der Subvention. Der Kabinettsrat steht auf dem Standpunkt, dass das System .... grundsätzlich zu missbilligen -.</p>
+                  <p>Renner: 1) Frage der Int[erpellations]-Beantwortung: wäre mit der Schlussklausel, dass die Staatsregierung tunlichst rasch einen Abbau mit Schonung aller </p>
+                  <p>Interessen vorzunehmen [beabsichtigt].</p>
+                  <p>2) Die Sache selbst: Antrag: der Kabinettsrat beauftragt Staats[sekretär] für Finanzen [<hi rend="#i">Einschub:</hi>] und Staatssekretär für Handel [<hi rend="#i">Einschub Ende</hi>] [den] Kabinettratsmitgliedern bis zur nächsten Sitzung einen detaillierten Antrag </p>
+                  <p>im Sinne des Abbaues zu unterbreiten, worauf [sie] diesen dann studieren und in der übernächsten Sitzung endgültig beschließen [werden].</p>
+                  <p>Grimm: Die Sache des Abbaues geht das Staatsamt für Finanzen gar nichts an. Daher Staatsamt für Handel.</p>
+                  <p>14. Schumpeter: Budgetvorlagen noch nicht eingelangt.</p>
+                  <p>15. Schumpeter: Pensionsparteien.</p>
+                  <p>Grimm: Die Frage [ist] schon [am] 9. /4. zur Frage gestanden. Auch die Militärpensionisten hätten miteinbezogen werden sollen. </p>
+                  <p>Erst jetzt ist im Zuge die Auszahlung der Teuerungszulage für die Militärpensionisten. Wenn diese flüssig gemacht sind, wird auch ein </p>
+                  <p>Anschaffungsbeitrag an die Militärpensionisten gegeben werden. Ein Abwarten würde die Sache verzögern. </p>
+                  <p>[...].</p>
+                  <p>Bauer: Warum ist die Frage so dringlich? Weil morgen die Dem[onstration] der liquidierenden Militärgagisten.</p>
+                  <p>Waiss: -.</p>
+                  <p>Bauer: Der Staatskanzler soll sich heute noch für den Soldatenrat (Zentralrat) kommen lassen und ihnen sagen, dass das Kabinett nicht in der Lage ist, in der Volkswehr-Angelegenheit</p>
+                  <p> zu entscheiden, wenn er nicht zugegen ist. Zuerst muss der Friede geschlossen werden mit den Südslawen, dann werden die Verhandlungen aufgenommen. </p>
+                  <p>Vollzugsausschuss des Soldatenrates.</p>
+                  <p>Grimm: <hi rend="#s">Halber Zuschuss, den die Pension bisher</hi> - Allen Parteien durchweg das 2½-fache des November-Zuschusses geben. </p>
+                  <p>Dadurch haben sie alles bekommen, was die <hi rend="#s">Pensionsparteien</hi> akt[iven] Parteien bekommen hat.</p>
+                  <p>Deutscher Nationalität - bleibt drinnen!!</p>
+                  <p>16. Renner: Bezüge der Staatssekretäre. Bauer: Absolut dagegen, dass etwas bewilligt wird ohne Gesetz.</p>
+                  <p>Gefallen.</p>
+                  <p>17. [Renner]: Pension regeln. Politisch jetzt nicht zu machen. Das kann per anal[ogon] des früheren Zustandes gemacht werden.</p>
+                  <p><pb facs="krp-0069_s01-0005"/>Paul: Antrag, Staatskanzler oder Staatssekretär für Finanzen tritt mit der betreffenden Anstalt in Unterhandlung ....</p>
+                  <p>Angenommen (R[...] und Glöckel).</p>
+                  <p>Miklas: -.</p>
+                  <p>Eldersch: Im Verfassungsausschuss.</p>
+                  <p>?Ministerpension Paul ebenso bewilligt.</p>
+                  <p>18. Loewenfeld: Kreditpolitik. Schumpeter [erklärte] zuerst Kredit für Rohstoffe und erst dann für Lebensmittel; </p>
+                  <p>alles das muss einheitlich gemacht werden (Freihandel und zentrale Bewirtschaftung).</p>
+                  <p>Stellt Antrag, [dass die] Frage der finanziellen Bedeckung für die Einfuhr, die Art der Regelung der Ausfuhr und die Frage, wie sich die Mitglieder </p>
+                  <p>der Regierung in der Öffentlichkeit gegenüber der Frage des Freihandels zu stellen haben, in einem Komitee der beteiligten </p>
+                  <p>Staatsämter in der allernächsten Zeit besprochen wird, damit nach einer Richtung hin vorgegangen wird. </p>
+                  <p>Also Frage des Freihandels und Beschaffung der Zahlungsmittel für die Ausfuhr und Einfuhr.</p>
+                  <p>Bauer: Unterstützt den Antrag. Seit November wiederholt darauf aufmerksam gemacht, die Wertpapiere, die wir haben vom Ausland, insbesondere vom neuen Ausland, nutzbar zu machen </p>
+                  <p>für die Valuta-Beschaffung, sei es, dass man sie verkauft, sei es, dass man sie verpfändet. Der </p>
+                  <p>Redner macht aufmerksam, dass höchste Gefahr im Verzug ist. Wenn wir diese Werte jetzt nicht benützen, werden wir sie verlieren unter dem Titel der Kriegsentschädigung.</p>
+                  <p>Grimm: Verwahrt sich.</p>
+                  <p>Eldersch: Wir kaufen billiger und da wird -.</p>
+                  <p>Beschluss: [Es wird ein Komitee bestehend aus] Finanzen, Handel, Volksernährung eingesetzt, welches die Frage einer einheitlichen Haltung bezüglich Freihandel und Frage der Kreditbeschaffung für die </p>
+                  <p>Lebensmittel-Importe -. Das Komitee [wird] neuerdings darauf aufmerksam gemacht, dass ausländische Guthaben in Auslands-</p>
+                  <p>Effekten nutzbar gemacht werden.</p>
+                  <p>19. Paul: Die Innsbrucker Landesregierung protestiert energisch gegen die Verfügung des Staatsamtes .....</p>
+                  <p>Keine Antwort.</p>
+                  <p>Schluss ½7.</p>
+               </div>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,546 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href='http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:acdh="https://vocabs.acdh.oeaw.ac.at/schema#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xml:lang="de">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="a" type="main" n="0059">Kabinettsprotokoll Nr. 59 vom 9. April 1919</title>
+            <title level="m" type="main" n="01">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <title level="m" type="sub" n="">Renner II (15. März – 17. Oktober 1919)</title>
+            <meeting>
+               <placeName key="https://d-nb.info/gnd/4066009-6">Wien</placeName>
+               <orgName key="https://d-nb.info/gnd/5162749-8">Kabinettsrat</orgName>
+               <date when-iso="1919-04-09"/>
+            </meeting>
+            <editor>
+               <persName key="https://d-nb.info/gnd/122481836"
+                         role="hasCreator"
+                         xml:id="hwohnout">
+                  <forename>Helmut</forename>
+                  <surname>Wohnout</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</affiliation>
+               <idno type="ORCID">0000-0002-3864-9839</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/120789825"
+                         role="hasCreator"
+                         xml:id="tolechowski">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0003-3291-6876</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/131679384"
+                         role="hasCreator"
+                         xml:id="rlein">
+                  <forename>Richard</forename>
+                  <surname>Lein</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0002-7502-0503</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="aholzer">
+                  <forename>Anna</forename>
+                  <surname>Holzer</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0005-3560-3500</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="dsoelkner">
+                  <forename>Dominik</forename>
+                  <surname>Sölkner</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-9895-7212</idno>
+            </editor>
+            <editor>
+               <persName role="hasContributor" xml:id="ischotzko">
+                  <forename>Ina</forename>
+                  <surname>Schotzko</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-5210-3713</idno>
+            </editor>
+            <funder n="1">
+               <orgName key="https://d-nb.info/gnd/2054142-9" role="hasFunder">Österreichischer Wissenschaftsfonds FWF</orgName>
+               <idno type="project">PAT1495024</idno>
+               <title type="project">Die Protokolle des österreichischen Kabinettsrates 1919–1920</title>
+            </funder>
+            <respStmt>
+               <resp>Projektverantwortung</resp>
+               <orgName key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Projektleitung</resp>
+               <persName key="https://d-nb.info/gnd/120789825" role="hasPrincipalInvestigator">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+                  <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+                  <idno type="ORCID">0000-0003-3291-6876</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Nationaler Forschungspartner</resp>
+               <orgName key="https://d-nb.info/gnd/1123037736" role="hasEnabler">Austrian Centre for Digital Humanities</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Digitalisierung der gedruckten Quellen</resp>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>TEI-Datenmodellierung</resp>
+               <persName role="hasContributor" xml:id="tfruehwirth">
+                  <forename>Timo</forename>
+                  <surname>Frühwirth</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-3997-5193</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technische Supervision</resp>
+               <persName key="https://d-nb.info/gnd/1043833846"
+                         role="hasContributor"
+                         xml:id="pandorfer">
+                  <forename>Peter</forename>
+                  <surname>Andorfer</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-9575-9372</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technisches Consulting und Vorbereitung der Druckausgabe</resp>
+               <persName key="https://d-nb.info/gnd/13281899X"
+                         role="hasContributor"
+                         xml:id="skurz">
+                  <forename>Stephan</forename>
+                  <surname>Kurz</surname>
+                  <affiliation key="https://d-nb.info/gnd/1202798799">Institut für die Erforschung der Habsburgermonarchie und des Balkanraumes</affiliation>
+                  <idno type="ORCID">0000-0003-2546-2570</idno>
+               </persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher key="https://d-nb.info/gnd/1001454-8">Österreichische Akademie der Wissenschaften</publisher>
+            <date when="2028"/>
+            <availability status="free">
+               <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">Lizenziert unter CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/deed.de)</licence>
+            </availability>
+            <idno type="ISBN_Print"/>
+            <idno type="ISBN_Part_epub"/>
+            <idno type="ISBN_Digital"/>
+            <idno type="DOI"/>
+            <idno type="DOI_zenodo"/>
+            <idno type="ebook_ID"/>
+         </publicationStmt>
+         <seriesStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="m" type="main">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <respStmt>
+               <resp>Bearbeitung und Herausgeberschaft</resp>
+               <orgName key="https://d-nb.info/gnd/2024703-5">Universität Wien</orgName>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+         </seriesStmt>
+         <notesStmt>
+            <note>Diese TEI-XML-Datei ist Grundlage für eine Druckausgabe der Edition.</note>
+            <relatedItem>
+               <biblStruct>
+                  <monogr>
+                     <imprint>
+                        <pubPlace key="https://d-nb.info/gnd/4066009-6">Wien</pubPlace>
+                        <publisher key="https://d-nb.info/gnd/2068748-5">Verlag der Österreichischen Akademie der Wissenschaften</publisher>
+                        <date when="2029"/>
+                     </imprint>
+                     <extent/>
+                  </monogr>
+                  <note>
+              <idno/>
+              <ptr/>
+            </note>
+                  <citedRange/>
+               </biblStruct>
+            </relatedItem>
+         </notesStmt>
+         <sourceDesc>
+            <bibl>Quellbestand: AT-OeStA/AdR MRang MR 1Rep KRP Kabinettsratsprotokolle, 1918-1920 (Teilbestand)<ref target="https://www.archivinformationssystem.at/detail.aspx?id=5465">https://www.archivinformationssystem.at/detail.aspx?id=5465</ref>
+            </bibl>
+            <msDesc>
+               <msIdentifier>
+                  <institution key="https://d-nb.info/gnd/37748-X" role="hasOwner">AT-OeStA Österreichisches Staatsarchiv (Archiv (ÖStA))</institution>
+                  <repository key="https://d-nb.info/gnd/1601181-8">AT-OeStA/AdR Archiv der Republik, 1918- (Abteilung)</repository>
+                  <collection>AT-OeStA/AdR MRang MR 1Rep Ministerrat 1. Republik, 1918 - 1938 (Bestand)</collection>
+                  <idno>AT-OeStA_AdR-MRang-MR-1.-Rep.-KRP-059</idno>
+               </msIdentifier>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <abstract>
+            <p>
+          <!--to be generated-->
+        </p>
+         </abstract>
+      </profileDesc>
+      <encodingDesc>
+         <styleDefDecl scheme="css"/>
+         <tagsDecl>
+            <rendition xml:id="b" scheme="css">font-weight:bold;</rendition>
+            <rendition xml:id="su" scheme="css">vertical-align:super;font-size:.7em;</rendition>
+            <rendition xml:id="s" scheme="css">text-decoration:line-through;</rendition>
+            <rendition xml:id="u" scheme="css">text-decoration:underline;</rendition>
+            <rendition xml:id="ow" scheme="css">text-decoration:line-through;text-decoration-style:double;</rendition>
+            <rendition xml:id="r" scheme="css">display:block;text-align:right;</rendition>
+            <rendition xml:id="letterspaced" scheme="css">letter-spacing:0.15em;</rendition>
+            <rendition xml:id="i" scheme="css">font-style:italic;</rendition>
+         </tagsDecl>
+         <editorialDecl>
+            <hyphenation>
+               <p>
+            <!--to be added-->
+          </p>
+            </hyphenation>
+            <correction>
+               <p>
+            <!--to be added-->
+          </p>
+            </correction>
+            <normalization>
+               <p>
+            <!--to be added-->
+          </p>
+            </normalization>
+            <punctuation>
+               <p>
+            <!--to be added-->
+          </p>
+            </punctuation>
+            <stdVals>
+               <p>
+            <!--to be added-->
+          </p>
+            </stdVals>
+            <p>
+          <!--to be added-->
+        </p>
+         </editorialDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#tfruehwirth" when-iso="2026-10-13">TEIGarage output upconverted with upconvert.xsl</change>
+         <change who="#tfruehwirth" when-iso="2026-10-13">TEI header populated with generate_tei_templates.py</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface/>
+   </facsimile>
+   <text>
+      <body>
+         <div xml:id="doc-krp-0059.xml">
+            <head type="dokument">
+               <title type="num">59.<note type="footnote">Das Protokoll trägt den Vermerk <hi rend="#i">Vertraulich!</hi></note>
+               </title>
+               <title type="desc">
+                  <pb facs="krp-0059_r-0001"/>[Mittwoch] 1919-04-09</title>
+            </head>
+            <div type="dokumentkopf">
+               <div type="vorsitz">
+                  <head>Vorsitz:</head>
+                  <p>Renner</p>
+               </div>
+               <div type="anwesend">
+                  <head>Anwesend:</head>
+                  <p>Bratusch, Deutsch, Ellenbogen, Fink, Glöckel, Hanusch, Loewenfeld-Russ, Miklas, Paul, Pflügl, Resch, Schumpeter, Stöckler, Waiss, Zerdik</p>
+               </div>
+               <div type="zugezogen">
+                  <head>Zugezogen:</head>
+                  <p>-</p>
+               </div>
+               <div type="schriftfuehrer">
+                  <head>Schriftführer:</head>
+                  <p>unbekannt</p>
+               </div>
+               <div type="dauer">
+                  <head>Dauer:</head>
+                  <p>15.00–18.00 Uhr</p>
+               </div>
+            </div>
+            <div type="komponenten">
+               <p>Reinschrift, Beilagen, streng geheimer Anhang, Konzept, stenographische Mitschrift, Entwurf der Tagesordnung</p>
+            </div>
+            <div type="beilagen">
+               <head>Beilagen:</head>
+               <list>
+                  <item><ref target="#krp-0059_top05">Zu TOP 5</ref>: <ref target="#krp-0059_b01">Antrag des Staatsamtes für Land- und Forstwirtschaft Zl. 376/A.O. hinsichtlich Ausgestaltung der Agrarbehörde und Bildung eines eigenen Personalstandes für die rechtskundigen Beamten der Agrarbehörden</ref></item>
+                  <item><ref target="#krp-0059_top06">Zu TOP 6</ref>: <ref target="#krp-0059_b02">Antrag des Staatssekretärs für soziale Verwaltung auf Abänderung der Vollzugsanweisung über die Anforderung von Wohnungen durch die Gemeinden</ref></item>
+               </list>
+            </div>
+            <div type="protokoll">
+               <pb facs="krp-0059_r-0002"/>
+               <div type="top" xml:id="krp-0059_top01">
+                  <head>
+                     <label>
+                        <num n="1">1.</num>
+                        <seg>Verwendung der bisher in den Bahnhöfen für die Mitglieder des früheren Herrscherhauses bestimmten Repräsentationsräume.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Paul</hi> teilt mit, dass sich bei der dermalen herrschenden Not an Amtsräumen und im Hinblicke auf die geänderten Verhältnisse eine entsprechende Reduzierung, bzw. die gänzliche Auflassung der in den Stationsgebäuden der deutschösterreichischen Staatsbahnen vorhandenen, bisher für die Mitglieder des früheren Herrscherhauses bestimmten Repräsentationsräume als wünschenswert darstelle. Der sprechende Staatssekretär beabsichtigt diesfalls in den Bahnhofgebäuden Wiens und der Landeshauptstädte mit einer entsprechenden Einschränkung, in den übrigen Stationen mit einer gänzlichen Auflassung dieser Repräsentationsräume vorzugehen.</p>
+                  <p>Der Kabinettsrat stimmt diesem Vorhaben zu.</p>
+               </div>
+               <div type="top" xml:id="krp-0059_top02">
+                  <head>
+                     <label>
+                        <num n="2">2.</num>
+                        <seg>Leitung der Enquȇte der Staatsangestellten über die Errichtung einer Staatsangestelltenkammer.</seg>
+                     </label>
+                  </head>
+                  <p>Unterstaatssekretär <hi rend="#letterspaced">Glöckel</hi> verweist darauf, dass der Kabinettsrat in seiner Sitzung am 9. Jänner l. J. in der Frage der Errichtung einer Staatsangestelltenkammer die Einberufung und Abhaltung einer Enquȇte der Staatsangestellten genehmigt habe, in welcher deren Wünsche in Bezug auf die <pb facs="krp-0059_r-0003"/>Form der künftigen Mitwirkung der Staatsangestellten bei der Lösung sachlicher, den Staatsdienst im Allgemeinen berührender Fragen zur Verhandlung gelangen sollen. Zur Leitung der Enquȇte seien die damaligen Unterstaatssekretäre Dr. Beck, Dr. Waber und der sprechende Unterstaatssekretär bestimmt worden. Da die beiden Erstgenannten aus ihrer früheren Funktion geschieden seien, ersucht Unterstaatssekretär Glöckel um eine Entscheidung des Kabinettsrates über den nunmehrigen Vorsitz bei den Verhandlungen dieser Enquȇte und regt unvorgreiflich an, die Leitung dieser Beratungen ihm und dem Sektionschef Dr. Beck zu übertragen.</p>
+                  <p>Der Kabinettsrat stimmt dieser Anregung zu.</p>
+               </div>
+               <div type="top" xml:id="krp-0059_top03">
+                  <head>
+                     <label>
+                        <num n="3">3.</num>
+                        <seg>Einmaliger Zuschuss für Pensionsparteien.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Schumpeter</hi> führt aus, dass den aktiven deutschösterreichischen Staatsbediensteten im Februar 1. J. ein einmaliger Zuschuss zu den Teuerungszulagen gewährt worden sei. Den Staatsbediensteten des Ruhestandes, Witwen und Waisen nach Staatsbediensteten sowie den <pb facs="krp-0059_r-0004"/>Personen, die Gnadengaben beziehen, sei zum letzten Male im November 1918 ein einmaliger Zuschuss zu den (Teuerungs-)Aushilfen bewilligt worden. Das Ausmaß dieses Zuschusses bewege sich bei den Staatsbeamten (Staatslehrpersonen) des Ruhestandes zwischen 100 K und 126 K, bei den Witwen nach Staatsbeamten (Staatslehrpersonen) zwischen 80 K und 114 K und beträgt für Diener-, bzw. Arbeiterpensionisten 100 K, bzw. 80 K, für Dieners-, bzw. Arbeiterswitwen 80 K, beziehungsweise 60 K, für Beamtenswaisen 60 K und 40 K, für Dieners- und Arbeiterswaisen 40 K und 30 K, endlich für mit Gnadengaben beteilte Personen 30 K.</p>
+                  <p>Eines Vorschusses (wie die aktiven Staatsbediensteten) seien diese Personen im Dezember 1918 nicht teilhaftig geworden. In der Sitzung der im Staatsamte der Finanzen am 14. Februar 1919 zusammengetretenen Zwischenstaatlichen Kommission zur Regelung von Staatsbedienstetenfragen haben sich die Vertreter der Nationalstaaten vorbehaltlich der Genehmigung durch ihre Regierung mit dem Vorschlage des Staatsamtes der Fi<pb facs="krp-0059_r-0005"/>nanzen damit einverstanden erklärt, dass den obengedachten Pensionsparteien am 2. April 1919 ein einmaliger Zuschuss und zwar (hinsichtlich der zu Beteilenden) in den Grenzen (und hinsichtlich der Höhe) in dem Ausmaße der Finanzministerialverordnung vom 11. September 1918, RGBl. Nr. 334 von jener Finanzlandesbehörde, bei der ihr Ruhe- bzw. Versorgungsgenuss (Gnadengabe) in Vorschreibung steht, ausgezahlt werde.</p>
+                  <p>Die Zustimmung zu diesem Vorschlage sei von keiner Regierung der fremden Nationalstaaten eingelangt.</p>
+                  <p>Die Regierung des tschechoslowakischen Staates habe – wie von der Vertretung derselben in Wien über eine im kurzen Wege gestellte Anfrage mitgeteilt worden sei, – den in Böhmen, Mähren und Schlesien in Vorschreibung stehenden Pensionsparteien (ohne Rücksicht auf deren Staats- oder Volkszugehörigkeit) den einmaligen Zuschuss pro Februar 1. J. und im März l. J. einen Vorschuss auf einen im Mai zu gewährenden Zuschuss in den bisher bestimmt gewesenen Ausmaßen zur Auszahlung gebracht.</p>
+                  <p><pb facs="krp-0059_r-0006"/>Mit Rücksicht auf die verzweifelte wirtschaftliche Lage der Pensionsparteien in Deutschösterreich wäre nunmehr jenen in Deutschösterreich in Vorschreibung stehenden Pensionsparteien, welche die deutschösterreichische Staatsbürgerschaft besitzen, ehestens ein einmaliger Zuschuss flüssig zu machen.</p>
+                  <p>Das Ausmaß dieses Zuschusses hätte zu betragen, und zwar:</p>
+                  <list>
+                     <item n="1"><label>1.)</label> Für die Staatsbeamten des Ruhestandes das Dreifache,</item>
+                     <item n="2"><label>2.)</label> für die Witwen nach Staatsbediensteten und für elternlose Waisen das Zweifache,</item>
+                     <item n="3"><label>3.)</label> für vaterlose Waisen das Anderthalbfache,</item>
+                     <item n="4"><label>4.)</label> für mit Gnadengaben beteilte Personen das Zweifache des Novemberzuschusses.</item>
+                  </list>
+                  <p>Es würden sohin erhalten: </p>
+                  <p>Die Beamtenpensionisten 300 bis 378 K, die Diener-, bzw. Arbeiterpensionisten 300 K, bzw. 240 K, die Beamtenwitwen 160 K bis 228 K, die Dieners-, bzw. Arbeiterwitwen 160 K, zw. 120 K, die elternlosen Waisen 120 K, bzw. 80 K, die vaterlosen Waisen 60 K, bz<pb facs="krp-0059_r-0007"/>w. 45 K, endlich die mit Gnadengaben beteilten Personen 60 K.</p>
+                  <p>Die Auszahlung dieses einmaligen Zuschusses hätte grundsätzlich über Ansuchen der Partei unter Nachweis der deutschösterreichischen Staatsbürgerschaft zu erfolgen, könnte aber, soweit die im Zuge befindliche Scheidung der Pensionsparteien nach der Staatsbürgerschaft aufgrund von an die Pensionsparteien hinausgegebenen Fragekarten es ermöglicht, seitens der Finanzlandesbehörden auch von Amtswegen und zwar voraussichtlich gleichzeitig mit der Pensionsrate pro Mai, durchgeführt werden.</p>
+                  <p>Gegenüber dem tschechoslowakischen Staate müsste jedoch nach dem Grundsatze der Gegenseitigkeit vorgegangen werden und daher der einmalige Zuschuss auch den in Deutschösterreich in Vorschreibung stehenden Pensionsparteien, welche die tschechoslowakische Staatsbürgerschaft besitzen, aber auch nur in dem bisher festgesetzten Auslasse flüssig gemacht werden.</p>
+                  <p>Der (einmalige) Aufwand dieser Aktion dürfte für die Zivilstaatspen<pb facs="krp-0059_r-0008"/>sionisten etc. mit etwa 12 Millionen K, für die Staatsbahnpensionisten etc. mit etwa 8 Millionen K, sohin zusammen mit 20 Millionen K zu veranschlagen sein.</p>
+                  <p>Der sprechende Staatssekretär beantragt somit die Zustimmung des Kabinettsrates zu dieser Maßnahme.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Deutsch</hi> regt an, dass diese Zuschüsse auch den Militärpensionisten und deren Angehörigen zuteilwerden.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Schumpeter</hi> behält sich diesfalls die Stellungnahme des Finanzamtes vor.</p>
+                  <p>Der Kabinettsrat genehmigt den Antrag des Staatssekretärs für Finanzen unter der Voraussetzung der Einbeziehung der Militärpensionisten und deren Angehöriger in diese Aktion; falls diese Erweiterung vom Staatsamte der Finanzen nicht vertreten werden könnte, wäre die Angelegenheit neuerlich dem Kabinettsrate zur Schlussfassung zu unterbreiten.</p>
+               </div>
+               <div type="top" xml:id="krp-0059_top04">
+                  <head>
+                     <label>
+                        <num n="4">4.</num>
+                        <seg>Ergänzung des Salzburger Landesgesetzes vom 10. März 1885 über die Verwendung von Privathengsten zum Beschälen.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Stöckler</hi> teilt mit, dass die Provisorische Landesversammlung des Landes Salzburg am 14. Februar d. J, einen Gesetzesbeschluss, betreffend die Ergänzung des <pb facs="krp-0059_r-0009"/>Gesetzes vom 10. März 1885 über die Verwendung von Privathengsten zum Beschälen, gefasst habe.</p>
+                  <p>Über Antrag des sprechenden Staatssekretärs beschließt der Kabinettsrat den Beitritt der Staatsregierung zu diesem Gesetzesbeschlusse.</p>
+               </div>
+               <div type="top" xml:id="krp-0059_top05">
+                  <head>
+                     <label>
+                        <num n="5">5.</num>
+                        <seg>Ausgestaltung der Agrarbehörden; Bildung eines eigenen Personalstandes für die rechtskundigen Beamten der Agrarbehörden.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Stöckler teilt mit, dass aufgrund der Reichsgesetze vom 7. Juni 1883, RGBl. Nr. 92 und 94 die Agrarbehörden geschaffen worden seien, und zwar für die Durchführung von Zusammenlegungen landwirtschaftlicher Grundstücke sowie für die Teilung gemeinschaftlicher Grundstücke und die Regulierung der hierauf bezüglichen gemeinschaftlichen Benützungs- und Verwaltungsrechte. In der Folge seien diesen Behörden weitere Agenden zugewachsen und zwar die Durchführung der Gesetze, betreffend die Neuregulierung, Ablösung und Sicherung der im Verfahren auf Grund des kaiserlichen Patentes vom 5. Juli 1853, RGBl. Nr. 130 regulierten Holz-, Weide- und Forstproduktenbezugsrechte, ferner der Gesetze zum Schutze der Alpen und Förderung der Alp- und Weidewirtschaft.</p>
+                  <p><pb facs="krp-0059_r-0010"/>In nächster Zukunft werden die Agrarbehörden bei Handhabung des Gesetzes über die Wiederbesiedlung gelegter Bauerngüter und der sonstigen Gesetze im Rahmen der geplanten Bodenreform noch weitere besonders wichtige Aufgaben zu lösen haben. Die politischen Behörden kommen für die Handhabung dieser Gesetze mit Rücksicht auf den Mangel an entsprechenden Fachorganen nicht in Betracht. Letzterer Umstand hätte es auch mit sich gebracht, dass die politischen Behörden eine produktionsfördernde Tätigkeit auf dem Gebiete der Landeskultur nicht entwickeln konnten. Es hätten daher die einschlägigen Aufgaben den landwirtschaftlichen Korporationen übertragen werden müssen, wobei vielfach keine Gewähr für eine sachgemäße Verwendung der hiefür vom Staate gewidmeten Mittel bestand.</p>
+                  <p>Sollen nun die Agrarbehörden ihren neuen, vielfach vergrößerten Aufgaben voll entsprechen, so erweise es sich vor allem als notwendig, raschestens mit der Ausgestaltung derselben und zwar durch sofortige Aufstellung von zehn neuen Agrarkommissariaten zu den derzeit in Deutschösterreich bestehenden 14 zu beginnen <pb facs="krp-0059_r-0011"/>und diese Ämter mit den entsprechenden Fachkräften auszustatten.</p>
+                  <p>Ein weiteres dringendes Erfordernis für eine ersprießliche Tätigkeit der Agrarbehörden bilde die Schaffung eines eigenen Personalstandes für das juridisch-administrative Personal dieser Behörden. Derzeit bilden nur die technischen Fachkräfte einen eigenen Personalstatus, während die rechtskundigen, im Agrardienst verwendeten Beamten gegenwärtig dem Personalstande verschiedener Verwaltungszweige entlehnt werden. Dies gebe zunächst insofern zu Misshelligkeiten Anlass, als erfahrungsgemäß die Behörden, an welche mit dem Ansuchen um Überlassung von Beamten für den Agrardienet herangetreten wird, in der Regel und begreiflicherweise nur mit Widerstreben geeignete Beamte abzugeben gewillt sind. Weiters sei es aber auch bei dem gegenwärtigen Zustande den Agrarbehörden selbst unmöglich, geeignete Kräfte für den Agrardienst heranzubilden, die in allen Zweigen dieses Dienstes eingearbeitet und bewandert, im Bedarfsfalle für die Besatzung leitender Stellen jederzeit zur Verfügung stünden. Dies könnte nur durch Bildung <pb facs="krp-0059_r-0012"/>eines eigenen Personalstandes, der eventuell mit jenem der rechtskundigen Beamten der Forst- und Domänendirektion und in weiterer Folge mit dem Personalstande des Staatsamtes für Land- und Forstwirtschaft zu vereinigen wäre, erreicht werden.</p>
+                  <p>Der sprechende Staatssekretär stellt sohin, den Antrag, es sei</p>
+                  <list>
+                     <item n="1"><label>1.)</label> Die Aufstellung von zehn neuen Agrarkommissariaten sofort in die Wege zu leiten und seien diese mit den notwendigen Fachkräften auszustatten;</item>
+                     <item n="2"><label>2.)</label> sei ungesäumt die Zusammenfassung der rechtskundigen Beamten der Agrarbehörden in einen eigenen Personalstatus zu veranlassen, der mit jenen für die rechtskundigen Beamten der Forst- und Domänendirektion, sowie des Staatsamtes für Land- und Forstwirtschaft zu vereinigen wäre.</item>
+                  </list>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> regt angesichts der gegenwärtigen Sperre der Neuaufnahme von Staatsbediensteten an, dass bei allfälligen unausweichlichen Ergänzungen des Personalstandes der Agrarbehörden auf jene gegenwärtig verfügbaren Staatsangestellten gegriffen werde, welche die von den fremden Nationalstaaten besetzten, ehemals <pb facs="krp-0059_r-0013"/>österreichischen Gebiete verlassen mussten. Ein Kataster dieser Beamten, deren Unterbringung ein Gebot nationaler Pflicht sei, werde in der Minderheitsschutzstelle der Staatskanzlei geführt und könne dortselbst in denselben jederzeit Einsicht genommen werden.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Schumpeter</hi> erhebt grundsätzlich gegen die beantragten Maßnahmen keine Einwendung, ersucht jedoch um die ausdrückliche Zusage, dass bei der Ausstattung der einzelnen Ämter, insbesondere mit Beamten in höheren Rangsklassen, die größtmöglichste Zurückhaltung geübt werde.</p>
+                  <p>Nachdem Staatssekretär <hi rend="#letterspaced">Stöckler</hi> dies zugesichert hatte, genehmigt der Kabinettsrat den vorliegenden Antrag.</p>
+               </div>
+               <div type="top" xml:id="krp-0059_top06">
+                  <head>
+                     <label>
+                        <num n="6">6.</num>
+                        <seg>Abänderung der Vollzugsanweisung des Staatsamtes für soziale Fürsorge vom 13. November 1918, StGBl. Nr. 22, betreffend die Anforderung von Wohnungen durch die Gemeinden.</seg>
+                     </label>
+                  </head>
+                  <p>Nach einer eingehenden Begründung erhält Staatssekretär <hi rend="#letterspaced">Hanusch</hi> vom Kabinettsrate die Ermächtigung zur Erlassung einer Vollzugsanweisung des Staatsamtes für soziale Verwaltung, womit die Vollzugsanweisung <pb facs="krp-0059_r-0014"/>vom 13. November 1918, StGBl. Nr. 22 über die Anforderung von Wohnungen durch die Gemeinden abgeändert wird.</p>
+                  <p>Im Zuge seiner Erörterungen verwies Staatssekretär Hanusch unter anderem auf den gegenwärtig unverhältnismäßig großen und die Wohnungsnot neuerlich steigernden Zuzug aus Galizien und Ungarn, worauf der Kabinettsrat weiters das Staatsamt für Inneres und Unterricht zur einschlägigen Erhebung und zur Ausarbeitung abfällig gebotener Maßnahmen anwies.</p>
+               </div>
+               <div type="top" xml:id="krp-0059_top07">
+                  <head>
+                     <label>
+                        <num n="7">7.</num>
+                        <seg>Frage der Milchpreiserhöhung.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Loewenfeld-Russ</hi> schildert in eingehender Weise die gegenwärtige Milchsituation in Wien. Sowohl von den Produzenten wie von den Händlern werde bereits seit Monaten eine Erhöhung des jetzigen Milchpreises, und zwar unter Darstellung der einschlägigen Gestehungskosten verlangt, von deren Richtigkeit sich das Staatsamt für Volksernährung aufgrund genauester Überprüfung überzeugt habe. Auch die Zentralpreisprüfungskommission hätte die sachliche Berechtigung einer namhaften Erhöhung der Milchpreise anerkannt. Angesichts der po<pb facs="krp-0059_r-0015"/>litischen Bedeutung einer derartigen Maßnahme im jetzigen Zeitpunkte erachte es der sprechende Staatssekretär aber für geboten, diesfalls vorher die Auffassung des Kabinetts kennen zu lernen.</p>
+                  <p>Bei der sich hierüber entwickelnden längeren Debatte, an welcher sich der <hi rend="#letterspaced">Vorsitzende</hi>, Vizekanzler <hi rend="#letterspaced">Fink</hi>, die Staatssekretäre <hi rend="#letterspaced">Stöckler</hi>, <hi rend="#letterspaced">Hanusch</hi> und der Referent sowie Unterstaatssekretär <hi rend="#letterspaced">Miklas</hi> beteiligten, trat die Auffassung zutage, dass sich im gegenwärtigen Augenblicke und in Anbetracht der bevorstehenden unausweichlichen Erhöhung der Brot-, Mehl- und Zuckerpreise, eine gleichzeitige namhafte Erhöhung der Milchpreise politisch schwer vertreten ließe.</p>
+                  <p>Der Kabinettsrat beschloss demgemäß die Verhandlung über diesen Gegenstand vorläufig zu vertagen.</p>
+                  <p/>
+               </div>
+            </div>
+            <div type="anhaenge">
+               <p><pb facs="krp-0059_a01-0001"/>Streng geheimer Anhang zum Kabinettsprotokoll Nr. 59 vom 9. April 1919.</p>
+               <p><pb facs="krp-0059_a01-0002"/></p>
+               <div n="1">
+                  <head>Anbotzwang</head>
+                  <div type="a01_protokoll">
+                     <p>Staatsekretär Dr. <hi rend="#letterspaced">Schumpeter</hi> verweist auf die überaus bedenkliche finanzielle Lage, in der wir uns rücksichtlich der Bezahlung der ausländischen Lebensmittelimporte befinden. Es sei nur billig, dass jeder, der einen Beitrag hiezu leisten könne, ihn auch tatsächlich leiste. Die Finanzverwaltung werde deshalb auf alle Effekten, deren Coupons in Gold zahlbar sind, auf ausländische Valuten und Devisen, ferner auf gemünztes und ungemünztes Gold, verarbeitetes Gold sowie auf Edelsteine und Perlen greifen müssen. Mit Zustimmung des Staatssekretärs für Äußeres beabsichtige der sprechende Staatssekretär, eine diesbezügliche Vollzugsanweisung zu erlassen. Hiebei sollen jedoch ausgenommen werden: </p>
+                     <list>
+                        <item n="1"><label>1.)</label> Dinge von Kunstwert,</item>
+                        <item n="2"><label>2.)</label> Familienstücke, bei welchen sich glaubhaft nachweisen lässt, dass sich besondere Gefühlsmomente daran knüpfen und </item>
+                        <item n="3"><pb facs="krp-0059_a01-0003"/><label>3.)</label> Goldgegenstände, die Kultuszwecken dienen. </item>
+                     </list>
+                     <p>Es kämen hiebei selbstverständlich auch die nicht schon in den Safes sichergestellten Werte in Betracht, weshalb auch die Möglichkeit der Vornahme von Hausdurchsuchungen ins Auge gefasst werden müsste.</p>
+                     <p>Zunächst würde es sich um einen [bloßen] Anmeldezwang handeln. Die faktische Enteignung der Gegenstände hätte späterhin gegen Entschädigung in Form von unverzinslichem Goldbons, die auf längere Zeit abgestellt sind, zu erfolgen. Wahlweise könnte auch die Einlösung in Geld zum Kurse der Devisenzentrale Platz greifen. </p>
+                     <p>Staatsekretär Dr. <hi rend="#letterspaced">Deutsch</hi> befürwortet wärmstens diese Maßnahme und wünscht deren Durchführung auf der breitesten Grundlage. </p>
+                     <p>Staatsekretär <hi rend="#letterspaced">Hanusch</hi> hegt lediglich Bedenken dagegen, <pb facs="krp-0059_a01-0004"/>dass Kultusgegenstände sogar von der Anmeldung ausgenommen werden sollen. Als selbstverständlich erachte er allerdings, dass diejenigen Gegenstände, welche unmittelbar zu gottesdienstlichen Handlungen dienen (Monstranzen etc.), auszunehmen seien. Er verweist jedoch darauf, dass in Wallfahrtsorten seines Wissens große Mengen von Schmuck und Goldgegenständen vorhanden seien und die Öffentlichkeit es nicht verstehen würde, wenn diese sogar von der Anzeigepflicht ausgenommen wären. </p>
+                     <p>Vizekanzler <hi rend="#letterspaced">Fink</hi> spricht sich für die gleichzeitige Erlassung einer Amnestie für Übertretungen früherer einschlägiger Verordnungen sowie dafür aus, dass eine nunmehrige Nichtablieferung die Konfiskation nach sich ziehen solle. </p>
+                     <p>Der <hi rend="#letterspaced">Vorsitzende</hi> hält dafür, dass die Häuserschau ausschließlich von geschulten Finanzorganen vorgenommen werde.<pb facs="krp-0059_a01-0005"/>Was die kirchlichen Sachen betreffe, so müsse man die sogenannten Sakralien, soweit sie im einzelnen Falle nicht in einer über das Erfordernis hinausgehenden großen Zahl vorhanden seien, unbedingt ausnehmen. Was die Devotionalien anbelangt, so wären diese heranzuziehen, äußerstenfalls wäre den Spendern die Möglichkeit freizulassen, an Stelle dieser Widmungen die entsprechenden Geldwerte zu erlegen.</p>
+                     <p>Als ersten Schritt halte er ebenfalls die allgemeine Anmeldung mit gleichzeitiger Amnestie und Verfallenschaftserklärung für geboten. Allerdings werfe sich noch die Frage auf, ob nicht unter einem auch jetzt schon alle Kunstwerke (Bilder, Kunstmöbel, etc.) verzeichnet werden sollten, zumal damit auch eine Unterlage für die Vermögensabgabe gewonnen würde. </p>
+                     <p>Staatssekretär Dr. <hi rend="#letterspaced">Loewenfeld-Russ</hi> erklärt, es müsse bei dieser Aktion dafür gesorgt werden, <pb facs="krp-0059_a01-0006"/>dass nur dem Staate das Verfügungsrecht über die hiedurch gewonnene ausländische Valuta zustehe. </p>
+                     <p>Unterstaatssekretär <hi rend="#letterspaced">Miklas</hi> ersucht, dass die in der Verordnung rücksichtlich der Kultusgegenstände vorzusehende Einschränkung in tunlichst engem Sinne ausgelegt und diesfalls schonungsvoll sowie im Einvernehmen mit den Ordinariaten vorgegangen werde. Es würde sich empfehlen gleichzeitig einen Amnestieerlass hinauszugeben, der sich auch auf die noch anhängigen finanzbehördlichen Untersuchungen zu erstrecken hätte. </p>
+                     <p>Staatssekretär Dr. <hi rend="#letterspaced">Bratusch</hi> bittet im Hinblicke darauf, dass die einschlägigen Strafbestimmungen im Rahmen des Ermächtigungsgesetzes erlassen werden sollen, ihm den Verordnungsentwurf persönlich zur Einsicht und Stellungnahme zu übermitteln. </p>
+                     <p>Staatsekretär Dr. <hi rend="#letterspaced">Schumpeter</hi> bemerkt noch ergänzend, dass Gebrauchsgegenstände über<pb facs="krp-0059_a01-0007"/>haupt und Gegenstände bis zum Werte von 2.000 K von der Anmeldepflicht ausgenommen werden könnten. </p>
+                     <p>Der Kabinettsrat stimmt den Vorschlägen des Staatssekretärs für Finanzen grundsätzlich zu, entscheidet sich jedoch gleichzeitig dafür, die Wertgrenze von 2.000 K fallen zu lassen und auch die Kunstgegenstände in die Anmeldepflicht einzubeziehen.</p>
+                  </div>
+               </div>
+               <div n="2">
+                  <head>Bericht des Staatssekretärs für Land- und Forstwirtschaft über die Ergebnisse der Länderkonferenz in der Holzaktion.</head>
+                  <div type="a02_protokoll">
+                     <p>Staatssekretär <hi rend="#letterspaced">Stöckler</hi> teilt mit, dass die im Zuge der Länderkonferenz abgehaltene Fachberatung über die zur Bestreitung der Kosten ausländischen Lebensmittellieferungen geplante Holzexportaktion ergebnislos verlaufen sei. Es hätten zwar die in Wien erschienenen Vertreter der Länder der Aktion mehr weniger zugestimmt, späterhin sei jedoch von den Landesräten auf telegrafischem Wege in entschiedenster Weise Einsprache gegen die zentrale Holzbewirtschaftung erhoben worden. Damit sei das <pb facs="krp-0059_a01-0008"/>ganze Projekt gefallen. Es müsse daher ein anderer Weg zur Lösung der Frage gesucht werden. Dazu komme, dass die Verarbeitung des Holzes bis zum Zeitpunkte seiner Exportfähigkeit wenigstens ein Jahr in Anspruch nehme, was mit Rücksicht auf die Dringlichkeit der Valutabeschaffung gleichfalls gegen das ursprüngliche Projekt spreche.Staatssekretär Stöckler denke daher an die Verpfändung der Staatswälder sowie der Wälder im privaten und im gemeinsamen Besitz. Durch eine derartige Verpfändung könnte man die gewünschte Valuta zweifellos erhalten. Überdies wären die Länder zur schleunigen Ablieferung des Holzes gezwungen, da sie naturgemäß bestrebt sein werden, das Pfandrecht ehestens zu lösen. Zur Durchführung dieser Aktion wäre natürlich ein Gesetz notwendig. Der sprechende Staatssekretär schlage daher vor, es möge über einen diesfalls im Staatsamte für Land- und Forstwirtschaft bereits ausgearbeiteten Entwurf <pb facs="krp-0059_a01-0009"/>eine Besprechung mit den Staatsämtern für Justiz, Finanzen sowie für Handel und Gewerbe, Industrie und Bauten abgehalten werden. </p>
+                     <p>Nach einer kurzen Debatte, an welcher sich außer dem Referenten Staatssekretär Dr. <hi rend="#letterspaced">Schumpeter</hi>, Vizekanzler <hi rend="#letterspaced">Fink</hi> und der <hi rend="#letterspaced">Vorsitzende</hi> beteiligten, beauftragt der Kabinettsrat die oben genannten vier Staatsämter die gesetzlichen Unterlagen für diese Aktion durch zwischenstaatsamtliche Beratungen vorzubereiten; diese Verhandlungen wären streng vertraulich zu führen und hätte eine Verlautbarung hierüber in der Presse jedenfalls zu unterbleiben. Gleichzeitig wird der Staatssekretär für Finanzen über sein Ansuchen ermächtigt, zur Negoziierung von Anleihen Vertreter, und zwar zunächst den ehemaligen Gouverneur der [Allgemeine österreichische] Bodencreditanstalt Dr. Sieghart nach Paris zu entsenden. </p>
+                     <p>Im Zuge der Debatte wurde schließlich auch darauf hinge<pb facs="krp-0059_a01-0010"/>wiesen, dass einzelne Länder Verfügungen (auch im Wege von Landesgesetzen ohne Gegenzeichnung der Staatsregierung) erlassen haben, die mit den staatsgesetzlichen Verfügungen bzw. mit Vollzugsanweisungen der Staatsämter im Widerspruche stehen; insbesondere treffe dies auf dem Gebiete des Verkehrswesens und der Finanzverwaltung zu. </p>
+                     <p>Der Kabinettsrat fasste diesfalls den Beschluss, die Staatssekretäre für Verkehrswesen und für Finanzen einzuladen, die nachgeordneten Stellen dahin zu instruieren, dass sie von keiner anderen Dienststelle Anweisungen. auch wenn sie in die Form von Landesgesetzen gekleidet sind, anzunehmen haben, außer wenn diese Anweisungen vom zuständigen Staatssekretär ausgehen; soweit Landesgesetze in Frage kommen, seien diese erst dann zu vollziehen, wenn sie die Gegenzeichnung des zuständigen Staatssekretärs tragen.</p>
+                     <p><pb facs="krp-0059_a01-0011"/>Für den Fall des Zuwiderhandelns wäre den Staatsbediensteten die Disziplinierung anzudrohen.</p>
+                     <p/>
+                  </div>
+               </div>
+            </div>
+            <div type="stenogramme">
+               <div n="1">
+                  <head>[KBR 59, 9. April 1919, Stenogramm]</head>
+                  <p><pb facs="krp-0059_s01-0001"/>Nr. 59, 9. /4.</p>
+                  <p>[<hi rend="#i">Rechtes Obereck:</hi>] Bauer entschuldigt.</p>
+                  <p>1. Paul: Bahnhofsräume: [Es wäre] sehr wünschenswert, [sie] bei unserer Wohnungs- und Amtsraumnot in irgendeiner Weise [zu] adapt[ieren]. Frage, ob nicht bescheidener Umfang </p>
+                  <p>genügen würde (in Wien). In den Stationen außerhalb Wiens könnten [sie] aufgelassen werden, in Wien auf ein gewisses Maß [reduzieren].</p>
+                  <p>2. Dienstreisen. [Paul]: [Es] wird überhaupt notwendig sein, das Verzeichnis über die Salonwagen und reservierten Abteile zu revidieren. Bittet um Ermächtigung, in der nächsten Sitzung ein neues Verzeichnis </p>
+                  <p>vorzulegen.</p>
+                  <p>Renner: [Ein] Staatssekretär braucht überhaupt keine Salonwagen, nur wenn [er] sehr weite Reisen mit Gefolge [unternimmt] (Berlin zu Verhandlungen), im Inland nicht. Für Dienstreisen wären ausreichend Coupés bereit zu stellen.</p>
+                  <p>Paul: Beim heutigen Andrang ist das Freihalten von Coupés eine sehr gefährliche Sache, viel gefährlicher wie die Beistellung eines äußerlich nicht kenntlichen Wagens. </p>
+                  <p>Bei Präsidenten eine Ausnahme weil eine gewisse staatliche Repräsentation erforderlich ist.</p>
+                  <p>Vizekanzler: Muss alle 14 Tage, muss doch wenigstens einen Sitzplatz -.</p>
+                  <p>Paul: Mitglieder der Nationalversammlung mit Leg[itimations]-Karte früher 1 ½ Stunden auf Peron.</p>
+                  <p>Fink: Schlafwagen, Hotelportier.</p>
+                  <p>Stöckler: Salonwagen ausgeschlossen; Reservierung von Cou[pés] sehr missliche Sache. [Es hat sich] bewährt: einen Wagenteil für die Nationalräte wäre zu reservieren.</p>
+                  <p>Pflügl: Bei jedem Entente-Zug war ein halbes Cou[pé] reserviert für [...].</p>
+                  <p>Paul: Werde bei der nächsten Kabinettsratssitzung Bericht erstatten.</p>
+                  <p>[<hi rend="#i">Am Rand:</hi>] Ergänzung des Gesetzes vom 10. /3. </p>
+                  <p>85 über die Verwendung von privaten Hengsten </p>
+                  <p>zum Beschälen. Beschluss in der Sitzung Salzburger Landesversammlung </p>
+                  <p>14. /2. 19.</p>
+                  <p>3. Glöckel: Enquete soll fortgesetzt werden. Will kennen Meinung des Kabinettsrates ob Staatssekretärs oder Unter[staatssekretär] die Führung übernehmen soll. </p>
+                  <p>Ich glaube, dass Beck und Glöckel die Führung übernehmen könnten.</p>
+                  <p>Keine Einwendung; so beschlossen.</p>
+                  <p>4. Schumpeter: Pensionsparteien.</p>
+                  <p>Deutsch: Anfrage, ob dieser Zuschuss auf die Militärpersonen des Ruhestandes und ihre Angehörigen -. Das hat also auch auf diese sich zu erstrecken. Das wäre nur gerecht.</p>
+                  <p>Schumpeter: Ich muss mich erst vergewissern, was das kostet. Wenn zustimmend erledigt, dann nicht mehr an den Kabinettsrat.</p>
+                  <p>Hanusch: Die deutsche Nationalität; unsere Staatsbürgerschaft gründet sich nicht auf die Nationalität.</p>
+                  <p>Renner: Falls die Militärpensionisten miteinbezogen werden, ist die Angelegenheit zustimmend erledigt, falls nicht, kommt die ganze Sache wieder in den Kabinettsrat.</p>
+                  <p>5. Schumpeter: Wir sind in einer bedenklichen Lage in Bezug auf die Zahlung der Lebensmittel. Es ist nur billig wenn jeder, der einen Beitrag leisten kann, ihn auch </p>
+                  <p>leistet; auf einem ausländischen Wertpapier, Div[idenden]-Papier, auf Devisen, auf Valuten. <hi rend="#s">Für die Bedürfnisse unseres unmittelbaren</hi> - Wenn wir einen Goldvorrat zusammengesammelt haben, so sind wir taktisch in der schlimmen Situation. Bauer hat zugestimmt, gemünztes und ungemünztes Gold, verarbeitetes Gold ist in gewissen Fällen nicht so zweifelhaft. </p>
+                  <p>Bittet um die Vollmacht des Kabinetts, dass Hausdurchsuchungen in letzter Linie in Betracht kommen können. Ausgenommen Dinge von Kunstwert; dann [Dinge], bei denen sich glaubhaft </p>
+                  <p>machen lässt, dass sich gewisse Gefühlsmomente daran knüpfen; Goldgegenstände, welche dem Kultus dienen. Es handelt sich zunächst um einen Anmeldezwang. Ev[entuell] werden wir auch </p>
+                  <p>auf Kunstwerte greifen müssen (Bilderwerte). Weil die Sache nicht unpolitisch ist, bitte ich um Ermächtigung des Kabinetts. Enteignung gegen Entschädigung gegen Goldbons und verzinsen </p>
+                  <p>[<hi rend="#i">Am Rand:</hi>] wahlweise in Geld </p>
+                  <p>zum Kurs der [...].</p>
+                  <p>Renner: Anbotzwang für Wertpapiere, Valuten und Devisen, gemünztes und ungemünztes Gold, verarbeitetes Gold mit Ausschluss der Gegenstände von Kunstwert, </p>
+                  <p>Juwelen aller Art. Vorläufig nur anmelden.</p>
+                  <p>Deutsch: Als politische Gründe Anbotszwang für notwendig, [der] nicht weit genug gehen kann. Elementare Bewegung von Noten. Wir haben Kunstgegenstände aufgestapelt, </p>
+                  <p>die für ein verarmtes Volk zu groß sind. Finanzminister möge bei seinen Vorschlägen bleiben.</p>
+                  <p><pb facs="krp-0059_s01-0002"/>Hanusch: Bedenken gegen Cultus-Ausnahmen. Wir haben eine Reihe von Wallfahrtsorten, wo Gegenstände von Gold und Silber aufgespeichert sind. </p>
+                  <p>Die Öffentlichkeit würde es nicht verstehen, wenn nicht wenigstens die Anzeigepflicht dafür stipuliert wäre. Die Anzeigepflicht dafür müsste festgesetzt werden.</p>
+                  <p>Fink: Gleichzeitige Amnestie soll verfügt werden. Wenn man es jetzt nicht abliefert, dann für verfallen erklären.</p>
+                  <p>Renner: Ehester Schluss: nur geschulte Finanzorgane. Wenn die Verzehrungssteuer aufgehoben würde, könnten wir genug Finanzorgane heranziehen. </p>
+                  <p>Was kirchliche Sachen betrifft, wäre nichts gefährlicher, [als] wenn man sie ausnehmen würde. Unterscheiden: Sakralen a) Überfluss: [...], b) nicht Überfluss. </p>
+                  <p>Devotionalien; da muss man sehr unterscheiden. Man wird den Leuten die Möglichkeit geben, ihnen diese Dev[otionalien] doch zu belassen, wenn man </p>
+                  <p>Goldwert dafür gibt. Aber aufnehmen muss man sie, sonst Kirchensturm.</p>
+                  <p>Bleibt Anmeldezwang der erste Schritt: Mit Amnestie und Verfallenschaftserklärung: das allerbeste öffentliche Deponierung. </p>
+                  <p>Unter einem auch alle Kunstwerte (Bilder, Möbel). Damit eine Unterlage für die Vermögenssteuer gewonnen. Aber auch Möglichkeit </p>
+                  <p>gegeben, durch Pfandbeistellung einen ausländischen Kredit zu bekommen. Zwei Milliarden vielleicht. Also nur in Aussicht genommen eine Verpfändung mit der Bestimmung, es </p>
+                  <p>später auszulösen.</p>
+                  <p>Schumpeter: Mit den Kunstgegenständen technische Schwierigkeiten.</p>
+                  <p>Loewenfeld: Stimmt zu. Die Länder haben wiederholt darauf hingewiesen, dass es ihnen schwer fällt auf ihr Holz zu verzichten, weil der Ertrag zunächst Wien zugutekommt. Es wird uns gar nichts übrigbleiben, </p>
+                  <p>als zu verkaufen. Wir sind jetzt schon gehindert in der Lebensmittelbeschaffung.</p>
+                  <p>Miklas: Einschränkung auf Cultus im engeren Sinn auszulegen stimmt. </p>
+                  <p>Bittet um schonungsvolles Vorgehen und im Einvernehmen mit den kirchlichen Behörden. Notwendig, dass gleichzeitig [ein] Amnestie-Erlass erfolgt, auch auf jene </p>
+                  <p>finanzbehördlichen Untersuchungen, die schon im Gange sind.</p>
+                  <p>Fink: Finanzorgane.</p>
+                  <p>Bratusch: Aufgrund des Ermächtigungsgesetzes den Strafbestimmungen im Rahmen des Ermächtigungsgesetzes. Bittet, dass [das Staatsamt für] Justiz Gelegenheit bekommt, in das Gesetz Einsicht zu nehmen.</p>
+                  <p>Schumpeter: Gebrauchsgegenstände bis 2.000 Kronen auszunehmen.</p>
+                  <p>Renner: Kunstgegenstände auch anmelden.</p>
+                  <p>Schumpeter: Heute gemeldet worden, unsere Zeitungen erfahren, dass ein Hyp.-Darlehen auf Wald aufgenommen werden soll.</p>
+                  <p>Stimmt zu.</p>
+                  <p>6. Stöckler: Zustimmung zu einem Gesetz der Salzburger Landesversammlung. K[...]-Gesetz, zustimmend, Kabinett ist beigetreten.</p>
+                  <p>7. Stöckler: Agrarb[ehörden]. Renner: Generelles Verbot der Neuaufnahme von Staatsbediensteten. Stöckler: Es sollen Kräfte herangezogen werden, die anderwärts überflüssig sind. Renner: (Domänen). Flüchtlinge Beamte, Gebot der nationalen Pflicht. </p>
+                  <p>[<hi rend="#i">Am Rand:</hi>] Kataster in der Minderheitsschutzabteilung verzeichnet, so dass jeder </p>
+                  <p>Staatssekretär gehalten ist, sich an diese Abteilung zu wenden, wenn er welche braucht. </p>
+                  <p>Auch in Agrar-Belangen versiert - Belange.</p>
+                  <p>Fink: Für welche Länder schon bestimmt diese 10 Behörden? Stöckler: Der reguläre Plan wird später vorgelegt werden, vorläufig nur Vorberatung [...].</p>
+                  <p>Schumpeter: [Hat] keine Einwendung, nur die Bitte, dass er bei der Schaffung der neuen Stellen und bei der Ausgestaltung der einzelnen Ämter weitestgehende Zurückhaltung [übe], also recht sparen.</p>
+                  <p>Angenommen.</p>
+                  <p><hi rend="#s">8.</hi> 6. Stöckler: Bericht ziemlich negativ. Bei der stattgefundenen Fachberatung ist das Zögern noch deutlicher geworden als bei der Länderkonferenz. Sonntag und Montag sind Alarmtelegramme </p>
+                  <p>eingelaufen gegen die zentrale Holzbewirtschaftung. Damit ist das ganze Projekt [...]. Ich habe bemerkt das rote Tuch war, an das Warenverkehrsbüro oder an die Hauptanstalt für Sachdemobilisierung </p>
+                  <p>soll nichts gewiesen werden, ein großes Misstrauen.</p>
+                  <p>Wir müssen also auf etwas anderes sinnen. <hi rend="#s">Wir müssen diese Holzaktion auf</hi> - Wenn wir Zeit hätten zur Ausfuhr des Holzes, könnten die Länder [das] leicht durchführen. Aber wir brauchen Valuta in der kürzesten </p>
+                  <p>Zeit. Sektionschef Deutsch hat die Idee der Verpfändung, dies ist aber nur ein Vorschlag. Nicht nur die Staatswälder, sondern auch die Wälder, die im Privat und im gemeinsamen Besitz sind. </p>
+                  <p>Für diese Wälder könnte man die Valuten erhalten. Die Länder wären dadurch gezwungen, alles vorzukehren, damit das Pfandrecht wieder gelöst wird, damit würden sie arbeiten.</p>
+                  <p><pb facs="krp-0059_s01-0003"/>Zu diesem Vorgang wäre natürlich ein Gesetz notwendig. Möchte vorschlagen, dass Finanzen, Justiz und Landwirtschaft darüber beraten. Entwurf fertiggestellt, natürlich unverbindlich. </p>
+                  <p>Also die Durchführung in anderer Beziehung halte ich jetzt für schwer möglich, da es wenigstens ein Jahr dauern würde. In der notwendig kurzen Zeit können wir die Länder dazu </p>
+                  <p>nicht bringen. Also Verpfändung. Wenn wir dann sagen, dass der Wald wieder frei wird, wenn so und so viel geliefert wird, dann werden sich die Ländern fügen. Dann aber noch der Vorteil, dass das ganze Holz </p>
+                  <p>im Inland verarbeitet werden könnte.</p>
+                  <p>Schumpeter: Es ist kein Zweifel, dass dies ein[er] von den Wegen, die wir beschreiten müssen, ist. Wenn wir eine Anleihe aufgrund dieser Länder aufnehmen, wer wird die Valuta aufnehmen und wer wird darüber zu verfügen haben? </p>
+                  <p>Wenn das der Staat übernehmen soll, dann ist das gewiss sehr zu begrüßen. Da ist es aber notwendig, dass man schleunigst daran schreitet und einen Mann nach Paris schickt. </p>
+                  <p>Nicht zu viel nach außen sagen.</p>
+                  <p>Fink: Staatsamt für Finanzen selbst hinausgeben, dass mit der Verpfändung nicht zu machen ist und rechtliche und sachliche Bedenken vorliegen.</p>
+                  <p>Renner: Staatsamt für Verkehrswesen und für Finanzen sind aufgefordert, die Unterbehörden davon zu instruieren, dass sie von keiner anderen Stelle Dienstanweisungen anzunehmen - auch </p>
+                  <p>wenn auf Landesgesetz fundiert, außer wenn sie vom Staatssekretär ausgehen, auch Landesgesetze, wenn sie nicht die Unterschrift des Staatssekretärs tragen. </p>
+                  <p>Landesgesetze sind erst dann zu vollziehen, wenn sie die Unterschrift des zuständigen Staatssekretärs tragen, das [Zu]widerhandeln[de] sind zu diszipl[inieren].</p>
+                  <p>[<hi rend="#i">Am Rand:</hi>] Glanz. mit Justiz im [...].</p>
+                  <p>Antrag: Finanzen, Landwirtschaft, Handel und Industrie, Justiz sind beauftragt, die gesetzliche Unterlage für diese Unterlage durch zwischenstaatsamtliche Besprechungen </p>
+                  <p>vorzubereiten und bis zur Vorlage in der Sache nichts zu verfügen.</p>
+                  <p>Zugestimmt: dass Finanzen Vertreter nach Paris zur Negot. [Negoziierung] von Anleihen, zunächst Sieghart, dann Landesbürger nach Bern. Presse nichts bekannt geben.</p>
+                  <p>9. Hanusch: Bittet um Hinausgabe der Anweisung. Staatsamt für Inneres: Verfügung gegen den Zuzug von Ungarn und Galizien nach Wien.</p>
+                  <p>Bratusch: Wenn man diese Verordnung liest, die Linz hinausgegeben hat.</p>
+                  <p>Renner: Man muss die Betroffenen ermächtigen, an den Verfassungsgerichtshof zu gehen, wegen Verletzung subjektiver Rechte (die Parteien, Novellierung).</p>
+                  <p>Fink: Nicht nur der Staatsregierung, auch den Ländern soll ein solches Einspruchsrecht an den Verfassungsgerichtshof zustehen.</p>
+                  <p>Renner: Dann noch die verwaltungsrechtliche Syndik.-Klage, Millionen Kosten in England. Justiz zu studieren.</p>
+                  <p>Angenommen.</p>
+                  <p>10. Loewenfeld: Ressort Frage aber nicht die Verantwortung übernehmen. Ich lehne schon seit Monaten eine solche Erhöhung ab. Erhöhung wird verlangt von den Produzenten und den Händlern. </p>
+                  <p>Zentrale Preisprüfungskommission [zu einem] Gutachten aufgefordert. Heute 1.04 - 1.12, Gutachten lautet auf 2-2.24 Kronen. </p>
+                  <p>Dazu kommt, dass einige Gemeinden die Preise eigenmächtig erhöht haben. Heute Milchanlieferung 40-50.000 l. Die Wiener Landesregierung macht es auch nicht.</p>
+                  <p>Stöckler: Die Milchpreis-Frage ist für die Landwirte ziemlich belanglos. Die Erhaltung des Quantums ist fast unmöglich. Mit der Milchpreis-Erhöhung vorzugehen - Mit dem jetzigen Preis ist das </p>
+                  <p>[<hi rend="#i">Am Rand:</hi>] Auslangen zweifellos nicht zu decken.</p>
+                  <p>Hanusch: Im jetzigen Augenblick eine Erhöhung unmöglich. Politisch nicht auszuhalten. Beantragt die Verschiebung auf 5 Wochen.</p>
+                  <p>Miklas: Im niederösterreichischen Landesrat einige Male beraten worden; Geneigtheit vorhanden, in eine mäßige Erhöhung einzuwilligen. Aber das Ergebnis [ist] einfach Null, wenn nicht eine hohe Erhöhung.</p>
+                  <p>Fink: Es wirken so viele Umstände zusammen, dass es augenblicklich nicht zu ändern ist. Politische Verhältnisse, keine Disziplin, Schleichhandel. Zu machen wäre es nach den Wahlen und wenn eine Erleichterung </p>
+                  <p>in der Ernährungsfrage überhaupt käme.</p>
+                  <p>Renner: Produktionsprämie: Wiener Milch-Meier. Frage vertagt.</p>
+                  <p>Loewenfeld: Etwas am[erikanisches] Schweinefleisch. Viel weniger gekommen (am[erikanisches] Speckfleisch). K[ilogramm] 40 Kronen. Speck: 35 Kronen.</p>
+                  <p><pb facs="krp-0059_s01-0004"/>Stöckler: Wenn wir Mais, Gerste (Futtermittel) bekommen könnten, dann wäre die Fleischfrage viel besser.</p>
+                  <p>Loewenfeld: Die Möglichkeit des freien Importes aus den ausländischen Nationalstaaten ist Humbug.	</p>
+               </div>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

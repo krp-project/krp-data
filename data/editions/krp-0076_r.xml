@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href='http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:acdh="https://vocabs.acdh.oeaw.ac.at/schema#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xml:lang="de">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="a" type="main" n="0076">Kabinettsprotokoll Nr. 76 vom 2. Juni 1919</title>
+            <title level="m" type="main" n="01">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <title level="m" type="sub" n="">Renner II (15. März – 17. Oktober 1919)</title>
+            <meeting>
+               <placeName key="https://d-nb.info/gnd/4066009-6">Wien</placeName>
+               <orgName key="https://d-nb.info/gnd/5162749-8">Kabinettsrat</orgName>
+               <date when-iso="1919-06-02"/>
+            </meeting>
+            <editor>
+               <persName key="https://d-nb.info/gnd/122481836"
+                         role="hasCreator"
+                         xml:id="hwohnout">
+                  <forename>Helmut</forename>
+                  <surname>Wohnout</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</affiliation>
+               <idno type="ORCID">0000-0002-3864-9839</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/120789825"
+                         role="hasCreator"
+                         xml:id="tolechowski">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0003-3291-6876</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/131679384"
+                         role="hasCreator"
+                         xml:id="rlein">
+                  <forename>Richard</forename>
+                  <surname>Lein</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0002-7502-0503</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="aholzer">
+                  <forename>Anna</forename>
+                  <surname>Holzer</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0005-3560-3500</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="dsoelkner">
+                  <forename>Dominik</forename>
+                  <surname>Sölkner</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-9895-7212</idno>
+            </editor>
+            <editor>
+               <persName role="hasContributor" xml:id="ischotzko">
+                  <forename>Ina</forename>
+                  <surname>Schotzko</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-5210-3713</idno>
+            </editor>
+            <funder n="1">
+               <orgName key="https://d-nb.info/gnd/2054142-9" role="hasFunder">Österreichischer Wissenschaftsfonds FWF</orgName>
+               <idno type="project">PAT1495024</idno>
+               <title type="project">Die Protokolle des österreichischen Kabinettsrates 1919–1920</title>
+            </funder>
+            <respStmt>
+               <resp>Projektverantwortung</resp>
+               <orgName key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Projektleitung</resp>
+               <persName key="https://d-nb.info/gnd/120789825" role="hasPrincipalInvestigator">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+                  <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+                  <idno type="ORCID">0000-0003-3291-6876</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Nationaler Forschungspartner</resp>
+               <orgName key="https://d-nb.info/gnd/1123037736" role="hasEnabler">Austrian Centre for Digital Humanities</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Digitalisierung der gedruckten Quellen</resp>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>TEI-Datenmodellierung</resp>
+               <persName role="hasContributor" xml:id="tfruehwirth">
+                  <forename>Timo</forename>
+                  <surname>Frühwirth</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-3997-5193</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technische Supervision</resp>
+               <persName key="https://d-nb.info/gnd/1043833846"
+                         role="hasContributor"
+                         xml:id="pandorfer">
+                  <forename>Peter</forename>
+                  <surname>Andorfer</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-9575-9372</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technisches Consulting und Vorbereitung der Druckausgabe</resp>
+               <persName key="https://d-nb.info/gnd/13281899X"
+                         role="hasContributor"
+                         xml:id="skurz">
+                  <forename>Stephan</forename>
+                  <surname>Kurz</surname>
+                  <affiliation key="https://d-nb.info/gnd/1202798799">Institut für die Erforschung der Habsburgermonarchie und des Balkanraumes</affiliation>
+                  <idno type="ORCID">0000-0003-2546-2570</idno>
+               </persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher key="https://d-nb.info/gnd/1001454-8">Österreichische Akademie der Wissenschaften</publisher>
+            <date when="2028"/>
+            <availability status="free">
+               <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">Lizenziert unter CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/deed.de)</licence>
+            </availability>
+            <idno type="ISBN_Print"/>
+            <idno type="ISBN_Part_epub"/>
+            <idno type="ISBN_Digital"/>
+            <idno type="DOI"/>
+            <idno type="DOI_zenodo"/>
+            <idno type="ebook_ID"/>
+         </publicationStmt>
+         <seriesStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="m" type="main">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <respStmt>
+               <resp>Bearbeitung und Herausgeberschaft</resp>
+               <orgName key="https://d-nb.info/gnd/2024703-5">Universität Wien</orgName>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+         </seriesStmt>
+         <notesStmt>
+            <note>Diese TEI-XML-Datei ist Grundlage für eine Druckausgabe der Edition.</note>
+            <relatedItem>
+               <biblStruct>
+                  <monogr>
+                     <imprint>
+                        <pubPlace key="https://d-nb.info/gnd/4066009-6">Wien</pubPlace>
+                        <publisher key="https://d-nb.info/gnd/2068748-5">Verlag der Österreichischen Akademie der Wissenschaften</publisher>
+                        <date when="2029"/>
+                     </imprint>
+                     <extent/>
+                  </monogr>
+                  <note>
+              <idno/>
+              <ptr/>
+            </note>
+                  <citedRange/>
+               </biblStruct>
+            </relatedItem>
+         </notesStmt>
+         <sourceDesc>
+            <bibl>Quellbestand: AT-OeStA/AdR MRang MR 1Rep KRP Kabinettsratsprotokolle, 1918-1920 (Teilbestand)<ref target="https://www.archivinformationssystem.at/detail.aspx?id=5465">https://www.archivinformationssystem.at/detail.aspx?id=5465</ref>
+            </bibl>
+            <msDesc>
+               <msIdentifier>
+                  <institution key="https://d-nb.info/gnd/37748-X" role="hasOwner">AT-OeStA Österreichisches Staatsarchiv (Archiv (ÖStA))</institution>
+                  <repository key="https://d-nb.info/gnd/1601181-8">AT-OeStA/AdR Archiv der Republik, 1918- (Abteilung)</repository>
+                  <collection>AT-OeStA/AdR MRang MR 1Rep Ministerrat 1. Republik, 1918 - 1938 (Bestand)</collection>
+                  <idno>AT-OeStA_AdR-MRang-MR-1.-Rep.-KRP-076</idno>
+               </msIdentifier>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <abstract>
+            <p>
+          <!--to be generated-->
+        </p>
+         </abstract>
+      </profileDesc>
+      <encodingDesc>
+         <styleDefDecl scheme="css"/>
+         <tagsDecl>
+            <rendition xml:id="b" scheme="css">font-weight:bold;</rendition>
+            <rendition xml:id="su" scheme="css">vertical-align:super;font-size:.7em;</rendition>
+            <rendition xml:id="s" scheme="css">text-decoration:line-through;</rendition>
+            <rendition xml:id="u" scheme="css">text-decoration:underline;</rendition>
+            <rendition xml:id="ow" scheme="css">text-decoration:line-through;text-decoration-style:double;</rendition>
+            <rendition xml:id="r" scheme="css">display:block;text-align:right;</rendition>
+            <rendition xml:id="letterspaced" scheme="css">letter-spacing:0.15em;</rendition>
+            <rendition xml:id="i" scheme="css">font-style:italic;</rendition>
+         </tagsDecl>
+         <editorialDecl>
+            <hyphenation>
+               <p>
+            <!--to be added-->
+          </p>
+            </hyphenation>
+            <correction>
+               <p>
+            <!--to be added-->
+          </p>
+            </correction>
+            <normalization>
+               <p>
+            <!--to be added-->
+          </p>
+            </normalization>
+            <punctuation>
+               <p>
+            <!--to be added-->
+          </p>
+            </punctuation>
+            <stdVals>
+               <p>
+            <!--to be added-->
+          </p>
+            </stdVals>
+            <p>
+          <!--to be added-->
+        </p>
+         </editorialDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#tfruehwirth" when-iso="2026-10-13">TEIGarage output upconverted with upconvert.xsl</change>
+         <change who="#tfruehwirth" when-iso="2026-10-13">TEI header populated with generate_tei_templates.py</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface/>
+   </facsimile>
+   <text>
+      <body>
+         <div xml:id="doc-krp-0076.xml">
+            <head type="dokument">
+               <title type="num">76.<note type="footnote">Das Protokoll trägt den Vermerk <hi rend="#i">Vertraulich!</hi></note>
+               </title>
+               <title type="desc">
+                  <pb facs="krp-0076_r-0001"/>[Montag] 1919-06-02</title>
+            </head>
+            <div type="dokumentkopf">
+               <div type="vorsitz">
+                  <head>Vorsitz:</head>
+                  <p>Fink</p>
+               </div>
+               <div type="anwesend">
+                  <head>Anwesend:</head>
+                  <p>Bauer, Bratusch, Deutsch, Eldersch, Ellenbogen, Glöckel, Hanusch, Loewenfeld-Russ, Miklas, Paul, Pflügl, Schumpeter, Stöckler, Tandler, Waiss, Zerdik</p>
+               </div>
+               <div type="zugezogen">
+                  <head>Zugezogen:</head>
+                  <p>-</p>
+               </div>
+               <div type="schriftfuehrer">
+                  <head>Schriftführer:</head>
+                  <p>unbekannt</p>
+               </div>
+               <div type="dauer">
+                  <head>Dauer:</head>
+                  <p>21.00–23.00 Uhr</p>
+               </div>
+            </div>
+            <div type="komponenten">
+               <p>Reinschrift, Beilagen, Konzept, stenographische Mitschrift, Entwurf der Tagesordnung, 5. Personalsitzung</p>
+            </div>
+            <div type="beilagen">
+               <head>Beilagen:</head>
+               <list>
+                  <item><ref target="#krp-0076_top01">Zu TOP 1</ref>: <ref target="#krp-0076_b01">Vollzugsanweisung des Staatsamtes für soziale Verwaltung im Einvernehmen mit dem Staatsamt für Justiz über den Schutz von Dienstnehmern bei Verlegungen von Unternehmungen ins Ausland</ref></item>
+                  <item><ref target="#krp-0076_top03">Zu TOP 3</ref>: <ref target="#krp-0076_b02">Auszug für den Vortrag eines Gesetzesbeschlusses der Provisorischen Salzburger Landesversammlung über Bauerleichterungen zur Hebung der Bautätigkeit</ref></item>
+                  <item><ref target="#krp-0076_top05">Zu TOP 5</ref>: <ref target="#krp-0076_b03">Übersichtstabelle des Staatsamtes für Inneres und Unterricht Zl.  19.214 für den Vortrag über den Beitritt der Staatsregierung zu Beschlüssen der Niederösterreichischen Landesregierung bzw. -versammlung über die Einhebung von Mietzinsauflagen, Beerdigungsgebühren und Umlagen in Gemeinden</ref></item>
+                  <item><ref target="#krp-0076_top06">Zu TOP 6</ref>: <ref target="#krp-0076_b04">Übersichtstabelle des Staatsamtes für Inneres und Unterricht Zl. 19.215 für den Vortrag über den Beitritt der Staatsregierung zu Beschlüssen des Kärntner Landesausschusses für die Einhebung von Umlagen, Branntwein- und Bierauflagen in Kärntner Gemeinden</ref></item>
+                  <item><ref target="#krp-0076_top07">Zu TOP 7</ref>: <ref target="#krp-0076_b05">Auszug für den Vortrag des Staatsamtes für Inneres und Unterricht Zl. 17.322 über den Gesetzesbeschluss der Provisorischen Niederösterreichischen Landesversammlung für die Aufnahme einer Kontokorrentanleihe durch die Gemeinde Wien</ref></item>
+                  <item><ref target="#krp-0076_top08">Zu TOP 8</ref>: <ref target="#krp-0076_b06">Vortrag über die Gewährung von Fahrbegünstigungen an Post, Telegrafen- und Telefonbedienstete</ref></item>
+                  <item><ref target="#krp-0076_top09">Zu TOP 9</ref>: <ref target="#krp-0076_b07">Maßnahmen bezüglich der Verwertung oder Vernichtung von Munitionsvorräten</ref></item>
+               </list>
+            </div>
+            <div type="protokoll">
+               <pb facs="krp-0076_r-0002"/>
+               <div type="top" xml:id="krp-0076_top01">
+                  <head>
+                     <label>
+                        <num n="1">1.</num>
+                        <seg>Vollzugsanweisung über den Schutz von Dienstnehmern bei Verlegung von Unternehmungen ins Ausland.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Hanusch</hi> erbittet und erhält vom Kabinettsrat die Ermächtigung zur Erlassung einer Vollzugsanweisung des Staatsamtes für soziale Verwaltung im Einvernehmen mit dem Staatsamt für Justiz über den Schutz von Dienstnehmern bei Verlegung von Unternehmungen ins Ausland.</p>
+                  <p><pb facs="krp-0076_r-0003"/></p>
+               </div>
+               <div type="top" xml:id="krp-0076_top02">
+                  <head>
+                     <label>
+                        <num n="2">2.</num>
+                        <seg>Regelung des Reise- und Sommerverkehrs.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Loewenfeld-Russ</hi> teilt mit, dass bisher Oberösterreich und Salzburg die in der Länderkonferenz von 20. Mai d. J. getroffene Vereinbarung nahezu restlos eingehalten hätten; gewisse Bedenken, welche seitens der Tiroler Landesregierung geäußert worden sind, dürften im Wege mündlicher Verhandlungen behoben werden, zu welchem Zwecke ein Vertreter des Staatsamtes für Volksernährung nach Innsbruck entsendet worden sei. Hingegen habe die Steiermärkische Landesregierung beschlossen, an dem Grundsatze der Einreisebewilligungen festzuhalten. Der sprechende Staatssekretär halte dafür, dass der Versuch gemacht werden solle, die Landesregierung durch persönliche Einwirkung von ihrem Standpunkte abzubringen.</p>
+                  <p>Der Kabinettsrat tritt dieser Anschauung bei und ersucht die Staatssekretäre für Volksernährung und für Inneres und Unterricht, sich so bald als möglich zu diesem Behufe nach Graz zu begeben.</p>
+                  <p><pb facs="krp-0076_r-0004"/></p>
+               </div>
+               <div type="top" xml:id="krp-0076_top03">
+                  <head>
+                     <label>
+                        <num n="3">3.</num>
+                        <seg>Gesetzesbeschluss der Provisorischen Landesversammlung in Salzburg, betreffend Bauerleichterungen zur Hebung der Bautätigkeit.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Ing. <hi rend="#letterspaced">Zerdik</hi> führt aus, dass der Kabinettsrat in seiner Sitzung am 11. April d. J. beschlossen habe, gegen den von der Provisorischen Landesversammlung in Salzburg am 22. Jänner d. J. beschlossenen Gesetzentwurf, womit zur Hebung der Bautätigkeit die Einräumung weitgehender Bauerleichterungen gewährt wird, Vorstellung zu erheben und die Gegenzeichnung des Staatssekretärs für Handel und Gewerbe, Industrie und Bauten zu verweigern, weil mit dem Vollzuge dieses Gesetzes die <hi rend="#u">autonome</hi> Landesregierung <hi rend="#u">und der Landesrat [in] </hi>Salzburg betraut waren und auch einige Unklarheiten im Gesetze enthalten waren.</p>
+                  <p>Nunmehr habe die Landesregierung in Salzburg berichtet, dass der Landesrat in seiner Sitzung vom 6. Mai 1919 beschlossen habe, von der ihm durch die Landesversammlung erteilte Ermächtigung zur Vornahme von unwesentlichen textlichen Änderungen – welche Ermächtigung aus dem seinerzeit vorgelegenen Berichte nicht zu ersehen war – Gebrauch zu machen und mit Rücksicht auf die Vorstellung des <pb facs="krp-0076_r-0005"/>Staatsamtes für Handel und Gewerbe, Industrie und Bauten einige textliche Änderungen im Gesetze vorzunehmen. So wurde mit der Durchführung des Gesetzes nunmehr nur „<hi rend="#u">die Landesregierung</hi>“ betraut und durch nähere Aufklärung der in Frage kommenden Bauerleichterungen die hierüber bestandene Unklarheit im Wesentlichen beseitigt.</p>
+                  <p>Überdies habe die Landesregierung beschlossen, zu diesem Gesetze eine Durchführungsverordnung zu erlassen, welche die noch verbliebenen Unklarheiten beseitigt.</p>
+                  <p>Der sprechende Staatssekretär stellt daher den Antrag, den Landesrat in Salzburg im Wege der Landesregierung zu verständigen, dass die Staatsregierung nunmehr dem in Rede stehenden Gesetzesbeschlusse in der vom Landesrate aufgrund der ihm von der Landesversammlung erteilten Ermächtigung in seiner Sitzung vom 6. Mai 1919 beschlossenen abgeänderten Textierung beitrete und somit der sofortigen Kundmachung dieses Landesgesetzes zustimme. Der Landesregierung wäre eine mit der Gegenzeichnung des Staatssekretärs für Handel und Gewer<pb facs="krp-0076_r-0006"/>be, Industrie und Bauten versehene Ausfertigung zu übermitteln.</p>
+                  <p>Der Kabinettsrat genehmigt den gestellten Antrag.</p>
+               </div>
+               <div type="top" xml:id="krp-0076_top04">
+                  <head>
+                     <label>
+                        <num n="4">4.</num>
+                        <seg>Umwandlung der Exportakademie in Wien in eine Hochschule für Welthandel.</seg>
+                     </label>
+                  </head>
+                  <p>Nach eingehender Darstellung der Sachlage beantragt Staatssekretär Ing. Zerdik, die seit dem Jahre 1898 bestehende Exportakademie in Wien zu Beginn des Schuljahres 1919/20 aufgrund der vom Staatssekretär für Handel und Gewerbe, Industrie und Bauten im Einvernehmen mit dem Staatssekretär für Inneres und Unterricht zu genehmigenden Satzungen in eine „Hochschule für Welthandel in Wien“ umzuwandeln und bittet um die Ermächtigung des Kabinettsrates, einen darauf bezughabenden Gesetzentwurf in der Nationalversammlung einbringen zu dürfen.</p>
+                  <p>Der Kabinettsrat beschließt im Sinne des gestellten Antrages und erteilt dem sprechenden Staatssekretär die erbetene Ermächtigung.</p>
+               </div>
+               <div type="top" xml:id="krp-0076_top05">
+                  <head>
+                     <label>
+                        <num n="5">5.</num>
+                        <seg>Beitritt der Staatsregierung zu einer Reihe von Beschlüssen des Niederösterreichischen Landesausschusses bzw. des Niederösterreichischen Landesrates und der Niederösterreichischen Landesversammlung, betreffend die Einhebung von Mietzinsauflagen, Beerdigungsgebühren und Umlagen in Gemeinden Niederösterreichs.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Eldersch</hi> erbittet und erhält die Zustimmung des Kabinettsrates zum Beitritt der Staats<pb facs="krp-0076_r-0007"/>regierung zu den Beschlüssen des Niederösterreichischen Landesausschusses vom 14. Mai und 22. Oktober 1918, des Niederösterreichischen Landesrates vom 10. und 21. Jänner, 20. und 25. Februar, 11. und 28. März und 8. April 1919 und der Niederösterreichischen Landesversammlung vom 19. März 1919, betreffend die Einhebung von Mietzinsauflagen und Beerdigungsgebühren, bzw. 100 % übersteigenden Umlagen in mehreren Gemeinden Niederösterreichs.</p>
+               </div>
+               <div type="top" xml:id="krp-0076_top06">
+                  <head>
+                     <label>
+                        <num n="6">6.</num>
+                        <seg>Beitritt der Staatsregierung zu einer Reihe von Beschlüssen des Kärntnerischen Landesausschusses, betreffend die Einhebung von Umlagen, Branntwein- und Bierauflagen in Gemeinden Kärntens, zu mehreren Beschlüssen der Steiermärkischen Landesversammlung, betreffend die Einhebung von Umlagen in Gemeinden Steiermarks, und zu einem Beschlusse der Salzburger Landesversammlung, betreffend die Forteinhebung der Landesumlage auf Wein, Wein- und Obstmost im Lande Salzburg.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Eldersch erbittet und erhält die Zustimmung des Kabinettsrates zum Beitritt der Staatsregierung zu den Beschlüssen des Kärntnerischen Landesausschusses vom 9. Oktober, 12. und 31. Dezember 1918, vom 31. Jänner, 19. Februar, 14. März und 9. April 1919, betreffend die Einhebung von 200 % übersteigenden Umlagen, bzw. Branntweinauflagen und Bierauflagen in mehreren Gemeinden Kärntens, ferner zu den Beschlüssen der Steiermärkischen Landesversammlung vom 28. und 30. Jänner 1919, betreffend die Einhebung von 300 % übersteigenden <pb facs="krp-0076_r-0008"/>Umlagen in mehreren Gemeinden Steiermarks, sowie zum Beschlusse des Salzburger Landesrates vom 23. Dezember 1918, betreffend die Forteinhebung der Landesumlage auf Wein, Wein- und Obstmost im Lande Salzburg.</p>
+               </div>
+               <div type="top" xml:id="krp-0076_top07">
+                  <head>
+                     <label>
+                        <num n="7">7.</num>
+                        <seg>Gesetzesbeschluss der Provisorischen Niederösterreichischen Landesversammlung, betreffend die Aufnahme einer Kontokorrentanleihe durch die Gemeinde Wien.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Eldersch erbittet und erhält die Ermächtigung des Kabinettsrates, dass von der Erhebung einer Vorstellung gegen den von der Provisorischen Niederösterreichischen Landesversammlung beschlossenen Entwurf eines Gesetzes, betreffend die Aufnahme einer Kontokorrentanleihe von 50 Millionen K durch die Gemeinde Wien, abgesehen und die Landesregierung hievon mit dem Bemerken verständigt werde, dass der sofortigen Kundmachung dieses Landesgesetzes seitens der Staatsregierung zugestimmt wird.</p>
+               </div>
+               <div type="top" xml:id="krp-0076_top08">
+                  <head>
+                     <label>
+                        <num n="8">8.</num>
+                        <seg>Gewährung von Fahrbegünstigungen an Post-, Telegrafen- und Telefonbedienstete.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Paul</hi> führt aus, dass gelegentlich der letzten Streikbewegung der Post-, Telegrafen- und Telefonbediensteten von diesen unter anderem auch die Forderung nach Einräumung der den Eisenbahnbediensteten zu<pb facs="krp-0076_r-0009"/>stehenden Fahrbegünstigungen erhoben und diese Forderung mit dem Hinweise auf die erfolgte <hi rend="#u">Angliederung ihres Personalkörpers an das Staatsamt für Verkehrswesen</hi> begründet worden sei.</p>
+                  <p>Wenngleich die weitgehenden Fahrbegünstigungen, die die Eisenbahnbediensteten genießen, diesen lediglich vom Gesichtspunkte ihrer unmittelbaren Zugehörigkeit zum Eisenbahndienste und der Eigenart dieses Dienstes zugestanden wurden – eine Voraussetzung, die zumindestens in diesem Umfange hinsichtlich der eingangs erwähnten Bediensteten gewiss nicht zutrifft, – so lasse sich die erwähnte Forderung der Post- und Telegrafenbediensteten im Hinblicke auf gewisse Zusammenhänge, die zwischen dem Eisenbahn- und dem Dienste dieser letzteren Kategorie von Angestellten bestehen, insbesondere aber mit Rücksicht auf das von diesen Bediensteten geltend gemachte Moment der nunmehrigen Gemeinsamkeit der obersten Zentralstelle (Staatsamt für Verkehrswesen) und der hieraus abgeleiteten Folgerung, dass sie gleich wie die Eisenbahnbediensteten als <hi rend="#u">Verkehrs</hi>bedienstete anzusehen seien, nicht ohneweiters von der Hand weisen.</p>
+                  <p>Selbstverständlich wäre eine vollkommene Gleichstellung der beiden Grup<pb facs="krp-0076_r-0010"/>pen von Angestellten eben mit dem Hinweise auf die vorstehend angeführte, auch weiterhin aufrecht bleibende Differenzierung der für die Beurteilung der vorliegenden Frage maßgebenden Voraussetzungen unzulässig.</p>
+                  <p>Insbesondere gelte dies rücksichtlich der den Eisenbahnbediensteten und ihren Angehörigen in gewissen Fällen zustehenden Begünstigung der <hi rend="#u">freien Fahrt.</hi></p>
+                  <p>Die gegenwärtige finanzielle Lage der Staatseisenbahnverwaltung mache es dieser zur dringenden Pflicht, einen sukzessiven Abbau des bestehenden, sehr umfangreichen Fahrbegünstigungswesens im Auge zu behalten und die Einräumung neuer Fahrbegünstigungen insbesondere derart weitgehender, wie es die freie Fahrt ist, grundsätzlich hintanzuhalten.</p>
+                  <p>Als <hi rend="#u">weitestgehendes</hi> Zugeständnis an die Post- und Telegrafenbediensteten komme demnach nur die Einräumung von stempelfreien, für die Linien der Deutschösterreichischen Staatsbahnen giltigen Legitimationen zur Lösung von Fahrkarten zum Personalpreise an die aktiven Bediensteten (Arbeiter), und von stempelfreien Legitimationen zur <pb facs="krp-0076_r-0011"/>Lösung halber Fahrkarten an deren Frauen und Kinder nach Maßgabe der für die Inanspruchnahme solcher Legitimationen hinsichtlich der Eisenbahnbediensteten (Arbeiter) bzw. deren Frauen und Kinder bestehenden Bestimmungen in Betracht.</p>
+                  <p>Hiebei wäre jedoch, von der Erwägung ausgehend, dass bei einer etwaigen Änderung in der Organisation des Post- und Telegrafenwesens und der im Zusammenhange hiemit möglicherweise eintretenden Angliederung des betreffenden Personalkörpers an ein anderes Ressort, das erwähnte Zugeständnis nur für die Zeit einzuräumen, während der die Vereinigung der Post- und Telegrafenbediensteten einerseits und der Eisenbahnbediensteten andererseits in einer Ressortstelle tatsächlich besteht.</p>
+                  <p>Der sprechende Staatssekretär stelle sohin den Antrag, der Kabinettsrat wolle keine Einwendung dagegen erheben, dass bis auf weiteres mit Giltigkeit für die Linien der Deutschösterreichischen Staatsbahnen den <hi rend="#u">aktiven Post-, Telegrafen- und Telefonbediensteten (Arbeitern) stempelfreie Legitimationen zur Lösung von Fahrkarten zum Personalpreise</hi> und den <hi rend="#u">Frauen und Kindern dieser Bediensteten</hi> <pb facs="krp-0076_r-0012"/><hi rend="#u">(Arbeiter) stempelfreie Legitimationen zur Lösung halber Fahrkarten</hi> nach Maßgabe der für die Inanspruchnahme solcher Legitimationen hinsichtlich der Eisenbahnbediensteten (Arbeiter) bzw. deren Frauen und Kinder bestehenden Bestimmungen verabfolgt werden und wolle weiters das Staatsamt für Verkehrswesen ermächtigen, auf dieser Grundlage das weitere im Gegenstande Erforderliche zu veranlassen.</p>
+                  <p>Der Kabinettsrat genehmigt den gestellten Antrag.</p>
+                  <p>In diesem Zusammenhange teilt Staatssekretär <hi rend="#letterspaced">Paul</hi> mit, dass der Zentralangestelltenrat der deutschösterreichischen Staatsämter in einer an das Staatsamt für Verkehrswesen gerichteten Eingabe um die Gewährung von Freikarten an die Zivilstaatsbediensteten und deren Angehörige für alljährlich einmalige Urlaubsfahrten bzw., falls dies nicht möglich sein sollte, um die Einräumung der Begünstigung zur Lösung von Fahrkarten zum Regiepreise für diese Fahrten gebeten habe.</p>
+                  <p>In der sich hierüber entwickelnden Debatte, an welcher sich die Staatssekretäre Dr. <hi rend="#letterspaced">Schumpeter</hi>, Dr. <hi rend="#letterspaced">Deutsch</hi> und <hi rend="#letterspaced">Stöckler</hi> <pb facs="krp-0076_r-0013"/>sowie Unterstaatssekretär <hi rend="#letterspaced">G1öckel</hi> beteiligten, wurde auf die unausbleiblichen Beispielsfolgerungen, welche die Gewährung einer derartigen Fahrbegünstigung im Kreise der Militärpersonen, Lehrer, Landes- und Kommunalbeamten sowie der Arbeiterschaft auslösen würde, ferner auf die möglicherweise in Betracht kommenden staatsfinanziellen Wirkungen einer solchen Maßnahme hingewiesen.</p>
+                  <p>Der Kabinettsrat ermächtigt den Staatssekretär für Verkehrswesen, die vorliegende Eingabe des Zentralangestelltenrates dahin zu beantworten, dass die generelle Gewährung von Fahrbegünstigungen im angestrebten Sinne nicht möglich sei, dass jedoch über besonderes Einschreiten in berücksichtigungswürdigen Fällen die Gewährung von 50%igen Fahrbegünstigungen an Familienmitglieder der Zivilstaatsbediensteten in Erwägung gezogen werden könnte.</p>
+               </div>
+               <div type="top" xml:id="krp-0076_top09">
+                  <head>
+                     <label>
+                        <num n="9">9.</num>
+                        <seg>Maßnahmen bezüglich der Verwertung oder Vernichtung von Munitionsvorräten.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Deutsch</hi> bespricht in eingehender Weise die vom Staatsamt für Heer[es]wesen bisher in Angelegenheit der Verwertung bzw. <pb facs="krp-0076_r-0014"/>Vernichtung der in Deutschösterreich befindlichen Munitionsvorräte getroffenen Verfügungen. Alle bisherigen Maßnahmen betreffen aber nur relativ kleine Munitionsmengen und bilden keine großzügige generelle Regelung der Munitionsverwertung, welche unbedingt erfolgen müsse. Bereits mit dem Beschluss des Kabinettsrates vom 17. April d. J. sei das Staatsamt für Handel und Gewerbe, Industrie und Bauten aufgefordert worden, bezüglich Verwertung einzelner Munitionssorten neuerliche Erhebungen zu pflegen. Redner glaube jedoch, dass die etwa vom genannten Staatsamte zu gewärtigenden Verfügungen keine endgiltige Regelung dieser mit Rücksicht auf das Fortschreiten der Jahreszeit immer dringender werdenden Frage bilden werden. Nach Anschauung des Staatsamtes für Heer[es]wesen käme nur in Betracht</p>
+                  <list>
+                     <item n="1"><label>1.)</label> die Veräußerung an das Ausland, wogegen aber bisher das Staatsamt für Äußeres Stellung genommen hat oder</item>
+                     <item n="2"><label>2.)</label> die Abgabe als Liquidierungsmasse an die Nationalstaaten oder endlich</item>
+                     <item n="3"><label>3.)</label> die Vernichtung.</item>
+                  </list>
+                  <p>Der sprechende Staatssekretär erbittet sich die Lösung dieser Frage <pb facs="krp-0076_r-0015"/>durch einen Kabinettsratsbeschluss.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Schumpeter</hi> bedauert aus staatsfinanziellen Gründen, dass unter den gegebenen Verhältnissen eine Verwertung der Munitionsvorräte nicht möglich sei, und gibt der Anschauung Ausdruck, dass wohl nichts anderes übrig bleiben dürfte, als die Vorräte zu vernichten.</p>
+                  <p>Staatssekretär Ing. <hi rend="#letterspaced">Zerdik</hi> spricht sich ebenfalls für die Vernichtung aus. Für Zwecke des Bergbaues kämen nur geringe Mengen in Frage.</p>
+                  <p>Staatssekretär <hi rend="#letterspaced">Stöckler</hi> weist darauf hin, dass eine möglichst umfangreiche Umarbeitung auf Dynamon und dessen Abgabe zu billigen Preisen an die Landwirtschaft dringend geboten sei.</p>
+                  <p>Der Kabinettsrat ermächtigt den Staatssekretär für Heer[es]wesen, unter Bedachtnahme auf die vom Staatssekretär für Land- und Forstwirtschaft gemachte Anregung vorläufig die gefährlichsten Munitionssorten der Vernichtung zuführen zu lassen.</p>
+               </div>
+               <div type="top" xml:id="krp-0076_top10">
+                  <head>
+                     <label>
+                        <num n="10">10.</num>
+                        <seg>Bericht über die Friedensverhandlungen in St. Germain.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Bauer</hi> teilt mit, dass die Friedensbedingungen heute in St. Germain unserer De<pb facs="krp-0076_r-0016"/>legation überreicht wurden; über deren Inhalt seien bisher keinerlei amtliche Berichte eingelangt.</p>
+                  <p/>
+               </div>
+            </div>
+            <div type="stenogramme">
+               <div n="1">
+                  <head>[KBR 76, 2. Juni 1919, Stenogramm A]</head>
+                  <p><pb facs="krp-0076_s01-0001"/>76. Sitzung, Dienstag.</p>
+                  <p>1. Einlauf.</p>
+                  <p>2. Doktor Deutsch: Verwendung [der] Munition, Sofortmaßnahmen bezüglich der Verwertung oder Vernichtung von Munitionsvorräten.</p>
+                  <p>3. Paul: Gewährung von Fahrbegünstigungen an Post-, Telegrafie- und Telefonbedienstete.</p>
+                  <p>4. Schumpeter: Gesetzentwurf betreffend Strafbestimmungen für die Unterlassung der Vermögensanmeldungen.</p>
+                  <p>5. Hanusch: Vollzugsanweisung über den Schutz von Dienstnehmern bei Verlegung von Unternehmungen ins Ausland.</p>
+                  <p/>
+               </div>
+               <div n="2">
+                  <head>[KBR 76, 2. Juni 1919, Stenogramm B]</head>
+                  <p><pb facs="krp-0076_s02-0001"/>76., 2. /VI., 9h abends.</p>
+                  <p>Zerdik:</p>
+                  <p>Polen hat dem Warenaustauschübereinkommen die Ratifikation verweigert.</p>
+                  <p>Zerdik: Heute Nachmittag [haben] im Beisein Ellenbogens Verhandlungen mit den Angestellten und der Leitung der DDSG</p>
+                  <p>stattgefunden. Es besteht Aussicht, dass der Streik binnen Kurzem beendet sein wird.</p>
+                  <p>Hanusch: Punkt 5 Vollzugsanweisung über den Schutz von Dienstnehmern.</p>
+                  <p>Ermächtigt.</p>
+                  <p>Loewenfeld: Oberösterreich und Salzburg haben die Sache restlos eingehalten. </p>
+                  <p>Nach Tirol habe ich jemand geschickt und hoffe, dass die Sache geordnet wird.</p>
+                  <p>Hingegen hat Graz den einstimmigen Beschluss gefasst, auf der Einreisebewilligung zu bestehen und eine neue </p>
+                  <p>Verordnung erlassen wird. </p>
+                  <p>Ich glaube, dass jemand nach Graz fährt. Eventuell Drohung mit stärkeren Maßnahmen.</p>
+                  <p>[Beschluss]: Die Staatssekretäre für Volksernährung und Inneres werden ersucht, so bald als möglich nach Graz zu fahren.</p>
+                  <p>Punkt 7a Zerdik: Salzburg - Bauerleichterungen.</p>
+                  <p>Angenommen.</p>
+                  <p>Zerdik: Punkt 7b Exportakademie.</p>
+                  <p>Angenommen.</p>
+                  <p><pb facs="krp-0076_s02-0002"/>Eldersch: 8b Angenommen.</p>
+                  <p>8c Angenommen.</p>
+                  <p>8d Angenommen.</p>
+                  <p>Paul: Punkt 3 Fahrbegünstigungen. </p>
+                  <p>Der Zentralangestelltenrat der deutsch-österreichischen Staatsämter hat eine Eingabe </p>
+                  <p>an das Staatsamt für Verkehrswesen [gemacht]: </p>
+                  <p>einmalige freie Urlaubsfahrten für sich und die Familie oder doch Regiefahrkarten für sich und seine </p>
+                  <p>Familie. </p>
+                  <p>Ich hätte nichts dagegen, dass den Beamten und deren Familien für einmalige Urlaubsfahrten Regiekarten gegeben werden.</p>
+                  <p>Glöckel: Auch für die Lehrer.</p>
+                  <p>Schumpeter: Wir haben dann niemand, der die vollen Preise zahlt.</p>
+                  <p>Paul: Wir müssten es auf die Zivilangestellten und das Militär beschränken.</p>
+                  <p>Deutsch: Man soll nicht denjenigen, die schon eine Begünstigung haben, nicht noch mehr geben.</p>
+                  <p>Paul: Ich würde [sagen] über besonderes Einschreiten.</p>
+                  <p>Der schriftliche Antrag wird genehmigt. </p>
+                  <p>Dem Zentralangestelltenrat wird geantwortet, dass [es] generell nicht möglich [ist], dass aber über besonders Einschreiten </p>
+                  <p>in berücksichtigungswürdigen Fällen für die Familienmitglieder der halbe Fahrpreis gewährt wird.</p>
+                  <p><pb facs="krp-0076_s02-0003"/>Deutsch: </p>
+                  <p>Munition. </p>
+                  <p>Eine größere Munitionsmenge befindet sich am Steinfeld, die eine große Gefahr bedeutet.</p>
+                  <p>Schumpeter: Ich glaube, dass es etwas anderes als Vernichtung nicht gibt. </p>
+                  <p>Wenn der Export aus außenpolitischen Gründen untunlich ist, so können wir nichts anderes machen.</p>
+                  <p>Zerdik: Es gibt nach meiner Anschauung auch nur die Vernichtung. Für Bergbau kommen nur ganz geringe Mengen </p>
+                  <p>in Betracht.</p>
+                  <p>Stöckler: Rege an, möglichst umfangreiche Umarbeitung in Dynamon und Abgabe zu billigen Preisen für </p>
+                  <p>forstwirtschaftliche Zwecke sehr notwendig.</p>
+                  <p>[Beschluss]: Vorläufig das Wichtigste, nacheinander vernichten.</p>
+                  <p>Schumpeter: Frage an wegen Fortführung der Vermögensabgabe. </p>
+                  <p>Ist es erwünscht, dass im Einvernehmen mit dem [Staatsamt des] Äußeren ein Kom[itee] </p>
+                  <p>mit Rücksicht auf die Unsicherheit der finanziellen Zwecke mit Rücksicht auf die -</p>
+                  <p>[Beschluss]: Niemand wünscht, dass [es] jetzt mit der Vermögensabgabe vorwärts geht.</p>
+                  <p>Bauer: Brief des Staatskanzlers an französischen [<hi rend="#i">Einschub</hi>:] Finanz[<hi rend="#i">Einschub Ende</hi>] -Konsul. </p>
+                  <p>Es ist gelungen, unsere erheblichsten Wünsche durchzusetzen.</p>
+               </div>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

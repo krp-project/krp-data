@@ -1,0 +1,555 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href='http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:acdh="https://vocabs.acdh.oeaw.ac.at/schema#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xml:lang="de">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="a" type="main" n="0058">Kabinettsprotokoll Nr. 58 vom 4. April 1919</title>
+            <title level="m" type="main" n="01">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <title level="m" type="sub" n="">Renner II (15. März – 17. Oktober 1919)</title>
+            <meeting>
+               <placeName key="https://d-nb.info/gnd/4066009-6">Wien</placeName>
+               <orgName key="https://d-nb.info/gnd/5162749-8">Kabinettsrat</orgName>
+               <date when-iso="1919-04-04"/>
+            </meeting>
+            <editor>
+               <persName key="https://d-nb.info/gnd/122481836"
+                         role="hasCreator"
+                         xml:id="hwohnout">
+                  <forename>Helmut</forename>
+                  <surname>Wohnout</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</affiliation>
+               <idno type="ORCID">0000-0002-3864-9839</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/120789825"
+                         role="hasCreator"
+                         xml:id="tolechowski">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0003-3291-6876</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/131679384"
+                         role="hasCreator"
+                         xml:id="rlein">
+                  <forename>Richard</forename>
+                  <surname>Lein</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0002-7502-0503</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="aholzer">
+                  <forename>Anna</forename>
+                  <surname>Holzer</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0005-3560-3500</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="dsoelkner">
+                  <forename>Dominik</forename>
+                  <surname>Sölkner</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-9895-7212</idno>
+            </editor>
+            <editor>
+               <persName role="hasContributor" xml:id="ischotzko">
+                  <forename>Ina</forename>
+                  <surname>Schotzko</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-5210-3713</idno>
+            </editor>
+            <funder n="1">
+               <orgName key="https://d-nb.info/gnd/2054142-9" role="hasFunder">Österreichischer Wissenschaftsfonds FWF</orgName>
+               <idno type="project">PAT1495024</idno>
+               <title type="project">Die Protokolle des österreichischen Kabinettsrates 1919–1920</title>
+            </funder>
+            <respStmt>
+               <resp>Projektverantwortung</resp>
+               <orgName key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Projektleitung</resp>
+               <persName key="https://d-nb.info/gnd/120789825" role="hasPrincipalInvestigator">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+                  <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+                  <idno type="ORCID">0000-0003-3291-6876</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Nationaler Forschungspartner</resp>
+               <orgName key="https://d-nb.info/gnd/1123037736" role="hasEnabler">Austrian Centre for Digital Humanities</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Digitalisierung der gedruckten Quellen</resp>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>TEI-Datenmodellierung</resp>
+               <persName role="hasContributor" xml:id="tfruehwirth">
+                  <forename>Timo</forename>
+                  <surname>Frühwirth</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-3997-5193</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technische Supervision</resp>
+               <persName key="https://d-nb.info/gnd/1043833846"
+                         role="hasContributor"
+                         xml:id="pandorfer">
+                  <forename>Peter</forename>
+                  <surname>Andorfer</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-9575-9372</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technisches Consulting und Vorbereitung der Druckausgabe</resp>
+               <persName key="https://d-nb.info/gnd/13281899X"
+                         role="hasContributor"
+                         xml:id="skurz">
+                  <forename>Stephan</forename>
+                  <surname>Kurz</surname>
+                  <affiliation key="https://d-nb.info/gnd/1202798799">Institut für die Erforschung der Habsburgermonarchie und des Balkanraumes</affiliation>
+                  <idno type="ORCID">0000-0003-2546-2570</idno>
+               </persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher key="https://d-nb.info/gnd/1001454-8">Österreichische Akademie der Wissenschaften</publisher>
+            <date when="2028"/>
+            <availability status="free">
+               <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">Lizenziert unter CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/deed.de)</licence>
+            </availability>
+            <idno type="ISBN_Print"/>
+            <idno type="ISBN_Part_epub"/>
+            <idno type="ISBN_Digital"/>
+            <idno type="DOI"/>
+            <idno type="DOI_zenodo"/>
+            <idno type="ebook_ID"/>
+         </publicationStmt>
+         <seriesStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="m" type="main">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <respStmt>
+               <resp>Bearbeitung und Herausgeberschaft</resp>
+               <orgName key="https://d-nb.info/gnd/2024703-5">Universität Wien</orgName>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+         </seriesStmt>
+         <notesStmt>
+            <note>Diese TEI-XML-Datei ist Grundlage für eine Druckausgabe der Edition.</note>
+            <relatedItem>
+               <biblStruct>
+                  <monogr>
+                     <imprint>
+                        <pubPlace key="https://d-nb.info/gnd/4066009-6">Wien</pubPlace>
+                        <publisher key="https://d-nb.info/gnd/2068748-5">Verlag der Österreichischen Akademie der Wissenschaften</publisher>
+                        <date when="2029"/>
+                     </imprint>
+                     <extent/>
+                  </monogr>
+                  <note>
+              <idno/>
+              <ptr/>
+            </note>
+                  <citedRange/>
+               </biblStruct>
+            </relatedItem>
+         </notesStmt>
+         <sourceDesc>
+            <bibl>Quellbestand: AT-OeStA/AdR MRang MR 1Rep KRP Kabinettsratsprotokolle, 1918-1920 (Teilbestand)<ref target="https://www.archivinformationssystem.at/detail.aspx?id=5465">https://www.archivinformationssystem.at/detail.aspx?id=5465</ref>
+            </bibl>
+            <msDesc>
+               <msIdentifier>
+                  <institution key="https://d-nb.info/gnd/37748-X" role="hasOwner">AT-OeStA Österreichisches Staatsarchiv (Archiv (ÖStA))</institution>
+                  <repository key="https://d-nb.info/gnd/1601181-8">AT-OeStA/AdR Archiv der Republik, 1918- (Abteilung)</repository>
+                  <collection>AT-OeStA/AdR MRang MR 1Rep Ministerrat 1. Republik, 1918 - 1938 (Bestand)</collection>
+                  <idno>AT-OeStA_AdR-MRang-MR-1.-Rep.-KRP-058</idno>
+               </msIdentifier>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <abstract>
+            <p>
+          <!--to be generated-->
+        </p>
+         </abstract>
+      </profileDesc>
+      <encodingDesc>
+         <styleDefDecl scheme="css"/>
+         <tagsDecl>
+            <rendition xml:id="b" scheme="css">font-weight:bold;</rendition>
+            <rendition xml:id="su" scheme="css">vertical-align:super;font-size:.7em;</rendition>
+            <rendition xml:id="s" scheme="css">text-decoration:line-through;</rendition>
+            <rendition xml:id="u" scheme="css">text-decoration:underline;</rendition>
+            <rendition xml:id="ow" scheme="css">text-decoration:line-through;text-decoration-style:double;</rendition>
+            <rendition xml:id="r" scheme="css">display:block;text-align:right;</rendition>
+            <rendition xml:id="letterspaced" scheme="css">letter-spacing:0.15em;</rendition>
+            <rendition xml:id="i" scheme="css">font-style:italic;</rendition>
+         </tagsDecl>
+         <editorialDecl>
+            <hyphenation>
+               <p>
+            <!--to be added-->
+          </p>
+            </hyphenation>
+            <correction>
+               <p>
+            <!--to be added-->
+          </p>
+            </correction>
+            <normalization>
+               <p>
+            <!--to be added-->
+          </p>
+            </normalization>
+            <punctuation>
+               <p>
+            <!--to be added-->
+          </p>
+            </punctuation>
+            <stdVals>
+               <p>
+            <!--to be added-->
+          </p>
+            </stdVals>
+            <p>
+          <!--to be added-->
+        </p>
+         </editorialDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#tfruehwirth" when-iso="2026-10-13">TEIGarage output upconverted with upconvert.xsl</change>
+         <change who="#tfruehwirth" when-iso="2026-10-13">TEI header populated with generate_tei_templates.py</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface/>
+   </facsimile>
+   <text>
+      <body>
+         <div xml:id="doc-krp-0058.xml">
+            <head type="dokument">
+               <title type="num">58.<note type="footnote">Das Protokoll trägt den Vermerk <hi rend="#i">Vertraulich!</hi></note>
+               </title>
+               <title type="desc">
+                  <pb facs="krp-0058_r-0001"/>[Montag] 1919-04-07</title>
+            </head>
+            <div type="dokumentkopf">
+               <div type="vorsitz">
+                  <head>Vorsitz:</head>
+                  <p>Renner</p>
+               </div>
+               <div type="anwesend">
+                  <head>Anwesend:</head>
+                  <p>Bauer, Bratusch, Deutsch, Ellenbogen, Fink, Hanusch, Miklas, Paul, Pflügl, Resch, Schumpeter, Waiss, Zerdik</p>
+               </div>
+               <div type="zugezogen">
+                  <head>Zugezogen:</head>
+                  <p>Schedlbauer</p>
+               </div>
+               <div type="schriftfuehrer">
+                  <head>Schriftführer:</head>
+                  <p>unbekannt</p>
+               </div>
+               <div type="dauer">
+                  <head>Dauer:</head>
+                  <p>15.00–18.00 Uhr</p>
+               </div>
+            </div>
+            <div type="komponenten">
+               <p>Reinschrift, Beilagen, Konzept, stenographische Mitschrift, Entwurf der Tagesordnung</p>
+            </div>
+            <div type="beilagen">
+               <head>Beilagen:</head>
+               <list>
+                  <item><ref target="#krp-0058_top01">Zu TOP 1</ref>: <ref target="#krp-0058_b01">Italienische Forderungen auf Sicherstellung von Kunstschätzen</ref></item>
+                  <item><ref target="#krp-0058_top02">Zu TOP 2</ref>: <ref target="#krp-0058_b02">Gesetzesbeschluss der Provisorischen Landesversammlung Niederösterreichs zur Abänderung einiger Bestimmungen des Gesetzes über die Rechtsverhältnisse des Lehrstandes</ref></item>
+                  <item><ref target="#krp-0058_top03">Zu TOP 3</ref>: <ref target="#krp-0058_b03">Gesetzesbeschlüsse der Provisorischen Landesversammlung Kärntens über die Änderung einiger Bestimmungen des Gesetzes über die Schulaufsicht</ref></item>
+                  <item><ref target="#krp-0058_top06">Zu TOP 6</ref>: <ref target="#krp-0058_b04">Aktennotiz über die Vorsprache des Obmannes des Archivrates hinsichtlich der Erinnerung an den Beschluss zur Erhaltung der Archive vom 18. Februar 1919</ref></item>
+                  <item><ref target="#krp-0058_top07">Zu TOP 7</ref>: <ref target="#krp-0058_b05">Adaptierungsarbeiten zur Umwandlung der ehemaligen Technischen Militärakademie in Mödling</ref></item>
+                  <item><ref target="#krp-0058_top08">Zu TOP 8</ref>: <ref target="#krp-0058_b06">Ratifizierung des Wirtschaftsübereinkommens mit der ungarischen Räterepublik</ref></item>
+                  <item><ref target="#krp-0058_top09">Zu TOP 9</ref>: <ref target="#krp-0058_b07">Ratifizierung des Wirtschaftsübereinkommens mit der westukrainischen Volksrepublik</ref></item>
+                  <item><ref target="#krp-0058_top10">Zu TOP 10</ref>: <ref target="#krp-0058_b08">Gesetzesentwurfs des Staatsamtes für Verkehrswesen über die Errichtung von Vertretungskörpern des Personals der deutschösterreichischen Staatsbahnen</ref></item>
+               </list>
+            </div>
+            <div type="protokoll">
+               <pb facs="krp-0058_r-0002"/>
+               <div type="top" xml:id="krp-0058_top01">
+                  <head>
+                     <label>
+                        <num n="1">1.</num>
+                        <seg>Forderungen der italienischen Militärmission.</seg>
+                     </label>
+                  </head>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> teilt mit, dass die italienische Militärmission neuerlich Forderungen erhoben hat, die sich allerdings vorläufig nicht auf eine Übergabe, sondern nur auf die Sicherstellung von vielen Hunderten von Gegenständen aus den vormaligen Hofsammlungen beziehen. Der Verlust, den <pb facs="krp-0058_r-0003"/>Deutschösterreich hiedurch erleiden würde, wäre in Ziffern kaum auszudrücken; kulturell würde die Entnahme dieser Gegenstände der Vernichtung der vormals kaiserlichen Sammlungen gleichkommen und Deutschösterreich eine nie wieder gut zu machende Demütigung bereiten, welche unsere künftigen freundschaftlichen Beziehungen zu Italien stets ungünstig beeinflussen müsste.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Bauer</hi> behält sich vor, diese Forderungen dar italienischen Mission den übrigen Ententemächten bekanntzugeben. Das bezügliche Elaborat sei bereits in Vorbereitung.</p>
+                  <p>Der Kabinettsrat nimmt die Mitteilungen des Vorsitzenden und des Staatssekretärs Dr. Bauer zur Kenntnis.</p>
+               </div>
+               <div type="top" xml:id="krp-0058_top02">
+                  <head>
+                     <label>
+                        <num n="2">2.</num>
+                        <seg>Gesetzesbeschluss der Provisorischen Landesversammlung des Landes Niederösterreich, womit einige Bestimmungen des Gesetzes über die Rechtsverhältnisse des Lehrstandes abgeändert werden.</seg>
+                     </label>
+                  </head>
+                  <p>Im Auftrage des infolge Erkrankung abwesenden Unterstaatsekretärs Glöckel erbittet und erhält der Ministerialrat des Staatsamtes für Inneres und Unterricht Dr. <hi rend="#letterspaced">Schedlbauer</hi> die Ermächtigung des Kabinettsrates, dass von der Erhebung einer Vorstellung gegen den <pb facs="krp-0058_r-0004"/>von der Provisorischen Landesversammlung des Landes Niederösterreich in der Sitzung vom 12. März 1919 beschlossenen Gesetzentwurf, womit die §§ 31, 78 und 111 des Gesetzes vom 31. Juli 1917, LGBl. Nr. 158, betreffend die Regelung der Rechtsverhältnisse des Lehrstandes an den öffentlichen Volksschulen abgeändert, bzw. aufgehoben werden, abgesehen, bzw. eine Anfechtung dieser Vorlage unterlassen und die Landesregierung hievon mit dem Bemerken verständigt werde, dass gegen die sofortige Kundmachung dieses Gesetzes seitens der Staatsregierung kein Anstand obwaltet.</p>
+               </div>
+               <div type="top" xml:id="krp-0058_top03">
+                  <head>
+                     <label>
+                        <num n="3">3.</num>
+                        <seg>Gesetzesbeschlüsse der Provisorischen Landesversammlung des Landes Kärnten, betreffend die Abänderung einiger Bestimmungen des Gesetzes über die Schulaufsicht.</seg>
+                     </label>
+                  </head>
+                  <p>Ministerialrat Dr. Schedlbauer bespricht weiters die von der Provisorischen Landesversammlung des Landes Kärnten beschlossene Fassung des Art. III des Gesetzes, betreffend die Zusammensetzung des Bezirksschulrates bzw. des Stadtschulrates für die Stadt Klagenfurt, die im § 36, Pkt. 3 des Gesetzes, betreffend die Zusammensetzung des Landesschulrates vorgesehene Bestel<pb facs="krp-0058_r-0005"/>lung von Lehrpersonen zu administrativen und ökonomischen Referenten, die im § 36, Pkt. 7 dieses Gesetzes beschlossene Entsendung von durch den Landesrat zu ernennenden Elternvertretern als Mitglieder in den Landesschulrat, endlich die Fassung der Durchführungsbestimmung des Art. IV desselben Gesetzes. Der Referent stellt den Antrag, der Kabinettsrat wolle das Staatsamt für Inneres und Unterricht ermächtigen, gegen diese Gesetzesbeschlüsse bei der Landesversammlung im Wege der Landesregierung Vorstellungen zu erheben, sowie einige weitere formelle Anstände, ohne dieserwegen Einspruch zu erheben, der Landesregierung lediglich mit dem Ersuchen bekanntzugeben, beim Landesrate eine entsprechende Änderung in Anregung zu bringen.</p>
+                  <p>Bei der sich hieran anschließenden Debatte beantragt Unterstaatssekretär <hi rend="#letterspaced">Miklas</hi> die Ausarbeitung eines Musterentwurfes für ein Schulaufsichtsgesetz durch das Unterrichtsamt oder die Staatskanzlei, um damit den Landesverwaltungen, analog wie dies rücksichtlich der Landtagswahlordnung geschehen sei, Richtlinien an die Hand zu geben.</p>
+                  <p><pb facs="krp-0058_r-0006"/>Der <hi rend="#letterspaced">Vorsitzende</hi> hält diesen Antrag für überaus zweckmäßig und regt weiters an, dass die Landeshauptmänner mittelst Zirkularweisung zur ständigen Berichterstattung an die Staatsregierung über alle in der Landesversammlung bzw. in deren Ausschüssen anhängigen Gesetzesvorlagen eingeladen werden. Damit würde jedenfalls erzielt werden, dass die zuständigen Staatsämter bereits vor der Vorlage der beschlossenen Landesgesetze über deren Inhalt im Allgemeinen informiert wären und bei dieser Sachlage umso leichter mit der der Staatsregierung eingeräumten 14-tägigen, verhältnismäßig kurz bemessenen Einspruchsfrist das Auslangen finden könnten.</p>
+                  <p>Der Kabinettsrat stellt sodann fest, dass auf die Beurteilung der vorliegenden Gesetzesbeschlüsse die Bestimmungen des Art. 14 des Gesetzes über die Volksvertretung Anwendung zu finden haben, weil diese Beschlüsse wohl vor dem 15. März, – an welchem Tage das Gesetz über die Volksvertretung kundgemacht wurde – in der Landesversammlung gefasst, aber erst nach dem 15. März im zuständigen Staatsamte <pb facs="krp-0058_r-0007"/>eingelaufen sind. Das Staatsamt für Inneres und Unterricht wird daher beauftragt, eine Vorstellung im Sinne des Referentenantrages zu erheben.</p>
+                  <p>Gleichzeitig tritt der Kabinettsrat dem Antrage des Unterstaatssekretärs Miklas, betreffend die Ausarbeitung eines Musterentwurfes für ein Schulaufsichtsgesetz durch das Staatsamt für Inneres und Unterricht, sowie dem Antrage des Vorsitzenden, betreffend die Erlassung der erwähnten Zirkularweisung an die Landeshauptmänner, bei.</p>
+               </div>
+               <div type="top" xml:id="krp-0058_top04">
+                  <head>
+                     <label>
+                        <num n="4">4.</num>
+                        <seg>Kundmachung mehrerer von der Nationalversammlung beschlossener Gesetze.</seg>
+                     </label>
+                  </head>
+                  <p>Der Kabinettsrat findet über Antrag des Vorsitzenden gegen die nachstehenden, von der Nationalversammlung beschlossenen Gesetze keine Vorstellung zu erheben:</p>
+                  <p>Gesetz über die Bezüge der Volksbeauftragten,</p>
+                  <p>Gesetz über die Inanspruchnahme von Grundstücken zur Gewinnung von Torf (Abtorfungsgesetz),</p>
+                  <p>Gesetz über eine besondere Brotauflage im Jahre 1919 und</p>
+                  <p>Gesetz über die Errichtung von Einigungsämtern für Streitigkeiten <pb facs="krp-0058_r-0008"/>aus bestimmten Lieferungsverträgen.</p>
+                  <p>Die Gesetzesbeschlüsse sind daher von den zuständigen Mitgliedern der Staatsregierung gegenzuzeichnen und dem Präsidenten zur Fertigung vorzulegen.</p>
+               </div>
+               <div type="top" xml:id="krp-0058_top05">
+                  <head>
+                     <label>
+                        <num n="5">5.</num>
+                        <seg>Bericht des Staatssekretärs Dr. Deutsch über die Vorstellung der italienischen Waffenstillstandskommission in Angelegenheit unserer mobilen Truppenstände.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Deutsch</hi> macht vertraulich Mitteilung über die Forderung der italienischen Waffenstillstandskommission in Angelegenheit unserer mobilen Truppenstände und erbittet sich die Zustimmung des Kabinettsrates zu der seinerseits in Aussicht genommenen Antwortnote an den General Segré.</p>
+                  <p>Nach einer längeren Debatte, an der sich insbesondere Staatssekretär Ing. <hi rend="#letterspaced">Zerdik</hi> sowie Unterstaatssekretär <hi rend="#letterspaced">Miklas</hi> beteiligten, pflichtet der Kabinettsrat dem Referentenantrage bei.</p>
+               </div>
+               <div type="top" xml:id="krp-0058_top06">
+                  <head>
+                     <label>
+                        <num n="6">6.</num>
+                        <seg>Frage der Erhaltung der Archive.</seg>
+                     </label>
+                  </head>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> gibt bekannt, dass der Sekretär des Staatsdenkmalamtes Dr. Tietze das Ersuchen gestellt habe, es möge der Beschluss des Kabi<pb facs="krp-0058_r-0009"/>nettsrates vom 18. Februar d. J. in der Frage der Erhaltung der Archive den zuständigen Stellen neuerlich in Erinnerung gebracht und hiebei die Weisung erteilt werden, dass in allen Archivangelegenheiten im Einvernehmen mit dem Archivrate vorzugehen sei.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Bauer</hi> hält dieses Ersuchen im Allgemeinen für gerechtfertigt, möchte jedoch einerseits darauf hinweisen, dass die wertvollsten Archive, und zwar das Haus-, Hof- und Staatsarchiv sowie das Hofkammer- und Kabinettsarchiv, ausdrücklich dem Präsidenten der Akademie der Wissenschaften, Prof. Hofrate Dr. Redlich unterstellt seien und dass andererseits nach völkerrechtlichen Grundsätzen die Archive dem Territorium zu folgen haben. Demgemäß werde man die Akten, die sich auf die Sukzessionsstaaten beziehen, wohl abtreten müssen, wenn die faktische Durchführung auch erst nach Friedensschluss in die Wege geleitet werden könnte. Die Forderungen der Nationalstaaten aber nach Überlassung jener Akten, die für sie bereits im gegenwärtigen Momente von unmittelbarer Bedeutung seien, dürften seines Erachtens nicht zurückgewiesen werden.</p>
+                  <p><pb facs="krp-0058_r-0010"/>Nachdem sich Staatssekretär <hi rend="#letterspaced">Paul</hi> dieser Auffassung vollinhaltlich angeschlossen hatte, fasst der Kabinettsrat den Beschluss, dass die in der Kabinettsratssitzung am 18. Februar (Kabinettsprotokoll Nr. 43, Pkt. 2) festgelegten Richtlinien, betreffend die Frage der Erhaltung der Archive, auch weiterhin mit nachstehenden Ergänzungen aufrecht zu bleiben haben:</p>
+                  <list>
+                     <item n="1"><label>1.)</label> Der Schutz der Archive hat sich nicht auf die Akten zu erstrecken, die zur unmittelbaren Entscheidung von anhängigen Rechtssachen in den fremden Nationalstaaten dienen, sowie auf Vorakten zu diesen Akten. Soweit es sich um nicht umstrittene Gebiete handelt, können daher Akten, die territorial (z. B. Grundsteuerkataster) oder personell (z. B. Personaldokumente der Staatsangestellten) den Sukzessionsstaaten offenkundig zugehören, ohne weiters bereits jetzt abgegeben werden; soferne umstrittene Gebiete in Frage kommen, werden derartige Akten nur leihweise, also mit Vorbehalt des Eigentumsrechtes und gegen Revers auszufolgen sein. Dies gilt insbesondere rücksichtlich der Akten, welche sich auf das Ressort des Verkehrsamtes (z. B. Eisenbahnbauprojekte) und des <pb facs="krp-0058_r-0011"/>Bergbau- und des öffentlichen Baudienstes beziehen.</item>
+                     <item n="2"><label>2.)</label> Im Übrigen wird auf den allen Staatsämtern vom Staatsamt für Äußeres bereits zugekommenen Vertrag mit den Nationalstaaten verwiesen.</item>
+                  </list>
+               </div>
+               <div type="top" xml:id="krp-0058_top07">
+                  <head>
+                     <label>
+                        <num n="7">7.</num>
+                        <seg>Vornahme von Adaptierungsarbeiten in der Technischen Militärakademie in Mödling.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Ing. <hi rend="#letterspaced">Zerdik</hi> führt aus, dass im Kabinettsrat vom 28. Jänner l. J. die Umwandlung der Technischen Militärakademie in Mödling in eine technisch-gewerbliche Lehranstalt beschlossen worden sei.</p>
+                  <p>Die Unterbringung der in Aussicht genommenen Schulabteilungen in diesem Gebäudekomplexe mache die Vornahme von zum Teile ziemlich umfangreichen und langwierigen Adaptierungsarbeiten, insbesondere an den Nebengebäuden, notwendig.</p>
+                  <p>Die Adaptierungsarbeiten im Hauptgebäude die verhältnismäßig kurze Zeit in Anspruch nehmen dürften, können erst nach Schluss des Schuljahres der jetzt im Hauptgebäude untergebrachten Staatsstiftungsrealschule begonnen werden; es ergebe sich aber die Notwendigkeit, die Adaptierungsarbeiten <pb facs="krp-0058_r-0012"/>in den Nebengebäuden bereits in einem früheren Zeitpunkte und zwar womöglich schon im Mai l. J. zu beginnen, damit sie mit Beginn des Schuljahres 1919/1920 fertiggestellt sein können.</p>
+                  <p>Der Anstaltskomplex bilde nun einen Teil der Liquidierungsmasse des gewesenen Gesamtstaates. Nach eingeholten Informationen bestehe in der zwischenstaatlichen Liquidierungskommission die Absicht, die ehemals gemeinsamen Gebäude in absehbarer Zeit kommissionell zu inventarisieren und zu schätzen, um den Anteil der einzelnen Nationalstaaten an dem Werte dieser Gebäude und den eventuellen Betrag einer zu leistenden Ablösungssumme festzustellen.</p>
+                  <p>Es sei nun ganz ungewiss, ob der von der zwischenstaatlichen Liquidierungskommission für die Durchführung dieser Schätzungen dermalen in Aussicht genommene Termin (Mai l. J.) eingehalten werden wird.</p>
+                  <p>Bei den in der Angelegenheit gepflogenen Verhandlungen hätten die Vertreter des Staatsamtes der Finanzen der Befürchtung Ausdruck gegeben, dass im Falle der Durchführung größerer Adaptierungsarbeiten vor Vornahme der <pb facs="krp-0058_r-0013"/>eben erwähnten Schätzung bei letzterer der Wert des Anstaltskomplexes entsprechend den durchgeführten Adaptierungsarbeiten höher eingeschätzt werden könnte, wodurch dem deutschösterreichischen Staate ein namhafter Schaden erwachsen würde. Die Vertreter des genannten Staatsamtes hätten daher gebeten, mit den Adaptierungsarbeiten bis nach Durchführung der Schätzung zuzuwarten. </p>
+                  <p>Hiezu müsse der sprechende Staatssekretär jedoch bemerken, dass die in erster Linie vorzunehmenden Adaptierungsarbeiten im Wesentlichen nur in der Umgestaltung der Geschützhallen und des Stallgebäudes in Werkstättengebäude und in anderen kleineren baulichen Veränderungen bestehen, die eine bedeutende Wertsteigerung des Gesamtobjektes nicht zur Folge haben werden. Größere Bauherstellungen würde nur die Errichtung der Kraftzentrale und die Aufsetzung eines dritten Stockwerkes auf ein Mannschaftsgebäude erfordern, Arbeiten, die so umfangreich seien, dass ihre Fertigstellung vor Vornahme der Schätzung durch die zwischenstaatliche Liquidierungskommission ohnedies nicht zu erwarten ist. <pb facs="krp-0058_r-0014"/>Er bitte daher um die Ermächtigung, mit den Adaptierungsarbeiten im erwähnten Umfange eventuell schon vor Schätzung des Gebäudekomplexes durch die zwischenstaatliche Liquidierungskommission beginnen zu dürfen.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Schumpeter</hi> erhebt gegen diesen Antrag Einsprache und regt die Abhaltung einer weiteren Besprechung zwischen den beteiligten Staatsämtern an.</p>
+                  <p>Der Kabinettsrat genehmigt schließlich, nachdem Staatssekretär <hi rend="#letterspaced">Hanusch</hi> in diesem Zusammenhange auf die besondere Notwendigkeit der raschesten Durchführung aller auf die Verringerung der herrschenden Arbeitslosigkeit abzielenden Maßnahmen sowie darauf hingewiesen hatte, dass der für das Investitionsprogramm bewilligte Kredit von 153 Millionen K noch gar nicht in Anspruch genommen worden sei, den vorliegenden Antrag für den Fall, als das Staatsamt der Finanzen aufgrund der noch abzuführenden Besprechung von seinem Einspruch bis zur nächsten Kabinettsratssitzung zurücktreten sollte.</p>
+                  <p>Gleichzeitig beauftragt der Kabinettsrat das Staatsamt der Finanzen, <pb facs="krp-0058_r-0015"/>der zwischenstaatlichen Liquidierungskommission ein Verzeichnis derjenigen Bauten vorzulegen, an denen Investierungen vorgenommen werden sollen; von dieser Kommission ist auch durch das Staatsamt der Finanzen die sofortige Vornahme der Schätzung der Technischen Militärakademie in Mödling zu verlangen.</p>
+               </div>
+               <div type="top" xml:id="krp-0058_top08">
+                  <head>
+                     <label>
+                        <num n="8">8.</num>
+                        <seg>Ratifizierung des Wirtschaftsübereinkommens mit Ungarn.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Ing. <hi rend="#letterspaced">Zerdik</hi> teilt mit, dass zwischen den Vertretern der deutschösterreichischen Regierung und der Regierung der ungarischen Räterepublik in der Zeit vom 31. März bis 3. April l. J. Verhandlungen wegen verschiedener wirtschaftlicher Vereinbarungen stattgefunden haben, wobei ein Durchfuhrsübereinkommen nebst einem Separatübereinkommen über die Aufrechterhaltung des wechselseitigen Eisenbahnverkehres abgeschlossen worden ist. Außerdem seien auch gegenseitige Lieferungsverpflichtungen als vorläufige Vorschläge auf ein in einigen Wochen beabsichtigtes Kompensationsübereinkommen festgesetzt worden. Der sprechende Staatssekretär erläu<pb facs="krp-0058_r-0016"/>tert in eingehender Weise die Details der einschlägigen Protokollarniederschriften und erbittet sich die Ermächtigung des Kabinettsrates zur Ratifizierung dieser Verträge.</p>
+                  <p>Der Kabinettsrat erteilt dem Staatssekretär Ing. Zerdik die erbetene Ermächtigung.</p>
+               </div>
+               <div type="top" xml:id="krp-0058_top09">
+                  <head>
+                     <label>
+                        <num n="9">9.</num>
+                        <seg>Ratifizierung des mit der westukrainischen Volksrepublik abgeschlossenen Wirtschaftsübereinkommens.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Bauer</hi> gibt bekannt, dass mit Vertretern der westukrainischen Volksrepublik am 27. März d. J. ein Wirtschaftsübereinkommen abgeschlossen wurde, in welchem allgemeine Grundsätze für den Warenaustausch festgelegt, die Frage der Beförderung, des Verfahrens bei Erteilung der Einkaufs- und Ausfuhrsbewilligungen und der Geldverkehr geregelt wird. Auch sind die Mengen der von den beiden Vertragsteilen zu liefernden Waren festgelegt. Der wechselseitige Eisenbahnverkehr ist durch ein besonderes Abkommen zwischen dem Staatsamt für Verkehrswesen und dem Vertreter der westukrainischen Staatsbahnen geregelt, desgleichen der Post-, Telegrafen- und Fernsprechverkehr durch drei Einzelübereinkommen. Diese <pb facs="krp-0058_r-0017"/>vier Spezialübereinkommen bilden einen integrierenden Bestandteil des Eingangs bezogenen Vertrages.</p>
+                  <p>Der sprechende Staatssekretär erbittet und erhält vom Kabinettsrate die Ermächtigung zur Ratifizierung und gegenseitigen Notifizierung dieses Übereinkommens.</p>
+               </div>
+               <div type="top" xml:id="krp-0058_top10">
+                  <head>
+                     <label>
+                        <num n="10">10.</num>
+                        <seg>Gesetzentwurf über die Errichtung von Vertretungskörpern des Personales der deutschösterreichischen Staatsbahnen.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Paul</hi> unterbreitet dem Kabinettsrat einen vom Staatsamt für Verkehrswesen im Einvernehmen mit allen Organisationen der Eisenbahnbediensteten verfassten Gesetzentwurf über die Errichtung von Vertretungskörpern des Personales der deutschösterreichischen Staatsbahnen und erläutert die einschlägigen Bestimmungen dieser Gesetzesvorlage in eingehender Weise. Was die formale Seite der Behandlung dieses Gegenstandes anbelangt, beabsichtigt der sprechende Staatssekretär einvernehmlich mit dem Obmann des Verkehrsausschusses der Nationalversammlung die Vorlage bereits am Donnerstag in diesem Ausschusse zur Beratung zu stellen und die Vorlage nach ihrer Annahme im <pb facs="krp-0058_r-0018"/>Ausschusse vorläufig als Vollzugsanweisung in Wirksamkeit zu setzen, um hiedurch die eheste Vornahme der Wahlen zu ermöglichen.</p>
+                  <p>Nach einer Wechselrede, an welcher sich Vizekanzler <hi rend="#letterspaced">Fink</hi> und die Staatssekretäre Dr. <hi rend="#letterspaced">Bauer</hi> und <hi rend="#letterspaced">Hanusch</hi> beteiligten, stimmt der Kabinettsrat dem vorliegenden Gesetzentwurfe zu und genehmigt den Antrag des Staatssekretärs Paul über die formale Behandlung der Vorlage, jedoch mit dem Beifügen, dass die vorläufige Hinausgabe dieses Entwurfes vor dessen Gesetzwerdung nicht in Form einer Vollzugsanweisung sondern lediglich als Dienstesanweisung zu erfolgen hätte. Diese hätte so lange in Kraft zu bleiben, bis der vorliegende Gesetzentwurf parlamentarisch erledigt, bzw. der vom Staatssekretär Dr. Bauer in der Nationalversammlung einzubringende Gesetzentwurf über die Betriebsräte in Kraft treten wird.</p>
+               </div>
+               <div type="top" xml:id="krp-0058_top11">
+                  <head>
+                     <label>
+                        <num n="11">11.</num>
+                        <seg>Übernahme von im bosnischen Eisenbahndienste stehenden Angestellten deutschösterreichischer Heimatszugehörigkeit in den deutschösterreichischen Eisenbahndienst.</seg>
+                     </label>
+                  </head>
+                  <p>Der Kabinettsrat ermächtigt den Staatssekretär Paul einer Anzahl von gegenwärtig im bosnischen Eisen<pb facs="krp-0058_r-0019"/>bahndienste stehenden Angestellten deutschösterreichischer Heimatszugehörigkeit die Übernahme in den deutschösterreichischen Eisenbahndienst – ohne Präjudiz für andere Dienstzweige – zuzusichern. Wegen Vereinbarung der näheren Modalitäten der Einreise dieser Bediensteten wird vom Staatsamt für Verkehrswesen mit dem Staatsamte des Äußern das Einvernehmen zu pflegen sein.</p>
+                  <p/>
+               </div>
+            </div>
+            <div type="stenogramme">
+               <div n="1">
+                  <head>[KBR 58, 7. April 1919, Stenogramm]</head>
+                  <p><pb facs="krp-0058_s01-0001"/>58. Sitzung; 7. /4.</p>
+                  <p>1. Renner: Zunächst Mitteilung: Italienische Mission neuerlich Forderungen in Bezug auf Sicherstellung von Kunstschätzen erhoben. Meldung von Sektionschef Weckbecker. Vorläufig nur Sicherstellung </p>
+                  <p>Rechtstitel sind eigenartig: 1.) Territorialer Natur alles, was von italienischen Meistern stammt, wenn auch bezahlt. </p>
+                  <p>2.) Auch Rüstung des Skanderbeg: weil Italien Albanien besetzt hat, soll unter italienische Verfügung gestellt werden, nicht schon jetzt weggenommen.</p>
+                  <p>2. Gesetzesbeschluss Niederösterreich. Schedlbauer gibt Darstellung.</p>
+                  <p>Miklas <hi rend="#s">Schumpeter</hi>: Unmittelbar finanzielle Konsequenz: bezahlt aus dem Landesschulfonds. Es handelt sich nur um Aufhebung des Sperrparagrafen.</p>
+                  <p>Angenommen.</p>
+                  <p>3. Gesetzesbeschluss Kärnten.</p>
+                  <p>Miklas: Wir kommen mit Ländern oft in Konflikt wegen Schaffung von Unterrichtsgesetz. Musterentwurf vom Unterrichtsamt oder Staatskanzlei, damit ein </p>
+                  <p>einheitlicher Schimmel zur Durchführung gelangt.</p>
+                  <p>Renner: Anregung äußerst zweckmäßig. Mit den Landesvertretungen am besten im Einvernehmen zu halten. </p>
+                  <p>Stilisierung wäre zu ändern. </p>
+                  <p>Ein altes Gesetz, das nach dem 15. /3. einläuft.</p>
+                  <p>Beschluss: Mit Rücksicht darauf, dass der vorgelegte Gesetzesbeschluss ... zwar vor dem 15. /3., an welchem Tag das Gesetz über die Volksvertretung ... geworden ist, </p>
+                  <p>in der Landesversammlung beschlossen, aber erst nach dem 15. /3. im zuständigen Staatsamt eingelaufen ist, findet auf die Beurteilung dieses Gesetzesbeschlusses die Bestimmungen </p>
+                  <p>des § ... des Gesetzes über die Volksvertretung Anwendung.</p>
+                  <p>Das Staatsamt für Inneres und Unterricht ist beauftragt, eine Vorstellung im Sinne des Antrages (gegen das Gesetz) zu erheben.</p>
+                  <p>Renner: Es muss in jedem Staatsamt die Tätigkeit der Landesversammlungen im Auge behalten werden.</p>
+                  <p>Schedlbauer: Früher haben die Statthalter stets berichtet. Mit der Autonomie haben diese Berichte aufgehört.</p>
+                  <p>Renner: Wir haben ein Hilfsmittel: Nach dem Gesetz über die Übernahme der Staatsgewalt in den Ländern hat der Landeshaupt[mann] besondere Verpflichtungen, die er vom Staathalter geerbt hat </p>
+                  <p>und in welcher Hinsicht er der Staatsregierung unmittelbar verantwortlich ist. Dazu gehört die persönliche Berichterstattung der Staatsregierung über das, was im </p>
+                  <p>Land vorgeht und insbesondere über die einzelnen Gesetzesvorlagen.</p>
+                  <p>Ellenbogen und Schumpeter: Die 14-tägige Frist ist zu kurz. Fink: Instruktion an den Landeshauptmann ist notwendig.</p>
+                  <p>Renner: Die Wiener Referenten müssen früher studieren.</p>
+                  <p>Angenommen.</p>
+                  <p>4. Gesetzeskundmachungen. [Renner:] Volk beauftragt, Torfgewinnung, Brotauflage, Einigungsämter. Das Kabinett hat [ein] Recht auf Vorstellung. </p>
+                  <p>Redner beantragt keine Vorstellung zu erheben.</p>
+                  <p>Angenommen.</p>
+                  <p><pb facs="krp-0058_s01-0002"/>5. Deutsch: Die italienische Kommission [hat] schon im Jänner angefragt über die Volkswehr (Gründung und weiterer Ausbau); ob im Einklang mit den Waffenstillstandsbedingungen.</p>
+                  <p>Italienisches Oberkommando: 1.) Es besteht noch immer eine Truppe Volkswehr 100 Bat.</p>
+                  <p>2.) Diese Wehrmacht ist größer als die zugestandene (für Deutsch-Österreich: 2 1/2 Div.: 30 Bat.)</p>
+                  <p>3.) Rücksicht für die öffentliche Ordnung lässt den Bestand dieser Wehrmacht nicht gerechtfertigt erscheinen.</p>
+                  <p>Antwortnote verfasst: Zu 1.) Längere Auseinandersetzung warum überhaupt die Aufstellung der Volkswehr: begrenzt auf 56.000 Mann, später bereit </p>
+                  <p>auf 27.000 Mann zu reduzieren. Widerstand bei der Volkswehr selbst und bei den Landesregierungen (Bewachung und Arbeitslosigkeit).</p>
+                  <p>Statistik: 6.500 Handelsangestellte, 8.500 amtliche Arbeiter, 2.700 Holzarbeiter, </p>
+                  <p>2.500 Transportarbeiter, 14.000 Industriearbeiter ohne Fach, 9.000 sonstige Arbeiter, </p>
+                  <p>4.800 land- und forstwirtschaftliche Arbeiter (zusammen 49.000 Mann).</p>
+                  <p>Zu 2.) 5 Divisionen würden uns zukommen (ca. 90.000 Mann). Die anderen Staaten noch viel weniger gefolgt.</p>
+                  <p>Zu 3.) Die anderen Formationen war[en] zwar geplant, so sind aber noch nicht aufgestellt. Eine Wehrmacht wären sie aber nicht.</p>
+                  <p>Zerdik: Wie viele sind auf dem flachen Land in Niederösterreich: 12.000 Mann.</p>
+                  <p>Miklas: Begrüßt, dass über Einschreiten ein Abbau der Volkswehr erfolgen wird (Horn). Nicht nur die politischen Bezirksbehörden, auch die Gemeinden </p>
+                  <p>würden das nur begrüßen.</p>
+                  <p>Zerdik: Waidhofen an der Ybbs.</p>
+                  <p>Deutsch: Jene Liste im Monat von 16 auf 12.000 Mann ohnedies abgebaut.</p>
+                  <p>Renner: Wenigstens Bergarbeiter entlassen.</p>
+                  <p>Angenommen die Antwort an die italienische Mission.</p>
+                  <p>Renner: Anregung: Dadurch, dass wir die anderen Ententemächte rufen, ob wir uns die Italiener nicht vom Hals schaffen könnten. Diese Reitzungen sind nur danach angetan, dass man die Stimmung verschlechtert.</p>
+                  <p>Bauer: Schon gestern Auftrag gegeben, dies vorzubereiten. Schon vor Monaten Beschwerde über das Verhalten der Italiener, </p>
+                  <p>verschiedene Konflikte (Wörgl etc.).</p>
+                  <p>Renner: [Soll man] die Bildersache in die Zeitung [geben]?</p>
+                  <p>Schumpeter: Kaum gut, die Sache in die Öffentlichkeit zu bringen. Die beste Art, sie dem Zugriff zu entziehen, ist sie zu beleihen, </p>
+                  <p>den anderen ein Pfandrecht zu geben.</p>
+                  <p>6. Archive. Renner: Die einzelnen Archivdirektoren sind gebeten, immer im Einverständnis mit Titze vorzugehen.</p>
+                  <p>Bauer: Das wertvollste Archiv (Haus-, Hof- und Staats[archiv]) ist ausgenommen, ebenso wie das Kabinetts- und Hofkammerarchiv ist dem Redlich unterstellt. </p>
+                  <p>Es ist ein allgemeiner völkerrechtlicher Grundsatz, dass die Archive dem Territorium folgen. Man wird die Akten, die sich darauf beziehen, abtreten müssen. Das könnte immerhin bis </p>
+                  <p>Friedensschluss vertagt werden. Aber die Forderungen der Nationalstaaten auf Akten, die für sie von unmittelbarer Bedeutung sind, dürfen nicht zurückbehalten werden. Solche Hindernisse haben zu unnötigen </p>
+                  <p>Reibungen geführt. Mehr Entgegenkommen gegenüber den Nationalstaaten wäre schon am Platz. Diese Grundsätze können sich also nur auf Akten von historischem Wert </p>
+                  <p>beziehen. Dasselbe gilt für Brünn.</p>
+                  <p><pb facs="krp-0058_s01-0003"/>Paul: Begrüßt den Standpunkt Bauers besonders. Große Differenzen zwischen ?Bürgern und Personal: Pläne, die sich auf unbestrittene und teilweise bestrittene Gebiete beziehen. </p>
+                  <p>Also etwas mehr freie Hand den Staatsämtern.</p>
+                  <p>Renner: Beschluss: Die Beschlüsse vom 15. /2. </p>
+                  <p>ergänzend: 1.) der Schutz der Archive erstreckt sich jedoch nicht auf Akten, die zur unmittelbaren Entscheidung von anhängigen Rechtssachen dienen und auf Vorakten </p>
+                  <p>zu diesen Akten. Eigentum soll vorbehalten werden soweit die Akten auf das bestrittene Gebiet sich beziehen.</p>
+                  <p>Bauer: Das Eigentum an den Akten ist vorzubehalten, aber sie werden den anderen zur Benützung überschickt (geliehen), soweit [es sich] nicht um Akte [handelt], die Territ[orial]- </p>
+                  <p>oder Personal[akten] (Grundsteuerkataster und Personaldokumente) [handelt]; </p>
+                  <p>laufende Akten ohne weiteres, Vorakten gehen nur leihweise.</p>
+                  <p>2.) Wegen des bestrittenen Gebietes nur leihweise. Auf dem Gebiete des Verkehrswesens und öffentlicher Bauten (Bergbau) </p>
+                  <p>Materialien aus der Registratur des Verkehrsamtes und des öffentlichen Baudienstes sind grundsätzlich wenn nicht überwiegend [...] Interessen </p>
+                  <p>in Frage stehen, sind leihweise gegen Revers auszufolgen.</p>
+                  <p>3.) Im Übrigen wird auf den, den Staatsämtern zugekommenen Vertrag mit den Nationalstaaten verwiesen.</p>
+                  <p>7. Mödling. [Zerdik:] Adaption notwendig (im Hauptgebäude nur nach Schluss des Schuljahres; in den Nebengebäuden schon jetzt möglich). </p>
+                  <p>[Das Staatsamt für] Finanzen bittet, mit diesen Arbeiten bis nach Schätzung zuzuwarten. Soweit es sich um kleinere Arbeiten handelt, müssen wir [sie] schon jetzt machen, um den </p>
+                  <p>Schulbeginn zu ermöglichen. In diesem Umfang also soll begonnen werden, wenn nicht bis Mai die Schätzung gemacht wird.</p>
+                  <p>Schumpeter: Noch eine formlose Referenten-Besprechung über diese Besprechung.</p>
+                  <p>Bauer: Diese Liquidierungskommission sollte sofort ihre Erhebungen machen. Beantragt: Das Staatsamt für Finanzen soll seinen Vertreter beauftragen, die Zustimmung der anderen </p>
+                  <p>zu erhalten, und ein Verzeichnis der Liquidierungskommission vorzulegen.</p>
+                  <p>Hanusch: Das Investitionsprogramm ist nicht in Anspruch genommen worden (153 Millionen sind bewilligt worden). </p>
+                  <p>Die Arbeitslosigkeit ist in Wien stabil geblieben (135.000 Arbeitslose, seit Februar immer gleich).</p>
+                  <p>Zerdik: Nicht richtig, dass von dem Geld nichts verwendet worden wäre. Für Straßenbau sind die Beträge der Steinindustrie zur Verfügung gestellt worden. </p>
+                  <p>7.000 To. Kohle pro Monat der Ziegel- und Zementindustrie zugewiesen.</p>
+                  <p>Zustimmung gegeben, ausgenommen den Fall, dass der Einspruch des Staatsamtes für Finanzen bis zur nächsten Sitzung aufrechterhalten wird.</p>
+                  <p>Staatsamt für Finanzen ist beauftragt, der Liquidierungskommission ein Verzeichnis derjenigen Bauten vorzulegen, an denen Inv[estitionen] gemacht werden sollen und </p>
+                  <p>von der Liq[uidierungskommission] die sofortige Vornahme der Schätzung zu verlangen.</p>
+                  <p>[<hi rend="#i">Am Rand</hi>:] Beschleunigung der Arbeiten zur Verringerung der Arbeitslosigkeit.</p>
+                  <p>8. Wirtschaftliches Übereinkommen mit Ungarn. [Zerdik:] Übereinkommen finanziell 6 Millionen bis 21 Millionen.</p>
+                  <p>Miklas: Wieviel Kupfervitriol wegen Weinbau?</p>
+                  <p>Angenommen.</p>
+                  <p><pb facs="krp-0058_s01-0004"/>9. Bauer: Ukrainischer Vertrag.</p>
+                  <p>Angenommen.</p>
+                  <p>10. Paul: Dieser Entwurf mit den bisherigen Vertretern im Eisenbahn-Beirat durchbesprochen worden. Einfaches [...]-Prinzip festgestellt im Einvernehmen </p>
+                  <p>mit allen Organisationen. </p>
+                  <p>Drei Sektionen: Beamten, Unterbeamten und Diener, Arbeiter.</p>
+                  <p>Vorschlag [<hi rend="#i">Einschub:</hi>] einvernehmlich mit dem Obmann des Verkehrsausschusses [<hi rend="#i">Einschub Ende</hi>]: Dieser Gesetzentwurf geht Donnerstag in den Verkehrsausschuss und wird dort gewissermaßen schon vor der Einbringung des Gesetzes parlamentarisch </p>
+                  <p>beraten. Wenn Einigung erzielt, wird Gesetzentwurf vorläufig als Vollzugsanweisung -vorschrift hinausgegeben. </p>
+                  <p>Wenn das Parlament zusammentritt, wird diese Vollzugsvorschrift als Gesetzentwurf eingebracht. </p>
+                  <p>Zugestimmt haben die im Beirat vertretenen Bediensteten sämtlicher politischer Richtungen.</p>
+                  <p>Bauer: Ich habe für die Sozialisierungskommission einen Entwurf ausarbeiten lassen über die Betriebsräte. </p>
+                  <p>Das ist eine gewisse Schwierigkeit. Das wird man nachholen können. Unter dieser Voraussetzung hätte ich keine Einwendung.</p>
+                  <p>Hanusch: Die Sache als Vollzugsanweisung hinauszugeben, erscheint praktischer als der Betriebsrat. </p>
+                  <p>Gemeinsam mit dem Betriebsrätegesetz. Gegenwärtig sollte die parlamentarische Behandlung ausgesetzt werden.</p>
+                  <p>Renner: Statt Vollzugsanweisung als Dienstanweisung hinauszugeben. Im Ausschuss kann man sagen, dass man auf das Betriebsrätegesetz wartet. </p>
+                  <p>Man bringt es ein und inzwischen als Dienstanweisung. Gleichzeitig als Gesetzesvorlage herauszugeben.</p>
+                  <p>Fink: Die letzte Art der parlamentarischen Behandlung, wie sie der Staatskanzler vorgeschlagen hat, wird leichter gehen.</p>
+                  <p>11. Paul: Bosnische Eisenbahner. In Wien erschien eine Deputation bosnischer Eisenbahner, welche sämtlich in Deutsch-Österreich heimatberechtigt sind. Schon im Dezember verhandelt. </p>
+                  <p>Sie verlangten um Aufnahme. Der Eisenbahnbeirat hat sich dagegen ausgesprochen damals. Es handelt sich um 113 Personen. </p>
+                  <p>Frage, ob wir diese Bediensteten gegenüber der früheren Weigerung jetzt übernehmen sollen? </p>
+                  <p>Wenn ja, dann durch Staatssekretär für Äußeres die Verständigung der bosnischen Regierung veranlassen.</p>
+                  <p>Gleichzeitig ein Ansuchen der rumänischen Regierung, ihr eine große Anzahl von Beamten (technische Organe) so bald als möglich zu übergeben.</p>
+                  <p>Bauer: In der rum[änischen Angelegenheit] würde Redner eine staatliche Vermittlung nicht wünschen. Etwas ganz anderes wäre, wenn sich die rumänische Regierung direkt mit den arbeitslosen Ingenieuren </p>
+                  <p>in Verbindung setzen würde. Der Staat als solcher sollte nicht die Sache weiterverfolgen.</p>
+                  <p>Antwortet: Wir können nicht weil wir Personal nicht verfügbar haben, aber viele Arbeitslose in Wien, mit denen sie sich in Verbindung setzen sollen.</p>
+                  <p>Bosnische [Angelegenheit]: Grundsätzlich ins Auge gefasst, nähere Modalität durch das Äußere mit der serbischen Regierung geführt wird. </p>
+                  <p>Dauernde Aufnahme in den deutsch-österreichischen Dienst kann nicht in Aussicht gestellt werden (Privatbahnen) </p>
+                  <p>ohne Präjudiz für andere Dienstzweige.</p>
+                  <p>6h.</p>
+                  <p><pb facs="krp-0058_s01-0005"/>Kabinett.</p>
+                  <p>Weckbecker verlangt in Bezug auf die Gemälde </p>
+                  <p>Weisungen: die Italiener verlangen Unerhörtes.</p>
+                  <p>Mittwoch 10h, [...]-</p>
+                  <p>Kommission.</p>
+                  <p>Vertraulich: Hilfe der anderen Gesandtschaften in Anspruch nehmen, um den Bilderraub zu verhindern.</p>
+               </div>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

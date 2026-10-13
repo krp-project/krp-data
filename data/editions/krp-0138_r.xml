@@ -1,0 +1,539 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href='http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:acdh="https://vocabs.acdh.oeaw.ac.at/schema#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xml:lang="de">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="a" type="main" n="0138">Kabinettsprotokoll Nr. 138 vom 15. Jänner 1920</title>
+            <title level="m" type="main" n="01">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <title level="m" type="sub" n="">Renner III (17. Oktober 1919 – 7. Juli 1920)</title>
+            <meeting>
+               <placeName key="https://d-nb.info/gnd/4066009-6">Wien</placeName>
+               <orgName key="https://d-nb.info/gnd/5162749-8">Kabinettsrat</orgName>
+               <date when-iso="1920-01-15"/>
+            </meeting>
+            <editor>
+               <persName key="https://d-nb.info/gnd/122481836"
+                         role="hasCreator"
+                         xml:id="hwohnout">
+                  <forename>Helmut</forename>
+                  <surname>Wohnout</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</affiliation>
+               <idno type="ORCID">0000-0002-3864-9839</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/120789825"
+                         role="hasCreator"
+                         xml:id="tolechowski">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0003-3291-6876</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/131679384"
+                         role="hasCreator"
+                         xml:id="rlein">
+                  <forename>Richard</forename>
+                  <surname>Lein</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0002-7502-0503</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="aholzer">
+                  <forename>Anna</forename>
+                  <surname>Holzer</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0005-3560-3500</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="dsoelkner">
+                  <forename>Dominik</forename>
+                  <surname>Sölkner</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-9895-7212</idno>
+            </editor>
+            <editor>
+               <persName role="hasContributor" xml:id="ischotzko">
+                  <forename>Ina</forename>
+                  <surname>Schotzko</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-5210-3713</idno>
+            </editor>
+            <funder n="1">
+               <orgName key="https://d-nb.info/gnd/2054142-9" role="hasFunder">Österreichischer Wissenschaftsfonds FWF</orgName>
+               <idno type="project">PAT1495024</idno>
+               <title type="project">Die Protokolle des österreichischen Kabinettsrates 1919–1920</title>
+            </funder>
+            <respStmt>
+               <resp>Projektverantwortung</resp>
+               <orgName key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Projektleitung</resp>
+               <persName key="https://d-nb.info/gnd/120789825" role="hasPrincipalInvestigator">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+                  <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+                  <idno type="ORCID">0000-0003-3291-6876</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Nationaler Forschungspartner</resp>
+               <orgName key="https://d-nb.info/gnd/1123037736" role="hasEnabler">Austrian Centre for Digital Humanities</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Digitalisierung der gedruckten Quellen</resp>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>TEI-Datenmodellierung</resp>
+               <persName role="hasContributor" xml:id="tfruehwirth">
+                  <forename>Timo</forename>
+                  <surname>Frühwirth</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-3997-5193</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technische Supervision</resp>
+               <persName key="https://d-nb.info/gnd/1043833846"
+                         role="hasContributor"
+                         xml:id="pandorfer">
+                  <forename>Peter</forename>
+                  <surname>Andorfer</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-9575-9372</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technisches Consulting und Vorbereitung der Druckausgabe</resp>
+               <persName key="https://d-nb.info/gnd/13281899X"
+                         role="hasContributor"
+                         xml:id="skurz">
+                  <forename>Stephan</forename>
+                  <surname>Kurz</surname>
+                  <affiliation key="https://d-nb.info/gnd/1202798799">Institut für die Erforschung der Habsburgermonarchie und des Balkanraumes</affiliation>
+                  <idno type="ORCID">0000-0003-2546-2570</idno>
+               </persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher key="https://d-nb.info/gnd/1001454-8">Österreichische Akademie der Wissenschaften</publisher>
+            <date when="2028"/>
+            <availability status="free">
+               <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">Lizenziert unter CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/deed.de)</licence>
+            </availability>
+            <idno type="ISBN_Print"/>
+            <idno type="ISBN_Part_epub"/>
+            <idno type="ISBN_Digital"/>
+            <idno type="DOI"/>
+            <idno type="DOI_zenodo"/>
+            <idno type="ebook_ID"/>
+         </publicationStmt>
+         <seriesStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="m" type="main">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <respStmt>
+               <resp>Bearbeitung und Herausgeberschaft</resp>
+               <orgName key="https://d-nb.info/gnd/2024703-5">Universität Wien</orgName>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+         </seriesStmt>
+         <notesStmt>
+            <note>Diese TEI-XML-Datei ist Grundlage für eine Druckausgabe der Edition.</note>
+            <relatedItem>
+               <biblStruct>
+                  <monogr>
+                     <imprint>
+                        <pubPlace key="https://d-nb.info/gnd/4066009-6">Wien</pubPlace>
+                        <publisher key="https://d-nb.info/gnd/2068748-5">Verlag der Österreichischen Akademie der Wissenschaften</publisher>
+                        <date when="2029"/>
+                     </imprint>
+                     <extent/>
+                  </monogr>
+                  <note>
+              <idno/>
+              <ptr/>
+            </note>
+                  <citedRange/>
+               </biblStruct>
+            </relatedItem>
+         </notesStmt>
+         <sourceDesc>
+            <bibl>Quellbestand: AT-OeStA/AdR MRang MR 1Rep KRP Kabinettsratsprotokolle, 1918-1920 (Teilbestand)<ref target="https://www.archivinformationssystem.at/detail.aspx?id=5465">https://www.archivinformationssystem.at/detail.aspx?id=5465</ref>
+            </bibl>
+            <msDesc>
+               <msIdentifier>
+                  <institution key="https://d-nb.info/gnd/37748-X" role="hasOwner">AT-OeStA Österreichisches Staatsarchiv (Archiv (ÖStA))</institution>
+                  <repository key="https://d-nb.info/gnd/1601181-8">AT-OeStA/AdR Archiv der Republik, 1918- (Abteilung)</repository>
+                  <collection>AT-OeStA/AdR MRang MR 1Rep Ministerrat 1. Republik, 1918 - 1938 (Bestand)</collection>
+                  <idno>AT-OeStA_AdR-MRang-MR-1.-Rep.-KRP-138</idno>
+               </msIdentifier>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <abstract>
+            <p>
+          <!--to be generated-->
+        </p>
+         </abstract>
+      </profileDesc>
+      <encodingDesc>
+         <styleDefDecl scheme="css"/>
+         <tagsDecl>
+            <rendition xml:id="b" scheme="css">font-weight:bold;</rendition>
+            <rendition xml:id="su" scheme="css">vertical-align:super;font-size:.7em;</rendition>
+            <rendition xml:id="s" scheme="css">text-decoration:line-through;</rendition>
+            <rendition xml:id="u" scheme="css">text-decoration:underline;</rendition>
+            <rendition xml:id="ow" scheme="css">text-decoration:line-through;text-decoration-style:double;</rendition>
+            <rendition xml:id="r" scheme="css">display:block;text-align:right;</rendition>
+            <rendition xml:id="letterspaced" scheme="css">letter-spacing:0.15em;</rendition>
+            <rendition xml:id="i" scheme="css">font-style:italic;</rendition>
+         </tagsDecl>
+         <editorialDecl>
+            <hyphenation>
+               <p>
+            <!--to be added-->
+          </p>
+            </hyphenation>
+            <correction>
+               <p>
+            <!--to be added-->
+          </p>
+            </correction>
+            <normalization>
+               <p>
+            <!--to be added-->
+          </p>
+            </normalization>
+            <punctuation>
+               <p>
+            <!--to be added-->
+          </p>
+            </punctuation>
+            <stdVals>
+               <p>
+            <!--to be added-->
+          </p>
+            </stdVals>
+            <p>
+          <!--to be added-->
+        </p>
+         </editorialDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#tfruehwirth" when-iso="2026-10-13">TEIGarage output upconverted with upconvert.xsl</change>
+         <change who="#tfruehwirth" when-iso="2026-10-13">TEI header populated with generate_tei_templates.py</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface/>
+   </facsimile>
+   <text>
+      <body>
+         <div xml:id="doc-krp-0138.xml">
+            <head type="dokument">
+               <title type="num">138.<note type="footnote">Das Protokoll trägt den Vermerk <hi rend="#i">Vertraulich!</hi></note>
+               </title>
+               <title type="desc">
+                  <pb facs="krp-0138_r-0001"/>[Donnerstag] 1920-01-15</title>
+            </head>
+            <div type="dokumentkopf">
+               <div type="vorsitz">
+                  <head>Vorsitz:</head>
+                  <p>Renner</p>
+               </div>
+               <div type="anwesend">
+                  <head>Anwesend:</head>
+                  <p>Deutsch, Eisler, Eldersch, Ellenbogen, Fink, Glöckel, Hanusch, Loewenfeld-Russ, Mayr, Miklas, Ramek, Reisch, Resch, Stöckler, Tandler, Waiss, Zerdik</p>
+               </div>
+               <div type="zugezogen">
+                  <head>Zugezogen:</head>
+                  <p>-</p>
+               </div>
+               <div type="schriftfuehrer">
+                  <head>Schriftführer:</head>
+                  <p>unbekannt</p>
+               </div>
+               <div type="dauer">
+                  <head>Dauer:</head>
+                  <p>20.30–23.15 Uhr</p>
+               </div>
+            </div>
+            <div type="komponenten">
+               <p>Reinschrift, Beilagen, Konzept, stenographische Mitschrift, Entwurf der Tagesordnung, 19. Personalsitzung</p>
+            </div>
+            <div type="beilagen">
+               <head>Beilagen:</head>
+               <list>
+                  <item><ref target="#krp-0138_top03">Zu TOP 3</ref>: <ref target="#krp-0138_b01">Antrag an das Staatsamt für Finanzen auf Abänderung am Entwurf der großen Vermögensabgabe</ref></item>
+                  <item><ref target="#krp-0138_top04">Zu TOP 4</ref>: <ref target="#krp-0138_b02">Antrag des Staatsamtes für soziale Verwaltung über die Krankenversicherung der Staatsangestellten samt Beilage A Inhalt des Gesetzesentwurfs</ref></item>
+                  <item><ref target="#krp-0138_top05">Zu TOP 5</ref>: <ref target="#krp-0138_b03">Vorlage des Staatsamtes für Land- und Forstwirtschaft Zl. 993/1919 der Abänderung des Salzburger Landeswasserrechtsgesetzes</ref></item>
+                  <item><ref target="#krp-0138_top06">Zu TOP 6</ref>: <ref target="#krp-0138_b04">Vortrag und Vollzugsanweisung des Staatsamtes für Heereswesen Z1. 505 zur Durchführung des Militärbesoldungsübergangsgesetzes</ref></item>
+               </list>
+            </div>
+            <div type="protokoll">
+               <pb facs="krp-0138_r-0002"/>
+               <div type="top" xml:id="krp-0138_top01">
+                  <head>
+                     <label>
+                        <num n="1">1.</num>
+                        <seg>Erhöhung der Brot- und Mehlpreise.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Loewenfeld-Russ</hi> verweist darauf, dass die Erhöhung der Brot- und Mehlpreise bekanntlich am 18. d. M. in Kraft treten solle. Heute habe sich nun die Leitung der Niederösterreichischen Landesregierung, welche die bezügliche Verordnung bisher noch nicht herausgegeben habe, an ihn mit dem Ersuchen gewendet, die Erlassung der Verordnung angesichts des Zusammentreffens mit den infolge der Kohlenkrise verfügten einschneidenden Sparmaßnahmen auf einen späteren Zeitpunkt zu verschieben. Redner müsse sich schon aus technischen Gründen entschieden gegen eine derartige Verschiebung aussprechen, weil das Mehl am flachen Lande bereits zu den erhöhten Preisen an die Verschleißstellen abgegeben und manchenorts nach der bisherigen Gepflogenheit vielleicht teilweise sogar schon an die Konsumenten ausgegeben worden sei. Wenn sich schon die angeregte Verschiebung etwa in Wien durchführen ließe, so müsse er dabei doch auf die schweren Unzukömmlichkeiten aufmerksam machen, die sich in einem solchen Falle aus der ungleichartigen Preiserstellung an den Peripherien Wiens und in der Stadt selbst ergeben würden. Dazu komme noch, dass <pb facs="krp-0138_r-0003"/>eine derartige Verschiebung für die Zukunft beispielfolgernd wirken müsse.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Reisch</hi> pflichtet dieser Auffassung bei und weist auf den namhaften finanziellen Entgang hin, der mit einer solchen Verschiebung verbunden wäre.</p>
+                  <p>Staatssekretär Ing. <hi rend="#letterspaced">Zerdik</hi> legt die Ursachen der in verschärftem Maße eingetretenen Kohlenkrise dar und verweist insbesondere auf die durch die Abschaltung der industriellen Betriebe eintretende materielle Schädigung der Arbeiterschaft in Wien. Unter diesen Umständen erscheine ihm eine kurze Hinausschiebung der Brot- und Mehlpreiserhöhung speziell für Wien wohl durchaus gerechtfertigt. In einigen Tagen dürfte sich übrigens die Kohlensituation voraussichtlich wieder bessern.</p>
+                  <p>Die Staatssekretäre <hi rend="#letterspaced">Eldersch</hi> und Dr. <hi rend="#letterspaced">Deutsch</hi> sowie Unterstaatssekretär <hi rend="#letterspaced">Glöckel</hi> sprechen sich gleichfalls für die Hinausschiebung der Brot- und Mehlpreiserhöhung in Wien bis zu jenem Zeitpunkte aus, in welchem die Industriebetriebe wieder die Arbeit aufnehmen können.</p>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> schlägt vor, es sei die Niederösterreichische Landesregierung zu beauftragen, die <pb facs="krp-0138_r-0004"/>Erhöhung der Brot- und Mehlpreise zwar für den 18. d. M. anzuordnen, für Wien aber mit Rücksicht auf die erfolgte Abschaltung der Industriebetriebe erst von der Woche ab 25. Jänner d. J. durchzuführen.</p>
+                  <p>Nachdem Vizekanzler <hi rend="#letterspaced">Fink</hi> sowie die Staatssekretäre Dr. <hi rend="#letterspaced">Mayr</hi> und <hi rend="#letterspaced">Stöckler</hi> erklärt hatten, dass im Hinblick auf die Bedrängnis der Wiener Bevölkerung Rekriminationen von Seite der Länder aus diesem Anlasse nicht zu befürchten seien, beschließt der Kabinettsrat im Sinne des vom Vorsitzenden gestellten Antrages. </p>
+               </div>
+               <div type="top" xml:id="krp-0138_top02">
+                  <head>
+                     <label>
+                        <num n="2">2.</num>
+                        <seg>Bericht über die Ernährungslage.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Loewenfeld-Russ</hi> erstattet einen eingehenden Bericht über die gegenwärtige Ernährungslage. Die Ausführungen dieses Berichtes, die sich hieran anschließende Debatte sowie die gefassten Beschlüsse tragen streng vertraulichen Charakter und sind in einem geheimen Anhange zu diesem Protokoll niedergelegt.</p>
+                  <p><pb facs="krp-0138_r-0005"/></p>
+               </div>
+               <div type="top" xml:id="krp-0138_top03">
+                  <head>
+                     <label>
+                        <num n="3">3.</num>
+                        <seg>Gesetz über die große Vermögensabgabe.</seg>
+                     </label>
+                  </head>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> teilt mit, dass die im Koalitionskomitee über den Gesetzentwurf, betreffend die große Vermögensabgabe, geführten Verhandlungen bisher zu keiner vollkommenen Klärung geführt haben. Die Sachlage stelle sich so dar, dass die beiden Parteien in wesentlichen Punkten Abänderungen für notwendig erachten. Die Vornahme dieser Abänderungen sei jedoch mit Rücksicht auf die bereits erfolgte Veröffentlichung des Gesetzentwurfes nach Anschauung des Redners vollständig ausgeschlossen. Da eine weitere Verzögerung der Einbringung unter den gegenwärtigen politischen Verhältnissen untunlich sei, erübrige nur, dass der Staatssekretär für Finanzen in seiner die Einbringung der Vorlage einbegleitenden Erklärung feststelle, dass der Kabinettsrat sich über die Grundlinien des Entwurfes geeinigt habe und nur in einigen, allerdings wesentlichen Punkten Meinungsverschiedenheiten bestehen, deren Bereinigung der parlamentarischen Beratung überlassen bleibe. Dies vorausgeschickt wäre sodann zu betonen, dass sich sonach die Vorlage lediglich als ein für die Be<pb facs="krp-0138_r-0006"/>ratung im Finanzausschusse und im Hause als Unterlage dienender Entwurf des Staatsamtes für Finanzen darstelle, für dessen Einzelheiten der Staatssekretär für Finanzen zunächst allein die Verantwortung trage, während sich die Koalitionsparteien und speziell auch die Staatssekretäre selbst ihre Stellungnahme vorbehalten hätten und sich an seine Vorschläge nicht gebunden erachten. Gleichzeitig hätte der Staatssekretär für Finanzen jene an der Vorlage vorzunehmenden Abänderungen bekanntzugeben, hinsichtlich welcher sich der Kabinettsrat bereits geeinigt hat.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Reisch</hi> erklärt sich damit einverstanden und verliest den Entwurf einer diesen Gesichtspunkten entsprechenden Erklärung, die er gelegentlich der Einbringung der Vorlage in der Nationalversammlung abzugeben beabsichtige.</p>
+                  <p>Der Kabinettsrat beschließt sohin, die Regierungsvorlage über die große Vermögensabgabe unverändert einzubringen, zugleich aber das Staatsamt für Finanzen aufzufordern, abändernde und ergänzende Bestimmungen folgenden Inhaltes auszuarbeiten und in der Nationalversammlung zu vertreten, und zwar:</p>
+                  <p><pb facs="krp-0138_r-0007"/>I.</p>
+                  <p>(Antrag Fink und Stöckler):</p>
+                  <list>
+                     <item n="1"><label>1.)</label> Auch Kriegsanleihen anderer, als der im Entwurfe angeführten Art, also kurzfristige Schatzscheine, sind zu den festgesetzten Steuerkursen an Zahlungsstatt anzunehmen, wobei die Steuerkurse für diese Kriegsanleihen, abgestuft nach ihrem Fälligkeitstermine, entsprechend höher als mit 75 % festzusetzen sind.</item>
+                     <item n="2"><label>2.)</label> Grundstücke, Gebäude und sonstige Betriebsvermögen, die dauernd einer kleinen oder mittleren Erwerbswirtschaft gewidmet sind, die schon vor dem 30. Juni 1914 im Besitze des gegenwärtigen Eigentümers oder seiner Familie stand und in diesem Besitze zu verbleiben bestimmt ist, werden mit dem Ertragswert veranschlagt, der aufgrund des unter gewöhnlichen Verhältnissen nachhaltig zu erzielenden Ertrages ermittelt wird.</item>
+                  </list>
+                  <p>II.</p>
+                  <p>(Antrag Zerdik):</p>
+                  <p>Für Grundstücke und Baulichkeiten ist der gemeine Wert (§ 19) der Bemessung zugrunde zu legen.</p>
+                  <p><pb facs="krp-0138_r-0008"/>III.</p>
+                  <p>(Zusatzantrag Eldersch):</p>
+                  <p>ad II: Nach dem Worte „Baulichkeiten“ ist einzufügen: „welche vor dem 1. August 1914 erworben worden sind“.</p>
+                  <p>IV.</p>
+                  <p>(Antrag Eldersch, Hanusch):</p>
+                  <list>
+                     <item n="1"><label>1.)</label> Die im Entwurfe mit 10 % eingesetzte erste Einzahlung auf die Abgabe ist zu erhöhen und dementsprechend ist die 30-jährige Zahlungsfrist zu verkürzen.</item>
+                     <item n="2"><label>2.)</label> Zu den nach § 10 von der Vermögensabgabe befreiten Körperschaften gehören auch die Berufsvereine und Konsumgenossenschaften der Arbeiter und Angestellten.</item>
+                  </list>
+                  <p>V.</p>
+                  <p>(Zusatzantrag Stöckler zu IV., Pkt. 2):</p>
+                  <p>„sowie die Raiffeisenkassen und ihre Verbände“.</p>
+               </div>
+               <div type="top" xml:id="krp-0138_top04">
+                  <head>
+                     <label>
+                        <num n="4">4.</num>
+                        <seg>Gesetz, betreffend die Krankenversicherung der Staatsangestellten.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Hanusch</hi> verweist darauf, dass die Angestellten des Staates im Allgemeinen nicht der Kran<pb facs="krp-0138_r-0009"/>kenversicherungspflicht unterliegen. Man habe sie seinerzeit eines besonderen Schutzes gegen Krankheit nicht für bedürftig gehalten, da sie im Krankheitsfalle Anspruch auf Fortzahlung des vollen Gehaltes durch ein Jahr haben. Dieser Zustand habe die Beamten auf die Dauer nicht befriedigen können, da die Kosten einer Erkrankung in der Familie, einer Operation oder eines längeren Heilverfahrens den finanziellen Haushalt in vollständige Unordnung zu bringen, unter Umständen den Beamten in rettungslose Verschuldung zu stürzen drohen. Mit Recht werde diese Frage schon seit längerer Zeit als eine der wichtigsten Forderungen der Staatsbeamten behandelt. Die Einführung einer Versicherung auf die Krankenpflegekosten würde mit verhältnismäßig geringen Mitteln den Beamten von einer der schwersten Sorgen befreien, daher in diesen Kreisen beruhigen und die Arbeitsfreudigkeit wesentlich steigern.</p>
+                  <p>Um diesen Gedanken zu fördern, seien im vorigen Jahre an der Hand von Leitsätzen über die Einrichtung einer solchen Versicherung die Organisationen der Staatsangestellten befragt worden. Sie hätten sich durchwegs zustimmend geäußert und seien entschie<pb facs="krp-0138_r-0010"/>den für die baldigste Durchführung eingetreten.</p>
+                  <p>Aufgrund dieser Äußerungen sei der in der Beilage zum vorliegenden Protokoll kurz dargestellte Entwurf eines Gesetzes, betreffend die Krankenversicherung der Staatsangestellten, ausgearbeitet worden, der vor seiner Einbringung in der Nationalversammlung noch den Interessenten, das sind vor allem die Organisationen der Staatsangestellten, dann auch die Ärzte, zur Begutachtung vorgelegt werden solle. Vorher sei aber noch die Zustimmung des Staatsamtes für Finanzen einzuholen gewesen. Das Staatsamt für Finanzen habe sich zwar grundsätzlich sympathisch geäußert, halte aber den gegenwärtigen Zeitpunkt für die Durchführung der Aktion nicht für geeignet, wünsche noch eine weitere Klarstellung der Kosten und bitte daher, von der beabsichtigten Übermittlung des Entwurfes an die Organisationen der Staatsbediensteten zunächst abzusehen und vorerst eine prinzipielle Entscheidung der gesamten Regierung einzuholen.</p>
+                  <p>Die Entscheidung liege nun beim Kabinettsrate. Vom Standpunkte des Staatsamtes für soziale Verwaltung, in dessen Ressort die Fürsorge für die Staatsbeamten fällt, müsse auf die be<pb facs="krp-0138_r-0011"/>sondere Wichtigkeit und Dringlichkeit der Lösung dieser Frage mit größter Entschiedenheit hingewiesen werden. Die Gleichstellung der Beamten mit den Arbeitern hinsichtlich des Schutzes im Erkrankungsfalle sei mit Recht eine der wichtigsten Forderungen der Staatsangestellten. Über diese Frage werde man auch bei der in nächster Zeit kommenden Ausdehnung der Krankenversicherungspflicht nicht hinwegkommen. Man werde die Staatsangestellten nur dann von der allgemeinen Versicherungspflicht ausnehmen können, wenn man ihnen gleichzeitig anderweitig einen gleichwertigen Schutz schafft. Die Einbeziehung in die allgemeine Krankenversicherungspflicht würde aber wahrscheinlich den Staat höher belasten, als die Einrichtung einer besonderen, den Verhältnissen der Staatsangestellten angepassten und lediglich auf die Kosten der Krankenpflege eingeschränkten Sonderversicherung, wie sie der Entwurf plane.</p>
+                  <p>Jede Verzögerung der Aktion müsste die Beamten, die sich auf eine Zusage der Regierung berufen können, mit dem tiefsten Misstrauen erfüllen, die daraus folgende Beunruhigung könnte eine Bewegung auslösen, die weittragende, den <pb facs="krp-0138_r-0012"/>Staat schwer belastende Forderungen zur Folge hätte. Da somit auf die rascheste weitere Verhandlung des Gegenstandes das größte Gewicht zu legen sei, beantrage der sprechende Staatssekretär, der Kabinettsrat wolle beschließen, der im Staatsamte für soziale Verwaltung ausgearbeitete Referentenentwurf eines Gesetzes, betreffend die Krankenversicherung der Staatsangestellten, ist ungesäumt der weiteren Verhandlung zuzuführen und so bald als möglich der Nationalversammlung zu unterbreiten.</p>
+                  <p>Der Kabinettsrat erhebt diesen Antrag zum Beschluss.</p>
+               </div>
+               <div type="top" xml:id="krp-0138_top05">
+                  <head>
+                     <label>
+                        <num n="5">5.</num>
+                        <seg>Abänderung des Salzburger Landeswasserrechtsgesetzes.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Stöckler</hi> teilt mit, dass anlässlich der Anlegung der neuen Grundbücher in Salzburg ein Großteil der Gewässer grundbücherlich als Eigentum des Ärars eingetragen worden sei. Unmittelbar darnach habe eine Aktion des Landesausschusses von Salzburg wegen Öffentlicherklärung der fließenden Privatgewässer eingesetzt, die eigentlich nie zum Stillstande gekommen und nunmehr vom Landesrate in Salzburg wieder aufgenommen worden sei.</p>
+                  <p><pb facs="krp-0138_r-0013"/>Die Aktion habe zu dem Landesgesetzesbeschlusse einer Wasserrechtsgesetznovelle vom 27. Juni 1919 geführt, gegen den die Staatsregierung im Sinne des Art. 14 des Gesetzes vom 14. März 1919, StGBl. Nr. 179, Vorstellung erhoben habe. Da der Salzburger Landesrat auf diese Vorstellung hin dem Landtage den Antrag auf Aufrechterhaltung dieser Wasserrechtsgesetznovelle gestellt habe, seien vom Staatsamte für Land- und Forstwirtschaft mit den Vertretern des Landes Salzburg Verhandlungen eingeleitet worden, um die sich schon Jahrzehnte hinziehende Angelegenheit zur Lösung zu bringen. Diese Verhandlungen hätten das Ergebnis gezeitigt, dass ein neuer Entwurf einer Wasserrechtsgesetznovelle für Salzburg ausgearbeitet wurde, der dem Landtage an Stelle des angefochtenen Gesetzesbeschlusses zur Schlussfassung vorgelegt werden solle. Voraussetzung für diese Vorlage sei, dass die Staatsregierung schon jetzt die Erklärung abgebe, gegen einen allfälligen Gesetzesbeschluss im Sinne des neuen Entwurfes keine Vorstellung zu erheben, da nur in diesem Falle der Salzburger Landesrat in der Lage sei, seinen Antrag auf Aufrechterhaltung der bereits beschlossenen Wasserrechtsgesetznovelle zurückzuziehen, <pb facs="krp-0138_r-0014"/>weshalb die Vertreter des Landes bereits jetzt um Bekanntgabe der Stellungnahme der Staatsregierung ersuchten.</p>
+                  <p>Der neue Gesetzentwurf sei das Ergebnis eines Kompromisses. Soweit es möglich war, sei darin sowohl den Wünschen des Staates als auch denen des Landes Rechnung getragen. Von einer generellen Öffentlichkeitserklärung sei abgesehen worden und damit erscheine wenigstens formell den Bestimmungen des Friedensvertrages über die Verpfändung des Besitzes Österreichs genüge getan. Andererseits sei die allgemeine Bestimmung aufgenommen worden, dass die Privatgewässer des Staates den öffentlichen Gewässern gleichzuhalten sind, sodass die nach Ansicht des Landes Salzburg einer rationellen Wasserwirtschaft bis jetzt entgegengestandenen Schwierigkeiten dadurch als behoben angesehen werden können.</p>
+                  <p>Da mit diesem Entwurfe die Forderungen des Staates in den wesentlichsten Belangen erfüllt seien, liege nunmehr nach Anschauung des Redners kein Anlass vor, gegen den neuen Entwurf eine Einwendung zu erheben, zumal ein weiteres Entgegenkommen seitens des Landes ausgeschlossen sei und die <pb facs="krp-0138_r-0015"/>Landesvertreter keinen Zweifel darüber gelassen hätten, dass im Falle der Ablehnung dieses Entwurfes der Landtag unbedingt auf seinem ursprünglichen Beschlusse beharren würde.</p>
+                  <p>Der sprechende Staatssekretär erbitte sich daher vom Kabinettsrate die Ermächtigung, der Landesregierung eröffnen zu dürfen, dass für den Fall, als der zwischen den Vertretern des Landes Salzburg und den Vertretern des Staatsamtes für Land- und Forstwirtschaft anfangs dieses Monats vereinbarte Entwurf einer Wasserrechtsgesetznovelle für Salzburg zum Beschlusse erhoben würde, seitens der Staatsregierung gegen diesen Beschluss keine Vorstellung werde erhoben und die verfassungsmäßige Gegenzeichnung werde vorgenommen werden.</p>
+                  <p>Gleichzeitig soll in der gegenständlichen, im Einvernehmen mit dem Direktorium des „WEWA“ verfassten Zuschrift der Erwartung Ausdruck gegeben werden, dass entsprechend den getroffenen Vereinbarungen nunmehr der vom Salzburger Landesrat an den Landtag gestellte Antrag, die bereits beschlossene Wasserrechtsgesetznovelle aufrecht zu erhalten, zurückgezogen werden wird.</p>
+                  <p>Der Kabinettsrat erteilt die er<pb facs="krp-0138_r-0016"/>betene Ermächtigung</p>
+               </div>
+               <div type="top" xml:id="krp-0138_top06">
+                  <head>
+                     <label>
+                        <num n="6">6.</num>
+                        <seg>Vollzugsanweisung zur Durchführung des Militärbesoldungsübergangsgesetzes.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Deutsch</hi> erbittet und erhält vom Kabinettsrate die Ermächtigung zur Erlassung einer Vollzugsanweisung der Staatsregierung zur Durchführung des Militärbesoldungsübergangsgesetzes.</p>
+                  <p/>
+               </div>
+            </div>
+            <div type="stenogramme">
+               <div n="1">
+                  <head>[Kabinettsprotokoll Nr. 138 vom 15.1.1920]</head>
+                  <p><pb facs="krp-0138_s01-0001"/>Nr. 138, 15/I. 20.</p>
+                  <p>[1)] Loewenfeld-Rus: </p>
+                  <p>Die Landesregierung in N.Ö. hat heute durch Landeshauptmann und Stellvertreter die Anregung gegeben, dass die Erhöhung der Mehl- und Brotpreise, die </p>
+                  <p>am 18. in Kraft treten soll, anlässlich des Zusammentreffens mit Kohlenkrisemassnahmen verschoben werden soll. </p>
+                  <p>Ich bin gegen eine solche Verschiebung aus technischen Gründen [<hi rend="#i">Einschub</hi>:] in Wien. Am Land nicht mehr durchführbar, weil das Mehl zu jenem höheren Preis abgegeben ist. [<hi rend="#i">Einschub Ende</hi>] Dazu kommt, dass die Bevölkerung schon seit langem drauf vorbereitet ist und ein Zurückgehen </p>
+                  <p>jeden Glauben an uns in der Zukunft erschüttern würde.</p>
+                  <p>Bitte um Ermächtigung der Landesregierung bekannt geben zu dürfen, dass eine Verschiebung nicht Platz greifen kann.</p>
+                  <p>Zerdik: Sever und W(?) auch bei mir und sagen Erhöhung der Brotpreise gleichzeitig mit Kohlenmaßnahmen nicht erträglich. </p>
+                  <p>Streiksituation in Mährisch Ostrau verschärft. Und auch anderwärts. </p>
+                  <p>Ausgeschlossen, dass man in Wien den beschränkten Straßenbahnverkehr aufrecht hält. Eisenbahnverkehr nur [..]. Kein elektrischer Verkehr </p>
+                  <p>möglich. Ausreichende Zuschübe nicht zu gewärtigen. Es besteht die Möglichkeit durch Hinaufbringen von Waggons nach Oberschlesien </p>
+                  <p>vielleicht ab Montag Morgen und Frühverkehr wieder einzuführen. Ich überlasse dem Kabinett, ob gleichzeitig auch die Brot- und Mehlpreise erhöht </p>
+                  <p>werden sollen.</p>
+                  <p>Loewenfeld: In Wien wäre es technisch möglich zu verschieben, am Land aber nicht.</p>
+                  <p>Reisch: Kann begreifen die Meinung Zerdiks. Spreche mich aber gegen den Widerruf der Mehlpreiserhöhung aus, zumal schon </p>
+                  <p>einmal eine Zurückziehung erfolgte. Wiederholung würde eine neuerliche Erhöhung unmöglich machen. Wir müssen im Hinblick auf </p>
+                  <p>die katastrophale Lage der Staatsfinanzen hart bleiben. Wir decken ohnehin nur den halben Verlust. Mehr kann die Finanzverwaltung nicht tragen.</p>
+                  <p>Eldersch: Ich finde die Bedenken der Landesregierung durchaus begreiflich. Bitte zu bedenken die Härte der Sparmaßnahmen ist so groß </p>
+                  <p>und die Belastung der Bevölkerung ist so stark und die Vorkommnisse in Deutschland, dass es ein Va banque Spiel bedeutet. </p>
+                  <p>Ich bitte die Sache wenigstens für Wien möglich zu machen.</p>
+                  <p>Loewenfeld: Ich bin unbedingt dafür, dass es aufrecht bleibt. Es ist ausgeschlossen, dass ich überhaupt noch etwas </p>
+                  <p>einkaufen kann, nicht nur wegen des Kurses im Ausland, sondern weil alle staatlichen Organisationen </p>
+                  <p>immobil sind. Sowohl die Kriegsgetreideanstalt als auch die Übernahmsstelle für Fett sind nicht in der Lage mehr einzukaufen. </p>
+                  <p>Wenn nicht sofort die Differenzen, die in den letzten Wochen entstanden sind gedeckt werden. Es hört sich jede Ernährungsvorsorge </p>
+                  <p>wegen Mangel an Geld auf. </p>
+                  <p><pb facs="krp-0138_s01-0002"/>Ich kann die Devisen, die uns angewiesen sind, nicht bezahlen, weil ich kein Geld habe. </p>
+                  <p>Abgesehen davon fürchte ich, dass viel mehr Unannehmlichkeiten aus dem Zurückziehen entstehen als wenn man die Erhöhung durchführt.</p>
+                  <p>[…]</p>
+                  <p>Zerdik: Ich begreife Reisch und Loewenfeld vollkommen. Aber die Sparmaßnahmen in Wien treten am Land nicht auf. </p>
+                  <p>Die Leute werden in Wien auf der Straße sein. Der Eisenbahnerstreik und die Ostrauer werden beigelegt werden. </p>
+                  <p>Ab 22. wird die Kohlenversorgung wegen in Krafttreten des tschechischen Vertrags sich bessern.</p>
+                  <p>Reisch: Mache aufmerksam darauf, dass die Konsequenzen der Kohlensituation auch zum Teil das Finanzamt tragen muss, </p>
+                  <p>indem die Löhne der durch die Sparmaßnahmen Arbeitslosen zum Teil auch von Finanzamt getragen werden müssen. </p>
+                  <p>Ich kann nicht zustimmen, dass wir den bereits gefassten Beschluss rückgängig machen.</p>
+                  <p>Glöckel: Die morgige Krise trifft die Bevölkerung völlig unerwartet. Bitte sich vorzustellen, dass die Leute morgen </p>
+                  <p>nicht in die Arbeit gehen können und bestenfalls am Montag. Durch ein Wort, das fällt kann mehr zerstört werden, als </p>
+                  <p>ein paar [..] Ich glaube, dass man für Wien die Erhöhung des Brotpreises auf kurze Zeit stornieren soll.</p>
+                  <p>Deutsch: Ich komme von einer Versammlung, die ich in meinem Wahlbezirk abgehalten habe. Die Leute sind </p>
+                  <p>einfach verzweifelt. Die Leute wollen unbedingt eine Demonstration abhalten. Sie wissen überhaupt nicht </p>
+                  <p>weshalb. Die Erhöhung der Brotpreise in dieser Stimmung zu machen, halte ich für unmöglich. </p>
+                  <p>Man müsste in dem Kommuniqué sagen, weil durch die Abschaltung der Betriebe viele Arbeitslose entstehen, wird die Brotpreis-</p>
+                  <p>erhöhung aufgehoben in Wien.</p>
+                  <p>Loewenfeld: In der Provinz ist es nicht mehr zurückzuziehen. Die Arbeitersiedler von Atzgersdorf </p>
+                  <p>werden das teuere Mehl, das nach Wien [..], sondern werden das billigere Mehl haben. </p>
+                  <p>Wenn ich für die Aufrechthaltung eintrete, so tue ich es, weil Finanzamt mir den Entgang nicht geben kann.</p>
+                  <p>Renner: Die Sache ließe sich so machen, dass man schon wegen des flachen Landes die Verordnung hinaus gibt, gleichzeitig aber sagt, </p>
+                  <p>dass für Wien wegen der Bedrängnis der Bevölkerung durch die Abschaltung der Betriebe suspendiert ist.</p>
+                  <p>Mayr: Ich muss mich Loewenfeld anschließen. Wenn das bekannt wird, wird ein Sturm der Entrüstung </p>
+                  <p>entstehen. Aber wenn man es für eine Woche beschränkt, so wird man es ertragen können.</p>
+                  <p><pb facs="krp-0138_s01-0003"/>Fink: Ich glaube, dass man es in den Ländern doch versuchen wird. Man muss die Gefahr, die uns in Wien bevorsteht überwinden, </p>
+                  <p>dass man sagt, dass das Schuld ist.</p>
+                  <p>Stöckler: Bin für die Verschiebung, wenn die Regierung gleichzeitig verfügt und nur für Wien suspendiert wird.</p>
+                  <p>Renner: Was die größten Schwierigkeiten bei der Arbeiterbevölkerung in den Provinzen ausmacht, so muss das die Arbeiterzeitung aufklären.</p>
+                  <p>Loewenfeld: Ich kann die Fett- und Fleischpreiserhöhung nicht weiter verschieben. In der ersten Woche des Februars muss nach </p>
+                  <p>Kabinettsbeschluss durchgeführt werden. Es wird dann die Brot- und Mehlpreiserhöhung mit der Fett- und Fleischpreiserhöhung </p>
+                  <p>zusammenfallen. Ich werde das Kommuniqué morgen mit Sever vereinbaren und es wird übermorgen erscheinen.</p>
+                  <p>Glöckel: Es muss gleichzeitig ein Artikel zur Erläuterung erscheinen.</p>
+                  <p>2) Loewenfeld: Es ist der Moment gekommen, wo wir Nahrungsmittel im Ausland nicht mehr kaufen können. Bei einem </p>
+                  <p>Kurs von 1 K 70 ist es ausgeschlossen, Lebensmittel zu kaufen, weil sie einen Preis erreichen, der im Inland </p>
+                  <p>von Konsumenten nicht mehr getragen werden kann. Dazu sind die Verluste des Staates so enorm, dass wir selbst die </p>
+                  <p>Krone, wenn in Kronen gezahlt werden kann, nicht mehr aufbringen können. Durch die 30.000 t sind wir zur Not bis </p>
+                  <p>Ende Februar gedeckt. Ebenso steht die Sache leider fast noch schlechter mit Fett. Wir sind eigentlich über den Februar </p>
+                  <p>mit Fett gedeckt. Über das, was ich verfügen kann, reicht nur mehr bis zum 5. Februar. Alles andere liegt </p>
+                  <p>in Genua oder Rotterdam. Ich kann es nicht hereinbringen, wenn ich nicht zahlen kann. Und ich </p>
+                  <p>kann nicht zahlen, weil ich kein Geld habe.</p>
+                  <p>Von den 5 Punkten, die der Oberste Rat beschlossen hat, ist nicht ein einziger Punkt erfüllt worden. Auch die 30000 t haben ihren Zweck nicht erfüllt, [<hi rend="#i">Einschub:</hi>] weil sie nicht auf einmal kommen. [<hi rend="#i">Einschub Ende</hi>] Wir haben heute noch nicht einmal die Hälfte, obwohl genau ein Monat vergangen ist. </p>
+                  <p>Von Jugoslawien bekommen wir überhaupt nichts. </p>
+                  <p>Der 3. Punkt ist die Freigabe der Werte (?). Ich habe nichts mehr davon gehört. </p>
+                  <p>Tabakmonopol ist nicht weitergekommen. </p>
+                  <p>Der 5. Punkt 14-tägige Stellungnahme zu den Krediten. Ist nicht bekannt geworden. </p>
+                  <p>Dazu kaufen die Franzosen in Jugoslawien Getreide für sich und nehmen uns dadurch das Getreide weg. </p>
+                  <p><pb facs="krp-0138_s01-0004"/>Ich stehe vor Terminen. Ich habe keinen Anschluss an die 30000 t. Bei den anderen Artikeln geht es auch nicht. </p>
+                  <p>Es fragt sich, was man tun soll. Ein schriftlicher Verkehr mit Paris geht nicht. Ich bin wieder dafür, dass man nach Paris fährt. </p>
+                  <p>Die Kreditfrage und die Ernährungsfrage sind in Paris neuerlich anhängig zu machen.</p>
+                  <p>Renner: Allizé hat über meine Urgenz gesagt, dass bezüglich Vorhaben einzelner </p>
+                  <p>Werte Italien die Antwort schuldig geblieben ist. Bezüglich des Ernährungsproblems Amerika nicht geantwortet hat. </p>
+                  <p>Das Warten auf Amerika ist nach meiner Meinung illusorisch. Der Nachteil wäre, dass man die englische Regierung </p>
+                  <p>darauf aufmerksam macht und sie ersucht einzuspringen und uns Pfund gibt. Ich glaube Loewenfeld </p>
+                  <p>soll fahren.</p>
+                  <p>Reisch: Ich habe die Absicht, um den 24. und 25. in Paris zu verhandeln, wegen der Kreditbedürfnisse.<lb/></p>
+                  <p>Reisch und Loewenfeld fahren nach Paris [..]. Ich gab den Referenten der </p>
+                  <p>5 Mächte das Aviso, dass der Oberste Rat zur Verfügung steht und auch die Reparationskommission.</p>
+                  <p>[3)] Renner: Graz hat angeblich einen Holzvertrag mit Deutschland und könnte Lebensmittel bekommen. </p>
+                  <p>Das Land will das mit dem Staat machen. 1/3 der erzielten Valuta soll dem Staat und 2/3 vom Land </p>
+                  <p>benützt werden zum Ankauf von Lebensmitteln. Eventuell soll sich der Staat mit 1/3 Lebensmittel beteiligen, sodass </p>
+                  <p>also keine Valuta notwendig wäre.</p>
+                  <p>Loewenfeld: Ich stehe auf dem Standpunkt, dass wenn Lebensmittel von dem Ausland hereinkommen, </p>
+                  <p>es ein Pensum für ein Land nicht geben kann, weil ich dann nicht weiß, was für Wien </p>
+                  <p>gemacht werden soll. Die Landesregierung soll die Antwort an mich abtreten und ich werde das Geschäft durchführen.</p>
+                  <p>Eisler: Empfehle das nicht abzulehnen, weil die Verstimmungen und Störungen, die eine absolute Ablehnung zurücklässt, größer sind </p>
+                  <p>als der Schaden, der entsteht.</p>
+                  <p>Renner: Steiermark geht in diesen Dingen doch weit loyaler vor als die anderen Länder. Es verdient daher </p>
+                  <p>eine gewisse Rücksichtnahme. </p>
+                  <p><pb facs="krp-0138_s01-0005"/>Man soll die Grazer ruhig anhören, ihnen sagen, dass wir das Geschäft an VEA abtreten, soll </p>
+                  <p>schlüsselmäßig beteilt werden mit einem gewissen Pensum für andere Länder als Bringer des Geschäftes.</p>
+                  <p>Stöckler: Das Übereinkommen mit O.Ö. ist nicht durchgeführt. Steiermark hat angekündigt, </p>
+                  <p>dass es dieselben Einnahmen braucht und denselben Weg beschreiten wird. Die Holzsteuer und die Pferdesteuer wird in O.Ö. weiter eingehoben.</p>
+                  <p>Renner: Der Termin für eine Landeskonferenz mit Tagesordnung: die Landesfinanzen.</p>
+                  <p>Mayr: Wien vor Landeskonferenz</p>
+                  <p>Renner: Die Landeskonferenz ist unvermeidlich.</p>
+                  <p>Deutsch: Ich halte es für gewiss sehr nötig, die Lage aufzuklären in den Ländern. Ich bin aber der Meinung, dass wir </p>
+                  <p>die Länder [..] bis wir einmal etwas den Ländern gegenüber tun.</p>
+                  <p>Stöckler: Die Sache ist nicht zu machen, wenn wir nicht die Macht haben, in O.Ö. den Vertrag durchzuführen, den wir </p>
+                  <p>abgeschlossen und mit 1.I. terminiert haben.</p>
+                  <p>Renner: Bei all diesen Auseinandersetzungen müssen wir eine gewisse Rücksicht nehmen.</p>
+                  <p>4) Vermögensabgabe.</p>
+                  <p>Renner: Die Verhandlungen haben keine vollständige Klärung hervorgerufen. Das Kabinett hat selbst die Pflicht in der Sache </p>
+                  <p>vorzugehen. </p>
+                  <p>Ich halte es für ausgeschlossen, dass die Regierungsvorschläge, nachdem sie veröffentlicht wurden, abgeändert eingebracht würden. </p>
+                  <p>Fin.Sekr. hat sich bereit erklärt, die entsprechenden Erklärungen abzugeben. </p>
+                  <p>Wenn von beiden Parteien die wesentlichen Punkte, in denen Reisch auf die Änderungen eingeht, so würde der Kabinettsrat, dass diese </p>
+                  <p>wesentlichen Abänderungen von Finanzamt hinterher durchführt und dem Finanzausschuss vorbringt</p>
+                  <p>Reisch verliest Entwurf einer Erklärung.</p>
+                  <p>Renner: Also das Ergebnis der Generaldebatte hat sich in einigen wesentlichen Punkten die Einigung des Kabinetts </p>
+                  <p>ergeben. </p>
+                  <p>Der Kabinettsrat hat in der 3. Sitzung beschlossen, die Vorlage unverändert einzubringen, zugleich aber </p>
+                  <p><pb facs="krp-0138_s01-0006"/>das Staatsamt für Finanzen jedoch aufzufordern folgende Änderungen im Sinne nachstehenden Antrages durchzuführen.</p>
+                  <p>Stöckler: Auch Kriegsanleihen anders als im Entwurf </p>
+                  <p>1) 2) 3) 4) 5)</p>
+                  <p>Eldersch: Dieser Beschluss ist für uns sehr mager, weil von der Obj. Methode nichts gesagt ist </p>
+                  <p>und diese Forderung nach einer [..] der Obj. Methode eine der wichtigsten ist. </p>
+                  <p>Die Parteien halten sich natürlich an diesen Beschluss nicht für gebunden. Es ist nur eine Kabinettssache.</p>
+                  <p>Deutsch: Wir haben zugestimmt, dass eine Reihe von Abänderungen vorgenommen werden.</p>
+                  <p>Renner: Reisch soll bemerken, dass von der einen Seite </p>
+                  <p>die Ausweitung der obj. Methode gewünscht und von der anderen Seite erträglich befunden wurde.</p>
+                  <p>Fink: Was die Rede betrifft, so ist etwas darin, das nicht ganz stimmt. Reisch sagt man ist einig über die Grundzüge, </p>
+                  <p>die Zusatzanträge berühren aber doch die Grundlagen.</p>
+                  <p>Eisler: Abänderung statt Konservation Grundbesitz bäuerlicher Grundbesitz</p>
+                  <p>Einbringung beschlossen morgen.</p>
+                  <p><pb facs="krp-0138_s01-0007"/>5) Hanusch: Krankenversicherung. </p>
+                  <p>Die beiden Staatsminister sind beauftragt, die Vorlage auszuarbeiten.</p>
+                  <p>6) Stöckler: Salzburger Wasserrecht.</p>
+                  <p>Reisch: Diese Erklärung ist nicht erfreulich, weil der Staat staatsgrundgesetzlich zustehende Rechte [..] muss. </p>
+                  <p>Die bücherliche Eintragung beruht aber im vorliegenden Fall auf sehr schwacher Grundlage. Daher muss dem Land </p>
+                  <p>ein Unrecht gut gemacht werden. </p>
+                  <p>Das Verhältnis zwischen Staat und Land ist aber auf der gegenwärtigen Grundlage nicht aufrecht zu erhalten. </p>
+                  <p>Das Land Salzburg bewirkt eine Enteignung des Staates in unentgeltlicher Weise. </p>
+                  <p>Während alle anderen privat entschädigt werden, wird in diesem Paragraph beim Staat keine Entschädigung </p>
+                  <p>festgesetzt.</p>
+                  <p>Renner: Kein formaler Einwand.</p>
+                  <p>Angenommen.</p>
+                  <p>Dr. Deutsch: V.A. Militärbesoldungsübergangsgesetz</p>
+                  <p>Angenommen.</p>
+                  <p>¼ 12 Uhr</p>
+               </div>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

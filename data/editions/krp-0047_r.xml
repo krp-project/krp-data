@@ -1,0 +1,570 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href='http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:acdh="https://vocabs.acdh.oeaw.ac.at/schema#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xml:lang="de">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="a" type="main" n="0047">Kabinettsprotokoll Nr. 47 vom 1. März 1919</title>
+            <title level="m" type="main" n="01">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <title level="m" type="sub" n="">Renner I (31. Oktober 1918 – 15. März 1919)</title>
+            <meeting>
+               <placeName key="https://d-nb.info/gnd/4066009-6">Wien</placeName>
+               <orgName key="https://d-nb.info/gnd/5162749-8">Kabinettsrat</orgName>
+               <date when-iso="1919-03-01"/>
+            </meeting>
+            <editor>
+               <persName key="https://d-nb.info/gnd/122481836"
+                         role="hasCreator"
+                         xml:id="hwohnout">
+                  <forename>Helmut</forename>
+                  <surname>Wohnout</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</affiliation>
+               <idno type="ORCID">0000-0002-3864-9839</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/120789825"
+                         role="hasCreator"
+                         xml:id="tolechowski">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0003-3291-6876</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/131679384"
+                         role="hasCreator"
+                         xml:id="rlein">
+                  <forename>Richard</forename>
+                  <surname>Lein</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0002-7502-0503</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="aholzer">
+                  <forename>Anna</forename>
+                  <surname>Holzer</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0005-3560-3500</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="dsoelkner">
+                  <forename>Dominik</forename>
+                  <surname>Sölkner</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-9895-7212</idno>
+            </editor>
+            <editor>
+               <persName role="hasContributor" xml:id="ischotzko">
+                  <forename>Ina</forename>
+                  <surname>Schotzko</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-5210-3713</idno>
+            </editor>
+            <funder n="1">
+               <orgName key="https://d-nb.info/gnd/2054142-9" role="hasFunder">Österreichischer Wissenschaftsfonds FWF</orgName>
+               <idno type="project">PAT1495024</idno>
+               <title type="project">Die Protokolle des österreichischen Kabinettsrates 1919–1920</title>
+            </funder>
+            <respStmt>
+               <resp>Projektverantwortung</resp>
+               <orgName key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Projektleitung</resp>
+               <persName key="https://d-nb.info/gnd/120789825" role="hasPrincipalInvestigator">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+                  <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+                  <idno type="ORCID">0000-0003-3291-6876</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Nationaler Forschungspartner</resp>
+               <orgName key="https://d-nb.info/gnd/1123037736" role="hasEnabler">Austrian Centre for Digital Humanities</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Digitalisierung der gedruckten Quellen</resp>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>TEI-Datenmodellierung</resp>
+               <persName role="hasContributor" xml:id="tfruehwirth">
+                  <forename>Timo</forename>
+                  <surname>Frühwirth</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-3997-5193</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technische Supervision</resp>
+               <persName key="https://d-nb.info/gnd/1043833846"
+                         role="hasContributor"
+                         xml:id="pandorfer">
+                  <forename>Peter</forename>
+                  <surname>Andorfer</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-9575-9372</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technisches Consulting und Vorbereitung der Druckausgabe</resp>
+               <persName key="https://d-nb.info/gnd/13281899X"
+                         role="hasContributor"
+                         xml:id="skurz">
+                  <forename>Stephan</forename>
+                  <surname>Kurz</surname>
+                  <affiliation key="https://d-nb.info/gnd/1202798799">Institut für die Erforschung der Habsburgermonarchie und des Balkanraumes</affiliation>
+                  <idno type="ORCID">0000-0003-2546-2570</idno>
+               </persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher key="https://d-nb.info/gnd/1001454-8">Österreichische Akademie der Wissenschaften</publisher>
+            <date when="2028"/>
+            <availability status="free">
+               <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">Lizenziert unter CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/deed.de)</licence>
+            </availability>
+            <idno type="ISBN_Print"/>
+            <idno type="ISBN_Part_epub"/>
+            <idno type="ISBN_Digital"/>
+            <idno type="DOI"/>
+            <idno type="DOI_zenodo"/>
+            <idno type="ebook_ID"/>
+         </publicationStmt>
+         <seriesStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="m" type="main">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <respStmt>
+               <resp>Bearbeitung und Herausgeberschaft</resp>
+               <orgName key="https://d-nb.info/gnd/2024703-5">Universität Wien</orgName>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+         </seriesStmt>
+         <notesStmt>
+            <note>Diese TEI-XML-Datei ist Grundlage für eine Druckausgabe der Edition.</note>
+            <relatedItem>
+               <biblStruct>
+                  <monogr>
+                     <imprint>
+                        <pubPlace key="https://d-nb.info/gnd/4066009-6">Wien</pubPlace>
+                        <publisher key="https://d-nb.info/gnd/2068748-5">Verlag der Österreichischen Akademie der Wissenschaften</publisher>
+                        <date when="2029"/>
+                     </imprint>
+                     <extent/>
+                  </monogr>
+                  <note>
+              <idno/>
+              <ptr/>
+            </note>
+                  <citedRange/>
+               </biblStruct>
+            </relatedItem>
+         </notesStmt>
+         <sourceDesc>
+            <bibl>Quellbestand: AT-OeStA/AdR MRang MR 1Rep KRP Kabinettsratsprotokolle, 1918-1920 (Teilbestand)<ref target="https://www.archivinformationssystem.at/detail.aspx?id=5465">https://www.archivinformationssystem.at/detail.aspx?id=5465</ref>
+            </bibl>
+            <msDesc>
+               <msIdentifier>
+                  <institution key="https://d-nb.info/gnd/37748-X" role="hasOwner">AT-OeStA Österreichisches Staatsarchiv (Archiv (ÖStA))</institution>
+                  <repository key="https://d-nb.info/gnd/1601181-8">AT-OeStA/AdR Archiv der Republik, 1918- (Abteilung)</repository>
+                  <collection>AT-OeStA/AdR MRang MR 1Rep Ministerrat 1. Republik, 1918 - 1938 (Bestand)</collection>
+                  <idno>AT-OeStA_AdR-MRang-MR-1.-Rep.-KRP-047</idno>
+               </msIdentifier>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <abstract>
+            <p>
+          <!--to be generated-->
+        </p>
+         </abstract>
+      </profileDesc>
+      <encodingDesc>
+         <styleDefDecl scheme="css"/>
+         <tagsDecl>
+            <rendition xml:id="b" scheme="css">font-weight:bold;</rendition>
+            <rendition xml:id="su" scheme="css">vertical-align:super;font-size:.7em;</rendition>
+            <rendition xml:id="s" scheme="css">text-decoration:line-through;</rendition>
+            <rendition xml:id="u" scheme="css">text-decoration:underline;</rendition>
+            <rendition xml:id="ow" scheme="css">text-decoration:line-through;text-decoration-style:double;</rendition>
+            <rendition xml:id="r" scheme="css">display:block;text-align:right;</rendition>
+            <rendition xml:id="letterspaced" scheme="css">letter-spacing:0.15em;</rendition>
+            <rendition xml:id="i" scheme="css">font-style:italic;</rendition>
+         </tagsDecl>
+         <editorialDecl>
+            <hyphenation>
+               <p>
+            <!--to be added-->
+          </p>
+            </hyphenation>
+            <correction>
+               <p>
+            <!--to be added-->
+          </p>
+            </correction>
+            <normalization>
+               <p>
+            <!--to be added-->
+          </p>
+            </normalization>
+            <punctuation>
+               <p>
+            <!--to be added-->
+          </p>
+            </punctuation>
+            <stdVals>
+               <p>
+            <!--to be added-->
+          </p>
+            </stdVals>
+            <p>
+          <!--to be added-->
+        </p>
+         </editorialDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#tfruehwirth" when-iso="2026-10-13">TEIGarage output upconverted with upconvert.xsl</change>
+         <change who="#tfruehwirth" when-iso="2026-10-13">TEI header populated with generate_tei_templates.py</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface/>
+   </facsimile>
+   <text>
+      <body>
+         <div xml:id="doc-krp-0047.xml">
+            <head type="dokument">
+               <title type="num">47.<note type="footnote">Das Protokoll trägt den Vermerk <hi rend="#i">Vertraulich!</hi></note>
+               </title>
+               <title type="desc">
+                  <pb facs="krp-0047_r-0001"/>
+                  <pb facs="krp-0047_r-0002"/>[Samstag] 1919-03-01</title>
+            </head>
+            <div type="dokumentkopf">
+               <div type="vorsitz">
+                  <head>Vorsitz:</head>
+                  <p>Urban</p>
+               </div>
+               <div type="anwesend">
+                  <head>Anwesend:</head>
+                  <p>Bauer, Enderes, Glöckel, Grimm, Hanusch, Kaup, Loewenfeld-Russ, Pacher, Roller, Steinwender, Waber</p>
+               </div>
+               <div type="zugezogen">
+                  <head>Zugezogen:</head>
+                  <p>Feiler, Haas, Kloß, [Thaa]</p>
+               </div>
+               <div type="schriftfuehrer">
+                  <head>Schriftführer:</head>
+                  <p>unbekannt</p>
+               </div>
+               <div type="dauer">
+                  <head>Dauer:</head>
+                  <p>15.00–19.00 Uhr</p>
+               </div>
+            </div>
+            <div type="komponenten">
+               <p>Reinschrift, Beilagen, Konzept, stenographische Mitschrift</p>
+            </div>
+            <div type="beilagen">
+               <head>Beilagen:</head>
+               <list>
+                  <item><ref target="#krp-0047_top02">Zu TOP 2</ref>: <ref target="#krp-0047_b01">Antrag des Staatsamtes für Finanzen auf Bestellung des Sektionschefs Moriz Ritter von Pöschl zum Vertreter Deutschösterreichs in der internationalen Liquidierungskommission und des Hofrat Ernest Ganglbauer zu dessen Stellvertreter</ref></item>
+                  <item><ref target="#krp-0047_top05">Zu TOP 5</ref>: <ref target="#krp-0047_b02">Memorandum der Forderungen des Zugsbegleitungspersonals der Staatsbahnen, das dem Staatsamt für Verkehrswesen von den Zugsbegleiter-Vertrauensmännern der in Wien einmündenden Bahnen am 26. Februar übergeben wurde</ref></item>
+               </list>
+            </div>
+            <div type="protokoll">
+               <pb facs="krp-0047_r-0003"/>
+               <div type="top" xml:id="krp-0047_top01">
+                  <head>
+                     <label>
+                        <num n="1">1.</num>
+                        <seg>Übernahme der Bürgschaft für einen 10 Millionen Kronen-Kredit des Verbandes der deutschösterreichischen Gewerbeförderungsanstalten; Gewährung eines 3 Millionen Kronen-Kredites zwecks Förderung des Kunstgewerbes.</seg>
+                     </label>
+                  </head>
+                  <p>Im Auftrage des abwesende Staatssekretärs für öffentliche Arbeiten begründet Sektionschef <hi rend="#letterspaced">Haas</hi> in ausführlicher Weise den Antrag, der Kabinettsrat wolle die Zustimmung dazu erteilen, dass der deutschösterreichische Staat zur Ermöglichung der dringend notwendigen Materialbeschaffung für das Gewerbe die Bürgschaft für einen vom Verbande der deutschösterreichischen Gewerbeförderungsanstalten beim Zentralverbande der gewerblichen Erwerbs- und Wirtschaftsgenossenschaften Niederösterreichs aufzunehmenden Kredit von 10 Millionen K unter noch näher festzusetzenden Bedingungen übernehme.</p>
+                  <p>Weiters erbittet der Referent die Ermächtigung des Kabinettsrates dafür, dass dem Staatsamte für öffentliche Arbeiten zum Zwecke der wirtschaftlichen Förderung der kunstgewerblichen Produktion und ihres Absatzes ein außerordentlicher, hinsichtlich der Verwendungsdauer durch das Verwaltungsjahr nicht beschränkter, besonders zu verwaltender Kredit von 3 Millionen K zur Verfügung gestellt werde.</p>
+                  <p>Unterstaatssekretär Dr. von <hi rend="#letterspaced">Grimm</hi> stellt fest, dass wie schon wiederholt in anderen Fällen, so auch in der vorliegenden <pb facs="krp-0047_r-0004"/>Angelegenheit, dem Staatsamte für Finanzen keine Gelegenheit geboten worden sei, zu dieser staatsfinanziell jedenfalls nicht unbedeutenden Frage noch vor deren Behandlung im Kabinettsrate Stellung zu nehmen. Ein derartiger Vorgang müsse für die Zukunft, nicht allein im Interesse des vom Redner vertretenen Staatsamtes, sondern im eminenten Interesse der gesamten Verwaltung, unbedingt vermieden werden. Er stelle daher zunächst den grundsätzlichen Antrag, dass alle im Kabinettsrate zur Erörterung gelangenden Angelegenheiten, an denen ein oder mehrere andere Ressorts mitbeteiligt sind, soferne nicht etwa Gefahr im Verzuge ist, dem Kabinettsrate nur dann zur Schlussfassung unterbreitet werden dürfen, wenn mit allen fallweise mitinteressierten Staatsämtern das Einvernehmen bereits gepflogen worden ist.</p>
+                  <p>Was nun die vorliegenden beiden Anträge des Staatsamtes für öffentliche Arbeiten betreffe, so erkenne der sprechende Unterstaatssekretär die besondere Förderungswürdigkeit der ersterwähnten Aktion loyal an und spreche sich für die vom Staatsamte für öffentliche Arbeiten erbetene Bürgschaftsübernahme aus; rücksichtlich der näheren Modalitäten aber bitte er, dass noch das <pb facs="krp-0047_r-0005"/>Einvernehmen mit dem Staatsamte der Finanzen im kurzen Wege gepflogen werde.</p>
+                  <p>Bezüglich der Frage einer finanziellen Unterstützung des Kunstgewerbes ersuche er in der Erwägung, dass die beantragte Kreditgewährung präjudiziell wirken könnte und zunächst wohl eine Unterstützung jener Gewerbezweige in Betracht gezogen werden sollte, die unter der Arbeitslosigkeit am meisten leiden und die nach ihrem Umfange und ihrer Arbeiterzahl eine besondere Berücksichtigung verdienen, von einer diesfälligen Beschlussfassung dermalen abzusehen; er stelle daher den Antrag, der Kabinettsrat wolle das Staatsamt für öffentliche Arbeiten beauftragen, in der Frage der Kunstgewerbeförderung zunächst noch mit dem Staatsamte der Finanzen das Einvernehmen zu pflegen und die Angelegenheit so dann neuerlich dem Kabinettsrate zur Beschlussfassung zu unterbreiten.</p>
+                  <p>Nachdem Sektionschef <hi rend="#letterspaced">Haas</hi> eine Anfrage des Staatssekretärs <hi rend="#letterspaced">Hanusch</hi> darüber, ob entsprechend vorgesorgt sei, dass die aus der Sachdemobilisierung aufgekauften Güter so rasch als möglich der Produktion zugeführt werden, bejahend beantwortet hatte, bringt der Vorsitzende die Anträge des Unterstaatssekretärs Dr. von Grimm zur Abstimmung. </p>
+                  <p><pb facs="krp-0047_r-0006"/>Der Kabinettsrat erhebt diese Anträge zum Beschluss.</p>
+               </div>
+               <div type="top" xml:id="krp-0047_top02">
+                  <head>
+                     <label>
+                        <num n="2">2.</num>
+                        <seg>Bestellung des Sektionschefs a. D. Moriz Ritter von Pöschl zum Vertreter des deutschösterreichischen Staates in der Internationalen Liquidierungskommission und des Hofrates a. D. Ernst Ganglbauer zu dessen Stellvertreter.</seg>
+                     </label>
+                  </head>
+                  <p>Unterstaatssekretär Dr. von <hi rend="#letterspaced">Grimm</hi> teilt mit, dass das Staatsamt der Finanzen über eine seinerzeitige Anregung des Staatsamtes des Äußern den Sektionschef a. D. Moriz Ritter von Pöschl zum Vertreter des deutschösterreichischen Staates in der Internationalen Liquidierungskommission sowie den Hofrat a. D. Ernest Ganglbauer zu dessen Stellvertreter bestimmt habe. Da es sich nun hiebei nicht allein um eine Vertretung des deutschösterreichischen Staatsamtes der Finanzen, sondern um eine Vertretung der deutschösterreichischen Regierung überhaupt handle, könne das Staatsamt der Finanzen die formelle Bestellung dieser beiden Funktionäre nicht vornehmen. Der sprechende Unterstaatssekretär beantrage daher</p>
+                  <list>
+                     <item n="1"><label>1.)</label> Der Kabinettsrat möge die Bestellung des Sektionschefs a. D. Moriz Ritter von Pöschl als Vertreter des deutschösterreichischen Staates in der Internationalen Liquidierungskommission und, falls nicht für die Funktion das Stellvertreters eine andere Persönlichkeit in Aussicht genommen <pb facs="krp-0047_r-0007"/>werden sollte, die Bestellung des Hofrates a. D. Ernest Ganglbauer als Stellvertreter Pöschls genehmigen.</item>
+                     <item n="2"><label>2.)</label> Die Staatskanzlei habe die formelle Bestellung der Genannten mittels Dekretes durchzuführen und von dieser Bestellung alle Staatsämter zu verständigen.</item>
+                  </list>
+                  <p>Im Genehmigungsfalle werde sich das Staatsamt der Finanzen wegen der Form der Bestallung mit der Staatskanzlei ins Einvernehmen setzen.</p>
+                  <p>Der Kabinettsrat stimmt diesen Anträgen mit dem Beifügen zu, dass von einer Verständigung der fremdnationalen Staaten bei dem Umstande, als die beiden genannten Funktionäre bereits seit einiger Zeit in der Liquidierungskommission tätig sind, Umgang genommen werden könne.</p>
+               </div>
+               <div type="top" xml:id="krp-0047_top03">
+                  <head>
+                     <label>
+                        <num n="3">3.</num>
+                        <seg>Fortführung des höheren Weltpriester-Bildungsinstitutes zum heiligen Augustin in Wien.</seg>
+                     </label>
+                  </head>
+                  <p>Nach eingehender Darstellung der Sachlage erbittet Staatssekretär <hi rend="#letterspaced">Pacher</hi> die Ermächtigung des Kabinettsrates zur Fortführung des höheren Weltpriester-Bildungsinstitutes zum heiligen Augustin in Wien unter der Voraussetzung, dass die damit verbundenen Kosten sowie die Kosten einer entsprechenden Ausgestaltung der Anstalt aufgrund weiters noch zu pflegender Verhandlungen in den <pb facs="krp-0047_r-0008"/>Dotationen und eigenen Mitteln des Institutes volle Bedeckung finden, sodass dadurch dem Religionsfonds bzw. dem Staatsschatz keine Auslagen erwachsen.</p>
+                  <p>Nach Beantwortung mehrerer gegenständlicher Anfragen des Staatssekretärs <hi rend="#letterspaced">Hanusch</hi> und des Unterstaatssekretärs <hi rend="#letterspaced">Glöckel</hi> durch den referierenden Staatssekretär erteilt der Kabinettsrat die erbetene Ermächtigung.</p>
+               </div>
+               <div type="top" xml:id="krp-0047_top04">
+                  <head>
+                     <label>
+                        <num n="4">4.</num>
+                        <seg>Mittelschülerbewegung.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Pacher</hi> führt aus, dass sich unter den Mittelschülern seit einiger Zeit eine Bewegung geltend mache, die auf die Gewährung einer freieren Stellung der Mittelschüler, als sie die bestehenden Disziplinarvorschriften zulassen, abzielen. Im Besonderen hätte eine beim Niederösterreichischen Landesschulrat erschienene Abordnung der Mittelschüler folgende Forderungen aufgestellt:</p>
+                  <list>
+                     <item n="1"><label>1.)</label> Koalitionsfreiheit,</item>
+                     <item n="2"><label>2.)</label> Bildung von Schulgemeinden, </item>
+                     <item n="3"><label>3.)</label> Beseitigung des Zwanges zu religiösen Übungen,</item>
+                     <item n="4"><label>4.)</label> Einführung gewisser Freigegenstände (Maschinenschreiben, usw.),</item>
+                     <item n="5"><label>5.)</label> Einflussnahme auf die Festsetzung des Prüfungsstoffes bei der Reifeprüfung. </item>
+                  </list>
+                  <p><pb facs="krp-0047_r-0009"/>In dieser Angelegenheit hatte im Staatsamt für Unterricht eine eingehende Aussprache mit einer Reihe von Experten des Mittelschulwesens stattgefunden, deren Ergebnis in einem an den Landesschulrat für Niederösterreich zu richtenden, den anderen Landesschulräten mitzuteilenden Erlasse nachstehenden Inhaltes niedergelegt werden soll:</p>
+                  <list>
+                     <item n="1"><label>1.)</label> Das Staatsamt stimmt der Forderung der Schulgemeindenbildung an Mittelschulen durchaus zu. Es soll hiebei den berechtigten Wünschen der Schülerschaft möglichst entgegengekommen und ihre Betätigung innerhalb der Schulgemeinden durch wohlwollende Beratung anzueifern und zu beraten sein. Auch ein gewisser Zusammenschluss mehrerer Schulgemeinden an einem Orte erschiene statthaft.</item>
+                     <item n="2"><label>2.)</label> Das Staatsamt anerkennt grundsätzlich die Bildung eines Zentralausschusses als Vertreter der Schülerschaft in ihren Angelegenheiten. Satzungen und Geschäftsordnung werden gemeinsam mit Schülern und Lehrern zu beraten sein. Der Wirkungskreis dieses Zentralausschusses ist jedoch ausschließlich auf die allgemeinen Angelegenheiten der Mittelschülerschaft beschränkt und darf nicht der einer oberen Instanz sein.</item>
+                     <item n="3"><label>3.)</label> Das Staatsamt für Unterricht fordert die Landesschulräte auf, sich <pb facs="krp-0047_r-0010"/>über die Frage der Zulassung der oberen Mittelschulklassen zur Vereinsbildung zu äußern. Hiebei wird die Frage der Anzeige der Vereinsbildung (an Schule und Eltern) zu regeln sein.</item>
+                     <item n="4"><label>4.)</label> Werden alle diese Maßnahmen die Selbstzucht der Mittelschuljugend heben und einen Zwang entbehrlich erscheinen lassen, so ist damit auch die Möglichkeit eröffnet, die Teilnahme an religiösen Übungen freizustellen. Auch hierüber hätten sich die Landesschulräte zu äußern.</item>
+                  </list>
+                  <p>Eine neue Schulordnung wird einzuführen sein. Bis dahin bleibt jedoch die Disziplinarordnung, obzwar sie als veraltet anerkannt werden muss, in Geltung, ist jedoch einsichtsvoll auszulegen.</p>
+                  <p>Ein Ausbau der Elternvereinigungen zu Elternräten bleibt vom Standpunkte der Unterrichtsverwaltung einer besonderen Erwägung vorbehalten.</p>
+                  <p>Die Frage der Reform des Mittelschulunterrichtes wird Gegenstand abgesonderter fachmännischer Beratungen bilden.</p>
+                  <p>Die sich hieran anschließende Debatte, an der sich Staatssekretär Dr. <hi rend="#letterspaced">Loewenfeld-Russ</hi>, sowie die Unterstaatssekretäre <hi rend="#letterspaced">Glöckel</hi> und <hi rend="#letterspaced">Marckhl</hi> beteiligten, befasste sich insbesondere mit der Frage der Zulässigkeit der Teilnahme der Mittelschuljugend an Vereinen und mit den einzelnen, in dem vor<pb facs="krp-0047_r-0011"/>stehenden Erlasse des Staatsamtes für Unterricht dargelegten Grundsätzen.</p>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> fasste das Ergebnis der Besprechung dahin zusammen, dass diese Angelegenheit im Augenblick zur Entscheidung noch nicht reif sei und seinerzeit neuerlich im Kabinettsrat zur Sprache zu bringen sein werde, sobald die Äußerungen der Landesschulräte eingelangt sein werden. Im Übrigen stehe diese Frage in einem innigen Zusammenhange mit der ganzen Schulreform und sei außerhalb dieser kaum lösbar.</p>
+                  <p>Der Kabinettsrat stimmt dieser Auffassung zu, billigt die bisher vom Staatsamte für Unterricht getroffenen einschlägigen Maßnahmen und nimmt die von diesem Staatsamte weiters in Aussicht genommenen Schritte zur Kenntnis.</p>
+               </div>
+               <div type="top" xml:id="krp-0047_top05">
+                  <head>
+                     <label>
+                        <num n="5">5.</num>
+                        <seg>Forderungen des Zugsbegleitungspersonales der deutschösterreichischen Staatsbahnen.</seg>
+                     </label>
+                  </head>
+                  <p>Unterstaatssekretär Ing. Ritter von <hi rend="#letterspaced">Enderes</hi> bringt dem Kabinettsrate zur Kenntnis, dass am gestrigen Tage eine Abordnung des Zugsbegleitungspersonales der deutschösterreichischen Staatsbahnen im Staatsamte für Verkehrswesen erschienen sei und eine Reihe von Forderungen erhoben habe (siehe Protokollsbeilage), deren Erfüllung bis 3. März bei sonstiger Diensteseinstellung ver<pb facs="krp-0047_r-0012"/>langt worden sei. Das Staatsamt für Verkehrswesen könne diesen Forderungen äußerstenfalls nur zum Teile Rechnung tragen. Da demgemäß die Gefahr eines Streiks mit unübersehbaren Folgen bestehe, erbitte sich der sprechende Unterstaatssekretär die Zustimmung des Kabinettsrates zu den einzelnen Zugeständnissen der Staatseisenbahnverwaltung sowie die Ermächtigung, sich bei den einschlägigen Verhandlungen auf den Beschluss des Kabinettsrates berufen zu dürfen.</p>
+                  <p>Staatssekretär <hi rend="#letterspaced">Hanusch</hi> warnt aus taktischen Gründen dringend davor, das Höchstausmaß der Zugeständnisse bereits im gegenwärtigen Stadium durch einen Kabinettsratsbeschluss festzulegen, da die Regierung bei einer Verschärfung der Situation dann keine Möglichkeit hätte, gegebenenfalls den Verhältnissen Rechnung zu tragen. Vorläufig sollte das Staatsamt für Verkehrswesen weitere Verhandlungen mit den Organisationen führen und dem Kabinettsrat dann neuerlich berichten.</p>
+                  <p>Unterstaatssekretär Dr. von <hi rend="#letterspaced">Grimm</hi> stimmt dieser Auffassung zu, wogegen der Antragsteller das Ersuchen stellt, der Kabinettsrat möge die von ihm im Einzelnen skizzierten Zugeständnisse zur Kenntnis nehmen und sich damit einverstanden erklären, dass das Staatsamt für Verkehrs<pb facs="krp-0047_r-0013"/>wesen auf dieser Grundlage mit den Organisationen weiterverhandle. Sollten diese Beratungen zu keinem Ergebnisse führen, so bitte der Referent um die Ermächtigung, sich auf die seitens des Kabinettsrates erfolgte Billigung der Verhandlungsbasis ausdrücklich berufen zu dürfen.</p>
+                  <p>Staatssekretär <hi rend="#letterspaced">Hanusch</hi> befürwortet diese Vorgangsweise, wünscht jedoch gleichzeitig, dass Unterstaatssekretär Ing. von Enderes vom Kabinettsrat ermächtigt werde, nötigenfalls auch über das Maß der in Aussicht genommenen Zugeständnisse hinauszugehen. Im Interesse der Aufrechterhaltung der Ruhe und Ordnung dürfte unter den gegenwärtigen Verhältnissen auch vor bedeutsamen Konzessionen nicht zurückgeschreckt werden. Jedenfalls müsse die Möglichkeit offengehalten werden, dass sich der Kabinettsrat noch mit dieser Angelegenheit befassen könne, und es sei zweifellos, dass die größte Vorsicht angewendet werden müsse, um eine so ungeheure Katastrophe zu vermeiden, die der Stillstand der Bahnen mit sich bringen würde.</p>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> fasst die im Laufe der Debatte zutage getretene Auffassung des Kabinettsrates dahin zusammen, dass dem Unterstaatssekretär Ing. von Enderes die Ermächtigung erteilt werden soll, auf <pb facs="krp-0047_r-0014"/>der von ihm bekanntgegebenen Grundlage mit der Organisation des Zugsbegleitungspersonals zu verhandeln; nur im äußersten Falle sei sich auf die durch den Kabinettsrat erfolgte Billigung der Verhandlungsbasis zu berufen; gleichzeitig soll Unterstaatssekretär Ing. von Enderes ermächtigt werden, vorbehaltlich der späteren Zustimmung des Kabinettsrates weitere Zugeständnisse zu machen, über deren Ausmaß jedoch noch vorher das Einvernehmen mit dem Staatsamt der Finanzen zu pflegen sein werde.</p>
+                  <p>Der Kabinettsrat billigt einhellig diese Richtlinien.</p>
+               </div>
+               <div type="top" xml:id="krp-0047_top06">
+                  <head>
+                     <label>
+                        <num n="6">6.</num>
+                        <seg>Beschwerde der italienischen Militärmission über die Veräußerung von Kriegsvorräten.</seg>
+                     </label>
+                  </head>
+                  <p>Der Vorsitzende teilt mit, dass der Staatskanzlei eine Zuschrift des Staatsamtes des Äußern zugekommen sei, wonach der Kommandant der italienischen Militärmission nachstehende Forderungen erhoben habe:</p>
+                  <p>„</p>
+                  <list>
+                     <item n="1"><label> 1.)</label> Die Veräußerung von Kriegsvorräten darf in Deutschösterreich überhaupt nur mit Zustimmung der italienischen Waffenstillstandskommission erfolgen, mögen die betreffenden Kriegsvorräte tatsächlich aus den evakuierten Gebieten zurückgeschafft worden sein, oder nicht. In jedem <pb facs="krp-0047_r-0015"/>Falle haften diese Vorräte für die Erfüllung der Waffenstillstandsbedingungen auf Ablieferung der in der erwähnten Zone damals vorhandenen Kriegsvorräte und steht es der italienischen Regierung vollkommen frei, die Deckung für diese ihre Forderung im Gebiete Deutschösterreichs oder in einem anderen Staate zu holen.</item>
+                     <item n="2"><label>2.)</label> Die Kriegsvorräte in weiterem Sinne können und sollen – auch nach den Intentionen der italienischen Regierung – zum Zwecke des wirtschaftlichen Wiederaufbaues, der Lebensmittel- und Arbeitsbeschaffung von der deutschösterreichischen Regierung verwendet werden; hiebei besteht jedoch die Pflicht, alle diese Vorräte zu inventarisieren und ihre Abgabe zu den erwähnten Zwecken derart evident zu halten, dass über ihre Verwendung jederzeit der italienischen Regierung Rechenschaft gegeben werden kann.</item>
+                     <item n="3"><label>3.)</label> Die Gesandtenkonferenz und alle sonstigen Organe und Körperschaften, die sich mit der Auseinandersetzung der Aktiven und Passiven der bestandenen Monarchie und des bestandenen österreichischen Staates befassen, dürfen in keinem Falle irgendeine Aufteilung von Kriegsvorräten vornehmen. Alle solche Verfügungen wären nichtig und würden zu <pb facs="krp-0047_r-0016"/>Gegenmaßnahmen seitens der Alliierten führen. Die italienische Militärmission nimmt, vorbehaltlich einer Weisung des italienischen Armeeoberkommandos, in Aussicht, sich tatsächlich in den betreffenden Körperschaften durch einen Delegierten vertreten zu lassen. Dieser Delegierte hätte aber nicht nur die Ansprüche auf Deckung der Forderungen an Kriegsvorräten zu wahren, sondern auch – und hierauf wird besonderes Gewicht gelegt – die Interessen und Ansprüche der von Italien okkupierten Gebiete Österreichs wahrzunehmen und zu vertreten.“</item>
+                  </list>
+                  <p>Der Vorsitzende teilt mit, dass das Staatsamt des Äußern an die Staatskanzlei das Ersuchen gestellt habe, sich zu dieser Note der italienischen Militärmission und insbesondere auch darüber äußern zu wollen, ob und inwieweit die Gesandtenkonferenz von diesen bisher nur der deutschösterreichischen Regierung bekanntgegebenen Forderungen zu verständigen wäre.</p>
+                  <p>Der Vorsitzende erörtert die Sachlage und gelangt zu dem Vorschlage, die Note sei dahin zu beantworten, dass sich der Kabinettsrat einverstanden erklärt, den Wünschen der italienischen Militärmission zu entsprechen.</p>
+                  <p><pb facs="krp-0047_r-0017"/>Der Kabinettsrat tritt diesem Vorschlage bei.</p>
+               </div>
+               <div type="top" xml:id="krp-0047_top07">
+                  <head>
+                     <label>
+                        <num n="7">7.</num>
+                        <seg>Ansuchen der Vereinigung der deutschösterreichischen Parlamentsberichterstatter um Ausfolgung von Jahresfreikarten auf den deutschösterreichischen Staats- und Privatbahnen.</seg>
+                     </label>
+                  </head>
+                  <p>Unterstaatssekretär Ing. von <hi rend="#letterspaced">Enderes</hi> macht davon Mitteilung, dass die Vereinigung der deutschösterreichischen Parlamentsberichterstatter (54 Mitglieder) um Ausfolgung von Jahresfreikarten auf den deutschösterreichischen Staats- und Privatbahnen eingeschritten sei. Da es sich hiebei um Begünstigung handle, die bisher keiner journalistischen Vereinigung zuteilgeworden sei und im Gewährungsfalle zweifellos weitgehende Beispielsfolgerungen ausgelöst würden, spreche sich Redner vom Ressortstandpunkte gegen die Gesuchswillfahrung aus, es sei denn, dass der Kabinettsrat aus Erwägungen politischer Natur zu einer anderen Schlussfassung gelangen sollte. Allerdings könnte sich aber eine aufrechte Erledigung des Ansuchens dann nur auf die Staatsbahnen erstrecken, da die Gewährung von Fahrbegünstigungen auf Privatbahnen außerhalb der Kompetenz des Staatsamtes für Verkehrswesen gelegen sei.</p>
+                  <p>Der Kabinettsrat beschließt nach <pb facs="krp-0047_r-0018"/>einer kurzen Debatte das Ansuchen vorläufig abzulehnen.</p>
+               </div>
+               <div type="top" xml:id="krp-0047_top08">
+                  <head>
+                     <label>
+                        <num n="8">8.</num>
+                        <seg>Stellungnahme der Vertreter der Großmächte zur Frage der Zahlung des Märzcoupons aus gemeinsamen Mitteln.</seg>
+                     </label>
+                  </head>
+                  <p>Unterstaatssekretär <hi rend="#letterspaced">Waber</hi> teilt mit, dass am 28. Februar d. J. ein an die Gesandtenkonferenz in Wien gerichtetes, von den Vertretern der Großmächte in Paris unterfertigtes Telegramm eingelangt sei, indem die Versicherung gegeben wird, dass Maßnahmen zur Sicherung der Zahlung des Märzcoupons der österreichisch-ungarischen Staatsschuld aus den gemeinsamen Mitteln die Verfügungen der Friedenskonferenz und die Verteilung der Verantwortlichkeiten für die österreichisch-ungarische Staatsschuld in keiner Weise nachteilig beeinflussen werden. Die Beantwortung dieses Telegrammes werde in der am 4. März d. J. stattfindenden Gesandtenkonferenz beraten werden.</p>
+                  <p>Der Kabinettsrat nimmt diese Mitteilung zur Kenntnis.</p>
+               </div>
+               <div type="top" xml:id="krp-0047_top09">
+                  <head>
+                     <label>
+                        <num n="9">9.</num>
+                        <seg>Bericht über die Intervention des Staatssekretärs für öffentliche Arbeiten in Prag wegen der Kohlenlieferungen.</seg>
+                     </label>
+                  </head>
+                  <p>Im Auftrage des abwesenden Staatssekretärs Ing. Zerdik berichtet Oberbergrat Dr. <hi rend="#letterspaced">Kloß</hi> über die Intervention des Staatsamtes für öffent<pb facs="krp-0047_r-0019"/>liche Arbeiten bei der tschechoslowakischen Regierung in Angelegenheit der Kohlenlieferungen. Aus diesem Berichte, dessen Details vertraulichen Charakter tragen, ergibt sich, dass nicht allein die vertragsmäßig zugesicherten Kohlenzuschübe aus dem tschechoslowakischen Staate dortselbst zurückgehalten werden, sondern dass auch die oberschlesische Kohlenzufuhr vom tschechoslowakischen Staate zum größten Teile unterbunden werde. Es bestehe vorläufig keine Aussicht auf eine Besserung dieser Situation, weshalb an die Erlassung neuerlicher, verschärfter Sparmaßnahmen gedacht werden müsse, zumal auch die Zuschübe an deutschösterreichischer Kohle aus dem Zillingsdorfer Bergwerke sowie aus den Gruben der Alpine Montangesellschaft in den letzten Tagen ausgeblieben seien.</p>
+                  <p>Nachdem Unterstaatssekretär Ing. von <hi rend="#letterspaced">Enderes</hi> über seine mit den tschechoslowakischen Sektionschefs Burger und Bašta gepflogenen Verhandlungen wegen Belieferung der deutschösterreichischen Staatsbahnen mit Kohle berichtet hatte, fasst der Kabinettsrat über eine Anregung des Vorsitzenden den Beschluss, das Staatsamt für öffentliche Arbeiten aufzufordern, noch in Laufe des morgigen Tages beim Staatsamt des Äußern zu in<pb facs="krp-0047_r-0020"/>tervenieren, damit dieses die englische und amerikanische Mission ersuche, energische Schritte bei der tschechoslowakischen Regierung wegen Einhaltung des mit ihr seinerzeit abgeschlossenen Übereinkommens zu unternehmen.</p>
+                  <p/>
+               </div>
+            </div>
+            <div type="stenogramme">
+               <div n="1">
+                  <head>[KBR 47, 1. März 1919, Stenogramm]</head>
+                  <p><pb facs="krp-0047_s01-0001"/>Nr. 47, vom 1. /3.</p>
+                  <p>[<hi rend="#i">Rechtes Obereck:</hi>] Haas, Kloß, </p>
+                  <p>Thaa, </p>
+                  <p>Feiler, EM. [Eisenbahnministerium]. </p>
+                  <p>1.) Punkt 2. Haas: Kredit.</p>
+                  <p>a) 10 Millionen Kronen; </p>
+                  <p>b) Kunstgewerbe, Aufwendungen für Materialbeschaffung.</p>
+                  <p>Hanusch: Die Angelegenheit sehr wichtig im gegenwärtigen Augenblick.</p>
+                  <p><hi rend="#s">Frage, ist dafür gesorgt, dass die Güter auch der Produktion zugeführt werden, so rasch als möglich? </hi></p>
+                  <p>Welche Vorsorgen getroffen sind, damit diese aus der Sachdemobilisierung aufgekauften Güter so rasch als möglich der Produktion zugeführt werden.</p>
+                  <p>Haas: Aufgekauft vom Verband der deutsch-österreichischen Gewerbeförderungsanstalten ...; sie kaufen aufgrund der Anmeldungen der einzelnen Gewerbeförderungsanstalten an.</p>
+                  <p>Grimm: Zunächst prinzipielle Frage. Es kommt wiederholt vor, dass Gegenstände zur Sprache gebracht werden, [die] finanzielle Bedeutung haben und von welchen das Staatsamt für Finanzen nichts erfahren hat. </p>
+                  <p>Dieser Vorgang ist nicht praktikabel. </p>
+                  <p>Bittet, mit dieser Praxis unbedingt zu brechen (im Interesse der Gesamtverwaltung). Wenn nicht gerade Gefahr in Verzug ist, vorher mit den </p>
+                  <p>beteiligten Ressorts Einvernehmen herzustellen.</p>
+                  <p>Wir [er]kennen die Angelegenheit als förderungswürdig an; was die Höhe der Darlehen an[langt], Einvernehmen mit dem Staatsamt für Finanzen.</p>
+                  <p><hi rend="#s">Was die 3 Millionen Kredit [anlangt], heute schon als vollkommen einverstanden erklären. Wohl noch</hi> etwas anschauen.</p>
+                  <p>Bezüglich 1.) schon heute als förderungswürdig anerkennen und mit dem Staatsamt für Finanzen wegen des Näheren in Verhandlung zu treten. </p>
+                  <p>2.) Heute noch kein Beschluss; mit dem Staatsamt für Finanzen Einvernehmen und dann wenn notwendig nochmals ins Kabinettsrat.</p>
+                  <p>Haas: Einverstanden, auch wegen 2.) im Prinzip die Förderungswürdigkeit durch Kabinettsrat anzuerkennen.</p>
+                  <p>Urban: Antrag Grimm keine Einwendung.</p>
+                  <p>Ad 2) Antrag zurückgestellt.</p>
+                  <p>Ad 1) 10-Millionen-Kredit.</p>
+                  <p>[<hi rend="#i">Neben Summenklammer:</hi>] angenommen.</p>
+                  <p>2. Grimm: Vorschlag, Pöschl als Vertreter für Deutsch-Österreich in der Liquidierungskommission. </p>
+                  <p>Bittet, Kabinettsrat [möge] beschließen, dass Pöschl und Ganglbauer nunmehr formell bestellt werden. </p>
+                  <p>Die Bestellung wäre Sache der Staatskanzlei, zumindest P[öschl] - und die Staatskanzlei einzuladen, die Bestellung formell durchzuführen, sämtliche Staatsämter</p>
+                  <p>zu verständigen und durch das Staatsamt des Äußeren auch die fremden Staaten.</p>
+                  <p>Eine Frage ist, welche Befugnis der deutsch-österreichische Vertreter in der Liquidierungskommission hätte.</p>
+                  <p>Marckhl: Wir haben in den anderen Staaten keine Ingerenz. Anfrage, ob wir nicht einmal im südslawischen Staat einen deutsch-österreichischen Vertreter erhalten werden.</p>
+                  <p><pb facs="krp-0047_s01-0002"/>Waber: Das Verhältnis Societas leonina. Mit Rücksicht auf die unklaren Verhältnisse sehr schwer dreinzufahren. </p>
+                  <p>Stellt sich die Entwicklung so vor, dass die Vertreter abgeschoben werden und nicht dreinreden, die nichts beitragen. Jetzt vor Friedensschluss müssen wir Konflikte </p>
+                  <p>vermeiden und nicht provozieren, da wir in der schwächsten Position uns befinden. </p>
+                  <p>Sektionschef P[öschl] als Mitglied der internationalen Liquidierungskommission über alle bevollmächtigten Kollegien. </p>
+                  <p>Die Ernennung hat intern zu erfolgen, Verständigung der Nationalstaaten hätte zu unterbleiben, weil die Herren schon durch Wochen dort sitzen.</p>
+                  <p>Grimm: Dekret aber muss ausgefolgt werden.</p>
+                  <p>Urban: Wir haben Übereinkommen getroffen, welches uns das Recht einräumt, dorthin (Tschechoslowakei und Ungarn) Kommissäre zu entsenden. </p>
+                  <p>Der für Prag bestimmte Kommissär bekommt eine Reihe von Inspektoren; ebenso für Ungarn. Diese Kommissäre könnten </p>
+                  <p>sich auch der Flüchtlingsangelegenheiten annehmen.</p>
+                  <p>Antrag: Bestellung Pöschls und als dessen Vertreter Ganglbauer; formelle Bestellung durch die Staatskanzlei.</p>
+                  <p>Angenommen.</p>
+                  <p>3. Pacher: Hl. Augustin Anstalt.</p>
+                  <p>Glöckl: Inwiefern hat der Staat ein Interesse an der Anstalt?</p>
+                  <p>Pacher: Aus den Beiträgen der Diözesen erhalten.</p>
+                  <p>Hanusch: Man muss das vorläufig so weiter führen bis zur Lösung der Frage der Trennung der Kirche vom Staat.</p>
+                  <p>Angenommen.</p>
+                  <p>4. Pacher: Mittelschülerbewegung. Seit den letzten Wintermonaten hat eine schon lange bestehende Bewegung unter den Mittelschülern eingesetzt. </p>
+                  <p>Durch die Teilnahme am Krieg hat die Bewegung eine gewisse Stoßkraft erfahren. Bezüglich Koalitionsfreiheit hat sich eine Tatsache besonders in den </p>
+                  <p>Vordergrund gestellt, mit der man rechnen muss. Sie haben einen Zentralausschuss gebildet und dessen Anerkennung verlangt. Das Staatsamt für Unterricht hat eine </p>
+                  <p>Anzahl von Professoren zur Besprechung eingeladen, wobei herauskam: Was die Koalitionsfreiheit anbelangt und die Bildung von Schulgemeinden </p>
+                  <p>und Wünsche der Schüler nach Einführung gewisser Freigegenstände (Maschinschreiben) betrifft, so soll diesem Bestreben nicht widerstrebt werden. Man soll </p>
+                  <p>trachten, dieses in die richtige Bahn zu lenken. Elterngemeinde, wodurch Verbindung der Lehrer mit den Eltern. Der Zentralausschuss </p>
+                  <p>muss eingedämmt und in Bahnen gebracht werden, die mit den .... im Einklang stehen.</p>
+                  <p>Vereinsbildung zu gestatten unter der Voraussetzung, dass Verhetzung sozialer und politischer Art nicht stattfinden dürfe.</p>
+                  <p>Frage der religiösen Übungen: in Niederösterreich freigestellt, in den anderen Ländern besteht eine solche Bestimmung nicht. Und in Niederösterreich in Vergessenheit geraten.</p>
+                  <p>Zusammenfassung: [...] an Landesschulrat in Wien und unter Mitteilung an die anderen Landes[schul]räte mitgeteilt wurde.</p>
+                  <p>Bittet [um eine] Aussprache, inwieweit die Vereinsbildung der Mittelschüler (15-18 Jahre) für zulässig gehalten wird und welche Bewachung erforderlich und wünschenswert wäre.</p>
+                  <p><pb facs="krp-0047_s01-0003"/>Loewenfeld: Die Schüler sind zum lernen da. Gegen Vereinsbildung bin ich unbedingt.</p>
+                  <p>Glöckl: Frage der Vereinsbildung sehr schwierig. Es ist fraglich, ob es nicht klüger ist, die Leute unter Aufsicht in Vereinen zu wissen, </p>
+                  <p>als sie preiszugeben den Lockungen und sich jedes Einflusses zu begeben. Was soll man aber unter den jetzigen Zuständen machen? </p>
+                  <p>Energie in die richtigen Bahnen zu lenken.</p>
+                  <p>Schulgemeinde: Idee sehr gut (in den oberen Klassen). </p>
+                  <p>Vereinswesen nur soweit, als es unbedingt notwendig ist.</p>
+                  <p>Religiöse Übungen: Frage meiner Meinung nach auch gesetzlich gelöst und nur bisher durch politische Einflüsse gebeugt worden. </p>
+                  <p>(Ein Zwang zu religiösen Übungen besteht tatsächlich nicht).</p>
+                  <p>Frage, wie sich die Mittelschullehrer dazu stellen: jetzt besser, früher ein starrer Gegensatz zu den Schülern.</p>
+                  <p>Wichtiger wäre die Stellung des Zentralausschusses zu den Schulbehörden festzulegen.</p>
+                  <p>Pacher: [Der] Zentrale Schülerrat hat sich bald nach Einsetzen der Bewegung zu bilden begonnen. Dieser Rat hat die Forderungen in gemeinsamen Beratungen aufgestellt.</p>
+                  <p>Marckhl: Ob Vereinsgesetz nicht im Weg?</p>
+                  <p>Urban: Die ganze Angelegenheit im Augenblick zur Entscheidung nicht reif, da noch ein Gutachten der Landesschulräte einzuholen. </p>
+                  <p>Ich glaube, dass die ganze Angelegenheit in einem solchen Zusammenhang mit der ganzen Schulreform steht, dass [sie] außerhalb dieses Rahmens nicht lösbar [ist].</p>
+                  <p>Kabinettsrat daher heute nur Beschluss fassen, dass er die Schritte des Staatsamtes für Unterricht zur Kenntnis nimmt und die bisher getroffenen Maßnahmen </p>
+                  <p>billigt.</p>
+                  <p>Angenommen.</p>
+                  <p>5. Enderes: Situation täglich bedrohlicher. Redner steht schon lange auf dem Standpunkt, dass nur eine sehr ernste Einflussnahme der politischen Parteien </p>
+                  <p>auf die Eisenbahner zu einer Besserung der Verhältnisse führen kann. Wenn die Eisenbahner streiken, dann wird die Entente eingreifen.</p>
+                  <p>Man verlangt: 100% Erhöhung für die Oberbauarbeiter, jährlich 30 Millionen Kronen Mehrausgaben des Staates.</p>
+                  <p>Die Kosten der restlosen Gleichsetzung von Dienstzeit und Arbeitszeit würden sich auf 48 Millionen Kronen jährlich belaufen.</p>
+                  <p>Durchschnittsverdienst von 1.600 Kronen auf 6.000 Kronen zwischen 1913 und 1919.</p>
+                  <p>Bespricht im Einzelnen die Entschließung.</p>
+                  <p>Hanusch: [Möchte] dringend warnen, dass der Kabinettsrat heute einen definitiven Beschluss fasst. Gegenwärtig spielen sich die Verhandlungen ab zwischen dem Staatsamt und den Organisationen. </p>
+                  <p>Wir müssen uns den Beschluss des Kabinettsrates aufheben, bis die Situation am äußersten Punkt angelangt ist. Antrag, dass Verkehrswesen weiterverhandelt und uns berichtet.</p>
+                  <p>Grimm: Sehr dankbar für die Stellung Enderes'. Die Regierung muss sich zu einer energischen Stellungnahme aufraffen gegen diese immer wiederkehrenden Streikandrohungen. </p>
+                  <p>Gleichfalls einverstanden, dass heute noch kein Beschluss gefasst wird. Wir müssen uns die Zugeständnisse durch Verhandlungen abringen lassen.</p>
+                  <p>Enderes: Um Verhandeln zu können, muss ich die Leute zu Verhandlungen nötigen. Ich brauche für den Fall, dass die Leute sagen, wir streiken, eine gewisse Deckung. </p>
+                  <p>Bittet den Kabinettsrat, [dass er] die vom Redner skizzierte Antwort zur Kenntnis nimmt und sich einverstanden erklärt, dass auf dieser Grundlage am Montag zu einer Aussprache kommt. </p>
+                  <p><pb facs="krp-0047_s01-0004"/>Wenn das nicht genügt, muss gesagt werden können, dass wir nicht weiter gehen können.</p>
+                  <p>Marckhl: Der Staatsrat Muss doch schon wegen der Kredite gefragt werden. Den Leuten wäre zu sagen, dass es technisch nicht möglich ist.</p>
+                  <p>Hanusch: Einverstanden, dass Kabinettsrat das genehmigt, aber auch ermächtigt den Enderes, nötigenfalls über das Maß der in Aussicht genommenen </p>
+                  <p>Zugeständnisse hinauszugehen. Im Interesse der [Aufrechterhaltung von] Recht und Ordnung und der Erhaltung der Gesellschaft muss man Zugeständnisse auch höherer Art machen. </p>
+                  <p>Heute wird kein finanzielles Opfer zu groß sein, um die Ordnung aufrecht zu erhalten, weil wir die Machtmittel nicht haben, um Ordnung zu schaffen. </p>
+                  <p>Enderes hätte aber nur, wenn er es sagt, dass der Kabinettsrat sich </p>
+                  <p>damit befasst hat; aber immer die Möglichkeit offenhalten, dass der Kabinettsrat sich noch immer befassen kann. Bittet, die größte Vorsicht anzuwenden, um eine so ungeheure Katastrophe zu vermeiden.</p>
+                  <p>Urban: Kabinettsrat nimmt zur Kenntnis, dass Enderes auf dieser Basis verhandeln wird; er billigt diese Grundlage auch; Enderes wird nur </p>
+                  <p>im äußersten Fall davon Gebrauch machen, dass Kabinettsrat diese Billigung ausgesprochen hat. Gleichzeitig wird Enderes ermächtigt, </p>
+                  <p>auch weitere Zugeständnisse zu machen, vorbehaltlich der Zustimmung des Kabinettsrates. Vorher noch Einvernehmen mit dem Staatsamt für Finanzen. </p>
+                  <p>Was zu diesen vom Kabinettsrat schon genehmigten Grundsätzen noch möglich wäre, weiterzugehen über die Grundsätze, die schon beschlossen wurden.</p>
+                  <p>6. [Urban]: Zuschrift vom Staatsamt des Äußeren betreffend ... Tätigkeit der Gesandtenkonferenz.</p>
+                  <p>1) Das wird schon jetzt tatsächlich so gehandhabt.</p>
+                  <p>2) Verwendung der Demobilisierungsgüter: wird gerade so eingehalten (inventarisiert).</p>
+                  <p>Wäre dahin zu beantworten, dass Kabinettsrat einverstanden ist, dass dem Wunsch der Italiener entsprochen wird.</p>
+                  <p>7. Enderes: Die Vereinigung der deutsch-österreichischen Parlamentsberichterstatter hat das Ansuchen nach Ausfolgung von Jahresfreikarten auf den österreichischen Staats- und Privatbahnen </p>
+                  <p>gerichtet. Jahresfreikarten 5.000 Kronen, 55 Mitglieder: 277.000 Kronen. </p>
+                  <p>So weitgehende Begünstigung wurde keiner Journalistenvereinigung zu Teil. Geben wir diesen die Karten, so werden es auch alle anderen verlangen. </p>
+                  <p>Unser Fahrbegünstigungswesen muß in Hinkunft abgebaut werden.</p>
+                  <p>Grimm: Präl[iminar]-mäßig wäre vorzusorgen und von der Nationalversammlung zu bewilligen.</p>
+                  <p>Hanusch: Das ganze Freikartenunwesen ist eine politische .... für die strikte Ablehnung. </p>
+                  <p>Politische Angelegenheit; der neue Kabinettsrat wird sich damit befassen.</p>
+                  <p>Antrag Hanusch: vorläufig abgelehnt.</p>
+                  <p>8. Waber: Gegen Verhaftung [von] Mayer in Gratzen [<hi rend="#i">Einschub:</hi>] nach Budweis instr. [<hi rend="#i">Einschub Ende</hi>]: Tusar hat versprochen, noch heute mit Rašin -.</p>
+                  <p>In Angelegenheit März-Coupon Gesandtenkonferenz ohne Zustimmung; [die] Gesandten [haben] sich vorbehalten, am nächsten Dienstag -.</p>
+                  <p>9. [Kloß]: Am 11. /12. Vertrag mit der tschechoslowakischen Regierung geschlossen, nach welchem wir einen Prozentanteil der Kohle zu erhalten hätten. Zuerst nichts und erst nach längeren Bemühungen -. </p>
+                  <p>Mit Februar Einlauf ausgeblieben. Zerdik mit den maßgebenden Persönlichkeiten Verhandlungen. Zahr. hat Einstellung begründet mit Wagenmangel. Nachgewiesen, dass dies nicht richtig ist. </p>
+                  <p>Von vergangenem Mittwoch an sollte die Lieferung dann wieder vorgenommenen werden.</p>
+                  <p><pb facs="krp-0047_s01-0005"/>Stanek hat erwidert, dass diese Kohle geliefert wird nach eigenem Ermessen.</p>
+                  <p>Zerdik [war] auch bei Masaryk, der zugesagt hat, dass diese Frage nicht nach politischen Gesichtspunkten behandelt werden wird.</p>
+                  <p>Nachträglich aber hat sich ergeben, dass mit dem Tag, als die starken Belieferungen hätte einsetzen sollen, die vollständige Einsetzung [Einstellung] von Prag aus verfügt wurde. </p>
+                  <p>Angeblich infolge eines Irrtums wurde die Kohle wegen der Abstempelung gesperrt. Später wieder frei gegeben, aber die Durchfuhr der Kohle aus Schlesien wurde frei gegeben. </p>
+                  <p>Einige Stunden darauf hat Rašin diese Verfügungen wieder zurückgezogen bezüglich der oberschlesischen Kohle. Dies ist umso bedenklicher für uns, weil die oberschlesische </p>
+                  <p>Kohle gerade in den letzten Tagen erhöht geliefert wurde (statt 3 [zuletzt] 4-5.000 t). Es besteht vorläufig keine Aussicht, dass wir diese Kohle erhalten. Auf alle telegraphische Urgenz keine Nachricht erhalten.</p>
+                  <p>Situation ist eine äußerst kritische. An der oberschlesischen Kohle ist größtenteils die Bahn interessiert. Jetzt kommen ca. 1.000 t.</p>
+                  <p>Rückwirkungen dürften schon morgen oder übermorgen in die Erscheinung treten. Wir stehen vor der Frage, neuerlich weitere Verschärfungen der Sparmaßnahmen anzuordnen, die aber in diesem </p>
+                  <p>geringen Umfang von keiner Bedeutung wären. Die Abschaltung der Industrie in Wien vom elektrischen Strom und die Frage der Aufrechterhaltung der Tramway </p>
+                  <p>in Frage. Zillingsdorfer Arbeiter halten bis Mittwoch die Faschingstage. Auch in Seegraben bei der Alpine wird </p>
+                  <p>seit zwei Tagen gestreikt, andere Werke haben sich zum Teil aus Sympathie angeschlossen. Immerhin [ist] die Situation eine solche, dass wir nur auf die kleine Menge </p>
+                  <p>aus der Tschechoslowakei angewiesen sind. Wir fürchten, dass die schärfsten Maßnahmen eingeleitet werden müssen.</p>
+                  <p>Urban: Es wird nichts übrigbleiben, als sich an die Entente zu wenden.</p>
+                  <p>Enderes: Für uns haben sich die Verhältnisse in den letzten Tagen ein wenig gebessert, dann ist das wieder dazu gekommen. </p>
+                  <p>Unterredung mit Burger und Bašta; zugesagt, dass sie sich einsetzen werden für die Freigabe der oberschlesischen Kohle. </p>
+                  <p>2 x wäre Schnellzug nach München -.</p>
+                  <p>Auch wir bemühen uns, die Entente für unsere Zwecke zu interessieren. </p>
+                  <p>Aber nur eine ausgiebige und gründliche Einflussnahme auf die Entente wird etwas helfen. </p>
+                  <p>Würde es begrüßen, wenn seitens des Kabinettsrates ein solcher Schritt unternommen würde, </p>
+                  <p>dass wir das Staatsamt des Äußeren ersuchen, die entsprechende Intervention zu unternehmen. </p>
+                  <p><hi rend="#s">Staatsamt für öffentliche Arbeiten wird ersucht -.</hi></p>
+                  <p>[<hi rend="#i">Rechter Rand:</hi>] [Dass man] schon morgen die Intervention wiederholt und [sich] </p>
+                  <p>erkundigt bei der englischen und amerikanischen </p>
+                  <p>Mission, was schon geschehen ist hierüber.</p>
+                  <p>Schluss 7h.</p>
+               </div>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

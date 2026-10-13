@@ -1,0 +1,753 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href='http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:acdh="https://vocabs.acdh.oeaw.ac.at/schema#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xml:lang="de">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="a" type="main" n="0120">Kabinettsprotokoll Nr. 120 vom 7. November 1919</title>
+            <title level="m" type="main" n="01">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <title level="m" type="sub" n="">Renner III (17. Oktober 1919 – 7. Juli 1920)</title>
+            <meeting>
+               <placeName key="https://d-nb.info/gnd/4066009-6">Wien</placeName>
+               <orgName key="https://d-nb.info/gnd/5162749-8">Kabinettsrat</orgName>
+               <date when-iso="1919-11-07"/>
+            </meeting>
+            <editor>
+               <persName key="https://d-nb.info/gnd/122481836"
+                         role="hasCreator"
+                         xml:id="hwohnout">
+                  <forename>Helmut</forename>
+                  <surname>Wohnout</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</affiliation>
+               <idno type="ORCID">0000-0002-3864-9839</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/120789825"
+                         role="hasCreator"
+                         xml:id="tolechowski">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0003-3291-6876</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/131679384"
+                         role="hasCreator"
+                         xml:id="rlein">
+                  <forename>Richard</forename>
+                  <surname>Lein</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0002-7502-0503</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="aholzer">
+                  <forename>Anna</forename>
+                  <surname>Holzer</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0005-3560-3500</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="dsoelkner">
+                  <forename>Dominik</forename>
+                  <surname>Sölkner</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-9895-7212</idno>
+            </editor>
+            <editor>
+               <persName role="hasContributor" xml:id="ischotzko">
+                  <forename>Ina</forename>
+                  <surname>Schotzko</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-5210-3713</idno>
+            </editor>
+            <funder n="1">
+               <orgName key="https://d-nb.info/gnd/2054142-9" role="hasFunder">Österreichischer Wissenschaftsfonds FWF</orgName>
+               <idno type="project">PAT1495024</idno>
+               <title type="project">Die Protokolle des österreichischen Kabinettsrates 1919–1920</title>
+            </funder>
+            <respStmt>
+               <resp>Projektverantwortung</resp>
+               <orgName key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Projektleitung</resp>
+               <persName key="https://d-nb.info/gnd/120789825" role="hasPrincipalInvestigator">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+                  <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+                  <idno type="ORCID">0000-0003-3291-6876</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Nationaler Forschungspartner</resp>
+               <orgName key="https://d-nb.info/gnd/1123037736" role="hasEnabler">Austrian Centre for Digital Humanities</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Digitalisierung der gedruckten Quellen</resp>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>TEI-Datenmodellierung</resp>
+               <persName role="hasContributor" xml:id="tfruehwirth">
+                  <forename>Timo</forename>
+                  <surname>Frühwirth</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-3997-5193</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technische Supervision</resp>
+               <persName key="https://d-nb.info/gnd/1043833846"
+                         role="hasContributor"
+                         xml:id="pandorfer">
+                  <forename>Peter</forename>
+                  <surname>Andorfer</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-9575-9372</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technisches Consulting und Vorbereitung der Druckausgabe</resp>
+               <persName key="https://d-nb.info/gnd/13281899X"
+                         role="hasContributor"
+                         xml:id="skurz">
+                  <forename>Stephan</forename>
+                  <surname>Kurz</surname>
+                  <affiliation key="https://d-nb.info/gnd/1202798799">Institut für die Erforschung der Habsburgermonarchie und des Balkanraumes</affiliation>
+                  <idno type="ORCID">0000-0003-2546-2570</idno>
+               </persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher key="https://d-nb.info/gnd/1001454-8">Österreichische Akademie der Wissenschaften</publisher>
+            <date when="2028"/>
+            <availability status="free">
+               <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">Lizenziert unter CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/deed.de)</licence>
+            </availability>
+            <idno type="ISBN_Print"/>
+            <idno type="ISBN_Part_epub"/>
+            <idno type="ISBN_Digital"/>
+            <idno type="DOI"/>
+            <idno type="DOI_zenodo"/>
+            <idno type="ebook_ID"/>
+         </publicationStmt>
+         <seriesStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="m" type="main">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <respStmt>
+               <resp>Bearbeitung und Herausgeberschaft</resp>
+               <orgName key="https://d-nb.info/gnd/2024703-5">Universität Wien</orgName>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+         </seriesStmt>
+         <notesStmt>
+            <note>Diese TEI-XML-Datei ist Grundlage für eine Druckausgabe der Edition.</note>
+            <relatedItem>
+               <biblStruct>
+                  <monogr>
+                     <imprint>
+                        <pubPlace key="https://d-nb.info/gnd/4066009-6">Wien</pubPlace>
+                        <publisher key="https://d-nb.info/gnd/2068748-5">Verlag der Österreichischen Akademie der Wissenschaften</publisher>
+                        <date when="2029"/>
+                     </imprint>
+                     <extent/>
+                  </monogr>
+                  <note>
+              <idno/>
+              <ptr/>
+            </note>
+                  <citedRange/>
+               </biblStruct>
+            </relatedItem>
+         </notesStmt>
+         <sourceDesc>
+            <bibl>Quellbestand: AT-OeStA/AdR MRang MR 1Rep KRP Kabinettsratsprotokolle, 1918-1920 (Teilbestand)<ref target="https://www.archivinformationssystem.at/detail.aspx?id=5465">https://www.archivinformationssystem.at/detail.aspx?id=5465</ref>
+            </bibl>
+            <msDesc>
+               <msIdentifier>
+                  <institution key="https://d-nb.info/gnd/37748-X" role="hasOwner">AT-OeStA Österreichisches Staatsarchiv (Archiv (ÖStA))</institution>
+                  <repository key="https://d-nb.info/gnd/1601181-8">AT-OeStA/AdR Archiv der Republik, 1918- (Abteilung)</repository>
+                  <collection>AT-OeStA/AdR MRang MR 1Rep Ministerrat 1. Republik, 1918 - 1938 (Bestand)</collection>
+                  <idno>AT-OeStA_AdR-MRang-MR-1.-Rep.-KRP-120</idno>
+               </msIdentifier>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <abstract>
+            <p>
+          <!--to be generated-->
+        </p>
+         </abstract>
+      </profileDesc>
+      <encodingDesc>
+         <styleDefDecl scheme="css"/>
+         <tagsDecl>
+            <rendition xml:id="b" scheme="css">font-weight:bold;</rendition>
+            <rendition xml:id="su" scheme="css">vertical-align:super;font-size:.7em;</rendition>
+            <rendition xml:id="s" scheme="css">text-decoration:line-through;</rendition>
+            <rendition xml:id="u" scheme="css">text-decoration:underline;</rendition>
+            <rendition xml:id="ow" scheme="css">text-decoration:line-through;text-decoration-style:double;</rendition>
+            <rendition xml:id="r" scheme="css">display:block;text-align:right;</rendition>
+            <rendition xml:id="letterspaced" scheme="css">letter-spacing:0.15em;</rendition>
+            <rendition xml:id="i" scheme="css">font-style:italic;</rendition>
+         </tagsDecl>
+         <editorialDecl>
+            <hyphenation>
+               <p>
+            <!--to be added-->
+          </p>
+            </hyphenation>
+            <correction>
+               <p>
+            <!--to be added-->
+          </p>
+            </correction>
+            <normalization>
+               <p>
+            <!--to be added-->
+          </p>
+            </normalization>
+            <punctuation>
+               <p>
+            <!--to be added-->
+          </p>
+            </punctuation>
+            <stdVals>
+               <p>
+            <!--to be added-->
+          </p>
+            </stdVals>
+            <p>
+          <!--to be added-->
+        </p>
+         </editorialDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#tfruehwirth" when-iso="2026-10-13">TEIGarage output upconverted with upconvert.xsl</change>
+         <change who="#tfruehwirth" when-iso="2026-10-13">TEI header populated with generate_tei_templates.py</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface/>
+   </facsimile>
+   <text>
+      <body>
+         <div xml:id="doc-krp-0120.xml">
+            <head type="dokument">
+               <title type="num">120.<note type="footnote">Das Protokoll trägt den Vermerk <hi rend="#i">Vertraulich!</hi></note>
+               </title>
+               <title type="desc">
+                  <pb facs="krp-0120_r-0001"/>
+                  <pb facs="krp-0120_r-0002"/>[Freitag] 1919-11-07</title>
+            </head>
+            <div type="dokumentkopf">
+               <div type="vorsitz">
+                  <head>Vorsitz:</head>
+                  <p>Renner</p>
+               </div>
+               <div type="anwesend">
+                  <head>Anwesend:</head>
+                  <p>Deutsch, Eisler, Eldersch, Fink, Glöckel, Hanusch, Loewenfeld-Russ, Mayr, Miklas, Paul, Ramek, Reisch, Resch, Stöckler, Waiss</p>
+               </div>
+               <div type="zugezogen">
+                  <head>Zugezogen:</head>
+                  <p>Reich</p>
+               </div>
+               <div type="schriftfuehrer">
+                  <head>Schriftführer:</head>
+                  <p>unbekannt</p>
+               </div>
+               <div type="dauer">
+                  <head>Dauer:</head>
+                  <p>16.00–20.00 Uhr</p>
+               </div>
+            </div>
+            <div type="komponenten">
+               <p>Reinschrift, Beilagen, streng vertraulicher Anhang, Konzept, stenographische Mitschrift, Entwurf der Tagesordnung, 14. Personalsitzung</p>
+            </div>
+            <div type="beilagen">
+               <head>Beilagen:</head>
+               <list>
+                  <item><ref target="#krp-0120_top03">Zu TOP 3</ref>: <ref target="#krp-0120_b01">Antrag des Staatssekretärs für Inneres und Unterricht auf Schaffung eines Unterrichtsamts unter der Leitung von Unterstaatssekretär Glöckel samt Dienstanweisung</ref></item>
+                  <item><ref target="#krp-0120_top03">Zu TOP 3</ref>: <ref target="#krp-0120_b02">Antrag des Staatssekretärs für Inneres und Unterricht auf Schaffung eines Kultusamts unter der Leitung von Unterstaatssekretär Miklas samt Dienstanweisung</ref></item>
+                  <item><ref target="#krp-0120_top05">Zu TOP 5</ref>: <ref target="#krp-0120_b03">Antrag des Staatsamtes für Finanzen auf Einsetzung einer zwischenamtlichen Kommission zur beschleunigten Beratung von gemeinsamen Besoldungsfragen der Angestellten von Staat, Land Niederösterreich und Gemeinde Wien</ref></item>
+                  <item><ref target="#krp-0120_top06">Zu TOP 6</ref>: <ref target="#krp-0120_b04">Gutachten des Staatsamtes für Finanzen zur Frage der Deckung der Auslagen für die „Österreichische Propagandastelle“</ref></item>
+                  <item><ref target="#krp-0120_top09">Zu TOP 9</ref>: <ref target="#krp-0120_b05">Dienstanweisung an alle Landesregierungen über die Wahrung der Koalitionsfreiheit</ref></item>
+                  <item><ref target="#krp-0120_top10">Zu TOP 10</ref>: <ref target="#krp-0120_b06">Bericht der Staatsregierung in Angelegenheit der schwebenden Streitfragen mit dem Lande Oberösterreich</ref></item>
+                  <item><ref target="#krp-0120_top11">Zu TOP 11</ref>: <ref target="#krp-0120_b07">Antrag des Staatsamts für Handel und Gewerbe, Industrie und Bauten über die Fortführung der Donauregulierungsarbeiten in Österreich unter der Enns</ref></item>
+                  <item><ref target="#krp-0120_top12">Zu TOP 12</ref>: <ref target="#krp-0120_b08">Antrag des Staatsamts für Handel und Gewerbe, Industrie und Bauten, die elektrische Fernleitungsanlage im Salzachtal zum begünstigten Bau zu erklären</ref></item>
+                  <item><ref target="#krp-0120_top13">Zu TOP 13:</ref> <ref target="#krp-0120_b09">Gesetzesentwurf des Staatsamtes für Finanzen samt Begründung über Kreditoperationen</ref></item>
+                  <item><ref target="#krp-0120_top14">Zu TOP 14</ref>: <ref target="#krp-0120_b10">Bemerkungen des Staatssekretärs für Finanzen zum Vorgang bei Einbringung der Regierungsvorlage des Polizeidienstgesetzes</ref></item>
+                  <item><ref target="#krp-0120_top15">Zu TOP 15</ref>: <ref target="#krp-0120_b11">Gesetzesbeschluss der Vorarlberger Landesversammlung über die Kostendeckung der Regulierung des Hohenemser Landgrabens</ref></item>
+                  <item><ref target="#krp-0120_top16">Zu TOP 16</ref>: <ref target="#krp-0120_b12">Vortrag über die Erhöhung der Remunerationen für die Erteilung des Unterrichts in Freifächern an staatlichen Mittelschulen</ref></item>
+               </list>
+            </div>
+            <div type="protokoll">
+               <pb facs="krp-0120_r-0003"/>
+               <div type="top" xml:id="krp-0120_top01">
+                  <head>
+                     <label>
+                        <num n="1">1.</num>
+                        <seg>Finanzierung des Ausbaues der Wasserkräfte Deutschösterreichs durch ein amerikanisches Konsortium.</seg>
+                     </label>
+                  </head>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> teilt mit, dass der bei der Gemeinde Wien im Kohlenreferate in Verwendung stehende amerikanische Oberst Jones sich erbötig gemacht habe, die Vermittlung zu Verhandlungen mit einer ihm nahestehenden amerikanischen Bankengruppe wegen Finanzierung des Ausbaues der deutschösterreichischen Wasserkräfte zu übernehmen. Nach der von Oberst Jones vorgelegten Korrespondenz mit dieser Bankengruppe würde der amerikanische Konzern die gesamten Wasserkräfte Deutschösterreichs ausbauen und uns innerhalb der ersten Periode, während welcher die Kosten der Anlage zu amortisieren wären, 25 % und während einer zweiten, 40 Jahre währenden Periode 50 % des Reinerträgnisses zukommen lassen. Nach Ablauf dieser Zeit würden die Werke an Deutschösterreich heimfallen. Wiewohl die Verhandlungsbasis keine allzu günstige sei, glaube Redner dennoch, da nur ganz unverbindliche Vorverhandlungen in Aussicht genommen seien, beantragen zu sollen, dass Oberst Jones zur Einleitung der Vermittlungsaktion ermächtigt werde.</p>
+                  <p><pb facs="krp-0120_r-0004"/>Nach einer kurzen Debatte, an welcher sich die Staatssekretäre Dr. <hi rend="#letterspaced">Loewenfeld-Russ</hi> und Dr. <hi rend="#letterspaced">Reisch</hi> beteiligten, beschließt der Kabinettsrat im Sinne des gestellten Antrages.</p>
+               </div>
+               <div type="top" xml:id="krp-0120_top02">
+                  <head>
+                     <label>
+                        <num n="2">2.</num>
+                        <seg>Abänderung der Statuten der Allgemeinen österreichischen Bodencreditanstalt und der Österreichischen Länderbank.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Eldersch</hi> gibt dem Kabinettsrat bekannt, dass die Allgemeine österreichischen Bodencreditanstalt und die Österreichische Länderbank um die Genehmigung einer Änderung ihrer Statuten in der Richtung eingeschritten seien, dass das statutengemäß dem Kaiser zugestandene Recht der Ernennung der Gouverneure der beiden Banken sowie das Recht des Finanzministers zur Bestätigung der Direktoren der [Allgemeinen österreichischen] Bodencreditanstalt in Wegfall zu kommen hätte.</p>
+                  <p>Da diese Statutenänderung dem Wunsche der beiden Institute entspringe, ihre Verfassung mit der modernen Entwicklung des Bankwesens in Einklang zu bringen und es sich um die Beseitigung von Beschränkungen handle, die den übrigen Großbanken nicht auferlegt sind, beabsichtige der sprechende Staatssekretär, diese Statutenänderung zu genehmigen.</p>
+                  <p><pb facs="krp-0120_r-0005"/>Der <hi rend="#letterspaced">Vorsitzende</hi> führt dazu aus, dass zur Genehmigung der Statutenänderung an sich das Staatsamt für Inneres und Unterricht im eigenen Wirkungskreise berufen wäre. Es werfe sich jedoch hiebei die Frage auf, ob nicht das nach den bisherigen Statuten dem Kaiser zugestandene Recht der Ernennung der Gouverneure der beiden Banken nunmehr von der jetzigen Staatsgewalt in Anspruch genommen werden sollte. Um in dieser Hinsicht Klarheit zu gewinnen, werde die Angelegenheit dem Kabinettsrat vorgelegt.</p>
+                  <p>Nach Anschauung des Redners empfehle es sich, die staatliche Mitwirkung bei Berufung von Bankfunktionären fallen zu lassen und der [Allgemeine österreichischen] Bodencreditanstalt wie der Länderbank jene Freiheit in der Besetzung der leitenden Posten zurückzugeben, welche die übrigen fünf Großbanken seit jeher besitzen. Der Staat habe genügend andere Mittel in der Hand, sich den gewünschten Einfluss auf die Art der Geschäftsführung bei Banken zu sichern; wenn hiezu die Erweiterung der Machtbefugnisse der Regierungskommissäre nicht ausreiche, könnte im Bedarfsfalle auch die Ent<pb facs="krp-0120_r-0006"/>sendung von Staatsbeauftragten in einzelne Bankverwaltungen im Gesetzeswege ins Auge gefasst werden.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Reisch</hi> vertritt gleichfalls die Auffassung, dass staatliche Ernennungs- oder Bestätigungsrechte bei Banken den heutigen Zeitverhältnissen nicht mehr angemessen seien und daher aufgegeben werden sollten.</p>
+                  <p>Unterstaatssekretär <hi rend="#letterspaced">Miklas</hi> schließt sich dem Vorredner an, bringt jedoch in Anregung, das Staatsamt für Finanzen möge dem Kabinettsrate Richtlinien dafür vorlegen, auf welche Weise, unbeschadet der Freigabe der Bestellung der Bankleitungen, die Förderung der staatlichen und nationalen Interessen seitens der Banken sichergestellt werden könnte.</p>
+                  <p>In Übereinstimmung mit dem gestellten Antrage beschließt der Kabinettsrat, für die Staatsgewalt das Recht zur Ernennung der Gouverneure der Allgemeinen österreichischen Bodencreditanstalt und der Österreichischen Länderbank sowie zur Bestätigung der Direktoren der [Allgemeine österreichischen] Bodencreditanstalt nicht in Anspruch zu nehmen und ermächtigt den Staatssekretär für Inneres und Unterricht, den geän<pb facs="krp-0120_r-0007"/>derten Statuten der beiden genannten Banken ohne Vorbehalt derartiger Befugnisse für den Staat die Genehmigung zu erteilen.</p>
+               </div>
+               <div type="top" xml:id="krp-0120_top03">
+                  <head>
+                     <label>
+                        <num n="3">3.</num>
+                        <seg>Dienstesanweisung für die Unterstaatssekretäre im Staatsamte für Inneres und Unterricht.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Eldersch</hi> bringt dem Kabinettsrat zur Kenntnis, dass er die Stellung der beiden Unterstaatssekretäre im Staatsamt für Inneres und Unterricht im Sinne des Kabinettsratsbeschlusses vom 31. Oktober l. J. durch Dienstesanweisung in folgender Art zu regeln gedenke:</p>
+                  <p>Die mit den Agenden des Unterrichtes, der Wissenschaften, der Volksbildung und der Kunst betrauten Geschäftsgruppen im Rahmen des Staatsamtes für Inneres und Unterricht werden zu einem selbständigen Unterrichtsamte, die Geschäftsgruppen für die Agenden des Kultus zu einem eigenen Kultusamte zusammengefasst. Das erstere führt die Bezeichnung „Staatsamt für Inneres und Unterricht, Unterrichtsamt“ und wird der Leitung des Unterstaatssekretärs Otto Glöckel unterstellt, das letztere führt die Bezeichnung „Staatsamt für Inneres und Unterricht, Kultusamt“ und wird der <pb facs="krp-0120_r-0008"/>Leitung des Unterstaatssekretärs Wilhelm Miklas unterstellt. Beide Unterstaatssekretäre sind dem Staatssekretär für Inneres und Unterricht dienstlich unmittelbar untergeordnet und führen das Amt als dessen Bevollmächtigte. Der Umfang ihrer Vertretungsbefugnis wird dahin bestimmt, dass jedem der beiden Leiter grundsätzlich alle Angelegenheiten seines Amtes zur selbständigen Besorgung übertragen werden, er jedoch in Angelegenheiten von besonderer politischer oder prinzipieller Bedeutung die Genehmigung des Staatssekretärs einzuholen hat.</p>
+                  <p>Der Leiter des Unterrichtsamtes erhält das Recht, in Vertretung des Staatssekretärs für Inneres und Unterricht alle Verfügungen über die Beamten und Angestellten im Bereiche des Unterrichtsamtes innerhalb des dem Staatssekretär zustehenden Wirkungskreises in vollem Umfange selbständig zu treffen und zu fertigen. Die gleiche Befugnis wird dem Leiter des Kultusamtes hinsichtlich der dort verwendeten Beamten und Angestellten übertragen. Hiebei bemerkt der sprechende Staatssekretär, dass das Personal des Unterrichtsamtes und des Kultusamtes einen gemeinsamen <pb facs="krp-0120_r-0009"/>Status bilde, daher die Zuweisung und Behandlung der Angestellten innerhalb der beiden Gruppen den Gegenstand des internen Einvernehmens der beiden Unterstaatssekretäre zu bilden haben werde.</p>
+                  <p>Die Angestellten des Unterrichts- bzw. Kultusamtes sowie die ihnen nachgeordneten Ämter und Anstalten samt ihrem Personal sind zunächst an den Leiter des Unterrichts- bzw. Kultusamtes gewiesen.</p>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> macht aufmerksam, dass nach einer im Rahmen des Staatsamtes für Äußeres getroffenen Verfügung Unterstaatssekretär Miklas ermächtigt ist, in Kultussachen, einen direkten Verkehr mit der Nuntiatur zu pflegen; er empfiehlt, diese Ermächtigung in die Dienstesanweisung für den Leiter des Kultusamtes aufzunehmen.</p>
+                  <p>Unterstaatssekretär <hi rend="#letterspaced">Miklas</hi> ersucht noch um Klarstellung der Behandlung jener Fälle, welche sowohl das Unterrichts- wie das Kultusamt berühren, z. B. das Gebiet der kirchlichen Kunst oder die Personalfragen der theologischen Fakultäten.</p>
+                  <p><pb facs="krp-0120_r-0010"/>Vizekanzler <hi rend="#letterspaced">Fink</hi> möchte auch diese Fälle in der Dienstesanweisung geregelt sehen und schlägt vor, darin noch die Bestimmung aufzunehmen, dass in den beide Abteilungen berührenden Angelegenheiten die Leiter im gegenseitigen Einvernehmen vorzugehen und wenn keine Einigung zustande kommen sollte, die Entscheidung des Staatssekretärs für Inneres und Unterricht einzuholen haben.</p>
+                  <p>Der Kabinettsrat nimmt die Hinausgabe der Dienstesanweisungen durch den Staatssekretär für Inneres und Unterricht mit den vorgeschlagenen Ergänzungen zur Kenntnis.</p>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> regt bei dieser Gelegenheit an, dass auch die übrigen Staatssekretäre mit den Unterstaatssekretären ihrer Ressorts Vereinbarungen über die Regelung ihrer Stellung im Rahmen des Kabinettsratsbeschlusses vom 31. Oktober l. J. treffen und in eigenen Dienstesanweisungen niederlegen.</p>
+               </div>
+               <div type="top" xml:id="krp-0120_top04">
+                  <head>
+                     <label>
+                        <num n="4">4.</num>
+                        <seg>Inanspruchnahme von Aktien der [Oesterreichisch-]Alpine Montangesellschaft durch den Staat.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Reisch</hi> berichtet, dass die Verhandlungen mit der [Oesterreichisch-]Alpine Montangesellschaft über <pb facs="krp-0120_r-0011"/>die Inanspruchnahme der von der Gesellschaft neu auszugebenden 50.000 Aktien im Sinne des § 37 des Gesetzes über gemeinwirtschaftliche Unternehmungen für den Staat zur Vereinbarung eines Übernahmspreises von 1.100 K samt Stückzinsen seit 1. Jänner 1919 pro Aktie, gegenüber einem börsenmäßigen Kursstande von 1.700 K, geführt haben. Über die Durchführung der Aktion sei mit Zustimmung des Staatskanzlers und der beteiligten Ressorts ein Kommuniqué ausgegeben worden, worin die Gründe dargelegt wurden, weshalb sich die Regierung zur Ausübung des Anforderungsrechtes veranlasst gesehen habe.</p>
+                  <p>Der Kabinettsrat nimmt diesen Bericht zur Kenntnis.</p>
+               </div>
+               <div type="top" xml:id="krp-0120_top05">
+                  <head>
+                     <label>
+                        <num n="5">5.</num>
+                        <seg>Einsetzung einer zwischenamtlichen Kommission zur beschleunigten Beratung von gemeinsamen Besoldungsfragen der Angestellten von Staat, Land Niederösterreich und Gemeinde Wien.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. Reisch stellt im Sinne einer zwischen Vertretern des Staates, des Landes Niederösterreich und der Gemeinde Wien getroffenen Vereinbarung den Antrag, dass die genannten drei Faktoren eine zwischenamtliche Kommission zur beschleunigten Beratung von gemeinsamen Besoldungsfragen ihrer Angestellten errichten mögen.</p>
+                  <p>In den Wirkungskreis der Kom<pb facs="krp-0120_r-0012"/>mission solle zunächst die Beratung über die einheitliche Durchführung jener Maßnahmen, die durch die damaligen und eventuellen künftigen Teuerungsverhältnisse begründet werden, insbesondere die Einführung eines für alle öffentlichen Angestellten nach einheitlichen Grundsätzen zu ermittelnden gleitenden Additionalzuschlages zu den jetzigen Bezügen fallen. Die Tätigkeit der Kommission hätte sich in erster Linie auf die im öffentlich-rechtlichen Dienstverhältnisse stehenden und die ihnen gleichgehaltenen Angestellten, auf die in Kollektivverträgen stehenden Angestellten aber nur insoferne, als die Kommission auch hinsichtlich dieser auf eine gleichmäßige Behandlung mit den anderen Kategorien zu achten hat, zu erstrecken.</p>
+                  <p>In diese Kommission wären vom Staate (Staatsamt für Finanzen) vier, vom Land Niederösterreich und der Gemeinde Wien je drei Vertreter zu entsenden. Den Vorsitz hätte ein Vertreter des Staates zu führen. Die Kommissionsmitglieder seien berechtigt, Experten zu den Sitzungen beizuziehen.</p>
+                  <p>Die Kommission würde keine die vertretenen Behörden bindenden Beschlüsse fassen, sondern habe ledig<pb facs="krp-0120_r-0013"/>lich im Wege der betreffenden Vertreter einheitliche Anträge an diese Behörden zu stellen. Sie hätte ihre Beratungen auf eigene Initiative oder über Einladung einer der drei vertretenen Behörden aufzunehmen; diese seien verpflichtet, vor Durchführung von Maßnahmen auf dem obbezeichneten Gebiete ein Gutachten der Kommission einzuholen.</p>
+                  <p>Die Kommission hätte auch mit der durch die Industriekonferenz bestellten Ernährungs- und Lohnkommission das ständige Einvernehmen zu pflegen.</p>
+                  <p>In der sich hierüber entspinnenden Debatte, an welcher sich außer dem Vorsitzenden noch die Staatssekretäre <hi rend="#letterspaced">Paul</hi>, <hi rend="#letterspaced">Hanusch</hi>, Dr. <hi rend="#letterspaced">Reisch</hi>, <hi rend="#letterspaced">Eldersch</hi> und Dr. <hi rend="#letterspaced">Deutsch</hi> beteiligten, tritt die einmütige Auffassung zutage, dass sich die in Aussicht genommene Kommission lediglich mit der Festlegung der Grundsätze für die künftige Behandlung der Besoldungsfragen zu befassen haben werde. Sobald innerhalb dieser Kommission eine Einigung erzielt sei, werde auch mit einer von den Angestelltenorganisationen beschickten Kommission die Verständi<pb facs="krp-0120_r-0014"/>gung über diese Grundsätze zu suchen sein. Die Detailverhandlungen über konkrete Lohnfragen bleiben den einzelnen Ressorts im Rahmen der festgestellten Grundsätze überlassen.</p>
+                  <p>Der Kabinettsrat nimmt die Einsetzung dieser Kommission genehmigend zur Kenntnis und pflichtet der in Aussicht genommenen Vorgangsweise für die Führung der Verhandlungen bei.</p>
+               </div>
+               <div type="top" xml:id="krp-0120_top06">
+                  <head>
+                     <label>
+                        <num n="6">6.</num>
+                        <seg>Deckung der Auslagen für die „Oesterreichische Propagandastelle".</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Reisch</hi> teilt mit, dass der vom Ministerium Seidler mit der Leitung der „Österreichischen Propagandastelle" betraute Leopold Chlumecky den Rückersatz der ihm durch die vorbereitende Tätigkeit in der Schweiz erwachsenen Auslagen im Betrage von 265.389 K 30 h und 23.000 Franken begehrt habe. In dem Entschädigungsbetrage sei auch die Ablösung der Verpflichtungen aus einem Dienstvertrage mit dem gegen einen Jahresbezug von 24.000 K auf fünf Jahre unkündbar zum Generalsekretär der Propagandastelle bestellten Direktor Hans Prosl inbegriffen. Die Rechtslage sei nach dem Gutachten der Finanzprokuratur <pb facs="krp-0120_r-0015"/>eine derartige, dass Chlumecky im Falle der Beschreitung des Rechtsweges Aussicht auf Durchsetzung seiner Ansprüche hätte. Im Zuge von Vergleichsverhandlungen habe sich nun der Genannte bereit erklärt, seine Forderung auf 80.000 K zu ermäßigen, wenn gewisse, von ihm näher bezeichnete, beim Bankverein gesperrte Wertgegenstände gegen Erlag einer 50 % Kaution freigegeben würden. Gegen diese Freigabe würde nach Erlag der Kaution kein Bedenken obwalten. Ebenso habe Prosl seine Forderung auf 50.000 K ermäßigt, jedoch verlangt, dass ihm die von diesem Betrage entfallenden Steuern nachgesehen werden.</p>
+                  <p>Da dieses Ergebnis der Vergleichsverhandlungen als durchaus befriedigend erachtet werden könne und es sich um Verpflichtungen handle, für welche gemäß dem Friedensvertrage nunmehr der österreichische Staat aufzukommen habe, glaube der sprechende Staatssekretär die Befriedigung der geminderten Ansprüche unter der Voraussetzung beantragen zu sollen, dass Chlumecky und Prosl auf jeden wie immer gearteten weiteren Anspruch rechtsförmlich verzichten.</p>
+                  <p><pb facs="krp-0120_r-0016"/>Der Kabinettsrat genehmigt den gestellten Antrag.</p>
+               </div>
+               <div type="top" xml:id="krp-0120_top07">
+                  <head>
+                     <label>
+                        <num n="7">7.</num>
+                        <seg>Beitritt der Staatsregierung zu mehreren Gesetzesbeschlüssen der Nationalversammlung.</seg>
+                     </label>
+                  </head>
+                  <p>Über Vorschlag des <hi rend="#letterspaced">Vorsitzenden</hi> erhebt der Kabinettsrat gegen die von der Nationalversammlung beschlossenen Gesetze</p>
+                  <list>
+                     <item n="1"><label>1.)</label> über die Einstellung von Untersuchungen, die Nachsicht von Strafen und die Tilgung von Verurteilungen aus Anlass der Beendigung des Weltkrieges (Friedensamnestie);</item>
+                     <item n="2"><label>2.)</label> über die Gewährung von Teuerungszulagen für die Zeit vom 1. Juli 1919 bis zum 31. Dezember 1919 an die aktiven und pensionierten Lehrpersonen der öffentlichen Volks- und Bürgerschulen, sowie an die Witwen und Waisen nach solchen Lehrpersonen;</item>
+                     <item n="3"><label>3.)</label> womit das Gesetz vom 3. Juli 1919, StGBl. Nr. 345, über die Regelung des Verkehres mit Getreide und Mahlprodukten abgeändert wird;</item>
+                     <item n="4"><label>4.)</label> betreffend Einreihung der aktiven Finanzwachunterbeamten in die Kategorie der Staatsbeamten;</item>
+                     <item n="5"><label>5.)</label> betreffend Gebührenbegünstigungen aus Anlass der Aufhebung und <pb facs="krp-0120_r-0017"/>Ablösung der Jagdrechte auf fremden Grund und Boden;</item>
+                     <item n="6"><label>6.)</label> über die Verwendbarkeit der von der Gemeinde Wien aufgrund des mit dem niederösterreichischen Landesgesetze vom 16. Juli 1919, LGBl. Nr. 280, bewilligten Anlehens auszugebenden Schatzscheine zur fruchtbringenden Anlegung von Stiftungs-, Pupillar- und ähnlichen Kapitalien;</item>
+                     <item n="7"><label>7.)</label> betreffend die Dienstverhältnisse der Mitglieder der Sicherheitswach- und Polizeiagentenkorps (Polizeidienstgesetz) und</item>
+                     <item n="8"><label>8.)</label> betreffend die Neuregelung des Dienstverhältnisses und der Dienstbezüge der Gendarmerie (Gendarmeriedienstgesetz)</item>
+                  </list>
+                  <p>keine Vorstellung.</p>
+                  <p>Die erwähnten Gesetze sind demgemäß nach Gegenzeichnung durch die zuständigen Staatssekretäre dem Präsidenten der Nationalversammlung zur Fertigung vorzulegen.</p>
+                  <p>Bezüglich des Gesetzes über die Friedensamnestie wird beschlossen, dieses Gesetz gleichzeitig mit der erforderlichen Vollzugsanweisung am 11. November d. J. zu verlautbaren.</p>
+                  <p><pb facs="krp-0120_r-0018"/></p>
+               </div>
+               <div type="top" xml:id="krp-0120_top08">
+                  <head>
+                     <label>
+                        <num n="8">8.</num>
+                        <seg>Zustimmung zu der dringlichkeitshalber bereits veranlassten Kundmachung von Gesetzesbeschlüssen der Nationalversammlung.</seg>
+                     </label>
+                  </head>
+                  <p>Der Vorsitzende teilt mit, dass er die Kundmachung der von der Nationalversammlung beschlossenen Gesetze über die Aufhebung der Steuerbegünstigung für Alkohol zur Herstellung von Heilmitteln und betreffend die Landesverweisung und die Übernahme des Vermögens des Hauses Habsburg-Lothringen im Staatsgesetzblatte dringlichkeitshalber ohne vorherige Lesung durch das Kabinett veranlasst habe. Da gegen diese Gesetzesbeschlüsse von der Staatsregierung keine Vorstellung zu erheben sein dürfte, erbitte er nunmehr die nachträgliche Genehmigung dieser seiner Verfügung. </p>
+                  <p>Der Kabinettsrat erteilt die erbetene Genehmigung.</p>
+               </div>
+               <div type="top" xml:id="krp-0120_top09">
+                  <head>
+                     <label>
+                        <num n="9">9.</num>
+                        <seg>Dienstesanweisung über die Wahrung der Koalitionsfreiheit.</seg>
+                     </label>
+                  </head>
+                  <p>Der Vorsitzende teilt mit, dass er die Absicht habe, in Ausführung der von ihm in der Sitzung der Nationalversammlung am 23. Oktober d. J. abgegebenen Regierungserklärung an alle Landesregierungen einen Erlass zu richten, in welchem nach Wiedergabe des <pb facs="krp-0120_r-0019"/>die staatsbürgerlichen Freiheitsrechte, namentlich das Koalitionsrecht betreffenden Passus der Regierungserklärung betont werden soll, dass diese Erklärung nur eine Ausführung zwingender Rechtseinrichtungen darstelle, wie sie im Staatsgrundgesetze über die allgemeinen Rechte der Staatsbürger vom 21. Dezember 1867, RGBl. Nr. 142, und in verschiedenen aufgrund dieses Staatsgrundgesetzes ergangenen Gesetzen, namentlich im Koalitionsgesetze vom 7. August 1870, RGBl. Nr. 48, niedergelegt seien. Weiters soll in dem Erlasse die Erwartung ausgesprochen werden, dass sich die Landesregierungen diese Grundsätze zu eigen machen und für ihre <hi rend="#u">genaueste</hi> Durchführung im Lande Sorge getragen werden, da doch der Schutz der verfassungsmäßigen Freiheitsrechte in die Obhut der Behörden gestellt sei.</p>
+                  <p>Endlich sollen die Landesregierungen ersucht werden, diese Grundsätze auch den unterstehenden Behörden und Ämtern sowie den Gemeinden, woselbst sie für die Gemeindebetriebe von besonderer Bedeutung sein werden, zur Kenntnis zu bringen und sie zu deren genauesten Einhaltung zu verpflichten.</p>
+                  <p>Gleichzeitig beabsichtige die Staatskanzlei diesen Erlass abschriftlich auch <pb facs="krp-0120_r-0020"/>allen Staatsämtern mit der Einladung zukommen zu lassen, ihn auch den ihnen unterstehenden Behörden und Ämtern zur genauesten Darnachachtung bekanntzugeben.</p>
+                  <p>Der Vorsitzende beantragt, der Kabinettsrat wolle zur Hinausgabe dieser Dienstesanweisungen die Ermächtigung erteilen.</p>
+                  <p>Der Kabinettsrat erteilt die erbetene Ermächtigung.</p>
+               </div>
+               <div type="top" xml:id="krp-0120_top10">
+                  <head>
+                     <label>
+                        <num n="10">10.</num>
+                        <seg>Gesetzesbeschluss des Oberösterreichischen Landtages über die Einführung des Transportscheinzwanges.</seg>
+                     </label>
+                  </head>
+                  <p>Der Vorsitzende gibt dem Kabinettsrate bekannt, dass die Anfechtung des oberösterreichischen Gesetzesbeschlusses über die Einführung des Transportscheinzwanges zu einem Dringlichkeitsantrag im Oberösterreichischen Landtage geführt habe, worin unter anderem der Staatsregierung vorgeworfen werde, dass sie auf eine friedliche Austragung des Verfassungsstreites kein Gewicht lege, und ihr zugleich ein offener Verfassungskonflikt angekündigt werde. Die Staatskanzlei habe daraufhin zur Anbahnung einer friedlichen Auseinandersetzung der Landesregierung in Linz gegenüber die Bereitwilligkeit der Staatsregie<pb facs="krp-0120_r-0021"/>rung zum Ausdrucke gebracht, die schwebende Verfassungsfrage im Wege mündlicher Verhandlungen zu bereinigen.</p>
+                  <p>In den unterdessen abgehaltenen zwischenstaatsamtlichen Besprechungen sei die übereinstimmende Meinung zum Ausdruck gekommen, dass von Oberösterreich die Außerkraftsetzung des soweit bekannt noch nicht kundgemachten Gesetzesbeschlusses über die <hi rend="#u">Einführung des Transportscheinzwanges</hi> durch einen entsprechenden Beschluss des Landtages und die Zurückziehung der erlassenen Bestimmungen über die Holzabgabe verlangt werden müsse.</p>
+                  <p>Zugeständnisse der Staatsregierung für diese Nachgiebigkeit des Landes Oberösterreich seien auf dem Gebiete der Ernährungs- wie überhaupt der Wirtschaftspolitik ausgeschlossen, es müssten im Gegenteil die eigenmächtig von den Ländern errichteten Verkehrsbeschränkungen und Abgaben bis Ende d. J. abgebaut werden.</p>
+                  <p>Das Maximum des in dieser Beziehung möglichen Entgegenkommens wäre, dass diese illegalen Verkehrsbeschränkungen und Verkehrsabgaben eben bis Ende 1919 toleriert würden und das Land durch eine staatsgesetzliche Rati<pb facs="krp-0120_r-0022"/>habierung und damit Konvalidierung der widerrechtlichen Einhebungen der in Rede stehenden Abgaben vor Rückerstattungsklagen der Interessenten bewahrt werden könnte; all dies aber eben nur unter der Voraussetzung der Außerkraftsetzung aller solcher verfassungswidriger Maßnahmen mit 1. Jänner 1920.</p>
+                  <p>Dagegen seien Zugeständnisse auf finanziellem Gebiete – in Form von Überweisungen – möglich. Was die Art und Höhe dieser Überweisungen betrifft, könne die auf der letzten Länderkonferenz dem Lande Oberösterreich bereits pro 1919 zugesagte dreifache Überweisung des bisherigen Betrages (18 Millionen, auf ein Jahr berechnet, also ein Plus von 12 Millionen) bei Aufhebung der Verkehrsbeschränkungen auch für 1920 gewährt werden.</p>
+                  <p>Zunächst wäre zu versuchen, auf dieser Plattform ein[en] Kompromiss zu schließen. Sollte dies nicht gelingen, so käme als weiterer Schritt in Betracht, auf den Abzug des Erträgnisses der widerrechtlichen Verkehrsabgaben vom Überweisungsbetrage pro 1919 zu verzichten.</p>
+                  <p>Schließlich müssten die vom Lande Oberösterreich ausgegebenen Kassenscheine am 31. Dezember eingezogen wer<pb facs="krp-0120_r-0023"/>den; äußerstenfalls könne in dieser Hinsicht eine Terminerstreckung gewährt werden.</p>
+                  <p>Sollte Oberösterreich sich damit nicht begnügen, so hätte es bei der Austragung der beim Verfassungsgerichtshof anhängigen Beschwerde zu verbleiben.</p>
+                  <p>Redner habe die Absicht, die Führung der Verhandlungen mit den Vertretern des Landes Oberösterreich einer von der Staatskanzlei sowie den Staatsämtern für Finanzen, Volksernährung, Verkehrswesen und Land- und Forstwirtschaft beschickten Kabinettskonferenz zu überweisen und erbitte die Erteilung einer Instruktion an diese Kabinettskonferenz im Sinne der vorgetragenen Ausführungen. Für den Fall, dass durch diese Verhandlungen die Außerkraftsetzung des beim Verfassungsgerichtshofe angefochtenen Gesetzesbeschlusses durch einen Beschluss des Oberösterreichischen Landtages sichergestellt würde, wolle der Kabinettsrat die Staatskanzlei zur Zurückziehung der Anfechtungsklage ermächtigen.</p>
+                  <p>Vizekanzler <hi rend="#letterspaced">Fink</hi> regt an, der Kabinettskonferenz auch den Staatssekretär Dr. Mayr beizuziehen.</p>
+                  <p>In der weiteren Debatte findet die Absicht, eine Ausgleichung des Kon<pb facs="krp-0120_r-0024"/>fliktes mit Oberösterreich zunächst im Verhandlungswege zu versuchen, allseitige Zustimmung. Sämtliche Redner sprachen sich jedoch dagegen aus, dass unter den Zugeständnissen auch die Möglichkeit eines Verzichtes auf den Abzug des Erträgnisses aus den widerrechtlichen Verkehrsabgaben vom Überweisungsbetrage des Jahres 1919 vorgesehen werde. Der Grundsatz, dass derartige widerrechtliche Einnahmen von den Überweisungen in Abschlag gebracht werden, müsse unter allen Umständen aufrecht erhalten bleiben, da sich sonst eine finanzielle Benachteiligung jener Länder ergeben würde, die auf dem Boden der Gesetze verblieben sind. Es dürfte lediglich eine Konvalidierung der bisher eingehobenen ungesetzlichen Abgaben bei gleichzeitiger Außerkraftsetzung der sie begründenden Vorschriften in Aussicht gestellt werden, um das Land gegen Ansprüche auf Rückerstattung eingezahlter Beträge zu schützen; die Eingänge selbst aber seien unbedingt durch Kürzung der Überweisungen um diesen Betrag für den Staat zu inkamerieren.</p>
+                  <p>Unterstaatssekretär <hi rend="#letterspaced">Miklas</hi> regt noch an, von den oberösterreichi<pb facs="krp-0120_r-0025"/>schen Vertretern die ausdrückliche Erklärung zu verlangen, dass sie die Unrechtmäßigkeit des vom Lande beschrittenen Weges anerkennen.</p>
+                  <p>Der Kabinettsrat stimmt der Aufnahme von Verhandlungen mit der Oberösterreichischen Landesregierung über den Gegenstand durch eine Kabinettskonferenz, der auch Staatssekretär Dr. Mayr anzugehören habe, zu und genehmigt die bei den zwischenstaatsamtlichen Besprechungen ausgestellten Richtlinien für die Verhandlungen mit der Abänderung, dass der Grundsatz, „Unrechtmäßig behobene Landeseinnahmen sind von der staatlichen Überweisungssumme abzuziehen", unter gar keinen Umständen aufgegeben werden dürfe. Für den Fall eines günstigen Ausganges der Verhandlungen mit Oberösterreich wird die Staatskanzlei zur Zurückziehung der Anfechtungsklage ermächtigt.</p>
+               </div>
+               <div type="top" xml:id="krp-0120_top11">
+                  <head>
+                     <label>
+                        <num n="11">11.</num>
+                        <seg>Fortführung der Donauregulierungsarbeiten in Niederösterreich.</seg>
+                     </label>
+                  </head>
+                  <p>Im Auftrage des abwesenden Staatssekretärs Ing. Zerdik erbittet Sektionschef Ing. <hi rend="#letterspaced">Reich</hi> die Ermächtigung des Kabinettsrates, den Entwurf eines Gesetzes, mit welchem die Donauregulierungskommission ermächtigt wird, die noch unverwendeten, aus den Gesetzen vom 4. Jänner 1899, RGBl. Nr. 5 <pb facs="krp-0120_r-0026"/>(LGBl. Nr. 2) und vom 27. Juli 1912, RGBl. Nr. 117 (LGBl. Nr. 134) herrührenden Kredite und Kreditreste ohne Rücksichtnahme auf jene Zwecke, für welche diese Kredite und Kreditreste nach den den beiden genannten Gesetzen beigegebenen Bauprogrammen bestimmt waren, zur Bestreitung ihrer weiteren baulichen Tätigkeit bis zum 31. Dezember 1921 heranzuziehen, in der Nationalversammlung einbringen zu dürfen.</p>
+                  <p>Der Kabinettsrat erteilt die erbetene Ermächtigung und stimmt weiters zu, dass die Einbringung einer gleichartigen Gesetzesvorlage im Niederösterreichischen Landtage veranlasst werde. </p>
+               </div>
+               <div type="top" xml:id="krp-0120_top12">
+                  <head>
+                     <label>
+                        <num n="12">12.</num>
+                        <seg>Elektrische Fernleitungsanlage im Salzachtale; begünstigter Bau.</seg>
+                     </label>
+                  </head>
+                  <p>Nach dem Antrage des Sektionschefs Ing. Reich beschließt der Kabinettsrat, die Ausführung einer vom Landesrate in Salzburg projektierten elektrischen Fernleitungsanlage, durch welche zur Versorgung der Gemeinden des Salzachtales und einiger Nebentäler mit elektrischer Energie für Licht- und Kraftzwecke der vom Elektrizitätswerk der Firma Stern &amp; Hafferl AG am Großarlerbach bei St. Johann im Pongau gelie<pb facs="krp-0120_r-0027"/>ferte Strom nach Leogang und Bischofshofen bzw. in das Salzachtal, Rauristal und Gasteinertal geleitet werden soll, als begünstigter Bau im Sinne der Verordnung vom 16. Oktober 1914, RGBl.Nr. 284, zu erklären.</p>
+               </div>
+               <div type="top" xml:id="krp-0120_top13">
+                  <head>
+                     <label>
+                        <num n="13">13.</num>
+                        <seg>Gesetzentwurf, betreffend Kreditoperationen.</seg>
+                     </label>
+                  </head>
+                  <p>Dr. <hi rend="#letterspaced">Reisch</hi> erbittet und erhält die Zustimmung des Kabinettsrates, den Entwurf eines Gesetzes, betreffend Kreditoperationen, in der Nationalversammlung einbringen zu dürfen.</p>
+               </div>
+               <div type="top" xml:id="krp-0120_top14">
+                  <head>
+                     <label>
+                        <num n="14">14.</num>
+                        <seg>Vorgang bei Einbringung der Regierungsvorlage des Polizeidienstgesetzes.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. Reisch weist darauf hin, dass dem Staatssekretär für Inneres und Unterricht mit Kabinettsratsbeschluss vom 20. September d. J. die prinzipielle Ermächtigung zur Einbringung des Entwurfes eines Polizeidienst- und Gendarmeriedienstgesetzes mit der Maßgabe erteilt worden sei, dass über Einzelheiten dieser Gesetzesvorlage vorher noch das Einvernehmen mit dem Staatsamte für Finanzen zu pflegen sein werde. Die Besprechungen zwischen den beteiligten Staatsämtern hätten jedoch bezüglich des Polizeidienstgesetzes in <pb facs="krp-0120_r-0028"/>gewissen Belangen zu einer Übereinstimmung nicht geführt. Nichtsdestoweniger habe das Staatsamt für Inneres und Unterricht den Gesetzentwurf eingebracht und im Motivenbericht auf die nicht bereinigten Meinungsverschiedenheiten mit dem Staatsamte für Finanzen hingewiesen. Dieser Vorgang habe gelegentlich der Verhandlung über den Gesetzentwurf im Finanz- und Budgetausschuss den Gegenstand von Erörterungen gebildet, wobei die Erwartung ausgesprochen worden sei, dass derartige Vorkommnisse, welche den Ausschuss keine Klarheit über die Absichten der Regierung gewinnen lasse, vermieden werden.</p>
+                  <p>Der sprechende Staatssekretär stelle daher den Antrag, durch Kabinettsratsbeschluss festzusetzen, dass künftighin Vorlagen an die Nationalversammlung, an welchen mehrere Staatsämter beteiligt sind, erst nach Erzielung einer vollständigen Übereinstimmung zwischen den Ressorts eingebracht werden dürfen und in diesen Vorlagen selbstverständlich jede Polemik zwischen den Staatsämtern vermieden werden müsse.</p>
+                  <p>Nachdem Staatssekretär <hi rend="#letterspaced">Eldersch</hi> den Vorfall als ein peinliches Kanzlei<pb facs="krp-0120_r-0029"/>versehen aufgeklärt hatte, erhebt der Kabinettsrat den gestellten Antrag zum Beschluss.</p>
+               </div>
+               <div type="top" xml:id="krp-0120_top15">
+                  <head>
+                     <label>
+                        <num n="15">15.</num>
+                        <seg>Gesetzesbeschluss der Vorarlberger Landesversammlung, betreffend die Kostendeckung der Regulierung des Hohenemser Landgrabens in den Gemeindegebieten von Hohenems, Dornbirn und Lustenau.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Stöckler</hi> erbittet und erhält die Ermächtigung des Kabinettsrates, dass von der Erhebung einer Vorstellung gegen den von der Vorarlberger Landesversammlung am 30. Juni 1919 gefassten Gesetzesbeschluss, betreffend die Kostendeckung der Regulierung des Hohenemser Landgrabens in den Gemeindegebieten von Hohenems, Dornbirn und Lustenau, abgesehen und die Landesregierung hievon mit dem Bemerken verständigt werde, dass gegen die sofortige Kundmachung dieses Gesetzes kein Anstand obwalte.</p>
+               </div>
+               <div type="top" xml:id="krp-0120_top16">
+                  <head>
+                     <label>
+                        <num n="16">16.</num>
+                        <seg>Erhöhung der Remunerationen für die Erteilung des Unterrichtes in Freifächern an staatlichen Mittelschulen.</seg>
+                     </label>
+                  </head>
+                  <p>Unterstaatssekretär <hi rend="#letterspaced">Glöckel</hi> verweist darauf, dass die Nebenlehrer für Stenografie, Gesang, fremde Sprachen und Schönschreiben an den staatlichen Mittelschulen eine zuletzt im Jahre 1871 bemessene Remuneration von 120 K für die Wochenstunde beziehen. Da diese Entlohnung mit den gegenwärtigen schwierigen Lebensverhältnissen <pb facs="krp-0120_r-0030"/>in keiner Weise in Einklänge stehe, hätten die Nebenlehrer die Forderung nach Erhöhung der Vergütung auf 400 K für die Wochenstunde gestellt. Der sprechende Unterstaatssekretär beabsichtige, ihnen eine Erhöhung auf 300 K zuzugestehen und erbitte sich hiefür die Ermächtigung des Kabinettsrates.</p>
+                  <p>Der Kabinettsrat erteilt die erbetene Ermächtigung.</p>
+                  <p/>
+               </div>
+            </div>
+            <div type="anhaenge">
+               <p><pb facs="krp-0120_a01-0001"/>Streng vertraulicher Anhang zum Kabinettsprotokoll Nr. 120 vom 7. November 1919.</p>
+               <div n="1">
+                  <head>Besetzung der Stelle des Gouverneurs- bzw. Vizegouverneurs der Oesterreichisch-ungarischen Bank.</head>
+                  <div type="a01_protokoll">
+                     <p>Staatssekretär Dr. <hi rend="#letterspaced">Reisch</hi> bringt vor, dass die in der allernächsten Zeit aufzunehmenden Verhandlungen mit der Oesterreichisch-ungarischen Bank über die Befriedigung der Kreditbedürfnisse des Staates wie auch die Vorbereitung der Liquidierung des Institutes die Wiederbesetzung <pb facs="krp-0120_a01-0002"/>der durch das Ableben den Vizegouverneurs Dr. Ferdinand Wimmer erledigten Stelle als dringlich erscheinen lassen.</p>
+                     <p>Die beste Qualifikation für diese Funktion besitze der kürzlich in den Ruhestand getretene Ministerialrat des Staatsamtes für Finanzen Dr. Gustav Thaa, der mit den Verhältnissen der Bank in allen Einzelheiten vertraut sei und dessen Ernennung zweifellos auch die Zustimmung der Nationalstaaten finden würde. Thaa habe jedoch unter Hinweis auf seinen ungünstigen Gesundheitszustand eine Berufung auf diesen Posten entschieden abgelehnt.</p>
+                     <p>Außer ihm käme der sachlichen Eignung nach nur noch der gewesene Minister Dr. Alexander Spitzmüller in Betracht, der seinerzeit landesfürstlicher Kommissär der Bank war und die Verhandlungen über den Bankausgleich mit Ungarn geführt habe. Redner müsse es unerörtert lassen, inwieweit etwa politische Bedenken gegen Spitzmüller vorwalten; von Seite der Tschechen sei jedenfalls mit einem Widerspruch gegen ihn wegen seiner Sprachenerlässe als Handelsminister zu rechnen. Bei Spitzmüller käme <pb facs="krp-0120_a01-0003"/>auch wohl nur die Bestellung als Gouverneur, nicht aber als Vizegouverneur in Frage.</p>
+                     <p>Unter allen Umständen müsse getrachtet werden, einen Österreicher an die Spitze der Bank zu stellen; daher sei es notwendig, durch eine möglichst rasche Lösung der Personenfrage etwaigen Wünschen Ungarns nach Übertragung der Funktion auf einen ungarischen Staatsangehörigen von vornherein entgegenzuwirken.</p>
+                     <p>Der Kabinettsrat beschließt an erster Stelle Dr. Thaa zur Bestellung als Vizegouverneur und an zweiter Stelle, vorbehaltlich der Stellungnahme des Koalitionskomitees, Dr. Spitzmüller zur Bestellung als Vizegouverneur, gegebenenfalls aber auch als Gouverneur, in Aussicht zu nehmen. Der Staatssekretär für Finanzen wird ersucht, sofort alle erforderlichen Schritte einzuleiten, und die Verhandlungen mit den Nationalstaaten anzubahnen.</p>
+                  </div>
+               </div>
+               <div n="2">
+                  <head>Erklärungen des Staatssekretärs. Ing. Zerdik und des Präsidenten der Sozialisierungskommission Dr. Ellenbogen auf der Industriekonferenz über die Frage der Sozialisierung.</head>
+                  <div type="a02_protokoll">
+                     <p>Der <hi rend="#letterspaced">Vorsitzende</hi> verweist darauf, dass im Zuge der Verhandlungen der Industriekonferenz Staatssekretär Ing. Zerdik und der Präsident <pb facs="krp-0120_a01-0004"/>der Sozialisierungskommission Dr. Ellenbogen über die Frage der Sozialisierung Erklärungen abgegeben haben, die miteinander im Widerspruche standen. Um in der Öffentlichkeit nicht die Meinung aufkommen zu lassen, als bestünden innerhalb der Staatsregierung Gegensätze in der Auffassung über grundlegende Fragen, halte er es für erforderlich, dass die Übereinstimmung der beiden Kabinettsmitglieder mit den im Koalitionsprogramme niedergelegten Richtlinien über die Sozialisierung nach außen hin zum Ausdruck gebracht werde.</p>
+                     <p>Nach einer kurzen Debatte, an welcher sich Vizekanzler <hi rend="#letterspaced">Fink</hi> und Staatssekretär Dr. <hi rend="#letterspaced">Deutsch</hi> beteiligten, beschließt der Kabinettsrat, den Staatssekretär Ing. Zerdik und den Präsidenten der Sozialisierungskommission Dr. Ellenbogen einzuladen, bei einer geeigneten Gelegenheit die öffentliche Erklärung abzugeben, dass beide Kabinettsmitglieder in der Frage der Sozialisierung auf dem Standpunkte des Koalitionsprogrammes stehen.</p>
+                     <p/>
+                  </div>
+               </div>
+            </div>
+            <div type="stenogramme">
+               <div n="1">
+                  <head>[KBR 120, 7. November 1919, Stenogramm]</head>
+                  <p><pb facs="krp-0120_s01-0001"/>Nr. 120, 7. /XI.</p>
+                  <p>[Zugezogen:] Sekt[ionschef] Reich.</p>
+                  <p>Renner: </p>
+                  <p>Der amerikanische Oberst Jones, der bei der Gemeinde Wien im Kohlenreferat in Verwendung steht, hat intime Beziehungen zu amerikanischen Finanzkreisen, </p>
+                  <p>insbesondere zu einer Bankengruppe, die ein Kreditinstitut für ausländische Kreditgewährung gegründet hat. Er weist eine Korrespondenz vor, auf-</p>
+                  <p>grund der er ermächtigt ist zu verhandeln über die Finanzierung der Wasserkräfte. Er bittet um Ermächtigung, in Verhandlung treten zu können mit einem Wiener Institut. </p>
+                  <p>Der amerikanische Konzern würde uns die gesamten Wasserkräfte Deutsch-Österreichs ausbauen, würde von den Erträgnissen in der ersten Periode 25% uns zukommen lassen. </p>
+                  <p>Während dieser 1. Periode wären die Kosten der Anlage zu amortisieren. Sodann würde Deutsch-Österreich über 50% des Reinertrages </p>
+                  <p>erhalten und nach 40 Jahren dieser zweiten Periode würden die Gewinne an Deutsch-Österreich heimfallen. Diese Vorverhandlungen sind zu ungünstig. </p>
+                  <p>Insbesondere wäre die Amortisationsperiode von 40 Jahren zu lange. Da [es sich] aber [um] ganz unverbindliche Verhandlungen handelt wäre es ohne Obligo, dass </p>
+                  <p>man ihm die Ermächtigung zu Verhandlungen mit der Finanzgruppe gibt.</p>
+                  <p>Loewenfeld: Bedenken, ob uns nicht die Reparationskommission dreinreden wird und ihre Zustimmung verlangen wird.</p>
+                  <p>Reisch: Es besteht ein gewisser Gegensatz zwischen den Auffassungen der amerikanischen und englischen Mitgliedern der Reparationskommission. </p>
+                  <p>Die Amerikaner haben die Neigung, uns finanziell zu helfen. Ich bin für die Erteilung der Ermächtigung.</p>
+                  <p>Die Ermächtigung ist erteilt.</p>
+                  <p>Eldersch: Bodenkreditanstalt und Länderbank. </p>
+                  <p>Bisher [erfolgte die] Ernennung der Präsidenten durch [den] Kaiser. </p>
+                  <p>Die Direktoren [der Bodenkreditanstalt wurden] vom Staatsamt für Finanzen bestätigt. </p>
+                  <p>Statutenänderung, wonach das geändert werden soll. Da die Rechte des Kaisers auf [den] Kabinettsrat übergehen, so wäre der Kabinettsrat </p>
+                  <p>zur Ernennung der Präsidenten berufen. Die Banken haben eine Reihe von Gegengründen angeführt. </p>
+                  <p>Nach der in Aussicht genommenen Statutenänderung würden diese Rechte wegfallen.</p>
+                  <p>Renner: Die Rechtslage ist folgende: </p>
+                  <p>Es besteht weder ein gesetzliches Recht noch ein irgendwie aufgrund des Gesetzes durch Verordnung des Staates festgelegtes Recht auf Einflussnahme </p>
+                  <p>des Staates auf die Besetzung. Nur durch das Statut begründet, daher können diese Rechte durch eine bloße Statutenänderung aufgehoben werden. </p>
+                  <p>Wer ist berufen zur Genehmigung der Statutenänderung? Das Staatsamt für Inneres. Da es aber ein Recht des Kaisers war und die Rechte des Kaisers </p>
+                  <p>auf [den] Kabinettsrat übergegangen [sind], so fragt es sich, ob der Kabinettsrat auf diese Rechte verzichtet und das Staatsamt für Inneres ermächtigt werden soll, </p>
+                  <p>die Statutenänderung zu genehmigen. Es empfiehlt sich die Lösung des Verhältnisses der Staatsgewalt zu diesen beiden Bankinstituten. </p>
+                  <p>Wir können nichts anderes tun, als den zwei von fünf Instituten jenes Recht zu geben, welches die fünf anderen Institute haben.</p>
+                  <p><pb facs="krp-0120_s01-0002"/>Die gewiss notwendige Staatsaufsicht muss in anderer Weise ausgeübt werden. Jetzt Regierungskommissär. Wenn uns dieser Einfluss nicht genügt, so können </p>
+                  <p>wir die Machtvollkommenheit des Kommissärs verstärken. Wir können auch durch ein Gesetz Staatsbeauftragte hineinsetzen und auch durch Gesetz verlangen, dass </p>
+                  <p>Vertreter des Staates in den Aufsichtsrat gelangen.</p>
+                  <p>Reisch: Ich muss gleichfalls sagen, dass diese Ernennungsrechte gänzlich deplatziert sind. </p>
+                  <p>[Ich] pflichte daher den Ausführungen des Staatskanzlers vollkommen bei.</p>
+                  <p>Miklas: Die ungleiche Behandlung der Banken bei der Ernennung der leitenden Persönlichkeiten kann nicht aufrechterhalten werden. </p>
+                  <p>Nichtsdestoweniger haben wir staatliche Interessen, die im Wege der Banken verfolgt werden müssen. Ich bitte, dass das Staatsamt für Finanzen uns </p>
+                  <p>Richtlinien bekannt gibt, wie die staatlichen und nationalen Interessen bei Aufrechterhaltung der Freiheit der Banken geregelt werden können.</p>
+                  <p>[Beschluss]: Der Kabinettsrat verzichtet auf die ihm in den bisherigen Statuten der Boden- und Länderbank eingeräumten Ernennungs- und Bestätigungsrechte </p>
+                  <p>und ermächtigt den Staatssekretär für Inneres den Gesellschaftsvertrag ohne diese Ernennungs- und Bestätigungsrechte zu genehmigen.</p>
+                  <p>Eldersch: Unterrichtsamt, Kulturamt.</p>
+                  <p>Renner: Aufgrund der Genehmigung des Kabinettsrates vom .... wird der Staatssekretär den Unterstaatssekretären eine spezielle Dienstanweisung ausfertigen. </p>
+                  <p>Ich möchte bitten, dass auch die anderen Staatssekretäre intern mittels Dienstanweisung intern die entsprechenden Abgrenzungen vornehmen.</p>
+                  <p>Miklas: -.</p>
+                  <p>Renner: [Als] besondere Verfügung wäre in der Dienstanweisung in [Bezug auf] Kultus[fragen] aufzunehmen, dass Miklas das Recht des direkten Verkehrs </p>
+                  <p>mit der Nuntiatur hat.</p>
+                  <p>Miklas: Es gibt gewisse Gebiete, wo Kultus und Unterricht gemeinsame Interessen haben - Kunst. </p>
+                  <p>Diese Fälle müssen im Einvernehmen gemacht werden. Auch Personalfragen der theologischen Fakultät.</p>
+                  <p>Renner: Es kommt in die Dienstanweisung, das einvernehmlich zu regeln; wenn nicht Einverständnis, entscheidet der Staatssekretär.</p>
+                  <p>Antrag genehmigt.</p>
+                  <p><pb facs="krp-0120_s01-0003"/>Reisch: [<hi rend="#i">Einschub:</hi>] Verhandlungen wegen Übernahme der [<hi rend="#i">Einschub Ende</hi>] 50.000 Alp[ine]-Aktien durch den Staat. </p>
+                  <p>Die Vertreter der Gesellschaft wollten ursprünglich dem Staat die Aktien zu [einem] anderen Preis geben wie den anderen Aktionären. </p>
+                  <p>Die Gesellschaft wollte 1.100 verlangen, der Staat wollte nur 1.040 geben. Daher vor 14 Tagen abgebrochen. </p>
+                  <p>In der Zwischenzeit [sind die] Aktien sehr gestiegen. Wir haben daher die Konzession gemacht 1.100. </p>
+                  <p>Bitte zur Kenntnis zu nehmen, dass wir aufgrund § 37 das Anforderungsrecht ausgeübt haben, jedoch nicht so sehr wegen der Sozialisierung, sondern </p>
+                  <p>wegen der Nationalisierung.</p>
+                  <p>Reisch: Zwischenstaatsamtliche Kommission zur Beratung der gemeinsamen Besoldungsfragen.</p>
+                  <p>Paul: Es wurde schon bei den Besprechungen - Nachdem zu der Industriekonferenz auch die Staatsbeamten-Organisationen </p>
+                  <p>eingeladen wurden und durch die En[unziation] Hamburgers die Zusammensetzung der Kommission in die Öffentlichkeit gelangt ist, hat sich </p>
+                  <p>unter den Staatsbediensteten eine gewisse Bewegung geltend gemacht, da sie dachten, dass es schon bei dieser Industrie[konferenz] zu einer </p>
+                  <p>Regelung ihrer Bezüge gelangen soll.</p>
+                  <p>Während bei den Bediensteten des Staatseisenbahndienstes nicht zu konstatieren war, scheint die Bewegung bei der Post einzusetzen. </p>
+                  <p>Die Postler haben erklärt, dass sie sich bereits mit den Eisenbahnern in Verbindung gesetzt haben und dass sie beschlossen haben, dass </p>
+                  <p>längstens am 15. XI. eine ausgiebige Verbesserung ihrer Lage eintreten muss. [<hi rend="#i">Einschub:</hi>] Ursprünglich [<hi rend="#i">Einschub Ende</hi>] 250 Kronen pro Familienerhalter und </p>
+                  <p>100 Kronen für Familienangehörige. Schließlich Durchschnitt 300 Kronen für 15. November. Sie werden morgen </p>
+                  <p>beim Staatskanzler erscheinen und dieses Verlangen vorbringen. Eventuell als Vorschuss.</p>
+                  <p>Weiters haben sie erklärt, dass sie gegen die Einsetzung dieser Kommission Stellung nehmen, soweit sie nicht paritätisch ist. </p>
+                  <p>Die Einsetzung der Kommission wird als eine Verzögerung empfunden.</p>
+                  <p>Renner: Durch die - Die En[unziation] über das Zusammentreten der 5. Kommission hatte die Folge, dass die Staatsbediensteten im Industriehaus erschienen und protestierten, </p>
+                  <p>dass ohne sie verhandelt wird. Ich habe sie beruhigt und ihnen gesagt, dass da eher kein Einwand zu machen ist, denn ebenso wie </p>
+                  <p>die Unternehmer zuerst unter sich beraten können auch Staat, Land und Gemeinde zuerst unter sich beraten bevor sie mit den Angestellten verhandeln. </p>
+                  <p>Die Angestellten von Staat, Land und Gemeinde sollen halt auch 10 Mitglieder bestellen, damit dann später mit ihnen verhandelt wird. </p>
+                  <p>Land ein Vertreter, Gemeinde Wien 3 Vertreter, alle staatlichen Angestellten zusammen sechs. Da die Eisenbahner allein 4 stellen müssten nach </p>
+                  <p>ihrem Kräfteverhältnis, so müsste man eventuell an 14-16 denken. Parität mit der Staat, Land und Gemeinde Kommission nicht notwendig.</p>
+                  <p>Ich möchte in Aussicht nehmen, dass die zwischenamtliche Stelle am Montag um 9h hier mit den Vertretern der Organisationen zusammen tritt und dass </p>
+                  <p><pb facs="krp-0120_s01-0004"/>diese Kommission die Grundsätze entwickelt, nach denen in Hinkunft verfahren [werden] soll.</p>
+                  <p>Der Staat stellt 4, die das Staatsamt für Finanzen beruft und sitzt vor.</p>
+                  <p>Paul: -.</p>
+                  <p>Hanusch: Es muss ein Kommuniqué hinausgehen, dass die Verhandlungen paritätisch vor sich gehen werden. </p>
+                  <p>Ich kann mir nicht vorstellen, dass das Staatsamt für Finanzen vier Vertreter stellt. </p>
+                  <p>Bei den Verhandlungen können nur die Staatssekretäre als Arbeitgeber auftreten. Beamte sind ganz ausgeschlossen bei den Verhandlungen mit den </p>
+                  <p>Beamten.</p>
+                  <p>Reisch: Ganz andere Geleise. Die zwischenamtliche Kommission ist als Vereinigung der drei Dienstgeber gedacht gewesen. </p>
+                  <p>Die konkreten Lohnfragen sollen dort nicht verhandelt werden. Dies muss den Verhandlungen mit den Organisationen vorbehalten bleiben.</p>
+                  <p>Renner: Die Angestellten wollen bei der Festsetzung der Grundsätze mitreden. Die anderen Verhandlungen müssen von den Ressorts geführt werden. </p>
+                  <p>Die Richtung und das Maß stellt das Komitee fest. Daher die Sitzung am Montag.</p>
+                  <p>Eldersch: Diese Kommission ist die Arbeitgeber-Kommission. Zuerst müssen sich die Arbeitgeber zusammensetzen und Grundsätze </p>
+                  <p>festlegen. Hat man sich intern darüber geeinigt, dann setzt man sich mit den Organisationen zusammen.</p>
+                  <p>Paul: In der Industriekonferenz wurde feierlich verkündet, dass morgen ein Komitee zusammentritt, welches </p>
+                  <p>ebenso wie das Lohnkomitee über die Forderungen entscheidet. Dieses Missverständnis muss gelöst werden.</p>
+                  <p>Renner: Montag Arbeitgeberkomitee ½10. </p>
+                  <p>Gemeinsame Sitzung mit den Angestelltenvertretern 10h.</p>
+                  <p>Paul: Woraus besteht die Vertretung der Angestellten?</p>
+                  <p>Renner: Ich habe die vorgeschlagene Liste.</p>
+                  <p>Deutsch: Als das publik wurde, da ist auch eine große Erregung unter den Offizieren und der Volkswehr entstanden.</p>
+                  <p>Renner: Montag Sitzung ½10h Staat, Land und Gemeinde.</p>
+                  <p>Antrag des Staatsamtes für Finanzen ist genehmigt.</p>
+                  <p><pb facs="krp-0120_s01-0005"/>Reisch: Propagandastelle.</p>
+                  <p>Glöckel: Als ich zu Beginn der neuen Ära im Staatsamt des Inneren zu tun hatte, lag ein Auftrag für Chl[umetzky] nicht vor. </p>
+                  <p>Chl[umetzky] hat auch nichts getan und ist nur herumgefahren in der Schweiz.</p>
+                  <p>Eldersch: -.</p>
+                  <p>Antrag genehmigt.</p>
+                  <p>[Renner]: Beitritt des Amnestiegesetzes. </p>
+                  <p>Sofort kundmachen und Staatsamt für Justiz anweisen und die Amnestierung am 12. XI. </p>
+                  <p>durchführen.</p>
+                  <p>Eisler: Es wäre zweckmäßig, die Kundmachung zugleich mit der Vollzugsanweisung zu verlautbaren. </p>
+                  <p>Das StGBl. müsste am 11. erscheinen [<hi rend="#i">Einschub:</hi>] und versandt werden, [<hi rend="#i">Einschub Ende</hi>] bis dahin wird auch die Vollzugsanweisung fertig sein.</p>
+                  <p>Keine Einwendung.</p>
+                  <p>2a) Beitritte.</p>
+                  <p>Keine Einwendung.</p>
+                  <p>2b)</p>
+                  <p>Nachträglich genehmigt.</p>
+                  <p><pb facs="krp-0120_s01-0006"/>2c) [Renner]: Koalitionsfreiheit.</p>
+                  <p>Genehmigt.</p>
+                  <p>2 d) [Renner]: Oberösterreich. </p>
+                  <p>Kabinettskonferenz: Staatskanzler, Staatsamt für Finanzen, Volksernährung, Verkehrswesen, Landwirtschaft.</p>
+                  <p>Fink: Es sollte auch Staatssekretär Mayr beigezogen werden.</p>
+                  <p>(Kein Einwand.)</p>
+                  <p>Loewenfeld: Was Transportscheinzwang, </p>
+                  <p>Höchst- und Richtpreise, </p>
+                  <p>Einhebung von Abgaben [anlangt] – </p>
+                  <p>[<hi rend="#i">Neben Summenklammer</hi>:] damit kann man kein Zugeständnis machen.</p>
+                  <p>Koalitionsprogramm: 1.) Zentralisierung des Ernährungsdienstes; </p>
+                  <p>2.) neue indirekte Landessteuern und Beschränkungen zwischen den Ländern; </p>
+                  <p>3.) Abbau der Zentralen setzt die Aufhebung der Verkehrsbeschränkungen [voraus]. </p>
+                  <p>[<hi rend="#i">Neben Summenklammer:</hi>] Das Koalitionsprogramm ist durch diese Gesetze schon durchbrochen. </p>
+                  <p>Ich könnte Zugeständnissen nicht beistimmen.</p>
+                  <p>In dem Bericht der Staatskanzlei wird gesagt, dass Zugeständnisse auf finanziellem Gebiet möglich sind. </p>
+                  <p>Ich müsste mich gegen den Verzicht auf Abzug des Erträgnisses der widerrechtlichen Verkehrsabgabe vom Überweisungs-</p>
+                  <p>betrag pro 1919 aussprechen.</p>
+                  <p>Das war im Erlass, den ich im Auftrag des Kabinettsrates [hinausgegeben habe], drinnen. Dieser Erlass trägt meine Unterschrift. </p>
+                  <p>Wenn wir hier nachgeben, ist die Sache verloren. Wir haben uns aufgerafft, die Beschwerde beim VGH </p>
+                  <p>einzubringen. Es müsste das Land nachgeben und nicht die Staatsregierung.</p>
+                  <p>Die Basis der Verhandlungen muss die Ablehnung des Entgegenkommens der Staatsregierung sein.</p>
+                  <p><pb facs="krp-0120_s01-0007"/>Eisler: Die anderen Länder müssten dieses Übereinkommen dazu benützen, das zu verlangen, was Oberösterreich gewährt wird. </p>
+                  <p>Wenn hier Oberösterreich eine nachträgliche Ratihabierung der widerrechtlich eingehobenen Abgaben erhält, würden natürlich die anderen Länder, </p>
+                  <p>die bisher aus Respekt vor dem Gesetz das unterlassen haben, es verlangen.</p>
+                  <p>Renner: Es hat sich bei diesen Abgaben nicht [darum] gehandelt, sie aufrecht zu halten, sondern darum, dass die bereits eingehobenen Abgaben nicht zurückgefordert werden. </p>
+                  <p>Was das Land eingenommen hat aus diesem Titel, das wird ihm abgezogen von den Überweisungen.</p>
+                  <p>Reisch: Wenn Oberösterreich dazu zu bringen ist, dass es diese Maßnahmen mit 1. Jänner außer Kraft setzt, so wäre das zu begrüßen. </p>
+                  <p>Das Land hätte ja nichts von den Abgaben, weil der Staat die entsprechenden Beträge von den Überweisungen abzieht. </p>
+                  <p>Gegen Pag. 3, Abs. 2 habe ich bereits schriftlich protestiert, das wäre unerträglich wegen des Präjudizes für die anderen Länder.</p>
+                  <p>Deutsch: Es handelt sich um eine Angelegenheit der breitesten Öffentlichkeit. Wenn Oberösterreich nicht auf </p>
+                  <p>Basis Reisch entgegenkommt, so soll es zur Klage kommen. </p>
+                  <p>Ich muss aber darauf auch dringen, dass das Koalitionsprogramm auch von den Christlichsozialen eingehalten wird am Land.</p>
+                  <p>Mayr: Der Abs. 2, Pag. 3 hätte nur für ein alleräußerstes Stadium der Verhandlungen gelten [sollen]. </p>
+                  <p>Das Koalitionsprogramm datiert noch von ganz kurzer Zeit. Das, was Oberösterreich getan hat, datiert von früher her. </p>
+                  <p>Wenn der Konflikt mit Oberösterreich öffentlich ausgetragen würde, hätte [es] sehr schwerwiegende Folgen. Es würde dazu führen, dass </p>
+                  <p>das Koalitionsprogramm in den anderen Ländern, die noch mehr Absonderungsbestrebungen haben, außer Acht gelassen wird. Man müsste daher </p>
+                  <p>doch trachten, wenn irgend möglich, ein Entgegenkommen zu beweisen, um die Sache aus der Welt zu schaffen.</p>
+                  <p>Stöckler: Ich bin nicht der Ansicht, dass diese Eventualität allenfalls als auch nur äußerstes Mittel in Anwendung gebracht werden soll. </p>
+                  <p>Wenn wir hier nachgeben, so lassen sie es sich nicht gefallen, dass der Abzug pro 1920 erfolgt. </p>
+                  <p>Was das Koalitionsprogramm betrifft, so ist der Appell an die Christlichsozialen nicht ganz am Platz. Denn diese </p>
+                  <p>Beschlüsse sind alle einmütig von allen Parteien gefasst.</p>
+                  <p>Der Abzug der Einnahmen ist das Äußerste, was man tun kann.</p>
+                  <p>Miklas: Ich bin ebenfalls der Meinung, dass Absatz 2 unmöglich ist. </p>
+                  <p>Das äußerste Entgegenkommen wäre noch das Convalidieren. Darüber hinaus muss man stark bleiben. </p>
+                  <p>In das Kompromiss müsste auch ein Passus aufgenommen werden, dass sie zugeben, dass sie Unrecht gehabt haben.</p>
+                  <p><pb facs="krp-0120_s01-0008"/>Fink: Wir müssen uns auf den Standpunkt Reisch stellen, dass alles, was die Länder illegal einheben, ihnen von den </p>
+                  <p>Überweisungen abgezogen wird. Das müssen wir schon im Interesse der anderen Länder machen. Das ist ja auch der Zwang für Oberösterreich, </p>
+                  <p>das Gesetz aufzuheben, weil sie ja, wenn sie es auf die Klage ankommen lassen, alles bisher Eingehobene verlieren.</p>
+                  <p>Renner: In dem vorliegenden Bericht der Staatskanzlei Pag. 3, Abs. 2 ist zu streichen. </p>
+                  <p>Instruktion an die Kabinettskonferenz, dass </p>
+                  <p>der Grundsatz "unrechtmäßig erhobene Einnahmen sind von der Überweisungssumme abzuziehen" nicht beeinträchtigt werden darf.</p>
+                  <p>Im Übrigen Bericht genehmigt.</p>
+                  <p>Reisch: Elektrizitätsgesetz.</p>
+                  <p>Stöckler: Neuer Zündstoff für die Länder, wenn das Gesetz vor der Verfassung behandelt wird.</p>
+                  <p>Renner: Wir müssen aber bauen und über die Kredite verfügen.</p>
+                  <p>Reich: Alle Länder sind einverstanden. Schwierigkeit nur, dass das Gesetz über die Sozialisierung der Elektrizitätswirtschaft den Ländern noch nicht </p>
+                  <p>bekannt [ist].</p>
+                  <p>Vertagt, möglichst [...] Tagesordnung </p>
+                  <p>der nächsten Sitzung.</p>
+                  <p>3b) S[ektions]ch[ef] Reich: Fortführung der Donauregulierungsarbeiten.</p>
+                  <p>Angenommen.</p>
+                  <p>3c) S[ektions]ch[ef] Reich: Fernleitungsanlage, beg[ünstigter] Bau.</p>
+                  <p>Angenommen.</p>
+                  <p><pb facs="krp-0120_s01-0009"/>4a)</p>
+                  <p>Reisch: Kreditoperationen. </p>
+                  <p>Die Kassenbestände sind gänzlich erschöpft. Daher sehr peinlich, dass erst am 18. die Nationalversammlung zusammentritt.</p>
+                  <p>Renner: Der Staatssekretär könnte ermächtigt werden, bei einstimmiger Annahme des Kabinettsrates unter Produzierung des einstimmigen Beschlusses </p>
+                  <p>Kredite im kurzen Weg im Kontokorrent aufzunehmen. Vor 23. kann das Gesetz nicht im StGBl. </p>
+                  <p>erscheinen.</p>
+                  <p>Antrag genehmigt zur Einbringung.</p>
+                  <p>Reisch: Besetzung der Vizegouverneursstelle für die österreichisch-ungarische Bank. </p>
+                  <p>Es wäre ein Kandidat da in der Person des Ministerialrates Thaa. Würde von allen Nationalstaaten zugestimmt werden. </p>
+                  <p>Aber er weigert sich wegen seiner angegriffenen Gesundheit. </p>
+                  <p>Eventuell Spitzmüller, fachlich vollständig qualifiziert. Aber es müsste gelingen, die Schwierigkeiten bei den Tschechen </p>
+                  <p>zu überwinden.</p>
+                  <p>Reisch wird gebeten, mit Ungarn und Tschechoslowaken zu verhandeln wegen Spitzmüller.</p>
+                  <p>[Beschluss]: [...] Thaa für Vizegouverneur, [...] Spitzmüller aber auch als Gouverneur.</p>
+                  <p>4b) Bemerkungen zur Einbringung des Polizeidienstgesetzes.</p>
+                  <p>Reisch: &lt; &gt;.</p>
+                  <p>Eldersch: Wir haben uns hier im Kabinettsrat geeinigt. Die grundsätzlichen Bestimmungen sind nicht angefochten worden. </p>
+                  <p>Wilfling hat nur gesagt, dass kleine Inkonsequenzen noch zu bereinigen sind. Wilfling hat aber bei </p>
+                  <p>der Kabinettskonferenz schwerwiegende Änderungen verlangt, die Schober nicht angenommen hat, weil doch die Grundsätze </p>
+                  <p>vom Kabinettsrat angenommen wurden. Nun ist eine Note an das Staatsamt für Finanzen gerichtet worden. Diese Note ist durch einen </p>
+                  <p>Irrtum in die Begründung hineingekommen. Mein Referent hat sich bei den Referenten des Staatsamtes für Finanzen entschuldigt. </p>
+                  <p>Ich glaube, dass der Lapsus wohl als entschuldigt gelten kann.</p>
+                  <p><pb facs="krp-0120_s01-0010"/>Renner: Zerdik – Ellenbogen, gegensätzliche Äußerungen über die Sozialisierung bei der Industriekonferenz. </p>
+                  <p><hi rend="#s">Communiqué: </hi></p>
+                  <p>Anlässlich der Industriekonferenz sind Meinungsverschiedenheiten über die von der Staatsregierung gegenüber der Sozialisierungsfrage zu beachtende Haltung aufgetreten. </p>
+                  <p>Der Kabinettsrat hat die in den Koalitionsverhandlungen getroffenen Vereinbarungen neuerlich als für sämtliche Mitglieder der Regierung bindend erklärt.</p>
+                  <p>Deutsch: Es ist die Frage, ob überhaupt die Regierung etwas sagen soll und nicht eine Erklärung der beiden Herren [erfolgen soll]. </p>
+                  <p>Beide Herren sollen erklären, dass sie auf dem Boden des Koalitionsprogrammes stehen.</p>
+                  <p>Fink: Zerdik hat zu mir gesagt, es sei früher vereinbart worden, dass die Mitglieder der Regierung nicht reden bei dieser Konferenz. </p>
+                  <p>Dann habe Ellenbogen eingegriffen und gesprochen und er hat sich veranlasst gefühlt, auch zu sprechen. </p>
+                  <p>Gerade die [...] von der Koalition könnte Anstoß für Zerdik geben, weil er doch von der Koalition </p>
+                  <p>nicht vorgeschlagen ist.</p>
+                  <p>[Beschluss]: Der Kabinettsrat lädt die [Herren] Zerdik und Ellenbogen ein, bei schicklicher Gelegenheit die Erklärung </p>
+                  <p>abzugeben, dass beide auf dem Standpunkt des Koalitionsprogrammes in der Frage der Sozialisierung stehen.</p>
+                  <p>5. Stöckler: Hohenems.</p>
+                  <p>6. Glöckel: Nebenlehrer.</p>
+                  <p>Reisch: Erhöhung von 100% wäre ausreichend.</p>
+                  <p>Miklas: Wenn für Volks- und Bürgerschullehrer bis zu 280 Kronen gegangen wurde, so muss man bei Mittelschullehrern </p>
+                  <p>doch wohl auf 300 Kronen gehen.</p>
+                  <p>Mayr: Ich habe Landesgeschichte 4-5 Stunden in der Woche zu lesen und bekomme 300 Kronen.</p>
+                  <p>Glöckel: Bei 100% möchte ich überhaupt keine Erhöhung.</p>
+                  <p>Renner: Wenn die einen 280 Kronen bekommen, so muss man doch auf 300 Kronen [gehen].</p>
+                  <p>Reisch: Stimmt zu.</p>
+                  <p>Antrag genehmigt.</p>
+                  <p>½ 8h.</p>
+               </div>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

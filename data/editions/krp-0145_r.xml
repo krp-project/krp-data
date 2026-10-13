@@ -1,0 +1,948 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href='http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:acdh="https://vocabs.acdh.oeaw.ac.at/schema#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xml:lang="de">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="a" type="main" n="0145">Kabinettsprotokoll Nr. 145 vom 6. Februar 1920</title>
+            <title level="m" type="main" n="01">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <title level="m" type="sub" n="">Renner III (17. Oktober 1919 – 7. Juli 1920)</title>
+            <meeting>
+               <placeName key="https://d-nb.info/gnd/4066009-6">Wien</placeName>
+               <orgName key="https://d-nb.info/gnd/5162749-8">Kabinettsrat</orgName>
+               <date when-iso="1920-02-06"/>
+            </meeting>
+            <editor>
+               <persName key="https://d-nb.info/gnd/122481836"
+                         role="hasCreator"
+                         xml:id="hwohnout">
+                  <forename>Helmut</forename>
+                  <surname>Wohnout</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</affiliation>
+               <idno type="ORCID">0000-0002-3864-9839</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/120789825"
+                         role="hasCreator"
+                         xml:id="tolechowski">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0003-3291-6876</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/131679384"
+                         role="hasCreator"
+                         xml:id="rlein">
+                  <forename>Richard</forename>
+                  <surname>Lein</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0002-7502-0503</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="aholzer">
+                  <forename>Anna</forename>
+                  <surname>Holzer</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0005-3560-3500</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="dsoelkner">
+                  <forename>Dominik</forename>
+                  <surname>Sölkner</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-9895-7212</idno>
+            </editor>
+            <editor>
+               <persName role="hasContributor" xml:id="ischotzko">
+                  <forename>Ina</forename>
+                  <surname>Schotzko</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-5210-3713</idno>
+            </editor>
+            <funder n="1">
+               <orgName key="https://d-nb.info/gnd/2054142-9" role="hasFunder">Österreichischer Wissenschaftsfonds FWF</orgName>
+               <idno type="project">PAT1495024</idno>
+               <title type="project">Die Protokolle des österreichischen Kabinettsrates 1919–1920</title>
+            </funder>
+            <respStmt>
+               <resp>Projektverantwortung</resp>
+               <orgName key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Projektleitung</resp>
+               <persName key="https://d-nb.info/gnd/120789825" role="hasPrincipalInvestigator">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+                  <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+                  <idno type="ORCID">0000-0003-3291-6876</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Nationaler Forschungspartner</resp>
+               <orgName key="https://d-nb.info/gnd/1123037736" role="hasEnabler">Austrian Centre for Digital Humanities</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Digitalisierung der gedruckten Quellen</resp>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>TEI-Datenmodellierung</resp>
+               <persName role="hasContributor" xml:id="tfruehwirth">
+                  <forename>Timo</forename>
+                  <surname>Frühwirth</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-3997-5193</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technische Supervision</resp>
+               <persName key="https://d-nb.info/gnd/1043833846"
+                         role="hasContributor"
+                         xml:id="pandorfer">
+                  <forename>Peter</forename>
+                  <surname>Andorfer</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-9575-9372</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technisches Consulting und Vorbereitung der Druckausgabe</resp>
+               <persName key="https://d-nb.info/gnd/13281899X"
+                         role="hasContributor"
+                         xml:id="skurz">
+                  <forename>Stephan</forename>
+                  <surname>Kurz</surname>
+                  <affiliation key="https://d-nb.info/gnd/1202798799">Institut für die Erforschung der Habsburgermonarchie und des Balkanraumes</affiliation>
+                  <idno type="ORCID">0000-0003-2546-2570</idno>
+               </persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher key="https://d-nb.info/gnd/1001454-8">Österreichische Akademie der Wissenschaften</publisher>
+            <date when="2028"/>
+            <availability status="free">
+               <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">Lizenziert unter CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/deed.de)</licence>
+            </availability>
+            <idno type="ISBN_Print"/>
+            <idno type="ISBN_Part_epub"/>
+            <idno type="ISBN_Digital"/>
+            <idno type="DOI"/>
+            <idno type="DOI_zenodo"/>
+            <idno type="ebook_ID"/>
+         </publicationStmt>
+         <seriesStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="m" type="main">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <respStmt>
+               <resp>Bearbeitung und Herausgeberschaft</resp>
+               <orgName key="https://d-nb.info/gnd/2024703-5">Universität Wien</orgName>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+         </seriesStmt>
+         <notesStmt>
+            <note>Diese TEI-XML-Datei ist Grundlage für eine Druckausgabe der Edition.</note>
+            <relatedItem>
+               <biblStruct>
+                  <monogr>
+                     <imprint>
+                        <pubPlace key="https://d-nb.info/gnd/4066009-6">Wien</pubPlace>
+                        <publisher key="https://d-nb.info/gnd/2068748-5">Verlag der Österreichischen Akademie der Wissenschaften</publisher>
+                        <date when="2029"/>
+                     </imprint>
+                     <extent/>
+                  </monogr>
+                  <note>
+              <idno/>
+              <ptr/>
+            </note>
+                  <citedRange/>
+               </biblStruct>
+            </relatedItem>
+         </notesStmt>
+         <sourceDesc>
+            <bibl>Quellbestand: AT-OeStA/AdR MRang MR 1Rep KRP Kabinettsratsprotokolle, 1918-1920 (Teilbestand)<ref target="https://www.archivinformationssystem.at/detail.aspx?id=5465">https://www.archivinformationssystem.at/detail.aspx?id=5465</ref>
+            </bibl>
+            <msDesc>
+               <msIdentifier>
+                  <institution key="https://d-nb.info/gnd/37748-X" role="hasOwner">AT-OeStA Österreichisches Staatsarchiv (Archiv (ÖStA))</institution>
+                  <repository key="https://d-nb.info/gnd/1601181-8">AT-OeStA/AdR Archiv der Republik, 1918- (Abteilung)</repository>
+                  <collection>AT-OeStA/AdR MRang MR 1Rep Ministerrat 1. Republik, 1918 - 1938 (Bestand)</collection>
+                  <idno>AT-OeStA_AdR-MRang-MR-1.-Rep.-KRP-145</idno>
+               </msIdentifier>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <abstract>
+            <p>
+          <!--to be generated-->
+        </p>
+         </abstract>
+      </profileDesc>
+      <encodingDesc>
+         <styleDefDecl scheme="css"/>
+         <tagsDecl>
+            <rendition xml:id="b" scheme="css">font-weight:bold;</rendition>
+            <rendition xml:id="su" scheme="css">vertical-align:super;font-size:.7em;</rendition>
+            <rendition xml:id="s" scheme="css">text-decoration:line-through;</rendition>
+            <rendition xml:id="u" scheme="css">text-decoration:underline;</rendition>
+            <rendition xml:id="ow" scheme="css">text-decoration:line-through;text-decoration-style:double;</rendition>
+            <rendition xml:id="r" scheme="css">display:block;text-align:right;</rendition>
+            <rendition xml:id="letterspaced" scheme="css">letter-spacing:0.15em;</rendition>
+            <rendition xml:id="i" scheme="css">font-style:italic;</rendition>
+         </tagsDecl>
+         <editorialDecl>
+            <hyphenation>
+               <p>
+            <!--to be added-->
+          </p>
+            </hyphenation>
+            <correction>
+               <p>
+            <!--to be added-->
+          </p>
+            </correction>
+            <normalization>
+               <p>
+            <!--to be added-->
+          </p>
+            </normalization>
+            <punctuation>
+               <p>
+            <!--to be added-->
+          </p>
+            </punctuation>
+            <stdVals>
+               <p>
+            <!--to be added-->
+          </p>
+            </stdVals>
+            <p>
+          <!--to be added-->
+        </p>
+         </editorialDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#tfruehwirth" when-iso="2026-10-13">TEIGarage output upconverted with upconvert.xsl</change>
+         <change who="#tfruehwirth" when-iso="2026-10-13">TEI header populated with generate_tei_templates.py</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface/>
+   </facsimile>
+   <text>
+      <body>
+         <div xml:id="doc-krp-0145.xml">
+            <head type="dokument">
+               <title type="num">145.<note type="footnote">Das Protokoll trägt den Vermerk <hi rend="#i">Vertraulich!</hi></note>
+               </title>
+               <title type="desc">
+                  <pb facs="krp-0145_r-0001"/>[Freitag] 1920-02-06</title>
+            </head>
+            <div type="dokumentkopf">
+               <div type="vorsitz">
+                  <head>Vorsitz:</head>
+                  <p>Renner, teilweise Fink</p>
+               </div>
+               <div type="anwesend">
+                  <head>Anwesend:</head>
+                  <p>Deutsch, Eisler, Eldersch, Ellenbogen, Glöckel, Hanusch, Mayr, Miklas, Paul, Ramek, Resch, Stöckler, Tandler, Waiss, Zerdik</p>
+               </div>
+               <div type="zugezogen">
+                  <head>Zugezogen:</head>
+                  <p>Grimm, Redinger, Zedtwitz</p>
+               </div>
+               <div type="schriftfuehrer">
+                  <head>Schriftführer:</head>
+                  <p>Groß, unbekannt</p>
+               </div>
+               <div type="dauer">
+                  <head>Dauer:</head>
+                  <p>15.00–18.00 Uhr</p>
+               </div>
+            </div>
+            <div type="komponenten">
+               <p>Reinschrift, Beilagen, Konzept, stenographische Mitschrift, Entwurf der Tagesordnung, diverse Zusätze</p>
+            </div>
+            <div type="beilagen">
+               <head>Beilagen:</head>
+               <list>
+                  <item><ref target="#krp-0145_top04">Zu TOP 4</ref>: <ref target="#krp-0145_b01">Vortrag des Staatsamtes für Inneres und Unterricht zu Zl. 34/1920 über die Besetzung zweier Haller Fräuleinstiftspräbenden der erbländischen Abteilung</ref></item>
+                  <item><ref target="#krp-0145_top05">Zu TOP 5</ref>: <ref target="#krp-0145_b02">Antrag des Staatsamtes für Land- und Forstwirtschaft zu Zl. 1779/1920 auf Zustimmung zum Gesetzesbeschluss des Salzburger Landtages zur Behebung der Hochwasserschäden im Stubachtal</ref></item>
+                  <item><ref target="#krp-0145_top06">Zu TOP 6</ref>: <ref target="#krp-0145_b03">Antrag des Staatsamtes für Land- und Forstwirtschaft zu Zl. 2018/1920 auf Zustimmung zum Gesetzesbeschluss des Vorarlberger Landtages zu Regulierungen in den Gebieten der Gemeinden Hohenems, Altach, Götzis und Mäder</ref></item>
+                  <item><ref target="#krp-0145_top07">Zu TOP 7</ref>: <ref target="#krp-0145_b04">Antrag des Staatsamtes für Land- und Forstwirtschaft zu Zl. 1777/1920 auf Zustimmung zum Gesetzesbeschluss des Tiroler Landtages zur Ergänzung der Schutzbauten am Unterlauf des Lahnbaches</ref></item>
+                  <item><ref target="#krp-0145_top08">Zu TOP 8</ref>: <ref target="#krp-0145_b05">Gesetzesentwurf der Staatsregierung auf teilweise Änderung des Dienstverhältnisses der Hochassistenten</ref></item>
+               </list>
+            </div>
+            <div type="protokoll">
+               <pb facs="krp-0145_r-0002"/>
+               <div type="top" xml:id="krp-0145_top01">
+                  <head>
+                     <label>
+                        <num n="1">1.</num>
+                        <seg>Neubemessung der Rentenbezüge der Invaliden und Kriegerwitwen.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Hanusch</hi> verweist darauf, dass in der jüngsten Zeit seitens der politischen Parteien und einzelner Landesregierungen Wünsche <pb facs="krp-0145_r-0003"/>bezüglich der Neubemessung der Rentenbezüge der Invaliden und Kriegerwitwen laut geworden seien. Mit Rücksicht auf die weitreichenden Folgewirkungen werde die Regierung darüber keine Entscheidung treffen können, ohne vorher die Anschauung der Koalitionsparteien kennen gelernt zu haben.</p>
+                  <p>Redner bitte daher, zur Beratung des Gegenstandes für anfangs der kommenden Woche eine Sitzung des Koalitionskomitees einzuberufen und dieser die Staatssekretäre für soziale Verwaltung und für Finanzen beizuziehen.</p>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> gibt bekannt, dass die Angelegenheit bei der am Montag, den 9. d. M. um ½ 10 Uhr vormittags im Parlament zusammentretenden Sitzung des Koalitionskomitees besprochen werden solle und Staatssekretär Hanusch sowie anstelle des in Paris weilenden Staatssekretärs für Finanzen, Sektionschef Dr. Grimm dazu erscheinen mögen.</p>
+                  <p>Der Kabinettsrat nimmt diese Mitteilungen zur Kenntnis.</p>
+                  <p><pb facs="krp-0145_r-0004"/></p>
+               </div>
+               <div type="top" xml:id="krp-0145_top02">
+                  <head>
+                     <label>
+                        <num n="2">2.</num>
+                        <seg>Entwurf eines Gesetzes über die Regelung der Ruhe- (Versorgungs-) Genüsse der Zivilstaatsangestellten, die vor dem 1. Jänner 1920 in den Ruhestand versetzt wurden, und der Witwen und Waisen jener Zivilstaatsangestellten, die vor dem 1. Jänner 1920 gestorben oder in den Ruhestand versetzt worden sind, ferner über Teuerungsmaßnahmen für Pensionisten (Pensionistengesetz).</seg>
+                     </label>
+                  </head>
+                  <p>Der Vorsitzende erteilt Sektionschef Dr. <hi rend="#letterspaced">Grimm</hi> das Wort zur Erläuterung des dem Kabinettsrate vorliegenden Entwurfe des Pensionistengesetzes.</p>
+                  <p>Sektionschef Dr. Grimm berichtet zur Begründung der Vorlage, dass unter den Ruhebezügen sowohl der altösterreichischen, als auch bereits der neuösterreichischen Pensionisten je nach dem Zeitpunkte ihres Übertrittes in den Ruhestand große Verschiedenheiten bestehen, deren Ausgleichung eine immer wiederkehrende Forderung der Interessenten bilde. Der Gesetzentwurf sehe eine Berücksichtigung dieser Forderung in der Art vor, dass die Ruhegenüsse der altösterreichischen und der deutschösterreichischen Zivilstaatsbediensteten mit Ausnahme der aufgrund des Pensionsbegünstigungsgesetzes in den Ruhestand versetzten Personen in eine einzige Gruppe zusammengefasst und alle Pensionen nach geänderten Bemessungsgrundlagen neu ermittelt werden sollen, die sich als perzentuelle Quoten der Pensionsbemessungsgrundlage der neuen Besoldungsgesetze vom 18. Dezember 1919, StGBl. Nr. 570, 571 und 572, darstellen.</p>
+                  <p><pb facs="krp-0145_r-0005"/>Von den Ruhestandsparteien nach dem Pensionsbegünstigungsgesetz sollen die aufgrund des § 2 dieses Gesetzes in den Ruhestand versetzten Personen, insoferne die Bestimmungen des Pensionsbegünstigungsgesetzes nicht günstiger sind, den künftigen Neupensionisten gleichgestellt werden, die aufgrund des § 1 des Gesetzes in den Ruhestand getretenen Personen dagegen nur fakultativ eine Erhöhung der Ruhegenüsse erfahren können.</p>
+                  <p>Die Unterscheidung sei durch den Umstand veranlasst, dass die Pensionierungen nach § 2 des Gesetzes unter Zwang geschahen und abgesehen von der Unentbehrlichkeit für den Dienst ohne Rücksicht auf die Dienstfähigkeit alle jene betrafen, welche gewisse Altersgrenzen überschritten hatten. Die Bedachtnahme auf die Entbehrlichkeit vom Dienste habe in den einzelnen Ressorts zu großen Ungleichmäßigkeiten hinsichtlich des Zeitpunktes der Durchführung der Pensionierung geführt und bewirkt, dass trotz sonst gleicher Umstände die Bemessung der Ruhegenüsse, je nachdem sie vor dem 1. Jänner 1920 oder später erfolgte, bei einem Teil der Pensionisten nach dem Pensionsbegünstigungsgesetz, bei dem anderen aber bereits nach dem Besoldungsübergangsgesetze geschah. Dieser offenbaren Unbilligkeit helfe der <pb facs="krp-0145_r-0006"/>Gesetzentwurf durch die Gleichstellung aller unter § 2 des Pensionsbegünstigungsgesetzes fallenden Pensionsparteien ab. Eine ebensolche Behandlung generell auf den Pensionisten nach § 1 des erwähnten Gesetzes angedeihen zu lassen, liege kein stichhältiger Grund vor. Die Betreffenden seien nach ihrem freien Entschlusse in den dauernden Ruhestand getreten, um sich die namhaften Vorteile des Gesetzes zu sichern und teilweise auch um sich Privatanstellungen oder selbständigen Berufen zuzuwenden, welche ihnen vielfach ein höheres Einkommen brächten, als ihnen je vom Staate zugeflossen wäre. Hier könnte also nur eine individuelle Behandlung jedes einzelnen Falles Platz greifen und dazu sehe der § 4 Abs. 2 die Ermächtigung der Staatsämter vor, jenen Pensionisten, bei welchen die vorerwähnten Momente nicht zutreffen und bei denen sonst berücksichtigungswürdige Umstände vorliegen, die Ruhegenüsse bis auf das Ausmaß des Besoldungsübergangsgesetzes zu erhöhen.</p>
+                  <p>Neben den eigentlichen Ruhegenüssen sollen den Pensionsparteien entsprechend der herrschenden Teuerung noch abbaufähige Teuerungszulagen, die für alle Bediensteten gleich und nach Ortsklassen abgestuft etwas niedriger <pb facs="krp-0145_r-0007"/>sind als jene der aktiven Beamten nach dem Besoldungsübergangsgesetz, sowie die gleitende Zulage gewährt werden.</p>
+                  <p>Das Mehrerfordernis belaufe sich auf 174 Millionen K jährlich, und an gleitenden Zulagen, je nachdem deren Ausmaß mit 71 K oder 120 K bestimmt werde, auf 153 bzw. 200 Millionen K.</p>
+                  <p>Das Gesetz gelte nur für die Zivilstaatsbediensteten und die Lehrpersonen. Dem Wunsche des Staatsamtes für Heer[es]wesen nach Einbeziehung auch der Militärpersonen, stehe das Bedenken entgegen, dass in einzelnen Punkten eine Besserstellung der Militärpersonen im Vergleiche zu den Zivilstaatsbediensteten begehrt worden war, so bezüglich der Behandlung von Witwen, die ihren Ehegatten erst im Ruhestandsverhältnis geheiratet haben und der nichtangetrauten Lebensgefährtin, und darüber erst Verhandlung notwendig gewesen wären, deren voraussichtlich längere Dauer die Einbringung der Vorlage verzögert hätte. Die Ausdehnung des Gesetzes auf die Militärpersonen wäre also im Augenblick nur unter der Voraussetzung möglich, dass das Staatsamt für Heereswesen die Sonderwünsche einer eigenen Regelung vorbehält und das Gesetz mit den gleichen Bestimmungen wie sie für die <pb facs="krp-0145_r-0008"/>Zivilstaatsbediensteten in Aussicht genommen, sind, auch für die Militärpersonen hinnimmt. In diesem Falle könnte die Erweiterung des Geltungsbereiches des Gesetzes durch die Einschaltung eines entsprechenden Paragrafen bewerkstelligt werden.</p>
+                  <p>Abschließend erläutert Redner noch die Bestimmungen der §§ 1 und 17 der Vorlage, betreffend die altösterreichischen Pensionisten. Die Frage der Aufteilung der altösterreichischen Pensionslast sei bisher weder durch Vereinbarung mit den Nachfolgestaaten geregelt noch durch den Friedensvertrag, der darüber in Art. 216 nur eine negativ gefasste Bestimmung enthalte, geklärt werden. Österreich müsse daher zur Vermeidung eines ungünstigen Präjudizes für den Ausgang der Verhandlungen mit den Sukzessionsstaaten an dem von ihm bisher vertretenen Standpunkt festhalten, dass es sich hier um eine gemeinsame Last der Nachfolgestaaten handle und könne nicht einseitig mit Erhöhungen der Ruhegenüsse dieser Altpensionisten vorgehen. Darum spreche der Entwurf im § 1 nur allgemein von den Ruhegenüssen jener ehemals österreichischen Zivilstaatsangestellten, die aufgrund des Friedensvertrages und der mit den Regierungen der übrigen auf dem Bo<pb facs="krp-0145_r-0009"/>den des ehemaligen Österreich entstandenen Nationalstaaten zu treffenden Vereinbarungen endgiltig von der Republik Österreich zu bestreiten sein werden, und mache im § 17 den Wirksamkeitsbeginn des Gesetzes hinsichtlich der Erhöhung der altösterreichischen Ruhegenüsse von der Voraussetzung abhängig, dass bis dahin schon die Vereinbarungen mit den Nachfolgestaaten zustande gekommen seien. Sollte diese Voraussetzung nicht zutreffen, blieben die Erhöhungen für die altösterreichischen Pensionisten noch weiter in Schwebe. Das Gesetz bringe also für diese Kategorie von Pensionsparteien vorderhand noch keine Aufbesserung, doch sei in Aussicht genommen, ihnen in der Zwischenzeit im Verwaltungswege nach jenen Gesichtspunkten, welche den bisherigen Vereinbarungen mit den Nationalstaaten zugrunde liegen, unter Anwendung des Reziprozitätsprinzipes Beihilfen zu gewähren.</p>
+                  <p>Staatssekretär <hi rend="#letterspaced">Eldersch</hi> macht aufmerksam, dass bei Gewährung der Pensionserhöhungen nach § 4 Abs. 2 jene Gendarmeriebeamten eine besondere Berücksichtigung würden finden müssen, die über einen gewissen amtlichen Druck um die Pensionierung nach § 1 des Pensionsbegünstigungsgesetzes eingekommen <pb facs="krp-0145_r-0010"/>sind, obwohl sie noch bis zum 14. November 1919 das Recht auf die Behandlung nach dem Militärversorgungsnormen hatten.</p>
+                  <p>Weiters sei es notwendig, in dem Gesetze klarzustellen, inwieweit es auch auf die Angehörigen der Gendarmerie und Sicherheitswachkorps Anwendung habe. Speziell bei der Gendarmerie, deren Altpensionisten noch den militärischen Versorgungsgesetzen unterliegen, herrsche große Verschiedenheit in den Ausmaßen der Ruhebezüge, sodass Redner sich die weitere Ermächtigung erbitten müsse, im Wege einer Vollzugsanweisung mannigfache Härten der jetzigen ungleichartigen Behandlung zu beseitigen.</p>
+                  <p>Bedenklich sei ferner die Bestimmung des § 9 über die Einrechnung gnadenweiser Pensionserhöhungen auf die neuen Bezüge für jene Fälle, in denen Pensionszulagen mit Rücksicht auf die Verunglückung im Dienste gewährt wurden.</p>
+                  <p>Das Staatsamt für Inneres und Unterricht beabsichtige für solche Pensionszulagen im Falle der Verunglückung im Dienste eine Sonderbehandlung durch ein Gesetz herbeizuführen, dessen Entwurf in der nächsten Zeit dem Kabinettsrat zugehen würde.</p>
+                  <p><pb facs="krp-0145_r-0011"/>Staatssekretär <hi rend="#letterspaced">Paul</hi> wendet sich gegen den beabsichtigten Aufschub des Wirksamkeitsbeginnes des Gesetzes hinsichtlich der Erhöhung der Ruhegenüsse der altösterreichischen Pensionisten und verlangt mindestens die genaue Festlegung der ihnen zugedachten Beihilfen. Des Weiteren hätte durch eine Vollzugsanweisung der Zeitpunkt bestimmt zu werden, welcher die Abgrenzung zwischen den altösterreichischen und den neuösterreichischen Pensionisten bildet, damit insbesondere darüber Klarheit geschaffen werde, nach welchen Grundsätzen jene Angestellten zu behandeln seien, die in der Annahme, dass ihre Ruhebezüge noch einen gemeinsamen Pensionsfonds zu belasten hätten, im Laufe des Dezembers 1918 zwangsweise in den dauernden Ruhestand versetzt wurden.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Deutsch</hi> legt besonderes Gewicht darauf, dass das Pensionistengesetz gleichzeitig auch für die Militärpersonen in Geltung gesetzt werde, und erklärt sich zu diesem Zwecke mit der gleichartigen Behandlung beider Gruppen im Gesetze einverstanden. Die Regelung der aus Besonderheiten des Militärdienstes hervorgehenden Verschiedenheiten würde dann einem eigenen Gesetz vorbehalten bleiben.</p>
+                  <p><pb facs="krp-0145_r-0012"/>Unterstaatssekretär <hi rend="#letterspaced">Miklas</hi> nimmt die Verhandlung des Pensionistengesetzes zum Anlass, dem Kabinettsrate den Entwurf eines Gesetzes, mit welchem die Ruhegenüsse der vor dem 1. Jänner 1920 in den Ruhestand übernommenen katholischen Seelsorger geregelt werden und die Regierung zur Flüssigmachung von Teuerungszuwendungen ermächtigt wird, vorzulegen und ersucht um die gleichzeitige Einbringung beider Entwürfe in der Nationalversammlung.</p>
+                  <p>Zum Entwurf des Pensionistengesetzes bemerkt Redner, dass ihm die Fassung des § 17 nicht angemessen erscheine. Die Vereinbarungen mit den Nationalstaaten über die Tragung der altösterreichischen Pensionslast würden kaum zustande kommen und selbst wenn sich ein Ergebnis erreichen ließe, wäre es zweifelhaft, ob es Österreich Vorteile bringen könne. Zumindestens würde daraus eine neue gemeinsame Liquidierungsmasse entstehen und es könnte so weit führen, dass Österreich für die Pensionsaufwendungen in den Nationalstaaten Beiträge in der höheren fremden Währung leisten müsste. Es wäre daher empfehlenswerter, im § 17 festzustellen, dass das Gesetz auch für die altösterreichischen Pensionisten am 1. Juni Wirksamkeit erlange, jedoch nur insoferne, als nicht die Erhebung eines An<pb facs="krp-0145_r-0013"/>spruches an Österreich aus dem Titel ihrer Pension gemäß Art. 216 des Friedensvertrages ausgeschlossen ist.</p>
+                  <p>Unterstaatssekretär Dr. <hi rend="#letterspaced">Resch</hi> bezeichnet es als wünschenswert, die im § 4 Abs. 2 vorgesehenen Pensionszuschüsse nicht in das Belieben der Behörden zu stellen, sondern von vorneherein jene Voraussetzungen zu bestimmen, bei deren Vorhandensein die Zuschüsse zu gewähren sind.</p>
+                  <p>§ 8 begünstige nur die Hinterbliebenen von Pensionisten nach § 2 des Pensionsbegünstigungsgesetzes. Ein Grund bezüglich der Hinterbliebenen von Pensionisten nach § 1 dieses Gesetzes eine anderweitige Behandlung Platz greifen zu lassen, liege nicht vor, weshalb auch sie unter die Bestimmung des § 8 ausgenommen werden mögen.</p>
+                  <p>Im § 17 sollte nach Auffassung des Redners auch der den altösterreichischen Pensionisten bis zur Erlangung der erhöhten Ruhebezüge zugedachten Beihilfen ausdrückliche Erwähnung getan werden.</p>
+                  <p>Staatssekretär <hi rend="#letterspaced">Eldersch</hi> gibt die Anregung, im § 4 die Unterscheidung der Pensionisten nach § 1 und § 2 des Pensionsbegünstigungsge<pb facs="krp-0145_r-0014"/>setzes überhaupt aufzulassen und dafür die Bestimmung zu treffen, dass der Erhöhung der Ruhebezüge nur jene Pensionsparteien teilhaftig werden, deren Gesamteinkommen gleichgiltig aus welchen Quellen, nicht um mehr als 25 % höher ist als die neuen Pensionsbeiträge. Die Beweislast wäre der Partei zuzuschieben, so dass die Unterlassung der Anmeldung eines derartigen höheren Einkommens als Erschleichung der Erhöhung unter die strafgesetzlichen Bestimmungen über Betrug fiele.</p>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> schließt sich dieser Anregung an, empfiehlt jedoch den umgekehrten Weg, die Erhöhung nur jenen Pensionisten anzuweisen, welche durch Vorlage der Einkommensteuervorschreibung des letzten Jahres den Nachweis erbringen, dass ihr Einkommen die festgesetzten Grenzen nicht übersteige.</p>
+                  <p>Staatssekretär <hi rend="#letterspaced">Paul</hi> befürchtet, dass der vorgeschlagene Vorgang das jetzige einfache Verfahren bei Auszahlung der Pensionen durch die Postsparkassa unmöglich mache. In sachlicher Beziehung verweist er darauf, dass der Pensionsanspruch ein gesetzliches Recht der Beamten, erworben durch <pb facs="krp-0145_r-0015"/>ihre aktive Dienstleistung und die von ihnen eingezahlten Pensionsbeiträge, darstelle und daher unmöglich wegen eines Einkommens aus Vermögensbesitz einer Kürzung unterworfen werden könne. Die Einführung besonderer Nachweisungen über das Einkommen würde bewirken, dass auch jene Pensionisten, die die festgesetzten Grenzen nicht erreichen, erst mit langen Verzögerungen in den Genuss der Erhöhungen kämen.</p>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> bezeichnet es als im Interesse der leichteren parlamentarischen Behandlung gelegen, die Pensionsvorschriften für die Zivilstaatsangestellten, die Militärpersonen und die Seelsorgegeistlichkeit in ein gemeinsames Gesetz zusammenzufassen.</p>
+                  <p>Der § 17 des Pensionistengesetzes sollte definitive Verhältnisse schaffen und den altösterreichischen Pensionisten vorbehaltlich der Vereinbarungen und der Abrechnung mit den Nationalstaaten die erhöhten Ruhegenüssen in demselben Zeitpunkt wie den deutschösterreichischen zugestehen.</p>
+                  <p>Eine solche Abänderung ermögliche auch, den Termin für den Wirksamkeitsbeginn nicht erst bis zum l. Juni 1920 aufzuschieben, sondern <pb facs="krp-0145_r-0016"/>ihn bereits auf einen früheren Zeitpunkt anzusetzen.</p>
+                  <p>Sektionschef Dr. <hi rend="#letterspaced">Grimm</hi> bemerkt, dass eine Änderung des § 17 die Anerkennung des Grundsatzes der Übernahme der Pensionen nach der Staatsbürgerschaft in sich schließen und damit der allerdings wahrscheinlichen, für uns aber nicht günstigen Lösung des Problems vorgreifen würde. Gegenwärtig würden die Pensionisten nach dem Grundsatze der Reziprozität ausgezahlt. Dieses Reziprozitätsverhältnis ließe sich auch hinsichtlich der erhöhten Pensionen zur Anwendung bringen und zwar in der Art, dass in einem Zusatz zu § 1 die Bezeichnung des Umfanges der schon im gegenwärtigen Zeitpunkte Bezugsberechtigten einer Vollzugsanweisung vorbehalten und in der Vollzugsanweisung die Reziprozitätsbestimmungen wiedergegeben würden.</p>
+                  <p>Was die Behandlung der Pensionisten des Pensionsbegünstigungsgesetzes anlange, so könne durch einen Zusatz zu § 4 die Einschränkung gemacht werden, dass auf die Erhöhung jene Pensionsparteien keinen Anspruch haben, deren Gesamteinkommen die neue Pensionsgebühr um mehr als 25 % übersteigt. Die Scheidung des § 4 müsse <pb facs="krp-0145_r-0017"/>daneben aber aufrecht bleiben, um die Möglichkeit zu sichern, bei den Pensionisten nach § 1 des Pensionsbegünstigungsgesetzes die Zuerkennung der Erhöhung auch bei einem hinter den festgesetzten Grenzen zurückbleibenden Einkommen von dem Vorhandensein besonderer Berücksichtigungswürdigkeit abhängig zu machen.</p>
+                  <p>Als Wirksamkeitsbeginn für das Gesetz könnte statt des l. Juni der 1. März festgesetzt werden. Für die Zeit bis zur Neuberechnung der neuen Pensionen müssten den Parteien Beihilfen, bzw. Vorschüsse auf die künftigen Ruhegenüsse gewährt werden.</p>
+                  <p>Der Kabinettsrat fasst sohin folgende Beschlüsse:</p>
+                  <p>Die Vorschriften über die Pensionsbehandlung der Zivilstaatsangestellten, der Militärpersonen und der Seelsorgegeistlichkeit ist unter Trennung nach Hauptstücken in ein gemeinsames Gesetz zusammenzufassen. In dem betreffenden Gesetzentwurf hat auch die von Unterstaatssekretär Miklas eingebrachte Vorlage, betreffend die Neuregelung der Ruhegenüsse der Seelsorgegeist<pb facs="krp-0145_r-0018"/>lichkeit ihre Erledigung zu finden.</p>
+                  <p>Als Wirksamkeitsbeginn für den Anfall der erhöhten Ruhegenüsse wird der 1. März 1920 bestimmt, bis zur Neuberechnung der Pensionen werden den Parteien Vorschüsse erteilt.</p>
+                  <p>Die Versorgungsgenüsse der altösterreichischen Pensionisten, hinsichtlich welcher die Zahlungspflicht der Republik Österreich noch nicht endgiltig feststeht, werden im § 1 nur allgemein nach dem Umfange der Anspruchsberechtigung charakterisiert. Die näheren Bestimmungen sind im Gesetze einer Vollzugsanweisung vorzubehalten, welche die bisherigen Reziprozitätsvereinbarungen mit den Nationalstaaten wiedergibt.</p>
+                  <p>Der § 4 ist durch einen dritten Abs. zu erweitern, inhaltlich dessen auf die erhöhten Pensionen jene nach dem Pensionsbegünstigungsgesetz in den Ruhestand getretenen Personen keinen Anspruch haben, deren Gesamteinkommen ein bestimmtes Verhältnis zu den ihrer Dienstzeit entsprechenden neuen Pensionsbeträgen überschreitet.</p>
+                  <p>Die Scheidung nach altösterreichischen und deutschösterreichischen Pensionisten hat nicht nach dem Zeitpunkte ihrer Versetzung in den Ruhestand, sondern ausschließlich nach <pb facs="krp-0145_r-0019"/>dem Umstande zu erfolgen, ob die Betreffenden in den Dienst der Republik Österreich übernommen worden waren oder nicht. Nach diesem Grundsatze sind auch jene Pensionisten zu behandeln, deren Übernahme in den Dienst der Republik Österreich bloß in Anbetracht ihrer bevorstehenden Versetzung in den Ruhestand unterblieben ist.</p>
+                  <p>Der Staatssekretär für Inneres und Unterricht wird ermächtigt, die Verschiedenheiten in der Ruhegenussbehandlung unter den Gendarmerieoffizieren alten Stiles durch Vollzugsanweisung auszugleichen.</p>
+                  <p>Das Staatsamt für Finanzen erhält den Auftrag, die nach den vorstehenden Gesichtspunkten umgearbeitete Vorlage dem Kabinettsrate in einer der nächsten Sitzungen neuerlich zur Beratung zu unterbreiten.</p>
+                  <p>Zum Schluss wird über eine Anfrage des Sektionschefs Dr. <hi rend="#letterspaced">Grimm</hi> festgestellt, dass der umgearbeitete Entwurf gleichzeitig mit seiner Einbringung im Kabinettsrate auch den Standesvertretungen der Pensionisten zur Einsichtnahme überlassen werden könne, wobei ihnen jedoch mitzuteilen ist, dass etwaige Abänderungswünsche <pb facs="krp-0145_r-0020"/>nicht mehr vom Kabinettsrate berücksichtigt würden, sondern unmittelbar dem Finanz- und Budgetausschusse der Nationalversammlung vorgebracht werden müssten.</p>
+               </div>
+               <div type="top" xml:id="krp-0145_top03">
+                  <head>
+                     <label>
+                        <num n="3">3.</num>
+                        <seg>Entwurf eines Gesetzes zur vorläufigen Regelung der Versorgungsgenüsse der Witwen und Waisen der Zivilstaatsbeamten, Staatslehrpersonen, Unterbeamten und Diener, auf welche die Gesetze vom 18. Dezember 1919, StGBl. Nr. 570, 571 und 572 Anwendung finden (Hinterbliebenenversorgungsnovelle).</seg>
+                     </label>
+                  </head>
+                  <p>Sektionschef Dr. Grimm unterbreitet dem Kabinettsrate den Entwurf eines Gesetzes, betreffend die Neuregelung der staatlichen Hinterbliebenengebühren und erbittet die Genehmigung zur Einbringung in der Nationalversammlung.</p>
+                  <p>Der Entwurf bestimme, abweichend von dem bisher in Geltung stehenden Gesetzen, die Versorgungsgenüsse der Hinterbliebenen nicht mehr nach der Rangsklasse des Verstorbenen, sondern nach dessen letzten Bezügen. Das Ausmaß solle 50 % des Grundgehaltes samt der Erhöhungen zuzüglich 70 % des letzten Ortszuschlages betragen. Diese Ansätze seien gewählt, um die staatliche Hinterbliebenenversorgung jener der Gemeinde Wien im Wesentlichen anzugleichen, wenn auch die von der Gemeinde ausgezahlten Beträge nicht ganz erreicht würden.</p>
+                  <p>Eine weitere Abänderung gegenüber dem jetzt geltenden Rechtszustande be<pb facs="krp-0145_r-0021"/>stehe darin, dass § 2 die Gewährung des Erziehungsbeitrages nur bis zum erreichten 21. Lebensjahre der Waise vorsieht. Durch diese Bestimmung sollte der Einklang mit der im Besoldungsübergangsgesetz vorgesehenen Gebührenbehandlung der Kinder von Staatsangestellten herbeigeführt werden. Von dieser Regel lasse der Abs. 2 des § 2 jedoch in rücksichtswürdigen Fällen, worunter insbesondere die Beendigung von Studien, die Erlernung eines Handwerkes oder Gewerbe u. dgl. verstanden werden sollen, Ausnahmen zu.</p>
+                  <p>Staatssekretär <hi rend="#letterspaced">Paul</hi> erhebt Einsprache gegen den § 7 der Vorlage, welcher für die Witwen und Waisen nach Eisenbahn- und Postbediensteten, da das Dienstverhältnis dieser beiden Kategorien derzeit noch nicht geregelt ist, einen Aufschub von fünf Monaten in der Erlangung des Genusses der höheren Versorgungsbezüge mit sich bringe.</p>
+                  <p>Unterstaatssekretär Dr. <hi rend="#letterspaced">Resch</hi> und Staatssekretär Dr. <hi rend="#letterspaced">Mayr</hi> bemerken, der Gesetzentwurf schaffe die bisher bestandene Begünstigung der Hinterbliebenen von mit dem Titel und Charakter der nächsthöheren Rangsklasse ausgezeichneten Staatsbeamten hinsichtlich der Bemessung der Versorgungs<pb facs="krp-0145_r-0022"/>genüsse ab. Beide Redner regen an, an Stelle dessen für solche Hinterbliebenen im Gesetze eine besondere Zulage vorzusehen.</p>
+                  <p>Sektionschef Dr. <hi rend="#letterspaced">Grimm</hi> erklärt die Bereitwilligkeit der Finanzverwaltung, den im § 7 bestimmten Termin vom 31. Mai 1920 auf den 1. Jänner d. J. zu verlegen. Dagegen könne eine Sonderbemessung der Versorgungsgenüsse aufgrund der Verleihung von Titel und Charakter der höheren Rangsklasse als Widerspruch zu dem in dem Gesetz sonst festgehaltenen System nicht in Erwägung gezogen werden.</p>
+                  <p>Der Kabinettsrat genehmigt sohin die Einbringung des Gesetzentwurfes in der Nationalversammlung mit der Maßgabe, dass der in § 7 vorgesehene Termin vom 31. Mai auf den 1. Jänner verlegt werde.</p>
+               </div>
+               <div type="top" xml:id="krp-0145_top04">
+                  <head>
+                     <label>
+                        <num n="4">4.</num>
+                        <seg>Besetzung von zwei Haller Fräuleinstiftspräbenden der erbländischen Abteilung.</seg>
+                     </label>
+                  </head>
+                  <p>Nach dem Antrage des Staatssekretärs <hi rend="#letterspaced">Eldersch</hi> beschließt der Kabinettsrat, von zwei durch das Ableben der bisherigen Inhaberinnen erledigten Haller Fräuleinstiftspräbenden der erbländischen Abteilung mit dem Jahresbezuge von 800 K die erste <pb facs="krp-0145_r-0023"/>der Oberstenwaise Hermine Brenneis und die zweite der Statthaltereiratstochter Klara Finetti zu verleihen.</p>
+               </div>
+               <div type="top" xml:id="krp-0145_top05">
+                  <head>
+                     <label>
+                        <num n="5">5.</num>
+                        <seg>Gesetzesbeschlüsse des Salzburger Landtages vom 12. Dezember 1919, betreffend die Behebung der im Jahre 1918 durch den Sturm- und Scheitererbach im Stubachtale verursachten Hochwasserschäden und betreffend die Neuherstellung der Hollersbachklause im Oberpinzgau.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Mayr</hi> teilt namens des Staatssekretärs Stöckler mit, dass der Salzburger Landtag in der Sitzung vom 12. Dezember 1919 die Gesetzentwürfe, betreffend die Behebung der im Jahre 1918 durch den Sturm- und Scheitererbach im Stubachtale verursachten Hochwasserschäden und betreffend die Neuherstellung der Hollersbachklause im Oberpinzgau zum Beschlusse erhoben habe.</p>
+                  <p>Da die beiden Gesetzesbeschlüsse vom Standpunkte der Staatsregierung zu keinerlei Bedenken Anlass geben, stelle der sprechende Staatssekretär den Antrag, der Kabinettsrat wolle das Staatsamt für Land- und Forstwirtschaft zu der Mitteilung an die Landesregierung von Salzburg ermächtigen, dass seitens der Staatsregierung gegen die Gesetzesbeschlüsse eine Vorstellung nicht erhoben und ihrer sofortigen Kundmachung zugestimmt werde.</p>
+                  <p>Der Kabinettsrat erteilt die erbetene Ermächtigung.</p>
+                  <p><pb facs="krp-0145_r-0024"/></p>
+               </div>
+               <div type="top" xml:id="krp-0145_top06">
+                  <head>
+                     <label>
+                        <num n="6">6.</num>
+                        <seg>Gesetzesbeschluss des Vorarlberger Landtages vom 22. Dezember 1919, betreffend die Regulierung des Ermenbaches, des Gost-, Brill -und Scheide-Riedgrabens in den Gebieten der Gemeinden Hohenems, Altach, Götzis und Mäder.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. Mayr erbittet und erhält namens des Staatssekretärs Stöckler die Ermächtigung des Kabinettsrates, von der Erhebung einer Vorstellung gegen den Gesetzesbeschluss des Vorarlberger Landtages vom 22. Dezember 1919, betreffend die Regulierung des Ermenbaches, des Gost-, Brill- und Scheide-Riedgrabens in den Gebieten der Gemeinden Hohenems, Altach, Götzis und Mäder zustimmen und hievon die Landesregierung in Bregenz zur Verlautbarung des Gesetzes in Kenntnis setzen zu dürfen.</p>
+               </div>
+               <div type="top" xml:id="krp-0145_top07">
+                  <head>
+                     <label>
+                        <num n="7">7.</num>
+                        <seg>Gesetzesbeschluss des Tiroler Landtages vom 18. Dezember 1919, betreffend die Ergänzung der Schutzbauten am Unterlaufe des Lahnbaches in Schwaz nach Maßgabe des Gesetzes vom 4. Jänner 1909, RGBl. Nr. 4.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. Mayr berichtet namens des Staatssekretärs Stöckler, dass der vom Tiroler Landtage in der Sitzung vom 18. Dezember 1919 gefasste Gesetzesbeschluss, betreffend die Ergänzung der Schutzbauten am Unterlaufe des Lahnbaches in Schwaz, seitens der Staatsregierung zu keinerlei Bemerkung Anlass gebe.</p>
+                  <p>Nach dem Antrage des Redners erteilt der Kabinettsrat die Zustimmung, dass von der Erhebung einer Vorstellung gegen diesen Gesetzesbeschluss Abstand genommen und hievon die Tiroler Landes<pb facs="krp-0145_r-0025"/>regierung zum Vollzuge der Kundmachung des Gesetzes verständigt werde.</p>
+               </div>
+               <div type="top" xml:id="krp-0145_top08">
+                  <head>
+                     <label>
+                        <num n="8">8.</num>
+                        <seg>Entwurf eines Gesetzes, mit welchem das Gesetz vom 5. Dezember 1919, StGBl. Nr. 554, betreffend das Dienstverhältnis der Hochschulassistenten, teilweise abgeändert wird.</seg>
+                     </label>
+                  </head>
+                  <p>Unterstaatssekretär <hi rend="#letterspaced">Glöckel</hi> erbittet die Zustimmung des Kabinettsrates zur Einbringung einer Novelle zum Hochschulassistentengesetz.</p>
+                  <p>Redner führt aus, dass in dem Hochschulassistentengesetz vom 5. Dezember 1919, StGBl. Nr. 557 mit Absicht der Vorgang gewählt worden sei, statt für die verhältnismäßig kleine Kategorie Hochschulassistenten von etwa 350 Personen ein eigenes Besoldungssystem aufzustellen, ihre Besoldung zu jener der staatlichen Mittelschullehrer in Beziehung zu setzen. Die nunmehr durch das Gesetz vom 18. Dezember 1919, StGBl. Nr. 572, eingetretene grundsätzliche Änderung in der Besoldung der Mittelschullehrer hätten dieser Art der Bemessung der Assistentenbezüge die Grundlage entzogen und es erweise sich infolge dessen eine Abänderung einzelner Bestimmungen des Hochschulassistentengesetzes als notwendig.</p>
+                  <p>Es handle sich hiebei um eine Abänderung des § 3 Abs. 1 und 2, des § 4 Abs. 2 und des § 7 Abs. 3 (Schluss).</p>
+                  <p><pb facs="krp-0145_r-0026"/>Während nach dem Hochschulassistentengesetz, § 3 Abs. 1, die außerordentlichen Assistenten anfangs den Stammgehalt eines Mittelschullehrers von 2.800 K und nach zwei, vier und sechs Jahren dazu 60, 80 bzw. 100 % der Aktivitätszulage der IX. Rangsklasse erhalten sollten, werde in der Gesetzesvorlage vorgeschlagen, den außerordentlichen Assistenten anfangs 75 %, nach dem 2., 4. und 6. Dienstjahr 85, 95 und 100 % der gesamten Anfangsbezüge eines Mittelschullehrers zu gewähren und zwar von den Anfangsbezügen an Grundgehalt, Ortszuschlag, Teuerungszulagen und gleitenden Zulagen.</p>
+                  <p>Die ordentlichen Assistenten, § 3 Abs. 2, sollen die nunmehrigen nach der Dienstzeit gebührenden vollen Bezüge eines Mittelschullehrers an Grundgehalt, Trienalzulagen, Ortszuschlag, Teuerungszulagen und gleitender Zulage erhalten. Diese Bezüge würden auch die Bemessungsgrundlage für den fortlaufenden Ruhegenuss bilden, der den ordentlichen Assistenten gemäß § 7 Abs. 3 unter den dort angegebenen Voraussetzungen zuzukommen hat.</p>
+                  <p>Für die Hilfsassistenten sei im § 4 Abs. 2 des Hochschulassistentenge<pb facs="krp-0145_r-0027"/>setzes eine Besoldung in der Höhe von 75 % des Anfangsbezuges eines außerordentlichen Assistenten vorgesehen gewesen; dies hätte nach dem früheren Besoldungsschema den unveränderlichen Betrag von 2.100 K ergeben.</p>
+                  <p>Das Staatsamt der Finanzen habe bei den Verhandlungen das Festhalten an dieser Bestimmung gewünscht. Darnach wäre ein Hilfsassistent auf 75 % von 75 % der Anfangsbesoldung eines Mittelschullehrers im Effekt also auf 56 ¼ % dieser Anfangsbesoldung gekommen. Zur Vermeidung einer derart komplizierten Rechnung sei vom Unterrichtsamt die Gewährung von 60 % beabsichtigt worden, wogegen die Finanzverwaltung nur die eine Festsetzung auf 55 oder 56 % zugestehen wolle, so dass die Besoldung der Hilfsassistenten perzentuell etwas ungünstiger ausfallen würde, als es im Hochschulassistentengesetz schon zugestanden war. Die strittige Differenz mache den minimalen Betrag von jährlich 292 K 50 h aus und würde bei der geringen Zahl der Hilfsassistenten (d. i. der zu Assistenten bestellten Ausländer und Studierenden) von nur etwa 50 finanziell nicht ins Gewicht fallen. Redner beantragte daher, die Jahresremuneration der Hilfsassistenten mit 60 % der Anfangsbesol<pb facs="krp-0145_r-0028"/>dung eines Mittelschullehrers festzusetzen.</p>
+                  <p>Die Gesetzesnovelle hätte rückwirkend mit dem Jänner 1920 in Kraft zu treten, da das Hochschulassistentengesetz mit diesem Termin in Kraft getreten sei und auch die übrigen Besoldungsgesetze mit diesem Termine Wirksamkeit erlangt haben.</p>
+                  <p>Sektionschef Dr. <hi rend="#letterspaced">Grimm</hi> bemerkt, dass die Finanzverwaltung vermieden sehen wolle, durch eine über das Maß einer bloßen Angleichung hinausgehende Bezugsregelung auch anderen Angestelltenkategorien den Anreiz zu Mehrforderungen zu bieten. Die Finanzverwaltung müsse daher ihre Zustimmung zur Bemessung der Jahresremuneration der Hilfsassistenten mit 60 % der Anfangsbesoldung eines Mittelschullehrers ausdrücklich an den Vorbehalt knüpfen, dass die Ableitung von Beispielsfolgerungen aus diesem Ansatze unbedingt ausgeschlossen bleibe.</p>
+                  <p>Der Kabinettsrat nimmt diesen Vorbehalt zur Kenntnis und erteilt die Zustimmung zur Einbringung der Vorlage unter Beibehaltung der Festsetzung der Jahresremuneration der Hilfsassistenten auf den Betrag von 60 % der Anfangsbesoldung eines Mittelschullehrers.</p>
+                  <p/>
+               </div>
+            </div>
+            <div type="stenogramme">
+               <div n="1">
+                  <head>[KRP 145, 6. Februar 1920, Stenogramm Groß]</head>
+                  <p><pb facs="krp-0145_s01-0001"/>1.</p>
+                  <p>[Renner]: Den Staatssekretären wird [eine] Zuschrift zugehen von der Staatskanzlei bezüglich der Ausscheidung von Vermögensobjekten und Verwaltungsobjekten aus dem hofärarischen und kaiserlichen Besitz für den Kriegsgeschädigten-</p>
+                  <p>fonds. Jedes Staatsamt wird das, was es aus diesen vorhandenen Realitäten in Besitz zu nehmen für angemessen findet, anmelden, die Kommission wird zusammentreten und Vorschläge machen. Von den Verwaltungen </p>
+                  <p>ist gedacht, dass nur das Notwendigste ausgeschieden werden soll und man sich mit einem Benützungsrecht begnügen soll. Aber die Absicht des Kriegsgeschädigtenfonds ist, dass das werbende Vermögen [...] </p>
+                  <p>und alles, was den Verwaltungszwecken dient, ihnen zugeführt wird.</p>
+                  <p>2.</p>
+                  <p>Hanusch: </p>
+                  <p>Die Invaliden und Kriegswitwen fangen an, kritisch zu werden. Ich habe sie bisher immer abgewiesen, aber der Kampf wird immer schwieriger, weil der Kampf nicht mehr geht </p>
+                  <p>mit den Invaliden und Witwen, sondern [mit den] Landesregierungen und Parteien. Die Parteien stehen auf dem Standpunkt, dass den Leuten die Rente erhöht werden muss und auch Fink hat diesen Standpunkt </p>
+                  <p>vertreten. Es werden den Leuten Versprechungen gemacht. In Oberösterreich haben die Deutschnationalen und Christlichsozialen und die Sozial[demokraten] erklärt, dass sie einig sind und nur die </p>
+                  <p>Regierung Schwierigkeiten macht. Mir ist es unmöglich, jetzt eine Vorlage auszuarbeiten, [ich] will es auch nicht vor der Stellungnahme der Parteien. [Ich würde] wünschen, dass nächste Woche </p>
+                  <p>die K[oalitions]-Parteien zusammentreten und über diese Frage Beratungen mit Zuziehung von [Vertretern der Staatsämter für] Finanzen und soziale Fürsorge abhalten, [darüber] in welcher Form [eine] Lösung gefunden werden könnte. </p>
+                  <p>Es können nicht alle Invaliden eine Erhöhung bekommen, besonders bei 50 % Erwerbsfähigkeit. [Es wird] nur bei schweren Fällen möglich sein, etwas müssen wir </p>
+                  <p>aber tun. [Ich] bitte Renner, dass er mit Zuziehung der beiden Staatsämter eine Koalitionsverhandlung zur Beratung der Frage anberaumt. Irgend etwas </p>
+                  <p>muss geschehen, wir haben gestern und heute den ganzen Tag ?gerauft. Es muss in einer Form eine Lösung gefunden werden.</p>
+                  <p>Renner: </p>
+                  <p>[Wir] haben das K[oalitions]-Komitee für Montag ½ 10 im Parlament. Dort sind mehrere Punkte zu behandeln. Wenn die beiden Staatssekretäre um </p>
+                  <p>10 Uhr kommen, kann die Sache erledigt werden. Statt Reisch muss Grimm kommen.</p>
+                  <p>Hanusch: </p>
+                  <p>Dort werden nur die Richtlinien aufgestellt und das Staatsamt wird beauftragt, danach eine Vorlage vorzubereiten.</p>
+                  <p>Grimm: </p>
+                  <p>Im Budgetausschuss wurde angedeutet, dass das Def[izit] von 7.000 Milliarden - [Millionen] um 1,6 Milliarden erhöht [wird], es beträgt [dann] 8,7 </p>
+                  <p>Milliarden.</p>
+                  <p>Renner: </p>
+                  <p>Es kommt auch zu erwägen, dass wir ein ausländisches Anlehen wünschen und der Macht bescheinigen müssen, dass wir unser Budget </p>
+                  <p>in Ordnung halten müssen.</p>
+                  <p>3.</p>
+                  <p>Zerdik: </p>
+                  <p>Paul hat vor dem Kabinett[srat] die subjektive Meinung über die Verhandlungen in Prag [geäußert, dass] Sektionsrat Langer der Aufgabe nicht gewachsen [sei] und die Verhandlungen </p>
+                  <p>in abträglicher Form führe. [Ich] habe Erhebungen gepflogen und komme zum gegenteiligen Schluss: Einwandfrei geführte Verhandlungen, die Entsendung </p>
+                  <p>weiterer Funktionäre [ist] nicht nötig. Ich habe [außerdem] die Herren, die beteiligt sind, Openheim, Kloss, den Präsidenten des Wirtschaftsverbandes der ?Metallstelle [...] </p>
+                  <p>befragt und die gleiche Auskunft erhalten. Paul hat sich gegenüber der österreichischen Delegation in einer Form benommen, dass man die Ruhe Langers </p>
+                  <p>bewundern musste. Wenn die Gemeinde Wien Rekriminationen erhoben hat, so beruhen diese auf [einem] Missverständnis. Bei den Abmachungen hat es geheißen, dass </p>
+                  <p>zehn Tage nach den Abmachungen der Vertrag in Kraft treten soll und [es] war nicht in Konnex gebracht mit den Kompensationsverhandlungen. [Es] wurde um Verschiebung </p>
+                  <p>gebeten. Die Gemeinde Wien hat daraus ein Versäumnis abgeleitet. Paul hat entgegen den Abmachungen den Standpunkt vertreten, dass [der Vertrag] erst zehn Tage nach der </p>
+                  <p>heutigen Unterfertigung in Kraft treten [soll]. [Ich] bringe das zur Kenntnis, um Langer vor dem Kabinettsrat zu rehabilitieren.</p>
+                  <p>Renner: </p>
+                  <p>[Es] freut uns, dass diese Befürchtungen gegenstandslos geworden sind.</p>
+                  <p><pb facs="krp-0145_s01-0002"/>3.</p>
+                  <p>Stöckler: </p>
+                  <p>Die Verkehrsfrage auf der Westbahn ist sehr kritisch. [Ich] rolle die Frage [aus folgendem Anlass] auf: [Ich] hatte Herren der Landesregierungen zu einer Beratung hier, [diese] </p>
+                  <p>wollten heute um 5 Uhr wegfahren, [ich] konnte - [es war] aber keine Karte für sie zu bekommen. Das entfremdet uns mit den Landesregierungen. Nächste Woche [ist eine] </p>
+                  <p>Sitzung mit den Landesregierungen und Landesholzstellen wegen der Transportscheine für Holz. [Diese ist] ungeheuer wichtig. Ist es nicht nötig - [möglich], für solche Vertreter Karten zu </p>
+                  <p>erhalten, sollten wir die Sitzungen absagen. [Ich] frage Paul, ob es nicht möglich ist, [für] 6-8 Personen die Karten zuzusichern? Ist es nicht möglich, </p>
+                  <p>so sagen wir die Sitzungen lieber ab oder gehen nach Salzburg oder Linz. [Ich] bitte Paul um nähere Mitteilungen.</p>
+                  <p>Paul: </p>
+                  <p>Der Verkehr ist sehr schwach und der Andrang ungewöhnlich groß. Die Kassen sind angewiesen, eine bestimmte Kartenzahl auszugeben und weitere </p>
+                  <p>zu verweigern. Bei einem Zug hat sich der Fall ereignet, dass 900 Karten ausgegeben [hätten werden dürfen] und 1.600 ausgegeben waren. Der Fall wird untersucht. </p>
+                  <p>Es besteht [eine] Vorsorge, dass in besonderen Fällen Karten ausgegeben [werden] und der Platz gehalten wird. [Ich] bitte die Herren, sich direkt an mich zu wenden.</p>
+                  <p>Stöckler: </p>
+                  <p>Ein Beamter war im Verkehrsamt und hat [eine] Ablehnung bekommen.</p>
+                  <p>Renner: </p>
+                  <p>Es empfiehlt sich, die Verbindung direkt mit dem Herrn Staatssekretär zu verhandeln. Wenn das Büro zu Ausnahmen ermächtigt wird, so ist dem Missbrauch </p>
+                  <p>Tür und Tor geöffnet.</p>
+                  <p>3.</p>
+                  <p>[Renner]: Pensionistengesetz.</p>
+                  <p>Grimm: </p>
+                  <p>[Ich] lege die beiden Gesetzentwürfe vor. [Einen] für die Altpensionisten und einen zweiten für die Hinterbliebenen-Versorgung aufgrund des Besoldungs-</p>
+                  <p>übergangsgesetzes.</p>
+                  <p>Die materielle Grundlage: Wir haben eigentlich sechs Kategorien von Pensionisten. Die erste sind die normalen vor dem Umsturz; die zweite der altösterreichischen P[ensionisten] [sind] </p>
+                  <p>jene, welche bis September gingen, begünstigt durch die 50 %[ige] Teuerungszulage. Die Neuösterreichischen [sind] zunächst jene, welche aufgrund der normalen Bestimmungen wegen Dienstunfähigkeit [in] </p>
+                  <p>Pension gingen bis [zum] Begünstigungsgesetz; dann jene, welche als Zwangspensionisten im Dezember in Pension geschickt wurden, 60 Jahre und 35. Dann kommen die [Pensionisten gemäß] </p>
+                  <p>Pensionsbegünstigungsgesetz, § 1 freiwillig oder § 2 zwangsweise. Die Wünsche der verschiedenen Kategorien gehen dahin: Die altösterreichischen Pensionisten verlangen, dass </p>
+                  <p>sie den P[ensionisten] der Zwangsp[ensionierung] von Deutschösterreich gleichgestellt werden mit der Begründung, dass es für sie gleichgültig ist, ob sie der deutschösterreichischen Republik Dienst geleistet haben oder nicht </p>
+                  <p>von ihr übernommen wurden. Sie führen an, dass sie während des Krieges einen erschwerten Dienst hatten und nicht ungünstiger behandelt werden dürfen als die Deutschösterreichischen.</p>
+                  <p>Die Zwangsp[ensionierten] vom Dezember sagen, wir hätten warten können bis zum Pensionsbegünstigungsgesetz. [Sie] verlangen die Gleichstellung mit diesen und die Begünstigten verlangen die Gleichstellung </p>
+                  <p>mit [den Pensionisten nach dem] Besoldungsübergangsgesetz. Alle wollen gleich behandelt werden. Es handelt sich [darum], jene Momente zu suchen, welche für die einzelnen Kategorien sprechen und [darum], die </p>
+                  <p>Kategorien zu vereinfachen. Das Staatsamt für Finanzen sagte sich, eine Gleichstellung mit den künftigen P[ensionisten] aufgrund des Besoldungsübergangsgesetzes kann man nur den nach § 2 </p>
+                  <p>zwangsweise [in Pension] geschickten des Pensionsbegünstigungsgesetzes [<hi rend="#i">Einschub:</hi>] zugestanden werden. [<hi rend="#i">Einschub Ende</hi>] Sie sind gegangen, ohne dienstunfähig zu sein, sie sind nur des Abbaus wegen [in Pension] geschickt worden. </p>
+                  <p>Tatsächlich war es in vielen Fällen [nicht] nötig und viele Staatsämter haben diese nicht in den Ruhestand versetzt, weil sie gebraucht wurden. Es ist das Pensionsbegünstigungs[gesetz] bezüglich </p>
+                  <p>§ 2 ganz verschieden gehandhabt worden und es ist ein Zufall oder sogar Willkür der Behörden, ob dieser Betreffende vor dem 1. Jänner oder nachher </p>
+                  <p>p[ensioniert] worden ist. Hier liegt der Schein einer Ungerechtigkeit vor. Daher ist das Staatsamt für Finanzen zu dem Schluss gekommen, diese § 2-Leute, etwa 900 von 2.000, </p>
+                  <p>den künftigen P[ensionisten] vollkommen gleichzustellen.</p>
+                  <p>[<hi rend="#i">Am Rand:</hi>] Sechs Kategorien von Pensionisten:</p>
+                  <p>1.) Normal pensionierte altösterreichische vor dem Umsturz.</p>
+                  <p>2.) Altösterreichische mit einem 50 % </p>
+                  <p>Pensionszuschlag nach dem Gesetz vom ....</p>
+                  <p>3.) Neuösterreichische wegen Dienst-</p>
+                  <p>unfähigkeit [<hi rend="#i">Einschub:</hi>] mit normalen Bezügen [<hi rend="#i">Einschub Ende</hi>] in den Ruhestand ver-</p>
+                  <p>setzt.</p>
+                  <p>4.) Zwangspensionisten auf Grund </p>
+                  <p>Staatsratsbeschluss vom Dezember 1918 a).</p>
+                  <p>5.) Pensionisten nach § 1 des Pensionsbegünstigungsgesetzes.</p>
+                  <p>6.) Pensionisten nach § 2 des Pensionsbegünstigungsgesetzes.</p>
+                  <p>Zwischen den verschiedenen </p>
+                  <p>Pensionsgrundlagen soll eine </p>
+                  <p>gerechte Ausgleichung an ihrem </p>
+                  <p>Übertritt in den Ruhestand erfolgen, [eine] </p>
+                  <p>Aufbesserung der Ruhebezüge herbei-</p>
+                  <p>geführt werden.</p>
+                  <p>Die P[ensionisten] nach § 1 sind jene, welche nach Erreichung einer Pensionsquote, 75 % der Grundlage, in P[ension] gehen konnten unter erleichterten </p>
+                  <p>Bedingungen und mit einer Reihe von wertvollen Begünstigungen. Es ist also so, dass tatsächlich nur der Umstand, dass bald darauf das Besoldungsübergangsgesetz erschienen ist, </p>
+                  <p>eine Enttäuschung gebracht hat. Wäre die Spanne länger gewesen, so könnten sie überhaupt keine Beschwerde oder Kränkung empfinden, denn jede Besoldungsregelung bringt ja [auch] </p>
+                  <p>eine Besserung der P[ension] nach sich. Wenn ein solcher P[ensions]begün[stigungs]anwärter sich erkundigt hat, so wird er überall die Antwort bekommen haben, dass kaum [eine] günstigere P[ension] </p>
+                  <p>erwartet werden könne. Nicht richtig ist, dass die Herren [uns] vorwerfen, die Regierung sei illoyal vorgegangen. Es hat niemand geahnt, dass es so rasch zum P[ensions]über[gangs]gesetz gekommen [ist]. </p>
+                  <p><pb facs="krp-0145_s01-0003"/>Tatsächlich ist jeder freiwillig gegangen. Die § 2-Leute sind in P[ension] geschickt worden, die von § 1 sind freiwillig gegangen, nicht des Staates wegen, </p>
+                  <p>sondern in dem Gedanken, eine günstige P[ension] zu erreichen und weil sie sich auch von vornherein einen Nebenerwerb gesichert hatten. Auch der Kabinettsrat hat sich </p>
+                  <p>dahin ausgesprochen, die § 1-Leute nicht nach den allgemeinen Grundsätzen [zu] behandeln und [dass man] jene ausscheiden müsse, welche sich einen ausreichenden oder [die Pension] übersteigenden </p>
+                  <p>Nebenerwerb gesichert haben. Eine solche Form zu finden, war nicht möglich und würde auch zu Unbilligkeiten führen. Die Grenze zu finden, ist sehr schwer. Darum </p>
+                  <p>sieht der Entwurf vor, dass die § 1-Leute individuell zu behandeln sind. Jedes Staatsamt wird [ermächtigt], dort, wo die Lage berücksichtigungswürdig ist, die </p>
+                  <p>P[ension] bis zum Ausmaß des B[esoldungs]über[gangs]gesetzes zu erhöhen. Die § 1-Leute werden in vielen Fällen den § 2-Leute gleichgestellt werden können.</p>
+                  <p>Die altösterreichische P[ensionisten] und die übrigen deutschösterreichischen P[ensionisten] (Zwangs- und normale Pensionisten) wollen wir in eine Gruppe zusammenziehen. </p>
+                  <p>Wir schlagen vor, eine 70 %[ige] Quote aufgrund der Bemessungsgrundlage des Besoldungsübergangsgesetzes. Wenn die Zwangsp[ensionierten] den </p>
+                  <p>begünstigten P[ensionisten] gleichgestellt zu werden verlangen, ..... Wir haben daran gedacht, die altösterreichischen ungünstiger zu behandeln als die </p>
+                  <p>Zwangsp[ensionierten]. Die Zwangsp[ensionierung] im Dezember war nicht glücklich, man hätte die Leute sehr gut brauchen können bis zum Besoldungsübergangsgesetz. Es ist damals </p>
+                  <p>vom Staatsrat die Anregung gekommen, mit dem Abbau vorzugehen und die Regierung musste an die P[ensionierung] herangehen. Da diese Zwangsp[ensionierten] alle bereits die </p>
+                  <p>normalen P[ensions]bedingungen erfüllt hatten, so liegt kein Grund vor, <hi rend="#s">sie zu behandeln wie jene</hi> -. Außerdem sollen alle P[ensionisten] auch eine Teuerungszulage </p>
+                  <p>bekommen, welche wie im Besoldungsübergangsgesetz gleichmäßig für alle Bediensteten gilt und sonst nur abgestuft ist nach den Ortsklassen, in geringerem </p>
+                  <p>Ausmaß als [für] die aktiven Beamten. Eine Teuerungszulage ist nötig wegen der Teuerung, auch deshalb, weil trotz der 70 %[igen] Begünstigung </p>
+                  <p>in einzelnen Klassen diese 70 % noch immer weniger wären als die altösterreichische Pension mit der 50 %[igen] Begünstigung. Das ist von der </p>
+                  <p>VII. Rangsklasse abwärts. Wenn diese Teuerungszulage gegeben wird, so wird das ausgeglichen. Die Pensionsgrundlage ist in allen Fällen höher, </p>
+                  <p>einen materiellen Nachteil hat keiner. Außerdem sollen die P[ensionisten] im Sinne eines Kabinettsratesbeschlusses auch die gleitende Zulage bekommen. Das Mehr-</p>
+                  <p>erfordernis aus diesen Maßnahmen beträgt 174 Mill[ionen], hierzu die gleitende Zulage berechnet mit 71 Kronen pro Kopf. </p>
+                  <p>Das ist jener Betrag, welcher vom Volksernährungsamt angegeben wurde, das sind 153 Mill[ionen]. Jetzt ist die gleitende Zulage mit </p>
+                  <p>100 Kronen vorausgezahlt und wird mit 120 Kronen berechnet, das Mehrerfordernis beträgt [demnach] 200 Mill[ionen]. Die Regelungen </p>
+                  <p>für Arbeiter, [...] ist eingerechnet. [Ich] bitte von Erweiterungen des Entwurfes abzusehen, da Reisch nicht darauf eingehen könnte.</p>
+                  <p>[Zum] Umfang der Anspruchsberechtigten. Das Gesetz gilt nur für die zivilen Staatsbediensteten und die Lehrpersonen. Deutsch hat verlangt, </p>
+                  <p>dass gleichzeitig auch die Militärpersonen einbezogen werden sollen. Reisch hat geantwortet, dass erfahrungsgemäß Verhandlungen mit dem Heeresamt lange </p>
+                  <p>dauern, die Sache dringend ist und [es] sich empfiehlt, die Pensionsregelung für das Militär im Anschluss an das Gesetz vorzunehmen. Beim Heeresamt </p>
+                  <p>sind abweichende Bestimmungen, welche in einigen Punkten günstiger sind als für die zivilen Staatsbediensteten. Es ist schwer, in einem Gesetz diese beiden Momente </p>
+                  <p>zu vereinigen. Es wäre möglich, die Militärpersonen mitzunehmen, wenn die Erhöhungen nur auf jenen Kreis beschränkt werden, welcher nach den </p>
+                  <p>normalen zivilen Gesetzen auch für die zivilen Staatsangestellten gelten. Für Militärpersonen gibt es Ruhestandswitwen, die das Zivil nicht kennt. Dann </p>
+                  <p>wird die Lebensgefährtin als Witwe behandelt. Wenn das ausgeschaltet werden kann, so dass die Normen nur auf jene Militärs Anwendung finden können, welche auch </p>
+                  <p>von den zivilen Staatsbeamten auf - diese Normen angewendet werden können, dann wäre die Sache durch die Einfügung eines Paragraphen zu machen.</p>
+                  <p>[<hi rend="#i">Am Rand:</hi>] Das Gesetz gelte nur für die Zivilstaatsbediensteten und </p>
+                  <p>Lehrpersonen. Das Staatsamt für Heerwesen wünschte die </p>
+                  <p>Einbeziehung der Militärperso-</p>
+                  <p>nen. Diese hätte wegen der zu </p>
+                  <p>berücksichtigenden Besonderheiten einen lan-</p>
+                  <p>gen Aufschub für die Einbringung der Vorlage </p>
+                  <p>bewirkt, den das Staatsamt für Finanzen nicht verantworten wollte, </p>
+                  <p>weshalb die Regelung der militärischen Ruhegebühren erst im </p>
+                  <p>Anschluss an das Gesetz vorgenommen werden sollte.</p>
+                  <p>[Zu] § 1: Die Verhandlungen wegen der Tragung der P[ensions]kosten zwischen den Nationalstaaten sind noch nicht abgeschlossen und es ist keine </p>
+                  <p>Aussicht auf [eine] baldige Regelung. Wir nehmen an, dass eine Vereinbarung erzielt werden wird im Laufe der nächsten 4 - 5 Monate. Daher der </p>
+                  <p>Wirksamkeitsbeginn des Gesetzes [mit] 1. /6. und [wir] sagen im § 1, dass es nur für jene gilt, welche aufgrund des Friedens und der Vereinbarungen </p>
+                  <p>die Republik Österreich endgültig belasten. Dieser Entwurf bringt für viele P[ensionisten] daher keine Beruhigung. Die Vereinbarungen über die zivilen P[ensionisten] </p>
+                  <p>sind sehr verwickelt, besonders jene mit den Tschechen. Hier kommt es auf den letzten Dienstort, bei der Zentralstelle auf die Dauer seines Aufenthaltes </p>
+                  <p>in Wien usw. [an]. Die Polen und Jugoslawen haben das Nationalitätsprinzip angenommen. Die P[ensionen] werden so flüssig gemacht, dass [wir] aufgrund </p>
+                  <p>des Übereinkommens Reziprozität üben. Wir bestimmen daher das Allgemeine. </p>
+                  <p><pb facs="krp-0145_s01-0004"/>Bis zum Zustandekommen der Vereinbarungen werden aufgrund der bisherigen Vereinbarungen Beihilfen an jene [ge]geben, bei welchen die Frage noch nicht </p>
+                  <p>definitiv geregelt werden konnte.</p>
+                  <p>Eldersch: </p>
+                  <p>Ich habe bezüglich der Differenzierung in § 4 rücksichtlich der nach § 1 und 2 des Pensionsbegünstigungsgesetzes [in den Ruhestand] versetzten </p>
+                  <p>Beamten vorzubringen: Man wirft nicht der Regierung Hinterhältigkeit vor, sondern dem Staatsamt für Finanzen, weil dieses bei der Verlesung des </p>
+                  <p>Pensionsbegünstigungsgesetzes schon das Besoldungsübergangsgesetz vorbereitet hat und davon wissen musste. Ich habe Schwierigkeiten bezüglich der P[ensionisten] nach § 1 bei </p>
+                  <p>den G[endarmerie]-Offizieren. Diese hätten bis 14. /11. '19 das Recht [gehabt], nach den Militärversorgungsnormen p[ensioniert] zu werden. Diese hätten ihnen höhere </p>
+                  <p>Ansprüche gesichert, nicht als das Pensionsbegünstigungsgesetz, aber sie wären besser weggekommen und diese [Pensionisten] werden jetzt die gröbsten Vorwürfe erheben. </p>
+                  <p>Wir haben sie nach § 1 in die Pension gedrängt, weil der Abbau der Gendarmerie von 9[.000] auf 4.000 durchzuführen war und darum </p>
+                  <p>musste auf die Offiziere gedrückt werden. Gampp steht unter einer moralischen Verantwortung gegenüber diesen Offizieren. Ich werde doch bitten müssen, wenn es </p>
+                  <p>bei den Vorschriften des Gesetzes bleibt, dass bei den Regierungsanträgen bei Gendarmeriebeamten die Position etwas milder ist und den Vorschlägen meines Amtes </p>
+                  <p>weniger Schwierigkeiten gemacht werden. Dann wird beanstandet, dass aus dem Pensionsgesetz nicht klar hervorgeht, ob die Gendarmerie und das Sicherheitswachekorps </p>
+                  <p>auch dem Gesetz unterliegen. Es wäre nötig, solche Gesetze zwischen den Staatsämtern zu verhandeln, nicht bloß in zwischenstaatsamtlichen Kommissionen. Bei der G[endarmerie] haben </p>
+                  <p>wir die verschiedensten Verhältnisse. Ein großer Teil sind Militärpensionisten. Das sind Normen, deren Entstehung bis 1850 zurückgeht. Jetzt </p>
+                  <p>entsteht die Frage, ist das Gesetz auf diese anwendbar oder nicht? Die Gendarmerie ist jetzt zivil. Es ist unmöglich, eine so verschiedene </p>
+                  <p>Behandlung vorzunehmen. [Daher] erbitte ich die Aufnahme einer Bestimmung zur Ermächtigung der Regierung, durch Vollzugsanweisung gewisse Härten auszugleichen. Man kann nicht einem </p>
+                  <p>Gendarmen im Ruhestand einreden, der Unterschied beruhe darauf, weil die einen P[ensionisten] militärische, die anderen zivile sind. Diese Ungerechtigkeit </p>
+                  <p>müsste durch Vollzugsanweisung behoben werden können.</p>
+                  <p>Einrechnung der Gnadengaben. Wir haben [bei den] Gendarmen Erhöhungen der Pensionen, welche gewährt wurden, weil die Pension an sich </p>
+                  <p>unzureichend war. Dann [haben wir] solche, welche in Fällen gewährt wurden - in Fällen, wo der Betreffende im Dienst verunglückt ist. Wird einem Teil der P[ensionisten] </p>
+                  <p>diese Gnadengabe angerechnet bei Unzulänglichkeit der Pension, so ist das verständlich wegen der Erhöhung der Pensionsgrundlage. Aber [bei] </p>
+                  <p>Gnadengaben im Fall der Verunglückung im Dienst ist die Kürzung eine Unbilligkeit. Mein Amt hat einen Gesetzentwurf ausgearbeitet, </p>
+                  <p>welcher eine Begünstigung für Fälle der Verunglückung im Dienst [vorsieht]. Wenn dieses Gesetz nicht bald erscheint, so müsste darunter der Sicherheitsdienst leiden. </p>
+                  <p>Die Streichung von Gnadengaben, ihre Nicht-Einrechnung, wäre eine Ungerechtigkeit. Diese Frage könnte gelöst werden, in einem Gesetz, das ausgearbeitet werden soll oder </p>
+                  <p>wir könnten das einer Vollzugsanweisung vorbehalten: Einrechnung einer gnadenweisen Erhöhung der Pension. Das gleiche gilt bis zu einem gewissen Grad für die </p>
+                  <p>Finanzwache, soweit sie als Sicherheitskorps in Betracht kommt.</p>
+                  <p>Im § 1 Titeländerung: Normale altösterreichische Ruhegenüsse.</p>
+                  <p>Paul: </p>
+                  <p>Das Gesetz bringt große Begünstigungen, welche im allgemeinen zufriedenstellen müssen, aber ein schweres Bedenken habe ich dagegen, dass der </p>
+                  <p>Wirkungsbeginn des Gesetzes für jene Klasse von P[ensionisten], welche am meisten drängen und nicht mehr leben können, die Altp[ensionisten], die vor dem Umsturz </p>
+                  <p>pensioniert wurden, dass der Wirkungskreis des Gesetzes für sie nicht festgesetzt wird und für sie durch Verwaltungsmaßregeln abgeholfen werden soll. </p>
+                  <p>Es soll durch Beihilfen ausgeholfen werden. Wenn sie gegeben werden wie [die Beihilfen für] jene, welche aus den Sukzessionsstaaten in Österreich leben und hier Bezüge auf </p>
+                  <p>?Erleichterung erhalten, so wäre dem abgeholfen, aber darüber müsste eine feierliche Erklärung abgegeben werden. Die übrigen hätten die erhöhten Bezüge, </p>
+                  <p>aber sie wüssten nicht, wann sie diese Erhöhungen bekommen werden. Ich glaube nicht, dass die Vereinbarungen in vier Monaten beendet sein werden. Durch [eine] Vollzugsanweisung </p>
+                  <p>sollte festgestellt werden, welcher Zeitpunkt die Grenze zwischen den alt- und neuösterreichischen Bediensteten bezeichnet. Der beste Zeitpunkt [wäre] der 1. November, der </p>
+                  <p>12. November oder der 1. Jänner '19. Vor Jänner '19 wurde die Zwangsp[ensionierung] in der Annahme geschaffen, dass sie noch von den Sukzessionsstaaten </p>
+                  <p>übernommen werden. Das ist aber nie festgestellt worden. Wir - [Es] müsste in den Vollzugsvorschriften festgestellt [werden], wann der altösterreichische P[ensionist] aufhört.</p>
+                  <p>[<hi rend="#i">Am Rand:</hi>] Strengere Fassung bezüglich der Beihilfen, um die Altpensionisten zu </p>
+                  <p>befriedigen.</p>
+                  <p><pb facs="krp-0145_s01-0005"/>Deutsch: </p>
+                  <p>[Ich] erbitte die Berücksichtigung der Militärpersonen, das Staatsamt für Finanzen stimmt ja zu. [Ich] wünsche eine Form, die nach außen deutlich macht, dass </p>
+                  <p>die Militärp[ensionisten] inhaltlich und zeitlich mit den Zivilp[ensionisten] gleichbehandelt werden. Mir scheinen die Ausführungen Grimms plausibel, dass man </p>
+                  <p>in das Gesetz einen Paragraphen hineinnimmt, welcher die Angleichung jener vornimmt, welche anzugleichen sind [während] für die übrigen eine besondere Regelung </p>
+                  <p>vorbehalten wird. Ich werde das Gesetz nicht verzögern und [es] würde [sich] im Staatsamt eine Einigung über diesen Paragraphen finden lassen. [Ich würde] dringen darauf, dass auch </p>
+                  <p>für den Rest analog wie für die Zivilpensionisten -. </p>
+                  <p>[Ich ersuche um] die prinzipielle Zusicherung, dass die Militärp[ensionisten] gleich behandelt werden, sowohl materiell als auch zeitlich.</p>
+                  <p>[<hi rend="#i">Am Rand:</hi>] Ausdehnung des Gesetzes auf [das] Militär hinsichtlich aller Personen, wo [eine] gleiche Behandlung mit [den] Zivilangestellten erfolgt. Besonderheiten des Militärs durch [ein] eigenes Gesetz zu regeln. Stimmt Vorschlag Grimm zu.</p>
+                  <p>Miklas: </p>
+                  <p>Deutsch hat gewünscht, dass die Militärp[ensionisten] alten Standes gleich gehandelt werden mit den Zivilangestellten. Der gleiche Fall </p>
+                  <p>trifft zu bei den Pensionisten der Seelsorgegeistlichkeit. Diesbezüglich ist im K[oalitions]-Pakt ein Passus vorgesehen, auch bei der </p>
+                  <p>Beratung des Budgetausschusses des Kongruagesetzes und im Parlament wurde die - gefragt, wann die [Regelung der] Ruhegenüsse der Seelsorgegeistlichkeit </p>
+                  <p>kommt und [eine] gleichzeitige Regelung versprochen wurde. Der Gesetzentwurf für die Seelsorgegeistlichkeit soll gleichzeitig eingebracht werden.</p>
+                  <p>§ 17 ist der Kern des ganzen Gesetzes. Er sagt, dass alle altösterreichischen P[ensionisten] für die nächste Zeit keine </p>
+                  <p>gesetzlichen Ansprüche auf [eine] erhöhte Pension haben. Wesentlich gemildert wurde dies durch die Erklärung, man sei bereit, im administrativen [Weg] </p>
+                  <p>durch Beihilfen entgegenzukommen, wahrscheinlich in der Höhe, wie sie sich nach dem Gesetz ergeben würde. Die Vereinbarungen mit den Nationalstaaten </p>
+                  <p>werden noch Jahre dauern, denn ich sehe nicht ein, welchen zwingenden Grund die anderen Nationalstaaten haben sollten, mit uns darüber zu verhandeln. </p>
+                  <p>Vielleicht hat die Sache für uns sogar [eine] ungünstige Rückwirkung. Es setzt das die alte Liquidationsmasse voraus, die durch das Gesetz beseitigt wurde, </p>
+                  <p>aber dem Staatsamt für Finanzen scheinbar noch immer vorstellt - [vorschwebt]. Die Nationalstaaten würden auch Ansprüche auf die Quotenbeiträge für ihre Pensionisten mit </p>
+                  <p>Valuta ?unterscheiden. [Ich] warne vor dieser Bestimmung.</p>
+                  <p>[<hi rend="#i">Am Rand:</hi>] § 17 nicht glücklich; Vereinbarung mit den Nationalstaaten wird nicht zustande kommen; sieht - [setzt eine] gemeinsame Liquidierungsmasse voraus, die Österreich nicht anerkennt; würde uns vielleicht zu Beiträgen für die Pensionisten in den Nationalstaaten in der höheren Währung verpflichten, daher besser Fassung nach § 1 des Seelsorgerruhegenußgesetzes &lt; &gt;, damit die bei uns zuständigen Altpensionisten gleich Anspruch haben. [Ich] schlage vor, die Fassung wie im Seelsorge[gesetz]: '</p>
+                  <p>Dieses Gesetz tritt am 1. Juni '20 in Kraft, für die altösterreichischen P[ensionisten] jedoch nur insofern, als die Erhebung eines Anspruchs </p>
+                  <p>gegen die österreichische Regierung aus dem Titel ihrer Pension gemäß Artikel 216 des Friedensvertrages nicht ausgeschlossen ist. Dieser Artikel sagt, </p>
+                  <p>dass wir die P[ension] der altösterreichischen P[ensionisten] zu zahlen haben mit Ausnahme jener, welche die Staatsbürgerschaft eines anderen Staates angenommen haben oder </p>
+                  <p>aufgrund des Opt[ions]-Rechtes annehmen können. Der Artikel ist negativ gefasst, aber positiv gemeint. Alle jene Pensionisten, welche sich bei </p>
+                  <p>uns befinden, wird ihnen der Anspruch gegeben, das geschieht bei jenen, welche bei uns zuständig ist. Übrig blieben jene, deren Zuständigkeit zweifelhaft ist. </p>
+                  <p>Darüber müsste im einzelnen Fall entschieden oder mit den Sukzessionsstaaten verhandelt werden. Nach der jetzigen Fassung fallen alle Altpensionisten </p>
+                  <p>nahezu außerhalb des Gesetzes.</p>
+                  <p>Resch: </p>
+                  <p>Grimm hat in seiner Begründung eine Erörterung gegeben über [die Paragraphen] 1 und 2 des Pensionsbegünstigungsgesetzes. Er hat einen Unterschied gemacht zwischen </p>
+                  <p>beiden Paragraphen und gefunden, dass im § 2 die Pension[isten] gemeint wurden, welche zwangsweise pensioniert wurden. Ich kann diesen </p>
+                  <p>Unterschied nicht begreifen. Ich glaube, wir haben die Leute durch das Pensionsbegünstigungsgesetz gezwungen, in die Pension zu gehen. Wenn § 4, Absatz 2 </p>
+                  <p>für § 1-Leute eine schwächere finanzielle Lage schafft, so müsste man die Sache klarer fassen. Der § 4, Absatz 2 stellt eine reine </p>
+                  <p>Ermessenssache auf. [Es sollte heißen]: Alle jene P[ensionisten], welche - die einen guten Grund haben, die ?befugt sind, sind auch bei § 1 mit einer Zulage </p>
+                  <p>zu beteilen. Sonst ist der Paragraph zu weit gefasst.</p>
+                  <p>§ 8 hängt damit zusammen. Hier werden die Hinterbliebenen der § 2-Leute begünstigt, die Hinterbliebenen der § 1-Leute </p>
+                  <p>nicht. Auch hier sollte [eine] Gleichstellung erfolgen.</p>
+                  <p>§ 10, Stichtag 1. Jänner 1920. Gilt das von den Aktiven an oder wenn er schon in Pension ist?</p>
+                  <p>[<hi rend="#i">Am Rand</hi>:] § 10. Gilt der Stichtag 1. Jänner ohne Rücksicht, ob der Betreffende damals schon in Pension oder noch in Aktivität war?</p>
+                  <p><pb facs="krp-0145_s01-0006"/>§ 17. Ich glaube, dass dieser Paragraph nur ein Wechsel auf sich ist, das nützt aber den Beamten nichts. Von den Beihilfen </p>
+                  <p>für die Altp[ensionisten] ist im Gesetz nicht die Rede. Man sollte sagen, dass er staatliche Beihilfen bekommt zur Pension, wenn er auch nach dem Gesetz </p>
+                  <p>keinen Anspruch hat.</p>
+                  <p>Renner: </p>
+                  <p>Es sind [zwei] Vorfragen zu lösen. [Die erste betrifft] den Umfang der Vorlage: Sie betrifft nur die zivilen P[ensionisten], [eine Regelung für] die Militärs und die Seelsorgegeistlichkeit </p>
+                  <p>ist nicht drinnen. Ich meine, es ist das für die parlamentarische Verhandlung sehr unangenehm, es muss dreimal verhandelt [werden]. Es ist die Gefahr, </p>
+                  <p>dass [ein] späteres Gesetz Abweichungen bringt. Das ist eine große Schwierigkeit. Könnte man nicht alle drei Materien in einer Vorlage machen? Dann hätte man </p>
+                  <p>alles auf einmal zu erledigen.</p>
+                  <p>Das Zweite ist der § 17. Ich weiß nicht, wann die P[ensionisten] in die erhöhten Bezüge treten können. Was gewinnen wir dadurch? </p>
+                  <p>Das Rechnungspersonal wird durch die verschiedenen Kategorien von Zuwendungen belastet. Es wäre besser, alles auf einmal in Ordnung zu bringen.</p>
+                  <p>Ich halte es [für] ausgeschlossen, hinauszugehen und den Eindruck hervor[zu]rufen, dass die Leute für den 1. Juni eine Gebühr bekommen. </p>
+                  <p>Man weiß nicht, wie dann die Preisverhältnisse stehen werden. Man sollte die Sache zur Gänze abschließen.</p>
+                  <p>[Ich] bitte um Äußerung ob man die Vorlage nicht umarbeiten sollte.</p>
+                  <p>Grimm: </p>
+                  <p>Die erste Frage habe ich beantwortet. Reisch meint, die Militärpensionisten separat zu behandeln wegen der Länge der Verhandlungen </p>
+                  <p>mit dem Heeresamt. Nachdem die Zeit schon drängt, das Gesetz einzubringen, [wäre diesbezüglich] separat zu verhandeln. Es wäre möglich, die Militärpensionisten </p>
+                  <p>durch einen Paragraphen einzubeziehen bezüglich jenes Umfangs, nach welchem die Militärpensionisten und das [gleiche] Gesetz fallen können wie die Angestellten. </p>
+                  <p>Das würde aber für alle gelten. Bei den gemeinsamen Angestellten und den Militärs sind die Vereinbarungen mit den Nationalstaaten noch viel weniger </p>
+                  <p>weit vorgeschritten.</p>
+                  <p>[<hi rend="#i">Am Rand:</hi>] Einbeziehung der Militärs mit gleicher Grundlage wie Zivile in das Gesetz möglich, würde dann aber für alle gemeinsamen Offiziere gelten.</p>
+                  <p>[Zu] § 17: Eine Änderung würde dem gleichkommen, was der Kabinettsrat negiert hat, dass wir zu unseren Ungunsten Artikel 216 </p>
+                  <p>negieren. Dieser Artikel wurde dahin ausgelegt, er erklärt, was uns nicht zu belasten hat, sagt aber nicht, welche Pensionen wir zu übernehmen haben. </p>
+                  <p>Es wird schließlich auf die Staatsbürgerschaft ankommen. Diese Lösung ist nicht günstig für uns, wir sollten sie aber nicht von vornherein auf uns nehmen.</p>
+                  <p>Renner: </p>
+                  <p>Wir zahlen ja und können sagen, wir zahlen diese Gebühr mit dem Vorbehalt der Vereinbarungen auf [Rechnung] der anderen Nationalstaaten. </p>
+                  <p>Wenn ich vor der Reparationskommission plädiere, [macht es keinen Unterschied ob ich sage], ich habe ihm die Pension gezahlt oder die Beihilfe. Wenn ich sagen kann, die Leute haben für die Gemeinsamkeit </p>
+                  <p>gedient, sie müssen aufgeteilt werden auf alle Nationalstaaten, so wird das ohnedies umgerechnet werden und ich habe nur [einen] Ersatzanspruch an den anderen Staat. </p>
+                  <p>Ich sehe keinen Unterschied, ich mache einen Rechtsvorbehalt im Gesetz und sage zur Auszahlung bringen wir diese und diese Bezüge.</p>
+                  <p>Grimm: </p>
+                  <p>Nach dem - dieser Vorschlag wäre das Ende der Vereinbarungen. Dann haben wir schon die Vereinbarung in uns getroffen. Kein Nationalstaat </p>
+                  <p>wird auf ein Übereinkommen eingehen. Ein Weg wäre möglich ohne uns wesentlich zu schädigen für die Zukunft: Mit den übrigen Nationalstaaten </p>
+                  <p>haben wir Vereinbarungen getroffen, mit der Tschechei aufgrund – haben wir innerhalb der ganzen Pensionsparteien festgestellt, wer nach Tschechien </p>
+                  <p>fällt. Die Tschechen haben das übernommen. Wir sind weiter gegangen. Wir zahlen jene, welche wir nach dem Grundsatz der Reziprozität zu bezahlen haben und jene, </p>
+                  <p>welche bei uns zuständig sind. Ähnlich ist es mit Jugoslavien und Polen. Die sind ausgegangen von der Nationalität. [Sie zahlen die], die in Galizien in [...] </p>
+                  <p>stehen, dann alle, welche bei uns wohnen, aber polnischer Nationalität sind. Ähnlich die Jugoslaven. Es wäre möglich, dass wir uns bei der Bezahlung der </p>
+                  <p>erhöhten Pensionen rein auf das Reziprozitätsprinzip stellen. § 1 hätte einen Zusatz [zu erhalten]: Der Umfang der schon im gegenwärtigen Zeitpunkt </p>
+                  <p>hiernach Bezugsberechtigten wird durch Vollzugsanweisung bestimmt. Darin würde die Rez[iprozitäts]-Bestimmung übernommen werden. Jene, welche darüber hinaus fallen, </p>
+                  <p>bekommen keine erhöhte Pension. Das sind jene, von denen wir nicht wissen, ob wir sie übernehmen müssen oder nicht. Die Gefahr eines </p>
+                  <p>Präjudikates bei Vorbehalt der Vereinbarungen ist nicht sehr groß. Bei den Militärs zahlen wir alle, welche bei uns wohnen und </p>
+                  <p><pb facs="krp-0145_s01-0007"/>in Tschechien noch die Deutschen.</p>
+                  <p>Renner: </p>
+                  <p>Die Regelung durch eine Vollzugsanweisung wäre ja möglich, außerdem noch [einen] Vorbehalt der seinerzeit zu treffenden </p>
+                  <p>Vereinbarungen. Ist die Möglichkeit, dass die Militär- und Seelsorgevorlage in ein Gesetz zusammengezogen werden? Solche Sachen </p>
+                  <p>lassen sich [besser] im ganzen schlucken und machen sich leichter, wenn sie zusammengezogen werden.</p>
+                  <p>Die Frage des Wirksamkeitsbeginns: Die Rechnungsbeamten sind so ganz verrückt.</p>
+                  <p>Grimm: </p>
+                  <p>Wir könnten das Gesetz vom 1. <hi rend="#s">Jänner</hi> - März in Kraft treten lassen, aber die Pensionsbegünstigung erfordert eine Durchrechnung </p>
+                  <p>jedes einzelnen P[ensionisten], die 4 - 5 Monate dauert. Wir müssen also mit Vorschüssen oder Beihilfen arbeiten bis alles durchgerechnet </p>
+                  <p>ist.</p>
+                  <p>Renner: </p>
+                  <p>Wir sollten den Unterschied der Behandlung zwischen Zivilen und Militärs in der äußeren Behandlung verschwinden [lassen].</p>
+                  <p>Fink: </p>
+                  <p>Man sollte über - alle drei Kategorien zusammenfassen.</p>
+                  <p>Re[nner]: </p>
+                  <p>Beschluss: Alle drei Vorlagen, Militär, Seelsorger und Zivile werden in ein einziges Gesetz nach Hauptstücken zusammengezogen. </p>
+                  <p>Als Wirksamkeitstermin wird der 1. März in Aussicht genommen, bis zur Durchrechnung werden Vorschüsse erteilt.</p>
+                  <p>[Bezüglich] der Versorgungsgenüsse der altösterreichischen P[ensionisten], bei welchen die Versorgungspflicht noch nicht feststeht, wird in § 1 der Umfang nur </p>
+                  <p>allgemein charakterisiert und auf eine Vollzugsanweisung Bezug genommen, welche die bisherigen Rez[iprozitäts]-Vereinbarungen wiedergibt.</p>
+                  <p>[Bezüglich] § 4 - hält die Finanzverwaltung die Unterscheidung aufrecht? Ich glaube, dass es zweckmäßig wäre.</p>
+                  <p>Eldersch: </p>
+                  <p>Bei § 4 könnte man die Unterscheidung aufheben, wenn ein anderer Paragraph ins Gesetz hineinkäme: </p>
+                  <p>Jeder dessen Einkommen [um] 25 % höher ist als die Pension nach dem neuen Gesetz, bekommt die Erhöhung nicht. Das gesamte </p>
+                  <p>Einkommen, alte Pension, Vermögenseinkommen – </p>
+                  <p><hi rend="#s">Pension[isten], welche in [eine] Erwerbsstellung über[ge]gangen ist und deren Erwerb -.</hi></p>
+                  <p>Zerdik: </p>
+                  <p>Man müsste dabei ein Wörtchen hineinnehmen: 'Insolange'.</p>
+                  <p>Renner: </p>
+                  <p>Ist die Pensionsliquidation im Besitz -. Es muss ein umfangreiches Kontrollsystem eingeführt werden. </p>
+                  <p>Er muss seine Fassion, die Steuervorschreibung für das Jahr muss er vorlegen. Wenn die persönliche Einkommensteuer ein solches Einkommen </p>
+                  <p>nachweist, dann bekommt er nichts. Das ist auch politisch nötig. [Man sollte sich] auf die Einkommensteuer stützen, gar nicht unterscheiden; </p>
+                  <p>maßgebend wäre nur die Vorschreibung der Einkommensteuer.</p>
+                  <p>Fink: </p>
+                  <p>Die alte Pension bleibt, es handelt sich nur um die Erhöhung?</p>
+                  <p>Grimm: </p>
+                  <p>Das Staatsamt für Finanzen will nicht [...] vorgehen, aber die Möglichkeit lassen, innerhalb der Grenzen die Berücksichtigungswürdigkeit abzustufen.</p>
+                  <p><pb facs="krp-0145_s01-0008"/>Renner: </p>
+                  <p>Die Motive, aus denen er in Pension gegangen ist, sind gleichgültig. Lassen Sie [in] § 4 die Unterscheidung </p>
+                  <p>fallen. Man muss sich daran halten, wenn er für die Steuer nicht mehr hat, hat er auch für die Pension nicht mehr. Ein eigenes Verfahren geht </p>
+                  <p>nicht. Wer um 25 % mehr hat, bekommt keine Erhöhung. Er muss eine Erklärung abgeben und das belegen mit dem Steuervorschreibung. </p>
+                  <p>Das muss alle Jahre geschehen.</p>
+                  <p>Paul: </p>
+                  <p>Wir haben heute bei den P[ensionisten] mit aller Mühe und [nach] langer Beratung einen einfachen Vorgang in der Auszahlung [erreicht]: Den bargeldlosen Verkehr. </p>
+                  <p>Es ist eine Stelle, welche monatlich liquidiert, anweist, ohne Rücksicht ob er lebt oder nicht. Die Post muss das auszahlen. [Das ist] ein Verkehr, der sich </p>
+                  <p>sehr einfach gestaltet. Die Zentralstelle ist die Finanzlandesdirektion bzw. eine gemeinsame Stelle der Eisenbahn. Der P[ensionist] ist gar nicht bekannt, </p>
+                  <p>seine persönlichen Verhältnisse sind nicht bekannt. Wenn er am 1. dem Briefträger die Anweisung unterschreibt, so bekommt er das Geld. </p>
+                  <p>Wird eine Änderung getroffen, dass etwas vorgewiesen werden muss, oder andere Evidenzen geführt werden müssen, so ist dieses ganze System unmöglich.</p>
+                  <p>Wir kümmern ums das ganze Leben bei einem Beamten nicht darum, ob er Vermögen hat oder nicht. Er erwirbt sich die Anwartschaft, hat </p>
+                  <p>darauf die Pension durch seine Dienstzeit. In der Pension fragen wir auf einmal, ob er Vermögen hat oder nicht und geben ihm gewisse Begünstigungen </p>
+                  <p>nicht, wenn er Vermögen hat.</p>
+                  <p>[<hi rend="#i">Am Rand:</hi>] Pensionsanspruch ist ein gesetzliches Recht der Beamten, erworben durch ihre Dienstleistung und Einzahlung der Pensionsbeiträge; Kürzung wegen Vermögensbesitzes daher unmöglich, mindestens bei jenen, die mit vollem Anspruch in Pension gegangen sind. Durch verlangte Nachweisungen würden auch die Pensionisten ohne Mehreinkommen um die rechtzeitige Anweisung der Erhöhungen gebracht.</p>
+                  <p>Renner: </p>
+                  <p>Die Argum[entation] ist richtig für die Ausgedienten, aber nicht für die im arbeitsfähigen Alter Ausgetretenen.</p>
+                  <p>Paul: </p>
+                  <p>Wir hatten [...] ein Gesetz, dass jene mit 20 Jahren den Dienst verlassen haben - konnten. Er musste auf die Pension verzichten. </p>
+                  <p>Jetzt ist er weggegangen und er wird gepackt. Wenn wir das auf alle anderen Begünstigungen anwenden, so können wir nicht die 35-jährigen </p>
+                  <p>damit treffen. Er hat Anspruch auf die Pension, [diese] haben ihre Pensionsbeiträge selbst gezahlt. Außerdem würde man durch irgendwelche </p>
+                  <p>Vorlagen das Auszahlungsverfahren umstürzen. Auch die Armen bekämen nicht ihre Pension.</p>
+                  <p>Eldersch: </p>
+                  <p>Ich denke nicht [daran], einen großen Apparat zu schaffen. Es ist auch nicht notwendig, die Auszahlungsform zu ändern, sondern es fällt </p>
+                  <p>ihm der Beweis zur Last, ein besonderes Einkommen zu melden. Ich brauche nur die Vorschrift im Gesetz zu haben. Die Fälle, welche wir </p>
+                  <p>packen wollen, [sind jene] welche uns eine Erhöhung der Pension unmöglich machen. [Es geht nicht], dass der arme Staat eine Pension einem Menschen erhöhen soll, welcher </p>
+                  <p>sich ein normales Nebeneinkommen geschaffen hat. Eine Unterlassung der Meldung ist ein Betrug.</p>
+                  <p>Grimm: </p>
+                  <p>Es muss ein Kontrolldienst eingerichtet werden.</p>
+                  <p>Renner: </p>
+                  <p>Dann ist es besser, er muss es ansprechen, wenn er mehr haben will. Das ist [in] Absatz 2 gedacht, nur sind die </p>
+                  <p>Voraussetzungen anders. Es ist hier auf das Belieben des Vorgesetzten gestellt. Man müsste sagen, er muss nachweisen, dass er kein höheres Einkommen hat.</p>
+                  <p>Zerdik: </p>
+                  <p>Die Zentralstelle kann feststellen, ob er eine Anstellung hat.</p>
+                  <p>Grimm: </p>
+                  <p>[Man könnte] den § 4 lassen und einen Zusatz machen für [§] 1- und [§] 2-Leute, dass [jemand] keinesfalls Anspruch auf die Erhöhung hat, wenn er </p>
+                  <p>diese Einkommensgrenze überschreitet. Durch den <hi rend="#s">Paragraphen</hi> - Absatz 2 haben wir die Möglichkeit, festzustellen, ob er auch unter der Einkommensgrenze </p>
+                  <p>berücksichtigungswürdig ist.</p>
+                  <p><pb facs="krp-0145_s01-0009"/>Renner: </p>
+                  <p>Al. 3: Auf die Pensionserhöhung haben solche Parteien keinen Anspruch, welche ein bestimmtes Einkommen <hi rend="#s">verhältnismäßig</hi> – </p>
+                  <p>im Verhältnis zu den Ruhegenüssen überschreiten.</p>
+                  <p>Alt- und neu[österreichische Pensionisten].</p>
+                  <p>[...].</p>
+                  <p>Neuösterreichische [Pensionisten] sind nur jene, welche von Deutschösterreich übernommen wurden und von ihm in Pension geschickt wurde. Das Kriterium </p>
+                  <p>muss sein, ob er übernommen wurde oder nicht. Es ergeben sich Schwierigkeiten, es gibt Nicht-Übernommene, welche später pensioniert worden sind.</p>
+                  <p>Paul: </p>
+                  <p>Unter den Zwangsp[ensionierten] sind Leute, welche man nicht zum Gelöbnis genommen hat, weil man wusste, dass er in Pension </p>
+                  <p>zu gehen hat.</p>
+                  <p>Renner: </p>
+                  <p>Wer nicht übernommen ist, ist Altösterreicher, es ist nicht der Zeitpunkt maßgebend, sondern es hängt vom </p>
+                  <p>Übergangsakt ab.</p>
+                  <p>Bis wann soll die Umarbeit[ung] fertig sein?</p>
+                  <p>Die Sonderbestimmungen über die Gendarmerie sind in eine Vollzugsanweisung aufzunehmen. Es ist ein Rahmen festzulegen.</p>
+                  <p>[<hi rend="#i">Am Rand:</hi>] Grimm: Die P[ensionisten]organisationen verlangen, dass das Gesetz ihnen zur Überprüfung vorgelegt werden soll. </p>
+                  <p>Es soll auch in der par[itätischen] Kommission [...], [es wurde] aber keine Zusage gemacht. </p>
+                  <p>Die Organisationen haben nichts dabei zu machen. Es wird im Ausschuss verhandelt und </p>
+                  <p>dort können die Organisationen noch Einfluss nehmen. [Man] sollte beschließen, dass ein Einvernehmen </p>
+                  <p>mit den Organisationen nicht zu pflegen wäre.//</p>
+                  <p>4.</p>
+                  <p><hi rend="#s">Grimm: Hinterbliebe-.</hi></p>
+                  <p>Renner: </p>
+                  <p>Das umgearbeitete Gesetz kann vorgelegt werden, [dabei wäre mitzuteilen, dass] der Kabinettsrat sich aber auf Änderungen nicht einlässt; Abänderungswünsche müssten also dem Parlamentsausschuss </p>
+                  <p>vorgebracht werden.</p>
+                  <p>4.</p>
+                  <p><hi rend="#s">[Grimm]: Hinterblieb-.</hi></p>
+                  <p>Miklas: </p>
+                  <p>Das Seelsorgegesetz erscheint erledigt und wird dem Staatsamt für Finanzen übergeben.</p>
+                  <p>4.</p>
+                  <p>Grimm: Hinterbliebene.</p>
+                  <p>Anschließend an das Besoldungsgesetz entfällt die fixe Bemessung nach Rangsklassen. Es wurde das Gemein[de]system übernommen, </p>
+                  <p>wonach mit 50 % des Gehalts samt Erhöhung die Pension bemessen wird, dazu ein Zuschlag von 70 % des Ortszuschlages </p>
+                  <p>des Gatten. Damit sollte [es möglich sein], eine Annäherung an die Pensionshöhe von Wien zu erreichen. Die Wiener Gemeindebeamten haben noch höhere </p>
+                  <p>Versorgungsgenüsse, aber das zwischenstaatsamtliche Komitee hat dagegen keine Einwendung erhoben, dass wir gegenüber den Wiener Gemeindebeamten zurückbleiben. </p>
+                  <p>Die Bezüge sind höher, besonderes macht sich das geltend bei den staatlichen Lehrpersonen.</p>
+                  <p>§ 2, Recht auf Erziehungsbeiträge. [Dies bedeutet eine] Verschlechterung gegenüber jetzt wie im Besoldungsübergangsgesetz. Um da eine Einheitlichkeit mit den </p>
+                  <p>übrigen Bestimmungen zu erreichen wurde diese Grenze aufgenommen. Es ist aber möglich, dass die Organisation eine Änderung verlangt.</p>
+                  <p>[<hi rend="#i">Am Rand:</hi>] Erziehungsbeiträge nur bis zum 21. Jahr (Übereinstimmung mit dem Besoldungsübergangsgesetz); Abänderungsanträge wahrscheinlich.</p>
+                  <p>Das Mehrerfordernis [beträgt] im ersten Jahr 5 Millionen, [über] 10 Jahre 27-30 Millionen.</p>
+                  <p>[<hi rend="#i">Am Rand:</hi>] Gleitende Zulage nach § 4 des Pensionsgesetzes.</p>
+                  <p>Paul: </p>
+                  <p>§ 7, 31. Mai '20.</p>
+                  <p><pb facs="krp-0145_s01-0010"/>Grimm: </p>
+                  <p>Wir nehmen an, dass bis dahin die Aktivbezüge geregelt sein werden, besonders bei den Arbeitern. Daher wurde dieser Termin </p>
+                  <p>hineingenommen. Trifft das nicht zu, so ist das böse, so tritt [eine] Rückwirkung ein.</p>
+                  <p>Paul: </p>
+                  <p>Das Gesetz tritt mit 1. Jänner '20 in Kraft bei allen, deren Bezüge schon geregelt sind. Wo das nicht der Fall ist, </p>
+                  <p>wie bei den Eisenbahnbediensteten, weil ihr Vorschrift noch - erst durch [eine] Vollzugvorschrift in Vollzug gesetzt wird, die verlieren fünf Monate an Bezügen. </p>
+                  <p>Das ist nicht haltbar.</p>
+                  <p>Grimm: </p>
+                  <p>Es [ist] nicht die Staatsverwaltung schuld, sondern die Eisenbahnbediensteten und die Postangestellten, welche das Besoldungsübergangsgesetz </p>
+                  <p>nicht wollen.</p>
+                  <p>Paul: </p>
+                  <p>Es ist nicht möglich, drei Viertel der Staatsangestellten vom Gesetz auszuschließen, weil ihre Bezüge nicht fertig ausgearbeitet sind.</p>
+                  <p>Grimm: [Ich habe] keine Einwendung, als Termin den 1. Jänner einzustellen. Auch diese beiden erhalten eine gleitende Zulage </p>
+                  <p>nach dem IV. Abschnitt des ersten Gesetzes.</p>
+                  <p>Resch: </p>
+                  <p>Bei der Verleihung von Titel und Charakter ist der Pensionsbezug höher. Bei dem neuen Gesetz würde das nicht der Fall sein. </p>
+                  <p>Dazu kommt noch der Entfall an Erziehungsbeiträgen. Wenn die Witwe nach einem titulierten Ministerialrat - so wird die Pension nach der VI. Rangsklasse </p>
+                  <p>berechnet.</p>
+                  <p>Eldersch: </p>
+                  <p>Mit Rücksicht auf die Erhöhungen der Pensionen könnten die Kunstgriffe verschwinden. Ich muss betonen, dass die </p>
+                  <p>Pensionserhöhungen, welche gewährt wurden nach im Dienst verunglückten Personen des Sicherheitswachkorps hinfällig werden und [eine] Abhilfe </p>
+                  <p>nötig ist durch ein eigenes Gesetz, welches die Mitglieder und ihre Angehörigen besser stellt als alle übrigen Pensionisten.</p>
+                  <p>[<hi rend="#i">Am Rand</hi>:] Vorbehalt für den Weiterbestand der Pensionszahlungen für die Hinterbliebenen nach im Dienste verunglückten Angehörigen des Sicherheitswachkorps.</p>
+                  <p>Fink: </p>
+                  <p>Dagegen ist vom Staatsamt für Finanzen keine Einwendung. Der Antrag Resch wegen Titel und Charakter?</p>
+                  <p>Grimm: </p>
+                  <p>Das passt nicht in das System, weil die Pensionen nicht mehr nach Rangsklassen bemessen werden, sondern nach den Aktivbezügen.</p>
+                  <p>Mayr: </p>
+                  <p>Dann muss man den Titel und Charakter überhaupt abschaffen. Es kann Fälle geben, wo jemand nicht Sektionschef werden kann, man verleiht </p>
+                  <p>ihm Titel und Charakter, dann hat wenigstens seine Witwe etwas davon.</p>
+                  <p>Fink: </p>
+                  <p>Bei Titel und Charakter tritt auch ein Rangsverhältnis ein.</p>
+                  <p>Genehmigt.</p>
+                  <p>[<hi rend="#i">Am Rand:</hi>] Fassung des Finanz-Amtes mit Änderung des Termins in § 7 vom 1. Mai auf 1. Jänner genehmigt.</p>
+                  <p>5.</p>
+                  <p>Zerdik: </p>
+                  <p><hi rend="#s">Ganze Besprechung verschafft</hi> - ?Rotky.</p>
+                  <p>Grimm: </p>
+                  <p>Die Verhandlungen hat nur Reisch geführt. Ich weiß, welches Widerstreben es Reisch gekostet hat, der Aktion zuzustimmen. </p>
+                  <p>Vom valutarischen Standpunkt haben wir kein Interesse an der Beteiligung. Bei der Aufteilung sollen wir zwei Drittel des Wertes der Gesellschaft überlassen, aber alle </p>
+                  <p>Investitionskosten sollen wir tragen. Wir haben den ganzen Kurssturz der Valuta auf uns nehmen müssen.</p>
+                  <p><pb facs="krp-0145_s01-0011"/>Durch den Vorschlag wird dieses ungünstige Verhältnis festgelegt für alle Zeiten und wir können nicht voraussagen, was der Staat zu tragen haben wird. </p>
+                  <p>Im Verhältnis 1:2 wird geteilt, es steigt das Vermögen der anderen Gesellschafter ohne dass sie mitzahlen und der Staat </p>
+                  <p>muss die Investitionskosten zahlen. Ich halte die Sache für zu gefährlich, als [dass] ich dazu Stellung nehmen [könnte]. [Ich] bitte zwei Tage bis zur </p>
+                  <p>Rückkehr Reischs zuzuwarten.</p>
+                  <p>Zerdik: </p>
+                  <p>Im Antrag ist das Einvernehmen mit Staatssekretär Reisch vorgesehen, es soll nur die Ermächtigung erteilt werden, wenn </p>
+                  <p>Reisch einverstanden ist, den Vertrag abzuschließen.</p>
+                  <p>Eldersch: </p>
+                  <p>[Ich] habe nur die Einwendung, dass wir kein Material bekommen haben.</p>
+                  <p>Zerdik: </p>
+                  <p>[Ich] hätte nichts gegen [eine] Vertagung.</p>
+                  <p>[Beschluss]: Angelegenheit vertagt bis zur Rückkehr Reisch.</p>
+                  <p><hi rend="#s">8.</hi> 5.</p>
+                  <p>Eldersch: </p>
+                  <p>Fräuleinstiftspräbenden.</p>
+                  <p><hi rend="#s">9.</hi> 6.</p>
+                  <p>Mayr statt Stöckler: </p>
+                  <p>Salzburger Gesetzentwürfe.</p>
+                  <p><hi rend="#s">10.</hi> 7.</p>
+                  <p>Mayr: </p>
+                  <p>Vorarlberg.</p>
+                  <p><hi rend="#s">11.</hi> 8.</p>
+                  <p>Mayr: </p>
+                  <p>Tirol.</p>
+                  <p><hi rend="#s">12.</hi> 9.</p>
+                  <p>Glöckel: </p>
+                  <p>Hochschulassistentengesetz.</p>
+                  <p>Grimm: </p>
+                  <p>Es ist das ein Angleichungsgesetz, gegen welches wir keine Einwendung erhoben haben. Aber dass die Bezüge der Hochschul-</p>
+                  <p>assistenten über das Gesetz vom 5. Dezember erhöht werden, dagegen müssen wir uns wehren. Wenn die Angleichung zu einer Aufbesserung </p>
+                  <p>ausgenützt wird, so gibt das zu Beispielsfolgerungen Anlass. Darum muss ich gegen diese Differenz Einspruch erheben.</p>
+                  <p>Glöckel: </p>
+                  <p>Es [geht] nicht um die Besserstellung, sondern es macht einen ungünstigen Eindruck, wenn die Hilfsassistenten sehen können, </p>
+                  <p>dass sie jetzt prozentuell ungünstiger gestellt werden. Auf diese Feinheit kommt niemand.</p>
+                  <p>Grimm: </p>
+                  <p>Bei 56 % war es dasselbe. Jetzt haben sie 75 % von 75 %, jetzt werden sie in - in </p>
+                  <p>direkte Relation gebracht. Die finanziellen Wirkungen kommen nicht in Betracht, sondern um Beispielsfolgerungen zu verhindern.</p>
+                  <p><pb facs="krp-0145_s01-0012"/>Glöckel: -.</p>
+                  <p>Grimm:</p>
+                  <p>60%.</p>
+                  <p/>
+               </div>
+               <div n="2">
+                  <head>[KRP 145, 6. Februar 1920, Stenogramm]</head>
+                  <p><pb facs="krp-0145_s02-0001"/>1. Renner: Ausscheidung von Vermögensobjekten und Verwaltungsobjekten, </p>
+                  <p>um den Kriegsgeschädigtenfonds zu konstituieren.</p>
+                  <p>2. Hanusch: Die Inv[aliden] und Kriegswitwen fangen an, kritisch zu werden. </p>
+                  <p>Der Kampf wird immer schwieriger, weil jetzt auch die Bundesländer [und] Parteien -. </p>
+                  <p>Die Landesregierungen machen Versprechungen ....</p>
+                  <p>Es ist nicht möglich, jetzt eine Vorlage auszuarbeiten. </p>
+                  <p>Nächste Woche sollen die Koalitionsparteien zusammentreten und über diese Frage gemeinsame Beratungen </p>
+                  <p>unter Zuziehung von [Vertretern der Staatsämter für] Soziale Verwaltung und Finanzen [abhalten].</p>
+                  <p>Grimm: -.</p>
+                  <p>3. Zerdik: Führung der Verhandlungen mit Prag. </p>
+                  <p>Marek hat mitgeteilt, dass [sie] einwandfrei geführt werden und dass es nicht notwendig ist, </p>
+                  <p>dass jemand hinauf kommt.</p>
+                  <p>4. Stöckler: Die Verkehrsfrage auf der Westbahn ist äußerst kritisch.</p>
+                  <p>5. Grimm: -.</p>
+                  <p>Eldersch: 1.) Differenzierung in § 4 </p>
+                  <p>bezüglich der Gend[armerie]-Off[iziere].</p>
+                  <p>2.) Milit[är]-Pensionisten.</p>
+                  <p>[Nötig wäre eine] Ermächtigung, im Wege einer Vollzugsanweisung gewisse Härten auszugleichen.</p>
+                  <p>4.) Anrechnung der Gnadengaben im Falle der Verunglückung im Dienst.</p>
+                  <p><pb facs="krp-0145_s02-0002"/>Paul: 1.) Altpensionisten, der Beginn der Wirksamkeit ist nicht festgesetzt.</p>
+                  <p>2.) Feststellung in einer Vollzugsanweisung, welcher Zeitpunkt die Grenze zwischen </p>
+                  <p>altösterreichischen und neuösterreichischen Bediensteten bezeichnet wird. </p>
+                  <p>1. /XI., 12. /XI. oder 1. /I. '19.</p>
+                  <p>Deutsch: Auch die Militärs sollen berücksichtigt werden. </p>
+                  <p>a) Einbeziehung der Anzugleichenden.</p>
+                  <p>b) Besondere Regelung für die anderen.</p>
+                  <p>Wünscht die prinz[ipielle] Zustimmung des Kabinettsrates, dass auch die Militärs analog behandelt werden.</p>
+                  <p>Miklas: 1.) Pensionierte Seelsorgegeistlichkeit gleichzeitig mit dem vorliegenden Gesetz.</p>
+                  <p>2.) § 17: Warnt vor der Fassung dieses Paragraphen.</p>
+                  <p>Resch: -.</p>
+                  <p>Renner: 1.) Könnte man nicht alle drei Materien in einer Vorlage machen?</p>
+                  <p>2.) § 17.</p>
+                  <p>Grimm: Ad 1.)</p>
+                  <p>Ad. 2.)</p>
+                  <p>Beschluss: 1.) Alle drei Vorlagen werden in ein einziges Gesetz zusammengearbeitet.</p>
+                  <p>2.) Als Wirksamkeitstermin wird der 1. III. in Aussicht genommen, bis zur Ausrechnung </p>
+                  <p>werden Vorschüsse erteilt.</p>
+                  <p>3.) Bezüglich der altöst[erreichischen Pensionisten] - so wird im § 1 der Umfang nur </p>
+                  <p>im allgemeinen charakterisiert und auf eine Vollzugsanweisung Bezug genommen. </p>
+                  <p>In dieser werden die bestehenden Rezipr[ozitäts]-Vereinbarungen hineingearbeitet.</p>
+                  <p><pb facs="krp-0145_s02-0003"/>[Eldersch]: § 4: Pensionisten, die in [eine] Erwerbsstellung übergegangen sind und das Gesamteinkommen um 25 % -.</p>
+                  <p>Zerdik: Ist gleich Eldersch.</p>
+                  <p>[Renner]: [Man sollte] im § 4 die alte Scheidung fallen lassen.</p>
+                  <p>Al. 3: Auf die Pensionserhöhung solche keinen Anspruch haben, welche ein bestimmtes Einkommen </p>
+                  <p>verhältnismäßig überschreiten.</p>
+                  <p>Die zeit[liche] Grenze [ist] der Übernahme-Akt.</p>
+                  <p>[Grimm]: [Man kann es] den Organisationen mitteilen, aber der Kabinettsrat wird sich nicht aufhalten lassen, </p>
+                  <p>Änderungen können sie beim Parlamentsausschuss vorbringen.</p>
+                  <p>Grimm: Hinterbliebene.</p>
+                  <p>Zerdik: ?Rathensberg. Vertagt.</p>
+                  <p>Eldersch: Punkt 5.</p>
+                  <p>Mayr für Stöckler: Punkt 6. a) Zugestimmt.</p>
+                  <p>Mayr für Stöckler: Punkt 6. b) Zugestimmt.</p>
+                  <p>Mayr für Stöckler: Punkt 6. c) Zugestimmt.</p>
+                  <p><pb facs="krp-0145_s02-0004"/>Glöckel: Punkt 7. Hochschulassistenten.</p>
+                  <p>Grimm: 60 %.</p>
+               </div>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

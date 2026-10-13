@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href='http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:acdh="https://vocabs.acdh.oeaw.ac.at/schema#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xml:lang="de">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="a" type="main" n="0195">Kabinettsprotokoll Nr. 195 vom 25. Juni 1920</title>
+            <title level="m" type="main" n="01">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <title level="m" type="sub" n="">Renner III (17. Oktober 1919 – 7. Juli 1920)</title>
+            <meeting>
+               <placeName key="https://d-nb.info/gnd/4066009-6">Wien</placeName>
+               <orgName key="https://d-nb.info/gnd/5162749-8">Kabinettsrat</orgName>
+               <date when-iso="1920-06-25"/>
+            </meeting>
+            <editor>
+               <persName key="https://d-nb.info/gnd/122481836"
+                         role="hasCreator"
+                         xml:id="hwohnout">
+                  <forename>Helmut</forename>
+                  <surname>Wohnout</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</affiliation>
+               <idno type="ORCID">0000-0002-3864-9839</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/120789825"
+                         role="hasCreator"
+                         xml:id="tolechowski">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0003-3291-6876</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/131679384"
+                         role="hasCreator"
+                         xml:id="rlein">
+                  <forename>Richard</forename>
+                  <surname>Lein</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0002-7502-0503</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="aholzer">
+                  <forename>Anna</forename>
+                  <surname>Holzer</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0005-3560-3500</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="dsoelkner">
+                  <forename>Dominik</forename>
+                  <surname>Sölkner</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-9895-7212</idno>
+            </editor>
+            <editor>
+               <persName role="hasContributor" xml:id="ischotzko">
+                  <forename>Ina</forename>
+                  <surname>Schotzko</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-5210-3713</idno>
+            </editor>
+            <funder n="1">
+               <orgName key="https://d-nb.info/gnd/2054142-9" role="hasFunder">Österreichischer Wissenschaftsfonds FWF</orgName>
+               <idno type="project">PAT1495024</idno>
+               <title type="project">Die Protokolle des österreichischen Kabinettsrates 1919–1920</title>
+            </funder>
+            <respStmt>
+               <resp>Projektverantwortung</resp>
+               <orgName key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Projektleitung</resp>
+               <persName key="https://d-nb.info/gnd/120789825" role="hasPrincipalInvestigator">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+                  <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+                  <idno type="ORCID">0000-0003-3291-6876</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Nationaler Forschungspartner</resp>
+               <orgName key="https://d-nb.info/gnd/1123037736" role="hasEnabler">Austrian Centre for Digital Humanities</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Digitalisierung der gedruckten Quellen</resp>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>TEI-Datenmodellierung</resp>
+               <persName role="hasContributor" xml:id="tfruehwirth">
+                  <forename>Timo</forename>
+                  <surname>Frühwirth</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-3997-5193</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technische Supervision</resp>
+               <persName key="https://d-nb.info/gnd/1043833846"
+                         role="hasContributor"
+                         xml:id="pandorfer">
+                  <forename>Peter</forename>
+                  <surname>Andorfer</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-9575-9372</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technisches Consulting und Vorbereitung der Druckausgabe</resp>
+               <persName key="https://d-nb.info/gnd/13281899X"
+                         role="hasContributor"
+                         xml:id="skurz">
+                  <forename>Stephan</forename>
+                  <surname>Kurz</surname>
+                  <affiliation key="https://d-nb.info/gnd/1202798799">Institut für die Erforschung der Habsburgermonarchie und des Balkanraumes</affiliation>
+                  <idno type="ORCID">0000-0003-2546-2570</idno>
+               </persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher key="https://d-nb.info/gnd/1001454-8">Österreichische Akademie der Wissenschaften</publisher>
+            <date when="2028"/>
+            <availability status="free">
+               <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">Lizenziert unter CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/deed.de)</licence>
+            </availability>
+            <idno type="ISBN_Print"/>
+            <idno type="ISBN_Part_epub"/>
+            <idno type="ISBN_Digital"/>
+            <idno type="DOI"/>
+            <idno type="DOI_zenodo"/>
+            <idno type="ebook_ID"/>
+         </publicationStmt>
+         <seriesStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="m" type="main">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <respStmt>
+               <resp>Bearbeitung und Herausgeberschaft</resp>
+               <orgName key="https://d-nb.info/gnd/2024703-5">Universität Wien</orgName>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+         </seriesStmt>
+         <notesStmt>
+            <note>Diese TEI-XML-Datei ist Grundlage für eine Druckausgabe der Edition.</note>
+            <relatedItem>
+               <biblStruct>
+                  <monogr>
+                     <imprint>
+                        <pubPlace key="https://d-nb.info/gnd/4066009-6">Wien</pubPlace>
+                        <publisher key="https://d-nb.info/gnd/2068748-5">Verlag der Österreichischen Akademie der Wissenschaften</publisher>
+                        <date when="2029"/>
+                     </imprint>
+                     <extent/>
+                  </monogr>
+                  <note>
+              <idno/>
+              <ptr/>
+            </note>
+                  <citedRange/>
+               </biblStruct>
+            </relatedItem>
+         </notesStmt>
+         <sourceDesc>
+            <bibl>Quellbestand: AT-OeStA/AdR MRang MR 1Rep KRP Kabinettsratsprotokolle, 1918-1920 (Teilbestand)<ref target="https://www.archivinformationssystem.at/detail.aspx?id=5465">https://www.archivinformationssystem.at/detail.aspx?id=5465</ref>
+            </bibl>
+            <msDesc>
+               <msIdentifier>
+                  <institution key="https://d-nb.info/gnd/37748-X" role="hasOwner">AT-OeStA Österreichisches Staatsarchiv (Archiv (ÖStA))</institution>
+                  <repository key="https://d-nb.info/gnd/1601181-8">AT-OeStA/AdR Archiv der Republik, 1918- (Abteilung)</repository>
+                  <collection>AT-OeStA/AdR MRang MR 1Rep Ministerrat 1. Republik, 1918 - 1938 (Bestand)</collection>
+                  <idno>AT-OeStA_AdR-MRang-MR-1.-Rep.-KRP-195</idno>
+               </msIdentifier>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <abstract>
+            <p>
+          <!--to be generated-->
+        </p>
+         </abstract>
+      </profileDesc>
+      <encodingDesc>
+         <styleDefDecl scheme="css"/>
+         <tagsDecl>
+            <rendition xml:id="b" scheme="css">font-weight:bold;</rendition>
+            <rendition xml:id="su" scheme="css">vertical-align:super;font-size:.7em;</rendition>
+            <rendition xml:id="s" scheme="css">text-decoration:line-through;</rendition>
+            <rendition xml:id="u" scheme="css">text-decoration:underline;</rendition>
+            <rendition xml:id="ow" scheme="css">text-decoration:line-through;text-decoration-style:double;</rendition>
+            <rendition xml:id="r" scheme="css">display:block;text-align:right;</rendition>
+            <rendition xml:id="letterspaced" scheme="css">letter-spacing:0.15em;</rendition>
+            <rendition xml:id="i" scheme="css">font-style:italic;</rendition>
+         </tagsDecl>
+         <editorialDecl>
+            <hyphenation>
+               <p>
+            <!--to be added-->
+          </p>
+            </hyphenation>
+            <correction>
+               <p>
+            <!--to be added-->
+          </p>
+            </correction>
+            <normalization>
+               <p>
+            <!--to be added-->
+          </p>
+            </normalization>
+            <punctuation>
+               <p>
+            <!--to be added-->
+          </p>
+            </punctuation>
+            <stdVals>
+               <p>
+            <!--to be added-->
+          </p>
+            </stdVals>
+            <p>
+          <!--to be added-->
+        </p>
+         </editorialDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#tfruehwirth" when-iso="2026-10-13">TEIGarage output upconverted with upconvert.xsl</change>
+         <change who="#tfruehwirth" when-iso="2026-10-13">TEI header populated with generate_tei_templates.py</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface/>
+   </facsimile>
+   <text>
+      <body>
+         <div xml:id="doc-krp-0195.xml">
+            <head type="dokument">
+               <title type="num">195.<note type="footnote">Das Protokoll trägt den Vermerk <hi rend="#i">Vertraulich!</hi></note>
+               </title>
+               <title type="desc">
+                  <pb facs="krp-0195_r-0001"/>[Freitag] 1920-06-25</title>
+            </head>
+            <div type="dokumentkopf">
+               <div type="vorsitz">
+                  <head>Vorsitz:</head>
+                  <p>Renner</p>
+               </div>
+               <div type="anwesend">
+                  <head>Anwesend:</head>
+                  <p>Deutsch, Eisler, Eldersch, Ellenbogen, Glöckel, Hanusch, Loewenfeld-Russ, Reisch, Tandler</p>
+               </div>
+               <div type="zugezogen">
+                  <head>Zugezogen:</head>
+                  <p>Alter, Fischer, Grimm</p>
+               </div>
+               <div type="schriftfuehrer">
+                  <head>Schriftführer:</head>
+                  <p>unbekannt</p>
+               </div>
+               <div type="dauer">
+                  <head>Dauer:</head>
+                  <p>15.00–16.30 Uhr</p>
+               </div>
+            </div>
+            <div type="komponenten">
+               <p>Reinschrift, Beilagen, Konzept, stenographische Mitschrift, Entwurf der Tagesordnung, diverse Zusätze, 26. Personalsitzung</p>
+            </div>
+            <div type="beilagen">
+               <head>Beilagen:</head>
+               <list>
+                  <item><ref target="#krp-0195_top02">Zu TOP 2</ref>: <ref target="#krp-0195_b01">Vortrag des Staatsamtes für Heereswesen Zl. 3728/1920 über die Transaktion des Militärverpflegs- und Bettenmagazins in Wien</ref></item>
+                  <item><ref target="#krp-0195_top03">Zu TOP 3</ref>: <ref target="#krp-0195_b02">Antrag des Staatsamtes für Äußeres Zl. 34.526/6/1920 auf Änderung der Titel der Kanzleibeamten der Zentralleitung des Staatsamtes für Äußeres</ref></item>
+                  <item><ref target="#krp-0195_top04">Zu TOP 4</ref>: <ref target="#krp-0195_b03">Bericht der Staatskanzlei Zl. 1188/2, Schreiben an die Präsidentschaftskanzlei, sowie Vollzugsanweisung des Staatsamtes für Handel und Gewerbe, Industrie und Bauten zu Zl. 2130/20 über die Errichtung eines Einigungsamtes für Streitigkeiten aus Lieferungsverträgen in Salzburg</ref></item>
+                  <item><ref target="#krp-0195_top05">Zu TOP 5</ref>: <ref target="#krp-0195_b04">Entwurf des Zahntechnikergesetzes samt Erläuterungen</ref></item>
+               </list>
+            </div>
+            <div type="protokoll">
+               <pb facs="krp-0195_r-0002"/>
+               <div type="top" xml:id="krp-0195_top01">
+                  <head>
+                     <label>
+                        <num n="1">1.</num>
+                        <seg>Enthebung der christlichsozialen Kabinettsmitglieder von der Weiterführung der Geschäfte.</seg>
+                     </label>
+                  </head>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> teilt dem Kabinettsrate mit, dass Vizekanzler Fink, die Staatssekretäre Dr. Mayr, Dr. Ramek, Stöckler und Ing. Zerdik sowie die Unterstaatssekretäre Dr. Resch, Miklas und Dr. Waiss in einer Zuschrift an den Präsidenten der Nationalversammlung den Wunsch vorgebracht haben, von der provisorischen Weiterführung der Geschäfte enthoben zu werden.</p>
+                  <p>Da die Genannten auf ihrem Wunsche beharrten, habe sich der Präsident veranlasst gesehen, die Enthebung auszusprechen, und habe Redner eingeladen, Vorschläge über die provisorische Neubesetzung der betreffenden Staatsämter zu erstatten.</p>
+                  <p>Ausgehend von dem Gesichtspunkte, dass es sich nur um eine Vorsorge für eine ganz kurze Übergangszeit handeln könne, habe Redner die Betrauung des Staatssekretärs Eldersch mit der Führung des Staatsamtes für Justiz, des Staatssekretärs Hanusch mit der Führung des Staatsamtes für Verkehrswesen, des Staatssekretärs Dr. Ellenbogen mit der Führung des Staatsamtes für Handel und Gewerbe, Industrie und Bauten sowie seiner eigenen Person mit der Führung des Staatsamtes für Land- und Forstwirtschaft beantragt.</p>
+                  <p>Von einer provisorischen Vorsorge für die Weiterführung der Funktionen des Vizekanzlers Fink und des Staatssekretärs Dr. Mayr <pb facs="krp-0195_r-0003"/>solle Umgang genommen werden.</p>
+                  <p>Redner behalte sich vor, im Falle seiner Verhinderung Staatssekretär Hanusch als das dienstälteste Kabinettsmitglied mit der Führung des Vorsitzes im Kabinettsrate zu betrauen.</p>
+                  <p>In Gemäßheit dieser Anträge habe der Präsident die entsprechenden Verfügungen getroffen.</p>
+                  <p>Redner habe im Namen der im Amte verbliebenen Regierungsmitglieder dem Präsidenten der Nationalversammlung und dem Hauptausschusse erklärt, dass sich die gegenwärtige Regierung nach wie vor als im Zustand der Demission befindlich betrachte und nur ihre Ablösung abwarte. Sie habe den dringenden Wunsch, dass der Hauptausschuss möglichst bald seine Anträge über die Bildung einer definitiven Regierung der Nationalversammlung erstatte.</p>
+                  <p>Für den Entschluss, vorläufig noch im Amte zu verbleiben, sei lediglich die Erkenntnis maßgebend gewesen, dass die Staatsämter selbst vorübergehend nicht ohne verantwortliche Führung gelassen werden können. Redner fasse die Rechtslage dahin auf, dass die Staatssekretäre von der Nationalversammlung gewählt seien, ihre Mandate jetzt der Nationalversammlung zwar zur Verfügung gestellt hätten, von ihr aber nicht entlassen worden seien. Die ursprüngliche Wahl sei also noch für solange in Geltung stehend zu betrachten, bis die Nationalversammlung eine anderwei<pb facs="krp-0195_r-0004"/>tige Verfügung getroffen haben werde.</p>
+                  <p>Das gegenwärtige Kabinett beabsichtige keine Entscheidung von größerer politischer Tragweite zu treffen, sondern sich lediglich auf die Fortführung der laufenden Geschäfte zu beschränken.</p>
+                  <p>Der Kabinettsrat nimmt diese Ausführungen zustimmend zur Kenntnis.</p>
+               </div>
+               <div type="top" xml:id="krp-0195_top02">
+                  <head>
+                     <label>
+                        <num n="2">2.</num>
+                        <seg>Tauschaktion, betreffend das Militärverpflegs- und Bettenmagazin in Wien.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Deutsch</hi> teilt mit, dass die Firma B. Wetzler &amp; Co. in Wien um die Überlassung des im Eigentum der Heeresverwaltung stehenden Militärverpflegs- und Bettenmagazins in Wien gegen einen im Werte entsprechenden Teil der Erzherzog-Friedrich-Kaserne in Kaiserebersdorf, die im Eigentum der „Tecta“ Grundbesitz- und Verwaltungs-Gesellschaft mbH. stehe und von früher her aufgrund des Einquartierungsgesetzes gegen einen Betrag von jährlich 479.292 K 70 h benützt werde, angesucht habe.</p>
+                  <p>Die Schätzungen der beiden Objekte durch die Finanzlandesdirektion und später noch durch die Hauptanstalt für Sachdemobilisierung seien in der Bewertung auseinander gegangen und ergeben in ihrem arithmetischen Mittel eine Differenz im Werte beider Objekte von 8.629.665 K.</p>
+                  <p>Da sich im Vergleiche dazu der Vorschlag der Transaktionswerberin, der von einer Wertdifferenz von 8.448.825 K zu Gunsten der [Erzherzog-]Fried<pb facs="krp-0195_r-0005"/>rich-Kaserne ausgehe, noch etwas günstiger sei als das Mittel, erscheine dessen Annahme vom staatsfinanziellen Gesichtspunkte gerechtfertigt.</p>
+                  <p>Die Transaktionswerberin übernehme die Herstellung aller im Gesamtkomplex der Kaserne infolge des Umsturzes und aus sonstigen Ursachen entstandenen Bauschäden im vereinbarten Umfange und im Kostenbetrage von 2 ¼ Millionen K, sowie der baulichen Adaptierungen und maschinellen Einrichtungen, welche behufs Umgestaltung des aufgrund der gegenwärtigen Transaktion in das Eigentum der Heeresverwaltung übergehenden Teiles der Kaserne in ein Garnisonswirtschaftsamt erforderlich sind, im Kostenbetrage von 10 Millionen K. Die Hälfte dieser nicht erhöhbaren Gesamtauslagen per 12 ¼ Millionen K trage endgiltig die Firma B. Wetzler &amp; Co., die Hälfte gehe zwecks Ausgleichung durch weitere Transaktionen in Immobilien zu Lasten des Staatsamtes für Heer[es]wesen. Die Arbeiten werden unter Leitung der Militärbaubehörde ausgeführt.</p>
+                  <p>Die Heeresverwaltung beabsichtige auch noch den im Eigentum der „Tecta“ verbleibenden Rest der Kaserne zu erwerben, wobei jener Teil der Kosten der Schädenbehebung in der Kaserne, welcher das ehemalige Landesverteidigungsministerium zu belasten hat, als Liquidierungsaufwand zu verrechnen sein werde. </p>
+                  <p><pb facs="krp-0195_r-0006"/>Durch diese Transaktion erhalte die Heeresverwaltung ein modern eingerichtetes Verpflegsetablissement und erspare für die Dauer der Beistellung der Kaserne aufgrund des Einquartierungsgesetzes bis 1939–41 die auf den gegenwärtig zu erwerbenden Teil entfallende Quote der jährlichen Vergütung von 479.292 K 70 h.</p>
+                  <p>Redner stelle den Antrag, der Kabinettsrat wolle die getroffenen Vereinbarungen zur Kenntnis nehmen und mit der Durchführung der Transaktion das Staatsamt für Heer[es]wesen im Einvernehmen mit dem Staatsamte für Finanzen beauftragen.</p>
+                  <p>Der Kabinettsrat erhebt den Antrag zum Beschluss.</p>
+               </div>
+               <div type="top" xml:id="krp-0195_top03">
+                  <head>
+                     <label>
+                        <num n="3">3.</num>
+                        <seg>Änderung der Titel der Kanzleibeamten der Zentralleitung des Staatsamtes für Äußeres.</seg>
+                     </label>
+                  </head>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> unterbreitet dem Kabinettsrate Anträge über die Änderung der Titel der Kanzleibeamten der Zentralleitung des Staatsamtes für Äußeres und bemerkt hiezu, dass die Beamten die Umwandlung des Titels „Kanzlist“ in „Kanzleiassistent“, „Ministerialoberoffizial“ in „Ministerialkanzleisekretär“, „Hilfsämterdirektionsadjunkt“ in „Ministerialkanzleirat“ und „Hilfsämterdirektor“ in „Ministerialkanzleidirektor“ anstreben.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Reisch</hi> spricht sich gegen die drei letzteren Titel aus und regt an, für die Kanzleibeamten der X. Rangsklasse die Bezeichnung „Kanzleioffizial“, der IX. Rangsklasse „Kanzleiadjunkt“, der VIII. Rangsklasse „Kanzleidirektor“ und der VII. Rangsklasse „Kanzleioberdirektor“ oder „Kanzlei<pb facs="krp-0195_r-0007"/>rat“ festzusetzen.</p>
+                  <p>Der Kabinettsrat sieht vorläufig von einer Beschlussfassung in der Angelegenheit ab und stellt den Gegenstand zur neuerlichen Behandlung im Staatsamt für Äußeres zurück.</p>
+               </div>
+               <div type="top" xml:id="krp-0195_top04">
+                  <head>
+                     <label>
+                        <num n="4">4.</num>
+                        <seg>Vollzugsanweisung, betreffend die Errichtung eines Einigungsamtes für Streitigkeiten aus Lieferungsverträgen in Salzburg.</seg>
+                     </label>
+                  </head>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> erinnert daran, dass der vom Kabinettsrate in seiner Sitzung vom 16. April l. J. genehmigte Ausgleich mit der Landesregierung in Salzburg über die Zurückziehung der Anfechtungsklage gegen den Gesetzesbeschluss des Salzburger Landtages, betreffend die Anforderung von Holzvorräten, u. a. auch die Ausdehnung der Kompetenz des Einigungsamtes nach dem Gesetze vom 4. April 1919, StGBl. Nr. 220, auf Streitigkeiten aus Holzabstockungsverträgen vorsehe. Nun habe der Hauptausschuss in seiner Sitzung vom 7. Juni l. J. dem Entwurfe einer Vollzugsanweisung, betreffend die Errichtung eines Einigungsamtes für Streitigkeiten aus Lieferungsverträgen in Salzburg, die in Ausführung dieser Abmachung erlassen werden sollte, zwar die Genehmigung erteilt, zugleich aber beigefügt, dass er nicht seine schweren Bedenken gegen ein Verfahren verhehlen könne, das die Gleichheit des bürgerlichen Rechtes innerhalb des Staates bedrohe. Der Hauptausschuss habe weiters bemerkt, dass er in der zu dieser Vollzugsanweisung erstatteten Äußerung des Staatsamtes für Justiz das nähere Eingehen auf die ihm besonders wichtig erscheinende Frage der <pb facs="krp-0195_r-0008"/>durch die Vollzugsanweisung geschaffenen Rechtsungleichheit vermisse.</p>
+                  <p>Die Präsidentschaftskanzlei habe von diesem Beschlusse des Hauptausschusses die beteiligten Staatsämter verständigt und im Auftrage des Präsidenten der Nationalversammlung die Staatskanzlei ersucht, die ganze Frage zum Gegenstand der Beratung im Kabinettsrate zu machen.</p>
+                  <p>In Entsprechung dieses Wunsches lege Redner dem Kabinettsrate den Entwurf eines Antwortschreibens an die Präsidentschaftskanzlei vor und erbitte zu deren Ausführungen die Stellungnahme des Kabinettsrates. Die Note erörtere zunächst die Umstände, welche zur Erlassung der Vollzugsanweisung führten, sowie die Rechtsgrundlage, auf welcher die getroffene Regelung beruhe, und gelange schließlich zu der Feststellung, dass die Vollzugsanweisung die vom Hauptausschusse befürchtete Rechtsungleichheit nicht herbeiführe. Wenn von einer solchen überhaupt die Rede sein könne, so sei sie bereits durch das Gesetz über die Errichtung von Einigungsämtern vom 4. April 1919 geschaffen worden, und liege nicht auf dem Gebiete des bürgerlichen, sondern auf dem des Prozessrechtes, indem das Gesetz selbst für bestimmte Lieferungsverträge für das gesamte Staatsgebiet eine Art Sondergerichtsstand – eben in der Gestalt des Einigungsamtes in Wien – eingeführt habe. Die Vollzugsanweisung bedeute weder eine Erweiterung <pb facs="krp-0195_r-0009"/>des örtlichen, noch des sachlichen Wirkungskreises der im Gesetze vorgesehenen Einigungsämter. Die Neuerungen der Vollzugsanweisung liegen lediglich darin, dass sie in örtlicher Hinsicht das Land Salzburg aus dem Sprengel des Wiener Einigungsamtes ausscheide, um es einem besonderen, nur für Salzburg zuständigen Einigungsamte zu unterstellen und in sachlicher Beziehung den Wirkungskreis des Einigungsamtes derart abstecke, wie ihn das bisher auch für Salzburg zuständig gewesene Einigungsamt in Wien bereits aufgrund des geltenden Gesetzes besaß. Abschließend solle in der Note noch darauf verwiesen werden, dass das Staatsamt für Handel und Gewerbe, Industrie und Bauten im Motivenberichte zu dem in Vorbereitung stehenden Entwurfe eines neuen Gesetzes, womit die Wirksamkeit der Einigungsämter auf später abgeschlossene Lieferungsverträge erstreckt werden soll, die in der Judikatur unbestrittene Rechtsanschauung niederzulegen beabsichtige, dass auch für Holzabstockungsverträge – als eine Abart von Lieferungsverträgen – die jeweils bestehenden Einigungsämter (nicht etwa bloß das Einigungsamt in Salzburg) zuständig seien.</p>
+                  <p>Nach dem Vorschlage Redners genehmigt der Kabinettsrat, dass diese Note zur entsprechenden Verständigung des Hauptausschusses an die Präsidentschaftskanzlei abgesendet werde.</p>
+                  <p><pb facs="krp-0195_r-0010"/></p>
+               </div>
+               <div type="top" xml:id="krp-0195_top05">
+                  <head>
+                     <label>
+                        <num n="5">5.</num>
+                        <seg>Entwurf eines Gesetzes, betreffend die Regelung der Zahntechnik (Zahntechnikergesetz).</seg>
+                     </label>
+                  </head>
+                  <p>Unterstaatssekretär Dr. <hi rend="#letterspaced">Tandler</hi> unterbreitet dem Kabinettsrate mit kurzen erläuternden Bemerkungen den Entwurf eines Gesetzes, betreffend die Regelung der Zahntechnik (Zahntechnikergesetz) und erbittet die Ermächtigung zu dessen Einbringung in der Nationalversammlung.</p>
+                  <p>Der Kabinettsrat erteilt die erbetene Ermächtigung mit der Abänderung, dass nach dem Antrage des Unterstaatssekretärs Dr. <hi rend="#letterspaced">Eisler</hi> der Schluss des ersten Absatzes des § 12 zu lauten hat:</p>
+                  <p>„Im Übrigen sind diese Verträge nach den Bestimmungen des Allgemeinen bürgerlichen Gesetzbuches zu beurteilen“, und in § 15 Abs. 3 nach dem Antrage des Staatssekretärs Dr. <hi rend="#letterspaced">Reisch</hi> die Bestimmung der einfließenden Strafbeträge für den Ortsarmenfonds statt für Wohlfahrtszwecke der Zahntechniker auszusprechen ist.</p>
+                  <p/>
+               </div>
+            </div>
+            <div type="stenogramme">
+               <div n="1">
+                  <head>[KRP 195, 25. Juni 1920, Stenogramm Groß]</head>
+                  <p><pb facs="krp-0195_s01-0001"/>195.</p>
+                  <p>1.</p>
+                  <p>[Renner]: Ich gestatte mir, dem hohen Kabinettsrat mitzuteilen, dass die Herren Vizekanzler Fink, Stöckler, Ramek und Mayr, dann Waiß </p>
+                  <p>und Resch an den Präsidenten eine Zuschrift gerichtet haben, worin sie erklären, dass sie von der provisorischen Weiterführung der Geschäfte enthoben zu werden wünschen. Der Präsident </p>
+                  <p>musste wegen Beharrens diesen Antrag annehmen. Ich wurde aufgefordert, Vorschläge der Abhilfe für den Augenblick zu erstatten. Da die wichtigsten Staatsämter nicht einen Augenblick </p>
+                  <p>unbesetzt bleiben können, [sind] die Staatsämter mit Staatssekretären vorübergehend zu besetzen, welche mit der Führung eines anderen Staatsamtes betraut sind. [Das Amt des] Vizekanzlers als </p>
+                  <p>nicht obligatorisch wurde nicht neu besetzt. Ich würde, wenn wirklich der provisorische Zustand andauern sollte und ich verhindert wäre, den rangsältesten </p>
+                  <p>Staatssekretär Paul oder Hanusch mit meiner Vertretung betrauen, mit der Führung des Vorsitzes im Kabinettsrat. Für Maier ist kein Ersatz nötig, weil er </p>
+                  <p>nicht für ein bestimmtes Staatsamt berufen [wurde]. Für Ramek Eldersch, [für] Zerdik im Handelsamt Ellenbogen, [für] Paul Hanuschs, [für] Stöckler Renner.</p>
+                  <p>[<hi rend="#i">Am Rand:</hi>] Vorschläge über die provisorische Wiederbesetzung dieser Dienstposten zu erstatten, da es sich </p>
+                  <p>um die wichtigsten Staatsämter handelt, die auch nicht die kürzeste Zeit unbesetzt - ohne Leitung bleiben können. </p>
+                  <p>Der Redner hat diese Vorschläge ausgehend von dem Grundsatz -. </p>
+                  <p>Da es sich nur um ein ganz vorübergehendes Provisorium handelt, hat der Redner die Vorschläge </p>
+                  <p>in der Art erstattet - werden, dass mit den erledigten Ressorts andere der im Amte verbliebenen Staatssekretäre </p>
+                  <p>betraut werden.</p>
+                  <p>Ich bitte diese Erklärung zu Protokoll zu nehmen und erbitte um Zustimmung. Die gegenwärtige Regierung betrachtet sich als in Demission befindlich. </p>
+                  <p>Ich habe im Namen der Regierungsmitglieder dem Präsidenten und dem Hauptausschuss erklärt, dass wir auf die Ablösung warten und den dringenden Wunsch haben, vom </p>
+                  <p>Hauptausschuss durch Vorschlag an die Nationalversammlung abgelöst zu werden. Ich habe mitgeteilt, dass es unmöglich ist, die Staatsämter ohne jegliche Führung zu lassen. </p>
+                  <p>Wir warten auf die Ablösung und [eine] definitive Neubesetzung. Nur in diesem Sinne führen wir die Geschäfte fort. Politische Entscheidungen beabsichtigen wir nicht zu treffen, sondern </p>
+                  <p>nur die Arbeiten des Kabinetts fortzuführen.</p>
+                  <p>[Beschluss]: Das Kabinett erklärt sich mit diesen Ausführungen einverstanden.</p>
+                  <p><hi rend="#s">Eisler</hi>: -.</p>
+                  <p>Reisch: Ich verstehe den Unterschied eines ohnehin in st[atu] d[emissionis] befindlichen </p>
+                  <p>Staatssekretärs, der mit der Fortführung der Geschäfte beauftragt ist und einem pensionierten Staatssekretär, der dann die Leitung des Staatsamtes übernimmt, eigentlich nicht und habe davon Umgang genommen, das Beispiel Loewenfeld-Ruß' nachzuahmen. Ich möchte betonen, </p>
+                  <p>dass ich mich selbstverständlich als mit der provisorischen Leitung betraut fühle bis ich enthoben werde. [Ich] schließe mich dieser Erklärung an.</p>
+                  <p>Renner: </p>
+                  <p>Das Verhältnis unserer Betrauung, es ist strittig geworden. Es wurde vom Präsidenten verlangt, er solle uns abberufen und eine Beamtenregierung </p>
+                  <p>ernennen. Der Präsident hat sich geweigert und bei diesem Anlass ist die Frage aufgeworfen worden, wie wir betraut sind. Die Staatssekretäre sind gewählt, haben </p>
+                  <p>der Nationalversammlung ihr Mandat zur Verfügung gestellt, wurden aber nicht entlassen. Die ursprüngliche Wahl dauert so lange fort, bis wir von der Nationalversammlung und </p>
+                  <p>ihren Organen, dem Hauptausschuss und dem Präsidenten enthoben sind. Die Tatsache der Betrauung mit der Fortführung bedeutet, dass unsere Wahl als fortgeltend betrachtet wird </p>
+                  <p>bis die Nationalversammlung [eine] andere Verfügung trifft. Ich glaube, sie -.</p>
+                  <p>Hanusch: </p>
+                  <p>Wenn nicht ein anderweitiges Kommuniqué hinaus geht, müsste ein solches - nach den Äußerungen des Staatskanzlers ein solches hinausgehen, </p>
+                  <p>weil in der Presse davon geredet wird, dass die sozialistischen Staatssekretäre Streber sind und sich nicht entfernen werden. Es müsste festgestellt werden, dass wir die Plätze nicht </p>
+                  <p>verlassen können, solange kein Ersatz dafür geschaffen wird.</p>
+                  <p>Renner: </p>
+                  <p>Wir werden ein solches Kommuniqué erlassen.</p>
+                  <p>Reisch: </p>
+                  <p>Der Kabinettsrat hat darüber eigentlich keinen Beschluss zu fassen, das ist eine Angelegenheit des Präsidenten und dieser hat uns mit den Geschäften </p>
+                  <p>betraut. Ein Teil der Staatssekretäre ist ausgetreten und es musste für sie ein weiteres Provisorium geschaffen werden. Das wirkt auf die Zurückbleibenden nicht zurück. </p>
+                  <p>Man sollte sagen, auf dem Platz zu bleiben bis Ersatz kommt.</p>
+                  <p>Deutsch: </p>
+                  <p>Man müsste auf die staatliche Notwendigkeit hinweisen, was geschehen soll.</p>
+                  <p>Renner: </p>
+                  <p>Es ist klar, dass der Zustand ein höchst provisorischer sein muss und die zuständigen Faktoren der Nationalversammlung Vorsorge </p>
+                  <p>treffen müssen.</p>
+                  <p><pb facs="krp-0195_s01-0002"/>2.</p>
+                  <p>Deutsch: </p>
+                  <p>Tauschaktion über Militärverpflegsmagazin.</p>
+                  <p>Es handelt sich darum: Wir haben das Verpflegsmagazin in der Leopoldau und die Kaserne in Kaiserebersdorf. Wir meinten, </p>
+                  <p>dass es praktisch wäre, anstelle der Miete für die Kaserne, das Verpflegsmagazin her[zu]geben und die Kaserne [zu] erwerben. Es wäre sachlich und </p>
+                  <p>finanziell von Vorteil.</p>
+                  <p>Renner: </p>
+                  <p>Soll in der Art[illerie]-Kaserne nicht eine Garnisonsbäckerei errichtet werden? Die Bäckereieinrichtungen werden auf Kosten der Firma Wetzler </p>
+                  <p>besorgt.</p>
+                  <p>Genehmigt.</p>
+                  <p>3.</p>
+                  <p>Renner: </p>
+                  <p>Einigungsamt für Salzburg.</p>
+                  <p>Ich bitte, ob der Kabinettsrat einverstanden ist mit der an die Präsidentschaftskanzlei mit der Bestimmung an den Hauptausschuss zu richtenden Note.</p>
+                  <p>Die Note ist genehmigt.</p>
+                  <p>4.</p>
+                  <p>Renner: </p>
+                  <p>Titel für den Kanzleibeamten im Staatsamt für Äußeres.</p>
+                  <p>Reisch: </p>
+                  <p>Ich kann diesem Antrag nicht zustimmen. Zunächst finde ich es unangebracht, dass [wenn] die Ministerien abgeschafft werden, [man] neue Titel mit der Verbindung </p>
+                  <p>Ministerial- schafft. Dann muss ich Einspruch erheben, dass dem Publikum die Titel zu lang sein werden und Verwechslungen zwischen Kanzlei- und Konzeptpersonal </p>
+                  <p>entstünden. Der Hinweis auf den diplomatischen und [...] Dienst trifft nicht zu. Es müssten die dortigen Titel den geänderten Verhältnissen angepasst werden. </p>
+                  <p>Dort heißt es nur Kanzleirat. Der Titel Sekretär ist für juristische Beamte vorbehalten und [...] Ratstitel für die VII.</p>
+                  <p>Glöckel: </p>
+                  <p>Es ist nicht einzusehen, warum eine Sonderregelung für das Äußere geschaffen werden soll.</p>
+                  <p>Renner: </p>
+                  <p>Der Status wird zusammengezogen, die Leute mit den verschiedenen Titulaturen werden zusammengelegt, alle wollen den Titel wie sie bei den </p>
+                  <p>Legationen bestehen. Im Konzept ist geplant, im Haus Ministerialsekretär, draußen Legationssekretär, im Konsulatsdienst Konsularsekretär.</p>
+                  <p>Glöckel: </p>
+                  <p>Es ist ein Unrecht gegenüber allen anderen Kanzleibeamten. Es gibt Kanzleibeamte der Gruppen C, D und E. </p>
+                  <p>Warum die in der Gruppe C so besonders hervorgehoben werden sollen, ist nicht einzusehen.</p>
+                  <p>Renner: </p>
+                  <p>Von den Kanzleibeamten im Äußeren wird die vollständige Kenntnis fremder Sprachen verlangt.</p>
+                  <p>5.</p>
+                  <p>Tandler: </p>
+                  <p>Zahntechniker.</p>
+                  <p>Renner: </p>
+                  <p>Zum bürgerlichen Recht gehören auch Vorschriften, welche in anderen Gesetzen als dem bürgerlichen Gesetzbuch enthalten sind. Diese -.</p>
+                  <p>Reisch: </p>
+                  <p>Ich habe nichts einzuwenden und gebe anheim, ob wir in st[atu] d[emissionis] eine solche Vorlage einbringen sollen. Bemerkenswert [ist] § 15 </p>
+                  <p>des Gesetzes, welcher eine Neuerung bringt, indem er verfügt, dass die Geldstrafen den Wohlfahrtszwecken der Zahntechnik[er] zuzuwenden sind. Alle übrigen Gesetze sehen [eine] </p>
+                  <p>Zuwendung an den Armenfonds vor. Ich frage, ob wir ein Präjudiz schaffen sollen für [eine] analoge Verwendung. Die Geldstrafen sollen der </p>
+                  <p>Allgemeinheit zufließen.</p>
+                  <p>Renner: </p>
+                  <p>Es soll der Armenfonds berufen werden.</p>
+                  <p>Ermächtigt zur Einbringung der Vorlage.</p>
+                  <p>Mittwoch, 3 Uhr abends.</p>
+               </div>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

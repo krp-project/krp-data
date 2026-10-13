@@ -1,0 +1,647 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href='http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:acdh="https://vocabs.acdh.oeaw.ac.at/schema#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xml:lang="de">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="a" type="main" n="0080">Kabinettsprotokoll Nr. 80 vom 17. Juni 1919</title>
+            <title level="m" type="main" n="01">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <title level="m" type="sub" n="">Renner II (15. März – 17. Oktober 1919)</title>
+            <meeting>
+               <placeName key="https://d-nb.info/gnd/4066009-6">Wien</placeName>
+               <orgName key="https://d-nb.info/gnd/5162749-8">Kabinettsrat</orgName>
+               <date when-iso="1919-06-17"/>
+            </meeting>
+            <editor>
+               <persName key="https://d-nb.info/gnd/122481836"
+                         role="hasCreator"
+                         xml:id="hwohnout">
+                  <forename>Helmut</forename>
+                  <surname>Wohnout</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</affiliation>
+               <idno type="ORCID">0000-0002-3864-9839</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/120789825"
+                         role="hasCreator"
+                         xml:id="tolechowski">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0003-3291-6876</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/131679384"
+                         role="hasCreator"
+                         xml:id="rlein">
+                  <forename>Richard</forename>
+                  <surname>Lein</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0002-7502-0503</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="aholzer">
+                  <forename>Anna</forename>
+                  <surname>Holzer</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0005-3560-3500</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="dsoelkner">
+                  <forename>Dominik</forename>
+                  <surname>Sölkner</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-9895-7212</idno>
+            </editor>
+            <editor>
+               <persName role="hasContributor" xml:id="ischotzko">
+                  <forename>Ina</forename>
+                  <surname>Schotzko</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-5210-3713</idno>
+            </editor>
+            <funder n="1">
+               <orgName key="https://d-nb.info/gnd/2054142-9" role="hasFunder">Österreichischer Wissenschaftsfonds FWF</orgName>
+               <idno type="project">PAT1495024</idno>
+               <title type="project">Die Protokolle des österreichischen Kabinettsrates 1919–1920</title>
+            </funder>
+            <respStmt>
+               <resp>Projektverantwortung</resp>
+               <orgName key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Projektleitung</resp>
+               <persName key="https://d-nb.info/gnd/120789825" role="hasPrincipalInvestigator">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+                  <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+                  <idno type="ORCID">0000-0003-3291-6876</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Nationaler Forschungspartner</resp>
+               <orgName key="https://d-nb.info/gnd/1123037736" role="hasEnabler">Austrian Centre for Digital Humanities</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Digitalisierung der gedruckten Quellen</resp>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>TEI-Datenmodellierung</resp>
+               <persName role="hasContributor" xml:id="tfruehwirth">
+                  <forename>Timo</forename>
+                  <surname>Frühwirth</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-3997-5193</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technische Supervision</resp>
+               <persName key="https://d-nb.info/gnd/1043833846"
+                         role="hasContributor"
+                         xml:id="pandorfer">
+                  <forename>Peter</forename>
+                  <surname>Andorfer</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-9575-9372</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technisches Consulting und Vorbereitung der Druckausgabe</resp>
+               <persName key="https://d-nb.info/gnd/13281899X"
+                         role="hasContributor"
+                         xml:id="skurz">
+                  <forename>Stephan</forename>
+                  <surname>Kurz</surname>
+                  <affiliation key="https://d-nb.info/gnd/1202798799">Institut für die Erforschung der Habsburgermonarchie und des Balkanraumes</affiliation>
+                  <idno type="ORCID">0000-0003-2546-2570</idno>
+               </persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher key="https://d-nb.info/gnd/1001454-8">Österreichische Akademie der Wissenschaften</publisher>
+            <date when="2028"/>
+            <availability status="free">
+               <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">Lizenziert unter CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/deed.de)</licence>
+            </availability>
+            <idno type="ISBN_Print"/>
+            <idno type="ISBN_Part_epub"/>
+            <idno type="ISBN_Digital"/>
+            <idno type="DOI"/>
+            <idno type="DOI_zenodo"/>
+            <idno type="ebook_ID"/>
+         </publicationStmt>
+         <seriesStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="m" type="main">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <respStmt>
+               <resp>Bearbeitung und Herausgeberschaft</resp>
+               <orgName key="https://d-nb.info/gnd/2024703-5">Universität Wien</orgName>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+         </seriesStmt>
+         <notesStmt>
+            <note>Diese TEI-XML-Datei ist Grundlage für eine Druckausgabe der Edition.</note>
+            <relatedItem>
+               <biblStruct>
+                  <monogr>
+                     <imprint>
+                        <pubPlace key="https://d-nb.info/gnd/4066009-6">Wien</pubPlace>
+                        <publisher key="https://d-nb.info/gnd/2068748-5">Verlag der Österreichischen Akademie der Wissenschaften</publisher>
+                        <date when="2029"/>
+                     </imprint>
+                     <extent/>
+                  </monogr>
+                  <note>
+              <idno/>
+              <ptr/>
+            </note>
+                  <citedRange/>
+               </biblStruct>
+            </relatedItem>
+         </notesStmt>
+         <sourceDesc>
+            <bibl>Quellbestand: AT-OeStA/AdR MRang MR 1Rep KRP Kabinettsratsprotokolle, 1918-1920 (Teilbestand)<ref target="https://www.archivinformationssystem.at/detail.aspx?id=5465">https://www.archivinformationssystem.at/detail.aspx?id=5465</ref>
+            </bibl>
+            <msDesc>
+               <msIdentifier>
+                  <institution key="https://d-nb.info/gnd/37748-X" role="hasOwner">AT-OeStA Österreichisches Staatsarchiv (Archiv (ÖStA))</institution>
+                  <repository key="https://d-nb.info/gnd/1601181-8">AT-OeStA/AdR Archiv der Republik, 1918- (Abteilung)</repository>
+                  <collection>AT-OeStA/AdR MRang MR 1Rep Ministerrat 1. Republik, 1918 - 1938 (Bestand)</collection>
+                  <idno>AT-OeStA_AdR-MRang-MR-1.-Rep.-KRP-080</idno>
+               </msIdentifier>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <abstract>
+            <p>
+          <!--to be generated-->
+        </p>
+         </abstract>
+      </profileDesc>
+      <encodingDesc>
+         <styleDefDecl scheme="css"/>
+         <tagsDecl>
+            <rendition xml:id="b" scheme="css">font-weight:bold;</rendition>
+            <rendition xml:id="su" scheme="css">vertical-align:super;font-size:.7em;</rendition>
+            <rendition xml:id="s" scheme="css">text-decoration:line-through;</rendition>
+            <rendition xml:id="u" scheme="css">text-decoration:underline;</rendition>
+            <rendition xml:id="ow" scheme="css">text-decoration:line-through;text-decoration-style:double;</rendition>
+            <rendition xml:id="r" scheme="css">display:block;text-align:right;</rendition>
+            <rendition xml:id="letterspaced" scheme="css">letter-spacing:0.15em;</rendition>
+            <rendition xml:id="i" scheme="css">font-style:italic;</rendition>
+         </tagsDecl>
+         <editorialDecl>
+            <hyphenation>
+               <p>
+            <!--to be added-->
+          </p>
+            </hyphenation>
+            <correction>
+               <p>
+            <!--to be added-->
+          </p>
+            </correction>
+            <normalization>
+               <p>
+            <!--to be added-->
+          </p>
+            </normalization>
+            <punctuation>
+               <p>
+            <!--to be added-->
+          </p>
+            </punctuation>
+            <stdVals>
+               <p>
+            <!--to be added-->
+          </p>
+            </stdVals>
+            <p>
+          <!--to be added-->
+        </p>
+         </editorialDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#tfruehwirth" when-iso="2026-10-13">TEIGarage output upconverted with upconvert.xsl</change>
+         <change who="#tfruehwirth" when-iso="2026-10-13">TEI header populated with generate_tei_templates.py</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface/>
+   </facsimile>
+   <text>
+      <body>
+         <div xml:id="doc-krp-0080.xml">
+            <head type="dokument">
+               <title type="num">80.<note type="footnote">Das Protokoll trägt den Vermerk <hi rend="#i">Vertraulich!</hi></note>
+               </title>
+               <title type="desc">
+                  <pb facs="krp-0080_r-0001"/>
+                  <pb facs="krp-0080_r-0002"/>[Montag] 1919-06-17</title>
+            </head>
+            <div type="dokumentkopf">
+               <div type="vorsitz">
+                  <head>Vorsitz:</head>
+                  <p>Fink</p>
+               </div>
+               <div type="anwesend">
+                  <head>Anwesend:</head>
+                  <p>Bauer, Bratusch, Deutsch, Eldersch, Ellenbogen, Glöckel, Hanusch, Loewenfeld-Russ, Miklas, Paul, Pflügl, Resch, Schumpeter, Stöckler, Tandler, Waiss, Zerdik</p>
+               </div>
+               <div type="zugezogen">
+                  <head>Zugezogen:</head>
+                  <p>Grimm, [Günther], [Schober], Wilfling</p>
+               </div>
+               <div type="schriftfuehrer">
+                  <head>Schriftführer:</head>
+                  <p>unbekannt</p>
+               </div>
+               <div type="dauer">
+                  <head>Dauer:</head>
+                  <p>21.00–02.30 Uhr</p>
+               </div>
+            </div>
+            <div type="komponenten">
+               <p>Reinschrift, Beilagen, Konzept, stenographische Mitschrift, Entwurf der Tagesordnung, diverse Zusätze, 6. Personalsitzung</p>
+            </div>
+            <div type="beilagen">
+               <head>Beilagen:</head>
+               <list>
+                  <item><ref target="#krp-0080_top03">Zu TOP 3</ref>: <ref target="#krp-0080_b01">Vorlagebericht des Tiroler Landesrates über das Regulativ für die Wasserleitung der Gemeinde Ehrwald</ref></item>
+                  <item><ref target="#krp-0080_top04">Zu TOP 4</ref>: <ref target="#krp-0080_b02">Vortrag des Staatsamtes für Heereswesen über Teuerungszulagen für die Volkswehr außerhalb Wiens, samt Wortlaut des Antrages</ref></item>
+                  <item><ref target="#krp-0080_top05">Zu TOP 5</ref>: <ref target="#krp-0080_b03">Auszug für den Vortrag des Staatsamtes für Inneres und Unterricht zu Zl. 20.673/19 über den Gesetzesentwurf der Provisorischen Niederösterreichischen Landesversammlung zur Bildung einer selbständigen Ortsgemeinde Semmering</ref></item>
+                  <item><ref target="#krp-0080_top07">Zu TOP 7</ref>: <ref target="#krp-0080_b04">Vollzugsanweisung des Staatsamtes für Justiz über den Amtstitel der fachmännischen Laienrichter bei den Gerichtshöfen 1. Instanz</ref></item>
+                  <item><ref target="#krp-0080_top08">Zu TOP 8</ref>: <ref target="#krp-0080_b05">Übernahme des Militär-Töchter-Erziehungsinstitutes in die Zivilverwaltung</ref></item>
+                  <item><ref target="#krp-0080_top08">Zu TOP 8</ref>: <ref target="#krp-0080_b06">Handschriftliche Notiz der Wortmeldung von Sektionschefs Dr. Grimm</ref></item>
+                  <item><ref target="#krp-0080_top09">Zu TOP 9</ref>: <ref target="#krp-0080_b07">Gesetzesbeschluss der Niederösterreichischen Landesversammlung über die Anrechnung von Kriegsjahren für die Lehrpersonen der öffentlichen Volks- und Bürgerschulen in Niederösterreich außerhalb Wiens</ref></item>
+                  <item><ref target="#krp-0080_top10">Zu TOP 10</ref>: <ref target="#krp-0080_b08">Gesetzesbeschluss der Niederösterreichischen Landesversammlung über die Regelung des Diensteinkommens des Lehrpersonals im Schulbezirk Wien</ref></item>
+                  <item><ref target="#krp-0080_top11">Zu TOP 11</ref>: <ref target="#krp-0080_b09">Gesetzesbeschlüsse des Niederösterreichischen Landtages über Abänderung einiger Bestimmungen des Schulaufsichtsgesetzes und über die Funktionsdauer einiger Mitglieder der Orts- und Bezirksschulräte, des Landesschulrates und der Landes-Lehrer-Ernennungskommission</ref></item>
+                  <item><ref target="#krp-0080_top12">Zu TOP 12</ref>: <ref target="#krp-0080_b10">Darlegung des Unterstaatssekretärs Glöckel Zl. 12.230-Abt.6 über die künftigen Dienstverwendung einer Anzahl von Professoren, Hilfskräften und Beamten der Czernowitzer Universität</ref></item>
+                  <item><ref target="#krp-0080_top13">Zu TOP 13</ref>: <ref target="#krp-0080_b11">Ausführung über die einheitliche Regelung des gesamten staatlichen Vermessungswesens samt Vollzugsanweisung</ref></item>
+                  <item><ref target="#krp-0080_top14">Zu TOP 14</ref>: <ref target="#krp-0080_b12">Begründung samt Antrag auf Schaffung einer zwischenstaatsamtlichen Kommission zur Beratung und Beschlussfassung über die künftige Verwertung bisher für militärische Zwecke verwendete Liegenschaften unter Leitung des Staatsamtes für Handel und Gewerbe, Industrie und Bauten</ref></item>
+                  <item><ref target="#krp-0080_top15">Zu TOP 15</ref>: <ref target="#krp-0080_b13">Sonderverwendungszulagen für außergewöhnlich tätige Beamte von der VI. Rangklasse aufwärts</ref></item>
+               </list>
+            </div>
+            <div type="protokoll">
+               <pb facs="krp-0080_r-0003"/>
+               <div type="top" xml:id="krp-0080_top01">
+                  <head>
+                     <label>
+                        <num n="1">1.</num>
+                        <seg>Einladung der Staatsregierung zur Teilnahme an der Fronleichnamsprozession.</seg>
+                     </label>
+                  </head>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> macht davon Mitteilung, dass der Kardinal-Erzbischof von Wien die Staatsregierung zur Teilnahme an der am 19. Juni d. J. um 7 Uhr morgens stattfindenden Fronleichnamsprozession (von der Metropolitankirche zu St. Stephan aus) eingeladen habe.</p>
+               </div>
+               <div type="top" xml:id="krp-0080_top02">
+                  <head>
+                     <label>
+                        <num n="2">2.</num>
+                        <seg>Presskampagne gegen das Staatsamt für Volksernährung.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Loewenfeld-Russ</hi> bringt dem Kabinettsrate zur Kenntnis, dass von einzelnen Wiener Blättern seit einiger Zeit sowohl gegen ihn als auch gegen das von ihm geleitete Staatsamt eine Presskampagne geführt werde, die seiner Auffassung nach über den Begriff der Pressfreiheit weit hinausgehe und geeignet erscheine, nicht allein das Ansehen und die Tätigkeit des Staatsamtes für Volksernährung, sondern auch der Gesamtregierung in der breiten Öffentlichkeit auf das nachhaltigste zu schädigen. Alle Versuche, eine Richtigstellung der notorischen Unwahrheiten in den einschlägigen Veröffentlichungen durch die Beibringung von Bewei<pb facs="krp-0080_r-0004"/>sen über die absolute Unstichhältigkeit der erhobenen Vorwürfe zu erreichen, seien erfolglos gewesen. Bei der Art der Schreibweise dieser Zeitungen sei es auch ganz unmöglich, tagtäglich mit § 19-Berichtigungen zu erwidern. Der sprechende Staatssekretär mache hiervon, dem Kabinettsrate die Mitteilung und stelle ihm zur Erwägung, ob nicht von der Staatsregierung als solcher gegen diese Pressangriffe in irgendeiner Form Stellung genommen werden sollte.</p>
+                  <p>An der sich hierüber entwickelnden Debatte beteiligten sich außer dem <hi rend="#letterspaced">Vorsitzenden</hi> noch die Staatssekretäre Dr. <hi rend="#letterspaced">Bratusch</hi> und <hi rend="#letterspaced">Hanusch</hi>; hiebei wurde auf die besonderen Schwierigkeiten hingewiesen, die im Hinblick auf die gegebenen gesetzlichen Grundlagen ein wirksames Eingreifen der Staatsregierung kaum möglich erscheinen lassen.</p>
+                  <p>Der Kabinettsrat hält demgemäß dafür, dass von irgendwelchen Verfügungen im Gegenstande dermalen abzusehen sei.</p>
+               </div>
+               <div type="top" xml:id="krp-0080_top03">
+                  <head>
+                     <label>
+                        <num n="3">3.</num>
+                        <seg>Regulativ für die Wasserleitung der Gemeinde Ehrwald.</seg>
+                     </label>
+                  </head>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> teilt mit, dass der Staatskanzlei ein Bericht des Tiroler Landesrates in Angelegenheit <pb facs="krp-0080_r-0005"/>des Regulativs für die Wasserleitung der Gemeinde Ehrwald zugekommen sei; dieses habe der Tiroler Landesausschuss am 18. September 1907 zum Beschluss erhoben und letzterer hätte in der Folge – am 7. April 1908 – die landesfürstliche Genehmigung, jedoch nur auf die Dauer von zehn Jahren, erhalten. Die Gemeinde sei – nach Ablauf dieser zehnjährigen Lauffrist – bei der Tiroler Landesregierung um die Verlängerung der Geltungsdauer des Regulativs eingeschritten. Es handle sich nun im vorliegenden Falle um die grundsätzliche Frage, welche Stelle nach der geltenden Verfassung zur Genehmigung jener Akte der Selbstverwaltung berufen sei, die vormals der Genehmigung des Landesfürsten unterlagen.</p>
+                  <p>Die Staatskanzlei stehe auf dem Standpunkte, dass alle landesgesetzlichen Bestimmungen, welche dem Kaiser mit seiner Herrschergewalt zusammenhängende Befugnisse einräumten, zur österreichischen Verfassung zu rechnen waren, sodass auch Bestimmungen der Tiroler Gemeindeordnung als Bestandteil der Verfassung des alten Österreich zu gelten haben. Für einen einheitlichen Staat, der <pb facs="krp-0080_r-0006"/>das alte Österreich war, sei es unmaßgeblich, in welchem Gesetze sich monarchische Befugnisse ausgesprochen finden. Zufolge der bloßen Tatsache ihrer rechtlichen Regelung müssen diese dem Träger der Staatsgewalt zuerkannten Befugnisse als <hi rend="#u">verfassungsmäßige</hi> Einrichtungen angesehen werden. Damit stehe auch fest, dass diese Rechte kraft der Generalklausel des Art. 3 auf den Staatsrat und seither – gemäß § 6 des Gesetzes vom 14. März 1919, StGBl. Nr. 179 – auf die Staatsregierung übergegangen seien. Es könne sich höchstens fragen, ob die auf Landesangelegenheiten bezughabenden Art. 12–15 des letztzitierten Gesetzes die im vorigen umschriebene Rechtslage geändert haben. Es dürfe aber nicht verkannt werden, dass sich die in Rede stehenden Bestimmungen nur auf die Landes<hi rend="#u">gesetzgebung</hi> und nicht auf die sei es auch dem <hi rend="#u">Landesrate</hi> oder der <hi rend="#u">Landesversammlung</hi> gesetzlich vorbehaltenen Akte der Selbst<hi rend="#u">verwaltung</hi> beziehen. Das Gebiet der Selbstverwaltung im engeren Sinne sei durch die Verfassungsänderungen vom März d. J. vorläufig unberührt gelassen worden, um es in einem späteren gelegeneren Zeitpunkte einer gewiss notwendigen erschöpfenden Neuregelung zuzuführen.<pb facs="krp-0080_r-0007"/>Es sei hienach zur Verlängerung der Geltungsdauer des vorgelegten Regulativs für die Wasserleitung der Gemeinde Ehrwald eine <hi rend="#u">Genehmigung</hi> des in der Sache zu fassenden <hi rend="#u">Beschlusses</hi> der <hi rend="#u">Landesversammlung</hi> durch die <hi rend="#u">Staatsregierung erforderlich</hi>. Die Staatsregierung nehme jedoch keinen Anstand, diese Genehmigung im Voraus unter einem zu erteilen, sodass bei einer vorbehaltslosen Schlussfassung der Landesversammlung im angedeuteten Sinne eine neuerliche Vorlage des Geschäftsstückes entfallen könne.</p>
+                  <p>In diesem Sinne beabsichtige die Staatsregierung die Landesregierung in Innsbruck zu verständigen.</p>
+                  <p>Der Kabinettsrat pflichtet dieser Auffassung bei.</p>
+               </div>
+               <div type="top" xml:id="krp-0080_top04">
+                  <head>
+                     <label>
+                        <num n="4">4.</num>
+                        <seg>Teuerungszulagen für die Volkswehr (außerhalb Wiens).</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Deutsch</hi> verweist darauf, dass laut Kabinettsratsbeschlusses vom 13. Mai 1919 an die Volkswehrformationen der Garnison Wien in Anbetracht der schwierigen Verpflegsverhältnisse ein Teuerungszuschuss von 4 K pro Mann und Tag bewilligt worden sei. Die Forderung auf Zuerkennung einer Teuerungszulage werde <pb facs="krp-0080_r-0008"/>nun auch von der Volkswehr der Länder erhoben; die Oberösterreichische Landesregierung habe sogar schon einen solchen Teuerungszuschuss im Betrage von 4 K – rückwirkend vom 20. April – bewilligt. Wiewohl die Teuerung außerhalb Wiens nicht in dem gleichem Maße drückend sei wie in Wien selbst, unterliege es doch, keinem Zweifel, dass auch allen anderen Garnisonen das für das ganze Staatsgebiet einheitlich bemessene Kostgeld von 5 K 44 h für die Beschaffung einer auskömmlichen Manneskost nicht hinreiche. Der sprechende Staatssekretär halte demnach die Zuerkennung einer solchen Teuerungszulage auch für die außerhalb Wiens eingeteilten Volkswehrformationen für unabweislich notwendig; diese hätte je nach den tatsächlichen Preisverhältnissen in den einzelnen Garnisonen abgestuft, jedoch erst nach durchgeführtem 25%igen Abbau der Volkswehr, in Kraft zu treten. Bei einem Stande von rund 25.000 Volkswehrmännern (außerhalb Wiens) würde diese Maßnahme ein beiläufiges Erfordernis von 2,6 Millionen K monatlich beinhalten. Die Verwendung der erforderlichen Kredite hätte je nach Wunsch der zu Beteilenden entweder <pb facs="krp-0080_r-0009"/>zum Ankaufe von Lebensmitteln im Großen oder durch zehntägige, im Nachhinein zu bewirkende Auszahlung in Barem zu erfolgen.</p>
+                  <p>Hierüber entwickelte sich eine eingehende Debatte, bei welcher sich Staatssekretär Dr. <hi rend="#letterspaced">Schumpeter</hi> sowie Sektionschef Dr. <hi rend="#letterspaced">Grimm</hi> in entschiedener Weise gegen die beantragte Maßnahme aussprachen.</p>
+                  <p>Der Kabinettsrat genehmigte schließlich den Antrag des sprechenden Staatssekretärs mit der Maßgabe, dass diese Aufbesserung erst nach dem länderweise erfolgten 25%igen Abbau einzutreten habe, wobei jedoch der 1. Juni d. J. als Beginn der Geltungsdauer dieser Aufbesserung zu gelten haben wird; das Staatsamt für Heer[es]wesen wurde gleichzeitig ermächtigt, die Übernahme etwaiger bereits vor diesem Termine seitens eines oder mehrerer Länder ausgezahlter Aufbesserungen auf seine Kredite ausdrücklich abzulehnen.</p>
+                  <p>Schließlich genehmigte der Kabinettsrat die Abstufung dieser Aufbesserung in der Spannung von 4–2 K.</p>
+                  <p><pb facs="krp-0080_r-0010"/></p>
+               </div>
+               <div type="top" xml:id="krp-0080_top05">
+                  <head>
+                     <label>
+                        <num n="5">5.</num>
+                        <seg>Gesetzesbeschluss der Provisorischen Landesversammlung in Niederösterreich über die Bildung einer selbständigen Ortsgemeinde Semmering.</seg>
+                     </label>
+                  </head>
+                  <p>Namens des augenblicklich, abwesenden Staatssekretärs Eldersch teilt der <hi rend="#letterspaced">Vorsitzende</hi> mit, dass die Provisorische Landesversammlung in Niederösterreich den Entwurf eines Gesetzes, betreffend die Bildung einer selbständigen Ortsgemeinde Semmering, beschlossen habe.</p>
+                  <p>Der Staatssekretär für Inneres und Unterricht beabsichtige gegen diesen Gesetzesbeschluss keine Vorstellung zu erheben und der sofortigen Verlautbarung des Landesgesetzes zuzustimmen.</p>
+                  <p>Der Kabinettsrat erteilt hiezu seine Zustimmung.</p>
+               </div>
+               <div type="top" xml:id="krp-0080_top06">
+                  <head>
+                     <label>
+                        <num n="6">6.</num>
+                        <seg>Bestätigung der Wahl des Bürgermeisters der Stadt Steyr.</seg>
+                     </label>
+                  </head>
+                  <p>Über Antrag des Vorsitzenden erteilt der Kabinettsrat dem Staatssekretär für Inneres und Unterricht die Ermächtigung, dem Präsidenten der Nationalversammlung den Antrag auf Bestätigung der Wahl des in der konstituierenden Sitzung des neugewählten Gemeinderates der Stadt Steyr am 25. Mai d. J. zum Bürgermeister dieser Stadt gewählten bisherigen provisorischen Bürgermeisters, Gewerkschafts<pb facs="krp-0080_r-0011"/>sekretärs Josef Wokral, erstatten zu dürfen.</p>
+               </div>
+               <div type="top" xml:id="krp-0080_top07">
+                  <head>
+                     <label>
+                        <num n="7">7.</num>
+                        <seg>Vollzugsanweisung des Staatsamtes für Justiz über den Amtstitel der fachmännischen Laienrichter bei den Gerichtshöfen erster Instanz.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Bratusch</hi> erbittet und erhält vom Kabinettsrate die Ermächtigung zur Erlassung einer Vollzugsanweisung über den Amtstitel der fachmännischen Laienrichter bei den Gerichtshöfen erster Instanz.</p>
+               </div>
+               <div type="top" xml:id="krp-0080_top08">
+                  <head>
+                     <label>
+                        <num n="8">8.</num>
+                        <seg>Übernahme des Milltärtöchtererziehungsinstitutes in Hernals in die Zivilverwaltung.</seg>
+                     </label>
+                  </head>
+                  <p>Nach eingehender Darstellung der Sachlage erbittet Unterstaatssekretär <hi rend="#letterspaced">Glöckel</hi> vom Kabinettsrate die Ermächtigung, das Militärtöchtererziehungsinstitut in Hernals mit dem nächsten Schuljahre in die Zivilunterrichtsverwaltung übernehmen und die mit dieser Maßnahme verbundenen Fragen unterrichtspolitischer, militäradministrativer und finanzieller Natur zwischen den beteiligten Staatsämtern austragen zu dürfen.</p>
+                  <p>Sektionschef Dr. <hi rend="#letterspaced">Grimm</hi> spricht sich gegen die augenblickliche Inanspruchnahme dieses, dem alten Staate gehörigen Schulgebäudes durch den deutschösterreichischen Staat aus und hält eine definitive Bindung im gegenwärtigen Zeitpunkte für nicht ökonomisch <pb facs="krp-0080_r-0012"/>und nicht notwendig; nicht notwendig deshalb, weil die Überführung in das schon bestehende Zivilmädchenpensionat möglich sei, ganz abgesehen von dem selbstverständlichen Auslaufenlassen der Anstalt; nicht ökonomisch deshalb, weil <hi rend="#u">eine</hi> Anstalt immer weniger koste als zwei und weil das rasche Zugreifen auf Gebäude, die zwar territorial uns, tatsächlich aber zur Liquidierungsmasse gehören, zu überspannten Entschädigungsforderungen der übrigen Nationalstaaten führe und endlich, weil diese Gebäude, wenn sie später frei zur Verfügung stehen werden, staatsfinanziell verwertet werden können.</p>
+                  <p>Nach einer hierüber abgeführten kurzen Debatte genehmigt der Kabinettsrat den Antrag des Unterstaatssekretärs Glöckel.</p>
+               </div>
+               <div type="top" xml:id="krp-0080_top09">
+                  <head>
+                     <label>
+                        <num n="9">9.</num>
+                        <seg>Gesetzesbeschluss der Niederösterreichischen Landesversammlung über die Anrechnung der Kriegsjahre für die Lehrpersonen der öffentlichen Volks- und Bürgerschulen in Niederösterreich (außerhalb Wiens).</seg>
+                     </label>
+                  </head>
+                  <p>Unterstaatssekretär <hi rend="#letterspaced">Glöckel</hi> teilt mit, dass die Niederösterreichische Landesversammlung am 30. April d. J. einen Beschluss, betreffend die Anrechnung der Kriegsjahre für die Lehrpersonen der öffentlichen Volks- und Bürgerschulen in Niederösterreich <pb facs="krp-0080_r-0013"/>(außerhalb Wiens) gefasst habe.</p>
+                  <p>Er beabsichtige von der Erhebung einer Vorstellung gegen diesen Gesetzesbeschluss abzusehen und die Niederösterreichische Landesregierung zu ersuchen, im Wege des Landesrates mehrere geringfügige textliche Änderungen bei der Landesversammlung anzuregen und das in diesem Sinne ergänzte Gesetz behufs Beisetzung der Gegenzeichnung wieder vorzulegen.</p>
+                  <p>Der Kabinettsrat erteilt hiezu seine Ermächtigung.</p>
+               </div>
+               <div type="top" xml:id="krp-0080_top10">
+                  <head>
+                     <label>
+                        <num n="10">10.</num>
+                        <seg>Gesetzesbeschluss der Niederösterreichischen Landesversammlung über die Regelung des Diensteinkommens des Lehrpersonals im Schulbezirke Wien.</seg>
+                     </label>
+                  </head>
+                  <p>Unterstaatssekretär Glöckel verweist darauf, dass er mit Beschluss des Kabinettsrates vom 9. Mai 1919 ermächtigt worden sei, gegen den Gesetzesbeschluss der Niederösterreichischen Landesversammlung vom 16. April 1919, betreffend die Abänderung des Gesetzes vom 31. Juli 1917, LGBl. Nr. 158, über die Rechtsverhältnisse des Lehrstandes an den öffentlichen Volksschulen namens der Staatsregierung Vorstellung zu erheben, weil es nach diesem Gesetzesbeschluss der Gemeinde Wien überlassen worden ist, durch einen erst zu fassenden Beschluss die Regelung der Dienstesbezüge des Lehrpersonales <pb facs="krp-0080_r-0014"/>der Volksschulen im Schulbezirke Wien vorzunehmen, während nach § 55 des Reichsvolksschulgesetzes diese Regelung Sache der Landesgesetzgebung ist.</p>
+                  <p>Der sprechende Unterstaatssekretär habe sohin beim Niederösterreichischen Landtag gegen den bezogenen Gesetzesbeschluss Vorstellung erhoben. Nunmehr habe der Niederösterreichische Landtag in seiner Sitzung vom 11. Juni 1919 beschlossen, den Gemeinderat der Stadt Wien aufzufordern, sofort dem Landtage den Entwurf eines neuen Gehaltsgesetzes für die Lehrpersonen Wiens vorzulegen.</p>
+                  <p>Da der Wiener Gemeinderat dieser Aufforderung des Landtages unverzüglich entsprechen dürfte, werde sich der Landtag voraussichtlich schon in einer der nächsten Sitzungen mit der bezüglichen Gesetzesvorlage befassen. Redner werde nicht ermangeln, sofort nach Vorlage des betreffenden Gesetzesbeschlusses in eine eingehende Prüfung desselben einzugehen, er erbitte aber, um dem sowohl aus Lehrerkreisen als auch von Mitgliedern des Niederösterreichischen Landtages mehrfach geäußerten Wunsche nach tunlichst rascher Kundmachung und Durchführung dieses Gesetzes zu entsprechen, ausnahmsweise vom Kabinettsrate bereits jetzt die Ermächtigung, <pb facs="krp-0080_r-0015"/>im gegebenen Falle nach gepflogenem Einvernehmen mit der Staatskanzlei von einer Vorstellung gegen diesen Gesetzesbeschluss dann absehen und der sofortigen Kundmachung dieses Gesetzes zustimmen zu dürfen, wenn sich aufgrund der Prüfung weder verfassungsrechtliche noch verwaltungstechnische Bedenken gegen dasselbe ergeben; weiters bitte er um die Ermächtigung, allfällige stilistische Änderungen im Wege der Landesregierung beim Landesrate zur Weiterleitung an den Landtag anregen zu können.</p>
+                  <p>Der Kabinettsrat erteilt die erbetene Ermächtigung.</p>
+               </div>
+               <div type="top" xml:id="krp-0080_top11">
+                  <head>
+                     <label>
+                        <num n="11">11.</num>
+                        <seg>Gesetzesbeschluss des Niederösterreichischen Landtages, betreffend Abänderung einiger Bestimmungen des Schulaufsichtsgesetzes und über die Funktionsdauer einiger Mitglieder der Orts- und Bezirksschulräte, des Landesschulrates und der Landeslehrerernennungskommission.</seg>
+                     </label>
+                  </head>
+                  <p>Unterstaatssekretär Glöckel teilt mit, dass in der heutigen Sitzung des Niederösterreichischen Landtages aller Voraussicht nach zwei Gesetzesvorlagen in Schulangelegenheiten zur Beratung kommen dürften, auf deren eheste Verabschiedung, Durchführung und Kundmachung seitens der beteiligten Kreise das größte Gewicht gelegt werde.</p>
+                  <p>Die eine Gesetzesvorlage betreffe die Abänderung und Ergänzung einiger Bestimmungen des Niederösterreichischen Schul<pb facs="krp-0080_r-0016"/>aufsichtsgesetzes, und zwar rücksichtlich, der Zusammensetzung der Bezirksschulräte; der zweite Gesetzentwurf betreffe die Funktionsdauer einiger Mitglieder der Orts- und Bezirksschulräte, des Landesschulrates und der Landeslehrerernennungskommission.</p>
+                  <p>Der sprechende Unterstaatssekretär beabsichtige für den Fall, als der Landtag die vom Staatsamt für Inneres und Unterricht bereits überprüften Entwürfe zum Beschluss erheben bzw. nur unwesentliche und in rechtlicher Hinsicht unbedenkliche Änderungen vornehmen sollte, eine Vorstellung im Gegenstande nicht zu erheben und der sofortigen Kundmachung dieser Gesetze zuzustimmen.</p>
+                  <p>Der Kabinettsrat pflichtet dieser Absicht bei.</p>
+               </div>
+               <div type="top" xml:id="krp-0080_top12">
+                  <head>
+                     <label>
+                        <num n="12">12.</num>
+                        <seg>Künftige Dienstesverwendung einer Anzahl von Professoren, Hilfskräften und Beamten der Czernowitzer Universität.</seg>
+                     </label>
+                  </head>
+                  <p>Unterstaatssekretär Glöckel teilt mit, dass die rumänische Regierung die Absicht habe, an der Universität in Czernowitz die rumänische Vortragssprache einzuführen und die dortselbst verbliebenen Professoren, Hilfskräfte und Beamten dieser Universität verständigt habe, dass sie mit Ende September d. J. von ihren Posten <pb facs="krp-0080_r-0017"/>enthoben werden würden.</p>
+                  <p>Es werfe sich daher die Frage der künftigen Verwendung von insgesamt 19 ordentlichen, fünf außerordentlichen Professoren, ferner von mehreren Beamten und sonstigen Angestellten dieser Hochschule auf.</p>
+                  <p>Der sprechende Unterstaatssekretär nehme in Aussicht, an die Professorenkollegien sämtlicher Hochschulen die Anfrage zu richten, ob es dem dortigen Unterrichtsbedürfnisse entsprechen würde, dass einzelne der Czernowitzer Professoren zu ergänzenden Vorlesungen oder Übungen aus ihrem Fachgebiete bis auf weiteres und zwar ohne Inanspruchnahme der systemisierten Lehrkanzeln herangezogen werden.</p>
+                  <p>Redner erbittet demgemäß und erhält vom Kabinettsrate die Ermächtigung, in dem erwähnten Sinne vorzugehen und gleichzeitig den in Frage stehenden Staatsbediensteten – soweit sie deutscher Nationalität sind – die ihnen zukommenden Dienstbezüge einstweilen in der Form einer Beihilfe auszubezahlen, ferner jene Professoren dieser Universität, welche von Seite der betreffenden Professorenkollegien anderer Hochschulen für <pb facs="krp-0080_r-0018"/>eine einstweilige Verwendung im Vorschlag gebracht werden, als Professoren dieser Hochschulen extra statum mit ihren bisherigen Bezügen und Erteilung eines entsprechenden Lehrauftrages gegen Einholung noch einiger festzusetzender Modalitäten, in den deutschösterreichischen Staatsdienst zu übernehmen. Schließlich erhält der sprechende Staatssekretär die Ermächtigung zu einem ähnlichen Vorgange auch rücksichtlich der Adjunkten, Assistenten und Beamten der genannten Hochschule.</p>
+               </div>
+               <div type="top" xml:id="krp-0080_top13">
+                  <head>
+                     <label>
+                        <num n="13">13.</num>
+                        <seg>Vollzugsanweisung, betreffend die einheitliche Regelung des gesamten staatlichen Vermessungswesens.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Ing. <hi rend="#letterspaced">Zerdik</hi> teilt mit, dass er aufgrund eines Beschlusses des früheren Kabinettes vom 21. Dezember 1918, wonach der gesamte zivile und militärisch-staatliche Vermessungsdienst einschließlich des Kartenwesens zwecks Vereinheitlichung unter fachmännischer Leitung dem vormaligen Staatsamte für öffentliche Arbeiten unterstellt werden solle und letzteres beauftragt wurde, die zur Durchführung dieses Beschlusses nötigen Vorarbeiten einzuleiten, zunächst mit den beteiligten Staatsämtern Verhandlungen an<pb facs="krp-0080_r-0019"/>gebahnt habe. Unter Zugrundelegung des Ergebnisses dieser Verhandlungen erbitte der sprechende Staatssekretär die Zustimmung des Kabinettsrates zur Erlassung der diesem Protokolle als Beilage zuliegenden Vollzugsanweisung durch das Staatsamt für Handel und Gewerbe, Industrie und Bauten.</p>
+                  <p>Sektionschef Dr. <hi rend="#letterspaced">Grimm</hi> stellt namens des Staatsamtes für Finanzen folgenden Ergänzungsantrag: Dem § 1 wäre als zweiter Absatz anzufügen: „Der Finanzverwaltung bleibt auch weiterhin im Einvernehmen mit dem Staatsamte für Handel und Gewerbe, Industrie und Bauten das Verfügungsrecht über alle Einrichtungen des bestehenden Grundsteuerkatasters sowie das Recht gewahrt, die zur Fortführung des Katasters bestellten Organe jederzeit zur Mitwirkung für Steuerveranlagungszwecke heranzuziehen".</p>
+                  <p>Dem § 3 wäre als zweiter Absatz anzufügen: „Ebenso bleiben aber auch die bisher bestandenen Verpflichtungen dieser Behörden zur Lieferung der entsprechenden Behelfe für die Durchführung der durch die etwaige Vollendung baulicher Anlagen in der Flureinteilung herbeigeführten Änderungen <pb facs="krp-0080_r-0020"/>in den Operaten des Katasters weiterhin in Geltung".</p>
+                  <p>Sektionschef Dr. Grimm macht weiters Mitteilung, dass Staatssekretär Ing. Zerdik überdies intern dem Staatsamte für Finanzen zugestanden habe, in die für die genannten Organe bestellten Qualifikations- und Disziplinarkommission einen Funktionär der Finanzverwaltung als ordentliches Mitglied zu berufen und bei allen Ernennungen und Beförderungen der vorgenannten Organe das Einvernehmen mit der Finanzverwaltung zu pflegen.</p>
+                  <p>Der Kabinettsrat genehmigt den Antrag des Staatssekretärs Ing. Zerdik sowie den Zusatzantrag des Sektionschefs Dr. Grimm.</p>
+               </div>
+               <div type="top" xml:id="krp-0080_top14">
+                  <head>
+                     <label>
+                        <num n="14">14.</num>
+                        <seg>Verwertung militärischer Liegenschaften.</seg>
+                     </label>
+                  </head>
+                  <p>Nach eingehender Darstellung der Sachlage stellt Staatssekretär Ing. <hi rend="#letterspaced">Zerdik</hi> nachstehenden Antrag: „Zur Beratung und Beschlussfassung über die künftige Verwertung der bisher von den militärischen Behörden, Ämtern und Anstalten benützten und nunmehr für militärische Zwecke entbehrlich gewordenen Liegenschaften wird beim Staatsamt für Handel und Gewerbe, Industrie und Bau<pb facs="krp-0080_r-0021"/>ten und unter dessen Leitung eine ständige zwischenstaatsamtliche Kommission eingesetzt, zu welcher die Staatskanzlei und sämtliche Staatsämter bevollmächtigte Vertreter zu entsenden hätten.</p>
+                  <p>Sollte ein einstimmiger Beschluss nicht erzielt werden können, so ist die Angelegenheit seitens des Staatsamtes für Handel und Gewerbe, Industrie und Bauten unter Darstellung und Begründung aller in Betracht kommenden Vorschläge dem Kabinettsrate zur Entscheidung vorzulegen."</p>
+                  <p>Nach einer eingehenden Debatte an der sich die Staatssekretäre Dr. <hi rend="#letterspaced">Schumpeter</hi>, Dr. <hi rend="#letterspaced">Deutsch</hi> und Dr. <hi rend="#letterspaced">Bauer</hi> beteiligten, genehmigt der Kabinettsrat den vorliegenden Antrag mit folgender Abänderung des Absatzes 2:</p>
+                  <p>„Sollte ein einstimmiger Beschluss nicht erzielt werden können, so ist in dieser Angelegenheit vom Staatsamte für Handel und Gewerbe, Industrie und Bauten die Zustimmung des Staatsamtes für Finanzen einzuholen.“</p>
+               </div>
+               <div type="top" xml:id="krp-0080_top15">
+                  <head>
+                     <label>
+                        <num n="15">15.</num>
+                        <seg>Besondere Entlohnung für Überstunden und Mehrdienstleistung.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Schumpeter</hi> verweist auf die in der letzten Zeit zutage getretene Notwen<pb facs="krp-0080_r-0022"/>digkeit einer Lösung der Frage über Art und Ausmaß der Entlohnung von Überstunden und von über die vorgeschriebene Arbeitszeit hinaus geleisteten Diensten seitens der pragmatisierten Staatsbediensteten. Mit dieser Frage habe sich bereits das Zwischenstaatsamtliche Komitee befasst.</p>
+                  <p>Über Aufforderung des sprechenden Staatssekretärs macht hierauf Sektionsrat Dr. <hi rend="#letterspaced">Wilfling</hi> über die einschlägigen Beratungen des Komitees Mitteilungen und gibt bekannt, dass Letzteres den nachstehenden Beschlussantrag dem Kabinettsrate unterbreite:</p>
+                  <p>„Eine besondere Entlohnung für Überstunden hat grundsätzlich nur stattzufinden, wenn jeweils ein ausdrücklicher Auftrag zur Leistung bestimmter Arbeiten über die normale Arbeitszeit hinaus durch den Vorstand der Dienststelle unter seiner Verantwortlichkeit erteilt worden ist; ferner ist die volle Ausnützung der festgesetzten Amtsstunden grundsätzlich Voraussetzung der Gewährung jeder Überstundenentlohnung.</p>
+                  <p>Der Kreis der Personen, die Anspruch auf eine Vergütung für eine Mehrdienstleistung erheben können, umfasst:</p>
+                  <list>
+                     <item n="1"><label>1.)</label> Angestellte, die Dienste über <pb facs="krp-0080_r-0023"/>den Endtermin einer zeitlich begrenzten Dienstpflicht oder Wartezeit hinaus zu verrichten haben (wie z. B. Türhüter, Organe der Dienerschaft usw.);</item>
+                     <item n="2"><label>2.)</label> Staatsbedienstete deren Tätigkeit in wesentlich mechanischen und manipulativen Dienstesverrichtungen besteht.</item>
+                  </list>
+                  <p>Bezüglich dieser beiden Kategorien wäre vor allem zu trachten, durch entsprechenden Schichtwechsel die Leistung von Diensten über die vorgeschriebenen regelmäßigen Amtsstunden hinaus überhaupt zu vermeiden. Nur insoweit als dies mit Rücksicht auf besondere Umstände nicht möglich ist, erhalten die unter diese beiden Kategorien fallenden Staatsbediensteten für die über die feststellbare und leicht kontrollierbare normale Arbeitsleistung bzw. über die vorgeschriebenen regelmäßigen Amtsstunden hinaus im Amtsraume verrichtete Mehrdienstleistung eine besondere Vergütung und zwar hält das Komitee für die unter l) fallenden Staatsbediensteten die Vergütung von 1 K für jede Überstunde und für die unter 2) fallenden die Vergütung von 2 K für jede Überstunde für angemessen. <pb facs="krp-0080_r-0024"/>Für nicht unter die oben angeführten zwei Kategorien fallende Bedienstete und zwar:</p>
+                  <list>
+                     <item n="1"><label>3.)</label> für die nicht zum Konzeptsdienst herangezogenen Beamten, die Permanenzdienst oder Terminarbeiten über die vorgeschriebenen regelmäßigen Amtsstunden auf ausdrücklichen Auftrag des Vorstandes ihrer Dienststelle zu leisten haben (wie z. B. Rechnungsbeamte, Beamte im Zolldienste usw.</item>
+                     <item n="2"><label>4.)</label> für die Konzeptsbeamten, vor denen im Übrigen die vereinzelte Inanspruchnahme zur Mehrarbeit ohne Rücksicht auf eine besondere Vergütung zu verlangen sein wird, wären für ständige Inanspruchnahme zu einer Arbeitsleistung, die im Vergleiche zur normalen Arbeitsleistung als eine außergewöhnliche bezeichnet werden muss, ständige oder fallweise Remunerationen zu gewähren.</item>
+                  </list>
+                  <p>Der Bemessung dieser Remunerationen ist ein Ausmaße von 2 K bei der Kategorie 3, bei der Kategorie 4 ein solches vom 4 K für Beamte auf nicht verantwortungsvollem Posten, ein solches von 5 K für Beamte auf verantwortungsvollen Posten für jede Stunde bis zum Höchstausmaß von 4 Stunden für den Tag zu Grunde zu legen." <pb facs="krp-0080_r-0025"/>Staatssekretär Dr. <hi rend="#letterspaced">Bauer</hi> erklärt sich mit diesem Antrage unter der Voraussetzung einverstanden, dass hiedurch etwaige bereits übliche und günstigere Entlohnungen nicht berührt werden.</p>
+                  <p>Sektionschef Dr. <hi rend="#letterspaced">Grimm</hi> führt aus, dass es sich vorliegenden Falles nur darum handle, ob der Kabinettsrat mit einer Regelung der Überstundenentlohnungsfrage grundsätzlich einverstanden sei und die vom Komitee ausgearbeiteten Grundzüge im Prinzipe billige.</p>
+                  <p>Der Kabinettsrat beschließt gegen diese Richtlinien eine Einwendung nicht zu erheben und ermächtigt das Staatsamt für Finanzen zur Erlassung weiterer Verfügungen im Gegenstande.</p>
+                  <p/>
+               </div>
+            </div>
+            <div type="stenogramme">
+               <div n="1">
+                  <head>[KBR 80, 17. Juni 1919, Stenogramm]</head>
+                  <p><pb facs="krp-0080_s01-0001"/>Nr. 81 [sic], 17. /6. 19.</p>
+                  <p>[<hi rend="#i">Rechtes Obereck:</hi>] [Zugezogen]: Schober, </p>
+                  <p>Wilfling, </p>
+                  <p>Gunther.</p>
+                  <p>1. Fink: Kard[inal] Piffl lädt ein zur Fronleichnamsprozession, 7h morgens.</p>
+                  <p>2. Loewenfeld: Presseangriffe. Alle Versuche, diese Übelstände (Unrichtigkeiten) abzustellen erfolglos. Geradezu ehrenrührige Angriffe. Vorwurf wegen Ablehnung gewisser Offerte. </p>
+                  <p>Es hat die Folgen, dass diese Artikel auch in die Provinzzeitungen übernommen werden. Die Autorität des Amtes und auch damit der gesamten Regierung - wenn ein Mitglied persönlich angegriffen wird. </p>
+                  <p>Ist der Meinung, dass er von der Gesamtregierung in Schutz zu nehmen wäre. Legt diese Sache vor, da die Autorität völlig untergraben wird.</p>
+                  <p>Bratusch: Berichtigung.</p>
+                  <p>Hanusch: Eigener Pressedienst einzurichten zu dem Zweck, dass man in jene Presse, die allgemein gelesen wird, objektive Artikel hineinbringt, die den Tatbestand aufklären. </p>
+                  <p>Durch die anständige Presse soll entgegen gewirkt werden.</p>
+                  <p>Fink: Nimmt keine materielle Stellung dazu.</p>
+                  <p>Kein Beschluss.</p>
+                  <p>3. Fink: Wasserleitungs-[Ver]ordnung Gemeinde Ehrwald.</p>
+                  <p>Angenommen.</p>
+                  <p>4. Deutsch: Volkswehr. Eigenmächtigkeit der Länder: Oberösterreich (es könnte in Linz zu Plünderungen kommen).</p>
+                  <p>Fink: Landeshauptmann Hauser hat telefonisch aufgerufen und bittet, man möge das nicht abgestuft machen.</p>
+                  <p>Deutsch: Wir können das nicht aus Prinzip abstufen.</p>
+                  <p>Grimm: Das Staatsamt für Finanzen hat nur zugestimmt, dass diese Zulage nur für Wien bleibt. Die Länder sollen die Volkswehr bezahlen. Rückwirkung auf die anderen Gehälter sicher.</p>
+                  <p>Deutsch: Man soll abstufen von 4-2 Kronen. Das Land Oberösterreich wird dann 1 Million draufzahlen.</p>
+                  <p>Stöckler: Die gleiche Teuerungszulage für Linz ist völlig ungerechtfertigt.</p>
+                  <p>Schumpeter: Man muss es den Ländern abgewöhnen, eigene Verwaltungspolitik auf Kosten des Staates [zu] machen.</p>
+                  <p>Deutsch: 1.) 25% Abbau; </p>
+                  <p>2.) Termin 1. /6. anstatt 20. /4., was in Oberösterreich bewilligt worden ist; </p>
+                  <p>3.) Abstufen von 4-2 Kronen.</p>
+                  <p>Hanusch: Verländerung der Volkswehr muss hintangehalten werden.</p>
+                  <p>Deutsch: <hi rend="#s">Wenn der Abbau</hi> - 4.) Heerwesen [wird] ermächtigt, aus seinen Krediten die Differenz von 20. /4. bis 1. /6. nicht auf sich zu nehmen.</p>
+                  <p>Einverstanden, Gegenstand erledigt.</p>
+                  <p><pb facs="krp-0080_s01-0002"/>5. Fink: Semmering.</p>
+                  <p>Erledigt.</p>
+                  <p>6. Fink: Stadt Steyr: Bürgermeister Bestätigung.</p>
+                  <p>Angenommen.</p>
+                  <p>7. Bratusch: Laienrichter bei den ersten Instanzen.</p>
+                  <p>Resch: Gegen die Einführung neuer Titel, Titel: Laienrichter. Angenommen.</p>
+                  <p>8. Glöckel: Militärtöchter-Erziehungsanstalt.</p>
+                  <p>Grimm: Wir halten es für unzeitgemäß. Liquidierungskommission hat das schon aufgegriffen.</p>
+                  <p>Glöckel: Widerspruch.</p>
+                  <p>Schumpeter: -.</p>
+                  <p>Angenommen.</p>
+                  <p>9. Glöckel: Heute hat die niederösterreichische Landesversammlung Beschluss gefasst ....</p>
+                  <p>Angenommen.</p>
+                  <p>10. Glöckel: Regelung des Diensteinkommens des Lehrpersonals.</p>
+                  <p>Miklas: Ein solcher Beschluss wird sehr begrüßt werden von der Lehrerschaft; bittet um Verlautbarung in der Presse.</p>
+                  <p>Fink: Staats[sekretär] für Unterricht wird ermächtigt, im Einvernehmen mit der Staatskanzlei das zu machen.</p>
+                  <p>Miklas: Erläutert die Sache.</p>
+                  <p>11. Glöckel: Funktionsdauer.</p>
+                  <p>Angenommen.</p>
+                  <p>12. Glöckel: Seit gestern [sind] Czerno[witzer] Universitätsprofessoren da, die übermorgen abreisen wollen. </p>
+                  <p>Dort ist ein Teil des Lehrkörpers zurückgeblieben und hat in deutscher Sprache ihr Amt ausgeübt. Diese haben die Beihilfe </p>
+                  <p>nicht bekommen. Die rumänische Regierung hat die Absicht, die rumänische Vortragssprache -. 19 ordentliche, 5 außerordentliche [Professoren] .... </p>
+                  <p>Staatsratsbeschluss. An Professoren-Kollegien aller Universitäten Anfrage zu richten .... </p>
+                  <p>Ermächtigung ....</p>
+                  <p>Angenommen.</p>
+                  <p><pb facs="krp-0080_s01-0003"/>13. Zerdik: Vermessungsdienst. </p>
+                  <p>Material bei Fink.</p>
+                  <p>Grimm: Gebeten um Zusatz bei § 1 und 3, </p>
+                  <p>dass die Finanzverwaltung auch weiterhin im Einvernehmen ....</p>
+                  <p>Angenommen mit Abänderung.</p>
+                  <p>14. Zerdik: Liegenschaften.</p>
+                  <p>Schumpeter: Die Finanzverwaltung kann sich ein Verfügung[srecht] im Gegenstand nicht nehmen lassen. (Nach § 3 Budgetprovisorium).</p>
+                  <p><hi rend="#s">Deutsch</hi>: -. Grimm: Wir haben jetzt allen Grund, jetzt vorsichtig zu sein, auf die militärischen Gebäude etc. jetzt zu greifen (Liquidationskommission).</p>
+                  <p>Deutsch: Wenn die Kommission nur [über] die Gebäude entscheidet, welche von uns freigegeben sind, dann habe ich nichts dagegen einzuwenden. </p>
+                  <p>Die Kommission hat also nur über jene Objekte zu entscheiden, welche vom Staatsamt für Heerwesen bereits freigegeben worden sind.</p>
+                  <p>Zerdik: Wir haben es gar nicht anders gedacht als [es] Deutsch gesagt hat.</p>
+                  <p>Bauer: Das Staatsamt für Finanzen ist bezüglich der Liquidation zu ängstlich. Bei allen beweglichen Sachen hat Grimm Recht, bei allen liegenden </p>
+                  <p>Sachen aber ist die Sache anders. Das kann man nicht wegtragen.</p>
+                  <p>Schumpeter: Kompetenzfrage ist aber die Hauptsache.</p>
+                  <p>Fink: Sollte ein einstimmiger Beschluss nicht erzielt werden, [...] ist die Angelegenheit vom Staatsamt für Bauten dem Staatsamt für Finanzen </p>
+                  <p>vorzulegen.</p>
+                  <p>Angenommen.</p>
+                  <p>15. Schumpeter: Verwendungszulagen. Antrag 16. /5. innerhalb der Tagesordnung vorgelegt. </p>
+                  <p>Steigerung der Gehälter der unteren Rangsklassen. </p>
+                  <p>Für den Fall, als dieser Antrag nicht genehmigt werden sollte, -.</p>
+                  <p>Loewenfeld: Ist gegen den zweiten Antrag, aber befürwortet den ersten Antrag. Aber generell kann es wohl nicht gemacht werden.</p>
+                  <p>Bauer: Generelle Erhöhung erscheint mir unmöglich. Umgehung des Gesetzes. </p>
+                  <p>Im Staatsdienst gibt es gewisse Stellen, welche nicht angemessen entlohnt werden im bestehenden Schema. Das Argument der Rückwirkung wird gerade </p>
+                  <p>jetzt vom Staatsamt für Finanzen nicht erhoben. </p>
+                  <p>Das, was mir vorschwebt, müsste ganz anders umgrenzt sein.</p>
+                  <p>Zerdik: Man kann sich mit Remun[erationen] helfen. Das Staatsamt für Finanzen soll jedem Staatsamt einen gewissen Fonds zur Verfügung stellen.</p>
+                  <p>Schumpeter: Würde begrüßen, wenn erster Antrag angenommen würde.</p>
+                  <p><pb facs="krp-0080_s01-0004"/>Bauer: Voraussetzung wäre, dass [es] nicht beschränkt [wird] auf gewisse Rangklassen und auf die Zentralstellen.</p>
+                  <p>Schumpeter: Die Konzepts- und fachwirtschaftlichen [sic] Beamten ...</p>
+                  <p>Loewenfeld: Ein Unterschied muss gemacht werden zwischen Remun[eration] und ständiger Zulage.</p>
+                  <p>Zerdik: Empfiehlt die Bezeichnung: fixe Pauschalien.</p>
+                  <p>Miklas: Für die Gewährung von Zulagen und Remunerationen an Beamte mit ganz besonderen Dienstleistungen wird ins Budget ein Betrag von 2 Millionen </p>
+                  <p>Kronen eingestellt, dessen Verwendung durch Kabinettsrat individuell erfolgt.</p>
+                  <p>Bratusch: Das lässt sich nicht mit allen Ressorts in Einklang bringen. Man müsste das den einzelnen Ressortchefs überlassen. </p>
+                  <p>Jeder Ressortchef bekommt einen gewissen Betrag zur Verfügung; er hätte dann nach freiem Ermessen zuzuweisen.</p>
+                  <p>Schumpeter: Antrag: Beamte, die für ihre Person allein oder an der Spitze von ... mit höheren ständigen Zulagen zu beteilen.</p>
+                  <p>Geheimprotokoll angenommen; ex Beilage.</p>
+                  <p>16. Schumpeter: Überstunden.</p>
+                  <p>Wilfling: -.</p>
+                  <p>Bauer: Unter der Bedingung einverstanden, dass wo bereits jetzt höhere Überstunden üblich sind, jetzt keine Änderung Platz greift.</p>
+                  <p>Paul: Schließt sich Bauer an. Dagegen scheint es schwer, die Punkte 3 und 4 in Vereinbarung zu bringen.</p>
+                  <p>Grimm: Es handelt sich um die Frage, ob der Kabinettsrat gewillt ist, prinzipiell die Überstundenfrage zu regeln?</p>
+                  <p>Im Prinzip einverstanden mit den Grundzügen des Komitees (Beamte und Diener) </p>
+                  <p>pragmatisierte.</p>
+                  <p>17. Eldersch: Chronologisch die Situation darstellen. </p>
+                  <p>Nach den bekannten Tatsachen unleugbar, dass die komm[unistische] Partei für Sonntag einen Putsch plant[e]. Beschlossen gehabt im </p>
+                  <p>Zeitpunkt des Abbaues der Volkswehr. Es deutet alles darauf hin ... auch von der Gesandtschaft in Bud[apest]. 1.000 Rot-</p>
+                  <p>gardisten unwiderleglich anzuweisen, dass sie trotz der Enunziation am Abend noch am Sonntag </p>
+                  <p>Vormittag zu einer Gewaltaktion bereit. Der Polizeipräsident hat vorgeschlagen: 1) Verbot der Versammlung. Das hat meinen und der Arbeiter Ansichten </p>
+                  <p>widerstrebt. 2) Verhaftung der Führer (Direktorium aus vier Mitgliedern bestehend). Zweck war, die Kommunisten etwas ratlos </p>
+                  <p>zu machen. An dieser Versammlung haben 115 Leute teilgenommen. Die Polizei hat alle 115 verhaftet. Auch Waffen wurden dabei gefunden. </p>
+                  <p>Diese Verhaftung ist dem Soldatenrat mitgeteilt worden. Dieser war nicht sehr entzückt, aber es ist nicht der dringende Wunsch geäußert worden, diese Verhaftung </p>
+                  <p>aufzuheben. Plan wurde vereinbart, dass [durch] die Stadtschutzwache, das Gebäudebild und die Volkswehr die Riegelbildung vorgenommen werden soll. </p>
+                  <p>Diese Riegelbildung ist allerdings nur erfolgt bis zum Schwarzenbergplatz. Im Laufe des Vormittags [sind] Dep[utierte] erschienen, die die Freisetzung verlangt haben.</p>
+                  <p><pb facs="krp-0080_s01-0005"/>Nach dem Unglück in der Hörlgasse habe ich sichere Nachricht bekommen, dass diese Situation auf das 41. Bataillon sehr schlecht </p>
+                  <p>gewirkt hat. In der Westbahn ein zweites Bataillon bereit [sei] auszurücken, wenn [das] 41. ohne Befehl ausrückt. Deshalb habe ich mich entschlossen, </p>
+                  <p>die Freilassung anzuordnen. Die Menge hat erklärt, sie verlangen die Enthaftung. Schilderung der schon in den Blättern dargestellten Ereignisse.</p>
+                  <p>Es ist heute schwer zu sagen, ob das hätte verhindert werden können. Ich bin der Meinung, wenn wir bei solchen Aktionen eine einheitliche Befehlsgewalt hätten, so würde vielleicht – </p>
+                  <p>zumal die Volkswehr von den Komm[unisten] respektiert wird - ein solches Ereignis verhindert worden sein. Die doppelte Befehlsgewalt scheint mir ein Unglück zu sein. </p>
+                  <p>Dann wäre vielleicht durch eine Vereinigung des Heerwesens und des Inneren etwas zu erreichen.</p>
+                  <p>Eine große Schwierigkeit wird uns das Leichenbegängnis bereiten. Wir haben den Wunsch, dass es von den Arbeiterräten gemacht wird. Schober wurde von mir zweimal vergewaltigt.</p>
+                  <p>Schober: Die kommunistische Partei ist seit Gründonnerstag still geworden. (Versiegen der ungarischen Geldzuflüsse). Inzwischen [sind] neue Millionen gekommen und dann die Friedensbedingungen! </p>
+                  <p>Dann der Abbau Volkswehr. Wir haben erfahren, dass die Absicht besteht, sich schon in der Nacht zum 15. /6. der hervorragendsten Mitglieder der Regierung zu bemächtigen. </p>
+                  <p>Zuzüge aus den Bezirken sind sehr gering gewesen. Wir hätten diese zerstreuen können, schon in den Bezirken. Aufhebung der Selzergasse (41er). </p>
+                  <p>Auch die 19 Maschinengewehre wurden in die Selzergasse gebracht.</p>
+                  <p>[Ich wurde] ½10 erst verständigt, dass das Verbot der Versammlung unmöglich sei. Ich war mitten in den Ereignissen schon drinnen, als ich erfuhr, dass der eine Teil </p>
+                  <p>nicht durchführbar ist. Dadurch hat die Verhaftung den Wert verloren. Ich bin überzeugt, dass dieser Sonntag in der nächsten Zeit schon </p>
+                  <p>seine Wiederholung findet. Die Flugblätter, die heute verteilt wurden, sind in einer überaus aufreizenden Sprache abgefasst. Mit Aut[os] und Maschinengewehr </p>
+                  <p>auf Autos zur Druckerei und Polizei verjagt.</p>
+                  <p>Staatsanwaltschaft.</p>
+                  <p>Selzergasse bereit, in den nächsten Tagen einen Putsch in der Nacht herbeizuführen. </p>
+                  <p>Böser Geist: Korporal Haller (Bernhard Förster), jetzt unter dem Namen Berger. </p>
+                  <p>Auch Bettelheim noch draußen. </p>
+                  <p>Auch Max Lewin soll draußen sein.</p>
+                  <p>Das Haus mit Maschinengewehren armiert. Heute Sicherheitswache erschienen und aufmerksam gemacht hat, </p>
+                  <p>dass die Volkswehr gegen die Sicherheitswache Stellung zu nehmen geneigt ist. Sie haben erklärt, den Rücken gedeckt haben zu müssen, sonst gehen sie nicht mehr los.</p>
+                  <p>Ungarische Gesandtschaft: Regierungsinspektor hat sich gemeldet, dass ein Mann ihn aufgefordert hat, ins Café Landtmann zu kommen. </p>
+                  <p>Der ungarische Gesandte selbst hat ihn ausgefragt, ob die Polizei bei diesen Hungerlöhnen noch tätig sein will.</p>
+                  <p>Bauer: Die Situation, in der wir uns befinden, halte ich für außerordentlich schwer. Das Entscheidende sind nicht die Einflüsse von außen; es ist die Stimmung, in der sich die Volkswehr </p>
+                  <p>und ein Teil der Arbeiterschaft befindet. Das Kritische aber ist, dass sich die übrige Volkswehr (die nicht-kommunistische) und ein Teil der Arbeiterschaft </p>
+                  <p>in einer zwiespältigen Stimmung befinden. Aber sie haben viel Sympathie für den Gedanken der Räterepublik. Diese Leute </p>
+                  <p>können jeden Augenblick von den Kommunisten mitgerissen werden. Das zu verhindern ist das ganze Problem. Der erste taktische Gesichtspunkt ist der: </p>
+                  <p>die Kommunisten selbst sind mir nicht gefährlich, wohl aber diejenigen, welche von ihnen mitgerissen werden.</p>
+                  <p>Nun die Frage, ob man das 41. Bataillon nicht entwaffnen soll.</p>
+                  <p>Behandlung der ungarischen Gesandtschaft. Wir geben uns alle Mühe, ihr die Arbeit so schwer als möglich zu machen. Nun fragt es sich, ob man die </p>
+                  <p>diplomatischen Beziehungen zu Ungarn überhaupt abbrechen soll. Dagegen sprechen aber die schwersten Bedenken. Wir haben dort gewisse Interessen. </p>
+                  <p>Weiters ist jede feindliche Handlung gegen Ungarn geeignet, die Sympathie der Volkswehr und der Arbeiterschaft für die Räteregierung zu stärken. </p>
+                  <p><pb facs="krp-0080_s01-0006"/>Dazu sind wir militärisch schwach, die Ungarn aber stark.</p>
+                  <p>Eldersch: Dem Polizeipräsidenten scheint nach seiner Rede ein strammes Regime am Platz. Ich bin anderer Meinung. "Die bestialischen Henker feuerten mit Dum-Dum-Geschoßen."</p>
+                  <p>Zerdik: Die Ausführungen Bauers enthalten viel Wahres. Mit äußerster Vorsicht muss vorgegangen werden. Aber nicht zu viel Vorsicht. Wenn man also Verhaftungen </p>
+                  <p>durchgeführt hat, dann hätte man auch mit dem Verbot der Versammlung vorgehen [können]. Mit der Abberufung des ungarischen Gesandten würde man auch die übrigen Bevölkerungsschichten </p>
+                  <p>beruhigen, nicht nur die Volkswehr und die Arbeiterschaft. In Deutschland ist das Beispiel -.</p>
+                  <p>Fink: [Ich möchte] Bauer fragen, ob nicht Renner hereingerufen werden soll.</p>
+                  <p>Bauer: Renner ist schon verständigt von den Wiener Zeitungen. Bericht über die Lage. Heute aber keine Entscheidung darüber nötig. </p>
+                  <p>Dagegen hätte ich nichts einzuwenden gegen Antrag Zerdik: Abberufung des ungarischen Gesandten Dr. Czobel. </p>
+                  <p>Damit aber noch zwei Tage warten.</p>
+                  <p>Schober: Der ungarische Gesandte hat eine Hausdurchsuchung vornehmen lassen.</p>
+                  <p>Eldersch: Matrosenrat erschienen, sie haben Bestätigungen ausgestellt, ohne das Geld genommen zu haben.</p>
+                  <p>Fink: Man hat mir Vorwürfe gemacht, dass ich nicht den Kabinettsrat einberufen habe.</p>
+                  <p>Waiss: 5.000 Kronen Anschaffungsbeitrag (Vereinigung der abgerüsteten Soldaten) bis Mittwoch Entscheidung.</p>
+                  <p>¼3h.</p>
+                  <p>Freitag 3h.</p>
+               </div>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

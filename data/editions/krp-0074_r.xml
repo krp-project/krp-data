@@ -1,0 +1,626 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href='http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:acdh="https://vocabs.acdh.oeaw.ac.at/schema#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xml:lang="de">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="a" type="main" n="0074">Kabinettsprotokoll Nr. 74 vom 27. Mai 1919</title>
+            <title level="m" type="main" n="01">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <title level="m" type="sub" n="">Renner II (15. März – 17. Oktober 1919)</title>
+            <meeting>
+               <placeName key="https://d-nb.info/gnd/4066009-6">Wien</placeName>
+               <orgName key="https://d-nb.info/gnd/5162749-8">Kabinettsrat</orgName>
+               <date when-iso="1919-05-27"/>
+            </meeting>
+            <editor>
+               <persName key="https://d-nb.info/gnd/122481836"
+                         role="hasCreator"
+                         xml:id="hwohnout">
+                  <forename>Helmut</forename>
+                  <surname>Wohnout</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</affiliation>
+               <idno type="ORCID">0000-0002-3864-9839</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/120789825"
+                         role="hasCreator"
+                         xml:id="tolechowski">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0003-3291-6876</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/131679384"
+                         role="hasCreator"
+                         xml:id="rlein">
+                  <forename>Richard</forename>
+                  <surname>Lein</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0002-7502-0503</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="aholzer">
+                  <forename>Anna</forename>
+                  <surname>Holzer</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0005-3560-3500</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="dsoelkner">
+                  <forename>Dominik</forename>
+                  <surname>Sölkner</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-9895-7212</idno>
+            </editor>
+            <editor>
+               <persName role="hasContributor" xml:id="ischotzko">
+                  <forename>Ina</forename>
+                  <surname>Schotzko</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-5210-3713</idno>
+            </editor>
+            <funder n="1">
+               <orgName key="https://d-nb.info/gnd/2054142-9" role="hasFunder">Österreichischer Wissenschaftsfonds FWF</orgName>
+               <idno type="project">PAT1495024</idno>
+               <title type="project">Die Protokolle des österreichischen Kabinettsrates 1919–1920</title>
+            </funder>
+            <respStmt>
+               <resp>Projektverantwortung</resp>
+               <orgName key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Projektleitung</resp>
+               <persName key="https://d-nb.info/gnd/120789825" role="hasPrincipalInvestigator">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+                  <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+                  <idno type="ORCID">0000-0003-3291-6876</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Nationaler Forschungspartner</resp>
+               <orgName key="https://d-nb.info/gnd/1123037736" role="hasEnabler">Austrian Centre for Digital Humanities</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Digitalisierung der gedruckten Quellen</resp>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>TEI-Datenmodellierung</resp>
+               <persName role="hasContributor" xml:id="tfruehwirth">
+                  <forename>Timo</forename>
+                  <surname>Frühwirth</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-3997-5193</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technische Supervision</resp>
+               <persName key="https://d-nb.info/gnd/1043833846"
+                         role="hasContributor"
+                         xml:id="pandorfer">
+                  <forename>Peter</forename>
+                  <surname>Andorfer</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-9575-9372</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technisches Consulting und Vorbereitung der Druckausgabe</resp>
+               <persName key="https://d-nb.info/gnd/13281899X"
+                         role="hasContributor"
+                         xml:id="skurz">
+                  <forename>Stephan</forename>
+                  <surname>Kurz</surname>
+                  <affiliation key="https://d-nb.info/gnd/1202798799">Institut für die Erforschung der Habsburgermonarchie und des Balkanraumes</affiliation>
+                  <idno type="ORCID">0000-0003-2546-2570</idno>
+               </persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher key="https://d-nb.info/gnd/1001454-8">Österreichische Akademie der Wissenschaften</publisher>
+            <date when="2028"/>
+            <availability status="free">
+               <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">Lizenziert unter CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/deed.de)</licence>
+            </availability>
+            <idno type="ISBN_Print"/>
+            <idno type="ISBN_Part_epub"/>
+            <idno type="ISBN_Digital"/>
+            <idno type="DOI"/>
+            <idno type="DOI_zenodo"/>
+            <idno type="ebook_ID"/>
+         </publicationStmt>
+         <seriesStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="m" type="main">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <respStmt>
+               <resp>Bearbeitung und Herausgeberschaft</resp>
+               <orgName key="https://d-nb.info/gnd/2024703-5">Universität Wien</orgName>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+         </seriesStmt>
+         <notesStmt>
+            <note>Diese TEI-XML-Datei ist Grundlage für eine Druckausgabe der Edition.</note>
+            <relatedItem>
+               <biblStruct>
+                  <monogr>
+                     <imprint>
+                        <pubPlace key="https://d-nb.info/gnd/4066009-6">Wien</pubPlace>
+                        <publisher key="https://d-nb.info/gnd/2068748-5">Verlag der Österreichischen Akademie der Wissenschaften</publisher>
+                        <date when="2029"/>
+                     </imprint>
+                     <extent/>
+                  </monogr>
+                  <note>
+              <idno/>
+              <ptr/>
+            </note>
+                  <citedRange/>
+               </biblStruct>
+            </relatedItem>
+         </notesStmt>
+         <sourceDesc>
+            <bibl>Quellbestand: AT-OeStA/AdR MRang MR 1Rep KRP Kabinettsratsprotokolle, 1918-1920 (Teilbestand)<ref target="https://www.archivinformationssystem.at/detail.aspx?id=5465">https://www.archivinformationssystem.at/detail.aspx?id=5465</ref>
+            </bibl>
+            <msDesc>
+               <msIdentifier>
+                  <institution key="https://d-nb.info/gnd/37748-X" role="hasOwner">AT-OeStA Österreichisches Staatsarchiv (Archiv (ÖStA))</institution>
+                  <repository key="https://d-nb.info/gnd/1601181-8">AT-OeStA/AdR Archiv der Republik, 1918- (Abteilung)</repository>
+                  <collection>AT-OeStA/AdR MRang MR 1Rep Ministerrat 1. Republik, 1918 - 1938 (Bestand)</collection>
+                  <idno>AT-OeStA_AdR-MRang-MR-1.-Rep.-KRP-074</idno>
+               </msIdentifier>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <abstract>
+            <p>
+          <!--to be generated-->
+        </p>
+         </abstract>
+      </profileDesc>
+      <encodingDesc>
+         <styleDefDecl scheme="css"/>
+         <tagsDecl>
+            <rendition xml:id="b" scheme="css">font-weight:bold;</rendition>
+            <rendition xml:id="su" scheme="css">vertical-align:super;font-size:.7em;</rendition>
+            <rendition xml:id="s" scheme="css">text-decoration:line-through;</rendition>
+            <rendition xml:id="u" scheme="css">text-decoration:underline;</rendition>
+            <rendition xml:id="ow" scheme="css">text-decoration:line-through;text-decoration-style:double;</rendition>
+            <rendition xml:id="r" scheme="css">display:block;text-align:right;</rendition>
+            <rendition xml:id="letterspaced" scheme="css">letter-spacing:0.15em;</rendition>
+            <rendition xml:id="i" scheme="css">font-style:italic;</rendition>
+         </tagsDecl>
+         <editorialDecl>
+            <hyphenation>
+               <p>
+            <!--to be added-->
+          </p>
+            </hyphenation>
+            <correction>
+               <p>
+            <!--to be added-->
+          </p>
+            </correction>
+            <normalization>
+               <p>
+            <!--to be added-->
+          </p>
+            </normalization>
+            <punctuation>
+               <p>
+            <!--to be added-->
+          </p>
+            </punctuation>
+            <stdVals>
+               <p>
+            <!--to be added-->
+          </p>
+            </stdVals>
+            <p>
+          <!--to be added-->
+        </p>
+         </editorialDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#tfruehwirth" when-iso="2026-10-13">TEIGarage output upconverted with upconvert.xsl</change>
+         <change who="#tfruehwirth" when-iso="2026-10-13">TEI header populated with generate_tei_templates.py</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface/>
+   </facsimile>
+   <text>
+      <body>
+         <div xml:id="doc-krp-0074.xml">
+            <head type="dokument">
+               <title type="num">74.<note type="footnote">Das Protokoll trägt den Vermerk <hi rend="#i">Vertraulich!</hi></note>
+               </title>
+               <title type="desc">
+                  <pb facs="krp-0074_r-0001"/>[Dienstag] 1919-05-27</title>
+            </head>
+            <div type="dokumentkopf">
+               <div type="vorsitz">
+                  <head>Vorsitz:</head>
+                  <p>Fink</p>
+               </div>
+               <div type="anwesend">
+                  <head>Anwesend:</head>
+                  <p>Bauer, Bratusch, Deutsch, Eldersch, Ellenbogen, Glöckel, Hanusch, Loewenfeld-Russ, Miklas, Paul, Pflügl, Resch, Schumpeter, Stöckler, Tandler, Waiss, Zerdik</p>
+               </div>
+               <div type="zugezogen">
+                  <head>Zugezogen:</head>
+                  <p>Grimm, Ippen, Mosing, Rotky, Schwarzwald</p>
+               </div>
+               <div type="schriftfuehrer">
+                  <head>Schriftführer:</head>
+                  <p>unbekannt</p>
+               </div>
+               <div type="dauer">
+                  <head>Dauer:</head>
+                  <p>21.00–00.45 Uhr</p>
+               </div>
+            </div>
+            <div type="komponenten">
+               <p>Reinschrift, Beilagen, Konzept, stenographische Mitschrift, Entwurf der Tagesordnung, diverse Zusätze</p>
+            </div>
+            <div type="beilagen">
+               <head>Beilagen:</head>
+               <list>
+                  <item><ref target="#krp-0074_top01">Zu TOP 1</ref>: <ref target="#krp-0074_b01">Abschrift Nr. 3785 eines Schreibens des Obersten Wirtschaftsrates bei der Friedenskonferenz, das hinsichtlich der Sicherstellung weiterer Lebensmittellieferungen durch die Entente vom Staatskanzler zu unterzeichnen wäre</ref></item>
+                  <item><ref target="#krp-0074_top01">Zu TOP 1</ref>: <ref target="#krp-0074_b02">Abschrift von Nr. 3797 betreffend Stellungnahme Schüllers zum Antwortschreiben des Staatskanzlers hinsichtlich der Frage der finanziellen Sicherstellung weiterer Lebensmittellieferungen durch die Entente</ref></item>
+                  <item><ref target="#krp-0074_top01">Zu TOP 1</ref>: <ref target="#krp-0074_b03">Stellungnahme zum Antwortschreiben des Staatskanzlers</ref></item>
+                  <item><ref target="#krp-0074_top01">Zu TOP 1</ref>: <ref target="#krp-0074_b04">Konzept des Staatsamtes für Äußeres eines Antwortschreibens an den Präsidenten des Obersten Wirtschaftsrates</ref></item>
+                  <item><ref target="#krp-0074_top01">Zu TOP 1</ref>: <ref target="#krp-0074_b05">Bericht der Friedensdelegation zum Entwurf des Schreibens des Staatskanzlers</ref></item>
+                  <item><ref target="#krp-0074_top02">Zu TOP 2</ref>: <ref target="#krp-0074_b06">Vortrag des Staatsamtes für Inneres und Unterricht zu Zl. 12.223/19 über den Entwurf der Formel für den Staatsbürgereid</ref></item>
+                  <item><ref target="#krp-0074_top03">Zu TOP 3</ref>: <ref target="#krp-0074_b07">Zusicherung der allfälligen Übernahme von Staatsbediensteten aus Südtirol in den deutschösterreichischen Staatsdienst</ref></item>
+                  <item><ref target="#krp-0074_top04">Zu TOP 4</ref>: <ref target="#krp-0074_b08">Denkschrift des Staatsamtes für Justiz Zl. 9802/19 über die Verwendung des Gebäudes der ehemaligen Militärakademie Wien III, Boerhaavegasse als Sitz des Jugendgerichts</ref></item>
+                  <item><ref target="#krp-0074_top05">Zu TOP 5</ref>: <ref target="#krp-0074_b09">Gesetzesentwurfs samt Begründung des Staatsamtes für Heereswesen Zl. 294/1919 über die Aufhebung vermögensrechtlicher Beschränkungen von Militärpersonen</ref></item>
+                  <item><ref target="#krp-0074_top06">Zu TOP 6</ref>: <ref target="#krp-0074_b10">Gesetzesentwurf samt Motivenbericht des Staatsamtes für Heereswesen über die Anwendung des Invalidengesetzes auf Militärpersonen und deren Hinterbliebenen</ref></item>
+                  <item><ref target="#krp-0074_top07">Zu TOP 7</ref>: <ref target="#krp-0074_b11">Amtlicher Entwurf zu den finanziellen Verhandlungen mit der Ungarischen Räterepublik</ref></item>
+                  <item><ref target="#krp-0074_top08">Zu TOP 8</ref>: <ref target="#krp-0074_b12">Antrag des Staatsamtes für Finanzen zu Zl. 20457/19 hinsichtlich der Amtsführung gegenüber der mit der Aufhebung der Blockade des Warenverkehrs betrauten interalliierten Kommission</ref></item>
+                  <item><ref target="#krp-0074_top09">Zu TOP 9</ref>: <ref target="#krp-0074_b13">Gesetzesentwurfs über die Beschäftigung jugendlicher und weiblicher Arbeitern, dann über die Arbeitszeit und die Sonntagsruhe beim Bergbau samt erläuternde Bemerkungen</ref></item>
+                  <item><ref target="#krp-0074_top10">Zu TOP 10</ref>: <ref target="#krp-0074_b14">Bestellung Otto Klimburgs als Vertreter Deutschösterreichs in Belgrad</ref></item>
+                  <item><ref target="#krp-0074_top11">Zu TOP 11</ref>: <ref target="#krp-0074_b15">Vortrag des Staatsamtes für Verkehrswesen Zl. 15.876/1919 auf Auszahlung einer Staatssubvention an den Landesverband für Fremdenverkehr in Deutschböhmen in Karlsbad</ref></item>
+                  <item><ref target="#krp-0074_top12">Zu TOP 12</ref>: <ref target="#krp-0074_b16">Information des Staatssekretärs für Volksernährung hinsichtlich der Verlängerung der Auszahlung des Kriegszuschlags zu den Schlachtviehpreisen</ref></item>
+                  <item><ref target="#krp-0074_top12">Zu TOP 12</ref>: <ref target="#krp-0074_b17">Verlängerung der Auszahlung des Kriegszuschlags zu den Schlachtviehpreisen</ref></item>
+               </list>
+            </div>
+            <div type="protokoll">
+               <pb facs="krp-0074_r-0002"/>
+               <div type="top" xml:id="krp-0074_top01">
+                  <head>
+                     <label>
+                        <num n="1">1.</num>
+                        <seg>Frage der finanziellen Sicherstellung der weiteren Lebensmittellieferungen durch die Entente.</seg>
+                     </label>
+                  </head>
+                  <p>Der Kabinettsrat nimmt zunächst in Fortsetzung der um 3 Uhr begonnenen und um 4 Uhr beendigten vertraulichen Kabinettsratsitzung die Erörterung über die Frage der finanziellen Sicherstellung der weiteren Lebensmittellie<pb facs="krp-0074_r-0003"/>ferungen durch die Entente auf und fasst die im Geheimprotokolle verzeichneten Beschlüsse.</p>
+               </div>
+               <div type="top" xml:id="krp-0074_top02">
+                  <head>
+                     <label>
+                        <num n="2">2.</num>
+                        <seg>Formel für den Staatsbürgereid.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Eldersch</hi> führt aus, dass von mehreren Landesstellen die Frage aufgeworfen worden sei, welche Eidesformel bei Verleihungen der deutschösterreichischen Staatsbürgerschaft in Anwendung zu bringen wäre, da die mit den Hofkanzleidekreten vom 12. April 1816 und 30. Jänner 1834 festgelegte, der monarchistischen Verfassung Rechnung tragende Formel den heutigen Verhältnissen nicht mehr entspreche.</p>
+                  <p>Nach dem Hofkanzleidekret vom 31. März 1831 sei der Untertaneneid „bloß eine zur Bekräftigung der eingegangenen Verbindlichkeiten eingeführte Feierlichkeit; das Untertansverhältnis selbst aber wird nicht durch den Eid, sondern durch den zwischen der öffentlichen Verwaltung und der Partei, welche die Staatsbürgerschaft ansucht, eintretenden Aufnahmsvertrag begründet. Der Untertanseid erscheint somit als eine bloße Feierlichkeit und nicht als eine wesentliche <pb facs="krp-0074_r-0004"/>und unerlässliche Bedingung.“</p>
+                  <p>Ungeachtet dieses formalen Charakters des Untertaneneides wäre an der Gepflogenheit festzuhalten, den Akt der Verleihung der Staatsbürgerschaft mit dem feierlichen Bekenntnis des neuen Staatsbürgers zum Staate abzuschließen.</p>
+                  <p>Da jedoch der Ablegung des Staatsbürgereides keine konstitutive Wirkung zukommt, liege auch kein Grund vor, den Wortlaut der neuen Angelobung durch ein Gesetz oder eine Vollzugsanweisung vorzuschreiben. Es werde vielmehr genügen, wenn den Landesregierungen durch einen internen Erlass die Formel mitgeteilt wird, die in Hinkunft bei Verleihungen der deutschösterreichischen Staatsbürgerschaft zur Anwendung zu bringen sein wird.</p>
+                  <p>Falls nun, der besonderen Bedeutung des Aktes entsprechend, Wert darauf gelegt werden sollte, nach wie vor einen förmlichen Schwur auf die übernommenen staatsbürgerlichen Pflichten zu fordern, wäre folgende Formel zu wählen:</p>
+                  <p>„Sie werden schwören und bei Ihrer Ehre und Ihrem Gewiesen geloben, der Deutschösterreichischen Republik als getreuer Staatsbürger angehören zu <pb facs="krp-0074_r-0005"/>wollen, deren Gesetze unverbrüchlich zu beachten, alle Pflichten eines deutschösterreichischen Staatsbürgers gewissenhaft zu erfüllen, das Wohl des Staates mit allen Kräften jederzeit zu fördern und alles zu unterlassen, was den Interessen des Staates abträglich sein könnte.</p>
+                  <p>Was mir soeben vorgehalten wurde, und was ich in allem recht und deutlich verstanden habe, dem soll und will ich getreulich nachkommen.“</p>
+                  <p>Sollte dagegen in Berücksichtigung der Bedenken, die sich unter den gegebenen Verhältnissen gegen die Forderung nach einem förmlichen Eid ergeben, ein Gelöbnis für ausreichend erachtet werden, so hätte die Formel zu lauten:</p>
+                  <p>„Sie werden bei Ihrer Ehre geloben und mit Ihrem Handschlag bekräftigen, dass Sie der deutschösterreichischen Republik als getreuer Staatsbürger angehören, deren Gesetze unverbrüchlich beachten, alle Pflichten eines deutschösterreichischen Staatsbürgers gewissenhaft erfüllen, das Wohl des Staates mit allen Kräften jederzeit fördern und alles unterlassen wollen, was den Interessen des Staates abträglich sein könnte.</p>
+                  <p>Ich gelobe.“</p>
+                  <p><pb facs="krp-0074_r-0006"/>Nach einer kurzen Debatte entschließt sich der Kabinettsrat für die Gelöbnisformel und ermächtigt den Staatssekretär für Inneres und Unterricht, den Landesstellen die entsprechenden Weisungen zu erteilen.</p>
+               </div>
+               <div type="top" xml:id="krp-0074_top03">
+                  <head>
+                     <label>
+                        <num n="3">3.</num>
+                        <seg>Zusicherung der Übernahme von Staatsbediensteten aus Südtirol in den deutschösterreichischen Staatsdienst.</seg>
+                     </label>
+                  </head>
+                  <p>Laut Mitteilung des <hi rend="#letterspaced">Vorsitzenden</hi> hat der Tiroler Landesrat in einer an die Staatskanzlei gerichteten Zuschrift angeregt, für den bedauerlichen Fall der Abtretung Deutschsüdtirols an Italien die Erhaltung des dortigen deutschen Beamten- und Lehrerstandes zu sichern. Dies könne nur erreicht werden, wenn die Beamten und Lehrer, die sich zum Ausharren bei ihren Volksgenossen entschließen, wenigstens nicht um ihre und ihrer Familien Zukunft bangen müssen. Zwar werde Italien schon wegen der derzeit unmöglichen Besetzung aller oder auch nur einer größeren Zahl der Beamten- und Lehrerstellen in Südtirol mit italienisch gesinnten, aber deutsch sprechenden Personen gerne bereit sein, die österreichische Beamten- und Lehrerschaft in seinen Dienst zu nehmen; allein es liege sehr nahe, anzunehmen, dass die italienische Regierung nach Möglichkeit <pb facs="krp-0074_r-0007"/>darauf bedacht sein wird, diese aus dem alten deutschösterreichischen Staate übernommenen und schon deshalb in ihren Augen verdächtigen Personen durch unverdächtige und zugleich für die Verwelschung des Landes tätige Personen zu ersetzen.</p>
+                  <p>Werden nun vielleicht schon im Laufe der nächsten Jahre diese deutschen Beamten und Lehrer ihrer Stellen enthoben, so würden sie gezwungen und meist auch durch ihre nationalen Gefühle veranlasst sein, nach Nordtirol oder wenigstens in das Gebiet der deutschösterreichischen Republik zurückzukehren.</p>
+                  <p>Wenn ihnen aber für diesen Fall der Rückkehr nicht eine bestimmte Zusicherung gegeben werden könne, dass sie trotz des dem Königreiche Italien geleisteten Treueides und trotz der etwaigen italienischen Staatsbürgerschaft wieder als österreichische Staatsbürger übernommen und in Nordtirol oder in anderen Ländern der deutschösterreichischen Republik angestellt werden, so werden die meisten von ihnen und insbesondere die Familienväter es vorziehen, schon jetzt von der im Friedensvertrage zweifellos offen gehaltenen Möglichkeit für <pb facs="krp-0074_r-0008"/>Deutschösterreich (Tirol) zu optieren, Gebrauch zu machen, um ihre Zukunft sicherzustellen.</p>
+                  <p>Nach Ansicht des Vorsitzenden könne diesen Ausführungen des Tiroler Landesrates vom Standpunkte der gesamten deutschösterreichischen Interessen nur vollinhaltlich beigepflichtet werden und wäre auch dieser Anlass zu benützen, um die Solidarität des Landes Tirol mit dem übrigen Teile Deutschösterreichs zum Ausdruck zu bringen. Es wäre daher seitens der Regierung eine ähnliche Erklärung abzugeben, wie sie in Ansehung des deutschen Beamtenstandes in den Sudetenländern in der Kabinettsratssitzung vom 9. Jänner 1919 gefasst und den Staatsämtern mitgeteilt worden sei, zumal die Sachlage vollkommen gleichartig gestaltet ist. Er stelle daher den Antrag, der Kabinettsrat wolle beschließen:</p>
+                  <p>„</p>
+                  <list>
+                     <item n="1"><label>1.)</label> Auf die Erhaltung eines deutschen Beamtenstandes im deutschen Teile Südtirols muss im Interesse der deutschen Bevölkerung wie immer die Entscheidung fällt, besonderes Gewicht gelegt werden. Es wäre ganz verfehlt, wenn die deutschen Beamten, namentlich gegenwärtig <pb facs="krp-0074_r-0009"/> – wo das politische Schicksal dieses Gebietes noch nicht entschieden und der ganze Komplex der damit zusammenhängenden Fragen noch nicht endgiltig geregelt ist – ihren bisherigen Dienstposten verlassen und damit den Italienern die Handhabe geben würden, an ihre Stelle volksfremde Beamte zu setzen.</item>
+                  </list>
+                  <p>Es ist daher nationale Pflicht der deutschen Beamten, in diesem Gebiete jetzt und weiterhin auszuharren, hiedurch die Treue zu ihrem Volke zu bekunden und nicht wegen zukünftig vielleicht eintretender Gefährdung ihrer Stellung die Übernahme auf einen Dienstposten in den unbestrittenen Gebieten Deutschösterreichs anzustreben.</p>
+                  <p>Um die Solidarität der deutschösterreichischen Republik mit dem Lande Tirol auch in dieser Frage zu bekunden und in der Absicht, allen jenen deutschen Beamten, die wegen ihres Festhaltens am Deutschtum jetzt oder in einem späteren Zeitpunkte von der italienischen Regierung zum Verlassen ihres Dienstpostens gezwungen werden sollten, zu schützen und materiell zu sichern, erklärt die deutschösterreichische Regierung – dass unvorgreiflich der schließlichen Lö<pb facs="krp-0074_r-0010"/>sung der erwähnten Staatsgebietsfrage und der endgiltigen Regelung der Beamtenverhältnisse – Staatsbedienstete deutscher Volkszugehörigkeit in diesem Gebiete trotz des etwa dem Königreiche Italien geleisteten Treueides und trotz der etwaigen italienischen Staatsbürgerschaft dann im nichtumstrittenen deutschösterreichischen Gebiete zur Verwendung in Aussicht genommen werden, wenn sie zum Verlassen ihres öffentlichen Dienstes gezwungen werden sollten.</p>
+                  <list>
+                     <item n="1"><label>2.)</label> Die Staatskanzlei wird beauftragt diesen Beschluss dem Tiroler Landesrate behufs entsprechender Verständigung der berührten Staatsbediensteten zur Kenntnis zu bringen.“</item>
+                  </list>
+                  <p>Der Kabinettsrat schließt sich diesen Anträgen an. Um den Gedanken schärfer zum Ausdruck zu bringen, dass diese Zusicherung lediglich für jene Angestellten gelten soll, die aus nationalen Gründen gemaßregelt würden, nicht aber auch für jene, die den Dienst freiwillig verlassen, beschließt der Kabinettsrat über eine Anregung des Staatssekretärs <hi rend="#letterspaced">Eldersch</hi>, dass im letzten Satze des Abs. 3 des Pkt. 1 des Antrages zwischen die Worte „wenn sie“ und „zum“ <pb facs="krp-0074_r-0011"/>noch die Worte „wegen ihrer Nationalität gemaßregelt und daher“ eingefügt werden.</p>
+               </div>
+               <div type="top" xml:id="krp-0074_top04">
+                  <head>
+                     <label>
+                        <num n="4">4.</num>
+                        <seg>Verwendung der Gebäude der ehemaligen Militärakademie in Wien III. [Wiener Gemeindebezirk], Boerhaavegasse.</seg>
+                     </label>
+                  </head>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> teilt mit, dass aufgrund des Beschlusses des Kabinettsrates vom 29. April l. J. unter seiner Führung eine kommissionelle Besichtigung der Gebäude der ehemaligen Militärakademie in der Boerhaavegasse unter Teilnahme sämtlicher Interessenten stattgefunden habe. Er bringe in Erinnerung, dass diese Gebäude einerseits von der Gemeinde Wien und dem Lande Niederösterreich für Zwecke der Erweiterung des Rudolfspitales, andererseits von den Staatsämtern für Inneres und Unterricht bzw. für Justiz behufs Unterbringung einer Erziehungsanstalt bzw. des Jugendgerichtes beansprucht werden. Da bei dieser Besichtigung eine Einigung über die künftige Verwendung dieser Gebäude nicht erzielt werden konnte, haben die beteiligten Ressorts der Staatskanzlei einschlägige Memoranden, in denen ihr Standpunkt vertreten wird, überreicht, aufgrund welcher nunmehr vom <pb facs="krp-0074_r-0012"/>Kabinettsrate eine endgiltige Entscheidung zu treffen wäre.</p>
+                  <p>Nachdem die Unterstaatssekretäre <hi rend="#letterspaced">Glöckel</hi> und Dr. <hi rend="#letterspaced">Tandler</hi>, sowie Staatssekretär Dr. <hi rend="#letterspaced">Bratusch</hi> ihre Ansprüche auf diese Gebäude in eingehender Weise dargelegt hatten, gelangt der Kabinettsrat zu folgendem Beschluss:</p>
+                  <p>Eines der beiden Gebäude wird der Unterrichtsverwaltung für Zwecke der Unterbringung des Zivilmädchenpensionates zur Verfügung gestellt. In den dadurch freiwerdenden Räumen in der Josefstädter Straße wird vom Staatsamte für soziale Verwaltung die neu zu errichtende Invalidenkommission untergebracht werden. Das zweite Gebäude der Militärakademie wird der Gemeinde Wien zur Erweiterung des Rudolfspitales übergeben, jedoch unter der ausdrücklichen Bedingung, dass die Gemeinde Wien dem Staatsamt für Justiz ehestens ein anderes entsprechendes Gebäude für die Aufnahme des neu zu errichtenden Jugendgerichtes beistellt. Über die Auswahl der beiden Gebäude für Unterrichts- bzw. Spitalszwecke haben sich die Unterstaatssekretäre Glöckel und Dr. Tandler auseinanderzusetzen; die gesamte Schul<pb facs="krp-0074_r-0013"/>einrichtung beider Gebäude jedoch hat der Unterrichtsverwaltung übergeben zu werden.</p>
+               </div>
+               <div type="top" xml:id="krp-0074_top05">
+                  <head>
+                     <label>
+                        <num n="5">5.</num>
+                        <seg>Gesetzentwurf über die Aufhebung vermögensrechtlicher Beschränkungen von Militärpersonen.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Deutsch</hi> erbittet und erhält vom Kabinettsrate die Ermächtigung, den Entwurf eines Gesetzes über die Aufhebung vermögensrechtlicher Beschränkungen von Militärpersonen in der Nationalversammlung einbringen zu dürfen.</p>
+               </div>
+               <div type="top" xml:id="krp-0074_top06">
+                  <head>
+                     <label>
+                        <num n="6">6.</num>
+                        <seg>Gesetzentwurf über die Anwendung des Invalidenentschädigungsgesetzes auf Personen des militärischen Berufstandes und ihre Hinterbliebenen.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. Deutsch erbittet und erhält die Zustimmung des Kabinettsrates, den Entwurf eines Gesetzes über die Anwendung des Invalidenentschädigungsgesetzes auf Personen des militärischen Berufstandes und ihre Hinterbliebenen in der Nationalversammlung einbringen zu dürfen, wobei jedoch gemäß einem Antrage des Unterstaatssekretärs Dr. <hi rend="#letterspaced">Resch</hi> der Text des § 1 des dem Kabinettsrate vorgelegten Gesetzentwurfes noch einvernehmlich zwischen den Staatsämtern für Heer[es]wesen <pb facs="krp-0074_r-0014"/>und für soziale Verwaltung neu zu stilisieren wäre.</p>
+               </div>
+               <div type="top" xml:id="krp-0074_top07">
+                  <head>
+                     <label>
+                        <num n="7">7.</num>
+                        <seg>Finanzielle Verhandlungen mit der ungarischen Räterepublik.</seg>
+                     </label>
+                  </head>
+                  <p>Über Weisung des Staatssekretärs Dr. <hi rend="#letterspaced">Schumpeter</hi> macht Oberfinanzrat Dr. <hi rend="#letterspaced">Mosing</hi> über zwei dem Staatsamte für Finanzen vorliegende Staatsvertragsentwürfe mit der ungarischen Räterepublik, und zwar über einen vom Gesandten dieses Staates übermittelten amtlichen Entwurf eines Finanzübereinkommens sowie über einen von einer nichtstaatlichen Kommission in Budapest vereinbarten Entwurf, Mitteilung; er bespricht in eingehender Weise die Details dieser beiden Entwürfe, sowie die Folgerungen die sich aus ihrer Annahme für Deutschösterreich in finanzieller und politischer Hinsicht ergeben könnten.</p>
+                  <p>Nach Ansicht des Referenten könnten angesichts der gegenwärtigen, internationalen Lage die Verhandlungen mit der ungarischen Räteregierung vorläufig nur informativ geführt werden. Es erübrige dermalen nichts anderes als</p>
+                  <list>
+                     <item n="1"><label>1.)</label> von der ungarischen Räteregierung zunächst eine Aufklärung darüber zu <pb facs="krp-0074_r-0015"/>fordern, wie die neueste Konfiskationsandrohung mit dem Geiste des proponierten Übereinkommens vereinbart werden könne;</item>
+                     <item n="2"><label>2.)</label> eine Prolongation der Ratifikationsfrist (4. Juni l. J.) und eine Ergänzung der Vereinbarungen in der Richtung zu fordern, dass künftighin weitere Überraschungen wie die Konfiskationsandrohung ausgeschlossen bleiben;</item>
+                     <item n="3"><label>3.)</label> den neutralen und Ententevertretungen in Wien die Vorschläge der ungarischen Regierung (amtlicher Entwurf und Kommissionsentwurf) mit der Bitte zu unterbreiten, sich für eine bessere Wahrung unserer Interessen in Ungarn, auch im eigenen Interesse, als bisher einzusetzen. Hiebei könnte angedeutet werden, dass wir notgedrungen der ungarischen Räterepublik auch in Deutschösterreich Rechtshilfe im Sinne der Konfiskation ungarischen Privateigentums leisten müssten, wenn sich die fremden Mächte in Budapest nicht energischer betätigen;</item>
+                     <item n="4"><label>4.)</label> ein Kollegium aus höchstens vier Vertretern der beteiligten Staatsämter (Äußeres, Handel, Finanzen, Justiz) nominativ einzusetzen, das alle auf <pb facs="krp-0074_r-0016"/>Ungarn bezüglichen Verhandlungen selbständig – unter fortlaufender Berichterstattung an die Staatssekretäre – zu führen hätte. Dieses Kollegium würde die deutschösterreichischen Interessenten zur Vorlage detaillierter Vorschläge hinsichtlich der Wahrung ihrer Interessen in Ungarn aufzufordern, diese zu verarbeiten und in Budapest zur Diskussion zu stellen haben. Es wäre dringend erwünscht, wenn sodann nach Budapest baldigst Sachverständige entsendet würden, die sich dort über die tatsächlichen Verhältnisse und die bisher durchgeführten Maßnahmen zu informieren hätten;</item>
+                     <item n="5"><label>5.)</label> sobald ein klares Resultat vorliegen und unser Verhältnis zu Ungarn durch die Verhandlungen in St. Germain geklärt sein wird, hätten die definitiven Abmachungen mit der ungarischen Regierung zu beginnen.</item>
+                  </list>
+                  <p>Der Kabinettsrat tritt diesen Vorschlägen bei.</p>
+               </div>
+               <div type="top" xml:id="krp-0074_top08">
+                  <head>
+                     <label>
+                        <num n="8">8.</num>
+                        <seg>Grundsätze für die Amtsführung der aus Anlast der Aufhebung der Blockade mit der Kontrolle des hierseitigen Warenverkehres betrauten interalliierten Kommission.</seg>
+                     </label>
+                  </head>
+                  <p>Laut Mitteilung des Staatssekretärs Dr. <hi rend="#letterspaced">Schumpeter</hi> hat die aus Anlass der Aufhebung der Blockade mit der <pb facs="krp-0074_r-0017"/>Kontrolle des Warenverkehrs Deutschösterreichs mit Deutschland, Ungarn und dem bolschewikischen Russland betraute interalliierte Kommission in Wien bekannt gegeben, dass sie bei der Erfüllung ihrer Aufgaben nach folgenden Grundsätzen vorzugehen beschlossen hat:</p>
+                  <p>„</p>
+                  <list>
+                     <item n="1"><label>1.)</label> Die Aus- und Einfuhr der in einer mitgeteilten Liste angeführten Gegenstände (ausschließlich Heeresbedarfsartikel) ist grundsätzlich verboten.</item>
+                  </list>
+                  <p>Doch können einzelne Bewilligungen zur Ausfuhr durch das interalliierte Komitee in Wien erteilt werden.</p>
+                  <list>
+                     <item n="1"><label>2.)</label> Die Ausfuhr von Lebensmitteln aus Österreich sowie die Ausfuhr solcher Waren, die von den Regierungen der Alliierten nach Österreich eingeführt worden sind, ist grundsätzlich verboten, doch können einzelne Bewilligungen zur Ausfuhr von der interalliierten Kommission erteilt werden.</item>
+                     <item n="2"><label>3.)</label> Die interalliierte Kommission in Wien wird ihre Kontrolle über die Einfuhr und Ausfuhr verbotener Waren durch Delegierte ausüben, welche an verschiedene Orte der Grenze entsendet werden. Diese Delegierten üben die Kontrolle im Einvernehmen mit den österreichischen Eisenbahn- und Zollbehörden aus. <pb facs="krp-0074_r-0018"/></item>
+                     <item n="3"><label>4.)</label> Die österreichischen Behörden werden ersucht, den zuständigen Stellen die erforderlichen Weisungen zu erteilen, damit ihre Organe die alliierten Mächte bei der diesen obliegenden Kontrolle und Überwachung mit allen Kräften und den ihnen zu Gebote stehenden Mitteln unterstützen.</item>
+                  </list>
+                  <p>Die Behörden haben ihren Untergebenen die Vollmachten der Delegierten der alliierten Mächte zur Kenntnis zu bringen, die sowohl in Wien als [auch] an den verschiedenen Orten der Grenzen das Recht haben, die Güterwagen zu kontrollieren, welche nach Deutschland oder Ungarn fahren und umgekehrt und in die Aufzeichnungen der Zollbehörden, Begleitpapiere, Konnossemente etc. Einblick zu nehmen.“</p>
+                  <p>Die beteiligten Zentralstellen finden nach den Ausführungen des sprechenden Staatssekretärs gegen das Verbot der Ein- und Ausfuhr von Heeresbedarfsgegenständen (Pkt. 1) sowie der Ausfuhr von Lebensmitteln (Pkt. 2) keine Einwendung zu erheben, da diese Verbote ohnehin bereits bestehen; ebenso sei gegen das verlangte Einvernehmen mit dem interalliierten Komitee für den Fall der ausnahmsweisen Erteilung sol<pb facs="krp-0074_r-0019"/>cher Ausfuhrbewilligungen sowie gegen die beabsichtigte Kontrollsorganisation (Pkt. 3 und 4) nichts zu erinnern.</p>
+                  <p>Dagegen halten die beteiligten Zentralstellen zum Schutze unserer Exportinteressen eine ausdrückliche Namhaftmachung jener anderen von den Alliierten nach Österreich eingeführten Waren für notwendig, deren Weiterausfuhr an die Zustimmung der interalliierten Kommission gebunden sein soll; die Überreichung dieser Liste wurde von der Kommission in etwa 14 Tagen in Aussicht gestellt.</p>
+                  <p>Die interalliierte Kommission werde zum Zwecke des raschesten Zusammenarbeitens mit der Zentralstelle für Ein-, Aus- und Durchfuhrbewilligungen im Gebäude des Staatsamtes der Finanzen untergebracht werden.</p>
+                  <p>Der Kabinettsrat nimmt diese Mitteilungen des Staatssekretärs Dr. Schumpeter zur Kenntnis und ermächtigt ihn, die Vertreter des interalliierten Komitees hievon in Kenntnis zu setzen, sowie die unterstehenden Ämter und Organe mit den erforderlichen Weisungen zu versehen.</p>
+                  <p><pb facs="krp-0074_r-0020"/></p>
+               </div>
+               <div type="top" xml:id="krp-0074_top09">
+                  <head>
+                     <label>
+                        <num n="9">9.</num>
+                        <seg>Gesetzentwurf über die Beschäftigung von jugendlichen und weiblichen Arbeitern, dann über die Arbeitszeit und die Sonntagsruhe beim Bergbau (Bergarbeitergesetz).</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär [Ing.] <hi rend="#letterspaced">Zerdik</hi> erbittet und erhält die Zustimmung des Kabinettsrates, den Entwurf eines Gesetzes über die Beschäftigung von jugendlichen und weiblichen Arbeitern, dann über die Arbeitszeit und die Sonntagsruhe beim Bergbau (Bergarbeitergesetz) in der Nationalversammlung einbringen zu dürfen, wobei jedoch über Antrag des Staatssekretärs <hi rend="#letterspaced">Hanusch</hi> im § 14 des Gesetzes die Worte „nach Anhörung“ durch die Worte „mit Zustimmung“ zu ersetzen sind.</p>
+               </div>
+               <div type="top" xml:id="krp-0074_top10">
+                  <head>
+                     <label>
+                        <num n="10">10.</num>
+                        <seg>Bestellung eines deutschösterreichischen Vertreters bei der Belgrader Regierung.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Bauer</hi> erbittet und erhält vom Kabinettsrat die Ermächtigung zur Stellung eines Antrages an den Präsidenten der Nationalversammlung auf Ernennung des Sektionschefs in der bosnisch-herzegowinischen Abteilung des liquidierenden gemeinsamen Finanzministeriums Otto Klimburg zum Vertreter der deutschösterreichischen Republik bei der Regierung des Königreiches der Serben, Kroaten und Slowenen in Belgrad.</p>
+                  <p><pb facs="krp-0074_r-0021"/></p>
+               </div>
+               <div type="top" xml:id="krp-0074_top11">
+                  <head>
+                     <label>
+                        <num n="11">11.</num>
+                        <seg>Auszahlung einer Staatssubvention an den Landesverband für Fremdenverkehr in Deutschböhmen mit dem Sitze in Karlsbad.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Paul</hi> verweist darauf, dass nach den vom Kabinettsrate am 18. Februar 1919 gefassten Beschlüssen die Auszahlung von Staatssubventionen nach Deutschböhmen und Sudetenland nur in gewissen Ausnahmsfällen statthaft sei. Einer dieser letzteren Fälle liege nunmehr vor. Es handle sich um die Auszahlung der halben Jahresrate der dem Landesverbande für Fremdenverkehr in Deutschböhmen mit dem Sitze in Karlsbad bisher alljährlich bewilligten Staatssubvention von 24.000 K. Nur durch die Gewährung dieser Unterstützung sei der Weiterbestand des Verbandes möglich und erscheine dessen Tätigkeit für den deutschösterreichischen Fremdenverkehr äußerst wertvoll, gleichgültig, ob Deutschböhmen dem deutschösterreichischen Staate erhalten bleibe oder nicht. Auch würde eine ablehnende Haltung der Regierung in deutschböhmischen Kreisen große Erbitterung zeitigen, so dass es auch aus allgemeinen staatspolitischen Gründen unangebracht wäre, dem gestellten Verlangen nicht zu entsprechen. Demgemäß erbitte der sprechende Staatssekretär vom Kabinettrate die Zustimmung zur Auszahlung <pb facs="krp-0074_r-0022"/>der Staatssubvention an den genannten Landesverband für das erste Halbjahr 1919 im Betrage von 12.000 K.</p>
+                  <p>Der Kabinettsrat erteilt die erbetene Zustimmung.</p>
+               </div>
+               <div type="top" xml:id="krp-0074_top12">
+                  <head>
+                     <label>
+                        <num n="12">12.</num>
+                        <seg>Kriegszuschlag zu den Schlachtviehpreisen.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Loewenfeld-Russ</hi> verweist auf den vom Kabinettsrat am 24. März l. J. gefassten Beschluss, wonach der Kriegszuschlag zu den Übernahmspreisen des Schlachtviehs in den Monaten März, April und Mai in der Höhe von 50 h pro kg lebend den Vieheignern auszuzahlen und aus Staatsmitteln zu tragen sei und behufs Vermeidung einer Erhöhung der Kleinverkaufspreise für Rindfleisch in Wien in den Monaten März und April ein Staatszuschuss bis zum Höchstausmaße von je 8 Millionen K in Anspruch genommen werden dürfe.</p>
+                  <p>Die Notwendigkeit der Aufrechterhaltung des Kriegszuschlages dauere auch derzeit noch an. Die Aufbringung von Schlachtrindern in den deutschösterreichischen Ländern begegne trotz aller Zwangsmaßnahmen den größten Schwierigkei<pb facs="krp-0074_r-0023"/>ten, die sich am besten nach dem Stande der Belieferung des Wiener Marktes beurteilen lassen. Während der Wiener Monatsbedarf an Rindfleisch behufs einer Aufrechterhaltung einer Wochenkopfquote von 12 ½ dag monatlich 1.671 t Rindfleisch ausmache, seien im Monate März bloß 469.739 kg, im Monate April bloß 415.999 kg und in der Zeit vom 1. bis 20. Mai bloß 190.520 kg Rindfleisch angeliefert worden. Von diesen Mengen stamme überdies ein beträchtlicher Prozentsatz aus Dänemark, so dass die Anlieferung aus den deutschösterreichischen Ländern als sehr gering bezeichnet werden müsse.</p>
+                  <p>Die Folge dieser Tatsache sei, dass bereits Ende März daran geschritten werden musste, die Ausgabe von Rindfleisch in Wien im Wege eines Turnus zu 10 dag pro Kopf durchzuführen. Der erste Turnus konnte noch im Verlaufe von vier Wochen zum Abschlusse gebracht werden; der gegenwärtige zweite Turnus sei jedoch, trotzdem bereits die fünfte Ausgabewoche begonnen habe, erst beim Buchstaben I. angelangt. Auch außerhalb Wiens sei der Stand der Fleischversorgung ein <pb facs="krp-0074_r-0024"/>sehr ungünstiger.</p>
+                  <p>Es sei daher dringendst notwendig, die Aufbringung der Schlachtrinder zu fördern, oder zumindest zu verhüten, dass ein weiterer Rückgang eintritt. Ein solcher wäre aber unvermeidlich, wenn die Auszahlung des Kriegszuschlages, der nach der übereinstimmenden Ansicht der Vertreter der deutschösterreichischen Länder auf den Konsum nicht überwälzt werden kann, eingestellt werden müsste. Der sprechende Staatssekretär stelle daher einvernehmlich mit dem Staatsamt für Land- und Forstwirtschaft den Antrag, der Kabinettsrat wolle beschließen, dass der Kriegszuschlag im Ausmaße von 50 h pro kg lebend auch weiterhin, vorläufig etwa während der Zeit vom 1. Juni bis zum 31. August 1919 auszuzahlen und aus Staatsmitteln zu decken ist.</p>
+                  <p>Zur Beurteilung der Größe des Aufwandes bemerke der sprechende Staatssekretär schließlich, dass für den Kriegszuschlag in der Zeit vom 1. November 1918 bis zum 20. März 1919 55 Millionen K und seither bis zum 20. Mai 1919 3 ½ Millionen K flüssig gemacht worden seien. Mit dem Rückgange der Aufbringung <pb facs="krp-0074_r-0025"/>sei daher naturgemäß auch der Kostenaufwand zurückgegangen.</p>
+                  <p>In der hierüber abgeführten Debatte sprechen sich Staatssekretär Dr. <hi rend="#letterspaced">Schumpeter</hi> und Sektionschef Dr. <hi rend="#letterspaced">Grimm</hi> in der entschiedensten Weise gegen die weitere Aufrechterhaltung des Kriegszuschlages aus, indem sie darauf hinweisen, dass mit Rücksicht auf die Lage der Staatsfinanzen mit dem Abbau der staatlichen Zuschüsse für den Lebensmittelbedarf unbedingt begonnen werden müsse. Hingegen vertreten der <hi rend="#letterspaced">Vorsitzende</hi> und die Staatssekretäre <hi rend="#letterspaced">Stöckler</hi>, <hi rend="#letterspaced">Eldersch</hi>, Dr. <hi rend="#letterspaced">Bauer</hi> und <hi rend="#letterspaced">Hanusch</hi> die Auffassung, dass die Aufhebung dieses Zuschlages im gegenwärtigen Zeitpunkte nicht tunlich sei, weil dadurch die Viehaufbringung insbesondere in Niederösterreich erschwert würde. Die Überwälzung des Kriegszuschlages auf den Konsum im Wege einer Preiserhöhung des Rindfleisches könne aber aus allgemeinpolitischen Gründen derzeit keinesfalls in Erwägung gezogen werden.</p>
+                  <p>Der Kabinettsrat schließt sich dieser Auffassung im Gegensatze zu der Stel<pb facs="krp-0074_r-0026"/>lungnahme des Staatssekretärs für Finanzen an und beschließt, die weitere Auszahlung dieses Kriegszuschlages bis Ende August d. J.; von diesem Zeitpunkte an wird mit der Einstellung dieses Zuschlages unbedingt vorzugehen sein.</p>
+                  <p/>
+               </div>
+            </div>
+            <div type="stenogramme">
+               <div n="1">
+                  <head>[KBR 74, 27. Mai 1919, Stenogramm]</head>
+                  <p><pb facs="krp-0074_s01-0001"/>Nr. 74, 27. /5., 3h.</p>
+                  <p>[<hi rend="#i">Rechtes Obereck</hi>:] [Zugezogen]: Grimm, </p>
+                  <p>Ippen, </p>
+                  <p>Schwarzwald, </p>
+                  <p>Mosing.</p>
+                  <p>Die Lebensmittelkredite wurden von den Staaten Italien, Frankreich und England in Aussicht gestellt. </p>
+                  <p>Cem. kann nach seinen Gesetzen unmittelbar Kredit an feindliche Staaten nicht geben. Die ersten Kredite hat Italien, jetzt Frankreich.</p>
+                  <p>Bauer: [...] Sicherheiten verlangt, dass Renner ihnen gegenüber eine Verpflichtung eingeht, [eine] Erklärung abgibt, wodurch diese Sicherheiten zunächst versprochen werden und bis 10. /6. </p>
+                  <p>die Gesetzgebung der Regierung die Vollmacht dazu geben soll.</p>
+                  <p>Es handelt sich also einerseits um eine Art General-Hypothek (Verpflichtung, dass alle Einkünfte in erster Linie sichergestellt werden für den Bezug von Lebensmitteln). </p>
+                  <p>Geht sehr weit, trotzdem ist die Friedens-Deleg[ation] -.</p>
+                  <p>Wenn wir gleichzeitig Rohstoffkredit bekämen, erschiene mir die Sache möglich; auf Lebensmittel allein aber schiene es mir unmöglich. </p>
+                  <p>Es handelt sich um Dinge, die wir schon in Aussicht genommen hatten.</p>
+                  <p>Der Redner würde vorschlagen, die Delegation zu instruieren, dass sie zunächst alle Anstrengungen machen, um durchzusetzen, dass in dem Brief ausdrücklich </p>
+                  <p>gesagt wird, dass dies zur Sicherstellung unserer Lebensmittel-Importe bis ins Jahr 20 hinein und zur Sicherstellung der Rohstoffeinfuhr [dient].</p>
+                  <p>In den Verhandlungen Schritt für Schritt zurückdrängen lassen. </p>
+                  <p>Falls aber darauf bestanden würde, dann nachgeben. Da sehr dringlich, bevollmächtigt, diesen Brief als Maximum.</p>
+                  <p>Schumpeter: Jetzt definitiv noch nicht in der Lage, Stellung zu nehmen. Überlegung vorbehalten. </p>
+                  <p>Die Sache bedeutet [eine] vollständige finanzielle Kapitulation. </p>
+                  <p>Ablehnung mit Gegenvorschlägen.</p>
+                  <p>Loewenfeld: Bisher in Anspruch genommen, bis 15. /5. Warenimporte auf Kredit im Wert von 36,3 Millionen Dollar. </p>
+                  <p>Bedarf 15. /5. - 15. /8. (beschränkt auf die notwendigsten Artikel): 400 Millionen Lire (47 Millionen Dollar). </p>
+                  <p>Im nächsten Wirtschaftsjahr: mehrere Hundert Millionen Dollar.</p>
+                  <p>Bratusch: Das Zurücktreten aus der Hypothek wäre eine vollständige Erschütterung unseres Kredits.</p>
+                  <p>Fink: Wenn wir schon alle[s] verpfänden, so müssten wir doch wenigstens auf ein Jahr gesichert sein mit Lebensmitteln und Rohstoffen. Renner schreibt: Genehmigung der Vorschläge unerlässlich.</p>
+                  <p>Bauer: Nicht so gemeint, dass alle diese Punkte gelten sollen, sondern nur einer oder mehrere. Das Ganze hat noch nicht den Charakter eines Vertrages, sondern nur einer Offerte. </p>
+                  <p>Wir überlassen es ihnen, sich das Erwünschte davon auszusuchen. Bauer ist überzeugt, dass es beim Holz und den Salinen verbleiben wird, eventuell noch Wertpapiere.</p>
+                  <p>Schwarzwald: Salinen, Holz und Besitz der Stadt Wien. Bei den ersten Objekten gibt es flüssige Dinge, die wir hinlegen müssen als Pfand. Diese Dinge müssten </p>
+                  <p>subsidiär in Aussicht gestellt werden. In unserem Telegramm sollte auch mit Nachdruck darauf hingewiesen werden, mit den amerikanischen Delegierten […] zu sprechen. </p>
+                  <p>Dann nur altes Ausland, nicht auch Böhmen etc.</p>
+                  <p>Schumpeter: Schlusssatz: würde bedeuten eine finanzielle Kontrolle ganz allgemeiner Art.</p>
+                  <p>Bauer: Die Gefahr ist, dass das erfasste Geld für andere Zwecke in Anspruch genommen wird. Einverstanden, dass das Staatsamt für Finanzen die Änderungen formuliert, welche es haben will. Aber nicht einverstanden, wenn </p>
+                  <p>es einen Sinn haben sollte, die Vollmacht so einzuschränken, dass sie nur dann unterschreiben dürfen, wenn sie es durchsetzen. Hauptausschuss.</p>
+                  <p><pb facs="krp-0074_s01-0002"/>Eldersch: -.</p>
+                  <p>Schwarzwald: Neutrale, UA, England, Frankreich und Italien. </p>
+                  <p>Hauptausschuss: Gesetz über die Sicherstellung des Forstbesitzes.</p>
+                  <p>Eldersch: Auch für diese Angelegenheit, die die Waldverpfändung wäre nichts in den Hauptausschuss zu bringen.</p>
+                  <p>Bauer: Man müsste nicht in die Details eingehen; sagen, dass große Schwierigkeiten bestehen, Verhandlungen noch im Zuge.</p>
+                  <p>Stöckler: Stimmt Bauer zu; informieren muss man den Hauptausschuss, in Details aber nicht einweihen.</p>
+                  <p>9h.</p>
+                  <p>Schwarzwald: Erläutert die Textierung.</p>
+                  <p>Loewenfeld: Alle Landesstädte, eventuelle Städte von 10.000 Einwohnern angefangen. Dann noch Andeutung, dass diese [...] Hilfe nicht einmal bis Mitte August reichen wird.</p>
+                  <p>Bauer: Im Allgemeinen einverstanden mit Schwarzwald; bei Punkt 6 wäre zu sagen: alle Landeshauptstädte.</p>
+                  <p>Angenommen.</p>
+                  <p>2. Eldersch: Formel im Staatsbürger-Eid. </p>
+                  <p>Ermächtigung erbeten, den Landesregierungen die Weisungen zu erteilen, die zweite Formel angenommen.</p>
+                  <p><hi rend="#s">3. Paul: Im Haus mehrere fremde Missionen: Amerikaner zu 14 Zimmern noch 6. Die tschechische Delegation </hi></p>
+                  <p><hi rend="#s">in die Hofburg, wo aber angeblich kein Platz.</hi></p>
+                  <p><hi rend="#s">Bauer wird nachsehen lassen. Zur Kenntnis genommen.</hi></p>
+                  <p>3. Fink: Südtiroler Angestellte.</p>
+                  <p>Glöckel: Warnt vor Zusicherungen an diese Leute, da man diese nicht erfüllen wird können.</p>
+                  <p>Bauer: Die Landesregierung wünscht selbst, dass die Leute dort bleiben; es handelt sich nur um eine Maßregelung. </p>
+                  <p>Man muss ihnen sagen, dass keiner übernommen wird; in der Antwort muss klar gemacht werden, dass diese Zusicherung nur gilt für den Fall des Zwanges.</p>
+                  <p>Eldersch: Nicht Zwang, sondern Maßregelung (die italienischen müssen einen Akt gesetzt haben).</p>
+                  <p>Angenommen mit Zusatz auf letzter Seite.</p>
+                  <p><pb facs="krp-0074_s01-0003"/>4. Fink: Boerhavegasse.</p>
+                  <p>Glöckel: An den Staat werden drei Forderungen herantreten: 1.) Ziviles Mädchenpensionat in der Josefstädter Straße.</p>
+                  <p>2.) Lehrerbildungsanstalt im 3. Bezirk nicht mehr ausreichend untergebracht.</p>
+                  <p>3.) Staatsamt für Justiz: Jugendgericht.</p>
+                  <p>4.) [Gemeinde] Wien: Rudolfspital.</p>
+                  <p>In beiden Gebäuden 700 Zöglinge unterbringbar. </p>
+                  <p>Ein Gebäude könnte verwendet werden für das zivile Mädchenpensionat (gedacht als Komb[ination] von Begabtenschule und Lehrerinnenbildungsanstalt). </p>
+                  <p>Eine andere Anstalt als die gegebene Anstalt für die Lehrerbildungsanstalt und dazu noch vom Land jenen Teile zu übernehmen der sich </p>
+                  <p>mit der experimentellen Psych[ologie] (Lehrerakademie) [befasst]; </p>
+                  <p>also eine Art pädagogische Hochschule.</p>
+                  <p>Oder: Ein Gebäude für das zivile Mädchenpensionat, </p>
+                  <p>eines für Jugendgerichtshof.</p>
+                  <p>Letzte Kombination: Ein Gebäude für das Mädchenpensionat, </p>
+                  <p>ein Gebäude für das Spital.</p>
+                  <p>Der Redner tritt dafür ein, dass beide Gebäude für Erziehungsanstalten verwendet werden, zumal dies natürlich wäre.</p>
+                  <p>Hanusch: Suche ein Lokal für die neu zu errichtende Invalidenkommission, die am 1. /7. beginnen soll (40-50 Zimmer). </p>
+                  <p>Daher sehr dafür, dass das zivile Mädchenpensionat in der Josefstädter Straße herauskommt und das [Gebäude] frei wird für die Invaliden. </p>
+                  <p>Der andere Teil aber sollte für Spitalszwecke zur Verfügung gestellt werden, da die ganze Umgebung am Rudolfspital interessiert ist.</p>
+                  <p>Tandler: Wir könnten eine große Tuberk[ulose]-Ambulanz im Rudolfspital schaffen; ebenso für Geschlechtskranke. </p>
+                  <p>Die Heilbehandlung der Invaliden wird ein Vermögen kosten. </p>
+                  <p>Wir hätten die Möglichkeit, eine ganze Reihe von Betten zu bekommen mit Küchenmaterial und der ganzen Verwaltung.</p>
+                  <p>Bratusch: Spricht für Jugendgerichtshof.</p>
+                  <p>Deutsch: Habe für Spitalszwecke schon formell zugesagt der Stadt Wien.</p>
+                  <p>Glöckel: -.</p>
+                  <p>Grimm: Finanzielle Gesichtspunkte.</p>
+                  <p>Tandler: Spitalsmisere.</p>
+                  <p>Fink: Einen Teil bekommt das Rudolfspital, dafür muss Wien ein Gebäude für das Jugendgericht bereitstellen (jedoch vorher </p>
+                  <p>bei Justiz).</p>
+                  <p>Einen Teil bekommt Glöckel und Hanusch [bekommt die] Josefst[ädter Straße].</p>
+                  <p>Glöckel: Schuleinrichtung des anderen Gebäudes.</p>
+                  <p><pb facs="krp-0074_s01-0004"/>5. Deutsch: Gesetz [betreffend] vermögensrechtliche Beschränkungen von Militärpersonen.</p>
+                  <p>6. Deutsch: Gesetzentwurf Invaliden-Entschädigungsgesetz.</p>
+                  <p>Resch: Findet größerer Personenkreis wie das Bezügegesetz.</p>
+                  <p>Hanusch: Im Kabinettsrat nicht Paragraphen-weise.</p>
+                  <p>Bauer: Ist für die von Resch beantragte Abänderung des § 1.</p>
+                  <p>Deutsch: Einverstanden, dass § 1 eine andere Fassung erhält und zwar dieselbe, die das frühere Gesetz rücksichtlich des Kreises der Bezugsberechtigten ...</p>
+                  <p>Die Stilisierung nehmen die zwei Staatssekretäre vor.</p>
+                  <p>Genehmigt mit dieser Einschränkung.</p>
+                  <p>7. Schumpeter: Zwei Entwürfe, Übereinkommen mit der ungarischen Räterepublik.</p>
+                  <p>Mosing: Die Frist würde [am] 4. /6. ablaufen (14 Tage Wartefrist). </p>
+                  <p>Nach der gegenwärtigen internationalen politischen Lage sollte der Kommissionsentwurf nicht ange[nommen] werden. </p>
+                  <p>Also bis 3. /6. dilat[orisch] behandeln, dann die neutralen Vertreter in Wien aufmerksam machen. </p>
+                  <p>Ein kleines Kolleg[ium] zur Durchführung dieser Sachen: Äußeres, Handel, Justiz und Finanzen. </p>
+                  <p>Die Interessenten müssten aufgefordert werden, ihre Interessen schriftlich bekannt zu geben, dann mit Ungarn beraten ....</p>
+                  <p>Fink: Einige Bankdirektoren waren bei mir und haben insbesondere gegen den zweiten Entwurf Einwendungen erhoben.</p>
+                  <p>Bauer: Bittet, [dass] solche Angelegenheiten, an denen mehrere Staatsämter interessiert sind, geschäftsordnungsmäßig im Kabinettsrat behandelt werden. </p>
+                  <p>Auch meiner Meinung nach ist dieser Entwurf ganz unannehmbar. </p>
+                  <p>Einverstanden mit der Schaffung eines Komitees. Die ungarische Regierung wird nur verschleppen wollen. </p>
+                  <p>Einverstanden, dass der Vertrag nicht ratifiziert [wird] und dass man die Verhandlungen auf der Regierungsseite aufnimmt.</p>
+                  <p>Ellenbogen: Weder Handel noch Finanzen waren bei diesen Verhandlungen anwesend.</p>
+                  <p>Schumpeter: Von Ippen persönlich überbracht mit der Mitteilung, dass die Sache sehr dringlich sei.</p>
+                  <p>Kommission angenommen.</p>
+                  <p>8. Schumpeter: Blockade. Angenommen.</p>
+                  <p>9. Zerdik: Bergarbeitergesetz.</p>
+                  <p>Hanusch:</p>
+                  <p>Bauer: [<hi rend="#i">neben Summenklammer</hi>] Überstunden.</p>
+                  <p>Rotky: -.</p>
+                  <p>Zerdik: Gegen die vollständige Weglassung des § 14 nichts einzuwenden. Beschluß: "mit Zustimmung".</p>
+                  <p><pb facs="krp-0074_s01-0005"/>10. Bauer: Belgrad - Gesandter.</p>
+                  <p>Angenommen.</p>
+                  <p>11. Paul: Subvention, Fremdenverkehr.</p>
+                  <p>Angenommen.</p>
+                  <p>12. Loewenfeld: Schlachtviehpreise.</p>
+                  <p>Grimm: Seinerzeit ist im Kabinettsrat beschlossen worden, diesen Kriegszuschlag nicht weiter zu verlängern. </p>
+                  <p>Der Kabinettsrat sollte endlich ernst machen und diesen Zuschlag endlich aus der Welt schaffen.</p>
+                  <p>Schumpeter: Der Staat kann diese Lasten nicht tragen, es muss auf den Konsum überwälzt werden.</p>
+                  <p>Stöckler: Pflichtet Loewenfeld bei. Wo die Aufbringung heute so schwer ist, kann man nicht mit dem Abbau vorgehen.</p>
+                  <p>Eldersch: Ist gegen die Aufhebung des Zuschlages im gegenwärtigen Moment, weil dadurch die einzige noch bestehende Anlieferung </p>
+                  <p>von Niederösterreich gefährdet werden würde. Wir haben seit Jahren auch die Maximierung </p>
+                  <p>des Nutzviehpreises verlangt.</p>
+                  <p>Schumpeter: Der die heutigen Fleischpreise zahlt, kann auch die Krone mehr zahlen. Hier handelt es sich um eine Prinzipienfrage. </p>
+                  <p>Die damalige Zusicherung wurde erteilt unter der ausdrücklichen Bedingung, dass mit diesem Termin endlich die Sache aufgegeben wird.</p>
+                  <p>Fink: -.</p>
+                  <p>Grimm: Aufhebung des Kriegszuschlages wäre beizubehalten; dagegen könnte man den Viehpreis für Niederösterreich um 50% </p>
+                  <p>erhöhen.</p>
+                  <p>Hanusch: Macht auf die böhmischen Unruhen aufmerksam.</p>
+                  <p>Fink: Drei Monate ½ Krone und dann definitiv zugestimmt mit der Aufgabe.</p>
+                  <p>Schumpeter: Dagegen.</p>
+                  <p>13. Bratusch: Gerichtsdiener.</p>
+                  <p>Grimm: Beamtenkomitee heute erhalten.</p>
+                  <p>Genehmigt, wenn Beamtenkomitee keine Einwendung (unter der Annahme, dass keine Bedenken erhoben [werden]).</p>
+                  <p>16. Eldersch: Beamte von 86-91 [...]. </p>
+                  <p>Polizeiräte zu Oberpolizeirat. Angenommen.</p>
+                  <p><pb facs="krp-0074_s01-0006"/>17. Weiß: Donnerstag Kabinetts-Sitzung, um Gesetze vorzulegen:</p>
+                  <p>Grimm: 1.) Invalidenentschädigungsgesetz.</p>
+                  <p>Hanusch: 2.) Versorgungsgesetz.</p>
+                  <p>1.) Am Freitag als ersten Gegenstand: 3h (Parlament).</p>
+                  <p>2.) Pensionen.</p>
+                  <p>18. Eldersch: Donnerstag große Demonstration Eherechtsreformer. Ein Mitglied des Kabinettsrates im Parlament.</p>
+                  <p>Petit[ion] zu übergeben im Parlament ... heute ein.</p>
+                  <p>Schluss ¼1.</p>
+               </div>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>
