@@ -1,0 +1,804 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href='http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:acdh="https://vocabs.acdh.oeaw.ac.at/schema#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xml:lang="de">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="a" type="main" n="0180">Kabinettsprotokoll Nr. 180 vom 11. Mai 1920</title>
+            <title level="m" type="main" n="01">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <title level="m" type="sub" n="">Renner III (17. Oktober 1919 – 7. Juli 1920)</title>
+            <meeting>
+               <placeName key="https://d-nb.info/gnd/4066009-6">Wien</placeName>
+               <orgName key="https://d-nb.info/gnd/5162749-8">Kabinettsrat</orgName>
+               <date when-iso="1920-05-11"/>
+            </meeting>
+            <editor>
+               <persName key="https://d-nb.info/gnd/122481836"
+                         role="hasCreator"
+                         xml:id="hwohnout">
+                  <forename>Helmut</forename>
+                  <surname>Wohnout</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</affiliation>
+               <idno type="ORCID">0000-0002-3864-9839</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/120789825"
+                         role="hasCreator"
+                         xml:id="tolechowski">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0003-3291-6876</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/131679384"
+                         role="hasCreator"
+                         xml:id="rlein">
+                  <forename>Richard</forename>
+                  <surname>Lein</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0002-7502-0503</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="aholzer">
+                  <forename>Anna</forename>
+                  <surname>Holzer</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0005-3560-3500</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="dsoelkner">
+                  <forename>Dominik</forename>
+                  <surname>Sölkner</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-9895-7212</idno>
+            </editor>
+            <editor>
+               <persName role="hasContributor" xml:id="ischotzko">
+                  <forename>Ina</forename>
+                  <surname>Schotzko</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-5210-3713</idno>
+            </editor>
+            <funder n="1">
+               <orgName key="https://d-nb.info/gnd/2054142-9" role="hasFunder">Österreichischer Wissenschaftsfonds FWF</orgName>
+               <idno type="project">PAT1495024</idno>
+               <title type="project">Die Protokolle des österreichischen Kabinettsrates 1919–1920</title>
+            </funder>
+            <respStmt>
+               <resp>Projektverantwortung</resp>
+               <orgName key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Projektleitung</resp>
+               <persName key="https://d-nb.info/gnd/120789825" role="hasPrincipalInvestigator">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+                  <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+                  <idno type="ORCID">0000-0003-3291-6876</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Nationaler Forschungspartner</resp>
+               <orgName key="https://d-nb.info/gnd/1123037736" role="hasEnabler">Austrian Centre for Digital Humanities</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Digitalisierung der gedruckten Quellen</resp>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>TEI-Datenmodellierung</resp>
+               <persName role="hasContributor" xml:id="tfruehwirth">
+                  <forename>Timo</forename>
+                  <surname>Frühwirth</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-3997-5193</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technische Supervision</resp>
+               <persName key="https://d-nb.info/gnd/1043833846"
+                         role="hasContributor"
+                         xml:id="pandorfer">
+                  <forename>Peter</forename>
+                  <surname>Andorfer</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-9575-9372</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technisches Consulting und Vorbereitung der Druckausgabe</resp>
+               <persName key="https://d-nb.info/gnd/13281899X"
+                         role="hasContributor"
+                         xml:id="skurz">
+                  <forename>Stephan</forename>
+                  <surname>Kurz</surname>
+                  <affiliation key="https://d-nb.info/gnd/1202798799">Institut für die Erforschung der Habsburgermonarchie und des Balkanraumes</affiliation>
+                  <idno type="ORCID">0000-0003-2546-2570</idno>
+               </persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher key="https://d-nb.info/gnd/1001454-8">Österreichische Akademie der Wissenschaften</publisher>
+            <date when="2028"/>
+            <availability status="free">
+               <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">Lizenziert unter CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/deed.de)</licence>
+            </availability>
+            <idno type="ISBN_Print"/>
+            <idno type="ISBN_Part_epub"/>
+            <idno type="ISBN_Digital"/>
+            <idno type="DOI"/>
+            <idno type="DOI_zenodo"/>
+            <idno type="ebook_ID"/>
+         </publicationStmt>
+         <seriesStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="m" type="main">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <respStmt>
+               <resp>Bearbeitung und Herausgeberschaft</resp>
+               <orgName key="https://d-nb.info/gnd/2024703-5">Universität Wien</orgName>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+         </seriesStmt>
+         <notesStmt>
+            <note>Diese TEI-XML-Datei ist Grundlage für eine Druckausgabe der Edition.</note>
+            <relatedItem>
+               <biblStruct>
+                  <monogr>
+                     <imprint>
+                        <pubPlace key="https://d-nb.info/gnd/4066009-6">Wien</pubPlace>
+                        <publisher key="https://d-nb.info/gnd/2068748-5">Verlag der Österreichischen Akademie der Wissenschaften</publisher>
+                        <date when="2029"/>
+                     </imprint>
+                     <extent/>
+                  </monogr>
+                  <note>
+              <idno/>
+              <ptr/>
+            </note>
+                  <citedRange/>
+               </biblStruct>
+            </relatedItem>
+         </notesStmt>
+         <sourceDesc>
+            <bibl>Quellbestand: AT-OeStA/AdR MRang MR 1Rep KRP Kabinettsratsprotokolle, 1918-1920 (Teilbestand)<ref target="https://www.archivinformationssystem.at/detail.aspx?id=5465">https://www.archivinformationssystem.at/detail.aspx?id=5465</ref>
+            </bibl>
+            <msDesc>
+               <msIdentifier>
+                  <institution key="https://d-nb.info/gnd/37748-X" role="hasOwner">AT-OeStA Österreichisches Staatsarchiv (Archiv (ÖStA))</institution>
+                  <repository key="https://d-nb.info/gnd/1601181-8">AT-OeStA/AdR Archiv der Republik, 1918- (Abteilung)</repository>
+                  <collection>AT-OeStA/AdR MRang MR 1Rep Ministerrat 1. Republik, 1918 - 1938 (Bestand)</collection>
+                  <idno>AT-OeStA_AdR-MRang-MR-1.-Rep.-KRP-180</idno>
+               </msIdentifier>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <abstract>
+            <p>
+          <!--to be generated-->
+        </p>
+         </abstract>
+      </profileDesc>
+      <encodingDesc>
+         <styleDefDecl scheme="css"/>
+         <tagsDecl>
+            <rendition xml:id="b" scheme="css">font-weight:bold;</rendition>
+            <rendition xml:id="su" scheme="css">vertical-align:super;font-size:.7em;</rendition>
+            <rendition xml:id="s" scheme="css">text-decoration:line-through;</rendition>
+            <rendition xml:id="u" scheme="css">text-decoration:underline;</rendition>
+            <rendition xml:id="ow" scheme="css">text-decoration:line-through;text-decoration-style:double;</rendition>
+            <rendition xml:id="r" scheme="css">display:block;text-align:right;</rendition>
+            <rendition xml:id="letterspaced" scheme="css">letter-spacing:0.15em;</rendition>
+            <rendition xml:id="i" scheme="css">font-style:italic;</rendition>
+         </tagsDecl>
+         <editorialDecl>
+            <hyphenation>
+               <p>
+            <!--to be added-->
+          </p>
+            </hyphenation>
+            <correction>
+               <p>
+            <!--to be added-->
+          </p>
+            </correction>
+            <normalization>
+               <p>
+            <!--to be added-->
+          </p>
+            </normalization>
+            <punctuation>
+               <p>
+            <!--to be added-->
+          </p>
+            </punctuation>
+            <stdVals>
+               <p>
+            <!--to be added-->
+          </p>
+            </stdVals>
+            <p>
+          <!--to be added-->
+        </p>
+         </editorialDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#tfruehwirth" when-iso="2026-10-14">TEIGarage output upconverted with upconvert.xsl</change>
+         <change who="#tfruehwirth" when-iso="2026-10-14">TEI header populated with generate_tei_templates.py</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface/>
+   </facsimile>
+   <text>
+      <body>
+         <div xml:id="doc-krp-0180.xml">
+            <head type="dokument">
+               <title type="num">180.<note type="footnote">Das Protokoll trägt den Vermerk <hi rend="#i">Vertraulich!</hi></note>
+               </title>
+               <title type="desc">
+                  <pb facs="krp-0180_r-0001"/>
+                  <pb facs="krp-0180_r-0002"/>[Dienstag] 1920-05-11</title>
+            </head>
+            <div type="dokumentkopf">
+               <div type="vorsitz">
+                  <head>Vorsitz:</head>
+                  <p>Renner</p>
+               </div>
+               <div type="anwesend">
+                  <head>Anwesend:</head>
+                  <p>Eisler, Eldersch, Ellenbogen, Fink, Glöckel, Hanusch, Loewenfeld-Russ, Mayr, Miklas, Paul, Ramek, Reisch, Resch, Stöckler, Tandler, Waiss, Zerdik</p>
+               </div>
+               <div type="zugezogen">
+                  <head>Zugezogen:</head>
+                  <p>Buchinger, Davy, Froehlich, Grimm, Harpner, Heinz, Oppenheimer, Seitz, Smitka, Wilfling, Ziller</p>
+               </div>
+               <div type="schriftfuehrer">
+                  <head>Schriftführer:</head>
+                  <p>unbekannt</p>
+               </div>
+               <div type="dauer">
+                  <head>Dauer:</head>
+                  <p>21.00–01.30 Uhr</p>
+               </div>
+            </div>
+            <div type="komponenten">
+               <p>Reinschrift, Beilagen, streng vertraulicher Anhang, Konzept, stenographische Mitschrift, Entwurf der Tagesordnung, diverse Zusätze</p>
+            </div>
+            <div type="beilagen">
+               <head>Beilagen:</head>
+               <list>
+                  <item><ref target="#krp-0180_top02">Zu TOP 2</ref>: <ref target="#krp-0180_b01">Zwei Fassungen der Vollzugsanweisung über die Verwaltung der ehemals hofärarischen Theater</ref></item>
+                  <item><ref target="#krp-0180_top04">Zu TOP 4</ref>: <ref target="#krp-0180_b02">Beschlüsse der paritätischen Lohnkommission</ref></item>
+                  <item><ref target="#krp-0180_top04">Zu TOP 4</ref>: <ref target="#krp-0180_b03">Zweiter Nachtrag zum Besoldungsübergangsgesetz mit Begründung</ref></item>
+                  <item><ref target="#krp-0180_top06">Zu TOP 6</ref>: <ref target="#krp-0180_b04">Auszug für den Vortrag des Staatsamtes für Handel und Gewerbe, Industrie und Bauten über den Gesetzesbeschluss zum Gewerbeantritt durch berufswechselnde Militärpersonen</ref></item>
+                  <item><ref target="#krp-0180_top06">Zu TOP 6</ref>: <ref target="#krp-0180_b05">Gesetzesentwurf über den Gewerbeantritt durch berufswechselnde Militärpersonen mit Begründung</ref></item>
+                  <item><ref target="#krp-0180_top07">Zu TOP 7</ref>: <ref target="#krp-0180_b06">Referat des Staatsamtes für soziale Verwaltung Zl. 13.584 über die Bekleidung der in Anstalten untergebrachten Kriegsbeschädigten</ref></item>
+                  <item><ref target="#krp-0180_top08">Zu TOP 8</ref>: <ref target="#krp-0180_b07">Auszug für den Vortrag des Staatsamtes für Inneres und Unterricht zu Zl. 17.983/1920 über den Beschluss der Kärntner Landesversammlung, der Stadt Klagenfurt ein Anlehen über 6 Millionen K zu bewilligen</ref></item>
+                  <item><ref target="#krp-0180_top09">Zu TOP 9</ref>: <ref target="#krp-0180_b08">Nachtrag zum Finanzgesetz für das Verwaltungsjahr 1919/20</ref></item>
+                  <item><ref target="#krp-0180_top10">Zu TOP 10</ref>: <ref target="#krp-0180_b09">Vortrag des Kultusamtes über die Sicherung der Mittel zur Aufbesserung der Bezüge, Pensionen und Teuerungszuwendungen der Organe der evangelischen Kirchengemeinden und Schulen</ref></item>
+               </list>
+            </div>
+            <div type="protokoll">
+               <pb facs="krp-0180_r-0003"/>
+               <div type="top" xml:id="krp-0180_top01">
+                  <head>
+                     <label>
+                        <num n="1">1.</num>
+                        <seg>Tätigkeitsbericht der Liquidierungsinspektoren.</seg>
+                     </label>
+                  </head>
+                  <p>Über Einladung des <hi rend="#letterspaced">Vorsitzenden</hi> erstattet Liquidierungsinspektor Abgeordneter <hi rend="#letterspaced">Smitka</hi> einen eingehenden Bericht über die bisherige Tätigkeit des Liquidierungsinspektorates. Hienach habe sich das Inspektorat vorerst hauptsächlich mit der liquidierenden Militärverwaltung befasst und eine ansehnliche Reihe von Abbaumaßnahmen eingeleitet, an deren Ausführung es jedoch noch mangle. Wenn es auch klar sei, dass diese Angelegenheiten insbesondere die größeren, wie zum Beispiel die Vereinfachung des Militärrechnungswesens oder die Auslösung der Marinesektion und des Ministeriums für Landesverteidigung bei Eingliederung in das liquidierende Kriegsministerium eine gewisse Zeit erfordern, so habe das Liquidierungsinspektorat doch auch die Erfahrung gemacht, dass sich Widerstände der zur Durchführung berufenen leitenden Stellen dagegen geltend machen.</p>
+                  <p>Da ein Weiterarbeiten keinen Zweck habe, bevor nicht die Gewähr geboten sei, dass die aufgestellten Forderungen des Liquidierungsinspektorates auch voll beachtet werden, habe sich das Liquidierungsinspektorat bei dreien der vor geraumer Zeit angeregten Angelegenheiten, welche <pb facs="krp-0180_r-0004"/>durchwegs das liquidierende Kriegsministerium betreffen, von der Art der Ausführung überzeugt.</p>
+                  <p>Am 21. Februar d. J. sei die sofortige Auflösung der Abteilung „Armee im Felde“ gefordert worden. Der Leiter des liquidierenden Kriegsministeriums habe am 17. März verfügt, dass diese ziemlich große Abteilung vorerst noch zu übersiedeln habe und dass nachher erst noch Anträge wegen besserer Zusammenziehung ihrer Gruppen zu erstatten seien. Trotz wiederholter Verhandlungen und sogar persönlicher Intervention beim Staatssekretär für Finanzen sei die Abteilung am 23. April tatsächlich übersiedelt und bestehe nach wie vor.</p>
+                  <p>Am 10. März d. J. sei verlangt worden, dass die Abteilung „Kriegsliquidatur“ aufzulösen und ihre geringfügigen Agenden an die allgemeine Liquidatur des liquidierenden Kriegsministeriums abzugeben seien. Die Auflösung werde allerdings durchgeführt, die Weiterführung der restlichen Arbeiten sei aber kurzerhand an das Staatsamt für Heer[es]wesen abgeschoben worden, obwohl es sich um eine die Flüssigmachung von Familiengebühren für Kriegsgefangene betreffende, also reine Liquidierungsangelegenheit handle, welche mit der neuen <pb facs="krp-0180_r-0005"/>Wehrmacht nichts zu tun habe.</p>
+                  <p>Am 20. März d. J. sei die Forderung gestellt worden, das Fliegerarsenal gründlich abzubauen und dessen Unterkünfte im Arsenale, welche für ein Sanitätsmaterialdepot des Staatsamtes für soziale Verwaltung (Volksgesundheitsamt) seit längerem schon dringend benötigt werden, bis Ende März zu räumen. Es sei wohl ein gewisser Abbau verfügt, die Unterkunft aber noch nicht geräumt worden.</p>
+                  <p>Das Liquidierungsinspektorat stelle seine Forderungen stets aufgrund persönlicher Erhebungen an Ort und Stelle und motiviere sie sachlich und ausführlich. Es sei natürlich jederzeit bereit, sachliche Gegenvorstellungen entgegenzunehmen und seine Forderungen aufzugeben oder abzuändern, wenn nachgewiesen würde, dass sie unzweckmäßig sind. Das Liquidierungsinspektorat könne es aber nicht hinnehmen, dass seinen Forderungen ohne stichhältige Gegengründe gar nicht oder in unrichtiger und ausweichender Art entsprochen werde. Es könne die ihm von der Nationalversammlung übertragene schwierige Aufgabe nur dann erfüllen, wenn auf seine Absichten von den maßgebenden Stellen willig eingegangen werde und wenn seine Forderungen auch voll respektiert werden.</p>
+                  <p><pb facs="krp-0180_r-0006"/>Das Liquidierungsinspektorat sehe sich daher genötigt, den Kabinettsrat um entsprechende Einflussnahme zu bitten.</p>
+                  <p>Es erblicke den Grund für den unbefriedigenden Erfolg seiner bisherigen Bemühungen nicht nur in einem offenkundigen Widerstreben gegen sein vielleicht unangenehm empfundenes Eingreifen, sondern mehr noch in dem Umstande, dass der vom Kabinettsrate nach dem Abgange des Ministers a. D. Homann provisorisch mit der Leitung des liquidierenden Kriegsministeriums betraute Chef der ökonomischen Sektion dieser liquidierenden Zentralstelle, Oberfinanzrat Dr. Hornik, der ja wahrscheinlich für den eigentlichen finanziellen Teil seiner Aufgabe besonders qualifiziert sei und sich ihm naturgemäß auch hauptsächlich widmet, für die übrige schwierige Leitung eines so großen und ihm im Wesen fremden Ressorts, wie es die gesamte liquidierende Militärverwaltung (einschließlich Marine und Landwehr) sei, nicht die nötige Zeit finde, umso mehr als er auch nicht die nötigen organisatorischen und sonstigen Fachkenntnisse besitzen könne.</p>
+                  <p>Liquidierungsinspektor Abgeordneter <hi rend="#letterspaced">Buchinger</hi> schließt sich den Ausführungen des Vorredners vollinhaltlich an.</p>
+                  <p><pb facs="krp-0180_r-0007"/>Präsident <hi rend="#letterspaced">Seitz</hi> unterstützt nachdrücklichst die Wünsche der Liquidierungsinspektoren und weist darauf hin, dass die Nationalversammlung an die beiden von ihr gewählten Funktionäre eine überaus bedeutsame Anforderung gestellt habe, nämlich die Liquidierung ohne Rücksicht auf theoretische und bürokratische Einwendungen raschest zu beendigen. Er richte an die Staatsregierung das dringende Ersuchen, die Liquidierungsinspektoren in der Erfüllung dieser ihrer Aufgabe wirksam zu unterstützen und insbesondere allen Organen die Weisung zu erteilen, die Arbeiten des Inspektorates tunlichst zu erleichtern und seinen Forderungen Folge zu leisten.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Reisch</hi> gibt seinem Befremden darüber Ausdruck, dass die vorgebrachten Beschwerden ihm als dem verantwortlichen Chef des Militärliquidierungsamtes nicht vorher zur Kenntnis gebracht worden seien. Er werde stets bereit sein, die Tätigkeit der Liquidierungsinspektoren zu fördern und zu unterstützen, müsse jedoch darauf bestehen, dass ihm Gelegenheit gegeben werde, rechtzeitig die Stichhältigkeit der Beschwerden überprüfen zu können.</p>
+                  <p><pb facs="krp-0180_r-0008"/>Nach einer eingehenden Darstellung der einschlägigen Verhältnisse durch Sektionschef Dr. <hi rend="#letterspaced">Grimm</hi> vertagt der Kabinettsrat über Antrag des <hi rend="#letterspaced">Vorsitzenden</hi> diese Angelegenheit.</p>
+               </div>
+               <div type="top" xml:id="krp-0180_top02">
+                  <head>
+                     <label>
+                        <num n="2">2.</num>
+                        <seg>Vollzugsanweisung, betreffend die Verwaltung der ehemals hofärarischen Theater.</seg>
+                     </label>
+                  </head>
+                  <p>Unterstaatssekretär <hi rend="#letterspaced">Glöckel</hi> unterbreitet dem Kabinettsrat den umgearbeiteten Entwurf einer Vollzugsanweisung, betreffend die Verwaltung der ehemals hofärarischen Theater.</p>
+                  <p>Vizekanzler <hi rend="#letterspaced">Fink</hi> vertritt den Standpunkt, dass zunächst das Kuratorium des Kriegsgeschädigtenfonds einzuberufen sei, um ihm Gelegenheit zur Stellungnahme zur Frage der Ausscheidung zu geben. Er beantrage daher die Vertagung der weiteren Beratung dieser Angelegenheit.</p>
+                  <p>Demgegenüber bemerkt der <hi rend="#letterspaced">Vorsitzende</hi>, dass das Kuratorium mit der Ausscheidungsfrage nicht befasst werden könne, da die Ausscheidung nach dem Gesetze vom 18. Dezember 1919, StGBl. Nr. 573, in die Kompetenz der Staatsregierung falle. Erst nach vollzogener Ausscheidung könne das Kuratorium zur Verwaltung der hienach dem Kriegsgeschädigtenfonds erübrigenden Vermögenschaften herangezogen werden.</p>
+                  <p><pb facs="krp-0180_r-0009"/>Die Staatssekretäre <hi rend="#letterspaced">Hanusch</hi> und <hi rend="#letterspaced">Eldersch</hi>, Unterstaatssekretar Dr. <hi rend="#letterspaced">Eisler</hi> sowie der Präsident des Kriegsgeschädigtenfonds Dr. <hi rend="#letterspaced">Harpner</hi> pflichten dieser Auffassung bei.</p>
+                  <p>Präsident <hi rend="#letterspaced">Seitz</hi> hält gleichfalls dafür, dass vorerst klargestellt werden müsse, was dem Kriegsgeschädigtenfonds zugehöre. Davon werde die Lösung vieler weiterer Fragen abhängen, darunter z. B. auch die Feststellung der Repräsentationsbehelfe des Präsidenten. Redner habe zwar hierauf grundsätzlich verzichtet, da er wünsche mit repräsentativen Aufgaben so wenig als möglich befasst zu werden, während die ihm beigegebene Kanzlei gelegentlich eines diesfälligen Schriftenwechsels mit der Staatskanzlei in Wahrung der dauernden Rechte der Präsidentschaft darauf aufmerksam machen zu müssen glaubte, dass künftighin kein Oberhaupt unserer Republik seinen Pflichten in repräsentativer Hinsicht beispielsweise beim Empfange anderer Staatsoberhäupter u. dgl. werde genügen können, wenn es nicht über die hiezu notwendigen Behelfe verfüge.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Mayr</hi> gibt der Anschauung Ausdruck, dass es sich mit Rücksicht auf die Größe der hier in Be<pb facs="krp-0180_r-0010"/>tracht kommenden Vermögenschaften und die zumindest ideelle Mitbeteiligung des Kriegsgeschädigtenfonds – schon um nachträgliche Rekriminationen zu vermeiden – doch empfehlen dürfte, das Kuratorium vorher zu hören. Das Entscheidungsrecht der Staatsregierung in der Frage der Ausscheidungen hätte selbstverständlich unangetastet zu bleiben.</p>
+                  <p>Da eine Einstimmigkeit in der Auffassung nicht zu erzielen ist, vertagt der <hi rend="#letterspaced">Vorsitzende</hi> die Verhandlung über diesen Gegenstand.</p>
+               </div>
+               <div type="top" xml:id="krp-0180_top03">
+                  <head>
+                     <label>
+                        <num n="3">3.</num>
+                        <seg>Verhandlungen mit der tschechoslowakischen Regierung.</seg>
+                     </label>
+                  </head>
+                  <p>Sektionsrat Dr. <hi rend="#letterspaced">Froehlich</hi> berichtet als Vorsitzender der zur Bereinigung der staatsbürgerrechtlichen- und Minderheitsschutzfragen eingesetzten zwischenstaatlichen Kommission über das Ergebnis der in der Zeit vom 4.–8. Mai in Prag stattgefundenen Verhandlungen mit der tschechoslowakischen Regierung.</p>
+                  <p>Der Bericht, die darüber abgeführte Debatte sowie der Beschluss des Kabinettsrates tragen streng vertraulichen Charakter und sind in einem geheimen Anhang zu diesem Protokolle niedergelegt.</p>
+                  <p><pb facs="krp-0180_r-0011"/></p>
+               </div>
+               <div type="top" xml:id="krp-0180_top04">
+                  <head>
+                     <label>
+                        <num n="4">4.</num>
+                        <seg>Beschlüsse der paritätischen Lohnkommission.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Paul</hi> bringt dem Kabinettsrat die von der paritätischen Lohnkommission kürzlich gefassten, in der Beilage zum Protokolle Nr. 179 verzeichneten Beschlüsse zur Kenntnis und führt aus, es seien ihm in den letzten Tagen aus allen Direktionsbezirken telegrafische Nachrichten des Inhalts zugekommen, dass die Bediensteten nicht geneigt seien, den Dienst weiter zu versehen, wenn ihnen nicht bezüglich der gleitenden Zulage sowie der Einreihung in die Ortsklassen Zugeständnisse gemacht werden. Redner schlage nach gepflogenem Einvernehmen mit dem Staatssekretär für Finanzen vor, dass in der morgigen Sitzung der Nationalversammlung ein Gesetzentwurf eingebracht werde, wonach der § 7 al. 2 des Besoldungsübergangsgesetzes in der Fassung des Nachtrages zum Besoldungsübergangsgesetze nunmehr zu lauten habe:</p>
+                  <p>„Die Staatsregierung wird ermächtigt, einzelne gegenwärtig in die Bezugsklasse III eingereihte Orte mit besonderen Teuerungsverhältnissen nach Maßgabe dieser Verhältnisse in die Bezugsklasse II oder in die Zwischenklasse II a mit einem Ortszuschlag von 55 vom 100 und einzelne gegenwärtig in die Bezugsklasse II einge<pb facs="krp-0180_r-0012"/>reihte Orte, die ganz besondere Teuerungsverhältnisse aufweisen, in die Zwischenklasse I a mit einem Ortszuschlag von 85 vom 100 einzureihen.“</p>
+                  <p>Ferner wäre in derselben Gesetzesvorlage das Ausmaß der gleitenden Zulage mit den für die gleitende Zulage im Monate April d. J. ermittelten Beträgen vermehrt um einen Zuschuss von 75 % festzusetzen.</p>
+                  <p>Was die übrigen Beschlüsse der paritätischen Lohnkommission anbelange, so könnte hiezu in einem späteren Zeitpunkt Stellung genommen werden, und zwar erschiene es ihm am empfehlenswertesten, wenn der Staatskanzler persönlich der paritätischen Lohnkommission die Auffassung der Staatsregierung bekanntgeben würde.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Reisch</hi> verweist darauf, dass der Mehraufwand, der sich aus der Erhöhung der gleitenden Zulage um 75 % ergibt, sich auf jährlich ungefähr 574 Millionen [K] belaufen werde, soferne – was unbedingt zu verlangen sei – diese Erhöhung auf die aktiven Staatsangestellten beschränkt bleibe.</p>
+                  <p>Unterstaatssekretär <hi rend="#letterspaced">Miklas</hi> beantragt, in der Gesetzesvorlage den Staatssekretär für Inneres und Unterricht zu ermächtigen, bei Vorhandensein gleicher <pb facs="krp-0180_r-0013"/>Voraussetzungen auch einzelne Seelsorgestationen in höhere Mindesteinkommensstufen einzureihen.</p>
+                  <p>Nachdem noch der <hi rend="#letterspaced">Vorsitzende</hi> die Bedeckungsfrage erörtert hatte, stimmt der Kabinettsrat der Einbringung der Gesetzesvorlage in der vorgeschlagenen Fassung mit der vom Unterstaatssekretär Miklas beantragten Ergänzung zu.</p>
+               </div>
+               <div type="top" xml:id="krp-0180_top05">
+                  <head>
+                     <label>
+                        <num n="5">5.</num>
+                        <seg>Forderungen der Gerichtskanzleiangestellten.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Ramek</hi> teilt mit, dass die nicht restlose Erfüllung der Forderungen der Gerichtskanzleiangestellten voraussichtlich zu einem Streik einzelner Gruppen dieser Angestellten führen werde. Die Entscheidung werde in einer am 14. d. M. stattfindenden Versammlung fallen. Es verlaute jedoch, dass die in den Ländern bestehenden Organisationen keineswegs gewillt seien, sich ohne weiteres dem Diktate des in Wien bestehenden Aktionskomitees zu fügen. Redner beabsichtige, in einer in den morgigen Tagesblättern zu veröffentlichenden Verlautbarung die Zugeständnisse, die den Gerichtskanzleibeamten gemacht werden sollen, zur allgemeinen Kenntnis zu <pb facs="krp-0180_r-0014"/>bringen und darauf hinzuweisen, dass im Falle eines Streiks die Stilllegung eines Teiles der gerichtlichen Tätigkeit in Erwägung gezogen werden müsste.</p>
+                  <p>Der Kabinettsrat stimmt diesem Vorhaben zu.</p>
+               </div>
+               <div type="top" xml:id="krp-0180_top06">
+                  <head>
+                     <label>
+                        <num n="6">6.</num>
+                        <seg>Gesetzentwurf, betreffend den Gewerbeantritt durch berufswechselnde Militärpersonen..</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Ing. <hi rend="#letterspaced">Zerdik</hi> erbittet und erhält vom Kabinettsrate die Ermächtigung, den Entwurf eines Gesetzes, betreffend den Gewerbeantritt durch berufswechselnde Militärpersonen, in der Nationalversammlung einbringen zu dürfen.</p>
+               </div>
+               <div type="top" xml:id="krp-0180_top07">
+                  <head>
+                     <label>
+                        <num n="7">7.</num>
+                        <seg>Bekleidung der in Anstalten untergebrachten Kriegsbeschädigten.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Hanusch</hi> verweist auf den Beschluss des Kabinettsrates vom 30. Dezember 1919, wonach die im damaligen Zeitpunkte in den Heilanstalten für Kriegsbeschädigte befindlichen Invaliden, welche vor dem 1. August 1919 mit einer unentgeltlichen Bekleidung aufgrund der Vollzugsanweisung des Staatsamtes für Heer[es]wesen vom 22. Juli 1919, StGBl. Nr. 414, beteilt wurden, neuerlich aus den <pb facs="krp-0180_r-0015"/>Mitteln der Heimkehrerbekleidungsaktion mit einer Zivilkleidung zu versehen seien.</p>
+                  <p>Mit dem weiteren Beschlusse vom 4. Februar l. J. habe der Kabinettsrat genehmigt, dass diese Begünstigung auch auf die für Kriegsbeschädigte, deren Heilbehandlung bereits abgeschlossen ist, bestehenden Anstalten auszudehnen sei.</p>
+                  <p>Im Hinblicke auf den seit den bezogenen Kabinettsratsbeschlüssen verflossenen Zeitraum erscheine es, da die einschlägigen Verhältnisse seither in keiner Richtung eine Änderung erfahren haben, unerlässlich, die damals gewährte Begünstigung auch auf solche Kriegsbeschädigte auszudehnen, welche später in Heilanstalten und andere der Kriegsbeschädigtenfürsorge dienende Anstalten aufgenommen wurden, nicht minder in Ausnahmsfällen aber auf jene Pfleglinge der bezeichneten Anstalten, welche, obwohl ihre erstmalige Beteilung aus der Heimkehrerbekleidungsaktion seit dem 1. August 1919 erfolgt ist, infolge der durch die Abnützung eingetretenen Unbrauchbarkeit dieses meist einzigen Gewandes einer neuerlichen Beteilung dringend bedürftig erscheinen.</p>
+                  <p><pb facs="krp-0180_r-0016"/>Hiebei wären nachstehende Bedingungen einzuhalten:</p>
+                  <list>
+                     <item n="1"><label>1.)</label> Von der neuerlichen Beteilung mit Zivilkleidern sind jene Anspruchswerber auszuschließen, welche bereits gemäß den Kabinettsratsbeschlüssen vom 30. Dezember 1919 und 4. Februar 1920 Anspruch auf eine zweitmalige Beteilung haben.</item>
+                     <item n="2"><label>2.)</label> Es handelt sich lediglich um eine interne Ermächtigung des Staatsamtes für soziale Verwaltung (Kriegsbeschädigtensektion und Volksgesundheitsamt), die außer dem Kriegsgefangenen- und Zivilinterniertenamte keiner anderen Stelle zur Kenntnis gebracht wird.</item>
+                     <item n="3"><label>3.)</label> Als unbedingte Voraussetzung der Berücksichtigungswürdigkeit soll einerseits die Bedürftigkeit des Anspruchswerbers im Sinne der Heimkehrerbekleidungsvorschrift § 2, anderseits die außer jeden Zweifel gestellte Unbrauchbarkeit seines Anzuges gelten.</item>
+                     <item n="4"><label>4.)</label> Seit der erstmaligen Beteilung aufgrund der Heimkehrerbekleidungsvorschrift müssen mindestens sechs Monate verstrichen sein.</item>
+                     <item n="5"><label>5.)</label> Zur tunlichsten Hintanhaltung von Missbräuchen soll die neuerliche Beteilung grundsätzlich gegen Einziehung des unbrauchbar gewordenen Anzuges erfolgen.</item>
+                  </list>
+                  <p><pb facs="krp-0180_r-0017"/>Von diesem Grundsatze darf nur ausnahmsweise dann abgegangen werden, wenn die Einziehung des alten Anzuges mit Rücksicht auf den Gesundheitszustand des Bittstellers (Schwerinvalider) oder im Hinblicke auf berücksichtigungswürdige Umstände untunlich erscheint.</p>
+                  <list>
+                     <item n="1"><label>6.)</label> Schaffung ausreichender Kautelen zur Vermeidung einer Doppelbeteilung im Zuge der zweiten Bekleidungsaktion.</item>
+                     <item n="2"><label>7.)</label> Einschränkung der Aktion auf höchstens 1.000 Anspruchswerber.</item>
+                  </list>
+                  <p>Nach dem Antrage des sprechenden Staatssekretärs genehmigt der Kabinettsrat diese Aktion unter den vorerwähnten Bedingungen.</p>
+               </div>
+               <div type="top" xml:id="krp-0180_top08">
+                  <head>
+                     <label>
+                        <num n="8">8.</num>
+                        <seg>Beschluss der vorläufigen Landesversammlung in Kärnten, betreffend die Bewilligung eines Anlehens von 6 Millionen K durch die Stadtgemeinde Klagenfurt.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Eldersch</hi> teilt mit, dass die Stadtgemeinde Klagenfurt mit Gemeinderatsbeschluss vom 10. Februar d. J. zur Sanierung der Landesfinanzen die Aufnahme eines Darlehens von 6 Millionen K bei der Kriegskreditanstalt für das südliche Kriegsgebiet in Klagenfurt beschlossen habe. Das Darlehen diene zur Abstoßung hochverzinslicher <pb facs="krp-0180_r-0018"/>Schulden im Betrage von 4.191.807 K (darunter Bankschulden von 3.400.000 K), der restliche Betrag soll zur Deckung von außerordentlichen Ausgaben der laufenden Gebarung verwendet werden. Die Rückzahlung werde in 15 Jahresraten, beginnend nach Ablauf des fünften Jahres nach Friedensschluss mit Italien erfolgen.</p>
+                  <p>Die Landesversammlung in Kärnten habe mit Beschluss vom 11. März d. J. die Aufnahme des Darlehens bewilligt und den Beschluss gemäß § 51 Abs. 2 der Gemeindeordnung für die Landeshauptstadt Klagenfurt der Staatsregierung zur Genehmigung vorgelegt.</p>
+                  <p>Das Staatsamt für Finanzen erhebe vom Standpunkte der staatlichen Finanzverwaltung gegen die Anleihe keine Einwendung.</p>
+                  <p>Der sprechende Staatssekretär stelle daher den Antrag, der Kabinettsrat wolle den in Rede stehenden Beschluss der vorläufigen Landesversammlung in Kärnten genehmigen.</p>
+                  <p>Der Kabinettsrat beschließt im Sinne des gestellten Antrages.</p>
+                  <p><pb facs="krp-0180_r-0019"/></p>
+               </div>
+               <div type="top" xml:id="krp-0180_top09">
+                  <head>
+                     <label>
+                        <num n="9">9.</num>
+                        <seg>III. Nachtrag zum Finanzgesetz für das Verwaltungsjahr 1919/20.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Reisch</hi> erbittet und erhält vom Kabinettsrate die Ermächtigung, einen III. Nachtrag zum Entwurf des Finanzgesetzes für das Verwaltungsjahr 1919/20 in der Nationalversammlung einbringen zu dürfen.</p>
+               </div>
+               <div type="top" xml:id="krp-0180_top10">
+                  <head>
+                     <label>
+                        <num n="10">10.</num>
+                        <seg>Sicherstellung der Mittel zur Aufbesserung der Bezüge und Pensionen der Organe evangelischer Kirchengemeinden und Schulen und zur Gewährung von Teuerungszuwendungen an diese Organe und deren Hinterbliebene.</seg>
+                     </label>
+                  </head>
+                  <p>Unterstaatssekretär <hi rend="#letterspaced">Miklas</hi> führt aus, dass im VI. Hauptstücke des Gesetzes vom 18. März 1920, StGBl. Nr. 132, für Aufbesserung der Pensionen der katholischen Seelsorgegeistlichkeit sowie für die Gewährung von Teuerungszuwendungen, insolange, als die Staatsangestellten Teuerungszulagen erhalten, und zwar mit Rechtswirksamkeit vom 1. Jänner 1920, Vorsorge getroffen worden sei.</p>
+                  <p>Mit dem weiteren Gesetze vom 22. März 1920, StGBl. Nr. 147, seien Zuschläge zu dem Minimaleinkommen und zu den Ruhegenüssen der katholischen Seelsorger mit Rechtswirksamkeit vom 1. März 1920 festgesetzt worden, eine Regelung, welche sich als Analogie zu dem Gesetze vom 22. März 1920, StGBl. Nr. 134, über die Ergänzung des Besoldungsübergangsgesetzes der Staatsangestellten darstelle.</p>
+                  <p><pb facs="krp-0180_r-0020"/>Die bisherigen Maßnahmen dieser Art in Bezug auf die katholische Kirche hätten stets auch eine parallele Aktion für die evangelische Seelsorgegeistlichkeit und die im Dienste evangelischer Gemeinden stehenden Lehrer und deren Hinterbliebenen ausgelöst; so sei insbesondere anlässlich des Gesetzes vom 18. Dezember 1919, StGBl. Nr. 596, über die Kongruaergänzung der katholischen Geistlichkeit aufgrund eines Beschlusses des Kabinettsrates vom 12. Dezember 1919 für den analogen Zweck den evangelischen Gemeinden ein Betrag von jährlich 350.000 K zur Verfügung gestellt worden.</p>
+                  <p>Für die evangelische Kirche, deren materielle Dotierung aus staatlichen Mitteln sich auf den § 20 des Kaiserlichen Patentes vom 11. April 1861, RGBl. Nr. 41, gründe, kämen die Umstände, welche die eingangs erwähnten Gesetze zeitigten, in ebenso schwerwiegendem Maße in Betracht, wie sie sich hinsichtlich des katholischen Klerus geltend machen, und es sei nur ein Gebot der Billigkeit, dass in diesem Zusammenhang gleichwie in früheren analogen Fällen auch für die Aufbesserung der Bezüge und Pensionen der Funktionäre der evangelischen Kirche sowie <pb facs="krp-0180_r-0021"/>für die Sicherung von Teuerungsmaßnahmen für diese Funktionäre vorgesorgt werde.</p>
+                  <p>Nach dem Verhältnisse der letzten Zuwendungen für katholische und für evangelische Kultuszwecke wäre in Ansehung des durch das erstbezogene Gesetz bedingten Mehraufwandes für die katholische Kirche jener für evangelische Kultuszwecke mit jährlich 50.000 K zur Ausbesserung der Ruhe- und Versorgungsgenüsse und derzeit mit jährlich 790.000 K zur Ermöglichung von Teuerungsmaßnahmen festzusetzen, wobei zu bemerken sei, dass letzterer Betrag in gleichem Verhältnisse wie die analogen Zuwendungen für die Staatsangestellten in Hinkunft einer entsprechenden Steigerung eventuell einem Abbau unterworfen wäre. Für die Bereitstellung des sich nach Analogie des Gesetzes vom 22. März 1920, StGBl. Nr. 147, betreffend die Einkommenszuschläge der katholischen Geistlichkeit, ergebenden Aufwandes für die evangelische Kirche erscheine ein weiterer Betrag von 300.000 K jährlich erforderlich. Die bezüglichen Mittel würden pro 1920/21 im Voranschlag eingestellt und pro 1919/20 in den Nachtrag zum Präliminar aufgenommen werden. Das Staatsamt für Finanzen habe dieser Maßnahme zugestimmt.</p>
+                  <p><pb facs="krp-0180_r-0022"/>Der sprechende Unterstaatssekretär stelle sohin den Antrag, der Kabinettsrat wolle genehmigen, dass diese Beträge für die bezeichneten Zwecke zur Verfügung gestellt werden, und zwar das vorbezifferte Erfordernis für Teuerungsmaßnahmen unter den beantragten Modalitäten und nur für insolange, als die Staatsangestellten Teuerungszulagen erhalten.</p>
+                  <p>Der Kabinettsrat erteilt die erbetene Genehmigung.</p>
+                  <p/>
+               </div>
+            </div>
+            <div type="anhaenge">
+               <p><pb facs="krp-0180_a01-0001"/>Streng vertraulicher Anhang zum Kabinettsprotokoll Nr. 180 vom 11. Mai 1920.</p>
+               <div n="1">
+                  <head>Verhandlungen mit der tschechoslowakischen Regierung über Staatsbürgerschaft und Minderheitsschutz.</head>
+                  <div type="a01_protokoll">
+                     <p>Sektionsrat Dr. <hi rend="#letterspaced">Froehlich</hi> erstattet als Vorsitzender der zur Bereinigung der staatsbürgerrechtlichen und Minderheitsschutzfragen eingesetzten zwischenstaatlichen Kommission den beiliegenden Bericht über das Ergebnis der in der Zeit vom 4. bis 8. Mai in Prag stattgefundenen Verhandlungen mit der tschechoslowakischen Regierung.</p>
+                     <p>In der sich hierüber entwickelnden Debatte, an welcher sich außer den <hi rend="#letterspaced">Vorsitzenden</hi> noch die Staatssekretäre Dr. <hi rend="#letterspaced">Loewenfeld-Russ</hi> und Ing. <hi rend="#letterspaced">Zerdik</hi> sowie Unterstaatssekretär <hi rend="#letterspaced">Miklas</hi> beteiligten, wurde insbesondere die Frage des Junktims eingehend erörtert und vom Vorsitzenden hervorgehoben, dass bei den seinerzeitigen Verhandlungen in Prag allerdings festgesetzt wurde, dass die gesamten Verhandlungen ein Ganzes zu bilden haben. Dies könne aber nicht dahin aufgefasst werden, dass alle später auftauchenden politischen Fragen mit den ökonomischen Fragen in ein Junktim gebracht werden <pb facs="krp-0180_a01-0002"/>können.</p>
+                     <p>Der Kabinettsrat gelangt zu der Auffassung, dass ein Bedürfnis nach einem Junktim nicht anerkannt und ein solches als unzweckmäßig bezeichnet wird.</p>
+                     <p>Unterstaatssekretär Dr. <hi rend="#letterspaced">Waiss</hi> erklärt namens des Staatsamtes für Heer[es]wesen, dass es dem Kompromisse ,,10. September 1919 oder Termin zwischen 28. Oktober 1918 und 10. September 1919“ (siehe Seite 5 der Beilage ) nur dann zustimmen könne, wenn die Vorsorge getroffen wird, dass alle unter diese Bestimmung der tschechoslowakischen Regierung fallenden Berufsmilitärpersonen, die in der Zeit nach dem festgesetzten Stichtag in der Republik Österreich das Heimatsrecht erworben haben, im Falle ihrer Option zur Republik auch von dieser Versorgungsgebühren erhalten.</p>
+                     <p>Der Kabinettsrat beschließt ferners, dass die Detailinstruktionen über die offen gebliebenen Fragen den hiesigen Unterhändlern von den beteiligten Staatssekretären zu erteilen sein werden und ermächtigt die Unterhändler zu dem entsprechenden Abschluss des Vertrages, dessen Genehmigung verfassungsgemäß durch den Kabinettsrat zu erfolgen hat.</p>
+                     <p/>
+                  </div>
+               </div>
+            </div>
+            <div type="stenogramme">
+               <div n="1">
+                  <head>[KRP 180, 11. Mai 1920, Stenogramm]</head>
+                  <p><pb facs="krp-0180_s01-0001"/>180., 11. /5.</p>
+                  <p>[Zugezogen:] Buchinger, Smitka, Ziller, Seitz, Grimm, Harpner, Froehlich, Oppenheim, Heinz.</p>
+                  <p>Diätengesetz!!</p>
+                  <p>1. Renner: [Ich möchte] mitteilen, dass dem Präsidenten Antrag gestellt [wird/wurde], Staatssekretär Reisch zu reaktivieren als Sektionschef und ihn in die 2. Rangsklasse zu versetzen.</p>
+                  <p>2. [Renner]: [Ich habe mir] über die Autoangelegenheiten vom Polizeipräsidenten Bericht erstatten lassen. Die Konzentration der Autos scheint sich sehr schwierig zu gestalten. </p>
+                  <p>[Erforderlich wäre ein] eigener Garagenmeister und die Kosten [wären] sehr erheblich. Aus dem Bericht wurde entnommen, dass sehr viele Wagen von den Staatsämtern geführt werden, allein </p>
+                  <p>96 Personenwagen, außerdem [eine] große Zahl von Lastautos (130). [Ich] bitte die Herren Staatssekretäre, in den Staatsämtern Nachschau zu halten und zu tun, was möglich ist, </p>
+                  <p>um sie zu verringern.</p>
+                  <p>Reisch: [Ich] habe [ein] Rundschreiben erlassen wegen der Budgetierung der Autokosten und [ersucht], für jedes Auto die gesetzliche Grundlage seiner Verwendung nachzuweisen, aufgrund </p>
+                  <p>einer Beanstandung des Obersten Rechnungshofes.</p>
+                  <p>Renner: Die Vorbereitungen sind noch nicht so [weit gediehen], dass man jetzt schon Verfügungen treffen könnte. Die Chauffeure müssen unter eine gemeinsame Kontrolle gestellt werden. Es besteht [aber] die Gefahr, dass dann eine </p>
+                  <p>eigene Autobürokratie dazu kommt.</p>
+                  <p>Zerdik: Der Schleichhandel ist unmöglich, wenn man in jedem Staatsamt kontrollieren lässt.</p>
+                  <p>Glöckel: [Eine] gemeinsame Reparaturwerkstätte sollte eingeführt werden.</p>
+                  <p>Renner: Auch das muss erst studiert werden.</p>
+                  <p>3. Reisch: Lok[alitäten]frage der österreichisch-ungarischen Bank.</p>
+                  <p>Die Notendruckerei [ist] derzeit ungeheuer beengt und lebensgefährlich untergebracht, da sie mit leichtentzündlichen Stoffen zu arbeiten hat. Kürzlich [ist ein] Brand ausgebrochen. Der Gouverneur</p>
+                  <p>und der Betriebsrat haben sich [daher bereits] wiederholt an die Regierung gewandt um Zuweisung anderer Lokale, die in der Nähe des Bankgebäudes gelegen sein müssten. In den letzten Tagen haben sich in der Herrengasse 23, in den </p>
+                  <p>Räumen des ehemals gemeinsamen Rechnungshofes, drei Zimmer und zwei Kabinette gefunden, die geeignet wären, aber zu klein sind. Die Kriegsdarlehenskasse [könnte aber] hinüber übersiedeln, wenn sie die unterhalb </p>
+                  <p>gelegenen Parterre-Räumlichkeiten bekommt (Kassenschränke). Dort [ist] derzeit ein Monturdepot der Post- und Telegraphendirektion.</p>
+                  <p>Zerdik: Die Gebäude sind [bereits] zugewiesen.</p>
+                  <p>4. Froehlich: -. [Renner]: Liquidierungskommission.</p>
+                  <p>Smitka: Rechnungsabteilung des alten Heeres. Liquidierungsamt aufzulösen möglich. Wir stellen nun den Antrag auf Auflösung. [Zur] Abteilung 'Armee im Feld' (erst nach dem Niederbruch errichtet). </p>
+                  <p>Auch die Auflösung dieser Abteilung haben wir verlangt [und mit] Hornik mündlich besprochen. [Wir haben] seit März [die Auflösung verlangt], [sie besteht] heute noch [und ist] übersiedelt in die Roßauer Kaserne. In den Dingen des militärischen Rechnungswesens </p>
+                  <p>ist Hornik nicht eingeweiht. [Zur] Frachtenverrechnungsabteilung in der Praterstraße. [Die] rechnen die Frachtbriefe nach aus der Kriegszeit (in der österreich[ischen] Linie, Verjährungsfrist). [Das Militärliquidierungsamt verlangt], </p>
+                  <p>man soll noch sechs Monate die Sache laufen lassen, um erst dann zu einem Urteil zu gelangen. Widerstand im Militärliquidierungsamt, der direkte Verkehr wurde uns nicht zugebilligt. </p>
+                  <p>Es müsste eine Form gefunden werden, damit unsere Arbeit auch praktischen Wert erhält. Wir können nur verlangen, dass etwas geschieht, durchführen oder erzwingen können wir diese Liquidierung nicht. </p>
+                  <p>Deshalb gehen wir an den Kabinettsrat.</p>
+                  <p>Seitz: Ich kann mich nur zum Interpreten der Wünsche der Herren Liquidierungsinspektoren machen. Das Parlament hat an die beiden Mitglieder eine sehr hohe Aufgabe gerichtet - die rascheste Beendigung dieser Liquidierung ist [ihnen] zum Ziel gesetzt. </p>
+                  <p>Die Regierung muss diese Herren unterstützen. Der Redner bittet dringend um Verfügungen durch Weisungen an alle Organe, ihre Arbeit so weit als möglich, zu erleichtern und an[zu]ordnen, dass ihren Weisung </p>
+                  <p>überall Folgschaft geleistet wird.</p>
+                  <p>Reisch: Warum ist die Beschwerde nicht an mich gelangt? Hier handelt [es] sich um [einen] Gegensatz zwischen Zivilen und Militärs. [Hornik] hat Hunderte von Millionen erspart, wir verfügen in ihm über einen Zivilisten, welcher über </p>
+                  <p>die militärischen Vorgänge die stärksten Einblicke hat. Die zwei Fragen scheinen mir nicht wichtig [genug] zu sein, um daraus Anklagen zu schmieden. Ein Apparat, der seit Jahren </p>
+                  <p>eingerostet ist, kann nicht sofort in Gang gebracht werden. Ich werde immer bereit sein, die Tätigkeit der Herren zu fördern und kann versichern, dass Hornik [weit] entfernt davon ist, </p>
+                  <p>Schwierigkeiten zu machen.</p>
+                  <p>Renner: Beschwerde wird nur geführt, dass in den Fällen, in welchen die Liq[uidierungsinspektoren] einen Abbau von Ämtern als [...] befunden haben, dieser Abbau frustriert wurde.</p>
+                  <p>Buchinger: Wir haben auch eine Verantwortung zu tragen.</p>
+                  <p>Grimm: Die Kompetenz wird übersehen. Hornik muss immer erst die Weisung des Reisch einziehen. Sein Bericht liegt seit 8. /4. im Staatsamt für Finanzen. </p>
+                  <p><pb facs="krp-0180_s01-0002"/>Wir werden in kürzester Zeit die Sache austragen. Kriegsliquidatur, 47 Personen; Fliegerarsenal - die Übersiedlung [ist] bereits vollzogen.</p>
+                  <p>Smitka: Wir waren am 17. /2. in der Abteilung der 'Armee im Feld'.</p>
+                  <p>Hanusch: [Die Agenda der] Unterhaltsbeiträge [ist] bereits in die Soziale Verwaltung eingegliedert (vier Personen).</p>
+                  <p>Renner: Heute keine Entscheidung. Der Herr Staatssekretär wird, wenn er es für wünschenswert hält, [Gelegenheit haben], hier im Kabinettrat Aufklärungen zu geben.</p>
+                  <p>Vertagt.</p>
+                  <p>5. Hoftheater. Glöckel</p>
+                  <p>Anstelle 'Intendant' "Generalsekretär der österreichischen Staatstheater".</p>
+                  <p>Fink: Wir stehen auf dem Standpunkt, dass man zunächst das Kur[atorium] einberufen müsste und diesem zunächst Gelegenheit zu geben [wäre], dazu Stellung zu nehmen. </p>
+                  <p>Wenn wir das hinausziehen, werden wir vom Parlament wieder beanstandet werden. Das Kur[atorium] hat mit dem Invalidenfonds etwas zu tun.</p>
+                  <p>Hanusch: Die Schwierigkeit liegt darin, dass wenn wir das dem Kur[atorium] vorher übergeben, die Invaliden, welche darin sitzen, verlangen werden, dass diese Projekt fällt </p>
+                  <p>wegen des entfallenden Reingewinns.</p>
+                  <p>Eldersch: Nach dem Gesetz hat die Regierung auszuscheiden, das restliche Vermögen hat das Kur[atorium] [zu] verwalten. Solange - die Vermögensbestände, die es zu verwalten hat, sind noch nicht festgestellt. </p>
+                  <p>Das muss vorerst geschehen.</p>
+                  <p>Fink: Ich stimme dem zu, dass das Kur[atorium] das Ausscheiden nicht verhindern kann. Ich halte es aber für ganz unrecht, dass man das so lange hinauszieht.</p>
+                  <p>Harpner: Das Kur[atorium] müsste ich einberufen. Der Kriegsgeschädigtenfonds wird konstituiert sobald die Vermögensbestände festgestellt sind, die ihm zukommen.</p>
+                  <p>Eisler: Das Kur[atorium] ist eine reine Verwaltung eines bestimmten Vermögensfonds. Es kann erst verwalten bis der Fonds da ist. Dieser muss erst geschaffen werden und zwar durch die Ausscheidung </p>
+                  <p>aller übrigen Vermögensmassen.</p>
+                  <p>Seitz: Es fragt sich, dass man zuerst klarstellt, was der Kriegsgeschädigtenfonds ist und dann den Fond verwalten lässt oder ob man den Fonds einsetzt und sich dann mit diesem auseinandersetzt.</p>
+                  <p>Zuschrift an die Staatskanzlei: Ich [werde], solange ich Präsident bin, auf alle diese Repräsentationsbehelfe verzichten, weil es mir umso lieber ist, je weniger ich mit repräs[entativen] Aufgaben </p>
+                  <p>befasst werde. Dagegen hat meine Kanzlei in Berufung [auf] die dauernden Rechte der Präsidentschaft darauf aufmerksam gemacht, dass kein Präsident </p>
+                  <p>wird funktionieren können, wenn er nicht die notwendigsten Behelfe der Repräsentation hat.</p>
+                  <p>Zerdik: Bei der Wiener Messe muss ich auf die sachlichen Schwierigkeiten hinweisen. Dann könnte zu Weihnachten nichts mehr geschehen.</p>
+                  <p>Glöckel: Jede Verzögerung bedeutet für uns Tag für Tag einen außerordentlichen Schaden. Niemand identifiziert sich heute mit dem Theater. Ich habe durch Wochen hindurch mich </p>
+                  <p>mit der Sache befassen müssen. Das sind unhaltbare Zustände. Hier kommen ganz außerordentliche Werte in Frage, nicht nur materielle, sondern auch ideelle.</p>
+                  <p>Mayr: Mir kommt es vor, da es sich um große Vermögensobjekte handelt, [dass es angebracht wäre], dass man das Kur[atorium], weil es sich um eine wenigstens ideelle Mitbeteiligung handelt- [dass man] seine Meinung </p>
+                  <p>hört. Es wird nachher an Vorwürfen nicht fehlen bei der Empfindlichkeit der Kriegsbeschädigten. Wenigstens das Statut und die Bestellung des Intendanten [sind] etwas, [das] gründlich zu überlegen [wäre].</p>
+                  <p>Vertagt.</p>
+                  <p>6. Froehlich: Streng vertraulich.</p>
+                  <p>Renner: Es interessiert uns die Frage, von wem aus die Detailinstruktionen gegeben werden? (Staatsämter für Inneres und Finanzen). Frage der Option (soziale Verwaltung). </p>
+                  <p>Schulfragen (Unterrichtsamt mit der Gemeinde Wien).</p>
+                  <p>Eine Frage von allgemeiner Wichtigkeit [ist], ob wir zulassen sollen, dass zwischen den ökon[omischen] und den politischen Verhandlungen ein Junktim hergestellt werden soll? </p>
+                  <p>In Prag wurde von mir seinerzeit festgestellt, dass diese Verhandlungen ein Ganzes bilden sollen. Nach meiner Auffassung wäre [aber] der Gedanke </p>
+                  <p>eines Junktims zu bekämpfen.</p>
+                  <p>Loewenfeld-Ruß: Die Tsch[echoslowaken] erfüllen ihre Verpflichtungen bezüglich des Zuckers gar nicht. Wir haben noch ca. 1.000 Waggons Zucker Rückstand.</p>
+                  <p>[Renner]: Froehlich wird sich alle Rückstände bei den Staatsämtern erheben und bei den Verhandlungen das zur Sprache bringen.</p>
+                  <p>Waiß: Beilagen.</p>
+                  <p>Renner: Bis Samstag müssen alle Staatsämter ihre Instruktionen abgegeben haben.</p>
+                  <p><pb facs="krp-0180_s01-0003"/>Miklas: Politische und kulturelle Forderungen soll man nicht in ein Junktim bringen. Das eine kann man nicht - hält man nicht ein und das andere kann man nicht mehr </p>
+                  <p>zurücknehmen (Zucker und Heim[at]recht).</p>
+                  <p>Renner: Ein Bedürfnis nach einem Junktim wird also nicht anerkannt.</p>
+                  <p>Angenommen.</p>
+                  <p>7. Lohnkommission.</p>
+                  <p>Paul: In meinem Ressort [haben] sich in den letzten zwei Tagen außerordentlich beunruhigende Ereignisse - sich vollzogen. Die Bediensteten sind nicht geneigt, den Dienst länger zu versehen, </p>
+                  <p>wenn nicht bezüglich der gleitenden Zulage und bezüglich der Einreihung in gewisse Ortsklassen Zugeständnisse gemacht werden.</p>
+                  <p>Tomschik hat den Wunsch, er und die Eisenbahner, aus der paritätischen Lohnkommission auszuscheiden. [Er] schlägt vor, dass die Regierung der Kommission zu seinen Händen </p>
+                  <p>gewisse Mitteilungen zukommen lässt, dass aber die Antwort der Regierung bezüglich der Regierung lauten möge: Die Regierung müsse aufmerksam machen, dass die Kommission nicht auf einer gesetzlichen Grundlage </p>
+                  <p>beruht und dass deren Mitglieder nicht auf gesetzlicher Grundlage gewählt wurden, sich gewissermaßen selbst ernannt haben; dass die Regierung die Kommission also nicht als Personalvertretung anerkennen könne, </p>
+                  <p>die Regierung aber bereit [sei], ihre Wünsche anzuhören und gewisse Gutachten zu erhalten. Weiters soll Renner einmal dort erscheinen und sprechen.</p>
+                  <p>Vorschlag mit Reisch: [1.)] In der morgigen Sitzung der Nationalversammlung [soll ein] Gesetzentwurf [eingebracht werden], dass die Zulage, die im April gegeben wurde, um 75 % </p>
+                  <p>erhöht wird; § 2, Auszahlung am 15. jeden Monats. [Ich stelle] den Antrag, dass das Gesetz gleichzeitig dem Hauptausschuss schon morgen [gegeben wird] und dann die Staatsämter ermächtigt [werden], </p>
+                  <p>die Auszahlung vorzunehmen. 2.) [Bezüglich der] Einreihung in die Ortsklassen [soll ein] Gesetzentwurf [eingebracht werden], § 7 des betreffenden Gesetzes hat zu lauten: 'Die Staatsregierung wird ermächtigt, einzelne, gegenwärtig </p>
+                  <p>in die dritte Bezugsklasse eingereihte .... in die Klasse 2 oder 2 a) einzureihen; und einzelne in der 2. Klasse eingereihte [Orte] </p>
+                  <p>in die Zwischenklasse 1 a) einzureihen.'</p>
+                  <p>Seitz: Wenn der Kabinettsrat wünscht, das morgen eine Hauptausschusssitzung veranstaltet wird, dann könnte [das] nur nach der Haussitzung [geschehen].</p>
+                  <p>Paul: [Bezüglich] Urlaub besteht die Kommission auf einer Erweiterung (vielleicht mit acht Tagen). </p>
+                  <p>[Die Forderung nach] Regiepreisen wird abgelehnt werden müssen.</p>
+                  <p>[Bezüglich des] Sieben-Stunden-Tages [erklärt sie], von ½ 9 - ½ 4 Uhr [sei] unmöglich; den örtlichen Verhältnissen entsprechend müsse der Dienst geleistet werden.</p>
+                  <p>Überstunden. [Eine Erfüllung ist] unmöglich, nur die Verdoppelung.</p>
+                  <p>Reisch: Ich stehe auf dem Standpunkt, dass dies nur mit [einem] Gesetz gemacht werden [kann]. Weiters [ist notwendig] die Deckung hierfür.</p>
+                  <p>Die gleitende Zulage würde 475 Millionen beanspruchen (eingeschränkt auf die aktiven Beamten).</p>
+                  <p>Miklas: [Ich] würde diese Zuschläge nur als Aktivbezüge bezeichnen. Congrua (Einbeziehung der aktiven Seelsorger).</p>
+                  <p><hi rend="#s">Fink: -.</hi></p>
+                  <p>Renner: Ich schlage vor, wir bleiben bei der Formulierung des Staatssekretärs Reisch. Was die Bedeckung anbelangt? Was die Ortszuschläge anbelangt, [so] ist die Bedeckung in den zwei Milliarden drinnen. </p>
+                  <p>Der Preisabbau deutet sich schon an.</p>
+                  <p>Renner: Bezüglich der Pensionisten bleibt es bei der Fassung Reischs.</p>
+                  <p>8. Ramek: Gerichtskanzleiangestellte.</p>
+                  <p>Aktionskomitee. Niemand weiß, wer das ist. Es wird notwendig sein, die Leute aufzuklären.</p>
+                  <p>Dient zur Kenntnis.</p>
+                  <p><pb facs="krp-0180_s01-0004"/>9. Zerdik: Gewerbeantritt (Punkt 4a).</p>
+                  <p>10. Hanusch: Bekleidung (Punkt 5).</p>
+                  <p>Angenommen.</p>
+                  <p>11. Eldersch: Anlehen Klagenfurt.</p>
+                  <p>Angenommen.</p>
+                  <p>12. Reisch: III. Nachtrag zum Finanzgesetz (Kreditermächtigung). </p>
+                  <p>Ausgabensteigerung [im Ordinarium] von 185 [Millionen], [im] Extraord[inarium] 3 Milliarden.</p>
+                  <p><hi rend="#s">Angenommen.</hi> Reisch wird ermächtigt.</p>
+                  <p>13. Miklas: -. Angenommen.</p>
+                  <p>Schluss ¼ 2 [Uhr].</p>
+               </div>
+               <div n="2">
+                  <head>[KRP 180, 11. Mai 1920, Stenogramm Fenz]</head>
+                  <p><pb facs="krp-0180_s02-0001"/>180., 11. /5.</p>
+                  <p>[Zugezogen:] Grimm, Seitz, Froehlich, Heinz, Oppenheimer, </p>
+                  <p>Wilfling, Davy.</p>
+                  <p>[Renner]: Reisch II. Rangsklasse. Angenommen.</p>
+                  <p>Renner: Autoangelegenheiten. [Die Staatsämter unterhalten] 96 Personenautos, Frage der Garage.</p>
+                  <p>[Ich] bitte, in Ihren Staatsämtern Nachschau zu halten und zu tun, was Sie können, um die Zahl der Autos herabzusetzen.</p>
+                  <p>Reisch: Ich habe ein Rundschreiben an alle Staatsämter gerichtet, um die Notwendigkeit jedes einzelnen Autos nachzuweisen, </p>
+                  <p>wie und warum es verwendet wird.</p>
+                  <p>Renner: Es muss restringiert werden, wo [es] möglich ist. Die Chauffeure müssen unter eine gemeinsame Kontrolle gestellt werden. </p>
+                  <p>Es besteht [aber] die Gefahr, dass [dann] eine eigene Autobürokratie dazu kommt und neue Verschleppungsmöglichkeiten.</p>
+                  <p>Zerdik: Den - [Der] Schleichhandel mit Benzin und Schläuchen kann ganz unterbunden werden, wenn der Kilometerzeiger genau kontrolliert wird.</p>
+                  <p>Glöckel: Sehr wichtig wäre eine gemeinsame Reparaturwerkstätte.</p>
+                  <p>Renner: Wenn eine gemeinsame Garage [eingerichtet wird], dann würde [dort] ja auch eine Reparaturwerkstätte sein.</p>
+                  <p>Reisch: Lokalitätenfrage der österreichisch-ungarischen Bank.</p>
+                  <p>Die Notendruckerei ist ungeheuer beengt und lebensgefährlich untergebracht, [aufgrund der] leichtentzündlichen Stoffe. </p>
+                  <p>Es ist vor kurzem erst ein Brand ausgebrochen, jedoch glücklicherweise zu einer Zeit, wo die Arbeiter beim Essen waren. </p>
+                  <p>Der Gouverneur und der Betriebsrat haben sich [daher an die Regierung] um Zuweisung eines - von zusätzlichen Lokalen gewandt, die in der </p>
+                  <p>Nähe der Bank gelegen sein müssten. Die Arbeiterschaft habe sich bisher musterhaft benommen, es besteht jedoch die Gefahr, dass </p>
+                  <p>unruhige Elemente sich der Sache bemächtigen und die Sache stören. Ein Rundschreiben an die Staatsämter [war] bisher aber erfolglos, [nun haben sich aber] </p>
+                  <p>in der Herrengasse 23 drei Zimmer und zwei Kabinette [gefunden] (gemeinsamer Rechnungshof). Dorthin könnte die Kriegsdarlehens-</p>
+                  <p>kasse übersiedeln, dafür könnte sich Druckerei in der Bank ausdehnen. Unterhalb im Parterre [in] der Herrengasse 23 ist das </p>
+                  <p>Monturdepot der Postverwaltung. Das müsste geräumt werden, damit -.</p>
+                  <p>Zerdik: Die Sache ist bereits geordnet.</p>
+                  <p><pb facs="krp-0180_s02-0002"/>[Renner]: Bericht der Liquidierungsinspektoren.</p>
+                  <p>Smitka: </p>
+                  <p>[Zur] Abteilung 'Armee im Feld'. Wir haben verlangt die Auflösung und haben uns mit Hornik ins Einvernehmen gesetzt. </p>
+                  <p>Hornik hat Einwendungen gemacht, insbesondere die Länder hätten Forderungen an die Armee. Wir haben im März die Auflösung verlangt, sie besteht heute </p>
+                  <p>noch und ist in die Roßauer Kaserne übersiedelt. H[ornik] ist in finanziellen Sachen sehr bewandert, aber in meritorischen Sachen doch nicht orientiert.</p>
+                  <p>[Zur] Frachtenverrechnungsabteilung. [Dort sind] 34 Offiziere, die rechnen die Frachtbriefe nach. Wir sind zur Überzeugung gelangt, </p>
+                  <p>dass auch diese Abteilung ganz zwecklos ist. Es müssten noch hundert Leute durch 3 Jahre rechnen, bis die 15 Millionen Frachtbriefe durchgerechnet wären. </p>
+                  <p>Wir haben die Auflösung verlangt. Nun kommt das Militärliquidierungsamt und verlangt, dass das Amt noch sechs Monate amtiert bis [darüber] ein </p>
+                  <p>Urteil gefällt wird.</p>
+                  <p>Wir haben einen gewissen Widerstand im Militärliquidierungsamt - gezeigt. Nach der Vollzugsanweisung haben wir das Recht, direkt mit dem Liquidierungsamt </p>
+                  <p>zu verkehren. Es hat [aber] abgelehnt, mit uns direkt zu verkehren. Wir haben [daher] eine Zuschrift an den Präs[identen] gerichtet. </p>
+                  <p>Es müsste eine Form gefunden werden, damit die von uns geleistete Arbeit auch wirklich praktischen Wert hat.</p>
+                  <p>Renner: Die Zuschrift hat folgendes petit[ioniert]: &lt;Das ... kann&gt;.</p>
+                  <p>Seitz: Ich kann mich nur zum Interpreten der Wünsche der LI. [Liquidierungsinspektoren] machen. Das Parlament hat mit einer bestimmten Absicht an die beiden Mitglieder </p>
+                  <p>eine sehr hohe Aufgabe gestellt, nämlich, dass ohne Rücksicht auf theoretische Einwendungen und ohne bürokratische Einwendungen die Liquidierung beendet wird. </p>
+                  <p>Die Regierung muss die beiden mit allen Kräften unterstützen. Wenn die beiden ihre Stelle niederlegen, so wäre das eine große Blamage gegenüber Parlament und Bevölkerung.</p>
+                  <p>Ich bitte, dass das Kabinett Verfügungen trifft, durch Weisungen an alle Organe, ihre Arbeit so weit als möglich zu erleichtern und [anordnet], dass überall ihren </p>
+                  <p>Weisung Folgschaft geleistet wird.</p>
+                  <p>Reisch: Ich wundere mich, dass die Beschwerde nicht an mich gerichtet wurde, der ich der verantwortliche Leiter des Militärliquiderungsamtes bin.</p>
+                  <p>Naturgemäß handelt es sich bei der Liquidierung um einen Gegensatz zwischen Zivilen und Militärs. </p>
+                  <p>Das Wichtigste beim Militärliquidierungsamt ist das Finanzielle. Da ist H[ornik] hervorragend und hat Hunderte von Millionen erspart. </p>
+                  <p>Ich kann daher in dem Argument, dass er das Meritorische weniger versteht, keine Anklage finden. H[ornik] ist ganz besonders geeignet, und </p>
+                  <p>ich glaube nicht, dass man ihm mit Recht den Vorwurf machen kann, dass er irgend etwas hinauszieht. Irgendeine absichtliche Verzögerung findet gewiss nicht statt. </p>
+                  <p>Wir nehmen jedesmal sofort den Einfluss, dass die Sache so rasch als möglich erledigt wird. Nachdem sich die Sache erst zwei Monate hinzieht, kann man </p>
+                  <p>von einer ungebührlichen Verzögerung überhaupt nicht sprechen. Ich werde immer bereit sein, [dass ich] die Tätigkeit der LI. [Liquidierungsinspektoren] immer fördern werde und kann die Versicherung </p>
+                  <p>geben, dass H[ornik] weit davon entfernt ist, absichtlich [etwas] hinauszuziehen.</p>
+                  <p>Renner: Beschwerde wird nur darüber geführt, dass in den Fällen, wo die L.I. [Liquidierungsinspektoren] die Auflösung und den Abbau sehr [...] befunden haben, </p>
+                  <p>dieser Abbau frustriert wurde. Es handelt sich darum, dass die L.I. [Liquidierungsinspektoren] in entscheidenden Punkten bei dem Bestreben abzubauen, gehemmt werden.</p>
+                  <p>Buchinger: Wir haben beide nur die Absicht, rasch abzubauen.</p>
+                  <p><pb facs="krp-0180_s02-0003"/>Grimm: Hornik kann nicht sofort die Aufträge der L.I. [Liquidierungsinspektoren] vollziehen, sondern muss wie es im Statut vorgeschrieben ist, die Weisung des </p>
+                  <p>Staatsamtes für Finanzen einholen.</p>
+                  <p>Der Bericht Horniks über [die Abteilung] 'Armee im Feld' liegt seit 8. IV. im Staatsamt für Finanzen. Die Entscheidung konnte noch nicht getroffen werden, weil wir [sie] noch </p>
+                  <p>prüfen mussten. Das Dep[artement] war mit dringenderen Angelegenheiten befasst und [es] ist daher der Bericht liegen geblieben. Es wird in den allernächsten Tagen der Auftrag hinausgehen, </p>
+                  <p>eine Brücke zu finden.</p>
+                  <p>Ad Kriegsliquidatur. [Es] sind Besprechungen für 12. Mai angeordnet. Die Frage [ist] von großer finanzieller Bedeutung, es handelt sich um einen </p>
+                  <p>Umsatz von 15 Milliarden Kronen.</p>
+                  <p>Ad Fliegerarsenal. Bereits vor einer Woche wurde dem Inspektorat gemeldet, dass die Übersiedlung bereits vollzogen ist. </p>
+                  <p>[Sie] hat sich nur verzögert, weil die Beamten nicht in ein nicht desinfiziertes Lokal, das früher von Tuberkulösen belegt war, hinein wollten.</p>
+                  <p>Smitka: Ad 'Armee im Feld'. Wir waren am 17. II. dort. Wenn bei der Prüfung der Sache ein Vertreter des Staatsamtes für Finanzen dabei war, </p>
+                  <p>und wenn wir dann mit diesem Vertreter des Staatsamtes zur Überzeugung gelangt sind, dass die Sache überflüssig ist, so schiene uns die Zeit vom </p>
+                  <p>17. II. bis heute doch ein hinlänglich langer Zeitraum zur Entscheidung.</p>
+                  <p>Ad Kriegsliquidatur. 47 Personen sind [dort] damit beschäftigt, für 500 Witwen die Unterhaltsbeiträge anzuweisen; ferner [mit] der Hereinbringung </p>
+                  <p>der Übergebühren, die an Witwen ausgezahlt wurden.</p>
+                  <p>Hanusch: Seit sich die Sache hinzieht, ist die Agenda der Unterhaltsbeiträge in mein Amt eingegliedert worden.</p>
+                  <p>Renner: Heute keine Entscheidung. Die Herren werden das nächste Mal wieder kommen. Und Reisch wird Gelegenheit haben, Stellung zu nehmen.</p>
+                  <p>2. c) Hofärarische Theater.</p>
+                  <p>Glöckel: Der Titel 'Intendant' hat Angriffe in der Presse gefunden. Ich bitte, 'Generalsekretär </p>
+                  <p>der Staatstheater'.</p>
+                  <p>Fink: Wir Christlichsoziale stehen auf dem Standpunkt, dass man zunächst das Kurat[orium] einberufen muss und dieses soll [dazu] Stellung nehmen, was </p>
+                  <p>zum Kriegsgeschädigtenfonds und was zur Hofverwaltung gehört.</p>
+                  <p>Renner: Das Kuratorium hat mit der Ausscheidungsfrage nichts zu tun. Das Kuratorium hat mit der Aus-.</p>
+                  <p><hi rend="#s">Fink</hi>: -.</p>
+                  <p>Hanusch: Wenn wir die Sache dem Kuratorium übergeben, bevor die Ausscheidung erfolgt, so werden die Invaliden alles haben wollen.</p>
+                  <p>Eldersch: Nach dem Gesetz hat die Regierung auszuscheiden und das restliche Vermögen hat das K[uratorium] zu verwalten. Ich sehe daher nicht ein, </p>
+                  <p>warum das K[uratorium] einberufen werden soll. Die Ausscheidung ist Sache der Regierung. Wenn man das K[uratorium] einberuft, kommt es zu einer </p>
+                  <p><pb facs="krp-0180_s02-0004"/>Debatte über die Ausscheidung und [es] hat doch darüber nicht zu entscheiden.</p>
+                  <p>Fink: Ich halte es für ganz unrecht, dass man die Einberufung des Kur[atoriums] so lange hinauszieht.</p>
+                  <p>Harpner: Das K[uratorium] müsste ich einberufen. Ich habe das nicht getan, weil ich mich an das Gesetz halte. </p>
+                  <p>Der Fonds wird konstituiert sobald die Vermögenschaften feststehen, die es - [er] zu verwalten hat. Das ist bisher nicht geschehen.</p>
+                  <p>Was die Theater anbelangt, so kann doch der Kriegsgeschädigtenfonds nicht daran denken, die Theater zu übernehmen.</p>
+                  <p>Eisler: Das ganze Vermögen ist zunächst Staatsvermögen geworden. Es muss also jetzt ausgeschieden werden, was jetzt aus dem Staatsvermögen herauszugehen hat </p>
+                  <p>und den - [was dem] Kriegsgeschädigtenfonds zu bleiben hat. Das Kur[atorium] ist nur eine reine Verwaltung eines Fonds. Es kann nicht funktionieren, solange </p>
+                  <p>nicht der Fonds, den es zu verwalten hat, existiert.</p>
+                  <p>Renner: Ich erkläre es für ausgeschlossen, dass das Kur[atorium] mit der Ausscheidungsfrage irgendwie befasst wird.</p>
+                  <p>Seitz: Es handelt sich um die Streitfrage, ob man zuerst klarstellt, was KF [Kriegsgeschädigtenfonds] ist durch die Ausscheidung alles dessen, was man braucht und </p>
+                  <p>dann [das Kuratorium] den Fonds verwalten lässt oder ob man das K[uratorium] einberuft und sich mit diesem K[uratorium] auseinander setzt, was er verwalten soll.</p>
+                  <p>Solange ich Präsident bin, verzichte ich auf die Repräsentationsbehelfe. Dagegen hat meine Kanzlei gesagt, sie muss für die Zukunft vorsorgen. </p>
+                  <p>Ich habe meiner Kanzlei gesagt, das wird späterhin einmal Sache der Regierung sein, die Behelfe zu beschaffen.</p>
+                  <p>Zerdik: Wir sind heute Mitte Mai. Wenn ich die Verfügung über das Messegebäude [nicht] habe, so kann ich noch nicht mit der Adapt[ierung] </p>
+                  <p>beginnen.</p>
+                  <p>Glöckel: Jede Verzögerung in dieser Frage ist Tag für Tag ein großer Schaden. Niemand identifiziert sich mit dieser Frage. </p>
+                  <p>Ich habe mich ohne Mandat auf Wunsch des Staatskanzlers mit den Sachen befasst, habe die Gehalts- und Lohnfragen gelöst. Ich bitte, mich aus diesem ganz </p>
+                  <p>unmöglichen Zustand zu befreien. Die Verwaltung bedarf einer neuen Organisierung.</p>
+                  <p>Mayr: Ich bin nicht für ein Verzögern, aber mir kommt es doch vor, da es sich um große Vermögensobjekte handelt und </p>
+                  <p>es sich um eine generelle Widmung handelt, [dass es angebracht wäre], dass man das Kurat[orium] um seine Meinung befragt. Zu entscheiden hat </p>
+                  <p>ja natürlich die Regierung. Wenn das K[uratorium] schon besteht, so könnte man doch den Vorwurf hören, dass es nicht gehört wurde. </p>
+                  <p>Man sollte die Ausscheidung prinzipiell genehmigen, aber bei dem großen Interesse, das in materieller und künstlerischer Richtung </p>
+                  <p>vorwaltet, soll das Statut für die Theater und die Frage des Intendanten genau geprüft werden.</p>
+                  <p>Eldersch: Das K[uratorium] ist erst mit dem § 2 geschaffen.</p>
+                  <p><hi rend="#s">Fink: Zuerst hat man</hi> -. Vertagt.</p>
+                  <p><pb facs="krp-0180_s02-0005"/>Verhandlungen mit der tsch[echoslowakischen] Regierung.</p>
+                  <p>Froehlich:</p>
+                  <p>Renner: Von wem sollen die Detailinstruktionen gegeben werden? </p>
+                  <p>In den Staatsbürgerschaftsfragen das Innere und Finanzen. Ich bitte, mit diesen Staatssekretären in Verbindung zu treten. </p>
+                  <p>Detto [in der Frage der] Option und auch das Staatsamt für soziale Verwaltung. </p>
+                  <p>In den Schulen? Das Unterrichtsamt wird mit der Gemeinde Wien das Einvernehmen pflegen müssen und bei der </p>
+                  <p>Instruktion an die Unterhändler das Interesse der Gemeinde Wien wahren. </p>
+                  <p>Eine Kabinettsinstruktion ist nicht erforderlich.</p>
+                  <p>Dagegen muss das Kabinett entscheiden, ob wir zulassen, dass zwischen den ökon[omischen] und den politischen Fragen ein Junktim </p>
+                  <p>hergestellt wurde. Bei der Schlussredaktion wurde seinerzeit festgesetzt, dass die ganzen Verhandlungen ein Ganzes zu bilden haben. </p>
+                  <p>Diese Klausel kann aber nicht so hingestellt werden, dass alle späterhin auftauchenden Fragen in ein Junktim mit allen </p>
+                  <p>künftigen Verhandlungen gebracht werden. Dieses Junktim wäre daher zu bekämpfen. Hingegen liegt es im Interesse der </p>
+                  <p>wirtschaftlichen Ressorts, dass ihre Lieferungen nicht gehemmt werden durch politische Verhandlungen.</p>
+                  <p>Loewenfeld-Ruß: Das Junktim ist damals aufgestellt worden. Die Tsch[echoslowaken] haben aber z. B. die Zuckerlieferungen absolut nicht </p>
+                  <p>eingehalten. Wir haben noch nicht einmal den Zucker aus dem alten Vertrag ausgeliefert. Aus dem Jänner-Vertrag ist überhaupt noch nichts eingelangt.</p>
+                  <p>Renner: Froehlich soll sich von allen Staatsämtern alle Rückstände vorführen lassen, damit wenn hier das Junktim </p>
+                  <p>aufgeworfen wird, das entgegen gehalten werden kann.</p>
+                  <p><hi rend="#s">Zerdik: In allen übrigen Sachen wäre ein Junktim in staatsrechtlicher -.</hi></p>
+                  <p>Waiß: Das Staatsamt für Heerwesen kann &lt; &gt;.</p>
+                  <p>Renner: Das braucht jetzt nicht im Kabinett geordnet zu werden, sondern bis Samstag.</p>
+                  <p>Miklas: Ich habe Bedenken gegen die Schaffung eines Junktims. </p>
+                  <p>Wenn die Tsch[echoslowaken] uns bestimmten Zusagen in volkswirtschaftlicher Beziehung nicht einhalten, so haben wir die verloren. </p>
+                  <p>Wenn wir aber aufgrund des Junktims politische Zugeständnisse gemacht haben (Minoritätsschulen-Errichtung), so können wir </p>
+                  <p>das nicht mehr zurücknehmen. Ich glaube, dass das Junktim unmöglich geschaffen werden darf.</p>
+                  <p>Ad 'verhältnismäßig beträchtliche Minderheit'. </p>
+                  <p>Ich möchte der Gemeinde Wien dringend ans Herz legen, dass man durch die Übereinkommen mit den Wiener Tschechen betreffend die Schulerrichtung </p>
+                  <p>bereits ungeheure Zugeständnisse gemacht hat. </p>
+                  <p><pb facs="krp-0180_s02-0006"/>[Es wäre] sehr wichtig, dass man bei dem Begriff 'ecoles primaires' über die Volksschulen nicht hinausgeht.</p>
+                  <p>Renner: Ein Bedürfnis nach einem Junktim wird nicht anerkannt und [muss] als unzweckmäßig bezeichnet werden. </p>
+                  <p>Die Instr[uktionen] im Einzelnen werden von den einzelnen Staatsämtern gegeben werden.</p>
+                  <p>Froehlich: [Ich] bitte um die Vollmacht zum Abschluss eines Vertrages auf diesen Grundlagen.</p>
+                  <p>Renner: Das kann man nicht. Das werden die einzelnen Staatssekretäre entscheiden. </p>
+                  <p>Wenn die Zustimmungen der Staatssekretäre da sind, so schließen Sie ab. Die Genehmigung des Kabinettsrates bleibt vorbehalten.</p>
+                  <p>Paritätische Lohnkommission.</p>
+                  <p>Paul: </p>
+                  <p>Aus allen Direktionsbezirken kommen [mir] telegraphische Nachrichten zu, dass die Bediensteten nicht geneigt sind, den Dienst weiter </p>
+                  <p>zu versehen, wenn ihnen nicht bezüglich der gleitenden Zulage und der Einreihung in die einzelnen Ortsklassen </p>
+                  <p>Konzessionen gemacht werden. Ich habe mit Tomschik und Reisch verhandelt [und ein] günstiges Ergebnis [erzielt].</p>
+                  <p>[<hi rend="#i">Am Rand:</hi>] Vertraulich.</p>
+                  <p>Ad 6. und 7.) Tomschik hat gesagt, dass er sowohl wie die Eisenbahner den lebhaften </p>
+                  <p>Wunsch haben, aus der Lohnkommission auszuscheiden. Dieses Ausscheiden müsste sich aber in ruhiger Form </p>
+                  <p>vollziehen. Die Regierung solle der p[aritätischen] LK [Lohnkommission] zu seinen Händen eine Mitteilung zukommen lassen, etwa so: </p>
+                  <p>"Die Regierung muss aufmerksam machen, dass die p[aritätische] LK [Lohnkommission] nicht auf einer gesetzlichen Grundlage basiert und dass die Vertreter nicht </p>
+                  <p>aufgrund einer gesetzlichen Grundlage gewählt wurden; dass also die Regierung die LK [Lohnkommission] nicht als eine Pers[onal]vertretung anerkennen kann, </p>
+                  <p>dass aber die Regierung entschlossen ist, P[ersonal]-Vertr[etungen] einzusetzen, dass aber bis dahin die Regierung im Allgemeinen der </p>
+                  <p>LK [Lohnkommission] insofern genüge leisten will, als sie bereit ist, Wünsche von ihr entgegenzunehmen und [zu] behandeln und sie heranziehen </p>
+                  <p>wenn sie [es] notwendig findet, [ein] Gutachten von ihr zu erhalten.</p>
+                  <p>"In dieser Form glaubt er, über die Forderung nach einer Geschäftsordnung hinweg zu kommen.</p>
+                  <p>Was die einzelnen Punkte anbelangt, so sind die wichtigsten 1.) und 2.). </p>
+                  <p><pb facs="krp-0180_s02-0007"/>Ich bin mit Reisch überein[ge]kommen: 1.) Dass in der morgigen Sitzung ein Gesetz eingebracht wird, </p>
+                  <p>dass die Zulage, wie sei im April gegeben wurde, um 75 % erhöht wird [und] </p>
+                  <p>die gleitende Zulage am 15. jeden Monats ausbezahlt wird. Damit wäre der Forderung der p[aritätischen] L[ohnkommission] vollkommen Rechnung getragen. </p>
+                  <p>Das Gesetz soll gleichzeitig mit der Einbringung dem Koalitionskomitee oder dem Hauptausschuss [gegeben werden], damit die Auszahlung noch am </p>
+                  <p>15. erfolgen kann.</p>
+                  <p>2.) Einreihung in die Ortsklassen. </p>
+                  <p>Dem würde dadurch entsprochen werden können, dass [ein] Gesetzentwurf eingebracht wird, wonach § 7 al. 2 nunmehr zu lauten hat: </p>
+                  <p>"Die Staatsregierung wird ermächtigt, [dass] einzelne, [die] in die III. Bezugsklasse eingereiht sind, in die Klasse II oder II a; </p>
+                  <p>und [einzelne, die] gegenwärtig in die Klasse II [eingereiht sind], in die Zwischenklasse I a eingereiht werden."</p>
+                  <p>Bezüglich dieser Stilisierung hegt Tomschik Bedenken. Man müsste die doppelte Einreihung bewilligen. </p>
+                  <p>Man müsste der Landeskommission die Möglichkeit bieten, von [Klasse] III. in [Klasse] I a einzureihen.</p>
+                  <p><hi rend="#s">Seitz: Bitte, wenn das Kabinett wünscht, das morgen eine Hauptausschusssitzung stattfindet, so könnte das nur -.</hi></p>
+                  <p>[Paul]: Urlaube, die par[itätische] Lohnkommission besteht auf Urlaubsverlängerungen. [Die Forderung nach] </p>
+                  <p>Regiepreisen wird abgelehnt werden [müssen].</p>
+                  <p>Sieben Stunden: Die LK [Lohnkommission] sagt ½ 9 - ½ 4 Uhr ist unmöglich. Die Regierung müsse mit den Organisationen in Fühlung </p>
+                  <p>treten und [es sei notwendig], dass überhaupt die ganze Frage mit den Organisationen einvernehmlich gelöst wird.</p>
+                  <p>Bezahlung der Überstunden: Die Überstunden würden sich durchschnittlich auf 23 Kronen stellen, was ganz ungeheuerlich wäre. </p>
+                  <p>Hingegen wäre das Staatsamt für Finanzen mit [einer] Verdoppelung einverstanden. Das wird von Tomschik als unmöglich </p>
+                  <p>bezeichnet mit Rücksicht auf die Tramway-Preise. Überhaupt wäre er für die Einstellung der Überstunden.</p>
+                  <p><pb facs="krp-0180_s02-0008"/>Reisch: Davon, dass ich zugestimmt hätte zu einer Neuregelung und [einer] befriedigenden Regelung, kann keine Rede sein. </p>
+                  <p>Ich habe nur betont, dass wenn der Kabinettsrat sich wieder etwas erpressen lassen würde, dies nur im Wege eines Gesetzes geschehen könnte. </p>
+                  <p>Die zweite Bedingung wäre, dass das Kabinett und das Haus sich darüber hinwegsetzt, dass bei neuen Auslagen auch die Bedeckung vorhanden ist. </p>
+                  <p>Nur unter dieser Voraussetzung habe ich die zwei Gesetzentwürfe ausgearbeitet.</p>
+                  <p>Die neuerliche Erhöhungen der gleitenden Zulage würde ein Erfordernis von 574 Millionen Kronen im Jahr ausmachen, wenn </p>
+                  <p>man sie auf die Aktiven beschränkt.</p>
+                  <p>Miklas: Ich würde den Zuschlag einfach als Aktivitätszuschlag bezeichnen.</p>
+                  <p>Es wird auch [in] die Aktion die Seelsorge-Geistlichkeit mit einbezogen werden müssen bei der Einreihung in die </p>
+                  <p>Ortsklassen durch die Erteilung einer Ermächtigung für das Kulturamt.</p>
+                  <p>Renner: Ad Ortszulagengesetz. [Ich] bitte, dass im Ausschuss die höhere Einreihung nur für ein </p>
+                  <p>Jahr gilt </p>
+                  <p>bzw. dass die Leute in ihrer Klasse bleiben und nur für ein Jahr höher gereiht werden. </p>
+                  <p>Machen wir es so, wie der Staatssekretär vorgeschlagen hat. Wollen die Leute mehr, so sollen sie sich an den Ausschuss wenden. </p>
+                  <p>Man soll Ihnen nur die Vorrückung von [Klasse] III in [Klasse] II konzedieren. Wenn sie auch [die Klasse] I a durchsetzen wollen, so sollen sie in den</p>
+                  <p>Ausschuss gehen, dann müsste es aber nur provisorisch zugestanden werden.</p>
+                  <p>Fink: Was ist mit der Bedeckung?</p>
+                  <p>Renner: Man muss im Motivenbericht schon betonen, dass es sich um eine abbaufähige Sache handelt.</p>
+                  <p>Beide Gesetzentwürfe angenommen.</p>
+                  <p>Ramek: Gerichtskanzleibeamte.</p>
+                  <p>Es findet am 14 Mai eine Vollversammlung der Gerichtskanzleibeamten statt. </p>
+                  <p>Ich muss der Befürchtung Raum geben, dass wieder ein Teil der Gerichtskanzleibeamten streikt. Es wird notwendig sein, </p>
+                  <p>die Leute, insbesondere in den Ländern, über die Zugeständnisse aufzuklären und ich werde veranlassen, dass dies in den Donnerstagblättern geschieht.</p>
+                  <p>Zur Kenntnis genommen.</p>
+                  <p><pb facs="krp-0180_s02-0009"/>4. a) Zerdik: -. Angenommen.</p>
+                  <p>5. Hanusch: Bekleidung.</p>
+                  <p>Angenommen.</p>
+                  <p>6. b) [Eldersch]: Klagenfurt.</p>
+                  <p>Angenommen.</p>
+                  <p>7. a) Reisch: III. Nachtrag [zum Finanzgesetz]. </p>
+                  <p>Ausgabensteigerung in ord. [im Ordinarium] 185 Millionen, </p>
+                  <p>in extr. [im Extraordinarium] -.</p>
+                  <p>Angenommen.</p>
+                  <p>9. Miklas: Evang[elische Seelsorger].</p>
+                  <p>Angenommen.</p>
+                  <p>Kontaktsitzungen.</p>
+                  <p>½ 2 Uhr.</p>
+               </div>
+               <div n="3">
+                  <head/>
+               </div>
+               <div n="4">
+                  <head>[KRP 180, 11. Mai 1920, Stenogramm]</head>
+                  <p><pb facs="krp-0180_s03-0001"/>1.) Junktim: Darauf nicht einlassen.</p>
+                  <p>2.) Offene Fragen: a) Verpflichtung Heimatrecht, </p>
+                  <p>10. September '19.</p>
+                  <p>b) Option, Frist über die Wohnsitzverlegung.</p>
+                  <p>[<hi rend="#i">Am Rand:</hi>] Inneres und Finanzen.</p>
+                  <p>3.) Schulfrage: Wien.</p>
+                  <p>a) Vertragsmäßigkeit.</p>
+                  <p>b) Über den Vertrag hinauszugehend.</p>
+               </div>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

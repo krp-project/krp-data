@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href='http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:acdh="https://vocabs.acdh.oeaw.ac.at/schema#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xml:lang="de">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="a" type="main" n="0100">Kabinettsprotokoll Nr. 100 vom 22. August 1919</title>
+            <title level="m" type="main" n="01">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <title level="m" type="sub" n="">Renner II (15. März – 17. Oktober 1919)</title>
+            <meeting>
+               <placeName key="https://d-nb.info/gnd/4066009-6">Wien</placeName>
+               <orgName key="https://d-nb.info/gnd/5162749-8">Kabinettsrat</orgName>
+               <date when-iso="1919-08-22"/>
+            </meeting>
+            <editor>
+               <persName key="https://d-nb.info/gnd/122481836"
+                         role="hasCreator"
+                         xml:id="hwohnout">
+                  <forename>Helmut</forename>
+                  <surname>Wohnout</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</affiliation>
+               <idno type="ORCID">0000-0002-3864-9839</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/120789825"
+                         role="hasCreator"
+                         xml:id="tolechowski">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0003-3291-6876</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/131679384"
+                         role="hasCreator"
+                         xml:id="rlein">
+                  <forename>Richard</forename>
+                  <surname>Lein</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0002-7502-0503</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="aholzer">
+                  <forename>Anna</forename>
+                  <surname>Holzer</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0005-3560-3500</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="dsoelkner">
+                  <forename>Dominik</forename>
+                  <surname>Sölkner</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-9895-7212</idno>
+            </editor>
+            <editor>
+               <persName role="hasContributor" xml:id="ischotzko">
+                  <forename>Ina</forename>
+                  <surname>Schotzko</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-5210-3713</idno>
+            </editor>
+            <funder n="1">
+               <orgName key="https://d-nb.info/gnd/2054142-9" role="hasFunder">Österreichischer Wissenschaftsfonds FWF</orgName>
+               <idno type="project">PAT1495024</idno>
+               <title type="project">Die Protokolle des österreichischen Kabinettsrates 1919–1920</title>
+            </funder>
+            <respStmt>
+               <resp>Projektverantwortung</resp>
+               <orgName key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Projektleitung</resp>
+               <persName key="https://d-nb.info/gnd/120789825" role="hasPrincipalInvestigator">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+                  <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+                  <idno type="ORCID">0000-0003-3291-6876</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Nationaler Forschungspartner</resp>
+               <orgName key="https://d-nb.info/gnd/1123037736" role="hasEnabler">Austrian Centre for Digital Humanities</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Digitalisierung der gedruckten Quellen</resp>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>TEI-Datenmodellierung</resp>
+               <persName role="hasContributor" xml:id="tfruehwirth">
+                  <forename>Timo</forename>
+                  <surname>Frühwirth</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-3997-5193</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technische Supervision</resp>
+               <persName key="https://d-nb.info/gnd/1043833846"
+                         role="hasContributor"
+                         xml:id="pandorfer">
+                  <forename>Peter</forename>
+                  <surname>Andorfer</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-9575-9372</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technisches Consulting und Vorbereitung der Druckausgabe</resp>
+               <persName key="https://d-nb.info/gnd/13281899X"
+                         role="hasContributor"
+                         xml:id="skurz">
+                  <forename>Stephan</forename>
+                  <surname>Kurz</surname>
+                  <affiliation key="https://d-nb.info/gnd/1202798799">Institut für die Erforschung der Habsburgermonarchie und des Balkanraumes</affiliation>
+                  <idno type="ORCID">0000-0003-2546-2570</idno>
+               </persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher key="https://d-nb.info/gnd/1001454-8">Österreichische Akademie der Wissenschaften</publisher>
+            <date when="2028"/>
+            <availability status="free">
+               <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">Lizenziert unter CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/deed.de)</licence>
+            </availability>
+            <idno type="ISBN_Print"/>
+            <idno type="ISBN_Part_epub"/>
+            <idno type="ISBN_Digital"/>
+            <idno type="DOI"/>
+            <idno type="DOI_zenodo"/>
+            <idno type="ebook_ID"/>
+         </publicationStmt>
+         <seriesStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="m" type="main">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <respStmt>
+               <resp>Bearbeitung und Herausgeberschaft</resp>
+               <orgName key="https://d-nb.info/gnd/2024703-5">Universität Wien</orgName>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+         </seriesStmt>
+         <notesStmt>
+            <note>Diese TEI-XML-Datei ist Grundlage für eine Druckausgabe der Edition.</note>
+            <relatedItem>
+               <biblStruct>
+                  <monogr>
+                     <imprint>
+                        <pubPlace key="https://d-nb.info/gnd/4066009-6">Wien</pubPlace>
+                        <publisher key="https://d-nb.info/gnd/2068748-5">Verlag der Österreichischen Akademie der Wissenschaften</publisher>
+                        <date when="2029"/>
+                     </imprint>
+                     <extent/>
+                  </monogr>
+                  <note>
+              <idno/>
+              <ptr/>
+            </note>
+                  <citedRange/>
+               </biblStruct>
+            </relatedItem>
+         </notesStmt>
+         <sourceDesc>
+            <bibl>Quellbestand: AT-OeStA/AdR MRang MR 1Rep KRP Kabinettsratsprotokolle, 1918-1920 (Teilbestand)<ref target="https://www.archivinformationssystem.at/detail.aspx?id=5465">https://www.archivinformationssystem.at/detail.aspx?id=5465</ref>
+            </bibl>
+            <msDesc>
+               <msIdentifier>
+                  <institution key="https://d-nb.info/gnd/37748-X" role="hasOwner">AT-OeStA Österreichisches Staatsarchiv (Archiv (ÖStA))</institution>
+                  <repository key="https://d-nb.info/gnd/1601181-8">AT-OeStA/AdR Archiv der Republik, 1918- (Abteilung)</repository>
+                  <collection>AT-OeStA/AdR MRang MR 1Rep Ministerrat 1. Republik, 1918 - 1938 (Bestand)</collection>
+                  <idno>AT-OeStA_AdR-MRang-MR-1.-Rep.-KRP-100</idno>
+               </msIdentifier>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <abstract>
+            <p>
+          <!--to be generated-->
+        </p>
+         </abstract>
+      </profileDesc>
+      <encodingDesc>
+         <styleDefDecl scheme="css"/>
+         <tagsDecl>
+            <rendition xml:id="b" scheme="css">font-weight:bold;</rendition>
+            <rendition xml:id="su" scheme="css">vertical-align:super;font-size:.7em;</rendition>
+            <rendition xml:id="s" scheme="css">text-decoration:line-through;</rendition>
+            <rendition xml:id="u" scheme="css">text-decoration:underline;</rendition>
+            <rendition xml:id="ow" scheme="css">text-decoration:line-through;text-decoration-style:double;</rendition>
+            <rendition xml:id="r" scheme="css">display:block;text-align:right;</rendition>
+            <rendition xml:id="letterspaced" scheme="css">letter-spacing:0.15em;</rendition>
+            <rendition xml:id="i" scheme="css">font-style:italic;</rendition>
+         </tagsDecl>
+         <editorialDecl>
+            <hyphenation>
+               <p>
+            <!--to be added-->
+          </p>
+            </hyphenation>
+            <correction>
+               <p>
+            <!--to be added-->
+          </p>
+            </correction>
+            <normalization>
+               <p>
+            <!--to be added-->
+          </p>
+            </normalization>
+            <punctuation>
+               <p>
+            <!--to be added-->
+          </p>
+            </punctuation>
+            <stdVals>
+               <p>
+            <!--to be added-->
+          </p>
+            </stdVals>
+            <p>
+          <!--to be added-->
+        </p>
+         </editorialDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#tfruehwirth" when-iso="2026-10-14">TEIGarage output upconverted with upconvert.xsl</change>
+         <change who="#tfruehwirth" when-iso="2026-10-14">TEI header populated with generate_tei_templates.py</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface/>
+   </facsimile>
+   <text>
+      <body>
+         <div xml:id="doc-krp-0100.xml">
+            <head type="dokument">
+               <title type="num">100.<note type="footnote">Das Protokoll trägt den Vermerk <hi rend="#i">Vertraulich!</hi></note>
+               </title>
+               <title type="desc">
+                  <pb facs="krp-0100_r-0001"/>[Freitag] 1919-08-22</title>
+            </head>
+            <div type="dokumentkopf">
+               <div type="vorsitz">
+                  <head>Vorsitz:</head>
+                  <p>Fink</p>
+               </div>
+               <div type="anwesend">
+                  <head>Anwesend:</head>
+                  <p>Bauer, Bratusch, Ellenbogen, Hanusch, Miklas, Paul, Resch, Schumpeter, Stöckler, Tandler, Waiss</p>
+               </div>
+               <div type="zugezogen">
+                  <head>Zugezogen:</head>
+                  <p>Grimm</p>
+               </div>
+               <div type="schriftfuehrer">
+                  <head>Schriftführer:</head>
+                  <p>unbekannt</p>
+               </div>
+               <div type="dauer">
+                  <head>Dauer:</head>
+                  <p>15.00–18.00 Uhr</p>
+               </div>
+            </div>
+            <div type="komponenten">
+               <p>Reinschrift, Beilagen, Konzept, stenographische Mitschrift, Entwurf der Tagesordnung, 10. Personalsitzung</p>
+            </div>
+            <div type="beilagen">
+               <head>Beilagen:</head>
+               <list>
+                  <item><ref target="#krp-0100_top01">Zu TOP 1:</ref> <ref target="#krp-0100_b01">Antrag des Staatsamtes für Land- und Forstwirtschaft auf Bestätigung der Wahl von Funktionären der Landeskulturräte für Niederösterreich und Vorarlberg</ref></item>
+                  <item><ref target="#krp-0100_top02">Zu TOP 2</ref>: <ref target="#krp-0100_b02">Antrag auf Gewährung eines Kredites zur Fortführung der Wiederaufbauarbeiten im Bezirk Lienz einschließlich Innichen und Sexten</ref></item>
+                  <item><ref target="#krp-0100_top03">Zu TOP 3</ref>: <ref target="#krp-0100_b03">Geänderte Fassung der Vollzugsanweisung der Staatsregierung über die Trennung der Verwaltung des Telegrafen-, Fernsprech- und Rohrpostwesens von der Postverwaltung</ref></item>
+                  <item><ref target="#krp-0100_top04">Zu TOP 4</ref>: <ref target="#krp-0100_b04">Vortrag über die Erklärung der geplanten Verbindung der Schleppgleisanlage der Industriebahn der Oberdorfer Magnesitwerke mit der Südbahn als begünstigter Bau</ref></item>
+                  <item><ref target="#krp-0100_top05">Zu TOP 5</ref>: <ref target="#krp-0100_b05">Antrag des Staatsamtes für Finanzen auf Eingliederung der Marinesektion in das liquidierende Kriegsministerium</ref></item>
+                  <item><ref target="#krp-0100_top06">Zu TOP 6</ref>: <ref target="#krp-0100_b06">Gesetzesvorlage der Staatsregierung über die Aufhebung der Steuerbegünstigung für Alkohol zur Herstellung von Heilmitteln samt Bemerkungen</ref></item>
+                  <item><ref target="#krp-0100_top07">Zu TOP 7</ref>: <ref target="#krp-0100_b07">Antrag des Staatsamtes für Finanzen zu Zl. 52.275/1919 auf einen einmaligen Zuschuss für Pensionsparteien</ref></item>
+                  <item><ref target="#krp-0100_top08">Zu TOP 8</ref>: <ref target="#krp-0100_b08">Entwurf der Vollzugsanweisung des Staatsamtes für Finanzen über Änderungen in der Organisation der Finanzverwaltung</ref></item>
+               </list>
+            </div>
+            <div type="protokoll">
+               <pb facs="krp-0100_r-0002"/>
+               <div type="top" xml:id="krp-0100_top01">
+                  <head>
+                     <label>
+                        <num n="1">1.</num>
+                        <seg>Bestätigung der Wahl von Funktionären der Landeskulturräte für Niederösterreich und für Vorarlberg.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Stöckler</hi> erbittet und erhält vom Kabinettsrate die Ermächtigung, dem Präsidenten der Nationalversammlung die Bestätigung der Wahlen des Landtagsabgeordneten Karl List zum Präsidenten, sowie des Nationalrates Rudolf Gruber und Landtagsabgeordneten Oberrevidenten Franz Christoph zu Vizepräsidenten des Landeskulturrates für Österreich unter der Enns und des Landwirtes und Oberlehrers i. R. Josef Anton Hillbrand in Innerbraz zum Präsidenten, sowie <pb facs="krp-0100_r-0003"/>des Landwirtes und Altvorstehers Gottlieb Bechter in Hittisau und des Ing. Ernst Winsauer in Dornbirn zu Vizepräsidenten des Landeskulturrates für Vorarlberg vorschlagen zu dürfen.</p>
+               </div>
+               <div type="top" xml:id="krp-0100_top02">
+                  <head>
+                     <label>
+                        <num n="2">2.</num>
+                        <seg>Gewährung eines Kredites zur Fortführung der Wiederaufbauarbeiten im Bezirke Lienz einschließlich der Gebiete Innichen und Sexten.</seg>
+                     </label>
+                  </head>
+                  <p>Unterstaatssekretär Dr. <hi rend="#letterspaced">Ellenbogen</hi> teilt mit, dass die Landesregierung in Innsbruck an das Staatsamt für Handel und Gewerbe, Industrie und Bauten das dringende Ersuchen gerichtet habe, ihr für den Wiederaufbau im Bezirke Lienz den Betrag von 500.000 K ehestens zur Verfügung zu stellen. Dieser Betrag würde in erster Linie und wohl zur Gänze für den Wiederaufbau von Innichen und Sexten benötigt werden, da diese Orte als Hauptschadensgebiete des Bezirkes Lienz zu bezeichnen seien.</p>
+                  <p>Mit Rücksicht auf die weitgehende Zerstörung dieser Orte sei aufgrund der mit Beschluss des Kabinettsrates vom 13. Juni 1919 erteilten Ermächtigung für Wiederaufbauarbeiten und Holzeinkäufe in Tirol ein Betrag von 200.000 K der Landesregierung zur Verfügung gestellt und von dieser mit verschiedenen Arbeiten so insbesondere mit dem Bau einer Schule und eines Gemeindehauses in diesen Orten be<pb facs="krp-0100_r-0004"/>gonnen worden. Diese Arbeiten gelangen nun unter Heranziehung von Arbeitern aus dem zweifellos deutschösterreichischen Teile von Tirol zur Ausführung.</p>
+                  <p>Wenn auch der erwähnte Landesteil (Innichen und Sexten) dermalen von den Italienern nicht besetzt sei, so solle er doch gemäß dem Friedensvertragsentwurfe künftig unter italienische Hoheit gestellt werden und es könne daher der Anschauung, die vom Staatsamte für Finanzen vertreten wird, dass von der Bewilligung weiterer Kredite für dieses strittige Gebiet abgesehen werde, eine gewisse Berechtigung nicht abgesprochen werden.</p>
+                  <p>Würden nun für den Wiederaufbau von Innichen und Sexten keine weiteren Kredite zur Verfügung gestellt werden, so müssten selbstverständlich diese Wiederherstellungsarbeiten sofort sistiert werden. Die Folge hievon wäre, dass die dort beschäftigten Arbeiter und Handwerker beschäftigungslos werden würden und auch den dabei beteiligten Lieferanten die Verdienstmöglichkeit entzogen werden würde. Da es sich nun bei allen diesen Beschäftigten um deutschösterreichische Staatsbürger handle, so würde bei den hiedurch Betroffenen wohl das Gefühl <pb facs="krp-0100_r-0005"/>Platz greifen, dass ihnen die Fürsorge ihres Heimatslandes schon zu einem Zeitpunkte entzogen wird, wo noch nicht endgiltig feststeht, ob das betreffende Gebiet tatsächlich unter italienische Staatshoheit kommen oder dem Mutterlande erhalten bleiben wird. Schließlich sei noch zu erwähnen, dass die erwähnten Gebiete – selbst wenn sie derzeit an Italien abgetreten werden müssten – vielleicht doch in absehbarer Zeit wieder Deutschösterreich angehören werden und daher die für die jetzt dort durchzuführenden Arbeiten nötigen Mittel als keine unbedingt verlorenen Ausgaben Deutschösterreichs angesehen werden müssen. Es sprächen sohin auch mehrfache Erwägungen dafür, dem Ansuchen der Landesregierung in Innsbruck stattzugeben.</p>
+                  <p>Um nun den beiderseitigen Argumenten Rechnung zu tragen, werde ein Ausweg darin gefunden werden können, dass der Landesregierung Innsbruck nicht der voll angesprochene Betrag von 500.000 K, sondern gegenwärtig nur ein Betrag von 200.000 K überwiesen wird, mit dem voraussichtlich die Bautätigkeit während eines weiteren Monates gesichert werden könne. Sollte im Zeitpunkte der Erschöpfung dieses Teilkredites die Sachlage dahin geklärt sein, dass Innichen und <pb facs="krp-0100_r-0006"/>Sexten aus dem deutschösterreichischen Hoheitsgebiete ausgeschieden werden müssten, so entfalle von selbst eine weitere Flüssigmachung von Krediten. Sollte jedoch bis zu diesem Zeitpunkte noch keine Klärung der Verhältnisse eingetreten sein, so werde es dann dem Kabinettsrate neuerdings überlassen sein, die weiteren Beschlüsse zu fassen.</p>
+                  <p>Der sprechende Unterstaatssekretär stelle daher den Antrag, dass der Landesregierung in Innsbruck zur Fortführung der Wiederaufbauarbeiten im Bezirke Lienz einschließlich der Gebiete Innichen und Sexten zunächst ein weiterer Betrag von 200.000 K sofort telegrafisch überwiesen werde.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Schumpeter</hi> beantragt, der Kabinettsrat wolle grundsätzlich aussprechen, dass es die Finanzlage des Staates nicht gestatte, Gemeinden, von denen es nicht feststehe, dass sie zu Deutschösterreich gehören werden, Subventionen oder Indemnitäten zu erteilen; gleichzeitig aber wolle der Kabinettsrat beschließen, um den im vorliegenden Falle in Betracht kommenden Gemeinden ein Entgegenkommen zu beweisen, dass der Landesregierung zu dem gedachten Zwecke ein Betrag von etwa 60.000 K überwiesen werde.</p>
+                  <p><pb facs="krp-0100_r-0007"/>Staatssekretär Dr. <hi rend="#letterspaced">Bauer</hi> glaubt, dass die Beschlussfassung bis zu dem binnen kurzem zu gewärtigenden Einlangen der definitiven Friedensbedingungen aufzuschieben wäre; sollte Sexten und Innichen zu Italien gelangen, so wäre dann mit Rücksicht auf unsere Finanzlage von der Subventionierung schon wegen des Präjudizes abzusehen.</p>
+                  <p>Der Kabinettsrat pflichtet dieser Auffassung bei und beschließt die Vertagung der Beschlussfassung.</p>
+               </div>
+               <div type="top" xml:id="krp-0100_top03">
+                  <head>
+                     <label>
+                        <num n="3">3.</num>
+                        <seg>Vollzugsanweisung der Staatsregierung über die Trennung der Verwaltung des Telegrafen-, Fernsprech- und Rohrpostwesens von der Postverwaltung.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Paul</hi> erbittet anknüpfend an die in der Sitzung des Kabinettsrates am 20. August d. J. stattgefundene Verhandlung des Gegenstandes (vgl. Pkt. 5 des Kabinettsprotokolles Nr. 99) die Zustimmung des Kabinettsrates zur Erlassung einer Vollzugsanweisung der Staatsregierung über die Trennung der Verwaltung des Telegrafen-, Fernsprech- und Rohrpostwesens von der Postverwaltung mit folgender abgeänderter Fassung des § 5 Abs. 1:</p>
+                  <p>„Die Post- und Telegrafenämter werden insoweit in selbständige Postämter und selbständige Telegrafen- (Fernsprech-) Ämter geteilt als bei ihnen gegen<pb facs="krp-0100_r-0008"/>wärtig für den Postbetriebsdienst einerseits und für den Telegrafen- und Fernsprechbetriebsdienst, anderseits getrennte Abteilungen bestehen und die vollständige Trennung dieser Dienstzweige ohne Schädigung der dienstlichen Interessen und ohne Mehrkosten durchführbar ist.“</p>
+                  <p>Der Kabinettsrat erteilt die erbetene Zustimmung.</p>
+               </div>
+               <div type="top" xml:id="krp-0100_top04">
+                  <head>
+                     <label>
+                        <num n="4">4.</num>
+                        <seg>Schleppgleisanlage in Bruck an der Mur; Behandlung als begünstigter Bau.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Paul erbittet und erhält vom Kabinettsrate die Ermächtigung, die Herstellung einer normalspurigen Schleppgleisanlage von der Industriebahn der Oberdorfer Magnesitwerke GmbH Oberdorf-Bruck an der Mur zum Frachtenbahnhofe der Südbahn in Bruck an der Mur als begünstigten Bau im Sinne der Kaiserlichen Verordnung vom 16. Oktober 1914, RGBl. Nr. 284, erklären zu dürfen.</p>
+               </div>
+               <div type="top" xml:id="krp-0100_top05">
+                  <head>
+                     <label>
+                        <num n="5">5.</num>
+                        <seg>Eingliederung der Marinesektion in das liquidierende Kriegsministerium</seg>
+                     </label>
+                  </head>
+                  <p>Nach eingehender Darstellung der Sachlage beantragt Staatssekretär Dr. <hi rend="#letterspaced">Schumpeter</hi> im Einvernehmen mit dem Staatssekretär für Handel und Gewerbe, Industrie und Bauten:</p>
+                  <list>
+                     <item n="1"><label>1.)</label> Der Kabinettsrat wolle den Generalliquidierungskommissär beauftragen, <pb facs="krp-0100_r-0009"/>in der Gesandtenkonferenz der Sukzessionsstaaten den Antrag zu stellen, die Marinesektion als selbständige liquidierende Zentralstelle aufzulassen und bei gleichzeitiger Restringierung des Personalstandes als Abteilung dem liquidierenden Kriegsministerium einzugliedern, wobei das Bevollmächtigtenkollegium der Marinesektion aufzulösen, die Mitglieder desselben – falls dies erforderlich erscheinen sollte – als Marinefachmänner den einzelnen Vertretern im Bevollmächtigtenkollegium des liquidierenden Kriegsministeriums zuzuteilen wären.</item>
+                  </list>
+                  <p>Für den Fall, dass der vom Generalliquidierungskommissär zu stellende Antrag von der Gesandtenkonferenz abgelehnt werden sollte, beantragt der sprechende Staatssekretär:</p>
+                  <list>
+                     <item n="1"><label>2.)</label> Der Kabinettsrat wolle beschließen, dass der bisherige deutschösterreichische Vertreter im Bevollmächtigtenkollegium der Marinesektion durch einen Finanzbeamten zu ersetzen sei, welcher in unmittelbarer Unterordnung unter den Generalliquidierungskommissär im Bevollmächtigtenkollegium der Marinesektion die deutschösterreichischen Interessen, somit auch jene der deutschösterreichischen Handel- und Gewerbetreibenden und Industriellen <pb facs="krp-0100_r-0010"/>wirksam und energisch zu vertreten hätte, gleichzeitig aber eine finanzielle Kontrolle über die gesamte Gebarung der Marinesektion durchzuführen hätte.</item>
+                  </list>
+                  <p>Der Kabinettsrat erhebt diese Anträge zum Beschluss.</p>
+               </div>
+               <div type="top" xml:id="krp-0100_top06">
+                  <head>
+                     <label>
+                        <num n="6">6.</num>
+                        <seg>Gesetzentwurf über die Aufhebung der Steuerbegünstigung für Alkohol zur Herstellung von Heilmitteln.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. Schumpeter erbittet und erhält die Ermächtigung des Kabinettsrates zur Einbringung des Entwurfes eines Gesetzes über die Aufhebung der Steuerbegünstigung für Alkohol zur Herstellung von Heilmitteln.</p>
+               </div>
+               <div type="top" xml:id="krp-0100_top07">
+                  <head>
+                     <label>
+                        <num n="7">7.</num>
+                        <seg>Einmaliger Zuschuss für Pensionsparteien.</seg>
+                     </label>
+                  </head>
+                  <p>Im Auftrage des Staatssekretärs Dr. Schumpeter führt Sektionschef Dr. <hi rend="#letterspaced">Grimm</hi> aus, dass mit dem Erlasse des deutschösterreichischen Staatsamtes für Finanzen vom 17. Mai 1919, Zl. 24.335, aufgrund des Kabinettsratsbeschlusses vom 9. April l. J. den in Deutschösterreich in Vorschreibung stehenden Pensionsparteien, und zwar den Staatsbediensteten des Ruhestandes, den Witwen und Waisen nach Staatsbediensteten, sowie den mit Gnadengaben beteilten Personen, welche die deutschösterreichi<pb facs="krp-0100_r-0011"/>sche Staatsbürgerschaft besitzen, der deutschen Nation angehören und eine Aushilfe aufgrund der Verordnung des Finanzministeriums vom 11. September 1918, RGBl. Nr. 334, genießen, ein einmaliger Zuschuss bewilligt worden sei. Dieser Zuschuss wurde im Allgemeinen mit dem zweieinhalbfachen der in der Verordnung vom 19. November 1917, RGBl. Nr. 450, festgesetzten Beträge normiert.</p>
+                  <p>Mit Rücksicht darauf, dass den <hi rend="#u">aktiven</hi> Staatsbediensteten – abgesehen von der ihnen im Juni l. J. zuteil gewordenen einmaligen Zuwendung – pro August l. J. ein neuerlicher Zuschuss zur Teuerungszulage bewilligt worden sei, wäre auch den erwähnten Pensionsparteien ein neuerlicher einmaliger Zuschuss, <hi rend="#u">der im Monate August l. J. zur Auszahlung zu gelangen</hi> hätte, zu bewilligen. Das Ausmaß dieses Zuschusses wäre mit den pro November 1918 normierten Beträgen zu bestimmen. (Die Beträge bewegen sich zwischen 30 K und 126 K).</p>
+                  <p>Was den Kreis der zu beteilenden Personen betreffe, so dürfte auch die Bewilligung dieses Zuschusses auf die in Deutschösterreich in Vorschreibung stehenden Pensionsparteien, welche die deutschösterreichische Staatsbürgerschaft besitzen und der deutschen Nation angehö<pb facs="krp-0100_r-0012"/>ren und im Sinne des Erlasses des deutschösterreichischen Staatsamtes für Finanzen vom 12. Juni 1919, Zl. 38.870 (Verlängerung der Wirksamkeit der Finanzministerialverordnung vom 11. September 1918, RGBl. Nr. 334, bis Ende Dezember l. J.) eine Aushilfe beziehen, zu beschränken sein.</p>
+                  <p>Gegenüber der tschechoslowakischen Republik müsse allerdings nach dem Grundsatze der Gegenseitigkeit vorgegangen werden und zwar sei hier Nachstehendes hervorzuheben:</p>
+                  <p>Da seitens der Regierung des tschechoslowakischen Staates zum 1. Februar und zum 1. Mai l. J. den in Böhmen, Mähren und Schlesien in Vorschreibung stehenden Pensionsparteien (ohne Rücksicht auf ihre Staats- oder Volkszugehörigkeit) je ein einmaliger Zuschuss in dem mit der Verordnung des Finanzministeriums vom 19. November 1917, RGBl. Nr. 450, festgesetzten Ausmaße gewährt wurde, sei mit dem zitierten Erlasse des deutschösterreichischen Staatsamtes für Finanzen Zl. 24.335/19 jenen in Deutschösterreich in Vorschreibung stehenden Pensionsparteien tschechoslowakischer Nationalität, welche die deutschösterreichische Staatsbürgerschaft besitzen, ein <pb facs="krp-0100_r-0013"/>einmaliger Zuschuss im zweifachen Betrage der in den §§ 2 und 3 der Verordnung des Finanzministeriums vom 19. November 1917, RGBl. Nr. 450, festgesetzten Beträge flüssig gemacht worden.</p>
+                  <p>Laut Mitteilung des Liquidierungskommissärs des tschechoslowakischen Finanzministeriums in Wien sei nun seitens der tschechoslowakischen Regierung pro August l. J. bereits ein Abbau der einmaligen Zuschüsse zu den Ruhe- (Versorgungs-) Genüssen in Aussicht genommen, und zwar sollen die Zuschüsse für diesen Monat nur mehr im Ausmaße von 50 % der zuletzt gewährten Beträge zur Auszahlung gelangen.</p>
+                  <p>Es wäre daher jenen in Deutschösterreich in Vorschreibung stehenden Pensionsparteien <hi rend="#u">tschechoslowakischer</hi> Nationalität, welche <hi rend="#u">die deutschösterreichische Staatsbürgerschaft</hi> besitzen, ein einmaliger Zuschuss nur <hi rend="#u">im halben Ausmaße</hi> der an die Pensionsparteien deutscher Nationalität zur Auszahlung gelangenden Beträge flüssig zu machen.</p>
+                  <p>Der (einmalige) Aufwand dieser Aktion dürfte für die Zivilstaatspensionisten mit etwa 6 Millionen K, für die Staats<hi rend="#u">bahn</hi>pensionisten mit etwa 4 Millionen K, sohin zusammen mit <hi rend="#u">ungefähr 10 Millionen K</hi> zu veranschlagen sein.</p>
+                  <p><pb facs="krp-0100_r-0014"/>Das Staatsamt für Finanzen beantrage die Genehmigung dieser Verfügungen.</p>
+                  <p>Der Kabinettsrat erteilt die erbetene Genehmigung.</p>
+               </div>
+               <div type="top" xml:id="krp-0100_top08">
+                  <head>
+                     <label>
+                        <num n="8">8.</num>
+                        <seg>Vollzugsanweisung des Staatsamtes für Finanzen über Änderungen in der Organisation der Finanzverwaltung.</seg>
+                     </label>
+                  </head>
+                  <p>Sektionschef Dr. Grimm verweist darauf, dass mit dem Gesetze vom 19. Dezember 1918, StGBl. Nr. 135, betreffs Änderungen in der Organisation der Finanzverwaltung, die Trennung der Finanzverwaltung von der politischen Verwaltung durchgeführt worden sei. In Konsequenz dieser Verfügung sei mit der erwähnten Trennung auch eine Änderung in der Bezeichnung der bisher bei den Bezirkshauptmannschaften bestandenen Steuerabteilungen und in dem Titel der bisherigen zweiten Vorsteher der Finanzlandesbehörden, welchen nunmehr die oberste Leitung dieser Behörden zu übertragen sein wird, notwendigerweise verbunden. Zu diesem Zwecke sei im Grunde des § 4 des obgenannten Gesetzes vom Staatssekretär für Finanzen im Einvernehmen mit dem Staatssekretär für Inneres eine Vollzugsanweisung in Aussicht genommen. Hienach hätten die Steuerabteilungen fortan die Bezeichnung „Steueradministration“, die Vorsteher der Finanzlandesbehörden den Titel „Präsi<pb facs="krp-0100_r-0015"/>dent der Finanzlandesdirektion” und deren Vertreter die Funktionsbezeichnung „Präsidentstellvertreter der Finanzlandesdirektion” zu führen.</p>
+                  <p>Der Kabinettsrat genehmigt die Erlassung der Vollzugsanweisung mit der Maßgabe, dass die Steuerabteilungen nicht die Bezeichnung „Steueradministration”, sondern „Bezirkssteuerbehörde“ zu führen haben werden.</p>
+               </div>
+            </div>
+            <div type="stenogramme">
+               <div n="1">
+                  <head>EINZUFÜGEN.</head>
+                  <p>Transkription in Arbeit.</p>
+               </div>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

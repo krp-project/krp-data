@@ -1,0 +1,622 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href='http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:acdh="https://vocabs.acdh.oeaw.ac.at/schema#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xml:lang="de">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="a" type="main" n="0173">Kabinettsprotokoll Nr. 173 vom 20. April 1920</title>
+            <title level="m" type="main" n="01">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <title level="m" type="sub" n="">Renner III (17. Oktober 1919 – 7. Juli 1920)</title>
+            <meeting>
+               <placeName key="https://d-nb.info/gnd/4066009-6">Wien</placeName>
+               <orgName key="https://d-nb.info/gnd/5162749-8">Kabinettsrat</orgName>
+               <date when-iso="1920-04-20"/>
+            </meeting>
+            <editor>
+               <persName key="https://d-nb.info/gnd/122481836"
+                         role="hasCreator"
+                         xml:id="hwohnout">
+                  <forename>Helmut</forename>
+                  <surname>Wohnout</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</affiliation>
+               <idno type="ORCID">0000-0002-3864-9839</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/120789825"
+                         role="hasCreator"
+                         xml:id="tolechowski">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0003-3291-6876</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/131679384"
+                         role="hasCreator"
+                         xml:id="rlein">
+                  <forename>Richard</forename>
+                  <surname>Lein</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0002-7502-0503</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="aholzer">
+                  <forename>Anna</forename>
+                  <surname>Holzer</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0005-3560-3500</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="dsoelkner">
+                  <forename>Dominik</forename>
+                  <surname>Sölkner</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-9895-7212</idno>
+            </editor>
+            <editor>
+               <persName role="hasContributor" xml:id="ischotzko">
+                  <forename>Ina</forename>
+                  <surname>Schotzko</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-5210-3713</idno>
+            </editor>
+            <funder n="1">
+               <orgName key="https://d-nb.info/gnd/2054142-9" role="hasFunder">Österreichischer Wissenschaftsfonds FWF</orgName>
+               <idno type="project">PAT1495024</idno>
+               <title type="project">Die Protokolle des österreichischen Kabinettsrates 1919–1920</title>
+            </funder>
+            <respStmt>
+               <resp>Projektverantwortung</resp>
+               <orgName key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Projektleitung</resp>
+               <persName key="https://d-nb.info/gnd/120789825" role="hasPrincipalInvestigator">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+                  <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+                  <idno type="ORCID">0000-0003-3291-6876</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Nationaler Forschungspartner</resp>
+               <orgName key="https://d-nb.info/gnd/1123037736" role="hasEnabler">Austrian Centre for Digital Humanities</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Digitalisierung der gedruckten Quellen</resp>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>TEI-Datenmodellierung</resp>
+               <persName role="hasContributor" xml:id="tfruehwirth">
+                  <forename>Timo</forename>
+                  <surname>Frühwirth</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-3997-5193</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technische Supervision</resp>
+               <persName key="https://d-nb.info/gnd/1043833846"
+                         role="hasContributor"
+                         xml:id="pandorfer">
+                  <forename>Peter</forename>
+                  <surname>Andorfer</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-9575-9372</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technisches Consulting und Vorbereitung der Druckausgabe</resp>
+               <persName key="https://d-nb.info/gnd/13281899X"
+                         role="hasContributor"
+                         xml:id="skurz">
+                  <forename>Stephan</forename>
+                  <surname>Kurz</surname>
+                  <affiliation key="https://d-nb.info/gnd/1202798799">Institut für die Erforschung der Habsburgermonarchie und des Balkanraumes</affiliation>
+                  <idno type="ORCID">0000-0003-2546-2570</idno>
+               </persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher key="https://d-nb.info/gnd/1001454-8">Österreichische Akademie der Wissenschaften</publisher>
+            <date when="2028"/>
+            <availability status="free">
+               <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">Lizenziert unter CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/deed.de)</licence>
+            </availability>
+            <idno type="ISBN_Print"/>
+            <idno type="ISBN_Part_epub"/>
+            <idno type="ISBN_Digital"/>
+            <idno type="DOI"/>
+            <idno type="DOI_zenodo"/>
+            <idno type="ebook_ID"/>
+         </publicationStmt>
+         <seriesStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="m" type="main">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <respStmt>
+               <resp>Bearbeitung und Herausgeberschaft</resp>
+               <orgName key="https://d-nb.info/gnd/2024703-5">Universität Wien</orgName>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+         </seriesStmt>
+         <notesStmt>
+            <note>Diese TEI-XML-Datei ist Grundlage für eine Druckausgabe der Edition.</note>
+            <relatedItem>
+               <biblStruct>
+                  <monogr>
+                     <imprint>
+                        <pubPlace key="https://d-nb.info/gnd/4066009-6">Wien</pubPlace>
+                        <publisher key="https://d-nb.info/gnd/2068748-5">Verlag der Österreichischen Akademie der Wissenschaften</publisher>
+                        <date when="2029"/>
+                     </imprint>
+                     <extent/>
+                  </monogr>
+                  <note>
+              <idno/>
+              <ptr/>
+            </note>
+                  <citedRange/>
+               </biblStruct>
+            </relatedItem>
+         </notesStmt>
+         <sourceDesc>
+            <bibl>Quellbestand: AT-OeStA/AdR MRang MR 1Rep KRP Kabinettsratsprotokolle, 1918-1920 (Teilbestand)<ref target="https://www.archivinformationssystem.at/detail.aspx?id=5465">https://www.archivinformationssystem.at/detail.aspx?id=5465</ref>
+            </bibl>
+            <msDesc>
+               <msIdentifier>
+                  <institution key="https://d-nb.info/gnd/37748-X" role="hasOwner">AT-OeStA Österreichisches Staatsarchiv (Archiv (ÖStA))</institution>
+                  <repository key="https://d-nb.info/gnd/1601181-8">AT-OeStA/AdR Archiv der Republik, 1918- (Abteilung)</repository>
+                  <collection>AT-OeStA/AdR MRang MR 1Rep Ministerrat 1. Republik, 1918 - 1938 (Bestand)</collection>
+                  <idno>AT-OeStA_AdR-MRang-MR-1.-Rep.-KRP-173</idno>
+               </msIdentifier>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <abstract>
+            <p>
+          <!--to be generated-->
+        </p>
+         </abstract>
+      </profileDesc>
+      <encodingDesc>
+         <styleDefDecl scheme="css"/>
+         <tagsDecl>
+            <rendition xml:id="b" scheme="css">font-weight:bold;</rendition>
+            <rendition xml:id="su" scheme="css">vertical-align:super;font-size:.7em;</rendition>
+            <rendition xml:id="s" scheme="css">text-decoration:line-through;</rendition>
+            <rendition xml:id="u" scheme="css">text-decoration:underline;</rendition>
+            <rendition xml:id="ow" scheme="css">text-decoration:line-through;text-decoration-style:double;</rendition>
+            <rendition xml:id="r" scheme="css">display:block;text-align:right;</rendition>
+            <rendition xml:id="letterspaced" scheme="css">letter-spacing:0.15em;</rendition>
+            <rendition xml:id="i" scheme="css">font-style:italic;</rendition>
+         </tagsDecl>
+         <editorialDecl>
+            <hyphenation>
+               <p>
+            <!--to be added-->
+          </p>
+            </hyphenation>
+            <correction>
+               <p>
+            <!--to be added-->
+          </p>
+            </correction>
+            <normalization>
+               <p>
+            <!--to be added-->
+          </p>
+            </normalization>
+            <punctuation>
+               <p>
+            <!--to be added-->
+          </p>
+            </punctuation>
+            <stdVals>
+               <p>
+            <!--to be added-->
+          </p>
+            </stdVals>
+            <p>
+          <!--to be added-->
+        </p>
+         </editorialDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#tfruehwirth" when-iso="2026-10-14">TEIGarage output upconverted with upconvert.xsl</change>
+         <change who="#tfruehwirth" when-iso="2026-10-14">TEI header populated with generate_tei_templates.py</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface/>
+   </facsimile>
+   <text>
+      <body>
+         <div xml:id="doc-krp-0173.xml">
+            <head type="dokument">
+               <title type="num">173.<note type="footnote">Das Protokoll trägt den Vermerk <hi rend="#i">Vertraulich!</hi></note>
+               </title>
+               <title type="desc">
+                  <pb facs="krp-0173_r-0001"/>
+                  <pb facs="krp-0173_r-0002"/>[Dienstag] 1920-04-20</title>
+            </head>
+            <div type="dokumentkopf">
+               <div type="vorsitz">
+                  <head>Vorsitz:</head>
+                  <p>Renner</p>
+               </div>
+               <div type="anwesend">
+                  <head>Anwesend:</head>
+                  <p>Deutsch, Eisler, Eldersch, Ellenbogen, Fink, Glöckel, Hanusch, Loewenfeld-Russ, Miklas, Paul, Ramek, Reisch, Resch, Stöckler, Tandler, Waiss</p>
+               </div>
+               <div type="zugezogen">
+                  <head>Zugezogen:</head>
+                  <p>Seitz</p>
+               </div>
+               <div type="schriftfuehrer">
+                  <head>Schriftführer:</head>
+                  <p>unbekannt</p>
+               </div>
+               <div type="dauer">
+                  <head>Dauer:</head>
+                  <p>15.00–18.15 Uhr</p>
+               </div>
+            </div>
+            <div type="komponenten">
+               <p>Reinschrift, Beilagen, Anhang, Konzept, stenographische Mitschrift, Entwurf der Tagesordnung</p>
+            </div>
+            <div type="beilagen">
+               <head>Beilagen:</head>
+               <list>
+                  <item><ref target="#krp-0173_top03">Zu TOP 3</ref>: <ref target="#krp-0173_b01">Notiz für den Staatskanzler über die Anfrage des italienischen Gesandten zu den Kosten der interalliierten Überwachungsausschüsse</ref></item>
+                  <item><ref target="#krp-0173_top08">Zu TOP 8</ref>: <ref target="#krp-0173_b02">Antrag des Staatsamtes für Land- und Forstwirtschaft Zl. 21.437/1919 auf Erklärung der Kampkraftwerke als begünstigten Bau</ref></item>
+                  <item><ref target="#krp-0173_top09">Zu TOP 9</ref>: <ref target="#krp-0173_b03">Vortrag des Staatsamtes für Inneres und Unterricht zu Zl. 14.869/1920 über den Gesetzesbeschluss des Niederösterreichischen Landtages zur Einhebung von Getränkeauflagen im Jahr 1920 in der Gemeinde Liesing</ref></item>
+                  <item><ref target="#krp-0173_top10">Zu TOP 10</ref>: <ref target="#krp-0173_b04">Vollzugsanweisung des Staatsamtes für soziale Verwaltung Zl. 11.386 über die Erhaltung des Arbeiterstandes in gewerblichen Betrieben</ref></item>
+                  <item><ref target="#krp-0173_top11">Zu TOP 11</ref>: <ref target="#krp-0173_b05">Vortrag des Staatsamtes für Finanzen über den Nachlass nach Erzherzog Ludwig Viktor</ref></item>
+                  <item><ref target="#krp-0173_top12">Zu TOP 12</ref>: <ref target="#krp-0173_b06">Gesetzesentwurf über die Voraussetzungen der Übernahme österreichischen Kriegsanleihe als Schuld der Republik Österreich mit Begründung</ref></item>
+                  <item><ref target="#krp-0173_top13">Zu TOP 13</ref>: <ref target="#krp-0173_b07">Vortrag zur Vergabe von Bauarbeiten für die Wasserwerke im Mallnitzer- und Stubachtal</ref></item>
+               </list>
+            </div>
+            <div type="protokoll">
+               <pb facs="krp-0173_r-0003"/>
+               <div type="top" xml:id="krp-0173_top01">
+                  <head>
+                     <label>
+                        <num n="1">1.</num>
+                        <seg>Veräußerung und Belastung von kirchlichem Stammvermögen aus Anlass der Zeichnung und Einzahlung von Schuldverschreibungen der österreichischen 4%igen Losanleihe.</seg>
+                     </label>
+                  </head>
+                  <p>Unterstaatssekretär <hi rend="#letterspaced">Miklas</hi> führt aus, dass zur rechtsgiltigen Veräußerung und Belastung von kirchlichen Vermögenschaften gemäß den Bestimmungen des Gesetzes vom 7. Mai 1874, RGBl. Nr. 50, und der Ministerialverordnung vom 20. Juni 1860, RGBl. Nr. 162, die staatsbehördliche Genehmigung erforderlich sei, deren Erteilung bei größeren Beträgen sowie bei bischöflichen Tafelgütern dem Staatsamte für Inneres und Unterricht zustehe und von einer gewissen Höhe an der Schlussfassung des Kabinettsrates vorbehalten sei.</p>
+                  <p>Um auch den geistlichen Vermögensverwaltungen eine möglichst weitgehende Beteilung an der im Zuge befindlichen Zeichnung der 4%igen österreichischen Losanleihe zu ermöglichen und die erforderliche rasche Abwicklung der einschlägigen Geschäfte zu sichern, habe das Staatsamt für Inneres und Unterricht (Kultusamt) über Ersuchen des Staatsamtes für Finanzen die Landesstellen ermächtigt, insoweit aus Anlass der Zeichnung und Einzahlung von Schuldverschreibungen der Losanleihe die staatliche Genehmigung zur Veräußerung und Belastung von kirchlichen Stammvermögen in höheren Beträgen sowie von bischöflichen Mensal<pb facs="krp-0173_r-0004"/>vermögen in Frage komme, diese Bewilligung – unter der Voraussetzung der vorliegenden kirchenbehördlichen Genehmigung – ohne Rücksicht auf die Höhe des Betrages im eigenen Wirkungskreise zu erteilen.</p>
+                  <p>Der Kabinettsrat genehmigt über Antrag des sprechenden Unterstaatssekretärs nachträglich diese Maßnahme.</p>
+               </div>
+               <div type="top" xml:id="krp-0173_top02">
+                  <head>
+                     <label>
+                        <num n="2">2.</num>
+                        <seg>Zentrale Beschaffung der Betriebserfordernisse für Dienstautomobile.</seg>
+                     </label>
+                  </head>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> teilt mit, dass das nach der Vollzugsanweisung vom 1. Juli 1919, StGBl. Nr. 379, zur Besorgung aller Angelegenheiten des staatlichen Kraftfahrwesens berufene Staatsamt für Verkehrswesen die Absicht bekanntgegeben habe, die zentrale Beschaffung aller Betriebserfordernisse für die bei den staatlichen Ämtern benützten Automobile in die Hand zu nehmen; die Durchführung dieser Neuregelung wurde jedoch erst der Zeit nach Wiederkehr normaler Einkaufsmöglichkeiten vorbehalten. Infolge dieses Aufschubes seien die staatlichen Ämter gerade jetzt, wo die größten Schwierigkeiten bestehen, sich selbst überlassen und darauf angewiesen, wahllos jede Einkaufsmöglichkeit auszu<pb facs="krp-0173_r-0005"/>nützen, die sie überhaupt ausfindig zu machen vermögen.</p>
+                  <p>Die Nachteile dieser Vorgangsweise äußern sich namentlich bei der Beschaffung von Bereifungsmaterial. Die inländischen Fabrikate seien derzeit durchaus minderwertig und stellen sich auf 14[.000]–17.000 K für einen Mantel und nahe an 2.000 K für einen Schlauch. Ausländische Marken seien fast nur im Schleichhandel zu haben und kommen dadurch naturgemäß noch teurer, als es nach der Valutadifferenz gerechtfertigt wäre. Das Staatsamt für Handel und Gewerbe, Industrie und Bauten habe allerdings eine teilweise Versorgung der staatlichen Ämter mit Automobilreifen übernommen, indem bei Erteilung von Einfuhrbewilligungen auf Pneumatiks an die Automobilreifenhändler gewisse Mengen der eingeführten Waren von staatswegen in Anspruch genommen und an staatliche Behörden oder im öffentlichen Interesse tätige Institutionen zu verbilligten Preisen abgegeben werden. Die dadurch erzielte Versorgung bleibe jedoch weit hinter dem tatsächlichen Bedarf zurück und die Staatsämter müssen sich immer wieder an einen mehr oder minder illegitimen Handel wenden, um nur das allerdringendst benö<pb facs="krp-0173_r-0006"/>tigte Material aufzubringen. Dadurch sei es so weit gekommen, dass die Kosten einer Garnitur Pneumatiks nahezu den Betrag von 100.000 K erreichen und der Automobilbetrieb bei den staatlichen Ämtern Summen verschlinge, welche der Staatsschatz auf die Dauer unmöglich leisten könne.</p>
+                  <p>Angesichts dieses Zustandes habe die Staatskanzlei den Antrag gestellt, das Staatsamt für Verkehrswesen zu ersuchen, zunächst behufs Deckung des Pneumatiksbedarfes der staatlichen Automobile aufgrund unmittelbarer staatlicher Bestellungen im Großeinkaufe direkte Verbindungen mit einer ausländischen Firma anzuknüpfen. Inwieweit Körperschaften, die öffentlichen Interessen dienen (Feuerwehren, Rettungsgesellschaft usw.) in die Aktion einzubeziehen wären, könnte noch erwogen werden. Das Staatsamt für Finanzen hätte die erforderlichen Mittel vorschussweise zur Verfügung zu stellen.</p>
+                  <p>Der Kabinettsrat beauftragt das Staatsamt für Handel und Gewerbe, Industrie und Bauten, diese Angelegenheit vorerst einem Studium zu unterziehen und sodann im Einvernehmen mit den beteiligten Ressorts im Kabinettsrate die erforderlichen Anträge zu stellen.</p>
+                  <p><pb facs="krp-0173_r-0007"/>Gleichzeitig beauftragt der Kabinettsrat das Staatsamt für Finanzen festzustellen, welchen staatlichen Organen Dienstautomobile gebühren und welche Anzahl von Wagen darüber hinaus zur Aufrechthaltung des Dienstbetriebes unentbehrlich ist. Über das Ergebnis wird dem Kabinettsrate zu berichten sein.</p>
+               </div>
+               <div type="top" xml:id="krp-0173_top03">
+                  <head>
+                     <label>
+                        <num n="3">3.</num>
+                        <seg>Kosten der interalliierten Überwachungsausschüsse.</seg>
+                     </label>
+                  </head>
+                  <p>Der Vorsitzende teilt mit, dass der italienische Gesandte um eine Mitteilung über die beiläufige Höhe der Kosten ersucht habe, die durch den Aufenthalt der interalliierten Militärmissionen bzw. ihrer ersten Staffel verursacht werden dürften.</p>
+                  <p>Der Kabinettsrat beauftragt das Staatsamt für Finanzen, ein gegenständliches Präliminare auszuarbeiten.</p>
+               </div>
+               <div type="top" xml:id="krp-0173_top04">
+                  <head>
+                     <label>
+                        <num n="4">4.</num>
+                        <seg>Aufstellung der Beratungskommission bei der Heeresverwaltungsstelle in Innsbruck.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr.<hi rend="#letterspaced"> Deutsch</hi> teilt mit, dass es anlässlich der Aufstellung der Beratungskommission bei der Heeresverwaltungsstelle in Innsbruck zu Unstimmigkeiten zwischen den politischen Parteien in Tirol gekommen sei, die <pb facs="krp-0173_r-0008"/>schließlich zu einer Obstruierung der Tätigkeit des Tiroler Landtages geführt hätten. Von christlichsozialer Seite sei aus Tirol an den sprechenden Staatssekretär das Ersuchen um Vermittlung gestellt worden.</p>
+                  <p>Nach einer kurzen Debatte ladet der Kabinettsrat den Vizekanzler Fink ein, soferne eine vorerst noch zu bewirkende Fühlungnahme mit den maßgebenden Faktoren in Innsbruck eine Vermittlung erfolgversprechend erscheinen lasse, in Gemeinschaft mit dem Staatssekretär Dr. Deutsch mit den politischen Parteien an Ort und Stelle zu verhandeln, um die Angelegenheit zu bereinigen. </p>
+               </div>
+               <div type="top" xml:id="krp-0173_top05">
+                  <head>
+                     <label>
+                        <num n="5">5.</num>
+                        <seg>Kündigung des jugoslawischen Kompensationsvertrages.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Loewenfeld-Russ</hi> teilt mit, dass die jugoslawische Regierung den im September v. J. geschlossenen Kompensationsvertrag am 15. d. M. gekündigt habe. Im Sinne der Vertragsbestimmungen könne die Kündigung ausschließlich an einem Monatsersten, und zwar mit einmonatiger Kündigungsfrist gekündigt werden. Redner beantrage, durch unseren Vertreter in Belgrad die Erklärung abzugeben, dass die Kündigung als nicht vertragsmäßig nicht zur Kenntnis ge<pb facs="krp-0173_r-0009"/>nommen werde und erst als vom 1. Mai an vollzogen angesehen werde. Gleichzeitig wäre der Generalwirtschaftskommissär für Jugoslawien anzuweisen, bei der Belgrader Regierung anzufragen, wie der ablaufende Vertrag zu liquidieren sei. Weiters macht der sprechende Staatssekretär darauf aufmerksam, dass wir durch Valutaerläge – es handle sich um einen Betrag von etwa 300 Millionen jugoslawischer Kronen – in der Lage wären, uns noch bis zum Ablauf des Vertrages den Bezug von Lebensmitteln zu sichern. Er richte daher an das Staatsamt für Finanzen das Ersuchen, die entsprechenden Vorsorgen zu treffen. Schließlich wäre mit der Belgrader Regierung tunlichst bald wegen Abschluss eines neuen Vertrages in Fühlung zu treten.</p>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> verweist in diesem Zusammenhange darauf, dass sich die Notwendigkeit ergebe, bereits im gegenwärtigen Zeitpunkt ein Versorgungsprogramm für das nächste Wirtschaftsjahr aufzustellen. Hiebei werde zu erwägen sein, ob wir in Hinkunft an dem Kompensationssystem festhalten oder zum Abschluss von Handelsverträgen übergehen sollen.</p>
+                  <p>Nach einer kurzen Debatte gelangt der Kabinettsrat zu nachstehenden Be<pb facs="krp-0173_r-0010"/>schlüssen:</p>
+                  <list>
+                     <item n="1"><label>1.)</label> Das Staatsamt für Äußeres wird beauftragt, bei der jugoslawischen Regierung wegen Nichteinhaltung der Kündigungsklausel Vorstellung zu erheben.</item>
+                     <item n="2"><label>2.)</label> Die noch zur Verfügung stehende Vertragsfrist bis 1. Mai d. J. ist durch die Einzahlung eines möglichst großen Betrages von jugoslawischen Kronen für Warenimporte auszunützen.</item>
+                     <item n="3"><label>3.)</label> Die Verhandlungen mit der Belgrader Regierung sind tunlichst zu beschleunigen.</item>
+                     <item n="4"><label>4.)</label> Die volkswirtschaftlichen Ressorts werden aufgefordert, die Vorarbeiten für die Deckung unserer wirtschaftlichen Bedürfnisse im nächsten Wirtschaftsjahr in Angriff zu nehmen und insbesondere die Frage der Vertragsverhandlungen zu studieren.</item>
+                  </list>
+               </div>
+               <div type="top" xml:id="krp-0173_top06">
+                  <head>
+                     <label>
+                        <num n="6">6.</num>
+                        <seg>Ressortvorbereitungen für die Fortsetzung der Verhandlungen mit Italien.</seg>
+                     </label>
+                  </head>
+                  <p>Der Vorsitzende richtet an die Staatssekretäre das Ersuchen, die entsprechenden Vorbereitungen für die mit der italienischen Regierung fortzusetzenden Verhandlungen über die noch nicht bereinigten Fragen zu treffen.</p>
+                  <p><pb facs="krp-0173_r-0011"/></p>
+               </div>
+               <div type="top" xml:id="krp-0173_top07">
+                  <head>
+                     <label>
+                        <num n="7">7.</num>
+                        <seg>Beitritt der Staatsregierung zum Gesetzesbeschluss der Nationalversammlung über die Mitwirkung der Nationalversammlung an der Regelung von Eisenbahntarifen, Post-, Telegrafen- und Telefongebühren und Preisen der Monopolgegenstände sowie von Bezügen der in staatlichen Betrieben Beschäftigten.</seg>
+                     </label>
+                  </head>
+                  <p>Über Vorschlag des Vorsitzenden erhebt der Kabinettsrat gegen den Gesetzesbeschluss der Nationalversammlung über die Mitwirkung der Nationalversammlung an der Regelung von Eisenbahntarifen, Post-, Telegrafen- und Telefongebühren und Preisen der Monopolgegenstände sowie von Bezügen der in staatlichen Betrieben Beschäftigten keine Vorstellung.</p>
+                  <p>Das Gesetz ist demgemäß nach Gegenzeichnung durch den Staatskanzler und die zuständigen Staatssekretäre dem Präsidenten der Nationalversammlung zur Fertigung vorzulegen.</p>
+               </div>
+               <div type="top" xml:id="krp-0173_top08">
+                  <head>
+                     <label>
+                        <num n="8">8.</num>
+                        <seg>Erklärung der Kampkraftwerke als begünstigter Bau.</seg>
+                     </label>
+                  </head>
+                  <p>Nach dem Antrage des Staatssekretärs <hi rend="#letterspaced">Stöckler</hi> beschließt der Kabinettsrat, das Projekt der Waldviertler Elektrizitätsgenossenschaft, betreffend den Ausbau der Kampwasserkräfte als begünstigten Bau im Sinne der Kaiserlichen Verordnung vom 16. Oktober 1914, RGBl. Nr. 284, zu erklären.</p>
+               </div>
+               <div type="top" xml:id="krp-0173_top09">
+                  <head>
+                     <label>
+                        <num n="9">9.</num>
+                        <seg>Gesetzesbeschluss des Niederösterreichischen Landtages, betreffend die Bewilligung zur Einhebung von Getränkeauflagen im Jahre 1920 in der Gemeinde Liesing.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Eldersch</hi> teilt mit, dass der Niederösterreichische Landtag in seiner <pb facs="krp-0173_r-0012"/>Sitzung am 11. März d. J. einen Gesetzesbeschluss gefasst hat, womit der Gemeinde Liesing neben anderen Getränkeauflagen auch die Einhebung einer Auflage für Schaumwein im Ausmaße von 100 % der staatlichen Schaumweinsteuer bewilligt werden soll. Da diese letztere eine Produktionssteuer sei, würde durch die beschlossene Form der Auflage die Produktion im Gemeindegebiete getroffen, während die Auflagen nur den Verbrauch im Gemeindegebiete treffen dürfen, nicht aber die Produktion und den Handelsverkehr. Das Staatsamt für Inneres und Unterricht habe deshalb gegen den in Rede stehenden Gesetzentwurf, und zwar mit Rücksicht auf die Dringlichkeit der Angelegenheit – die vierzehntätige Frist des Art. 14 des Gesetzes über die Volksvertretung endet bereits am 14. April 1920 – vor Einholung eines Beschlusses der Staatsregierung Vorstellung erhoben und erbitte sich nunmehr die nachträgliche Genehmigung seines Vorgehens.</p>
+                  <p>Der Kabinettsrat erteilt die erbetene nachträgliche Genehmigung.</p>
+                  <p><pb facs="krp-0173_r-0013"/></p>
+               </div>
+               <div type="top" xml:id="krp-0173_top10">
+                  <head>
+                     <label>
+                        <num n="10">10.</num>
+                        <seg>Vollzugsanweisung des Staatsamtes für soziale Verwaltung über die Erhaltung des Arbeiterstandes in gewerblichen Betrieben.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Hanusch</hi> erbittet und erhält vom Kabinettsrate die Ermächtigung zur Erlassung einer Vollzugsanweisung, wonach die Geltungsdauer der Vollzugsanweisung des Staatsamtes für soziale Verwaltung vom 16. Oktober 1919, StGBl. Nr. 489, über die Erhaltung des Arbeiterstandes in gewerblichen Betrieben bis einschließlich 30. Juni 1920 erstreckt wird.</p>
+               </div>
+               <div type="top" xml:id="krp-0173_top11">
+                  <head>
+                     <label>
+                        <num n="11">11.</num>
+                        <seg>Nachlass nach dem vormaligen Erzherzog Ludwig Viktor; Freigabe des Schlosses Kleßheim.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Reisch</hi> führt aus, dass das Nachlassvermögen des am 18. Jänner 1919 verstorbenen ehemaligen Erzherzogs Ludwig Viktor im Wesentlichen aus einem bei der österreichischen Länderbank in Wien erliegenden Effektendepot, aus dem Lustschloss Kleßheim und der darin befindlichen Kunstsammlung zu bestehen scheine.</p>
+                  <p>Das Schloss selbst samt allem Zubehör (ob die Kunstschätze Zubehör sind, lasse sich ohne genaue Kenntnis der Tatsachen nicht entscheiden) sei unter Mitwirkung des Finanzministers vom verstorbenen Kaiser Franz Joseph I. mit Schenkungsurkunde vom 2. September 1866 in das Eigentum des Erzherzogs Ludwig Viktor mit der ausdrücklichen, auch grundbücherlich angeschriebenen <pb facs="krp-0173_r-0014"/>Beschränkung übertragen worden, dass das Schenkungsobjekt – sei es mittels eines Rechtsaktes unter Lebenden, sei es von Todeswegen – nur an Mitglieder des Kaiserhauses übertragen werden dürfe. Die erwähnte Grundbuchseintragung sei im Jahre 1910 vorerst dahin geändert worden, dass aufgrund der Stiftungsurkunde vom 2. Februar 1910 eine neugeschaffene [Erzherzoglich] Ludwig Viktor[´sche] Familienstiftung als Eigentümer eingetragen wurde. Bereits im Jahre 1912 sei jedoch der ursprüngliche Zustand aufgrund einer Löschungserklärung vom 15. Juli 1912 wieder hergestellt worden. In dieser Löschungserklärung werde festgestellt, dass diese Stiftung mangels Zustimmung der Stiftungsbehörde nicht existent geworden sei. In einem späteren Rechtsakte vom 27. September 1912 werde versucht, aus der Stiftungsanordnung, die neben dem Schloss Kleßheim ein Barvermögen von 2–8 Millionen K und – allerdings unter Vorbehalt freier Veräußerung – das Palais am Schwarzenbergplatz beinhaltet hat, als Erbvertrag nach Privatfürstenrecht darzustellen.</p>
+                  <p>Das zur Abhandlungspflege berufene Bezirksgericht Salzburg habe der <pb facs="krp-0173_r-0015"/>Verlassabhandlung ein Testament des Erblassers vom 19. November 1906 zugrunde gelegt und sowohl die Stiftungsurkunde vom 2. Februar 1910 als [auch] den Rechtsakt vom 27. September 1912 als rechtsunwirksam angenommen. Dieses Gericht habe weiters, da es durch diese Feststellung für den Staat kein formelles Recht schaffen konnte, von der Finanzprokuratur Salzburg eine Äußerung dahin verlangt, ob der Staat auf dieses Vermögen aufgrund der Gesetze vom 3. April 1919 und 30. Oktober 1919, StGBl. Nr. 209 und 501 irgendwelche Ansprüche erhebe.</p>
+                  <p>Nun beabsichtige der Salzburger Landesrat das Lustschloss Kleßheim samt der ganzen Einrichtung von der Testamentserbin Frau Maria Josefa Habsburg-Lothringen zu kaufen. Das Bezirksgericht Salzburg sei geneigt, der Veräußerung gemäß § 145 des Kaiserlichen Patents von 9. August 1854, RGBl. Nr. 208, die verlassbehördliche Genehmigung zu erteilen, sofern erklärt werde, dass seitens des Staates auf diese Vermögensmasse kein Anspruch erhoben werde.</p>
+                  <p>Der mit Beschluss des Kabinettsrates vom 11. April 1919 zum Verwalter des gebundenen Vermögens bestellte Rechtsanwalt Dr. Harpner habe <pb facs="krp-0173_r-0016"/>sich ohne Angabe von Gründen dahin geäußert, dass das Schloss Kleßheim <hi rend="#u">nicht</hi> als gebundenes Vermögen anzusehen sei.</p>
+                  <p>Die gleiche Auffassung teile zufolge eines längeren Gutachtens vom 28. November 1919 auch das Staatsamt für Justiz. Die Wiener Finanzprokuratur, die allerdings nicht volle Aktenkenntnis erlangen konnte, habe sich dahin geäußert, dass sich das Recht des Staates auf das Schloss Kleßheim vertreten ließe und ein detailliertes Studium der Akten nahegelegt.</p>
+                  <p>Zur meritorischen Stellungnahme des Staatsamtes für Finanzen müssten alle einschlägigen Akten erst beschafft werden. Das eine jedoch könne schon heute gesagt werden, dass es, im Falle das Gut Kleßheim vom Staate beansprucht werden sollte, jedenfalls zu einem Prozess käme, der längere Zeit dauern würde und dessen Ausgang mangels einer präzisen Definition des Begriffes „gebundenes Vermögen“ in den berufenen Gesetzen und bei der verworrenen Sach- und Rechtslage unsicher wäre.</p>
+                  <p>Jedenfalls würde aber jede Verzögerung die Absicht des Landesrates Salzburg, durch teilweise Weiterveräußerung dieses Besitzes an ein engli<pb facs="krp-0173_r-0017"/>sches Konzern die Möglichkeit, eine Kinderwohlfahrtsaktion ins Leben zu rufen, vereiteln und zweifellos auch zu unliebsamen Rekriminationen das Landesrates gegenüber der Staatsregierung führen. Eine Verfügung des Staates über dieses Gut im Sinne des Art. I Pkt. 2 Abs. 2 des Gesetzes vom 30. Oktober 1919, StGBl. Nr. 501, erschiene bei einer derart unsicheren Rechtslage nicht am Platze, ebenso dürfte eine Vereinbarung mit der Erbin auf einvernehmlichen Verkauf dieses Streitobjektes nicht rechtzeitig zu erreichen sein.</p>
+                  <p>Der sprechende Staatssekretär ersuche deshalb den Kabinettsrat um Stellungnahme und würde vom Standpunkte seines Ressorts einen Beschluss des Kabinettsrates auf Freigabe des Schlosses Kleßheim in Hinblick auf die Erklärung des Präsidenten Dr. Harpner, das Gutachten des Staatsamtes für Justiz und die Stellungnahme des Landesrates Salzburg zu dieser Frage nicht entgegentreten.</p>
+                  <p>Es bedürfe wohl keiner besonderen Erörterung, dass das übrige Nachlassvermögen im Falle der Freigabe des Schlosses Kleßheim dieses Schicksal teilen würde.</p>
+                  <p><pb facs="krp-0173_r-0018"/>Staatssekretär <hi rend="#letterspaced">Hanusch</hi> gibt seinem Befremden darüber Ausdruck, dass die Landeskommission (§ 6 Abs. 5 des Volkspflegestättengesetzes) das Schloss seinerzeit für die Unterbringung von Invaliden oder Kindern für ungeeignet erklärt hatte, woraufhin die seinerzeitige grundbücherliche Anmerkung der Inanspruchnahme aufgrund des Volkspflegestättengesetzes wieder gelöscht wurde, während das Gebäude nunmehr doch einer Kinderhilfsaktion dienstbar gemacht werden solle. Er beabsichtige daher neuerdings diese Anmerkung vornehmen zu lassen.</p>
+                  <p>Nachdem noch Vizekanzler <hi rend="#letterspaced">Fink,</hi> Staatssekretär Dr. <hi rend="#letterspaced">Ramek</hi> sowie die Unterstaatssekretäre Dr. <hi rend="#letterspaced">Eisler</hi> und Dr. <hi rend="#letterspaced">Tandler</hi> zum Gegenstande gesprochen hatten, beschließt der Kabinettsrat über Vorschlag des Vorsitzenden:</p>
+                  <list>
+                     <item n="1"><label>1.)</label> Dem Bezirksgerichte Salzburg ist auf dessen Anfrage mitzuteilen, dass der Staat auf das Lustschloss Kleßheim und dessen Einrichtung keinen Anspruch aufgrund der Gesetze vom 3. April 1919 und vom 30. Oktober 1919, StGBl. Nr. 209 und 501, erhebt.</item>
+                  </list>
+                  <p><pb facs="krp-0173_r-0019"/></p>
+                  <list>
+                     <item n="1"><label>2.)</label> Das Staatsamt für soziale Verwaltung wird ermächtigt, die Inanspruchnahme des Schlosses Kleßheim aufgrund des Volkspflegestättengesetzes grundbücherlich anmerken zu lassen, und wird weiters ermächtigt, nach Fühlungnahme mit der Landesregierung in Salzburg diese Anmerkung dann löschen zu lassen, wenn dies die Fürsorgezwecke des Staatsamtes für soziale Verwaltung zulässig erscheinen lassen.</item>
+                     <item n="2"><label>3.)</label> Der unter Pkt. 1 gefasste Beschluss wird jedoch erst dann rechtswirksam und ist erst in jenem Zeitpunkte dem Bezirksgericht Salzburg zu intimieren, sobald dem Staatsamt für Finanzen ein beiderseits rechtsverbindlicher Vorvertrag zwischen dem Salzburger Landesrat und den Erben nach dem vormaligen Erzherzog Ludwig Viktor über den Ankauf des Lustschlosses Kleßheim samt Einrichtung vorliegt.</item>
+                  </list>
+               </div>
+               <div type="top" xml:id="krp-0173_top12">
+                  <head>
+                     <label>
+                        <num n="12">12.</num>
+                        <seg>Gesetzentwurf über die Voraussetzungen der Übernahme österreichischer Kriegsanleihe als Schuld der Republik Österreich.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Reisch</hi> erbittet und erhält vom Kabinettsrate die Ermächtigung, den Entwurf eines Gesetzes über die Voraussetzungen der Übernahme österreichischer Kriegsanleihe als Schuld der Republik Öster<pb facs="krp-0173_r-0020"/>reich in der Nationalversammlung einbringen zu dürfen.</p>
+               </div>
+               <div type="top" xml:id="krp-0173_top13">
+                  <head>
+                     <label>
+                        <num n="13">13.</num>
+                        <seg>Vergebung der Bauarbeiten bei den Wasserwerken im Mallnitzer- und Stubachtal.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Paul</hi> führt aus, dass das Staatsamt für Verkehrswesen mit dem Kabinettsratsbeschluss vom 16. März d. J. ermächtigt worden sei, die Bauvergebung für die Kraftwerke im Stubachtale und an der Mallnitz sowie für die Ausgestaltung des Ruetzwerkes noch im Laufe des heurigen Jahres vorzunehmen. Weiters habe das Staatsamt für Verkehrswesen die Ermächtigung erhalten, bei der Vergebung der Bauarbeiten für das Ruetzwerk von einer Offertenausschreibung Abstand zu nehmen, während sich hinsichtlich der Vergebung der beiden anderen Bauten der Kabinettsrat die Entscheidung vorbehalten habe.</p>
+                  <p>Das Staatsamt für Verkehrswesen habe über Antrag des Elektrisierungsamtes im August 1919 die Bauarbeiten für das Spullerseewerk an die Bauunternehmung Zivilingenieure Innerebner und Mayer vormals J. Riehl in Innsbruck <hi rend="#u">freihändig</hi> vergeben, wobei im Wesentlichen folgende Gründe maßgebend gewesen seien:</p>
+                  <p><pb facs="krp-0173_r-0021"/> </p>
+                  <list>
+                     <item n="1"><label>1.)</label> Die schwankenden Lohnverhältnisse und Materialpreise bringen es mit sich, dass die Unternehmer bei allen Bauten, besonders bei solchen, die sich wie im vorliegenden Falle auf mehrere Jahre erstrecken, nur freibleibende Anbote stellen. Hiemit allein sei einer in der Vorkriegszeit üblichen Ausschreibung der Bauten jede Grundlage entzogen.</item>
+                     <item n="2"><label>2.)</label> Eine Offertenausschreibung setze einen bis in die Einzelheiten ausgearbeiteten Entwurf voraus, über dessen Ausführungskosten die Unternehmer die Anbote zu stellen haben. Die Verfassung solcher Detailprojekte nehme mehrere Monate in Anspruch und sei daher bei den gegenwärtigen Zeitverhältnissen unangebracht.</item>
+                     <item n="3"><label>3.)</label> Der allein gangbare Weg ist mithin der Bau in Regie, und zwar unter Mitwirkung von Unternehmern, die über das zu solchen Bauten erforderliche Inventar und die Bauerfahrungen verfügen.</item>
+                     <item n="4"><label>4.)</label> Hiebei seien in die Vereinbarungen mit den Unternehmern alle diejenigen Bedingungen (Festsetzung der Zuschläge, Kündigungsrecht usw.) aufzunehmen, welche die billigste Bauherstellung gewährleisten, was sicher <pb facs="krp-0173_r-0022"/>besser zum Ziele führe, als die Vergebung zu Einheitspreisen im Wege der allgemeinen oder engeren Offertenausschreibung, die erfahrungsgemäß zu Überschreitungen und Nachtragsforderungen führen.</item>
+                     <item n="5"><label>5.)</label> Diese Art der Durchführung der Bauten bedinge aber, dass die Auswahl der Unternehmungen nur auf die vertrauenswürdigsten und leistungsfähigsten Firmen beschränkt werden müsse.</item>
+                  </list>
+                  <p>Die Erfahrungen, welche beim Bau des Spullerseewerkes seit September 1919 gemacht worden seien, hätten die Richtigkeit dieser Grundsätze bestätigt, weshalb sich der sprechende Staatssekretär die Ermächtigung erbitte, auch die Bauarbeiten der Kraftwerke im Stubachtale und an der Mallnitz freihändig vergeben zu dürfen.</p>
+                  <p>Der Kabinettsrat erteilt dem sprechenden Staatssekretär die erbetene Ermächtigung und genehmigt weiters über seinen eingehend motivierten Antrag, dass die Ausführung der Bauarbeiten für das Kraftwerk im Stubachtale der Bauunternehmung Redlich Brüder &amp; Berger in Wien, für das Kraftwerk an der Mallnitz der Kärntner Firma Holenia Franz &amp; Co, die sich mit <pb facs="krp-0173_r-0023"/>der Wiener Bauunternehmung [Ingenieure] Mayreder, Kraus &amp; Co, vereinigt hat, übertragen werde.</p>
+               </div>
+               <div type="top" xml:id="krp-0173_top14">
+                  <head>
+                     <label>
+                        <num n="14">14.</num>
+                        <seg>Ausgestaltung des Mädchenbildungswesens.</seg>
+                     </label>
+                  </head>
+                  <p>Unterstaatssekretär <hi rend="#letterspaced">Glöckel</hi> erinnert daran, dass der Kabinettsrat in seiner Sitzung am 2. März d. J. beschlossen habe, die Frage der Ausgestaltung und finanziellen Förderung des Mädchenbildungswesens vor endgiltiger Stellungnahme zu den Anträgen des Unterrichtsamtes vorerst im Koalitionskomitee zur Sprache zu bringen. Die Angelegenheit sei nun, abgesehen von den in jüngster Zeit erfolgten Erörterungen in der Presse, deshalb dringlich geworden, weil sich der Unterrichtsausschuss in seiner morgigen Sitzung mit dem vom Abgeordneten Friedmann eingebrachten Antrag auf Verstaatlichung sämtlicher Mädchenmittelschulen befassen werde. Der sprechende Unterstaatssekretär erbittet sich eine Weisung des Kabinettsrates, welche Stellung er bei den gegenständlichen Verhandlungen im Unterrichtsausschusse einzunehmen hätte.</p>
+                  <p>Nach einer kurzen Debatte, an welcher sich die Staatssekretäre Dr. <hi rend="#letterspaced">Reisch</hi> und Dr. <hi rend="#letterspaced">Ellenbo</hi><pb facs="krp-0173_r-0024"/><hi rend="#letterspaced">gen</hi> beteiligten, beschließt der Kabinettsrat über Vorschlag des letztgenannten Staatssekretärs den Unterstaatssekretär Glöckel zu ermächtigen, im Unterrichtsausschuss zu erklären, dass die Unterrichtsverwaltung bereit wäre, eine gewisse Anzahl von Mädchenmittelschulen zu errichten, dass aber die Verhandlungen über die Zahl der zu errichtenden Anstalten mit Rücksicht auf die schwerwiegenden finanziellen Rückwirkungen dieser Aktion noch nicht zum Abschluss gebracht werden konnten.</p>
+                  <p/>
+               </div>
+            </div>
+            <div type="stenogramme">
+               <div n="1">
+                  <head>[KRP 173, 20. April 1920, Stenogramm Fenz]</head>
+                  <p><pb facs="krp-0173_s01-0001"/>173., 20. /IV.</p>
+                  <p>[<hi rend="#i">Linkes Obereck:</hi>] Deutsch, Miklas, Paul, </p>
+                  <p>Waiß, Hanusch, Stöckler, </p>
+                  <p>Reisch, Loewenfeld-Ruß, Eldersch, </p>
+                  <p>Resch, Ramek, </p>
+                  <p>Ellenbogen, Tandler, </p>
+                  <p>Glöckel.</p>
+                  <p>Miklas: Auch den kirchlichen Stellen ist die Zeichnung der Losanleihe [zu ermöglichen].</p>
+                  <p>[Ich] bitte, die Landesregierungen ermächtigen zu dürfen, [Veräußerungen] auch über 200.000 Kronen [zu] genehmigen.</p>
+                  <p>Angenommen.</p>
+                  <p>Renner: </p>
+                  <p>Das Verkehrsamt hat die zentrale Bewirtschaftung der Dienstautos zu übernehmen sich bereit erklärt. </p>
+                  <p>Das Staatsamt für Handel ist beauftragt, die Angelegenheit zu studieren (Ellenbogen übergeben). </p>
+                  <p>Das Staatsamt für Finanzen soll feststellen, wem ein Auto gebührt und Antrag stellen.</p>
+                  <p>Reisch: 297 Autos.</p>
+                  <p>[Renner]: [...] will [ein] Präliminiare über die Gebühren der Mitglieder der interall[iierten] Überwachungsausschüsse.</p>
+                  <p>[Beschluss]: Das Staatsamt für Finanzen, Dep[artement] zur Durchführung des Friedensvertrages, ist damit beauftragt.</p>
+                  <p>Deutsch: Beratungskommissionen; </p>
+                  <p>Kommission zur Beratung des Leiters der Heeresverwaltungsstelle. </p>
+                  <p>Es sind aus dem Landtag drei Mitglieder [<hi rend="#i">Einschub:</hi>] nach dem Verhältniswahlrecht [<hi rend="#i">Einschub Ende</hi>] zu wählen. Es wäre [<hi rend="#i">Einschub:</hi>] nach dem Wortlaut des Gesetzes nach der Zusammensetzung des Landtages in Tirol [<hi rend="#i">Einschub Ende</hi>] möglich, dass alle drei Mitglieder Christlichsoziale sind. Dem Sinne des Gesetzes nach </p>
+                  <p>aus allen Parteien. Nunmehr wird der Landtag obstruiert.</p>
+                  <p>Ich habe [einen] Kompromissvorschlag gemacht, dass eine Stelle den Sozialdemokraten abgetreten wird und noch zwei weitere ernannt werden, davon einer [von den] </p>
+                  <p>Christlichsozialen, einer [von den] Deutschnationalen.</p>
+                  <p>Dr. Steidle glaubt, dass die Regierung vermitteln sollte. Sie haben mich gebeten, hinzufahren und mit den Parteien unmittelbar zu verhandeln oder </p>
+                  <p>die Regierung könnte den beiden Parteien sagen, dass wohl formal kein Zweifel ist, dass die Christlichsozialen alle drei Stellen besetzen können, dass aber dem Sinn </p>
+                  <p>des Gesetzes nach auch eine Mitwirkung der anderen Parteien gedacht war. Dazu wären vorzuschlagen zwei weitere, ein Christlichsozialer und ein Deutschnationaler.</p>
+                  <p>[Ich] bitte, Fink mit der Vermittlung zu betrauen.</p>
+                  <p>Fink: Die Tiroler wollen die drei Stellen haben, die ihnen im Gesetz gebühren, sie hätten aber nichts dagegen, wenn die Sozialdemokraten und Deutschnationalen je einen </p>
+                  <p>Vertrauensmann beiziehen.</p>
+                  <p><pb facs="krp-0173_s01-0002"/>Deutsch: Damit wird die Obstruktion nicht aufhören.</p>
+                  <p>Fink: Das Beste wäre, wenn Deutsch hinfährt. Mayr ist ohnedies dort.</p>
+                  <p>[Beschluss]: In Aussicht genommen [<hi rend="#i">Einschub:</hi>] gegebenenfalls [<hi rend="#i">Einschub Ende</hi>] Fahrt nach Innsbruck mit Fink. </p>
+                  <p>Es ist in Aussicht genommen, dass Fink sondiert und dann eventuell mit Deutsch am Donnerstag nach Innsbruck zu fahren.</p>
+                  <p>Loewenfeld-Ruß: </p>
+                  <p>Die jugoslawische Regierung hat den Kompensationsvertrag gekündigt. Im Vertrag ist vorgesehen monatlich am 1. zu vollziehende </p>
+                  <p>Kündigung. Gekündigt wurde am 15. [Bei einer] Besprechung mit dem Staatsamt für Äußeres [wurde] beschlossen, dass das Äußere in Belgrad durch unseren Vertreter </p>
+                  <p>erklärt, dass die Kündigung nicht vertragsgemäß nicht zur Kenntnis genommen wird, sondern erst am vom 1. Mai an [als] vollzogen angesehen wird. </p>
+                  <p>Gleichzeitig wurde K[...] angewiesen, <hi rend="#s">zu sondieren </hi>- anzufragen, wie der ablaufende Vertrag liquidiert werden soll.</p>
+                  <p>Wir wären durch Valutaerläge noch in der Lage bis zum Ablauf des Vertrages uns Lebensmittel zu sichern. 1.) Das Staatsamt für Finanzen müsste uns </p>
+                  <p>300 Millionen jugoslawische Kronen zur Verfügung stellen. Wir müssten trachten, uns [ein] solches Guthaben zu sichern.</p>
+                  <p>2.) Wir müssen sobald als möglich mit der [jugo]slawischen Regierung in Fühlung treten wegen Abschluss eines neuen Vertrages. </p>
+                  <p>Nach den Mitteilungen, die uns zugekommen sind, wäre die Regierung bereit, auf Grundlage schwerer Val[uta] zu liefern. </p>
+                  <p>Meine Anregung geht dahin, möglichst bald anzuregen, dass die Verhandlungen aufgenommen werden.</p>
+                  <p>Reisch: Wir tun so viel als möglich. Ein prinzipielles Hindernis besteht nicht.</p>
+                  <p>Renner: Was die Neuaufnahme der Verhandlungen betrifft: </p>
+                  <p>Wir haben bis zum September Getreide. Aber wir müssen doch ein Programm machen, wie wir das nächste Wirtschaftsjahr leben. </p>
+                  <p>Wir werden das nur durch Verträge mit Rumänien, Jugoslawien, Ungarn, eventuell Russland und Ukraine [erreichen]. Wir müssen uns überlegen, </p>
+                  <p>ob wir an der Kompensationsbasis festhalten sollen oder nicht Handelsverträge [abschließen sollen]. Über das Problem, wie werden wir im nächsten Wirtschaftsjahr </p>
+                  <p>leben und wie schließen wir Handelsverträge mit unseren östlichen Nachbarn - darüber sollen die wirtschaftlichen Ressorts selbst und miteinander verhandeln, </p>
+                  <p>damit wir zu einem Beschluss des Kabinettsrates gelangen können.</p>
+                  <p>Loewenfeld-Ruß: Ungarn ist aus allen Erwägungen auszuschalten. </p>
+                  <p>Rumänien kommt nur für geringfügige Quantitäten, eventuell für Mais, in Betracht und das erst in einem Jahr. </p>
+                  <p>Polen kommt nicht in Betracht, höchstens für Fett und Eier. </p>
+                  <p>Für uns kommt nur Jugoslawien in Betracht.</p>
+                  <p>Wir werden daher im nächsten Jahr noch nicht unsere Versorgung aus dem Osten holen können, sondern nach wie vor vorwiegend aus dem Westen. </p>
+                  <p>Aber Jugoslawien - Getreide wird allerdings Jugoslawien liefern können.</p>
+                  <p><pb facs="krp-0173_s01-0003"/>[Beschluss]: Die Vorstellung gegen die Nichteinhaltung der Kündigungsklausel wird vom Staatsamt für Äußeres [...] werden.</p>
+                  <p>Die noch zur Verfügung stehende Frist bis 1. Mai wird durch Erlag von möglichst vielen jugoslawischen Kronen auszunützen [sein].</p>
+                  <p>Die Verhandlungen mit Belgrad werden beschleunigt.</p>
+                  <p>Die volkswirtschaftlichen Staatsämter sind aufgefordert, die Vorarbeiten für unsere Deckung im nächsten Wirtschaftsjahr in Angriff zu nehmen und insbesondere die Frage der Vertragsverhandlungen [zu] </p>
+                  <p>studieren.</p>
+                  <p>Dienstag abends Personalsitzung.</p>
+                  <p>Renner:</p>
+                  <p>2. a) Der Vertreter des italienischen Gesandten -. </p>
+                  <p>Besonders dringlich [sind] die Verhandlungen des Heeresamtes wegen des Waffenstillstandes. Die italienische Regierung möchte vorher die </p>
+                  <p>nicht bereinigten Fragen vor Inkrafttreten des Friedensvertrages erledigen. </p>
+                  <p>Wir haben nur 3-4 Wochen.</p>
+                  <p>Deutsch: Wir sind über drei Punkte nicht einig:</p>
+                  <p>1.) Die Pferde;</p>
+                  <p>2.) 900 Autos;</p>
+                  <p>3.) ?Fliegerstand.</p>
+                  <p>Wert alles 3 Milliarden. H[...] ?Juneri hat sich zur Vermittlung bereit erklärt.</p>
+                  <p>Loewenfeld-Ruß: Wir haben uns in Rom verpflichtet, 50% unserer staatlichen Importe über Triest zu leiten. </p>
+                  <p>Nun sind wir darauf gekommen, dass die Italiener bei der Ausladung der Schiffe in Triest durch Gebühren, Fracht etc. uns übers Ohr hauen. </p>
+                  <p>Das Staatsamt für Handel muss im Einvernehmen mit dem Staatsamt für Volksernährung und dem Staatsamt für Verkehr die Sache bereinigen.</p>
+                  <p>Renner: Das Staatsamt für Finanzen hat die Abrechnung und den Umrechnungskurs zu verhandeln. Im Einvernehmen mit dem Staatsamt für Justiz.</p>
+                  <p>Reisch: [Ich habe] Bedenken, über die Tilgung der Schulden mit <hi rend="#u">einem</hi> Land allein zu verhandeln.</p>
+                  <p>Renner: Das Staatsamt für Finanzen wird ein Verzeichnis derjenigen Fragen vorlegen müssen, über welche noch verhandelt werden muss.</p>
+                  <p>Die Eisenbahn-Verhandlungen gehen automatisch fort.</p>
+                  <p>Das Staatsamt für Handel soll sich eine Übersicht verschaffen, wie die tschechoslowakischen Abmachungen stehen.</p>
+                  <p><pb facs="krp-0173_s01-0004"/>2. b) Beitritt.</p>
+                  <p>Renner: Angenommen.</p>
+                  <p>5. Stöckler: Kampwerk.</p>
+                  <p>Angenommen.</p>
+                  <p>4. Eldersch: Niederösterreichischer Landtag.</p>
+                  <p>Angenommen.</p>
+                  <p>6. Hanusch: Arbeiterstand.</p>
+                  <p>Reisch: Ich sehe keine zwingende Notwendigkeit.</p>
+                  <p>Angenommen.</p>
+                  <p>7. Reisch: Kleßheim.</p>
+                  <p>Hanusch: Die Landeskommission hat erklärt, dass es für Invaliden- oder Kinderhilfszwecke </p>
+                  <p>nach dem Volkspflegestättengesetz nicht geeignet ist. Daher wurde die Vormerkung gelöscht. Jetzt ist es auf einmal für die </p>
+                  <p>englische Kinderhilfsaktion geeignet. Ich habe veranlasst, dass es wieder vorgemerkt wird.</p>
+                  <p>Ramek: Wenn wir die Sache vom Habsburgergesetz [aus] betrachten, so halte ich es für ausgeschlossen, dass man das Schloss </p>
+                  <p>als gebundenes Vermögen ansehen kann. Die Beschränkung [es] nur an Mitglieder des Kaiserhauses zu veräußern, ist durch den Tod des Eigentümers zweifellos </p>
+                  <p>erloschen. Der Prozess ist sehr zweifelhaft.</p>
+                  <p>Eisler: Ich bin schon dafür, dass das Staatsamt für Soziale Verwaltung sich mit dem Land Salzburg verständigt. </p>
+                  <p>Bei der Durchführung wären gewisse Vorsichten zu beachten. Es soll bei der Verhandlung von uns keine bestimmte Erklärung darüber abgegeben [werden], ob gebunden oder nicht gebunden, </p>
+                  <p><pb facs="krp-0173_s01-0005"/>da sonst ein Präjudiz geschaffen würde.</p>
+                  <p>Der Staatsregierung muss doch ein gewisser Einfluss auf das Schicksal der Verwertung der Sammlungen etc. gesichert werden. </p>
+                  <p>Die Bewilligung, die da gegeben wird, muss schon an gewisse Voraussetzungen geknüpft werden. Insbesondere [ist] wichtig, dass die Erklärung nicht präjudiziell ist.</p>
+                  <p>Tandler: </p>
+                  <p>Ich bin der Meinung, dass man doch allen Parteien mit Ausnahme der Engländer gerecht werden soll. Das Benehmen der Engländer sticht sehr ab gegenüber </p>
+                  <p>dem Verhalten der z. B. der Amerikaner und Schweden, die z. B. [bereit sind], auf ihre Kosten Gebäude zu errichten für Kinder, die um ganz geringe Beträge </p>
+                  <p>Österreich überlassen werden.</p>
+                  <p>Wenn das Land Salzburg den ganzen Komplex kauft um 4 Mill[ionen], so bleibt ihr die Einrichtung und die Ökon[omie] auch dann, </p>
+                  <p>wenn der Staat das Schloss nach dem Schlössergesetz in Anspruch nimmt. Wenn es den Engländern wirklich darum zu tun hat, unsere Kinder </p>
+                  <p>zu erhalten, so können sie ja das auch in dem Schloss, das dem Staat gehört.</p>
+                  <p>Reisch: Für uns steht die Frage zunächst so, ob wir auf das Schloss aufgrund des Habsburgergesetzes Anspruch erheben.</p>
+                  <p>Hanusch: [Ich] bitte um die Entscheidung des Kabinettsrates, ob die neuerliche Eintragung erfolgen kann oder ob von meinem Amt </p>
+                  <p>nichts mehr weiter zu machen ist?</p>
+                  <p>Renner: Wir sind einig, dass wir in den Prozess nicht eintreten können. </p>
+                  <p>Jetzt wird Salzburg das Schloss und alles kaufen. Man muss dann ein Einvernehmen mit Salzburg treffen, damit bei </p>
+                  <p>den Verhandlungen die Vormerkung -.</p>
+                  <p>[Beschluss:] 1.) <hi rend="#s">Die Staatsregierung hält es nicht für opportun, jetzt in den Rechtsstreit</hi> - Wir beantworten die Frage mit "Nein".</p>
+                  <p>2.) Das Staatsamt für Soziale Verwaltung ist ermächtigt, die Inanspruchnahme aufgrund des Schlössergesetzes vorzumerken. </p>
+                  <p>Das Staatsamt für Soziale Verwaltung ist ermächtigt, mit der Landesregierung in Verhandlung zu treten und gegebenenfalls, wenn es die Fürsorgezwecke </p>
+                  <p>des Staatsamtes für Soziale Verwaltung zulassen, mit der Löschung der Vormerkung vorzugehen. </p>
+                  <p><hi rend="#s">Wir werden aber diese Entscheidung erst hinausgeben, wenn sichergestellt ist, dass das Land und even-</hi> -.</p>
+                  <p>3.) Diese Entscheidung wird aber erst dann rechtswirksam und hinausgegeben, wenn vorgelegt wird dem Staatsamt für Finanzen ein beiderseits </p>
+                  <p>rechtsverbindlicher Vorvertrag über den Verkauf des Schlosses an die Landesregierung.</p>
+                  <p><pb facs="krp-0173_s01-0006"/>Reisch: Kriegsanleihegesetz.</p>
+                  <p>Angenommen.</p>
+                  <p>8. Paul: </p>
+                  <p>Der Kabinettsrat [hat] am 16. III. '20 das Verkehrsamt ermächtigt, [dass es] die Bauarbeiten [für das] Ruetzwerk frei vergeben kann. </p>
+                  <p>Der Kabinettsrat hat sich aber vorbehalten die Vergebung der Arbeiten für Mallnitz und Stubachtal. Ich bitte um die Ermächtigung, auch diese </p>
+                  <p>Arbeiten frei zu vergeben, da es keine festen Offerte mehr gibt. Am besten [ist der] Bau in Regie und sich bedienen von vertrauenswürdigen </p>
+                  <p>Baufirmen, die das Material und die Einrichtung haben.</p>
+                  <p>Antrag auf Ermächtigung, den Bau des Stubachtals an Redlich und Ber[ger] [zu vergeben], </p>
+                  <p>[den Bau an der] Mallnitz an Firma Holenia.</p>
+                  <p>Angenommen.</p>
+                  <p>Glöckel: Frage der Übernahme der Mädchenmittelschulen. Das Kabinett hat beschlossen, dass vorher noch mit den beiden Parteien </p>
+                  <p>Fühlung zu nehmen [sei]. Morgen Unterrichtsausschuss, Antrag Friedmann.</p>
+                  <p>[Ich] bitte um Weisung für meine Stellungnahme. Vielleicht könnte man [sagen], so wie die beiden Parteien haben durchleuchten lassen, dass wir uns nur </p>
+                  <p>einlassen können auf die Übernahme von 5 Schulen.</p>
+                  <p>Reisch: Gegen den ganzen Antrag liegen staatsfinanzielle Bedenken vor. Es liegt auch ein Beschluss der Nationalversammlung vor, dass bei neuen Belastungen auch für die Bedeckung vorgesorgt werden muss.</p>
+                  <p>Ellenbogen: Glöckel könnte morgen sagen, dass die Unterrichtsverwaltung bereit wäre, eine gewisse Anzahl <hi rend="#s">zu übernehmen</hi> - zu errichten, dass aber </p>
+                  <p>über die Zahl mit Rücksicht auf die große finanzielle Rückwirkung noch keine Einigung erzielt ist.</p>
+                  <p>Angenommen.</p>
+                  <p>¼ 7 Uhr.</p>
+               </div>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

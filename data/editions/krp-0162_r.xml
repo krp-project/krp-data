@@ -1,0 +1,897 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href='http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:acdh="https://vocabs.acdh.oeaw.ac.at/schema#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xml:lang="de">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="a" type="main" n="0162">Kabinettsprotokoll Nr. 162 vom 19. März 1920</title>
+            <title level="m" type="main" n="01">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <title level="m" type="sub" n="">Renner III (17. Oktober 1919 – 7. Juli 1920)</title>
+            <meeting>
+               <placeName key="https://d-nb.info/gnd/4066009-6">Wien</placeName>
+               <orgName key="https://d-nb.info/gnd/5162749-8">Kabinettsrat</orgName>
+               <date when-iso="1920-03-19"/>
+            </meeting>
+            <editor>
+               <persName key="https://d-nb.info/gnd/122481836"
+                         role="hasCreator"
+                         xml:id="hwohnout">
+                  <forename>Helmut</forename>
+                  <surname>Wohnout</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</affiliation>
+               <idno type="ORCID">0000-0002-3864-9839</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/120789825"
+                         role="hasCreator"
+                         xml:id="tolechowski">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0003-3291-6876</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/131679384"
+                         role="hasCreator"
+                         xml:id="rlein">
+                  <forename>Richard</forename>
+                  <surname>Lein</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0002-7502-0503</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="aholzer">
+                  <forename>Anna</forename>
+                  <surname>Holzer</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0005-3560-3500</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="dsoelkner">
+                  <forename>Dominik</forename>
+                  <surname>Sölkner</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-9895-7212</idno>
+            </editor>
+            <editor>
+               <persName role="hasContributor" xml:id="ischotzko">
+                  <forename>Ina</forename>
+                  <surname>Schotzko</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-5210-3713</idno>
+            </editor>
+            <funder n="1">
+               <orgName key="https://d-nb.info/gnd/2054142-9" role="hasFunder">Österreichischer Wissenschaftsfonds FWF</orgName>
+               <idno type="project">PAT1495024</idno>
+               <title type="project">Die Protokolle des österreichischen Kabinettsrates 1919–1920</title>
+            </funder>
+            <respStmt>
+               <resp>Projektverantwortung</resp>
+               <orgName key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Projektleitung</resp>
+               <persName key="https://d-nb.info/gnd/120789825" role="hasPrincipalInvestigator">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+                  <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+                  <idno type="ORCID">0000-0003-3291-6876</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Nationaler Forschungspartner</resp>
+               <orgName key="https://d-nb.info/gnd/1123037736" role="hasEnabler">Austrian Centre for Digital Humanities</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Digitalisierung der gedruckten Quellen</resp>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>TEI-Datenmodellierung</resp>
+               <persName role="hasContributor" xml:id="tfruehwirth">
+                  <forename>Timo</forename>
+                  <surname>Frühwirth</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-3997-5193</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technische Supervision</resp>
+               <persName key="https://d-nb.info/gnd/1043833846"
+                         role="hasContributor"
+                         xml:id="pandorfer">
+                  <forename>Peter</forename>
+                  <surname>Andorfer</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-9575-9372</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technisches Consulting und Vorbereitung der Druckausgabe</resp>
+               <persName key="https://d-nb.info/gnd/13281899X"
+                         role="hasContributor"
+                         xml:id="skurz">
+                  <forename>Stephan</forename>
+                  <surname>Kurz</surname>
+                  <affiliation key="https://d-nb.info/gnd/1202798799">Institut für die Erforschung der Habsburgermonarchie und des Balkanraumes</affiliation>
+                  <idno type="ORCID">0000-0003-2546-2570</idno>
+               </persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher key="https://d-nb.info/gnd/1001454-8">Österreichische Akademie der Wissenschaften</publisher>
+            <date when="2028"/>
+            <availability status="free">
+               <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">Lizenziert unter CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/deed.de)</licence>
+            </availability>
+            <idno type="ISBN_Print"/>
+            <idno type="ISBN_Part_epub"/>
+            <idno type="ISBN_Digital"/>
+            <idno type="DOI"/>
+            <idno type="DOI_zenodo"/>
+            <idno type="ebook_ID"/>
+         </publicationStmt>
+         <seriesStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="m" type="main">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <respStmt>
+               <resp>Bearbeitung und Herausgeberschaft</resp>
+               <orgName key="https://d-nb.info/gnd/2024703-5">Universität Wien</orgName>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+         </seriesStmt>
+         <notesStmt>
+            <note>Diese TEI-XML-Datei ist Grundlage für eine Druckausgabe der Edition.</note>
+            <relatedItem>
+               <biblStruct>
+                  <monogr>
+                     <imprint>
+                        <pubPlace key="https://d-nb.info/gnd/4066009-6">Wien</pubPlace>
+                        <publisher key="https://d-nb.info/gnd/2068748-5">Verlag der Österreichischen Akademie der Wissenschaften</publisher>
+                        <date when="2029"/>
+                     </imprint>
+                     <extent/>
+                  </monogr>
+                  <note>
+              <idno/>
+              <ptr/>
+            </note>
+                  <citedRange/>
+               </biblStruct>
+            </relatedItem>
+         </notesStmt>
+         <sourceDesc>
+            <bibl>Quellbestand: AT-OeStA/AdR MRang MR 1Rep KRP Kabinettsratsprotokolle, 1918-1920 (Teilbestand)<ref target="https://www.archivinformationssystem.at/detail.aspx?id=5465">https://www.archivinformationssystem.at/detail.aspx?id=5465</ref>
+            </bibl>
+            <msDesc>
+               <msIdentifier>
+                  <institution key="https://d-nb.info/gnd/37748-X" role="hasOwner">AT-OeStA Österreichisches Staatsarchiv (Archiv (ÖStA))</institution>
+                  <repository key="https://d-nb.info/gnd/1601181-8">AT-OeStA/AdR Archiv der Republik, 1918- (Abteilung)</repository>
+                  <collection>AT-OeStA/AdR MRang MR 1Rep Ministerrat 1. Republik, 1918 - 1938 (Bestand)</collection>
+                  <idno>AT-OeStA_AdR-MRang-MR-1.-Rep.-KRP-162</idno>
+               </msIdentifier>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <abstract>
+            <p>
+          <!--to be generated-->
+        </p>
+         </abstract>
+      </profileDesc>
+      <encodingDesc>
+         <styleDefDecl scheme="css"/>
+         <tagsDecl>
+            <rendition xml:id="b" scheme="css">font-weight:bold;</rendition>
+            <rendition xml:id="su" scheme="css">vertical-align:super;font-size:.7em;</rendition>
+            <rendition xml:id="s" scheme="css">text-decoration:line-through;</rendition>
+            <rendition xml:id="u" scheme="css">text-decoration:underline;</rendition>
+            <rendition xml:id="ow" scheme="css">text-decoration:line-through;text-decoration-style:double;</rendition>
+            <rendition xml:id="r" scheme="css">display:block;text-align:right;</rendition>
+            <rendition xml:id="letterspaced" scheme="css">letter-spacing:0.15em;</rendition>
+            <rendition xml:id="i" scheme="css">font-style:italic;</rendition>
+         </tagsDecl>
+         <editorialDecl>
+            <hyphenation>
+               <p>
+            <!--to be added-->
+          </p>
+            </hyphenation>
+            <correction>
+               <p>
+            <!--to be added-->
+          </p>
+            </correction>
+            <normalization>
+               <p>
+            <!--to be added-->
+          </p>
+            </normalization>
+            <punctuation>
+               <p>
+            <!--to be added-->
+          </p>
+            </punctuation>
+            <stdVals>
+               <p>
+            <!--to be added-->
+          </p>
+            </stdVals>
+            <p>
+          <!--to be added-->
+        </p>
+         </editorialDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#tfruehwirth" when-iso="2026-10-14">TEIGarage output upconverted with upconvert.xsl</change>
+         <change who="#tfruehwirth" when-iso="2026-10-14">TEI header populated with generate_tei_templates.py</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface/>
+   </facsimile>
+   <text>
+      <body>
+         <div xml:id="doc-krp-0162.xml">
+            <head type="dokument">
+               <title type="num">162.<note type="footnote">Das Protokoll trägt den Vermerk <hi rend="#i">Vertraulich!</hi></note>
+               </title>
+               <title type="desc">
+                  <pb facs="krp-0162_r-0001"/>[Freitag] 1920-03-19</title>
+            </head>
+            <div type="dokumentkopf">
+               <div type="vorsitz">
+                  <head>Vorsitz:</head>
+                  <p>Renner, teilweise Fink</p>
+               </div>
+               <div type="anwesend">
+                  <head>Anwesend:</head>
+                  <p>Deutsch, Eisler, Eldersch, Ellenbogen, Glöckel, Hanusch, Loewenfeld-Russ, Mayr, Miklas, Paul, Ramek, Reisch, Resch, Stöckler, Tandler, Waiss, Zerdik</p>
+               </div>
+               <div type="zugezogen">
+                  <head>Zugezogen:</head>
+                  <p>Froehlich, Hoedl, Hoheisel, Wilfling</p>
+               </div>
+               <div type="schriftfuehrer">
+                  <head>Schriftführer:</head>
+                  <p>Groß</p>
+               </div>
+               <div type="dauer">
+                  <head>Dauer:</head>
+                  <p>15.00–19.00 Uhr</p>
+               </div>
+            </div>
+            <div type="komponenten">
+               <p>Reinschrift, Beilagen, Konzept, stenographische Mitschrift, Entwurf der Tagesordnung, diverse Zusätze, 24. Personalsitzung</p>
+            </div>
+            <div type="beilagen">
+               <head>Beilagen:</head>
+               <list>
+                  <item><ref target="#krp-0162_top01">Zu TOP 1</ref>: <ref target="#krp-0162_b01">Verzeichnis der Gesetzesbeschlüsse der Nationalversammlung, denen die Staatsregierung zustimmt</ref></item>
+                  <item><ref target="#krp-0162_top02">Zu TOP 2</ref>: <ref target="#krp-0162_b02">Forderungen der Gerichtsangestellten an das Staatsamt für Justiz samt Vollzugsanweisung des Gesetzes über die Neuregelung des Dienstverhältnisses der Beamten der Gerichtskanzlei</ref></item>
+                  <item><ref target="#krp-0162_top02">Zu TOP 2</ref>: <ref target="#krp-0162_b03">Forderungen der Postangestellten</ref></item>
+                  <item><ref target="#krp-0162_top04">Zu TOP 4</ref>: <ref target="#krp-0162_b04">Gesetzesentwurf zur Regelung der dienstlichen Stellung und der Bezüge der Landesschulinspektoren samt Begründung</ref></item>
+                  <item><ref target="#krp-0162_top05">Zu TOP 5</ref>: <ref target="#krp-0162_b05">Vortrag des Unterstaatssekretärs Glöckel über den Gesetzesbeschluss der Salzburger Landesversammlung, betreffend die anlässlich des Krieges der Lehrerschaft einzuräumenden Begünstigungen</ref></item>
+                  <item><ref target="#krp-0162_top06">Zu TOP 6</ref>: <ref target="#krp-0162_b06">Bericht der Staatskanzlei über das Ergebnis der Beratungen des vom Kabinetssrate zur Ausarbeitung eines neuen Zeitungsposttarifes eingesetzten Komitees</ref></item>
+                  <item><ref target="#krp-0162_top07">Zu TOP 7</ref>: <ref target="#krp-0162_b07">Vortrag des Staatsamtes für Handel und Gewerbe, Industrie und Bauten über die Erklärung von Wegen als öffentlichen Interessentenwege und die Bildung öffentlich-rechtlicher Genossenschaften zu deren Herstellung und Erhaltung. Salzburger Landesgesetz</ref></item>
+                  <item><ref target="#krp-0162_top08">Zu TOP 8</ref>: <ref target="#krp-0162_b08">Vortrag des Staatsamtes für Handel und Gewerbe, Industrie und Bauten über die Erklärung der Starkstromleitung der Wiener Städtischen Elektrizitätswerke von Ebenfurth über Sollenau nach Kottingbrunn zum begünstigten Bau</ref></item>
+                  <item><ref target="#krp-0162_top09">Zu TOP 9</ref>: <ref target="#krp-0162_b09">Vortrag des Staatsamtes für Land- und Forstwirtschaft Zl. 6151 über den Gesetzesbeschluss des Salzburger Landtages zur Anforderung von Holzvorräten</ref></item>
+                  <item><ref target="#krp-0162_top09">Zu TOP 9</ref>: <ref target="#krp-0162_b10">Gesetzesbeschluss des Salzburger Landtages über die Anforderung von Holzvorräten</ref></item>
+                  <item><ref target="#krp-0162_top10">Zu TOP 10</ref>: <ref target="#krp-0162_b11">Vortrag des Staatsamtes für Finanzen über den Gesetzesbeschluss der Salzburger Landesversammlung zur Einhebung einer Landes- und Gemeindeabgabe vom unverdienten Wertzuwachs an Liegenschaften</ref></item>
+               </list>
+            </div>
+            <div type="protokoll">
+               <pb facs="krp-0162_r-0002"/>
+               <div type="top" xml:id="krp-0162_top01">
+                  <head>
+                     <label>
+                        <num n="1">1.</num>
+                        <seg>Beitritt der Staatsregierung zu mehreren Gesetzesbeschlüssen der Nationalversammlung.</seg>
+                     </label>
+                  </head>
+                  <p>Über Vorschlag des <hi rend="#letterspaced">Vorsitzenden</hi> erhebt der Kabinettsrat gegen folgende, von der Nationalversammlung beschlossene Gesetze keine Vorstellung:</p>
+                  <list>
+                     <item n="1"><label>1.)</label> Gesetz, betreffend Änderung des Verfahrens in bürgerlichen Rechtsangelegenheiten (2. Gerichtsentlastungsnovelle),</item>
+                     <item n="2"><label>2.)</label> Gesetz über die Regelung der Ruhe- (Versorgungs-) Genüsse der Staatsangestellten und ihrer Hinterbliebenen, sowie der katholischen Seelsorger, fer<pb facs="krp-0162_r-0003"/>ner über Teuerungsmaßnahmen für Pensionisten (Pensionistengesetz),</item>
+                     <item n="3"><label>3.)</label> Gesetz zur vorläufigen Regelung der Versorgungsgenüsse der Witwen und Waisen der Zivilstaatsbeamten, Staatslehrpersonen, Unterbeamten und Diener, dann der Personen des Militärberufsstandes, auf welche die Gesetze vom 18. Dezember 1919, StGBl. Nr. 570, 571 und 572 und vom 20. Dezember 1919, StGBl. Nr. 603 Anwendung finden (Hinterbliebenenversorgungsnovelle),</item>
+                     <item n="4"><label>4.)</label> Gesetz, womit Maßnahmen zur Ausscheidung der überzähligen Berufsmilitärpersonen aus dem aktiven Militärdienstverhältnis getroffen werden (Militärabbaugesetz),</item>
+                     <item n="5"><label>5.)</label> Wehrgesetz,</item>
+                     <item n="6"><label>6.)</label> Gesetz, womit die Staatsregierung zur Veräußerung von Gebäuden ehemals österreichisch-ungarischer Vertretungen und Anstalten im Auslande ermächtigt wird.</item>
+                  </list>
+                  <p>Diese Gesetze sind demgemäß nach Gegenzeichnung durch den Staatskanzler und die zuständigen Staatssekretäre dem Präsidenten der Nationalversammlung zur Fertigung vorzulegen.</p>
+                  <p><pb facs="krp-0162_r-0004"/></p>
+               </div>
+               <div type="top" xml:id="krp-0162_top02">
+                  <head>
+                     <label>
+                        <num n="2">2.</num>
+                        <seg>Forderung der Gerichts- und der Postangestellten.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Ramek</hi> macht dem Kabinettsrate Mitteilung von neuerlichen Forderungen der gerichtlichen Kanzlei- und Grundbuchsbeamten, welche in folgenden Hauptpunkten gipfeln:</p>
+                  <list>
+                     <item n="1"><label>1.)</label> Einreihung sämtlicher Gerichtsunterbeamter und -diener nach dem Beispiel der Gefangenaufseher, der Gendarmerie, Finanzwache und Sicherheitswache in die Beamtenkategorie.</item>
+                     <item n="2"><label>2.)</label> Überstellung der Gerichtskanzlei und Grundbuchsbeamten aus der Gruppe E in die Gruppe C des Zeitbeförderungschemas der Dienstpragmatik.</item>
+                     <item n="3"><label>3.)</label> Erhöhung der Entlohnung für Überstunden.</item>
+                     <item n="4"><label>4.)</label> Definitivstellung der Aushilfskräfte.</item>
+                  </list>
+                  <p>Der sprechende Staatssekretär halte die beiden ersten Punkte für sachlich durchaus ungerechtfertigt und daher unannehmbar. Die Entlohnung der Überstunden werde im Sinne des Kabinettsbeschlusses vom 15. März d. J. intern geregelt werden. Was die Aushilfskräfte anlange, so sei durch die Geschäftsüberlastung der Gerichte eine starke Vermehrung des Hilfspersonales notwendig geworden, die aber – obwohl es sich hier zweifellos um einen dauern<pb facs="krp-0162_r-0005"/>den Personalbedarf handle – infolge der Sperre von Neuaufnahmen nur im Wege provisorischer Anstellungen bewerkstelligt werden konnte. Hierin liege zweifellos eine Unbilligkeit gegenüber den Aushilfskräften und Redner habe darum bereits in Aussicht genommen, im Hinblick auf die Besonderheit dieser Fälle vom Kabinettsrate die Ermächtigung einer Ausnahme vom Verbote der Neuanstellungen für die Gerichte zu erbitten. Er halte es aber nicht für angebracht, eine solche Maßnahme jetzt unter dem Drucke der gestellten Streikandrohung zu vollziehen, und beabsichtige daher, die gesamten Forderungen abzulehnen.</p>
+                  <p>Ministerialrat Dr. <hi rend="#letterspaced">Wilfling</hi> berichtet, dass auch seitens der Postangestellten eine Anzahl neuer Forderungen erhoben worden seien. Die wichtigsten betreffen die Abkürzung der Wartefristen der Beamten der Gruppen A und C in der X. und IX. Rangsklasse um ein Jahr und die Ernennung aller Postunterbeamten und geprüften Postamtsdiener mit Wirksamkeit vom 1. Jänner 1920 zu Staatsbeamten ohne Rangsklasse, bzw. bei einer über die Volksschulbildung hinausgehenden Vorbildung und nach Ablegung <pb facs="krp-0162_r-0006"/>einer noch einzuführenden besonderen Fachprüfung zu Beamten der Zeitbeförderungsgruppe E.</p>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> vertritt die Anschauung, dass in einem Zeitpunkte, wo die Nationalversammlung noch nicht einmal das Gesetz über die jüngsten ohnedies bis an die äußerste Grenze der Leistungsfähigkeit gehenden Aufbesserungen der Staatsangestellten verabschiedet habe, doch nicht wieder weitere Wünsche der Angestellten einzelner Ressorts in Verhandlung gezogen werden können. Nach seiner Auffassung sollte der Kabinettsrat diesen Standpunkt in einem ausdrücklichen Beschlusse festlegen, der den Angestellten und der gesamten Öffentlichkeit zur Kenntnis zu bringen wäre.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Reisch</hi> erklärt sich mit der Anregung des Vorsitzenden sehr einverstanden, meint aber, dass es wirksamer wäre, die Kundgebung nicht vom Kabinettsrate, sondern etwa gelegentlich der Verhandlung des Nachtrages zum Besoldungsübergangsgesetzes von der Nationalversammlung ausgehen zu lassen. Dazu würde sich empfehlen, dass das Koalitionskomitee einen in der Nationalversammlung ein<pb facs="krp-0162_r-0007"/>zubringenden Resolutionsantrag vereinbare, welcher der Regierung die bindende Vorschrift zu erteilen hätte, alle weiteren Wünsche der Staatsangestellten grundsätzlich abzuweisen.</p>
+                  <p>Staatssekretär <hi rend="#letterspaced">Paul</hi> überlässt die Entscheidung hinsichtlich des künftigen Verhaltens zu den Forderungen der Staatsangestellten dem Kabinettsrate; er betont aber, dass bei den Verhandlungen mit den Postangestellten über den Wunsch bezüglich der Abkürzung der Wartefristen der Gruppen A und C in der X. und IX. Rangsklasse ein Kompromiss zustandegekommen sei, über das er einvernehmlich mit dem Vertreter des Staatsamtes für Finanzen innerhalb acht Tagen eine Antwort zugesagt habe. Redner fühle sich dadurch den Postangestellten gegenüber bis zu einem gewissen Grade moralisch verpflichtet und käme durch den Abbruch der Verhandlungen in eine peinliche Lage. Er bitte daher, ihm die Möglichkeit offen zu halten, über den Kompromissvorschlag weitere Besprechungen zu pflegen.</p>
+                  <p>Ähnlich verhalte es sich mit der Forderung der Postunterbeamten und -diener nach Einreihung unter die Beamten. Während der letzten Monate sei eine Reihe von Angestellten der <pb facs="krp-0162_r-0008"/>Unterbeamten- und Dienerkategorien anderer Ressorts dieser Begünstigung teilhaftig geworden und es sei daher durchaus verständlich, dass die Postbediensteten nunmehr für sich das Gleiche verlangen. Die Angelegenheit spiele bereits seit mehreren Monaten und bilde außerdem Gegenstand eines Antrages der Abgeordneten Allina und Zelenka, welcher von der Nationalversammlung dem Staatsamt für Verkehrswesen zur Würdigung übermittelt worden sei. Redner könne sich der Billigkeit des Verlangens im Hinblick auf die Beispiele in den anderen Verwaltungszweigen nicht verschließen und habe in Aussicht genommen, dem Kabinettsrate in der nächsten Zeit einen darauf abzielenden Gesetzesentwurf vorzulegen. Sollte der Kabinettsrat nun die Ablehnung aller weiteren Wünsche der Staatsangestellten hinsichtlich einer Neuregelung des Dienstverhältnisses beschließen, müsse die Gesetzesvorlage unterbleiben, was in den Kreisen der Postbediensteten große Unzufriedenheit über die Hintansetzung ihrer Interessen auslösen würde.</p>
+                  <p>Nach einer weiteren Debatte, an welcher sich noch Vizekanzler <hi rend="#letterspaced">Fink</hi> <pb facs="krp-0162_r-0009"/>und die Staatssekretäre Dr. <hi rend="#letterspaced">Deutsch</hi>, Dr. <hi rend="#letterspaced">Mayr</hi> und <hi rend="#letterspaced">Paul</hi> beteiligen, nimmt der Kabinettsrat schließlich in Aussicht mit folgender Erklärung vor die Öffentlichkeit zu treten:</p>
+                  <p>„Noch bevor die Nationalversammlung in der Lage war, die weitgehenden Zuwendungen für die Staatsangestellten zu beschließen, welche die Staatsregierung in dem vor wenigen Tagen eingebrachten Gesetzentwurf vorgeschlagen hat, haben einzelne Gruppen von Staatsangestellten verschiedener Ressorts und Dienstzweige schon wieder neue sehr weitgehende Forderungen erhoben. Diese Forderungen sind insbesonders gerichtet auf die Überstellung von Beamten in eine höhere Zeitbeförderungsgruppe, auf die Ernennung fast aller noch dem Diener- und Unterbeamtenstande angehörenden Angestellten zu Beamten, wodurch nebst einer außerordentlichen Vermehrung des Beamtenstandes die Aufnahme neuer Kräfte für Dienergeschäfte notwendig würde, sonstige allgemeine Verbesserung der Vorrückung durch Dienstzeitanrechnung, Abkürzung der in der Dienstpragmatik festgesetzten Vorrückungsfristen u. Ä. m. die Erfüllung dieser Wünsche müsste – abgesehen von der Notwendigkeit der Abänderung der Dienstpragmatik – schon an sich und <pb facs="krp-0162_r-0010"/>noch mehr durch die zu befürchtenden Beispielfolgerungen neuerliche schwere finanzielle Belastungen des Staatsschatzes herbeiführen.</p>
+                  <p>Der Kabinettsrat hat daher beschlossen: Die Staatsregierung und die Nationalversammlung haben mit der Erledigung des Nachtrages zum Besoldungsübergangsgesetz die höchsten Opfer gebracht, die der Volksgesamtheit im Hinblick auf die Lage unserer Volkswirtschaft noch zugemutet werden können. Die Staatsregierung kann daher Forderungen einzelner Gruppen von Staatsangestellten verschiedener Ressorts und Dienstzweige der eingangs angeführten Art nicht mehr näher treten.“</p>
+                  <p>Da Unterstaatssekretär <hi rend="#letterspaced">Miklas</hi> und Staatssekretär <hi rend="#letterspaced">Paul</hi> Bedenken dagegen äußern, die Erklärung im Wege der Presse zu veröffentlichen, beschließt der Kabinettsrat, die Frage, ob nicht eher die Form gewählt werden solle, die Erklärung gelegentlich der Verhandlung des Nachtrages zum Besoldungsübergangsgesetz in der Nationalversammlung durch ein Mitglied der Regierung abgeben zu lassen und womöglich auch die Nationalversammlung selbst zu einem grundsätzlichen Beschlusse zu veranlassen, durch welchen <pb facs="krp-0162_r-0011"/>der Regierung bindende Richtlinien für ihr Verhalten in Angelegenheiten der staatlichen Angestellten vorgeschrieben werden, in einer eigenen Kabinettssitzung am 22. März l. J. zu beraten.</p>
+               </div>
+               <div type="top" xml:id="krp-0162_top03">
+                  <head>
+                     <label>
+                        <num n="3">3.</num>
+                        <seg>Bericht über das Ergebnis der wirtschaftlichen Verhandlungen mit Polen.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Ing. <hi rend="#letterspaced">Zerdik</hi> berichtet über das Ergebnis der in Warschau mit der polnischen Regierung geführten Verhandlungen über die Lieferung von Kohle und Lebensmitteln gegen industrielle Artikeln und Sachdemobilisierungsgüter. Er führt aus, dass die Besprechungen in doppelter Richtung gepflogen worden seien und zum Abschlusse eines Übereinkommens über die Liquidierung der bisherigen Lieferungsverpflichtungen und eines zweiten Vertrages über neue Lieferungen geführt haben.</p>
+                  <p>Das Übereinkommen über die Liquidierung des alten Vertrages sehe als besonderen Vorteil für Österreich vor, dass die bisherigen Kohlenlieferungen ausschließlich auf Rechnung des alten Vertrages gehen und dass in den weiteren Transporten auch dann keine Unterbrechung eintreten solle, falls der neue Vertrag nicht sofort zur Ausführung käme. Außerdem erfahren darin verschiedene vom Vorjahre offen gebliebene fi<pb facs="krp-0162_r-0012"/>nanzielle Fragen eine für Österreich durchaus befriedigende Lösung. Der Vertrag sei von Seite der polnischen Regierung bereits genehmigt worden und der sprechende Staatssekretär erbitte, damit die Abmachungen in Vollzug gesetzt werden können, dessen Ratifikation auch durch den Kabinettsrat. </p>
+                  <p>Über den neuen Lieferungsvertrag werde Redner dem Kabinettsrate in der nächsten Sitzung berichten.</p>
+                  <p>Der Kabinettsrat beschließt, dem vom Staatssekretär für Handel und Gewerbe, Industrie und Bauten geschlossenen Übereinkommen über die Liquidierung des abgelaufenen Lieferungsvertrages mit Polen beizutreten.</p>
+               </div>
+               <div type="top" xml:id="krp-0162_top04">
+                  <head>
+                     <label>
+                        <num n="4">4.</num>
+                        <seg>Entwurf eines Gesetzes zur Regelung der dienstlichen Stellung und der Bezüge der Landesschulinspektoren.</seg>
+                     </label>
+                  </head>
+                  <p>Unterstaatssekretär <hi rend="#letterspaced">Glöckel</hi> unterbreitet dem Kabinettsrat den Entwurf eines Gesetzes zur Regelung der dienstlichen Stellung und der Bezüge der Landesschulinspektoren und erbittet die Ermächtigung zu dessen Einbringung in der Nationalversammlung.</p>
+                  <p>Der Kabinettsrat erteilt diese Ermächtigung mit der Maßgabe, dass im § 5 Abs. 1 der Betrag der Funktionszulage ausdrücklich als das Jahresausmaß dieses Bezuges zu bezeichnen ist.</p>
+                  <p><pb facs="krp-0162_r-0013"/></p>
+               </div>
+               <div type="top" xml:id="krp-0162_top05">
+                  <head>
+                     <label>
+                        <num n="5">5.</num>
+                        <seg>Gesetzesbeschluss der Salzburger Landesversammlung, betreffend die anlässlich des Krieges der Lehrerschaft einzuräumenden Begünstigungen.</seg>
+                     </label>
+                  </head>
+                  <p>Unterstaatssekretär Glöckel teilt mit, dass die Salzburger Landesversammlung in der Sitzung vom 13. Februar l. J. einen Gesetzesbeschluss, betreffend die anlässlich des Krieges der Lehrerschaft einzuräumenden Begünstigungen gefasst habe.</p>
+                  <p>Der Gesetzesbeschluss gebe nur insofern zu Bemerkungen Anlass, als er in den §§ 5, 6 und 16 und in der Durchführungsklausel einzelne Ungenauigkeiten enthalte und den Gesetzesbeschluss der Salzburger Landesversammlung vom 5. Februar 1920 über das Diensteinkommen der Lehrpersonen, gegen den die Staatsregierung eine Vorstellung erhoben habe, als bereits in Geltung stehend voraussetze.</p>
+                  <p>Da der Landesrat bevollmächtigt wurde, allenfalls erforderliche Änderungen über Verlangen der Staatsregierung im kurzen Wege vorzunehmen, wäre von der Erhebung einer Vorstellung gegen den Gesetzesbeschluss abzusehen und die Landesregierung lediglich zu ersuchen, die oben angedeuteten Änderungen beim Landesrate anzuregen.</p>
+                  <p>Der sprechende Unterstaatssekretär erbitte sich daher die Ermächtigung, die Landesregierung in diesem <pb facs="krp-0162_r-0014"/>Sinne verständigen zu dürfen und an sie die Einladung zu richten, das entsprechend geänderte Gesetz zur Beisetzung der Gegenzeichnung wieder vorzulegen. Weiters wolle der Kabinettsrat zustimmen, dass von einer neuerlichen Berichterstattung im Gegenstande auch in dem Fall Umgang genommen werde, als das wieder vorgelegte Gesetz zwar nicht vollständig den der Landesregierung zu machenden Anregungen entspreche, aber dennoch zu keinem wesentlichen Bedenken Anlass gebe.</p>
+                  <p>Der Kabinettsrat beschließt im Sinne des gestellten Antrages.</p>
+               </div>
+               <div type="top" xml:id="krp-0162_top06">
+                  <head>
+                     <label>
+                        <num n="6">6.</num>
+                        <seg>Neuregelung der Zeitungspostgebühren.</seg>
+                     </label>
+                  </head>
+                  <p>Über Einladung des <hi rend="#letterspaced">Vorsitzenden</hi> berichtet Generalpostdirektor Sektionschef <hi rend="#letterspaced">Hoheisel</hi> über das Ergebnis der Beratungen der vom Kabinettsrate in seiner Sitzung am 4. Februar d. J. zur Ausarbeitung eines neuen Zeitungsposttarifes eingesetzten Kabinettskonferenz.</p>
+                  <p>Der von der Postverwaltung ursprünglich ausgearbeitete, sogenannte Blatttarif sei fallen gelassen und die Postverwaltung, einer Anregung des Sektionschefs <hi rend="#letterspaced">Eldersch</hi> <pb facs="krp-0162_r-0015"/>entsprechend, aufgefordert worden, einen neuen Tarifentwurf für die Tageszeitungen nur auf dem Gewichte nach dem Satze: 90 h für 1 kg bei einer Mindestgebühr von 3 h für die Nummer aufzubauen, bei monatlicher Barzahlung der Gebühren und Erlag eines Sicherstellungsbetrages durch die Zeitungsverwaltungen. Für die seltener erscheinenden Zeitungen sollte der Tarif nach Gewichtsstufen festgesetzt und mit wenigstens 4 h bemessen, die Gebühren wie bisher mit Zeitungsmarken entrichtet werden.</p>
+                  <p>Der Generalpostdirektor habe nunmehr der Kabinettskonferenz den Antrag unterbreitet, den Tarif auf dieser Grundlage mit folgenden Änderungen und Ergänzungen aufzustellen:</p>
+                  <list>
+                     <item n="1"><label>1.)</label> Zur Vereinfachung der Berechnung und aus staatsfinanziellen Gründen sei die Gebühr nach dem Satze: 1 K für 1 kg festzusetzen. Bei den schwächeren Zeitungen sei die daraus folgende Erhöhung unbedeutend, bei den umfangreichen (Inseraten-) Zeitungen falle sie jedoch erheblich ins Gewicht. Zudem stehe der Satz 1 K für 1 kg in einem natürlichen Verhältnisse zum gewöhnlichen Drucksachentarif, nämlich 1:2.</item>
+                     <item n="2"><label>2.)</label> Die öfter als siebenmal in der Woche erscheinenden Zeitungen haben sowohl <pb facs="krp-0162_r-0016"/>eine täglich einmalige als auch eine täglich zweimalige Versendung. Die auf das Gewicht gegründete Leistung der Post sei zwar in beiden Fällen gleich, im zweiten Falle sei die Post aber durch die gesonderte Behandlung der Morgen- und der Abendblätter bedeutend mehr in Anspruch genommen (<hi rend="#u">doppelte</hi> Aufgabe, Sortierung, Stempelung, Kartierung, Zustellung und so fort), daher müsse für diese Mehrleistung eine besondere Vergütung festgesetzt werden. Es werde eine Sondergebühr vorgeschlagen, die in einem prozentuellen Verhältnisse zur Versendungsgebühr steht, dergestalt, dass sie umso höher werde, je schwerer die Zeitung sei.</item>
+                     <item n="3"><label>3.)</label> Für die seltener erscheinenden Blätter sei der Tarif nach Gewichtsstaffeln von 50:50 g abzustufen und die Gebühr – in Übereinstimmung mit der Grundlage bei den Tageszeitungen – in der Höhe des halben Drucksachentarifes festzusetzen: Für je 50 g für die f1achverpackten Zeitungen 5 h, für die rollenförmigen 7 ½ h. Für die ganz kleinen Wochenblätter, die hauptsächlich nur in einem beschränkten Umkreise Verbreitung haben, sei eine Vorstufe bis 25 g zum Satze von 3 h einzuführen.</item>
+                  </list>
+                  <p><pb facs="krp-0162_r-0017"/></p>
+                  <list>
+                     <item n="1"><label>4.)</label> Im Zusammenhange mit der Einführung des neuen Tarifes sei vorläufig für die Tageszeitungen die adresslose Versendung einzuführen, aus Betriebsrücksichten jedoch nur schrittweise. Zum ersten Schritte seien nicht bloß Blätter in Wien, sondern auch in den übrigen Landeshauptstädten heranzuziehen.</item>
+                     <item n="2"><label>5.)</label> Die Neuerungen 1–4 seien mit <hi rend="#u">1. Juli</hi> d. J. durchzuführen, dies aus dem Grunde, weil die betriebsdienstlichen Vorbereitungen nicht gestatten, sie früher in Wirksamkeit zu setzen; auch können im Auslandsverkehre Gebührenerhöhungen, da der mit 1. April beginnende neue Bezugsabschnitt für den ausländischen Postabonnementsdienst nicht mehr in Betracht zu ziehen sei, erst mit dem nächsten vierteljährigen Bezugsabschnitte, der am 1. Juli beginne, in Wirksamkeit gesetzt werden.</item>
+                  </list>
+                  <p>Staatssekretär <hi rend="#letterspaced">Paul</hi> stellt aufgrund einstimmigen Beschlusses der Kabinettskonferenz, an welcher an Stelle des dienstlich verhinderten Staatssekretärs Ing. Zerdik Staatssekretär Dr. Ramek teilnahm, nachstehende Anträge:</p>
+                  <list>
+                     <item n="1"><label>1.)</label> Die Vorschläge des Generalpost<pb facs="krp-0162_r-0018"/>direktors werden genehmigt.</item>
+                     <item n="2"><label>2.)</label> Die vorgeschlagenen Gebührenansätze haben in Übereinstimmung mit den sonstigen aus Anlass der Bezugsaufbesserungen der öffentlichen Angestellten eintretenden Gebührenerhöhungen durchgehends eine 100%ige Erhöhung zu erfahren.</item>
+                  </list>
+                  <p>Der sprechende Staatssekretär teilt ferner mit, die Kabinettskonferenz habe den Wunsch ausgesprochen, dass sich unter den ersten Wiener Blättern, die zur adresslosen Verständigung herangezogen werden, auch die „Arbeiter-Zeitung“ und die „Reichspost“ befinden.</p>
+                  <p>Der Kabinettsrat erhebt die Anträge der Kabinettskonferenz zum Beschluss und ermächtigt gleichzeitig den Staatssekretär für Verkehrswesen über dessen Antrag, im Falle eine Verringerung der in Aussicht genommenen Ansätze des künftigen gewöhnlichen Drucksachentarifes eintreten sollte, auch eine entsprechende Ermäßigung des Zeitungsposttarifes zur Aufrechterhaltung der Relation 1:2 platzgreifen zu lassen. Schließlich erteilt der Kabinettsrat dem genannten Staatssekretär die Ermächtigung, nunmehr auf Grundlage des Entwurfes mit den Zeitungsorganisationen in Verhandlungen einzutreten. </p>
+                  <p><pb facs="krp-0162_r-0019"/></p>
+               </div>
+               <div type="top" xml:id="krp-0162_top07">
+                  <head>
+                     <label>
+                        <num n="7">7.</num>
+                        <seg>Gesetzesbeschluss des Salzburger Landtages, betreffend die Erklärung von Wegen als öffentliche Interessentenwege und die Bildung öffentlich-rechtlicher Genossenschaften zu deren Herstellung und Erhaltung.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Ing. <hi rend="#letterspaced">Zerdik</hi> teilt mit, dass der Salzburger Landtag in der Sitzung vom 11. Februar d. J. einen Gesetzesbeschluss gefasst habe, wonach Wege, die zwar dem öffentlichen Verkehre dienen, jedoch ausschließlich oder überwiegend nur für die Besitzer und Bewohner bestimmter Liegenschaften von Interesse sind, von der Gemeindevertretung als öffentliche Interessentenwege erklärt werden können.</p>
+                  <p>Mit der Durchführung des Gesetzes werde der Staatssekretär für Inneres und Unterricht betraut.</p>
+                  <p>Sachlich seien gegen die Bestimmungen des Gesetzes keine Einwendungen zu erheben. In der Hauptsache handle es sich hiebei um die Schaffung von Konkurrenzen für Wegeanlagen, welche nach ihrer Bedeutung für den Verkehr zwar die Interessen einer Gemeinde oder Ortschaft als Ganzes nicht berühren, wohl aber den angrenzenden Grundbesitzern zugutekommen und wegen der größeren Anzahl dieser Beteiligten nicht gut als bloße Privatwege behandelt werden können.</p>
+                  <p>Dagegen erscheine es notwendig, die Vollzugsklausel in dem Sinne abzuändern, dass an Stelle des Staatssekretärs für Inneres und Unterricht <pb facs="krp-0162_r-0020"/>der für die Angelegenheiten des Straßenwesens ressortmäßig zuständige Staatssekretär für Handel und Gewerbe, Industrie und Bauten genannt werde.</p>
+                  <p>Das Gesetz erwähne in § 2 gelegentlich auch den Fall einer Neuregelung der rechtskräftig festgesetzten Beitragspflicht, gebe aber keinen Anhaltspunkt dafür, wann eine solche Neuregelung zu erfolgen habe. Eine Klarstellung dieses wichtigen Punktes im Gesetze erscheine höchst wünschenswert. Auch könnten bei Bildung einer öffentlichen Weggenossenschaft die Besitzer jener Liegenschaften zu einem weiteren Verbleiben in der Genossenschaft billigerweise nicht verhalten werden, wenn sie von dem Fortbestande des öffentlichen Interessentenweges keinen Nutzen mehr haben. In diesem Falle wäre ein Anspruch auf Ausscheidung aus der Genossenschaft anzuerkennen. Diesen Verhältnissen wäre durch den nachstehenden etwa im § 3 als Schlussabsatz aufzunehmenden Zusatz Rechnung zu tragen:</p>
+                  <p>„Die Verpflichtung zur Beitragsleistung ist bei erheblicher Änderung der maßgebenden Verhältnisse neu zu regeln; sie ist ganz aufzuheben, wenn <pb facs="krp-0162_r-0021"/>eine Liegenschaft von dem Fortbestande eines öffentlichen Interessentenweges keinen Nutzen mehr hat. In diesem Falle ist auch der Austritt aus der öffentlich-rechtlichen Weggenossenschaft zulässig.“</p>
+                  <p>Der sprechende Staatssekretär stelle daher den Antrag: Die Gegenzeichnung ist gemäß Art. 14 Abs. 4 des Gesetzes vom 14. März 1919, StGBl. Nr. 179, wegen unrichtiger Fassung der Vollzugsklausel zu verweigern und ist dies der Landesregierung Salzburg bekanntzugeben. Gleichzeitig wird eine Ergänzung des Gesetzes in dem oben erörterten Sinne empfohlen.</p>
+                  <p>Dem Landesrate ist nahezulegen, falls er von der Landesversammlung ermächtigt wurde, unwesentliche von der Staatsregierung verlangte Änderungen des Gesetzes vorzunehmen, dieses in den beiden bezeichneten Punkten abzuändern, bzw. zu ergänzen und eine Neuausfertigung des Gesetzestextes zur Gegenzeichnung dem Staatssekretär für Handel und Gewerbe, Industrie und Bauten vorzulegen. Dieser wird für den Fall der Richtigstellung der Vollzugsklausel zur Vornahme der Gegenzeichnung ermächtigt. </p>
+                  <p><pb facs="krp-0162_r-0022"/>Der Kabinettsrat beschließt im Sinne des gestellten Antrages.</p>
+               </div>
+               <div type="top" xml:id="krp-0162_top08">
+                  <head>
+                     <label>
+                        <num n="8">8.</num>
+                        <seg>Starkstromleitung der Wiener Städtischen Elektrizitätswerke von Ebenfurth über Sollenau nach Kottingbrunn; Förderbahn zum Kohlenbergbau der „Montana“ Bergbau-Gesellschaft mbH bei Gratwein; Erklärung als begünstigte Bauten.</seg>
+                     </label>
+                  </head>
+                  <p>Über Antrag des Staatssekretärs Ing. Zerdik stimmt der Kabinettsrat zu, dass die Errichtung der Starkstromleitung der Wiener Städtischen Elektrizitäts-Werke von Ebenfurth über Sollenau nach Kottingbrunn sowie die von der „Montana“ Bergbau-Gesellschaft mbH geplante schmalspurige Förderbahn von ihrem Kohlentagbau in der Gemeinde Eisbach zur Bahnverladestelle bei Gratwein als begünstigte Bauten im Sinne der Kaiserlichen Verordnung vom 16. Oktober 1914, RGBl. Nr. 284, erklärt werden.</p>
+               </div>
+               <div type="top" xml:id="krp-0162_top09">
+                  <head>
+                     <label>
+                        <num n="9">9.</num>
+                        <seg>Gesetzesbeschluss des Salzburger Landtages, betreffend die Anforderung von Holzvorräten.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Stöckler</hi> bringt dem Kabinettsrat zur Kenntnis, dass der Salzburger Landtag in seiner Sitzung am 14. Februar d. J. einen Gesetzesbeschluss, betreffend die Anforderung von Holzvorräten, gefasst habe.</p>
+                  <p>Dieser Gesetzesbeschluss erscheine zunächst verfassungswidrig, weil mit ihm der Landtag von Salzburg eine gesetzgebende Gewalt auf einem Gebiete <pb facs="krp-0162_r-0023"/>der Wirtschaftsgesetzgebung in Anspruch nehme, wo sie nicht den Landesvertretungen, sondern der Nationalversammlung zustehe, und weil überdies der Gesetzesbeschluss in Widerspruch mit der Preistreibereiverordnung vom 24. März 1917, RGBl. Nr. 131, und mit dem Gesetze vom 4. Juli 1919, StGBl. Nr. 353, über die Sicherstellung ausländischer Lebensmittel- und Rohstoffkredite durch Inanspruchnahme von in privatem Besitz befindlichen Goldmünzen und ausländischen Wertpapieren komme.</p>
+                  <p>Wenn weiters auch von anderen untergeordneten rechtlichen Bedenken, die gegen den Gesetzesbeschluss bestehen, abgesehen werde, so müsse aber im Einzelnen doch noch darauf hingewiesen werden, dass der § 6 des Gesetzesbeschlusses eine Art Rechtszug von der Landesregierung zum Landesrate vorsehe, welcher dem gegenseitigen rechtlichen Verhältnisse zwischen den beiden Landesorganen, wie es sich im Sinne des Gesetzes vom 4. November 1918, StGBl. Nr. 24, darstelle, nicht entspreche.</p>
+                  <p>Endlich sei die Fassung der Vollzugsklausel des Gesetzesbeschlusses keine entsprechende, da in ihr der Staatssekretär für Justiz in erster <pb facs="krp-0162_r-0024"/>Linie mit dem Vollzuge des Gesetzes betraut werde, diesem aber im vorliegenden Falle nach den Bestimmungen des Gesetzes die führende Rolle nicht zustehe.</p>
+                  <p>Praktisch sei die präjudizierliche Wirkung des gegenständlichen Gesetzesbeschlusses von schwerwiegendster Bedeutung, indem sicherlich auch alle anderen Länder mit ähnlichen Gesetzen folgen würden. Dadurch würde das einheitliche Wirtschaftsgebiet Österreichs vollkommen zerrissen, der Verkehr mit Holz aus der staatlichen Überwachung zur Gänze ausscheiden, somit der Einfluss des Staates auf die wichtigste Quelle zur Beschaffung ausländischer Valuta aufhören, worunter insbesondere die Volksernährung leiden müsste, die Verfügung mit unserem wichtigsten Rohprodukte in das Belieben der Landesverwaltungen gestellt würde und die Versorgung unserer so wichtigen holzverarbeitenden Industrien, wie der Papier-, Möbelfabrikation, des Bergbaues usw. gefährdet werden könnte. Die Lage Österreichs, in die es durch derartige Gesetzesbeschlüsse der Länder kommen würde, würde sich jedenfalls mit Rücksicht auf das Ausland und die Bestimmungen unseres Friedensvertrages <pb facs="krp-0162_r-0025"/>von St. Germain äußerst verschlechtern.</p>
+                  <p>Aufgrund der heute im Staatsamte für Land- und Forstwirtschaft stattgehabten, zwischenstaatsamtlichen Besprechung, welcher Vertreter der Staatskanzlei, der Staatsämter für Inneres und Unterricht, für Justiz, für Finanzen, für Handel und Gewerbe, Industrie und Bauten und für Volksernährung beiwohnten, werde beantragt, dass die Staatsregierung gegen den Gesetzesbeschluss des Landtages von Salzburg vom 14. Februar 1920 Stellung nehme, wobei es dem Beschlusse des Kabinettsrates überlassen bleibe, ob diese Stellungnahme durch eine Vorstellung gemäß Abs. 1 Art. 14 des Gesetzes vom 14. März 1919, StGBl. Nr. 179, zu erfolgen habe, oder ob sofort mit der Anfechtung des Gesetzesbeschlusses vor dem Verfassungsgerichtshofe im Sinne des Abs. 1 des Art. 15 desselben Gesetzes vorzugehen wäre.</p>
+                  <p>Die Mehrheit der Vertreter der Staatsämter (und zwar Staatskanzlei, Justiz, Finanzen, Inneres und Unterricht und Land- und Forstwirtschaft) sei aus Gründen der Taktik und Politik für die mildere Form eingetreten, vorerst eine Vorstellung zu erheben, wobei aber schon ausdrücklich zu betonen wäre, <pb facs="krp-0162_r-0026"/>dass sich die Staatsregierung für den Fall des Verharrens des Landtages auf seinem Gesetzesbeschlusse, die Anfechtung beim Verfassungsgerichtshofe vorbehalte.</p>
+                  <p>Die Vertreter der Staatsämter für Handel und Gewerbe, Industrie und Bauten und für Volksernährung hätten sich mit Rücksicht auf die außerordentliche Wichtigkeit des Gegenstandes und eine eventuelle Verschlechterung der rechtlichen Position der Staatsregierung vor dem Verfassungsgerichtshofe und auch ihrer Stellung bei Kompromissverhandlungen, welche nach ihrer Meinung einträte, wenn zuerst eine Vorstellung erhoben würde, dafür ausgesprochen, sofort mit einer Anfechtung des Gesetzesbeschlusses als verfassungswidrig beim Verfassungsgerichtshofe vorzugehen.</p>
+                  <p>Die weitere Austragung der Angelegenheit sei mit Rücksicht auf die wesentlichsten Bestimmungen des Gesetzesbeschlusses vom Staatsamte für Handel und Gewerbe, Industrie und Bauten übernommen, welches sofort den Beschluss des Kabinettsrates telegrafisch der Landesregierung in Salzburg mitteilen werde.</p>
+                  <p>In der sich hierüber entwickelnden eingehenden Debatte, an welcher sich <pb facs="krp-0162_r-0027"/>die Staatssekretäre Dr. <hi rend="#letterspaced">Loewenfeld-Russ</hi> und Dr. <hi rend="#letterspaced">Ramek</hi>, die Unterstaatssekretäre Dr. <hi rend="#letterspaced">Eisler</hi> und <hi rend="#letterspaced">Miklas</hi> sowie Sektionsrat Dr. <hi rend="#letterspaced">Froehlich</hi> beteiligten, wurde an der Hand der einschlägigen Gesetzesbestimmungen die Frage erörtert, ob die Möglichkeit bestehe, zuerst gegen einen Gesetzesbeschluss der Landesversammlung das Mittel der Vorstellung zu ergreifen und in derselben Angelegenheit sodann den wiederholten Beschluss beim Verfassungsgerichtshof anzufechten. Es trat hiebei die einmütige Auffassung zutage, dass der Wortlaut der Art. 14 und 15 des Gesetzes vom 14. März 1919, StGB1. Nr. 179, immerhin die Möglichkeit nicht ausschließe, dass die erst gegen den Beharrungsbeschluss erhobene Anfechtung vom Verfassungsgerichtshofe wegen Fristversäumnis a limine zurückgewiesen werde.</p>
+                  <p>Aufgrund des Ergebnisses der Debatte beantragt Vizekanzler <hi rend="#letterspaced">Fink</hi>, gegen den Gesetzesbeschluss Vorstellung zu erheben und ihn gleichzeitig beim Verfassungsgerichtshofe anzufechten.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Mayr</hi> verweist auf die Rückwirkungen, welche das Herausgreifen gerade dieses Falles für eine Anfechtung beim Verfassungsge<pb facs="krp-0162_r-0028"/>richtshof insbesondere auf die Haltung des Landes Salzburg bei der bevorstehenden Länderkonferenz in Linz haben könnte. Er halte es daher aus politischen Gründen für empfehlenswert, doch nur von dem Mittel der Vorstellung Gebrauch zu machen.</p>
+                  <p>Die Unterstaatssekretäre Dr. <hi rend="#letterspaced">Eis1er</hi> und <hi rend="#letterspaced">Mik1as</hi> treten für den Antrag des Vizekanzlers Fink ein und glauben, dass den vom Staatssekretär Dr. Mayr geltend gemachten Bedenken dadurch Rechnung getragen werden könnte, dass der Landesregierung gegenüber gelegentlich der Erhebung der Vorstellung und der Mitteilung von der Anfechtung der letztere Schritt ausdrücklich damit motiviert werde, dass das Mittel der Anfechtung im vorliegenden Falle angesichts der großen Bedeutung der Angelegenheit und im Hinblick auf die gegenüber der Entente übernommenen einschlägigen Verpflichtungen lediglich wegen der unklaren Fassung des Gesetzes zwecks Vermeidung des Terminverlustes ergriffen werde.</p>
+                  <p>Der Kabinettsrat erhebt den Antrag des Vizekanzlers Fink zum Beschluss und weist das Staatsamt für Handel und Gewerbe, Industrie und Bauten an, die <pb facs="krp-0162_r-0029"/>Landesregierung im Sinne der Ausführungen der Unterstaatssekretäre Dr. Eisler und Miklas zu verständigen. Die Anfechtungsklage wird von der Staatskanzlei einzubringen sein.</p>
+               </div>
+               <div type="top" xml:id="krp-0162_top10">
+                  <head>
+                     <label>
+                        <num n="10">10.</num>
+                        <seg>Gesetzesbeschluss des Salzburger Landtages über die Einhebung einer Landes- und Gemeindeabgabe vom unverdienten Wertzuwachs an Liegenschaften.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Reisch</hi> teilt mit, dass der Salzburger Landtag in seiner Sitzung am 14. Februar d. J. einen Gesetzesbeschluss über die Einhebung einer Landes- und Gemeindeabgabe vom unverdienten Wertzuwachs an Liegenschaften gefasst habe.</p>
+                  <p>Dieser Gesetzesbeschluss lehne sich in seinem Aufbau an die seinerzeit vom Staatsamte für Finanzen hinausgegebene Musterabgabeordnung an. Er enthalte jedoch eine Reihe von Abänderungen, welche zum Teil als unannehmbar bezeichnet werden müssen. Das größte Bedenken, das der Gesetzesbeschluss erwecke, biete der § 15, welcher die Übertragung der Bemessung und Einhebung der Wertzuwachsabgabe an die mit der Bemessung und Einhebung der staatlichen Übertragungsgebühren betrauten Ämter und Behörden nach den hiefür geltenden gesetzlichen Bestimmungen vorsehe. Zunächst sei der Zusatz „nach <pb facs="krp-0162_r-0030"/>den hiefür geltenden Bestimmungen“ in Widerspruch damit, dass das Gesetz selbst das Verfahren ziemlich eingehend regle. Es gehe aber gar nicht an, den Apparat für die staatlichen Steuern und Gebühren für die Zwecke des Landes zur Verfügung zu stellen, da alle Steuerbehörden und ebenso die Steuerämter in so hohem Maße für die Bemessung und Einhebung der staatlichen Steuern, aber auch für sonstige Verwaltungsausgaben benötigt werden, dass bei einer Übertragung jeder Mehrarbeit jene Geschäfte, für die sie schon bisher verwendet werden, unbedingt leiden würden. Aus diesem Grunde wäre gegen den vorliegenden Gesetzesbeschluss die Erhebung der Vorstellung zu beantragen.</p>
+                  <p>Die Vorstellung sei jedoch auch aus dem Grunde erforderlich, weil im § 12 die Abgabeskala in den höchsten Sätzen eine zu weit gehende sprunghafte Steigerung bis auf 60 % aufweise. Es wäre der Landesversammlung nahe zu legen, den Satz von 60 % überhaupt fallen zu lassen und als Höchstsatz bei einer Wertsteigerung von mehr als 250 % eine Abgabe von 50 % des Wertzuwachses festzusetzen. Dies sei umso notwendiger, als mit Rücksicht auf die Geldentwertung die Wertzuwachsabgabe auch bei niedrigen <pb facs="krp-0162_r-0031"/>Sätzen ohnedies eine große Verschärfung gegenüber Zeiten normaler Wertentwicklung erfahren habe.</p>
+                  <p>Eine weitere Bestimmung, die ebenfalls sehr bedenklich erscheine, sei die Ausdehnung der Abgabe auf den Wertzuwachs von der Liegenschaft <hi rend="#u">samt dem rechtlichen Zugehör</hi> (§§ 294–297 ABGB), was ihrem Wesen durchaus widersprechen und zu verschiedenartigen Schwierigkeiten bei der Bemessung Anlass geben würde.</p>
+                  <p>Der sprechende Staatssekretär stelle daher den Antrag, der Kabinettsrat wolle beschließen: Gegen den Gesetzesbeschluss der Salzburger Landesversammlung vom 14. Februar d. J., betreffend die Einhebung einer Landes- und Gemeindeabgabe vom unverdienten Wertzuwachs von Liegenschaften, wird Vorstellung erhoben und die Gegenzeichnung von Seite der Staatsregierung verweigert.</p>
+                  <p>Der Kabinettsrat erhebt diesen Antrag zum Beschluss.</p>
+                  <p/>
+               </div>
+            </div>
+            <div type="stenogramme">
+               <div n="1">
+                  <head>[KRP 162, 19. März 1920, Stenogramm Fenz]</head>
+                  <p><pb facs="krp-0162_s01-0001"/>162., 19. /III. '20.</p>
+                  <p>[1.] Renner: Beitritt, sechs Gesetzesbeschlüsse.</p>
+                  <p>Ellenbogen: Ad Verlängerung der Sperrstunde, 10.000 m3 Gas mehr bei Hinausschiebung auf eine Stunde. </p>
+                  <p>Man sollte das zusammen mit der Einführung der Sommerzeit machen.</p>
+                  <p>Zur Kenntnis.</p>
+                  <p>[Zugezogen]: Wilfling.</p>
+                  <p>Ramek: Die [Ge]richtskanzleibeamten treten mit ganz exorb[itanten] Forderungen an das Staatsamt für Justiz heran. </p>
+                  <p>Die Justizverwaltung kann [es] allein nicht <hi rend="#s">akzeptieren</hi> - entscheiden, auch wenn das Staatsamt für Finanzen zustimmen würde, weil [es] weitgehende Beispielsfolgerungen für alle </p>
+                  <p>Ressorts [hätte]. Obwohl sie verlangen, bis 24. III. eine Entscheidung zu haben, widrigenfalls Zwangsmaßnahmen getroffen würden, habe ich mich doch bemüßigt, </p>
+                  <p>das Kabinett dafür in Anspruch zu nehmen.</p>
+                  <p>Sie fordern: 1.) Alle Diener ohne Ausnahme müssen Beamte werden unter Berücksichtigung ihrer Dienstzeit. Zugleich haben sie erklärt, dass sie dann keine Diener-</p>
+                  <p>dienste mehr leisten werden. Ich halte diese Forderung für indiskutabel.</p>
+                  <p>2.) Die Grundbuchführer [<hi rend="#i">Einschub:</hi>] und Kanzleibeamten [<hi rend="#i">Einschub Ende</hi>] [sollen] von Gruppe E in die Gruppe C [kommen]. </p>
+                  <p>Ein derartiges Zugeständnis wäre nur bei Änderung der Dienstpragmatik möglich, wenn man von [<hi rend="#i">Einschub:</hi>] dem Erfordernis [<hi rend="#i">Einschub Ende</hi>] der Absolv[ierung] der Mittelschule absehen würde. </p>
+                  <p>Sie haben erklärt, wenn die Änderung nicht möglich [ist], dann verlangen sie, dass pro futuro für die Aufnahme als Kanzleibeamter die </p>
+                  <p>Absolv[ierung] der Mittelschule verlangt wird. Sie selbst sollten aber exempt[iert] sein.</p>
+                  <p>Sie genießen, weil sie die Fachprüfung haben die Bezüge und Vorteile der Gruppe D. Sie können den Titel des Grundbuchdirektors oder Kanzleidirektors </p>
+                  <p>erhalten und wenn sie in die VII. [Rangsklasse] gelangen, auch den Titel eines Oberdirektors.</p>
+                  <p>Ich halte auch diese Forderung für unbillig. <hi rend="#s">Sie berufen sich</hi> -.</p>
+                  <p>3.) Erhöhung der Entlohnung der Überstunden. Diese Angelegenheit wird ohnedies geregelt.</p>
+                  <p>Wilfling: <hi rend="#s">Analog die Postbeamten</hi> -.</p>
+                  <p>Ad 1.) [Dies] findet ein Gegenstück in den Postbeamtenforderungen der letzten Zeit. Alle Postunterbeamten und Postamtsdiener verlangen ihre </p>
+                  <p>Ernennung zu Beamten. [Es] würde sich hier und bei den anderen Ressorts um 20-22.000 neue Beamte handeln.</p>
+                  <p>Ad 2.) [Dies] ist nur eine Folge, dass ihnen das Zugeständnis gemacht wurde, dass sie die Bezüge und Vorteile der Gruppe D haben.</p>
+                  <p><pb facs="krp-0162_s01-0002"/>Bei der Post ist gestern das Begehren gestellt worden, dass die Zeitvorrückungsfristen der Gruppen A und C um je ein Jahr gekürzt werden. </p>
+                  <p>Wenn die Kanzleibeamten bei der Justiz in die Gruppe C gelangen, so bleibt kein einziger <hi rend="#s">anderer Beamter</hi> - hochqualifizierter </p>
+                  <p>Beamter der Gruppe C in dieser Gruppe.</p>
+                  <p>Sämtliche Kanzleibeamten verlangen die Einreihung in die Gruppe D. Das würde wieder die Justizkanzleibeamten bestärken, </p>
+                  <p>die in die Gruppe C wollen.</p>
+                  <p>Renner: Ich würde empfehlen, dass in der Sache ein Beschluss gefasst und publiziert wird:</p>
+                  <p>Der Kabinettsrat beschließt, die Staatsregierung und die Nationalversammlung haben anlässlich der Novelle die höchsten der Volkswirtschaft und der Volksvertretung zuzumutenden </p>
+                  <p>Opfer gemacht. Die Staatsregierung kann sich daher auf spezielle Wünsche wie .... überhaupt nicht einlassen.</p>
+                  <p>Deutsch: Man müsste vorher sagen: Die Nationalversammlung war noch gar nicht in der Lage, die großen Zuwendungen zu beschließen. Trotzdem werden schon </p>
+                  <p>neue Forderungen [<hi rend="#i">Einschub:</hi>] unter dem Titel von Ressortforderungen [<hi rend="#i">Einschub Ende</hi>] erhoben, die das ganze System wieder ins Wanken bringen würden, so dass der Kabinettsrat gar nicht mehr zu anderen Verhandlungen kommt.</p>
+                  <p>Reisch: Es wäre viel wirksamer, wenn die Nationalversammlung einen solchen Beschluss fassen würde. Sie hätte bei der Verabschiedung Gelegenheit, der </p>
+                  <p>Staatsregierung zu verbieten, in dieser Form weiter zu gehen. Es sollte wenigstens das Koal[itions]-Komitee [ersucht werden], eine solche Resolution </p>
+                  <p>zu bestellen.</p>
+                  <p>Renner: Zuerst müssen wir das beschließen.</p>
+                  <p>Mayr: Wir sollen beschließen, denn sonst sieht es so aus, als ob der Kabinettsrat keine eigene Meinung hätte.</p>
+                  <p>Paul: [Ich] habe gegen den allgemeinen Beschluss nichts, würde aber bitten, dass auf die beiden Abgeordneten, welche Führer der Organisationen sind, [eingewirkt wird].</p>
+                  <p>Was die Forderungen der Postamtsdiener anbelangt, so ist das nur darauf [zurück]zuführen, dass in anderen Ressorts solche Ernennungen vollzogen wurden. </p>
+                  <p>Auch wissen die Diener, dass der Beschluss über den Antrag Allina, Zelenka dem Amt zur Würdigung übergeben wurde.</p>
+                  <p>Ein Kompromissvorschlag [<hi rend="#i">Einschub:</hi>] bezüglich der Kürzung der Zeitvorrückungsfristen [<hi rend="#i">Einschub Ende</hi>] wurde gestern auf acht Tage [<hi rend="#i">Einschub:</hi>] über [eine] Bemerkung des Staatsamtes für Finanzen [<hi rend="#i">Einschub Ende</hi>] hinausgeschoben. Da ist es schwer, dass man jetzt einen allgemein ablehnenden Beschluss fasst.</p>
+                  <p>Fink: Sowohl Reisch als Paul haben darauf hingewiesen, dass beide Parteien Vertreter haben - in den Organisationen haben. Wer ist das bei uns?</p>
+                  <p>Paul: Der Abgeordnete Steinecker (bei der Post), Pischitz ([bei der] Eisenbahn).</p>
+                  <p>Renner: Wir werden den Beschluss mit der Einleitung Deutschs fassen.</p>
+                  <p>Paul, Reisch, Ramek und Wilfling sollen formulieren. </p>
+                  <p>Dann wird die Staatskanzlei übermorgen die Verlautbarung machen.</p>
+                  <p>Das Koal[itions]-Komitee wird eingeladen werden, zu veranlassen, dass die Nationalversammlung der Regierung einen Auftrag gibt.</p>
+                  <p><pb facs="krp-0162_s01-0003"/>Glöckel: Bezüge der Volksbeauftragten.</p>
+                  <p>Der Vizekanzler und Eldersch sollen in der Koalition ?reportieren [?reparieren].</p>
+                  <p>Zerdik: Die Verhandlungen in Warschau [wurden] nach zwei Richtungen geführt: Liquidation des erloschenen Vertrages und neuer Vertrag. </p>
+                  <p>Die polnische Regierung hat sich nicht die Ratifikation vorbehalten. </p>
+                  <p><hi rend="#s">Das Abkommen, das von beiden Seiten</hi> -.</p>
+                  <p>Das Abkommen über die Liquidation sieht vor, dass alles, was bis jetzt an Kohlen geliefert wurde, nicht auf die neue Rechnung vorgetragen wird.</p>
+                  <p>Hinsichtlich des neuen Übereinkommens: Für Kohle [gelten] dieselben Bestimmungen wie im vorigen Jahr, 12.000 Tonnen Kohle im Monat.</p>
+                  <p>Ad Rohöl: [Es wurde eine Lieferung] im Wert von 50 Millionen Kronen erreicht; 4 Kronen, 60 Heller Einheitspreis. </p>
+                  <p>Die Erdölprodukte für die Eisenbahnverwaltung [wurden] sichergestellt.</p>
+                  <p>85 Mill[ionen] Eier, Pferdefleisch und Pferdewurst, Kartoffel nicht. </p>
+                  <p>4.000 m3 Eichenholz, 4.000 m3 Fichtenholz. </p>
+                  <p>F[...], Holzkohle, Zement etc.</p>
+                  <p>Kompensation aus der Sachdemobilisierung. </p>
+                  <p>Waffenlieferungen (Geheim).</p>
+                  <p>Ich bitte um die Ermächtigung, dass ich das Stichwort telegraphiere. </p>
+                  <p>Das Wort bedeutet, dass wir bereit sind, ihnen Wert- [Heeres]bedarfsgegenstände im Betrag von 75 Millionen Kronen zu liefern.</p>
+                  <p>Fink: Nach meiner Meinung können wir ohne Renner nicht [einen] Beschluss fassen.</p>
+                  <p>Vertagung bis Dienstag.</p>
+                  <p>Das Liquidationsübereinkommen wird genehmigend zur Kenntnis genommen.</p>
+                  <p>Glöckel: Landesschulinspektorengesetz.</p>
+                  <p>Reisch: Druckfehler [in] § 5 "jährlich".</p>
+                  <p>Angenommen.</p>
+                  <p><pb facs="krp-0162_s01-0004"/>Glöckel: Begünstigungen für die Lehrerschaft.</p>
+                  <p>Angenommen.</p>
+                  <p>4. Zeitungspostgebühren. </p>
+                  <p>Paul: Die Kabinettskonferenz, Eldersch, Ramek (anstelle Zerdik) </p>
+                  <p>hat [einen] neuerlichen Entwurf ausgearbeitet. </p>
+                  <p>Diese neuen Tarifbestimmungen sollen zugleich mit den neuen Posttarifen in Kraft treten.</p>
+                  <p>Hoheisl: -.</p>
+                  <p>Paul: Ich möchte mir vorbehalten, wenn - eine Ermäßigung der Sätze eintreten zu lassen, wenn wir dem Begehren der Industrie, </p>
+                  <p>dass die Drucksachensätze verringert werden, Folge geben müssen. </p>
+                  <p>Dann würde auch eine Ermäßigung der Sätze für Zeitungen eintreten, damit die Relation 1:2 wieder hergestellt wird.</p>
+                  <p>Angenommen.</p>
+                  <p>Dann wird mit den Zeitungsorganisationen verhandelt werden.</p>
+                  <p>3. b) [Zerdik]: Wege.</p>
+                  <p>Angenommen.</p>
+                  <p>3. c) [Zerdik]: Gemeinde Wien, beg[ünstigte] Bau[ten].</p>
+                  <p>Angenommen.</p>
+                  <p><pb facs="krp-0162_s01-0005"/>3. d) [Zerdik]: Montana, beg[ünstigter] Bau.</p>
+                  <p>Angenommen.</p>
+                  <p>5. Salzburg, Anforderung von Holz.</p>
+                  <p>Stöckler:</p>
+                  <p>[Ich] beantrage Antrag a) Vorstellung. Mit der Anfechtung soll einstweilen zugewartet werden. Erst wenn der Landtag </p>
+                  <p>neuerlich den Beschluss fasst, dann erst Verfassungsgerichtshof.</p>
+                  <p>Loewenfeld-Ruß: Mein Vertreter hat sich für die schärfere Taktik ausgesprochen, nicht aus juristischen Gründen, sondern um </p>
+                  <p>Beispielsfolgerungen in anderen Ländern zu vermeiden.</p>
+                  <p>Salzburg hat bereits im April '19 eine Verordnung erlassen, die eigentlich dasselbe sagt. </p>
+                  <p>Es scheint, dass sie mit der Verordnung nicht auskommen und [daher] haben [sie] jetzt das Gesetz beschlossen. </p>
+                  <p>Aus politischen Gründen dürfte aber die Anfechtung beim Verfassungsgerichtshof zweckmäßig sein.</p>
+                  <p>Eisler: Dieses Gesetz hat den Ausdruck -.</p>
+                  <p>[Ich schlage vor] die Einsetzung einer Kabinettskonferenz aus den beteiligten Staatsämtern </p>
+                  <p>zur einheitlichen Kompetenz für die Regierung in Angelegenheit der Holzzustände in den Ländern.</p>
+                  <p>Froehlich: Erörtert die Frage, ob die Frist für die Anfechtungsklage auch nach Erhebung der Vorstellung noch offen bleibt. </p>
+                  <p>26. April '19, Z. 1.500/1 - Staatskanzlei.</p>
+                  <p>Ramek: Das Gesetz ist sehr unklar. Wenn auch die Länder mit der Staatsregierung übereingekommen sind, dass sie einverstanden sind, </p>
+                  <p>dass das Gesetz so auszulegen [ist], dass man zuerst die Vorstellung erheben kann und dann, wenn die zweite Mitteilung erfolgt, dass die Landesversammlung </p>
+                  <p>auf ihrem Beschluss beharrt, und dann erst binnen 14 Tagen die Anfechtungsklage überreichen kann, so hätte ein solches Übereinkommen für den </p>
+                  <p>Verfassungsgerichtshof keine Wirkung. Selbst wenn die Landesregierung die Einrede nicht erheben würde, so müsste der Verfassungsgerichtshof </p>
+                  <p>von Amts wegen darauf zurückkommen. Daher kann eine Vereinbarung zwischen der Staatsregierung und den Landesregierungen eine ab[solut] sichere Abhilfe nicht gewähren.</p>
+                  <p><pb facs="krp-0162_s01-0006"/>Ich weiß zwar auch aus den Verhandlungen des Verfassungsausschusses, dass die Ansicht des Ausschusses die war, dass die Frist nicht von der ersten Mitteilung </p>
+                  <p>zu rechnen ist. Aber auch diese interne Auffassung des Ausschusses ist nicht maßgebend für den Verfassungsgerichtshof. </p>
+                  <p>Bei dieser Unklarheit könnte man erst dann [klar] sehen, wenn der Verfassungsgerichtshof schon einmal in einer solchen Sache schon judiziert hätte.</p>
+                  <p>Artikel 15 sagt, dass Gesetzesbeschlüsse binnen 14 Tagen nach Einlangen der Mitteilung (Artikel 13) beim Verfassungsgerichtshof angefochten werden können </p>
+                  <p>und beruft den Artikel 13. In diesem Artikel 13 wird die Landesregierung verpflichtet, alle Gesetzesbeschlüsse unbedingt mitzuteilen. </p>
+                  <p>Sie muss also den neuerlichen Gesetzesbeschluss auch mitteilen. Infolgedessen kann man mit einer gewissen Sicherheit annehmen, dass </p>
+                  <p>die Auffassung des Verfassungsgerichtshofes keine andere sein wird, dass also noch immer Zeit sein wird, die Anfechtungsklage zu erheben </p>
+                  <p>nach Einlangen der zweiten Mitteilung.</p>
+                  <p>Eine gewisse Unklarheit wird allerdings [hinein] gebracht durch Artikel 14, Absatz 2, wonach bei Beharren kundzumachen ist. </p>
+                  <p>Die Landesregierung braucht also nicht zu warten mit der Kundmachung bis die Anfechtungsklage ausgetragen ist. </p>
+                  <p>Wenn dann der Verfassungsgerichtshof entscheidet, dass das Gesetz verfassungswidrig ist, dann muss das Gesetz ausdrücklich im Landesgesetzblatt wieder </p>
+                  <p>aufgehoben werden.</p>
+                  <p>Fink: Beides wäre zu tun.</p>
+                  <p>Miklas: Wir müssen die mildere Tonart anschlagen, nämlich die Vorstellung erheben und gleichzeitig die Anfechtungsklage </p>
+                  <p>einbringen. </p>
+                  <p>Das Übereinkommen ist gleichgültig. Die Meinungen der Mitglieder des Verfassungsausschusses, [das] ist ebenso gleichgültig.</p>
+                  <p>Bei Beharrungsbeschlüssen sind [die Gesetze] zu verlautbaren. Wo keine nova Beschlüsse vorliegen, sind [sie] von der Mitteilung ausgenommen </p>
+                  <p>nach meiner Ansicht.</p>
+                  <p>Stöckler: [Mein] Antrag [ist] dann folgender: Dass die Vorstellung erhoben wird mit der Mitteilung, dass gleichzeitig auch die Anfechtungs-</p>
+                  <p>klage erhoben wird, damit keine Fristversäumnis eintritt.</p>
+                  <p>Mayr: In dem Verfassungsvorentwurf ist die Sache ja besser gemacht, indem es keine Frist für die Anfechtung gibt. </p>
+                  <p>Da haben die Vertreter der Länder bereits zugestimmt.</p>
+                  <p>Ich werde dem Kabinettsrat einen ganzen Katalog vorlegen, über Fälle, die eigentlich alle hätten angefochten werden müssen. </p>
+                  <p>Wenn wir jetzt Vorstellung erheben <hi rend="#u">und</hi> [eine] Anfechtung machen, so nehmen wir einen einzelnen Fall heraus aus [einer] Unzahl der Vorlagen. </p>
+                  <p><pb facs="krp-0162_s01-0007"/>Es ist eigentlich nicht die Schuld der Länder, sondern der Nationalversammlung, dass solche Möglichkeiten gegeben sind.</p>
+                  <p>Da das einer der letzte Fälle vor der Verfassung sein wird, so wäre ich doch dafür, dass man nur die Vorstellung erhebt. </p>
+                  <p>Aus politischen Gründen auch, wegen der Länderkonferenz in Linz.</p>
+                  <p>Eisler: Der Vorschlag wäre zu erwägen, wenn es nicht eine Sache von so großer Bedeutung wäre. Eine Fristversäumnis wäre </p>
+                  <p>von sehr argen Folgen begleitet, weil es doch alle anderen Landtage nachmachen würden. Die materielle Wichtigkeit spricht </p>
+                  <p>dafür, dass man auch die Anfechtungsklage einbringt und zugleich dem Land mitteilt, dass das nur gemacht wird wegen der </p>
+                  <p>Unklarheit des Gesetzes.</p>
+                  <p>Miklas: Man könnte noch hinzufügen: "Mit Rücksicht auf die große materielle Bedeutung der Sache im Hinblick auf die </p>
+                  <p><hi rend="#s">internationalen Beziehungen zu der Entente</hi>" - gegenüber der Entente übernommenen Verpflichtungen".</p>
+                  <p>[Fink]: Die Vorstellung wird vom Staatsamt für Handel erhoben, die Anfechtung wird von der Staatskanzlei eingebracht.</p>
+                  <p>Angenommen.</p>
+                  <p>6. Reisch: Landesabgabe.</p>
+                  <p>Angenommen.</p>
+                  <p>Communiqué über die Beamtenforderungen.</p>
+                  <p>Eisler: Appell.</p>
+                  <p>Miklas: Eine Zweckmäßigkeitsfrage ist, wann man diese Erklärung hinausgeben soll? [In] Deutschland die verfassungsmäßige Regierung hat die </p>
+                  <p>größten Schwierigkeiten, ihre Autorität aufrecht zu erhalten. Sollte man nicht den Sonntag noch abwarten?</p>
+                  <p>Paul: Könnte nicht jemand von der Regierung bei der Behandlung in der Nationalversammlung diese Erklärung abgeben? Auch mit dem Appell </p>
+                  <p>Eisler, dass Sonderwünsche jetzt zurückzustellen sind.</p>
+                  <p>[Nächster] Kabinettsrat, 2 Uhr, im Parlament, am Montag.</p>
+                  <p>7 Uhr.</p>
+                  <p/>
+               </div>
+               <div n="2">
+                  <head>[KRP 162, 19. März 1920, Stenogramm Groß]</head>
+                  <p><pb facs="krp-0162_s02-0001"/>162. Sitzung, 19. /3.</p>
+                  <p>1.</p>
+                  <p>[Renner:] Gesetze.</p>
+                  <p>2.</p>
+                  <p><hi rend="#s">Ramek:</hi> -. Ellenbogen: Die Verlängerung der Sperrstunde [bedeutet] 10.000 m3 [mehr Gasverbrauch], täglich vier Waggons. [Es ist eine] bedenkliche Maßregel, [das] soll mit der Sommerzeit geregelt werden.</p>
+                  <p>[Der Kabinettsrat] nimmt die Mitteilung zur Kenntnis.</p>
+                  <p>2.</p>
+                  <p>[Zugezogen:] Ministerialrat Dr. Hoedl, Ministerialrat Dr. Wilfling.</p>
+                  <p>Ramek: Nachtragsgesetz zum Besoldungsübergangsgesetz. Die [Ge]richtskanzleibeamten treten wieder mit ganz besonderen Forderungen an das Staatsamt für Justiz </p>
+                  <p>heran. Diese Forderungen sind in ihrer Forderung derart, dass die Justizverwaltung keine Entscheidung allein treffen kann, auch nicht einvernehmlich mit [dem Staatsamt für] Finanzen - selbst wenn </p>
+                  <p>dieses zustimmen würde - weil sie von solchen Folgen sind für die anderen Ressorts, dass sie nicht erfüllbar sind. Mit Rücksicht darauf, dass das Justizressort </p>
+                  <p>für sich allein [das] nicht entscheiden kann und weil die [Vertreter der] Zentralgewerkschaft der Kanzleibeamten "Justiz" die Antwort bis 24. haben wollen, widrigenfalls </p>
+                  <p>sie mit Zwangsmaßregeln vorgehen würden, mache ich davon Mitteilung. Die Forderungen betreffen eine Reihe von Punkten, sie haben jedoch ihre Forderungen vorläufig </p>
+                  <p>stark reduziert auf drei Kardinalpunkte. Sie erklären, dass sie freiwillig davon nicht abstehen. Der erste Punkt betrifft die Diener. Durch ein Gesetz </p>
+                  <p>ist der Übergang der Diener in die Beamtenkategorie für jene, welche im Vollstreckungsdienst tätig sind, [geregelt]. [Wir] haben jedoch damals schon abgelehnt, dass der Kreis </p>
+                  <p>der Diener, die zu Beamten <hi rend="#s">ernannt</hi> werden sollen, [...] werden soll. Jetzt wird verlangt: 1.) dass alle Diener Beamte werden, entweder mit oder ohne Rangsklasse. </p>
+                  <p>Sie wollen aber als Beamte keine Dienerverrichtungen mehr leisten. Ich halte diese Forderung nicht - [für] unmöglich. Dann wird gefordert, 2.) dass die Kanzlei- und Grundbuchbeamten </p>
+                  <p>aus der Gruppe E in die Gruppe C kommen sollen. Dorthin gehören die Beamten mit Mittelschulbildung und - [die] sich einer Fachprüfung unterzogen haben. Bei der Gerichtsorganisation </p>
+                  <p>durch Jur. [...] wurde - [ist] eine solche Kategorie eingeführt worden, die leitenden Kanzleibeamten. Dieser Grundsatz ist mangels geeigneten Nachwuchses </p>
+                  <p>bereits durchbrochen. Nun sind die Kanzleibeamten beim Gericht nach dem Gesetz an eine besondere Vorbildung nicht gebunden. Bis zur Republik haben sie sich </p>
+                  <p>ausnahmslos ergänzt aus den Z[...]. Erst seit dem Offizientengesetz wurden über den systemierten Stand alle Offizienten in die Rangsklassen eingeteilt </p>
+                  <p>und zu Kanzleibeamten ernannt. Nun kommt die Forderung all dieser, dass sie aus der Gruppe E in die Gruppe C übernommen werden sollen, obwohl sie die gesetzliche </p>
+                  <p>Qualifikation dafür nicht haben. Ein derartiges Zugeständnis wäre nur unter Änderung der Dienstpragmatik [dahingehend] möglich, [dass man von der] absolvierten Mittelschule absehen würde. </p>
+                  <p>Die erste Fachprüfung haben alle, die meisten auch die zweite Fachprüfung oder die Grundbuchführerprüfung. Sie haben erklärt, wenn eine Änderung der Dienstpragmatik </p>
+                  <p>nicht möglich wäre, so verlangen sie, dass für Kanzleidienste die Absolvierung einer Mittelschule aufgestellt wird mit Nachsicht für die im Dienst Befindlichen.</p>
+                  <p>[Es ist zu bemerken, dass] die Kanzleibeamten, weil sie doch eine besondere Qualifikation durch die Ablegung der Kanzleiprüfung haben, was sonst für die Gruppe E nicht gefordert wird, um ihnen </p>
+                  <p>diesen Nachteil zu vergüten, die Bezüge und Vorteile der Gruppe D erreicht haben durch die Ausgleichung der Bezüge auf die Bezüge der Beamten der Gruppe D. </p>
+                  <p>Sie kommen nach 20 Dienstjahren in die VIII. Rangsklasse und wenn sie deren Bezüge haben, ist der Staatssekretär durch eine besondere Verfügung des Präsidenten </p>
+                  <p>der Nationalversammlung ermächtigt, ihnen den Titel der VIII. Rangsklasse zu verleihen. Alle, welche in leitenden Stellen sind, rücken in die VII. Rangsklasse vor, </p>
+                  <p>gleichgültig, ob sie der Gruppe D oder E angehören, mit dem Titel eines Oberdirektors. Das ist eine Forderung, die ich für gänzlich ungerecht[fertigt] halte. </p>
+                  <p>Durch das Offizientengesetz hat man bereits den Justizangestellten in den Aushilfskategorien [ein] derartiges Entgegenkommen gezeigt, welches keinen Vergleich aushält </p>
+                  <p>zu dem, was der alte Staat für sie getan hat. Sie stehen noch immer auf dem Standpunkt vor Jänner. Bei der Schaffung der Dienstpragmatik ist ihre Klage </p>
+                  <p>über [die] schlechtere Behandlung der sonst in die Gruppe E eingeteilten Beamten beachtet [worden]. Das ist alles ausgeglichen worden. Sie berufen sich hauptsächlich </p>
+                  <p>auf die Stellung der Steueramtsbeamten. Die gehören in die Gruppe D, untere Mittelschule und Fachprüfung. Das haben die Gerichtsbeamten nicht. </p>
+                  <p><pb facs="krp-0162_s02-0002"/>Beim Steueramt waren 25 % ?Pauschalisten, sie genießen durch eine besondere Verfügung die Vorteile der Gruppe C.</p>
+                  <p>3.) Eine dritte Forderung geht auf die Erhöhung der Entlohnung für Überstunden. Die Angelegenheit wird geregelt, obwohl ich nicht </p>
+                  <p>einverstanden bin mit einer mechanisch bezahlten Überstundenleistung. Während der Amtsstunden wird dann nichts gemacht. Wir haben Remunerationen </p>
+                  <p>unter Feststellung einer Mindestarbeitsleistung und nur wenn darüber hinaus Arbeit geleistet wird, dann erfolgt eine Entschädigung durch Remuneration. </p>
+                  <p>Den Kanzleibeamten gefällt das nicht, weil der langsame Arbeiter außerordentlich im Nachteil ist.</p>
+                  <p>[4.)] Besonderen Wert legen sie auf einen Punkt, der sich intern mit [dem Staatsamt für] Finanzen regeln ließe: Die definitive Anstellung der Aushilfskräfte. Ich </p>
+                  <p>kenne die Zahl nicht, aber es sind ziemlich viele Aushilfskräfte in den Kanzleien tätig, welche keine Gewißheit über ihre Zukunft haben. Das hängt aber </p>
+                  <p>zusammen mit der Sperrung der Posten. Die Leute werden benötigt, aber [ein] Vorrückungsverhältnis sehen sie nicht vor sich, solange nicht die Sperre aufgehoben wird.</p>
+                  <p>Das Kabinett hat erklärt, dass die Sperre aufrecht bleibt, sofern nicht besondere Verhältnisse eine Ausnahme rechtfertigen. Ich wäre dafür, der Justizverwaltung eine </p>
+                  <p>Erleichterung zu geben für die Ernennung der benötigten Aushilfskräfte zu definitiven Beamten. Aber ich würde nicht gerne sehen, wenn das geschähe als </p>
+                  <p>Zugeständnis auf ihre Forderungen.</p>
+                  <p>Reisch: </p>
+                  <p>Auch die Postbeamten stellen neue Forderungen.</p>
+                  <p>Wilfling: </p>
+                  <p>Die Forderung der Diener, zu Beamten ernannt zu werden, findet ein Gegenstück in der Forderung der Postangestellten, dass alle </p>
+                  <p>aktiven Unterbeamten und Diener mit Wirksamkeit vom 1. -/. 20 zu Staatsbeamten ohne Rangsklasse einzureihen - zu ernennen sind. </p>
+                  <p>Sie wollen darüber ein Gesetz. </p>
+                  <p>Nach oberflächlicher Schätzung würde es sich darum handeln, rund 20-22.000 neue Beamte zu schaffen. </p>
+                  <p>Zu dem zweiten Begehren der Gerichtsbeamten weise ich darauf hin, dass es nur eine Folge des Zugeständnisses ist, dass </p>
+                  <p>sie die Zulagen statt von D auf C bekommen. Sie wollen auch noch die Vordienstzeit durchgerechnet haben, was aber zurückgewiesen werden müsste.</p>
+                  <p>Bei der Post ist verlangt worden, [dass für] die Beamten [in] A und C die Zeitvorrückungsfristen um je ein Jahr gekürzt werden. </p>
+                  <p>Auf jeden Fall ist das ein Begehren, das von allen Angehörigen dieser Gruppen gestellt werden könnte, und was nicht gemacht werden könnte.</p>
+                  <p>Die Steuerbeamten haben das Versprechen, sie wie Rechnungsbeamte zu behandeln. Sie bekommen die Zulagen von D und C. </p>
+                  <p>Wenn die Kanzleibeamten von D und C kommen, bleibt kein [hochqualifizierter] Beamter in der Gruppe C.</p>
+                  <p>Sämtliche Kanzleibeamten verlangen die Überleitung in die Gruppe D, die Gerichtsbeamten würden daher wieder nach C kommen. </p>
+                  <p>Die pragmatisierten Kanzleibeamten -.</p>
+                  <p>Renner: </p>
+                  <p>Der Kabinettsrat beschließt und publiziert: Der Kabinettsrat beschließt, die Staatsregierung und die Nationalversammlung haben anlässlich der Novelle zum </p>
+                  <p>Besoldungsübergangsgesetz die höchsten noch der Volksvertretung und der Nationalwirtschaft zuzumutenden Opfer gebracht. Die Staatsregierung kann sich </p>
+                  <p>daher auf einzelne Forderungen wie Vorschiebung in der Gruppe der Dienstpragmatik, Überstellung vom Dienerverhältnis zum Amtsverhältnis, </p>
+                  <p>Durchrechnung, Kürzung der Zeitvorrückungsfristen überhaupt nicht einlassen. Die Stilisierung wird den Staatsämtern vorbehalten.</p>
+                  <p>Deutsch: </p>
+                  <p>Es wäre notwendig, im Anhang auszuführen, es sind - die Nationalversammlung war noch nicht in der Lage, die ganze Zuwendung </p>
+                  <p>zu beschließen, welche der Kabinettsrat zugestanden hat. Trotzdem werden schon wieder neue Forderungen von einzelnen Gruppen erhoben, welche </p>
+                  <p>das ganze System ins Wanken bringen.</p>
+                  <p>Reisch: </p>
+                  <p>Es wäre viel wirksamer, wenn die Nationalversammlung einen solchen Beschluss fassen würde beim Ergänzungsgesetz zum Besoldungsgesetz. </p>
+                  <p>Darin sollte die Regierung aufgefordert werden, Schluss zu machen mit den Besserstellungen und Besserreihungen und sie könnte der Regierung verbieten, in dieser Weise </p>
+                  <p><pb facs="krp-0162_s02-0003"/>vorzugehen. Die Nationalversammlung hat leider dazu nicht Stellung genommen. Im Finanzausschuss haben die Redner angedeutet, dass das Gesetz </p>
+                  <p>nur für kurze Zeit gilt. Ich habe widersprochen und gesagt, dass jetzt aufgehört werden müsse, neue Forderungen zu bewilligen. Wenn die Nationalversammlung </p>
+                  <p>den Ernst der Lage nicht erkennt, ist die Regierung nicht stark genug, Widerstand zu leisten. Der K[oalitions]ausschuss sollte eine Resolution bestellen, </p>
+                  <p>welche die Regierung auffordert und ihr Vorschriften macht.</p>
+                  <p>Renner: </p>
+                  <p>Wenn wir vorangehen durch einen Beschluss wird eine solche Resolution von der Nationalversammlung nach K[oalitions]verhandlungen </p>
+                  <p>leicht sein.</p>
+                  <p>Mayr: </p>
+                  <p>Der Kabinettsrat muss feststellen, dass wir nicht weiter können und wollen. Der K[oalitions]ausschuss soll die Nationalversammlung zu einer </p>
+                  <p>ähnlichen Kundgebung bewegen, sonst sieht es aus, als ob der Kabinettsrat keine eigene Meinung mehr hätte.</p>
+                  <p>Paul: </p>
+                  <p>Dem allgemeinen Beschluss würde ich mich anschließen, möchte aber bitten, dass beide Parteien auf ihre Organisationsführer der </p>
+                  <p>Angestellten einwirken, etwas maßzuhalten. Was die beiden Forderungen der Postangestellten betrifft, so führe ich an, es ist - [sind] </p>
+                  <p>im letzten Halbjahr Beamtenernennungen in allen möglichen Ressorts vorgekommen. Bei der Post habe ich [dies] noch immer [auf]geschoben, aber jetzt </p>
+                  <p>wird die Ernennung von Dienern zu Beamten ohne Rangsklasse durchgeführt werden müssen, nachdem es in den meisten anderen Ressorts geschehen ist. </p>
+                  <p>Dieser Wunsch wurde gestern deswegen gestellt, weil seit vier Monaten ein Antrag Allina, Zelenka dem Haus vorliegt auf diese Ernennung. </p>
+                  <p>Er ist dem Amt zur Würdigung übermittelt worden. Ich werde daher nächstens dem Kabinettsrat ein Gesetz darüber vorlegen, außer es wird der </p>
+                  <p>Beschluss gefasst.</p>
+                  <p>Die Abkürzung der Vorrückungsfrist in der IX. und X. [Rangsklasse]: Diese Forderung ist gestern gestellt worden, wir haben sie daher </p>
+                  <p>erst zurückgewiesen. Es ist dann aber eine Erklärung der Post[angestellten] abgegeben worden, [dass], wenn diese Forderung nicht erfüllt würde, die Postangestellten </p>
+                  <p>streiken würden. In den Verhandlungen ist ein Kompromiss zustande gekommen, welchen W[ilfling] soweit aufnahm, dass für acht Tage eine Antwort </p>
+                  <p>in Aussicht gestellt wurde. Dieser Punkt darf also nicht so ohne weiteres abgebrochen werden. Es ist nicht versprochen worden, dass etwas geschehen wird, </p>
+                  <p>aber wenn der Finanzvertreter eine Antwort in Aussicht stellt, so ist doch schon eine gewisse Bindung gegeben. Diese Sache ist für mich persönlich peinlich. </p>
+                  <p>Der Kompromissvorschlag könnte noch weiter besprochen werden.</p>
+                  <p><hi rend="#s">Renner</hi>: -.</p>
+                  <p>Fink: </p>
+                  <p>Reisch wie Paul haben darauf hingewiesen, dass beide Parteien Vertreter in den Organisationen und den Ausschüssen haben. Nun </p>
+                  <p>weiß ich nicht, wer von unserer Seite an der Spitze solcher Organisationen steht.</p>
+                  <p>Paul: </p>
+                  <p>Steinegger, Bischnitz bei den Eisenbahnern, beim Telefon sind es nur Angehörige der Organisation. </p>
+                  <p>Von den Sozial[demokraten] Zelenka, Tomschik. Es müsste mit den Herren gesprochen werden, bevor ein Beschluss der Nationalversammlung gefasst wird.</p>
+                  <p>Renner: </p>
+                  <p>Sie soll [sich] auf das Prinzipielle beschränken, die Besoldungsreform, Angestelltenkammern. Ich glaube, wir werden den Beschluss fassen </p>
+                  <p>mit einer Einleitung: Während die Nationalversammlung noch nicht in der Lage war, die vom Kabinettsrat zugestandenen Zuwendungen zu beraten und [zu] beschließen, </p>
+                  <p>werden unter dem Titel von Ressortforderungen von einzelnen Gruppen so viele Forderungen erhoben, dass der Kabinettsrat über die Verhandlungen in Personalfragen </p>
+                  <p>zu keiner Arbeit kommt ...</p>
+                  <p>Reisch, Paul und Ramek mit Wilfling sollen die Formulierung besorgen. Dieser Beschluss soll übermorgen kundgemacht werden </p>
+                  <p>durch Mitteilung in den Tageszeitungen. Das wird die Staatskanzlei besorgen. Im K[oalitions]ausschuss wird man suchen, durchzusetzen, dass die </p>
+                  <p>Parteien das Kabinett im Finanzausschuss unterstützen und womöglich eine Resolution einbringen, durch welche die Regierung beauftragt wird.</p>
+                  <p><pb facs="krp-0162_s02-0004"/>3.</p>
+                  <p>Glöckel: </p>
+                  <p>Vor Beginn des Kabinettsrates ist über die Vorgänge im gestrigen Kabinettsrat [sic] debattiert [worden] wegen der Beschlüsse über die Bezüge der Staatssekretäre. </p>
+                  <p>Ich bitte, dass wir dazu Stellung nehmen können und dazu die Beschlüsse erfahren.</p>
+                  <p>Renner: </p>
+                  <p>Das Staatsamt für Finanzen wird das erwägen und uns was Vernünftiges geben.</p>
+                  <p>Reisch: </p>
+                  <p>Der Aufforderung an das Staatsamt für Finanzen, etwas Vernünftiges zu tun, kann ich nicht Rechnung tragen, weil Beschlüsse des Finanzausschusses -.</p>
+                  <p>3. [sic]</p>
+                  <p>Zerdik: </p>
+                  <p>Die Verh[andlungen] sind nach zwei Richtungen geführt [worden]: Liquidation des vorigen Vertrages und Abschluss eines neuen. Die Verhandlung war sehr schwierig </p>
+                  <p>und es ist doch gelungen, ein Abkommen zu erreichen, bei dem die polnische Regierung sich nicht die Ratifikation vorbehalten hat, </p>
+                  <p>es ist das Abkommen beiderseits ratifiziert worden. Das Übereinkommen über die Liquidation sah vor, dass alles, was an Kohlenlieferungen gelaufen ist nicht – </p>
+                  <p>auf die alte Rechnung geht und dass keine Unterbrechung in der Lieferung geschieht, auch dann nicht, wenn der neue Vertrag nicht gleich zur Ausführung kommt. </p>
+                  <p>Es ist gelungen, für einen Scheck, der - [den] im vorigen Jahr die polnische Regierung für unsere Rechnung erlegt hat, jetzt 5 M[illionen] Kronen ohne Gegenleistung -. </p>
+                  <p>Weiters wurde durchgesetzt, dass 14.000 polnische Mark -.</p>
+                  <p>[Hinsichtlich des neuen Übereinkommens gelten] für Kohle dieselben Bestimmungen wie voriges Jahr, monatlich 12.000 Tonnen, für ein Viertel kann die polnische Regierung disponieren </p>
+                  <p>für Firmen, welche Kompensationsartikel erzeugen. Rohöl [wird geliefert] für 50 M[illionen] Kronen und die Rückstände aus dem Vorjahr. Der Rohölpreis [ist] </p>
+                  <p>4,60 Kronen, 2 Kronen hinter dem gleichzeitig geschlossenen tschech[oslovakischen] Vertrag. Die Erdölproduktion für -. Lebensmittel: 85 Millionen </p>
+                  <p>Eier, [für] 15 Millionen Kronen Pferde, Obst und Fleisch. [Bei] Kartoffel [wurde] nichts erreicht. Holz 4.000 Zentner Eichen- und ebenso viel Kiefernholz, </p>
+                  <p>Holzkohle ....</p>
+                  <p>Bei den Verhandlungen [entstand eine] unangenehme Lage, [dadurch] dass Polen einen Posten an Waffen angekauft hat. Die Staatskanzlei hat abschlägig </p>
+                  <p>beschieden, obwohl vereinbart war, dass das Verkaufte ausgeführt wird, nur dass der Staat nicht selbst kauft. Die Information lautet nun ...</p>
+                  <p>[Ich bitte um] die Ermächtigung, dass ich das Stichwort telegraphiere - es ist befristet bis nächste ?Woche - wegen der Heeresbedarfsgegenstände im Werte von </p>
+                  <p>75 Millionen weil ich darüber kein Zugeständnis machen konnte.</p>
+                  <p>Fink: </p>
+                  <p>Nach meiner Meinung können wir in Abwesenheit des Kanzlers nicht [einen] Beschluss fassen.</p>
+                  <p>4.</p>
+                  <p>Glöckel: </p>
+                  <p>Landesschulinspektoren. [Genehmigt] mit Druckfehlerberichtigung in § 5 'jährlich'.</p>
+                  <p>5.</p>
+                  <p>Glöckel: </p>
+                  <p>Lehrerschaft Salzburg.</p>
+                  <p>6.</p>
+                  <p>[Zugezogen]: Hoheisl.</p>
+                  <p>Paul: Zeitungstarife. </p>
+                  <p>Die Kabinettskonferenz hat einen neuen Tarif ausgearbeitet. Die Tarifbestimmungen sollen gleichzeitig mit der Erhöhung der Postgebühren </p>
+                  <p>in Vollzug gesetzt werden.</p>
+                  <p>Hoheisl: </p>
+                  <p>Das Komitee hat sich geeinigt, den Tarif auf das Gewicht zu stellen. Der Faktor des Umfanges wurde ausgeschaltet. Es wurde </p>
+                  <p>zu[nächst] beschlossen, nach dem genauen Gewicht für das Kilogramm 1 Krone zu erheben nach [einer] Anregung Eldersch'. Es waren nur einige Änderungen </p>
+                  <p>nötig für die öfteren Erscheinungen als siebenmal in der Woche. Für die, wo die Abendblätter extra erscheinen, wurde der Weg erwogen, entweder ein 5% -. </p>
+                  <p><pb facs="krp-0162_s02-0005"/>Bezüglich der weniger als zweimal wöchentlich ...</p>
+                  <p>Paul: </p>
+                  <p>Die genannten Beträge enthalten schon die lineare Erhöhung um 100 %, daher ergibt sich eine doppelte Erhöhung. </p>
+                  <p>Für den Fall, als der Kabinettsrat diese Anträge annimmt, [ersuche ich], vorbehaltlich nach einer Konferenz, dann eine Ermäßigung in jenen Sätzen eintreten lassen zu dürfen, wenn wir in der </p>
+                  <p>Lage sein können, dem Begehren wegen Versendung der Drucksachen nachzukommen, dass sie nicht um 100 % erhöht werden. Auch das </p>
+                  <p>Lokalporto soll nicht erhöht werden. Aber vielleicht kommen wir zu einer Ermäßigung der Drucksachen. Dann [würde die Relation] 1:2 [hergestellt] und dann würde </p>
+                  <p>eine Ermäßigung eintreten. Sollten [wir bei] der 100 % Erhöhung der Drucksorten - das Porto ermäßigen, würde das auch bei den Zeitungen eintreten.</p>
+                  <p>Genehmigt. Antrag der Kabinettskonferenz mit Ermächtigung des Staatssekretärs, </p>
+                  <p>dass wenn sich die Sätze für die Drucksachen ändern, die Ermäßigung auch für die Zeitungen Platz greift. </p>
+                  <p>Der Tarif ist sodann der Zeitungsorganisation vorzulegen.</p>
+                  <p>7.</p>
+                  <p>Zerdik: 3. b).</p>
+                  <p>8.</p>
+                  <p>Zerdik: 3. c).</p>
+                  <p>9.</p>
+                  <p>Zerdik: 3. d).</p>
+                  <p>10.</p>
+                  <p>Stöckler: </p>
+                  <p>5. a) Salzburg hat beschlossen, alle Holzvorräte im Land anzufordern und darüber zu verfügen ohne Rücksicht, wo und was für </p>
+                  <p>Holz [es] ist. Es geht auf eine Beschlagnahme des Eigentums [hinaus]. Der Zweck wird nicht angegeben, sie wollen aber Kompensationen für neue Lebensmittelgeschäfte haben. </p>
+                  <p>Salzburg hat angefragt, ob ich ein solches Gesetz gegenzeichnen würde. Ich habe das abgelehnt. Es widerspricht das unserer ganzen Wirtschaftsordnung </p>
+                  <p>und Salzburg würde die Handhabe bekommen, mit dem Holz zu machen was sie wollen. Jede Verfügung über das Eigentum würde den Leuten genommen. </p>
+                  <p>Sie berufen sich darauf, dass sie es nur machen wollen bei großen Firmen, welche das Holz schon lange angekauft haben. Ich bin nicht kompetent, trage </p>
+                  <p>es aber vor und hatte eine zwischenstaatsamtliche Konferenz. Die Salzburger haben den Akt geschickt an das Staatsamt für Justiz. Dieses hat es an uns abgetreten. </p>
+                  <p>Eigentlich ist zuständig das Staatsamt für Handel, aber wir konnten es nicht mehr übermitteln. [Ich] habe mit [den Staatsämtern für] Handel, Finanzen, Volksernährung und Justiz verhandelt und diese Konferenz </p>
+                  <p>ist zu folgenden Anträgen gekommen:</p>
+                  <p>Zwei Anträge: [...] Auffassung, dass aufgrund der Beratung beschlossen wird, dagegen Vorstellung zu erheben an die Landesregierung. </p>
+                  <p>Die Mehrheit - anderen Staatsämter haben geglaubt, sofort an den Verfassungsgerichtshof heranzutreten. [Ich] stelle den Antrag auf Vorstellung.</p>
+                  <p>Vorstellung erheben, Anfechtung erst nach neuerlicher </p>
+                  <p>Beschlussfassung des Landtages.</p>
+                  <p>Eisler: </p>
+                  <p>[Eine] Kabinettskonferenz soll einen Weg zu - suchen für eine einheitliche Kompetenz bei der Regierung und [zu] einer Übersicht über die ungeklärten Verhältnisse </p>
+                  <p>in den Ländern zu kommen.</p>
+                  <p><pb facs="krp-0162_s02-0006"/>Froehlich: </p>
+                  <p>[Im] April '19 hat Landeshauptmann Kaan die Frage aufgeworfen. [Es wurde] die Aufklärung gegeben, dass bei der Textierung von [Artikel] 14 und 15 </p>
+                  <p>im Verfassungsausschuss [der Meinung] Ausdruck gegeben [wurde], dass es möglich sei, [dass] Vorstellung und Anfechtung auch nach der Kund[machung] angewendet werden kann. Bei der Länderkonferenz </p>
+                  <p>wurde in - [eine] Vereinbarung mit den Ländern [getroffen], 26./4., Z. 1.500/1, Gericht, in welcher zum Ausdruck gebracht wird dieser Standpunkt.</p>
+                  <p>Ramek: </p>
+                  <p>Die 14 Tage der Anfechtung sind im Gesetz unklar bestimmt und wenn auch die Länder [sich] darüber auf ein Kompromiss geeinigt haben </p>
+                  <p>und einverstanden [sind] mit einer Auslegung, man könne zuerst die Vorstellung erheben und wenn die zweite Mitteilung erfolgt, dass die Landesversammlung beim ersten </p>
+                  <p>Beschluss [...] - gegen diesen binnen 14 Tagen die Anfechtungsklage überreichen kann. Eine solche Vereinbarung hätte keine Wirksamkeit vor dem Verfassungsgerichtshof. </p>
+                  <p>Auch dann, wenn eine Landesregierung diesen Mangel nicht geltend macht, so muss der Verfassungsgericht das Moment der Verspätung von Amts wegen berücksichtigen. </p>
+                  <p>Er muss dann die Anfechtungsklage zurückweisen. Daher kann eine Vereinbarung zwischen Regierung und Landesregierung absolut keine sichere Abhilfe gewähren. Die Verhandlungen </p>
+                  <p>des Verfassungsausschusses haben die Ansicht des Ausschusses und der Nationalversammlung ergeben, dass die Frist nicht von der ersten Mitteilung zu rechnen ist, also man </p>
+                  <p>getrennt die Vorstellung erheben kann. Aber auch diese interne Auffassung des Verfassungsausschusses ist für den Verfassungsgerichtshof nicht maßgebend und er kommt </p>
+                  <p>gar nicht zur Kenntnis davon. Er würde dieser Interpretation vielleicht näher treten, wenn das im Ausschussbericht oder Motivenbericht zum Ausdruck gekommen wäre. </p>
+                  <p>Man könnte erst klar sehen, wenn der Verfassungsgerichtshof in einer solchen Sache schon judiziert hätte.</p>
+                  <p>Artikel 15 sagt, dass Gesetzesbeschlüsse binnen 14 Tagen nach Einlangen der Mitteilung angefochten werden können, wobei </p>
+                  <p>er auf Artikel 13 verweist. Dieser macht den Landesregierungen zur Pflicht, alle Gesetzesbeschlüsse der Landesversammlung vor ihrer Kundmachung der Staatsregierung </p>
+                  <p>mitzuteilen, nicht nur den ersten, der erst in 14 Tagen kundgemacht werden darf, sondern auch einen wiederholten Gesetzesbeschluss. Infolgedessen kann </p>
+                  <p>man mit einer gewissen Sicherheit annehmen, dass die Auffassung des Verfassungsgerichtshofes nicht eine andere sein wird, dass also noch Zeit ist, [dass] die Anfechtungsklage </p>
+                  <p>14 Tage nach der zweiten Mitteilung erhoben werden kann. Eine gewisse Unklarheit kommt hinein durch den zweiten Absatz des Artikel 14: </p>
+                  <p>Auch wenn die Anfechtungsklage droht, kann kundgemacht werden. Die Landesregierung muss nicht warten, ob eine Anfechtungsklage kommt oder nicht, sie kann </p>
+                  <p>kundmachen. Die Kundmachung wird durch die Anfechtungsklage nicht gehindert. Aber man kann daraus auch ableiten, dass [es] eine Wiederholung des ursprünglichen </p>
+                  <p>Beschlusses [ist], [es] kann kundgemacht werden und es gibt keine Anfechtung mehr. Das Anfechtungsrecht ist durch die Vorstellung bereits konsumiert, die 14 Tage </p>
+                  <p>zur Erhebung der Vorstellung und der Anfechtung sind die gleichen und beginnen mit dem Tag der </p>
+                  <p>Mitteilung des ersten Gesetzesbeschlusses. Die Landesregierung muss also mitteilen, sie kann aber kundmachen.</p>
+                  <p>Unklar ist die Sache auf alle Fälle und sicher sind wir beim Verfassungsgerichtshof nicht.</p>
+                  <p>Fink: </p>
+                  <p>Wenn die Juristen meinen, wir dürfen auf Erfolg rechnen, wenn man beim Verfassungsgerichtshof einschreitet, </p>
+                  <p>dann müsste man in Erwägung ziehen, beides zu machen, um die Frist zu machen.</p>
+                  <p>Miklas: </p>
+                  <p>Einverstanden, wir müssen einerseits Vorstellung gegen die ungesetzlichen Landesbeschlüsse erheben, andererseits beim Verfassungsgerichtshof Beschwerde einreichen.</p>
+                  <p>Nach meinem Dafürhalten ist die Rechtslage: Die Erklärungen der Länderkonferenz sind für den Verfassungsgerichtshof gleichgültig. Die Auffassungen des </p>
+                  <p>Verfassungsausschusses, die nur in der Erinnerung bestehen, sind für ihn auch gleichgültig. Die Landesregierung ist verpflichtet, jeden Gesetzesbeschluss mitzuteilen, </p>
+                  <p>aber diese Mitteilungspflicht hat ein Loch, jene Beschlüsse, welche nicht Gesetzesbeschlüsse als nova Vorlagen [sind], sondern Beharrungsbeschlüsse </p>
+                  <p>nach erfolgter Vorstellung. Daher ist diese Art von Beschlüssen tatsächlich von der Anmeldepflicht gegenüber der Staatsregierung ausgenommen. Gesetzt den Fall, </p>
+                  <p>die Landesregierung muss den Beharrungsbeschluss mitteilen und sie kundmacht sofort. Gibt es gar keine Möglichkeit, den Verfassungsgerichtshof gegen ein nach </p>
+                  <p>Auffassung der Regierung und der National[versammlung] verfassungswidriges Landesgesetz anzurufen, nicht innerhalb von 14 Tagen, sondern auch später, wenn eine Partei sich </p>
+                  <p>dadurch beschwert fühlt?</p>
+                  <p><pb facs="krp-0162_s02-0007"/>Stöckler: [Ich] beantrage die Vorstellung mit der Erweiterung, dass unter einem auch die Anfechtungsklage an den Verfassungsgerichtshof überreicht wird. </p>
+                  <p>Das ist der Landesregierung mitzuteilen, dass es geschieht, damit keine Fristversäumnis eintritt, damit sie die Möglichkeit zu Änderungen hat.</p>
+                  <p>Mayr: </p>
+                  <p>Zur Aufklärung: In dem Verfassungsvorentwurf, der bisher vorliegt, ist die Sache besser gemacht, indem es für die </p>
+                  <p>Anfechtung keine Frist gibt. Die Ländervertreter haben dazu bereits zugestimmt. Ich werde nächstens dem Kabinettsrat einen Katalog vorlegen, </p>
+                  <p>woraus zu ersehen ist, dass eine Unzahl von solchen Fällen aus allen Ländern vorliegt, in denen hätte angefochten werden müssen. Es ist kein - [ein] Chaos in dem </p>
+                  <p>verfassungsrechtlichen Verhältnis unter den Ländern und gegenüber der Zentralgewalt. Wenn wir jetzt beides tun, so nehmen wir einen Einzelfall </p>
+                  <p>aus einer Unzahl heraus und es ist weniger die Schuld der Länder als der Verfassung, dass solche Möglichkeiten gegeben sind. Weil das einer, vielleicht </p>
+                  <p>der letzte Fall ist, der noch vorkommt vor der Erlassung der neuen Verfassung, wäre ich dafür, mit Rücksicht darauf, dass Ramek meint, es genügt die Anfechtung - Vorstellung, </p>
+                  <p>bloß die Vorstellung zu erheben. Es führt vielleicht zu Konsequenzen in Salzburg, welche für die Länderkonferenz in Linz am 13. April - [diese] </p>
+                  <p>ungünstig beeinflussen. Aus diesem Grund wäre ich eigentlich nur für die Vorstellung.</p>
+                  <p>Eisler: </p>
+                  <p>Der Vorschlag wäre zu erwägen, wenn die Sache nicht so große politische Bedeutung hätte. Ein Misserfolg wegen Fristversäumnis </p>
+                  <p>wäre von den unangenehmsten Folgen, weil alle Landtage dasselbe machen [würden]. Die materielle Wichtigkeit der Sache spricht dafür, [dass man] in diesem Fall auch </p>
+                  <p>die Anfechtungsklage erhebt und dass [man] dem Land [mitteilt, dass dies] aus der unklaren Fassung des Gesetzes veranlasst sei, dass es nur zur Wahrung der Frist geschieht.</p>
+                  <p>M[iklas]: </p>
+                  <p>Mit Rücksicht auf die außerordentliche Wichtigkeit der Materie, welche mit unseren Verpflichtungen der Entente gegenüber zusammenhängt -.</p>
+                  <p>[<hi rend="#i">Am Rand:</hi>] Mit Rücksicht auf die Zusammenhänge, welche in dieser Materie hinsichtlich unserer Verpflichtungen gegenüber der Entente bestehen -.</p>
+                  <p>Fink: </p>
+                  <p>Die Vorstellung [erfolgt] vom Staatsamt für Handel, die Anfechtung von der Staatskanzlei.</p>
+                  <p>11.</p>
+                  <p>Reisch: </p>
+                  <p>6). Angenommen.</p>
+                  <p>[Communiqué über die Beamtenforderungen]:</p>
+                  <p>Eisler: </p>
+                  <p>Als Schlusssatz soll ein Appell gerichtet werden, in dem gesagt wird, dass bei der jetzigen Lage des Staates </p>
+                  <p>das Höchste, was geleistet [werden kann], ist, die Existenz zu ermöglichen, aber die Erfüllung aller kleinen Wünsche unmöglich und eine Zumutung </p>
+                  <p>ist, welche bei einiger Einsicht nicht gestellt werden kann. Es soll sich jeder damit begnügen - ihm die Existenz </p>
+                  <p>zu garantieren und die besonderen Wünsche jetzt nicht am Platz sind.</p>
+                  <p>Die Staatsregierung erwartet aber auch .... Es wäre [darauf] hinzuweisen, dass bei den Beratungen die Gesamtheit </p>
+                  <p>der Staatsbediensteten -.</p>
+                  <p>Miklas: </p>
+                  <p>[Ich] bin einverstanden mit der Stellungnahme der Regierung und dass die Regierung selbst vorangeht. Wir dürfen nicht immer die Nationalversammlung </p>
+                  <p>vorschieben. Aber eine Zweckmäßigkeitsfrage ist, wann man diese Erklärung hinausgeben soll? In Deutschland geht es drunter </p>
+                  <p>und drüber, mit der Erklärung sollte bis Montag gewartet werden.</p>
+                  <p><pb facs="krp-0162_s02-0008"/>Paul: </p>
+                  <p>Am Montag sollte [sie] jemand bei der Beratung des Gesetzes im Haus abgeben. Vielleicht könnte dann auch </p>
+                  <p>von beiden Parteien dazu gesprochen werden.</p>
+               </div>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

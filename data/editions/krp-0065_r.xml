@@ -1,0 +1,554 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href='http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:acdh="https://vocabs.acdh.oeaw.ac.at/schema#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xml:lang="de">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="a" type="main" n="0065">Kabinettsprotokoll Nr. 65 vom 29. April 1919</title>
+            <title level="m" type="main" n="01">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <title level="m" type="sub" n="">Renner II (15. März – 17. Oktober 1919)</title>
+            <meeting>
+               <placeName key="https://d-nb.info/gnd/4066009-6">Wien</placeName>
+               <orgName key="https://d-nb.info/gnd/5162749-8">Kabinettsrat</orgName>
+               <date when-iso="1919-04-29"/>
+            </meeting>
+            <editor>
+               <persName key="https://d-nb.info/gnd/122481836"
+                         role="hasCreator"
+                         xml:id="hwohnout">
+                  <forename>Helmut</forename>
+                  <surname>Wohnout</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</affiliation>
+               <idno type="ORCID">0000-0002-3864-9839</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/120789825"
+                         role="hasCreator"
+                         xml:id="tolechowski">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0003-3291-6876</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/131679384"
+                         role="hasCreator"
+                         xml:id="rlein">
+                  <forename>Richard</forename>
+                  <surname>Lein</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0002-7502-0503</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="aholzer">
+                  <forename>Anna</forename>
+                  <surname>Holzer</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0005-3560-3500</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="dsoelkner">
+                  <forename>Dominik</forename>
+                  <surname>Sölkner</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-9895-7212</idno>
+            </editor>
+            <editor>
+               <persName role="hasContributor" xml:id="ischotzko">
+                  <forename>Ina</forename>
+                  <surname>Schotzko</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-5210-3713</idno>
+            </editor>
+            <funder n="1">
+               <orgName key="https://d-nb.info/gnd/2054142-9" role="hasFunder">Österreichischer Wissenschaftsfonds FWF</orgName>
+               <idno type="project">PAT1495024</idno>
+               <title type="project">Die Protokolle des österreichischen Kabinettsrates 1919–1920</title>
+            </funder>
+            <respStmt>
+               <resp>Projektverantwortung</resp>
+               <orgName key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Projektleitung</resp>
+               <persName key="https://d-nb.info/gnd/120789825" role="hasPrincipalInvestigator">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+                  <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+                  <idno type="ORCID">0000-0003-3291-6876</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Nationaler Forschungspartner</resp>
+               <orgName key="https://d-nb.info/gnd/1123037736" role="hasEnabler">Austrian Centre for Digital Humanities</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Digitalisierung der gedruckten Quellen</resp>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>TEI-Datenmodellierung</resp>
+               <persName role="hasContributor" xml:id="tfruehwirth">
+                  <forename>Timo</forename>
+                  <surname>Frühwirth</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-3997-5193</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technische Supervision</resp>
+               <persName key="https://d-nb.info/gnd/1043833846"
+                         role="hasContributor"
+                         xml:id="pandorfer">
+                  <forename>Peter</forename>
+                  <surname>Andorfer</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-9575-9372</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technisches Consulting und Vorbereitung der Druckausgabe</resp>
+               <persName key="https://d-nb.info/gnd/13281899X"
+                         role="hasContributor"
+                         xml:id="skurz">
+                  <forename>Stephan</forename>
+                  <surname>Kurz</surname>
+                  <affiliation key="https://d-nb.info/gnd/1202798799">Institut für die Erforschung der Habsburgermonarchie und des Balkanraumes</affiliation>
+                  <idno type="ORCID">0000-0003-2546-2570</idno>
+               </persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher key="https://d-nb.info/gnd/1001454-8">Österreichische Akademie der Wissenschaften</publisher>
+            <date when="2028"/>
+            <availability status="free">
+               <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">Lizenziert unter CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/deed.de)</licence>
+            </availability>
+            <idno type="ISBN_Print"/>
+            <idno type="ISBN_Part_epub"/>
+            <idno type="ISBN_Digital"/>
+            <idno type="DOI"/>
+            <idno type="DOI_zenodo"/>
+            <idno type="ebook_ID"/>
+         </publicationStmt>
+         <seriesStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="m" type="main">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <respStmt>
+               <resp>Bearbeitung und Herausgeberschaft</resp>
+               <orgName key="https://d-nb.info/gnd/2024703-5">Universität Wien</orgName>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+         </seriesStmt>
+         <notesStmt>
+            <note>Diese TEI-XML-Datei ist Grundlage für eine Druckausgabe der Edition.</note>
+            <relatedItem>
+               <biblStruct>
+                  <monogr>
+                     <imprint>
+                        <pubPlace key="https://d-nb.info/gnd/4066009-6">Wien</pubPlace>
+                        <publisher key="https://d-nb.info/gnd/2068748-5">Verlag der Österreichischen Akademie der Wissenschaften</publisher>
+                        <date when="2029"/>
+                     </imprint>
+                     <extent/>
+                  </monogr>
+                  <note>
+              <idno/>
+              <ptr/>
+            </note>
+                  <citedRange/>
+               </biblStruct>
+            </relatedItem>
+         </notesStmt>
+         <sourceDesc>
+            <bibl>Quellbestand: AT-OeStA/AdR MRang MR 1Rep KRP Kabinettsratsprotokolle, 1918-1920 (Teilbestand)<ref target="https://www.archivinformationssystem.at/detail.aspx?id=5465">https://www.archivinformationssystem.at/detail.aspx?id=5465</ref>
+            </bibl>
+            <msDesc>
+               <msIdentifier>
+                  <institution key="https://d-nb.info/gnd/37748-X" role="hasOwner">AT-OeStA Österreichisches Staatsarchiv (Archiv (ÖStA))</institution>
+                  <repository key="https://d-nb.info/gnd/1601181-8">AT-OeStA/AdR Archiv der Republik, 1918- (Abteilung)</repository>
+                  <collection>AT-OeStA/AdR MRang MR 1Rep Ministerrat 1. Republik, 1918 - 1938 (Bestand)</collection>
+                  <idno>AT-OeStA_AdR-MRang-MR-1.-Rep.-KRP-065</idno>
+               </msIdentifier>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <abstract>
+            <p>
+          <!--to be generated-->
+        </p>
+         </abstract>
+      </profileDesc>
+      <encodingDesc>
+         <styleDefDecl scheme="css"/>
+         <tagsDecl>
+            <rendition xml:id="b" scheme="css">font-weight:bold;</rendition>
+            <rendition xml:id="su" scheme="css">vertical-align:super;font-size:.7em;</rendition>
+            <rendition xml:id="s" scheme="css">text-decoration:line-through;</rendition>
+            <rendition xml:id="u" scheme="css">text-decoration:underline;</rendition>
+            <rendition xml:id="ow" scheme="css">text-decoration:line-through;text-decoration-style:double;</rendition>
+            <rendition xml:id="r" scheme="css">display:block;text-align:right;</rendition>
+            <rendition xml:id="letterspaced" scheme="css">letter-spacing:0.15em;</rendition>
+            <rendition xml:id="i" scheme="css">font-style:italic;</rendition>
+         </tagsDecl>
+         <editorialDecl>
+            <hyphenation>
+               <p>
+            <!--to be added-->
+          </p>
+            </hyphenation>
+            <correction>
+               <p>
+            <!--to be added-->
+          </p>
+            </correction>
+            <normalization>
+               <p>
+            <!--to be added-->
+          </p>
+            </normalization>
+            <punctuation>
+               <p>
+            <!--to be added-->
+          </p>
+            </punctuation>
+            <stdVals>
+               <p>
+            <!--to be added-->
+          </p>
+            </stdVals>
+            <p>
+          <!--to be added-->
+        </p>
+         </editorialDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#tfruehwirth" when-iso="2026-10-14">TEIGarage output upconverted with upconvert.xsl</change>
+         <change who="#tfruehwirth" when-iso="2026-10-14">TEI header populated with generate_tei_templates.py</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface/>
+   </facsimile>
+   <text>
+      <body>
+         <div xml:id="doc-krp-0065.xml">
+            <head type="dokument">
+               <title type="num">65.<note type="footnote">Das Protokoll trägt den Vermerk <hi rend="#i">Vertraulich!</hi></note>
+               </title>
+               <title type="desc">
+                  <pb facs="krp-0065_r-0001"/>
+                  <pb facs="krp-0065_r-0002"/>[Dienstag] 1919-04-29</title>
+            </head>
+            <div type="dokumentkopf">
+               <div type="vorsitz">
+                  <head>Vorsitz:</head>
+                  <p>Renner, teilweise Fink</p>
+               </div>
+               <div type="anwesend">
+                  <head>Anwesend:</head>
+                  <p>Bauer, Bratusch, Deutsch, Ellenbogen, Glöckel, Hanusch, Miklas, Paul, Resch, Zerdik</p>
+               </div>
+               <div type="zugezogen">
+                  <head>Zugezogen:</head>
+                  <p>Grimm, Wilfling</p>
+               </div>
+               <div type="dauer">
+                  <head>Dauer:</head>
+                  <p>15.00–19.00 Uhr</p>
+               </div>
+            </div>
+            <div type="komponenten">
+               <p>Reinschrift, Beilagen, Konzept, stenographische Mitschrift, Entwurf der Tagesordnung, diverse Zusätze</p>
+            </div>
+            <div type="beilagen">
+               <head>Beilagen:</head>
+               <list>
+                  <item><ref target="#krp-0065_top04">Zu TOP 4</ref>: <ref target="#krp-0065_b01">Vortrag des Staatsamtes für Heereswesen für den Kabinettsart über den Besuch einer Kärntner Abordnung am 22. April 1919 angesichts der unmittelbaren Gefahr eines südslawischen Angriffs</ref></item>
+                  <item><ref target="#krp-0065_top05">Zu TOP 5</ref>: <ref target="#krp-0065_b02">Vortrag des Staatsamtes für Heereswesen über Versorgungsfragen der Militärgagisten</ref></item>
+                  <item><ref target="#krp-0065_top07">Zu TOP 7</ref>: <ref target="#krp-0065_b03">Vortrag des Staatsamtes für Heereswesen, Abt. 6, Zl. 1350, wegen der Überlassung der ehemaligen Militärakademie in der Boerhaavegasse für die Rudolfstiftung an die Gemeinde Wien</ref></item>
+                  <item><ref target="#krp-0065_top07">Zu TOP 7</ref>: <ref target="#krp-0065_b04">Vortrag des Staatssekretärs für Justiz Zl. 6865/19 auf Überlassung der ehemaligen Militärakademie in der Boerhavegasse zur Unterbringung eines Jugendgerichtes</ref></item>
+                  <item><ref target="#krp-0065_top10">Zu TOP 10</ref>: <ref target="#krp-0065_b05">Zustimmung der Staatsregierung zu mehreren Gesetzesbeschlüssen der Landesversammlungen von Oberösterreich, Steiermark, Tirol und Vorarlberg</ref></item>
+                  <item><ref target="#krp-0065_top11">Zu TOP 11</ref>: <ref target="#krp-0065_b06">Antrag des Staatsamtes für Inneres und Unterricht Zl. 9168 betreffend gnadenweise Anrechnung der Landsturmdienstzeiten der Gendarmeriepensionisten</ref></item>
+                  <item><ref target="#krp-0065_top12">Zu TOP 12</ref>: <ref target="#krp-0065_b07">Auskunft des Departements 18a des Staatamtes für Finanzen über die mögliche Beförderung von Regierungsmitgliedern, die Beamte sind</ref></item>
+                  <item><ref target="#krp-0065_top13">Zu TOP 13</ref>: <ref target="#krp-0065_b08">Vollzugsanweisung des Staatsamtes für Inneres und Unterricht auf Einführung eines Doktorates der Staatswissenschaften</ref></item>
+                  <item><ref target="#krp-0065_top14">Zu TOP 14</ref>: <ref target="#krp-0065_b09">Vollzugsanweisung des Staatsamtes für Inneres und Unterricht auf Zulassung von Frauen zum Rechtsstudium</ref></item>
+                  <item><ref target="#krp-0065_top15">Zu TOP 15</ref>: <ref target="#krp-0065_b10">Vortrag sowie neue Fassung der Vollzugsanweisung über die Übertragung der Geschäfte der staatlichen Fremdenverkehrsförderung auf das Staatsamt für Verkehrswesen</ref></item>
+                  <item><ref target="#krp-0065_top16">Zu TOP 16</ref>: <ref target="#krp-0065_b11">Vortrag des Staatsamtes für Verkehrswesen über die Gewährung von Eisenbahnfahrbegünstigungen an Staatsbedienstete</ref></item>
+                  <item><ref target="#krp-0065_top17">Zu TOP 17</ref>: <ref target="#krp-0065_b12">Gesetzesantrag des Staatsamtes für Verkehrswesen auf teilweise Änderung des Dienstverhältnisses der Kanzleioffizianten und Kanzleioffiziantinnen, ständigen Aushilfs- und Landpostdiener</ref></item>
+                  <item><ref target="#krp-0065_top18">Zu TOP 18</ref>: <ref target="#krp-0065_b13">Ernennung von Amtsdienern und Gefangenenaufsehern zu Kanzleibeamten der Justizverwaltung</ref></item>
+               </list>
+            </div>
+            <div type="protokoll">
+               <pb facs="krp-0065_r-0003"/>
+               <div type="top" xml:id="krp-0065_top01">
+                  <head>
+                     <label>
+                        <num n="1">1.</num>
+                        <seg>Kundmachung des Invalidenentschädigungsgesetzes sowie des Gesetzes über die Erklärung des 12. November und des 1. Mai als allgemeine Ruhe- und Festtage.</seg>
+                     </label>
+                  </head>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> teilt mit, dass er die Kundmachung der beiden von der Nationalversammlung beschlossenen Gesetze</p>
+                  <list>
+                     <item n="1"><label>1.)</label> über die staatliche Entschädigung der Kriegsinvaliden, -Witwen und -Waisen (Invalidenentschädigungsgesetz) sowie</item>
+                     <item n="2"><label>2.)</label> über die Erklärung des 12. November und des 1. Mal als allgemeine Ruhe- und Festtage</item>
+                  </list>
+                  <p>im Staatsgesetzblatte dringlichkeitshalber bereits veranlasst habe. </p>
+                  <p>Da gegen diese beiden Gesetzesbeschlüsse von der Staatsregierung keine Vorstellung zu erheben sein dürfte, erbitte er nunmehr die nachträgliche Genehmigung seiner Verfügung.</p>
+                  <p>Der Kabinettsrat erteilt die erbetene Genehmigung.</p>
+               </div>
+               <div type="top" xml:id="krp-0065_top02">
+                  <head>
+                     <label>
+                        <num n="2">2.</num>
+                        <seg>Gesetzentwurf über die Haftung des Staates für das Verschulden seiner Bediensteten.</seg>
+                     </label>
+                  </head>
+                  <p>Der Vorsitzende verweist auf die bereits seinerzeit im Kabinettsrate betonte Notwendigkeit der Schaffung eines Gesetzes über die Haftung des Staates für den den Parteien durch seine Bediensteten zugefügten Schaden.</p>
+                  <p>Er schlage vor, mit der Ausarbeitung des Gesetzentwurfes und sohin auch mit der Führung der bezüglichen Verhand<pb facs="krp-0065_r-0004"/>lungen mit den beteiligten Ressorts die Staatskanzlei zu betrauen.</p>
+                  <p>Der Kabinettsrat pflichtet diesem Antrage bei.</p>
+               </div>
+               <div type="top" xml:id="krp-0065_top03">
+                  <head>
+                     <label>
+                        <num n="3">3.</num>
+                        <seg>Reform der Besoldung der Zivilstaatsbediensteten.</seg>
+                     </label>
+                  </head>
+                  <p>Der Vorsitzende führt aus, dass der Staatsrat seinerzeit das „Zwischenstaatsamtliche Komitee für Beamtenangelegenheiten“ beauftragt habe, den Entwurf einer Reform der Besoldung der Zivilstaatsangestellten auszuarbeiten. Dieser Entwurf liege nunmehr vor.</p>
+                  <p>Hiezu habe die Geschäftsstelle nachstehende Anträge gestellt, die der sprechende Staatskanzler dem Kabinettsrate zur Genehmigung empfehle:</p>
+                  <p>„</p>
+                  <list>
+                     <item n="1"><label>1.)</label> Der Kabinettsrat möge die Ermächtigung erteilen, dass der Entwurf und zwar, um der Staatsregierung als solcher möglichst wenig zu präjudizieren, zunächst als Vorschlag des Zwischenstaatsamtlichen Komitees für Beamtenangelegenheiten allen Staatsangestelltenorganisationen zur schriftlichen Begutachtung binnen 14 Tagen zugemittelt werde;</item>
+                     <item n="2"><label>2.)</label> die Versendung des Entwurfes zu diesem Zwecke möge der Geschäftsstelle des Komitees (Departement XVIII D des Staatsamtes für Finanzen) aufgetragen werden;<pb facs="krp-0065_r-0005"/></item>
+                     <item n="3"><label>3.)</label> die Staatsregierung möge sich vorbehalten, mit den Organisationen unter Zugrundelegung des Komiteeentwurfes und der eingelangten schriftlichen Gutachten der Organisationen mit diesen letzteren in mündliche Verhandlungen zu treten;</item>
+                     <item n="4"><label>4.)</label> um sicherzustellen, dass der Entwurf allen Organisationen, die an ihm ein Interesse nehmen, auch tatsächlich zukomme, möge durch ein Kommuniqué in der Tagespresse eine öffentliche Aufforderung ergehen, dass alle Organisationen, die den Entwurf etwa nicht zugesendet erhalten haben, ihn bei der Geschäftsstelle des Komitees ansprechen könne.“</item>
+                  </list>
+                  <p>Nach einer kurzen Debatte, an welcher sich die Staatssekretäre <hi rend="#letterspaced">Paul</hi> und Dr. <hi rend="#letterspaced">Deutsch</hi>, ferner Unterstaatssekretär <hi rend="#letterspaced">G1öckel</hi> sowie Sektionschef Dr. <hi rend="#letterspaced">Grimm</hi> beteiligen, genehmigt der Kabinettsrat die gestellten Anträge.</p>
+               </div>
+               <div type="top" xml:id="krp-0065_top04">
+                  <head>
+                     <label>
+                        <num n="4">4.</num>
+                        <seg>Einbruch südslawischer Truppen in Kärnten.</seg>
+                     </label>
+                  </head>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> teilt mit, dass laut eingelangter telegrafischer Meldungen der Landesregierung in Kärnten südslawische Truppen heute – in den ersten Morgenstunden – die Demarkationslinie in Kärnten überschritten und die <pb facs="krp-0065_r-0006"/>von den kärntnerischen Landestruppen gehaltenen Sicherungen überrumpelt haben. Dieser ganz unerwartete Bruch der unter Vermittlung einer amerikanischen Kommission getroffenen Vereinbarung habe das Land Kärnten auf das Äußerste beunruhigt, zumal der abgeschlossene Waffenstillstand nicht gekündigt worden sei. Auf der ganzen Linie von Völkermarkt bis zum Villacher Becken sei von den Südslawen der Kampf bereits eröffnet worden. Die Landesregierung von Kärnten habe sich nun an die deutschösterreichische Regierung um die erforderlichen Vollmachten für ein Aufgebot der Landeskinder gegen den eindringenden Feind und an das Staatsamt für Heer[es]wesen um Unterstützung gewendet.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Deutsch</hi> sowie Staatssekretär Dr. <hi rend="#letterspaced">Bauer</hi> machen sodann über die gegenwärtige Situation vom Standpunkte ihrer Ressorts eingehende Mitteilungen, die vertraulichen Charakter tragen.</p>
+                  <p>Der Kabinettsrat beschließt:</p>
+                  <list>
+                     <item n="1"><label>1.)</label> Über Antrag der Landesregierung in Kärnten sind im Sinne des § 8 lit. a) des Gesetzes vom 6. Februar 1919, StGBl. Nr. 91, zur Verteidigung des Vaterlandes gegen Angriffe äußerer <pb facs="krp-0065_r-0007"/>Feinde alle Wehrpflichtigen der Altersklassen 1877–1899 in Lande Kärnten aufzubieten. Mit der Durchführung dieser Maßnahme ist der Staatssekretär für Heer[es]wesen betraut, der hiebei das Einvernehmen mit der Landesregierung in Klagenfurt zu pflegen hat</item>
+                  </list>
+                  <p>Der Kabinettsrat wird sofort an den Präsidenten wegen sofortiger Einberufung der Nationalversammlung zum Zwecke der nachträglichen Genehmigung dieser Maßnahmen im Sinne der einschlägigen gesetzlichen Bestimmungen heranzutreten haben.</p>
+                  <list>
+                     <item n="1"><label>2.)</label> Dem Staatsamte für Heer[es]wesen wird empfohlen, im eigenen Wirkungskreise Formationen der Volkswehr zur Verstärkung der Kärntner Truppen dem dortigen Landesbefehlshaber zur Verfügung zu stellen.</item>
+                     <item n="2"><label>3.)</label> Der Staatskanzler wird beauftragt, im Einvernehmen mit den Staatssekretären für Äußeres und Heer[es]wesen der Presse entsprechende Informationen im Gegenstände zu übergeben.</item>
+                  </list>
+               </div>
+               <div type="top" xml:id="krp-0065_top05">
+                  <head>
+                     <label>
+                        <num n="5">5.</num>
+                        <seg>Versorgungsfragen der Militärgagisten.</seg>
+                     </label>
+                  </head>
+                  <p>In eingehender Weise begründet Staatssekretär Dr. <hi rend="#letterspaced">Deutsch</hi> folgende, auf die materielle Besserstel<pb facs="krp-0065_r-0008"/>lung der Militärgagisten abzielende Anträge:</p>
+                  <list>
+                     <item n="1"><label>1.)</label> Insolange die provisorischen Aufbesserungen der Ruhegenüsse, die das Staatsamt für Heer[es]wesen schon beantragt hat, nicht durchgeführt sind, finden zwangsweise Pensionierungen von Berufsmilitärpersonen zum Zwecke der Standesherabsetzung nicht statt;</item>
+                     <item n="2"><label>2.)</label> es sind Gesetzentwürfe vorzulegen,<list><item n="1"><label>a)</label> womit die Versorgung der Militärpersonen und ihrer Hinterbliebenen mit der Versorgung der Zivilstaatsbediensteten und ihrer Hinterbliebenen in Übereinstimmung zu bringen ist,</item><item n="2"><label>b)</label> womit eine Dienstpragmatik für die Berufsmilitärpersonen geschaffen wird, die der Dienstpragmatik der Zivilstaatsbeamten nachzubilden ist, soweit nicht die besonderen Verhältnisse des Militärdienstes Abweichungen erheischen, worin demnach die grundsätzliche Gleichstellung der Berufsmilitärpersonen mit den anderen Staatsbediensteten ausgesprochen wird, sodass jede Gehaltsregelung der ersteren auch bei den Berufsmilitärpersonen platzgreift,</item><item n="3"><label>c)</label> womit die Bestimmungen des vom Staatsamt für soziale Verwaltung ausge<pb facs="krp-0065_r-0009"/>arbeiteten Versorgungsgesetzes auch den hiefür in Betracht kommenden Berufsmilitärpersonen und ihren Hinterbliebenen zugute kommen.</item></list></item>
+                  </list>
+                  <p>Diese Gesetzentwürfe sind schleunigst – spätestens bis 20. Mai l. J. – der Nationalversammlung vorzulegen; für deren rascheste Verabschiedung ist zu sorgen.</p>
+                  <list>
+                     <item n="1"><label>3.)</label> Alle Zweige der Staatsverwaltung, die über offene Beamtenstellen verfügen, werden diese soweit als möglich mit Berufsmilitärpersonen besetzen, soferne sie die erforderliche Qualifikation haben oder über die Vorbildung verfügen, mit der sie diese Qualifikation in absehbarer Zeit erwerben können.</item>
+                     <item n="2"><label>4.)</label> In die zwischenstaatsamtliche Geschäftsstelle zur Behandlung der Staatsangestelltenangelegenheiten ist ein Vertreter des Staatsamtes für Heer[es]wesen zur Wahrnehmung der materiellen Interessen der Berufsmilitärpersonen ständig einzuteilen.</item>
+                  </list>
+                  <p>Der Kabinettsrat genehmigt die vorstehenden Anträge mit der Maßgabe, dass Pkt. 1 zunächst dem Zwischenstaatsamtlichen Komitee für Beamtenangelegenheiten zur schleunigen Vorbereitung zu überweisen ist und dass über die Annahme <pb facs="krp-0065_r-0010"/>des Pkt. 4 eine besondere Mitteilung an das Staatsamt für Heer[es]wesen und an die Geschäftsstelle durch die Staatskanzlei zu richten ist.</p>
+               </div>
+               <div type="top" xml:id="krp-0065_top06">
+                  <head>
+                     <label>
+                        <num n="6">6.</num>
+                        <seg>Versorgungsgebühren der im Volkswehrdienste stehenden Berufsmilitärpersonen und deren Hinterbliebenen.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. Deutsch erbittet und erhält vom Kabinettsrate die Ermächtigung, bis zur endgiltigen gesetzlichen Neuregelung der Militärversorgungsgebühren für Berufsmilitärpersonen und deren Hinterbliebene diese Personen, soferne sie in Ausübung des Volkswehrdienstes in ihrer Gesundheit geschädigt wurden, bei Erfüllung der sonstigen Voraussetzungen in gleicher Weise zu versorgen wie die nach dem Invaliden- und Hinterbliebenenversorgungsgesetz vom 27. April 1919 anspruchsberechtigten Personen, insoferne sich dadurch die Versorgung günstiger gestaltet als nach den bisherigen Bestimmungen.</p>
+                  <p>Der Kabinettsrat beauftragt gleichzeitig das Staatsamt für Heer[es]wesen, diesen Beschluss in entsprechender Weise zu publizieren.</p>
+               </div>
+               <div type="top" xml:id="krp-0065_top07">
+                  <head>
+                     <label>
+                        <num n="7">7.</num>
+                        <seg>Künftige Verwendung der Gebäude der ehemaligen Militärakademie in Wien III. [Wiener Gemeindebezirk] Boerhaavegasse.</seg>
+                     </label>
+                  </head>
+                  <p>Dem Kabinettsrate liegen zwei Anträge auf Überlassung der Gebäude der <pb facs="krp-0065_r-0011"/>ehemaligen Militärakademie in Wien, III. [Wiener Gemeindebezirk], Boerhaavegasse vor. Einerseits beantragt Staatssekretär Dr. Deutsch, die Überlassung dieser Gebäude an die Gemeinde Wien zwecks Erweiterung des Rudolfsspitales, andererseits erbittet Staatssekretär Dr. <hi rend="#letterspaced">Bratusch</hi> die Zustimmung des Kabinettsrates zur Unterbringung eines Jugendgerichtes in diesem Gebäude.</p>
+                  <p>Über die Frage der künftigen Verwendung dieser Gebäude entwickelt sich eine eingehende Debatte, in welcher insbesondere Unterstaatssekretär <hi rend="#letterspaced">Glöckel</hi> darauf hinweist, dass es vom staatsfinanziellen Standpunkte höchst bedenklich erscheine, die in Rede stehenden Gebäude, welche für Schulzwecke in geradezu vorbildlicher Weise eingerichtet seien, ihrem eigentlichen Zwecke zu entziehen.</p>
+                  <p>Der Kabinettsrat beschließt, es habe unter der Leitung des Vizekanzlers Fink eine aus den beteiligten Mitgliedern des Kabinettes und Vertretern der Gemeinde Wien bestehende Kommission zunächst einen Lokalaugenschein vorzunehmen und über dessen Ergebnis dem Kabinettsrate ehestens zu berichten.</p>
+                  <p><pb facs="krp-0065_r-0012"/>Über Antrag des Unterstaatssekretärs <hi rend="#letterspaced">Miklas</hi> wird dieser Kommission auch ein Vertreter der niederösterreichischen Landesverwaltung beizuziehen sein.</p>
+               </div>
+               <div type="top" xml:id="krp-0065_top08">
+                  <head>
+                     <label>
+                        <num n="8">8.</num>
+                        <seg>Unterbringung des Staatsamtes für soziale Verwaltung in den beiden vormals Erzherzog Friedrich‘schen Palais am Albrechtsplatz.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Hanusch</hi> erbittet und erhält vom Kabinettsrate die Ermächtigung zur Unterbringung sämtlicher Abteilungen des Staatsamtes für soziale Verwaltung in den beiden vormals Erzherzog Friedrich<hi rend="superscript">‘</hi>schen Palais am Albrechtsplatze, wogegen das bisher vom Staatsamt für soziale Verwaltung innegehabte Gebäude (Hoher Markt 5[I. Wiener Gemeindebezirk]) dem Zentralverbande der Invaliden zur Verfügung zu stellen sein werde.</p>
+                  <p>Über Antrag des Unterstaatssekretärs <hi rend="#letterspaced">Glöckel</hi> beschließt der Kabinettsrat weiters, dass Staatssekretär Hanusch sich in dieser Frage noch mit der Direktion der Hofbibliothek und der „Albertina“ ins Einvernehmen zu setzen haben wird</p>
+               </div>
+               <div type="top" xml:id="krp-0065_top09">
+                  <head>
+                     <label>
+                        <num n="9">9.</num>
+                        <seg>Forderungen der Angestellten des Postsparkassenamtes.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Ing. <hi rend="#letterspaced">Zerdik</hi> unterbreitet dem Kabinettsrate die <pb facs="krp-0065_r-0013"/>nachstehenden Vereinbarungen, welche vorbehaltlich dessen Zustimmung zwischen den Vertretern der beteiligten Staatsämter einerseits und den Vertretern des Bundes der Angestellten des Postsparkassenamtes andererseits zustande gekommen sind:</p>
+                  <p><hi rend="#u">[„]Status</hi> <hi rend="#u">A:</hi> </p>
+                  <list>
+                     <item n="1"><label>1.)</label> Alle Assistenten und Offiziale, die am 1. Mai 1919 wenigstens drei Jahre in ihrer Rangsklasse zugebracht haben, werden zu Offizialen bzw. Kontrolloren ernannt.</item>
+                     <item n="2"><label>2.)</label> Allen Angehörigen des Status A wird ein einmaliger Beitrag von 100 K an Stelle einer begünstigten Anrechnung der Praktikantenzeit ausbezahlt.</item>
+                  </list>
+                  <p>Beamte des Status A, die zweieinhalb oder drei Jahre Praktikanten waren, erhalten einen einmaligen Beitrag in der Höhe der halben bzw. ganzen Differenz zwischen Adjutum und den Bezügen der XI. Rangsklasse.</p>
+                  <p><hi rend="#u">Status B</hi>: </p>
+                  <list>
+                     <item n="1"><label>1.)</label> Anrechnung der Dienstzeit nach Gruppe D gemäß § 52 beziehungsweise § 57 a Dienstpragmatik vom Tage des Dienstantrittes im Postsparkassenamte (vier Jahre XI. Rangsklasse). Als anrechenbare Dienstzeit hat zu gelten die effektive Dienstzeit vermehrt um die Kriegshalbjahre und ein Militärjahr. <pb facs="krp-0065_r-0014"/></item>
+                     <item n="2"><label>2.)</label> Ernennung aller Oberrechnungsführer der XI. in die X. Rangsklasse.</item>
+                     <item n="3"><label>3.)</label> Offizianten werden gleich den Beamtinnen behandelt (Gruppe E, § 52 Dienstpragmatik nach sieben Jahren XI. Rangsklasse). Als anrechenbare Dienstzeit hat zu gelten die effektive Dienstzeit vermehrt um die Kriegshalbjahre und ein Militärjahr.</item>
+                  </list>
+                  <p><hi rend="#u">Beamtinnen</hi>: Einreihung nach Gruppe E, § 52 Dienstpragmatik der Staatsbeamten mit sieben Jahren in die XI. Rangsklasse (als anrechenbare Dienstzeit hat zu gelten die effektive Dienstzeit vermehrt um die Kriegshalbjahre).</p>
+                  <p><hi rend="#u">Diener</hi>: Alle Amtsdiener dürfen den Titel Unterbeamte führen.“</p>
+                  <p>Gegen eine Reihe dieser Vorschläge erheben Sektionschef Dr. <hi rend="#letterspaced">Grimm</hi> und Sektionsrat Dr. <hi rend="#letterspaced">Wilfling</hi> von ihrem Ressortstandpunkte aus Bedenken. Staatssekretär Ing. <hi rend="#letterspaced">Zerdik</hi> hält demgegenüber – unterstützt vom <hi rend="#letterspaced">Vorsitzenden</hi> – unter Darstellung der im Postsparkassenamte bestehenden ganz eigenartigen Verhältnisse an seinen Vorschlägen fest.</p>
+                  <p>Der Kabinettsrat genehmigt schließlich diese Anträge mit Ausnahme des Vorschlages über die Titelführung der Diener.</p>
+                  <p><pb facs="krp-0065_r-0015"/></p>
+               </div>
+               <div type="top" xml:id="krp-0065_top10">
+                  <head>
+                     <label>
+                        <num n="10">10.</num>
+                        <seg>Beitritt der Staatsregierung zu mehreren Gesetzesbeschlüssen der Landesversammlungen in Oberösterreich, Steiermark, Tirol und Vorarlberg.</seg>
+                     </label>
+                  </head>
+                  <p>Der Vorsitzende teilt in seiner Eigenschaft als Leiter des Staatsamtes für Inneres und Unterricht mit, dass die Landesversammlung in <hi rend="#u">Oberösterreich</hi> Gesetzesbeschlüsse</p>
+                  <p>betreffend die Erlassung einer Gemeindewahlordnung für alle Gemeinden mit Ausnahme der Städte Linz und Steyr;</p>
+                  <p>betreffend die Wahlordnung für den Gemeinderat der Landeshauptstadt Linz;</p>
+                  <p>betreffend Erlassung einer Wahlordnung für den Gemeinderat der Stadt Steyr und</p>
+                  <p>betreffend die Vornahme der Gemeindewahlen in Oberösterreich im Jahre 1919 gefasst hat.</p>
+                  <p>Ferner hat die Landesversammlung in <hi rend="#u">Steiermark</hi> Gesetzesbeschlüsse </p>
+                  <p>betreffend die Erlassung einer neuen Gemeindewahlordnung und die Abänderung einiger Bestimmungen der Gemeindeordnung für die Landeshauptstadt Graz und </p>
+                  <p>betreffend die gleichzeitige Durchführung der Neuwahl für den Gemeinderat der Landeshauptstadt Graz und der Landtagswahl im Jahre 1919 gefasst.</p>
+                  <p>Weiters hat die <hi rend="#u">Vorarlberger</hi> Landesversammlung einen Gesetzentwurf <pb facs="krp-0065_r-0016"/>über die Gemeindewahlordnung für die Gemeinden des Landes Vorarlberg und endlich </p>
+                  <p>die Landesversammlung in <hi rend="#u">Tirol</hi> den Entwurf eines Gesetzes, womit die Wahlordnung für den verfassungsgebenden Landtag festgesetzt wird, sowie eines Gesetzes über die Einberufung des verfassungsgebenden Landtages beschlossen.</p>
+                  <p>Um die sofortige Ausschreibung der Wahlen nicht zu verzögern, habe der sprechende Staatskanzler namens der Staatsregierung gegen diese Gesetzesbeschlüsse, die zu Bedenken keinerlei Anlass bieten, keine Vorstellung erhoben und ihrer sofortigen Kundmachung zugestimmt. Er erbitte sich nunmehr die nachträgliche Genehmigung des Kabinettsrates zu dieser Verfügung.</p>
+                  <p>Der Kabinettsrat genehmigt diese Verfügungen.</p>
+                  <p>Da lediglich mit Rücksicht auf die Einheitlichkeit der Durchführung der Gemeindewahlordnungen in dieser Wahlperiode die Gegenzeichnung des Staatskanzlers vorgesehen wurde, wiewohl nicht bei allen vorliegenden Gemeindewahlordnungen die Notwendigkeit einer Mitwirkung der Staatsregierung ohneweiters behauptet werden kann, so <pb facs="krp-0065_r-0017"/>stellt der Kabinettsrat schließlich fest, dass diese Verfügung für künftige Fälle gleicher Art nicht präjudiziell sein soll.</p>
+               </div>
+               <div type="top" xml:id="krp-0065_top11">
+                  <head>
+                     <label>
+                        <num n="11">11.</num>
+                        <seg>Gnadenweise Anrechnung der Landsturmdienstzeit der Gendarmeriepensionisten.</seg>
+                     </label>
+                  </head>
+                  <p>Der Vorsitzende teilt mit, dass die während des Krieges gemusterten Gendarmeriepensionisten entweder bei der Gendarmerie wieder in Dienst genommen oder als Landsturmmannschaft verwendet worden seien.</p>
+                  <p>Die erstere Kategorie habe mit Rücksicht auf die solcherart eingetretene Fortsetzung ihres Gendarmeriedienstes den Anspruch auf die Zurechnung der neuerlichen Dienstzeit und damit auf die Erlangung eines höheren Ruhe- und Versorgungsgenusses erworben, während die als Landsturmleute verwendeten Gendarmeriepensionisten einen höheren Ruhegenuss nur im Falle eingetretener bleibender Erwerbsunfähigkeit (§ 73 des Militärversorgungsgesetzes) erwerben konnten. Diese ungleiche Behandlung habe nur in dem Mangel der formellen Wiederinstandnahme bei der Gendarmerie ihre Ursache. Im Einvernehmen mit dem Staatsamte der Finanzen erbitte demnach der Vorsitzende in seiner <pb facs="krp-0065_r-0018"/>Eigenschaft als Leiter des Staatsamtes für Inneres und Unterricht vom Kabinettsrate die Ermächtigung, jenen pensionierten Gendarmeriepersonen deutschösterreichischer Volkszugehörigkeit, welche während des Krieges Landsturmdienste verrichtet haben, diese Dienstzeit behufs Erhöhung ihrer Ruhebezüge als Dienstzeit im Sinne des Militärversorgungsgesetzes anrechnen zu dürfen, wobei jedoch die auf Grund der seinerzeitigen kaiserlichen Ermächtigung vom 12. August 1914 zuerkannte Gnadenzulage unberührt zu bleiben hätte.</p>
+                  <p>Der Kabinettsrat erteilt die erbetene Ermächtigung.</p>
+               </div>
+               <div type="top" xml:id="krp-0065_top12">
+                  <head>
+                     <label>
+                        <num n="12">12.</num>
+                        <seg>Personalverhältnisse der Staatssekretäre.</seg>
+                     </label>
+                  </head>
+                  <p>Der Vorsitzende verweist darauf, dass mehrere Mitglieder der Staatsregierung aus dem Beamtenstande hervorgegangen seien und sie daher im Momente ihres allfälligen Ausscheidens aus diesem Amte wieder in den Beamtenstand zurückkehren werden. Es werfe sich nun die Frage auf, ob diese Funktionäre nicht etwa auch während ihrer Kabinettsmitgliedschaft als Staatsbeamte dann befördert werden sollten, wenn ihre tourgemäße Beförderung unter normalen <pb facs="krp-0065_r-0019"/>Verhältnissen in Betracht gekommen wäre. Hiegegen bestehe nach Ansicht des sprechenden Staatskanzlers kein prinzipielles Hindernis; ja diese Funktionäre würden in ihrer Laufbahn durch mittlerweilige Beförderungen von Nachmännern gegebenen Falles sogar effektiv geschädigt werden können.</p>
+                  <p>Der Kabinettsrat stimmt dieser Auffassung unter der Bedingung zu, dass es sich hiebei nur um eine tourgemäße Beförderung in die nächste Rangsklasse handeln dürfe. Von einer Verlautbarung derartiger Personalmaßnahmen in der Wiener Zeitung wäre jedoch abzusehen.</p>
+                  <p>Der Vorsitzende führt weiters aus, dass rücksichtlich dieser aus dem Beamtenstande hervorgegangenen Staatssekretäre und Unterstaatssekretäre auch eine Reihe von Gebührenfragen zu klären sei. Er beantrage diesfalls die Einsetzung eines Komitees, welches unter Zuziehung des Rechnungsdirektors der Staatskanzlei Hofrates Bialoruski einen Beschlussantrag für den Kabinettsrat vorzubereiten haben werde. Der Kabinettsrat genehmigt diese Anregung und entsendet in das Komitee die Staatssekretäre Dr. Bratusch, Paul und Ing. Zerdik, sowie Sektionschef <pb facs="krp-0065_r-0020"/>Dr. Grimm. Die Führung der Verhandlungen wird dem Staatssekretär für Justiz übertragen.</p>
+               </div>
+               <div type="top" xml:id="krp-0065_top13">
+                  <head>
+                     <label>
+                        <num n="13">13.</num>
+                        <seg>Vollzugsanweisung betreffend die Einführung eines Doktorates der Staatswissenschaften an den deutschösterreichischen Universitäten.</seg>
+                     </label>
+                  </head>
+                  <p>Unterstaatssekretär <hi rend="#letterspaced">Glöckel</hi> erbittet nach eingehender Darstellung der Sachlage die Ermächtigung des Kabinettsrates zur Erlassung einer Vollzugsanweisung des Staatsamtes für Inneres und Unterricht, betreffend die Einführung eines Doktorates der Staatswissenschaften an den rechts- und staatswissenschaftlichen Fakultäten der deutschösterreichischen Universitäten.</p>
+                  <p>Der Kabinettsrat erteilt die erbetene Ermächtigung mit der Maßgabe, dass in die Vollzugsanweisung auch eine Bestimmung aufzunehmen sei, wonach das neue Doktorat an den bestehenden Vorschriften über die Bedingungen für den Eintritt in den öffentlichen Dienst, das Notariat und die Rechtsanwaltschaft nichts ändern dürfe.</p>
+               </div>
+               <div type="top" xml:id="krp-0065_top14">
+                  <head>
+                     <label>
+                        <num n="14">14.</num>
+                        <seg>Zulassung der Frauen zum Rechtsstudium.</seg>
+                     </label>
+                  </head>
+                  <p>Unterstaatssekretär Glöckel erbittet und erhält die Ermächtigung <pb facs="krp-0065_r-0021"/>des Kabinettsrates zur Erlassung einer Vollzugsanweisung des Staatsamtes für Inneres und Unterricht, betreffend die Zulassung von Frauen zu den rechts- und staatswissenschaftlichen Studien, zu den theoretischen Staatsprüfungen und zum Doktorate der Rechte und der Staatswissenschaften an den deutschösterreichischen Universitäten.</p>
+               </div>
+               <div type="top" xml:id="krp-0065_top15">
+                  <head>
+                     <label>
+                        <num n="15">15.</num>
+                        <seg>Übertragung der Geschäfte der staatlichen Fremdenverkehrsförderung auf das Staatsamt für Verkehrswesen.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Paul</hi> erbittet und erhält von Kabinettsrate die Ermächtigung zur Hinausgabe einer Vollzugsanweisung der Staatsregierung, betreffend die Übertragung der vom Staatsamte für Handel und Gewerbe, Industrie und Bauten besorgten Geschäfte der staatlichen Fremdenverkehrsförderung auf das Staatsamt für Verkehrswesen.</p>
+               </div>
+               <div type="top" xml:id="krp-0065_top16">
+                  <head>
+                     <label>
+                        <num n="16">16.</num>
+                        <seg>Gewährung von Eisenbahnfahrbegünstigungen an Staatsbedienstete.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Paul teilt mit, dass aufgrund der Verhandlungen mit den auf dem Boden des alten Staates entstandenen Nationalstaaten die für aktive und für im Ruhestande befindliche Staats- und Hofbedienstete ausgegebenen Legitimationen zur Lösung ermäßigter Eisenbahnfahrkarten für den <pb facs="krp-0065_r-0022"/><hi rend="#u">bisherigen</hi> Geltungsbereich noch bis zum <hi rend="#u">30.</hi> <hi rend="#u">April 1919</hi> gelten sollen. Dieser Termin wurde in den letzten Tagen einvernehmlich bis zum <hi rend="#u">31.</hi> <hi rend="#u">Mai 1919</hi> erstreckt.</p>
+                  <p>Vom <hi rend="#u">1.</hi> <hi rend="#u">Juni 1919</hi> wird auf den Linien der <hi rend="#u">deutschösterreichischen</hi> Staatsbahnen und der vom deutschösterreichischen Staate betriebenen Privatbahnen nur mehr den <hi rend="#u">deutschösterreichischen</hi> Staatsbediensteten eine Fahrbegünstigung gewährt werden. Die bisher ausgegebenen Staatsbedienstetenlegitimationen, für die die Stempelgebühr bereits bis Ende 1922 entrichtet wurde, bleiben zwar im Umlaufe, werden jedoch mit einem entsprechend textierten <hi rend="#u">Beiblatte</hi> versehen, das die Verwendung des begünstigungsberechtigten Inhabers im <hi rend="#u">deutschösterreichischen</hi> Staatsdienste, bei Pensionisten ihre Zugehörigkeit zum <hi rend="#u">deutschösterreichischen</hi> Staate bezeugen soll.</p>
+                  <p>Die aktiven Angestellten der vormaligen gemeinsamen, nunmehr liquidierenden Zentralstellen kommen künftig für eine Fahrbegünstigung nur insoweit in Betracht, als sie sich zum deutschösterreichischen Staate bekannt haben, und – sei es auch nur provisorisch – in den deutschösterreichischen Staatsdienst übernommen wurden. Die aktiven Bediensteten der früheren Hofämter <pb facs="krp-0065_r-0023"/>werden bis auf weiteres den deutschösterreichischen Staatsangestellten gleichgehalten, soferne sich ihr Amtssitz auf deutschösterreichischem Staatsgebiet befindet und sie sich zum deutschösterreichischen Staate bekannt haben. Die pensionierten Bediensteten der eben erwähnten beiden Kategorien werden in Hinkunft nur dann einen Anspruch auf Fahrbegünstigungslegitimationen haben, wenn sie – gleich wie die im Ruhestande befindlichen vormaligen k. k. Zivilstaatsbediensteten – die deutschösterreichische Staatsbürgerschaft nachzuweisen vermögen.</p>
+                  <p>Die Staatskanzlei habe unter Hinweis auf die Höhe der Eisenbahntarife und auf die gegenwärtigen, für die Staatsbediensteten besonders drückenden Lebensverhältnisse, die es der Staatsverwaltung zur Pflicht machen, ihren Angestellten in deren prekärer materiellen Lage alle nur irgend möglichen wirtschaftlichen Erleichterungen zu schaffen, angeregt, den Staatsbediensteten an Stelle des gegenwärtigen ca. 33 % betragenden Ausmaßes der Fahrpreisermäßigung, wie dies bereits in früherer Zeit (bis zum 31. Dezember 1891) tatsächlich der Fall war, die Benützung der Eisenbahn gegen Entrichtung des <hi rend="#u">halben</hi> normalen Fahrpreises zu bewilligen.</p>
+                  <p><pb facs="krp-0065_r-0024"/>Der sprechende Staatssekretär stelle demgemäß den Antrag:</p>
+                  <p>Der Kabinettsrat wolle den vom Staatsamte für Verkehrswesen bezüglich der deutschösterreichischen Staatsangestellten ab 1. Juni 1919 in Aussicht genommenen Maßnahmen, betreffend die weitere Giltigkeit der Eisenbahnlegitimationen für den Bereich der deutschösterreichischen Staatsbahnen, zustimmen, weiters beschließen, dass das Ausmaß der diesen Angestellten eingeräumten Fahrbegünstigung auf 50 % erhöht wird und das Staatsamt für Verkehrswesen ermächtigen, auf dieser Grundlage das weitere im Gegenstande Erforderliche zu veranlassen.</p>
+                  <p>Der Kabinettsrat erhebt diese Anträge zum Beschlusse.</p>
+               </div>
+               <div type="top" xml:id="krp-0065_top17">
+                  <head>
+                     <label>
+                        <num n="17">17.</num>
+                        <seg>Gesetzentwurf, betreffend die teilweise Abänderung des § 5 des Gesetzes vom 5. Februar 1919, StGBl. Nr. 100 (rücksichtlich des Dienstverhältnisses der Landpostdiener).</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Paul erbittet und erhält die Zustimmung des Kabinettsrates, in der Nationalversammlung einen Gesetzentwurf einbringen zu dürfen, womit Bestimmungen des Gesetzes vom 5. Februar 1919, StGBl. Nr. 100, über das Dienstverhältnis der Kanzleioffizianten und Kanzleioffiziantinnen, der Kanzleigehilfen und Kanzleigehilfinnen, ständigen Aushilfsdiener und Landpostdiener <pb facs="krp-0065_r-0025"/>u. zw. soweit die letztgenannte Kategorie (Landpostdiener) in Betracht kommt, teilweise abgeändert werden.</p>
+               </div>
+               <div type="top" xml:id="krp-0065_top18">
+                  <head>
+                     <label>
+                        <num n="18">18.</num>
+                        <seg>Ernennung von Amtsdienern und Gefangenenaufsehern zu Kanzleibeamten in der Justizverwaltung.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Bratusch</hi> teilt mit, dass von der organisierten Dienerschaft der Justizverwaltung unter anderen Forderungen, die unter Streikdrohung bis 1. Mai befristet worden sind, auch das Begehren gestellt worden sei, dass die der Dienerschaftsgruppe der Justizverwaltung angehörenden Personen (Amtsdiener und Gefangenenaufseher), welche eine oder beide Kanzleiprüfungen mit Erfolg abgelegt haben und zu Beamtendiensten verwendet werden, zu Kanzleibeamten ernannt werden. Der sprechende Staatssekretär halte dieses Begehren für gerechtfertigt und erbitte sich die Zustimmung des Kabinettsrates zur Durchführung dieser Ernennungen.</p>
+                  <p>Der Kabinettsrat erteilt die erbetene Zustimmung.</p>
+                  <p/>
+               </div>
+            </div>
+            <div type="stenogramme">
+               <div n="1">
+                  <head>EINZUFÜGEN</head>
+                  <p>Transkription in Arbeit.</p>
+               </div>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,655 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href='http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:acdh="https://vocabs.acdh.oeaw.ac.at/schema#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xml:lang="de">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="a" type="main" n="0064">Kabinettsprotokoll Nr. 64 vom 22. April 1919</title>
+            <title level="m" type="main" n="01">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <title level="m" type="sub" n="">Renner II (15. März – 17. Oktober 1919)</title>
+            <meeting>
+               <placeName key="https://d-nb.info/gnd/4066009-6">Wien</placeName>
+               <orgName key="https://d-nb.info/gnd/5162749-8">Kabinettsrat</orgName>
+               <date when-iso="1919-04-22"/>
+            </meeting>
+            <editor>
+               <persName key="https://d-nb.info/gnd/122481836"
+                         role="hasCreator"
+                         xml:id="hwohnout">
+                  <forename>Helmut</forename>
+                  <surname>Wohnout</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</affiliation>
+               <idno type="ORCID">0000-0002-3864-9839</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/120789825"
+                         role="hasCreator"
+                         xml:id="tolechowski">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0003-3291-6876</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/131679384"
+                         role="hasCreator"
+                         xml:id="rlein">
+                  <forename>Richard</forename>
+                  <surname>Lein</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0002-7502-0503</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="aholzer">
+                  <forename>Anna</forename>
+                  <surname>Holzer</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0005-3560-3500</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="dsoelkner">
+                  <forename>Dominik</forename>
+                  <surname>Sölkner</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-9895-7212</idno>
+            </editor>
+            <editor>
+               <persName role="hasContributor" xml:id="ischotzko">
+                  <forename>Ina</forename>
+                  <surname>Schotzko</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-5210-3713</idno>
+            </editor>
+            <funder n="1">
+               <orgName key="https://d-nb.info/gnd/2054142-9" role="hasFunder">Österreichischer Wissenschaftsfonds FWF</orgName>
+               <idno type="project">PAT1495024</idno>
+               <title type="project">Die Protokolle des österreichischen Kabinettsrates 1919–1920</title>
+            </funder>
+            <respStmt>
+               <resp>Projektverantwortung</resp>
+               <orgName key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Projektleitung</resp>
+               <persName key="https://d-nb.info/gnd/120789825" role="hasPrincipalInvestigator">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+                  <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+                  <idno type="ORCID">0000-0003-3291-6876</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Nationaler Forschungspartner</resp>
+               <orgName key="https://d-nb.info/gnd/1123037736" role="hasEnabler">Austrian Centre for Digital Humanities</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Digitalisierung der gedruckten Quellen</resp>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>TEI-Datenmodellierung</resp>
+               <persName role="hasContributor" xml:id="tfruehwirth">
+                  <forename>Timo</forename>
+                  <surname>Frühwirth</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-3997-5193</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technische Supervision</resp>
+               <persName key="https://d-nb.info/gnd/1043833846"
+                         role="hasContributor"
+                         xml:id="pandorfer">
+                  <forename>Peter</forename>
+                  <surname>Andorfer</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-9575-9372</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technisches Consulting und Vorbereitung der Druckausgabe</resp>
+               <persName key="https://d-nb.info/gnd/13281899X"
+                         role="hasContributor"
+                         xml:id="skurz">
+                  <forename>Stephan</forename>
+                  <surname>Kurz</surname>
+                  <affiliation key="https://d-nb.info/gnd/1202798799">Institut für die Erforschung der Habsburgermonarchie und des Balkanraumes</affiliation>
+                  <idno type="ORCID">0000-0003-2546-2570</idno>
+               </persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher key="https://d-nb.info/gnd/1001454-8">Österreichische Akademie der Wissenschaften</publisher>
+            <date when="2028"/>
+            <availability status="free">
+               <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">Lizenziert unter CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/deed.de)</licence>
+            </availability>
+            <idno type="ISBN_Print"/>
+            <idno type="ISBN_Part_epub"/>
+            <idno type="ISBN_Digital"/>
+            <idno type="DOI"/>
+            <idno type="DOI_zenodo"/>
+            <idno type="ebook_ID"/>
+         </publicationStmt>
+         <seriesStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="m" type="main">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <respStmt>
+               <resp>Bearbeitung und Herausgeberschaft</resp>
+               <orgName key="https://d-nb.info/gnd/2024703-5">Universität Wien</orgName>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+         </seriesStmt>
+         <notesStmt>
+            <note>Diese TEI-XML-Datei ist Grundlage für eine Druckausgabe der Edition.</note>
+            <relatedItem>
+               <biblStruct>
+                  <monogr>
+                     <imprint>
+                        <pubPlace key="https://d-nb.info/gnd/4066009-6">Wien</pubPlace>
+                        <publisher key="https://d-nb.info/gnd/2068748-5">Verlag der Österreichischen Akademie der Wissenschaften</publisher>
+                        <date when="2029"/>
+                     </imprint>
+                     <extent/>
+                  </monogr>
+                  <note>
+              <idno/>
+              <ptr/>
+            </note>
+                  <citedRange/>
+               </biblStruct>
+            </relatedItem>
+         </notesStmt>
+         <sourceDesc>
+            <bibl>Quellbestand: AT-OeStA/AdR MRang MR 1Rep KRP Kabinettsratsprotokolle, 1918-1920 (Teilbestand)<ref target="https://www.archivinformationssystem.at/detail.aspx?id=5465">https://www.archivinformationssystem.at/detail.aspx?id=5465</ref>
+            </bibl>
+            <msDesc>
+               <msIdentifier>
+                  <institution key="https://d-nb.info/gnd/37748-X" role="hasOwner">AT-OeStA Österreichisches Staatsarchiv (Archiv (ÖStA))</institution>
+                  <repository key="https://d-nb.info/gnd/1601181-8">AT-OeStA/AdR Archiv der Republik, 1918- (Abteilung)</repository>
+                  <collection>AT-OeStA/AdR MRang MR 1Rep Ministerrat 1. Republik, 1918 - 1938 (Bestand)</collection>
+                  <idno>AT-OeStA_AdR-MRang-MR-1.-Rep.-KRP-064</idno>
+               </msIdentifier>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <abstract>
+            <p>
+          <!--to be generated-->
+        </p>
+         </abstract>
+      </profileDesc>
+      <encodingDesc>
+         <styleDefDecl scheme="css"/>
+         <tagsDecl>
+            <rendition xml:id="b" scheme="css">font-weight:bold;</rendition>
+            <rendition xml:id="su" scheme="css">vertical-align:super;font-size:.7em;</rendition>
+            <rendition xml:id="s" scheme="css">text-decoration:line-through;</rendition>
+            <rendition xml:id="u" scheme="css">text-decoration:underline;</rendition>
+            <rendition xml:id="ow" scheme="css">text-decoration:line-through;text-decoration-style:double;</rendition>
+            <rendition xml:id="r" scheme="css">display:block;text-align:right;</rendition>
+            <rendition xml:id="letterspaced" scheme="css">letter-spacing:0.15em;</rendition>
+            <rendition xml:id="i" scheme="css">font-style:italic;</rendition>
+         </tagsDecl>
+         <editorialDecl>
+            <hyphenation>
+               <p>
+            <!--to be added-->
+          </p>
+            </hyphenation>
+            <correction>
+               <p>
+            <!--to be added-->
+          </p>
+            </correction>
+            <normalization>
+               <p>
+            <!--to be added-->
+          </p>
+            </normalization>
+            <punctuation>
+               <p>
+            <!--to be added-->
+          </p>
+            </punctuation>
+            <stdVals>
+               <p>
+            <!--to be added-->
+          </p>
+            </stdVals>
+            <p>
+          <!--to be added-->
+        </p>
+         </editorialDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#tfruehwirth" when-iso="2026-10-14">TEIGarage output upconverted with upconvert.xsl</change>
+         <change who="#tfruehwirth" when-iso="2026-10-14">TEI header populated with generate_tei_templates.py</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface/>
+   </facsimile>
+   <text>
+      <body>
+         <div xml:id="doc-krp-0064.xml">
+            <head type="dokument">
+               <title type="num">64.<note type="footnote">Das Protokoll trägt den Vermerk <hi rend="#i">Vertraulich!</hi></note>
+               </title>
+               <title type="desc">
+                  <pb facs="krp-0064_r-0001"/>[Dienstag] 1919-04-22</title>
+            </head>
+            <div type="dokumentkopf">
+               <div type="vorsitz">
+                  <head>Vorsitz:</head>
+                  <p>Renner, teilweise Fink</p>
+               </div>
+               <div type="anwesend">
+                  <head>Anwesend:</head>
+                  <p>Bauer, Bratusch, Deutsch, Ellenbogen, Glöckel, Hanusch, Loewenfeld-Russ, Miklas, Paul, Pflügl, Resch, Schumpeter, Stöckler, Waiss, Zerdik</p>
+               </div>
+               <div type="zugezogen">
+                  <head>Zugezogen:</head>
+                  <p>Dorrek, Krasny, Lederer, Mosing, Riedl, Rotky, Schwiedland</p>
+               </div>
+               <div type="schriftfuehrer">
+                  <head>Schriftführer:</head>
+                  <p>unbekannt</p>
+               </div>
+               <div type="dauer">
+                  <head>Dauer:</head>
+                  <p>15.00–00.30 Uhr</p>
+               </div>
+            </div>
+            <div type="komponenten">
+               <p>Reinschrift, Beilagen, Konzept, stenographische Mitschrift, Entwurf der Tagesordnung, diverse Zusätze</p>
+            </div>
+            <div type="beilagen">
+               <head>Beilagen:</head>
+               <list>
+                  <item><ref target="#krp-0064_top01">Zu TOP 1</ref>: <ref target="#krp-0064_b01">Vortrag des Staatsamtes für Inneres und Unterricht zu Zl. 831/19 über den Gesetzesbeschluss der Provisorischen Salzburger Landesversammlung über die Gemeindewahlordnung für die Stadt Salzburg und für die Gemeinden des Landes Salzburg</ref></item>
+                  <item><ref target="#krp-0064_top04">Zu TOP 4</ref>: <ref target="#krp-0064_b02">Gesetzesvorlage der Staatsregierung über die Ermächtigung der Regierung zu zoll- und handelspolitischen Verfügungen</ref></item>
+                  <item><ref target="#krp-0064_top09">Zu TOP 9</ref>: <ref target="#krp-0064_b03">Gesetzentwurf über die Errichtung von Betriebsräten</ref></item>
+                  <item><ref target="#krp-0064_top09">Zu TOP 9</ref>: <ref target="#krp-0064_b04">Gesetzentwurf über die Vergesellschaftung von Unternehmungen durch die Gemeinden</ref></item>
+               </list>
+            </div>
+            <div type="protokoll">
+               <pb facs="krp-0064_r-0002"/>
+               <div type="top" xml:id="krp-0064_top01">
+                  <head>
+                     <label>
+                        <num n="1">1.</num>
+                        <seg>Gesetzesbeschlüsse der Salzburger Landesversammlung, betreffend Gemeindestatut und Gemeindewahlordnung für die Landeshauptstadt Salzburg und Gemeindewahlordnung für die Gemeinden des Landes Salzburg (mit Ausnahme der Landeshauptstadt).</seg>
+                     </label>
+                  </head>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> führt aus, dass von der provisorischen Landesversammlung in Salzburg am 18. März l. J. ein Gesetz, womit mehrere Bestimmungen des Gemeindestatutes für die Landeshauptstadt Salzburg vom 8. Dezember 1869, LGBl. Nr. 41, abgeändert werden; ferner <pb facs="krp-0064_r-0003"/>ein Gesetz, womit eine Gemeindewahlordnung für die Landeshauptstadt Salzburg erlassen wird; und endlich ein Gesetz, betreffend die Erlassung einer neuen Gemeindewahlordnung für die Gemeinden des Landes Salzburg mit Ausnahme der Landeshauptstadt, beschlossen worden sei.</p>
+                  <p>Die Novelle zum Gemeindestatute der Stadt Salzburg verpflichte in § 78 Abs. 3, den Staat zu einer angemessenen Entschädigung der Gemeinde für die Besorgung der Geschäfte des übertragenen Wirkungskreises. Diese Bestimmung sei verfassungswidrig, da die Statuierung einer derartigen Verpflichtung des Staates nach der geltenden Verfassung nicht in den Wirkungskreis der Länder falle, sondern der zur Vertretung des Staates ausschließlich berufenen gesetzgebenden Körperschaft, derzeit der konstituierenden Nationalversammlung, vorbehalten bleiben müsse. Die Bestimmungen über die Wahlordnungen für die Landeshauptstadt Salzburg und für die Gemeinden des Landes Salzburg hingegen seien dem den Ländern mitgeteilten Musterentwurfe nachgebildet. Der Vorsitzende beantrage demgemäß, es möge die Staatsregierung gegen den Entwurf, womit mehrere Bestimmungen <pb facs="krp-0064_r-0004"/>des Gemeindestatutes für die Landeshauptstadt Salzburg abgeändert werden, im Sinne des Art. 14 al. 1 des Gesetzes vom 14. März 1919, StGBl. Nr. 179, über die Volksvertretung, Vorstellung erheben. Gleichzeitig sei der Landesregierung nahezulegen, mit der Kundmachung der Wahlordnung für die Stadt Salzburg, gegen die sich im Übrigen keine Bedenken ergeben, zuzuwarten, da der Entwurf in engstem Zusammenhange mit dem Entwurfe über die Abänderung des Statutes stehe und nur auf Grund des letzteren zur Durchführung gelangen könne. Der sofortigen Verlautbarung des Gesetzes, betreffend die Erlassung einer neuen Gemeindewahlordnung für die Gemeinden des Landes Salzburg mit Ausnahme der Landeshauptstadt, wäre zuzustimmen.</p>
+                  <p>Der Kabinettsrat genehmigt diesen Antrag.</p>
+               </div>
+               <div type="top" xml:id="krp-0064_top02">
+                  <head>
+                     <label>
+                        <num n="2">2.</num>
+                        <seg>Delegierung von deutschösterreichischen Abgeordneten in den reichsdeutschen Verfassungsausschuss.</seg>
+                     </label>
+                  </head>
+                  <p>Der Vorsitzende kommt auf die dem Kabinettsrat bereits bekannte Frage der Entsendung von fünf Mitgliedern der deutschösterreichischen Nationalversammlung nach Weimar zwecks Teilnahme an den Arbeiten des Verfassungsausschusses der deutschen Nationalversammlung zu sprechen. Er beabsichtige <pb facs="krp-0064_r-0005"/>dem Hauptausschusse bei dessen morgiger Sitzung diesfalls Bericht zu erstatten und sodann namens der Staatsregierung an den Präsidenten der Nationalversammlung das Ersuchen zu richten, die Wahl dieser fünf Experten in der Sitzung des Hauses am Donnerstag vornehmen zu lassen. Vor dem Wahlakt selbst beabsichtige er, im offenen Hause zu einer kurzen Erklärung das Wort zu ergreifen. Außerdem nehme er in Aussicht, beim Präsidenten der Nationalversammlung anzuregen, dass den nach Weimar zu entsendenden fünf Experten eine Entschädigung von 100 Mark pro Tag nebst dem Ersatze der tatsächlich ausgelegten Reisekosten zu Lasten des Kapitels „Nationalversammlung“ bewilligt werde.</p>
+                  <p>Der Kabinettsrat stimmt diesem Vorgange zu.</p>
+               </div>
+               <div type="top" xml:id="krp-0064_top03">
+                  <head>
+                     <label>
+                        <num n="3">3.</num>
+                        <seg>Forderungen der „Heimkehrer“.</seg>
+                     </label>
+                  </head>
+                  <p>Der Vorsitzende teilt mit, dass wie dem Kabinettsrate bereits bekannt, die sogenannten „Heimkehrer“ eine Reihe von Forderungen erhoben hätten, von denen eine – auf Zuerkennung von 5.000 K an jeden Heimkehrer – aus grundsätzlichen Erwägungen absolut unannehmbar erscheine. Redner stehe auf dem Standpunkt, dass er die „Heimkehrer“ als verhandlungsfähigen <pb facs="krp-0064_r-0006"/>Faktor nicht anerkennen könne; nur soweit es sich um aus dem Felde zurückgekehrte Personen handle, die bisher keine Arbeitsgelegenheit gefunden hätten, und daher unter den Begriff der „Arbeitslosen“ zu subsumieren seien, könne sich die Regierung in Verhandlungen einlassen. Es frage sich nun, ob und in welchem Ausmaße eine Erhöhung der Arbeitslosenunterstützung zugestanden werden könnte. Da namens der Staatsregierung Staatssekretär Hanusch die einschlägigen Erhebungen gepflogen [hat], ersuche Redner den Staatssekretär für soziale Verwaltung um Mitteilungen im Gegenstande.</p>
+                  <p>Staatssekretär <hi rend="#letterspaced">Hanusch</hi> gibt bekannt, dass er von dem gleichen Gesichtspunkte ausgehend eine Verhandlung mit den bei ihm erschienenen Delegierten der sogenannten Heimkehrer abgelehnt und sich lediglich mit den Gewerkschaften in Verbindung gesetzt habe. Die bezüglichen Beratungen hätten zu dem Ergebnisse geführt, dass angesichts der zunehmenden Teuerung sowie der allgemeinen Erschwerung der Lebensführung, die sich insbesondere in Wien geltend mache, eine Reihe von Maßnahmen zur Besserung der Lage der Arbeitslosen unausweichlich erscheine.</p>
+                  <p>Vor allem soll das Ausmaß der Ar<pb facs="krp-0064_r-0007"/>beitslosenunterstützung in Wien insofern eine Erhöhung erfahren, als die bisher mit 1 K für den Kopf und Tag bemessene Familienzulage auf den doppelten Betrag, d. i. auf 2 K erhöht wird. Weiters sollen in Wien jene männlichen Arbeitslosen, die über 18 Jahre alt sind und in keinem Familienverbande leben, eine Erhöhung ihrer Unterstützung um 1 K täglich erfahren. Neben diesen nur für Wien geltenden Maßnahmen wäre die Lebensmittelversorgung der Arbeitslosen überhaupt dadurch günstiger zu gestalten, dass alle Arbeitslosen jener Begünstigungen teilhaftig werden, die den Mindestbemittelten zukommen. Ausgenommen hievon wären nur jene Arbeitslosen, die im Familienverbande leben, sofern ihnen nicht ohnedies im Hinblick auf die Person des Familienerhalters Lebensmittelkarten für Mindestbemittelte gewährt werden. Schließlich wäre die Aufnahme eines gewissen Prozentsatzes von Arbeitslosen in die Betriebe durch entsprechende, im Wege einer Vollzugsanweisung zu erlassende Verfügungen sicherzustellen. Hierüber werden noch weitere Verhandlungen mit den beteiligten Faktoren der Industrie und der Arbeiterschaft abgeführt werden.</p>
+                  <p>Diese Zugeständnisse beabsichtigte der sprechende Staatssekretär in der Form <pb facs="krp-0064_r-0008"/>eines Pressekommuniqués der Allgemeinheit mitzuteilen.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Schumpeter</hi> spricht sich in entschiedener Weise gegen eine derartige neuerliche und erhebliche Belastung der Staatsfinanzen aus, erklärt sich aber schließlich im Verlaufe der weiteren Debatte, bei welcher die besondere politische Bedeutung dieser Maßnahme zu Tage trat, mit den Anträgen der Staatssekretäre für soziale Verwaltung ausnahmsweise und ohne Präjudiz für die Zukunft einverstanden.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Bauer</hi> hält dafür, dass in dieser Veröffentlichung ausdrücklich der Zusammenhang zwischen den bewilligten Zugeständnissen und der eingetretenen Erhöhung der Brot- und Mehlpreise betont werde. Nachdem Staatssekretär <hi rend="#letterspaced">Hanusch</hi> dies zugesagt hatte, genehmigt der Kabinettsrat die auf der vorgezeichneten Grundlage geführten Verhandlungen.</p>
+               </div>
+               <div type="top" xml:id="krp-0064_top04">
+                  <head>
+                     <label>
+                        <num n="4">4.</num>
+                        <seg>Gesetz, betreffend die Ermächtigung der Regierung zu zoll- und handelspolitischen Verfügungen.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Schumpeter</hi> erbittet und erhält die Ermächtigung des Kabinettsrates zur Einbringung eines Gesetzentwurfes über die Ermächtigung der Regierung zu zoll- und handel<pb facs="krp-0064_r-0009"/>spolitischen Verfügungen.</p>
+               </div>
+               <div type="top" xml:id="krp-0064_top05">
+                  <head>
+                     <label>
+                        <num n="5">5.</num>
+                        <seg>Auszahlung von Subventionen an die Tagespresse; Interpellation der Abgeordneten Dr. Schürff und Genossen.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. Schumpeter ersucht um die Zustimmung des Kabinettsrates zu der von ihm beabsichtigten Beantwortung der von den Abgeordneten Dr. Schürff und Genossen in der 7. Sitzung der Nationalversammlung am 2. April l. J. eingebrachten Anfrage über die Auszahlung von Subventionen an die Tagespresse.</p>
+                  <p>Der Kabinettsrat erteilt dem sprechenden Staatssekretär die erbetene Ermächtigung mit der Maßgabe, dass sich vorläufig auf eine mündliche Beantwortung der Anfrage zu beschränken wäre.</p>
+               </div>
+               <div type="top" xml:id="krp-0064_top06">
+                  <head>
+                     <label>
+                        <num n="6">6.</num>
+                        <seg>Zuerkennung von Dauerfreikarten an die Vereinigung der deutschösterreichischen Parlamentsberichterstatter.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Paul</hi> teilt mit, dass die Vereinigung der deutschösterreichischen Parlamentsberichterstatter vor einiger Zeit um Ausfolgung von Jahresfreikarten für die Linien der deutschösterreichischen Staats- und Privatbahnen eingeschritten sei. Im Hinblicke darauf, dass es sich hiebei um eine Begünstigung handelte, die bisher keiner journalistischen Vereinigung zuteilgeworden sei, und die im Gewährungsfalle zweifellos Beispielsfolgerungen auslösen würde, habe der Kabinettsrat in seiner Sitzung am <pb facs="krp-0064_r-0010"/>1. März 1919 über Antrag des Staatsamtes für Verkehrswesen beschlossen, das Ansuchen rücksichtlich der Linien der deutschösterreichischen Staatsbahnen vorläufig abzulehnen. Hinsichtlich der gleichzeitig erbetenen Gewährung gleichartiger Fahrbegünstigungen auf den Linien der Privatbahnen sei damals der Standpunkt vertreten worden, dass ein derartiges Zugeständnis außerhalb der Kompetenz des Staatsamtes für Verkehrswesen gelegen sei. Nun bringe die genannte Vereinigung ihr Ansuchen neuerlich vor und unterstütze es hauptsächlich mit dem Hinweise auf die gegenwärtig bei der Lösung der Fahrkarten bestehenden Schwierigkeiten, sowie auf das seitens einer Reihe der Neustaaten (Ungarn, Tschechoslowakischer Staat) in dieser Frage den Journalisten gegenüber bereits bewiesene Entgegenkommen.</p>
+                  <p>In Würdigung dieser Umstände glaube der sprechende Staatssekretär das vorliegende Ansuchen, soweit es sich hiebei um die Linien der deutschösterreichischen Staatsbahnen handelt – hinsichtlich der Linien der deutschösterreichischen Privatbahnen bleibt der Standpunkt, wonach dem Staatsamte für Verkehrswesen rücksichtlich der Fahrbegünstigungen eine Einflussnahme auf diese Bahnen nicht zusteht, aufrecht –befürworten und den <pb facs="krp-0064_r-0011"/>Antrag stellen zu sollen:</p>
+                  <p>Der Kabinettsrat wolle von seinem am 1. März 1919 gefassten Beschlusse absehen und dadurch dem Staatsamt für Verkehrswesen die Möglichkeit geben, dem Ansuchen der Vereinigung der deutschösterreichischen Parlamentsberichterstatter um Gewährung von Jahresfreikarten für die Linien der deutschösterreichischen Staatsbahnen Folge geben zu können.</p>
+                  <p>Der Kabinettsrat stimmt diesem Antrage zu.</p>
+               </div>
+               <div type="top" xml:id="krp-0064_top07">
+                  <head>
+                     <label>
+                        <num n="7">7.</num>
+                        <seg>Erweiterung des Pulvermonopols durch Ausdehnung auf Sprengstoffe.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Deutsch</hi> bittet nach eingehender Darlegung der Sachlage um die Ermächtigung, das bisher bestehende Pulvermonopol durch Ausdehnung auf sämtliche Sprengstoffe zu einem Schieß- und Sprengmittelmonopol erweitern zu dürfen, das alle zum Schießen und Sprengen geeigneten Erzeugnisse umfassen würde. Die Durchführungsbestimmungen würden gesondert vom Staatsamt für Heer[es]wesen ergehen, das mit der Monopolsverwaltung bereits betraut sei. Die Vertreter sämtlicher interessierten Staatsämter hätten bei einer einschlägigen Besprechung der Schaffung dieses Monopols bereits zugestimmt. Falls Deutschösterreich die Sprengmittel nicht monopolisieren würde, <pb facs="krp-0064_r-0012"/>wäre die Einfuhr aus den Nachbarstaaten möglich, wodurch namentlich die Staatsfabrik Blumau sehr geschädigt würde, die für die gegenständliche Erzeugung in erster Linie in Betracht komme und die wegen der sehr bedeutenden Investitionen auch unbedingt und weitgehend beschäftigt werden müsse.</p>
+                  <p>Der Kabinetterat erteilt die erbetene Ermächtigung.</p>
+                  <p><hi rend="#u">Die Sitzung wird um ½ 6 Uhr abends unterbrochen und ihre Fortsetzung auf ½ 10 Uhr abends anberaumt.</hi></p>
+               </div>
+               <div type="top" xml:id="krp-0064_top08">
+                  <head>
+                     <label>
+                        <num n="8">8.</num>
+                        <seg>Gesetzentwurf über die Mindestruhezeit, den Ladenschluss und die Sonntagsruhe in Handelsbetrieben und anderen Betrieben.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Hanusch</hi> erbittet und erhält die Ermächtigung des Kabinettsrates, in der Nationalversammlung einen Gesetzentwurf über die Mindestruhezeit, den Ladenschluss und die Sonntagsruhe in Handelsbetrieben und anderen Betrieben einbringen zu dürfen.</p>
+               </div>
+               <div type="top" xml:id="krp-0064_top09">
+                  <head>
+                     <label>
+                        <num n="9">9.</num>
+                        <seg>Gesetzentwürfe über die Errichtung von Betriebsräten, über gemeinwirtschaftliche Anstalten und Gesellschaften gemeinwirtschaftlichen Charakters, über die Enteignung von Wirtschaftsbetrieben und über die Vergesellschaftung von Unternehmungen durch die Gemeinden.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Bauer</hi> legt dem Kabinettsrate vier Gesetzentwürfe u. zw. über die Errichtung von Betriebsräten, über gemeinwirtschaftliche Anstalten und Gesellschaften gemeinwirtschaftlichen Charakters, über die Enteig<pb facs="krp-0064_r-0013"/>nung von Wirtschaftsbetrieben und über die Vergesellschaftung von Unternehmungen durch die Gemeinden vor und erbittet sich die Ermächtigung, diese Gesetzentwürfe in der Nationalversammlung einbringen zu dürfen.</p>
+                  <p>Im Zuge der sich hierüber entwickelnden eingehenden Debatte wurde zu diesen Vorlagen von Seiten des Vizekanzlers <hi rend="#letterspaced">Fink</hi>, der Staatssekretäre Ing. <hi rend="#letterspaced">Zerdik</hi>, <hi rend="#letterspaced">Paul</hi>, <hi rend="#letterspaced">Stöckler</hi>, Dr. <hi rend="#letterspaced">Bratusch</hi>, Dr. <hi rend="#letterspaced">Loewenfeld-Russ</hi>, des Unterstaatssekretärs Dr. <hi rend="#letterspaced">Ellenbogen</hi> sowie der zugezogenen staatsamtlichen Vertreter Sektionschef <hi rend="#letterspaced">Riedl</hi>, Ministerialrat Dr. <hi rend="#letterspaced">Dorrek</hi> und Oberfinanzrat Dr. <hi rend="#letterspaced">Mosing</hi> eine Reihe von Abänderungsanträten vorgebracht, zu denen Staatssekretär Dr. <hi rend="#letterspaced">Bauer</hi> fallweise Stellung nahm.</p>
+                  <p>Der Kabinettsrat trat schließlich den vorgelegten Gesetzentwürfen mit nachstehenden Änderungen bzw. Ergänzungen bei:</p>
+                  <list>
+                     <item n="1"><hi rend="#u">a)</hi><label/> <hi rend="#u">Gesetzentwurf über die Errichtung von Betriebsräten.</hi></item>
+                  </list>
+                  <table>
+                     <row>
+                        <cell>Text des Entwurfes:</cell>
+                        <cell>Beschluss:</cell>
+                     </row>
+                     <row>
+                        <cell cols="2">§ 1</cell>
+                     </row>
+                     <row>
+                        <cell>b) In den Betrieben der Land- und Forstwirtschaft sowie deren Nebengewerben;</cell>
+                        <cell><p>Dieser Punkt wird gestrichen; die folgenden Absätze c) – n) werden dem<pb facs="krp-0064_r-0014"/>entsprechend mit anderen Bezeichnungen versehen.</p><p>Am Schluss des § 1 wird überdies folgender Absatz beigefügt: „In den Betrieben der Land- und Forstwirtschaft und deren Nebenbetrieben werden Betriebsräte dann errichtet, wenn die Zahl der dauernd gegen Entgelt beschäftigten Arbeiter oder Angestellten mindestens 20 beträgt.</p></cell>
+                     </row>
+                     <row>
+                        <cell cols="2">§ 2</cell>
+                     </row>
+                     <row>
+                        <cell>Bei den öffentlichen Ämtern sowie bei den vom Staatsamt für Verkehrswesen betriebenen oder seiner Aufsicht unterstellten Unternehmungen der Eisenbahnen, der Schifffahrt, der Post, des Telegrafen und Telefons können Betriebsräte im Sinne dieses Gesetzes auch aufgrund besonderer Vereinbarungen zwischen der zuständigen Verwaltung und dem beteiligten Personal und dessen Organisationen geschaffen werden.</cell>
+                        <cell>Bei den öffentlichen Ämtern sowie bei den vom Staatsamt für Verkehrswesen betriebenen oder seiner Aufsicht unterstellten Unternehmungen der Eisenbahnen, der Schifffahrt, der Post, des Telegrafen und Telefons werden den Betriebsräten entsprechende Einrichtungen aufgrund besonderer Vereinbarungen zwischen den zuständigen Verwaltungen und dem beteiligten Personal und dessen Organisationen durch besondere Vorschriften geschaffen.</cell>
+                     </row>
+                     <row>
+                        <cell cols="2">§ 3 Abs. 1</cell>
+                     </row>
+                     <row>
+                        <cell>Die Betriebsräte sind berufen, die wirtschaftlichen, sozialen und kulturellen Interessen der Arbeiter und Angestellten im Betriebe und dem Betriebsinhaber gegenüber zu fördern und zu sichern…</cell>
+                        <cell>Die Betriebsräte sind berufen, die wirtschaftlichen, sozialen und kulturellen Interessen der Arbeiter und Angestellten im Betriebe zu fördern und zu sichern…<pb facs="krp-0064_r-0015"/></cell>
+                     </row>
+                     <row>
+                        <cell cols="2">§ 3 Abs. 2 Pkt. 3</cell>
+                     </row>
+                     <row>
+                        <cell>Die Festsetzung von Stück- und Akkordlöhnen kann …</cell>
+                        <cell>Die Festsetzung von Stück- und Akkordlöhnen, sowie Gedinglöhnen kann…</cell>
+                     </row>
+                     <row>
+                        <cell cols="2">§ 4</cell>
+                     </row>
+                     <row>
+                        <cell>Selbständige Betriebsabteilungen bestellen besondere Betriebsräte,…</cell>
+                        <cell>Für selbständige Betriebsabteilungen können besondere Betriebsräte bestellt werden, …</cell>
+                     </row>
+                     <row>
+                        <cell cols="2">§ 5</cell>
+                     </row>
+                     <row>
+                        <cell>In die Verwaltung vergesellschafteter Betriebe entsenden die Betriebsräte in der gemäß dem Gesetz über die gemeinwirtschaftlichen Anstalten vom …</cell>
+                        <cell>In die Verwaltung vergesellschafteter Betriebe entsenden die Betriebsräte in der gemäß dem Gesetz über die gemeinwirtschaftlichen Anstalten und Gesellschaften gemeinwirtschaftlichen Charakters vom …</cell>
+                     </row>
+                     <row>
+                        <cell cols="2">§ 7 Abs. 3</cell>
+                     </row>
+                     <row>
+                        <cell>Wählbar sind die Wahlberechtigten, ferner die Vorstandsmitglieder und Beamten von Berufsorganisationen der Arbeiter und Angestellten. Doch sollen von den Mitgliedern des Betriebsrates nie mehr als ein Drittel Nichtwähler sein.</cell>
+                        <cell><p>Wählbar sind die Wahlberechtigten, wenn sie das 20. Lebensjahr vollendet haben, ferner die Vorstandsmitglieder und Beamten von Berufsorganisationen der Arbeiter und Angestellten. Doch dürfen von den Mitgliedern des Betriebsrates nie mehr als ein Drittel Nichtwähler sein. Durch die Geschäftsordnung kann bestimmt werden, dass nur solche Wahlberechtigte wählbar sind, die durch mindestens sechs Monate im Betriebe beschäftigt sind.</p><p><pb facs="krp-0064_r-0016"/></p></cell>
+                     </row>
+                     <row>
+                        <cell cols="2">§ 10</cell>
+                     </row>
+                     <row>
+                        <cell>In Betrieben mit 10 bis 50 Arbeitern oder Angestellten besteht der Betriebsrat aus drei Mitgliedern; in Betrieben mit mehr als 50 erhöht sich die Mitgliederzahl des Betriebsrates für je 100 Beschäftigte um eines, Bruchteile von Hunderten über 50 werden für voll gerechnet; …</cell>
+                        <cell>In Betrieben mit 10 bis 100 Arbeitern oder Angestellten besteht der Betriebsrat aus drei Mitgliedern, in Betrieben von 100 – 200 Beschäftigten aus vier Mitgliedern; für je weitere 100 Beschäftigte erhöht sich die Zahl um eines, Bruchteile von Hunderten über 50 werden für voll gerechnet; …</cell>
+                     </row>
+                     <row>
+                        <cell cols="2">§ 15</cell>
+                     </row>
+                     <row>
+                        <cell>Der Betriebsunternehmer darf …</cell>
+                        <cell>Der Betriebsinhaber darf….</cell>
+                     </row>
+                     <row>
+                        <cell cols="2">§ 17 Abs. 1</cell>
+                     </row>
+                     <row>
+                        <cell>Mit dem Vollzuge dieses Gesetzes ist das Staatsamt für soziale Verwaltung betraut.</cell>
+                        <cell>Mit dem Vollzuge dieses Gesetzes ist das Staatsamt für soziale Verwaltung im Einvernehmen mit den beteiligten Staatsämtern betraut.</cell>
+                     </row>
+                  </table>
+                  <list>
+                     <item n="1"><hi rend="#u">b) Gesetzentwurf über gemeinwirtschaftliche Anstalten und Gesellschaften gemeinwirtschaftlichen Charakters.</hi></item>
+                  </list>
+                  <table>
+                     <row>
+                        <cell cols="2">§ 4 Abs. 1</cell>
+                     </row>
+                     <row>
+                        <cell>…..durch Ausgabe auf den Inhaber lautender Teilschuldverschreibungen…</cell>
+                        <cell>…..durch Ausgabe auf den Inhaber lautender amortisabler Teilschuldverschreibungen…</cell>
+                     </row>
+                     <row>
+                        <cell cols="2">§ 4 Abs. 3</cell>
+                     </row>
+                     <row>
+                        <cell><p>Die gründenden öffentlichen Körperschaften können die Haftung für die Verzinsung und Tilgung der Teilschuldverschreibungen übernehmen.</p></cell>
+                        <cell>Die gründenden öffentlichen Körperschaften haben die Haftung für die Verzinsung und Tilgung der Teilschuldverschreibungen zu übernehmen. <pb facs="krp-0064_r-0017"/></cell>
+                     </row>
+                     <row>
+                        <cell cols="2">§ 5</cell>
+                     </row>
+                     <row>
+                        <cell>Der Staatssekretär der Finanzen kann verfügen, dass Banken sowie Versicherungsanstalten jeweils einen Teil der bei ihnen zur freien Verfügung erlegten fremden Gelder oder ihrer Reserven in Teilschuldverschreibungen der in § 4 bezeichneten Art angelegt halten.</cell>
+                        <cell>Der Staatssekretär der Finanzen kann verfügen, dass Geld- und Kreditinstitute sowie Versicherungsanstalten jeweils einen Teil der bei ihnen zur freien Verfügung erlegten fremden Gelder oder ihrer Reserven in mündelsicheren Teilschuldverschreibungen der in § 4 bezeichneten Art bei deren Emission anlegen.</cell>
+                     </row>
+                     <row>
+                        <cell cols="2">§ 6 Abs. 2</cell>
+                     </row>
+                     <row>
+                        <cell>Durch Vollzugsanweisung können Musterstatute erlassen werden.</cell>
+                        <cell>Ist zu streichen.</cell>
+                     </row>
+                     <row>
+                        <cell cols="2">§ 7 Abs. 1</cell>
+                     </row>
+                     <row>
+                        <cell>Soll eine gemeinwirtschaftliche Anstalt nicht vom Staate, sondern von einem Lande oder einer Gemeinde begründet werden, so unterliegen Gründungsbeschluss und Statut der staatlichen Genehmigung.</cell>
+                        <cell>Soll eine gemeinwirtschaftliche Anstalt nicht vom Staate begründet werden, so unterliegen Gründungsbeschluss und Statut der staatlichen Genehmigung.</cell>
+                     </row>
+                     <row>
+                        <cell cols="2">§ 13 Abs. 1</cell>
+                     </row>
+                     <row>
+                        <cell>Bei Verteilung des Reinerträgnisses muss… Verteilung des Reinerträgnisses, das nach Deckung der Betriebsauslagen einschließlich des Erfordernisses für</cell>
+                        <cell>Verzinsung und Tilgung der Teilschuldverschreibungen verbleibt, muss…</cell>
+                     </row>
+                     <row>
+                        <cell cols="2">§ 13 Abs. 2</cell>
+                     </row>
+                     <row>
+                        <cell>Jede gründende öffentliche Körperschaft kann sämtliche gemeinwirtschaftlichen Anstalten bezüglich der Verteilung des Anteiles der Arbeiter und Angestellten am Reinerträgnisse als ein einziges Unternehmen behandeln.</cell>
+                        <cell><p>Jede öffentliche Körperschaft kann <pb facs="krp-0064_r-0018"/>sämtliche gemeinwirtschaftlichen Anstalten bezüglich der Verteilung des Anteiles der Arbeiter und Angestellten am Reinerträgnisse als eine einzige Unternehmung behandeln.</p></cell>
+                     </row>
+                     <row>
+                        <cell cols="2">§ 14 Abs. 1</cell>
+                     </row>
+                     <row>
+                        <cell>Die Staatsregierung errichtet…</cell>
+                        <cell>Der Staatssekretär für Finanzen errichtet……</cell>
+                     </row>
+                     <row>
+                        <cell cols="2">§ 14 Abs. 2. zweiter Satz</cell>
+                     </row>
+                     <row>
+                        <cell>Dieser hat für Aufklärung und Abstellung der Mängel Sorge zu tragen.</cell>
+                        <cell>Dieser hat im Einvernehmen mit dem fachlich zuständigen Staatssekretär für Aufklärung und Abstellung der Mängel Sorge zu tragen</cell>
+                     </row>
+                     <row>
+                        <cell cols="2">§ 17 Abs. 2, zweiter Satz</cell>
+                     </row>
+                     <row>
+                        <cell>Übersteigt er 6 % des Gesellschaftskapitals, so wird er zwischen den Aktionären (Gesellschaftern) und den öffentlichen Körperschaften geteilt; der Anteil der öffentlichen Körperschaften steigt mit der Erhöhung des Reinerträgnisses.</cell>
+                        <cell>Übersteigt er 6 % des Gesellschaftskapitals, so wird er zwischen den Aktionären (Gesellschaftern) und den öffentlichen Körperschaften geteilt; der Antel der öffentlichen Körperschaften steigt progressiv mit der Erhöhung des Reinerträgnisses.</cell>
+                     </row>
+                  </table>
+                  <list>
+                     <item n="1"><hi rend="#u">c) Gesetzentwurf über die Enteigung von Wirtschaftsbetrieben.</hi></item>
+                  </list>
+                  <table>
+                     <row>
+                        <cell cols="2">§ 2 Abs. 2 letzter Satz</cell>
+                     </row>
+                     <row>
+                        <cell>Auf den wirtschaftlichen Zusammenhang der Gesamtunternehmung und auf die Vermeidung eines aus dessen Zerreißung entstehenden Schadens ist Bedacht zu nehmen.</cell>
+                        <cell>Auf den wirtschaftlichen Zusammenhang der Gesamtunternehmung und auf die Ver<pb facs="krp-0064_r-0019"/>meidung eines aus dessen Zerreißung entstehenden Schadens, insbesondere durch Gefährdung der Versorgung mit Roh- und Hilfsstoffen, ist Bedacht zu nehmen.</cell>
+                     </row>
+                     <row>
+                        <cell cols="2">§ 3 Abs. 1</cell>
+                     </row>
+                     <row>
+                        <cell>Die Entschädigung (§ 365 ABGB) hat dem tatsächlichen Wert der Unternehmung zur Zeit des Enteignungsbeschlusses zu entsprechen.</cell>
+                        <cell>Die Entschädigung hat dem Werte der Unternehmung zur Zeit des Enteignungsbeschlusses zu entsprechen.</cell>
+                     </row>
+                     <row>
+                        <cell cols="2">§ 3 Abs. 2 lit. a erster Satz</cell>
+                     </row>
+                     <row>
+                        <cell>Der Liquidationswert ist gleich dem Verkehrswerte der einzelnen Vermögensobjekte der Unternehmung.</cell>
+                        <cell>Der Liquidationswert ist gleich dem gemeinen Werte der einzelnen Vermögensobjekte der Unternehmung.</cell>
+                     </row>
+                     <row>
+                        <cell cols="2">§ 3 Abs. 2 lit. a dritter Satz</cell>
+                     </row>
+                     <row>
+                        <cell>Die seit der Wirksamkeit dieses Gesetzes gemachten Aufwendungen zur Erhaltung und Ausgestaltung der Unternehmung werden nach angemessenen Abschreibungen voll vergütet.</cell>
+                        <cell>Die seit dem 1. April 1919 gemachten Aufwendungen zur Erhaltung und Ausgestaltung der Unternehmung oder zur Beschaffung von Betriebsstoffen werden nach angemessenen Abschreibungen in Barem voll vergütet.</cell>
+                     </row>
+                     <row>
+                        <cell cols="2">§ 3 Abs. 2 lit. b zweiter Satz</cell>
+                     </row>
+                     <row>
+                        <cell>Innerhalb der sieben Berechnungsjahre erfolgte Veränderungen des Grundkapitals sind entsprechend zu berücksichtigen. Außerordentliche Kriegsgewinne bleiben außer Anschlag, ebenso Ertragssteigerungen, die der Unternehmung nachweislich als Folge von Einfuhrschutzzöllen für ihre Erzeugnisse zugeflossen sind.</cell>
+                        <cell>Innerhalb der sieben Berechnungsjahre erfolgte Veränderungen des Grundkapitals sind entsprechend zu berücksichtigen. Ertragssteigerungen, die der Unternehmung nachweislich als Folge von Einfuhrschutzzöllen für ihre Erzeugnisse zugeflossen sind, bleiben außer Anschlag. Bei Unter<pb facs="krp-0064_r-0020"/>nehmungen, die noch nicht durch sieben Friedensjahre bestanden haben, ist der Ertragswert durch Sachverständige zu erheben, wobei außerordentliche Kriegsgewinne außer Rechnung zu stellen sind.</cell>
+                     </row>
+                     <row>
+                        <cell cols="2">§ 3 Abs. 2 lit. c letzter Satz</cell>
+                     </row>
+                     <row>
+                        <cell>Die zeitliche befristete Rente kann in eine dauernde Rente umgerechnet werden.</cell>
+                        <cell>Die auf 20 Jahre befristete Rente kann in eine länger währende Rente gleichen Wertes umgerechnet werden.</cell>
+                     </row>
+                     <row>
+                        <cell cols="2">§ 3 Abs. 2 lit. d</cell>
+                     </row>
+                     <row>
+                        <cell>Bei Unternehmungen, die noch nicht durch sieben Friedensjahre bestanden haben, ist der Ertragswert durch Sachverständige zu erheben.</cell>
+                        <cell>Ist an dieser Stelle zu streichen.</cell>
+                     </row>
+                     <row>
+                        <cell cols="2">§ 7 Abs. 1</cell>
+                     </row>
+                     <row>
+                        <cell>Die Entschädigung kann ganz oder teilweise in der Form abgestattet werden, dass der Übernehmer die vom Enteigneten aufgenommenen Anleihen mit dem im Zeitpunkte der Enteignung noch ungetilgt aushaftenden Betrage an Stelle des Enteigneten zur Selbstzahlung auf sich nimmt.</cell>
+                        <cell><p>Ist zu streichen; Abs. 2 erhält daher die Bezeichnung: Absatz 1.</p><p>Als neuer Abs. 2 ist einzufügen:</p><p>„Der Enteignete kann die Zahlung in Barem verlangen, insoweit dies mit Rücksicht auf von ihm zu erfüllende Verpflichtungen aus der Unternehmung im Rahmen des § 5 erforderlich ist.“</p></cell>
+                     </row>
+                     <row>
+                        <cell cols="2">§ 12 Abs. 2</cell>
+                     </row>
+                     <row>
+                        <cell/>
+                        <cell>Als letzter Satz ist einzufügen: „Von den vier Laienrichtern werden zwei durch die Staatsregierung, zwei durch <pb facs="krp-0064_r-0021"/>den Enteigneten gewählt, und zwar aus einer vom Staatssekretär für Justiz aufzustellenden Liste.“</cell>
+                     </row>
+                     <row>
+                        <cell cols="2">§ 13 Abs. 1</cell>
+                     </row>
+                     <row>
+                        <cell>………Vereinbarung über die Entschädigung und die Übernahme der Verbindlichkeiten…………gegen gerichtlichen Erlag von mindestens 20 %der von ihm angebotenen Entschädigung…</cell>
+                        <cell>………Vereinbarung über die Entschädigung und den Übergang der Verbindlichkeiten…………gegen gerichtlichen Erlag der von ihm angebotenen Entschädigung…</cell>
+                     </row>
+                     <row>
+                        <cell cols="2">§ 17</cell>
+                     </row>
+                     <row>
+                        <cell>Alle mit der Enteignung nach diesem Gesetze zusammenhängenden vermögensrechtlichen Vereinbarungen sind steuer- und gebührenfrei.</cell>
+                        <cell>Alle mit der Enteignung nach diesem Gesetze zusammenhängenden vermögensrechtlichen Vereinbarungen sind gebührenfrei.</cell>
+                     </row>
+                  </table>
+                  <p>Ein namens des Staatssekretärs für Finanzen vom Oberfinanzrat Dr. <hi rend="#letterspaced">Mosing</hi> gestellter Antrag, in den Entwurf eine Bestimmung aufzunehmen, wornach für Neugründungen von der Regierung zeitlich befristete Ausnahmen bewilligt werden können (u. zw. nicht allein für Ausländer, sondern auch für Inländer) wird vom Kabinettsrate abgelehnt.</p>
+                  <p>Schließlich wird einem Antrage des Staatssekretärs Dr. <hi rend="#letterspaced">Bratusch</hi> auf rein textlichen Abänderungen des Wortlautes des § 5 des Entwurfes willfahrt und Staats<pb facs="krp-0064_r-0022"/>sekretär Dr. Bauer ermächtigt, die formalen Änderungen im § 5 einvernehmlich mit dem Staatssekretär Dr. Bratusch vorzunehmen</p>
+                  <list>
+                     <item n="1"><hi rend="#u">d) Gesetzesentwurf, betreffend die Vergesellschaftung von Unternehmungen durch die Gemeinden.</hi></item>
+                  </list>
+                  <p>	Keine Änderung</p>
+               </div>
+               <div type="top" xml:id="krp-0064_top10">
+                  <head>
+                     <label>
+                        <num n="10">10.</num>
+                        <seg>Bodenreformgesetzgebung; Landeskompetenz.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Stöckler</hi> weist darauf hin, dass dem in der Nationalversammlung eingebrachten Entwurfe des Wiederbesiedlungsgesetzes sowie dem noch einzubringenden Entwurfe eines Gesetzes über den Abbau des landwirtschaftlichen Großbesitzes insoferne Gefahr drohe, als das Land Steiermark die landesgesetzliche Kompetenz zur Behandlung dieser Materien in Anspruch zu nehmen beabsichtige. Dortselbst sei nämlich vom Vereine steirischer Bodenreformer ein Entwurf ausgearbeitet worden, der einheitlich Wiederbesiedelung und Abbau des Großbesitzes unter Statuierung eines weitgehenden Enteignungsrechtes zu Gunsten des Landes vorsehe und der als Grundlage für die <pb facs="krp-0064_r-0023"/>landesgesetzliche Behandlung dieser Angelegenheiten dienen solle.</p>
+                  <p>Ab 23. d. M. werde sich bereits der Landesrat in Graz mit der Kompetenzfrage beschäftigen, worauf der Entwurf ehestens in der Landesversammlung eingebracht werden soll.</p>
+                  <p>Eine länderweise Behandlung der Materie würde nun naturgemäß wesentliche Verschiedenheiten mit sich bringen. Hiedurch würde ein sozialpolitisch höchst unerwünschtes Abströmen der landhungrigen Bevölkerung in das Land der günstigsten Siedlungsbedingungen bewirkt werden.</p>
+                  <p>Auch würde durch die Schaffung einer Landesbodenkulturbehörde als oberster Instanz eine gleichmäßige Rechtssprechung auf dem Gebiete des einschlägigen Administrativverfahrens illusorisch gemacht.</p>
+                  <p>Es erscheine daher nach der Anschauung des sprechenden Staatssekretärs dringend geboten, mit den maßgebenden Faktoren Steiermarks schleunigst in Verbindung zu treten, weshalb die Entsendung von Fachorganen des Staatsamtes für Land- und Forstwirtschaft nach Graz bereits in den nächsten Tagen in Aussicht genommen sei.</p>
+                  <p>Der Kabinettsrat billigt den Standpunkt des Staatssekretärs Stöckler und stimmt der beabsichtigten Vorgangsweise zu.</p>
+                  <p/>
+               </div>
+            </div>
+            <div type="stenogramme">
+               <div n="1">
+                  <head>EINZUFÜGEN</head>
+                  <p>Transkription in Arbeit.</p>
+               </div>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

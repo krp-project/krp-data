@@ -1,0 +1,642 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href='http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:acdh="https://vocabs.acdh.oeaw.ac.at/schema#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xml:lang="de">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="a" type="main" n="0149">Kabinettsprotokoll Nr. 149 vom 21. Februar 1920</title>
+            <title level="m" type="main" n="01">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <title level="m" type="sub" n="">Renner III (17. Oktober 1919 – 7. Juli 1920)</title>
+            <meeting>
+               <placeName key="https://d-nb.info/gnd/4066009-6">Wien</placeName>
+               <orgName key="https://d-nb.info/gnd/5162749-8">Kabinettsrat</orgName>
+               <date when-iso="1920-02-21"/>
+            </meeting>
+            <editor>
+               <persName key="https://d-nb.info/gnd/122481836"
+                         role="hasCreator"
+                         xml:id="hwohnout">
+                  <forename>Helmut</forename>
+                  <surname>Wohnout</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</affiliation>
+               <idno type="ORCID">0000-0002-3864-9839</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/120789825"
+                         role="hasCreator"
+                         xml:id="tolechowski">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0003-3291-6876</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/131679384"
+                         role="hasCreator"
+                         xml:id="rlein">
+                  <forename>Richard</forename>
+                  <surname>Lein</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0002-7502-0503</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="aholzer">
+                  <forename>Anna</forename>
+                  <surname>Holzer</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0005-3560-3500</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="dsoelkner">
+                  <forename>Dominik</forename>
+                  <surname>Sölkner</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-9895-7212</idno>
+            </editor>
+            <editor>
+               <persName role="hasContributor" xml:id="ischotzko">
+                  <forename>Ina</forename>
+                  <surname>Schotzko</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-5210-3713</idno>
+            </editor>
+            <funder n="1">
+               <orgName key="https://d-nb.info/gnd/2054142-9" role="hasFunder">Österreichischer Wissenschaftsfonds FWF</orgName>
+               <idno type="project">PAT1495024</idno>
+               <title type="project">Die Protokolle des österreichischen Kabinettsrates 1919–1920</title>
+            </funder>
+            <respStmt>
+               <resp>Projektverantwortung</resp>
+               <orgName key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Projektleitung</resp>
+               <persName key="https://d-nb.info/gnd/120789825" role="hasPrincipalInvestigator">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+                  <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+                  <idno type="ORCID">0000-0003-3291-6876</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Nationaler Forschungspartner</resp>
+               <orgName key="https://d-nb.info/gnd/1123037736" role="hasEnabler">Austrian Centre for Digital Humanities</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Digitalisierung der gedruckten Quellen</resp>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>TEI-Datenmodellierung</resp>
+               <persName role="hasContributor" xml:id="tfruehwirth">
+                  <forename>Timo</forename>
+                  <surname>Frühwirth</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-3997-5193</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technische Supervision</resp>
+               <persName key="https://d-nb.info/gnd/1043833846"
+                         role="hasContributor"
+                         xml:id="pandorfer">
+                  <forename>Peter</forename>
+                  <surname>Andorfer</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-9575-9372</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technisches Consulting und Vorbereitung der Druckausgabe</resp>
+               <persName key="https://d-nb.info/gnd/13281899X"
+                         role="hasContributor"
+                         xml:id="skurz">
+                  <forename>Stephan</forename>
+                  <surname>Kurz</surname>
+                  <affiliation key="https://d-nb.info/gnd/1202798799">Institut für die Erforschung der Habsburgermonarchie und des Balkanraumes</affiliation>
+                  <idno type="ORCID">0000-0003-2546-2570</idno>
+               </persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher key="https://d-nb.info/gnd/1001454-8">Österreichische Akademie der Wissenschaften</publisher>
+            <date when="2028"/>
+            <availability status="free">
+               <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">Lizenziert unter CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/deed.de)</licence>
+            </availability>
+            <idno type="ISBN_Print"/>
+            <idno type="ISBN_Part_epub"/>
+            <idno type="ISBN_Digital"/>
+            <idno type="DOI"/>
+            <idno type="DOI_zenodo"/>
+            <idno type="ebook_ID"/>
+         </publicationStmt>
+         <seriesStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="m" type="main">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <respStmt>
+               <resp>Bearbeitung und Herausgeberschaft</resp>
+               <orgName key="https://d-nb.info/gnd/2024703-5">Universität Wien</orgName>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+         </seriesStmt>
+         <notesStmt>
+            <note>Diese TEI-XML-Datei ist Grundlage für eine Druckausgabe der Edition.</note>
+            <relatedItem>
+               <biblStruct>
+                  <monogr>
+                     <imprint>
+                        <pubPlace key="https://d-nb.info/gnd/4066009-6">Wien</pubPlace>
+                        <publisher key="https://d-nb.info/gnd/2068748-5">Verlag der Österreichischen Akademie der Wissenschaften</publisher>
+                        <date when="2029"/>
+                     </imprint>
+                     <extent/>
+                  </monogr>
+                  <note>
+              <idno/>
+              <ptr/>
+            </note>
+                  <citedRange/>
+               </biblStruct>
+            </relatedItem>
+         </notesStmt>
+         <sourceDesc>
+            <bibl>Quellbestand: AT-OeStA/AdR MRang MR 1Rep KRP Kabinettsratsprotokolle, 1918-1920 (Teilbestand)<ref target="https://www.archivinformationssystem.at/detail.aspx?id=5465">https://www.archivinformationssystem.at/detail.aspx?id=5465</ref>
+            </bibl>
+            <msDesc>
+               <msIdentifier>
+                  <institution key="https://d-nb.info/gnd/37748-X" role="hasOwner">AT-OeStA Österreichisches Staatsarchiv (Archiv (ÖStA))</institution>
+                  <repository key="https://d-nb.info/gnd/1601181-8">AT-OeStA/AdR Archiv der Republik, 1918- (Abteilung)</repository>
+                  <collection>AT-OeStA/AdR MRang MR 1Rep Ministerrat 1. Republik, 1918 - 1938 (Bestand)</collection>
+                  <idno>AT-OeStA_AdR-MRang-MR-1.-Rep.-KRP-149</idno>
+               </msIdentifier>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <abstract>
+            <p>
+          <!--to be generated-->
+        </p>
+         </abstract>
+      </profileDesc>
+      <encodingDesc>
+         <styleDefDecl scheme="css"/>
+         <tagsDecl>
+            <rendition xml:id="b" scheme="css">font-weight:bold;</rendition>
+            <rendition xml:id="su" scheme="css">vertical-align:super;font-size:.7em;</rendition>
+            <rendition xml:id="s" scheme="css">text-decoration:line-through;</rendition>
+            <rendition xml:id="u" scheme="css">text-decoration:underline;</rendition>
+            <rendition xml:id="ow" scheme="css">text-decoration:line-through;text-decoration-style:double;</rendition>
+            <rendition xml:id="r" scheme="css">display:block;text-align:right;</rendition>
+            <rendition xml:id="letterspaced" scheme="css">letter-spacing:0.15em;</rendition>
+            <rendition xml:id="i" scheme="css">font-style:italic;</rendition>
+         </tagsDecl>
+         <editorialDecl>
+            <hyphenation>
+               <p>
+            <!--to be added-->
+          </p>
+            </hyphenation>
+            <correction>
+               <p>
+            <!--to be added-->
+          </p>
+            </correction>
+            <normalization>
+               <p>
+            <!--to be added-->
+          </p>
+            </normalization>
+            <punctuation>
+               <p>
+            <!--to be added-->
+          </p>
+            </punctuation>
+            <stdVals>
+               <p>
+            <!--to be added-->
+          </p>
+            </stdVals>
+            <p>
+          <!--to be added-->
+        </p>
+         </editorialDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#tfruehwirth" when-iso="2026-10-14">TEIGarage output upconverted with upconvert.xsl</change>
+         <change who="#tfruehwirth" when-iso="2026-10-14">TEI header populated with generate_tei_templates.py</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface/>
+   </facsimile>
+   <text>
+      <body>
+         <div xml:id="doc-krp-0149.xml">
+            <head type="dokument">
+               <title type="num">149.<note type="footnote">Das Protokoll trägt den Vermerk <hi rend="#i">Vertraulich!</hi></note>
+               </title>
+               <title type="desc">
+                  <pb facs="krp-0149_r-0001"/>[Samstag] 1920-02-21</title>
+            </head>
+            <div type="dokumentkopf">
+               <div type="vorsitz">
+                  <head>Vorsitz:</head>
+                  <p>Renner</p>
+               </div>
+               <div type="anwesend">
+                  <head>Anwesend:</head>
+                  <p>Deutsch, Eisler, Eldersch, Ellenbogen, Fink, Glöckel, Hanusch, Loewenfeld-Russ, Miklas, Paul, Reisch, Resch, Tandler, Waiss, Zerdik</p>
+               </div>
+               <div type="zugezogen">
+                  <head>Zugezogen:</head>
+                  <p>Grimm, [Schüller], Schwarzwald, Seitz</p>
+               </div>
+               <div type="schriftfuehrer">
+                  <head>Schriftführer:</head>
+                  <p>Groß</p>
+               </div>
+               <div type="dauer">
+                  <head>Dauer:</head>
+                  <p>16.00–17.30 Uhr</p>
+               </div>
+            </div>
+            <div type="komponenten">
+               <p>Reinschrift, Konzept, stenographische Mitschrift</p>
+            </div>
+            <div type="beilagen">
+               <head>Beilagen:</head>
+               <list>
+                  <item>-</item>
+               </list>
+            </div>
+            <div type="protokoll">
+               <div type="top" xml:id="krp-0149_top01">
+                  <head>
+                     <label>
+                        <num n="1">1.</num>
+                        <seg>Bericht der Staatssekretäre für Finanzen und für Volksernährung über das Ergebnis der Verhandlungen in Paris und in Bern.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Reisch</hi> leitet den Bericht über die Verhandlungen in Paris mit der Wiedergabe der vier vor der Reparationskommission vorgebrachten Forderungen Österreichs ein, betreffend</p>
+                  <list>
+                     <item n="1"><label>1.)</label> Genehmigung des von der niederländischen Ausfuhrgesellschaft (Num) angebotenen Kredites im Betrage von 6 ½ Millionen holländischen Gulden,</item>
+                  </list>
+                  <p><pb facs="krp-0149_r-0002"/></p>
+                  <list>
+                     <item n="1"><label>2.)</label> Freigabe der für den 48 Millionen Dollar-Kredit verpfändeten ausländischen Wertpapiere,</item>
+                     <item n="2"><label>3.)</label> Freigabe der in Innsbruck als Pfand für italienische Lebensmittellieferungen an Österreich hinterlegten Summe von 382 Millionen K und</item>
+                     <item n="3"><label>4.)</label> Vorgenehmigung zur Verpachtung des Tabakmonopols.</item>
+                  </list>
+                  <p>Die Bemühungen, die Zustimmung zur Annahme des Kredites der niederländischen Ausfuhrgesellschaft zu erlangen, seien trotz der dringlichsten Vorstellungen bei der Reparationskommission, dass es sich nach der ganzen Anlage der Anleihe weniger um ein Darlehen als um eine Hilfsaktion für Österreich handle, vergeblich gewesen. Der Grund hiefür liege darin, dass zwischen diesem Kredit und einer von der altösterreichischen Regierung unter Haftung der Oesterreichisch-ungarischen Bank aufgenommenen Anleihe von 16 Millionen holländischen Gulden für Lebensmittel ein Zusammenhang hergestellt wurde, dessentwegen die Reparationskommission nun Schwierigkeiten mache. Die holländische Regierung habe bekanntlich die Rückzahlung dieses Kredites vor dem Fälligkeitstermine vom 1. November 1920 nahegelegt, worauf die Einfuhrge<pb facs="krp-0149_r-0003"/>sellschaft den Kredit von 6 ½ Millionen holländischen Gulden gegen 4%ige Verzinsung und Rückzahlbarkeit erst in dem Augenblick, in welchem die österreichische Krone in Amsterdam 40 c notiert, keinesfalls aber vor dem Jahre 1930, gewährt hätte. Die Oesterreichisch-ungarische Bank sei in der Lage und bereit gewesen, die Rückzahlung zu leisten. Dagegen habe nun aber die Kommission mit der Begründung Stellung genommen, dass die Oesterreichisch-ungarische Bank rückbezogen auf den Tag der Unterzeichnung des Friedensvertrages in Liquidation zu treten habe und die Kommission daher die Zustimmung zur Abstattung der Hollandsschuld nicht erteilen könne, bevor sie nicht die Gewissheit besitze, dass die Oesterreichisch-ungarische Bank in der Lage sei, ihre sämtlichen Gläubiger zu befriedigen. Hiebei habe die Reparationskommission sogar die Notenbesitzer mit den Gläubigern der Bank auf eine Stufe gestellt. Über die Einwendungen des sprechenden Staatssekretärs, dass zwischen den Gläubigern und den Notenbesitzern ein wesentlicher Unterschied bestehe und die letzteren niemals einen Anspruch auf Barzahlung besessen hätten, habe die Reparationskommission diesen Standpunkt zwar verlassen, je<pb facs="krp-0149_r-0004"/>doch erklärt, die Entscheidung jenem Zeitpunkte vorbehalten zu müssen, bis der Bericht des von ihr entsandten Liquidators über die wirtschaftliche Lage der Oesterreichisch-ungarischen Bank vorliege.</p>
+                  <p>Die Aktion, betreffend die Freigabe der ausländischen Wertpapiere, habe einen Teilerfolg gebracht, indem die Reparationskommission schriftlich mitteilte, dass die nichtsequestrierten amerikanischen und neutralen Wertpapiere uns zur Verfügung überlassen werden. Ausgeschlossen von der Freigabe blieben also die französischen und englischen Effekten, dann alle in Frankreich und England deponierten Wertpapiere sowie die in Amerika befindlichen Wertpapiere von Österreichern, soweit diese sequestriert sind. In letzterer Beziehung seien mit dem Pariser Hause der Firma Morgan, Harjes &amp; Co Verbindungen angeknüpft worden, um von Amerika die Freigabe von Wertpapieren über den von der Reparationskommission gezogenen Rahmen hinaus zu erwirken. Welche Beträge auf diese Weise in die Hand der Regierung kommen werden, müsse nach den vorgenommenen Einschränkungen erst berechnet werden, doch werde es sich nach einem vorläufigen Überschlage nur um wenige Millionen Dollar handeln.</p>
+                  <p><pb facs="krp-0149_r-0005"/>Die Reparationskommission habe die Freigabe an verschiedene Bedingungen geknüpft, darunter die, dass die im Gesetze von 4. Juli 1919, StGBl. Nr. 354, vorgesehene Sicherstellung ausländischer Kredite auf die Staatsforste grundbücherlich durchgeführt werde. Dabei habe sich noch das Versehen eingeschlichen, dass die Reparationskommission in den Kreis der Pfandobjekte auch noch die Salinen einbezog, obwohl diese nach dem erwähnten Gesetze nicht als Sicherstellung zu haften haben.</p>
+                  <p>In der Frage der Auflassung des Sicherstellungsdepots von 382 Millionen K in Innsbruck habe die Reparationskommission keine Entscheidung getroffen, sondern eine schriftliche Erledigung in Aussicht gestellt, offenbar um sich darüber erst mit Italien ins Einvernehmen zu setzen.</p>
+                  <p>In der Frage der Verpachtung des Tabakmonopols habe wegen einer Verzögerung in den Verhandlungen mit den Interessenten gleichfalls kein Ergebnis erzielt werden können. Der Aufschub sei dadurch hervorgerufen worden, dass aus den beiden in Betracht kommenden Finanzgruppen, der Creditanstalt und der Banque de Paris einerseits und des Wiener Bankverein mit der Union parisienne andererseits, die ursprünglich <pb facs="krp-0149_r-0006"/>beteiligten amerikanischen Interessenten im letzten Moment ausgeschieden seien und erst Verhandlungen mit anderen amerikanischen Interessentengruppen angeknüpft werden mussten. Dadurch sei es unmöglich geworden, die Reparationskommission sachlich mit dieser Angelegenheit zu beschäftigen und es müssten nun erst die Ergebnisse der Verhandlungen abgewartet werden, welche zwei in Paris zurückgelassene Vertreter des Staatsamtes für Finanzen im Laufe der nächsten Woche führen werden.</p>
+                  <p>Des Weiteren habe der sprechende Staatssekretär Gelegenheit genommen, dem französischen Ministerpräsidenten Millerand die Notwendigkeit der Gewährung langfristiger Kredite an Österreich zur Ermöglichung der Wiederaufrichtung des Wirtschaftslebens zu begründen und dafür die besondere Unterstützung Frankreichs zu erbitten. Über Anregung Millerands habe Redner der Botschafterkonferenz einen umfassenden Plan für den wirtschaftlichen Wiederaufbau Österreichs unterbreitet und hiebei durchleuchten lassen, dass Österreich es lebhaft begrüßen würde, wenn die österreichische Sektion der Reparartionskommission in Wien unabhängig von der Inkraftsetzung des Friedensvertrages baldigst konstituiert würde. Die Be<pb facs="krp-0149_r-0007"/>fassung der Botschafterkonferenz mit dieser Frage habe allerdings zu einem Kompetenzkonflikt zwischen ihr und der Reparationskommission geführt und die Notwendigkeit gezeitigt, die der Botschafterkonferenz gestellten Anträge vor der Reparationskommission zu wiederholen. Die Botschafterkonferenz wie die Reparationskommission hätten jedoch die Vorschläge wohlwollend aufgenommen; von der Reparationskommission sei noch der Wunsch nach der Einwilligung Österreichs geäußert worden, dass der Liquidator für die Oesterreichisch-ungarische Bank schon jetzt bestellt werde. Obwohl für eine derartige Maßnahme augenblicklich kein Anlass vorliege, habe der sprechende Staatssekretär aus Rücksicht auf den Kredit der niederländischen Ausfuhrgesellschaft hiezu schließlich das Einverständnis erklärt.</p>
+                  <p>Bei der Schlusskonferenz der Reparationskommission seien von den Vertretern Amerikas und Englands feierliche Erklärungen namens ihrer Regierungen über die Bereitwilligkeit zur Gewährung von Krediten an Österreich abgegeben worden. Amerika nehme in Aussicht von dem im Senate für Österreich, Polen und Armenien angeforderten Kredit von 50 Millionen <pb facs="krp-0149_r-0008"/>Dollar den größten Teil Österreich zuzuwenden. England dagegen sei bereit, seinerseits einen Kredit für die gleichen Zwecke in der Höhe von 50 % des amerikanischen Kredites bis zum Höchstbetrage von 25 Millionen Dollar beizustellen, der ebenfalls vorwiegend Österreich zugute kommen solle.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Loewenfeld-Russ</hi> bezeichnet als Hauptziel seiner Tätigkeit während der Auslandsreise die Sicherstellung des Lebensmittelbedarfes bis zu dem Zeitpunkte, in welchem der in Aussicht gestellte amerikanische Kredit wirksam werden wird. Aus inoffiziellen Äußerungen gehe hervor, dass sich England und Amerika bemühen, auch neutrale Staaten zur Teilnahme an der Kreditgewährung zu gewinnen. Die Kredite sollen jedoch nicht Valutakredite, sondern Warenkredite sein. Amerika werde sich hauptsächlich mit Mehl und Fett, England mit Rohstoffen und in der Form der Übernahme der Transportkosten beteiligen.</p>
+                  <p>Die bisher erreichten finanziellen Zugeständnisse der Entente hätten es ermöglicht Lebensmittel so weit sicherzustellen, dass der Bedarf im Anschlusse an die laufende Versorgungsperiode für etwa einen weiteren Monat gedeckt erscheine.</p>
+                  <p><pb facs="krp-0149_r-0009"/>Ohne Erfolg seien leider die Bemühungen geblieben, von Frankreich einen Teil des in der Tschechoslowakei angekauften Zuckers zu bekommen; es werde daher notwendig sein, nach Erhalt des amerikanischen Kredites mit der Tschechoslowakei neuerliche Zuckerverhandlungen aufzunehmen.</p>
+                  <p>Des Weiteren habe Redner in Paris über Wunsch des Staatsamtes für Land- und Forstwirtschaft die Frage der Lieferung von Kunstdünger aus Algier zur Sprache gebracht. Die französische Regierung habe in dieser Hinsicht zwar ein Entgegenkommen zugesagt, die Entscheidung über das Zustandekommen des Geschäftes jedoch der Vereinbarung mit der betreffenden algerischen Privatfirma vorbehalten. Die Lieferungen würden unter Ausnützung eines Teiles der freigegebenen Wertpapiere sofort bezahlt werden müssen. Darnach erscheine es fraglich, ob der Kunstdünger der heimischen Landwirtschaft schon für den bevorstehenden Frühjahrsanbau zugutekommen werde.</p>
+                  <p>Aufgrund der von der Reparationskommission freigegebenen Wertpapiere und der noch verfügbaren Restbestände seien mit holländischen Firmen Verhandlungen angeknüpft worden, wobei es gelungen sei, einen Vertrag zustandezubringen, wonach an Österreich via <pb facs="krp-0149_r-0010"/>Rotterdam–Mainz 20.000 t Weizen gegen Barzahlung, 10.000 t Mais gegen Kredit auf ein Jahr und 20.000 t Roggen gegen 20%ige Anzahlung und einjährige Kreditierung des Restes sowie schließlich 20.000 t Kartoffeln gegen Kredit auf ein Jahr geliefert werden sollen. Diese Lebensmittelbezüge decken bei Berechnung des Verbrauches nach der vollen Quote den Bedarf etwa bis Ende April und der sprechende Staatssekretär nehme in Aussicht, wenigstens die volle Mehlquote wieder herzustellen. Aufgrund von Verhandlungen mit England sei schließlich noch eine Quantität Hafermehl zu erwarten.</p>
+                  <p>Vermöge der besonderen Unterstützung des englischen Delegierten bei der Reparationskommission Sir William Goode sei es gelungen, aus dem englischen Hilfsfonds 1.300 t Fett im Gesamtwerte von 260.000 Pfund Sterling zu bekommen, was die Fettversorgung für einige Wochen erleichtern werde. Außerdem habe Goode den Ankauf von 50.000 Kisten Kondensmilch aus England gegen einen unbestimmten Kredit und von 15.000 Kisten Kondensmilch in Paris gegen einen Kredit in der Dauer von 30 Jahren vermittelt. Schließlich sei es gelungen, eine englische Firma dafür zu gewinnen, Corned Beef auf Stapel nach Wien zu bringen, so zwar, dass es im Belieben der Regierung verbleibe, das Corned Beef je nach der <pb facs="krp-0149_r-0011"/>Zahlungsmöglichkeit abzunehmen oder nicht. Das Fleisch werde sich zwar sehr teuer, auf etwa 172 K pro kg, stellen, immerhin aber doch eine gewisse Reserve bilden.</p>
+                  <p>Außerhalb des Rahmens der Lebensmittelkäufe habe sich der sprechende Staatssekretär bemüht, in Paris ein Geschäft über Papier gegen Bezahlung in Francs anzubahnen, das aller Voraussicht nach auch zustandekommen werde. Darnach soll die österreichische Papierindustrie für eine Dauer von mindestens vier Monaten an die Vereinigung der französischen Presse allmonatlich 50 Waggon[s] Rotationspapier und 50 Waggons Kommerzpapier gegen einen Kilopreis von 1,60 Francs, also ungefähr 32 K im Vergleich zu einem Inlandspreis von 7 K liefern, wobei die Franzosen die Beistellung der für die Produktion erforderlichen Kohlenmengen übernehmen.</p>
+                  <p>Auf der Rückreise habe der sprechende Staatssekretär nach dem Wunsche des Staatskanzlers Gelegenheit genommen, dem Schweizer Bundespräsidenten den Dank der österreichischen Regierung für die Hilfeleistung der Schweiz an Österreich auszusprechen. Er habe sowohl beim Bundespräsidenten, wie bei den anderen Mitgliedern des Bundes die herzlichste Aufnahme gefunden. Zu<pb facs="krp-0149_r-0012"/>nächst habe er diesen Anlass benützt, um über Wunsch des Landes Tirol die Ordnung zweier Lebensmittelgeschäfte Tirols mit der Schweiz zu bewirken.</p>
+                  <p>Dank dem besonderen Entgegenkommen der Schweizer Regierung sei es aber auch gelungen, gegen einen Kredit von 6 ½ Millionen Schweizer Francs bis zum 31. März 1921 einen Abschluss auf Lieferung von ca. 8.000 t verschiedener Lehensmittel, und zwar Brotmehl, Maisgries, Hülsenfrüchten und Haferprodukten durchzuführen. Die Kreditierung erfolge gegen einfachen Wechsel des Staatsamtes für Finanzen mit Akzepten der deutschösterreichichen Lebensmitteleinfuhrstelle und der Kriegsgetreideanstalt. Als Sicherheit habe die Schweizer Bundesregierung lediglich die bankmäßige Hinterlegung von Österreichischen Schatzscheinen verlangt. Der Abtransport dieser Lebensmittel, welche hauptsächlich Zubußen zur Mehlration bilden werden, werde bereits in den nächsten Tagen beginnen.</p>
+                  <p>Der Kabinettsrat nimmt die Berichte der beiden Staatssekretäre zur Kenntnis und beschließt die Ausgabe eines entsprechenden Kommuniqués über die Ergebnisse der Pariser und Berner Verhandlungen.</p>
+                  <p/>
+               </div>
+            </div>
+            <div type="stenogramme">
+               <div n="1">
+                  <head>[KRP 149, 21. Februar 1920, Stenogramm Fenz]</head>
+                  <p><pb facs="krp-0149_s01-0001"/>149.</p>
+                  <p>[Zugezogen:] Schwarzwald, Seitz</p>
+                  <p>Grimm, Schüller.</p>
+                  <p>Tandler: Ich werde am Montag in die Schweiz zum internationalen Kinderhilfskongress fahren über Ermächtigung des Präsidenten und des Staatskanzlers.</p>
+                  <p>Zur Kenntnis genommen.</p>
+                  <p>Reisch: Die Reparationskommissions-Sitzung [war] am Freitag. Wir haben unsere Lage geschildert [und] haben insbesondere vier Punkte zur Sprache gebracht:</p>
+                  <p>1.) Die Genehmigung des uns angebotenen Kredits von 6 Millionen holländischen Gulden (Num) (Nederl. Usf. M[...]).</p>
+                  <p>2.) Die Freigabe der ausländischen Wertpapiere, die wir für die 48 Millionen Dollar verpfändet hatten.</p>
+                  <p>3.) Die Freigabe des Sicherstellungsdepots [von] 382 Millionen Kronen in Innsbruck für die Lebensmitteleinfuhr aus Italien.</p>
+                  <p>4.) Die Vorgenehmigung für die Tabakverhandlungen.</p>
+                  <p>Ad 1.) Schmerzlichste Enttäuschung. Die Annahme des Kredits wurde nicht genehmigt.</p>
+                  <p>Ad 2.) Teilerfolg. Wir haben eine schriftliche Erledigung bekommen, dass sie uns die amerikanischen, nicht-sequestrieren, sowie die neutralen Wertpapiere zur Verwertung freigeben. </p>
+                  <p>Ausgeschlossen [bleiben] [<hi rend="#i">Einschub:</hi>] sonach [<hi rend="#i">Einschub Ende</hi>] die französischen und englischen Wertpapiere, sowie alle in Frankreich und England befindlichen, sowie die in Amerika befindlichen Wertpapiere von Österreichern, soweit </p>
+                  <p>sie sequestriert sind. [Es sind] nach den ersten Überschlägen höchstens einige Millionen Dollar.</p>
+                  <p>Ad 3.) Die Kommission konnte noch keine Entscheidung treffen, [diese] wird nachfolgen.</p>
+                  <p>Ad 4.) Zwei Gruppen [<hi rend="#i">Einschub:</hi>] mit französ[ischen] [<hi rend="#i">Einschub Ende</hi>] Konsorten, die Gruppe der hiesigen Creditanstalt und die Gruppe des Wiener Bankvereins waren sehr ernstliche Bewerber um das Geschäft. </p>
+                  <p>Die Amerikaner, die in beiden Gruppen vertreten waren, sind von beiden Gruppen zurückgetreten. </p>
+                  <p>Es musste an die Neubildung dieser beiden Gruppen geschritten werden. [Dies] hat sich dadurch verzögert, dass die Herren mündliche Besprechungen haben wollten.</p>
+                  <p><hi rend="#s">Im Verein mit Banque de Paris</hi> - Die Banque de Paris steht dem Geschäft günstig gegenüber. </p>
+                  <p>Daneben hat sich die Union Parisienne mit unserem Mazedonischen Tabaklieferanten ins Einvernehmen gesetzt. </p>
+                  <p>Sie wollen das Geschäft auf der Basis machen, dass sie uns ein Darlehen von 15 Millionen holländischen Gulden, welches ?hypothisiert ist auf dem Tabakgeschäft, geben, hingegen uns </p>
+                  <p>bei dem Geschäft einen größeren Spielraum geben. Kapital würde nur auf Basis [von] 6 % Zinsen und 8 % Minimaldividende für das zur Verfügung </p>
+                  <p>stehende Aktienkapital zu erlangen sein.</p>
+                  <p>Mit den beiden Gruppen [besteht noch] kein definitives Abkommen, sondern erst Montag und Dienstag der nächsten Woche werden die Verhandlungen wieder aufgenommen werden und ich habe zwei Vertreter </p>
+                  <p>dazu in Paris zurückgelassen.</p>
+                  <p>Die Reparationskommission sieht das Geschäft mit scheelen Augen an.</p>
+                  <p>Wir haben schon bei der Reparationskommission darauf verwiesen, dass das alles nur Notauskunftsmittel sind, die uns für die Dauer nicht helfen können. </p>
+                  <p>Wir haben daher [darauf] hingewiesen, dass ein umfassendes Wirtschaftsprogramm entwickelt werden müsse. [Wir haben] Millerand besucht [und] wir haben über dessen Anregung </p>
+                  <p><pb facs="krp-0149_s01-0002"/>diese Gedankengänge in der Botschafterkonferenz entwickelt, Kredithilfe verlangt. Wir würden es begrüßen, wenn die schon im Friedensvertrag </p>
+                  <p>für das Inkrafttreten vorgesehene section autr[iche] der Reparationskommission sofort eingesetzt wird. Diese Idee wurde von allen Seiten aufgegriffen, nur hat sich </p>
+                  <p>daraus ein Kompetenzkonflikt zwischen der Reparationskommission und der Botschafterkonferenz ergeben.</p>
+                  <p>Ernennung des Liquidators der österreichisch-ungarischen Bank.</p>
+                  <p>Renner: </p>
+                  <p>Welche unmittelbaren Verfügungen haben das Kabinett und das Staatsamt für Finanzen zu treffen?</p>
+                  <p>Reisch: Die Freigabe der Wertpapiere ist an einige Bedingungen geknüpft worden, insbesondere daran, dass unser Gesetz vom Juli '19 </p>
+                  <p>über die Verpfändung der Wälder durchgeführt wird. Dabei wurde auch verlangt, dass die Salinen verpfändet werden.</p>
+                  <p>Bei der Schlusskonferenz wurden feierliche Erklärungen seitens des amerikanischen und des englischen Vertreters hinsichtlich der Kredithilfe abgegeben. Der 50 Millionen-Dollar-</p>
+                  <p>Kredit [ist] bereits im Senat anhängig und [es werde ein] größerer Teil Österreich zugewendet. England [erklärte, dass es] 50 % des Kredits, den Amerika </p>
+                  <p>zu geben beabsichtigt, auch geben wird, jedoch nicht mehr als - Dollar. Beides ist abhängig vom Gang der parlamentarischen Verhandlungen.</p>
+                  <p>Loewenfeld-Ruß: Nachdem wir uns dessen bewusst waren, dass die Bewilligung des Kredites aus Amerika noch längere Zeit dauern wird, so sind wir nach </p>
+                  <p>Paris gefahren, um das Vacuum auszufüllen.</p>
+                  <p>Sowohl der amerikanische wie der englische Vertreter haben gesagt, dass nicht daran gedacht wird, uns einen Valutenkredit, sondern einen Warenkredit zu geben.</p>
+                  <p>Von englischer Seite werden Bemühungen gemacht, auch neutrale Staaten zur Kreditgewährung heranzuziehen. Die Schweiz wird sich beteiligen, wie mir Motta </p>
+                  <p>sagte. Amerika will uns Mehl und Fett, England Rohstoffe liefern und die Transportkosten übernehmen.</p>
+                  <p>Die Rohstoff-Kredite, die schon hier verhandelt wurden, hängen mit diesen englischen Rohstoffkrediten zusammen.</p>
+                  <p>Zur Deckung des Vakuums hatten die vier Punkte Reischs dienen sollen. Diese sind nur zum Teil aufrecht - [erfolgreich] erledigt worden. </p>
+                  <p>Es musste also Vorsorge getroffen werden.</p>
+                  <p>Bezüglich Zucker [wurde eine] vollkommen ablehnende Haltung eingenommen, übrigens würde er uns 120 Kronen kosten. </p>
+                  <p>[Man sagte], wenn der amerikanische Kredit bewilligt würde, könnte man Zucker auf diesen Kredit einstellen. Daher müsste man mit den Tschechen neuerlich </p>
+                  <p>verhandeln oder warten bis der amerikanische Kredit gewährt wird.</p>
+                  <p>Düngerfrage. Sie wollen uns entgegenkommen, [wir] müssen uns aber mit den algerischen Unternehmungen ins Einvernehmen setzen – </p>
+                  <p>wird schriftlich bekannt gegeben werden. Auf Kredit wird man ihn nicht bekommen, [er] könnte nur aufgrund der Werte, die wir frei bekommen, bezogen werden.</p>
+                  <p>Faktisches Ergebnis: [Wir haben] Verhandlungen mit der größten Getreidefirma Dreyfus angeknüpft. </p>
+                  <p>[Wir haben] 20.000 Tonnen Weizen cif Rotterdam gekauft, so dass ein Anschluss gefunden wird. </p>
+                  <p>Einen Teil des Kaufpreises haben wir schon [erlegt], ein kleiner Teil aus den Wertpapieren.</p>
+                  <p>[Außerdem wurden] 10.000 Tonnen Mais gesichert in Holland; </p>
+                  <p><pb facs="krp-0149_s01-0003"/>[außerdem wurden] Vereinbarungen geschlossen [über] 20.000 Tonnen Roggen, 20 % zahlen, Rest einjähriger Kredit; [außerdem] </p>
+                  <p>20.000 Tonnen Kartoffeln gekauft auf Kredit. Ein Monatsbedarf </p>
+                  <p>mit voller Mehlquote. <hi rend="#s">Dadurch ein Monat</hi> – </p>
+                  <p>Mit diesen Mengen [<hi rend="#i">Einschub:</hi>] samt den Vorräten bis 20. März – [<hi rend="#i">Einschub Ende</hi>] März und April werden gedeckt sein. </p>
+                  <p>Ich beabsichtige, die Mehlquote wieder herzustellen.</p>
+                  <p>Aufgrund [von] Verhandlungen mit dem englischen Delegierten [wurde uns eine] größere Fettmenge zugesichert auf Kredit. </p>
+                  <p>[Wir bekommen] Fett für 250.000 Pfund Sterling - 1.200 Tonnen verschiedener Fette; </p>
+                  <p>[außerdem] 50.000 Kisten Kondensmilch auf Kredit. </p>
+                  <p>Ferner [haben wir] in Paris 15.000 Kisten Kondensmilch gekauft.</p>
+                  <p>Mit [einer] englischen Corned-Beef-Firma [haben wir ein] Übereinkommen [geschlossen], dass die Firma Corned Beef nach Wien liefert, das wir hier nach Bedarf </p>
+                  <p>abrufen können.</p>
+                  <p>Durch diese Verhandlungen ist es gelungen, speziell was Getreide anbelangt, mindestens für einen Monat vorzusorgen und Fleisch, Fett und Milch zu </p>
+                  <p>bekommen.</p>
+                  <p>Wir hätten so viel wir wollten, kaufen [können], wenn wir die nötigen Mittel gehabt hätten und der Kurs der Krone besser gewesen wäre.</p>
+                  <p>Über unsere Veranlassung ist in Paris über Papier verhandelt worden, um uns Francs zu beschaffen. </p>
+                  <p>50 Waggons Rotationspapier und 50 Waggons Kommerzpapier [sind] monatlich nach Paris von uns zu liefern. </p>
+                  <p>Es wäre sehr zu begrüßen, wenn diese Verhandlungen günstig abgeschlossen werden. Dafür liefern die Franzosen Kohle.</p>
+                  <p>Unsere Gesandtschaft in Paris ist den heutigen Verhältnissen nicht gewachsen. [Sie] betätigt sich zu wenig in wirtschaftlichen Fragen. [Ich] werde persönlich dem Staatskanzler berichten.</p>
+                  <p>[Auf der Rückfahrt waren wir in] Bern, um dem Bundespräsidenten den Dank auszusprechen für die Unterstützung, die uns die Schweiz hat angedeihen lassen. </p>
+                  <p>Denkbar herzlicher Empfang bei Motta.</p>
+                  <p>Ich habe über Wunsch Tirols beim Ernährungsdirektor vorgesprochen. Die Tiroler haben zwei Geschäfte gemacht, eines wovon eine Schuld [von] </p>
+                  <p>2 Millionen Franken an die Schweiz resultiert, die in einen Kredit umgewandelt werden wird. Zweitens, das Land Tirol hat am Tag bevor wir nach </p>
+                  <p>Paris gefahren haben - [sind], den Beschluss gefasst, das öffentliche Eigentum zu verpfänden gegen Lebensmittel. </p>
+                  <p>Ich habe dem Ernährungsdirektor gesagt, ich werde es in Wien besprechen.</p>
+                  <p>Bei dieser Gelegenheit habe ich ein Geschäft mit der Berner Regierung gemacht. </p>
+                  <p><pb facs="krp-0149_s01-0004"/>Sie gibt uns gegen 13 Monate Kredit, [...] 8.200 Tonnen Lebensmittel verkauft: </p>
+                  <p>Brotmehl, Maisgries und der Rest Hülsenfrüchte - zu Preisen, die sicherlich nicht hoch sind. </p>
+                  <p>(1.500 Tonnen Mehl, 2.000 Tonnen Maisgries, mehr [als] 100 Waggons Hülsenfrüchte). [Der Kredit beträgt] </p>
+                  <p>6 ½ Millionen Schweizer Franken gegen Deckung [durch einen] Wechsel, der vom Staatsamt für Finanzen ausgestellt und von D[...] und der </p>
+                  <p>KGV [Kriegsgetreideverwaltung] akzeptiert wird. </p>
+                  <p>Die ersten hundert Waggons gehen mit Schweizer Waggons herein, der Rest wird [von] uns transportiert werden. </p>
+                  <p>Die Lebensmittel können allenfalls als Zubußen oder Ergänzung der gekürzten Mehlquote verwendet werden.</p>
+                  <p>Wenn wir den amerikanischen Kredit bekommen, so sind wir für einige Zeit außer Wasser.</p>
+                  <p>Es ist uns nicht angenehm gewesen, dass hier in Wien große Kundgebungen in der Anschlussfrage waren.</p>
+                  <p>Die Ankerbrotfabrik-Affäre [wurde] insbesondere in der Schweiz sehr ungünstig besprochen: Die Wiener Regierung [stehe] unter dem Terror der Arbeiterschaft – </p>
+                  <p>Bolschewismus. Auch [in] Paris [wurde gesagt]: Ihr werdet nur Kredite bekommen, wenn Ihr Ruhe und Ordnung in Wien habt und die Regierung Autorität zeigt.</p>
+                  <p>[Zur] Salzburger Länderkonferenz: Wir gehen nach Paris, um Kredite für <hi rend="#u">einen</hi> Staat zu bekommen, die Länder verkündigen die Souveränität </p>
+                  <p>und gehen einen Staat auf Kündigung ein.</p>
+                  <p>Renner: [Eine] Berichterstattung im Parlament [ist] nicht notwendig, [nur ein] zusammenfassendes Communiqué der beiden Staatssekretäre.</p>
+                  <p>Deutsch: Das Communiqué könnte auch einige Detailangaben enthalten. </p>
+                  <p>Wir wollen auf das Inland wirken und zugleich im Ausland keine Erschwerungen haben. </p>
+                  <p>Auf das Inland müssen wir wirken, um die Hoffnungsfreudigkeit zu heben. Wir haben für ein paar Wochen zu leben, andererseits dem Ausland gegenüber nur für </p>
+                  <p>ein paar Wochen. [Man sollte] die Schweizer Hilfe sehr unterstreichen.</p>
+                  <p>5 Uhr.</p>
+                  <p/>
+               </div>
+               <div n="2">
+                  <head>[KRP 149, 21. Februar 1920, Stenogramm Groß]</head>
+                  <p><pb facs="krp-0149_s02-0001"/>149.</p>
+                  <p>1.</p>
+                  <p>Tandler: </p>
+                  <p>[Ich] habe über Auftrag des Präsidenten und des Staatskanzlers am Montag nach Genf [zu] fahren zum internationalen Kinderhilfskongress, </p>
+                  <p>da sich diese Hilfe besonders auf österreichische Kinder bezieht.</p>
+                  <p>2.</p>
+                  <p>Reisch: </p>
+                  <p>Wir sind am Sonntag abend, [den] 1., nach Paris gefahren, waren Dienstag dort und haben erfahren, dass die Reparationskommissions-Sitzung am Freitag </p>
+                  <p>stattfindet. [Wir] wurden gebeten, bei den Mitgliedern der Reparation[skommission] keinen Besuch zu machen, da sie ein Richterkollegium ist und [sie] keinen privaten Verkehr </p>
+                  <p>wünschen. Dieser Wunsch ist durch den Chef über Wunsch von Manclere vermittelt [worden]. Der Vorsitzende ist ?Jonnont, </p>
+                  <p>welcher uns in der Privatwohnung empfing, aber [...] hat wegen Kompetenzkonflikten zwischen der Botschafterkonferenz und der Reparationskommission in </p>
+                  <p>Angelegenheit Österreichs. Am Freitag waren wir bei der Reparationskommission, haben dort unsere Lage geschildert und ich habe vier Punkte hervorgehoben und gebeten </p>
+                  <p>um deren Bewilligung: [1.)] Die Genehmigung des angebotenen Kredits von 6,5 Millionen holländischen Gulden seitens der holländischen Ausfuhrgesellschaft; dann</p>
+                  <p>[2.)] die Freigabe der ausländischen Wertpapiere, die verpfändet waren für den 48 Millionen-Dollar-Kredit; dann [3.)] die Freigabe eines Sicherstellungsdepots von 382 </p>
+                  <p>Millionen Kronen für Lebensmittelbezüge in Innsbruck für Italien deponiert, welches die Entente nicht verwenden kann infolge des Tiefstandes der Krone; </p>
+                  <p>und endlich [4.)] die Vorgenehmigung der Verpfändung des Tabakmonopols. Bezüglich des 6,5 Millionen-Kredits haben wir die schmerzlichste Enttäuschung </p>
+                  <p>erlebt, trotz dreimaliger Diskussion und obwohl klar [war], dass die Holländer uns ein Geschenk machen wollen, hat die Reparationskommission </p>
+                  <p>die Genehmigung nicht erteilt. Die altösterreichische Regierung hat unter Garantie der österreichisch-ungarischen Bank ein[en] Lebensmittelkredit von 16 Millionen holländischen Gulden [aufgenommen], </p>
+                  <p>welcher am 1. November '20 rückzahlbar ist. Die holländische Regierung hat uns nun nahegelegt, diesen Kredit vorzeitig zurückzuzahlen, es werde [uns] dann </p>
+                  <p>die Ausfuhrgesellschaft einen neuen Kredit von 6,5 [Millionen Gulden gewähren] zu 4 % und rückzahlbar erst bis die österreichische Krone in A[msterdam] 40 c. notiert, </p>
+                  <p>keinesfalls vor 1930. Die österreichisch-ungarische Bank ist in der Lage, diese Rückzahlung zu leisten und hat sich gegen Gewinnbeteiligung bereit erklärt, </p>
+                  <p>die Rückzahlung vorzunehmen. Die Kommission hat aber behauptet, die österreichisch-ungarische Bank müsse nach dem Friedensvertrag mit dem Tag der Unterzeichnung </p>
+                  <p>in Liquidation treten - es wird die Liquidation auf den Tag der Unterzeichnung zurückbezogen - sie könne daher die Zustimmung nicht geben, bevor sie sich nicht </p>
+                  <p>überzeugt habe, dass die österreichisch-ungarische Bank die sämtlichen Gläubiger befriedigen könne. In den ersten Äußerungen wurde die Sache so dargestellt, als ob </p>
+                  <p>die Notenbesitzer mit den Gläubigern der Bank auf einer Stufe rangieren. In unseren schriftlichen Auseinandersetzungen haben wir uns bemüht darzustellen, dass zwischen Gläubigern und </p>
+                  <p>Notenbesitzern ein großer Unterschied bestehe und die Notenbesitzer niemals einen Anspruch auf Barzahlung hatten. Sie haben daher auf der Frage der </p>
+                  <p>Notenbesitzer nicht mehr bestanden, aber behauptet, sie könnten die Zustimmung nur geben, wenn der von ihnen entsandte Liquidator der österreichisch-ungarischen Bank einen Bericht </p>
+                  <p>über die wirtschaftliche Lage der Bank erstattet haben wird. Bis dahin können sie die Zustimmung nicht geben.</p>
+                  <p>Bezüglich der Freigabe der ausländischen Wertpapiere hatten wir einen Teilerfolg. [Wir bekamen eine] schriftliche Erledigung dahin, dass sie uns die amerikanischen, nicht-sequestrieren, </p>
+                  <p>sowie die neutralen Wertpapiere zur Verwertung freigeben. Ausgeschlossen bleiben französische und englische Wertpapiere, dann alle in Frankreich und England </p>
+                  <p>deponierten Wertpapiere, weil die unter [einem] Sequester stehen, dann die in Amerika befindlichen Wertpapiere von Österreichern, soweit sie sequestriert sind. </p>
+                  <p>Das ist aber nur bei einigen kleinen Posten durchgeführt, die anderen dagegen dürfen freigegeben werden. Wir haben uns mit dem Pariser Haus [der Firma] </p>
+                  <p>Morgan &amp; Harries in Verbindung gesetzt, der amerikanische Vertreter hat sich nach Amerika gewendet, [um] diese Freigabe, </p>
+                  <p>die über den Wortlaut der schriftlichen Entscheidung hinausgeht, sicherzustellen. Wieviel diese ausländischen Wertpapiere ausmachen, können wir nicht sagen, weil erst die </p>
+                  <p>[...] nach den neuen Kontingenten durchgeführt wird. Es ist nach den ersten Überschlägen höchstens einige [...] Dollar. Wir</p>
+                  <p><pb facs="krp-0149_s02-0002"/>haben auch die Wertpapiere noch nicht einberufen und wissen nicht, welche Expendierungen geschehen. Es sind </p>
+                  <p>Aufträge an das Staatsamt für Finanzen gegeben, alle Vorbereitungen zur [...] zu veranlassen. Ein Beamter wird die Verhandlungen mit [dem Haus] Morg[an &amp; Harries] </p>
+                  <p>fortsetzen. Dieses hat erklärt, dass sein Vertreter von Amerika nach Europa unterwegs sei und am Montag in Paris eintreffen werde. </p>
+                  <p>M[organ &amp; Harries] hat erklärt, es wird sich mit der Verwertung der ausländischen Wertpapiere beschäftigen, wenn es überhaupt noch in der Lage sei, für Österreich </p>
+                  <p>Interesse zu nehmen. Es wäre dazu geneigt, wisse aber nicht, ob es das noch auf sich nehmen könne, da es schon der [...] </p>
+                  <p>von England und der neutralen Staaten sei. Es scheint sich aber auch für die übrigen österreichischen Angelegenheiten, besonders die Wasserkraft zu </p>
+                  <p>interessieren. Bezüglich der Freigabe des Sicherstellungsdepots in Innsbruck konnte sich die Kommission noch zu keiner Entscheidung </p>
+                  <p>herbeilassen und hat eine schriftliche Erledigung in Aussicht gestellt.</p>
+                  <p>Das Tabakmonopol - die Verhandlungen waren unter einem besonderen Unstern. Bei der [Ab]reise waren zwei Gruppen, die Creditanstalt </p>
+                  <p>und die Banque de Paris und der Wiener Bankverein mit der Gruppe Union parisienne. In Paris fand ich die </p>
+                  <p>Nachricht vor, dass die Amerikaner in beiden Gruppen zurückgetreten sind. Die Amerikaner sind eine [...] Gesellschaft, sie stehen auf dem </p>
+                  <p>Standpunkt, dass es eine große Gnade ist, wenn sie sich für Europa interessieren und springen mit den europäischen Interessenten nicht sehr freundlich um. </p>
+                  <p>Infolge[dessen] musste an die Neubildung der beiden Gruppen geschritten werden und das hat sich dadurch verzögert, dass die Herren mündliche Besprechungen in Paris wollten, aus </p>
+                  <p>London Vertreter nach Paris berufen werden mussten. Im Verein mit b. d. P. [Banque de Paris] ist es gelungen, das Bedenken zu zerstreuen und er </p>
+                  <p>beschloss von London nach Amerika zu kabeln und wird am Dienstag nach Paris zurückkommen und mitteilen, ob er sich weiter </p>
+                  <p>beteiligt. Die Banque de Paris ist dem Geschäft sehr wohlwollend und ich glaube, dass das Geschäft zustande kommen wird. Die U. p. [Union Parisienne] hat </p>
+                  <p>sich zu einer anderen Kombination des Geschäftes entschlossen, sie will nicht einen Vorschuss von 30 Millionen holländischen Gulden auszahlen und unrückzahlbar </p>
+                  <p>geben, weil das Risiko dazu zu groß ist, sie muss in ausländischer Valuta zahlen und bekommt dafür Kronen. Sie wollen das Geschäft auf der </p>
+                  <p>Basis machen, dass sie ein Darlehen von 15 Millionen holländischen Gulden, sichergestellt auf den Tabak-?Realitäten [geben], um [eine] Obligation darauf ausgeben zu können. </p>
+                  <p>Dafür [würden sie] aber in der Anteilnahme an den Geschäftserträgnissen einen größeren Teil einräumen. Die Kredit[zinsen] und Ansprüche der Kapitalisten sind </p>
+                  <p>derzeit außerordentlich hohe. Unter 9 und 10 % arbeitet heute weder Schweizer noch französisches Kapital und in amerikanischen - wird Taggeld </p>
+                  <p>bis zu 20 und 25 % -. Es würde nur auf der Basis von 6 % Zinsen und mindestens 8 % Minimaldividende </p>
+                  <p>für das Aktienkapital eine Beteiligung zu erreichen sein. Infolge der Umstellung der beiden Gruppen ist ein definitives Ergebnis über das Tabakgeschäft </p>
+                  <p>nicht zustande gekommen, es werden erst nächste Woche die Verhandlungen aufgenommen werden. Zwei Vertreter sind in Paris dazu zurück geblieben.</p>
+                  <p>Die Reparationskommission betrachtet das Tabakgeschäft mit scheelen Augen und rät davon ab. Sie hat [erklärt], ihre Konzession </p>
+                  <p>die bereits schriftlich mitgeteilt wurde nach Wien bleibt aufrecht erhalten, sie befreundet sich mit einer Verpachtung des Tabakmonopols – </p>
+                  <p>sieht es aber nicht gern. Zu einer ausdrücklichen Stellungnahme konnte es nicht kommen, da ein abschließendes Ergebnis der Verhandlungen nicht </p>
+                  <p>vorgelegt werden konnte.</p>
+                  <p>Wir haben bei der Reparationskommission darauf verwiesen, dass das nur Notauskunftsmittel sind, welche nicht auf die Dauer helfen können. </p>
+                  <p>Und bei allen diesen Sachen kommt es darauf hinaus, dass wir etwas von uns veräußern und dies [wird] auch bald ein Ende haben. Die ausländischen Wertpapiere </p>
+                  <p>reichen für drei Monate Lebensmittel, es müsse ein umfassendes Wirtschaftsprogramm für Österreich aufgestellt werden. Und diese Idee haben wir bei </p>
+                  <p>Ministerpräsident M[illerand] wiederholt. Dieser hat sie im Verein mit dem Generalsekretär Berthelot aufgegriffen und [uns] nahe gelegt, diese </p>
+                  <p>Gedanken bei der Botschafterkonferenz zu entwickeln. Das ist am Mittwoch Vormittag geschehen. Dort wurde dargelegt, dass Österreich </p>
+                  <p>mit solchen Mitteln nicht weiter wirtschaften könne und es sei - [sehr] im Interesse der Entente gelegen wäre, die Wiederaufrichtung des Wirtschaftslebens durch eine </p>
+                  <p>durchgreifende Kredithilfe zu ermöglichen. Aufgrund der Besprechung mit M[illerand] wurde auch der Hinweis gemacht, dass wir für diesen </p>
+                  <p><pb facs="krp-0149_s02-0003"/>Fall einsehen, wenn die Entente von ihren Rechten nach dem Friedensvertrag schon antizipativ Gebrauch macht und section autr[iche] </p>
+                  <p>unabhängig von der Inkraftsetzung des Friedensvertrages aktiviert wird, damit sie Einblick gewinne und in der Lage sei, die notwendigen </p>
+                  <p>Entscheidungen rascher zu treffen. Diese Idee wurde von allen Seiten aufgegriffen, nur hat sich eben der Kompetenzkonflikt daraus entwickelt. </p>
+                  <p>Es hat uns der Präsident J[onnont] von der Reparationskommission zu verstehen gegeben, dass diese Frage nicht vor die Botschafterkonferenz gehöre und hat es </p>
+                  <p>nahegelegt, das Verlangen auch bei der Reparationskommission zu unterbreiten. Das ist am Samstag geschehen und [unsere Vorschläge] sind dort wohlwollend </p>
+                  <p>angekommen. Der Vorschlag wurde dahin erweitert, dass an mich die Frage gestellt wurde, ob ich einverstanden sei, dass die Reparationskommission </p>
+                  <p>schon jetzt den Liquidator der österreichisch-ungarischen Bank ernenne und nach Wien entsende. Ich machte aufmerksam, dass dies vordringend nicht notwendig sei, </p>
+                  <p>da die Bank gemeinsam sei und mit Ungarn noch kein Frieden geschlossen wurde, ich habe aber schließlich das Einverständnis erklärt.</p>
+                  <p>Das ist im wesentlichen das Ergebnis der speziellen Verhandlungen. Die anderen Verhandlungen überlasse ich dem Bericht Loewenfeld-Ruß'.</p>
+                  <p>Renner: </p>
+                  <p>Welche unmittelbar notwendigen Verfügungen ergeben sich für das Kabinett und das Staatsamt für Finanzen? Es wäre Frage der section </p>
+                  <p>autr[iche], dann der Bestellung des Liquidators für die österreichisch-ungarische Bank. Sonst macht die geänderte Plattform für das Tabakgeschäft </p>
+                  <p>keine Veränderung im Gesetz notwendig.</p>
+                  <p>Reisch: </p>
+                  <p>Vorläufig noch nicht[s], vielleicht die Verlängerung des Termins, Einreichung des Verpfändungsrechtes auf den Liegenschaften.</p>
+                  <p>Die Freigabe der Wertpapiere ist an einige Bedingungen geknüpft worden und zwar insbesondere daran, dass unser Gesetz vom Juli '19 </p>
+                  <p>über die Verpfändung der Wälder durchgeführt wird - und dabei ist auch der Fehler unterlaufen, dass gefordert wird die Verpfändung der Salinen, </p>
+                  <p>wovon bisher nicht die Rede war. Bei der Schlusskonferenz sind feierliche Erklärungen seitens des amerikanischen und des englischen Delegierten über die </p>
+                  <p>in Aussicht gestellten Kredite - offizielle Erklärungen der Regierungen abgegeben worden. Amerika wird von dem Kredit [über] 50 Millionen Dollar </p>
+                  <p>Österreich - den größeren Teil Österreich seiner Notlage wegen zuwenden. England will - [beabsichtigt], 50 % des Kredits, den Amerika geben wird, </p>
+                  <p>ihrerseits zu geben, aber nicht mehr als 25 Millionen Dollar für Osteuropa mit besonderer Berücksichtigung Österreichs. Aber beides ist abhängig </p>
+                  <p>von dem Gang der parlamentarischen Verhältnisse, die besonders in Amerika nicht günstig liegen.</p>
+                  <p>Loewenfeld-Ruß: </p>
+                  <p>Der ursprüngliche Zweck der Reise war: Amerika beabsichtigt, uns einen Kredit zu geben, nachdem wir uns [aber] dessen bewusst waren, </p>
+                  <p>dass die Bewilligung noch eine Zeit dauern wird, wir aber nur für kurze Zeit Lebensmittel hatten, sind wir [zu dem Schluss gekommen], besonders nach Paris zu fahren, um </p>
+                  <p>ein Abreißen der Lebensmittelversorgung zu verhindern, aber auch um zu drücken, dass der amerikanische Kredit möglichst bald gewährt wird.</p>
+                  <p>Die Erklärungen von England und Amerika sind uns offiziell abgegeben worden. Neben den offiziellen Verhandlungen war die Haupttätigkeit eigentlich die, </p>
+                  <p>dass wir hinter den Kulissen mit allen möglichen Vertretern io. [inoffiziell] verhandelt haben und dabei viel mehr gesagt wurde als offiziell. Das gilt auch </p>
+                  <p>hinsichtlich des amerikanischen Kredites. Der englische und der amerikanische Vertreter haben gesagt, dass ein Warenkredit gedacht sei, wobei von den 50 Millionen </p>
+                  <p>der größere Teil auf Österreich entfallen soll. Ziffern wurden nicht genannt, wir sind zusammengespannt mit Polen und Armenien. England </p>
+                  <p>will die Hälfte des amerikanischen Kredites dazu zuschießen. England bemüht sich, um andere Staaten, besonders neutrale heranzuziehen für eine große </p>
+                  <p>Kredit-[...], so dass wir noch weitere Kredite zu bekommen hätten. Der Schweizer Bundespräsident hat davon Kenntnis und die Schweiz wird daran teilnehmen. </p>
+                  <p>Goode reist diese Woche nach Spanien und Holland, um dort mitzuwirken an dem Beitritt dieser beiden Staaten. Es soll sich </p>
+                  <p><pb facs="krp-0149_s02-0004"/>hauptsächlich um Warenkredite handeln, dass jeder Staat aufgrund des Kredites Lebensmittel und Rohstoffe liefern wird. </p>
+                  <p>Amerika Mehl und Fett, England Rohstoffe und die Übernahme der Transportkosten. Die Rohstoff-Frage wurde wiederholt erörtert. </p>
+                  <p>Diese Rohstoffkreditfrage hängt mit diesem Additional-Kredit zusammen, er soll die Warenlieferung decken. </p>
+                  <p>Gedacht ist, dass in Paris eine neue Kommission, [eine] Art Kreditkommission mit Vertretern der neutralen Staaten geschaffen wird und in jedem Staat </p>
+                  <p>eine besondere kleine Kommission zur Verwendung und Kontrolle der Kredite eingerichtet werden soll. Gleichzeitig waren Adler und ?Landsberger in Paris und </p>
+                  <p>haben dort gesagt, wir brauchten überhaupt keine Rohstoffkredite. Ich musste daher neuerlich Aufklärungen geben. Wir haben die Rohstoff-</p>
+                  <p>liste noch weiter ergänzt. Nun, diese Kreditgewährung Amerikas - von der kann man nicht sagen, wie lange sie dauern wird. </p>
+                  <p>[Man sagte], es ist möglich, dass der Kredit noch während unserer Anwesenheit in Paris bewilligt wird, es kann aber noch Wochen dauern. Es musste daher </p>
+                  <p>für die Zwischenzeit Vorsorge getroffen werden. Die Vorschläge Reischs sind nur zum Teil bewilligt worden, [aber] bis zu einem Teil ist das gelungen.</p>
+                  <p>Wieweit das publiziert werden kann, möchte ich mir noch die Schlussfassung vorbehalten. Wenn veröffentlicht wird, dass </p>
+                  <p>es gelungen ist, für einige Zeit Vorsorge zu treffen und das im Ausland bekannt wird, so wird der Eifer, die großen Kredite </p>
+                  <p>zu beschleunigen, erlahmen. Andererseits möchte ich doch nicht einen Misserfolg dieser Reise in der öffentlichen Meinung, besonders des Auslandes, hervortreten lassen, </p>
+                  <p>weil die Hebung unseres Kurses doch auf diese offiziellen Erklärungen, die in Paris abgegeben wurden wegen der Kredite, zurückzuführen sind und das </p>
+                  <p>durch einen Misserfolg wieder aufgehoben werden könnte.</p>
+                  <p>Einen geringen Erfolg konnte ich erzielen in der Zuckerfrage. Hier bekommen wir von den Tschechen nicht genug wegen des Verkaufs </p>
+                  <p>nach Frankreich. Ich habe diese Frage in der Reparationskommission nicht vorgebracht, weil mich [...] an die französische Regierung gewiesen hat. </p>
+                  <p>Der Sektionschef Seydoux - [ich] habe mich an das Ernährungsministerium gewendet, habe dort aber eine Ablehnung erfahren. Sie haben ihn gekauft, weil </p>
+                  <p>sie ihn selbst brauchen und nirgends so billig bekommen. In Frankreich kostet er 3,20 Fr. - 65 Kronen. Wenn sie in </p>
+                  <p>Amerika kaufen, würde er 150 Kronen kosten. Wir haben erklärt, dass wir noch schlechter stehen und ihn aus dem Ausland kaufen sollen. Er meinte, </p>
+                  <p>wenn der amerikanische Kredit bewilligt wird, können wir gewisse Zuckermengen auf den Kredit bekommen. In der Zuckerfrage konnte nichts erreicht </p>
+                  <p>werden und [wir] müssen mit den Tschechen versuchen, weitere Mengen zu bekommen oder auf den amerikanischen Kredit warten.</p>
+                  <p>Die zweite Frage war die Frage des Kunstdüngers aus Algier. Es wurde Entgegenkommen zugesagt, aber [eine] </p>
+                  <p>Vereinbarung mit der alg[erischen] Gesellschaft wurde vorbehalten. Bisher ist keine Entscheidung gefällt. Der Dünger wird bezahlt werden müssen, wir können </p>
+                  <p>nur aufgrund der Werte, welche wir frei bekommen, diesen Dünger bezahlen. Die Franzosen haben über die Beteiligung an diesen Krediten kein Wort </p>
+                  <p>verloren. Die Phosphate sind nicht staatlich bewirtschaftet, es muss also die Gesellschaft verkaufen und [diese] bezahlt werden - 10 Millionen Francs. </p>
+                  <p>Ob das noch für den Frühjahrsanbau möglich sein wird, ist die Frage.</p>
+                  <p>Wir haben von Paris mit Rücksicht darauf, dass gewisse Werte freigegeben wurden und wir über kleine Summen noch verfügen, </p>
+                  <p>zunächst Verhandlungen mit der Getreidefirma Dreyfus angeknüpft. Es wurden aber Schwierigkeiten wegen der Verfrachtung gemacht. </p>
+                  <p>Reif war in London, wir haben die Geschäfte von P[aris] aus mit holländischen Firmen gemacht. Wir haben 20.000 Tonnen Weizen </p>
+                  <p>so gekauft, dass ein Anschluss an unsere Ernährung sicher gestellt ist. [Er wird geliefert via] Rotterdam - Mainz, wobei Vereinbarungen mit der belgischen </p>
+                  <p>Regierung getroffen wurden, dass wir tauschen können, wenn gewisse Mengen nicht rechtzeitig eintreffen. Die 20.000 [Tonnen] Weizen müssen </p>
+                  <p>gezahlt werden, einen Teil haben wir schon, ein Teil [...] aus den Effektenverkäufen fließen. Außerdem wurden gesichert 10.000 Tonnen Mais, </p>
+                  <p><pb facs="krp-0149_s02-0005"/>dafür Kredit bis zu einem Jahr; außerdem 20.000 [Tonnen] Roggen gegen [eine] Anzahlung von 20 % und der Stundung auf ein Jahr für den Rest; </p>
+                  <p>[außerdem] 20.000 [Tonnen] Kartoffeln gegen Kredit auf ein Jahr. Dadurch ist ein Monatsbedarf gedeckt und nachdem wir weiter gedeckt sind als </p>
+                  <p>angegeben wurde, dürften März und April gedeckt sein. Außerdem ich beabsichtige, die Mehlquote wieder herzustellen, weil sie zu Unruhen Anlass gibt.</p>
+                  <p>Aufgrund von Verhandlungen mit England werden wir wahrscheinlich auch noch Hafermehl bekommen. Aufgrund von Verhandlungen mit dem englischen Delegierten </p>
+                  <p>haben wir auch gegen Kredit eine Fettmenge zugesichert. Der Kredit geht aus dem Relief Fond für 260.000 </p>
+                  <p>Pfund Sterling = 1.200 Tonnen Fett verschiedener Art, was die Fettversorgung für einige Wochen erleichtert. Und durch Good[e] [bekommen wir] </p>
+                  <p>50.000 Kisten Kondensmilch gegen einen unbestimmten Kredit. Außerdem [haben wir] noch 15.000 Kisten gegen Kredit bis 30 Jahre </p>
+                  <p>in Paris gekauft. Außerdem haben wir mit einer englischen Firma von Corn beaf [Corned Beef ein Übereinkommen geschlossen], das nicht [...] aber Sicherheit gibt. Er hat sich </p>
+                  <p>bereit erklärt, nach Wien Cb [Corned Beef] zu bringen, ohne dass wir es kaufen. Wir können es nach Belieben übernehmen, wenn wir Geld dafür haben, </p>
+                  <p>bzw. wir einen 3- bis 6-monatigen Kredit bekommen. Das Fleisch ist sehr teuer, soll aber als Reserve dienen. Es kostet in </p>
+                  <p>englischem Geld 93 sh, 6 p, uns 172 Kronen pro Kilogramm.</p>
+                  <p>Durch diese Verhandlungen ist es gelungen, was Getreide anlangt, für mindestens ein Monat vorzusorgen und gewisse Möglichkeiten </p>
+                  <p>der Versorgung mit Fett, Kondensmilch und Fleisch zu bekommen. Reif und Lemberger von der Einfuhrgesellschaft haben täglich Verhandlungen </p>
+                  <p>mit allen möglichen Verhandlungen [sic] gehabt und wir hätten kaufen können, soviel wir wollten, wenn wir Geld gehabt hätten und der Kronenkurs ein günstiger wäre. </p>
+                  <p>An Lebensmitteln fehlt es nicht. Privatkredite sind von diesen Firmen nicht zu bekommen. Über unsere Veranlassung wurde - [ist] in Paris über Papier </p>
+                  <p>verhandelt worden in der Richtung, um uns Francs zu verschaffen. Dieses Geschäft wird wahrscheinlich zustande kommen, 50 Waggon Rotationspapier und </p>
+                  <p>50 Wagen Kommerzpapier monatlich an die Vereinigung der französischen Presse. Das Geschäft soll sich auf mindestens vier Monate </p>
+                  <p>erstrecken, die österreichische Industrie ist sehr kurzsichtig vorgegangen. Die 50 Waggons nehmen sie sehr gern, aber es ist ein Interesse der </p>
+                  <p>österreichischen Industrie, es anzubringen, umso mehr als sie einen kolossalen Preis bekommt, statt 7 Kronen in Wien - 1, 60 Francs </p>
+                  <p>das Kilogramm, das ist 32 Kronen. Die französische Zeitungsindustrie würde jedes Quantum, welches ihr verkauft würde, übernehmen. Sie liefern </p>
+                  <p>außerdem die Kohlen. Die französischen Zeitungen bekommen [das] 1½ - 2-fache Kohlen entsprechend dem Papier. Der Vertrag würde jedenfalls sehr günstig sein.</p>
+                  <p>Wir haben mit einer Reihe von Herren über verschiedene wirtschaftliche Projekte gesprochen und besonders die Engländer haben uns zusammengebracht mit wichtigen Amerikanern, </p>
+                  <p>speziell [für] ein großes Projekt, das auf den Verladungsverkehr Bezug hat.</p>
+                  <p>Unsere Gesandtschaft in Paris entspricht den heutigen Verhältnissen und Bedürfnissen nicht. Wir hätten viel[es] rascher erledigen können, wenn die </p>
+                  <p>Gesandtschaft sich früher wirtschaftlich betätigt hätte und wir nicht alles erst selbst hätten anfangen müssen.</p>
+                  <p>Auf der Rückfahrt [waren wir] in Bern, um dem Bundespräsidenten den Dank auszusprechen für die Unterstützung der Schweiz für unsere - [für die] Hilfeleistung. </p>
+                  <p>[Wir wurden von] Präsident M[otta] denkbar herzlich empfangen. Es war rührend, mit welcher aufrichtigen Herzlichkeit er mit uns gesprochen hat, ebenso die anderen Funktionäre, </p>
+                  <p>an die wir gewiesen wurden. Der Präsident hat gebeten, den Kanzler bestens zu grüßen. Über Wunsch des Landes Tirol habe ich beim </p>
+                  <p>Ernährungsdirektor vorgesprochen, der wiederholt großes Entgegenkommen gezeigt hat. Die Tiroler haben zwei Geschäfte gemacht, eines von längerer ?Weiterung, </p>
+                  <p>aus dem sie 2 Millionen Franken schulden - der Staat hat die Garantie übernommen. Und dann ein zweites: Das Land Tirol hat am Tag vor der Abreise </p>
+                  <p>einen Beschluss gefasst, womit es das öffentliche Eigentum des Landes Tirol verpfändet hat für Lebensmittellieferungen aus der Schweiz. </p>
+                  <p><pb facs="krp-0149_s02-0006"/>Ich erhielt Nachricht davon durch ein Telegramm, wusste aber nicht damit etwas anzufangen, weil ich nicht wusste, ob der Beschluss legal ist, </p>
+                  <p>ob nicht die Zustimmung der Regierung erforderlich ist und ob die Verpfändung international möglich ist wegen der Beschlagnahme alles österreichischen Eigentums </p>
+                  <p>für die Wiedergutmachung. Es sind 100 Waggons Mehl gekauft [worden], davon sind 50 bereits im Rollen und der Ernährungsdirektor </p>
+                  <p>hat von der Einbringung einer Hypothek nicht gesprochen, [er] begnügt sich mit der moralischen Hypothek Tirols. [Ich] habe versprochen, es in Wien </p>
+                  <p>zu besprechen, sollte hier keine Einwendung erhoben werden und begnügt er sich mit dem Beschluss, so ist alles in Ordnung. Wird ein </p>
+                  <p>Einspruch erhoben, so werden wir die Bezahlung dafür in einem Jahr auf uns nehmen. Ich weiß nicht, ob der Beschluss von Tirol vorgelegt </p>
+                  <p>wurde. Ich glaube, es wird keine Weiterungen haben, denn wenn sich niemand dagegen wehrt, wird sich die Berner Regierung mit der moralischen </p>
+                  <p>Hypothek zufrieden stellen. Ich werde an Keppeli schreiben, dass wir das übernehmen.</p>
+                  <p>Bei dieser Gelegenheit habe ich ein weiteres Geschäft gemacht: Mit [einem] Kredit [bis] 31. März </p>
+                  <p>8.121 Tonnen Lebensmittel verkauft: Brotmehl 1.500 Tonnen, 2.000 Tonnen Maisgries, den Rest Hülsen[früchte], Bohnen, Erbsen. </p>
+                  <p>Dieser Kredit beträgt 6,5 Millionen Schweizer Franken gegen einfachen Wechsel, der vom österreichischen Staatsamt für Finanzen ausgestellt </p>
+                  <p>und von der KGV [Kriegsgetreideverwaltung] akzeptiert ist. Ich habe das akzeptiert. Es ist ein einjähriger Kredit und es sind keine weitere </p>
+                  <p>Sicherheiten gefordert worden als dass die Schweizer Bundesregierung verlangt hat, dass österreichische Schatzscheine bei einer Bank </p>
+                  <p>hinterlegt werden müssen. Die Preise sind überaus günstig. Das Übereinkommen wurde direkt unterschrieben. Der Anfang geht mit </p>
+                  <p>Schweizer Waggons herein, den Rest müssen wir durch eigene Waggons hereinholen lassen. Es sind das Lebensmittel, welche als </p>
+                  <p>Zubuße zur Aufbesserung der gekürzten Mehlration verwendet werden können.</p>
+                  <p>Wenn wir den amerikanischen Kredit bekommen, so sind wir für einige Zeit aus dem Wasser. Aber wir haben gesagt, wir </p>
+                  <p>wollen das nicht mehr und wenn der a[merikanische] und die anderen Kredite zustande kommen und die Leute selbst in die Hand nehmen die Rohstoff-</p>
+                  <p>lieferungen, so ist damit ein gewisser Ausblick in die Zukunft gegeben.</p>
+                  <p>Allgemeine Bemerkungen über den Aufenthalt in Paris und die Schwierigkeit der Verhandlungen. Die Franzosen sind uns immer mit </p>
+                  <p>großer Freundlichkeit entgegen gekommen, ebenso die Amerikaner, aber sie sind misstrauisch gegen uns und dieses Misstrauen ist vom Hinterland aus </p>
+                  <p>genährt worden. Es ist uns nicht angenehm gewesen, dass in der Zeit der Verhandlungen in Wien große Kundgebungen in der Anschlussfrage waren und </p>
+                  <p>die französischen Zeitungen haben immer wieder darauf hingewiesen. Ebenso [wirkte] die Rede des Staatskanzlers in Baden, welche im </p>
+                  <p>Eclair wiedergegeben wurde und eine Kontroverse in der Presse ausgelöst hat, die Österreicher betteln und betreiben Anschlusspolitik. </p>
+                  <p>Es war nicht leicht, in den privaten Besprechungen ist das oft vorgehalten worden. Ich habe mir erst heute einen Bericht über die Ankerbrotfabrik </p>
+                  <p>geben lassen, aber im Ausland hat man [sich] eine ganz falsche Auffassung gemacht. Das Ausland schmiedet eine Waffe gegen uns besonders in der Schweiz. </p>
+                  <p>[Es hieß], die Wiener Regierung stehe unter dem Terror der Arbeiterschaft und gebe bolschewistischen Tendenzen nach. Es wurde auch in Paris gesagt: Ihr wollt </p>
+                  <p>private Kredite, aber die bekommt Ihr nur gegen [eine] Garantie der Ordnung und staatlichen Autorität im Land. Es liegt mir fern, der Regierung einen </p>
+                  <p>Vorwurf zu erheben. Die Gesandtschaft bekommt keine Wiener Zeitungen, aber die Telegramme, welche hinausgehen, sind entsprechend aufgemacht.</p>
+                  <p>Auch die Salzburger Länderkonferenz hat ungünstig gewirkt. Wir wollen Kredite für den Staat und es wird hinaus telegrafiert, dass </p>
+                  <p>die Länder ihre Souveränität betonen und [erklären], einen Staat auf Kündigung einzugehen.</p>
+                  <p><pb facs="krp-0149_s02-0007"/>Renner: </p>
+                  <p>Ich glaube, eine Berichterstattung im Parlament selbst ist nicht angezeigt, es ist nur ein Kommuniqué notwendig. </p>
+                  <p>Die beiden Staatssekretäre sollen ein solches abfassen, welches nicht zu sehr ins Detail geht.</p>
+                  <p>Deutsch: </p>
+                  <p>Das K[ommuniqué] könnte schon einige Angaben über Details enthalten, welche die Glaubwürdigkeit des Berichtes bekräftigen. Wir haben zu – </p>
+                  <p>wir wollen auf das Inland wirken und im Ausland keine Erschwerung haben. Auf das Inland müssen wir wirken, die Hoffnungsfreudigkeit beleben, </p>
+                  <p>dem Ausland sagen, wir haben zu leben, aber nur auf einige Wochen. Ich möchte nicht, dass das K[ommuniqué] so hoffnungslos ist, denn nichts wirkt</p>
+                  <p>depr[imierender als] wenn man wieder liest, es ist ohnedies nichts. Hoffungsfreudig, aber Hilfe nur für kurze Zeit. Das Zweite wäre, dass </p>
+                  <p>man die Schweizer Hilfe sehr unterstreicht, die freundliche Gesinnung wirkt hier sehr.</p>
+               </div>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

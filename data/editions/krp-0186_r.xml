@@ -1,0 +1,576 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href='http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:acdh="https://vocabs.acdh.oeaw.ac.at/schema#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xml:lang="de">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="a" type="main" n="0186">Kabinettsprotokoll Nr. 186 vom 28. Mai 1920</title>
+            <title level="m" type="main" n="01">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <title level="m" type="sub" n="">Renner III (17. Oktober 1919 – 7. Juli 1920)</title>
+            <meeting>
+               <placeName key="https://d-nb.info/gnd/4066009-6">Wien</placeName>
+               <orgName key="https://d-nb.info/gnd/5162749-8">Kabinettsrat</orgName>
+               <date when-iso="1920-05-28"/>
+            </meeting>
+            <editor>
+               <persName key="https://d-nb.info/gnd/122481836"
+                         role="hasCreator"
+                         xml:id="hwohnout">
+                  <forename>Helmut</forename>
+                  <surname>Wohnout</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</affiliation>
+               <idno type="ORCID">0000-0002-3864-9839</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/120789825"
+                         role="hasCreator"
+                         xml:id="tolechowski">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0003-3291-6876</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/131679384"
+                         role="hasCreator"
+                         xml:id="rlein">
+                  <forename>Richard</forename>
+                  <surname>Lein</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0002-7502-0503</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="aholzer">
+                  <forename>Anna</forename>
+                  <surname>Holzer</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0005-3560-3500</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="dsoelkner">
+                  <forename>Dominik</forename>
+                  <surname>Sölkner</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-9895-7212</idno>
+            </editor>
+            <editor>
+               <persName role="hasContributor" xml:id="ischotzko">
+                  <forename>Ina</forename>
+                  <surname>Schotzko</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-5210-3713</idno>
+            </editor>
+            <funder n="1">
+               <orgName key="https://d-nb.info/gnd/2054142-9" role="hasFunder">Österreichischer Wissenschaftsfonds FWF</orgName>
+               <idno type="project">PAT1495024</idno>
+               <title type="project">Die Protokolle des österreichischen Kabinettsrates 1919–1920</title>
+            </funder>
+            <respStmt>
+               <resp>Projektverantwortung</resp>
+               <orgName key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Projektleitung</resp>
+               <persName key="https://d-nb.info/gnd/120789825" role="hasPrincipalInvestigator">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+                  <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+                  <idno type="ORCID">0000-0003-3291-6876</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Nationaler Forschungspartner</resp>
+               <orgName key="https://d-nb.info/gnd/1123037736" role="hasEnabler">Austrian Centre for Digital Humanities</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Digitalisierung der gedruckten Quellen</resp>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>TEI-Datenmodellierung</resp>
+               <persName role="hasContributor" xml:id="tfruehwirth">
+                  <forename>Timo</forename>
+                  <surname>Frühwirth</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-3997-5193</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technische Supervision</resp>
+               <persName key="https://d-nb.info/gnd/1043833846"
+                         role="hasContributor"
+                         xml:id="pandorfer">
+                  <forename>Peter</forename>
+                  <surname>Andorfer</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-9575-9372</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technisches Consulting und Vorbereitung der Druckausgabe</resp>
+               <persName key="https://d-nb.info/gnd/13281899X"
+                         role="hasContributor"
+                         xml:id="skurz">
+                  <forename>Stephan</forename>
+                  <surname>Kurz</surname>
+                  <affiliation key="https://d-nb.info/gnd/1202798799">Institut für die Erforschung der Habsburgermonarchie und des Balkanraumes</affiliation>
+                  <idno type="ORCID">0000-0003-2546-2570</idno>
+               </persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher key="https://d-nb.info/gnd/1001454-8">Österreichische Akademie der Wissenschaften</publisher>
+            <date when="2028"/>
+            <availability status="free">
+               <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">Lizenziert unter CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/deed.de)</licence>
+            </availability>
+            <idno type="ISBN_Print"/>
+            <idno type="ISBN_Part_epub"/>
+            <idno type="ISBN_Digital"/>
+            <idno type="DOI"/>
+            <idno type="DOI_zenodo"/>
+            <idno type="ebook_ID"/>
+         </publicationStmt>
+         <seriesStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="m" type="main">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <respStmt>
+               <resp>Bearbeitung und Herausgeberschaft</resp>
+               <orgName key="https://d-nb.info/gnd/2024703-5">Universität Wien</orgName>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+         </seriesStmt>
+         <notesStmt>
+            <note>Diese TEI-XML-Datei ist Grundlage für eine Druckausgabe der Edition.</note>
+            <relatedItem>
+               <biblStruct>
+                  <monogr>
+                     <imprint>
+                        <pubPlace key="https://d-nb.info/gnd/4066009-6">Wien</pubPlace>
+                        <publisher key="https://d-nb.info/gnd/2068748-5">Verlag der Österreichischen Akademie der Wissenschaften</publisher>
+                        <date when="2029"/>
+                     </imprint>
+                     <extent/>
+                  </monogr>
+                  <note>
+              <idno/>
+              <ptr/>
+            </note>
+                  <citedRange/>
+               </biblStruct>
+            </relatedItem>
+         </notesStmt>
+         <sourceDesc>
+            <bibl>Quellbestand: AT-OeStA/AdR MRang MR 1Rep KRP Kabinettsratsprotokolle, 1918-1920 (Teilbestand)<ref target="https://www.archivinformationssystem.at/detail.aspx?id=5465">https://www.archivinformationssystem.at/detail.aspx?id=5465</ref>
+            </bibl>
+            <msDesc>
+               <msIdentifier>
+                  <institution key="https://d-nb.info/gnd/37748-X" role="hasOwner">AT-OeStA Österreichisches Staatsarchiv (Archiv (ÖStA))</institution>
+                  <repository key="https://d-nb.info/gnd/1601181-8">AT-OeStA/AdR Archiv der Republik, 1918- (Abteilung)</repository>
+                  <collection>AT-OeStA/AdR MRang MR 1Rep Ministerrat 1. Republik, 1918 - 1938 (Bestand)</collection>
+                  <idno>AT-OeStA_AdR-MRang-MR-1.-Rep.-KRP-186</idno>
+               </msIdentifier>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <abstract>
+            <p>
+          <!--to be generated-->
+        </p>
+         </abstract>
+      </profileDesc>
+      <encodingDesc>
+         <styleDefDecl scheme="css"/>
+         <tagsDecl>
+            <rendition xml:id="b" scheme="css">font-weight:bold;</rendition>
+            <rendition xml:id="su" scheme="css">vertical-align:super;font-size:.7em;</rendition>
+            <rendition xml:id="s" scheme="css">text-decoration:line-through;</rendition>
+            <rendition xml:id="u" scheme="css">text-decoration:underline;</rendition>
+            <rendition xml:id="ow" scheme="css">text-decoration:line-through;text-decoration-style:double;</rendition>
+            <rendition xml:id="r" scheme="css">display:block;text-align:right;</rendition>
+            <rendition xml:id="letterspaced" scheme="css">letter-spacing:0.15em;</rendition>
+            <rendition xml:id="i" scheme="css">font-style:italic;</rendition>
+         </tagsDecl>
+         <editorialDecl>
+            <hyphenation>
+               <p>
+            <!--to be added-->
+          </p>
+            </hyphenation>
+            <correction>
+               <p>
+            <!--to be added-->
+          </p>
+            </correction>
+            <normalization>
+               <p>
+            <!--to be added-->
+          </p>
+            </normalization>
+            <punctuation>
+               <p>
+            <!--to be added-->
+          </p>
+            </punctuation>
+            <stdVals>
+               <p>
+            <!--to be added-->
+          </p>
+            </stdVals>
+            <p>
+          <!--to be added-->
+        </p>
+         </editorialDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#tfruehwirth" when-iso="2026-10-14">TEIGarage output upconverted with upconvert.xsl</change>
+         <change who="#tfruehwirth" when-iso="2026-10-14">TEI header populated with generate_tei_templates.py</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface/>
+   </facsimile>
+   <text>
+      <body>
+         <div xml:id="doc-krp-0186.xml">
+            <head type="dokument">
+               <title type="num">186.<note type="footnote">Das Protokoll trägt den Vermerk <hi rend="#i">Vertraulich!</hi></note>
+               </title>
+               <title type="desc">
+                  <pb facs="krp-0186_r-0001"/>
+                  <pb facs="krp-0186_r-0002"/>[Freitag] 1920-05-28</title>
+            </head>
+            <div type="dokumentkopf">
+               <div type="vorsitz">
+                  <head>Vorsitz:</head>
+                  <p>Renner</p>
+               </div>
+               <div type="anwesend">
+                  <head>Anwesend:</head>
+                  <p>Deutsch, Eisler, Eldersch, Ellenbogen, Fink, Glöckel, Hanusch, Loewenfeld-Russ, Mayr, Miklas, Paul, Reisch, Resch, Stöckler, Tandler, Waiss, Zerdik</p>
+               </div>
+               <div type="zugezogen">
+                  <head>Zugezogen:</head>
+                  <p>Froehlich</p>
+               </div>
+               <div type="schriftfuehrer">
+                  <head>Schriftführer:</head>
+                  <p>unbekannt</p>
+               </div>
+               <div type="dauer">
+                  <head>Dauer:</head>
+                  <p>21.00–01.45 Uhr</p>
+               </div>
+            </div>
+            <div type="komponenten">
+               <p>Reinschrift, Beilagen, geheimer Anhang, Konzept, stenographische Mitschrift, Entwurf der Tagesordnung, diverse Zusätze</p>
+            </div>
+            <div type="beilagen">
+               <head>Beilagen:</head>
+               <list>
+                  <item><ref target="#krp-0186_top01">Zu TOP 1</ref>: <ref target="#krp-0186_b01">Notiz zum Komitee zur Arbeitsversorgung ehemaliger Berufsmilitärgagisten</ref></item>
+                  <item><ref target="#krp-0186_top02">Zu TOP 2</ref>: <ref target="#krp-0186_b02">Antrag des Staatsamtes für Äußeres Zl. 25.823/6-1920 über die Titel der bei diplomatischen Vertretungen verwendeten effektiven Konsularbeamten</ref></item>
+                  <item><ref target="#krp-0186_top03">Zu TOP 3</ref>: <ref target="#krp-0186_b03">Resolution und Forderungen der Angestellten des Postsparkassenamtes</ref></item>
+                  <item><ref target="#krp-0186_top04">Zu TOP 4</ref>: <ref target="#krp-0186_b04">Bericht über die Bezüge der leitenden Funktionäre der Generaldirektion der staatlichen Industriewerke</ref></item>
+                  <item><ref target="#krp-0186_top05">Zu TOP 5</ref>: <ref target="#krp-0186_b05">Vortrag des Staatsamtes für Finanzen über die Aufbringung der Kosten für die Wiener Sektion der Reparationskommission</ref></item>
+                  <item><ref target="#krp-0186_top06">Zu TOP 6</ref>: <ref target="#krp-0186_b06">Vollzugsanweisung des Staatsamtes für Inneres und Unterricht über die Bemessung der Prüfungstaxen an Mittelschulen</ref></item>
+                  <item><ref target="#krp-0186_top08">Zu TOP 8</ref>: <ref target="#krp-0186_b07">Vortrag über den Staatsvertrag mit der tschechoslowakischen Republik über Staatsbürgerschafts und Minderheitsschutzfragen mit Erläuterungen</ref></item>
+                  <item><ref target="#krp-0186_top09">Zu TOP 9</ref>: <ref target="#krp-0186_b08">Bericht der Staatskanzlei Zl. 415/11 St.K. über die Behandlung der aufgrund des Kriegswirtschaftlichen Ermächtigungsgesetzes erlassenen Vollzugsanweisungen</ref></item>
+                  <item><ref target="#krp-0186_top12">Zu TOP 12</ref>: <ref target="#krp-0186_b09">Vortrag des Staatsamtes für Land- und Forstwirtschaft zu Zl. 11.459/1920 über eine 50%ige Ermäßigung des Eisenbahntarifs für Sömmerungsvieh</ref></item>
+                  <item><ref target="#krp-0186_top13">Zu TOP 13</ref>: <ref target="#krp-0186_b10">Vortrag des Staatsamtes für Land- und Forstwirtschaft Zl. 10.230 über die Verordnung der Steiermärkischen Landesregierung für die Lieferungspflicht des Wald- und Jagdbesitzes zur allgemeinen Fleischversorgung</ref></item>
+                  <item><ref target="#krp-0186_top14">Zu TOP 14</ref>: <ref target="#krp-0186_b11">Vortrag des Staatsamtes für Inneres und Unterricht über das Ansuchen der Kriegskreditanstalt für das südliche Kriegsgebiet in Klagenfurt um Bewilligung zur Führung des Staatswappens in der Firmenbezeichnung</ref></item>
+                  <item><ref target="#krp-0186_top15">Zu TOP 15</ref>: <ref target="#krp-0186_b12">Vortrag des Staatsamtes für soziale Verwaltung Zl. 15.092 über den Beitritt Österreichs zur Internationalen Arbeitsorganisation</ref></item>
+                  <item><ref target="#krp-0186_top16">Zu TOP 16</ref>: <ref target="#krp-0186_b13">Gesetzesentwurf der Staatsregierung über die Gewährung von Gebührenbefreiungen aus Anlass der Vereinheitlichung des Krankenkassenwesens mit erläuternden Bemerkungen</ref></item>
+                  <item><ref target="#krp-0186_top17">Zu TOP 17</ref>: <ref target="#krp-0186_b14">Vortrag des Staatsamtes für Verkehrswesen über die Ausgabe von Wohltätigkeitsmarken</ref></item>
+                  <item><ref target="#krp-0186_top18">Zu TOP 18</ref>: <ref target="#krp-0186_b15">Vorlage des Staatsamtes für Volksgesundheit der Novelle zur Regelung des Apothekerwesens</ref></item>
+               </list>
+            </div>
+            <div type="protokoll">
+               <pb facs="krp-0186_r-0003"/>
+               <div type="top" xml:id="krp-0186_top01">
+                  <head>
+                     <label>
+                        <num n="1">1.</num>
+                        <seg>Subventionierung des Komitees zur Arbeitsversorgung ehemaliger Berufsmilitärgagisten.</seg>
+                     </label>
+                  </head>
+                  <p>Unterstaatssekretär Dr. <hi rend="#letterspaced">Waiss</hi> erbittet die Entscheidung des Kabinettsrates über ein Einschreiten des Wirtschaftsverbandes der Militärgagisten und der Vorsitzenden des Komitees zur Arbeitsversorgung ehemaliger Berufsmilitärgagisten, Frau Vilma Schwager, um Gewährung einer Subvention von 200.000 K zur Finanzierung einer Reise der Frau Schwager nach Holland und den nordischen Staaten, welche den Zweck verfolgen soll, auch in diesen Ländern Erwerbsmöglichkeiten für ausscheidende österreichische Berufsmilitärgagisten ausfindig zu machen.</p>
+                  <p>Der Kabinettsrat beschließt, die Entscheidung dem Staatsamte für Finanzen zu überlassen, an welches das Staatsamt für Heer[es]wesen einen begründeten Antrag zu stellen haben wird.</p>
+               </div>
+               <div type="top" xml:id="krp-0186_top02">
+                  <head>
+                     <label>
+                        <num n="2">2.</num>
+                        <seg>Titel der bei diplomatischen Vertretungen verwendeten effektiven Konsularbeamten.</seg>
+                     </label>
+                  </head>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> führt aus, dass die bei den österreichischen diplomatischen Vertretungen verwendeten <pb facs="krp-0186_r-0004"/>Beamten zum überwiegenden Teile nicht dem Stande der Berufsdiplomaten, sondern dem konsularischen Berufe angehören und daher den ihnen zukommenden konsularischen Titel führen. Dies habe zur Folge, dass sie im dienstlichen wie auch im außerdienstlichen Verkehre gegenüber ihren Kollegen aus dem Diplomatenstande vielfach sehr unliebsame Hintansetzungen erfahren. Es sei daher im Interesse des Dienstes gelegen, alle effektiven Beamten, bei diplomatischen Vertretungen für die Dauer dieser Verwendung mit dem ihrer Rangsklasse entsprechenden diplomatischen Titel auszustatten. Hievon wären natürlich jene Funktionäre auszunehmen, welche nicht dem Stande des Staatsamtes für Äußeres angehören.</p>
+                  <p>Redner erbitte sich demgemäß die Ermächtigung, beim Präsidenten der Nationalversammlung nachstehende Resolution zu erwirken:</p>
+                  <p>Alle bei diplomatischen Vertretungen verwendeten effektiven Beamten, welche nicht dem diplomatischen Stande angehören, haben sich für die Dauer dieser Verwendung in Hinkunft des ihrer Rangsklasse entsprechenden diplomatischen Titels zu bedienen. Hievon sind jene Funktionäre ausgenommen, welche nicht dem Stande des <pb facs="krp-0186_r-0005"/>Staatsamtes für Äußeres angehören.</p>
+                  <p>Der Kabinettsrat erteilt die erbetene Ermächtigung.</p>
+               </div>
+               <div type="top" xml:id="krp-0186_top03">
+                  <head>
+                     <label>
+                        <num n="3">3.</num>
+                        <seg>Forderungen der Angestellten des Postsparkassenamtes.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Ing. <hi rend="#letterspaced">Zerdik</hi> berichtet, dass seine Besprechungen mit den Angestellten des Postsparkassenamtes von dem Erfolge begleitet waren, den für den 25. d. M. angedrohten Streik abzuwenden. Die Einigung sei auf der Grundlage erzielt worden, dass an Stelle der begehrten Einreihung einzelner Kategorien in höhere Zeitbeförderungsgruppen die freie Beförderung einzelner besonders qualifizierter Beamter nach den Anträgen der Direktion sowie die Gewährung von Zulagen zugesagt wurde, wobei Redner sich bereit erklärte, von dem mit 2 ½ Millionen K berechneten Jahreserfordernis zunächst für die nächsten sechs Monate die Hälfte mit dem Betrage von 1.125.000 K aus dem Bankgewinn der Postsparkassa an den Zeichnungen auf die Losanleihe je nach der Wahl der Angestellten auf einmal oder in sechs Monatsraten, zur Verfügung zu stellen. Über die Verteilung dieser Summe werden die Angestellten Vorschläge zu erstatten haben. Falls innerhalb eines Zeitraumes von sechs Monaten die endgiltige Besoldungsreform noch nicht Gesetzeskraft erlangt hätte, sollen neuerliche Verhan<pb facs="krp-0186_r-0006"/>dlungen stattfinden.</p>
+                  <p>Ferner sei die Stabilisierung der Aushilfskräfte im Rahmen des tatsächlichen Bedarfes und unter der Voraussetzung einer guten Qualifikation in Aussicht gestellt worden.</p>
+                  <p>Schließlich habe Redner noch der Errichtung von Personalvertretungen, jedoch mit der ausdrücklichen Einschränkung ihres Wirkungskreises auf die Vorberatung der endgiltigen Besoldungsreform zugestimmt.</p>
+                  <p>Der Kabinettsrat nimmt den Bericht unter Genehmigung der erteilten Zusicherung zur Kenntnis.</p>
+               </div>
+               <div type="top" xml:id="krp-0186_top04">
+                  <head>
+                     <label>
+                        <num n="4">4.</num>
+                        <seg>Neuregelung der Personalverhältnisse bei der Generaldirektion der staatlichen Industriewerke.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Ing. Zerdik erinnert daran, dass der Kabinettsrat in der Sitzung vom 4. Mai l. J. bei der Beratung der Gehaltsansprüche der leitenden Funktionäre der Generaldirektion der staatlichen Industriewerke die Forderungen des Generaldirektors [Ing.] Linder als unerfüllbar abgelehnt und weiters beschlossen habe, die Frage der Fortführung der staatlichen Industriewerke dem Hauptausschusse zur Entscheidung vorzulegen.</p>
+                  <p>Nunmehr ergebe sich aber die Notwendigkeit, über die Gehaltsansprüche des kaufmännischen und des technischen Direktors der Industriewerke schlüssig zu wer<pb facs="krp-0186_r-0007"/>den, da ohne diese beiden Funktionäre, ganz gleichgiltig mit welchen Personen ihre Posten besetzt sind, der Betrieb der staatlichen Industriewerke, sei es auch auf eine nur ganz kurze Zeit, nicht fortgeführt werden könne. Die Ansprüche des kaufmännischen Direktors Aub belaufen sich auf monatlich 15.000 K, jene des technischen Direktors Kurz auf monatlich 10.000 K nebst einer nach dem erzielten Gebarungserfolge abgestuften Ersparnisprämie, die unter der Voraussetzung einer besonders günstigen Entwicklung der Werke bis 120.000, bzw. 100.000 K im Jahre ansteigen könnte. Unter der letzteren Voraussetzung würden diese beiden Funktionäre also Bezüge erreichen, die sich den in der Privatindustrie bezahlten Bezügen annähern. Da ohne Zusicherung dieser Bezüge mit dem Abgang der beiden Funktionäre gerechnet werden müsste, erbittet sich der sprechende Staatssekretär die Ermächtigung zur Fortführung der Verhandlungen mit ihnen und zur eventuellen Vertragserneuerung innerhalb obiger Betragsgrenzen; die Bestimmung des Ausmaßes der Ersparnisprämie hätte dabei soweit tunlich einstweilen noch offen zu bleiben. </p>
+                  <p><pb facs="krp-0186_r-0008"/>Generaldirektor [Ing.] Linder habe zwar seine Forderung hinsichtlich des Minimaljahresbezuges um ein Geringes erniedrigt, jedoch eine Berechnung der Ersparnisprämie begehrt, nach welcher sich seine Gesamtbezüge doch wieder ungefähr auf die ursprünglich angegebenen Beträge bis zu 2.122.000 K stellen würden. Ebenso halte er an der Forderung einer Tantiemengewährung von 5 % von einem eventuellen Reingewinne für die vier obersten Funktionäre der Generaldirektion fest.</p>
+                  <p>Die Höhe dieser Ansprüche des Generaldirektors [Ing.] Linder bestimme Redner, besonders auch im Hinblick auf die gegenwärtige Situation der staatlichen Industriewerke zu der Meinung, dass von einem Weiterengagement Ing. Linders abgesehen werden solle.</p>
+                  <p>Der von der Generaldirektion der staatlichen Industriewerke für die Zeit vom 1. Juli 1920 bis 30. Juni 1921 ausgearbeitete Voranschlag der staatlichen Industriewerke rechne mit einem Betriebsdefizit von ungefähr 60 Millionen K, wobei Kapitalsverzinsung, Abschreibungen und Steuern noch nicht in Anschlag gebracht sind. Nach den für die Zeit bis Ende April l. J. vorliegenden Erfolgsnach<pb facs="krp-0186_r-0009"/>weisungen dürften sich die ungünstigen Annahmen des Voranschlages verwirklichen, soferne es nicht gelinge, ein umfassendes neues Erzeugungsprogramm durchzuführen und die besonders verlustbringenden Betriebe in der einen oder andern Form abzustoßen.</p>
+                  <p>Redner beabsichtige, die Leitung der Geschäfte der Generaldirektion für eine kurze Übergangszeit zunächst dem Vorstande der zuständigen Staatsamtabteilung, Sektionschef Sochor zu übertragen, und während dieser Übergangszeit die Aussichten für eine rentable Fortführung der staatlichen Industriewerke zugleich mit der Frage der Aufstellung eines geeigneten Erzeugungsprogrammes der fachmännischen Untersuchung durch eine Reihe von Experten unterziehen zu lassen. Aufgrund der Anträge dieser Experten solle dem Kabinettsrat neuerlich Bericht erstattet und sodann die Schlussfassung des Hauptausschusses in der Frage der Fortführung der staatlichen Industriewerke eingeholt werden.</p>
+                  <p>Der Kabinettsrat beschließt, von der Weiterverwendung des Generaldirektors [Ing.] Linder bei den staatlichen Industriewerken abzusehen und an seiner Stelle den Sektionschef des Staatsamtes für Handel und Gewerbe, Industrie und Bauten <pb facs="krp-0186_r-0010"/>Sochor mit der vorläufigen Versehung der Direktionsgeschäfte zu betrauen. Die Höhe des Abfertigungsbetrages für [Ing.] Linder ist vom Staatssekretär für Handel und Gewerbe, Industrie und Bauten im Verhandlungswege festzusetzen.</p>
+                  <p>Dem kommerziellen Direktor Aub und dem technischen Direktor Kurz werden Bezüge in dem von Staatssekretär Ing. Zerdik gekennzeichneten Ausmaße bewilligt.</p>
+                  <p>Schließlich wird der Staatssekretär für Handel und Gewerbe, Industrie und Bauten ermächtigt, über die Frage der Umgestaltung und Weiterführung der staatlichen Industriewerke eine Expertise zu veranstalten und aufgrund deren Ergebnisses sodann dem Kabinettsrate und dem Hauptausschusse antragstellend zu berichten </p>
+               </div>
+               <div type="top" xml:id="krp-0186_top05">
+                  <head>
+                     <label>
+                        <num n="5">5.</num>
+                        <seg>Sicherstellung der Auslagen für die Reparationskommission.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Reisch</hi> bringt dem Kabinettsrate zur Kenntnis, dass die Reparationskommission die Sicherstellung der nach Art. 186 des Staatsvertrages von St. Germain von Österreich zu tragenden Kosten der Reparationskommission und ihres Personales zunächst für die ersten vier Monate verlangt habe. Die <pb facs="krp-0186_r-0011"/>Kosten seien für diesen Zeitraum mit rund 2 ½ Millionen Friedenskronen, oder nach dem gegenwärtigen Kursstande 216 Millionen K angegeben worden. Hievon werde etwa ein Drittel von Ungarn zu ersetzen sein, da die leitenden Funktionäre der Wiener Sektion der Reparationskommission auch für Ungarn zuständig sein sollen. Die alliierten Mächte haben die Einzahlung des Betrages ausdrücklich in einer vollwertigen Valuta bei einem ausländischen Bankhause verlangt, sich schließlich jedoch damit einverstanden erklärt, dass bloß 1,9 Millionen Friedenskronen in Auslandsvaluta erlegt und der Rest von 0,6 Millionen Friedenskronen in österreichischen Noten nach der Goldparität berechnet in Wien bereitgehalten werde.</p>
+                  <p>An der Zahlungspflicht Österreichs könne nach den Bestimmungen des Friedensvertrages nicht gezweifelt werden. Auch sonst habe Österreich alles Interesse daran, der Reparationskommission entgegenzukommen, um sich die möglichste Berücksichtigung bei Verteilung der für die notleidenden Staaten ausgeworfenen Lebensmittel- und Rohstoffkredite, sowie bei Austragung der verschiedenen Streitpunkte mit den Nachfolgestaaten zu sichern.</p>
+                  <p><pb facs="krp-0186_r-0012"/>Redner nähme daher in Aussicht, den Betrag von 1,9 Millionen Friedenskronen in Dollar beim Bankhause Morgan in Paris für die Reparationskommission einzuzahlen. In Anbetracht der enormen Höhe der vorgeschriebenen Summe halte er es jedoch für angemessen, der Reparationskommission gelegentlich der Verständigung von der Eröffnung des Bankkontos durch unseren Vertreter in Paris eine Andeutung machen zu lassen, dass der wirtschaftlich zusammengebrochene und ganz auf die Hilfe des Auslandes angewiesene Staat derartige Lasten auf die Dauer nicht zu tragen vermöge und es begrüßen würde, wenn die Bezüge der Mitglieder und des Personales der österreichischen Sektion der Reparationskommission in ein gewisses Verhältnis zu den Bezügen der leitenden österreichischen Staatsfunktionäre gesetzt würden. Österreich vollziehe daher die Leistung der ersten Rate mit dem Vorbehalte, dass dadurch der endgiltigen Bemessung des Aufwandes nach Einlangen der Mitglieder der österreichischen Sektion der Reparationskommission in Wien nicht vorgegriffen werden solle.</p>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> sowie die Staatssekretäre <hi rend="#letterspaced">Eldersch</hi> und Dr. <hi rend="#letterspaced">Loewenfeld-Russ</hi> äußern Bedenken, ob es zweckmäßig sei, eine derart<pb facs="krp-0186_r-0013"/>ige Vorstellung auf dem vorgeschlagenen Wege und im gegenwärtigen Zeitpunkte geltend zu machen.</p>
+                  <p>Der Kabinettsrat ermächtigt sohin den Staatssekretär für Finanzen, zur Bestreitung der Kosten der Reparationskommission während der ersten vier Monate den Betrag von 1,9 Millionen Friedenskronen in Dollar beim Bankhause Morgan in Paris einzuzahlen und den weiteren Betrag von 0,6 Millionen Friedenskronen in österreichischen Noten zur Goldparität in Wien bereit zu halten. Der Wunsch nach Ermäßigung des Aufwandes soll erst nach Aktivierung der österreichischen Sektion der Reparationskommission in Wien unmittelbar bei deren Mitgliedern vorgebracht werden.</p>
+               </div>
+               <div type="top" xml:id="krp-0186_top06">
+                  <head>
+                     <label>
+                        <num n="6">6.</num>
+                        <seg>Neubemessung der Prüfungstaxen an Mittelschulen.</seg>
+                     </label>
+                  </head>
+                  <p>Unterstaatssekretär <hi rend="#letterspaced">Glöckel</hi> verbittet und erhält vom Kabinettsrate die Ermächtigung zur Erlassung einer Vollzugsanweisung, durch welche die Taxen für die an Mittelschulen abzulegenden Prüfungen entsprechend der Geldentwertung erhöht und die Bestimmungen über die Verteilung der Taxen unter die Mitglieder der Prüfungskommissionen neu geregelt werden.</p>
+                  <p><pb facs="krp-0186_r-0014"/></p>
+               </div>
+               <div type="top" xml:id="krp-0186_top07">
+                  <head>
+                     <label>
+                        <num n="7">7.</num>
+                        <seg>Führung von Sonderzügen aus Anlass des Sokolfestes in Prag.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Paul</hi> teilt mit, dass die tschechoslowakische Gesandtschaft in Wien für die Reise von 600 Wiener Sokolen sowie der Vertreter der hiesigen tschechoslowakischen Gesandtschaft und der Ententemissionen zum Sokolfeste nach Prag für den 24. Juni l. J. um die Beistellung eines Sonderzuges ersucht habe.</p>
+                  <p>Die Gesandtschaft habe die Zusicherung gegeben, dass die Sokolen nicht in der Nationaltracht und ohne Abzeichen erscheinen werden, und habe sich weiters damit einverstanden erklärt, dass die Fahrt auf eine frühe Morgenstunde angesetzt werde und ihren Ausgang eventuell von einem Außenbahnhofe nehme. Letzteres Anerbieten habe Redner jedoch abgelehnt, um kein ungünstiges Präjudiz für die Behandlung der Deutschen bei ähnlichen Gelegenheiten in Prag zu schaffen.</p>
+                  <p>Weiters sollen am 19. Juni 1. J. 200 jugendliche Sokolen mit einem fahrplanmäßigen Zuge nach Prag befördert und schließlich am 31. Mai und am 1. Juni drei Züge mit amerikanischen Tschechen aus der Schweiz durch Österreich geleitet werden.</p>
+                  <p>Verkehrstechnisch obwalte gegen die Führung der Sonderzüge kein Anstand; ebenso sprechen außenpolitische Rücksichten dafür, den Wünschen der Tschechen ent<pb facs="krp-0186_r-0015"/>gegenzukommen. Es handle sich daher nur darum, die Reisen sich so abwickeln zu lassen, dass bei der eigenen Bevölkerung kein Widerstand ausgelöst werde und daraus dann nicht etwa außenpolitische Verlegenheiten erwachsen. Soweit das Eisenbahnpersonal in Betracht komme, werde der sprechende Staatssekretär entsprechenden Einfluss nehmen lassen; im Übrigen müsse es dem Staatsamte für Inneres und Unterricht anheimgegeben werden, alle Anordnungen und Vorkehrungen zu treffen, die zur Vermeidung von Zwischenfällen erforderlich scheinen.</p>
+                  <p>Der Kabinettsrat nimmt den Bericht zustimmend zur Kenntnis. Die Art der Durchführung der Reisen und die dabei zu ergreifenden Maßnahmen werden vom Staatsamte für Verkehrswesen und vom Staatsamte für Inneres und Unterricht einvernehmlich festzusetzen sein.</p>
+               </div>
+               <div type="top" xml:id="krp-0186_top08">
+                  <head>
+                     <label>
+                        <num n="8">8.</num>
+                        <seg>Staatsvertrag mit der tschechoslowakischen Republik über Staatsbürgerschafts- und Minderheitsschutzfragen.</seg>
+                     </label>
+                  </head>
+                  <p>Sektionsrat Dr. <hi rend="#letterspaced">Froehlich</hi> erstattet als Vorsitzender der österreichischen Vertretung in der von der österreichischen und der tschechoslowakischen Regierung für die Auslegung und Handhabung von Fragen des Staatsbürgerrechtes und des Minderheitsschutzes eingesetzten <pb facs="krp-0186_r-0016"/>zwischenstaatlichen Kommission den in einem geheimen Anhang zu diesem Protokolle niedergelegten Bericht über das Ergebnis der in Prag von 4.–8. Mai und in Wien vom 17.–21. Mai 1920 stattgefundenen Verhandlungen. Redner erbittet sich vom Kabinettsrate die Vollmacht, den Vertrag mit der tschechoslowakischen Republik auf Grundlage der Ausführungen seines Vortrages abschließen und fertigen zu dürfen. Auch wolle der Kabinettsrat die österreichische Vertretung in der Kommission zur Abmachung geringfügigerer Änderungen und Ergänzungen bevollmächtigen.</p>
+                  <p>Der Kabinettsrat beauftragt den Berichterstatter, die in der hierüber abgeführten, als vertraulich erklärten Debatte gemachten Anregungen bei den abschließenden Verhandlungen soweit als möglich zur Geltung zu bringen, und erteilt ihm im Übrigen die erbetene Vollmacht und Ermächtigung. Der Kabinettsrat gibt hiebei dem Wunsche Ausdruck, dass der Vertrag für die Dauer von zwei Jahren und nach Ablauf dieser Vertragsdauer halbjährig kündbar abgeschlossen werde. Bei den Verhandlungen wäre hervorzuheben, dass für den Fall des seinerzeitigen Zustandekommens eines Gesamtvertrages über die wechselseitigen Beziehungen zwischen den beiden Staaten der nunmehr abzuschließende Vertrag in dem Gesamtübereinkommen Aufnahme finden wird.</p>
+                  <p><pb facs="krp-0186_r-0017"/></p>
+               </div>
+               <div type="top" xml:id="krp-0186_top09">
+                  <head>
+                     <label>
+                        <num n="9">9.</num>
+                        <seg>Behandlung der aufgrund des Kriegswirtschaftlichen Ermächtigungsgesetzes zu erlassenden Vollzugsanweisungen.</seg>
+                     </label>
+                  </head>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> führt aus, dass im Sinne eines seinerzeit vom Präsidenten der Nationalversammlung geäußerten Wunsches die aufgrund des Kriegswirtschaftlichen Ermächtigungsgesetzes erlassenen Vollzugsanweisungen vor ihrer Verlautbarung dem Präsidenten der Nationalversammlung und von diesem dem Hauptausschusse zur Schlussfassung vorgelegt werden. Die Präsidentschaftskanzlei habe nun der Staatskanzlei im Auftrage des Präsidenten folgende Mitteilung gemacht:</p>
+                  <p>„Im Laufe der letzten Zeit hat sich dreimal der Fall ereignet, dass Vollzugsanweisungen, deren Verlautbarung nach den getroffenen Vereinbarungen an die Zustimmung des Hauptausschusses bzw. den Präsidenten der Nationalversammlung gebunden war, vor Erteilung dieser Zustimmung in der Presse angekündigt wurden. Dieser Vorgang wird sowohl vom Herrn Präsidenten als von den Mitgliedern des Hauptausschusses sehr unangenehm empfunden. Der Herr Präsident hat den dringenden Wunsch geäußert, dass die Staatsämter in Hinkunft um mögliche Weiterungen mit dem Hauptausschusse zu vermeiden, jede denkbare Vorsorge treffen, um zu verhindern, dass derartige Mitteilungen in die Öf<pb facs="krp-0186_r-0018"/>fentlichkeit gelangen, bevor noch der Herr Präsident oder der Hauptausschuss der Nationalversammlung Gelegenheit hatten, zu den betreffenden Vollzugsanweisungen endgiltig Stellung zu nehmen.“</p>
+                  <p>Zugleich stellte die Präsidentschaftskanzlei das Ersuchen, die Angelegenheit auch im Kabinettsrate zur Sprache zu bringen.</p>
+                  <p>Nach Ansicht des sprechenden Staatskanzlers ist, wenn die – verfassungsmäßig, allerdings nicht vorgesehene – Vorberatung und Mitbestimmung des Hauptausschusses bei Erlassung von Vollzugsanweisungen aufgrund des Kriegswirtschaftlichen Ermächtigungsgesetzes nicht beeinträchtigt werden soll, die vertrauliche Behandlung der Verordnungsentwürfe im Schoße der Staatsregierung und der Staatsämter zweifellos geboten. Wenn nun auch in vereinzelten Ausnahmsfällen wie bei Verordnungsentwürfen, die mit außerhalb der Staatsregierung oder der Staatsämter stehenden Faktoren paktiert sind, ein Durchsickern von Verordnungsentwürfen in die Öffentlichkeit nicht absolut hintanzuhalten sei, so müsse doch eine offiziöse Verlautbarung von Verordnungsentwürfen durch die Staatsämter im Wege der Tagespresse vor Kenntnisnahme durch den Hauptausschuss jedenfalls unbedingt unterbleiben.</p>
+                  <p><pb facs="krp-0186_r-0019"/>Da die Präsidentschaftskanzlei in der Sache bereits unmittelbar an die Staatsämter herangetreten sei, erübrige nur das Ersuchen, die Kabinettsmitglieder mögen dafür sorgen, dass diesen Erwägungen zuverlässig Rechnung getragen werde.</p>
+                  <p>Der Kabinettsrat nimmt die Note der Präsidentschaftskanzlei und die Bemerkungen des Vorsitzenden als Richtschnur für die Vorgangsweise in künftigen Fällen zur Kenntnis.</p>
+               </div>
+               <div type="top" xml:id="krp-0186_top10">
+                  <head>
+                     <label>
+                        <num n="10">10.</num>
+                        <seg>Mitteilung einer aufgrund des Kriegswirtschaftlichen Ermächtigungsgesetzes erlassenen Vollzugsanweisung an die Nationalversammlung.</seg>
+                     </label>
+                  </head>
+                  <p>Der Kabinettsrat ermächtigt den Vorsitzenden, dem der Nationalversammlung bereits bekanntgegebenen Verzeichnisse über die in der Zeit vom 1. Februar bis 30. April l. J. aufgrund des Kriegswirtschaftlichen Ermächtigungsgesetzes erlassenen Vollzugsanweisungen noch die Vollzugsanweisung der Staatsregierung über die Einführung der Sommerzeit im Jahre 1920 nachzutragen.</p>
+               </div>
+               <div type="top" xml:id="krp-0186_top11">
+                  <head>
+                     <label>
+                        <num n="11">11.</num>
+                        <seg>Beitritt der Staatsregierung zu einem Gesetzesbeschluss der Nationalversammlung.</seg>
+                     </label>
+                  </head>
+                  <p>Nach dem Vorschlage des Vorsitzenden erhebt der Kabinettsrat <pb facs="krp-0186_r-0020"/>gegen den Gesetzesbeschluss der Nationalversammlung über die Regelung des Dienstverhältnisses der Steuerexekutoren keine Vorstellung.</p>
+                  <p>Das Gesetz ist demgemäß nach Gegenzeichnung durch den Staatskanzler und den Staatssekretär für Finanzen dem Präsidenten der Nationalversammlung zur Fertigung vorzulegen und sodann kundzumachen.</p>
+               </div>
+               <div type="top" xml:id="krp-0186_top12">
+                  <head>
+                     <label>
+                        <num n="12">12.</num>
+                        <seg>Tarifbegünstigungen für Sömmerungsvieh.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Stöckler</hi> begründet den Antrag, die bis zum Jahre 1907 bestandene 50%ige Tarifermäßigung für Sömmerungsvieh jedoch eingeschränkt auf Entfernungen über 30 km wieder einzuführen. Der Einfachheit halber, namentlich zur Vermeidung einer diesbezüglichen Verrechnung, hätten die bezüglichen Auslagen in Form einer Mindereinnahme das Budget des Staatsamtes für Verkehrswesen zu belasten.</p>
+                  <p>Sollte diese Art der Bedeckung der bezüglichen Ausgaben nicht zugestanden werden, so müsste dem Staatsamte für Land- und Forstwirtschaft ein entsprechender Kredit zur Refundierung der Tarifbegünstigungen eingeräumt werden, über dessen <pb facs="krp-0186_r-0021"/>Höhe mangels statistischer Daten über den Umfang der Bahntransporte von Weidevieh nur schätzungsweise Annahmen, etwa 3 Millionen K gemacht werden können.</p>
+                  <p>Redner stelle die Entscheidung über die Art der Tragung der Gebührennachlässe dem Kabinettsrate anheim, erbitte aber, falls das Staatsamt für Land- und Forstwirtschaft die Kosten der Tarifermäßigungen auf sein Budget übernehmen müsste, die Ermächtigung zur Einstellung eines Kredites von 3.000.000 K in den Staatsvoranschlag für das Verwaltungsjahr 1920/21.</p>
+                  <p>Die Staatssekretäre <hi rend="#letterspaced">Paul</hi> und Dr. <hi rend="#letterspaced">Reisch</hi> geben der Anschauung Ausdruck, dass nach den Grundsätzen einer reinen Budgetierung die Aufwendungen für die beantragten Transportbegünstigungen innerhalb des Etats des Staatsamtes für Land- und Forstwirtschaft als desjenigen Ressorts, dessen Verwaltungsausgaben sie dienen, vorgesehen werden müssten. Staatssekretär <hi rend="#letterspaced">Paul</hi> weist in diesem Zusammenhange insbesondere darauf hin, dass die Gewährung von Begünstigungen in der Form einer Minderung der Einnahmen der Eisenbahnen erfahrungsgemäß stets einen Anreiz zu dem Begehren nach gleichartigen Ermäßigungen auch für andere Güter bie<pb facs="krp-0186_r-0022"/>ten und es bei Fortführung dieses Systems nicht der Eisenbahnverwaltung zur Last gelegt werden dürfe, wenn der Eisenbahnbetrieb ohne den gewünschten Ertrag bleibe.</p>
+                  <p>Der Kabinettsrat genehmigt schließlich die Gewährung einer 50%igen Tarifermäßigung für den Transport von Sömmerungsvieh auf Entfernungen von mehr als 30 km und beschließt bei voller Anerkennung der Richtigkeit des von den Staatssekretären Paul und Dr. Reisch vertretenen Standpunktes die Begünstigung zur Vermeidung einer administrativen Mehrarbeit in der Form eines Verzichtes auf die Hälfte der tarifmäßigen Gebühren bei diesen Transporten zur Durchführung zu bringen.</p>
+               </div>
+               <div type="top" xml:id="krp-0186_top13">
+                  <head>
+                     <label>
+                        <num n="13">13.</num>
+                        <seg>Verordnung der Steiermärkischen Landesregierung, betreffend die Lieferungspflicht des Wald- und Jagdbesitzes zur allgemeinen Fleischversorgung.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Stöckler</hi> bringt dem Kabinettsrate zur Kenntnis, dass die Steiermärkische Landesregierung aufgrund eines nicht publizierten und der Staatsregierung auch nicht bekanntgewordenen Landtagsbeschlusses vom 5. Dezember 1919 mit einer Verordnung vom 26. Februar 1920, LGBl. Nr. 53, besondere Vorschriften über die Lieferungspflicht des Wald- und Jagdbesitzes zur allgemeinen Fleisch<pb facs="krp-0186_r-0023"/>versorgung erlassen habe.</p>
+                  <p>Die Lieferungspflicht sei darin jedem Besitzer von mehr als insgesamt 100 ha Wald auferlegt und betrage, wenn der Waldbesitzer zugleich auch Jagdinhaber ist, für je 50 ha seiner ganzen Jagdfläche bei Hochwildgebiet 20 kg, bei Niederwildgebiet 5 kg Wildfleisch. Im Falle der Verpachtung der Jagd bleibe der Waldbesitzer gleichwohl, und zwar nach dem Ausmaße der Waldfläche, lieferungspflichtig.</p>
+                  <p>Bei Mangel an Wild könne der Waldbesitzer oder Jagdinhaber (Pächter) seiner Lieferpflicht durch Abstellung von Rindern und Kälbern, Schafen, Ziegen oder Schweinen nach einem gewissen Gewichtsverhältnis nachkommen.</p>
+                  <p>Bei Ausbleiben auch dieser Ersatzlieferung sei eine Geldablösung in der Höhe des jeweiligen Lebendgewichtpreises für ausländisches Vieh pro kg nicht abgestelltes Wildfleisch vorgesehen.</p>
+                  <p>Nichtleistung der Geldablösung ziehe politische Exekution und außerdem Arreststrafen von 14 Tagen bis zu drei Monaten und Geldstrafen von 1.000–2.000 K nach sich.</p>
+                  <p><pb facs="krp-0186_r-0024"/>Jagdpächter (auch Jagdgesellschaften) werden ohne Rücksicht auf die Lieferungspflicht der Eigentümer der Jagdgründe nach denselben Grundsätzen als selbständig lieferungs- eventuell zahlungspflichtig erklärt.</p>
+                  <p>Über Beschwerden gegen Vorschreibungen oder sonstige Verfügungen des Gemeindeaufbringungsausschusses entscheide die Bezirkshauptmannschaft im Einvernehmen mit dem Bezirksaufbringungausschusse unbeschadet des Aufsichtsrechtes der Landesregierung endgiltig.</p>
+                  <p>Diese Bestimmungen sollen vorbehaltlich einer gegenteiligen Verfügung durch den Steiermärkischen Landesrat bis 28. Februar 1921 Giltigkeit haben.</p>
+                  <p>In rechtlicher Beziehung stelle sich die Verordnung als vollkommen gesetzwidrig dar, weil sie ohne jede gesetzliche Grundlage Anordnungen enthalte, die nur im Wege der Gesetzgebung hätten getroffen werden können. Außerdem stehe die dem Landesrate eingeräumte Befugnis, die Verordnung der Landesregierung jederzeit wie der außer Kraft setzen zu können, mit den geltenden verfassungsmäßigen Einrichtungen in Widerspruch.</p>
+                  <p>In wirtschaftlicher Beziehung enthalte die Verordnung große Härten und Un<pb facs="krp-0186_r-0025"/>billigkeiten. Zu letzteren gehöre insbesondere die Aufstellung einer Ablieferungspflicht des Waldbesitzers neben der des Jagdpächters. Für den Großwaldbesitz d. h., den Besitz über 500 ha, allein ergebe sich daraus bei Annahme eines Preises von nur 50 K für 1 kg Lebendgewicht ausländischen Viehs, eine Belastung mit einer Geldwertleistung von ca. 6.800.000 K.</p>
+                  <p>Am empfindlichsten werde von der Verordnung aber der Staat als der größte Waldbesitzer in Steiermark berührt. Bei Erfüllung der Lieferungspflicht durch Geldablösung – und etwas anderes komme nicht in Betracht, da die Jagden alle verpachtet sind und inländisches Vieh mangelt – hätte die Staats- und Fondsforstverwaltung allein eine Abgabe von ca. 1.540.000 K zu leisten. Als weitere Schädigung des Ärars durch die Verordnung komme hinzu, dass die Jagdpächter, welche ja in der gleichen Weise von der Ablieferungspflicht getroffen werden, voraussichtlich in zahlreichen Fällen von dem ihnen vertragsmäßig zustehenden halbjährigen Kündigungsrechte Gebrauch machen werden.</p>
+                  <p>Das Staatsamt für Land- und Forstwirtschaft habe daher am 16. April l. J. unter entsprechender Begründung seines Standpunktes bei der Landesregierung in <pb facs="krp-0186_r-0026"/>Graz gegen die Handhabung der Verordnung gegenüber dem in staatlicher Verwaltung stehenden Forstbesitz Verwahrung eingelegt und aufmerksam gemacht, dass selbstverständlich die Verhängung von Strafen gegen Organe der Staatsforstverwaltung wegen Nichtbefolgung der Bestimmungen dieser Verordnung ausgeschlossen sei.</p>
+                  <p>Ferner habe das Staatsamt die Forst- und Domänendirektionen in Wien und Gmunden angewiesen, den aufgrund der Verordnung ergehenden Anforderungen, Vorschreibungen und Verfügungen jeder Art die Anerkennung zu versagen, gegen sie die zulässigen Rechtsmittel einzubringen und gegebenenfalls die Beschwerde an den Verwaltungsgerichtshof zu ergreifen.</p>
+                  <p>In demselben Sinne hatten die genannten Direktionen auch die ihnen unterstehenden Verwaltungen zu bescheiden.</p>
+                  <p>Die Staatskanzlei, welcher diese Verfügungen ebenso wie dem Staatsamte der Finanzen mitgeteilt worden waren, teile die rechtliche Auffassung des Staatsamtes für Land- und Forstwirtschaft vollkommen und habe nur die nachträgliche Mitteilung der Angelegenheit wegen ihrer großen Bedeutung an den Kabinettsrat angeregt.</p>
+                  <p>Der sprechende Staatssekretär bitte, der Kabinettsrat wolle die vom Staatsamte für Land- und Forstwirtschaft getroffenen <pb facs="krp-0186_r-0027"/>Verfügungen anstimmend zur Kenntnis nehmen.</p>
+                  <p>Der Kabinettsrat beschließt in diesem Sinne.</p>
+               </div>
+               <div type="top" xml:id="krp-0186_top14">
+                  <head>
+                     <label>
+                        <num n="14">14.</num>
+                        <seg>Ansuchen der Kriegskreditanstalt für das südliche Kriegsgebiet in Klagenfurt um Bewilligung zur Führung des Staatswappens in der Firmabezeichnung.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Eldersch</hi> unterbreitet dem Kabinettsrate das Ansuchen der Kriegskreditanstalt für das südliche Kriegsgebiet in Klagenfurt um die Bewilligung, in der Firmabezeichnung das Staatswappen der Republik Österreich führen zu dürfen.</p>
+                  <p>Nach eingehender Begründung der Rücksichtswürdigkeit dieses Einschreitens verweist Redner darauf, dass in derartigen Fällen bisher, soweit eine gesetzliche Bestimmung nicht in Frage kam, an Stelle der in der Ministerialverordnung vom 24. April 1858, RGBl. Nr. 61, vorgesehenen Kaiserlichen Entschließung ein Beschluss der Staatsregierung eingeholt werden müsste.</p>
+                  <p>Der sprechende Staatssekretär glaube nunmehr, aus Anlass des vorliegenden Falles im Interesse der Entlastung des Kabinettsrates um die Ermächtigung bitten zu sollen, solche Ansuchen künftighin in der <pb facs="krp-0186_r-0028"/>Regel im Einvernehmen mit den übrigen ressortmäßig beteiligten Staatsämtern im eigenen Wirkungskreise der Erledigung zuführen zu dürfe, da es sich hier meist um Regierungsakte von geringerer Bedeutung handelt.</p>
+                  <p>Antragsgemäß erteilt der Kabinettsrat der Kriegskreditanstalt für das südliche Kriegsgebiet in Klagenfurt die Bewilligung zur Führung des Staatswappens der Republik Österreich in der Firmenbezeichnung und ermächtigt den Staatssekretär für Inneres und Unterricht künftighin nach hergestelltem Einvernehmen mit den übrigen beteiligten Staatsämtern über Ansuchen um die Bewilligung zur Führung des Staatswappens der Republik Österreich oder eines Landeswappens in der Regel ohne Einholung eines besonderen Beschlusses des Kabinettsrates zu entscheiden.</p>
+               </div>
+               <div type="top" xml:id="krp-0186_top15">
+                  <head>
+                     <label>
+                        <num n="15">15.</num>
+                        <seg>Beitritt Österreichs zur Internationalen Arbeitsorganisation.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Hanusch</hi> berichtet, dass ihm eine Einladung des Generalsekretärs des Internationalen Arbeitsamtes in London zugegangen sei, eine Erklärung der österreichischen Regierung über den Beitritt Österreichs zu <pb facs="krp-0186_r-0029"/>der aufgrund des Friedensvertrages geschaffenen ständigen Arbeitsorganisation herbeizuführen. Obwohl nach dem Abschnitte XIII des Friedensvertrages von St. Germain nur die Mitglieder des Völkerbundes der genannten Organisation angehören, habe die Internationale Arbeitskonferenz zu Washington, die Ende November 1919 ihre Beratungen begann, eingangs der Verhandlungen beschlossen, österreichische Delegierte zur Teilnahme an der Tagung mit gleichen Rechten und Pflichten wie die ordentlichen Mitglieder zuzulassen, und nur aus finanziellen Rücksichten sei damals die Entsendung österreichischer Delegierter unterblieben.</p>
+                  <p>Das Internationale Arbeitsamt stehe auch bereits mit der österreichischen Regierung über die Durchführung der Beschlüsse genannter Konferenz in Österreich in Verhandlungen. Die österreichische Regierung habe umso weniger Grund, die Durchführung dieser Beschlüsse zu unterlassen, als die meisten der gestellten Forderungen bei uns bereits durchgeführt und zum Teil sogar überholt seien.</p>
+                  <p>Österreich hätte aus dem Beitritt zur Internationalen Arbeitsorganisation den Vorteil einer Erleichterung in den wirtschaftlichen Beziehungen zu den Nach<pb facs="krp-0186_r-0030"/>barstaaten und eines gewissen Rückhaltes speziell in Fragen der Sozialpolitik, wie schließlich unter Umständen auch die Anrufung des Internationalen Gerichtshofes für Österreich wertvoll werden könnte, um wirtschaftlichen Pressionen der Nachbarstaaten zu begegnen.</p>
+                  <p>Die Belastung der Mitgliedsstaaten beschränke sich auf die Beschickung der Tagungen durch Delegierte; ferner übernehmen alle Mitgliedstaaten die Verpflichtung die zur Durchführung von Beschlüssen der Hauptversammlung notwendigen gesetzlichen Schritte in der Regel innerhalb eines Jahres einzuleiten. Die Kosten des Internationalen Arbeitsamtes hingegen belasten nicht die Einzelstaaten, sondern den Völkerbund.</p>
+                  <p>Art. 342 des Friedensvertrages sehe ausdrücklich den unmittelbaren Verkehr zwischen den Ministerien, zu deren Zuständigkeit die Arbeiterfragen gehören und dem Internationalen Arbeitsamte vor.</p>
+                  <p>Aus diesen Erwägungen erbitte der sprechende Staatssekretär die Ermächtigung, dem Direktor des Internationalen Arbeitsamtes, Albert Thomes in London, in einem Antwortschreiben den Beitritt der Republik Österreich zur Internationalen Arbeitsorganisation anzuzeigen und den Beitritt im Staatsgesetzblatte kundzumachen.</p>
+                  <p><pb facs="krp-0186_r-0031"/></p>
+               </div>
+               <div type="top" xml:id="krp-0186_top16">
+                  <head>
+                     <label>
+                        <num n="16">16.</num>
+                        <seg>Entwurf eines Gesetzes über die Gewährung von Gebührenbefreiungen aus Anlass der Vereinheitlichung des Krankenkassenwesens.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Reisch</hi> erbittet und erhält vom Kabinettsrate die Ermächtigung, den Entwurf eines Gesetzes über die Gewährung von Gebührenbefreiungen aus Anlass der Vereinheitlichung des Krankenkassenwesens in der Nationalversammlung einbringen zu dürfen.</p>
+               </div>
+               <div type="top" xml:id="krp-0186_top17">
+                  <head>
+                     <label>
+                        <num n="17">17.</num>
+                        <seg>Einführung von Wohltätigkeitsmarken.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Paul</hi> teilt dem Kabinettsrate mit, dass dem Staatsamte für Verkehrswesen von verschiedenen Seiten Anregungen zugegangen seien, besondere Briefmarken mit einem Aufschlag zu Gunsten gewisser Wohltätigkeitszwecke auszugeben. Trotz der wenig ermunternden Erfahrungen mit den seinerzeitigen Kriegsmarken habe sich die Postverwaltung gelegentlich einer mit dem Staatsamte für Finanzen abgehaltenen Beratung doch grundsätzlich bereit erklärt, neuerlich Wohltätigkeitsmarken in beschränkter Zahl in Verkehr zu setzen. Dabei sei die Meinung zutage getreten, dass der Erlös aus dem Aufschlage beim postämtlichen Verkaufe und der Reingewinn, der sich nach Abschluss des postämtlichen Verkaufes aus dem Verkaufe der Restbestände an ein Konsortium ergebe, <pb facs="krp-0186_r-0032"/>zum Teile den Ländern zu wohltätigen Zwecken zu überweisen, zum Teile von einer zentralen Stelle unmittelbar den in Betracht kommenden wohltätigen Zwecken nach einem noch aufzustellenden Schlüssel zuzuwenden wäre.</p>
+                  <p>Zunächst müsse aber entschieden werden, ob für alle in Betracht kommenden Wohltätigkeitszwecke einheitliche Wohltätigkeitsmarken oder für jeden einzelnen besondere Wohltätigkeitsmarken aufgelegt werden sollen, dann welche Stelle die zu berücksichtigenden Wohltätigkeitszwecke zu bestimmen habe und nach welchem Schlüssel der Ertrag aufzuteilen wäre.</p>
+                  <p>Da für die Beurteilung dieser Fragen weniger fachliche als allgemeine und zum Teile politische Gesichtspunkte in Betracht kommen, glaube der sprechende Staatssekretär die Einsetzung einer eigenen Kabinettskonferenz zur Ausarbeitung konkreter Anträge empfehlen zu sollen. Die Kabinettskonferenz hätte entsprechend dem Wunsche des Leiters des Unterrichtsamtes, dass in Hinkunft neue Briefmarken nur nach Entwürfen hergestellt werden sollen, die durch einen künstlerischen Wettbewerb beschafft würden, auch die Frage einer Ausschreibung zur Erlangung <pb facs="krp-0186_r-0033"/>solcher Entwürfe zu erörtern.</p>
+                  <p>Nach kurzen Bemerkungen der Staatssekretäre <hi rend="#letterspaced">Eldersch</hi>, Dr. <hi rend="#letterspaced">Reisch</hi>, und Dr. <hi rend="#letterspaced">Loewenfeld-Russ</hi> über die von der Ausgabe von Wohltätigkeitsmarken zu erwartenden Erfolge beschließt der Kabinettsrat eine Kabinettskonferenz, bestehend aus den Staatssekretären für Verkehrswesen, für Finanzen, für Inneres und Unterricht und für soziale Verwaltung sowie dem Leiter des Unterrichtsamtes zur Vorberatung der Angelegenheit einzusetzen.</p>
+               </div>
+               <div type="top" xml:id="krp-0186_top18">
+                  <head>
+                     <label>
+                        <num n="18">18.</num>
+                        <seg>Novelle zum Gesetz, betreffend die Regelung des Apothekenwesens.</seg>
+                     </label>
+                  </head>
+                  <p>Unter Staatssekretär Dr. <hi rend="#letterspaced">Tandler</hi> erbittet die Entscheidung des Kabinettsrates über einzelne Bestimmungen in den §§ 2 a, 2 b und 27 a Pkt. 4 des Entwurfes einer Novelle zum Gesetze betreffend die Regelung des Apothekenwesens vom Staatsamte für Finanzen bei der Vorberatung des Entwurfes bestritten worden seien.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Reisch</hi> begründet den Einspruch der Finanzverwaltung mit kreditpolitischen Bedenken, die es nicht angebracht erscheinen lassen, dass der Staat Apotheken in den Formen der Sozialisierung an sich ziehe, sowie damit, <pb facs="krp-0186_r-0034"/>dass die Lage der Staatsfinanzen es nicht zulasse, einen Kredit zur Einlösung von Apotheken zur Verfügung zu stellen.</p>
+                  <p>Nach einer eingehenden Erörterung der Sach- und Rechtslage durch den <hi rend="#letterspaced">Vorsitzende</hi>n, die Staatssekretäre <hi rend="#letterspaced">Eldersch</hi>, Ing. <hi rend="#letterspaced">Zerdik</hi> und Dr. <hi rend="#letterspaced">Ellenbogen</hi> sowie die Unterstaatssekretäre Dr. <hi rend="#letterspaced">Eisler</hi> und Dr. <hi rend="#letterspaced">Tandler</hi> beschließt der Kabinettsrat aufgrund eines Antrages des Vizekanzlers <hi rend="#letterspaced">Fink</hi> die Redigierung der strittigen Punkte in dem Sinne einer Einlösung der Apotheken ohne Anwendung der Vorschriften über das Verfahren bei der Enteignung von Wirtschaftsbetrieben einer Kabinettskonferenz unter der Führung des Leiters des Volksgesundheitsamtes bestehend aus den Staatssekretären für Finanzen, für Justiz und für Handel und Gewerbe, Industrie und Bauten zu übertragen. Sodann wird über den Entwurf mit den Standesorganisationen in Verhandlungen einzutreten sein.</p>
+               </div>
+               <div type="top" xml:id="krp-0186_top19">
+                  <head>
+                     <label>
+                        <num n="19">19.</num>
+                        <seg>Entsendung von Vertreterinnen Österreichs zur Konferenz der Internationalen Liga für Frauenstimmrecht in Bern.</seg>
+                     </label>
+                  </head>
+                  <p>Nach dem Vorschlage des <hi rend="#letterspaced">Vorsitzenden</hi> bewilligt der Kabinettsrat die Mittel zur Entsendung je <pb facs="krp-0186_r-0035"/>einer Vertreterin der beiden koalierten Parteien zu der in Bern stattfindenden Konferenz der Internationalen Liga für Frauenstimmrecht und ermächtigt den Staatssekretär für Finanzen die dazu erforderlichen Beträge in ausländischer Valuta zur Verfügung zu stellen.</p>
+                  <p/>
+               </div>
+            </div>
+            <div type="anhaenge">
+               <p><pb facs="krp-0186_a01-0001"/>Geheimer Anhang zum Kabinettsprotokoll Nr. 186 vom 28. Mai 1920.</p>
+               <div n="1">
+                  <head>Vertrag mit der tschechoslowakischen Regierung über Fragen des Staatsbürgerrechtes und des Minderheitsschutzes.</head>
+                  <div type="a01_protokoll">
+                     <p>Nach Erstattung des Berichtes durch Sektionsrat Dr. <hi rend="#letterspaced">Froehlich</hi> über das bisherige Ergebnis der Verhandlungen zwischen der österreichischen und der tschechoslowakischen Vertretung in der zwischenstaatlichen Kommission wünscht Unterstaatssekretär <hi rend="#letterspaced">Miklas</hi> eine Aufklärung darüber, ob die Abmachung am Schluss des Pkt. 2 auf S. 11 des beiliegenden Berichtes eine Einschränkung des Gesetzgebungsrechtes bei uns beinhalte.</p>
+                     <p>Sektionsrat Dr. <hi rend="#letterspaced">Froehlich</hi> weist darauf hin, dass die Stilisierung dieser Vereinbarung eine überaus vorsichtige sei, welche gewählt wurde, um jeden Anschein einer Konstruktion zu vermeiden, die auf paktierte Gesetze hindeuten würde. Die Gesetzgebung bei uns bleibe nach diesem Aufbau insoferne frei, als Änderungen der in Betracht kommenden Gesetze möglich sind und sich bloß nicht auch auf die privaten Schulen und Erziehungsanstalten der tschechischen Minderheit beziehen würden.</p>
+                     <p><pb facs="krp-0186_a01-0002"/>Unterstaatssekretär Dr. <hi rend="#letterspaced">Eisler</hi> stimmt den Ausführungen des Referenten bei und weist darauf hin, dass die gewählte Konstruktion, welche ähnlich in vielen zwischenstaatlichen Verträgen vorkomme, bloß eine taxative Aufzählung der Bestimmungen ersparen soll, auf welche eine Vereinbarung erzielt wurde.</p>
+                     <p>Zu Pkt. 3 auf S. 12 führt Unterstaatssekretär <hi rend="#letterspaced">Miklas</hi> aus, dass seiner Ansicht nach der 1. Abs. eine Überprüfung darüber, ob im konkreten Falle die Voraussetzungen für die Verleihung des Öffentlichkeitsrechtes vorhanden sind, ausschließt und der 3. Abs. ihm wegen der Komenský-Schulen in Wien bedenklich erscheine.</p>
+                     <p>Sektionsrat Dr. <hi rend="#letterspaced">Froehlich</hi> weist darauf hin, dass bereits bei den Vorverhandlungen in St. Germain seitens der Ententemächte der Standpunkt vertreten wurde, dass für private Schulen die Verleihung des Öffentlichkeitsrechtes eine Selbstverständlichkeit sei und es hiezu keines konstitutiven Aktes des Staates bedürfe, eine Konstruktion, wie sie überhaupt nur in der altösterreichischen Gesetzgebung vorkommt, während in allen anderen Schulgesetzgebungen die Gleichstellung von Zeugnissen der privaten Schulen mit jenen der öffentlichen Schulen automatisch erfolge, sobald die Errichtung der privaten Schule als zuläss[ig] <pb facs="krp-0186_a01-0003"/>erscheint. Aus diesen Ausführungen gehe hervor, dass die in Rede stehende Bestimmung des vorliegenden Vertragsentwurfes für uns das unter den gegebenen Umständen denkbar Günstigste ist, da hier doch prinzipiell eine konstitutive Verleihung des Öffentlichkeitsrechtes vorgesehen ist.</p>
+                     <p>Unterstaatssekretär <hi rend="#letterspaced">Glöckel</hi> verweist darauf, dass auch er die fragliche Bestimmung sehr unangenehm empfinde, aber im Hinblick auf die auch ihm bekannte Vorgeschichte für unvermeidlich halte, und dass es selbstverständlich sei, dass diese Bestimmung nunmehr auch für die deutschen Volksschulen werde angewendet werden müssen.</p>
+                     <p>Zu den Bestimmungen auf S. 13 und 14 über die tschechischen Volksschulen in Wien stellt Unterstaatssekretär <hi rend="#letterspaced">Miklas</hi> die Anfrage, warum hier nicht eine Reziprozität zugunsten der deutschen Volksschulen wenigstens in Prag und in Brünn vereinbart werden solle.</p>
+                     <p>Sektionsrat Dr. <hi rend="#letterspaced">Froehlich</hi> weist darauf hin, dass eine solche Vereinbarung ihm sehr gefährlich erschiene, weil nach den Informationen des Unterrichtsamtes viel mehr deutsche Volksschulen in Prag und in Brünn bestehen, als man bei Anwendung des Reziprozitätsprinzips nach den für Wien vereinbarten Bestimmungen verlangen könnte. Überhaupt vermeint er, müsse man mit der Reziprozität in diesem Punkte vorsichtig sein, da man unter Umständen sonst gerade durch diese ja gewiss gutgemeinten Abmachungen der tschechoslowakischen Regierung <pb facs="krp-0186_a01-0004"/>eine Handhabe geben könnte, bezüglich der Minderheitsschulen schärfer vorzugehen als bisher.</p>
+                     <p>Unterstaatssekretär <hi rend="#letterspaced">Miklas</hi> regt hierauf an, dass man wenigstens eine Reziprozität wegen der Zusammensetzung der Kommissionen, welche die Kenntnis der Minderheitssprache bei den sich für die Minderheitsschulen meldenden Kinder festzustellen haben, in dem Sinne der Beiziehung der Vertreter der Eltern anstreben sollte.</p>
+                     <p>Sektionsrat Dr. <hi rend="#letterspaced">Froehlich</hi> teilt mit, dass nach Angabe der tschechoslowakischen Vertreter in der tschechoslowakischen Republik eine solche Zusammensetzung für den Fall als überhaupt Prüfungen abgehalten werden sollten, in Aussicht genommen sei. Er glaube daher, dass eine solche Reziprozitätsbestimmung von tschechoslowakischer Seite akzeptiert werden dürfe und werde versuchen, sie zu erzielen.</p>
+                     <p>Auf von Unterstaatssekretär <hi rend="#letterspaced">Miklas</hi> noch berührte Bedenken wegen der Bindung der Gemeinde Wien verweist Sektionsrat Dr. <hi rend="#letterspaced">Froehlich</hi> auf die innerstaatlich verbindende Kraft eines kundgemachten internationalen Vertrages nach der allgemein anerkannten Theorie des Primates des Völkerrechtes hin.</p>
+                     <p/>
+                  </div>
+               </div>
+            </div>
+            <div type="stenogramme">
+               <div n="1">
+                  <head>EINZUFÜGEN</head>
+                  <p>Transkription in Arbeit.</p>
+                  <p/>
+               </div>
+               <div n="2">
+                  <head>EINZUFÜGEN</head>
+                  <p>Transkription in Arbeit.</p>
+               </div>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

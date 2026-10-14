@@ -1,0 +1,887 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href='http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:acdh="https://vocabs.acdh.oeaw.ac.at/schema#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xml:lang="de">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="a" type="main" n="0185">Kabinettsprotokoll Nr. 185 vom 21. Mai 1920</title>
+            <title level="m" type="main" n="01">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <title level="m" type="sub" n="">Renner III (17. Oktober 1919 – 7. Juli 1920)</title>
+            <meeting>
+               <placeName key="https://d-nb.info/gnd/4066009-6">Wien</placeName>
+               <orgName key="https://d-nb.info/gnd/5162749-8">Kabinettsrat</orgName>
+               <date when-iso="1920-05-21"/>
+            </meeting>
+            <editor>
+               <persName key="https://d-nb.info/gnd/122481836"
+                         role="hasCreator"
+                         xml:id="hwohnout">
+                  <forename>Helmut</forename>
+                  <surname>Wohnout</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</affiliation>
+               <idno type="ORCID">0000-0002-3864-9839</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/120789825"
+                         role="hasCreator"
+                         xml:id="tolechowski">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0003-3291-6876</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/131679384"
+                         role="hasCreator"
+                         xml:id="rlein">
+                  <forename>Richard</forename>
+                  <surname>Lein</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0002-7502-0503</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="aholzer">
+                  <forename>Anna</forename>
+                  <surname>Holzer</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0005-3560-3500</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="dsoelkner">
+                  <forename>Dominik</forename>
+                  <surname>Sölkner</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-9895-7212</idno>
+            </editor>
+            <editor>
+               <persName role="hasContributor" xml:id="ischotzko">
+                  <forename>Ina</forename>
+                  <surname>Schotzko</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-5210-3713</idno>
+            </editor>
+            <funder n="1">
+               <orgName key="https://d-nb.info/gnd/2054142-9" role="hasFunder">Österreichischer Wissenschaftsfonds FWF</orgName>
+               <idno type="project">PAT1495024</idno>
+               <title type="project">Die Protokolle des österreichischen Kabinettsrates 1919–1920</title>
+            </funder>
+            <respStmt>
+               <resp>Projektverantwortung</resp>
+               <orgName key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Projektleitung</resp>
+               <persName key="https://d-nb.info/gnd/120789825" role="hasPrincipalInvestigator">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+                  <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+                  <idno type="ORCID">0000-0003-3291-6876</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Nationaler Forschungspartner</resp>
+               <orgName key="https://d-nb.info/gnd/1123037736" role="hasEnabler">Austrian Centre for Digital Humanities</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Digitalisierung der gedruckten Quellen</resp>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>TEI-Datenmodellierung</resp>
+               <persName role="hasContributor" xml:id="tfruehwirth">
+                  <forename>Timo</forename>
+                  <surname>Frühwirth</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-3997-5193</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technische Supervision</resp>
+               <persName key="https://d-nb.info/gnd/1043833846"
+                         role="hasContributor"
+                         xml:id="pandorfer">
+                  <forename>Peter</forename>
+                  <surname>Andorfer</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-9575-9372</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technisches Consulting und Vorbereitung der Druckausgabe</resp>
+               <persName key="https://d-nb.info/gnd/13281899X"
+                         role="hasContributor"
+                         xml:id="skurz">
+                  <forename>Stephan</forename>
+                  <surname>Kurz</surname>
+                  <affiliation key="https://d-nb.info/gnd/1202798799">Institut für die Erforschung der Habsburgermonarchie und des Balkanraumes</affiliation>
+                  <idno type="ORCID">0000-0003-2546-2570</idno>
+               </persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher key="https://d-nb.info/gnd/1001454-8">Österreichische Akademie der Wissenschaften</publisher>
+            <date when="2028"/>
+            <availability status="free">
+               <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">Lizenziert unter CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/deed.de)</licence>
+            </availability>
+            <idno type="ISBN_Print"/>
+            <idno type="ISBN_Part_epub"/>
+            <idno type="ISBN_Digital"/>
+            <idno type="DOI"/>
+            <idno type="DOI_zenodo"/>
+            <idno type="ebook_ID"/>
+         </publicationStmt>
+         <seriesStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="m" type="main">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <respStmt>
+               <resp>Bearbeitung und Herausgeberschaft</resp>
+               <orgName key="https://d-nb.info/gnd/2024703-5">Universität Wien</orgName>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+         </seriesStmt>
+         <notesStmt>
+            <note>Diese TEI-XML-Datei ist Grundlage für eine Druckausgabe der Edition.</note>
+            <relatedItem>
+               <biblStruct>
+                  <monogr>
+                     <imprint>
+                        <pubPlace key="https://d-nb.info/gnd/4066009-6">Wien</pubPlace>
+                        <publisher key="https://d-nb.info/gnd/2068748-5">Verlag der Österreichischen Akademie der Wissenschaften</publisher>
+                        <date when="2029"/>
+                     </imprint>
+                     <extent/>
+                  </monogr>
+                  <note>
+              <idno/>
+              <ptr/>
+            </note>
+                  <citedRange/>
+               </biblStruct>
+            </relatedItem>
+         </notesStmt>
+         <sourceDesc>
+            <bibl>Quellbestand: AT-OeStA/AdR MRang MR 1Rep KRP Kabinettsratsprotokolle, 1918-1920 (Teilbestand)<ref target="https://www.archivinformationssystem.at/detail.aspx?id=5465">https://www.archivinformationssystem.at/detail.aspx?id=5465</ref>
+            </bibl>
+            <msDesc>
+               <msIdentifier>
+                  <institution key="https://d-nb.info/gnd/37748-X" role="hasOwner">AT-OeStA Österreichisches Staatsarchiv (Archiv (ÖStA))</institution>
+                  <repository key="https://d-nb.info/gnd/1601181-8">AT-OeStA/AdR Archiv der Republik, 1918- (Abteilung)</repository>
+                  <collection>AT-OeStA/AdR MRang MR 1Rep Ministerrat 1. Republik, 1918 - 1938 (Bestand)</collection>
+                  <idno>AT-OeStA_AdR-MRang-MR-1.-Rep.-KRP-185</idno>
+               </msIdentifier>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <abstract>
+            <p>
+          <!--to be generated-->
+        </p>
+         </abstract>
+      </profileDesc>
+      <encodingDesc>
+         <styleDefDecl scheme="css"/>
+         <tagsDecl>
+            <rendition xml:id="b" scheme="css">font-weight:bold;</rendition>
+            <rendition xml:id="su" scheme="css">vertical-align:super;font-size:.7em;</rendition>
+            <rendition xml:id="s" scheme="css">text-decoration:line-through;</rendition>
+            <rendition xml:id="u" scheme="css">text-decoration:underline;</rendition>
+            <rendition xml:id="ow" scheme="css">text-decoration:line-through;text-decoration-style:double;</rendition>
+            <rendition xml:id="r" scheme="css">display:block;text-align:right;</rendition>
+            <rendition xml:id="letterspaced" scheme="css">letter-spacing:0.15em;</rendition>
+            <rendition xml:id="i" scheme="css">font-style:italic;</rendition>
+         </tagsDecl>
+         <editorialDecl>
+            <hyphenation>
+               <p>
+            <!--to be added-->
+          </p>
+            </hyphenation>
+            <correction>
+               <p>
+            <!--to be added-->
+          </p>
+            </correction>
+            <normalization>
+               <p>
+            <!--to be added-->
+          </p>
+            </normalization>
+            <punctuation>
+               <p>
+            <!--to be added-->
+          </p>
+            </punctuation>
+            <stdVals>
+               <p>
+            <!--to be added-->
+          </p>
+            </stdVals>
+            <p>
+          <!--to be added-->
+        </p>
+         </editorialDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#tfruehwirth" when-iso="2026-10-14">TEIGarage output upconverted with upconvert.xsl</change>
+         <change who="#tfruehwirth" when-iso="2026-10-14">TEI header populated with generate_tei_templates.py</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface/>
+   </facsimile>
+   <text>
+      <body>
+         <div xml:id="doc-krp-0185.xml">
+            <head type="dokument">
+               <title type="num">185.<note type="footnote">Das Protokoll trägt den Vermerk <hi rend="#i">Vertraulich!</hi></note>
+               </title>
+               <title type="desc">
+                  <pb facs="krp-0185_r-0001"/>
+                  <pb facs="krp-0185_r-0002"/>[Freitag] 1920-05-21</title>
+            </head>
+            <div type="dokumentkopf">
+               <div type="vorsitz">
+                  <head>Vorsitz:</head>
+                  <p>Renner</p>
+               </div>
+               <div type="anwesend">
+                  <head>Anwesend:</head>
+                  <p>Deutsch, Eisler, Eldersch, Ellenbogen, Fink, Glöckel, Hanusch, Mayr, Miklas, Paul, Reisch, Stöckler, Tandler, Waiss, Zerdik</p>
+               </div>
+               <div type="zugezogen">
+                  <head>Zugezogen:</head>
+                  <p>Grimm, Schwegel, Wilfling, Zedtwitz</p>
+               </div>
+               <div type="schriftfuehrer">
+                  <head>Schriftführer:</head>
+                  <p>unbekannt</p>
+               </div>
+               <div type="dauer">
+                  <head>Dauer:</head>
+                  <p>14.00–15.45 Uhr</p>
+               </div>
+            </div>
+            <div type="komponenten">
+               <p>Reinschrift, Beilagen, Anhang, Konzept, stenographische Mitschrift, Entwurf der Tagesordnung</p>
+            </div>
+            <div type="beilagen">
+               <head>Beilagen:</head>
+               <list>
+                  <item><ref target="#krp-0185_top01">Zu TOP 1</ref>: <ref target="#krp-0185_b01">Zusammenstellung der von der Nationalversammlung bereits beschlossenen, jedoch noch nicht kundgemachten Gesetze</ref></item>
+                  <item><ref target="#krp-0185_top03">Zu TOP 3</ref>: <ref target="#krp-0185_b02">Entwurf eines Antrages zu Zl. 7838/1920 über die Übernahme der aus den ehemals österreichischen Staats-(Staatsbahn-)angestellten deutscher Nationalität in den Dienst der österreichischen Republik</ref></item>
+                  <item><ref target="#krp-0185_top04">Zu TOP 4</ref>: <ref target="#krp-0185_b03">Vortrag des Staatssekretärs für Verkehrswesen Zl. 1011/St.V. über die Kompetenzabgrenzung zwischen dem Staatsamt und den Staatsbahndirektionen</ref></item>
+                  <item><ref target="#krp-0185_top05">Zu TOP 5</ref>: <ref target="#krp-0185_b04">Mitteilung des Staatsamtes für Finanzen über die Verleihung des Titels „Lottoamtsdirektor“ für die in die VII. Rangklasse versetzten Lottobeamten</ref></item>
+                  <item><ref target="#krp-0185_top06">Zu TOP 6</ref>: <ref target="#krp-0185_b05">Auszug für den Vortrag des Staatsamtes für Inneres und Unterricht über den Gesetzesbeschluss des Niederösterreichischen Landtages zur Änderung des Gemeindestatutes und der Gemeindewahlordnung für die Stadt Wien</ref></item>
+                  <item><ref target="#krp-0185_top07">Zu TOP 7</ref>: <ref target="#krp-0185_b06">Vortrag des Staatsamtes für Inneres und Unterricht über den Gesetzesbeschluss des Niederösterreichischen Landtages zur Einhebung von Beerdigungsgebühren in mehreren Gemeinden</ref></item>
+                  <item><ref target="#krp-0185_top08">Zu TOP 8</ref>: <ref target="#krp-0185_b07">Vortrag des Staatsamtes für Inneres und Unterricht über den Gesetzesbeschluss des Niederösterreichischen Landtages zur Einhebung von Totenbeschaugebühren in mehreren Gemeinden</ref></item>
+                  <item><ref target="#krp-0185_top09">Zu TOP 9</ref>: <ref target="#krp-0185_b08">Vortrag des Staatsamtes für Inneres und Unterricht über den Gesetzesbeschluss des Niederösterreichischen Landtages zur Teilung mehrerer Gemeinden und die Bildung der Gemeinde Ungerbach</ref></item>
+                  <item><ref target="#krp-0185_top10">Zu TOP 10</ref>: <ref target="#krp-0185_b09">Vortrag des Staatsamtes für Inneres und Unterricht zu Zl. 12.439/1920 über die Erhöhung der Umlaufsumme der Schuldverschreibungen der Kommunal-Creditanstalt des Landes Oberösterreich von 100 auf 150 Millionen K</ref></item>
+                  <item><ref target="#krp-0185_top11">Zu TOP 11</ref>: <ref target="#krp-0185_b10">Vorlage der Staatsregierung der Novelle des Urheberrechtsgesetzes mit Begründung</ref></item>
+                  <item><ref target="#krp-0185_top12">Zu TOP 12</ref>: <ref target="#krp-0185_b11">Vollzugsanweisung des Unterrichtsamtes über die Verwaltung der ehemals hofärarischen Theater</ref></item>
+               </list>
+            </div>
+            <div type="protokoll">
+               <pb facs="krp-0185_r-0003"/>
+               <div type="top" xml:id="krp-0185_top01">
+                  <head>
+                     <label>
+                        <num n="1">1.</num>
+                        <seg>Beitritt zu mehreren Gesetzesbeschlüssen der Nationalversammlung.</seg>
+                     </label>
+                  </head>
+                  <p>Nach dem Vorschlag des <hi rend="#letterspaced">Vorsitzenden</hi> erhebt der Kabinettsrat gegen folgende von der Nationalversammlung beschlossene Gesetze keine Vorstellung:</p>
+                  <list>
+                     <item n="1"><label>1.)</label> Gesetz, womit einige Bestimmungen der Gesetze vom 18. Dezember 1919, StGBl. Nr. 570, 571 und 572, und des Gesetzes vom 22. März 1920, StGBl. Nr. 134, abgeändert und ergänzt werden (2. Nachtrag zum Besoldungsübergangsgesetz).</item>
+                     <item n="2"><label>2.)</label> Gesetz über die Verwendbarkeit der von der Gemeinde Wien aufgrund des mit dem niederösterreichischen Landesgesetze vom 28. April 1920, LGBl. Nr. 235, bewilligten Anlehens auszugebenden Schatzscheine zur fruchtbringenden Anlegung von Stiftungs-, Pupillar- und ähnlichen Kapitalien.</item>
+                     <item n="3"><label>3.)</label> Gesetz, betreffend die Gebühren der österreichischen Wehrmacht (Heeresgebührengesetz).</item>
+                     <item n="4"><label>4.)</label> Finanzgesetz.</item>
+                     <item n="5"><label>5.)</label> Gesetz über die Entrichtung einer Abgabe von Spielen in öffentlichen Lokalen zur Fürsorge für Kriegsbeschädigte, Kriegerwitwen und Kriegerwaisen (Spielabgabengesetz).</item>
+                  </list>
+                  <p>Diese Gesetze sind demgemäß nach Gegenzeichnung durch den Staatskanzler und die zuständigen Staatssekretäre dem Präsidenten der Nationalversammlung zur Fertigung vorzulegen.</p>
+                  <p><pb facs="krp-0185_r-0004"/></p>
+               </div>
+               <div type="top" xml:id="krp-0185_top02">
+                  <head>
+                     <label>
+                        <num n="2">2.</num>
+                        <seg>Bestellung des österreichischen Vertreters in der Volksabstimmungskommission für das Gebiet von Klagenfurt.</seg>
+                     </label>
+                  </head>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> führt aus, dass nach Art. 50 des Friedensvertrages von St. Germain die Volksabstimmungskommission, der das Gebiet von Klagenfurt unterstellt wird, aus sechs Mitgliedern zu bestehen habe, von denen vier von den Vereinigten Staaten, Großbritannien, Frankreich und Italien, je ein Mitglied von Österreich und dem SHS-Staat ernannt werden.</p>
+                  <p>Da Großbritannien, Frankreich und Italien ihre Delegierten bereits ernannt haben – Amerika, das bekanntlich an der Durchführung des Friedensvertrages sich nicht aktiv beteiligt, werde überhaupt keine Vertreter entsenden – und das Inkrafttreten des Vertrages schon in nächster Zeit zu gewärtigen sei, ergebe sich die Notwendigkeit, dass auch die österreichische Regierung ihren Vertreter ehestens namhaft mache.</p>
+                  <p>Über Aufforderung des Staatsamtes für Äußeres, einen geeigneten Kandidaten namhaft zu machen, habe die Kärntner Landesregierung mit Landesratsbeschluss vom 4. d. M. den Fregattenkapitän Albert Peter vorgeschlagen, der bereits im Vorjahre zweimal in Kärntner Angelegenheiten in Rom weilte und infolge des Umstandes, dass er dermalen in der Vertretung Kärntens bei <pb facs="krp-0185_r-0005"/>der interalliierten Militärmission in Klagenfurt tätig ist, die Verhältnisse im Klagenfurter Becken genau kennt.</p>
+                  <p>Da Fregattenkapitän Peter durch diese seine bisherigen Verwendungen und durch die Sprachkenntnisse für die in Rede stehende Mission qualifiziert erscheine und er nach dem Ergebnis einer Anfrage in Rom auch der italienischen Regierung genehm sei, bitte Redner den Kabinettsrat zur Kenntnis zu nehmen, dass er den Genannten als Vertreter Österreichs in der Abstimmungskommission in Aussicht nehme.</p>
+                  <p>Die Festsetzung und Liquidierung der Gebühren für den Genannten werden dem Staatsamte für Inneres obliegen, in dessen Ressort die Aufbringung der durch die erwähnte Kommission auflaufenden Kosten fällt.</p>
+                  <p>Der Kabinettsrat nimmt die Mitteilungen des Vorsitzenden zur Kenntnis.</p>
+               </div>
+               <div type="top" xml:id="krp-0185_top03">
+                  <head>
+                     <label>
+                        <num n="3">3.</num>
+                        <seg>Übernahme der aus den Nationalstaaten vertriebenen Staats- und Eisenbahnangestellten.</seg>
+                     </label>
+                  </head>
+                  <p>Über Aufforderung des <hi rend="#letterspaced">Vorsitzenden</hi> berichtet Sektionsrat Dr. <hi rend="#letterspaced">Schwegel</hi> über das Ergebnis der am 19. d. M. in Angelegenheit der Übernahme der aus den Nationalstaaten vertriebenen Staats- und Eisenbahnangestellten durchgeführten zwischenstaatsamtlichen Besprechung. Hienach werden in Hinsicht auf den bereits <pb facs="krp-0185_r-0006"/>vom Kabinettsrate zum Beschlusse erhobenen Gesetzentwurf, betreffend Maßnahmen für die Behandlung ehemals österreichischer Zivilstaats- (Staatsbahn-) angestellter aus Anlass ihrer Übernahme in den Dienst der Republik Österreich, sowie hinsichtlich der dem Kabinettsrate bereits vorgelegten „Richtlinien“ folgende Änderungen in Antrag gebracht:</p>
+                  <p><hi rend="#u">Zum Gesetzentwurfe:</hi></p>
+                  <p>(siehe Beilage A zu diesem Protokoll)</p>
+                  <p>Die Einschaltung eines neuen Satzes im § 1 Abs. 2 mit folgendem Texte:</p>
+                  <p>„Auf eine Nachzahlung auf die nach Abs. 1 sich ergebenden Bezüge haben die übernommenen Angestellten nur für die Zeit ihrer tatsächlichen Verwendung im Staats-(Staatseisenbahn-)dienst Anspruch.“</p>
+                  <p>Durch diese Bestimmung solle die vom Kabinettsrate am 18. Mai d. J. bereits beschlossene Fassung des Gesetzes aus dem Grunde geändert werden, um in einwandfreier Weise einen zu weitgehenden Anspruch der übernommenen Staatsbediensteten für die Zeit ihrer Nichtverwendung im österreichischen Dienste zu verhindern.</p>
+                  <p><hi rend="#u">Zu den Richtlinien:</hi></p>
+                  <p>(siehe Beilage B zu diesem Protokoll)</p>
+                  <p>Die neue Fassung unter I, Abs. 2, verfolge im Wesentlichen nur den Zweck, einen Stichtag festzusetzen, wodurch der Kreis derjenigen Angestellten festgelegt <pb facs="krp-0185_r-0007"/>wird, welche vorläufig von der Übernahme ausgeschlossen bleiben müssen.</p>
+                  <p>Dieser Stichtag werde für den Zeitpunkt des zu fassenden Kabinettsratsbeschlusses in Aussicht genommen.</p>
+                  <p>Die Bestimmung unter Abs. 3 der ursprünglichen Richtlinien, betreffend die Festsetzung des Ausmaßes der Ruhebezüge, wurde aus dem Grunde eliminiert, weil diese Materie einem abgesonderten Beschlusse des Kabinettsrates vorbehalten sein soll, der in den nächsten Tagen vom Staatsamte für Finanzen werde eingeholt werden.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Reisch</hi> wünscht eine Ergänzung des Pkt. I Abs. 1, der Richtlinien in dem Sinne, dass hinsichtlich der Zahl der zu übernehmenden Angestellten das Einvernehmen mit dem Staatsamte für Finanzen zu pflegen sein werde.</p>
+                  <p>Die Staatssekretäre <hi rend="#letterspaced">Paul</hi> und <hi rend="#letterspaced">Eldersch</hi> sowie Unterstaatssekretär Dr. <hi rend="#letterspaced">Eisler</hi> sprechen sich gegen diese Ergänzung aus, da es sich nicht um Neuaufnahmen, sondern um die Weiterverwendung von Beamten handle.</p>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> verweist darauf, dass die ganze Übernahmsaktion aus Kommiserationsgründen und zur Wahrung des nationalen Prestiges durchgeführt werde, und ersucht den Staatssekretär für Finanzen <pb facs="krp-0185_r-0008"/>von seiner Forderung Abstand zu nehmen.</p>
+                  <p>Der Kabinettsrat stimmt sohin der Einbringung des Gesetzentwurfes in der Nationalversammlung zu und genehmigt die Richtlinien in der vorgelegten Fassung.</p>
+               </div>
+               <div type="top" xml:id="krp-0185_top04">
+                  <head>
+                     <label>
+                        <num n="4">4.</num>
+                        <seg>Kompetenzabgrenzung zwischen dem Staatsamt für Verkehrswesen und den Staatsbahndirektionen.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Paul</hi> führt aus, dass die im Organisationsstatut für die staatliche Eisenbahnverwaltung vom 19. Jänner 1896, RGBl. Nr. 16, sowie in den sogenannten Maßnahmenerlässen des vormaligen Eisenbahnministeriums vom 1. Juli 1909, Zl. 16.512, und vom 5. Mai 1911, Zl. 864/E.M., in finanziellen Belangen festgelegten Zuständigkeiten infolge der eingetretenen Geldentwertung eine derartige Verschiebung erfahren haben, dass die Mehrzahl der Angelegenheiten, die von den äußeren Dienststellen selbständig erledigt werden sollten, nunmehr den Staatsbahndirektionen und dem Staatsamte für Verkehrswesen zur Erledigung anfallen. Die notwendige Folge dieser Zuständigkeitsverschiebungen seien ungeheuerliche Arbeitshäufungen bei den Staatsbahndirektionen und beim Staatsamte für Verkehrswesen, worunter nicht nur die Bahnverwaltung, sondern auch die Bahnbenützer und die ganze Volkswirtschaft schwer leiden müssen.</p>
+                  <p>Insoweit durch die Allerhöchste Ent<pb facs="krp-0185_r-0009"/>schließung vom 12. April 1852 über den allgemeinen Wirkungskreis der k. k. Ministerien die Möglichkeit gegeben sei, den dargestellten Missständen innerhalb der bestehenden finanziellen Zuständigkeiten des Staatsamtes für Verkehrswesen durch Übertragung von Zuständigkeiten an die Staatsbahndirektionen und die äußeren Dienststellen abzuhelfen, werde dies binnen kürzester Zeit geschehen.</p>
+                  <p>Eine solche eng begrenzte Maßnahme erscheine jedoch bei den gegebenen Verhältnissen als völlig unzureichend, vielmehr erachte Redner es mit Rücksicht auf die vorgeschrittene Geldentwertung, deren Abbau wohl kaum im raschen Tempo erfolgen dürfte, für unumgänglich notwendig, den allgemeinen Wirkungskreis des Staatsamtes für Verkehrswesen hinsichtlich der Verwaltung der Staatseisenbahnen in finanzieller Hinsicht durch eine lineare Erhöhung der in vorgenannter Allerhöchster Entschließung genannten Zifferngrenzen auf das Zehnfache zu erweitern.</p>
+                  <p>Hinsichtlich der Vergebungen von Lieferungen und Arbeiten wären die Zifferngrenzen der Verordnung des Gesamtministeriums vom 3. April 1909, RGBl. Nr. 61, (§§ 4 und 5) zumindest auf das Zwanzigfache zu erhöhen.</p>
+                  <p>Der sprechende Staatssekretär verweist bei diesem Anlasse auch darauf, dass seine Bestrebungen nach einem weitgehenden Personalabbau im Staatsamte für Verkehrswesen ergebnis<pb facs="krp-0185_r-0010"/>los bleiben müssten, insolange die gegenständlichen Zuständigkeitsverschiebungen und die dadurch im Staatsamte bedingte Mehrarbeit die Beibehaltung eines großen Dienststellen- und Beamtenapparates erheische.</p>
+                  <p>Durch die beabsichtigten Änderungen in den finanziellen Zuständigkeiten werde, da das System der Verwaltung im Wesen nicht berührt werde, den vom Kabinettsrate seinerzeit noch zu genehmigenden Grundsätzen für eine künftige grundlegende Neuordnung der Staatseisenbahnverwaltung in keiner Weise vorgegriffen. Die Zuständigkeit des Kabinettsrates sei gegeben, soweit es sich im vorliegenden Falle um eine Abänderung des allgemeinen Wirkungskreises des Staatsamtes für Verkehrswesen und des auf einer Allerhöchsten Entschließung beruhenden Organisationsstatutes der Staatseisenbahnverwaltung handle.</p>
+                  <p>Redner stelle den Antrag, der Kabinettsrat wolle beschließen:</p>
+                  <list>
+                     <item n="1"><label>1.)</label> Der in der Allerhöchsten Entschließung vom 12. April 1852 festgesetzte allgemeine Wirkungskreis der k. k. Ministerien wird betreffend die vom Staatsamte für Verkehrswesen geleitete Staatseisenbahnverwaltung durch eine lineare Erhöhung aller in der genannten Vorschrift vorgesehenen Zifferngrenzen auf das Zehnfache erweitert.</item>
+                  </list>
+                  <p>Hinsichtlich der in der Verordnung des Gesamtministeriums vom 3. April 1909, RGBl. <pb facs="krp-0185_r-0011"/>Nr. 61 (Vergebung staatlicher Lieferungen und Arbeiten), im § 4 Abs. c) und § 5 Abs. i) vorgesehenen Zifferngrenzen hat eine zwanzigfache Erhöhung einzutreten.</p>
+                  <list>
+                     <item n="1"><label>2.)</label> Der Staatssekretär für Verkehrswesen wird ermächtigt, nach eigenem Ermessen unter Berücksichtigung der Bedürfnisse der Staatseisenbahnverwaltung und der Bahnbenützer die Zuständigkeiten der Staatsbahndirektionen und äußeren Dienststellen unter Anpassung an die Geldentwertung und auf die Dauer einer solchen entsprechend auszugestalten.</item>
+                  </list>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Reisch</hi> erhebt gegen die beantragte Erweiterung des Wirkungskreises der Staatsbahndirektionen und äußeren Dienststellen keine Einwendung, hingegen würde er es angesichts der bevorstehenden Verfassungs- und Verwaltungsreform nicht für empfehlenswert erachten, dass das Staatsamt für Verkehrswesen für sich allein eine Änderung seiner Kompetenzen erfahre, welche zur Folge hätte, dass die Ingerenz des Staatsamtes für Finanzen geschmälert würde. Die Neuregelung des Wirkungskreises der Staatsämter hätte einheitlich gelegentlich der Verfassungsreform zu erfolgen. Redner ersuche daher, den ersten Teil des Antrages zurückzustellen und noch einer Vorberatung im Kreise der Staatsämter unterziehen zu lassen.</p>
+                  <p>Der Kabinettsrat pflichtet dieser Auffassung bei und erteilt dem Staatssekretär für <pb facs="krp-0185_r-0012"/>Verkehrswesen die unter Pkt. 2 des Antrages erbetene Ermächtigung. Die Schlussfassung über die beantragte Erweiterung des Wirkungskreises des Staatsamtes für Verkehrswesen wird zum Zwecke der vorherigen Durchberatung im Kreise der Staatsämter vertagt.</p>
+               </div>
+               <div type="top" xml:id="krp-0185_top05">
+                  <head>
+                     <label>
+                        <num n="5">5.</num>
+                        <seg>Bestimmung des Titels „Lottoamtsdirektor“ für die in die VII. Rangsklasse versetzten Lottobeamten.</seg>
+                     </label>
+                  </head>
+                  <p>Über Antrag des Staatssekretärs Dr. Reisch bestimmt der Kabinettsrat für die in die VII. Rangsklasse versetzten Lottobeamten den Titel „Lottoamtsdirektor“.</p>
+               </div>
+               <div type="top" xml:id="krp-0185_top06">
+                  <head>
+                     <label>
+                        <num n="6">6.</num>
+                        <seg>Gesetzesbeschluss des Niederösterreichischen Landtages, betreffend Änderungen des Gemeindestatutes und der Gemeindewahlordnung für die Stadt Wien.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Eldersch</hi> unterbreitet dem Kabinettsrate einen Gesetzesbeschluss des Niederösterreichischen Landtages, betreffend Änderungen des Gemeindestatutes und der Gemeindewahlordnung für die Stadt Wien.</p>
+                  <p>Nach den Bestimmungen des derzeit geltenden Gemeindestatutes für Wien stehe die oberste Leitung der gesamten Stadtverwaltung dem Bürgermeister zu, neben welchem als beschließende Organe der Gemeinderat und der Stadtrat fungieren. Der Wirkungskreis des Gemeinderates werde durch die im § 74 des Gemeindestatutes enthaltene Generalkompetenzklausel zu Gunsten des Stadtrates eingeengt, so dass die Mitglieder des Gemeinderates, soferne sie <pb facs="krp-0185_r-0013"/>nicht die Funktion eines Bürgermeisters oder Vizebürgermeisters bekleiden oder Mitglieder des Stadtrates sind, von jeder Verwaltungstätigkeit im eigentlichen Sinne des Wortes nahezu ausgeschlossen seien.</p>
+                  <p>Die ungemein zahlreichen Agenden der Gemeinde können naturgemäß durch den Bürgermeister allein nicht versehen werden; er musste darum die Beamtenschaft in weitgehendem Maße zur selbständigen Mitarbeit heranziehen, so dass ein wesentlicher Teil der Verwaltung in die Hände der Gemeindebürokratie überging.</p>
+                  <p>Diese Art der Verwaltung entspreche keineswegs den Grundsätzen der Selbstverwaltung, und habe daher die Bestrebungen, das Gemeindestatut für Wien auf andere Grundlagen zu stellen, ausgelöst.</p>
+                  <p>Der Niederösterreichische Landtag habe nun in seiner Sitzung am 29. April 1920 über Antrag des Wiener Gemeinderates eine Novelle zum Gemeindestatute für Wien beschlossen, welche das bisherige System der Verwaltung in grundlegender Weise ändert und die ganze Verwaltung den gewählten Vertrauensmännern unterstellt. Als Verwaltungsorgane werden durch § 19 des Entwurfes der Gemeinderat, der Bürgermeister, der Stadtsenat und die einzelnen amtsführenden Stadträte, die Gemeinderatsausschüsse, die Bezirksvertretungen und die Bezirksvorsteher, der Magistrat und das Kon<pb facs="krp-0185_r-0014"/>trollamt berufen.</p>
+                  <p>Die ganze Verwaltung solle in Gruppen gegliedert werden, denen je ein Gemeinderatsausschuss und eine Geschäftsgruppe des Magistrates entspricht. Die Gemeinderatsausschüsse sollen den größten Teil der heutigen Stadtratskompetenz erhalten; für sie gelte die Generalkompetenzklausel des § 74 des Statutes. Sie stellen (§ 86) die beschließenden Organe der Gemeinde in allen Angelegenheiten des selbständigen Wirkungskreises dar, welche nach dem Entwurfe nicht anderen Organen zugewiesen sind; auch obliege ihnen die Vorberatung in den Angelegenheiten, die in den Wirkungskreis des Gemeinderates oder des Stadtsenates gehören.</p>
+                  <p>Jeder Gemeinderatsausschuss bestehe aus dem zuständigen amtsführenden Stadtrate und einer vom Gemeinderat zu bestimmenden Anzahl von Mitgliedern, die einschließlich des Stadtrates mindestens zwölf betragen müsse (§ 34).</p>
+                  <p>Der amtsführende Stadtrat sei der ständige Berichterstatter im Gemeinderate.</p>
+                  <p>Um die Verbindung zwischen Amt und Volksvertretung inniger zu gestalten, sollen leitende Beamte der magistratischen Gruppen den Ausschusssitzungen mit beratender Stimme und dem Rechte der Antragstellung zugezogen werden (§ 36).</p>
+                  <p>Die amtsführenden Stadträte seien gleichzeitig Leiter der magistratischen Gruppen und bilden in ihrer Gesamtheit mit dem Bürgermei<pb facs="krp-0185_r-0015"/>ster an der Spitze den Stadtsenat. Die Mindestzahl der Mitglieder des Stadtsenates betrage neun (§ 28). Dem Stadtsenat obliegen die Vorberatung der in den Wirkungskreis des Gemeinderates fallenden Angelegenheiten, die Ernennung und Enthebung der Beamten und Lehrer, die Ausübung der Präsentationsrechte, die Aufsicht über die Vermögensverwaltung, die Entscheidung über den Beginn oder die Beendigung eines Rechtsstreites, Abschlüsse von Vergleichen u. dgl.</p>
+                  <p>Auch könne der Stadtsenat im Falle der Dringlichkeit in Angelegenheiten, die in den Wirkungskreis des Gemeinderates fallen, nach Vorberatung im zuständigen Ausschuss Verfügungen treffen, welche in der nächsten Sitzung dem Gemeinderate zur Genehmigung vorzulegen sind.</p>
+                  <p>Er entscheide ferner, soferne in den Gesetzen nicht eine andere Beschwerdeinstanz gegeben ist, über Beschwerden gegen Verfügungen des Magistrates, eines magistratischen Bezirksamtes oder eines Bezirksvorstehers, dann gegen Beschlüsse einer Bezirksvertretung in den zum selbständigen Wirkungskreis gehörenden Angelegenheiten.</p>
+                  <p>Durch eine ausdrückliche Entschließung könne der Gemeinderat über Antrag des Bürgermeisters oder des vierten Teiles aller Gemeinderatsmitglieder einem Mitgliede des Stadtsenates das Vertrauen entziehen, wodurch <pb facs="krp-0185_r-0016"/>dieses das Stadtratsmandat verliert (§ 74 ff).</p>
+                  <p>Die Anordnung, dass Gegenstände, die in den Wirkungskreis des Gemeinderates fallen, in den Gemeinderatsausschüssen (§ 86) und im Stadtsenate (§ 74) einer eingehenden Parteiberatung unterzogen werden, sowie die weitere, diese ergänzende Anordnung (§ 63 a), dass der Gegenstand der Tagesordnung zwei Tage vor der Sitzung bekanntzugeben ist und vom Gemeinderat als angenommen anzusehen ist, wenn nicht ausdrücklich das Begehren um Verhandlung des Gegenstandes im Plenum gestellt wird (§ 63 a), lasse eine wesentliche Verminderung der Arbeiten des Gemeinderatsplenums erwarten.</p>
+                  <p>Das Recht, dieses Begehren zu stellen, stehe jedem Gemeinderatsmitgliede zu, so dass von einer Knebelung selbst der kleinsten Partei nicht die Rede sein kann.</p>
+                  <p>Auch sei jedes Gemeinderatsmitglied befugt, an den Sitzungen der Ausschüsse teilzunehmen; die Gemeinderatsmitglieder können in die Protokolle der Ausschüsse und des Stadtsenates Einsicht nehmen, so dass ihnen eine Information über alle Verwaltungsangelegenheiten jederzeit ermöglicht ist.</p>
+                  <p>Die Stellung des Bürgermeisters erfahre durch den Entwurf eine wesentliche Änderung. Was er für den ganzen Magistrat sein sollte, aber nicht sein konnte, gehe auf die amtsführenden Stadträte über; aber da ihm die amtsführenden Stadträte, die Bezirksvorsteher, <pb facs="krp-0185_r-0017"/>alle Beamten und Angestellten der Gemeinde sowie ihrer Anstalten untergeordnet sind, bleibe er das Oberhaupt der ganzen Verwaltung und der Vorstand des Magistrates. Er habe auch Sitz und Stimme in allen Ausschüssen und könne die Ausführung von Beschlüssen des Stadtsenates, der Gemeinderatsausschüsse wie der Bezirksvertretungen sistieren.</p>
+                  <p>Bei vorhandener Dringlichkeit könne der Bürgermeister unter seiner Verantwortung in Angelegenheiten, die in den Wirkungskreis eines Gemeinderatsausschusses, des Stadtsenates und des Gemeinderates fallen, gegen nachträgliche Genehmigung der zuständigen Gemeindeorgane Verfügungen treffen.</p>
+                  <p>Die Rechnung- und Gebarungskontrolle stehe dem vom Magistrate unabhängigen Kontrollamte zu, dessen Aufgabenkreis in einer vom Gemeinderate festzusetzenden Geschäftsordnung umschrieben werden solle. Dem Kontrollamte, dem dauernd oder vorübergehend auch Personen angehören können, die vertragsmäßig angestellt sind, stehe die unmittelbare Berichterstattung an den Bürgermeister und den Gemeinderat zu (§ 41 a).</p>
+                  <p>Die Mandate des Bürgermeisters, der Vizebürgermeister, des Stadtsenates, der Ausschüsse und aller Körperschaften, über deren Zusammensetzung die Gemeinde entscheidet, sollen auf die einzelnen Parteien im Verhältnisse zu ihrer Mitgliederzahl aufgeteilt werden, so <pb facs="krp-0185_r-0018"/>dass jede Partei des Gemeinderates nach Maßgabe ihrer Stärke an der Verwaltung Anteil nehmen könne.</p>
+                  <p>Der Entwurf ermögliche mithin den gewählten Vertrauensmännern des Volkes eine tatsächliche Mitarbeit an der Verwaltung der Stadt und sichere gleichzeitig durch Schaffung kleinerer Kollegien und entsprechender Geschäftseinteilung die ordnungsmäßige Durchführung der Verwaltung.</p>
+                  <p>Nach dem im Einvernehmen mit dem Staatsamte für Finanzen gestellten Antrage des sprechenden Staatssekretärs beschließt der Kabinettsrat gegen den Entwurf keine Vorstellung zu erheben und der sofortigen Verlautbarung des Landesgesetzes zuzustimmen.</p>
+               </div>
+               <div type="top" xml:id="krp-0185_top07">
+                  <head>
+                     <label>
+                        <num n="7">7.</num>
+                        <seg>Gesetzesbeschluss des Niederösterreichischen Landtages, betreffend die Einhebung von Beerdigungsgebühren in mehreren Gemeinden.</seg>
+                     </label>
+                  </head>
+                  <p>Nach dem Antrage des Staatssekretärs <hi rend="#letterspaced">Eldersch</hi> beschließt der Kabinettsrat von der Erhebung einer Vorstellung gegen die Gesetzesbeschlüsse des Niederösterreichischen Landtages vom 29. April l. J., betreffend die Einhebung von Beerdigungsgebühren in den Gemeinden Hohenberg, Hainburg an der Donau, Traisen, Mödling und Tulln abzusehen und deren sofortigen Kundmachung zuzustimmen.</p>
+                  <p><pb facs="krp-0185_r-0019"/></p>
+               </div>
+               <div type="top" xml:id="krp-0185_top08">
+                  <head>
+                     <label>
+                        <num n="8">8.</num>
+                        <seg>Gesetzesbeschlüsse des Niederösterreichischen Landtages, betreffend die Einhebung von Totenbeschaugebühren in mehreren Gemeinden.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Eldersch berichtet, dass der Niederösterreichische Landtag in seiner Sitzung vom 29. April 1920 11. Gesetzentwürfe beschlossen habe, wonach den Gemeinden Mautern, Stein an der Donau, Vitis (einschließlich der Dörfer Kaltenbach, Schachersdorf und Schobersdorf), Lilienfeld, Schweigers, Oberstrahlbach, Thenneberg, Petzelsberg, Etzen, Waidhofen an der Thaya und Natschbach die Bewilligung zur Einhebung von Totenbeschaugebühren erteilt wird.</p>
+                  <p>Redner erbittet und erhält die Ermächtigung, der Niederösterreichischen Landesregierung mitteilen zu dürfen, dass von der Erhebung einer Vorstellung gegen diese Gesetzesbeschlüsse Abstand genommen und ihrer sofortigen Kundmachung zugestimmt werde.</p>
+               </div>
+               <div type="top" xml:id="krp-0185_top09">
+                  <head>
+                     <label>
+                        <num n="9">9.</num>
+                        <seg>Gesetzesbeschlüsse des Niederösterreichischen Landtages, betreffend die Teilung mehrerer Gemeinden.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Eldersch bringt dem Kabinettsrate zur Kenntnis, dass das Staatsamt für Inneres und Unterricht gegen die Gesetzesbeschlüsse des Niederösterreichischen Landtages vom 29. April 1920, betreffend die Teilung der Gemeinden Muckendorf, Posselsdorf, Sittendorf, Reidlingberg-Pyrafeld, Gopprechts, Walkenstein und Unter-Waltersdorf und betreffend die Bildung der Gemeinde Ungerbach verwaltungspolitische Bedenken trage und um nicht die mit 21. Mai l. J. zu Ende gehende <pb facs="krp-0185_r-0020"/>14-tägige Frist des Art. 14 des Gesetzes über die Volksvertretung zu versäumen, in Anhoffnung der nachträglichen Genehmigung des Kabinettsrates bereits mit dem an die Niederösterreichische Landesregierung gerichteten Erlasse vom 18. Mai 1920, Zl. 18.844, gegen diese Gesetzesbeschlüsse Vorstellung erhoben habe.</p>
+                  <p>Nach dem Antrage des sprechenden Staatssekretärs beschließt der Kabinettsrat, der erhobenen Vorstellung nachträglich beizutreten. </p>
+               </div>
+               <div type="top" xml:id="krp-0185_top10">
+                  <head>
+                     <label>
+                        <num n="10">10.</num>
+                        <seg>Erhöhung der Umlaufsumme der Schuldverschreibungen der Communal-Creditanstalt des Landes Oberösterreich von 100 auf 150 Millionen K.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Eldersch führt aus, dass der Oberösterreichische Landesausschuss einen in seiner Sitzung vom 23. September 1918 gefassten Beschluss, betreffend die Erhöhung der Umlaufsumme der Schuldverschreibungen der Kommunalkreditanstalt des Landes Oberösterreich von 100 auf 150 Millionen K dem bestandenen Ministerium des Innern zur Erwirkung der kaiserlichen Genehmigung vorgelegt hatte. Da aber der § 3 der im LG. u. VBl. des Landes Oberösterreich kundgemachten Anstaltsstatuten zur Erhöhung der Umlaufsumme der Schuldverschreibungen einem der kaiserlichen Genehmigung unterliegenden Landtagsbeschluss fordere, habe das Staats<pb facs="krp-0185_r-0021"/>amt für Inneres [und Unterricht] die Angelegenheit zunächst zur Beschlussfassung durch die Provisorische Landesversammlung von Oberösterreich zurückgeleitet. Diese habe am 13. Jänner 1919 den bezüglichen Beschluss gefasst, wobei sie jedoch offenbar von der Annahme ausging, dass dieser Beschluss endgültig sei und keiner weiteren Genehmigung bedürfe. Angesichts des Art. 3 des Gesetzes vom 12. November 1918, StGBl. Nr. 5 bzw. Art. 6 des Gesetzes vom 14. März 1919, StGBl. Nr. 180 unterliege jedoch nunmehr dieser Beschluss im Hinblicke auf die hieraus möglicherweise dem Lande erwachsende finanzielle Belastung gemäß § 20 der Landesordnung zweifellos der Genehmigung der Staatsregierung.</p>
+                  <p>Die Summe der in Umlauf befindlichen Schuldverschreibungen habe bereits im August 1918 über 85 Millionen K betragen; anlässlich der deutschösterreichischen Staatsanleihe hatte die Anstalt weitere Kreditansprüche der Gemeinden zu befriedigen, sodass die bisherige Umlaufsumme der Schuldverschreibungen von 100 Millionen K nicht mehr als ausreichend angesehen werden könne, um dem nunmehrigen, durch die allgemeine Wirtschaftslage hervorgerufenen weiteren sehr bedeutenden Kreditbedarf der oberösterreichischen Gemeinden nachzukommen.</p>
+                  <p><pb facs="krp-0185_r-0022"/>Im Einvernehmen mit dem Staatsamt für Finanzen stelle Redner den Antrag, der Kabinettsrat wolle den Beschluss der Provisorischen Landesversammlung des Landes Oberösterreich vom 13. Jänner 1919, betreffend die Erhöhung der Umlaufsumme der Schuldverschreibungen der Communal-Creditanstalt des Landes Oberösterreich von 100 auf 150 Millionen K mit der Maßgabe genehmigen, dass das Land Oberösterreich im Wege der oberösterreichischen Landesregierung unter Hinweis auf die obigen gesetzlichen Bestimmungen darüber aufzuklären ist, dass nunmehr an die Stelle der kaiserlichen Genehmigung die Genehmigung der Staatsregierung getreten ist.</p>
+                  <p>Gleichzeitig erbitte sich der sprechende Staatssekretär die Ermächtigung, die infolge der Änderung des Schuldverschreibungshöchstbetrages notwendig werdende Änderung des Bankstatutes, die nach § 39 des Bankstatutes nur „durch Allerhöchst genehmigte Landtagsbeschlüsse“ erfolgen könne, namens der Staatsregierung im Einvernehmen mit dem Staatsamte für Finanzen im eigenen Wirkungskreise genehmigen zu dürfen.</p>
+                  <p>Der Kabinettsrat beschließt im Sinne des gestellten Antrages.</p>
+                  <p><pb facs="krp-0185_r-0023"/></p>
+               </div>
+               <div type="top" xml:id="krp-0185_top11">
+                  <head>
+                     <label>
+                        <num n="11">11.</num>
+                        <seg>Novelle zum Urheberrechtsgesetz.</seg>
+                     </label>
+                  </head>
+                  <p>Unterstaatssekretär Dr. <hi rend="#letterspaced">Eisler</hi> unterbreitet dem Kabinettsrate den Entwurf eines Gesetzes über Änderungen des Gesetzes vom 26. Dezember 1895, RGBl. Nr. 197, betreffend das Urheberrecht an Werken der Literatur, Kunst und Fotografie, und erbittet sich die Ermächtigung zur Einbringung der Vorlage in der Nationalversammlung.</p>
+                  <p>Der sprechende Staatssekretär führt aus, dass der Entwurf das Ergebnis eingehender Beratungen der Fachkreise gebildet und auch die Zustimmung aller beteiligten Staatsämter gefunden habe. Die Novellierung verfolge den Zweck, das österreichische Urheberrechtsgesetz zwingenden Bestimmungen des Berner Übereinkommens anzupassen, um den seit Jahren beabsichtigten Beitritt Österreichs zur Berner Urheberschutzkonvention vollziehen zu können. Dieser Beitritt sei bisher dem Hindernisse begegnet, dass das österreichische Urheberrechtsgesetz vom Jahre 1895 in verschiedenen Richtungen einen weniger weitgehenden Schutz gewähre, als das Berner Übereinkommen für den internationalen Verkehr bindend verlange. Nunmehr verpflichte aber der Art. 239 des Staatsvertrages von St. Germain Österreich dazu, dem revidierten Berner Übereinkommen beizutreten und bis dahin die Werke von Angehörigen eines alliierten oder assoziierten Staates durch besondere Verfügungen in Ge<pb facs="krp-0185_r-0024"/>mäßheit der Grundsätze des Übereinkommens zu schützen.</p>
+                  <p>Es hätte nun nahegelegen, bei der durch diese Bestimmung des Friedensvertrages unvermeidlich gewordenen Änderung des Urheberrechtsgesetzes in erster Linie an die Übernahme des Deutschen Rechtes zu denken, dessen Bestimmungen aus jüngerer Zeit stammen als unser geltendes Gesetz und den Vorschriften des revidierten Berner Übereinkommens vollkommen angepasst sind. Bei den innigen Beziehungen, die gerade auf dem Gebiete des Urheberrechtes zwischen uns und Deutschland bestehen und bei der Sprach- und Kulturgemeinschaft bestehen müssen, könne unser Ziel allerdings nur das sein, zu einer vollkommen gleichförmigen Urheberrechtsgesetzgebung zu kommen. Dieses Ziel lasse sich bei dem gegenwärtigen Anlasse aber noch nicht erreichen, weil die beiden Urheberrechtsgesetze Deutschlands doch bloß eine Entwicklungsstufe darstellen, über welche die heutige Zeit schon in mancher Beziehung hinausgewachsen sei, und weil weiters schon wegen der Kürze der Zeit, in welcher die Angleichung des österreichischen Urheberrechtsgesetzes an das Recht des Berner Übereinkommens durchgeführt werden müsse, vorläufig nicht an eine durchgreifende Reform, sondern im Wesentlichen bloß an eine Abänderung der Bestimmungen gedacht <pb facs="krp-0185_r-0025"/>werden könne, die mit den zwingenden Vorschriften des Berner Rechtes nicht im Einklange stehen. Eine völlige Neugestaltung unseres Urheberrechtes müsse womöglich im Einvernehmen mit dem Deutschen Reiche, einer späteren Zeit vorbehalten bleiben.</p>
+                  <p>Nach kurzen Bemerkungen der Staatssekretäre <hi rend="#letterspaced">Hanusch</hi> und Dr. <hi rend="#letterspaced">Reisch</hi> bezüglich der Bemessung der Dauer der Schutzfrist in § 43 mit 30 Jahren nach dem Tode des Urhebers und einer Erwiderung des Unterstaatssekretärs Dr. <hi rend="#letterspaced">Eisler</hi> erteilt der Kabinettsrat die Ermächtigung zur Einbringung der Vorlage in der Nationalversammlung.</p>
+               </div>
+               <div type="top" xml:id="krp-0185_top12">
+                  <head>
+                     <label>
+                        <num n="12">12.</num>
+                        <seg>Vollzugsanweisung, betreffend die Verwaltung der ehemals hofärarischen Theater.</seg>
+                     </label>
+                  </head>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> teilt mit, dass über die Fassung der bereits in den Kabinettsratssitzungen vom 7. und 11. Mai l. J. verhandelten Vollzugsanweisung, betreffend die Verwaltung der ehemals hofärarischen Theater, nunmehr eine Einigung erzielt worden sei.</p>
+                  <p>Darnach sei statt des Titels „Intendant der österreichischen Staatstheater“ der Titel „Präsident der Staatstheaterverwaltung“ in Aussicht genommen.</p>
+                  <p>Weiters habe der § 4 in Abs. 2 folgende Fassung zu erhalten:</p>
+                  <p><pb facs="krp-0185_r-0026"/>„Es obliegt ihm der Vorsitz in diesem Kuratorium, mit welchem das Einvernehmen in allen Angelegenheiten von größerer Tragweite und grundsätzlicher Bedeutung zu pflegen ist, ebenso die Durchführung der nach § 6 Abs. 1, gefassten Beschlüsse.“</p>
+                  <p>Die Zusammensetzung des Kuratoriums werde dahin abgeändert, dass es aus dem Präsidenten der Staatstheaterverwaltung, den jeweiligen Direktoren der Staatstheater, zwei Mitgliedern des Kunstbeirates, je einem Vertreter des Unterrichtsamtes und des Staatsamtes für Finanzen sowie aus fünf Fachmännern aus dem Gebiete der Literatur, bildenden Kunst und Musik zu bestehen habe. In § 6 habe bei Entfall des ersten Absatzes der Eingang zu lauten „Dem Kuratorium obliegt außer der im § 4 genannten Aufgabe die Verwaltung…….“. </p>
+                  <p>Nach dem Vorschlage des Vorsitzenden erteilt der Kabinettsrat dem Leiter des Unterrichtsamtes die Ermächtigung zur Erlassung der Vollzugsanweisung mit den vorbezeichneten Abänderungen.</p>
+               </div>
+               <div type="top" xml:id="krp-0185_top13">
+                  <head>
+                     <label>
+                        <num n="13">13.</num>
+                        <seg>Regelung des Papierverbrauches der Zeitungen.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Ing. <hi rend="#letterspaced">Zerdik</hi> erbittet die Entscheidung des Kabinettsrates über ein an ihn gelangtes Einschreiten der Zeitungsunternehmungen, einen Teil des <pb facs="krp-0185_r-0027"/>durch den Ausfall der Zeitungsnummer vom Pfingstmontag in Ersparung gebrachten Rotationspapieres dazu verwenden zu dürfen die Nummer vom Pfingstsonntag mit einer größeren Seitenanzahl erscheinen zu lassen.</p>
+                  <p>Der Kabinettsrat beschließt, auf dieses Begehren der Zeitungsunternehmungen nicht einzugehen.</p>
+                  <p/>
+               </div>
+            </div>
+            <div type="anhaenge">
+               <p><pb facs="krp-0185_a01-0001"/>Anhang zum Kabinettsprotokoll Nr. 185 vom 21. Mai 1920.</p>
+               <div n="1">
+                  <head>Landtagswahlen in Kärnten.</head>
+                  <div type="a01_protokoll">
+                     <p>Der Kabinettsrat stimmt über Antrag des Staatssekretärs Dr. <hi rend="#letterspaced">Reisch</hi> zu, dass dem mit dem Titel und Charakter eines Oberfinanzrates bekleideten Finanzrat im Staatsamte für Finanzen Dr. Friedrich Hornik für seine Tätigkeit als provisorischer Leiter des liquidierenden Kriegsministeriums in den Monaten Jänner bis März 1920 eine einmalige Remuneration von sechstausendfünfhundert (6.500) K und von April 1920 angefangen für die Dauer seiner Funktion als Leiter des Militärliquidierungsamtes eine nachhinein zahlbare Monatsremuneration von zweitausendfünfhundert (2.500) K, ferner dem Feldmarschallleutnant des Ruhestandes Eduard Tunk für seine Tätigkeit als Leiter des liquidierenden Ministeriums für Landesverteidigung eine einmalige Remuneration von achttausend (8.000) K erwirkt werde.</p>
+                     <p/>
+                  </div>
+               </div>
+            </div>
+            <div type="stenogramme">
+               <div n="1">
+                  <head>[KRP 185, 21. Mai 1920, Stenogramm Fenz]</head>
+                  <p><pb facs="krp-0185_s01-0001"/>185., 21. /5. '20.</p>
+                  <p>[Zugezogen:] Zedtwitz, </p>
+                  <p>Grimm, </p>
+                  <p>Schwegel, </p>
+                  <p>Wilfling.</p>
+                  <p>Renner: <hi rend="#s">Wir haben</hi> - Ich habe den Gedanken gefasst, unseren Herren Vizekanzler Fink -. </p>
+                  <p>Bild, 20.000 Kronen, unverrechenbarer Erlag der Staatskanzlei.</p>
+                  <p>[Renner]: Beitritt - vollzogen.</p>
+                  <p>Renner: Volksabstimmungskommission in Kärnten.</p>
+                  <p>Artikel 150 bestimmt ...</p>
+                  <p>Fregattenkapitän Peter [ist] Vertrauensmann der Kärntner Landesregierung.</p>
+                  <p>Ich habe in Rom angefragt. Es besteht kein Bedenken gegen Peter. Italien [ist] interessiert, dass das Klagenfurter Becken zu uns kommt.</p>
+                  <p>Schwegel: Das Gesetz [erfuhr eine Änderung] in einem Punkt über Wunsch des Staatsamtes für Finanzen mit Zustimmung der übrigen Staatsämter: § 1, Absatz 2 </p>
+                  <p>&lt;Auf ... Anspruch.&gt;</p>
+                  <p>[Bei] den Richtlinien [erhielt eine] präzisere Fassung auch [Punkt] 1.) Absatz 2.</p>
+                  <p>[Eine] Regelung der Versorgungsgenüsse der Nicht-Übernommenen wird binnen kurzem erfolgen.</p>
+                  <p>Paul: [Punkt] I, Absatz 2 wird zahlreiche Rekr[iminationen] hervorrufen. Wenn jemand 33 Jahre im monarchischen Dienst -.</p>
+                  <p>Reisch: [Ich ersuche, Punkt] I der Richtlinien [zu] ergänzen: "Hierbei ist hinsichtlich der Anzahl der zu übernehmenden Angestellten das Einvernehmen mit dem Staatsamt für Finanzen </p>
+                  <p>zu pflegen." Es könnte sonst die Bedarfsfrage zu lâche behandelt werden. Selbstverständlich, da das </p>
+                  <p>Budget beeinflusst werden wird, so muss das Staatsamt für Finanzen mitreden können wie bei jeder Neusystemisierung. Im Interesse der sehr gebotenen </p>
+                  <p>Sparsamkeit der ganzen Verwaltung ist das ein unausweichliches Erfordernis.</p>
+                  <p>Paul: Das Staatsamt für Finanzen hat zuerst die Forderung gestellt, dass jede einzelne Übernahme vorgelegt und genehmigt werden muss. Das wäre nicht durchführbar gewesen, </p>
+                  <p>hätte aber immerhin die Gewähr [ge]boten, dass jeder einzelne Fall besprochen würde. Wenn aber jetzt das Staatsamt für Finanzen das abstellt auf die Anzahl, ohne dass </p>
+                  <p>das Ressort seinen Anspruch begründen kann, so ist das lediglich [auf] in eine mehr oder weniger wohlwollende Behandlung [ab]gestellt.</p>
+                  <p>Wenn von den bei mir verwendeten 2346 [Bediensteten] der oder jener nicht übernommen wird, so wird er fragen, warum bin ich [bis] jetzt verwendet worden und jetzt nicht [mehr]? </p>
+                  <p>Die Folge wäre, dass sofort eine Minderung seiner Bezüge eintreten muss. Was wird mit den Nicht- Übernommenen geschehen? Ich würde begreifen, wenn </p>
+                  <p>ein bestimmtes Maximum für die Übernahme derjenigen bestimmt würde, die nicht tatsächlich in Verwendung genommen wurden und nur Beihilfen beziehen.</p>
+                  <p><pb facs="krp-0185_s01-0002"/>Renner: Ad Reisch: Wir machen das aus Kommiserationsgründen, dann aus Gründen des Prestiges. </p>
+                  <p>Wir können die Leute, die davongejagt wurden wegen nationaler Zuverlässigkeit jetzt nicht einfach sitzen lassen.</p>
+                  <p>Eldersch: Ich bin derselben Meinung wie Paul. </p>
+                  <p>Das Staatsamt für Finanzen soll gefragt werden wegen der Zahl. Welche Unterlagen hat das Staatsamt für Finanzen für eine Überprüfung?</p>
+                  <p>Eisler: Auch das Staatsamt für Justiz bittet, von der <hi rend="#s">Ingerenz</hi> - [...] des Staatsamtes für Finanzen befreit [zu] werden. </p>
+                  <p>Es handelt sich nicht um Neuaufnahmen, sondern um die Weiterverwendung von Beamten. Es würde die Übernahme furchtbar hinausgezogen werden. </p>
+                  <p>Der jetzige Zustand führt zu fortwährenden Rekr[iminationen] und soll jetzt beendet werden.</p>
+                  <p>Renner: Ich glaube, dass mit Rücksicht [darauf], dass wir den Leuten gegenüber <hi rend="#s">finanziell</hi> - verpflichtet sind, finanziell ein Auge zugedrückt werden soll.</p>
+                  <p>Reisch: Es soll ein Provisorium <hi rend="#s">definitiv gemacht</hi> - stabilisiert werden und das bedeutet eine Vermehrung der Stellen. Wir wollen nichts anderes </p>
+                  <p>als eine Prüfung, ob ein Mehrbedarf auch wirklich vorhanden ist. Es ist keine neue Ingerenz des Staatsamtes für Finanzen, sondern </p>
+                  <p>der jetzige Zustand, dass jeder neue Dienstposten, der kreiert wird, die Zustimmung des Staatsamtes für Finanzen [erfordert].</p>
+                  <p>Renner: Nachdem man sich in den Verhandlungen so geeinigt hat, bitte ich das Staatsamt, Abstand zu nehmen.</p>
+                  <p>[Beschluss]: Richtlinien und Gesetz angenommen.</p>
+                  <p>Renner: [...] Vorsorgen. &lt; &gt;.</p>
+                  <p>Mayr: Ich möchte zur Begründung dieser Anregungen nur folgendes erwähnen: -.</p>
+                  <p>Es ist dringend notwendig, dass wir im Sinne dieser Richtlinien einen Beschluss fassen, wenn wir den gegenwärtigen Zustand unserer Verwaltung und Gesetzgebung </p>
+                  <p>überblicken. Ich habe schon [eine] Zusammenstellung überreicht über das Verhältnis zwischen den Ländern und der Staatsverwaltung - ein unmöglicher Zustand.</p>
+                  <p>Aber auch Erscheinungen in den Ländern zwingen zu einheitlichen Maßnahmen in dieser Richtung. Zum Beispiel der </p>
+                  <p>Beschluss des Tiroler Landtags betreffend [eine] Anschlusskommission. Sie setzt sich auch zur Aufgabe, schon jetzt die Landesverfassung und auch den </p>
+                  <p>Verwaltungsdienst nach reichsdeutschem Muster einzurichten. Es geschehen also Dinge, von denen wir keine Kenntnis haben und die wir verfolgen müssten, </p>
+                  <p>um orientiert zu sein.</p>
+                  <p>Was in den Ländern geschieht, [geschieht] zum Teil auch in den Zentralstellen. In einzelne Gesetze kommen Dinge hinein, die präjudizierend sind </p>
+                  <p>für die Länder. Es zeigt unbewusst ein Auseinander-Regieren.</p>
+                  <p>Wir müssen eine Kommission einsetzen, welche die Vorarbeiten für die Verwaltungsreform leistet. </p>
+                  <p>Auch die Presse (die Grazer Tagespost) verlangt das, was jetzt vorgeschlagen wird. Die Kommission kann schon eine wichtige Vorarbeit für die Verfassungs- - Verwaltungsreform </p>
+                  <p><pb facs="krp-0185_s01-0003"/>[…] machen, indem [sie] eine Sammlung der bisherigen verwaltungsrechtlichen Normen vom Gesichtspunkt, was beizubehalten ist </p>
+                  <p>und was neu zu machen ist, [anlegt]. [Das wird] der Bevölkerung und den Behörden [einen] Überblick geben, was rechtens ist und auch [eine] rasche Arbeit gewährleisten.</p>
+                  <p>Eldersch: Ich bitte, diesen Gegenstand nicht zu erledigen.</p>
+                  <p>Wenn es ein Kontrollorgan über die Staatsämter nicht sein soll, so bedanke ich mich dafür.</p>
+                  <p>[<hi rend="#i">Am Rand:</hi>]Material - Volksernährung, Heerwesen, Unterricht.//</p>
+                  <p>Punkt 6.</p>
+                  <p>Paul: Kompetenzkreis.</p>
+                  <p>Reisch: Gegen die Erweiterung des Wirkungskreises der Unterbehörden habe ich nichts einzuwenden.</p>
+                  <p>Wohl aber würde ich es nicht für empfehlenswert halten, schon wegen der Verfassungs- und Verwaltungsreform, dass das Staatsamt für Verkehrswesen allein </p>
+                  <p>eine Änderung seiner Kompetenz erhält, welche darauf hinausläuft, dass das Staatsamtes für Finanzen [in] seiner Ingerenz einge-</p>
+                  <p>schränkt wird. Ich bitte, den zweiten Teil des Berichtes - [dass dieser] zurückgestellt und noch im Kreise der Staatsämter einer Diskussion </p>
+                  <p>unterzogen wird.</p>
+                  <p>Paul: Ich bin auch mit vorläufig Punkt 2 zufrieden.</p>
+                  <p>[Renner]: Punkt 2 beschlossen; </p>
+                  <p>Punkt 1 noch Vorberatung mit den Staatsämtern.</p>
+                  <p>3. Reisch: Lotto.</p>
+                  <p>Angenommen.</p>
+                  <p>4. a) Eldersch: Gemeindestatut Wien.</p>
+                  <p>Angenommen.</p>
+                  <p>4. b) [Eldersch]: Beerdigungsgebühren.</p>
+                  <p>Angenommen.</p>
+                  <p><pb facs="krp-0185_s01-0004"/>4. c) [Eldersch]: Totenbeschau.</p>
+                  <p>Angenommen.</p>
+                  <p>4. d) [Eldersch]: Gemeindenteilungen.</p>
+                  <p>Vorstellung nachträglich genehmigt.</p>
+                  <p>4. e) [Eldersch]: Umlaufsumme.</p>
+                  <p>Angenommen.</p>
+                  <p>5. Eisler: </p>
+                  <p>Gesetzentwurf über das Urheberrecht.</p>
+                  <p>Der Entwurf [ist das] Ergebnis einer sehr eingehenden Beratung aller Fachkreise, [es besteht] keine Meinungsverschiedenheit zwischen den Staatsämtern.</p>
+                  <p>Es wurde von vielen Seiten großer Wert darauf gelegt, dass die Novellierung zu einer Angleichung an das deutsche Recht führe. </p>
+                  <p>Diese Angleichung jetzt schon durchzuführen, war unmöglich, weil Deutschland selbst daran geht, sein Urheberrecht zu </p>
+                  <p>reformieren. Da wir durch den Friedensvertrag gezwungen waren, unsere Novellierung in Übereinstimmung mit der Berner </p>
+                  <p>Convention zu bringen -. Es ist daher beabsichtigt, wenn Deutschland fertig ist mit seiner Novellierung, auch </p>
+                  <p>grundsätzlich zu novellieren.</p>
+                  <p>Hanusch: 30 Jahre.</p>
+                  <p>Reisch: Es wird unserer Zeit nicht gut anstehen, die Rente länger als auf 30 Jahre auszudehnen.</p>
+                  <p>Hanusch: Ich stehe nicht auf diesem Standpunkt der Verlängerung. Ich wundere mich nur, dass das Justizamt sich auf 30 Jahre </p>
+                  <p>beschränkt.</p>
+                  <p>Eisler: Nach dem heutigen Stand der Literatur ist anzunehmen, dass die 30 Jahre binnen kurzem intern[ational] festgesetzt werden.</p>
+                  <p>Angenommen.</p>
+                  <p><pb facs="krp-0185_s01-0005"/>Renner: </p>
+                  <p>Hornik und Liquidierungsinspektoren – </p>
+                  <p>30.000 [Kronen].</p>
+                  <p>[Hornik bekommt an] [...]-Gebühren 30.000 Kronen jährlich. </p>
+                  <p>Tunk, Fml., 8.000 Kronen Rem[uneration].</p>
+                  <p>[Renner]: Vollz[ugsanweisung] hofärarische Theater.</p>
+                  <p>Änderungen sind enthalten:</p>
+                  <p>§ 4, Absatz 2: 'Es obliegt ihm der Vorsitz in diesem K[uratorium], mit welchem das Einvernehmen </p>
+                  <p>in allen Angelegenheiten ... zu pflegen ist, ebenso die Durchführung der nach § 6, Absatz 1, </p>
+                  <p>gefassten Beschlüsse.'</p>
+                  <p>Der jetzige Absatz 1, § 6 entfällt.</p>
+                  <p>§ 5 -.</p>
+                  <p>§ 7, 'Präsident der Staatstheaterverwaltung'.</p>
+                  <p>Das Unterrichtsamt ist ermächtigt, diese Vollzugsanweisung zu erlassen.</p>
+                  <p>[<hi rend="#i">Am Rand:</hi>] Freitag. Kath. [...], Wiener Messe, detto Lipizzanergestüt.</p>
+                  <p>Zerdik: Die Zeitungen verlangen [einen] </p>
+                  <p>stärkeren Umfang der Pfingstsonntag-Nummer wegen Pfingstmontag, wo keine Zeitung erscheint.</p>
+                  <p>Ellenbogen: Für die Erweiterung der Zeitungen ist geltend gemacht worden, dass sie sonst die Arbeiter entlassen müssen. Aber das trifft </p>
+                  <p>doch bei einer ausfallenden Nummer nicht zu.</p>
+                  <p>Zerdik: Es wäre doch keine so große Sache, wenn man ihnen die acht Seiten gibt.</p>
+                  <p>Hanusch: [Ich bin] dagegen.</p>
+                  <p>[Beschluss]: Abgelehnt.</p>
+                  <p><pb facs="krp-0185_s01-0006"/>Miklas: Es soll an die Tschechen herangetreten werden, ob sie nicht die Konzession, die sie von uns und der Gemeinde Wien verlangen, ihrerseits </p>
+                  <p>für Prag, Brünn und Preßburg machen.</p>
+                  <p>Was die Zulassung nicht-österreichischer Kinder tsch[echischer] Zunge in die Schulen betrifft, so ist das bei uns viel gefährlicher als </p>
+                  <p>drüben. Der Zuzug ist so groß, dass das sehr gefährlich sein kann.</p>
+                  <p>Gefährlich [ist] die Vermischung des Gesetzes zwischen uns und der Tschechei. Wenn wir etwas ändern an den Schulgesetzen, so gilt für die tsch[echischen] Kinder </p>
+                  <p>das alte Gesetz. Das ist doch unmöglich.</p>
+                  <p>Renner: Die Verhandlungen werden in Brünn fortgesetzt.</p>
+                  <p>Mittwoch, Donnerstag und Freitag 3 Uhr Pers[onalsitzung], </p>
+                  <p>meritorische Sitz[ung] Freitag 3 Uhr.</p>
+                  <p>Schluss ¾ 4 Uhr.</p>
+                  <p>Stöckler: </p>
+                  <p>Tarifermäßigung für den Bahntransport von Weidevieh.</p>
+                  <p/>
+               </div>
+               <div n="2">
+                  <head>[KRP 185, 21. Mai 1920, Stenogramm Groß]</head>
+                  <p><pb facs="krp-0185_s02-0001"/>185. Sitzung, 21. Mai 1920.</p>
+                  <p>1.</p>
+                  <p>Renner: </p>
+                  <p>[Ich] ersuche um Kenntnisnahme, ich habe den Gedanken gefasst, mich und den Vizekanzler als den ältesten Parlamentarier des Hauses, </p>
+                  <p>seine Gestalt und [sein] Wesen, dem dauernden Angedenken festzuhalten. Ich habe mit einem Vorarlberger Maler gesprochen und verhandelt wegen </p>
+                  <p>eines persönlichen Gemäldes. Es soll 20 Millionen Kronen kosten. Ich würde das aus den unverrechenbaren Erlägen der </p>
+                  <p>Staatskanzlei bestreiten. [Ich] bitte, das zur Kenntnis zu nehmen.</p>
+                  <p>2., 1.</p>
+                  <p>Renner: </p>
+                  <p>Publizierung von Gesetzen.</p>
+                  <p>3., 2.</p>
+                  <p>Renner: </p>
+                  <p>Volksabstimmungskommission für Kärnten.</p>
+                  <p>Ich habe gebeten, diese Sache vortragen zu dürfen, weil die Bestellung eines Militärs außerhalb der amtlichen </p>
+                  <p>Hierarchie auf Bedenken stoßen könnte. Er ist Vertrauensmann der Kärntner Landesregierung. Ich habe in Rom </p>
+                  <p>ausdrücklich anfragen lassen und es besteht dort gegen die Verwendung Peters kein Bedenken. Italien ist an der Abstimmung stark [daran] </p>
+                  <p>interessiert, dass das Klagenfurter Becken uns zukommt und nicht den Jugoslawen [zufällt]. Der italienische Kommissär wird daher bei der Abstimmung </p>
+                  <p>von besonderer Wichtigkeit sein. Da Peter das Vertrauen beider Teile genießt, dürfte kein Anstand zu erheben sein.</p>
+                  <p>4., 3.</p>
+                  <p>Renner: </p>
+                  <p>Übernahme der Eisenbahnangestellten. </p>
+                  <p>Es handelt sich um eine bloße Nachprüfung der schon früher behandelten Materialien.</p>
+                  <p>Schwegel: </p>
+                  <p>In der letzten Sitzung wurde zwar der Gesetzentwurf unverändert angenommen, <hi rend="#s">es wurde aber festgest</hi>- - die Richtlinien </p>
+                  <p>wurden [aber] zurückgestellt zur neuerlichen Beratung. Dabei wurde eine Änderung der Richtlinien angenommen. Obwohl das Gesetz angenommen wurde, </p>
+                  <p>erfuhr [es] bei diesem Anlass über Wunsch des Staatsamtes für Finanzen gleichfalls eine Änderung. Das Staatsamt für Finanzen hat diese Ergänzung gewünscht, </p>
+                  <p>um im Gesetz festzulegen, dass ein Rechtsanspruch nur für jene Zeit bestehen soll, in welcher sie bereits für Österreich Dienst </p>
+                  <p>geleistet haben. Man wollte Klagen vor dem Verfassungsgerichtshof vermeiden und entsprach der Billigkeit, jenen der nicht verwendet </p>
+                  <p>war, auch nicht zu honorieren.</p>
+                  <p>Die Richtlinien wurden einvernehmlich mit den Vertretern der Staatsämter geändert. Es wurde früher beanstandet </p>
+                  <p>von den Interessenten, dass die Übernahme jener Angestellten, welche bereits ausgedient haben und von Amtswegen in Pension zu versetzen </p>
+                  <p>wären, ausgeschlossen wäre. Man konnte sich der Erwägung nicht verschließen, dass Österreich pensionsreife Angestellte nicht übernehmen kann. </p>
+                  <p>Dementsprechend wurde [Punkt] I., Absatz 2, präziser gefasst. Es ist nicht allen Wünschen der Interessenten Rechnung getragen worden, aber es </p>
+                  <p>kann die Regelung nur im Kompromissweg erfolgen und es wäre ein gefährliches Präjudiz, eine generelle Regelung auf einen Einzelfall </p>
+                  <p>abzustellen. Im Übrigen wurde die Versorgungsfrage der Nicht-Übernommenen dadurch erleichtert, dass für sie vom Staatsamt für Finanzen </p>
+                  <p>eine besondere Vorlage in Aussicht gestellt wurde, in der den billigen Interessen der Beamten Rechnung getragen werden soll.</p>
+                  <p><pb facs="krp-0185_s02-0002"/>Renner: </p>
+                  <p>Die Änderungen sind im Einvernehmen mit den Staatsämtern vollzogen worden.</p>
+                  <p>Paul: </p>
+                  <p>Mit der Änderung von Punkt II, 1 [Punkt I, Absatz 2] werden wir furchtbare Rekriminationen hervorrufen. Es ist eine furchtbare </p>
+                  <p>Härte, wenn jemand nach 34 Jahren mit den Bezügen der Übernahme -.</p>
+                  <p>Reisch: </p>
+                  <p>[Ich ersuche um die Ergänzung]: 'Hierbei ist hinsichtlich der Anzahl [der] zu übernehmenden Angestellten das Einvernehmen mit dem Staatsamt für Finanzen zu pflegen.' </p>
+                  <p>Es ist schon gesagt [worden], dass sie nur nach Bedarf aufzunehmen sind. Aber wir fürchten, dass die Bedarfsfrage zu lasch behandelt werden </p>
+                  <p>könnte und daraus eine starke Belastung der Finanzen herbeigeführt würde. Die Finanzverwaltung muss daher wie bei Stellen-Neusystemisierungen </p>
+                  <p>mitreden können, denn es handelt sich eigentlich um eine Stellenvermehrung, was nicht ohne Zustimmung des Staatsamtes für Finanzen geschehen soll.</p>
+                  <p>Paul: </p>
+                  <p>Das Staatsamt für Finanzen hat ursprünglich gefordert, dass jede einzelne Übernahme vorgelegt und genehmigt werden muss. Das wäre </p>
+                  <p>außerordentlich umständlich gewesen, hätte aber die Gewähr geboten, dass der einzelne Fall untersucht und geordnet werden könnte. Wenn das jetzt </p>
+                  <p>aber auf die Anzahl der zu Übernehmenden abgestellt wird, ohne dass die Möglichkeit gegeben wird zu begründen, warum nicht mehr erlaubt </p>
+                  <p>wird, ist es [eine] reine Ermessenssache des Staatsamtes für Finanzen, welche Zahl zugegeben wird. Für den Einzelnen hat das viel[leicht] folgende Bedeutung: </p>
+                  <p>Der Bedienstete ist nicht übernommen, wohl aber in Verwendung genommen. Das ist ein Beweis, dass er gebraucht wird, er hat auch schon alle </p>
+                  <p>Bezüge einschließlich aller Teuerungszulagen. [...] 2346 Bedienstete in Verwendung. Wenn davon jemand abgestrichen wird, </p>
+                  <p>so muss sich der Mann fragen, warum er bisher verwendet wurde und nicht übernommen wird. Die Folge wäre, dass er nicht weiter verwendet werden könnte </p>
+                  <p>und in seinen Bezügen eine Minderung eintritt. Ich weiß gar nicht, was mit den nicht übernommenen Beamten geschieht. Es wird ein Zwischenstadium </p>
+                  <p>für eine Anzahl von Bediensteten geschaffen, welches sie in Ungewissheit bringt und keine Begründung hat. An die Stelle des Mannes </p>
+                  <p>muss ein anderer kommen und eventuell jemand aufgenommen werden. Ich würde eher einwilligen, wenn es heißt, es müsste bei jenen Bediensteten </p>
+                  <p>eine Höchstzahl bestimmt werden, die noch nicht in Verwendung genommen sind, also auch nicht die vollen Bezüge genießen. Ich verstehe nicht, </p>
+                  <p>wie wir es mit dieser Einschränkung durchführen sollen.</p>
+                  <p>Renner: </p>
+                  <p>Ich möchte auch auf die ratio legis hinweisen. Es liegt gewiss eine Belastung des Staatsschatzes vor, </p>
+                  <p>aber wir machen die Sachen aus Kommiserationsgründen und aus Rücksicht des politischen und nationalen Prestiges. Die Eisenbahner </p>
+                  <p>wurden - [sind] wegen ihrer Zuverlässigkeit während des Krieges in die Nationalstaaten versetzt worden und wurden jetzt versorgt. Man muss darauf Rücksicht </p>
+                  <p>nehmen.</p>
+                  <p>Eldersch: </p>
+                  <p>Ich glaube [dasselbe] wie Paul. Das Staatsamt für Finanzen soll gefragt werden nicht wegen des individuellen Falles, sondern wegen der Zahl. Ich sehe </p>
+                  <p>aber nicht ein, welche Unterlage zur Überprüfung und Beurteilung [dort] gegeben ist.</p>
+                  <p>Reisch: Die Zahl der Beamten bis zum Zusammenbruch.</p>
+                  <p>Eldersch: </p>
+                  <p>Das Staatsamt für Finanzen verfolgt anscheinend eine Prestige-Politik. Das Staatsamt für Finanzen muss sich auf das Staatsamt für Finanzen - [Verkehr] verlassen, </p>
+                  <p><pb facs="krp-0185_s02-0003"/>ob das Übernehmen wirklich nötig ist.</p>
+                  <p>Eisler: </p>
+                  <p>Das Staatsamt für Justiz bittet, der Forderung des Staatssekretärs Reisch nicht beizutreten. Es handelt sich nicht um Neuaufnahmen </p>
+                  <p>von Personen, welche bisher nicht im zivilen Staatsdienst standen, sondern um Personen, welche bereits in Verwendung sind und aus derselben </p>
+                  <p>ohne Gefahr für den Dienst nicht entfernt werden können. Durch die Mitwirkung des Staatsamtes für Finanzen würde sich die Übernahme endlos hinausziehen </p>
+                  <p>und [würden sich] neue Schwierigkeiten mit den Verwendeten ergeben. Die Folge wären ununterbrochene Rekriminationen.</p>
+                  <p>Renner: </p>
+                  <p>Ich verstehe den Standpunkt des Staatsamtes für Finanzen. Aber da wir den Leuten gegenüber finanziell ein Auge zudrücken müssen und unser </p>
+                  <p>nationales Prestige auf dem Spiel steht, [sollten] wir keine Änderung vornehmen, [sollten] wir die Richtlinien in der jetzigen Fassung beschließen.</p>
+                  <p>Reisch: </p>
+                  <p>Es handelt sich um zwei verschiedene Dinge. Der jetzige Zustand ist ein Provisorium und umfasst nicht alle Beamten. </p>
+                  <p>Jetzt soll ein Definitivum geschaffen werden und auf die Gesamtheit ausgedehnt werden. Beide Momente berühren das Staatsamt für Finanzen lebhaft. </p>
+                  <p>Die Stabilisierung ist eine Vermehrung der jetzigen Stellen. Wir wollen nur einen Vergleich der früher und jetzt in Verwendung Gestandenen, um zu sehen, </p>
+                  <p>ob ein Grund zur Vermehrung vorliegt. Es steht auch im Gesetz, dass sie nach Bedarf übernommen werden sollen. Der Bestrebung, einfach </p>
+                  <p>alle zu übernehmen, muss entgegen getreten werden können. Es ist die Ingerenz des Staatsamtes für Finanzen, dass [ein] Beamtenposten nur mit seiner </p>
+                  <p>Zustimmung kreiert werden kann.</p>
+                  <p>Renner: </p>
+                  <p>Nachdem man sich schon in den Verhandlungen so weit geeinigt hat, bitte ich Reisch von dem Einspruch abzustehen. </p>
+                  <p>Der Gesetzentwurf und die Richtlinien sind beschlossen.</p>
+                  <p>5.</p>
+                  <p>Renner: </p>
+                  <p>Vorsorgen für [das] Zusammenarbeiten der Staatsämter, Vorschläge des Verfassungsdepartements.</p>
+                  <p>Mayr: </p>
+                  <p>Zur Begründung dieser fünf Punkte möchte ich kurz erwähnen: Ich sehe ab von den eingangs angeführten Gründen. </p>
+                  <p>Es ist nötig, dass wir im Sinne dieser Richtlinien einen Beschluss fassen, wenn wir den Zustand der Gesetzgebung und der Verwaltung überblicken. Ich </p>
+                  <p>habe seinerzeit eine Zusammenstellung überreicht, welche die Länder und ihr Verhältnis zur Staatsverfassung darstellt. Diese Zusammenstellung hat gezeigt, welche </p>
+                  <p>unmöglichen Zustände sich schon herausgebildet haben und sich weiter herausbilden. Auch sonstige Erscheinungen zwingen zu einheitlichen </p>
+                  <p>Maßnahmen. Ich verweise darauf, dass der Tiroler Landtag eine Anschlusskommission [für den Anschluss] an Deutschland geschaffen hat und diese Kommission setzt sich </p>
+                  <p>zur Aufgabe, schon jetzt alles, die Landesverfassung und auch den Verwaltungsdienst, besonders die Agenden der Bezirke, nach reichsdeutschem </p>
+                  <p>Muster einzurichten. Es geschehen also Dinge, von denen der Staatsregierung keine Kenntnis hat und die von ihr verfolgt werden müssten, </p>
+                  <p>um wenigstens nur orientiert zu sein. Was in den Ländern geschieht, geschieht zum Teil auch in den Zentralstellen. Auch hier zeigt sich, </p>
+                  <p>dass in der Gesetzgebung in einzelne Gesetze Dinge hineinkommen, welche die zukünftige Verfassung präjudizieren oder die Rechte der Länder. Es zeigt sich </p>
+                  <p>auch da ein Auseinander-Regieren, unbewusst. Aus diesen Gründen ist es notwendig, dass wir solche Bestimmungen aufstellen und eine Kommission </p>
+                  <p>einsetzen, welche gewissermaßen die Vorarbeiten für die Verwaltungsreform in die Hand zu nehmen hätte. Auch in der Publizistik wird diesem Gedanken </p>
+                  <p><pb facs="krp-0185_s02-0004"/>immer mehr Ausdruck verliehen. ?Pottreich hat sich in ähnlichem Sinne geäußert. Neben diesem planvollen Vorarbeiten kann </p>
+                  <p>eine solche Kommission, die erst zu gestalten ist und ein Statut zu bekommen hat - kann eine wichtige Vorarbeit für die Verfassung dadurch machen, dass [sie] </p>
+                  <p>eine Sammlung der bisher bestehenden verwaltungsrechtlichen Normen nach dem Gesichtspunkt, was zu behalten ist und was abgeschafft werden kann, [anlegt]. [Das wird] große Dienste </p>
+                  <p>tun nach drei Richtungen: Der Bevölkerung eine Übersicht über die geltenden Normen bieten, den Behörden die raschere Behandlung ermöglichen und </p>
+                  <p>drittens Arbeitskräfte ersparen. Nach allen Richtungen zeigt es sich, dass die vorgeschlagenen Maßnahmen unbedingt notwendig erscheinen. Die Kräfte </p>
+                  <p>dafür sind in den Staatsämtern vorhanden.</p>
+                  <p>Eldersch: </p>
+                  <p>Ich empfehle, diesen Gegenstand heute nicht zu erledigen, weil das Referat nicht überlegt werden konnte. Handelt es sich </p>
+                  <p>um eine Kommission, welche ein Beirat sein soll für das Staatsamt, welches die Verwaltung auszuarbeiten hat, so ist das nicht bedenklich, wohl aber </p>
+                  <p>dann, wenn es ein Kontrollorgan für die übrigen Staatsämter sein soll. Es scheint mir nur so, als ob mehr damit </p>
+                  <p>gemeint wäre als die Einsetzung eines Beirates für die Reform der Verwaltung. Ein kurzer Aufschub verschlägt ja nichts. </p>
+                  <p>Wir müssten doch mit den Mitarbeitern Fühlung nehmen. Viel Material wird von den unteren Herren nicht kommen, weil die Landesregierungen nicht mehr berichten.</p>
+                  <p>Ich möchte bitten, mir Gelegenheit zu bieten, die Tragweite zu überlegen.</p>
+                  <p>6., 4.</p>
+                  <p>Paul: </p>
+                  <p>Kompetenzabgrenzung.</p>
+                  <p>Die Kompetenzgrenzen sollen nicht meritorisch [verändert werden], sondern [ich ersuche, sie] in den Wertbestimmungen den gegenwärtigen Geldverhältnissen </p>
+                  <p>anpassen zu dürfen. [Ich] bitte [um] die Erlaubnis, den finanziellen Kompetenzkreis nach den jeweiligen Verhältnissen verschieben zu können nach dem jeweiligen </p>
+                  <p>Geldwert und der Notwendigkeit, sie der unteren Instanz zu belassen oder einer höheren Instanz vorzubehalten.</p>
+                  <p>Reisch: </p>
+                  <p>Gegen die Erweiterung des Wirkungskreises der Unterbehörden habe ich nichts einzuwenden. Dagegen würde ich es nicht für </p>
+                  <p>empfehlenswert halten angesichts der Verfassungs- und Verwaltungsreform, dass das Staatsamt für Verkehrswesen allein eine Vermehrung seines Wirkungs-</p>
+                  <p>kreises erfahren [soll], welche bewirkt, dass die Ingerenz des Staatsamtes für Finanzen auf die Entschlüsse des Staatsamtes für Verkehr eine Minderung erfährt. </p>
+                  <p>Die Neuregelung des Wirkungskreises der Staatsämter wäre einheitlich bei der Verfassungsreform zu regeln. [Ich] bitte, den zweiten Teil zurückzustellen </p>
+                  <p>und einer Diskussion im Kreise der Staatsämter vorzubehalten.</p>
+                  <p>Paul: </p>
+                  <p>Mir ist es nur zu tun um die Anpassung der Kompetenzen an die Wertgrenzen. Der Fall hat sich </p>
+                  <p>meritorisch nicht geändert. Dieselben Gründe für die Behandlung sind die gleichen, nur die Geldgrenzen haben sich verschoben. Das Verkehrsamt </p>
+                  <p>wird überlastet und draußen ist kaum mehr etwas zu tun.</p>
+                  <p>Der Punkt 1 verschiebt die Kompetenz des Staatsamtes für Verkehr gegenüber dem Staatsamt für Finanzen. Es ist eigentlich auch für das Staatsamt für Finanzen </p>
+                  <p>umständlich, die Genehmigung für etwas zu erteilen, wofür es früher keine Zustimmung zu erteilen hatte.</p>
+                  <p>Renner: </p>
+                  <p>Punkt 1 ist zur Verhandlung unter den Staatsämtern vertragt. Punkt 2 wird genehmigt. Es ist </p>
+                  <p>für eine einheitliche Regelung zu sorgen.</p>
+                  <p><pb facs="krp-0185_s02-0005"/>7., 5.</p>
+                  <p>Reisch: </p>
+                  <p>Titeländerung für [die] Lottoamtsbeamten.</p>
+                  <p>8.</p>
+                  <p>Eldersch: </p>
+                  <p>Änderung des Gemeindestatus von Wien.</p>
+                  <p>9.</p>
+                  <p>Eldersch: </p>
+                  <p>Beerdigungsgebühren.</p>
+                  <p>10.</p>
+                  <p>[Eldersch]: Totenbeschau.</p>
+                  <p>11.</p>
+                  <p>Eldersch: </p>
+                  <p>Trennung von Gemeinden.</p>
+                  <p>12.</p>
+                  <p>Eldersch: </p>
+                  <p>Umlaufsumme der kommunalen Schuldverschreibungen.</p>
+                  <p>13.</p>
+                  <p>Eisler: </p>
+                  <p>Urheberrecht, Begründung ausführlich. Der Entwurf ist Ergebnis eingehender Beratungen der </p>
+                  <p>Fachkreise, alle Staatsämter haben zugestimmt, so dass keine Meinungsverschiedenheit mehr besteht. Von vielen Seiten wurde Wert darauf </p>
+                  <p>gelegt, dass die Novellierung zu einer Angleichung an das Urheberrecht in Deutschland führt. Diese Angleichung jetzt durchzuführen, war </p>
+                  <p>unmöglich, weil Deutschland selbst daran geht, sein Urheberrecht zu reformieren. Da der Friedensvertrag [uns] zwingt, unser Urheberrecht </p>
+                  <p>mit der Berner Konvention in Einklang zu bringen, ist es nicht möglich, eine Rechtsgleichheit mit Deutschland in dieser Frist </p>
+                  <p>vorzunehmen. Es ist daher beabsichtigt, die Reformarbeit in Deutschland im Auge zu behalten, wo möglich daran teilzunehmen und dann </p>
+                  <p>auch unser Urheberrecht unter Angleichung an das deutsche Recht einer Änderung zu unterziehen, vorläufig aber die Änderungen vorzunehmen, welche </p>
+                  <p>dem Staatsvertrag entsprechen und den Wünschen der interessierten Kreise Rechnung tragen.</p>
+                  <p>Hanusch: </p>
+                  <p>[Zu] § 43: In ?literarischen Kreisen wird gegen die 30 Jahre Stellung genommen, weil den Leuten </p>
+                  <p>die Frist zu kurz ist. Ich wundere mich, dass diese Bestimmung beibehalten wurde. Ich bin überzeugt, dass die deutsche Regierung </p>
+                  <p>diesen Passus in ihr Gesetz nicht hineinnehmen wird. Ich mache nur aufmerksam darauf, will aber keinen Einspruch erheben.</p>
+                  <p>Reisch: </p>
+                  <p>Es wundert mich, dass von Hanusch ein kapitalistisches Interesse vertreten wird. Die Bestimmung ist </p>
+                  <p>antidemokratisch. Je eher die Kunstwerke der Allgemeinheit zugänglich werden, desto demokratischer ist es. </p>
+                  <p>Es sollte daher die Beschränkung auf eine 30-jährige Rente aufrecht bleiben. In Deutschland handelt es sich um [eine] Sonderaktion </p>
+                  <p>für den Parsifal. Ich glaube aber nicht, dass es unserer Zeit gut anstehen würde, dem Urheber diese Rente auf mehr als 30 </p>
+                  <p>Jahre sicherzustellen.</p>
+                  <p><pb facs="krp-0185_s02-0006"/>Eisler: </p>
+                  <p>Die Frage der Dauer des Urheberrechtsschutzes ist eine Frage, welche Bibliotheken füllt. Die Frage ist bei der Beratung </p>
+                  <p>des Entwurfes wieder behandelt worden. Die meisten Gesetzgebungen halten an den 30 Jahren fest, von einer Verlängerung kann keine Rede sein. </p>
+                  <p>Die Schutzfrist für Anzengruber sollte durch ein Spezialgesetz verlängert werden. Wir haben jedes Eingehen </p>
+                  <p>auf die Sache abgelehnt, weil das allgemeine Interesse vorausgeht. Eine Verlängerung auf 40 oder 50 Jahre wurde abgelehnt. Nach dem </p>
+                  <p>heutigen Stand der <hi rend="#s">30 </hi>- Literatur ist anzunehmen, dass man international über diese Frist nicht hinausgehen wird.</p>
+                  <p>14.</p>
+                  <p>[Renner]: Hornik und -. </p>
+                  <p>Ich möchte diese Angelegenheit durch eine Kabinettskonferenz erledigen. Ein Teil der Frage ist schon spruchreif, dass ihm </p>
+                  <p>die Personalzulage von 30.000 Kronen gewährt wird.</p>
+                  <p>Der Kabinettsrat beschließt, dass dem Finanzrat Hor[nik] eine Zulage von jährlich 30.000 Kronen zu gewähren [ist]; </p>
+                  <p>Tunk bekommt 8.000 Kronen.</p>
+                  <p>15. </p>
+                  <p>Renner: </p>
+                  <p>Vollzugsanweisung über die Hoftheater.</p>
+                  <p>Über die Vollzugsanweisung liegt eine endgültige Formulierung vor. Änderungen sind enthalten in § 4, </p>
+                  <p>Absatz 2, wo folgender Einschub gemacht wird ... mit: </p>
+                  <p>'Es obliegt ihm der Vorsitz in diesem K[uratorium], mit welchem das Einvernehmen in allen Angelegenheiten in - [von] größerer Tragweite </p>
+                  <p>und grundsätzlicher Bedeutung zu pflegen ist, ebenso die Durchführung der nach § 6, Absatz 1, gefassten Beschlüsse.'</p>
+                  <p>Das Unterrichtsamt ist ermächtigt, diese Vollzugsanweisung zu erlassen.</p>
+                  <p>16.</p>
+                  <p>Zerdik: </p>
+                  <p><hi rend="#s">Vollzugsanweisung für die Wiener Messe</hi> - Rotationspapier für Zeitungen.</p>
+                  <p>Die Zeitungen hatten das Recht, am Pfingstmontag Zeitungen erscheinen zu lassen. [Ich] werde bestürmt mit der Bitte, dass man ihnen dafür, </p>
+                  <p>dass sie am Pfingstmontag nicht erscheinen, am Pfingstsonntag eine stärkere Nummer gestattet. Sie wollten erst das Ganze für Sonntag. </p>
+                  <p>Ich habe sie dazu gebracht, dass sie 40 Seiten haben wollen.</p>
+                  <p>Ellenbogen: </p>
+                  <p>Für die Erweiterung der Zeitungen wurde geltend gemacht, dass sie bei [Weiterbestehen] der Einschränkung das Personal entlassen müssten. Dass </p>
+                  <p>sie jetzt einen Umfang über 32 Seiten bekommen, ist kein Anlass. Der Pfingstmontag ist kein Argument.</p>
+                  <p>Renner: </p>
+                  <p>[Eine] Vermehrung des Umfanges wird abgelehnt.</p>
+                  <p>17.</p>
+                  <p>Miklas: </p>
+                  <p>Ich habe gehört, dass die Abmachungen nicht unterzeichnet wurden und sich ein Zeitraum ergeben könnte, innerhalb dessen wir </p>
+                  <p>uns die Sache [noch] überlegen können.</p>
+                  <p>Fink: </p>
+                  <p>Ich möchte nicht, dass die Zustimmung der Gemeinde Wien übergangen wird.</p>
+                  <p><pb facs="krp-0185_s02-0007"/>Eldersch: </p>
+                  <p>Örtlich. Es soll nicht so gemeint werden, dass für jeden Bezirk das gemeint ist. Das soll </p>
+                  <p>in einem Ad. Übereinkommen niedergelegt werden. Dann werden sie 45 Kinder als Mindestzahl verlangen. Dann weiß ich </p>
+                  <p>nicht, ob sie innerhalb eines Jahres fachlich befähigte Lehrkräfte aufbringen werden.</p>
+                  <p>Fink: </p>
+                  <p>Kann man nicht die Sache zeitlich einschränken? Könnte man nicht die Bedingung [daran] knüpfen, dass unsere Forderungen an die </p>
+                  <p>Tschechen auch erfüllt werden?</p>
+                  <p>Renner: </p>
+                  <p>Die Gegenseitigkeit ist in der Anlage der Verträge verbürgt. Das Recht der Deutschen in Böhmen auf den </p>
+                  <p>Schulbesuch ist reziprok. Wenn die Tschechen Deutschösterreicher aus ihren Schulen ausweisen, so können wir das auch tun.</p>
+                  <p>Weil noch diese Bedingungen dazu gekommen sind, konnte noch nicht abgeschlossen werden. Die weiteren Verhandlungen werden in </p>
+                  <p>Brünn stattfinden. Ich habe den Abschluss suspendiert. Die Verhandlungen werden erst in 14 Tagen bis drei Wochen wieder aufgenommen werden. </p>
+                  <p>Die Instruktion beruht auf der gestern gegebenen Basis.</p>
+                  <p>M[iklas]: </p>
+                  <p>Die Zwischenzeit soll ausgenützt werden. Es soll an die Tschechen inoffiziell herangetreten [werden], ob die Konzession, </p>
+                  <p>welche sie von uns und Wien verlangt [haben] auch von ihnen, mindestens von Brünn, Prag und Preßburg vice versa </p>
+                  <p>gewährt wird. Wenn wir nicht mit einem solchen ?kulturellen Kompensationsobjekt kommen, werden wir einen schwierigen Standpunkt haben. </p>
+                  <p>Der Vertrag birgt viele Fußangeln. Was die Zulassung nicht-österreichischer Kinder čsl. [tschechoslowakischer] Zunge in die öffentlichen und privaten tsch[echischen] Schulen </p>
+                  <p>betrifft, so ist dieses Moment angesichts der tschech[ischen] Einwanderung [bei uns] viel gefährlicher als drüben. Drüben spielt es keine </p>
+                  <p>Rolle, wohl aber streben zahlreiche Slawen nach Wien. Sehr gefährlich ist die Vermischung unseres öffentlichen Rechtes in Bezug </p>
+                  <p>auf die Schulen zwischen uns und der Tschechei. Der Vertrag besagt, dasselbe Recht, das wir aufgrund unserer heutigen Schulgesetzgebung in [...] </p>
+                  <p>haben, gilt auch drüben aufgrund des Reichsvolksgesetzes. Das soll auch in Zukunft gelten. Eine Änderung des Schulgesetzes hätte zur Folge, </p>
+                  <p>dass sie für Schulen tschech[ischer] Zunge nicht gelten. Das ist ein unmöglicher Rechtszustand. Es ist eine Bindung an einen auswärtigen </p>
+                  <p>Staat.</p>
+                  <p>Renner: </p>
+                  <p>Die Verhandlungen werden in Brünn fortgeführt. Wir haben Zeit, unsere Vertreter neu zu instruieren und dabei </p>
+                  <p>auf die vorgebrachten Momente aufmerksam zu machen.</p>
+               </div>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

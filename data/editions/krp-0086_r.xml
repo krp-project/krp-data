@@ -1,0 +1,532 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href='http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:acdh="https://vocabs.acdh.oeaw.ac.at/schema#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xml:lang="de">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="a" type="main" n="0086">Kabinettsprotokoll Nr. 86 vom 8. Juli 1919</title>
+            <title level="m" type="main" n="01">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <title level="m" type="sub" n="">Renner II (15. März – 17. Oktober 1919)</title>
+            <meeting>
+               <placeName key="https://d-nb.info/gnd/4066009-6">Wien</placeName>
+               <orgName key="https://d-nb.info/gnd/5162749-8">Kabinettsrat</orgName>
+               <date when-iso="1919-07-08"/>
+            </meeting>
+            <editor>
+               <persName key="https://d-nb.info/gnd/122481836"
+                         role="hasCreator"
+                         xml:id="hwohnout">
+                  <forename>Helmut</forename>
+                  <surname>Wohnout</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</affiliation>
+               <idno type="ORCID">0000-0002-3864-9839</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/120789825"
+                         role="hasCreator"
+                         xml:id="tolechowski">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0003-3291-6876</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/131679384"
+                         role="hasCreator"
+                         xml:id="rlein">
+                  <forename>Richard</forename>
+                  <surname>Lein</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0002-7502-0503</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="aholzer">
+                  <forename>Anna</forename>
+                  <surname>Holzer</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0005-3560-3500</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="dsoelkner">
+                  <forename>Dominik</forename>
+                  <surname>Sölkner</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-9895-7212</idno>
+            </editor>
+            <editor>
+               <persName role="hasContributor" xml:id="ischotzko">
+                  <forename>Ina</forename>
+                  <surname>Schotzko</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-5210-3713</idno>
+            </editor>
+            <funder n="1">
+               <orgName key="https://d-nb.info/gnd/2054142-9" role="hasFunder">Österreichischer Wissenschaftsfonds FWF</orgName>
+               <idno type="project">PAT1495024</idno>
+               <title type="project">Die Protokolle des österreichischen Kabinettsrates 1919–1920</title>
+            </funder>
+            <respStmt>
+               <resp>Projektverantwortung</resp>
+               <orgName key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Projektleitung</resp>
+               <persName key="https://d-nb.info/gnd/120789825" role="hasPrincipalInvestigator">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+                  <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+                  <idno type="ORCID">0000-0003-3291-6876</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Nationaler Forschungspartner</resp>
+               <orgName key="https://d-nb.info/gnd/1123037736" role="hasEnabler">Austrian Centre for Digital Humanities</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Digitalisierung der gedruckten Quellen</resp>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>TEI-Datenmodellierung</resp>
+               <persName role="hasContributor" xml:id="tfruehwirth">
+                  <forename>Timo</forename>
+                  <surname>Frühwirth</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-3997-5193</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technische Supervision</resp>
+               <persName key="https://d-nb.info/gnd/1043833846"
+                         role="hasContributor"
+                         xml:id="pandorfer">
+                  <forename>Peter</forename>
+                  <surname>Andorfer</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-9575-9372</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technisches Consulting und Vorbereitung der Druckausgabe</resp>
+               <persName key="https://d-nb.info/gnd/13281899X"
+                         role="hasContributor"
+                         xml:id="skurz">
+                  <forename>Stephan</forename>
+                  <surname>Kurz</surname>
+                  <affiliation key="https://d-nb.info/gnd/1202798799">Institut für die Erforschung der Habsburgermonarchie und des Balkanraumes</affiliation>
+                  <idno type="ORCID">0000-0003-2546-2570</idno>
+               </persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher key="https://d-nb.info/gnd/1001454-8">Österreichische Akademie der Wissenschaften</publisher>
+            <date when="2028"/>
+            <availability status="free">
+               <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">Lizenziert unter CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/deed.de)</licence>
+            </availability>
+            <idno type="ISBN_Print"/>
+            <idno type="ISBN_Part_epub"/>
+            <idno type="ISBN_Digital"/>
+            <idno type="DOI"/>
+            <idno type="DOI_zenodo"/>
+            <idno type="ebook_ID"/>
+         </publicationStmt>
+         <seriesStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="m" type="main">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <respStmt>
+               <resp>Bearbeitung und Herausgeberschaft</resp>
+               <orgName key="https://d-nb.info/gnd/2024703-5">Universität Wien</orgName>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+         </seriesStmt>
+         <notesStmt>
+            <note>Diese TEI-XML-Datei ist Grundlage für eine Druckausgabe der Edition.</note>
+            <relatedItem>
+               <biblStruct>
+                  <monogr>
+                     <imprint>
+                        <pubPlace key="https://d-nb.info/gnd/4066009-6">Wien</pubPlace>
+                        <publisher key="https://d-nb.info/gnd/2068748-5">Verlag der Österreichischen Akademie der Wissenschaften</publisher>
+                        <date when="2029"/>
+                     </imprint>
+                     <extent/>
+                  </monogr>
+                  <note>
+              <idno/>
+              <ptr/>
+            </note>
+                  <citedRange/>
+               </biblStruct>
+            </relatedItem>
+         </notesStmt>
+         <sourceDesc>
+            <bibl>Quellbestand: AT-OeStA/AdR MRang MR 1Rep KRP Kabinettsratsprotokolle, 1918-1920 (Teilbestand)<ref target="https://www.archivinformationssystem.at/detail.aspx?id=5465">https://www.archivinformationssystem.at/detail.aspx?id=5465</ref>
+            </bibl>
+            <msDesc>
+               <msIdentifier>
+                  <institution key="https://d-nb.info/gnd/37748-X" role="hasOwner">AT-OeStA Österreichisches Staatsarchiv (Archiv (ÖStA))</institution>
+                  <repository key="https://d-nb.info/gnd/1601181-8">AT-OeStA/AdR Archiv der Republik, 1918- (Abteilung)</repository>
+                  <collection>AT-OeStA/AdR MRang MR 1Rep Ministerrat 1. Republik, 1918 - 1938 (Bestand)</collection>
+                  <idno>AT-OeStA_AdR-MRang-MR-1.-Rep.-KRP-086</idno>
+               </msIdentifier>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <abstract>
+            <p>
+          <!--to be generated-->
+        </p>
+         </abstract>
+      </profileDesc>
+      <encodingDesc>
+         <styleDefDecl scheme="css"/>
+         <tagsDecl>
+            <rendition xml:id="b" scheme="css">font-weight:bold;</rendition>
+            <rendition xml:id="su" scheme="css">vertical-align:super;font-size:.7em;</rendition>
+            <rendition xml:id="s" scheme="css">text-decoration:line-through;</rendition>
+            <rendition xml:id="u" scheme="css">text-decoration:underline;</rendition>
+            <rendition xml:id="ow" scheme="css">text-decoration:line-through;text-decoration-style:double;</rendition>
+            <rendition xml:id="r" scheme="css">display:block;text-align:right;</rendition>
+            <rendition xml:id="letterspaced" scheme="css">letter-spacing:0.15em;</rendition>
+            <rendition xml:id="i" scheme="css">font-style:italic;</rendition>
+         </tagsDecl>
+         <editorialDecl>
+            <hyphenation>
+               <p>
+            <!--to be added-->
+          </p>
+            </hyphenation>
+            <correction>
+               <p>
+            <!--to be added-->
+          </p>
+            </correction>
+            <normalization>
+               <p>
+            <!--to be added-->
+          </p>
+            </normalization>
+            <punctuation>
+               <p>
+            <!--to be added-->
+          </p>
+            </punctuation>
+            <stdVals>
+               <p>
+            <!--to be added-->
+          </p>
+            </stdVals>
+            <p>
+          <!--to be added-->
+        </p>
+         </editorialDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#tfruehwirth" when-iso="2026-10-14">TEIGarage output upconverted with upconvert.xsl</change>
+         <change who="#tfruehwirth" when-iso="2026-10-14">TEI header populated with generate_tei_templates.py</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface/>
+   </facsimile>
+   <text>
+      <body>
+         <div xml:id="doc-krp-0086.xml">
+            <head type="dokument">
+               <title type="num">86.<note type="footnote">Das Protokoll trägt den Vermerk <hi rend="#i">Vertraulich!</hi></note>
+               </title>
+               <title type="desc">
+                  <pb facs="krp-0086_r-0001"/>
+                  <pb facs="krp-0086_r-0002"/>[Dienstag] 1919-07-08</title>
+            </head>
+            <div type="dokumentkopf">
+               <div type="vorsitz">
+                  <head>Vorsitz:</head>
+                  <p>Fink</p>
+               </div>
+               <div type="anwesend">
+                  <head>Anwesend:</head>
+                  <p>Bauer, Bratusch, Deutsch, Eldersch, Ellenbogen, Glöckel, Hanusch, Loewenfeld-Russ, Miklas, Paul, Pflügl, Resch, Schumpeter, Tandler, Waiss, Zerdik</p>
+               </div>
+               <div type="zugezogen">
+                  <head>Zugezogen:</head>
+                  <p>Grimm, Mosing, Pantz, Scholz</p>
+               </div>
+               <div type="schriftfuehrer">
+                  <head>Schriftführer:</head>
+                  <p>unbekannt</p>
+               </div>
+               <div type="dauer">
+                  <head>Dauer:</head>
+                  <p>21.00–01.30 Uhr</p>
+               </div>
+            </div>
+            <div type="komponenten">
+               <p>Reinschrift, Beilagen, streng geheimer Anhang, Konzept, stenographische Mitschrift, Entwurf der Tagesordnung, diverse Zusätze</p>
+            </div>
+            <div type="beilagen">
+               <head>Beilagen:</head>
+               <list>
+                  <item><ref target="#krp-0086_top01">Zu TOP 1</ref>: <ref target="#krp-0086_b01">Vollzugsanweisung des Staatsamtes für Inneres und Unterricht über die bilanzmäßigen Überschüsse der Versicherungsanstalten</ref></item>
+                  <item><ref target="#krp-0086_top02">Zu TOP 2</ref>: <ref target="#krp-0086_b02">Vorlage des Staatsamtes für Land- und Forstwirtschaft eines Gesetzesbeschlusses der Provisorischen Oberösterreichischen Landesversammlung über die Änderungen des oberösterreichischen Wasserrechtsgesetzes</ref></item>
+                  <item><ref target="#krp-0086_top03">Zu TOP 3</ref>: <ref target="#krp-0086_b03">Antrag des Staatsamtes für Land- und Forstwirtschaft über die Einführung neuer Titel für die rechtskundigen Beamten der Agrarbehörden</ref></item>
+                  <item><ref target="#krp-0086_top05">Zu TOP 5</ref>: <ref target="#krp-0086_b04">Bericht des Staatsamtes für. Finanzen über die Erörterungen des Referentenkomitees zur Frage der Verbilligung der Versorgung der Staatsbediensteten mit Lebensmitteln</ref></item>
+                  <item><ref target="#krp-0086_top05">Zu TOP 5</ref>: <ref target="#krp-0086_b05">Aktion zur Verbilligung der Lebensmittel für alle Staatsbediensteten</ref></item>
+                  <item><ref target="#krp-0086_top06">Zu TOP 6</ref>: <ref target="#krp-0086_b06">Antrag des Staatsamtes für Finanzen auf Errichtung eines Staatskommissariates für die wirtschaftliche und soziale Organisation der Staatsbediensteten</ref></item>
+                  <item><ref target="#krp-0086_top09">Zu TOP 9</ref>: <ref target="#krp-0086_b07">Gesetzesbeschluss der Provisorischen Tiroler Landesversammlung über die Abänderung des Gesetzes zur Einberufung des verfassungsgebenden Landtages</ref></item>
+                  <item><ref target="#krp-0086_top10">Zu TOP 10</ref>: <ref target="#krp-0086_b08">Abschrift eines Schreibens der Polizeidirektion Wien an das Staatsamtes für Volksernährung über die Ausgestaltung des Kriegswucheramtes</ref></item>
+                  <item><ref target="#krp-0086_top10">Zu TOP 10</ref>: <ref target="#krp-0086_b09">Abschrift des Berichts zu Zl. 31.138 des Staatssekretärs für Volksernährung über den Bedarf rechtskundlichen Personals für das Kriegswucheramt</ref></item>
+                  <item><ref target="#krp-0086_top10">Zu TOP 10</ref>: <ref target="#krp-0086_b10">Information des Staatsamtes für Inneres und Unterricht über die Ausgestaltung des Kriegswucheramtes</ref></item>
+                  <item><ref target="#krp-0086_top11">Zu TOP 11</ref>: <ref target="#krp-0086_b11">Auszug für den Vortrag des Staatsamtes für Inneres und Unterricht zu Zl. 22.528/19 über einen Gesetzesentwurf der Provisorischen Niederösterreichischen Landesversammlung hinsichtlich der Einhebung von Wassergebühren in der Gemeinde Waidmannsfeld</ref></item>
+                  <item><ref target="#krp-0086_top12">Zu TOP 12</ref>: <ref target="#krp-0086_b12">Antrag des Staatsamtes für soziale Verwaltung Zl. 15.927/19 über die Anrechnung von Vordienstzeiten bei den Dienern der Wiener Krankenanstalten</ref></item>
+                  <item><ref target="#krp-0086_top13">Zu TOP 13</ref>: <ref target="#krp-0086_b13">Gesetzesentwurf des Staatsamtes für soziale Verwaltung über die Änderung einiger Bestimmungen des Unfallversicherungsgesetzes der Arbeiter</ref></item>
+                  <item><ref target="#krp-0086_top14">Zu TOP 14</ref>: <ref target="#krp-0086_b14">Vollzugsanweisungen des Staatsamtes für soziale Verwaltung für die Volkspflegestätten</ref></item>
+                  <item><ref target="#krp-0086_top15">Zu TOP 15</ref>: <ref target="#krp-0086_b15">Vortrag des Staatsamtes für Heereswesen über eine Vollzugsanweisung für die Beteilung heimkehrender mittelloser Kriegsgefangener und Zivilinternierter mit Zivilkleidern aus Staatsmitteln</ref></item>
+                  <item><ref target="#krp-0086_top02">Zu A 2</ref>: <ref target="#krp-0086_b16">Bericht über Maßnahmen zur Vorbereitung der Finanzierung der Vermögensabgabe, der Sozialisierung und der Industrieförderung</ref></item>
+               </list>
+            </div>
+            <div type="protokoll">
+               <pb facs="krp-0086_r-0003"/>
+               <div type="top" xml:id="krp-0086_top01">
+                  <head>
+                     <label>
+                        <num n="1">1.</num>
+                        <seg>Vollzugsanweisung über die bilanzmäßigen Überschüsse der Versicherungsanstalten.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Eldersch</hi> erbittet und erhält nach eingehender Begründung die Ermächtigung des Kabinettsrates zur Erlassung einer Vollzugsanweisung des Staatsamtes für Inneres und Unterricht über die bilanzmäßigen Überschüsse der Versicherungsanstalten. Diese Vollzugsanweisung soll aufgrund des Gesetzes vom 24. Juli 1917, RGBl. Nr. 307 erlassen werden, mit dem Tage der Kundmachung in Kraft treten und die Versicherungsanstalten verpflichten, ihre allfälligen bilanzmäßigen Überschüsse in Reserve zu stellen.</p>
+               </div>
+               <div type="top" xml:id="krp-0086_top02">
+                  <head>
+                     <label>
+                        <num n="2">2.</num>
+                        <seg>Gesetzesbeschluss der Provisorischen Landesversammlung in Oberösterreich, betreffend die Abänderung und Ergänzung einiger Bestimmungen des oberösterreichischen Wasserrechtsgesetzes.</seg>
+                     </label>
+                  </head>
+                  <p>Vizepräsident Dr. <hi rend="#letterspaced">Pantz</hi> teilt mit, dass die Provisorische Landesversammlung in Oberösterreich am 24. Mai <pb facs="krp-0086_r-0004"/>l. J. einen Gesetzesbeschluss, betreffend die Abänderung und Ergänzung einiger Bestimmungen des oberösterreichischen Wasserrechtsgesetzes, gefasst habe. Durch diese Novelle soll einerseits für Wasserkraftanlagen zur Erzeugung elektrischer Energie ein Ablösungs- bzw. Heimfallsrecht zugunsten des Landes Oberösterreich statuiert (§ 19), andererseits sollen die Enteignungsbestimmungen (§ 27) in der Richtung erweitert werden, dass auch für die durch die hydroelektrischen Anlagen erzeugte Energie Leitungsservitute ermöglicht und dass Zwischenwasserwerke zugunsten neuer Wasserkraftanlagen enteignet werden können. Weiters soll eine Abkürzung des Instanzenzuges platzgreifen (§ 94), endlich dem Landesrate ein Aufsichtsrecht über die Wasserkraftanlagen gesichert werden (§ 97). Redner bespricht im Einzelnen die Stellungnahme des Staatsamtes für Land- und Forstwirtschaft zu diesen Bestimmungen und verweist insbesondere darauf, dass der neue Wortlaut des § 19 in einem gewissen Widerspruch zu dem von der Staatsregierung <pb facs="krp-0086_r-0005"/>geplanten Gesetzentwurfe über die Sozialisierung der Elektrizitätswirtschaft stehe und überdies eine Gefahr für die von der Staatsregierung angestrebte möglichste Vereinheitlichung der wasserrechtlichen Bestimmungen in den einzelnen Ländern bedeute. Er teilt schließlich den diesfalls vom Staatsamte für Land- und Forstwirtschaft einvernehmlich mit dem Direktorium des WEWA in Aussicht genommenen Erlass an die Landesregierung in Linz mit.</p>
+                  <p>Nach einer längeren Debatte, an der sich die Staatssekretäre Dr. <hi rend="#letterspaced">Bauer</hi>, <hi rend="#letterspaced">Hanusch</hi> und <hi rend="#letterspaced">Paul</hi> sowie die Unterstaatssekretäre <hi rend="#letterspaced">Ellenbogen</hi> und <hi rend="#letterspaced">Miklas</hi> beteiligten, stimmt der Kabinettsrat der vom Referenten vorgetragenen Erledigung grundsätzlich zu und beschließt, dass diese Angelegenheit von je einem Vertreter des Staatsamtes für Land- und Forstwirtschaft und des Staatsamtes für Verkehrswesen bei der Landesregierung in Linz zum Gegenstande einer persönlichen Aussprache zu machen sei, um auf diese Weise den grundsätzlichen Auffassungen der Staatsregierung in den erwähnten Belangen zum Durchbruche zu verhelfen.</p>
+                  <p>Schließlich genehmigt der Kabinettsrat einen Antrag des Unterstaatssekretärs Miklas, wonach die beiden in der Regierung vereinigten politischen Parteien einzuladen wären, in gleicher Weise auf die politischen Faktoren in Linz einzuwirken.</p>
+                  <p><pb facs="krp-0086_r-0006"/></p>
+               </div>
+               <div type="top" xml:id="krp-0086_top03">
+                  <head>
+                     <label>
+                        <num n="3">3.</num>
+                        <seg>Einführung neuer Titelsbezeichnungen für die rechtskundigen Beamten der Agrarbehörden.</seg>
+                     </label>
+                  </head>
+                  <p>Vizepräsident Dr. <hi rend="#letterspaced">Pantz</hi> verweist darauf, dass laut Kabinettsratsbeschlusses vom 9. April 1919 die Bildung eines eigenen Personalstandes der rechtskundigen Beamten der Agrarbehörden genehmigt worden sei.</p>
+                  <p>Das Staatsamt der Finanzen habe inzwischen den von der Agraroberbehörde erstatteten Vorschlägen hinsichtlich Feststellung der Anzahl der zu systemisierenden Stellen und des Rangsklassenverhältnisses innerhalb des neu zu bildenden Personalstandes zugestimmt. Die rechtskundigen Beamten der Agrarbehörden hätten bisher den Personalständen der politischen Verwaltung angehört und wären daselbst extra statum geführt worden. Da sie nunmehr durch die Bildung eines eigenen Personalstandes definitiv aus dem Ressort des Staatsamtes des Innern ausscheiden, ergebe sich die Notwendigkeit, besondere Titelbezeichnungen für diese Kategorie von Beamten festzusetzen.</p>
+                  <p>Redner stelle daher im Namen und Auftrage des Staatssekretärs für Land- und Forstwirtschaft den Antrag, der Kabinettsrat wolle für die erwähnten Beamten der Agrarbehörden folgende Titel<pb facs="krp-0086_r-0007"/>bezeichnungen einführen:</p>
+                  <p>Für die IV. Rangsklasse: „Vizepräsident</p>
+                  <p>der Agraroberbehörde"</p>
+                  <p>Für die Beamten in der </p>
+                  <p>V. Rangsklasse: „Hofrat“</p>
+                  <p>VI.      “              „Agraroberamtmann”</p>
+                  <p>VII.    “              „Agraramtmann“</p>
+                  <p>VIII.       “               „Agraroberkommissär“</p>
+                  <p>IX.         “               „Agrarkommissär<hi rend="superscript">“</hi></p>
+                  <p>X.          “                „Agrarkonzipist“</p>
+                  <p>Für die Praktikanten: „Agrarkonzeptspraktikant".</p>
+                  <p>In der sich hierüber entwickelnden kurzen Debatte gelangt die übereinstimmende Anschauung zum Ausdruck, dass dem Standpunkt des Staatsamtes für Land- und Forstwirtschaft wohl grundsätzlich zuzustimmen sei, dass es sich jedoch empfehlen dürfte, die Frage der beantragten Titelsbezeichnungen gleichzeitig mit der durch die neuen Verhältnisse bedingten allgemeinen Neuregelung der Amtstitel der Staatsbediensteten zu lösen.</p>
+                  <p>Der Kabinettsrat beschließt demgemäß diese Angelegenheit vorläufig zu vertagen.</p>
+               </div>
+               <div type="top" xml:id="krp-0086_top04">
+                  <head>
+                     <label>
+                        <num n="4">4.</num>
+                        <seg>Gesetzesbeschluss der Provisorischen Landesversammlung in Kärnten, betreffend Abänderung des kärntnerischen Jagdgesetzes.</seg>
+                     </label>
+                  </head>
+                  <p>Vizepräsident Dr. Pantz teilt mit, dass die Provisorische Landesversammlung in Kärnten am 26. Mai d. J. <pb facs="krp-0086_r-0008"/>einen Gesetzesbeschluss gefasst habe demzufolge der § 53 des kärntnerischen Jagdgesetzes rücksichtlich der Höhe der Jagdkartengebühren abgeändert werden soll. Das Staatsamt für Land- und Forstwirtschaft beantrage den Beitritt der Staatsregierung zu diesem Gesetzesbeschlusse und erbitte sich vom Kabinettsrate die Ermächtigung zur entsprechenden Verständigung der Kärntnerischen Landesregierung.</p>
+                  <p>Der Kabinettsrat erhebt diesen Antrag zum Beschluss und erteilt die erbetene Ermächtigung.</p>
+               </div>
+               <div type="top" xml:id="krp-0086_top05">
+                  <head>
+                     <label>
+                        <num n="5">5.</num>
+                        <seg>Aktion zur Verbilligung der Lebensmittel für alle Staatsbediensteten.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Schumpeter</hi> kommt auf den Beschluss des Kabinettsrates in seiner Sitzung vom 27. Juni l. J. zu sprechen und teilt mit, dass das zwecks Beratung über die Grundlagen einer Aktion zur Verbilligung der Lebensmittel für alle Staatsbedienstete eingesetzte Referentenkomitee alle Möglichkeiten, die zu dem angestrebten Ziele führen könnten, eingehend erörtert habe.</p>
+                  <p>Hiebei sei nach Abwägung aller für und wider sprechenden Gesichtspunkte die einstimmige Auffassung zu Tage getreten, dass eine solche Verbilligungs<pb facs="krp-0086_r-0009"/>aktion lediglich durch die Ausgestaltung der sogenannten Zubußenaktion durchführbar erscheine.</p>
+                  <p>Über Einladung des sprechenden Staatssekretärs gibt sodann Oberfinanzrat Dr. <hi rend="#letterspaced">Scholz</hi> eine Darstellung über die im Referentenkomitee abgeführten Verhandlungen und teilt abschließend mit, dass sich dieses Komitee auf die nachstehenden Grundlagen für die Durchführung der Zubußenaktion geeinigt habe:</p>
+                  <list>
+                     <item n="1"><label>1.)</label> „ Bis zum Einlangen der Artikel, welche zum Zwecke der Zubußenaktion anzukaufen sein werden, hat das Staatsamt für Volksernährung die erforderlichen Lebensmittel aus seinen Reserven zur Verfügung zu stellen.</item>
+                     <item n="2"><label>2.)</label> Für Zwecke der Zubußenaktion sind Sondereinkäufe, sei es aufgrund der bei der Deutschösterreichischen Lebensmitteleinfuhrstelle (Dölest) einlangenden oder von den Staatsangestellten beschafften Offerten zu vollziehen. Insoferne die Offertenpreise im Vergleiche zu den offiziellen Einkaufspreisen der betreffenden Artikel nicht als übermäßig zu bezeichnen sind, dürfen derartige Preisdifferenzen zur Begründung einer eventuellen Ablehnung des Ankaufes nicht herangezogen werden.<pb facs="krp-0086_r-0010"/></item>
+                     <item n="3"><label>3.)</label> Die Ankäufe sind in formaler Beziehung durch die Dölest zu vollziehen.</item>
+                     <item n="4"><label>4.)</label> Bei der Dölest ist ein hiefür zu designierender Vertreter der Staatsangestelltenschaft mit der Aufgabe zu betrauen, die Durchführung der Ankäufe aufgrund der vorliegenden Offerten zu beschleunigen und eventuelle Hemmungen durch Intervention beim Staatsamte für Volksernährung zu beseitigen. Nach Erfordernis sind zu dem analogen Zwecke Vertreter der Staatsangestelltenschaft auch bei anderen Zentralstellen zu bestellen.</item>
+                     <item n="5"><label>5.)</label> Zur Beschaffung der erforderlichen Valuten und zur Verbilligung des Einkaufes hat der Kompensationsverkehr zu dienen; der Ausfuhr der im Interesse der Zubußenaktion beschafften Kompensationswaren dürfen - soweit keine gesetzlichen Hindernisse bestehen - Schwierigkeiten nicht bereitet werden.</item>
+                     <item n="6"><label>6.)</label> Zur Erleichterung der Durchführung der Zubußenaktion sind, - falls es erforderlich sein sollte, - Verhandlungen mit der italienischen Mission bzw. der italienischen Regierung (für das zunächst in Betracht kommende Einkaufsgebiet) eventuell auch mit der Interalliierten [Lebensmittel]kommission zu pflegen".</item>
+                  </list>
+                  <p><pb facs="krp-0086_r-0011"/>Staatssekretär Dr. <hi rend="#letterspaced">Loewenfeld-Russ</hi> verweist darauf, dass das vorliegende Projekt eine gewisse Verschiebung der bestehenden Kompetenzen beinhalte, zumal Angelegenheiten, die dem Staatsamte für Volksernährung zukommen, nunmehr einer anderen Stelle – wenn auch unter dessen Mitwirkung – zugewiesen werden sollen.</p>
+                  <p>Staatssekretär <hi rend="#letterspaced">Eldersch</hi> warnt davor, an dieser Kompetenzenfrage achtlos vorüberzugehen und stellt die Einsetzung eines Komitees zum Zwecke einer eingehenden Überprüfung dieser Vorschläge zur Erwägung. Er weist insbesondere auf die Bedenklichkeit des beabsichtigten Kompensationsverkehres hin, eine Frage, die auch von allgemein politischen Gesichtspunkten beurteilt werden müsse.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Loewenfeld-Russ</hi> erklärt sich schließlich unter nachstehenden Bedingungen damit einverstanden, dass die Vorschläge des Referentenkomitees zur Grundlage weiterer Verhandlungen genommen werden:</p>
+                  <p>ad Pkt. 1.) des Antrages: Das Staatsamt für Volksernährung könnte die angeforderte Bereitstellung nur „nach Möglichkeit, jedenfalls nur ohne Kür<pb facs="krp-0086_r-0012"/>zung der bestehenden Quoten" übernehmen</p>
+                  <p>ad Pkt. 2.) Zur Vornahme der Sondereinkäufe wären neben der „Dölest" auch alle anderen offiziellen Einkaufsorganisationen des Staatsamtes für Volksernährung heranzuziehen; die Beurteilung der „Übermäßigkeit“ von Offertenpreisen müsste einzig und allein dem Staatsamte für Volksernährung bzw. seinen offiziellen Organisationen überlassen bleiben.</p>
+                  <p>ad Pkt. 3.) Die Worte: „in formaler Beziehung" sind zu streichen, indem die Ankäufe effektiv durch die offiziellen Einfuhrsorganisationen durchzuführen sein werden; an die Stelle des Wortes „Dölest" sind die Worte „offiziellen Lebensmitteleinkaufsstellen“ zu setzen.</p>
+                  <p>ad Pkt. 5.) Vorausgesetzt werde, dass sich der Kompensationsverkehr im Rahmen der bestehenden Vorschriften vollziehen wird.</p>
+                  <p>ad Pkt. 6.) Die Verhandlungen mit der italienischen Mission bzw. mit der Interalliierten Lebensmittelkommission hätten ausschließlich durch das Staatsamt für Volksernährung geführt zu werden.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Deutsch</hi> beantragt die Einbeziehung der deutschösterreichischen Berufsmilitärpersonen in diese Aktion.</p>
+                  <p><pb facs="krp-0086_r-0013"/>Der Kabinettsrat genehmigt schließlich den vom Staatssekretär für Finanzen vertretenen Vorschlag des Referentenkomitees mit den von den Staatssekretären für Volksernährung und Heer[es]wesen gestellten Abänderungs- bzw. Ergänzungsanträgen.</p>
+               </div>
+               <div type="top" xml:id="krp-0086_top06">
+                  <head>
+                     <label>
+                        <num n="6">6.</num>
+                        <seg>Antrag auf Errichtung eines Staatskommissariates für die wirtschaftliche und soziale Organisation der Staatsbediensteten.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Schumpeter</hi> führt aus, dass im Zuge der wegen Durchführung einer Zubußenaktion zu Gunsten der Staatsbediensteten gepflogenen Verhandlungen der aus allen größeren Angestelltenorganisationen zusammengesetzte Beirat in seiner Sitzung vom 27. Juni d. J. namens aller Staatsangestellten die Forderung nach Errichtung eines Staatskommissariates für die wirtschaftliche und soziale Organisation der Staatsbediensteten u. zw. am Sitze des Staatsamtes für Finanzen erhoben habe, letzteres mit der Begründung, dass die wirtschaftlichen Angelegenheiten der Staatsbediensteten einen Teil der allgemeinen Lohnpolitik bilden, für die das Staatsamt für Finanzen als Geldgeber in erster Linie verantwortlich erscheine. Da die Erfüllung dieser Forderung zweifellos auch im staatlichen Interesse gelegen sei, beantrage der sprechende Staatssekretär die Errichtung eines <pb facs="krp-0086_r-0014"/>solchen Kommissariates, dessen Wirkungskreis alle Staatsbediensteten mit Ausnahme der Verkehrsangestellten zu umfassen hätte, die über eine ausreichende Organisation in wirtschaftlichen Angelegenheiten bereits verfügen. Dieses Kommissariat wäre von den mit Beschlussrecht ausgestatteten Vertretern der Staatsämter für Finanzen, für Handel und Gewerbe, Industrie und Bauten, für soziale Verwaltung und für Volksernährung zu bilden und durch einen von den Staatsangestelltenorganisationen gewählten Beirat zu ergänzen. Das Kommissariat hätte die Aufgabe, eine Konsumorganisation für Lebensmittel und Bedarfsartikel, eine Kreditorganisation und eine Organisation der dem Staatsangestelltenstande fehlenden Wohlfahrtseinrichtungen (Erziehungshilfen, Erholungs- und Ledigenheime, Heilstätten etc.) in die Wege zu leiten.</p>
+                  <p>Nach einer kurzen Debatte, an welcher sich die Staatssekretäre Dr. <hi rend="#letterspaced">Loewenfeld-Russ</hi>, <hi rend="#letterspaced">Paul</hi> und Dr. <hi rend="#letterspaced">Bauer</hi>, sowie über Einladung des Vorsitzenden Oberfinanzrat Dr. <hi rend="#letterspaced">Scholz</hi> beteiligten, tritt die übereinstimmende Auffassung zu Tage, dass es sich empfehlen dürfte, dieser Frage erst in jenem Zeitpunkte näher zu treten, in welchem dem Kabinetts<pb facs="krp-0086_r-0015"/>rate ein Statutenentwurf über den Wirkungskreis dieses Kommissariates vorliegen wird.</p>
+                  <p>Der Kabinettsrat vertagt demgemäß die Beschlussfassung über diesen Antrag.</p>
+               </div>
+               <div type="top" xml:id="krp-0086_top07">
+                  <head>
+                     <label>
+                        <num n="7">7.</num>
+                        <seg>Kundmachung des Gesetzes über die Führung des Staatshaushaltes vom 1. Juli bis 31. Dezember 1919, sowie über die Regelung des Verkehres mit Getreide und Mahlprodukten.</seg>
+                     </label>
+                  </head>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> teilt mit, dass er die Kundmachung der von der Nationalversammlung beschlossenen Gesetze über die Führung des Staatshaushaltes vom 1. Juli bis 31. Dezember 1919, sowie über die Regelung des Verkehres mit Getreide und Mahlprodukten im Staatsgesetzblatte dringlichkeitshalber bereits ohne vorherige Lesung durch das Kabinett veranlasst habe. Da gegen diese Beschlüsse von der Staatsregierung keine Vorstellung zu erheben sein dürfte, erbitte er nunmehr die nachträgliche Genehmigung seiner Verfügung.</p>
+                  <p>Der Kabinettsrat erteilt die erbetene Genehmigung.</p>
+               </div>
+               <div type="top" xml:id="krp-0086_top08">
+                  <head>
+                     <label>
+                        <num n="8">8.</num>
+                        <seg>Beitritt der Staatsregierung zu mehreren von der Nationalversammlung beschlossenen Gesetzen.</seg>
+                     </label>
+                  </head>
+                  <p>Der Kabinettsrat findet über Antrag des Vorsitzenden bzw. des Staatssekretärs Dr. <hi rend="#letterspaced">Bauer</hi> gegen das von der Nationalversammlung beschlossene <pb facs="krp-0086_r-0016"/></p>
+                  <list>
+                     <item n="1"><label>1.)</label> Gesetz, mit welchem die Staatsregierung zur Erlassung vorläufiger Bestimmungen über die Anwendung des Invalidenentschädigungsgesetzes auf Personen des militärischen Berufsstandes und ihrer Hinterbliebenen ermächtigt wird,</item>
+                     <item n="2"><label>2.)</label> Gesetz, mit welchem die Staatsregierung zur Erlassung vorläufiger neuer Bestimmungen über die Versorgung der Personen des militärischen Berufsstandes und ihrer Hinterbliebenen ermächtigt wird (Militärpensions-Ermächtigungsgesetz).</item>
+                     <item n="3"><label>3.)</label> Gesetz über die Sicherstellung ausländischer Lebensmittel- und Rohstoff-Kredite durch Inanspruchnahme von im privaten Besitze befindlichen Goldmünzen und ausländischen Wertpapieren und</item>
+                     <item n="4"><label>4.)</label> Gesetz über die Sicherstellung ausländischer Lebensmittel- und Rohstoffkredite durch Holzausfuhr und Verwendung von Forstbesitz</item>
+                  </list>
+                  <p>keine Vorstellung zu erheben.</p>
+                  <p>Diese Gesetzesbeschlüsse sind daher von den zuständigen Mitgliedern der Staatsregierung gegenzuzeichnen und dem Präsidenten zur Fertigung vorzulegen.</p>
+               </div>
+               <div type="top" xml:id="krp-0086_top09">
+                  <head>
+                     <label>
+                        <num n="9">9.</num>
+                        <seg>Gesetzesbeschluss der Provisorische Tiroler Landesversammlung, betreffend die Abänderung des Gesetzes über die Einberufung des verfassungsgebenden Landtages.</seg>
+                     </label>
+                  </head>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> teilt mit, dass die Provisorische Tiroler Landesversammlung am 1. Juli <pb facs="krp-0086_r-0017"/>d. J. einen Gesetzesbeschluss, betreffend die Abänderung des Gesetzes über die Einberufung des verfassungsgebenden Landtages, gefasst habe. Hienach soll die Zahl der Landeshauptmannstellvertreter von drei auf vier erhöht werden. Verfassungsmäßige Hindernisse stünden der Gesetzwerdung dieses Beschlusses nicht entgegen, weshalb der Vorsitzende eine Vorstellung hiegegen nicht zu erheben, vielmehr die erforderliche Gegenzeichnung vorzunehmen und der Kundmachung zuzustimmen gedenke.</p>
+                  <p>Der Kabinettsrat schließt sich dieser Auffassung an und erteilt zu diesem Vorgange seine Zustimmung.</p>
+               </div>
+               <div type="top" xml:id="krp-0086_top10">
+                  <head>
+                     <label>
+                        <num n="10">10.</num>
+                        <seg>Zuweisung von Konzeptsbeamten zum Kriegswucheramt.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Loewenfeld-Russ</hi> führt, aus, dass infolge des Umsturzes die Versorgungslage Deutschösterreichs bekanntlich schon dadurch erheblich beeinträchtigt worden sei, dass jene Gebietsteile, auf deren Produktion, insbesondere in landwirtschaftlicher Beziehung, das jetzige deutschösterreichische Staatsgebiet seit jeher vornehmlich angewiesen war, anderen Nationalstaaten zugefallen sind. Ganz besonders fühlbar habe sich naturgemäß die Verschlechterung der Ernährungslage in der Hauptstadt Wien <pb facs="krp-0086_r-0018"/>gemacht, sodass gerade hier die Machenschaften unlauterer Elemente, die aus der verschärften Notlage einen erhöhten Gewinn für ihre Tasche herauszuschlagen erhofften, in erschreckendem Maße um sich griffen. Hand in Hand damit gehe eine stets steigende Empörung weiter Bevölkerungskreise gegen den überhandnehmenden Lebensmittelwucher und Schleichhandel, dessen Bekämpfung nach dem allgemeinen Urteile von den Behörden noch immer zu lässig betrieben werde. Unter dem Drucke dieser Verhältnisse habe sich das Staatsamt für Volkernährung bereits vor langer Zeit veranlasst gesehen eine improvisierte Ausgestaltung des Wiener Kriegswucheramtes in die Wege zu leiten, die nunmehr unmittelbar vor ihrem Abschlusse stehe. Das genannte Amt, das bis dahin im Polizeigefangenhause vollkommen unzulänglich untergebracht war, sei in das Gebäude der Arbeiter-Unfallversicherungsanstalt für Niederösterreich, verlegt und so zunächst die Raumfrage in halbwegs befriedigender Weise gelöst worden. Weiters sei das Überwachungspersonal dieses Amtes durch die Zuteilung von rund je 100 Offizieren und Unteroffizieren, wenn auch nicht zureichend, so doch immerhin bedeutend verstärkt und auch in sachlicher Beziehung eine Erweiterung des Wirkungskreises dahin vorbe<pb facs="krp-0086_r-0019"/>reitet worden, dass die bisher vom Wiener Magistrate besorgte Strafgewalt in kriegswirtschaftlichen Übertretungsfällen nunmehr dem Kriegswucheramte übertragen werden soll. Gerade diese Maßnahme würde eine rasche und wirksame Kriegswucherbekämpfung in Wien in hohem Grade fördern. Zur Ausübung dieser Strafgewalt und zur Aufarbeitung der mit der fortschreitenden Einschulung der neuen Überwachungsorgane zunehmenden Anzeigen und Erhebungen sei jedoch als wichtigster Abschluss der Ausgestaltungsaktion, eine zureichende Vermehrung der rechtskundigen Referenten des Wiener Kriegswucheramtes erforderlich. Das Staatsamt für Inneres und Unterricht habe sich über Ersuchen des Staatsamtes für Volksernährung seit Monaten bereits alle Mühe gegeben, die für diesen Zweck entsprechende Mindestzahl von 18 tatkräftigen und geeigneten Verwaltungsbeamten ausfindig zu machen. Obwohl die Indienststellung dieser Funktionäre bereits für Mitte April l. J. notwendig gewesen wäre, sei es trotz aller Bemühungen, wie aus einem Berichte des Präsidenten der Wiener Polizeidirektion zu entnehmen ist, erst gelungen, das Konzeptspersonal dieses Amtes um eine einzige Kraft zu vermehren.</p>
+                  <p>Da die weitere Aufrechterhaltung der Ruhe und Ordnung zu einem guten Teile da<pb facs="krp-0086_r-0020"/>von abhängig wird, dass raschest eine dem Publikum auffällig fühlbare Verstärkung des Kriegswucherdienstes in Wien platzgreife, halte der sprechende Staatssekretär die Angelegenheit der Zuteilung ausreichender und geeigneter Referenten zum Wiener Kriegswucheramte für derart dringlich und wichtig, dass er die Mitglieder des Kabinettes dringend bitten müsse, dem Kriegswucheramte der deutschösterreichischen Polizeidirektion in Wien vorübergehend tüchtige und verlässliche jüngere Konzeptsbeamte mit größtmöglichster Beschleunigung zur Verfügung zu stellen.</p>
+                  <p>Staatssekretär <hi rend="#letterspaced">Eldersch</hi> befürwortet diese Angelegenheit auf das wärmste und sichert die Fortsetzung der einschlägigen Bemühungen des Staatsamtes für Inneres und Unterricht zu.</p>
+                  <p>Der Kabinettsrat pflichtet den Ausführungen des Staatssekretärs für Volksernährung bei und ladet sämtliche Staatsämter ein, im Sinne des vorliegenden Antrages die tunlichst umgehende Zuweisung von verfügbaren Konzeptsbeamten an das Kriegswucheramt zu verfügen.</p>
+               </div>
+               <div type="top" xml:id="krp-0086_top11">
+                  <head>
+                     <label>
+                        <num n="11">11.</num>
+                        <seg>Gesetzesbeschluss der Provisorischen Landesversammlung in Niederösterreich, betreffend die Einhebung von Wassergebühren in der Gemeinde Waidmannsfeld.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Eldersch erbittet und erhält die Zustimmung des Kabinettsrates zum Beitritte der Staatsregierung zu dem von der Niederösterreichischen Landesversammlung beschlossenen Ent<pb facs="krp-0086_r-0021"/>wurfe eines Gesetzes, betreffend die Einhebung von Wassergebühren in der Gemeinde Waidmannsfeld.</p>
+               </div>
+               <div type="top" xml:id="krp-0086_top12">
+                  <head>
+                     <label>
+                        <num n="12">12.</num>
+                        <seg>Anrechnung von Vordienstzeiten bei den Dienern der Wiener Krankenanstalten.</seg>
+                     </label>
+                  </head>
+                  <p>Aufgrund einer eingehenden Darstellung der Sachlage durch Unterstaatssekretär Dr. <hi rend="#letterspaced">Tandler</hi> genehmigt der Kabinettsrat, dass den Dienern der Wiener Krankenanstalten vom 1. April 1919 angefangen in Abänderung des Erlasses der vormaligen Statthalterei vom 11. Mai 1914, Zl. VIII-808/4, auch die als Taglöhner, Arbeiter, Professionist, Wärter oder Aushilfslaborant in den Wiener Krankenanstalten geleistete Vordienstzeit für die Vorrückung in die Bezüge (Gehalt und Aktivitätszulage) höhere Gehaltsstufen – in ähnlicher Art wie jene Zeit, die ein Fondsdiener als vollbeschäftigter Aushilfsdiener oder als sogenannter temporärer Aushilfsdiener im staatlichen Dienste zurückgelegt hat – mit den durch die besonderen Verhältnisse bedingten geringfügigen Abänderungen eingerechnet werde. Danach wird die in Betracht kommende Vordienstzeit ohne Rücksicht auf ihre Dauer zur Hälfte dann eingerechnet, wenn sie keine Unterbrechung erfahren hat und unmittelbar der Ernennung zum Diener vorangegangen ist; doch darf die Gesamtver<pb facs="krp-0086_r-0022"/>rechnung fünf Jahre nicht übersteigen und soll der Begünstigung eine rückwirkende Kraft nicht zukommen. Schließlich ist die als Taglöhner, Arbeiter, Professionist, Wärter oder Aushilfslaborant in den Wiener Krankenanstalten geleistete Vordienstzeit diesen Dienern bei Bemessung der Ruhe- und Versorgungsgenüsse zur Gänze in Anrechnung zu bringen.</p>
+               </div>
+               <div type="top" xml:id="krp-0086_top13">
+                  <head>
+                     <label>
+                        <num n="13">13.</num>
+                        <seg>Gesetzentwurf, betreffend die Abänderung einiger Bestimmungen über die Unfallversicherung der Arbeiter (IV. Novelle zum Unfallversicherungsgesetze).</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Hanusch</hi> erbittet und erhält vom Kabinettsrate die Ermächtigung zur Einbringung eines Gesetzes, betreffend die Abänderung einiger Bestimmungen über die Unfallversicherung der Arbeiter (IV. Novelle zum Unfallversicherungsgesetz).</p>
+               </div>
+               <div type="top" xml:id="krp-0086_top14">
+                  <head>
+                     <label>
+                        <num n="14">14.</num>
+                        <seg>Drei Vollzugsanweisungen des Staatsamtes für soziale Verwaltung in Angelegenheit der Volkspflegestätten.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Hanusch erbittet und erhält vom Kabinettsrate die Ermächtigung zur Erlassung dreier Vollzugsanweisungen des Staatsamtes für soziale Verwaltung im Einvernehmen mit den jeweils beteiligten Staatsämtern u. zw.</p>
+                  <list>
+                     <item n="1"><label>1.)</label> über die Errichtung, die Zusammensetzung, den Wirkungskreis und das Verfahren der Landeskommissionen für Volkspflegestätten.<pb facs="krp-0086_r-0023"/></item>
+                     <item n="2"><label>2.)</label> über die Einrichtung und Führung von öffentlich erklärten Volkspflegestätten (Volkspflegestättenordnung) und</item>
+                     <item n="3"><label>3.)</label> über die Errichtung, die Zusammensetzung und den Wirkungskreis des Aufsichtsausschusses für Volkspflegestätten.</item>
+                  </list>
+               </div>
+               <div type="top" xml:id="krp-0086_top15">
+                  <head>
+                     <label>
+                        <num n="15">15.</num>
+                        <seg>Vollzugsanweisung des Staatsamtes für Heer[es]wesen, betreffend die Beteilung der aus der Kriegsgefangenschaft oder Zivilinternierung heimkehrenden mittellosen Deutschösterreicher mit Zivilkleidern aus Staatsmitteln (Heimkehrerbekleidungsvorschrift).</seg>
+                     </label>
+                  </head>
+                  <p>Unterstaatssekretär Dr. <hi rend="#letterspaced">Waiss</hi> erbittet und erhält nach einer eingehenden Darstellung der Sachlage die Ermächtigung des Kabinettsrates zur Erlassung einer Vollzugsanweisung des Staatsamtes für Heer[es]wesen im Einvernehmen mit dem Staatsamte für Finanzen und dem Staatsamte für Inneres und Unterricht, betreffend die Beteilung der aus der Kriegsgefangenschaft oder Zivilinternierung heimkehrenden mittellosen Deutschösterreicher mit Zivilkleidern aus Staatsmitteln (Heimkehrerbekleidungsvorschrift).</p>
+                  <p/>
+               </div>
+            </div>
+            <div type="anhaenge">
+               <p><pb facs="krp-0086_a01-0001"/>Streng geheimer Anhang zum Kabinettsprotokoll Nr. 86 vom 8. Juli 1919.</p>
+               <div n="1">
+                  <head>Mitteilungen des Staatssekretärs Dr. Bauer über die außenpolitische Situation.</head>
+                  <div type="a01_protokoll">
+                     <p>Staatssekretär Dr. <hi rend="#letterspaced">Bauer</hi> macht Mitteilung, dass Prinz Borghese bei ihm erschienen und ihm über die Stellungnahme Italiens zur Südtiroler-Frage sowie über die Bemühungen des italienischen Außenamtes zu Gunsten der Ansprüche der Südslawen auf unsere Kärntner und südsteirischen <pb facs="krp-0086_a01-0002"/>Gebiete in offizieller Weise streng vertrauliche Mitteilungen gemacht habe. Weiters wäre bei dem sprechenden Staatssekretär ein italienischer Abgeordneter erschienen, der unter anderem auch von der außergewöhnlich schwachen Position des Kabinettes Nitti Erwähnung getan hätte, dessen Sturz bereits in der nächsten Woche zu erwarten sei.</p>
+                     <p>Was die Situation in St. Germain anbelange, so sei es noch nicht sicher, ob die Übergabe der restlichen Friedensbedingungen noch in dieser Woche möglich sein werde. Die Angelegenheit hätte sich durch einen Anspruch der südslawischen Vertreter in Paris verzögert. Inhaltlich lauten die Nachrichten aus St. Germain nicht ungünstig; insbesondere sei die südmährische Gebietsfrage, die Frage des niederösterreichischen Grenzgebietes und die Westungarische-Frage noch nicht völlig zu unseren Ungunsten abgetan. Schließlich macht der sprechende Staatssekretär von seiner an den Volkskommissär für auswärtige Angelegenheiten Bela Kun gerichteten Erwiderungsnote auf dessen Beschwerde in Sachen des hiesigen ungarischen Ge<pb facs="krp-0086_a01-0003"/>sandten Dr. Czobel Mitteilung.</p>
+                     <p>Der Kabinettsrat nimmt die Ausführungen des Staatssekretärs Dr. Bauer genehmigend zur Kenntnis.</p>
+                  </div>
+               </div>
+               <div n="2">
+                  <head>Maßnahmen zur Vorbereitung der Finanzierung der Vermögensabgabe der Sozialisierung und der Industrieförderung.</head>
+                  <div type="a02_protokoll">
+                     <p>Staatssekretär Dr. <hi rend="#letterspaced">Schumpeter</hi> erstattet den diesem Protokoll als Beilage zuliegenden Bericht über die Maßnahmen zur Vorbereitung der Finanzierung der Vermögensabgabe, der Sozialisierung und der Industrieförderung.</p>
+                     <p>Der Kabinettsrat nimmt diese Ausführungen zustimmend zur Kenntnis.</p>
+                     <p/>
+                  </div>
+               </div>
+            </div>
+            <div type="stenogramme">
+               <div n="1">
+                  <head>EINZUFÜGEN</head>
+                  <p>Transkription in Arbeit.</p>
+                  <p/>
+               </div>
+               <div n="2">
+                  <head>EINZUFÜGEN</head>
+                  <p>Transkription in Arbeit.		</p>
+               </div>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

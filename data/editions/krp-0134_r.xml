@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href='http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:acdh="https://vocabs.acdh.oeaw.ac.at/schema#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xml:lang="de">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="a" type="main" n="0134">Kabinettsprotokoll Nr. 134 vom 30. Dezember 1919</title>
+            <title level="m" type="main" n="01">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <title level="m" type="sub" n="">Renner III (17. Oktober 1919 – 7. Juli 1920)</title>
+            <meeting>
+               <placeName key="https://d-nb.info/gnd/4066009-6">Wien</placeName>
+               <orgName key="https://d-nb.info/gnd/5162749-8">Kabinettsrat</orgName>
+               <date when-iso="1919-12-30"/>
+            </meeting>
+            <editor>
+               <persName key="https://d-nb.info/gnd/122481836"
+                         role="hasCreator"
+                         xml:id="hwohnout">
+                  <forename>Helmut</forename>
+                  <surname>Wohnout</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</affiliation>
+               <idno type="ORCID">0000-0002-3864-9839</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/120789825"
+                         role="hasCreator"
+                         xml:id="tolechowski">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0003-3291-6876</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/131679384"
+                         role="hasCreator"
+                         xml:id="rlein">
+                  <forename>Richard</forename>
+                  <surname>Lein</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0002-7502-0503</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="aholzer">
+                  <forename>Anna</forename>
+                  <surname>Holzer</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0005-3560-3500</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="dsoelkner">
+                  <forename>Dominik</forename>
+                  <surname>Sölkner</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-9895-7212</idno>
+            </editor>
+            <editor>
+               <persName role="hasContributor" xml:id="ischotzko">
+                  <forename>Ina</forename>
+                  <surname>Schotzko</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-5210-3713</idno>
+            </editor>
+            <funder n="1">
+               <orgName key="https://d-nb.info/gnd/2054142-9" role="hasFunder">Österreichischer Wissenschaftsfonds FWF</orgName>
+               <idno type="project">PAT1495024</idno>
+               <title type="project">Die Protokolle des österreichischen Kabinettsrates 1919–1920</title>
+            </funder>
+            <respStmt>
+               <resp>Projektverantwortung</resp>
+               <orgName key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Projektleitung</resp>
+               <persName key="https://d-nb.info/gnd/120789825" role="hasPrincipalInvestigator">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+                  <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+                  <idno type="ORCID">0000-0003-3291-6876</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Nationaler Forschungspartner</resp>
+               <orgName key="https://d-nb.info/gnd/1123037736" role="hasEnabler">Austrian Centre for Digital Humanities</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Digitalisierung der gedruckten Quellen</resp>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>TEI-Datenmodellierung</resp>
+               <persName role="hasContributor" xml:id="tfruehwirth">
+                  <forename>Timo</forename>
+                  <surname>Frühwirth</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-3997-5193</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technische Supervision</resp>
+               <persName key="https://d-nb.info/gnd/1043833846"
+                         role="hasContributor"
+                         xml:id="pandorfer">
+                  <forename>Peter</forename>
+                  <surname>Andorfer</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-9575-9372</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technisches Consulting und Vorbereitung der Druckausgabe</resp>
+               <persName key="https://d-nb.info/gnd/13281899X"
+                         role="hasContributor"
+                         xml:id="skurz">
+                  <forename>Stephan</forename>
+                  <surname>Kurz</surname>
+                  <affiliation key="https://d-nb.info/gnd/1202798799">Institut für die Erforschung der Habsburgermonarchie und des Balkanraumes</affiliation>
+                  <idno type="ORCID">0000-0003-2546-2570</idno>
+               </persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher key="https://d-nb.info/gnd/1001454-8">Österreichische Akademie der Wissenschaften</publisher>
+            <date when="2028"/>
+            <availability status="free">
+               <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">Lizenziert unter CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/deed.de)</licence>
+            </availability>
+            <idno type="ISBN_Print"/>
+            <idno type="ISBN_Part_epub"/>
+            <idno type="ISBN_Digital"/>
+            <idno type="DOI"/>
+            <idno type="DOI_zenodo"/>
+            <idno type="ebook_ID"/>
+         </publicationStmt>
+         <seriesStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="m" type="main">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <respStmt>
+               <resp>Bearbeitung und Herausgeberschaft</resp>
+               <orgName key="https://d-nb.info/gnd/2024703-5">Universität Wien</orgName>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+         </seriesStmt>
+         <notesStmt>
+            <note>Diese TEI-XML-Datei ist Grundlage für eine Druckausgabe der Edition.</note>
+            <relatedItem>
+               <biblStruct>
+                  <monogr>
+                     <imprint>
+                        <pubPlace key="https://d-nb.info/gnd/4066009-6">Wien</pubPlace>
+                        <publisher key="https://d-nb.info/gnd/2068748-5">Verlag der Österreichischen Akademie der Wissenschaften</publisher>
+                        <date when="2029"/>
+                     </imprint>
+                     <extent/>
+                  </monogr>
+                  <note>
+              <idno/>
+              <ptr/>
+            </note>
+                  <citedRange/>
+               </biblStruct>
+            </relatedItem>
+         </notesStmt>
+         <sourceDesc>
+            <bibl>Quellbestand: AT-OeStA/AdR MRang MR 1Rep KRP Kabinettsratsprotokolle, 1918-1920 (Teilbestand)<ref target="https://www.archivinformationssystem.at/detail.aspx?id=5465">https://www.archivinformationssystem.at/detail.aspx?id=5465</ref>
+            </bibl>
+            <msDesc>
+               <msIdentifier>
+                  <institution key="https://d-nb.info/gnd/37748-X" role="hasOwner">AT-OeStA Österreichisches Staatsarchiv (Archiv (ÖStA))</institution>
+                  <repository key="https://d-nb.info/gnd/1601181-8">AT-OeStA/AdR Archiv der Republik, 1918- (Abteilung)</repository>
+                  <collection>AT-OeStA/AdR MRang MR 1Rep Ministerrat 1. Republik, 1918 - 1938 (Bestand)</collection>
+                  <idno>AT-OeStA_AdR-MRang-MR-1.-Rep.-KRP-134</idno>
+               </msIdentifier>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <abstract>
+            <p>
+          <!--to be generated-->
+        </p>
+         </abstract>
+      </profileDesc>
+      <encodingDesc>
+         <styleDefDecl scheme="css"/>
+         <tagsDecl>
+            <rendition xml:id="b" scheme="css">font-weight:bold;</rendition>
+            <rendition xml:id="su" scheme="css">vertical-align:super;font-size:.7em;</rendition>
+            <rendition xml:id="s" scheme="css">text-decoration:line-through;</rendition>
+            <rendition xml:id="u" scheme="css">text-decoration:underline;</rendition>
+            <rendition xml:id="ow" scheme="css">text-decoration:line-through;text-decoration-style:double;</rendition>
+            <rendition xml:id="r" scheme="css">display:block;text-align:right;</rendition>
+            <rendition xml:id="letterspaced" scheme="css">letter-spacing:0.15em;</rendition>
+            <rendition xml:id="i" scheme="css">font-style:italic;</rendition>
+         </tagsDecl>
+         <editorialDecl>
+            <hyphenation>
+               <p>
+            <!--to be added-->
+          </p>
+            </hyphenation>
+            <correction>
+               <p>
+            <!--to be added-->
+          </p>
+            </correction>
+            <normalization>
+               <p>
+            <!--to be added-->
+          </p>
+            </normalization>
+            <punctuation>
+               <p>
+            <!--to be added-->
+          </p>
+            </punctuation>
+            <stdVals>
+               <p>
+            <!--to be added-->
+          </p>
+            </stdVals>
+            <p>
+          <!--to be added-->
+        </p>
+         </editorialDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#tfruehwirth" when-iso="2026-10-14">TEIGarage output upconverted with upconvert.xsl</change>
+         <change who="#tfruehwirth" when-iso="2026-10-14">TEI header populated with generate_tei_templates.py</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface/>
+   </facsimile>
+   <text>
+      <body>
+         <div xml:id="doc-krp-0134.xml">
+            <head type="dokument">
+               <title type="num">134.<note type="footnote">Das Protokoll trägt den Vermerk <hi rend="#i">Vertraulich!</hi></note>
+               </title>
+               <title type="desc">
+                  <pb facs="krp-0134_r-0001"/>[Dienstag] 1919-12-30</title>
+            </head>
+            <div type="dokumentkopf">
+               <div type="vorsitz">
+                  <head>Vorsitz:</head>
+                  <p>Paul</p>
+               </div>
+               <div type="anwesend">
+                  <head>Anwesend:</head>
+                  <p>Eisler, Ellenbogen, Hanusch, Reisch, Resch, Stöckler, Tandler, Waiss, Zerdik</p>
+               </div>
+               <div type="zugezogen">
+                  <head>Zugezogen:</head>
+                  <p>Beck, Ippen, Zedtwitz</p>
+               </div>
+               <div type="schriftfuehrer">
+                  <head>Schriftführer:</head>
+                  <p>unbekannt</p>
+               </div>
+               <div type="dauer">
+                  <head>Dauer:</head>
+                  <p>15.30–17.45 Uhr</p>
+               </div>
+            </div>
+            <div type="komponenten">
+               <p>Reinschrift, Beilagen, Konzept, stenographische Mitschrift, Entwurf der Tagesordnung, diverse Zusätze, 18. Personalsitzung</p>
+            </div>
+            <div type="beilagen">
+               <head>Beilagen:</head>
+               <list>
+                  <item><ref target="#krp-0134_top04">Zu TOP 4</ref>: <ref target="#krp-0134_b01">Vortrag Zl. 1154/4 der Staatskanzlei über die kompensationsweise Überlassung hofärarischer Bestände an die tschechoslowakische Regierung</ref></item>
+                  <item><ref target="#krp-0134_top07">Zu TOP 7</ref>: <ref target="#krp-0134_b02">Vortrag über den Gesetzesentwurf zur Änderung des Dienstverhältnisses der Diener des Justizressorts</ref></item>
+                  <item><ref target="#krp-0134_top08">Zu TOP 8</ref>: <ref target="#krp-0134_b03">Vortrag des Staatsamtes für Handel und Gewerbe, Industrie und Bauten über den Vorschlag des Internationalen Bureaus zum Schutze des gewerblichen Eigentums in Bern wegen Abschlusses eines Abkommens über gewerbliche Schutzrechte</ref></item>
+                  <item><ref target="#krp-0134_top09">Zu TOP 9</ref>: <ref target="#krp-0134_b04">Bericht des österreichischen Wasserkraft- und Elektrizitätswirtschaftsamts über das Ergebnis der von österreichischen Delegierten mit Vertretern der Firma Stone &amp; Webster in Amsterdam geführten Verhandlungen über die Verwertung der österreichischen Wasserkräfte</ref></item>
+                  <item><ref target="#krp-0134_top10">Zu TOP 10</ref><ref target="#krp-0134_b05">: Vortrag über den Gesetzesentwurf gegen Einführung eines Monopols für Mineralwasser- und -produkte samt Entwurf und Bemerkungen</ref></item>
+                  <item><ref target="#krp-0134_top11">Zu TOP 11</ref>: <ref target="#krp-0134_b06">Vortrag des Staatsamtes für Finanzen Zl. 93.418 über den Gesetzesbeschluss des Niederösterreichischen Landtages zur Einhebung einer Wertzuwachsabgabe von Liegenschaften in Wien</ref></item>
+                  <item><ref target="#krp-0134_top12">Zu TOP 12</ref>: <ref target="#krp-0134_b07">Vortrag des Staatsamtes für soziale Verwaltung über die Bekleidung der in den Heilanstalten für Kriegsbeschädigte befindlichen Kriegsbeschädigten</ref></item>
+               </list>
+            </div>
+            <div type="protokoll">
+               <pb facs="krp-0134_r-0002"/>
+               <div type="top" xml:id="krp-0134_top01">
+                  <head>
+                     <label>
+                        <num n="1">1.</num>
+                        <seg>Bezugsbehandlung der Angestellten der gemeinsamen liquidierenden Stellen.</seg>
+                     </label>
+                  </head>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> verweist darauf, dass der Kabinettsrat in seiner Sitzung am 21. Dezember l. J. anlässlich der Beratung über die Bezugsbehand<pb facs="krp-0134_r-0003"/>lung der Angestellten der gemeinsamen liquidierenden Stellen und anderen den Beschluss gefasst habe, es seien die Bezüge der bei diesen Stellen in Verwendung stehenden fremdnationalen Angestellten mit 31. Dezember l. J. einzustellen. Demgegenüber habe nun der Generalliquidierungskommissär Sektionschef Dr. Pöschl auf die technischen Schwierigkeiten hingewiesen, die sich der Durchführung dieses Beschlusses im gegenwärtigen, sehr vorgeschrittenen Zeitpunkte entgegenstellen, und gleichzeitig von einem ihm zugekommenen Ersuchen der tschechoslowakischen Regierung Mitteilung gemacht, es mögen den in Betracht kommenden, fremdnationalen Angestellten die Jännerbezüge noch ausbezahlt werden. Der Vorsitzende vermeint, dass dem Ansuchen schon aus politischen Gründen Rechnung zu tragen wäre.</p>
+                  <p>Der Kabinettsrat pflichtet dieser Auffassung bei und erteilt sohin seine Zustimmung zur Ausbezahlung der Jännerdienstesbezüge an die bei den gemeinsamen liquidierenden Stellen in Verwendung stehenden fremdnationalen Angestellten.</p>
+                  <p>In diesem Zusammenhange verweist der Vorsitzende darauf, dass der Kabinettsrat in seiner letzten Sitzung die <pb facs="krp-0134_r-0004"/>Fortzahlung der Bezüge der österreichischen Angestellten in den liquidierenden Stellen an das Erfordernis der Heimatsberechtigung in einer deutschösterreichischen Gemeinde und an die Voraussetzung der deutschen Nationalität geknüpft habe. Die Bindung an das Erfordernis der deutschen Nationalität widerspreche seiner Ansicht nach der bisherigen Gepflogenheit der Staatsregierung und wäre daher fallen zu lassen.</p>
+                  <p>Der Kabinettsrat tritt dieser Auffassung bei und ermächtigt die beteiligten Stellen, das sohin Erforderliche in die Wege zu leiten.</p>
+               </div>
+               <div type="top" xml:id="krp-0134_top02">
+                  <head>
+                     <label>
+                        <num n="2">2.</num>
+                        <seg>Maßnahmen zur tunlichsten Einschränkung der Staatsgespräche im Überlandsprechverkehr.</seg>
+                     </label>
+                  </head>
+                  <p>Der Vorsitzende erinnert daran, dass der Kabinettsrat am 18. November d. J. in der Frage der vom Generaldirektor für Post-, Telegrafen- und Fernsprechwesen beantragten Abänderung der Fernsprechgebührenordnung und im Zusammenhange damit in der Frage der möglichsten Einschränkung der Staatsgespräche im Überlandsprechverkehr beschlossen habe, die Staatskanzlei zu beauftragen, im Einvernehmen mit der Generalpostdirektion ein Regulativ auszuarbeiten und dem <pb facs="krp-0134_r-0005"/>Kabinettsrate zur Beschlussfassung vorzulegen, mit welchem entsprechende Verfügungen zur möglichsten Einschränkung der Staatsgespräche innerhalb der einzelnen Behörden getroffen werden. Die Staatskanzlei und die Generaldirektion für Post-, Telegrafen- und Fernsprechwesen hätten demgemäß Vorschläge erstattet, welche von der Staatskanzlei sämtlichen Staatsämtern bekanntgegeben und zur Darnachachtung empfohlen werden sollen.</p>
+                  <p>Nach Mitteilung dieses Regulativs erhält der Vorsitzende vom Kabinettsrate die Ermächtigung zur Hinausgabe der einschlägigen Richtlinien.</p>
+               </div>
+               <div type="top" xml:id="krp-0134_top03">
+                  <head>
+                     <label>
+                        <num n="3">3.</num>
+                        <seg>Einsetzung einer Kommission zur Prüfung der Gebarung des Wiener Krankenanstaltenfonds.</seg>
+                     </label>
+                  </head>
+                  <p>Unterstaatssekretär Dr. <hi rend="#letterspaced">Tandler</hi> kommt auf den Beschluss des Kabinettsrates vom 20. Dezember l. J. zu sprechen, wonach eine Kommission zur Prüfung und Ordnung der Gebarung des Wiener Krankenanstaltenfonds eingesetzt wurde. Diese Kommission habe nach dem gefassten Beschlusse aus je einem Vertreter des Volksgesundheitsamtes, des Staatsamtes für Finanzen, des Niederösterreichischen Landesrates und der Gemeinde Wien zu bestehen. Der spre<pb facs="krp-0134_r-0006"/>chende Unterstaatssekretär habe diesfalls mit der Gemeinde Wien und dem Niederösterreichischen Landesrate über die nunmehr einzuschlagenden Wege unterhandelt und beantrage, im Sinne eines von diesen Faktoren ausgesprochenen Wunsches eine Änderung in der Zusammensetzung dieser Kommission dahin platzgreifen zu lassen, dass ihr neben den beiden Vertretern der Staatsregierung auch je <hi rend="#u">zwei</hi> Vertreter des Landesrates und der Gemeinde Wien zugezogen werden.</p>
+                  <p>Der Kabinettsrat erhebt diesen Antrag zum Beschluss.</p>
+                  <p>Weiters verweist Unterstaatssekretär Dr. Tandler auf die zwingende Notwendigkeit, dass dieser Kommission nicht allein die Prüfung und Ordnung der Gebarung des Wiener Krankenanstaltenfonds zur Aufgabe gestellt, sondern sie gleichzeitig auch mit der erforderlichen Exekutivgewalt ausgestattet werde, um gegebenenfalls mit der gebotenen Raschheit im kurzen Wege Übelstände abstellen zu können.</p>
+                  <p>Nach einer kurzen Debatte, an der sich die Staatssekretäre <hi rend="#letterspaced">Stöckler</hi>, Dr. <hi rend="#letterspaced">Reisch</hi> und <hi rend="#letterspaced">Hanusch</hi> beteiligen, beschließt der Kabinettsrat im Sinne eines von dem letztgenannten Staatssekretär gestellten Antrages, die erwähnte Kommission mit der vom Referen<pb facs="krp-0134_r-0007"/>ten vorgeschlagenen Exekutivgewalt auszustatten; doch wird die Kommission in allen Fällen, in denen es sich um finanzielle Mehrausgaben handelt, stets das vorherige Einvernehmen mit dem Staatsamte für Finanzen zu pflegen haben.</p>
+               </div>
+               <div type="top" xml:id="krp-0134_top04">
+                  <head>
+                     <label>
+                        <num n="4">4.</num>
+                        <seg>Kompensationsweise Überlassung von Gebrauchsgegenständen aus den Beständen des Hofärars an die tschechoslowakische Regierung.</seg>
+                     </label>
+                  </head>
+                  <p>Der Oberste Verwalter des Hofärars Sektionschef Dr. <hi rend="#letterspaced">Beck</hi> bringt in Erinnerung, dass der Kabinettsrat mit Beschluss vom 26. September d. J. dem Begehren der tschechoslowakischen Regierung, aus den Beständen des Hofärars einige Gebrauchs- und Verbrauchsobjekte, die der Präsident der tschechoslowakischen Republik für Repräsentationszwecke und zur Einrichtung von Kanzleien benötigt, gegen Kompensationen auszufolgen, grundsätzlich Folge gegeben, die Entscheidung über die Kompensationsgegenstände aber dem Zeitpunkte vorbehalten habe, bis die tschechoslowakische Regierung das Verzeichnis der angeforderten Gegenstände übermittelt haben werde.</p>
+                  <p>Dieses Verzeichnis sei inzwischen eingelangt und einer Durchsicht von dem Gesichtspunkte aus unterzogen worden, ob die angeforderten Gegenstände vorhanden und für die hofärarische Verwaltung entbehrlich seien. Zur Abgabe kämen in Betracht: Möbel, Teppiche, Tafelservice (Silber, <pb facs="krp-0134_r-0008"/>Porzellan, Glas, Bronze), Tischwäsche, Weine, Wagen und Geschirre. Die Objekte seien von den tschechischen Vertretern besichtigt und für ihre Zwecke geeignet befunden worden. Sie seien für den Bedarf der hofärarischen Verwaltung entbehrlich und fielen nicht unter die Bestimmungen des Art. 196 des Friedensvertrages (Sammlungen). Seitens der Staatsämter sowie von Seite des Staatsbevollmächtigten zur Verwertung des staatlichen Kunstbesitzes sei gegen ihre Abgabe keine Einwendung erhoben worden. Die Gegenstände wären einer Schätzung teils durch die berufenen Fachorgane des Hofärars, teils durch beeidete auswärtige Sachverständige unterzogen worden. Die Schätzpreise berücksichtigen auch den Wert der besonderen Vorliebe und die Tatsache, dass es sich um anderweitig kaum zu beschaffende Objekte handle. Die Gesamtsumme stelle sich auf 2.859.635 österreichische K, 428.320 tschechische Kronen und 54.000 französische Francs.</p>
+                  <p>Die Frage der Kompensationen sei einer Beratung durch die beim Amte des Obersten Verwalters des Hofärars bestehende zwischenstaatsamtliche Kommission unterzogen worden. Aufgrund des Ergebnisses dieser Beratung wären nach Antrag des Obersten Verwalters des Hofärars als Kompensationen zu verlangen:</p>
+                  <p><pb facs="krp-0134_r-0009"/></p>
+                  <table>
+                     <row>
+                        <cell><list><item n="1">1.) Hafer (für den Bedarf der hofärarischen Verwaltung und des Staatsamtes für Land- und Forstwirtschaft)</item></list></cell>
+                        <cell>1.000.000 österreichische K</cell>
+                     </row>
+                     <row>
+                        <cell><list><item n="1">2.) Glasflaschen (für den hofärarischen Kellereibetrieb)</item></list></cell>
+                        <cell><p>150.000 österreichische K</p></cell>
+                     </row>
+                     <row>
+                        <cell><list><item n="1">3.) Baustoffe (Zement, Glas) (für das Staatsamt für Handel und Gewerbe, Industrie und Bauten)</item></list></cell>
+                        <cell>1.000.000 österreichische K</cell>
+                     </row>
+                     <row>
+                        <cell><list><item n="1">4.) Technische Bedarfsartikel (für das Staatsamt für Verkehrswesen)</item></list></cell>
+                        <cell>8.000.000 österreichische K</cell>
+                     </row>
+                     <row>
+                        <cell><list><item n="1">5.) Lebensmittel (für die Staatsangestellten)</item></list></cell>
+                        <cell><p>10.000.000 österreichische K</p></cell>
+                     </row>
+                  </table>
+                  <p>Demgemäß wäre ein Einfuhrswert von etwa 20.000.000 österreichischer K zu verlangen, wobei der über den Ausfuhrswert hinausgehende Betrag in österreichischer Valuta zu bezahlen wäre. Sollte eine Lieferung in diesem Umfange nicht zu erreichen sein, müsste eine verhältnismäßige Kürzung der in der Gruppe zwei und drei bezeichneten Kompensationsgüter eintreten.</p>
+                  <p>Redner bitte sohin um die Ermächtigung, auf der in den zwischenstaatsamtlichen Beratungen vereinbarten Grundlage mit den Vertretern der tschechoslowakischen <pb facs="krp-0134_r-0010"/>Regierung in Verhandlungen eintreten und die Transaktion zum Abschlusse bringen zu dürfen.</p>
+                  <p>Über Antrag des <hi rend="#letterspaced">Vorsitzenden</hi> erteilt der Kabinettsrat nach einer kurzen Debatte, in deren Zuge Sektionschef Dr. <hi rend="#letterspaced">Beck</hi> mehrere Anfragen des Staatssekretärs für Finanzen und des Unterstaatssekretärs Dr. <hi rend="#letterspaced">Eisler</hi> beantwortete, die erbetene Ermächtigung.</p>
+               </div>
+               <div type="top" xml:id="krp-0134_top05">
+                  <head>
+                     <label>
+                        <num n="5">5.</num>
+                        <seg>Nachträgliche Genehmigung der dringlichkeitshalber bereits verfügten Kundmachung mehrerer von der Nationalversammlung beschlossener Gesetze.</seg>
+                     </label>
+                  </head>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> erbittet und erhält vom Kabinettsrate die nachträgliche Zustimmung zu der dringlichkeitshalber bereits veranlassten Kundmachung nachstehender, von der Nationalversammlung beschlossener Gesetze, und zwar des Gesetzes</p>
+                  <list>
+                     <item n="1">1.) über die Bezüge des systemisierten Lehrpersonales an den katholisch-theologischen Diözesanabteilungen,</item>
+                     <item n="2">2.) mit welchem vorläufige Erhöhungen des Minimaleinkommens und der Ruhegenüsse der katholischen Seelsorger, sowie des Minimaleinkommens der Dignitäre und Kanoniker bei den Metropolitan- und Kathedralkapiteln der katholischen Kirche festgestellt werden,</item>
+                     <item n="3">3.) über die Verwendung von Teilen der Gebarungsüberschüsse der gemeinschaftlichen Waisenkassen,</item>
+                  </list>
+                  <p><pb facs="krp-0134_r-0011"/></p>
+                  <list>
+                     <item n="1">4.) über die Unvereinbarkeit des Amtes eines Volksbeauftragten mit der Rechtsanwaltschaft und dem Notariate,</item>
+                     <item n="2">5.) über die Ermächtigung der Regierung zu zoll- und handelspolitischen Verfügungen,</item>
+                     <item n="3">6.) über die Festsetzung der bei der Einfuhr von Tabak und Tabakfabrikaten zu entrichtenden Lizenzgebühr,</item>
+                     <item n="4">7.) zur vorläufigen Regelung der Bestallung der Personen des militärischen Berufsstandes (Militärbestallungsübergangsgesetz),</item>
+                     <item n="5">8.) über die Verlängerung der Funktionsdauer der wirklichen Mitglieder der Handels- und Gewerbekammern bis 31. März 1920,</item>
+                     <item n="6">9.) über die Folgen militärgerichtlicher Verurteilungen,</item>
+                     <item n="7">10.) über die Eisenbahnverkehrssteuern und</item>
+                     <item n="8">11.) über die Führung des Staatshaushaltes in der Zeit vom 1. Jänner bis 30. Juni 1920.</item>
+                  </list>
+               </div>
+               <div type="top" xml:id="krp-0134_top06">
+                  <head>
+                     <label>
+                        <num n="6">6.</num>
+                        <seg>Arbeitslosenfrage.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Hanusch</hi> teilt mit, dass die Arbeitslosen in der letzten Zeit eine namhafte Erhöhung der Arbeitslosenunterstützung verlangt hätten. Angesichts der bereits in Wien und in einigen größeren Städten Österreichs vorgekom<pb facs="krp-0134_r-0012"/>menen Straßendemonstrationen, mit denen die Arbeitslosen diesen ihren Wünschen zum Durchbruche verhelfen wollten, halte der sprechende Staatssekretär dafür, dass diesem Begehren, dem bei der steten Preissteigerung eine gewisse Berechtigung auch nicht abgesprochen werden könne, Rechnung zu tragen wäre. Er beantrage sohin bei den Familienerhaltern und den männlichen Vollarbeitern über 18 Jahre, soweit sie keinem Familienverbande angehören, eine Erhöhung der Arbeitslosenunterstützung um 2 K per Tag eintreten zu lassen; die jugendlichen Arbeiter und Frauen hingegen würden hiebei unberücksichtigt zu bleiben haben. Das Erfordernis würde sich auf monatlich ungefähr 3 Millionen K stellen. Diese Maßnahme könne als befristet angesehen werden, zumal bereits in nächster Zeit die Einbringung einer Gesetzesvorlage, betreffend die Arbeitslosenversicherung in Aussicht stehe.</p>
+                  <p>Nach einer kurzen Debatte, an welcher sich die Staatssekretäre Dr. <hi rend="#letterspaced">Reisch</hi> und <hi rend="#letterspaced">Stöckler</hi> sowie Unterstaatssekretär Dr. <hi rend="#letterspaced">Resch</hi> beteiligten, erhebt der Kabinettsrat den vom Staatssekretär Hanusch gestellten Antrag zum Beschluss und ladet den Referenten ein, das demnach Erforderliche zu veranlassen.</p>
+                  <p><pb facs="krp-0134_r-0013"/></p>
+               </div>
+               <div type="top" xml:id="krp-0134_top07">
+                  <head>
+                     <label>
+                        <num n="7">7.</num>
+                        <seg>Gesetzentwurf über die Änderung des Dienstverhältnisses der Diener (Unterbeamten) des Justizressorts als Vollstreckungsorgane.</seg>
+                     </label>
+                  </head>
+                  <p>Unterstaatssekretär Dr. <hi rend="#letterspaced">Eisler</hi> erbittet vom Kabinettsrate die Ermächtigung, den Entwurf eines Gesetzes über die Änderung des Dienstverhältnisses der Diener (Unterbeamten) des Justizressorts als Vollstreckungsorgane in der Nationalversammlung einbringen zu dürfen.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Reisch</hi> beantragt die Eliminierung des § 6 der Vorlage, wonach Witwen und Waisen nach den zu Staatsbeamten ohne Rangsklasse ernannten Gerichtsangestellten in Ansehung des Ausmaßes der Versorgungsgenüsse den Witwen und Waisen nach Staatsbeamten der XI. Rangsklasse gleichgehalten werden sollen. Der sprechende Staatssekretär begründet diesen Vorschlag damit, dass eine generelle Regelung dieser Frage ohnehin vorhanden sei und diese Bestimmung demnach ohne Schädigung der in Betracht kommenden Personen wegfallen könne.</p>
+                  <p>Unterstaatssekretär Dr. <hi rend="#letterspaced">Eisler</hi> erklärt sich im Hinblick auf diese ausdrückliche Feststellung des zur einschlägigen Interpretation zunächst berufenen Staatssekretärs für Finanzen mit der von diesem beantragten Eliminierung des § 6 der Vorlage einverstanden.</p>
+                  <p><pb facs="krp-0134_r-0014"/>Der Kabinettsrat erteilt sohin dem Staatsamte für Justiz die Ermächtigung zur Einbringung dieses Gesetzentwurfes.</p>
+               </div>
+               <div type="top" xml:id="krp-0134_top08">
+                  <head>
+                     <label>
+                        <num n="8">8.</num>
+                        <seg>Vorschlag des Internationalen Bureaus zum Schutze des gewerblichen Eigentums in Bern wegen Abschlusses eines Abkommens über gewerbliche Schutzrechte.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Ellenbogen</hi> teilt mit, dass das „Internationale Büro zum Schutze des gewerblichen Eigentums“ in Bern den zuständigen Zentralämtern der der „Internationalen Union zum Schutze des gewerblichen Eigentums“ angehörenden Staaten den Entwurf eines von diesen Staaten abzuschließenden Abkommens übermittelt habe, das die Aufrechterhaltung und Wiederherstellung der durch den Krieg beeinträchtigten gewerblichen Schutzrechte (Patente, Muster- und Markenrechte) bezwecke. Im Wesen sollen nach diesem Abkommen die einschlägigen, auch im Staatsvertrage von St. Germain enthaltenen Bestimmungen des Friedensvertrages von Versailles im Verhältnis zwischen den der genannten Internationalen Union angehörenden Staaten, auch soweit sie nicht an dem Friedensschlusse beteiligt sind, zur Anwendung gelangen.</p>
+                  <p>Vom sachlichen Standpunkte aus wäre es jedenfalls zu begrüßen, wenn das vorgeschlagene Abkommen zustande käme, da hiedurch unseren Angehörigen gewisse, die <pb facs="krp-0134_r-0015"/>Aufrechterhaltung und Wiederherstellung gewerblicher Schutzrechte bezweckende Begünstigungen, auf die sie in den Ententestaaten Anspruch haben, über den Kreis dieser Staaten hinaus, insbesondere auch in den neutralen Staaten, gesichert wären.</p>
+                  <p>Der sprechende Staatssekretär stelle daher den Antrag, der Kabinettsrat wolle dem Staatsamte für Handel und Gewerbe, Industrie und Bauten die Ermächtigung erteilen, an das „Internationale Büro zum Schutze des gewerblichen Eigentums“ in Bern die Mitteilung zu richten, dass die Regierung der Republik Österreich bereit sei, an dem vorgeschlagenen Abkommen teilzunehmen und insbesondere auch der vorgeschlagenen Art des Abschlusses des Abkommens in der einfachen Form der Fertigung eines Protokolles zustimme.</p>
+                  <p>Der Kabinettsrat erteilt die erbetene Ermächtigung.</p>
+               </div>
+               <div type="top" xml:id="krp-0134_top09">
+                  <head>
+                     <label>
+                        <num n="9">9.</num>
+                        <seg>Bericht über die Ergebnisse der in Amsterdam geführten Verhandlungen über die Verwertung der österreichischen Wasserkräfte.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. Ellenbogen erinnert daran, dass bei den anfangs dieses Jahres von ihm mit dem Direktor der österreichischen [Boden] Creditanstalt Ludwig Neurath über Finanzierungsfragen der österreichischen Wasserkräfte abge<pb facs="krp-0134_r-0016"/>haltenen Besprechungen auch die Eventualität der Heranziehung ausländischen Kapitales zum Ausbaue der österreichischen Wasserkräfte erwogen und bei diesem Anlasse Direktor Neurath ersucht worden sei, im geeigneten Momente das Interesse seiner auswärtigen Geschäftsfreunde auf diese Angelegenheit zu lenken.</p>
+                  <p>Die Creditanstalt habe sodann zur Einleitung dieser Aktion einen allgemeinen Bericht über die Verwertung der Wasserkräfte Österreichs verfasst und diesen Bericht dem ihr befreundeten Bankhause Kuhn, Loeb &amp; Co, in New-York im September d. J. zugehen lassen. Dieser Bericht hätte die Bankgruppe dieses Hauses (National City Bank bzw. American International Corporation) veranlasst, die Firma Stone &amp; Webster zu beauftragen, nähere Informationen über die österreichischen Wasserkräfte einzuholen.</p>
+                  <p>Die Letztere hätte zu diesem Behufe als ihre Experten die Herren Howard L. Rogers und G. Whitson nach Amsterdam entsendet, um im direkten mündlichen Verkehr mit den Delegierten der österreichischen Regierung Einblick in die für die Verwertung der österreichischen Wasserkräfte maßgebenden Verhältnisse zu gewinnen. Die einschlägigen Besprechungen hätten am 3., 4. und 5. Dezember in Amster<pb facs="krp-0134_r-0017"/>dam stattgefunden. Das Ergebnis der Verhandlungen könne dahin resümiert werden:</p>
+                  <list>
+                     <item n="1"><label>1.)</label> Den amerikanischen Experten genügten die erhaltenen Informationen für einen Bericht an ihre Finanzleute, der als Grundlage für den Entschluss dienen könnte, ob der Konzern der Frage der Ausnützung der österreichischen Wasserkräfte nähertreten werde.</item>
+                     <item n="2"><label>2.)</label> Die Äußerung über die Entscheidung der Finanzleute zum Gegenstande wurde für die erste Hälfte des Monates Jänner in Aussicht gestellt und wird hierüber telegrafisch berichtet werden.</item>
+                     <item n="3"><label>3.)</label> Die amerikanischen Experten stellten die Frage, ob von Österreich gleichzeitig mit anderen Stellen über den gleichen Gegenstand verhandelt werde. Darauf erklärten die österreichischen Delegierten, dass zur Zeit keine Verhandlungen geführt werden, dass aber Anerbieten von anderer Seite, insbesondere aber auch von amerikanischer Seite vorliegen. Die Experten verlangten, dass vor Eintreffen der in Aussicht gestellten prinzipiellen Stellungnahme ihrer Gruppe, seitens der österreichischen Regierung mit keiner anderen Stelle Verhandlungen aufgenommen werden. Darauf versicherten die österreichischen Delegierten, dass die österreichische Regierung wohl geneigt sein wird, diesem Wunsche Rechnung zu tragen, dass jedoch jeden<pb facs="krp-0134_r-0018"/>falls eine Verständigung erfolgen werde, ehe die Regierung mit einer anderen Stelle in Verhandlungen treten würde.</item>
+                     <item n="4"><label>4.)</label> Nach Fällung der prinzipiellen Entscheidung würden nach Ansicht der amerikanischen Experten die weiteren Verhandlungen der amerikanischen Gruppe in Wien gepflogen werden, da hier alle Details über die Projekte zur Verfügung stehen, welche für den Entschluss über die Auswahl unter den Projekten maßgebend sind.</item>
+                     <item n="5"><label>5.)</label> Alle schriftlichen Mitteilungen hätte die österreichische Creditanstalt in Wien zu vermitteln.</item>
+                  </list>
+                  <p>Der Kabinettsrat nimmt diesen Bericht genehmigend zur Kenntnis.</p>
+               </div>
+               <div type="top" xml:id="krp-0134_top10">
+                  <head>
+                     <label>
+                        <num n="10">10.</num>
+                        <seg>Gesetzentwurf wegen Einführung eines Monopols für Mineralwässer und Mineralwasserprodukte.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Reisch</hi> erbittet und erhält vom Kabinettsrate die Ermächtigung, den Entwurf eines Gesetzes wegen Einführung eines Monopols für Mineralwässer und Mineralwasserprodukte in der Nationalversammlung einbringen zu dürfen.</p>
+               </div>
+               <div type="top" xml:id="krp-0134_top11">
+                  <head>
+                     <label>
+                        <num n="11">11.</num>
+                        <seg>Gesetzesbeschluss des Niederösterreichischen Landtages über die Einhebung einer Wertzuwachsabgabe von Liegenschaften in Wien.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. Reisch führt aus, dass die Wertzuwachsabgabe in Wien bis Ende des Jahres 1918 aufgrund <pb facs="krp-0134_r-0019"/>kaiserlich, genehmigter Landesausschussbeschlüsse eingehoben worden sei. Im Jahre 1919 sei die unveränderte Forteinhebung, ohne dass neuerlich eine Genehmigung von Seite der Staatsregierung erbeten und erteilt worden wäre, erfolgt. Nunmehr soll durch einen vom Niederösterreichischen Landtag am 18. Dezember 1919 gefassten Gesetzesbeschluss die Einhebung der Abgabe für die Zeit bis Ende des Jahres 1929 auf eine gesetzliche Grundlage gestellt werden. Der Gesetzesbeschluss schließe sich inhaltlich im Allgemeinen an die bisher in Anwendung gestandene Abgabenordnung an und berücksichtige in einer Reihe von Abänderungen den vom Finanzministerium im Jahre 1918 aufgrund der seit dem Bestande der Abgabe in Österreich gemachten Erfahrungen und im Einvernehmen mit den Landesvertretern ausgearbeiteten Musterentwurf. Außerdem enthalte der Gesetzesbeschluss noch eine kleinere Anzahl von nicht wesentlichen Zusätzen und Abänderungen, gegen die ebenfalls kein Einwand bestehe. Ein gewisses Bedenken obwalte nur gegen das im Gesetzesbeschluss vorgesehene Ausmaß der Abgabe, das bei Wertsteigerungen von über 90 % angefangen wesentlich über das im Muster enthaltene Ausmaß hinausgehe und schließlich bei Wertsteigerungen von <pb facs="krp-0134_r-0020"/>über 200 % 50 % (statt wie im Muster 35 %) erreiche. Ein Grund zur Erhebung einer Vorstellung im Sinne des Art. 14 Abs. 1 des Gesetzes vom 14. März 1919, StGBl. Nr. 179, könne jedoch in dieser Abweichung nicht erblickt werden, zumal die Finanzlage der Gemeinde eine so ungünstige sei, dass sie mehrfach gezwungen war, Staatshilfe in weitgehendem Maße in Anspruch zu nehmen und daher eine Steigerung des Abgabenertrages nicht nur im Interesse der Gemeinde, sondern mittelbar auch in jenem des Staates gelegen sei.</p>
+                  <p>Der sprechende Staatssekretär beantrage daher, die Staatsregierung wolle gegen den angeführten Gesetzesbeschluss eine Vorstellung im Sinne des Art. 14 Abs. 1 des Gesetzes vom 14. März 1919, StGBl. Nr. 179, über die Volksvertretung <hi rend="#u">nicht</hi> erheben und die Staatssekretäre für Finanzen, für Inneres und Unterricht und für Justiz zur Gegenzeichnung ermächtigen, sowie der sofortigen Kundmachung des Gesetzesbeschlusses im Landesgesetzblatte zustimmen.</p>
+                  <p>Der Kabinettsrat erhebt den gestellten Antrag zum Beschluss.</p>
+                  <p><pb facs="krp-0134_r-0021"/></p>
+               </div>
+               <div type="top" xml:id="krp-0134_top12">
+                  <head>
+                     <label>
+                        <num n="12">12.</num>
+                        <seg>Bekleidung der in den Heilanstalten für Kriegsbeschädigte in Pflege befindlichen Kriegsbeschädigten.</seg>
+                     </label>
+                  </head>
+                  <p>Unterstaatssekretär Dr. <hi rend="#letterspaced">Tandler</hi> verweist darauf, dass die Frage der Bekleidung der in den Heilanstalten für Kriegsbeschädigte in Pflege befindliche Kriegsbeschädigten einer Lösung dringend bedürfe. Bisher sei die Bekleidung der Kriegsbeschädigten als Mitglieder der bestandenen k. u. k. Wehrmacht dem liquidierenden Kriegsministerium obgelegen. In letzter Zeit hätten jedoch die Ansprüche der Heilanstalten nicht mehr befriedigt werden können, weil einerseits dem liquidierenden Kriegsministerium keinerlei Vorräte mehr zur Verfügung stehen, andererseits die Hauptanstalt für Sachdemobilisierung die Bezahlung der Sorten vom liquidierenden Kriegsministerium fordere, welches jedoch für diesen Zweck über keinerlei Geldmittel mehr verfüge.</p>
+                  <p>Da die gegenwärtig in den Heilanstalten befindlichen Kriegsbeschädigten mit 31. Juli 1919 in das nichtaktive Verhältnis entlassen worden seien, handle es sich bei ihnen um keine Militärpersonen mehr, welche auf ärarische Bekleidung Anspruch hätten; es käme für sie daher gleichwie für die übrigen aus dem Feld heimgekehrten Militärpersonen nur die Beteilung mit Zivilkleidern in Betracht.</p>
+                  <p><pb facs="krp-0134_r-0022"/>Redner stelle den Antrag, es mögen die gegenwärtig noch in den Heilanstalten für Kriegsbeschädigte befindlichen Kriegsbeschädigten gleichwie die aus der Kriegsgefangenschaft oder Zivilinternierung heimkehrenden, mittellosen Österreicher nach der Vollzugsanweisung des Staatsamtes für Heer[es]wesen vom 22. Juli 1919, StGBl. Nr. 414, mit Zivilkleidern beteilt werden.</p>
+                  <p>Der Kabinettsrat pflichtet nach einer kurzen Debatte diesem Antrage mit der Maßgabe bei, dass über Wunsch des Staatssekretärs Dr. <hi rend="#letterspaced">Reisch</hi> gleichzeitig entsprechende Vorsorgen getroffen werden, um zu verhüten, dass etwa eine Doppelbeteilung ein und derselben Person platzgreife.</p>
+               </div>
+               <div type="top" xml:id="krp-0134_top13">
+                  <head>
+                     <label>
+                        <num n="13">13.</num>
+                        <seg>Ausfolgung amtlicher Daten an Vertreter ausländischer Missionen.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Stöckler</hi> teilt mit, dass kürzlich ein italienischer Funktionär bei ihm erschienen sei, der sich als Zivilkommissär der hiesigen italienischen Gesandtschaft ausgegeben und das Verlangen nach Bekanntgabe eingehender Daten über unsere Viehbestände und unseren Forstbesitz gestellt habe. Er habe seine Forderung damit begründet, dass er dieses Material zu Vorarbeiten über die auf dem <pb facs="krp-0134_r-0023"/>Friedensvertrag beruhenden Reparationsansprüche Italiens benötige. Der sprechende Staatssekretär habe die Ausfolgung dieser Daten vorläufig abgelehnt und vermeine bei dem Umstande, als ein analoges Begehren seines Wissens auch im Staatsamte für Handel und Gewerbe, Industrie und Bauten gestellt worden sei, dass sich ein einheitliches Vorgehen aller Staatsämter in diesen Belangen dringendst empfehle. Zur Erlassung einschlägiger Direktiven sei das Staatsamt für Äußeres zuständig.</p>
+                  <p>Der Kabinettsrat beschließt, das Staatsamt für Äußeres aufzufordern, eine entsprechende Weisung im Gegenstande an alle Staatsämter ergehen zu lassen.</p>
+                  <p/>
+               </div>
+            </div>
+            <div type="stenogramme">
+               <div n="1">
+                  <head>EINZUFÜGEN</head>
+                  <p>Transkription in Arbeit.</p>
+                  <p/>
+               </div>
+               <div n="2">
+                  <head>EINZUFÜGEN</head>
+                  <p>Transkription in Arbeit.</p>
+               </div>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

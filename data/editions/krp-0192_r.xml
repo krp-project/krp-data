@@ -1,0 +1,646 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href='http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:acdh="https://vocabs.acdh.oeaw.ac.at/schema#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xml:lang="de">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="a" type="main" n="0192">Kabinettsprotokoll Nr. 192 vom 16. Juni 1920</title>
+            <title level="m" type="main" n="01">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <title level="m" type="sub" n="">Renner III (17. Oktober 1919 – 7. Juli 1920)</title>
+            <meeting>
+               <placeName key="https://d-nb.info/gnd/4066009-6">Wien</placeName>
+               <orgName key="https://d-nb.info/gnd/5162749-8">Kabinettsrat</orgName>
+               <date when-iso="1920-06-16"/>
+            </meeting>
+            <editor>
+               <persName key="https://d-nb.info/gnd/122481836"
+                         role="hasCreator"
+                         xml:id="hwohnout">
+                  <forename>Helmut</forename>
+                  <surname>Wohnout</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</affiliation>
+               <idno type="ORCID">0000-0002-3864-9839</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/120789825"
+                         role="hasCreator"
+                         xml:id="tolechowski">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0003-3291-6876</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/131679384"
+                         role="hasCreator"
+                         xml:id="rlein">
+                  <forename>Richard</forename>
+                  <surname>Lein</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0002-7502-0503</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="aholzer">
+                  <forename>Anna</forename>
+                  <surname>Holzer</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0005-3560-3500</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="dsoelkner">
+                  <forename>Dominik</forename>
+                  <surname>Sölkner</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-9895-7212</idno>
+            </editor>
+            <editor>
+               <persName role="hasContributor" xml:id="ischotzko">
+                  <forename>Ina</forename>
+                  <surname>Schotzko</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-5210-3713</idno>
+            </editor>
+            <funder n="1">
+               <orgName key="https://d-nb.info/gnd/2054142-9" role="hasFunder">Österreichischer Wissenschaftsfonds FWF</orgName>
+               <idno type="project">PAT1495024</idno>
+               <title type="project">Die Protokolle des österreichischen Kabinettsrates 1919–1920</title>
+            </funder>
+            <respStmt>
+               <resp>Projektverantwortung</resp>
+               <orgName key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Projektleitung</resp>
+               <persName key="https://d-nb.info/gnd/120789825" role="hasPrincipalInvestigator">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+                  <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+                  <idno type="ORCID">0000-0003-3291-6876</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Nationaler Forschungspartner</resp>
+               <orgName key="https://d-nb.info/gnd/1123037736" role="hasEnabler">Austrian Centre for Digital Humanities</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Digitalisierung der gedruckten Quellen</resp>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>TEI-Datenmodellierung</resp>
+               <persName role="hasContributor" xml:id="tfruehwirth">
+                  <forename>Timo</forename>
+                  <surname>Frühwirth</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-3997-5193</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technische Supervision</resp>
+               <persName key="https://d-nb.info/gnd/1043833846"
+                         role="hasContributor"
+                         xml:id="pandorfer">
+                  <forename>Peter</forename>
+                  <surname>Andorfer</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-9575-9372</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technisches Consulting und Vorbereitung der Druckausgabe</resp>
+               <persName key="https://d-nb.info/gnd/13281899X"
+                         role="hasContributor"
+                         xml:id="skurz">
+                  <forename>Stephan</forename>
+                  <surname>Kurz</surname>
+                  <affiliation key="https://d-nb.info/gnd/1202798799">Institut für die Erforschung der Habsburgermonarchie und des Balkanraumes</affiliation>
+                  <idno type="ORCID">0000-0003-2546-2570</idno>
+               </persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher key="https://d-nb.info/gnd/1001454-8">Österreichische Akademie der Wissenschaften</publisher>
+            <date when="2028"/>
+            <availability status="free">
+               <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">Lizenziert unter CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/deed.de)</licence>
+            </availability>
+            <idno type="ISBN_Print"/>
+            <idno type="ISBN_Part_epub"/>
+            <idno type="ISBN_Digital"/>
+            <idno type="DOI"/>
+            <idno type="DOI_zenodo"/>
+            <idno type="ebook_ID"/>
+         </publicationStmt>
+         <seriesStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="m" type="main">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <respStmt>
+               <resp>Bearbeitung und Herausgeberschaft</resp>
+               <orgName key="https://d-nb.info/gnd/2024703-5">Universität Wien</orgName>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+         </seriesStmt>
+         <notesStmt>
+            <note>Diese TEI-XML-Datei ist Grundlage für eine Druckausgabe der Edition.</note>
+            <relatedItem>
+               <biblStruct>
+                  <monogr>
+                     <imprint>
+                        <pubPlace key="https://d-nb.info/gnd/4066009-6">Wien</pubPlace>
+                        <publisher key="https://d-nb.info/gnd/2068748-5">Verlag der Österreichischen Akademie der Wissenschaften</publisher>
+                        <date when="2029"/>
+                     </imprint>
+                     <extent/>
+                  </monogr>
+                  <note>
+              <idno/>
+              <ptr/>
+            </note>
+                  <citedRange/>
+               </biblStruct>
+            </relatedItem>
+         </notesStmt>
+         <sourceDesc>
+            <bibl>Quellbestand: AT-OeStA/AdR MRang MR 1Rep KRP Kabinettsratsprotokolle, 1918-1920 (Teilbestand)<ref target="https://www.archivinformationssystem.at/detail.aspx?id=5465">https://www.archivinformationssystem.at/detail.aspx?id=5465</ref>
+            </bibl>
+            <msDesc>
+               <msIdentifier>
+                  <institution key="https://d-nb.info/gnd/37748-X" role="hasOwner">AT-OeStA Österreichisches Staatsarchiv (Archiv (ÖStA))</institution>
+                  <repository key="https://d-nb.info/gnd/1601181-8">AT-OeStA/AdR Archiv der Republik, 1918- (Abteilung)</repository>
+                  <collection>AT-OeStA/AdR MRang MR 1Rep Ministerrat 1. Republik, 1918 - 1938 (Bestand)</collection>
+                  <idno>AT-OeStA_AdR-MRang-MR-1.-Rep.-KRP-192</idno>
+               </msIdentifier>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <abstract>
+            <p>
+          <!--to be generated-->
+        </p>
+         </abstract>
+      </profileDesc>
+      <encodingDesc>
+         <styleDefDecl scheme="css"/>
+         <tagsDecl>
+            <rendition xml:id="b" scheme="css">font-weight:bold;</rendition>
+            <rendition xml:id="su" scheme="css">vertical-align:super;font-size:.7em;</rendition>
+            <rendition xml:id="s" scheme="css">text-decoration:line-through;</rendition>
+            <rendition xml:id="u" scheme="css">text-decoration:underline;</rendition>
+            <rendition xml:id="ow" scheme="css">text-decoration:line-through;text-decoration-style:double;</rendition>
+            <rendition xml:id="r" scheme="css">display:block;text-align:right;</rendition>
+            <rendition xml:id="letterspaced" scheme="css">letter-spacing:0.15em;</rendition>
+            <rendition xml:id="i" scheme="css">font-style:italic;</rendition>
+         </tagsDecl>
+         <editorialDecl>
+            <hyphenation>
+               <p>
+            <!--to be added-->
+          </p>
+            </hyphenation>
+            <correction>
+               <p>
+            <!--to be added-->
+          </p>
+            </correction>
+            <normalization>
+               <p>
+            <!--to be added-->
+          </p>
+            </normalization>
+            <punctuation>
+               <p>
+            <!--to be added-->
+          </p>
+            </punctuation>
+            <stdVals>
+               <p>
+            <!--to be added-->
+          </p>
+            </stdVals>
+            <p>
+          <!--to be added-->
+        </p>
+         </editorialDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#tfruehwirth" when-iso="2026-10-14">TEIGarage output upconverted with upconvert.xsl</change>
+         <change who="#tfruehwirth" when-iso="2026-10-14">TEI header populated with generate_tei_templates.py</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface/>
+   </facsimile>
+   <text>
+      <body>
+         <div xml:id="doc-krp-0192.xml">
+            <head type="dokument">
+               <title type="num">192.<note type="footnote">Das Protokoll trägt den Vermerk <hi rend="#i">Vertraulich!</hi></note>
+               </title>
+               <title type="desc">
+                  <pb facs="krp-0192_r-0001"/>
+                  <pb facs="krp-0192_r-0002"/>[Mittwoch] 1920-06-16</title>
+            </head>
+            <div type="dokumentkopf">
+               <div type="vorsitz">
+                  <head>Vorsitz:</head>
+                  <p>Renner</p>
+               </div>
+               <div type="anwesend">
+                  <head>Anwesend:</head>
+                  <p>Deutsch, Eldersch, Ellenbogen, Fink, Glöckel, Hanusch, Loewenfeld-Russ, Mayr, Miklas, Ramek, Reisch, Resch, Stöckler, Tandler, Waiss, Zerdik</p>
+               </div>
+               <div type="zugezogen">
+                  <head>Zugezogen:</head>
+                  <p>Fischer, [Froehlich], Grimm</p>
+               </div>
+               <div type="schriftfuehrer">
+                  <head>Schriftführer:</head>
+                  <p>unbekannt</p>
+               </div>
+               <div type="dauer">
+                  <head>Dauer:</head>
+                  <p>15.00–20.00 Uhr</p>
+               </div>
+            </div>
+            <div type="komponenten">
+               <p>Reinschrift, Beilagen, Konzept, stenographische Mitschrift, diverse Zusätze</p>
+            </div>
+            <div type="beilagen">
+               <head>Beilagen:</head>
+               <list>
+                  <item><ref target="#krp-0192_top01">Zu TOP 1</ref>: <ref target="#krp-0192_b01">Anfrage des Vizekanzlers Fink in Angelegenheit des Erlasses über die Soldatenräte</ref></item>
+                  <item><ref target="#krp-0192_top02">Zu TOP 2</ref>: <ref target="#krp-0192_b02">Antrag des Staatsamtes für Äußeres auf Genehmigung des Übereinkommens mit der tschechoslowakischen Republik über die Durchführung einzelner Bestimmungen des Staatsvertrages von St. Germain</ref></item>
+                  <item><ref target="#krp-0192_top02">Zu TOP 2</ref>: <ref target="#krp-0192_b03">Übereinkommen der Republik Österreich und der tschechoslowakischen Republik über die Durchführung einzelner Bestimmungen des Staatsvertrages von St. Germain</ref></item>
+                  <item><ref target="#krp-0192_top02">Zu TOP 2</ref>: <ref target="#krp-0192_b04">Vertrag zwischen der tschechoslowakischen Republik und der Republik Österreich über Staatsbürgerschaft und Minderheitsschutz</ref></item>
+                  <item><ref target="#krp-0192_top02">Zu TOP 2</ref>: <ref target="#krp-0192_b05">Auszug aus dem Protokoll über die Sitzungsperiode der zwischenstaatlichen Kommission für Staatsbürgerschafts- und Minderheitenschutzfragen vom 3. bis 7. Juni 1920 in Brünn</ref></item>
+                  <item><ref target="#krp-0192_top02">Zu TOP 2</ref>: <ref target="#krp-0192_b06">Zusatzprotokoll zum Vertrag über nicht zu verlautbarende Vereinbarungen</ref></item>
+                  <item><ref target="#krp-0192_top03">Zu TOP 3</ref>: <ref target="#krp-0192_b07">Gesetzesentwurf über die Aufnahme des Burgenlandes in das Staatsgebiet der Republik Österreich mit erläuternden Bemerkungen</ref></item>
+                  <item><ref target="#krp-0192_top04">Zu TOP 4</ref>: <ref target="#krp-0192_b08">Vortrag Zl. 946/27/St. über die Regelung des Archivwesens</ref></item>
+                  <item><ref target="#krp-0192_top05">Zu TOP 5</ref>: <ref target="#krp-0192_b09">Vollzugsanweisung des Staatsamtes für Verkehrswesen Zl. 854/St.V. über die vorläufige Regelung der Versorgungsgenüsse der Witwen und Waisen der Staatseisenbahnbediensteten, die nach dem 1. Jänner 1920 in den Ruhestand getreten oder nach dem 31. Dezember 1919 in Aktivität gestorben sind mit Begründung</ref></item>
+                  <item><ref target="#krp-0192_top06">Zu TOP 6</ref>: <ref target="#krp-0192_b10">Vollzugsanweisung des Staatsamtes für Verkehrswesen Zl. 897/St.V. über die vorläufige Regelung von Ruhe- (Versorgungs-)genüssen der Staatseisenbahnbediensteten und ihrer Hinterbliebenen mit Begründung</ref></item>
+                  <item><ref target="#krp-0192_top07">Zu TOP 7</ref>: <ref target="#krp-0192_b11">Vortrag des Unterrichtsamtes über die Gewährung von Personalzulagen für den Direktor und andere hervorragende Lehrkräfte der Staatsakademie für Musik und darstellende Kunst</ref></item>
+                  <item><ref target="#krp-0192_top08">Zu TOP 8</ref>: <ref target="#krp-0192_b12">Vortrag des Unterrichtsamtes über den Gesetzesentwurf des Tiroler Landtages für den Religionsunterricht an den öffentlichen allgemeinen Volksschulen und an den öffentlichen Bürgerschulen in Tirol</ref></item>
+                  <item><ref target="#krp-0192_top09">Zu TOP 9</ref>: <ref target="#krp-0192_b13">Exposé des Staatssekretärs Dr. Ellenbogen über die Berechnung der staatlichen Zuschüsse zum Rotationspapierpreis und die Abänderung der Einschränkungsvollzugsanweisung vom 15. Mai 1920</ref></item>
+                  <item><ref target="#krp-0192_top10">Zu TOP 10</ref>: <ref target="#krp-0192_b14">Vortrag des Staatsamtes für Heereswesen Zl. 3195/1920 über die Errichtung der Heeres-, Führer- und Lehrerschule</ref></item>
+                  <item><ref target="#krp-0192_top11">Zu TOP 11</ref>: <ref target="#krp-0192_b15">Vortrag des Staatsamtes für Heereswesen Zl. 7373/1920 über die Frage der Übernahme der Kosten für die Heimwehr des Landes Kärnten, für den weststeirischen Grenzschutz und für die Grenzabsperrung des Landes Salzburg gegen die Rätediktatur in Bayern</ref></item>
+                  <item><ref target="#krp-0192_top12">Zu TOP 12</ref>: <ref target="#krp-0192_b16">Vollzugsanweisungen des Staatsamtes für soziale Verwaltung über die VI. und VII. Durchführungsanordnung zum Arbeiterkammerversicherungsgesetz</ref></item>
+                  <item><ref target="#krp-0192_top12">Zu TOP 12</ref>: <ref target="#krp-0192_b17">Vollzugsanweisung des Staatsamtes für soziale Verwaltung über die Errichtung von Arbeiterkammern</ref></item>
+                  <item><ref target="#krp-0192_top14">Zu TOP 14</ref>: <ref target="#krp-0192_b18">Vollzugsanweisung des Staatsamtes für soziale Verwaltung über die Weitergewährung des Zuschusses zu Unterhaltsbeiträgen und Zuwendungen</ref></item>
+                  <item><ref target="#krp-0192_top15">Zu TOP 15</ref>: <ref target="#krp-0192_b19">Bericht des Staatssekretärs für Finanzen im Einvernehmen mit dem Staatssekretär für Äußeres an den Hauptausschuss der Konstituierenden Nationalversammlung über die Veräußerung der Aktien der Süddeutschen Donau-Dampfschifffahrts-Gesellschaft an eine englische Finanzgruppe</ref></item>
+                  <item><ref target="#krp-0192_top16">Zu TOP 16</ref>: <ref target="#krp-0192_b20">Vortrag des Staatsamtes für Finanzen über einen Gesetzesbeschluss des Salzburger Landtages zur Einhebung einer Landes- und Gemeindeabgabe vom unverdienten Wertzuwachs an Liegenschaften</ref></item>
+                  <item><ref target="#krp-0192_top17">Zu TOP 17</ref>: <ref target="#krp-0192_b21">Antrag des Staatssekretärs für Handel und Gewerbe, Industrie und Bauten auf Amtstitel für technische Hilfsbeamte der VII Rangsklasse</ref></item>
+               </list>
+            </div>
+            <div type="protokoll">
+               <pb facs="krp-0192_r-0003"/>
+               <div type="top" xml:id="krp-0192_top01">
+                  <head>
+                     <label>
+                        <num n="1">1.</num>
+                        <seg>Anfrage des Vizekanzlers Fink in Angelegenheit des Erlasses über die Soldatenräte.</seg>
+                     </label>
+                  </head>
+                  <p>Vizekanzler <hi rend="#letterspaced">Fink</hi> führt aus, dass aufgrund einer Äußerung des Staatssekretärs Dr. Deutsch in der Sitzung der Nationalversammlung vom 10. Juni, die er nach einem Berichte der „Arbeiter-Zeitung“ vom 14. Juni in der Versammlung der Angehörigen der Volkswehr vor dem Rathause am 13. Juni in ausführlicherer Form wiederholte, und aufgrund von Bemerkungen, die der Staatskanzler nach einem Berichte der „Arbeiter-Zeitung“ vom 15. Juni in einer Versammlung in Mariahilf gemacht habe, die außerhalb des Kabinettes stehenden Angehörigen der Christlichsozialen Partei die Anschauung gewonnen haben, als ob die Christlichsozialen Regierungsmitglieder durch ihre Mitwirkung an einem einhelligen Beschlusse des Kabinettsrates dem Staatssekretär für Heer[es]wesen die Genehmigung erteilt hätten, Verordnungen wie jene über <pb facs="krp-0192_r-0004"/>die Soldatenräte selbstständig herauszugeben. Da den Christlichsozialen Kabinettsmitgliedern ein derartiger Beschluss nicht bekannt sei, frage Redner an, in welcher Sitzung er zustande gekommen sein solle.</p>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> erwidert, er habe gelegentlich der Vorlage der Adjustierungsvorschriften für das neue Heer durch Staatssekretär Dr. Deutsch an den Kabinettsrat erklärt, dass derartige Kleinigkeiten nicht der Beschlussfassung im Kabinettsrate zuzuführen, sondern von den Staatssekretären im eigenen Wirkungskreise zu erledigen seien. Der Kabinettsrat habe diese Erklärung, ohne dass darüber ein formeller Beschluss gefasst worden wäre, ohne Einspruch zur Kenntnis genommen.</p>
+                  <p>Redner sei bereit, diesen Sachverhalt der Öffentlichkeit gegenüber aufzuklären und ausdrücklich festzustellen, dass ein formeller Beschluss des Kabinettsrates nicht vorliegt, nach seiner im Kabinettsrate wiederholt ausgesprochenen Auffassung aber die einzelnen Staatssekretäre entsprechend dem konstitutionellen Prinzipe der individuellen Verantwortung alle Angelegenheiten ihrer Ressorts, welche nicht von besonderer Wichtigkeit oder politischer Tragweite sind, selbstständig zu erledigen haben. Im Übrigen halte er an der Überzeugung fest, dass es sich vorliegendenfalles lediglich um einen Durchführungserlass zum Wehrgesetz handle, zu dessen Hinausgabe Staatssekretär Dr. Deutsch <pb facs="krp-0192_r-0005"/>der Mitwirkung des Kabinettsrates nicht bedurfte.</p>
+                  <p>Vizekanzler <hi rend="#letterspaced">Fink</hi> bestätigt den vom Vorredner dargestellten Hergang; es habe sich damals lediglich um die Adjustierungsvorschriften gehandelt und Staatssekretär Dr. Deutsch habe dabei über eine Frage Redners ausdrücklich festgestellt, dass sein Antrag einen Gegenstand beinhalte, der bereits in einer früheren Sitzung des Kabinettsrates durchgesprochen worden sei.</p>
+                  <p>Aus der ohne Widerspruch gebliebenen Bemerkung des Vorsitzenden bei diesem Anlasse, dass sich der Kabinettsrat mit derartigen Kleinigkeiten nicht zu befassen habe, könne aber unmöglich gefolgert werden, dass der Staatssekretär für Heer[es]wesen ermächtigt werden sollte, in hochpolitischen Angelegenheiten und trotz eines Einspruches des Unterstaatssekretärs Dr. Waiss ohne Befragung des Kabinettsrates Verfügungen zu treffen.</p>
+                  <p>Der sprechende Vizekanzler müsse sich vorbehalten, in der Öffentlichkeit nun auch seinerseits eine Darstellung des Sachverhaltes zu geben.</p>
+                  <p>Im Verlaufe der weiteren Debatte bespricht Staatssekretär Dr. <hi rend="#letterspaced">Deutsch</hi> ausführlich das Zustandekommen des Erlasses über die Soldatenräte und erklärt, dass er sich sowohl nach dem Gegenstande, wie nach dem Verhalten des Kabinettsrates zu der Erklärung des Vorsitzenden gelegentlich der Verhandlung der Adjustierungs<pb facs="krp-0192_r-0006"/>fragen für berechtigt angesehen habe, die auf eine bloße Durchführung des Wehrgesetzes hinauslaufende Regelung im eigenen Wirkungskreise zu treffen.</p>
+                  <p>Nach einigen ergänzenden Bemerkungen des Unterstaatssekretärs Dr. <hi rend="#letterspaced">Waiss</hi> erörtert Staatssekretär Dr. <hi rend="#letterspaced">Ramek</hi> die materiell-rechtliche Seite der Angelegenheit und stellt fest, dass die Christlichsozialen Regierungsmitglieder der seinerzeitigen Äußerung des Vorsitzenden nicht jene Tragweite beimessen konnten, die ihr jetzt gegeben werde, sonst hätten sie schon damals gegen eine so weitgehende Ermächtigung des Staatssekretärs für Heer[es]wesen Verwahrung eingelegt. Redner müsse auch darauf hinweisen, dass nach der Dienstesanweisung über die Stellung der Unterstaatssekretäre der Staatssekretär verpflichtet sei, eine etwaige gegenteilige Auffassung des Unterstaatssekretärs beim Vortrag im Kabinettsrate zum Ausdruck zu bringen und demgemäß Staatssekretär Dr. Deutsch den Erlass über die Soldatenräte schon mit Rücksicht auf den dagegen von Unterstaatssekretär Dr. <hi rend="#letterspaced">Waiss</hi> erhobenen Einspruch hätte vor den Kabinettsrat bringen müssen.</p>
+                  <p><pb facs="krp-0192_r-0007"/></p>
+               </div>
+               <div type="top" xml:id="krp-0192_top02">
+                  <head>
+                     <label>
+                        <num n="2">2.</num>
+                        <seg>Verträge mit der tschechoslowakischen Republik, betreffend die Durchführung einzelner Bestimmungen des Staatsvertrages von St. Germain sowie über Staatsbürgerschaft und Minderheitsschutz.</seg>
+                     </label>
+                  </head>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> unterbreitet dem Kabinettsrate zwei über Ermächtigung der Staatsregierung durch die österreichischen Unterhändler bereits unterzeichnete Verträge mit der tschechoslowakischen Republik, von welchen der erste die Durchführung einzelner Bestimmungen des Staatsvertrages von St. Germain, der zweite Staatsbürgerschaft und Minderheitsschutz betrifft, und erbittet deren Ratifikation durch den Kabinettsrat.</p>
+                  <p>Unterstaatssekretär <hi rend="#letterspaced">Miklas</hi> erachtet es nicht als günstig, dass in Art. 20 Abs. 3 des Vortrages über die Staatsbürgerschaft und den Minderheitsschutz nur für Österreich die Feststellung der Kenntnis der tschechoslowakischen Sprache bei den sich in tschechische Schulen meldenden Kindern durch eine Kommission vorgesehen sei, wogegen bei den deutschen Kindern in der Tschechoslowakei die bloße Anmeldung der Eltern genügen solle.</p>
+                  <p>Redner glaubt weiters, dass mit Rücksicht auf die große politische Tragweite des Vertrages das Kabinett, zumal es sich in Demission befinde, die Verantwortung dafür nicht allein übernehmen solle, sondern es angemessener wäre, die Entscheidung über die Annahme des Staatsvertrages durch Einbringung eines Einführungsgesetzes der Nationalversammlung selbst zu überlassen.</p>
+                  <p><pb facs="krp-0192_r-0008"/>Sektionsrat Dr. <hi rend="#letterspaced">Froehlich</hi> erwidert, dass die österreichischen Unterhändler in dem von Unterstaatssekretär Miklas bemängelten Punkt die Aufnahme gleichartiger Bestimmungen, wie sie für die Tschechoslowakei gelten, angestrebt haben, jedoch schließlich von der Reziprozität in der Erkenntnis abgestanden seien, dass die Anwendung der für Österreich festgesetzten Bestimmungen auf die deutschen Kinder in der Tschechoslowakei, deren Stellung im Vergleiche zum jetzigen Zustande verschlechtern würde.</p>
+                  <p>Die Inartikulierung des Vertrages durch ein Einführungsgesetz wäre eine wesentliche Verschiebung in der Kompetenzabgrenzung zwischen der Nationalversammlung und der Staatsregierung und würde der Nationalversammlung die Entscheidung in Angelegenheiten übertragen, welche nach der geltenden Verfassung dem Wirkungskreise der Staatsregierung zugewiesen sind.</p>
+                  <p>Die Staatssekretäre <hi rend="#letterspaced">Eldersch</hi> und <hi rend="#letterspaced">Hanusch</hi> führen aus, dass der Art. 20 Abs. 3 für Österreich günstig sei und geradezu einen Schutz der Gemeinde Wien in Bezug auf die Errichtung tschechischer Schulen biete, da er die Aufnahme von Kindern in die tschechischen Schulen nicht in den freien Willen der Eltern stelle, sondern es ermögliche, im Wege der behördlichen Überprüfung der Sprachkenntnisse der Kinder den Zuzug zu tschechischen <pb facs="krp-0192_r-0009"/>Schulen einzuschränken.</p>
+                  <p>Im Hinblicke auf diese Darlegungen zieht Unterstaatssekretär <hi rend="#letterspaced">Miklas</hi> seinen Einwand zurück, wünscht jedoch die ausdrückliche Feststellung im Protokoll, dass nach der in der Debatte hervorgekommenen Meinung die Fassung des Art. 20 für Österreich eine günstigere Stellung schaffe, als wenn die in der Tschechoslowakei geltenden Bestimmungen in den Vertrag aufgenommen worden wären.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Ramek</hi> trägt Bedenken, die Ratifikation durch das im status demissionis befindliche Kabinett vollziehen zu lassen, und regt an, den Vertrag wenigstens dem Hauptausschuss zur Genehmigung vorzulegen.</p>
+                  <p>Sektionsrat Dr. <hi rend="#letterspaced">Froehlich</hi> verweist demgegenüber darauf, dass das bevorstehende Inkrafttreten des Staatsvertrages von St. Germain die Ratifikation der beiden vorliegenden Verträge dringlich mache und ein Aufschub für die Beziehungen zu der Tschechoslowakei bedenklich wäre, da sich die österreichische Regierung durch die Ermächtigung der Unterhändler zum Abschluss des Vertrages eigentlich schon gebunden habe.</p>
+                  <p>Der Kabinettsrat beschließt sohin die beiden Verträge zu ratifizieren, gleichzeitig aber dem Hauptausschuss in einem Schreiben die Aufklärung zu bieten, dass der Kabinettsrat <pb facs="krp-0192_r-0010"/>die Ratifikation im gegenwärtigen Augenblicke nur in der Erwägung vollziehe, dass der Vertrag aufgrund einer Vollmacht abgeschlossen und bereits unterzeichnet worden sei, welche der Kabinettsrat bereits geraume Zeit vor seiner Demission erteilt hatte.</p>
+               </div>
+               <div type="top" xml:id="krp-0192_top03">
+                  <head>
+                     <label>
+                        <num n="3">3.</num>
+                        <seg>Entwurf eines Gesetzes über die Aufnahme des Burgenlandes in das Staatsgebiet der Republik Österreich.</seg>
+                     </label>
+                  </head>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> macht darauf aufmerksam, dass in kürzester Frist die Ratifikation des Staatsvertrages von St. Germain erfolgen werde und damit auch der Anfall von Deutschwestungarn an die Republik Österreich in Kraft trete. Redner halte es als wünschenswert, dass in diesem Momente ein politischer Akt gesetzt werde, welcher den Willen Österreichs kundtut, das Burgenland nunmehr als Teil seines Staatsgebietes zu betrachten. Zu diesem Zwecke erbitte er die Ermächtigung des Kabinettsrates, in der Nationalversammlung einen Gesetzentwurf einbringen zu dürfen, welcher die Einbeziehung des Burgenlandes in die Republik Österreich ausspricht und vorläufige Verfügungen hinsichtlich seiner Verfassung und Verwaltung trifft.</p>
+                  <p>Da die Staatssekretäre Dr. <hi rend="#letterspaced">Deutsch</hi> und <hi rend="#letterspaced">Eldersch</hi> sowie Vizekanzler <hi rend="#letterspaced">Fink</hi> Bedenken äußern, dass das bloß mit der vorläufigen Weiterführung der Geschäfte betraute Kabi<pb facs="krp-0192_r-0011"/>nett in derartigen Angelegenheiten Beschluss fasse, ladet der Kabinettsrat die Staatssekretäre Eldersch und Dr. Mayr ein, sich mit ihren Parteien über den Inhalt des Gesetzes und die Frage zu dessen Einbringung in Verbindung zu setzen und über das Ergebnis dieser Vorbesprechungen dem Kabinettsrate zu berichten.</p>
+               </div>
+               <div type="top" xml:id="krp-0192_top04">
+                  <head>
+                     <label>
+                        <num n="4">4.</num>
+                        <seg>Regelung des Archivwesens.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Mayr</hi> beleuchtet in längeren Darlegungen die Unzulänglichkeit der gegenwärtigen Organisation des Archivwesens in Österreich. Redner bemerkt, dass es namentlich an einer einheitlichen Verwaltung und Obsorge für die Archive fehle, da für diese Aufgaben derzeit lediglich der Archivrat bestehe, der nach seiner Einrichtung einem solchen Zwecke nicht entspreche und im Grunde auch wesentlich andere Aufgaben zu erfüllen habe.</p>
+                  <p>Die einheitliche Regelung des Archivwesens auf rein fachmännischer Grundlage sei nun insofern in ein akutes Stadium getreten, als infolge der staatlichen Umwälzungen die früheren Unterschiede in der Verwaltung und Zugehörigkeit zwischen den Archiven der ehemaligen gemeinsamen Ministerien, der ehemaligen österreichischen Ministerien, der Statthaltereien und Landesregierungen und der autonomen Landesstellen verschwanden und sie alle nunmehr <pb facs="krp-0192_r-0012"/>staatliche Archive der Republik Österreich darstellen. Für einzelne und zwar gerade die bedeutendsten dieser Institute, wie z. B. das frühere Haus-, Hof- und Staatsarchiv, das Kriegsarchiv, das gemeinsame Finanzarchiv und einzelne Landesarchive, welche schon jetzt begonnen haben, sich auf eigene Faust und ohne Rücksicht auf die gemeinsamen Interessen zu reorganisieren, lasse sich die Notwendigkeit, ihre Stellung im staatlichen Organismus neu festzulegen, nicht länger abweisen.</p>
+                  <p>Es empfehle sich aber, bei diesem Anlasse gleich die ganze Frage der Neuregelung unseres Archivwesens überhaupt zu lösen, und zwar zunächst in dem Sinne, dass an die Spitze der Organisation nach bewährten Vorbildern in anderen Staaten eine fachmännische Generaldirektion oder ein „Archivamt“ gestellt werde, welches den weiteren Aufbau der ganzen Organisation einzuleiten und durchzuführen hätte.</p>
+                  <p>Diese Neuregelung hätte unter eingehender Berücksichtigung aller hiebei in Betracht kommenden Momente nach folgenden Gesichtspunkten zu erfolgen:</p>
+                  <list>
+                     <item n="1"><label>1.)</label> Als oberste Stelle für die einheitliche fachmännische und wissenschaftliche Führung des Archivwesens in Österreich wäre ein eigenes „Archivamt“ einzurichten.</item>
+                     <item n="2"><label>2.)</label> Dieses Archivamt wäre mit Rücksicht auf den grundlegenden Charakter des Archivdienstes, der in erster Linie ein verwaltungs<pb facs="krp-0192_r-0013"/>dienstlicher und in dieser Hinsicht ein alle Ressorts gleichmäßig umfassender ist, die Förderung wissenschaftlicher Studien aber erst in zweiter Linie berührt, der Staatskanzlei anzugliedern und unterzuordnen.</item>
+                     <item n="3"><label>3.)</label> Das Archivamt hätte die erforderlichen Studien und vorbereitenden Schritte zur einheitlichen Regelung des gesamten staatlichen Archivwesens unverweilt durchzuführen und im Einvernehmen mit der Gewerkschaft der wissenschaftlichen Beamten, Abteilung Archivwesen, dem Kabinettsrate bestimmte Vorschläge zur Genehmigung zu unterbreiten.</item>
+                     <item n="4"><label>4.)</label> Die rechtliche und organisatorische Stellung der einzelnen Archive, insbesondere auch das Eigentumsrecht an den Archiven und die tatsächliche Führung ihrer Geschäfte sowie die dienstliche Unterstellung des betreffenden Personales blieben durch die Errichtung des Archivamtes vollständig unberührt.</item>
+                     <item n="5"><label>5.)</label> Unbeschadet des im Pkt. 4 ausgesprochenen Grundsatzes wäre jedoch auch die Möglichkeit vorzusehen, dem Archivamte einzelne staatliche Archive auch in dienstlicher und persönlicher Beziehung als sonst selbständige Institute zu unterstellen. Diese Unterstellung wäre sogleich bezüglich des ehemaligen Haus-, Hof- und Staatsarchives, des Kriegsarchives und des gemeinsamen Finanzarchives durchzuführen, da diese Archive derzeit keinem Ressort unmittelbar zugehören. Die Unterstellung anderer Archive <pb facs="krp-0192_r-0014"/>hätte nur dann zu erfolgen, wenn es das betreffende Staatsamt, dem sie gegenwärtig unterstehen, seinerseits wünscht.</item>
+                     <item n="6"><label>6.)</label> Zur Führung des Archivamtes unter der staatsrechtlichen Verantwortlichkeit des Staatskanzlers wären vorläufig bis zur endgiltigen Regelung zwei Fachmänner aus dem praktischen Archivdienste, deren einer als Leiter, der andere als Stellvertreter zu fungieren hätte, zu berufen. Das Büro des Archivrates, dessen Tätigkeit gegenwärtig ohnedies eine sehr geringfügige ist, wäre dem Archivamt als dessen Büro vorläufig zuzuweisen.</item>
+                     <item n="7"><label>7.)</label> Die Durchführung dieser Neuregelung hätte im Sinne des Art. 12 des Gesetzes vom 14. März 1919, StGBl. Nr. 180, durch eine Vollzugsanweisung der Staatsregierung unter Zustimmung des Hauptausschusses der Nationalversammlung zu erfolgen.</item>
+                  </list>
+                  <p>Zum Schlusse bemerkt Redner, dass in Fachkreisen eine Divergenz der Meinungen über die Einrichtung des Archivamtes im vorgeschlagenen Sinne nicht bestehe und diese sich auch ziemlich einhellig für dessen Angliederung an die Staatskanzlei ausgesprochen haben. Nur die Vertreter des Staatsamtes für Inneres und Unterricht (Unterrichtsamt) wünschen die Unterstellung des Archivamtes wegen des wissenschaftlichen Charakters des Archivwesens unter das Unterrichtsamt. Die Vertreter des Staats<pb facs="krp-0192_r-0015"/>amtes für Inneres und Unterricht, Abteilung für Inneres, wieder haben sich für die Belassung des Archivwesens im Ressortbereich der politischen Verwaltung ausgesprochen, weil der größte Teil der Archive, besonders jene in den Ländern der politischen Verwaltung angehören und im Zusammenhange damit auch der Archivrat von jeher dem Ministerium des Innern untergeordnet war. Demgegenüber müsse jedoch betont werden, dass einerseits eine wissenschaftliche Führung der in Rede stehenden Agenden, die durchaus nicht die Hauptaufgaben des Archivdienstes berühren, bei einer Verbindung des Archivamtes mit der Staatskanzlei vollkommen gewährleistet erscheint, anderseits aber der enge Zusammenhang der laufenden staatlichen Verwaltung mit den Hauptagenden eines Archives jenes Moment darstellt, das im Sinne des § 11 Abs. 1 des Gesetzes vom 19. Dezember 1918, StGBl. Nr. 139, die Einbeziehung des Archivwesens in den Wirkungskreis der Staatskanzlei unter dem Titel der „Wahrung der allen Verwaltungszweigen gemeinsamen Interessen“ begründet erscheinen lasse. Im Übrigen würden die Vorverhandlungen mit den beteiligten Ressorts über die zu erlassende Vollzugsanweisung genügend Raum bieten, eine Verständigung in der Kompetenzfrage herbeizuführen.</p>
+                  <p>Über die Frage der Zweckmäßigkeit der von Staatssekretär Dr. <hi rend="#letterspaced">Mayr</hi> vorgeschlagenen Regelung entwickelt sich eine längere Debatte, <pb facs="krp-0192_r-0016"/>in welcher der <hi rend="#letterspaced">Vorsitzende</hi> sowie die Staatssekretäre Dr. <hi rend="#letterspaced">Reisch</hi> und <hi rend="#letterspaced">Eldersch</hi> und Unterstaatssekretär <hi rend="#letterspaced">Glöckel</hi> die Meinung vertreten, dass zunächst die Bildung einer definitiven Regierung abgewartet werden sollte, bevor an die Neuorganisation des Archivwesens herangetreten werde.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Reisch</hi> bemerkt hiebei, dass ihm die Schaffung eines eigenen Amtes, für das zweifellos im Laufe der Zeit vermehrte Personalansprüche gestellt werden dürften, zur Erreichung des angestrebten Zweckes als zu weitgehend erscheine und seiner Auffassung nach die Einsetzung eines bloß beratenden Organes vollauf genügen würde.</p>
+                  <p>Der Kabinettsrat einigt sich schließlich dahin, von einer Beschlussfassung über die Anträge des Staatssekretärs Dr. Mayr vorläufig abzusehen, erhebt jedoch keine Einwendung, dass der genannte Staatssekretär intern die Vorarbeiten fortsetze, um im geeigneten Moment dem definitiven Kabinette Anträge stellen zu können.</p>
+               </div>
+               <div type="top" xml:id="krp-0192_top05">
+                  <head>
+                     <label>
+                        <num n="5">5.</num>
+                        <seg>Vollzugsanweisung, betreffend die vorläufige Regelung der Versorgungsgenüsse der Witwen und Waisen der Staatseisenbahnbediensteten, die nach dem 1. Jänner 1920 in den Ruhestand getreten, oder nach dem 31. Dezember 1919 in Aktivität gestorben sind.</seg>
+                     </label>
+                  </head>
+                  <p>Sektionschef Ing. <hi rend="#letterspaced">Fischer</hi> erbittet und erhält die Genehmigung des Kabinettsrates für eine Vollzugsanweisung der Staatsregierung, betreffend die vorläufige <pb facs="krp-0192_r-0017"/>Regelung der Versorgungsgenüsse der Witwen und Waisen der Staatseisenbahnbediensteten, die nach dem 1. Jänner 1920 in den Ruhestand getreten, oder nach dem 31. Dezember 1919 in Aktivität gestorben sind.</p>
+               </div>
+               <div type="top" xml:id="krp-0192_top06">
+                  <head>
+                     <label>
+                        <num n="6">6.</num>
+                        <seg>Vollzugsanweisung, betreffend die vorläufige Regelung von Ruhe- (Versorgungs-) Genüssen der Staatseisenbahnbediensteten und ihrer Hinterbliebenen.</seg>
+                     </label>
+                  </head>
+                  <p>Sektionschef Ing. Fischer unterbreitet dem Kabinettsrate den Entwurf einer Vollzugsanweisung der Staatsregierung, durch welche im Sinne der Ermächtigung, nach § 13 Pkt. a des Gesetzes vom 18. März 1920, StGBl. Nr. 132 (Pensionistengesetz) die materielle Besserstellung nach dem Pensionistengesetz auch auf die Altpensionisten der Staatseisenbahnen, die vor dem 1. Jänner 1920 in den Ruhestand versetzt wurden, und auf die Hinterbliebenen von solchen Eisenbahnbediensteten, die vor diesem Zeitpunkte in den Ruhestand getreten oder gestorben sind, ausgedehnt werden soll.</p>
+                  <p>Der Kabinettsrat tritt dem Entwurf der Vollzugsanweisung bei und stimmt deren Erlassung zu.</p>
+                  <p><pb facs="krp-0192_r-0018"/></p>
+               </div>
+               <div type="top" xml:id="krp-0192_top07">
+                  <head>
+                     <label>
+                        <num n="7">7.</num>
+                        <seg>Gewährung von Personalzulagen für den Direktor und andere hervorragende Lehrkräfte an der Staatsakademie für Musik und darstellende Kunst.</seg>
+                     </label>
+                  </head>
+                  <p>Unterstaatssekretär <hi rend="#letterspaced">Glöckel</hi> führt aus, dass die Lehrpersonen der Staatsakademie für Musik und darstellende Kunst als Lehrkräfte einer mittleren Lehranstalt ihre Bezüge nach den Bestimmungen des Gesetzes vom 18. Dezember 1919, StGBl. Nr. 572 zur vorläufigen Regelung der Besoldung der Lehrkräfte an staatlichen mittleren und niederen Unterrichtsanstalten erhalten. Infolge dessen finden sie hinsichtlich ihrer Bezüge nicht jene Anerkennung, auf die sie nach ihrer künstlerischen oder musikpädagogischen Bedeutung Anspruch erheben könnten. Die Unterrichtsverwaltung müsse jedoch Gewicht darauf legen, dass jene akademischen Lehrer, auf deren Wirken die hohe künstlerische und wissenschaftliche Stufe der Anstalt beruht, wenigstens in materieller Beziehung über die Stellung der Mittelschullehrer hinausgehoben werden. Diese Besserstellung erscheine umso notwendiger und dringlicher, als nur dann die Möglichkeit gegeben sei, die hervorragendsten Lehrkräfte der Staatsakademie zu erhalten, wenn ihnen der Anreiz genommen wird, der höheren Honorare im Ausland wegen an fremde Akademien zu gehen, oder sich ganz dem günstigere Verdienstmöglichkeiten bietenden Privatunterricht zuzuwenden.</p>
+                  <p><pb facs="krp-0192_r-0019"/>In der Art der Besserstellung glaube die Unterrichtsverwaltung nicht allzu weit gehen zu müssen und sich im Hinblick auf die große Verschiedenartigkeit der dabei in Frage stehenden künstlerischen Persönlichkeiten auf den Antrag beschränken zu können, dem Akademiedirektor und einer Anzahl von Lehrkräften vom 1. Jänner 1920 an neben den ihnen nach dem Gesetze von 18. Dezember 1919, StGBl. Nr. 572, bzw. Gesetz vom 22. März 1920, StGBl. Nr. 134, zukommenden Gehaltsbezügen in die Pension nicht anrechenbare, bei Erlangung weiterer Gehaltserhöhungen aufgrund des erstbezogenen Gesetzes nicht einzuziehende Personalzulagen nach individuellen Momenten zu bewilligen.</p>
+                  <p>Unter Berufung auf die Zustimmung des Staatsamtes für Finanzen stelle Redner daher den Antrag, dem Direktor Ferdinand Löwe und den nachgenannten Lehrkräften nach den obigen Gesichtspunkten folgende Personalzulagen zu gewähren:</p>
+                  <p>Direktor Ferdinand Löwe eine Personalzulage von jährlich 20.000 K unter Anrechnung von weiteren acht Jahren einfacher Zählung für die Pensionsbemessung.</p>
+                  <p>Prof. Dr. Eusebius Mandyczewski eine Personalzulage von jährlich 11.000 K,</p>
+                  <p>Prof. Irene Schlemmer-<pb facs="krp-0192_r-0020"/>Ambros eine Personalzulage von jährlich 10.000 K,</p>
+                  <p>Prof. Philipp Forsten eine Personalzulage von jährlich 10.000 K,</p>
+                  <p>Prof. Gustav Geiringer eine Personalzulage von jährlich 10.000 K,</p>
+                  <p>Prof. Franz Haböck eine Personalzulage von jährlich 10.000 K,</p>
+                  <p>Prof. Eugen Thomas eine Personalzulage von jährlich 6.000 K,</p>
+                  <p>Prof. Hugo Reinhold eine Personalzulage von jährlich 11.000 K,</p>
+                  <p>Prof. Rosa Papier-Paumgartner eine Personalzulage von jährlich 10.000 K,</p>
+                  <p>Prof. Josef Hofmann eine Personalzulage von jährlich 11.000 K,</p>
+                  <p>Prof. Franz Schmidt, eine Personalzulage von jährlich 11.000 K,</p>
+                  <p>Prof. Karl Prohaska eine Personalzulage von jährlich 10.000 K,</p>
+                  <p>Prof. Paul Grümmer eine Personalzulage von jährlich 9.000 K,</p>
+                  <p>Prof. Dr. Josef Marx eine Personalzulage von jährlich 18.000 K.</p>
+                  <p>Der Kabinettsrat beschließt im Sinne des gestellten Antrages.</p>
+               </div>
+               <div type="top" xml:id="krp-0192_top08">
+                  <head>
+                     <label>
+                        <num n="8">8.</num>
+                        <seg>Entwurf des Schulausschusses des Tiroler Landtages für ein Gesetz über den Religionsunterricht an den öffentlichen Volksschulen und öffentlichen Bürgerschulen.</seg>
+                     </label>
+                  </head>
+                  <p>Unterstaatssekretär Glöckel unterbreitet dem Kabinettsrate einen vom Schul<pb facs="krp-0192_r-0021"/>ausschuss des Tiroler Landtages ausgearbeiteten Gesetzentwurf über den Religionsunterricht an den öffentlichen allgemeinen Volksschulen und öffentlichen Bürgerschulen und berichtet, dass dieser von der Tiroler Landesregierung mit dem Ersuchen vorgelegt worden sei, ehemöglichst die Stellungnahme der Staatsregierung zu der darin getroffenen Regelung bekanntzugeben. Redner führt aus, dass der Entwurf sich in seinen wesentlichen Bestimmungen an das bisher geltende Gesetz, betreffend den Religionsunterricht an diesen Schulen vom 7. Juli 1910, LGBl. Nr. 54 anschließe und bezüglich des Diensteinkommens einige durch das inzwischen in Kraft getretene Schulgesetz vom 30. Jänner 1920, LGBl. Nr. 60 notwendig gewordene neue Bestimmungen bringe.</p>
+                  <p>Weiters sollen nach diesem Gesetze Schulkinder von konfessionellen Minderheiten bei einer Mindestzahl von 20 Kindern zu besonderen Religionsstationen vereinigt werden können.</p>
+                  <p>Die Bestimmungen scheinen der Hauptsache nach zweckmäßig; zu wesentlichen Bedenken geben lediglich die Vorschriften in § 6 über die Vergütung für die Besorgung des Religionsunterrichtes an jenen Schulen, an welchen eigene Religionslehrer mit festen Bezügen nicht bestellt sind, Anlass, da hier auch die Vergütungen für Religionslehrer an den mit Öffentlichkeitsrecht versehenen Privat-, Volks- und Bürgerschulen geregelt werden, obwohl sich das Ge<pb facs="krp-0192_r-0022"/>setz nach seinem Titel nur auf öffentliche Schulen beziehen soll. Auch sei gemäß § 55 des Reichsvolksschulgesetz die Regelung der Dienstesbezüge nur der Lehrer an öffentlichen Volks- und Bürgerschulen Sache der Landesgesetzgebung, die Entlohnung der Lehrer an Privatschulen aber der Vereinbarung mit dem Schulerhalter überlassen, der auch allein die Lasten zu tragen hat, wogegen die durch den vorliegenden Gesetzentwurf bestimmten Vergütungen gemäß § 14 den Landeshaushalt, die eingeschulten Gemeinden und den Lehrerpensionsfonds belasten würden.</p>
+                  <p>Redner beabsichtige daher, im Falle der Zustimmung der Staatsregierung, die Landesregierung auf diese Umstände mit dem Bemerken aufmerksam zu machen, dass die Aufnahme der beanständeten Bestimmung in das Gesetz Anlass zu einer Vorstellung bilden würde.</p>
+                  <p>Gegen die übrigen Bestimmungen des Entwurfes obwalten keine Bedenken, doch wäre noch die Vornahme einiger stilistischer Änderungen bei der Landesregierung anzuregen.</p>
+                  <p>Der Kabinettsrat erklärt sich sohin einverstanden, dass der Landesregierung in Innsbruck mitgeteilt werde, dass die Staatsregierung lediglich gegen § 6 des vorliegenden Entwurfes Bedenken trage und ermächtigt gleichzeitig den sprechenden Unterstaatssekretär, falls in dem seinerzeit vorzulegenden Gesetzesbeschluss dieser § entsprechend geändert würde, der sofortigen Kundmachung des Gesetzes namens der <pb facs="krp-0192_r-0023"/>Staatsregierung zuzustimmen, andernfalls aber dagegen Vorstellung zu erheben.</p>
+               </div>
+               <div type="top" xml:id="krp-0192_top09">
+                  <head>
+                     <label>
+                        <num n="9">9.</num>
+                        <seg>Änderung in der Berechnung der staatlichen Zuschüsse zum Rotationspapierpreise und Abänderung der Einschränkungsvollzugsanweisung vom 15. Mai l. J., StGBl. Nr. 221.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Ellenbogen</hi> verweist darauf, dass der Kabinettsrat in seiner Sitzung vom 14. Mai l. J. beschlossen habe, die Begünstigung des ermäßigten Papierpreises bei Tageszeitungen mit zweimaligem Erscheinen für einen wöchentlichen Verbrauch im Gewichte von 247,3 g pro Exemplar einer Ausgabe, bei Tageszeitungen mit einmaligem Erscheinen nur für einen wöchentlichen Verbrauch bis zum Gewichte von 210 g pro Exemplar einer Ausgabe, bei den selbständigen Mittags- und Abendblättern für einen wöchentlichen Verbrauch von 67,5 g pro Exemplar und bei Zeitungen, die nicht täglich erscheinen, schließlich für einen wöchentlichen Verbrauch, der einem Gewichte von 30 g für jede einzelne Ausgabe entspricht, zu erteilen. Die Auflage sollte in der Form ermittelt werden, dass die Zeitungsunternehmungen dem Staatsamte für Handel und Gewerbe, Industrie und Bauten die tägliche Auflage für jeden Monat im Nachhinein bekanntgeben.</p>
+                  <p>Der Zeitungsbeirat habe nun gegen diese Berechnungsart in seiner Sitzung vom 1. Juni l. J. unter Zustimmung des Vertreters des Pa<pb facs="krp-0192_r-0024"/>pierfabriksverbandes Beschwerde erhoben und auf die technischen Schwierigkeiten einer derartigen Berechnung hingewiesen. Er sei dabei auf seinen ursprünglichen Vorschlag zurückgekommen, den staatlichen Zuschuss ohne Berücksichtigung von Seitenumfang und Auflage je nach dem monatlichen Gesamtpapierverbrauche der Zeitungen zu berechnen und habe weiters verlangt, dass der Staat nach diesem Schlüssel auch die Zahlungen schon vom Beginne des Jahres 1920 an leiste. Nach dem Vorschlage des Zeitungsbeirates wären für die ersten acht Waggons Papier, die im Monate verbraucht wurden, im Jänner 2 K 10 h pro kg, im Februar 1 K 25 h pro kg, im März 1 K 75 h pro kg und im April und Mai je 6 K .. h pro kg, von der Regierung zu zahlen. Für weitere drei Waggons des monatlichen Papierverbrauches solle die Regierung die Hälfte der angegebenen Beträge zuschießen. Für den Papierverbrauch über elf Waggons monatlich würden die Zeitungen den vollen Papierpreis selbst bezahlen.</p>
+                  <p>Der Zeitungsbeirat habe ferner anlässlich seiner Beratung über den vom Papierfabriksverbande für Juni und Juli l. J. geforderten Preis, von 18 K 50 h pro kg einhellig an die Regierung die Bitte gerichtet, zur Kenntnis zu nehmen, dass bei Ablehnung der notwendigen Erhöhung der bisherigen staatlichen Unterstützung der Zusammenbruch der gesamten österreichischen Presse unvermeid<pb facs="krp-0192_r-0025"/>lich sei und dass die daraus entstehenden volkswirtschaftlichen Schäden in der breitesten Öffentlichkeit der Regierung zur Last gelegt werden müssten. Da die Zeitungen erklärten, auch im Juni keinen höheren Preis als 5 K per kg aus eigenem zahlen zu können, habe der Zeitungsbeirat vorgeschlagen, die Regierung möge einen über 6 K hinausgehenden Teil des Preisunterschiedes von 13 K 50 h durch Staatszuschüsse in der Weise decken, dass sie statt wie bisher 6 K in Hinkunft ca. 9 K zuschieße. Die Deckung für diesen erhöhten Zuschuss könnte die Regierung zufolge Antrages des Zeitungsbeirates durch eine mindestens 50%ige Erhöhung der Papierabgabe, die den Papierexport nach Ansicht von Fachleuten nicht beeinträchtigen würde, immerhin noch finden. Der bei der Sitzung des Zeitungsbeirates anwesende Direktor des Papierfabriksverbandes habe sich schließlich bereit erklärt, den darnach noch verbleibenden Rest von ca. 4 K pro kg durch Verwendung des gesamten Gewinnes des Papierfabriksverbandes aus dem Papierexporte zu decken. Wenn, was der Papierfabriksverband für leicht möglich halte, in den Monaten Juni und Juli je 35 Waggons zum Preise von 32 K pro kg exportiert werden, so verbleibe, da der Verband den Fabriken für dieses Papier nur 18 ½ K pro kg bezahlt, <pb facs="krp-0192_r-0026"/>eine Summe von 13 ½ K per kg, oder bei 35 Waggons monatlichen Exportes eine Gesamtsumme von 4.725.000 K. Diese Summe würde bei Annahme der der Preisbegünstigung teilhaftig werdenden Monatsmenge an Rotationspapier mit 120 Waggons, das Papier um beinahe 4 K verbilligen und somit die verbleibende Preisdifferenz von ebenfalls ca. 4 K decken. Im Hinblicke auf die außerordentliche Notlage, in der sich die inländische Presse im gegenwärtigen Augenblicke befindet, beantrage der Zeitungsbeirat, die Regierung wolle für die Monate Juni und Juli l. J. einen staatlichen Zuschuss von mindestens 9 K pro kg Rotationsdruckpapier unter Festhaltung der vom Zeitungsbeirate für die vorhergehenden Monate vorgeschlagenen Berechnungsart bewilligen und gleichzeitig eine Erhöhung der Papierabgabe um mindestens 50 % beschließen.</p>
+                  <p>Der sprechende Staatssekretär führt zu diesen Vorschlägen des Zeitungsbeirates aus, dass die vom Kabinettsrate in seinen früheren Sitzungen in Aussicht genommene, vom Zeitungsbeirate aber abgelehnte Berechnung des der Preisbegünstigung teilhaftigen Papierquantums nach einem beschränkten Seitenumfange und der tatsächlichen Auflagenhöhe einer Zeitung gegebenenfalls den Staatsschatz schwer schädigen könne. Einzelne Zeitungen nämlich, die bisher in einem größeren Umfange als acht Seiten erschienen sind und daher nur ein Teilquantum zu begün<pb facs="krp-0192_r-0027"/>stigtem Preise beziehen, das acht Seiten multipliziert mit der jeweiligen Auflage entspricht, könnten veranlasst werden, ihren Umfang wesentlich einzuschränken und dafür ihre Auflage entsprechend auszudehnen. Solche Zeitungen wären dadurch in die Lage gesetzt, ihre ganze auch über acht Waggons monatlich etwa weit hinausgehende Rotationspapierquote zum begünstigten Preise zu beziehen und ihre Auflage mehr zu erhöhen, als es bei normaler Entwicklung der Fall gewesen wäre. Sie würden dann auch erfahrungsgemäß ihre gesteigerte Auflage benützen, um beim Staatsamte eine Erhöhung ihrer Rotationspapierquote durchzusetzen. Demgegenüber wäre ein fixer Schlüssel, der für eine gewisse Waggonsanzahl des Gesamtpapierverbrauches den staatlichen Zuschuss vorsieht, vorzuziehen. Die Zeitungen kämen in diesem Falle nicht in die Lage, eine Erhöhung des begünstigten Papierquantums durch irgendwelche Machinationen herbeizuführen, sie dürften vielmehr eher bestrebt sein, den Verbrauch über die begünstigte Menge der hohen Kosten wegen möglichst einzuschränken. Damit finde auch der Wunsch der Regierung nach Sparsamkeit im Papierverbrauche Erfüllung.</p>
+                  <p>Anderseits werde die Regierung den staatlichen Zuschuss nur für eine Verbrauchsmenge zu zahlen haben, die von vorneherein feststeht und absolut keine nachträgliche Erhöhung erfahren kann. Schließlich dürfe nicht außer Acht bleiben, <pb facs="krp-0192_r-0028"/>dass nach den Ausführungen des Direktors des Papierfabriksverbandes und Leiters der Verteilungsstelle für Zeitungsdruckpapier eine wirksame Kontrolle nur bei dem einfach anzuwendenden fixen Schlüssel des Gesamtpapierverbrauches möglich sei, da das Gewicht der einzelnen Zeitungsexemplare bei der verschiedenen Schwere des Papieres erfahrungsgemäß stark differiere und dies den Zeitungen vielfach die Möglichkeit zu einer den wahren Sachverhalt verschleiernden Darstellung biete.</p>
+                  <p>Gegenüber einem monatlichen Gesamtpapierverbrauche der österreichischen Zeitungen von gegenwärtig ungefähr 147 Waggons würde eine Ersparung von ca. 20 Waggons monatlich zu erzielen sein, so dass nur ca. 127 Waggons des begünstigten Preises teilhaftig werden. Für die vergangenen Monate werde sich diese Ziffer auf ungefähr 120 Waggons monatlich verringern, da in der allerletzten Zeit bei einzelnen Zeitungen Quotenerhöhungen vorgenommen werden mussten, die naturgemäß erst von Juni an gelten sollen. Das Staatsamt für Finanzen habe den bisherigen Vorschüssen an den Papierfabriksverbande ohnehin eine monatliche Menge von 120 Waggons zugrunde gelegt. Die staatliche Belastung bei Anwendung dieses Waggonsystems unter Zugrundelegung eines Schlüssels von monatlich acht Waggons, dürfte demnach den vom Staatsamte für Finanzen bereits gewährten, bzw. erst zu gewäh<pb facs="krp-0192_r-0029"/>renden Vorschüssen entsprechen, die für die einzelnen Monate nachfolgende Beträge ergeben:</p>
+                  <p>Jänner 	 2.520.000 K</p>
+                  <p>Februar	 1.500.000 K</p>
+                  <p>März	 2.100.000 K</p>
+                  <p>April	 7.200.000 K</p>
+                  <p>Mai	 7.200.000 K.</p>
+                  <p>Die vom Zeitungsbeirate weiters vorgeschlagene Gewährung eines staatlichen Zuschusses im Betrage der Hälfte der erwähnten Preisdifferenzen für weitere drei Waggons monatlich über den Monatsverbrauch von acht Waggons müsse als zu weitgehend abgelehnt werden.</p>
+                  <p>Ebensowenig könne auf den im Laufe der Verhandlungen aufgetauchten und von einzelnen Zeitungsunternehmen befürworteten Plan einer Kombination der beiden in Betracht kommenden Systeme eingeraten werden, nachdem es den Zeitungen freigestellt sein soll, sich entweder für das eine oder das andere System zu entscheiden. Er würde für die große Mehrzahl der Blätter, die auch nach dem Waggonsysteme ihre ganze Papierquote zum begünstigten Preise beziehen, keinen Nutzen haben, für manche Blätter, die gegenwärtig in großem Umfange, aber in verhältnismäßig geringer Auflage erscheinen, könnte eine solche Kombination der Ansporn sein, sich gegen das Waggonsystem zu entscheiden. Diese Blätter würden dann ihren Seitenumfang einschränken und ihre Auflage ausdehnen, um zum <pb facs="krp-0192_r-0030"/>Schaden des Staatsschatzes womöglich ihre ganze Papierquote zu begünstigtem Preise beziehen zu können.</p>
+                  <p>Zu der vom Zeitungsbeirate vorgeschlagenen Erhöhung des Staatszuschusses für die Monate Juni und Juli sei zu bemerken, dass die Möglichkeit einer Herabminderung des Preises von 18 K 50 h pro kg Rotationsdruckpapier, der vom Papierfabriksverbande für die Monate Juni und Juli gefordert wird, kaum in Betracht gezogen werden könne, denn die Zentralpreisprüfungsstelle habe vor kurzem den Richtpreis für maschinenglattes Flachdruckpapier, das im Wesen dieselbe Papiersorte wie Rotationsdruckpapier darstelle, mit 23 K 18 h bestimmt, woraus sich ein Detailhandel von beinahe 30 K ergebe. Ein Preis von 18 K 50 h würde sich demnach nicht unwesentlich unter dem erwähnten Richtpreise bewegen. In diesem Preise sollen nach den Angaben des Vertreters des Papierfabriksverbandes nur die Kosten der inländischen Roh- und Hilfsstoffe, die Beamtengehalte und Arbeiterlöhne, nicht aber die üblichen Posten für Amortisation, Generalregie, Stillstandsrisiko und für Verdienst enthalten sein.</p>
+                  <p>Nach dem Einblick des sprechenden Staatssekretärs in die Verhältnisse können die Zeitungen und insbesondere die kleine Provinzpresse für das Papier tatsächlich keinen höheren Preis als 5 K pro kg aus Eigenem zahlen. Redner glaube daher, den Vorschlag des Zeitungs<pb facs="krp-0192_r-0031"/>beirates zur Annahme empfehlen zu sollen. Eine Erhöhung des Staatszuschusses bis zu 9 K per kg dürfte jedoch bereits in der gegenwärtig einlaufenden Papierabgabe ihre Deckung finden, ohne dass eine Erhöhung dieser Abgabe, die den Export doch vielleicht beeinträchtigen würde, notwendig wäre. Die Papierabgabe habe bisher im Laufe eines Monates allerdings nur ca. 4 Millionen K getragen, wogegen für die Monate Juni und Juli bei einer Erhöhung des Staatszuschusses auf 9 K pro kg Rotationspapier monatlich 10–11 Millionen K staatlicher Zuwendungen benötigt würden. Doch dürfte die Papierabgabe auch ohne ihre Erhöhung binnen Kurzem ein besseres Ergebnis liefern. Zur Zeit der Einführung der Papierabgabe seien nämlich bereits zahlreiche Ausfuhrbewilligungen für Papier erteilt gewesen, auf die das Papier auch nach Einführung der Papierabgabe noch ohne Einhebung einer Abgabe ins Ausland gelassen werden musste. Diese Ausfuhrbewilligungen seien nun jetzt entweder bereits ausgenützt oder durch Zeitablauf erloschen, so dass gegenwärtig größere Mengen von Papier nur noch gegen Einhebung der Abgabe ins Ausland exportiert werden. Weiters habe sich in letzter Zeit die Produktion an Papier durch Abschluss verschiedener Kohlenkompensationsverträge gebessert und werde sich hoffentlich noch weiter bessern. Durch diese Belebung der Produktion erhöhe sich naturgemäß <pb facs="krp-0192_r-0032"/>die für den Export zur Verfügung stehende Menge Papier, was eine Erhöhung auch des Ertrages der Papierabgabe erwarten lasse. Ähnlich habe sich die Produktion an Rotationsdruckpapier im Monate Mai wesentlich gebessert, indem im Laufe des Monates Mai von den Fabriken des Papierfabriksverbandes insgesamt 143 ½ Waggons Rotationspapier abgeliefert wurden und für den Juni eine Steigerung auf 170–180 Waggons zu erwarten sei. Damit wäre für den Papierfabriksverband die Möglichkeit gegeben, den von ihm in Aussicht genommenen Export von 35 Waggons Rotationspapier monatlich durchzuführen und damit eine Verbilligung des Rotationspapieres um ca. 4 K per kg herbeizuführen.</p>
+                  <p>Wenngleich also derzeit eine Erhöhung der Papierabgabe noch nicht vorgeschlagen werden solle, möchte Redner dennoch die Ermächtigung des Kabinettsrates erbitten, erforderlichenfalls eine Erhöhung der Papierabgabe im Einvernehmen mit dem Staatssekretär für Finanzen vorzunehmen. Redner stelle sohin nachfolgende Anträge: </p>
+                  <p>Der Kabinettsrat wolle beschließen: </p>
+                  <list>
+                     <item n="1"><label>1.)</label> Die staatlichen Zuschüsse werden bis zu acht Waggons Rotationspapierverbrauches im Monat für</item>
+                  </list>
+                  <p>Jänner………………… 2 K 10 h pro kg,</p>
+                  <p>für Februar………………… 1 K 25 h pro kg,</p>
+                  <p>für März…………………… 1 K 75 h pro kg,</p>
+                  <p>für April…………………… 6 K -- h pro kg,</p>
+                  <p>für Mai…………………….. 6 K -- h pro kg,</p>
+                  <p><pb facs="krp-0192_r-0033"/>für Juni…………………….. 9 K -- h pro kg</p>
+                  <p>für Juli……………………... 9 K -- h pro kg,</p>
+                  <p>betragen.</p>
+                  <list>
+                     <item n="1"><label>2.)</label> Die Staatssekretäre für Handel und Finanzen werden ermächtigt, nach ihrem Ermessen die Papierabgabe in einer der allgemeinen Situation entsprechenden Weise zu erhöhen.</item>
+                  </list>
+                  <p>Staatssekretär <hi rend="#letterspaced">Eldersch</hi> wendet gegen die Berechnung der begünstigten Papiermenge nach der Waggonanzahl ein, dass dieses System nicht den tatsächlichen Bedarf der einzelnen Blätter berücksichtige. Zeitungen mit einem anwachsenden Leserkreise bekämen darnach kein entsprechendes Mehrquantum zugewiesen, auf der anderen Seite wieder unterblieben bei einem Rückgange der Auflagenhöhe die verhältnismäßigen Abstriche. Eine wirksame Kontrolle, dass mit dem verbilligten Papier kein Missbrauch geschehe, könne nur durch die Auflagenhöhe bewirkt werden und es müsse daher ungeachtet der übrigens nicht stichhältigen Einwendungen des Zeitungsbeirates an deren Bekanntgabe festgehalten werden.</p>
+                  <p>Weiters gehe es auch nicht an, den staatlichen Zuschuss jeweils mit dem Steigen der Papierpreise zu erhöhen. Nach Ansicht des Redners sollte eine Berechnung angestellt werden, ob nicht bereits die Grenze erreicht sei, bei welcher die Arbeitslosenunterstützung für die durch eine etwaige Einengung der Zeitungsbetriebe entbehrlich werdenden Buchdrucker billiger <pb facs="krp-0192_r-0034"/>zu stehen komme, als die Aufwendungen des Staates für die Verbilligung des Papieres.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Reisch</hi> spricht sich gleichfalls gegen die Einführung des vom Kabinettsrate bereits dreimal abgelehnten Waggonsystems aus. Unter keinen Umständen aber könnte davon die Rede sein, den Staatszuschuss auf dieser Grundlage bis zum Monate Jänner zurück neu zu berechnen. Sollte sich der Kabinettsrat überhaupt zu einer höheren Aufzahlung auf den Papierpreis entschließen, so müsse Redner dafür eintreten, dass in dem gleichen Verhältnisse die Seitenanzahl, für welche die Begünstigung gewährt wird, eine Herabminderung erfahre.</p>
+                  <p>Staatssekretär <hi rend="#letterspaced">Hanusch</hi> führt gegen die Pauschalierung der begünstigten Papiermenge ins Treffen, dass darunter die Parteipresse gerade in der Zeit der Wahlbewegung zu leiden hätte.</p>
+                  <p>Staatssekretär [Dr.] <hi rend="#letterspaced">Ellenbogen</hi> erwidert, dass bis auf die Inseratenblätter keine Zeitung einen Papierverbrauch von acht Waggon[s] erreiche. Der Parteipresse sei der Bezug verbilligten Papieres auch für eine erhöhte Auflage dadurch gesichert, dass bei der „Arbeiter-Zeitung“ und der „Reichspost“ die Abendausgaben als selbständige Blätter gelten und als solche für sich mit je acht Waggon[s] dotiert würden. Eine weitergehende Differenzierung in der Zu<pb facs="krp-0192_r-0035"/>messung verbilligten Papieres nach politischen Gesichtspunkten würde Redner als Eingriff in die Pressefreiheit bedenklich erachten. Bei der Beschlussfassung dürfe nicht übersehen werden, dass die Zeitungsindustrie sich in einer schwierigen Situation befinde, und durch eine Verkürzung der begünstigten Papiermenge geradezu in eine Krise gedrängt würde. Redner empfehle daher die Annahme seines Antrages.</p>
+                  <p>Unterstaatssekretär <hi rend="#letterspaced">Miklas</hi> meint, dass der Kabinettsrat den einstimmig gefassten Beschluss des Zeitungsbeirates genehmigen sollte, zumal die Erträge aus der Exportauflage dem Staate das Äquivalent für die Aufwendungen an Zuschüssen zur Verbilligung des Papieres bieten.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Reisch</hi> erklärt die Annahme, dass die bisherigen Erträge der Papierauflage zur Deckung der staatlichen Zuschüsse auf den verbilligten Papierpreis hinreichen, als unzutreffend. Nach seiner Auffassung könne der Staat über das jetzige Ausmaß der Begünstigung nicht hinausgehen und müsse an dem Grundsatze festhalten, dass das Quantum an verbilligtem Papier für alle Zeitungen nach einheitlichen Gesichtspunkten berechnet werde.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Deutsch</hi> glaubt, dass zunächst die Zustimmung der beiden Parteien eingeholt werden müsste, da die Richtlinien, nach welchen gegenwärtig die Berechnung der begünstigten Papiermenge erfolge, seinerzeit vom <pb facs="krp-0192_r-0036"/>Hauptausschusse festgestellt worden seien und daher der Kabinettsrat von ihnen für sich allein nicht abgehen könne.</p>
+                  <p>Der Kabinettsrat betraut schließlich den Staatssekretär Dr. Ellenbogen und den Unterstaatssekretär Miklas damit, die Parteien über ihre Meinung im Gegenstande zu befragen und darüber dem Kabinettsrate zu berichten.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Ellenbogen</hi> bringt weiters vor, dass der Zeitungsbeirat auch eine Abänderung des § 2 der Vollzugsanweisung vom 15. Mai 1920, Zl. 221, betreffend die Regelung des Verbrauches von Zeitungspapier in folgender Fassung beschlossen habe:</p>
+                  <p>„</p>
+                  <list>
+                     <item n="1"><label>1.)</label> Ein Exemplar einer Tages- und Wochenzeitung darf für Haupt- und Nebenausgabe zusammen wöchentlich ein Gewicht von 480 g nicht überschreiten.</item>
+                     <item n="2"><label>2.)</label> Ein Exemplar eines selbständigen Montagsblattes darf ein Gewicht von 60 g per Tag, ein Exemplar der selbständigen Mittags- und Abendblätter ein Gewicht von 138 g wöchentlich nicht überschreiten.“</item>
+                  </list>
+                  <p>Dieser Abänderungsvorschlag verfolge den Zweck, es den Zeitungen zu ermöglichen, in der Ausnützung des jetzt auf den einzelnen Tag abgestellten zulässigen Gewichtes zwischen den einzelnen Tagen einen Ausgleich eintreten zu lassen und die Papierersparnis eines Tages innerhalb des zulässigen Wochengewichtes zur reicheren Ausstattung ihrer Ausgabe an einem <pb facs="krp-0192_r-0037"/>andern Tage zu verwerten.</p>
+                  <p>Redner halte diesen Wunsch der Zeitungsunternehmungen für berücksichtigenswert, umso mehr als die seinerzeit in Geltung gestandene Vollzugsanweisung vom 4. Februar 1919, StGBl. Nr. 83, die Berechnung des zulässigen Umfanges der Zeitungen auf einen Zeitraum von vier Wochen abgestellt hatte und die Festsetzung eines Tagesquantums die Zeitungen leicht dazu bringen könnte, nur um das ihnen gestattete Seitenausmaß auszunützen, mehr Papier zu verdrucken, als den Bedürfnissen ihres Betriebes entspricht.</p>
+                  <p>Bei der Feststellung eines Wochendurchschnittes für den zulässigen Umfang der Blätter wäre jedoch die Bestimmung nach Grammgewichten fallen zu lassen und stattdessen wie seinerzeit in der Vollzugsanweisung vom 4. Februar 1919, StGBl. Nr. 83, die bedruckte Papierfläche zur Grundlage zu nehmen. Hiezu veranlasse auch der Umstand, dass bei der Feststellung des der Preisbegünstigung zugrundezulegenden Papierverbrauches die Bestimmung in Grammgewichten gleichfalls fallen gelassen werden solle, da es wegen der Schwankungen in der Schwere des Papieres nach dem Urteile von Fachleuten keine verlässliche Bemessungsgrundlage abgebe. Um dabei jedoch zu verhindern, dass bei Bestimmung eines Wochendurchschnittes Wochenzeitungen in einem so großen Umfange erscheinen, als etwa sieben Ausgaben von Tageszeitungen zusammengenommen entsprechen würde, solle für die einzelne Nummer eines Blattes ein Höchstausmaß von 32 Sei<pb facs="krp-0192_r-0038"/>ten Normalformat bestimmt werden. Dadurch würde auch den Tageszeitungen die Möglichkeit genommen, an einzelnen Tagen in einem öffentlichen Ärgernis erregenden hohen Umfange zu erscheinen.</p>
+                  <p>Nach dem Antrage des sprechenden Staatssekretärs genehmigt sohin der Kabinettsrat die Abänderung der Abs. 1 und 2 des § 2 der Vollzugsanweisung vom 15. Mai 1920, StGBl. Nr. 221, in nachfolgender Weise:</p>
+                  <p>[“]</p>
+                  <list>
+                     <item n="1"><label>1.)</label> Die bedruckte Fläche einer Tages- und Wochenzeitung darf für Haupt- und Nebenausgabe zusammen innerhalb einer Woche 148.608 cm² nicht überschreiten, was bei einer Satzgröße von 43:27 cm, d. i. 1.161 cm² einem Umfange von 128 Seiten entspricht.</item>
+                     <item n="2"><label>2.)</label> Die bedruckte Fläche eines selbständigen Montagblattes darf 18.576 cm<hi rend="superscript">2</hi>, die bedruckte Fläche selbständiger Mittag- und Abendblätter darf innerhalb einer Woche 41.796 cm² nicht überschreiten, was bei der oben angeführten Satzgröße einem Umfange von 16 Seiten für die selbständigen Montagblätter und von 36 Seiten für die selbständigen Mittag- und Abendblätter entspricht.</item>
+                     <item n="3"><label>3.)</label> Die bedruckte Fläche eines Exemplares einer Zeitung darf über 37.152 cm² nicht hinausgehen, was bei der erwähnten Satzgröße einem Umfange von 32 Seiten entspricht.“</item>
+                  </list>
+                  <p><pb facs="krp-0192_r-0039"/></p>
+               </div>
+               <div type="top" xml:id="krp-0192_top10">
+                  <head>
+                     <label>
+                        <num n="10">10.</num>
+                        <seg>Errichtung einer Heeres-, Führer- und Lehrerschule.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Deutsch</hi> verweist darauf, dass die dem neuen Heere durch das Wehrgesetz zugedachten Aufgaben, insbesondere die Verpflichtung zur geistigen Fortbildung, und zur Vorbereitung der Wehrmänner für einen Zivilberuf eine eigene Ausbildung der künftigen Offiziere erfordere. Die Heranbildung derart qualifizierter Männer bedürfe besonderer organisatorischer Vorsorgen, da die für den Offiziersberuf nötigen Kenntnisse und Fertigkeiten an Zivilschulen entweder gar nicht oder nicht in einer dem militärischen Zwecke entsprechenden Fassung erworben werden können und die Schulung bei der Truppe für sich allein nicht genüge.</p>
+                  <p>Zur Erzielung eines einheitlichen systematischen Vorgehens bei der Ausbildung sei weiters die Heranbildung der Offiziersanwärter aller Brigaden und aller Waffen an einer einzigen Anstalt unerlässlich, die ihrem Zweck entsprechend als „Heeres-, Führer- und Lehrerschule“ bezeichnet werden solle und zwei oder drei Jahrgänge mit je 50–60 Frequentanten haben würde.</p>
+                  <p>Aus der Bestimmung des neuen Wehrgesetzes, dass jeder Offiziersanwärter vor Beginn seiner Offiziersausbildung mindestens ein Jahr als Wehrmann bei der Truppe gedient haben muss, folge, dass der Offiziersanwärter künftig in reiferem Alter als bisher die Ausbildung zum Offizier beginnen werde, daher nicht in strenger Abgeschlossenheit <pb facs="krp-0192_r-0040"/>von der Welt oder in einem dem modernen Getriebe vollkommen entrückten Orte zu einem Berufe erzogen werden könne.</p>
+                  <p>Schließen diese Anforderungen somit eine innere Einrichtung der Anstalt etwa nach Art eines Konviktes selbstverständlich ebenso aus wie deren Lage an einem abgeschiedenen Orte, so sei doch andererseits ein Zusammenschluss der Offiziersanwärter in einem Internat notwendig, wodurch auch der Zeitvergeudung und damit nutzlosen staatlichen Erziehungskosten am ehesten vorgebeugt werde.</p>
+                  <p>Finanzielle Rücksichten machen einen Neubau für absehbare Zeit unmöglich und es müsse daher auf eine der früheren Militärerziehungs- und Bildungsanstalten gegriffen werden. Die Anstalten in Fischau, Strass, Bruck, Liebenau, Hainburg, St. Pölten, Hirtenberg und Innsbruck kommen entweder wegen ihrer Lage, wegen ihres Zustandes oder wegen ihrer anderweitigen Verwendung gegenwärtig überhaupt nicht in Betracht. Wien wäre ebenfalls als Standort der Heeres-, Führer- und Lehrerschule von Haus aus auszuscheiden. Traiskirchen und Mödling seien als modern eingerichtete Erziehungsanstalten bereits der Unterrichtsverwaltung übergeben worden und könnten schon wegen der Notwendigkeit vermehrter ziviler Unterrichtsanstalten mit erstklassiger Einrichtung nicht mehr zurückgefordert werden.</p>
+                  <p>Für die Errichtung der geplanten Schule erübrigen somit nurmehr die Komplexe der ehemaligen Theresianischen Militärakademie in Wiener Neu<pb facs="krp-0192_r-0041"/>stadt und die Militärunterrealschule in Enns. </p>
+                  <p>Die Anstalt in Wiener Neustadt würde den Anforderungen der neuen Schule hinsichtlich Berührung mit dem heutigen Erwerbsleben hinsichtlich des militärischen Übungsgeländes, dann des Vorhandenseins von Schießplätzen für Infanterie und Artillerie, technischer Übungsräume, ferner bezüglich des Betriebes zahlreicher Fabriken militärisch-technischer Bedeutung, sowie hinsichtlich der Möglichkeit zur Schulung in der Land- und Forstwirtschaft auf eigenem Grund und Boden zweifellos am besten entsprechen.</p>
+                  <p>Jedoch seien die Gebäude alt und nicht für die Verwendung als Schule ausgebaut und könnten auch für die Zwecke, für welche sie von der Unterrichtsverwaltung in Aussicht genommen wurden, sehr schwer entbehrt werden.</p>
+                  <p>In der früheren Militärunterrealschule Enns wiederum entsprechen die Gebäude den heutigen Anforderungen gut, dafür seien aber die übrigen Bedingungen wesentlich ungünstiger als in Wiener Neustadt. Immerhin werde der angestrebte Zweck bei besonders sorgfältigem Aufbau auch dort erreicht werden können.</p>
+                  <p>Die Gebäude werden im Laufe des Jahres 1920 durch Übersiedlung des Petrinums in das eigene Haus in Linz verfügbar. Die Schule sei jedoch nahezu aller Lehrmittel und Einrichtungsgegenstände entblößt da diese nach Traiskirchen geschafft wurden. Um die Finanzen des Staates nicht allzu sehr zu belasten, müsse also die Hee<pb facs="krp-0192_r-0042"/>resverwaltung bei der Neueinrichtung das weiteste Entgegenkommen der Unterrichtsverwaltung in Anspruch nehmen, worüber mit dem Unterrichtsamte übrigens bereits ein Übereinkommen vorliege. Angesichts der Schwierigkeiten, die dem Staatsamt für Inneres und Unterricht durch die Aufgabe der Theresianischen Akademie in Wiener Neustadt erwachsen würden, sei das Staatsamt für Heer[es]wesen bereit, auf diese Anstalt exklusive der Gebäude und des Inventars des ehemaligen Fecht- und Turnlehrerkurses dann der noch in der ehemaligen Akademie befindlichen Bibliotheksbestände endgültig zu verzichten. Dafür erbitte der sprechende Staatssekretär jedoch einen Beschluss des Kabinettsrates, dass:</p>
+                  <list>
+                     <item n="1"><label>1.)</label> Die Gebäude und der Grundkomplex der ehemaligen Militärunterrealschule in Enns dem Staatsamt für Heereswesen für die Heeres-, Führer- und Lehrerschule zur Verfügung gestellt werden;</item>
+                     <item n="2"><label>2.)</label> Die Einrichtung der Anstalt, Lehrmittel, dann lebendes und totes Inventar für die der Heeres-, Führer- und Lehrerschule zu errichtende Wirtschaft nach Möglichkeit von der Unterrichtsverwaltung beizustellen sind.</item>
+                  </list>
+                  <p>Zur Übergabe und zur Übernahme aufgrund des zwischen den beiden Staatssekretären geschlossenen Übereinkommens wird eine Kommission bestehend aus Vertretern beider Staatsämter eingesetzt, die an die Entscheidung der beiden Staatssekretäre gewiesen ist.</p>
+                  <p>Sektionschef Dr. <hi rend="#letterspaced">Grimm</hi> hält es günstiger, <pb facs="krp-0192_r-0043"/>die Heeresschule nach Wiener Neustadt zu verlegen; die Gebäude der dortigen Militärakademie scheinen für diese Zwecke geeigneter zu sein, als jene der ehemaligen Militärunterrealschule in Enns, wo voraussichtlich beträchtliche Kosten aufgewendet werden müssen, um die Vorbedingung für die neue Schule zu schaffen. Übrigens sei die Militärunterrealschule in Enns zur Unterbringung für eine Erziehungsanstalt für die westlichen Alpenländer angefordert worden, für die, falls die Heeresschule nach Enns verlegt werden sollte, ein anderer Standort ausfindig gemacht werden müsste.</p>
+                  <p>Zu dem Übereinkommen zwischen dem Staatsamt für Heer[es]wesen und dem Unterrichtsamte über die Beistellung der Unterrichtserfordernisse für die Heeresschule habe die Finanzverwaltung den Vorbehalt zu machen, dass nur entbehrliches Material abgegeben werde und das Unterrichtsamt daraus keinesfalls den Anspruch daraus ableiten dürfe, Mittel für Neuanschaffungen eingeräumt zu bekommen.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Deutsch</hi> erwidert, dass die Militärakademie in Wiener Neustadt nach</p>
+                  <p>ihrer Ausstattung gewiss besser geeignet wäre, doch käme dort der Betrieb der bloß auf 60–80 Frequentanten bestimmten neuen Lehranstalt viel zu teuer. Außerdem würde die Instandsetzung des Akademiegebäudes ca. 1 ½ Millionen K verschlingen, wogegen die Militärunterrealschule in Enns mit einem wesentlich geringeren Aufwande dem Zwecke angepasst werden könne. Schließlich sei Enns <pb facs="krp-0192_r-0044"/>nach den lokalen Verhältnissen ein günstigerer Standort für die Schule als Wiener Neustadt.</p>
+                  <p>An Lehrbehelfen und Unterrichtsgegenständen solle von der Unterrichtsverwaltung nur das zurückgegeben werden, was von Enns nach Traiskirchen überführt wurde. Über den Umfang der Rückstellung hätte die von Redner vorgeschlagene Kommission zu entscheiden.</p>
+                  <p>Nachdem Sektionschef Dr. <hi rend="#letterspaced">Grimm</hi> den Einspruch der Finanzverwaltung gegen die Wahl von Enns im Hinblicke auf die Erklärung des Staatssekretärs Dr. Deutsch, dass die Adaptierungskosten dortselbst geringere sein werden als in Wiener Neustadt, zurückgezogen hatte, beschließt der Kabinettsrat im Sinne des Antrages des Staatssekretärs für Heer[es]wesen.</p>
+               </div>
+               <div type="top" xml:id="krp-0192_top11">
+                  <head>
+                     <label>
+                        <num n="11">11.</num>
+                        <seg>Kostentragung für die Aufstellung der Heimwehr in Kärnten, des weststeirischen Grenzschutzes in Steiermark und der Grenzabsperrungen in Salzburg.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Deutsch</hi> erinnert daran, dass zur Abwehr des jugoslawischen Einfalles in Kärnten im April 1919 neben der Volkswehr und dem aufgrund des § 8 des Gesetzes vom 6. Februar 1919, StGBl. Nr. 91, mit Kabinettsbeschluss erlassenen Aufgebote auch vom Lande Kärnten aus Freiwilligen aufgestellte Heimwehren herangezogen worden waren, die über Beschluss der Kärntner Landesregierung wegen der nicht gesicherten Rückkehr in das vom Feinde besetzte Gebiet zum Teil auch noch nach Abschluss der Kämpfe und Entlassung des Aufgebotes bis Anfang Mai 1920 unter Waffen verblieben sind.</p>
+                  <p><pb facs="krp-0192_r-0045"/>Die Kärntner Landesregierung sei nun um Rückersatz der dem Lande durch die Aufstellung der Heimwehren entstandenen Kosten in vorläufig noch unbekannter Höhe aus Staatsmitteln eingeschritten, doch habe das Staatsamt für Heer[es]wesen, da ein Kredit für derartige Zwecke nicht zur Verfügung stehe, dieses Ansuchen abgelehnt. Für den ablehnenden Standpunkt sei nicht so sehr die finanzielle Frage bestimmend gewesen, als die Tatsache, dass die Heimwehren vom Lande ohne Genehmigung der Zentralregierung aufgestellt wurden und aus prinzipiellen Gründen an dem Standpunkt festgehalten werden müsse, dass die Länder, wenn sie selbständig Maßnahmen treffen, welche der Zentralregierung vorbehalten sind, auch für die daraus erwachsenden Kosten aufzukommen haben. </p>
+                  <p>Die Kärntnerische Landesregierung beharre jedoch bei ihrer Anschauung, der erwähnte Aufwand wäre aus Staatsmitteln zu zahlen, und begründe dies damit, dass die Abwehrkämpfe gegen die Jugoslawen mindestens ebenso im Interesse des Staates als des Landes Kärnten geführt wurden und den Erfolg hatten, dass unter ihrem Eindruck die damals tagende Pariser Konferenz wenigstens die Volksabstimmung im strittigen Gebiete anordnete.</p>
+                  <p>Andernfalls wären Österreich im Süden große Gebietsteile mit wichtigen Eisenbahnlinien verloren gegangen und damit zugleich die Verbindung mit Italien unterbunden worden.</p>
+                  <p>Hiezu komme noch, dass durch die erfolgreichen Abwehrkämpfe sehr bedeutende Mengen an Berge<pb facs="krp-0192_r-0046"/>gütern vor dem Zugriff der Jugoslawen geschützt und abtransportiert werden konnten und hiedurch für Österreich Millionenwerte gerettet wurden. </p>
+                  <p>Im Falle der Aufrechterhaltung der Ablehnung müsse sich das Land Kärnten vorbehalten, für den ihm erwachsenen Schaden in irgendwelcher Art, z. B. durch Kompensationsforderungen für die abgeführten, bzw. Schadloshaltung an den noch im Lande befindlichen Bergegütern Ersatz zu suchen.</p>
+                  <p>Im Zusammenhange mit dieser Frage stehe die Tragung der Aufwendungen an Zulagen für den im Jahre 1919 aufgestellten weststeirischen Grenzschutz gegen die im Lavanttale stehenden Jugoslawen von 16.940 K.</p>
+                  <p>Die vom Staatsamt für Heer[es]wesen über eine Anfrage des Landesbefehlshabers getroffene Verfügung, dass diese Mehrkosten, da der Grenzschutz von der Landesregierung selbständig angeordnet wurde, das Land zu tragen habe, werde von der Landesregierung nicht anerkannt, weil sich der Grenzschutz „West“ als ein erweiteter Flügel des Grenzschutzes „Süd“ darstelle, welcher gesamtstaatlichen Interessen zu dienen hatte.</p>
+                  <p>Eine dritte ähnliche Angelegenheit betreffe die Übernahme der dem Lande Salzburg erwachsenen Grenzschutzkosten.</p>
+                  <p>Nach den Ausführungen der Landesregierung habe diese anlässlich der Rätediktatur in Bayern im Frühjahr 1919 einen Grenzschutz durch die Volkswehr eingerichtet, um ein Übergreifen der kommu<pb facs="krp-0192_r-0047"/>nistischen Bewegung auf das Staatsgebiet der Republik Österreich zu verhüten und den Übertritt unerwünschter Elemente nach Salzburg zu verhindern.</p>
+                  <p>Dadurch seien an Verpflegszubußen, Zulagen für die Offiziere und sachlichen Auslagen 28.769 K 20 h aufgelaufen, die das Land nun refundiert haben wolle.</p>
+                  <p>Auch in diesem Falle könne das Staatsamt für Heer[es]wesen nur den früher begründeten ablehnenden Standpunkt einnehmen.</p>
+                  <p>Redner erbitte nunmehr die Entscheidung des Kabinettsrates, ob und inwieweit die Kosten vom Staate zu tragen seien und beantrage seinerseits in allen drei Fällen die Ablehnung der Kostentragung aus Staatsmitteln.</p>
+                  <p>Der Kabinettsrat beschließt, die Übernahme der Kosten auf den Staatsschatz abzulehnen.</p>
+               </div>
+               <div type="top" xml:id="krp-0192_top12">
+                  <head>
+                     <label>
+                        <num n="12">12.</num>
+                        <seg>VI. und VII. Durchführungsverordnung zum Arbeitslosenversicherungsgesetz.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Hanusch</hi> erbittet und erhält die Ermächtigung des Kabinettsrates zur Erlassung einer Vollzugsanweisung über die Einhebung und Abführung der Beiträge zur Arbeitslosenversicherung und einer Vollzugsanweisung über die Einhebung der Beiträge zur Arbeitslosenversicherung im Verwaltungsjahr 1920/21 (VI. und VII. Durchführungsverordnung zum Arbeitslosenversicherungsgesetz).</p>
+                  <p><pb facs="krp-0192_r-0048"/></p>
+               </div>
+               <div type="top" xml:id="krp-0192_top13">
+                  <head>
+                     <label>
+                        <num n="13">13.</num>
+                        <seg>Wahlordnung der Kammern für Arbeiter und Angestellte.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Hanusch nimmt darauf Bezug, dass nach dem § 6 des Gesetzes vom 26. Februar 1920, StGBl. Nr. 100, über die Errichtung von Arbeiterkammern, für die Zusammensetzung der Kammern vom Staatsamte für soziale Verwaltung eine Wahlordnung zu erlassen ist, die nach § 7 des Gesetzes die Berufung der Mitglieder der Kammer nach den für die Wahl in die Nationalversammlung geltenden Grundsätzen vorzusehen habe. Ergänzend dazu habe ein anlässlich der Verhandlung des Gesetzes in der Nationalversammlung vom Abgeordneten Spalovsky beantragter Resolutionsbeschluss noch die Bestimmung getroffen, dass „die Wahlordnung, insbesondere den einzelnen Gruppen von Wählern die Wahlbewerbung und die Mitwirkung bei der Wahlvorbereitung, respektive in den Wahlkommissionen, zu ermöglichen und jedem Wähler die vollständig ungehinderte und unbeeinflusste Ausübung des Wahlrechtes zu sichern habe.“ Weiters fordere die Resolution das Staatsamt für soziale Verwaltung auf, die Wahlordnung vor ihrer Erlassung den Parteien der Nationalversammlung vorzulegen.</p>
+                  <p>Entsprechend diesen Richtlinien habe das Staatsamt für soziale Verwaltung eine Wahlordnung ausgearbeitet, wobei aber getrachtet wurde, dass Wahlverfahren möglichst zu vereinfachen, um nicht einen Wahlapparat ins Leben zu rufen, der unverhältnismäßig große Kosten und eine übermäßige Belastung der Behörden und der Wähler verursachen <pb facs="krp-0192_r-0049"/>würde. In zahlreichen Einzelheiten, so namentlich in § 7 Abs. 1 schließe sich die Wahlordnung an jene Bestimmungen an, welche für die Wahlen in die Gewerbegerichte in Geltung stehen.</p>
+                  <p>Die Frage, wie viele Mandate auf die Sektionen der Arbeiter einerseits und jene der Angestellten andererseits zu entfallen haben, sind aufgrund des zur Verfügung stehenden statistischen Materiales geregelt worden.</p>
+                  <p>Der sprechende Staatssekretär unterbreite diesen Entwurf dem Kabinettsrat und erbitte die Ermächtigung, die Wahlordnung nach ihrer Genehmigung durch den Hauptausschuss im Wege einer Vollzugsanweisung verlautbaren zu dürfen.</p>
+                  <p>Unterstaatssekretär Dr. <hi rend="#letterspaced">Resch</hi> bemerkt, dass in dem Entwurfe der Wunsch der Christlichsozialen Gewerkschaftskommission keine Berücksichtigung gefunden habe, in § 10 Abs. 1 die ausdrückliche Bestimmung aufzunehmen, dass die Betriebsstätten nicht Wahllokale sein dürfen. Dieser Punkt sowie eventuell das Verlangen, dass in § 10 Abs. 6 die Zugehörigkeit zu einem Wahlsprengel sich nicht nach dem Arbeitsplatze, sondern nach dem Wohnorte zu bestimmen habe, werde daher von seiner Partei noch vor dem Hauptausschuss zur Sprache gebracht werden.</p>
+                  <p>Nach einer Erwiderung des Staatssekretärs <hi rend="#letterspaced">Hanusch</hi> und des <hi rend="#letterspaced">Vorsitzenden</hi> auf die Ausführungen des Unterstaatssekretärs Dr. Resch erteilt der Kabinettsrat der Wahlordnung in der vorgelegten Fassung die Genehmigung <pb facs="krp-0192_r-0050"/>und stimmt deren Verlautbarung nach Behandlung im Hauptausschusse zu.</p>
+               </div>
+               <div type="top" xml:id="krp-0192_top14">
+                  <head>
+                     <label>
+                        <num n="14">14.</num>
+                        <seg>Vollzugsanweisung, betreffend die Weitergewährung des Zuschusses zu den Unterhaltsbeiträgen und Zuwendungen.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Hanusch</hi> unterbreitet dem Kabinettsrat den Entwurf einer Vollzugsanweisung, durch welche die Weitergewährung des nach den Gesetzen vom 28. Juli 1919, StGBl. Nr. 387 und vom 19. Februar 1920, StGBl. Nr. 118, entfallenden 50 % Zuschusses zu den Unterhaltsbeiträgen an die Angehörigen von Kriegsgefangenen sowie des 50 % Zuschusses zu den Unterhaltsbeiträgen und Zuwendungen nach § 62 des Gesetzes vom 25. April 1919, StGBl. Nr. 245, für die Zeit vom 1. Juli bis 31. Oktober 1920 verfügt wird.</p>
+                  <p>Der sprechende Staatssekretär erhält nach seinem Antrage die Ermächtigung zur Verlautbarung der Vollzugsanweisung nach dem vorgelegten Entwurfe.</p>
+               </div>
+               <div type="top" xml:id="krp-0192_top15">
+                  <head>
+                     <label>
+                        <num n="15">15.</num>
+                        <seg>Veräußerung der Aktien der Süddeutschen Donau-Dampfschifffahrts-Gesellschaft an eine englische Finanzgruppe.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Reisch</hi> gibt dem Kabinettsrate die Absicht bekannt, den im Jahre 1910 vom alten österreichischen Staat hauptsächlich aus schifffahrtspolitischen Gründen erworbenen Gesamtbesitz der Aktien der Süddeutschen Donau-Dampfschifffahrts-Gesellschaft im Nominalbetrage von 3 Millionen Mark abzustoßen, da sich infolge des Ausganges des Krieges und der Bestimmungen des <pb facs="krp-0192_r-0051"/>Friedensvertrages dessen Beibehaltung als nicht mehr rätlich darstelle.</p>
+                  <p>Zunächst bedeute Art. 211 des Friedensvertrages für den staatlichen Besitz dieser Aktien eine große Gefahr, indem die Entente nach dem ihr dort eingeräumten Recht die Übertragung aller Rechte oder Interessen Österreichs an öffentliche Unternehmungen (entreprises d'utilité publique) in Deutschland an die Wiedergutmachungskommission gegen Gutschrift des Gegenwertes auf Reparationskonto zu verlangen, auch die Übertragung der Aktien der Süddeutschen Donaudampfschifffahrts-Gesellschaft fordern könnte.</p>
+                  <p>Dazu komme, dass sich ein Großteil des Schiffsparkes in Händen der unteren Donaustaaten befinde und es recht zweifelhaft scheine, ob es Österreich gelingen würde, die Rückgabe dieser Schiffe in absehbarer Zeit zu erreichen. Auch sonst müsste damit gerechnet werden, dass eine staatliche Schifffahrtsgesellschaft mit einem ablehnenden Verhalten der Uferstaaten zu rechnen hätte und bei ihrer Geschäftsführung zum Mindesten während der nächsten Jahre mannigfachen Hindernissen begegnen dürfte. Endlich hätte wohl auch bei dem im Friedensvertrage (III. Anlage zum VIII. Teil, § 5 al. 2 und Art. 300) vorgesehenen Schiedsspruch über die Zuteilung von Schiffsraum an die anderen Donaustaaten eine staatliche Gesellschaft geringeres Wohlwollen zu erwarten als eine fremdländische Gesellschaft.</p>
+                  <p><pb facs="krp-0192_r-0052"/>Diese Erwägungen legen den Entschluss nahe, die fraglichen Aktien an ausländische Interessenten weiter zu geben; es seien darum mit einer mächtigen englischen Gruppe, dem River Syndicate Ltd. in London, das für die Donauschifffahrt großes Interesse zeige, Verbindungen wegen des Verkaufes auch der Aktien der Süddeutschen Donau-Dampf-Schifffahrts-Gesellschaft angeknüpft worden, die nach langwierigen Verhandlungen nicht nur ein finanziell befriedigendes Resultat, sondern auch aussichtsreiche Zusagen auf politischem und schifffahrtspolitischem Gebiet herbeiführten.</p>
+                  <p>Dieses Syndikat, eine Gruppe erstklassiger Firmen mit einem Kapital von 1,2 Millionen Pfund Sterling (3/4 Milliarden K) beabsichtige auch die Beteiligung an den ungarischen, jugoslawischen und rumänischen Schifffahrtsgesellschaften und habe sich verpflichtet, zur Verknüpfung der gesamten Donauschifffahrtsinteressen mit Österreich den Sitz seines Büros nach Wien zu verlegen; es mache sich weiter verbindlich, seinen politischen Einfluss nach der Richtung einzusetzen, dass auch der Sitz der internationalen Donaukommission nach Wien verlegt werde, obwohl mächtige Einflüsse bestrebt sind, die Wahl auf Budapest fallen zu lassen. Zum Mindesten dürfte es dem politischen Einfluss dieses Syndikates wesentlich leichter gelingen, den Rückforderungsanspruch auf die beschlagnahmten Schiffe zur Geltung zu bringen und seine Interessen gegenüber der Entente <pb facs="krp-0192_r-0053"/>und den Schiedsgerichten zu wahren, als dies Österreich möglich gewesen wäre. Auf diese Weise sei auch erreicht, dass der vorhandene Schiffspark für die österreichischen Frachtinteressen sichergestellt bleibe, während sonst die Gefahr gedroht hätte, dass diese Schiffe einem der Sukzessionsstaaten dienstbar würden. Endlich werde die Schifffahrt dieser Gesellschaft gewiss weit früher wieder in Gang kommen, wenn die Schiffe unter englischem Protektorate fahren können, wie wenn sie dieses Schutzes entbehren.</p>
+                  <p>In finanzieller Hinsicht sei ein Preis von 22 Pfund pro Aktie, zusammen daher 66.000 Pfund, oder bei einem Sterling-Kurs von ca. 600 K, ..39.600.000 [K] vereinbart worden; überdies werde für jeden außerhalb Österreichs zurückgehaltenen Dampfer, der der Süddeutschen Donau-Dampf-Schifffahrts-Gesellschaft späterhin zurückgestellt werden sollte, ein Aufgeld von 1.200.000 K und für jeden Schlepper unter analogen Bedingungen ein Aufgeld von 266.667 K in englischen Pfund zu einem zu vereinbarenden Kurse an Österreich bezahlt. Da es sich insgesamt um fünf Dampfer und 79 Schlepper handelt, komme, falls die Rückstellung aller Fahrzeuge durchgesetzt wird, aus dem angegebenen Titel eine Aufzahlung von rund 27 Millionen K in Frage. Außerdem bleiben auch die noch festzustellenden Dividenden für das Jahr 1918 und 1919 im Betrage von etwa 3.000.000 [K] dem österreichischen Staate gewahrt.</p>
+                  <p>Der erzielte Kaufpreis von 39,6 Millionen K, der sich eventuell um weitere 30 Millionen <pb facs="krp-0192_r-0054"/>K erhöhen werde, könne im Vergleiche zu dem seinerzeit ausgelegten Kaufschilling von 4,6 Millionen K wohl als befriedigend bezeichnet werden; dies auch im Vergleiche zum Preis der Aktien der Süddeutschen Donau-Dampf-Schifffahrts-Gesellschaft, welcher –ungeachtet anderweitiger Zugeständnisse an die Käufer – nur 12 ½ Pfund pro Aktie betrage.</p>
+                  <p>Die Verhandlungen müssten schließlich außerordentlich beschleunigt werden, um noch vor Ratifizierung des Friedensvertrages zum Abschluss zu gelangen; der Möglichkeit eines Einspruches der Entente erscheine in der Weise Rechnung getragen, dass der Käufer die Verpflichtung übernommen hat, über Verlangen der Reparationskommission den ganzen Vertrag zu stornieren. Es dürfe aber erwartet werden, dass der politische Einfluss der englischen Gruppe mächtig genug sein werde, die Stellung eines derartigen Verlangens durch die Entente zu verhindern.</p>
+                  <p>Für die Veräußerung der Aktien der Süddeutschen Donau-Dampf-Schifffahrts-Gesellschaft fordere der Art. IV des alten österreichischen Gesetzes vom 12. August 1912, RGBl. Nr. 169, zwar die Zustimmung des ehemaligen Reichsrates, doch glaube Redner empfehlen zu sollen, sich über diese Bestimmung hinwegzusetzen, da die Regierung der Republik Österreich nicht die Rechtsnachfolgerin der alten österreichischen Regierung und die Konstituierende Nationalversammlung nicht die Rechtsnachfolgerin des ehemaligen Abgeordnetenhauses und Herrenhauses bilde. Zudem müsse aus politischen Gesichtspunkten <pb facs="krp-0192_r-0055"/>Wert darauf gelegt werden, den Abschluss der Vereinbarungen mit der englischen Finanzgruppe ohne parlamentarische Ermächtigung zu vollziehen, da es höchst inopportun wäre, durch eine öffentliche Verhandlung in der Konstituierenden Nationalversammlung die Aufmerksamkeit der Nationalstaaten wachzurufen und ihren Einspruch gegen die Transaktion auszulösen. Um in dieser wichtigen Angelegenheit aber doch in Fühlung mit der Nationalversammlung zu bleiben, schlage Redner vor, die Verkaufsabmachungen dem Hauptausschusse vertraulich zur genehmigenden Kenntnisnahme zu bringen.</p>
+                  <p>Der sprechende Staatssekretär bitte demgemäß, der Kabinettsrat wolle dem Verkaufe der Aktie der Süddeutschen Donau-Dampf-Schifffahrts-Gesellschaft an das River Syndicate Ltd. in London unter den bezeichneten Modalitäten zustimmen.</p>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> beleuchtet die wirtschaftlichen und politischen Vorteile, welche die Übernahme der Süddeutschen Donau-Dampf-Schifffahrts-Gesellschaft durch eine englische Gesellschaft erwarten lasse und spricht sich aus Zweckmäßigkeitsgründen gleichfalls dafür aus, von der Befragung der Nationalversammlung abzusehen und sich bloß auf eine Mitteilung an den Hauptausschuss zu beschränken.</p>
+                  <p>Unterstaatssekretär <hi rend="#letterspaced">Mik1as</hi> pflichtet der Anschauung bei, dass der Verkauf der Aktien an die englische Finanzgruppe unter den <pb facs="krp-0192_r-0056"/>bestehenden Verhältnissen die günstigste Lösung vorstelle. Redner rege aber an, zur Wahrung der formellen Gesetzesbestimmungen neben der Verständigung des Hauptausschusses noch eine Vorlage für die Nationalversammlung zur Einbringung in einem späteren Zeitpunkte wenigstens vorzubereiten, damit, falls der Verkauf von auswärts wegen Übergehung der Nationalversammlung bemängelt werden sollte, darauf hingewiesen werden könne, dass alle Schritte eingeleitet seien, um dem Gesetze Genüge zu tun. Ein anderer Ausweg wäre noch der, das Gesetz vom 12. Juli 1912 in der Art außer Kraft zu setzen, dass die Nationalversammlung einen Beschluss darüber fasse, welche altösterreichischen Gesetze für die Republik in Geltung zu bleiben haben und das erwähnte Gesetz in die betreffende Liste nicht aufgenommen werde.</p>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> greift die letztere Anregung mit der Änderung auf, dass jene Gesetze zusammengestellt werden sollen, die außer Wirksamkeit zu treten hätten, und ladet den Staatssekretär Dr. Ramek ein, die Frage im Staatsamte für Justiz studieren zu lassen.</p>
+                  <p>Der Kabinettsrat genehmigt sohin den Verkauf der Aktien der Süddeutschen Donau-Dampf-Schifffahrts-Gesellschaft unter den von Staatssekretär Dr. Reisch gekennzeichneten Bedingungen an das River Syndicate Ltd. in London und pflichtet dessen Vorschlägen über die <pb facs="krp-0192_r-0057"/>Befassung des Hauptausschusses an Stelle der Nationalversammlung bei.</p>
+               </div>
+               <div type="top" xml:id="krp-0192_top16">
+                  <head>
+                     <label>
+                        <num n="16">16.</num>
+                        <seg>Gesetzesbeschluss der Salzburger Landesversammlung über die Einhebung einer Landes- und Gemeindeabgabe vom unverdienten Wertzuwachse an Liegenschaften.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Reisch</hi> nimmt darauf Bezug, dass der Kabinettsrat in der Sitzung am 19. März l. J. gegen den Gesetzesbeschluss der Landesversammlung in Salzburg vom 14. Februar 1920 über die Einhebung einer Landes- und Gemeindeabgabe vom unverdienten Wertzuwachse an Liegenschaften die Erhebung der Vorstellung und die Verweigerung der Gegenzeichnung beschlossen habe, und zwar hauptsächlich aus dem Grunde, weil die im Gesetz vorgesehene Übertragung der Bemessung und Einhebung an die mit der Bemessung und Einhebung der staatlichen Übertragungsgebühren betrauten Ämter und Behörden bei der Überlastung der staatlichen Behörden und Ämter mit Arbeiten im Interesse der Staatsfinanzen nicht zugestanden werden konnte. Ein weiteres Bedenken sei in dem sprunghaften und allzu starken Ansteigen der Abgabenskala in ihren obersten Sätzen gelegen gewesen.</p>
+                  <p>Die Landesversammlung von Salzburg habe daraufhin durch einen Beschluss vom 28. April 1920 diesen wichtigsten sowie auf den meisten der übrigen minder belangreichen Bedenken Rechnung getragen und den Gesetzesbeschluss entsprechend abgeändert. </p>
+                  <p><pb facs="krp-0192_r-0058"/>Eine Ausnahme davon bilde eigentlich nur noch die Bestimmung über die Einbeziehung des restlichen Zugehörs (§ 294–297 Abs. b) in die Grundlagen der Berechnung des Wertzuwachses (Erwerbs- und Veräußerungswert), die trotz der erhobenen Bedenken beibehalten wurde. Wenn hinsichtlich dieser Bestimmung auch an dem ursprünglichen Standpunkt der Staatsregierung, dass darin ein Widerspruch zum Wesen der Abgabe liege, festgehalten werden müsse, so könne nach der Rechtsauffassung der Staatskanzlei gegen diese unverändert beibehaltene Einzelbestimmung trotzdem nicht neuerlich Vorstellung erhoben werden, da dies über das der Staatsregierung zustehende bloß suspensive Veto hinausginge.</p>
+                  <p>Redner stelle daher den Antrag, der Kabinettsrat wolle von der Erhebung einer Vorstellung gegen den Gesetzesbeschluss der Salzburger Landesversammlung vom 28. Juni 1920 über die Einhebung einer Landes- und Gemeindeabgabe vom unverdienten Wertzuwachse an Liegenschaften absehen und den sprechenden Staatssekretär ermächtigen, den Gesetzesbeschluss nach Einlangen eines stilistisch richtiggestellten Textes in der Fassung vom 14. Februar 1920, bzw. vom 28. April 1920 gegenzuzeichnen und dessen Kundmachung nach Einholung der Gegenzeichnung der Staatssekretäre für Inneres und Unterricht und für Justiz zuzustimmen.</p>
+                  <p>Der Kabinettsrat beschließt nach dem gestellten Antrage.</p>
+                  <p><pb facs="krp-0192_r-0059"/>.</p>
+               </div>
+               <div type="top" xml:id="krp-0192_top17">
+                  <head>
+                     <label>
+                        <num n="17">17.</num>
+                        <seg>Amtstitel für die technischen Hilfsbeamten der VII. Rangsklasse.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Ing. <hi rend="#letterspaced">Zerdik</hi> gibt dem Kabinettsrate bekannt, dass die in der letzten Zeit vollzogenen Ernennungen von Beamten des technischen Hilfsdienstes im Staatsamte für Handel und Gewerbe, Industrie und Bauten in die VII. Rangsklasse, für welche dermalen ein Amtstitel noch nicht bestehe, den Wunsch nach Einführung des Amtstitels „Technischer Inspektor“ für diese Rangsklasse ausgelöst habe. Da gegen diese Bezeichnung die bereits in einigen anderen staatlichen Dienstzweigen von Beamten mit mittlerer Vorbildung geführt werde, kein grundsätzliches Bedenken obwalte, beabsichtige der sprechende Staatssekretär im Sinne der Bestimmungen des § 40 Abs. 1 der Dienstpragmatik beim Präsidenten der Nationalversammlung die Bestimmung des Amtstitels „Technischer Inspektor“ für die technischen Hilfsbeamten im Staatsamt für Handel und Gewerbe, Industrie und Bauten in der VII. Rangsklasse zu beantragen.</p>
+                  <p>Der Kabinettsrat erteilt hiezu die Ermächtigung.</p>
+                  <p/>
+               </div>
+            </div>
+            <div type="stenogramme">
+               <div n="1">
+                  <head>EINZUFÜGEN</head>
+                  <p>Transkription in Arbeit.</p>
+               </div>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

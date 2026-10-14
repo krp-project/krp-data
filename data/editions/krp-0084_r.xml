@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href='http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:acdh="https://vocabs.acdh.oeaw.ac.at/schema#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xml:lang="de">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="a" type="main" n="0084">Kabinettsprotokoll Nr. 84 vom 1. Juli 1919</title>
+            <title level="m" type="main" n="01">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <title level="m" type="sub" n="">Renner II (15. März – 17. Oktober 1919)</title>
+            <meeting>
+               <placeName key="https://d-nb.info/gnd/4066009-6">Wien</placeName>
+               <orgName key="https://d-nb.info/gnd/5162749-8">Kabinettsrat</orgName>
+               <date when-iso="1919-07-01"/>
+            </meeting>
+            <editor>
+               <persName key="https://d-nb.info/gnd/122481836"
+                         role="hasCreator"
+                         xml:id="hwohnout">
+                  <forename>Helmut</forename>
+                  <surname>Wohnout</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</affiliation>
+               <idno type="ORCID">0000-0002-3864-9839</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/120789825"
+                         role="hasCreator"
+                         xml:id="tolechowski">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0003-3291-6876</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/131679384"
+                         role="hasCreator"
+                         xml:id="rlein">
+                  <forename>Richard</forename>
+                  <surname>Lein</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0002-7502-0503</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="aholzer">
+                  <forename>Anna</forename>
+                  <surname>Holzer</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0005-3560-3500</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="dsoelkner">
+                  <forename>Dominik</forename>
+                  <surname>Sölkner</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-9895-7212</idno>
+            </editor>
+            <editor>
+               <persName role="hasContributor" xml:id="ischotzko">
+                  <forename>Ina</forename>
+                  <surname>Schotzko</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-5210-3713</idno>
+            </editor>
+            <funder n="1">
+               <orgName key="https://d-nb.info/gnd/2054142-9" role="hasFunder">Österreichischer Wissenschaftsfonds FWF</orgName>
+               <idno type="project">PAT1495024</idno>
+               <title type="project">Die Protokolle des österreichischen Kabinettsrates 1919–1920</title>
+            </funder>
+            <respStmt>
+               <resp>Projektverantwortung</resp>
+               <orgName key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Projektleitung</resp>
+               <persName key="https://d-nb.info/gnd/120789825" role="hasPrincipalInvestigator">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+                  <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+                  <idno type="ORCID">0000-0003-3291-6876</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Nationaler Forschungspartner</resp>
+               <orgName key="https://d-nb.info/gnd/1123037736" role="hasEnabler">Austrian Centre for Digital Humanities</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Digitalisierung der gedruckten Quellen</resp>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>TEI-Datenmodellierung</resp>
+               <persName role="hasContributor" xml:id="tfruehwirth">
+                  <forename>Timo</forename>
+                  <surname>Frühwirth</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-3997-5193</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technische Supervision</resp>
+               <persName key="https://d-nb.info/gnd/1043833846"
+                         role="hasContributor"
+                         xml:id="pandorfer">
+                  <forename>Peter</forename>
+                  <surname>Andorfer</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-9575-9372</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technisches Consulting und Vorbereitung der Druckausgabe</resp>
+               <persName key="https://d-nb.info/gnd/13281899X"
+                         role="hasContributor"
+                         xml:id="skurz">
+                  <forename>Stephan</forename>
+                  <surname>Kurz</surname>
+                  <affiliation key="https://d-nb.info/gnd/1202798799">Institut für die Erforschung der Habsburgermonarchie und des Balkanraumes</affiliation>
+                  <idno type="ORCID">0000-0003-2546-2570</idno>
+               </persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher key="https://d-nb.info/gnd/1001454-8">Österreichische Akademie der Wissenschaften</publisher>
+            <date when="2028"/>
+            <availability status="free">
+               <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">Lizenziert unter CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/deed.de)</licence>
+            </availability>
+            <idno type="ISBN_Print"/>
+            <idno type="ISBN_Part_epub"/>
+            <idno type="ISBN_Digital"/>
+            <idno type="DOI"/>
+            <idno type="DOI_zenodo"/>
+            <idno type="ebook_ID"/>
+         </publicationStmt>
+         <seriesStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="m" type="main">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <respStmt>
+               <resp>Bearbeitung und Herausgeberschaft</resp>
+               <orgName key="https://d-nb.info/gnd/2024703-5">Universität Wien</orgName>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+         </seriesStmt>
+         <notesStmt>
+            <note>Diese TEI-XML-Datei ist Grundlage für eine Druckausgabe der Edition.</note>
+            <relatedItem>
+               <biblStruct>
+                  <monogr>
+                     <imprint>
+                        <pubPlace key="https://d-nb.info/gnd/4066009-6">Wien</pubPlace>
+                        <publisher key="https://d-nb.info/gnd/2068748-5">Verlag der Österreichischen Akademie der Wissenschaften</publisher>
+                        <date when="2029"/>
+                     </imprint>
+                     <extent/>
+                  </monogr>
+                  <note>
+              <idno/>
+              <ptr/>
+            </note>
+                  <citedRange/>
+               </biblStruct>
+            </relatedItem>
+         </notesStmt>
+         <sourceDesc>
+            <bibl>Quellbestand: AT-OeStA/AdR MRang MR 1Rep KRP Kabinettsratsprotokolle, 1918-1920 (Teilbestand)<ref target="https://www.archivinformationssystem.at/detail.aspx?id=5465">https://www.archivinformationssystem.at/detail.aspx?id=5465</ref>
+            </bibl>
+            <msDesc>
+               <msIdentifier>
+                  <institution key="https://d-nb.info/gnd/37748-X" role="hasOwner">AT-OeStA Österreichisches Staatsarchiv (Archiv (ÖStA))</institution>
+                  <repository key="https://d-nb.info/gnd/1601181-8">AT-OeStA/AdR Archiv der Republik, 1918- (Abteilung)</repository>
+                  <collection>AT-OeStA/AdR MRang MR 1Rep Ministerrat 1. Republik, 1918 - 1938 (Bestand)</collection>
+                  <idno>AT-OeStA_AdR-MRang-MR-1.-Rep.-KRP-084</idno>
+               </msIdentifier>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <abstract>
+            <p>
+          <!--to be generated-->
+        </p>
+         </abstract>
+      </profileDesc>
+      <encodingDesc>
+         <styleDefDecl scheme="css"/>
+         <tagsDecl>
+            <rendition xml:id="b" scheme="css">font-weight:bold;</rendition>
+            <rendition xml:id="su" scheme="css">vertical-align:super;font-size:.7em;</rendition>
+            <rendition xml:id="s" scheme="css">text-decoration:line-through;</rendition>
+            <rendition xml:id="u" scheme="css">text-decoration:underline;</rendition>
+            <rendition xml:id="ow" scheme="css">text-decoration:line-through;text-decoration-style:double;</rendition>
+            <rendition xml:id="r" scheme="css">display:block;text-align:right;</rendition>
+            <rendition xml:id="letterspaced" scheme="css">letter-spacing:0.15em;</rendition>
+            <rendition xml:id="i" scheme="css">font-style:italic;</rendition>
+         </tagsDecl>
+         <editorialDecl>
+            <hyphenation>
+               <p>
+            <!--to be added-->
+          </p>
+            </hyphenation>
+            <correction>
+               <p>
+            <!--to be added-->
+          </p>
+            </correction>
+            <normalization>
+               <p>
+            <!--to be added-->
+          </p>
+            </normalization>
+            <punctuation>
+               <p>
+            <!--to be added-->
+          </p>
+            </punctuation>
+            <stdVals>
+               <p>
+            <!--to be added-->
+          </p>
+            </stdVals>
+            <p>
+          <!--to be added-->
+        </p>
+         </editorialDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#tfruehwirth" when-iso="2026-10-14">TEIGarage output upconverted with upconvert.xsl</change>
+         <change who="#tfruehwirth" when-iso="2026-10-14">TEI header populated with generate_tei_templates.py</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface/>
+   </facsimile>
+   <text>
+      <body>
+         <div xml:id="doc-krp-0084.xml">
+            <head type="dokument">
+               <title type="num">84.<note type="footnote">Das Protokoll trägt den Vermerk <hi rend="#i">Vertraulich!</hi></note>
+               </title>
+               <title type="desc">
+                  <pb facs="krp-0084_r-0001"/>
+                  <pb facs="krp-0084_r-0002"/>[Dienstag] 1919-07-01</title>
+            </head>
+            <div type="dokumentkopf">
+               <div type="vorsitz">
+                  <head>Vorsitz:</head>
+                  <p>Fink</p>
+               </div>
+               <div type="anwesend">
+                  <head>Anwesend:</head>
+                  <p>Bauer, Bratusch, Eldersch, Glöckel, Hanusch, Loewenfeld-Russ, Miklas, Paul, Pflügl, Resch, Stöckler, Tandler, Waiss, Zerdik</p>
+               </div>
+               <div type="zugezogen">
+                  <head>Zugezogen:</head>
+                  <p>Grimm</p>
+               </div>
+               <div type="schriftfuehrer">
+                  <head>Schriftführer:</head>
+                  <p>unbekannt</p>
+               </div>
+               <div type="dauer">
+                  <head>Dauer:</head>
+                  <p>20.00–22.15 Uhr</p>
+               </div>
+            </div>
+            <div type="komponenten">
+               <p>Reinschrift, Beilagen, Konzept, stenographische Mitschrift, Entwurf der Tagesordnung, diverse Zusätze, 7. Personalsitzung</p>
+            </div>
+            <div type="beilagen">
+               <head>Beilagen:</head>
+               <list>
+                  <item><ref target="#krp-0084_top02">Zu TOP 2</ref>: <ref target="#krp-0084_b01">Resolutionen des Bundes sozialistischer Staatsangestellter Deutschösterreichs über die Errichtung von Betriebsräten, von Personal-, Qualifikations- und Disziplinar-Kommissionen sowie die schleunigste Vorlage neuer Besoldungssätze verbunden mit der Einleitung wirtschaftlicher Aktionen</ref></item>
+                  <item><ref target="#krp-0084_top03">Zu TOP 3</ref>: <ref target="#krp-0084_b02">Auszug für den Vortrag des Staatsamtes für Inneres und Unterricht zu Zl. 22.435/1919 über zwei Gesetzesentwürfe der Niederösterreichischen Landesversammlung hinsichtlich der Einhebung verschiedener Gebühren</ref></item>
+                  <item><ref target="#krp-0084_top04">Zu TOP 4</ref>: <ref target="#krp-0084_b03">Vollzugsanweisung des Staatssekretärs für Verkehrswesen Zl. 1.477 über die Einbeziehung der Post-, Telegrafen- und Telefonangelegenheiten sowie der Schifffahrtsangelegenheiten samt Begründung der Zuständigkeit des Staatsamtes für Verkehrswesen</ref></item>
+                  <item><ref target="#krp-0084_top05">Zu TOP 5</ref>: <ref target="#krp-0084_b04">Vollzugsanweisung des Staatssekretärs für Verkehrswesen über die Zuständigkeit des Staatsamtes für alle Kraftfahrangelegenheiten samt Begründung Zl. 14.226/P-1919</ref></item>
+                  <item><ref target="#krp-0084_top06">Zu TOP 6</ref>: <ref target="#krp-0084_b05">Genehmigung der Beschlüsse der Landesvertretungen über Teuerungszulagen für das 1. Halbjahr 1919 an die aktiven und pensionierten Lehrpersonen der öffentlichen Volks- und Bürgerschulen sowie deren Hinterbliebenen</ref></item>
+                  <item><ref target="#krp-0084_top07">Zu TOP 7</ref>: <ref target="#krp-0084_b06">Protokoll des deutschösterreichisch-tschechisch-polnischen Kohlenlieferungsabkommens</ref></item>
+                  <item><ref target="#krp-0084_top08">Zu TOP 8</ref>: <ref target="#krp-0084_b07">Antrag des Staatsamtes für Land- und Forstwirtschaft zu Zl. 11.827/1919 auf Genehmigung des Beschlusses der Provisorischen Steiermärkischen Landesversammlung hinsichtlich eines Grundtausches zwischen dem Land und dem Gutsbesitzer Paul Schoeller</ref></item>
+                  <item><ref target="#krp-0084_top09">Zu TOP 9</ref>: <ref target="#krp-0084_b08">Antrag des Staatsamtes für Land- und Forstwirtschaft zu Zl. 13.437 auf Zustimmung zum Beschluss der Provisorischen Niederösterreichischen Landesversammlung zur Verbauung des Schild- und Jodlbindergrabens in Schildern und Thernberg</ref></item>
+                  <item><ref target="#krp-0084_top11">Zu TOP 11</ref>: <ref target="#krp-0084_b09">Vollzugsanweisung des Staatsamtes für soziale Verwaltung über die Durchführung von Bestimmungen des Invalidenentschädigungsgesetzes</ref></item>
+               </list>
+            </div>
+            <div type="protokoll">
+               <pb facs="krp-0084_r-0003"/>
+               <div type="top" xml:id="krp-0084_top01">
+                  <head>
+                     <label>
+                        <num n="1">1.</num>
+                        <seg>Schaffung einer Medaille zur Erinnerung an die Gründung der Republik.</seg>
+                     </label>
+                  </head>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> teilt mit, dass – laut einer ihm zugekommenen Note des Unterstaatssekretärs für Unterricht – Prof. Dr. Rudolf Marschall eine Medaille zur Erinnerung an die Gründung der Republik Deutschösterreich entworfen habe, die in zwei Größen (70 bzw. 50 mm Durchmesser) hergestellt werden soll. Mit der größeren Medaille wären allenfalls Funktionäre der Republik, deren Auswahl die Staatsregierung bzw. die Staatskanzlei zu treffen hätte, offiziell zu beteilen, während die kleinere Medaille in der Öffentlichkeit zum freien Verkauf gelangen könnte.</p>
+                  <p>Nach einer kurzen Debatte pflichtet der Kabinettsrat dem Antrage des Staatssekretärs Dr. <hi rend="#letterspaced">Bauer</hi> bei, wonach von einen freien Verkaufe dieser Medaille grundsätzlich abzusehen ist und die Staatskanzlei angewiesen wird, einvernehmlich mit dem Staatsamte für Unterricht dem Kabinettsrate einen Vorschlag darüber zu erstatten, welche Persönlichkeiten für eine Beteilung mit diesem Erinnerungszeichen in Betracht zu ziehen wären; über die hienach erforderliche Anzahl hinaus wird eine bestimmte Zahl <pb facs="krp-0084_r-0004"/>von Medaillen anzuschaffen sein, die im Bedarfsfalle als Ehrengaben Verwendung zu finden hätten.</p>
+               </div>
+               <div type="top" xml:id="krp-0084_top02">
+                  <head>
+                     <label>
+                        <num n="2">2.</num>
+                        <seg>Bund der sozialistischen Staatsangestellten Deutschösterreichs; Beschlüsse der Versammlung am 23. Juni d. J.</seg>
+                     </label>
+                  </head>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> gibt bekannt, dass ihm vom Bund der sozialistischen Staatsangestellten Deutschösterreichs zwei in dessen Versammlung am 23. Juni d. J. gefasste Resolutionen überreicht worden seien. Die erste fordere die sofortige Erlassung der im § 2 des Gesetzes über die Errichtung von Betriebsräten verheißenen Vollzugsanweisung, betreffend die Schaffung von Einrichtungen, die den Betriebsräten im Sinne des bezogenen Gesetzes entsprechen und die gleichzeitig die Funktionen von Personal-, Qualifikations- und Disziplinarkommissionen umfassen sollen; die zweite Resolution verlange von der Regierung die schleunigste Vorlage von neuen Besoldungssätzen für die gesamte Staatsangestelltenschaft und bis zum Inkrafttreten dieser Besoldungsreform die monatsweise Erfolgung der bisherigen außerordentlichen Hilfsmaßnahmen (Anschaffungsbeitrag).</p>
+                  <p>Staatssekretär Ing. <hi rend="#letterspaced">Zerdik</hi> pflichtet dem in der ersten Resolution <pb facs="krp-0084_r-0005"/>gestellten Petite grundsätzlich bei und verweist darauf, dass Anhaltspunkte für eine derartige künftige Regelung bereits in der die Interessen der Angestellten voll wahrenden „Dienstpragmatik für die Landesbeamten und übrigen Landesangestellten in Niederösterreich“ gegeben seien; um zu diesem erwünschten Ergebnisse zu gelangen, erachte er aber zunächst eine Änderung der gegenwärtig noch geltenden einschlägigen Bestimmungen der Dienstpragmatik für geboten.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Bauer</hi> hält die Resolution im vorliegenden Wortlaute für teilweise unerfüllbar, da seiner Ansicht nach die Funktionen der Betriebsräte mit jenen der Qualifikationskommissionen gänzlich unvereinbar seien. Auch die Verquickung der Betriebsräte mit den Disziplinarkommissionen sei nicht ohne weiteres möglich.</p>
+                  <p>Rücksichtlich der zweiterwähnten Resolution teilt sodann Sektionschef Dr. <hi rend="#letterspaced">Grimm</hi> mit, dass das Zwischenstaatsamtliche Komitee für Beamtenangelegenheiten aus seiner Mitte bereits einen Referenten bestimmt und diesem die Ausarbeitung eines Entwurfes für die neuen Besoldungsvorschriften übertragen habe; dieser Ent<pb facs="krp-0084_r-0006"/>wurf werde nach Fertigstellung im Beamtenkomitee zur Beratung gelangen und dann erst dem Staatsamte für Finanzen unterbreitet werden. Letzteres werde jedenfalls nur nach gepflogenem Einvernehmen mit den Staatsangestelltenorganisationen vorgehen und seine Anträge der Regierung mit der möglichsten Raschheit unterbreiten.</p>
+                  <p>Der Kabinettsrat nimmt diese Mitteilungen genehmigend zur Kenntnis; über Antrag des Staatssekretärs Dr. <hi rend="#letterspaced">Bratusch</hi> beschließt der Kabinettsrat weiters, dass Abschriften der beiden Resolutionen durch die Staatskanzlei allen Staatsämtern zu übermitteln seien.</p>
+               </div>
+               <div type="top" xml:id="krp-0084_top03">
+                  <head>
+                     <label>
+                        <num n="3">3.</num>
+                        <seg>Beitritt der Staatsregierung zu zwei Gesetzesbeschlüssen der Niederösterreichischen Landesversammlung.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Eldersch</hi> erbittet die Zustimmung des Kabinettsrates zum Beitritte der Staatsregierung zu dem von der Niederösterreichischen Landesversammlung beschlossenen Entwurfe eines Gesetzes, betreffend die Einhebung einer Gemeindeabgabe von öffentlichen Vorführungen und Tanzunterhaltungen in der Stadt Wien und eines Gesetzes, betreffend die Forteinhebung der städtischen Zuschläge zu den direkten Steuern und zum Gebührenäquivalent sowie der kommunalen Abgabe von gebrannten <pb facs="krp-0084_r-0007"/>geistigen Flüssigkeiten und der Gemeindeauflage auf den Besitz von Hunden, ferner die Erhöhung des städtischen Zuschlages zur Totalisateurabgabe in der Gemeinde Wien.</p>
+                  <p>Der Kabinettsrat erteilt die erbetene Zustimmung mit der Maßgabe, dass die dem Staatsamte für Inneres und Unterricht zu diesen beiden Gesetzesbeschlüssen zugekommenen Bemerkungen des Staatsamtes für Finanzen der Gemeinde Wien im Wege der Landesregierung bekanntzugeben sein werden.</p>
+               </div>
+               <div type="top" xml:id="krp-0084_top04">
+                  <head>
+                     <label>
+                        <num n="4">4.</num>
+                        <seg>Vollzugsanweisung der Staatsregierung über die Einbeziehung der Post-, Telegrafen- und Telefonangelegenheiten sowie der Schifffahrtsangelegenheiten in die Zuständigkeit des Staatsamtes für Verkehrswesen.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Paul</hi> erbittet nach eingehender Begründung der Sachlage vom Kabinettsrate die Zustimmung zur Erlassung einer Vollzugsanweisung der Staatsregierung über die Einbeziehung der Post-, Telegrafen- und Telefonangelegenheiten sowie der Schifffahrtsangelegenheiten in die Zuständigkeit des Staatsamtes für Verkehrswesen; die Verlautbarung dieser Vollzugsanweisung hätte nach Einholung der Zustimmung des Hauptausschusses der Nationalversammlung zu erfolgen.</p>
+                  <p>Der Kabinettsrat erteilt die erbetene Zustimmung mit der Maßgabe, dass <pb facs="krp-0084_r-0008"/>als Beginn der Zuständigkeit des Staatsamtes für Verkehrswesen hinsichtlich dieser – im § 1 des Entwurfes der Vollzugsanweisung angeführten – Angelegenheiten der 15. August 1919 zu gelten habe, soweit nicht aus praktischen Bedürfnissen das Staatsamt für Verkehrswesen – einvernehmlich mit dem Staatsamt für Handel und Gewerbe, Industrie und Bauten – einen Teil dieser Agenden schon früher übernommen hat.</p>
+               </div>
+               <div type="top" xml:id="krp-0084_top05">
+                  <head>
+                     <label>
+                        <num n="5">5.</num>
+                        <seg>Vollzugsanweisung der Staatsregierung, betreffend die Zuständigkeit des Staatsamtes für Verkehrswesen für alle Kraftfahrangelegenheiten.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Paul erbittet und erhält vom Kabinettsrate die Ermächtigung, nach Einholung der Zustimmung des Hauptausschusses der Nationalversammlung eine Vollzugs-anweisung der Staatsregierung erlassen zu dürfen, mit welcher die Zuständigkeit des Staatsamtes für Verkehrswesen für alle Kraftfahrangelegenheiten festgesetzt wird. Hiebei soll zugleich festgelegt werden, dass die Regelung der Angelegenheiten der künftigen Gestaltung des militärischen Kraftfahrwesens vom Staatsamte für Heer[es]wesen im Einvernehmen mit dem Staatsamte für Verkehrswesen zu erfolgen hat. Die Zusammenfassung aller Angelegenheiten des Kraftfahrbetriebes für staat<pb facs="krp-0084_r-0009"/>liche Zwecke – mit der vorerwähnten Ausnahme – hätte bei der Generaldirektion für Post-, Telegrafen- und Telefonwesen zusammengefasst zu werden.</p>
+               </div>
+               <div type="top" xml:id="krp-0084_top06">
+                  <head>
+                     <label>
+                        <num n="6">6.</num>
+                        <seg>Beschlüsse der Landesvertretungen, betreffend die Teuerungszulage für das erste Halbjahr 1919 an die aktiven und pensionierten Lehrpersonen der öffentlichen Volks- und Bürgerschulen sowie an die Witwen und Waisen nach solchen Lehrpersonen.</seg>
+                     </label>
+                  </head>
+                  <p>Namens des augenblicklich abwesenden Unterstaatssekretärs Glöckel verweist Staatssekretär <hi rend="#letterspaced">Eldersch</hi> darauf, dass nach dem Gesetze vom 25. Jänner 1919, StGBl. Nr. 40, über die Gewährung von Teuerungszulagen für das erste Halbjahr 1919 an die aktiven und pensionierten Lehrpersonen der öffentlichen Volks- und Bürgerschulen sowie an die Witwen und Waisen nach solchen Lehrpersonen die Regierung ermächtigt sei, den Landesregierungen zur Bestreitung des Aufwandes für diese Zulagen Staatszuschüsse zu leisten.</p>
+                  <p>Diese Zulagen stellen sich als Zuwendungen neben den durch die Landesgesetze festgesetzten Dienstesbezügen dar, weshalb es notwendig erscheine, dass sich die einzelnen Landesvertretungen bzw. wenn der durch den Staatszuschuss nicht gedeckte Aufwand nicht vom Lande, sondern ganz oder zum Teile von einer anderen autonomen Körperschaft (Gemeinde) getra<pb facs="krp-0084_r-0010"/>gen wird, diese Letzteren zur Gewährung der Teuerungszulagen durch besondere Beschlüsse bereit erklären.</p>
+                  <p>In den an die zuständigen Landesbehörden wegen Durchführung dieses Gesetzes ergangenen Erlässen des Staatsamtes der Finanzen werde der Inhalt der zu fassenden Beschlüsse genau umschrieben; die Teuerungszulagen werden in dem gesetzlich vorgesehenen Ausmaße zu bewilligen sein und es werden daher alle Beschlüsse eine gleichartige Fassung und einen analogen Inhalt haben.</p>
+                  <p>Bisher seien nur von zwei Landesvertretungen bezügliche Beschlüsse vorgelegt worden; es sei aber zu erwarten, dass auch von den übrigen Landesvertretungen baldigst gegenständliche Beschlüsse gefasst und vorgelegt werden.</p>
+                  <p>Zur Vermeidung der mit der jedesmaligen Vorlage der einzelnen Beschlüsse an die Staatsregierung notwendigerweise verbundenen Verzögerung stellt der sprechende Staatssekretär den Antrag, die Staatsregierung wolle die zu gewärtigenden Beschlüsse der Landesvertretungen, falls sie den gesetzlichen Bedingungen entsprechen, von vorneherein genehmigen und den <pb facs="krp-0084_r-0011"/>Unterstaatssekretär für Unterricht ermächtigen, diese Genehmigung nach Vorlage der einzelnen dieser Voraussetzung entsprechenden Beschlüsse den Landesvertretungen bekanntzugeben. </p>
+                  <p>Der Kabinettsrat genehmigt diesen Antrag.</p>
+               </div>
+               <div type="top" xml:id="krp-0084_top07">
+                  <head>
+                     <label>
+                        <num n="7">7.</num>
+                        <seg>Deutschösterreichisch-tschechisch-polnisches Kohlenlieferungsabkommen.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Ing. <hi rend="#letterspaced">Zerdik</hi> teilt das am 16. Juni d. J. in Mährisch Ostrau zwischen den Vertretern der deutschösterreichischen, der tschechoslowakischen und der polnischen Regierung zustande gekommenen Kohlenlieferungsabkommen mit und ersucht um dessen Ratifizierung durch die Staatsregierung.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Bauer</hi> verweist darauf, dass es sich aus politischen Gründen empfehlen würde, diese Ratifizierung in diplomatischer Form vorzunehmen.</p>
+                  <p>Der Kabinettsrat pflichtet dieser Auffassung bei, genehmigt den Antrag des Staatssekretärs Ing. Zerdik und ladet ihn ein, das Abkommen dem Staatsamte für Äußeres zur weiteren Veranlassung im Sinne der Anregung des Staatssekretärs Dr. Bauer zu übermitteln.</p>
+                  <p><pb facs="krp-0084_r-0012"/></p>
+               </div>
+               <div type="top" xml:id="krp-0084_top08">
+                  <head>
+                     <label>
+                        <num n="8">8.</num>
+                        <seg>Beitritt der Staatsregierung zu dem Beschlusse der Provisorischen Landesversammlung in Steiermark, betreffend einen Grundtausch zwischen dem Lande Steiermark und dem Gutsbesitzer Paul Schoeller.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Stöckler</hi> teilt mit, dass zwischen dem Lande Steiermark und dem Gutsbesitzer Paul Schoeller im Jahre 1913 ein Tauschvertrag, betreffend den Landbesitz in den steirischen Landesforsten abgeschlossen und dieser Tauschvertrag nunmehr von der Provisorischen Landesversammlung in Steiermark in der Sitzung am 15. März l. J. genehmigt worden sei.</p>
+                  <p>Über Antrag des sprechenden Staatssekretärs beschließt der Kabinettsrat den Beitritt der Staatsregierung zu diesem Beschlusse der genannten Landesversammlung und ermächtigt das Staatsamt für Land- und Forstwirtschaft, die Landesregierung in Graz hievon zu verständigen.</p>
+               </div>
+               <div type="top" xml:id="krp-0084_top09">
+                  <head>
+                     <label>
+                        <num n="9">9.</num>
+                        <seg>Beitritt der Staatsregierung zu dem Beschlusse der Provisorischen Landesversammlung in Niederösterreich, betreffend die Sicherstellung der Verbauung des Schild- und Jodlbindergrabens in den Gemeinden Schildern und Thernberg.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Stöckler erbittet und erhält die Zustimmung des Kabinettsrates zum Beitritte der Staatsregierung zu dem von der Provisorischen Landesversammlung in Niederösterreich in der Sitzung am 2. April 1919 gefassten Gesetzesbeschlusse, betreffend die Sicherstellung der Ver<pb facs="krp-0084_r-0013"/>bauung des Schild- und Jodlbindergrabens in den Gemeinden Schildern und Thernberg.</p>
+               </div>
+               <div type="top" xml:id="krp-0084_top10">
+                  <head>
+                     <label>
+                        <num n="10">10.</num>
+                        <seg>Übergabe des Schlosses Laxenburg an die Invaliden.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Hanusch</hi> macht von den zwischen den Vertretern des Hofärars, des Staatsamtes für Finanzen und Staatsamtes für soziale Verwaltung am 27. und 28. Juni l. J. durchgeführten Verhandlungen über die Frage der Übergabe des Schlosses Laxenburg an die Invaliden Mitteilung. Er verweist auf die vorgelegene zwingende Notwendigkeit, rasch einen Weg zu finden, der es ermöglicht, einerseits schon jetzt die Invalidenschaft tunlichst zufriedenzustellen, andererseits aber auch den Bedenken Rechnung zu tragen, die einer voreiligen Überlassung des in Betracht kommenden Komplexes unter den gegenwärtig noch unklaren Verhältnissen rücksichtlich des Eigentumsrechtes des deutschösterreichischen Staates sowie der Finanzierung des Projektes entgegenstehen. Insgesamt handle es sich im vorliegenden Falle um die Unterbringung von beiläufig 600 Invaliden.</p>
+                  <p>Die Übergabe der Immobilien <pb facs="krp-0084_r-0014"/>und Mobilien wäre – unvorgreiflich der späteren Auseinandersetzung mit den Sukzessionsstaaten – seitens der Verwaltung des Hofärars an das Staatsamt für soziale Verwaltung zu erfolgen, die Festsetzung der näheren Modalitäten und die Durchführung der Übergabe und Übernahme einer Kommission zu obliegen haben, die sich aus Vertretern des Hofärars, des Staatsamtes für soziale Verwaltung, der Invalidenschaft und der hofärarischen Bediensteten zusammensetzt.</p>
+                  <p>Der Kabinettsrat nimmt die Mitteilungen des sprechenden Staatssekretärs genehmigend zur Kenntnis.</p>
+               </div>
+               <div type="top" xml:id="krp-0084_top11">
+                  <head>
+                     <label>
+                        <num n="11">11.</num>
+                        <seg>Vollzugsanweisung, betreffend die Durchführung von Bestimmungen des Invalidenentschädigungsgesetzes (III. Vollzugsanweisung zum Invalidenentschädigungsgesetz).</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Hanusch erbittet vom Kabinettsrate die Ermächtigung zur Erlassung einer „Vollzugsanweisung des Staatsamtes für soziale Verwaltung im Einvernehmen mit den beteiligten Staatsämtern, betreffend die Durchführung von Bestimmungen des Invalidenentschädigungsgesetzes (III. Vollzugsanweisung zum Invalidenentschädigungsgesetz).“</p>
+                  <p>In einer sich hieran anknüpfenden, längeren Debatte, an welcher sich Unterstaatssekretär Dr. <hi rend="#letterspaced">Tandler</hi> und Sektionschef Dr. <hi rend="#letterspaced">Grimm</hi> be<pb facs="krp-0084_r-0015"/>teiligen, wird die Frage der Verpflichtung der Organe des öffentlichen Gesundheitsdienstes, einschließlich der Gemeindeärzte, zur Übernahme der Heilbehandlung von Geschädigten gegen die tarifmäßige Vergütung erörtert.</p>
+                  <p>Der Kabinettsrat genehmigt schließlich den vorliegenden Antrag des Staatssekretärs für soziale Verwaltung.</p>
+               </div>
+               <div type="top" xml:id="krp-0084_top12">
+                  <head>
+                     <label>
+                        <num n="12">12.</num>
+                        <seg>Urlaubserteilung an den Staatssekretär für Land- und Forstwirtschaft.</seg>
+                     </label>
+                  </head>
+                  <p>Der Kabinettsrat erteilt dem Staatssekretär <hi rend="#letterspaced">Stöckler</hi> einen vierwöchentlichen Urlaub und betraut für die Zeit seiner Abwesenheit vom Amte die Sektionschefs Dr. Deutsch und Pantz mit der Führung der laufenden Geschäfte dieses Staatsamtes.</p>
+                  <p/>
+               </div>
+            </div>
+            <div type="stenogramme">
+               <div n="1">
+                  <head>EINZUFÜGEN</head>
+                  <p>Transkription in Arbeit.</p>
+               </div>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

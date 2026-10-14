@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href='http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:acdh="https://vocabs.acdh.oeaw.ac.at/schema#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xml:lang="de">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="a" type="main" n="0196">Kabinettsprotokoll Nr. 196 vom 30. Juni 1920</title>
+            <title level="m" type="main" n="01">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <title level="m" type="sub" n="">Renner III (17. Oktober 1919 – 7. Juli 1920)</title>
+            <meeting>
+               <placeName key="https://d-nb.info/gnd/4066009-6">Wien</placeName>
+               <orgName key="https://d-nb.info/gnd/5162749-8">Kabinettsrat</orgName>
+               <date when-iso="1920-06-30"/>
+            </meeting>
+            <editor>
+               <persName key="https://d-nb.info/gnd/122481836"
+                         role="hasCreator"
+                         xml:id="hwohnout">
+                  <forename>Helmut</forename>
+                  <surname>Wohnout</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</affiliation>
+               <idno type="ORCID">0000-0002-3864-9839</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/120789825"
+                         role="hasCreator"
+                         xml:id="tolechowski">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0003-3291-6876</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/131679384"
+                         role="hasCreator"
+                         xml:id="rlein">
+                  <forename>Richard</forename>
+                  <surname>Lein</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0002-7502-0503</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="aholzer">
+                  <forename>Anna</forename>
+                  <surname>Holzer</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0005-3560-3500</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="dsoelkner">
+                  <forename>Dominik</forename>
+                  <surname>Sölkner</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-9895-7212</idno>
+            </editor>
+            <editor>
+               <persName role="hasContributor" xml:id="ischotzko">
+                  <forename>Ina</forename>
+                  <surname>Schotzko</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-5210-3713</idno>
+            </editor>
+            <funder n="1">
+               <orgName key="https://d-nb.info/gnd/2054142-9" role="hasFunder">Österreichischer Wissenschaftsfonds FWF</orgName>
+               <idno type="project">PAT1495024</idno>
+               <title type="project">Die Protokolle des österreichischen Kabinettsrates 1919–1920</title>
+            </funder>
+            <respStmt>
+               <resp>Projektverantwortung</resp>
+               <orgName key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Projektleitung</resp>
+               <persName key="https://d-nb.info/gnd/120789825" role="hasPrincipalInvestigator">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+                  <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+                  <idno type="ORCID">0000-0003-3291-6876</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Nationaler Forschungspartner</resp>
+               <orgName key="https://d-nb.info/gnd/1123037736" role="hasEnabler">Austrian Centre for Digital Humanities</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Digitalisierung der gedruckten Quellen</resp>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>TEI-Datenmodellierung</resp>
+               <persName role="hasContributor" xml:id="tfruehwirth">
+                  <forename>Timo</forename>
+                  <surname>Frühwirth</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-3997-5193</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technische Supervision</resp>
+               <persName key="https://d-nb.info/gnd/1043833846"
+                         role="hasContributor"
+                         xml:id="pandorfer">
+                  <forename>Peter</forename>
+                  <surname>Andorfer</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-9575-9372</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technisches Consulting und Vorbereitung der Druckausgabe</resp>
+               <persName key="https://d-nb.info/gnd/13281899X"
+                         role="hasContributor"
+                         xml:id="skurz">
+                  <forename>Stephan</forename>
+                  <surname>Kurz</surname>
+                  <affiliation key="https://d-nb.info/gnd/1202798799">Institut für die Erforschung der Habsburgermonarchie und des Balkanraumes</affiliation>
+                  <idno type="ORCID">0000-0003-2546-2570</idno>
+               </persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher key="https://d-nb.info/gnd/1001454-8">Österreichische Akademie der Wissenschaften</publisher>
+            <date when="2028"/>
+            <availability status="free">
+               <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">Lizenziert unter CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/deed.de)</licence>
+            </availability>
+            <idno type="ISBN_Print"/>
+            <idno type="ISBN_Part_epub"/>
+            <idno type="ISBN_Digital"/>
+            <idno type="DOI"/>
+            <idno type="DOI_zenodo"/>
+            <idno type="ebook_ID"/>
+         </publicationStmt>
+         <seriesStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="m" type="main">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <respStmt>
+               <resp>Bearbeitung und Herausgeberschaft</resp>
+               <orgName key="https://d-nb.info/gnd/2024703-5">Universität Wien</orgName>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+         </seriesStmt>
+         <notesStmt>
+            <note>Diese TEI-XML-Datei ist Grundlage für eine Druckausgabe der Edition.</note>
+            <relatedItem>
+               <biblStruct>
+                  <monogr>
+                     <imprint>
+                        <pubPlace key="https://d-nb.info/gnd/4066009-6">Wien</pubPlace>
+                        <publisher key="https://d-nb.info/gnd/2068748-5">Verlag der Österreichischen Akademie der Wissenschaften</publisher>
+                        <date when="2029"/>
+                     </imprint>
+                     <extent/>
+                  </monogr>
+                  <note>
+              <idno/>
+              <ptr/>
+            </note>
+                  <citedRange/>
+               </biblStruct>
+            </relatedItem>
+         </notesStmt>
+         <sourceDesc>
+            <bibl>Quellbestand: AT-OeStA/AdR MRang MR 1Rep KRP Kabinettsratsprotokolle, 1918-1920 (Teilbestand)<ref target="https://www.archivinformationssystem.at/detail.aspx?id=5465">https://www.archivinformationssystem.at/detail.aspx?id=5465</ref>
+            </bibl>
+            <msDesc>
+               <msIdentifier>
+                  <institution key="https://d-nb.info/gnd/37748-X" role="hasOwner">AT-OeStA Österreichisches Staatsarchiv (Archiv (ÖStA))</institution>
+                  <repository key="https://d-nb.info/gnd/1601181-8">AT-OeStA/AdR Archiv der Republik, 1918- (Abteilung)</repository>
+                  <collection>AT-OeStA/AdR MRang MR 1Rep Ministerrat 1. Republik, 1918 - 1938 (Bestand)</collection>
+                  <idno>AT-OeStA_AdR-MRang-MR-1.-Rep.-KRP-196</idno>
+               </msIdentifier>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <abstract>
+            <p>
+          <!--to be generated-->
+        </p>
+         </abstract>
+      </profileDesc>
+      <encodingDesc>
+         <styleDefDecl scheme="css"/>
+         <tagsDecl>
+            <rendition xml:id="b" scheme="css">font-weight:bold;</rendition>
+            <rendition xml:id="su" scheme="css">vertical-align:super;font-size:.7em;</rendition>
+            <rendition xml:id="s" scheme="css">text-decoration:line-through;</rendition>
+            <rendition xml:id="u" scheme="css">text-decoration:underline;</rendition>
+            <rendition xml:id="ow" scheme="css">text-decoration:line-through;text-decoration-style:double;</rendition>
+            <rendition xml:id="r" scheme="css">display:block;text-align:right;</rendition>
+            <rendition xml:id="letterspaced" scheme="css">letter-spacing:0.15em;</rendition>
+            <rendition xml:id="i" scheme="css">font-style:italic;</rendition>
+         </tagsDecl>
+         <editorialDecl>
+            <hyphenation>
+               <p>
+            <!--to be added-->
+          </p>
+            </hyphenation>
+            <correction>
+               <p>
+            <!--to be added-->
+          </p>
+            </correction>
+            <normalization>
+               <p>
+            <!--to be added-->
+          </p>
+            </normalization>
+            <punctuation>
+               <p>
+            <!--to be added-->
+          </p>
+            </punctuation>
+            <stdVals>
+               <p>
+            <!--to be added-->
+          </p>
+            </stdVals>
+            <p>
+          <!--to be added-->
+        </p>
+         </editorialDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#tfruehwirth" when-iso="2026-10-14">TEIGarage output upconverted with upconvert.xsl</change>
+         <change who="#tfruehwirth" when-iso="2026-10-14">TEI header populated with generate_tei_templates.py</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface/>
+   </facsimile>
+   <text>
+      <body>
+         <div xml:id="doc-krp-0196.xml">
+            <head type="dokument">
+               <title type="num">196.<note type="footnote">Das Protokoll trägt den Vermerk <hi rend="#i">Vertraulich!</hi></note>
+               </title>
+               <title type="desc">
+                  <pb facs="krp-0196_r-0001"/>
+                  <pb facs="krp-0196_r-0002"/>[Mittwoch] 1920-06-30</title>
+            </head>
+            <div type="dokumentkopf">
+               <div type="vorsitz">
+                  <head>Vorsitz:</head>
+                  <p>Renner</p>
+               </div>
+               <div type="anwesend">
+                  <head>Anwesend:</head>
+                  <p>Deutsch, Eisler, Eldersch, Ellenbogen, Glöckel, Hanusch, Loewenfeld-Russ, Reisch, Tandler</p>
+               </div>
+               <div type="zugezogen">
+                  <head>Zugezogen:</head>
+                  <p>Grimm</p>
+               </div>
+               <div type="schriftfuehrer">
+                  <head>Schriftführer:</head>
+                  <p>unbekannt</p>
+               </div>
+               <div type="dauer">
+                  <head>Dauer:</head>
+                  <p>15.00–18.00 Uhr</p>
+               </div>
+            </div>
+            <div type="komponenten">
+               <p>Reinschrift, Beilagen, Anhang, Konzept, stenographische Mitschrift, Entwurf der Tagesordnung</p>
+            </div>
+            <div type="beilagen">
+               <head>Beilagen:</head>
+               <list>
+                  <item><ref target="#krp-0196_top02">Zu TOP 2</ref>: <ref target="#krp-0196_b01">Information für den Staatssekretär Dr. Ellenbogen über die Vornahme der Wahlen in der Kammer für Handel, Gewerbe und Industrie</ref></item>
+                  <item><ref target="#krp-0196_top03">Zu TOP 3</ref>: <ref target="#krp-0196_b02">Handschreiben von Staatssekretär Dr. Ellenbogen über die Zuständigkeit des Staatskommissariates für Sachdemobilisierung bei der Überführung von Liquidierungsbetrieben auf Friedensbetrieb</ref></item>
+                  <item><ref target="#krp-0196_top05">Zu TOP 5</ref>: <ref target="#krp-0196_b03">Vortrag des Staatsamtes für Finanzen über die Erhöhung der Tabakersatzlizenzgebühr</ref></item>
+                  <item><ref target="#krp-0196_top07">Zu TOP 7</ref>: <ref target="#krp-0196_b04">Gesetzesentwurf des Staatsamtes für soziale Verwaltung zu Zl. 17.544 über die V. Novelle zum Unfallversicherungsgesetz mit Begründung</ref></item>
+                  <item><ref target="#krp-0196_top08">Zu TOP 8</ref>: <ref target="#krp-0196_b05">Gesetzesentwurf des Staatsamtes für soziale Verwaltung zu Zl. 18.678/20 über die Änderung der Lohnklasseneinteilung in der Krankenversicherung der Arbeiter mit Begründung</ref></item>
+                  <item><ref target="#krp-0196_top09">Zu TOP 9</ref>: <ref target="#krp-0196_b06">Vortrag des Staatsamtes für Inneres und Unterricht Zl. 24.714/1920 über den Gesetzesbeschluss des Salzburger Landtages zur Wegfreiheit im Berglande</ref></item>
+                  <item><ref target="#krp-0196_top10">Zu TOP 10</ref>: <ref target="#krp-0196_b07">Vortrag des Staatssekretärs für Handel und Gewerbe, Industrie und Bauten über die Übernahme eines Teils des Personals der Gebäudeverwaltung des ehemaligen Kriegsministeriums in den Zivilstaatsdienst</ref></item>
+                  <item><ref target="#krp-0196_top11">Zu TOP 11</ref>: <ref target="#krp-0196_b08">Vortrag des Staatssekretärs für Handel und Gewerbe, Industrie und Bauten über die nachträgliche Anrechnung der seinerzeitigen Dienstzeit in der X. Rangklasse für gewerbliche Staatslehrpersonen der Gruppe B der Lehrerdienstpragmatik</ref></item>
+                  <item><ref target="#krp-0196_top12">Zu TOP 12</ref>: <ref target="#krp-0196_b09">Vortrag des Staatsamtes für soziale Verwaltung Zl. 13.684/1920 über die Gewährung von Staatsbeiträgen zu Sommererholungsaktionen 1920</ref></item>
+               </list>
+            </div>
+            <div type="protokoll">
+               <pb facs="krp-0196_r-0003"/>
+               <div type="top" xml:id="krp-0196_top01">
+                  <head>
+                     <label>
+                        <num n="1">1.</num>
+                        <seg>Verleihung amtlicher Titel für Verdienste im öffentlichen Leben.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Eldersch</hi> führt aus, dass es sich nach seinen Wahrnehmungen empfehlen würde, Personen, die sich im öffentlichen Leben erfolgreich betätigt oder hervorgetan haben, durch Verleihung eines nach den gegenwärtigen Vorschriften nur öffentlichen Funktionären vorbehaltenen Titels, wie z. B. des Titels eines Kommerzialrates auszuzeichnen. Redner beantrage, dass sich der Kabinettsrat mit dieser Frage befasse und diesbezüglich einen Beschluss fasse, der sodann dem Präsidenten der Nationalversammlung zur grundsätzlichen Genehmigung vorzulegen wäre.</p>
+                  <p>Nach einer längeren Debatte beschließt der Kabinettsrat, zunächst die Staatskanzlei zu beauftragen, eine gegenständliche Ausarbeitung nebst Beschlussanträgen dem Kabinettsrate vorzulegen.</p>
+               </div>
+               <div type="top" xml:id="krp-0196_top02">
+                  <head>
+                     <label>
+                        <num n="2">2.</num>
+                        <seg>Vornahme der Wahlen in die Kammern für Handel, Gewerbe und Industrie.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Ellenbogen</hi> erinnert daran, dass in Aussicht genommen sei, die Wahlen in die Kammern für Handel, Gewerbe und Industrie wenn möglich in der zweiten Hälfte September l. J. vorzunehmen. Die Niederösterreichische Landesregierung habe nun gegen die Ansetzung dieses Wahltermines mit Rücksicht auf die bevorstehenden Wahlen in die Nationalversammlung Bedenken erhoben und darauf hingewiesen, dass die Vorbereitung für die letzteren Wahlen mindestens zehn Wochen in Anspruch nehmen, wobei die politischen Behörden mit den bezüglichen Arbeiten derart belastet werden, dass es kaum angezeigt erschiene, sie in derselben Zeit auch noch mit Arbeiten für andere Wahlen zu befassen. Demgegenüber müsse Redner bemerken, dass die eheste Durchführung der Wahlen in die Kammern für Handel, Gewerbe und Industrie von allen interessier<pb facs="krp-0196_r-0004"/>ten Kreisen dringend betrieben und die politischen Behörden durch die Kammerwahlen nur in geringem Maße in Anspruch genommen werden, zumal die Landesregierungen lediglich die Haupt- und die Zweigwahlkommissionen zu bestellen, die Vorbereitungsarbeiten aber von den Kammern selbst getroffen werden, während die politischen Bezirksbehörden im Wesentlichen bloß die Verpflichtung hätten, die Wahlkommissionen bei der Durchführung der Wahlen zu unterstützen. Da die Erteilung einer Weisung an alle Landesregierungen, die Kammerwahlen bis Ende November aufzuschieben, überdies auch bei den meisten übrigen Ländern auf Widerstand stoßen dürfte, beantrage Redner, auf die von der Niederösterreichischen Landesregierung angeregte Verschiebung der Kammerwahlen nicht einzugehen.</p>
+                  <p>Staatssekretär <hi rend="#letterspaced">Hanusch</hi> verweist darauf, dass im heurigen Jahr auch die Wahlen in die Arbeiterkammern vorzunehmen sein werden und dass nach einem Übereinkommen im Abgeordnetenhause die Wahlordnungen für beide Kammern einer gleichartigen Behandlung in formeller Hinsicht zu unterziehen seien. Da die Wahlordnung für die Arbeiterkammern allen drei Parteien der Nationalversammlung vorgelegt worden sei, müsse er darauf bestehen, dass auch die Wahlordnungen für die Wahlen in die Kammern für Handel, Gewerbe und Industrie von den drei Parteien begutachtet werden.</p>
+                  <p>Über Vorschlag des <hi rend="#letterspaced">Vorsitzenden</hi> fasst der Kabinettsrat den Beschluss, diese Angelegenheit vorerst dem Hauptausschusse zur Stellungnahme zu unterbreiten.</p>
+               </div>
+               <div type="top" xml:id="krp-0196_top03">
+                  <head>
+                     <label>
+                        <num n="3">3.</num>
+                        <seg>Kompetenz der Staatskommission für Sachdemobilisierung.</seg>
+                     </label>
+                  </head>
+                  <p>Über Antrag des Staatssekretärs Dr. <hi rend="#letterspaced">Ellenbogen</hi> beschließt der Kabinettsrat, dass bei allen Angelegenheiten der Überführung von Liquidierungsbetrieben auf Friedensbetriebe, insbesonders bei der Umwandlung der Industriewerke und der Sachdemobilisierungsbetriebe, die Zuständigkeit der Staatskommission für Sozialisierung <pb facs="krp-0196_r-0005"/><note type="footnote">Die Textierung von TOP 3 wurde entsprechend dem der Reinschrift des Protokolls beigelegten Erratazettel modifiziert. Dieser hat folgenden Wortlaut: „Berichtigung des Kabinettsprotokolles Nr. 196 vom 30. Juni 1920. In Pkt. 3 soll es statt „Zuständigkeit des Staatskommissariates für Sachdemobilisierung“ richtig: „<hi rend="#u">Zuständigkeit der Staatskommission für Sozialisierung</hi>“, ferner statt „mit dem Präsidenten dieses Kommissariates“ richtig heißen: „mit dem Präsidenten dieser Kommission“. Demgemäß ist auch der Titel dieses Punktes in „<hi rend="#u">Kompetenz der Staatskommission für Sozialisierung</hi>“ richtigzustellen.“ <pb facs="krp-0196_r-0006"/></note>zu wahren und ohne vorheriges Einvernehmen mit dem Präsidenten dieser Kommission keine Verfügung zu treffen ist. Letzterer hat das Recht, von den mit diesen Angelegenheiten befassten Referenten unmittelbar Auskünfte zu verlangen und in die bezüglichen Akten einzusehen.</p>
+               </div>
+               <div type="top" xml:id="krp-0196_top04">
+                  <head>
+                     <label>
+                        <num n="4">4.</num>
+                        <seg>Kredite für die Elektrisierung der Staatsbahnen.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. Ellenbogen teilt mit, dass der im Voranschlag für das Verwaltungsjahr 1919/20 für die Einführung der elektrischen Zugförderung vorgesehene Kredit von 95 Millionen K mit dem heutigen Tage verfalle. Ebenso erlösche auch die den Staatsämtern für Verkehrswesen und für Finanzen mit dem Kabinettsratsbeschlusse vom 16. März 1920 erteilte Ermächtigung, diesen Betrag von 95 Millionen K bis zum Betrage von 200 Millionen K überschreiten zu dürfen.</p>
+                  <p>Für das Verwaltungsjahr 1920/21 seien bisher Kredite nicht zur Verfügung gestellt worden. Dies mache sich bei Bauarbeiten, deren Umfang völlig von den Mitteln abhänge, die hiefür bewilligt werden, besonders fühlbar. Da hiedurch die Kontinuität der Arbeiten sehr nachteilig beeinflusst werde, sei es dringend geboten, unverzüglich dafür vorzusorgen, dass die zur Fortsetzung der Elektrisierung nötigen Mittel in irgendeiner Form festgesetzt werden und dass hiedurch die Grenzen gezogen werden, innerhalb welcher sich die Fortführung der Arbeiten zu bewegen habe.</p>
+                  <p>Die einschlägigen Anforderungen seien nun in Anlehnung an die Sätze des in Vorbereitung stehenden Sicherstellungsgesetzes für die Einführung der elektrischen Zugförderung für das Verwaltungsjahr 1920/21 mit 1.150 Millionen K veranschlagt und dem Staatsamte für Finanzen bereits bekannt gegeben worden. Von diesem Jahreserfordernisse entfallen auf den Monat Juli rund 136 Millionen K u. zw. 97 Millionen K auf Anlagen und 39 Millionen K <pb facs="krp-0196_r-0007"/>auf Fahrbetriebsmittel. Die Ausgaben für Anlagen ergeben sich zum Teile aus bereits fest eingegangenen Verpflichtungen, zum Teil werden sie erwachsen, wenn die in Aussicht genommenen, der Baufortsetzung dienenden weiteren Verbindlichkeiten eingegangen sein werden. Unter die Ausgaben dieser zweiten Gruppe fallen z. B. jene für die Ausgestaltung des Ruetzwerkes, für die Erbauung des Stubachwerkes und des Mallnitzwerkes, für die Ausrüstung der Strecke Langen–Bludenz, für die Übertragungsleitung Ruetzwerk–Zirl, den mechanischen Teil des Spullerseewerkes. Insgesamt entfallen auf feste Verbindlichkeiten etwa 53 Millionen [K], auf erst einzugehende 34 Millionen K. Die Ausgestaltung des Ruetzwerkes, sowie der Bau des Stubach- und des Mallnitzwerkes stünden bereits unmittelbar vor der formellen freihändigen Vergebung im Sinne des Kabinettsratsbeschlusses vom 20. April l. J. Wiewohl die formelle Vergebung dieser Arbeiten durch Schluss- und Gegenschlussbrief noch nicht erfolgt sei, hätten die hiebei in Betracht kommenden Unternehmungen gewisse Vorarbeiten (Bau von Arbeiterbaracken, Wegherstellungen, Beschaffung von Lebensmitteln) und zwar mit Wissen der Staatseisenbahnverwaltung bereits begonnen, ausgehend von der Erwägung, dass in der gegenwärtigen, überaus günstigen Bauzeit jeder versäumte Tag einen unwiederbringlichen Verlust bedeute.</p>
+                  <p>Die Ausgabe von 29 Millionen K für Fahrbetriebsmittel beziehe sich ausschließlich auf Verbindlichkeiten, die bereits fest eingegangen worden seien (Anzahlungen).</p>
+                  <p>Um die Gebarung hinsichtlich der Elektrisierung auf eine feste Grundlage zu stellen, erscheine es daher erforderlich:</p>
+                  <list>
+                     <item n="1"><label>1.)</label> festzustellen, ob die bereits faktisch begonnenen Bauarbeiten (insbesondere Ruetzwerk, Stubachwerk, Mallnitzwerk) fortzusetzen sind und bejahendenfalls</item>
+                     <item n="2"><label>2.)</label> für Zwecke der Elektrisierung im Monat Juli l. J. den Betrag von 136 Millionen [K] zur Verfügung zu stellen.</item>
+                  </list>
+                  <p>Die Bewilligung eines einmonatlichen Erfordernisses würde wohl <pb facs="krp-0196_r-0008"/>dem von der Nationalversammlung beschlossenen, einmonatigen Budgetprovisorium Rechnung tragen. Sie würde jedoch nicht ausreichen, um eine feste Richtlinie für die Gebarung der nächsten Zeit zu gewinnen.</p>
+                  <p>Da das Sicherstellungsgesetz sowie auch das Finanzgesetz für das Jahr 1920/21 aller Voraussicht nach kaum vor dem Herbst erlassen werden dürften, es aber notwendig sei, die finanziellen Befugnisse des Staatsamtes für Verkehrswesen hinsichtlich der Elektrisierungsaktion auf einen größeren Zeitraum als auf einen Monat festzulegen, wäre es geboten, wenigstens für das erste Viertel des Verwaltungsjahres 1920/21 einen Kredit einzuräumen. Unter Zugrundelegung der im Entwurf des Teilvoranschlages für 1920/21 angesprochenen Beträge von insgesamt 1.150 Millionen K würde sich ein dreimonatiger Bedarf unter Berücksichtigung der für den Monat Juli zu gewärtigenden Ausgabenhäufung auf etwa 300 Millionen K belaufen. Sollte die förmliche Bewilligung eines solchen Kredites auf Schwierigkeiten stoßen, so wäre in Anlehnung an den Kabinettsratsbeschluss vom 16. März d. J. den Staatsämtern für Verkehrswesen und für Finanzen eine auf diesen Betrag lautende Ausgabenermächtigung zu erteilen.</p>
+                  <p>Mit der Erlassung des Sicherstellungsgesetzes würde diese Ausgabenermächtigung naturgemäß hinfällig werden und es würden demnach die aufgrund derselben vorschussweise aus Kassenbeständen bestrittenen Ausgaben zu Lasten des gesetzlichen Baukredites rückerstattet werden.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Reisch</hi> spricht sich in entschiedener Weise gegen diesen Antrag des Vorredners aus. Bei der einschlägigen Beratung im Kabinettsrate habe er ausdrücklich erklärt, gegen die Elektrisierung der Staatsbahnen im Prinzipe keine Einwendung zu erheben, ihr jedoch nur dann zuzustimmen, wenn ein Investitionsprogramm ausgearbeitet und eine bezügliche Vorlage vom Parlamente angenommen sein werde. Redner müsse es als ausgeschlossen bezeichnen, dass die bezüglichen Mittel nur durch die Notenpresse bereitgestellt wer<pb facs="krp-0196_r-0009"/>den, und bestehe darauf, dass diese Kosten nur nach erfolgter Anleihebegebung aufgewendet werden. Es sei der Finanzverwaltung daher auch nicht möglich, den Betrag von 136 Millionen K für den Monat Juli bereitzustellen.</p>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> bemerkt, dass gegen die eheste Einbringung der Gesetzesvorlage in der Nationalversammlung – unter Berufung auf den bezüglichen seinerzeitigen Kabinettsratsbeschluss – kein Anstand obwalten dürfte. Eine andere Frage wären allerdings die Kredite. Man werde sich aus den vom Staatssekretär Dr. Ellenbogen angeführten Gründen zu einer plötzlichen Einstellung der Arbeiten wohl kaum entschließen können; eine endgiltige Entscheidung könne der Kabinettsrat im Augenblick aber auch nicht fällen. Er beantrage daher, es mögen sich die Staatssekretäre Dr. <hi rend="#letterspaced">Reisch</hi> und Dr. <hi rend="#letterspaced">Ellenbogen</hi> mit den weiters noch beteiligten Faktoren zunächst noch über diese Frage aussprechen und sodann in einer der nächsten Sitzungen des Kabinettsrates über das Ergebnis der gegenständlichen Beratungen antragstellend berichten.</p>
+                  <p>Der Kabinettsrat pflichtet diesem Vorschlage bei und spricht sich gleichzeitig für die unverzügliche Einbringung der gegenständlichen Gesetzesvorlage in der Nationalversammlung (unter Hinweis auf den seinerzeitigen Kabinettsratsbeschluss) aus.</p>
+               </div>
+               <div type="top" xml:id="krp-0196_top05">
+                  <head>
+                     <label>
+                        <num n="5">5.</num>
+                        <seg>Erhöhung der Tabakersatzlizenzgebühr.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Reisch</hi> teilt mit, das Staatsamt für Finanzen beabsichtige die Tabakersatzlizenzgebühr von 6 h auf 40 h für eine Packungseinheit bis zu 25 g zu erhöhen. Die mit der Verordnung des Finanzministeriums vom 29. Juli 1918, RGBl. Nr. 274, festgesetzte Bemessung dieser Lizenzgebühr (mit 6 h) erfolgte unter Anpassung an die im damaligen Verkaufspreise des Landtabaks enthaltene Verbrauchsabgabe (Differenzbetrag zwischen Preis und Gestehungs<pb facs="krp-0196_r-0010"/>kosten). Nunmehr sei infolge der seither eingetretenen Erhöhung der Tabakpreise dieser Differenzbetrag von 6 h auf ca. 33 h gestiegen, weshalb die Lizenzgebühr unter entsprechender Aufrundung auf 40 h für eine Packungseinheit bis zu 25 g zu erhöhen wäre.</p>
+                  <p>Dadurch würde auch gleichzeitig dagegen Vorkehrung getroffen, dass die Spannung zwischen den Preisen der Regiefabrikate und jenen der von den privaten Unternehmern in den Handel gebrachten Tabakersatzmittel eine so große wird, dass ein unerwünscht starkes Übergehen der Konsumenten zu solchen billigeren Tabakersatzmitteln auf Kosten des Absatzes der Regiefabrikate eintritt.</p>
+                  <p>Zur Entrichtung der erhöhten Gebühr würden vorläufig die noch vorrätigen, auf 6 h lautenden Lizenzgebührmarken, und zwar infolge technischer Schwierigkeiten ohne irgendwelchen Überdruck zur Verwendung gelangen.</p>
+                  <p>Redner ersuche daher um die Ermächtigung, einen Antrag auf Erhöhung der Tabakersatzlizenzgebühr von 6 h auf 40 h für eine Packungseinheit bis zu 25 g gemäß § 3 des Gesetzes vom 13. April 1920, StGBl. Nr. 180 dem Präsidenten der Nationalversammlung behufs Einholung der Zustimmung des hiezu berufenen Ausschusses der Nationalversammlung vorlegen zu dürfen.</p>
+                  <p>Der Kabinettsrat erteilt die erbetene Ermächtigung.</p>
+               </div>
+               <div type="top" xml:id="krp-0196_top06">
+                  <head>
+                     <label>
+                        <num n="6">6.</num>
+                        <seg>Nachträgliche Zustimmung zur Verlautbarung des Gesetzes über die Führung des Staatshaushaltes für die Zeit vom 1. bis 31. Juli 1920.</seg>
+                     </label>
+                  </head>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> erbittet und erhält vom Kabinettsrate die Zustimmung zu der dringlichkeitshalber bereits erfolgten Verlautbarung des Gesetzes über die Führung des Staatshaushaltes für die Zeit vom 1. bis 31. Juli 1920.</p>
+                  <p><pb facs="krp-0196_r-0011"/></p>
+               </div>
+               <div type="top" xml:id="krp-0196_top07">
+                  <head>
+                     <label>
+                        <num n="7">7.</num>
+                        <seg>Gesetz, betreffend die Erhöhung des zur Unfallversicherung anrechenbaren Arbeitsverdienstes (V. Novelle zum Unfallversicherungsgesetz).</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Hanusch</hi> erbittet und erhält vom Kabinettsrate die Ermächtigung, in der Nationalversammlung den Entwurf eines Gesetzes, betreffend die Erhöhung des zur Unfallversicherung anrechenbaren Arbeitsverdienstes (V. Novelle zum Unfallversicherungsgesetz) einbringen zu dürfen.</p>
+               </div>
+               <div type="top" xml:id="krp-0196_top08">
+                  <head>
+                     <label>
+                        <num n="8">8.</num>
+                        <seg>Gesetz, betreffend Änderung der Lohnklasseneinteilung in der Krankenversicherung der Arbeiter.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Hanusch erbittet und erhält vom Kabinettsrate die Ermächtigung, in der Nationalversammlung den Entwurf eines Gesetzes, betreffend Änderung der Lohnklasseneinteilung in der Krankenversicherung der Arbeiter, einbringen zu dürfen.</p>
+               </div>
+               <div type="top" xml:id="krp-0196_top09">
+                  <head>
+                     <label>
+                        <num n="9">9.</num>
+                        <seg>Gesetzesbeschluss des Salzburger Landtages vom 31. Mai 1920 über die Wegfreiheit im Berglande.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Eldersch</hi> teilt mit, dass der Salzburger Landtag in seiner Sitzung am 5. Juli v. J. einen Gesetzentwurf über die Wegfreiheit im Berglande zum Beschlusse erhoben habe, der den beteiligten Staatsämtern zwar keinen Anlass zu grundsätzlichen Bedenken bot, aber immerhin mehrfache Mängel aufwies. Das Staatsamt für Inneres und Unterricht habe deshalb im Einvernehmen mit den Staatsämtern für Justiz, für Land- und Forstwirtschaft und für Handel und Gewerbe, Industrie und Bauten gegen den Gesetzesbeschluss eine Reihe von Erinnerungen vorgebracht, denen sich der Salzburger Landesrat in der Folge angeschlossen habe. In dem Landtagsbeschluss vom 31. Mai 1920 seien nun die Abänderungswünsche der beteiligten Staatsämter fast ausnahmslos berücksichtigt. Das Gesetz ermögliche <pb facs="krp-0196_r-0012"/>zu Gunsten des Touristen- und Fremdenverkehres die Einräumung eines Zwangsbenützungsrechtes an allen öffentlichen oder Privatwegen, welche für diesen Verkehr unentbehrlich oder zu dessen Förderung besonders wichtig sind; ferner unter den gleichen Voraussetzungen die Enteignung von Grundstücken, Benützungsrechten auf fremden Grunde, und von Baumaterialien zur Anlage von Straßen, Wegen und Steigen im Berglande, sowie zur Erbauung neuer und zur Erhaltung oder Erweiterung bestehender Schutzhütten und Unterkunftshäuser. Im Falle der Zwangsbenützung von Privatwegen können die beteiligten alpinen Körperschaften zur Leistung eines Beitrages zu den Erhaltungskosten solcher Privatwege verhalten werden; für die Enteignung gebühre eine Entschädigung. Die Absperrung von Touristenwegen und Ödland sei nur so lange gestattet, als es zur ungestörten Durchführung von Treibjagden unerlässlich sei.</p>
+                  <p>Zwangsbenützungsrecht und Enteignung sowie die vorläufige Höhe der Entschädigung werde von der Landesregierung ausgesprochen, welche auf die Interessen der Land- und Forstwirtschaft, der Jagd, des Touristen- und Fremdenverkehres und des Naturschutzes Rücksicht zu nehmen und die Agrarbehörde zu hören habe; für Fälle groben Unfuges oder Mutwillens im Berglande seien besondere Strafen und die Zulässigkeit sofortiger Vorführung durch Gendarmen, Jagd- und Flurhüter und Gemeindeorgane vorgesehen. Gegen den Gesetzesbeschluss wäre nach dem Antrage des sprechenden Staatssekretärs keine Vorstellung zu erheben und der sofortigen Verlautbarung des Gesetzes zuzustimmen.</p>
+                  <p>Der Kabinettsrat pflichtet diesem Antrage bei.</p>
+               </div>
+               <div type="top" xml:id="krp-0196_top10">
+                  <head>
+                     <label>
+                        <num n="10">10.</num>
+                        <seg>Übernahme eines Teiles des Personales der Gebäudeverwaltung des ehemaligen Kriegsministeriums in den Zivilstaatsdienst.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Ellenbogen</hi> verweist darauf, dass mit 1. Juli d. J. ein Wechsel in der Verwaltung des Gebäudes des ehe<pb facs="krp-0196_r-0013"/>maligen Kriegsministeriums eintritt. Mit diesem Tage gehe das Gebäude in die zivile Staatsgebäudeverwaltung für Wien über. Dieses größte und modernste Amtsgebäude erfordere zur Führung des gesamten Verwaltungsbetriebes naturgemäß eine größere Anzahl von Angestellten. Diese hätten sich aus Militär- und Zivilangestellten zusammengesetzt. Bezüglich des Militärpersonales wäre ein besonderer Antrag dem Kabinettsrat vom Staatssekretär für Heer[es]wesen bereits unterbreitet worden. Das zivile Personal gliedere sich in qualifizierte Werkführer, Professionisten sowie Taglohnbedienstete. In Absicht auf die Übernahme dieses zivilen Personals in den Zivilstaatsdienst stelle Redner folgende Anträge:</p>
+                  <list>
+                     <item n="1"><label>1.)</label> Die derzeit vom Staatsamte für Heereswesen zur Führung des gesamten Verwaltungsbetriebes des Gebäudes des ehemaligen Kriegsministeriums verwendeten 202 Personen werden mit 1. Juli 1920 in den Staatsgebäudeverwaltungs- und Ökonomatsdienst beim Staatsamte für Handel und Gewerbe, Industrie und Bauten übernommen wie folgt:</item>
+                     <item n="2"><label>a)</label> die qualifizierten Werkführer, d. s. zwei Maschinisten, ein Maschinenwärter, vier Elektrotechniker, zwei Aufzugsmonteure, ein Aufzugswärter, ein Obermonteur, ein Monteur für die Heizungsanlage, zwei Installateure, zwei Schlosser und ein Magazineur, zusammen 17 Personen, werden zu Unterbeamten unter Berücksichtigung ihrer anrechenbaren Dienstzeit ernannt,</item>
+                     <item n="3"><label>b)</label> die Professionisten, d. s. sechs Tischler, zwei Maurer, ein Unterelektriker und ein Kutscher, zusammen zehn Personen werden zu definitiven Dienern unter Berücksichtigung ihrer anrechenbaren Dienstzeit bestellt und</item>
+                     <item n="4"><label>c)</label> die Taglohnbediensteten, d. s. sieben Hausaufseher, 14 Hausdiener, neun Heizer, 27 Zimmerputzer, 118 Aufräumerinnen und Bedienerinnen, d. s. 175 Personen, werden in ihrer Eigenschaft verbleiben und nach den Vorschriften der Vollzugsverordnung vom 26. März 1920, StGBl. Nr. 155 entlohnt.</item>
+                     <item n="5"><label>2.)</label> Den Angestellten, welche besonders schwierige und mühe<pb facs="krp-0196_r-0014"/>volle Dienstleistungen vollführen und dermalen höhere gewerkschaftliche Löhne beziehen, als diesen nach ihrer Übernahme in die verschiedenen staatlichen Angestellten-Kategorien gebühren, werden im Einvernehmen mit dem Staatsamte für Finanzen fallweise Remunerationen bewilligt.</item>
+                     <item n="6"><label>3.)</label> Der mit 1. Juli l. J. festgesetzte Termin zur Erlangung einer Abfertigung wird bis 31. Juli 1920 verlängert.</item>
+                     <item n="7"><label>4.)</label> Für die in Betracht kommenden Militärpersonen wird zum Zwecke der Erleichterung ihrer künftigen Berufswahl der Anmelde-Termin für den Eintritt in die künftige Wehrmacht ebenfalls bis 31. Juli 1920 erstreckt.</item>
+                  </list>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Reisch</hi> spricht sich in entschiedener Weise gegen eine definitive Übernahme dieser Personen aus. Damit, dass der größte Teil derselben in der Eigenschaft eines Aushilfsdieners übernommen werden soll, sei deren Ernennung zu Unterbeamten und Beamten in wenigen Jahren automatisch gegeben. Es würden also Anwärter auf definitive Stellen geschaffen. Redner stellt den Antrag, diese Frage im Wege einer Kabinettskonferenz, der die Staatssekretäre für Handel und Gewerbe, Industrie und Bauten, sowie für Heereswesen und Finanzen anzugehören hätten, vorerst noch einer gründlichen Durchprüfung zu unterziehen.</p>
+                  <p>Die Staatssekretäre Dr. <hi rend="#letterspaced">Ellenbogen</hi> und Dr. <hi rend="#letterspaced">Deutsch</hi> erklären sich nach einer längeren Debatte mit diesem Antrag des Staatssekretärs für Finanzen schließlich einverstanden, ersuchen aber ungeachtet des Ergebnisses dieser Verhandlungen um die sofortige Annahme der Pkt. 3 und 4.</p>
+                  <p>Der Kabinettsrat erhebt den Antrag des Staatssekretärs Dr. Reisch sowie den Zusatzantrag der Staatssekretäre Dr. Ellenbogen und Dr. Deutsch zum Beschluss.</p>
+                  <p><pb facs="krp-0196_r-0015"/></p>
+               </div>
+               <div type="top" xml:id="krp-0196_top11">
+                  <head>
+                     <label>
+                        <num n="11">11.</num>
+                        <seg>Nachträgliche Anrechnung der seinerzeitigen Dienstzeit in der IX. Rangsklasse für gewerbliche Staatslehrpersonen der Gruppe B der Lehrerdienstpragmatik.</seg>
+                     </label>
+                  </head>
+                  <p>Nach eingehender Darstellung der Sach- und Rechtslage erbittet Staatssekretär Dr. <hi rend="#letterspaced">Ellenbogen</hi> unter Berufung auf das bereits im schriftlichen Wege hergestellte Einvernehmen mit dem Staatsamte für Finanzen vom Kabinettsrate die Ermächtigung, in einzelnen Fällen gewerblichen Staatslehrpersonen, welche seinerzeit in der X. Rangsklasse angestellt und dann in die IX. Rangsklasse befördert wurden, den bei der Anrechnung nach § 19 des Gesetzes vom 24. Februar 1907, RGBl. Nr. 55, unberücksichtigt gebliebenen Teil ihrer in der X. Rangsklasse tatsächlich zugebrachten Dienstzeit nachträglich, u. zw. rückwirkend vom 1. Jänner 1920 an, aufgrund des § 20 des erwähnten Gesetzes, auch über das hienach zulässige Höchstausmaß hinaus, für die Gehaltserhöhungen nach §§ 1 und 3 des Gesetzes vom 18. Dezember 1919, StGBl. Nr. 572, anzurechnen.</p>
+                  <p>Der Kabinettsrat erteilt die erbetene Ermächtigung.</p>
+               </div>
+               <div type="top" xml:id="krp-0196_top12">
+                  <head>
+                     <label>
+                        <num n="12">12.</num>
+                        <seg>Sommererholungsaktionen 1920; Gewährung von Staatsbeiträgen.</seg>
+                     </label>
+                  </head>
+                  <p>Unterstaatssekretär Dr. <hi rend="#letterspaced">Tandler</hi> verweist darauf, dass alle Ferienerholungsaktionen, deren Notwendigkeit vom gesundheitlichen Standpunkte angesichts des schwer bedrohten Gesundheitszustandes und der zurückgebliebenen Entwicklung nicht nur der Wiener Jugend, sondern auch der anderer Städte und Industriegebiete wohl außer Frage stehe, bei der unzureichenden Leistungsfähigkeit der autonomen und privaten Faktoren einer umfassenden Mitwirkung des Staates nicht entraten können.</p>
+                  <p>Ihre Zentralisierung ermögliche eine Durchführung nach einheitlichen Gesichtspunkten im ganzen Staate, die Aufstellung gleicher <pb facs="krp-0196_r-0016"/>Voraussetzungen für die Auswahl der Teilnehmer und eine wesentliche Verbilligung der entstehenden Kosten. Auch biete sie endlich die seit jeher herbeigewünschte Gelegenheit, auf ein eigenes österreichisches Unternehmen größten Stiles hinweisen zu können.</p>
+                  <p>Eine nachdrückliche Förderung der Sommererholungsaktionen durch die Staatsverwaltung wäre auf folgenden Grundsätzen aufzubauen:</p>
+                  <p>Die Beschaffung von Lebensmitteln über die Kopfquote hinaus, da eine erhöhte Nahrungsmittelzufuhr mit Rücksicht auf den Erholungszweck und das durch frische Luft und Bewegung im Freien erhöhte Bedürfnis nach Nahrungsaufnahme stattfinden muss.</p>
+                  <p>Diesbezüglich habe sich das Staatsamt für Volksernährung bereit erklärt, die erforderlichen Mengen gegen spätere Verrechnung zu liefern. Auch dürfte sich die amerikanische Kinderhilfsaktion bereit erklären, für die niederösterreichische Aktion eine Lebensmittelzubuße beizustellen.</p>
+                  <p>Die Überführung größerer Mengen von Mobiliar und Lebensmitteln, die Beförderung zahlreicher Kinder und Begleitpersonen, allenfalls in eigenen Zügen, legten den Gedanken nahe, durch Stundung von Transport- und Beförderungsgebühren eine Vereinfachung des ganzen Aktionsbetriebes und seine Entlastung von direkten Ausgaben, ähnlich wie dies bei den ausländischen Liebesgabentransporten und Kinderzügen ins Ausland geschieht, vorzusehen. Dank dem Entgegenkommen der Staatsämter für Verkehr und Finanzen werde der bezügliche Runderlass in den nächsten Tagen ergehen, wodurch die Aktionen eine gewichtige Förderung erfahren werden.</p>
+                  <p>Hinsichtlich des letzten und wichtigsten Punktes, der finanziellen Beteiligung des Staates, schicke Redner voraus, dass diese von Jahr zu Jahr einen immer größeren Umfang angenommen habe; darin spiegle sich jedoch nicht nur die Preissteigerung wieder, sondern auch die Erkenntnis von der absoluten Notwendigkeit derartiger Aktionen.</p>
+                  <p>Im heurigen Jahre solle sich die Aktion tunlichst gleichmäßig <pb facs="krp-0196_r-0017"/>auf das ganze Staatsgebiet erstrecken, da die gesundheitlichen Verhältnisse sich überall derart verschlechtert haben, dass eine vorzugsweise Berücksichtigung einzelner Teile des Landes nicht mehr statthaben kann, sondern die besondere Förderung einzelner, der wichtigsten Aktionen, auf anderem Wege ins Auge zu fassen sein wird, wobei Redner daran denke, den vom Staate beigestellten Betrag nach dem Bevölkerungsschlüssel auf die Länder aufzuteilen und allfällige, nicht verbrauchte Beträge Wien und Niederösterreich zuzuweisen.</p>
+                  <p>Im Prinzip möchte er sich dafür aussprechen, dass die Kosten jeder derartigen Aktion zwischen den öffentlichen Faktoren in der Weise aufgeteilt werden, dass Stadt, Land und Staat ungefähr je ein Drittel des Barerfordernisses tragen.</p>
+                  <p>Da bei Errechnung der Anforderungen nicht ganz einheitlich vorgegangen worden sei, indem nur in einzelnen Fällen die Beteiligung der anderen öffentlichen Faktoren bereits berücksichtigt erscheine, wäre das Höchsterfordernis an die Staatsfinanzen mit 8–10 Millionen [K] zu beziffern.</p>
+                  <p>Redner ersuche, der Gesundheitsverwaltung diese Mittel zur Verfügung zu stellen, um damit die Aktion zu ermöglichen und dem hilfsbereiten Auslande den Beweis zu erbringen, dass wir auch im Inlande nach Möglichkeit, ja über unsere Kraft bestrebt sind, unserer Jugend zu helfen.</p>
+                  <p>Die Verteilung des Kredites nach Maßgabe des sich tatsächlich im Verlaufe der Aktionen ergebenden Bedarfes nach – im Einvernehmen mit dem Staatsamte für Finanzen – noch festzulegenden Richtlinien, sowie die fachliche Beaufsichtigung der Durchführung würde der Gesundheitsverwaltung zukommen.</p>
+                  <p>Der Kabinettsrat genehmigt diesen Antrag unter Festsetzung eines Staatsbeitrages im Ausmaße von 5 Millionen K.</p>
+                  <p/>
+               </div>
+            </div>
+            <div type="anhaenge">
+               <p><pb facs="krp-0196_a01-0001"/>Anhang zum Kabinettsprotokoll Nr. 196 vom 30. Juni 1920.</p>
+               <div n="1">
+                  <head/>
+                  <div type="a01_protokoll">
+                     <p>Der Kabinettsrat erteilt die Zustimmung zur Stellung folgender Personalanträge an den Präsidenten der Nationalversammlung:</p>
+                     <p>Staatsamt für Inneres und Unterricht:</p>
+                     <p>Bewilligung der systemmäßigen Höchstbezüge sowie einer neben den jeweiligen systemmäßigen Höchstbezügen ungeschmälert bleibenden, zur Hälfte für die Pensionsbemessung anrechenbaren Personalzulage jährlicher 20.000 K an den ordentlichen Professor der Kunstgeschichte an der Universität in Wien, Dr. Max Dvořák.</p>
+                     <p>Staatsamt für Finanzen:</p>
+                     <p>Ernennung der Bergräte des Hauptmünzamtes in Wien Ing. Ferdinand Bolzer und Ing. Georg Karzel zu Oberbergräten.</p>
+                     <p>Staatsamt für Handel und Gewerbe, Industrie und Bauten:</p>
+                     <p>Ernennung des Ministerialsekretärs Dr. Josef Romaszkan zum Sektionsrat.	</p>
+                     <p/>
+                  </div>
+               </div>
+            </div>
+            <div type="stenogramme">
+               <div n="1">
+                  <head>EINZUFÜGEN</head>
+                  <p>Transkription in Arbeit.</p>
+                  <p/>
+               </div>
+               <div n="2">
+                  <head>EINZUFÜGEN</head>
+                  <p>Transkription in Arbeit.</p>
+               </div>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>
