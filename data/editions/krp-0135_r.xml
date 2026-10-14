@@ -1,0 +1,563 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href='http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:acdh="https://vocabs.acdh.oeaw.ac.at/schema#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xml:lang="de">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="a" type="main" n="0135">Kabinettsprotokoll Nr. 135 vom 5. Jänner 1920</title>
+            <title level="m" type="main" n="01">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <title level="m" type="sub" n="">Renner III (17. Oktober 1919 – 7. Juli 1920)</title>
+            <meeting>
+               <placeName key="https://d-nb.info/gnd/4066009-6">Wien</placeName>
+               <orgName key="https://d-nb.info/gnd/5162749-8">Kabinettsrat</orgName>
+               <date when-iso="1920-01-05"/>
+            </meeting>
+            <editor>
+               <persName key="https://d-nb.info/gnd/122481836"
+                         role="hasCreator"
+                         xml:id="hwohnout">
+                  <forename>Helmut</forename>
+                  <surname>Wohnout</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</affiliation>
+               <idno type="ORCID">0000-0002-3864-9839</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/120789825"
+                         role="hasCreator"
+                         xml:id="tolechowski">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0003-3291-6876</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/131679384"
+                         role="hasCreator"
+                         xml:id="rlein">
+                  <forename>Richard</forename>
+                  <surname>Lein</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0002-7502-0503</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="aholzer">
+                  <forename>Anna</forename>
+                  <surname>Holzer</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0005-3560-3500</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="dsoelkner">
+                  <forename>Dominik</forename>
+                  <surname>Sölkner</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-9895-7212</idno>
+            </editor>
+            <editor>
+               <persName role="hasContributor" xml:id="ischotzko">
+                  <forename>Ina</forename>
+                  <surname>Schotzko</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-5210-3713</idno>
+            </editor>
+            <funder n="1">
+               <orgName key="https://d-nb.info/gnd/2054142-9" role="hasFunder">Österreichischer Wissenschaftsfonds FWF</orgName>
+               <idno type="project">PAT1495024</idno>
+               <title type="project">Die Protokolle des österreichischen Kabinettsrates 1919–1920</title>
+            </funder>
+            <respStmt>
+               <resp>Projektverantwortung</resp>
+               <orgName key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Projektleitung</resp>
+               <persName key="https://d-nb.info/gnd/120789825" role="hasPrincipalInvestigator">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+                  <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+                  <idno type="ORCID">0000-0003-3291-6876</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Nationaler Forschungspartner</resp>
+               <orgName key="https://d-nb.info/gnd/1123037736" role="hasEnabler">Austrian Centre for Digital Humanities</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Digitalisierung der gedruckten Quellen</resp>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>TEI-Datenmodellierung</resp>
+               <persName role="hasContributor" xml:id="tfruehwirth">
+                  <forename>Timo</forename>
+                  <surname>Frühwirth</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-3997-5193</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technische Supervision</resp>
+               <persName key="https://d-nb.info/gnd/1043833846"
+                         role="hasContributor"
+                         xml:id="pandorfer">
+                  <forename>Peter</forename>
+                  <surname>Andorfer</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-9575-9372</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technisches Consulting und Vorbereitung der Druckausgabe</resp>
+               <persName key="https://d-nb.info/gnd/13281899X"
+                         role="hasContributor"
+                         xml:id="skurz">
+                  <forename>Stephan</forename>
+                  <surname>Kurz</surname>
+                  <affiliation key="https://d-nb.info/gnd/1202798799">Institut für die Erforschung der Habsburgermonarchie und des Balkanraumes</affiliation>
+                  <idno type="ORCID">0000-0003-2546-2570</idno>
+               </persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher key="https://d-nb.info/gnd/1001454-8">Österreichische Akademie der Wissenschaften</publisher>
+            <date when="2028"/>
+            <availability status="free">
+               <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">Lizenziert unter CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/deed.de)</licence>
+            </availability>
+            <idno type="ISBN_Print"/>
+            <idno type="ISBN_Part_epub"/>
+            <idno type="ISBN_Digital"/>
+            <idno type="DOI"/>
+            <idno type="DOI_zenodo"/>
+            <idno type="ebook_ID"/>
+         </publicationStmt>
+         <seriesStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="m" type="main">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <respStmt>
+               <resp>Bearbeitung und Herausgeberschaft</resp>
+               <orgName key="https://d-nb.info/gnd/2024703-5">Universität Wien</orgName>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+         </seriesStmt>
+         <notesStmt>
+            <note>Diese TEI-XML-Datei ist Grundlage für eine Druckausgabe der Edition.</note>
+            <relatedItem>
+               <biblStruct>
+                  <monogr>
+                     <imprint>
+                        <pubPlace key="https://d-nb.info/gnd/4066009-6">Wien</pubPlace>
+                        <publisher key="https://d-nb.info/gnd/2068748-5">Verlag der Österreichischen Akademie der Wissenschaften</publisher>
+                        <date when="2029"/>
+                     </imprint>
+                     <extent/>
+                  </monogr>
+                  <note>
+              <idno/>
+              <ptr/>
+            </note>
+                  <citedRange/>
+               </biblStruct>
+            </relatedItem>
+         </notesStmt>
+         <sourceDesc>
+            <bibl>Quellbestand: AT-OeStA/AdR MRang MR 1Rep KRP Kabinettsratsprotokolle, 1918-1920 (Teilbestand)<ref target="https://www.archivinformationssystem.at/detail.aspx?id=5465">https://www.archivinformationssystem.at/detail.aspx?id=5465</ref>
+            </bibl>
+            <msDesc>
+               <msIdentifier>
+                  <institution key="https://d-nb.info/gnd/37748-X" role="hasOwner">AT-OeStA Österreichisches Staatsarchiv (Archiv (ÖStA))</institution>
+                  <repository key="https://d-nb.info/gnd/1601181-8">AT-OeStA/AdR Archiv der Republik, 1918- (Abteilung)</repository>
+                  <collection>AT-OeStA/AdR MRang MR 1Rep Ministerrat 1. Republik, 1918 - 1938 (Bestand)</collection>
+                  <idno>AT-OeStA_AdR-MRang-MR-1.-Rep.-KRP-135</idno>
+               </msIdentifier>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <abstract>
+            <p>
+          <!--to be generated-->
+        </p>
+         </abstract>
+      </profileDesc>
+      <encodingDesc>
+         <styleDefDecl scheme="css"/>
+         <tagsDecl>
+            <rendition xml:id="b" scheme="css">font-weight:bold;</rendition>
+            <rendition xml:id="su" scheme="css">vertical-align:super;font-size:.7em;</rendition>
+            <rendition xml:id="s" scheme="css">text-decoration:line-through;</rendition>
+            <rendition xml:id="u" scheme="css">text-decoration:underline;</rendition>
+            <rendition xml:id="ow" scheme="css">text-decoration:line-through;text-decoration-style:double;</rendition>
+            <rendition xml:id="r" scheme="css">display:block;text-align:right;</rendition>
+            <rendition xml:id="letterspaced" scheme="css">letter-spacing:0.15em;</rendition>
+            <rendition xml:id="i" scheme="css">font-style:italic;</rendition>
+         </tagsDecl>
+         <editorialDecl>
+            <hyphenation>
+               <p>
+            <!--to be added-->
+          </p>
+            </hyphenation>
+            <correction>
+               <p>
+            <!--to be added-->
+          </p>
+            </correction>
+            <normalization>
+               <p>
+            <!--to be added-->
+          </p>
+            </normalization>
+            <punctuation>
+               <p>
+            <!--to be added-->
+          </p>
+            </punctuation>
+            <stdVals>
+               <p>
+            <!--to be added-->
+          </p>
+            </stdVals>
+            <p>
+          <!--to be added-->
+        </p>
+         </editorialDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#tfruehwirth" when-iso="2026-10-14">TEIGarage output upconverted with upconvert.xsl</change>
+         <change who="#tfruehwirth" when-iso="2026-10-14">TEI header populated with generate_tei_templates.py</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface/>
+   </facsimile>
+   <text>
+      <body>
+         <div xml:id="doc-krp-0135.xml">
+            <head type="dokument">
+               <title type="num">135.<note type="footnote">Das Protokoll trägt den Vermerk <hi rend="#i">Vertraulich!</hi></note>
+               </title>
+               <title type="desc">
+                  <pb facs="krp-0135_r-0001"/>
+                  <pb facs="krp-0135_r-0002"/>[Dienstag] 1920-01-06</title>
+            </head>
+            <div type="dokumentkopf">
+               <div type="vorsitz">
+                  <head>Vorsitz:</head>
+                  <p>Renner</p>
+               </div>
+               <div type="anwesend">
+                  <head>Anwesend:</head>
+                  <p>Deutsch, Eldersch, Ellenbogen, Fink, Glöckel, Hanusch, Loewenfeld-Russ, Miklas, Paul, Ramek, Reisch, Resch, Stöckler, Tandler, Waiss, Zerdik</p>
+               </div>
+               <div type="zugezogen">
+                  <head>Zugezogen:</head>
+                  <p>Grimm, Pohl, Reich, Rotky</p>
+               </div>
+               <div type="schriftfuehrer">
+                  <head>Schriftführer:</head>
+                  <p>unbekannt</p>
+               </div>
+               <div type="dauer">
+                  <head>Dauer:</head>
+                  <p>19.30–01.15 Uhr</p>
+               </div>
+            </div>
+            <div type="komponenten">
+               <p>Reinschrift, Beilagen, streng geheimer Anhang, Konzept, stenographische Mitschrift, Entwurf der Tagesordnung, diverse Zusätze</p>
+            </div>
+            <div type="beilagen">
+               <head>Beilagen:</head>
+               <list>
+                  <item><ref target="#krp-0135_top03">Zu TOP 3</ref>: <ref target="#krp-0135_b01">Vortrag des Staatsamtes für Handel und Gewerbe, Industrie und Bauten über die Staatsbeteiligung beim Golderzbergbau der Gewerkschaft Rathausberg bei Böckstein</ref></item>
+                  <item><ref target="#krp-0135_top04">Zu TOP 4</ref>: <ref target="#krp-0135_b02">Vortrag des Staatsamtes für Handel und Gewerbe, Industrie und Bauten über die Anerkennung für Funktionäre der Landesbekleidungstelle Graz anlässlich der Auflösung</ref></item>
+                  <item><ref target="#krp-0135_top07">Zu TOP 7</ref>: <ref target="#krp-0135_b03">Vortrag des Staatsamtes für Finanzen über Ermächtigung des Staatssekretärs auf Bewilligung einer Geld- und Effektenlotterie der Wiener Freiwilligen Rettungsgesellschaft im Jahre 1920</ref></item>
+                  <item><ref target="#krp-0135_top09">Zu TOP 9</ref>: <ref target="#krp-0135_b04">Antrag des Staatsamtes für Verkehrswesen Zl. 2635/19 auf Anwendung des Besoldungsübergangsgesetzes für die Feststellung der Ruhegenussbemessungsgrundlage auf alle von der Republik in den Ruhestand versetzten Staats- und Staatsbahnbediensteten</ref></item>
+                  <item><ref target="#krp-0135_top10">Zu TOP 10</ref>: <ref target="#krp-0135_b05">Gesetzesentwurf über die große Vermögensabgabe</ref></item>
+                  <item><ref target="#krp-0135_top11">Zu TOP 11</ref>: <ref target="#krp-0135_b06">Antrag des Staatsamtes für Finanzen wegen des Beamtenstreiks auf dem flachen Land in Niederösterreich</ref></item>
+                  <item><ref target="#krp-0135_top12">Zu TOP 12</ref>: <ref target="#krp-0135_b07">Vortrag des Staatsamtes für Finanzen über den Gesetzesentwurf zur Gewährung von Übergangsbeiträgen an die aktiven Lehrer der Volks- und Bürgerschulen</ref></item>
+                  <item><ref target="#krp-0135_top12">Zu TOP 12</ref>: <ref target="#krp-0135_b08">Gesetzesentwurf mit Bemerkungen zur Gewährung von Übergangsbeiträgen an die aktiven Lehrer der Volks- und Bürgerschulen</ref></item>
+                  <item><ref target="#krp-0135_top13">Zu TOP 13</ref>: <ref target="#krp-0135_b09">Vortrag des Unterstaatssekretärs für Unterricht Zl. 27.702/19 über den Gesetzesbeschluss des Niederösterreichischen Landtages über die Durchführung der Neuwahl von fünf Mitgliedern der niederösterreichischen Landeslehrerernennungskommission durch die Vertreter der Gemeinden in den Bezirksschulräten</ref></item>
+                  <item><ref target="#krp-0135_top14">Zu TOP 14</ref>: <ref target="#krp-0135_b10">Vortrag des Staatsamtes für Inneres und Unterricht über einen Gesetzesbeschluss der Salzburger Landesversammlung hinsichtlich der Bezüge der Lehreraltpensionisten, ihrer Angehörigen sowie der Hinterbliebenen nach jenen Lehrern, die vor dem 1. Jänner 1919 gestorben sind</ref></item>
+               </list>
+            </div>
+            <div type="protokoll">
+               <pb facs="krp-0135_r-0003"/>
+               <div type="top" xml:id="krp-0135_top01">
+                  <head>
+                     <label>
+                        <num n="1">1.</num>
+                        <seg>Neuregelung des Liquidierungsapparates in Durchführung des Gesetzes vom 18. Dezember 1919, StGBl. Nr. 577.</seg>
+                     </label>
+                  </head>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> führt aus, dass die Durchführung der mit dem Gesetze vom 18. Dezember 1919 ausgesprochenen Übernahme der bisher zwischenstaatlich besorgten Liquidierung in die Verwaltung der österreichischen Regierung eine Reihe grundsätzlicher sowie auch Einzelheiten regelnder Vollzugsmaßnahmen erfordern werde. Die zu treffenden Verfügungen sollen zufolge Beschlusses des Kabinettsrates durch eine Kabinettsratskonferenz der nächstbeteiligten Kabinettsmitglieder (Staatskanzler und die Staatssekretäre für Finanzen sowie für Heer[es]wesen) festgestellt werden. Bevor noch die Neuorganisation der Liquidierung eintrete, seien aber schon in der Zwischenzeit von dem Tage an, an welchem das Austrifizierungsgesetz in Wirksamkeit tritt (23. Dezember 1919) alle liquidierenden Stellen auf österreichischem Gebiete in die Verfügungsgewalt der österreichischen Regierung übergegangen. Um nun etwaige Stockungen <pb facs="krp-0135_r-0004"/>der laufenden Geschäfte bei den liquidierenden Stellen zu vermeiden, erscheine es notwendig, dem in Betracht kommenden Personal Direktiven für die Weiterführung der Liquidierungsgeschäfte sowie für die vorläufige Behandlung der Geschäfte und Akten der bisherigen bevollmächtigten Kollegien und ihrer Sekretariaten ehebaldig zukommen zu lassen.</p>
+                  <p>Der Generalliquidierungskommissär [Dr.] Pöschl habe dem Vorsitzenden den Entwurf einer Zuschrift an das liquidierende Kriegsministerium, an die liquidierende Marinesektion, an das liquidierende Ministerium für Landesverteidigung, an das liquidierende Finanzministerium, an den liquidierenden gemeinsamen Obersten Rechnungshof und an den liquidierenden Obersten Rechnungshof übergeben.</p>
+                  <p>Der Vorsitzende glaube, diese Direktiven dem Kabinettsrate zur Annahme empfehlen und um die Ermächtigung bitten zu sollen, diese Weisungen an die genannten liquidierenden Stellen hinausgeben zu dürfen.</p>
+                  <p>Der Vorsitzende bringt dem Kabinettsrate sodann den Wortlaut dieser im Geschäftsstück Zl. 21 ex 1920 der Staatskanzlei enthaltenen Direktiven zur Kenntnis.</p>
+                  <p><pb facs="krp-0135_r-0005"/>Der Kabinettsrat pflichtet diesen Mitteilungen vollinhaltlich bei und erteilt dem Vorsitzenden die erbetene Ermächtigung.</p>
+                  <p>In diesem Zusammenhange verweist sodann Sektionschef Dr. <hi rend="#letterspaced">Grimm</hi> darauf, die Neuorganisation des Liquidierungsapparates sei im Gesetze vom 18. Dezember 1919, StGBl. Nr. 157 derart festgelegt, dass durch die Staatsregierung jedem Staatsamte die seinem Wirkungskreise nächstverwandten Geschäfte übertragen und die Geschäfte der liquidierenden militärischen Stellen, soweit sie hienach nicht an andere Staatsämter übergehen, dem Staatsamte für Finanzen unterstellt werden.</p>
+                  <p>Es handle sich somit darum, einvernehmlich zu bestimmen, welche Agenden von den liquidierenden Stellen abgetrennt und einzelnen Staatsämtern übertragen werden und wie das mit den sohin restierenden Liquidierungsagenden betraute österreichische Liquidierungsamt organisiert werde. Mit der Leitung dieses Amtes wäre, um die Interessen der österreichischen Staatsfinanzen und der österrei[chischen] Industrie zu wahren, ein Zivilstaatsbeamter zu bestellen. Dieser Lösung habe auch der Staatssekretär für Heer[es]wesen zugestimmt. <pb facs="krp-0135_r-0006"/>Das Staatsamt für Finanzen werde in allernächster Zeit über die Neuorganisation der Liquidierung konkrete Vorschläge allen beteiligten Staatsämtern unterbreiten; um keine Zeit zu verlieren, sei bereits eine Kommission bestellt worden, die in den einzelnen Abteilungen der militärischen und Finanzliquidierungsstellen eine Nachschau halte, um sich über die Möglichkeit und Zweckmäßigkeit der Abtrennung einzelner Agenden sowie über den Personalbedarf zu informieren, um derart die Grundlagen für seine Vorschläge zu schaffen. Bis zum Inkrafttreten der vom Kabinettsrate zu genehmigenden Abtrennungen und Zusammenlegungen werde jedoch im Interesse der klaglosen Fortführung der Agenden der bisherige Apparat <hi rend="#u">provisorisch</hi>, bei entsprechendem Personalabbau und unter Bedachtnahme auf die Interessen der Republik Österreich fortgeführt werden müssen. Eigenmächtige Inkamerierungen hätten daher seitens einzelner Staatsämter in keiner Weise vorgenommen zu werden. Wie dem Staatsamte für Finanzen aus durchaus verlässlicher Quelle bekannt geworden sei, suchen speziell Organe des Staatsamtes für Heer[es]wesen der Entscheidung der Staatsregierung insofern vorzugreifen, als sie – ohne mit dem Staatsamt für Finanzen das Einvernehmen zu pflegen – <pb facs="krp-0135_r-0007"/>einzelne Agenden, z. B. die Pensionsliquidatur, zu übernehmen im Begriffe seien. Die Pensionsliquidatur werde sich sachgemäß am ökonomischsten an die für Pensionsparteien aller anderen Ressorts bei den Finanzlandesdirektionen bestehenden Pensionsliquidaturen anschließen lassen.</p>
+                  <p>Die Leitung der provisorisch fortzubelassenden Liquidierungsstellen werde hiebei tunlichst in Händen der bisherigen Vorstände – soweit sie in einer nach dem Staatsvertrage von St. Germain zur Republik Österreich fallenden Gemeinden heimatszuständig sind und sonst das Vertrauen der Staatsregierung genießen – zu belassen sein. Bloß zwei Leiter, der bisherige Leiter des liquidierenden Kriegsministeriums, Minister a. D. [Dr. mont. h. c.] Emil Homann und der bisherige Leiter des liquidierenden gemeinsamen Obersten Rechnungshofes, Minister a. D. Dr. Ernst Plener, werden zu entheben sein. Letzterer habe schon seinerzeit anlässlich der staatlichen Umwälzung um seine Pensionierung angesucht, sei jedoch von der österreichischen Regierung in Wege der Staatskanzlei ersucht worden, die Geschäfte des gemeinsamen Obersten Rechnungshofes bis zur Lösung der Frage der künftigen Li<pb facs="krp-0135_r-0008"/>quidierung weiterzuführen. Minister [Dr. mont. h. c.] Homann habe am 13. November 1919 der Gesandtenkonferenz seine Demission angeboten; über Ersuchen der Gesandtenkonferenz habe die Leitung bisher formell beibehalten, gleichzeitig jedoch zu erkennen gegeben, dass er die Leitung nur mehr bis zur Austrifizierung fortzuführen gedenke. Deshalb habe er auch die Weisung erteilt, dass ihm vom Moment der Annahme des Liquidierungsgesetzes keine Dienststücke mehr vorzulegen seien.</p>
+                  <p>Redner erlaube sich daher, den Antrag zu stellen,</p>
+                  <p>der Kabinettsrat wolle beschließen:</p>
+                  <list>
+                     <item n="1"><label>1.)</label> Ohne Zustimmung der beteiligten Ressorts dürfen keinerlei Agenden aus den Liquidierungsstellen ausgeschieden und in Staatsämter inkameriert werden. Bereits erfolgte Inkamerierungen greifen in keiner Weise der Entschließung der Staatsregierung vor und haben jene Staatsämter, die bereits mit Inkamerierungen begonnen haben, sofort mit dem Staatsamte für Finanzen und den anderen beteiligten Staatsämtern das Einvernehmen zu pflegen.</item>
+                     <item n="2"><label>2.)</label> Die bisherigen Leiter des liquidierenden Kriegsministeriums und des liquidierenden gemeinsamen Obersten Rechnungshofes, Minister a. D. [Dr. mont. h. c.] Emil Homann und Minister a. D. Dr. Ernst Plener sind von ihren Posten zu entheben und <pb facs="krp-0135_r-0009"/>hievon durch die Staatskanzlei unter Ausdruck des Dankes für ihre der internationalen Liquidierung und mittelbar auch der Republik Österreich geleisteten Dienste zu verständigen. Gleichzeitig ist die vom Minister a. D. Dr. Ernst Plener angesuchte Pensionierung durch das Staatsamt für Finanzen zu veranlassen.</item>
+                     <item n="3"><label>3.)</label> Die bisherigen Leiter des liquidierenden Ministeriums für Landesverteidigung, Feldmarschallleutnant Eduard Tunk (der seit 7. November 1918 in Wien heimatszuständig ist), des liquidierenden Kriegsministeriums, Marinesektion, Kontreadmiral Wilhelm Buchmayer (der seit 16. Februar 1919 in Streitmannsdorf, Niederösterreich zuständig ist), des liquidierenden Obersten Rechnungshofes, Hofrates Dr. Karl Albrecht und des liquidierenden gemeinsamen Finanzministeriums, Sektionschefs Hermann Bareck, werden für die Zeit bis zum Inkrafttreten der zur Durchführung des Gesetzes vom 18. Dezember 1919, StGBl. Nr. 577, zu erlassenden Vollzugsanweisung mit der einstweiligen Fortführung der Agenden der bisher von ihnen geleiteten Stellen, Sektionschef Hermann Bareck auch mit der Leitung des gemeinsamen Obersten Rechnungshofes betraut. Die einstweilige Leitung des liquidierenden Kriegsministeriums wird – unvorgreiflich der Frage, wer mit der Lei<pb facs="krp-0135_r-0010"/>tung der zu schaffenden österreichischen Liquidierungsstelle betraut werden wird – dem bisher mit der Leitung der ökonomischen Sektion des genannten Ministeriums betrauten Finanzrat Dr. Friedrich Hornik übertragen.</item>
+                     <item n="4"><label>4.)</label> Mit der Leitung des aus den bisherigen liquidierenden Stellen – nach Ausscheiden der abzutrennenden Agenden – zu schaffenden österreichischen Liquidierungsamtes wird ein Zivilstaatsbeamter bestellt werden. Die Bestellung steht dem Staatsamte für Finanzen zu.</item>
+                  </list>
+                  <p>Der Kabinettsrat erhebt diesen Antrag zum Beschluss.</p>
+               </div>
+               <div type="top" xml:id="krp-0135_top02">
+                  <head>
+                     <label>
+                        <num n="2">2.</num>
+                        <seg>Anbot eines ausländischen Konsortiums, betreffend den Ausbau der österreichischen Wasserkräfte und den Betrieb der einschlägigen Kraftwerke.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Ellenbogen</hi> teilt mit, dass ihm von einem Schweizer Ingenieur namens Foris namens eines ausländischen Konsortiums in der allerjüngsten Zeit ein Anbot über den Ausbau der österreichischen Wasserkräfte und den Betrieb der Kraftwerke unterbreitet worden sei. Das Projekt, dessen Details der sprechende Staatssekretär in ausführlicher Weise dem Kabinettsrate zur Kenntnis bringt, stelle sich unter allen bisherigen, der Staatsregierung bzw. dem WEWA zugekommenen Anboten als das relativ günstigste dar.<pb facs="krp-0135_r-0011"/>Insbesondere soll der Regierung bei der endgiltigen Feststellung des Projektes ein nachhaltiger Einfluss gesichert und ihr auch bei der seinerzeitigen Abrechnung eine Kontrolle zugedacht werden.</p>
+                  <p>Nach einer Erörterung der Frage, über die voraussichtliche Stellungnahme der Länder zu diesem Projekte, stellt Redner abschließend den Antrag, der Kabinettsrat wolle</p>
+                  <list>
+                     <item n="1"><label>1.)</label> die Ermächtigung dazu erteilen, dass das von Ing. Foris vorgelegte Projekt im Namen der Staatsregierung als eine geeignete Grundlage für weitere Verhandlungen erklärt und das Konsortium eingeladen werde, bevollmächtigte Vertreter zur Führung von Einzelverhandlungen nach Wien zu entsenden;</item>
+                     <item n="2"><label>2.)</label> mit der Führung dieser Verhandlungen das WEWA betrauen und dieses Amt anweisen, dem Kabinettsrate im Gegenstande fortlaufend Bericht zu erstatten.</item>
+                  </list>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Reisch</hi> erklärt, diesem Projekt vom staatsfinanziellen Gesichtspunkte aus sympathisch gegenüberzustehen, zumal hieraus dem Staate namhafte wirtschaftliche Vorteile erwachsen würden und es auch nicht zu unterschätzen sei, dass vom Projektanten keine staatliche Garantie in Anspruch genommen werde. <pb facs="krp-0135_r-0012"/>Die Frage der Durchführbarkeit des vorliegenden Anbotes könne allerdings erst nach Abschluss der Detailverhandlungen gelöst werden.</p>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> macht von mehreren obschwebenden Verhandlungen amerikanischer bzw. englischer Finanzgruppen in wasserverkehrswirtschaftlichen Belangen vertrauliche Mitteilungen und hält es im Hinblicke darauf für angezeigt, zunächst zu erwägen, ob die vom Staatssekretär Dr. Ellenbogen beantragten – wenn auch vorläufig nur unverbindlichen – Verhandlungen mit Ingenieur Foris nicht etwa präjudizierlich wirken würden.</p>
+                  <p>Nachdem Staatssekretär Dr. <hi rend="#letterspaced">Ellenbogen</hi> hiezu aufklärende Mitteilungen gemacht und die Staatssekretäre Dr. <hi rend="#letterspaced">Reisch</hi> und Ing. <hi rend="#letterspaced">Zerdik</hi> noch auf die Frage der Rentabilität des vorliegenden Projektes von dem Gesichtspunkte aus zurückgekommen waren, dass lediglich größere Teile der gesamten verfügbaren österreichischen Wasserkräfte in Anspruch genommen werden sollen, genehmigt der Kabinettsrat die Anträge des Staatssekretärs Dr. Ellenbogen und ladet ihn ein, das sohin Erforderliche unverzüglich in die Wege zu leiten.</p>
+                  <p><pb facs="krp-0135_r-0013"/></p>
+               </div>
+               <div type="top" xml:id="krp-0135_top03">
+                  <head>
+                     <label>
+                        <num n="3">3.</num>
+                        <seg>Golderzbergbau der Gewerkschaft Rathausberg bei Böckstein; Beteiligung des Staates.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Ing. Zerdik bringt dem Kabinettsrate zur Kenntnis, dass die Gewerkschaft Rathausberg in Böckstein beim Staatsamt für Handel und Gewerbe, Industrie und Bauten den Antrag gestellt habe, der Staat möge sich an einer zur Ausbeutung der Goldvorkommen in den Hohen Tauern zu gründenden Aktiengesellschaft mit einem Drittel beteiligen. Der sprechende Staatssekretär verbreitet sich in ausführlicher Weise über die einschlägigen Grubenverhältnisse, über die Ergebnisse der vom Staatsamt für Handel und Gewerbe, Industrie und Bauten gepflogenen Erhebungen bzw. Berechnungen über die Möglichkeiten der Steigerung der Erzeugung sowie der Ausgestaltung der Betriebseinrichtungen und gelangt zum Schlusse, dass eine Beteiligung des Staates an diesem Betriebe angesichts der Entwicklungs- und der Ertragsfähigkeit dieses Bergbaues empfehlenswert erschiene. Bei den mit den Vertretern der Hauptgewerken geführten Verhandlungen seien folgende Bedingungen vorläufig vereinbart worden, die jedoch noch der Genehmigung durch die Gewerkenversammlungen bedürfen.</p>
+                  <p>„</p>
+                  <list>
+                     <item n="1"><label>1.)</label> Die Gewerkschaft Rathausberg wird in eine AG mit einem Grundkapital von 7,5 Millionen K umgewandelt. Zwei Drittel der Aktien ver<pb facs="krp-0135_r-0014"/>bleiben den gegenwärtigen Gewerken, ein Drittel der Aktien wird vom Staate gegen die Verpflichtung übernommen, sieben Achtel der Kosten für die zur Einleitung der Massenerzeugung erforderlichen, genau bezeichneten Betriebseinrichtungen insoweit zu tragen, als diese Kosten 30 Millionen K nicht übersteigen.</item>
+                     <item n="2"><label>2.)</label> Die vom Staate übernommenen Aktien haben während der ersten drei Jahre, d. i. während der zur Ausgestaltung der Betriebseinlagen notwendigen Zeit, keinen Anspruch auf Dividenden, nach drei Jahren haben alle Aktien denselben Dividendenanspruch, solange die Dividenden 10 % des Aktienkapitals nicht überschreiten. Der 10 % übersteigende Gewinn wird derart verteilt, dass auf die Aktien des Staates eine doppelt so große Superdividende entfällt als auf die übrigen Aktien.</item>
+                     <item n="3"><label>3.)</label> Der Staat sichert der Aktiengesellschaft durch 20 Jahre Freiheit von der staatlichen Erwerbssteuer zu oder verpflichtet sich, während dieses Zeitraumes die Erwerbsteuer rückzuvergüten.[“]</item>
+                  </list>
+                  <p>Auf mehrere vom <hi rend="#letterspaced">Vorsitzenden</hi> sowie vom Staatssekretär <hi rend="#letterspaced">Eldersch</hi> gestellte Anfragen rücksichtlich des offenbaren Missverhältnisses, das zwischen der Übernahme eines Drittels der Aktien durch den Staat und dessen Beteiligung an den Kosten der Betriebseinrichtungen mit <pb facs="krp-0135_r-0015"/>sieben Achtel liege, gibt der Ministerialrat Ing. <hi rend="#letterspaced">Rotky</hi> eingehende Aufklärungen.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Reisch</hi> erklärt, den beiden ersten Vertragspunkten im Hinblick darauf zustimmen zu können, dass die Staatsregierung in der letzten Zeit wiederholt für eine möglichst starke Beteiligung des Staates an den heimischen Bergwerksunternehmungen eingetreten sei. Keinesfalls vermöge er aber dem Pkt. 3 der Bedingungen rücksichtlich der Befreiung der Aktiengesellschaft von der staatliches Erwerbsteuer beizupflichten, da eine derartige privilegial-steuerrechtliche Behandlung zu den ernstesten Beispielsfolgerungen Anlass geben würde.</p>
+                  <p>Der Kabinettsrat beschließt den Staatssekretär Ing. Zerdik zu ermächtigen, mit den Vertretern der Hauptgewerken die Verhandlungen auf der Grundlage der Pkt. 1 und 2 und unter Ablehnung des Pkt. 3 wieder aufzunehmen und gegebenenfalls zum Abschluss zu bringen.</p>
+               </div>
+               <div type="top" xml:id="krp-0135_top04">
+                  <head>
+                     <label>
+                        <num n="4">4.</num>
+                        <seg>Anerkennung für Funktionäre der Landesbekleidungsstelle in Graz anlässlich deren Auflösung.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Ing. <hi rend="#letterspaced">Zerdik</hi> teilt mit, dass die Landesbekleidungsstelle für Steiermark sich während ihres zweijährigen Bestandes um die Versorgung der mindestbemittelten Bevölkerung von Steiermark mit Be<pb facs="krp-0135_r-0016"/>kleidungsartikeln sowie auch um jene des Mittelstandes große Verdienste erworben und bei ihrer Auflösung im September des Jahres 1919 dank ihrer überaus wirtschaftlichen Geschäftsführung mit einem Überschuss von rund 500.000 K abgeschlossen habe. Dieses erfolgreiche Wirken sei vor allem dem Obmanne August Einspinner, geschäftsführenden Kurator des steiermärkischen Gewerbeförderungsinstitutes und dem Obmannstellvertreter Dr. Bernhard Jentl, Sekretär der Handels- und Gewerbekammer Graz, zu danken. Um staatlicherseits diese Verdienste in entsprechend solenner Form zu würdigen, stelle der sprechende Staatssekretär den Antrag, der Kabinettsrat wolle den beiden genannten Funktionären für ihre Tätigkeit als Obmann bzw. Obmannstellvertreter der Landesbekleidungsstelle für Steiermark den besonderen Dank und die Anerkennung der Staatsregierung aussprechen und den Staatssekretär für Handel und Gewerbe, Industrie und Bauten ermächtigen, ihnen diesen Dank bekanntzugeben.</p>
+                  <p>Der Kabinettsrat beschließt in diesem Sinne.</p>
+                  <p><pb facs="krp-0135_r-0017"/> </p>
+               </div>
+               <div type="top" xml:id="krp-0135_top05">
+                  <head>
+                     <label>
+                        <num n="5">5.</num>
+                        <seg>Bekanntgabe des Dankes der Staatsregierung an den Sektionschef im liquidierenden Kriegsministerium Wilhelm Hanausek.</seg>
+                     </label>
+                  </head>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> verweist auf die durch das jüngst beschlossene Gesetz über die Austrifizierung der Liquidierung sich ergebende Notwendigkeit der Auflösung der bisher zwischenstaatlich verwalteten liquidierenden Stellen und stellt einvernehmlich mit dem Staatssekretär für Heer[es]wesen den Antrag, der Kabinettsrat wolle beschließen, dass dem Sektionschef im Staatsamt für Heer[es]wesen Wilhelm Hanausek für seine unter den schwierigstes Verhältnissen geleisteten Dienste als österreichischer Vertreter im Bevollmächtigtenkollegium des liquidierenden Kriegsministeriums der Dank der Staatsregierung ausgesprochen werde.</p>
+                  <p>Der Kabinettsrat pflichtet diesem Antrage bei und ladet den Staatssekretär für Heer[es]wesen ein, das in diesem Sinne Erforderliche in die Wege zu leiten.</p>
+               </div>
+               <div type="top" xml:id="krp-0135_top06">
+                  <head>
+                     <label>
+                        <num n="6">6.</num>
+                        <seg>Beitritt der Staatsregierung zum Gesetz über die Errichtung von Einigungsämtern und über die kollektiven Arbeitsverträge.</seg>
+                     </label>
+                  </head>
+                  <p>Über Vorschlag des Vorsitzenden erhebt der Kabinettsrat gegen das von der Nationalversammlung beschlossene Gesetz über die Errichtung von Einigungsämtern und über kol<pb facs="krp-0135_r-0018"/>lektive Arbeitsverträge keine Vorstellung.</p>
+                  <p>Dieses Gesetz ist demgemäß nach Gegenzeichnung durch den Staatskanzler und den Staatssekretär für soziale Verwaltung dem Präsidenten der Nationalversammlung zur Fertigung vorzulegen.</p>
+               </div>
+               <div type="top" xml:id="krp-0135_top07">
+                  <head>
+                     <label>
+                        <num n="7">7.</num>
+                        <seg>Ermächtigung des Staatssekretärs für Finanzen zur Bewilligung einer Auszahlung von Geldtreffern bei Veranstaltung privater Geldlotterien (Anlass: Ansuchen der Wiener Freiwilligen Rettungsgesellschaft).</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Reisch</hi> erinnert daran, dass – wie bereits anlässlich der Bewilligung der Wiener Armenlotterie für das Jahr 1920 im Kabinettsrate ausgeführt worden sei – die Veranstaltung privater Geldlotterien und überhaupt jedes Ausspielen von Geld durch § 28 des Lottopatentes vom 13. März 1813 und durch die Kaiserliche Entschließung vom 28. April 1853 verboten sei. Eine Ausnahme hätte zu Gunsten der Wiener Armenlotterie bestanden, bei der zufolge alljährlich eingeholter Kaiserlicher Entschließungen die Auszahlung eines – und in letzter Zeit mehrerer – Geldtreffer gestattet worden sei. Dagegen habe den Veranstaltern größerer Effektenlotterien durch das Finanzministerium aufgrund der generellen Ermächtigung durch die Kaiserliche Entschließung vom 21.  November 1910 ausnahmsweise die Reluierung der Haupttreffer, und zwar höchstens  <pb facs="krp-0135_r-0019"/>der ersten drei Gewinnste in barem Gelde bewilligt werden können. Nunmehr bringe der sprechende Staatssekretär dem Kabinettsrate zur Kenntnis, dass er die Bargeldreluierung der ersten drei Haupttreffer der Effektenlotterien, wie bisher im eigenen Wirkungskreise, die Auszahlung von Geldtreffern aber mit Rücksicht auf die notwendige Sicherung des Erfolges der Staatswohltätigkeitslotterien nur ausnahmsweise und nur nach Einholung der Entschließung des Kabinettsrates zu bewilligen gedenke. Nur hinsichtlich der – alljährlich einmal stattfindenden – Wiener Armenlotterie erbitte er sich die generelle Ermächtigung, die Auszahlung von Geldtreffern im bisherigen Umfange gestatten zu dürfen. Bei diesem Anlasse ersuche er auch um die Ermächtigung, der Wiener Freiwilligen Rettungsgesellschaft mit Rücksicht auf deren bekannte Notlage im Jahre 1920 die Veranstaltung einer Effektenlotterie größeren Umfanges mit mehreren – höchstens zehn – Geldtreffern bewilligen zu dürfen.</p>
+               </div>
+               <div type="top" xml:id="krp-0135_top08">
+                  <head>
+                     <label>
+                        <num n="8">8.</num>
+                        <seg>Bericht der Kommission zur Erhebung militärischer Pflichtverletzungen über die Vorgänge bei Abschluss des Waffenstillstandes.</seg>
+                     </label>
+                  </head>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> verweist auf das sämtlichen Kabinettsmitgliedern zugekommene Referat der Staatskanzlei, betreffend den dieser übermittelten Be<pb facs="krp-0135_r-0020"/>richt der Kommission zur Erhebung militärischer Pflichtverletzungen über die Vorgänge bei Abschluss des Waffenstillstandes bzw. über die Unstimmigkeiten, welche sich zwischen dem bestandenen Armeeoberkommando und der italienischen Obersten Heeresleitung rücksichtlich des Zeitpunktes des Eintrittes der Waffenruhe nach Inhalt des abgeschlossenen Waffenstillstandsvertrages vom 3. November 1919 ergaben. Er stelle den Antrag der Staatskanzlei, diesen Bericht der Kommission an das Präsidium der Nationalversammlung zu leiten, zur Diskussion.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Deutsch</hi> hält dafür, dass die breite Öffentlichkeit in den juristischen Argumentationen dieses Berichtes eine volle Rechtfertigung des Vorganges des früheren Armeeoberkommandos erblicken werde. Er jedoch sei der Meinung, dass diese oberste militärische Stelle nicht nur in auffallend ungeschickter Weise die Waffenruhe ins Werk gesetzt habe, sondern dass sie sich hiebei auch eine grobe Fahrlässigkeit habe zu Schulden kommen lassen. Redner könne sich demgemäß mit der in dem Bericht enthaltenen auffallend warmen Verteidigung der Vorgangsweise des Armeeoberkommandos nicht einverstanden erklären.</p>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> glaubt bei Beurteilung des Gegenstandes von der <pb facs="krp-0135_r-0021"/>Voraussetzung ausgehen zu sollen, dass die Verantwortlichkeit der obersten entscheidenden militärischen Funktionäre, die nicht allein über Milliardenwerte des Staates, sondern auch, wie der traurige Fall bewiesen hätte, über hunderttausende von Menschenleben zu entscheiden hatten, nach einem bedeutend strengeren Maßstabe beurteilt werden sollte, als dies gemeiniglich im Zuge eines strafgerichtlichen Verfahrens erfolge. Von diesem Gesichtspunkte aus glaube er, den Bedenken des Vorredners beipflichten zu sollen; er stelle es demgemäß dem Kabinettsrat zur Erwägung, ob nicht etwa an Stelle dieses, die getroffenen Verfügungen des Armeeoberkommandos nicht allein aufzuzählenden, sondern diese auch kritisch beleuchtenden Kommissionsberichtes das gesamte Aktenmaterial, und zwar sowohl die Amtsakten wie auch die stenografisch aufgenommenen Zeugenaussagen der Nationalversammlung und damit der Öffentlichkeit zugänglich zu machen wären.</p>
+                  <p>Nachdem Vizekanzler <hi rend="#letterspaced">Fink</hi> erklärt hatte, dass auch er sich grundsätzlich zur Auffassung des Staatssekretärs Dr. Deutsch bekennen müsse und Unterstaatssekretär Dr. <hi rend="#letterspaced">Tandler</hi>, der Mitglied der Kommission ist, eingehend dargelegt hatte, in welcher Weise die Kommission in ihren langwierigen Bera<pb facs="krp-0135_r-0022"/>tungen zu diesem Ergebnisse gelangt sei, beschließt der Kabinettsrat seine Entscheidung über den vorliegenden Kommissionsbericht zurückzustellen und</p>
+                  <list>
+                     <item n="1"><label>1.)</label> den Vorsitzenden der Kommission einzuladen, die stenografische Aufnahme seiner Erhebungen (Zeugeneinvernahmen, etc.) dem Kabinettsrate vorzulegen und </item>
+                     <item n="2"><label>2.)</label> das Staatsamt für Heereswesen anzuweisen, das gesamte Aktenmaterial dem Kabinettsrate behufs Weiterleitung an die Nationalversammlung zu unterbreiten.</item>
+                  </list>
+               </div>
+               <div type="top" xml:id="krp-0135_top09">
+                  <head>
+                     <label>
+                        <num n="9">9.</num>
+                        <seg>Antrag auf Anwendung der Bestimmungen des Gesetzes vom 18. Dezember 1919, StGBl. Nr. 570 (Besoldungsübergangsgesetz), für die Feststellung der Ruhegenussbemessungsgrundlage auf alle von der österreichischen Republik bisher in den Ruhestand versetzten österreichischen Staats- und Staatsbahnbediensteten.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Paul</hi> stellt nach eingehender Begründung der Sachlage den Antrag, der Kabinettsrat wolle beschließen, dass das Staatsamt für Finanzen ungesäumt eine Verfügung zu treffen habe, wonach sämtliche in den österreichischen Staats- oder Staatseisenbahndienst übernommenen Bediensteten, die seit der Errichtung der neuen Staatsform in den Ruhestand versetzt worden sind, ihre Ruhegenüsse nach den Ansätzen des Gesetzes vom 18. Dezember 1919, StGBl. Nr. 570 bemessen werden, soferne nicht die Normen, nach denen diese Ruhegenüsse zur Anweisung gelangen, für sie günstiger sind. In die hienach sich ergebenden Mehrbeträge wären <pb facs="krp-0135_r-0023"/>auch allfällige über den Rahmen des Pensionsbegünstigungsgesetzes hinausgehende Begünstigungen, die diesen Bediensteten lediglich zur weiteren Erleichterung des Übertrittes in den Ruhestand zugestanden wurden, einzurechnen. Schließlich hätte der Kabinettsrat die Ressortleiter zu ermächtigen, den hiebei in Betracht kommenden Bediensteten sogleich entsprechende Erklärungen abzugeben und dadurch deren bereits sehr starke Erregung zu mildern.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Reisch</hi> erklärt sich außer Stande, diesem Antrage beizutreten. Die Erfahrung lehre, dass stets alle jene Staatsbediensteten materiellen Schädigungen ausgesetzt gewesen seien, die vor Erlassung neuer, die Gehalts-, bzw. Pensionsbezüge regelnder Gesetze in den Ruhestand getreten sind. Im Übrigen enthalte das Pensionsbegünstigungsgesetz Vorteile, die auch heute noch – im Zeitpunkte der Geltung des Besoldungsübergangsgesetzes – von Werte seien. Auch wäre eine nicht zu unterschätzende Anzahl von Bediensteten unter Ausnützung der ihnen durch das Pensionsbegünstigungsgesetz gebotenen Vorteile in den Ruhestand getreten, um eine private Tätigkeit aufzunehmen und sich damit eine materielle Besserstellung zu sichern. Es ginge schwer an, diese Fälle in die vom Staatssekretär <pb facs="krp-0135_r-0024"/>für Verkehrswesen beantragte Neuregelung miteinzubeziehen. Wie Redner bereits in der Nationalversammlung mitgeteilt habe, werde im Finanzamte bereits eifrig an einem neuen Pensionsgesetze zu Gunsten aller Pensionisten ohne Rücksicht auf den Zeitpunkt ihrer Versetzung in den Ruhestand gearbeitet und dürfte diese Vorlage, die alle Ruhestandsbezüge auf ein der Gegenwart entsprechendes Niveau bringen soll, binnen drei bis vier Wochen im Parlamente vorgelegt werden. In besonders krassen Fällen könne seitens der Ressortleiter auch dermalen noch Abhilfe im Wege einer beim Präsidenten nach Zustimmung des Kabinettes beantragten Personalzulage geschaffen werden. Der sprechende Staatssekretär stelle daher den Antrag, der Kabinettsrat möge von der weiteren Verfolgung der Anregung des Staatssekretärs für Verkehrswesen vorläufig Abstand nehmen und sich mit der Zusicherung des Staatsamtes für Finanzen begnügen, dass die Vorlage eines modernen allgemeinen Pensionsgesetzes in nächster Zeit zu gewärtigen sei; außerdem mache Redner die Zusage, dass seinerseits in Fällen besonderer Rücksichtswürdigkeit Anträge der Staatsämter auf individuelle Gewährung von Personalzulagen möglichst wohlwollend gegenübergetreten werden wird.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Deutsch</hi> sowie Unterstaatssekretär <hi rend="#letterspaced">Glöckel</hi> <pb facs="krp-0135_r-0025"/>verweisen auf die unausbleibliche Rückwirkung der vom Staatssekretär für Verkehrswesen vorgeschlagenen Maßnahmen auf die Militär- bzw. Lehrpersonen.</p>
+                  <p>Staatssekretär <hi rend="#letterspaced">Eldersch</hi> hält eine bevorzugte Behandlung der seit dem Umsturze in den Ruhestand getretenen Staatsbediensteten gegenüber den Altpensionisten gleichfalls nicht für möglich.</p>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> stellt fest, es sei in der abgeführten Debatte eine einhellige Auffassung über die Notwendigkeit einer ehesten Angleichung der Pensionsbezüge an die gegenwärtigen erschwerten Lebensverhältnisse zutage getreten und bestehe weiters ein Einverständnis des Kabinettes darüber, dass die in besonders günstigen Erwerbsmöglichkeiten stehenden Staatspensionisten bei der künftigen Regelung der Pensionsvorschriften von der Erlangung erhöhter Vorteile auszunehmen wären.</p>
+                  <p>Der Kabinettsrat erbebt sohin den Antrag des Staatssekretärs Dr. Reisch zum Beschlusse.</p>
+               </div>
+               <div type="top" xml:id="krp-0135_top10">
+                  <head>
+                     <label>
+                        <num n="10">10.</num>
+                        <seg>Gesetzentwurf über die große Vermögensabgabe; Gesetzentwurf über die Umsatzsteuer.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Reisch</hi> erbittet vom Kabinettsrate die Ermächtigung, in der Nationalversammlung einen Gesetz<pb facs="krp-0135_r-0026"/>entwurf über die große Vermögensabgabe sowie einen solchen über die Umsatzsteuer unter Zugrundelegung der den Kabinettsmitgliedern bereits zugekommenen Entwurfe einbringen zu dürfen.</p>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> verweist auf die großen Schwierigkeiten, die der paragraphenweisen Lesung der beiden überaus umfangsreichen Gesetzesvorlagen im Kabinettsrate entgegenstehen. Es sei zweifellos, dass diese Beratungen längere Zeit in Anspruch nehmen würden und deren Ergebnis gleichwohl die beiden koalierten Parteien, bzw. den zuständigen parlamentarischen Ausschuss – ohne Bedachtnahme auf die Beschlüsse des Kabinettsrates – beschäftigen würde. Dem stehe nun die Tatsache gegenüber, dass die breiteste Öffentlichkeit die Einbringung dieser beiden Vorlagen bereits mit einer stets wachsenden Ungeduld verlange. Die Regierung müsse daher das der Wählerschaft gegebene Versprechen möglichst bald erfüllen. Die Geschichte erweise übrigens zur Genüge, dass sich die parlamentarische Behandlung wichtiger Steuervorlagen in zahllosen Kompromissen zwischen den einzelnen Parteien erschöpfe und dass auch die beiden, dem Kabinette gegenwärtig vorliegenden Entwürfe aller Voraussicht nach einer mehrmonatigen paragraphenweisen Behandlung im Finanzausschusse werden unterzogen werden. Er halte demgemäß dafür, <pb facs="krp-0135_r-0027"/>der Kabinettsrat sollte heute lediglich zum Ausdruck bringen, dass diese Vorlagen im Großen und Ganzen auf den von den koalierten Parteien seinerzeit genehmigten allgemeinen Grundlagen erstellt sind, dass die Beratungen über die Details aber dem Finanzausschusse vorbehalten werden und dass sich die parlamentarischen Parteien gleich wie auch deren in das Kabinett entsendete Vertreter ihre Stellungnahme im Einzelnen ausdrücklich vorbehalten. Auf diese Weise würde eine Entlastung der politischen Staatssekretäre beider Parteien geschaffen und dem Staatssekretär für Finanzen die Möglichkeit gegeben, seinen Standpunkt zu den beiden Fragen im Parlamente zu vertreten. Nach Auffassung des Vorsitzenden dürfe eben der Kabinettsrat nicht übersehen, dass sich die beiden koalierten Parteien durch eine noch so eingehende Beratung der Vorlage im Kabinettsrate nicht für gebunden erachten würden. Redner stelle demgemäß den Antrag, der Kabinettsrat wolle den Staatssekretär für Finanzen zur Einbringung der beiden Gesetzesvorlagen ermächtigen.</p>
+                  <p>Staatssekretär <hi rend="#letterspaced">Stöckler</hi> erklärt, nicht verhehlen zu dürfen, dass die vom Vorredner beantragte Vorgangsweise für die politischen Staatssekretäre seiner Parteirichtung eine überaus schwere Belastung bedeute. Dazu komme, dass dem Staatsamte für Land- und Forstwirtschaft vom Finanzamte gar nicht die Möglichkeit geboten worden wäre, zur Regierungsvorlage über die <pb facs="krp-0135_r-0028"/>Vermögensabgabe Stellung zu nehmen. Er für seine Person halte einige grundlegende Bestimmungen dieser Vorlage, vor allem die §§ 25–27 für nicht vertretbar.</p>
+                  <p>In der sich hierüber entwickelnden Debatte, an der sich nahezu sämtliche Kabinettsmitglieder beteiligen, vertritt zunächst Vizekanzler <hi rend="#letterspaced">Fink</hi> den Standpunkt, dass es opportun erschiene, vorerst mit den Parteien zu verhandeln und auch allen beteiligten Staatsämtern Gelegenheit zur Stellungnahme zum Gesetzentwurfe über die große Vermögensabgabe zu geben, während die Staatssekretäre Dr. <hi rend="#letterspaced">Deutsch</hi> und <hi rend="#letterspaced">Eldersch</hi> auf die Notwendigkeit verweisen, diese Vorlagen ehestens im Wege der Einbringung in der Nationalversammlung der Öffentlichkeit bekanntzugeben; dies müsse aber keineswegs in der Weise geschehen, dass sich sämtliche Kabinettsmitglieder bereits gegenwärtig mit allen Bestimmungen des Entwurfes identifizieren.</p>
+                  <p>Nachdem weiters Staatssekretär Dr. <hi rend="#letterspaced">Ramek</hi> eine Reihe von §§ aufgezählt hatte, deren Inhalt er für seine Person nicht ohne weiters zustimmen könnte, weshalb er deren Durchberatung im heutigen Kabinettsrate besonders empfehlen zu sollen glaube und der <hi rend="#letterspaced">Vorsitzende</hi> demgegenüber bemerkt hatte, dass die Abänderung auch nur einzelner Bestimmungen schon das ganze System, auf das die Vorlage aufgebaut sei, <pb facs="krp-0135_r-0029"/>gefährden könnte, beschließt der Kabinettsrat schließlich, den Staatskanzler einzuladen, die Frage über den modus procedendi im Koalitionskomitee zur Sprache zu bringen.</p>
+               </div>
+               <div type="top" xml:id="krp-0135_top11">
+                  <head>
+                     <label>
+                        <num n="11">11.</num>
+                        <seg>Beamtenstreik auf dem flachen Lande in Niederösterreich.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Reisch</hi> teilt mit, dass die Staatsangestellten des flachen Landes in Niederösterreich schon vor Annahme des Besoldungsübergangsgesetzes in der Nationalversammlung im Wege eines freigewählten Aktionskomitees an das Staatsamt für Finanzen mehrere kurz befristete Eingaben gerichtet haben, in welchen sie eine Reihe von Forderungen stellten, bei deren Ablehnung durch die Regierung ein Proteststreik angekündigt worden sei.</p>
+                  <p>Nach einer hierüber abgeführten Debatte, an welcher sich die Staatssekretäre <hi rend="#letterspaced">Eldersch</hi>, Dr. <hi rend="#letterspaced">Deutsch</hi>, <hi rend="#letterspaced">Glöcke1</hi> und <hi rend="#letterspaced">Pau1</hi> sowie Unterstaatssekretär <hi rend="#letterspaced">Miklas</hi> beteiligten, beschließt der Kabinettsrat den Staatssekretär für Inneres und Unterricht einzuladen, nach Rücksprache mit den beteiligten Ressorts, insbesondere aber mit dem Staatssekretär für Finanzen dem vorerwähnten Aktionskomitee gegenüber nachstehende Erklärung abzugeben:</p>
+                  <p>„Die durch das Besoldungsübergangsgesetz den Staatsangestellten gemachten Zuge<pb facs="krp-0135_r-0030"/>ständnisse belasten den Staatsschatz in einem derartigen Ausmaße, dass wesentliche weitere Zugeständnisse gegenwärtig ausgeschlossen bleiben müssen. Der von einem Teile der Beamtenschaft des flachen Landes Niederösterreichs zur Durchsetzung ihrer Forderungen eingeschlagene Weg muss, als den staatlichen Interessen in jeder Beziehung zuwiderlaufend, auf das entschiedenste verurteilt werden. Die Staatsangestellten des flachen Landes Niederösterreichs werden demnach aufgefordert, ihrem Eide gemäß die gesetzlichen Bestimmungen und Vorschriften unverbrüchlich zu beobachten und sich insbesondere von Schritten ferne zu halten, die ein Einschreiten der Staatsregierung nach sich ziehen müssten.“</p>
+               </div>
+               <div type="top" xml:id="krp-0135_top12">
+                  <head>
+                     <label>
+                        <num n="12">12.</num>
+                        <seg>Gesetzentwurf über die Gewährung von Übergangsbeiträgen an die aktiven Lehrpersonen der öffentlichen Volks- und Bürgerschulen für das Jahr 1919.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Reisch</hi> erbittet vom Kabinettsrate die Ermächtigung, in der Nationalversammlung die Vorlage eines Gesetzes über die Gewährung von Übergangsbeiträgen an die aktiven Lehrpersonen der öffentlichen Volks- und Bürgerschulen für das Jahr 1919 einbringen zu dürfen. Aufgrund dieses dem Kabinettsrat vorliegenden Gesetzentwurfes sollen, in Erfüllung einer den Vertretern der Lehrerschaft durch die Regierung gemachten Zusage, Übergangsbeiträge aus Staatsmitteln in der halben Höhe der den Staatsange<pb facs="krp-0135_r-0031"/>stellten für das Jahr 1919 unter verschiedenen Bezeichnungen ausbezahlten 15 Übergangsbeiträge, nachträglich flüssig gemacht werden. Um Weitwendigkeiten zu vermeiden, soll diese Flüssigmachung nicht, wie dies seinerzeit bei den Teuerungszulagen geschehen sei, an die Voraussetzung geknüpft werden, dass die autonomen Körperschaften Beschlüsse zur Genehmigung vorlegen, wonach sie die zweite Hälfte dieser Übergangsbeiträge aus eigenen Mitteln leisten. Tatsächlich bestehe gar kein Zweifel darüber, dass alle diese Körperschaften den Lehrern diese zweite Hälfte flüssig machen werden, wie dies in der Mehrzahl der Länder in Erwartung der im Gesetzentwurfe vorgesehenen Verfügung bereits geschehen sei. Die Lehrerschaft werde somit auch bezüglich des Empfanges von Übergangsbeiträgen den zum Vergleiche herangezogenen Kategorien der Staatsangestellten vollkommen gleichgestellt sein. Der Gesetzentwurf treffe weiters Vorkehrungen für den Fall, dass der Lehrerschaft aus Mitteln der autonomen Körperschaften schon bisher Übergangsbeiträge in einem die flüssig zu machenden Staatszuschüsse übersteigenden Ausmaße gewährt worden seien oder dass die Gesamtbezüge von Lehrpersonen jene der ihnen gleichgestellten Staatsangestellten übersteigen. In diesen Fällen sollen die Übergangsbeiträge aus Staatsmitteln den Lehrpersonen nur <pb facs="krp-0135_r-0032"/>so weit ausbezahlt werden, als dies zur vollständigen Gleichstellung mit den Staatsangestellten erforderlich sei, die nicht ausbezahlten Beträge aber jenen Körperschaften überwiesen werden, welche die Dienstbezüge dieser Lehrpersonen bestritten haben. Der Aufwand sei mit rund 21 ½ Millionen K zu veranschlagen.</p>
+                  <p>Der Kabinettsrat erteilt dem sprechenden Staatssekretär die erbetene Ermächtigung.</p>
+               </div>
+               <div type="top" xml:id="krp-0135_top13">
+                  <head>
+                     <label>
+                        <num n="13">13.</num>
+                        <seg>Gesetzesbeschluss des Niederösterreichischen Landtages, betreffend die Durchführung der Neuwahl von fünf Mitgliedern der niederösterreichischen Landeslehrerernennungskommission durch die Vertreter der Gemeinden in den Bezirksschulräten.</seg>
+                     </label>
+                  </head>
+                  <p>Unterstaatssekretär <hi rend="#letterspaced">Glöckel</hi> teilt mit, dass der Niederösterreichische Landtag am 18. Dezember 1919 ein Gesetz beschlossen habe, mit welchem die Durchführung der nach dem Gesetze vom 17. Juni 1919, LGBl. Nr. 208, von den Gemeindevertreten in den Bezirksschulräten vorzunehmenden Neuwahl von fünf Mitgliedern und fünf Ersatzmännern in die niederösterreichische Landeslehrerernennungskommission für deren nächste Funktionsperiode geregelt wird. Nach den Bestimmungen der §§ 1–3 des neubeschlossenen Gesetzes sei von der in § 7 des Gesetzes vom 31. Juli 1917, LGBl. Nr. 158 vorgesehenen Einberufung der Versammlung der Gemeindevertreter in den <pb facs="krp-0135_r-0033"/>Bezirksschulräten, behufs Vornahme der in Rede stehenden Wahl abzusehen und diese Wahl in der Weise durchzuführen, dass jedem der Wahlberechtigten durch den Landesrat ein Stimmzettel und ein Verzeichnis sämtlicher Wählbaren mit der Einladung übermittelt wird, die ausgefüllten Stimmzettel binnen acht Tagen nach Erhalt an den Niederösterreichischen Landesrat mittels eingeschriebenen Briefes zu übersenden. Die Eröffnung des Kuverts und das Skrutinium habe sodann im Beisein von Vertretern der politischen Parteien, die sich bei der Bestellung der Gemeindevertreter in den Bezirksschulräten nach dem Gesetze vom 23. Juli 1919, LGBl. Nr. 296 beteiligt haben, durch einen Bevollmächtigten des Niederösterreichischen Landesrates zu erfolgen. Die §§ 4 und 5 des neubeschlossenen Gesetzes enthalten Bestimmungen über den Beginn der Wirksamkeit und die Durchführung dieses Gesetzes. Gegen das neubeschlossene Gesetz, welches dem Staatsamte für Inneres und Unterricht mit dem am 29. Dezember 1919 eingelangten Berichte des Niederösterreichischen Landesschulrates vom 22. Dezember 1919, Zl. 5726/II, mitgeteilt wurde, obwalten keine Bedenken. Redner stelle sohin den Antrag, der Kabinettsrat wolle ihn ermächtigen, von der Erhebung einer Vorstellung gegen dieses Gesetz abzusehen und die Niederösterreichische <pb facs="krp-0135_r-0034"/>Landesregierung zu verständigen, dass gegen die sofortige Kundmachung dieses Gesetzes kein Anstand obwalte.</p>
+                  <p>Der Kabinettsrat erhebt diesen Antrag zum Beschluss.</p>
+               </div>
+               <div type="top" xml:id="krp-0135_top14">
+                  <head>
+                     <label>
+                        <num n="14">14.</num>
+                        <seg>Gesetzesbeschluss der Landesversammlung in Salzburg, betreffend die Bezüge der Lehreraltpensionisten und deren Angehörigen sowie der Hinterbliebenen nach jenen Lehrpersonen, die vor dem 1. Jänner 1919 gestorben sind.</seg>
+                     </label>
+                  </head>
+                  <p>Unterstaatssekretär Glöckel macht davon Mitteilung, dass die Salzburger Landesversammlung in ihrer Sitzung am 12. Dezember 1919 einen Gesetzesbeschluss, betreffend die Bezüge der Lehreraltpensionisten und deren Angehörigen sowie der Hinterbliebenen nach jenen Lehrpersonen, die vor dem 1. Jänner 1919 gestorben sind, gefasst und durch den dortigen Landesrat um die eheste Stellungnahme der Staatsregierung zu diesem Beschlusse ersucht habe. Da nach Art. 13 des Gesetzes vom 14. März 1919, StGBl. Nr. 179, über die Volksvertretung die Landesregierungen verpflichtet sind, die Gesetzesbeschlüsse der Landesversammlungen vor ihrer Kundmachung der Staatsregierung mitzuteilen, die gegenständliche Vorlage aber, wie erwähnt, durch den Landesrat und nicht durch die Landesregierung erfolgte, seien nach Auffassung des Unterrichtsamtes die Bindungen des erwähnten Art. 13 nicht erfüllt und hätten damit auch die der Staatsregierung in diesem Gesetze eingeräumten Fristen noch nicht zu laufen begonnen. </p>
+                  <p><pb facs="krp-0135_r-0035"/>Der Landesrat und die Landesregierung seien von dieser Auffassung in Kenntnis gesetzt worden. In einem am 2. Jänner 1920 eingelangten Telegramme hätte nun der Landesrat die Auffassung vertreten, dass die durch ihn bewirkte Vorlage des Gesetzes über die Altpensionisten nach seiner Ansicht der Verfassung entspreche und der Lauf der Frist ab 27. Dezember der Staatsregierung genügend Gelegenheit zur Stellungnahme biete.</p>
+                  <p>Da dem Redner die genaue Einhaltung der Bestimmungen der Verfassungsgesetze aus prinzipiellen Gründen sehr wichtig erscheine, glaube er auf der eingangs dargelegten und in klaren Wortlaute des Gesetzes begründeten Auffassung beharren zu müssen, halte sich jedoch mit Rücksicht darauf, dass nicht das seiner Leitung unterstellte Unterrichtsamt, sondern die Staatsregierung als solche zur verfassungsmäßigen Behandlung der Landesgesetze berufen sei, für verpflichtet, dem Kabinettsrate derart Gelegenheit zur Stellungnahme zu geben, dass die Schlussfassung der Staatsregierung auch unter Einhaltung der ab 27. Dezember 1919 laufenden und somit am 10. Jänner 1920 endigenden Frist an die Landesregierung gelangen könne.</p>
+                  <p>Nach dem Gesetzesbeschlusse werden als Altpensionisten jene Lehrpersonen bezeichnet, die vor dem 1. Jänner 1919 in den Ruhestand getreten sind. Während nun <pb facs="krp-0135_r-0036"/>bisher die Lehreraltpensionisten und deren Angehörige nach verschiedenen Landesgesetzen, die eben zur Zeit der Übernahme der betreffenden Lehrperson in den Ruhestand bzw. zur Zeit ihres Todes in Geltung standen, behandelt worden seien, sollen nunmehr sämtliche Lehreraltpensionisten und deren Angehörige nach den Bestimmungen des Gesetzes vom 17. Jänner 1870, LGBl. Nr. 12, in jener Fassung, welche es durch das Gesetz vom 1. März 1911, LGBl. Nr. 15 erhalten habe, behandelt werden und soll überdies der nach diesem Gesetze ermittelte Pensions- bzw. Erziehungsbeitrag um 50 % erhöht werden. Dieses Gesetz bedeute eine erfreuliche Vereinheitlichung und Verbesserung der Lage der Lehreraltpensionisten und ihrer Angehörigen. Es scheine aber bei dessen Stilisierung ein Redaktionsfehler unterlaufen zu sein.</p>
+                  <p>Das dermalen die Bezüge der Lehrerschaft in Salzburg regelnde Gesetz vom 22. Jänner 1919, LGBl. Nr. 21 finde nämlich auf die zur Zeit des Beginnes der Wirksamkeit dieses Gesetzes im Genusse des Ruhebezuges stehenden Lehrpersonen sowie auf ebensolche Witwen und Waisen keine Anwendung und es sei dieses Gesetz mit dem Tage der Kundmachung, das ist mit dem 9. August 1919, in Kraft getreten. Das neue Gesetz zu Gunsten der Altpensionisten finde aber seinem Wortlaute nach nur auf jene Lehrpersonen, die vor dem 1. Jänner <pb facs="krp-0135_r-0037"/>1919 in den Ruhestand getreten sind, Anwendung. Es fallen sohin die Lehrpersonen, die zwischen dem 1. Jänner 1919 und dem 9. August 1919 in den Ruhestand getreten sind, weder unter das Gesetz vom 22. Jänner 1919 noch unter das nunmehr beschlossene Gesetz. Auch sei in dem neuen Gesetze nicht vollkommen klar zum Ausdrucke gebracht, welcher Anfallstag für die Bezüge der Lehrerswitwen und [-]waisen maßgebend sei.</p>
+                  <p>Aus dem Berichte des Schulausschusses zu diesem Gesetze gehe aber deutlich hervor, dass die Absicht der Antragsteller gewesen sei, die Pensionsbegünstigung des neuen Gesetzes allen jenen zukommen zu lassen, die nicht unter die Bestimmungen des Gesetzes vom 22. Jänner 1919, LGBl. Nr. 21 fallen. Redner habe daher den Landesrat auf diese Unstimmigkeit mit der Einladung aufmerksam gemacht, eine Klarstellung des Gesetzes in dieser Richtung zu veranlassen.</p>
+                  <p>Überdies wäre der Vollständigkeit halber zu bemerken, dass das Gesetz vom Landtage am 12. Dezember 1919 beschlossen wurde, dass es aber in dem vorliegenden Exemplare als Gesetz vom 22. Dezember 1919 bezeichnet werde, an welchem Tage nach einer beigesetzten Klausel vom Landesrate die Verlautbarung verfügt worden sei. Er habe den Landesrat auch darauf aufmerksam <pb facs="krp-0135_r-0038"/>gemacht, dass die Landesgesetze vom Tage der Schlussfassung der Landesversammlung und nicht vom Tage der Verfügung der Kundmachung durch den Landesrat zu datieren seien und habe rücksichtlich der Kundmachung überdies auf die Bestimmung des Art. 14 des Gesetzes vom 14. März 1919, StGBl. Nr. 179, verwiesen.</p>
+                  <p>Es sei wohl zu erhoffen, dass den obgedachten Anregungen Folge geleistet werde, aber die Nichtbefolgung derselben würde kein verfassungsrechtliches Hindernis gegen das Inkrafttreten des Gesetzes bilden, sondern es würde dies lediglich eine Unklarheit im Gesetze bedeuten und die Möglichkeit einer Schädigung der Lehrpersonen, die zwischen 1. Jänner und 9. August 1919 in den Ruhestand getreten seien, oder der Witwen und Waisen nach Lehrpersonen, die in dieser Zeit in den Ruhestand getreten oder gestorben sind, beinhalten.</p>
+                  <p>Auch die Beibehaltung der unrichtigen Datierung des Gesetzes würde einen verfassungsmäßig geltend zu machenden Mangel kaum darstellen. Der sprechende Unterstaatssekretär stelle demgemäß den Antrag, ihn zu ermächtigen:</p>
+                  <list>
+                     <item n="1"><label>1.)</label> in solange seitens der Landesregierung als den hiezu gesetzmäßig berufenen Organe das Gesetz nicht vorgelegt werde, von der Abgabe einer Äußerung der Staatsregierung überhaupt abzusehen;</item>
+                     <item n="2"><label>2.)</label> im Falle der Vorlage des Gesetzesbeschlusses durch die Landesregierung aber, <pb facs="krp-0135_r-0039"/>und zwar sowohl, wenn darin die vom Unterrichtsamte angeregten Änderungen berücksichtigt werden, als auch, wenn das Gesetz in der ursprünglichen Form vorgelegt wird, von der Erhebung einer Vorstellung der Staatsregierung abzusehen und die Landesregierung hievon mit dem Bemerken zu verständigen, dass gegen die sofortige Kundmachung des Gesetzes ein Anstand nicht obwalte.</item>
+                  </list>
+               </div>
+               <div type="top" xml:id="krp-0135_top15">
+                  <head>
+                     <label>
+                        <num n="15">15.</num>
+                        <seg>Erhöhung der Brotmehl- und Verschleißmehlpreise.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Loewenfeld-Russ</hi> verweist darauf, dass er in der Frage der Festsetzung der Lebensmittelpreise, und zwar in Übereinstimmung mit dem Staatssekretär für Finanzen, auf dem Standpunkte stehe, dass die Abgabepreise bei allen importierten Lebensmitteln mit Ausnahme von Brot und Mehl den jeweiligen Gestehungskosten anzupassen seien. Bei den beiden erwähnten, für die Ernährung der Bevölkerung besonders wichtigen Artikeln erscheine allerdings mit Rücksicht auf die hohen Gestehungskosten eine völlige Übereinstimmung der Abgabepreise mit den augenblicklichen Gestehungskosten nicht möglich, weshalb nur eine stufenweise Erhöhung dieser Preise für Brotmehl und Verschleißmehl möglich sei.</p>
+                  <p>Um nun für die Festsetzung der neuen Preise die erforderlichen Grundlagen zu <pb facs="krp-0135_r-0040"/>schaffen, seien bereits anfangs Dezember 1919 mehrere Berechnungen angestellt worden, wobei dem zur Deckung des Bedarfes erforderlichen Kostenaufwand, die für den gleichen Zeitraum eingehenden bisherigen Abgabepreise und höhere Abgabepreise nach drei verschiedenen Stufen gegenübergestellt wurden. Aus diesen Berechnungen hätten sich dann jene Verluste ergeben, die der deutschösterreichischen Kriegsgetreideanstalt und damit dem Staatsschatze im Falle der Belassung der bisherigen Zuweisungspreise sowie je nach deren Erhöhung erwachsen würden.</p>
+                  <p>Der sprechende Staatssekretär beruft sich im Detail auf das den Kabinettsmitgliedern zugekommene diesbezügliche Material und glaubt lediglich beifügen zu sollen, dass die einschlägigen Berechnungen für die Zeit vom 1. Jänner bis 31. März 1920 als dem für die Ablieferung der Getreidekontingente bestimmten Endtermine bzw. 3. April 1920 als Beginn der Zuweisungswoche aufgestellt worden seien, da sich in dieser Zeitperiode noch durch die inländische Getreideanlieferung verhältnismäßig günstigere Gestehungskosten ergeben.</p>
+                  <p>Es sei bei dieser Berechnung angenommen worden, dass in diesem Zeitraume die Versorgung der Bevölkerung mit Brot und <pb facs="krp-0135_r-0041"/>Mehl erfolgen werde:</p>
+                  <list>
+                     <item n="1"><label>1.)</label> aus den nachträglichen Lieferungen auf den Restbetrag des seinerzeit gewährten 48 Millionen Dollar-Kredites,</item>
+                     <item n="2"><label>2.)</label> aus der inländischen Aufbringung aufgrund des Getreideverkehrsgesetzes vom 3. Juli 1919, StGBl. Nr. 345,</item>
+                     <item n="3"><label>3.)</label> aus der deutschen Notaushilfe von insgesamt 8.000 t Mehl,</item>
+                     <item n="4"><label>4.)</label> durch Aufkäufe der zu diesem Behufe ins Leben gerufenen Einfuhrsgesellschaft für Getreide, Futtermittel und Saaten im Auslande.</item>
+                  </list>
+                  <p>Bei den Gestehungskosten für das im Inlande aufgebrachte Getreide wäre der für Brotgetreide (Weizen, Roggen und Gerste) festgesetzte Übernahmspreis von 200 K und für das Auslandsgetreide die Durchschnittspreise der bisherigen Käufe der Einfuhrgesellschaft und die Durchschnittsvaluta von 4.000 K für 100 holländische Gulden oder 1 K–2 ½ Cent angenommen worden.</p>
+                  <p>In diese Berechnungen seien nun drei Stufen für die festzusetzenden Zuweisungspreise für Brot- und Verschleißmehl aufgenommen und diese Preise im Vergleich zu den Preisen, die bis Mitte April 1919 und seit diesem Zeitpunkte bis jetzt in Geltung stehen, gestellt worden. Die Zuweisungspreise seien nach diesen drei Stufen im Vergleich zu den gegenwärtig geltenden Zuweisungspreisen aus nachstehender Auf<pb facs="krp-0135_r-0042"/>stellung zu ersehen:</p>
+                  <list>
+                     <item n="1"><label>I.</label> <hi rend="#u">Variante</hi> Brotmehlpreis 3 K gegenüber dem bisherigen Zuweisungspreise höher um 100 %, Verschleißmehlpreis 10 K gegenüber dem bisherigen Zuweisungspreise höher um 100%.</item>
+                     <item n="2"><label>II.</label> <hi rend="#u">Variante</hi> Brotmehlpreis 3 K 20 [h] gegenüber dem bisherigen Zuweisungspreise höher um 113 %, Verschleißmehlpreis 12 K gegenüber dem bisherigen Zuweisungspreise höher um 140 %,</item>
+                     <item n="3"><label>III.</label> <hi rend="#u">Variante</hi> Brotmehlpreis 3 K 64 [h] gegenüber dem bisherigen Zuweisungspreise höher um 143 %, Verschleißmehlpreis 13 K 60 [h] gegenüber dem bisherigen Zuweisungspreise höher um 172 %.</item>
+                  </list>
+                  <p>Je nachdem eine dieser drei Stufen gewählt und der Termin, von dem an die Preiserhöhung festgesetzt werden soll, bestimmt wird, sei auch der Verlust, der vom Staatsschatze zu tragen ist, naturgemäß verschieden hoch.</p>
+                  <p>Redner bittet abschließend um eine Entscheidung des Kabinettsrates, welche der sohin möglichen Zuweisungspreise für Brot- und Verschleißmehl festzusetzen wären und von welchem Zeitpunkte an diese erhöhten Preise in Geltung zu treten hätten.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Reisch</hi> nimmt von seinem Ressortstandspunkte zum Gegenstande Stellung und spricht sich aus <pb facs="krp-0135_r-0043"/>staatsfinanziellen Gründen für eine möglichst hohe Festsetzung dieser Zuweisungspreise aus.</p>
+                  <p>Nachdem der Vorsitzende sowie Staatssekretär <hi rend="#letterspaced">Eldersch</hi> auf die besonders politische Bedeutung dieser Maßnahme hingewiesen hatten, die eine neuerliche so überaus schwere Belastung der Bevölkerung kaum mehr vertretbar erscheinen lassen würde, beschließt der Kabinettsrat die Zuweisungspreise für Brotmehl mit 3 K (sohin Preis des Normallaibes 5,25 K) und für Verschleißmehl mit 10 K (sohin Detailpreis für 1 kg Verschleißmehl 10,96 K), und zwar beginnend mit 18. Jänner 1920 (Beginn einer neuen Abgabenwoche), festzusetzen.</p>
+               </div>
+               <div type="top" xml:id="krp-0135_top16">
+                  <head>
+                     <label>
+                        <num n="16">16.</num>
+                        <seg>Neuregelung der Fleisch- und Fettpreise.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Reisch</hi> kommt auf die Notwendigkeit einer Neuregelung der Fleisch- und Fettpreise zu sprechen. Als Grundsatz müsse vom Gesichtspunkte eines geregelten Staatshaushaltes gelten, dass diese Artikel vom Staate ohne Verlust abgegeben werden. Die effektiven Einkaufspreise stellen sich nun derart, dass das importierte Gefrierfleisch den Staat per kg 108 K und das Schweinefett per kg 120 K koste. Die Staatsverwaltung könne angesichts dieser Preisverhältnisse die gegenwärtig geltenden <pb facs="krp-0135_r-0044"/>Fleisch- und Fettpreise nicht weiter aufrechterhalten. Entweder müsse der Fleisch- und Fetteinkauf zur Gänze sistiert oder aber der Preis wenigstens dahin neugeregelt werden, dass in den kommenden Wochen das Fleisch um 26 K, das Fett um 22 K im Preise erhöht werde. Der Staat würde damit immer noch im Monat 65 Millionen K zuzahlen.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Loewenfeld-Russ</hi> verweist darauf, dass die ununterbrochene Erhöhung aller Lebensmittel seine Amtsführung stetig erschwere; gleichwohl glaube er für eine Erhöhung der Fleisch- und Fettpreise deshalb eintreten zu sollen, weil die mit diesen beiden Artikeln befassten staatlichen Übernahmsstellen bei der gegenwärtigen Preislage von einer Zahlungseinstellung ernstlich bedroht seien. Diese Stellen beantragen selbst eine Erhöhung der Fleischpreise um 20 K. Nach einer kurzen Debatte, in welcher insbesondere der <hi rend="#letterspaced">Vorsitzende</hi> und Staatssekretär Dr. <hi rend="#letterspaced">Deutsch</hi> auf die besondere Gefährlichkeit eines zeitlichen Zusammenfallens der Erhöhung der Brotmehl- und Verschleißmehlpreise mit den Abgabenpreisen für Fleisch und Mehl hinweisen, beschließt der Kabinettsrate den Staatssekretär für Volksernährung zur Erhöhung der Fleischpreise auf 82 K per kg und des Fettpreises auf 100 K pro kg mit der Maßgabe zu ermächtigen, <pb facs="krp-0135_r-0045"/>dass diese Erhöhung erst in der ersten Woche des Monates Februar platzzugreifen habe.</p>
+                  <p/>
+               </div>
+            </div>
+            <div type="anhaenge">
+               <p><pb facs="krp-0135_a01-0001"/>Streng geheimer Anhang zum Kabinettsprotokoll Nr. 135 vom 6. Jänner 1920.</p>
+               <p>(Ein Durchschlag dieses Anhanges wird dem Herrn Unterstaatssekretär Dr. Tandler zur höchstpersönlichen Gebrauchnahme zur Verfügung gestellt.)</p>
+               <div n="1">
+                  <head>Öffentliche Stellungnahme höherer Staatsfunktionäre zu Maßnahmen fremder Ressorts.</head>
+                  <div type="a01_protokoll">
+                     <p>Staatssekretär Dr. <hi rend="#letterspaced">Loewenfeld-Russ</hi> teilt mit, dass – wie erinnerlich – am 9. Dezember v. J. im Ronachersaale eine große Versammlung des Bürger- und Ständerates mit der Tagesordnung „Staatliche Bewirtschaftung; Aushungerung durch das Ernährungsamt“ abgehalten worden sei. Im Zuge der einschlägigen Verhandlungen hätte auch der Sektionschef im Staatsamt für soziale Verwaltung (Volksgesundheitsamt) Dr. Ignaz Kaup das Wort ergriffen und eine lange Rede gehalten, in welcher er das Staatsamt für Volksernährung in der heftigsten Weise und zwar aufgrund von Daten angegriffen habe, die ihm mit größter Wahrscheinlichkeit nur in seiner amtlichen Stellung zugekommen seien. Einige der von ihm bekanntgegebenen Ziffern seien jedenfalls aus einem Bedarfs<pb facs="krp-0135_a01-0002"/>plane des Ernährungsamtes entnommen.</p>
+                     <p>Der sprechende Staatssekretär gibt in diesen Zusammenhange an der Hand des amtlichen Material den aufgrund der Zeitungsberichte über diese Versammlung des Bürger- und Ständerates von ihm eingeleiteten Schriftenwechsel mit Sektionschef Dr. Kaup und dessen an den Redner gerichtetes Erwiderungsschreiben sowie dessen in der Folge in der Presse veröffentlichte „Richtigstellung“ bekannt, und fügt bei, dass er den Ressortleiter Unterstaatssekretär Dr. Tandler, ersucht habe, Sektionschef Dr. Kaup amtlich zur Rechtfertigung zu verhalten. Letzterer habe daraufhin das Verlangen gestellt, diese Angelegenheit im Kabinettsrate zur Sprache zu bringen und diesen um die Erlassung strikter Weisungen an ihn zu ersuchen.</p>
+                     <p>Der sprechende Staatssekretär bringt demgemäß diesen Vorfall dem Kabinettsrate zur Kenntnis und bittet um eine diesfällige Entscheidung.</p>
+                     <p>Nach einer kurzen hierüber abgeführten Debatte, an welcher sich außer dem <hi rend="#letterspaced">Vorsitzenden</hi>, die Staatssekretäre Dr. <hi rend="#letterspaced">Deutsch</hi> und <hi rend="#letterspaced">Paul</hi> sowie Unterstaatssekretär <pb facs="krp-0135_a01-0003"/><hi rend="#letterspaced">Glöckel</hi> beteiligen, beschließt der Kabinettsrat den Unterstaatssekretär Dr. Tandler aufzufordern, die amtliche Untersuchung über diesen Vorfall einzuleiten und im Falle einer erwiesenen Pflichtverletzung im Sinne des V. Abschnittes der Dienstpragmatik vorzugehen.</p>
+                     <p/>
+                  </div>
+               </div>
+            </div>
+            <div type="stenogramme">
+               <div n="1">
+                  <head>EINZUFÜGEN</head>
+                  <p>Transkription in Arbeit.</p>
+                  <p/>
+               </div>
+               <div n="2">
+                  <head>EINZUFÜGEN</head>
+                  <p>Transkription in Arbeit.</p>
+               </div>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>
