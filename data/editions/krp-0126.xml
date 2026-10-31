@@ -1,0 +1,785 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href='http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:acdh="https://vocabs.acdh.oeaw.ac.at/schema#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xml:lang="de">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="a" type="main" n="0126">Kabinettsprotokoll Nr. 126 vom 2. Dezember 1919</title>
+            <title level="m" type="main" n="01">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <title level="m" type="sub" n="">Renner III (17. Oktober 1919 – 7. Juli 1920)</title>
+            <meeting>
+               <placeName key="https://d-nb.info/gnd/4066009-6">Wien</placeName>
+               <orgName key="https://d-nb.info/gnd/5162749-8">Kabinettsrat</orgName>
+               <date when-iso="1919-12-02"/>
+            </meeting>
+            <editor>
+               <persName key="https://d-nb.info/gnd/122481836"
+                         role="hasCreator"
+                         xml:id="hwohnout">
+                  <forename>Helmut</forename>
+                  <surname>Wohnout</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</affiliation>
+               <idno type="ORCID">0000-0002-3864-9839</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/120789825"
+                         role="hasCreator"
+                         xml:id="tolechowski">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0003-3291-6876</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/131679384"
+                         role="hasCreator"
+                         xml:id="rlein">
+                  <forename>Richard</forename>
+                  <surname>Lein</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0002-7502-0503</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="aholzer">
+                  <forename>Anna</forename>
+                  <surname>Holzer</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0005-3560-3500</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="dsoelkner">
+                  <forename>Dominik</forename>
+                  <surname>Sölkner</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-9895-7212</idno>
+            </editor>
+            <editor>
+               <persName role="hasContributor" xml:id="ischotzko">
+                  <forename>Ina</forename>
+                  <surname>Schotzko</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-5210-3713</idno>
+            </editor>
+            <funder n="1">
+               <orgName key="https://d-nb.info/gnd/2054142-9" role="hasFunder">Österreichischer Wissenschaftsfonds FWF</orgName>
+               <idno type="project">PAT1495024</idno>
+               <title type="project">Die Protokolle des österreichischen Kabinettsrates 1919–1920</title>
+            </funder>
+            <respStmt>
+               <resp>Projektverantwortung</resp>
+               <orgName key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Projektleitung</resp>
+               <persName key="https://d-nb.info/gnd/120789825" role="hasPrincipalInvestigator">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+                  <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+                  <idno type="ORCID">0000-0003-3291-6876</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Nationaler Forschungspartner</resp>
+               <orgName key="https://d-nb.info/gnd/1123037736" role="hasEnabler">Austrian Centre for Digital Humanities</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Digitalisierung der gedruckten Quellen</resp>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>TEI-Datenmodellierung</resp>
+               <persName role="hasContributor" xml:id="tfruehwirth">
+                  <forename>Timo</forename>
+                  <surname>Frühwirth</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-3997-5193</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technische Supervision</resp>
+               <persName key="https://d-nb.info/gnd/1043833846"
+                         role="hasContributor"
+                         xml:id="pandorfer">
+                  <forename>Peter</forename>
+                  <surname>Andorfer</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-9575-9372</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technisches Consulting und Vorbereitung der Druckausgabe</resp>
+               <persName key="https://d-nb.info/gnd/13281899X"
+                         role="hasContributor"
+                         xml:id="skurz">
+                  <forename>Stephan</forename>
+                  <surname>Kurz</surname>
+                  <affiliation key="https://d-nb.info/gnd/1202798799">Institut für die Erforschung der Habsburgermonarchie und des Balkanraumes</affiliation>
+                  <idno type="ORCID">0000-0003-2546-2570</idno>
+               </persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher key="https://d-nb.info/gnd/1001454-8">Österreichische Akademie der Wissenschaften</publisher>
+            <date when="2028"/>
+            <availability status="free">
+               <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">Lizenziert unter CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/deed.de)</licence>
+            </availability>
+            <idno type="ISBN_Print"/>
+            <idno type="ISBN_Part_epub"/>
+            <idno type="ISBN_Digital"/>
+            <idno type="DOI"/>
+            <idno type="DOI_zenodo"/>
+            <idno type="ebook_ID"/>
+         </publicationStmt>
+         <seriesStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="m" type="main">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <respStmt>
+               <resp>Bearbeitung und Herausgeberschaft</resp>
+               <orgName key="https://d-nb.info/gnd/2024703-5">Universität Wien</orgName>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+         </seriesStmt>
+         <notesStmt>
+            <note>Diese TEI-XML-Datei ist Grundlage für eine Druckausgabe der Edition.</note>
+            <relatedItem>
+               <biblStruct>
+                  <monogr>
+                     <imprint>
+                        <pubPlace key="https://d-nb.info/gnd/4066009-6">Wien</pubPlace>
+                        <publisher key="https://d-nb.info/gnd/2068748-5">Verlag der Österreichischen Akademie der Wissenschaften</publisher>
+                        <date when="2029"/>
+                     </imprint>
+                     <extent/>
+                  </monogr>
+                  <note>
+              <idno/>
+              <ptr/>
+            </note>
+                  <citedRange/>
+               </biblStruct>
+            </relatedItem>
+         </notesStmt>
+         <sourceDesc>
+            <bibl>Quellbestand: AT-OeStA/AdR MRang MR 1Rep KRP Kabinettsratsprotokolle, 1918-1920 (Teilbestand)<ref target="https://www.archivinformationssystem.at/detail.aspx?id=5465">https://www.archivinformationssystem.at/detail.aspx?id=5465</ref>
+            </bibl>
+            <msDesc>
+               <msIdentifier>
+                  <institution key="https://d-nb.info/gnd/37748-X" role="hasOwner">AT-OeStA Österreichisches Staatsarchiv (Archiv (ÖStA))</institution>
+                  <repository key="https://d-nb.info/gnd/1601181-8">AT-OeStA/AdR Archiv der Republik, 1918- (Abteilung)</repository>
+                  <collection>AT-OeStA/AdR MRang MR 1Rep Ministerrat 1. Republik, 1918 - 1938 (Bestand)</collection>
+                  <idno>AT-OeStA_AdR-MRang-MR-1.-Rep.-KRP-126</idno>
+               </msIdentifier>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <abstract>
+            <p>
+          <!--to be generated-->
+        </p>
+         </abstract>
+      </profileDesc>
+      <encodingDesc>
+         <styleDefDecl scheme="css"/>
+         <tagsDecl>
+            <rendition xml:id="b" scheme="css">font-weight:bold;</rendition>
+            <rendition xml:id="su" scheme="css">vertical-align:super;font-size:.7em;</rendition>
+            <rendition xml:id="s" scheme="css">text-decoration:line-through;</rendition>
+            <rendition xml:id="u" scheme="css">text-decoration:underline;</rendition>
+            <rendition xml:id="ow" scheme="css">text-decoration:line-through;text-decoration-style:double;</rendition>
+            <rendition xml:id="r" scheme="css">display:block;text-align:right;</rendition>
+            <rendition xml:id="letterspaced" scheme="css">letter-spacing:0.15em;</rendition>
+            <rendition xml:id="i" scheme="css">font-style:italic;</rendition>
+         </tagsDecl>
+         <editorialDecl>
+            <hyphenation>
+               <p>
+            <!--to be added-->
+          </p>
+            </hyphenation>
+            <correction>
+               <p>
+            <!--to be added-->
+          </p>
+            </correction>
+            <normalization>
+               <p>
+            <!--to be added-->
+          </p>
+            </normalization>
+            <punctuation>
+               <p>
+            <!--to be added-->
+          </p>
+            </punctuation>
+            <stdVals>
+               <p>
+            <!--to be added-->
+          </p>
+            </stdVals>
+            <p>
+          <!--to be added-->
+        </p>
+         </editorialDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#tfruehwirth" when-iso="2026-10-14">TEIGarage output upconverted with upconvert.xsl</change>
+         <change who="#tfruehwirth" when-iso="2026-10-14">TEI header populated with generate_tei_templates.py</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface/>
+   </facsimile>
+   <text>
+      <body>
+         <div xml:id="doc-krp-0126.xml">
+            <head type="dokument">
+               <title type="num">126.<note type="footnote">Das Protokoll trägt den Vermerk <hi rend="#i">Vertraulich!</hi></note>
+               </title>
+               <title type="desc">
+                  <pb facs="krp-0126_r-0001"/>[Dienstag] 1919-12-02</title>
+            </head>
+            <div type="dokumentkopf">
+               <div type="vorsitz">
+                  <head>Vorsitz:</head>
+                  <p>Renner</p>
+               </div>
+               <div type="anwesend">
+                  <head>Anwesend:</head>
+                  <p>Deutsch, Eisler, Eldersch, Ellenbogen, Glöckel, Loewenfeld-Russ, Mayr, Miklas, Paul, Reisch, Resch, Stöckler, Tandler, Waiss, Zerdik</p>
+               </div>
+               <div type="zugezogen">
+                  <head>Zugezogen:</head>
+                  <p>Grimm</p>
+               </div>
+               <div type="schriftfuehrer">
+                  <head>Schriftführer:</head>
+                  <p>Fenz</p>
+               </div>
+               <div type="dauer">
+                  <head>Dauer:</head>
+                  <p>21.00–00.00 Uhr</p>
+               </div>
+            </div>
+            <div type="komponenten">
+               <p>Reinschrift, Beilagen, streng geheimer Anhang, Konzept, stenographische Mitschrift, Entwurf der Tagesordnung, diverse Zusätze, 16. Personalsitzung</p>
+            </div>
+            <div type="beilagen">
+               <head>Beilagen:</head>
+               <list>
+                  <item><ref target="#krp-0126_top01">Zu TOP 1</ref>: <ref target="#krp-0126_b01">Antrag des Staatssekretärs für Handel und Gewerbe, Industrie und Bauten zu Zl. 22.906/IV/19 über die Erlassung einer Vollzugsanweisung für die Wiener Messe</ref></item>
+                  <item><ref target="#krp-0126_top02">Zu TOP 2</ref>: <ref target="#krp-0126_b02">Vollzugsanweisung des Staatssekretärs für Handel und Gewerbe, Industrie und Bauten über die Einrichtung und den Wirkungskreis der Zentralstelle für Ein-, Aus- und Durchfuhrbewilligungen</ref></item>
+                  <item><ref target="#krp-0126_top03">Zu TOP 3</ref>: <ref target="#krp-0126_b03">Vortrag des Staatsamtes für Verkehrswesen über die Erwirkung von Fahrbegünstigungen für Staats- und Staatsbahnbedienstete auf den Wiener Straßenbahnen</ref></item>
+                  <item><ref target="#krp-0126_top04">Zu TOP 4</ref>: <ref target="#krp-0126_b04">Vortrag des Staatsamtes für Land- und Forstwirtschaft über den Gesetzesbeschluss der Kärntner Landesversammlung über die Ablösung, Regelung und Neuregelung der Wald-, Weide- und Felddienstbarkeiten</ref></item>
+                  <item><ref target="#krp-0126_top04">Zu TOP 4</ref>: <ref target="#krp-0126_b05">Gesetzesbeschluss der Kärntner Landesversammlung über die Ablösung, Regelung und Neuregelung der Wald-, Weide- und Felddienstbarkeiten</ref></item>
+                  <item><ref target="#krp-0126_top05">Zu TOP 5</ref>: <ref target="#krp-0126_b06">Vorlage des Staatsamtes für Heereswesen in der Frage der Staatsfabrik</ref></item>
+                  <item><ref target="#krp-0126_top06">Zu TOP 6</ref>: <ref target="#krp-0126_b07">Vortrag des Staatsamtes für Heereswesen Zl. 5.003/10 Abt. 20 über die Auszahlung von Unterhaltsbeiträgen an die in Österreich wohnhaften Angehörigen deutschwestungarischer Staatsbürger</ref></item>
+                  <item><ref target="#krp-0126_top10">Zu TOP 10</ref>: <ref target="#krp-0126_b08">Antrag des Staatsamtes für Äußeres auf Erteilung der Kompetenz für die Verhandlungen mit Vertretern der Nachfolgestaaten</ref></item>
+                  <item><ref target="#krp-0126_top11">Zu TOP 11</ref>: <ref target="#krp-0126_b09">Vortrag des Staatsamtes für Inneres und Unterricht über den Gesetzesbeschluss des Niederösterreichischen Landtages zur Regelung des Einkommens der Lehrer an den öffentlichen Volksschulen des flachen Landes Niederösterreich</ref></item>
+                  <item><ref target="#krp-0126_top11">Zu TOP 11</ref>: <ref target="#krp-0126_b10">Gesetzesentwurf, womit Bestimmung über die Regelung der Rechtsverhältnisse des Lehrstandes an den öffentlichen Volkschulen, sowie über die Regelung der Personal- und Dienstverhältnisse der der bewaffneten Macht angehörigen Lehrpersonen an öffentlichen Volksschulen für das Land Niederösterreich mit Ausschluss des Schulbezirkes Wien, abgeändert werden</ref></item>
+                  <item><ref target="#krp-0126_top13">Zu TOP 13</ref>: <ref target="#krp-0126_b11">Gesetzesentwurf über die Vereinbarkeit des Amtes des Kanzlers, Vizekanzlers, eines Staatssekretärs oder Unterstaatssekretärs mit der Rechtsanwaltschaft und dem Notariat</ref></item>
+               </list>
+            </div>
+            <div type="protokoll">
+               <pb facs="krp-0126_r-0002"/>
+               <div type="top" xml:id="krp-0126_top01">
+                  <head>
+                     <label>
+                        <num n="1">1.</num>
+                        <seg>Vollzugsanweisung, betreffend die Regelung des Messewesens.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Ing. <hi rend="#letterspaced">Zerdik</hi> erbittet und erhält vom Kabinettsrate die Ermächtigung zur Erlassung einer Vollzugsanweisung des Staatsamtes für <pb facs="krp-0126_r-0003"/>Handel und Gewerbe, Industrie und Bauten im Einvernehmen mit den Staatsämtern für Äußeres, für Inneres und Unterricht, für Finanzen und für Verkehrswesen, betreffend die Regelung des Messewesens.</p>
+               </div>
+               <div type="top" xml:id="krp-0126_top02">
+                  <head>
+                     <label>
+                        <num n="2">2.</num>
+                        <seg>Vollzugsanweisung, betreffend die Einrichtung und den Wirkungskreis der Zentralstelle für Ein-, Aus- und Durchfuhrbewilligungen.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Ing. Zerdik erbittet sich vom Kabinettsrate die Genehmigung zur Erlassung einer Vollzugsanweisung der Staatsämter für Handel und Gewerbe, Industrie und Bauten und für Finanzen im Einvernehmen mit den beteiligten Staatsämtern, betreffend die Einrichtung und den Wirkungskreis der Zentralstelle für Ein-, Aus- und Durchfuhrbewilligungen. Der sprechende Staatssekretär bemerkt hiebei, dass der dem Kabinettsrate vorliegende Entwurf der Vollzugsanweisung durch Streichung der beiden letzten Sätze des § 10 abgeändert wurde.</p>
+                  <p>Bei der sich hierüber entwickelnden Debatte gelangt die Frage zur Erörterung, ob es sich als zweckmäßig erweise, zwei Stellen (die Zentralstelle für Ein-, Aus- und Durchfuhrbewilligungen und das Warenverkehrsbüro) nebeneinander bestehen zu lassen, da hie<pb facs="krp-0126_r-0004"/>durch die wünschenswerte Einheitlichkeit der Disponierung im Geld- und Warenverkehr erfahrungsgemäß erschwert werde. Es tritt die übereinstimmende Auffassung zutage, dass die Zusammenarbeit dieser beiden Stellen im Interesse der Sache möglichst innig zu gestalten sei und daher deren Vereinigung womöglich unter gemeinsamer Leitung angebahnt werden sollte.</p>
+                  <p>Der Kabinettsrat genehmigt den Antrag des Staatssekretärs Ing. Zerdik und ladet ihn gleichzeitig ein, der oben aufgeworfenen Frage im Sinne der vom Kabinettsrate gekennzeichneten Auffassung näher zu treten.</p>
+               </div>
+               <div type="top" xml:id="krp-0126_top03">
+                  <head>
+                     <label>
+                        <num n="3">3.</num>
+                        <seg>Fahrbegünstigungen für Staats- und Staatsbahnbedienstete auf den Wiener Straßenbahnen.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Paul</hi> verweist darauf, dass die Erhöhung der Straßenbahnfahrpreise für die überwiegende Mehrzahl der Wiener Staatsangestellten ohne Unterschied ihrer Ressortzugehörigkeit eine empfindliche finanzielle Belastung bedeute. Es hätten sich daher insbesondere bei jenen Bediensteten, die zu anderen Dienststellen versetzt oder deren Dienststellen aus Ersparnisrücksichten mit anderen Dienst<pb facs="krp-0126_r-0005"/>stellen vereinigt bzw. in anderen Bezirken untergebracht werden, die aber wegen des Wohnungsmangels und der hohen Transportkosten in die Nähe des neuen Amtslokales nicht sofort übersiedeln können, Bestrebungen geltend gemacht, die darauf abzielen, eine Vergütung der durch die Straßenbahnfahrpreiserhöhung bewirkten Mehrauslagen zu erlangen. Da die Form einer Zulage zur Ausgleichung dieser Ausgaben mit Rücksicht auf die Schwierigkeit der Festlegung der Voraussetzungen, unter welchen die Vergütung der Straßenbahnspesen einzutreten hätte, nicht das geeignete Mittel sein dürfte, um den diesbezüglichen Forderungen des Personales Rechnung zu tragen, stelle der sprechende Staatssekretär den Antrag, ein Staatsamt zu beauftragen, mit der Gemeinde Wien Verhandlungen wegen Bewilligung von Erleichterungen für die Benützung der Straßenbahn an Wiener Staats- und Staatsbahnbedienstete einzuleiten. Bei der Auswahl des hiezu zu bestimmenden Staatsamtes bitte er von dem von ihm geleiteten Ressort abzusehen, da ihm die Führung derartiger Verhandlungen mit der Stellung des Staatsamtes für Verkehrs<pb facs="krp-0126_r-0006"/>wesen als der zur Ausübung des staatlichen Hoheitsrechtes über die Wiener Straßenbahnen berufenen Behörde nicht kompatibel erscheine.</p>
+                  <p>Staatssekretär <hi rend="#letterspaced">Eldersch</hi> befürchtet, dass die Gemeinde Wien auf diesen Vorschlag kaum werde eingehen können. Sie sehe sich bereits genötigt, die bisherige Zahl von Karten für freie Fahrt, bzw. für Fahrten zu ermäßigten Preisen bedeutend zu reduzieren. Die vom Vorredner beantragte Aktion müsste nun Beispielsfolgerungen auslösen, deren finanzieller Effekt von der Gemeinde Wien nicht ertragen werden könnte.</p>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> pflichtet diesen Ausführungen bei und beantragt, der Kabinettsrat möge von einer weiteren Verfolgung dieser Angelegenheit angesichts ihrer prinzipiellen und finanziellen Tragweite für die Gemeinde Wien absehen.</p>
+                  <p>Der Kabinettsrat beschließt in diesem Sinne.</p>
+               </div>
+               <div type="top" xml:id="krp-0126_top04">
+                  <head>
+                     <label>
+                        <num n="4">4.</num>
+                        <seg>Gesetzesbeschluss der Landesversammlung von Kärnten, betreffend die Ablösung, Regelung und Neuregelung der Wald-, Weiden- und Felddienstbarkeiten.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Stöckler</hi> teilt mit, dass die Landesversammlung von Kärnten am 10. Oktober l. J. einen <pb facs="krp-0126_r-0007"/>Gesetzesbeschluss, betreffend die Ablösung, Regelung und Neuregelung der Wald-, Weiden- und Felddienstbarkeiten, gefasst habe. Im Einvernehmen mit den Staatsämtern für Justiz und für Finanzen beantrage der sprechende Staatssekretär gegen diesen Gesetzesbeschluss, welcher in einer Reihe von Bestimmungen zu den ernstesten Bedenken Anlass gebe, Vorstellung zu erheben. Redner beabsichtige, der Landesregierung in einer ausführlichen Darstellung die Bedenken der Staatsregierung im Einzelnen darzulegen und in dem bezüglichen, dem Kabinettsrate im Entwurfe vorliegenden Erlasse dem Wunsche Ausdruck zu verleihen, die Landesversammlung möge bei nochmaliger Beratung des Gesetzesbeschlusses im Interesse des Landes Kärnten selbst den Ausführungen des Staatsamtes für Land- und Forstwirtschaft Rechnung tragen.</p>
+                  <p>Unterstaatssekretär Dr. <hi rend="#letterspaced">Eisler</hi> empfiehlt dem Staatsamte für Land- und Forstwirtschaft, überdies im Wege mündlicher Rücksprache auf die Umredigierung des Gesetzes im beantragten Sinne Einfluss zu nehmen.</p>
+                  <p>Staatssekretär <hi rend="#letterspaced">Stöckler</hi> erklärt sich bereit, einen Beamten des Staatsamtes zu diesem Zwecke nach Kärnten zu entsenden.</p>
+                  <p><pb facs="krp-0126_r-0008"/>Der Kabinettsrat erhebt den Antrag des Staatssekretärs für Land- und Forstwirtschaft, zum Beschluss und pflichtet seiner Absicht wegen mündlicher Einflussnahme auf die Landesregierung in dem erwähnten Sinne bei.</p>
+                  <p>In diesem Zusammenhange regt Unterstaatssekretär <hi rend="#letterspaced">Miklas</hi> an, es möge auf die Landesregierung in Kärnten dahin eingewirkt werden, dass im Interesse der inneren Konsolidierung der Landesverwaltung die Wahlen in die Landesversammlung ehestens vorgenommen werden.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Deutsch</hi> begrüßt diese Anregung und bemerkt, dass seitens der gegenwärtigen Vertreter des Landes in diesem Belange stets auf die Schwierigkeiten verwiesen werde, die sich aus der teilweisen Besetzung des Landes ergeben. Er vermeine aber, dass es keinem Hindernis begegnen würde, die Wahlen in den nicht besetzten Gebieten vorzunehmen und die Öffentlichkeit dahin entsprechend aufzuklären, dass eine Nachwahl in den besetzten Gebieten nach deren Freigabe ungesäumt veranlasst werden wird.</p>
+                  <p>Der Kabinettsrat beschließt, dass die Staatsregierung mit der Landesregierung und den Parteien des <pb facs="krp-0126_r-0009"/>Landes Kärnten in Verbindung zu treten habe, damit die Neuwahlen in die Landesversammlung ohne Rücksicht auf den Zeitpunkt der Ratifizierung des Friedensvertrages ehestens durchgeführt werde. </p>
+               </div>
+               <div type="top" xml:id="krp-0126_top05">
+                  <head>
+                     <label>
+                        <num n="5">5.</num>
+                        <seg>Künftige Organisation der Staatsfabrik zur Erzeugung von Heeresmaterial.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Deutsch</hi> verweist einleitend auf die einschlägigen Bestimmungen des Staatsvertrages von St. Germain über die Erzeugung von Waffen, Munition und Kriegsmaterial. Diese Vorschriften werden für die Organisation der der Erzeugung von Geschützen, Gewehren und Maschinengewehren, Munition und Pioniermaterial für die neue Wehrmacht dienenden Staatsfabrik maßgebend sein müssen. Während aber alle übrigen Heeresbedürfnisse aus der Privatindustrie werden gedeckt werden können, sei bei den erwähnten Kriegsmaterialien dieser Grundsatz deshalb nicht anzuwenden, weil es sich speziell um Kriegsbedürfnisse handle, auf welche die Friedensindustrie sich nicht festlegen könne. Redner beantrage daher, die Lösung dieser Frage in der Weise anzustreben, dass auf Teile bestehender ziviler Unternehmungen gegriffen werde und deren Besitzer sich im Wesen <pb facs="krp-0126_r-0010"/>verpflichten, ihre Einrichtungen für den Bedarf der Heeresverwaltung in dem unbedingt notwendigen Umfang zu erhalten und im Bedarfsfalle Aufträge der Heeresverwaltung in erster Linie zu berücksichtigen. Einschlägige Besprechungen hätten bereits folgendes Ergebnis gezeitigt:</p>
+                  <list>
+                     <item n="1"><label>1.)</label> In der Frage der Geschützerzeugung habe die Firma Böhler zugesagt, ihre Artilleriewerkstätten Nr. 1 und 2 diesem Zwecke zuzuführen.</item>
+                     <item n="2"><label>2.)</label> Anlangend den Bedarf an Gewehren und Maschinengewehren habe sich die Steyrer Waffenfabrik zu einem Übereinkommen, welches dem Staatsamte für Heer[es]wesen ein Reservat auf Teile ihres Betriebes einräumen würde, nicht bereit erklärt. Es erscheine daher geboten, dass die gegenwärtig vorhandenen, einschlägigen Bestände mit Zustimmung der Reparationskommission der neuen Wehrmacht überlassen werden, da wir in der nächsten Zeit eine andere Beschaffungsmöglichkeit nicht besitzen.</item>
+                     <item n="3"><label>3.)</label> Für die Beschaffung von Munition dürfte ein Abkommen mit den Wöllersdorfer Werken und den Enzesfelder Anlagen, allenfalls mit Heranziehung der Roth'schen Fabrik als Hilfsbetrieb möglich sein.</item>
+                     <item n="4"><label>4.)</label> Was die Beschaffung des künftighin erforderlichen Pioniermaterials <pb facs="krp-0126_r-0011"/>anlange, erscheine es Redner unbedingt notwendig, dass das Sappeurzeugsdepot in Klosterneuburg unter der ausschließlichen Leitung des Staatsamtes für Heer[es]wesen beibehalten werde, weil dortselbst die vollkommen fehlenden Kriegsbrückenequipagen erzeugt werden könnten.</item>
+                  </list>
+                  <p>Die Leitung dieser einzelnen Teile einer Staatsfabrik denke sich der sprechende Staatssekretär in der Form einer kleinen, aus Heeresangehörigen bestehenden Direktion, welche vor allem die Aufgabe hätte, gegenseitige Aushilfen unter den Teilen der Fabrik möglich zu machen und dafür zu sorgen, dass tatsächlich nur das erzeugt werde, was nach dem Staatsvertrage von St. Germain zulässig sei.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Reisch</hi> spricht sich in entschiedener Weise gegen die in Aussicht genommenen Maßnahmen vor der Entscheidung über die Organisation der künftigen Wehrmacht sowie insbesondere dagegen aus, dass an die Schaffung einer neuen militärischen Amtsstelle geschritten werden soll, deren Errichtung durch Unterstellung der Staatsfabrik unter die erst kürzlich geschaffene Generaldirektion der staatlichen Industriewerke vermieden werden könnte.</p>
+                  <p><pb facs="krp-0126_r-0012"/>Nachdem Unterstaatssekretär Dr. <hi rend="#letterspaced">Ellenbogen</hi> darauf verwiesen hatte, dass seitens dieser staatlichen Industriewerke besonderes Gewicht auf die Übernahme des Sappeurzeugsdepots in Klosterneuburg gelegt werde, regte Staatssekretär Ing. <hi rend="#letterspaced">Zerdik</hi> die Austragung dieser Fragen in einer Kabinettskonferenz an, der unter Führung des Staatssekretärs für Heer[es]wesen die Staatssekretäre für Finanzen sowie für Handel und Gewerbe, Industrie und Bauten zuzuziehen wären.</p>
+                  <p>Der Kabinettsrat fasst schließlich den Beschluss, die vom Staatssekretär Dr. Deutsch unter den Pkt. 1., 2. und 3. aufgenommenen Darlegungen genehmigend zur Kenntnis zu nehmen, hingegen die Austragung der Frage über die Beibehaltung des genannten Sappeurzeugsdepots (Pkt. 4.) sowie über die Frage der Leitung der Staatsfabrik der vom Staatssekretär Ing. Zerdik vorgeschlagenen Kabinettskonferenz zu übertragen.</p>
+               </div>
+               <div type="top" xml:id="krp-0126_top06">
+                  <head>
+                     <label>
+                        <num n="6">6.</num>
+                        <seg>Auszahlung der Unterhaltsbeiträge an die in Österreich wohnhaften Angehörigen von deutschwestungarischen Staatsbürgern.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Deutsch</hi> erinnert daran, dass gemäß Art. V Abs. 1 des Gesetzes vom 28. Juli 1919, StGBl. Nr. 387, Unterhaltsbei<pb facs="krp-0126_r-0013"/>träge nur an die Angehörigen jener Herangezogenen auszuzahlen seien, die aufgrund des § 1 Abs. 1 des Gesetzes vom 5. Dezember 1918, StGBl. Nr. 91, österreichische Staatsbürger sind oder nach § 2 dieses Gesetzes die österreichische Staatsbürgerschaft vor dem 1. April 1919 erworben haben. Hiezu verfüge der letzte Abs. des erwähnten Art., dass den im Inlande wohnhaften Angehörigen von fremdzuständigen Herangezogenen Unterhaltsbeiträge nur nach Maßgabe zwischenstaatlicher Vereinbarungen auszuzahlen sind.</p>
+                  <p>Unter Hinweis auf diese letztere Bestimmung sei die österreichische Regierung bereits im August d. J. wegen Erstellung eines Reziprozitätsverhältnisses mit den einzelnen Nationalstaaten in Fühlung getreten, ohne dass jedoch trotz mehrfacher Betreibung bis anfangs Oktober d. J. von einer dieser Regierungen eine Äußerung eingelangt wäre. Das Staatsamt für Heer[es]wesen habe sich daher veranlasst gesehen, die Unterbehörden auf die genaue Einhaltung der Bestimmungen des Art. V Abs. 1 des Gesetzes vom 28. Juli 1919, aufmerksam zu machen, woraufhin die Unterhaltsbeiträge für die im Inlande wohnhaften Angehörigen fremdzuständiger Herangezogener eingestellt worden seien.</p>
+                  <p><pb facs="krp-0126_r-0014"/>Von dieser Einstellung seien unter anderem auch die Angehörigen solcher Herangezogener betroffen worden, die in jenem Teile Deutschwestungarns heimatberechtigt sind, der nach dem Staatsvertrage von St. Germain an Österreich fällt. Da es jedoch unter den gegebenen Verhältnissen dem Staatsamt für Heer[es]wesen höchst inopportun erscheine, diese Angehörigen ohne jede Unterstützung zu lassen oder sie mit ihren Ansprüchen an die ungarische Regierung zu verweisen, die gesetzlichen Bestimmungen zu einer Abhilfe im Gegenstande aber keinerlei Handhabe bieten, erbitte sich der sprechende Staatssekretär nach gepflogenem Einvernehmen mit den beteiligten Staatsämtern die Ermächtigung zur Hinausgabe einer Verfügung, wonach die erwähnten Angehörigen die ihnen aufgrund der Bestimmungen des Art. V Abs. 1 des Gesetzes vom 28. Juli 1919 eingestellten Unterhaltsbeiträge vom Tage der Einstellung auch weiterhin, jedoch unter der Voraussetzung auszuzahlen sind, dass sie ihren Wohnsitz in den von der österreichischen Regierung tatsächlich verwalteten Teilen des Staatsgebietes Österreich haben. Durch eine derartige Verfügung würden diese Angehörigen – es handle sich um ungefähr 1.500 Personen – auf dem <pb facs="krp-0126_r-0015"/>Gebiete des Unterhaltsbeitrages jenen Personen gleichgestellt werden, deren Erhalter in den besetzten Gebieten Österreichs (Deutschböhmen, Sudetenland, Deutsch-Südtirol) heimatberechtigt sind.</p>
+                  <p>Der Kabinettsrat erteilt die erbetene Ermächtigung.</p>
+               </div>
+               <div type="top" xml:id="krp-0126_top07">
+                  <head>
+                     <label>
+                        <num n="7">7.</num>
+                        <seg>Zuweisung von Rauchmaterial an Invalide.</seg>
+                     </label>
+                  </head>
+                  <p>Unterstaatssekretär Dr. <hi rend="#letterspaced">Tandler</hi> teilt mit, die Spitalinvaliden hätten sich an ihn mit der Bitte gewendet, es möge ihnen der bisherige Bezug von Zigaretten bis Neujahr belassen werden. Das Staatsamt für Finanzen habe sich zur Erfüllung dieser Bitte unter der Voraussetzung bereit erklärt, dass der Kabinettsrat hiezu seine Zustimmung erteile. Der sprechende Unterstaatssekretär beantrage, dem Wunsche der Invaliden Rechnung zu tragen.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Reisch</hi> bemerkt, dass sich eine bei ihm erschienene Abordnung der Invaliden mit einer täglichen Zuweisung von fünf Zigaretten bis 31. Dezember d. J. zufrieden gegeben habe.</p>
+                  <p>Der Kabinettsrat erteilt sodann die erbetene Zustimmung.</p>
+                  <p><pb facs="krp-0126_r-0016"/></p>
+               </div>
+               <div type="top" xml:id="krp-0126_top08">
+                  <head>
+                     <label>
+                        <num n="8">8.</num>
+                        <seg>Beitritt der Staatsregierung zu mehreren Gesetzesbeschlüssen der Nationalversammlung.</seg>
+                     </label>
+                  </head>
+                  <p>Über Vorschlag des <hi rend="#letterspaced">Vorsitzenden</hi> erhebt der Kabinettsrat gegen die von der Nationalversammlung beschlossenen Gesetze </p>
+                  <list>
+                     <item n="1"><label>1.)</label> über die Konsulargebühren,</item>
+                     <item n="2"><label>2.)</label> über die Errichtung von staatlichen Erziehungsanstalten und</item>
+                     <item n="3"><label>3.)</label> betreffend laufende Vorschüsse für Staatsbedienstete und Teuerungszulagen für die Mitglieder der Nationalversammlung und die Volksbeauftragten</item>
+                  </list>
+                  <p>keine Vorstellung.</p>
+                  <p>Die erwähnten Gesetze sind demgemäß nach Gegenzeichnung durch den Staatskanzler und die zuständigen Staatssekretäre dem Präsidenten der Nationalversammlung zur Fertigung vorzulegen.</p>
+               </div>
+               <div type="top" xml:id="krp-0126_top09">
+                  <head>
+                     <label>
+                        <num n="9">9.</num>
+                        <seg>Sicherung der Vertretung der Staatsämter in den Ausschüssen der Nationalversammlung.</seg>
+                     </label>
+                  </head>
+                  <p>Der Vorsitzende teilt mit, es werde vom Präsidium der Nationalversammlung immer wieder Klage darüber geführt, dass die Staatsämter in den parlamentarischen Ausschüssen vielfach gar nicht vertreten seien. Redner hätte bereits vor einiger Zeit einen Beamten der Staatskanzlei mit der genauen Evidenzführung der <pb facs="krp-0126_r-0017"/>Ausschusssitzungen und der rechtzeitigen Bekanntgabe derselben an die Staatsämter betraut; es sei jedoch überdies notwendig, dass in jedem Staatsamt ein Beamter als parlamentarischer Referent bestellt werde, dem die Aufgabe obliege, den ständigen Kontakt mit den Obmännern, deren Stellvertretern und den Schriftführern der für das betreffende Staatsamt zuständigen Ausschüsse herzustellen, um den Staatssekretären über die Vorgänge in den Ausschüssen am Laufenden zu erhalten. Diese Parlamentsreferenten hätten auch ein einschlägiges Protokoll über die einzelnen Sitzungen zu führen.</p>
+                  <p>Nachdem die Staatssekretäre <hi rend="#letterspaced">Paul</hi> und Dr. <hi rend="#letterspaced">Loewenfeld-Russ</hi> sowie Unterstaatssekretär Dr. <hi rend="#letterspaced">Eisler</hi> mitgeteilt hatten, dass eine stete Fühlungnahme ihrer Staatsämter mit den Obmännern der korrespondierenden Ausschüsse bereits gewährleistet sei, verweist der Staatskanzler auf die dringende Notwendigkeit, dass auch alle übrigen Staatsämter in diesem Sinne die geeigneten Vorsorgen ungesäumt treffen.</p>
+                  <p>Der Kabinettsrat nimmt dies zur Kenntnis.</p>
+                  <p><pb facs="krp-0126_r-0018"/>In diesem Zusammenhange regt Staatssekretär <hi rend="#letterspaced">Paul</hi> an, es möge die frühere, bewährte Gepflogenheit wieder eingeführt werden, dass den Staatssekretären die Mitnahme eines ständigen Begleiters in die Sitzungen der Nationalversammlung bzw. Ausschüsse, der auch die Verbindung zwischen dem Staatssekretär und der Kanzleidirektion der Nationalversammlung aufrecht zu erhalten hätte, gestattet sei.</p>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> pflichtet dieser Anregung durchaus bei und erklärt sich bereit, an den Präsidenten der Nationalversammlung ein darauf bezügliches Ersuchschreiben zu richten.</p>
+               </div>
+               <div type="top" xml:id="krp-0126_top10">
+                  <head>
+                     <label>
+                        <num n="10">10.</num>
+                        <seg>Kompetenz für die Verhandlungen mit Vertretern der Nachfolgestaaten.</seg>
+                     </label>
+                  </head>
+                  <p>Nach einer Mitteilung des Vorsitzenden wiederholen sich die Fälle, dass die Vertreter der Sukzessionsstaaten in ihren Angelegenheiten direkt an die verschiedenen Ressorts und die ihnen unterstehenden Behörden und Anstalten herantreten. Es werden Verhandlungen selbständig mit ihnen geführt, Abkommen und Vereinbarungen getroffen, durch welche der Regierung in ihren <pb facs="krp-0126_r-0019"/>Entschlüssen oftmals ernste Verlegenheiten bereitet werden. Für die Vertreter fremder Staaten bestehe, um sich mit den einzelnen Ressorts in Verbindung zu setzen, nur der Weg über das Staatsamt für Äußeres, welches dabei zu vermitteln habe. Er beantrage daher, der Kabinettsrat wolle verfügen, dass sämtliche Ressorts für sich und für die ihnen unterstehenden Behörden und Anstalten dahin instruiert werden mögen, direkte Ansuchen der Vertreter der Sukzessionsstaaten abzulehnen und sie an das Staatsamt für Äußeres zu verweisen.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Loewenfeld-Russ</hi> stellt den Zusatzantrag, dass auch die Landesregierungen und die übrigen Unterbehörden anzuweisen seien, einen unmittelbaren Verkehr mit den auswärtigen Vertretern, überdies aber auch mit der Subkommission der Reparationskommission zu vermeiden.</p>
+                  <p>Der Kabinettsrat genehmigt diese Anträge mit der Maßgabe, dass hiedurch der unmittelbare Verkehr der Staatssekretäre mit den fremden Missionen im Rahmen der durch die Geschäftsordnung des Kabinettsrates festgesetzten Bestimmungen nicht berührt werde.</p>
+                  <p><pb facs="krp-0126_r-0020"/></p>
+               </div>
+               <div type="top" xml:id="krp-0126_top11">
+                  <head>
+                     <label>
+                        <num n="11">11.</num>
+                        <seg>Gesetzesbeschluss des Niederösterreichischen Landtages, betreffend die Neuregelung des Diensteinkommens der Lehrerschaft an den öffentlichen Volksschulen des flachen Landes Niederösterreich.</seg>
+                     </label>
+                  </head>
+                  <p>Unterstaatssekretär <hi rend="#letterspaced">Glöckel</hi> teilt mit, dass der Niederösterreichische Landtag in seiner Sitzung am 30. Oktober d. J. einen Gesetzesbeschluss gefasst habe, womit Bestimmungen des Gesetzes vom 31. Juli 1917, LGBl. Nr. 158, betreffend die Regelung der Rechtsverhältnisse des Lehrstandes an den öffentlichen Volksschulen, sowie Bestimmungen des Gesetzes vom 9. Juli 1892, LGBl. Nr. 46, betreffend die Regelung der Personal- und Dienstverhältnisse der der bewaffneten Macht angehörigen Lehrpersonen an öffentlichen Volksschulen für das Land Niederösterreich mit Ausschluss des Schulbezirkes Wien, abgeändert werden. Da gegen diesen Gesetzesbeschluss keine verfassungsrechtlichen Bedenken bestehen, beantrage Redner, dass seitens der Staatsregierung hiegegen keine Vorstellung erhoben und der sofortigen Kundmachung des Gesetzes zugestimmt werde. Gleichzeitig erbitte er sich jedoch die Ermächtigung, den Landesschulrat auffordern zu dürfen, nach gepflogenem Einvernehmen mit dem Landesrat eine Durchführungsverordnung zu erlassen, durch welche einige sich aus dem Gesetzestext ergebende Ungenauigkeiten und Unklarheiten beseitigt werden.</p>
+                  <p><pb facs="krp-0126_r-0021"/>Der Kabinettsrat beschließt in diesem Sinne.</p>
+               </div>
+               <div type="top" xml:id="krp-0126_top12">
+                  <head>
+                     <label>
+                        <num n="12">12.</num>
+                        <seg>Forderungen der Kärntner Abgeordneten nach Verbesserung der dortigen Eisenbahnverkehrsverhältnisse.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Paul</hi> erinnert daran, dass die Kärntner Abgeordneten bereits seinerzeit an den Staatskanzler das Ersuchen gerichtet hätten, alles vorzukehren, damit die Abstimmung im Klagenfurter Becken möglichst günstig verlaufe. Bei diesem Anlasse hätten sie bestimmte Forderungen nach Verbesserung der Eisenbahnverkehrsverhältnisse in Kärnten gestellt. Unter anderem sei die sofortige Bauinangriffnahme der kärntnerischen Ostbahn (Klagenfurt – Brückl) sowie die Errichtung eines Trassierungsbüros in Klagenfurt verlangt worden. Es sei beabsichtigt, am morgigen Tage vom Staatskanzler die Abgabe einer offiziellen Erklärung zu erbitten, deren im Nachstehenden wiedergegebene Formulierung am 25. November d. J. vom sprechenden Staatssekretär mit den Parteien vereinbart und von ihnen ausdrücklich als ausreichend bezeichnet worden sei:</p>
+                  <p>„Die Regierung ist bereit, die im Interesse des Verkehres und der leichteren Verpflegung der Stadt Klagenfurt notwendigen Bahnverbindun<pb facs="krp-0126_r-0022"/>gen nach Maßgabe der finanziellen Leistungsfähigkeit des Staates und der durch die neue Grenzbestimmung geschaffenen verkehrspolitischen Lage herzustellen und insbesondere für den Fall, dass die Volksabstimmung in der Zone A zugunsten des österreichischen Staates ausfällt, die gesetzliche Sicherstellung des Baues einer Klagenfurt über Völkermarkt mit dem Lavanttale verbindenden Bahnlinie (Ostbahn) in die Wege zu leiten.“</p>
+                  <p>Der Kabinettsrat genehmigt die Abgabe dieser Erklärung.</p>
+               </div>
+               <div type="top" xml:id="krp-0126_top13">
+                  <head>
+                     <label>
+                        <num n="13">13.</num>
+                        <seg>Gesetzentwurf über die Vereinbarkeit des Amtes des Kanzlers, Vizekanzlers, eines Staatssekretärs oder Unterstaatssekretärs mit der Rechtsanwaltschaft und dem Notariate.</seg>
+                     </label>
+                  </head>
+                  <p>Unterstaatssekretär Dr. <hi rend="#letterspaced">Eisler</hi> erbittet und erhält vom Kabinettsrat die Ermächtigung, den Entwurf eines Gesetzes über die Vereinbarkeit des Amtes des Kanzlers, Vizekanzlers, eines Staatssekretärs oder Unterstaatssekretärs mit der Rechtsanwaltschaft und dem Notariate, in der Nationalversammlung einbringen zu dürfen.</p>
+                  <p/>
+               </div>
+            </div>
+            <div type="anhaenge">
+               <p><pb facs="krp-0126_a01-0001"/>Streng geheimer Anhang zum Kabinettsprotokoll Nr. 126 vom 2. Dezember 1919.</p>
+               <div n="1">
+                  <head>Reservierung der für die künftige Wehrmacht benötigten Infanteriemunition.</head>
+                  <div type="a01_protokoll">
+                     <p>Staatssekretär Dr. <hi rend="#letterspaced">Deutsch</hi> erstattet den diesem geheimen Anhang als Beilage angeschlossenen Bericht über die für die künftige Wehrmacht zu reservierende Infanteriemunition und erbittet vom Kabinettsrate eine Entscheidung darüber, in welchem von den drei aufgezählten Ausmaßen Munition für die Brückenkopfmaschinengewehre zu reservieren ist.</p>
+                     <p>Der Kabinettsrat entscheidet sich für die in der Beilage vorgeschlagene Alternative 3.).</p>
+                  </div>
+               </div>
+               <div n="2">
+                  <head>Frage des Anschlusses Vorarlbergs an die Schweiz.</head>
+                  <div type="a02_protokoll">
+                     <p>Der <hi rend="#letterspaced">Vorsitzende</hi> verweist auf die durch die jüngste Rede des Schweizer Bundespräsidenten Ca<pb facs="krp-0126_a01-0002"/>londer neuerlich ausgelöste Anschlussbewegung in Vorarlberg. Redner habe sich bereits an England, Frankreich und Italien und außerdem an die Friedenskonferenz in Paris gewendet und in dem bezüglichen Schreiben ausgeführt, dass der Staatsvertrag von St. Germain uns das Mindestausmaß an territorialen Existenzmöglichkeiten gegeben habe und dass der Abfall von Vorarlberg das Zeichen für ein gleichartiges Vorgehen anderer Länder und damit das Signal für die vollständige Auflösung des Staates bilden werde. Er habe deshalb gebeten, auf die Schweiz einzuwirken und offiziell bekanntzugeben, dass der Staatsvertrag von St. Germain durch die Ententemächte gewährleistet und daher aufrecht bleiben werde. Durch den Vizekanzler habe Redner den Vorarlbergern mitteilen lassen, dass die Staatsregierung ihnen den Weg zum Völkerbund über die österreichische Staatsregierung nicht verschließen wolle, dass sich aber letztere vorbehalten müsse, hiezu ihre Gegenbemerkungen zu machen. Jeder andere Schritt aber müsse als Hochverrat bezeichnet werden. Allerdings stünde dem die Auffassung entgegen, dass, wenn der <pb facs="krp-0126_a01-0003"/>Staat ein Land nicht verpflegen könne, man es ihm auch nicht verübeln dürfe, wenn es jede wie immer geartete auswärtige Hilfe anstrebe.</p>
+                     <p>Staatssekretär Dr. <hi rend="#letterspaced">Loewenfeld-Russ</hi> macht an der Hand eines einschlägigen Ziffernmaterials Mitteilung über jene namhafte Zuwendung in der Höhe von mehr als 56 Millionen K in ausländischer Valuta, die das Land Vorarlberg bereits für Approvisionierungszwecke erhalten habe.</p>
+                     <p>Der <hi rend="#letterspaced">Vorsitzende</hi> ersucht unter Billigung des Kabinettsrates den Vorredner, diese Daten in entsprechender Weise zu veröffentlichen. Rücksichtlich der weiteren Schritte der Staatsregierung erübrige augenblicklich nichts anderes, als das Ergebnis der vom Vizekanzler an Ort und Stelle geführten Verhandlungen abzuwarten.</p>
+                     <p>Staatssekretär Dr. <hi rend="#letterspaced">Mayr</hi> verweist gleichfalls auf die Gefährlichkeit der Vorarlberger Frage von dem Gesichtspunkte aus, dass diese Bewegung im Falle ihres Gelingens zweifellos auch auf Tirol und Salzburg eventuell auch auf Oberösterreich übergreifen würde. Als wirksames Mittel, der Ak<pb facs="krp-0126_a01-0004"/>tion entgegenzuwirken, empfehle Redner vor allem eine schleunige Verbesserung der Post- und Eisenbahnverkehrsverhältnisse zwischen Wien und den westlichen Ländern; nur dadurch könne das Gefühl der Zusammengehörigkeit zwischen den Ländern und der Stadt Wien gefestigt werden.</p>
+                     <p>In diesem Zusammenhange macht der <hi rend="#letterspaced">Vorsitzende</hi> von einem ihm aus den Kreisen der Vorarlberger Handelskammer zugekommenen, sehr beachtenswerten Schreiben Mitteilung. Diesem zufolge erschiene es empfehlenswert, vor allem mehr Zufriedenheit im Lande zu schaffen. Im Allgemeinen sei dies nicht leicht; in vielen Kleinigkeiten aber könnte etwas geschehen. Die Handelskammer habe wiederholt bei den kompetenten Stellen darauf hingewiesen, dass die Aufnahme der industriellen Tätigkeit, z. B. der Baumwollindustrie nicht möglich sei, wenn alle Details des Lohnveredlungsverkehres von Wien aus geregelt werden müssen und bei besten Willen der befassten Ressorts drei bis vier Wochen zur Erledigung verstreichen, da der Postenlauf unter Umständen je eine Woche beanspruche. Nun solle in <pb facs="krp-0126_a01-0005"/>Salzburg eine Zweigstelle der Zentralstelle für Ein-, Aus- und Durchfuhr errichtet werden, das industriellste Alpenland Vorarlberg, am weitesten von der Zentrale entfernt, solle aber unberücksichtigt bleiben. Man dürfe sich daher nicht wundern, dass nun auch schon die Industrie kopfscheu zu werden beginne. Das bessere Remedium für die Zeit des Aufbaues und der tristesten Verkehrsverhältnisse sei der Zollausschluss mit zollpolitischer Bindung an das Deutsche Reich, wogegen Sektionschef Dr. <hi rend="#letterspaced">Schüller</hi> allerdings Bedenken aus dem Friedensvertrage ableite. Eine Bindung wäre z. B. auch die Verpachtung der Eisenbahnstrecke Lindau–Bludenz an die bayrischen Staatsbahnen, zumal jede Verkehrsbesserung von Vorarlberg besonders dankbar empfunden würde. In dem Redner vorliegenden Schreiben sei schließlich eine Enquête im Lande Vorarlberg unter Zuziehung einiger Ressortchefs als für sehr angezeigt erklärt worden.</p>
+                     <p>Der <hi rend="#letterspaced">Vorsitzende</hi> bringt diese Anregungen dem Kabinettsrate zur vorläufigen Kenntnis und bemerkt hiezu, dass er nicht abgeneigt wäre, nach <pb facs="krp-0126_a01-0006"/>Maßgabe der Entwicklung der Verhältnisse gegebenenfalls die vorgeschlagene Enquête an Ort und Stelle durchzuführen.</p>
+                     <p>Der Kabinettsrat nimmt diese Mitteilungen genehmigend zur Kenntnis.</p>
+                     <p/>
+                  </div>
+               </div>
+            </div>
+            <div type="stenogramme">
+               <div n="1">
+                  <head>[KRP 126, 2. Dezember 1919, Stenogramm B]</head>
+                  <p><pb facs="krp-0126_s01-0001"/>126., 2. /12.</p>
+                  <p>[<hi rend="#i">Rechtes Obereck:</hi>] Unterrichtsbeitrag.</p>
+                  <p>[Zugezogen]: Grimm.</p>
+                  <p>Paul, Konzept </p>
+                  <p>nachschicken Vormittag.</p>
+                  <p>1. Zerdik: Messewesen, Vollzugsanweisung.</p>
+                  <p>Angenommen.</p>
+                  <p>2. Zerdik: Ein-, Aus- und Durchfuhrbewilligung. Streichung der beiden [letzten] Sätze im § 10.</p>
+                  <p>Loewenfeld-Russ: [Ich] habe Bedenken gegen § 11.</p>
+                  <p>Renner: Wegen der Zweigstellen in den Ländern.</p>
+                  <p>Zerdik: Der Linzer Leiter wird die Salzburger führen.</p>
+                  <p>Ellenbogen: -.</p>
+                  <p>Reisch: Das Staatsamt für Finanzen ist genötigt, darauf zu sehen, dass möglichst wenig Valuten angefordert und möglichst wenig Kronen exportiert werden. Wenn jemand einen zehnjährigen, </p>
+                  <p>alten Kredit nachweist, werde ich keine Anstände erheben. Ist gern bereit, meinen Vertreter zu beauftragen, ....</p>
+                  <p>Eisler: Es wird angestrebt eine Vereinfachung des Verfahrens. Ich glaube nicht, dass dies erreicht wird.</p>
+                  <p>Renner: Ich begreife nicht, warum zwei Stellen nebeneinander bestehen, von denen die eine die Waren, die andere die Valuten zu besorgen hat. Ich bin dafür, dass man beide zusammenfasst und eine einheitliche Disposition einführt. [Es ist] eine Parallelorganisation, die mir nicht einleuchtet.</p>
+                  <p>Eldersch: Im Effekt ist es eine Doppelverwaltung.</p>
+                  <p>Renner: Das Geheimnis der Sache ist, die beiden Institute zusammenzulegen.</p>
+                  <p>Wir setzen voraus, dass damit die Vereinigung angebahnt werden wird. </p>
+                  <p>Vielleicht werden wir erst daran denken, diese Organisation so weiter zu führen. </p>
+                  <p>[<hi rend="#i">Neben Summenklammer:</hi>] Die Zusammenarbeit soll möglichst </p>
+                  <p>innig sein.</p>
+                  <p>Streichung genehmigt, angenommen.</p>
+                  <p>3. Zerdik: Dienstesvorschrift.</p>
+                  <p>[Beschluss]: Nächster Kabinettsrat. Vollzugsvorschrift, Protokollierung der Firma vom Kabinettsrat genehmigt.</p>
+                  <p>4. Paul: Straßenbahn.</p>
+                  <p>Eldersch: Befürchtet, dass die Gemeinde Wien auf diesen Vorschlag nicht eingehen wird. Die Gemeinde Wien sagt, sie sei nicht in der Lage, einzelne Bevölkerungsschichten auszunehmen.</p>
+                  <p>Renner: Der Kabinettsrat drückt die Auffassung aus, dass es ausgeschlossen ist, dass die Gemeinde entgegen kommt.</p>
+                  <p>Gefallen.</p>
+                  <p>5. Stöckler: -.</p>
+                  <p>Eisler: Ein solches Gesetz würde ein Muster werden für die anderen Länder. Eine einfache Vorstellung wird nicht genügen, Einfluss zu nehmen auf die Umredigierung des Gesetzes - mündliche Rücksprache.</p>
+                  <p><pb facs="krp-0126_s01-0002"/>Stöckler: Die Vorstellung wird paragraphenweise angeführt, Sektionschef Pantz wird hinunter gehen.</p>
+                  <p>Angenommen.</p>
+                  <p>Miklas: Anregung, ob es nicht an der Zeit wäre, die Kärntner 1.) aufmerksam zu machen, ob nicht die Durchführung der Landeswahlen ehestens durchzuführen [wäre].</p>
+                  <p>Renner: [Es bestehen] große Schwierigkeiten mit den besetzten Gebieten, [es ist eine] sehr fatale Geschichte. Das Land wird nach ganz anderen Gesichtspunkten verwaltet, als es der heutigen Zeit entspricht.</p>
+                  <p>Deutsch: Die Wahlen sollen in jenen Gebieten vorgenommen werden, die frei sind. Die Staatsregierung soll in Verbindung treten mit den beiden Parteien, dass die Wahlen jetzt vorgenommen werden, um zu einem </p>
+                  <p>konsolidierten -.</p>
+                  <p>[Beschluss]: Die Staatsregierung wird aufgefordert, mit der Landesregierung [<hi rend="#i">Einschub:</hi>] in Kärnten [<hi rend="#i">Einschub Ende</hi>] und den Parteien des Landes Kärnten in Verbindung zu treten, um die Neuwahlen ohne Rücksicht </p>
+                  <p>auf die Ratifizierung des Friedensvertrages durchzuführen.</p>
+                  <p>6. Deutsch: Staatsfabrik.</p>
+                  <p>[Ich beantrage], [a)], dass bezüglich der Geschütze gebilligt wird das Einvernehmen mit Böhler;</p>
+                  <p>[b)], was die Gewehre anbelangt, die Verwaltung der bisherigen Bestände;</p>
+                  <p>[c)], Munition -;</p>
+                  <p>[d)], Pioniermaterial.</p>
+                  <p>Reisch: Die Angelegenheit erscheint mir – [<hi rend="#i">Einschub:</hi>] wir müssen erst wissen, wie die neue Armee ausschauen wird - [<hi rend="#i">Einschub Ende</hi>] wesentlich verfrüht. Dann wird wieder eine neue Stelle geschaffen. Auch ist das Staatsamt für Finanzen damit nicht befasst worden.</p>
+                  <p>[Man sollte die Angelegenheit] daher zurückstellen bis über die Wehrmacht entschieden sein wird und bis das Staatsamt für Finanzen zu dieser Angelegenheit vom staatsfinanziellen Standpunkt aus Stellung nehmen - genommen hat.</p>
+                  <p>Ellenbogen: Auch dem Staatsamt für Handel ist kein Bericht noch vorgelegt worden. Linder legt großes Gewicht darauf, auch dieses Depot (Klosterneuburg) </p>
+                  <p>zu übernehmen. Aus diesem Grund erbittet er, dass wenigstens dieser Punkt (4) zurückgestellt wird.</p>
+                  <p>Zerdik: Regt an [eine] Kabinettskonferenz: Heerwesen, Finanzen und Handel.</p>
+                  <p>Deutsch: Diese Sache hängt nicht mit der Wehrmacht zusammen. Aufgestellt wird eine werden, das ist klar. Die Staatsfabrik werden wir also unbedingt brauchen.</p>
+                  <p>Zur Zurückstellung des Punktes 4 bin ich natürlich bereit. Das andere soll doch selbstverständlich [sein].</p>
+                  <p>Reisch: -.</p>
+                  <p>Deutsch: a), b), c) weiter verfolgen; d) vorläufig zurückgestellt, ebenso die -.; [für die Leitung eine] Sektion [der] Staatsdirektion.</p>
+                  <p>Reisch: Das kostet wieder Geld.</p>
+                  <p>Deutsch: Die Leitung [der Kabinettskonferenz] wird dem Staatsamt für Heerwesen übertragen.</p>
+                  <p>[Beschluss]: a), b), c) - angenommen; d) - Kabinettskonferenz: Finanzen, Handel und Heerwesen unter der Leitung Heerwesen - und die Frage der Leitung.</p>
+                  <p>Deutsch: Geheim: Nach dem Staatsvertrag haben wir das Recht der Zurückbehaltung [von] 17,250.000 Schuss .... Wir dürfen zurückhalten 21 Millionen Schuss.</p>
+                  <p>Dazu [ist] noch notwendig [eine] Ergänzungen für Geschützübungen und sonstige Reserven (50 %) - insgesamt 32 Millionen Schuss.</p>
+                  <p><pb facs="krp-0126_s01-0003"/>12 ½ Millionen Schuss könnten frei gegeben werden.</p>
+                  <p>Renner: Wenn es zu einem Konflikt [um die] Slow[akei] kommt haben die Tschechen folgende Transport- und Nachschublinien: Jablunkapass </p>
+                  <p>(der ihnen von den Polen verlegt wird, weil Polen mit Ungarn gehen wird);</p>
+                  <p>Wlasapass; Kutylinie. Mit diesen Bahnen können sie [die Slowakei] unmöglich behaupten. Sie müssen also </p>
+                  <p>unsere Nordbahnlinie in Anspruch nehmen, das Marchfeld also in Anspruch nehmen. Lassen wir das zu, so haben wir die </p>
+                  <p>Ungarn gegen uns. Ein Kampf um die Slow[akei] erschwert uns die Neutralität. Die müssen wir aufrecht erhalten.</p>
+                  <p>Heute gibt es keine Garantie dafür, dass die Entente diesen Konflikt vermeidet. Die Ungarn suchen diesen Konflikt.</p>
+                  <p>Die andere Seite ist Jugoslawien. Um die zu überflügeln haben die Italiener nur den Weg über Kärnten und Untersteiermark, dadurch werden sie von allen Ressourcen abgeschlossen.</p>
+                  <p>Daher müssen wir vorsehen.</p>
+                  <p>7. Deutsch: Unterhaltsbeiträge. Angenommen.</p>
+                  <p>8. Tandler: <hi rend="#s">Es handelt sich</hi> - Zigaretten, welche man den Spitalsinvaliden bisher gegeben hat. Man soll ihnen das bis Neujahr lassen. Das Staatsamt für Finanzen ist bereit, </p>
+                  <p>zuzustimmen unter der Bedingung, dass diese Angelegenheit im Kabinettsrat beschlossen wird.</p>
+                  <p>Reisch: Heute waren Vertreter der Invaliden im Staatsamt für Finanzen. Sie geben sich [damit] zufrieden, dass sie fünf Zigaretten pro Tag bekommen bis 31. Dezember.</p>
+                  <p>9. Renner: a.) Konsulargebühren. (Kein Druckfehler!).</p>
+                  <p>10. Renner: Von Seite des Präsidiums der Nationalversammlung [wurde] Klage geführt, dass die Staatssekretäre in den Ausschüssen oft gar nicht vertreten sind.</p>
+                  <p>[Wir haben uns den] Fall vorgenommen: [ein] Ermächtigungsgesetz wurde vorge- - im Ausschuss angenommen. Die Staatskanzlei [hat den] Entwurf ausgearbeitet mit den anderen Staatsämtern zusammen.</p>
+                  <p>Loewenfeld-Russ: Man wird nicht eingeladen.</p>
+                  <p>Renner: Jedes Staatsamt hat einen im zuständigen Ausschuss. Das Staatsamt muss sich kümmern, wer der Obmann, der Stellvertreter und der Schriftführer ist. </p>
+                  <p>Dr. Groß verständigt. Ich habe die Vorbereitungen getroffen. Der Präs. muss mit diesem Ausschuss ständig in Fühlung stehen.</p>
+                  <p>Jedes Staatsamt muss also einen parlamentarischen Referenten haben. Dieser wird die persönliche Verbindung mit dem Obmann, dessen Stellvertreter und dem Schriftführer halten. Er muss auch ein Protokoll führen, </p>
+                  <p>in welchem alles evident geführt wird.</p>
+                  <p>Eisler: Die Verbindung mit dem korrespond[ierenden] Ausschuss wird überall aufrecht erhalten.</p>
+                  <p>Paul: Verkehrsausschuss: Es war noch nie eine Sitzung, wo der Obmann nicht mit mir alles vorbesprochen hat.</p>
+                  <p>Reisch: -.</p>
+                  <p>Loewenfeld-Russ: Straffner hält mit mir immer die Verbindung aufrecht. Die Schwierigkeit liegt in den anderen Ausschüssen.</p>
+                  <p>Renner: Die Regierung hat das Recht, in den Ausschüssen anwesend zu sein. Diejenigen Herren Staatssekretäre, die das noch nicht getan haben, sollen sich mit ihrem Ausschussobmann in Verbindung setzen.</p>
+                  <p>Paul: Zuschrift an den Präsidenten, dass jeder Staatssekretär - im Geleit der Staatssekretäre je ein Beamter erscheinen wird, der als Verbindungsbeamter mit der Kanzleidirektion </p>
+                  <p>dient und [dafür] zu sorgen hat, dass die Ausschüsse von der Regierung in entsprechender Weise besetzt sind.</p>
+                  <p>Zur Kenntnis genommen.</p>
+                  <p><pb facs="krp-0126_s01-0004"/>11. Renner: Staatsamt für Äußeres, Vertreter der Sukzessionsstaaten.</p>
+                  <p>Der Anlass war: <hi rend="#s">Es hat sich wieder ein</hi> - Die Bildersache.</p>
+                  <p>Loewenfeld-Russ: Zusatzantrag: Auch die Reparationskommission, soweit nicht direkte Verhandlungen mit einzelnen Ressorts stattfinden, soweit Unterbehörden</p>
+                  <p>und Landesregierungen in Betracht kommen, [dass diese] nicht direkt an die Reparationskommission herantreten sollen.</p>
+                  <p>Ellenbogen: Wie steht es mit Handelsattachés? Die kommen jeden Moment mit Kleinigkeiten.</p>
+                  <p>Renner: Dieser soll vom Außenamt ans Fachressort gewiesen werden.</p>
+                  <p>Reisch: Unterbehörden sollen natürlich nicht verkehren. Aber dem Staatssekretär soll man das nicht verwehren.</p>
+                  <p>Renner: Bittet, eine solche Weisung hinauszugeben.</p>
+                  <p>12. [Renner]: Vorarlberg.</p>
+                  <p>Das Land ist tatsächlich gefährdet. Ich habe mich an England, Frankreich und Italien gewandt und außerdem an die Friedenskonferenz direkt </p>
+                  <p>und habe ausgeführt, dass der Friedensvertrag von St. Germain uns das Minimum von Existenzmöglichkeit geben wird und dass der Abfall von Vorarlberg </p>
+                  <p>das Signal für die anderer Länder bilden wird. [Ich] bat, auf die Schweiz einzuwirken und offiziell zu sagen, dass der Frieden aufrecht bleibt.</p>
+                  <p>Der Redner hat ihnen [den Vorarlbergern] sagen lassen, dass er ihnen den Weg zum Völkerbund nicht verschließen wird. Die Regierung wird nur seine Gegenbemerkungen machen. </p>
+                  <p>Jede andere Bewegung sei Hochverrat. Wenn wir ein Land nicht verpflegen können, so können wir es ihm nicht übel nehmen, wenn es Hochverrat übt.</p>
+                  <p>Loewenfeld-Russ: Was der Staat für Vorarlberg macht: Wir haben alles gezahlt (Millionen Schweizer Franken, Mark usw.).</p>
+                  <p>Renner: Deutschland wird dem Land jedenfalls Brot, Mehl, Fett liefern.</p>
+                  <p>Stöckler: Wenn Vorarlberg wegfällt, ist das der Anfang vom Ende. Es wird eine förmliche Erpressung getrieben. In neuester Zeit ?Viehtausch gegen Lebensmittel.</p>
+                  <p>Renner: Wir müssen abwarten, welche Nachricht Fink bekommt. Es ist ein völliger Irrtum, wenn die Länder meinen, dadurch der Quälerei der Reparations-Kommission </p>
+                  <p>zu entrinnen. Weiters müssen wir abwarten, was der Oberste Rat und die Hauptmächte dazu sagen. </p>
+                  <p>Die Folgen wären tatsächlich unabsehbar.</p>
+                  <p>Mayr: Ich gönne den Vorarlbergern jede Konzession, die sie bekommen werden. Aber das wird einen Sturm in Tirol und Salzburg hervor rufen. </p>
+                  <p>Das Drängen nach Bayern wird furchtbare Dimensionen annehmen. Der Gedanke ist: Lassen wir Vorarlberg vorausgehen. </p>
+                  <p>[Es gibt] große Tageszeitungen mit Anschlussorientierung.</p>
+                  <p>Was aber gemacht werden müsste: Der Verkehr nach dem Westen hinüber bis in die Schweiz ist jetzt ein so schlechter (Post- und Bahnverkehr), </p>
+                  <p>dass dieser Umstand beiträgt, die Stimmung nicht nach dem Osten zu richten (Wien), sondern mehr und mehr nach dem Westen </p>
+                  <p>oder Norden.</p>
+                  <p>Renner: Wir werden darüber heute noch nicht beschließen, da uns noch die Unterlagen fehlen.</p>
+                  <p>13. Glöckel: Niederösterreichischer Gesetzesbeschluss, Rechtsverhältnisse des Lehrerstandes [in] Niederösterreich.</p>
+                  <p>Angenommen.</p>
+                  <p>14. Paul: Kärntner Abgeordnete haben an den Staatskanzler das Ersuchen gerichtet, alles vorzukehren, damit die Abstimmung im Klagenfurter Becken möglichst günstig sei, [es wurden] auch gewisse Eisenbahn-Forderungen gestellt. Es wurde - [ist] nun ?unlängst eine Besprechung in </p>
+                  <p>Klagenfurt vor einigen Tagen abgehalten worden. [An] Forderungen gestellt [wurde] unter anderem [die Forderung] auf eine sofortige Bauinangriffnahme der Kärntnerischen Ostbahn (Klagenfurt-Brückl). Die Abgeordneten wollen morgen den Kanzler angehen, dass diese </p>
+                  <p>Bauinangriffnahme beginne durch die Errichtung eines Trassierungsbüros in Klagenfurt. Weiters verlangten die Abgeordneten die Abgabe einer Erklärung, wonach die Regierung bereit ist, die notwendigen Bahnverbindungen nach Maßgabe der finanziellen Leistungsfähigkeit des Staates herzustellen.</p>
+                  <p><pb facs="krp-0126_s01-0005"/>15. Eisler: Nach der Adv[okaten]- und Not[ariats] - nicht vereinbar mit besoldeten -.</p>
+                  <p>Renner: Der Gesetzentwurf entspricht ganz den Intentionen.</p>
+                  <p>Angenommen.</p>
+                  <p>Schluss 12 Uhr.</p>
+                  <p/>
+               </div>
+               <div n="2">
+                  <head>[KRP 126, 2. Dezember 1919, Stenogramm Fenz]</head>
+                  <p><pb facs="krp-0126_s02-0001"/>126., 2. /XII. '19, ¼ 10 Uhr.</p>
+                  <p>[Zugezogen:] Grimm.</p>
+                  <p>3. a) Zerdik: Messewesen, Vollzugsanweisung.</p>
+                  <p>Angenommen.</p>
+                  <p>3. b) Zerdik: Zentralstelle f. Ein-, ... -fuhr, mit Streichung der beiden letzten Sätze des § 10.</p>
+                  <p>Loewenfeld-Russ: [Ich habe] Bedenken gegen § 11. [Eine] Einheitlich[keit] der Praxis [ist] völlig unmöglich, aber die Länder verlangen es.</p>
+                  <p>Ad Praxis dieser Verordnung: Ich bin dafür, dass die Einfuhr an [eine] Bewilligung gebunden ist. Ich finde es aber doch etwas </p>
+                  <p>stark, dass wenn meine Org[anisationen] Lebensmittel einführen, mir die Einfuhrbewilligung vielfach verweigert wird oder verzögert wird. </p>
+                  <p>Ich bitte den Staatssekretär für Finanzen, seinen Vertretern Instruktionen zu geben, die es vermeiden machen, dass ich fortwährend in der Öffentlichkeit angegriffen </p>
+                  <p>werde, wo doch das Staatsamt für Finanzen die Einfuhr verweigert. Das Votum des Staatsamtes für Volksernährung muss doch so </p>
+                  <p>gewichtig sein, dass die Sache nicht ohne weiteres abgewiesen werden soll.</p>
+                  <p>Renner: Ad Zweigstellen: Feldkirch verlangt - Vorarlberg verlangt eine Zweigstelle.</p>
+                  <p>Zerdik: Man könnte Innsbruck mit den Agenden betrauen.</p>
+                  <p>Ellenbogen: -.</p>
+                  <p>Reisch: Ad Loewenfeld: Das Staatsamt für Finanzen ist genötigt, darauf zu sehen, dass möglichst wenig Valuten angefordert und </p>
+                  <p>möglichst wenig Kronen ausgeführt werden. Ich bin übrigens gern bereit, meinen Vertreter anzuweisen, sich mit dem </p>
+                  <p>Vertreter des Volksernährungsamtes generell ins Einvernehmen zu setzen.</p>
+                  <p>Eisler: Angestrebt wird eine Vereinfachung. Ich glaube aber nicht, dass diese durch die Vollzugsanweisung erzielt wird. </p>
+                  <p>Ich kann aber nicht [verstehen, dass] die capitis diminutio des Warenverkehrsbüros gemacht wird.</p>
+                  <p>Renner: Ich begreife nicht, warum zwei Stellen nebeneinander bestehen, von denen die eine die Valuten, die andere die Waren zu besorgen hat. </p>
+                  <p>Ich bin dafür, dass man beide Institutionen vereinigt. Es leuchtet mir daher auch nicht ein, warum man nicht bei </p>
+                  <p>Kompensationsverträgen das Warenverkehrsbüro zur Bewilligung ermächtigt.</p>
+                  <p>Zerdik: -.</p>
+                  <p>Eldersch: Im Effekt [ist es] eine Doppelverwaltung.</p>
+                  <p><pb facs="krp-0126_s02-0002"/>Zerdik: Ich habe die Empfindung, dass eine intensive Beaufsichtigung des Warenverkehrsbüros erforderlich [ist].</p>
+                  <p>Renner: Man muss beide Institute zusammen neu organisieren. Die Waren- und Geldbewegungen müssen gemeinsam verwaltet werden. </p>
+                  <p>Es wird vorausgesetzt, dass [durch] die Vollzugsanweisung eine Vereinigung der beiden Institute angebahnt wird, da eine entsprechend disponierende Persönlichkeit an die Spitze beider </p>
+                  <p>Institute gestellt wird.</p>
+                  <p>Streichung akzeptiert, Vollzugsanweisung genehmigt.</p>
+                  <p>3. c)</p>
+                  <p>Zerdik: </p>
+                  <p>a) Protokollierung, b) Dienstvorschrift. </p>
+                  <p>Mit 23. IX. ist die Generaldirektion kreiert worden.</p>
+                  <p>Reisch: Zur formellen Geschäftsbehandlung. Ich bin nicht in der Lage, zu dieser Dienstvorschrift Stellung zu nehmen.</p>
+                  <p>Vollzugsangweisung wegen Protokollierung angenommen.</p>
+                  <p>4. Paul: Fahrbegünstigungen auf Straßenbahnen.</p>
+                  <p>Eldersch: Ich habe die Befürchtung, dass die Gemeinde Wien nicht darauf eingehen wird. Es soll von 63.000 auf </p>
+                  <p>23.000 Freikarten abgebaut werden.</p>
+                  <p>Renner: Ich glaube nicht, dass man dieser Anregung nähertreten kann.</p>
+                  <p><hi rend="#s">Paul:</hi> -. [Beschluss]: Der Kabinettsrat gibt der Auffassung Ausdruck, [dass es ausgeschlossen ist], dass die Gemeinde Wien diesem Ersuchen Folge geben könnte.</p>
+                  <p>5. Stöckler: Gesetzesbeschluss Kärnten.</p>
+                  <p>Eisler: Es würde [ein] Muster für die anderen Länder werden. </p>
+                  <p>Es wird eine einfache Vorstellung vielleicht gar nicht gehen, sondern es wird [eine] mündliche Rücksprache erforderlich sein, damit ein brauchbares </p>
+                  <p>Gesetz zustande kommt.</p>
+                  <p>Angenommen, mit persönlichen Verhandlungen.</p>
+                  <p>Miklas: Die Landesregierung wäre aufmerksam zu machen, dass zum Zwecke der inneren Konsolidierung die Durchführung von </p>
+                  <p><pb facs="krp-0126_s02-0003"/>Wahlen empfehlenswert wäre.</p>
+                  <p>Deutsch: Die Wahlen wären eventuell in jenen Gebieten vorzunehmen, die frei sind, in den besetzten Gebieten nachzutragen. </p>
+                  <p>Die Staatsregierung soll in Verbindung mit den Parteien treten.</p>
+                  <p>[Beschluss]: Die Staatsregierung wird aufgefordert, mit der Landesregierung und den Parteien des Landes in Verbindung zu treten, um die Neuwahlen ohne Rücksicht auf </p>
+                  <p>die Ratifizierung des Friedensvertrages durchzuführen.</p>
+                  <p>6. a) Deutsch: Staatsfabrik.</p>
+                  <p>Reisch: Ich muss mich gegen den vorliegenden Antrag aussprechen.</p>
+                  <p>1.) Es wird eine neue Amtsstelle beantragt. [Das steht im] Widerspruch mit den Intentionen des KR [Kabinettsrats], welcher erst kürzlich eine Generaldirektion der Industriewerke geschaffen hat. </p>
+                  <p>[Ich habe] Bedenken, dass die neue Amtsstelle von militärischen Organen gebildet wird, welche ihre komm[erzielle] Eignung </p>
+                  <p>bisher nicht nachzuweisen vermochten.</p>
+                  <p>2.) Bevor die neue Wehrmacht [geschaffen ist], besteht doch wohl kein Bedürfnis für industrielle militärische Betriebe.</p>
+                  <p>3.) [Es wurde] kein hinlängliches Einvernehmen mit dem Staatsamt für Finanzen [gepflogen].</p>
+                  <p>4.) Das Sappeurdepot wurde zurückgestellt, [ein] neuerlicher Bericht [wurde] nicht vorgelegt.</p>
+                  <p>Es erschiene mir das Richtige, die ganze Angelegenheit zurückzustellen bis über die Wehrmacht entschieden ist und bis das Finanzressort </p>
+                  <p>zu der ganzen Angelegenheit vom staatsfinanziellen Standpunkt Stellung nehmen konnte.</p>
+                  <p>Ellenbogen: Bezüglich des Sappeurdepots ist auch dem Staatsamt für Handel kein </p>
+                  <p>Bericht zugekommen. Linder würde großen Wert darauf legen, das Sappeurdepot zu übernehmen, weil es </p>
+                  <p>ertragsreich gestaltet werden könnte, wenn [es] unter die Generaldirektion gestellt würde. [Ich] bitte daher, wenigstens Punkt 4 </p>
+                  <p>zurückzustellen.</p>
+                  <p>Zerdik: [Ich] schließe mich Ellenbogen an. [Ich] beantrage [eine] Kabinettskonferenz, bestehend aus Handel, Heerwesen und </p>
+                  <p>Finanzen.</p>
+                  <p><pb facs="krp-0126_s02-0004"/>Deutsch: [Diese Sache] hängt nicht mit der Wehrmacht zusammen. Überhaupt stellen wir eine auf. Wenn wir aber eine aufstellen, was außer Zweifel steht, so brauchen </p>
+                  <p>wir eine Staatsfabrik. Daher [ist] die Beratung unabhängig davon. Je mehr man zuwartet, desto teurer wird die Wehrmacht werden.</p>
+                  <p>Gegen die Zurückstellung von Punkt 4 hätte ich nichts.</p>
+                  <p>Reisch: Gegen die Fortführung der Verhandlungen habe ich nichts einzuwenden. Ich spreche mich nur dagegen aus, dass eine neue </p>
+                  <p>militärische Leitung -.</p>
+                  <p>[Beschluss]: S[eite] 3, a), b), c) [werden] im Sinne der Ausführungen angenommen. </p>
+                  <p>Bezüglich Punkt d) wird eine Kabinettskonferenz [einen] Antrag stellen, </p>
+                  <p>dergleichen [bezüglich] der Frage der Leitung.</p>
+                  <p>Renner: Die Vorsorgen des Staatssekretärs für Heerwesen sind nicht ungerechtfertigt. Es [ist] nicht ausgeschlossen, dass wir an unseren Grenzen einen </p>
+                  <p>Krieg bekommen (Tsch[echoslowakei]-Ungarn), (Jugoslawien-Italien). Es [ist] nicht ausgeschlossen, dass wir mit unserer Wehrmacht unsere </p>
+                  <p>Neutralität werden behaupten müssen und eventuell einige Jahrgänge einberufen müssen.</p>
+                  <p><hi rend="#u">Geheim</hi>:</p>
+                  <p>[Deutsch]: Wir haben nach dem Staatsvertrag von St. Germain das Recht, 34.500 Gewehre zurückzubehalten [<hi rend="#i">Einschub:</hi>] und 450 Maschinengewehre, [<hi rend="#i">Einschub Ende</hi>] dafür erforderlich </p>
+                  <p>17,250.000 Schuss plus ... = </p>
+                  <p>21,750.000 Schuss.</p>
+                  <p>Dazu [ist] notwendig [eine] Ergänzung für Schießübungen und sonstige Reserven (50 %), [das ergibt] insgesamt 32 Millionen Schuss.</p>
+                  <p>[Ich] beantrage, 12 ½ Millionen Schuss freizugeben.</p>
+                  <p>Renner: Wenn es mit - [zu einem] Konflikt zwischen Tsch[echoslowakei] und [Ungarn um die] Slow[akei] kommt, so haben die Tsch[echen] folgende Nachschublinien:</p>
+                  <p>1.) Jablunkapass - wird verlegt von Polen;</p>
+                  <p>2.) Vlasapass;</p>
+                  <p>3.) Wien-Preßburg-Kutybahn.</p>
+                  <p>Mit 2.) und 3.) können sie die Slow[akei] nicht halten. Sie müssen daher unsere Nordbahnlinie bzw. das </p>
+                  <p>Marchfeld in Anspruch nehmen. Lassen wir das zu, so machen wir uns eines Neutralitätsbruches gegenüber Ungarn schuldig. </p>
+                  <p>Die Ungarn werden unsere Grenzen überschreiten. Wir sind verpflichtet, die Neutralität mit Waffengewalt aufrecht zu erhalten.</p>
+                  <p><pb facs="krp-0126_s02-0005"/>Es gibt keine Garantie, dass die Entente diesen Konflikt vermeidet. Die strategische Lage ist so, dass </p>
+                  <p>die Nachbarn ihre Konflikte [<hi rend="#i">Einschub:</hi>] teilweise [<hi rend="#i">Einschub Ende</hi>] auf unserem Boden entscheiden werden.</p>
+                  <p>Jugoslawien-Italien.</p>
+                  <p>6. b) Deutsch: Unterhaltsbeiträge.</p>
+                  <p>Angenommen.</p>
+                  <p>7. Tandler: Rauchmaterial für Invalide.</p>
+                  <p>Sie verlangen, dass man ihnen die Zigaretten bis Neujahr lässt. </p>
+                  <p>Das Staatsamt für Finanzen [ist] einverstanden unter der Voraussetzung, dass das Kabinett zustimmt.</p>
+                  <p>Reisch: Die Invaliden geben sich zufrieden, dass sie fünf Zigaretten bis 31. Dezember pro Tag </p>
+                  <p>bekommen.</p>
+                  <p>Angenommen.</p>
+                  <p>2. Renner: Konsulargebühren.</p>
+                  <p>Angenommen.</p>
+                  <p>Renner: Vom Präsidium der Nationalversammlung wurde Klage geführt, dass die Staatsämter in den Ausschüssen sehr schlecht </p>
+                  <p>vertreten sind, vielfach ohne Instruktionen.</p>
+                  <p>Die Staatskanzlei hat [bereits vor einiger Zeit] den Entwurf eines Ermächtigungsgesetzes ausgearbeitet und im Ausschuss ist es bereits ausgearbeitet worden und [<hi rend="#i">Einschub:</hi>] bereit gewesen, [<hi rend="#i">Einschub Ende</hi>] [es] dem </p>
+                  <p>Haus vorzulegen. Erst vom Präs[idium] [wurde es] gestoppt. Der Grund [war], dass die Staatsämter nicht vertreten sind. Jedes Staatsamt hat einen bestimmten, für ihn zuständigen Ausschuss. Jedes Staatsamt </p>
+                  <p>muss einen Beamten als parlamentarischen Referenten haben, </p>
+                  <p>der <hi rend="#s">seinen zuständigen Ausschuss besetzt</hi> – [<hi rend="#i">Einschub:</hi>] ständigen Kontakt mit dem Obmann, Obmannstellvertreter und Schriftführer unterhält und [<hi rend="#i">Einschub Ende</hi>] den Staatssekretär am Laufenden hält. </p>
+                  <p>Der Beamte muss Protokoll führen.</p>
+                  <p><pb facs="krp-0126_s02-0006"/>Eisler: -.</p>
+                  <p>Paul: Es findet keine Sitzung des Verkehrsausschusses statt, ohne dass vorher ich mit dem Obmann die Tagesordnung </p>
+                  <p>festgesetzt habe und auch dort regelmäßig erscheine.</p>
+                  <p>Loewenfeld-Russ: Bei den speziellen Ausschüssen liegt die Schwierigkeit nicht, wohl aber bei ad hoc-Ausschüssen, </p>
+                  <p>wo sich der Obmann mit den Staatssekretären, die interessiert sind, gar nicht ins Einvernehmen setzt.</p>
+                  <p>Renner: Diejenigen Staatssekretäre, die es noch nicht getan haben, mögen sich mit den Obmännern der zuständigen Ausschüsse ins </p>
+                  <p>Einvernehmen setzen. Und wenn er nicht geladen wird, [kann er] die Legitimität der Beratung bestreiten, da die Regierung berechtigt ist, </p>
+                  <p>an den Sitzungen teilzunehmen.</p>
+                  <p>Paul: Ständiger Begleiter. [Beschluss]: Zuschrift an den Präsidenten, dass im Geleit des </p>
+                  <p>Staatssekretärs je ein Beamter erscheinen darf, der als Verbindungsoff[izier] mit der Kanzlei des Hauses erscheint und auch dafür Sorge </p>
+                  <p>trägt, dass die Ausschüsse entsprechend besetzt sind.</p>
+                  <p>1. b) Renner: -.</p>
+                  <p>Loewenfeld-Russ: Zusatzantrag, dass an die Reparations-Commission Unterbehörden, auch die Landesregierungen, nicht </p>
+                  <p>herantreten dürfen.</p>
+                  <p>Ellenbogen: [Wie steht es], wenn ein Handelsattaché kommt?</p>
+                  <p>Reisch: Österreichisch-ungarische Bank.</p>
+                  <p>Vorarlberg.</p>
+                  <p>Renner: V[orarlberg] ist gefährdet. Ich habe mich an E[ngland], F[rankreich], I[talien] gewandt und außerdem an die Friedenskonferenz </p>
+                  <p>und ausgeführt, dass St. Germain uns das Minimum an Territorium gewährt hat und dass der Abfall von V[orarlberg] das Beispiel – </p>
+                  <p>das Signal zum Abfall anderer Länder geben wird.</p>
+                  <p><pb facs="krp-0126_s02-0007"/>Ich habe den V[orarlbergern] sagen lassen, dass wenn sie etwas wollen, diesen Beschuss der Wiener Regierung vorlegen sollen, die ihn an den </p>
+                  <p>Völkerbund weiterleiten wird.</p>
+                  <p>Das Entscheidende ist, dass wir Vorarlberg nicht verpflegen können.</p>
+                  <p>Loewenfeld-Russ: Wir haben seit November '18 für Vorarlberg 8,662.000 Schweizer Franken </p>
+                  <p>für die Versorgung aus der Schweiz bezahlt = 48,441.601 Kronen.</p>
+                  <p>Überdies am 4. XI. und 19. XI. weiters 2,100.000 Mark = </p>
+                  <p>8,123.918 Kronen [<hi rend="#i">Einschub:</hi>] für Kartoffel- und Mehlbezüge aus Süddeutschland. [<hi rend="#i">Einschub Ende</hi>] In Toto: 56,565.519 Kronen.</p>
+                  <p>Renner: [Das] soll veröffentlicht werden.</p>
+                  <p>Stöckler: Wenn V[orarlberg] abfällt, ist es ausgeschlossen, dass die anderen zu halten sind. </p>
+                  <p>Die V[orarlberger] treiben in meinem Ressort eine wahre Erpressung. Sie fordern in neuester Zeit den ?Viehtausch für Lebensmittel.</p>
+                  <p>Renner: Ist Aussicht vorhanden, [dass man] auf Verhandlungen mit redlichem Herzen eingeht, so wollen wir den Vorschlag machen, in V[orarlberg] eine Kabinettskonferenz </p>
+                  <p>ab[zu]halten. Wenn sie es aber anders machen, so werden wir sehen, ob wir den Kampf aufnehmen können oder nicht.</p>
+                  <p>Mayr: Ich gönne den V[orarlbergern] jede Sonderkonzession. Aber es wird ein Sturm im gleichen Sinn in Tirol </p>
+                  <p>und Salzburg entstehen werden. Die gleichen Konzessionen wird der Bezirk Außerfern bekommen, der ganz auf Bayern </p>
+                  <p>angewiesen ist und sonst ganz isoliert ist. Der Anschluss an das Deutsche Reich wird furchtbare Dimensionen annehmen. </p>
+                  <p>In allen Ländern bestehen Komitees.</p>
+                  <p>Ich halte es nicht für sehr ersprießlich, wenn die Daten über die Leistungen an Vorarlberg veröffentlicht werden.</p>
+                  <p>Der Verkehr nach dem Westen, nach Tirol bis Vorarlberg ist dermalen so elend, dass dieser Umstand die Stimmung</p>
+                  <p>nicht nach Wien, sondern immer mehr nach Westen und nach Norden richtet. Wenn ?Österreich etwas tun will, um die Bänder, die uns noch an </p>
+                  <p>die westlichen Länder knüpfen, zu stärken, so wäre es, die Verbindungen aufrecht zu erh- - zu verbessern.</p>
+                  <p>Renner: -.</p>
+                  <p><pb facs="krp-0126_s02-0008"/>Glöckel: Landtag Niederösterreich.</p>
+                  <p>Angenommen.</p>
+                  <p>Paul: Die Klagenfurter Landesregierung, bzw. Kärntner Abgeordnete haben an den Staatskanzler </p>
+                  <p>das Ersuchen gerichtet, alles vorzukehren, damit die Abstimmung im Klagenfurter Becken möglichst günstig sei und bestimmte </p>
+                  <p>Eisenbahn-Forderungen gestellt. [Eine] Besprechung hat statt gefunden. Die Stadt Klagenfurt hat eine Reihe von Forderungen gestellt, </p>
+                  <p>die innerhalb meines Ressorts durchführbar sind. Sie hat aber unter anderem auch die Forderung gestellt auf sofortige Bau-</p>
+                  <p>inangriffnahme der Kärntner Ostbahn nach Brückl.</p>
+                  <p>Sie verlangen, dass sofort die Bauinangriffnahme scheinbar derart geschieht, dass in Klagenfurt ein </p>
+                  <p>Trassierungsbüro errichtet wird, damit dem Land gezeigt wird, dass sofort gebaut wird. </p>
+                  <p>Ich kann das allein nicht zugestehen, weil sonst ein neues Amt entsteht. Es soll aber auch eine </p>
+                  <p>Erklärung abgegeben werden: Die Regierung ist bereit, die im Interesse des Verkehrs und der leichteren Verpflegung der Stadt Klagenfurt -.</p>
+                  <p>Eisler: Gesetzentwurf, Vereinbarkeit.</p>
+                  <p>Angenommen.</p>
+                  <p>12 Uhr.</p>
+               </div>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>
