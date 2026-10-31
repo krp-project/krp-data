@@ -1,0 +1,629 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href='http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://relaxng.org/ns/structure/1.0'?>
+<?xml-model href='../../schema/krp.rng' type='application/xml' schematypens='http://purl.oclc.org/dsdl/schematron'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:acdh="https://vocabs.acdh.oeaw.ac.at/schema#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xml:lang="de">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="a" type="main" n="0127">Kabinettsprotokoll Nr. 127 vom 5. Dezember 1919</title>
+            <title level="m" type="main" n="01">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <title level="m" type="sub" n="">Renner III (17. Oktober 1919 – 7. Juli 1920)</title>
+            <meeting>
+               <placeName key="https://d-nb.info/gnd/4066009-6">Wien</placeName>
+               <orgName key="https://d-nb.info/gnd/5162749-8">Kabinettsrat</orgName>
+               <date when-iso="1919-12-05"/>
+            </meeting>
+            <editor>
+               <persName key="https://d-nb.info/gnd/122481836"
+                         role="hasCreator"
+                         xml:id="hwohnout">
+                  <forename>Helmut</forename>
+                  <surname>Wohnout</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</affiliation>
+               <idno type="ORCID">0000-0002-3864-9839</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/120789825"
+                         role="hasCreator"
+                         xml:id="tolechowski">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0003-3291-6876</idno>
+            </editor>
+            <editor>
+               <persName key="https://d-nb.info/gnd/131679384"
+                         role="hasCreator"
+                         xml:id="rlein">
+                  <forename>Richard</forename>
+                  <surname>Lein</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0000-0002-7502-0503</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="aholzer">
+                  <forename>Anna</forename>
+                  <surname>Holzer</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0005-3560-3500</idno>
+            </editor>
+            <editor>
+               <persName role="hasCreator" xml:id="dsoelkner">
+                  <forename>Dominik</forename>
+                  <surname>Sölkner</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-9895-7212</idno>
+            </editor>
+            <editor>
+               <persName role="hasContributor" xml:id="ischotzko">
+                  <forename>Ina</forename>
+                  <surname>Schotzko</surname>
+               </persName>
+               <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+               <idno type="ORCID">0009-0007-5210-3713</idno>
+            </editor>
+            <funder n="1">
+               <orgName key="https://d-nb.info/gnd/2054142-9" role="hasFunder">Österreichischer Wissenschaftsfonds FWF</orgName>
+               <idno type="project">PAT1495024</idno>
+               <title type="project">Die Protokolle des österreichischen Kabinettsrates 1919–1920</title>
+            </funder>
+            <respStmt>
+               <resp>Projektverantwortung</resp>
+               <orgName key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Projektleitung</resp>
+               <persName key="https://d-nb.info/gnd/120789825" role="hasPrincipalInvestigator">
+                  <forename>Thomas</forename>
+                  <surname>Olechowski</surname>
+                  <affiliation key="https://d-nb.info/gnd/1026192285">Universität Wien, Institut für Rechts- und Verfassungsgeschichte</affiliation>
+                  <idno type="ORCID">0000-0003-3291-6876</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Nationaler Forschungspartner</resp>
+               <orgName key="https://d-nb.info/gnd/1123037736" role="hasEnabler">Austrian Centre for Digital Humanities</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Digitalisierung der gedruckten Quellen</resp>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>TEI-Datenmodellierung</resp>
+               <persName role="hasContributor" xml:id="tfruehwirth">
+                  <forename>Timo</forename>
+                  <surname>Frühwirth</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-3997-5193</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technische Supervision</resp>
+               <persName key="https://d-nb.info/gnd/1043833846"
+                         role="hasContributor"
+                         xml:id="pandorfer">
+                  <forename>Peter</forename>
+                  <surname>Andorfer</surname>
+                  <affiliation key="https://d-nb.info/gnd/1123037736">Austrian Centre for Digital Humanities</affiliation>
+                  <idno type="ORCID">0000-0002-9575-9372</idno>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Technisches Consulting und Vorbereitung der Druckausgabe</resp>
+               <persName key="https://d-nb.info/gnd/13281899X"
+                         role="hasContributor"
+                         xml:id="skurz">
+                  <forename>Stephan</forename>
+                  <surname>Kurz</surname>
+                  <affiliation key="https://d-nb.info/gnd/1202798799">Institut für die Erforschung der Habsburgermonarchie und des Balkanraumes</affiliation>
+                  <idno type="ORCID">0000-0003-2546-2570</idno>
+               </persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher key="https://d-nb.info/gnd/1001454-8">Österreichische Akademie der Wissenschaften</publisher>
+            <date when="2028"/>
+            <availability status="free">
+               <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">Lizenziert unter CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/deed.de)</licence>
+            </availability>
+            <idno type="ISBN_Print"/>
+            <idno type="ISBN_Part_epub"/>
+            <idno type="ISBN_Digital"/>
+            <idno type="DOI"/>
+            <idno type="DOI_zenodo"/>
+            <idno type="ebook_ID"/>
+         </publicationStmt>
+         <seriesStmt>
+            <title level="s" type="main">Protokolle des Ministerrates der Ersten Republik der Republik Österreich</title>
+            <title level="m" type="main">Abteilung I: (Deutsch-)Österreichischer Kabinettsrat 31. Oktober 1918 bis 7. Juli 1920</title>
+            <respStmt>
+               <resp>Bearbeitung und Herausgeberschaft</resp>
+               <orgName key="https://d-nb.info/gnd/2024703-5">Universität Wien</orgName>
+               <orgName key="https://d-nb.info/gnd/37748-X">Österreichisches Staatsarchiv</orgName>
+            </respStmt>
+         </seriesStmt>
+         <notesStmt>
+            <note>Diese TEI-XML-Datei ist Grundlage für eine Druckausgabe der Edition.</note>
+            <relatedItem>
+               <biblStruct>
+                  <monogr>
+                     <imprint>
+                        <pubPlace key="https://d-nb.info/gnd/4066009-6">Wien</pubPlace>
+                        <publisher key="https://d-nb.info/gnd/2068748-5">Verlag der Österreichischen Akademie der Wissenschaften</publisher>
+                        <date when="2029"/>
+                     </imprint>
+                     <extent/>
+                  </monogr>
+                  <note>
+              <idno/>
+              <ptr/>
+            </note>
+                  <citedRange/>
+               </biblStruct>
+            </relatedItem>
+         </notesStmt>
+         <sourceDesc>
+            <bibl>Quellbestand: AT-OeStA/AdR MRang MR 1Rep KRP Kabinettsratsprotokolle, 1918-1920 (Teilbestand)<ref target="https://www.archivinformationssystem.at/detail.aspx?id=5465">https://www.archivinformationssystem.at/detail.aspx?id=5465</ref>
+            </bibl>
+            <msDesc>
+               <msIdentifier>
+                  <institution key="https://d-nb.info/gnd/37748-X" role="hasOwner">AT-OeStA Österreichisches Staatsarchiv (Archiv (ÖStA))</institution>
+                  <repository key="https://d-nb.info/gnd/1601181-8">AT-OeStA/AdR Archiv der Republik, 1918- (Abteilung)</repository>
+                  <collection>AT-OeStA/AdR MRang MR 1Rep Ministerrat 1. Republik, 1918 - 1938 (Bestand)</collection>
+                  <idno>AT-OeStA_AdR-MRang-MR-1.-Rep.-KRP-127</idno>
+               </msIdentifier>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <abstract>
+            <p>
+          <!--to be generated-->
+        </p>
+         </abstract>
+      </profileDesc>
+      <encodingDesc>
+         <styleDefDecl scheme="css"/>
+         <tagsDecl>
+            <rendition xml:id="b" scheme="css">font-weight:bold;</rendition>
+            <rendition xml:id="su" scheme="css">vertical-align:super;font-size:.7em;</rendition>
+            <rendition xml:id="s" scheme="css">text-decoration:line-through;</rendition>
+            <rendition xml:id="u" scheme="css">text-decoration:underline;</rendition>
+            <rendition xml:id="ow" scheme="css">text-decoration:line-through;text-decoration-style:double;</rendition>
+            <rendition xml:id="r" scheme="css">display:block;text-align:right;</rendition>
+            <rendition xml:id="letterspaced" scheme="css">letter-spacing:0.15em;</rendition>
+            <rendition xml:id="i" scheme="css">font-style:italic;</rendition>
+         </tagsDecl>
+         <editorialDecl>
+            <hyphenation>
+               <p>
+            <!--to be added-->
+          </p>
+            </hyphenation>
+            <correction>
+               <p>
+            <!--to be added-->
+          </p>
+            </correction>
+            <normalization>
+               <p>
+            <!--to be added-->
+          </p>
+            </normalization>
+            <punctuation>
+               <p>
+            <!--to be added-->
+          </p>
+            </punctuation>
+            <stdVals>
+               <p>
+            <!--to be added-->
+          </p>
+            </stdVals>
+            <p>
+          <!--to be added-->
+        </p>
+         </editorialDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#tfruehwirth" when-iso="2026-10-13">TEIGarage output upconverted with upconvert.xsl</change>
+         <change who="#tfruehwirth" when-iso="2026-10-13">TEI header populated with generate_tei_templates.py</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface/>
+   </facsimile>
+   <text>
+      <body>
+         <div xml:id="doc-krp-0127.xml">
+            <head type="dokument">
+               <title type="num">127.<note type="footnote">Das Protokoll trägt den Vermerk <hi rend="#i">Vertraulich!</hi></note>
+               </title>
+               <title type="desc">
+                  <pb facs="krp-0127_r-0001"/>[Freitag] 1919-12-05</title>
+            </head>
+            <div type="dokumentkopf">
+               <div type="vorsitz">
+                  <head>Vorsitz:</head>
+                  <p>Renner</p>
+               </div>
+               <div type="anwesend">
+                  <head>Anwesend:</head>
+                  <p>Deutsch, Eisler, Eldersch, Ellenbogen, Fink, Glöckel, Hanusch, Loewenfeld-Russ, Mayr, Miklas, Paul, Ramek, Reisch, Resch, Stöckler, Tandler, Waiss, Zerdik</p>
+               </div>
+               <div type="zugezogen">
+                  <head>Zugezogen:</head>
+                  <p>Grimm, Schwarzwald</p>
+               </div>
+               <div type="schriftfuehrer">
+                  <head>Schriftführer:</head>
+                  <p>Fenz</p>
+               </div>
+               <div type="dauer">
+                  <head>Dauer:</head>
+                  <p>15.30–19.30 Uhr</p>
+               </div>
+            </div>
+            <div type="komponenten">
+               <p>Reinschrift, Beilagen, Konzept, stenographische Mitschrift, Entwurf der Tagesordnung, diverse Zusätze</p>
+            </div>
+            <div type="beilagen">
+               <head>Beilagen:</head>
+               <list>
+                  <item><ref target="#krp-0127_top03">Zu TOP 3</ref>: <ref target="#krp-0127_b01">Grundsätze für die Neuorganisation der Liquidierung nach der Aufhebung der zwischenstaatlichen Liquidierungsorganisation</ref></item>
+                  <item><ref target="#krp-0127_top03">Zu TOP 3</ref>: <ref target="#krp-0127_b02">Erläuterungen zur Regierungsvorlage zu Zl. 3.314/6 St.K.-1919 über einen Gesetzesentwurf zur Neuorganisation des Liquidierungswesens</ref></item>
+                  <item><ref target="#krp-0127_top03">Zu TOP 3</ref>: <ref target="#krp-0127_b03">Ergebnisse der Beratung des Komitees zur Beratung der Reform des liquidierenden Kriegsministeriums</ref></item>
+                  <item><ref target="#krp-0127_top05">Zu TOP 5</ref>: <ref target="#krp-0127_b04">Gesetzesentwurf des Staatsamtes für Verkehrswesen Zl. 2.462/ St.V. über einige Bestimmungen zu den Eisenbahntarifen</ref></item>
+                  <item><ref target="#krp-0127_top07">Zu TOP 7</ref>: <ref target="#krp-0127_b05">Antrag des Staatsamtes für Volksernährung über die Frage der Erhöhung der Brot- und Mehlpreise</ref></item>
+                  <item><ref target="#krp-0127_top08">Zu TOP 8</ref>: <ref target="#krp-0127_b06">Vortrag des Staatsamtes für Inneres und Unterricht Zl. 44.126 über den Gesetzesbeschluss des Oberösterreichischen Landtages zur Einhebung einer Mietzinskellerauflage im Gemeindegebiet von Linz</ref></item>
+                  <item><ref target="#krp-0127_top09">Zu TOP 9</ref>: <ref target="#krp-0127_b07">Erlassentwurf des Staatsamtes für Handel und Gewerbe, Industrie und Bauten über die Leitung der staatlichen Industriewerke</ref></item>
+               </list>
+            </div>
+            <div type="protokoll">
+               <pb facs="krp-0127_r-0002"/>
+               <div type="top" xml:id="krp-0127_top01">
+                  <head>
+                     <label>
+                        <num n="1">1.</num>
+                        <seg>Feststellung der alleinigen Kompetenz des Staatsamtes für Finanzen zur Führung ausländischer Kreditverhandlungen.</seg>
+                     </label>
+                  </head>
+                  <p>Wie der <hi rend="#letterspaced">Vorsitzende</hi> mitteilt, hat der Staatssekretär für Finanzen in einer an ihn gerichteten Note auf die Schwierigkeiten, die sich der Erlangung ausreichender auswärtiger Kredite entgegenstellen, sowie auf die großen Gefahren hingewiesen, die sich aus der jetzt üblich gewordenen unsystematischen Behandlung dieses Gegenstandes ergeben haben. Bei der relativen Beschränktheit der auf dem internationalen Kapitalmarkte vorhandenen Mittel könnten unbedingt notwendige Kredite versagt werden, wenn mangels einheitlicher Führung der Kreditverhandlungen minderwichtige Bedürfnisse befriedigt würden. Auch würden auswärtige Kredite nur gegen Verpfändung wertvoller Aktiva erlangt werden können und mit einer Erweiterung der Kapitalshörigkeit Österreichs gegenüber dem Auslande erkauft werden müssen. Umso notwendiger sei daher eine ein<pb facs="krp-0127_r-0003"/>heitliche Führung der Kreditpolitik, deren Grundsatz sein müsse, uns möglichst große Beträge an fremden Kapitalien zu verschaffen, ohne lebenswichtige Teile unserer Volkswirtschaft dauernd dem auswärtigen Einfluss preiszugeben. Sollte nun der derzeitige Zustand der zersplitterten Aktionen und der planlosen Initiative fortdauern, so müsste ein Chaos in der Kreditpolitik entstehen, der dem Staatsamte für Finanzen die Erfüllung der ihm ressortmäßig allein obliegenden Pflicht planmäßiger Führung der Kreditpolitik völlig unmöglich machen müsste. Der Staatssekretär für Finanzen habe daher das Ersuchen gestellt, die anderen Ressorts auf das Missliche dieser nicht länger zu duldenden Zustände aufmerksam zu machen. </p>
+                  <p>Über Anregung des Unterstaatssekretärs Dr. <hi rend="#letterspaced">Ellenbogen</hi> beschließt der Kabinettsrat, die Einsetzung einer Kabinettskonferenz der volkswirtschaftlichen Ressortchefs unter Führung des Staatssekretärs für Finanzen, welche die Grundzüge einer einheitlichen Kreditpolitik festzulegen haben wird. Das Ergebnis ist dem Kabinettsrate vorzulegen. Gleichzeitig weist der Kabinettsrat alle Staatsämter an, Kreditverhandlung niemals selbständig zu führen, sondern <pb facs="krp-0127_r-0004"/>bei allen sich ihnen darbietenden derartigen Gelegenheiten oder von ihnen gewünschten Verhandlungen stets rechtzeitig die Vermittlung und Mitarbeit des hiezu allein zuständigen Staatsamtes für Finanzen in Anspruch zu nehmen.</p>
+               </div>
+               <div type="top" xml:id="krp-0127_top02">
+                  <head>
+                     <label>
+                        <num n="2">2.</num>
+                        <seg>Ausgestaltung der amerikanischen Kinderhilfsaktion.</seg>
+                     </label>
+                  </head>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> bringt dem Kabinettsrate ein von dem Leiter der amerikanischen Hilfsaktion, Leutnant Stockton, dem Präsidenten der Nationalversammlung zugekommenes Schreiben zur Kenntnis, wonach Mr. Hoover eine neue großzügige Hilfsaktion für die notleidenden Kinder Europas einzuleiten beabsichtige.</p>
+                  <p>Hienach sollen in jedem Lande Zentral- und Osteuropas Zentralstellen für die Verteilung von Mehl, Milch und Schweinefleischprodukten und später, wenn möglich, von Kaffee und Cornedbeef errichtet werden. An diejenigen Personen in Amerika, die Verwandte in Zentral- und Osteuropa haben, sollen geschriebene Anweisungen verkauft werden und diese Anweisungen der Post zur Präsentierung bei den hier errichteten amerikanischen Lagerhäusern übersendet werden. Bei der großen An<pb facs="krp-0127_r-0005"/>zahl von Familien in Amerika, die Verwandte in Zentral- und Osteuropa besitzen, könne durch diese Aktion eine namhafte Erleichterung in der Versorgung der heimischen Bevölkerung eintreten. Der beim Verkauf der Lebensmittel zu erzielende Gewinn würde für die Fortführung des Kinderhilfswerkes verwendet werden. Vor Inangriffnahme der Aktion müsste die Regierung in einem Kontrakt mit der amerikanischen Kinderhilfsaktion folgenden Punkten zustimmen:</p>
+                  <list>
+                     <item n="1"><label>1.)</label> Lebensmittel, die zur Verteilung eingeführt werden, sind Eigentum der amerikanischen Kinderhilfsaktion.</item>
+                     <item n="2"><label>2.)</label> Diese Lebensmittel sind frei von Beschlagnahme seitens der Regierung.</item>
+                     <item n="3"><label>3.)</label> Diese Lebensmittel sind frei von lokalen Verteilungsmaßnahmen, d. h. sie sollen wirklich eine Ergänzung zur Lebensmittellieferung sein und nicht der Festsetzung von Maximalportionen, die von der Regierung oder von lokalen Autoritäten bestimmt werden, unterworfen sein.</item>
+                     <item n="4"><label>4.)</label> Die österreichische Regierung wird der amerikanischen Kinderhilfsaktion ihre eifrige Mitwirkung gewähren, wird gestatten, dass diese Lebensmittel zollfrei importiert werden und wird ihre Maßnahmen nicht <pb facs="krp-0127_r-0006"/>beschränken.</item>
+                  </list>
+                  <p>Wenn dieser Plan in die Tat umgesetzt werden könne, so bedeute dies die Einfuhr von Lebensmitteln nach Österreich ohne dem österreichischen Kredit irgend eine Last aufzubürden und alle aus diesen Operationen erwachsenden Gewinne würden der Kinderhilfsaktion zu Gute kommen.</p>
+                  <p>Der Präsident der Nationalversammlung habe das Ersuchen gerichtet, ihm die Stellungnahme der Regierung zu diesem Projekte behufs Bekanntgabe an Mr. Stockton mitzuteilen.</p>
+                  <p>Nach einer längeren Debatte, an welcher sich die Staatssekretäre Dr. <hi rend="#letterspaced">Loewenfeld-Russ</hi>, <hi rend="#letterspaced">Paul</hi>, Ing. <hi rend="#letterspaced">Zerdik</hi>, <hi rend="#letterspaced">Eldersch</hi>, <hi rend="#letterspaced">Hanusch</hi> und Dr. <hi rend="#letterspaced">Deutsch</hi> beteiligten, gelangt die einmütige Auffassung des Kabinettsrates zum Ausdruck, dass der Vorschlag Mr. Hoovers unter den von ihm aufgestellten Bedingungen anzunehmen wäre, wenn auch nicht verkannt werden solle, dass diese Aktion, abgesehen von zweifellos sich ergebenden Unzukömmlichkeiten und Nachteilen, nicht jenen Erfolg zeitigen werde, der amerikanischerseits anscheinend von ihr erwartet wird.</p>
+                  <p><pb facs="krp-0127_r-0007"/></p>
+               </div>
+               <div type="top" xml:id="krp-0127_top03">
+                  <head>
+                     <label>
+                        <num n="3">3.</num>
+                        <seg>Neuorganisation der Liquidierung.</seg>
+                     </label>
+                  </head>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> bespricht an der Hand eines von der Staatskanzlei ausgearbeiteten Gesetzentwurfes die Frage, in welcher Weise die Liquidierung aufgrund des Friedensvertrages neu zu regeln wäre.</p>
+                  <p>Nach eingehender Erörterung des Gegenstandes stellt der Kabinettsrat für die gesetzliche Regelung dieser Frage folgende Grundsätze auf:</p>
+                  <p>Die zwischenstaatliche Liquidierungsorganisation, welche aufgrund des Art. 4 des Gesetzes vom 12. November 1918, StGBl. Nr. 5, mit den Regierungen der Sukzessionsstaaten eingerichtet ist, ist aufgrund des Friedensvertrages aufgehoben. Verfügungen der Funktionäre dieser Organisation sind daher nicht mehr zulässig.</p>
+                  <p>Die Liquidierung im einzelnen Falle wird an die nach den allgemeinen Grundsätzen zuständigen Staatsämter überwiesen. Soweit sich einzelne Materien nicht aufteilen lassen, werden sie von einer eigenen Abteilung übernommen, die der Staatskanzlei unterstellt wird.</p>
+                  <p>Die Überwachung der Durchführung des zu schaffenden Gesetzes wird zwei Mitgliedern der Nationalversammlung übertragen (Sonderbeauftragte der Nationalversammlung). </p>
+                  <p><pb facs="krp-0127_r-0008"/>Soweit es sich als notwendig erweist, werden Vereinbarungen mit den anderen Staaten getroffen werden.</p>
+                  <p>In diesem Zusammenhang macht Staatssekretär Ing. <hi rend="#letterspaced">Zerdik</hi> darauf aufmerksam, dass in Deutschland nach dem Zusammenbruche eine große Menge von Kriegsgütern der ehemaligen österreichisch-ungarischen Armee zurückgeblieben sei, deren Verkauf unmittelbar bevorstehe. Da es sich um Millionenwerte handle, halte er es für unbedingt notwendig, die entsprechenden Verfügungen wegen Sicherung des Eigentums Deutschösterreichs an diesen Gütern noch vor Inkrafttreten des in Rede stehenden Gesetzes zu treffen.</p>
+                  <p>Ebenso erinnert der Vorsitzende daran, dass im liquidierenden Kriegsministerium namhafte Bestände an ausländischen Zahlungsmitteln vorhanden seien, deren schleunige Sicherstellung gleichfalls im eminenten Interesse der Staatsfinanzen gelegen sei. Über Vorschlag des Redners beschließt der Kabinettsrat:</p>
+                  <list>
+                     <item n="1"><label>1.)</label> die Einsetzung einer Kabinettskonferenz, bestehend aus dem Staatskanzler und den Staatssekretären für Finanzen, für Handel und Gewerbe, Industrie und Bauten und für <pb facs="krp-0127_r-0009"/>Heer[es]wesen, welche den Entwurf eines Gesetzes über die Neuregelung der Liquidierung auszuarbeiten hätte.</item>
+                     <item n="2"><label>2.)</label> Die Erlassung einer Vollzugsanweisung, mittelst welcher aufgrund des wirtschaftlichen Ermächtigungsgesetzes und in Durchführung des Friedensvertrages vorbehaltlich der gesetzlichen Regelung der gesamten Frage die vorläufige Verfügung getroffen werde, dass das gesamte, auf dem Territorium Deutschösterreichs und im Auslande befindliche Aktivvermögen des ehemaligen Staates Österreich und der ehemaligen österreichisch-ungarischen Monarchie in das Eigentum Deutschösterreichs gehört. Diese Vollzugsanweisung soll die zuständigen Staatsämter in die Lage versetzen, geeignete Verfügungen zu treffen, um diese Aktiven in die Verwaltung Deutschösterreichs zu überführen oder das deutschösterreichische Eigentumsrecht sicherzustellen.</item>
+                  </list>
+                  <p>Mit der Ausarbeitung dieser Vollzugsanweisung wird gleichfalls die oberwähnte Kabinettskonferenz betraut.</p>
+                  <p>Ferner beschließt der Kabinettsrat über Antrag des Vorsitzenden, dass die Zusammenlegung der Verwaltung der kaiserlichen und hofärarischen Güter bis 1. Jänner 1920 durchzu<pb facs="krp-0127_r-0010"/>führen ist. Aus diesen Gütermassen sind die reinen Verwaltungsobjekte auszuscheiden; die Gebäude sind der Staatsgebäudeverwaltung zu unterstellen. Weiters ist durch einen konstitutiven Rechtsakt die Auseinandersetzung über das Eigentumsrecht an der neuen Burg zu beendigen.</p>
+               </div>
+               <div type="top" xml:id="krp-0127_top04">
+                  <head>
+                     <label>
+                        <num n="4">4.</num>
+                        <seg>Frage der zwischenstaatsamtlichen Freizügigkeit der Beamten mit besonderer Rücksicht auf den auswärtigen und den Finanzdienst.</seg>
+                     </label>
+                  </head>
+                  <p>Der <hi rend="#letterspaced">Vorsitzende</hi> verweist darauf, dass sich vielfach die Notwendigkeit ergebe, Beamte des Handels- und Landwirtschaftsressorts zeitweise im auswärtigen Dienste zu verwenden. Diese Beamten müssten, da keine Möglichkeit bestehe, sie in den Personalstand des Staatsamtes für Äußeres zu überstellen, nach Beendigung ihrer Verwendung wieder in ihren Status rückübernommen werden. Weiters müsse auch für die bevorstehenden umfassenden Arbeiten des Finanzressorts ein Stab von Beamten aus den übrigen Staatsämtern und den liquidierenden Stellen gewonnen werden. Es sei daher erforderlich, die Möglichkeit einer Freizügigkeit der Beamten zwischen den einzelnen Staatsämtern sicherzustellen. <pb facs="krp-0127_r-0011"/>Über Vorschlag des sprechenden Staatskanzlers beschließt der Kabinettsrat, das Studium dieser Frage einer aus dem Staatskanzler und den Staatssekretären für Inneres und Unterricht, für Finanzen und für Verkehrswesen bestehenden Kabinettskonferenz zu übertragen.</p>
+               </div>
+               <div type="top" xml:id="krp-0127_top05">
+                  <head>
+                     <label>
+                        <num n="5">5.</num>
+                        <seg>Gesetzentwurf, betreffend einige Bestimmungen über die Tarife der Eisenbahnen.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär <hi rend="#letterspaced">Paul</hi> legt dem Kabinettsrate den Entwurf eines Gesetzes, betreffend einige Bestimmungen über die Tarife der Eisenbahnen, zur Genehmigung vor. Er verweist in Erörterung der wirtschaftlichen und gesamtstaatlichen Notwendigkeiten, die für die Erlassung dieses Gesetzes bestimmend seien, darauf, dass Österreich nach der Fassung der Art. 286, 288, 289 und 312 der Friedensbedingungen verpflichtet sein werde, alle jene Tarife einschließlich der ermäßigten Tarife, die jeweils auf irgend einer österreichischen Bahnstrecke in Geltung stehen, auch den Transporten der verbündeten und assoziierten Staaten auf jeder beliebigen Strecke zugänglich zu machen. Wenn nun auch von den aus diesen Bestimmungen berechtigten Staa<pb facs="krp-0127_r-0012"/>ten nicht beabsichtigt sein dürfte, aus ihnen die äußersten durch den Wortlaut noch gedeckten Folgerungen zu ziehen und die Tragweite dieser Bestimmungen überdies durch den Art. 330  Abs. 2 des Friedensvertrages eingeschränkt sei, so stehe doch fest, dass sich infolge der angeführten Bestimmungen des Friedensvertrages aus dem Bestande von Tarifbegünstigungen unter Umständen sehr schwerwiegende Rückwirkungen auf die vaterländische Volkswirtschaft und die finanziellen Interessen der Bahnen ergeben können. Die Vorsicht gebiete es daher, Vorkehrungen zu treffen, die es dem Staate ermöglichen, solche Rückwirkungen tunlichst zu vermeiden.</p>
+                  <p>Der vorliegende Gesetzentwurf verfolge den Zweck, der Staatsverwaltung die hiezu erforderlichen Mittel in die Hand zu geben.</p>
+                  <p>Abschließend bemerkt der sprechende Staatssekretär, dass er es nicht für empfehlenswert hielte, wenn nach außen hin die Regierung selbst als Anreger dieser gesetzlichen Maßnahmen erschiene. Er stelle daher den Antrag der Kabinettsrat wolle den vorgelegten Gesetzentwurf genehmigen und gleich<pb facs="krp-0127_r-0013"/>zeitig die geeigneten Schritte einleiten, damit die Initiative zur Einbringung der Gesetzesvorlage im Schoße der Nationalversammlung ergriffen und diese Vorlage tunlichst rasch verabschiedet werde.</p>
+                  <p>Der Kabinettsrat erhebt diesen Antrag zum Beschluss.</p>
+               </div>
+               <div type="top" xml:id="krp-0127_top06">
+                  <head>
+                     <label>
+                        <num n="6">6.</num>
+                        <seg>Erhöhung der Personen- und Gütertarife auf den Staatsbahnen.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Paul teilt mit, dass der Gebarungsabgang der österreichischen Staatsbahnen sich im Jahre 1919 auf 746 Millionen belaufe und nach angestellten Berechnungen im Jahre 1920 die Höhe von 1.090 Millionen K erreichen werde. Das Staatsamt für Finanzen habe darauf gedrungen, dass in allerkürzester Zeit durch entsprechende Maßnahmen dieser Abgang gedeckt werde. Zu diesem Zweck beabsichtige er eine 50%ige Erhöhung des Personentarifes und eine 150%ige Erhöhung des Gütertarifes mit Giltigkeit vom 1. Jänner 1920 eintreten zu lassen.</p>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Reisch</hi> tritt im Interesse der Herstellung des Gleichgewichtes im Staatshaushalte für die uneingeschränkte und rascheste Durchführung der beantragten Tarifmaßnahmen ein.</p>
+                  <p>Nach einer längeren Debatte, in welcher die Staatssekretäre <hi rend="#letterspaced">Hanusch</hi>, <hi rend="#letterspaced">Stöckler</hi>, Dr. <hi rend="#letterspaced">Ramek</hi>, <pb facs="krp-0127_r-0014"/><hi rend="#letterspaced">Eldersch</hi>, Dr. <hi rend="#letterspaced">Mayr</hi> und Unterstaatssekretär <hi rend="#letterspaced">Miklas</hi> einerseits auf die ungünstigen Rückwirkungen der Tariferhöhungen auf die gesamte Volkswirtschaft, andererseits auf die Notwendigkeit hinwiesen, mit der Angelegenheit angesichts ihrer politischen Bedeutung die Nationalversammlung zu befassen, nimmt der Kabinettsrat die beantragte Tariferhöhung zustimmend zur Kenntnis und beschließt, dem Hauptausschuss in seiner nächsten Sitzung hievon unter eingehender Begründung Mitteilung zu machen.</p>
+               </div>
+               <div type="top" xml:id="krp-0127_top07">
+                  <head>
+                     <label>
+                        <num n="7">7.</num>
+                        <seg>Frage der Erhöhung der Brot- und Mehlpreise.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Loewenfeld-Russ</hi> erörtert unter Hinweis auf die Unhaltbarkeit des gegenwärtigen Zustandes, wonach der Staat wegen der hohen Gestehungskosten der ausländischen Getreidezuschübe unverhältnismäßig große Zuschüsse zu den Abgabepreisen von Brot und Mehl zu leisten genötigt sei, die Frage einer neuerlichen Erhöhung der Brot- und Mehlpreise und unterbreitet dem Kabinettsrate detaillierte Vorschläge über das Ausmaß der etwa in Aussicht zu nehmenden Preiserhöhungen.</p>
+                  <p><pb facs="krp-0127_r-0015"/>Nach einer kurzen Debatte beschließt der Kabinettsrat, im Hinblick auf die Ungeklärtheit der Frage der Kreditbeschaffung aus dem Auslande von einer Erhöhung der Brot- und Mehlpreise im gegenwärtigen Zeitpunkte abzusehen.</p>
+               </div>
+               <div type="top" xml:id="krp-0127_top08">
+                  <head>
+                     <label>
+                        <num n="8">8.</num>
+                        <seg>Gesetzesbeschluss des Oberösterreichischen Landtages, betreffend die Einhebung einer Mietzinshellerauflage in Linz.</seg>
+                     </label>
+                  </head>
+                  <p>Über Ersuchen des augenblicklich abwesenden Staatssekretärs für Inneres und Unterricht teilt Unterstaatssekretär Dr. <hi rend="#letterspaced">Eisler</hi> mit, dass der Oberösterreichische Landtag in seiner Sitzung am 28. Oktober l. J. einen Gesetzesbeschluss, betreffend die Einhebung einer Mietzinshellerauflage im Gemeindegebiete der Landeshauptstadt Linz gefasst habe. Dieser Gesetzesbeschluss gebe wegen der Vollzugsklausel, sodann wegen der vorgesehenen Besteuerung der Dienstwohnungen und der permanent steuerfreien Gebäude, ferner wegen des Ausmaßes der Auflage zu Bedenken Anlass. Das Staatsamt für Inneres und Unterricht habe wegen Fristenablaufs vorbehaltlich der Genehmigung des Kabinettsrates die Landesregierung in Linz bereits telegrafisch davon in Kenn<pb facs="krp-0127_r-0016"/>tnis gesetzt, dass gegen den Gesetzesbeschluss gemäß Art. 14 des Gesetzes über die Volksvertretung Vorstellung erhoben werde.</p>
+                  <p>Der sprechende Unterstaatssekretär stelle den Antrag, die bereits erhobene Vorstellung nachträglich zu genehmigen und den Staatssekretär für Inneres und Unterricht zu ermächtigen, in Ausführung des erwähnten Telegrammes der Landesregierung die obbezeichneten Bedenken zur Kenntnis zu bringen.</p>
+                  <p>Der Kabinettsrat beschließt im Sinne des gestellten Antrages.</p>
+               </div>
+               <div type="top" xml:id="krp-0127_top09">
+                  <head>
+                     <label>
+                        <num n="9">9.</num>
+                        <seg>Dienstvorschrift für die staatlichen Industriewerke.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Ing. <hi rend="#letterspaced">Zerdik</hi> legt dem Kabinettsrate den Entwurf einer Dienstvorschrift für die staatlichen Industriewerke zur Genehmigung vor.</p>
+                  <p>Der Kabinettsrat beschließt, diese Dienstvorschrift einer aus den Staatssekretären für Handel und Gewerbe, Industrie und Bauten sowie für Finanzen bestehenden Kabinettskonferenz zur Prüfung zu überweisen.</p>
+               </div>
+               <div type="top" xml:id="krp-0127_top10">
+                  <head>
+                     <label>
+                        <num n="10">10.</num>
+                        <seg>Remunerierung der Leitung der landwirtschaftlichen Warenverkehrsstelle.</seg>
+                     </label>
+                  </head>
+                  <p>Staatssekretär Dr. <hi rend="#letterspaced">Loewenfeld-Russ</hi> berichtet über die <pb facs="krp-0127_r-0017"/>von ihm in Aussicht genommene Remunerierung der leitenden Persönlichkeiten der landwirtschaftlichen Warenverkehrsstelle, die laut einer Zwischenbilanz bisher einen Reingewinn von 32 Millionen K erzielt habe. Es sei in Aussicht genommen, den leitenden Funktionären dieser Stelle ungefähr ¾ % des Reingewinnes als Tantiemen auszubezahlen.</p>
+                  <p>Der Kabinettsrat nimmt diesen Bericht zustimmend zur Kenntnis.</p>
+                  <p/>
+               </div>
+            </div>
+            <div type="stenogramme">
+               <div n="1">
+                  <head>[KRP 127, 5. Dezember 1919, Stenogramm Fenz]</head>
+                  <p><pb facs="krp-0127_s01-0001"/>127., 5. /XII.</p>
+                  <p>Resch, Schwarzwald, </p>
+                  <p>Deutsch, Hanusch, </p>
+                  <p>Waiss, Fink, </p>
+                  <p>Ellenbogen, Eldersch, Reisch, Mayr, </p>
+                  <p>Grimm, Loewenfeld-Ruß, Glöckel, Regierungsrat [...], </p>
+                  <p>Paul, Zerdik, Tandler, </p>
+                  <p>Stöckler, Ramek, Eisler.</p>
+                  <p>1. Renner: Kredit, Finanzamt, Note &lt; &gt;.</p>
+                  <p>Ellenbogen: [Ich] billige den Grundsatz, dass die Kreditpolitik einheitlich zu führen ist. [Ich] verweise aber dabei [darauf], dass das Staatsamt für </p>
+                  <p>Finanzen nicht sich über eine selbständige Kreditpolitik klar ist, bzw. einheitliche Grundzüge im Einvernehmen mit den </p>
+                  <p>anderen Staatsämtern sucht über die Führung einer einheitlichen Kreditpolitik. Das kann nicht in einer Zuschrift erledigt werden. </p>
+                  <p>[Ich] rege an, dass eine solche Besprechung von Reisch eingeleitet wird, damit wir uns über die Grundzüge einer Kreditpolitik einigen.</p>
+                  <p>Loewenfeld-Ruß: Es lässt sich -. Bei den Offerten, bzw. Kreditverhandlungen, die von unserer Einkaufsorganisation selbst eingeleitet werden, </p>
+                  <p>ergeben sich alle möglichen Möglichkeiten und wenn man die Sache kaufmännisch führt, so muss die Entscheidung oft sofort getroffen werden. </p>
+                  <p>Es wäre mir aber sehr angenehm, wenn gewisse Prinzipien festgelegt würden.</p>
+                  <p>[Zur] Finanzierung der W[...] (Öl-, Saaten- und Fettstoffeinkäufe). Hierfür kommt eigentlich der Staat auf. Meine Kredite </p>
+                  <p>finanzieren eigentlich die Käufe der Öl- und Fettindustrie. Die Firma K[...] wäre doch wohl selbst in der Lage, sich das </p>
+                  <p>Geld zu beschaffen. Uns geht dieses Geld ab.</p>
+                  <p>Renner: Die volkswirtschaftlichen Ressorts sollen sich unter Vorsitz des Staatssekretärs für Finanzen -. </p>
+                  <p>Alle Staatsämter sind angewiesen, Kreditverhandlungen niemals selbständig zu führen &lt;sondern ... rechtzeitig ... anzustreben&gt;. </p>
+                  <p>Die Beschlüsse [sind] dem Kabinettsrat vorzulegen.</p>
+                  <p>[Renner]: Am[erikanische] Kinderhilfsaktion Stockton.</p>
+                  <p>Loewenfeld-Ruß: Die vier Punkte können bedingungslos akzeptiert werden. [<hi rend="#i">Einschub:</hi>] Man soll aber die Aktion nicht überschätzen. [<hi rend="#i">Einschub Ende</hi>] Es wird aber mehr einem Reklamebedürfnis </p>
+                  <p>der Am[erikaner] als der Hilfsbereitschaft Rechnung getragen. </p>
+                  <p>Aus Wien gibt es wohl keine Auswanderer, meist aus den Ländern.</p>
+                  <p>Paul: [Es handelt sich um ein] Schleichhandelspapier, das wesentliche Mittel zum großzügigen Schleichhandel. Die Mission hat sofort einige Räume in </p>
+                  <p>meinem Amt beansprucht für diese Zwecke. [Auf den] Schwarzenbergplatz gehen die Paten nicht hinaus. </p>
+                  <p><pb facs="krp-0127_s01-0002"/>Zerdik: Die Am[erikaner] wollen Baumwolle importieren und wollen sie hier in Lohnarbeit verarbeiten und unentgeltlich als Hilfsaktion </p>
+                  <p>verteilen. Sie haben um die Unterstützung der Organisationen ersucht. </p>
+                  <p>Ich habe vorgeschlagen, dass wir hier die Baumwolle übernehmen und selbst verarbeiten.</p>
+                  <p>Die Zahl der Bedürftigen [beträgt] 2 Millionen.</p>
+                  <p>Eldersch: Es ist einer jener Vorschläge, die man nicht ablehnen kann, die aber für Deutschösterreich und namentlich Wien nicht jene Bedeutung haben werden, die man ihr </p>
+                  <p>vielleicht in Am[erika] beimisst und [man sollte solche] Kinderhilfsaktionen vielleicht unterlassen.</p>
+                  <p>Hanusch: Im gleichen Sinn.</p>
+                  <p>Im heurigen Jahr sind eine ganze Reihe von Aktionen in Holland, Schweden, Dänemark, der Schweiz zur Auffütterung unserer Kinder unternommen </p>
+                  <p>worden, während bei uns im Land gar nicht geschehen ist. Ich beabsichtige, </p>
+                  <p>[einen] Erl[aß] an die Landesregierungen wegen Aufnahme der Kinder am Land, damit im Inland eine großzügige Aktion eingeleitet wird. </p>
+                  <p>Ich verspreche mir von dieser inländischen Aktion mehr als von den ausländischen, wo doch nur immer ein paar Tausend Kinder untergebracht werden.</p>
+                  <p>Deutsch: Ich warne vor dieser Aktion Hanusch: Der Kulturzustand ist doch nicht so hoch in der weiteren </p>
+                  <p>Bevölkerung, um die Kinder ohne weiters hinaus geben zu können.</p>
+                  <p>Hanusch: Aufsichtspersonen in jedem Dorf.</p>
+                  <p>Deutsch: -.</p>
+                  <p>Genehmigt.</p>
+                  <p>John General, </p>
+                  <p>Beamter vom Staatsamt für Äußeres zum Paul.</p>
+                  <p>[Renner]: Liquidierung.</p>
+                  <p>Der Entwurf [ist] einem zwischenstaatsamtlichen Comité zuzuweisen.</p>
+                  <p>§ 1.) Die zwischenstaatsamtlichen [sic!, recte: zwischenstaatlichen] Liquidierungsorg[anisationen] durch den Friedensvertrag sind aufgehoben. Verfügungen der Organe sind daher nicht mehr zulässig.</p>
+                  <p>§ 2.) -.</p>
+                  <p>Deutsch: -.</p>
+                  <p>Grimm: -.</p>
+                  <p>Renner: Soweit sich einzelne Materien nicht aufteilen lassen, bleiben sie eine eigene Abteilung der Staatskanzlei.</p>
+                  <p><pb facs="krp-0127_s01-0003"/>§ 3.) Soweit notwendig, werden mit den anderen Staaten Vereinbarungen getroffen werden.</p>
+                  <p>§ 4.) ?bleibt.</p>
+                  <p>Kabinettskonferenz zur Ausarbeitung dieses Entwurfes - aber möglichst rasch, um die ausländische Valuta, </p>
+                  <p>die in der Liq[uidierung] steckt, herauszubringen. </p>
+                  <p>Oder kann man wegen der Valuta eine Kabinettsverfügung treffen?</p>
+                  <p>Zerdik: Nach dem Zusammenbruch sind eine Menge von Kriegsgütern in Deutschland zurückgeblieben. </p>
+                  <p>Der Termin [des Verkaufes ist der] 10. XII., 600.000 Mark [sind] erforderlich, der Wert [ist] 20 Millionen Kronen, alles sicher erzielbar.</p>
+                  <p>Renner: Vollzugsanweisung aufgrund des Volkswirtschaftlichen Ermächtigungsgesetzes, das dem Hauptausschuss vorgelegt werden soll.</p>
+                  <p>Grimm: Die Kabinettskonferenz soll rasch zusammentreten.</p>
+                  <p>Deutsch: Ad Ulm: Wir erklären der deutschen Regierung, dass die Liquidierung eine deutschösterreichische Angelegenheit ist nach dem Vertrag [von] St. </p>
+                  <p>Germain. Binnen kurzem wird das gesetzlich ausgesprochen werden. Inzwischen erheben wir Einspruch gegen jede </p>
+                  <p>Veräußerung.</p>
+                  <p>Vollzugsanweisung [<hi rend="#i">Einschub:</hi>] aufgrund des Friedensvertrages und des Kriegs- - Volkswirtschaftlichen Ermächtigungsgesetzes, [<hi rend="#i">Einschub Ende</hi>] dass Güter, die außerhalb - die Vermögenschaften außerhalb unseres Gebietes deutschösterreichische Vermögenschaften sind.</p>
+                  <p>Renner: Aufgrund des Volkswirtschaftlichen Ermächtigungsgesetzes und in Durchführung des Friedensvertrages sagen wir, dass die Vermögenschaften </p>
+                  <p>außerhalb des Staatsgebietes deutschösterreichische Vermögenschaften sind.</p>
+                  <p>Aufgrund dieser Vollzugsanweisung können wir schon die Valuten wegnehmen.</p>
+                  <p>1.) Dieser Gesetzentwurf wird einer Kabinettskonferenz zur Fertigstellung überlassen. </p>
+                  <p>Staatskanzler, Finanzen, Handel, Heerwesen.</p>
+                  <p>2.) Der Kabinettsrat beschließt eine Vollzugsanweisung aufgrund des Volkswirtschaftlichen Ermächtigungsgesetzes und in Durchführung des Friedensvertrages von St. Germain, </p>
+                  <p>vorbehaltlich der gesetzlichen Regelung der gesamten Frage, welche die vorläufige Verfügung trifft, dass sämtliche Aktiven, welche im Territorial-</p>
+                  <p>gebiet Deutschösterreichs liegen und im Ausland sich befinden, in das Eigentum Deutschösterreichs gehören. Die zuständigen Staatsämter sollen Verfügungen </p>
+                  <p><pb facs="krp-0127_s01-0004"/>treffen, um <hi rend="#s">dieses Eigentum sicherzustellen</hi> - Recht geltend - diese Aktiven in die Verwaltung Deutschösterreichs zu überführen oder </p>
+                  <p>das Eigentumsrecht sicherzustellen. Die Vollzugsanweisung ist von der Kabinettskonferenz auszuarbeiten. </p>
+                  <p>Das Kabinett gibt die Genehmigung, dass diese Vollzugsanweisung hinausgegeben wird. </p>
+                  <p>Die Führung [hat] das Staatsamt für Finanzen.</p>
+                  <p><hi rend="#s">Von den beiden Koalitionsparteien, je ein Herr zur Aufsicht über die Liquidierung</hi>. </p>
+                  <p>Die Durchführung des Gesetzes haben zwei Mitglieder des Parlaments zu überwachen, aus den beiden Koalitions-</p>
+                  <p>parteien, Sonderbeauftragte der Nationalversammlung.</p>
+                  <p>Die Zusammenlegung der [<hi rend="#i">Einschub:</hi>] Verwaltung der [<hi rend="#i">Einschub Ende</hi>] kaiserlichen und der hofärarischen Güter ist bis zum 1. I. 20 durchzuführen. </p>
+                  <p>Aus diesen Gütermassen sind die reinen Verwaltungsobjekte auszuscheiden, die Gebäude sind der Staatsgebäudeverwaltung zu unterstellen. Weiters durch einen [...] Rechtsakt ist die </p>
+                  <p>Auseinandersetzung über das Eigentumsrecht in der neuen Burg zu beenden.</p>
+                  <p>2. Renner: Wir sind beim auswärtigen Dienst [<hi rend="#i">Einschub:</hi>] genötigt, [<hi rend="#i">Einschub Ende</hi>] zum Teil [Beamte] aus dem Handels-, zum Teil aus dem Ackerbauressort im Ausland </p>
+                  <p>zu verwenden. Die Herren können aber nicht in den Status des Äußeren übernommen werden.</p>
+                  <p>[Notwendig wäre eine] gewisse Freizügigkeit zwischen den Staatsämtern. Es muss möglich sein, dass jemand im auswärtigen Dienst verwendet und wenn die </p>
+                  <p>Verwendung aus ist, wieder rückübernommen wird.</p>
+                  <p>Von den liqu[idierenden Stellen] und auch von unwichtigen Dienst[stellen] müssen wir einen großen Stab für das Staatsamt für Finanzen gewinnen. </p>
+                  <p>Wir müssen [uns] eine Regelung ausdenken, welche die Freizügigkeit zwischen den Staatsämtern herstellt.</p>
+                  <p>Ich möchte alle Staatsämter, welche sich berufen [fühlen, sich] mit den Beamtenfragen [zu] befassen, einladen, eine Möglichkeit zu schaffen, eine solche </p>
+                  <p>Freizügigkeit herzustellen. Inneres, Staatskanzlei, Finanzen, Paul; die Staatskanzlei </p>
+                  <p>führt.</p>
+                  <p><pb facs="krp-0127_s01-0005"/>4. a) Tarife.</p>
+                  <p>Paul: Dieses Gesetz soll im Kabinett eingebracht - [genehmigt], aber nicht von der Regierung, sondern von irgendeiner Seite des Hauses [eingebracht werden]. </p>
+                  <p>Es würde dadurch nicht so unmittelbar zum Vorschein kommen, dass die Regierung es ist, die diesen Schritt unternimmt, </p>
+                  <p>weil ja eventuell die Franzosen finden können, dass geht gegen die Südbahn.</p>
+                  <p>Miklas: [Man sollte es] möglichst rasch verabschieden.</p>
+                  <p>Angenommen.</p>
+                  <p>4. b) [Paul]: Personen- und Gütertarife.</p>
+                  <p>Der Abgang [beträgt] 746 Millionen bei den Eisenbahnen pro 1919, </p>
+                  <p>pro 1920 [nach] dem Staatsamt für Finanzen 982 Millionen, [nach] meinen Berechnungen 1.090 Millionen Kronen.</p>
+                  <p>Das Staatsamt für Finanzen hat darauf gedrungen, dass in allerkürzester Zeit durch entsprechende Maßnahmen dieser Abgang </p>
+                  <p>zur Deckung gelangt. Wenn das Staatsamt für Finanzen einverstanden ist, dass wir die zur Bedeckung gelangende Summe nach dem </p>
+                  <p>Kalenderjahr berechnen, [würde] ich also 1.090 Millionen Kronen annehmen.</p>
+                  <p>[Bei] den Personentarifen, 50 % Erhöhung [wird] 84,4 Millionen [er]tragen; [bei] den </p>
+                  <p>Gütertarifen, 150 % Erhöhung [wird] 483 Millionen [er]tragen. </p>
+                  <p>[In Summe wird es] halbjährig 567, einjährig 1.134 Millionen tragen.</p>
+                  <p><hi rend="#s">Diese Erhöhung</hi> - Mit Gültigkeit vom 1. Jänner '20.</p>
+                  <p><hi rend="#s">Die [...] Wagenladung sind erhöht im ?Durchschnitt um 1691 %, Preiserhöhung 1602 %, </hi></p>
+                  <p><hi rend="#s">Bauholz-Erhöhung im Preis -. </hi></p>
+                  <p>Die Erhöhung der Preise war in vielen Fällen eine gleichbleibende.</p>
+                  <p><pb facs="krp-0127_s01-0006"/>[Die Erhöhung] bedarf eigentlich der parlamentarischen Bewilligung. </p>
+                  <p>[Ich] bringe [es] zur Kenntnis [und] </p>
+                  <p>bitte um die Ermächtigung, dass die erforderlichen Vorbereitungen getroffen werden.</p>
+                  <p>Hanusch: Auf die Dauer wird das politisch nicht zu ertragen sein. Was die Bevölkerung nicht einsieht, ist, dass die - alle diese </p>
+                  <p>Maßnahmen vorgenommen werden, man aber von der Vermögensabgabe nichts hört.</p>
+                  <p>Stöckler: [Ich] stimme voll und ganz bei. Die Erhöhung der Tarife wird nicht den erhofften Ertrag für die Staatsfinanzen </p>
+                  <p>ergeben, es wird sich vielmehr zweifellos auf die Konsumartikelpreise geltend machen. </p>
+                  <p>Gewisse Artikel werden überhaupt nicht befördert werden können, weil sie die Tariferhöhung nicht ertragen. [Besser wäre eine] Intensivierung des </p>
+                  <p>Verkehrs.</p>
+                  <p><hi rend="#s">Zerdik</hi>: -.</p>
+                  <p>Reisch: Der Zustand der Staatsfinanzen ist ein gänzlich unhaltbarer. Wir können nicht das, was wir in Dollar und L. [Pfund] </p>
+                  <p>im Ausland kaufen müssen, tief unter dem Einkaufspreis hier in Kronen verkaufen. Wir können ohne Erhöhung der Preise </p>
+                  <p>auch nicht mehr zwei Monate weiter wirtschaften. Auch mit der Intensivierung des Verkehrs ist der passive Verkehr nicht </p>
+                  <p>aktiv zu machen. Der Kohlenpreis macht den Verkehr passiv. Je mehr wir fahren, desto mehr werden wir passiv.</p>
+                  <p>Dass wir die konsumierende Bevölkerung belasten, ist nicht richtig. Denn es ist ja keine indirekte Steuer. </p>
+                  <p>Es handelt sich nur darum, dass jeder das, was er verzehrt von den staatlich bewirtschafteten Mitteln auch wirklich selbst bezahlt.</p>
+                  <p>Ich werde heute in acht Tagen dem Kabinett die Vermögensabgabe vorlegen und ich werde sie am 17. XII. dem Parlament </p>
+                  <p>vorlegen.</p>
+                  <p>Ramek: Sicher rechtfertigt das Defizit die Tariferhöhung. Diese Maßregel wird aber nicht den vollen Erfolg haben, </p>
+                  <p>weil diese Preiserhöhung volkswirtschaftlich ihre Auswirkung haben wird auf allen Gebieten = Teuerung aller Artikel im Verkehr, </p>
+                  <p>Lohnerhöhung, Gehaltserhöhung.</p>
+                  <p>Formell ist Paul berechtigt, diese Tariferhöhung im eigenen Wirkungskreis vorzunehmen. Er sucht sich zu entlasten </p>
+                  <p>durch das Kabinett.</p>
+                  <p>Ist das Kabinett wirklich imstande, diese Belastung weiter auf die Dauer zu ertragen? Es sind das so einschneidende </p>
+                  <p><pb facs="krp-0127_s01-0007"/>Maßregeln und wir erledigen das in den vier ?Wänden und die Nationalversammlung ist ausgeschaltet, die doch das richtige </p>
+                  <p>Forum für die Erörterung solcher Maßnahmen wäre. Dann würde auch die Bevölkerung es leichter verstehen.</p>
+                  <p>Wir sollten derartige Dinge nicht rasch erledigen. Im Interesse unseres Volkes und im Interesse der Belastung unserer Parteien sollte die Nationalversammlung </p>
+                  <p>damit beschäftigt werden.</p>
+                  <p><hi rend="#s">Paul</hi>: -.</p>
+                  <p>Eldersch: [Man sollte es] nicht dem Parlament vorlegen, sondern dem Hauptausschuss.</p>
+                  <p>Mayr: Was wird geschehen? Die Koalitionsparteien werden dagegen sprechen und wir werden dafür stimmen.</p>
+                  <p>Stöckler: Eine Begründung der Brotpreiserhöhung wird in der Öffentlichkeit unbedingt erforderlich sein. [Das geschieht] am besten im Wege </p>
+                  <p>eines Berichtes an das Haus. Hierüber wäre eine Debatte abzuführen.</p>
+                  <p>Reisch: Eine kaufmännische Unternehmung von legislatorischen Maßnahmen abhängig zu machen, ist unmöglich. </p>
+                  <p>Die Sache in der Nationalversammlung zur Sprache zu bringen, wäre allerdings empfehlenswert, um der Öffentlichkeit von unserer verzweifelten </p>
+                  <p>Lage Kenntnis zu geben.</p>
+                  <p>Miklas: Die Verfügung soll als bereits getroffen an das Parlament gelangen und dort von uns in </p>
+                  <p>breitester Ausführung gerechtfertigt werden.</p>
+                  <p>Da laut Paul die lineare Erhöhung der Tarife das Eisenbahnwesen nicht sanieren wird, </p>
+                  <p>bitte [ich] um Vorschläge, wie unser Eisenbahnwesen saniert werden könnte - Abbau der Beamten?</p>
+                  <p>Paul: Die Personalkosten stehen - [fallen] im Verhältnis zu dem Materialkosten nicht so ins Gewicht, dass ein </p>
+                  <p>Abbau der Personalkosten merklich wäre. Die Kohle hat im Frieden 6 Kronen per Tonne gekostet, </p>
+                  <p>und kostet heute 6.500 Kronen per Tonne.</p>
+                  <p><hi rend="#s">[Ich bitte], den Antrag auf Tariferhöhung an[zu]nehmen.</hi></p>
+                  <p><hi rend="#s">Würde man zustimmen [einer] Verschiebung bis 15. I.?</hi></p>
+                  <p><hi rend="#s">Renner: Der Staatssekretär für Verkehrswesen soll den Verkehrsausschuss für nächste Woche einberufen lassen</hi>.</p>
+                  <p>[Beschluss]: Die Tariferhöhung tritt am 1. I. in Kraft und der Hauptausschuss ist in der nächsten Woche zu informieren.</p>
+                  <p><pb facs="krp-0127_s01-0008"/>Loewenfeld-Ruß: </p>
+                  <p>Die Situation ist so, dass ich für die nächste Woche die gekürzte Quote für Mehl habe. </p>
+                  <p>Entweder die Entente entschließt sich -.</p>
+                  <p>Wir haben die Preise von Zucker um 100 % erhöht. Wir haben das Fleisch auf 69 Kronen erhöht. Das Fleisch ist zum Großteil liegen geblieben. </p>
+                  <p>Damit ist die Preiserhöhung illusorisch gemacht. Fett 84 Kronen, Öl 94 Kronen.</p>
+                  <p>Ad 3.) Brot- und Mehlpreiserhöhung. </p>
+                  <p>Ich halte es für unmöglich, dass wir diese Erhöhung jetzt vornehmen. </p>
+                  <p>Bevor nicht die Frage mit den Ententekrediten geklärt ist, kann man meiner Meinung </p>
+                  <p>die volle Erhöhung nicht vornehmen.</p>
+                  <p>Ich glaube, dass man höchstens vor Weihnachten so viel erhöhen kann, dass aus dem inländischen Getreide kein Verlust entsteht. </p>
+                  <p>Im Übrigen aber [sollte man] warten bis die Kreditfrage gelöst ist.</p>
+                  <p>Renner: Das System der behördlichen Bewirtschaftung ist zusammengebrochen aus mehreren Gründen: 1.) Wegen des Zusammenbruchs des zentralisierten Systems.</p>
+                  <p>2.) Die behördliche Bewirtschaftung als Grundsatz ist von den [...] entwurzelt worden. </p>
+                  <p>Da eine Gesellschaft irgendwer leben kann - so kann das andere nur eine Diktatur sein - entweder [eine] Diktatur von unten herauf, </p>
+                  <p>oder des Auslandes.</p>
+                  <p>Eisler: -.</p>
+                  <p>[Beschluss]: Die Mehlpreiserhöhung ist vertagt.</p>
+                  <p>5. Zurückgestellt.</p>
+                  <p>6. Eisler für Eldersch.</p>
+                  <p>Angenommen.</p>
+                  <p><pb facs="krp-0127_s01-0009"/>[Zugezogen]: Wilfling.</p>
+                  <p>Reisch: Gesetzentwurf Besoldungsgesetz. </p>
+                  <p>[<hi rend="#i">Am Rand:</hi>] Gesetz zur vorläufigen Regelung der Besoldung </p>
+                  <p>der zivilen Staatsbeamten, Unterbeamten und Diener </p>
+                  <p>(Besoldungsübergangsgesetz).</p>
+                  <p>Provisorisches Besoldungsübergangsgesetz, </p>
+                  <p>Grundgehalt entsprechend den Teuerungszulagen. </p>
+                  <p>Zuschlag entsprechend der Steigerung der rat[ionierten] Artikel, und 150 % Zuschlag zu diesen Zuschlägen.</p>
+                  <p>Auf dieser Grundlage [wäre] mit den Beamtenorganisationen zu sprechen und [es] dann Dienstag wieder in den Kabinettsrat zu bringen.</p>
+                  <p>Ca. 600 Millionen Mehraufwand im Jahr.</p>
+                  <p>Paul: Bedenklich [ist], die Pensionsbegünstigung und zugleich die Besoldungsreform [zu machen], wo die Pensionsbegünstigung noch nicht wirkt.</p>
+                  <p>[Beschluss]: Ermächtigung erteilt.</p>
+                  <p>Loewenfeld-Ruß: </p>
+                  <p>Berichtet über die von ihm in Aussicht genommene Remunerierung der leitenden Persönlichkeiten der </p>
+                  <p>landwirtschaftlichen Warenverkehrsstelle, welche laut einer Zwischenbilanz bisher einen Reingewinn von </p>
+                  <p>32 Millionen erzielt haben. Es ist in Aussicht genommen, den leitenden Persönlichkeiten ungefähr ¾ % </p>
+                  <p>als Tantiemen zu geben.</p>
+                  <p>Zur Kenntnis genommen.</p>
+                  <p>Zerdik: Dienstvorschrift [für die] staatlichen Industriebetriebe.</p>
+                  <p>[Beschluss]: Wird einer Kabinettskonferenz Zerdik-Reisch zugewiesen.</p>
+                  <p>½ 8 Uhr.</p>
+               </div>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>
